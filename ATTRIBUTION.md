@@ -252,7 +252,8 @@ administrative region.
   and `vi`;
 - the recovery page, Insert Link place, crop and save-error strings (storytold/wordcraft#2064,
   synced from `wordcraft@1d4675b`) in `hr`, `ko`, `ro`, `sl` and `vi`. Their Polish
-  rows are left to storytold/craft-i18n#52.
+  rows are left to storytold/craft-i18n#52, and their Slovenian rows use the wording of
+  storytold/craft-i18n#84.
 
 Both were written into `locales/` with `tools/sync_app.py` from base `wordcraft@806a945`.
 
