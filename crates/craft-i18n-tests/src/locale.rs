@@ -1,6 +1,7 @@
 //! Locale directory names and how many plural forms a locale's `@plural` rows list.
 
-use intl_pluralrules::{PluralCategory, PluralRuleType, PluralRules};
+use icu_locale_core::Locale;
+use icu_plurals::PluralRules;
 use unic_langid::LanguageIdentifier;
 
 /// Ok when `name` is a BCP 47 tag written in lowercase (`pt-br`, `zh-hans`).
@@ -21,40 +22,35 @@ pub fn check_locale_name(name: &str) -> Result<(), String> {
 }
 
 /// How many plural forms `locale`'s `@plural` rows list: the CLDR cardinal categories whole
-/// numbers 0..=1000 reach. Categories only fractions or huge numbers reach (French `many`) don't
-/// count, as in the apps. CLDR's `pt` is Brazilian, so Portuguese other than `pt-br` takes
-/// `pt-PT`'s rules, as craft-libs' `craft-i18n` does. Hebrew has 3 (one, two, other), as the apps
-/// count it.
+/// numbers 0..=1000 reach, counted as craft-libs' `craft-i18n` does (`plural_rules` there), on the
+/// same `icu_plurals` version and CLDR data (48.2.1). Categories only fractions or huge numbers
+/// reach (French `many`) don't count. The rules are looked up by language alone: CLDR's parent of
+/// `sr-Latn` and `zh-Hant` is the root, whose only category is `other`. CLDR's `pt` is Brazilian,
+/// so Portuguese other than Brazil's takes `pt-PT`'s rules. A language CLDR has no rules for gets
+/// the root's one form, as in the crate; `tests/runtime_agreement.rs` fails on such a locale,
+/// since the crate then shows its plurals in English.
 ///
 /// # Errors
 ///
-/// Returns an error when `locale` is not a valid BCP 47 tag, no plural rules are available, or
-/// evaluating a rule fails.
+/// Returns an error when `locale` is not a valid BCP 47 tag.
 pub fn plural_forms(locale: &str) -> Result<usize, String> {
-    let rules_for = if locale == "pt" || (locale.starts_with("pt-") && locale != "pt-br") {
-        "pt-pt"
+    let id = Locale::try_from_str(locale)
+        .map_err(|e| format!("{locale:?} is not a BCP 47 locale: {e}"))?
+        .id;
+    let language = id.language.as_str();
+    let brazil = id.region.is_some_and(|r| r.as_str() == "BR");
+    let rules_for = if language == "pt" && !brazil {
+        "pt-PT"
     } else {
-        locale
+        language
     };
-    let id: LanguageIdentifier = rules_for
-        .parse()
+    let rules_locale = Locale::try_from_str(rules_for)
         .map_err(|e| format!("{locale:?} is not a BCP 47 locale: {e}"))?;
-    let is_hebrew = id.language.as_str() == "he";
-    let language = LanguageIdentifier::from_parts(id.language, None, None, &[]);
-    let rules = PluralRules::create(id, PluralRuleType::CARDINAL)
-        .or_else(|_| PluralRules::create(language, PluralRuleType::CARDINAL))
+    let rules = PluralRules::try_new_cardinal((&rules_locale).into())
         .map_err(|e| format!("{locale:?}: no plural rules: {e}"))?;
     let mut seen = Vec::new();
     for n in 0..=1000_u32 {
-        let category = rules
-            .select(n)
-            .map_err(|e| format!("{locale:?}: plural rules failed on {n}: {e}"))?;
-        // ponytail: intl_pluralrules carries CLDR 37, which still gives Hebrew `many`; CLDR 42
-        // dropped it, and craft-libs' icu_plurals (CLDR 48) doesn't have it. Hebrew is the only
-        // locale the two disagree on. Check against craft-libs' CLDR data if another one appears.
-        if is_hebrew && category == PluralCategory::MANY {
-            continue;
-        }
+        let category = rules.category_for(n);
         if !seen.contains(&category) {
             seen.push(category);
         }
@@ -92,6 +88,9 @@ mod tests {
             ("pt", 2),
             ("pt-br", 2),
             ("tr", 2),
+            ("sr-latn", 3),
+            ("zh-hant", 1),
+            ("pt-pt", 2),
         ] {
             assert_eq!(plural_forms(locale), Ok(n), "{locale}");
         }
