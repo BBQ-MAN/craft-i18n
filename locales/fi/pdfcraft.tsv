@@ -1,0 +1,2632 @@
+# Suomi (fi) interface catalog for PdfCraft.
+# Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
+#   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
+#            word is a label that tells apart two meanings of the same English.
+#   escapes  \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns (in any
+#            order), and a trailing "…" in one needs one in the other.
+#   @plural  English `one|other`; the translation lists this language's plural forms, `|`-separated.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English text in ordinary
+# computing vocabulary. No other product's localisation, string table or translated UI was
+# consulted or copied; add entries the same way.
+
+	  · not fixable here	  · ei korjattavissa tässä
+	 (page {p})	 (sivu {p})
+	 (searching… {s} of {p} pages)	 (haetaan… {s}/{p} sivua)
+	 ({n} at {dpi} dpi, the largest size they can be drawn at)	 ({n} tarkkuudella {dpi} dpi, suurin koko, jolla ne voidaan piirtää)
+	 ({s} not exported: {first})	 ({s} jäi viemättä: {first})
+	 on page {label}	 sivulla {label}
+	 on page {p}	 sivulla {p}
+	 · password-protected	 · salasanasuojattu
+	(none)	(ei mitään)
+	+Bin	+Bin
+	+LOC	+LOC
+	, Expires: 	, vanhenee: 
+	1 difference found	Löytyi 1 ero
+	1 file	1 tiedosto
+	1 file done	1 tiedosto valmis
+	1 file needs attention	1 tiedosto vaatii huomiota
+	1 instance	1 osuma
+	1 issue	1 ongelma
+	1 mark	1 merkintä
+	1 page	1 sivu
+	1 page selected	1 sivu valittu
+	1 page selected.	1 sivu valittu.
+	180 degrees	180 astetta
+	4 x 6 in label (101.6 x 152.4 mm)	4 x 6 tuuman tarra (101,6 x 152,4 mm)
+	9 digit, A letter, O letter or digit, X any character	9 numero, A kirjain, O kirjain tai numero, X mikä tahansa merkki
+	; 1 page already had text	; 1 sivulla oli jo tekstiä
+	; failed: {list}	; epäonnistui: {list}
+	; {n} pages already had text	; {n} sivulla oli jo tekstiä
+	? of {n}	?/{n}
+	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR:ää, {commits} committia, +{added} / −{deleted} riviä (Δ {delta}), +{bin_added} / −{bin_deleted} binääritiedostoa, {first} – {last}
+	`{command}` {when}	`{command}` {when}
+	a bookmark cannot be moved inside itself	kirjanmerkkiä ei voi siirtää itsensä sisään
+	A button	Painike
+	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Puhtaan huoneen menetelmällä kehitetty avoimen lähdekoodin PDF-sovellus, kirjoitettu Rustilla. MIT OR Apache-2.0.
+	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	sarake on liian kapea: tee alueesta leveämpi, anna sarakkeelle siitä suurempi osuus tai käytä vähemmän sarakkeita tai pienempää sarakeväliä
+	A diagonal CONFIDENTIAL watermark on every page.	Vinottainen LUOTTAMUKSELLINEN-vesileima jokaiselle sivulle.
+	a document must keep at least one page	asiakirjassa on oltava vähintään yksi sivu
+	A document needs at least one page: copy instead	Asiakirjassa on oltava vähintään yksi sivu: kopioi sen sijaan
+	a field named {name} already exists	kenttä nimeltä {name} on jo olemassa
+	A font isn't embedded	Fonttia ei ole upotettu
+	A form field has additional actions	Lomakekentällä on lisätoimintoja
+	A link	Linkki
+	A picture covers page {pages} (a scan?), so the background won't show there.	Kuva peittää sivun {pages} (skannaus?), joten tausta ei näy siinä.
+	A script	Komentosarja
+	A selected field has no widget on any page, so the fields can't be edited together.	Yhdellä valituista kentistä ei ole kenttäelementtiä millään sivulla, joten kenttiä ei voi muokata yhdessä.
+	A stream refers to an external file	Virta viittaa ulkoiseen tiedostoon
+	A stream uses LZW compression	Virta käyttää LZW-pakkausta
+	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Yhteenveto kuvaa taulukon tarkoituksen ja rakenteen. Lisää jokaiseen taulukkoon Summary-määrite.
+	a table has 1 to {max} columns	taulukossa on 1–{max} saraketta
+	a table has 1 to {max} rows	taulukossa on 1–{max} riviä
+	A {} action isn't allowed	{}-toiminto ei ole sallittu
+	A {} annotation has additional actions	{}-merkinnällä on lisätoimintoja
+	A {} annotation has no appearance stream	{}-merkinnällä ei ole ulkoasuvirtaa
+	A {} annotation isn't set to print, or is hidden	{}-merkintää ei ole asetettu tulostumaan, tai se on piilotettu
+	About PdfCraft	Tietoja PdfCraftista
+	Accepted	Hyväksytty
+	Accessibility	Saavutettavuus
+	Accessibility Checker	Saavutettavuuden tarkistus
+	Accessibility Checker Options	Saavutettavuuden tarkistuksen asetukset
+	Accessibility permission flag	Saavutettavuuden käyttöoikeuslippu
+	Accessibility permission flag is set	Saavutettavuuden käyttöoikeuslippu on asetettu
+	Accessibility Report	Saavutettavuusraportti
+	Acrobat 3.0 and later (40-bit RC4)	Acrobat 3.0 ja uudemmat (40-bittinen RC4)
+	Acrobat 5.0 and later (128-bit RC4)	Acrobat 5.0 ja uudemmat (128-bittinen RC4)
+	Acrobat 7.0 and later (128-bit AES)	Acrobat 7.0 ja uudemmat (128-bittinen AES)
+	Acrobat X and later (256-bit AES)	Acrobat X ja uudemmat (256-bittinen AES)
+	Action name:	Toiminnon nimi:
+	Action Wizard	Toimintoavustaja
+	Action Wizard…	Toimintoavustaja…
+	Actions list	Toimintoluettelo
+	Active	Käytössä
+	Actual size	Todellinen koko
+	Actual text	Todellinen teksti
+	Add a button	Lisää painike
+	Add a callout	Lisää selitelaatikko
+	Add a checkbox	Lisää valintaruutu
+	Add a comment	Lisää kommentti
+	Add a date field	Lisää päivämääräkenttä
+	Add a digital signature field	Lisää digitaalisen allekirjoituksen kenttä
+	Add a drop-down list	Lisää avattava luettelo
+	Add a list box	Lisää luetteloruutu
+	Add a radio button	Lisää valintanappi
+	Add a reply	Lisää vastaus
+	Add a stamp	Lisää leima
+	Add a sticky note	Lisää muistilappu
+	Add a sticky note here	Lisää muistilappu tähän
+	Add a text box	Lisää tekstiruutu
+	Add a text field	Lisää tekstikenttä
+	Add alternate text	Lisää vaihtoehtoinen teksti
+	Add alternate text…	Lisää vaihtoehtoinen teksti…
+	Add an Action	Lisää toiminto
+	Add an image field	Lisää kuvakenttä
+	Add arrow	Lisää nuoli
+	Add at least two files	Lisää vähintään kaksi tiedostoa
+	Add background	Lisää tausta
+	Add background…	Lisää tausta…
+	Add Bates numbering…	Lisää Bates-numerointi…
+	Add bookmark	Lisää kirjanmerkki
+	Add callout	Lisää selitelaatikko
+	Add checkmark	Lisää valintamerkki
+	Add cloud	Lisää pilvi
+	Add comment	Lisää kommentti
+	Add comments	Lisää kommentteja
+	Add connected lines	Lisää yhdistetyt viivat
+	Add content	Lisää sisältöä
+	Add cross	Lisää risti
+	Add dot	Lisää piste
+	Add drawing	Lisää piirros
+	Add field	Lisää kenttä
+	Add fields	Lisää kentät
+	Add file attachment	Lisää tiedostoliite
+	Add files to combine	Lisää yhdistettävät tiedostot
+	Add files…	Lisää tiedostoja…
+	Add folder	Lisää kansio
+	Add folder and subfolders	Lisää kansio ja alikansiot
+	Add folder and subfolders…	Lisää kansio ja alikansiot…
+	Add folder…	Lisää kansio…
+	Add footer	Lisää alatunniste
+	Add form components	Lisää lomakkeen osia
+	Add header	Lisää ylätunniste
+	Add header & footer	Lisää ylä- ja alatunniste
+	Add header & footer…	Lisää ylä- ja alatunniste…
+	Add highlight	Lisää korostus
+	Add image	Lisää kuva
+	Add image…	Lisää kuva…
+	Add inserted text	Lisää lisäysteksti
+	Add line	Lisää viiva
+	Add link	Lisää linkki
+	Add open documents	Lisää avoimet asiakirjat
+	Add or edit links	Lisää tai muokkaa linkkejä
+	Add oval	Lisää soikio
+	Add Page Numbers	Lisää sivunumerot
+	Add polygon	Lisää monikulmio
+	Add printer marks	Lisää painomerkit
+	Add rectangle	Lisää suorakulmio
+	Add redaction mark	Lisää peittomerkintä
+	Add search index	Lisää hakuhakemisto
+	Add signature	Lisää allekirjoitus
+	Add squiggly underline	Lisää aaltoviiva-alleviivaus
+	Add stamp	Lisää leima
+	Add Step	Lisää vaihe
+	Add sticky note	Lisää muistilappu
+	Add strikethrough	Lisää yliviivaus
+	Add text	Lisää tekstiä
+	Add text box	Lisää tekstiruutu
+	Add text field table	Lisää tekstikenttätaulukko
+	Add the choices people pick from.	Lisää vaihtoehdot, joista valitaan.
+	Add the files to combine	Lisää yhdistettävät tiedostot
+	Add the PDFs to combine	Lisää yhdistettävät PDF-tiedostot
+	Add the steps this action runs, in order.	Lisää toiminnon suorittamat vaiheet järjestyksessä.
+	Add to Trusted Certificates	Lisää luotettuihin varmenteisiin
+	Add to trusted certificates	Lisää luotettuihin varmenteisiin
+	Add underline	Lisää alleviivaus
+	Add watermark	Lisää vesileima
+	Add watermark…	Lisää vesileima…
+	Add {what}	Lisää {what}
+	Added 1 comment	Lisättiin 1 kommentti
+	Added more than once	Lisätty useammin kuin kerran
+	Added text	Lisätty teksti
+	Added the first {n} files in {folder}	Lisättiin kansion {folder} ensimmäiset {n} tiedostoa
+	Added the first {n} PDFs in {folder}	Lisättiin kansion {folder} {n} ensimmäistä PDF-tiedostoa
+	Added {n} comments	Lisättiin {n} kommenttia
+	Adding images arrives on the web with file pickers for images	Kuvien lisääminen tulee verkkoversioon kuvatiedostojen valitsimien myötä
+	Adds invisible text over each word; the page image is not changed	Lisää näkymätöntä tekstiä jokaisen sanan päälle; sivun kuvaa ei muuteta
+	Advanced optimization	Tarkennettu optimointi
+	Advanced options	Lisäasetukset
+	Advanced Options {chevron}	Lisäasetukset {chevron}
+	Advanced search…	Tarkennettu haku…
+	AI assistant	Tekoälyavustaja
+	Algorithm	Algoritmi
+	Align fields	Tasaa kentät
+	Alignment	Tasaus
+	All annotations are tagged	Kaikki merkinnät on tagitettu
+	All document contents	Koko asiakirjan sisältö
+	All document contents except metadata	Koko asiakirjan sisältö metatietoja lukuun ottamatta
+	All form fields are tagged	Kaikki lomakekentät on tagitettu
+	All form fields have description	Kaikilla lomakekentillä on kuvaus
+	All multimedia objects are tagged	Kaikki multimediaobjektit on tagitettu
+	All open documents	Kaikki avoimet asiakirjat
+	All page content is tagged	Kaikki sivun sisältö on tagitettu
+	All pages	Kaikki sivut
+	All pages in document	Kaikki asiakirjan sivut
+	All pages in range	Kaikki alueen sivut
+	All tools	Kaikki työkalut
+	Allow	Salli
+	Allow Rich Text Formatting	Salli RTF-muotoilu
+	Allow user to enter custom text	Salli käyttäjän kirjoittaa oma teksti
+	Allowed	Sallittu
+	already a PDF	on jo PDF
+	Also recognize pages that already have text	Tunnista myös sivut, joilla on jo tekstiä
+	Alternate Text	Vaihtoehtoinen teksti
+	Alternate text	Vaihtoehtoinen teksti
+	alternate text hides an annotation inside it	vaihtoehtoinen teksti piilottaa sisällään olevan merkinnän
+	Alternate text inside an element that already has alternate text is never read. Remove the inner alternate text.	Vaihtoehtoista tekstiä elementissä, jolla jo on vaihtoehtoinen teksti, ei koskaan lueta. Poista sisempi vaihtoehtoinen teksti.
+	Alternate text must be associated with some content	Vaihtoehtoinen teksti on liitettävä johonkin sisältöön
+	Alternate text on an element that contains a link or field hides that annotation from assistive technology. Move the alternate text.	Vaihtoehtoinen teksti elementissä, joka sisältää linkin tai kentän, piilottaa merkinnän avustavalta teknologialta. Siirrä vaihtoehtoinen teksti.
+	alternate text on an element with no page content	vaihtoehtoinen teksti elementissä, jolla ei ole sivusisältöä
+	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Vaihtoehtoiseen tekstiin elementissä, jolla ei ole sivusisältöä, ei koskaan päästä. Poista se tai liitä elementti sisältöön.
+	Alternate text should not hide annotation	Vaihtoehtoinen teksti ei saa piilottaa merkintää
+	Alternate text that will never be read	Vaihtoehtoinen teksti, jota ei koskaan lueta
+	Always	Aina
+	Always use my default zoom and page layout	Käytä aina oletuszoomaustani ja -sivuasetteluani
+	An action is already running	Toiminto on jo käynnissä
+	An action with this name already exists.	Tämänniminen toiminto on jo olemassa.
+	An embedded file has no AFRelationship	Upotetulla tiedostolla ei ole AFRelationship-arvoa
+	An image asks to be interpolated	Kuva pyytää interpolointia
+	An image has alternates or OPI information	Kuvalla on vaihtoehtoisia kuvia tai OPI-tietoja
+	An open-source PDF workbench — local, private, and scriptable.	Avoimen lähdekoodin PDF-työpöytä – paikallinen, yksityinen ja skriptattava.
+	and {n} more	ja {n} muuta
+	Animation effects	Animaatiotehosteet
+	Animation that flashes can cause seizures. Check scripts and media for flicker.	Vilkkuva animaatio voi aiheuttaa kohtauksia. Tarkista komentosarjat ja media välkynnän varalta.
+	Annotations, form fill-in, and digital signatures	Merkinnät, lomakkeiden täyttö ja digitaaliset allekirjoitukset
+	Another file dialog is still open. Finish with it first.	Toinen tiedostoikkuna on vielä auki. Sulje se ensin.
+	Any	Mikä tahansa
+	Any except extracting pages	Kaikki paitsi sivujen poimiminen
+	Anyone opening the document will need this password. It's applied when you save.	Asiakirjan avaaminen edellyttää tätä salasanaa. Se otetaan käyttöön tallennettaessa.
+	Appear behind page	Sivun takana
+	Appear on top of page	Sivun päällä
+theme	Appearance	Teema
+	Appearance mode	Ulkoasutila
+	Appearance settings…	Ulkoasuasetukset…
+	Application	Sovellus
+	Applied 1 redaction mark. Save to remove the content from the file.	Käytettiin 1 peittomerkintä. Poista sisältö tiedostosta tallentamalla.
+	Applied {n} redaction marks. Save to remove the content from the file.	Käytettiin {n} peittomerkintää. Poista sisältö tiedostosta tallentamalla.
+	Applies to 1 page	Koskee yhtä sivua
+	Applies to {n} pages	Koskee {n} sivua
+	Apply PDF standards	Käytä PDF-standardeja
+	Apply redactions	Käytä peittoja
+	Apply redactions…	Toteuta peitot…
+	Apply scale	Käytä mittakaavaa
+	Applying a scale switches units to m / mm.	Mittakaavan käyttö vaihtaa yksiköiksi m / mm.
+	Appropriate nesting	Asianmukainen sisäkkäisyys
+	April	Huhtikuu
+calendar date	April	huhtikuuta
+	Arbitrary Mask	Vapaa maski
+	Archive documents	Arkistoi asiakirjat
+	Area	Pinta-ala
+	Arrange image	Järjestä kuva
+	Ask about this document	Kysy tästä asiakirjasta
+	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Kysyy uusinta julkaisua GitHubista. Mitään ei ladata tai asenneta automaattisesti.
+	Associated with content	Liitetty sisältöön
+	At least one signature has problems.	Vähintään yhdessä allekirjoituksessa on ongelmia.
+	At least one signature is invalid.	Vähintään yksi allekirjoitus on virheellinen.
+	At most	Enintään
+	Attach a file	Liitä tiedosto
+	Attach a file…	Liitä tiedosto…
+	Attach file	Liitä tiedosto
+	Attach {name}	Liitä {name}
+	Attaching files is not available on the web yet	Tiedostojen liittäminen ei ole vielä käytettävissä verkossa
+	Attachment	Liite
+	Attachments	Liitteet
+	Attachments Panel and Page	Liitepaneeli ja sivu
+	Audit space usage	Tarkastele tilankäyttöä
+	Audit space usage…	Tarkastele tilankäyttöä…
+	August	Elokuu
+calendar date	August	elokuuta
+	Author	Tekijä
+	Auto ({percent}%)	Automaattinen ({percent} %)
+	Auto follows the system's text size. Pages always render at the display's full resolution.	Automaattinen noudattaa järjestelmän tekstikokoa. Sivut piirretään aina näytön täydellä tarkkuudella.
+	Auto portrait/landscape	Automaattinen pysty/vaaka
+	Auto-rotate pages	Kierrä sivut automaattisesti
+	Auto-size text to fit redaction region	Sovita tekstin koko automaattisesti peittoalueeseen
+	Automatically tag PDF	Tagaa PDF automaattisesti
+	Available	Käytettävissä
+	average	keskiarvo
+	Back	Takaisin
+	Back side only	Vain takapuoli
+	Back to all tools	Takaisin kaikkiin työkaluihin
+	Back to Prepare a form	Takaisin kohtaan Valmistele lomake
+	Back to the document	Takaisin asiakirjaan
+	Background	Tausta
+	background	tausta
+	Basic constraints	Perusrajoitukset
+certificate	Basic constraints	Perusrajoitukset
+	Bates numbering	Bates-numerointi
+	Before each selected page (select pages in Organize)	Ennen jokaista valittua sivua (valitse sivut Järjestä-näkymässä)
+	Before the number	Ennen lukua
+	Beveled	Viistetty
+	Bicubic downsampling to	Bikuubinen alinäytteistys tarkkuuteen
+	Binary assets added	Lisätyt binääritiedostot
+	Binary assets removed	Poistetut binääritiedostot
+	Binding	Sidonta
+	Binding:	Sidonta:
+	Black and white	Mustavalkoinen
+	Black on white	Musta valkoisella
+	Blank page	Tyhjä sivu
+	Bold	Lihavointi
+	Booklet	Vihko
+	Booklet subset:	Vihkon osa:
+	Bookmark options	Kirjanmerkkiasetukset
+	Bookmarks	Kirjanmerkit
+	Bookmarks are present in large documents	Suurissa asiakirjoissa on kirjanmerkit
+	Bookmarks Panel and Page	Kirjanmerkkipaneeli ja sivu
+	Border Color:	Reunan väri:
+	Borders and Colors	Reunat ja värit
+	Both	Molemmat
+	Bottom	Alas
+	Bottom:	Ala:
+	Box	Ruutu
+	Bring forward	Tuo eteenpäin
+	Bring to front	Tuo etualalle
+	Bring your own model (off by default)	Käytä omaa mallia (oletuksena pois)
+	Browser's print dialog	Selaimen tulostusikkuna
+	Browse…	Selaa…
+	Bulleted list	Luettelomerkit
+	Butt	Tasapää
+	Button	Painike
+	Button is checked by default	Painike on oletuksena valittuna
+	Button Properties	Painikkeen ominaisuudet
+	Button Style:	Painikkeen tyyli:
+	Buttons with the same name and value are selected in unison	Samannimiset ja -arvoiset painikkeet valitaan yhtä aikaa
+	Bytes	Tavua
+	Calculate	Laskenta
+	Calculation order	Laskentajärjestys
+	Calibrate from two points	Kalibroi kahdesta pisteestä
+	Callout	Selite
+	Can't be read: {e}	Ei voi lukea: {e}
+	Cancelled	Peruttu
+	Cancelling…	Peruutetaan…
+	Case-sensitive	Sama kirjainkoko
+	Category:	Luokka:
+	CCITT Group 4	CCITT ryhmä 4
+	Center Footer Text	Keskimmäinen alatunnisteteksti
+	Center Header Text	Keskimmäinen ylätunnisteteksti
+	Center horizontally	Keskitä vaakasuunnassa
+	Center vertically	Keskitä pystysuunnassa
+	Center window on screen	Keskitä ikkuna näytölle
+	Centre	Keskitä
+	Certificate authority	Varmentaja
+	Certificate Signing	Varmenteiden allekirjoitus
+	Certificate Viewer	Varmenteen katseluohjelma
+	Certificates	Varmenteet
+	Certified by {by}	Varmentaja: {by}
+	Certify	Varmenna
+	Certify (invisible signature)	Varmenna (näkymätön allekirjoitus)
+	Certify (visible signature)	Varmenna (näkyvä allekirjoitus)
+	Change Author	Muuta tekijää
+	Change comment properties	Muuta kommentin ominaisuuksia
+	Change document properties	Muuta asiakirjan ominaisuuksia
+	Change field properties	Muuta kentän ominaisuuksia
+	Change initial view	Muuta aloitusnäkymää
+	Change initials	Vaihda nimikirjaimet
+	Change Keywords	Muuta avainsanoja
+	Change link properties	Muuta linkin ominaisuuksia
+	Change reading options	Muuta lukuasetuksia
+	Change reading options…	Muuta lukuasetuksia…
+	Change settings…	Muuta asetuksia…
+	Change signature	Vaihda allekirjoitus
+	Change Subject	Muuta aihetta
+	Change tag properties	Muuta tagin ominaisuuksia
+	Change the colour of line art as well as text	Muuta tekstin lisäksi viivagrafiikan väriä
+	Change Title	Muuta otsikkoa
+	Change {key}	Muuta: {key}
+	Change {what}	Muuta: {what}
+	Changes allowed	Sallitut muutokset
+	Changing the document	Asiakirjan muuttaminen
+	Character encoding	Merkistökoodaus
+	Character limit 0 means no limit. A comb of characters needs a limit.	Merkkirajoitus 0 tarkoittaa, ettei rajoitusta ole. Merkkiruudukko vaatii rajoituksen.
+	Character limit:	Merkkirajoitus:
+	Character spacing	Merkkiväli
+	Characters	Merkit
+	characters	merkkiä
+	Characters without spaces	Merkit ilman välilyöntejä
+	Check	Valintamerkki
+	Check Again	Tarkista uudelleen
+	Check again	Tarkista uudelleen
+	Check box is checked by default	Valintaruutu on oletuksena valittuna
+	Check Box Properties	Valintaruudun ominaisuudet
+	Check Box Style:	Valintaruudun tyyli:
+	Check for accessibility	Tarkista saavutettavuus
+	Check for accessibility…	Tarkista saavutettavuus…
+	Check for updates…	Tarkista päivitykset…
+	Check spelling	Tarkista oikeinkirjoitus
+	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Tarkista, että tagit luetaan samassa järjestyksessä kuin näkevä lukija lukisi. Korjaa järjestys Lukujärjestys-työkalulla tai Tagit-paneelissa.
+	Check the pages	Tarkista sivut
+	Check the pages of {name}: {why}	Tarkista tiedoston {name} sivut: {why}
+	CheckBox	Valintaruutu
+	Checkbox	Valintaruutu
+	Checked	Valittu
+	Checking Options ({on} of 32 in all categories)	Tarkistusasetukset ({on}/32 kaikissa luokissa)
+	Checking pages…	Tarkistetaan sivuja…
+	Checkmark	Valintamerkki
+	Choose a digital ID.	Valitse digitaalinen tunnus.
+	Choose a file…	Valitse tiedosto…
+	Choose a folder for the exported files	Valitse kansio vietäville tiedostoille
+	Choose a folder for the extracted pages	Valitse kansio poimituille sivuille
+	Choose a folder for the results	Valitse kansio tuloksille
+	Choose a folder for the searchable files	Valitse kansio haettaville tiedostoille
+	Choose a folder for the split files	Valitse kansio jaetuille tiedostoille
+	Choose a folder on this computer to pin	Valitse kiinnitettävä kansio tältä tietokoneelta
+	Choose a folder…	Valitse kansio…
+	Choose a layout:	Valitse asettelu:
+	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Valitse PNG- tai JPEG-kuva (enintään 4 MiB). Läpinäkyvyys säilyy.
+	Choose a stamp, then click on the page to place it.	Valitse leima ja sijoita se napsauttamalla sivua.
+	Choose an image	Valitse kuva
+	Choose images	Valitse kuvat
+	Choose image…	Valitse kuva…
+	Choose photo…	Valitse kuva…
+	Choose the digital ID that you want to use for signing:	Valitse allekirjoitukseen käytettävä digitaalinen tunnus:
+	Clean Up	Siivoa
+	Clean-up	Siistiminen
+	Clear all	Tyhjennä kaikki
+	Clear form	Tyhjennä lomake
+	Clear redaction marks	Poista peittomerkinnät
+	Clear search	Tyhjennä haku
+	Clear selection / close find	Tyhjennä valinta / sulje haku
+	Click on the page to add a {tool}, or drag to set its size	Lisää {tool} napsauttamalla sivua tai aseta koko vetämällä
+	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Lisää tekstiä napsauttamalla sivua; jokainen napsautus aloittaa uuden ruudun, ja ✓ lopettaa. Siirrä kohteita vetämällä, muuta kokoa vetämällä kulmasta ja muokkaa tekstiä kaksoisnapsauttamalla.
+	Click text or an image to edit it	Muokkaa tekstiä tai kuvaa napsauttamalla sitä
+	Click the first point to begin.	Aloita napsauttamalla ensimmäistä pistettä.
+	Click to sort, drag to move the column. Drag its edge to resize it.	Lajittele napsauttamalla, siirrä saraketta vetämällä. Muuta kokoa vetämällä reunasta.
+	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	Napsauta kärkipisteitä. Enter tai kaksoisnapsautus päättää ympärysmitan tai alueen. Sulje alue napsauttamalla ensimmäistä pistettä.
+	Clipboard	Leikepöytä
+	Clockwise 90 degrees	Myötäpäivään 90 astetta
+	Close (Esc)	Sulje (Esc)
+	Close all	Sulje kaikki
+	Close file	Sulje tiedosto
+	Close panel	Sulje paneeli
+	Close Tab	Sulje välilehti
+	Closed arrow	Suljettu nuoli
+	Cloud	Pilvi
+	Collapse	Kutista
+	Collapse all	Kutista kaikki
+	Collapse all bookmarks	Kutista kaikki kirjanmerkit
+	Collapse all pages	Kutista kaikki sivut
+	Collapse all tools	Kutista kaikki työkalut
+	Collapse tag	Kutista tagi
+	Color contrast	Värikontrasti
+	Color Images	Värikuvat
+	Color Spaces	Väriavaruudet
+	Colour	Väri
+	Colours are remapped while rendering; the document itself never changes.	Värit muunnetaan hahmonnuksen aikana; itse asiakirja ei muutu.
+	Column select	Sarakevalinta
+	Column spacing	Sarakeväli
+	Column widths	Sarakkeiden leveydet
+	Column {n}	Sarake {n}
+	Columns	Sarakkeet
+	Comb of	Merkkiruutuja
+	Comb of characters	Merkkiruudukko
+	Combine	Yhdistä
+	Combine files	Yhdistä tiedostot
+	Combine files…	Yhdistä tiedostot…
+	Combine the rest	Yhdistä loput
+	Combined {n} files	Yhdistettiin {n} tiedostoa
+	Combo	Yhdistelmäruutu
+	Coming in milestone	Tulossa välitavoitteessa
+	Coming in milestone {m}. Items marked Ready work today.	Tulossa välitavoitteessa {m}. Valmis-merkityt kohteet toimivat jo nyt.
+	Comment	Kommentti
+	Comment and form data	Kommentti- ja lomaketiedot
+	Comment and review	Kommentointi ja tarkistus
+	Comment list	Kommenttiluettelo
+	Commenting	Kommentointi
+	Commenting, filling in form fields, and signing existing signature fields	Kommentointi, lomakekenttien täyttäminen ja olemassa olevien allekirjoituskenttien allekirjoittaminen
+	Comments	Kommentit
+	comments	kommentit
+	Comments & Forms	Kommentit ja lomakkeet
+	Comments and markups	Kommentit ja merkinnät
+	Comments only	Vain kommentit
+	Comments panel	Kommenttipaneeli
+	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Kommenttien, linkkien ja kenttien on oltava tagipuussa, jotta ne luetaan ääneen. Tagita merkinnät.
+	Commit selected value immediately	Vahvista valittu arvo heti
+	Common Properties	Yleiset ominaisuudet
+	Common scales	Yleiset mittakaavat
+	Compare	Vertaa
+	Compare Files	Vertaa tiedostoja
+	Compare files	Vertaa tiedostoja
+	Compare files…	Vertaa tiedostoja…
+	Compare this file with an older version: Compare files… in All tools.	Vertaa tätä tiedostoa vanhempaan versioon: Vertaa tiedostoja… kohdassa Kaikki työkalut.
+	Compatibility	Yhteensopivuus
+	Completed	Valmis
+	Compress a PDF	Pakkaa PDF
+	Compress document structure (object streams)	Pakkaa asiakirjan rakenne (objektivirrat)
+	Configure a Digital ID for Signing	Määritä digitaalinen tunnus allekirjoittamista varten
+	Configure New Digital ID	Määritä uusi digitaalinen tunnus
+	Confirm Password	Vahvista salasana
+	Conformance level:	Yhdenmukaisuustaso:
+	Connected lines	Yhdistetyt viivat
+	Console	Konsoli
+	Content copying	Sisällön kopiointi
+	Content copying for accessibility	Sisällön kopiointi saavutettavuutta varten
+	Content Streams	Sisältövirrat
+	Continue	Jatka
+	Continuous scrolling	Jatkuva vieritys
+	Contributors	Osallistujat
+	Convert colors	Muunna värit
+	Copied to clipboard	Kopioitu leikepöydälle
+	Copied {what}	Kopioitiin {what}
+	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Kopiot, kaksipuolinen tulostus ja väri valitaan selaimen tulostusikkunassa.
+	Copy Image	Kopioi kuva
+	Copy Image in Original Format	Kopioi kuva alkuperäisessä muodossa
+	Copy or cut pages first	Kopioi tai leikkaa ensin sivuja
+	Copy pages	Kopioi sivut
+	Copy selected text	Kopioi valittu teksti
+	Copy text	Kopioi teksti
+	Copy to clipboard	Kopioi leikepöydälle
+	Correct recognized text	Korjaa tunnistettu teksti
+	Could not save: {e}	Tallennus epäonnistui: {e}
+	Couldn't add {name}: {e}	Tiedoston {name} lisääminen epäonnistui: {e}
+	Couldn't combine files: {e}	Tiedostojen yhdistäminen epäonnistui: {e}
+	Couldn't copy the image: {e}	Kuvan kopiointi epäonnistui: {e}
+	Couldn't create a PDF: {e}	PDF:n luominen epäonnistui: {e}
+	Couldn't download {name}: {e}	Tiedoston {name} lataus epäonnistui: {e}
+	Couldn't extract pages: {e}	Sivujen poimiminen epäonnistui: {e}
+	Couldn't fit the visible content: {e}	Näkyvän sisällön sovittaminen epäonnistui: {e}
+	Couldn't follow linked PDF: {reason}	Linkitettyyn PDF:ään ei voitu siirtyä: {reason}
+	Couldn't import the signature image: {e}	Allekirjoituskuvan tuonti epäonnistui: {e}
+	Couldn't open revision {n}: {e}	Versiota {n} ei voitu avata: {e}
+	Couldn't open the printer's preferences: {e}	Tulostimen asetuksia ei voitu avata: {e}
+	Couldn't open the result: {e}	Tuloksen avaaminen epäonnistui: {e}
+	Couldn't open the signed version: {e}	Allekirjoitettua versiota ei voitu avata: {e}
+	Couldn't open {name}: {e}	Tiedoston {name} avaaminen epäonnistui: {e}
+	Couldn't optimize the file	Tiedoston optimointi epäonnistui
+	Couldn't optimize the file: {e}	Tiedoston optimointi epäonnistui: {e}
+	Couldn't print from the browser ({e}); downloaded {name} to print instead	Selaimesta ei voitu tulostaa ({e}); ladattiin {name} tulostettavaksi sen sijaan
+	Couldn't read {name}: {e}	Tiedoston {name} lukeminen epäonnistui: {e}
+	Couldn't recover {name}: {e}	Tiedoston {name} palauttaminen epäonnistui: {e}
+	Couldn't reload {name}: {e}	Kohdetta {name} ei voitu ladata uudelleen: {e}
+	Couldn't save the image: {e}	Kuvaa ei voitu tallentaa: {e}
+	Couldn't save {name}: {e}	Tiedoston {name} tallennus epäonnistui: {e}
+	Couldn't save: {e}	Tallennus epäonnistui: {e}
+	Couldn't show the file picker. Please try again.	Tiedostovalitsinta ei voitu näyttää. Yritä uudelleen.
+	Couldn't split: {e}	Jakaminen epäonnistui: {e}
+	Couldn't summarize comments: {e}	Kommenttien yhteenvedon luominen epäonnistui: {e}
+	Couldn't take the snapshot: {e}	Tilannekuvan ottaminen epäonnistui: {e}
+	Couldn't unlock {name}: {e}	Tiedoston {name} lukituksen avaaminen epäonnistui: {e}
+	Couldn't use the photo: {e}	Kuvaa ei voitu käyttää: {e}
+	Couldn't use {name}: {e}	Tiedoston {name} käyttäminen epäonnistui: {e}
+	Couldn't write {name}: {e}	Tiedoston {name} kirjoittaminen epäonnistui: {e}
+	Couldn't write {path}: {e}	Kohteen {path} kirjoittaminen epäonnistui: {e}
+	Counterclockwise 90 degrees	Vastapäivään 90 astetta
+	Counting words… {n} pages read	Lasketaan sanoja… {n} sivua luettu
+	Country/Region	Maa/alue
+	Create & Edit	Luo ja muokkaa
+	Create a new Digital ID (self-signed, saved to a password-protected file)	Luo uusi digitaalinen tunnus (itse allekirjoitettu, tallennetaan salasanasuojattuun tiedostoon)
+	Create a PDF	Luo PDF
+	Create accessibility report	Luo saavutettavuusraportti
+	Create Custom Stamp	Luo mukautettu leima
+	Create custom stamp…	Luo mukautettu leima…
+	Create folder	Luo kansio
+	Create from	Luo lähteestä
+	Create Link	Luo linkki
+	Create link	Luo linkki
+	Create links	Luo linkit
+	Create links from URLs	Luo linkit URL-osoitteista
+	Create Link…	Luo linkki…
+	Create PDF Comment Summary	Luo PDF-kommenttiyhteenveto
+	Create PDF comment summary…	Luo PDF-kommenttiyhteenveto…
+	Create PDF from clipboard	Luo PDF leikepöydältä
+	Create PDF from file…	Luo PDF tiedostosta…
+	Create PDF from images	Luo PDF kuvista
+	Create PDF from images…	Luo PDF kuvista…
+	Create PDF from multiple files…	Luo PDF useista tiedostoista…
+	Create separate PDFs…	Luo erilliset PDF:t…
+	Create {what}	Luo {what}
+	Created 1 link	Luotiin 1 linkki
+	Created a comment summary	Luotiin kommenttien yhteenveto
+	Created a PDF from the first {n} files	Luotiin PDF ensimmäisistä {n} tiedostosta
+	Created a PDF from {n} files	Luotiin PDF {n} tiedostosta
+	Created a PDF from {n} files; left out: {names}	Luotiin PDF {n} tiedostosta; pois jätettiin: {names}
+	Created {n} links	Luotiin {n} linkkiä
+	Creates 1 file from {n} pages.	Luo {n} sivusta 1 tiedoston.
+	Creates {f} files from {n} pages.	Luo {n} sivusta {f} tiedostoa.
+	Creator	Luontisovellus
+	Credit Cards	Luottokortit
+	CRL Signing	CRL-allekirjoitus
+	Crop (% trimmed from each side)	Rajaa (% leikataan kultakin reunalta)
+	Crop Image	Rajaa kuva
+	Crop image	Rajaa kuva
+	Crop page	Rajaa sivu
+	Crop pages	Rajaa sivut
+key	Ctrl	Ctrl
+	Currency symbol:	Valuuttasymboli:
+	Current page	Nykyinen sivu
+	Current page ({n})	Nykyinen sivu ({n})
+	Current page only	Vain nykyinen sivu
+	Current page — type a page number or label (such as iv) and press Enter	Nykyinen sivu – kirjoita sivunumero tai -tunniste (kuten iv) ja paina Enter
+	Custom font	Mukautettu fontti
+	Custom scale:	Mukautettu skaala:
+	Custom stamps arrive on the web with file pickers for images	Mukautetut leimat tulevat verkkoversioon kuvatiedostojen valitsimien myötä
+	Custom text:	Mukautettu teksti:
+	Custom:	Mukautettu:
+	Customize & Automate	Mukauta ja automatisoi
+	Cut and stack	Leikkaa ja pinoa
+	Cut and stack needs Two-sided: Off. Print single-sided sheets.	Leikkaa ja pinoa edellyttää asetusta Kaksipuolinen: Ei käytössä. Tulosta yksipuolisia arkkeja.
+	Cut Image	Leikkaa kuva
+	Cut marks	Leikkausmerkit
+	Cut pages	Leikkaa sivut
+	Cut {what}	Leikattiin {what}
+	Cuts each page to its printed area, turns it upright and fits it to the sheet without stretching. One label per sheet.	Rajaa jokaisen sivun tulostettuun alueeseen, kääntää sen pystyyn ja sovittaa arkille venyttämättä. Yksi tarra arkkia kohden.
+	Dark gray	Tummanharmaa
+	Dark gray theme	Tummanharmaa teema
+	Dark theme	Tumma teema
+	Data Encipherment	Tietojen salaus
+	Date	Päivämäärä
+	Date field	Päivämääräkenttä
+	Date format	Päivämäärän muoto
+	Date: 	Päivämäärä: 
+	December	Joulukuu
+calendar date	December	joulukuuta
+	Decimal places:	Desimaalit:
+	Decimals	Desimaalit
+	Decipher Only	Vain salauksen purku
+	Declared conformance: {shown}	Ilmoitettu yhdenmukaisuus: {shown}
+	Decorative figure	Koristekuva
+	Default page display	Sivun oletusnäyttö
+	Default Value:	Oletusarvo:
+	Default workspace mode	Työtilan oletustila
+	Default zoom	Oletuszoomaus
+	Default:	Oletus:
+key	Delete	Delete
+	Delete attachment	Poista liite
+	Delete attachment {key}	Poista liite {key}
+	Delete bookmark	Poista kirjanmerkki
+	Delete comment	Poista kommentti
+	Delete content	Poista sisältö
+	Delete document JavaScript	Poista asiakirjan JavaScript
+	Delete field	Poista kenttä
+	Delete image	Poista kuva
+	Delete link	Poista linkki
+	Delete page	Poista sivu
+	Delete page {label}	Poista sivu {label}
+	Delete pages	Poista sivut
+	Delete pages (Delete)	Poista sivut (Delete)
+	Delete pages after extracting	Poista sivut poimimisen jälkeen
+	Delete selected fields	Poista valitut kentät
+	Delete selected pages (Organize)	Poista valitut sivut (Järjestä)
+	Delete stamp	Poista leima
+	Delete the selected pages	Poista valitut sivut
+@plural	Delete {n} field|Delete {n} fields	Poista {n} kenttä|Poista {n} kenttää
+	Delete {o}	Poista {o}
+	Deleted	Poistettu
+	Describe the figure	Kuvaile kuva
+	Detailed Report	Yksityiskohtainen raportti
+	Details	Tiedot
+	Detect form fields	Tunnista lomakekentät
+	Detected 1 form field	Havaittiin 1 lomakekenttä
+	Detected {n} form fields	Havaittiin {n} lomakekenttää
+	Device colour is used, but there is no PDF/A output intent	Laiteväriä käytetään, mutta PDF/A-tulosteprofiilia ei ole
+	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	DeviceCMYK on käytössä, mutta PDF/A-tulostustavoite ei ole CMYK-profiili
+	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	DeviceCMYK on käytössä: se vaatii CMYK-tulosteprofiilin (ei lisätä automaattisesti)
+	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	DeviceRGB on käytössä, mutta PDF/A-tulostustavoite ei ole RGB-profiili
+	Diagnostic details	Diagnostiikkatiedot
+	Digital ID	Digitaalinen tunnus
+	Digital ID password	Digitaalisen tunnuksen salasana
+	Digital Signature	Digitaalinen allekirjoitus
+	Digital signature	Digitaalinen allekirjoitus
+	Digital Signature Properties	Digitaalisen allekirjoituksen ominaisuudet
+	Digitally sign	Allekirjoita digitaalisesti
+	Digitally signed by	Digitaalisesti allekirjoittanut
+	Disabled	Ei käytössä
+	Discard all comments, forms and multimedia	Hylkää kaikki kommentit, lomakkeet ja multimedia
+	Discard all links, actions and JavaScript	Hylkää kaikki linkit, toiminnot ja JavaScript
+	Discard all object data (file attachments)	Hylkää kaikki objektitiedot (liitetiedostot)
+	Discard alternate images	Hylkää vaihtoehtoiset kuvat
+	Discard bookmarks	Hylkää kirjanmerkit
+	Discard document information and metadata	Hylkää asiakirjan tiedot ja metatiedot
+	Discard document tags	Hylkää asiakirjan tagit
+	Discard embedded page thumbnails	Hylkää upotetut sivujen pikkukuvat
+	Discard embedded print settings	Hylkää upotetut tulostusasetukset
+	Discard hidden layer content	Hylkää piilotettujen tasojen sisältö
+	Discard hidden text	Hylkää piilotettu teksti
+	Discard Objects	Hylkää objektit
+	Discard private data of other applications	Hylkää muiden sovellusten yksityiset tiedot
+	Discard this text (Esc)	Hylkää tämä teksti (Esc)
+	Discard User Data	Hylkää käyttäjätiedot
+	Dismiss	Sulje
+	Display theme	Näytön teema
+	Distinguished name	Erottava nimi
+	Distribute evenly	Jaa tasaisesti
+	Distribute fields	Jaa kentät tasaisesti
+	DN: 	DN: 
+	Document actions	Asiakirjan toiminnot
+	Document and markups	Asiakirja ja merkinnät
+	Document and stamps	Asiakirja ja leimat
+	Document assembly	Asiakirjan kokoaminen
+	Document has appropriate color contrast	Asiakirjan värikontrasti on riittävä
+	Document is not image-only PDF	Asiakirja ei ole pelkistä kuvista koostuva PDF
+	Document is tagged PDF	Asiakirja on tagitettu PDF
+	Document JavaScripts	Asiakirjan JavaScriptit
+	Document JavaScripts…	Asiakirjan JavaScriptit…
+	Document language	Asiakirjan kieli
+	Document Overhead	Asiakirjan yleiskulut
+	Document Properties	Asiakirjan ominaisuudet
+	Document properties ({key})	Asiakirjan ominaisuudet ({key})
+	Document properties (⌘D)	Asiakirjan ominaisuudet (⌘D)
+	Document properties…	Asiakirjan ominaisuudet…
+	Document sanitized. Save to finish: saving rewrites the whole file.	Asiakirja puhdistettu. Viimeistele tallentamalla: tallennus kirjoittaa koko tiedoston uudelleen.
+	document security store	asiakirjan suojaussäilö
+	document structure	asiakirjan rakenne
+	Document structure provides a logical reading order	Asiakirjan rakenne tarjoaa loogisen lukujärjestyksen
+	Document Title	Asiakirjan otsikko
+	Document title is showing in title bar	Asiakirjan otsikko näkyy otsikkorivillä
+	Documents and view	Asiakirjat ja näkymä
+	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Yli 20-sivuisissa asiakirjoissa tarvitaan kirjanmerkit siirtymistä varten. Lisää kirjanmerkit pääosioille.
+	Don't save	Älä tallenna
+	Don't show again	Älä näytä uudelleen
+	Done adding text	Tekstin lisäys valmis
+	Double-click	Kaksoisnapsautus
+	Downloaded {name}	Ladattiin {name}
+@plural	Downloaded {n} PDF|Downloaded {n} PDFs	Ladattiin {n} PDF|Ladattiin {n} PDF:ää
+	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Liitteiden lataus verkkoversiossa tulee versiossa M3.10 ({n} tavua valmiina)
+	Downsample to	Alinäytteistä tarkkuuteen
+	DPI sets the printed page size without resampling the image.	DPI määrittää tulostetun sivun koon kuvaa uudelleennäytteistämättä.
+	Drag a field to move it, or select it and press {up} or {down}.	Siirrä kenttää vetämällä tai valitse se ja paina {up} tai {down}.
+	Drag a rectangle around the area to copy	Vedä suorakulmio kopioitavan alueen ympärille
+	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Rajaa sivu vetämällä suorakulmio; kaksoisnapsauta sivua avataksesi Aseta sivulaatikot
+	Drag a rectangle to create a link; double-click a link to edit it	Luo linkki vetämällä suorakulmio; muokkaa linkkiä kaksoisnapsauttamalla sitä
+	Drag the corners onto the document's edges, then choose Enhance page.	Vedä kulmat asiakirjan reunoille ja valitse sitten Paranna sivua.
+	Drag the selection to move it. Esc clears the selection.	Siirrä valintaa vetämällä. Esc tyhjentää valinnan.
+	Drag to draw the area where the signature should appear.	Piirrä vetämällä alue, jolle allekirjoitus sijoitetaan.
+	Drag to reorder	Järjestä vetämällä
+	Draw a cloud	Piirrä pilvi
+	Draw a line	Piirrä viiva
+	Draw a polygon	Piirrä monikulmio
+	Draw a rectangle	Piirrä suorakulmio
+	Draw an arrow	Piirrä nuoli
+	Draw an oval	Piirrä soikio
+	Draw connected lines	Piirrä yhdistettyjä viivoja
+	Draw freehand	Piirrä vapaalla kädellä
+	Draw your {what} below.	Piirrä {what} alle.
+	Drawing	Piirros
+	Drawing scale	Piirustuksen mittakaava
+	Drawing scale changes. Use Actual size for full-scale plans.	Piirustuksen mittakaava muuttuu. Käytä mittakaavaisille piirustuksille Todellinen koko -valintaa.
+	Drop PDFs or folders here, or choose them.	Pudota PDF-tiedostoja tai kansioita tähän tai valitse ne.
+	Drop PDFs, images, text files or folders here, or choose them.	Pudota PDF:t, kuvat, tekstitiedostot tai kansiot tähän tai valitse ne.
+	Drop-down list	Avattava luettelo
+	Dropdown Properties	Avattavan luettelon ominaisuudet
+	Duplicate "{name}" onto:	Monista "{name}" kohteeseen:
+	Duplicate Field	Monista kenttä
+	Duplicate field	Monista kenttä
+	Duplicate page	Monista sivu
+	Duplicate pages	Monista sivut
+	Duplicate…	Monista…
+	Dynamic	Dynaaminen
+	Dynamic XFA form laid out from its template: {pages}, {fields}.	Dynaaminen XFA-lomake asemoitu mallistaan: {pages}, {fields}.
+	E-Sign	Sähköinen allekirjoitus
+	e.g. en-US	esim. en-US
+	e.g. My stamps	esim. Omat leimat
+	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Jokainen kenttä tarvitsee työkaluvihjeen, joka kertoo, mitä kenttään syötetään. Lisää se kohdassa Kentän ominaisuudet > Yleiset > Työkaluvihje.
+	Each file holds as many of the {n} pages as fit.	Jokaiseen tiedostoon tulee niin monta {n} sivusta kuin mahtuu.
+	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	Kukin kuva mitataan siinä koossa, jossa sivut sen piirtävät; kuva korvataan vain, jos tulos on pienempi.
+	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	Kukin kuva kerran, nimettynä asiakirjan ja sivun mukaan. JPEG-kuvat tallennetaan muuttamattomina, muut PNG-muodossa.
+	Earlier in calculation order	Aiemmaksi laskentajärjestyksessä
+	Earlier in tab order	Aiemmaksi sarkainjärjestyksessä
+comment menu	Edit	Muokkaa
+	Edit a PDF	Muokkaa PDF:ää
+	Edit Action	Muokkaa toimintoa
+	Edit comment	Muokkaa kommenttia
+	Edit content	Muokkaa sisältöä
+	Edit document JavaScript	Muokkaa asiakirjan JavaScriptiä
+	Edit fields	Muokkaa kenttiä
+	Edit image	Muokkaa kuvaa
+	Edit script of {name}	Muokkaa kentän {name} komentosarjaa
+	Edit text	Muokkaa tekstiä
+	Edit text & images	Muokkaa tekstiä ja kuvia
+	Edit text…	Muokkaa tekstiä…
+	Edit this PDF	Muokkaa tätä PDF-tiedostoa
+	Edit {field}'s formula	Muokkaa kentän {field} kaavaa
+	Editing	Muokkaus
+	Email Address	Sähköpostiosoite
+	Email Addresses	Sähköpostiosoitteet
+	Embedded Files	Upotetut tiedostot
+	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	Upotettujen tiedostojen on oltava itsekin PDF/A-tiedostoja (käytä muille PDF/A-3:a)
+	Enable Acrobat JavaScript	Ota Acrobat JavaScript käyttöön
+	Enable copying of text, images, and other content	Salli tekstin, kuvien ja muun sisällön kopiointi
+	Enable text access for screen reader devices for the visually impaired	Salli tekstin käyttö näkövammaisten näytönlukijalaitteille
+	Enabled	Käytössä
+	Encipher Only	Vain salaus
+	Encrypt	Salaa
+	Encrypt with certificate	Salaa varmenteella
+	Encryption	Salaus
+key	End	End
+	End entity	Loppuyksikkö
+	Endpoint	Päätepiste
+	Endpoints	Päätepisteet
+	English	Englanti
+	Enhance camera image	Paranna kamerakuvaa
+	Enhance page	Paranna sivua
+	Enhance scanned file	Paranna skannattua tiedostoa
+	Enter a name.	Anna nimi.
+	Enter a page number	Anna sivunumero
+	Enter a scale such as 1:50.	Anna mittakaava, esimerkiksi 1:50.
+	Enter a URL	Anna URL
+	Enter permissions password…	Anna käyttöoikeuksien salasana…
+	Enter the field names	Anna kenttien nimet
+	Enter the password that opens it	Anna salasana, jolla tiedosto avataan
+	Enter the permissions password to allow combining	Salli yhdistäminen antamalla käyttöoikeuksien salasana
+	Entire page	Koko sivu
+	Erase	Pyyhi
+	Erase drawings	Pyyhi piirrokset
+key	Esc	Esc
+	Even and Odd Pages	Parilliset ja parittomat sivut
+	Even pages	Parilliset sivut
+	Even Pages Only	Vain parilliset sivut
+	Even pages only	Vain parilliset sivut
+	Every field calculates after the fields it reads.	Jokainen kenttä lasketaan lukemiensa kenttien jälkeen.
+	Every field outside a loop calculates after the fields it reads.	Jokainen silmukan ulkopuolinen kenttä lasketaan lukemiensa kenttien jälkeen.
+	Every PDF in the folder	Kaikki kansion PDF-tiedostot
+	Every PDF in the folder and the folders inside it	Kaikki kansion ja sen alikansioiden PDF-tiedostot
+	Every PDF, image and text file in the folder	Kaikki kansion PDF-, kuva- ja tekstitiedostot
+	Every PDF, image and text file in the folder and the folders inside it	Kaikki PDF-, kuva- ja tekstitiedostot kansiosta ja sen alikansioista
+	Everything on a page must be tagged or marked as an artifact (decoration, headers, footers). Tag the untagged content.	Kaikki sivun sisältö on tagitettava tai merkittävä artefaktiksi (koristeet, ylä- ja alatunnisteet). Tagita tagittamaton sisältö.
+	Example: {sample}	Esimerkki: {sample}
+	Exclude image/OCR text	Jätä pois kuvien/OCR:n teksti
+	Exclude images smaller than	Ohita kuvat, jotka ovat pienempiä kuin
+	Exclude tagged code blocks	Jätä pois tagitetut koodilohkot
+	Exclude tagged tables	Jätä pois tagitetut taulukot
+	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	Poisjätöt perustuvat PDF-tageihin. Tagittamattomat taulukot ja koodi lasketaan mukaan. Kuvien poisjättö poistaa myös näkymättömän tekstin.
+	Execute a menu item	Suorita valikon kohde
+	Expand all	Laajenna kaikki
+	Expand all bookmarks	Laajenna kaikki kirjanmerkit
+	Expand all pages	Laajenna kaikki sivut
+	Expand all tools	Laajenna kaikki työkalut
+	Expand tag	Laajenna tagi
+	Expand top-level bookmarks	Laajenna ylimmän tason kirjanmerkit
+	Explain	Selitä
+	Export a PDF	Vie PDF
+	Export all comments to data file…	Vie kaikki kommentit datatiedostoon…
+	Export All Images	Vie kaikki kuvat
+	Export all images	Vie kaikki kuvat
+	Export all images…	Vie kaikki kuvat…
+	Export all to data file…	Vie kaikki datatiedostoon…
+	Export certificate	Vie varmenne
+	Export certificate…	Vie varmenne…
+	Export comments	Vie kommentit
+	Export data	Vie tietoja
+	Export form data	Vie lomaketiedot
+	Export form data…	Vie lomaketietoja…
+	Export measurements	Vie mittaukset
+	Export measurements as CSV	Vie mittaukset CSV-muodossa
+	Export stopped: {e}	Vienti keskeytyi: {e}
+	Export this PDF	Vie tämä PDF-tiedosto
+	Export to	Vie muotoon
+	Export to HTML…	Vie HTML-muotoon…
+	Export to Image	Vie kuvaksi
+	Export to image…	Vie kuvaksi…
+	Export to PowerPoint…	Vie PowerPointiin…
+	Export to RTF…	Vie RTF-muotoon…
+	Export to Text	Vie tekstiksi
+	Export to text…	Vie tekstiksi…
+	Export to Word…	Vie Wordiin…
+	Export Value: {on}	Vientiarvo: {on}
+	Exported 1 image	Vietiin 1 kuva
+	Exported the text of 1 page	Vietiin 1 sivun teksti
+	Exported the text of {n} pages	Vietiin {n} sivun teksti
+	Exported to {path}	Viety kohteeseen {path}
+	Exported {n} images	Vietiin {n} kuvaa
+	Exporting… {d} of {t}	Viedään… {d}/{t}
+	Extended Graphics States	Laajennetut grafiikkatilat
+	Extract	Poimi
+	Extract pages	Poimi sivut
+	Extract pages as separate files	Poimi sivut erillisiksi tiedostoiksi
+	Extract pages to a new document	Poimi sivut uuteen asiakirjaan
+	Extract pages…	Poimi sivut…
+	Extract the selected pages…	Pura valitut sivut…
+	Extracted 1 page	Poimittiin 1 sivu
+	Extracted {n} pages	Poimittiin {n} sivua
+	Failed	Hylätty
+scroll speed	Fast	Nopea
+	February	Helmikuu
+calendar date	February	helmikuuta
+	Field	Kenttä
+	Field "{}" on page {p} has no description (tooltip)	Sivun {p} kentällä "{}" ei ole kuvausta (työkaluvihje)
+	Field descriptions	Kenttien kuvaukset
+	Field is used for file selection	Kenttää käytetään tiedoston valintaan
+	Field list	Kenttäluettelo
+	Field names	Kenttien nimet
+	Field names (comma-separated)	Kenttien nimet (pilkuin eroteltuina)
+	field names can't contain a period: {name}	kenttien nimissä ei voi olla pistettä: {name}
+	Field names with + - * / and parentheses; put \\ before spaces in names.	Kenttien nimet sekä + - * / ja sulkeet; lisää \\ nimissä olevien välilyöntien eteen.
+	Field properties	Kentän ominaisuudet
+	Field properties…	Kentän ominaisuudet…
+	Field value is in range:	Kentän arvo on välillä:
+	Field value is not validated	Kentän arvoa ei tarkisteta
+	Field: {field} on page {p}	Kenttä: {field} sivulla {p}
+	Fields	Kentät
+	Fields to reset (comma-separated; empty: all)	Nollattavat kentät (pilkuin eroteltuina; tyhjä: kaikki)
+	Figure {i} of {n}{page}	Kuva {i}/{n}{page}
+	Figures alternate text	Kuvien vaihtoehtoinen teksti
+	Figures require alternate text	Kuvat edellyttävät vaihtoehtoista tekstiä
+	File (.p12, .pfx)	Tiedosto (.p12, .pfx)
+	File attachments	Tiedostoliitteet
+	File Name	Tiedostonimi
+	File name	Tiedostonimi
+	File size	Tiedostokoko
+@id	file.word_count	Sanamäärä…
+	Filename	Tiedostonimi
+	Files are combined from top to bottom. Leave Pages empty to take every page.	Tiedostot yhdistetään ylhäältä alas. Jätä Sivut tyhjäksi, niin kaikki sivut otetaan mukaan.
+	Files are combined in the order shown. Drag them to change it.	Tiedostot yhdistetään näytetyssä järjestyksessä. Muuta järjestystä vetämällä.
+	Files are combined in this order. Leave Pages empty to take every page.	Tiedostot yhdistetään tässä järjestyksessä. Jätä Sivut tyhjäksi, niin kaikki sivut otetaan mukaan.
+	Files for {name}	Tiedostot: {name}
+	Files you open in PdfCraft appear here. Drop a PDF anywhere to open it.	PdfCraftissa avatut tiedostot näkyvät tässä. Avaa PDF pudottamalla se mihin tahansa.
+	Fill	Täytä
+	Fill & Sign	Täytä ja allekirjoita
+	Fill & Sign dates	Täytä ja allekirjoita -päivämäärät
+	Fill & Sign signature	Täytä ja allekirjoita -allekirjoitus
+	Fill & Sign: add text	Täytä ja allekirjoita: lisää tekstiä
+	Fill & Sign: change initials	Täytä ja allekirjoita: vaihda nimikirjaimet
+	Fill & Sign: change signature	Täytä ja allekirjoita: vaihda allekirjoitus
+	Fill & Sign: checkmark	Täytä ja allekirjoita: valintamerkki
+	Fill & Sign: cross	Täytä ja allekirjoita: risti
+	Fill & Sign: date	Täytä ja allekirjoita: päivämäärä
+	Fill & Sign: dot	Täytä ja allekirjoita: piste
+	Fill & Sign: initials	Täytä ja allekirjoita: nimikirjaimet
+	Fill & Sign: line	Täytä ja allekirjoita: viiva
+	Fill & Sign: remove saved initials	Täytä ja allekirjoita: poista tallennetut nimikirjaimet
+	Fill & Sign: remove saved signature	Täytä ja allekirjoita: poista tallennettu allekirjoitus
+	Fill & Sign: sign	Täytä ja allekirjoita: allekirjoita
+	Fill Color:	Täyttöväri:
+	Fill colour	Täyttöväri
+	Fill colour:	Täyttöväri:
+	Fill colour: none	Täyttöväri: ei mitään
+	Fill in {name}	Täytä {name}
+	Filling in form fields and signing existing signature fields	Lomakekenttien täyttäminen ja olemassa olevien allekirjoituskenttien allekirjoittaminen
+	Filling of form fields	Lomakekenttien täyttäminen
+	Filter comments	Suodata kommentit
+	Find a tag	Etsi tagi
+	Find options	Hakuasetukset
+	Find text	Etsi tekstiä
+	Find text and redact	Etsi ja peitä tekstiä
+	Find text and redact…	Etsi ja peitä tekstiä…
+	Find text or tools	Etsi tekstiä tai työkaluja
+	Find tools and commands	Etsi työkaluja ja komentoja
+	Find tools and commands…	Etsi työkaluja ja komentoja…
+	Find untagged content	Etsi tagittamaton sisältö
+	Finding document fonts…	Etsitään asiakirjan fontteja…
+	Find…	Etsi…
+	Finish or discard the text being edited before selecting several objects.	Viimeistele tai hylkää muokattava teksti ennen useiden objektien valitsemista.
+	First / last page	Ensimmäinen / viimeinen sivu
+	First row number	Ensimmäisen rivin numero
+	Fit Height	Sovita korkeuteen
+	Fit one full page	Sovita yksi koko sivu
+	Fit Page	Sovita sivu
+	Fit to height	Sovita korkeuteen
+	Fit to page	Sovita sivulle
+	Fit to width	Sovita leveyteen
+	Fit to width scrolling	Leveyteen sovitettu vieritys
+	Fit Visible	Sovita näkyvä alue
+	Fit visible	Sovita näkyvä alue
+	Fit Width	Sovita leveyteen
+	Fix	Korjaa
+	Fix hairlines	Korjaa hiusviivat
+	Fix order	Korjaa järjestys
+	Fix reading order	Korjaa lukujärjestys
+	Fixed what could be fixed; 1 problem remains	Korjattiin, mikä voitiin; 1 ongelma jäljellä
+	Fixed what could be fixed; {n} problems remain	Korjattiin, mikä voitiin; {n} ongelmaa jäljellä
+	Flatten comments	Litistä kommentit
+	Flatten Fill & Sign	Litistä Täytä ja allekirjoita
+	Flatten Fill & Sign when saving	Litistä Täytä ja allekirjoita -sisältö tallennettaessa
+	Flatten form fields	Litistä lomakekentät
+	Flip horizontal	Käännä vaakasuunnassa
+	Flip image	Käännä kuva
+	Flip on long edge	Käännä pitkän reunan mukaan
+	Flip on short edge	Käännä lyhyen reunan mukaan
+	Flip vertical	Käännä pystysuunnassa
+	Float panel	Irrota paneeli
+	Folders	Kansiot
+	Font (unnamed) on page {p} doesn't map its characters to Unicode	Sivun {p} fontti (nimetön) ei määritä merkeilleen Unicode-vastineita
+	Font colour:	Fontin väri:
+	Font size	Fonttikoko
+	Font size 0 uses automatic sizing.	Fonttikoko 0 käyttää automaattista kokoa.
+	Font Size:	Fonttikoko:
+	Font size:	Fonttikoko:
+	Font {} on page {p} doesn't map its characters to Unicode	Sivun {p} fontti {} ei määritä merkeilleen Unicode-vastineita
+	Font: Helvetica	Fontti: Helvetica
+	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Fonttien on yhdistettävä merkkinsä Unicodeen, jotta tekstiä voi lukea ja kopioida. Korjaa fontit tai luo PDF uudelleen.
+	for images above	kuville, joiden tarkkuus yli
+	For page sizes and margins.	Sivukokoja ja reunuksia varten.
+	Form data and PDF forms	Lomaketiedot ja PDF-lomakkeet
+	Form field on page {p} isn't tagged	Sivun {p} lomakekenttää ei ole tagattu
+	Form fields	Lomakekentät
+	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	Lomakekentät litistetään: niiden arvot jäävät näkyviin. Tallennus kirjoittaa koko tiedoston uudelleen.
+	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	Lomakekenttien on oltava tagipuussa (Form-tagit), jotta ne luetaan ääneen. Tagita lomakekentät.
+	Form fields only	Vain lomakekentät
+	Form fields panel	Lomakekenttäpaneeli
+	form fill	lomakkeen täyttö
+	Form fill-in and digital signatures	Lomakkeiden täyttö ja digitaaliset allekirjoitukset
+	Format text	Muotoile teksti
+	Forms	Lomakkeet
+	Forms & Signatures	Lomakkeet ja allekirjoitukset
+	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Kaavat ja vastaavat muut kuin tekstielementit tarvitsevat vaihtoehtoisen tekstin. Lisää niihin vaihtoehtoinen teksti.
+	Found {n} untagged content problems.	Löytyi {n} tagittamattoman sisällön ongelmaa.
+calendar weekday	Fr	Pe
+	From	Alkaen
+	From a PDF page or an image	PDF-sivusta tai kuvasta
+	From colour	Väristä
+	From {file}	Lähteestä {file}
+	From:	Mistä:
+	Front side only	Vain etupuoli
+	Full Screen	Koko näyttö
+	Full screen mode	Koko näytön tila
+	Geospatial location	Paikkatieto
+	Get help, share feedback and follow development on Discord.	Hae apua, anna palautetta ja seuraa kehitystä Discordissa.
+	Go to a page view	Siirry sivunäkymään
+	Go to page {p}	Siirry sivulle {p}
+	Go to page…	Siirry sivulle…
+	Go to the page	Siirry sivulle
+	Go to this result	Siirry tähän tulokseen
+	Grab bag	Sekalaiset
+	Grayscale Images	Harmaasävykuvat
+	Green on black	Vihreä mustalla
+	Greyscale	Harmaasävy
+	Grid view	Ruudukkonäkymä
+	H / Space (hold)	H / Välilyönti (pidä pohjassa)
+	Hand (H)	Käsi (H)
+	Has JavaScript actions (run in M6)	Sisältää JavaScript-toimintoja (suoritetaan M6:ssa)
+	Header and footer	Ylä- ja alatunniste
+	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	Otsikkosolut (TH) kertovat kuuntelijalle, mitä kukin sarake tai rivi sisältää. Merkitse otsikkosolut.
+	header or footer	ylä- tai alatunniste
+	Headers	Otsikkosolut
+	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Otsikkotasoja ei pitäisi ohittaa (H1, jota seuraa H3). Tagita otsikot uudelleen.
+	Headings	Otsikot
+	Help…	Ohje…
+	Hidden layers	Piilotetut tasot
+	Hidden text	Piilotettu teksti
+	Hide a field	Piilota kenttä
+	Hide all comments	Piilota kaikki kommentit
+	Hide field highlights	Piilota kenttien korostus
+	Hide gaps to join page edges. Margins inside the PDF remain unchanged.	Piilota välit, jolloin sivujen reunat liittyvät yhteen. PDF:n sisäiset marginaalit pysyvät ennallaan.
+	Hide hover previews for highlights without comment text	Piilota esikatselu korostuksista, joissa ei ole kommenttitekstiä
+	Hide layer	Piilota taso
+	Hide menu bar	Piilota valikkorivi
+	Hide password	Piilota salasana
+	Hide toolbars	Piilota työkalurivit
+	Hide window controls	Piilota ikkunan ohjaimet
+	Hides annotation	Piilottaa merkinnän
+	Highlight	Korosta
+	Highlight fields	Korosta kentät
+	Highlight Style:	Korostustyyli:
+	Highlight text	Korosta tekstiä
+key	Home	Home
+	Home / End	Home / End
+	Horizontal reversed	Vaakasuora käänteinen
+	Horizontal scale	Vaakaskaalaus
+	Horizontally	Vaakasuunnassa
+	HTML web page	HTML-verkkosivu
+	H{n} follows an H{d}; headings should not skip levels	H{n} seuraa otsikkoa H{d}; otsikkotasoja ei pidä ohittaa
+	Icon	Kuvake
+	Identity	Henkilöllisyys
+	Image (PNG)	Kuva (PNG)
+	Image field	Kuvakenttä
+	Image pasted	Kuva liitetty
+	Image-only PDF	Pelkistä kuvista koostuva PDF
+	Images and text	Kuvat ja teksti
+	Images and text (converted to PDF)	Kuvat ja teksti (muunnetaan PDF:ksi)
+	Import	Tuo
+	Import comments…	Tuo kommentteja…
+	Import data	Tuo tietoja
+	Import form data…	Tuo lomaketietoja…
+	Import list…	Tuo luettelo…
+	Import {name}	Tuo {name}
+	Importing data arrives on the web with file pickers for data files	Tietojen tuonti tulee verkkoversioon tietotiedostojen valitsimien myötä
+	In multiple files	Useissa tiedostoissa
+	In streams that use LZW encoding, use Flate instead	Koodaa LZW-koodatut virrat Flate-menetelmällä
+	In this file	Tässä tiedostossa
+	Includes unsaved changes	Sisältää tallentamattomia muutoksia
+	Incorrect password. Try again.	Väärä salasana. Yritä uudelleen.
+	Indent	Sisennä
+	Index	Hakemisto
+	Information	Tiedot
+	Initial View	Alkunäkymä
+	Initials	Nimikirjaimet
+	initials	nimikirjaimet
+	Ink sensitivity	Musteen herkkyys
+	Insert a blank page after the selection	Lisää tyhjä sivu valinnan jälkeen
+	Insert a file at the end	Lisää tiedosto loppuun
+	Insert a file before page {label}	Lisää tiedosto ennen sivua {label}
+	Insert blank page	Lisää tyhjä sivu
+	Insert Date	Lisää päivämäärä
+	Insert Page Number	Lisää sivunumero
+	Insert pages	Lisää sivuja
+	Insert pages from a file after the selection…	Lisää sivuja tiedostosta valinnan jälkeen…
+	Insert pages from a file…	Lisää sivuja tiedostosta…
+	Insert pages from file…	Lisää sivuja tiedostosta…
+	Insert pages from {name}	Lisää sivuja tiedostosta {name}
+	Insert pages from {name} — 1 field renamed	Lisää sivuja tiedostosta {name} — 1 kenttä nimetty uudelleen
+	Insert pages from {name} — fields renamed	Lisää sivuja tiedostosta {name} — kenttiä nimetty uudelleen
+	Insert text	Lisää tekstiä
+	Inserted	Lisätty
+	Inserted text	Lisätty teksti
+	Inserting, deleting, and rotating pages	Sivujen lisääminen, poistaminen ja kiertäminen
+	Inset	Upotettu
+	Inspector	Tarkastin
+	Installed fonts…	Asennetut fontit…
+	Intended usage	Käyttötarkoitus
+certificate	Intended usage	Käyttötarkoitus
+	Interface language	Käyttöliittymän kieli
+	Interface size	Käyttöliittymän koko
+	Intersection	Leikkauspiste
+	Intersections	Leikkauspisteet
+	Invisible Rectangle	Näkymätön suorakulmio
+	Irregular tables confuse cell navigation. Give every row the same number of cells (counting spans).	Epäsäännölliset taulukot sekoittavat solujen välillä siirtymisen. Anna jokaiselle riville sama määrä soluja (yhdistetyt solut mukaan lukien).
+	is available	on käytettävissä
+	is not available yet	ei ole vielä käytettävissä
+	Issued by	Myöntäjä
+certificate	Issued by	Myöntäjä
+	Issued by: 	Myöntäjä: 
+	Issued to	Myönnetty
+certificate	Issued to	Myönnetty kohteelle
+	Issuer	Myöntäjä
+certificate	Issuer	Myöntäjä
+	Italic	Kursivointi
+	Item List	Kohdeluettelo
+	Item:	Kohde:
+	Items marked Ready work today.	Valmis-merkityt kohteet toimivat jo nyt.
+	its alternate text is inside another element's and will never be read	sen vaihtoehtoinen teksti on toisen elementin vaihtoehtoisen tekstin sisällä, eikä sitä lueta koskaan
+	Its script also reads fields whose names it builds as it runs, so those reads can't be checked.	Sen komentosarja lukee myös kenttiä, joiden nimet se muodostaa suorituksen aikana, joten näitä viittauksia ei voi tarkistaa.
+	Its security settings don't allow copying pages	Suojausasetukset eivät salli sivujen kopiointia
+	January	Tammikuu
+calendar date	January	tammikuuta
+	JavaScript	JavaScript
+	JavaScript Console	JavaScript-konsoli
+	JavaScript console…	JavaScript-konsoli…
+	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript on poistettu käytöstä (Asetukset > JavaScript).
+	JavaScript, e.g. getField("total").value	JavaScript, esim. getField("total").value
+	JBIG2 (lossless)	JBIG2 (häviötön)
+	Join the ArtCraft community	Liity ArtCraft-yhteisöön
+	Join the ArtCraft Discord	Liity ArtCraftin Discordiin
+	July	Heinäkuu
+calendar date	July	heinäkuuta
+	June	Kesäkuu
+calendar date	June	kesäkuuta
+	just now	juuri nyt
+	Keep source fonts	Säilytä lähteen fontit
+	Keep tool selected	Pidä työkalu valittuna
+	Keep tool selected: on	Pidä työkalu valittuna: käytössä
+	Key Agreement	Avainten sopiminen
+	Key Algorithm	Avainalgoritmi
+	Key Encipherment	Avaimen salaus
+	Key usage	Avaimen käyttö
+certificate	Key usage	Avaimen käyttö
+	Keyboard shortcuts	Pikanäppäimet
+	Keychain  ·  	Avainnippu  ·  
+	Keywords	Avainsanat
+	Label	Nimiö
+	Labels	Nimiöt
+	Labels: {preview}. Later pages keep their labels.	Tunnisteet: {preview}. Myöhemmät sivut säilyttävät tunnisteensa.
+	Landscape and Portrait Pages	Vaaka- ja pystysivut
+	Landscape Pages	Vaakasivut
+	Landscape pages	Vaakasivut
+	Larger pages	Suuremmat sivut
+	Larger thumbnails	Suuremmat pikkukuvat
+	Later	Myöhemmin
+	Later in calculation order	Myöhemmäksi laskentajärjestyksessä
+	Later in tab order	Myöhemmäksi sarkainjärjestyksessä
+	Layer options	Tasoasetukset
+	Layers Panel and Page	Tasopaneeli ja sivu
+	Layout and Magnification	Asettelu ja suurennus
+	Lbl and LBody	Lbl ja LBody
+	Lbl and LBody must be children of LI	Lbl- ja LBody-elementtien on oltava LI-elementin alielementtejä
+	Leave out files that can't be read?	Jätetäänkö lukukelvottomat tiedostot pois?
+	Left Edge	Vasen reuna
+	Left Footer Text	Vasen alatunnisteteksti
+	Left Header Text	Vasen ylätunnisteteksti
+	Left out: {names}	Jätettiin pois: {names}
+	LI must be a child of L	LI:n on oltava L-elementin alielementti
+	Light blue	Vaaleansininen
+	Light gray	Vaaleanharmaa
+	Light theme	Vaalea teema
+	Limit of	Enintään
+	Line delta	Rivimuutos
+	Line ending	Viivan pää
+	Line spacing	Riviväli
+	Line Style:	Viivatyyli:
+	Line thickness	Viivan paksuus
+	Line Thickness:	Viivan paksuus:
+	Link Action	Linkin toiminto
+	Link Appearance	Linkin ulkoasu
+	Link Properties	Linkin ominaisuudet
+	Link Type:	Linkin tyyppi:
+	Link URL	Linkin URL-osoite
+	links	linkit
+	Links on page	Yhteydet sivulla
+	Links, actions and JavaScripts	Linkit, toiminnot ja JavaScriptit
+	List	Luettelo
+	List box	Luetteloruutu
+	List Box Properties	Luetteloruudun ominaisuudet
+	List items	Luettelon kohteet
+	List items belong in a list. Fix the list's tags.	Luettelon kohteiden kuuluu olla luettelossa. Korjaa luettelon tagit.
+	List labels and bodies belong in a list item. Fix the list's tags.	Luettelon nimiöiden ja runko-osien kuuluu olla luettelon kohteessa. Korjaa luettelon tagit.
+	List view	Luettelonäkymä
+	Lists	Luettelot
+	Load document font	Lataa asiakirjan fontti
+	Load font…	Lataa fontti…
+	Loading…	Ladataan…
+	Local cross-PDF links require the desktop app	Paikalliset PDF-tiedostojen väliset linkit edellyttävät työpöytäsovellusta
+	Location: 	Sijainti: 
+	Lock comment	Lukitse kommentti
+	Logical Reading Order	Looginen lukujärjestys
+	Looking for PDFs…	Etsitään PDF-tiedostoja…
+	Looking for printers…	Etsitään tulostimia…
+	Loop	Silmukka
+	Low resolution	Matala tarkkuus
+	Low Resolution (150 dpi)	Matala tarkkuus (150 dpi)
+	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
+	Magnification	Suurennus
+	Make accessible	Tee saavutettavaksi
+	Make Current Properties Default	Aseta nykyiset ominaisuudet oletukseksi
+	Make Properties Default	Aseta ominaisuudet oletuksiksi
+	Make properties default	Aseta ominaisuudet oletuksiksi
+	Make scans searchable, then make them smaller.	Tee skannauksista haettavia ja pienennä ne.
+	Manage embedded index	Hallitse upotettua hakemistoa
+	March	Maaliskuu
+calendar date	March	maaliskuuta
+	Margins	Reunukset
+	Margins (in)	Reunukset (in)
+	Mark all	Merkitse kaikki
+	Mark as artifact	Merkitse artefaktiksi
+	Mark as comments	Merkitse kommenteiksi
+	Mark as Confidential	Merkitse luottamukselliseksi
+	Mark content as artifact	Merkitse sisältö artefaktiksi
+	Mark differences	Merkitse erot
+	Mark figure as decorative	Merkitse kuvio koristeelliseksi
+	Mark for redaction	Merkitse peitettäväksi
+	Mark Page Range	Merkitse sivualue
+	Mark pages for redaction	Merkitse sivut peitettäviksi
+	Mark with checkmark	Merkitse valintamerkillä
+	Marked	Merkitty
+	Markup	Merkinnät
+	Marquee Zoom	Alueen zoomaus
+	Marquee zoom	Aluezoomaus
+	Mask:	Maski:
+	Match field sizes	Yhtenäistä kenttien koot
+	Match page at 100%	Sivu koossa 100 %
+	maximum	maksimi
+	May	Toukokuu
+calendar date	May	toukokuuta
+	Measure area	Mittaa pinta-ala
+	Measure distance	Mittaa etäisyys
+	Measure objects	Mittaa objekteja
+	Measure perimeter	Mittaa ympärysmitta
+	Measurement information	Mittaustiedot
+	Measurement snapping	Mittauksen tartunta
+	Measuring tool	Mittaustyökalu
+	Medium	Kohtalainen
+	Menu	Valikko
+	Merge data files into spreadsheet…	Yhdistä datatiedostot laskentataulukkoon…
+	Merge image fragments	Yhdistä kuvan palat
+	Merged 1 file into {path}	Yhdistettiin 1 tiedosto kohteeseen {path}
+	Merged {n} files into {path}	Yhdistettiin {n} tiedostoa kohteeseen {path}
+	Merging data files needs the desktop app	Tietotiedostojen yhdistäminen vaatii työpöytäsovelluksen
+	Metadata	Metatiedot
+	metadata	metatiedot
+	Microsoft Word (.docx)	Microsoft Word (.docx)
+	Midpoint	Keskipiste
+	Midpoints	Keskipisteet
+	minimum	minimi
+	Missing field	Puuttuva kenttä
+	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Puuttuu PDF:ään tallennetusta laskentajärjestyksestä: muut PDF-katseluohjelmat eivät ehkä laske sitä.
+	Mixed	Vaihteleva
+calendar weekday	Mo	Ma
+	Modify page	Muokkaa sivua
+	Monochrome Images	Mustavalkokuvat
+	More options	Lisää asetuksia
+	More options:	Lisäasetukset:
+	More ways to add files	Lisää tapoja lisätä tiedostoja
+	Mouse Down	Hiiren painike painetaan
+	Mouse Enter	Hiiri siirtyy alueelle
+	Mouse Exit	Hiiri poistuu alueelta
+	Mouse Up	Hiiren painike vapautetaan
+	Mouse wheel scroll speed	Hiiren rullan vieritysnopeus
+	Move bookmark	Siirrä kirjanmerkki
+	Move comment	Siirrä kommenttia
+	Move down	Siirrä alas
+	Move earlier	Siirrä aiemmaksi
+	Move image	Siirrä kuvaa
+	Move later	Siirrä myöhemmäksi
+	Move object	Siirrä objekti
+	Move objects	Siirrä objektit
+	Move only what must move, so every field calculates after the fields it reads.	Siirrä vain se, mikä on pakko, jotta jokainen kenttä lasketaan lukemiensa kenttien jälkeen.
+	Move page	Siirrä sivu
+	Move pages	Siirrä sivut
+	Move tag earlier	Siirrä tagia aiemmaksi
+	Move tag later	Siirrä tagia myöhemmäksi
+	Move to group	Siirrä ryhmään
+	Move up	Siirrä ylös
+	Moves only what must move	Siirtää vain sen, mikä on pakko
+	Multi-line	Monirivinen
+	Multiple	Useita
+	Multiple files	Useita tiedostoja
+	Multiple selection	Monivalinta
+	Multiple words or phrases	Useita sanoja tai lauseita
+	N or {row} is the row number, {col} the column number, {seq} the cell number. With none of them, the row number goes last.	N tai {row} on rivin numero, {col} sarakkeen numero ja {seq} solun numero. Jos mitään niistä ei ole, rivin numero tulee loppuun.
+	Name on new comments	Nimi uusissa kommenteissa
+	Named Destinations	Nimetyt kohteet
+	Navigation links	Siirtymislinkit
+	Navigation links are not repetitive	Siirtymislinkit eivät toistu
+	Navigation tab	Siirtymisvälilehti
+	needs an AI provider (off by default)	vaatii tekoälypalvelun (oletuksena pois päältä)
+	Needs manual check	Vaatii manuaalisen tarkistuksen
+	Negative number style:	Negatiivisen luvun tyyli:
+	Nested alternate text	Sisäkkäinen vaihtoehtoinen teksti
+	Never	Ei koskaan
+	New Action	Uusi toiminto
+	New Action…	Uusi toiminto…
+	New blank PDF	Uusi tyhjä PDF
+	New bookmark	Uusi kirjanmerkki
+	New bookmark ({key})	Uusi kirjanmerkki ({key})
+	New bookmark (⌘B)	Uusi kirjanmerkki (⌘B)
+	New bookmarks from structure	Uudet kirjanmerkit rakenteesta
+	New file only	Vain uusi tiedosto
+	New file:	Uusi tiedosto:
+	New file: {name}	Uusi tiedosto: {name}
+	New {tool} comments will look like this one	Uudet työkalun {tool} kommentit näyttävät tältä
+	Next ({key})	Seuraava ({key})
+	Next (⌘G)	Seuraava (⌘G)
+	Next / previous match	Seuraava / edellinen osuma
+	Next figure	Seuraava kuva
+	Next month	Seuraava kuukausi
+	Next sheet	Seuraava arkki
+	Next tab	Seuraava välilehti
+	Next view	Seuraava näkymä
+	No	Ei
+	No actions	Ei toimintoja
+	no alternate text	ei vaihtoehtoista tekstiä
+	No changes allowed	Muutoksia ei sallita
+	No changes to save	Ei tallennettavia muutoksia
+	No check has run yet.	Tarkistusta ei ole vielä tehty.
+	No color	Ei väriä
+	No colour	Ei väriä
+	No comments match.	Mikään kommentti ei vastaa hakua.
+	No comments yet.	Ei vielä kommentteja.
+	No contributor data was built into this copy.	Tähän kopioon ei ole sisällytetty tekijätietoja.
+	No differences in the text.	Tekstissä ei ole eroja.
+	No digital IDs yet.	Digitaalisia tunnuksia ei vielä ole.
+	No document language is set	Asiakirjan kieltä ei ole asetettu
+	No documents are open	Yhtään asiakirjaa ei ole auki
+	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Mikään tämän lomakkeen kenttä ei vielä laske arvoaan. Anna kentälle laskenta sen ominaisuuksien Laskenta-välilehdellä, niin se näkyy tässä.
+	No field reads it	Mikään kenttä ei lue sitä
+	No file chosen	Tiedostoa ei ole valittu
+	No fill	Ei täyttöä
+	No fonts are referenced by the pages.	Sivuilla ei viitata fontteihin.
+	No form fields were detected	Lomakekenttiä ei havaittu
+	no header cells (TH)	ei otsikkosoluja (TH)
+	No image on clipboard to paste	Leikepöydällä ei ole liitettävää kuvaa
+	No inaccessible scripts	Ei saavuttamattomia komentosarjoja
+	No issues found	Ongelmia ei löytynyt
+	No limit	Ei rajaa
+	No links to remove	Ei poistettavia linkkejä
+	No matches	Ei osumia
+	No matching tools	Ei vastaavia työkaluja
+	No model credits were built into this copy.	Tähän kopioon ei ole sisällytetty mallien tekijätietoja.
+	No openly licensed document fonts found. Load a font file.	Avoimesti lisensoituja asiakirjan fontteja ei löytynyt. Lataa fonttitiedosto.
+	No order can fix a loop. Change one of the formulas.	Mikään järjestys ei korjaa silmukkaa. Muuta jotakin kaavoista.
+	no output folder was chosen	tuloskansiota ei valittu
+	No page has text: the document appears to be images of pages	Millään sivulla ei ole tekstiä: asiakirja näyttää koostuvan sivujen kuvista
+	No pages match those choices	Mikään sivu ei vastaa valintoja
+	No pages selected	Sivuja ei ole valittu
+	No PDFs found in {folder}	Kansiosta {folder} ei löytynyt PDF-tiedostoja
+	No PDFs in this folder yet	Kansiossa ei ole vielä PDF-tiedostoja
+	No PDFs, images or text files found in {folder}	Kansiosta {folder} ei löytynyt PDF-, kuva- tai tekstitiedostoja
+	No photo chosen	Kuvaa ei valittu
+	No preview	Ei esikatselua
+	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Tulostimia ei löytynyt. Tarkista, että tulostin on asennettu ja taustatulostuspalvelu on käynnissä, ja avaa sitten Tulosta uudelleen.
+	No problems found: the document conforms to {level}.	Ongelmia ei löytynyt: asiakirja on {level}-yhteensopiva.
+	No recent files	Ei viimeisimpiä tiedostoja
+	No security	Ei suojausta
+	No sheets	Ei arkkeja
+	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Kehyksestä ei löytynyt allekirjoitusta. Siirrä kehys allekirjoituksen päälle tai nosta musteen herkkyyttä.
+	No status has been set.	Tilaa ei ole asetettu.
+	no such document	asiakirjaa ei ole
+	no summary	ei yhteenvetoa
+	No tools match your search.	Hakuasi vastaavia työkaluja ei löytynyt.
+	No unlinked web addresses were found in the text	Tekstistä ei löytynyt linkittämättömiä verkko-osoitteita
+	No untagged content was found.	Tagittamatonta sisältöä ei löytynyt.
+	no unused output name	vapaata tulosnimeä ei ole
+	Non-Repudiation	Kiistämättömyys
+	none	ei mitään
+	None (prefix only)	Ei mitään (vain etuliite)
+	None found	Ei löytynyt
+	None of those files can be made into a PDF; use PDFs, images or .txt files	Mistään näistä tiedostoista ei voi tehdä PDF:ää; käytä PDF-, kuva- tai .txt-tiedostoja
+	None — everything is allowed	Ei mitään – kaikki on sallittu
+scroll speed	Normal	Normaali
+	Not allowed	Ei sallittu
+	not in a Table, THead, TBody or TFoot	ei ole Table-, THead-, TBody- tai TFoot-elementissä
+	not in a TR	ei ole TR-elementissä
+	not in an L (list)	ei ole L-elementissä (luettelo)
+	not in an LI (list item)	ei ole LI-elementissä (luettelokohde)
+	Not in order	Ei järjestyksessä
+	Not now	Ei nyt
+	Not present	Ei mukana
+	Note	Huomautus
+	nothing in the file matches this document	mikään tiedostossa ei vastaa tätä asiakirjaa
+	Nothing to redo	Ei uudelleen tehtävää
+	nothing to redo	ei uudelleen tehtävää
+	Nothing to undo	Ei kumottavaa
+	nothing to undo	ei kumottavaa
+	November	Marraskuu
+calendar date	November	marraskuuta
+	Number	Numero
+	Number every page in the footer.	Numeroi jokainen sivu alatunnisteeseen.
+	Number of pages	Sivumäärä
+	Number pages	Numeroi sivut
+	Number pages…	Numeroi sivut…
+	Numbered list	Numeroitu luettelo
+	October	Lokakuu
+calendar date	October	lokakuuta
+	Odd pages	Parittomat sivut
+	Odd Pages Only	Vain parittomat sivut
+	Odd pages only	Vain parittomat sivut
+	of	/
+	of the following fields:	seuraavista kentistä:
+	of {name}	tiedostosta {name}
+	of {pages}	/{pages}
+	Off	Pois
+animation effects	Off	Ei käytössä
+	Offset from centre	Siirtymä keskeltä
+	Old file:	Vanha tiedosto:
+	Old file: {name}	Vanha tiedosto: {name}
+animation effects	On	Käytössä
+	On Blur	Kohdistuksen poistuessa
+	On Focus	Kohdistettaessa
+	on page {label}	sivulla {label}
+	On the web, open or drop an image to convert it	Verkkoversiossa avaa tai pudota muunnettava kuva
+	One word or phrase per line	Yksi sana tai lause riviä kohden
+	One {f} file per page, named after the document.	Yksi {f}-tiedosto sivua kohden, nimettynä asiakirjan mukaan.
+	Only allow this if you trust the source document.	Salli tämä vain, jos luotat lähdeasiakirjaan.
+	Only change the colour of black text or line art	Muuta vain mustan tekstin tai viivagrafiikan väriä
+	Only checked properties will change. Mixed means the selected fields have different values.	Vain rastitetut ominaisuudet muuttuvat. Vaihteleva tarkoittaa, että valituilla kentillä on eri arvot.
+	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Jatka vain, jos luotat tähän asiakirjaan. Osoite voi välittää tietoja asiakirjasta, kuten lomakkeeseen kirjoittamasi tekstin.
+	Only the document's owner can change its security (open it with the permissions password)	Vain asiakirjan omistaja voi muuttaa sen suojausta (avaa se käyttöoikeussalasanalla)
+	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Vain sivujen sisältö muuttuu: alkuperäisten sivujen linkit, kommentit, lomakekentät ja kirjanmerkit säilyvät.
+	Open a document first	Avaa ensin asiakirja
+	Open a PDF ({key})	Avaa PDF ({key})
+	Open a PDF (⌘O)	Avaa PDF (⌘O)
+	Open a PDF to measure it.	Avaa PDF mitataksesi sitä.
+	Open a web link	Avaa verkkolinkki
+	Open a web page	Avaa verkkosivu
+	Open accessibility report	Avaa saavutettavuusraportti
+	Open arrow	Avoin nuoli
+	Open email app	Avaa sähköpostisovellus
+	Open file	Avaa tiedosto
+	Open folder	Avaa kansio
+	Open in a new tab	Avaa uudessa välilehdessä
+	Open in Full Screen mode	Avaa koko näytön tilassa
+	Open in Full Screen mode?	Avataanko koko näytön tilassa?
+	Open link	Avaa linkki
+	Open Recent	Avaa viimeisimpiä
+	Open the file as it was saved then	Avaa tiedosto sellaisena kuin se silloin tallennettiin
+	Open the older version first	Avaa ensin vanhempi versio
+	Open this local PDF?	Avataanko tämä paikallinen PDF?
+	Open this web page?	Avataanko tämä verkkosivu?
+	Open to page	Avaa sivulle
+	open to see what it will include	avaa nähdäksesi, mitä se sisältää
+	Opened with	Avattu käyttäen
+	Opened, but its security settings don't allow combining. Enter the permissions password.	Avattu, mutta suojausasetukset eivät salli yhdistämistä. Anna käyttöoikeuksien salasana.
+	Opening the browser's print dialog…	Avataan selaimen tulostusikkunaa…
+	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Avaa tulostinohjaimen asetukset. Ne tallennetaan kaikkiin tämän tietokoneen tulostuksiin; tässä valitut kopiot, kaksipuolisuus, harmaasävy ja paperi ovat silti voimassa.
+	Optimization cancelled	Optimointi peruutettu
+	Optimization is already running	Optimointi on jo käynnissä
+	Optimize	Optimoi
+	Optimize PDF…	Optimoi PDF…
+	Optimize Scanned Documents	Optimoi skannatut asiakirjat
+	Optimize scanned documents	Optimoi skannatut asiakirjat
+	Optimize scanned documents…	Optimoi skannatut asiakirjat…
+	Optimizing… cleaning up	Optimoidaan… siivotaan
+	Optimizing… image {d} of {t}	Optimoidaan… kuva {d}/{t}
+	Optimizing… merging identical objects	Optimoidaan… yhdistetään identtisiä objekteja
+	Optimizing… merging image fragments	Optimoidaan… yhdistetään kuvan paloja
+	Optimizing… removing user data	Optimoidaan… poistetaan käyttäjätietoja
+	Optimizing… writing the copy	Optimoidaan… kirjoitetaan kopiota
+	Optional	Valinnainen
+	Optional: needs an AI provider you configure	Valinnainen: vaatii määrittämäsi tekoälypalvelun
+	Options for this reply	Tämän vastauksen asetukset
+	Order · top calculates first	Järjestys · ylin lasketaan ensin
+	Organization Name	Organisaation nimi
+	Organizational Unit	Organisaatioyksikkö
+	Organize	Järjestä
+	Organize pages	Järjestä sivut
+	Original: replace pages	Alkuperäinen: korvaa sivut
+	other changes	muut muutokset
+	Other colour…	Muu väri…
+	Other elements alternate text	Muiden elementtien vaihtoehtoinen teksti
+	Other elements that require alternate text	Muut elementit, jotka edellyttävät vaihtoehtoista tekstiä
+	Other options	Muut asetukset
+	Outdent	Poista sisennys
+	Outline colour:	Ääriviivan väri:
+	Output appears here.	Tuloste näkyy tässä.
+	Output intent: {list}	Tulostustarkoitus: {list}
+	Output preview	Tulosteen esikatselu
+	Owner password (no restrictions apply)	Omistajan salasana (rajoitukset eivät koske)
+	Page background	Sivun tausta
+	Page Content	Sivun sisältö
+	page content	sivun sisältö
+	Page display	Sivun näyttö
+	Page display: {layout}	Sivun näyttö: {layout}
+	Page does not require timed responses	Sivu ei vaadi ajastettuja vastauksia
+	Page grid	Sivuruudukko
+	Page labels	Sivutunnisteet
+	Page layout	Sivun asettelu
+	Page navigation	Sivuilla siirtyminen
+	Page number	Sivunumero
+	Page Only	Vain sivu
+	Page options	Sivuasetukset
+	Page order:	Sivujärjestys:
+	Page properties	Sivun ominaisuudet
+	Page Range	Sivualue
+	Page Range Options	Sivualueen asetukset
+	Page size	Sivukoko
+	Page Sizing & Handling	Sivun koko ja käsittely
+	Page thumbnails	Sivujen pikkukuvat
+	Page tools	Sivutyökalut
+	Page transitions	Sivusiirtymät
+	Page will not cause screen flicker	Sivu ei aiheuta näytön välkyntää
+	Page {label}	Sivu {label}
+	Page {n}	Sivu {n}
+	page {n} is out of range (1–{count})	sivu {n} on alueen ulkopuolella (1–{count})
+	Page {n} of {total}	Sivu {n}/{total}
+	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Sivu {pages} muuttui taustan lisäämisen jälkeen, joten sen oma valkoinen täyttö pysyy pois päältä. Valkoisella paperilla se näyttää samalta.
+	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Sivulla {pages} on oma valkoinen täyttö, joka peittäisi taustan. Korvaa se
+	Page {p} doesn't tab in structure order	Sivun {p} sarkainjärjestys ei noudata rakennejärjestystä
+	Page {p} of {n}	Sivu {p}/{n}
+	Page {p}: {n} untagged content item	Sivu {p}: {n} tagaamaton sisältökohde
+	Page {p}: {n} untagged content items	Sivu {p}: {n} tagaamatonta sisältökohdetta
+	Page {} has additional actions	Sivulla {} on lisätoimintoja
+	pages	sivua
+	pages added or removed	sivuja lisätty tai poistettu
+	Pages counted	Lasketut sivut
+	Pages from	Sivut alkaen
+	Pages of {name} to combine, e.g. 1-3, 6	Yhdistettävät tiedoston {name} sivut, esim. 1-3, 6
+	Pages Panel and Page	Sivupaneeli ja sivu
+	Pages per file	Sivuja tiedostoa kohden
+	Pages per sheet:	Sivuja arkille:
+	Pages selected	Valitut sivut
+	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Sivuja, jotka ovat pelkkiä kuvia tekstistä, ei voi lukea ääneen eikä hakea. Lisää tekstitaso tunnistamalla teksti (OCR).
+	Pages to Print	Tulostettavat sivut
+	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Sivuilla, joilla on linkkejä, kommentteja tai kenttiä, sarkaimen tulisi edetä rakennejärjestyksessä. Korjaus asettaa kunkin sivun sarkainjärjestykseksi Käytä asiakirjan rakennetta.
+	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Sivut {pages} muuttuivat taustan lisäämisen jälkeen, joten niiden omat valkoiset täytöt pysyvät pois päältä. Valkoisella paperilla ne näyttävät samalta.
+	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Sivuilla {pages} on oma valkoinen täyttö, joka peittäisi taustan. Korvaa ne
+	Pages:	Sivut:
+	Pages: {k} of {n}	Sivut: {k}/{n}
+	Panel layout could not be restored: {error}	Paneelien asettelua ei voitu palauttaa: {error}
+	Panel move was not applied: {error}	Paneelin siirtoa ei toteutettu: {error}
+	Paper:	Paperi:
+	Paragraph spacing	Kappaleväli
+	Part of	Osa kokonaisuutta
+	Passed	Hyväksytty
+	Password protection will be applied when you save	Salasanasuojaus otetaan käyttöön tallennettaessa
+	Password required	Salasana vaaditaan
+	Password security	Salasanasuojaus
+	Password-protected	Salasanalla suojattu
+	Paste after	Liitä jälkeen
+	Paste pages	Liitä sivut
+	Pattern	Malli
+	Patterns	Kuviot
+	Patterns (graphics objects)	Kuviot (grafiikkaobjektit)
+	PDF Optimizer	PDF-optimointi
+	PDF or image	PDF tai kuva
+	PDF page: {size}	PDF-sivu: {size}
+	PDF producer	PDF-tuottaja
+	PDF scale: {scale}%	PDF-mittakaava: {scale} %
+	PDF version	PDF-versio
+	PDF, images and text	PDF, kuvat ja teksti
+	PDF/A…	PDF/A…
+	PdfCraft can't check this signature yet: {}.	PdfCraft ei vielä pysty tarkistamaan tätä allekirjoitusta: {}.
+	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft ei sulkeutunut normaalisti. Näiden asiakirjojen muutokset tallennettiin automaattisesti:
+	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft piirtää ilman grafiikkasuoritinta, joten se voi olla hidas. Näytönohjaimen ajurin päivittäminen voi auttaa.
+	PdfCraft on GitHub	PdfCraft GitHubissa
+	PdfCraft web page	PdfCraftin verkkosivu
+	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft toimii ilman verkkoyhteyttä. Ei telemetriaa, ei tiliä eikä pilvikäsittelyä, ellei palveluntarjoajaa lisätä.
+	PdfCraft {v} is available.	PdfCraft {v} on saatavilla.
+	People may need more time to respond. Check that nothing has a time limit.	Käyttäjät voivat tarvita enemmän aikaa vastaamiseen. Tarkista, ettei missään ole aikarajaa.
+	Percentage	Prosentti
+	Perimeter	Ympärysmitta
+	Permissions password	Käyttöoikeuksien salasana
+	Permitted actions after certifying	Sallitut toiminnot varmentamisen jälkeen
+	Phone Number	Puhelinnumero
+	Phone Numbers	Puhelinnumerot
+	Photo	Kuva
+	Pick a tool in the quick bar, or type above.	Valitse työkalu pikapalkista tai kirjoita yllä olevaan kenttään.
+	Pictures cover pages {pages} (scans?), so the background won't show there.	Kuvat peittävät sivut {pages} (skannauksia?), joten tausta ei näy niissä.
+	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Kuvat tarvitsevat niitä kuvailevan vaihtoehtoisen tekstin, tai ne on merkittävä koristeiksi. Lisää vaihtoehtoinen teksti jokaiseen kuvaan.
+	Pictures on those pages are recognized too; words already in the page's text are not added again	Myös näiden sivujen kuvat tunnistetaan; sivun tekstissä jo olevia sanoja ei lisätä uudelleen
+	Pin	Kiinnitä
+	Pin a folder to Home	Kiinnitä kansio aloitussivulle
+	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Kiinnitä kansio, niin sen uusimmat PDF-tiedostot näkyvät tässä, esimerkiksi skannerin tai synkronoidun pilviaseman tallennuskansio.
+	Pin a folder…	Kiinnitä kansio…
+	Pin a tool…	Kiinnitä työkalu…
+	Pin folder to Home…	Kiinnitä kansio aloitussivulle…
+	Pin to Home	Kiinnitä Aloitus-näkymään
+	Pin tools to Home	Kiinnitä työkaluja Aloitus-näkymään
+	Pin your favorite tools here for quick access.	Kiinnitä suosikkityökalusi tähän nopeaa käyttöä varten.
+	Pinned	Kiinnitetty
+	Pinned folders need the desktop app	Kiinnitetyt kansiot vaativat työpöytäsovelluksen
+	Pinned Tools	Kiinnitetyt työkalut
+	Pinned {folder} to Home	{folder} kiinnitetty aloitussivulle
+	Pinned {tool} to Home	{tool} kiinnitetty aloitussivulle
+	Place saved {what}	Sijoita tallennettu {what}
+	Plain text in reading order; pages are separated by form feeds.	Pelkkä teksti lukujärjestyksessä; sivut erotetaan sivunvaihtomerkeillä.
+	Planned	Suunniteltu
+	Planned for milestone	Suunniteltu välitavoitteeseen
+	Planned for milestone {m} — open to see what it will include	Suunniteltu välitavoitteeseen {m} – avaa nähdäksesi, mitä se sisältää
+	Planned · {m}	Suunniteltu · {m}
+	Points from the page's bottom-left corner.	Pisteinä sivun vasemmasta alakulmasta.
+	Polyline	Murtoviiva
+	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	Kannettava tila on pois päältä: kansioon {folder} ei voi kirjoittaa ({error}). Asetukset tallennetaan sen sijaan käyttäjäkansioon.
+	Portrait Pages	Pystysivut
+	Portrait pages	Pystysivut
+	Post	Lähetä
+	Poster	Juliste
+	PostScript / EPS	PostScript / EPS
+	PostScript XObjects aren't allowed	PostScript-XObjecteja ei sallita
+	Prefix	Etuliite
+	Preflight	Esitarkastus
+	Prepare a form	Valmistele lomake
+	Prepare for accessibility	Valmistele saavutettavuutta varten
+	Prepare for Distribution	Valmistele jakelua varten
+	Prepare for distribution	Valmistele jakelua varten
+	Prepare for distribution…	Valmistele jakelua varten…
+	Preparing sheet {done} of {total} for printing…	Valmistellaan arkkia {done}/{total} tulostusta varten…
+	Preparing {n} sheets for printing…	Valmistellaan {n} arkkia tulostusta varten…
+	Presentation (.pptx)	Esitys (.pptx)
+	Preview unavailable: {e}	Esikatselu ei ole käytettävissä: {e}
+	Preview: page {p} of {n}	Esikatselu: sivu {p}/{n}
+	Previous ({key})	Edellinen ({key})
+	Previous (⇧⌘G)	Edellinen (⇧⌘G)
+	Previous / next page	Edellinen / seuraava sivu
+	Previous figure	Edellinen kuva
+	Previous month	Edellinen kuukausi
+	Previous sheet	Edellinen arkki
+	Previous tab	Edellinen välilehti
+	Previous view	Edellinen näkymä
+	Primary language	Ensisijainen kieli
+	Print ({key})	Tulosta ({key})
+	Print (⌘P)	Tulosta (⌘P)
+	Print as image	Tulosta kuvana
+	Print in grayscale	Tulosta harmaasävyinä
+	Print page border	Tulosta sivun reunus
+	Print production	Painotuotanto
+	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Tulosta yksipuolisena. Pidä arkit järjestyksessä, leikkaa merkkien kohdalta ja pinoa sitten pinot vasemmalta oikealle, ylhäältä alas.
+	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage tai LastPage
+	Printer default	Tulostimen oletus
+	Printer paper and scaling may differ. Check driver settings.	Tulostimen paperi ja skaalaus voivat poiketa. Tarkista ohjaimen asetukset.
+	Printer properties	Tulostimen ominaisuudet
+	Printing	Tulostus
+	Printing allowed	Tulostus sallittu
+	Privacy	Tietosuoja
+	Private data of other applications	Muiden sovellusten yksityiset tiedot
+	Producer	PDF-tuottaja
+	product (x)	tulo (x)
+	Properties…	Ominaisuudet…
+	Protect	Suojaa
+	Protect & Standardize	Suojaa ja standardoi
+	Protect a PDF	Suojaa PDF
+	Protect Using Password	Suojaa salasanalla
+	Protect using password…	Suojaa salasanalla…
+	Protect with password	Suojaa salasanalla
+	Protected: the combined file won't keep its security settings	Suojattu: yhdistetty tiedosto ei säilytä suojausasetuksia
+	Public key	Julkinen avain
+certificate	Public key	Julkinen avain
+	PushButton	Painike
+	Radio	Valintanappi
+	Radio button	Valintanappi
+	Radio Button Properties	Valintanapin ominaisuudet
+	Re-type Password	Kirjoita salasana uudelleen
+	Read	Lue
+	Read mode	Lukutila
+	Read Only	Vain luku
+	Reading colours	Lukuvärit
+	Reading the printer's settings…	Luetaan tulostimen asetuksia…
+	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Lukee kenttiä {names}, jotka lukevat sitä takaisin. Mikään järjestys ei korjaa silmukkaa: muuta jotakin kaavoista.
+	Reads {name}, which calculates later, so it shows an old value.	Lukee kenttää {name}, joka lasketaan myöhemmin, joten se näyttää vanhan arvon.
+	Reads {name}, which the form doesn't have, so it gets no value there.	Lukee kenttää {name}, jota lomakkeessa ei ole, joten se ei saa siitä arvoa.
+	Reason	Syy
+	Reason: 	Syy: 
+	Recent colours	Viimeisimmät värit
+	Recent files to keep	Recent files to keep
+	Recognize Text	Tunnista teksti
+	Recognize text	Tunnista teksti
+	Recognize text in multiple files…	Tunnista teksti useista tiedostoista…
+	Recognize Text…	Tunnista teksti…
+	Recognize text…	Tunnista teksti…
+	Recognized 1 word	Tunnistettiin 1 sana
+	Recognized {n} words	Tunnistettiin {n} sanaa
+	Recognized {w} words in 1 file	Tunnistettiin {w} sanaa 1 tiedostosta
+	Recognized {w} words in {n} files	Tunnistettiin {w} sanaa {n} tiedostosta
+	Recognizing text… file {d} of {t}	Tunnistetaan tekstiä… tiedosto {d}/{t}
+	Recognizing text… page {d} of {t}	Tunnistetaan tekstiä… sivu {d}/{t}
+	Recommended tools	Suositellut työkalut
+	Recover	Palauta
+	Recover unsaved documents?	Palautetaanko tallentamattomat asiakirjat?
+	Redact	Peitä
+	Redact a PDF	Peitä PDF:n sisältöä
+	Redact all	Peitä kaikki
+	Redact Image	Peitä kuva
+	Redact pages	Peitä sivuja
+	Redact pages…	Peitä sivuja…
+	Redact text and images	Peitä tekstiä ja kuvia
+	Redacted area fill colour:	Peitetyn alueen täyttöväri:
+	Redaction code:	Peittokoodi:
+	Redaction mark appearance	Peittomerkinnän ulkoasu
+	Redaction properties…	Peiton ominaisuudet…
+	Redaction Tool Properties	Peittotyökalun ominaisuudet
+	Redid {label}	Tehtiin uudelleen: {label}
+	Redo {action}	Tee uudelleen {action}
+	Reduce file size	Pienennä tiedostokokoa
+	Reduce file size…	Pienennä tiedostokokoa…
+	Regularity	Säännöllisyys
+	Rejected	Hylätty
+	Reliable character encoding is provided	Luotettava merkistökoodaus on määritetty
+	Reload	Lataa uudelleen
+	Reload documents when their files change on disk	Lataa asiakirjat uudelleen, kun niiden tiedostot muuttuvat levyllä
+	Remove "{name}" from this list? The file itself is not deleted.	Poistetaanko "{name}" tästä luettelosta? Itse tiedostoa ei poisteta.
+	Remove all links	Poista kaikki linkit
+	Remove background	Poista tausta
+	Remove checkmark	Poista valintamerkki
+	Remove Crop	Poista rajaus
+	Remove crop	Poista rajaus
+	Remove from Recent	Poista viimeisimmistä
+	Remove header & footer	Poista ylä- ja alatunniste
+	Remove hidden information	Poista piilotetut tiedot
+	Remove hidden information and flatten comments and form fields, so recipients see only the pages.	Poista piilotetut tiedot ja litistä kommentit ja lomakekentät, jotta vastaanottajat näkevät vain sivut.
+	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	Poista piilotetut tiedot, metatiedot, komentosarjat ja upotettu sisältö ja kirjoita tiedostot uudelleen.
+	Remove hidden information…	Poista piilotetut tiedot…
+	Remove invalid links and bookmarks	Poista virheelliset linkit ja kirjanmerkit
+	Remove page	Poista sivu
+	Remove redaction marks	Poista peittomerkinnät
+	Remove saved {what}	Poista tallennettu {what}
+	Remove security	Poista suojaus
+	Remove this leaf tag from reading order and mark its direct content as an artifact	Poista tämä lehtitagi lukujärjestyksestä ja merkitse sen suora sisältö artefaktiksi
+	Remove unreferenced named destinations	Poista viittaamattomat nimetyt kohteet
+	Remove unused objects and merge identical ones	Poista käyttämättömät objektit ja yhdistä identtiset
+	Remove watermark	Poista vesileima
+	Remove {name}	Poista {name}
+	Remove {name} from Recent	Poista {name} viimeisimmistä
+	Remove {n} files	Poista {n} tiedostoa
+	Remove {n} pages	Poista {n} sivua
+	Remove {standard} identification	Poista {standard}-tunniste
+	Removed 1 hidden item. Save to remove them from the file.	Poistettiin 1 piilotettu kohde. Poista se tiedostosta tallentamalla.
+	Removed 1 link	Poistettiin 1 linkki
+	Removed {n} hidden items. Save to remove them from the file.	Poistettiin {n} piilotettua kohdetta. Poista ne tiedostosta tallentamalla.
+	Removed {n} links	Poistettiin {n} linkkiä
+	Removing the background puts the page's own backdrop back.	Taustan poistaminen palauttaa sivun oman valkoisen täytön.
+	Rename bookmark	Nimeä kirjanmerkki uudelleen
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Renderöinti: hayro (bootstrap) · Käyttöliittymä: egui · Kuvakkeet: Lucide (ISC) · Fontit: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering…	Hahmonnetaan…
+	Reopen Closed Tab	Avaa suljettu välilehti uudelleen
+	Reopen the files that were open when PdfCraft last closed	Avaa uudelleen tiedostot, jotka olivat auki, kun PdfCraft viimeksi suljettiin
+	Repair log	Korjausloki
+	Repairs	Korjaukset
+	Repeat overlay text	Toista päällysteksti
+	Repeated navigation links should be skippable. Check links that appear on every page.	Toistuvat siirtymislinkit pitäisi voida ohittaa. Tarkista linkit, jotka näkyvät jokaisella sivulla.
+	Replace document colours	Korvaa asiakirjan värit
+	Replace image	Korvaa kuva
+	Replace Image…	Korvaa kuva…
+	Replace page	Korvaa sivu
+	Replace Pages	Korvaa sivut
+	Replace pages	Korvaa sivut
+	Replace pages…	Korvaa sivuja…
+	Replace text	Korvaa tekstiä
+	Replaced	Korvattu
+	Replacement text	Korvaava teksti
+	Replacement: pages of {name}	Korvaava: tiedoston {name} sivut
+	Replaces the existing one on those pages.	Korvaa näiden sivujen nykyisen.
+	Replacing images arrives on the web with image file pickers	Kuvien korvaaminen tulee verkkoversioon kuvatiedostojen valitsimien myötä
+	Replacing images on page {p} arrives on the web with image pickers ({i})	Sivun {p} kuvien korvaaminen tulee verkkoversioon kuvavalitsimien myötä ({i})
+	Reply	Vastaa
+	Report	Raportti
+	Report created	Raportti luotu
+	Report Options	Raportin asetukset
+	Report…	Raportti…
+	Required	Pakollinen
+	Requires user to enter a password for:	Käyttäjän on annettava salasana seuraaviin:
+	Reset a form	Nollaa lomake
+	Reset columns	Palauta sarakkeet
+	Reset page size	Palauta sivukoko
+	Reset panel layout	Palauta paneelien asettelu
+	Reset to Initial Visibility	Palauta alkuperäinen näkyvyys
+	Reset to printer defaults	Palauta tulostimen oletukset
+	Reshape comment	Muuta kommentin muotoa
+	Resize comment	Muuta kommentin kokoa
+	Resize window to initial page	Sovita ikkunan koko alkusivuun
+	Resolution	Tarkkuus
+	Restore the last view (page, zoom and page display) when a document is opened again	Palauta viimeisin näkymä (sivu, zoomaus ja sivunäyttö), kun asiakirja avataan uudelleen
+	Restrictions	Rajoitukset
+	Restrictions lifted	Rajoitukset poistettu
+	Retain existing	Säilytä nykyinen
+	Rev. {rev}: Certified by an unknown signer	Versio {rev}: varmentanut tuntematon allekirjoittaja
+	Rev. {rev}: Certified by {name}	Versio {rev}: varmentanut {name}
+	Rev. {rev}: Signed by an unknown signer	Versio {rev}: allekirjoittanut tuntematon allekirjoittaja
+	Rev. {rev}: Signed by {name}	Versio {rev}: allekirjoittanut {name}
+	Reveal in File Explorer	Näytä Resurssienhallinnassa
+	Reveal in Finder	Näytä Finderissa
+	Reverse closed arrow	Käänteinen suljettu nuoli
+	Reverse open arrow	Käänteinen avoin nuoli
+	Reverse pages	Käänteinen sivujärjestys
+	Reverse the order	Käännä järjestys
+	Revert	Palauta tallennettu
+	Revert changes	Peru muutokset
+	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	Palautetaanko tiedoston “{name}” edellinen tallennettu versio? Sen jälkeen tehtyjä muutoksia ei voi myöhemmin palauttaa.
+	Reverted to the last saved version	Palautettiin viimeksi tallennettu versio
+	Review	Tarkastus
+	Review & Compare	Tarkasta ja vertaa
+	Review History	Tarkistushistoria
+	Revisions	Versiot
+	Rich Text Format (.rtf)	Rich Text Format (.rtf)
+	Right Edge	Oikea reuna
+	Right Footer Text	Oikea alatunnisteteksti
+	Right Header Text	Oikea ylätunnisteteksti
+	Rotate Clockwise	Kierrä myötäpäivään
+	Rotate clockwise	Kierrä myötäpäivään
+	Rotate Counterclockwise	Kierrä vastapäivään
+	Rotate counterclockwise	Kierrä vastapäivään
+	Rotate image	Kierrä kuvaa
+	Rotate page	Kierrä sivua
+	Rotate page {label} clockwise	Kierrä sivua {label} myötäpäivään
+	Rotate page {label} counterclockwise	Kierrä sivua {label} vastapäivään
+	Rotate Pages	Kierrä sivuja
+	Rotate pages	Kierrä sivuja
+	Rotate pages clockwise	Kierrä sivuja myötäpäivään
+	Rotate pages counterclockwise	Kierrä sivuja vastapäivään
+	Rotate pages…	Kierrä sivuja…
+	Rotate the selected pages clockwise	Kierrä valittuja sivuja myötäpäivään
+	Rotate the selected pages counterclockwise	Kierrä valittuja sivuja vastapäivään
+	Rotate view	Kierrä näkymää
+	Rotate view clockwise	Kierrä näkymää myötäpäivään
+	Rotate view clockwise ({key})	Kierrä näkymää myötäpäivään ({key})
+	Rotate view clockwise (⇧⌘+)	Kierrä näkymää myötäpäivään (⇧⌘+)
+	Rotate view counterclockwise	Kierrä näkymää vastapäivään
+	Rotate:	Kierrä:
+	Row spacing	Riviväli
+	Rows	Rivit
+	rows have between {min} and {max} columns	riveillä on {min}–{max} saraketta
+	Rule Name	Säännön nimi
+	Run	Suorita
+	Run a JavaScript	Suorita JavaScript
+	Run form script	Suorita lomakkeen komentosarja
+	Run JavaScript	Suorita JavaScript
+	Running action… file {d} of {t}	Suoritetaan toimintoa… tiedosto {d}/{t}
+calendar weekday	Sa	La
+	Same as interface ({language})	Sama kuin käyttöliittymä ({language})
+	Sanitize	Puhdista
+	Sanitize document	Puhdista asiakirja
+	Sanitize Documents	Puhdista asiakirjat
+	Sanitize document…	Puhdista asiakirja…
+	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	Puhdistus poistaa asiakirjasta piilotetut tiedot: metatiedot, tiedostoliitteet, kommentit, lomakekentät (litistetään), piilotetun tekstin ja tasot, kirjanmerkit, linkit, toiminnot ja komentosarjat sekä sovellusten yksityiset tiedot.
+	Save & Close	Tallenna ja sulje
+	Save (M4)	Tallenna (M4)
+	Save ({key})	Tallenna ({key})
+	Save anyway	Tallenna silti
+	Save as PDF	Tallenna PDF-muodossa
+	Save as PDF/A	Tallenna PDF/A-muodossa
+	Save as PDF/A-1b	Tallenna PDF/A-1b-muodossa
+	Save as PDF/A-2b	Tallenna PDF/A-2b-muodossa
+	Save as PDF/A-3b	Tallenna PDF/A-3b-muodossa
+	Save as PDF/UA	Tallenna PDF/UA-muodossa
+	Save as PDF/X	Tallenna PDF/X-muodossa
+	Save as {level}	Tallenna muodossa {level}
+	Save as…	Tallenna nimellä…
+	Save attachment…	Tallenna liite…
+	Save changes to “{name}” before closing?	Tallennetaanko muutokset tiedostoon ”{name}” ennen sulkemista?
+	Save changes?	Tallennetaanko muutokset?
+	Save file	Tallenna tiedosto
+	Save image	Tallenna kuva
+	Save Image As…	Tallenna kuva nimellä…
+	Save or revert changes before selecting another tag.	Tallenna tai peru muutokset ennen toisen tagin valitsemista.
+	Save over the changed file?	Tallennetaanko muuttuneen tiedoston päälle?
+	Save pages	Tallenna sivut
+	Save tag properties	Tallenna tagin ominaisuudet
+	Save the accessibility report	Tallenna saavutettavuusraportti
+	Save the document afterwards: saving rewrites the whole file so no trace of the removed content stays in it.	Tallenna asiakirja tämän jälkeen: tallennus kirjoittaa koko tiedoston uudelleen, jottei poistetusta sisällöstä jää jälkiä.
+	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	Tallenna asiakirja tämän jälkeen; tallennus kirjoittaa koko tiedoston uudelleen, jottei mitään poistettua jää siihen.
+	Save the spreadsheet	Tallenna laskentataulukko
+	Save these pages as one PDF	Tallenna nämä sivut yhtenä PDF:nä
+	Saved measurements	Tallennetut mittaukset
+	Saved measurements.	Mittaukset tallennettu.
+	Saved the print-ready PDF to {path}	Painovalmis PDF tallennettiin kohteeseen {path}
+	Saved {name}	Tallennettiin {name}
+	Saved {place}: {before} → {after} (not smaller){detail}	Tallennettu {place}: {before} → {after} (ei pienempi){detail}
+	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Tallennettu {place}: {before} → {after} ({pct} % pienempi){detail}
+	Saved, but reopening failed: {e}	Tallennettiin, mutta uudelleen avaaminen epäonnistui: {e}
+	Scale	Mittakaava
+	Scale relative to target page	Skaalaa suhteessa kohdesivuun
+	Scan	Skannaa
+	Scan & OCR	Skannaus ja OCR
+	Screen flicker	Näytön välkyntä
+	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Näytönlukijat valitsevat äänen asiakirjan kielen mukaan. Aseta kieli kohdassa Asiakirjan ominaisuudet > Lisäasetukset > Kieli.
+	Script	Komentosarja
+	Script Name:	Komentosarjan nimi:
+	Script:	Skripti:
+	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	Komentosarjasisällön on oltava käytettävissä näppäimistöllä ja apuvälineillä. Tarkista asiakirjan komentosarjat.
+	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Komentosarjat suoritetaan eristetyssä ympäristössä ilman tiedosto- tai verkkoyhteyttä. Verkkosivun avaamista pyytävä komentosarja tarvitsee ensin luvan. Kun JavaScript on pois päältä, Acrobatin vakiomuotoilu-, tarkistus- ja laskentafunktiot toimivat silti.
+	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Skriptit suoritetaan eristetyssä ympäristössä ilman tiedosto- tai verkkoyhteyttä. Kun JavaScript on pois käytöstä, Acrobatin vakiomuotoilu-, tarkistus- ja laskentafunktiot toimivat silti.
+	Scroll long text	Vieritä pitkää tekstiä
+	Scroll speed (mouse wheel and arrow keys)	Vieritysnopeus (hiiren rulla ja nuolinäppäimet)
+	Scroll tabs left	Vieritä välilehtiä vasemmalle
+	Scroll tabs right	Vieritä välilehtiä oikealle
+	Search comments	Hae kommenteista
+	Search results	Hakutulokset
+	Search tools and commands	Hae työkaluja ja komentoja
+	Search tools and commands…	Hae työkaluja ja komentoja…
+	Search tools…	Etsi työkaluja…
+	Searchable Image (Exact)	Haettava kuva (tarkka)
+	Searching… {s} of {p} pages	Haetaan… {s}/{p} sivua
+	Searching… {s}/{p}	Haetaan… {s}/{p}
+	Search…	Hae…
+	Security method	Suojausmenetelmä
+	Security properties	Suojausominaisuudet
+	Security properties…	Suojausominaisuudet…
+	Security settings	Suojausasetukset
+	Security settings must allow assistive technology to read the content ("Enable text access for screen reader devices"). Change the document's security to allow it.	Suojausasetusten on sallittava avustavan teknologian lukea sisältöä ("Salli tekstin käyttö näytönlukijalaitteille"). Muuta asiakirjan suojausta niin, että se sallitaan.
+	Security will be removed when you save	Suojaus poistetaan tallennettaessa
+	Select (V)	Valitse (V)
+	Select a file first	Valitse ensin tiedosto
+	Select a file for the stamp	Valitse tiedosto leimaa varten
+	Select a password-protected file first	Valitse ensin salasanalla suojattu tiedosto
+	Select a word	Valitse sana
+	Select Action:	Valitse toiminto:
+	Select all	Valitse kaikki
+	Select all pages (Organize)	Valitse kaikki sivut (Järjestä)
+	Select at most 1000 objects at a time.	Valitse enintään 1000 objektia kerrallaan.
+	Select data files to merge	Valitse yhdistettävät tietotiedostot
+	Select files to compare	Valitse verrattavat tiedostot
+	Select format category:	Valitse muotoluokka:
+	Select Icon	Valitse kuvake
+	Select page {label}	Valitse sivu {label}
+	Select pages	Valitse sivut
+	Select the items to remove from this document.	Valitse tästä asiakirjasta poistettavat kohteet.
+	Select Tool	Valintatyökalu
+	Select tools to display on your Home page for quick access.	Valitse Aloitus-sivulla näytettävät työkalut nopeaa käyttöä varten.
+	Select Trigger:	Valitse laukaisin:
+	Selected image files: {count}	Valitut kuvatiedostot: {count}
+	Selected pages	Valitut sivut
+	Self-signed	Itse allekirjoitettu
+certificate	Self-signed	Itse allekirjoitettu
+	Send backward	Vie taaksepäin
+	Send to back	Vie taustalle
+	Sending sheet {s} of {n} to {printer}…	Lähetetään arkkia {s}/{n} tulostimeen {printer}…
+	Sending to {printer}…	Lähetetään tulostimeen {printer}…
+	Sensitivity	Herkkyys
+	Sent to {printer}	Lähetetty tulostimeen {printer}
+	Sent to {printer}: {msg}	Lähetetty tulostimeen {printer}: {msg}
+	Separate PDFs	Erilliset PDF-tiedostot
+	Separator style:	Erottimen tyyli:
+	September	Syyskuu
+calendar date	September	syyskuuta
+	Serial number	Sarjanumero
+certificate	Serial number	Sarjanumero
+	Set Alternate Text	Aseta vaihtoehtoinen teksti
+	Set alternate text	Aseta vaihtoehtoinen teksti
+	Set bookmark destination	Aseta kirjanmerkin kohde
+	Set calculation order	Aseta laskentajärjestys
+	Set document title	Aseta asiakirjan otsikko
+	Set Fields to Same Size	Aseta kentät samankokoisiksi
+	Set layer visibility	Aseta tason näkyvyys
+	Set measurement scale	Aseta mittakaava
+	Set Page Boxes	Määritä sivualueet
+	Set page boxes	Määritä sivualueet
+	Set page boxes…	Määritä sivualueet…
+	Set page transitions	Aseta sivusiirtymät
+	Set properties	Määritä ominaisuudet
+	Set status	Aseta tila
+	Set status Accepted	Aseta tila Hyväksytty
+	Set status Cancelled	Aseta tila Peruttu
+	Set status Completed	Aseta tila Valmis
+	Set status None	Aseta tila Ei mitään
+	Set status Rejected	Aseta tila Hylätty
+	Set status Unmarked	Aseta tila Merkitsemätön
+	Set tab order	Aseta sarkainjärjestys
+	Set the image of {name}	Aseta kentän {name} kuva
+	Set to current page ({n})	Aseta nykyiseksi sivuksi ({n})
+	Set to zero	Nollaa
+	SHA-1 digest	SHA-1-tiiviste
+certificate	SHA-1 digest	SHA-1-tiiviste
+	SHA-256 digest	SHA-256-tiiviste
+certificate	SHA-256 digest	SHA-256-tiiviste
+	Shadings	Varjostukset
+	Shared Field Properties	Yhteiset kenttäominaisuudet
+	Sheet {s} of {n}	Arkki {s}/{n}
+key	Shift	Vaihto
+	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Vaihto rajoittaa 45 asteeseen. Askelpalautin poistaa kärkipisteen. Esc peruuttaa.
+	Shift- or Ctrl/Command-click to select several fields.	Valitse useita kenttiä napsauttamalla Vaihto- tai Ctrl/Command-näppäin painettuna.
+	Shift-click to select several objects. Drag empty space to select an area.	Valitse useita objekteja Vaihto-napsautuksella. Valitse alue vetämällä tyhjästä kohdasta.
+	ships in milestone {m}	tulee versiossa {m}
+	Show a basic title bar for the window buttons instead of the tab strip. GNOME doesn't draw title bars for apps, so this one doesn't follow its theme.	Näytä ikkunan painikkeille yksinkertainen otsikkorivi välilehtirivin sijaan. GNOME ei piirrä sovelluksille otsikkorivejä, joten tämä ei noudata sen teemaa.
+	Show a field	Näytä kenttä
+	Show a notice when a document is secured	Näytä ilmoitus, kun asiakirja on suojattu
+	Show all	Näytä kaikki
+	Show all comments	Näytä kaikki kommentit
+	Show certificate…	Näytä varmenne…
+	Show cover page in two-page view	Näytä kansilehti kahden sivun näkymässä
+	Show gaps between pages	Näytä sivujen väliset välit
+	Show layer	Näytä taso
+	Show less	Näytä vähemmän
+	Show on the page which fields each field reads	Näytä sivulla, mitä kenttiä kukin kenttä lukee
+	Show password	Näytä salasana
+	Show Report	Näytä raportti
+	Show the accessibility report	Näytä saavutettavuusraportti
+	Show this dialog when the Checker starts	Näytä tämä ikkuna, kun tarkistus käynnistyy
+	Show {n} more	Näytä {n} lisää
+	Shown while the pointer is over a mark.	Näytetään, kun osoitin on merkinnän päällä.
+	Shrink oversized pages	Pienennä ylisuuret sivut
+	Shrink the page content to make room for the header and footer	Pienennä sivun sisältöä, jotta ylä- ja alatunnisteelle jää tilaa
+	Side by side	Rinnakkain
+	Side panels	Sivupaneelit
+	Sign	Allekirjoita
+	Sign a sheet of white paper and take a photo of it in bright, even light (use the flash). Choose the photo or drop it here: PdfCraft finds the signature and removes the paper.	Allekirjoita valkoinen paperiarkki ja ota siitä valokuva kirkkaassa, tasaisessa valossa (käytä salamaa). Valitse kuva tai pudota se tähän: PdfCraft löytää allekirjoituksen ja poistaa paperin.
+	Sign Here	Allekirjoita tähän
+	Sign this field…	Allekirjoita tämä kenttä…
+	Sign with a Digital ID	Allekirjoita digitaalisella tunnuksella
+	Sign yourself	Allekirjoita itse
+	Signature	Allekirjoitus
+	signature	allekirjoitus
+	Signature Details	Allekirjoituksen tiedot
+	Signature is invalid	Allekirjoitus on virheellinen
+	Signature is INVALID:	Allekirjoitus on VIRHEELLINEN:
+	Signature is valid	Allekirjoitus on kelvollinen
+	Signature is valid:	Allekirjoitus on kelvollinen:
+	Signature panel	Allekirjoituspaneeli
+	Signature validity is unknown	Allekirjoituksen kelpoisuus on tuntematon
+	Signature validity is UNKNOWN:	Allekirjoituksen kelpoisuus on TUNTEMATON:
+	Signatures	Allekirjoitukset
+	Signatures panel	Allekirjoituspaneeli
+	Signed and all signatures are valid.	Allekirjoitettu, ja kaikki allekirjoitukset ovat kelvollisia.
+	Signed and saved to {path}	Allekirjoitettu ja tallennettu: {path}
+	Signer	Allekirjoittaja
+	Signer's name	Allekirjoittajan nimi
+	Signing time	Allekirjoitusaika
+	Signing time is from the clock on the signer's computer.	Allekirjoitusaika on peräisin allekirjoittajan tietokoneen kellosta.
+	Simplified field notation:	Yksinkertaistettu kenttämerkintä:
+	Single file	Yksi tiedosto
+	Single Page	Yksi sivu
+	Single page	Yksi sivu
+	Single Page Continuous	Yksi sivu, jatkuva
+	Single word or phrase	Yksittäinen sana tai lause
+	Skip Rule	Ohita sääntö
+	Skipped	Ohitettu
+	Slash	Vinoviiva
+scroll speed	Slow	Hidas
+	Smaller pages	Pienemmät sivut
+	Smaller thumbnails	Pienemmät pikkukuvat
+	Snap to drawing	Tartu piirustukseen
+	Snapping	Tartunta
+	Social Security Number	Sosiaaliturvatunnus
+	Social Security Numbers	Henkilötunnukset
+	Solid	Yhtenäinen
+	Some bookmarks are not shown here: the panel lists a limited number, nested a limited depth.	Kaikkia kirjanmerkkejä ei näytetä tässä: paneeli näyttää rajallisen määrän rajalliseen sisäkkäisyystasoon asti.
+	Some content could not be classified safely and was kept in the count.	Osaa sisällöstä ei voitu luokitella turvallisesti, joten se on mukana laskussa.
+	Some names are built as it runs	Osa nimistä muodostuu suorituksen aikana
+	Some page content couldn't be read; snapping uses the rest.	Osaa sivun sisällöstä ei voitu lukea; tartunta käyttää loput.
+	Some pages contain no countable text. Scanned images need OCR first.	Joillakin sivuilla ei ole laskettavaa tekstiä. Skannatut kuvat vaativat ensin tekstintunnistuksen (OCR).
+	Sort by	Lajitteluperuste
+	Sort comments by:	Kommenttien lajitteluperuste:
+	Sort items	Lajittele kohteet
+	sorted ascending	lajiteltu nousevasti
+	sorted descending	lajiteltu laskevasti
+	Source	Lähde
+key	Space	Välilyönti
+	Space Audit	Tilankäytön tarkastus
+	Special	Erikoismuoto
+	Split	Jaa
+	Split document	Jaa asiakirja
+	Split document…	Jaa asiakirja…
+	Split into files…	Jaa tiedostoiksi…
+	Spreadsheet (.xlsx)	Laskentataulukko (.xlsx)
+	Squiggly	Aaltoviiva
+	Squiggly underline	Aaltoviiva-alleviivaus
+	Squiggly underline text	Alleviivaa tekstiä aaltoviivalla
+	Stamp	Leima
+	Stamp palette	Leimapaletti
+	Stamps	Leimat
+	Standard	Vakio
+	Standard Business	Tavalliset liiketoimintaleimat
+	Standards	Standardit
+	Start	Alku
+action wizard	Start	Aloita
+	Start Checking	Aloita tarkistus
+	Start page number	Aloitussivunumero
+	Steps	Vaiheet
+	Sticky note	Muistilappu
+	Still rendering — this page is unusually complex…	Hahmonnetaan yhä – tämä sivu on tavallista monimutkaisempi…
+	Strength: {s}	Vahvuus: {s}
+	Strikethrough text	Yliviivaa tekstiä
+	Strong	Vahva
+	Structure Info	Rakennetiedot
+calendar weekday	Su	Su
+	Subject	Aihe
+certificate	Subject	Kohde
+	Submit a form	Lähetä lomake
+	Success	Onnistui
+	sum (+)	summa (+)
+	Summarize	Tee yhteenveto
+	Summarize comments	Tee kommenttiyhteenveto
+	Summarize Options	Yhteenvedon asetukset
+	Switch light / dark theme	Vaihda vaalea / tumma teema
+	Switch to List view to change the pages it takes.	Vaihda luettelonäkymään, jos haluat muuttaa siitä otettavia sivuja.
+	Switch to two-page view first to show the cover page	Vaihda ensin kahden sivun näkymään, jotta kansisivu näkyy
+	System	Järjestelmä
+	Tab order	Sarkainjärjestys
+	Tab order by columns	Sarkainjärjestys sarakkeittain
+	Tab order by rows	Sarkainjärjestys riveittäin
+	Tab order is consistent with structure order	Sarkainjärjestys vastaa rakennejärjestystä
+	Tab order: by columns	Sarkainjärjestys: sarakkeittain
+	Tab order: by document structure	Sarkainjärjestys: asiakirjan rakenteen mukaan
+	Tab order: by rows	Sarkainjärjestys: riveittäin
+	Tab order: move a field with its arrows.	Sarkainjärjestys: siirrä kenttää sen nuolilla.
+	Table cells belong in a row. Fix the table's tags.	Taulukon solujen kuuluu olla rivillä. Korjaa taulukon tagit.
+	Table rows belong directly in a table or its head, body or foot. Fix the table's tags.	Taulukon rivien on oltava suoraan taulukossa tai sen otsake-, runko- tai alaosassa. Korjaa taulukon tagit.
+	Tables	Taulukot
+	Tables must contain the same number of columns in each row and rows in each column	Taulukoissa on oltava sama määrä sarakkeita joka rivillä ja rivejä joka sarakkeessa
+	Tables must have a summary	Taulukoilla on oltava yhteenveto
+	Tables should have headers	Taulukoissa tulisi olla otsikkosolut
+	Tag form fields	Tagita lomakekentät
+	Tag type	Tagin tyyppi
+	Tagged annotations	Tagitetut merkinnät
+	Tagged content	Tagitettu sisältö
+	Tagged form fields	Tagitetut lomakekentät
+	Tagged multimedia	Tagitettu multimedia
+	Tagged PDF	Tagitettu PDF
+	Tags	Tagit
+	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	Tagit antavat asiakirjalle loogisen rakenteen, jota avustava teknologia seuraa. Tagita asiakirja (Tagita PDF automaattisesti).
+	Tags panel	Tagit-paneeli
+	Take a snapshot	Ota tilannekuva
+	Text (plain)	Teksti (pelkkä)
+	Text alignment:	Tekstin tasaus:
+	Text box	Tekstiruutu
+	Text Color:	Tekstin väri:
+	Text editing line	Tekstin muokkausrivi
+	Text field	Tekstikenttä
+	Text Field Properties	Tekstikentän ominaisuudet
+	Text Field Table	Tekstikenttätaulukko
+	Text field table	Tekstikenttätaulukko
+	Text in images isn't found; recognise text (OCR) first.	Kuvissa olevaa tekstiä ei löydy; tunnista teksti (OCR) ensin.
+	Text is compared word by word; the differences are shown on the new file.	Tekstiä verrataan sana sanalta; erot näytetään uudessa tiedostossa.
+	Text language is specified	Tekstin kieli on määritetty
+	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Tekstin on erotuttava taustastaan riittävästi heikkonäköisille. Tarkista värit silmämääräisesti tai kontrastityökalulla.
+	Text recognition is already running	Tekstintunnistus on jo käynnissä
+	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Tekstintunnistusta ei ole asennettu: sen mallitiedostot puuttuvat. Asenna PdfCraft uudelleen tai aseta PDFCRAFT_MODELS osoittamaan kansioon, jossa ne ovat.
+	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Tekstintunnistusta ei ole asennettu: sen mallit puuttuvat (suorita `cargo xtask models` tai aseta PDFCRAFT_MODELS).
+	Text to find	Etsittävä teksti
+	Text to insert	Lisättävä teksti
+	Text to place	Sijoitettava teksti
+	Text used as a clipping path cannot be moved with this selection.	Leikkauspolkuna käytettyä tekstiä ei voi siirtää tällä valinnalla.
+	Text, marks and signatures become part of the page. Other comments stay editable.	Tekstit, merkit ja allekirjoitukset tulevat osaksi sivua. Muut kommentit pysyvät muokattavina.
+calendar weekday	Th	To
+	TH and TD	TH ja TD
+	TH and TD must be children of TR	TH- ja TD-elementtien on oltava TR-elementin alielementtejä
+	Thai and Arabic use regular fallback fonts when available.	Thai ja arabia käyttävät tavallisia varafontteja, kun niitä on saatavilla.
+	That didn't work: an internal error stopped it ({m}).	Toiminto epäonnistui sisäisen virheen vuoksi ({m}).
+	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Toiminto epäonnistui sisäisen virheen vuoksi ({m}). Asiakirjasi ovat ennallaan.
+	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	alueen, välien ja sarakeleveyksien on oltava lukuja, välien vähintään 0 ja jokaisen leveyden yli 0
+@plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Laskentajärjestyksessä on {n} kohta, joka ei laske mitään. Korjaa järjestys poistaa sen.|Laskentajärjestyksessä on {n} kohtaa, jotka eivät laske mitään. Korjaa järjestys poistaa ne.
+	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Kohteen {} varmenne ei salli näin montaa alempaa CA-varmennetta (polun pituus), joten sitä ei käytetä kohteen {} vahvistamiseen.
+	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	Kohteen {} varmenteessa on kriittisiä laajennuksia, joita PdfCraft ei tunnista, joten sitä ei käytetä kohteen {} vahvistamiseen.
+	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	Kohteen {} varmenne ei ole varmenteita myöntävä CA-varmenne, joten sitä ei käytetä kohteen {} vahvistamiseen.
+	The certificate of {} was not valid at the time of signing, so it is not used to vouch for {}.	Kohteen {} varmenne ei ollut voimassa allekirjoitushetkellä, joten sitä ei käytetä kohteen {} vahvistamiseen.
+	The checker found 1 problem which may prevent the document from being fully accessible.	Tarkistus löysi 1 ongelman, joka voi estää asiakirjan täyden saavutettavuuden.
+	The checker found no problems in this document.	Tarkistus ei löytänyt ongelmia tästä asiakirjasta.
+	The checker found problems which may prevent the document from being fully accessible.	Tarkistus löysi ongelmia, jotka voivat estää asiakirjaa olemasta täysin saavutettava.
+	The checker found {n} problems which may prevent the document from being fully accessible.	Tarkistus löysi {n} ongelmaa, jotka voivat estää asiakirjan täyden saavutettavuuden.
+	The clipboard has no image or text	Leikepöydällä ei ole kuvaa tai tekstiä
+	The document changed while you were choosing a file, so nothing was changed.	Asiakirja muuttui tiedoston valinnan aikana, joten mitään ei muutettu.
+	The document changed while you were editing field properties.	Asiakirja muuttui kenttäominaisuuksien muokkauksen aikana.
+	The document has additional actions (/AA)	Asiakirjassa on lisätoimintoja (/AA)
+	The document has been altered or corrupted since the signature was applied.	Asiakirjaa on muutettu tai se on vioittunut allekirjoituksen lisäämisen jälkeen.
+	The document has been altered or corrupted since the timestamp was applied.	Asiakirjaa on muutettu tai se on vioittunut aikaleiman lisäämisen jälkeen.
+	The document has been altered since this signature was applied in ways it does not permit ({}).	Asiakirjaa on muutettu tämän allekirjoituksen lisäämisen jälkeen tavoilla, joita se ei salli ({}).
+	The document has been altered since this timestamp was applied in ways it does not permit ({}).	Asiakirjaa on muutettu tämän aikaleiman lisäämisen jälkeen tavoilla, joita se ei salli ({}).
+	The document has been modified since this signature was applied, but the changes are permitted ({}).	Asiakirjaa on muokattu tämän allekirjoituksen lisäämisen jälkeen, mutta muutokset ovat sallittuja ({}).
+	The document has been modified since this timestamp was applied, but the changes are permitted ({}).	Asiakirjaa on muokattu tämän aikaleiman lisäämisen jälkeen, mutta muutokset ovat sallittuja ({}).
+	The document has document-level JavaScript	Asiakirjassa on asiakirjatason JavaScriptiä
+	the document has no form fields	asiakirjassa ei ole lomakekenttiä
+	the document has no page tree	asiakirjassa ei ole sivupuuta
+	the document has no tags	asiakirjassa ei ole tageja
+	The document has no tags (structure tree)	Asiakirjassa ei ole tageja (rakennepuu)
+	The document has no title	Asiakirjalla ei ole otsikkoa
+	The document has no XMP metadata	Asiakirjassa ei ole XMP-metatietoja
+	The document is encrypted	Asiakirja on salattu
+	The document is no longer open.	Asiakirja ei ole enää auki.
+	the document is protected by a password	asiakirja on suojattu salasanalla
+	The document isn't marked as tagged (MarkInfo Marked)	Asiakirjaa ei ole merkitty tagatuksi (MarkInfo Marked)
+	The document isn't tagged, so none of its content is	Asiakirjaa ei ole tagattu, joten mitään sen sisällöstä ei ole tagattu
+	The document now conforms to {level}; save it to keep the changes	Asiakirja on nyt {level}-yhteensopiva; tallenna se, jotta muutokset säilyvät
+	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Asiakirja avautuu ilman salasanaa; tätä salasanaa tarvitaan rajoitusten muuttamiseen. Se otetaan käyttöön tallennettaessa.
+	The document was closed before it could be saved.	Asiakirja suljettiin ennen kuin se ehdittiin tallentaa.
+	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Asiakirjaan upotetut sulkutiedot osoittavat, ettei allekirjoittajan varmennetta ole peruutettu.
+	The document's security settings don't allow copying text and images	Asiakirjan suojausasetukset eivät salli tekstin ja kuvien kopiointia
+	The document's security settings don't allow filling in form fields	Asiakirjan suojausasetukset eivät salli lomakekenttien täyttämistä
+	The document's security settings don't allow printing	Asiakirjan suojausasetukset eivät salli tulostamista
+	The document's security settings don't allow this change	Asiakirjan suojausasetukset eivät salli tätä muutosta
+	The ECDSA signature is not in canonical DER (trailing bytes, padding or a missing sign byte); it was read anyway.	ECDSA-allekirjoitus ei ole kanonisessa DER-muodossa (ylimääräisiä tavuja lopussa, täytettä tai puuttuva etumerkkitavu); se luettiin silti.
+	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	ECDSA-allekirjoitus on raakoina r- ja s-arvoina DER-sekvenssin sijaan; se luettiin silti.
+	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Upotettu aikaleimatunniste on kelvollinen ja sen myöntäjä on luotettu; luotettu aika on {}.
+	The existing action will be preserved.	Nykyinen toiminto säilytetään.
+	The field properties could not be changed.	Kenttäominaisuuksia ei voitu muuttaa.
+	The field properties dialog is no longer open.	Kenttäominaisuuksien valintaikkuna ei ole enää auki.
+	The field {name} no longer exists.	Kenttää {name} ei ole enää olemassa.
+	the first heading is an H{n}; headings should not skip levels	ensimmäinen otsikko on H{n}; otsikkotasoja ei pidä ohittaa
+	the first row number can be at most {max}	ensimmäisen rivin numero voi olla enintään {max}
+	The font {} isn't embedded	Fonttia {} ei ole upotettu
+	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraftin käyttämät fontit eivät pysty piirtämään merkkiä ”{c}” ({code}), joten se näkyy merkkinä ? kaikissa PDF-katseluohjelmissa. Teksti tallennetaan.
+	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Lomake pyytää lähettämään tiedot osoitteeseen {u}; PdfCraft ei lähetä lomaketietoja. Tallenna asiakirja, jotta syötetyt tiedot säilyvät.
+	The form asks viewers to make appearances (NeedAppearances)	Lomake pyytää katseluohjelmia luomaan ulkoasut (NeedAppearances)
+	The image has been copied ({w} × {h} pixels)	Kuva on kopioitu ({w} × {h} pikseliä)
+	The image has been copied as a {ext} file	Kuva on kopioitu {ext}-tiedostona
+	the image is empty	kuva on tyhjä
+	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Avain on macOS-avainnipussa, joka voi pyytää lupaa PdfCraftin käytölle.
+	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Avain on Windowsin varmennesäilössä, joka voi pyytää lupaa PdfCraftin käytölle.
+	The Keychain's digital IDs couldn't be listed: {e}	Avainnipun digitaalisia tunnuksia ei voitu luetella: {e}
+	The labels are in English: the signature's font can't draw them in this language.	Tunnisteet ovat englanniksi: allekirjoituksen fontti ei pysty piirtämään niitä tällä kielellä.
+	The linked PDF opened, but its named destination was not applied.	Linkitetty PDF avautui, mutta sen nimettyä kohdetta ei käytetty.
+	The linked PDF opened, but its page destination was out of range.	Linkitetty PDF avautui, mutta sen kohdesivu oli alueen ulkopuolella.
+	The metadata doesn't identify the file as {}	Metatiedot eivät tunnista tiedostoa muodoksi {}
+	the name is not a plain file name	nimi ei ole pelkkä tiedostonimi
+	The newest {n} of {total} PDFs	Uusimmat {n}/{total} PDF-tiedostoa
+	The operation failed.	Toiminto epäonnistui.
+	The order saved in the PDF needs tidying	PDF:ään tallennettu järjestys kaipaa siistimistä
+	The page has changed; select the image again	Sivu on muuttunut; valitse kuva uudelleen
+	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sivut poimittiin mutta niitä ei poistettu, koska asiakirja muuttui kansion valinnan aikana.
+	the password is incorrect	salasana on väärä
+	The password is incorrect.	Salasana on väärä.
+	The password is only used to read the file; it isn't saved.	Salasanaa käytetään vain tiedoston lukemiseen; sitä ei tallenneta.
+	The password must have at least 6 characters.	Salasanassa on oltava vähintään 6 merkkiä.
+	The password must have at least 8 characters.	Salasanassa on oltava vähintään 8 merkkiä.
+	The passwords do not match.	Salasanat eivät täsmää.
+	The passwords don't match.	Salasanat eivät täsmää.
+	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF-tekstifontit eivät pysty piirtämään merkkiä ”{c}” ({code}). Valitse tuettua tekstiä.
+	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Tulostinohjaimen omat asetukset tälle tulostukselle: paperilokero, paperityyppi, viimeistely ym.
+	The replacement file doesn't have that many pages.	Korvaavassa tiedostossa ei ole niin montaa sivua.
+	the rows are too short: make the area taller, or use fewer rows or less row spacing	rivit ovat liian matalia: tee alueesta korkeampi tai käytä vähemmän rivejä tai pienempää riviväliä
+	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA-allekirjoituksen arvon pituus ei vastaa avaimen modulusta (alun nollatavuja poistettu tai lisätty); se luettiin silti.
+	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	RSA-allekirjoituksen DigestInfo-rakenteesta puuttuu NULL-parametri (vanhemmat allekirjoittajat kirjoittavat sen näin); se luettiin silti.
+	The same password is tried on each file.	Samaa salasanaa kokeillaan jokaiseen tiedostoon.
+	The security settings don't allow screen readers to read the text	Suojausasetukset eivät salli näytönlukuohjelmien lukea tekstiä
+	The selected area has been copied ({w} × {h} pixels)	Valittu alue on kopioitu ({w} × {h} pikseliä)
+	The selected fields could not be found. Select them again.	Valittuja kenttiä ei löytynyt. Valitse ne uudelleen.
+	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	Allekirjoitusalgoritmi ja SignerInfo-rakenteen tiivistealgoritmi nimeävät eri tiivisteet; allekirjoitus tehtiin SignerInfo-rakenteen mukaisella.
+	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	Allekirjoituksessa on vahvistamaton aikaleima ({}): aikaleiman myöntäjä ei ole luotettujen varmenteiden luettelossa, joten käytetään allekirjoittajan ilmoittamaa allekirjoitusaikaa.
+	The signature contents are not hexadecimal.	Allekirjoituksen sisältö ei ole heksadesimaalimuotoinen.
+	The signature could not be checked ({}).	Allekirjoitusta ei voitu tarkistaa ({}).
+	The signature could not be read ({}).	Allekirjoitusta ei voitu lukea ({}).
+	The signature could not be verified ({}).	Allekirjoitusta ei voitu vahvistaa ({}).
+	The signature has no valid byte range.	Allekirjoituksella ei ole kelvollista tavualuetta.
+	The signature includes an embedded timestamp.	Allekirjoitus sisältää upotetun aikaleiman.
+	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	Allekirjoitus on BER-koodattu (määrittelemättömät pituudet) eikä DER-koodattu; se luettiin sallivasti.
+	The signature uses the legacy adbe.x509.rsa_sha1 format.	Allekirjoitus käyttää vanhaa adbe.x509.rsa_sha1-muotoa.
+	The signature value does not match the signer's certificate: the signature is corrupt.	Allekirjoituksen arvo ei vastaa allekirjoittajan varmennetta: allekirjoitus on vioittunut.
+	The signature will be invisible.	Allekirjoitus on näkymätön.
+	The signature's byte range does not exclude exactly its contents.	Allekirjoituksen tavualue ei rajaa pois täsmälleen sen sisältöä.
+	The signature's byte range does not match the file.	Allekirjoituksen tavualue ei vastaa tiedostoa.
+	The signature's signed attributes have no content type, which CMS requires; it was read anyway.	Allekirjoituksen allekirjoitetuista määritteistä puuttuu sisältötyyppi, jota CMS edellyttää; se luettiin silti.
+	The signature's signed attributes have no message digest, so the signature does not cover the document.	Allekirjoituksen allekirjoitetuista määritteistä puuttuu viestitiiviste, joten allekirjoitus ei kata asiakirjaa.
+	The signature's signed attributes name a content type other than data, so it is not a signature of the document.	Allekirjoituksen allekirjoitetut määritteet nimeävät muun sisältötyypin kuin data, joten se ei ole asiakirjan allekirjoitus.
+	The signature's timestamp token could not be verified ({}).	Allekirjoituksen aikaleimatunnistetta ei voitu vahvistaa ({}).
+	The signature's timestamp token does not cover the signature value.	Allekirjoituksen aikaleimatunniste ei kata allekirjoituksen arvoa.
+	The signed content is a constructed (segmented) OCTET STRING, as BER allows; it was read anyway.	Allekirjoitettu sisältö on koostettu (segmentoitu) OCTET STRING, kuten BER sallii; se luettiin silti.
+	the signed version could not be read	allekirjoitettua versiota ei voitu lukea
+	The signer's certificate does not allow digital signatures (its key usage has neither digital signature nor non-repudiation).	Allekirjoittajan varmenne ei salli digitaalisia allekirjoituksia (sen avaimen käyttö ei sisällä digitaalista allekirjoitusta eikä kiistämättömyyttä).
+	The signer's certificate has been revoked ({}).	Allekirjoittajan varmenne on peruutettu ({}).
+	The signer's certificate has critical extensions PdfCraft does not recognize ({}).	Allekirjoittajan varmenteessa on kriittisiä laajennuksia, joita PdfCraft ei tunnista ({}).
+	The signer's certificate is not in the signature.	Allekirjoittajan varmenne puuttuu allekirjoituksesta.
+	The signer's certificate is not issued for signing documents (its extended key usage has no document-signing purpose).	Allekirjoittajan varmennetta ei ole myönnetty asiakirjojen allekirjoittamiseen (sen laajennettu avaimen käyttö ei sisällä asiakirjojen allekirjoitusta).
+	The signer's certificate was not valid at the time of signing.	Allekirjoittajan varmenne ei ollut voimassa allekirjoitushetkellä.
+	The signer's identity is unknown because it has not been included in your list of trusted certificates and none of its parent certificates are trusted certificates.	Allekirjoittajan henkilöllisyys on tuntematon, koska sitä ei ole lisätty luotettujen varmenteiden luetteloon eikä mikään sen ylemmistä varmenteista ole luotettu varmenne.
+	The signer's identity is valid.	Allekirjoittajan henkilöllisyys on kelvollinen.
+	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Vakiofontit eivät pysty piirtämään merkkiä ”{c}” ({code}). Toistaiseksi tekstinä voi lisätä vain länsieurooppalaisia merkkejä.
+	The text is the same	Teksti on sama
+	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	tekstintunnistusmalleja ei ole asennettu (asenna PdfCraft uudelleen tai aseta PDFCRAFT_MODELS osoittamaan mallien kansioon)
+	The timestamp authority's certificate is not issued for time stamping.	Aikaleiman myöntäjän varmennetta ei ole myönnetty aikaleimaukseen.
+	The timestamp authority's certificate was not valid at the time of timestamping.	Aikaleiman myöntäjän varmenne ei ollut voimassa aikaleimaushetkellä.
+	The timestamp contents are not hexadecimal.	Aikaleiman sisältö ei ole heksadesimaalimuotoinen.
+	The timestamp has no valid byte range.	Aikaleimalla ei ole kelvollista tavualuetta.
+	The timestamp token could not be read ({}).	Aikaleimatunnistetta ei voitu lukea ({}).
+	The timestamp token is valid and its authority is trusted.	Aikaleimatunniste on kelvollinen ja sen myöntäjä on luotettu.
+	The timestamp token is valid, but the timestamp authority is not in your list of trusted certificates.	Aikaleimatunniste on kelvollinen, mutta aikaleiman myöntäjä ei ole luotettujen varmenteiden luettelossa.
+	The timestamp's byte range does not exclude exactly its contents.	Aikaleiman tavualue ei rajaa pois täsmälleen sen sisältöä.
+	The timestamp's byte range does not match the file.	Aikaleiman tavualue ei vastaa tiedostoa.
+	The title in the metadata and the document information differ	Metatietojen ja asiakirjan tietojen otsikot eroavat
+	the title must not be empty	otsikko ei saa olla tyhjä
+	The value is shown as typed.	Arvo näytetään kirjoitetussa muodossa.
+	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Ikkunassa tulisi näkyä kuvaava otsikko eikä tiedostonimi. Aseta otsikko ja Alkunäkymä > Näytä: Asiakirjan otsikko.
+	The window shows the file name, not the title (Initial View > Show)	Ikkunassa näkyy tiedostonimi eikä otsikko (Alkunäkymä > Näytä)
+	The Windows store's digital IDs couldn't be listed: {e}	Windowsin varmennesäilön digitaalisia tunnuksia ei voitu luetella: {e}
+	Theme	Teema
+	there are no pages to print	tulostettavia sivuja ei ole
+	There are no redaction marks (mark text, areas or pages first)	Peittomerkintöjä ei ole (merkitse ensin tekstiä, alueita tai sivuja)
+	There are no redaction marks to apply	Käytettäviä peittomerkintöjä ei ole
+	there are no redaction marks to apply	käytettäviä peittomerkintöjä ei ole
+	There is no folder to save the digital ID in.	Digitaalisen tunnuksen tallennuskansiota ei ole.
+	These files can't be read, so they won't be in the combined PDF:	Näitä tiedostoja ei voi lukea, joten ne eivät tule yhdistettyyn PDF:ään:
+	These objects could not be moved. Select them again and try a smaller move.	Objekteja ei voitu siirtää. Valitse ne uudelleen ja kokeile pienempää siirtoa.
+	Thick	Paksu
+	Thickness	Paksuus
+	Thin	Ohut
+	This area has too many overlapping paths; intersection snapping is limited.	Tällä alueella on liian monta päällekkäistä polkua; leikkauspisteiden tartunta on rajoitettu.
+	This certificate is in your list of trusted certificates.	Tämä varmenne on luotettujen varmenteiden luettelossa.
+	This certificate is not trusted. Signatures made with it show an unknown identity.	Tähän varmenteeseen ei luoteta. Sillä tehdyt allekirjoitukset näyttävät tuntemattoman henkilöllisyyden.
+	This certificate is trusted through a certificate above it in the chain.	Tähän varmenteeseen luotetaan ketjussa ylempänä olevan varmenteen kautta.
+	This comment's appearance can't be changed yet.	Tämän kommentin ulkoasua ei voi vielä muuttaa.
+	This compatibility level supports only plain ASCII passwords.	Tämä yhteensopivuustaso tukee vain pelkkiä ASCII-salasanoja.
+	This dialog shows the details of a certificate and its chain.	Tässä ikkunassa näkyvät varmenteen ja sen ketjun tiedot.
+	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Tämä asiakirja pyytää avautumaan koko näytön tilassa: sivu täyttää näytön eikä muuta näy. Poistu milloin tahansa painamalla Esc.
+	This document can't be checked: it couldn't be read for editing	Tätä asiakirjaa ei voi tarkistaa: sitä ei voitu lukea muokattavaksi
+	This document contains {n} interactive form fields.	Tässä asiakirjassa on {n} vuorovaikutteista lomakekenttää.
+	This document has no attachments.	Tässä asiakirjassa ei ole liitteitä.
+	This document has no bookmarks.	Tässä asiakirjassa ei ole kirjanmerkkejä.
+	This document has no comments to flatten	Tässä asiakirjassa ei ole litistettäviä kommentteja
+	This document has no document-level scripts.	Tässä asiakirjassa ei ole asiakirjatason komentosarjoja.
+	This document has no editable structure tags.	Tässä asiakirjassa ei ole muokattavia rakennetageja.
+	This document has no form fields to flatten	Tässä asiakirjassa ei ole litistettäviä lomakekenttiä
+	This document has no form fields you can fill in	Tässä asiakirjassa ei ole täytettäviä lomakekenttiä
+	This document has no form fields.	Tässä asiakirjassa ei ole lomakekenttiä.
+	This document has no layers.	Tässä asiakirjassa ei ole tasoja.
+	This document has no pages.	Tässä asiakirjassa ei ole sivuja.
+	This document has no restrictions to lift	Tässä asiakirjassa ei ole poistettavia rajoituksia
+	This document has no signatures.	Tässä asiakirjassa ei ole allekirjoituksia.
+	This document has no tagged figures.	Tässä asiakirjassa ei ole tagitettuja kuvia.
+	This document has no {kind} to change	Tässä asiakirjassa ei ole muutettavaa: {kind}
+	This document has not been modified since this signature was applied.	Asiakirjaa ei ole muokattu tämän allekirjoituksen lisäämisen jälkeen.
+	This document has not been modified since this timestamp was applied.	Asiakirjaa ei ole muokattu tämän aikaleiman lisäämisen jälkeen.
+	This document hasn't been checked yet.	Tätä asiakirjaa ei ole vielä tarkistettu.
+	This document is secured. Some changes are restricted by its security settings.	Tämä asiakirja on suojattu. Sen suojausasetukset rajoittavat joitakin muutoksia.
+	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	tämä asiakirja on allekirjoitettu: sen uudelleenkirjoittaminen mitätöisi allekirjoitukset (tallenna se sen sijaan lisäävästi)
+	This document is trying to open a local file:	Tämä asiakirja yrittää avata paikallisen tiedoston:
+	This document isn't password-protected	Tätä asiakirjaa ei ole suojattu salasanalla
+	This drawing exceeds the snapping limit; only the first paths are used.	Tämä piirustus ylittää tartunnan rajan; vain ensimmäiset polut käytetään.
+	This field is locked. Unlock it to change its properties.	Kenttä on lukittu. Avaa lukitus muuttaaksesi sen ominaisuuksia.
+	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	Tämän kentän fontti ei pysty piirtämään merkkiä ”{c}” ({code}), joten PdfCraft näyttää sen tilalla merkin ?. Arvo tallennetaan, ja muut PDF-katseluohjelmat piirtävät kentän sen perusteella uudelleen.
+	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	Tämä tiedosto muuttui levyllä. Lataa se uudelleen nähdäksesi uuden version; tallentamattomat muutokset menetetään.
+	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Tämä tiedosto muuttui levyllä. Lataa uudelleen näyttää uuden version ja hylkää tallentamattomat muutoksesi; Tallenna korvaa sen tällä versiolla.
+	This file is already as small as it can be made ({size}). No copy was saved.	Tiedosto on jo niin pieni kuin mahdollista ({size}). Kopiota ei tallennettu.
+	this file isn't XFDF, FDF, XML or text form data	tämä tiedosto ei ole XFDF-, FDF-, XML- tai tekstimuotoista lomaketietoa
+	This file was damaged and has been repaired. Saving keeps the repaired version.	Tämä tiedosto oli vioittunut, ja se on korjattu. Tallennus säilyttää korjatun version.
+	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Kansio ei ole juuri nyt käytettävissä. Se on ehkä siirretty, tai sen asema tai pilvisynkronointi on offline-tilassa.
+	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Tämä lomake sisältää myös XFA-tietoja, joita PdfCraft ei vielä lue. Voit täyttää kentät, mutta Acrobat saattaa näyttää XFA-arvot niiden sijaan.
+	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Tämän lomakkeen komentosarjat on poistettu käytöstä, koska yksi kesti liian kauan. Suorita ne uudelleen avaamalla asiakirja uudelleen.
+	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Tämä on dynaaminen XFA-lomake, jota PdfCraft ei vielä osaa näyttää. Näet tiedoston paikkamerkkisivun.
+	This measurement needs at least {n} points.	Tämä mittaus vaatii vähintään {n} pistettä.
+	This page contains objects that cannot be selected together.	Tällä sivulla on objekteja, joita ei voi valita yhdessä.
+	This page couldn't be displayed.\n{e}	Tätä sivua ei voitu näyttää.\n{e}
+	This PDF uses the unsupported {s} action.	Tämä PDF käyttää toimintoa {s}, jota ei tueta.
+	This printer offers no settings of its own.	Tällä tulostimella ei ole omia asetuksia.
+	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Tämän tulostimen ohjain ei hyväksy kaksipuolisuusasetuksia muilta ohjelmilta, joten sen oma asetus on voimassa. Muuta sitä kohdassa Ominaisuudet…
+	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Tämä allekirjoitus käyttää alle 2048-bittistä RSA-avainta, jota ei enää pidetä riittävän vahvana allekirjoituksiin. Se tarkistuu yhä, mutta siihen ei pidä luottaa.
+	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Tämä allekirjoitus käyttää RIPEMD-160:tä, vanhaa 160-bittistä tiivistealgoritmia, jota ei enää suositella allekirjoituksiin. Se hyväksytään yhä, mutta siihen ei pidä luottaa.
+	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Tämä allekirjoitus käyttää SHA-1:tä, heikkoa tiivistealgoritmia, jossa on osoitettu törmäyksiä. Se hyväksytään yhä, koska monet vuosia sitten allekirjoitetut asiakirjat käyttävät sitä, mutta siihen ei pidä luottaa.
+	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Tämä verkko-osoite sekoittaa eri aakkostojen kirjaimia, mikä on yleinen tapa jäljitellä toisen sivuston nimeä.
+	This web address uses letters from another alphabet, which can look like familiar ones.	Tämä verkko-osoite käyttää toisen aakkoston kirjaimia, jotka voivat näyttää tutuilta.
+	Thumbnail size	Pikkukuvan koko
+	Thumbnails	Pikkukuvat
+	Tile scale:	Paloittelun skaala:
+	Time	Aika
+	Timed responses	Ajastetut vastaukset
+	Timestamp	Aikaleima
+	Title	Otsikko
+	to	–
+	To change locked fields, also set Locked to No.	Jos haluat muuttaa lukittuja kenttiä, aseta myös Lukittu-arvoksi Ei.
+	to {n}	– {n}
+	To:	Mihin:
+	Today	Tänään
+	Today: {date}	Tänään: {date}
+	Toggle fit page / fit width	Vaihda: sovita sivu / sovita leveyteen
+	Too early	Liian aikaisin
+	Tools panel side	Työkalupaneelin puoli
+	Tooltip	Työkaluvihje
+	Tooltip:	Työkaluvihje:
+	Top	Ylös
+	Top-level bookmarks ({n})	Ylimmän tason kirjanmerkit ({n})
+	Total	Yhteensä
+	TR must be a child of Table, THead, TBody, or TFoot	TR:n on oltava Table-, THead-, TBody- tai TFoot-elementin alielementti
+	Transform image	Muunna kuvaa
+	Translate	Käännä
+	Trim the picture with its handles; Enter or Done applies	Rajaa kuvaa sen kahvoilla; Enter tai Valmis ottaa rajauksen käyttöön
+	Trust	Luottamus
+	Try the form as people filling it in will see it	Kokeile lomaketta niin kuin täyttäjät sen näkevät
+calendar weekday	Tu	Ti
+	Turn upside down (180°)	Käännä ylösalaisin (180°)
+	two cells would both be named {name}	kahdella solulla olisi sama nimi {name}
+	Two-page view	Kahden sivun näkymä
+	Two-sided:	Kaksipuolinen:
+	Two-Up (Cover Page)	Kaksi sivua (kansisivu)
+	Two-Up (Facing)	Kaksi sivua (vierekkäin)
+	Two-Up Continuous (Cover Page)	Kaksi sivua, jatkuva (kansisivu)
+	Two-Up Continuous (Facing)	Kaksi sivua, jatkuva (vierekkäin)
+	Type	Tyyppi
+signature pad	Type	Kirjoita
+	Type a password.	Kirjoita salasana.
+	Type Password	Kirjoita salasana
+	Type text	Kirjoita tekstiä
+	Type the web address.	Kirjoita verkko-osoite.
+	Type your {what}.	Kirjoita {what}.
+	Typewriter	Kirjoituskone
+	Unchecked	Ei valittu
+	Unchecked reads	Tarkistamattomat viittaukset
+	Underline text	Alleviivaa tekstiä
+	Undid {label}	Kumottiin: {label}
+	Undo {action}	Kumoa {action}
+	Unit	Yksikkö
+	Unknown author	Tuntematon tekijä
+	Unlock comment	Avaa kommentin lukitus
+	Unlock {name}	Avaa tiedoston {name} lukitus
+	Unlock {n} files	Avaa {n} tiedoston lukitus
+	Unlocked {n} of {m} files	Lukitus avattu {n}/{m} tiedostosta
+	Unlocked: the combined file won't be password-protected	Lukitus avattu: yhdistettyä tiedostoa ei suojata salasanalla
+	Unlock…	Avaa lukitus…
+	Unpin	Irrota
+	Unpin from Home	Irrota Aloitus-näkymästä
+	Unpin tool	Irrota työkalu
+	Unpin {folder}	Irrota {folder}
+	Unpinned {tool} from Home	{tool} irrotettu aloitussivulta
+	Unplaced	Sijoittamaton
+	Unsigned signature field	Allekirjoittamaton allekirjoituskenttä
+	Unsigned signature field: {name}	Allekirjoittamaton allekirjoituskenttä: {name}
+	Unsupported measurements	Ei-tuetut mittaukset
+	Up	Ylös
+	Update	Päivitä
+	Update background	Päivitä tausta
+	Update background…	Päivitä tausta…
+	Update header & footer	Päivitä ylä- ja alatunniste
+	Update header & footer…	Päivitä ylä- ja alatunniste…
+	Update watermark	Päivitä vesileima
+	Update watermark…	Päivitä vesileima…
+	URL to submit to	Lähetyksen URL-osoite
+	Use 72 DPI (one point per pixel)	Käytä 72 DPI:tä (yksi piste pikseliä kohden)
+	Use a certificate	Käytä varmennetta
+	Use a Digital ID from a file	Käytä tiedostossa olevaa digitaalista tunnusta
+	Use custom DPI	Käytä mukautettua DPI-arvoa
+	Use each image's embedded DPI; use 72 DPI when it is absent.	Käytä kunkin kuvan upotettua DPI-arvoa; käytä 72 DPI:tä, jos sitä ei ole.
+	Use Flate to encode streams that are not encoded	Koodaa koodaamattomat virrat Flate-menetelmällä
+	Use guided actions	Käytä ohjattuja toimintoja
+	Use image resolution	Käytä kuvan tarkkuutta
+	Use it when a printer skips text, shading or transparency. The print is no longer searchable text; with Print in grayscale, the pictures are grey.	Käytä tätä, kun tulostin jättää pois tekstiä, varjostuksia tai läpinäkyvyyttä. Tulosteessa teksti ei ole enää haettavissa; Tulosta harmaasävyinä -asetuksella kuvat ovat harmaita.
+	Use JavaScript	Käytä JavaScriptiä
+	Use now	Käytä nyt
+	Use overlay text	Käytä päällystekstiä
+	Use print production	Käytä painotuotantoa
+	Use system setting	Käytä järjestelmän asetusta
+	Use system title bar	Käytä järjestelmän otsikkoriviä
+	Use {what}	Käytä {what}
+	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	Käytetään, kun PDF ei määritä asettelua tai zoomausta. Jatkuva vieritys ei koskaan pysähdy sivujen kohdalle.
+	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	Käytetään PDF-tiedostoja avattaessa. Erikseen määritetty käynnistys- tai ohjaustila on etusijalla istunnon ajan.
+	User Interface Options	Käyttöliittymän asetukset
+	User password	Käyttäjän salasana
+	Username	Käyttäjänimi
+	Valid	Kelvollinen
+	Valid for 5 years, for digital signatures. Self-signed IDs are usually not trusted by others.	Voimassa 5 vuotta, digitaalisia allekirjoituksia varten. Muut eivät yleensä luota itse allekirjoitettuihin tunnuksiin.
+	Valid from	Voimassa alkaen
+certificate	Valid from	Voimassa alkaen
+	Valid to	Voimassa asti
+certificate	Valid to	Voimassa asti
+	Validate	Tarkistus
+	Validate all	Tarkista kaikki
+	Validate all signatures	Tarkista kaikki allekirjoitukset
+	Validity ends	Voimassaolo päättyy
+certificate	Validity ends	Voimassaolo päättyy
+	Validity starts	Voimassaolo alkaa
+certificate	Validity starts	Voimassaolo alkaa
+	Value is not calculated	Arvoa ei lasketa
+	Value is the	Arvo on
+	Value:	Arvo:
+	Verify	Tarkista
+	Verify to see what the document needs.	Tarkista, mitä asiakirja tarvitsee.
+certificate	Version	Versio
+	Version {v}	Versio {v}
+	Vertical reversed	Pystysuora käänteinen
+	Vertical text cannot be moved with this selection.	Pystysuoraa tekstiä ei voi siirtää tällä valinnalla.
+	Vertically	Pystysuunnassa
+	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	Video, ääni ja rikas media on tagitettava, jotta ne luetaan ääneen. Tagita multimediamerkinnät.
+	View less	Näytä vähemmän
+	View more	Näytä enemmän
+	View revision {n}	Näytä versio {n}
+	View signed version	Näytä allekirjoitettu versio
+	Viewing	Katselu
+	Viewport	Näkymäikkuna
+	Viewport rectangle in page points (x, y, width, height)	Näkymäikkunan suorakulmio sivun pisteinä (x, y, leveys, korkeus)
+	Visible Rectangle	Näkyvä suorakulmio
+	Visual	Visuaalinen
+	Warning	Varoitus
+	Watermark	Vesileima
+	watermark	vesileima
+calendar weekday	We	Ke
+	Weak	Heikko
+	Welcome to PdfCraft	Tervetuloa PdfCraftiin
+	What takes up the space in this file, by kind of content.	Mikä tässä tiedostossa vie tilaa, sisältötyypeittäin.
+	What word or phrase would you like to search for?	Mitä sanaa tai ilmausta haluat hakea?
+	White on black	Valkoinen mustalla
+	Whole words only	Vain kokonaiset sanat
+	Window Options	Ikkunan asetukset
+	Windows store  ·  	Windows-säilö  ·  
+	Word count	Sanamäärä
+	Word counting stopped unexpectedly.	Sanojen laskenta pysähtyi odottamatta.
+	Word count…	Sanamäärä…
+	Words	Sanat
+	Words or phrases to redact	Peitettävät sanat tai lauseet
+	Write this email?	Kirjoitetaanko tämä sähköposti?
+	Wrong password	Väärä salasana
+	Wrote 1 file to {dir}	Kirjoitettiin 1 tiedosto kansioon {dir}
+	Wrote {n} files to {dir}	Kirjoitettiin {n} tiedostoa kansioon {dir}
+	X Object Forms	XObject-lomakkeet
+	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA-lomake: kentät ja XFA-tiedot pidetään synkronoituina, joten muut katseluohjelmat näyttävät täyttämäsi tiedot.
+	Yellow on black	Keltainen mustalla
+	Yes	Kyllä
+	yesterday	eilen
+	You are about to apply 1 redaction mark. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	Olet käyttämässä 1 peittomerkintää. Merkintöjen alla oleva teksti, kuvat ja piirrokset sekä niiden kanssa päällekkäiset kommentit ja lomakekentät poistetaan pysyvästi.
+	You are about to apply {n} redaction marks. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	Olet käyttämässä {n} peittomerkintää. Merkintöjen alla oleva teksti, kuvat ja piirrokset sekä niiden kanssa päällekkäiset kommentit ja lomakekentät poistetaan pysyvästi.
+	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Katselet asiakirjan ”{from}” revisiota {rev}. Se on tilannevedos: muutokset tässä eivät vaikuta alkuperäiseen.
+	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Katselet asiakirjan ”{from}” allekirjoitettua versiota (revisio {rev}). Se on tilannevedos: muutokset tässä eivät vaikuta alkuperäiseen.
+	You can pin up to {n} folders. Unpin one first.	Voit kiinnittää enintään {n} kansiota. Irrota ensin yksi.
+	You have version {c}. Download the new version from its release page.	Käytössä on versio {c}. Lataa uusi versio sen julkaisusivulta.
+	Your name	Nimesi
+	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy tai yy vuosi · m tai mm kuukausi · mmm tai mmmm kuukauden nimi · d tai dd päivä · ddd tai dddd viikonpäivä. H, h, M, s ja t ovat aikakirjaimia, eikä niitä voi käyttää yksinään: lisää {escape} kirjaimen eteen, jotta se näkyy sellaisenaan.
+	ZIP	ZIP
+	Zip Code	Postinumero
+	Zip Code + 4	Postinumero + 4
+	Zoom	Zoomaus
+	Zoom in	Lähennä
+	Zoom in ({key})	Lähennä ({key})
+	Zoom in (⌘+)	Lähennä (⌘+)
+	Zoom in / out (also pinch or {key}-scroll)	Lähennä / loitonna (myös nipistys tai {key}+vieritys)
+	Zoom in / out (also pinch or ⌘-scroll)	Lähennä / loitonna (myös nipistämällä tai ⌘-vierityksellä)
+	Zoom out	Loitonna
+	Zoom out ({key})	Loitonna ({key})
+	Zoom out (⌘−)	Loitonna (⌘−)
+	Zoom to page level	Sovita sivu
+	Zoom — type a percentage and press Enter	Zoomaus — kirjoita prosentti ja paina Enter
+	{0}: {1}	{0}: {1}
+	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	Merkkejä {chars} ei voi vielä kirjoittaa PDF:ään: Täytä ja allekirjoita -teksti tukee vain länsieurooppalaisia merkkejä. Valitse numeerinen muoto, kuten dd.mm.yyyy.
+	{c} of {n}{more}	{c}/{n}{more}
+	{dpi} pixels/inch	{dpi} pikseliä/tuuma
+@plural	{fields} builds some field names as it runs, so those reads aren't checked.|{fields} build some field names as they run, so those reads aren't checked.	{fields} muodostaa osan kenttien nimistä suorituksen aikana, joten näitä viittauksia ei tarkisteta.|{fields} muodostavat osan kenttien nimistä suorituksen aikana, joten näitä viittauksia ei tarkisteta.
+@plural	{fields} is missing from the order saved in the PDF, so other PDF viewers may not calculate it.|{fields} are missing from the order saved in the PDF, so other PDF viewers may not calculate them.	{fields} puuttuu PDF:ään tallennetusta järjestyksestä, joten muut PDF-katseluohjelmat eivät ehkä laske sitä.|{fields} puuttuvat PDF:ään tallennetusta järjestyksestä, joten muut PDF-katseluohjelmat eivät ehkä laske niitä.
+@plural	{fields} is missing|{fields} are missing	{fields} puuttuu|{fields} puuttuvat
+	{fields} read each other	{fields} lukevat toisiaan
+@plural	{fields} reads it|{fields} read it	{fields} lukee sitä|{fields} lukevat sitä
+@plural	{field} calculates before {fields}, which it reads.|{field} calculates before {fields}, which it reads.	{field} lasketaan ennen lukemaansa kenttää {fields}.|{field} lasketaan ennen lukemiaan kenttiä {fields}.
+	{field} reads fields named as it runs	{field} lukee kenttiä, joiden nimet muodostuvat suorituksen aikana
+	{field} reads its own value	{field} lukee omaa arvoaan
+	{field} reads no other field	{field} ei lue muita kenttiä
+	{field} reads {fields}	{field} lukee: {fields}
+@plural	{field} reads {fields}, which the form doesn't have.|{field} reads {fields}, which the form doesn't have.	{field} lukee kenttää {fields}, jota lomakkeessa ei ole.|{field} lukee kenttiä {fields}, joita lomakkeessa ei ole.
+	{field}: {e}	{field}: {e}
+	{file} is too large for a stamp (at most {n} MB)	{file} on liian suuri leimaksi (enintään {n} MB)
+	{folder} is already pinned to Home	{folder} on jo kiinnitetty aloitussivulle
+	{kind} field	{kind}-kenttä
+	{kind} Properties	{kind}: ominaisuudet
+	{kind} · page {p}	{kind} · sivu {p}
+	{kind} — click to show it on the page	{kind} – näytä sivulla napsauttamalla
+	{k} of {n}	{k}/{n}
+	{label} (1 issue)	{label} (1 ongelma)
+	{label} ({n} issues)	{label} ({n} ongelmaa)
+	{label} failed: {e}	{label} epäonnistui: {e}
+	{month} {day}, {y}	{day}. {month} {y}
+	{month} {y}	{month} {y}
+	{msg} to {dir}	{msg} kansioon {dir}
+	{names} and {last}	{names} ja {last}
+	{name} (default)	{name} (oletus)
+	{name} can't be combined: {why}	Tiedostoa {name} ei voi yhdistää: {why}
+	{name} has no action	Kohteella {name} ei ole toimintoa
+	{name} is read-only	{name} on vain luku -tilassa
+	{name} is too large for a word list (at most 1 MB).	{name} on liian suuri sanaluetteloksi (enintään 1 Mt).
+	{name} submits the form to {url}; PdfCraft doesn't send form data. Save the document to keep your entries.	{name} lähettää lomakkeen osoitteeseen {url}; PdfCraft ei lähetä lomaketietoja. Tallenna asiakirja, jotta syötetyt tiedot säilyvät.
+	{name} — unsaved changes	{name} — tallentamattomia muutoksia
+	{name}: choosing images arrives on the web with file pickers for images	{name}: kuvien valitseminen tulee verkkoversioon kuvatiedostojen valitsimien myötä
+	{name}: the {other} action isn't supported yet	{name}: toimintoa {other} ei vielä tueta
+@plural	{n} byte|{n} bytes	{n} tavu|{n} tavua
+@plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} laskenta käyttää nyt uutta nimeä.|{n} laskentaa käyttää nyt uutta nimeä.
+@plural	{n} comment|{n} comments	{n} kommentti|{n} kommenttia
+	{n} contributors · {c} commits	{n} tekijää · {c} committia
+	{n} days ago	{n} päivää sitten
+	{n} differences found	Löytyi {n} eroa
+@plural	{n} field name collides with earlier files and will be renamed: {list}|{n} field names collide with earlier files and will be renamed: {list}	{n} kentän nimi on päällekkäinen aiempien tiedostojen kanssa ja nimetään uudelleen: {list}|{n} kentän nimeä on päällekkäisiä aiempien tiedostojen kanssa ja nimetään uudelleen: {list}
+@plural	{n} field shows an old value|{n} fields show old values	{n} kenttä näyttää vanhan arvon|{n} kenttää näyttää vanhoja arvoja
+	{n} fields selected	{n} kenttää valittu
+@plural	{n} field|{n} fields	{n} kenttä|{n} kenttää
+	{n} files	{n} tiedostoa
+	{n} files done	{n} tiedostoa valmiina
+	{n} files need attention	{n} tiedostoa vaatii huomiota
+@plural	{n} file|{n} files	{n} tiedosto|{n} tiedostoa
+@plural	{n} formula reads a field the form doesn't have|{n} formulas read fields the form doesn't have	{n} kaava lukee kenttää, jota lomakkeessa ei ole|{n} kaavaa lukee kenttiä, joita lomakkeessa ei ole
+	{n} h ago	{n} h sitten
+@plural	{n} image optimized|{n} images optimized	{n} kuva optimoitu|{n} kuvaa optimoitu
+	{n} instances	{n} osumaa
+	{n} issues	{n} ongelmaa
+@plural	{n} item discarded|{n} items discarded	{n} kohde hylätty|{n} kohdetta hylätty
+	{n} marks	{n} merkintää
+	{n} match(es) marked for redaction.	Peitettäväksi merkittyjä osumia: {n}.
+	{n} measurements use an unsupported format and are left out.	{n} mittausta käyttää ei-tuettua muotoa, ja ne jätetään pois.
+	{n} min ago	{n} min sitten
+@plural	{n} more field calculates too early.|{n} more fields calculate too early.	{n} muu kenttä lasketaan liian aikaisin.|{n} muuta kenttää lasketaan liian aikaisin.
+@plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	{n} muu kaava lukee puuttuvaa kenttää.|{n} muuta kaavaa lukee puuttuvia kenttiä.
+@plural	{n} object selected|{n} objects selected	{n} objekti valittu|{n} objektia valittu
+	{n} pages	{n} sivua
+	{n} pages and no bookmarks	{n} sivua eikä kirjanmerkkejä
+	{n} pages selected	{n} sivua valittu
+	{n} pages selected.	{n} sivua valittu.
+@plural	{n} page|{n} pages	{n} sivu|{n} sivua
+@plural	{n} pixel|{n} pixels	{n} pikseli|{n} pikseliä
+@plural	{n} reply|{n} replies	{n} vastaus|{n} vastausta
+@plural	{n} result|{n} results	{n} tulos|{n} tulosta
+	{n} selected	{n} valittu
+	{n} tags	{n} tagia
+	{n} word(s) or phrase(s)	Sanoja tai lauseita: {n}
+	{n} {kind}	{n} {kind}
+	{page} is not a page number or label	{page} ei ole sivunumero tai -tunniste
+	{rule} - {status}	{rule} - {status}
+	{s} action	Toiminto {s}
+	{ty} element on page {p}: {what}	Sivun {p} {ty}-elementti: {what}
+	{ty} element: {what}	{ty}-elementti: {what}
+	{verb} as "{name}"	{verb} nimellä "{name}"
+	{verb} Background	{verb} tausta
+	{verb} Header and Footer	{verb} ylä- ja alatunniste
+	{verb} Watermark	{verb} vesileima
+	{who} in this document tried to open an address PdfCraft won't open: {e}.	Tämän asiakirjan {who} yritti avata osoitteen, jota PdfCraft ei avaa: {e}.
+	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	Tämän asiakirjan {who} yritti avata osoitteen, jota PdfCraft ei avaa: {e}. Asiakirjoista avautuvat vain verkkolinkit (http, https) ja sähköpostilinkit (mailto).
+	{who} in this document wants to open this address in your browser:	{who} tässä asiakirjassa haluaa avata tämän osoitteen selaimessa:
+	{who} in this document wants to open your email app with this address:	{who} tässä asiakirjassa haluaa avata sähköpostisovelluksen tällä osoitteella:
+	{who}, certificate issued by an unknown issuer.	{who}, varmenteen myöntäjä tuntematon.
+	{who}, certificate issued by {issuer}.	{who}, varmenteen myöntäjä {issuer}.
+	{words} on {pages}	{words}, {pages}
+	{} annotation on page {p} isn't tagged	Sivun {p} {}-merkintää ei ole tagattu
+	{} annotations aren't allowed	{}-merkinnät eivät ole sallittuja
+	ΔLOC	ΔLOC
+	— (protection is applied when you save)	— (suojaus otetaan käyttöön tallennettaessa)
+	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	”{name}” muuttui levyllä avaamisen tai edellisen tallennuksen jälkeen. Tallentaminen nyt korvaa tuon uudemman version tällä versiolla.
+	“{name}” has security restrictions. Enter its permissions password to lift them.	Asiakirjassa ”{name}” on suojausrajoituksia. Poista ne antamalla käyttöoikeuksien salasana.
+	“{name}” is protected. Enter a password to open it.	”{name}” on suojattu. Avaa se antamalla salasana.
+	… and {n} more	… ja {n} muuta
+	−Bin	−Bin
+	−LOC	−LOC

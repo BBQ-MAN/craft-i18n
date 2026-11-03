@@ -43,17 +43,22 @@
 	a bookmark cannot be moved inside itself	žymelės negalima perkelti į ją pačią
 	A button	Mygtukas
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Švarių patalpų principu kuriama atvirojo kodo PDF programa, parašyta „Rust“ kalba. MIT OR Apache-2.0.
+	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	stulpelis per siauras: praplatinkite sritį, skirkite stulpeliui daugiau pločio arba naudokite mažiau stulpelių ar mažesnį tarpą tarp jų
 	A diagonal CONFIDENTIAL watermark on every page.	Įstrižas vandenženklis „KONFIDENCIALU“ kiekviename puslapyje.
 	a document must keep at least one page	dokumente turi likti bent vienas puslapis
 	A document needs at least one page: copy instead	Dokumente turi likti bent vienas puslapis: vietoj perkėlimo kopijuokite
+	a field named {name} already exists	laukas pavadinimu {name} jau yra
 	A font isn't embedded	Šriftas neįdėtas
 	A form field has additional actions	Formos laukas turi papildomų veiksmų
 	A link	Saitas
+	A picture covers page {pages} (a scan?), so the background won't show there.	Paveikslėliu padengtas puslapis (nuskaitytas?): {pages}; fonas ten nesimatys.
 	A script	Scenarijus
 	A selected field has no widget on any page, so the fields can't be edited together.	Pasirinktas laukas neturi valdiklio jokiame puslapyje, todėl laukų negalima redaguoti kartu.
 	A stream refers to an external file	Srautas nurodo išorinį failą
 	A stream uses LZW compression	Srautas suglaudintas naudojant LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Santrauka apibūdina lentelės paskirtį ir išdėstymą. Kiekvienai lentelei pridėkite atributą „Summary“.
+	a table has 1 to {max} columns	lentelėje gali būti nuo 1 iki {max} stulpelių
+	a table has 1 to {max} rows	lentelėje gali būti nuo 1 iki {max} eilučių
 	A {} action isn't allowed	Veiksmas {} neleidžiamas
 	A {} annotation has additional actions	Anotacija {} turi papildomų veiksmų
 	A {} annotation has no appearance stream	Anotacija {} neturi išvaizdos srauto
@@ -110,6 +115,7 @@
 	Add dot	Pridėti tašką
 	Add drawing	Pridėti piešinį
 	Add field	Pridėti lauką
+	Add fields	Pridėti laukus
 	Add file attachment	Pridėti failo priedą
 	Add files to combine	Pridėti jungiamus failus
 	Add files…	Pridėti failus…
@@ -145,6 +151,7 @@
 	Add strikethrough	Pridėti perbraukimą
 	Add text	Pridėti tekstą
 	Add text box	Pridėti teksto langelį
+	Add text field table	Pridėti teksto laukų lentelę
 	Add the choices people pick from.	Pridėkite pasirinkimus, kuriuos galės rinktis naudotojai.
 	Add the files to combine	Pridėkite jungiamus failus
 	Add the PDFs to combine	Pridėkite jungiamus PDF failus
@@ -157,6 +164,7 @@
 	Add {what}	Pridėti {what}
 	Added 1 comment	Pridėtas 1 komentaras
 	Added more than once	Pridėta daugiau nei vieną kartą
+	Added text	Pridėtas tekstas
 	Added the first {n} files in {folder}	Pridėti pirmieji {n} failai iš aplanko {folder}
 	Added the first {n} PDFs in {folder}	Pridėti pirmieji {n} PDF failai iš aplanko {folder}
 	Added {n} comments	Pridėta komentarų: {n}
@@ -169,6 +177,7 @@
 	AI assistant	DI asistentas
 	Algorithm	Algoritmas
 	Align fields	Lygiuoti laukus
+	Alignment	Lygiuotė
 	All annotations are tagged	Visos anotacijos turi struktūros žymas
 	All document contents	Visas dokumento turinys
 	All document contents except metadata	Visas dokumento turinys, išskyrus metaduomenis
@@ -196,6 +205,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Su puslapio turiniu nesusieto elemento alternatyvusis tekstas nepasiekiamas. Pašalinkite jį arba susiekite elementą su turiniu.
 	Alternate text should not hide annotation	Alternatyvusis tekstas neturi paslėpti anotacijos
 	Alternate text that will never be read	Alternatyvusis tekstas, kuris nebus perskaitytas
+	Always use my default zoom and page layout	Visada naudoti mano numatytąjį mastelį ir puslapio išdėstymą
 	An action is already running	Veiksmas jau vykdomas
 	An action with this name already exists.	Veiksmas tokiu pavadinimu jau yra.
 	An embedded file has no AFRelationship	Įdėtasis failas neturi atributo „AFRelationship“
@@ -220,11 +230,13 @@
 	Apply redactions	Pašalinti pažymėtą konfidencialią informaciją
 	Apply redactions…	Pritaikyti konfidencialios informacijos šalinimą…
 	Apply scale	Taikyti mastelį
+	Applying a scale switches units to m / mm.	Pritaikius mastelį, vienetai pakeičiami į m / mm.
 	Appropriate nesting	Tinkamas įdėjimas
 	April	balandis
 calendar date	April	balandžio
 	Arbitrary Mask	Pasirinktinė kaukė
 	Archive documents	Archyvuoti dokumentus
+	Arrange image	Tvarkyti vaizdą
 	Ask about this document	Klausti apie šį dokumentą
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	„GitHub“ tikrinama, ar yra naujausia laida. Nieko automatiškai neatsisiunčiama ir neįdiegiama.
 	Associated with content	Susieta su turiniu
@@ -232,7 +244,10 @@ calendar date	April	balandžio
 	At least one signature is invalid.	Bent vienas parašas negalioja.
 	At most	Daugiausia
 	Attach a file	Pridėti failą
+	Attach a file…	Pridėti failą…
 	Attach file	Pridėti failą
+	Attach {name}	Pridėti {name}
+	Attaching files is not available on the web yet	Failų pridėjimas žiniatinklyje dar negalimas
 	Attachment	Priedas
 	Attachments	Priedai
 	Attachments Panel and Page	Priedų skydelis ir puslapis
@@ -249,6 +264,7 @@ calendar date	August	rugpjūčio
 	Back	Atgal
 	Back side only	Tik kita pusė
 	Back to all tools	Grįžti į visus įrankius
+	Back to Prepare a form	Grįžti į „Rengti formą“
 	Back to the document	Grįžti į dokumentą
 	background	fonas
 	Basic constraints	Pagrindiniai apribojimai
@@ -271,8 +287,11 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Border Color:	Rėmelio spalva:
 	Borders and Colors	Rėmeliai ir spalvos
 	Box	Stačiakampis
+	Bring forward	Perkelti į priekį
+	Bring to front	Iškelti į priekį
 	Bring your own model (off by default)	Naudoti savo modelį (išjungta pagal numatytuosius parametrus)
 	Browser's print dialog	Naršyklės spausdinimo dialogas
+	Bulleted list	Sąrašas su ženkleliais
 	Butt	Plokščias galas
 	Button	Mygtukas
 	Button is checked by default	Mygtukas pažymėtas pagal numatytuosius parametrus
@@ -280,12 +299,14 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Button Style:	Mygtuko stilius:
 	Buttons with the same name and value are selected in unison	Mygtukai su tuo pačiu pavadinimu ir reikšme pasirenkami kartu
 	Bytes	Baitai
+	Calculation order	Skaičiavimo tvarka
 	Calibrate from two points	Kalibruoti pagal du taškus
 	Callout	Išnaša
 	Can't be read: {e}	Nepavyksta perskaityti: {e}
 	Cancelled	Atšaukta
 	Cancelling…	Atšaukiama…
 	Case-sensitive	Skiriamos didžiosios ir mažosios raidės
+	CCITT Group 4	CCITT 4 grupė
 	Center Footer Text	Vidurinis poraštės tekstas
 	Center Header Text	Vidurinis antraštės tekstas
 	Center horizontally	Centruoti horizontaliai
@@ -342,8 +363,8 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	CheckBox	Žymimasis langelis
 	Checkbox	Žymimasis langelis
 	Checked	Pažymėta
-	Checking for a newer version…	Tikrinama, ar yra naujesnė versija…
 	Checking Options ({on} of 32 in all categories)	Tikrinimo parinktys (visose kategorijose: {on} iš 32)
+	Checking pages…	Tikrinami puslapiai…
 	Checkmark	Varnelė
 	Choose a digital ID.	Pasirinkite skaitmeninį ID.
 	Choose a file…	Pasirinkti failą…
@@ -367,6 +388,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Clear all	Išvalyti viską
 	Clear form	Išvalyti formą
 	Clear redaction marks	Pašalinti šalinimo žymas
+	Clear search	Išvalyti paiešką
 	Clear selection / close find	Panaikinti pasirinkimą / užverti paiešką
 	Click on the page to add a {tool}, or drag to set its size	Spustelėkite puslapį, kad pridėtumėte {tool}, arba vilkite, kad nustatytumėte dydį
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Spustelėkite puslapį, kad pridėtumėte tekstą; kiekvienas spustelėjimas sukuria naują laukelį, o ✓ užbaigia veiksmą. Vilkite elementus, kad juos perkeltumėte, vilkite kampą, kad pakeistumėte dydį, dukart spustelėkite tekstą, kad jį redaguotumėte.
@@ -384,12 +406,17 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Collapse all	Suskleisti viską
 	Collapse all bookmarks	Suskleisti visas žymeles
 	Collapse all pages	Suskleisti visus puslapius
+	Collapse all tools	Suskleisti visus įrankius
 	Collapse tag	Suskleisti žymą
 	Color contrast	Spalvų kontrastas
 	Color Images	Spalvoti paveikslėliai
 	Color Spaces	Spalvų erdvės
 	Colours are remapped while rendering; the document itself never changes.	Atvaizduojant spalvos perskaičiuojamos, tačiau pats dokumentas nekeičiamas.
 	Column select	Stulpelio pasirinkimas
+	Column spacing	Tarpas tarp stulpelių
+	Column widths	Stulpelių pločiai
+	Column {n}	Stulpelis {n}
+	Columns	Stulpeliai
 	Comb of	Simbolių tinklelis:
 	Comb of characters	Simboliai atskiruose langeliuose
 	Combine files	Sujungti failus
@@ -412,6 +439,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Komentarai, saitai ir laukai turi būti žymų medyje, kad būtų perskaitomi. Pridėkite anotacijų žymas.
 	Commit selected value immediately	Iš karto patvirtinti pasirinktą reikšmę
 	Common Properties	Bendrosios savybės
+	Common scales	Dažni masteliai
 	Compare Files	Palyginti failus
 	Compare files	Palyginti failus
 	Compare files…	Palyginti failus…
@@ -443,7 +471,6 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Correct recognized text	Taisyti atpažintą tekstą
 	Could not save: {e}	Nepavyko įrašyti: {e}
 	Couldn't add {name}: {e}	Nepavyko pridėti {name}: {e}
-	Couldn't check for updates: {e}	Nepavyko patikrinti, ar yra naujinimų: {e}
 	Couldn't combine files: {e}	Nepavyko sujungti failų: {e}
 	Couldn't copy the image: {e}	Nepavyko nukopijuoti paveikslėlio: {e}
 	Couldn't create a PDF: {e}	Nepavyko sukurti PDF: {e}
@@ -477,6 +504,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Counterclockwise 90 degrees	90 laipsnių prieš laikrodžio rodyklę
 	Counting words… {n} pages read	Skaičiuojami žodžiai… perskaityta puslapių: {n}
 	Country/Region	Šalis / regionas
+	Create & Edit	Kūrimas ir redagavimas
 	Create a new Digital ID (self-signed, saved to a password-protected file)	Kurti naują skaitmeninį ID (savarankiškai pasirašytą, įrašomą į slaptažodžiu apsaugotą failą)
 	Create a PDF	Kurti PDF
 	Create accessibility report	Kurti prieinamumo ataskaitą
@@ -509,8 +537,10 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Creator	Kūrimo programa
 	Credit Cards	Mokėjimo kortelių numeriai
 	CRL Signing	Sertifikatų atšaukimo sąrašo pasirašymas
+	Crop	Apkarpyti
 	Crop (% trimmed from each side)	Apkirpimas (% pašalinama nuo kiekvienos kraštinės)
 	Crop Image	Apkarpyti vaizdą
+	Crop image	Apkarpyti paveikslėlį
 	Crop page	Apkirpti puslapį
 	Crop pages	Apkirpti puslapius
 key	Ctrl	Ctrl
@@ -523,6 +553,7 @@ key	Ctrl	Ctrl
 	Custom stamps arrive on the web with file pickers for images	Žiniatinklio versijoje pasirinktiniai antspaudai bus prieinami įdiegus paveikslėlių failų pasirinkimą
 	Custom text:	Pasirinktinis tekstas:
 	Custom:	Pasirinktinis:
+	Customize & Automate	Pritaikymas ir automatizavimas
 	Cut and stack	Spausdinti iškarpomis ir sudėti
 	Cut and stack needs Two-sided: Off. Print single-sided sheets.	Pjovimui ir sudėjimui reikia išjungti dvipusį spausdinimą. Spausdinkite vienpusius lapus.
 	Cut Image	Iškirpti paveikslėlį
@@ -548,6 +579,8 @@ calendar date	December	gruodžio
 	Default zoom	Numatytasis mastelis
 	Default:	Numatyta:
 key	Delete	Delete
+	Delete attachment	Ištrinti priedą
+	Delete attachment {key}	Ištrinti priedą {key}
 	Delete bookmark	Naikinti žymelę
 	Delete comment	Naikinti komentarą
 	Delete content	Naikinti turinį
@@ -563,6 +596,7 @@ key	Delete	Delete
 	Delete selected fields	Naikinti pasirinktus laukus
 	Delete selected pages (Organize)	Naikinti pasirinktus puslapius (skiltyje „Tvarkyti“)
 	Delete stamp	Naikinti antspaudą
+	Delete the selected pages	Ištrinti pasirinktus puslapius
 @plural	Delete {n} field|Delete {n} fields	Naikinti {n} lauką|Naikinti {n} laukus|Naikinti {n} laukų
 	Delete {o}	Naikinti {o}
 	Describe the figure	Aprašykite elementą
@@ -600,6 +634,7 @@ key	Delete	Delete
 	Discard User Data	Pašalinti naudotojo duomenis
 	Display theme	Išvaizdos tema
 	Distinguished name	Išskirtinis vardas
+	Distribute evenly	Paskirstyti tolygiai
 	Distribute fields	Tolygiai išdėstyti laukus
 	DN: 	DN: 
 	Document actions	Dokumento veiksmai
@@ -625,12 +660,14 @@ key	Delete	Delete
 	Documents and view	Dokumentai ir rodinys
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Daugiau nei 20 puslapių dokumentams reikia naršymo žymelių. Pridėkite pagrindinių skyrių žymeles.
 	Don't save	Neįrašyti
+	Don't show again	Daugiau nerodyti
 	Done adding text	Tekstas pridėtas
 	Downloaded {name}	Atsisiųsta: {name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	Atsisiųstas {n} PDF failas|Atsisiųsti {n} PDF failai|Atsisiųsta {n} PDF failų
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Žiniatinklio versijoje priedus bus galima atsisiųsti M3.10 etape (paruošta baitų: {n})
 	Downsample to	Sumažinti raišką iki
 	DPI sets the printed page size without resampling the image.	DPI nustato spausdinamo puslapio dydį nekeičiant paveikslėlio raiškos.
+	Drag a field to move it, or select it and press {up} or {down}.	Vilkite lauką, kad jį perkeltumėte, arba pažymėkite jį ir paspauskite {up} arba {down}.
 	Drag a rectangle around the area to copy	Apibrėžkite kopijuojamą sritį vilkdami stačiakampį
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Vilkite stačiakampį puslapyje, kad jį apkirptumėte; dukart spustelėkite puslapį, kad nustatytumėte puslapio ribas
 	Drag a rectangle to create a link; double-click a link to edit it	Vilkite stačiakampį, kad sukurtumėte saitą; dukart spustelėkite saitą, kad jį redaguotumėte
@@ -667,6 +704,7 @@ key	Delete	Delete
 	Each file holds as many of the {n} pages as fit.	Kiekviename faile telpa tiek iš {n} puslapių, kiek leidžia dydis.
 	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	Kiekvienas paveikslėlis vertinamas pagal jo atvaizduojamą dydį puslapyje; pakeičiamas tik tada, jei rezultatas mažesnis.
 	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	Kiekvienas paveikslėlis įrašomas vieną kartą, pavadinant pagal dokumentą ir puslapį. JPEG paveikslėliai paliekami nepakeisti, kiti įrašomi PNG formatu.
+	Earlier in calculation order	Anksčiau skaičiavimo tvarkoje
 	Earlier in tab order	Ankstesnė skirtukų tvarka
 comment menu	Edit	Redaguoti
 	Edit a PDF	Redaguoti PDF
@@ -680,6 +718,8 @@ comment menu	Edit	Redaguoti
 	Edit text	Redaguoti tekstą
 	Edit text & images	Redaguoti tekstą ir paveikslėlius
 	Edit text…	Redaguoti tekstą…
+	Edit this PDF	Redaguoti šį PDF
+	Edit {field}'s formula	Redaguoti lauko {field} formulę
 	Email Address	El. pašto adresas
 	Email Addresses	El. pašto adresai
 	Embedded Files	Įdėtieji failai
@@ -701,6 +741,7 @@ key	End	End
 	Enhance scanned file	Pagerinti nuskaitytą failą
 	Enter a name.	Įveskite pavadinimą.
 	Enter a page number	Įveskite puslapio numerį
+	Enter a scale such as 1:50.	Įveskite mastelį, pavyzdžiui, 1:50.
 	Enter a URL	Įveskite URL adresą
 	Enter permissions password…	Įvesti teisių slaptažodį…
 	Enter the field names	Įveskite laukų pavadinimus
@@ -712,6 +753,8 @@ key	Esc	Esc
 	Even and Odd Pages	Lyginiai ir nelyginiai puslapiai
 	Even pages	Lyginiai puslapiai
 	Even Pages Only	Tik lyginiai puslapiai
+	Every field calculates after the fields it reads.	Kiekvienas laukas apskaičiuojamas po laukų, kuriuos skaito.
+	Every field outside a loop calculates after the fields it reads.	Kiekvienas laukas už ciklo ribų apskaičiuojamas po laukų, kuriuos skaito.
 	Every PDF in the folder	Visi aplanko PDF failai
 	Every PDF in the folder and the folders inside it	Visi aplanko ir jo poaplankių PDF failai
 	Every PDF, image and text file in the folder	Visi aplanke esantys PDF, paveikslėlių ir tekstiniai failai
@@ -726,6 +769,7 @@ key	Esc	Esc
 	Expand all	Išskleisti viską
 	Expand all bookmarks	Išskleisti visas žymeles
 	Expand all pages	Išskleisti visus puslapius
+	Expand all tools	Išskleisti visus įrankius
 	Expand tag	Išskleisti žymą
 	Expand top-level bookmarks	Išskleisti aukščiausio lygio žymeles
 	Explain	Paaiškinti
@@ -744,6 +788,7 @@ key	Esc	Esc
 	Export measurements	Eksportuoti matavimus
 	Export measurements as CSV	Eksportuoti matavimus kaip CSV
 	Export stopped: {e}	Eksportavimas sustabdytas: {e}
+	Export this PDF	Eksportuoti šį PDF
 	Export to HTML…	Eksportuoti į HTML…
 	Export to Image	Eksportuoti kaip paveikslėlį
 	Export to image…	Eksportuoti kaip paveikslėlį…
@@ -752,6 +797,7 @@ key	Esc	Esc
 	Export to Text	Eksportuoti kaip tekstą
 	Export to text…	Eksportuoti kaip tekstą…
 	Export to Word…	Eksportuoti į Word…
+	Export value	Eksporto reikšmė
 	Export Value: {on}	Eksportuoti reikšmę: {on}
 	Exported 1 image	Eksportuotas 1 paveikslėlis
 	Exported the text of 1 page	Eksportuotas 1 puslapio tekstas
@@ -763,6 +809,7 @@ key	Esc	Esc
 	Extract pages as separate files	Išskirti puslapius į atskirus failus
 	Extract pages to a new document	Išskirti puslapius į naują dokumentą
 	Extract pages…	Išskirti puslapius…
+	Extract the selected pages…	Išskleisti pasirinktus puslapius…
 	Extracted 1 page	Išskirtas 1 puslapis
 	Extracted {n} pages	Išskirta puslapių: {n}
 	Failed	Nepavyko
@@ -773,7 +820,9 @@ calendar date	February	vasario
 	Field descriptions	Laukų aprašai
 	Field is used for file selection	Laukas skirtas failui pasirinkti
 	Field list	Laukų sąrašas
+	Field names	Laukų pavadinimai
 	Field names (comma-separated)	Laukų pavadinimai (atskirti kableliais)
+	field names can't contain a period: {name}	laukų pavadinimuose negali būti taško: {name}
 	Field names with + - * / and parentheses; put \\ before spaces in names.	Laukų pavadinimai su + - * / ir skliaustais; prieš tarpą pavadinime rašykite \\.
 	Field properties…	Lauko savybės…
 	Field value is in range:	Lauko reikšmė patenka į intervalą:
@@ -822,12 +871,14 @@ calendar date	February	vasario
 	Find text	Ieškoti teksto
 	Find text and redact	Rasti tekstą ir pašalinti konfidencialią informaciją
 	Find text and redact…	Rasti tekstą ir pašalinti konfidencialią informaciją…
+	Find text or tools	Rasti tekstą arba įrankius
 	Find tools and commands	Ieškoti įrankių ir komandų
 	Find tools and commands…	Ieškoti įrankių ir komandų…
 	Find untagged content	Rasti nepažymėtą turinį
 	Finding document fonts…	Ieškoma dokumento šriftų…
 	Finish or discard the text being edited before selecting several objects.	Prieš pasirinkdami kelis objektus užbaikite redaguoti tekstą arba atmeskite pakeitimus.
 	First / last page	Pirmas / paskutinis puslapis
+	First row number	Pirmosios eilutės numeris
 	Fit Height	Pritaikyti aukštį
 	Fit one full page	Pritaikyti visą puslapį
 	Fit Page	Pritaikyti puslapiui
@@ -840,6 +891,7 @@ calendar date	February	vasario
 	Fit Width	Pritaikyti plotį
 	Fix	Taisyti
 	Fix hairlines	Taisyti itin plonas linijas
+	Fix order	Pataisyti tvarką
 	Fix reading order	Taisyti skaitymo tvarką
 	Fixed what could be fixed; 1 problem remains	Ištaisyta tai, ką buvo galima; liko 1 problema
 	Fixed what could be fixed; {n} problems remain	Ištaisyta tai, ką buvo galima; liko problemų: {n}
@@ -874,6 +926,7 @@ calendar date	February	vasario
 	Form fill-in and digital signatures	Formų pildymas ir skaitmeniniai parašai
 	Format text	Formatuoti tekstą
 	Forms	Formos
+	Forms & Signatures	Formos ir parašai
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Formulėms ir panašiems netekstiniams elementams reikia alternatyviojo teksto. Pridėkite jį.
 	Found {n} untagged content problems.	Rasta nepažymėto turinio problemų: {n}.
 calendar weekday	Fr	Pn
@@ -896,6 +949,7 @@ calendar weekday	Fr	Pn
 	Greyscale	Pilki atspalviai
 	H / Space (hold)	H / tarpo klavišas (laikyti)
 	Hand (H)	Rankos įrankis (H)
+	Hand Tool	Rankos įrankis
 	Has JavaScript actions (run in M6)	Turi JavaScript veiksmų (bus vykdomi M6 etape)
 	Header and footer	Antraštė ir poraštė
 	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	Antraščių langeliai (TH) nurodo klausytojui kiekvieno stulpelio ar eilutės paskirtį. Pažymėkite antraščių langelius.
@@ -907,6 +961,7 @@ calendar weekday	Fr	Pn
 	Hide a field	Slėpti lauką
 	Hide all comments	Slėpti visus komentarus
 	Hide field highlights	Slėpti laukų paryškinimą
+	Hide gaps to join page edges. Margins inside the PDF remain unchanged.	Paslėpkite tarpus, kad puslapių kraštai susiliestų. Paraštės PDF viduje nesikeičia.
 	Hide hover previews for highlights without comment text	Slėpti užvedimo peržiūras paryškinimams be komentaro teksto
 	Hide layer	Slėpti sluoksnį
 	Hide menu bar	Slėpti meniu juostą
@@ -926,6 +981,7 @@ key	Home	Home
 	Identity	Tapatybė
 	Image (PNG)	Paveikslėlis (PNG)
 	Image field	Paveikslėlio laukas
+	Image pasted	Paveikslėlis įklijuotas
 	Image-only PDF	PDF vien iš paveikslėlių
 	Images and text	Paveikslėliai ir tekstas
 	Images and text (converted to PDF)	Paveikslėliai ir tekstas (konvertuoti į PDF)
@@ -936,6 +992,7 @@ key	Home	Home
 	Import {name}	Importuoti {name}
 	Importing data arrives on the web with file pickers for data files	Žiniatinklio versijoje duomenis bus galima importuoti įdiegus duomenų failų pasirinkimą
 	In multiple files	Keliuose failuose
+	In streams that use LZW encoding, use Flate instead	LZW koduotiems srautams naudoti „Flate“
 	In this file	Šiame faile
 	Includes unsaved changes	Yra neįrašytų pakeitimų
 	Incorrect password. Try again.	Netinkamas slaptažodis. Bandykite dar kartą.
@@ -952,6 +1009,7 @@ key	Home	Home
 	Insert Date	Įterpti datą
 	Insert Page Number	Įterpti puslapio numerį
 	Insert pages	Įterpti puslapius
+	Insert pages from a file after the selection…	Įterpti puslapius iš failo po pasirinkimo…
 	Insert pages from a file…	Įterpti puslapius iš failo…
 	Insert pages from file…	Įterpti puslapius iš failo…
 	Insert pages from {name}	Įterpti puslapius iš {name}
@@ -983,6 +1041,7 @@ certificate	Issuer	Išdavėjas
 	Item:	Elementas:
 	Items marked Ready work today.	Elementai, pažymėti „Parengta“, veikia dabar.
 	its alternate text is inside another element's and will never be read	alternatyvusis tekstas yra kito elemento alternatyviojo teksto viduje ir nebus perskaitytas
+	Its script also reads fields whose names it builds as it runs, so those reads can't be checked.	Jo scenarijus taip pat skaito laukus, kurių pavadinimus sudaro vykdymo metu, todėl šių skaitymų patikrinti negalima.
 	Its security settings don't allow copying pages	Saugos nuostatos neleidžia kopijuoti puslapių
 	January	sausis
 calendar date	January	sausio
@@ -991,6 +1050,7 @@ calendar date	January	sausio
 	JavaScript console…	JavaScript konsolė…
 	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript išjungtas (Nuostatos > JavaScript).
 	JavaScript, e.g. getField("total").value	JavaScript, pvz., getField("total").value
+	JBIG2 (lossless)	JBIG2 (be nuostolių)
 	Join the ArtCraft community	Prisijunkite prie „ArtCraft“ bendruomenės
 	July	liepa
 calendar date	July	liepos
@@ -1011,7 +1071,10 @@ certificate	Key usage	Rakto naudojimas
 	Landscape Pages	Gulsčios orientacijos puslapiai
 	Landscape pages	Gulsčiai orientuoti puslapiai
 	Larger pages	Didesni puslapiai
+	Larger thumbnails	Didesnės miniatiūros
+	Later in calculation order	Vėliau skaičiavimo tvarkoje
 	Later in tab order	Vėlesnė skirtukų tvarka
+	Layer options	Sluoksnių parinktys
 	Layers Panel and Page	Sluoksnių skydelis ir puslapis
 	Layout and Magnification	Išdėstymas ir mastelis
 	Lbl and LBody	Lbl ir LBody
@@ -1021,6 +1084,7 @@ certificate	Key usage	Rakto naudojimas
 	Left Footer Text	Kairysis poraštės tekstas
 	Left Header Text	Kairysis antraštės tekstas
 	Left out: {names}	Neįtraukti: {names}
+	Less	Mažiau
 	LI must be a child of L	LI turi būti L antrinis elementas
 	Light blue	Šviesiai mėlyna
 	Light theme	Šviesioji tema
@@ -1033,7 +1097,9 @@ certificate	Key usage	Rakto naudojimas
 	Link Appearance	Saito išvaizda
 	Link Properties	Saito savybės
 	Link Type:	Saito tipas:
+	Link URL	Saito URL
 	links	saitai
+	Links on page	Ryšiai puslapyje
 	Links, actions and JavaScripts	Saitai, veiksmai ir „JavaScript“ scenarijai
 	List box	Sąrašo laukas
 	List Box Properties	Sąrašo langelio savybės
@@ -1050,8 +1116,10 @@ certificate	Key usage	Rakto naudojimas
 	Logical Reading Order	Loginė skaitymo tvarka
 	Looking for PDFs…	Ieškoma PDF failų…
 	Looking for printers…	Ieškoma spausdintuvų…
+	Loop	Ciklas
 	Low resolution	Maža raiška
 	Low Resolution (150 dpi)	Maža raiška (150 dpi)
+	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	Pritaikyti prieinamumui
 	Make Current Properties Default	Dabartines savybes nustatyti kaip numatytąsias
 	Make Properties Default	Savybes nustatyti kaip numatytąsias
@@ -1074,6 +1142,7 @@ calendar date	March	kovo
 	Mark with checkmark	Pažymėti varnele
 	Marked	Pažymėta
 	Markup	Žymėjimas
+	Marquee Zoom	Didinti pažymėtą sritį
 	Marquee zoom	Didinti pažymėtą sritį
 	Mask:	Kaukė:
 	Match field sizes	Suvienodinti laukų dydžius
@@ -1098,9 +1167,12 @@ calendar date	May	gegužės
 	Microsoft Word (.docx)	„Microsoft Word“ (.docx)
 	Midpoints	Vidurio taškai
 	minimum	mažiausia reikšmė
+	Missing field	Trūksta lauko
+	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Trūksta PDF faile įrašytoje skaičiavimo tvarkoje: kitos PDF peržiūros programos gali jo neskaičiuoti.
 	Mixed	Mišrios reikšmės
 calendar weekday	Mo	Pr
 	Modify page	Keisti puslapį
+	Monochrome Images	Vienspalviai paveikslėliai
 	More options	Daugiau parinkčių
 	More options:	Daugiau parinkčių:
 	More ways to add files	Daugiau būdų pridėti failų
@@ -1117,17 +1189,20 @@ calendar weekday	Mo	Pr
 	Move later	Perkelti vėliau
 	Move object	Perkelti objektą
 	Move objects	Perkelti objektus
+	Move only what must move, so every field calculates after the fields it reads.	Perkelia tik tai, ką būtina, kad kiekvienas laukas būtų skaičiuojamas po laukų, kuriuos jis skaito.
 	Move page	Perkelti puslapį
 	Move pages	Perkelti puslapius
 	Move tag earlier	Perkelti žymą anksčiau
 	Move tag later	Perkelti žymą vėliau
 	Move to group	Perkelti į grupę
 	Move up	Perkelti aukštyn
+	Moves only what must move	Perkelia tik tai, ką būtina
 	Multi-line	Kelių eilučių
 	Multiple	Keli
 	Multiple files	Keli failai
 	Multiple selection	Kelių elementų pasirinkimas
 	Multiple words or phrases	Keli žodžiai ar frazės
+	N or {row} is the row number, {col} the column number, {seq} the cell number. With none of them, the row number goes last.	N arba {row} – eilutės numeris, {col} – stulpelio numeris, {seq} – langelio numeris. Jei nė vieno nėra, eilutės numeris pridedamas gale.
 	Name on new comments	Naujų komentarų autoriaus vardas
 	Named Destinations	Pavadintos paskirties vietos
 	Navigation links	Naršymo saitai
@@ -1170,11 +1245,14 @@ calendar weekday	Mo	Pr
 	No digital IDs yet.	Skaitmeninių ID dar nėra.
 	No document language is set	Dokumento kalba nenustatyta
 	No documents are open	Nėra atvertų dokumentų
+	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Nė vienas šios formos laukas dar neskaičiuoja savo reikšmės. Nustatykite laukui skaičiavimą jo savybių kortelėje „Skaičiavimas“, ir jis bus rodomas čia.
+	No field reads it	Jo neskaito joks laukas
 	No file chosen	Failas nepasirinktas
 	No fill	Be užpildo
 	No fonts are referenced by the pages.	Puslapiuose nenaudojami jokie šriftai.
 	No form fields were detected	Formos laukų neaptikta
 	no header cells (TH)	nėra antraščių langelių (TH)
+	No image on clipboard to paste	Iškarpinėje nėra paveikslėlio įklijuoti
 	No inaccessible scripts	Nėra neprieinamų scenarijų
 	No issues found	Problemų nerasta
 	No links to remove	Nėra šalintinų saitų
@@ -1182,6 +1260,7 @@ calendar weekday	Mo	Pr
 	No matching tools	Atitinkančių įrankių nėra
 	No model credits were built into this copy.	Šioje programos kopijoje nėra naudotų modelių sąrašo.
 	No openly licensed document fonts found. Load a font file.	Nerasta atvirąją licenciją turinčių dokumento šriftų. Įkelkite šrifto failą.
+	No order can fix a loop. Change one of the formulas.	Jokia tvarka neištaisys ciklo. Pakeiskite vieną iš formulių.
 	no output folder was chosen	nepasirinktas išvesties aplankas
 	No page has text: the document appears to be images of pages	Nė viename puslapyje nėra teksto: dokumentą, atrodo, sudaro puslapių paveikslėliai
 	No pages match those choices	Nė vienas puslapis neatitinka pasirinkimų
@@ -1199,6 +1278,7 @@ calendar weekday	Mo	Pr
 	No status has been set.	Būsena nenustatyta.
 	no such document	tokio dokumento nėra
 	no summary	nėra santraukos
+	No tools match your search.	Paieškos neatitinka joks įrankis.
 	No unlinked web addresses were found in the text	Tekste nerasta žiniatinklio adresų be saitų
 	No untagged content was found.	Nepažymėto turinio nerasta.
 	no unused output name	nėra nenaudojamo išvesties pavadinimo
@@ -1214,6 +1294,7 @@ scroll speed	Normal	Įprastas
 	not in a TR	nepriklauso TR
 	not in an L (list)	nepriklauso L (sąrašui)
 	not in an LI (list item)	nepriklauso LI (sąrašo elementui)
+	Not in order	Ne tvarkoje
 	Not now	Ne dabar
 	Not present	Nėra
 	Note	Raštelis
@@ -1228,6 +1309,7 @@ calendar date	November	lapkričio
 	Number of pages	Puslapių skaičius
 	Number pages	Numeruoti puslapius
 	Number pages…	Numeruoti puslapius…
+	Numbered list	Numeruotas sąrašas
 	October	spalis
 calendar date	October	spalio
 	Odd pages	Nelyginiai puslapiai
@@ -1292,6 +1374,8 @@ animation effects	On	Įjungta
 	Optimizing… writing the copy	Optimizuojama… įrašoma kopija
 	Optional	Pasirenkama
 	Optional: needs an AI provider you configure	Pasirenkama: reikia sukonfigūruoti DI teikėją
+	Options for this reply	Šio atsakymo parinktys
+	Order · top calculates first	Tvarka · viršutinis apskaičiuojamas pirmas
 	Organization Name	Organizacijos pavadinimas
 	Organizational Unit	Organizacijos padalinys
 	Organize	Tvarkyti
@@ -1301,6 +1385,7 @@ animation effects	On	Įjungta
 	Other colour…	Kita spalva…
 	Other elements alternate text	Kitų elementų alternatyvusis tekstas
 	Other elements that require alternate text	Kiti elementai, kuriems reikia alternatyviojo teksto
+	Other options	Kitos parinktys
 	Outdent	Sumažinti įtrauką
 	Outline colour:	Kontūro spalva:
 	Output appears here.	Čia bus rodoma išvestis.
@@ -1327,12 +1412,15 @@ animation effects	On	Įjungta
 	Page size	Puslapio dydis
 	Page Sizing & Handling	Puslapio dydis ir apdorojimas
 	Page thumbnails	Puslapių miniatiūros
+	Page tools	Puslapių įrankiai
 	Page transitions	Puslapių perėjimai
 	Page will not cause screen flicker	Puslapis nesukels ekrano mirgėjimo
 	Page {label}	Puslapis {label}
 	Page {n}	{n} puslapis
 	page {n} is out of range (1–{count})	puslapis {n} nepatenka į intervalą (1–{count})
 	Page {n} of {total}	Puslapis {n} iš {total}
+	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Puslapis pasikeitė po fono pridėjimo, todėl jo baltas užpildas lieka išjungtas: {pages}. Ant balto popieriaus jis atrodo taip pat.
+	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Puslapis su savo baltu užpildu, kuris paslėptų foną: {pages}. Pakeisti
 	Page {p} doesn't tab in structure order	Puslapyje {p} tabuliavimo tvarka neatitinka struktūros tvarkos
 	Page {p} of {n}	Puslapis {p} iš {n}
 	Page {p}: {n} untagged content item	Puslapis {p}: turinio elementų be žymų: {n}
@@ -1350,11 +1438,14 @@ animation effects	On	Įjungta
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Puslapių, kuriuose tekstas yra tik paveikslėlis, negalima perskaityti balsu ar juose ieškoti. Atpažinkite tekstą (OCR), kad pridėtumėte teksto sluoksnį.
 	Pages to Print	Spausdinami puslapiai
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Puslapiuose su saitais, komentarais ar laukais pereiti tabuliavimo klavišu reikia struktūros tvarka. Pataisa nustato kiekvieno puslapio tabuliavimo tvarką pagal dokumento struktūrą.
+	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Puslapiai pasikeitė po fono pridėjimo, todėl jų balti užpildai lieka išjungti: {pages}. Ant balto popieriaus jie atrodo taip pat.
+	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Puslapiai su savo baltu užpildu, kuris paslėptų foną: {pages}. Pakeisti
 	Pages:	Puslapiai:
 	Pages: {k} of {n}	Puslapiai: {k} iš {n}
 	Panel layout could not be restored: {error}	Nepavyko atkurti skydelių išdėstymo: {error}
 	Panel move was not applied: {error}	Skydelio perkėlimas nepritaikytas: {error}
 	Paper:	Popierius:
+	Paragraph spacing	Tarpas tarp pastraipų
 	Part of	Dalis iš
 	Passed	Atitinka
 	Password protection will be applied when you save	Apsauga slaptažodžiu bus pritaikyta įrašant
@@ -1379,7 +1470,6 @@ animation effects	On	Įjungta
 	PdfCraft on GitHub	„PdfCraft“ „GitHub“ puslapis
 	PdfCraft web page	„PdfCraft“ svetainė
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	„PdfCraft“ veikia neprisijungus. Nerenkami telemetrijos duomenys, nereikia paskyros ir nenaudojamos debesijos paslaugos, nebent pridėtumėte jų teikėją.
-	PdfCraft {c} is up to date.	Naudojate naujausią „PdfCraft“ versiją {c}.
 	PdfCraft {v} is available.	Išleista „PdfCraft“ versija {v}.
 	People may need more time to respond. Check that nothing has a time limit.	Žmonėms gali reikėti daugiau laiko atsakyti. Patikrinkite, ar nėra laiko apribojimų.
 	Permissions password	Teisių slaptažodis
@@ -1387,14 +1477,23 @@ animation effects	On	Įjungta
 	Phone Number	Telefono numeris
 	Phone Numbers	Telefono numeriai
 	Pick a tool in the quick bar, or type above.	Pasirinkite įrankį sparčiojoje juostoje arba įveskite paieškos tekstą aukščiau.
+	Pictures cover pages {pages} (scans?), so the background won't show there.	Paveikslėliais padengti puslapiai (nuskaityti?): {pages}; fonas ten nesimatys.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Paveikslėliams reikia juos apibūdinančio alternatyviojo teksto arba jie turi būti pažymėti kaip dekoratyviniai. Pridėkite kiekvieno paveikslo alternatyvųjį tekstą.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	Paveikslėliuose esantis tekstas taip pat atpažįstamas; puslapio tekste jau esantys žodžiai dar kartą nepridedami
+	Pin	Prisegti
 	Pin a folder to Home	Prisegti aplanką pradžios lange
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Prisekite aplanką, kad čia būtų rodomi naujausi PDF failai, pavyzdžiui, nuskaityti ar sinchronizuotoje debesijos saugykloje įrašyti dokumentai.
 	Pin a folder…	Prisegti aplanką…
+	Pin a tool…	Prisegti įrankį…
 	Pin folder to Home…	Prisegti aplanką prie pradžios lango…
+	Pin to Home	Prisegti pradžioje
+	Pin tools to Home	Prisegti įrankius pradžioje
+	Pin your favorite tools here for quick access.	Prisekite mėgstamus įrankius čia, kad greitai pasiektumėte.
+	Pinned	Prisegta
 	Pinned folders need the desktop app	Aplankams prisegti reikalinga darbalaukio programa
+	Pinned Tools	Prisegti įrankiai
 	Pinned {folder} to Home	Aplankas {folder} prisegtas prie pradžios rodinio
+	Pinned {tool} to Home	{tool} prisegtas pradžios puslapyje
 	Place saved {what}	Įdėti įrašytą {what}
 	Plain text in reading order; pages are separated by form feeds.	Paprastasis tekstas skaitymo tvarka; puslapiai atskiriami puslapio skirtukais.
 	Planned	Suplanuota
@@ -1436,6 +1535,7 @@ animation effects	On	Įjungta
 	Print production	Spaudos paruošimas
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Spausdinkite vienpusiškai. Išlaikykite lapų tvarką, pjaukite ties žymomis, tada sudėkite krūveles iš kairės į dešinę ir iš viršaus į apačią.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage arba LastPage
+	Printer default	Pagal spausdintuvą
 	Printer paper and scaling may differ. Check driver settings.	Spausdintuvo popieriaus formatas ir mastelis gali skirtis. Patikrinkite tvarkyklės nuostatas.
 	Printer properties	Spausdintuvo savybės
 	Printing allowed	Leidžiama spausdinti
@@ -1444,6 +1544,7 @@ animation effects	On	Įjungta
 	Producer	PDF kūrimo programa
 	product (x)	sandauga (×)
 	Properties…	Savybės…
+	Protect & Standardize	Apsauga ir standartizavimas
 	Protect a PDF	Apsaugoti PDF
 	Protect Using Password	Apsaugoti slaptažodžiu
 	Protect using password…	Apsaugoti slaptažodžiu…
@@ -1460,9 +1561,14 @@ certificate	Public key	Viešasis raktas
 	Read mode	Skaitymo veiksena
 	Read Only	Tik skaityti
 	Reading colours	Skaitomos spalvos
+	Reading the printer's settings…	Skaitomi spausdintuvo nustatymai…
+	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Skaito {names}, kurie savo ruožtu skaito jį. Jokia tvarka neištaisys ciklo: pakeiskite vieną iš formulių.
+	Reads {name}, which calculates later, so it shows an old value.	Skaito {name}, kuris skaičiuojamas vėliau, todėl rodo seną reikšmę.
+	Reads {name}, which the form doesn't have, so it gets no value there.	Skaito {name}, kurio formoje nėra, todėl iš ten negauna jokios reikšmės.
 	Reason	Priežastis
 	Reason: 	Priežastis: 
 	Recent colours	Paskiausiai naudotos spalvos
+	Recent files to keep	Recent files to keep
 	Recognize Text	Atpažinti tekstą
 	Recognize text	Atpažinti tekstą
 	Recognize text in multiple files…	Atpažinti tekstą keliuose failuose…
@@ -1501,6 +1607,7 @@ certificate	Public key	Viešasis raktas
 	Remove background	Pašalinti foną
 	Remove checkmark	Pašalinti varnelę
 	Remove Crop	Pašalinti apkarpymą
+	Remove crop	Pašalinti apkarpymą
 	Remove from Recent	Pašalinti iš paskiausiai naudotų failų
 	Remove header & footer	Pašalinti antraštę ir poraštę
 	Remove hidden information	Pašalinti paslėptą informaciją
@@ -1520,10 +1627,12 @@ certificate	Public key	Viešasis raktas
 	Remove {name} from Recent	Pašalinti {name} iš paskiausiai naudotų failų
 	Remove {n} files	Pašalinti failų: {n}
 	Remove {n} pages	Pašalinti puslapių: {n}
+	Remove {standard} identification	Pašalinti {standard} identifikaciją
 	Removed 1 hidden item. Save to remove them from the file.	Pašalintas 1 paslėptas elementas. Įrašykite, kad jis būtų pašalintas iš failo.
 	Removed 1 link	Pašalintas 1 saitas
 	Removed {n} hidden items. Save to remove them from the file.	Pašalinta paslėptų elementų: {n}. Įrašykite, kad jie būtų pašalinti iš failo.
 	Removed {n} links	Pašalinta saitų: {n}
+	Removing the background puts the page's own backdrop back.	Pašalinus foną, grąžinamas paties puslapio baltas užpildas.
 	Rename bookmark	Pervadinti žymelę
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Atvaizdavimas: hayro (pradinė versija) · Sąsaja: egui · Piktogramos: Lucide (ISC) · Šriftai: Inter, JetBrains Mono, Dancing Script (OFL)
 	Rendering…	Atvaizduojama…
@@ -1556,9 +1665,12 @@ certificate	Public key	Viešasis raktas
 	Reset columns	Atkurti stulpelius
 	Reset page size	Atkurti puslapio dydį
 	Reset panel layout	Atkurti skydelių išdėstymą
+	Reset to Initial Visibility	Atkurti pradinį matomumą
 	Reset to printer defaults	Atkurti numatytąsias spausdintuvo nuostatas
+	Reshape comment	Keisti komentaro formą
 	Resize comment	Keisti komentaro dydį
 	Resize window to initial page	Pakeisti lango dydį, kad tilptų pradinis puslapis
+	Restore the last view (page, zoom and page display) when a document is opened again	Iš naujo atidarant dokumentą atkurti paskutinį rodinį (puslapį, mastelį ir puslapių rodymą)
 	Restrictions	Apribojimai
 	Restrictions lifted	Apribojimai panaikinti
 	Retain existing	Palikti esamą
@@ -1573,6 +1685,7 @@ certificate	Public key	Viešasis raktas
 	Revert changes	Atšaukti pakeitimus
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	Grąžinti anksčiau įrašytą „{name}“ versiją? Po to atliktų pakeitimų nebegalėsite atkurti.
 	Reverted to the last saved version	Grąžinta paskutinė įrašyta versija
+	Review & Compare	Peržiūra ir palyginimas
 	Review History	Pakeitimų retrospektyva
 	Revisions	Versijos
 	Rich Text Format (.rtf)	Rich Text Format (.rtf)
@@ -1592,11 +1705,14 @@ certificate	Public key	Viešasis raktas
 	Rotate pages clockwise	Pasukti puslapius pagal laikrodžio rodyklę
 	Rotate pages counterclockwise	Pasukti puslapius prieš laikrodžio rodyklę
 	Rotate pages…	Pasukti puslapius…
+	Rotate the selected pages clockwise	Pasukti pasirinktus puslapius pagal laikrodžio rodyklę
+	Rotate the selected pages counterclockwise	Pasukti pasirinktus puslapius prieš laikrodžio rodyklę
 	Rotate view	Pasukti rodinį
 	Rotate view clockwise	Pasukti rodinį pagal laikrodžio rodyklę
 	Rotate view clockwise ({key})	Pasukti rodinį pagal laikrodžio rodyklę ({key})
 	Rotate view clockwise (⇧⌘+)	Pasukti rodinį pagal laikrodžio rodyklę (⇧⌘+)
 	Rotate view counterclockwise	Pasukti rodinį prieš laikrodžio rodyklę
+	Row spacing	Tarpas tarp eilučių
 	rows have between {min} and {max} columns	eilutėse yra nuo {min} iki {max} stulpelių
 	Rule Name	Taisyklės pavadinimas
 	Run	Vykdyti
@@ -1645,11 +1761,13 @@ calendar weekday	Sa	Št
 	Saved {place}: {before} → {after} (not smaller){detail}	Įrašyta {place}: {before} → {after} (nesumažėjo){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Įrašyta {place}: {before} → {after} (sumažėjo {pct}%){detail}
 	Saved, but reopening failed: {e}	Įrašyta, tačiau nepavyko atverti iš naujo: {e}
+	Scale	Mastelis
 	Scale relative to target page	Mastelis pagal paskirties puslapį
 	Scan	Nuskaityti
 	Scan & OCR	Nuskaityti ir atpažinti tekstą
 	Screen flicker	Ekrano mirgėjimas
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Ekrano skaitymo programos pasirenka balsą pagal dokumento kalbą. Nustatykite ją skiltyje „Dokumento savybės“ > „Išplėstiniai“ > „Kalba“.
+	Script	Scenarijus
 	Script Name:	Scenarijaus pavadinimas:
 	Script:	Scenarijus:
 	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	Scenarijais valdomas turinys turi būti pasiekiamas klaviatūra ir pagalbinėmis technologijomis. Patikrinkite dokumento scenarijus.
@@ -1661,10 +1779,13 @@ calendar weekday	Sa	Št
 	Scroll tabs right	Slinkti korteles dešinėn
 	Search comments	Ieškoti komentaruose
 	Search results	Paieškos rezultatai
+	Search tools and commands	Ieškoti įrankių ir komandų
 	Search tools and commands…	Ieškoti įrankių ir komandų…
+	Search tools…	Ieškoti įrankių…
 	Searchable Image (Exact)	Paveikslėlis su tiksliu atpažinimu
 	Searching… {s} of {p} pages	Ieškoma… {s} iš {p} puslapių
 	Searching… {s}/{p}	Ieškoma… {s}/{p}
+	Search…	Ieškoti…
 	Security method	Apsaugos būdas
 	Security properties	Apsaugos savybės
 	Security properties…	Apsaugos savybės…
@@ -1687,10 +1808,14 @@ calendar weekday	Sa	Št
 	Select page {label}	Pasirinkti puslapį {label}
 	Select pages	Pasirinkti puslapius
 	Select the items to remove from this document.	Pasirinkite iš dokumento šalinamus elementus.
+	Select Tool	Pasirinkimo įrankis
+	Select tools to display on your Home page for quick access.	Pasirinkite įrankius, kuriuos norite rodyti pradžios puslapyje.
 	Select Trigger:	Pasirinkite paleidiklį:
 	Selected image files: {count}	Pasirinkti paveikslėlių failai: {count}
 	Self-signed	Savarankiškai pasirašytas
 certificate	Self-signed	Savarankiškai pasirašytas
+	Send backward	Perkelti atgal
+	Send to back	Nukelti į galą
 	Sending sheet {s} of {n} to {printer}…	Siunčiamas lapas {s} iš {n} į {printer}…
 	Sending to {printer}…	Siunčiama į {printer}…
 	Sent to {printer}: {msg}	Išsiųsta į {printer}: {msg}
@@ -1703,6 +1828,7 @@ certificate	Serial number	Serijos numeris
 	Set Alternate Text	Nustatyti alternatyvųjį tekstą
 	Set alternate text	Nustatyti alternatyvųjį tekstą
 	Set bookmark destination	Nustatyti žymelės paskirties vietą
+	Set calculation order	Nustatyti skaičiavimo tvarką
 	Set document title	Nustatyti dokumento pavadinimą
 	Set Fields to Same Size	Nustatyti vienodą laukų dydį
 	Set layer visibility	Nustatyti sluoksnio matomumą
@@ -1737,12 +1863,16 @@ key	Shift	Shift
 	ships in milestone {m}	planuojama {m} etape
 	Show a basic title bar for the window buttons instead of the tab strip. GNOME doesn't draw title bars for apps, so this one doesn't follow its theme.	Rodyti paprastą pavadinimo juostą su lango mygtukais vietoj kortelių juostos. GNOME nepiešia programoms pavadinimo juostų, todėl ši neatitinka jo temos.
 	Show a field	Rodyti lauką
+	Show a notice when a document is secured	Rodyti pranešimą, kai dokumentas apsaugotas
 	Show all	Rodyti viską
 	Show all comments	Rodyti visus komentarus
 	Show certificate…	Rodyti sertifikatą…
 	Show cover page in two-page view	Rodyti viršelio puslapį dviejų puslapių rodinyje
+	Show gaps between pages	Rodyti tarpus tarp puslapių
 	Show layer	Rodyti sluoksnį
 	Show less	Rodyti mažiau
+	Show on the page which fields each field reads	Rodyti puslapyje, kuriuos laukus skaito kiekvienas laukas
+	Show Page Edge Shadows	Rodyti puslapių kraštų šešėlius
 	Show password	Rodyti slaptažodį
 	Show Report	Rodyti ataskaitą
 	Show the accessibility report	Rodyti prieinamumo ataskaitą
@@ -1750,6 +1880,7 @@ key	Shift	Shift
 	Show {n} more	Rodyti dar {n}
 	Shown while the pointer is over a mark.	Rodoma, kol žymeklis yra virš žymės.
 	Shrink oversized pages	Sumažinti per didelius puslapius
+	Shrink the page content to make room for the header and footer	Sumažinti puslapio turinį, kad tilptų antraštė ir poraštė
 	Side by side	Greta
 	Side panels	Šoniniai skydeliai
 	Sign	Pasirašyti
@@ -1787,6 +1918,7 @@ key	Shift	Shift
 	Slash	Pasvirasis brūkšnys
 scroll speed	Slow	Lėtas
 	Smaller pages	Mažesni puslapiai
+	Smaller thumbnails	Mažesnės miniatiūros
 	Snap to drawing	Pritraukti prie brėžinio
 	Snapping	Pritraukimas
 	Social Security Number	Socialinio draudimo numeris
@@ -1794,6 +1926,7 @@ scroll speed	Slow	Lėtas
 	Solid	Vientisas
 	Some bookmarks are not shown here: the panel lists a limited number, nested a limited depth.	Kai kurios žymelės nerodomos: skydelyje pateikiamas ribotas jų skaičius ir įdėjimo lygis.
 	Some content could not be classified safely and was kept in the count.	Dalies turinio nepavyko patikimai klasifikuoti, todėl jis liko įtrauktas į skaičių.
+	Some names are built as it runs	Kai kurie pavadinimai sudaromi vykdymo metu
 	Some page content couldn't be read; snapping uses the rest.	Nepavyko perskaityti dalies puslapio turinio; pritraukimui naudojama likusi dalis.
 	Some pages contain no countable text. Scanned images need OCR first.	Kai kuriuose puslapiuose nėra skaičiuojamo teksto. Nuskaitytiems vaizdams pirmiausia reikia OCR.
 	Sort comments by:	Rūšiuoti komentarus pagal:
@@ -1827,11 +1960,13 @@ action wizard	Start	Pradėti
 calendar weekday	Su	Sk
 certificate	Subject	Sertifikato subjektas
 	Submit a form	Pateikti formą
+	Subscript	Apatinis indeksas
 	Success	Pavyko
 	sum (+)	suma (+)
 	Summarize	Apibendrinti
 	Summarize comments	Apibendrinti komentarus
 	Summarize Options	Apibendrinimo parinktys
+	Superscript	Viršutinis indeksas
 	Switch light / dark theme	Perjungti šviesiąją ir tamsiąją temas
 	Switch to List view to change the pages it takes.	Norėdami pakeisti pasirinktus puslapius, perjunkite sąrašo rodinį.
 	Switch to two-page view first to show the cover page	Norėdami rodyti viršelio puslapį, pirmiausia perjunkite dviejų puslapių rodinį
@@ -1863,8 +1998,11 @@ certificate	Subject	Sertifikato subjektas
 	Text alignment:	Teksto lygiuotė:
 	Text box	Teksto laukelis
 	Text Color:	Teksto spalva:
+	Text editing line	Teksto redagavimo eilutė
 	Text field	Teksto laukas
 	Text Field Properties	Teksto lauko savybės
+	Text Field Table	Teksto laukų lentelė
+	Text field table	Teksto laukų lentelė
 	Text in images isn't found; recognise text (OCR) first.	Paveikslėliuose esantis tekstas nerandamas; pirmiausia atpažinkite tekstą (OCR).
 	Text is compared word by word; the differences are shown on the new file.	Tekstas lyginamas žodis po žodžio; skirtumai rodomi naujame faile.
 	Text language is specified	Teksto kalba nurodyta
@@ -1874,6 +2012,7 @@ certificate	Subject	Sertifikato subjektas
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Teksto atpažinimas neįdiegtas: trūksta modelių (vykdykite `cargo xtask models` arba nustatykite PDFCRAFT_MODELS).
 	Text to find	Ieškomas tekstas
 	Text to insert	Įterpiamas tekstas
+	Text to place	Tekstas, kurį reikia įdėti
 	Text used as a clipping path cannot be moved with this selection.	Teksto, naudojamo kaip iškarpymo kelias, negalima perkelti pasirinkus šį objektą.
 	Text, marks and signatures become part of the page. Other comments stay editable.	Tekstas, žymos ir parašai tampa puslapio dalimi. Kitus komentarus galima redaguoti.
 calendar weekday	Th	Kt
@@ -1882,7 +2021,10 @@ calendar weekday	Th	Kt
 	Thai and Arabic use regular fallback fonts when available.	Tajų ir arabų kalboms naudojami įprasti atsarginiai šriftai, jei jie prieinami.
 	That didn't work: an internal error stopped it ({m}).	Veiksmas nepavyko: jį sustabdė vidinė klaida ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Veiksmas nepavyko: jį sustabdė vidinė klaida ({m}). Dokumentai nepakeisti.
+	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	sritis, tarpai ir stulpelių pločiai turi būti skaičiai, tarpai – 0 arba daugiau, o kiekvienas plotis – daugiau nei 0
+@plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Skaičiavimo tvarkoje yra {n} įrašas, kuris nieko neskaičiuoja. „Pataisyti tvarką“ jį pašalina.|Skaičiavimo tvarkoje yra {n} įrašai, kurie nieko neskaičiuoja. „Pataisyti tvarką“ juos pašalina.|Skaičiavimo tvarkoje yra {n} įrašų, kurie nieko neskaičiuoja. „Pataisyti tvarką“ juos pašalina.
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Subjekto {} sertifikatas neleidžia tiek žemesnio lygio sertifikavimo įstaigų sertifikatų (grandinės ilgio riba), todėl juo nepatvirtinamas {} sertifikatas.
+	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.
 	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	Subjekto {} sertifikatas nėra sertifikavimo įstaigos sertifikatas, leidžiantis išduoti sertifikatus, todėl juo nepatvirtinamas {} sertifikatas.
 	The certificate of {} was not valid at the time of signing, so it is not used to vouch for {}.	Subjekto {} sertifikatas pasirašymo metu negaliojo, todėl juo nepatvirtinamas {} sertifikatas.
 	The checker found 1 problem which may prevent the document from being fully accessible.	Tikrintuvas aptiko 1 problemą, dėl kurios dokumentas gali būti nevisiškai pritaikytas prieinamumui.
@@ -1917,6 +2059,7 @@ calendar weekday	Th	Kt
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Dokumente įdėta atšaukimo informacija rodo, kad pasirašiusiojo sertifikatas neatšauktas.
 	The document's security settings don't allow copying text and images	Dokumento saugos nuostatos neleidžia kopijuoti teksto ir paveikslėlių
 	The document's security settings don't allow filling in form fields	Dokumento saugos nuostatos neleidžia pildyti formos laukų
+	The document's security settings don't allow printing	Dokumento saugos nuostatos neleidžia spausdinti
 	The document's security settings don't allow this change	Dokumento saugos nuostatos neleidžia atlikti šio pakeitimo
 	The ECDSA signature is not in canonical DER (trailing bytes, padding or a missing sign byte); it was read anyway.	ECDSA parašas nėra kanoninio DER formato (yra papildomų baitų, užpildo arba trūksta ženklo baito); jis vis tiek perskaitytas.
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	ECDSA parašas pateiktas kaip neapdorotos r ir s reikšmės, o ne DER seka; jis vis tiek perskaitytas.
@@ -1926,6 +2069,7 @@ calendar weekday	Th	Kt
 	The field properties dialog is no longer open.	Lauko savybių dialogas jau užvertas.
 	The field {name} no longer exists.	Lauko {name} nebėra.
 	the first heading is an H{n}; headings should not skip levels	pirmoji antraštė yra H{n}; antraščių lygiai neturi būti praleidžiami
+	the first row number can be at most {max}	pirmosios eilutės numeris gali būti ne didesnis nei {max}
 	The font {} isn't embedded	Šriftas {} neįdėtas
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	„PdfCraft“ naudojami šriftai negali atvaizduoti simbolio „{c}“ ({code}), todėl visose PDF žiūryklėse jis rodomas kaip ?. Tekstas įrašytas.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Forma prašo pateikti duomenis į {u}; „PdfCraft“ formos duomenų nesiunčia. Įrašykite dokumentą, kad išsaugotumėte įvestas reikšmes.
@@ -1940,8 +2084,10 @@ calendar weekday	Th	Kt
 	The linked PDF opened, but its named destination was not applied.	Susietas PDF atvertas, tačiau pavadinta paskirties vieta nepritaikyta.
 	The linked PDF opened, but its page destination was out of range.	Susietas PDF atvertas, tačiau paskirties puslapis nepatenka į puslapių intervalą.
 	The metadata doesn't identify the file as {}	Metaduomenys nenurodo, kad failas atitinka {}
+	the name is not a plain file name	vardas nėra paprastas failo vardas
 	The newest {n} of {total} PDFs	Naujausi PDF failai: {n} iš {total}
 	The operation failed.	Veiksmas nepavyko.
+	The order saved in the PDF needs tidying	PDF faile įrašytą tvarką reikia sutvarkyti
 	The page has changed; select the image again	Puslapis pasikeitė; pažymėkite paveikslėlį iš naujo
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Puslapiai išskirti, bet nepašalinti, nes renkantis aplanką dokumentas pasikeitė.
 	the password is incorrect	slaptažodis netinkamas
@@ -1953,6 +2099,7 @@ calendar weekday	Th	Kt
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF teksto šriftai negali atvaizduoti simbolio „{c}“ ({code}). Pasirinkite palaikomą tekstą.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Šio spausdinimo spausdintuvo tvarkyklės nuostatos: popieriaus dėklas, popieriaus tipas, apdaila ir kita.
 	The replacement file doesn't have that many pages.	Pakaitiniame faile nėra tiek puslapių.
+	the rows are too short: make the area taller, or use fewer rows or less row spacing	eilutės per žemos: padidinkite srities aukštį arba naudokite mažiau eilučių ar mažesnį tarpą tarp jų
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA parašo reikšmės ilgis neatitinka rakto modulio ilgio (pradžioje pašalinti arba pridėti nuliniai baitai); ji vis tiek perskaityta.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	RSA parašo „DigestInfo“ neturi parametro NULL (taip įrašo senesnės pasirašymo programos); jis vis tiek perskaitytas.
 	The same password is tried on each file.	Kiekvienam failui bandoma naudoti tą patį slaptažodį.
@@ -1973,6 +2120,9 @@ calendar weekday	Th	Kt
 	The signature will be invisible.	Parašas bus nematomas.
 	The signature's byte range does not exclude exactly its contents.	Parašo baitų intervalas neišskiria tiksliai jo turinio.
 	The signature's byte range does not match the file.	Parašo baitų intervalas neatitinka failo.
+	The signature's signed attributes have no content type, which CMS requires; it was read anyway.	Parašo pasirašytuosiuose atributuose nėra turinio tipo, kurio reikalauja CMS; parašas vis tiek perskaitytas.
+	The signature's signed attributes have no message digest, so the signature does not cover the document.	Parašo pasirašytuosiuose atributuose nėra pranešimo santraukos, todėl parašas neapima dokumento.
+	The signature's signed attributes name a content type other than data, so it is not a signature of the document.	Parašo pasirašytuosiuose atributuose nurodytas kitas turinio tipas nei duomenys, todėl tai nėra dokumento parašas.
 	The signature's timestamp token could not be verified ({}).	Nepavyko patvirtinti parašo laiko žymos žetono ({}).
 	The signature's timestamp token does not cover the signature value.	Parašo laiko žymos žetonas neapima parašo reikšmės.
 	The signed content is a constructed (segmented) OCTET STRING, as BER allows; it was read anyway.	Pasirašytas turinys yra sudėtinis (segmentuotas) OCTET STRING, kaip leidžia BER; jis vis tiek perskaitytas.
@@ -1988,6 +2138,7 @@ calendar weekday	Th	Kt
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standartiniai šriftai negali atvaizduoti simbolio „{c}“ ({code}). Kol kas galima įvesti tik Vakarų Europos simbolius.
 	The text is the same	Tekstas sutampa
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	teksto atpažinimo modeliai neįdiegti (iš naujo įdiekite „PdfCraft“ arba nustatykite PDFCRAFT_MODELS aplanką, kuriame jie laikomi)
+	The timestamp authority's certificate is not issued for time stamping.	The timestamp authority's certificate is not issued for time stamping.
 	The timestamp authority's certificate was not valid at the time of timestamping.	Laiko žymą išdavusios įstaigos sertifikatas žymos sukūrimo metu negaliojo.
 	The timestamp contents are not hexadecimal.	Laiko žymos turinys nėra šešioliktainis.
 	The timestamp has no valid byte range.	Laiko žyma neturi tinkamo baitų intervalo.
@@ -2059,10 +2210,12 @@ calendar weekday	Th	Kt
 	This PDF uses the unsupported {s} action.	Šis PDF naudoja nepalaikomą veiksmą {s}.
 	This printer offers no settings of its own.	Šis spausdintuvas neturi atskirų nuostatų.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Šio spausdintuvo tvarkyklė neperima dvipusio spausdinimo nuostatų iš kitų programų, todėl taikoma jos nuostata. Pakeiskite ją skiltyje „Savybės“…
+	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Šis parašas naudoja trumpesnį nei 2048 bitų RSA raktą, kuris parašams nebelaikomas pakankamai stipriu. Parašas vis dar patvirtinamas, tačiau juo nereikėtų pasikliauti.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Šis parašas naudoja RIPEMD-160 — pasenusį 160 bitų maišos algoritmą, kuris parašams neberekomenduojamas. Parašas vis dar patvirtinamas, tačiau juo nereikėtų pasikliauti.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Šis parašas naudoja silpną SHA-1 maišos algoritmą, kuriam įrodytos kolizijos. Parašas vis dar patvirtinamas, nes SHA-1 naudoja daug prieš daugelį metų pasirašytų dokumentų, tačiau juo nereikėtų pasikliauti.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Šiame žiniatinklio adrese sumaišytos skirtingų abėcėlių raidės — taip dažnai imituojamas kitos svetainės pavadinimas.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Šiame žiniatinklio adrese naudojamos kitos abėcėlės raidės, kurios gali būti panašios į įprastas.
+	Thumbnail size	Miniatiūrų dydis
 	Tile scale:	Išklotinių mastelis:
 	Timed responses	Atsakymai per ribotą laiką
 	Timestamp	Laiko žyma
@@ -2070,17 +2223,22 @@ calendar weekday	Th	Kt
 	To change locked fields, also set Locked to No.	Norėdami keisti užrakintus laukus, nustatykite „Užrakinta“ į „Ne“.
 	to {n}	iki {n}
 	To:	Kam:
+	Today	Šiandien
 	Today: {date}	Šiandien: {date}
 	Toggle fit page / fit width	Perjungti puslapio / pločio pritaikymą
+	Too early	Per anksti
 	Tools panel side	Įrankių skydelio pusė
+	Tooltip	Patarimas
 	Tooltip:	Patarimas:
 	Top-level bookmarks ({n})	Aukščiausio lygio žymelės ({n})
 	TR must be a child of Table, THead, TBody, or TFoot	TR turi būti Table, THead, TBody arba TFoot antrinis elementas
+	Transform image	Transformuoti paveikslėlį
 	Trim the picture with its handles; Enter or Done applies	Apkarpykite paveikslėlį rankenėlėmis; Enter arba Atlikta pritaiko
 	Trust	Pasitikėti
 	Try the form as people filling it in will see it	Peržiūrėti formą taip, kaip ją matys pildantys žmonės
 calendar weekday	Tu	An
 	Turn upside down (180°)	Apversti aukštyn kojomis (180°)
+	two cells would both be named {name}	du langeliai būtų pavadinti {name}
 	Two-page view	Dviejų puslapių rodinys
 	Two-sided:	Dvipusis spausdinimas:
 	Two-Up (Cover Page)	Du puslapiai (viršelio puslapis)
@@ -2094,6 +2252,7 @@ signature pad	Type	Tekstu
 	Type the web address.	Įveskite žiniatinklio adresą.
 	Type your {what}.	Įveskite {what}.
 	Unchecked	Nepažymėta
+	Unchecked reads	Nepatikrinti skaitymai
 	Underline text	Pabraukti tekstą
 	Undid {label}	Atšaukta: {label}
 	Unit	Vienetas
@@ -2105,7 +2264,10 @@ signature pad	Type	Tekstu
 	Unlocked: the combined file won't be password-protected	Atrakinta: sujungtas failas nebus apsaugotas slaptažodžiu
 	Unlock…	Atrakinti…
 	Unpin	Atsegti
+	Unpin from Home	Atsegti nuo pradžios
+	Unpin tool	Atsegti įrankį
 	Unpin {folder}	Atsegti aplanką {folder}
+	Unpinned {tool} from Home	{tool} atsegtas nuo pradžios puslapio
 	Unplaced	Neįdėta
 	Unsigned signature field	Nepasirašytas parašo laukas
 	Unsigned signature field: {name}	Nepasirašytas parašo laukas: {name}
@@ -2181,6 +2343,7 @@ calendar weekday	We	Tr
 	Word count	Žodžių skaičius
 	Word counting stopped unexpectedly.	Žodžių skaičiavimas netikėtai sustojo.
 	Word count…	Žodžių skaičius…
+	Words or phrases to redact	Šalinami žodžiai ar frazės
 	Write this email?	Rašyti šį el. laišką?
 	Wrong password	Netinkamas slaptažodis
 	Wrote 1 file to {dir}	1 failas įrašytas į {dir}
@@ -2193,7 +2356,6 @@ calendar weekday	We	Tr
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Jūs peržiūrite „{from}“ {rev} versiją. Tai momentinė kopija: čia atlikti pakeitimai originalo nepaveiks.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Jūs peržiūrite pasirašytą „{from}“ versiją ({rev} versija). Tai momentinė kopija: čia atlikti pakeitimai originalo nepaveiks.
 	You can pin up to {n} folders. Unpin one first.	Galite prisegti iki {n} aplankų. Pirmiausia atsekite vieną.
-	You have version {c}. All releases are listed at {page}.	Turite versiją {c}. Visos laidos išvardytos čia: {page}.
 	You have version {c}. Download the new version from its release page.	Turite versiją {c}. Atsisiųskite naują versiją iš jos laidos puslapio.
 	Your name	Jūsų vardas
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	Metai: yyyy arba yy · mėnuo: m arba mm, pavadinimas: mmm arba mmmm · diena: d arba dd · savaitės diena: ddd arba dddd. H, h, M, s ir t yra laiko formato raidės, jų negalima naudoti atskirai: prieš raidę įrašykite {escape}, kad ji būtų rodoma kaip tekstas.
@@ -2207,10 +2369,22 @@ calendar weekday	We	Tr
 	Zoom out ({key})	Nutolinti ({key})
 	Zoom out (⌘−)	Nutolinti (⌘−)
 	Zoom to page level	Pritaikyti puslapiui
+	Zoom — type a percentage and press Enter	Mastelis – įveskite procentus ir paspauskite Enter
 	{0}: {1}	{0}: {1}
 	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	Simbolių {chars} dar negalima įrašyti į PDF: pildymo ir pasirašymo tekstui palaikomi tik Vakarų Europos simboliai. Pasirinkite skaitinį formatą, pvz., dd.mm.yyyy.
 	{c} of {n}{more}	{c} iš {n}{more}
 	{dpi} pixels/inch	{dpi} pikselių colyje
+@plural	{fields} builds some field names as it runs, so those reads aren't checked.|{fields} build some field names as they run, so those reads aren't checked.	{fields} kai kuriuos laukų pavadinimus sudaro vykdymo metu, todėl šie skaitymai netikrinami.|{fields} kai kuriuos laukų pavadinimus sudaro vykdymo metu, todėl šie skaitymai netikrinami.|{fields} kai kuriuos laukų pavadinimus sudaro vykdymo metu, todėl šie skaitymai netikrinami.
+@plural	{fields} is missing from the order saved in the PDF, so other PDF viewers may not calculate it.|{fields} are missing from the order saved in the PDF, so other PDF viewers may not calculate them.	{fields} nėra PDF faile įrašytoje tvarkoje, todėl kitos PDF peržiūros programos gali jo neapskaičiuoti.|{fields} nėra PDF faile įrašytoje tvarkoje, todėl kitos PDF peržiūros programos gali jų neapskaičiuoti.|{fields} nėra PDF faile įrašytoje tvarkoje, todėl kitos PDF peržiūros programos gali jų neapskaičiuoti.
+@plural	{fields} is missing|{fields} are missing	Trūksta {fields}|Trūksta {fields}|Trūksta {fields}
+	{fields} read each other	{fields} skaito vienas kitą
+@plural	{fields} reads it|{fields} read it	{fields} jį skaito|{fields} jį skaito|{fields} jį skaito
+@plural	{field} calculates before {fields}, which it reads.|{field} calculates before {fields}, which it reads.	{field} apskaičiuojamas anksčiau už {fields}, kurį skaito.|{field} apskaičiuojamas anksčiau už {fields}, kuriuos skaito.|{field} apskaičiuojamas anksčiau už {fields}, kuriuos skaito.
+	{field} reads fields named as it runs	{field} skaito laukus, pavadinamus vykdymo metu
+	{field} reads its own value	{field} skaito savo paties reikšmę
+	{field} reads no other field	{field} neskaito jokio kito lauko
+	{field} reads {fields}	{field} skaito {fields}
+@plural	{field} reads {fields}, which the form doesn't have.|{field} reads {fields}, which the form doesn't have.	{field} skaito {fields}, kurio formoje nėra.|{field} skaito {fields}, kurių formoje nėra.|{field} skaito {fields}, kurių formoje nėra.
 	{field}: {e}	Laukas {field}: {e}
 	{file} is too large for a stamp (at most {n} MB)	Failas {file} per didelis antspaudui (leidžiama iki {n} MB)
 	{folder} is already pinned to Home	Aplankas {folder} jau prisegtas prie pradžios rodinio
@@ -2225,6 +2399,7 @@ calendar weekday	We	Tr
 	{month} {day}, {y}	{y} m. {month} {day} d.
 	{month} {y}	{y} m. {month}
 	{msg} to {dir}	{msg} į {dir}
+	{names} and {last}	{names} ir {last}
 	{name} (default)	{name} (numatytasis)
 	{name} can't be combined: {why}	{name} nepavyko sujungti: {why}
 	{name} has no action	{name} neturi veiksmo
@@ -2235,16 +2410,19 @@ calendar weekday	We	Tr
 	{name}: choosing images arrives on the web with file pickers for images	{name}: žiniatinklio versijoje paveikslėlius bus galima pasirinkti įdiegus jų failų pasirinkimą
 	{name}: the {other} action isn't supported yet	{name}: veiksmas {other} dar nepalaikomas
 @plural	{n} byte|{n} bytes	{n} baitas|{n} baitai|{n} baitų
+@plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} skaičiavimas dabar naudoja naują pavadinimą.|{n} skaičiavimai dabar naudoja naują pavadinimą.|{n} skaičiavimų dabar naudoja naują pavadinimą.
 @plural	{n} comment|{n} comments	{n} komentaras|{n} komentarai|{n} komentarų
 	{n} contributors · {c} commits	Bendraautorių: {n} · pakeitimų įrašų: {c}
 	{n} days ago	Prieš {n} d.
 	{n} differences found	Rasta skirtumų: {n}
 @plural	{n} field name collides with earlier files and will be renamed: {list}|{n} field names collide with earlier files and will be renamed: {list}	{n} lauko pavadinimas sutampa su ankstesniuose failuose esančių laukų pavadinimais ir bus pervadintas: {list}|{n} laukų pavadinimai sutampa su ankstesniuose failuose esančių laukų pavadinimais ir bus pervadinti: {list}|{n} laukų pavadinimų sutampa su ankstesniuose failuose esančių laukų pavadinimais ir bus pervadinta: {list}
+@plural	{n} field shows an old value|{n} fields show old values	{n} laukas rodo seną reikšmę|{n} laukai rodo senas reikšmes|{n} laukų rodo senas reikšmes
 	{n} fields selected	Pažymėta laukų: {n}
 @plural	{n} field|{n} fields	{n} laukas|{n} laukai|{n} laukų
 	{n} files done	Apdorota failų: {n}
 	{n} files need attention	Dėmesio reikia failams: {n}
 @plural	{n} file|{n} files	{n} failas|{n} failai|{n} failų
+@plural	{n} formula reads a field the form doesn't have|{n} formulas read fields the form doesn't have	{n} formulė skaito lauką, kurio formoje nėra|{n} formulės skaito laukus, kurių formoje nėra|{n} formulių skaito laukus, kurių formoje nėra
 @plural	{n} image optimized|{n} images optimized	Optimizuotas {n} paveikslėlis|Optimizuoti {n} paveikslėliai|Optimizuota {n} paveikslėlių
 	{n} instances	Egzempliorių: {n}
 	{n} issues	Problemų: {n}
@@ -2252,6 +2430,8 @@ calendar weekday	We	Tr
 	{n} marks	Žymų: {n}
 	{n} match(es) marked for redaction.	Šalinimui pažymėta atitikmenų: {n}.
 	{n} measurements use an unsupported format and are left out.	Neįtraukti {n} matavimai, nes jų formatas nepalaikomas.
+@plural	{n} more field calculates too early.|{n} more fields calculate too early.	Dar {n} laukas apskaičiuojamas per anksti.|Dar {n} laukai apskaičiuojami per anksti.|Dar {n} laukų apskaičiuojama per anksti.
+@plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	Dar {n} formulė skaito trūkstamą lauką.|Dar {n} formulės skaito trūkstamus laukus.|Dar {n} formulių skaito trūkstamus laukus.
 @plural	{n} object selected|{n} objects selected	Pažymėtas {n} objektas|Pažymėti {n} objektai|Pažymėta {n} objektų
 	{n} pages	Puslapių: {n}
 	{n} pages and no bookmarks	Puslapių: {n}, žymelių nėra
@@ -2259,6 +2439,7 @@ calendar weekday	We	Tr
 	{n} pages selected.	Pažymėta puslapių: {n}.
 @plural	{n} page|{n} pages	{n} puslapis|{n} puslapiai|{n} puslapių
 @plural	{n} pixel|{n} pixels	{n} pikselis|{n} pikseliai|{n} pikselių
+@plural	{n} reply|{n} replies	{n} atsakymas|{n} atsakymai|{n} atsakymų
 @plural	{n} result|{n} results	{n} rezultatas|{n} rezultatai|{n} rezultatų
 	{n} selected	Pažymėta: {n}
 	{n} tags	Žymų: {n}

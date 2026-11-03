@@ -42,11 +42,14 @@
 	a bookmark cannot be moved inside itself	zaznamka ni mogoče premakniti vase
 	A button	Gumb
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Odprtokodna aplikacija za PDF, razvita po postopku clean-room in napisana v jeziku Rust. MIT OR Apache-2.0.
+	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	stolpec je preozek: razširite območje, stolpcu dajte več širine ali uporabite manj stolpcev ali manjši razmik med stolpci
 	A diagonal CONFIDENTIAL watermark on every page.	Diagonalni vodni žig ZAUPNO na vsaki strani.
 	a document must keep at least one page	dokument mora obdržati vsaj eno stran
 	A document needs at least one page: copy instead	Dokument mora imeti vsaj eno stran: namesto tega kopirajte
+	a field named {name} already exists	polje z imenom {name} že obstaja
 	A form field has additional actions	Polje obrazca ima dodatna dejanja
 	A link	Povezava
+	A picture covers page {pages} (a scan?), so the background won't show there.	Stran, ki jo prekriva slika (skeniranje?): {pages}; ozadje tam ne bo vidno.
 	A script	Skript
 	A selected field has no widget on any page, so the fields can't be edited together.	Izbrano polje nima gradnika na nobeni strani, zato polj ni mogoče urejati skupaj.
 	A stream refers to an external file	Tok se sklicuje na zunanjo datoteko
@@ -103,6 +106,7 @@
 	Add dot	Dodaj piko
 	Add drawing	Dodaj risbo
 	Add field	Dodaj polje
+	Add fields	Dodaj polja
 	Add file attachment	Dodaj priponko
 	Add files to combine	Dodaj datoteke za združitev
 	Add files…	Dodaj datoteke…
@@ -138,6 +142,7 @@
 	Add strikethrough	Dodaj prečrtanje
 	Add text	Dodaj besedilo
 	Add text box	Dodaj besedilni okvir
+	Add text field table	Dodaj tabelo besedilnih polj
 	Add the choices people pick from.	Dodajte možne izbire.
 	Add the files to combine	Dodajte datoteke za združevanje
 	Add the PDFs to combine	Dodajte datoteke PDF za združitev
@@ -150,6 +155,7 @@
 	Add {what}	Dodaj {what}
 	Added 1 comment	1 komentar dodan
 	Added more than once	Večkrat dodano
+	Added text	Dodano besedilo
 	Added the first {n} files in {folder}	Dodanih je prvih {n} datotek iz mape {folder}
 	Added the first {n} PDFs in {folder}	Dodanih je prvih {n} datotek PDF v mapi {folder}
 	Added {n} comments	Dodanih komentarjev: {n}
@@ -162,6 +168,7 @@
 	AI assistant	Pomočnik za UI
 	Algorithm	Algoritem
 	Align fields	Poravnaj polja
+	Alignment	Poravnava
 	All annotations are tagged	Vse opombe so označene
 	All document contents	Vsa vsebina dokumenta
 	All document contents except metadata	Vsa vsebina dokumenta razen metapodatkov
@@ -187,6 +194,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Nadomestno besedilo na elementu brez vsebine strani ni nikoli dosegljivo. Odstranite ga ali element povežite z vsebino.
 	Alternate text should not hide annotation	Nadomestno besedilo ne bi smelo skriti opombe
 	Alternate text that will never be read	Nadomestno besedilo nikoli ne bo prebrano
+	Always use my default zoom and page layout	Vedno uporabi moje privzeto povečanje in postavitev strani
 	An action is already running	Dejanje že poteka
 	An action with this name already exists.	Dejanje s tem imenom že obstaja.
 	An embedded file has no AFRelationship	Vdelana datoteka nima AFRelationship
@@ -211,10 +219,12 @@
 	Apply redactions	Uveljavi počrnitev
 	Apply redactions…	Uveljavi počrnitev…
 	Apply scale	Uporabi merilo
+	Applying a scale switches units to m / mm.	Z uporabo merila se enote preklopijo na m / mm.
 	Appropriate nesting	Ustrezno gnezdenje
 	April	april
 	Arbitrary Mask	Poljubna maska
 	Archive documents	Arhiviraj dokumente
+	Arrange image	Uredi sliko
 	Ask about this document	Vprašaj o tem dokumentu
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Vpraša GitHub za najnovejšo izdajo. Ničesar se ne prenese ali namesti samodejno.
 	Associated with content	Povezano z vsebino
@@ -222,7 +232,10 @@
 	At least one signature is invalid.	Vsaj en podpis je neveljaven.
 	At most	Največ
 	Attach a file	Pripni datoteko
+	Attach a file…	Priloži datoteko…
 	Attach file	Pripni datoteko
+	Attach {name}	Priloži {name}
+	Attaching files is not available on the web yet	Prilaganje datotek na spletu še ni na voljo
 	Attachment	Priponka
 	Attachments	Priponke
 	Attachments Panel and Page	Razdelek in stran s priponkami
@@ -238,6 +251,7 @@
 	Back	Nazaj
 	Back side only	Samo hrbtna stran
 	Back to all tools	Nazaj na vsa orodja
+	Back to Prepare a form	Nazaj na Pripravi obrazec
 	Back to the document	Nazaj na dokument
 	background	ozadje
 	Basic constraints	Osnovne omejitve
@@ -259,8 +273,11 @@
 	Border Color:	Barva obrobe:
 	Borders and Colors	Obrobe in barve
 	Box	Okvir
+	Bring forward	Premakni naprej
+	Bring to front	Postavi v ospredje
 	Bring your own model (off by default)	Uporabite lasten model (privzeto izklopljeno)
 	Browser's print dialog	Pogovorno okno za tiskanje v brskalniku
+	Bulleted list	Označen seznam
 	Butt	Raven rob
 	Button	Gumb
 	Button is checked by default	Gumb je privzeto označen
@@ -268,12 +285,14 @@
 	Button Style:	Slog gumba:
 	Buttons with the same name and value are selected in unison	Izbirni gumbi z istim imenom in vrednostjo se izberejo hkrati
 	Bytes	Bajti
+	Calculation order	Vrstni red izračunov
 	Calibrate from two points	Umeri z dvema točkama
 	Callout	Oblaček
 	Can't be read: {e}	Ni mogoče prebrati: {e}
 	Cancelled	Preklicano
 	Cancelling…	Preklicevanje…
 	Case-sensitive	Razlikuj velike in male črke
+	CCITT Group 4	CCITT skupina 4
 	Center Footer Text	Besedilo noge na sredini
 	Center Header Text	Besedilo glave na sredini
 	Center horizontally	Na sredino vodoravno
@@ -324,8 +343,8 @@
 	CheckBox	Potrditveno polje
 	Checkbox	Potrditveno polje
 	Checked	Označeno
-	Checking for a newer version…	Preverjanje za novejšo različico…
 	Checking Options ({on} of 32 in all categories)	Možnosti preverjanja ({on} od 32 v vseh kategorijah)
+	Checking pages…	Preverjanje strani…
 	Checkmark	Kljukica
 	Choose a folder for the exported files	Izberite mapo za izvožene datoteke
 	Choose a folder for the extracted pages	Izberite mapo za izvlečene strani
@@ -346,6 +365,7 @@
 	Clear all	Počisti vse
 	Clear form	Počisti obrazec
 	Clear redaction marks	Počisti oznake za počrnitev
+	Clear search	Počisti iskanje
 	Clear selection / close find	Počisti izbor / zapri iskanje
 	Click on the page to add a {tool}, or drag to set its size	Kliknite na stran, da dodate: {tool}, ali nastavite velikost
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Kliknite na stran, da dodate besedilo; vsak klik začne nov okvir, ✓ ga zaključi. Elemente premikate z vlečenjem, velikost spremenite z vlečenjem vogala, besedilo uredite z dvoklikom.
@@ -363,12 +383,17 @@
 	Collapse all	Strni vse
 	Collapse all bookmarks	Strni vse zaznamke
 	Collapse all pages	Strni vse strani
+	Collapse all tools	Strni vsa orodja
 	Collapse tag	Strni oznako
 	Color contrast	Barvni kontrast
 	Color Images	Barvne slike
 	Color Spaces	Barvni prostori
 	Colours are remapped while rendering; the document itself never changes.	Barve se spremenijo pri izrisovanju; sam dokument se nikoli ne spremeni.
 	Column select	Izbira stolpcev
+	Column spacing	Razmik med stolpci
+	Column widths	Širine stolpcev
+	Column {n}	Stolpec {n}
+	Columns	Stolpci
 	Comb of	Glavnik za
 	Comb of characters	Glavnik znakov
 	Combine files	Združi datoteke
@@ -389,6 +414,7 @@
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Komentarji, povezave in polja morajo biti v drevesu oznak, da jih podporne tehnologije izgovorijo. Označite opombe.
 	Commit selected value immediately	Takoj potrdi izbrano vrednost
 	Common Properties	Skupne lastnosti
+	Common scales	Pogosta merila
 	Compare Files	Primerjava datotek
 	Compare files	Primerjaj datoteke
 	Compare files…	Primerjaj datoteke…
@@ -418,7 +444,6 @@
 	Correct recognized text	Popravi prepoznano besedilo
 	Could not save: {e}	Shranjevanje ni uspelo: {e}
 	Couldn't add {name}: {e}	Datoteke {name} ni bilo mogoče dodati: {e}
-	Couldn't check for updates: {e}	Posodobitev ni bilo mogoče preveriti: {e}
 	Couldn't combine files: {e}	Datotek ni bilo mogoče združiti: {e}
 	Couldn't copy the image: {e}	Slike ni bilo mogoče kopirati: {e}
 	Couldn't create a PDF: {e}	PDF-ja ni bilo mogoče ustvariti: {e}
@@ -452,6 +477,7 @@
 	Counterclockwise 90 degrees	90 stopinj v levo
 	Counting words… {n} pages read	Štetje besed… prebrane strani: {n}
 	Country/Region	Država/regija
+	Create & Edit	Ustvarjanje in urejanje
 	Create a new Digital ID (self-signed, saved to a password-protected file)	Ustvari novo digitalno identiteto (samopodpisano, shranjeno v datoteko, zaščiteno z geslom)
 	Create a PDF	Ustvari PDF
 	Create accessibility report	Ustvari poročilo o dostopnosti
@@ -480,6 +506,7 @@
 	Creates 1 file from {n} pages.	Ustvari 1 datoteko iz strani: {n}.
 	Creates {f} files from {n} pages.	Ustvari datoteke: {f}, iz strani: {n}.
 	Credit Cards	Kreditne kartice
+	Crop	Obreži
 	Crop (% trimmed from each side)	Obreži (% odrezano z vsake strani)
 	Crop Image	Obreži sliko
 	Crop page	Obreži stran
@@ -494,6 +521,7 @@ key	Ctrl	Ctrl
 	Custom stamps arrive on the web with file pickers for images	Lastni žigi bodo v spletni različici na voljo z izbirniki slikovnih datotek
 	Custom text:	Besedilo po meri:
 	Custom:	Po meri:
+	Customize & Automate	Prilagajanje in avtomatizacija
 	Cut and stack	Razreži in zloži
 	Cut Image	Izreži sliko
 	Cut marks	Rezalne oznake
@@ -515,6 +543,8 @@ key	Ctrl	Ctrl
 	Default zoom	Privzeto povečanje
 	Default:	Privzeto:
 key	Delete	Delete
+	Delete attachment	Izbriši prilogo
+	Delete attachment {key}	Izbriši prilogo {key}
 	Delete bookmark	Izbriši zaznamek
 	Delete comment	Izbriši komentar
 	Delete content	Izbriši vsebino
@@ -530,6 +560,7 @@ key	Delete	Delete
 	Delete selected fields	Izbriši izbrana polja
 	Delete selected pages (Organize)	Izbriši izbrane strani (Organiziraj)
 	Delete stamp	Izbriši žig
+	Delete the selected pages	Izbriši izbrane strani
 	Delete {o}	Izbriši: {o}
 	Describe the figure	Opišite sliko
 	Detect form fields	Zaznaj polja obrazca
@@ -561,6 +592,7 @@ key	Delete	Delete
 	Discard User Data	Zavrzi uporabniške podatke
 	Display theme	Tema prikaza
 	Distinguished name	Razločevalno ime
+	Distribute evenly	Enakomerno porazdeli
 	Distribute fields	Porazdeli polja
 	DN: 	DN: 
 	Document actions	Dejanja dokumenta
@@ -584,12 +616,14 @@ key	Delete	Delete
 	Documents and view	Dokumenti in pogled
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Dokumenti z več kot 20 stranmi potrebujejo zaznamke za navigacijo. Dodajte zaznamke za glavne razdelke.
 	Don't save	Ne shrani
+	Don't show again	Ne prikaži več
 	Done adding text	Dodajanje besedila končano
 	Downloaded {name}	Preneseno: {name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	Prenesen {n} PDF|Prenesena {n} PDF-ja|Preneseni {n} PDF-ji|Prenesenih {n} PDF-jev
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Prenos priponk v spletni različici pride z M3.10 (pripravljenih bajtov: {n})
 	Downsample to	Zmanjšaj vzorčenje na
 	DPI sets the printed page size without resampling the image.	DPI določa velikost natisnjene strani brez ponovnega vzorčenja slike.
+	Drag a field to move it, or select it and press {up} or {down}.	Polje premaknete tako, da ga povlečete, ali pa ga izberite in pritisnite {up} ali {down}.
 	Drag a rectangle around the area to copy	Povlecite pravokotnik okoli območja, ki ga želite kopirati
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Povlecite pravokotnik na strani, da jo obrežete; dvokliknite stran za nastavitev okvirjev strani
 	Drag a rectangle to create a link; double-click a link to edit it	Povlecite pravokotnik, da ustvarite povezavo; dvokliknite povezavo, da jo uredite
@@ -626,6 +660,7 @@ key	Delete	Delete
 	Each file holds as many of the {n} pages as fit.	Vsaka datoteka vsebuje toliko od {n} strani, kot jih gre vanjo.
 	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	Vsaka slika je izmerjena tam, kjer jo strani izrišejo; slika se zamenja le, če je rezultat manjši.
 	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	Vsaka slika enkrat, poimenovana po dokumentu in strani. Slike JPEG so shranjene nespremenjene, ostale kot PNG.
+	Earlier in calculation order	Prej v vrstnem redu izračunov
 	Earlier in tab order	Prej v vrstnem redu tabulatorja
 comment menu	Edit	Uredi
 	Edit a PDF	Uredi PDF
@@ -639,6 +674,8 @@ comment menu	Edit	Uredi
 	Edit text	Uredi besedilo
 	Edit text & images	Uredi besedilo in slike
 	Edit text…	Uredi besedilo…
+	Edit this PDF	Uredi ta PDF
+	Edit {field}'s formula	Uredi formulo polja {field}
 	Email Address	E-poštni naslov
 	Email Addresses	E-poštni naslovi
 	Embedded Files	Vdelane datoteke
@@ -654,6 +691,7 @@ key	End	End
 	Enhance camera image	Izboljšaj fotografijo s kamere
 	Enhance page	Izboljšaj stran
 	Enhance scanned file	Izboljšaj skenirano datoteko
+	Enter a scale such as 1:50.	Vnesite merilo, na primer 1:50.
 	Enter permissions password…	Vnesi geslo za dovoljenja …
 	Enter the password that opens it	Vnesite geslo, s katerim se odpre
 	Enter the permissions password to allow combining	Vnesite geslo za dovoljenja, da omogočite združevanje
@@ -663,6 +701,8 @@ key	Esc	Esc
 	Even and Odd Pages	Sode in lihe strani
 	Even pages	Sode strani
 	Even Pages Only	Samo sode strani
+	Every field calculates after the fields it reads.	Vsako polje se izračuna po poljih, ki jih bere.
+	Every field outside a loop calculates after the fields it reads.	Vsako polje zunaj zanke se izračuna po poljih, ki jih bere.
 	Every PDF in the folder	Vsak PDF v mapi
 	Every PDF in the folder and the folders inside it	Vsak PDF v mapi in v mapah v njej
 	Every PDF, image and text file in the folder	Vse datoteke PDF, slike in besedilne datoteke v mapi
@@ -677,6 +717,7 @@ key	Esc	Esc
 	Expand all	Razširi vse
 	Expand all bookmarks	Razširi vse zaznamke
 	Expand all pages	Razširi vse strani
+	Expand all tools	Razširi vsa orodja
 	Expand tag	Razširi oznako
 	Expand top-level bookmarks	Razširi zaznamke najvišje ravni
 	Explain	Razloži
@@ -695,6 +736,7 @@ key	Esc	Esc
 	Export measurements	Izvozi meritve
 	Export measurements as CSV	Izvozi meritve kot CSV
 	Export stopped: {e}	Izvoz se je ustavil: {e}
+	Export this PDF	Izvozi ta PDF
 	Export to HTML…	Izvozi v HTML…
 	Export to Image	Izvozi v sliko
 	Export to image…	Izvozi v sliko…
@@ -703,6 +745,7 @@ key	Esc	Esc
 	Export to Text	Izvozi v besedilo
 	Export to text…	Izvozi v besedilo…
 	Export to Word…	Izvozi v Word…
+	Export value	Izvozna vrednost
 	Export Value: {on}	Izvozna vrednost: {on}
 	Exported 1 image	Izvožena je 1 slika
 	Exported the text of 1 page	Izvoženo je besedilo 1 strani
@@ -714,6 +757,7 @@ key	Esc	Esc
 	Extract pages as separate files	Izvleci strani kot ločene datoteke
 	Extract pages to a new document	Izvleci strani v nov dokument
 	Extract pages…	Izvleci strani…
+	Extract the selected pages…	Izvleci izbrane strani…
 	Extracted 1 page	Izvlečena je 1 stran
 	Extracted {n} pages	Izvlečenih strani: {n}
 	Failed	Ni uspelo
@@ -722,7 +766,9 @@ scroll speed	Fast	Hitro
 	Field descriptions	Opisi polj
 	Field is used for file selection	Polje se uporablja za izbiro datoteke
 	Field list	Seznam polj
+	Field names	Imena polj
 	Field names (comma-separated)	Imena polj (ločena z vejicami)
+	field names can't contain a period: {name}	imena polj ne smejo vsebovati pike: {name}
 	Field names with + - * / and parentheses; put \\ before spaces in names.	Imena polj z + - * / in oklepaji; pred presledke v imenih postavite \\.
 	Field properties…	Lastnosti polja…
 	Field value is in range:	Vrednost polja je v obsegu:
@@ -770,12 +816,14 @@ scroll speed	Fast	Hitro
 	Find text	Poišči besedilo
 	Find text and redact	Poišči besedilo in počrni
 	Find text and redact…	Poišči besedilo in počrni…
+	Find text or tools	Poišči besedilo ali orodja
 	Find tools and commands	Poišči orodja in ukaze
 	Find tools and commands…	Poišči orodja in ukaze…
 	Find untagged content	Poišči neoznačeno vsebino
 	Finding document fonts…	Iskanje pisav dokumenta…
 	Finish or discard the text being edited before selecting several objects.	Dokončajte ali opustite urejano besedilo, preden izberete več objektov.
 	First / last page	Prva / zadnja stran
+	First row number	Številka prve vrstice
 	Fit Height	Prilagodi višini
 	Fit one full page	Prilagodi eni celi strani
 	Fit Page	Prilagodi strani
@@ -788,6 +836,7 @@ scroll speed	Fast	Hitro
 	Fit Width	Prilagodi širini
 	Fix	Popravi
 	Fix hairlines	Popravi tanke črte
+	Fix order	Popravi vrstni red
 	Fix reading order	Popravi vrstni red branja
 	Fixed what could be fixed; 1 problem remains	Popravljeno, kar je bilo mogoče; ostaja 1 težava
 	Fixed what could be fixed; {n} problems remain	Popravljeno, kar je bilo mogoče; preostalih težav: {n}
@@ -801,6 +850,7 @@ scroll speed	Fast	Hitro
 	Flip vertical	Prezrcali navpično
 	Float panel	Odtrgaj razdelek
 	Folders	Mape
+	Font	Pisava
 	Font colour:	Barva pisave:
 	Font size 0 uses automatic sizing.	Velikost pisave 0 pomeni samodejno velikost.
 	Font size:	Velikost pisave:
@@ -817,6 +867,7 @@ scroll speed	Fast	Hitro
 	Form fill-in and digital signatures	Izpolnjevanje obrazcev in digitalni podpisi
 	Format text	Oblikuj besedilo
 	Forms	Obrazci
+	Forms & Signatures	Obrazci in podpisi
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Formule in podobni nebesedilni elementi potrebujejo nadomestno besedilo. Dodajte jim nadomestno besedilo.
 	Found {n} untagged content problems.	Najdenih je {n} težav z neoznačeno vsebino.
 	From a PDF page or an image	Iz strani PDF ali slike
@@ -838,6 +889,7 @@ scroll speed	Fast	Hitro
 	Greyscale	Sivine
 	H / Space (hold)	H / preslednica (drži)
 	Hand (H)	Roka (H)
+	Hand Tool	Orodje z roko
 	Has JavaScript actions (run in M6)	Vsebuje dejanja JavaScript (izvajajo se v M6)
 	Header and footer	Glava in noga
 	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	Celice glave (TH) povedo bralniku, kaj vsebuje posamezen stolpec ali vrstica. Označite celice glave.
@@ -848,6 +900,7 @@ scroll speed	Fast	Hitro
 	Hide a field	Skrij polje
 	Hide all comments	Skrij vse komentarje
 	Hide field highlights	Skrij osvetlitev polj
+	Hide gaps to join page edges. Margins inside the PDF remain unchanged.	Skrijte razmike, da združite robove strani. Robovi znotraj PDF-ja ostanejo nespremenjeni.
 	Hide hover previews for highlights without comment text	Skrij predoglede ob lebdenju za označitve brez besedila komentarja
 	Hide layer	Skrij plast
 	Hide menu bar	Skrij menijsko vrstico
@@ -866,6 +919,7 @@ key	Home	Home
 	Identity	Identiteta
 	Image (PNG)	Slika (PNG)
 	Image field	Polje za sliko
+	Image pasted	Slika prilepljena
 	Image-only PDF	PDF samo s slikami
 	Images and text	Slike in besedilo
 	Images and text (converted to PDF)	Slike in besedilo (pretvorjeno v PDF)
@@ -876,6 +930,7 @@ key	Home	Home
 	Import {name}	Uvozi: {name}
 	Importing data arrives on the web with file pickers for data files	Uvoz podatkov bo v spletni različici na voljo z izbirniki podatkovnih datotek
 	In multiple files	V več datotekah
+	In streams that use LZW encoding, use Flate instead	V tokovih s kodiranjem LZW uporabi Flate
 	In this file	V tej datoteki
 	Includes unsaved changes	Vključuje neshranjene spremembe
 	Incorrect password. Try again.	Napačno geslo. Poskusite znova.
@@ -891,6 +946,7 @@ key	Home	Home
 	Insert Date	Vstavi datum
 	Insert Page Number	Vstavi številko strani
 	Insert pages	Vstavi strani
+	Insert pages from a file after the selection…	Vstavi strani iz datoteke za izborom…
 	Insert pages from a file…	Vstavi strani iz datoteke…
 	Insert pages from file…	Vstavi strani iz datoteke…
 	Insert pages from {name}	Vstavi strani iz: {name}
@@ -917,6 +973,7 @@ key	Home	Home
 	Item List	Seznam elementov
 	Item:	Element:
 	Items marked Ready work today.	Elementi, označeni s Pripravljeno, delujejo že danes.
+	Its script also reads fields whose names it builds as it runs, so those reads can't be checked.	Njegov skript bere tudi polja, katerih imena sestavi med izvajanjem, zato teh branj ni mogoče preveriti.
 	Its security settings don't allow copying pages	Njene varnostne nastavitve ne dovoljujejo kopiranja strani
 	January	Januar
 	JavaScript	JavaScript
@@ -924,6 +981,7 @@ key	Home	Home
 	JavaScript console…	Konzola JavaScript…
 	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript je izklopljen (Nastavitve > JavaScript).
 	JavaScript, e.g. getField("total").value	JavaScript, npr. getField("total").value
+	JBIG2 (lossless)	JBIG2 (brez izgub)
 	Join the ArtCraft community	Pridružite se skupnosti ArtCraft
 	July	Julij
 	June	Junij
@@ -939,7 +997,10 @@ key	Home	Home
 	Landscape Pages	Ležeče strani
 	Landscape pages	Ležeče strani
 	Larger pages	Večje strani
+	Larger thumbnails	Večje sličice
+	Later in calculation order	Pozneje v vrstnem redu izračunov
 	Later in tab order	Pozneje v vrstnem redu tabulatorja
+	Layer options	Možnosti plasti
 	Layers Panel and Page	Razdelek in stran s plastmi
 	Layout and Magnification	Postavitev in povečava
 	Lbl and LBody	Lbl in LBody
@@ -949,6 +1010,7 @@ key	Home	Home
 	Left Footer Text	Besedilo noge na levi
 	Left Header Text	Besedilo glave na levi
 	Left out: {names}	Izpuščeno: {names}
+	Less	Manj
 	LI must be a child of L	LI mora biti podrejen element elementa L
 	Light blue	Svetlo modra
 	Light theme	Svetla tema
@@ -961,6 +1023,8 @@ key	Home	Home
 	Link Appearance	Videz povezave
 	Link Properties	Lastnosti povezave
 	Link Type:	Vrsta povezave:
+	Link URL	URL povezave
+	Links on page	Povezave na strani
 	Links, actions and JavaScripts	Povezave, dejanja in JavaScripti
 	List box	Seznamsko polje
 	List Box Properties	Lastnosti seznamskega polja
@@ -976,8 +1040,10 @@ key	Home	Home
 	Logical Reading Order	Logični vrstni red branja
 	Looking for PDFs…	Iskanje datotek PDF…
 	Looking for printers…	Iskanje tiskalnikov…
+	Loop	Zanka
 	Low resolution	Nizka ločljivost
 	Low Resolution (150 dpi)	Nizka ločljivost (150 dpi)
+	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	Naredi dostopno
 	Make Current Properties Default	Nastavi kot privzeto
 	Make Properties Default	Lastnosti nastavi kot privzete
@@ -999,6 +1065,7 @@ key	Home	Home
 	Mark with checkmark	Označi s kljukico
 	Marked	Označeno
 	Markup	Označba
+	Marquee Zoom	Povečava z okvirjem
 	Marquee zoom	Povečava z okvirjem
 	Mask:	Maska:
 	Match field sizes	Uskladi velikosti polj
@@ -1021,8 +1088,11 @@ key	Home	Home
 	Microsoft Word (.docx)	Microsoft Word (.docx)
 	Midpoints	Središčne točke
 	minimum	najmanj
+	Missing field	Manjka polje
+	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Manjka v vrstnem redu izračunov, shranjenem v PDF-ju: drugi pregledovalniki PDF ga morda ne izračunajo.
 	Mixed	Mešano
 	Modify page	Spremeni stran
+	Monochrome Images	Enobarvne slike
 	More options	Več možnosti
 	More options:	Več možnosti:
 	More ways to add files	Več načinov dodajanja datotek
@@ -1038,17 +1108,20 @@ key	Home	Home
 	Move later	Premakni pozneje
 	Move object	Premakni objekt
 	Move objects	Premakni objekte
+	Move only what must move, so every field calculates after the fields it reads.	Premakne le tisto, kar se mora premakniti, da se vsako polje izračuna po poljih, ki jih bere.
 	Move page	Premakni stran
 	Move pages	Premakni strani
 	Move tag earlier	Premakni oznako prej
 	Move tag later	Premakni oznako pozneje
 	Move to group	Premakni v skupino
 	Move up	Premakni navzgor
+	Moves only what must move	Premakne le, kar je treba
 	Multi-line	Večvrstično
 	Multiple	Več
 	Multiple files	Več datotek
 	Multiple selection	Večkratna izbira
 	Multiple words or phrases	Več besed ali besednih zvez
+	N or {row} is the row number, {col} the column number, {seq} the cell number. With none of them, the row number goes last.	N ali {row} je številka vrstice, {col} številka stolpca in {seq} številka celice. Brez njih se številka vrstice doda na konec.
 	Name on new comments	Ime na novih komentarjih
 	Named Destinations	Poimenovani cilji
 	Navigation links	Navigacijske povezave
@@ -1089,10 +1162,13 @@ key	Home	Home
 	No differences in the text.	V besedilu ni razlik.
 	No digital IDs yet.	Digitalnih identitet še ni.
 	No documents are open	Noben dokument ni odprt
+	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Nobeno polje tega obrazca še ne izračuna svoje vrednosti. Polju dodelite izračun na zavihku Izračunaj v njegovih lastnostih in prikazalo se bo tukaj.
+	No field reads it	Nobeno polje ga ne bere
 	No file chosen	Nobena datoteka ni izbrana
 	No fill	Brez polnila
 	No fonts are referenced by the pages.	Strani se ne sklicujejo na nobeno pisavo.
 	No form fields were detected	Polj obrazca ni bilo zaznati
+	No image on clipboard to paste	V odložišču ni slike za lepljenje
 	No inaccessible scripts	Ni nedostopnih skriptov
 	No issues found	Težav ni bilo najdenih
 	No links to remove	Ni povezav za odstranitev
@@ -1100,6 +1176,7 @@ key	Home	Home
 	No matching tools	Ni ustreznih orodij
 	No model credits were built into this copy.	V to kopijo ni vgrajenih zahval modelom.
 	No openly licensed document fonts found. Load a font file.	Ni najdenih pisav dokumenta z odprto licenco. Naložite datoteko pisave.
+	No order can fix a loop. Change one of the formulas.	Noben vrstni red ne popravi zanke. Spremenite eno od formul.
 	no output folder was chosen	izhodna mapa ni bila izbrana
 	No pages match those choices	Nobena stran se ne ujema s temi izbirami
 	No pages selected	Nobena stran ni izbrana
@@ -1115,6 +1192,7 @@ key	Home	Home
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	V okvirju ni bilo najdenega podpisa. Premaknite okvir nad podpis ali povečajte občutljivost za črnilo.
 	No status has been set.	Stanje ni nastavljeno.
 	no such document	ni takega dokumenta
+	No tools match your search.	Iskanju ne ustreza nobeno orodje.
 	No unlinked web addresses were found in the text	V besedilu ni nepovezanih spletnih naslovov
 	No untagged content was found.	Neoznačene vsebine ni bilo mogoče najti.
 	no unused output name	ni prostega izhodnega imena
@@ -1125,6 +1203,7 @@ key	Home	Home
 	None — everything is allowed	Brez — vse je dovoljeno
 scroll speed	Normal	Običajno
 	Not allowed	Ni dovoljeno
+	Not in order	Ni v vrstnem redu
 	Not now	Ne zdaj
 	Not present	Ni prisotno
 	Note	Zapisek
@@ -1138,6 +1217,7 @@ scroll speed	Normal	Običajno
 	Number of pages	Število strani
 	Number pages	Oštevilči strani
 	Number pages…	Oštevilči strani…
+	Numbered list	Oštevilčen seznam
 	October	Oktober
 	Odd pages	Lihe strani
 	Odd Pages Only	Samo lihe strani
@@ -1199,6 +1279,8 @@ animation effects	On	Vklopljeni
 	Optimizing… writing the copy	Optimiziranje… zapisovanje kopije
 	Optional	Neobvezno
 	Optional: needs an AI provider you configure	Neobvezno: potrebuje ponudnika umetne inteligence, ki ga nastavite
+	Options for this reply	Možnosti tega odgovora
+	Order · top calculates first	Vrstni red · zgornje se izračuna prvo
 	Organization Name	Ime organizacije
 	Organizational Unit	Organizacijska enota
 	Organize pages	Organiziraj strani
@@ -1206,6 +1288,7 @@ animation effects	On	Vklopljeni
 	Other colour…	Druga barva…
 	Other elements alternate text	Nadomestno besedilo drugih elementov
 	Other elements that require alternate text	Drugi elementi, ki zahtevajo nadomestno besedilo
+	Other options	Druge možnosti
 	Outdent	Zmanjšaj zamik
 	Outline colour:	Barva obrobe:
 	Output appears here.	Izhod se prikaže tukaj.
@@ -1231,9 +1314,12 @@ animation effects	On	Vklopljeni
 	Page size	Velikost strani
 	Page Sizing & Handling	Velikost in obravnava strani
 	Page thumbnails	Pregled strani
+	Page tools	Orodja za strani
 	Page transitions	Prehodi strani
 	Page will not cause screen flicker	Stran ne bo povzročala utripanja zaslona
 	Page {label}	Stran {label}
+	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Stran se je spremenila po dodajanju ozadja, zato njeno lastno belo polnilo ostane izklopljeno: {pages}. Na belem papirju je videti enako.
+	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Stran z lastnim belim polnilom, ki bi skrilo ozadje: {pages}. Zamenjaj
 	Page {p} of {n}	Stran {p} od {n}
 	pages	strani
 	Pages counted	Preštete strani
@@ -1246,15 +1332,19 @@ animation effects	On	Vklopljeni
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Strani, ki so samo slike besedila, ni mogoče prebrati na glas ali iskati. Prepoznajte besedilo (OCR), da dodate besedilno plast.
 	Pages to Print	Strani za tiskanje
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Strani s povezavami, komentarji ali polji naj se pomikajo s tabulatorjem po vrstnem redu strukture. Popravek nastavi vrstni red tabulatorja vsake strani na Uporabi strukturo dokumenta.
+	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Strani so se spremenile po dodajanju ozadja, zato njihova lastna bela polnila ostanejo izklopljena: {pages}. Na belem papirju so videti enako.
+	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Strani z lastnim belim polnilom, ki bi skrilo ozadje: {pages}. Zamenjaj
 	Pages:	Strani:
 	Pages: {k} of {n}	Strani: {k} od {n}
 	Paper:	Papir:
+	Paragraph spacing	Razmik med odstavki
 	Part of	Del
 	Passed	Uspešno
 	Password protection will be applied when you save	Zaščita z geslom bo uporabljena ob shranjevanju
 	Password required	Potrebno je geslo
 	Password security	Varnost z geslom
 	Password-protected	Zaščiteno z geslom
+	Paste	Prilepi
 	Paste after	Prilepi za
 	Paste pages	Prilepi strani
 	Patterns	Vzorci
@@ -1272,7 +1362,6 @@ animation effects	On	Vklopljeni
 	PdfCraft on GitHub	PdfCraft na GitHubu
 	PdfCraft web page	Spletna stran PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft deluje brez povezave. Brez telemetrije, brez računa in brez obdelave v oblaku, razen če dodate ponudnika.
-	PdfCraft {c} is up to date.	PdfCraft {c} je posodobljen.
 	PdfCraft {v} is available.	Na voljo je PdfCraft {v}.
 	People may need more time to respond. Check that nothing has a time limit.	Ljudje bodo morda potrebovali več časa za odziv. Preverite, da nič nima časovne omejitve.
 	Permissions password	Geslo za dovoljenja
@@ -1280,14 +1369,23 @@ animation effects	On	Vklopljeni
 	Phone Number	Telefonska številka
 	Phone Numbers	Telefonske številke
 	Pick a tool in the quick bar, or type above.	Izberite orodje v hitri vrstici ali tipkajte zgoraj.
+	Pictures cover pages {pages} (scans?), so the background won't show there.	Strani, ki jih prekrivajo slike (skeniranja?): {pages}; ozadje tam ne bo vidno.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Slike potrebujejo nadomestno besedilo, ki jih opisuje, ali pa morajo biti označene kot dekorativne. Vsaki sliki dodajte nadomestno besedilo.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	Prepoznane bodo tudi slike na teh straneh; besede, ki so že v besedilu strani, ne bodo dodane znova
+	Pin	Pripni
 	Pin a folder to Home	Pripni mapo na domačo stran
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Pripnite mapo, da se tukaj prikažejo njeni najnovejši PDF-ji, na primer tja, kamor shranjuje vaš skener ali sinhroniziran pogon v oblaku.
 	Pin a folder…	Pripni mapo…
+	Pin a tool…	Pripni orodje…
 	Pin folder to Home…	Pripni mapo na domačo stran…
+	Pin to Home	Pripni na domov
+	Pin tools to Home	Pripni orodja na domov
+	Pin your favorite tools here for quick access.	Tukaj pripnite svoja priljubljena orodja za hiter dostop.
+	Pinned	Pripeto
 	Pinned folders need the desktop app	Pripete mape zahtevajo namizno aplikacijo
+	Pinned Tools	Pripeta orodja
 	Pinned {folder} to Home	Mapa {folder} je pripeta na domačo stran
+	Pinned {tool} to Home	{tool} pripeto na domačo stran
 	Place saved {what}	Postavi shranjeno: {what}
 	Plain text in reading order; pages are separated by form feeds.	Navadno besedilo v vrstnem redu branja; strani so ločene z znaki za prelom strani.
 	Planned	Načrtovano
@@ -1329,6 +1427,7 @@ animation effects	On	Vklopljeni
 	Print production	Priprava za tisk
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Natisnite enostransko. Liste ohranite v vrstnem redu, razrežite po oznakah, nato zložite kupčke od leve proti desni, od zgoraj navzdol.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage ali LastPage
+	Printer default	Privzeto tiskalnika
 	Printer paper and scaling may differ. Check driver settings.	Papir in merilo tiskalnika se lahko razlikujeta. Preverite nastavitve gonilnika.
 	Printer properties	Lastnosti tiskalnika
 	Printing allowed	Tiskanje dovoljeno
@@ -1336,6 +1435,7 @@ animation effects	On	Vklopljeni
 	Private data of other applications	Zasebni podatki drugih programov
 	product (x)	zmnožek (x)
 	Properties…	Lastnosti…
+	Protect & Standardize	Zaščita in standardizacija
 	Protect a PDF	Zaščiti PDF
 	Protect Using Password	Zaščiti z geslom
 	Protect using password…	Zaščiti z geslom…
@@ -1351,9 +1451,14 @@ animation effects	On	Vklopljeni
 	Read mode	Način branja
 	Read Only	Samo za branje
 	Reading colours	Barve za branje
+	Reading the printer's settings…	Branje nastavitev tiskalnika…
+	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Bere {names}, ki ga berejo nazaj. Noben vrstni red ne popravi zanke: spremenite eno od formul.
+	Reads {name}, which calculates later, so it shows an old value.	Bere {name}, ki se izračuna pozneje, zato prikazuje staro vrednost.
+	Reads {name}, which the form doesn't have, so it gets no value there.	Bere {name}, ki ga v obrazcu ni, zato od tam ne dobi vrednosti.
 	Reason	Razlog
 	Reason: 	Razlog: 
 	Recent colours	Nedavne barve
+	Recent files to keep	Recent files to keep
 	Recognize Text	Prepoznaj besedilo
 	Recognize text	Prepoznaj besedilo
 	Recognize text in multiple files…	Prepoznaj besedilo v več datotekah…
@@ -1392,6 +1497,7 @@ animation effects	On	Vklopljeni
 	Remove background	Odstrani ozadje
 	Remove checkmark	Odstrani kljukico
 	Remove Crop	Odstrani obrezovanje
+	Remove crop	Odstrani obrezovanje
 	Remove from Recent	Odstrani iz nedavnih
 	Remove header & footer	Odstrani glavo in nogo
 	Remove hidden information	Odstrani skrite podatke
@@ -1415,6 +1521,7 @@ animation effects	On	Vklopljeni
 	Removed 1 link	Odstranjena je 1 povezava
 	Removed {n} hidden items. Save to remove them from the file.	Odstranjenih skritih elementov: {n}. Shranite, da jih odstranite iz datoteke.
 	Removed {n} links	Odstranjene povezave: {n}
+	Removing the background puts the page's own backdrop back.	Odstranitev ozadja povrne lastno belo polnilo strani.
 	Rename bookmark	Preimenuj zaznamek
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Izris: hayro (bootstrap) · Vmesnik: egui · Ikone: Lucide (ISC) · Pisave: Inter, JetBrains Mono, Dancing Script (OFL)
 	Reopen Closed Tab	Znova odpri zaprti zavihek
@@ -1445,9 +1552,12 @@ animation effects	On	Vklopljeni
 	Reset columns	Ponastavi stolpce
 	Reset page size	Ponastavi velikost strani
 	Reset panel layout	Ponastavi postavitev razdelkov
+	Reset to Initial Visibility	Ponastavi na začetno vidnost
 	Reset to printer defaults	Ponastavi na privzete nastavitve tiskalnika
+	Reshape comment	Spremeni obliko komentarja
 	Resize comment	Spremeni velikost komentarja
 	Resize window to initial page	Prilagodi velikost okna začetni strani
+	Restore the last view (page, zoom and page display) when a document is opened again	Ob ponovnem odprtju dokumenta obnovi zadnji pogled (stran, povečavo in prikaz strani)
 	Restrictions	Omejitve
 	Restrictions lifted	Omejitve so odpravljene
 	Retain existing	Ohrani obstoječe
@@ -1458,6 +1568,7 @@ animation effects	On	Vklopljeni
 	Revert changes	Razveljavi spremembe
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	Povrniti na prej shranjeno različico dokumenta „{name}“? Sprememb od takrat pozneje ni mogoče razveljaviti.
 	Reverted to the last saved version	Povrnjeno na zadnjo shranjeno različico
+	Review & Compare	Pregled in primerjava
 	Review History	Zgodovina pregledov
 	Revisions	Revizije
 	Rich Text Format (.rtf)	Rich Text Format (.rtf)
@@ -1477,11 +1588,14 @@ animation effects	On	Vklopljeni
 	Rotate pages clockwise	Zavrti strani desno
 	Rotate pages counterclockwise	Zavrti strani levo
 	Rotate pages…	Zavrti strani…
+	Rotate the selected pages clockwise	Zavrti izbrane strani v smeri urnega kazalca
+	Rotate the selected pages counterclockwise	Zavrti izbrane strani v nasprotni smeri urnega kazalca
 	Rotate view	Zavrti pogled
 	Rotate view clockwise	Zavrti pogled desno
 	Rotate view clockwise ({key})	Zavrti pogled v smeri urnega kazalca ({key})
 	Rotate view clockwise (⇧⌘+)	Zavrti pogled desno (⇧⌘+)
 	Rotate view counterclockwise	Zavrti pogled levo
+	Row spacing	Razmik med vrsticami
 	Run	Zaženi
 	Run a JavaScript	Zaženi JavaScript
 	Run form script	Zaženi skript obrazca
@@ -1524,11 +1638,13 @@ animation effects	On	Vklopljeni
 	Saved {place}: {before} → {after} (not smaller){detail}	Shranjeno {place}: {before} → {after} (ni manjše){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Shranjeno {place}: {before} → {after} ({pct}% manjše){detail}
 	Saved, but reopening failed: {e}	Shranjeno, vendar ponovno odpiranje ni uspelo: {e}
+	Scale	Merilo
 	Scale relative to target page	Merilo glede na ciljno stran
 	Scan	Skeniraj
 	Scan & OCR	Skeniranje in OCR
 	Screen flicker	Utripanje zaslona
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Bralniki zaslona izberejo glas glede na jezik dokumenta. Nastavite ga v Lastnosti dokumenta > Napredno > Jezik.
+	Script	Skript
 	Script Name:	Ime skripta:
 	Script:	Skript:
 	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	Vsebina s skripti mora biti uporabna s tipkovnico in podpornimi tehnologijami. Preverite skripte dokumenta.
@@ -1539,10 +1655,13 @@ animation effects	On	Vklopljeni
 	Scroll tabs left	Pomakni zavihke levo
 	Scroll tabs right	Pomakni zavihke desno
 	Search comments	Išči po komentarjih
+	Search tools and commands	Poišči orodja in ukaze
 	Search tools and commands…	Poišči orodja in ukaze…
+	Search tools…	Išči orodja…
 	Searchable Image (Exact)	Iskalna slika (natančna)
 	Searching… {s} of {p} pages	Iskanje… {s} od {p} strani
 	Searching… {s}/{p}	Iskanje… {s}/{p}
+	Search…	Išči…
 	Security method	Varnostna metoda
 	Security properties	Varnostne lastnosti
 	Security properties…	Varnostne lastnosti…
@@ -1564,9 +1683,13 @@ animation effects	On	Vklopljeni
 	Select page {label}	Izberi stran {label}
 	Select pages	Izberi strani
 	Select the items to remove from this document.	Izberite elemente, ki jih želite odstraniti iz tega dokumenta.
+	Select Tool	Orodje za izbiro
+	Select tools to display on your Home page for quick access.	Izberite orodja za prikaz na domači strani za hiter dostop.
 	Select Trigger:	Izberite sprožilec:
 	Selected image files: {count}	Izbrane slikovne datoteke: {count}
 	Self-signed	Samopodpisano
+	Send backward	Premakni nazaj
+	Send to back	Postavi v ozadje
 	Sending sheet {s} of {n} to {printer}…	Pošiljanje lista {s} od {n} na {printer}…
 	Sending to {printer}…	Pošiljanje na {printer}…
 	Sent to {printer}: {msg}	Poslano na {printer}: {msg}
@@ -1577,6 +1700,7 @@ animation effects	On	Vklopljeni
 	Set Alternate Text	Nastavi nadomestno besedilo
 	Set alternate text	Nastavi nadomestno besedilo
 	Set bookmark destination	Nastavi cilj zaznamka
+	Set calculation order	Nastavi vrstni red izračunov
 	Set document title	Nastavi naslov dokumenta
 	Set Fields to Same Size	Nastavi polja na enako velikost
 	Set layer visibility	Nastavi vidnost plasti
@@ -1609,12 +1733,16 @@ key	Shift	Shift
 	ships in milestone {m}	izide v mejniku {m}
 	Show a basic title bar for the window buttons instead of the tab strip. GNOME doesn't draw title bars for apps, so this one doesn't follow its theme.	Prikaži preprosto naslovno vrstico za gumbe okna namesto vrstice zavihkov. GNOME aplikacijam ne riše naslovnih vrstic, zato ta ne sledi njegovi temi.
 	Show a field	Pokaži polje
+	Show a notice when a document is secured	Prikaži obvestilo, ko je dokument zaščiten
 	Show all	Pokaži vse
 	Show all comments	Pokaži vse komentarje
 	Show certificate…	Pokaži potrdilo…
 	Show cover page in two-page view	Pokaži naslovnico v dvostranskem pogledu
+	Show gaps between pages	Pokaži razmike med stranmi
 	Show layer	Pokaži plast
 	Show less	Pokaži manj
+	Show on the page which fields each field reads	Na strani pokaži, katera polja bere posamezno polje
+	Show Page Edge Shadows	Prikaži sence robov strani
 	Show password	Pokaži geslo
 	Show Report	Pokaži poročilo
 	Show the accessibility report	Pokaži poročilo o dostopnosti
@@ -1622,6 +1750,7 @@ key	Shift	Shift
 	Show {n} more	Pokaži še {n}
 	Shown while the pointer is over a mark.	Prikazano, ko je kazalec nad oznako.
 	Shrink oversized pages	Skrči prevelike strani
+	Shrink the page content to make room for the header and footer	Pomanjšaj vsebino strani, da bo prostor za glavo in nogo
 	Side by side	Drug ob drugem
 	Side panels	Stranski razdelki
 	Sign	Podpiši
@@ -1655,6 +1784,7 @@ key	Shift	Shift
 	Slash	Poševnica
 scroll speed	Slow	Počasi
 	Smaller pages	Manjše strani
+	Smaller thumbnails	Manjše sličice
 	Snap to drawing	Pripni na risbo
 	Snapping	Pripenjanje
 	Social Security Number	Številka socialnega zavarovanja
@@ -1662,6 +1792,7 @@ scroll speed	Slow	Počasi
 	Solid	Polno
 	Some bookmarks are not shown here: the panel lists a limited number, nested a limited depth.	Nekateri zaznamki tu niso prikazani: seznam prikaže omejeno število zaznamkov do omejene globine gnezdenja.
 	Some content could not be classified safely and was kept in the count.	Nekatere vsebine ni bilo mogoče zanesljivo razvrstiti, zato je ostala vključena v štetje.
+	Some names are built as it runs	Nekatera imena se sestavijo med izvajanjem
 	Some page content couldn't be read; snapping uses the rest.	Nekaterih vsebin strani ni bilo mogoče prebrati; pripenjanje uporablja preostale.
 	Some pages contain no countable text. Scanned images need OCR first.	Nekatere strani ne vsebujejo besedila za štetje. Optično prebrane slike najprej potrebujejo OCR.
 	Sort comments by:	Razvrsti komentarje po:
@@ -1693,10 +1824,12 @@ action wizard	Start	Začni
 	Structure Info	Podatki o strukturi
 certificate	Subject	Imetnik
 	Submit a form	Oddaj obrazec
+	Subscript	Podpisano
 	sum (+)	vsota (+)
 	Summarize	Povzemi
 	Summarize comments	Povzemi komentarje
 	Summarize Options	Možnosti povzemanja
+	Superscript	Nadpisano
 	Switch light / dark theme	Preklopi svetlo / temno temo
 	Switch to List view to change the pages it takes.	Preklopite na pogled seznama, da spremenite strani, ki jih zajame.
 	Switch to two-page view first to show the cover page	Za prikaz naslovnice najprej preklopite na dvostranski pogled
@@ -1728,8 +1861,11 @@ certificate	Subject	Imetnik
 	Text alignment:	Poravnava besedila:
 	Text box	Besedilni okvir
 	Text Color:	Barva besedila:
+	Text editing line	Vrstica za urejanje besedila
 	Text field	Besedilno polje
 	Text Field Properties	Lastnosti besedilnega polja
+	Text Field Table	Tabela besedilnih polj
+	Text field table	Tabela besedilnih polj
 	Text in images isn't found; recognise text (OCR) first.	Besedilo v slikah ni najdeno; najprej prepoznajte besedilo (OCR).
 	Text is compared word by word; the differences are shown on the new file.	Besedilo se primerja po besedah; razlike so prikazane na novi datoteki.
 	Text language is specified	Jezik besedila je določen
@@ -1739,6 +1875,7 @@ certificate	Subject	Imetnik
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Prepoznavanje besedila ni nameščeno: manjkajo njegovi modeli (zaženite `cargo xtask models` ali nastavite PDFCRAFT_MODELS).
 	Text to find	Besedilo za iskanje
 	Text to insert	Besedilo za vstavljanje
+	Text to place	Besedilo za postavitev
 	Text used as a clipping path cannot be moved with this selection.	Besedila, uporabljenega kot pot izrezovanja, s tem izborom ni mogoče premakniti.
 	Text, marks and signatures become part of the page. Other comments stay editable.	Besedilo, oznake in podpisi postanejo del strani. Drugi komentarji ostanejo urejljivi.
 	TH and TD	TH in TD
@@ -1746,6 +1883,7 @@ certificate	Subject	Imetnik
 	Thai and Arabic use regular fallback fonts when available.	Tajščina in arabščina uporabljata običajne nadomestne pisave, kadar so na voljo.
 	That didn't work: an internal error stopped it ({m}).	To ni uspelo: ustavila ga je notranja napaka ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	To ni uspelo: ustavila ga je notranja napaka ({m}). Vaši dokumenti so nespremenjeni.
+@plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Vrstni red izračunov ima {n} vnos, ki ne izračuna ničesar. »Popravi vrstni red« ga odstrani.|Vrstni red izračunov ima {n} vnosa, ki ne izračunata ničesar. »Popravi vrstni red« ju odstrani.|Vrstni red izračunov ima {n} vnose, ki ne izračunajo ničesar. »Popravi vrstni red« jih odstrani.|Vrstni red izračunov ima {n} vnosov, ki ne izračunajo ničesar. »Popravi vrstni red« jih odstrani.
 	The checker found 1 problem which may prevent the document from being fully accessible.	Preverjanje je našlo 1 težavo, ki morda preprečuje popolno dostopnost dokumenta.
 	The checker found no problems in this document.	Preverjanje v tem dokumentu ni našlo težav.
 	The checker found {n} problems which may prevent the document from being fully accessible.	Preverjanje je našlo težave: {n}, ki morda preprečujejo popolno dostopnost dokumenta.
@@ -1766,6 +1904,7 @@ certificate	Subject	Imetnik
 	The document was closed before it could be saved.	Dokument je bil zaprt, preden ga je bilo mogoče shraniti.
 	The document's security settings don't allow copying text and images	Varnostne nastavitve dokumenta ne dovolijo kopiranja besedila in slik
 	The document's security settings don't allow filling in form fields	Varnostne nastavitve dokumenta ne dovoljujejo izpolnjevanja polj obrazca
+	The document's security settings don't allow printing	Varnostne nastavitve dokumenta ne dovolijo tiskanja
 	The document's security settings don't allow this change	Varnostne nastavitve dokumenta ne dovoljujejo te spremembe
 	The existing action will be preserved.	Obstoječe dejanje bo ohranjeno.
 	The field properties could not be changed.	Lastnosti polja ni bilo mogoče spremeniti.
@@ -1783,8 +1922,10 @@ certificate	Subject	Imetnik
 	The labels are in English: the signature's font can't draw them in this language.	Oznake so v angleščini: pisava podpisa jih v tem jeziku ne more prikazati.
 	The linked PDF opened, but its named destination was not applied.	Povezani PDF se je odprl, vendar njegov poimenovani cilj ni bil uporabljen.
 	The linked PDF opened, but its page destination was out of range.	Povezani PDF se je odprl, vendar je ciljna stran zunaj obsega.
+	the name is not a plain file name	ime ni preprosto ime datoteke
 	The newest {n} of {total} PDFs	Najnovejših {n} od {total} datotek PDF
 	The operation failed.	Operacija ni uspela.
+	The order saved in the PDF needs tidying	Vrstni red, shranjen v PDF-ju, je treba urediti
 	The page has changed; select the image again	Stran se je spremenila; znova izberite sliko
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Strani so bile izvlečene, a ne izbrisane, ker se je dokument spremenil, medtem ko ste izbirali mapo.
 	the password is incorrect	geslo je napačno
@@ -1792,6 +1933,7 @@ certificate	Subject	Imetnik
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Pisave za besedilo PDF ne morejo izrisati znaka „{c}“ ({code}). Izberite podprto besedilo.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Lastne nastavitve gonilnika tiskalnika za to tiskanje: pladenj za papir, vrsta papirja, dodelava in drugo.
 	The replacement file doesn't have that many pages.	Nadomestna datoteka nima toliko strani.
+	the rows are too short: make the area taller, or use fewer rows or less row spacing	vrstice so prenizke: povečajte višino območja ali uporabite manj vrstic ali manjši razmik med vrsticami
 	The same password is tried on each file.	Isto geslo se poskusi pri vsaki datoteki.
 	The selected area has been copied ({w} × {h} pixels)	Izbrano območje je kopirano ({w} × {h} slikovnih pik)
 	The selected fields could not be found. Select them again.	Izbranih polj ni bilo mogoče najti. Izberite jih znova.
@@ -1858,6 +2000,7 @@ certificate	Subject	Imetnik
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Gonilnik tega tiskalnika ne sprejema nastavitev obojestranskega tiskanja iz drugih programov, zato velja njegova lastna nastavitev. Spremenite jo v Lastnosti…
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Ta spletni naslov meša črke iz različnih abeced, kar je pogost način posnemanja imena druge strani.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Ta spletni naslov uporablja črke iz druge abecede, ki so lahko podobne znanim črkam.
+	Thumbnail size	Velikost sličic
 	Tile scale:	Merilo ploščic:
 	Timed responses	Časovno omejeni odzivi
 	Timestamp	Časovni žig
@@ -1865,16 +2008,21 @@ certificate	Subject	Imetnik
 	To change locked fields, also set Locked to No.	Za spremembo zaklenjenih polj nastavite tudi Zaklenjeno na Ne.
 	to {n}	do {n}
 	To:	Do:
+	Today	Danes
 	Today: {date}	Danes: {date}
 	Toggle fit page / fit width	Preklopi prilagoditev strani / širini
+	Too early	Prezgodaj
 	Tools panel side	Stran podokna z orodji
+	Tooltip	Namig
 	Tooltip:	Namig:
 	Top-level bookmarks ({n})	Zaznamki najvišje ravni ({n})
 	TR must be a child of Table, THead, TBody, or TFoot	TR mora biti podrejen element elementa Table, THead, TBody ali TFoot
+	Transform image	Preoblikuj sliko
 	Trim the picture with its handles; Enter or Done applies	Obrežite sliko z ročicami; Enter ali Končano uporabi
 	Trust	Zaupanje
 	Try the form as people filling it in will see it	Preizkusite obrazec tako, kot ga bodo videli ljudje, ki ga izpolnjujejo
 	Turn upside down (180°)	Obrni na glavo (180°)
+	two cells would both be named {name}	dve celici bi imeli enako ime {name}
 	Two-page view	Dvostranski pogled
 	Two-sided:	Obojestransko:
 	Two-Up (Cover Page)	Dve strani (z naslovnico)
@@ -1888,6 +2036,7 @@ signature pad	Type	Vtipkaj
 	Type the web address.	Vnesite spletni naslov.
 	Type your {what}.	Vnesite: {what}.
 	Unchecked	Neoznačeno
+	Unchecked reads	Nepreverjena branja
 	Underline text	Podčrtaj besedilo
 	Undid {label}	Razveljavljeno: {label}
 	Unit	Enota
@@ -1899,7 +2048,10 @@ signature pad	Type	Vtipkaj
 	Unlocked: the combined file won't be password-protected	Odklenjeno: združena datoteka ne bo zaščitena z geslom
 	Unlock…	Odkleni…
 	Unpin	Odpni
+	Unpin from Home	Odpni z domače strani
+	Unpin tool	Odpni orodje
 	Unpin {folder}	Odpni: {folder}
+	Unpinned {tool} from Home	{tool} odpeto z domače strani
 	Unplaced	Nepostavljeno
 	Unsupported measurements	Nepodprte meritve
 	Update background	Posodobi ozadje
@@ -1967,6 +2119,7 @@ signature pad	Type	Vtipkaj
 	Word count	Število besed
 	Word counting stopped unexpectedly.	Štetje besed se je nepričakovano ustavilo.
 	Word count…	Število besed…
+	Words or phrases to redact	Besede ali fraze za počrnitev
 	Write this email?	Napisati to e-pošto?
 	Wrong password	Napačno geslo
 	Wrote 1 file to {dir}	V {dir} je zapisana 1 datoteka
@@ -1979,7 +2132,6 @@ signature pad	Type	Vtipkaj
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Ogledate si revizijo {rev} dokumenta „{from}“. To je posnetek: spremembe tukaj ne bodo vplivale na izvirnik.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Ogledate si podpisano različico dokumenta „{from}“ (revizija {rev}). To je posnetek: spremembe tukaj ne bodo vplivale na izvirnik.
 	You can pin up to {n} folders. Unpin one first.	Pripnete lahko do {n} map. Najprej eno odpnite.
-	You have version {c}. All releases are listed at {page}.	Imate različico {c}. Vse izdaje so navedene na {page}.
 	You have version {c}. Download the new version from its release page.	Imate različico {c}. Novo različico prenesite z njene strani izdaje.
 	Your name	Vaše ime
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy ali yy leto · m ali mm mesec · mmm ali mmmm ime meseca · d ali dd dan · ddd ali dddd dan v tednu. H, h, M, s in t so časovne črke in jih ni mogoče uporabiti samostojno: pred črko postavite {escape}, da se prikaže tako, kot je.
@@ -1993,10 +2145,22 @@ signature pad	Type	Vtipkaj
 	Zoom out ({key})	Pomanjšaj ({key})
 	Zoom out (⌘−)	Pomanjšaj (⌘−)
 	Zoom to page level	Povečaj na raven strani
+	Zoom — type a percentage and press Enter	Povečava – vnesite odstotek in pritisnite Enter
 	{0}: {1}	{0}: {1}
 	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	Znakov {chars} še ni mogoče zapisati v PDF: besedilo Izpolni in podpiši je samo zahodnoevropsko. Izberite številčno obliko, na primer dd.mm.yyyy.
 	{c} of {n}{more}	{c} od {n}{more}
 	{dpi} pixels/inch	{dpi} slikovnih pik/palec
+@plural	{fields} builds some field names as it runs, so those reads aren't checked.|{fields} build some field names as they run, so those reads aren't checked.	{fields} nekatera imena polj sestavi med izvajanjem, zato ta branja niso preverjena.|{fields} nekatera imena polj sestavita med izvajanjem, zato ta branja niso preverjena.|{fields} nekatera imena polj sestavijo med izvajanjem, zato ta branja niso preverjena.|{fields} nekatera imena polj sestavijo med izvajanjem, zato ta branja niso preverjena.
+@plural	{fields} is missing from the order saved in the PDF, so other PDF viewers may not calculate it.|{fields} are missing from the order saved in the PDF, so other PDF viewers may not calculate them.	{fields} manjka v vrstnem redu, shranjenem v PDF-ju, zato ga drugi pregledovalniki PDF morda ne bodo izračunali.|{fields} manjkata v vrstnem redu, shranjenem v PDF-ju, zato ju drugi pregledovalniki PDF morda ne bodo izračunali.|{fields} manjkajo v vrstnem redu, shranjenem v PDF-ju, zato jih drugi pregledovalniki PDF morda ne bodo izračunali.|{fields} manjkajo v vrstnem redu, shranjenem v PDF-ju, zato jih drugi pregledovalniki PDF morda ne bodo izračunali.
+@plural	{fields} is missing|{fields} are missing	{fields} manjka|{fields} manjkata|{fields} manjkajo|{fields} manjka
+	{fields} read each other	{fields} se berejo med seboj
+@plural	{fields} reads it|{fields} read it	{fields} ga bere|{fields} ga bereta|{fields} ga berejo|{fields} ga berejo
+@plural	{field} calculates before {fields}, which it reads.|{field} calculates before {fields}, which it reads.	{field} se izračuna pred {fields}, ki ga bere.|{field} se izračuna pred {fields}, ki ju bere.|{field} se izračuna pred {fields}, ki jih bere.|{field} se izračuna pred {fields}, ki jih bere.
+	{field} reads fields named as it runs	{field} bere polja, poimenovana med izvajanjem
+	{field} reads its own value	{field} bere svojo lastno vrednost
+	{field} reads no other field	{field} ne bere nobenega drugega polja
+	{field} reads {fields}	{field} bere {fields}
+@plural	{field} reads {fields}, which the form doesn't have.|{field} reads {fields}, which the form doesn't have.	{field} bere {fields}, ki ga v obrazcu ni.|{field} bere {fields}, ki ju v obrazcu ni.|{field} bere {fields}, ki jih v obrazcu ni.|{field} bere {fields}, ki jih v obrazcu ni.
 	{field}: {e}	{field}: {e}
 	{file} is too large for a stamp (at most {n} MB)	Datoteka {file} je prevelika za žig (največ {n} MB)
 	{folder} is already pinned to Home	Mapa {folder} je že pripeta na domačo stran
@@ -2011,6 +2175,7 @@ signature pad	Type	Vtipkaj
 	{month} {day}, {y}	{day}. {month} {y}
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} v {dir}
+	{names} and {last}	{names} in {last}
 	{name} (default)	{name} (privzeto)
 	{name} can't be combined: {why}	Datoteke {name} ni mogoče združiti: {why}
 	{name} has no action	{name} nima dejanja
@@ -2020,24 +2185,30 @@ signature pad	Type	Vtipkaj
 	{name} — unsaved changes	{name} — neshranjene spremembe
 	{name}: choosing images arrives on the web with file pickers for images	{name}: izbiranje slik bo v spletni različici na voljo z izbirniki slikovnih datotek
 	{name}: the {other} action isn't supported yet	{name}: dejanje {other} še ni podprto
+@plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} izračun zdaj uporablja novo ime.|{n} izračuna zdaj uporabljata novo ime.|{n} izračuni zdaj uporabljajo novo ime.|{n} izračunov zdaj uporablja novo ime.
 	{n} contributors · {c} commits	Sodelujočih: {n} · commitov: {c}
 	{n} days ago	pred {n} dnevi
 	{n} differences found	Najdenih razlik: {n}
 @plural	{n} field name collides with earlier files and will be renamed: {list}|{n} field names collide with earlier files and will be renamed: {list}	{n} ime polja se ujema z imeni iz prejšnjih datotek in bo preimenovano: {list}|{n} imeni polj se ujemata z imeni iz prejšnjih datotek in bosta preimenovani: {list}|{n} imena polj se ujemajo z imeni iz prejšnjih datotek in bodo preimenovana: {list}|{n} imen polj se ujema z imeni iz prejšnjih datotek in bo preimenovanih: {list}
+@plural	{n} field shows an old value|{n} fields show old values	{n} polje kaže staro vrednost|{n} polji kažeta stari vrednosti|{n} polja kažejo stare vrednosti|{n} polj kaže stare vrednosti
 	{n} fields selected	Izbranih polj: {n}
 @plural	{n} field|{n} fields	{n} polje|{n} polji|{n} polja|{n} polj
 	{n} files done	Dokončanih datotek: {n}
 	{n} files need attention	Datotek, ki zahtevajo pozornost: {n}
+@plural	{n} formula reads a field the form doesn't have|{n} formulas read fields the form doesn't have	{n} formula bere polje, ki ga v obrazcu ni|{n} formuli bereta polja, ki ju v obrazcu ni|{n} formule berejo polja, ki jih v obrazcu ni|{n} formul bere polja, ki jih v obrazcu ni
 	{n} instances	Pojavitev: {n}
 	{n} issues	Težav: {n}
 	{n} marks	Oznak: {n}
 	{n} match(es) marked for redaction.	Ujemanj, označenih za počrnitev: {n}.
 	{n} measurements use an unsupported format and are left out.	Meritve z nepodprto obliko so izpuščene: {n}.
+@plural	{n} more field calculates too early.|{n} more fields calculate too early.	Še {n} polje se izračuna prezgodaj.|Še {n} polji se izračunata prezgodaj.|Še {n} polja se izračunajo prezgodaj.|Še {n} polj se izračuna prezgodaj.
+@plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	Še {n} formula bere manjkajoče polje.|Še {n} formuli bereta manjkajoča polja.|Še {n} formule berejo manjkajoča polja.|Še {n} formul bere manjkajoča polja.
 @plural	{n} object selected|{n} objects selected	{n} izbran objekt|{n} izbrana objekta|{n} izbrani objekti|{n} izbranih objektov
 	{n} pages	Strani: {n}
 	{n} pages selected	Izbranih strani: {n}
 	{n} pages selected.	Izbranih strani: {n}.
 @plural	{n} page|{n} pages	{n} stran|{n} strani|{n} strani|{n} strani
+@plural	{n} reply|{n} replies	{n} odgovor|{n} odgovora|{n} odgovori|{n} odgovorov
 	{n} selected	Izbrano: {n}
 	{n} tags	{n} oznak
 	{n} word(s) or phrase(s)	Besed ali besednih zvez: {n}
