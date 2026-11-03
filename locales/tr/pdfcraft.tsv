@@ -16,6 +16,7 @@
 	 (searching… {s} of {p} pages)	 (aranıyor… {s} / {p} sayfa)
 	 ({n} at {dpi} dpi, the largest size they can be drawn at)	 ({dpi} dpi'de {n}, çizilebilecekleri en büyük boyut)
 	 ({s} not exported: {first})	 ({s} dışa aktarılmadı: {first})
+	 on page {label}	 {label}. sayfada
 	 on page {p}	 sayfa {p} üzerinde
 	 · password-protected	 · parola korumalı
 	% of all commits	Tüm işlemelerin %'si
@@ -27,6 +28,7 @@
 	1 file needs attention	1 dosya ilgi gerektiriyor
 	1 instance	1 örnek
 	1 issue	1 sorun
+	1 line	1 satır
 	1 mark	1 işaret
 	1 page	1 sayfa
 	1 page selected	1 sayfa seçildi
@@ -43,22 +45,33 @@
 	a bookmark cannot be moved inside itself	bir yer işareti kendi içine taşınamaz
 	A button	Bir düğme
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Rust ile yazılmış, temiz oda tekniğiyle geliştirilmiş açık kaynaklı bir PDF uygulaması. MIT VEYA Apache-2.0.
+	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	bir sütun çok dar: alanı genişletin, sütuna daha fazla yer verin ya da daha az sütun veya daha az sütun aralığı kullanın
 	A diagonal CONFIDENTIAL watermark on every page.	Her sayfada köşegen GİZLİ filigranı.
 	a document must keep at least one page	bir belge en az bir sayfayı korumalıdır
 	A document needs at least one page: copy instead	Bir belgenin en az bir sayfaya ihtiyacı vardır: bunun yerine kopyalayın
+	a field named {name} already exists	{name} adlı bir alan zaten var
+	A font isn't embedded	Bir yazı tipi gömülü değil
 	A form field has additional actions	Bir form alanının ek eylemleri var
 	A link	Bir bağlantı
+	A picture covers page {pages} (a scan?), so the background won't show there.	Resimle kaplı sayfa (tarama mı?): {pages}; arka plan orada görünmez.
 	A script	Bir komut dosyası
 	A selected field has no widget on any page, so the fields can't be edited together.	Seçilen bir alanın hiçbir sayfada pencere öğesi yok, bu nedenle alanlar birlikte düzenlenemez.
 	A stream refers to an external file	Bir akış harici bir dosyaya başvuruyor
 	A stream uses LZW compression	Bir akış LZW sıkıştırması kullanıyor
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Özet, tablonun amacını ve düzenini açıklar. Her tabloya bir Summary özniteliği ekleyin.
+	a table has 1 to {max} columns	bir tabloda 1 ile {max} arası sütun olur
+	a table has 1 to {max} rows	bir tabloda 1 ile {max} arası satır olur
+	A {} action isn't allowed	{} eylemine izin verilmiyor
+	A {} annotation has additional actions	Bir {} açıklamasının ek eylemleri var
+	A {} annotation has no appearance stream	Bir {} açıklamasının görünüm akışı yok
+	A {} annotation isn't set to print, or is hidden	Bir {} açıklaması yazdırılacak şekilde ayarlanmamış ya da gizli
 	About PdfCraft	PdfCraft hakkında
 	Accepted	Kabul edildi
 	Accessibility Checker	Erişilebilirlik Denetleyicisi
 	Accessibility Checker Options	Erişilebilirlik Denetleyicisi Seçenekleri
 	Accessibility permission flag	Erişilebilirlik izin bayrağı
 	Accessibility permission flag is set	Erişilebilirlik izin bayrağı ayarlandı
+	Accessibility Report	Erişilebilirlik Raporu
 	Acrobat 3.0 and later (40-bit RC4)	Acrobat 3.0 ve sonrası (40-bit RC4)
 	Acrobat 5.0 and later (128-bit RC4)	Acrobat 5.0 ve sonrası (128-bit RC4)
 	Acrobat 7.0 and later (128-bit AES)	Acrobat 7.0 ve sonrası (128-bit AES)
@@ -105,6 +118,7 @@
 	Add dot	Nokta ekle
 	Add drawing	Çizim ekle
 	Add field	Alan ekle
+	Add fields	Alanları ekle
 	Add file attachment	Dosya eki ekle
 	Add files to combine	Birleştirilecek dosyaları ekle
 	Add files…	Dosya ekle…
@@ -140,18 +154,21 @@
 	Add strikethrough	Üstü çizili ekle
 	Add text	Metin ekle
 	Add text box	Metin kutusu ekle
+	Add text field table	Metin alanı tablosu ekle
 	Add the choices people pick from.	Kullanıcıların seçeceği seçenekleri ekleyin.
 	Add the files to combine	Birleştirilecek dosyaları ekleyin
 	Add the PDFs to combine	Birleştirilecek PDF'leri ekleyin
 	Add the steps this action runs, in order.	Bu eylemin sırasıyla çalıştıracağı adımları ekleyin.
 	Add to Trusted Certificates	Güvenilen Sertifikalara Ekle
 	Add to trusted certificates	Güvenilen sertifikalara ekle
+	Add tools to hotbar	Kısayol çubuğuna araç ekle
 	Add underline	Alt çizgi ekle
 	Add watermark	Filigran ekle
 	Add watermark…	Filigran ekle…
 	Add {what}	{what} ekle
 	Added 1 comment	1 yorum eklendi
 	Added more than once	Birden fazla kez eklendi
+	Added text	Eklenen metin
 	Added the first {n} files in {folder}	{folder} içindeki ilk {n} dosya eklendi
 	Added the first {n} PDFs in {folder}	{folder} içindeki ilk {n} PDF eklendi
 	Added {n} comments	{n} yorum eklendi
@@ -183,12 +200,15 @@
 	Also recognize pages that already have text	Zaten metin içeren sayfaları da tanı
 	Alternate Text	Alternatif Metin
 	Alternate text	Alternatif metin
+	alternate text hides an annotation inside it	alternatif metin içindeki bir açıklamayı gizliyor
 	Alternate text inside an element that already has alternate text is never read. Remove the inner alternate text.	Zaten alternatif metni olan bir öğenin içindeki alternatif metin hiçbir zaman okunmaz. İçteki alternatif metni kaldırın.
 	Alternate text must be associated with some content	Alternatif metin bir içerikle ilişkili olmalıdır
 	Alternate text on an element that contains a link or field hides that annotation from assistive technology. Move the alternate text.	Bağlantı veya alan içeren bir öğedeki alternatif metin, bu açıklamayı yardımcı teknolojiden gizler. Alternatif metni taşıyın.
+	alternate text on an element with no page content	sayfa içeriği olmayan bir öğede alternatif metin
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Sayfa içeriği olmayan bir öğedeki alternatif metne hiçbir zaman ulaşılamaz. Kaldırın veya öğeyi içeriğe ekleyin.
 	Alternate text should not hide annotation	Alternatif metin açıklamayı gizlememelidir
 	Alternate text that will never be read	Hiçbir zaman okunmayacak alternatif metin
+	Always use my default zoom and page layout	Her zaman varsayılan yakınlaştırmamı ve sayfa düzenimi kullan
 	An action is already running	Zaten çalışan bir eylem var
 	An action with this name already exists.	Bu adda bir eylem zaten var.
 	An embedded file has no AFRelationship	Gömülü bir dosyanın AFRelationship ilişkisi yok
@@ -213,10 +233,12 @@
 	Apply redactions	Karartmaları uygula
 	Apply redactions…	Karartmaları uygula…
 	Apply scale	Ölçeği uygula
+	Applying a scale switches units to m / mm.	Ölçek uygulamak birimleri m / mm olarak değiştirir.
 	Appropriate nesting	Uygun iç içe yerleştirme
 	April	Nisan
 	Arbitrary Mask	İsteğe Bağlı Maske
 	Archive documents	Belgeleri arşivle
+	Arrange image	Resmi düzenle
 	Ask about this document	Bu belge hakkında soru sor
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	En son sürüm için GitHub'ı sorgular. Hiçbir şey otomatik olarak indirilmez veya kurulmaz.
 	Associated with content	İçerikle ilişkili
@@ -224,7 +246,10 @@
 	At least one signature is invalid.	En az bir imza geçersiz.
 	At most	En fazla
 	Attach a file	Dosya ekle
+	Attach a file…	Dosya ekle…
 	Attach file	Dosya ekle
+	Attach {name}	{name} ekle
+	Attaching files is not available on the web yet	Dosya eklemek web'de henüz kullanılamıyor
 	Attachment	Ek
 	Attachments	Ekler
 	Attachments Panel and Page	Ekler Paneli ve Sayfa
@@ -235,11 +260,13 @@
 	Auto portrait/landscape	Otomatik dikey/yatay
 	Auto-rotate pages	Sayfaları otomatik döndür
 	Auto-size text to fit redaction region	Metni karartma bölgesine sığacak şekilde otomatik boyutlandır
+	Automatically	Otomatik
 	Automatically tag PDF	PDF'i otomatik etiketle
 	average	ortalama
 	Back	Geri
 	Back side only	Yalnızca arka taraf
 	Back to all tools	Tüm araçlara geri dön
+	Back to Prepare a form	Form hazırla'ya geri dön
 	Back to the document	Belgeye geri dön
 	background	arka plan
 	Basic constraints	Temel kısıtlamalar
@@ -252,6 +279,7 @@
 	Binding:	Ciltleme:
 	Black on white	Beyaz üzerinde siyah
 	Blank page	Boş sayfa
+	bold	kalın
 	Booklet	Kitapçık
 	Booklet subset:	Kitapçık alt kümesi:
 	Bookmark options	Yer işareti seçenekleri
@@ -262,8 +290,11 @@
 	Borders and Colors	Kenarlıklar ve Renkler
 	Both	Her İkisi
 	Box	Kutu
+	Bring forward	Öne getir
+	Bring to front	En öne getir
 	Bring your own model (off by default)	Kendi modelini getir (varsayılan olarak kapalı)
 	Browser's print dialog	Tarayıcının yazdırma penceresi
+	Bulleted list	Madde işaretli liste
 	Butt	Düz uç
 	Button	Düğme
 	Button is checked by default	Düğme varsayılan olarak seçilidir
@@ -271,36 +302,44 @@
 	Button Style:	Düğme Stili:
 	Buttons with the same name and value are selected in unison	Aynı ada ve değere sahip düğmeler birlikte seçilir
 	Bytes	Bayt
+	Calculation order	Hesaplama sırası
 	Calibrate from two points	İki noktadan kalibre et
 	Callout	Açıklama Balonu
 	Can't be read: {e}	Okunamıyor: {e}
 	Cancelled	İptal edildi
 	Cancelling…	İptal ediliyor…
 	Case-sensitive	Büyük/küçük harfe duyarlı
+	CCITT Group 4	CCITT Grup 4
 	Center Footer Text	Orta Altbilgi Metni
 	Center Header Text	Orta Üstbilgi Metni
 	Center horizontally	Yatay ortala
 	Center vertically	Dikey ortala
 	Center window on screen	Pencereyi ekranda ortala
 	Centre	Ortala
+	Certificate authority	Sertifika yetkilisi
+	Certificate Signing	Sertifika İmzalama
 	Certificate Viewer	Sertifika Görüntüleyici
 	Certificates	Sertifikalar
 	Certified by {by}	{by} tarafından onaylandı
 	Certify	Sertifikala
 	Certify (invisible signature)	Sertifikala (görünmez imza)
 	Certify (visible signature)	Sertifikala (görünür imza)
+	Change Author	Yazarı Değiştir
 	Change comment properties	Yorum özelliklerini değiştir
 	Change document properties	Belge özelliklerini değiştir
 	Change field properties	Alan özelliklerini değiştir
 	Change initial view	İlk görünümü değiştir
 	Change initials	Parafı değiştir
+	Change Keywords	Anahtar Kelimeleri Değiştir
 	Change link properties	Bağlantı özelliklerini değiştir
 	Change reading options	Okuma seçeneklerini değiştir
 	Change reading options…	Okuma seçeneklerini değiştir…
 	Change settings…	Ayarları değiştir…
 	Change signature	İmzayı değiştir
+	Change Subject	Konuyu Değiştir
 	Change tag properties	Etiket özelliklerini değiştir
 	Change the colour of line art as well as text	Metnin yanı sıra çizgi sanatının rengini de değiştir
+	Change Title	Başlığı Değiştir
 	Change {key}	{key} değiştir
 	Change {what}	{what} değiştir
 	Changes allowed	Değişikliklere izin verildi
@@ -327,15 +366,18 @@
 	CheckBox	OnayKutusu
 	Checkbox	Onay kutusu
 	Checked	İşaretli
-	Checking for a newer version…	Daha yeni bir sürüm denetleniyor…
 	Checking Options ({on} of 32 in all categories)	Denetim Seçenekleri (tüm kategorilerde {on} / 32)
+	Checking pages…	Sayfalar denetleniyor…
 	Checkmark	Onay işareti
+	Choose a digital ID.	Bir dijital kimlik seçin.
+	Choose a file…	Dosya seç…
 	Choose a folder for the exported files	Dışa aktarılan dosyalar için bir klasör seçin
 	Choose a folder for the extracted pages	Ayıklanan sayfalar için bir klasör seçin
 	Choose a folder for the results	Sonuçlar için bir klasör seçin
 	Choose a folder for the searchable files	Aranabilir dosyalar için bir klasör seçin
 	Choose a folder for the split files	Bölünen dosyalar için bir klasör seçin
 	Choose a folder on this computer to pin	Bu bilgisayarda sabitlemek için bir klasör seçin
+	Choose a folder…	Klasör seç…
 	Choose a layout:	Bir düzen seçin:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Bir PNG veya JPEG görseli seçin (en fazla 4 MiB). Saydamlık korunur.
 	Choose a stamp, then click on the page to place it.	Bir damga seçin, ardından yerleştirmek için sayfaya tıklayın.
@@ -344,13 +386,13 @@
 	Choose image…	Resim seç…
 	Choose photo…	Fotoğraf seç…
 	Choose the digital ID that you want to use for signing:	İmzalamak için kullanmak istediğiniz dijital kimliği seçin:
-	Choose…	Choose…
 	Clean Up	Temizle
 	Clean-up	Temizleme
 	Clear all	Tümünü temizle
 	Clear form	Formu temizle
 	Clear Recent Files	Son kullanılan dosyaları temizle
 	Clear redaction marks	Karartma işaretlerini temizle
+	Clear search	Aramayı temizle
 	Clear selection / close find	Seçimi temizle / bulmayı kapat
 	Click on the page to add a {tool}, or drag to set its size	Bir {tool} eklemek için sayfaya tıklayın veya boyutunu ayarlamak için sürükleyin
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Metin eklemek için sayfaya tıklayın; her tıklama yeni bir kutu başlatır ve ✓ tamamlar. Taşımak için öğeleri sürükleyin, yeniden boyutlandırmak için bir köşeden sürükleyin, düzenlemek için metne çift tıklayın.
@@ -361,6 +403,7 @@
 	Clockwise 90 degrees	Saat yönünde 90 derece
 	Close all	Tümünü kapat
 	Close file	Dosyayı kapat
+	Close menu	Menüyü kapat
 	Close panel	Paneli kapat
 	Close Tab	Sekmeyi kapat
 	Closed arrow	Kapalı ok
@@ -368,12 +411,16 @@
 	Collapse all	Tümünü daralt
 	Collapse all bookmarks	Tüm yer işaretlerini daralt
 	Collapse all pages	Tüm sayfaları daralt
+	Collapse all tools	Tüm araçları daralt
 	Collapse tag	Etiketi daralt
 	Color contrast	Renk kontrastı
 	Color Images	Renkli Resimler
 	Color Spaces	Renk Uzayları
 	Colours are remapped while rendering; the document itself never changes.	Renkler görüntülenirken yeniden eşlenir; belgenin kendisi asla değişmez.
 	Column select	Sütun seçimi
+	Column spacing	Sütun aralığı
+	Column widths	Sütun genişlikleri
+	Column {n}	Sütun {n}
 	Comb of	Tarak alanı:
 	Comb of characters	Karakter tarağı
 	Combine files	Dosyaları birleştir
@@ -383,11 +430,12 @@
 	Combo	AçılırKutu
 	Coming in milestone	Kilometre taşında gelecek
 	Coming in milestone {m}. Items marked Ready work today.	Kilometre taşı {m} ile gelecek. Hazır olarak işaretlenen öğeler bugün çalışmaktadır.
-	Comment	Comment
 	Comment and form data	Yorum ve form verileri
+	Comment and review	Yorumla ve incele
 	Comment list	Yorum listesi
 	Commenting	Yorum yapma
 	Commenting, filling in form fields, and signing existing signature fields	Yorum yapma, form alanlarını doldurma ve var olan imza alanlarını imzalama
+	comments	yorumlar
 	Comments & Forms	Yorumlar ve Formlar
 	Comments and markups	Yorumlar ve işaretlemeler
 	Comments only	Yalnızca yorumlar
@@ -396,6 +444,7 @@
 	Commit selected value immediately	Seçilen değeri hemen uygula
 	Commits	İşlemeler
 	Common Properties	Ortak Özellikler
+	Common scales	Yaygın ölçekler
 	Compare Files	Dosyaları Karşılaştır
 	Compare files	Dosyaları karşılaştır
 	Compare files…	Dosyaları karşılaştır…
@@ -415,6 +464,7 @@
 	Continue	Devam Et
 	Continuous scrolling	Sürekli kaydırma
 	Convert colors	Renkleri dönüştür
+	Copied to clipboard	Panoya kopyalandı
 	Copied {what}	{what} kopyalandı
 	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Kopya sayısı, çift taraflı yazdırma ve renk tarayıcının yazdırma penceresinde seçilir.
 	Copy Image	Resmi Kopyala
@@ -423,10 +473,10 @@
 	Copy pages	Sayfaları kopyala
 	Copy selected text	Seçilen metni kopyala
 	Copy text	Metni kopyala
+	Copy to clipboard	Panoya kopyala
 	Correct recognized text	Tanınan metni düzelt
 	Could not save: {e}	Kaydedilemedi: {e}
 	Couldn't add {name}: {e}	{name} eklenemedi: {e}
-	Couldn't check for updates: {e}	Güncellemeler denetlenemedi: {e}
 	Couldn't combine files: {e}	Dosyalar birleştirilemedi: {e}
 	Couldn't copy the image: {e}	Resim kopyalanamadı: {e}
 	Couldn't create a PDF: {e}	PDF oluşturulamadı: {e}
@@ -460,14 +510,17 @@
 	Counterclockwise 90 degrees	Saat yönünün tersine 90 derece
 	Counting words… {n} pages read	Sözcükler sayılıyor… {n} sayfa okundu
 	Country/Region	Ülke/Bölge
+	Create & Edit	Oluştur ve Düzenle
 	Create a new Digital ID (self-signed, saved to a password-protected file)	Yeni bir Dijital Kimlik oluştur (kendinden imzalı, parola korumalı bir dosyaya kaydedilir)
 	Create a PDF	PDF oluştur
 	Create accessibility report	Erişilebilirlik raporu oluştur
 	Create Custom Stamp	Özel Damga Oluştur
 	Create custom stamp…	Özel damga oluştur…
+	Create folder	Klasör oluştur
 	Create from	Şuradan oluştur
 	Create Link	Bağlantı Oluştur
 	Create link	Bağlantı oluştur
+	Create links	Bağlantı oluştur
 	Create links from URLs	URL'lerden bağlantı oluştur
 	Create Link…	Bağlantı oluştur…
 	Create PDF Comment Summary	PDF Yorum Özeti Oluştur
@@ -487,9 +540,12 @@
 	Created {n} links	{n} bağlantı oluşturuldu
 	Creates 1 file from {n} pages.	{n} sayfadan 1 dosya oluşturur.
 	Creates {f} files from {n} pages.	{n} sayfadan {f} dosya oluşturur.
+	Creator	Oluşturan
 	Credit Cards	Kredi Kartları
+	CRL Signing	CRL İmzalama
 	Crop (% trimmed from each side)	Kırp (her kenardan kırpılan %)
 	Crop Image	Resmi kırp
+	Crop image	Resmi kırp
 	Crop page	Sayfayı kırp
 	Crop pages	Sayfaları kırp
 	Cross	Çarpı
@@ -499,11 +555,14 @@ key	Ctrl	Ctrl
 	Current page only	Yalnızca geçerli sayfa
 	Current page — type a page number or label (such as iv) and press Enter	Geçerli sayfa — bir sayfa numarası veya etiketi (örneğin iv) yazıp Enter'a basın
 	Custom font	Özel yazı tipi
+	Custom scale	Özel ölçek
 	Custom scale:	Özel ölçek:
 	Custom stamps arrive on the web with file pickers for images	Özel damgalar web'de resim dosyası seçicileriyle birlikte sunulacaktır
 	Custom text:	Özel metin:
 	Custom:	Özel:
+	Customize & Automate	Özelleştir ve Otomatikleştir
 	Cut and stack	Kes ve istifle
+	Cut and stack needs Two-sided: Off. Print single-sided sheets.	Kes ve istifle için Çift taraflı: Kapalı olmalı. Tek taraflı sayfalar yazdırın.
 	Cut Image	Resmi Kes
 	Cut marks	Kesim işaretleri
 	Cut pages	Sayfaları kes
@@ -511,11 +570,13 @@ key	Ctrl	Ctrl
 	Cuts each page to its printed area, turns it upright and fits it to the sheet without stretching. One label per sheet.	Her sayfayı basılı alanına göre kırpar, dik çevirir ve germeden sayfaya sığdırır. Sayfa başına bir etiket.
 	Dark gray theme	Koyu gri tema
 	Dark theme	Koyu tema
+	Data Encipherment	Veri Şifreleme
 	Date field	Tarih alanı
 	Date: 	Tarih: 
 	December	Aralık
 	Decimal places:	Ondalık basamak:
 	Decimals	Ondalık basamaklar
+	Decipher Only	Yalnızca Şifre Çözme
 	Declared conformance: {shown}	Bildirilen uyumluluk: {shown}
 	Decorative figure	Dekoratif şekil
 	Default page display	Varsayılan sayfa görünümü
@@ -524,6 +585,8 @@ key	Ctrl	Ctrl
 	Default zoom	Varsayılan yakınlaştırma
 	Default:	Varsayılan:
 key	Delete	Delete
+	Delete attachment	Eki sil
+	Delete attachment {key}	{key} ekini sil
 	Delete bookmark	Yer işaretini sil
 	Delete comment	Yorumu sil
 	Delete content	İçeriği sil
@@ -539,21 +602,28 @@ key	Delete	Delete
 	Delete selected fields	Seçili alanları sil
 	Delete selected pages (Organize)	Seçili sayfaları sil (Düzenle)
 	Delete stamp	Damgayı sil
+	Delete the selected pages	Seçili sayfaları sil
+@plural	Delete {n} field|Delete {n} fields	{n} alanı sil|{n} alanı sil
 	Delete {o}	{o} sil
 	Describe the figure	Şekli tanımlayın
+	Detailed Report	Ayrıntılı Rapor
 	Detect form fields	Form alanlarını algıla
 	Detected 1 form field	1 form alanı algılandı
 	Detected {n} form fields	{n} form alanı algılandı
 	Device colour is used, but there is no PDF/A output intent	Cihaz rengi kullanılıyor ancak PDF/A çıktı amacı yok
+	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	DeviceCMYK kullanılıyor ancak PDF/A çıktı amacı bir CMYK profili değil
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	DeviceCMYK kullanılıyor: Bir CMYK çıktı amacı gerekiyor (otomatik olarak eklenmez)
+	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	DeviceRGB kullanılıyor ancak PDF/A çıktı amacı bir RGB profili değil
 	Diagnostic details	Tanılama ayrıntıları
 	Diamond	Elmas
 	Digital ID	Dijital Kimlik
 	Digital ID password	Dijital kimlik parolası
+	Digital Signature	Dijital İmza
 	Digital signature	Dijital imza
 	Digital Signature Properties	Dijital İmza Özellikleri
 	Digitally sign	Dijital olarak imzala
 	Digitally signed by	Dijital olarak imzalayan
+	Disabled	Devre dışı
 	Discard all comments, forms and multimedia	Tüm yorumları, formları ve multimedyayı at
 	Discard all links, actions and JavaScript	Tüm bağlantıları, eylemleri ve JavaScript'i at
 	Discard all object data (file attachments)	Tüm nesne verilerini (dosya ekleri) at
@@ -573,8 +643,11 @@ key	Delete	Delete
 	Display theme	Görünüm teması
 	Distance	Mesafe
 	Distinguished name	Ayırt edici ad
+	Distribute evenly	Eşit dağıt
 	Distribute fields	Alanları dağıt
 	DN: 	DN: 
+	Dock navigation rail on Left	Gezinme çubuğunu sola yerleştir
+	Dock navigation rail on Right	Gezinme çubuğunu sağa yerleştir
 	Document actions	Belge eylemleri
 	Document and markups	Belge ve işaretlemeler
 	Document and stamps	Belge ve damgalar
@@ -588,22 +661,28 @@ key	Delete	Delete
 	Document Overhead	Belge Ek Yükü
 	Document Properties	Belge Özellikleri
 	Document properties ({key})	Belge özellikleri ({key})
+	Document properties (⌘D)	Belge özellikleri (⌘D)
 	Document properties…	Belge özellikleri…
 	Document sanitized. Save to finish: saving rewrites the whole file.	Belge temizlendi. Bitirmek için kaydedin: kaydetme tüm dosyayı yeniden yazar.
+	document security store	belge güvenlik deposu
+	document structure	belge yapısı
 	Document structure provides a logical reading order	Belge yapısı mantıksal bir okuma sırası sağlar
 	Document title is showing in title bar	Belge başlığı başlık çubuğunda gösteriliyor
 	Documents and view	Belgeler ve görünüm
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	20 sayfadan fazla olan belgelerde gezinme için yer işaretleri gerekir. Ana bölümler için yer işaretleri ekleyin.
 	Don't save	Kaydetme
+	Don't show again	Bir daha gösterme
 	Done adding text	Metin ekleme bitti
 	Downloaded {name}	{name} indirildi
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	{n} PDF indirildi|{n} PDF indirildi
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web'de ek indirme M3.10 ile sunulacaktır ({n} bayt hazır)
 	Downsample to	Şu değere alt örnekle:
 	DPI sets the printed page size without resampling the image.	DPI, resmi yeniden örneklemeden yazdırılan sayfa boyutunu ayarlar.
+	Drag a field to move it, or select it and press {up} or {down}.	Taşımak için bir alanı sürükleyin veya seçip {up} ya da {down} tuşuna basın.
 	Drag a rectangle around the area to copy	Kopyalanacak alanın etrafına bir dikdörtgen sürükleyin
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Kırpmak için bir sayfada dikdörtgen sürükleyin; Sayfa Kutularını Ayarla için bir sayfaya çift tıklayın
 	Drag a rectangle to create a link; double-click a link to edit it	Bağlantı oluşturmak için bir dikdörtgen sürükleyin; düzenlemek için bir bağlantıya çift tıklayın
+	Drag hotbar	Kısayol çubuğunu sürükle
 	Drag the corners onto the document's edges, then choose Enhance page.	Köşeleri belgenin kenarlarına sürükleyin, ardından Sayfayı iyileştir'i seçin.
 	Drag the selection to move it. Esc clears the selection.	Taşımak için seçimi sürükleyin. Esc seçimi temizler.
 	Drag to draw the area where the signature should appear.	İmzanın görünmesi gereken alanı çizmek için sürükleyin.
@@ -637,6 +716,7 @@ key	Delete	Delete
 	Each file holds as many of the {n} pages as fit.	Her dosya, {n} sayfadan sığdığı kadarını içerir.
 	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	Her resim sayfalarda çizildiği yerde ölçülür; bir resim yalnızca sonuç daha küçükse değiştirilir.
 	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	Her resim belge ve sayfaya göre adlandırılarak bir kez. JPEG resimler değiştirilmeden, diğerleri PNG olarak kaydedilir.
+	Earlier in calculation order	Hesaplama sırasında daha önce
 	Earlier in tab order	Sekme sırasında daha önce
 comment menu	Edit	Düzenle
 	Edit a PDF	PDF'i düzenle
@@ -650,6 +730,8 @@ comment menu	Edit	Düzenle
 	Edit text	Metni düzenle
 	Edit text & images	Metin ve resimleri düzenle
 	Edit text…	Metni düzenle…
+	Edit this PDF	Bu PDF'i düzenle
+	Edit {field}'s formula	{field} formülünü düzenle
 	Email Address	E-posta Adresi
 	Email Addresses	E-posta Adresleri
 	Embedded Files	Gömülü Dosyalar
@@ -657,15 +739,24 @@ comment menu	Edit	Düzenle
 	Enable Acrobat JavaScript	Acrobat JavaScript'i etkinleştir
 	Enable copying of text, images, and other content	Metin, resim ve diğer içeriklerin kopyalanmasını etkinleştir
 	Enable text access for screen reader devices for the visually impaired	Görme engellilere yönelik ekran okuyucu cihazlar için metin erişimini etkinleştir
+	Enabled	Etkin
+	Encipher Only	Yalnızca Şifreleme
 	Encrypt	Şifrele
 	Encrypt with certificate	Sertifika ile şifrele
 	Encryption	Şifreleme
 key	End	End
+	End entity	Son varlık
 	Endpoints	Uç noktalar
+	English	İngilizce
 	Enhance camera image	Kamera görüntüsünü iyileştir
 	Enhance page	Sayfayı iyileştir
 	Enhance scanned file	Taranmış dosyayı iyileştir
+	Enter a name.	Bir ad girin.
+	Enter a page number	Bir sayfa numarası girin
+	Enter a scale such as 1:50.	1:50 gibi bir ölçek girin.
+	Enter a URL	Bir URL girin
 	Enter permissions password…	İzin parolasını gir…
+	Enter the field names	Alan adlarını girin
 	Enter the password that opens it	Açan parolayı girin
 	Enter the permissions password to allow combining	Birleştirmeye izin vermek için izinler parolasını girin
 	Entire page	Tüm sayfa
@@ -674,6 +765,9 @@ key	Esc	Esc
 	Even and Odd Pages	Çift ve Tek Sayfalar
 	Even pages	Çift sayfalar
 	Even Pages Only	Yalnızca Çift Sayfalar
+	Every field calculates after the fields it reads.	Her alan, okuduğu alanlardan sonra hesaplanır.
+	Every field outside a loop calculates after the fields it reads.	Döngü dışındaki her alan, okuduğu alanlardan sonra hesaplanır.
+	Every line set in the style chosen for a level becomes a bookmark of that level, under a new first bookmark.	Bir düzey için seçilen stille yazılmış her satır, yeni bir ilk yer işaretinin altında o düzeyin yer işareti olur.
 	Every PDF in the folder	Klasördeki her PDF
 	Every PDF in the folder and the folders inside it	Klasördeki ve içindeki klasörlerdeki her PDF
 	Every PDF, image and text file in the folder	Klasördeki tüm PDF, resim ve metin dosyaları
@@ -688,6 +782,7 @@ key	Esc	Esc
 	Expand all	Tümünü genişlet
 	Expand all bookmarks	Tüm yer işaretlerini genişlet
 	Expand all pages	Tüm sayfaları genişlet
+	Expand all tools	Tüm araçları genişlet
 	Expand tag	Etiketi genişlet
 	Expand top-level bookmarks	Üst düzey yer işaretlerini genişlet
 	Explain	Açıkla
@@ -707,6 +802,7 @@ key	Esc	Esc
 	Export measurements	Ölçümleri dışa aktar
 	Export measurements as CSV	Ölçümleri CSV olarak dışa aktar
 	Export stopped: {e}	Dışa aktarma durduruldu: {e}
+	Export this PDF	Bu PDF'i dışa aktar
 	Export to	Şuraya aktar
 	Export to HTML…	HTML'e dışa aktar…
 	Export to Image	Resim Olarak Dışa Aktar
@@ -716,6 +812,7 @@ key	Esc	Esc
 	Export to Text	Metin Olarak Dışa Aktar
 	Export to text…	Metne dışa aktar…
 	Export to Word…	Word'e dışa aktar…
+	Export value	Dışa aktarma değeri
 	Export Value: {on}	Dışa Aktarma Değeri: {on}
 	Exported 1 image	1 resim dışa aktarıldı
 	Exported the text of 1 page	1 sayfanın metni dışa aktarıldı
@@ -723,20 +820,25 @@ key	Esc	Esc
 	Exported {n} images	{n} resim dışa aktarıldı
 	Exporting… {d} of {t}	Dışa aktarılıyor… {d} / {t}
 	Export…	Dışa aktar…
+	Extend the docked toolbar along the entire side. Choose a side above to enable.	Yerleştirilmiş araç çubuğunu kenar boyunca uzat. Etkinleştirmek için yukarıdan bir kenar seçin.
 	Extended Graphics States	Genişletilmiş Grafik Durumları
 	Extract pages	Sayfaları ayıkla
 	Extract pages as separate files	Sayfaları ayrı dosyalar olarak ayıkla
 	Extract pages to a new document	Sayfaları yeni bir belgeye ayıkla
 	Extract pages…	Sayfaları ayıkla…
+	Extract the selected pages…	Seçili sayfaları ayıkla…
 	Extracted 1 page	1 sayfa ayıklandı
 	Extracted {n} pages	{n} sayfa ayıklandı
 	Failed	Başarısız
 scroll speed	Fast	Hızlı
 	February	Şubat
+	Field "{}" on page {p} has no description (tooltip)	{p}. sayfadaki "{}" alanının açıklaması (araç ipucu) yok
 	Field descriptions	Alan açıklamaları
 	Field is used for file selection	Alan dosya seçimi için kullanılır
 	Field list	Alan listesi
+	Field names	Alan adları
 	Field names (comma-separated)	Alan adları (virgülle ayrılmış)
+	field names can't contain a period: {name}	alan adları nokta içeremez: {name}
 	Field names with + - * / and parentheses; put \\ before spaces in names.	Adlarda + - * / ve parantez içeren alan adları; adlardaki boşluklardan önce \\ koyun.
 	Field properties…	Alan özellikleri…
 	Field value is in range:	Alan değeri aralıkta:
@@ -751,6 +853,7 @@ scroll speed	Fast	Hızlı
 	File name	Dosya adı
 	File size	Dosya boyutu
 @id	file.word_count	Sözcük sayısı…
+	Filename	Dosya adı
 	Files are combined from top to bottom. Leave Pages empty to take every page.	Dosyalar yukarıdan aşağıya doğru birleştirilir. Tüm sayfaları almak için Sayfalar alanını boş bırakın.
 	Files are combined in the order shown. Drag them to change it.	Dosyalar gösterilen sırada birleştirilir. Değiştirmek için sürükleyin.
 	Files are combined in this order. Leave Pages empty to take every page.	Dosyalar bu sırada birleştirilir. Tüm sayfaları almak için Sayfalar alanını boş bırakın.
@@ -784,6 +887,7 @@ scroll speed	Fast	Hızlı
 	Find text	Metin bul
 	Find text and redact	Metin bul ve karart
 	Find text and redact…	Metin bul ve karart…
+	Find text or tools	Metin veya araç bul
 	Find tools and commands	Araçları ve komutları bul
 	Find tools and commands…	Araçları ve komutları bul…
 	Find untagged content	Etiketlenmemiş içeriği bul
@@ -791,6 +895,7 @@ scroll speed	Fast	Hızlı
 	Finish or discard the text being edited before selecting several objects.	Birden fazla nesne seçmeden önce düzenlenen metni tamamlayın veya iptal edin.
 	First / last page	İlk / son sayfa
 	First commit	İlk işleme
+	First row number	İlk satır numarası
 	Fit Height	Yüksekliğe Sığdır
 	Fit one full page	Tam bir sayfaya sığdır
 	Fit Page	Sayfaya Sığdır
@@ -803,10 +908,12 @@ scroll speed	Fast	Hızlı
 	Fit Width	Genişliğe Sığdır
 	Fix	Düzelt
 	Fix hairlines	Kılcal çizgileri düzelt
+	Fix order	Sırayı düzelt
 	Fix reading order	Okuma sırasını düzelt
 	Fixed what could be fixed; 1 problem remains	Düzeltilebilecek olanlar düzeltildi; 1 sorun kaldı
 	Fixed what could be fixed; {n} problems remain	Düzeltilebilecek olanlar düzeltildi; {n} sorun kaldı
 	Flatten comments	Yorumları düzleştir
+	Flatten Fill & Sign	Doldur ve İmzala'yı düzleştir
 	Flatten Fill & Sign when saving	Kaydederken Doldur ve İmzala'yı düzleştir
 	Flatten form fields	Form alanlarını düzleştir
 	Flip horizontal	Yatay çevir
@@ -814,26 +921,35 @@ scroll speed	Fast	Hızlı
 	Flip on long edge	Uzun kenardan çevir
 	Flip on short edge	Kısa kenardan çevir
 	Flip vertical	Dikey çevir
+	Float (drag anywhere)	Serbest (istediğin yere sürükle)
 	Float panel	Paneli yüzdür
 	Folders	Klasörler
+	Font	Yazı tipi
+	Font (unnamed) on page {p} doesn't map its characters to Unicode	{p}. sayfadaki (adsız) yazı tipi karakterlerini Unicode'a eşlemiyor
 	Font colour:	Yazı tipi rengi:
 	Font size 0 uses automatic sizing.	Yazı tipi boyutu 0 olduğunda otomatik boyutlandırma kullanılır.
 	Font size:	Yazı tipi boyutu:
+	Font {} on page {p} doesn't map its characters to Unicode	{p}. sayfadaki {} yazı tipi karakterlerini Unicode'a eşlemiyor
 	Font: Helvetica	Yazı Tipi: Helvetica
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Metnin okunabilmesi ve kopyalanabilmesi için yazı tiplerinin karakterlerini Unicode ile eşlemesi gerekir. Yazı tiplerini düzeltin veya PDF'i yeniden oluşturun.
 	for images above	bundan büyük resimler için:
 	For page sizes and margins.	Sayfa boyutları ve kenar boşlukları için.
 	Form data and PDF forms	Form verileri ve PDF formları
+	Form field on page {p} isn't tagged	{p}. sayfadaki form alanı etiketli değil
 	Form fields	Form alanları
 	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	Form alanları düzleştirilir: Değerleri görünür kalır. Kaydetme tüm dosyayı yeniden yazar.
 	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	Seslendirilebilmesi için form alanlarının etiket ağacında (Form etiketleri) olması gerekir. Form alanlarını etiketleyin.
 	Form fields only	Yalnızca form alanları
 	Form fields panel	Form alanları paneli
+	form fill	form doldurma
 	Form fill-in and digital signatures	Form doldurma ve dijital imzalar
 	Format text	Metni biçimlendir
 	Forms	Formlar
+	Forms & Signatures	Formlar ve İmzalar
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Formüller ve benzeri metin dışı öğeler alternatif metne ihtiyaç duyar. Bunlara alternatif metin ekleyin.
 	Found {n} untagged content problems.	{n} etiketlenmemiş içerik sorunu bulundu.
+calendar weekday	Fr	Cu
+	Freehand-Highlight	Serbest Vurgulama
 	From	Başlangıç
 	From a PDF page or an image	Bir PDF sayfasından veya resimden
 	From colour	Renginden
@@ -841,6 +957,8 @@ scroll speed	Fast	Hızlı
 	From:	Başlangıç:
 	Front side only	Yalnızca ön taraf
 	Full screen mode	Tam ekran modu
+	Full-side strip	Tam kenar şeridi
+	General & Interface	Genel ve Arayüz
 	Geospatial location	Coğrafi konum
 	Get help, share feedback and follow development on Discord.	Discord'da yardım alın, geri bildirim paylaşın ve geliştirmeyi takip edin.
 	Go to a page view	Sayfa görünümüne git
@@ -860,10 +978,12 @@ scroll speed	Fast	Hızlı
 	header or footer	üstbilgi veya altbilgi
 	Headers	Üstbilgiler
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Başlık düzeyleri atlanmamalıdır (örneğin H1 ardından H3). Başlıkları yeniden etiketleyin.
+	Help…	Yardım…
 	Hidden layers	Gizli katmanlar
 	Hide a field	Alanı gizle
 	Hide all comments	Tüm yorumları gizle
 	Hide field highlights	Alan vurgularını gizle
+	Hide gaps to join page edges. Margins inside the PDF remain unchanged.	Sayfa kenarlarını birleştirmek için boşlukları gizleyin. PDF içindeki kenar boşlukları değişmez.
 	Hide hover previews for highlights without comment text	Yorum metni olmayan vurgular için üzerine gelme önizlemelerini gizle
 	Hide layer	Katmanı gizle
 	Hide menu bar	Menü çubuğunu gizle
@@ -879,14 +999,20 @@ scroll speed	Fast	Hızlı
 key	Home	Home
 	Home / End	Home / End
 	Horizontal reversed	Yatay ters
+	Hotbar settings	Kısayol çubuğu ayarları
+	Hotbar settings / add tools	Kısayol çubuğu ayarları / araç ekle
+	Hotbar tools	Kısayol çubuğu araçları
 	HTML web page	HTML web sayfası
+	H{n} follows an H{d}; headings should not skip levels	H{n}, bir H{d} ardından geliyor; başlıklar düzey atlamamalı
 	Identity	Kimlik
 	Image	Resim
 	Image (PNG)	Resim (PNG)
 	Image field	Resim alanı
+	Image pasted	Görüntü yapıştırıldı
 	Image-only PDF	Yalnızca resim içeren PDF
 	Images and text	Resimler ve metin
 	Images and text (converted to PDF)	Resimler ve metin (PDF'e dönüştürüldü)
+	Import	İçe aktar
 	Import comments…	Yorumları içe aktar…
 	Import data	Verileri içe aktar
 	Import form data…	Form verilerini içe aktar…
@@ -894,10 +1020,12 @@ key	Home	Home
 	Import {name}	{name} içe aktar
 	Importing data arrives on the web with file pickers for data files	Veri içe aktarma web'de veri dosyası seçicileriyle birlikte sunulacaktır
 	In multiple files	Birden çok dosyada
+	In streams that use LZW encoding, use Flate instead	LZW kodlamalı akışlarda bunun yerine Flate kullan
 	In this file	Bu dosyada
 	Includes unsaved changes	Kaydedilmemiş değişiklikleri içerir
 	Incorrect password. Try again.	Yanlış parola. Tekrar deneyin.
 	Indent	Girintiyi artır
+	Information	Bilgi
 	Initial View	İlk Görünüm
 	Initials	Paraf
 	initials	paraf
@@ -909,6 +1037,7 @@ key	Home	Home
 	Insert Date	Tarih Ekle
 	Insert Page Number	Sayfa Numarası Ekle
 	Insert pages	Sayfalar ekle
+	Insert pages from a file after the selection…	Seçimin ardından dosyadan sayfa ekle…
 	Insert pages from a file…	Dosyadan sayfa ekle…
 	Insert pages from file…	Dosyadan sayfa ekle…
 	Insert pages from {name}	{name} belgesinden sayfalar ekle
@@ -932,9 +1061,12 @@ key	Home	Home
 	Issued by: 	Veren: 
 	Issued to	Verilen kişi/kurum
 	Issuer	Veren
+	italic	italik
 	Item List	Öğe Listesi
 	Item:	Öğe:
 	Items marked Ready work today.	Hazır olarak işaretlenen öğeler bugün çalışmaktadır.
+	its alternate text is inside another element's and will never be read	alternatif metni başka bir öğeninkinin içinde ve hiçbir zaman okunmayacak
+	Its script also reads fields whose names it builds as it runs, so those reads can't be checked.	Komut dosyası, adlarını çalışırken oluşturduğu alanları da okur; bu okumalar denetlenemez.
 	Its security settings don't allow copying pages	Güvenlik ayarları sayfaların kopyalanmasına izin vermiyor
 	January	Ocak
 	JavaScript	JavaScript
@@ -942,6 +1074,7 @@ key	Home	Home
 	JavaScript console…	JavaScript konsolu…
 	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript kapalı (Tercihler > JavaScript).
 	JavaScript, e.g. getField("total").value	JavaScript, ör. getField("total").value
+	JBIG2 (lossless)	JBIG2 (kayıpsız)
 	Join the ArtCraft community	ArtCraft topluluğuna katılın
 	Join the ArtCraft Discord	ArtCraft Discord'una katıl
 	July	Temmuz
@@ -950,7 +1083,9 @@ key	Home	Home
 	Keep source fonts	Kaynak yazı tiplerini koru
 	Keep tool selected	Aracı seçili tut
 	Keep tool selected: on	Aracı seçili tut: açık
+	Key Agreement	Anahtar Anlaşması
 	Key Algorithm	Anahtar Algoritması
+	Key Encipherment	Anahtar Şifreleme
 	Key usage	Anahtar kullanımı
 	Keyboard shortcuts	Klavye kısayolları
 	Keychain  ·  	Anahtar Zinciri  ·  
@@ -960,8 +1095,11 @@ key	Home	Home
 	Landscape Pages	Yatay Sayfalar
 	Landscape pages	Yatay sayfalar
 	Larger pages	Daha büyük sayfalar
+	Larger thumbnails	Küçük resimleri büyüt
 	Last commit	Son işleme
+	Later in calculation order	Hesaplama sırasında daha sonra
 	Later in tab order	Sekme sırasında daha sonra
+	Layer options	Katman seçenekleri
 	Layers Panel and Page	Katmanlar Paneli ve Sayfa
 	Layout and Magnification	Düzen ve Büyütme
 	Lbl and LBody	Lbl ve LBody
@@ -971,6 +1109,7 @@ key	Home	Home
 	Left Footer Text	Sol Altbilgi Metni
 	Left Header Text	Sol Üstbilgi Metni
 	Left out: {names}	Dışarıda bırakılanlar: {names}
+	Level {n}	Düzey {n}
 	LI must be a child of L	LI, L öğesinin alt öğesi olmalıdır
 	Light blue	Açık mavi
 	Light theme	Açık tema
@@ -985,6 +1124,9 @@ key	Home	Home
 	Link Appearance	Bağlantı Görünümü
 	Link Properties	Bağlantı Özellikleri
 	Link Type:	Bağlantı Türü:
+	Link URL	Bağlantı URL'si
+	links	bağlantılar
+	Links on page	Sayfadaki bağlantılar
 	Links, actions and JavaScripts	Bağlantılar, eylemler ve JavaScript'ler
 	List box	Liste kutusu
 	List Box Properties	Liste Kutusu Özellikleri
@@ -994,14 +1136,17 @@ key	Home	Home
 	Lists	Listeler
 	Load document font	Belge yazı tipini yükle
 	Load font…	Yazı tipi yükle…
+	Loading…	Yükleniyor…
 	Local cross-PDF links require the desktop app	PDF'ler arası yerel bağlantılar masaüstü uygulamasını gerektirir
 	Location: 	Konum: 
 	Lock comment	Yorumu kilitle
 	Logical Reading Order	Mantıksal Okuma Sırası
 	Looking for PDFs…	PDF'ler aranıyor…
 	Looking for printers…	Yazıcılar aranıyor…
+	Loop	Döngü
 	Low resolution	Düşük çözünürlük
 	Low Resolution (150 dpi)	Düşük Çözünürlük (150 dpi)
+	Lowering this forgets the oldest files. At 0 there is no list.	Bu değeri düşürmek en eski dosyaları unutturur. 0'da liste olmaz.
 	Make accessible	Erişilebilir yap
 	Make Current Properties Default	Geçerli Özellikleri Varsayılan Yap
 	Make Properties Default	Özellikleri Varsayılan Yap
@@ -1024,6 +1169,7 @@ key	Home	Home
 	Mark with checkmark	Onay işaretiyle işaretle
 	Marked	İşaretlendi
 	Markup	İşaretleme
+	Marquee Zoom	Seçim yakınlaştırma
 	Marquee zoom	Seçim yakınlaştırma
 	Mask:	Maske:
 	Match field sizes	Alan boyutlarını eşleştir
@@ -1045,12 +1191,17 @@ key	Home	Home
 	Merged 1 file into {path}	1 dosya {path} içine birleştirildi
 	Merged {n} files into {path}	{n} dosya {path} içine birleştirildi
 	Merging data files needs the desktop app	Veri dosyalarını birleştirmek masaüstü uygulamasını gerektirir
+	metadata	meta veriler
 	Microsoft Word (.docx)	Microsoft Word (.docx)
 	Midpoints	Orta noktalar
 	Minimum	En Düşük
 	minimum	en küçük
+	Missing field	Eksik alan
+	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	PDF'te kayıtlı hesaplama sırasında yok: diğer PDF görüntüleyicileri bunu hesaplamayabilir.
 	Mixed	Karışık
+calendar weekday	Mo	Pt
 	Modify page	Sayfayı değiştir
+	Monochrome Images	Tek Renkli Resimler
 	More	Daha fazla
 	More options	Diğer seçenekler
 	More options:	Diğer seçenekler:
@@ -1059,6 +1210,7 @@ key	Home	Home
 	Mouse Enter	Fareyle Üzerine Gelme
 	Mouse Exit	Farenin Alandan Ayrılması
 	Mouse Up	Fare Düğmesini Bırakma
+	Mouse wheel scroll speed	Fare tekerleği kaydırma hızı
 	Move bookmark	Yer işaretini taşı
 	Move comment	Yorumu taşı
 	Move down	Aşağı taşı
@@ -1067,37 +1219,46 @@ key	Home	Home
 	Move later	Arkaya taşı
 	Move object	Nesneyi taşı
 	Move objects	Nesneleri taşı
+	Move only what must move, so every field calculates after the fields it reads.	Her alan okuduğu alanlardan sonra hesaplansın diye yalnızca taşınması gerekenleri taşır.
 	Move page	Sayfayı taşı
 	Move pages	Sayfaları taşı
 	Move tag earlier	Etiketi daha erken taşı
 	Move tag later	Etiketi daha geç taşı
 	Move to group	Gruba taşı
 	Move up	Yukarı taşı
+	Moves only what must move	Yalnızca taşınması gerekeni taşır
 	Multi-line	Çok satırlı
 	Multiple	Birden çok
 	Multiple files	Birden çok dosya
 	Multiple selection	Çoklu seçim
 	Multiple words or phrases	Birden çok sözcük veya ifade
+	N or {row} is the row number, {col} the column number, {seq} the cell number. With none of them, the row number goes last.	N veya {row} satır numarası, {col} sütun numarası, {seq} hücre numarasıdır. Hiçbiri yoksa satır numarası sona eklenir.
 	Name on new comments	Yeni yorumlardaki ad
 	Named Destinations	Adlandırılmış Hedefler
 	Navigation links	Gezinme bağlantıları
 	Navigation links are not repetitive	Gezinme bağlantıları yinelenmiyor
+	Navigation rail side	Gezinme çubuğunun kenarı
 	Navigation tab	Gezinme sekmesi
 	needs an AI provider (off by default)	bir yapay zeka sağlayıcısı gerektirir (varsayılan olarak kapalı)
 	Needs manual check	Manuel denetim gerekiyor
 	Negative number style:	Negatif sayı stili:
 	Nested alternate text	İç içe alternatif metin
+	Never	Hiçbir zaman
 	New Action	Yeni Eylem
 	New Action…	Yeni Eylem…
 	New blank PDF	Yeni boş PDF
 	New bookmark	Yeni yer imi
 	New bookmark ({key})	Yeni yer işareti ({key})
+	New bookmark (⌘B)	Yeni yer işareti (⌘B)
 	New bookmarks from structure	Yapıdan yeni yer imleri
+	New bookmarks from text styles	Metin stillerinden yeni yer işaretleri
+	New bookmarks from text styles…	Metin stillerinden yeni yer işaretleri…
 	New file only	Yalnızca yeni dosya
 	New file:	Yeni dosya:
 	New file: {name}	Yeni dosya: {name}
 	New {tool} comments will look like this one	Yeni {tool} yorumları bundan sonra buna benzeyecek
 	Next ({key})	Sonraki ({key})
+	Next (⌘G)	Sonraki (⌘G)
 	Next / previous match	Sonraki / önceki eşleşme
 	Next figure	Sonraki şekil
 	Next month	Sonraki ay
@@ -1105,6 +1266,7 @@ key	Home	Home
 	Next tab	Sonraki sekme
 	Next view	Sonraki görünüm
 	No actions	Eylem yok
+	no alternate text	alternatif metin yok
 	No changes allowed	Değişikliğe izin verilmez
 	No changes to save	Kaydedilecek değişiklik yok
 	No check has run yet.	Henüz denetim yapılmadı.
@@ -1115,11 +1277,16 @@ key	Home	Home
 	No contributor data was built into this copy.	Bu kopyaya hiçbir katkıda bulunan verisi dahil edilmedi.
 	No differences in the text.	Metinde fark yok.
 	No digital IDs yet.	Henüz dijital kimlik yok.
+	No document language is set	Belge dili ayarlanmamış
 	No documents are open	Hiçbir belge açık değil
+	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Bu formdaki hiçbir alan henüz değerini hesaplamıyor. Bir alana özelliklerinin Hesapla sekmesinde bir hesaplama verin, burada görünür.
+	No field reads it	Onu hiçbir alan okumuyor
 	No file chosen	Dosya seçilmedi
 	No fill	Dolgu yok
 	No fonts are referenced by the pages.	Sayfalarda hiçbir yazı tipine başvurulmuyor.
 	No form fields were detected	Hiçbir form alanı algılanmadı
+	no header cells (TH)	başlık hücresi (TH) yok
+	No image on clipboard to paste	Panoda yapıştırılacak görüntü yok
 	No inaccessible scripts	Erişilemeyen komut dosyası yok
 	No issues found	Sorun bulunamadı
 	No links to remove	Kaldırılacak bağlantı yok
@@ -1127,7 +1294,9 @@ key	Home	Home
 	No matching tools	Eşleşen araç yok
 	No model credits were built into this copy.	Bu kopyaya hiçbir model kredisi dahil edilmedi.
 	No openly licensed document fonts found. Load a font file.	Açık lisanslı belge yazı tipi bulunamadı. Bir yazı tipi dosyası yükleyin.
+	No order can fix a loop. Change one of the formulas.	Hiçbir sıra bir döngüyü düzeltemez. Formüllerden birini değiştirin.
 	no output folder was chosen	çıktı klasörü seçilmedi
+	No page has text: the document appears to be images of pages	Hiçbir sayfada metin yok: belge sayfa resimlerinden oluşuyor gibi görünüyor
 	No pages match those choices	Bu seçimlerle eşleşen sayfa yok
 	No pages selected	Hiçbir sayfa seçilmedi
 	No PDFs found in {folder}	{folder} içinde PDF bulunamadı
@@ -1138,14 +1307,18 @@ key	Home	Home
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Yazıcı bulunamadı. Yazıcının yüklü olduğunu ve yazdırma biriktiricisinin çalıştığını denetleyip Yazdır'ı yeniden açın.
 	No problems found: the document conforms to {level}.	Sorun bulunamadı: Belge {level} standardına uygundur.
 	No recent files	Son kullanılan dosya yok
+	No results	Sonuç yok
 	No security	Güvenlik yok
 	No sheets	Yaprak yok
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Çerçevede imza bulunamadı. Çerçeveyi imzanın üzerine taşıyın veya mürekkep hassasiyetini artırın.
 	No status has been set.	Herhangi bir durum ayarlanmadı.
 	no such document	böyle bir belge yok
+	no summary	özet yok
+	No tools match your search.	Aramanızla eşleşen araç yok.
 	No unlinked web addresses were found in the text	Metinde bağlantısız web adresi bulunamadı
 	No untagged content was found.	Etiketlenmemiş içerik bulunamadı.
 	no unused output name	kullanılmayan çıktı adı yok
+	Non-Repudiation	İnkâr Edilemezlik
 	none	yok
 	None (prefix only)	Yok (yalnızca önek)
 	None found	Hiçbir şey bulunamadı
@@ -1153,6 +1326,11 @@ key	Home	Home
 	None — everything is allowed	Yok — her şeye izin verilir
 scroll speed	Normal	Orta
 	Not allowed	İzin verilmiyor
+	not in a Table, THead, TBody or TFoot	bir Table, THead, TBody ya da TFoot içinde değil
+	not in a TR	bir TR içinde değil
+	not in an L (list)	bir L (liste) içinde değil
+	not in an LI (list item)	bir LI (liste öğesi) içinde değil
+	Not in order	Sırada değil
 	Not now	Şimdi değil
 	Not present	Mevcut değil
 	Note	Not
@@ -1166,9 +1344,11 @@ scroll speed	Normal	Orta
 	Number of pages	Sayfa sayısı
 	Number pages	Sayfaları numaralandır
 	Number pages…	Sayfaları numaralandır…
+	Numbered list	Numaralı liste
 	October	Ekim
 	Odd pages	Tek sayfalar
 	Odd Pages Only	Yalnızca Tek Sayfalar
+	of	/
 	of the following fields:	aşağıdaki alanların:
 	of {name}	{name} belgesinden
 	of {pages}	/ {pages}
@@ -1191,6 +1371,7 @@ animation effects	On	Açık
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Yalnızca sayfa içeriği değişir: Orijinal sayfalardaki bağlantılar, yorumlar, form alanları ve yer işaretleri korunur.
 	Open a document first	Önce bir belge açın
 	Open a PDF ({key})	Bir PDF aç ({key})
+	Open a PDF (⌘O)	PDF aç (⌘O)
 	Open a PDF to measure it.	Ölçmek için bir PDF açın.
 	Open a web link	Web bağlantısı aç
 	Open a web page	Web sayfası aç
@@ -1198,6 +1379,7 @@ animation effects	On	Açık
 	Open arrow	Açık ok
 	Open email app	E-posta uygulamasını aç
 	Open file	Dosya aç
+	Open folder	Klasörü aç
 	Open in a new tab	Yeni sekmede aç
 	Open in Full Screen mode	Tam Ekran modunda aç
 	Open in Full Screen mode?	Tam ekran modunda açılsın mı?
@@ -1227,13 +1409,18 @@ animation effects	On	Açık
 	Optimizing… writing the copy	En iyileştiriliyor… kopya yazılıyor
 	Optional	İsteğe bağlı
 	Optional: needs an AI provider you configure	İsteğe bağlı: yapılandıracağınız bir yapay zeka sağlayıcısı gerektirir
+	Options for this reply	Bu yanıtın seçenekleri
+	Order · top calculates first	Sıra · üstteki önce hesaplanır
 	Organization Name	Kurum Adı
 	Organizational Unit	Kurumsal Birim
+	Organize	Düzenle
 	Organize pages	Sayfaları düzenle
 	Original: replace pages	Orijinal: değiştirilecek sayfalar
+	other changes	diğer değişiklikler
 	Other colour…	Diğer renk…
 	Other elements alternate text	Diğer öğelerin alternatif metni
 	Other elements that require alternate text	Alternatif metin gerektiren diğer öğeler
+	Other options	Diğer seçenekler
 	Outdent	Girintiyi azalt
 	Outline colour:	Kenar rengi:
 	Output	Çıktı
@@ -1244,6 +1431,7 @@ animation effects	On	Açık
 	Owner password (no restrictions apply)	İzin parolası (hiçbir kısıtlama uygulanmaz)
 	Page background	Sayfa arka planı
 	Page Content	Sayfa İçeriği
+	page content	sayfa içeriği
 	Page display	Sayfa görünümü
 	Page display: {layout}	Sayfa görünümü: {layout}
 	Page does not require timed responses	Sayfa zamanlanmış yanıt gerektirmiyor
@@ -1255,17 +1443,30 @@ animation effects	On	Açık
 	Page Only	Yalnızca Sayfa
 	Page options	Sayfa seçenekleri
 	Page order:	Sayfa sırası:
+	Page Properties	Sayfa Özellikleri
 	Page properties	Sayfa özellikleri
+	Page properties…	Sayfa özellikleri…
 	Page Range	Sayfa Aralığı
 	Page Range Options	Sayfa Aralığı Seçenekleri
 	Page size	Sayfa boyutu
 	Page Sizing & Handling	Sayfa Boyutlandırma ve İşleme
 	Page thumbnails	Sayfa küçük resimleri
+	Page tools	Sayfa araçları
 	Page transitions	Sayfa geçişleri
 	Page will not cause screen flicker	Sayfa ekran titremesine neden olmaz
 	Page {label}	Sayfa {label}
+	Page {n}	Sayfa {n}
+	page {n} is out of range (1–{count})	{n}. sayfa aralığın dışında (1–{count})
+	Page {n} of {total}	Sayfa {n} / {total}
+	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Arka plan eklendikten sonra değişen sayfa, bu yüzden kendi beyaz dolgusu kapalı kalıyor: {pages}. Beyaz kâğıtta aynı görünür.
+	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Arka planı gizleyecek kendi beyaz dolgusu olan sayfa: {pages}. Değiştir
+	Page {p} doesn't tab in structure order	{p}. sayfanın sekme sırası yapı sırasını izlemiyor
 	Page {p} of {n}	Sayfa {p} / {n}
+	Page {p}: {n} untagged content item	Sayfa {p}: {n} etiketsiz içerik öğesi
+	Page {p}: {n} untagged content items	Sayfa {p}: {n} etiketsiz içerik öğesi
+	Page {} has additional actions	{}. sayfanın ek eylemleri var
 	pages	sayfa
+	pages added or removed	eklenen ya da kaldırılan sayfalar
 	Pages counted	Sayılan sayfalar
 	Pages from	Sayfa aralığı:
 	Pages of {name} to combine, e.g. 1-3, 6	{name} belgesinin birleştirilecek sayfaları, ör. 1-3, 6
@@ -1276,9 +1477,14 @@ animation effects	On	Açık
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Yalnızca metin resimlerinden oluşan sayfalar sesli okunamıyor veya aranamıyor. Metin katmanı eklemek için metni tanıyın (OCR).
 	Pages to Print	Yazdırılacak Sayfalar
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Bağlantı, yorum veya alan içeren sayfalar yapı sırasına göre sekmelenmelidir. Düzeltme, her sayfanın sekme sırasını Belge Yapısını Kullan olarak ayarlar.
+	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Arka plan eklendikten sonra değişen sayfalar, bu yüzden kendi beyaz dolguları kapalı kalıyor: {pages}. Beyaz kâğıtta aynı görünürler.
+	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Arka planı gizleyecek kendi beyaz dolgusu olan sayfalar: {pages}. Değiştir
 	Pages:	Sayfalar:
 	Pages: {k} of {n}	Sayfalar: {k} / {n}
+	Panel layout could not be restored: {error}	Panel düzeni geri yüklenemedi: {error}
+	Panel move was not applied: {error}	Panel taşıma uygulanmadı: {error}
 	Paper:	Kağıt:
+	Paragraph spacing	Paragraf aralığı
 	Part of	Şunun parçası:
 	Passed	Geçti
 	Password protection will be applied when you save	Parola koruması kaydettiğinizde uygulanacaktır
@@ -1298,12 +1504,12 @@ animation effects	On	Açık
 	PDF version	PDF sürümü
 	PDF, images and text	PDF, resimler ve metin
 	PDF/A…	PDF/A…
+	PdfCraft can't check this signature yet: {}.	PdfCraft bu imzayı henüz denetleyemiyor: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft normal şekilde kapanmadı. Bu belgelerde otomatik olarak kaydedilen değişiklikler vardı:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft grafik işlemcisi olmadan çizim yapıyor, bu nedenle yavaş olabilir. Grafik sürücüsünü güncellemek yardımcı olabilir.
 	PdfCraft on GitHub	GitHub'da PdfCraft
 	PdfCraft web page	PdfCraft web sayfası
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft çevrimdışı çalışır. Bir sağlayıcı eklemediğiniz sürece telemetri yok, hesap yok ve bulut işleme yok.
-	PdfCraft {c} is up to date.	PdfCraft {c} güncel.
 	PdfCraft {v} is available.	PdfCraft {v} kullanılabilir.
 	People may need more time to respond. Check that nothing has a time limit.	Kullanıcıların yanıt vermek için daha fazla zamana ihtiyacı olabilir. Hiçbir şeyin zaman sınırı olmadığını denetleyin.
 	Permissions password	İzin parolası
@@ -1311,14 +1517,23 @@ animation effects	On	Açık
 	Phone Number	Telefon Numarası
 	Phone Numbers	Telefon Numaraları
 	Pick a tool in the quick bar, or type above.	Hızlı çubuktan bir araç seçin veya yukarıya yazın.
+	Pictures cover pages {pages} (scans?), so the background won't show there.	Resimlerle kaplı sayfalar (tarama mı?): {pages}; arka plan orada görünmez.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Resimlerin bunları tanımlayan bir alternatif metne ihtiyacı vardır veya dekoratif olarak işaretlenmelidir. Her şekle alternatif metin ekleyin.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	Bu sayfalardaki resimler de tanınır; sayfanın metninde zaten bulunan sözcükler yeniden eklenmez
+	Pin	Sabitle
 	Pin a folder to Home	Giriş'e bir klasör sabitle
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	En yeni PDF'lerini burada listelemek için bir klasörü sabitleyin; örneğin tarayıcınızın veya eşitlenmiş bir bulut sürücüsünün bunları kaydettiği yer.
 	Pin a folder…	Klasör sabitle…
+	Pin a tool…	Bir aracı sabitle…
 	Pin folder to Home…	Klasörü Başlangıç'a sabitle…
+	Pin to Home	Giriş'e sabitle
+	Pin tools to Home	Araçları Giriş'e sabitle
+	Pin your favorite tools here for quick access.	Hızlı erişim için favori araçlarınızı buraya sabitleyin.
+	Pinned	Sabitlendi
 	Pinned folders need the desktop app	Sabitlenmiş klasörler masaüstü uygulamasını gerektirir
+	Pinned Tools	Sabitlenen Araçlar
 	Pinned {folder} to Home	{folder} Giriş'e sabitlendi
+	Pinned {tool} to Home	{tool} Ana Sayfaya sabitlendi
 	Place saved {what}	Kayıtlı {what} yerleştir
 	Plain text in reading order; pages are separated by form feeds.	Okuma sırasına göre düz metin; sayfalar sayfa sonlarıyla ayrılır.
 	Planned	Planlandı
@@ -1343,8 +1558,8 @@ animation effects	On	Açık
 	Presentation (.pptx)	Sunum (.pptx)
 	Preview unavailable: {e}	Önizleme kullanılamıyor: {e}
 	Preview: page {p} of {n}	Önizleme: Sayfa {p} / {n}
-	Previous	Previous
 	Previous ({key})	Önceki ({key})
+	Previous (⇧⌘G)	Önceki (⇧⌘G)
 	Previous / next page	Önceki / sonraki sayfa
 	Previous figure	Önceki şekil
 	Previous month	Önceki ay
@@ -1353,19 +1568,23 @@ animation effects	On	Açık
 	Previous view	Önceki görünüm
 	Primary language	Birincil dil
 	Print ({key})	Yazdır ({key})
+	Print (⌘P)	Yazdır (⌘P)
 	Print as image	Resim olarak yazdır
 	Print in grayscale	Gri tonlamalı yazdır
 	Print page border	Sayfa kenarlığını yazdır
 	Print production	Baskı üretimi
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Tek taraflı yazdırın. Sayfaları sırayla tutun, işaretlerden kesin, ardından desteleri soldan sağa, yukarıdan aşağıya istifleyin.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage veya LastPage
+	Printer default	Yazıcı varsayılanı
 	Printer paper and scaling may differ. Check driver settings.	Yazıcı kâğıdı ve ölçekleme farklı olabilir. Sürücü ayarlarını kontrol edin.
 	Printer properties	Yazıcı özellikleri
 	Printing allowed	Baskıya izin verildi
 	Privacy	Gizlilik
 	Private data of other applications	Diğer uygulamaların özel verileri
+	Producer	Üretici
 	product (x)	çarpım (x)
 	Properties…	Özellikler…
+	Protect & Standardize	Koru ve Standartlaştır
 	Protect a PDF	PDF'i koru
 	Protect Using Password	Parola Kullanarak Koru
 	Protect using password…	Parolayla koru…
@@ -1381,10 +1600,15 @@ animation effects	On	Açık
 	Read mode	Okuma modu
 	Read Only	Salt Okunur
 	Reading colours	Okuma renkleri
+	Reading the printer's settings…	Yazıcı ayarları okunuyor…
+	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	{names} alanlarını okur, onlar da bu alanı okur. Hiçbir sıra bir döngüyü düzeltemez: formüllerden birini değiştirin.
+	Reads {name}, which calculates later, so it shows an old value.	Daha sonra hesaplanan {name} alanını okur, bu yüzden eski bir değer gösterir.
+	Reads {name}, which the form doesn't have, so it gets no value there.	Formda olmayan {name} alanını okur, bu yüzden oradan değer alamaz.
 	Reason	Neden
 	Reason: 	Neden: 
 	Recent	Son kullanılanlar
 	Recent colours	Son kullanılan renkler
+	Recent files to keep	Saklanacak son dosya sayısı
 	Recognize Text	Metni Tanı
 	Recognize text	Metni tanı
 	Recognize text in multiple files…	Birden çok dosyada metni tanı…
@@ -1423,6 +1647,8 @@ animation effects	On	Açık
 	Remove background	Arka planı kaldır
 	Remove checkmark	Onay işaretini kaldır
 	Remove Crop	Kırpmayı kaldır
+	Remove crop	Kırpmayı kaldır
+	Remove from hotbar	Kısayol çubuğundan kaldır
 	Remove from Recent	Son kullanılanlardan kaldır
 	Remove header & footer	Üstbilgi ve altbilgiyi kaldır
 	Remove hidden information	Gizli bilgileri kaldır
@@ -1442,13 +1668,16 @@ animation effects	On	Açık
 	Remove {name} from Recent	{name} öğesini son kullanılanlardan kaldır
 	Remove {n} files	{n} dosyayı kaldır
 	Remove {n} pages	{n} sayfayı kaldır
+	Remove {standard} identification	{standard} tanımlamasını kaldır
 	Removed 1 hidden item. Save to remove them from the file.	1 gizli öğe kaldırıldı. Dosyadan kaldırmak için kaydedin.
 	Removed 1 link	1 bağlantı kaldırıldı
 	Removed {n} hidden items. Save to remove them from the file.	{n} gizli öğe kaldırıldı. Dosyadan kaldırmak için kaydedin.
 	Removed {n} links	{n} bağlantı kaldırıldı
+	Removing the background puts the page's own backdrop back.	Arka planı kaldırmak, sayfanın kendi beyaz dolgusunu geri getirir.
 	Rename	Yeniden Adlandır
 	Rename bookmark	Yer işaretini yeniden adlandır
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Oluşturma: hayro (bootstrap) · Arayüz: egui · Simgeler: Lucide (ISC) · Yazı Tipleri: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering…	İşleniyor…
 	Reopen Closed Tab	Kapatılan sekmeyi yeniden aç
 	Reopen the files that were open when PdfCraft last closed	PdfCraft en son kapatıldığında açık olan dosyaları yeniden aç
 	Repair log	Onarım günlüğü
@@ -1469,6 +1698,7 @@ animation effects	On	Açık
 	Replaces the existing one on those pages.	Bu sayfalardaki mevcut olanın yerini alır.
 	Replacing images arrives on the web with image file pickers	Resimleri değiştirme web'de resim dosyası seçicileriyle birlikte sunulacaktır
 	Replacing images on page {p} arrives on the web with image pickers ({i})	Sayfa {p} üzerindeki resimlerin değiştirilmesi web'de resim seçicilerle ({i}) sunulacaktır
+	Report created	Rapor oluşturuldu
 	Report Options	Rapor Seçenekleri
 	Report…	Rapor…
 	Required	Gerekli
@@ -1477,12 +1707,20 @@ animation effects	On	Açık
 	Reset columns	Sütunları sıfırla
 	Reset page size	Sayfa boyutunu sıfırla
 	Reset panel layout	Panel düzenini sıfırla
+	Reset side panels	Yan panelleri sıfırla
+	Reset to Initial Visibility	Başlangıç görünürlüğüne sıfırla
 	Reset to printer defaults	Yazıcı varsayılanlarına sıfırla
+	Reshape comment	Yorumun şeklini değiştir
 	Resize comment	Yorumu yeniden boyutlandır
 	Resize window to initial page	Pencereyi başlangıç sayfasına göre yeniden boyutlandır
+	Restore the last view (page, zoom and page display) when a document is opened again	Bir belge yeniden açıldığında son görünümü (sayfa, yakınlaştırma ve sayfa görünümü) geri yükle
 	Restrictions	Kısıtlamalar
 	Restrictions lifted	Kısıtlamalar kaldırıldı
 	Retain existing	Mevcut olanı koru
+	Rev. {rev}: Certified by an unknown signer	Rev. {rev}: Bilinmeyen bir imzalayan tarafından onaylandı
+	Rev. {rev}: Certified by {name}	Rev. {rev}: {name} tarafından onaylandı
+	Rev. {rev}: Signed by an unknown signer	Rev. {rev}: Bilinmeyen bir imzalayan tarafından imzalandı
+	Rev. {rev}: Signed by {name}	Rev. {rev}: {name} tarafından imzalandı
 	Reveal in File Explorer	Dosya Gezgini’nde göster
 	Reveal in Finder	Finder’da göster
 	Reverse closed arrow	Ters kapalı ok
@@ -1493,6 +1731,7 @@ animation effects	On	Açık
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	“{name}” belgesinin daha önce kaydedilmiş sürümüne geri dönülsün mü? O andan sonraki değişiklikler geri alınamaz.
 	Reverted to the last saved version	Son kaydedilen sürüme geri dönüldü
 	Review	Gözden geçirme
+	Review & Compare	İncele ve Karşılaştır
 	Review History	İnceleme Geçmişi
 	Revisions	Düzeltmeler
 	Rich Text Format (.rtf)	Zengin Metin Biçimi (.rtf)
@@ -1512,15 +1751,22 @@ animation effects	On	Açık
 	Rotate pages clockwise	Sayfaları saat yönünde döndür
 	Rotate pages counterclockwise	Sayfaları saat yönünün tersine döndür
 	Rotate pages…	Sayfaları döndür…
+	Rotate the selected pages clockwise	Seçili sayfaları saat yönünde döndür
+	Rotate the selected pages counterclockwise	Seçili sayfaları saat yönünün tersine döndür
 	Rotate view	Görünümü döndür
 	Rotate view clockwise	Görünümü saat yönünde döndür
 	Rotate view clockwise ({key})	Görünümü saat yönünde döndür ({key})
+	Rotate view clockwise (⇧⌘+)	Görünümü saat yönünde döndür (⇧⌘+)
 	Rotate view counterclockwise	Görünümü saat yönünün tersine döndür
+	Row spacing	Satır aralığı
+	rows have between {min} and {max} columns	satırlarda {min} ile {max} arası sütun var
+	Rule Name	Kural Adı
 	Run	Çalıştır
 	Run a JavaScript	Bir JavaScript çalıştır
 	Run form script	Form komut dosyasını çalıştır
 	Run JavaScript	JavaScript çalıştır
 	Running action… file {d} of {t}	Eylem çalıştırılıyor… Dosya {d} / {t}
+calendar weekday	Sa	Ct
 	Same as interface ({language})	Arayüz ile aynı ({language})
 	Sanitize	Temizle
 	Sanitize document	Belgeyi temizle
@@ -1537,9 +1783,12 @@ animation effects	On	Açık
 	Save as PDF/A-3b	PDF/A-3b olarak kaydet
 	Save as PDF/UA	PDF/UA olarak kaydet
 	Save as PDF/X	PDF/X olarak kaydet
+	Save as {level}	{level} olarak kaydet
 	Save as…	Farklı kaydet…
 	Save attachment…	Eki kaydet…
 	Save changes to “{name}” before closing?	Kapatmadan önce “{name}” üzerindeki değişiklikler kaydedilsin mi?
+	Save changes?	Değişiklikler kaydedilsin mi?
+	Save file	Dosyayı kaydet
 	Save image	Resmi kaydet
 	Save Image As…	Resmi Farklı Kaydet…
 	Save or revert changes before selecting another tag.	Başka bir etiket seçmeden önce değişiklikleri kaydedin veya geri alın.
@@ -1558,11 +1807,13 @@ animation effects	On	Açık
 	Saved {place}: {before} → {after} (not smaller){detail}	{place} kaydedildi: {before} → {after} (küçülmedi){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	{place} kaydedildi: {before} → {after} (%{pct} daha küçük){detail}
 	Saved, but reopening failed: {e}	Kaydedildi, ancak yeniden açma başarısız oldu: {e}
+	Scale	Ölçek
 	Scale relative to target page	Hedef sayfaya göre ölçekle
 	Scan	Tara
 	Scan & OCR	Tara ve OCR
 	Screen flicker	Ekran titremesi
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Ekran okuyucular seslerini belgenin diline göre seçer. Bunu Belge Özellikleri > Gelişmiş > Dil bölümünden ayarlayın.
+	Script	Betik
 	Script Name:	Komut Dosyası Adı:
 	Script:	Komut Dosyası:
 	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	Komut dosyasıyla oluşturulan içerik klavye ve yardımcı teknolojiyle kullanılabilir olmalıdır. Belgenin komut dosyalarını denetleyin.
@@ -1573,11 +1824,17 @@ animation effects	On	Açık
 	Scroll speed (mouse wheel and arrow keys)	Kaydırma hızı (fare tekerleği ve ok tuşları)
 	Scroll tabs left	Sekmeleri sola kaydır
 	Scroll tabs right	Sekmeleri sağa kaydır
+	Search all tools…	Tüm araçlarda ara…
 	Search comments	Yorumları ara
+	Search results	Arama sonuçları
+	Search settings…	Ayarlarda ara…
+	Search tools and commands	Araçları ve komutları ara
 	Search tools and commands…	Araçları ve komutları ara…
+	Search tools…	Araçları ara…
 	Searchable Image (Exact)	Aranabilir Resim (Tam)
 	Searching… {s} of {p} pages	Aranıyor… {s} / {p} sayfa
 	Searching… {s}/{p}	Aranıyor… {s}/{p}
+	Search…	Ara…
 	Security method	Güvenlik yöntemi
 	Security properties	Güvenlik özellikleri
 	Security properties…	Güvenlik özellikleri…
@@ -1590,6 +1847,7 @@ animation effects	On	Açık
 	Select a password-protected file first	Önce parola korumalı bir dosya seçin
 	Select a word	Bir kelime seç
 	Select Action:	Eylem Seçin:
+	Select all	Tümünü seç
 	Select all pages (Organize)	Tüm sayfaları seç (Düzenle)
 	Select at most 1000 objects at a time.	Bir seferde en fazla 1000 nesne seçin.
 	Select data files to merge	Birleştirilecek veri dosyalarını seçin
@@ -1599,10 +1857,14 @@ animation effects	On	Açık
 	Select page {label}	{label} sayfasını seç
 	Select pages	Sayfaları seç
 	Select the items to remove from this document.	Bu belgeden kaldırılacak öğeleri seçin.
+	Select Tool	Seçim Aracı
+	Select tools to display on your Home page for quick access.	Hızlı erişim için Giriş sayfanızda görüntülenecek araçları seçin.
 	Select Trigger:	Tetikleyici Seçin:
 	Selected image files: {count}	Seçilen resim dosyaları: {count}
 	Selected pages	Seçilen sayfalar
 	Self-signed	Kendinden imzalı
+	Send backward	Arkaya gönder
+	Send to back	En arkaya gönder
 	Sending sheet {s} of {n} to {printer}…	{n} yapraktan {s}. yaprak {printer} yazıcısına gönderiliyor…
 	Sending to {printer}…	{printer} yazıcısına gönderiliyor…
 	Sensitivity	Duyarlılık
@@ -1614,6 +1876,7 @@ animation effects	On	Açık
 	Set Alternate Text	Alternatif Metni Ayarla
 	Set alternate text	Alternatif metni ayarla
 	Set bookmark destination	Yer işareti hedefini belirle
+	Set calculation order	Hesaplama sırasını ayarla
 	Set document title	Belge başlığını ayarla
 	Set Fields to Same Size	Alanları Aynı Boyuta Ayarla
 	Set layer visibility	Katman görünürlüğünü ayarla
@@ -1646,12 +1909,18 @@ key	Shift	Shift
 	ships in milestone {m}	{m} kilometre taşında çıkacak
 	Show a basic title bar for the window buttons instead of the tab strip. GNOME doesn't draw title bars for apps, so this one doesn't follow its theme.	Sekme çubuğu yerine pencere düğmeleri için basit bir başlık çubuğu göster. GNOME uygulamalar için başlık çubuğu çizmez, bu yüzden bu çubuk onun temasına uymaz.
 	Show a field	Alanı göster
+	Show a notice when a document is secured	Bir belge güvenli olduğunda bildirim göster
 	Show all	Tümünü göster
 	Show all comments	Tüm yorumları göster
 	Show certificate…	Sertifikayı göster…
 	Show cover page in two-page view	İki sayfa görünümünde kapak sayfasını göster
+	Show gaps between pages	Sayfalar arasındaki boşlukları göster
 	Show layer	Katmanı göster
 	Show less	Daha az göster
+	Show on the page which fields each field reads	Her alanın hangi alanları okuduğunu sayfada göster
+	Show or hide the side panel	Yan paneli göster veya gizle
+	Show or hide the Tools panel	Araçlar panelini göster veya gizle
+	Show Page Edge Shadows	Sayfa kenarı gölgelerini göster
 	Show password	Parolayı göster
 	Show Report	Raporu Göster
 	Show the accessibility report	Erişilebilirlik raporunu göster
@@ -1659,6 +1928,7 @@ key	Shift	Shift
 	Show {n} more	{n} tane daha göster
 	Shown while the pointer is over a mark.	İşaretçi bir işaretin üzerindeyken gösterilir.
 	Shrink oversized pages	Büyük sayfaları küçült
+	Shrink the page content to make room for the header and footer	Üst bilgi ve alt bilgiye yer açmak için sayfa içeriğini küçült
 	Side by side	Yan yana
 	Side panels	Yan paneller
 	Sign	İmzala
@@ -1670,9 +1940,12 @@ key	Shift	Shift
 	Signature	İmza
 	signature	imza
 	Signature Details	İmza Ayrıntıları
+	Signature is invalid	İmza geçersiz
 	Signature is INVALID:	İmza GEÇERSİZ:
+	Signature is valid	İmza geçerli
 	Signature is valid:	İmza geçerli:
 	Signature panel	İmza paneli
+	Signature validity is unknown	İmzanın geçerliliği bilinmiyor
 	Signature validity is UNKNOWN:	İmza geçerliliği BİLİNMİYOR:
 	Signatures	İmzalar
 	Signatures panel	İmzalar paneli
@@ -1681,6 +1954,7 @@ key	Shift	Shift
 	Signer	İmzalayan
 	Signer's name	İmzalayanın adı
 	Signing time	İmzalama zamanı
+	Signing time is from the clock on the signer's computer.	İmzalama zamanı, imzalayanın bilgisayarındaki saatten alınmıştır.
 	Simplified field notation:	Basitleştirilmiş alan gösterimi:
 	Single file	Tek dosya
 	Single Page	Tek Sayfa
@@ -1692,6 +1966,7 @@ key	Shift	Shift
 	Slash	Eğik çizgi
 scroll speed	Slow	Yavaş
 	Smaller pages	Daha küçük sayfalar
+	Smaller thumbnails	Küçük resimleri küçült
 	Snap to drawing	Çizime yakala
 	Snapping	Yakalama
 	Social Security Number	Sosyal Güvenlik Numarası
@@ -1699,6 +1974,7 @@ scroll speed	Slow	Yavaş
 	Solid	Düz
 	Some bookmarks are not shown here: the panel lists a limited number, nested a limited depth.	Bazı yer imleri burada gösterilmiyor: panel sınırlı sayıda ve sınırlı derinlikte listeler.
 	Some content could not be classified safely and was kept in the count.	Bazı içerikler güvenilir biçimde sınıflandırılamadığı için sayıma dahil edildi.
+	Some names are built as it runs	Bazı adlar çalışırken oluşturuluyor
 	Some page content couldn't be read; snapping uses the rest.	Bazı sayfa içerikleri okunamadı; yakalama geri kalanını kullanır.
 	Some pages contain no countable text. Scanned images need OCR first.	Bazı sayfalarda sayılabilecek metin yok. Taranmış görüntüler için önce OCR gerekir.
 	Sort by	Sırala
@@ -1724,14 +2000,19 @@ action wizard	Start	Başlat
 	Start Checking	Denetimi Başlat
 	Start page number	Başlangıç sayfa numarası
 	Steps	Adımlar
+	Stick to a side:	Bir kenara yapıştır:
 	Sticky note	Not
+	Still rendering — this page is unusually complex…	Hâlâ işleniyor — bu sayfa alışılmadık derecede karmaşık…
 	Strength: {s}	Güç: {s}
 	Strikethrough	Üstü çizili
 	Strikethrough text	Metnin üstünü çiz
 	Strong	Güçlü
 	Structure Info	Yapı Bilgisi
+calendar weekday	Su	Pz
 certificate	Subject	Konu
 	Submit a form	Formu gönder
+	Subscript	Alt simge
+	Success	Başarılı
 	sum (+)	toplam (+)
 	Summarize	Özetle
 	Summarize comments	Yorumları özetle
@@ -1739,6 +2020,7 @@ certificate	Subject	Konu
 	Switch light / dark theme	Açık / koyu temaya geç
 	Switch to List view to change the pages it takes.	Alacağı sayfaları değiştirmek için Liste görünümüne geçin.
 	Switch to two-page view first to show the cover page	Kapak sayfasını göstermek için önce iki sayfalı görünüme geçin
+	Tab Order	Sekme Sırası
 	Tab order	Sekme sırası
 	Tab order by columns	Sütunlara göre sekme sırası
 	Tab order by rows	Satırlara göre sekme sırası
@@ -1767,48 +2049,79 @@ certificate	Subject	Konu
 	Text alignment:	Metin hizalama:
 	Text box	Metin kutusu
 	Text Color:	Metin Rengi:
+	Text editing line	Metin düzenleme satırı
 	Text field	Metin alanı
 	Text Field Properties	Metin Alanı Özellikleri
+	Text Field Table	Metin alanı tablosu
+	Text field table	Metin alanı tablosu
 	Text in images isn't found; recognise text (OCR) first.	Resimlerdeki metin bulunamaz; önce metni tanıyın (OCR).
 	Text is compared word by word; the differences are shown on the new file.	Metin sözcük sözcük karşılaştırılır; farklılıklar yeni dosyada gösterilir.
 	Text language is specified	Metin dili belirtildi
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Az gören kişiler için metnin arka planıyla yeterince kontrast oluşturması gerekir. Renkleri gözle veya bir kontrast aracıyla denetleyin.
 	Text recognition is already running	Metin tanıma zaten çalışıyor
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Metin tanıma yüklü değil: model dosyaları eksik. PdfCraft'ı yeniden yükleyin veya PDFCRAFT_MODELS ortam değişkenini bunları içeren klasöre ayarlayın.
+	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Metin tanıma kurulu değil: modelleri eksik (`cargo xtask models` çalıştırın ya da PDFCRAFT_MODELS ayarlayın).
 	Text to find	Aranacak metin
 	Text to insert	Eklenecek metin
+	Text to place	Yerleştirilecek metin
 	Text used as a clipping path cannot be moved with this selection.	Kırpma yolu olarak kullanılan metin bu seçimle taşınamaz.
 	Text, marks and signatures become part of the page. Other comments stay editable.	Metin, işaretler ve imzalar sayfanın bir parçası olur. Diğer yorumlar düzenlenebilir kalır.
+calendar weekday	Th	Pe
 	TH and TD	TH ve TD
 	TH and TD must be children of TR	TH ve TD, TR öğesinin alt öğeleri olmalıdır
 	Thai and Arabic use regular fallback fonts when available.	Tayca ve Arapça, mevcut olduğunda normal yedek yazı tiplerini kullanır.
 	That didn't work: an internal error stopped it ({m}).	Bu işlem yapılamadı: dahili bir hata durdurdu ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Bu işlem yapılamadı: dahili bir hata durdurdu ({m}). Belgeleriniz değişmedi.
+	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	alan, aralık ve sütun genişlikleri sayı olmalı; aralık 0 veya daha büyük, her genişlik 0'dan büyük olmalı
+@plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Hesaplama sırasında hiçbir şey hesaplamayan {n} giriş var. "Sırayı düzelt" bunları kaldırır.|Hesaplama sırasında hiçbir şey hesaplamayan {n} giriş var. "Sırayı düzelt" bunları kaldırır.
+	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	{} sertifikası altında bu kadar çok CA sertifikasına izin vermiyor (yol uzunluğu), bu yüzden {} için güvence olarak kullanılmıyor.
+	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	{} sertifikasında PdfCraft'ın tanımadığı kritik uzantılar var, bu yüzden {} için güvence olarak kullanılmıyor.
+	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	{} sertifikası, sertifika verebilen bir CA sertifikası değil, bu yüzden {} için güvence olarak kullanılmıyor.
+	The certificate of {} was not valid at the time of signing, so it is not used to vouch for {}.	{} sertifikası imzalama sırasında geçerli değildi, bu yüzden {} için güvence olarak kullanılmıyor.
 	The checker found 1 problem which may prevent the document from being fully accessible.	Denetleyici, belgenin tam olarak erişilebilir olmasını engelleyebilecek 1 sorun buldu.
 	The checker found no problems in this document.	Denetleyici bu belgede herhangi bir sorun bulamadı.
+	The checker found problems which may prevent the document from being fully accessible.	Denetleyici, belgenin tam olarak erişilebilir olmasını engelleyebilecek sorunlar buldu.
 	The checker found {n} problems which may prevent the document from being fully accessible.	Denetleyici, belgenin tam olarak erişilebilir olmasını engelleyebilecek {n} sorun buldu.
 	The clipboard has no image or text	Panoda resim veya metin yok
 	The document changed while you were choosing a file, so nothing was changed.	Bir dosya seçerken belge değişti, bu yüzden hiçbir şey değiştirilmedi.
 	The document changed while you were editing field properties.	Alan özelliklerini düzenlerken belge değişti.
 	The document has additional actions (/AA)	Belgede ek eylemler var (/AA)
+	The document has been altered or corrupted since the signature was applied.	Belge, imza uygulandıktan sonra değiştirilmiş ya da bozulmuş.
+	The document has been altered or corrupted since the timestamp was applied.	Belge, zaman damgası uygulandıktan sonra değiştirilmiş ya da bozulmuş.
+	The document has been altered since this signature was applied in ways it does not permit ({}).	Belge, bu imza uygulandıktan sonra imzanın izin vermediği biçimlerde değiştirilmiş ({}).
+	The document has been altered since this timestamp was applied in ways it does not permit ({}).	Belge, bu zaman damgası uygulandıktan sonra damganın izin vermediği biçimlerde değiştirilmiş ({}).
+	The document has been modified since this signature was applied, but the changes are permitted ({}).	Belge, bu imza uygulandıktan sonra değiştirilmiş ancak değişikliklere izin veriliyor ({}).
+	The document has been modified since this timestamp was applied, but the changes are permitted ({}).	Belge, bu zaman damgası uygulandıktan sonra değiştirilmiş ancak değişikliklere izin veriliyor ({}).
 	The document has document-level JavaScript	Belgede belge düzeyinde JavaScript var
 	the document has no form fields	belgede form alanı yok
 	the document has no page tree	belgenin sayfa ağacı yok
 	the document has no tags	belgenin etiketi yok
+	The document has no tags (structure tree)	Belgede etiket (yapı ağacı) yok
+	The document has no title	Belgenin başlığı yok
 	The document has no XMP metadata	Belgede XMP meta verisi yok
 	The document is encrypted	Belge şifreli
 	The document is no longer open.	Belge artık açık değil.
 	the document is protected by a password	belge bir parola ile korunuyor
+	The document isn't marked as tagged (MarkInfo Marked)	Belge etiketli olarak işaretlenmemiş (MarkInfo Marked)
+	The document isn't tagged, so none of its content is	Belge etiketli değil, dolayısıyla içeriğinin hiçbir kısmı etiketli değil
 	The document now conforms to {level}; save it to keep the changes	Belge artık {level} standardına uygundur; değişiklikleri korumak için kaydedin
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Belge parola olmadan açılır; kısıtlamaları değiştirmek için bu parola gerekir. Kaydettiğinizde uygulanır.
 	The document was closed before it could be saved.	Belge kaydedilmeden önce kapatıldı.
+	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Belgeye gömülü iptal bilgileri, imzalayanın sertifikasının iptal edilmediğini gösteriyor.
 	The document's security settings don't allow copying text and images	Belgenin güvenlik ayarları metin ve resimlerin kopyalanmasına izin vermiyor
 	The document's security settings don't allow filling in form fields	Belgenin güvenlik ayarları form alanlarının doldurulmasına izin vermiyor
+	The document's security settings don't allow printing	Belgenin güvenlik ayarları yazdırmaya izin vermiyor
 	The document's security settings don't allow this change	Belgenin güvenlik ayarları bu değişikliğe izin vermiyor
+	The ECDSA signature is not in canonical DER (trailing bytes, padding or a missing sign byte); it was read anyway.	ECDSA imzası kurallı DER biçiminde değil (sondaki baytlar, dolgu ya da eksik işaret baytı); yine de okundu.
+	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	ECDSA imzası bir DER dizisi yerine ham r ve s değerlerinden oluşuyor; yine de okundu.
+	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Gömülü zaman damgası belirteci geçerli ve yetkilisine güveniliyor; güvenilir zaman {}.
 	The existing action will be preserved.	Mevcut işlem korunacak.
 	The field properties could not be changed.	Alan özellikleri değiştirilemedi.
 	The field properties dialog is no longer open.	Alan özellikleri iletişim kutusu artık açık değil.
 	The field {name} no longer exists.	{name} alanı artık mevcut değil.
+	the first heading is an H{n}; headings should not skip levels	ilk başlık bir H{n}; başlıklar düzey atlamamalı
+	the first row number can be at most {max}	ilk satır numarası en fazla {max} olabilir
+	The font {} isn't embedded	{} yazı tipi gömülü değil
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraft'ın yazdığı yazı tipleri “{c}” ({code}) karakterini çizemiyor, bu yüzden her PDF görüntüleyicide ? olarak görünür. Metin kaydedilir.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Form {u} adresine gönderilmek isteniyor; PdfCraft form verilerini göndermez. Girdilerinizi korumak için belgeyi kaydedin.
 	The form asks viewers to make appearances (NeedAppearances)	Form, görüntüleyicilerden görünüm oluşturmasını istiyor (NeedAppearances)
@@ -1821,30 +2134,81 @@ certificate	Subject	Konu
 	The labels are in English: the signature's font can't draw them in this language.	Etiketler İngilizce: imzanın yazı tipi bu dilde onları çizemiyor.
 	The linked PDF opened, but its named destination was not applied.	Bağlantılı PDF açıldı, ancak adlandırılmış hedefi uygulanmadı.
 	The linked PDF opened, but its page destination was out of range.	Bağlantılı PDF açıldı, ancak sayfa hedefi aralık dışında.
+	The metadata doesn't identify the file as {}	Meta veriler dosyayı {} olarak tanımlamıyor
+	the name is not a plain file name	ad, basit bir dosya adı değil
 	The newest {n} of {total} PDFs	En yeni {n} / {total} PDF
 	The operation failed.	İşlem başarısız oldu.
+	The order saved in the PDF needs tidying	PDF'te kayıtlı sıranın düzenlenmesi gerekiyor
 	The page has changed; select the image again	Sayfa değişti; resmi yeniden seçin
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sayfalar ayıklandı ancak silinmedi, çünkü bir klasör seçerken belge değişti.
 	the password is incorrect	parola yanlış
+	The password is incorrect.	Parola yanlış.
 	The password is only used to read the file; it isn't saved.	Parola yalnızca dosyayı okumak için kullanılır; kaydedilmez.
+	The password must have at least 6 characters.	Parola en az 6 karakter olmalıdır.
+	The password must have at least 8 characters.	Parola en az 8 karakter olmalıdır.
+	The passwords do not match.	Parolalar eşleşmiyor.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF metin yazı tipleri “{c}” ({code}) karakterini çizemez. Desteklenen bir metin seçin.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Bu baskı için yazıcı sürücüsünün kendi ayarları: kağıt tepsisi, kağıt türü, sonlandırma ve daha fazlası.
 	The replacement file doesn't have that many pages.	Yedek dosyada o kadar sayfa yok.
+	the rows are too short: make the area taller, or use fewer rows or less row spacing	satırlar çok kısa: alanı uzatın ya da daha az satır veya daha az satır aralığı kullanın
+	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA imza değeri, anahtarın modülüyle aynı uzunlukta değil (baştaki sıfır baytlar atılmış ya da eklenmiş); yine de okundu.
+	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	RSA imzasının DigestInfo alanında NULL parametresi yok (eski imzalayıcılar böyle yazar); yine de okundu.
 	The same password is tried on each file.	Her dosyada aynı parola denenir.
+	The security settings don't allow screen readers to read the text	Güvenlik ayarları ekran okuyucuların metni okumasına izin vermiyor
 	The selected area has been copied ({w} × {h} pixels)	Seçilen alan kopyalandı ({w} × {h} piksel)
 	The selected fields could not be found. Select them again.	Seçilen alanlar bulunamadı. Bunları tekrar seçin.
+	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	İmza algoritması ile SignerInfo'nun özet algoritması farklı karma işlevleri belirtiyor; imza SignerInfo'dakiyle oluşturulmuş.
+	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	İmza doğrulanmamış bir zaman damgası taşıyor ({}): zaman damgası yetkilisi güvenilen sertifikalar listenizde değil, bu yüzden onun yerine imzalayanın bildirdiği imzalama zamanı kullanılıyor.
+	The signature contents are not hexadecimal.	İmza içeriği onaltılık değil.
+	The signature could not be checked ({}).	İmza denetlenemedi ({}).
+	The signature could not be read ({}).	İmza okunamadı ({}).
+	The signature could not be verified ({}).	İmza doğrulanamadı ({}).
+	The signature has no valid byte range.	İmzanın geçerli bir bayt aralığı yok.
+	The signature includes an embedded timestamp.	İmza gömülü bir zaman damgası içeriyor.
+	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	İmza DER yerine BER ile kodlanmış (belirsiz uzunluklar); esnek biçimde okundu.
+	The signature uses the legacy adbe.x509.rsa_sha1 format.	İmza eski adbe.x509.rsa_sha1 biçimini kullanıyor.
+	The signature value does not match the signer's certificate: the signature is corrupt.	İmza değeri imzalayanın sertifikasıyla eşleşmiyor: imza bozuk.
 	The signature will be invisible.	İmza görünmez olacak.
+	The signature's byte range does not exclude exactly its contents.	İmzanın bayt aralığı tam olarak kendi içeriğini dışarıda bırakmıyor.
+	The signature's byte range does not match the file.	İmzanın bayt aralığı dosyayla eşleşmiyor.
+	The signature's signed attributes have no content type, which CMS requires; it was read anyway.	İmzanın imzalı özniteliklerinde CMS'in gerektirdiği içerik türü yok; yine de okundu.
+	The signature's signed attributes have no message digest, so the signature does not cover the document.	İmzanın imzalı özniteliklerinde ileti özeti yok, bu yüzden imza belgeyi kapsamıyor.
+	The signature's signed attributes name a content type other than data, so it is not a signature of the document.	İmzanın imzalı öznitelikleri data dışında bir içerik türü belirtiyor, bu yüzden bu bir belge imzası değil.
+	The signature's timestamp token could not be verified ({}).	İmzanın zaman damgası belirteci doğrulanamadı ({}).
+	The signature's timestamp token does not cover the signature value.	İmzanın zaman damgası belirteci imza değerini kapsamıyor.
+	The signed content is a constructed (segmented) OCTET STRING, as BER allows; it was read anyway.	İmzalanan içerik, BER'in izin verdiği gibi oluşturulmuş (parçalı) bir OCTET STRING; yine de okundu.
+	the signed version could not be read	imzalı sürüm okunamadı
+	The signer's certificate does not allow digital signatures (its key usage has neither digital signature nor non-repudiation).	İmzalayanın sertifikası dijital imzaya izin vermiyor (anahtar kullanımında ne dijital imza ne de inkâr edilemezlik var).
+	The signer's certificate has been revoked ({}).	İmzalayanın sertifikası iptal edilmiş ({}).
+	The signer's certificate has critical extensions PdfCraft does not recognize ({}).	İmzalayanın sertifikasında PdfCraft'ın tanımadığı kritik uzantılar var ({}).
+	The signer's certificate is not in the signature.	İmzalayanın sertifikası imzada yok.
+	The signer's certificate is not issued for signing documents (its extended key usage has no document-signing purpose).	İmzalayanın sertifikası belge imzalamak için verilmemiş (genişletilmiş anahtar kullanımında belge imzalama amacı yok).
+	The signer's certificate was not valid at the time of signing.	İmzalayanın sertifikası imzalama sırasında geçerli değildi.
+	The signer's identity is unknown because it has not been included in your list of trusted certificates and none of its parent certificates are trusted certificates.	İmzalayanın kimliği bilinmiyor; çünkü güvenilen sertifikalar listenize eklenmemiş ve üst sertifikalarının hiçbiri güvenilen sertifika değil.
+	The signer's identity is valid.	İmzalayanın kimliği geçerli.
+	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standart yazı tipleri “{c}” ({code}) karakterini çizemiyor. Şimdilik metin olarak yalnızca Batı Avrupa karakterleri eklenebilir.
 	The text is the same	Metin aynı
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	metin tanıma modelleri yüklü değil (PdfCraft'ı yeniden yükleyin veya PDFCRAFT_MODELS değişkenini bunları içeren klasöre ayarlayın)
+	The timestamp authority's certificate is not issued for time stamping.	Zaman damgası yetkilisinin sertifikası zaman damgalama için verilmemiş.
+	The timestamp authority's certificate was not valid at the time of timestamping.	Zaman damgası yetkilisinin sertifikası zaman damgalama sırasında geçerli değildi.
+	The timestamp contents are not hexadecimal.	Zaman damgası içeriği onaltılık değil.
+	The timestamp has no valid byte range.	Zaman damgasının geçerli bir bayt aralığı yok.
+	The timestamp token could not be read ({}).	Zaman damgası belirteci okunamadı ({}).
+	The timestamp token is valid and its authority is trusted.	Zaman damgası belirteci geçerli ve yetkilisine güveniliyor.
+	The timestamp token is valid, but the timestamp authority is not in your list of trusted certificates.	Zaman damgası belirteci geçerli ancak zaman damgası yetkilisi güvenilen sertifikalar listenizde değil.
+	The timestamp's byte range does not exclude exactly its contents.	Zaman damgasının bayt aralığı tam olarak kendi içeriğini dışarıda bırakmıyor.
+	The timestamp's byte range does not match the file.	Zaman damgasının bayt aralığı dosyayla eşleşmiyor.
 	The title in the metadata and the document information differ	Meta verilerdeki başlık ile belge bilgilerindeki başlık farklı
 	the title must not be empty	başlık boş olmamalıdır
 	The value is shown as typed.	Değer yazıldığı gibi gösterilir.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Pencere, dosya adı yerine anlamlı bir başlık göstermelidir. Bir başlık ayarlayın ve İlk Görünüm > Göster: Belge Başlığı'nı seçin.
+	The window shows the file name, not the title (Initial View > Show)	Pencere başlığı değil dosya adını gösteriyor (İlk Görünüm > Göster)
 	The Windows store's digital IDs couldn't be listed: {e}	Windows deposunun dijital kimlikleri listelenemedi: {e}
 	there are no pages to print	yazdırılacak sayfa yok
 	There are no redaction marks (mark text, areas or pages first)	Karartma işareti yok (önce metni, alanları veya sayfaları işaretleyin)
 	There are no redaction marks to apply	Uygulanacak karartma işareti yok
 	there are no redaction marks to apply	uygulanacak karartma işareti yok
+	There is no folder to save the digital ID in.	Dijital kimliğin kaydedileceği bir klasör yok.
 	These files can't be read, so they won't be in the combined PDF:	Bu dosyalar okunamıyor, bu yüzden birleştirilmiş PDF'de yer almayacak:
 	These objects could not be moved. Select them again and try a smaller move.	Bu nesneler taşınamadı. Bunları tekrar seçin ve daha küçük bir taşıma deneyin.
 	Thick	Kalın
@@ -1871,7 +2235,10 @@ certificate	Subject	Konu
 	This document has no restrictions to lift	Bu belgede kaldırılacak kısıtlama yok
 	This document has no signatures.	Bu belgede imza yok.
 	This document has no tagged figures.	Bu belgede etiketli şekil yok.
+	This document has no text to make bookmarks from.	Bu belgede yer işareti oluşturulacak metin yok.
 	This document has no {kind} to change	Bu belgede değiştirilecek {kind} yok
+	This document has not been modified since this signature was applied.	Bu belge, bu imza uygulandığından beri değiştirilmemiş.
+	This document has not been modified since this timestamp was applied.	Bu belge, bu zaman damgası uygulandığından beri değiştirilmemiş.
 	This document hasn't been checked yet.	Bu belge henüz denetlenmedi.
 	This document is secured. Some changes are restricted by its security settings.	Bu belge güvenlidir. Bazı değişiklikler güvenlik ayarlarıyla kısıtlanmıştır.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	bu belge imzalanmış: yeniden yazılması imzalarını geçersiz kılar (bunun yerine aşamalı olarak kaydedin)
@@ -1880,6 +2247,7 @@ certificate	Subject	Konu
 	This drawing exceeds the snapping limit; only the first paths are used.	Bu çizim yakalama sınırını aşıyor; yalnızca ilk yollar kullanılır.
 	This field is locked. Unlock it to change its properties.	Bu alan kilitli. Özelliklerini değiştirmek için kilidini açın.
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	Bu alanın yazı tipi “{c}” ({code}) karakterini çizemiyor, bu yüzden PdfCraft yerine ? gösteriyor. Değer kaydedilir ve diğer PDF görüntüleyiciler alanı ondan yeniden çizer.
+	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	Bu dosya diskte değişti. Yeni sürümü görmek için yeniden yükleyin; kaydedilmemiş değişiklikleriniz kaybolacak.
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Bu dosya diskte değişti. Yeniden yükle yeni sürümü gösterir ve kaydedilmemiş değişikliklerinizi atar; Kaydet onu bu sürümle değiştirir.
 	This file is already as small as it can be made ({size}). No copy was saved.	Bu dosya zaten olabildiğince küçük ({size}). Kopya kaydedilmedi.
 	this file isn't XFDF, FDF, XML or text form data	bu dosya XFDF, FDF, XML veya metin form verisi değil
@@ -1894,8 +2262,12 @@ certificate	Subject	Konu
 	This PDF uses the unsupported {s} action.	Bu PDF desteklenmeyen {s} eylemini kullanıyor.
 	This printer offers no settings of its own.	Bu yazıcı kendi başına hiçbir ayar sunmuyor.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Bu yazıcının sürücüsü diğer programlardan gelen çift taraflı yazdırma ayarlarını kabul etmez, bu yüzden kendi ayarı geçerlidir. Değiştirmek için: Özellikler…
+	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Bu imza, artık imzalar için yeterince güçlü sayılmayan, 2048 bitten kısa bir RSA anahtarı kullanıyor. Hâlâ doğrulanıyor ancak güvenilmemelidir.
+	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Bu imza, artık imzalar için önerilmeyen eski bir 160 bitlik karma algoritması olan RIPEMD-160'ı kullanıyor. Hâlâ doğrulanıyor ancak güvenilmemelidir.
+	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Bu imza, zayıf bir karma algoritması olan SHA-1'i kullanıyor: bu algoritmada çakışmalar gösterilmiştir. Yıllar önce imzalanmış birçok belge onu kullandığı için hâlâ doğrulanıyor ancak güvenilmemelidir.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Bu web adresi, başka bir sitenin adını taklit etmenin yaygın bir yolu olan farklı alfabelerden harfleri karıştırıyor.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Bu web adresi, tanıdık harflere benzeyebilen başka bir alfabeden harfler kullanıyor.
+	Thumbnail size	Küçük resim boyutu
 	Tile scale:	Döşeme ölçeği:
 	Time	Saat
 	Timed responses	Zamanlanmış yanıtlar
@@ -1904,16 +2276,23 @@ certificate	Subject	Konu
 	To change locked fields, also set Locked to No.	Kilitli alanları değiştirmek için Kilitli ayarını da Hayır olarak belirleyin.
 	to {n}	şuraya kadar: {n}
 	To:	Bitiş:
+	Today	Bugün
 	Today: {date}	Bugün: {date}
 	Toggle fit page / fit width	Sayfayı sığdır / genişliğe sığdır geçişi
+	Too early	Çok erken
+	Toolbar size	Araç çubuğu boyutu
 	Tools panel side	Araçlar panelinin yeri
+	Tooltip	İpucu
 	Tooltip:	İpucu:
 	Top-level bookmarks ({n})	Üst düzey yer işaretleri ({n})
 	TR must be a child of Table, THead, TBody, or TFoot	TR; Table, THead, TBody veya TFoot öğesinin alt öğesi olmalıdır
+	Transform image	Görüntüyü dönüştür
 	Trim the picture with its handles; Enter or Done applies	Resmi tutamaçlarıyla kırpın; Enter veya Bitti uygular
 	Trust	Güven
 	Try the form as people filling it in will see it	Formu dolduran kişilerin göreceği şekilde deneyin
+calendar weekday	Tu	Sa
 	Turn upside down (180°)	Baş aşağı çevir (180°)
+	two cells would both be named {name}	iki hücrenin de adı {name} olurdu
 	Two-page view	İki sayfa görünümü
 	Two-sided:	Çift taraflı:
 	Two-Up (Cover Page)	İki Sayfa (Kapak Sayfası)
@@ -1927,6 +2306,7 @@ signature pad	Type	Yaz
 	Type the web address.	Web adresini yazın.
 	Type your {what}.	{what} bilginizi yazın.
 	Unchecked	İşaretsiz
+	Unchecked reads	Denetlenmeyen okumalar
 	Underline	Altı çizili
 	Underline text	Metnin altını çiz
 	Undid {label}	{label} geri alındı
@@ -1942,8 +2322,14 @@ signature pad	Type	Yaz
 	Unlocked: the combined file won't be password-protected	Kilit açıldı: Birleştirilen dosya parola korumalı olmayacak
 	Unlock…	Kilidi aç…
 	Unpin	Sabitlemeyi kaldır
+	Unpin from Home	Giriş'ten sabitlemeyi kaldır
+	Unpin tool	Aracın sabitlemesini kaldır
 	Unpin {folder}	{folder} sabitlemesini kaldır
+	Unpinned {tool} from Home	{tool} Ana Sayfadan kaldırıldı
 	Unplaced	Yerleştirilmemiş
+	Unsigned signature field	İmzalanmamış imza alanı
+	Unsigned signature field: {name}	İmzalanmamış imza alanı: {name}
+	Unspecified	Belirtilmemiş
 	Unsupported measurements	Desteklenmeyen ölçümler
 	Update	Güncelle
 	Update background	Arka planı güncelle
@@ -1956,7 +2342,9 @@ signature pad	Type	Yaz
 	Use 72 DPI (one point per pixel)	72 DPI kullan (piksel başına bir nokta)
 	Use a certificate	Sertifika kullan
 	Use a Digital ID from a file	Dosyadan Dijital Kimlik Kullan
+	Use Column Order	Sütun Sırasını Kullan
 	Use custom DPI	Özel DPI kullan
+	Use Document Structure	Belge Yapısını Kullan
 	Use each image's embedded DPI; use 72 DPI when it is absent.	Her resmin gömülü DPI değerini kullan; yoksa 72 DPI kullan.
 	Use Flate to encode streams that are not encoded	Kodlanmamış akışları kodlamak için Flate kullan
 	Use guided actions	Rehberli eylemleri kullan
@@ -1966,6 +2354,7 @@ signature pad	Type	Yaz
 	Use now	Şimdi kullan
 	Use overlay text	Üst metin kullan
 	Use print production	Baskı üretimini kullan
+	Use Row Order	Satır Sırasını Kullan
 	Use system setting	Sistem ayarını kullan
 	Use system title bar	Sistem başlık çubuğunu kullan
 	Use {what}	{what} kullan
@@ -1987,6 +2376,7 @@ signature pad	Type	Yaz
 	Verify	Doğrula
 	Verify to see what the document needs.	Belgenin neye ihtiyacı olduğunu görmek için doğrulayın.
 	Version {v}	Sürüm {v}
+	Vertical layout	Dikey düzen
 	Vertical reversed	Dikey ters
 	Vertical text cannot be moved with this selection.	Dikey metin bu seçimle taşınamaz.
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	Seslendirilebilmesi için video, ses ve zengin medyanın etiketlenmesi gerekir. Multimedya açıklamalarını etiketleyin.
@@ -1999,8 +2389,8 @@ signature pad	Type	Yaz
 	Viewport rectangle in page points (x, y, width, height)	Sayfa noktalarında görünüm penceresi dikdörtgeni (x, y, genişlik, yükseklik)
 	Visible Rectangle	Görünür Dikdörtgen
 	Visual	Görsel
-	Warning	Warning
 	watermark	filigran
+calendar weekday	We	Ça
 	Weak	Zayıf
 	Welcome to PdfCraft	PdfCraft'a Hoş Geldiniz
 	What takes up the space in this file, by kind of content.	Bu dosyadaki alanı neyin kapladığı, içerik türüne göre.
@@ -2012,6 +2402,7 @@ signature pad	Type	Yaz
 	Word count	Sözcük sayısı
 	Word counting stopped unexpectedly.	Sözcük sayımı beklenmedik şekilde durdu.
 	Word count…	Sözcük sayısı…
+	Words or phrases to redact	Karartılacak sözcükler veya ifadeler
 	Write this email?	Bu e-posta yazılsın mı?
 	Wrong password	Yanlış parola
 	Wrote 1 file to {dir}	1 dosya {dir} konumuna yazıldı
@@ -2024,7 +2415,6 @@ signature pad	Type	Yaz
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	“{from}” belgesinin {rev}. düzeltmesini görüntülüyorsunuz. Bu bir anlık görüntüdür: buradaki değişiklikler özgün belgeyi etkilemez.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	“{from}” belgesinin imzalanmış sürümünü (düzeltme {rev}) görüntülüyorsunuz. Bu bir anlık görüntüdür: buradaki değişiklikler özgün belgeyi etkilemez.
 	You can pin up to {n} folders. Unpin one first.	En fazla {n} klasör sabitleyebilirsiniz. Önce birinin sabitlemesini kaldırın.
-	You have version {c}. All releases are listed at {page}.	{c} sürümüne sahipsiniz. Tüm sürümler {page} adresinde listelenmiştir.
 	You have version {c}. Download the new version from its release page.	{c} sürümüne sahipsiniz. Yeni sürümü sürüm sayfasından indirin.
 	Your name	Adınız
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy veya yy yıl · m veya mm ay · mmm veya mmmm ay adı · d veya dd gün · ddd veya dddd haftanın günü. H, h, M, s ve t zaman harfleridir ve tek başlarına kullanılamazlar: harfi olduğu gibi göstermek için önüne {escape} koyun.
@@ -2032,16 +2422,32 @@ signature pad	Type	Yaz
 	Zip Code	Posta Kodu
 	Zip Code + 4	Posta Kodu + 4
 	Zoom in ({key})	Yakınlaştır ({key})
+	Zoom in (⌘+)	Yakınlaştır (⌘+)
 	Zoom in / out (also pinch or {key}-scroll)	Yakınlaştır / uzaklaştır (ayrıca kıstırma veya {key}+kaydırma)
+	Zoom in / out (also pinch or ⌘-scroll)	Yakınlaştır / uzaklaştır (iki parmakla sıkıştırma ya da ⌘-kaydırma ile de)
 	Zoom out ({key})	Uzaklaştır ({key})
+	Zoom out (⌘−)	Uzaklaştır (⌘−)
 	Zoom to page level	Sayfa düzeyine yakınlaştır
+	Zoom — type a percentage and press Enter	Yakınlaştırma — bir yüzde yazıp Enter tuşuna basın
 	{0}: {1}	{0}: {1}
 	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	{chars} henüz PDF'e yazılamıyor: Doldur ve İmzala metni yalnızca Batı Avrupa karakterlerini destekler. dd.mm.yyyy gibi sayısal bir biçim seçin.
 	{c} of {n}{more}	{c} / {n}{more}
 	{dpi} pixels/inch	{dpi} piksel/inç
+@plural	{fields} builds some field names as it runs, so those reads aren't checked.|{fields} build some field names as they run, so those reads aren't checked.	{fields}, bazı alan adlarını çalışırken oluşturuyor; bu okumalar denetlenmiyor.|{fields}, bazı alan adlarını çalışırken oluşturuyor; bu okumalar denetlenmiyor.
+@plural	{fields} is missing from the order saved in the PDF, so other PDF viewers may not calculate it.|{fields} are missing from the order saved in the PDF, so other PDF viewers may not calculate them.	{fields}, PDF'te kayıtlı sırada yok; bu yüzden diğer PDF görüntüleyicileri hesaplamayabilir.|{fields}, PDF'te kayıtlı sırada yok; bu yüzden diğer PDF görüntüleyicileri hesaplamayabilir.
+@plural	{fields} is missing|{fields} are missing	{fields} eksik|{fields} eksik
+	{fields} read each other	{fields} birbirini okuyor
+@plural	{fields} reads it|{fields} read it	Onu {fields} okuyor|Onu {fields} okuyor
+@plural	{field} calculates before {fields}, which it reads.|{field} calculates before {fields}, which it reads.	{field} önce hesaplanıyor; okuduğu {fields} daha sonra hesaplanıyor.|{field} önce hesaplanıyor; okuduğu {fields} daha sonra hesaplanıyor.
+	{field} reads fields named as it runs	{field}, çalışırken adlandırılan alanları okuyor
+	{field} reads its own value	{field} kendi değerini okuyor
+	{field} reads no other field	{field} başka bir alanı okumuyor
+	{field} reads {fields}	{field} şunları okur: {fields}
+@plural	{field} reads {fields}, which the form doesn't have.|{field} reads {fields}, which the form doesn't have.	{field}, formda olmayan {fields} alanını okuyor.|{field}, formda olmayan {fields} alanını okuyor.
 	{field}: {e}	{field}: {e}
 	{file} is too large for a stamp (at most {n} MB)	{file} damga için çok büyük (en fazla {n} MB)
 	{folder} is already pinned to Home	{folder} zaten Giriş'e sabitlenmiş
+	{font}, {size} pt	{font}, {size} pt
 	{kind} field	{kind} alanı
 	{kind} Properties	{kind} Özellikleri
 	{kind} · page {p}	{kind} · sayfa {p}
@@ -2053,6 +2459,7 @@ signature pad	Type	Yaz
 	{month} {day}, {y}	{day} {month} {y}
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} -> {dir}
+	{names} and {last}	{names} ve {last}
 	{name} (default)	{name} (varsayılan)
 	{name} can't be combined: {why}	{name} birleştirilemiyor: {why}
 	{name} has no action	{name} üzerinde eylem yok
@@ -2062,30 +2469,48 @@ signature pad	Type	Yaz
 	{name} — unsaved changes	{name} — kaydedilmemiş değişiklikler
 	{name}: choosing images arrives on the web with file pickers for images	{name}: resim seçimi web'de resim dosyası seçicileriyle birlikte sunulacaktır
 	{name}: the {other} action isn't supported yet	{name}: {other} eylemi henüz desteklenmiyor
+@plural	{n} byte|{n} bytes	{n} bayt|{n} bayt
+@plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} hesaplama artık yeni adı kullanıyor.|{n} hesaplama artık yeni adı kullanıyor.
+@plural	{n} comment|{n} comments	{n} yorum|{n} yorum
 	{n} contributors · {c} commits	{n} katkıda bulunan · {c} işleme
 	{n} days ago	{n} gün önce
 	{n} differences found	{n} fark bulundu
 @plural	{n} field name collides with earlier files and will be renamed: {list}|{n} field names collide with earlier files and will be renamed: {list}	{n} alan adı önceki dosyalarla çakışıyor ve yeniden adlandırılacak: {list}|{n} alan adı önceki dosyalarla çakışıyor ve yeniden adlandırılacak: {list}
+@plural	{n} field shows an old value|{n} fields show old values	{n} alan eski bir değer gösteriyor|{n} alan eski bir değer gösteriyor
 	{n} fields selected	{n} alan seçildi
 @plural	{n} field|{n} fields	{n} alan|{n} alan
 	{n} files done	{n} dosya tamamlandı
 	{n} files need attention	{n} dosya ilgilenilmesi gerekiyor
+@plural	{n} file|{n} files	{n} dosya|{n} dosya
+@plural	{n} formula reads a field the form doesn't have|{n} formulas read fields the form doesn't have	{n} formül formda olmayan alanları okuyor|{n} formül formda olmayan alanları okuyor
+@plural	{n} image optimized|{n} images optimized	{n} resim iyileştirildi|{n} resim iyileştirildi
 	{n} instances	{n} örnek
 	{n} issues	{n} sorun
+@plural	{n} item discarded|{n} items discarded	{n} öğe atıldı|{n} öğe atıldı
+	{n} lines	{n} satır
 	{n} marks	{n} işaret
 	{n} match(es) marked for redaction.	Karartma için {n} eşleşme işaretlendi.
 	{n} measurements use an unsupported format and are left out.	{n} ölçüm desteklenmeyen bir biçim kullanıyor ve dahil edilmedi.
+@plural	{n} more field calculates too early.|{n} more fields calculate too early.	{n} alan daha çok erken hesaplanıyor.|{n} alan daha çok erken hesaplanıyor.
+@plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	{n} formül daha eksik alanları okuyor.|{n} formül daha eksik alanları okuyor.
 @plural	{n} object selected|{n} objects selected	{n} nesne seçildi|{n} nesne seçildi
 	{n} pages	{n} sayfa
+	{n} pages and no bookmarks	{n} sayfa ve hiç yer işareti yok
 	{n} pages selected	{n} sayfa seçildi
 	{n} pages selected.	{n} sayfa seçildi.
 @plural	{n} page|{n} pages	{n} sayfa|{n} sayfa
+@plural	{n} pixel|{n} pixels	{n} piksel|{n} piksel
+@plural	{n} reply|{n} replies	{n} yanıt|{n} yanıt
+@plural	{n} result|{n} results	{n} sonuç|{n} sonuç
 	{n} selected	{n} seçildi
 	{n} tags	{n} etiket
 	{n} word(s) or phrase(s)	{n} sözcük veya ifade
 	{n} {kind}	{n} {kind}
+	{page} is not a page number or label	{page} bir sayfa numarası ya da etiketi değil
 	{rule} - {status}	{rule} - {status}
 	{s} action	{s} eylemi
+	{ty} element on page {p}: {what}	{p}. sayfadaki {ty} öğesi: {what}
+	{ty} element: {what}	{ty} öğesi: {what}
 	{verb} as "{name}"	"{name}" olarak {verb}
 	{verb} Background	Arka Plan: {verb}
 	{verb} Header and Footer	Üstbilgi ve Altbilgi: {verb}
@@ -2094,10 +2519,15 @@ signature pad	Type	Yaz
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	Bu belgedeki {who}, PdfCraft'ın açamayacağı bir adresi açmaya çalıştı: {e}. Belgelerden yalnızca web (http, https) ve e-posta (mailto) bağlantıları açılır.
 	{who} in this document wants to open this address in your browser:	Bu belgedeki {who}, tarayıcınızda şu adresi açmak istiyor:
 	{who} in this document wants to open your email app with this address:	Bu belgedeki {who}, e-posta uygulamanızı şu adresle açmak istiyor:
+	{who}, certificate issued by an unknown issuer.	{who}, sertifikayı bilinmeyen bir yayımcı vermiş.
+	{who}, certificate issued by {issuer}.	{who}, sertifikayı {issuer} vermiş.
 	{words} on {pages}	{pages} üzerinde {words}
+	{} annotation on page {p} isn't tagged	{p}. sayfadaki {} açıklaması etiketli değil
+	{} annotations aren't allowed	{} açıklamalarına izin verilmiyor
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (koruma kaydettiğinizde uygulanır)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	“{name}” açıldıktan veya son kaydedildikten sonra diskte değişti. Şimdi kaydetmek o daha yeni sürümü bununla değiştirir.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	“{name}” güvenlik kısıtlamalarına sahip. Kaldırmak için izin parolasını girin.
 	“{name}” is protected. Enter a password to open it.	“{name}” korumalı. Açmak için bir parola girin.
+	… and {n} more	… ve {n} tane daha
 	−LOC	−LOC
