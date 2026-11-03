@@ -1,7 +1,6 @@
 //! Locale directory names and how many plural forms a locale's `@plural` rows list.
 
-use icu_locale_core::Locale;
-use icu_plurals::PluralRules;
+use craft_i18n::{Embedded, I18n};
 use unic_langid::LanguageIdentifier;
 
 /// Ok when `name` is a BCP 47 tag written in lowercase (`pt-br`, `zh-hans`).
@@ -21,41 +20,49 @@ pub fn check_locale_name(name: &str) -> Result<(), String> {
     }
 }
 
-/// How many plural forms `locale`'s `@plural` rows list: the CLDR cardinal categories whole
-/// numbers 0..=1000 reach, counted as craft-libs' `craft-i18n` does (`plural_rules` there), on the
-/// same `icu_plurals` version and CLDR data (48.2.1). Categories only fractions or huge numbers
-/// reach (French `many`) don't count. The rules are looked up by language alone: CLDR's parent of
-/// `sr-Latn` and `zh-Hant` is the root, whose only category is `other`. CLDR's `pt` is Brazilian,
-/// so Portuguese other than Brazil's takes `pt-PT`'s rules. A language CLDR has no rules for gets
-/// the root's one form, as in the crate; `tests/runtime_agreement.rs` fails on such a locale,
-/// since the crate then shows its plurals in English.
+/// The most plural forms a CLDR locale has (Arabic: zero, one, two, few, many, other).
+const MAX_FORMS: usize = 6;
+
+/// How many plural forms `locale`'s `@plural` rows list, taken from craft-libs' `craft-i18n` runtime
+/// crate itself, so the checker passes exactly the rows the apps accept: the CLDR cardinal
+/// categories whole numbers 0..=1000 reach, from the crate's own CLDR data. The crate has no call
+/// that returns the count, so this embeds one `@plural` row of each count from 1 to [`MAX_FORMS`]
+/// and returns the one it doesn't reject.
 ///
 /// # Errors
 ///
-/// Returns an error when `locale` is not a valid BCP 47 tag.
+/// Returns an error when the crate has no plural rules for `locale` (not a BCP 47 tag, or a
+/// language CLDR has no rules for) or accepts no single count.
 pub fn plural_forms(locale: &str) -> Result<usize, String> {
-    let id = Locale::try_from_str(locale)
-        .map_err(|e| format!("{locale:?} is not a BCP 47 locale: {e}"))?
-        .id;
-    let language = id.language.as_str();
-    let brazil = id.region.is_some_and(|r| r.as_str() == "BR");
-    let rules_for = if language == "pt" && !brazil {
-        "pt-PT"
-    } else {
-        language
-    };
-    let rules_locale = Locale::try_from_str(rules_for)
-        .map_err(|e| format!("{locale:?} is not a BCP 47 locale: {e}"))?;
-    let rules = PluralRules::try_new_cardinal((&rules_locale).into())
-        .map_err(|e| format!("{locale:?}: no plural rules: {e}"))?;
-    let mut seen = Vec::new();
-    for n in 0..=1000_u32 {
-        let category = rules.category_for(n);
-        if !seen.contains(&category) {
-            seen.push(category);
-        }
+    let catalog: String = (1..=MAX_FORMS)
+        .map(|k| {
+            let forms = vec!["{n} x"; k].join("|");
+            format!("@plural\t{{n}} a{k}|{{n}} b{k}\t{forms}\n")
+        })
+        .collect();
+    // ponytail: `I18n::new` takes `&'static` catalogs, so each call leaks two short strings and
+    // one entry; the checker calls this a few times per locale per run.
+    let entry: &'static str = Box::leak(locale.to_owned().into_boxed_str());
+    let catalog: &'static str = Box::leak(catalog.into_boxed_str());
+    let embedded: &'static Embedded = Box::leak(Box::new([(entry, catalog, "")]));
+    let (i18n, problems) = I18n::new(embedded, &[]);
+    if !problems.is_empty() {
+        return Err(format!("{locale:?}: {}", problems.join("; ")));
     }
-    Ok(seen.len())
+    let rejected = i18n.check_all();
+    let accepted: Vec<usize> = (1..=MAX_FORMS)
+        .filter(|k| {
+            !rejected
+                .iter()
+                .any(|p| p.contains(&format!(": line {k}: ")))
+        })
+        .collect();
+    match accepted.as_slice() {
+        [n] => Ok(*n),
+        _ => Err(format!(
+            "{locale:?}: craft-i18n accepts {accepted:?} plural forms: {rejected:?}"
+        )),
+    }
 }
 
 #[cfg(test)]
@@ -75,7 +82,6 @@ mod tests {
     #[test]
     fn plural_form_counts() {
         for (locale, n) in [
-            ("en", 2),
             ("fr", 2),
             ("he", 3),
             ("ja", 1),
@@ -91,8 +97,15 @@ mod tests {
             ("sr-latn", 3),
             ("zh-hant", 1),
             ("pt-pt", 2),
+            ("ckb", 2),
         ] {
             assert_eq!(plural_forms(locale), Ok(n), "{locale}");
         }
+        assert!(plural_forms("tlh").is_err(), "no CLDR plural rules");
+        assert!(
+            plural_forms("en").is_err(),
+            "the source language; the crate skips it"
+        );
+        assert!(plural_forms("not a locale").is_err());
     }
 }
