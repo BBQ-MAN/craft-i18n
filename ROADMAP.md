@@ -1,6 +1,6 @@
 # craft-i18n roadmap
 
-> **Last updated:** 2026-11-03 · **Change:** minor (3a: PdfCraft cutover started)
+> **Last updated:** 2026-11-03 · **Change:** minor (3a: PdfCraft cutover started; checker plural forms on `icu_plurals`)
 
 Shared translations for the storytold Crafting Apps: one catalog per locale for shared strings,
 one per app, checked in CI and embedded by each app at build time. Vocabulary is in
@@ -11,7 +11,7 @@ one per app, checked in CI and embedded by each app at build time. Vocabulary is
 | # | Milestone | Where | Status |
 |---|---|---|---|
 | 1 | TSV catalog format and strict checker; Fluent and the unusable library crate removed; translator and integration docs | this repo | done (PR #1) |
-| 2 | `craft-i18n` runtime crate: parser, lookup, fallback, plurals (`intl_pluralrules`), locale matching, pseudo locale | craft-libs | done: merged upstream as [storytold/craft-libs#167](https://github.com/storytold/craft-libs/pull/167) (2026-10-18) |
+| 2 | `craft-i18n` runtime crate: parser, lookup, fallback, plurals (`intl_pluralrules`, `icu_plurals` since craft-libs#210), locale matching, pseudo locale | craft-libs | done: merged upstream as [storytold/craft-libs#167](https://github.com/storytold/craft-libs/pull/167) (2026-10-18) |
 | 3a | Migrate WordCraft and PdfCraft (proves the runtime on the largest catalogs; seeds the shared catalog) | apps | WordCraft cut over (2026-10-24); PdfCraft synced at `pdfcraft@ecdd1e6`, wiring in progress |
 | 3b | Migrate the other TSV apps: PhotoCraft, VectorCraft, FilmCraft, CADCraft, craft-launcher | apps | catalogs moved here (shared catalog grows additively, [ADR 0003](docs/adr/0003-shared-catalog-grows-additively.md)); app wiring next |
 | 3c | Convert and migrate FigCraft (TOML), LightCraft (JSON), DesignCraft, GridCraft, EffectCraft (Rust tables) | apps | not started |
@@ -26,10 +26,10 @@ i18n module, and add the app-side stale/missing string report.
 Known migration fixes: PdfCraft's Turkish `@plural` rows listed one form, CLDR (and CI) need two;
 done in 3a by repeating the form (Turkish nouns stay singular after numerals). PdfCraft's Hindi
 `@plural` rows (14, added after 3a) also listed one form; the cutover sync repeated it, so Hindi
-shows what it does today. The runtime crate
-must pin the same `intl_pluralrules` version as the checker, or their plural form counts can disagree.
-storytold/craft-libs#210 moves the crate to `icu_plurals`; the checker follows when it merges, with a
-test that the two agree on every locale's form count.
+shows what it does today. The checker takes each locale's plural form count from the runtime crate
+itself (a dependency pinned by git rev; the crate's own CLDR 48.2.1 data, on `icu_plurals` since
+storytold/craft-libs#210), so the two can't disagree; `tests/runtime_agreement.rs` also feeds the
+crate every catalog's `@plural` rows.
 
 Done in 3b, format only (no wording changes): Hungarian and Turkish `@plural` rows with one form
 got it repeated (PhotoCraft, VectorCraft); VectorCraft's Korean and CADCraft's Chinese kept one
@@ -102,3 +102,4 @@ As surveyed on 2026-10-16 (VectorCraft recounted 2026-10-18). Locale counts excl
 | 2026-11-01 | minor | Milestone 4 phase 3 follow-up: ar, be, ca, ca-valencia, cy, el, fr, he, hy, id, is, ka, lv, mk, sk, sr, sr-latn, tr, af, ko, gl unhidden (61 published, 16 hidden, 3 Excluded); hidden reasons name the current compounding gaps; gl check word fixed (gl now published); Moby `en-us.dic` loses typos teh, abd, nad, ur, u, r; licence file names checked as the consumer does; craft-proof dev-dependency pinned at storytold/craft-libs `8f16fe5a` (the restacked #485 stack top), still valid once #482–#490 merge with merge commits |
 | 2026-11-02 | minor | Milestone 4 phase 3, compounding: da, de, de-at, de-ch, eo, et, fa, hr, hu, nb, nl, nn, sv, sv-fi unhidden (75 published, 2 hidden, 3 Excluded; mn stays hidden: suggestions take 200–580 ms over its 12,066 affix rules; th stays hidden: craft-proof splits words only at spaces and punctuation, so a Thai sentence would be checked as one word); needs craft-proof flag-based compounding (craft-libs #497, merged at `47c9f625`); de, de-at, de-ch check words now capitalised nouns and et, nb, nn have real misspellings, each checked with the hunspell 1.7.5 CLI; nb and nn hyphenate with hyph-no.tex (their own files hold only exceptions) |
 | 2026-11-03 | minor | 3a: PdfCraft cutover sync (`pdfcraft@ecdd1e6`, 12 new PdfCraft locales); PdfCraft wired now, not last: it already draws logical catalogs on storytold/egui |
+| 2026-11-03 | patch | Checker takes each locale's plural form count from the runtime crate (`craft-i18n` at storytold/craft-libs `32b2fd8a`, a normal dependency; its own CLDR 48.2.1 data on `icu_plurals` since craft-libs#210), replacing `intl_pluralrules` 7.0.2 and its Hebrew workaround; `icu_plurals`' compiled data has no `ckb` rules (1 form), the crate's data has 2; `tests/runtime_agreement.rs` checks every locale's count and that the crate accepts every catalog's `@plural` rows; no existing locale's count changed |
