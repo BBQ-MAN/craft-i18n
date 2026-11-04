@@ -393,9 +393,9 @@ certificate	Basic constraints	기본 제약 조건
 	Certificates	인증서
 	Certification signature (level {p})	인증 서명(수준 {p})
 	Certified by {by}	{by}이(가) 인증함
-	Certify	인증
-	Certify (invisible signature)	인증 (보이지 않는 서명)
-	Certify (visible signature)	인증 (보이는 서명)
+	Certify	문서 인증
+	Certify (invisible signature)	문서 인증(서명 표시 안 함)
+	Certify (visible signature)	문서 인증(서명 표시)
 	Challenge: {challenge}	챌린지: {challenge}
 	Change Author	작성자 변경
 	Change colour	색상 변경
@@ -1369,7 +1369,7 @@ certificate	Key usage	키 용도
 	March	3월
 calendar date	March	3월
 	Margins (in)	여백(인치)
-	Mark all	모두 표시
+	Mark all	모두 제거 대상으로 표시
 	Mark as artifact	아티팩트로 표시
 	Mark as comments	주석으로 표시
 	Mark as Confidential	기밀로 표시
@@ -1780,7 +1780,7 @@ animation effects	On	켜기
 	People may need more time to respond. Check that nothing has a time limit.	응답에 더 많은 시간이 필요할 수 있습니다. 시간 제한이 있는 요소가 없는지 확인하세요.
 	Percentage	백분율
 	Permissions password	권한 암호
-	Permitted actions after certifying	인증 후 허용되는 동작
+	Permitted actions after certifying	문서 인증 후 허용되는 변경 사항
 	Phone Number	전화번호
 	Phone Numbers	전화번호
 	Photometric	Photometric
@@ -2093,8 +2093,8 @@ certificate	Public key	공개 키
 calendar weekday	Sa	토
 	Same as interface	인터페이스와 동일
 	Same as interface ({language})	인터페이스와 동일({language})
-	Sanitize	정리
-	Sanitize document	문서 정리
+	Sanitize	숨겨진 정보 제거
+	Sanitize document	문서에서 숨겨진 정보 제거
 	Sanitize Documents	문서 정리
 	Sanitize document…	문서에서 숨겨진 정보 제거…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	정리는 문서에서 숨겨진 정보를 제거합니다: 메타데이터, 파일 첨부, 주석, 양식 필드(평탄화됨), 숨겨진 텍스트와 레이어, 책갈피, 링크, 동작과 스크립트, 응용 프로그램 개인 데이터 등입니다.
@@ -2619,11 +2619,11 @@ calendar weekday	Th	목
 	The selection changed. Select the signature again.	선택 항목이 변경되었습니다. 서명을 다시 선택하세요.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	{provider}와의 세션이 끝났습니다. 디지털 ID 구성에서 다시 로그인하세요.
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	서명 알고리즘과 SignerInfo의 다이제스트 알고리즘이 서로 다른 해시를 가리킵니다. 서명은 SignerInfo의 해시로 만들어졌습니다.
-	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	서명에 확인되지 않은 타임스탬프({})가 있습니다. 타임스탬프 기관이 신뢰할 수 있는 인증서 목록에 없으므로 서명자가 주장하는 서명 시간을 대신 사용합니다.
+	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	서명에 타임스탬프({})가 있지만 신뢰성이 검증되지 않았습니다. 타임스탬프 발급 기관이 신뢰할 수 있는 인증서 목록에 없으므로, 서명자가 주장하는 서명 시간을 대신 사용합니다.
 	The signature contents are not hexadecimal.	서명 내용이 16진수가 아닙니다.
 	The signature could not be checked ({}).	서명을 검사할 수 없습니다({}).
 	The signature could not be read ({}).	서명을 읽을 수 없습니다({}).
-	The signature could not be verified ({}).	서명을 확인할 수 없습니다({}).
+	The signature could not be verified ({}).	서명을 검증할 수 없습니다({}).
 	The signature has no valid byte range.	서명에 유효한 바이트 범위가 없습니다.
 	The signature includes an embedded timestamp.	서명에 포함된 타임스탬프가 있습니다.
 	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	서명이 DER이 아니라 BER로 인코딩되어 있습니다(길이 미정). 관대하게 읽었습니다.
@@ -2634,7 +2634,7 @@ calendar weekday	Th	목
 	The signature {names} locks this field.	서명 {names}이(가) 이 필드를 잠급니다.
 	The signature's byte range does not exclude exactly its contents.	서명의 바이트 범위가 서명 내용만 정확히 제외하지 않습니다.
 	The signature's byte range does not match the file.	서명의 바이트 범위가 파일과 일치하지 않습니다.
-	The signature's timestamp token could not be verified ({}).	서명의 타임스탬프 토큰을 확인할 수 없습니다({}).
+	The signature's timestamp token could not be verified ({}).	서명의 타임스탬프 토큰을 검증할 수 없습니다({}).
 	The signature's timestamp token does not cover the signature value.	서명의 타임스탬프 토큰이 서명 값을 포함하지 않습니다.
 	The signed content is a constructed (segmented) OCTET STRING, as BER allows; it was read anyway.	서명된 콘텐츠가 BER에서 허용하는 구성된(분할된) OCTET STRING입니다. 그래도 읽었습니다.
 	the signed version could not be read	서명된 버전을 읽을 수 없습니다
@@ -2752,8 +2752,8 @@ calendar weekday	Th	목
 	This printer only prints one-sided.	이 프린터는 단면 인쇄만 지원합니다.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	이 프린터의 드라이버는 다른 프로그램의 양면 인쇄 설정을 받지 않으므로 자체 설정이 적용됩니다. 변경하려면 속성…
 	this signature can't be removed on its own	이 서명은 단독으로 제거할 수 없습니다
-	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	이 서명은 서명용으로 더 이상 권장되지 않는 레거시 160비트 해시 알고리즘인 RIPEMD-160을 사용합니다. 여전히 검증되지만 의존해서는 안 됩니다.
-	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	이 서명은 약한 해시 알고리즘인 SHA-1을 사용합니다. 충돌이 실제로 입증되었습니다. 오래전에 서명된 많은 문서가 사용하므로 여전히 검증되지만 의존해서는 안 됩니다.
+	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	이 서명은 더 이상 디지털 서명에 권장되지 않는 기존 160비트 해시 알고리즘 RIPEMD-160을 사용합니다. 유효성 검사를 통과하더라도 이 서명을 신뢰해서는 안 됩니다.
+	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	이 서명은 충돌이 입증된 취약한 해시 알고리즘 SHA-1을 사용합니다. 오래전에 서명된 많은 문서에서도 사용되므로 유효성 검사를 통과할 수 있지만, 이 서명을 신뢰해서는 안 됩니다.
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	이 서명 서비스는 사용할 수 없음: 브라우저에서 OAuth 로그인이 필요하지만 PdfCraft는 아직 이를 지원하지 않음
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	이 웹 주소에는 서로 다른 문자 체계의 글자가 섞여 있습니다. 다른 사이트 이름을 가장하는 흔한 수법입니다.
 	This web address uses letters from another alphabet, which can look like familiar ones.	이 웹 주소는 다른 문자 체계의 글자를 사용하며 익숙한 글자처럼 보일 수 있습니다.
