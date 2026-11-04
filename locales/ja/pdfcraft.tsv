@@ -335,6 +335,7 @@
 	Attach file	ファイルを添付
 	Attach {name}	{name} を添付
 	Attaching files is not available on the web yet	Web 版ではまだファイルを添付できません
+	Attaching {name} to a new email message…	{name} を新しいメールに添付しています…
 	Attachment	添付ファイル
 	Attachments	添付ファイル
 	Attachments panel	添付ファイルパネル
@@ -721,6 +722,7 @@
 	Could not mark the selection because text could not be read on every page	すべてのページのテキストを読み取れなかったため、選択範囲をマークできませんでした
 	Could not save: {e}	保存できませんでした: {e}
 	Couldn't add {name}: {e}	{name} を追加できませんでした: {e}
+	Couldn't attach the file	ファイルを添付できませんでした
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	ファイルを結合できませんでした: {e}
 	Couldn't copy the image: {e}	画像をコピーできませんでした: {e}
@@ -1820,6 +1822,7 @@ key	Home	Home
 	No differences in the text.	テキストに差分はありません。
 	No digital IDs yet.	デジタル ID はまだありません。
 	No documents are open	開いている文書はありません
+	No email app is set up on this computer.	このコンピューターにはメールアプリが設定されていません。
 	No errors in the rules that were evaluated.	評価できた規則にはエラーはありません。
 	No errors: the structure follows the Arlington PDF Model.	エラーはありません。構造は Arlington PDF Model に従っています。
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	このフォームには値を計算するフィールドがまだありません。フィールドのプロパティの［計算］タブで計算を設定すると、ここに表示されます。
@@ -1964,6 +1967,7 @@ animation effects	On	オン
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	ページ内容のみを変更します。元のページのリンク、注釈、フォームフィールド、しおりは保持します。
 	Only the recipients can open the document, each with the private key of their own certificate.	文書を開けるのは受信者だけで、各受信者は自分の証明書の秘密鍵を使います。
 	Open a document first	先に文書を開いてください
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	ファイルなしで新しいメッセージを開いてください。PdfCraft が {name} をフォルダーに表示するので、ご自身で添付できます。
 	Open a PDF ({key})	PDF を開く（{key}）
 	Open a PDF to measure it.	測定するPDFを開いてください。
 	Open a web link	Web リンクを開く
@@ -1979,6 +1983,7 @@ animation effects	On	オン
 	Open in Full Screen mode	全画面表示で開く
 	Open in Full Screen mode?	フルスクリーンモードで開きますか？
 	Open local file…	ローカルファイルを開く…
+	Open message and show file	メッセージを開いてファイルを表示
 	Open next PDF in folder	フォルダー内の次の PDF を開く
 	Open OFD (early alpha)…	OFDを開く（初期アルファ版）…
 	Open previous PDF in folder	フォルダー内の前の PDF を開く
@@ -2732,8 +2737,10 @@ animation effects	On	オン
 	Self-signed	自己署名
 	Send	送信
 	Send backward	背面へ移動
+	Send by email…	メールで送信…
 	Send code	コードを送信
 	Send to back	最背面へ移動
+	Sending by email isn't available in the browser	ブラウザーではメールでの送信を利用できません
 	Sending sheet {s} of {n} to {printer}…	{printer} に用紙 {s} / {n} を送信しています…
 	Sending the code…	コードを送信しています…
 	Sending to {printer}…	{printer} に送信しています…
@@ -2962,6 +2969,7 @@ document scrollbar width	Standard	標準
 	Sticky note	ノート注釈
 	still checking whether the tesseract program can run; try again in a moment	tesseract プログラムを実行できるか確認中です。しばらくしてからもう一度お試しください
 	Still printing; the job continues on the printer	印刷中です。ジョブはプリンターで続行されます
+	Still waiting for your email app…	メールアプリの応答を待っています…
 	Stop	Stop
 	Stop reading	読み上げを停止
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -3086,6 +3094,7 @@ document scrollbar width	Standard	標準
 	The clipboard holds no comments	クリップボードにコメントがありません
 	The comment being edited no longer exists, so its text was not saved.	編集中の注釈はもう存在しないため、テキストは保存されませんでした。
 	The copied comments are larger than this page; they were placed as they are	コピーしたコメントはこのページより大きいため、そのまま配置しました
+	The copy to attach couldn't be written: {e}	添付用のコピーを書き込めませんでした：{e}
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	デスクトップポータルのファイル選択が動作していません（{packages}）。systemctl --user status {first} で確認するか、ログアウトしてもう一度ログインしてください。
 	The device's digital ID isn't available any more; start signing again to list it.	デバイスのデジタル ID は利用できなくなりました。署名をやり直して一覧を表示してください。
 	The display datum transformation is approximate.	表示座標の測地系変換は近似です。
@@ -3199,6 +3208,7 @@ document scrollbar width	Standard	標準
 	The release has ambiguous packages. Choose a package on the official release page.	このリリースには複数の候補パッケージがあります。公式リリースページから選んでください。
 	The release is not a published stable update. Try again later.	このリリースは公開済みの安定版アップデートではありません。後でもう一度お試しください。
 	The replacement file doesn't have that many pages.	置換元のファイルには指定した数のページがありません。
+	the request stopped without an answer	要求が応答なしで終了しました
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	制限は「すべての権限」のない受信者に適用されます。保存時に適用されます。
 	The reverse sides already scanned are kept.	スキャン済みの裏面は保持されています。
@@ -3607,6 +3617,10 @@ document scrollbar width	Wide	太い
 	You choose where the new version is saved. Continue?	新しい版の保存先はあなたが選びます。続行しますか？
 	You have version {c}. Download the new version from its release page.	現在のバージョンは {c} です。リリースページから新しいバージョンをダウンロードしてください。
 	Your changes will be lost if you don't save them.	保存しないと変更内容は失われます。
+	Your default email app can't take a file from PdfCraft.	既定のメールアプリは PdfCraft からファイルを受け取れません。
+	Your email app couldn't log on to your mailbox.	メールアプリがメールボックスにログオンできませんでした。
+	Your email app didn't open a message in time.	メールアプリが時間内にメッセージを開きませんでした。
+	Your email app didn't open a message. It said: {why}.	メールアプリがメッセージを開きませんでした。応答：{why}。
 	Your name	お名前
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy または yy 年 · m または mm 月 · mmm または mmmm 月名 · d または dd 日 · ddd または dddd 曜日。H、h、M、s、t は時刻の文字なので単独では使えません。文字をそのまま表示するには前に {escape} を付けます。
 	Zero-width lines always count as narrower.	幅ゼロの線は常に「より細い」とみなします。
@@ -3706,6 +3720,7 @@ document scrollbar width	Wide	太い
 	{n} word(s) or phrase(s)	{n} 件の単語または語句
 	{n} word(s) to review	確認対象の単語 {n} 個
 	{n} {kind}	{kind}: {n}
+	{program} can't take a file from PdfCraft.	{program} は PdfCraft からファイルを受け取れません。
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	署名者は {signers} 人です。先頭の署名者の詳細を表示しています。
 	{s} action	{s} アクション

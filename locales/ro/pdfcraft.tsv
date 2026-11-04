@@ -371,6 +371,7 @@ calendar date	April	aprilie
 	Attach file	Atașare fișier
 	Attach {name}	Atașare {name}
 	Attaching files is not available on the web yet	Atașarea fișierelor nu este încă disponibilă pe web
+	Attaching {name} to a new email message…	Se atașează {name} la un mesaj de e-mail nou…
 	Attachment	Atașament
 	Attachments	Atașamente
 	Attachments panel	Panou atașamente
@@ -757,6 +758,7 @@ certificate	Basic constraints	Constrângeri de bază
 	Corrected scan	Scanare corectată
 	Could not save: {e}	Nu s-a putut salva: {e}
 	Couldn't add {name}: {e}	Nu s-a putut adăuga {name}: {e}
+	Couldn't attach the file	Nu s-a putut atașa fișierul
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't check for updates: {e}	Nu s-au putut căuta actualizări: {e}
 	Couldn't combine files: {e}	Nu s-au putut combina fișierele: {e}
@@ -1935,6 +1937,7 @@ calendar weekday	Mo	Lu
 	No digital IDs yet.	Încă nu există ID-uri digitale.
 	No document language is set	Nu este setată limba documentului
 	No documents are open	Niciun document deschis
+	No email app is set up on this computer.	Nu este configurată nicio aplicație de e-mail pe acest calculator.
 	No errors in the rules that were evaluated.	Nicio eroare în regulile care au fost evaluate.
 	No errors: the structure follows the Arlington PDF Model.	Nicio eroare: structura respectă modelul PDF Arlington.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.
@@ -2086,6 +2089,7 @@ animation effects	On	Activate
 	Opacity:	Opacitate:
 	Open	Deschidere
 	Open a document first	Deschideți întâi un document
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	Deschideți un mesaj nou fără el, iar PdfCraft va afișa {name} în folderul său, ca să îl puteți atașa singur.
 	Open a PDF ({key})	Deschideți un PDF ({key})
 	Open a PDF (⌘O)	Deschideți un PDF (⌘O)
 	Open a PDF to measure it.	Deschideți un PDF pentru a-l măsura.
@@ -2100,6 +2104,7 @@ animation effects	On	Activate
 	Open in Full Screen mode	Deschidere în modul Ecran complet
 	Open in Full Screen mode?	Deschideți în modul Ecran complet?
 	Open link	Deschidere link
+	Open message and show file	Deschidere mesaj și afișare fișier
 	Open next PDF in folder	Deschidere PDF următor din folder
 	Open previous PDF in folder	Deschidere PDF anterior din folder
 	Open Recent	Deschidere fișiere recente
@@ -2857,8 +2862,10 @@ calendar weekday	Sa	Sâ
 	Self-signed	Autosemnat
 certificate	Self-signed	Autosemnat
 	Send backward	Un nivel în spate
+	Send by email…	Trimitere prin e-mail…
 	Send code	Trimitere cod
 	Send to back	În plan secund
+	Sending by email isn't available in the browser	Trimiterea prin e-mail nu este disponibilă în browser
 	Sending sheet {s} of {n} to {printer}…	Se trimite foaia {s} din {n} la {printer}…
 	Sending the code…	Se trimite codul…
 	Sending to {printer}…	Se trimite la {printer}…
@@ -3067,6 +3074,7 @@ action wizard	Start	Pornire
 	Sticky note	Notă
 	Still printing; the job continues on the printer	Încă se tipărește; lucrarea continuă pe imprimantă
 	Still rendering — this page is unusually complex…	Se randează încă: această pagină este neobișnuit de complexă…
+	Still waiting for your email app…	Se așteaptă încă aplicația dvs. de e-mail…
 	Stop	Stop
 	Stopped at {limit} matches.	Stopped at {limit} matches.
 	Stopped before the end.	Stopped before the end.
@@ -3190,6 +3198,7 @@ calendar weekday	Th	Jo
 	The clipboard has no image or text	Clipboardul nu conține imagine sau text
 	The clipboard holds no comments	Clipboardul nu conține comentarii
 	The copied comments are larger than this page; they were placed as they are	Comentariile copiate sunt mai mari decât această pagină; au fost plasate așa cum sunt
+	The copy to attach couldn't be written: {e}	Copia de atașat nu a putut fi scrisă: {e}
 	The default optional content configuration (D) has no Name	Configurația implicită de conținut opțional (D) nu are Name
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Selectorul de fișiere al portalului de desktop nu rulează ({packages}). Verificați-l cu systemctl --user status {first} sau deconectați-vă și reconectați-vă.
 	The Dock shows it the next time PdfCraft opens.	Dock-ul o va afișa la următoarea deschidere a PdfCraft.
@@ -3349,6 +3358,7 @@ calendar weekday	Th	Jo
 	The provider's page didn't come back in time. Try again.	Pagina furnizorului nu a revenit la timp. Încercați din nou.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI-ul de redirecționare trebuie să fie http://127.0.0.1 sau http://localhost cu un port.
 	The replacement file doesn't have that many pages.	Fișierul de înlocuire nu are atâtea pagini.
+	the request stopped without an answer	cererea s-a oprit fără răspuns
 	The resolution of an image can't be measured	Rezoluția unei imagini nu poate fi măsurată
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Restricțiile se aplică destinatarilor fără „Toate permisiunile”. Se aplică la salvare.
@@ -3799,6 +3809,10 @@ calendar weekday	We	Mi
 	You have version {c}. All releases are listed at {page}.	Aveți versiunea {c}. Toate versiunile sunt listate la {page}.
 	You have version {c}. Download the new version from its release page.	Aveți versiunea {c}. Descărcați versiunea nouă de pe pagina ei de lansare.
 	Your changes will be lost if you don't save them.	Modificările se vor pierde dacă nu le salvați.
+	Your default email app can't take a file from PdfCraft.	Aplicația dvs. de e-mail implicită nu poate primi un fișier de la PdfCraft.
+	Your email app couldn't log on to your mailbox.	Aplicația dvs. de e-mail nu s-a putut conecta la căsuța poștală.
+	Your email app didn't open a message in time.	Aplicația dvs. de e-mail nu a deschis un mesaj la timp.
+	Your email app didn't open a message. It said: {why}.	Aplicația dvs. de e-mail nu a deschis un mesaj. A spus: {why}.
 	Your name	Numele dvs.
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy sau yy an · m sau mm lună · mmm sau mmmm numele lunii · d sau dd zi · ddd sau dddd ziua săptămânii. H, h, M, s și t sunt litere de timp și nu pot fi folosite singure: puneți {escape} înaintea unei litere pentru a o afișa ca atare.
 	Zero-width lines always count as narrower.	Liniile cu lățime zero sunt întotdeauna considerate mai înguste.
@@ -3923,6 +3937,7 @@ calendar weekday	We	Mi
 	{n} word(s) or phrase(s)	{n} cuvinte sau expresii
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} nu este un număr sau o etichetă de pagină
+	{program} can't take a file from PdfCraft.	{program} nu poate primi un fișier de la PdfCraft.
 	{rule} - {status}	{rule} - {status}
 	{s} action	acțiunea {s}
 	{type} has {count} elements, but they come in sets of {n}	{type} are {count} elemente, dar acestea vin în grupuri de câte {n}

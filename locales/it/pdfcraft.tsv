@@ -331,6 +331,7 @@ calendar date	April	aprile
 	Attach file	Allega file
 	Attach {name}	Allega {name}
 	Attaching files is not available on the web yet	Allegare file non è ancora disponibile sul web
+	Attaching {name} to a new email message…	Aggiunta di {name} a un nuovo messaggio email…
 	Attachment	Allegato
 	Attachments	Allegati
 	Attachments panel	Pannello allegati
@@ -694,6 +695,7 @@ certificate	Basic constraints	Vincoli di base
 	Could not mark the selection because text could not be read on every page	Impossibile contrassegnare la selezione perché non è stato possibile leggere il testo su tutte le pagine
 	Could not save: {e}	Impossibile salvare: {e}
 	Couldn't add {name}: {e}	Impossibile aggiungere {name}: {e}
+	Couldn't attach the file	Impossibile allegare il file
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Impossibile combinare i file: {e}
 	Couldn't copy the image: {e}	Impossibile copiare l'immagine: {e}
@@ -1782,6 +1784,7 @@ calendar weekday	Mo	Lu
 	No digital IDs yet.	Ancora nessun ID digitale.
 	No document language is set	Nessuna lingua impostata per il documento
 	No documents are open	Nessun documento aperto
+	No email app is set up on this computer.	Su questo computer non è configurata alcuna app di posta.
 	No errors in the rules that were evaluated.	Nessun errore nelle regole valutate.
 	No errors: the structure follows the Arlington PDF Model.	Nessun errore: la struttura segue l'Arlington PDF Model.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Nessun campo di questo modulo calcola ancora il proprio valore. Assegna un calcolo a un campo nella scheda Calcolo delle sue proprietà e comparirà qui.
@@ -1929,6 +1932,7 @@ animation effects	On	Attivati
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Cambia solo il contenuto delle pagine: collegamenti, commenti, campi modulo e segnalibri delle pagine originali restano.
 	Only the recipients can open the document, each with the private key of their own certificate.	Solo i destinatari possono aprire il documento, ciascuno con la chiave privata del proprio certificato.
 	Open a document first	Apri prima un documento
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	Apri un nuovo messaggio senza il file e PdfCraft mostrerà {name} nella sua cartella, così potrai allegarlo tu.
 	Open a PDF ({key})	Apri un PDF ({key})
 	Open a PDF to measure it.	Apri un PDF per misurarlo.
 	Open a web link	Apri un collegamento web
@@ -1944,6 +1948,7 @@ animation effects	On	Attivati
 	Open in Full Screen mode	Apri in modalità schermo intero
 	Open in Full Screen mode?	Aprire in modalità schermo intero?
 	Open local file…	Apri file locale…
+	Open message and show file	Apri il messaggio e mostra il file
 	Open next PDF in folder	Apri il PDF successivo nella cartella
 	Open OFD (early alpha)…	Apri OFD (alpha iniziale)…
 	Open previous PDF in folder	Apri il PDF precedente nella cartella
@@ -2682,8 +2687,10 @@ calendar weekday	Sa	Sa
 certificate	Self-signed	Autofirmato
 	Send	Invia
 	Send backward	Porta indietro di un livello
+	Send by email…	Invia per email…
 	Send code	Invia codice
 	Send to back	Porta in fondo
+	Sending by email isn't available in the browser	L'invio per email non è disponibile nel browser
 	Sending sheet {s} of {n} to {printer}…	Invio del foglio {s} di {n} a {printer}…
 	Sending the code…	Invio del codice…
 	Sending to {printer}…	Invio a {printer}…
@@ -2911,6 +2918,7 @@ action wizard	Start	Avvia
 	still checking whether the tesseract program can run; try again in a moment	verifica in corso se il programma tesseract può essere eseguito; riprova tra un momento
 	Still printing; the job continues on the printer	Stampa ancora in corso; il lavoro continua sulla stampante
 	Still rendering — this page is unusually complex…	Rendering ancora in corso: questa pagina è insolitamente complessa…
+	Still waiting for your email app…	Ancora in attesa dell'app di posta…
 	Stop	Stop
 	Stop reading	Interrompi lettura
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -3036,6 +3044,7 @@ calendar weekday	Th	Gi
 	The clipboard holds no comments	Gli appunti non contengono commenti
 	The comment being edited no longer exists, so its text was not saved.	Il commento in modifica non esiste più, quindi il suo testo non è stato salvato.
 	The copied comments are larger than this page; they were placed as they are	I commenti copiati sono più grandi di questa pagina; sono stati collocati così come sono
+	The copy to attach couldn't be written: {e}	Impossibile scrivere la copia da allegare: {e}
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Il selettore di file del portale desktop non è in esecuzione ({packages}). Controllalo con systemctl --user status {first}, oppure esci e accedi di nuovo.
 	The device's digital ID isn't available any more; start signing again to list it.	L'ID digitale del dispositivo non è più disponibile; ricomincia la firma per elencarlo.
 	The Dock shows it the next time PdfCraft opens.	Il Dock la mostrerà alla prossima apertura di PdfCraft.
@@ -3166,6 +3175,7 @@ calendar weekday	Th	Gi
 	The release has ambiguous packages. Choose a package on the official release page.	La versione include pacchetti ambigui. Scegli un pacchetto nella pagina ufficiale delle versioni.
 	The release is not a published stable update. Try again later.	Questa versione non è un aggiornamento stabile pubblicato. Riprova più tardi.
 	The replacement file doesn't have that many pages.	Il file sostitutivo non ha così tante pagine.
+	the request stopped without an answer	la richiesta si è interrotta senza risposta
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Le restrizioni valgono per i destinatari senza “Tutte le autorizzazioni”. Viene applicato al salvataggio.
 	The reverse sides already scanned are kept.	I retro già acquisiti sono conservati.
@@ -3601,6 +3611,10 @@ document scrollbar width	Wide	Larga
 	You can pin up to {n} folders. Unpin one first.	Puoi fissare fino a {n} cartelle. Rimuovine prima una.
 	You choose where the new version is saved. Continue?	Scegli tu dove salvare la nuova versione. Continuare?
 	You have version {c}. Download the new version from its release page.	Hai la versione {c}. Scarica la nuova versione dalla sua pagina di rilascio.
+	Your default email app can't take a file from PdfCraft.	L'app di posta predefinita non può ricevere un file da PdfCraft.
+	Your email app couldn't log on to your mailbox.	L'app di posta non è riuscita ad accedere alla tua casella.
+	Your email app didn't open a message in time.	L'app di posta non ha aperto un messaggio in tempo.
+	Your email app didn't open a message. It said: {why}.	L'app di posta non ha aperto un messaggio. Ha detto: {why}.
 	Your name	Il tuo nome
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy o yy anno · m o mm mese · mmm o mmmm nome del mese · d o dd giorno · ddd o dddd giorno della settimana. H, h, M, s e t sono lettere dell'ora e non si possono usare da sole: metti {escape} prima di una lettera per mostrarla così com'è.
 	Zero-width lines always count as narrower.	Le linee di spessore zero contano sempre come più sottili.
@@ -3708,6 +3722,7 @@ document scrollbar width	Wide	Larga
 	{n} word(s) to review	{n} parola/e da rivedere
 	{n} {kind}	{kind}: {n}
 	{page} is not a page number or label	{page} non è un numero o un'etichetta di pagina
+	{program} can't take a file from PdfCraft.	{program} non può ricevere un file da PdfCraft.
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	{signers} firmatari; sono mostrati i dettagli del primo
 	{s} action	Azione {s}

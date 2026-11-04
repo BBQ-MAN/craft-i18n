@@ -343,6 +343,7 @@ calendar date	April	avril
 	Attach file	Joindre un fichier
 	Attach {name}	Joindre {name}
 	Attaching files is not available on the web yet	Joindre des fichiers n'est pas encore disponible sur le web
+	Attaching {name} to a new email message…	Ajout de {name} à un nouveau message…
 	Attachment	Pièce jointe
 	Attachments	Pièces jointes
 	Attachments panel	Panneau des pièces jointes
@@ -734,6 +735,7 @@ certificate	Basic constraints	Contraintes de base
 	Could not mark the selection because text could not be read on every page	Impossible de marquer la sélection, car le texte de toutes les pages n’a pas pu être lu
 	Could not save: {e}	Impossible d'enregistrer : {e}
 	Couldn't add {name}: {e}	Impossible d'ajouter {name} : {e}
+	Couldn't attach the file	Impossible de joindre le fichier
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Impossible de combiner les fichiers : {e}
 	Couldn't copy the image: {e}	Impossible de copier l'image : {e}
@@ -1874,6 +1876,7 @@ calendar weekday	Mo	Lu
 	No digital IDs yet.	Aucun ID numérique pour l'instant.
 	No document language is set	Aucune langue de document n'est définie
 	No documents are open	Aucun document n'est ouvert
+	No email app is set up on this computer.	Aucune application de courrier n'est configurée sur cet ordinateur.
 	No errors in the rules that were evaluated.	Aucune erreur dans les règles évaluées.
 	No errors: the structure follows the Arlington PDF Model.	Aucune erreur : la structure suit l'Arlington PDF Model.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Aucun champ de ce formulaire ne calcule encore sa valeur. Donnez un calcul à un champ dans l'onglet Calculer de ses propriétés, et il apparaîtra ici.
@@ -2029,6 +2032,7 @@ animation effects	On	Activés
 	Only the recipients can open the document, each with the private key of their own certificate.	Seuls les destinataires peuvent ouvrir le document, chacun avec la clé privée de son propre certificat.
 	Opacity:	Opacité :
 	Open a document first	Ouvrez d'abord un document
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	Ouvrez un nouveau message sans lui, et PdfCraft affichera {name} dans son dossier pour que vous le joigniez vous-même.
 	Open a PDF ({key})	Ouvrir un PDF ({key})
 	Open a PDF (⌘O)	Ouvrir un PDF (⌘O)
 	Open a PDF to measure it.	Ouvrez un PDF pour le mesurer.
@@ -2046,6 +2050,7 @@ animation effects	On	Activés
 	Open in Full Screen mode	Ouvrir en mode plein écran
 	Open in Full Screen mode?	Ouvrir en mode plein écran ?
 	Open local file…	Ouvrir un fichier local…
+	Open message and show file	Ouvrir le message et afficher le fichier
 	Open next PDF in folder	Ouvrir le PDF suivant du dossier
 	Open OFD (early alpha)…	Ouvrir un OFD (alpha précoce)…
 	Open previous PDF in folder	Ouvrir le PDF précédent du dossier
@@ -2827,8 +2832,10 @@ calendar weekday	Sa	Sa
 certificate	Self-signed	Auto-signé
 	Send	Envoyer
 	Send backward	Reculer d’un plan
+	Send by email…	Envoyer par e-mail…
 	Send code	Envoyer le code
 	Send to back	Mettre à l’arrière-plan
+	Sending by email isn't available in the browser	L'envoi par e-mail n'est pas disponible dans le navigateur
 	Sending sheet {s} of {n} to {printer}…	Envoi de la feuille {s} sur {n} à {printer}…
 	Sending the code…	Envoi du code…
 	Sending to {printer}…	Envoi à {printer}…
@@ -3062,6 +3069,7 @@ action wizard	Start	Démarrer
 	still checking whether the tesseract program can run; try again in a moment	vérification en cours : le programme tesseract peut-il s'exécuter ? Réessayez dans un instant
 	Still printing; the job continues on the printer	Impression en cours ; le travail continue sur l'imprimante
 	Still rendering — this page is unusually complex…	Rendu toujours en cours : cette page est exceptionnellement complexe…
+	Still waiting for your email app…	En attente de votre application de courrier…
 	Stop	Stop
 	Stop reading	Arrêter la lecture
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -3196,6 +3204,7 @@ calendar weekday	Th	Je
 	The clipboard holds no comments	Le presse-papiers ne contient aucun commentaire
 	The comment being edited no longer exists, so its text was not saved.	Le commentaire en cours de modification n'existe plus, son texte n'a donc pas été enregistré.
 	The copied comments are larger than this page; they were placed as they are	Les commentaires copiés sont plus grands que cette page ; ils ont été placés tels quels
+	The copy to attach couldn't be written: {e}	La copie à joindre n'a pas pu être écrite : {e}
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Le sélecteur de fichiers du portail de bureau ne fonctionne pas ({packages}). Vérifiez-le avec systemctl --user status {first}, ou déconnectez-vous puis reconnectez-vous.
 	The device's digital ID isn't available any more; start signing again to list it.	L'ID numérique du périphérique n'est plus disponible ; recommencez la signature pour l'afficher.
 	The display datum transformation is approximate.	La transformation du référentiel d’affichage est approximative.
@@ -3330,6 +3339,7 @@ calendar weekday	Th	Je
 	The release has ambiguous packages. Choose a package on the official release page.	Les paquets de cette version sont ambigus. Choisissez-en un sur la page officielle des versions.
 	The release is not a published stable update. Try again later.	Cette version n’est pas une mise à jour stable publiée. Réessayez plus tard.
 	The replacement file doesn't have that many pages.	Le fichier de remplacement n'a pas autant de pages.
+	the request stopped without an answer	la demande s'est arrêtée sans réponse
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Les restrictions s'appliquent aux destinataires sans « Toutes les autorisations ». Appliqué à l'enregistrement.
 	The reverse sides already scanned are kept.	Les verso déjà numérisés sont conservés.
@@ -3783,6 +3793,10 @@ document scrollbar width	Wide	Large
 	You can pin up to {n} folders. Unpin one first.	Vous pouvez épingler jusqu'à {n} dossiers. Désépinglez-en un d'abord.
 	You choose where the new version is saved. Continue?	Vous choisissez où la nouvelle version est enregistrée. Continuer ?
 	You have version {c}. Download the new version from its release page.	Vous avez la version {c}. Téléchargez la nouvelle version depuis sa page de publication.
+	Your default email app can't take a file from PdfCraft.	Votre application de courrier par défaut ne peut pas recevoir de fichier de PdfCraft.
+	Your email app couldn't log on to your mailbox.	Votre application de courrier n'a pas pu se connecter à votre boîte aux lettres.
+	Your email app didn't open a message in time.	Votre application de courrier n'a pas ouvert de message à temps.
+	Your email app didn't open a message. It said: {why}.	Votre application de courrier n'a pas ouvert de message. Elle a indiqué : {why}.
 	Your name	Votre nom
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy ou yy année · m ou mm mois · mmm ou mmmm nom du mois · d ou dd jour · ddd ou dddd jour de la semaine. H, h, M, s et t sont des lettres d'heure et ne peuvent pas être utilisées seules : placez {escape} devant une lettre pour l'afficher telle quelle.
 	Zero-width lines always count as narrower.	Les lignes d'épaisseur nulle comptent toujours comme plus fines.
@@ -3894,6 +3908,7 @@ document scrollbar width	Wide	Large
 	{n} word(s) to review	{n} mot(s) à vérifier
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} n'est ni un numéro de page ni une étiquette de page
+	{program} can't take a file from PdfCraft.	{program} ne peut pas recevoir de fichier de PdfCraft.
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	{signers} signataires ; les détails du premier sont affichés
 	{s} action	Action {s}

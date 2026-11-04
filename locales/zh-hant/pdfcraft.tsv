@@ -328,6 +328,7 @@
 	Attach file	附加檔案
 	Attach {name}	附加 {name}
 	Attaching files is not available on the web yet	網頁版尚不支援附加檔案
+	Attaching {name} to a new email message…	正在將 {name} 附加到新郵件…
 	Attachment	附件
 	Attachments	附件
 	Attachments panel	附件面板
@@ -707,6 +708,7 @@
 	Could not mark the selection because text could not be read on every page	無法標記選取範圍，因為無法讀取所有頁面的文字
 	Could not save: {e}	無法儲存：{e}
 	Couldn't add {name}: {e}	無法新增{name}：{e}
+	Couldn't attach the file	無法附加檔案
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	無法合併檔案：{e}
 	Couldn't copy the image: {e}	無法複製圖片：{e}
@@ -1785,6 +1787,7 @@ key	Home	Home
 	No differences in the text.	文字沒有差異。
 	No digital IDs yet.	尚無數位 ID。
 	No documents are open	沒有開啟的文件
+	No email app is set up on this computer.	此電腦上未設定郵件應用程式。
 	No errors in the rules that were evaluated.	已評估的規則中沒有錯誤。
 	No errors: the structure follows the Arlington PDF Model.	沒有錯誤：結構符合 Arlington PDF Model。
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	此表單中還沒有計算自身值的欄位。在欄位內容的「計算」索引標籤中為欄位設定計算後，它會顯示在這裡。
@@ -1924,6 +1927,7 @@ animation effects	On	開
 	Only the recipients can open the document, each with the private key of their own certificate.	只有收件者可以開啟此文件，每人使用自己憑證的私密金鑰。
 	Opacity:	不透明度:
 	Open a document first	請先開啟文件
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	請開啟一封不含附件的新郵件，PdfCraft 會在資料夾中顯示 {name}，讓你自行附加。
 	Open a PDF ({key})	開啟 PDF（{key}）
 	Open a PDF to measure it.	開啟 PDF 以進行測量。
 	Open a web link	開啟網頁連結
@@ -1939,6 +1943,7 @@ animation effects	On	開
 	Open in Full Screen mode	以全螢幕模式開啟
 	Open in Full Screen mode?	要以全螢幕模式開啟嗎？
 	Open local file…	開啟本機檔案…
+	Open message and show file	開啟郵件並顯示檔案
 	Open next PDF in folder	開啟資料夾中的下一個 PDF
 	Open OFD (early alpha)…	開啟 OFD（早期 Alpha 版）…
 	Open previous PDF in folder	開啟資料夾中的上一個 PDF
@@ -2681,7 +2686,9 @@ animation effects	On	開
 	Self-signed	自我簽署
 	Send	傳送
 	Send backward	下移一層
+	Send by email…	透過電子郵件傳送…
 	Send to back	移至最下層
+	Sending by email isn't available in the browser	瀏覽器中無法透過電子郵件傳送
 	Sending sheet {s} of {n} to {printer}…	正在將第 {s} 張（共 {n} 張）傳送到{printer}…
 	Sending to {printer}…	正在傳送到{printer}…
 	Sending…	傳送中…
@@ -2893,6 +2900,7 @@ document scrollbar width	Standard	標準
 	Sticky note	便利貼註解
 	still checking whether the tesseract program can run; try again in a moment	仍在檢查 tesseract 程式能否執行；請稍後再試
 	Still printing; the job continues on the printer	仍在列印；工作會在印表機上繼續
+	Still waiting for your email app…	仍在等待郵件應用程式…
 	Stop	Stop
 	Stop reading	停止朗讀
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -3014,6 +3022,7 @@ document scrollbar width	Standard	標準
 	The clipboard holds no comments	剪貼簿中沒有註解
 	The comment being edited no longer exists, so its text was not saved.	正在編輯的註解已不存在，因此其文字未儲存。
 	The copied comments are larger than this page; they were placed as they are	複製的註解比此頁面大，已按原樣放置
+	The copy to attach couldn't be written: {e}	無法寫入要附加的副本：{e}
 	The device's digital ID isn't available any more; start signing again to list it.	裝置的數位 ID 已無法使用；請重新開始簽名以列出它。
 	The display datum transformation is approximate.	顯示座標的基準轉換為近似值。
 	The Dock shows it the next time PdfCraft opens.	下次開啟 PdfCraft 時，Dock 會顯示此圖示。
@@ -3121,6 +3130,7 @@ document scrollbar width	Standard	標準
 	The release has ambiguous packages. Choose a package on the official release page.	此版本有多個相容套件。請在官方發行頁面選擇一個套件。
 	The release is not a published stable update. Try again later.	此版本不是已發布的穩定更新。請稍後再試。
 	The replacement file doesn't have that many pages.	替換檔案沒有那麼多頁面。
+	the request stopped without an answer	要求未獲回應就停止了
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	限制適用於沒有「所有權限」的收件者。儲存時套用。
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
@@ -3507,6 +3517,10 @@ document scrollbar width	Wide	寬
 	You choose where the new version is saved. Continue?	由你選擇新版本的儲存位置。要繼續嗎？
 	You have version {c}. Download the new version from its release page.	目前版本為 {c}。請從其釋出頁面下載新版本。
 	Your changes will be lost if you don't save them.	如果不儲存，更改將會遺失。
+	Your default email app can't take a file from PdfCraft.	預設郵件應用程式無法從 PdfCraft 接收檔案。
+	Your email app couldn't log on to your mailbox.	郵件應用程式無法登入你的信箱。
+	Your email app didn't open a message in time.	郵件應用程式未及時開啟郵件。
+	Your email app didn't open a message. It said: {why}.	郵件應用程式未開啟郵件。它的回覆：{why}。
 	Your name	您的姓名
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy 或 yy 年 · m 或 mm 月 · mmm 或 mmmm 月份名稱 · d 或 dd 日 · ddd 或 dddd 星期。H、h、M、s 和 t 是時間字母，不能單獨使用：在字母前加上 {escape} 即可照原樣顯示。
 	Zero-width lines always count as narrower.	零寬度的線一律視為更細。
@@ -3606,6 +3620,7 @@ document scrollbar width	Wide	寬
 	{n} word(s) or phrase(s)	{n} 個單字或片語
 	{n} word(s) to review	{n} 個單詞待校對
 	{n} {kind}	{n} {kind}
+	{program} can't take a file from PdfCraft.	{program} 無法從 PdfCraft 接收檔案。
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	共 {signers} 個簽名者；顯示第一個的詳細資訊
 	{s} action	{s} 動作

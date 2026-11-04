@@ -322,6 +322,7 @@ calendar date	April	Сәуір
 	Attach file	Файлды тіркеу
 	Attach {name}	{name} тіркеу
 	Attaching files is not available on the web yet	Вебте файл тіркеу әзірге қолжетімсіз
+	Attaching {name} to a new email message…	{name} жаңа email хатына тіркелуде…
 	Attachment	Тіркеме
 	Attachments	Тіркемелер
 	Attachments panel	Тіркемелер панелі
@@ -683,6 +684,7 @@ calendar date	August	Тамыз
 	Could not mark the selection because text could not be read on every page	Барлық беттегі мәтін оқылмағандықтан, таңдалған мәтінді белгілеу мүмкін болмады
 	Could not save: {e}	Сақтау мүмкін болмады: {e}
 	Couldn't add {name}: {e}	{name} файлын қосу мүмкін болмады: {e}
+	Couldn't attach the file	Файлды тіркеу мүмкін болмады
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Файлдарды біріктіру мүмкін болмады: {e}
 	Couldn't copy the image: {e}	Суретті көшіру мүмкін болмады: {e}
@@ -1728,6 +1730,7 @@ calendar date	May	Мамыр
 	No differences in the text.	Мәтіндегі айырмашылық жоқ.
 	No digital IDs yet.	Әзірге цифрлық ID жоқ.
 	No documents are open	Ашық құжаттар жоқ
+	No email app is set up on this computer.	Бұл компьютерде email қосымшасы бапталмаған.
 	No errors in the rules that were evaluated.	Бағаланған ережелерде қате жоқ.
 	No errors: the structure follows the Arlington PDF Model.	Қате жоқ: құрылым Arlington PDF Model-ге сай.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Бұл формада мәнін есептейтін өріс әлі жоқ. Өріс сипаттарының «Есептеу» қойындысында оған есептеу беріңіз, сонда ол осында көрсетіледі.
@@ -1867,6 +1870,7 @@ animation effects	On	Қосулы
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Тек бет мазмұны өзгереді: түпнұсқа беттердегі сілтемелер, түсініктемелер, форма өрістері мен бетбелгілер сақталады.
 	Only the recipients can open the document, each with the private key of their own certificate.	Құжатты тек алушылар ғана аша алады, әрқайсысы өз сертификатының жеке кілтімен.
 	Open a document first	Алдымен құжатты ашыңыз
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	Файлсыз жаңа хат ашыңыз, PdfCraft {name} файлын қалтасында көрсетеді, оны өзіңіз тіркей аласыз.
 	Open a PDF ({key})	PDF ашу ({key})
 	Open a PDF to measure it.	Өлшеу үшін PDF құжатын ашыңыз.
 	Open a web link	Веб-сілтемені ашу
@@ -1882,6 +1886,7 @@ animation effects	On	Қосулы
 	Open in Full Screen mode	Толық экран режимінде ашу
 	Open in Full Screen mode?	Толық экран режимінде ашу керек пе?
 	Open local file…	Жергілікті файлды ашу…
+	Open message and show file	Хатты ашу және файлды көрсету
 	Open next PDF in folder	Қалтадағы келесі PDF файлын ашу
 	Open OFD (early alpha)…	OFD ашу (ерте альфа)…
 	Open previous PDF in folder	Қалтадағы алдыңғы PDF файлын ашу
@@ -2602,8 +2607,10 @@ animation effects	On	Қосулы
 	Self-signed	Өзіне-өзі қол қойылған
 	Send	Жіберу
 	Send backward	Бір деңгей артқа
+	Send by email…	Email арқылы жіберу…
 	Send code	Код жіберу
 	Send to back	Ең артқа
+	Sending by email isn't available in the browser	Email арқылы жіберу браузерде қолжетімсіз
 	Sending sheet {s} of {n} to {printer}…	{n} парақтың {s}-парағы {printer} құрылғысына жіберілуде…
 	Sending the code…	Код жіберілуде…
 	Sending to {printer}…	{printer} құрылғысына жіберілуде…
@@ -2821,6 +2828,7 @@ action wizard	Start	Бастау
 	Sticky note	Жапсырма жазба
 	still checking whether the tesseract program can run; try again in a moment	tesseract бағдарламасы іске қосыла ала ма, әлі тексерілуде; біраздан кейін қайталап көріңіз
 	Still printing; the job continues on the printer	Басып шығару жалғасуда; тапсырма принтерде орындалуда
+	Still waiting for your email app…	Email қосымшасы әлі күтілуде…
 	Stop	Stop
 	Stop reading	Оқуды тоқтату
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -2939,6 +2947,7 @@ certificate	Subject	Субъект
 	The clipboard holds no comments	Алмасу буферінде пікірлер жоқ
 	The comment being edited no longer exists, so its text was not saved.	Түзетіліп жатқан түсініктеме енді жоқ, сондықтан оның мәтіні сақталмады.
 	The copied comments are larger than this page; they were placed as they are	Көшірілген пікірлер бұл беттен үлкен; олар сол күйінде орналастырылды
+	The copy to attach couldn't be written: {e}	Тіркелетін көшірмені жазу мүмкін болмады: {e}
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Жұмыс үстелі порталының файл таңдағышы іске қосылмаған ({packages}). Оны systemctl --user status {first} арқылы тексеріңіз немесе жүйеден шығып, қайта кіріңіз.
 	The device's digital ID isn't available any more; start signing again to list it.	Құрылғының цифрлық ID-і енді қолжетімсіз; оны тізімде көру үшін қол қоюды қайта бастаңыз.
 	The Dock shows it the next time PdfCraft opens.	Dock оны PdfCraft келесі ашылғанда көрсетеді.
@@ -3049,6 +3058,7 @@ certificate	Subject	Субъект
 	The release has ambiguous packages. Choose a package on the official release page.	Бұл шығарылымда бірнеше түрлі пакет бар. Ресми шығарылым бетінен пакет таңдаңыз.
 	The release is not a published stable update. Try again later.	Бұл шығарылым жарияланған тұрақты жаңарту емес. Кейінірек қайталап көріңіз.
 	The replacement file doesn't have that many pages.	Ауыстырғыш файлда соншалық бет жоқ.
+	the request stopped without an answer	сұрау жауапсыз тоқтады
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Шектеулер «Барлық рұқсаттар» жоқ алушыларға қолданылады. Сақтау кезінде қолданылады.
 	The reverse sides already scanned are kept.	Сканерленген артқы жақтар сақталды.
@@ -3434,6 +3444,10 @@ document scrollbar width	Wide	Кең
 	You can pin up to {n} folders. Unpin one first.	Ең көбі {n} қалта бекітуге болады. Алдымен біреуінің бекітпесін алып тастаңыз.
 	You choose where the new version is saved. Continue?	Жаңа нұсқаның қайда сақталатынын сіз таңдайсыз. Жалғастыру керек пе?
 	You have version {c}. Download the new version from its release page.	Сізде {c} нұсқасы бар. Жаңа нұсқаны шығарылым бетінен жүктеп алыңыз.
+	Your default email app can't take a file from PdfCraft.	Әдепкі email қосымшаңыз PdfCraft-тан файл қабылдай алмайды.
+	Your email app couldn't log on to your mailbox.	Email қосымшаңыз пошта жәшігіңізге кіре алмады.
+	Your email app didn't open a message in time.	Email қосымшаңыз хатты уақытында ашпады.
+	Your email app didn't open a message. It said: {why}.	Email қосымшаңыз хатты ашпады. Ол былай деді: {why}.
 	Your name	Атыңыз
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy немесе yy — жыл · m немесе mm — ай · mmm немесе mmmm — ай атауы · d немесе dd — күн · ddd немесе dddd — аптаның күні. H, h, M, s және t — уақыт әріптері, оларды жеке қолдануға болмайды: әріпті сол күйінде көрсету үшін оның алдына {escape} қойыңыз.
 	Zero-width lines always count as narrower.	Ені нөл сызықтар әрқашан жіңішке саналады.
@@ -3532,6 +3546,7 @@ document scrollbar width	Wide	Кең
 	{n} word(s) or phrase(s)	{n} сөз немесе тіркес
 	{n} word(s) to review	Тексерілетін сөздер: {n}
 	{n} {kind}	{n} {kind}
+	{program} can't take a file from PdfCraft.	{program} PdfCraft-тан файл қабылдай алмайды.
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	Қол қоюшылар саны: {signers}; біріншісінің мәліметтері көрсетілген
 	{s} action	{s} әрекеті

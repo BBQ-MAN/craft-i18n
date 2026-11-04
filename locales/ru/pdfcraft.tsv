@@ -344,6 +344,7 @@ calendar date	April	Апрель
 	Attach file	Прикрепить файл
 	Attach {name}	Прикрепить {name}
 	Attaching files is not available on the web yet	Прикрепление файлов в веб-версии пока недоступно
+	Attaching {name} to a new email message…	{name} прикрепляется к новому письму…
 	Attachment	Вложение
 	Attachments	Вложения
 	Attachments panel	Панель вложений
@@ -742,6 +743,7 @@ certificate	Basic constraints	Основные ограничения
 	Could not mark the selection because text could not be read on every page	Не удалось пометить выделение, поскольку текст не удалось прочитать на всех страницах
 	Could not save: {e}	Не удалось сохранить: {e}
 	Couldn't add {name}: {e}	Не удалось добавить {name}: {e}
+	Couldn't attach the file	Не удалось прикрепить файл
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Не удалось объединить файлы: {e}
 	Couldn't copy the image: {e}	Не удалось скопировать изображение: {e}
@@ -1902,6 +1904,7 @@ calendar weekday	Mo	Пн
 	No digital IDs yet.	Нет цифровых идентификаторов.
 	No document language is set	Язык документа не задан
 	No documents are open	Нет открытых документов
+	No email app is set up on this computer.	На этом компьютере не настроено почтовое приложение.
 	No errors in the rules that were evaluated.	В оценённых правилах ошибок нет.
 	No errors: the structure follows the Arlington PDF Model.	Ошибок нет: структура соответствует модели Arlington PDF Model.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Ни одно поле этой формы пока не вычисляет своё значение. Задайте полю вычисление на вкладке «Вычислить» его свойств, и оно появится здесь.
@@ -2059,6 +2062,7 @@ animation effects	On	Вкл
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Меняется только содержимое страницы: ссылки, комментарии, поля формы и закладки на исходных страницы остаются.
 	Only the recipients can open the document, each with the private key of their own certificate.	Открыть документ могут только получатели — каждый с закрытым ключом своего сертификата.
 	Open a document first	Сначала откройте документ
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	Откройте новое письмо без файла, и PdfCraft покажет {name} в его папке, чтобы вы прикрепили его сами.
 	Open a PDF ({key})	Открыть PDF ({key})
 	Open a PDF (⌘O)	Открыть PDF (⌘O)
 	Open a PDF to measure it.	Откройте PDF для измерения.
@@ -2076,6 +2080,7 @@ animation effects	On	Вкл
 	Open in Full Screen mode	Открывать в полноэкранном режиме
 	Open in Full Screen mode?	Открыть в полноэкранном режиме?
 	Open local file…	Открыть локальный файл…
+	Open message and show file	Открыть письмо и показать файл
 	Open next PDF in folder	Открыть следующий PDF в папке
 	Open OFD (early alpha)…	Открыть OFD (ранняя альфа)…
 	Open previous PDF in folder	Открыть предыдущий PDF в папке
@@ -2864,8 +2869,10 @@ calendar weekday	Sa	Сб
 certificate	Self-signed	Самозаверенный
 	Send	Отправить
 	Send backward	На уровень назад
+	Send by email…	Отправить по электронной почте…
 	Send code	Отправить код
 	Send to back	На задний план
+	Sending by email isn't available in the browser	Отправка по электронной почте недоступна в браузере
 	Sending sheet {s} of {n} to {printer}…	Отправка листа {s} из {n} на {printer}…
 	Sending the code…	Отправка кода…
 	Sending to {printer}…	Отправка на {printer}…
@@ -3101,6 +3108,7 @@ action wizard	Start	Начать
 	still checking whether the tesseract program can run; try again in a moment	идёт проверка, может ли запуститься программа tesseract; повторите попытку через мгновение
 	Still printing; the job continues on the printer	Печать продолжается; задание выполняется на принтере
 	Still rendering — this page is unusually complex…	Отрисовка продолжается: эта страница необычно сложная…
+	Still waiting for your email app…	Всё ещё ждём почтовое приложение…
 	Stop	Stop
 	Stop reading	Остановить чтение
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -3236,6 +3244,7 @@ calendar weekday	Th	Чт
 	The clipboard holds no comments	В буфере обмена нет комментариев
 	The comment being edited no longer exists, so its text was not saved.	Редактируемый комментарий больше не существует, поэтому его текст не сохранён.
 	The copied comments are larger than this page; they were placed as they are	Скопированные комментарии больше этой страницы; они размещены как есть
+	The copy to attach couldn't be written: {e}	Не удалось записать копию для вложения: {e}
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Окно выбора файлов портала рабочего стола не запущено ({packages}). Проверьте его командой systemctl --user status {first} или выйдите из системы и войдите снова.
 	The device's digital ID isn't available any more; start signing again to list it.	Цифровой идентификатор устройства больше недоступен; начните подписание заново, чтобы увидеть его.
 	The display datum transformation is approximate.	Преобразование геодезической системы отображения приблизительное.
@@ -3370,6 +3379,7 @@ calendar weekday	Th	Чт
 	The release has ambiguous packages. Choose a package on the official release page.	В выпуске найдено несколько подходящих пакетов. Выберите пакет на официальной странице выпусков.
 	The release is not a published stable update. Try again later.	Выпуск не является опубликованным стабильным обновлением. Попробуйте позже.
 	The replacement file doesn't have that many pages.	В заменяющем файле нет столько страниц.
+	the request stopped without an answer	запрос завершился без ответа
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Ограничения действуют для получателей без «Все разрешения». Применяется при сохранении.
 	The reverse sides already scanned are kept.	Уже отсканированные обороты сохранены.
@@ -3830,6 +3840,10 @@ document scrollbar width	Wide	Широкая
 	You can pin up to {n} folders. Unpin one first.	Можно закрепить не более {n} папок. Сначала открепите одну из них.
 	You choose where the new version is saved. Continue?	Вы выбираете, куда сохранить новую версию. Продолжить?
 	You have version {c}. Download the new version from its release page.	У вас версия {c}. Скачайте новую версию со страницы релизов.
+	Your default email app can't take a file from PdfCraft.	Почтовое приложение по умолчанию не может принять файл из PdfCraft.
+	Your email app couldn't log on to your mailbox.	Почтовому приложению не удалось войти в ваш почтовый ящик.
+	Your email app didn't open a message in time.	Почтовое приложение не открыло письмо вовремя.
+	Your email app didn't open a message. It said: {why}.	Почтовое приложение не открыло письмо. Сообщение: {why}.
 	Your name	Ваше имя
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy или yy — год · m или mm — месяц · mmm или mmmm — название месяца · d или dd — день · ddd или dddd — день недели. H, h, M, s и t — буквы времени, их нельзя использовать отдельно: поставьте {escape} перед буквой, чтобы показать её как есть.
 	Zero-width lines always count as narrower.	Линии нулевой толщины всегда считаются более тонкими.
@@ -3941,6 +3955,7 @@ document scrollbar width	Wide	Широкая
 	{n} word(s) to review	Слов для проверки: {n}
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} не является номером или меткой страницы
+	{program} can't take a file from PdfCraft.	{program} не может принять файл из PdfCraft.
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	Подписавших: {signers}; показаны сведения о первом
 	{s} action	{s} действие

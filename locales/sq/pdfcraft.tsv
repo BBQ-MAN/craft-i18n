@@ -313,6 +313,7 @@
 	Attach file	Bashkëngjit skedar
 	Attach {name}	Bashkëngjit {name}
 	Attaching files is not available on the web yet	Bashkëngjitja e skedarëve nuk është ende e disponueshme në ueb
+	Attaching {name} to a new email message…	Po bashkëngjitet {name} te një mesazh i ri emaili…
 	Attachment	Bashkëngjitje
 	Attachments	Bashkëngjitjet
 	Attachments panel	Paneli i bashkëngjitjeve
@@ -667,6 +668,7 @@
 	Corrected scan	Skanim i korrigjuar
 	Could not save: {e}	Nuk u ruajt: {e}
 	Couldn't add {name}: {e}	Nuk u shtua {name}: {e}
+	Couldn't attach the file	Nuk u bashkëngjit dot skedari
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't check for updates: {e}	Nuk u kontrollua për përditësime: {e}
 	Couldn't combine files: {e}	Nuk u bashkuan skedarët: {e}
@@ -1713,6 +1715,7 @@ key	Home	Home
 	No differences in the text.	Nuk ka dallime në tekst.
 	No digital IDs yet.	Ende nuk ka ID dixhitale.
 	No documents are open	Nuk ka dokumente të hapura
+	No email app is set up on this computer.	Në këtë kompjuter nuk është caktuar aplikacion emaili.
 	No errors in the rules that were evaluated.	Nuk ka gabime në rregullat që u vlerësuan.
 	No errors: the structure follows the Arlington PDF Model.	Asnjë gabim: struktura ndjek modelin PDF Arlington.
 	No field reads it	No field reads it
@@ -1838,6 +1841,7 @@ animation effects	On	Aktiv
 	Opacity:	Opacity:
 	Open	Hap
 	Open a document first	Hap fillimisht një dokument
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	Hapni një mesazh të ri pa të, dhe PdfCraft do ta shfaqë {name} në dosjen e tij që ta bashkëngjitni vetë.
 	Open a PDF ({key})	Hap një PDF ({key})
 	Open a PDF (⌘O)	Hap një PDF (⌘O)
 	Open a PDF to measure it.	Hap një PDF për ta matur.
@@ -1851,6 +1855,7 @@ animation effects	On	Aktiv
 	Open in Full Screen mode	Hap në ekran të plotë
 	Open in Full Screen mode?	Open in Full Screen mode?
 	Open link	Hap lidhjen
+	Open message and show file	Hap mesazhin dhe shfaq skedarin
 	Open next PDF in folder	Hap PDF-në pasuese në dosje
 	Open previous PDF in folder	Hap PDF-në e mëparshme në dosje
 	Open Recent	Hap të fundit
@@ -2543,8 +2548,10 @@ animation effects	On	Aktiv
 	Selection	Përzgjedhja
 	Self-signed	I vetënënshkruar
 	Send backward	Një nivel pas
+	Send by email…	Dërgo me email…
 	Send code	Dërgo kodin
 	Send to back	Në sfond
+	Sending by email isn't available in the browser	Dërgimi me email nuk është i disponueshëm në shfletues
 	Sending sheet {s} of {n} to {printer}…	Sending sheet {s} of {n} to {printer}…
 	Sending the code…	Po dërgohet kodi…
 	Sending to {printer}…	Po dërgohet te {printer}…
@@ -2735,6 +2742,7 @@ action wizard	Start	Fillo
 	Steps	Hapat
 	Sticky note	Shënim ngjitës
 	Still printing; the job continues on the printer	Ende po printohet; puna vazhdon në printer
+	Still waiting for your email app…	Ende po pritet aplikacioni juaj i emailit…
 	Stop	Stop
 	Stopped at {limit} matches.	Stopped at {limit} matches.
 	Stopped before the end.	Stopped before the end.
@@ -2841,6 +2849,7 @@ certificate	Subject	Subjekti
 	The clipboard has no image or text	Kujtesa e fragmenteve nuk ka imazh apo tekst
 	The clipboard holds no comments	Clipboard nuk ka komente
 	The copied comments are larger than this page; they were placed as they are	Komentet e kopjuara janë më të mëdha se kjo faqe; u vendosën siç janë
+	The copy to attach couldn't be written: {e}	Kopja për t'u bashkëngjitur nuk u shkrua dot: {e}
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Zgjedhësi i skedarëve i portalit të desktopit nuk po punon ({packages}). Kontrolloje me systemctl --user status {first}, ose dil nga llogaria dhe hyr përsëri.
 	The Dock shows it the next time PdfCraft opens.	Dock e shfaq herën tjetër që hapet PdfCraft.
 	The document changed while it was being signed, so the signature wasn't saved.	Dokumenti ndryshoi ndërsa po nënshkruhej, prandaj nënshkrimi nuk u ruajt.
@@ -2933,6 +2942,7 @@ certificate	Subject	Subjekti
 	The provider's page didn't come back in time. Try again.	Faqja e ofruesit nuk u kthye në kohë. Provoni përsëri.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI-ja e ridrejtimit duhet të jetë http://127.0.0.1 ose http://localhost me një portë.
 	The replacement file doesn't have that many pages.	Skedari zëvendësues nuk ka kaq shumë faqe.
+	the request stopped without an answer	kërkesa u ndërpre pa përgjigje
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Kufizimet zbatohen për marrësit pa “Të gjitha lejet”. Zbatohet kur ruani.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
@@ -3293,6 +3303,10 @@ signature pad	Type	Shkruaj
 	You have version {c}. All releases are listed at {page}.	Keni versionin {c}. Të gjitha botimet janë të listuara te {page}.
 	You have version {c}. Download the new version from its release page.	Keni versionin {c}. Shkarkoni versionin e ri nga faqja e botimit.
 	Your changes will be lost if you don't save them.	Ndryshimet tuaja do të humbasin nëse nuk i ruani.
+	Your default email app can't take a file from PdfCraft.	Aplikacioni juaj i parazgjedhur i emailit nuk mund të marrë skedar nga PdfCraft.
+	Your email app couldn't log on to your mailbox.	Aplikacioni juaj i emailit nuk mundi të hyjë në kutinë tuaj postare.
+	Your email app didn't open a message in time.	Aplikacioni juaj i emailit nuk hapi dot një mesazh në kohë.
+	Your email app didn't open a message. It said: {why}.	Aplikacioni juaj i emailit nuk hapi dot një mesazh. Tha: {why}.
 	Your name	Emri juaj
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy ose yy vit · m ose mm muaj · mmm ose mmmm emri i muajit · d ose dd ditë · ddd ose dddd ditë e javës. H, h, M, s dhe t janë shkronja ore dhe nuk mund të përdoren vetëm: vendosni {escape} para një shkronje për ta shfaqur siç është.
 	Zero-width lines always count as narrower.	Vijat me gjerësi zero llogariten gjithmonë si më të ngushta.
@@ -3389,6 +3403,7 @@ signature pad	Type	Shkruaj
 	{n} tags	{n} etiketa
 	{n} word(s) or phrase(s)	{n} fjalë ose frazë
 	{n} {kind}	{n} {kind}
+	{program} can't take a file from PdfCraft.	{program} nuk mund të marrë skedar nga PdfCraft.
 	{rule} - {status}	{rule} - {status}
 	{s} action	Veprimi {s}
 	{verb} as "{name}"	{verb} si "{name}"

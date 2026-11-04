@@ -326,6 +326,7 @@ calendar date	April	квітня
 	Attach file	Вкласти файл
 	Attach {name}	Прикріпити {name}
 	Attaching files is not available on the web yet	Прикріплення файлів у веб-версії поки недоступне
+	Attaching {name} to a new email message…	{name} додається до нового листа…
 	Attachment	Вкладення
 	Attachments	Вкладення
 	Attachments panel	Панель вкладень
@@ -687,6 +688,7 @@ calendar date	August	серпня
 	Could not mark the selection because text could not be read on every page	Не вдалося позначити виділення, оскільки текст не вдалося прочитати на всіх сторінках
 	Could not save: {e}	Не вдалося зберегти: {e}
 	Couldn't add {name}: {e}	Не вдалося додати {name}: {e}
+	Couldn't attach the file	Не вдалося вкласти файл
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Не вдалося об’єднати файли: {e}
 	Couldn't copy the image: {e}	Не вдалося скопіювати зображення: {e}
@@ -1751,6 +1753,7 @@ calendar date	May	травня
 	No differences in the text.	Відмінностей у тексті немає.
 	No digital IDs yet.	Ще немає цифрових посвідчень.
 	No documents are open	Немає відкритих документів
+	No email app is set up on this computer.	На цьому комп’ютері не налаштовано поштового застосунку.
 	No errors in the rules that were evaluated.	В оцінених правилах помилок немає.
 	No errors: the structure follows the Arlington PDF Model.	Помилок немає: структура відповідає моделі Arlington PDF Model.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Жодне поле цієї форми поки не обчислює своє значення. Задайте полю обчислення на вкладці «Обчислення» його властивостей, і воно з’явиться тут.
@@ -1893,6 +1896,7 @@ animation effects	On	Увімкнено
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Змінюється лише вміст сторінок: посилання, коментарі, поля форми й закладки на оригінальних сторінках залишаються.
 	Only the recipients can open the document, each with the private key of their own certificate.	Відкрити документ можуть лише одержувачі — кожен за допомогою закритого ключа власного сертифіката.
 	Open a document first	Спочатку відкрийте документ
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	Відкрийте новий лист без файла, і PdfCraft покаже {name} у його теці, щоб ви вклали його самі.
 	Open a PDF ({key})	Відкрити PDF ({key})
 	Open a PDF to measure it.	Відкрийте PDF для вимірювання.
 	Open a web link	Відкрити вебпосилання
@@ -1908,6 +1912,7 @@ animation effects	On	Увімкнено
 	Open in Full Screen mode	Відкрити в повноекранному режимі
 	Open in Full Screen mode?	Відкрити в повноекранному режимі?
 	Open local file…	Відкрити локальний файл…
+	Open message and show file	Відкрити лист і показати файл
 	Open next PDF in folder	Відкрити наступний PDF у теці
 	Open OFD (early alpha)…	Відкрити OFD (рання альфа)…
 	Open previous PDF in folder	Відкрити попередній PDF у теці
@@ -2632,8 +2637,10 @@ animation effects	On	Увімкнено
 	Self-signed	Самопідписаний
 	Send	Надіслати
 	Send backward	На рівень назад
+	Send by email…	Надіслати електронною поштою…
 	Send code	Надіслати код
 	Send to back	На задній план
+	Sending by email isn't available in the browser	Надсилання електронною поштою недоступне в браузері
 	Sending sheet {s} of {n} to {printer}…	Надсилання аркуша {s} із {n} на {printer}…
 	Sending the code…	Надсилання коду…
 	Sending to {printer}…	Надсилання на {printer}…
@@ -2854,6 +2861,7 @@ action wizard	Start	Почати
 	Sticky note	Нотатка
 	still checking whether the tesseract program can run; try again in a moment	триває перевірка, чи може запуститися програма tesseract; спробуйте ще раз за мить
 	Still printing; the job continues on the printer	Друк триває; завдання виконується на принтері
+	Still waiting for your email app…	Досі чекаємо на поштовий застосунок…
 	Stop	Stop
 	Stop reading	Зупинити читання
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -2976,6 +2984,7 @@ certificate	Subject	Власник сертифіката
 	The clipboard holds no comments	У буфері обміну немає коментарів
 	The comment being edited no longer exists, so its text was not saved.	Коментар, який редагувався, більше не існує, тому його текст не збережено.
 	The copied comments are larger than this page; they were placed as they are	Скопійовані коментарі більші за цю сторінку; їх розміщено як є
+	The copy to attach couldn't be written: {e}	Не вдалося записати копію для вкладення: {e}
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Вибір файлів порталу робочого столу не запущено ({packages}). Перевірте його командою systemctl --user status {first} або вийдіть із системи й увійдіть знову.
 	The device's digital ID isn't available any more; start signing again to list it.	Цифрове посвідчення пристрою більше недоступне; почніть підписування знову, щоб побачити його.
 	The Dock shows it the next time PdfCraft opens.	Dock покаже його під час наступного відкриття PdfCraft.
@@ -3086,6 +3095,7 @@ certificate	Subject	Власник сертифіката
 	The release has ambiguous packages. Choose a package on the official release page.	У випуску є кілька сумісних пакетів. Виберіть пакет на офіційній сторінці випусків.
 	The release is not a published stable update. Try again later.	Це не опубліковане стабільне оновлення. Спробуйте пізніше.
 	The replacement file doesn't have that many pages.	Файл заміни не має такої кількості сторінок.
+	the request stopped without an answer	запит завершився без відповіді
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Обмеження діють для одержувачів без «Усі дозволи». Застосовується під час збереження.
 	The reverse sides already scanned are kept.	Уже відскановані зворотні боки збережено.
@@ -3468,6 +3478,10 @@ document scrollbar width	Wide	Широка
 	You can pin up to {n} folders. Unpin one first.	Можна закріпити не більше {n} тек. Спочатку відкріпіть одну з них.
 	You choose where the new version is saved. Continue?	Ви вибираєте, де зберегти нову версію. Продовжити?
 	You have version {c}. Download the new version from its release page.	У вас версія {c}. Завантажте нову версію зі сторінки випуску.
+	Your default email app can't take a file from PdfCraft.	Типовий поштовий застосунок не може прийняти файл із PdfCraft.
+	Your email app couldn't log on to your mailbox.	Поштовому застосунку не вдалося увійти до вашої поштової скриньки.
+	Your email app didn't open a message in time.	Поштовий застосунок не відкрив лист вчасно.
+	Your email app didn't open a message. It said: {why}.	Поштовий застосунок не відкрив лист. Повідомлення: {why}.
 	Your name	Ваше ім’я
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy або yy рік · m або mm місяць · mmm або mmmm назва місяця · d або dd день · ddd або dddd день тижня. H, h, M, s і t — літери часу, їх не можна використовувати окремо: поставте {escape} перед літерою, щоб показати її як є.
 	Zero-width lines always count as narrower.	Лінії нульової товщини завжди вважаються тоншими.
@@ -3567,6 +3581,7 @@ document scrollbar width	Wide	Широка
 	{n} word(s) or phrase(s)	Слів або фраз: {n}
 	{n} word(s) to review	Слів для перевірки: {n}
 	{n} {kind}	{n} {kind}
+	{program} can't take a file from PdfCraft.	{program} не може прийняти файл із PdfCraft.
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	Підписувачів: {signers}; показано відомості про першого
 	{s} action	Дія: {s}

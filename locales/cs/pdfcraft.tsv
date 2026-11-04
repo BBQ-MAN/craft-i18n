@@ -380,6 +380,7 @@ calendar date	April	dubna
 	Attach file	Připojit soubor
 	Attach {name}	Připojit {name}
 	Attaching files is not available on the web yet	Připojování souborů zatím na webu není k dispozici
+	Attaching {name} to a new email message…	Přikládání {name} k nové e-mailové zprávě…
 	Attachment	Příloha
 	Attachments	Přílohy
 	Attachments panel	Panel příloh
@@ -772,6 +773,7 @@ certificate	Basic constraints	Základní omezení
 	Could not mark the selection because text could not be read on every page	Výběr nelze označit, protože text nebylo možné přečíst na všech stránkách
 	Could not save: {e}	Nelze uložit: {e}
 	Couldn't add {name}: {e}	{name} nelze přidat: {e}
+	Couldn't attach the file	Soubor nelze přiložit
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Soubory nelze sloučit: {e}
 	Couldn't copy the image: {e}	Obrázek nelze zkopírovat: {e}
@@ -1945,6 +1947,7 @@ calendar weekday	Mo	Po
 	No digital IDs yet.	Zatím žádná digitální ID.
 	No document language is set	Není nastaven jazyk dokumentu
 	No documents are open	Nejsou otevřené žádné dokumenty
+	No email app is set up on this computer.	V tomto počítači není nastavena žádná e-mailová aplikace.
 	No errors in the rules that were evaluated.	V posouzených pravidlech nejsou žádné chyby.
 	No errors: the structure follows the Arlington PDF Model.	Žádné chyby: struktura odpovídá modelu Arlington PDF Model.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Žádné pole tohoto formuláře zatím nepočítá svou hodnotu. Zadejte poli výpočet na kartě Výpočet v jeho vlastnostech a zobrazí se zde.
@@ -2107,6 +2110,7 @@ animation effects	On	Zapnuto
 	Only the recipients can open the document, each with the private key of their own certificate.	Dokument mohou otevřít jen příjemci, každý soukromým klíčem svého certifikátu.
 	Opacity:	Neprůhlednost:
 	Open a document first	Nejdřív otevřete dokument
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	Otevřete novou zprávu bez něj a PdfCraft zobrazí {name} v jeho složce, abyste jej mohli přiložit sami.
 	Open a PDF ({key})	Otevřít PDF ({key})
 	Open a PDF (⌘O)	Otevřít PDF (⌘O)
 	Open a PDF to measure it.	Otevřete PDF, které chcete měřit.
@@ -2124,6 +2128,7 @@ animation effects	On	Zapnuto
 	Open in Full Screen mode	Otevřít v režimu celé obrazovky
 	Open in Full Screen mode?	Otevřít v režimu celé obrazovky?
 	Open local file…	Otevřít místní soubor…
+	Open message and show file	Otevřít zprávu a zobrazit soubor
 	Open next PDF in folder	Otevřít další PDF ve složce
 	Open OFD (early alpha)…	Otevřít OFD (raná alfa)…
 	Open previous PDF in folder	Otevřít předchozí PDF ve složce
@@ -2904,8 +2909,10 @@ calendar weekday	Sa	So
 certificate	Self-signed	Samopodepsaný
 	Send	Odeslat
 	Send backward	O úroveň dozadu
+	Send by email…	Odeslat e-mailem…
 	Send code	Odeslat kód
 	Send to back	Do pozadí
+	Sending by email isn't available in the browser	Odesílání e-mailem není v prohlížeči k dispozici
 	Sending sheet {s} of {n} to {printer}…	Odesílání listu {s} z {n} na {printer}…
 	Sending the code…	Odesílání kódu…
 	Sending to {printer}…	Odesílání na {printer}…
@@ -3137,6 +3144,7 @@ action wizard	Start	Spustit
 	still checking whether the tesseract program can run; try again in a moment	stále se ověřuje, zda lze program tesseract spustit; zkuste to za chvíli znovu
 	Still printing; the job continues on the printer	Stále se tiskne; úloha pokračuje na tiskárně
 	Still rendering — this page is unusually complex…	Stále se vykresluje – tato stránka je neobvykle složitá…
+	Still waiting for your email app…	Stále se čeká na e-mailovou aplikaci…
 	Stop	Stop
 	Stop reading	Zastavit čtení
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -3276,6 +3284,7 @@ calendar weekday	Th	Čt
 	The clipboard holds no comments	Schránka neobsahuje žádné komentáře
 	The comment being edited no longer exists, so its text was not saved.	Upravovaný komentář už neexistuje, takže jeho text nebyl uložen.
 	The copied comments are larger than this page; they were placed as they are	Zkopírované komentáře jsou větší než tato stránka; byly umístěny tak, jak jsou
+	The copy to attach couldn't be written: {e}	Kopii k přiložení nelze zapsat: {e}
 	The default optional content configuration (D) has no Name	Výchozí konfigurace volitelného obsahu (D) nemá Name
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Výběr souborů portálu pracovní plochy neběží ({packages}). Zkontrolujte jej příkazem systemctl --user status {first}, nebo se odhlaste a znovu přihlaste.
 	The device's digital ID isn't available any more; start signing again to list it.	Digitální ID zařízení už není k dispozici; začněte podepisovat znovu, aby se zobrazilo.
@@ -3453,6 +3462,7 @@ calendar weekday	Th	Čt
 	The release has ambiguous packages. Choose a package on the official release page.	Vydání obsahuje nejednoznačné balíčky. Vyberte balíček na oficiální stránce vydání.
 	The release is not a published stable update. Try again later.	Toto vydání není zveřejněná stabilní aktualizace. Zkuste to později.
 	The replacement file doesn't have that many pages.	Náhradní soubor nemá tolik stránek.
+	the request stopped without an answer	požadavek skončil bez odpovědi
 	The resolution of an image can't be measured	Rozlišení obrázku nelze změřit
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Omezení platí pro příjemce bez „Všechna oprávnění“. Použije se při uložení.
@@ -3916,6 +3926,10 @@ document scrollbar width	Wide	Široký
 	You can pin up to {n} folders. Unpin one first.	Připnout lze nejvýše {n} složek. Nejdříve některou odepněte.
 	You choose where the new version is saved. Continue?	O umístění nové verze rozhodnete vy. Pokračovat?
 	You have version {c}. Download the new version from its release page.	Máte verzi {c}. Novou verzi si stáhněte z její stránky s vydáním.
+	Your default email app can't take a file from PdfCraft.	Výchozí e-mailová aplikace nemůže převzít soubor z PdfCraft.
+	Your email app couldn't log on to your mailbox.	E-mailová aplikace se nemohla přihlásit k vaší poštovní schránce.
+	Your email app didn't open a message in time.	E-mailová aplikace neotevřela zprávu včas.
+	Your email app didn't open a message. It said: {why}.	E-mailová aplikace neotevřela zprávu. Uvedla: {why}.
 	Your name	Vaše jméno
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy nebo yy rok · m nebo mm měsíc · mmm nebo mmmm název měsíce · d nebo dd den · ddd nebo dddd den v týdnu. H, h, M, s a t jsou písmena času a samostatně je použít nelze: chcete-li písmeno zobrazit tak, jak je, napište před něj {escape}.
 	Zero-width lines always count as narrower.	Čáry s nulovou šířkou se vždy počítají jako užší.
@@ -4041,6 +4055,7 @@ document scrollbar width	Wide	Široký
 	{n} word(s) to review	{n} slov ke kontrole
 	{n} {kind}	{kind}: {n}
 	{page} is not a page number or label	{page} není číslo ani označení stránky
+	{program} can't take a file from PdfCraft.	{program} nemůže převzít soubor z PdfCraft.
 	{rule} - {status}	{rule} – {status}
 	{signers} signers; details of the first are shown	Podepsali: {signers}; zobrazují se podrobnosti prvního
 	{s} action	Akce {s}

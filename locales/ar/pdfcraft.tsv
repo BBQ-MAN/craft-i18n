@@ -330,6 +330,7 @@ calendar date	April	أبريل
 	Attach file	إرفاق ملف
 	Attach {name}	إرفاق {name}
 	Attaching files is not available on the web yet	إرفاق الملفات غير متاح على الويب بعد
+	Attaching {name} to a new email message…	جارٍ إرفاق {name} برسالة بريد إلكتروني جديدة…
 	Attachment	مرفق
 	Attachments	المرفقات
 	Attachments panel	لوحة المرفقات
@@ -702,6 +703,7 @@ certificate	Basic constraints	القيود الأساسية
 	Could not mark the selection because text could not be read on every page	تعذر وضع علامة على التحديد لأنه تعذرت قراءة النص في كل الصفحات
 	Could not save: {e}	تعذّر الحفظ: {e}
 	Couldn't add {name}: {e}	تعذّرت إضافة {name}: {e}
+	Couldn't attach the file	تعذّر إرفاق الملف
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	تعذّر دمج الملفات: {e}
 	Couldn't copy the image: {e}	تعذّر نسخ الصورة: {e}
@@ -1796,6 +1798,7 @@ calendar weekday	Mo	إثنين
 	No digital IDs yet.	لا توجد معرّفات رقمية بعد.
 	No document language is set	لم تُحدد لغة المستند
 	No documents are open	لا توجد مستندات مفتوحة
+	No email app is set up on this computer.	لم يتم إعداد أي تطبيق بريد على هذا الكمبيوتر.
 	No errors in the rules that were evaluated.	لا توجد أخطاء في القواعد التي جرى تقييمها.
 	No errors: the structure follows the Arlington PDF Model.	لا توجد أخطاء: البنية تتبع Arlington PDF Model.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	لا يحسب أي حقل في هذا النموذج قيمته بعد. امنح حقلًا عملية حساب في علامة التبويب «الحساب» ضمن خصائصه، وسيظهر هنا.
@@ -1943,6 +1946,7 @@ animation effects	On	مفعّلة
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	يتغير محتوى الصفحة فقط: الروابط والتعليقات وحقول النموذج والإشارات المرجعية على الصفحات الأصلية تبقى.
 	Only the recipients can open the document, each with the private key of their own certificate.	لا يمكن فتح المستند إلا للمستلمين، كلٌّ بالمفتاح الخاص لشهادته.
 	Open a document first	افتح مستندًا أولًا
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	افتح رسالة جديدة بدونه، وسيُظهر PdfCraft الملف {name} في مجلده لتتمكن من إرفاقه بنفسك.
 	Open a PDF ({key})	فتح ملف PDF ({key})
 	Open a PDF (⌘O)	فتح PDF‏ (⌘O)
 	Open a PDF to measure it.	افتح ملف PDF لقياسه.
@@ -1960,6 +1964,7 @@ animation effects	On	مفعّلة
 	Open in Full Screen mode	الفتح في وضع ملء الشاشة
 	Open in Full Screen mode?	فتح في وضع ملء الشاشة؟
 	Open local file…	فتح ملف محلي…
+	Open message and show file	فتح الرسالة وإظهار الملف
 	Open next PDF in folder	فتح ملف PDF التالي في المجلد
 	Open OFD (early alpha)…	فتح OFD (إصدار ألفا مبكر)…
 	Open previous PDF in folder	فتح ملف PDF السابق في المجلد
@@ -2714,8 +2719,10 @@ calendar weekday	Sa	سبت
 certificate	Self-signed	ذاتي التوقيع
 	Send	إرسال
 	Send backward	إرسال مستوى واحد للخلف
+	Send by email…	إرسال بالبريد الإلكتروني…
 	Send code	إرسال الرمز
 	Send to back	إرسال إلى الخلف
+	Sending by email isn't available in the browser	الإرسال بالبريد الإلكتروني غير متاح في المتصفح
 	Sending sheet {s} of {n} to {printer}…	جارٍ إرسال الورقة {s} من {n} إلى {printer}…
 	Sending the code…	جارٍ إرسال الرمز…
 	Sending to {printer}…	جارٍ الإرسال إلى {printer}…
@@ -2941,6 +2948,7 @@ action wizard	Start	بدء
 	still checking whether the tesseract program can run; try again in a moment	لا يزال التحقق جاريًا من إمكانية تشغيل برنامج tesseract؛ أعد المحاولة بعد لحظة
 	Still printing; the job continues on the printer	ما زالت الطباعة جارية؛ تتابع المهمة عملها على الطابعة
 	Still rendering — this page is unusually complex…	لا يزال العرض جارياً — هذه الصفحة معقدة على غير العادة…
+	Still waiting for your email app…	لا يزال في انتظار تطبيق البريد…
 	Stop	Stop
 	Stop reading	إيقاف القراءة
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -3067,6 +3075,7 @@ calendar weekday	Th	خميس
 	The clipboard holds no comments	لا تحتوي الحافظة على تعليقات
 	The comment being edited no longer exists, so its text was not saved.	التعليق الذي كان قيد التحرير لم يعد موجودًا، لذا لم يُحفظ نصه.
 	The copied comments are larger than this page; they were placed as they are	التعليقات المنسوخة أكبر من هذه الصفحة؛ تم وضعها كما هي
+	The copy to attach couldn't be written: {e}	تعذّرت كتابة النسخة المراد إرفاقها: {e}
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	منتقي الملفات في بوابة سطح المكتب لا يعمل ({packages}). تحقّق منه باستخدام systemctl --user status {first}، أو سجّل الخروج ثم ادخل مجددًا.
 	The device's digital ID isn't available any more; start signing again to list it.	لم يعد المعرّف الرقمي للجهاز متاحًا؛ ابدأ التوقيع من جديد لعرضه.
 	The Dock shows it the next time PdfCraft opens.	يعرضها Dock في المرة التالية التي يُفتح فيها PdfCraft.
@@ -3196,6 +3205,7 @@ calendar weekday	Th	خميس
 	The release has ambiguous packages. Choose a package on the official release page.	تتضمن هذه النسخة حزمًا غير واضحة. اختر حزمة من صفحة الإصدار الرسمية.
 	The release is not a published stable update. Try again later.	هذا الإصدار ليس تحديثًا مستقرًا منشورًا. حاول مجددًا لاحقًا.
 	The replacement file doesn't have that many pages.	الملف البديل لا يحتوي على هذا العدد من الصفحات.
+	the request stopped without an answer	توقف الطلب دون رد
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	تنطبق القيود على المستلمين الذين ليس لديهم «كل الأذونات». يُطبَّق عند الحفظ.
 	The reverse sides already scanned are kept.	تم الاحتفاظ بالوجوه الخلفية الممسوحة سابقاً.
@@ -3633,6 +3643,10 @@ document scrollbar width	Wide	عريض
 	You can pin up to {n} folders. Unpin one first.	يمكنك تثبيت {n} مجلدات كحد أقصى. ألغِ تثبيت أحدها أولًا.
 	You choose where the new version is saved. Continue?	أنت تختار مكان حفظ الإصدار الجديد. هل تريد المتابعة؟
 	You have version {c}. Download the new version from its release page.	لديك الإصدار {c}. نزّل الإصدار الجديد من صفحة إصداره.
+	Your default email app can't take a file from PdfCraft.	لا يستطيع تطبيق البريد الافتراضي استلام ملف من PdfCraft.
+	Your email app couldn't log on to your mailbox.	تعذّر على تطبيق البريد تسجيل الدخول إلى صندوق بريدك.
+	Your email app didn't open a message in time.	لم يفتح تطبيق البريد رسالة في الوقت المحدد.
+	Your email app didn't open a message. It said: {why}.	لم يفتح تطبيق البريد رسالة. قال: {why}.
 	Your name	اسمك
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy أو yy السنة · m أو mm الشهر · mmm أو mmmm اسم الشهر · d أو dd اليوم · ddd أو dddd يوم الأسبوع. H و h و M و s و t أحرف الوقت ولا يمكن استخدامها وحدها: ضع {escape} قبل الحرف لإظهاره كما هو.
 	Zero-width lines always count as narrower.	الخطوط ذات العرض الصفري تُعدّ دائمًا أضيق.
@@ -3743,6 +3757,7 @@ document scrollbar width	Wide	عريض
 	{n} word(s) to review	{n} كلمة للمراجعة
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} ليس رقم صفحة أو تسمية
+	{program} can't take a file from PdfCraft.	لا يستطيع {program} استلام ملف من PdfCraft.
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	عدد الموقِّعين {signers}؛ تظهر تفاصيل الأول منهم
 	{s} action	إجراء {s}

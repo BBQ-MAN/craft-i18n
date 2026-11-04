@@ -329,6 +329,7 @@
 	Attach file	附加文件
 	Attach {name}	附加 {name}
 	Attaching files is not available on the web yet	网页版尚不支持附加文件
+	Attaching {name} to a new email message…	正在将 {name} 附加到新邮件…
 	Attachment	附件
 	Attachments	附件
 	Attachments panel	附件面板
@@ -713,6 +714,7 @@
 	Could not mark the selection because text could not be read on every page	无法标记选区，因为无法读取所有页面上的文本
 	Could not save: {e}	无法保存：{e}
 	Couldn't add {name}: {e}	无法添加{name}：{e}
+	Couldn't attach the file	无法附加文件
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	无法合并文件：{e}
 	Couldn't copy the image: {e}	无法复制图像：{e}
@@ -1805,6 +1807,7 @@ key	Home	Home
 	No differences in the text.	文本没有差异。
 	No digital IDs yet.	尚无数字 ID。
 	No documents are open	没有打开的文档
+	No email app is set up on this computer.	此电脑上没有设置邮件应用。
 	No errors in the rules that were evaluated.	已评估的规则中没有错误。
 	No errors: the structure follows the Arlington PDF Model.	没有错误：结构符合 Arlington PDF Model。
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	此表单中还没有计算自身值的字段。在字段属性的“计算”选项卡中为字段设置计算后，它会显示在这里。
@@ -1949,6 +1952,7 @@ animation effects	On	开
 	Only the recipients can open the document, each with the private key of their own certificate.	只有收件人可以打开此文档，每人使用自己证书的私钥。
 	Opacity:	不透明度:
 	Open a document first	请先打开文档
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	请打开一封不带附件的新邮件，PdfCraft 会在文件夹中显示 {name}，以便你自行附加。
 	Open a PDF ({key})	打开 PDF ({key})
 	Open a PDF to measure it.	打开 PDF 以进行测量。
 	Open a web link	打开网页链接
@@ -1964,6 +1968,7 @@ animation effects	On	开
 	Open in Full Screen mode	以全屏模式打开
 	Open in Full Screen mode?	以全屏模式打开？
 	Open local file…	打开本地文件…
+	Open message and show file	打开邮件并显示文件
 	Open next PDF in folder	打开文件夹中的下一个 PDF
 	Open OFD (early alpha)…	打开 OFD（早期 Alpha 版）…
 	Open previous PDF in folder	打开文件夹中的上一个 PDF
@@ -2711,8 +2716,10 @@ animation effects	On	开
 	Self-signed	自签名
 	Send	发送
 	Send backward	下移一层
+	Send by email…	通过电子邮件发送…
 	Send code	发送验证码
 	Send to back	置于底层
+	Sending by email isn't available in the browser	浏览器中无法通过电子邮件发送
 	Sending sheet {s} of {n} to {printer}…	正在将第 {s} 张（共 {n} 张）发送到{printer}…
 	Sending the code…	正在发送验证码…
 	Sending to {printer}…	正在发送到{printer}…
@@ -2939,6 +2946,7 @@ document scrollbar width	Standard	标准
 	Sticky note	附注
 	still checking whether the tesseract program can run; try again in a moment	仍在检查 tesseract 程序能否运行；请稍后重试
 	Still printing; the job continues on the printer	仍在打印；作业将在打印机上继续
+	Still waiting for your email app…	仍在等待邮件应用…
 	Stop	Stop
 	Stop reading	停止朗读
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -3060,6 +3068,7 @@ document scrollbar width	Standard	标准
 	The clipboard holds no comments	剪贴板中没有注释
 	The comment being edited no longer exists, so its text was not saved.	正在编辑的注释已不存在，因此其文本未保存。
 	The copied comments are larger than this page; they were placed as they are	复制的注释比此页面大，已按原样放置
+	The copy to attach couldn't be written: {e}	无法写入要附加的副本：{e}
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	桌面门户的文件选择器未在运行（{packages}）。请使用 systemctl --user status {first} 检查，或注销后重新登录。
 	The device's digital ID isn't available any more; start signing again to list it.	设备的数字 ID 已不可用；请重新开始签名以列出它。
 	The display datum transformation is approximate.	显示坐标的基准转换为近似值。
@@ -3170,6 +3179,7 @@ document scrollbar width	Standard	标准
 	The release has ambiguous packages. Choose a package on the official release page.	此版本有多个兼容的软件包。请在官方发布页面选择一个软件包。
 	The release is not a published stable update. Try again later.	此版本不是已发布的稳定更新。请稍后重试。
 	The replacement file doesn't have that many pages.	替换文件没有那么多页面。
+	the request stopped without an answer	请求未获响应就停止了
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	限制适用于没有“所有权限”的收件人。保存时应用。
 	The reverse sides already scanned are kept.	已扫描的背面已保留。
@@ -3576,6 +3586,10 @@ document scrollbar width	Wide	宽
 	You choose where the new version is saved. Continue?	由你选择新版本的保存位置。要继续吗？
 	You have version {c}. Download the new version from its release page.	当前版本为 {c}。请从其发布页面下载新版本。
 	Your changes will be lost if you don't save them.	如果不保存，更改将会丢失。
+	Your default email app can't take a file from PdfCraft.	默认邮件应用无法从 PdfCraft 接收文件。
+	Your email app couldn't log on to your mailbox.	邮件应用无法登录你的邮箱。
+	Your email app didn't open a message in time.	邮件应用没有及时打开邮件。
+	Your email app didn't open a message. It said: {why}.	邮件应用没有打开邮件。它的回复：{why}。
 	Your name	您的姓名
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy 或 yy 年 · m 或 mm 月 · mmm 或 mmmm 月份名称 · d 或 dd 日 · ddd 或 dddd 星期。H、h、M、s 和 t 是时间字母，不能单独使用：在字母前加 {escape} 可按原样显示。
 	Zero-width lines always count as narrower.	零宽度的线始终视为更细。
@@ -3675,6 +3689,7 @@ document scrollbar width	Wide	宽
 	{n} word(s) or phrase(s)	{n} 个单词或短语
 	{n} word(s) to review	{n} 个词待校对
 	{n} {kind}	{n} {kind}
+	{program} can't take a file from PdfCraft.	{program} 无法从 PdfCraft 接收文件。
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	共 {signers} 个签名者；显示第一个的详细信息
 	{s} action	{s}动作

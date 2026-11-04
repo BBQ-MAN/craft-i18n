@@ -380,6 +380,7 @@ calendar date	April	balandžio
 	Attach file	Pridėti failą
 	Attach {name}	Pridėti {name}
 	Attaching files is not available on the web yet	Failų pridėjimas žiniatinklyje dar negalimas
+	Attaching {name} to a new email message…	{name} pridedamas prie naujo el. laiško…
 	Attachment	Priedas
 	Attachments	Priedai
 	Attachments panel	Priedų skydelis
@@ -768,6 +769,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Could not mark the selection because text could not be read on every page	Nepavyko pažymėti atrankos, nes nepavyko perskaityti teksto visuose puslapiuose
 	Could not save: {e}	Nepavyko įrašyti: {e}
 	Couldn't add {name}: {e}	Nepavyko pridėti {name}: {e}
+	Couldn't attach the file	Nepavyko pridėti failo
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Nepavyko sujungti failų: {e}
 	Couldn't copy the image: {e}	Nepavyko nukopijuoti paveikslėlio: {e}
@@ -1927,6 +1929,7 @@ calendar weekday	Mo	Pr
 	No digital IDs yet.	Skaitmeninių ID dar nėra.
 	No document language is set	Dokumento kalba nenustatyta
 	No documents are open	Nėra atvertų dokumentų
+	No email app is set up on this computer.	Šiame kompiuteryje nenustatyta jokia el. pašto programa.
 	No errors in the rules that were evaluated.	Įvertintose taisyklėse klaidų nėra.
 	No errors: the structure follows the Arlington PDF Model.	Klaidų nėra: struktūra atitinka Arlington PDF Model.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Nė vienas šios formos laukas dar neskaičiuoja savo reikšmės. Nustatykite laukui skaičiavimą jo savybių kortelėje „Skaičiavimas“, ir jis bus rodomas čia.
@@ -2086,6 +2089,7 @@ animation effects	On	Įjungta
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Keičiamas tik puslapio turinys: saitai, komentarai, formos laukai ir žymelės pradiniuose puslapiuose lieka.
 	Only the recipients can open the document, each with the private key of their own certificate.	Dokumentą gali atverti tik gavėjai, kiekvienas savo sertifikato privačiuoju raktu.
 	Open a document first	Pirmiausia atverkite dokumentą
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	Atverkite naują laišką be jo, ir PdfCraft parodys {name} jo aplanke, kad galėtumėte pridėti patys.
 	Open a PDF ({key})	Atverti PDF ({key})
 	Open a PDF (⌘O)	Atverti PDF (⌘O)
 	Open a PDF to measure it.	Atverkite PDF, kad galėtumėte jį išmatuoti.
@@ -2103,6 +2107,7 @@ animation effects	On	Įjungta
 	Open in Full Screen mode	Atverti viso ekrano veiksena
 	Open in Full Screen mode?	Atidaryti viso ekrano režimu?
 	Open local file…	Atidaryti vietinį failą…
+	Open message and show file	Atverti laišką ir rodyti failą
 	Open next PDF in folder	Atverti kitą aplanko PDF
 	Open OFD (early alpha)…	Atverti OFD (ankstyvoji alfa versija)…
 	Open previous PDF in folder	Atverti ankstesnį aplanko PDF
@@ -2885,8 +2890,10 @@ calendar weekday	Sa	Št
 certificate	Self-signed	Savarankiškai pasirašytas
 	Send	Siųsti
 	Send backward	Vienu sluoksniu žemiau
+	Send by email…	Siųsti el. paštu…
 	Send code	Siųsti kodą
 	Send to back	Į apačią
+	Sending by email isn't available in the browser	Siuntimas el. paštu naršyklėje nepasiekiamas
 	Sending sheet {s} of {n} to {printer}…	Siunčiamas lapas {s} iš {n} į {printer}…
 	Sending the code…	Siunčiamas kodas…
 	Sending to {printer}…	Siunčiama į {printer}…
@@ -3120,6 +3127,7 @@ action wizard	Start	Pradėti
 	still checking whether the tesseract program can run; try again in a moment	tikrinama, ar programa „Tesseract“ gali veikti; pabandykite po akimirkos
 	Still printing; the job continues on the printer	Dar spausdinama; užduotis tęsiama spausdintuve
 	Still rendering — this page is unusually complex…	Vis dar atvaizduojama — šis puslapis neįprastai sudėtingas…
+	Still waiting for your email app…	Vis dar laukiama el. pašto programos…
 	Stop	Stop
 	Stop reading	Stabdyti skaitymą
 	Stopped at {limit} matches.	Stopped at {limit} matches.
@@ -3257,6 +3265,7 @@ calendar weekday	Th	Kt
 	The clipboard holds no comments	Iškarpinėje komentarų nėra
 	The comment being edited no longer exists, so its text was not saved.	Redaguojamo komentaro nebėra, todėl jo tekstas neįrašytas.
 	The copied comments are larger than this page; they were placed as they are	Nukopijuoti komentarai didesni už šį puslapį; jie įdėti tokie, kokie yra
+	The copy to attach couldn't be written: {e}	Nepavyko įrašyti pridedamos kopijos: {e}
 	The default optional content configuration (D) has no Name	Numatytoji pasirenkamojo turinio konfigūracija (D) neturi Name
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Darbalaukio portalo failų parinkiklis neveikia ({packages}). Patikrinkite jį komanda systemctl --user status {first} arba atsijunkite ir vėl prisijunkite.
 	The device's digital ID isn't available any more; start signing again to list it.	Įrenginio skaitmeninis ID nebepasiekiamas; pradėkite pasirašyti iš naujo, kad jis būtų parodytas.
@@ -3435,6 +3444,7 @@ calendar weekday	Th	Kt
 	The release has ambiguous packages. Choose a package on the official release page.	Šiame leidime yra kelios galimos paketų parinktys. Pasirinkite paketą oficialiame leidimų puslapyje.
 	The release is not a published stable update. Try again later.	Šis leidimas nėra paskelbtas stabilus naujinys. Bandykite vėliau.
 	The replacement file doesn't have that many pages.	Pakaitiniame faile nėra tiek puslapių.
+	the request stopped without an answer	užklausa baigėsi be atsakymo
 	The resolution of an image can't be measured	Vaizdo raiškos išmatuoti nepavyksta
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Apribojimai taikomi gavėjams be „Visi leidimai“. Pritaikoma įrašant.
@@ -3905,6 +3915,10 @@ document scrollbar width	Wide	Platus
 	You can pin up to {n} folders. Unpin one first.	Galite prisegti iki {n} aplankų. Pirmiausia atsekite vieną.
 	You choose where the new version is saved. Continue?	Jūs pasirenkate, kur įrašyti naują versiją. Tęsti?
 	You have version {c}. Download the new version from its release page.	Turite versiją {c}. Atsisiųskite naują versiją iš jos laidos puslapio.
+	Your default email app can't take a file from PdfCraft.	Numatytoji el. pašto programa negali priimti failo iš PdfCraft.
+	Your email app couldn't log on to your mailbox.	El. pašto programai nepavyko prisijungti prie jūsų pašto dėžutės.
+	Your email app didn't open a message in time.	El. pašto programa laiku neatvėrė laiško.
+	Your email app didn't open a message. It said: {why}.	El. pašto programa neatvėrė laiško. Ji pranešė: {why}.
 	Your name	Jūsų vardas
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	Metai: yyyy arba yy · mėnuo: m arba mm, pavadinimas: mmm arba mmmm · diena: d arba dd · savaitės diena: ddd arba dddd. H, h, M, s ir t yra laiko formato raidės, jų negalima naudoti atskirai: prieš raidę įrašykite {escape}, kad ji būtų rodoma kaip tekstas.
 	Zero-width lines always count as narrower.	Nulinio pločio linijos visada laikomos siauresnėmis.
@@ -4028,6 +4042,7 @@ document scrollbar width	Wide	Platus
 	{n} word(s) to review	Peržiūrėtinų žodžių: {n}
 	{n} {kind}	Kiekis: {n} · {kind}
 	{page} is not a page number or label	{page} nėra puslapio numeris ar žyma
+	{program} can't take a file from PdfCraft.	{program} negali priimti failo iš PdfCraft.
 	{rule} - {status}	Taisyklė {rule} – būsena {status}
 	{signers} signers; details of the first are shown	Pasirašiusiųjų: {signers}; rodoma pirmojo išsami informacija
 	{s} action	Veiksmų: {s}

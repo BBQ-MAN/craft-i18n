@@ -313,6 +313,7 @@ calendar date	April	4월
 	Attach file	파일 첨부
 	Attach {name}	{name} 첨부
 	Attaching files is not available on the web yet	웹에서는 아직 파일을 첨부할 수 없습니다
+	Attaching {name} to a new email message…	{name}을(를) 새 이메일 메시지에 첨부하는 중…
 	Attachment	첨부
 	Attachments	첨부 파일
 	Attachments panel	첨부 파일 패널
@@ -649,6 +650,7 @@ certificate	Basic constraints	기본 제약 조건
 	Corrected scan	보정된 스캔
 	Could not save: {e}	저장할 수 없습니다: {e}
 	Couldn't add {name}: {e}	{name}을(를) 추가할 수 없습니다: {e}
+	Couldn't attach the file	파일을 첨부할 수 없습니다
 	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't check for updates: {e}	업데이트를 확인할 수 없습니다: {e}
 	Couldn't combine files: {e}	파일을 결합할 수 없습니다: {e}
@@ -1632,6 +1634,7 @@ calendar weekday	Mo	월
 	No digital IDs yet.	아직 디지털 ID가 없습니다.
 	No document language is set	문서 언어가 설정되지 않았습니다
 	No documents are open	열려 있는 문서가 없습니다
+	No email app is set up on this computer.	이 컴퓨터에 설정된 이메일 앱이 없습니다.
 	No errors in the rules that were evaluated.	평가된 규칙에서 오류가 없습니다.
 	No errors: the structure follows the Arlington PDF Model.	오류 없음: 구조가 Arlington PDF 모델을 따릅니다.
 	No field reads it	No field reads it
@@ -1762,6 +1765,7 @@ animation effects	On	켜기
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	페이지 콘텐츠만 변경됩니다: 원본 페이지의 링크, 주석, 양식 필드 및 책갈피는 그대로 유지됩니다.
 	Only the recipients can open the document, each with the private key of their own certificate.	수신자만 각자 인증서의 개인 키로 문서를 열 수 있습니다.
 	Open a document first	먼저 문서를 열어 주세요
+	Open a new message without it, and PdfCraft will show {name} in its folder so you can attach it yourself.	첨부 없이 새 메시지를 열면 PdfCraft가 {name} 파일이 있는 폴더를 표시하므로 직접 첨부할 수 있습니다.
 	Open a PDF ({key})	PDF 열기 ({key})
 	Open a PDF (⌘O)	PDF 열기 (⌘O)
 	Open a PDF to measure it.	측정할 PDF를 여세요.
@@ -1776,6 +1780,7 @@ animation effects	On	켜기
 	Open in Full Screen mode	전체 화면 모드로 열기
 	Open in Full Screen mode?	전체 화면 모드로 여시겠습니까?
 	Open link	링크 열기
+	Open message and show file	메시지 열고 파일 표시
 	Open next PDF in folder	폴더의 다음 PDF 열기
 	Open previous PDF in folder	폴더의 이전 PDF 열기
 	Open Recent	최근 파일 열기
@@ -2434,8 +2439,10 @@ calendar weekday	Sa	토
 	Self-signed	자체 서명됨
 certificate	Self-signed	자체 서명됨
 	Send backward	한 레벨 뒤로
+	Send by email…	이메일로 보내기…
 	Send code	코드 보내기
 	Send to back	맨 뒤로
+	Sending by email isn't available in the browser	브라우저에서는 이메일로 보낼 수 없습니다
 	Sending sheet {s} of {n} to {printer}…	용지 {n}장 중 {s}장을 {printer}(으)로 보내는 중…
 	Sending the code…	코드를 보내는 중…
 	Sending to {printer}…	{printer}(으)로 보내는 중…
@@ -2626,6 +2633,7 @@ action wizard	Start	시작
 	Sticky note	스티커 메모
 	Still printing; the job continues on the printer	아직 인쇄 중입니다. 작업은 프린터에서 계속됩니다
 	Still rendering — this page is unusually complex…	아직 렌더링 중입니다. 이 페이지는 이례적으로 복잡합니다…
+	Still waiting for your email app…	이메일 앱을 기다리는 중…
 	Stop	Stop
 	Stopped at {limit} matches.	Stopped at {limit} matches.
 	Stopped before the end.	Stopped before the end.
@@ -2733,6 +2741,7 @@ calendar weekday	Th	목
 	The clipboard has no image or text	클립보드에 이미지나 텍스트가 없습니다
 	The clipboard holds no comments	클립보드에 주석이 없습니다
 	The copied comments are larger than this page; they were placed as they are	복사한 주석이 이 페이지보다 큽니다. 그대로 배치했습니다
+	The copy to attach couldn't be written: {e}	첨부할 사본을 쓸 수 없습니다: {e}
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	데스크톱 포털의 파일 선택기가 실행되고 있지 않습니다({packages}). systemctl --user status {first}로 확인하거나 로그아웃했다가 다시 로그인하세요.
 	The Dock shows it the next time PdfCraft opens.	다음에 PdfCraft를 열 때 Dock에 표시됩니다.
 	The document changed while it was being signed, so the signature wasn't saved.	서명하는 동안 문서가 변경되어 서명이 저장되지 않았습니다.
@@ -2844,6 +2853,7 @@ calendar weekday	Th	목
 	The provider's page didn't come back in time. Try again.	공급자 페이지가 제때 돌아오지 않았습니다. 다시 시도하세요.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	리디렉션 URI는 포트가 있는 http://127.0.0.1 또는 http://localhost여야 합니다.
 	The replacement file doesn't have that many pages.	교체 파일에는 그만큼 많은 페이지가 없습니다.
+	the request stopped without an answer	응답 없이 요청이 중단되었습니다
 	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	“모든 권한”이 없는 수신자에게는 제한이 적용됩니다. 저장할 때 적용됩니다.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
@@ -3232,6 +3242,10 @@ calendar weekday	We	수
 	You have version {c}. All releases are listed at {page}.	현재 버전은 {c}입니다. 모든 릴리스는 {page}에 표시됩니다.
 	You have version {c}. Download the new version from its release page.	현재 버전은 {c}입니다. 릴리스 페이지에서 새 버전을 다운로드하세요.
 	Your changes will be lost if you don't save them.	저장하지 않으면 변경 사항이 손실됩니다.
+	Your default email app can't take a file from PdfCraft.	기본 이메일 앱은 PdfCraft에서 파일을 받을 수 없습니다.
+	Your email app couldn't log on to your mailbox.	이메일 앱이 사서함에 로그온하지 못했습니다.
+	Your email app didn't open a message in time.	이메일 앱이 제때 메시지를 열지 않았습니다.
+	Your email app didn't open a message. It said: {why}.	이메일 앱이 메시지를 열지 않았습니다. 응답: {why}.
 	Your name	이름
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy 또는 yy는 연도 · m 또는 mm은 월 · mmm 또는 mmmm은 월 이름 · d 또는 dd는 일 · ddd 또는 dddd는 요일입니다. H, h, M, s, t는 시간 문자이므로 단독으로 사용할 수 없습니다. 문자를 그대로 표시하려면 앞에 {escape}를 붙이세요.
 	Zero-width lines always count as narrower.	너비가 0인 선은 항상 더 좁은 것으로 간주됩니다.
@@ -3326,6 +3340,7 @@ calendar weekday	We	수
 	{n} word(s) or phrase(s)	단어 또는 구문 {n}개
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page}은(는) 페이지 번호나 레이블이 아닙니다
+	{program} can't take a file from PdfCraft.	{program}은(는) PdfCraft에서 파일을 받을 수 없습니다.
 	{rule} - {status}	{rule} - {status}
 	{s} action	{s} 동작
 	{ty} element on page {p}: {what}	{p}페이지의 {ty} 요소: {what}
