@@ -406,6 +406,7 @@
 	CheckBox	OnayKutusu
 	Checkbox	Onay kutusu
 	Checked	İşaretli
+	Checking form detection…	Form algılama denetleniyor…
 	Checking Options ({on} of 32 in all categories)	Denetim Seçenekleri (tüm kategorilerde {on} / 32)
 	Checking pages…	Sayfalar denetleniyor…
 	Checkmark	Onay işareti
@@ -756,12 +757,15 @@ key	Delete	Delete
 	Don't save	Kaydetme
 	Don't show again	Bir daha gösterme
 	Done adding text	Metin ekleme bitti
+	Download 121 MB to find text fields, checkboxes and signature areas automatically.	Metin alanlarını, onay kutularını ve imza alanlarını otomatik bulmak için 121 MB indirin.
+	Download and detect	İndir ve algıla
 	Download package…	Paketi indir…
 	Download size: {size}	İndirme boyutu: {size}
 	Download with Ollama	Ollama ile indir
 	Downloaded {name}	{name} indirildi
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	{n} PDF indirildi|{n} PDF indirildi
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web'de ek indirme M3.10 ile sunulacaktır ({n} bayt hazır)
+	Downloading form detection…	Form algılama indiriliyor…
 	Downloading… {pct}% — {note}	İndiriliyor… {pct}% — {note}
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	İndirmeler tarayıcınızda açılır. Kurulum el ile yapılır; hiçbir şey otomatik olarak kurulmaz.
 	Downsample to	Şu değere alt örnekle:
@@ -986,6 +990,7 @@ scroll speed	Fast	Hızlı
 	Filling of form fields	Form alanlarını doldurma
 	Filter comments	Yorumları filtrele
 	Find a tag	Etiket bul
+	Find form fields	Form alanlarını bul
 	Find options	Bulma seçenekleri
 	Find text	Metin bul
 	Find text and redact	Metin bul ve karart
@@ -996,6 +1001,7 @@ scroll speed	Fast	Hızlı
 	Find tools and commands…	Araçları ve komutları bul…
 	Find untagged content	Etiketlenmemiş içeriği bul
 	Finding document fonts…	Belge yazı tipleri aranıyor…
+	Finding fields… page {d} of {t}	Alanlar bulunuyor… {t} sayfadan {d}. sayfa
 	Finish or discard the text being edited before selecting several objects.	Birden fazla nesne seçmeden önce düzenlenen metni tamamlayın veya iptal edin.
 	First / last page	İlk / son sayfa
 	First commit	İlk işleme
@@ -1042,6 +1048,7 @@ scroll speed	Fast	Hızlı
 	For page sizes and margins.	Sayfa boyutları ve kenar boşlukları için.
 	Form data and PDF forms	Form verileri ve PDF formları
 	Form field advice	Form alanları için öneriler
+	Form field detection is already running	Form alanı algılama zaten çalışıyor
 	Form field on page {p} isn't tagged	{p}. sayfadaki form alanı etiketli değil
 	Form fields	Form alanları
 	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	Form alanları düzleştirilir: Değerleri görünür kalır. Kaydetme tüm dosyayı yeniden yazar.
@@ -1757,6 +1764,7 @@ animation effects	On	Açık
 	Prepare for Distribution	Dağıtım için Hazırla
 	Prepare for distribution	Dağıtım için hazırla
 	Prepare for distribution…	Dağıtım için hazırla…
+	Preparing form detection…	Form algılama hazırlanıyor…
 	Preparing read-aloud text…	Okunacak metin hazırlanıyor…
 	Preparing sheet {done} of {total} for printing…	Yazdırma için sayfa {done}/{total} hazırlanıyor…
 	Preparing {n} sheets for printing…	Yazdırma için {n} sayfa hazırlanıyor…
@@ -2542,6 +2550,7 @@ calendar weekday	Th	Pe
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Bu belge tam ekran modunda açılmak istiyor: sayfa ekranı doldurur ve başka hiçbir şey görünmez. Çıkmak için istediğiniz zaman Esc tuşuna basın.
 	This document can't be checked: it couldn't be read for editing	Bu belge denetlenemiyor: Düzenleme için okunamadı
 	This document contains {n} interactive form fields.	Bu belge {n} etkileşimli form alanı içeriyor.
+	This document does not allow adding form fields	Bu belge form alanı eklenmesine izin vermiyor
 	This document has no attachments.	Bu belgede ek yok.
 	This document has no comments to flatten	Bu belgede düzleştirilecek yorum yok
 	This document has no document-level scripts.	Bu belgede belge düzeyinde komut dosyası yok.
@@ -2580,6 +2589,7 @@ calendar weekday	Th	Pe
 	This installation is owned by a Debian package. Use your system software manager to update PdfCraft.	Bu kurulum bir Debian paketine aittir. PdfCraft’ı sistem yazılım yöneticinizden güncelleyin.
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	Bu kurulum bir RPM paketine aittir. PdfCraft’ı sistem yazılım yöneticinizden güncelleyin.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Bu, PdfCraft'ın henüz görüntüleyemediği dinamik bir XFA formudur. Gördüğünüz şey dosyanın yer tutucu sayfasıdır.
+	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	GitHub’dan yalnızca bir kez indirilir. Ardından form algılama çevrimdışı çalışır. PDF dosyalarınız bu cihazda kalır.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Bu, belirtecin PIN'i kilitlenmeden önceki son deneme. Buradaki yanlış bir PIN, kalıcı olarak kilitleyebilir.
 	This machine: {ram} GB RAM, {disk} GB free	Bu makine: {ram} GB RAM, {disk} GB boş
 	This measurement needs at least {n} points.	Bu ölçüm en az {n} nokta gerektirir.
@@ -2623,6 +2633,7 @@ calendar weekday	Th	Pe
 	Transform image	Görüntüyü dönüştür
 	Trim the picture with its handles; Enter or Done applies	Resmi tutamaçlarıyla kırpın; Enter veya Bitti uygular
 	Trust	Güven
+	Try again	Yeniden dene
 	Try the form as people filling it in will see it	Formu dolduran kişilerin göreceği şekilde deneyin
 calendar weekday	Tu	Sa
 	Turn upside down (180°)	Baş aşağı çevir (180°)
@@ -2678,6 +2689,7 @@ signature pad	Type	Yaz
 	Use a certificate	Sertifika kullan
 	Use a Digital ID from a file	Dosyadan Dijital Kimlik Kullan
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	İmza oluşturma cihazı kullan (PKCS #11 modülü: akıllı kart, belirteç, mSzafir için CloudSigner)
+	Use basic detection	Temel algılamayı kullan
 	Use Column Order	Sütun Sırasını Kullan
 	Use custom DPI	Özel DPI kullan
 	Use default font	Varsayılan yazı tipini kullan

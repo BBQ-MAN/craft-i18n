@@ -405,6 +405,7 @@
 	CheckBox	チェックボックス
 	Checkbox	チェックボックス
 	Checked	チェック済み
+	Checking form detection…	フォーム検出を確認中…
 	Checking Options ({on} of 32 in all categories)	チェック項目（全カテゴリ 32 項目中 {on} 項目）
 	Checking pages…	ページを確認しています…
 	Checkmark	チェックマーク
@@ -769,12 +770,15 @@ key	Delete	Delete
 	Don't show again	今後表示しない
 	Done adding text	テキストの追加を完了
 	Double-click also finishes a perimeter or area.	ダブルクリックでも周長や面積を確定できます。
+	Download 121 MB to find text fields, checkboxes and signature areas automatically.	121 MB をダウンロードすると、テキストフィールド、チェックボックス、署名欄を自動で検出できます。
+	Download and detect	ダウンロードして検出
 	Download package…	パッケージをダウンロード…
 	Download size: {size}	ダウンロードサイズ: {size}
 	Download with Ollama	Ollama でダウンロード
 	Downloaded {name}	{name} をダウンロードしました
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	{n} 個の PDF をダウンロードしました
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web 版の添付ファイルのダウンロードは M3.10 で対応予定です（{n} バイト準備済み）
+	Downloading form detection…	フォーム検出をダウンロード中…
 	Downloading… {pct}% — {note}	ダウンロード中… {pct}% — {note}
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	ダウンロードはブラウザーで開きます。インストールは手動で行います。自動ではインストールされません。
 	Downsample to	ダウンサンプル:
@@ -994,6 +998,7 @@ scroll speed	Fast	速い
 	Filling of form fields	フォームフィールドへの入力
 	Filter comments	注釈を絞り込み
 	Find a tag	タグを検索
+	Find form fields	フォームフィールドを検出
 	Find options	検索オプション
 	Find text	テキストを検索
 	Find text and redact	テキストを検索して墨消し
@@ -1004,6 +1009,7 @@ scroll speed	Fast	速い
 	Find tools and commands…	ツールとコマンドを検索…
 	Find untagged content	タグなしのコンテンツを検索
 	Finding document fonts…	文書用フォントを検索中…
+	Finding fields… page {d} of {t}	フィールドを検出中… {t} ページ中 {d} ページ
 	Finish measurement	測定を確定
 	Finish or discard the text being edited before selecting several objects.	複数のオブジェクトを選択する前に、テキストの編集を完了するか破棄してください。
 	Finished measurements appear here and are saved in the PDF.	確定した測定はここに表示され、PDFに保存されます。
@@ -1049,6 +1055,7 @@ scroll speed	Fast	速い
 	For page sizes and margins.	ページサイズと余白に使います。
 	Form data and PDF forms	フォームデータと PDF フォーム
 	Form field advice	フォームフィールドへの助言
+	Form field detection is already running	フォームフィールドの検出はすでに実行中です
 	Form fields	フォームフィールド
 	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	フォームフィールドは統合され、値は表示されたまま残ります。保存時にファイル全体を書き直します。
 	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	フォームフィールドを読み上げるにはタグツリー（Form タグ）に含める必要があります。フォームフィールドにタグを付けてください。
@@ -1737,6 +1744,7 @@ animation effects	On	オン
 	Prepare for Distribution	配布用に準備
 	Prepare for distribution	配布の準備
 	Prepare for distribution…	配布の準備…
+	Preparing form detection…	フォーム検出を準備中…
 	Preparing read-aloud text…	読み上げるテキストを準備中…
 	Preparing sheet {done} of {total} for printing…	印刷用にシート {done}/{total} を準備しています…
 	Preparing {n} sheets for printing…	{n} 枚のシートを印刷用に準備しています…
@@ -2458,6 +2466,7 @@ document scrollbar width	Standard	標準
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	この文書はフルスクリーンモードで開くよう求めています。ページが画面全体を占め、他には何も表示されません。Esc キーでいつでも終了できます。
 	This document can't be checked: it couldn't be read for editing	この文書は編集用に読み取れないためチェックできません
 	This document contains {n} interactive form fields.	この文書には対話型フォームフィールドが {n} 個あります。
+	This document does not allow adding form fields	この文書ではフォームフィールドを追加できません
 	This document does not allow measurement edits.	この文書では測定の編集が許可されていません。
 	This document has no attachments.	この文書に添付ファイルはありません。
 	This document has no comments to flatten	この文書に統合できる注釈はありません
@@ -2494,6 +2503,7 @@ document scrollbar width	Standard	標準
 	This installation is owned by a Debian package. Use your system software manager to update PdfCraft.	このインストールはDebianパッケージが管理しています。システムのソフトウェア管理ツールでPdfCraftを更新してください。
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	このインストールはRPMパッケージが管理しています。システムのソフトウェア管理ツールでPdfCraftを更新してください。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	この文書は動的 XFA フォームで、PdfCraft はまだ表示できません。現在はファイルの代替ページを表示しています。
+	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	GitHub からのダウンロードは一度だけです。その後はオフラインで検出できます。PDF はこのデバイスに保存されたままです。
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	これはトークンの PIN がロックされる前の最後の試行です。ここで PIN を誤るとロックが解除できなくなる場合があります。
 	This machine: {ram} GB RAM, {disk} GB free	このマシン: RAM {ram} GB、空き {disk} GB
 	This measurement needs at least {n} points.	この測定には少なくとも{n}点が必要です。
@@ -2534,6 +2544,7 @@ document scrollbar width	Standard	標準
 	Trim the picture with its handles; Enter or Done applies	ハンドルで画像を切り抜きます。Enter または完了で適用
 	Truncated	切り捨て
 	Trust	信頼
+	Try again	再試行
 	Try the form as people filling it in will see it	利用者が入力するときの表示でフォームを試す
 	Turn upside down (180°)	上下反転 (180°)
 	two cells would both be named {name}	2 つのセルが同じ名前 {name} になります
@@ -2590,6 +2601,7 @@ signature pad	Type	入力
 	Use a certificate	証明書を使用
 	Use a Digital ID from a file	ファイルのデジタル ID を使用
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	署名生成デバイスを使用（PKCS #11 モジュール：スマートカード、トークン、mSzafir 用 CloudSigner）
+	Use basic detection	基本の検出を使用
 	Use custom DPI	カスタム DPI を使用
 	Use default font	既定のフォントに戻す
 	Use each image's embedded DPI; use 72 DPI when it is absent.	各画像に埋め込まれた DPI を使用します。埋め込まれていない場合は 72 DPI を使用します。

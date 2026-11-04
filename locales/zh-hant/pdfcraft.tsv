@@ -396,6 +396,7 @@
 	CheckBox	核取方塊
 	Checkbox	核取方塊
 	Checked	已勾選
+	Checking form detection…	正在檢查表單偵測…
 	Checking Options ({on} of 32 in all categories)	檢驗選項（所有類別共 32 項，已選 {on} 項）
 	Checking pages…	正在檢查頁面…
 	Checkmark	勾選記號
@@ -757,12 +758,15 @@ key	Delete	Delete
 	Done adding text	完成新增文字
 	Double-click	滑鼠按兩下
 	Double-click also finishes a perimeter or area.	按兩下也可完成周長或面積量測。
+	Download 121 MB to find text fields, checkboxes and signature areas automatically.	下載 121 MB 即可自動尋找文字欄位、核取方塊及簽名區域。
+	Download and detect	下載並偵測
 	Download package…	下載套件…
 	Download size: {size}	下載大小：{size}
 	Download with Ollama	用 Ollama 下載
 	Downloaded {name}	已下載{name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	已下載 {n} 個 PDF
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web 端附件下載將於 M3.10 到來（{n} 位元組已就緒）
+	Downloading form detection…	正在下載表單偵測…
 	Downloading… {pct}% — {note}	下載中… {pct}% — {note}
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	下載會在瀏覽器中開啟。安裝需手動進行；不會自動安裝任何內容。
 	Downsample to	降取樣至
@@ -982,6 +986,7 @@ scroll speed	Fast	快
 	Filling of form fields	填寫表單欄位
 	Filter comments	篩選註解
 	Find a tag	尋找標籤
+	Find form fields	尋找表單欄位
 	Find options	尋找選項
 	Find text	尋找文字
 	Find text and redact	尋找並遮蔽文字
@@ -992,6 +997,7 @@ scroll speed	Fast	快
 	Find tools and commands…	尋找工具與指令…
 	Find untagged content	尋找未標記的內容
 	Finding document fonts…	正在尋找文件字型…
+	Finding fields… page {d} of {t}	正在尋找欄位…第 {d} 頁，共 {t} 頁
 	Finish measurement	完成量測
 	Finish or discard the text being edited before selecting several objects.	請先完成或放棄正在編輯的文字，再選取多個物件。
 	Finished measurements appear here and are saved in the PDF.	完成的量測顯示於此，並儲存在 PDF 中。
@@ -1040,6 +1046,7 @@ scroll speed	Fast	快
 	For page sizes and margins.	用於頁面尺寸和邊距。
 	Form data and PDF forms	表單資料和 PDF 表單
 	Form field advice	表單欄位建議
+	Form field detection is already running	表單欄位偵測已在執行
 	Form fields	表單欄位
 	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	表單欄位將被平面化：其值保持可見。儲存將重寫整個檔案。
 	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	表單欄位必須位於標記樹（表單標記）中才能被播報。請標記表單欄位。
@@ -1715,6 +1722,7 @@ animation effects	On	開
 	Prepare for Distribution	準備分發
 	Prepare for distribution	準備發佈
 	Prepare for distribution…	準備發佈…
+	Preparing form detection…	正在準備表單偵測…
 	Preparing read-aloud text…	正在準備朗讀文字…
 	Preparing sheet {done} of {total} for printing…	正在準備列印第 {done} 張，共 {total} 張…
 	Preparing {n} sheets for printing…	正在準備 {n} 張紙以供列印…
@@ -2419,6 +2427,7 @@ document scrollbar width	Standard	標準
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	這份文件要求以全螢幕模式開啟：頁面佔滿整個螢幕，不顯示其他東西。隨時按 Esc 即可離開。
 	This document can't be checked: it couldn't be read for editing	無法檢驗本文件：無法讀取進行編輯
 	This document contains {n} interactive form fields.	本文件包含 {n} 個互動式表單欄位。
+	This document does not allow adding form fields	此文件不允許新增表單欄位
 	This document does not allow measurement edits.	此文件不允許編輯量測。
 	This document has no attachments.	本文件沒有附件。
 	This document has no comments to flatten	本文件沒有可平面化的註解
@@ -2455,6 +2464,7 @@ document scrollbar width	Standard	標準
 	This installation is owned by a Debian package. Use your system software manager to update PdfCraft.	此安裝由 Debian 套件管理。請使用系統軟體管理員更新 PdfCraft。
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	此安裝由 RPM 套件管理。請使用系統軟體管理員更新 PdfCraft。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	這是動態 XFA 表單，PdfCraft 暫無法顯示。您看到的是檔案的佔位頁面。
+	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	只需從 GitHub 下載一次。之後即可離線偵測表單。您的 PDF 會保留在此裝置上。
 	This machine: {ram} GB RAM, {disk} GB free	這台機器：{ram} GB 記憶體、{disk} GB 可用
 	This measurement needs at least {n} points.	此測量至少需要 {n} 個點。
 	This page contains objects that cannot be selected together.	此頁面包含無法一起選取的物件。
@@ -2490,6 +2500,7 @@ document scrollbar width	Standard	標準
 	Trim the picture with its handles; Enter or Done applies	用控點裁切圖片;按 Enter 或「完成」套用
 	Truncated	截斷
 	Trust	信任
+	Try again	重試
 	Try the form as people filling it in will see it	以填寫者的角度試用表單
 	Turn upside down (180°)	上下顛倒 (180°)
 	two cells would both be named {name}	兩個儲存格的名稱都會是 {name}
@@ -2544,6 +2555,7 @@ document scrollbar width	Standard	標準
 	Use a certificate	使用憑證
 	Use a Digital ID from a file	使用檔案中的數位 ID
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	使用簽名建立裝置（PKCS #11 模組：智慧卡、權杖、mSzafir 的 CloudSigner）
+	Use basic detection	使用基本偵測
 	Use custom DPI	使用自訂 DPI
 	Use default font	恢復預設字型
 	Use each image's embedded DPI; use 72 DPI when it is absent.	使用每張圖片內嵌的 DPI；沒有時使用 72 DPI。
