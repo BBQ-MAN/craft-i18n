@@ -249,6 +249,7 @@
 	An open-source PDF workbench — local, private, and scriptable.	Открытый PDF-редактор — локальный, приватный и программируемый.
 	and {n} more	и ещё {n}
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	Анимация, которая мигает, может вызвать припадки. Проверьте скрипты и медиа на мерцание.
+	Annotation	Аннотация
 	Annotations, form fill-in, and digital signatures	Аннотации, заполнение форм и цифровые подписи
 	Another file dialog is still open. Finish with it first.	Другое окно выбора файла ещё открыто. Сначала завершите работу с ним.
 	Any except extracting pages	Любые, кроме извлечения страниц
@@ -787,6 +788,7 @@ key	Delete	Delete
 	Delete selected fields	Удалить выделенные поля
 	Delete selected pages (Organize)	Удалить выделенные страницы (Организация)
 	Delete stamp	Удалить штамп
+	Delete tag	Удалить тег
 	Delete the selected pages	Удалить выбранные страницы
 	Delete the selection	Удалить выделенное
 	Delete XMP metadata	Удалить метаданные XMP
@@ -898,6 +900,7 @@ key	Delete	Delete
 	Draw a line	Нарисовать линию
 	Draw a polygon	Нарисовать многоугольник
 	Draw a rectangle	Нарисовать прямоугольник
+	Draw a rectangle on the page or click content, then choose its tag.	Нарисуйте прямоугольник на странице или щёлкните содержимое, затем выберите его тег.
 	Draw an arrow	Нарисовать стрелку
 	Draw an oval	Нарисовать овал
 	Draw connected lines	Нарисовать соединенные линии
@@ -1266,6 +1269,7 @@ scroll speed	Fast	Высокая
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Более высокое качество изображений увеличивает размер файла. Копия сохраняется, только если она меньше.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Более высокое качество, обычно больший размер файла. Фотографии JPEG выше 450 ppi уменьшаются до 300 ppi, качество 85. Графика без потерь и изображения с масками сохраняют свои пиксели.
 	Highlight	Выделить
+	Highlight content	Выделять содержимое
 	Highlight coverage above	Выделять покрытие выше
 	Highlight fields	Выделять поля
 	Highlight Style:	Стиль выделения:
@@ -1495,6 +1499,7 @@ key	Home	Home
 	Mark as comments	Отметить как комментарии
 	Mark as Confidential	Пометить как конфиденциальный
 	Mark content as artifact	Пометить содержимое как артефакт
+	Mark everything in this tag as an artifact and remove the tag from reading order	Пометить всё содержимое этого тега как артефакт и убрать тег из порядка чтения
 	Mark figure as decorative	Пометить фигуру как декоративную
 	Mark Page Range	Отметить диапазон страниц
 	Mark with checkmark	Отметить галочкой
@@ -1558,10 +1563,12 @@ key	Home	Home
 	Move down	Переместить вdownarrow
 	Move earlier	Переместить раньше
 	Move image	Переместить изображение
+	Move into previous tag	Переместить внутрь предыдущего тега
 	Move later	Переместить позже
 	Move object	Переместить объект
 	Move objects	Переместить объекты
 	Move only what must move, so every field calculates after the fields it reads.	Перемещает только то, что необходимо, чтобы каждое поле вычислялось после полей, которые оно читает.
+	Move out of parent tag	Вынести из родительского тега
 	Move page	Переместить страницу
 	Move pages	Переместить страницы
 	Move Tab Left	Переместить вкладку влево
@@ -1613,6 +1620,7 @@ key	Home	Home
 	New file only	Только новый файл
 	New file:	Новый файл:
 	New file: {name}	Новый файл: {name}
+	New tag	Новый тег
 	New viewport	Новая область просмотра
 	New window	Новое окно
 	New {tool} comments will look like this one	Новые комментарии {tool} будут выглядеть как этот
@@ -2164,8 +2172,8 @@ animation effects	On	Вкл
 	Remove Signature	Удалить подпись
 	Remove signature	Удалить подпись
 	Remove signature…	Удалить подпись…
+	Remove tag, keep its contents	Удалить тег, сохранив содержимое
 	Remove the signature {name}	Удалить подпись {name}
-	Remove this leaf tag from reading order and mark its direct content as an artifact	Удалите этот конечный тег из порядка чтения и пометьте его непосредственное содержимое как артефакт
 	Remove unit	Удалить единицу
 	Remove unreferenced named destinations	Удалить неиспользуемые именованные места назначения
 	Remove unused objects and merge identical ones	Удалить неиспользуемые объекты и объединить одинаковые
@@ -2708,6 +2716,8 @@ document scrollbar width	Standard	Стандартная
 	Tables must contain the same number of columns in each row and rows in each column	Таблицы должны содержать одинаковое число столбцов в каждой строке и строк в каждом столбце
 	Tables must have a summary	Таблицы должны иметь сводку
 	Tables should have headers	Таблицы должны иметь заголовки
+	Tag annotation	Добавить тег к аннотации
+	Tag content as {type}	Пометить содержимое тегом {type}
 	Tag form fields	Пометить поля формы
 	Tag type	Тип тега
 	Tagged annotations	Размеченные аннотации
@@ -3090,6 +3100,7 @@ document scrollbar width	Standard	Стандартная
 	Unplaced	Не размещено
 	Unsaved changes to this document are saved in the new file too.	Несохранённые изменения этого документа тоже будут сохранены в новом файле.
 	Unsupported measurements	Неподдерживаемые измерения
+	Untagged content	Нетегированный контент
 	Update background	Обновить фон
 	Update background…	Обновить фон…
 	Update header & footer	Обновить колонтитулы

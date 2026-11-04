@@ -249,6 +249,7 @@
 	An open-source PDF workbench — local, private, and scriptable.	Відкритий інструментарій для PDF — локальний, приватний і з підтримкою сценаріїв.
 	and {n} more	і ще {n}
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	Мерехтлива анімація може спричиняти напади. Перевірте сценарії та медіа на мерехтіння.
+	Annotation	Коментар
 	Annotations, form fill-in, and digital signatures	Коментарі, заповнення форми й цифрові підписи
 	Another file dialog is still open. Finish with it first.	Ще відкрито інше вікно вибору файлу. Спершу завершіть роботу з ним.
 	Any except extracting pages	Будь-які, крім видобування сторінок
@@ -770,6 +771,7 @@ key	Delete	Delete
 	Delete selected fields	Видалити вибрані поля
 	Delete selected pages (Organize)	Видалити вибрані сторінки (Упорядкування)
 	Delete stamp	Видалити штамп
+	Delete tag	Видалити тег
 	Delete the selected pages	Видалити вибрані сторінки
 	Delete the selection	Видалити виділене
 	Delete XMP metadata	Видалити метадані XMP
@@ -877,6 +879,7 @@ key	Delete	Delete
 	Draw a line	Намалювати лінію
 	Draw a polygon	Намалювати багатокутник
 	Draw a rectangle	Намалювати прямокутник
+	Draw a rectangle on the page or click content, then choose its tag.	Намалюйте прямокутник на сторінці або клацніть вміст, а потім виберіть його тег.
 	Draw an arrow	Намалювати стрілку
 	Draw an oval	Намалювати овал
 	Draw connected lines	Намалювати ламану лінію
@@ -1232,6 +1235,7 @@ calendar date	February	лютого
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Вища якість зображень означає більші файли. Копія зберігається лише тоді, коли вона менша.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Вища якість, зазвичай більші файли. Фотографії JPEG понад 450 ppi зменшуються до 300 ppi, якість 85. Графіка без втрат і зображення з масками зберігають свої пікселі.
 	Highlight	Виділення кольором
+	Highlight content	Підсвічувати вміст
 	Highlight coverage above	Виділяти покриття понад
 	Highlight fields	Підсвітити поля
 	Highlight Style:	Стиль підсвічування:
@@ -1457,6 +1461,7 @@ calendar date	March	березня
 	Mark as Confidential	Позначити як конфіденційне
 	Mark content as artifact	Позначити вміст як артефакт
 	Mark differences	Позначити відмінності
+	Mark everything in this tag as an artifact and remove the tag from reading order	Позначити весь вміст цього тегу як артефакт і вилучити тег із порядку читання
 	Mark figure as decorative	Позначити рисунок як декоративний
 	Mark for redaction	Позначити для вилучення вмісту
 	Mark Page Range	Позначити діапазон сторінок
@@ -1518,11 +1523,13 @@ calendar date	May	травня
 	Move down	Перемістити вниз
 	Move earlier	Перемістити раніше
 	Move image	Перемістити зображення
+	Move into previous tag	Перемістити всередину попереднього тегу
 	Move later	Перемістити пізніше
 	Move line point	Перемістити точку лінії
 	Move object	Перемістити об’єкт
 	Move objects	Перемістити об’єкти
 	Move only what must move, so every field calculates after the fields it reads.	Переміщує лише те, що потрібно, щоб кожне поле обчислювалося після полів, які воно читає.
+	Move out of parent tag	Винести з батьківського тегу
 	Move page	Перемістити сторінку
 	Move pages	Перемістити сторінки
 	Move Tab Left	Перемістити вкладку ліворуч
@@ -1571,6 +1578,7 @@ calendar date	May	травня
 	New file only	Лише новий файл
 	New file:	Новий файл:
 	New file: {name}	Новий файл: {name}
+	New tag	Новий тег
 	New window	Нове вікно
 	New {tool} comments will look like this one	Нові коментарі інструмента «{tool}» матимуть такий вигляд
 	Next ({key})	Наступний ({key})
@@ -2112,8 +2120,8 @@ animation effects	On	Увімкнено
 	Remove Signature	Вилучити підпис
 	Remove signature	Вилучити підпис
 	Remove signature…	Вилучити підпис…
+	Remove tag, keep its contents	Вилучити тег, зберігши вміст
 	Remove the signature {name}	Вилучити підпис {name}
-	Remove this leaf tag from reading order and mark its direct content as an artifact	Вилучіть цей кінцевий тег із порядку читання та позначте його безпосередній вміст як артефакт
 	Remove unreferenced named destinations	Видалити іменовані призначення без посилань
 	Remove unused objects and merge identical ones	Видалити невикористані об’єкти й об’єднати однакові
 	Remove watermark	Видалити водяний знак
@@ -2646,6 +2654,8 @@ certificate	Subject	Власник сертифіката
 	Tables must contain the same number of columns in each row and rows in each column	Таблиці мають містити однакову кількість стовпців у кожному рядку й рядків у кожному стовпці
 	Tables must have a summary	Таблиці повинні містити зведення
 	Tables should have headers	Таблиці повинні мати заголовки
+	Tag annotation	Додати тег до коментаря
+	Tag content as {type}	Позначити вміст тегом {type}
 	Tag form fields	Позначити поля форми
 	Tag type	Тип тегу
 	Tagged annotations	Коментарі з тегами
@@ -3020,6 +3030,7 @@ signature pad	Type	Ввести
 	Unplaced	Не розміщено
 	Unsaved changes to this document are saved in the new file too.	Незбережені зміни цього документа також буде збережено в новому файлі.
 	Unsupported measurements	Непідтримувані вимірювання
+	Untagged content	Нетегований вміст
 	Update background	Оновити тло
 	Update background…	Оновити тло…
 	Update header & footer	Оновити колонтитули

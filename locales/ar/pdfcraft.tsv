@@ -256,6 +256,7 @@
 	An open-source PDF workbench — local, private, and scriptable.	منضدة عمل مفتوحة المصدر لملفات PDF — محلية وخاصة وقابلة للبرمجة.
 	and {n} more	و{n} أخرى
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	الحركة الوامضة قد تسبب نوبات. افحص السكربتات والوسائط بحثًا عن الوميض.
+	Annotation	تعليق توضيحي
 	Annotations, form fill-in, and digital signatures	التعليقات وتعبئة النماذج والتوقيعات الرقمية
 	Another file dialog is still open. Finish with it first.	يوجد حوار ملفات آخر ما زال مفتوحًا. أنهِ العمل فيه أولًا.
 	Any except extracting pages	أي شيء عدا استخراج الصفحات
@@ -786,6 +787,7 @@ key	Delete	Delete
 	Delete selected fields	حذف الحقول المحددة
 	Delete selected pages (Organize)	حذف الصفحات المحددة (تنظيم)
 	Delete stamp	حذف الختم
+	Delete tag	حذف العلامة
 	Delete the selected pages	حذف الصفحات المحددة
 	Delete the selection	حذف التحديد
 	Delete XMP metadata	حذف بيانات تعريف XMP
@@ -899,6 +901,7 @@ key	Delete	Delete
 	Draw a line	رسم خط
 	Draw a polygon	رسم مضلع
 	Draw a rectangle	رسم مستطيل
+	Draw a rectangle on the page or click content, then choose its tag.	ارسم مستطيلاً على الصفحة أو انقر على المحتوى، ثم اختر علامته.
 	Draw an arrow	رسم سهم
 	Draw an oval	رسم شكل بيضاوي
 	Draw connected lines	رسم خطوط متصلة
@@ -1270,6 +1273,7 @@ calendar weekday	Fr	جمعة
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	زيادة جودة الصور تعني ملفات أكبر. لا تُحفظ نسخة إلا إذا كانت أصغر.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	جودة أعلى وملفات أكبر عادةً. تُخفض صور JPEG التي تتجاوز 450 بكسل لكل بوصة إلى 300، بجودة 85. تحتفظ الرسومات المضغوطة دون فقد والصور ذات الأقنعة ببكسلاتها.
 	Highlight	تمييز
+	Highlight content	إبراز المحتوى
 	Highlight coverage above	تمييز التغطية الأعلى من
 	Highlight fields	تمييز الحقول
 	Highlight Style:	نمط التمييز:
@@ -1501,6 +1505,7 @@ calendar date	March	مارس
 	Mark as Confidential	وسم بأنه سري
 	Mark content as artifact	وضع علامة على المحتوى كعنصر زخرفي
 	Mark differences	تعليم الفروق
+	Mark everything in this tag as an artifact and remove the tag from reading order	وضع علامة كعنصر زخرفي على كل ما في هذه العلامة وإزالتها من ترتيب القراءة
 	Mark figure as decorative	تعليم الشكل كزخرفي
 	Mark for redaction	تعليم للحجب
 	Mark Page Range	تعليم نطاق صفحات
@@ -1561,10 +1566,12 @@ calendar weekday	Mo	إثنين
 	Move down	نقل لأسفل
 	Move earlier	نقل للأمام
 	Move image	نقل الصورة
+	Move into previous tag	النقل إلى داخل العلامة السابقة
 	Move later	نقل للخلف
 	Move object	نقل عنصر
 	Move objects	نقل عناصر
 	Move only what must move, so every field calculates after the fields it reads.	ينقل فقط ما يجب نقله، كي يُحسب كل حقل بعد الحقول التي يقرؤها.
+	Move out of parent tag	النقل إلى خارج العلامة الأم
 	Move page	نقل الصفحة
 	Move pages	نقل الصفحات
 	Move Tab Left	نقل علامة التبويب إلى اليسار
@@ -1614,6 +1621,7 @@ calendar weekday	Mo	إثنين
 	New file only	الملف الجديد فقط
 	New file:	الملف الجديد:
 	New file: {name}	الملف الجديد: {name}
+	New tag	علامة جديدة
 	New window	نافذة جديدة
 	New {tool} comments will look like this one	تعليقات {tool} الجديدة ستبدو مثل هذا التعليق
 	Next ({key})	التالي ({key})
@@ -2181,8 +2189,8 @@ certificate	Public key	المفتاح العام
 	Remove Signature	إزالة التوقيع
 	Remove signature	إزالة التوقيع
 	Remove signature…	إزالة التوقيع…
+	Remove tag, keep its contents	إزالة العلامة مع الإبقاء على محتوياتها
 	Remove the signature {name}	إزالة التوقيع {name}
-	Remove this leaf tag from reading order and mark its direct content as an artifact	أزل هذه العلامة من ترتيب القراءة وضع علامة على محتواها المباشر كعنصر زخرفي
 	Remove unreferenced named destinations	إزالة الوجهات المسماة غير المشار إليها
 	Remove unused objects and merge identical ones	إزالة الكائنات غير المستخدمة ودمج المتطابقة
 	Remove watermark	إزالة العلامة المائية
@@ -2735,6 +2743,8 @@ certificate	Subject	صاحب الشهادة
 	Tables must contain the same number of columns in each row and rows in each column	الجداول يجب أن تحتوي على العدد نفسه من الأعمدة في كل صف ومن الصفوف في كل عمود
 	Tables must have a summary	الجداول يجب أن يكون لها ملخص
 	Tables should have headers	الجداول ينبغي أن تكون لها رؤوس
+	Tag annotation	وسم التعليق التوضيحي
+	Tag content as {type}	وسم المحتوى كـ {type}
 	Tag form fields	وضع علامات على حقول النموذج
 	Tag type	نوع الوسم
 	Tagged annotations	التعليقات التوضيحية الموسومة
@@ -3182,6 +3192,7 @@ signature pad	Type	كتابة
 	Unsigned signature field	حقل توقيع غير موقع
 	Unsigned signature field: {name}	حقل توقيع غير موقع: {name}
 	Unsupported measurements	قياسات غير مدعومة
+	Untagged content	محتوى غير مُعلَّم
 	Update background	تحديث الخلفية
 	Update background…	تحديث الخلفية…
 	Update header & footer	تحديث الرأس والتذييل

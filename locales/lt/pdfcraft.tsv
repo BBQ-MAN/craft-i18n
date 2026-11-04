@@ -291,6 +291,7 @@
 	An optional content configuration has an AS entry	Pasirenkamojo turinio konfigūracija turi įrašą AS
 	and {n} more	ir dar {n}
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	Mirganti animacija gali sukelti priepuolius. Patikrinkite, ar scenarijai ir medija nesukelia mirgėjimo.
+	Annotation	Anotacija
 	Annotations, form fill-in, and digital signatures	Anotacijos, formų pildymas ir skaitmeniniai parašai
 	Another file dialog is still open. Finish with it first.	Kitas failų dialogas dar atvertas. Pirmiausia užbaikite veiksmus jame.
 	Any except extracting pages	Bet kas, išskyrus puslapių išskyrimą
@@ -828,6 +829,7 @@ key	Delete	Delete
 	Delete selected fields	Naikinti pasirinktus laukus
 	Delete selected pages (Organize)	Naikinti pasirinktus puslapius (skiltyje „Tvarkyti“)
 	Delete stamp	Naikinti antspaudą
+	Delete tag	Ištrinti žymą
 	Delete the selected pages	Ištrinti pasirinktus puslapius
 	Delete the selection	Ištrinti pasirinkimą
 	Delete XMP metadata	Ištrinti XMP metaduomenis
@@ -943,6 +945,7 @@ key	Delete	Delete
 	Draw a line	Brėžti liniją
 	Draw a polygon	Brėžti daugiakampį
 	Draw a rectangle	Brėžti stačiakampį
+	Draw a rectangle on the page or click content, then choose its tag.	Nubrėžkite stačiakampį puslapyje arba spustelėkite turinį, tada pasirinkite jo žymą.
 	Draw an arrow	Brėžti rodyklę
 	Draw an oval	Brėžti ovalą
 	Draw connected lines	Brėžti sujungtas linijas
@@ -1354,6 +1357,7 @@ calendar weekday	Fr	Pn
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Aukštesnė vaizdų kokybė reiškia didesnius failus. Kopija išsaugoma tik jei ji mažesnė.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Aukštesnė kokybė, paprastai didesni failai. JPEG nuotraukos, kurių raiška viršija 450 ppi, sumažinamos iki 300 ppi, kokybė 85. Be nuostolių suglaudinta grafika ir vaizdai su kaukėmis išlaiko savo pikselius.
 	Highlight	Paryškinti
+	Highlight content	Paryškinti turinį
 	Highlight coverage above	Paryškinti padengimą virš
 	Highlight fields	Paryškinti laukus
 	Highlight Style:	Paryškinimo stilius:
@@ -1590,6 +1594,7 @@ calendar date	March	kovo
 	Mark as Confidential	Pažymėti kaip konfidencialų
 	Mark content as artifact	Pažymėti turinį kaip artefaktą
 	Mark differences	Pažymėti skirtumus
+	Mark everything in this tag as an artifact and remove the tag from reading order	Pažymėti visą šios žymos turinį kaip artefaktą ir pašalinti žymą iš skaitymo tvarkos
 	Mark figure as decorative	Pažymėti paveikslą kaip dekoratyvinį
 	Mark for redaction	Pažymėti konfidencialios informacijos šalinimui
 	Mark Page Range	Pažymėti puslapių intervalą
@@ -1653,11 +1658,13 @@ calendar weekday	Mo	Pr
 	Move down	Perkelti žemyn
 	Move earlier	Perkelti anksčiau
 	Move image	Perkelti paveikslėlį
+	Move into previous tag	Perkelti į ankstesnę žymą
 	Move later	Perkelti vėliau
 	Move line point	Perkelti linijos tašką
 	Move object	Perkelti objektą
 	Move objects	Perkelti objektus
 	Move only what must move, so every field calculates after the fields it reads.	Perkelia tik tai, ką būtina, kad kiekvienas laukas būtų skaičiuojamas po laukų, kuriuos jis skaito.
+	Move out of parent tag	Perkelti iš pirminės žymos
 	Move page	Perkelti puslapį
 	Move pages	Perkelti puslapius
 	Move Tab Left	Perkelti skirtuką į kairę
@@ -1707,6 +1714,7 @@ calendar weekday	Mo	Pr
 	New file only	Tik naujas failas
 	New file:	Naujas failas:
 	New file: {name}	Naujas failas: {name}
+	New tag	Nauja žyma
 	New window	Naujas langas
 	New {tool} comments will look like this one	Nauji {tool} komentarai atrodys kaip šis
 	Next ({key})	Kitas ({key})
@@ -2300,6 +2308,7 @@ certificate	Public key	Viešasis raktas
 	Remove Signature	Parašo šalinimas
 	Remove signature	Pašalinti parašą
 	Remove signature…	Pašalinti parašą…
+	Remove tag, keep its contents	Pašalinti žymą, paliekant jos turinį
 	Remove the signature {name}	Pašalinti parašą {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Pašalinkite šią lapo žymą iš skaitymo tvarkos ir pažymėkite jos tiesioginį turinį kaip artefaktą
 	Remove unreferenced named destinations	Pašalinti nenaudojamus pavadintus paskirties taškus
@@ -2864,6 +2873,8 @@ certificate	Subject	Sertifikato subjektas
 	Tables must contain the same number of columns in each row and rows in each column	Kiekvienoje lentelės eilutėje turi būti vienodas stulpelių skaičius, o kiekviename stulpelyje — vienodas eilučių skaičius
 	Tables must have a summary	Lentelės turi turėti santrauką
 	Tables should have headers	Lentelės turi turėti antraštes
+	Tag annotation	Pažymėti anotaciją
+	Tag content as {type}	Pažymėti turinį kaip {type}
 	Tag form fields	Žymėti formos laukus
 	Tag type	Žymos tipas
 	Tagged annotations	Anotacijos su struktūros žymomis
@@ -3385,6 +3396,7 @@ signature pad	Type	Tekstu
 	Unsigned signature field	Nepasirašytas parašo laukas
 	Unsigned signature field: {name}	Nepasirašytas parašo laukas: {name}
 	Unsupported measurements	Nepalaikomi matavimo vienetai
+	Untagged content	Nepažymėtas turinys
 	Update background	Atnaujinti foną
 	Update background…	Atnaujinti foną…
 	Update header & footer	Atnaujinti antraštę ir poraštę

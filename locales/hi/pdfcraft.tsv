@@ -264,6 +264,7 @@
 	Angle	कोण
 	Animation effects	एनिमेशन प्रभाव
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	चमकता एनिमेशन दौरे पैदा कर सकता है। स्क्रिप्ट और मीडिया में टिमटिमाहट जाँचें।
+	Annotation	एनोटेशन
 	Annotations, form fill-in, and digital signatures	एनोटेशन, फ़ॉर्म भरना और डिजिटल हस्ताक्षर
 	Another file dialog is still open. Finish with it first.	एक और फ़ाइल संवाद अभी खुला है। पहले उससे काम पूरा करें।
 	Any	कोई भी
@@ -796,6 +797,7 @@ key	Delete	Delete
 	Delete selected fields	चयनित फ़ील्ड हटाएँ
 	Delete selected pages (Organize)	चयनित पृष्ठ हटाएँ (व्यवस्था)
 	Delete stamp	स्टाम्प हटाएँ
+	Delete tag	टैग हटाएँ
 	Delete the selected pages	चयनित पृष्ठ हटाएँ
 	Delete the selection	चयन हटाएँ
 @plural	Delete {n} field|Delete {n} fields	{n} फ़ील्ड हटाएँ|{n} फ़ील्ड हटाएँ
@@ -910,6 +912,7 @@ key	Delete	Delete
 	Draw a line	एक रेखा खींचें
 	Draw a polygon	एक बहुभुज खींचें
 	Draw a rectangle	एक आयत खींचें
+	Draw a rectangle on the page or click content, then choose its tag.	पृष्ठ पर एक आयत बनाएँ या सामग्री पर क्लिक करें, फिर उसका टैग चुनें।
 	Draw an arrow	एक तीर खींचें
 	Draw an oval	एक अंडाकार खींचें
 	Draw connected lines	जुड़ी हुई रेखाएँ खींचें
@@ -1300,6 +1303,7 @@ calendar weekday	Fr	शुक्र
 	High Resolution	उच्च रिज़ॉल्यूशन
 	High resolution	उच्च रेज़ोल्यूशन
 	Highlight	हाइलाइट
+	Highlight content	सामग्री हाइलाइट करें
 	Highlight coverage above	इससे अधिक कवरेज हाइलाइट करें
 	Highlight fields	फ़ील्ड हाइलाइट करें
 	Highlight Style:	हाइलाइट शैली:
@@ -1550,6 +1554,7 @@ calendar date	March	मार्च
 	Mark as Confidential	गोपनीय के रूप में चिह्नित करें
 	Mark content as artifact	सामग्री को आर्टिफ़ैक्ट के रूप में चिह्नित करें
 	Mark differences	अंतर चिह्नित करें
+	Mark everything in this tag as an artifact and remove the tag from reading order	इस टैग की हर चीज़ को आर्टिफ़ैक्ट के रूप में चिह्नित करें और टैग को पढ़ने के क्रम से हटाएँ
 	Mark figure as decorative	आकृति को सजावटी के रूप में चिह्नित करें
 	Mark for redaction	रीडैक्शन के लिए चिह्नित करें
 	Mark Page Range	पृष्ठ श्रेणी चिह्नित करें
@@ -1618,10 +1623,12 @@ calendar weekday	Mo	सोम
 	Move down	नीचे ले जाएँ
 	Move earlier	पहले खिसकाएँ
 	Move image	छवि खिसकाएँ
+	Move into previous tag	पिछले टैग में ले जाएँ
 	Move later	बाद में खिसकाएँ
 	Move object	ऑब्जेक्ट खिसकाएँ
 	Move objects	ऑब्जेक्ट खिसकाएँ
 	Move only what must move, so every field calculates after the fields it reads.	Move only what must move, so every field calculates after the fields it reads.
+	Move out of parent tag	पैरेंट टैग से बाहर ले जाएँ
 	Move page	पृष्ठ ले जाएँ
 	Move pages	पृष्ठों को ले जाएँ
 	Move Tab to New Window	टैब को नई विंडो में ले जाएँ
@@ -1666,6 +1673,7 @@ calendar weekday	Mo	सोम
 	New file only	केवल नई फ़ाइल
 	New file:	नई फ़ाइल:
 	New file: {name}	नई फ़ाइल: {name}
+	New tag	नया टैग
 	New {tool} comments will look like this one	टूल {tool} की नई टिप्पणियाँ इस जैसी दिखेंगी
 	Next	अगला
 	Next ({key})	अगला ({key})
@@ -2221,6 +2229,7 @@ certificate	Public key	सार्वजनिक कुंजी
 	Remove Signature	हस्ताक्षर हटाएँ
 	Remove signature	हस्ताक्षर हटाएँ
 	Remove signature…	हस्ताक्षर हटाएँ…
+	Remove tag, keep its contents	टैग हटाएँ, उसकी सामग्री रखें
 	Remove the signature {name}	हस्ताक्षर {name} हटाएँ
 	Remove this leaf tag from reading order and mark its direct content as an artifact	इस लीफ़ टैग को पढ़ने के क्रम से हटाएँ और इसके अंतर्गत सीधे आने वाली सामग्री को आर्टिफ़ैक्ट के रूप में चिह्नित करें
 	Remove unreferenced named destinations	बिना संदर्भ वाले नामित गंतव्य हटाएँ
@@ -2745,6 +2754,7 @@ certificate	Subject	विषय
 	Tables must contain the same number of columns in each row and rows in each column	तालिकाओं की हर पंक्ति में कॉलमों की संख्या और हर कॉलम में पंक्तियों की संख्या समान होनी चाहिए
 	Tables must have a summary	तालिकाओं में सारांश होना चाहिए
 	Tables should have headers	तालिकाओं में शीर्षक होने चाहिए
+	Tag annotation	एनोटेशन को टैग करें
 	Tag form fields	फ़ॉर्म फ़ील्ड टैग करें
 	Tag type	टैग प्रकार
 	Tagged annotations	टैग किए गए एनोटेशन
@@ -3166,6 +3176,7 @@ signature pad	Type	टाइप करें
 	Unsigned signature field	बिना हस्ताक्षर वाला हस्ताक्षर फ़ील्ड
 	Unsigned signature field: {name}	बिना हस्ताक्षर वाला हस्ताक्षर फ़ील्ड: {name}
 	Unsupported measurements	असमर्थित मापन
+	Untagged content	बिना टैग की सामग्री
 	Up	ऊपर
 	Update	अपडेट करें
 	Update background	पृष्ठभूमि अपडेट करें

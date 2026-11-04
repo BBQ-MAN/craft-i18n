@@ -248,6 +248,7 @@
 	An open-source PDF workbench — local, private, and scriptable.	Nyílt forráskódú PDF-munkapad — helyi, privát és parancsfájlokkal vezérelhető.
 	and {n} more	és még {n}
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	A villogó animáció rohamot okozhat. Ellenőrizd a szkripteket és a médiát villogás szempontjából.
+	Annotation	Széljegyzet
 	Annotations, form fill-in, and digital signatures	Széljegyzetek, űrlapkitöltés és digitális aláírások
 	Another file dialog is still open. Finish with it first.	Egy másik fájlpárbeszédablak még nyitva van. Előbb fejezd be azt.
 	Any except extracting pages	Bármi, az oldalak kinyerése kivételével
@@ -768,6 +769,7 @@ key	Delete	Delete
 	Delete selected fields	Kijelölt mezők törlése
 	Delete selected pages (Organize)	Kijelölt oldalak törlése (Rendezés)
 	Delete stamp	Bélyegző törlése
+	Delete tag	Címke törlése
 	Delete the selected pages	A kijelölt oldalak törlése
 	Delete the selection	A kijelölés törlése
 	Delete XMP metadata	XMP-metaadatok törlése
@@ -874,6 +876,7 @@ key	Delete	Delete
 	Draw a line	Vonal rajzolása
 	Draw a polygon	Sokszög rajzolása
 	Draw a rectangle	Téglalap rajzolása
+	Draw a rectangle on the page or click content, then choose its tag.	Rajzoljon téglalapot az oldalra, vagy kattintson egy tartalomra, majd válassza ki a címkéjét.
 	Draw an arrow	Nyíl rajzolása
 	Draw an oval	Ellipszis rajzolása
 	Draw connected lines	Összekötött vonalak rajzolása
@@ -1229,6 +1232,7 @@ scroll speed	Fast	Gyors
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	A jobb képminőség nagyobb fájlmérettel jár. Másolat csak akkor készül, ha kisebb.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Jobb minőség, általában nagyobb fájlok. A 450 ppi feletti JPEG-fotók 300 ppi felbontásra csökkennek, 85-ös minőséggel. A veszteségmentes grafikák és a maszkolt képek megőrzik képpontjaikat.
 	Highlight	Kiemelés
+	Highlight content	Tartalom kiemelése
 	Highlight coverage above	Kiemelés, ha a fedettség nagyobb, mint
 	Highlight fields	Mezők kiemelése
 	Highlight Style:	Kiemelés stílusa:
@@ -1450,6 +1454,7 @@ key	Home	Home
 	Mark as Confidential	Megjelölés bizalmasként
 	Mark content as artifact	Tartalom megjelölése műtárgyként
 	Mark differences	Különbségek megjelölése
+	Mark everything in this tag as an artifact and remove the tag from reading order	A címkében lévő minden tartalom megjelölése műtárgyként és a címke eltávolítása az olvasási sorrendből
 	Mark figure as decorative	Ábra megjelölése dekoratívként
 	Mark for redaction	Megjelölés kitakarásra
 	Mark Page Range	Oldaltartomány megjelölése
@@ -1511,10 +1516,12 @@ key	Home	Home
 	Move down	Lejjebb
 	Move earlier	Előbbre helyezés
 	Move image	Kép áthelyezése
+	Move into previous tag	Áthelyezés az előző címkébe
 	Move later	Hátrébb helyezés
 	Move object	Objektum áthelyezése
 	Move objects	Objektumok áthelyezése
 	Move only what must move, so every field calculates after the fields it reads.	Csak azt mozgatja, amit muszáj, hogy minden mező az általa olvasott mezők után számítódjon.
+	Move out of parent tag	Áthelyezés a szülőcímkéből
 	Move page	Oldal áthelyezése
 	Move pages	Oldalak áthelyezése
 	Move Tab Left	Lap áthelyezése balra
@@ -1563,6 +1570,7 @@ key	Home	Home
 	New file only	Csak az új fájl
 	New file:	Új fájl:
 	New file: {name}	Új fájl: {name}
+	New tag	Új címke
 	New window	Új ablak
 	New {tool} comments will look like this one	Az új „{tool}” megjegyzések így fognak kinézni
 	Next ({key})	Következő ({key})
@@ -2101,8 +2109,8 @@ animation effects	On	Be
 	Remove Signature	Aláírás eltávolítása
 	Remove signature	Aláírás eltávolítása
 	Remove signature…	Aláírás eltávolítása…
+	Remove tag, keep its contents	Címke eltávolítása, tartalma megtartásával
 	Remove the signature {name}	{name} aláírás eltávolítása
-	Remove this leaf tag from reading order and mark its direct content as an artifact	Távolítsa el ezt a levélcímkét az olvasási sorrendből, és jelölje meg a közvetlen tartalmát műtárgyként
 	Remove unreferenced named destinations	Hivatkozás nélküli elnevezett célok eltávolítása
 	Remove unused objects and merge identical ones	Nem használt objektumok eltávolítása és az azonosak egyesítése
 	Remove watermark	Vízjel eltávolítása
@@ -2637,6 +2645,8 @@ action wizard	Start	Indítás
 	Tables must contain the same number of columns in each row and rows in each column	A táblázatok minden sorában ugyanannyi oszlop, minden oszlopában ugyanannyi sor kell legyen
 	Tables must have a summary	A táblázatoknak legyen összefoglalójuk
 	Tables should have headers	A táblázatoknak legyen fejlécük
+	Tag annotation	Széljegyzet címkézése
+	Tag content as {type}	Tartalom címkézése mint {type}
 	Tag form fields	Űrlapmezők címkézése
 	Tag type	Címke típusa
 	Tagged annotations	Címkézett széljegyzetek
@@ -3014,6 +3024,7 @@ signature pad	Type	Gépelés
 	Unplaced	Nincs elhelyezve
 	Unsaved changes to this document are saved in the new file too.	A dokumentum nem mentett módosításai is az új fájlba kerülnek.
 	Unsupported measurements	Nem támogatott mérések
+	Untagged content	Címkézetlen tartalom
 	Update background	Háttér frissítése
 	Update background…	Háttér frissítése…
 	Update header & footer	Fejléc és lábléc frissítése

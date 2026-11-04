@@ -248,6 +248,7 @@
 	An open-source PDF workbench — local, private, and scriptable.	Ашық бастапқы кодты PDF жұмыс орны — жергілікті, жеке әрі скрипттерді қолдайтын.
 	and {n} more	және тағы {n}
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	Жыпылықтаған анимация құрыс ұстамаларын тудыруы мүмкін. Скрипттер мен медианы жыпылықтауға тексеріңіз.
+	Annotation	Белгілеу
 	Annotations, form fill-in, and digital signatures	Белгілеулер, форманы толтыру және цифрлық қолтаңбалар
 	Another file dialog is still open. Finish with it first.	Басқа файл сұхбат терезесі әлі ашық тұр. Алдымен оны аяқтаңыз.
 	Any except extracting pages	Беттерді шығарып алудан басқа барлығы
@@ -759,6 +760,7 @@ key	Delete	Delete
 	Delete selected fields	Таңдалған өрістерді жою
 	Delete selected pages (Organize)	Таңдалған беттерді жою (Ұйымдастыру)
 	Delete stamp	Мөрді жою
+	Delete tag	Тегті жою
 	Delete the selected pages	Таңдалған беттерді жою
 	Delete the selection	Таңдалғанды жою
 	Delete XMP metadata	XMP метадеректерін жою
@@ -864,6 +866,7 @@ key	Delete	Delete
 	Draw a line	Сызық салу
 	Draw a polygon	Көпбұрыш салу
 	Draw a rectangle	Тіктөртбұрыш салу
+	Draw a rectangle on the page or click content, then choose its tag.	Бетте тіктөртбұрыш сызыңыз немесе мазмұнды басыңыз, содан кейін оның тегін таңдаңыз.
 	Draw an arrow	Жебе салу
 	Draw an oval	Эллипс салу
 	Draw connected lines	Байланысқан сызықтар салу
@@ -1220,6 +1223,7 @@ calendar date	February	Ақпан
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Кескін сапасы жоғары болса, файл көлемі де үлкен болады. Көшірме тек көлемі кішірейсе сақталады.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Сапасы жоғары, әдетте көлемі үлкен файлдар. 450 ppi-ден жоғары JPEG фотосуреттері 300 ppi-ге дейін, сапасы 85 болып кішірейтіледі. Шығынсыз графика мен маскасы бар кескіндер өз пиксельдерін сақтайды.
 	Highlight	Бояп белгілеу
+	Highlight content	Мазмұнды бөлектеу
 	Highlight coverage above	Мына мәннен жоғары жабынды бөлектеу
 	Highlight fields	Өрістерді бояп белгілеу
 	Highlight Style:	Ерекшелеу стилі:
@@ -1440,6 +1444,7 @@ calendar date	March	Наурыз
 	Mark as Confidential	Құпия деп белгілеу
 	Mark content as artifact	Мазмұнды артефакт ретінде белгілеу
 	Mark differences	Айырмашылықтарды белгілеу
+	Mark everything in this tag as an artifact and remove the tag from reading order	Осы тегтегі барлық мазмұнды артефакт ретінде белгілеу және тегті оқу ретінен алып тастау
 	Mark figure as decorative	Кескінді декоративті деп белгілеу
 	Mark for redaction	Жасыру үшін белгілеу
 	Mark Page Range	Беттер ауқымын белгілеу
@@ -1499,10 +1504,12 @@ calendar date	May	Мамыр
 	Move down	Төмен жылжыту
 	Move earlier	Алдыңға жылжыту
 	Move image	Кескінді жылжыту
+	Move into previous tag	Алдыңғы тегтің ішіне жылжыту
 	Move later	Кейінге жылжыту
 	Move object	Объектіні жылжыту
 	Move objects	Объектілерді жылжыту
 	Move only what must move, so every field calculates after the fields it reads.	Әр өріс өзі оқитын өрістерден кейін есептелуі үшін тек жылжуы қажет нәрсені ғана жылжытады.
+	Move out of parent tag	Ата-аналық тегтен шығару
 	Move page	Бетті жылжыту
 	Move pages	Беттерді жылжыту
 	Move Tab Left	Қойындыны солға жылжыту
@@ -1551,6 +1558,7 @@ calendar date	May	Мамыр
 	New file only	Тек жаңа файл
 	New file:	Жаңа файл:
 	New file: {name}	Жаңа файл: {name}
+	New tag	Жаңа тег
 	New window	Жаңа терезе
 	New {tool} comments will look like this one	Жаңа «{tool}» түсініктемелері мынадай көрінеді
 	Next ({key})	Келесі ({key})
@@ -2090,8 +2098,8 @@ animation effects	On	Қосулы
 	Remove Signature	Қолтаңбаны алып тастау
 	Remove signature	Қолтаңбаны алып тастау
 	Remove signature…	Қолтаңбаны алып тастау…
+	Remove tag, keep its contents	Тегті алып тастау, мазмұнын сақтау
 	Remove the signature {name}	{name} қолтаңбасын алып тастау
-	Remove this leaf tag from reading order and mark its direct content as an artifact	Осы жапырақ тегін оқу ретінен алып тастап, оның тікелей мазмұнын артефакт ретінде белгілеңіз
 	Remove unreferenced named destinations	Сілтеме берілмеген атаулы межелерді алып тастау
 	Remove unused objects and merge identical ones	Пайдаланылмаған нысандарды алып тастау және ұқсастарын біріктіру
 	Remove watermark	Су белгісін алып тастау
@@ -2616,6 +2624,8 @@ certificate	Subject	Субъект
 	Tables must contain the same number of columns in each row and rows in each column	Кестелердің әр жолындағы бағандар саны мен әр бағанындағы жолдар саны бірдей болуы тиіс
 	Tables must have a summary	Кестелерде түйіндеме болуы тиіс
 	Tables should have headers	Кестелерде тақырыптар болуы тиіс
+	Tag annotation	Белгілеуді тегтеу
+	Tag content as {type}	Мазмұнды {type} ретінде тегтеу
 	Tag form fields	Пішін өрістерін тегтеу
 	Tag type	Тег түрі
 	Tagged annotations	Тегтелген белгілеулер
@@ -2990,6 +3000,7 @@ signature pad	Type	Теру
 	Unsaved changes	Сақталмаған өзгерістер
 	Unsaved changes to this document are saved in the new file too.	Осы құжаттағы сақталмаған өзгерістер де жаңа файлға сақталады.
 	Unsupported measurements	Қолдау көрсетілмейтін өлшемдер
+	Untagged content	Тегтелмеген мазмұн
 	Update background	Фонды жаңарту
 	Update background…	Фонды жаңарту…
 	Update header & footer	Үстіңгі және астыңғы колонтитулдарды жаңарту

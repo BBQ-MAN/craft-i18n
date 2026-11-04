@@ -248,6 +248,7 @@
 	An open-source PDF workbench — local, private, and scriptable.	PDF работна среда с отворен код — локална, поверителна и програмируема.
 	and {n} more	и още {n}
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	Мигащата анимация може да предизвика пристъпи. Проверете скриптовете и мултимедията за трептене.
+	Annotation	Анотация
 	Annotations, form fill-in, and digital signatures	Анотации, попълване на формуляри и цифрови подписи
 	Another file dialog is still open. Finish with it first.	Друг прозорец за избор на файл все още е отворен. Първо приключете с него.
 	Any except extracting pages	Всички без извличане на страници
@@ -777,6 +778,7 @@ key	Delete	Delete
 	Delete selected fields	Изтрий избраните полета
 	Delete selected pages (Organize)	Изтрий избраните страници (Организиране)
 	Delete stamp	Изтрий печата
+	Delete tag	Изтриване на етикета
 	Delete the selected pages	Изтриване на избраните страници
 	Delete the selection	Изтриване на избраното
 	Delete XMP metadata	Изтрий XMP метаданните
@@ -885,6 +887,7 @@ key	Delete	Delete
 	Draw a line	Нарисувай линия
 	Draw a polygon	Нарисувай многоъгълник
 	Draw a rectangle	Нарисувай правоъгълник
+	Draw a rectangle on the page or click content, then choose its tag.	Начертайте правоъгълник върху страницата или щракнете върху съдържание, след което изберете етикета му.
 	Draw an arrow	Нарисувай стрелка
 	Draw an oval	Нарисувай овал
 	Draw connected lines	Нарисувай свързани линии
@@ -1246,6 +1249,7 @@ scroll speed	Fast	Висока
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	По-високото качество на изображенията означава по-големи файлове. Копие се записва само ако е по-малко.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	По-високо качество, обикновено по-големи файлове. JPEG снимките над 450 ppi се намаляват до 300 ppi, качество 85. Графиките без загуби и изображенията с маски запазват пикселите си.
 	Highlight	Маркиране
+	Highlight content	Осветяване на съдържанието
 	Highlight coverage above	Открояване на покритие над
 	Highlight fields	Маркирай полетата
 	Highlight Style:	Стил на маркиране:
@@ -1466,6 +1470,7 @@ key	Home	Home
 	Mark as comments	Маркирай като коментари
 	Mark as Confidential	Маркиране като поверително
 	Mark content as artifact	Маркиране на съдържание като артефакт
+	Mark everything in this tag as an artifact and remove the tag from reading order	Маркиране на всичко в този етикет като артефакт и премахване на етикета от реда на четене
 	Mark figure as decorative	Отбележи фигурата като декоративна
 	Mark Page Range	Маркирай диапазон от страници
 	Mark with checkmark	Отбележи с отметка
@@ -1525,10 +1530,12 @@ key	Home	Home
 	Move down	Премести надолу
 	Move earlier	Премести по-напред
 	Move image	Премести изображението
+	Move into previous tag	Преместване в предишния етикет
 	Move later	Премести по-назад
 	Move object	Преместване на обект
 	Move objects	Преместване на обекти
 	Move only what must move, so every field calculates after the fields it reads.	Премества само това, което трябва, така че всяко поле да се изчислява след полетата, които чете.
+	Move out of parent tag	Преместване извън родителския етикет
 	Move page	Премести страницата
 	Move pages	Премести страниците
 	Move Tab Left	Преместване на раздел наляво
@@ -1577,6 +1584,7 @@ key	Home	Home
 	New file only	Само новият файл
 	New file:	Нов файл:
 	New file: {name}	Нов файл: {name}
+	New tag	Нов етикет
 	New window	Нов прозорец
 	New {tool} comments will look like this one	Новите коментари от тип {tool} ще изглеждат като този
 	Next ({key})	Следващо ({key})
@@ -2126,8 +2134,8 @@ animation effects	On	Включени
 	Remove Signature	Премахване на подпис
 	Remove signature	Премахни подписа
 	Remove signature…	Премахни подписа…
+	Remove tag, keep its contents	Премахване на етикета със запазване на съдържанието му
 	Remove the signature {name}	Премахни подписа {name}
-	Remove this leaf tag from reading order and mark its direct content as an artifact	Премахнете този листов етикет от реда на четене и маркирайте прякото му съдържание като артефакт
 	Remove unreferenced named destinations	Премахни неизползваните именувани местоназначения
 	Remove unused objects and merge identical ones	Премахни неизползваните обекти и обедини еднаквите
 	Remove watermark	Премахни водния знак
@@ -2666,6 +2674,8 @@ action wizard	Start	Старт
 	Tables must contain the same number of columns in each row and rows in each column	Таблиците трябва да имат еднакъв брой колони във всеки ред и редове във всяка колона
 	Tables must have a summary	Таблиците трябва да имат резюме
 	Tables should have headers	Таблиците трябва да имат заглавни клетки
+	Tag annotation	Етикетиране на анотация
+	Tag content as {type}	Етикетиране на съдържанието като {type}
 	Tag form fields	Маркиране на полетата на формуляра
 	Tag type	Тип на тага
 	Tagged annotations	Етикетирани анотации
@@ -3040,6 +3050,7 @@ signature pad	Type	Въвеждане
 	Unsaved changes	Незапазени промени
 	Unsaved changes to this document are saved in the new file too.	Незаписаните промени в този документ също се записват в новия файл.
 	Unsupported measurements	Неподдържани измервания
+	Untagged content	Немаркирано съдържание
 	Update background	Актуализирай фона
 	Update background…	Актуализирай фона…
 	Update header & footer	Актуализирай горния и долния колонтитул

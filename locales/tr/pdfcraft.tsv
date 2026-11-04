@@ -262,6 +262,7 @@
 	An open-source PDF workbench — local, private, and scriptable.	Açık kaynaklı bir PDF çalışma alanı — yerel, gizli ve komut dosyalarıyla yönetilebilir.
 	and {n} more	ve {n} tane daha
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	Yanıp sönen animasyon nöbetlere neden olabilir. Titreme olup olmadığını görmek için komut dosyalarını ve medyayı denetleyin.
+	Annotation	Açıklama
 	Annotations, form fill-in, and digital signatures	Açıklamalar, form doldurma ve dijital imzalar
 	Another file dialog is still open. Finish with it first.	Başka bir dosya iletişim kutusu hala açık. Önce onu tamamlayın.
 	Any except extracting pages	Sayfa ayıklama hariç tümü
@@ -796,6 +797,7 @@ key	Delete	Delete
 	Delete selected fields	Seçili alanları sil
 	Delete selected pages (Organize)	Seçili sayfaları sil (Düzenle)
 	Delete stamp	Damgayı sil
+	Delete tag	Etiketi sil
 	Delete the selected pages	Seçili sayfaları sil
 	Delete the selection	Seçimi sil
 	Delete XMP metadata	XMP meta verilerini sil
@@ -912,6 +914,7 @@ key	Delete	Delete
 	Draw a line	Çizgi çiz
 	Draw a polygon	Çokgen çiz
 	Draw a rectangle	Dikdörtgen çiz
+	Draw a rectangle on the page or click content, then choose its tag.	Sayfada bir dikdörtgen çizin veya içeriğe tıklayın, ardından etiketini seçin.
 	Draw an arrow	Ok çiz
 	Draw an oval	Elips çiz
 	Draw connected lines	Bağlantılı çizgiler çiz
@@ -1286,6 +1289,7 @@ calendar weekday	Fr	Cu
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Daha yüksek görüntü kalitesi daha büyük dosyalar demektir. Yalnızca daha küçükse bir kopya kaydedilir.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Daha yüksek kalite, genellikle daha büyük dosyalar. 450 ppi üzerindeki JPEG fotoğrafları 300 ppi'ye, kalite 85 olacak şekilde küçültülür. Kayıpsız grafikler ve maskeli görüntüler piksellerini korur.
 	Highlight	Vurgula
+	Highlight content	İçeriği vurgula
 	Highlight coverage above	Şunun üzerindeki kaplamayı vurgula
 	Highlight fields	Alanları vurgula
 	Highlight Style:	Vurgu Stili:
@@ -1527,6 +1531,7 @@ key	Home	Home
 	Mark as Confidential	Gizli Olarak İşaretle
 	Mark content as artifact	İçeriği yapıt olarak işaretle
 	Mark differences	Farklılıkları işaretle
+	Mark everything in this tag as an artifact and remove the tag from reading order	Bu etiketteki her şeyi yapıt olarak işaretle ve etiketi okuma sırasından kaldır
 	Mark figure as decorative	Şekli dekoratif olarak işaretle
 	Mark for redaction	Karartma için işaretle
 	Mark Page Range	Sayfa Aralığını İşaretle
@@ -1591,10 +1596,12 @@ calendar weekday	Mo	Pt
 	Move down	Aşağı taşı
 	Move earlier	Öne taşı
 	Move image	Resmi taşı
+	Move into previous tag	Önceki etiketin içine taşı
 	Move later	Arkaya taşı
 	Move object	Nesneyi taşı
 	Move objects	Nesneleri taşı
 	Move only what must move, so every field calculates after the fields it reads.	Her alan okuduğu alanlardan sonra hesaplansın diye yalnızca taşınması gerekenleri taşır.
+	Move out of parent tag	Üst etiketin dışına taşı
 	Move page	Sayfayı taşı
 	Move pages	Sayfaları taşı
 	Move Tab Left	Sekmeyi sola taşı
@@ -1648,6 +1655,7 @@ calendar weekday	Mo	Pt
 	New file only	Yalnızca yeni dosya
 	New file:	Yeni dosya:
 	New file: {name}	Yeni dosya: {name}
+	New tag	Yeni etiket
 	New window	Yeni pencere
 	New {tool} comments will look like this one	Yeni {tool} yorumları bundan sonra buna benzeyecek
 	Next ({key})	Sonraki ({key})
@@ -2223,8 +2231,8 @@ animation effects	On	Açık
 	Remove Signature	İmzayı Kaldır
 	Remove signature	İmzayı kaldır
 	Remove signature…	İmzayı kaldır…
+	Remove tag, keep its contents	Etiketi kaldır, içeriğini koru
 	Remove the signature {name}	{name} imzasını kaldır
-	Remove this leaf tag from reading order and mark its direct content as an artifact	Bu yaprak etiketini okuma sırasından kaldırın ve doğrudan içeriğini yapıt olarak işaretleyin
 	Remove unreferenced named destinations	Referans verilmeyen adlandırılmış hedefleri kaldır
 	Remove unused objects and merge identical ones	Kullanılmayan nesneleri kaldır ve aynı olanları birleştir
 	Remove watermark	Filigranı kaldır
@@ -2781,6 +2789,8 @@ certificate	Subject	Konu
 	Tables must contain the same number of columns in each row and rows in each column	Tablolar her satırda aynı sayıda sütun ve her sütunda aynı sayıda satır içermelidir
 	Tables must have a summary	Tabloların bir özeti olmalıdır
 	Tables should have headers	Tabloların üstbilgileri olmalıdır
+	Tag annotation	Açıklamayı etiketle
+	Tag content as {type}	İçeriği {type} olarak etiketle
 	Tag form fields	Form alanlarını etiketle
 	Tag type	Etiket türü
 	Tagged annotations	Etiketli açıklamalar
@@ -3244,6 +3254,7 @@ signature pad	Type	Yaz
 	Unsigned signature field: {name}	İmzalanmamış imza alanı: {name}
 	Unspecified	Belirtilmemiş
 	Unsupported measurements	Desteklenmeyen ölçümler
+	Untagged content	Etiketlenmemiş içerik
 	Update	Güncelle
 	Update background	Arka planı güncelle
 	Update background…	Arka planı güncelle…
