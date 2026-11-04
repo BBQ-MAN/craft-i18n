@@ -317,6 +317,7 @@
 	Button Style:	Gomb stílusa:
 	Buttons with the same name and value are selected in unison	Az azonos nevű és értékű gombok együtt lesznek kijelölve
 	Bytes	Bájt
+	CAdES signature envelope	CAdES aláírás-boríték
 	Calculation order	Számítási sorrend
 	Calibrate from two points	Kalibrálás két pontból
 	Calibrate screen	Képernyő kalibrálása
@@ -507,6 +508,7 @@
 	Couldn't create a PDF: {e}	A PDF létrehozása nem sikerült: {e}
 	Couldn't download {name}: {e}	{name} letöltése nem sikerült: {e}
 	Couldn't extract pages: {e}	Az oldalakat nem sikerült kinyerni: {e}
+	Couldn't extract the original PDF: {e}	Az eredeti PDF-et nem sikerült kinyerni: {e}
 	Couldn't fit the visible content: {e}	A látható tartalmat nem sikerült igazítani: {e}
 	Couldn't follow linked PDF: {reason}	A hivatkozott PDF nem nyitható meg: {reason}
 	Couldn't import the signature image: {e}	Az aláírásképet nem sikerült importálni: {e}
@@ -695,6 +697,7 @@ key	Delete	Delete
 	Document title is showing in title bar	A dokumentum címe látszik a címsorban
 	Documents and view	Dokumentumok és nézet
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	A 20 oldalnál hosszabb dokumentumokhoz könyvjelző kell a navigációhoz. Adj könyvjelzőt a főbb részekhez.
+	Does not match what was signed	Nem egyezik az aláírttal
 	Don't save	Nincs mentés
 	Don't show again	Ne jelenjen meg újra
 	Done adding text	Szöveg hozzáadásának befejezése
@@ -852,6 +855,7 @@ key	Esc	Esc
 	Extract pages as separate files	Oldalak kinyerése külön fájlokba
 	Extract pages to a new document	Oldalak kinyerése új dokumentumba
 	Extract pages…	Oldalak kinyerése…
+	Extract the original PDF…	Eredeti PDF kinyerése…
 	Extract the selected pages…	A kijelölt oldalak kibontása…
 	Extracted 1 page	1 oldal kinyerve
 	Extracted {n} pages	{n} oldal kinyerve
@@ -1086,6 +1090,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	A telepítés típusa ismeretlen, vagy ez egy fejlesztői build. Válassz csomagot a hivatalos kiadási oldalon.
 	Installed fonts…	Telepített betűtípusok…
 	Installed version: {v}	Telepített verzió: {v}
+	Integrity	Integritás
 	Intended usage	Tervezett használat
 	Interface font	Felület betűtípusa
 	Interface size	Felület mérete
@@ -1215,6 +1220,7 @@ key	Home	Home
 	Mask:	Maszk:
 	Match field sizes	Mezőméretek egyeztetése
 	Match page at 100%	Papír illesztése az oldalhoz, 100%
+	Matches what was signed	Megegyezik az aláírttal
 	Maximize	Maximalizálás
 	maximum	maximum
 	May	május
@@ -1442,6 +1448,7 @@ animation effects	On	Be
 	Open this web page?	Megnyitod ezt a weboldalt?
 	Open to page	Megnyitás ezen az oldalon
 	open to see what it will include	nyisd meg, és meglátod, mi lesz benne
+	Opened from a CAdES signature envelope — read-only.	CAdES aláírás-borítékból megnyitva — csak olvasható.
 	Opened with	Megnyitva ezzel
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Megnyitva, de a biztonsági beállításai nem engedik az egyesítést. Add meg a jogosultsági jelszót.
 	Opening the browser's print dialog…	A böngésző nyomtatási párbeszédablakának megnyitása…
@@ -1643,6 +1650,7 @@ animation effects	On	Be
 	Protected: the combined file won't keep its security settings	Védett: az egyesített fájl nem tartja meg a biztonsági beállításait
 	Public key	Nyilvános kulcs
 	PushButton	Nyomógomb
+	Quirks	Sajátosságok
 	Quit PdfCraft	Kilépés a PdfCraftból
 	Radio	Választógomb
 	Radio button	Választógomb
@@ -2029,8 +2037,13 @@ key	Shift	Shift
 	Signatures panel	Aláírások panel
 	Signed and all signatures are valid.	Aláírva, és minden aláírás érvényes.
 	Signed and saved to {path}	Aláírva és mentve ide: {path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Aláírta: {signer}, {time}; a tartalom nem egyezik az aláírttal; az aláíró megbízhatóságát nem ellenőriztük.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Aláírta: {signer}, {time}; a tartalom megegyezik az aláírttal; az aláíró megbízhatóságát nem ellenőriztük.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Aláírta: {signer}; a tartalom nem egyezik az aláírttal; az aláíró megbízhatóságát nem ellenőriztük.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Aláírta: {signer}; a tartalom megegyezik az aláírttal; az aláíró megbízhatóságát nem ellenőriztük.
 	Signer	Aláíró
 	Signer's name	Aláíró neve
+	Signers	Aláírók
 	Signing	Aláírás
 	Signing time	Aláírás időpontja
 	Simplified field notation:	Egyszerűsített mezőjelölés:
@@ -2282,6 +2295,7 @@ action wizard	Start	Indítás
 	This document has no tagged figures.	Ebben a dokumentumban nincsenek címkézett ábrák.
 	This document has no {kind} to change	Ebben a dokumentumban nincs módosítható {kind}
 	This document hasn't been checked yet.	Ez a dokumentum még nincs ellenőrizve.
+	This document is not inside a CAdES envelope	Ez a dokumentum nem CAdES aláírás-borítékban van.
 	This document is secured. Some changes are restricted by its security settings.	Ez a dokumentum védett. Egyes módosításokat a biztonsági beállításai korlátoznak.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	ez a dokumentum alá van írva: az újraírás érvénytelenítené az aláírásait (inkább növekményesen mentsd)
 	This document is trying to open a local file:	Ez a dokumentum egy helyi fájlt próbál megnyitni:
@@ -2545,6 +2559,7 @@ document scrollbar width	Wide	Széles
 	{n} word(s) or phrase(s)	{n} szó vagy kifejezés
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} – {status}
+	{signers} signers; details of the first are shown	{signers} aláíró; az első részletei jelennek meg
 	{s} action	{s} művelet
 	{verb} as "{name}"	{verb} mint „{name}”
 	{verb} Background	Háttér: {verb}

@@ -320,6 +320,7 @@ calendar date	August	sierpnia
 	Button Style:	Styl przycisku:
 	Buttons with the same name and value are selected in unison	Przyciski o tej samej nazwie i wartości są zaznaczane razem
 	Bytes	Bajty
+	CAdES signature envelope	Koperta podpisu CAdES
 	Calculation order	Kolejność obliczeń
 	Calibrate from two points	Kalibruj na podstawie dwóch punktów
 	Callout	Objaśnienie
@@ -501,6 +502,7 @@ calendar date	August	sierpnia
 	Couldn't create a PDF: {e}	Nie można utworzyć PDF: {e}
 	Couldn't download {name}: {e}	Nie można pobrać {name}: {e}
 	Couldn't extract pages: {e}	Nie można wyodrębnić stron: {e}
+	Couldn't extract the original PDF: {e}	Nie udało się wyodrębnić oryginalnego pliku PDF: {e}
 	Couldn't fit the visible content: {e}	Nie można dopasować widocznej zawartości: {e}
 	Couldn't follow linked PDF: {reason}	Nie można otworzyć połączonego pliku PDF: {reason}
 	Couldn't import the signature image: {e}	Nie można zaimportować obrazu podpisu: {e}
@@ -691,6 +693,7 @@ key	Delete	Delete
 	Document title is showing in title bar	Tytuł dokumentu jest wyświetlany na pasku tytułu
 	Documents and view	Dokumenty i widok
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Dokumenty dłuższe niż 20 stron potrzebują zakładek do nawigacji. Dodaj zakładki głównych sekcji.
+	Does not match what was signed	Nie odpowiada temu, co podpisano
 	Don't save	Nie zapisuj
 	Don't show again	Nie pokazuj ponownie
 	Done adding text	Zakończ dodawanie tekstu
@@ -850,6 +853,7 @@ key	Esc	Esc
 	Extract pages as separate files	Wyodrębnij strony jako oddzielne pliki
 	Extract pages to a new document	Wyodrębnij strony do nowego dokumentu
 	Extract pages…	Wyodrębnij strony…
+	Extract the original PDF…	Wyodrębnij oryginalny plik PDF…
 	Extract the selected pages…	Wyodrębnij zaznaczone strony…
 	Extracted 1 page	Wyodrębniono 1 stronę
 	Extracted {n} pages	Liczba wyodrębnionych stron: {n}
@@ -1083,6 +1087,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	Nieznany typ instalacji lub wersja deweloperska. Wybierz pakiet na oficjalnej stronie wydań.
 	Installed fonts…	Zainstalowane czcionki…
 	Installed version: {v}	Zainstalowana wersja: {v}
+	Integrity	Integralność
 	Intended usage	Przeznaczenie
 	Interface font	Czcionka interfejsu
 	Interface size	Rozmiar interfejsu
@@ -1217,6 +1222,7 @@ calendar date	March	marca
 	Mask:	Maska:
 	Match field sizes	Dopasuj rozmiary pól
 	Match page at 100%	Dopasuj stronę w skali 100%
+	Matches what was signed	Odpowiada temu, co podpisano
 	Maximize	Zmaksymalizuj
 	maximum	maksimum
 	May	Maj
@@ -1444,6 +1450,7 @@ animation effects	On	Włączone
 	Open this web page?	Otworzyć tę stronę internetową?
 	Open to page	Otwórz na stronie
 	open to see what it will include	otwórz, aby zobaczyć planowane funkcje
+	Opened from a CAdES signature envelope — read-only.	Otwarto z koperty podpisu CAdES — tylko do odczytu.
 	Opened with	Otwarto przy użyciu
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Otwarto, ale ustawienia zabezpieczeń nie zezwalają na łączenie. Wpisz hasło uprawnień.
 	Opening the browser's print dialog…	Otwieranie okna drukowania przeglądarki…
@@ -1652,6 +1659,7 @@ animation effects	On	Włączone
 	PRs	PR
 	Public key	Klucz publiczny
 	PushButton	Przycisk
+	Quirks	Specyfika
 	Quit PdfCraft	Zakończ PdfCraft
 	Radio	Przycisk opcji
 	Radio button	Przycisk opcji
@@ -2034,8 +2042,13 @@ key	Shift	Shift
 	Signed and all signatures are valid.	Dokument jest podpisany i wszystkie podpisy są prawidłowe.
 	Signed and saved to {path}	Podpisano i zapisano w {path}
 	Signed and saved to {path}. The document changed while the signature was being approved; those changes aren't in the signed file.	Podpisano i zapisano w {path}. Dokument zmienił się w czasie zatwierdzania podpisu; tych zmian nie ma w podpisanym pliku.
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Podpisane przez {signer} w dniu {time}; treść nie odpowiada temu, co podpisano; zaufanie do podpisującego nie zostało sprawdzone.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Podpisane przez {signer} w dniu {time}; treść odpowiada temu, co podpisano; zaufanie do podpisującego nie zostało sprawdzone.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Podpisane przez {signer}; treść nie odpowiada temu, co podpisano; zaufanie do podpisującego nie zostało sprawdzone.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Podpisane przez {signer}; treść odpowiada temu, co podpisano; zaufanie do podpisującego nie zostało sprawdzone.
 	Signer	Podpisujący
 	Signer's name	Nazwa podpisującego
+	Signers	Podpisujący
 	Signing time	Czas podpisania
 	Signing time is from the clock on the signer's computer.	Czas podpisania pochodzi z zegara komputera podpisującego.
 	Simplified field notation:	Uproszczony zapis pól:
@@ -2332,6 +2345,7 @@ certificate	Subject	Podmiot certyfikatu
 	This document has not been modified since this signature was applied.	Dokument nie był modyfikowany od złożenia tego podpisu.
 	This document has not been modified since this timestamp was applied.	Dokument nie był modyfikowany od dodania tego znacznika czasu.
 	This document hasn't been checked yet.	Ten dokument nie został jeszcze sprawdzony.
+	This document is not inside a CAdES envelope	Ten dokument nie jest wewnątrz koperty podpisu CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Ten dokument jest zabezpieczony. Niektóre zmiany są ograniczone ustawieniami zabezpieczeń.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	ten dokument jest podpisany: zapisanie go na nowo unieważniłoby podpisy (zamiast tego zapisz przyrostowo)
 	This document is trying to open a local file:	Ten dokument próbuje otworzyć plik lokalny:
@@ -2597,6 +2611,7 @@ document scrollbar width	Wide	Szeroki
 	{n} word(s) or phrase(s)	Słowa lub frazy: {n}
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	Podpisujących: {signers}; pokazane są szczegóły pierwszego
 	{s} action	Akcja {s}
 	{verb} as "{name}"	{verb} jako „{name}”
 	{verb} Background	{verb} tło

@@ -307,6 +307,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Button Style:	Kiểu nút:
 	Buttons with the same name and value are selected in unison	Các nút có cùng tên và giá trị được chọn đồng thời
 	Bytes	Byte
+	CAdES signature envelope	Phong bì ký CAdES
 	Calculation order	Thứ tự tính toán
 	Calibrate from two points	Hiệu chuẩn từ hai điểm
 	Calibrate screen	Hiệu chỉnh màn hình
@@ -491,6 +492,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Couldn't create a PDF: {e}	Không thể tạo PDF: {e}
 	Couldn't download {name}: {e}	Không thể tải xuống {name}: {e}
 	Couldn't extract pages: {e}	Không thể trích xuất trang: {e}
+	Couldn't extract the original PDF: {e}	Không thể trích xuất PDF gốc: {e}
 	Couldn't fit the visible content: {e}	Không thể làm vừa nội dung hiển thị: {e}
 	Couldn't follow linked PDF: {reason}	Không thể theo liên kết đến PDF: {reason}
 	Couldn't import the signature image: {e}	Không thể nhập hình ảnh chữ ký: {e}
@@ -679,6 +681,7 @@ key	Delete	Delete
 	Document title is showing in title bar	Tiêu đề tài liệu đang hiển thị trên thanh tiêu đề
 	Documents and view	Tài liệu và chế độ xem
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Tài liệu có hơn 20 trang cần dấu trang để điều hướng. Hãy thêm dấu trang cho các phần chính.
+	Does not match what was signed	Không khớp với nội dung đã ký
 	Don't save	Không lưu
 	Don't show again	Không hiển thị lại
 	Done adding text	Đã thêm văn bản xong
@@ -838,6 +841,7 @@ key	Esc	Esc
 	Extract pages as separate files	Trích xuất trang thành các tệp riêng
 	Extract pages to a new document	Trích xuất trang sang tài liệu mới
 	Extract pages…	Trích xuất trang…
+	Extract the original PDF…	Trích xuất PDF gốc…
 	Extract the selected pages…	Trích xuất các trang đã chọn…
 	Extracted 1 page	Đã trích xuất 1 trang
 	Extracted {n} pages	Đã trích xuất {n} trang
@@ -1067,6 +1071,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	Không xác định được loại cài đặt hoặc đây là bản dựng phát triển. Hãy chọn một gói trên trang phát hành chính thức.
 	Installed fonts…	Phông chữ đã cài đặt…
 	Installed version: {v}	Phiên bản đã cài đặt: {v}
+	Integrity	Toàn vẹn
 	Intended usage	Mục đích sử dụng
 certificate	Intended usage	Mục đích sử dụng
 	Interface size	Kích thước giao diện
@@ -1197,6 +1202,7 @@ calendar date	March	tháng 3
 	Mask:	Mặt nạ:
 	Match field sizes	Khớp kích thước trường
 	Match page at 100%	Khớp trang ở mức 100%
+	Matches what was signed	Khớp với nội dung đã ký
 	maximum	tối đa
 	May	Tháng 5
 calendar date	May	tháng 5
@@ -1422,6 +1428,7 @@ animation effects	On	Bật
 	Open this web page?	Mở trang web này?
 	Open to page	Mở tại trang
 	open to see what it will include	mở để xem nó sẽ bao gồm những gì
+	Opened from a CAdES signature envelope — read-only.	Được mở từ phong bì ký CAdES — chỉ đọc.
 	Opened with	Mở bằng
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Đã mở, nhưng cài đặt bảo mật của nó không cho phép kết hợp. Hãy nhập mật khẩu quyền hạn.
 	Opening the browser's print dialog…	Đang mở hộp thoại in của trình duyệt…
@@ -1629,6 +1636,7 @@ animation effects	On	Bật
 	Public key	Khóa công khai
 certificate	Public key	Khóa công khai
 	PushButton	PushButton
+	Quirks	Điểm đặc biệt
 	Quit PdfCraft	Thoát PdfCraft
 	Radio	Radio
 	Radio button	Nút radio
@@ -2004,8 +2012,13 @@ key	Shift	Shift
 	Signatures panel	Bảng chữ ký
 	Signed and all signatures are valid.	Đã ký và tất cả chữ ký đều hợp lệ.
 	Signed and saved to {path}	Đã ký và lưu vào {path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Do {signer} ký vào {time}; nội dung không khớp với nội dung đã ký; độ tin cậy của người ký chưa được kiểm tra.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Do {signer} ký vào {time}; nội dung khớp với nội dung đã ký; độ tin cậy của người ký chưa được kiểm tra.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Do {signer} ký; nội dung không khớp với nội dung đã ký; độ tin cậy của người ký chưa được kiểm tra.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Do {signer} ký; nội dung khớp với nội dung đã ký; độ tin cậy của người ký chưa được kiểm tra.
 	Signer	Người ký
 	Signer's name	Tên người ký
+	Signers	Người ký
 	Signing time	Thời gian ký
 	Signing time is from the clock on the signer's computer.	Thời gian ký lấy từ đồng hồ trên máy tính của người ký.
 	Simplified field notation:	Ký hiệu trường rút gọn:
@@ -2307,6 +2320,7 @@ calendar weekday	Th	T5
 	This document has not been modified since this signature was applied.	Tài liệu này chưa bị sửa đổi kể từ khi chữ ký này được áp dụng.
 	This document has not been modified since this timestamp was applied.	Tài liệu này chưa bị sửa đổi kể từ khi dấu thời gian này được áp dụng.
 	This document hasn't been checked yet.	Tài liệu này chưa được kiểm tra.
+	This document is not inside a CAdES envelope	Tài liệu này không nằm trong phong bì ký CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Tài liệu này được bảo mật. Một số thay đổi bị hạn chế bởi cài đặt bảo mật của nó.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	tài liệu này đã được ký: việc ghi lại nó sẽ làm mất hiệu lực các chữ ký của nó (hãy lưu tăng dần thay vào đó)
 	This document is trying to open a local file:	Tài liệu này đang cố mở một tệp cục bộ:
@@ -2580,6 +2594,7 @@ document scrollbar width	Wide	Rộng
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} không phải là số trang hoặc nhãn
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	{signers} người ký; hiển thị chi tiết của người đầu tiên
 	{s} action	Hành động {s}
 	{ty} element on page {p}: {what}	Phần tử {ty} trên trang {p}: {what}
 	{ty} element: {what}	Phần tử {ty}: {what}

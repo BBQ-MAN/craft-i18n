@@ -326,6 +326,7 @@
 	Button Style:	按鈕樣式：
 	Buttons with the same name and value are selected in unison	同名同值的按鈕一起選取
 	Bytes	位元組
+	CAdES signature envelope	CAdES 簽名信封
 	Calculation order	計算順序
 	Calibrate from two points	使用兩點校準
 	Calibrate screen	校準螢幕
@@ -531,6 +532,7 @@
 	Couldn't create a PDF: {e}	無法建立 PDF：{e}
 	Couldn't download {name}: {e}	無法下載{name}：{e}
 	Couldn't extract pages: {e}	無法提取頁面：{e}
+	Couldn't extract the original PDF: {e}	無法擷取原始 PDF：{e}
 	Couldn't fit the visible content: {e}	無法適應可見內容：{e}
 	Couldn't follow linked PDF: {reason}	無法開啟連結的 PDF：{reason}
 	Couldn't import the signature image: {e}	無法匯入簽名圖像：{e}
@@ -729,6 +731,7 @@ key	Delete	Delete
 	Document title is showing in title bar	標題列中顯示文件標題
 	Documents and view	文件與檢視
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	超過 20 頁的文件需要書籤以便導覽。請為主要章節新增書籤。
+	Does not match what was signed	與所簽內容不一致
 	Don't save	不儲存
 	Don't show again	不再顯示
 	Done adding text	完成新增文字
@@ -895,6 +898,7 @@ key	Esc	Esc
 	Extract pages as separate files	將頁面提取為單獨檔案
 	Extract pages to a new document	將頁面提取到新文件
 	Extract pages…	擷取頁面…
+	Extract the original PDF…	擷取原始 PDF…
 	Extract the selected pages…	擷取所選頁面…
 	Extracted 1 page	已提取 1 頁
 	Extracted {n} pages	已提取{n}頁
@@ -1136,6 +1140,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	安裝類型不明，或這是開發版本。請在官方發行頁面選擇套件。
 	Installed fonts…	已安裝的字型…
 	Installed version: {v}	已安裝版本：{v}
+	Integrity	完整性
 	Intended usage	預期用途
 	Interface font	介面字型
 	Interface size	介面大小
@@ -1267,6 +1272,7 @@ key	Home	Home
 	Marquee zoom	選取範圍縮放
 	Mask:	掩碼：
 	Match page at 100%	以 100% 符合頁面
+	Matches what was signed	與所簽內容一致
 	Maximum	最高
 	maximum	最大值
 	May	五月
@@ -1506,6 +1512,7 @@ animation effects	On	開
 	Open this web page?	要開啟此網頁嗎？
 	Open to page	開啟到頁面
 	open to see what it will include	開啟以檢視預計功能
+	Opened from a CAdES signature envelope — read-only.	從 CAdES 簽名信封開啟 — 唯讀。
 	Opened with	開啟方式
 	Opened, but its security settings don't allow combining. Enter the permissions password.	已開啟，但其安全性設定不允許合併。請輸入權限密碼。
 	Opening the browser's print dialog…	正在開啟瀏覽器的列印對話方塊…
@@ -1715,6 +1722,7 @@ animation effects	On	開
 	Public key	公鑰
 	PushButton	按鈕
 	Quantity	測量量
+	Quirks	特例
 	Quit PdfCraft	結束 PdfCraft
 	Radio	選項按鈕
 	Radio button	選項按鈕
@@ -2114,8 +2122,13 @@ key	Shift	Shift
 	Signatures panel	簽章面板
 	Signed and all signatures are valid.	已簽名，所有簽名均有效。
 	Signed and saved to {path}	已簽名並儲存到{path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	由 {signer} 簽名於 {time}；內容與所簽內容不一致；未檢查簽名者的可信度。
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	由 {signer} 簽名於 {time}；內容與所簽內容一致；未檢查簽名者的可信度。
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	由 {signer} 簽名；內容與所簽內容不一致；未檢查簽名者的可信度。
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	由 {signer} 簽名；內容與所簽內容一致；未檢查簽名者的可信度。
 	Signer	簽署者
 	Signer's name	簽署者姓名
+	Signers	簽名者數量
 	Signing time	簽署時間
 	Silhouettes	輪廓
 	Simplified field notation:	簡化欄位表示法：
@@ -2363,6 +2376,7 @@ document scrollbar width	Standard	標準
 	This document has no tagged figures.	本文件沒有帶標記的圖形。
 	This document has no {kind} to change	本文件沒有可更改的{kind}
 	This document hasn't been checked yet.	本文件尚未檢驗。
+	This document is not inside a CAdES envelope	此文件不在 CAdES 簽名信封內。
 	This document is secured. Some changes are restricted by its security settings.	本文件已加密。其安全設定限制了部分更改。
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	此文件已簽署：重寫檔案會使簽章失效，請改用增量儲存
 	This document is trying to open a local file:	此文件正嘗試開啟本機檔案：
@@ -2636,6 +2650,7 @@ document scrollbar width	Wide	寬
 	{n} word(s) or phrase(s)	{n} 個單字或片語
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	共 {signers} 個簽名者；顯示第一個的詳細資訊
 	{s} action	{s} 動作
 	{verb} as "{name}"	{verb}為「{name}」
 	{verb} Background	{verb}背景

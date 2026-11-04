@@ -331,6 +331,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Button Style:	Mygtuko stilius:
 	Buttons with the same name and value are selected in unison	Mygtukai su tuo pačiu pavadinimu ir reikšme pasirenkami kartu
 	Bytes	Baitai
+	CAdES signature envelope	CAdES parašo vokas
 	Calculation order	Skaičiavimo tvarka
 	Calibrate from two points	Kalibruoti pagal du taškus
 	Calibrate screen	Kalibruoti ekraną
@@ -525,6 +526,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Couldn't create a PDF: {e}	Nepavyko sukurti PDF: {e}
 	Couldn't download {name}: {e}	Nepavyko atsisiųsti {name}: {e}
 	Couldn't extract pages: {e}	Nepavyko išskirti puslapių: {e}
+	Couldn't extract the original PDF: {e}	Nepavyko išskirti originalaus PDF: {e}
 	Couldn't fit the visible content: {e}	Nepavyko pritaikyti matomo turinio: {e}
 	Couldn't follow linked PDF: {reason}	Nepavyko atverti susieto PDF: {reason}
 	Couldn't import the signature image: {e}	Nepavyko importuoti parašo paveikslėlio: {e}
@@ -723,6 +725,7 @@ key	Delete	Delete
 	Document title is showing in title bar	Lango antraštėje rodomas dokumento pavadinimas
 	Documents and view	Dokumentai ir rodinys
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Daugiau nei 20 puslapių dokumentams reikia naršymo žymelių. Pridėkite pagrindinių skyrių žymeles.
+	Does not match what was signed	Neatitinka to, kas buvo pasirašyta
 	Don't save	Neįrašyti
 	Don't show again	Daugiau nerodyti
 	Done adding text	Tekstas pridėtas
@@ -887,6 +890,7 @@ key	Esc	Esc
 	Extract pages as separate files	Išskirti puslapius į atskirus failus
 	Extract pages to a new document	Išskirti puslapius į naują dokumentą
 	Extract pages…	Išskirti puslapius…
+	Extract the original PDF…	Išskirti originalų PDF…
 	Extract the selected pages…	Išskleisti pasirinktus puslapius…
 	Extracted 1 page	Išskirtas 1 puslapis
 	Extracted {n} pages	Išskirta puslapių: {n}
@@ -1129,6 +1133,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	Įdiegimo tipas nežinomas arba tai kūrimo versija. Pasirinkite paketą oficialiame leidimų puslapyje.
 	Installed fonts…	Įdiegti šriftai…
 	Installed version: {v}	Įdiegta versija: {v}
+	Integrity	Vientisumas
 	Intended usage	Naudojimo paskirtis
 certificate	Intended usage	Naudojimo paskirtis
 	Interface font	Sąsajos šriftas
@@ -1266,6 +1271,7 @@ calendar date	March	kovo
 	Mask:	Kaukė:
 	Match field sizes	Suvienodinti laukų dydžius
 	Match page at 100%	Sutapatinti puslapį esant 100 % masteliui
+	Matches what was signed	Atitinka tai, kas buvo pasirašyta
 	maximum	didžiausia reikšmė
 	May	gegužė
 calendar date	May	gegužės
@@ -1509,6 +1515,7 @@ animation effects	On	Įjungta
 	Open this web page?	Atverti šį tinklalapį?
 	Open to page	Atverti ties puslapiu
 	open to see what it will include	atverkite ir peržiūrėkite turinį
+	Opened from a CAdES signature envelope — read-only.	Atverta iš CAdES parašo voko — tik skaityti.
 	Opened with	Atverta naudojant
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Atverta, tačiau saugos nuostatos neleidžia sujungti. Įveskite teisių slaptažodį.
 	Opening the browser's print dialog…	Atveriamas naršyklės spausdinimo dialogas…
@@ -1723,6 +1730,7 @@ animation effects	On	Įjungta
 	Public key	Viešasis raktas
 certificate	Public key	Viešasis raktas
 	PushButton	Mygtukas
+	Quirks	Ypatumai
 	Quit PdfCraft	Išeiti iš PdfCraft
 	Quit {app}	Baigti „{app}“
 	Radio	Akutė
@@ -2125,8 +2133,13 @@ key	Shift	Shift
 	Signed and all signatures are valid.	Pasirašyta, visi parašai galioja.
 	Signed and saved to {path}	Pasirašyta ir įrašyta į {path}
 	Signed and saved to {path}. The document changed while the signature was being approved; those changes aren't in the signed file.	Pasirašyta ir įrašyta į {path}. Dokumentas pasikeitė, kol buvo tvirtinamas parašas; šių pakeitimų pasirašytame faile nėra.
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Pasirašė {signer} {time}; turinys neatitinka to, kas buvo pasirašyta; pasirašiusiojo patikimumas netikrintas.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Pasirašė {signer} {time}; turinys atitinka tai, kas buvo pasirašyta; pasirašiusiojo patikimumas netikrintas.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Pasirašė {signer}; turinys neatitinka to, kas buvo pasirašyta; pasirašiusiojo patikimumas netikrintas.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Pasirašė {signer}; turinys atitinka tai, kas buvo pasirašyta; pasirašiusiojo patikimumas netikrintas.
 	Signer	Pasirašiusysis
 	Signer's name	Pasirašiusiojo vardas
+	Signers	Pasirašiusieji
 	Signing	Pasirašymas
 	Signing time	Pasirašymo laikas
 	Signing time is from the clock on the signer's computer.	Pasirašymo laikas nustatytas pagal pasirašiusiojo kompiuterio laikrodį.
@@ -2452,6 +2465,7 @@ calendar weekday	Th	Kt
 	This document has not been modified since this signature was applied.	Po pasirašymo dokumentas nepakeistas.
 	This document has not been modified since this timestamp was applied.	Pridėjus šią laiko žymą dokumentas nepakeistas.
 	This document hasn't been checked yet.	Šis dokumentas dar netikrintas.
+	This document is not inside a CAdES envelope	Šis dokumentas nėra CAdES parašo voko viduje.
 	This document is secured. Some changes are restricted by its security settings.	Dokumentas apsaugotas. Saugos nuostatos riboja kai kuriuos pakeitimus.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	šis dokumentas pasirašytas: perrašius parašai nebegaliotų (vietoj to įrašykite palaipsniui)
 	This document is trying to open a local file:	Šis dokumentas bando atverti vietinį failą:
@@ -2738,6 +2752,7 @@ document scrollbar width	Wide	Platus
 	{n} {kind}	Kiekis: {n} · {kind}
 	{page} is not a page number or label	{page} nėra puslapio numeris ar žyma
 	{rule} - {status}	Taisyklė {rule} – būsena {status}
+	{signers} signers; details of the first are shown	Pasirašiusiųjų: {signers}; rodoma pirmojo išsami informacija
 	{s} action	Veiksmų: {s}
 	{ty} element on page {p}: {what}	Elementas {ty} puslapyje {p}: {what}
 	{ty} element: {what}	Elementas {ty}: {what}

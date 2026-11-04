@@ -317,6 +317,7 @@
 	Button Style:	Стил на бутона:
 	Buttons with the same name and value are selected in unison	Бутоните с еднакви име и стойност се избират едновременно
 	Bytes	Байтове
+	CAdES signature envelope	Плик с подпис CAdES
 	Calculation order	Ред на изчисляване
 	Calibrate from two points	Калибрирай по две точки
 	Calibrate screen	Калибриране на екрана
@@ -511,6 +512,7 @@
 	Couldn't create a PDF: {e}	Не можа да се създаде PDF файл: {e}
 	Couldn't download {name}: {e}	{name} не можа да бъде изтеглен: {e}
 	Couldn't extract pages: {e}	Страниците не можаха да бъдат извлечени: {e}
+	Couldn't extract the original PDF: {e}	Не успя да се извлече оригиналният PDF: {e}
 	Couldn't fit the visible content: {e}	Видимото съдържание не може да бъде побрано: {e}
 	Couldn't follow linked PDF: {reason}	Свързаният PDF не можа да бъде отворен: {reason}
 	Couldn't import the signature image: {e}	Изображението на подписа не може да бъде импортирано: {e}
@@ -707,6 +709,7 @@ key	Delete	Delete
 	Document title is showing in title bar	Заглавието на документа се показва в заглавната лента
 	Documents and view	Документи и изглед
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Документите с повече от 20 страници се нуждаят от отметки за навигация. Добавете отметки за основните раздели.
+	Does not match what was signed	Не съответства на подписаното
 	Don't save	Не записвай
 	Don't show again	Не показвай отново
 	Done adding text	Готово с добавянето на текст
@@ -869,6 +872,7 @@ key	Esc	Esc
 	Extract pages as separate files	Извлечи страниците като отделни файлове
 	Extract pages to a new document	Извлечи страниците в нов документ
 	Extract pages…	Извлечи страници…
+	Extract the original PDF…	Извлечи оригиналния PDF…
 	Extract the selected pages…	Извличане на избраните страници…
 	Extracted 1 page	Извлечена е 1 страница
 	Extracted {n} pages	Извлечени са {n} страници
@@ -1104,6 +1108,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	Типът на инсталацията е неизвестен или това е версия за разработка. Изберете пакет от официалната страница на изданието.
 	Installed fonts…	Инсталирани шрифтове…
 	Installed version: {v}	Инсталирана версия: {v}
+	Integrity	Цялостност
 	Intended usage	Предназначение
 	Interface font	Шрифт на интерфейса
 	Interface size	Размер на интерфейса
@@ -1230,6 +1235,7 @@ key	Home	Home
 	Marquee zoom	Мащабиране с рамка
 	Mask:	Маска:
 	Match page at 100%	Хартия по страницата, мащаб 100%
+	Matches what was signed	Съответства на подписаното
 	Maximum	Максимално
 	maximum	максимума
 	May	Май
@@ -1460,6 +1466,7 @@ animation effects	On	Включени
 	Open this web page?	Да се отвори ли тази уебстраница?
 	Open to page	Отвори на страница
 	open to see what it will include	отворете, за да видите какво ще включва
+	Opened from a CAdES signature envelope — read-only.	Отворено от плик с подпис CAdES — само за четене.
 	Opened with	Отворен с
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Файлът е отворен, но настройките му за защита не позволяват обединяване. Въведете паролата за разрешения.
 	Opening the browser's print dialog…	Отваряне на диалога за печат на браузъра…
@@ -1668,6 +1675,7 @@ animation effects	On	Включени
 	Public key	Публичен ключ
 	Purple	Лилаво
 	PushButton	Бутон
+	Quirks	Особености
 	Quit PdfCraft	Изход от PdfCraft
 	Radio	Радиобутон
 	Radio button	Радиобутон
@@ -2063,8 +2071,13 @@ key	Shift	Shift
 	Signatures panel	Панел с подписи
 	Signed and all signatures are valid.	Подписан, всички подписи са валидни.
 	Signed and saved to {path}	Подписано и записано в {path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Подписано от {signer} на {time}; съдържанието не съответства на подписаното; доверието към подписалия не е проверено.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Подписано от {signer} на {time}; съдържанието съответства на подписаното; доверието към подписалия не е проверено.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Подписано от {signer}; съдържанието не съответства на подписаното; доверието към подписалия не е проверено.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Подписано от {signer}; съдържанието съответства на подписаното; доверието към подписалия не е проверено.
 	Signer	Подписал
 	Signer's name	Име на подписващия
+	Signers	Подписали
 	Signing	Подписване
 	Signing time	Час на подписване
 	Simplified field notation:	Опростен запис с полета:
@@ -2305,6 +2318,7 @@ action wizard	Start	Старт
 	This document has no tagged figures.	Този документ няма етикетирани фигури.
 	This document has no {kind} to change	Този документ няма {kind} за промяна
 	This document hasn't been checked yet.	Този документ все още не е проверен.
+	This document is not inside a CAdES envelope	Този документ не е вътре в плик с подпис CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Този документ е защитен. Някои промени са ограничени от настройките му за защита.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	този документ е подписан: презаписването му би обезсилило подписите (вместо това го запишете инкрементално)
 	This document is trying to open a local file:	Този документ се опитва да отвори локален файл:
@@ -2569,6 +2583,7 @@ document scrollbar width	Wide	Широка
 	{n} word(s) or phrase(s)	{n} дума(и) или фраза(и)
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	Подписали: {signers}; показани са подробностите за първия
 	{s} action	Действие {s}
 	{verb} as "{name}"	{verb} като „{name}“
 	{verb} Background	{verb} фон

@@ -316,6 +316,7 @@ calendar date	August	Тамыз
 	Button Style:	Түйме стилі:
 	Buttons with the same name and value are selected in unison	Атауы мен мәні бірдей түймелер бірге таңдалады
 	Bytes	Байт
+	CAdES signature envelope	CAdES қолтаңба конверті
 	Calculation order	Есептеу реті
 	Calibrate from two points	Екі нүктеден калибрлеу
 	Calibrate screen	Экранды калибрлеу
@@ -498,6 +499,7 @@ calendar date	August	Тамыз
 	Couldn't create a PDF: {e}	PDF жасау мүмкін болмады: {e}
 	Couldn't download {name}: {e}	«{name}» жүктеп алынбады: {e}
 	Couldn't extract pages: {e}	Беттерді шығарып алу мүмкін болмады: {e}
+	Couldn't extract the original PDF: {e}	Түпнұсқа PDF файлын шығарып алу мүмкін болмады: {e}
 	Couldn't fit the visible content: {e}	Көрінетін мазмұнды сыйдыру мүмкін болмады: {e}
 	Couldn't follow linked PDF: {reason}	Байланысты PDF ашылмады: {reason}
 	Couldn't import the signature image: {e}	Қолтаңба суретін импорттау мүмкін болмады: {e}
@@ -680,6 +682,7 @@ key	Delete	Delete
 	Document title is showing in title bar	Құжат тақырыбы атау жолағында көрсетіледі
 	Documents and view	Құжаттар және көрініс
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	20 беттен асатын құжаттарда навигация үшін бетбелгілер қажет. Негізгі бөлімдерге бетбелгілер қосыңыз.
+	Does not match what was signed	Қол қойылған нәрсеге сәйкес келмейді
 	Don't save	Сақтамау
 	Don't show again	Қайта көрсетпеу
 	Done adding text	Мәтін қосу аяқталды
@@ -838,6 +841,7 @@ key	Esc	Esc
 	Extract pages as separate files	Беттерді бөлек файлдар ретінде шығарып алу
 	Extract pages to a new document	Беттерді жаңа құжатқа шығарып алу
 	Extract pages…	Беттерді шығарып алу…
+	Extract the original PDF…	Түпнұсқа PDF файлын шығарып алу…
 	Extract the selected pages…	Таңдалған беттерді шығарып алу…
 	Extracted 1 page	1 бет шығарып алынды
 	Extracted {n} pages	{n} бет шығарып алынды
@@ -1067,6 +1071,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	Орнату түрі белгісіз немесе бұл әзірлеу жинағы. Ресми шығарылым бетінен пакет таңдаңыз.
 	Installed fonts…	Орнатылған қаріптер…
 	Installed version: {v}	Орнатылған нұсқа: {v}
+	Integrity	Тұтастық
 	Intended usage	Пайдалану мақсаты
 	Interface font	Интерфейс қарпі
 	Interface size	Интерфейс өлшемі
@@ -1195,6 +1200,7 @@ calendar date	March	Наурыз
 	Mask:	Маска:
 	Match field sizes	Өріс өлшемдерін теңестіру
 	Match page at 100%	Бетке 100% сәйкестендіру
+	Matches what was signed	Қол қойылған нәрсеге сәйкес келеді
 	maximum	максимум
 	May	Мамыр
 calendar date	May	Мамыр
@@ -1420,6 +1426,7 @@ animation effects	On	Қосулы
 	Open this web page?	Бұл веб-бет ашылсын ба?
 	Open to page	Бетке ашу
 	open to see what it will include	ашып, нені қамтитынын көріңіз
+	Opened from a CAdES signature envelope — read-only.	CAdES қолтаңба конвертінен ашылды — тек оқуға арналған.
 	Opened with	Мынамен ашылады
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Ашылды, бірақ оның қауіпсіздік параметрлері біріктіруге рұқсат бермейді. Рұқсаттар құпиясөзін енгізіңіз.
 	Opening the browser's print dialog…	Браузердің басып шығару терезесі ашылуда…
@@ -1617,6 +1624,7 @@ animation effects	On	Қосулы
 	Protected: the combined file won't keep its security settings	Қорғалған: біріктірілген файл өз қауіпсіздік параметрлерін сақтамайды
 	Public key	Ашық кілт
 	PushButton	Түйме
+	Quirks	Ерекшеліктер
 	Quit PdfCraft	PdfCraft жұмысын аяқтау
 	Radio	Радио түймесі
 	Radio button	Ауыстырғыш
@@ -1994,8 +2002,13 @@ key	Shift	Shift
 	Signatures panel	Қолтаңбалар панелі
 	Signed and all signatures are valid.	Қол қойылды, барлық қолтаңбалар жарамды.
 	Signed and saved to {path}	Қол қойылып, {path} жолына сақталды
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	{signer} {time} уақытында қол қойған; мазмұн қол қойылған нәрсеге сәйкес келмейді; қол қоюшының сенімділігі тексерілмеген.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	{signer} {time} уақытында қол қойған; мазмұн қол қойылған нәрсеге сәйкес келеді; қол қоюшының сенімділігі тексерілмеген.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	{signer} қол қойған; мазмұн қол қойылған нәрсеге сәйкес келмейді; қол қоюшының сенімділігі тексерілмеген.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	{signer} қол қойған; мазмұн қол қойылған нәрсеге сәйкес келеді; қол қоюшының сенімділігі тексерілмеген.
 	Signer	Қол қоюшы
 	Signer's name	Қол қоюшының аты
+	Signers	Қол қоюшылар
 	Signing	Қол қою
 	Signing time	Қол қою уақыты
 	Simplified field notation:	Жеңілдетілген өріс жазылуы:
@@ -2238,6 +2251,7 @@ certificate	Subject	Субъект
 	This document has no tagged figures.	Бұл құжатта тегтелген суреттер жоқ.
 	This document has no {kind} to change	Бұл құжатта өзгертуге болатын {kind} жоқ
 	This document hasn't been checked yet.	Бұл құжат әлі тексерілмеген.
+	This document is not inside a CAdES envelope	Бұл құжат CAdES қолтаңба конвертінің ішінде емес.
 	This document is secured. Some changes are restricted by its security settings.	Бұл құжат қорғалған. Кейбір өзгерістер оның қауіпсіздік параметрлерімен шектеулі.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	бұл құжат қол қойылған: қайта жазу оның қолтаңбаларын жарамсыз етеді (орнына қосымша сақтаңыз)
 	This document is trying to open a local file:	Бұл құжат жергілікті файлды ашуға әрекеттеніп жатыр:
@@ -2498,6 +2512,7 @@ document scrollbar width	Wide	Кең
 	{n} word(s) or phrase(s)	{n} сөз немесе тіркес
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	Қол қоюшылар саны: {signers}; біріншісінің мәліметтері көрсетілген
 	{s} action	{s} әрекеті
 	{verb} as "{name}"	«{name}» ретінде {verb}
 	{verb} Background	Фонды {verb}

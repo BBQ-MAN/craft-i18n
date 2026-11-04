@@ -331,6 +331,7 @@
 	Button Style:	Düğme Stili:
 	Buttons with the same name and value are selected in unison	Aynı ada ve değere sahip düğmeler birlikte seçilir
 	Bytes	Bayt
+	CAdES signature envelope	CAdES imza zarfı
 	Calculation order	Hesaplama sırası
 	Calibrate from two points	İki noktadan kalibre et
 	Calibrate screen	Ekranı kalibre et
@@ -528,6 +529,7 @@
 	Couldn't create a PDF: {e}	PDF oluşturulamadı: {e}
 	Couldn't download {name}: {e}	{name} indirilemedi: {e}
 	Couldn't extract pages: {e}	Sayfalar ayıklanamadı: {e}
+	Couldn't extract the original PDF: {e}	Özgün PDF ayıklanamadı: {e}
 	Couldn't fit the visible content: {e}	Görünür içerik sığdırılamadı: {e}
 	Couldn't follow linked PDF: {reason}	Bağlantılı PDF açılamadı: {reason}
 	Couldn't import the signature image: {e}	İmza görseli içe aktarılamadı: {e}
@@ -731,6 +733,7 @@ key	Delete	Delete
 	Document title is showing in title bar	Belge başlığı başlık çubuğunda gösteriliyor
 	Documents and view	Belgeler ve görünüm
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	20 sayfadan fazla olan belgelerde gezinme için yer işaretleri gerekir. Ana bölümler için yer işaretleri ekleyin.
+	Does not match what was signed	İmzalananla eşleşmiyor
 	Don't save	Kaydetme
 	Don't show again	Bir daha gösterme
 	Done adding text	Metin ekleme bitti
@@ -901,6 +904,7 @@ key	Esc	Esc
 	Extract pages as separate files	Sayfaları ayrı dosyalar olarak ayıkla
 	Extract pages to a new document	Sayfaları yeni bir belgeye ayıkla
 	Extract pages…	Sayfaları ayıkla…
+	Extract the original PDF…	Özgün PDF'yi ayıkla…
 	Extract the selected pages…	Seçili sayfaları ayıkla…
 	Extracted 1 page	1 sayfa ayıklandı
 	Extracted {n} pages	{n} sayfa ayıklandı
@@ -1150,6 +1154,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	Kurulum türü bilinmiyor veya bu bir geliştirme derlemesi. Resmî sürüm sayfasından bir paket seçin.
 	Installed fonts…	Yüklü yazı tipleri…
 	Installed version: {v}	Yüklü sürüm: {v}
+	Integrity	Bütünlük
 	Intended usage	Kullanım amacı
 	Interface font	Arayüz yazı tipi
 	Interface size	Arayüz boyutu
@@ -1287,6 +1292,7 @@ key	Home	Home
 	Mask:	Maske:
 	Match field sizes	Alan boyutlarını eşleştir
 	Match page at 100%	Sayfayı %100'de eşleştir
+	Matches what was signed	İmzalananla eşleşiyor
 	Maximum	En Yüksek
 	maximum	en büyük
 	May	Mayıs
@@ -1538,6 +1544,7 @@ animation effects	On	Açık
 	Open this web page?	Bu web sayfası açılsın mı?
 	Open to page	Şu sayfada aç:
 	open to see what it will include	neler içereceğini görmek için açın
+	Opened from a CAdES signature envelope — read-only.	CAdES imza zarfından açıldı — salt okunur.
 	Opened with	Şununla açıldı:
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Açıldı, ancak güvenlik ayarları birleştirmeye izin vermiyor. İzinler parolasını girin.
 	Opening the browser's print dialog…	Tarayıcının yazdırma penceresi açılıyor…
@@ -1755,6 +1762,7 @@ animation effects	On	Açık
 	Protected: the combined file won't keep its security settings	Korumalı: Birleştirilen dosya güvenlik ayarlarını korumayacaktır
 	Public key	Ortak anahtar
 	PushButton	BasmaDüğmesi
+	Quirks	Özel durumlar
 	Quit PdfCraft	PdfCraft'tan çık
 	Radio	Radyo
 	Radio button	Radyo düğmesi
@@ -2162,8 +2170,13 @@ key	Shift	Shift
 	Signatures panel	İmzalar paneli
 	Signed and all signatures are valid.	İmzalandı ve tüm imzalar geçerli.
 	Signed and saved to {path}	İmzalandı ve {path} konumuna kaydedildi
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	{signer} tarafından {time} tarihinde imzalandı; içerik imzalananla eşleşmiyor; imzalayanın güveni denetlenmedi.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	{signer} tarafından {time} tarihinde imzalandı; içerik imzalananla eşleşiyor; imzalayanın güveni denetlenmedi.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	{signer} tarafından imzalandı; içerik imzalananla eşleşmiyor; imzalayanın güveni denetlenmedi.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	{signer} tarafından imzalandı; içerik imzalananla eşleşiyor; imzalayanın güveni denetlenmedi.
 	Signer	İmzalayan
 	Signer's name	İmzalayanın adı
+	Signers	İmzalayanlar
 	Signing	İmzalama
 	Signing time	İmzalama zamanı
 	Signing time is from the clock on the signer's computer.	İmzalama zamanı, imzalayanın bilgisayarındaki saatten alınmıştır.
@@ -2489,6 +2502,7 @@ calendar weekday	Th	Pe
 	This document has not been modified since this signature was applied.	Bu belge, bu imza uygulandığından beri değiştirilmemiş.
 	This document has not been modified since this timestamp was applied.	Bu belge, bu zaman damgası uygulandığından beri değiştirilmemiş.
 	This document hasn't been checked yet.	Bu belge henüz denetlenmedi.
+	This document is not inside a CAdES envelope	Bu belge bir CAdES imza zarfının içinde değil.
 	This document is secured. Some changes are restricted by its security settings.	Bu belge güvenlidir. Bazı değişiklikler güvenlik ayarlarıyla kısıtlanmıştır.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	bu belge imzalanmış: yeniden yazılması imzalarını geçersiz kılar (bunun yerine aşamalı olarak kaydedin)
 	This document is trying to open a local file:	Bu belge yerel bir dosya açmaya çalışıyor:
@@ -2782,6 +2796,7 @@ document scrollbar width	Wide	Geniş
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} bir sayfa numarası ya da etiketi değil
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	İmzalayan sayısı: {signers}; ilkinin ayrıntıları gösteriliyor
 	{s} action	{s} eylemi
 	{ty} element on page {p}: {what}	{p}. sayfadaki {ty} öğesi: {what}
 	{ty} element: {what}	{ty} öğesi: {what}

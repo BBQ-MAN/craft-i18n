@@ -335,6 +335,7 @@ certificate	Basic constraints	Restrições básicas
 	Button Style:	Estilo do botão:
 	Buttons with the same name and value are selected in unison	Botões com o mesmo nome e valor são selecionados em conjunto
 	Bytes	Bytes
+	CAdES signature envelope	Envelope de assinatura CAdES
 	Calculation order	Ordem de cálculo
 	Calibrate from two points	Calibrar a partir de dois pontos
 	Calibrate screen	Calibrar tela
@@ -534,6 +535,7 @@ certificate	Basic constraints	Restrições básicas
 	Couldn't create a PDF: {e}	Não foi possível criar um PDF: {e}
 	Couldn't download {name}: {e}	Não foi possível baixar {name}: {e}
 	Couldn't extract pages: {e}	Não foi possível extrair páginas: {e}
+	Couldn't extract the original PDF: {e}	Não foi possível extrair o PDF original: {e}
 	Couldn't fit the visible content: {e}	Não foi possível ajustar o conteúdo visível: {e}
 	Couldn't follow linked PDF: {reason}	Não foi possível abrir o PDF vinculado: {reason}
 	Couldn't import the signature image: {e}	Não foi possível importar a imagem da assinatura: {e}
@@ -741,6 +743,7 @@ key	Delete	Delete
 	Document title is showing in title bar	O título do documento é exibido na barra de título
 	Documents and view	Documentos e visualização
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Documentos com mais de 20 páginas precisam de marcadores para navegação. Adicione marcadores para as seções principais.
+	Does not match what was signed	Não corresponde ao que foi assinado
 	Don't save	Não salvar
 	Don't show again	Não mostrar novamente
 	Done adding text	Concluir a adição de texto
@@ -907,6 +910,7 @@ key	Esc	Esc
 	Extract pages as separate files	Extrair páginas como arquivos separados
 	Extract pages to a new document	Extrair páginas para um novo documento
 	Extract pages…	Extrair páginas…
+	Extract the original PDF…	Extrair o PDF original…
 	Extract the selected pages…	Extrair as páginas selecionadas…
 	Extracted 1 page	1 página extraída
 	Extracted {n} pages	{n} páginas extraídas
@@ -1152,6 +1156,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	O tipo de instalação é desconhecido ou esta é uma versão de desenvolvimento. Escolha um pacote na página oficial de lançamentos.
 	Installed fonts…	Fontes instaladas…
 	Installed version: {v}	Versão instalada: {v}
+	Integrity	Integridade
 	Intended usage	Uso pretendido
 certificate	Intended usage	Uso pretendido
 	Interface font	Fonte da interface
@@ -1293,6 +1298,7 @@ calendar date	March	março
 	Mask:	Máscara:
 	Match field sizes	Igualar o tamanho dos campos
 	Match page at 100%	Ajustar papel à página a 100%
+	Matches what was signed	Corresponde ao que foi assinado
 	maximum	máximo
 	May	Maio
 calendar date	May	maio
@@ -1542,6 +1548,7 @@ animation effects	On	Ativados
 	Open this web page?	Abrir esta página da Web?
 	Open to page	Abrir na página
 	open to see what it will include	abra para ver o que será incluído
+	Opened from a CAdES signature envelope — read-only.	Aberto a partir de um envelope de assinatura CAdES — somente leitura.
 	Opened with	Aberto com
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Aberto, mas as configurações de segurança dele não permitem combinar. Digite a senha de permissões.
 	Opening the browser's print dialog…	Abrindo a caixa de diálogo de impressão do navegador…
@@ -1760,6 +1767,7 @@ animation effects	On	Ativados
 	Public key	Chave pública
 certificate	Public key	Chave pública
 	PushButton	Botão de pressão
+	Quirks	Particularidades
 	Quit PdfCraft	Sair do PdfCraft
 	Radio	Botão de opção
 	Radio button	Botão de opção
@@ -2163,8 +2171,13 @@ key	Shift	Shift
 	Signatures panel	Painel de assinaturas
 	Signed and all signatures are valid.	Assinado e todas as assinaturas são válidas.
 	Signed and saved to {path}	Assinado e salvo em {path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Assinado por {signer} em {time}; o conteúdo não corresponde ao que foi assinado; a confiança do signatário não foi verificada.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Assinado por {signer} em {time}; o conteúdo corresponde ao que foi assinado; a confiança do signatário não foi verificada.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Assinado por {signer}; o conteúdo não corresponde ao que foi assinado; a confiança do signatário não foi verificada.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Assinado por {signer}; o conteúdo corresponde ao que foi assinado; a confiança do signatário não foi verificada.
 	Signer	Signatário
 	Signer's name	Nome do signatário
+	Signers	Signatários
 	Signing	Assinatura
 	Signing time	Hora da assinatura
 	Signing time is from the clock on the signer's computer.	O horário da assinatura vem do relógio do computador do signatário.
@@ -2491,6 +2504,7 @@ calendar weekday	Th	Qui
 	This document has not been modified since this signature was applied.	Este documento não foi modificado desde que esta assinatura foi aplicada.
 	This document has not been modified since this timestamp was applied.	Este documento não foi modificado desde que este carimbo de data e hora foi aplicado.
 	This document hasn't been checked yet.	Este documento ainda não foi verificado.
+	This document is not inside a CAdES envelope	Este documento não está dentro de um envelope de assinatura CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Este documento está protegido. Algumas alterações são restritas por suas configurações de segurança.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	este documento está assinado: regravá-lo invalidaria suas assinaturas (salve de forma incremental)
 	This document is trying to open a local file:	Este documento está tentando abrir um arquivo local:
@@ -2777,6 +2791,7 @@ document scrollbar width	Wide	Larga
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} não é um número nem um rótulo de página
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	{signers} signatários; os detalhes do primeiro são exibidos
 	{s} action	ação {s}
 	{ty} element on page {p}: {what}	elemento {ty} na página {p}: {what}
 	{ty} element: {what}	elemento {ty}: {what}

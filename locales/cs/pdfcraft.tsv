@@ -333,6 +333,7 @@ certificate	Basic constraints	Základní omezení
 	Button Style:	Styl přepínače:
 	Buttons with the same name and value are selected in unison	Přepínače se stejným názvem a hodnotou se vybírají současně
 	Bytes	Bajty
+	CAdES signature envelope	Obálka podpisu CAdES
 	Calculation order	Pořadí výpočtů
 	Calibrate from two points	Kalibrovat ze dvou bodů
 	Calibrate screen	Kalibrovat obrazovku
@@ -533,6 +534,7 @@ certificate	Basic constraints	Základní omezení
 	Couldn't create a PDF: {e}	PDF nelze vytvořit: {e}
 	Couldn't download {name}: {e}	{name} nelze stáhnout: {e}
 	Couldn't extract pages: {e}	Stránky nelze extrahovat: {e}
+	Couldn't extract the original PDF: {e}	Původní PDF nelze extrahovat: {e}
 	Couldn't fit the visible content: {e}	Viditelný obsah nelze přizpůsobit: {e}
 	Couldn't follow linked PDF: {reason}	Odkazovaný PDF nelze otevřít: {reason}
 	Couldn't import the signature image: {e}	Obrázek podpisu nelze importovat: {e}
@@ -742,6 +744,7 @@ key	Delete	Delete
 	Document title is showing in title bar	V záhlaví okna se zobrazuje název dokumentu
 	Documents and view	Dokumenty a zobrazení
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Dokumenty s více než 20 stránkami potřebují k navigaci záložky. Přidejte záložky hlavních oddílů.
+	Does not match what was signed	Neodpovídá podepsanému
 	Don't save	Neukládat
 	Don't show again	Znovu nezobrazovat
 	Done adding text	Dokončit přidávání textu
@@ -910,6 +913,7 @@ key	Esc	Esc
 	Extract pages as separate files	Extrahovat stránky jako samostatné soubory
 	Extract pages to a new document	Extrahovat stránky do nového dokumentu
 	Extract pages…	Extrahovat stránky…
+	Extract the original PDF…	Extrahovat původní PDF…
 	Extract the selected pages…	Extrahovat vybrané stránky…
 	Extracted 1 page	Extrahována 1 stránka
 	Extracted {n} pages	Extrahováno stránek: {n}
@@ -1159,6 +1163,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	Typ instalace není znám nebo jde o vývojovou verzi. Vyberte balíček na oficiální stránce vydání.
 	Installed fonts…	Nainstalovaná písma…
 	Installed version: {v}	Nainstalovaná verze: {v}
+	Integrity	Integrita
 	Intended usage	Zamýšlené použití
 certificate	Intended usage	Zamýšlené použití
 	Interface font	Písmo rozhraní
@@ -1299,6 +1304,7 @@ calendar date	March	března
 	Mask:	Maska:
 	Match field sizes	Sjednotit velikost polí
 	Match page at 100%	Papír podle stránky, 100 %
+	Matches what was signed	Odpovídá podepsanému
 	maximum	největší hodnota
 	May	Květen
 calendar date	May	května
@@ -1552,6 +1558,7 @@ animation effects	On	Zapnuto
 	Open this web page?	Otevřít tuto webovou stránku?
 	Open to page	Otevřít na stránce
 	open to see what it will include	otevřete a uvidíte, co bude obsahovat
+	Opened from a CAdES signature envelope — read-only.	Otevřeno z obálky podpisu CAdES — pouze pro čtení.
 	Opened with	Otevřeno pomocí
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Otevřeno, ale nastavení zabezpečení nedovoluje slučování. Zadejte heslo oprávnění.
 	Opening the browser's print dialog…	Otevírá se dialog tisku prohlížeče…
@@ -1770,6 +1777,7 @@ animation effects	On	Zapnuto
 	Public key	Veřejný klíč
 certificate	Public key	Veřejný klíč
 	PushButton	Tlačítko
+	Quirks	Zvláštnosti
 	Quit PdfCraft	Ukončit PdfCraft
 	Radio	Přepínač
 	Radio button	Přepínač
@@ -2175,8 +2183,13 @@ key	Shift	Shift
 	Signatures panel	Panel podpisů
 	Signed and all signatures are valid.	Podepsáno a všechny podpisy jsou platné.
 	Signed and saved to {path}	Podepsáno a uloženo do {path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Podepsal {signer} dne {time}; obsah neodpovídá podepsanému; důvěryhodnost podepisujícího nebyla ověřena.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Podepsal {signer} dne {time}; obsah odpovídá podepsanému; důvěryhodnost podepisujícího nebyla ověřena.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Podepsal {signer}; obsah neodpovídá podepsanému; důvěryhodnost podepisujícího nebyla ověřena.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Podepsal {signer}; obsah odpovídá podepsanému; důvěryhodnost podepisujícího nebyla ověřena.
 	Signer	Podepsal
 	Signer's name	Jméno podepisující osoby
+	Signers	Podepsali
 	Signing	Podepisování
 	Signing time	Čas podpisu
 	Signing time is from the clock on the signer's computer.	Čas podpisu pochází z hodin v počítači podepisující osoby.
@@ -2500,6 +2513,7 @@ calendar weekday	Th	Čt
 	This document has not been modified since this signature was applied.	Tento dokument nebyl od připojení tohoto podpisu upraven.
 	This document has not been modified since this timestamp was applied.	Tento dokument nebyl od připojení tohoto časového razítka upraven.
 	This document hasn't been checked yet.	Tento dokument zatím nebyl zkontrolován.
+	This document is not inside a CAdES envelope	Tento dokument není uvnitř obálky podpisu CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Tento dokument je zabezpečený. Některé změny omezuje jeho nastavení zabezpečení.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	tento dokument je podepsaný: přepsáním by jeho podpisy přestaly platit (uložte ho raději přírůstkově)
 	This document is trying to open a local file:	Tento dokument se pokouší otevřít místní soubor:
@@ -2786,6 +2800,7 @@ document scrollbar width	Wide	Široký
 	{n} {kind}	{kind}: {n}
 	{page} is not a page number or label	{page} není číslo ani označení stránky
 	{rule} - {status}	{rule} – {status}
+	{signers} signers; details of the first are shown	Podepsali: {signers}; zobrazují se podrobnosti prvního
 	{s} action	Akce {s}
 	{ty} element on page {p}: {what}	Prvek {ty} na stránce {p}: {what}
 	{ty} element: {what}	Prvek {ty}: {what}

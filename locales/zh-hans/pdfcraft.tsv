@@ -325,6 +325,7 @@
 	Button Style:	按钮样式：
 	Buttons with the same name and value are selected in unison	同名同值的按钮一起选中
 	Bytes	字节
+	CAdES signature envelope	CAdES 签名信封
 	Calculation order	计算顺序
 	Calibrate from two points	使用两点校准
 	Calibrate screen	校准屏幕
@@ -531,6 +532,7 @@
 	Couldn't create a PDF: {e}	无法创建 PDF：{e}
 	Couldn't download {name}: {e}	无法下载{name}：{e}
 	Couldn't extract pages: {e}	无法提取页面：{e}
+	Couldn't extract the original PDF: {e}	无法提取原始 PDF：{e}
 	Couldn't fit the visible content: {e}	无法适应可见内容：{e}
 	Couldn't follow linked PDF: {reason}	无法打开链接的 PDF：{reason}
 	Couldn't import the signature image: {e}	无法导入签名图像：{e}
@@ -727,6 +729,7 @@ key	Delete	Delete
 	Document title is showing in title bar	标题栏中显示文档标题
 	Documents and view	文档与视图
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	超过 20 页的文档需要书签以便导航。请为主要章节添加书签。
+	Does not match what was signed	与所签内容不一致
 	Don't save	不保存
 	Don't show again	不再显示
 	Done adding text	完成添加文本
@@ -896,6 +899,7 @@ key	Esc	Esc
 	Extract pages as separate files	将页面提取为单独文件
 	Extract pages to a new document	将页面提取到新文档
 	Extract pages…	提取页面…
+	Extract the original PDF…	提取原始 PDF…
 	Extract the selected pages…	提取所选页面…
 	Extracted 1 page	已提取 1 页
 	Extracted {n} pages	已提取{n}页
@@ -1136,6 +1140,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	安装类型未知，或这是开发版本。请在官方发布页面选择软件包。
 	Installed fonts…	已安装字体…
 	Installed version: {v}	已安装版本：{v}
+	Integrity	完整性
 	Intended usage	预期用途
 	Interface font	界面字体
 	Interface size	界面大小
@@ -1270,6 +1275,7 @@ key	Home	Home
 	Marquee zoom	选框缩放
 	Mask:	掩码：
 	Match page at 100%	匹配页面并设为 100%
+	Matches what was signed	与所签内容一致
 	maximum	最大值
 	May	五月
 	Measure	测量
@@ -1516,6 +1522,7 @@ animation effects	On	开
 	Open this web page?	是否打开此网页？
 	Open to page	打开到页面
 	open to see what it will include	打开以查看计划包含的功能
+	Opened from a CAdES signature envelope — read-only.	从 CAdES 签名信封打开 — 只读。
 	Opened with	打开方式
 	Opened, but its security settings don't allow combining. Enter the permissions password.	已打开，但其安全设置不允许合并。请输入权限密码。
 	Opening the browser's print dialog…	正在打开浏览器的打印对话框…
@@ -1725,6 +1732,7 @@ animation effects	On	开
 	Purple	紫色
 	PushButton	按钮
 	Quantity	测量量
+	Quirks	特例
 	Quit PdfCraft	退出 PdfCraft
 	Radio	单选按钮
 	Radio button	单选按钮
@@ -2127,8 +2135,13 @@ key	Shift	Shift
 	Signatures panel	签名面板
 	Signed and all signatures are valid.	已签名，所有签名均有效。
 	Signed and saved to {path}	已签名并保存到{path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	由 {signer} 签名于 {time}；内容与所签内容不一致；未检查签名者的可信度。
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	由 {signer} 签名于 {time}；内容与所签内容一致；未检查签名者的可信度。
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	由 {signer} 签名；内容与所签内容不一致；未检查签名者的可信度。
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	由 {signer} 签名；内容与所签内容一致；未检查签名者的可信度。
 	Signer	签署者
 	Signer's name	签名者姓名
+	Signers	签名者数量
 	Signing	签名
 	Signing time	签署时间
 	Silhouettes	轮廓
@@ -2380,6 +2393,7 @@ document scrollbar width	Standard	标准
 	This document has no tagged figures.	本文档没有带标记的图形。
 	This document has no {kind} to change	本文档没有可更改的{kind}
 	This document hasn't been checked yet.	本文档尚未检查。
+	This document is not inside a CAdES envelope	此文档不在 CAdES 签名信封内。
 	This document is secured. Some changes are restricted by its security settings.	本文档已加密。其安全设置限制了部分更改。
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	此文档已签名：重写文件会使签名失效（请改用增量保存）
 	This document is trying to open a local file:	此文档正尝试打开本地文件：
@@ -2661,6 +2675,7 @@ document scrollbar width	Wide	宽
 	{n} word(s) or phrase(s)	{n} 个单词或短语
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	共 {signers} 个签名者；显示第一个的详细信息
 	{s} action	{s}动作
 	{verb} as "{name}"	{verb}为“{name}”
 	{verb} Background	{verb}背景

@@ -317,6 +317,7 @@
 	Button Style:	Stil des Optionsfelds:
 	Buttons with the same name and value are selected in unison	Optionsfelder mit gleichem Namen und Wert werden gemeinsam ausgewählt
 	Bytes	Bytes
+	CAdES signature envelope	CAdES-Signaturumschlag
 	Calculation order	Berechnungsreihenfolge
 	Calibrate from two points	Anhand zweier Punkte kalibrieren
 	Calibrate screen	Bildschirm kalibrieren
@@ -503,6 +504,7 @@
 	Couldn't create a PDF: {e}	PDF konnte nicht erstellt werden: {e}
 	Couldn't download {name}: {e}	{name} konnte nicht heruntergeladen werden: {e}
 	Couldn't extract pages: {e}	Seiten konnten nicht extrahiert werden: {e}
+	Couldn't extract the original PDF: {e}	Original-PDF konnte nicht extrahiert werden: {e}
 	Couldn't fit the visible content: {e}	Der sichtbare Inhalt konnte nicht eingepasst werden: {e}
 	Couldn't follow linked PDF: {reason}	Verknüpfte PDF konnte nicht geöffnet werden: {reason}
 	Couldn't import the signature image: {e}	Das Unterschriftsbild konnte nicht importiert werden: {e}
@@ -692,6 +694,7 @@ key	Delete	Entf
 	Document title is showing in title bar	Dokumenttitel wird in der Titelleiste angezeigt
 	Documents and view	Dokumente und Ansicht
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Dokumente mit mehr als 20 Seiten brauchen Lesezeichen zur Navigation. Füge Lesezeichen für die Hauptabschnitte hinzu.
+	Does not match what was signed	Stimmt nicht mit dem Signierten überein
 	Don't save	Nicht speichern
 	Don't show again	Nicht mehr anzeigen
 	Done adding text	Texteingabe abschließen
@@ -848,6 +851,7 @@ key	Esc	Esc
 	Extract pages as separate files	Seiten als separate Dateien extrahieren
 	Extract pages to a new document	Seiten in neues Dokument extrahieren
 	Extract pages…	Seiten extrahieren…
+	Extract the original PDF…	Original-PDF extrahieren…
 	Extract the selected pages…	Ausgewählte Seiten extrahieren…
 	Extracted 1 page	1 Seite extrahiert
 	Extracted {n} pages	{n} Seiten extrahiert
@@ -1078,6 +1082,7 @@ key	Home	Pos1
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	Der Installationstyp ist unbekannt oder dies ist eine Entwicklungsversion. Wähle ein Paket auf der offiziellen Release-Seite.
 	Installed fonts…	Installierte Schriftarten…
 	Installed version: {v}	Installierte Version: {v}
+	Integrity	Integrität
 	Intended usage	Vorgesehene Verwendung
 	Interface font	Schrift der Benutzeroberfläche
 	Interface size	Größe der Oberfläche
@@ -1203,6 +1208,7 @@ key	Home	Pos1
 	Mask:	Maske:
 	Match field sizes	Feldgrößen angleichen
 	Match page at 100%	Papier an Seite anpassen, 100%
+	Matches what was signed	Stimmt mit dem Signierten überein
 	maximum	Maximum
 	May	Mai
 	Measure area	Fläche messen
@@ -1431,6 +1437,7 @@ animation effects	On	Ein
 	Open this web page?	Diese Webseite öffnen?
 	Open to page	Öffnen auf Seite
 	open to see what it will include	öffne es, um zu sehen, was enthalten sein wird
+	Opened from a CAdES signature envelope — read-only.	Aus einem CAdES-Signaturumschlag geöffnet — schreibgeschützt.
 	Opened with	Geöffnet mit
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Geöffnet, aber die Sicherheitseinstellungen erlauben kein Kombinieren. Gib das Berechtigungspasswort ein.
 	Opening the browser's print dialog…	Der Druckdialog des Browsers wird geöffnet…
@@ -1633,6 +1640,7 @@ animation effects	On	Ein
 	Protected: the combined file won't keep its security settings	Geschützt: Die kombinierte Datei behält die Sicherheitseinstellungen nicht bei
 	Public key	Öffentlicher Schlüssel
 	PushButton	Schaltfläche
+	Quirks	Besonderheiten
 	Quit PdfCraft	PdfCraft beenden
 	Radio	Optionsfeld
 	Radio button	Optionsfeld
@@ -2015,8 +2023,13 @@ key	Shift	Umschalt
 	Signatures panel	Signaturbereich
 	Signed and all signatures are valid.	Signiert, alle Signaturen sind gültig.
 	Signed and saved to {path}	Signiert und gespeichert unter {path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Signiert von {signer} am {time}; der Inhalt stimmt nicht mit dem Signierten überein; die Vertrauenswürdigkeit des Unterzeichners wurde nicht geprüft.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Signiert von {signer} am {time}; der Inhalt stimmt mit dem Signierten überein; die Vertrauenswürdigkeit des Unterzeichners wurde nicht geprüft.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Signiert von {signer}; der Inhalt stimmt nicht mit dem Signierten überein; die Vertrauenswürdigkeit des Unterzeichners wurde nicht geprüft.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Signiert von {signer}; der Inhalt stimmt mit dem Signierten überein; die Vertrauenswürdigkeit des Unterzeichners wurde nicht geprüft.
 	Signer	Unterzeichner
 	Signer's name	Name des Unterzeichners
+	Signers	Unterzeichner
 	Signing	Signieren
 	Signing time	Signaturzeitpunkt
 	Simplified field notation:	Vereinfachte Feldschreibweise:
@@ -2264,6 +2277,7 @@ certificate	Subject	Zertifikatsinhaber
 	This document has no tagged figures.	Dieses Dokument enthält keine getaggten Abbildungen.
 	This document has no {kind} to change	Dieses Dokument hat keine Elemente vom Typ „{kind}“ zum Ändern
 	This document hasn't been checked yet.	Dieses Dokument wurde noch nicht geprüft.
+	This document is not inside a CAdES envelope	Dieses Dokument liegt nicht in einem CAdES-Signaturumschlag.
 	This document is secured. Some changes are restricted by its security settings.	Dieses Dokument ist geschützt. Einige Änderungen sind durch seine Sicherheitseinstellungen eingeschränkt.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	dieses Dokument ist signiert: Ein Neuschreiben würde seine Signaturen ungültig machen (speichere es stattdessen inkrementell)
 	This document is trying to open a local file:	Dieses Dokument versucht, eine lokale Datei zu öffnen:
@@ -2524,6 +2538,7 @@ document scrollbar width	Wide	Breit
 	{n} word(s) or phrase(s)	Wörter oder Ausdrücke: {n}
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} – {status}
+	{signers} signers; details of the first are shown	{signers} Unterzeichner; die Details des ersten werden angezeigt
 	{s} action	Aktion „{s}“
 	{verb} as "{name}"	{verb} als „{name}“
 	{verb} Background	Hintergrund: {verb}

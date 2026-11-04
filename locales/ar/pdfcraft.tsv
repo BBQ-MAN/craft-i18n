@@ -326,6 +326,7 @@ certificate	Basic constraints	القيود الأساسية
 	Button Style:	نمط الزر:
 	Buttons with the same name and value are selected in unison	الأزرار ذات الاسم والقيمة نفسيهما تُحدَّد معًا
 	Bytes	بايت
+	CAdES signature envelope	مغلف توقيع CAdES
 	Calculation order	ترتيب الحساب
 	Calibrate from two points	المعايرة من نقطتين
 	Calibrate screen	معايرة الشاشة
@@ -519,6 +520,7 @@ certificate	Basic constraints	القيود الأساسية
 	Couldn't create a PDF: {e}	تعذّر إنشاء ملف PDF: {e}
 	Couldn't download {name}: {e}	تعذّر تنزيل {name}: {e}
 	Couldn't extract pages: {e}	تعذّر استخراج الصفحات: {e}
+	Couldn't extract the original PDF: {e}	تعذّر استخراج ملف PDF الأصلي: {e}
 	Couldn't fit the visible content: {e}	تعذّرت ملاءمة المحتوى المرئي: {e}
 	Couldn't follow linked PDF: {reason}	تعذّر فتح ملف PDF المرتبط: {reason}
 	Couldn't import the signature image: {e}	تعذّر استيراد صورة التوقيع: {e}
@@ -718,6 +720,7 @@ key	Delete	Delete
 	Document title is showing in title bar	عنوان المستند يظهر في شريط العنوان
 	Documents and view	المستندات والعرض
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	المستندات التي تزيد على 20 صفحة تحتاج إلى إشارات مرجعية للتنقل. أضف إشارات مرجعية للأقسام الرئيسية.
+	Does not match what was signed	لا يطابق ما تم توقيعه
 	Don't save	عدم الحفظ
 	Don't show again	عدم الإظهار مرة أخرى
 	Done adding text	إنهاء إضافة النص
@@ -881,6 +884,7 @@ key	Esc	Esc
 	Extract pages as separate files	استخراج الصفحات كملفات منفصلة
 	Extract pages to a new document	استخراج الصفحات إلى مستند جديد
 	Extract pages…	استخراج صفحات…
+	Extract the original PDF…	استخراج ملف PDF الأصلي…
 	Extract the selected pages…	استخراج الصفحات المحددة…
 	Extracted 1 page	استُخرجت صفحة واحدة
 	Extracted {n} pages	استُخرجت {n} صفحات
@@ -1122,6 +1126,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	نوع التثبيت غير معروف أو أن هذا إصدار تطويري. اختر حزمة من صفحة الإصدار الرسمية.
 	Installed fonts…	الخطوط المثبتة…
 	Installed version: {v}	الإصدار المثبّت: {v}
+	Integrity	السلامة
 	Intended usage	الاستخدام المقصود
 certificate	Intended usage	الاستخدام المقصود
 	Interface font	خط الواجهة
@@ -1260,6 +1265,7 @@ calendar date	March	مارس
 	Mask:	القناع:
 	Match field sizes	مطابقة أحجام الحقول
 	Match page at 100%	مطابقة الورق للصفحة بنسبة 100%
+	Matches what was signed	يطابق ما تم توقيعه
 	maximum	الحد الأقصى
 	May	مايو
 calendar date	May	مايو
@@ -1501,6 +1507,7 @@ animation effects	On	مفعّلة
 	Open this web page?	هل تريد فتح صفحة الويب هذه؟
 	Open to page	الفتح على الصفحة
 	open to see what it will include	افتح لترى ما سيتضمنه
+	Opened from a CAdES signature envelope — read-only.	فُتح من مغلف توقيع CAdES — للقراءة فقط.
 	Opened with	فُتح بـ
 	Opened, but its security settings don't allow combining. Enter the permissions password.	فُتح، لكن إعدادات أمانه لا تسمح بالدمج. أدخل كلمة مرور الأذونات.
 	Opening the browser's print dialog…	جارٍ فتح مربع حوار الطباعة في المتصفح…
@@ -1714,6 +1721,7 @@ animation effects	On	مفعّلة
 	Public key	المفتاح العام
 certificate	Public key	المفتاح العام
 	PushButton	زر ضغط
+	Quirks	ملاحظات خاصة
 	Quit PdfCraft	إنهاء PdfCraft
 	Radio	زر اختيار
 	Radio button	زر اختيار
@@ -2113,8 +2121,13 @@ key	Shift	Shift
 	Signatures panel	لوحة التوقيعات
 	Signed and all signatures are valid.	موقَّع وكل التوقيعات صالحة.
 	Signed and saved to {path}	تم التوقيع والحفظ في {path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	وقّعه {signer} في {time}؛ المحتوى لا يطابق ما تم توقيعه؛ لم يُتحقق من ثقة الموقِّع.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	وقّعه {signer} في {time}؛ المحتوى يطابق ما تم توقيعه؛ لم يُتحقق من ثقة الموقِّع.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	وقّعه {signer}؛ المحتوى لا يطابق ما تم توقيعه؛ لم يُتحقق من ثقة الموقِّع.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	وقّعه {signer}؛ المحتوى يطابق ما تم توقيعه؛ لم يُتحقق من ثقة الموقِّع.
 	Signer	الموقِّع
 	Signer's name	اسم الموقّع
+	Signers	الموقِّعون
 	Signing	التوقيع
 	Signing time	وقت التوقيع
 	Signing time is from the clock on the signer's computer.	وقت التوقيع من ساعة حاسوب الموقّع.
@@ -2428,6 +2441,7 @@ calendar weekday	Th	خميس
 	This document has not been modified since this signature was applied.	لم يُعدَّل المستند منذ تطبيق هذا التوقيع.
 	This document has not been modified since this timestamp was applied.	لم يُعدَّل المستند منذ تطبيق هذا الطابع الزمني.
 	This document hasn't been checked yet.	لم يُفحص هذا المستند بعد.
+	This document is not inside a CAdES envelope	هذا المستند ليس داخل مغلف توقيع CAdES.
 	This document is secured. Some changes are restricted by its security settings.	هذا المستند مؤمَّن. بعض التغييرات مقيدة بإعدادات أمانه.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	هذا المستند موقَّع: إعادة كتابته ستبطل توقيعاته (احفظه حفظًا تزايديًا بدلًا من ذلك)
 	This document is trying to open a local file:	يحاول هذا المستند فتح ملف محلي:
@@ -2712,6 +2726,7 @@ document scrollbar width	Wide	عريض
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} ليس رقم صفحة أو تسمية
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	عدد الموقِّعين {signers}؛ تظهر تفاصيل الأول منهم
 	{s} action	إجراء {s}
 	{ty} element on page {p}: {what}	عنصر {ty} في الصفحة {p}: {what}
 	{ty} element: {what}	عنصر {ty}: {what}

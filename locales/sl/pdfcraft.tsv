@@ -314,6 +314,7 @@
 	Button Style:	Slog gumba:
 	Buttons with the same name and value are selected in unison	Izbirni gumbi z istim imenom in vrednostjo se izberejo hkrati
 	Bytes	Bajti
+	CAdES signature envelope	Ovoj podpisa CAdES
 	Calculation order	Vrstni red izračunov
 	Calibrate from two points	Umeri z dvema točkama
 	Calibrate screen	Umeri zaslon
@@ -495,6 +496,7 @@
 	Couldn't create a PDF: {e}	PDF-ja ni bilo mogoče ustvariti: {e}
 	Couldn't download {name}: {e}	Datoteke {name} ni bilo mogoče prenesti: {e}
 	Couldn't extract pages: {e}	Strani ni bilo mogoče izvleči: {e}
+	Couldn't extract the original PDF: {e}	Izvornega PDF-ja ni bilo mogoče izvleči: {e}
 	Couldn't fit the visible content: {e}	Vidne vsebine ni bilo mogoče prilagoditi: {e}
 	Couldn't follow linked PDF: {reason}	Povezanega PDF-ja ni bilo mogoče odpreti: {reason}
 	Couldn't import the signature image: {e}	Slike podpisa ni bilo mogoče uvoziti: {e}
@@ -678,6 +680,7 @@ key	Delete	Delete
 	Document title is showing in title bar	Naslov dokumenta je prikazan v naslovni vrstici
 	Documents and view	Dokumenti in pogled
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Dokumenti z več kot 20 stranmi potrebujejo zaznamke za navigacijo. Dodajte zaznamke za glavne razdelke.
+	Does not match what was signed	Se ne ujema s podpisanim
 	Don't save	Ne shrani
 	Don't show again	Ne prikaži več
 	Done adding text	Dodajanje besedila končano
@@ -835,6 +838,7 @@ key	Esc	Esc
 	Extract pages as separate files	Izvleci strani kot ločene datoteke
 	Extract pages to a new document	Izvleci strani v nov dokument
 	Extract pages…	Izvleci strani…
+	Extract the original PDF…	Izvleci izvorni PDF…
 	Extract the selected pages…	Izvleci izbrane strani…
 	Extracted 1 page	Izvlečena je 1 stran
 	Extracted {n} pages	Izvlečenih strani: {n}
@@ -1063,6 +1067,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	Vrsta namestitve ni znana ali pa gre za razvojno različico. Izberite paket na uradni strani izdaj.
 	Installed fonts…	Nameščene pisave…
 	Installed version: {v}	Nameščena različica: {v}
+	Integrity	Celovitost
 	Intended usage	Predvidena uporaba
 	Interface font	Pisava vmesnika
 	Interface size	Velikost vmesnika
@@ -1187,6 +1192,7 @@ key	Home	Home
 	Mask:	Maska:
 	Match field sizes	Uskladi velikosti polj
 	Match page at 100%	Prilagodi strani pri 100 %
+	Matches what was signed	Se ujema s podpisanim
 	maximum	največ
 	May	Maj
 	Measure area	Izmeri ploščino
@@ -1412,6 +1418,7 @@ animation effects	On	Vklopljeni
 	Open this web page?	Odpreti to spletno stran?
 	Open to page	Odpri na strani
 	open to see what it will include	odprite, da vidite, kaj bo vključeval
+	Opened from a CAdES signature envelope — read-only.	Odprto iz ovoja podpisa CAdES — samo za branje.
 	Opened with	Odprto z
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Odprto, vendar njegove varnostne nastavitve ne dovoljujejo združevanja. Vnesite geslo za dovoljenja.
 	Opening the browser's print dialog…	Odpiranje pogovornega okna za tiskanje v brskalniku…
@@ -1610,6 +1617,7 @@ animation effects	On	Vklopljeni
 	Protected: the combined file won't keep its security settings	Zaščiteno: združena datoteka ne bo obdržala varnostnih nastavitev
 	Public key	Javni ključ
 	PushButton	Potisni gumb
+	Quirks	Posebnosti
 	Quit PdfCraft	Končaj PdfCraft
 	Radio	Izbirni gumb
 	Radio button	Izbirni gumb
@@ -1987,8 +1995,13 @@ key	Shift	Shift
 	Signatures panel	Razdelek s podpisi
 	Signed and all signatures are valid.	Podpisano in vsi podpisi so veljavni.
 	Signed and saved to {path}	Podpisano in shranjeno v {path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Podpisano: {signer} {time}; vsebina se ne ujema s podpisanim; zaupanje podpisniku ni bilo preverjeno.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Podpisano: {signer} {time}; vsebina se ujema s podpisanim; zaupanje podpisniku ni bilo preverjeno.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Podpisano: {signer}; vsebina se ne ujema s podpisanim; zaupanje podpisniku ni bilo preverjeno.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Podpisano: {signer}; vsebina se ujema s podpisanim; zaupanje podpisniku ni bilo preverjeno.
 	Signer	Podpisnik
 	Signer's name	Ime podpisnika
+	Signers	Podpisniki
 	Signing	Podpisovanje
 	Signing time	Čas podpisa
 	Simplified field notation:	Poenostavljen zapis polj:
@@ -2232,6 +2245,7 @@ certificate	Subject	Imetnik
 	This document has no tagged figures.	Ta dokument nima označenih slik.
 	This document has no {kind} to change	Ta dokument nima ničesar za spremembo: {kind}
 	This document hasn't been checked yet.	Ta dokument še ni bil preverjen.
+	This document is not inside a CAdES envelope	Ta dokument ni znotraj ovoja podpisa CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Ta dokument je zaščiten. Nekatere spremembe so omejene zaradi varnostnih nastavitev.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	ta dokument je podpisan: prepis bi razveljavil njegove podpise (namesto tega ga shranite inkrementalno)
 	This document is trying to open a local file:	Ta dokument poskuša odpreti lokalno datoteko:
@@ -2495,6 +2509,7 @@ document scrollbar width	Wide	Široka
 	{n} word(s) or phrase(s)	Besed ali besednih zvez: {n}
 	{n} {kind}	{kind}: {n}
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	Podpisnikov: {signers}; prikazane so podrobnosti prvega
 	{s} action	Dejanj: {s}
 	{verb} as "{name}"	{verb} kot „{name}“
 	{verb} Background	Ozadje: {verb}

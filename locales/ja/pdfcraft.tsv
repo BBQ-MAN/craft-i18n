@@ -334,6 +334,7 @@
 	Button Style:	ボタンの形状:
 	Buttons with the same name and value are selected in unison	同じ名前と値を持つボタンを連動して選択
 	Bytes	バイト数
+	CAdES signature envelope	CAdES署名エンベロープ
 	Calculation order	計算順序
 	Calibrate from two points	2点で校正
 	Calibrate screen	画面のキャリブレーション
@@ -542,6 +543,7 @@
 	Couldn't create a PDF: {e}	PDF を作成できませんでした: {e}
 	Couldn't download {name}: {e}	{name} をダウンロードできませんでした: {e}
 	Couldn't extract pages: {e}	ページを抽出できませんでした: {e}
+	Couldn't extract the original PDF: {e}	元のPDFを抽出できませんでした: {e}
 	Couldn't fit the visible content: {e}	表示内容に合わせられませんでした: {e}
 	Couldn't follow linked PDF: {reason}	リンク先の PDF を開けませんでした: {reason}
 	Couldn't import the signature image: {e}	署名画像を読み込めませんでした: {e}
@@ -743,6 +745,7 @@ key	Delete	Delete
 	Document title is showing in title bar	タイトルバーに文書タイトルが表示されています
 	Documents and view	文書と表示
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	20 ページを超える文書には移動用のしおりが必要です。主要なセクションにしおりを追加してください。
+	Does not match what was signed	署名されたものと一致していません
 	Don't save	保存しない
 	Don't show again	今後表示しない
 	Done adding text	テキストの追加を完了
@@ -907,6 +910,7 @@ key	Esc	Esc
 	Extract pages as separate files	ページを個別ファイルとして抽出
 	Extract pages to a new document	新しい文書にページを抽出
 	Extract pages…	ページを抽出…
+	Extract the original PDF…	元のPDFを抽出…
 	Extract the selected pages…	選択したページを抽出…
 	Extracted 1 page	1 ページを抽出しました
 	Extracted {n} pages	{n} ページを抽出しました
@@ -1150,6 +1154,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	インストール形式が不明か、開発版です。公式リリースページからパッケージを選んでください。
 	Installed fonts…	インストール済みフォント…
 	Installed version: {v}	インストール済みのバージョン: {v}
+	Integrity	整合性
 	Intended usage	使用目的
 	Interface font	インターフェースのフォント
 	Interface size	表示サイズ
@@ -1285,6 +1290,7 @@ key	Home	Home
 	Mask:	マスク:
 	Match field sizes	フィールドのサイズを揃える
 	Match page at 100%	ページに合わせて100%に設定
+	Matches what was signed	署名されたものと一致しています
 	maximum	最大値
 	May	5月
 	Measure 3D	3Dを測定
@@ -1528,6 +1534,7 @@ animation effects	On	オン
 	Open this web page?	このウェブページを開きますか？
 	Open to page	開始ページ
 	open to see what it will include	開くと予定されている機能を確認できます
+	Opened from a CAdES signature envelope — read-only.	CAdES署名エンベロープから開いています — 読み取り専用。
 	Opened with	使用したパスワード
 	Opened, but its security settings don't allow combining. Enter the permissions password.	開けましたが、セキュリティ設定により結合が許可されていません。権限パスワードを入力してください。
 	Opening the browser's print dialog…	ブラウザーの印刷ダイアログを開いています…
@@ -1735,6 +1742,7 @@ animation effects	On	オン
 	Public key	公開鍵
 	PushButton	プッシュボタン
 	Quantity	測定する量
+	Quirks	特記事項
 	Quit PdfCraft	PdfCraft を終了
 	Radio	ラジオボタン
 	Radio button	ラジオボタン
@@ -2143,8 +2151,13 @@ key	Shift	Shift
 	Signatures panel	署名パネル
 	Signed and all signatures are valid.	署名済みで、すべての署名が有効です。
 	Signed and saved to {path}	署名して {path} に保存しました
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	{signer} が {time} に署名しました。内容は署名されたものと一致していません。署名者の信頼性は確認されていません。
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	{signer} が {time} に署名しました。内容は署名されたものと一致しています。署名者の信頼性は確認されていません。
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	{signer} が署名しました。内容は署名されたものと一致していません。署名者の信頼性は確認されていません。
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	{signer} が署名しました。内容は署名されたものと一致しています。署名者の信頼性は確認されていません。
 	Signer	署名者
 	Signer's name	署名者名
+	Signers	署名者の数
 	Signing	署名
 	Signing time	署名日時
 	Silhouettes	輪郭
@@ -2404,6 +2417,7 @@ document scrollbar width	Standard	標準
 	This document has no tagged figures.	この文書にはタグ付きの図がありません。
 	This document has no {kind} to change	この文書に変更する{kind}はありません
 	This document hasn't been checked yet.	この文書はまだチェックされていません。
+	This document is not inside a CAdES envelope	この文書はCAdES署名エンベロープの内部にありません。
 	This document is secured. Some changes are restricted by its security settings.	この文書は保護されています。セキュリティ設定により一部の変更が制限されています。
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	この文書は署名済みです。書き直すと署名が無効になります（代わりに増分保存してください）
 	This document is trying to open a local file:	この文書はローカルファイルを開こうとしています：
@@ -2689,6 +2703,7 @@ document scrollbar width	Wide	太い
 	{n} word(s) or phrase(s)	{n} 件の単語または語句
 	{n} {kind}	{kind}: {n}
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	署名者は {signers} 人です。先頭の署名者の詳細を表示しています。
 	{s} action	{s} アクション
 	{verb} as "{name}"	「{name}」として{verb}
 	{verb} Background	背景を{verb}

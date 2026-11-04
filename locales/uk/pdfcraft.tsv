@@ -323,6 +323,7 @@ calendar date	August	серпня
 	Button Style:	Стиль кнопки:
 	Buttons with the same name and value are selected in unison	Кнопки з однаковими назвою й значенням вибираються разом
 	Bytes	Байти
+	CAdES signature envelope	Конверт підпису CAdES
 	Calculation order	Порядок обчислень
 	Calibrate from two points	Калібрувати за двома точками
 	Calibrate screen	Калібрування екрана
@@ -508,6 +509,7 @@ calendar date	August	серпня
 	Couldn't create a PDF: {e}	Не вдалося створити PDF: {e}
 	Couldn't download {name}: {e}	Не вдалося завантажити {name}: {e}
 	Couldn't extract pages: {e}	Не вдалося видобути сторінки: {e}
+	Couldn't extract the original PDF: {e}	Не вдалося видобути початковий PDF: {e}
 	Couldn't fit the visible content: {e}	Не вдалося припасувати видимий вміст: {e}
 	Couldn't follow linked PDF: {reason}	Не вдалося відкрити пов’язаний PDF: {reason}
 	Couldn't import the signature image: {e}	Не вдалося імпортувати зображення підпису: {e}
@@ -701,6 +703,7 @@ key	Delete	Delete
 	Document title is showing in title bar	Заголовок документа показано в заголовку вікна
 	Documents and view	Документи й перегляд
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Документи з понад 20 сторінками потребують закладок для навігації. Додайте закладки до основних розділів.
+	Does not match what was signed	Не відповідає підписаному
 	Don't save	Не зберігати
 	Don't show again	Більше не показувати
 	Done adding text	Завершити додавання тексту
@@ -857,6 +860,7 @@ key	Esc	Esc
 	Extract pages as separate files	Видобути сторінки як окремі файли
 	Extract pages to a new document	Видобути сторінки в новий документ
 	Extract pages…	Видобути сторінки…
+	Extract the original PDF…	Видобути початковий PDF…
 	Extract the selected pages…	Витягнути вибрані сторінки…
 	Extracted 1 page	Видобуто 1 сторінку
 	Extracted {n} pages	Видобуто сторінок: {n}
@@ -1088,6 +1092,7 @@ key	Home	Home
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	Тип встановлення невідомий або це збірка для розробки. Виберіть пакет на офіційній сторінці випусків.
 	Installed fonts…	Встановлені шрифти…
 	Installed version: {v}	Встановлена версія: {v}
+	Integrity	Цілісність
 	Intended usage	Призначення
 	Interface font	Шрифт інтерфейсу
 	Interface size	Розмір інтерфейсу
@@ -1223,6 +1228,7 @@ calendar date	March	березня
 	Mask:	Маска:
 	Match field sizes	Задати однакові розміри полів
 	Match page at 100%	Підібрати папір, масштаб 100%
+	Matches what was signed	Відповідає підписаному
 	Maximum	Максимальна
 	maximum	максимум
 	May	Травень
@@ -1455,6 +1461,7 @@ animation effects	On	Увімкнено
 	Open this web page?	Відкрити цю вебсторінку?
 	Open to page	Відкрити на сторінці
 	open to see what it will include	відкрийте, щоб побачити, що він міститиме
+	Opened from a CAdES signature envelope — read-only.	Відкрито з конверта підпису CAdES — лише для читання.
 	Opened with	Відкрито за допомогою
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Відкрито, але налаштування захисту не дозволяють об’єднання. Введіть пароль дозволів.
 	Opening the browser's print dialog…	Відкривається діалог друку браузера…
@@ -1655,6 +1662,7 @@ animation effects	On	Увімкнено
 	Protected: the combined file won't keep its security settings	Захищено: об’єднаний файл не збереже налаштування захисту
 	Public key	Відкритий ключ
 	PushButton	Кнопка
+	Quirks	Особливості
 	Quit PdfCraft	Вийти з PdfCraft
 	Radio	Перемикач
 	Radio button	Перемикач
@@ -2041,8 +2049,13 @@ key	Shift	Shift
 	Signatures panel	Панель підписів
 	Signed and all signatures are valid.	Підписано, і всі підписи дійсні.
 	Signed and saved to {path}	Підписано й збережено в {path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Підписано {signer} {time}; вміст не відповідає підписаному; довіру до підписувача не перевірено.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Підписано {signer} {time}; вміст відповідає підписаному; довіру до підписувача не перевірено.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Підписано {signer}; вміст не відповідає підписаному; довіру до підписувача не перевірено.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Підписано {signer}; вміст відповідає підписаному; довіру до підписувача не перевірено.
 	Signer	Підписувач
 	Signer's name	Ім’я підписувача
+	Signers	Підписувачі
 	Signing	Підпис
 	Signing time	Час підписування
 	Simplified field notation:	Спрощений запис полів:
@@ -2291,6 +2304,7 @@ certificate	Subject	Власник сертифіката
 	This document has no tagged figures.	У цьому документі немає рисунків із тегами.
 	This document has no {kind} to change	У цьому документі немає елемента «{kind}» для зміни
 	This document hasn't been checked yet.	Цей документ ще не перевірено.
+	This document is not inside a CAdES envelope	Цей документ не всередині конверта підпису CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Цей документ захищено. Деякі зміни обмежено налаштуваннями захисту.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	цей документ підписано: перезапис зробить підписи недійсними (натомість збережіть поступово)
 	This document is trying to open a local file:	Цей документ намагається відкрити локальний файл:
@@ -2550,6 +2564,7 @@ document scrollbar width	Wide	Широка
 	{n} word(s) or phrase(s)	Слів або фраз: {n}
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	Підписувачів: {signers}; показано відомості про першого
 	{s} action	Дія: {s}
 	{verb} as "{name}"	{verb} як «{name}»
 	{verb} Background	{verb}: тло

@@ -335,6 +335,7 @@ certificate	Basic constraints	Restricciones básicas
 	Button Style:	Estilo del botón:
 	Buttons with the same name and value are selected in unison	Los botones con el mismo nombre y valor se seleccionan a la vez
 	Bytes	Bytes
+	CAdES signature envelope	Sobre de firma CAdES
 	Calculation order	Orden de cálculo
 	Calibrate from two points	Calibrar a partir de dos puntos
 	Calibrate screen	Calibrar pantalla
@@ -530,6 +531,7 @@ certificate	Basic constraints	Restricciones básicas
 	Couldn't create a PDF: {e}	No se pudo crear un PDF: {e}
 	Couldn't download {name}: {e}	No se pudo descargar {name}: {e}
 	Couldn't extract pages: {e}	No se pudieron extraer las páginas: {e}
+	Couldn't extract the original PDF: {e}	No se pudo extraer el PDF original: {e}
 	Couldn't fit the visible content: {e}	No se pudo ajustar al contenido visible: {e}
 	Couldn't follow linked PDF: {reason}	No se pudo abrir el PDF vinculado: {reason}
 	Couldn't import the signature image: {e}	No se pudo importar la imagen de la firma: {e}
@@ -737,6 +739,7 @@ key	Delete	Supr
 	Document title is showing in title bar	El título del documento se muestra en la barra de título
 	Documents and view	Documentos y vista
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Los documentos de más de 20 páginas necesitan marcadores para navegar. Añade marcadores para las secciones principales.
+	Does not match what was signed	No coincide con lo firmado
 	Don't save	No guardar
 	Don't show again	No volver a mostrar
 	Done	Hecho
@@ -904,6 +907,7 @@ key	Esc	Esc
 	Extract pages as separate files	Extraer las páginas como archivos independientes
 	Extract pages to a new document	Extraer páginas a un documento nuevo
 	Extract pages…	Extraer páginas…
+	Extract the original PDF…	Extraer el PDF original…
 	Extract the selected pages…	Extraer las páginas seleccionadas…
 	Extracted 1 page	Se ha extraído 1 página
 	Extracted {n} pages	Se han extraído {n} páginas
@@ -1147,6 +1151,7 @@ key	Home	Inicio
 	Installation type is unknown or this is a development build. Choose a package on the official release page.	El tipo de instalación es desconocido o se trata de una versión de desarrollo. Elige un paquete en la página oficial de versiones.
 	Installed fonts…	Fuentes instaladas…
 	Installed version: {v}	Versión instalada: {v}
+	Integrity	Integridad
 	Intended usage	Uso previsto
 certificate	Intended usage	Uso previsto
 	Interface font	Fuente de la interfaz
@@ -1285,6 +1290,7 @@ calendar date	March	marzo
 	Mask:	Máscara:
 	Match field sizes	Igualar el tamaño de los campos
 	Match page at 100%	Ajustar el papel a la página al 100 %
+	Matches what was signed	Coincide con lo firmado
 	Maximum	Máxima
 	maximum	el máximo
 	May	mayo
@@ -1536,6 +1542,7 @@ animation effects	On	Activados
 	Open this web page?	¿Abrir esta página web?
 	Open to page	Abrir en la página
 	open to see what it will include	abre para ver qué incluirá
+	Opened from a CAdES signature envelope — read-only.	Abierto desde un sobre de firma CAdES — solo lectura.
 	Opened with	Abierto con
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Se abrió, pero su configuración de seguridad no permite combinarlo. Introduce la contraseña de permisos.
 	Opening the browser's print dialog…	Abriendo el diálogo de impresión del navegador…
@@ -1755,6 +1762,7 @@ animation effects	On	Activados
 certificate	Public key	Clave pública
 	Purple	Morado
 	PushButton	Botón
+	Quirks	Particularidades
 	Quit PdfCraft	Salir de PdfCraft
 	Radio	Botón de opción
 	Radio button	Botón de opción
@@ -2163,8 +2171,13 @@ key	Shift	Mayús
 	Signatures panel	Panel de firmas
 	Signed and all signatures are valid.	Firmado y todas las firmas son válidas.
 	Signed and saved to {path}	Firmado y guardado en {path}
+	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Firmado por {signer} el {time}; el contenido no coincide con lo firmado; no se ha comprobado la confianza del firmante.
+	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Firmado por {signer} el {time}; el contenido coincide con lo firmado; no se ha comprobado la confianza del firmante.
+	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Firmado por {signer}; el contenido no coincide con lo firmado; no se ha comprobado la confianza del firmante.
+	Signed by {signer}; the content matches what was signed; the signer's trust was not checked.	Firmado por {signer}; el contenido coincide con lo firmado; no se ha comprobado la confianza del firmante.
 	Signer	Firmante
 	Signer's name	Nombre del firmante
+	Signers	Firmantes
 	Signing time	Hora de la firma
 	Signing time is from the clock on the signer's computer.	La hora de la firma es la del reloj del ordenador del firmante.
 	Simplified field notation:	Notación de campos simplificada:
@@ -2487,6 +2500,7 @@ calendar weekday	Th	Ju
 	This document has not been modified since this signature was applied.	Este documento no se ha modificado desde que se aplicó esta firma.
 	This document has not been modified since this timestamp was applied.	Este documento no se ha modificado desde que se aplicó este sello de tiempo.
 	This document hasn't been checked yet.	Este documento todavía no se ha comprobado.
+	This document is not inside a CAdES envelope	Este documento no está dentro de un sobre de firma CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Este documento está protegido. Su configuración de seguridad restringe algunos cambios.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	este documento está firmado: reescribirlo invalidaría sus firmas (guárdalo de forma incremental)
 	This document is trying to open a local file:	Este documento intenta abrir un archivo local:
@@ -2772,6 +2786,7 @@ document scrollbar width	Wide	Ancha
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} no es un número ni una etiqueta de página
 	{rule} - {status}	{rule} - {status}
+	{signers} signers; details of the first are shown	{signers} firmantes; se muestran los detalles del primero
 	{s} action	Acción {s}
 	{ty} element on page {p}: {what}	Elemento {ty} de la página {p}: {what}
 	{ty} element: {what}	Elemento {ty}: {what}
