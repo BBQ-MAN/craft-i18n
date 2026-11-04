@@ -36,8 +36,11 @@
 	4 x 6 in label (101.6 x 152.4 mm)	Nhãn 4 × 6 in (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 chữ số, A chữ cái, O chữ cái hoặc chữ số, X ký tự bất kỳ
 	; 1 page already had text	; 1 trang đã có văn bản
+	; 1 page skipped	; đã bỏ qua 1 trang
+	; corrected {n} pages	; đã chỉnh sửa {n} trang
 	; failed: {list}	; thất bại: {list}
 	; {n} pages already had text	; {n} trang đã có văn bản
+	; {n} pages skipped	; đã bỏ qua {n} trang
 	? of {n}	? trên {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} commit, +{added} / −{deleted} dòng (Δ {delta}), +{bin_added} / −{bin_deleted} tài nguyên nhị phân, {first} – {last}
 	`{command}` {when}	`{command}` {when}
@@ -48,6 +51,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	Hình mờ CONFIDENTIAL nằm chéo trên mọi trang.
 	a document must keep at least one page	tài liệu phải giữ ít nhất một trang
 	A document needs at least one page: copy instead	Một tài liệu cần ít nhất một trang: hãy sao chép thay vào đó
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Dấu thời gian của tài liệu bao trùm toàn bộ tệp và không phải chữ ký của ai, nên không thể gỡ riêng.
 	a field named {name} already exists	đã có trường tên {name}
 	A font isn't embedded	Một phông chữ chưa được nhúng
 	A form field has additional actions	Một trường biểu mẫu có các hành động bổ sung
@@ -57,6 +61,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Một tệp PNG hoặc SVG. Tệp được đọc từ vị trí này mỗi lần PdfCraft khởi động.
 	A script	Một script
 	A selected field has no widget on any page, so the fields can't be edited together.	Một trường đã chọn không có widget trên trang nào, nên các trường không thể được chỉnh sửa cùng nhau.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Chữ ký là một phần nội dung của trang, ví dụ trên trang được quét, không phải là trường hay chú thích nên không thể gỡ riêng, và PdfCraft không xóa một phần trang để che nó. Để bỏ nó đi, hãy xóa nội dung nhạy cảm ở vùng đó (Xóa nội dung nhạy cảm), hoặc nếu chữ ký là một hình ảnh riêng thì xóa hình ảnh bằng Chỉnh sửa một PDF.
 	A stream refers to an external file	Một luồng tham chiếu đến tệp bên ngoài
 	A stream uses LZW compression	Một luồng dùng nén LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Phần tóm tắt mô tả mục đích và bố cục của bảng. Hãy thêm thuộc tính Summary cho mỗi bảng.
@@ -105,12 +110,14 @@
 	Add an Action	Thêm hành động
 	Add an image field	Thêm một trường hình ảnh
 	Add arrow	Thêm mũi tên
+	Add at least one recipient.	Hãy thêm ít nhất một người nhận.
 	Add at least two files	Thêm ít nhất hai tệp
 	Add background	Thêm nền
 	Add background…	Thêm nền…
 	Add Bates numbering…	Thêm đánh số Bates…
 	Add bookmark	Thêm dấu trang
 	Add callout	Thêm khung chú thích
+	Add certificate file…	Thêm tệp chứng chỉ…
 	Add checkmark	Thêm dấu kiểm
 	Add circle	Thêm hình tròn
 	Add cloud	Thêm đám mây
@@ -150,6 +157,7 @@
 	Add rectangle	Thêm hình chữ nhật
 	Add redaction mark	Thêm dấu đánh dấu xóa
 	Add search index	Thêm chỉ mục tìm kiếm
+	Add searchable text	Thêm văn bản có thể tìm kiếm
 	Add signature	Thêm chữ ký
 	Add squiggly underline	Thêm gạch chân lượn sóng
 	Add stamp	Thêm con dấu
@@ -163,11 +171,13 @@
 	Add the files to combine	Thêm các tệp cần kết hợp
 	Add the PDFs to combine	Thêm các PDF cần kết hợp
 	Add the steps this action runs, in order.	Thêm các bước mà hành động này chạy, theo thứ tự.
+	Add to dictionary	Thêm vào từ điển
 	Add to Trusted Certificates	Thêm vào Chứng chỉ tin cậy
 	Add to trusted certificates	Thêm vào chứng chỉ tin cậy
 	Add underline	Thêm gạch chân
 	Add watermark	Thêm hình mờ
 	Add watermark…	Thêm hình mờ…
+	Add your digital ID	Thêm Digital ID của bạn
 	Add {what}	Thêm {what}
 	Added 1 comment	Đã thêm 1 bình luận
 	Added more than once	Đã thêm nhiều lần
@@ -183,6 +193,7 @@
 	Advanced Options {chevron}	Tùy chọn nâng cao {chevron}
 	Advanced search…	Tìm nâng cao…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Sau khi bấm Ký, nhập mã OTT từ ứng dụng mSzafir vào cửa sổ CloudSigner và phê duyệt chữ ký trong ứng dụng. Khi bật mã OTT cố định của CloudSigner, mã chỉ được hỏi vài phút một lần.
+	AI Assistant	Trợ lý AI
 	AI assistant	Trợ lý AI
 	Algorithm	Thuật toán
 	Align fields	Căn chỉnh các trường
@@ -198,6 +209,7 @@
 	All page content is tagged	Tất cả nội dung trang đã được gắn thẻ
 	All pages in document	Tất cả các trang trong tài liệu
 	All pages in range	Tất cả các trang trong phạm vi
+	All permissions	Mọi quyền
 	All tools	Tất cả công cụ
 	Allow	Cho phép
 	Allow Rich Text Formatting	Cho phép định dạng văn bản phong phú
@@ -279,6 +291,7 @@ calendar date	August	tháng 8
 	Auto-detect	Tự động phát hiện
 	Auto-rotate pages	Tự động xoay trang
 	Auto-size text to fit redaction region	Tự động chỉnh cỡ chữ vừa vùng xóa
+	Automatically rotate sideways and upside-down pages	Tự động xoay các trang nằm ngang hoặc bị lật ngược
 	Automatically tag PDF	Tự động gắn thẻ PDF
 	Available version: {v}	Phiên bản có sẵn: {v}
 	average	trung bình
@@ -344,10 +357,13 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Center vertically	Căn giữa theo chiều dọc
 	Center window on screen	Căn giữa cửa sổ trên màn hình
 	Centre	Giữa
+	Certificate	Chứng chỉ
 	Certificate authority	Tổ chức chứng thực
+	Certificate encryption will be applied when you save	Mã hóa bằng chứng chỉ sẽ được áp dụng khi bạn lưu
 	Certificate Signing	Ký chứng chỉ
 	Certificate Viewer	Trình xem chứng chỉ
 	Certificates	Chứng chỉ
+	Certification signature (level {p})	Chữ ký chứng nhận (mức {p})
 	Certified by {by}	Được chứng nhận bởi {by}
 	Certify	Chứng nhận
 	Certify (invisible signature)	Chứng nhận (chữ ký ẩn)
@@ -391,6 +407,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Check for accessibility…	Kiểm tra trợ năng…
 	Check for updates…	Kiểm tra bản cập nhật…
 	Check spelling	Kiểm tra chính tả
+	Check spelling while typing	Kiểm tra chính tả khi nhập
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Hãy kiểm tra rằng các thẻ được đọc theo thứ tự mà người đọc nhìn thấy được sẽ đọc. Dùng công cụ Thứ tự đọc hoặc bảng Thẻ để sửa.
 	Check the pages	Kiểm tra các trang
 	Check the pages of {name}: {why}	Kiểm tra các trang của {name}: {why}
@@ -402,6 +419,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Checking Options ({on} of 32 in all categories)	Tùy chọn kiểm tra ({on} trên 32 ở tất cả danh mục)
 	Checking pages…	Đang kiểm tra các trang…
 	Checkmark	Dấu kiểm
+	Choose a digital ID file	Chọn tệp Digital ID
 	Choose a digital ID.	Chọn một Digital ID.
 	Choose a file…	Chọn một tệp…
 	Choose a folder for the exported files	Chọn thư mục cho các tệp đã xuất
@@ -415,18 +433,22 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Choose a logo	Chọn một logo
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Chọn ảnh PNG hoặc JPEG (tối đa 4 MiB). Độ trong suốt được giữ nguyên.
 	Choose a provider.	Hãy chọn một nhà cung cấp.
+	Choose a signature that can be removed.	Hãy chọn một chữ ký có thể gỡ.
 	Choose a stamp, then click on the page to place it.	Chọn một con dấu, sau đó bấm vào trang để đặt.
 	Choose an image	Chọn một hình ảnh
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Hãy chọn tệp khác: bản gốc được giữ nguyên, còn phiên bản không có chữ ký được lưu bên cạnh.
 	Choose images	Chọn hình ảnh
 	Choose image…	Chọn hình ảnh…
 	Choose photo…	Chọn ảnh…
 	Choose the digital ID that you want to use for signing:	Chọn Digital ID mà bạn muốn dùng để ký:
 	Choose the module's library file.	Hãy chọn tệp thư viện của mô-đun.
+	Choose the signature to remove:	Chọn chữ ký cần gỡ:
 	Choose where to save the signed file. The service signs it once you have.	Hãy chọn nơi lưu tệp đã ký. Dịch vụ sẽ ký ngay sau khi bạn chọn.
 	Clean Up	Dọn dẹp
 	Clean-up	Dọn dẹp
 	Clear all	Xóa tất cả
 	Clear form	Xóa dữ liệu biểu mẫu
+	Clear personal dictionary	Xóa từ điển cá nhân
 	Clear redaction marks	Xóa các dấu đánh dấu
 	Clear search	Xóa tìm kiếm
 	Clear selection / close find	Bỏ chọn / đóng tìm
@@ -527,6 +549,8 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Copyright status	Trạng thái bản quyền
 	Copyrighted	Có bản quyền
 	Correct recognized text	Sửa văn bản đã nhận dạng
+	Correct scans	Chỉnh sửa bản quét
+	Corrected scan	Bản quét đã chỉnh sửa
 	Could not copy the selection because text could not be read on every page	Không thể sao chép vùng chọn vì không đọc được văn bản trên tất cả các trang
 	Could not mark the selection because text could not be read on every page	Không thể đánh dấu vùng chọn vì không đọc được văn bản trên tất cả các trang
 	Could not save: {e}	Không thể lưu: {e}
@@ -535,6 +559,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Couldn't copy the image: {e}	Không thể sao chép hình ảnh: {e}
 	Couldn't create a PDF: {e}	Không thể tạo PDF: {e}
 	Couldn't download {name}: {e}	Không thể tải xuống {name}: {e}
+	Couldn't encrypt: {e}	Không thể mã hóa: {e}
 	Couldn't extract pages: {e}	Không thể trích xuất trang: {e}
 	Couldn't extract the original PDF: {e}	Không thể trích xuất PDF gốc: {e}
 	Couldn't fit the visible content: {e}	Không thể làm vừa nội dung hiển thị: {e}
@@ -605,6 +630,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Crop image	Cắt hình ảnh
 	Crop page	Cắt xén trang
 	Crop pages	Cắt xén trang
+	Crop scanner borders to the paper edge	Cắt bỏ viền bản quét theo mép giấy
 	Cross	Dấu chéo
 key	Ctrl	Ctrl
 	Currency symbol:	Ký hiệu tiền tệ:
@@ -614,6 +640,7 @@ key	Ctrl	Ctrl
 	Current page — type a page number or label (such as iv) and press Enter	Trang hiện tại — nhập số trang hoặc nhãn (như iv) rồi nhấn Enter
 	Cursor coordinates	Tọa độ con trỏ
 	Custom font	Phông chữ tùy chỉnh
+	Custom page…	Trang tùy chỉnh…
 	Custom scale:	Tỷ lệ tùy chỉnh:
 	Custom size	Kích thước tùy chỉnh
 	Custom stamps arrive on the web with file pickers for images	Con dấu tùy chỉnh sẽ có trên web cùng với bộ chọn tệp hình ảnh
@@ -686,6 +713,7 @@ key	Delete	Delete
 	Diagnostic details	Chi tiết chẩn đoán
 	Digital ID	Digital ID
 	Digital ID password	Mật khẩu Digital ID
+	Digital ID required	Cần Digital ID
 	Digital Signature	Chữ ký số
 	Digital signature	Chữ ký số
 	Digital Signature Properties	Thuộc tính chữ ký số
@@ -733,6 +761,7 @@ key	Delete	Delete
 	document security store	kho bảo mật tài liệu
 	document structure	cấu trúc tài liệu
 	Document structure provides a logical reading order	Cấu trúc tài liệu cung cấp thứ tự đọc hợp lý
+	Document timestamp	Dấu thời gian của tài liệu
 	Document title is showing in title bar	Tiêu đề tài liệu đang hiển thị trên thanh tiêu đề
 	Documents and view	Tài liệu và chế độ xem
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Tài liệu có hơn 20 trang cần dấu trang để điều hướng. Hãy thêm dấu trang cho các phần chính.
@@ -784,6 +813,9 @@ key	Delete	Delete
 	Duplicate field	Nhân bản trường
 	Duplicate page	Nhân bản trang
 	Duplicate pages	Nhân bản trang
+	Duplicate pages with new field names	Nhân bản trang với tên trường mới
+	Duplicate pages — 1 field renamed	Nhân bản trang — 1 trường được đổi tên
+	Duplicate pages — fields renamed	Nhân bản trang — các trường được đổi tên
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Biểu mẫu XFA động được bố trí từ mẫu của nó: {pages}, {fields}.
 	Dynamic zoom	Thu phóng động
 	E-Sign	Ký điện tử
@@ -822,7 +854,11 @@ comment menu	Edit	Sửa
 	Enabled	Đã bật
 	Encipher Only	Chỉ mã hóa
 	Encrypt	Mã hóa
+	Encrypt for recipient	Mã hóa cho người nhận
+	Encrypt for recipients	Mã hóa cho những người nhận
+	Encrypt with Certificate	Mã hóa bằng chứng chỉ
 	Encrypt with certificate	Mã hóa bằng chứng chỉ
+	Encrypt with certificate…	Mã hóa bằng chứng chỉ…
 	Encryption	Mã hóa
 key	End	End
 	End entity	Thực thể cuối
@@ -870,6 +906,7 @@ key	Esc	Esc
 	Expand all tools	Mở rộng tất cả công cụ
 	Expand tag	Mở rộng thẻ
 	Expand top-level bookmarks	Mở rộng các dấu trang cấp cao nhất
+	Expires {date}	Hết hạn {date}
 	Explain	Giải thích
 	Export & Convert	Xuất & Chuyển đổi
 	Export a PDF	Xuất một PDF
@@ -930,6 +967,7 @@ calendar date	February	tháng 2
 	Field properties…	Thuộc tính trường…
 	Field value is in range:	Giá trị trường nằm trong phạm vi:
 	Field value is not validated	Giá trị trường không được kiểm tra hợp lệ
+	Field: {field}	Trường: {field}
 	Field: {field} on page {p}	Trường: {field} trên trang {p}
 	Fields to reset (comma-separated; empty: all)	Các trường cần đặt lại (phân tách bằng dấu phẩy; để trống: tất cả)
 	Figure {i} of {n}{page}	Hình {i} trên {n}{page}
@@ -1046,6 +1084,7 @@ calendar date	February	tháng 2
 calendar weekday	Fr	T6
 	From a PDF page or an image	Từ một trang PDF hoặc một hình ảnh
 	From colour	Từ màu
+	From template	Từ mẫu
 	From {file}	Từ {file}
 	From:	Từ:
 	Front side only	Chỉ mặt trước
@@ -1062,6 +1101,7 @@ calendar weekday	Fr	T6
 	Grayscale Images	Ảnh thang xám
 	Green on black	Xanh lá trên nền đen
 	Greyscale	Thang xám
+	Group select	Chọn nhóm
 	H / Space (hold)	H / Space (giữ)
 	Hand	Bàn tay
 	Hand (H)	Bàn tay (H)
@@ -1157,6 +1197,7 @@ key	Home	Home
 	Integrity	Toàn vẹn
 	Intended usage	Mục đích sử dụng
 certificate	Intended usage	Mục đích sử dụng
+	Interface and appearance	Giao diện và hình thức
 	Interface size	Kích thước giao diện
 	Intersections	Giao điểm
 	Invalid page range	Phạm vi trang không hợp lệ
@@ -1175,6 +1216,7 @@ certificate	Issued by	Cấp bởi
 certificate	Issued to	Cấp cho
 	Issuer	Tổ chức cấp
 certificate	Issuer	Tổ chức cấp
+	it was still in the document afterwards, so the change was undone	sau khi gỡ, chữ ký vẫn còn trong tài liệu nên thay đổi đã được hoàn tác
 	Item List	Danh sách mục
 	Item:	Mục:
 	Items marked Ready work today.	Các mục được đánh dấu Sẵn sàng hoạt động ngay hôm nay.
@@ -1194,6 +1236,7 @@ calendar date	January	tháng 1
 calendar date	July	tháng 7
 	June	Tháng 6
 calendar date	June	tháng 6
+	Keep an empty signature field to sign again	Giữ một trường chữ ký trống để ký lại
 	Keep source fonts	Giữ phông chữ nguồn
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Giữ thanh tiêu đề của Windows phía trên dải tab. Khi tắt, dải tab trở thành thanh tiêu đề, với các nút cửa sổ ở bên phải; Snap Layouts trên nút phóng to cần thanh tiêu đề của Windows.
 	Keep tool selected	Giữ công cụ được chọn
@@ -1209,12 +1252,14 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Landscape and Portrait Pages	Trang ngang và dọc
 	Landscape Pages	Trang ngang
 	Landscape pages	Các trang ngang
+	Language and spelling	Ngôn ngữ và chính tả
 	Larger pages	Trang lớn hơn
 	Larger text	Chữ lớn hơn
 	Larger thumbnails	Tăng kích thước hình thu nhỏ
 	Last page	Trang cuối
 	Later in calculation order	Muộn hơn theo thứ tự tính toán
 	Later in tab order	Muộn hơn theo thứ tự tab
+	Latin (accented)	Chữ Latinh (có dấu)
 	Layer options	Tùy chọn lớp
 	Layers panel	Bảng lớp
 	Layers Panel and Page	Bảng Các lớp và trang
@@ -1443,6 +1488,7 @@ calendar weekday	Mo	T2
 	No preview	Không có bản xem trước
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Không tìm thấy máy in. Kiểm tra xem máy in đã được cài đặt và dịch vụ hàng đợi in đang chạy, rồi mở lại hộp thoại In.
 	No problems found: the document conforms to {level}.	Không tìm thấy vấn đề: tài liệu tuân thủ {level}.
+	No recipients yet.	Chưa có người nhận nào.
 	No release notes were provided.	Không có ghi chú phát hành.
 	No security	Không có bảo mật
 	No sheets	Không có tờ
@@ -1451,6 +1497,7 @@ calendar weekday	Mo	T2
 	No size estimate: {e}	Không có ước tính kích thước: {e}
 	No status has been set.	Chưa đặt trạng thái.
 	no such document	không có tài liệu như vậy
+	No suggestions	Không có gợi ý
 	no summary	không có tóm tắt
 	No tools match your search.	Không có công cụ nào khớp với tìm kiếm.
 	No unlinked web addresses were found in the text	Không tìm thấy địa chỉ web nào chưa được liên kết trong văn bản
@@ -1460,7 +1507,10 @@ calendar weekday	Mo	T2
 	none	không có
 	None (prefix only)	Không có (chỉ tiền tố)
 	None found	Không tìm thấy
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	Không người nhận nào là Digital ID của bạn: bạn sẽ không thể mở tài liệu đã lưu.
+	None of these signatures can be removed.	Không thể gỡ chữ ký nào trong số này.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Không tệp nào trong số đó có thể chuyển thành PDF; hãy dùng PDF, hình ảnh hoặc tệp .txt
+	None of your digital IDs can open this document.	Không Digital ID nào của bạn mở được tài liệu này.
 	None — everything is allowed	Không có — mọi thứ đều được phép
 scroll speed	Normal	Bình thường
 	Not allowed	Không được phép
@@ -1511,11 +1561,14 @@ animation effects	On	Bật
 	One {f} file per page, named after the document.	Mỗi trang một tệp {f}, đặt tên theo tài liệu.
 	One-time code (OTP)	Mã dùng một lần (OTP)
 	Only allow this if you trust the source document.	Chỉ cho phép nếu bạn tin tưởng tài liệu nguồn.
+	Only certificates with RSA keys can be recipients.	Chỉ chứng chỉ có khóa RSA mới có thể là người nhận.
 	Only change the colour of black text or line art	Chỉ đổi màu văn bản hoặc nét vẽ đường màu đen
 	Only checked properties will change. Mixed means the selected fields have different values.	Chỉ các thuộc tính được đánh dấu mới thay đổi. Hỗn hợp nghĩa là các trường đã chọn có giá trị khác nhau.
+	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Chỉ cắt khi xác định rõ mép giấy. Các viền trắng không thể phân biệt sẽ được giữ nguyên.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Chỉ tiếp tục nếu bạn tin cậy tài liệu này. Một địa chỉ có thể mang thông tin từ tài liệu, chẳng hạn những gì bạn đã nhập vào biểu mẫu của nó.
 	Only the document's owner can change its security (open it with the permissions password)	Chỉ chủ sở hữu tài liệu mới có thể thay đổi bảo mật của nó (hãy mở bằng mật khẩu quyền hạn)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Chỉ nội dung trang thay đổi: liên kết, bình luận, trường biểu mẫu và dấu trang trên các trang gốc được giữ nguyên.
+	Only the recipients can open the document, each with the private key of their own certificate.	Chỉ những người nhận mới mở được tài liệu, mỗi người bằng khóa riêng tư của chứng chỉ của mình.
 	Open a document first	Hãy mở một tài liệu trước
 	Open a PDF ({key})	Mở một PDF ({key})
 	Open a PDF (⌘O)	Mở một PDF (⌘O)
@@ -1544,6 +1597,7 @@ animation effects	On	Bật
 	Opened from a detached CAdES signature — read-only.	Đã mở từ một chữ ký CAdES tách rời — chỉ đọc.
 	Opened with	Mở bằng
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Đã mở, nhưng cài đặt bảo mật của nó không cho phép kết hợp. Hãy nhập mật khẩu quyền hạn.
+	Opening documents	Mở tài liệu
 	Opening the browser's print dialog…	Đang mở hộp thoại in của trình duyệt…
 	Opening {name}…	Đang mở {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Mở tùy chọn của trình điều khiển máy in. Các tùy chọn này được lưu cho mọi lần in từ máy tính này; số bản sao, in hai mặt, thang xám và giấy được chọn ở đây vẫn được áp dụng.
@@ -1576,6 +1630,8 @@ animation effects	On	Bật
 	Other elements that require alternate text	Các phần tử khác cần văn bản thay thế
 	Other options	Tùy chọn khác
 	Other provider (CSC API)	Nhà cung cấp khác (CSC API)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Vẫn còn chữ ký khác nên bản sao được lưu như một bản cập nhật của tệp đã ký: chữ ký đã gỡ vẫn nằm trong bản sửa đổi trước và có thể khôi phục từ đó.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Vẫn còn chữ ký khác nên chữ ký đã gỡ vẫn nằm trong bản sửa đổi trước của tệp; hãy xác thực lại các chữ ký còn lại.
 	Outdent	Giảm thụt lề
 	Outline colour:	Màu đường viền:
 	Output appears here.	Đầu ra xuất hiện ở đây.
@@ -1613,6 +1669,7 @@ animation effects	On	Bật
 	Page {n} of {total}	Trang {n} trên {total}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Trang {pages} đã thay đổi sau khi thêm nền, nên lớp tô trắng riêng của nó vẫn tắt. Trên giấy trắng trông vẫn như cũ.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Trang {pages} có lớp tô trắng riêng, sẽ che mất nền. Thay thế
+	Page {p}	Trang {p}
 	Page {p} doesn't tab in structure order	Trang {p} không chuyển tab theo thứ tự cấu trúc
 	Page {p} of {n}	Trang {p} trên {n}
 	Page {p}: {n} untagged content item	Trang {p}: {n} mục nội dung chưa gắn thẻ
@@ -1790,6 +1847,7 @@ certificate	Public key	Khóa công khai
 	Reason: 	Lý do: 
 	Recent colours	Màu gần đây
 	Recent files to keep	Recent files to keep
+	Recipients	Người nhận
 	Recognize scanned text automatically	Tự động nhận dạng văn bản đã quét
 	Recognize Text	Nhận dạng văn bản
 	Recognize text	Nhận dạng văn bản
@@ -1835,6 +1893,7 @@ certificate	Public key	Khóa công khai
 	Remove "{name}" from this list? The certificate stays with the signing service.	Gỡ "{name}" khỏi danh sách này? Chứng chỉ vẫn nằm ở dịch vụ ký.
 	Remove "{name}" from this list? The file itself is not deleted.	Gỡ "{name}" khỏi danh sách này? Bản thân tệp không bị xóa.
 	Remove all links	Gỡ tất cả liên kết
+	Remove and Save As…	Gỡ và lưu thành…
 	Remove background	Gỡ nền
 	Remove checkmark	Bỏ dấu kiểm
 	Remove Crop	Bỏ xén
@@ -1850,6 +1909,10 @@ certificate	Public key	Khóa công khai
 	Remove redaction marks	Gỡ các dấu đánh dấu
 	Remove saved {what}	Xóa {what} đã lưu
 	Remove security	Gỡ bảo mật
+	Remove Signature	Gỡ chữ ký
+	Remove signature	Gỡ chữ ký
+	Remove signature…	Gỡ chữ ký…
+	Remove the signature {name}	Gỡ chữ ký {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Xóa thẻ lá này khỏi thứ tự đọc và đánh dấu nội dung trực tiếp của nó là thành phần trang trí
 	Remove unreferenced named destinations	Gỡ các đích đến có tên không được tham chiếu
 	Remove unused objects and merge identical ones	Gỡ các đối tượng không dùng và gộp các đối tượng giống nhau
@@ -1863,9 +1926,14 @@ certificate	Public key	Khóa công khai
 	Remove {standard} identification	Gỡ thông tin nhận dạng {standard}
 	Removed 1 hidden item. Save to remove them from the file.	Đã gỡ 1 mục ẩn. Hãy lưu để xóa chúng khỏi tệp.
 	Removed 1 link	Đã gỡ 1 liên kết
+	Removed the signature {field} and kept its empty field	Đã gỡ chữ ký {field} và giữ lại trường trống
+	Removed the signature {field} with its field	Đã gỡ chữ ký {field} cùng với trường của nó
+	Removed the visual signature on page {p}	Đã gỡ chữ ký hình ảnh trên trang {p}
 	Removed {n} hidden items. Save to remove them from the file.	Đã gỡ {n} mục ẩn. Hãy lưu để xóa chúng khỏi tệp.
 	Removed {n} links	Đã gỡ {n} liên kết
 	Removing the background puts the page's own backdrop back.	Gỡ nền sẽ khôi phục lớp tô trắng riêng của trang.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	Gỡ chữ ký này sẽ thay đổi tài liệu và làm chữ ký này mất hiệu lực trong phiên bản tạo ra. Việc này có thể ảnh hưởng đến các chữ ký và chứng nhận khác. Tệp gốc được giữ nguyên.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	Gỡ chữ ký này sẽ thay đổi tài liệu và làm chữ ký này mất hiệu lực trong phiên bản tạo ra. Tệp gốc được giữ nguyên.
 	Removing white margins… page {d} of {t}	Đang xóa lề trắng… trang {d} / {t}
 	Rename bookmark	Đổi tên dấu trang
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Kết xuất: hayro (khởi tạo) · Giao diện: egui · Biểu tượng: Lucide (ISC) · Phông chữ: Inter, JetBrains Mono, Dancing Script (OFL)
@@ -1917,6 +1985,7 @@ certificate	Public key	Khóa công khai
 	Resume	Tiếp tục
 	Retain existing	Giữ nguyên hiện có
 	Retry	Thử lại
+	Return to document	Quay lại tài liệu
 	Rev. {rev}: Certified by an unknown signer	Bản sửa đổi {rev}: Được chứng nhận bởi người ký không rõ
 	Rev. {rev}: Certified by {name}	Bản sửa đổi {rev}: Được chứng nhận bởi {name}
 	Rev. {rev}: Signed by an unknown signer	Bản sửa đổi {rev}: Được ký bởi người ký không rõ
@@ -1970,6 +2039,8 @@ certificate	Public key	Khóa công khai
 	Run JavaScript	Chạy JavaScript
 	Running action… file {d} of {t}	Đang chạy hành động… tệp {d} trên {t}
 calendar weekday	Sa	T7
+	Safety margin (pt)	Lề an toàn (pt)
+	Same as interface	Giống giao diện
 	Same as interface ({language})	Giống giao diện ({language})
 	Sanitize	Làm sạch
 	Sanitize document	Làm sạch tài liệu
@@ -1986,6 +2057,7 @@ calendar weekday	Sa	T7
 	Save as PDF/A-3b	Lưu thành PDF/A-3b
 	Save as PDF/UA	Lưu thành PDF/UA
 	Save as PDF/X	Lưu thành PDF/X
+	Save as template	Lưu dưới dạng mẫu
 	Save as {level}	Lưu thành {level}
 	Save as…	Lưu thành…
 	Save attachment…	Lưu tệp đính kèm…
@@ -2011,11 +2083,15 @@ calendar weekday	Sa	T7
 	Saved {place}: {before} → {after} (not smaller){detail}	Đã lưu {place}: {before} → {after} (không nhỏ hơn){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Đã lưu {place}: {before} → {after} (nhỏ hơn {pct}%){detail}
 	Saved, but reopening failed: {e}	Đã lưu, nhưng mở lại thất bại: {e}
+	Saves document	Lưu tài liệu
 	Scale corner {n}	Đổi tỷ lệ từ góc {n}
 	Scale object	Đổi tỷ lệ đối tượng
 	Scale relative to target page	Tỷ lệ so với trang đích
 	Scan	Quét
 	Scan & OCR	Quét & OCR
+	Scan and text recognition	Quét và nhận dạng văn bản
+	Scan correction	Chỉnh sửa bản quét
+	Scan processing cancelled	Đã hủy xử lý bản quét
 	Scanned pages need OCR. Reading order follows extracted page text.	Các trang quét cần OCR. Thứ tự đọc theo văn bản được trích xuất từ trang.
 	Scanned text detected	Phát hiện văn bản đã quét
 	Screen / email	Màn hình / email
@@ -2040,6 +2116,7 @@ calendar weekday	Sa	T7
 	Search tools and commands	Tìm công cụ và lệnh
 	Search tools and commands…	Tìm công cụ và lệnh…
 	Search tools…	Tìm kiếm công cụ…
+	Searchable Image	Ảnh có thể tìm kiếm
 	Searchable Image (Exact)	Ảnh có thể tìm kiếm (Chính xác)
 	Searching… {s} of {p} pages	Đang tìm… {s} trên {p} trang
 	Searching… {s}/{p}	Đang tìm… {s}/{p}
@@ -2183,6 +2260,7 @@ key	Shift	Shift
 	Signatures	Chữ ký
 	Signatures and seals are not carried over or checked.	Chữ ký và con dấu không được chuyển sang và không được kiểm tra.
 	Signatures panel	Bảng chữ ký
+	Signed after this signature, so what they signed includes it: {names}.	Các chữ ký được thêm sau chữ ký này và có nội dung đã ký bao gồm nó: {names}.
 	Signed and all signatures are valid.	Đã ký và tất cả chữ ký đều hợp lệ.
 	Signed and saved to {path}	Đã ký và lưu vào {path}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Ký bởi {signer} lúc {time}; nội dung không khớp với nội dung được ký; độ tin cậy của người ký chưa được kiểm tra.
@@ -2230,6 +2308,11 @@ scroll speed	Slow	Chậm
 key	Space	Space
 	Space Audit	Kiểm tra dung lượng
 	Spacing between copies	Khoảng cách giữa các bản sao
+	Spelling checks stay on this device.	Việc kiểm tra chính tả diễn ra trên thiết bị này.
+	Spelling dictionary unavailable	Không có từ điển chính tả
+	Spelling language	Ngôn ngữ kiểm tra chính tả
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	Dấu chính tả không thay đổi tài liệu. Nhấp chuột phải vào từ được gạch chân để xem gợi ý.
+	Spelling suggestions	Gợi ý chính tả
 	Split document	Tách tài liệu
 	Split document…	Tách tài liệu…
 	Split into files…	Tách thành các tệp…
@@ -2252,6 +2335,8 @@ action wizard	Start	Bắt đầu
 	Steps	Các bước
 	Sticky note	Ghi chú dán
 	Still rendering — this page is unusually complex…	Vẫn đang kết xuất — trang này phức tạp bất thường…
+	Straighten scanned page	Căn thẳng trang đã quét
+	Straighten skewed scans	Căn thẳng các bản quét bị nghiêng
 	Strength: {s}	Độ mạnh: {s}
 	Strikethrough text	Gạch ngang văn bản
 	String length (0 turns it off)	Độ dài dây (0 để tắt)
@@ -2262,11 +2347,13 @@ calendar weekday	Su	CN
 certificate	Subject	Chủ thể chứng chỉ
 	Submit a form	Gửi một biểu mẫu
 	Success	Thành công
+	Suggest edits	Đề xuất chỉnh sửa
 	sum (+)	tổng (+)
 	Summarize	Tóm tắt
 	Summarize comments	Tóm tắt bình luận
 	Summarize Options	Tùy chọn tóm tắt
 	Summarize with AI	Tóm tắt bằng AI
+	Swap width and height	Hoán đổi chiều rộng và chiều cao
 	Switch light / dark theme	Chuyển chủ đề sáng / tối
 	Switch to List view to change the pages it takes.	Chuyển sang dạng danh sách để thay đổi các trang mà nó lấy.
 	Switch to two-page view first to show the cover page	Hãy chuyển sang chế độ hai trang trước để hiển thị trang bìa
@@ -2369,6 +2456,7 @@ calendar weekday	Th	T5
 	The document now conforms to {level}; save it to keep the changes	Tài liệu hiện tuân thủ {level}; hãy lưu để giữ các thay đổi
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Tài liệu mở không cần mật khẩu; mật khẩu này cần để thay đổi các hạn chế. Mật khẩu được áp dụng khi bạn lưu.
 	The document was closed before it could be saved.	Tài liệu đã bị đóng trước khi kịp lưu.
+	The document will no longer be certified.	Tài liệu sẽ không còn được chứng nhận.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Thông tin thu hồi được nhúng trong tài liệu cho thấy chứng chỉ của người ký chưa bị thu hồi.
 	The document's security settings don't allow copying text and images	Cài đặt bảo mật của tài liệu không cho phép sao chép văn bản và hình ảnh
 	The document's security settings don't allow filling in form fields	Cài đặt bảo mật của tài liệu không cho phép điền các trường biểu mẫu
@@ -2381,6 +2469,7 @@ calendar weekday	Th	T5
 	The field properties could not be changed.	Không thể thay đổi thuộc tính của trường.
 	The field properties dialog is no longer open.	Hộp thoại thuộc tính trường không còn được mở.
 	The field {name} no longer exists.	Trường {name} không còn tồn tại.
+	The fields this signature locked ({names}) can be changed again.	Các trường mà chữ ký này khóa ({names}) sẽ có thể thay đổi lại.
 	the first heading is an H{n}; headings should not skip levels	đề mục đầu tiên là H{n}; các đề mục không nên bỏ qua cấp
 	the first row number can be at most {max}	số hàng đầu tiên tối đa là {max}
 	The font {} isn't embedded	Phông chữ {} chưa được nhúng
@@ -2403,9 +2492,11 @@ calendar weekday	Th	T5
 	The metadata doesn't identify the file as {}	Siêu dữ liệu không xác định tệp là {}
 	The module's tokens hold no digital ID PdfCraft can sign with.	Các token của mô-đun không chứa Digital ID nào mà PdfCraft có thể dùng để ký.
 	the name is not a plain file name	tên không phải là tên tệp đơn thuần
+	The new file has no signature left and no earlier revision holding it.	Tệp mới không còn chữ ký nào và cũng không có bản sửa đổi trước nào chứa nó.
 	The newest {n} of {total} PDFs	{n} PDF mới nhất trong tổng số {total}
 	The operation failed.	Thao tác thất bại.
 	The order saved in the PDF needs tidying	Thứ tự lưu trong PDF cần được sắp xếp lại
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Các chữ ký khác ({names}) sẽ báo rằng tài liệu đã thay đổi sau khi ký. Hãy xác thực lại: không có gì bảo đảm chúng vẫn hợp lệ.
 	The page has changed; select the image again	Trang đã thay đổi; hãy chọn lại hình ảnh
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Các trang đã được trích xuất nhưng chưa bị xóa, vì tài liệu đã thay đổi trong lúc bạn chọn thư mục.
 	the password is incorrect	mật khẩu không đúng
@@ -2423,6 +2514,7 @@ calendar weekday	Th	T5
 	The release has ambiguous packages. Choose a package on the official release page.	Bản phát hành có nhiều gói có thể phù hợp. Hãy chọn một gói trên trang phát hành chính thức.
 	The release is not a published stable update. Try again later.	Bản phát hành này chưa phải là bản cập nhật ổn định đã được công bố. Hãy thử lại sau.
 	The replacement file doesn't have that many pages.	Tệp thay thế không có nhiều trang như vậy.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Các hạn chế áp dụng cho người nhận không có “Mọi quyền”. Thay đổi được áp dụng khi bạn lưu.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	các hàng quá thấp: hãy làm vùng cao hơn, hoặc dùng ít hàng hơn hay khoảng cách hàng nhỏ hơn
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	Giá trị chữ ký RSA không có độ dài bằng môđun của khóa (các byte không ở đầu bị bỏ hoặc thêm); nó vẫn được đọc.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	DigestInfo của chữ ký RSA không có tham số NULL (các trình ký cũ ghi như vậy); nó vẫn được đọc.
@@ -2444,7 +2536,9 @@ calendar weekday	Th	T5
 	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	Chữ ký được mã hóa BER (độ dài không xác định) thay vì DER; nó được đọc một cách khoan dung.
 	The signature uses the legacy adbe.x509.rsa_sha1 format.	Chữ ký dùng định dạng cũ adbe.x509.rsa_sha1.
 	The signature value does not match the signer's certificate: the signature is corrupt.	Giá trị chữ ký không khớp với chứng chỉ của người ký: chữ ký bị hỏng.
+	The signature was not removed: {e}	Chưa gỡ được chữ ký: {e}
 	The signature will be invisible.	Chữ ký sẽ không hiển thị.
+	The signature {names} locks this field.	Chữ ký {names} khóa trường này.
 	The signature's byte range does not exclude exactly its contents.	Dải byte của chữ ký không loại trừ chính xác nội dung của nó.
 	The signature's byte range does not match the file.	Dải byte của chữ ký không khớp với tệp.
 	The signature's signed attributes have no content type, which CMS requires; it was read anyway.	Các thuộc tính đã ký của chữ ký không có loại nội dung, điều mà CMS yêu cầu; chữ ký vẫn được đọc.
@@ -2507,6 +2601,7 @@ calendar weekday	Th	T5
 	This compatibility level supports only plain ASCII passwords.	Mức tương thích này chỉ hỗ trợ mật khẩu ASCII thuần.
 	This dialog shows the details of a certificate and its chain.	Hộp thoại này hiển thị chi tiết của một chứng chỉ và chuỗi chứng chỉ của nó.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Tài liệu này yêu cầu mở ở chế độ toàn màn hình: trang chiếm toàn bộ màn hình và không hiển thị nội dung nào khác. Nhấn Esc bất kỳ lúc nào để thoát.
+	This document can't be changed: {names}	Không thể thay đổi tài liệu này: {names}
 	This document can't be checked: it couldn't be read for editing	Không thể kiểm tra tài liệu này: không đọc được để chỉnh sửa
 	This document contains {n} interactive form fields.	Tài liệu này chứa {n} trường biểu mẫu tương tác.
 	This document does not allow adding form fields	Tài liệu này không cho phép thêm trường biểu mẫu
@@ -2520,6 +2615,7 @@ calendar weekday	Th	T5
 	This document has no layers.	Tài liệu này không có lớp.
 	This document has no pages.	Tài liệu này không có trang nào.
 	This document has no restrictions to lift	Tài liệu này không có hạn chế nào để gỡ bỏ
+	This document has no signature that can be removed.	Tài liệu này không có chữ ký nào có thể gỡ.
 	This document has no signatures.	Tài liệu này không có chữ ký.
 	This document has no tagged figures.	Tài liệu này không có hình nào được gắn thẻ.
 	This document has no XMP metadata.	Tài liệu này không có siêu dữ liệu XMP.
@@ -2551,6 +2647,7 @@ calendar weekday	Th	T5
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	Bản cài đặt này do gói RPM quản lý. Hãy dùng trình quản lý phần mềm hệ thống để cập nhật PdfCraft.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Đây là biểu mẫu XFA động, mà PdfCraft chưa thể hiển thị. Những gì bạn thấy là trang giữ chỗ của tệp.
 	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	Chỉ cần tải từ GitHub một lần. Sau đó, tính năng phát hiện hoạt động ngoại tuyến. Các tệp PDF vẫn nằm trên thiết bị này.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	Đây là hình ảnh của chữ ký, không phải chữ ký số: chỉ dấu trên trang bị gỡ. Tệp gốc được giữ nguyên.
 	This is the first PDF in its folder	Đây là PDF đầu tiên trong thư mục
 	This is the last PDF in its folder	Đây là PDF cuối cùng trong thư mục
 	This measurement needs at least {n} points.	Phép đo này cần ít nhất {n} điểm.
@@ -2563,6 +2660,7 @@ calendar weekday	Th	T5
 	This point could not be moved. Try a smaller move.	Không thể di chuyển điểm này. Hãy thử dịch chuyển nhỏ hơn.
 	This printer offers no settings of its own.	Máy in này không có cài đặt riêng.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Trình điều khiển của máy in này không nhận cài đặt in hai mặt từ các chương trình khác, nên cài đặt riêng của nó được áp dụng. Hãy thay đổi trong Thuộc tính…
+	this signature can't be removed on its own	không thể gỡ riêng chữ ký này
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Chữ ký này dùng khóa RSA ngắn hơn 2048 bit, không còn được coi là đủ mạnh cho chữ ký. Nó vẫn xác thực được, nhưng không nên dựa vào nó.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Chữ ký này dùng RIPEMD-160, một thuật toán băm 160 bit cũ không còn được khuyến nghị cho chữ ký. Nó vẫn xác thực được, nhưng không nên dựa vào nó.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Chữ ký này dùng SHA-1, một thuật toán băm yếu: các va chạm trong nó đã được chứng minh. Nó vẫn xác thực được vì nhiều tài liệu được ký từ nhiều năm trước dùng nó, nhưng không nên dựa vào nó.
@@ -2613,12 +2711,14 @@ signature pad	Type	Nhập chữ
 	Type text	Nhập văn bản
 	Type the web address.	Nhập địa chỉ web.
 	Type your {what}.	Nhập {what} của bạn.
+	Uncertain orientations are left unchanged. Deskew fits the full image inside the page.	Giữ nguyên hướng nếu không xác định chắc chắn. Khi căn thẳng, toàn bộ ảnh được đặt vừa trong trang.
 	Unchecked	Chưa đánh dấu chọn
 	Unchecked reads	Lần đọc chưa kiểm tra
 	Underline text	Gạch chân văn bản
 	Undid {label}	Đã hoàn tác {label}
 	Unit	Đơn vị
 	Unknown author	Tác giả không rõ
+	unknown signer	người ký không rõ
 	Unlock comment	Mở khóa bình luận
 	Unlock {name}	Mở khóa {name}
 	Unlock {n} files	Mở khóa {n} tệp
@@ -2631,6 +2731,7 @@ signature pad	Type	Nhập chữ
 	Unpin {folder}	Bỏ ghim {folder}
 	Unpinned {tool} from Home	Đã bỏ ghim {tool} khỏi Trang chủ
 	Unplaced	Chưa đặt
+	Unsaved changes to this document are saved in the new file too.	Các thay đổi chưa lưu của tài liệu này cũng được lưu vào tệp mới.
 	Unsigned signature field	Trường chữ ký chưa ký
 	Unsigned signature field: {name}	Trường chữ ký chưa ký: {name}
 	Unsupported measurements	Các phép đo không được hỗ trợ
@@ -2677,6 +2778,9 @@ certificate	Valid to	Có hiệu lực đến
 	Validate	Xác thực
 	Validate all	Xác thực tất cả
 	Validate all signatures	Xác thực tất cả chữ ký
+	validated: invalid	xác thực: không hợp lệ
+	validated: valid	xác thực: hợp lệ
+	validated: validity unknown	xác thực: không rõ hiệu lực
 	Validity ends	Hiệu lực kết thúc
 certificate	Validity ends	Hiệu lực kết thúc
 	Validity starts	Hiệu lực bắt đầu
@@ -2701,6 +2805,8 @@ certificate	Version	Phiên bản
 	Viewport rectangle in page points (x, y, width, height)	Hình chữ nhật khung nhìn theo điểm trang (x, y, chiều rộng, chiều cao)
 	Visible Rectangle	Hình chữ nhật hiển thị
 	Visual	Trực quan
+	Visual initials (Fill & Sign, not digital)	Chữ viết tắt hình ảnh (Điền & Ký, không phải chữ ký số)
+	Visual signature (Fill & Sign, not digital)	Chữ ký hình ảnh (Điền & Ký, không phải chữ ký số)
 	Voice	Giọng đọc
 	Waiting for the system print dialog…	Đang chờ hộp thoại in của hệ thống…
 	Waiting for your approval in the browser…	Đang chờ bạn phê duyệt trong trình duyệt…
@@ -2734,6 +2840,7 @@ document scrollbar width	Wide	Rộng
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Bạn đang xem bản sửa đổi {rev} của “{from}”. Đây là ảnh nhanh: các thay đổi ở đây không được áp dụng đến bản gốc.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Bạn đang xem phiên bản đã ký của “{from}” (bản sửa đổi {rev}). Đây là ảnh nhanh: các thay đổi ở đây không được áp dụng đến bản gốc.
 	You can pin up to {n} folders. Unpin one first.	Bạn có thể ghim tối đa {n} thư mục. Hãy bỏ ghim một thư mục trước.
+	You choose where the new version is saved. Continue?	Bạn chọn nơi lưu phiên bản mới. Tiếp tục?
 	You have version {c}. Download the new version from its release page.	Bạn đang dùng phiên bản {c}. Hãy tải phiên bản mới từ trang phát hành của nó.
 	Your changes will be lost if you don't save them.	Các thay đổi của bạn sẽ bị mất nếu bạn không lưu.
 	Your name	Tên của bạn
@@ -2782,7 +2889,10 @@ document scrollbar width	Wide	Rộng
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} vào {dir}
 	{names} and {last}	{names} và {last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} chứng nhận tài liệu này mà không cho phép chú thích và sẽ báo thay đổi này.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} chứng nhận tài liệu này, và việc gỡ chữ ký không phải là thay đổi mà chứng nhận đó cho phép.
 	{name} (default)	{name} (mặc định)
+	{name} (you)	{name} (bạn)
 	{name} can't be combined: {why}	Không thể kết hợp {name}: {why}
 	{name} has no action	{name} không có hành động
 	{name} is read-only	{name} chỉ đọc
@@ -2791,6 +2901,7 @@ document scrollbar width	Wide	Rộng
 	{name} — unsaved changes	{name} — có thay đổi chưa lưu
 	{name}: choosing images arrives on the web with file pickers for images	{name}: việc chọn hình ảnh sẽ có trên web cùng với bộ chọn tệp hình ảnh
 	{name}: the {other} action isn't supported yet	{name}: hành động {other} chưa được hỗ trợ
+	{name}_unsigned.pdf	{name}_khong_chu_ky.pdf
 @plural	{n} byte|{n} bytes	{n} byte
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} phép tính giờ dùng tên mới.
 @plural	{n} comment|{n} comments	{n} bình luận
@@ -2838,6 +2949,7 @@ document scrollbar width	Wide	Rộng
 	{verb} Background	{verb} nền
 	{verb} Header and Footer	{verb} đầu trang và chân trang
 	{verb} Watermark	{verb} hình mờ
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. Đã lưu {file} và kiểm tra rằng tệp mở lại được với đầy đủ các trang. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	{who} trong tài liệu này đã cố mở một địa chỉ mà PdfCraft sẽ không mở: {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} trong tài liệu này đã cố mở một địa chỉ mà PdfCraft sẽ không mở: {e}. Chỉ các liên kết web (http, https) và email (mailto) mới được mở từ tài liệu.
 	{who} in this document wants to open this address in your browser:	{who} trong tài liệu này muốn mở địa chỉ này trong trình duyệt của bạn:
@@ -2851,6 +2963,7 @@ document scrollbar width	Wide	Rộng
 	— (protection is applied when you save)	— (việc bảo vệ được áp dụng khi bạn lưu)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	“{name}” đã thay đổi trên đĩa sau khi được mở hoặc lưu lần cuối. Lưu lúc này sẽ thay thế phiên bản mới hơn đó bằng phiên bản này.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	“{name}” có các hạn chế bảo mật. Hãy nhập mật khẩu quyền hạn của nó để gỡ bỏ chúng.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	“{name}” được mã hóa cho những người cụ thể. Hãy chọn Digital ID của bạn và nhập mật khẩu của nó để mở.
 	“{name}” is protected. Enter a password to open it.	“{name}” được bảo vệ. Hãy nhập mật khẩu để mở.
 	… and {n} more	… và {n} mục nữa
 	−LOC	−LOC

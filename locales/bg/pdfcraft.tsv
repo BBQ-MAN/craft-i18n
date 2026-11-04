@@ -37,8 +37,11 @@
 	4 x 6 in label (101.6 x 152.4 mm)	Етикет 4 × 6 in (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 цифра, A буква, O буква или цифра, X произволен знак
 	; 1 page already had text	; 1 страница вече съдържаше текст
+	; 1 page skipped	; пропусната 1 страница
+	; corrected {n} pages	; коригирани страници: {n}
 	; failed: {list}	; неуспешни: {list}
 	; {n} pages already had text	; {n} страници вече съдържаха текст
+	; {n} pages skipped	; пропуснати страници: {n}
 	? of {n}	? от {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} къмита, +{added} / −{deleted} реда (Δ {delta}), +{bin_added} / −{bin_deleted} двоични ресурса, {first} – {last}
 	`{command}` {when}	`{command}` {when}
@@ -48,6 +51,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	Диагонален воден знак CONFIDENTIAL на всяка страница.
 	a document must keep at least one page	документът трябва да съдържа поне една страница
 	A document needs at least one page: copy instead	Документът трябва да има поне една страница: използвайте копиране
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Времевият печат на документа обхваща целия файл и не е ничий подпис, затова не може да се премахне самостоятелно.
 	a field named {name} already exists	вече съществува поле с име {name}
 	A form field has additional actions	Поле на формуляр има допълнителни действия
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локалният модел не е водещ облачен модел: може да греши, а дълъг отговор отнема време на процесор. Проверявайте важното и съобразявайте размера на модела с тази машина, преди да го изтеглите.
@@ -55,6 +59,7 @@
 	A picture covers page {pages} (a scan?), so the background won't show there.	Изображение покрива страница {pages} (сканиране?), затова фонът няма да се вижда там.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG или SVG файл. Чете се от това място при всяко стартиране на PdfCraft.
 	A selected field has no widget on any page, so the fields can't be edited together.	Едно от избраните полета няма елемент на нито една страница, затова полетата не могат да се редактират заедно.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Подпис, който е част от съдържанието на страница (например на сканирана страница), не е поле или анотация, затова не може да се премахне самостоятелно, а PdfCraft не изтрива части от страницата, за да го скрие. За да го махнете, заличете тази област (Заличаване) или, ако подписът е отделно изображение, изтрийте го с „Редактирай PDF“.
 	A stream refers to an external file	Поток препраща към външен файл
 	A stream uses LZW compression	Поток използва LZW компресия
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Резюмето описва предназначението и оформлението на таблицата. Добавете атрибут Summary към всяка таблица.
@@ -100,12 +105,14 @@
 	Add an Action	Добави действие
 	Add an image field	Добави поле за изображение
 	Add arrow	Добави стрелка
+	Add at least one recipient.	Добавете поне един получател.
 	Add at least two files	Добавете поне два файла
 	Add background	Добави фон
 	Add background…	Добави фон…
 	Add Bates numbering…	Добави номериране на Бейтс…
 	Add bookmark	Добави отметка
 	Add callout	Добави изнесен надпис
+	Add certificate file…	Добави файл със сертификат…
 	Add checkmark	Добави знак за отметка
 	Add circle	Добави кръг
 	Add cloud	Добави облак
@@ -145,6 +152,7 @@
 	Add rectangle	Добави правоъгълник
 	Add redaction mark	Добави маркировка за заличаване
 	Add search index	Добави индекс за търсене
+	Add searchable text	Добавяне на текст за търсене
 	Add signature	Добави подпис
 	Add squiggly underline	Добави вълнообразно подчертаване
 	Add stamp	Добави печат
@@ -157,11 +165,13 @@
 	Add the choices people pick from.	Добавете възможностите, от които потребителите избират.
 	Add the files to combine	Добавете файловете за обединяване
 	Add the steps this action runs, in order.	Добавете стъпките, които това действие изпълнява, по ред.
+	Add to dictionary	Добавяне в речника
 	Add to Trusted Certificates	Добави към надеждните сертификати
 	Add to trusted certificates	Добави към надеждните сертификати
 	Add underline	Добави подчертаване
 	Add watermark	Добави воден знак
 	Add watermark…	Добави воден знак…
+	Add your digital ID	Добави вашия цифров идентификатор
 	Added 1 comment	Добавен е 1 коментар
 	Added more than once	Добавен повече от веднъж
 	Added text	Добавен текст
@@ -175,6 +185,7 @@
 	Advanced Options {chevron}	Разширени опции {chevron}
 	Advanced search…	Разширено търсене…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	След „Подпиши“ въведете OTT кода от приложението mSzafir в прозореца на CloudSigner и одобрете подписа в приложението. Ако постоянният OTT код в CloudSigner е включен, кодът се иска само веднъж на няколко минути.
+	AI Assistant	AI асистент
 	AI assistant	AI асистент
 	AI chat isn't available in the web build; use the desktop app or CLI.	ИИ чатът не е наличен в уеб версията; използвайте настолното приложение или CLI.
 	Algorithm	Алгоритъм
@@ -196,6 +207,7 @@
 	All page content is tagged	Цялото съдържание на страниците е етикетирано
 	All pages in document	Всички страници в документа
 	All pages in range	Всички страници в диапазона
+	All permissions	Всички разрешения
 	All tools	Всички инструменти
 	Allow	Разреши
 	Allow Rich Text Formatting	Разреши форматиране на текста
@@ -284,6 +296,7 @@
 	Auto-detect	Автоматично откриване
 	Auto-rotate pages	Автоматично завъртане на страниците
 	Auto-size text to fit redaction region	Автоматично оразмеряване на текста според областта на заличаване
+	Automatically rotate sideways and upside-down pages	Автоматично завъртане на странични и обърнати страници
 	Automatically tag PDF	Автоматично тагване на PDF
 	Available version: {v}	Налична версия: {v}
 	average	средното
@@ -355,8 +368,11 @@
 	Center vertically	Центрирай вертикално
 	Center window on screen	Центрирай прозореца на екрана
 	Centre	Центрирай
+	Certificate	Сертификат
+	Certificate encryption will be applied when you save	Шифроването със сертификат ще бъде приложено при записване
 	Certificate Viewer	Преглед на сертификати
 	Certificates	Сертификати
+	Certification signature (level {p})	Сертифициращ подпис (ниво {p})
 	Certified by {by}	Сертифициран от {by}
 	Certify	Сертифицирай
 	Certify (invisible signature)	Сертифицирай (невидим подпис)
@@ -396,6 +412,7 @@
 	Check for accessibility…	Провери достъпността…
 	Check for updates…	Провери за актуализации…
 	Check spelling	Проверка на правописа
+	Check spelling while typing	Проверка на правописа при писане
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Проверете дали етикетите се четат в реда, в който би чел зрящ читател. Използвайте инструмента „Ред на четене“ или панела „Етикети“, за да го коригирате.
 	Check the pages	Проверете страниците
 	Check the pages of {name}: {why}	Проверете страниците на {name}: {why}
@@ -407,6 +424,7 @@
 	Checking Options ({on} of 32 in all categories)	Опции за проверка ({on} от 32 във всички категории)
 	Checking pages…	Проверка на страниците…
 	Checkmark	Отметка
+	Choose a digital ID file	Изберете файл с цифров идентификатор
 	Choose a folder for the exported files	Изберете папка за експортираните файлове
 	Choose a folder for the extracted pages	Изберете папка за извлечените страници
 	Choose a folder for the results	Изберете папка за резултатите
@@ -417,8 +435,10 @@
 	Choose a logo	Изберете лого
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Изберете PNG или JPEG изображение (до 4 MiB). Прозрачността се запазва.
 	Choose a provider.	Изберете доставчик.
+	Choose a signature that can be removed.	Изберете подпис, който може да бъде премахнат.
 	Choose a stamp, then click on the page to place it.	Изберете печат, след което щракнете върху страницата, за да го поставите.
 	Choose an image	Изберете изображение
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Изберете друг файл: оригиналът остава непроменен, а версията без подписа се записва до него.
 	Choose font…	Избор на шрифт…
 	Choose images	Избери изображения
 	Choose image…	Избор на изображение…
@@ -428,6 +448,7 @@
 	Choose reference…	Избор на образец…
 	Choose the digital ID that you want to use for signing:	Изберете цифровия идентификатор, с който искате да подпишете:
 	Choose the module's library file.	Изберете файла с библиотеката на модула.
+	Choose the signature to remove:	Изберете подписа за премахване:
 	Choose where to save the signed file. The service signs it once you have.	Изберете къде да се запази подписаният файл. Услугата ще го подпише, след като го направите.
 	Clean Up	Почистване
 	Clean-up	Почистване
@@ -435,6 +456,7 @@
 	Clear All	Изчисти всички
 	Clear all	Изчисти всичко
 	Clear form	Изчисти формуляра
+	Clear personal dictionary	Изчистване на личния речник
 	Clear Recent Files	Изчисти последно отваряните файлове
 	Clear redaction marks	Изчисти маркировките за заличаване
 	Clear search	Изчистване на търсенето
@@ -547,6 +569,8 @@
 	Copyright status	Статус на авторското право
 	Copyrighted	С авторско право
 	Correct recognized text	Коригирай разпознатия текст
+	Correct scans	Коригиране на сканирания
+	Corrected scan	Коригирано сканиране
 	Could not copy the selection because text could not be read on every page	Изборът не може да бъде копиран, защото текстът не можа да бъде прочетен на всички страници
 	Could not mark the selection because text could not be read on every page	Избраният текст не може да бъде маркиран, защото текстът не можа да бъде прочетен на всички страници
 	Could not save: {e}	Неуспешно записване: {e}
@@ -555,6 +579,7 @@
 	Couldn't copy the image: {e}	Изображението не можа да бъде копирано: {e}
 	Couldn't create a PDF: {e}	Не можа да се създаде PDF файл: {e}
 	Couldn't download {name}: {e}	{name} не можа да бъде изтеглен: {e}
+	Couldn't encrypt: {e}	Шифроването не бе успешно: {e}
 	Couldn't extract pages: {e}	Страниците не можаха да бъдат извлечени: {e}
 	Couldn't extract the original PDF: {e}	Не успя да се извлече оригиналният PDF: {e}
 	Couldn't fit the visible content: {e}	Видимото съдържание не може да бъде побрано: {e}
@@ -626,6 +651,7 @@
 	Crop Image	Изрязване на изображението
 	Crop page	Изрежи страницата
 	Crop pages	Изрежи страници
+	Crop scanner borders to the paper edge	Изрязване на сканираното до ръба на хартията
 	Cross	Кръстче
 key	Ctrl	Ctrl
 	Currency symbol:	Символ за валута:
@@ -637,6 +663,7 @@ key	Ctrl	Ctrl
 	Cursor coordinates	Координати на курсора
 	Custom	Персонализиран
 	Custom font	Потребителски шрифт
+	Custom page…	Персонализирана страница…
 	Custom role	Потребителска роля
 	Custom scale:	Потребителски мащаб:
 	Custom size	Потребителски размер
@@ -709,6 +736,7 @@ key	Delete	Delete
 	Diagnostic details	Диагностични подробности
 	Digital ID	Цифров идентификатор
 	Digital ID password	Парола за цифровия идентификатор
+	Digital ID required	Изисква се цифров идентификатор
 	Digital signature	Цифров подпис
 	Digital Signature Properties	Свойства на цифров подпис
 	Digitally sign	Подпиши цифрово
@@ -759,6 +787,7 @@ key	Delete	Delete
 	Document sanitized. Save to finish: saving rewrites the whole file.	Документът е почистен. Запишете, за да завършите: записването пренаписва целия файл.
 	Document scrollbar width	Ширина на лентата за превъртане на документа
 	Document structure provides a logical reading order	Структурата на документа осигурява логически ред на четене
+	Document timestamp	Времеви печат на документа
 	Document title is showing in title bar	Заглавието на документа се показва в заглавната лента
 	Documents and view	Документи и изглед
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Документите с повече от 20 страници се нуждаят от отметки за навигация. Добавете отметки за основните раздели.
@@ -813,6 +842,9 @@ key	Delete	Delete
 	Duplicate field	Дублирай полето
 	Duplicate page	Дублирай страницата
 	Duplicate pages	Дублирай страници
+	Duplicate pages with new field names	Дублиране на страници с нови имена на полетата
+	Duplicate pages — 1 field renamed	Дублирай страници — 1 поле е преименувано
+	Duplicate pages — fields renamed	Дублирай страници — полета са преименувани
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Динамичен XFA формуляр, оформен по своя шаблон: {pages}, {fields}.
 	Dynamic zoom	Динамично мащабиране
 	E-Sign	Е-подпис
@@ -854,7 +886,11 @@ comment menu	Edit	Редактирай
 	Enable text access for screen reader devices for the visually impaired	Разреши достъп до текста за екранни четци за хора със зрителни увреждания
 	Enabled	Активирано
 	Encrypt	Шифровай
+	Encrypt for recipient	Шифроване за получател
+	Encrypt for recipients	Шифроване за получатели
+	Encrypt with Certificate	Шифроване със сертификат
 	Encrypt with certificate	Шифровай със сертификат
+	Encrypt with certificate…	Шифровай със сертификат…
 	Encryption	Шифроване
 key	End	End
 	Endpoints	Крайни точки
@@ -897,6 +933,7 @@ key	Esc	Esc
 	Expand all tools	Разгъване на всички инструменти
 	Expand tag	Разгъни тага
 	Expand top-level bookmarks	Разгъни отметките от първо ниво
+	Expires {date}	Изтича на {date}
 	Explain	Обясни
 	Export	Експортирай
 	Export & Convert	Експортиране и конвертиране
@@ -957,6 +994,7 @@ scroll speed	Fast	Висока
 	Field properties…	Свойства на полето…
 	Field value is in range:	Стойността на полето е в диапазона:
 	Field value is not validated	Стойността на полето не се проверява
+	Field: {field}	Поле: {field}
 	Field: {field} on page {p}	Поле: {field} на страница {p}
 	Fields to reset (comma-separated; empty: all)	Полета за нулиране (разделени със запетая; празно: всички)
 	Figure {i} of {n}{page}	Фигура {i} от {n}{page}
@@ -1078,6 +1116,7 @@ scroll speed	Fast	Висока
 	Found {n} untagged content problems.	Открити са {n} проблема с немаркирано съдържание.
 	From a PDF page or an image	От страница на PDF или изображение
 	From colour	От цвят
+	From template	От шаблон
 	From {file}	От {file}
 	From:	От:
 	Front side only	Само лицева страна
@@ -1098,6 +1137,7 @@ scroll speed	Fast	Висока
 	Grayscale Images	Изображения в сива скала
 	Green on black	Зелено на черно
 	Greyscale	Нива на сивото
+	Group select	Групово избиране
 	Hand (H)	Ръка (H)
 	Has JavaScript actions (run in M6)	Има JavaScript действия (изпълняват се в M6)
 	Header and footer	Горен и долен колонтитул
@@ -1189,6 +1229,7 @@ key	Home	Home
 	Installed version: {v}	Инсталирана версия: {v}
 	Integrity	Цялостност
 	Intended usage	Предназначение
+	Interface and appearance	Интерфейс и изглед
 	Interface font	Шрифт на интерфейса
 	Interface size	Размер на интерфейса
 	Intersection	Пресечна точка
@@ -1206,6 +1247,7 @@ key	Home	Home
 	Issued by: 	Издаден от: 
 	Issued to	Издаден на
 	Issuer	Издател
+	it was still in the document afterwards, so the change was undone	след премахването той още беше в документа, затова промяната е отменена
 	Item List	Списък с елементи
 	Item:	Елемент:
 	Items marked Ready work today.	Елементите, отбелязани като „Готово“, работят още сега.
@@ -1222,6 +1264,7 @@ key	Home	Home
 	Join the ArtCraft community	Присъедини се към общността на ArtCraft
 	July	Юли
 	June	Юни
+	Keep an empty signature field to sign again	Запази празно поле за подпис, за да се подпише отново
 	Keep source fonts	Запазване на оригиналните шрифтове
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Запазване на заглавната лента на Windows над лентата с раздели. Изключено, лентата с раздели е заглавната лента, с бутоните на прозореца вдясно; подредбите Snap Layouts върху бутона за максимизиране изискват заглавната лента на Windows.
 	Keep tool selected	Запази инструмента избран
@@ -1234,6 +1277,7 @@ key	Home	Home
 	Landscape and Portrait Pages	Пейзажни и портретни страници
 	Landscape Pages	Пейзажни страници
 	Landscape pages	Пейзажни страници
+	Language and spelling	Език и правопис
 	Larger pages	По-големи страници
 	Larger text	По-голям текст
 	Larger thumbnails	По-големи миниатюри
@@ -1241,6 +1285,7 @@ key	Home	Home
 	Last page	Последна страница
 	Later in calculation order	По-назад в реда на изчисляване
 	Later in tab order	По-назад в реда на табулация
+	Latin (accented)	Латиница (с диакритични знаци)
 	Layer options	Опции за слоеве
 	Layers panel	Панел със слоеве
 	Layers Panel and Page	Панел „Слоеве“ и страница
@@ -1478,6 +1523,7 @@ key	Home	Home
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Не са намерени принтери. Проверете дали принтерът е инсталиран и дали услугата за опашка за печат работи, след което отворете „Печат“ отново.
 	No problems found: the document conforms to {level}.	Не са открити проблеми: документът съответства на {level}.
 	No raw file yet	Все още няма суров файл
+	No recipients yet.	Все още няма получатели.
 	No reference yet	Все още няма образец
 	No release notes were provided.	Няма предоставени бележки към изданието.
 	No scanner found	Не е намерен скенер
@@ -1489,6 +1535,7 @@ key	Home	Home
 	No size estimate: {e}	Няма приблизителен размер: {e}
 	No status has been set.	Не е зададено състояние.
 	no such document	няма такъв документ
+	No suggestions	Няма предложения
 	No tools match your search.	Няма инструменти, отговарящи на търсенето.
 	No unlinked web addresses were found in the text	В текста не са открити уеб адреси без връзка
 	No untagged content was found.	Не е намерено немаркирано съдържание.
@@ -1496,7 +1543,10 @@ key	Home	Home
 	none	няма
 	None (prefix only)	Без (само префикс)
 	None found	Няма открити
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	Никой от получателите не е ваш цифров идентификатор: няма да можете да отворите записания документ.
+	None of these signatures can be removed.	Никой от тези подписи не може да бъде премахнат.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Нито един от тези файлове не може да бъде превърнат в PDF; използвайте PDF файлове, изображения или .txt файлове
+	None of your digital IDs can open this document.	Никой от вашите цифрови идентификатори не може да отвори този документ.
 	None — everything is allowed	Няма — всичко е разрешено
 scroll speed	Normal	Нормална
 	Normal page	Нормална страница
@@ -1543,13 +1593,16 @@ animation effects	On	Включени
 	One {f} file per page, named after the document.	По един {f} файл на страница, именуван по документа.
 	One-time code (OTP)	Еднократен код (OTP)
 	Only allow this if you trust the source document.	Разрешете това само ако имате доверие на изходния документ.
+	Only certificates with RSA keys can be recipients.	Получатели могат да бъдат само сертификати с RSA ключове.
 	Only change the colour of black text or line art	Да се променя само цветът на черния текст и линиите
 	Only checked properties will change. Mixed means the selected fields have different values.	Ще се променят само отметнатите свойства. „Различни стойности“ означава, че избраните полета имат различни стойности.
+	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Изрязват се само ясно различими ръбове на хартията. Неразличимите бели полета се запазват.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Продължете само ако имате доверие на този документ. Адресът може да пренася информация от документа, например въведеното във формуляра му.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Изпращайте само ако имате доверие на този документ и получателя. GET поставя стойностите на формуляра в URL адреса.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Изпращайте само ако имате доверие на документа и получателя. Целият PDF напуска този компютър.
 	Only send if you trust this document and destination. The form values leave this computer.	Изпращайте само ако имате доверие на документа и получателя. Стойностите от формуляра ще напуснат този компютър.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Променя се само съдържанието на страниците: връзките, коментарите, полетата на формуляра и отметките на оригиналните страници остават.
+	Only the recipients can open the document, each with the private key of their own certificate.	Само получателите могат да отворят документа, всеки с частния ключ на собствения си сертификат.
 	Open	Отвори
 	Open a document first	Първо отворете документ
 	Open a PDF ({key})	Отвори PDF файл ({key})
@@ -1580,6 +1633,7 @@ animation effects	On	Включени
 	Opened from a detached CAdES signature — read-only.	Отворено от отделен подпис CAdES — само за четене.
 	Opened with	Отворен с
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Файлът е отворен, но настройките му за защита не позволяват обединяване. Въведете паролата за разрешения.
+	Opening documents	Отваряне на документи
 	Opening the browser's print dialog…	Отваряне на диалога за печат на браузъра…
 	Opening {name}…	Отваряне на {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Отваря предпочитанията на драйвера на принтера. Те се запазват за всеки печат от този компютър; избраните тук копия, двустранен печат, сива скала и хартия продължават да важат.
@@ -1613,6 +1667,8 @@ animation effects	On	Включени
 	Other elements that require alternate text	Други елементи, които изискват алтернативен текст
 	Other options	Други опции
 	Other provider (CSC API)	Друг доставчик (CSC API)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Има и други подписи, затова копието се записва като обновяване на подписания файл: премахнатият подпис остава в предишната редакция, откъдето може да бъде възстановен.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Има и други подписи, затова премахнатият все още е в предишната редакция на файла; проверете отново останалите подписи.
 	Outdent	Намали отстъпа
 	Outline colour:	Цвят на контура:
 	Outline over page	Контури върху страницата
@@ -1649,6 +1705,7 @@ animation effects	On	Включени
 	Page {label}	Страница {label}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Страница {pages} е променена след добавянето на фона, затова собственото ѝ бяло запълване остава изключено. На бяла хартия изглежда по същия начин.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Страница {pages} има собствено бяло запълване, което би скрило фона. Замяна
+	Page {p}	Страница {p}
 	Page {p} of {n}	Страница {p} от {n}
 	pages	страници
 	Pages counted	Преброени страници
@@ -1844,6 +1901,7 @@ animation effects	On	Включени
 	Reason: 	Причина: 
 	Recent colours	Последни цветове
 	Recent files to keep	Recent files to keep
+	Recipients	Получатели
 	Recognize scanned text automatically	Автоматично разпознаване на сканиран текст
 	Recognize Text	Разпознаване на текст
 	Recognize text	Разпознай текст
@@ -1895,6 +1953,7 @@ animation effects	On	Включени
 	Remove "{name}" from this list? The certificate stays with the signing service.	Да се премахне ли „{name}“ от този списък? Сертификатът остава в услугата за подписване.
 	Remove "{name}" from this list? The file itself is not deleted.	Да се премахне ли „{name}“ от този списък? Самият файл няма да бъде изтрит.
 	Remove all links	Премахни всички връзки
+	Remove and Save As…	Премахни и запиши като…
 	Remove background	Премахни фона
 	Remove checkmark	Премахни отметката
 	Remove Crop	Премахване на изрязването
@@ -1909,6 +1968,10 @@ animation effects	On	Включени
 	Remove page	Премахни страницата
 	Remove redaction marks	Премахни маркировките за заличаване
 	Remove security	Премахни защитата
+	Remove Signature	Премахване на подпис
+	Remove signature	Премахни подписа
+	Remove signature…	Премахни подписа…
+	Remove the signature {name}	Премахни подписа {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Премахнете този листов етикет от реда на четене и маркирайте прякото му съдържание като артефакт
 	Remove unreferenced named destinations	Премахни неизползваните именувани местоназначения
 	Remove unused objects and merge identical ones	Премахни неизползваните обекти и обедини еднаквите
@@ -1921,9 +1984,14 @@ animation effects	On	Включени
 	Remove {n} pages	Премахни {n} страници
 	Removed 1 hidden item. Save to remove them from the file.	Премахнат е 1 скрит елемент. Запишете, за да ги премахнете от файла.
 	Removed 1 link	Премахната е 1 връзка
+	Removed the signature {field} and kept its empty field	Премахнат е подписът {field}, а полето му е запазено празно
+	Removed the signature {field} with its field	Премахнат е подписът {field} заедно с полето
+	Removed the visual signature on page {p}	Премахнат е визуалният подпис на страница {p}
 	Removed {n} hidden items. Save to remove them from the file.	Премахнати са {n} скрити елемента. Запишете, за да ги премахнете от файла.
 	Removed {n} links	Премахнати връзки: {n}
 	Removing the background puts the page's own backdrop back.	Премахването на фона връща собственото бяло запълване на страницата.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	Премахването на този подпис променя документа и прави този подпис невалиден в получената версия. Може да засегне другите подписи и сертификати. Оригиналният файл остава непроменен.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	Премахването на този подпис променя документа и прави този подпис невалиден в получената версия. Оригиналният файл остава непроменен.
 	Removing white margins… page {d} of {t}	Премахване на белите полета… страница {d} от {t}
 	Rename	Преименувай
 	Rename bookmark	Преименувай отметката
@@ -1981,6 +2049,7 @@ animation effects	On	Включени
 	Resume reading	Възобновяване на четенето
 	Retain existing	Запази съществуващата
 	Retry	Опитай отново
+	Return to document	Връщане към документа
 	Reveal in File Explorer	Показване във файловия мениджър
 	Reverse closed arrow	Обърната затворена стрелка
 	Reverse open arrow	Обърната отворена стрелка
@@ -2029,6 +2098,8 @@ animation effects	On	Включени
 	Run JavaScript	Изпълни JavaScript
 	Running action… file {d} of {t}	Изпълнение на действие… файл {d} от {t}
 	Runtime	Рантайм
+	Safety margin (pt)	Предпазно поле (pt)
+	Same as interface	Като интерфейса
 	Same as interface ({language})	Като интерфейса ({language})
 	Sanitize	Почисти
 	Sanitize document	Почисти документа
@@ -2045,6 +2116,7 @@ animation effects	On	Включени
 	Save as PDF/A-3b	Запиши като PDF/A-3b
 	Save as PDF/UA	Запиши като PDF/UA
 	Save as PDF/X	Запиши като PDF/X
+	Save as template	Запазване като шаблон
 	Save as to cloud	Запазване като в облака
 	Save as to cloud…	Запазване като в облака…
 	Save as…	Запиши като…
@@ -2071,6 +2143,7 @@ animation effects	On	Включени
 	Saved {place}: {before} → {after} (not smaller){detail}	Записано {place}: {before} → {after} (не е по-малко){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Записано {place}: {before} → {after} (с {pct}% по-малко){detail}
 	Saved, but reopening failed: {e}	Записано, но повторното отваряне не бе успешно: {e}
+	Saves document	Запазва документа
 	Saving… {pct}%	Запазване… {pct}%
 	Scale	Мащаб
 	Scale corner {n}	Мащабиране от ъгъл {n}
@@ -2078,7 +2151,10 @@ animation effects	On	Включени
 	Scale relative to target page	Мащабирай спрямо целевата страница
 	Scan	Сканиране
 	Scan & OCR	Сканиране и OCR
+	Scan and text recognition	Сканиране и разпознаване на текст
+	Scan correction	Корекция на сканиране
 	Scan next page	Сканиране на следващата страница
+	Scan processing cancelled	Обработката на сканиранията е отменена
 	Scanned pages need OCR. Reading order follows extracted page text.	Сканираните страници изискват OCR. Редът на четене следва извлечения текст на страницата.
 	Scanned text detected	Открит е сканиран текст
 	Scanner	Скенер
@@ -2106,6 +2182,7 @@ animation effects	On	Включени
 	Search tools and commands	Търсене на инструменти и команди
 	Search tools and commands…	Търсене на инструменти и команди…
 	Search tools…	Търсене на инструменти…
+	Searchable Image	Изображение с търсене
 	Searchable Image (Exact)	Изображение с възможност за търсене (точно)
 	Searching…	Търсене…
 	Searching… {s} of {p} pages	Търсене… {s} от {p} страници
@@ -2256,6 +2333,7 @@ key	Shift	Shift
 	Signatures	Подписи
 	Signatures and seals are not carried over or checked.	Подписите и печатите не се пренасят и не се проверяват.
 	Signatures panel	Панел с подписи
+	Signed after this signature, so what they signed includes it: {names}.	Подписи, добавени след този, чието подписано съдържание го включва: {names}.
 	Signed and all signatures are valid.	Подписан, всички подписи са валидни.
 	Signed and saved to {path}	Подписано и записано в {path}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Подписано от {signer} на {time}; съдържанието не съответства на подписаното; доверието към подписалия не е проверено.
@@ -2306,6 +2384,11 @@ key	Space	Интервал
 	Spacing between copies	Разстояние между копията
 	Special	Специален
 	Speed:	Скорост:
+	Spelling checks stay on this device.	Проверката на правописа остава на това устройство.
+	Spelling dictionary unavailable	Правописният речник не е наличен
+	Spelling language	Език за проверка на правописа
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	Правописните знаци не променят документа. Щракнете с десния бутон върху подчертана дума за предложения.
+	Spelling suggestions	Правописни предложения
 	Split	Раздели
 	Split document	Разделяне на документ
 	Split document…	Раздели документа…
@@ -2328,6 +2411,8 @@ action wizard	Start	Старт
 	Steps	Стъпки
 	Sticky note	Бележка
 	Stop reading	Спиране на четенето
+	Straighten scanned page	Изправяне на сканирана страница
+	Straighten skewed scans	Изправяне на наклонени сканирани страници
 	Strength: {s}	Надеждност: {s}
 	Strikethrough text	Зачертай текст
 	String length (0 turns it off)	Дължина на нишката (0 го изключва)
@@ -2339,12 +2424,14 @@ action wizard	Start	Старт
 	Submit FDF data	Изпращане на FDF данни
 	Submit PDF document	Изпрати PDF документ
 	Submit XFDF data	Изпращане на XFDF данни
+	Suggest edits	Предлагане на редакции
 	sum (+)	сумата (+)
 	Summarize	Обобщи
 	Summarize comments	Обобщи коментарите
 	Summarize Options	Опции за обобщение
 	Summarize with AI	Обобщи с AI
 	Summary	Резюме
+	Swap width and height	Размяна на ширина и височина
 	Switch light / dark theme	Превключи светла / тъмна тема
 	Switch page theme	Смяна на темата на страницата
 	Switch to List view to change the pages it takes.	Превключете към изглед списък, за да промените кои страници се вземат.
@@ -2433,6 +2520,7 @@ action wizard	Start	Старт
 	The document now conforms to {level}; save it to keep the changes	Документът вече отговаря на {level}; запишете го, за да запазите промените
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Документът се отваря без парола; тази парола е нужна за промяна на ограниченията. Тя се прилага при записване.
 	The document was changed in another window. Check your text, then apply it again.	Документът беше променен в друг прозорец. Проверете текста си и го приложете отново.
+	The document will no longer be certified.	Документът вече няма да е сертифициран.
 	The document's security settings don't allow copying text and images	Настройките за защита на документа не позволяват копиране на текст и изображения
 	The document's security settings don't allow filling in form fields	Настройките за защита на документа не позволяват попълване на полетата на формуляра
 	The document's security settings don't allow printing	Настройките за защита на документа не позволяват печат
@@ -2441,6 +2529,7 @@ action wizard	Start	Старт
 	The field properties could not be changed.	Свойствата на полетата не можаха да бъдат променени.
 	The field properties dialog is no longer open.	Прозорецът със свойства на полетата вече не е отворен.
 	The field {name} no longer exists.	Полето {name} вече не съществува.
+	The fields this signature locked ({names}) can be changed again.	Полетата, заключени от този подпис ({names}), отново ще могат да се променят.
 	The font must include Latin letters and numbers for interface controls.	Шрифтът трябва да съдържа латински букви и цифри за контролите на интерфейса.
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Шрифтовете, с които PdfCraft пише, не могат да покажат „{c}“ ({code}), затова във всяка програма за PDF то се показва като ?. Текстът е запазен.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Формулярът изисква да бъде изпратен до {u}; PdfCraft не изпраща данни от формуляри. Запишете документа, за да запазите въведеното.
@@ -2461,12 +2550,15 @@ action wizard	Start	Старт
 	The linked PDF opened, but its page destination was out of range.	Свързаният PDF се отвори, но целевата му страница е извън обхвата.
 	The module's tokens hold no digital ID PdfCraft can sign with.	Токените на модула не съдържат цифров идентификатор, с който PdfCraft може да подписва.
 	the name is not a plain file name	името не е обикновено име на файл
+	The new file has no signature left and no earlier revision holding it.	Новият файл вече няма подпис, нито предишна редакция, която да го съдържа.
 	The newest {n} of {total} PDFs	Най-новите {n} от {total} PDF файла
 	The objects are already aligned.	Обектите вече са подравнени.
 	The operation failed.	Операцията е неуспешна.
 	The order saved in the PDF needs tidying	Редът, запазен в PDF файла, има нужда от подреждане
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Другите подписи ({names}) ще отчетат, че документът е променен след подписването им. Проверете ги отново: нищо не гарантира, че ще останат валидни.
 	The page has changed; select the image again	Страницата е променена; изберете изображението отново
 	the password is incorrect	паролата е грешна
+	The password is incorrect.	Паролата е грешна.
 	The password is only used to read the file; it isn't saved.	Паролата се използва само за четене на файла; тя не се запазва.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифтовете за PDF текст не могат да изобразят „{c}“ ({code}). Изберете поддържан текст.
 	The PIN is incorrect.	ПИН кодът е грешен.
@@ -2479,6 +2571,7 @@ action wizard	Start	Старт
 	The release has ambiguous packages. Choose a package on the official release page.	Пакетите за това издание са нееднозначни. Изберете пакет от официалната страница на изданието.
 	The release is not a published stable update. Try again later.	Това издание не е публикувана стабилна актуализация. Опитайте отново по-късно.
 	The replacement file doesn't have that many pages.	Заместващият файл няма толкова страници.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Ограниченията важат за получателите без „Всички разрешения“. Прилага се при записване.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	редовете са твърде ниски: направете областта по-висока или използвайте по-малко редове или по-малко разстояние между тях
 	The same password is tried on each file.	Една и съща парола се опитва за всеки файл.
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Действителният брой пиксели на инч на екрана. Калибрирайте с линийка, за да може действителният размер (100%) да показва страниците в истинския им размер.
@@ -2487,7 +2580,9 @@ action wizard	Start	Старт
 	The selected redaction is unavailable or invalid.	Избраното заличаване е недостъпно или невалидно.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Сесията с {provider} приключи. Влезте отново от „Конфигуриране на цифров идентификатор“.
 	The shared folder:	Споделената папка:
+	The signature was not removed: {e}	Подписът не е премахнат: {e}
 	The signature will be invisible.	Подписът ще бъде невидим.
+	The signature {names} locks this field.	Подписът {names} заключва това поле.
 	the signing service is unreachable ({reason})	услугата за подписване е недостъпна ({reason})
 	The signing service lists no certificate for this account.	Услугата за подписване не показва нито един сертификат за този акаунт.
 	the signing service refused to list the certificates	услугата за подписване отказа да изброи сертификатите
@@ -2525,6 +2620,7 @@ action wizard	Start	Старт
 	This compatibility level supports only plain ASCII passwords.	Това ниво на съвместимост поддържа само пароли с обикновени ASCII знаци.
 	This dialog shows the details of a certificate and its chain.	Този диалог показва подробностите за сертификат и неговата верига.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Този документ иска да се отвори в режим на цял екран: страницата изпълва екрана и нищо друго не се показва. Натиснете Esc по всяко време, за да излезете.
+	This document can't be changed: {names}	Този документ не може да бъде променян: {names}
 	This document can't be checked: it couldn't be read for editing	Този документ не може да бъде проверен: не можа да бъде прочетен за редактиране
 	This document contains {n} interactive form fields.	Този документ съдържа {n} интерактивни полета на формуляр.
 	This document does not allow adding form fields	Този документ не позволява добавяне на полета за формуляр
@@ -2538,6 +2634,7 @@ action wizard	Start	Старт
 	This document has no layers.	Този документ няма слоеве.
 	This document has no pages.	Този документ няма страници.
 	This document has no restrictions to lift	Този документ няма ограничения за премахване
+	This document has no signature that can be removed.	Този документ няма подпис, който може да бъде премахнат.
 	This document has no signatures.	Този документ няма подписи.
 	This document has no tagged figures.	Този документ няма етикетирани фигури.
 	This document has no XMP metadata.	Този документ няма XMP метаданни.
@@ -2568,6 +2665,7 @@ action wizard	Start	Старт
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	Тази инсталация се управлява от RPM пакет. Използвайте системния софтуерен мениджър, за да актуализирате PdfCraft.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Това е динамичен XFA формуляр, който PdfCraft все още не може да показва. Виждате заместващата страница на файла.
 	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	Това е еднократно изтегляне от GitHub. След това откриването работи офлайн. Вашите PDF файлове остават на това устройство.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	Това е изображение на подпис, а не цифров подпис: премахва се само знакът на страницата. Оригиналният файл остава непроменен.
 	This is the first PDF in its folder	Това е първият PDF в папката му
 	This is the last PDF in its folder	Това е последният PDF в папката му
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Това е последният опит преди заключване на ПИН кода на токена. Грешен ПИН тук може да го заключи окончателно.
@@ -2582,6 +2680,7 @@ action wizard	Start	Старт
 	This point could not be moved. Try a smaller move.	Тази точка не можа да бъде преместена. Опитайте с по-малко преместване.
 	This printer offers no settings of its own.	Този принтер няма собствени настройки.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Драйверът на този принтер не приема настройки за двустранен печат от други програми и прилага собствената си настройка. Променете я от Свойства…
+	this signature can't be removed on its own	този подпис не може да се премахне самостоятелно
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	тази услуга за подписване не може да се използва: тя изисква вход с OAuth в браузър, който PdfCraft все още не поддържа
 	This tab is already first	Този раздел вече е първи
 	This tab is already last	Този раздел вече е последен
@@ -2631,6 +2730,7 @@ signature pad	Type	Въвеждане
 	Type text	Въведете текст
 	Type the web address.	Въведете уеб адреса.
 	Type your {what}.	Въведете {what}.
+	Uncertain orientations are left unchanged. Deskew fits the full image inside the page.	Несигурната ориентация остава непроменена. Изправянето побира цялото изображение в страницата.
 	Unchecked	Неотметнато
 	Unchecked reads	Непроверени четения
 	Underline text	Подчертай текст
@@ -2640,6 +2740,7 @@ signature pad	Type	Въвеждане
 	Unit	Единица
 	Unknown	Неизвестно
 	Unknown author	Неизвестен автор
+	unknown signer	неизвестен подписал
 	Unlock	Отключи
 	Unlock comment	Отключи коментара
 	Unlock {name}	Отключи {name}
@@ -2653,6 +2754,8 @@ signature pad	Type	Въвеждане
 	Unpin {folder}	Откачи {folder}
 	Unpinned {tool} from Home	{tool} е откачен от Начало
 	Unplaced	Неразположени
+	Unsaved changes	Незапазени промени
+	Unsaved changes to this document are saved in the new file too.	Незаписаните промени в този документ също се записват в новия файл.
 	Unsupported measurements	Неподдържани измервания
 	Update background	Актуализирай фона
 	Update background…	Актуализирай фона…
@@ -2695,6 +2798,9 @@ signature pad	Type	Въвеждане
 	Validate	Проверка
 	Validate all	Провери всички
 	Validate all signatures	Провери всички подписи
+	validated: invalid	проверка: невалиден
+	validated: valid	проверка: валиден
+	validated: validity unknown	проверка: неизвестна валидност
 	Validity ends	Край на валидността
 	Validity starts	Начало на валидността
 	Validity unknown	Неизвестна валидност
@@ -2716,6 +2822,8 @@ signature pad	Type	Въвеждане
 	Viewport rectangle in page points (x, y, width, height)	Правоъгълник на изгледа в точки на страницата (x, y, ширина, височина)
 	Visible Rectangle	Видим правоъгълник
 	Visual	Визуално
+	Visual initials (Fill & Sign, not digital)	Визуални инициали (Попълни и подпиши, не са цифрови)
+	Visual signature (Fill & Sign, not digital)	Визуален подпис (Попълни и подпиши, не е цифров)
 	Voice and Speech	Глас и реч
 	Voice:	Глас:
 	Volume:	Сила на звука:
@@ -2753,6 +2861,7 @@ document scrollbar width	Wide	Широка
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Разглеждате редакция {rev} на „{from}“. Това е моментна снимка: промените тук няма да засегнат оригинала.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Разглеждате подписаната версия на „{from}“ (редакция {rev}). Това е моментна снимка: промените тук няма да засегнат оригинала.
 	You can pin up to {n} folders. Unpin one first.	Можете да закачите до {n} папки. Първо откачете една.
+	You choose where the new version is saved. Continue?	Вие избирате къде да се запише новата версия. Продължаване?
 	You have version {c}. Download the new version from its release page.	Имате версия {c}. Изтеглете новата версия от страницата на изданието.
 	Your changes will be lost if you don't save them.	Промените ви ще бъдат загубени, ако не ги запишете.
 	Your name	Вашето име
@@ -2798,7 +2907,10 @@ document scrollbar width	Wide	Широка
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} в {dir}
 	{names} and {last}	{names} и {last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} сертифицира този документ, без да позволява коментари, и ще отчете тази промяна.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} сертифицира този документ, а премахването на подпис не е промяна, позволена от сертификата.
 	{name} (default)	{name} (по подразбиране)
+	{name} (you)	{name} (вие)
 	{name} can't be combined: {why}	{name} не може да бъде обединен: {why}
 	{name} has no action	{name} няма действие
 	{name} is read-only	{name} е само за четене
@@ -2807,6 +2919,7 @@ document scrollbar width	Wide	Широка
 	{name} — unsaved changes	{name} — незаписани промени
 	{name}: choosing images arrives on the web with file pickers for images	{name}: изборът на изображения в уеб версията ще стане достъпен с инструментите за избор на файлове с изображения
 	{name}: the {other} action isn't supported yet	{name}: действието {other} все още не се поддържа
+	{name}_unsigned.pdf	{name}_без_подпис.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} изчисление вече използва новото име.|{n} изчисления вече използват новото име.
 	{n} contributors · {c} commits	{n} сътрудници · {c} къмита
 	{n} days ago	преди {n} дни
@@ -2844,6 +2957,7 @@ document scrollbar width	Wide	Широка
 	{verb} Background	{verb} фон
 	{verb} Header and Footer	{verb} горен и долен колонтитул
 	{verb} Watermark	{verb} воден знак
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. Файлът {file} е записан и проверен: отваря се отново с всички страници. {history}
 	{who} in this document wants to open this address in your browser:	{who} в този документ иска да отвори този адрес в браузъра ви:
 	{who} in this document wants to open your email app with this address:	{who} в този документ иска да отвори имейл приложението ви с този адрес:
 	{words} on {pages}	{words} на {pages}
@@ -2851,6 +2965,7 @@ document scrollbar width	Wide	Широка
 	— (protection is applied when you save)	— (защитата се прилага при записване)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	„{name}“ беше променен на диска след отварянето или последното записване. Записването сега заменя тази по-нова версия с настоящата.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	„{name}“ има ограничения за защита. Въведете паролата за разрешения, за да ги премахнете.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	„{name}“ е шифрован за определени хора. Изберете своя цифров идентификатор и въведете паролата му, за да го отворите.
 	“{name}” is protected. Enter a password to open it.	„{name}“ е защитен. Въведете парола, за да го отворите.
 	…or paste the raw text here; # headings, - bullets	…или поставете суровия текст тук; # заглавия, - списъци
 	−LOC	−LOC

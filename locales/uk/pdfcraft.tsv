@@ -36,8 +36,11 @@
 	4 x 6 in label (101.6 x 152.4 mm)	Етикетка 4 × 6 дюйма (101,6 × 152,4 мм)
 	9 digit, A letter, O letter or digit, X any character	9 — цифра, A — літера, O — літера або цифра, X — будь-який символ
 	; 1 page already had text	; 1 сторінка вже мала текст
+	; 1 page skipped	; пропущено 1 сторінку
+	; corrected {n} pages	; виправлено сторінок: {n}
 	; failed: {list}	; невдалі: {list}
 	; {n} pages already had text	; сторінки ({n}) вже мали текст
+	; {n} pages skipped	; пропущено сторінок: {n}
 	? of {n}	? із {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: PR: {prs}, комітів: {commits}, +{added} / −{deleted} рядків (Δ {delta}), +{bin_added} / −{bin_deleted} бінарних ресурсів, {first} – {last}
 	`{command}` {when}	`{command}` {when}
@@ -48,6 +51,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	Діагональний водяний знак CONFIDENTIAL на кожній сторінці.
 	a document must keep at least one page	документ має зберігати щонайменше одну сторінку
 	A document needs at least one page: copy instead	Документ потребує щонайменше однієї сторінки: натомість скопіюйте
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Позначка часу документа охоплює весь файл і не є нічиїм підписом, тому її не можна вилучити окремо.
 	a field named {name} already exists	поле з іменем {name} уже існує
 	A form field has additional actions	Поле форми має додаткові дії
 	A link	Посилання
@@ -57,6 +61,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Файл PNG або SVG. Читається з цього місця під час кожного запуску PdfCraft.
 	A script	Сценарій
 	A selected field has no widget on any page, so the fields can't be edited together.	Одне з вибраних полів не має віджета на жодній сторінці, тому поля не можна редагувати разом.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Підпис, що є частиною вмісту сторінки (наприклад, на сканованій сторінці), не є ні полем, ні приміткою, тому його не можна вилучити окремо, а PdfCraft не стирає частини сторінки, щоб його приховати. Щоб прибрати його, вилучіть вміст цієї ділянки («Вилучити вміст») або, якщо підпис — окреме зображення, видаліть його за допомогою «Редагувати PDF».
 	A stream refers to an external file	Потік посилається на зовнішній файл
 	A stream uses LZW compression	Потік використовує стиснення LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Зведення описує призначення й будову таблиці. Додайте атрибут Summary до кожної таблиці.
@@ -101,12 +106,14 @@
 	Add an Action	Додати дію
 	Add an image field	Додати поле зображення
 	Add arrow	Додати стрілку
+	Add at least one recipient.	Додайте принаймні одного одержувача.
 	Add at least two files	Додайте щонайменше два файли
 	Add background	Додати тло
 	Add background…	Додати тло…
 	Add Bates numbering…	Додати нумерацію Бейтса…
 	Add bookmark	Додати закладку
 	Add callout	Додати виноску
+	Add certificate file…	Додати файл сертифіката…
 	Add checkmark	Додати позначку
 	Add circle	Додати коло
 	Add cloud	Додати хмару
@@ -146,6 +153,7 @@
 	Add rectangle	Додати прямокутник
 	Add redaction mark	Додати позначку вилучення
 	Add search index	Додати пошуковий індекс
+	Add searchable text	Додати текст для пошуку
 	Add signature	Додати підпис
 	Add squiggly underline	Додати хвилясте підкреслення
 	Add stamp	Додати штамп
@@ -158,11 +166,13 @@
 	Add the choices people pick from.	Додайте варіанти, з яких користувачі вибиратимуть.
 	Add the files to combine	Додайте файли для об’єднання
 	Add the steps this action runs, in order.	Додайте кроки, які ця дія виконуватиме, у потрібному порядку.
+	Add to dictionary	Додати до словника
 	Add to Trusted Certificates	Додати до довірених сертифікатів
 	Add to trusted certificates	Додати до довірених сертифікатів
 	Add underline	Додати підкреслення
 	Add watermark	Додати водяний знак
 	Add watermark…	Додати водяний знак…
+	Add your digital ID	Додати ваше цифрове посвідчення
 	Add {what}	Додати: {what}
 	Added 1 comment	Додано 1 коментар
 	Added more than once	Додано більше одного разу
@@ -177,6 +187,7 @@
 	Advanced Options {chevron}	Додаткові параметри {chevron}
 	Advanced search…	Розширений пошук…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Після «Підписати» введіть OTT-код із застосунку mSzafir у вікні CloudSigner і підтвердіть підпис у застосунку. Якщо в CloudSigner увімкнено постійний OTT-код, код запитується лише раз на кілька хвилин.
+	AI Assistant	ШІ-помічник
 	AI assistant	ШІ-асистент
 	AI chat isn't available in the web build; use the desktop app or CLI.	ШІ-чат недоступний у вебверсії; скористайтеся настільною програмою або CLI.
 	Algorithm	Алгоритм
@@ -197,6 +208,7 @@
 	All page content is tagged	Увесь вміст сторінок має теги
 	All pages in document	Усі сторінки документа
 	All pages in range	Усі сторінки діапазону
+	All permissions	Усі дозволи
 	All tools	Усі інструменти
 	Allow	Дозволити
 	Allow Rich Text Formatting	Дозволити форматування тексту
@@ -286,6 +298,7 @@ calendar date	August	серпня
 	Auto-detect	Визначати автоматично
 	Auto-rotate pages	Автоматично повертати сторінки
 	Auto-size text to fit redaction region	Автоматично добирати розмір тексту до області вилучення
+	Automatically rotate sideways and upside-down pages	Автоматично повертати бокові та перевернуті сторінки
 	Automatically tag PDF	Автоматично додати теги до PDF
 	Available version: {v}	Доступна версія: {v}
 	average	середнє
@@ -359,9 +372,12 @@ calendar date	August	серпня
 	Center vertically	По центру вертикально
 	Center window on screen	Розмістити вікно по центру екрана
 	Centre	По центру
+	Certificate	Сертифікат
 	Certificate authority	Центр сертифікації
+	Certificate encryption will be applied when you save	Шифрування сертифікатом буде застосовано під час збереження
 	Certificate Viewer	Перегляд сертифіката
 	Certificates	Сертифікати
+	Certification signature (level {p})	Засвідчувальний підпис (рівень {p})
 	Certified by {by}	Засвідчено: {by}
 	Certify	Засвідчити
 	Certify (invisible signature)	Засвідчити (невидимий підпис)
@@ -402,6 +418,7 @@ calendar date	August	серпня
 	Check for accessibility…	Перевірити доступність…
 	Check for updates…	Перевірити оновлення…
 	Check spelling	Перевіряти правопис
+	Check spelling while typing	Перевіряти правопис під час введення
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Перевірте, чи теги читаються в тому порядку, у якому читав би зрячий читач. Виправте порядок інструментом порядку читання або на панелі тегів.
 	Check the pages	Перевірте сторінки
 	Check the pages of {name}: {why}	Перевірте сторінки {name}: {why}
@@ -413,6 +430,7 @@ calendar date	August	серпня
 	Checking Options ({on} of 32 in all categories)	Параметри перевірки ({on} із 32 в усіх категоріях)
 	Checking pages…	Перевірка сторінок…
 	Checkmark	Позначка
+	Choose a digital ID file	Виберіть файл цифрового посвідчення
 	Choose a folder for the exported files	Виберіть теку для експортованих файлів
 	Choose a folder for the extracted pages	Виберіть теку для видобутих сторінок
 	Choose a folder for the results	Виберіть теку для результатів
@@ -423,8 +441,10 @@ calendar date	August	серпня
 	Choose a logo	Виберіть логотип
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Виберіть зображення PNG або JPEG (до 4 МіБ). Прозорість зберігається.
 	Choose a provider.	Виберіть постачальника.
+	Choose a signature that can be removed.	Виберіть підпис, який можна вилучити.
 	Choose a stamp, then click on the page to place it.	Виберіть штамп, а потім клацніть на сторінці, щоб розмістити його.
 	Choose an image	Вибрати зображення
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Виберіть інший файл: оригінал залишиться без змін, а версію без підпису буде збережено поруч.
 	Choose font…	Вибрати шрифт…
 	Choose images	Виберіть зображення
 	Choose image…	Вибрати зображення…
@@ -434,11 +454,13 @@ calendar date	August	серпня
 	Choose reference…	Вибрати зразок…
 	Choose the digital ID that you want to use for signing:	Виберіть цифрове посвідчення для підписування:
 	Choose the module's library file.	Виберіть файл бібліотеки модуля.
+	Choose the signature to remove:	Виберіть підпис для вилучення:
 	Choose where to save the signed file. The service signs it once you have.	Виберіть, куди зберегти підписаний файл. Служба підпише його, щойно ви це зробите.
 	Clean Up	Очищення
 	Clean-up	Очищення
 	Clear all	Очистити все
 	Clear form	Очистити форму
+	Clear personal dictionary	Очистити особистий словник
 	Clear redaction marks	Очистити позначки вилучення
 	Clear search	Очистити пошук
 	Clear selection / close find	Зняти виділення / закрити пошук
@@ -542,6 +564,8 @@ calendar date	August	серпня
 	Copyright notice	Повідомлення про авторське право
 	Copyright status	Статус авторського права
 	Correct recognized text	Виправити розпізнаний текст
+	Correct scans	Виправити скани
+	Corrected scan	Виправлений скан
 	Could not copy the selection because text could not be read on every page	Не вдалося скопіювати виділення, оскільки текст не вдалося прочитати на всіх сторінках
 	Could not mark the selection because text could not be read on every page	Не вдалося позначити виділення, оскільки текст не вдалося прочитати на всіх сторінках
 	Could not save: {e}	Не вдалося зберегти: {e}
@@ -550,6 +574,7 @@ calendar date	August	серпня
 	Couldn't copy the image: {e}	Не вдалося скопіювати зображення: {e}
 	Couldn't create a PDF: {e}	Не вдалося створити PDF: {e}
 	Couldn't download {name}: {e}	Не вдалося завантажити {name}: {e}
+	Couldn't encrypt: {e}	Не вдалося зашифрувати: {e}
 	Couldn't extract pages: {e}	Не вдалося видобути сторінки: {e}
 	Couldn't extract the original PDF: {e}	Не вдалося видобути початковий PDF: {e}
 	Couldn't fit the visible content: {e}	Не вдалося припасувати видимий вміст: {e}
@@ -621,6 +646,7 @@ calendar date	August	серпня
 	Crop Image	Обрізати зображення
 	Crop page	Обітнути сторінку
 	Crop pages	Обітнути сторінки
+	Crop scanner borders to the paper edge	Обрізати поля скану до краю паперу
 	Cross	Хрестик
 key	Ctrl	Ctrl
 	Currency symbol:	Символ валюти:
@@ -630,6 +656,7 @@ key	Ctrl	Ctrl
 	Current page — type a page number or label (such as iv) and press Enter	Поточна сторінка — введіть номер або позначку сторінки (наприклад iv) і натисніть Enter
 	Cursor coordinates	Координати курсора
 	Custom font	Власний шрифт
+	Custom page…	Довільна сторінка…
 	Custom role	Настроювана роль
 	Custom scale:	Власний масштаб:
 	Custom size	Власний розмір
@@ -703,6 +730,7 @@ key	Delete	Delete
 	Diagnostic details	Діагностичні відомості
 	Digital ID	Цифрове посвідчення
 	Digital ID password	Пароль цифрового посвідчення
+	Digital ID required	Потрібне цифрове посвідчення
 	Digital signature	Цифровий підпис
 	Digital Signature Properties	Властивості цифрового підпису
 	Digitally sign	Підписати цифровим підписом
@@ -753,6 +781,7 @@ key	Delete	Delete
 	Document sanitized. Save to finish: saving rewrites the whole file.	Документ очищено. Збережіть для завершення: збереження перезаписує весь файл.
 	Document scrollbar width	Ширина смуги прокручування документа
 	Document structure provides a logical reading order	Структура документа забезпечує логічний порядок читання
+	Document timestamp	Позначка часу документа
 	Document title is showing in title bar	Заголовок документа показано в заголовку вікна
 	Documents and view	Документи й перегляд
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Документи з понад 20 сторінками потребують закладок для навігації. Додайте закладки до основних розділів.
@@ -805,6 +834,9 @@ key	Delete	Delete
 	Duplicate field	Дублювати поле
 	Duplicate page	Дублювати сторінку
 	Duplicate pages	Дублювати сторінки
+	Duplicate pages with new field names	Дублювати сторінки з новими назвами полів
+	Duplicate pages — 1 field renamed	Дублювати сторінки — 1 поле перейменовано
+	Duplicate pages — fields renamed	Дублювати сторінки — поля перейменовано
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Динамічну форму XFA скомпоновано за її шаблоном: {pages}, {fields}.
 	Dynamic zoom	Динамічне масштабування
 	E-Sign	Електронний підпис
@@ -845,7 +877,11 @@ comment menu	Edit	Редагувати
 	Enable text access for screen reader devices for the visually impaired	Дозволити доступ до тексту засобам читання з екрана для людей із порушеннями зору
 	Enabled	Увімкнено
 	Encrypt	Зашифрувати
+	Encrypt for recipient	Зашифрувати для одержувача
+	Encrypt for recipients	Зашифрувати для одержувачів
+	Encrypt with Certificate	Шифрування сертифікатом
 	Encrypt with certificate	Зашифрувати сертифікатом
+	Encrypt with certificate…	Зашифрувати сертифікатом…
 	Encryption	Шифрування
 key	End	End
 	End entity	Кінцевий суб’єкт
@@ -887,6 +923,7 @@ key	Esc	Esc
 	Expand all tools	Розгорнути всі інструменти
 	Expand tag	Розгорнути тег
 	Expand top-level bookmarks	Розгорнути закладки верхнього рівня
+	Expires {date}	Дійсний до {date}
 	Explain	Пояснити
 	Export & Convert	Експорт і конвертація
 	Export a PDF	Експортувати PDF
@@ -946,6 +983,7 @@ calendar date	February	лютого
 	Field properties…	Властивості поля…
 	Field value is in range:	Значення поля в діапазоні:
 	Field value is not validated	Значення поля не перевіряється
+	Field: {field}	Поле: {field}
 	Field: {field} on page {p}	Поле: {field} на сторінці {p}
 	Fields to reset (comma-separated; empty: all)	Поля для скидання (через кому; порожньо: усі)
 	Figure {i} of {n}{page}	Рисунок {i} із {n}{page}
@@ -1065,6 +1103,7 @@ calendar date	February	лютого
 	Found {n} untagged content problems.	Знайдено проблем із нетегованим вмістом: {n}.
 	From a PDF page or an image	Із сторінки PDF або зображення
 	From colour	Із кольору
+	From template	Із шаблону
 	From {file}	Із {file}
 	From:	Від:
 	Front side only	Лише лицьовий бік
@@ -1084,6 +1123,7 @@ calendar date	February	лютого
 	Grayscale Images	Зображення у відтінках сірого
 	Green on black	Зелений на чорному
 	Greyscale	Відтінки сірого
+	Group select	Вибір групи
 	H / Space (hold)	H / Пробіл (утримувати)
 	Hand (H)	Рука (H)
 	Has JavaScript actions (run in M6)	Має дії JavaScript (виконуються на етапі M6)
@@ -1174,6 +1214,7 @@ key	Home	Home
 	Installed version: {v}	Встановлена версія: {v}
 	Integrity	Цілісність
 	Intended usage	Призначення
+	Interface and appearance	Інтерфейс і вигляд
 	Interface font	Шрифт інтерфейсу
 	Interface size	Розмір інтерфейсу
 	Intersections	Перетини
@@ -1191,6 +1232,7 @@ key	Home	Home
 	Issued by: 	Видавець: 
 	Issued to	Кому видано
 	Issuer	Видавець
+	it was still in the document afterwards, so the change was undone	після вилучення він залишився в документі, тому зміну скасовано
 	Item List	Список елементів
 	Item:	Елемент:
 	Items marked Ready work today.	Елементи з позначкою «Готово» вже працюють.
@@ -1210,6 +1252,7 @@ calendar date	January	січня
 calendar date	July	липня
 	June	Червень
 calendar date	June	червня
+	Keep an empty signature field to sign again	Залишити порожнє поле підпису, щоб підписати знову
 	Keep source fonts	Зберегти початкові шрифти
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Залишати заголовок вікна Windows над панеллю вкладок. Якщо вимкнено, заголовком стає панель вкладок із кнопками вікна праворуч; макетам прив'язки (Snap Layouts) на кнопці розгортання потрібен заголовок Windows.
 	Keep tool selected	Залишати інструмент вибраним
@@ -1223,12 +1266,14 @@ calendar date	June	червня
 	Landscape and Portrait Pages	Альбомні й книжкові сторінки
 	Landscape Pages	Альбомні сторінки
 	Landscape pages	Альбомні сторінки
+	Language and spelling	Мова та правопис
 	Larger pages	Більші сторінки
 	Larger text	Більший текст
 	Larger thumbnails	Збільшити мініатюри
 	Last page	Остання сторінка
 	Later in calculation order	Пізніше в порядку обчислень
 	Later in tab order	Пізніше в порядку табуляції
+	Latin (accented)	Латиниця (з діакритикою)
 	Layer options	Параметри шарів
 	Layers panel	Панель шарів
 	Layers Panel and Page	Панель шарів і сторінка
@@ -1473,6 +1518,7 @@ calendar date	May	травня
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Принтери не знайдено. Перевірте, що принтер установлено, а диспетчер друку працює, і знову відкрийте «Друк».
 	No problems found: the document conforms to {level}.	Проблем не виявлено: документ відповідає {level}.
 	No raw file yet	Вхідного файлу поки немає
+	No recipients yet.	Одержувачів ще немає.
 	No reference yet	Зразка поки немає
 	No release notes were provided.	Приміток до випуску немає.
 	No scanner found	Сканер не знайдено
@@ -1484,6 +1530,7 @@ calendar date	May	травня
 	No size estimate: {e}	Немає оцінки розміру: {e}
 	No status has been set.	Статус не задано.
 	no such document	такого документа немає
+	No suggestions	Немає варіантів
 	No tools match your search.	Немає інструментів, що відповідають пошуку.
 	No unlinked web addresses were found in the text	У тексті не знайдено вебадрес без посилань
 	No untagged content was found.	Нетегованого вмісту не знайдено.
@@ -1491,7 +1538,10 @@ calendar date	May	травня
 	none	немає
 	None (prefix only)	Немає (лише префікс)
 	None found	Нічого не знайдено
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	Жоден з одержувачів не є вашим цифровим посвідченням: ви не зможете відкрити збережений документ.
+	None of these signatures can be removed.	Жоден із цих підписів не можна вилучити.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Жоден із цих файлів неможливо перетворити на PDF; використовуйте PDF, зображення або файли .txt
+	None of your digital IDs can open this document.	Жодне з ваших цифрових посвідчень не може відкрити цей документ.
 	None — everything is allowed	Немає — усе дозволено
 scroll speed	Normal	Звичайна
 	Normal page	Звичайна сторінка
@@ -1540,13 +1590,16 @@ animation effects	On	Увімкнено
 	One {f} file per page, named after the document.	Один файл {f} на сторінку з назвою документа.
 	One-time code (OTP)	Одноразовий код (OTP)
 	Only allow this if you trust the source document.	Дозволяйте це лише тоді, коли довіряєте вихідному документу.
+	Only certificates with RSA keys can be recipients.	Одержувачами можуть бути лише сертифікати з ключами RSA.
 	Only change the colour of black text or line art	Змінювати лише колір чорного тексту та ліній
 	Only checked properties will change. Mixed means the selected fields have different values.	Зміняться лише позначені властивості. «Різні значення» означає, що значення вибраних полів відрізняються.
+	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Обрізаються лише чіткі краї паперу. Нерозрізненні білі поля зберігаються.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Продовжуйте лише якщо довіряєте цьому документу. Адреса може містити інформацію з документа, наприклад дані, введені у форму.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Надсилайте лише тоді, коли довіряєте цьому документу та адресі призначення. GET додає значення форми до URL.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Надсилайте лише якщо довіряєте документу та адресату. Увесь PDF залишить цей комп’ютер.
 	Only send if you trust this document and destination. The form values leave this computer.	Надсилайте дані, лише якщо довіряєте документу й адресі призначення. Значення форми залишать цей комп’ютер.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Змінюється лише вміст сторінок: посилання, коментарі, поля форми й закладки на оригінальних сторінках залишаються.
+	Only the recipients can open the document, each with the private key of their own certificate.	Відкрити документ можуть лише одержувачі — кожен за допомогою закритого ключа власного сертифіката.
 	Open a document first	Спочатку відкрийте документ
 	Open a PDF ({key})	Відкрити PDF ({key})
 	Open a PDF to measure it.	Відкрийте PDF для вимірювання.
@@ -1577,6 +1630,7 @@ animation effects	On	Увімкнено
 	Opened from a detached CAdES signature — read-only.	Відкрито з від'єднаного підпису CAdES — лише для читання.
 	Opened with	Відкрито за допомогою
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Відкрито, але налаштування захисту не дозволяють об’єднання. Введіть пароль дозволів.
+	Opening documents	Відкриття документів
 	Opening the browser's print dialog…	Відкривається діалог друку браузера…
 	Opening {name}…	Відкривається {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Відкриває налаштування драйвера принтера. Вони зберігаються для кожного друку з цього комп’ютера; вибрані тут кількість копій, двосторонній друк, відтінки сірого й папір і далі діють.
@@ -1609,6 +1663,8 @@ animation effects	On	Увімкнено
 	Other elements that require alternate text	Інші елементи, які потребують альтернативного тексту
 	Other options	Інші параметри
 	Other provider (CSC API)	Інший постачальник (CSC API)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Залишилися інші підписи, тому копію збережено як оновлення підписаного файлу: вилучений підпис залишається в попередній редакції, звідки його можна відновити.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Залишилися інші підписи, тому вилучений підпис і далі є в попередній редакції файлу; повторно перевірте решту підписів.
 	Outdent	Зменшити відступ
 	Outline colour:	Колір контуру:
 	Outline over page	Контури поверх сторінки
@@ -1644,6 +1700,7 @@ animation effects	On	Увімкнено
 	Page {label}	Сторінка {label}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Сторінка змінена після додавання тла, тому її власна біла заливка залишається вимкненою: {pages}. На білому папері вона виглядає так само.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Сторінка з власною білою заливкою, яка приховає тло: {pages}. Замінити
+	Page {p}	Сторінка {p}
 	Page {p} of {n}	Сторінка {p} із {n}
 	pages	сторінки
 	Pages counted	Пораховані сторінки
@@ -1833,6 +1890,7 @@ animation effects	On	Увімкнено
 	Reason: 	Причина: 
 	Recent colours	Нещодавні кольори
 	Recent files to keep	Recent files to keep
+	Recipients	Одержувачі
 	Recognize scanned text automatically	Автоматично розпізнавати сканований текст
 	Recognize Text	Розпізнати текст
 	Recognize text	Розпізнати текст
@@ -1880,6 +1938,7 @@ animation effects	On	Увімкнено
 	Remove "{name}" from this list? The certificate stays with the signing service.	Прибрати «{name}» з цього списку? Сертифікат залишається у службі підписування.
 	Remove "{name}" from this list? The file itself is not deleted.	Прибрати «{name}» з цього списку? Сам файл не видаляється.
 	Remove all links	Видалити всі посилання
+	Remove and Save As…	Вилучити й зберегти як…
 	Remove background	Видалити тло
 	Remove checkmark	Зняти позначку
 	Remove Crop	Прибрати обрізання
@@ -1895,6 +1954,10 @@ animation effects	On	Увімкнено
 	Remove redaction marks	Видалити позначки вилучення
 	Remove saved {what}	Видалити збережене: {what}
 	Remove security	Зняти захист
+	Remove Signature	Вилучити підпис
+	Remove signature	Вилучити підпис
+	Remove signature…	Вилучити підпис…
+	Remove the signature {name}	Вилучити підпис {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Вилучіть цей кінцевий тег із порядку читання та позначте його безпосередній вміст як артефакт
 	Remove unreferenced named destinations	Видалити іменовані призначення без посилань
 	Remove unused objects and merge identical ones	Видалити невикористані об’єкти й об’єднати однакові
@@ -1907,9 +1970,14 @@ animation effects	On	Увімкнено
 	Remove {n} pages	Видалити сторінки: {n}
 	Removed 1 hidden item. Save to remove them from the file.	Видалено 1 прихований елемент. Збережіть, щоб видалити його з файлу.
 	Removed 1 link	Вилучено 1 посилання
+	Removed the signature {field} and kept its empty field	Вилучено підпис {field}, порожнє поле збережено
+	Removed the signature {field} with its field	Вилучено підпис {field} разом із полем
+	Removed the visual signature on page {p}	Вилучено візуальний підпис на сторінці {p}
 	Removed {n} hidden items. Save to remove them from the file.	Видалено прихованих елементів: {n}. Збережіть, щоб видалити їх із файлу.
 	Removed {n} links	Вилучено посилань: {n}
 	Removing the background puts the page's own backdrop back.	Вилучення тла повертає власну білу заливку сторінки.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	Вилучення цього підпису змінює документ і робить цей підпис недійсним в отриманій версії. Це може вплинути на інші підписи та засвідчення. Оригінальний файл залишається без змін.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	Вилучення цього підпису змінює документ і робить цей підпис недійсним в отриманій версії. Оригінальний файл залишається без змін.
 	Removing white margins… page {d} of {t}	Вилучення білих полів… сторінка {d} з {t}
 	Rename bookmark	Перейменувати закладку
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Відтворення: hayro (початковий рушій) · Інтерфейс: egui · Піктограми: Lucide (ISC) · Шрифти: Inter, JetBrains Mono, Dancing Script (OFL)
@@ -1964,6 +2032,7 @@ animation effects	On	Увімкнено
 	Resume reading	Продовжити читання
 	Retain existing	Зберегти наявне
 	Retry	Повторити
+	Return to document	Повернутися до документа
 	Reveal in File Explorer	Показати у файловому провіднику
 	Reverse closed arrow	Зворотна закрита стрілка
 	Reverse open arrow	Зворотна відкрита стрілка
@@ -2012,6 +2081,8 @@ animation effects	On	Увімкнено
 	Run JavaScript	Виконати JavaScript
 	Running action… file {d} of {t}	Виконання дії… файл {d} із {t}
 	Runtime	Середовище
+	Safety margin (pt)	Захисне поле (пт)
+	Same as interface	Як в інтерфейсі
 	Same as interface ({language})	Як в інтерфейсі ({language})
 	Sanitize	Очистити конфіденційні дані
 	Sanitize document	Очистити документ від конфіденційних даних
@@ -2027,6 +2098,7 @@ animation effects	On	Увімкнено
 	Save as PDF/A-3b	Зберегти як PDF/A-3b
 	Save as PDF/UA	Зберегти як PDF/UA
 	Save as PDF/X	Зберегти як PDF/X
+	Save as template	Зберегти як шаблон
 	Save as to cloud	Зберегти як у хмарі
 	Save as to cloud…	Зберегти як у хмарі…
 	Save as…	Зберегти як…
@@ -2053,13 +2125,17 @@ animation effects	On	Увімкнено
 	Saved {place}: {before} → {after} (not smaller){detail}	Збережено {place}: {before} → {after} (не менше){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Збережено {place}: {before} → {after} (менше на {pct}%){detail}
 	Saved, but reopening failed: {e}	Збережено, але не вдалося відкрити повторно: {e}
+	Saves document	Зберігає документ
 	Saving… {pct}%	Збереження… {pct}%
 	Scale corner {n}	Масштабувати від кута {n}
 	Scale object	Масштабувати об’єкт
 	Scale relative to target page	Масштаб відносно цільової сторінки
 	Scan	Сканувати
 	Scan & OCR	Сканування й OCR
+	Scan and text recognition	Сканування та розпізнавання тексту
+	Scan correction	Виправлення скану
 	Scan next page	Сканувати наступну сторінку
+	Scan processing cancelled	Обробку сканів скасовано
 	Scanned pages need OCR. Reading order follows extracted page text.	Скановані сторінки потребують OCR. Порядок читання відповідає витягнутому тексту сторінки.
 	Scanned text detected	Виявлено сканований текст
 	Scanner	Сканер
@@ -2088,6 +2164,7 @@ animation effects	On	Увімкнено
 	Search tools and commands	Пошук інструментів і команд
 	Search tools and commands…	Пошук інструментів і команд…
 	Search tools…	Шукати інструменти…
+	Searchable Image	Зображення з пошуком
 	Searchable Image (Exact)	Зображення з пошуком (точне)
 	Searching…	Пошук…
 	Searching… {s} of {p} pages	Пошук… {s} із {p} сторінок
@@ -2235,6 +2312,7 @@ key	Shift	Shift
 	Signatures	Підписи
 	Signatures and seals are not carried over or checked.	Підписи й печатки не переносяться і не перевіряються.
 	Signatures panel	Панель підписів
+	Signed after this signature, so what they signed includes it: {names}.	Підписи, додані після цього, чий підписаний вміст його охоплює: {names}.
 	Signed and all signatures are valid.	Підписано, і всі підписи дійсні.
 	Signed and saved to {path}	Підписано й збережено в {path}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Підписано {signer} {time}; вміст не відповідає підписаному; довіру до підписувача не перевірено.
@@ -2284,6 +2362,11 @@ key	Space	Пробіл
 	Space Audit	Аналіз місця
 	Spacing between copies	Відстань між копіями
 	Speed:	Швидкість:
+	Spelling checks stay on this device.	Перевірка правопису виконується на цьому пристрої.
+	Spelling dictionary unavailable	Орфографічний словник недоступний
+	Spelling language	Мова перевірки правопису
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	Позначки правопису не змінюють документ. Клацніть підкреслене слово правою кнопкою, щоб побачити варіанти.
+	Spelling suggestions	Варіанти виправлення
 	Split document	Розділити документ
 	Split document…	Розділити документ…
 	Split into files…	Розділити на файли…
@@ -2307,6 +2390,8 @@ action wizard	Start	Почати
 	Steps	Кроки
 	Sticky note	Нотатка
 	Stop reading	Зупинити читання
+	Straighten scanned page	Вирівняти відскановану сторінку
+	Straighten skewed scans	Вирівнювати нахилені скани
 	Strength: {s}	Надійність: {s}
 	Strikethrough text	Закреслити текст
 	String length (0 turns it off)	Довжина нитки (0 вимикає)
@@ -2320,12 +2405,14 @@ certificate	Subject	Власник сертифіката
 	Submit PDF document	Надіслати документ PDF
 	Submit XFDF data	Надіслати дані XFDF
 	Subscript	Підрядковий
+	Suggest edits	Запропонувати зміни
 	sum (+)	сума (+)
 	Summarize	Створити зведення
 	Summarize comments	Створити зведення коментарів
 	Summarize Options	Параметри зведення
 	Summarize with AI	Створити зведення за допомогою ШІ
 	Superscript	Надрядковий
+	Swap width and height	Поміняти ширину й висоту
 	Switch light / dark theme	Перемкнути світлу / темну тему
 	Switch page theme	Змінити тему сторінки
 	Switch to List view to change the pages it takes.	Перейдіть до вигляду списком, щоб змінити, які сторінки взяти.
@@ -2418,6 +2505,7 @@ certificate	Subject	Власник сертифіката
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Документ відкривається без пароля; цей пароль потрібен для зміни обмежень. Він застосовується під час збереження.
 	The document was changed in another window. Check your text, then apply it again.	Документ змінено в іншому вікні. Перевірте текст і застосуйте його знову.
 	The document was closed before it could be saved.	Документ було закрито до того, як його вдалося зберегти.
+	The document will no longer be certified.	Документ більше не буде засвідчено.
 	The document's security settings don't allow copying text and images	Налаштування захисту документа не дозволяють копіювати текст і зображення
 	The document's security settings don't allow filling in form fields	Налаштування захисту документа не дозволяють заповнювати поля форми
 	The document's security settings don't allow printing	Налаштування захисту документа не дозволяють друк
@@ -2426,6 +2514,7 @@ certificate	Subject	Власник сертифіката
 	The field properties could not be changed.	Не вдалося змінити властивості полів.
 	The field properties dialog is no longer open.	Вікно властивостей полів більше не відкрите.
 	The field {name} no longer exists.	Поле {name} більше не існує.
+	The fields this signature locked ({names}) can be changed again.	Поля, які блокував цей підпис ({names}), знову можна буде змінювати.
 	The font must include Latin letters and numbers for interface controls.	Шрифт має містити латинські літери та цифри для елементів інтерфейсу.
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Шрифти, якими пише PdfCraft, не можуть відобразити «{c}» ({code}), тому в усіх програмах перегляду PDF на його місці буде ?. Текст збережено.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Форма запитує надсилання до {u}; PdfCraft не надсилає дані форми. Збережіть документ, щоб зберегти введені дані.
@@ -2446,13 +2535,16 @@ certificate	Subject	Власник сертифіката
 	The linked PDF opened, but its page destination was out of range.	Пов’язаний PDF відкрито, але сторінка призначення поза межами діапазону.
 	The module's tokens hold no digital ID PdfCraft can sign with.	Токени модуля не містять цифрового посвідчення, яким PdfCraft може підписувати.
 	the name is not a plain file name	назва не є простою назвою файлу
+	The new file has no signature left and no earlier revision holding it.	У новому файлі не залишилося жодного підпису й немає попередньої редакції, яка б його зберігала.
 	The newest {n} of {total} PDFs	Найновіші {n} PDF із {total}
 	The objects are already aligned.	Об’єкти вже вирівняні.
 	The operation failed.	Операція завершилася невдало.
 	The order saved in the PDF needs tidying	Порядок, збережений у PDF, потребує впорядкування
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Інші підписи ({names}) повідомлятимуть, що документ змінився після підписання. Перевірте їх повторно: ніщо не гарантує, що вони залишаться дійсними.
 	The page has changed; select the image again	Сторінка змінилася; виберіть зображення ще раз
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Сторінки видобуто, але не видалено, бо документ змінився, поки ви вибирали теку.
 	the password is incorrect	неправильний пароль
+	The password is incorrect.	Неправильний пароль.
 	The password is only used to read the file; it isn't saved.	Пароль використовується лише для читання файлу; він не зберігається.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифти тексту PDF не можуть відобразити «{c}» ({code}). Виберіть підтримуваний текст.
 	The PIN is incorrect.	Неправильний PIN-код.
@@ -2465,6 +2557,7 @@ certificate	Subject	Власник сертифіката
 	The release has ambiguous packages. Choose a package on the official release page.	У випуску є кілька сумісних пакетів. Виберіть пакет на офіційній сторінці випусків.
 	The release is not a published stable update. Try again later.	Це не опубліковане стабільне оновлення. Спробуйте пізніше.
 	The replacement file doesn't have that many pages.	Файл заміни не має такої кількості сторінок.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Обмеження діють для одержувачів без «Усі дозволи». Застосовується під час збереження.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	рядки занадто низькі: збільште висоту області, зменште кількість рядків або інтервал між ними
 	The same password is tried on each file.	Той самий пароль перевіряється для кожного файлу.
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Справжня кількість пікселів на дюйм екрана. Відкалібруйте лінійкою, щоб реальний розмір (100%) показував сторінки в їхньому справжньому розмірі.
@@ -2473,7 +2566,9 @@ certificate	Subject	Власник сертифіката
 	The selected redaction is unavailable or invalid.	Вибрана область видалення недоступна або недійсна.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Сеанс із {provider} завершився. Увійдіть знову в розділі «Налаштувати цифрове посвідчення».
 	The shared folder:	Спільна тека:
+	The signature was not removed: {e}	Підпис не вилучено: {e}
 	The signature will be invisible.	Підпис буде невидимим.
+	The signature {names} locks this field.	Підпис {names} блокує це поле.
 	the signing service is unreachable ({reason})	служба підписування недоступна ({reason})
 	The signing service lists no certificate for this account.	Служба підписування не показує жодного сертифіката для цього облікового запису.
 	the signing service refused to list the certificates	служба підписування відмовилася показати список сертифікатів
@@ -2512,6 +2607,7 @@ certificate	Subject	Власник сертифіката
 	This compatibility level supports only plain ASCII passwords.	Цей рівень сумісності підтримує лише паролі з простих символів ASCII.
 	This dialog shows the details of a certificate and its chain.	Це вікно показує відомості про сертифікат і його ланцюжок.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Цей документ просить відкрити його в повноекранному режимі: сторінка заповнює екран, і більше нічого не показано. Натисніть Esc будь-коли, щоб вийти.
+	This document can't be changed: {names}	Цей документ не можна змінити: {names}
 	This document can't be checked: it couldn't be read for editing	Цей документ неможливо перевірити: не вдалося прочитати його для редагування
 	This document contains {n} interactive form fields.	Цей документ містить інтерактивні поля форми: {n}.
 	This document does not allow adding form fields	Цей документ не дозволяє додавати поля форми
@@ -2525,6 +2621,7 @@ certificate	Subject	Власник сертифіката
 	This document has no layers.	Цей документ не має шарів.
 	This document has no pages.	Цей документ не має сторінок.
 	This document has no restrictions to lift	Цей документ не має обмежень, які можна зняти
+	This document has no signature that can be removed.	У цьому документі немає підпису, який можна вилучити.
 	This document has no signatures.	Цей документ не має підписів.
 	This document has no tagged figures.	У цьому документі немає рисунків із тегами.
 	This document has no XMP metadata.	Цей документ не має метаданих XMP.
@@ -2555,6 +2652,7 @@ certificate	Subject	Власник сертифіката
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	Це встановлення належить пакету RPM. Оновіть PdfCraft у системному менеджері програм.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Це динамічна форма XFA, яку PdfCraft ще не може відобразити. Ви бачите сторінку-заглушку файлу.
 	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	Це одноразове завантаження з GitHub. Після цього виявлення працює без інтернету. Ваші PDF залишаються на цьому пристрої.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	Це зображення підпису, а не цифровий підпис: вилучається лише позначка на сторінці. Оригінальний файл залишається без змін.
 	This is the first PDF in its folder	Це перший PDF у його теці
 	This is the last PDF in its folder	Це останній PDF у його теці
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Це остання спроба перед блокуванням PIN-коду токена. Неправильний PIN-код тут може заблокувати його назавжди.
@@ -2569,6 +2667,7 @@ certificate	Subject	Власник сертифіката
 	This point could not be moved. Try a smaller move.	Цю точку не вдалося перемістити. Спробуйте менше зміщення.
 	This printer offers no settings of its own.	Цей принтер не має власних налаштувань.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Драйвер цього принтера не приймає налаштування двобічного друку від інших програм, тому діє його власне налаштування. Змініть його у вікні Властивості…
+	this signature can't be removed on its own	цей підпис не можна вилучити окремо
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	цю службу підписування не можна використати: вона потребує входу через OAuth у браузері, якого PdfCraft поки не підтримує
 	This tab is already first	Ця вкладка вже перша
 	This tab is already last	Ця вкладка вже остання
@@ -2618,12 +2717,14 @@ signature pad	Type	Ввести
 	Type text	Ввести текст
 	Type the web address.	Введіть вебадресу.
 	Type your {what}.	Введіть {what}.
+	Uncertain orientations are left unchanged. Deskew fits the full image inside the page.	Непевно визначена орієнтація не змінюється. Під час вирівнювання все зображення вміщується на сторінці.
 	Unchecked	Без позначки
 	Unchecked reads	Неперевірені читання
 	Underline text	Підкреслити текст
 	Undid {label}	Скасовано: {label}
 	Unit	Одиниця
 	Unknown author	Невідомий автор
+	unknown signer	невідомий підписувач
 	Unlock comment	Розблокувати коментар
 	Unlock {name}	Розблокувати {name}
 	Unlock {n} files	Розблокувати файли: {n}
@@ -2636,6 +2737,7 @@ signature pad	Type	Ввести
 	Unpin {folder}	Відкріпити {folder}
 	Unpinned {tool} from Home	{tool} відкріплено від головної
 	Unplaced	Не розміщено
+	Unsaved changes to this document are saved in the new file too.	Незбережені зміни цього документа також буде збережено в новому файлі.
 	Unsupported measurements	Непідтримувані вимірювання
 	Update background	Оновити тло
 	Update background…	Оновити тло…
@@ -2679,6 +2781,9 @@ signature pad	Type	Ввести
 	Validate	Перевірка
 	Validate all	Перевірити все
 	Validate all signatures	Перевірити всі підписи
+	validated: invalid	перевірка: недійсний
+	validated: valid	перевірка: дійсний
+	validated: validity unknown	перевірка: дійсність невідома
 	Validity ends	Кінець строку дії
 	Validity starts	Початок строку дії
 	Validity unknown	Дійсність невідома
@@ -2700,6 +2805,8 @@ signature pad	Type	Ввести
 	Viewport rectangle in page points (x, y, width, height)	Прямокутник області перегляду в пунктах сторінки (x, y, ширина, висота)
 	Visible Rectangle	Видимий прямокутник
 	Visual	Візуальні
+	Visual initials (Fill & Sign, not digital)	Візуальні ініціали (Заповнення й підпис, не цифрові)
+	Visual signature (Fill & Sign, not digital)	Візуальний підпис (Заповнення й підпис, не цифровий)
 	Voice and Speech	Голос і мовлення
 	Voice:	Голос:
 	Volume:	Гучність:
@@ -2737,6 +2844,7 @@ document scrollbar width	Wide	Широка
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Ви переглядаєте редакцію {rev} документа «{from}». Це знімок: зміни тут не вплинуть на оригінал.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Ви переглядаєте підписану версію документа «{from}» (редакція {rev}). Це знімок: зміни тут не вплинуть на оригінал.
 	You can pin up to {n} folders. Unpin one first.	Можна закріпити не більше {n} тек. Спочатку відкріпіть одну з них.
+	You choose where the new version is saved. Continue?	Ви вибираєте, де зберегти нову версію. Продовжити?
 	You have version {c}. Download the new version from its release page.	У вас версія {c}. Завантажте нову версію зі сторінки випуску.
 	Your name	Ваше ім’я
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy або yy рік · m або mm місяць · mmm або mmmm назва місяця · d або dd день · ddd або dddd день тижня. H, h, M, s і t — літери часу, їх не можна використовувати окремо: поставте {escape} перед літерою, щоб показати її як є.
@@ -2781,7 +2889,10 @@ document scrollbar width	Wide	Широка
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} до {dir}
 	{names} and {last}	{names} і {last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} засвідчує цей документ без дозволу на коментарі й повідомить про цю зміну.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} засвідчує цей документ, а вилучення підпису не належить до змін, які дозволяє це засвідчення.
 	{name} (default)	{name} (типовий)
+	{name} (you)	{name} (ви)
 	{name} can't be combined: {why}	{name} неможливо об’єднати: {why}
 	{name} has no action	{name} не має дії
 	{name} is read-only	{name} доступне лише для читання
@@ -2790,6 +2901,7 @@ document scrollbar width	Wide	Широка
 	{name} — unsaved changes	{name} — незбережені зміни
 	{name}: choosing images arrives on the web with file pickers for images	{name}: вибір зображень з’явиться у вебверсії разом із вибором файлів зображень
 	{name}: the {other} action isn't supported yet	{name}: дія {other} ще не підтримується
+	{name}_unsigned.pdf	{name}_без_підпису.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} обчислення тепер використовує нову назву.|{n} обчислення тепер використовують нову назву.|{n} обчислень тепер використовують нову назву.
 	{n} contributors · {c} commits	Учасників: {n} · Комітів: {c}
 	{n} days ago	{n} дн. тому
@@ -2827,6 +2939,7 @@ document scrollbar width	Wide	Широка
 	{verb} Background	{verb}: тло
 	{verb} Header and Footer	{verb}: колонтитули
 	{verb} Watermark	{verb}: водяний знак
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. Файл {file} збережено й перевірено: він знову відкривається з усіма сторінками. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	{who} у цьому документі намагається відкрити адресу, яку PdfCraft не відкриває: {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} у цьому документі намагається відкрити адресу, яку PdfCraft не відкриває: {e}. З документів відкриваються лише вебпосилання (http, https) та посилання на електронну пошту (mailto).
 	{who} in this document wants to open this address in your browser:	{who} у цьому документі хоче відкрити цю адресу у вашому браузері:
@@ -2836,6 +2949,7 @@ document scrollbar width	Wide	Широка
 	— (protection is applied when you save)	— (захист застосовується під час збереження)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	«{name}» змінено на диску після відкриття або останнього збереження. Збереження зараз замінить ту новішу версію цією.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	«{name}» має обмеження захисту. Введіть пароль дозволів, щоб зняти їх.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	«{name}» зашифровано для певних людей. Виберіть своє цифрове посвідчення та введіть його пароль, щоб відкрити файл.
 	“{name}” is protected. Enter a password to open it.	«{name}» захищено. Введіть пароль, щоб відкрити файл.
 	…or paste the raw text here; # headings, - bullets	…або вставте сюди вхідний текст; # заголовки, - списки
 	−LOC	−LOC

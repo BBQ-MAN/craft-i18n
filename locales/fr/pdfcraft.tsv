@@ -40,8 +40,11 @@
 	4 x 6 in label (101.6 x 152.4 mm)	Étiquette 4 × 6 po (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 chiffre, A lettre, O lettre ou chiffre, X n'importe quel caractère
 	; 1 page already had text	; 1 page contenait déjà du texte
+	; 1 page skipped	; 1 page ignorée
+	; corrected {n} pages	; {n} pages corrigées
 	; failed: {list}	; échecs : {list}
 	; {n} pages already had text	; {n} pages contenaient déjà du texte
+	; {n} pages skipped	; {n} pages ignorées
 	? of {n}	? sur {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login} : {prs} PR, {commits} commits, +{added} / −{deleted} lignes (Δ {delta}), +{bin_added} / −{bin_deleted} fichiers binaires, {first} – {last}
 	`{command}` {when}	`{command}` {when}
@@ -52,6 +55,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	Un filigrane diagonal CONFIDENTIAL sur chaque page.
 	a document must keep at least one page	un document doit conserver au moins une page
 	A document needs at least one page: copy instead	Un document doit contenir au moins une page : copiez plutôt
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Un horodatage du document couvre tout le fichier et n'est la signature de personne : il ne peut donc pas être supprimé seul.
 	a field named {name} already exists	un champ nommé {name} existe déjà
 	A font isn't embedded	Une police n'est pas incorporée
 	A form field has additional actions	Un champ de formulaire contient des actions supplémentaires
@@ -62,6 +66,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un fichier PNG ou SVG. Il est lu à cet emplacement à chaque démarrage de PdfCraft.
 	A script	Un script
 	A selected field has no widget on any page, so the fields can't be edited together.	Un champ sélectionné n'a de widget sur aucune page : les champs ne peuvent pas être modifiés ensemble.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Une signature qui fait partie du contenu d'une page, comme sur une page numérisée, n'est ni un champ ni une annotation : elle ne peut donc pas être supprimée seule, et PdfCraft n'efface pas des parties de page pour la masquer. Pour la retirer, biffez cette zone (Biffer) ou, si la signature est une image à part, supprimez l'image avec Modifier un PDF.
 	A stream refers to an external file	Un flux fait référence à un fichier externe
 	A stream uses LZW compression	Un flux utilise la compression LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Un résumé décrit l'objet et la disposition du tableau. Ajoutez un attribut Summary à chaque tableau.
@@ -111,6 +116,7 @@
 	Add an Action	Ajouter une action
 	Add an image field	Ajouter un champ d'image
 	Add arrow	Ajouter une flèche
+	Add at least one recipient.	Ajoutez au moins un destinataire.
 	Add at least two files	Ajoutez au moins deux fichiers
 	Add background	Ajouter un arrière-plan
 	Add background…	Ajouter un arrière-plan…
@@ -118,6 +124,7 @@
 	Add bookmark	Ajouter un signet
 	Add boundary point	Ajouter un point de limite
 	Add callout	Ajouter une légende
+	Add certificate file…	Ajouter un fichier de certificat…
 	Add checkmark	Ajouter une coche
 	Add circle	Ajouter un cercle
 	Add cloud	Ajouter un nuage
@@ -158,6 +165,7 @@
 	Add rectangle	Ajouter un rectangle
 	Add redaction mark	Ajouter une marque de biffure
 	Add search index	Ajouter un index de recherche
+	Add searchable text	Ajouter du texte consultable
 	Add signature	Ajouter une signature
 	Add smaller unit	Ajouter une unité plus petite
 	Add squiggly underline	Ajouter un soulignement ondulé
@@ -172,11 +180,13 @@
 	Add the files to combine	Ajoutez les fichiers à combiner
 	Add the PDFs to combine	Ajoutez les PDF à combiner
 	Add the steps this action runs, in order.	Ajoutez les étapes que cette action exécute, dans l'ordre.
+	Add to dictionary	Ajouter au dictionnaire
 	Add to Trusted Certificates	Ajouter aux certificats approuvés
 	Add to trusted certificates	Ajouter aux certificats approuvés
 	Add underline	Ajouter un soulignement
 	Add watermark	Ajouter un filigrane
 	Add watermark…	Ajouter un filigrane…
+	Add your digital ID	Ajouter votre ID numérique
 	Add {what}	Ajouter {what}
 	Added 1 comment	1 commentaire ajouté
 	Added more than once	Ajouté plusieurs fois
@@ -193,6 +203,7 @@
 	Advanced search…	Recherche avancée…
 	Advanced unit formats	Formats d’unités avancés
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Après Signer, saisissez le code OTT de l'app mSzafir dans la fenêtre de CloudSigner et approuvez la signature dans l'app. Avec le code OTT persistant activé dans CloudSigner, le code n'est demandé qu'une fois toutes les quelques minutes.
+	AI Assistant	Assistant IA
 	AI assistant	Assistant IA
 	AI chat isn't available in the web build; use the desktop app or CLI.	Le chat IA n’est pas disponible dans la version web ; utilisez l’application de bureau ou l’interface en ligne de commande.
 	Algorithm	Algorithme
@@ -211,6 +222,7 @@
 	All page content is tagged	Tout le contenu de la page est balisé
 	All pages in document	Toutes les pages du document
 	All pages in range	Toutes les pages de l'intervalle
+	All permissions	Toutes les autorisations
 	All tools	Tous les outils
 	Allow	Autoriser
 	Allow Rich Text Formatting	Autoriser le formatage de texte enrichi
@@ -304,6 +316,7 @@ calendar date	August	août
 	Auto-detect	Détection automatique
 	Auto-rotate pages	Pivoter les pages automatiquement
 	Auto-size text to fit redaction region	Ajuster automatiquement le corps du texte à la zone de biffure
+	Automatically rotate sideways and upside-down pages	Pivoter automatiquement les pages de côté ou à l’envers
 	Automatically tag PDF	Baliser le PDF automatiquement
 	Available version: {v}	Version disponible : {v}
 	average	la moyenne
@@ -381,10 +394,13 @@ certificate	Basic constraints	Contraintes de base
 	Center vertically	Centrer verticalement
 	Center window on screen	Centrer la fenêtre à l'écran
 	Centre	Centrer
+	Certificate	Certificat
 	Certificate authority	Autorité de certification
+	Certificate encryption will be applied when you save	Le chiffrement par certificat sera appliqué à l'enregistrement
 	Certificate Signing	Signature de certificats
 	Certificate Viewer	Visionneuse de certificats
 	Certificates	Certificats
+	Certification signature (level {p})	Signature de certification (niveau {p})
 	Certified by {by}	Certifié par {by}
 	Certify	Certifier
 	Certify (invisible signature)	Certifier (signature invisible)
@@ -430,6 +446,7 @@ certificate	Basic constraints	Contraintes de base
 	Check for accessibility…	Vérifier l'accessibilité…
 	Check for updates…	Rechercher des mises à jour…
 	Check spelling	Vérifier l'orthographe
+	Check spelling while typing	Vérifier l’orthographe pendant la saisie
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Vérifiez que les balises se lisent dans l'ordre qu'adopterait un lecteur voyant. Utilisez l'outil Ordre de lecture ou le panneau Balises pour le corriger.
 	Check the pages	Vérifiez les pages
 	Check the pages of {name}: {why}	Vérifiez les pages de {name} : {why}
@@ -442,6 +459,7 @@ certificate	Basic constraints	Contraintes de base
 	Checking pages…	Vérification des pages…
 	Checkmark	Coche
 	Choose a control point inside the viewport.	Choisissez un point de contrôle dans la zone de visualisation.
+	Choose a digital ID file	Choisir un fichier d'ID numérique
 	Choose a digital ID.	Choisissez un ID numérique.
 	Choose a file…	Choisir un fichier…
 	Choose a folder for the exported files	Choisissez un dossier pour les fichiers exportés
@@ -456,11 +474,13 @@ certificate	Basic constraints	Contraintes de base
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Choisissez une image PNG ou JPEG (jusqu’à 4 Mio). La transparence est conservée.
 	Choose a point, then the two endpoints of a reference line.	Choisissez un point, puis les deux extrémités d’une ligne de référence.
 	Choose a provider.	Choisissez un fournisseur.
+	Choose a signature that can be removed.	Choisissez une signature pouvant être supprimée.
 	Choose a stamp, then click on the page to place it.	Choisissez un tampon, puis cliquez sur la page pour le placer.
 	Choose a visible point on the model.	Choisissez un point visible sur le modèle.
 	Choose advanced unit formats first.	Choisissez d’abord les formats d’unités avancés.
 	Choose an endpoint, the angle vertex, then the other endpoint.	Choisissez une extrémité, le sommet de l’angle, puis l’autre extrémité.
 	Choose an image	Choisir une image
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Choisissez un autre fichier : l'original reste tel quel et la version sans la signature est enregistrée à côté.
 	Choose font…	Choisir une police…
 	Choose images	Choisir des images
 	Choose image…	Choisir une image…
@@ -470,6 +490,7 @@ certificate	Basic constraints	Contraintes de base
 	Choose reference…	Choisir une référence…
 	Choose the digital ID that you want to use for signing:	Choisissez l'ID numérique à utiliser pour signer :
 	Choose the module's library file.	Choisissez le fichier de bibliothèque du module.
+	Choose the signature to remove:	Choisissez la signature à supprimer :
 	Choose the two endpoints.	Choisissez les deux extrémités.
 	Choose three points on the circle.	Choisissez trois points sur le cercle.
 	Choose where to save the signed file. The service signs it once you have.	Choisissez où enregistrer le fichier signé. Le service le signe dès que c'est fait.
@@ -477,6 +498,7 @@ certificate	Basic constraints	Contraintes de base
 	Clean-up	Nettoyage
 	Clear all	Tout effacer
 	Clear form	Effacer le formulaire
+	Clear personal dictionary	Vider le dictionnaire personnel
 	Clear points	Effacer les points
 	Clear redaction marks	Effacer les marques de biffure
 	Clear search	Effacer la recherche
@@ -589,6 +611,8 @@ certificate	Basic constraints	Contraintes de base
 	Copyright notice	Mention de copyright
 	Copyright status	Statut du copyright
 	Correct recognized text	Corriger le texte reconnu
+	Correct scans	Corriger les numérisations
+	Corrected scan	Numérisation corrigée
 	Could not copy the selection because text could not be read on every page	Impossible de copier la sélection, car le texte de toutes les pages n’a pas pu être lu
 	Could not mark the selection because text could not be read on every page	Impossible de marquer la sélection, car le texte de toutes les pages n’a pas pu être lu
 	Could not save: {e}	Impossible d'enregistrer : {e}
@@ -597,6 +621,7 @@ certificate	Basic constraints	Contraintes de base
 	Couldn't copy the image: {e}	Impossible de copier l'image : {e}
 	Couldn't create a PDF: {e}	Impossible de créer un PDF : {e}
 	Couldn't download {name}: {e}	Impossible de télécharger {name} : {e}
+	Couldn't encrypt: {e}	Impossible de chiffrer : {e}
 	Couldn't extract pages: {e}	Impossible d'extraire les pages : {e}
 	Couldn't extract the original PDF: {e}	Impossible d'extraire le PDF d'origine : {e}
 	Couldn't fit the visible content: {e}	Impossible d'ajuster au contenu visible : {e}
@@ -673,6 +698,7 @@ certificate	Basic constraints	Contraintes de base
 	Crop image	Recadrer l'image
 	Crop page	Rogner la page
 	Crop pages	Rogner les pages
+	Crop scanner borders to the paper edge	Rogner les bordures du scan au bord du papier
 key	Ctrl	Ctrl
 	Currency symbol:	Symbole monétaire :
 	Current document	Document actuel
@@ -681,6 +707,7 @@ key	Ctrl	Ctrl
 	Current page — type a page number or label (such as iv) and press Enter	Page actuelle — saisissez un numéro ou une étiquette de page (comme iv) et appuyez sur Entrée
 	Cursor coordinates	Coordonnées du curseur
 	Custom font	Police personnalisée
+	Custom page…	Page personnalisée…
 	Custom role	Rôle personnalisé
 	Custom scale:	Échelle personnalisée :
 	Custom size	Taille personnalisée
@@ -761,6 +788,7 @@ key	Delete	Suppr
 	Diagnostic details	Détails du diagnostic
 	Digital ID	ID numérique
 	Digital ID password	Mot de passe de l'ID numérique
+	Digital ID required	ID numérique requis
 	Digital Signature	Signature numérique
 	Digital signature	Signature numérique
 	Digital Signature Properties	Propriétés de la signature numérique
@@ -814,6 +842,7 @@ key	Delete	Suppr
 	document security store	magasin de sécurité du document
 	document structure	structure du document
 	Document structure provides a logical reading order	La structure du document fournit un ordre de lecture logique
+	Document timestamp	Horodatage du document
 	Document title is showing in title bar	Le titre du document s'affiche dans la barre de titre
 	Documents and view	Documents et affichage
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Les documents de plus de 20 pages ont besoin de signets pour la navigation. Ajoutez des signets pour les sections principales.
@@ -870,6 +899,9 @@ key	Delete	Suppr
 	Duplicate field	Dupliquer le champ
 	Duplicate page	Dupliquer la page
 	Duplicate pages	Dupliquer des pages
+	Duplicate pages with new field names	Dupliquer les pages avec de nouveaux noms de champs
+	Duplicate pages — 1 field renamed	Dupliquer des pages — 1 champ renommé
+	Duplicate pages — fields renamed	Dupliquer des pages — champs renommés
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Formulaire XFA dynamique mis en page à partir de son modèle : {pages}, {fields}.
 	Dynamic zoom	Zoom dynamique
 	E-Sign	Signature électronique
@@ -914,7 +946,11 @@ comment menu	Edit	Modifier
 	Enabled	Activé
 	Encipher Only	Chiffrement seul
 	Encrypt	Chiffrer
+	Encrypt for recipient	Chiffrer pour un destinataire
+	Encrypt for recipients	Chiffrer pour des destinataires
+	Encrypt with Certificate	Chiffrer avec un certificat
 	Encrypt with certificate	Chiffrer avec un certificat
+	Encrypt with certificate…	Chiffrer avec un certificat…
 	Encryption	Chiffrement
 key	End	Fin
 	End entity	Entité finale
@@ -965,6 +1001,7 @@ key	Esc	Échap
 	Expand all tools	Développer tous les outils
 	Expand tag	Développer la balise
 	Expand top-level bookmarks	Développer les signets de premier niveau
+	Expires {date}	Expire le {date}
 	Explain	Expliquer
 	Export & Convert	Exporter et convertir
 	Export a PDF	Exporter un PDF
@@ -1027,6 +1064,7 @@ calendar date	February	février
 	Field properties…	Propriétés du champ…
 	Field value is in range:	La valeur du champ est dans l'intervalle :
 	Field value is not validated	La valeur du champ n'est pas validée
+	Field: {field}	Champ : {field}
 	Field: {field} on page {p}	Champ : {field} à la page {p}
 	Fields to reset (comma-separated; empty: all)	Champs à réinitialiser (séparés par des virgules ; vide : tous)
 	Figure {i} of {n}{page}	Figure {i} sur {n}{page}
@@ -1157,6 +1195,7 @@ calendar date	February	février
 calendar weekday	Fr	Ve
 	From a PDF page or an image	À partir d'une page PDF ou d'une image
 	From colour	À partir d'une couleur
+	From template	À partir d’un modèle
 	From {file}	Depuis {file}
 	From:	De :
 	Front side only	Recto seulement
@@ -1179,6 +1218,7 @@ calendar weekday	Fr	Ve
 	Grayscale Images	Images en niveaux de gris
 	Green on black	Vert sur noir
 	Greyscale	Niveaux de gris
+	Group select	Sélection de groupe
 	H / Space (hold)	H / Espace (maintenir)
 	Hand (H)	Main (H)
 	Has JavaScript actions (run in M6)	Contient des actions JavaScript (exécutées dans M6)
@@ -1274,6 +1314,7 @@ key	Home	Début
 	Integrity	Intégrité
 	Intended usage	Usage prévu
 certificate	Intended usage	Usage prévu
+	Interface and appearance	Interface et apparence
 	Interface font	Police de l’interface
 	Interface size	Taille de l'interface
 	Intersections	Intersections
@@ -1293,6 +1334,7 @@ certificate	Issued by	Émis par
 certificate	Issued to	Émis pour
 	Issuer	Émetteur
 certificate	Issuer	Émetteur
+	it was still in the document afterwards, so the change was undone	elle était encore dans le document après la suppression, la modification a donc été annulée
 	Item List	Liste d'éléments
 	Item:	Élément :
 	Items marked Ready work today.	Les éléments marqués Prêt fonctionnent déjà.
@@ -1314,6 +1356,7 @@ calendar date	January	janvier
 calendar date	July	juillet
 	June	juin
 calendar date	June	juin
+	Keep an empty signature field to sign again	Conserver un champ de signature vide pour signer à nouveau
 	Keep source fonts	Conserver les polices originales
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Garder la barre de titre de Windows au-dessus de la barre d’onglets. Désactivé, la barre d’onglets fait office de barre de titre, avec les boutons de la fenêtre à sa droite ; les dispositions d’ancrage (Snap Layouts) sur le bouton Agrandir ont besoin de la barre de titre de Windows.
 	Keep tool selected	Garder l'outil sélectionné
@@ -1330,12 +1373,14 @@ certificate	Key usage	Usage de la clé
 	Landscape and Portrait Pages	Pages en paysage et en portrait
 	Landscape Pages	Pages en paysage
 	Landscape pages	Pages en paysage
+	Language and spelling	Langue et orthographe
 	Larger pages	Pages plus grandes
 	Larger text	Texte plus grand
 	Larger thumbnails	Agrandir les vignettes
 	Last page	Dernière page
 	Later in calculation order	Plus tard dans l'ordre de calcul
 	Later in tab order	Plus tard dans l'ordre de tabulation
+	Latin (accented)	Latin (avec accents)
 	Latitude	Latitude
 	Layer options	Options des calques
 	Layers panel	Panneau des calques
@@ -1603,6 +1648,7 @@ calendar weekday	Mo	Lu
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Aucune imprimante trouvée. Vérifiez que l’imprimante est installée et que le spouleur d’impression fonctionne, puis rouvrez Imprimer.
 	No problems found: the document conforms to {level}.	Aucun problème trouvé : le document est conforme à {level}.
 	No raw file yet	Pas encore de fichier brut
+	No recipients yet.	Aucun destinataire pour l'instant.
 	No reference yet	Pas encore de référence
 	No release notes were provided.	Aucune note de version n’a été fournie.
 	No saved measurements in this view.	Aucune mesure enregistrée dans cette vue.
@@ -1615,6 +1661,7 @@ calendar weekday	Mo	Lu
 	No size estimate: {e}	Pas d'estimation de taille : {e}
 	No status has been set.	Aucun état n'a été défini.
 	no such document	document introuvable
+	No suggestions	Aucune suggestion
 	no summary	pas de résumé
 	No tools match your search.	Aucun outil ne correspond à votre recherche.
 	No unlinked web addresses were found in the text	Aucune adresse web non liée n'a été trouvée dans le texte
@@ -1624,7 +1671,10 @@ calendar weekday	Mo	Lu
 	none	aucun
 	None (prefix only)	Aucun (préfixe seulement)
 	None found	Aucun élément trouvé
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	Aucun destinataire n'est l'un de vos ID numériques : vous ne pourrez pas ouvrir le document enregistré.
+	None of these signatures can be removed.	Aucune de ces signatures ne peut être supprimée.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Aucun de ces fichiers ne peut être converti en PDF ; utilisez des PDF, des images ou des fichiers .txt
+	None of your digital IDs can open this document.	Aucun de vos ID numériques ne peut ouvrir ce document.
 	None — everything is allowed	Aucune — tout est autorisé
 scroll speed	Normal	Normale
 	Normal page	Page normale
@@ -1679,14 +1729,17 @@ animation effects	On	Activés
 	One {f} file per page, named after the document.	Un fichier {f} par page, nommé d'après le document.
 	One-time code (OTP)	Code à usage unique (OTP)
 	Only allow this if you trust the source document.	N'autorisez cette action que si vous faites confiance au document source.
+	Only certificates with RSA keys can be recipients.	Seuls les certificats à clé RSA peuvent être destinataires.
 	Only change the colour of black text or line art	Ne changer que la couleur du texte noir et des traits
 	Only checked properties will change. Mixed means the selected fields have different values.	Seules les propriétés cochées seront modifiées. « Valeurs différentes » indique que les champs sélectionnés ont des valeurs différentes.
+	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Seuls les bords nets du papier sont rognés. Les bordures blanches indiscernables sont conservées.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Ne continuez que si vous faites confiance à ce document. Une adresse peut transmettre des informations du document, par exemple ce que vous avez saisi dans son formulaire.
 	Only send if you trust this document and destination. GET puts form values in the URL.	N’envoyez que si vous faites confiance à ce document et à sa destination. GET place les valeurs du formulaire dans l’URL.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Envoyez uniquement si vous faites confiance à ce document et à la destination. Le PDF entier quitte cet ordinateur.
 	Only send if you trust this document and destination. The form values leave this computer.	N’envoyez ces données que si vous faites confiance au document et à la destination. Les valeurs du formulaire quittent cet ordinateur.
 	Only the document's owner can change its security (open it with the permissions password)	Seul le propriétaire du document peut modifier sa protection (ouvrez-le avec le mot de passe d'autorisations)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Seul le contenu de la page change : les liens, commentaires, champs de formulaire et signets des pages d'origine sont conservés.
+	Only the recipients can open the document, each with the private key of their own certificate.	Seuls les destinataires peuvent ouvrir le document, chacun avec la clé privée de son propre certificat.
 	Opacity:	Opacité :
 	Open a document first	Ouvrez d'abord un document
 	Open a PDF ({key})	Ouvrir un PDF ({key})
@@ -1719,6 +1772,7 @@ animation effects	On	Activés
 	Opened from a detached CAdES signature — read-only.	Ouvert depuis une signature CAdES détachée — lecture seule.
 	Opened with	Ouvert avec
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Ouvert, mais ses paramètres de sécurité n'autorisent pas la combinaison. Saisissez le mot de passe des autorisations.
+	Opening documents	Ouverture des documents
 	Opening the browser's print dialog…	Ouverture de la boîte de dialogue d'impression du navigateur…
 	Opening {name}…	Ouverture de {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Ouvre les préférences du pilote d'imprimante. Elles sont enregistrées pour toutes les impressions de cet ordinateur ; les copies, le recto verso, les niveaux de gris et le papier choisis ici s'appliquent toujours.
@@ -1752,6 +1806,8 @@ animation effects	On	Activés
 	Other elements that require alternate text	Autres éléments qui exigent un texte de remplacement
 	Other options	Autres options
 	Other provider (CSC API)	Autre fournisseur (API CSC)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	D'autres signatures restent, la copie est donc enregistrée comme mise à jour du fichier signé : la signature supprimée reste dans sa révision précédente, d'où elle peut être récupérée.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	D'autres signatures restent, la signature supprimée est donc toujours dans la révision précédente du fichier ; vérifiez à nouveau les signatures restantes.
 	Outdent	Diminuer le retrait
 	Outline	Contour
 	Outline colour:	Couleur du contour :
@@ -1793,6 +1849,7 @@ animation effects	On	Activés
 	Page {n} of {total}	Page {n} sur {total}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	La page {pages} a changé après l'ajout de l'arrière-plan, son propre remplissage blanc reste donc désactivé. Elle paraît identique sur papier blanc.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	La page {pages} a son propre remplissage blanc, qui masquerait l'arrière-plan. Le remplacer
+	Page {p}	Page {p}
 	Page {p} doesn't tab in structure order	La page {p} ne se parcourt pas dans l'ordre de la structure
 	Page {p} of {n}	Page {p} sur {n}
 	Page {p}: {n} untagged content item	Page {p} : {n} élément de contenu non balisé
@@ -2002,6 +2059,7 @@ certificate	Public key	Clé publique
 	Reason: 	Motif : 
 	Recent colours	Couleurs récentes
 	Recent files to keep	Recent files to keep
+	Recipients	Destinataires
 	Recognize scanned text automatically	Reconnaître automatiquement le texte numérisé
 	Recognize Text	Reconnaître le texte
 	Recognize text	Reconnaître le texte
@@ -2054,6 +2112,7 @@ certificate	Public key	Clé publique
 	Remove "{name}" from this list? The certificate stays with the signing service.	Retirer « {name} » de cette liste ? Le certificat reste auprès du service de signature.
 	Remove "{name}" from this list? The file itself is not deleted.	Retirer « {name} » de cette liste ? Le fichier lui-même n’est pas supprimé.
 	Remove all links	Retirer tous les liens
+	Remove and Save As…	Supprimer et enregistrer sous…
 	Remove background	Retirer l'arrière-plan
 	Remove boundary point	Supprimer le point de limite
 	Remove checkmark	Retirer la coche
@@ -2071,6 +2130,10 @@ certificate	Public key	Clé publique
 	Remove redaction marks	Retirer les marques de biffure
 	Remove saved {what}	Supprimer {what} (version enregistrée)
 	Remove security	Retirer la protection
+	Remove Signature	Supprimer la signature
+	Remove signature	Supprimer la signature
+	Remove signature…	Supprimer la signature…
+	Remove the signature {name}	Supprimer la signature {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Retirez cette balise feuille de l’ordre de lecture et marquez son contenu direct comme artefact
 	Remove unit	Supprimer l’unité
 	Remove unreferenced named destinations	Retirer les destinations nommées non référencées
@@ -2086,9 +2149,14 @@ certificate	Public key	Clé publique
 	Remove {standard} identification	Supprimer l'identification {standard}
 	Removed 1 hidden item. Save to remove them from the file.	1 élément masqué retiré. Enregistrez pour le supprimer du fichier.
 	Removed 1 link	1 lien retiré
+	Removed the signature {field} and kept its empty field	Signature {field} supprimée, son champ est conservé vide
+	Removed the signature {field} with its field	Signature {field} supprimée avec son champ
+	Removed the visual signature on page {p}	Signature visuelle de la page {p} supprimée
 	Removed {n} hidden items. Save to remove them from the file.	{n} éléments masqués retirés. Enregistrez pour les supprimer du fichier.
 	Removed {n} links	Liens retirés : {n}
 	Removing the background puts the page's own backdrop back.	Supprimer l'arrière-plan rétablit le remplissage blanc propre à la page.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	Supprimer cette signature modifie le document et invalide cette signature dans la version obtenue. Cela peut affecter les autres signatures et certifications. Le fichier original reste tel quel.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	Supprimer cette signature modifie le document et invalide cette signature dans la version obtenue. Le fichier original reste tel quel.
 	Removing white margins… page {d} of {t}	Suppression des marges blanches… page {d} sur {t}
 	Rename bookmark	Renommer le signet
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Rendu : hayro (amorçage) · Interface : egui · Icônes : Lucide (ISC) · Polices : Inter, JetBrains Mono, Dancing Script (OFL)
@@ -2144,6 +2212,7 @@ certificate	Public key	Clé publique
 	Resume reading	Reprendre la lecture
 	Retain existing	Conserver l'existant
 	Retry	Réessayer
+	Return to document	Revenir au document
 	Rev. {rev}: Certified by an unknown signer	Rév. {rev} : certifié par un signataire inconnu
 	Rev. {rev}: Certified by {name}	Rév. {rev} : certifié par {name}
 	Rev. {rev}: Signed by an unknown signer	Rév. {rev} : signé par un signataire inconnu
@@ -2199,6 +2268,8 @@ certificate	Public key	Clé publique
 	Running action… file {d} of {t}	Exécution de l'action… fichier {d} sur {t}
 	Runtime	Moteur
 calendar weekday	Sa	Sa
+	Safety margin (pt)	Marge de sécurité (pt)
+	Same as interface	Identique à l’interface
 	Same as interface ({language})	Comme l'interface ({language})
 	Sanitize	Assainir
 	Sanitize document	Assainir le document
@@ -2216,6 +2287,7 @@ calendar weekday	Sa	Sa
 	Save as PDF/A-3b	Enregistrer comme PDF/A-3b
 	Save as PDF/UA	Enregistrer comme PDF/UA
 	Save as PDF/X	Enregistrer comme PDF/X
+	Save as template	Enregistrer comme modèle
 	Save as to cloud	Enregistrer sous dans le cloud
 	Save as to cloud…	Enregistrer sous dans le cloud…
 	Save as {level}	Enregistrer comme {level}
@@ -2247,6 +2319,7 @@ calendar weekday	Sa	Sa
 	Saved {place}: {before} → {after} (not smaller){detail}	Enregistré {place} : {before} → {after} (pas plus petit){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Enregistré {place} : {before} → {after} ({pct} % plus petit){detail}
 	Saved, but reopening failed: {e}	Enregistré, mais la réouverture a échoué : {e}
+	Saves document	Enregistre le document
 	Saving… {pct}%	Enregistrement… {pct} %
 	Scale corner {n}	Redimensionner depuis le coin {n}
 	Scale description	Description de l’échelle
@@ -2254,7 +2327,10 @@ calendar weekday	Sa	Sa
 	Scale relative to target page	Échelle relative à la page cible
 	Scan	Numériser
 	Scan & OCR	Numérisation et OCR
+	Scan and text recognition	Numérisation et reconnaissance de texte
+	Scan correction	Correction de numérisation
 	Scan next page	Numériser la page suivante
+	Scan processing cancelled	Traitement des numérisations annulé
 	Scanned pages need OCR. Reading order follows extracted page text.	Les pages numérisées nécessitent un OCR. L'ordre de lecture suit le texte extrait de la page.
 	Scanned text detected	Texte numérisé détecté
 	Scanner	Numériseur
@@ -2284,6 +2360,7 @@ calendar weekday	Sa	Sa
 	Search tools and commands	Rechercher des outils et des commandes
 	Search tools and commands…	Rechercher des outils et des commandes…
 	Search tools…	Rechercher des outils…
+	Searchable Image	Image consultable
 	Searchable Image (Exact)	Image recherchable (exacte)
 	Searching…	Recherche…
 	Searching… {s} of {p} pages	Recherche… {s} sur {p} pages
@@ -2445,6 +2522,7 @@ key	Shift	Maj
 	Signatures	Signatures
 	Signatures and seals are not carried over or checked.	Les signatures et les sceaux ne sont ni repris ni vérifiés.
 	Signatures panel	Panneau des signatures
+	Signed after this signature, so what they signed includes it: {names}.	Signatures ajoutées après celle-ci, dont le contenu signé l'inclut : {names}.
 	Signed and all signatures are valid.	Signé et toutes les signatures sont valides.
 	Signed and saved to {path}	Signé et enregistré dans {path}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Signé par {signer} le {time} ; le contenu ne correspond pas à ce qui a été signé ; la confiance du signataire n'a pas été vérifiée.
@@ -2498,6 +2576,11 @@ key	Space	Espace
 	Space Audit	Audit de l'espace
 	Spacing between copies	Espacement entre les copies
 	Speed:	Vitesse :
+	Spelling checks stay on this device.	La vérification orthographique reste sur cet appareil.
+	Spelling dictionary unavailable	Dictionnaire orthographique indisponible
+	Spelling language	Langue de correction
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	Les marques orthographiques ne modifient pas le document. Faites un clic droit sur un mot souligné pour voir les suggestions.
+	Spelling suggestions	Suggestions orthographiques
 	Split document	Fractionner le document
 	Split document…	Fractionner le document…
 	Split into files…	Fractionner en fichiers…
@@ -2521,6 +2604,8 @@ action wizard	Start	Démarrer
 	Sticky note	Note
 	Still rendering — this page is unusually complex…	Rendu toujours en cours : cette page est exceptionnellement complexe…
 	Stop reading	Arrêter la lecture
+	Straighten scanned page	Redresser la page numérisée
+	Straighten skewed scans	Redresser les pages numérisées de travers
 	Strength: {s}	Robustesse : {s}
 	Strikethrough text	Barrer le texte
 	String length (0 turns it off)	Longueur du fil (0 le désactive)
@@ -2535,12 +2620,14 @@ certificate	Subject	Titulaire
 	Submit PDF document	Envoyer le document PDF
 	Submit XFDF data	Envoyer les données XFDF
 	Success	Succès
+	Suggest edits	Suggérer des modifications
 	sum (+)	la somme (+)
 	Summarize	Résumer
 	Summarize comments	Résumer les commentaires
 	Summarize Options	Options du résumé
 	Summarize with AI	Résumer avec l'IA
 	Surfaces	Surfaces
+	Swap width and height	Permuter largeur et hauteur
 	Switch light / dark theme	Basculer entre les thèmes clair et sombre
 	Switch page theme	Changer le thème de la page
 	Switch to List view to change the pages it takes.	Passez à la vue en liste pour modifier les pages prises.
@@ -2653,6 +2740,7 @@ calendar weekday	Th	Je
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Le document s'ouvre sans mot de passe ; ce mot de passe est nécessaire pour modifier les restrictions. Il est appliqué à l'enregistrement.
 	The document was changed in another window. Check your text, then apply it again.	Le document a été modifié dans une autre fenêtre. Vérifiez votre texte, puis appliquez-le de nouveau.
 	The document was closed before it could be saved.	Le document a été fermé avant de pouvoir être enregistré.
+	The document will no longer be certified.	Le document ne sera plus certifié.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Les informations de révocation incorporées au document montrent que le certificat du signataire n'a pas été révoqué.
 	The document's security settings don't allow copying text and images	Les paramètres de protection du document n'autorisent pas la copie de texte et d'images
 	The document's security settings don't allow filling in form fields	Les paramètres de protection du document n'autorisent pas le remplissage des champs de formulaire
@@ -2665,6 +2753,7 @@ calendar weekday	Th	Je
 	The field properties could not be changed.	Les propriétés des champs n'ont pas pu être modifiées.
 	The field properties dialog is no longer open.	La boîte de dialogue des propriétés des champs n'est plus ouverte.
 	The field {name} no longer exists.	Le champ {name} n'existe plus.
+	The fields this signature locked ({names}) can be changed again.	Les champs verrouillés par cette signature ({names}) pourront de nouveau être modifiés.
 	the first heading is an H{n}; headings should not skip levels	le premier titre est un H{n} ; les niveaux de titre ne doivent pas être sautés
 	the first row number can be at most {max}	le numéro de la première ligne peut être au maximum {max}
 	The font must include Latin letters and numbers for interface controls.	La police doit contenir des lettres latines et des chiffres pour les commandes de l’interface.
@@ -2691,10 +2780,12 @@ calendar weekday	Th	Je
 	The model viewport is too narrow to display.	La zone du modèle est trop étroite pour l’affichage.
 	The module's tokens hold no digital ID PdfCraft can sign with.	Les jetons du module ne contiennent aucun ID numérique avec lequel PdfCraft peut signer.
 	the name is not a plain file name	le nom n'est pas un simple nom de fichier
+	The new file has no signature left and no earlier revision holding it.	Le nouveau fichier ne contient plus aucune signature, ni de révision précédente qui la conserve.
 	The newest {n} of {total} PDFs	Les {n} PDF les plus récents sur {total}
 	The objects are already aligned.	Les objets sont déjà alignés.
 	The operation failed.	L'opération a échoué.
 	The order saved in the PDF needs tidying	L'ordre enregistré dans le PDF doit être nettoyé
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Les autres signatures ({names}) indiqueront que le document a changé après leur signature. Vérifiez-les à nouveau : rien ne garantit qu'elles restent valides.
 	The page has changed; select the image again	La page a changé ; sélectionnez de nouveau l'image
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Les pages ont été extraites mais pas supprimées, car le document a changé pendant que vous choisissiez un dossier.
 	the password is incorrect	le mot de passe est incorrect
@@ -2714,6 +2805,7 @@ calendar weekday	Th	Je
 	The release has ambiguous packages. Choose a package on the official release page.	Les paquets de cette version sont ambigus. Choisissez-en un sur la page officielle des versions.
 	The release is not a published stable update. Try again later.	Cette version n’est pas une mise à jour stable publiée. Réessayez plus tard.
 	The replacement file doesn't have that many pages.	Le fichier de remplacement n'a pas autant de pages.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Les restrictions s'appliquent aux destinataires sans « Toutes les autorisations ». Appliqué à l'enregistrement.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	les lignes sont trop basses : agrandissez la zone en hauteur, ou utilisez moins de lignes ou un espacement des lignes plus petit
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	La valeur de la signature RSA n'a pas la longueur du module de la clé (octets nuls de tête supprimés ou ajoutés) ; elle a tout de même été lue.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	Le DigestInfo de la signature RSA n'a pas de paramètre NULL (d'anciens outils de signature l'écrivent ainsi) ; il a tout de même été lu.
@@ -2737,7 +2829,9 @@ calendar weekday	Th	Je
 	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	La signature est codée en BER (longueurs indéfinies) plutôt qu'en DER ; elle a été lue avec tolérance.
 	The signature uses the legacy adbe.x509.rsa_sha1 format.	La signature utilise l'ancien format adbe.x509.rsa_sha1.
 	The signature value does not match the signer's certificate: the signature is corrupt.	La valeur de la signature ne correspond pas au certificat du signataire : la signature est corrompue.
+	The signature was not removed: {e}	La signature n'a pas été supprimée : {e}
 	The signature will be invisible.	La signature sera invisible.
+	The signature {names} locks this field.	La signature {names} verrouille ce champ.
 	The signature's byte range does not exclude exactly its contents.	La plage d'octets de la signature n'exclut pas exactement son contenu.
 	The signature's byte range does not match the file.	La plage d'octets de la signature ne correspond pas au fichier.
 	The signature's signed attributes have no content type, which CMS requires; it was read anyway.	Les attributs signés de la signature n'ont pas de type de contenu, exigé par CMS ; elle a néanmoins été lue.
@@ -2804,6 +2898,7 @@ calendar weekday	Th	Je
 	This compatibility level supports only plain ASCII passwords.	Ce niveau de compatibilité n'accepte que les mots de passe ASCII simples.
 	This dialog shows the details of a certificate and its chain.	Cette boîte de dialogue montre le détail d'un certificat et de sa chaîne.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Ce document demande à s’ouvrir en mode plein écran : la page remplit l’écran et rien d’autre n’est affiché. Appuyez sur Échap à tout moment pour le quitter.
+	This document can't be changed: {names}	Ce document ne peut pas être modifié : {names}
 	This document can't be checked: it couldn't be read for editing	Ce document ne peut pas être vérifié : il n'a pas pu être lu pour modification
 	This document contains {n} interactive form fields.	Ce document contient {n} champs de formulaire interactifs.
 	This document does not allow adding form fields	Ce document ne permet pas d’ajouter des champs de formulaire
@@ -2818,6 +2913,7 @@ calendar weekday	Th	Je
 	This document has no layers.	Ce document ne contient aucun calque.
 	This document has no pages.	Ce document ne contient aucune page.
 	This document has no restrictions to lift	Ce document n'a aucune restriction à lever
+	This document has no signature that can be removed.	Ce document ne contient aucune signature pouvant être supprimée.
 	This document has no signatures.	Ce document ne contient aucune signature.
 	This document has no tagged figures.	Ce document ne contient aucune figure balisée.
 	This document has no XMP metadata.	Ce document n'a pas de métadonnées XMP.
@@ -2850,6 +2946,7 @@ calendar weekday	Th	Je
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	Cette installation est gérée par un paquet RPM. Utilisez le gestionnaire de logiciels du système pour mettre PdfCraft à jour.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Ceci est un formulaire XFA dynamique, que PdfCraft ne peut pas encore afficher. Ce que vous voyez est la page de substitution du fichier.
 	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	Ce téléchargement depuis GitHub ne se fait qu’une fois. Ensuite, la détection fonctionne hors ligne. Vos PDF restent sur cet appareil.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	Il s'agit de l'image d'une signature, pas d'une signature numérique : seule la marque sur la page est supprimée. Le fichier original reste tel quel.
 	This is the first PDF in its folder	C'est le premier PDF de son dossier
 	This is the last PDF in its folder	C'est le dernier PDF de son dossier
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	C'est la dernière tentative avant le verrouillage du code PIN du jeton. Un code PIN erroné ici peut le verrouiller définitivement.
@@ -2865,6 +2962,7 @@ calendar weekday	Th	Je
 	This point could not be moved. Try a smaller move.	Impossible de déplacer ce point. Essayez un déplacement plus petit.
 	This printer offers no settings of its own.	Cette imprimante ne propose aucun réglage propre.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Le pilote de cette imprimante n'accepte pas les réglages recto verso des autres programmes ; son propre réglage s'applique. Modifiez-le dans Propriétés…
+	this signature can't be removed on its own	cette signature ne peut pas être supprimée seule
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Cette signature utilise une clé RSA de moins de 2048 bits, ce qui n'est plus considéré comme suffisamment robuste pour des signatures. Elle se valide toujours, mais il ne faut pas s'y fier.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Cette signature utilise RIPEMD-160, un ancien algorithme de hachage de 160 bits qui n'est plus recommandé pour les signatures. Elle reste valide, mais il ne faut pas s'y fier.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Cette signature utilise SHA-1, un algorithme de hachage faible : des collisions ont été démontrées. Elle reste valide car de nombreux documents signés il y a des années l'utilisent, mais il ne faut pas s'y fier.
@@ -2917,6 +3015,7 @@ signature pad	Type	Saisir
 	Type text	Saisir du texte
 	Type the web address.	Saisissez l'adresse web.
 	Type your {what}.	Saisissez votre {what}.
+	Uncertain orientations are left unchanged. Deskew fits the full image inside the page.	Les orientations incertaines restent inchangées. Le redressement conserve toute l’image dans la page.
 	Unchecked	Non coché
 	Unchecked reads	Lectures non vérifiées
 	Underline text	Souligner le texte
@@ -2927,6 +3026,7 @@ signature pad	Type	Saisir
 	Units per model unit	Unités par unité du modèle
 	Units run from largest to smallest. Later factors convert the remainder.	Les unités vont de la plus grande à la plus petite. Les facteurs suivants convertissent le reste.
 	Unknown author	Auteur inconnu
+	unknown signer	signataire inconnu
 	Unlock comment	Déverrouiller le commentaire
 	Unlock {name}	Déverrouiller {name}
 	Unlock {n} files	Déverrouiller {n} fichiers
@@ -2939,6 +3039,7 @@ signature pad	Type	Saisir
 	Unpin {folder}	Désépingler {folder}
 	Unpinned {tool} from Home	{tool} désépinglé de l’Accueil
 	Unplaced	Non placé
+	Unsaved changes to this document are saved in the new file too.	Les modifications non enregistrées de ce document sont aussi enregistrées dans le nouveau fichier.
 	Unsigned signature field	Champ de signature non signé
 	Unsigned signature field: {name}	Champ de signature non signé : {name}
 	Unsupported measurements	Mesures non prises en charge
@@ -2990,6 +3091,9 @@ certificate	Valid to	Valide jusqu'au
 	Validate	Valider
 	Validate all	Tout valider
 	Validate all signatures	Valider toutes les signatures
+	validated: invalid	validation : non valide
+	validated: valid	validation : valide
+	validated: validity unknown	validation : validité inconnue
 	Validity ends	Fin de validité
 certificate	Validity ends	Fin de validité
 	Validity starts	Début de validité
@@ -3018,6 +3122,8 @@ certificate	Version	Version
 	Viewport width and height must be positive.	La largeur et la hauteur de la zone doivent être positives.
 	Visible Rectangle	Rectangle visible
 	Visual	Visuel
+	Visual initials (Fill & Sign, not digital)	Initiales visuelles (Remplir et signer, non numériques)
+	Visual signature (Fill & Sign, not digital)	Signature visuelle (Remplir et signer, non numérique)
 	Voice and Speech	Voix et synthèse
 	Voice:	Voix :
 	Volume:	Volume :
@@ -3057,6 +3163,7 @@ document scrollbar width	Wide	Large
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Vous consultez la révision {rev} de «{from}». Il s'agit d'un instantané : les modifications effectuées ici n'affecteront pas l'original.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Vous consultez la version signée de «{from}» (révision {rev}). Il s'agit d'un instantané : les modifications effectuées ici n'affecteront pas l'original.
 	You can pin up to {n} folders. Unpin one first.	Vous pouvez épingler jusqu'à {n} dossiers. Désépinglez-en un d'abord.
+	You choose where the new version is saved. Continue?	Vous choisissez où la nouvelle version est enregistrée. Continuer ?
 	You have version {c}. Download the new version from its release page.	Vous avez la version {c}. Téléchargez la nouvelle version depuis sa page de publication.
 	Your name	Votre nom
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy ou yy année · m ou mm mois · mmm ou mmmm nom du mois · d ou dd jour · ddd ou dddd jour de la semaine. H, h, M, s et t sont des lettres d'heure et ne peuvent pas être utilisées seules : placez {escape} devant une lettre pour l'afficher telle quelle.
@@ -3104,7 +3211,10 @@ document scrollbar width	Wide	Large
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} vers {dir}
 	{names} and {last}	{names} et {last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} certifie ce document sans autoriser les commentaires et signalera cette modification.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} certifie ce document, et supprimer une signature n'est pas une modification autorisée par sa certification.
 	{name} (default)	{name} (par défaut)
+	{name} (you)	{name} (vous)
 	{name} can't be combined: {why}	Impossible de combiner {name} : {why}
 	{name} has no action	{name} n'a pas d'action
 	{name} is read-only	{name} est en lecture seule
@@ -3113,6 +3223,7 @@ document scrollbar width	Wide	Large
 	{name} — unsaved changes	{name} — modifications non enregistrées
 	{name}: choosing images arrives on the web with file pickers for images	{name} : le choix d'images arrivera sur le web avec les sélecteurs de fichiers d'images
 	{name}: the {other} action isn't supported yet	{name} : l'action {other} n'est pas encore prise en charge
+	{name}_unsigned.pdf	{name}_sans_signature.pdf
 @plural	{n} byte|{n} bytes	{n} octet|{n} octets
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} calcul utilise désormais le nouveau nom.|{n} calculs utilisent désormais le nouveau nom.
 @plural	{n} comment|{n} comments	{n} commentaire|{n} commentaires
@@ -3161,6 +3272,7 @@ document scrollbar width	Wide	Large
 	{verb} Background	{verb} l'arrière-plan
 	{verb} Header and Footer	{verb} l'en-tête et le pied de page
 	{verb} Watermark	{verb} le filigrane
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. {file} enregistré et vérifié : il se rouvre avec toutes ses pages. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	{who} dans ce document a tenté d'ouvrir une adresse que PdfCraft n'ouvre pas : {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} dans ce document a tenté d'ouvrir une adresse que PdfCraft n'ouvre pas : {e}. Seuls les liens web (http, https) et e-mail (mailto) s'ouvrent depuis les documents.
 	{who} in this document wants to open this address in your browser:	{who} dans ce document veut ouvrir cette adresse dans votre navigateur :
@@ -3174,6 +3286,7 @@ document scrollbar width	Wide	Large
 	— (protection is applied when you save)	— (la protection est appliquée à l'enregistrement)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	« {name} » a été modifié sur le disque après son ouverture ou son dernier enregistrement. Enregistrer maintenant remplace cette version plus récente par celle-ci.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	«{name}» comporte des restrictions de sécurité. Saisissez son mot de passe d'autorisations pour les lever.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	«{name}» est chiffré pour des personnes précises. Choisissez votre ID numérique et saisissez son mot de passe pour l'ouvrir.
 	“{name}” is protected. Enter a password to open it.	«{name}» est protégé. Saisissez un mot de passe pour l'ouvrir.
 	… and {n} more	… et {n} autres
 	…or paste the raw text here; # headings, - bullets	…ou collez le texte brut ici ; # titres, - puces

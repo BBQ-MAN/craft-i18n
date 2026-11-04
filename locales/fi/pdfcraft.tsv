@@ -49,6 +49,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	Vinottainen LUOTTAMUKSELLINEN-vesileima jokaiselle sivulle.
 	a document must keep at least one page	asiakirjassa on oltava vähintään yksi sivu
 	A document needs at least one page: copy instead	Asiakirjassa on oltava vähintään yksi sivu: kopioi sen sijaan
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Asiakirjan aikaleima kattaa koko tiedoston eikä ole kenenkään allekirjoitus, joten sitä ei voi poistaa yksinään.
 	a field named {name} already exists	kenttä nimeltä {name} on jo olemassa
 	A font isn't embedded	Fonttia ei ole upotettu
 	A form field has additional actions	Lomakekentällä on lisätoimintoja
@@ -58,6 +59,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG- tai SVG-tiedosto. Se luetaan tästä sijainnista aina, kun PdfCraft käynnistyy.
 	A script	Komentosarja
 	A selected field has no widget on any page, so the fields can't be edited together.	Yhdellä valituista kentistä ei ole kenttäelementtiä millään sivulla, joten kenttiä ei voi muokata yhdessä.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Sivun sisältöön kuuluva allekirjoitus, kuten skannatulla sivulla, ei ole kenttä eikä merkintä, joten sitä ei voi poistaa yksinään, eikä PdfCraft pyyhi sivun osia sen piilottamiseksi. Poista se peittämällä alue (Peitä) tai, jos allekirjoitus on erillinen kuva, poistamalla kuva toiminnolla Muokkaa PDF:ää.
 	A stream refers to an external file	Virta viittaa ulkoiseen tiedostoon
 	A stream uses LZW compression	Virta käyttää LZW-pakkausta
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Yhteenveto kuvaa taulukon tarkoituksen ja rakenteen. Lisää jokaiseen taulukkoon Summary-määrite.
@@ -109,12 +111,14 @@
 	Add an Action	Lisää toiminto
 	Add an image field	Lisää kuvakenttä
 	Add arrow	Lisää nuoli
+	Add at least one recipient.	Lisää vähintään yksi vastaanottaja.
 	Add at least two files	Lisää vähintään kaksi tiedostoa
 	Add background	Lisää tausta
 	Add background…	Lisää tausta…
 	Add Bates numbering…	Lisää Bates-numerointi…
 	Add bookmark	Lisää kirjanmerkki
 	Add callout	Lisää selitelaatikko
+	Add certificate file…	Lisää varmennetiedosto…
 	Add checkmark	Lisää valintamerkki
 	Add cloud	Lisää pilvi
 	Add comment	Lisää kommentti
@@ -166,11 +170,13 @@
 	Add the files to combine	Lisää yhdistettävät tiedostot
 	Add the PDFs to combine	Lisää yhdistettävät PDF-tiedostot
 	Add the steps this action runs, in order.	Lisää toiminnon suorittamat vaiheet järjestyksessä.
+	Add to dictionary	Lisää sanakirjaan
 	Add to Trusted Certificates	Lisää luotettuihin varmenteisiin
 	Add to trusted certificates	Lisää luotettuihin varmenteisiin
 	Add underline	Lisää alleviivaus
 	Add watermark	Lisää vesileima
 	Add watermark…	Lisää vesileima…
+	Add your digital ID	Lisää digitaalinen tunnuksesi
 	Add {what}	Lisää {what}
 	Added 1 comment	Lisättiin 1 kommentti
 	Added more than once	Lisätty useammin kuin kerran
@@ -184,6 +190,7 @@
 	Advanced options	Lisäasetukset
 	Advanced Options {chevron}	Lisäasetukset {chevron}
 	Advanced search…	Tarkennettu haku…
+	AI Assistant	Tekoälyavustaja
 	AI assistant	Tekoälyavustaja
 	Algorithm	Algoritmi
 	Align fields	Tasaa kentät
@@ -200,6 +207,7 @@
 	All pages	Kaikki sivut
 	All pages in document	Kaikki asiakirjan sivut
 	All pages in range	Kaikki alueen sivut
+	All permissions	Kaikki oikeudet
 	All tools	Kaikki työkalut
 	Allow	Salli
 	Allow Rich Text Formatting	Salli RTF-muotoilu
@@ -353,10 +361,13 @@ certificate	Basic constraints	Perusrajoitukset
 	Center vertically	Keskitä pystysuunnassa
 	Center window on screen	Keskitä ikkuna näytölle
 	Centre	Keskitä
+	Certificate	Varmenne
 	Certificate authority	Varmentaja
+	Certificate encryption will be applied when you save	Varmennesalaus otetaan käyttöön tallennettaessa
 	Certificate Signing	Varmenteiden allekirjoitus
 	Certificate Viewer	Varmenteen katseluohjelma
 	Certificates	Varmenteet
+	Certification signature (level {p})	Sertifiointiallekirjoitus (taso {p})
 	Certified by {by}	Varmentaja: {by}
 	Certify	Varmenna
 	Certify (invisible signature)	Varmenna (näkymätön allekirjoitus)
@@ -400,6 +411,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Check for accessibility…	Tarkista saavutettavuus…
 	Check for updates…	Tarkista päivitykset…
 	Check spelling	Tarkista oikeinkirjoitus
+	Check spelling while typing	Tarkista oikeinkirjoitus kirjoitettaessa
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Tarkista, että tagit luetaan samassa järjestyksessä kuin näkevä lukija lukisi. Korjaa järjestys Lukujärjestys-työkalulla tai Tagit-paneelissa.
 	Check the pages	Tarkista sivut
 	Check the pages of {name}: {why}	Tarkista tiedoston {name} sivut: {why}
@@ -409,6 +421,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Checking Options ({on} of 32 in all categories)	Tarkistusasetukset ({on}/32 kaikissa luokissa)
 	Checking pages…	Tarkistetaan sivuja…
 	Checkmark	Valintamerkki
+	Choose a digital ID file	Valitse digitaalisen tunnuksen tiedosto
 	Choose a digital ID.	Valitse digitaalinen tunnus.
 	Choose a file…	Valitse tiedosto…
 	Choose a folder for the exported files	Valitse kansio vietäville tiedostoille
@@ -422,17 +435,21 @@ certificate	Basic constraints	Perusrajoitukset
 	Choose a logo	Valitse logo
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Valitse PNG- tai JPEG-kuva (enintään 4 MiB). Läpinäkyvyys säilyy.
 	Choose a provider.	Valitse palveluntarjoaja.
+	Choose a signature that can be removed.	Valitse allekirjoitus, jonka voi poistaa.
 	Choose a stamp, then click on the page to place it.	Valitse leima ja sijoita se napsauttamalla sivua.
 	Choose an image	Valitse kuva
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Valitse toinen tiedosto: alkuperäinen säilyy ennallaan, ja versio ilman allekirjoitusta tallennetaan sen viereen.
 	Choose images	Valitse kuvat
 	Choose image…	Valitse kuva…
 	Choose photo…	Valitse kuva…
 	Choose the digital ID that you want to use for signing:	Valitse allekirjoitukseen käytettävä digitaalinen tunnus:
+	Choose the signature to remove:	Valitse poistettava allekirjoitus:
 	Choose where to save the signed file. The service signs it once you have.	Valitse, mihin allekirjoitettu tiedosto tallennetaan. Palvelu allekirjoittaa sen, kun olet valinnut.
 	Clean Up	Siivoa
 	Clean-up	Siistiminen
 	Clear all	Tyhjennä kaikki
 	Clear form	Tyhjennä lomake
+	Clear personal dictionary	Tyhjennä oma sanakirja
 	Clear redaction marks	Poista peittomerkinnät
 	Clear search	Tyhjennä haku
 	Clear selection / close find	Tyhjennä valinta / sulje haku
@@ -539,6 +556,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Couldn't copy the image: {e}	Kuvan kopiointi epäonnistui: {e}
 	Couldn't create a PDF: {e}	PDF:n luominen epäonnistui: {e}
 	Couldn't download {name}: {e}	Tiedoston {name} lataus epäonnistui: {e}
+	Couldn't encrypt: {e}	Salaus epäonnistui: {e}
 	Couldn't extract pages: {e}	Sivujen poimiminen epäonnistui: {e}
 	Couldn't fit the visible content: {e}	Näkyvän sisällön sovittaminen epäonnistui: {e}
 	Couldn't follow linked PDF: {reason}	Linkitettyyn PDF:ään ei voitu siirtyä: {reason}
@@ -615,6 +633,7 @@ key	Ctrl	Ctrl
 	Current page only	Vain nykyinen sivu
 	Current page — type a page number or label (such as iv) and press Enter	Nykyinen sivu – kirjoita sivunumero tai -tunniste (kuten iv) ja paina Enter
 	Custom font	Mukautettu fontti
+	Custom page…	Mukautettu sivu…
 	Custom scale:	Mukautettu skaala:
 	Custom size	Mukautettu koko
 	Custom stamps arrive on the web with file pickers for images	Mukautetut leimat tulevat verkkoversioon kuvatiedostojen valitsimien myötä
@@ -657,6 +676,8 @@ key	Delete	Delete
 	Delete document JavaScript	Poista asiakirjan JavaScript
 	Delete field	Poista kenttä
 	Delete image	Poista kuva
+	Delete line	Poista viiva
+	Delete lines	Poista viivat
 	Delete link	Poista linkki
 	Delete object	Poista objekti
 	Delete objects	Poista objektit
@@ -686,6 +707,7 @@ key	Delete	Delete
 	Diagnostic details	Diagnostiikkatiedot
 	Digital ID	Digitaalinen tunnus
 	Digital ID password	Digitaalisen tunnuksen salasana
+	Digital ID required	Digitaalinen tunnus vaaditaan
 	Digital Signature	Digitaalinen allekirjoitus
 	Digital signature	Digitaalinen allekirjoitus
 	Digital Signature Properties	Digitaalisen allekirjoituksen ominaisuudet
@@ -734,8 +756,10 @@ key	Delete	Delete
 	document security store	asiakirjan suojaussäilö
 	document structure	asiakirjan rakenne
 	Document structure provides a logical reading order	Asiakirjan rakenne tarjoaa loogisen lukujärjestyksen
+	Document timestamp	Asiakirjan aikaleima
 	Document Title	Asiakirjan otsikko
 	Document title is showing in title bar	Asiakirjan otsikko näkyy otsikkorivillä
+	Documents	Asiakirjat
 	Documents and view	Asiakirjat ja näkymä
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Yli 20-sivuisissa asiakirjoissa tarvitaan kirjanmerkit siirtymistä varten. Lisää kirjanmerkit pääosioille.
 	Domain	Toimialue
@@ -749,6 +773,7 @@ key	Delete	Delete
 	Downsample to	Alinäytteistä tarkkuuteen
 	DPI sets the printed page size without resampling the image.	DPI määrittää tulostetun sivun koon kuvaa uudelleennäytteistämättä.
 	Drag a field to move it, or select it and press {up} or {down}.	Siirrä kenttää vetämällä tai valitse se ja paina {up} tai {down}.
+	Drag a point to reshape the line. Delete removes it.	Muotoile viivaa vetämällä pistettä. Delete poistaa sen.
 	Drag a rectangle around the area to copy	Vedä suorakulmio kopioitavan alueen ympärille
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Rajaa sivu vetämällä suorakulmio; kaksoisnapsauta sivua avataksesi Aseta sivulaatikot
 	Drag a rectangle to create a link; double-click a link to edit it	Luo linkki vetämällä suorakulmio; muokkaa linkkiä kaksoisnapsauttamalla sitä
@@ -778,6 +803,9 @@ key	Delete	Delete
 	Duplicate field	Monista kenttä
 	Duplicate page	Monista sivu
 	Duplicate pages	Monista sivut
+	Duplicate pages with new field names	Monista sivut uusilla kenttien nimillä
+	Duplicate pages — 1 field renamed	Monista sivut — 1 kenttä nimetty uudelleen
+	Duplicate pages — fields renamed	Monista sivut — kenttiä nimetty uudelleen
 	Duplicate…	Monista…
 	Dynamic	Dynaaminen
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Dynaaminen XFA-lomake asemoitu mallistaan: {pages}, {fields}.
@@ -818,7 +846,11 @@ comment menu	Edit	Muokkaa
 	Enabled	Käytössä
 	Encipher Only	Vain salaus
 	Encrypt	Salaa
+	Encrypt for recipient	Salaa vastaanottajalle
+	Encrypt for recipients	Salaa vastaanottajille
+	Encrypt with Certificate	Salaa varmenteella
 	Encrypt with certificate	Salaa varmenteella
+	Encrypt with certificate…	Salaa varmenteella…
 	Encryption	Salaus
 key	End	End
 	End entity	Loppuyksikkö
@@ -859,12 +891,14 @@ key	Esc	Esc
 	Exclude tagged tables	Jätä pois tagitetut taulukot
 	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	Poisjätöt perustuvat PDF-tageihin. Tagittamattomat taulukot ja koodi lasketaan mukaan. Kuvien poisjättö poistaa myös näkymättömän tekstin.
 	Execute a menu item	Suorita valikon kohde
+	Exit	Poistu
 	Expand all	Laajenna kaikki
 	Expand all bookmarks	Laajenna kaikki kirjanmerkit
 	Expand all pages	Laajenna kaikki sivut
 	Expand all tools	Laajenna kaikki työkalut
 	Expand tag	Laajenna tagi
 	Expand top-level bookmarks	Laajenna ylimmän tason kirjanmerkit
+	Expires {date}	Vanhenee {date}
 	Explain	Selitä
 	Export & Convert	Vie ja muunna
 	Export a PDF	Vie PDF
@@ -926,6 +960,7 @@ calendar date	February	helmikuuta
 	Field properties…	Kentän ominaisuudet…
 	Field value is in range:	Kentän arvo on välillä:
 	Field value is not validated	Kentän arvoa ei tarkisteta
+	Field: {field}	Kenttä: {field}
 	Field: {field} on page {p}	Kenttä: {field} sivulla {p}
 	Fields	Kentät
 	Fields to reset (comma-separated; empty: all)	Nollattavat kentät (pilkuin eroteltuina; tyhjä: kaikki)
@@ -1032,6 +1067,8 @@ calendar date	February	helmikuuta
 	Form fields panel	Lomakekenttäpaneeli
 	form fill	lomakkeen täyttö
 	Form fill-in and digital signatures	Lomakkeiden täyttö ja digitaaliset allekirjoitukset
+	Format line	Muotoile viiva
+	Format lines	Muotoile viivat
 	Format text	Muotoile teksti
 	Forms	Lomakkeet
 	Forms & Signatures	Lomakkeet ja allekirjoitukset
@@ -1041,6 +1078,7 @@ calendar weekday	Fr	Pe
 	From	Alkaen
 	From a PDF page or an image	PDF-sivusta tai kuvasta
 	From colour	Väristä
+	From template	Mallista
 	From {file}	Lähteestä {file}
 	From:	Mistä:
 	Front side only	Vain etupuoli
@@ -1059,6 +1097,7 @@ calendar weekday	Fr	Pe
 	Green on black	Vihreä mustalla
 	Greyscale	Harmaasävy
 	Grid view	Ruudukkonäkymä
+	Group select	Ryhmävalinta
 	H / Space (hold)	H / Välilyönti (pidä pohjassa)
 	Hand (H)	Käsi (H)
 	Has JavaScript actions (run in M6)	Sisältää JavaScript-toimintoja (suoritetaan M6:ssa)
@@ -1145,6 +1184,7 @@ key	Home	Home
 	Installed fonts…	Asennetut fontit…
 	Intended usage	Käyttötarkoitus
 certificate	Intended usage	Käyttötarkoitus
+	Interface and appearance	Käyttöliittymä ja ulkoasu
 	Interface language	Käyttöliittymän kieli
 	Interface size	Käyttöliittymän koko
 	Intersection	Leikkauspiste
@@ -1164,6 +1204,7 @@ certificate	Issued by	Myöntäjä
 certificate	Issued to	Myönnetty kohteelle
 	Issuer	Myöntäjä
 certificate	Issuer	Myöntäjä
+	it was still in the document afterwards, so the change was undone	se oli yhä asiakirjassa jälkeenpäin, joten muutos kumottiin
 	Italic	Kursivointi
 	Item List	Kohdeluettelo
 	Item:	Kohde:
@@ -1186,6 +1227,7 @@ calendar date	July	heinäkuuta
 	June	Kesäkuu
 calendar date	June	kesäkuuta
 	just now	juuri nyt
+	Keep an empty signature field to sign again	Säilytä tyhjä allekirjoituskenttä uudelleen allekirjoittamista varten
 	Keep source fonts	Säilytä lähteen fontit
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Pidä Windowsin otsikkorivi välilehtirivin yläpuolella. Pois päältä välilehtirivi toimii otsikkorivinä ja ikkunan painikkeet ovat sen oikeassa reunassa; Suurenna-painikkeen Snap Layouts -asettelut tarvitsevat Windowsin otsikkorivin.
 	Keep tool selected	Pidä työkalu valittuna
@@ -1204,12 +1246,14 @@ certificate	Key usage	Avaimen käyttö
 	Landscape and Portrait Pages	Vaaka- ja pystysivut
 	Landscape Pages	Vaakasivut
 	Landscape pages	Vaakasivut
+	Language and spelling	Kieli ja oikeinkirjoitus
 	Larger pages	Suuremmat sivut
 	Larger thumbnails	Suuremmat pikkukuvat
 	Last page	Viimeinen sivu
 	Later	Myöhemmin
 	Later in calculation order	Myöhemmäksi laskentajärjestyksessä
 	Later in tab order	Myöhemmäksi sarkainjärjestyksessä
+	Latin (accented)	Latinalainen (tarkkeineen)
 	Layer options	Tasoasetukset
 	Layers panel	Tasopaneeli
 	Layers Panel and Page	Tasopaneeli ja sivu
@@ -1226,6 +1270,7 @@ certificate	Key usage	Avaimen käyttö
 	Light gray	Vaaleanharmaa
 	Light theme	Vaalea teema
 	Limit of	Enintään
+	Line colour	Viivan väri
 	Line delta	Rivimuutos
 	Line ending	Viivan pää
 	Line spacing	Riviväli
@@ -1336,6 +1381,7 @@ calendar weekday	Mo	Ma
 	Move earlier	Siirrä aiemmaksi
 	Move image	Siirrä kuvaa
 	Move later	Siirrä myöhemmäksi
+	Move line point	Siirrä viivan pistettä
 	Move object	Siirrä objekti
 	Move objects	Siirrä objektit
 	Move only what must move, so every field calculates after the fields it reads.	Siirrä vain se, mikä on pakko, jotta jokainen kenttä lasketaan lukemiensa kenttien jälkeen.
@@ -1357,6 +1403,7 @@ calendar weekday	Mo	Ma
 	N or {row} is the row number, {col} the column number, {seq} the cell number. With none of them, the row number goes last.	N tai {row} on rivin numero, {col} sarakkeen numero ja {seq} solun numero. Jos mitään niistä ei ole, rivin numero tulee loppuun.
 	Name on new comments	Nimi uusissa kommenteissa
 	Named Destinations	Nimetyt kohteet
+	Navigation	Navigointi
 	Navigation links	Siirtymislinkit
 	Navigation links are not repetitive	Siirtymislinkit eivät toistu
 	Navigation tab	Siirtymisvälilehti
@@ -1431,12 +1478,14 @@ calendar weekday	Mo	Ma
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Tulostimia ei löytynyt. Tarkista, että tulostin on asennettu ja taustatulostuspalvelu on käynnissä, ja avaa sitten Tulosta uudelleen.
 	No problems found: the document conforms to {level}.	Ongelmia ei löytynyt: asiakirja on {level}-yhteensopiva.
 	No recent files	Ei viimeisimpiä tiedostoja
+	No recipients yet.	Ei vastaanottajia vielä.
 	No security	Ei suojausta
 	No sheets	Ei arkkeja
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Kehyksestä ei löytynyt allekirjoitusta. Siirrä kehys allekirjoituksen päälle tai nosta musteen herkkyyttä.
 	No signing certificate was found on this device. Is it connected?	Tästä laitteesta ei löytynyt allekirjoitusvarmennetta. Onko se kytketty?
 	No status has been set.	Tilaa ei ole asetettu.
 	no such document	asiakirjaa ei ole
+	No suggestions	Ei ehdotuksia
 	no summary	ei yhteenvetoa
 	No tools match your search.	Hakuasi vastaavia työkaluja ei löytynyt.
 	No unlinked web addresses were found in the text	Tekstistä ei löytynyt linkittämättömiä verkko-osoitteita
@@ -1446,7 +1495,10 @@ calendar weekday	Mo	Ma
 	none	ei mitään
 	None (prefix only)	Ei mitään (vain etuliite)
 	None found	Ei löytynyt
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	Yksikään vastaanottajista ei ole digitaalisia tunnuksiasi: et voi avata tallennettua asiakirjaa.
+	None of these signatures can be removed.	Mitään näistä allekirjoituksista ei voi poistaa.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Mistään näistä tiedostoista ei voi tehdä PDF:ää; käytä PDF-, kuva- tai .txt-tiedostoja
+	None of your digital IDs can open this document.	Mikään digitaalisista tunnuksistasi ei voi avata tätä asiakirjaa.
 	None — everything is allowed	Ei mitään – kaikki on sallittu
 scroll speed	Normal	Normaali
 	Not allowed	Ei sallittu
@@ -1495,11 +1547,13 @@ animation effects	On	Käytössä
 	One {f} file per page, named after the document.	Yksi {f}-tiedosto sivua kohden, nimettynä asiakirjan mukaan.
 	One-time code (OTP)	Kertakäyttökoodi (OTP)
 	Only allow this if you trust the source document.	Salli tämä vain, jos luotat lähdeasiakirjaan.
+	Only certificates with RSA keys can be recipients.	Vain RSA-avaimia sisältävät varmenteet voivat olla vastaanottajia.
 	Only change the colour of black text or line art	Muuta vain mustan tekstin tai viivagrafiikan väriä
 	Only checked properties will change. Mixed means the selected fields have different values.	Vain rastitetut ominaisuudet muuttuvat. Vaihteleva tarkoittaa, että valituilla kentillä on eri arvot.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Jatka vain, jos luotat tähän asiakirjaan. Osoite voi välittää tietoja asiakirjasta, kuten lomakkeeseen kirjoittamasi tekstin.
 	Only the document's owner can change its security (open it with the permissions password)	Vain asiakirjan omistaja voi muuttaa sen suojausta (avaa se käyttöoikeussalasanalla)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Vain sivujen sisältö muuttuu: alkuperäisten sivujen linkit, kommentit, lomakekentät ja kirjanmerkit säilyvät.
+	Only the recipients can open the document, each with the private key of their own certificate.	Vain vastaanottajat voivat avata asiakirjan, kukin oman varmenteensa yksityisellä avaimella.
 	Open a document first	Avaa ensin asiakirja
 	Open a PDF ({key})	Avaa PDF ({key})
 	Open a PDF (⌘O)	Avaa PDF (⌘O)
@@ -1526,6 +1580,7 @@ animation effects	On	Käytössä
 	open to see what it will include	avaa nähdäksesi, mitä se sisältää
 	Opened with	Avattu käyttäen
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Avattu, mutta suojausasetukset eivät salli yhdistämistä. Anna käyttöoikeuksien salasana.
+	Opening documents	Asiakirjojen avaaminen
 	Opening the browser's print dialog…	Avataan selaimen tulostusikkunaa…
 	Opening {name}…	Avataan {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Avaa tulostinohjaimen asetukset. Ne tallennetaan kaikkiin tämän tietokoneen tulostuksiin; tässä valitut kopiot, kaksipuolisuus, harmaasävy ja paperi ovat silti voimassa.
@@ -1557,6 +1612,8 @@ animation effects	On	Käytössä
 	Other elements that require alternate text	Muut elementit, jotka edellyttävät vaihtoehtoista tekstiä
 	Other options	Muut asetukset
 	Other provider (CSC API)	Muu palveluntarjoaja (CSC API)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Muita allekirjoituksia on jäljellä, joten kopio tallennetaan allekirjoitetun tiedoston päivityksenä: poistettu allekirjoitus jää aiempaan versioon, josta sen voi palauttaa.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Muita allekirjoituksia on jäljellä, joten poistettu allekirjoitus on yhä tiedoston aiemmassa versiossa; tarkista jäljellä olevat allekirjoitukset uudelleen.
 	Outdent	Poista sisennys
 	Outline colour:	Ääriviivan väri:
 	Output appears here.	Tuloste näkyy tässä.
@@ -1593,6 +1650,7 @@ animation effects	On	Käytössä
 	Page {n} of {total}	Sivu {n}/{total}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Sivu {pages} muuttui taustan lisäämisen jälkeen, joten sen oma valkoinen täyttö pysyy pois päältä. Valkoisella paperilla se näyttää samalta.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Sivulla {pages} on oma valkoinen täyttö, joka peittäisi taustan. Korvaa se
+	Page {p}	Sivu {p}
 	Page {p} doesn't tab in structure order	Sivun {p} sarkainjärjestys ei noudata rakennejärjestystä
 	Page {p} of {n}	Sivu {p}/{n}
 	Page {p}: {n} untagged content item	Sivu {p}: {n} tagaamaton sisältökohde
@@ -1763,6 +1821,7 @@ certificate	Public key	Julkinen avain
 	Reason: 	Syy: 
 	Recent colours	Viimeisimmät värit
 	Recent files to keep	Recent files to keep
+	Recipients	Vastaanottajat
 	Recognize scanned text automatically	Tunnista skannattu teksti automaattisesti
 	Recognize Text	Tunnista teksti
 	Recognize text	Tunnista teksti
@@ -1806,6 +1865,7 @@ certificate	Public key	Julkinen avain
 	Remove "{name}" from this list? The certificate stays with the signing service.	Poistetaanko "{name}" tästä luettelosta? Varmenne jää allekirjoituspalveluun.
 	Remove "{name}" from this list? The file itself is not deleted.	Poistetaanko "{name}" tästä luettelosta? Itse tiedostoa ei poisteta.
 	Remove all links	Poista kaikki linkit
+	Remove and Save As…	Poista ja tallenna nimellä…
 	Remove background	Poista tausta
 	Remove checkmark	Poista valintamerkki
 	Remove Crop	Poista rajaus
@@ -1821,6 +1881,10 @@ certificate	Public key	Julkinen avain
 	Remove redaction marks	Poista peittomerkinnät
 	Remove saved {what}	Poista tallennettu {what}
 	Remove security	Poista suojaus
+	Remove Signature	Poista allekirjoitus
+	Remove signature	Poista allekirjoitus
+	Remove signature…	Poista allekirjoitus…
+	Remove the signature {name}	Poista allekirjoitus {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Poista tämä lehtitagi lukujärjestyksestä ja merkitse sen suora sisältö artefaktiksi
 	Remove unreferenced named destinations	Poista viittaamattomat nimetyt kohteet
 	Remove unused objects and merge identical ones	Poista käyttämättömät objektit ja yhdistä identtiset
@@ -1834,9 +1898,14 @@ certificate	Public key	Julkinen avain
 	Remove {standard} identification	Poista {standard}-tunniste
 	Removed 1 hidden item. Save to remove them from the file.	Poistettiin 1 piilotettu kohde. Poista se tiedostosta tallentamalla.
 	Removed 1 link	Poistettiin 1 linkki
+	Removed the signature {field} and kept its empty field	Poistettiin allekirjoitus {field}, ja sen tyhjä kenttä säilytettiin
+	Removed the signature {field} with its field	Poistettiin allekirjoitus {field} kenttineen
+	Removed the visual signature on page {p}	Poistettiin visuaalinen allekirjoitus sivulta {p}
 	Removed {n} hidden items. Save to remove them from the file.	Poistettiin {n} piilotettua kohdetta. Poista ne tiedostosta tallentamalla.
 	Removed {n} links	Poistettiin {n} linkkiä
 	Removing the background puts the page's own backdrop back.	Taustan poistaminen palauttaa sivun oman valkoisen täytön.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	Tämän allekirjoituksen poistaminen muuttaa asiakirjaa ja mitätöi tämän allekirjoituksen syntyvässä versiossa. Se voi vaikuttaa muihin allekirjoituksiin ja sertifiointeihin. Alkuperäinen tiedosto säilyy ennallaan.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	Tämän allekirjoituksen poistaminen muuttaa asiakirjaa ja mitätöi tämän allekirjoituksen syntyvässä versiossa. Alkuperäinen tiedosto säilyy ennallaan.
 	Removing white margins… page {d} of {t}	Poistetaan valkoisia reunuksia… sivu {d}/{t}
 	Rename bookmark	Nimeä kirjanmerkki uudelleen
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Renderöinti: hayro (bootstrap) · Käyttöliittymä: egui · Kuvakkeet: Lucide (ISC) · Fontit: Inter, JetBrains Mono, Dancing Script (OFL)
@@ -1884,6 +1953,7 @@ certificate	Public key	Julkinen avain
 	Restrictions	Rajoitukset
 	Restrictions lifted	Rajoitukset poistettu
 	Retain existing	Säilytä nykyinen
+	Return to document	Palaa asiakirjaan
 	Rev. {rev}: Certified by an unknown signer	Versio {rev}: varmentanut tuntematon allekirjoittaja
 	Rev. {rev}: Certified by {name}	Versio {rev}: varmentanut {name}
 	Rev. {rev}: Signed by an unknown signer	Versio {rev}: allekirjoittanut tuntematon allekirjoittaja
@@ -1940,6 +2010,7 @@ certificate	Public key	Julkinen avain
 	Run JavaScript	Suorita JavaScript
 	Running action… file {d} of {t}	Suoritetaan toimintoa… tiedosto {d}/{t}
 calendar weekday	Sa	La
+	Same as interface	Sama kuin käyttöliittymä
 	Same as interface ({language})	Sama kuin käyttöliittymä ({language})
 	Sanitize	Puhdista
 	Sanitize document	Puhdista asiakirja
@@ -1957,6 +2028,7 @@ calendar weekday	Sa	La
 	Save as PDF/A-3b	Tallenna PDF/A-3b-muodossa
 	Save as PDF/UA	Tallenna PDF/UA-muodossa
 	Save as PDF/X	Tallenna PDF/X-muodossa
+	Save as template	Tallenna mallina
 	Save as {level}	Tallenna muodossa {level}
 	Save as…	Tallenna nimellä…
 	Save attachment…	Tallenna liite…
@@ -1982,6 +2054,7 @@ calendar weekday	Sa	La
 	Saved {place}: {before} → {after} (not smaller){detail}	Tallennettu {place}: {before} → {after} (ei pienempi){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Tallennettu {place}: {before} → {after} ({pct} % pienempi){detail}
 	Saved, but reopening failed: {e}	Tallennettiin, mutta uudelleen avaaminen epäonnistui: {e}
+	Saves document	Tallentaa asiakirjan
 	Scale	Mittakaava
 	Scale corner {n}	Muuta kokoa kulmasta {n}
 	Scale object	Muuta objektin kokoa
@@ -2139,6 +2212,7 @@ key	Shift	Vaihto
 	Signature validity is UNKNOWN:	Allekirjoituksen kelpoisuus on TUNTEMATON:
 	Signatures	Allekirjoitukset
 	Signatures panel	Allekirjoituspaneeli
+	Signed after this signature, so what they signed includes it: {names}.	Allekirjoitettu tämän allekirjoituksen jälkeen, joten allekirjoitettu sisältö sisältää sen: {names}.
 	Signed and all signatures are valid.	Allekirjoitettu, ja kaikki allekirjoitukset ovat kelvollisia.
 	Signed and saved to {path}	Allekirjoitettu ja tallennettu: {path}
 	Signer	Allekirjoittaja
@@ -2180,6 +2254,11 @@ scroll speed	Slow	Hidas
 key	Space	Välilyönti
 	Space Audit	Tilankäytön tarkastus
 	Special	Erikoismuoto
+	Spelling checks stay on this device.	Oikeinkirjoitus tarkistetaan tällä laitteella.
+	Spelling dictionary unavailable	Oikeinkirjoitussanakirja ei ole käytettävissä
+	Spelling language	Oikeinkirjoituksen kieli
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	Oikeinkirjoitusmerkit eivät muuta asiakirjaa. Näet ehdotukset napsauttamalla alleviivattua sanaa hiiren oikealla painikkeella.
+	Spelling suggestions	Oikeinkirjoitusehdotukset
 	Split	Jaa
 	Split document	Jaa asiakirja
 	Split document…	Jaa asiakirja…
@@ -2211,10 +2290,12 @@ calendar weekday	Su	Su
 certificate	Subject	Kohde
 	Submit a form	Lähetä lomake
 	Success	Onnistui
+	Suggest edits	Ehdota muutoksia
 	sum (+)	summa (+)
 	Summarize	Tee yhteenveto
 	Summarize comments	Tee kommenttiyhteenveto
 	Summarize Options	Yhteenvedon asetukset
+	Swap width and height	Vaihda leveys ja korkeus
 	Switch light / dark theme	Vaihda vaalea / tumma teema
 	Switch to List view to change the pages it takes.	Vaihda luettelonäkymään, jos haluat muuttaa siitä otettavia sivuja.
 	Switch to two-page view first to show the cover page	Vaihda ensin kahden sivun näkymään, jotta kansisivu näkyy
@@ -2313,6 +2394,7 @@ calendar weekday	Th	To
 	The document now conforms to {level}; save it to keep the changes	Asiakirja on nyt {level}-yhteensopiva; tallenna se, jotta muutokset säilyvät
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Asiakirja avautuu ilman salasanaa; tätä salasanaa tarvitaan rajoitusten muuttamiseen. Se otetaan käyttöön tallennettaessa.
 	The document was closed before it could be saved.	Asiakirja suljettiin ennen kuin se ehdittiin tallentaa.
+	The document will no longer be certified.	Asiakirja ei ole enää sertifioitu.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Asiakirjaan upotetut sulkutiedot osoittavat, ettei allekirjoittajan varmennetta ole peruutettu.
 	The document's security settings don't allow copying text and images	Asiakirjan suojausasetukset eivät salli tekstin ja kuvien kopiointia
 	The document's security settings don't allow filling in form fields	Asiakirjan suojausasetukset eivät salli lomakekenttien täyttämistä
@@ -2325,6 +2407,7 @@ calendar weekday	Th	To
 	The field properties could not be changed.	Kenttäominaisuuksia ei voitu muuttaa.
 	The field properties dialog is no longer open.	Kenttäominaisuuksien valintaikkuna ei ole enää auki.
 	The field {name} no longer exists.	Kenttää {name} ei ole enää olemassa.
+	The fields this signature locked ({names}) can be changed again.	Kenttiä, jotka tämä allekirjoitus lukitsi ({names}), voi taas muuttaa.
 	the first heading is an H{n}; headings should not skip levels	ensimmäinen otsikko on H{n}; otsikkotasoja ei pidä ohittaa
 	the first row number can be at most {max}	ensimmäisen rivin numero voi olla enintään {max}
 	The font {} isn't embedded	Fonttia {} ei ole upotettu
@@ -2344,9 +2427,11 @@ calendar weekday	Th	To
 	The linked PDF opened, but its page destination was out of range.	Linkitetty PDF avautui, mutta sen kohdesivu oli alueen ulkopuolella.
 	The metadata doesn't identify the file as {}	Metatiedot eivät tunnista tiedostoa muodoksi {}
 	the name is not a plain file name	nimi ei ole pelkkä tiedostonimi
+	The new file has no signature left and no earlier revision holding it.	Uudessa tiedostossa ei ole enää allekirjoitusta eikä aiempaa versiota, jossa se olisi.
 	The newest {n} of {total} PDFs	Uusimmat {n}/{total} PDF-tiedostoa
 	The operation failed.	Toiminto epäonnistui.
 	The order saved in the PDF needs tidying	PDF:ään tallennettu järjestys kaipaa siistimistä
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Muut allekirjoitukset ({names}) ilmoittavat, että asiakirjaa on muutettu niiden jälkeen. Tarkista ne uudelleen: mikään ei takaa, että ne pysyvät kelvollisina.
 	The page has changed; select the image again	Sivu on muuttunut; valitse kuva uudelleen
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sivut poimittiin mutta niitä ei poistettu, koska asiakirja muuttui kansion valinnan aikana.
 	the password is incorrect	salasana on väärä
@@ -2362,6 +2447,7 @@ calendar weekday	Th	To
 	The provider's page didn't come back in time. Try again.	Palveluntarjoajan sivu ei palannut ajoissa. Yritä uudelleen.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Uudelleenohjauksen URI:n on oltava http://127.0.0.1 tai http://localhost portin kanssa.
 	The replacement file doesn't have that many pages.	Korvaavassa tiedostossa ei ole niin montaa sivua.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Rajoitukset koskevat vastaanottajia, joilla ei ole “Kaikki oikeudet” -oikeutta. Ne otetaan käyttöön tallennettaessa.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	rivit ovat liian matalia: tee alueesta korkeampi tai käytä vähemmän rivejä tai pienempää riviväliä
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA-allekirjoituksen arvon pituus ei vastaa avaimen modulusta (alun nollatavuja poistettu tai lisätty); se luettiin silti.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	RSA-allekirjoituksen DigestInfo-rakenteesta puuttuu NULL-parametri (vanhemmat allekirjoittajat kirjoittavat sen näin); se luettiin silti.
@@ -2381,7 +2467,9 @@ calendar weekday	Th	To
 	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	Allekirjoitus on BER-koodattu (määrittelemättömät pituudet) eikä DER-koodattu; se luettiin sallivasti.
 	The signature uses the legacy adbe.x509.rsa_sha1 format.	Allekirjoitus käyttää vanhaa adbe.x509.rsa_sha1-muotoa.
 	The signature value does not match the signer's certificate: the signature is corrupt.	Allekirjoituksen arvo ei vastaa allekirjoittajan varmennetta: allekirjoitus on vioittunut.
+	The signature was not removed: {e}	Allekirjoitusta ei poistettu: {e}
 	The signature will be invisible.	Allekirjoitus on näkymätön.
+	The signature {names} locks this field.	Allekirjoitus {names} lukitsee tämän kentän.
 	The signature's byte range does not exclude exactly its contents.	Allekirjoituksen tavualue ei rajaa pois täsmälleen sen sisältöä.
 	The signature's byte range does not match the file.	Allekirjoituksen tavualue ei vastaa tiedostoa.
 	The signature's signed attributes have no content type, which CMS requires; it was read anyway.	Allekirjoituksen allekirjoitetuista määritteistä puuttuu sisältötyyppi, jota CMS edellyttää; se luettiin silti.
@@ -2445,6 +2533,7 @@ calendar weekday	Th	To
 	This compatibility level supports only plain ASCII passwords.	Tämä yhteensopivuustaso tukee vain pelkkiä ASCII-salasanoja.
 	This dialog shows the details of a certificate and its chain.	Tässä ikkunassa näkyvät varmenteen ja sen ketjun tiedot.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Tämä asiakirja pyytää avautumaan koko näytön tilassa: sivu täyttää näytön eikä muuta näy. Poistu milloin tahansa painamalla Esc.
+	This document can't be changed: {names}	Tätä asiakirjaa ei voi muuttaa: {names}
 	This document can't be checked: it couldn't be read for editing	Tätä asiakirjaa ei voi tarkistaa: sitä ei voitu lukea muokattavaksi
 	This document contains {n} interactive form fields.	Tässä asiakirjassa on {n} vuorovaikutteista lomakekenttää.
 	This document has no attachments.	Tässä asiakirjassa ei ole liitteitä.
@@ -2458,6 +2547,7 @@ calendar weekday	Th	To
 	This document has no layers.	Tässä asiakirjassa ei ole tasoja.
 	This document has no pages.	Tässä asiakirjassa ei ole sivuja.
 	This document has no restrictions to lift	Tässä asiakirjassa ei ole poistettavia rajoituksia
+	This document has no signature that can be removed.	Tässä asiakirjassa ei ole allekirjoitusta, jonka voisi poistaa.
 	This document has no signatures.	Tässä asiakirjassa ei ole allekirjoituksia.
 	This document has no tagged figures.	Tässä asiakirjassa ei ole tagitettuja kuvia.
 	This document has no {kind} to change	Tässä asiakirjassa ei ole muutettavaa: {kind}
@@ -2483,6 +2573,7 @@ calendar weekday	Th	To
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Tämä lomake sisältää myös XFA-tietoja, joita PdfCraft ei vielä lue. Voit täyttää kentät, mutta Acrobat saattaa näyttää XFA-arvot niiden sijaan.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Tämän lomakkeen komentosarjat on poistettu käytöstä, koska yksi kesti liian kauan. Suorita ne uudelleen avaamalla asiakirja uudelleen.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Tämä on dynaaminen XFA-lomake, jota PdfCraft ei vielä osaa näyttää. Näet tiedoston paikkamerkkisivun.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	Tämä on kuva allekirjoituksesta, ei digitaalinen allekirjoitus: vain sivulla oleva merkki poistuu. Alkuperäinen tiedosto säilyy ennallaan.
 	This is the first PDF in its folder	Tämä on kansionsa ensimmäinen PDF
 	This is the last PDF in its folder	Tämä on kansionsa viimeinen PDF
 	This measurement needs at least {n} points.	Tämä mittaus vaatii vähintään {n} pistettä.
@@ -2492,8 +2583,10 @@ calendar weekday	Th	To
 	This page has an opaque background of its own, which hides anything behind it. Choose Blend with page content.	Tällä sivulla on oma peittävä tausta, joka peittää kaiken sen alla olevan. Valitse Sekoita sivun sisältöön.
 	This page has an opaque background of its own, which hides the image behind it.	Tällä sivulla on oma peittävä tausta, joka peittää sen alla olevan kuvan.
 	This PDF uses the unsupported {s} action.	Tämä PDF käyttää toimintoa {s}, jota ei tueta.
+	This point could not be moved. Try a smaller move.	Tätä pistettä ei voitu siirtää. Kokeile pienempää siirtoa.
 	This printer offers no settings of its own.	Tällä tulostimella ei ole omia asetuksia.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Tämän tulostimen ohjain ei hyväksy kaksipuolisuusasetuksia muilta ohjelmilta, joten sen oma asetus on voimassa. Muuta sitä kohdassa Ominaisuudet…
+	this signature can't be removed on its own	tätä allekirjoitusta ei voi poistaa yksinään
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Tämä allekirjoitus käyttää alle 2048-bittistä RSA-avainta, jota ei enää pidetä riittävän vahvana allekirjoituksiin. Se tarkistuu yhä, mutta siihen ei pidä luottaa.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Tämä allekirjoitus käyttää RIPEMD-160:tä, vanhaa 160-bittistä tiivistealgoritmia, jota ei enää suositella allekirjoituksiin. Se hyväksytään yhä, mutta siihen ei pidä luottaa.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Tämä allekirjoitus käyttää SHA-1:tä, heikkoa tiivistealgoritmia, jossa on osoitettu törmäyksiä. Se hyväksytään yhä, koska monet vuosia sitten allekirjoitetut asiakirjat käyttävät sitä, mutta siihen ei pidä luottaa.
@@ -2555,6 +2648,7 @@ signature pad	Type	Kirjoita
 	Undo {action}	Kumoa {action}
 	Unit	Yksikkö
 	Unknown author	Tuntematon tekijä
+	unknown signer	tuntematon allekirjoittaja
 	Unlock comment	Avaa kommentin lukitus
 	Unlock {name}	Avaa tiedoston {name} lukitus
 	Unlock {n} files	Avaa {n} tiedoston lukitus
@@ -2567,6 +2661,8 @@ signature pad	Type	Kirjoita
 	Unpin {folder}	Irrota {folder}
 	Unpinned {tool} from Home	{tool} irrotettu aloitussivulta
 	Unplaced	Sijoittamaton
+	Unsaved changes	Tallentamattomia muutoksia
+	Unsaved changes to this document are saved in the new file too.	Tämän asiakirjan tallentamattomat muutokset tallennetaan myös uuteen tiedostoon.
 	Unsigned signature field	Allekirjoittamaton allekirjoituskenttä
 	Unsigned signature field: {name}	Allekirjoittamaton allekirjoituskenttä: {name}
 	Unsupported measurements	Ei-tuetut mittaukset
@@ -2612,6 +2708,9 @@ certificate	Valid to	Voimassa asti
 	Validate	Tarkistus
 	Validate all	Tarkista kaikki
 	Validate all signatures	Tarkista kaikki allekirjoitukset
+	validated: invalid	tarkistettu: virheellinen
+	validated: valid	tarkistettu: kelvollinen
+	validated: validity unknown	tarkistettu: kelpoisuus tuntematon
 	Validity ends	Voimassaolo päättyy
 certificate	Validity ends	Voimassaolo päättyy
 	Validity starts	Voimassaolo alkaa
@@ -2636,6 +2735,8 @@ certificate	Version	Versio
 	Viewport rectangle in page points (x, y, width, height)	Näkymäikkunan suorakulmio sivun pisteinä (x, y, leveys, korkeus)
 	Visible Rectangle	Näkyvä suorakulmio
 	Visual	Visuaalinen
+	Visual initials (Fill & Sign, not digital)	Visuaaliset nimikirjaimet (Täytä ja allekirjoita, ei digitaaliset)
+	Visual signature (Fill & Sign, not digital)	Visuaalinen allekirjoitus (Täytä ja allekirjoita, ei digitaalinen)
 	Waiting for the system print dialog…	Odotetaan järjestelmän tulostusikkunaa…
 	Waiting for your approval in the browser…	Odotetaan hyväksyntääsi selaimessa…
 	Warning	Varoitus
@@ -2670,6 +2771,7 @@ calendar weekday	We	Ke
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Katselet asiakirjan ”{from}” revisiota {rev}. Se on tilannevedos: muutokset tässä eivät vaikuta alkuperäiseen.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Katselet asiakirjan ”{from}” allekirjoitettua versiota (revisio {rev}). Se on tilannevedos: muutokset tässä eivät vaikuta alkuperäiseen.
 	You can pin up to {n} folders. Unpin one first.	Voit kiinnittää enintään {n} kansiota. Irrota ensin yksi.
+	You choose where the new version is saved. Continue?	Valitset itse, mihin uusi versio tallennetaan. Jatketaanko?
 	You have version {c}. Download the new version from its release page.	Käytössä on versio {c}. Lataa uusi versio sen julkaisusivulta.
 	Your name	Nimesi
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy tai yy vuosi · m tai mm kuukausi · mmm tai mmmm kuukauden nimi · d tai dd päivä · ddd tai dddd viikonpäivä. H, h, M, s ja t ovat aikakirjaimia, eikä niitä voi käyttää yksinään: lisää {escape} kirjaimen eteen, jotta se näkyy sellaisenaan.
@@ -2718,7 +2820,10 @@ calendar weekday	We	Ke
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} kansioon {dir}
 	{names} and {last}	{names} ja {last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} sertifioi tämän asiakirjan sallimatta kommentteja ja ilmoittaa tästä muutoksesta.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} sertifioi tämän asiakirjan, eikä allekirjoituksen poistaminen ole sertifioinnin sallima muutos.
 	{name} (default)	{name} (oletus)
+	{name} (you)	{name} (sinä)
 	{name} can't be combined: {why}	Tiedostoa {name} ei voi yhdistää: {why}
 	{name} has no action	Kohteella {name} ei ole toimintoa
 	{name} is read-only	{name} on vain luku -tilassa
@@ -2727,6 +2832,7 @@ calendar weekday	We	Ke
 	{name} — unsaved changes	{name} — tallentamattomia muutoksia
 	{name}: choosing images arrives on the web with file pickers for images	{name}: kuvien valitseminen tulee verkkoversioon kuvatiedostojen valitsimien myötä
 	{name}: the {other} action isn't supported yet	{name}: toimintoa {other} ei vielä tueta
+	{name}_unsigned.pdf	{name}_allekirjoittamaton.pdf
 @plural	{n} byte|{n} bytes	{n} tavu|{n} tavua
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} laskenta käyttää nyt uutta nimeä.|{n} laskentaa käyttää nyt uutta nimeä.
 @plural	{n} comment|{n} comments	{n} kommentti|{n} kommenttia
@@ -2775,6 +2881,7 @@ calendar weekday	We	Ke
 	{verb} Background	{verb} tausta
 	{verb} Header and Footer	{verb} ylä- ja alatunniste
 	{verb} Watermark	{verb} vesileima
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. Tallennettiin {file}, ja tarkistettiin, että se avautuu uudelleen kaikkine sivuineen. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	Tämän asiakirjan {who} yritti avata osoitteen, jota PdfCraft ei avaa: {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	Tämän asiakirjan {who} yritti avata osoitteen, jota PdfCraft ei avaa: {e}. Asiakirjoista avautuvat vain verkkolinkit (http, https) ja sähköpostilinkit (mailto).
 	{who} in this document wants to open this address in your browser:	{who} tässä asiakirjassa haluaa avata tämän osoitteen selaimessa:
@@ -2788,6 +2895,7 @@ calendar weekday	We	Ke
 	— (protection is applied when you save)	— (suojaus otetaan käyttöön tallennettaessa)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	”{name}” muuttui levyllä avaamisen tai edellisen tallennuksen jälkeen. Tallentaminen nyt korvaa tuon uudemman version tällä versiolla.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	Asiakirjassa ”{name}” on suojausrajoituksia. Poista ne antamalla käyttöoikeuksien salasana.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	“{name}” on salattu tietyille henkilöille. Valitse digitaalinen tunnuksesi ja avaa se antamalla sen salasana.
 	“{name}” is protected. Enter a password to open it.	”{name}” on suojattu. Avaa se antamalla salasana.
 	… and {n} more	… ja {n} muuta
 	−Bin	−Bin

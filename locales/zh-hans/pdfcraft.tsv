@@ -39,8 +39,11 @@
 	4 x 6 in label (101.6 x 152.4 mm)	4 × 6 英寸标签 (101.6 × 152.4 毫米)
 	9 digit, A letter, O letter or digit, X any character	9 表示数字，A 表示字母，O 表示字母或数字，X 表示任意字符
 	; 1 page already had text	；1 页已有文本
+	; 1 page skipped	; 已跳过 1 页
+	; corrected {n} pages	; 已校正 {n} 页
 	; failed: {list}	；失败：{list}
 	; {n} pages already had text	；{n} 页已有文本
+	; {n} pages skipped	; 已跳过 {n} 页
 	? of {n}	?/{n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}：{prs} 个 PR，{commits} 次提交，新增 {added} 行 / 删除 {deleted} 行（净增 {delta} 行），新增 {bin_added} 个 / 删除 {bin_deleted} 个二进制资源，{first} – {last}
 	`{command}` {when}	`{command}` {when}
@@ -50,6 +53,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	每页上的对角线 CONFIDENTIAL 水印。
 	a document must keep at least one page	文档必须保留至少一页
 	A document needs at least one page: copy instead	文档至少需要保留一页，请改用复制
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	文档时间戳覆盖整个文件，不属于任何人的签名，因此无法单独移除。
 	a field named {name} already exists	已存在名为 {name} 的字段
 	A form field has additional actions	表单字段包含附加动作
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	本地模型不是最先进的云端模型：它可能出错，较长的回答在处理器上需要时间。重要事项请务必核实，下载前也请留意模型大小与这台机器是否匹配。
@@ -57,6 +61,7 @@
 	A picture covers page {pages} (a scan?), so the background won't show there.	第 {pages} 页被一张图片覆盖（扫描件？），因此那里不会显示背景。
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	一个 PNG 或 SVG 文件。每次 PdfCraft 启动时都从此位置读取。
 	A selected field has no widget on any page, so the fields can't be edited together.	某个所选字段在任何页面上都没有控件，因此无法一起编辑这些字段。
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	属于页面内容一部分的签名（例如扫描页面上的签名）既不是字段也不是注释，因此无法单独移除，PdfCraft 也不会为隐藏它而擦除页面的某些部分。要去掉它，请对该区域进行密文处理（密文），如果签名是一张独立的图像，也可以用“编辑 PDF”删除该图像。
 	A stream refers to an external file	数据流引用了外部文件
 	A stream uses LZW compression	数据流使用 LZW 压缩
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	摘要描述表格的用途和布局。请为每个表格添加 Summary 属性。
@@ -101,6 +106,7 @@
 	Add an Action	添加操作
 	Add an image field	添加图像字段
 	Add arrow	添加箭头
+	Add at least one recipient.	请至少添加一位收件人。
 	Add at least two files	至少添加两个文件
 	Add background	添加背景
 	Add background…	添加背景…
@@ -108,6 +114,7 @@
 	Add bookmark	添加书签
 	Add boundary point	添加边界点
 	Add callout	添加标注框
+	Add certificate file…	添加证书文件…
 	Add checkmark	添加勾选标记
 	Add circle	添加圆形
 	Add cloud	添加云形
@@ -148,6 +155,7 @@
 	Add rectangle	添加矩形
 	Add redaction mark	添加密文标记
 	Add search index	添加搜索索引
+	Add searchable text	添加可搜索文本
 	Add signature	添加签名
 	Add smaller unit	添加较小单位
 	Add squiggly underline	添加波浪下划线
@@ -161,11 +169,13 @@
 	Add the choices people pick from.	添加供人选择的选项。
 	Add the files to combine	添加要合并的文件
 	Add the steps this action runs, in order.	按顺序添加此操作运行的步骤。
+	Add to dictionary	添加到词典
 	Add to Trusted Certificates	添加到受信任的证书
 	Add to trusted certificates	添加到受信任的证书
 	Add underline	添加下划线
 	Add watermark	添加水印
 	Add watermark…	添加水印…
+	Add your digital ID	添加你的数字 ID
 	Added 1 comment	已添加 1 条注释
 	Added more than once	重复添加
 	Added text	已添加的文本
@@ -180,6 +190,7 @@
 	Advanced search…	高级搜索…
 	Advanced unit formats	高级单位格式
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	点击“签名”后，在 CloudSigner 窗口中输入 mSzafir 应用里的 OTT 代码，并在应用中批准签名。在 CloudSigner 中开启持久 OTT 代码后，每隔几分钟才需输入一次代码。
+	AI Assistant	AI 助手
 	AI assistant	AI 助手
 	AI chat isn't available in the web build; use the desktop app or CLI.	网页版不支持 AI 聊天；请使用桌面应用或 CLI。
 	Algorithm	算法
@@ -198,6 +209,7 @@
 	All page content is tagged	所有页面内容都已标记
 	All pages in document	文档中的所有页面
 	All pages in range	范围内的所有页面
+	All permissions	所有权限
 	All tools	所有工具
 	Allow	允许
 	Allow Rich Text Formatting	允许富文本格式
@@ -289,6 +301,7 @@
 	Auto-detect	自动检测
 	Auto-rotate pages	自动旋转页面
 	Auto-size text to fit redaction region	自动调整文本大小以适应密文区域
+	Automatically rotate sideways and upside-down pages	自动旋转侧向和倒置的页面
 	Automatically tag PDF	自动标记 PDF
 	Available version: {v}	可用版本：{v}
 	average	平均值
@@ -365,8 +378,11 @@
 	Center vertically	垂直居中
 	Center window on screen	在屏幕上居中窗口
 	Centre	居中
+	Certificate	证书
+	Certificate encryption will be applied when you save	证书加密将在保存时应用
 	Certificate Viewer	证书查看器
 	Certificates	证书
+	Certification signature (level {p})	认证签名（级别 {p}）
 	Certified by {by}	认证方{by}
 	Certify	认证
 	Certify (invisible signature)	认证（不可见签名）
@@ -407,6 +423,7 @@
 	Check for accessibility…	无障碍检查…
 	Check for updates…	检查更新…
 	Check spelling	检查拼写
+	Check spelling while typing	输入时检查拼写
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	检查标记的阅读顺序是否与明眼读者一致。使用阅读顺序工具或标记面板进行更正。
 	Check the pages	请检查页码
 	Check the pages of {name}: {why}	请检查 {name} 的页码：{why}
@@ -420,6 +437,7 @@
 	Checkmark	对勾
 	Chinese (Simplified) and English	简体中文和英语
 	Choose a control point inside the viewport.	请选择视口内的控制点。
+	Choose a digital ID file	选择数字 ID 文件
 	Choose a folder for the exported files	选择导出文件的文件夹
 	Choose a folder for the extracted pages	选择提取页面的文件夹
 	Choose a folder for the results	选择结果文件夹
@@ -431,12 +449,14 @@
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	选择 PNG 或 JPEG 图像（最大 4 MiB）。透明度会保留。
 	Choose a point, then the two endpoints of a reference line.	先选择一个点，再选择参考线的两个端点。
 	Choose a provider.	请选择提供商。
+	Choose a signature that can be removed.	请选择一个可以移除的签名。
 	Choose a stamp, then click on the page to place it.	选择图章，然后单击页面放置。
 	Choose a tool to start measuring.	选择工具开始测量。
 	Choose a visible point on the model.	请选择模型上的可见点。
 	Choose advanced unit formats first.	请先设置高级单位格式。
 	Choose an endpoint, the angle vertex, then the other endpoint.	依次选择端点、角的顶点、另一个端点。
 	Choose an image	选择图像
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	请选择其他文件：原始文件保持不变，不含该签名的版本会保存在它旁边。
 	Choose font…	选择字体…
 	Choose images	选择图像
 	Choose image…	选择图像…
@@ -446,6 +466,7 @@
 	Choose reference…	选择参考文件…
 	Choose the digital ID that you want to use for signing:	选择要用于签名的数字 ID：
 	Choose the module's library file.	请选择模块的库文件。
+	Choose the signature to remove:	选择要移除的签名：
 	Choose the two endpoints.	选择两个端点。
 	Choose three points on the circle.	选择圆周上的三个点。
 	Choose where to save the signed file. The service signs it once you have.	请选择签名文件的保存位置。选好后，服务才会签名。
@@ -453,6 +474,7 @@
 	Clean-up	清理
 	Clear all	全部清除
 	Clear form	清除表单
+	Clear personal dictionary	清空个人词典
 	Clear points	清除点
 	Clear Recent Files	清除最近的文件
 	Clear redaction marks	清除密文标记
@@ -568,6 +590,8 @@
 	Copyright status	版权状态
 	Copyrighted	受版权保护
 	Correct recognized text	更正识别文本
+	Correct scans	校正扫描件
+	Corrected scan	已校正的扫描件
 	Could not copy the selection because text could not be read on every page	无法复制选区，因为无法读取所有页面上的文本
 	Could not mark the selection because text could not be read on every page	无法标记选区，因为无法读取所有页面上的文本
 	Could not save: {e}	无法保存：{e}
@@ -576,6 +600,7 @@
 	Couldn't copy the image: {e}	无法复制图像：{e}
 	Couldn't create a PDF: {e}	无法创建 PDF：{e}
 	Couldn't download {name}: {e}	无法下载{name}：{e}
+	Couldn't encrypt: {e}	无法加密：{e}
 	Couldn't extract pages: {e}	无法提取页面：{e}
 	Couldn't extract the original PDF: {e}	无法提取原始 PDF：{e}
 	Couldn't fit the visible content: {e}	无法适应可见内容：{e}
@@ -646,6 +671,7 @@
 	Crop Image	裁剪图像
 	Crop page	裁剪页面
 	Crop pages	裁剪页面
+	Crop scanner borders to the paper edge	将扫描边框裁剪至纸张边缘
 key	Ctrl	Ctrl
 	Currency symbol:	货币符号：
 	Current document	当前文档
@@ -654,6 +680,7 @@ key	Ctrl	Ctrl
 	Current page — type a page number or label (such as iv) and press Enter	当前页 — 输入页码或标签（如 iv）后按 Enter
 	Cursor coordinates	光标坐标
 	Custom font	自定义字体
+	Custom page…	自定义页面…
 	Custom role	自定义角色
 	Custom scale:	自定义比例：
 	Custom size	自定义尺寸
@@ -730,6 +757,7 @@ key	Delete	Delete
 	Diagnostic details	诊断详情
 	Digital ID	数字 ID
 	Digital ID password	数字 ID 密码
+	Digital ID required	需要数字 ID
 	Digital signature	数字签名
 	Digital Signature Properties	数字签名属性
 	Digitally sign	数字签名
@@ -779,6 +807,7 @@ key	Delete	Delete
 	Document sanitized. Save to finish: saving rewrites the whole file.	文档已清理。保存以完成：保存将重写整个文件。
 	Document scrollbar width	文档滚动条宽度
 	Document structure provides a logical reading order	文档结构提供逻辑阅读顺序
+	Document timestamp	文档时间戳
 	Document title is showing in title bar	标题栏中显示文档标题
 	Documents and view	文档与视图
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	超过 20 页的文档需要书签以便导航。请为主要章节添加书签。
@@ -834,6 +863,9 @@ key	Delete	Delete
 	Duplicate field	复制字段
 	Duplicate page	复制页面
 	Duplicate pages	重复页面
+	Duplicate pages with new field names	使用新字段名复制页面
+	Duplicate pages — 1 field renamed	重复页面 — 已重命名 1 个字段
+	Duplicate pages — fields renamed	重复页面 — 已重命名字段
 	Duplicate…	重复…
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	动态 XFA 表单已按模板排版：{pages}，{fields}。
 	Dynamic zoom	动态缩放
@@ -879,7 +911,11 @@ key	Delete	Delete
 	Enable text access for screen reader devices for the visually impaired	允许屏幕阅读器设备访问文本以帮助视障人士
 	Enabled	已启用
 	Encrypt	加密
+	Encrypt for recipient	为收件人加密
+	Encrypt for recipients	为收件人加密
+	Encrypt with Certificate	使用证书加密
 	Encrypt with certificate	使用证书加密
+	Encrypt with certificate…	使用证书加密…
 	Encryption	加密
 key	End	End
 	Endpoints	端点
@@ -924,6 +960,7 @@ key	Esc	Esc
 	Expand all tools	展开所有工具
 	Expand tag	展开标签
 	Expand top-level bookmarks	展开顶层书签
+	Expires {date}	到期 {date}
 	Explain	解释
 	Export & Convert	导出与转换
 	Export a PDF	导出 PDF
@@ -987,6 +1024,7 @@ scroll speed	Fast	快
 	Field properties…	字段属性…
 	Field value is in range:	字段值在范围内：
 	Field value is not validated	不验证字段值
+	Field: {field}	字段：{field}
 	Field: {field} on page {p}	字段：{field}，第 {p} 页
 	Fields to reset (comma-separated; empty: all)	要重置的字段（逗号分隔；为空表示全部）
 	Figure {i} of {n}{page}	图形 {i}/{n}{page}
@@ -1107,6 +1145,7 @@ scroll speed	Fast	快
 	Fraction	分数
 	From a PDF page or an image	来自 PDF 页面或图像
 	From colour	使用颜色
+	From template	从模板创建
 	From {file}	来自 {file}
 	From:	从：
 	Front side only	仅正面
@@ -1129,6 +1168,7 @@ scroll speed	Fast	快
 	Grayscale Images	灰度图像
 	Green on black	黑底绿字
 	Greyscale	灰度
+	Group select	框选组
 	Hand (H)	抓手 (H)
 	Hand Tool	手形工具
 	Has JavaScript actions (run in M6)	含 JavaScript 动作（M6 运行）
@@ -1220,6 +1260,7 @@ key	Home	Home
 	Installed version: {v}	已安装版本：{v}
 	Integrity	完整性
 	Intended usage	预期用途
+	Interface and appearance	界面和外观
 	Interface font	界面字体
 	Interface size	界面大小
 	Intersections	交点
@@ -1237,6 +1278,7 @@ key	Home	Home
 	Issued by: 	颁发者：
 	Issued to	颁发给
 	Issuer	颁发者
+	it was still in the document afterwards, so the change was undone	移除后它仍在文档中，因此已撤销此更改
 	Item List	项目列表
 	Item:	项目：
 	Items marked Ready work today.	标记为就绪的项目现已可用。
@@ -1252,6 +1294,7 @@ key	Home	Home
 	Join the ArtCraft community	加入 ArtCraft 社区
 	July	七月
 	June	六月
+	Keep an empty signature field to sign again	保留一个空白签名字段以便重新签名
 	Keep source fonts	保留原始字体
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	将 Windows 标题栏保留在标签栏上方。关闭后，标签栏即为标题栏，窗口按钮位于其右侧；最大化按钮上的贴靠布局（Snap Layouts）需要 Windows 标题栏。
 	Keep tool selected	保持工具选中
@@ -1266,13 +1309,14 @@ key	Home	Home
 	Landscape and Portrait Pages	横向和纵向页面
 	Landscape Pages	横向页面
 	Landscape pages	横向页面
+	Language and spelling	语言和拼写
 	Larger pages	放大页面
 	Larger text	放大文字
 	Larger thumbnails	放大缩略图
 	Last page	最后一页
 	Later in calculation order	在计算顺序中后移
 	Later in tab order	在 Tab 顺序中后移
-	Latin (accented)	拉丁字母（含变音符号）
+	Latin (accented)	拉丁字母（带重音）
 	Latitude	纬度
 	Layer options	图层选项
 	Layers panel	图层面板
@@ -1530,6 +1574,7 @@ key	Home	Home
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	未找到打印机。请检查打印机是否已安装、打印后台处理程序是否在运行，然后重新打开“打印”。
 	No problems found: the document conforms to {level}.	未发现问题：文档符合 {level}。
 	No raw file yet	尚未选择原始文件
+	No recipients yet.	尚无收件人。
 	No reference yet	尚未选择参考文件
 	No release notes were provided.	未提供发行说明。
 	No saved measurements in this view.	此视图中没有已保存的测量。
@@ -1542,6 +1587,7 @@ key	Home	Home
 	No size estimate: {e}	无法估算大小：{e}
 	No status has been set.	尚未设置状态。
 	no such document	找不到该文档
+	No suggestions	无建议
 	No tools match your search.	没有与搜索匹配的工具。
 	No unlinked web addresses were found in the text	文本中未发现未链接的网址
 	No untagged content was found.	未找到未标记的内容。
@@ -1549,7 +1595,10 @@ key	Home	Home
 	none	无
 	None (prefix only)	无（仅前缀）
 	None found	未发现
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	收件人中没有你的数字 ID：你将无法打开保存的文档。
+	None of these signatures can be removed.	这些签名都无法移除。
 	None of those files can be made into a PDF; use PDFs, images or .txt files	这些文件都无法转换为 PDF；请使用 PDF、图像或 .txt 文件
+	None of your digital IDs can open this document.	你的数字 ID 均无法打开此文档。
 	None — everything is allowed	无 — 允许一切操作
 scroll speed	Normal	正常
 	Normal page	普通页面
@@ -1598,13 +1647,16 @@ animation effects	On	开
 	One {f} file per page, named after the document.	每页一个 {f} 文件，以文档命名。
 	One-time code (OTP)	一次性验证码 (OTP)
 	Only allow this if you trust the source document.	仅在您信任源文档时才允许此操作。
+	Only certificates with RSA keys can be recipients.	只有带 RSA 密钥的证书才能作为收件人。
 	Only change the colour of black text or line art	仅更改黑色文本和线条的颜色
 	Only checked properties will change. Mixed means the selected fields have different values.	只会更改勾选的属性。“混合”表示所选字段的值不同。
+	Only clear paper edges are cropped. Indistinguishable white borders are kept.	仅裁剪清晰的纸张边缘。无法区分的白色边框将保留。
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	仅在您信任此文档时继续。链接地址可能携带文档中的信息，例如您在表单中输入的内容。
 	Only send if you trust this document and destination. GET puts form values in the URL.	仅在信任此文档和目标地址时发送。GET 会将表单值放入 URL。
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	仅在信任此文档和目标地址时发送。完整 PDF 将离开此计算机。
 	Only send if you trust this document and destination. The form values leave this computer.	仅当您信任此文档和目标地址时才发送。表单值将离开这台电脑。
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	仅更改页面内容：原页面的链接、注释、表单域和书签保留。
+	Only the recipients can open the document, each with the private key of their own certificate.	只有收件人可以打开此文档，每人使用自己证书的私钥。
 	Opacity:	不透明度:
 	Open a document first	请先打开文档
 	Open a PDF ({key})	打开 PDF ({key})
@@ -1636,6 +1688,7 @@ animation effects	On	开
 	Opened from a detached CAdES signature — read-only.	从分离式 CAdES 签名打开 — 只读。
 	Opened with	打开方式
 	Opened, but its security settings don't allow combining. Enter the permissions password.	已打开，但其安全设置不允许合并。请输入权限密码。
+	Opening documents	打开文档
 	Opening the browser's print dialog…	正在打开浏览器的打印对话框…
 	Opening {name}…	正在打开 {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	打开打印机驱动程序的首选项。这些设置会保存并用于此电脑上的所有打印；此处选择的份数、双面、灰度和纸张仍然适用。
@@ -1667,6 +1720,8 @@ animation effects	On	开
 	Other elements that require alternate text	需要替代文本的其他元素
 	Other options	其他选项
 	Other provider (CSC API)	其他提供商 (CSC API)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	仍有其他签名，因此副本会作为已签名文件的增量更新保存：已移除的签名保留在早期修订中，可以从那里恢复。
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	仍有其他签名，因此已移除的签名仍保留在文件的早期修订中；请重新验证其余签名。
 	Outdent	减少缩进
 	Outline colour:	轮廓颜色:
 	Outline over page	页面上叠加轮廓
@@ -1704,6 +1759,7 @@ animation effects	On	开
 	Page {label}	第 {label} 页
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	第 {pages} 页在添加背景后有改动，因此其自身的白色填充保持关闭。在白纸上看起来一样。
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	第 {pages} 页有自己的白色填充，会遮住背景。替换它
+	Page {p}	第 {p} 页
 	Page {p} of {n}	第 {p} 页，共 {n} 页
 	pages	页
 	Pages counted	已统计页数
@@ -1903,6 +1959,7 @@ animation effects	On	开
 	Reason: 	原因：
 	Recent colours	最近使用的颜色
 	Recent files to keep	Recent files to keep
+	Recipients	收件人
 	Recognize scanned text automatically	自动识别扫描文本
 	Recognize Text	识别文本
 	Recognize text	识别文本
@@ -1954,6 +2011,7 @@ animation effects	On	开
 	Remove "{name}" from this list? The certificate stays with the signing service.	从此列表中移除“{name}”？证书仍保留在签名服务中。
 	Remove "{name}" from this list? The file itself is not deleted.	从此列表中移除“{name}”？文件本身不会被删除。
 	Remove all links	删除所有链接
+	Remove and Save As…	移除并另存为…
 	Remove background	删除背景
 	Remove boundary point	移除边界点
 	Remove checkmark	删除勾选标记
@@ -1971,6 +2029,10 @@ animation effects	On	开
 	Remove page	删除页面
 	Remove redaction marks	移除密文标记
 	Remove security	删除安全性设置
+	Remove Signature	移除签名
+	Remove signature	移除签名
+	Remove signature…	移除签名…
+	Remove the signature {name}	移除签名 {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	从阅读顺序中移除此叶标签，并将其直接内容标记为工件
 	Remove unit	移除单位
 	Remove unreferenced named destinations	删除未引用的命名目标
@@ -1985,9 +2047,14 @@ animation effects	On	开
 	Remove {n} pages	删除 {n} 页
 	Removed 1 hidden item. Save to remove them from the file.	已删除 1 个隐藏项。保存以从文件中删除它们。
 	Removed 1 link	已删除 1 个链接
+	Removed the signature {field} and kept its empty field	已移除签名 {field}，并保留其空白字段
+	Removed the signature {field} with its field	已移除签名 {field} 及其字段
+	Removed the visual signature on page {p}	已移除第 {p} 页上的可视签名
 	Removed {n} hidden items. Save to remove them from the file.	已删除 {n} 个隐藏项。保存以从文件中删除它们。
 	Removed {n} links	已删除 {n} 个链接
 	Removing the background puts the page's own backdrop back.	移除背景后，页面自己的白色填充会恢复。
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	移除此签名会更改文档，并使此签名在生成的版本中失效。这可能会影响其他签名和认证。原始文件保持不变。
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	移除此签名会更改文档，并使此签名在生成的版本中失效。原始文件保持不变。
 	Removing white margins… page {d} of {t}	正在移除白边… 第 {d} 页，共 {t} 页
 	Rename bookmark	重命名书签
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	渲染：hayro（初期实现） · 界面：egui · 图标：Lucide（ISC） · 字体：Inter、JetBrains Mono、Dancing Script（OFL）
@@ -2041,6 +2108,7 @@ animation effects	On	开
 	Resume reading	继续朗读
 	Retain existing	保留现有
 	Retry	重试
+	Return to document	返回文档
 	Reveal in File Explorer	在文件资源管理器中显示
 	Reverse closed arrow	反向闭合箭头
 	Reverse open arrow	反向开口箭头
@@ -2089,6 +2157,8 @@ animation effects	On	开
 	Run JavaScript	运行 JavaScript
 	Running action… file {d} of {t}	正在运行操作…第{d}个文件，共{t}个
 	Runtime	运行环境
+	Safety margin (pt)	安全边距（磅）
+	Same as interface	与界面相同
 	Same as interface ({language})	与界面相同（{language}）
 	Sanitize	清理
 	Sanitize document	清理文档
@@ -2104,6 +2174,7 @@ animation effects	On	开
 	Save as PDF/A-3b	另存为 PDF/A-3b
 	Save as PDF/UA	另存为 PDF/UA
 	Save as PDF/X	另存为 PDF/X
+	Save as template	另存为模板
 	Save as to cloud	另存为到云端
 	Save as to cloud…	另存为到云端…
 	Save as…	另存为…
@@ -2132,6 +2203,7 @@ animation effects	On	开
 	Saved {place}: {before} → {after} (not smaller){detail}	已保存{place}：{before} → {after}（未缩小）{detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	已保存{place}：{before} → {after}（缩小了{pct}%）{detail}
 	Saved, but reopening failed: {e}	已保存，但重新打开失败：{e}
+	Saves document	保存文档
 	Saving… {pct}%	保存中… {pct}%
 	Scale	比例
 	Scale corner {n}	从角 {n} 缩放
@@ -2140,7 +2212,10 @@ animation effects	On	开
 	Scale relative to target page	相对于目标页面的缩放
 	Scan	扫描
 	Scan & OCR	扫描和 OCR
+	Scan and text recognition	扫描和文字识别
+	Scan correction	扫描校正
 	Scan next page	扫描下一页
+	Scan processing cancelled	扫描处理已取消
 	Scanned pages need OCR. Reading order follows extracted page text.	扫描页面需要OCR。朗读顺序遵循从页面提取的文本。
 	Scanned text detected	检测到扫描文本
 	Scanner	扫描仪
@@ -2168,6 +2243,7 @@ animation effects	On	开
 	Search tools and commands	搜索工具和命令
 	Search tools and commands…	搜索工具和命令…
 	Search tools…	搜索工具…
+	Searchable Image	可搜索的图像
 	Searchable Image (Exact)	可搜索图像（精确）
 	Searching…	正在搜索…
 	Searching… {s} of {p} pages	正在搜索… {s}/{p} 页
@@ -2319,6 +2395,7 @@ key	Shift	Shift
 	Signatures	签名
 	Signatures and seals are not carried over or checked.	签名和印章不会被保留，也不会被验证。
 	Signatures panel	签名面板
+	Signed after this signature, so what they signed includes it: {names}.	在此签名之后添加、且签名内容包含此签名的签名：{names}。
 	Signed and all signatures are valid.	已签名，所有签名均有效。
 	Signed and saved to {path}	已签名并保存到{path}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	由 {signer} 签名于 {time}；内容与所签内容不一致；未检查签名者的可信度。
@@ -2372,6 +2449,11 @@ key	Space	空格
 	Space Audit	空间审计
 	Spacing between copies	副本之间的间距
 	Speed:	速度：
+	Spelling checks stay on this device.	拼写检查仅在此设备上进行。
+	Spelling dictionary unavailable	拼写词典不可用
+	Spelling language	拼写检查语言
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	拼写标记不会更改文档。右键单击带下划线的单词可查看建议。
+	Spelling suggestions	拼写建议
 	Split document	拆分文档
 	Split document…	拆分文档…
 	Split into files…	拆分为多个文件…
@@ -2396,6 +2478,8 @@ document scrollbar width	Standard	标准
 	Steps	步骤
 	Sticky note	附注
 	Stop reading	停止朗读
+	Straighten scanned page	校正扫描页面的倾斜
+	Straighten skewed scans	校正扫描件倾斜
 	Strength: {s}	强度：{s}
 	Strikethrough text	删除线文本
 	String length (0 turns it off)	绳长（0 为关闭）
@@ -2407,12 +2491,14 @@ document scrollbar width	Standard	标准
 	Submit FDF data	提交 FDF 数据
 	Submit PDF document	发送 PDF 文档
 	Submit XFDF data	提交 XFDF 数据
+	Suggest edits	建议修改
 	sum (+)	求和 (+)
 	Summarize	摘要
 	Summarize comments	汇总注释
 	Summarize Options	汇总选项
 	Summarize with AI	用 AI 摘要
 	Surfaces	表面
+	Swap width and height	交换宽度和高度
 	Switch light / dark theme	切换浅色/深色主题
 	Switch page theme	切换页面主题
 	Switch to List view to change the pages it takes.	切换到列表视图以更改要使用的页面。
@@ -2503,6 +2589,7 @@ document scrollbar width	Standard	标准
 	The document now conforms to {level}; save it to keep the changes	文档现已符合{level}；保存以保留更改
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	打开文档无需密码；更改限制需要此密码。保存时应用。
 	The document was changed in another window. Check your text, then apply it again.	文档已在另一个窗口中被更改。请检查您的文字，然后再次应用。
+	The document will no longer be certified.	文档将不再处于认证状态。
 	The document's security settings don't allow copying text and images	文档安全设置不允许复制文本和图像
 	The document's security settings don't allow filling in form fields	文档安全设置不允许填写表单域
 	The document's security settings don't allow printing	文档安全设置不允许打印
@@ -2511,6 +2598,7 @@ document scrollbar width	Standard	标准
 	The field properties could not be changed.	无法更改字段属性。
 	The field properties dialog is no longer open.	字段属性对话框已不再打开。
 	The field {name} no longer exists.	字段 {name} 已不存在。
+	The fields this signature locked ({names}) can be changed again.	此签名锁定的字段（{names}）将可以再次更改。
 	The font must include Latin letters and numbers for interface controls.	字体必须包含界面控件需要的拉丁字母和数字。
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraft 写入时使用的字体无法显示“{c}”（{code}），因此它在所有 PDF 阅读器中都会显示为 ?。文本已保存。
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	该表单请求提交到{u}；PdfCraft 不发送表单数据。请保存文档以保留填写内容。
@@ -2533,12 +2621,15 @@ document scrollbar width	Standard	标准
 	The model viewport is too narrow to display.	模型视口太窄，无法显示。
 	The module's tokens hold no digital ID PdfCraft can sign with.	该模块的令牌中没有 PdfCraft 可用于签名的数字 ID。
 	the name is not a plain file name	名称不是单纯的文件名
+	The new file has no signature left and no earlier revision holding it.	新文件中已没有任何签名，也没有保存它的早期修订。
 	The newest {n} of {total} PDFs	共 {total} 个 PDF 中最新的 {n} 个
 	The objects are already aligned.	对象已经对齐。
 	The operation failed.	操作失败。
 	The order saved in the PDF needs tidying	PDF 中保存的顺序需要整理
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	其他签名（{names}）将报告文档在签名后已被更改。请重新验证它们：无法保证它们仍然有效。
 	The page has changed; select the image again	页面已更改；请重新选择图像
 	the password is incorrect	密码不正确
+	The password is incorrect.	密码不正确。
 	The password is only used to read the file; it isn't saved.	密码仅用于读取文件，不会被保存。
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF 文本字体无法显示“{c}”（{code}）。请选择受支持的文本。
 	The PIN is incorrect.	PIN 不正确。
@@ -2551,6 +2642,7 @@ document scrollbar width	Standard	标准
 	The release has ambiguous packages. Choose a package on the official release page.	此版本有多个兼容的软件包。请在官方发布页面选择一个软件包。
 	The release is not a published stable update. Try again later.	此版本不是已发布的稳定更新。请稍后重试。
 	The replacement file doesn't have that many pages.	替换文件没有那么多页面。
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	限制适用于没有“所有权限”的收件人。保存时应用。
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	行太矮：请增加区域高度，或减少行数或行间距
 	The same password is tried on each file.	将对每个文件尝试同一密码。
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	屏幕实际的每英寸像素数。用尺子校准后，实际大小 (100%) 会按真实尺寸显示页面。
@@ -2560,7 +2652,9 @@ document scrollbar width	Standard	标准
 	The selected scale could not be read.	无法读取所选比例。
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	与 {provider} 的会话已结束。请在“配置数字 ID”中重新登录。
 	The shared folder:	共享文件夹：
+	The signature was not removed: {e}	未移除签名：{e}
 	The signature will be invisible.	签名将不可见。
+	The signature {names} locks this field.	签名 {names} 锁定了此字段。
 	the signing service is unreachable ({reason})	无法连接签名服务（{reason}）
 	The signing service lists no certificate for this account.	签名服务未列出此账户的任何证书。
 	the signing service refused to list the certificates	签名服务拒绝列出证书
@@ -2598,6 +2692,7 @@ document scrollbar width	Standard	标准
 	This compatibility level supports only plain ASCII passwords.	此兼容性级别仅支持纯 ASCII 密码。
 	This dialog shows the details of a certificate and its chain.	此对话框显示证书及其链的详细信息。
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	此文档要求以全屏模式打开：页面充满屏幕，不显示其他内容。随时按 Esc 即可退出。
+	This document can't be changed: {names}	无法更改此文档：{names}
 	This document can't be checked: it couldn't be read for editing	无法检查本文档：无法读取进行编辑
 	This document contains {n} interactive form fields.	本文档包含 {n} 个交互式表单域。
 	This document does not allow adding form fields	此文档不允许添加表单字段
@@ -2612,6 +2707,7 @@ document scrollbar width	Standard	标准
 	This document has no layers.	本文档没有图层。
 	This document has no pages.	本文档没有页面。
 	This document has no restrictions to lift	此文档没有可解除的限制
+	This document has no signature that can be removed.	此文档中没有可移除的签名。
 	This document has no signatures.	本文档没有签名。
 	This document has no tagged figures.	本文档没有带标记的图形。
 	This document has no XMP metadata.	此文档没有 XMP 元数据。
@@ -2642,6 +2738,7 @@ document scrollbar width	Standard	标准
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	此安装由 RPM 软件包管理。请使用系统软件管理器更新 PdfCraft。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	这是动态 XFA 表单，PdfCraft 暂无法显示。您看到的是文件的占位页面。
 	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	只需从 GitHub 下载一次。之后可离线检测表单。您的 PDF 始终保留在此设备上。
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	这是签名的图像，不是数字签名：只会移除页面上的标记。原始文件保持不变。
 	This is the first PDF in its folder	这是所在文件夹中的第一个 PDF
 	This is the last PDF in its folder	这是所在文件夹中的最后一个 PDF
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	这是令牌 PIN 锁定前的最后一次尝试。此处输入错误的 PIN 可能会使其永久锁定。
@@ -2657,6 +2754,7 @@ document scrollbar width	Standard	标准
 	This point could not be moved. Try a smaller move.	无法移动此点。请尝试较小的移动。
 	This printer offers no settings of its own.	此打印机没有专属设置。
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	此打印机的驱动程序不接受其他程序的双面打印设置，因此使用其自身设置。更改位置：属性…
+	this signature can't be removed on its own	此签名无法单独移除
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	无法使用此签名服务：它需要在浏览器中进行 OAuth 登录，而 PdfCraft 尚不支持
 	This tab is already first	此标签页已是第一个
 	This tab is already last	此标签页已是最后一个
@@ -2706,6 +2804,7 @@ document scrollbar width	Standard	标准
 	Type text	输入文本
 	Type the web address.	输入网址。
 	Type your {what}.	请输入您的{what}。
+	Uncertain orientations are left unchanged. Deskew fits the full image inside the page.	方向不确定时保持不变。倾斜校正会将整个图像保留在页面内。
 	Unchecked	未勾选
 	Unchecked reads	未检查的读取
 	Underline text	下划线文本
@@ -2718,6 +2817,7 @@ document scrollbar width	Standard	标准
 	Units per model unit	每个模型单位的单位数
 	Units run from largest to smallest. Later factors convert the remainder.	单位从大到小排列，后续系数换算余数。
 	Unknown author	未知作者
+	unknown signer	未知签名人
 	Unlock	解锁
 	Unlock comment	解锁注释
 	Unlock {name}	解锁 {name}
@@ -2731,6 +2831,7 @@ document scrollbar width	Standard	标准
 	Unpin {folder}	取消固定 {folder}
 	Unpinned {tool} from Home	已从主页取消固定 {tool}
 	Unplaced	未放置
+	Unsaved changes to this document are saved in the new file too.	此文档中未保存的更改也会保存到新文件中。
 	Unsupported measurements	不支持的测量
 	Update background	更新背景
 	Update background…	更新背景…
@@ -2778,6 +2879,9 @@ document scrollbar width	Standard	标准
 	Validate	验证
 	Validate all	全部验证
 	Validate all signatures	验证所有签名
+	validated: invalid	验证结果：无效
+	validated: valid	验证结果：有效
+	validated: validity unknown	验证结果：有效性未知
 	Validity ends	有效期结束
 	Validity starts	有效期开始
 	Validity unknown	有效性未知
@@ -2805,6 +2909,8 @@ document scrollbar width	Standard	标准
 	Viewport width and height must be positive.	视口的宽度和高度必须为正数。
 	Visible Rectangle	可见矩形
 	Visual	视觉
+	Visual initials (Fill & Sign, not digital)	可视缩写签名（填写与签名，非数字签名）
+	Visual signature (Fill & Sign, not digital)	可视签名（填写与签名，非数字签名）
 	Voice	语音
 	Voice and Speech	语音与朗读
 	Voice:	语音：
@@ -2845,6 +2951,7 @@ document scrollbar width	Wide	宽
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	您正在查看“{from}”的修订版本 {rev}。这是快照：在此处所做的更改不会影响原始文档。
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	您正在查看“{from}”的已签名版本（修订版本 {rev}）。这是快照：在此处所做的更改不会影响原始文档。
 	You can pin up to {n} folders. Unpin one first.	最多可固定 {n} 个文件夹。请先取消固定一个。
+	You choose where the new version is saved. Continue?	由你选择新版本的保存位置。要继续吗？
 	You have version {c}. Download the new version from its release page.	当前版本为 {c}。请从其发布页面下载新版本。
 	Your changes will be lost if you don't save them.	如果不保存，更改将会丢失。
 	Your name	您的姓名
@@ -2890,7 +2997,10 @@ document scrollbar width	Wide	宽
 	{month} {y}	{y} 年 {month}
 	{msg} to {dir}	{msg}到{dir}
 	{names} and {last}	{names}和{last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} 认证此文档且不允许注释，会报告此更改。
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} 认证此文档，而移除签名不是该认证允许的更改。
 	{name} (default)	{name}（默认）
+	{name} (you)	{name}（你）
 	{name} can't be combined: {why}	无法合并 {name}：{why}
 	{name} has no action	{name}没有动作
 	{name} is read-only	{name}为只读
@@ -2899,6 +3009,7 @@ document scrollbar width	Wide	宽
 	{name} — unsaved changes	{name} — 有未保存的更改
 	{name}: choosing images arrives on the web with file pickers for images	{name}：在 Web 端选择图像将使用图像文件选择器
 	{name}: the {other} action isn't supported yet	{name}：{other} 动作暂不受支持
+	{name}_unsigned.pdf	{name}_无签名.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} 个计算已改用新名称。
 	{n} contributors · {c} commits	{n} 位贡献者 · {c} 次提交
 	{n} days ago	{n} 天前
@@ -2936,6 +3047,7 @@ document scrollbar width	Wide	宽
 	{verb} Background	{verb}背景
 	{verb} Header and Footer	{verb}页眉和页脚
 	{verb} Watermark	{verb}水印
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}。已保存 {file}，并确认它能带着所有页面重新打开。{history}
 	{who} in this document wants to open this address in your browser:	此文档中的{who}请求在浏览器中打开以下地址：
 	{who} in this document wants to open your email app with this address:	此文档中的{who}请求打开邮件应用并使用以下地址：
 	{words} on {pages}	在{pages}{words}
@@ -2943,6 +3055,7 @@ document scrollbar width	Wide	宽
 	— (protection is applied when you save)	—（保存时应用保护）
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	“{name}”在打开或上次保存后已在磁盘上更改。现在保存会用此版本替换那个较新的版本。
 	“{name}” has security restrictions. Enter its permissions password to lift them.	“{name}”有安全限制。请输入其权限密码以解除限制。
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	“{name}”已为特定人员加密。请选择你的数字 ID 并输入其密码以打开。
 	“{name}” is protected. Enter a password to open it.	“{name}”受保护。请输入密码以打开。
 	…or paste the raw text here; # headings, - bullets	…或在此粘贴原始文本；# 标题，- 项目符号
 	−LOC	删除行

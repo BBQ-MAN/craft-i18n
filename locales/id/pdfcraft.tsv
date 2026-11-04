@@ -49,6 +49,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	Watermark CONFIDENTIAL diagonal pada setiap halaman.
 	a document must keep at least one page	dokumen harus mempertahankan setidaknya satu halaman
 	A document needs at least one page: copy instead	Dokumen memerlukan minimal satu halaman: gunakan salinan
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Stempel waktu dokumen mencakup seluruh file dan bukan tanda tangan siapa pun, jadi tidak dapat dihapus sendiri.
 	a field named {name} already exists	kolom bernama {name} sudah ada
 	A font isn't embedded	Font tidak tertanam
 	A form field has additional actions	Sebuah kolom formulir memiliki tindakan tambahan
@@ -58,6 +59,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	File PNG atau SVG. File dibaca dari lokasi ini setiap kali PdfCraft dimulai.
 	A script	Sebuah skrip
 	A selected field has no widget on any page, so the fields can't be edited together.	Kolom yang dipilih tidak memiliki widget di halaman mana pun, sehingga kolom tidak dapat diedit bersama.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Tanda tangan yang menjadi bagian dari isi halaman, seperti pada halaman hasil pindai, bukan kolom atau anotasi, jadi tidak dapat dihapus sendiri, dan PdfCraft tidak menghapus bagian halaman untuk menyembunyikannya. Untuk menghapusnya, sensor area tersebut (Sensor), atau hapus gambarnya dengan Edit PDF jika tanda tangan itu berupa gambar tersendiri.
 	A stream refers to an external file	Sebuah stream mengacu ke file eksternal
 	A stream uses LZW compression	Sebuah stream menggunakan kompresi LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Ringkasan menjelaskan tujuan dan tata letak tabel. Tambahkan atribut Ringkasan ke setiap tabel.
@@ -108,12 +110,14 @@
 	Add an Action	Tambahkan Tindakan
 	Add an image field	Tambahkan kolom gambar
 	Add arrow	Tambahkan panah
+	Add at least one recipient.	Tambahkan setidaknya satu penerima.
 	Add at least two files	Tambahkan setidaknya dua file
 	Add background	Tambahkan latar belakang
 	Add background…	Tambahkan latar belakang…
 	Add Bates numbering…	Tambahkan penomoran Bates…
 	Add bookmark	Tambahkan bookmark
 	Add callout	Tambahkan kotak komentar
+	Add certificate file…	Tambahkan file sertifikat…
 	Add checkmark	Tambahkan tanda centang
 	Add cloud	Tambahkan awan
 	Add comment	Tambah komentar
@@ -165,11 +169,13 @@
 	Add the files to combine	Tambahkan file yang akan digabung
 	Add the PDFs to combine	Tambahkan PDF untuk digabung
 	Add the steps this action runs, in order.	Tambahkan langkah-langkah yang dijalankan tindakan ini, secara berurutan.
+	Add to dictionary	Tambahkan ke kamus
 	Add to Trusted Certificates	Tambahkan ke Sertifikat Tepercaya
 	Add to trusted certificates	Tambahkan ke sertifikat terpercaya
 	Add underline	Tambahkan garis bawah
 	Add watermark	Tambahkan tanda air
 	Add watermark…	Tambahkan tanda air…
+	Add your digital ID	Tambahkan ID digital Anda
 	Add {what}	Tambahkan {what}
 	Added 1 comment	Ditambahkan 1 komentar
 	Added more than once	Ditambahkan lebih dari sekali
@@ -183,6 +189,7 @@
 	Advanced options	Opsi lanjutan
 	Advanced Options {chevron}	Opsi Lanjutan {chevron}
 	Advanced search…	Pencarian lanjutan…
+	AI Assistant	Asisten AI
 	AI assistant	Asisten AI
 	Algorithm	Algoritma
 	Align	Ratakan
@@ -202,6 +209,7 @@
 	All pages	Semua halaman
 	All pages in document	Semua halaman dalam dokumen
 	All pages in range	Semua halaman dalam rentang
+	All permissions	Semua izin
 	All tools	Semua alat
 	Allow	Izinkan
 	Allow Rich Text Formatting	Izinkan Pemformatan Teks Kaya
@@ -259,6 +267,7 @@ calendar date	April	April
 	Arrange image	Atur gambar
 	ArtCraft website	Situs ArtCraft
 	Ask about this document	Tanyakan tentang dokumen ini
+	Ask whether to recognize the current page or all pages when editing a scan.	Tanyakan apakah ingin mengenali halaman saat ini atau semua halaman saat mengedit hasil pindaian.
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Meminta rilis terbaru dari GitHub. Tidak ada yang diunduh atau dipasang secara otomatis.
 	Associated with content	terkait dengan konten
 	At least one signature has problems.	Setidaknya satu tanda tangan bermasalah.
@@ -343,10 +352,13 @@ certificate	Basic constraints	Batasan dasar
 	Center vertically	Pusatkan secara vertikal
 	Center window on screen	Pusatkan jendela di layar
 	Centre	Tengah
+	Certificate	Sertifikat
 	Certificate authority	Otoritas sertifikat
+	Certificate encryption will be applied when you save	Enkripsi sertifikat akan diterapkan saat Anda menyimpan
 	Certificate Signing	Penandatanganan Sertifikat
 	Certificate Viewer	Penampil Sertifikat
 	Certificates	Sertifikat
+	Certification signature (level {p})	Tanda tangan sertifikasi (tingkat {p})
 	Certified by {by}	Disertifikasi oleh {by}
 	Certify	Sertifikasi
 	Certify (invisible signature)	Sertifikasi (tanda tangan tak terlihat)
@@ -390,6 +402,7 @@ certificate	Basic constraints	Batasan dasar
 	Check for accessibility…	Periksa aksesibilitas…
 	Check for updates…	Periksa pembaruan…
 	Check spelling	Periksa ejaan
+	Check spelling while typing	Periksa ejaan saat mengetik
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Pastikan tag dibaca dalam urutan seperti yang akan dibaca pembaca yang melihat. Gunakan alat Urutan Baca atau panel Tag untuk memperbaikinya.
 	Check the pages	Periksa halaman
 	Check the pages of {name}: {why}	Periksa halaman {name}: {why}
@@ -399,6 +412,7 @@ certificate	Basic constraints	Batasan dasar
 	Checking Options ({on} of 32 in all categories)	Memeriksa Opsi ({on} dari 32 di semua kategori)
 	Checking pages…	Memeriksa halaman…
 	Checkmark	Tanda centang
+	Choose a digital ID file	Pilih file ID digital
 	Choose a digital ID.	Pilih ID digital.
 	Choose a file…	Pilih file…
 	Choose a folder for the exported files	Pilih folder untuk file yang diekspor
@@ -412,18 +426,22 @@ certificate	Basic constraints	Batasan dasar
 	Choose a logo	Pilih logo
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Pilih gambar PNG atau JPEG (hingga 4 MiB). Transparansi dipertahankan.
 	Choose a provider.	Pilih penyedia.
+	Choose a signature that can be removed.	Pilih tanda tangan yang dapat dihapus.
 	Choose a stamp, then click on the page to place it.	Pilih stempel, lalu klik pada halaman untuk menempatkan.
 	Choose an image	Pilih gambar
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Pilih file lain: file asli tetap seperti adanya, dan versi tanpa tanda tangan disimpan di sebelahnya.
 	Choose images	Pilih gambar
 	Choose image…	Pilih gambar…
 	Choose photo…	Pilih foto…
 	Choose the digital ID that you want to use for signing:	Pilih ID digital yang ingin Anda gunakan untuk menandatangani:
+	Choose the signature to remove:	Pilih tanda tangan yang akan dihapus:
 	Choose where to save the signed file. The service signs it once you have.	Pilih tempat menyimpan file yang ditandatangani. Layanan akan menandatanganinya setelah Anda memilih.
 	Clean Up	Bersihkan
 	Clean-up	Pembersihan
 	Clear	Bersihkan
 	Clear all	Hapus semua
 	Clear form	Kosongkan formulir
+	Clear personal dictionary	Kosongkan kamus pribadi
 	Clear Recent Files	Hapus File Terbaru
 	Clear redaction marks	Hapus tanda penyensoran
 	Clear search	Bersihkan pencarian
@@ -525,6 +543,7 @@ certificate	Basic constraints	Batasan dasar
 	Couldn't copy the image: {e}	Tidak dapat menyalin gambar: {e}
 	Couldn't create a PDF: {e}	Tidak dapat membuat PDF: {e}
 	Couldn't download {name}: {e}	Tidak dapat mengunduh {name}: {e}
+	Couldn't encrypt: {e}	Tidak dapat mengenkripsi: {e}
 	Couldn't extract pages: {e}	Tidak dapat mengekstrak halaman: {e}
 	Couldn't fit the visible content: {e}	Tidak dapat menyesuaikan konten yang terlihat: {e}
 	Couldn't follow linked PDF: {reason}	Tidak dapat mengikuti PDF tertaut: {reason}
@@ -602,6 +621,7 @@ key	Ctrl	Ctrl
 	Current page only	Hanya halaman saat ini
 	Current page — type a page number or label (such as iv) and press Enter	Halaman saat ini — ketik nomor atau label halaman (misalnya iv) lalu tekan Enter
 	Custom font	Font kustom
+	Custom page…	Halaman khusus…
 	Custom scale:	Skala kustom:
 	Custom size	Ukuran khusus
 	Custom stamps arrive on the web with file pickers for images	Stempel kustom hadir di versi web dengan pemilih file untuk gambar
@@ -674,6 +694,7 @@ key	Delete	Delete
 	Diamond	Belah ketupat
 	Digital ID	ID Digital
 	Digital ID password	Kata sandi ID Digital
+	Digital ID required	ID digital diperlukan
 	Digital Signature	Tanda Tangan Digital
 	Digital signature	Tanda tangan digital
 	Digital Signature Properties	Properti Tanda Tangan Digital
@@ -720,8 +741,10 @@ key	Delete	Delete
 	document security store	penyimpanan keamanan dokumen
 	document structure	struktur dokumen
 	Document structure provides a logical reading order	Struktur dokumen menyediakan urutan baca logis
+	Document timestamp	Stempel waktu dokumen
 	Document Title	Judul Dokumen
 	Document title is showing in title bar	Judul dokumen tampil di bilah judul
+	Documents	Dokumen
 	Documents and view	Dokumen dan tampilan
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Dokumen dengan lebih dari 20 halaman memerlukan bookmark untuk navigasi. Tambahkan bookmark untuk bagian utama.
 	Domain	Domain
@@ -735,6 +758,7 @@ key	Delete	Delete
 	Downsample to	Turunkan sampel ke
 	DPI sets the printed page size without resampling the image.	DPI mengatur ukuran halaman cetak tanpa mengambil ulang sampel gambar.
 	Drag a field to move it, or select it and press {up} or {down}.	Drag a field to move it, or select it and press {up} or {down}.
+	Drag a point to reshape the line. Delete removes it.	Seret titik untuk mengubah bentuk garis. Delete menghapusnya.
 	Drag a rectangle around the area to copy	Seret sebuah persegi panjang di sekitar area yang akan disalin
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Seret persegi panjang pada halaman untuk memotongnya; klik dua kali halaman untuk Kotak Halaman
 	Drag a rectangle to create a link; double-click a link to edit it	Seret persegi panjang untuk membuat tautan; klik dua kali tautan untuk mengeditnya
@@ -765,6 +789,9 @@ key	Delete	Delete
 	Duplicate field	Duplikat kolom
 	Duplicate page	Duplikat halaman
 	Duplicate pages	Duplikat halaman
+	Duplicate pages with new field names	Gandakan halaman dengan nama bidang baru
+	Duplicate pages — 1 field renamed	Duplikat halaman — 1 kolom diganti namanya
+	Duplicate pages — fields renamed	Duplikat halaman — kolom diganti namanya
 	Duplicate…	Duplikasi…
 	Dynamic	Dinamis
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Formulir XFA dinamis ditata dari templatenya: {pages}, {fields}.
@@ -805,7 +832,11 @@ comment menu	Edit	Edit
 	Enabled	Aktif
 	Encipher Only	Hanya Enkripsi
 	Encrypt	Enkripsi
+	Encrypt for recipient	Enkripsi untuk penerima
+	Encrypt for recipients	Enkripsi untuk para penerima
+	Encrypt with Certificate	Enkripsi dengan Sertifikat
 	Encrypt with certificate	Enkripsi dengan sertifikat
+	Encrypt with certificate…	Enkripsi dengan sertifikat…
 	Encryption	Enkripsi
 key	End	End
 	End entity	Entitas akhir
@@ -852,6 +883,7 @@ key	Esc	Esc
 	Expand all tools	Perluas semua alat
 	Expand tag	Perluas tag
 	Expand top-level bookmarks	Perluas bookmark tingkat atas
+	Expires {date}	Kedaluwarsa {date}
 	Explain	Jelaskan
 	Export & Convert	Ekspor & Konversi
 	Export a PDF	Ekspor PDF
@@ -911,6 +943,7 @@ calendar date	February	Februari
 	Field properties…	Properti kolom…
 	Field value is in range:	Nilai kolom berada dalam rentang:
 	Field value is not validated	Nilai kolom tidak divalidasi
+	Field: {field}	Kolom: {field}
 	Field: {field} on page {p}	Kolom: {field} pada halaman {p}
 	Fields	Kolom
 	Fields to reset (comma-separated; empty: all)	Kolom yang akan direset (dipisahkan koma; kosong: semua)
@@ -925,6 +958,7 @@ calendar date	February	Februari
 	File size	Ukuran file
 @id	file.word_count	Hitung kata…
 	Filename	Nama file
+	Files	Berkas
 	Files are combined from top to bottom. Leave Pages empty to take every page.	File digabungkan dari atas ke bawah. Biarkan Halaman kosong untuk mengambil semua halaman.
 	Files are combined in the order shown. Drag them to change it.	File digabungkan sesuai urutan yang ditampilkan. Seret untuk mengubah urutannya.
 	Files are combined in this order. Leave Pages empty to take every page.	File digabungkan dalam urutan ini. Biarkan Halaman kosong untuk mengambil semua halaman.
@@ -1026,6 +1060,7 @@ calendar date	February	Februari
 calendar weekday	Fr	Jum
 	From a PDF page or an image	Dari halaman PDF atau gambar
 	From colour	Dari warna
+	From template	Dari templat
 	From {file}	Dari {file}
 	From:	Dari:
 	Front side only	Hanya sisi depan
@@ -1044,6 +1079,7 @@ calendar weekday	Fr	Jum
 	Green on black	Hijau di atas hitam
 	Greyscale	Skala abu-abu
 	Grid view	Tampilan kisi
+	Group select	Pilih grup
 	H / Space (hold)	H / Space (tahan)
 	Hand (H)	Tangan (H)
 	Hand Tool	Alat Tangan
@@ -1130,6 +1166,7 @@ key	Home	Home
 	Installed fonts…	Font terpasang…
 	Intended usage	Penggunaan yang dimaksud
 certificate	Intended usage	Kegunaan yang dimaksud
+	Interface and appearance	Antarmuka dan tampilan
 	Interface language	Bahasa antarmuka
 	Interface size	Ukuran antarmuka
 	Intersection	Irisan
@@ -1150,6 +1187,7 @@ certificate	Issued by	Diterbitkan oleh
 certificate	Issued to	Diterbitkan untuk
 	Issuer	Penerbit
 certificate	Issuer	Penerbit
+	it was still in the document afterwards, so the change was undone	tanda tangan masih ada di dokumen setelahnya, jadi perubahan dibatalkan
 	Item List	Daftar Item
 	Item:	Item:
 	Items marked Ready work today.	Item yang ditandai Siap sudah berfungsi hari ini.
@@ -1170,6 +1208,7 @@ calendar date	July	Juli
 	June	Juni
 calendar date	June	Juni
 	Justify	Ratakan kanan-kiri
+	Keep an empty signature field to sign again	Pertahankan kolom tanda tangan kosong untuk ditandatangani lagi
 	Keep source fonts	Pertahankan font sumber
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Pertahankan bilah judul Windows di atas strip tab. Jika dimatikan, strip tab menjadi bilah judul, dengan tombol jendela di sebelah kanannya; Snap Layouts pada tombol maksimalkan memerlukan bilah judul Windows.
 	Keep tool selected	Pertahankan alat terpilih
@@ -1187,12 +1226,14 @@ certificate	Key usage	Penggunaan kunci
 	Landscape and Portrait Pages	Halaman Landskap dan Potret
 	Landscape Pages	Halaman Landskap
 	Landscape pages	Halaman lanskap
+	Language and spelling	Bahasa dan ejaan
 	Larger pages	Halaman lebih besar
 	Larger thumbnails	Larger thumbnails
 	Last page	Halaman terakhir
 	Later	Nanti
 	Later in calculation order	Later in calculation order
 	Later in tab order	Nanti dalam urutan tab
+	Latin (accented)	Latin (beraksen)
 	Layer options	Layer options
 	Layers panel	Panel lapisan
 	Layers Panel and Page	Panel Lapisan dan Halaman
@@ -1210,6 +1251,7 @@ certificate	Key usage	Penggunaan kunci
 	Light gray	Abu-abu muda
 	Light theme	Tema terang
 	Limit of	Batas
+	Line colour	Warna garis
 	Line delta	Perubahan baris
 	Line ending	Akhir baris
 	Line spacing	Spasi baris
@@ -1412,12 +1454,14 @@ calendar weekday	Mo	Sen
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Tidak ada printer yang ditemukan. Pastikan printer telah terinstal dan print spooler sedang berjalan, lalu buka Cetak lagi.
 	No problems found: the document conforms to {level}.	Tidak ada masalah ditemukan: dokumen memenuhi {level}.
 	No recent files	Tidak ada file terbaru
+	No recipients yet.	Belum ada penerima.
 	No security	Tanpa keamanan
 	No sheets	Tidak ada lembar
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Tidak ada tanda tangan di dalam bingkai. Pindahkan bingkai ke atas tanda tangan atau naikkan sensitivitas tinta.
 	No signing certificate was found on this device. Is it connected?	Tidak ada sertifikat penandatanganan di perangkat ini. Apakah perangkat terhubung?
 	No status has been set.	Status belum ditetapkan.
 	no such document	tidak ada dokumen tersebut
+	No suggestions	Tidak ada saran
 	no summary	tanpa ringkasan
 	No tools match your search.	Tidak ada alat yang cocok dengan pencarian Anda.
 	No unlinked web addresses were found in the text	Tidak ditemukan alamat web tanpa tautan dalam teks
@@ -1428,7 +1472,10 @@ calendar weekday	Mo	Sen
 	none	tidak ada
 	None (prefix only)	Tidak ada (hanya awalan)
 	None found	Tidak ditemukan
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	Tidak ada penerima yang merupakan ID digital Anda: Anda tidak akan dapat membuka dokumen yang disimpan.
+	None of these signatures can be removed.	Tidak satu pun tanda tangan ini dapat dihapus.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Tidak ada file tersebut yang dapat dijadikan PDF; gunakan file PDF, gambar atau .txt
+	None of your digital IDs can open this document.	Tidak ada ID digital Anda yang dapat membuka dokumen ini.
 	None — everything is allowed	Tidak ada — semuanya diizinkan
 scroll speed	Normal	Normal
 	Not allowed	Tidak diizinkan
@@ -1477,11 +1524,13 @@ animation effects	On	Aktif
 	One {f} file per page, named after the document.	Satu file {f} per halaman, diberi nama sesuai dokumen.
 	One-time code (OTP)	Kode sekali pakai (OTP)
 	Only allow this if you trust the source document.	Hanya izinkan ini jika Anda mempercayai dokumen sumber.
+	Only certificates with RSA keys can be recipients.	Hanya sertifikat dengan kunci RSA yang dapat menjadi penerima.
 	Only change the colour of black text or line art	Ubah hanya warna teks hitam atau gambar garis
 	Only checked properties will change. Mixed means the selected fields have different values.	Hanya properti yang dicentang yang akan berubah. Campuran berarti kolom yang dipilih memiliki nilai berbeda.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Lanjutkan hanya jika Anda memercayai dokumen ini. Alamat dapat membawa informasi dari dokumen, seperti yang Anda ketik ke formulirnya.
 	Only the document's owner can change its security (open it with the permissions password)	Hanya pemilik dokumen yang dapat mengubah keamanannya (buka dengan kata sandi izin)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Hanya isi halaman yang berubah: tautan, komentar, kolom formulir dan bookmark pada halaman asli tetap.
+	Only the recipients can open the document, each with the private key of their own certificate.	Hanya penerima yang dapat membuka dokumen, masing-masing dengan kunci privat sertifikatnya sendiri.
 	Open a document first	Buka dokumen terlebih dahulu
 	Open a PDF ({key})	Buka PDF ({key})
 	Open a PDF (⌘O)	Buka PDF (⌘O)
@@ -1508,6 +1557,7 @@ animation effects	On	Aktif
 	open to see what it will include	buka untuk melihat apa yang akan disertakan
 	Opened with	Dibuka dengan
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Terbuka, tetapi pengaturan keamanannya tidak mengizinkan penggabungan. Masukkan kata sandi izin.
+	Opening documents	Membuka dokumen
 	Opening the browser's print dialog…	Membuka dialog cetak browser…
 	Opening {name}…	Membuka {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Membuka preferensi driver printer. Preferensi ini tersimpan untuk setiap cetak dari komputer ini; jumlah salinan, cetak dua sisi, skala abu-abu dan kertas yang dipilih di sini tetap berlaku.
@@ -1539,6 +1589,8 @@ animation effects	On	Aktif
 	Other elements that require alternate text	Elemen lain yang memerlukan teks alternatif
 	Other options	Other options
 	Other provider (CSC API)	Penyedia lain (API CSC)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Masih ada tanda tangan lain, jadi salinan disimpan sebagai pembaruan file yang ditandatangani: tanda tangan yang dihapus tetap ada di revisi sebelumnya, tempat tanda tangan itu dapat dipulihkan.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Masih ada tanda tangan lain, jadi tanda tangan yang dihapus masih ada di revisi file sebelumnya; periksa kembali tanda tangan yang tersisa.
 	Outdent	Kurangi indentasi
 	Outline	Kerangka
 	Outline colour:	Warna garis tepi:
@@ -1576,6 +1628,7 @@ animation effects	On	Aktif
 	Page {n} of {total}	Halaman {n} dari {total}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Halaman {pages} berubah setelah latar belakang ditambahkan, jadi isian putihnya sendiri tetap mati. Di kertas putih tampilannya sama.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Halaman {pages} memiliki isian putihnya sendiri, yang akan menutupi latar belakang. Ganti
+	Page {p}	Halaman {p}
 	Page {p} doesn't tab in structure order	Halaman {p} tidak memiliki tab dalam urutan struktur
 	Page {p} of {n}	Halaman {p} dari {n}
 	Page {p}: {n} untagged content item	Halaman {p}: {n} item konten tanpa tag
@@ -1743,9 +1796,12 @@ certificate	Public key	Kunci publik
 	Reason: 	Alasan: 
 	Recent colours	Warna terbaru
 	Recent files to keep	Recent files to keep
+	Recipients	Penerima
+	Recognize scanned text automatically	Kenali teks pindaian secara otomatis
 	Recognize Text	Kenali Teks
 	Recognize text	Pengenalan teks
 	Recognize text in multiple files…	Pengenalan teks di beberapa file…
+	Recognize text on this page or throughout the document?	Kenali teks pada halaman ini atau di seluruh dokumen?
 	Recognize Text…	Kenali teks…
 	Recognize text…	Pengenalan teks…
 	Recognized 1 word	1 kata dikenali
@@ -1784,6 +1840,7 @@ certificate	Public key	Kunci publik
 	Remove "{name}" from this list? The certificate stays with the signing service.	Hapus "{name}" dari daftar ini? Sertifikat tetap tersimpan di layanan tanda tangan.
 	Remove "{name}" from this list? The file itself is not deleted.	Hapus "{name}" dari daftar ini? File itu sendiri tidak dihapus.
 	Remove all links	Hapus semua tautan
+	Remove and Save As…	Hapus dan simpan sebagai…
 	Remove background	Hapus latar belakang
 	Remove checkmark	Hapus centang
 	Remove Crop	Hapus pangkasan
@@ -1799,6 +1856,10 @@ certificate	Public key	Kunci publik
 	Remove redaction marks	Hapus tanda sensor
 	Remove saved {what}	Hapus {what} yang tersimpan
 	Remove security	Hapus keamanan
+	Remove Signature	Hapus Tanda Tangan
+	Remove signature	Hapus tanda tangan
+	Remove signature…	Hapus tanda tangan…
+	Remove the signature {name}	Hapus tanda tangan {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Hapus tag daun ini dari urutan baca dan tandai konten langsungnya sebagai artefak
 	Remove unreferenced named destinations	Hapus tujuan bernama yang tidak dirujuk
 	Remove unused objects and merge identical ones	Hapus objek yang tidak terpakai dan gabungkan yang identik
@@ -1811,9 +1872,14 @@ certificate	Public key	Kunci publik
 	Remove {n} pages	Hapus {n} halaman
 	Removed 1 hidden item. Save to remove them from the file.	1 item tersembunyi dihapus. Simpan untuk menghapusnya dari file.
 	Removed 1 link	1 tautan dihapus
+	Removed the signature {field} and kept its empty field	Tanda tangan {field} dihapus dan kolomnya dipertahankan kosong
+	Removed the signature {field} with its field	Tanda tangan {field} dihapus beserta kolomnya
+	Removed the visual signature on page {p}	Tanda tangan visual di halaman {p} dihapus
 	Removed {n} hidden items. Save to remove them from the file.	{n} item tersembunyi dihapus. Simpan untuk menghapusnya dari file.
 	Removed {n} links	{n} tautan dihapus
 	Removing the background puts the page's own backdrop back.	Menghapus latar belakang akan mengembalikan isian putih milik halaman.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	Menghapus tanda tangan ini mengubah dokumen dan membuat tanda tangan ini tidak valid di versi yang dihasilkan. Hal ini dapat memengaruhi tanda tangan dan sertifikasi lainnya. File asli tetap seperti adanya.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	Menghapus tanda tangan ini mengubah dokumen dan membuat tanda tangan ini tidak valid di versi yang dihasilkan. File asli tetap seperti adanya.
 	Removing white margins… page {d} of {t}	Menghapus margin putih… halaman {d} dari {t}
 	Rename	Ganti nama
 	Rename bookmark	Ganti nama bookmark
@@ -1860,6 +1926,7 @@ certificate	Public key	Kunci publik
 	Restrictions	Pembatasan
 	Restrictions lifted	Pembatasan dihapus
 	Retain existing	Pertahankan yang ada
+	Return to document	Kembali ke dokumen
 	Rev. {rev}: Certified by an unknown signer	Rev. {rev}: Disertifikasi oleh penanda tangan yang tidak dikenal
 	Rev. {rev}: Certified by {name}	Rev. {rev}: Disertifikasi oleh {name}
 	Rev. {rev}: Signed by an unknown signer	Rev. {rev}: Ditandatangani oleh penanda tangan yang tidak dikenal
@@ -1911,6 +1978,7 @@ certificate	Public key	Kunci publik
 	Run JavaScript	Jalankan JavaScript
 	Running action… file {d} of {t}	Menjalankan tindakan… file {d} dari {t}
 calendar weekday	Sa	Sab
+	Same as interface	Sama dengan antarmuka
 	Same as interface ({language})	Sama seperti antarmuka ({language})
 	Sanitize	Bersihkan
 	Sanitize document	Bersihkan dokumen
@@ -1927,6 +1995,7 @@ calendar weekday	Sa	Sab
 	Save as PDF/A-3b	Simpan sebagai PDF/A-3b
 	Save as PDF/UA	Simpan sebagai PDF/UA
 	Save as PDF/X	Simpan sebagai PDF/X
+	Save as template	Simpan sebagai templat
 	Save as {level}	Simpan sebagai {level}
 	Save as…	Simpan sebagai…
 	Save attachment…	Simpan lampiran…
@@ -1952,11 +2021,13 @@ calendar weekday	Sa	Sab
 	Saved {place}: {before} → {after} (not smaller){detail}	Disimpan {place}: {before} → {after} (tidak lebih kecil){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Disimpan {place}: {before} → {after} ({pct}% lebih kecil){detail}
 	Saved, but reopening failed: {e}	Tersimpan, tetapi membuka kembali gagal: {e}
+	Saves document	Menyimpan dokumen
 	Scale corner {n}	Ubah ukuran dari sudut {n}
 	Scale object	Ubah ukuran objek
 	Scale relative to target page	Skala relatif terhadap halaman target
 	Scan	Pindai
 	Scan & OCR	Pindai & OCR
+	Scanned text detected	Teks pindaian terdeteksi
 	Screen flicker	Kedipan layar
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Pembaca layar memilih suaranya dari bahasa dokumen. Atur di Properti dokumen > Lanjutan > Bahasa.
 	Script	Script
@@ -2107,6 +2178,7 @@ key	Shift	Shift
 	Signature validity is UNKNOWN:	Keabsahan tanda tangan TIDAK DIKETAHUI:
 	Signatures	Tanda tangan
 	Signatures panel	Panel tanda tangan
+	Signed after this signature, so what they signed includes it: {names}.	Ditandatangani setelah tanda tangan ini, jadi yang mereka tandatangani mencakupnya: {names}.
 	Signed and all signatures are valid.	Ditandatangani dan semua tanda tangan valid.
 	Signed and saved to {path}	Ditandatangani dan disimpan ke {path}
 	Signer	Penanda tangan
@@ -2146,6 +2218,11 @@ scroll speed	Slow	Lambat
 	sorted descending	terurut menurun
 key	Space	Space
 	Space Audit	Audit Spasi
+	Spelling checks stay on this device.	Pemeriksaan ejaan tetap di perangkat ini.
+	Spelling dictionary unavailable	Kamus ejaan tidak tersedia
+	Spelling language	Bahasa pemeriksaan ejaan
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	Tanda ejaan tidak mengubah dokumen. Klik kanan kata bergaris bawah untuk melihat saran.
+	Spelling suggestions	Saran ejaan
 	Split	Pisah
 	Split document	Pisah dokumen
 	Split document…	Pisah dokumen…
@@ -2176,11 +2253,13 @@ certificate	Subject	Subjek
 	Subscript	Subscript
 	Subset	Subhimpunan
 	Success	Berhasil
+	Suggest edits	Sarankan perubahan
 	sum (+)	penjumlahan (+)
 	Summarize	Ringkas
 	Summarize comments	Ringkas komentar
 	Summarize Options	Ringkasan Opsi
 	Superscript	Superscript
+	Swap width and height	Tukar lebar dan tinggi
 	Switch light / dark theme	Ganti tema terang / gelap
 	Switch to List view to change the pages it takes.	Beralih ke tampilan Daftar untuk mengubah halaman yang digunakannya.
 	Switch to two-page view first to show the cover page	Beralih ke tampilan dua halaman terlebih dahulu untuk menampilkan halaman sampul
@@ -2276,6 +2355,7 @@ calendar weekday	Th	Kam
 	The document now conforms to {level}; save it to keep the changes	Dokumen sekarang sesuai dengan {level}; simpan untuk mempertahankan perubahan
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Dokumen terbuka tanpa kata sandi; kata sandi ini diperlukan untuk mengubah pembatasan. Ini berlaku saat Anda menyimpan.
 	The document was closed before it could be saved.	Dokumen ditutup sebelum dapat disimpan.
+	The document will no longer be certified.	Dokumen tidak akan tersertifikasi lagi.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Informasi pencabutan yang tertanam pada dokumen menunjukkan bahwa sertifikat penanda tangan belum dicabut.
 	The document's security settings don't allow copying text and images	Pengaturan keamanan dokumen tidak mengizinkan penyalinan teks dan gambar
 	The document's security settings don't allow filling in form fields	Pengaturan keamanan dokumen tidak mengizinkan pengisian kolom formulir
@@ -2288,6 +2368,7 @@ calendar weekday	Th	Kam
 	The field properties could not be changed.	Properti kolom tidak dapat diubah.
 	The field properties dialog is no longer open.	Dialog properti kolom tidak lagi terbuka.
 	The field {name} no longer exists.	Kolom {name} tidak lagi ada.
+	The fields this signature locked ({names}) can be changed again.	Kolom yang dikunci tanda tangan ini ({names}) dapat diubah lagi.
 	the first heading is an H{n}; headings should not skip levels	judul pertama adalah H{n}; judul tidak boleh melompati level
 	the first row number can be at most {max}	nomor baris pertama paling besar {max}
 	The font {} isn't embedded	Font {} tidak tertanam
@@ -2307,9 +2388,11 @@ calendar weekday	Th	Kam
 	The linked PDF opened, but its page destination was out of range.	PDF tertaut terbuka, tetapi tujuan halamannya di luar rentang.
 	The metadata doesn't identify the file as {}	Metadata tidak mengidentifikasi file sebagai {}
 	the name is not a plain file name	nama tersebut bukan nama berkas biasa
+	The new file has no signature left and no earlier revision holding it.	File baru tidak memiliki tanda tangan lagi dan tidak ada revisi sebelumnya yang menyimpannya.
 	The newest {n} of {total} PDFs	{n} PDF terbaru dari {total}
 	The operation failed.	Operasi gagal.
 	The order saved in the PDF needs tidying	The order saved in the PDF needs tidying
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Tanda tangan lainnya ({names}) akan melaporkan bahwa dokumen berubah setelah ditandatangani. Periksa kembali: tidak ada jaminan tanda tangan tersebut tetap valid.
 	The page has changed; select the image again	Halaman telah berubah; pilih gambar lagi
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Halaman diekstrak tetapi tidak dihapus, karena dokumen berubah saat Anda memilih folder.
 	the password is incorrect	kata sandinya salah
@@ -2325,6 +2408,7 @@ calendar weekday	Th	Kam
 	The provider's page didn't come back in time. Try again.	Halaman penyedia tidak kembali tepat waktu. Coba lagi.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI pengalihan harus http://127.0.0.1 atau http://localhost dengan port.
 	The replacement file doesn't have that many pages.	File pengganti tidak memiliki sebanyak itu halaman.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Pembatasan berlaku untuk penerima tanpa “Semua izin”. Diterapkan saat Anda menyimpan.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	baris terlalu pendek: buat area lebih tinggi, atau gunakan lebih sedikit baris atau jarak antarbaris yang lebih kecil
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	Nilai tanda tangan RSA tidak memiliki panjang sebesar modulus kunci (nol di depan dihapus atau ditambahkan); tetapi tetap dibaca.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	DigestInfo tanda tangan RSA tidak memiliki parameter NULL (penandatangan lama menulisnya demikian); tetapi tetap dibaca.
@@ -2344,7 +2428,9 @@ calendar weekday	Th	Kam
 	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	Tanda tangan dikodekan dengan BER (panjang tidak tetap), bukan DER; tetap dibaca secara toleran.
 	The signature uses the legacy adbe.x509.rsa_sha1 format.	Tanda tangan menggunakan format lama adbe.x509.rsa_sha1.
 	The signature value does not match the signer's certificate: the signature is corrupt.	Nilai tanda tangan tidak cocok dengan sertifikat penanda tangan: tanda tangan rusak.
+	The signature was not removed: {e}	Tanda tangan tidak dihapus: {e}
 	The signature will be invisible.	Tanda tangan akan tidak terlihat.
+	The signature {names} locks this field.	Tanda tangan {names} mengunci kolom ini.
 	The signature's byte range does not exclude exactly its contents.	Rentang byte tanda tangan tidak mengecualikan tepat isi tanda tangan tersebut.
 	The signature's byte range does not match the file.	Rentang byte tanda tangan tidak cocok dengan file.
 	The signature's timestamp token could not be verified ({}).	Token stempel waktu tanda tangan tidak dapat diverifikasi ({}).
@@ -2402,6 +2488,7 @@ calendar weekday	Th	Kam
 	This compatibility level supports only plain ASCII passwords.	Tingkat kompatibilitas ini hanya mendukung kata sandi ASCII biasa.
 	This dialog shows the details of a certificate and its chain.	Dialog ini menampilkan detail sebuah sertifikat dan rantainya.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Dokumen ini meminta untuk dibuka dalam mode layar penuh: halaman memenuhi layar dan tidak ada hal lain yang ditampilkan. Tekan Esc kapan saja untuk keluar.
+	This document can't be changed: {names}	Dokumen ini tidak dapat diubah: {names}
 	This document can't be checked: it couldn't be read for editing	Dokumen ini tidak dapat diperiksa: tidak dapat dibaca untuk diedit
 	This document contains {n} interactive form fields.	Dokumen ini berisi {n} kolom formulir interaktif.
 	This document has no attachments.	Dokumen ini tidak memiliki lampiran.
@@ -2415,6 +2502,7 @@ calendar weekday	Th	Kam
 	This document has no layers.	Dokumen ini tidak memiliki lapisan.
 	This document has no pages.	Dokumen ini tidak memiliki halaman.
 	This document has no restrictions to lift	Dokumen ini tidak ada pembatasan untuk dilepas
+	This document has no signature that can be removed.	Dokumen ini tidak memiliki tanda tangan yang dapat dihapus.
 	This document has no signatures.	Dokumen ini tidak memiliki tanda tangan.
 	This document has no tagged figures.	Dokumen ini tidak memiliki gambar bertag.
 	This document has no {kind} to change	Dokumen ini tidak ada {kind} untuk diubah
@@ -2440,6 +2528,7 @@ calendar weekday	Th	Kam
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Formulir ini juga berisi data XFA, yang belum dibaca PdfCraft. Anda dapat mengisi kolomnya, tetapi Acrobat mungkin menampilkan nilai XFA sebagai gantinya.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Skrip formulir ini dinonaktifkan karena salah satunya berjalan terlalu lama. Buka kembali dokumen untuk menjalankannya lagi.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Ini adalah formulir XFA dinamis, yang belum dapat ditampilkan oleh PdfCraft. Yang Anda lihat adalah halaman placeholder milik file tersebut.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	Ini adalah gambar tanda tangan, bukan tanda tangan digital: hanya tanda di halaman yang dihapus. File asli tetap seperti adanya.
 	This is the first PDF in its folder	Ini PDF pertama di foldernya
 	This is the last PDF in its folder	Ini PDF terakhir di foldernya
 	This measurement needs at least {n} points.	Pengukuran ini memerlukan minimal {n} titik.
@@ -2449,8 +2538,10 @@ calendar weekday	Th	Kam
 	This page has an opaque background of its own, which hides anything behind it. Choose Blend with page content.	Halaman ini memiliki latar belakang buramnya sendiri, yang menyembunyikan apa pun di belakangnya. Pilih Campur dengan konten halaman.
 	This page has an opaque background of its own, which hides the image behind it.	Halaman ini memiliki latar belakang buramnya sendiri, yang menyembunyikan gambar di belakangnya.
 	This PDF uses the unsupported {s} action.	PDF ini menggunakan tindakan {s} yang tidak didukung.
+	This point could not be moved. Try a smaller move.	Titik ini tidak dapat dipindahkan. Coba perpindahan yang lebih kecil.
 	This printer offers no settings of its own.	Printer ini tidak menyediakan pengaturan sendiri.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Driver printer ini tidak mengambil pengaturan cetak dua sisi dari program lain, jadi pengaturan miliknya yang berlaku. Ubah di Properti…
+	this signature can't be removed on its own	tanda tangan ini tidak dapat dihapus sendiri
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Tanda tangan ini menggunakan RIPEMD-160, algoritme hash lama 160-bit yang tidak lagi direkomendasikan untuk tanda tangan. Tanda tangan ini tetap valid, tetapi tidak seharusnya diandalkan.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Tanda tangan ini menggunakan SHA-1, algoritme hash yang lemah: tabrakan pada algoritme ini telah dibuktikan. Tanda tangan ini tetap valid karena banyak dokumen yang ditandatangani bertahun-tahun lalu memakainya, tetapi tidak seharusnya diandalkan.
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	layanan tanda tangan ini tidak dapat digunakan: memerlukan masuk OAuth di browser, yang belum didukung PdfCraft
@@ -2509,6 +2600,7 @@ signature pad	Type	Ketik
 	Unit	Unit
 	Units	Unit
 	Unknown author	Penulis tidak dikenal
+	unknown signer	penanda tangan tidak dikenal
 	Unlock comment	Buka kunci komentar
 	Unlock {name}	Buka kunci {name}
 	Unlock {n} files	Buka kunci {n} file
@@ -2521,6 +2613,7 @@ signature pad	Type	Ketik
 	Unpin {folder}	Lepas sematan {folder}
 	Unpinned {tool} from Home	{tool} dilepas dari Beranda
 	Unplaced	Belum ditempatkan
+	Unsaved changes to this document are saved in the new file too.	Perubahan yang belum disimpan pada dokumen ini juga disimpan di file baru.
 	Unsigned signature field	Kolom tanda tangan yang belum ditandatangani
 	Unsigned signature field: {name}	Kolom tanda tangan yang belum ditandatangani: {name}
 	Unsupported measurements	Pengukuran tidak didukung
@@ -2565,6 +2658,9 @@ certificate	Valid to	Valid sampai
 	Validate	Validasi
 	Validate all	Validasi semua
 	Validate all signatures	Validasi semua tanda tangan
+	validated: invalid	divalidasi: tidak valid
+	validated: valid	divalidasi: valid
+	validated: validity unknown	divalidasi: validitas tidak diketahui
 	Validity ends	Validitas berakhir
 certificate	Validity ends	Validitas berakhir
 	Validity starts	Validitas dimulai
@@ -2590,6 +2686,8 @@ certificate	Version	Versi
 	Viewport rectangle in page points (x, y, width, height)	Persegi area pandang dalam titik halaman (x, y, lebar, tinggi)
 	Visible Rectangle	Persegi Terlihat
 	Visual	Visual
+	Visual initials (Fill & Sign, not digital)	Inisial visual (Isi & Tanda Tangani, bukan digital)
+	Visual signature (Fill & Sign, not digital)	Tanda tangan visual (Isi & Tanda Tangani, bukan digital)
 	Waiting for the system print dialog…	Menunggu dialog cetak sistem…
 	Waiting for your approval in the browser…	Menunggu persetujuan Anda di browser…
 	Watermark	Tanda air
@@ -2622,6 +2720,7 @@ calendar weekday	We	Rab
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Anda melihat revisi {rev} dari “{from}”. Ini adalah snapshot: perubahan di sini tidak akan memengaruhi berkas asli.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Anda melihat versi yang telah ditandatangani dari “{from}” (revisi {rev}). Ini adalah snapshot: perubahan di sini tidak akan memengaruhi berkas asli.
 	You can pin up to {n} folders. Unpin one first.	Anda dapat menyematkan hingga {n} folder. Lepas sematan satu terlebih dahulu.
+	You choose where the new version is saved. Continue?	Anda memilih tempat versi baru disimpan. Lanjutkan?
 	You have version {c}. Download the new version from its release page.	Anda memiliki versi {c}. Unduh versi baru dari halaman rilisnya.
 	Your changes will be lost if you don't save them.	Perubahan Anda akan hilang jika tidak Anda simpan.
 	Your name	Nama Anda
@@ -2664,7 +2763,10 @@ calendar weekday	We	Rab
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} ke {dir}
 	{names} and {last}	{names} and {last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} menyertifikasi dokumen ini tanpa mengizinkan komentar, dan akan melaporkan perubahan ini.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} menyertifikasi dokumen ini, dan menghapus tanda tangan bukan perubahan yang diizinkan sertifikasinya.
 	{name} (default)	{name} (bawaan)
+	{name} (you)	{name} (Anda)
 	{name} can't be combined: {why}	{name} tidak dapat digabungkan: {why}
 	{name} has no action	{name} tidak memiliki tindakan
 	{name} is read-only	{name} hanya baca
@@ -2673,6 +2775,7 @@ calendar weekday	We	Rab
 	{name} — unsaved changes	{name} — perubahan belum disimpan
 	{name}: choosing images arrives on the web with file pickers for images	{name}: memilih gambar Herrera ke situs web dengan pemilih file untuk gambar
 	{name}: the {other} action isn't supported yet	{name}: tindakan {other} belum didukung
+	{name}_unsigned.pdf	{name}_tanpa_tanda_tangan.pdf
 @plural	{n} byte|{n} bytes	{n} byte
 @plural	{n} comment|{n} comments	{n} komentar
 	{n} contributors · {c} commits	{n} kontributor · {c} commit
@@ -2714,6 +2817,7 @@ calendar weekday	We	Rab
 	{verb} Background	{verb} Latar Belakang
 	{verb} Header and Footer	{verb} Header dan Footer
 	{verb} Watermark	{verb} Tanda Air
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. {file} disimpan dan diperiksa dapat dibuka kembali dengan semua halaman. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	{who} dalam dokumen ini mencoba membuka alamat yang tidak akan dibuka PdfCraft: {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} dalam dokumen ini mencoba membuka alamat yang tidak akan dibuka PdfCraft: {e}. Hanya tautan web (http, https) dan email (mailto) yang terbuka dari dokumen.
 	{who} in this document wants to open this address in your browser:	{who} dalam dokumen ini ingin membuka alamat ini di browser Anda:
@@ -2727,6 +2831,7 @@ calendar weekday	We	Rab
 	— (protection is applied when you save)	— (perlindungan diterapkan saat Anda menyimpan)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	“{name}” telah berubah di disk setelah dibuka atau terakhir kali disimpan. Menyimpan sekarang akan mengganti versi yang lebih baru itu dengan versi ini.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	“{name}” memiliki pembatasan keamanan. Masukkan kata sandi izinnya untuk mencabut pembatasan tersebut.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	“{name}” dienkripsi untuk orang tertentu. Pilih ID digital Anda dan masukkan kata sandinya untuk membukanya.
 	“{name}” is protected. Enter a password to open it.	“{name}” dilindungi. Masukkan kata sandi untuk membukanya.
 	… and {n} more	… dan {n} lagi
 	−Bin	−Bin

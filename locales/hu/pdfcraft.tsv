@@ -36,8 +36,11 @@
 	4 x 6 in label (101.6 x 152.4 mm)	4 × 6 hüvelykes címke (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 számjegy, A betű, O betű vagy számjegy, X bármely karakter
 	; 1 page already had text	; 1 oldalon már volt szöveg
+	; 1 page skipped	; 1 oldal kihagyva
+	; corrected {n} pages	; {n} oldal javítva
 	; failed: {list}	; nem sikerült: {list}
 	; {n} pages already had text	; {n} oldalon már volt szöveg
+	; {n} pages skipped	; {n} oldal kihagyva
 	? of {n}	? / {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} commit, +{added} / −{deleted} sor (Δ {delta}), +{bin_added} / −{bin_deleted} bináris fájl, {first} – {last}
 	`{command}` {when}	`{command}` {when}
@@ -48,6 +51,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	Átlós BIZALMAS vízjel minden oldalon.
 	a document must keep at least one page	egy dokumentumnak legalább egy oldala kell maradjon
 	A document needs at least one page: copy instead	Egy dokumentumnak legalább egy oldala kell legyen: inkább másold
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	A dokumentum-időbélyeg az egész fájlra vonatkozik, és senkinek sem az aláírása, ezért nem távolítható el önmagában.
 	a field named {name} already exists	már van {name} nevű mező
 	A form field has additional actions	Egy űrlapmezőnek további műveletei vannak
 	A link	Egy hivatkozás
@@ -57,6 +61,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Egy PNG vagy SVG fájl. A PdfCraft minden indításakor erről a helyről olvassa be.
 	A script	Egy szkript
 	A selected field has no widget on any page, so the fields can't be edited together.	Az egyik kijelölt mezőnek egyik oldalon sincs widgetje, ezért a mezők nem szerkeszthetők együtt.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Az oldal tartalmának részét képező aláírás – például egy beszkennelt oldalon – nem mező és nem megjegyzés, ezért nem távolítható el önmagában, és a PdfCraft nem töröl részeket az oldalból az elrejtéséhez. Az eltávolításhoz takarja ki az adott területet (Kitakarás), vagy ha az aláírás külön kép, törölje a képet a „PDF szerkesztése” eszközzel.
 	A stream refers to an external file	Egy adatfolyam külső fájlra hivatkozik
 	A stream uses LZW compression	Egy adatfolyam LZW-tömörítést használ
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Az összefoglaló leírja a táblázat célját és elrendezését. Adj minden táblázathoz Summary attribútumot.
@@ -99,12 +104,14 @@
 	Add an Action	Művelet hozzáadása
 	Add an image field	Képmező hozzáadása
 	Add arrow	Nyíl hozzáadása
+	Add at least one recipient.	Adj hozzá legalább egy címzettet.
 	Add at least two files	Legalább két fájlt adj hozzá
 	Add background	Háttér hozzáadása
 	Add background…	Háttér hozzáadása…
 	Add Bates numbering…	Bates-számozás hozzáadása…
 	Add bookmark	Könyvjelző hozzáadása
 	Add callout	Szövegbuborék hozzáadása
+	Add certificate file…	Tanúsítványfájl hozzáadása…
 	Add checkmark	Pipa hozzáadása
 	Add circle	Kör hozzáadása
 	Add cloud	Felhő hozzáadása
@@ -144,6 +151,7 @@
 	Add rectangle	Téglalap hozzáadása
 	Add redaction mark	Kitakarásjelölés hozzáadása
 	Add search index	Keresőindex hozzáadása
+	Add searchable text	Kereshető szöveg hozzáadása
 	Add signature	Aláírás hozzáadása
 	Add squiggly underline	Hullámos aláhúzás hozzáadása
 	Add stamp	Bélyegző hozzáadása
@@ -156,11 +164,13 @@
 	Add the choices people pick from.	Add hozzá a választható lehetőségeket.
 	Add the files to combine	Add hozzá az egyesítendő fájlokat
 	Add the steps this action runs, in order.	Add hozzá a lépéseket, amelyeket ez a művelet sorban végrehajt.
+	Add to dictionary	Hozzáadás a szótárhoz
 	Add to Trusted Certificates	Hozzáadás a megbízható tanúsítványokhoz
 	Add to trusted certificates	Hozzáadás a megbízható tanúsítványokhoz
 	Add underline	Aláhúzás hozzáadása
 	Add watermark	Vízjel hozzáadása
 	Add watermark…	Vízjel hozzáadása…
+	Add your digital ID	Saját digitális azonosító hozzáadása
 	Add {what}	{what} hozzáadása
 	Added 1 comment	1 megjegyzés hozzáadva
 	Added more than once	Többször hozzáadva
@@ -175,6 +185,7 @@
 	Advanced Options {chevron}	Speciális beállítások {chevron}
 	Advanced search…	Részletes keresés…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Az Aláírás után írd be a CloudSigner ablakába az mSzafir alkalmazás OTT-kódját, és hagyd jóvá az aláírást az alkalmazásban. Ha a CloudSignerben be van kapcsolva a tartós OTT-kód, a kódot csak néhány percenként kéri.
+	AI Assistant	AI-asszisztens
 	AI assistant	MI-asszisztens
 	AI chat isn't available in the web build; use the desktop app or CLI.	A MI-csevegés nem érhető el a webes verzióban; használja az asztali alkalmazást vagy a CLI-t.
 	Algorithm	Algoritmus
@@ -196,6 +207,7 @@
 	All page content is tagged	Az oldal teljes tartalma címkézett
 	All pages in document	A dokumentum összes oldala
 	All pages in range	A tartomány minden oldala
+	All permissions	Minden engedély
 	All tools	Minden eszköz
 	Allow	Engedélyezés
 	Allow Rich Text Formatting	Formázott szöveg engedélyezése
@@ -282,6 +294,7 @@
 	Auto-detect	Automatikus felismerés
 	Auto-rotate pages	Oldalak automatikus forgatása
 	Auto-size text to fit redaction region	A szöveg automatikus méretezése a kitakarási területhez
+	Automatically rotate sideways and upside-down pages	Oldalra vagy fejjel lefelé álló oldalak automatikus elforgatása
 	Automatically tag PDF	PDF automatikus címkézése
 	Available version: {v}	Elérhető verzió: {v}
 	average	átlag
@@ -355,8 +368,11 @@
 	Center vertically	Függőlegesen középre
 	Center window on screen	Ablak középre helyezése a képernyőn
 	Centre	Középre
+	Certificate	Tanúsítvány
+	Certificate encryption will be applied when you save	A tanúsítványos titkosítás mentéskor lép életbe
 	Certificate Viewer	Tanúsítványmegjelenítő
 	Certificates	Tanúsítványok
+	Certification signature (level {p})	Hitelesítő aláírás ({p}. szint)
 	Certified by {by}	Hitelesítette: {by}
 	Certify	Hitelesítés
 	Certify (invisible signature)	Hitelesítés (láthatatlan aláírás)
@@ -397,6 +413,7 @@
 	Check for accessibility…	Akadálymentesség ellenőrzése…
 	Check for updates…	Frissítések keresése…
 	Check spelling	Helyesírás-ellenőrzés
+	Check spelling while typing	Helyesírás ellenőrzése gépelés közben
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Ellenőrizd, hogy a címkék abban a sorrendben olvasódnak-e, ahogy egy látó olvasó haladna. Javítsd az Olvasási sorrend eszközzel vagy a Címkék panelen.
 	Check the pages	Ellenőrizd az oldalakat
 	Check the pages of {name}: {why}	Ellenőrizd {name} oldalait: {why}
@@ -408,6 +425,7 @@
 	Checking Options ({on} of 32 in all categories)	Ellenőrzési beállítások ({on} / 32, minden kategóriában)
 	Checking pages…	Oldalak ellenőrzése…
 	Checkmark	Pipa
+	Choose a digital ID file	Válassz digitálisazonosító-fájlt
 	Choose a folder for the exported files	Válassz mappát az exportált fájloknak
 	Choose a folder for the extracted pages	Válassz mappát a kinyert oldalaknak
 	Choose a folder for the results	Válassz mappát az eredményeknek
@@ -418,8 +436,10 @@
 	Choose a logo	Logó kiválasztása
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Válassz PNG- vagy JPEG-képet (legfeljebb 4 MiB). Az átlátszóság megmarad.
 	Choose a provider.	Válasszon szolgáltatót.
+	Choose a signature that can be removed.	Válasszon egy eltávolítható aláírást.
 	Choose a stamp, then click on the page to place it.	Válassz bélyegzőt, majd kattints az oldalra az elhelyezéséhez.
 	Choose an image	Kép kiválasztása
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Válasszon másik fájlt: az eredeti változatlan marad, az aláírás nélküli változat pedig mellé kerül.
 	Choose font…	Betűtípus választása…
 	Choose images	Képek kiválasztása
 	Choose image…	Kép kiválasztása…
@@ -429,12 +449,14 @@
 	Choose reference…	Referencia választása…
 	Choose the digital ID that you want to use for signing:	Válaszd ki az aláíráshoz használandó digitális azonosítót:
 	Choose the module's library file.	Válaszd ki a modul könyvtárfájlját.
+	Choose the signature to remove:	Válassza ki az eltávolítandó aláírást:
 	Choose where to save the signed file. The service signs it once you have.	Válaszd ki, hová mentsük az aláírt fájlt. A szolgáltatás azután írja alá, hogy kiválasztottad.
 	Clean Up	Tisztítás
 	Clean-up	Tisztítás
 	Clear All	Kijelölés megszüntetése
 	Clear all	Összes törlése
 	Clear form	Űrlap kiürítése
+	Clear personal dictionary	Személyes szótár törlése
 	Clear redaction marks	Kitakarásjelölések törlése
 	Clear search	Keresés törlése
 	Clear selection / close find	Kijelölés törlése / keresés bezárása
@@ -543,6 +565,8 @@
 	Copyright status	Szerzői jogi állapot
 	Copyrighted	Szerzői jog által védett
 	Correct recognized text	Felismert szöveg javítása
+	Correct scans	Szkennelések javítása
+	Corrected scan	Javított szkennelés
 	Could not copy the selection because text could not be read on every page	A kijelölés nem másolható, mert nem sikerült minden oldalon beolvasni a szöveget
 	Could not mark the selection because text could not be read on every page	A kijelölés nem jelölhető meg, mert nem sikerült minden oldalon beolvasni a szöveget
 	Could not save: {e}	A mentés nem sikerült: {e}
@@ -551,6 +575,7 @@
 	Couldn't copy the image: {e}	A képet nem sikerült másolni: {e}
 	Couldn't create a PDF: {e}	A PDF létrehozása nem sikerült: {e}
 	Couldn't download {name}: {e}	{name} letöltése nem sikerült: {e}
+	Couldn't encrypt: {e}	A titkosítás nem sikerült: {e}
 	Couldn't extract pages: {e}	Az oldalakat nem sikerült kinyerni: {e}
 	Couldn't extract the original PDF: {e}	Az eredeti PDF-et nem sikerült kinyerni: {e}
 	Couldn't fit the visible content: {e}	A látható tartalmat nem sikerült igazítani: {e}
@@ -622,6 +647,7 @@
 	Crop Image	Kép körülvágása
 	Crop page	Oldal levágása
 	Crop pages	Oldalak levágása
+	Crop scanner borders to the paper edge	Beolvasási szegélyek levágása a papír széléig
 key	Ctrl	Ctrl
 	Currency symbol:	Pénznem jele:
 	Current document	Aktuális dokumentum
@@ -630,6 +656,7 @@ key	Ctrl	Ctrl
 	Current page — type a page number or label (such as iv) and press Enter	Aktuális oldal — írj be egy oldalszámot vagy címkét (például iv), majd nyomd meg az Entert
 	Cursor coordinates	Kurzor koordinátái
 	Custom font	Egyéni betűtípus
+	Custom page…	Egyéni oldal…
 	Custom role	Egyéni szerep
 	Custom scale:	Egyéni méretarány:
 	Custom size	Egyéni méret
@@ -698,6 +725,7 @@ key	Delete	Delete
 	Diagnostic details	Diagnosztikai részletek
 	Digital ID	Digitális azonosító
 	Digital ID password	A digitális azonosító jelszava
+	Digital ID required	Digitális azonosító szükséges
 	Digital signature	Digitális aláírás
 	Digital Signature Properties	Digitális aláírás tulajdonságai
 	Digitally sign	Digitális aláírás
@@ -747,6 +775,7 @@ key	Delete	Delete
 	Document sanitized. Save to finish: saving rewrites the whole file.	A dokumentum meg van tisztítva. Ments a befejezéshez: a mentés újraírja az egész fájlt.
 	Document scrollbar width	Dokumentum görgetősávjának szélessége
 	Document structure provides a logical reading order	A dokumentumszerkezet logikai olvasási sorrendet ad
+	Document timestamp	Dokumentum-időbélyeg
 	Document title is showing in title bar	A dokumentum címe látszik a címsorban
 	Documents and view	Dokumentumok és nézet
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	A 20 oldalnál hosszabb dokumentumokhoz könyvjelző kell a navigációhoz. Adj könyvjelzőt a főbb részekhez.
@@ -799,6 +828,9 @@ key	Delete	Delete
 	Duplicate field	Mező megkettőzése
 	Duplicate page	Oldal megkettőzése
 	Duplicate pages	Oldalak megkettőzése
+	Duplicate pages with new field names	Oldalak másolása új mezőnevekkel
+	Duplicate pages — 1 field renamed	Oldalak megkettőzése — 1 mező átnevezve
+	Duplicate pages — fields renamed	Oldalak megkettőzése — mezők átnevezve
 	Duplicate…	Megkettőzés…
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Dinamikus XFA-űrlap, a sablonjából felépítve: {pages}, {fields}.
 	Dynamic zoom	Dinamikus nagyítás
@@ -840,7 +872,11 @@ comment menu	Edit	Szerkesztés
 	Enable text access for screen reader devices for the visually impaired	Szöveghozzáférés engedélyezése képernyőolvasóknak látássérülteknek
 	Enabled	Engedélyezve
 	Encrypt	Titkosítás
+	Encrypt for recipient	Titkosítás címzett számára
+	Encrypt for recipients	Titkosítás címzettek számára
+	Encrypt with Certificate	Titkosítás tanúsítvánnyal
 	Encrypt with certificate	Titkosítás tanúsítvánnyal
+	Encrypt with certificate…	Titkosítás tanúsítvánnyal…
 	Encryption	Titkosítás
 key	End	End
 	Endpoints	Végpontok
@@ -881,6 +917,7 @@ key	Esc	Esc
 	Expand all tools	Az összes eszköz kibontása
 	Expand tag	Címke kibontása
 	Expand top-level bookmarks	A legfelső szintű könyvjelzők kibontása
+	Expires {date}	Lejár: {date}
 	Explain	Magyarázat
 	Export & Convert	Exportálás és átalakítás
 	Export a PDF	PDF exportálása
@@ -940,6 +977,7 @@ scroll speed	Fast	Gyors
 	Field properties…	Mező tulajdonságai…
 	Field value is in range:	A mező értéke ebbe a tartományba esik:
 	Field value is not validated	A mező értéke nincs ellenőrizve
+	Field: {field}	Mező: {field}
 	Field: {field} on page {p}	Mező: {field}, {p}. oldal
 	Fields to reset (comma-separated; empty: all)	Visszaállítandó mezők (vesszővel elválasztva; üres: mind)
 	Figure {i} of {n}{page}	{i}. ábra / {n}{page}
@@ -1058,6 +1096,7 @@ scroll speed	Fast	Gyors
 	From	Ettől
 	From a PDF page or an image	PDF-oldalból vagy képből
 	From colour	Színből
+	From template	Sablonból
 	From {file}	Ebből: {file}
 	From:	Ettől:
 	Front side only	Csak az előlap
@@ -1078,6 +1117,7 @@ scroll speed	Fast	Gyors
 	Grayscale Images	Szürkeárnyalatos képek
 	Green on black	Zöld feketén
 	Greyscale	Szürkeárnyalatos
+	Group select	Csoportos kijelölés
 	H / Space (hold)	H / szóköz (nyomva tartva)
 	Hand (H)	Kéz (H)
 	Hand Tool	Kéz eszköz
@@ -1171,6 +1211,7 @@ key	Home	Home
 	Installed version: {v}	Telepített verzió: {v}
 	Integrity	Integritás
 	Intended usage	Tervezett használat
+	Interface and appearance	Felület és megjelenés
 	Interface font	Felület betűtípusa
 	Interface size	Felület mérete
 	Intersection	Metszéspont
@@ -1188,6 +1229,7 @@ key	Home	Home
 	Issued by: 	Kiállította: 
 	Issued to	Kiállítva neki
 	Issuer	Kiállító
+	it was still in the document afterwards, so the change was undone	az eltávolítás után is a dokumentumban maradt, ezért a módosítás visszavonva
 	Item List	Elemlista
 	Item:	Elem:
 	Items marked Ready work today.	A Kész jelölésű elemek már működnek.
@@ -1204,6 +1246,7 @@ key	Home	Home
 	Join the ArtCraft community	Csatlakozz az ArtCraft közösséghez
 	July	július
 	June	június
+	Keep an empty signature field to sign again	Üres aláírásmező megtartása az újbóli aláíráshoz
 	Keep source fonts	Eredeti betűtípusok megtartása
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	A Windows címsorának megtartása a lapsáv fölött. Kikapcsolva a lapsáv a címsor, az ablakgombokkal a jobb szélén; a Teljes méret gomb Snap-elrendezéseihez a Windows címsora kell.
 	Keep tool selected	Eszköz kiválasztva tartása
@@ -1217,12 +1260,14 @@ key	Home	Home
 	Landscape and Portrait Pages	Fekvő és álló oldalak
 	Landscape Pages	Fekvő oldalak
 	Landscape pages	Fekvő oldalak
+	Language and spelling	Nyelv és helyesírás
 	Larger pages	Nagyobb oldalak
 	Larger text	Nagyobb szöveg
 	Larger thumbnails	Nagyobb bélyegképek
 	Last page	Utolsó oldal
 	Later in calculation order	Hátrébb a számítási sorrendben
 	Later in tab order	Hátrébb a tab-sorrendben
+	Latin (accented)	Latin (ékezetes)
 	Layer options	Réteg beállításai
 	Layers panel	Rétegek panel
 	Layers Panel and Page	Rétegek panel és oldal
@@ -1462,6 +1507,7 @@ key	Home	Home
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Nem található nyomtató. Ellenőrizze, hogy a nyomtató telepítve van-e, és fut-e a nyomtatási sorkezelő, majd nyissa meg újra a Nyomtatást.
 	No problems found: the document conforms to {level}.	Nem találtunk problémát: a dokumentum megfelel ennek: {level}.
 	No raw file yet	Még nincs nyers fájl
+	No recipients yet.	Még nincsenek címzettek.
 	No reference yet	Még nincs referencia
 	No release notes were provided.	Nem érkeztek kiadási megjegyzések.
 	No scanner found	Nem található lapolvasó
@@ -1473,6 +1519,7 @@ key	Home	Home
 	No size estimate: {e}	Nincs méretbecslés: {e}
 	No status has been set.	Nincs beállított állapot.
 	no such document	nincs ilyen dokumentum
+	No suggestions	Nincs javaslat
 	No tools match your search.	Egy eszköz sem felel meg a keresésnek.
 	No unlinked web addresses were found in the text	A szövegben nem találtunk hivatkozás nélküli webcímet
 	No untagged content was found.	Nem található címkézetlen tartalom.
@@ -1480,7 +1527,10 @@ key	Home	Home
 	none	nincs
 	None (prefix only)	Nincs (csak előtag)
 	None found	Nem található
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	Egyik címzett sem a te digitális azonosítód: nem fogod tudni megnyitni a mentett dokumentumot.
+	None of these signatures can be removed.	Ezek közül egyik aláírás sem távolítható el.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Ezekből a fájlokból nem készíthető PDF; használj PDF-et, képet vagy .txt fájlt
+	None of your digital IDs can open this document.	Egyik digitális azonosítód sem tudja megnyitni ezt a dokumentumot.
 	None — everything is allowed	Nincs — minden engedélyezett
 scroll speed	Normal	Normál
 	Normal page	Normál oldal
@@ -1526,13 +1576,16 @@ animation effects	On	Be
 	One {f} file per page, named after the document.	Oldalanként egy {f} fájl, a dokumentum neve alapján.
 	One-time code (OTP)	Egyszer használatos kód (OTP)
 	Only allow this if you trust the source document.	Csak akkor engedélyezze ezt, ha megbízik a forrásdokumentumban.
+	Only certificates with RSA keys can be recipients.	Csak RSA-kulcsú tanúsítványok lehetnek címzettek.
 	Only change the colour of black text or line art	Csak a fekete szöveg és a vonalak színének módosítása
 	Only checked properties will change. Mixed means the selected fields have different values.	Csak a bejelölt tulajdonságok változnak. Az „Eltérő értékek” azt jelenti, hogy a kijelölt mezők értékei különböznek.
+	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Csak a jól felismerhető papírszéleket vágja körbe. A megkülönböztethetetlen fehér szegélyek megmaradnak.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Csak akkor folytasd, ha megbízol ebben a dokumentumban. Egy cím adatokat vihet a dokumentumból, például azt, amit az űrlapjába írtál.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Csak akkor küldje el, ha megbízik ebben a dokumentumban és a célban. A GET az űrlap értékeit az URL-be helyezi.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Csak akkor küldje el, ha megbízik a dokumentumban és a címzettben. A teljes PDF elhagyja ezt a számítógépet.
 	Only send if you trust this document and destination. The form values leave this computer.	Csak akkor küldd el, ha megbízol a dokumentumban és a címzettben. Az űrlapértékek elhagyják ezt a számítógépet.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Csak az oldaltartalom változik: az eredeti oldalak hivatkozásai, megjegyzései, űrlapmezői és könyvjelzői megmaradnak.
+	Only the recipients can open the document, each with the private key of their own certificate.	Csak a címzettek nyithatják meg a dokumentumot, mindegyikük a saját tanúsítványa titkos kulcsával.
 	Open a document first	Előbb nyiss meg egy dokumentumot
 	Open a PDF ({key})	PDF megnyitása ({key})
 	Open a PDF to measure it.	Nyiss meg egy PDF-et a méréshez.
@@ -1562,6 +1615,7 @@ animation effects	On	Be
 	Opened from a detached CAdES signature — read-only.	CAdES különálló aláírásból megnyitva — csak olvasható.
 	Opened with	Megnyitva ezzel
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Megnyitva, de a biztonsági beállításai nem engedik az egyesítést. Add meg a jogosultsági jelszót.
+	Opening documents	Dokumentumok megnyitása
 	Opening the browser's print dialog…	A böngésző nyomtatási párbeszédablakának megnyitása…
 	Opening {name}…	A(z) {name} megnyitása…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Megnyitja a nyomtató-illesztőprogram beállításait. Ezek a számítógépről indított minden nyomtatásra érvényesek; az itt választott példányszám, kétoldalas nyomtatás, szürkeárnyalat és papír továbbra is érvényes.
@@ -1593,6 +1647,8 @@ animation effects	On	Be
 	Other elements that require alternate text	Más elemek, amelyekhez helyettesítő szöveg kell
 	Other options	Egyéb beállítások
 	Other provider (CSC API)	Más szolgáltató (CSC API)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Más aláírások megmaradnak, ezért a másolat az aláírt fájl frissítéseként mentődik: az eltávolított aláírás a korábbi változatban marad, ahonnan visszaállítható.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Más aláírások megmaradnak, ezért az eltávolított aláírás továbbra is benne van a fájl korábbi változatában; ellenőrizze újra a megmaradt aláírásokat.
 	Outdent	Behúzás csökkentése
 	Outline	Körvonal
 	Outline colour:	Körvonal színe:
@@ -1630,6 +1686,7 @@ animation effects	On	Be
 	Page {label}	{label}. oldal
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Ez az oldal megváltozott a háttér hozzáadása után, ezért a saját fehér kitöltése kikapcsolva marad: {pages}. Fehér papíron ugyanúgy néz ki.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Ennek az oldalnak saját fehér kitöltése van, amely eltakarná a hátteret: {pages}. Csere
+	Page {p}	{p}. oldal
 	Page {p} of {n}	{p}. oldal / {n}
 	pages	oldal
 	Pages counted	Megszámolt oldalak
@@ -1819,6 +1876,7 @@ animation effects	On	Be
 	Reason: 	Indok: 
 	Recent colours	Legutóbbi színek
 	Recent files to keep	Recent files to keep
+	Recipients	Címzettek
 	Recognize scanned text automatically	Beolvasott szöveg automatikus felismerése
 	Recognize Text	Szövegfelismerés
 	Recognize text	Szövegfelismerés
@@ -1867,6 +1925,7 @@ animation effects	On	Be
 	Remove "{name}" from this list? The certificate stays with the signing service.	Eltávolítja a(z) „{name}” elemet erről a listáról? A tanúsítvány az aláírási szolgáltatásnál marad.
 	Remove "{name}" from this list? The file itself is not deleted.	Eltávolítja a(z) „{name}” elemet erről a listáról? Maga a fájl nem törlődik.
 	Remove all links	Összes hivatkozás eltávolítása
+	Remove and Save As…	Eltávolítás és mentés másként…
 	Remove background	Háttér eltávolítása
 	Remove checkmark	Pipa eltávolítása
 	Remove Crop	Körülvágás eltávolítása
@@ -1882,6 +1941,10 @@ animation effects	On	Be
 	Remove redaction marks	Kitakarásjelölések eltávolítása
 	Remove saved {what}	Mentett {what} eltávolítása
 	Remove security	Védelem eltávolítása
+	Remove Signature	Aláírás eltávolítása
+	Remove signature	Aláírás eltávolítása
+	Remove signature…	Aláírás eltávolítása…
+	Remove the signature {name}	{name} aláírás eltávolítása
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Távolítsa el ezt a levélcímkét az olvasási sorrendből, és jelölje meg a közvetlen tartalmát műtárgyként
 	Remove unreferenced named destinations	Hivatkozás nélküli elnevezett célok eltávolítása
 	Remove unused objects and merge identical ones	Nem használt objektumok eltávolítása és az azonosak egyesítése
@@ -1894,9 +1957,14 @@ animation effects	On	Be
 	Remove {n} pages	{n} oldal eltávolítása
 	Removed 1 hidden item. Save to remove them from the file.	1 rejtett elemet eltávolítottunk. Ments, hogy a fájlból is kikerüljön.
 	Removed 1 link	1 hivatkozás eltávolítva
+	Removed the signature {field} and kept its empty field	{field} aláírás eltávolítva, az üres mező megmaradt
+	Removed the signature {field} with its field	{field} aláírás eltávolítva a mezővel együtt
+	Removed the visual signature on page {p}	A(z) {p}. oldal vizuális aláírása eltávolítva
 	Removed {n} hidden items. Save to remove them from the file.	{n} rejtett elemet eltávolítottunk. Ments, hogy a fájlból is kikerüljenek.
 	Removed {n} links	{n} hivatkozás eltávolítva
 	Removing the background puts the page's own backdrop back.	A háttér eltávolítása visszaállítja az oldal saját fehér kitöltését.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	Az aláírás eltávolítása módosítja a dokumentumot, és a létrejövő változatban érvényteleníti ezt az aláírást. Hatással lehet a többi aláírásra és hitelesítésre. Az eredeti fájl változatlan marad.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	Az aláírás eltávolítása módosítja a dokumentumot, és a létrejövő változatban érvényteleníti ezt az aláírást. Az eredeti fájl változatlan marad.
 	Removing white margins… page {d} of {t}	Fehér margók eltávolítása… {d}. oldal / {t}
 	Rename bookmark	Könyvjelző átnevezése
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Megjelenítés: hayro (kiindulás) · Felület: egui · Ikonok: Lucide (ISC) · Betűtípusok: Inter, JetBrains Mono, Dancing Script (OFL)
@@ -1950,6 +2018,7 @@ animation effects	On	Be
 	Resume reading	Felolvasás folytatása
 	Retain existing	Meglévő megtartása
 	Retry	Újra
+	Return to document	Vissza a dokumentumhoz
 	Reveal in File Explorer	Megjelenítés a fájlkezelőben
 	Reverse closed arrow	Fordított zárt nyíl
 	Reverse open arrow	Fordított nyitott nyíl
@@ -1998,6 +2067,8 @@ animation effects	On	Be
 	Run JavaScript	JavaScript futtatása
 	Running action… file {d} of {t}	Művelet fut… {d}. fájl / {t}
 	Runtime	Futtató
+	Safety margin (pt)	Biztonsági margó (pt)
+	Same as interface	A felülettel azonos
 	Same as interface ({language})	Mint a felület ({language})
 	Sanitize	Megtisztítás
 	Sanitize document	Dokumentum megtisztítása
@@ -2013,6 +2084,7 @@ animation effects	On	Be
 	Save as PDF/A-3b	Mentés PDF/A-3b-ként
 	Save as PDF/UA	Mentés PDF/UA-ként
 	Save as PDF/X	Mentés PDF/X-ként
+	Save as template	Mentés sablonként
 	Save as to cloud	Mentés másként a felhőbe
 	Save as to cloud…	Mentés másként a felhőbe…
 	Save as…	Mentés másként…
@@ -2039,6 +2111,7 @@ animation effects	On	Be
 	Saved {place}: {before} → {after} (not smaller){detail}	Mentve ide: {place}: {before} → {after} (nem kisebb){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Mentve ide: {place}: {before} → {after} ({pct}%-kal kisebb){detail}
 	Saved, but reopening failed: {e}	Mentve, de az újranyitás nem sikerült: {e}
+	Saves document	Menti a dokumentumot
 	Saving… {pct}%	Mentés… {pct}%
 	Scale	Méretarány
 	Scale corner {n}	Méretezés a(z) {n}. sarokból
@@ -2046,7 +2119,10 @@ animation effects	On	Be
 	Scale relative to target page	Méretezés a céloldalhoz képest
 	Scan	Beolvasás
 	Scan & OCR	Beolvasás és OCR
+	Scan and text recognition	Szkennelés és szövegfelismerés
+	Scan correction	Szkennelés javítása
 	Scan next page	Következő oldal beolvasása
+	Scan processing cancelled	Szkennelések feldolgozása megszakítva
 	Scanned pages need OCR. Reading order follows extracted page text.	A szkennelt oldalakhoz OCR szükséges. Az olvasási sorrend az oldal kinyert szövegét követi.
 	Scanned text detected	Beolvasott szöveg észlelve
 	Scanner	Lapolvasó
@@ -2075,6 +2151,7 @@ animation effects	On	Be
 	Search tools and commands	Eszközök és parancsok keresése
 	Search tools and commands…	Eszközök és parancsok keresése…
 	Search tools…	Eszközök keresése…
+	Searchable Image	Kereshető kép
 	Searchable Image (Exact)	Kereshető kép (pontos)
 	Searching…	Keresés…
 	Searching… {s} of {p} pages	Keresés… {s} / {p} oldal
@@ -2221,6 +2298,7 @@ key	Shift	Shift
 	Signatures	Aláírások
 	Signatures and seals are not carried over or checked.	Az aláírások és pecsétek nem kerülnek át, és nincsenek ellenőrizve.
 	Signatures panel	Aláírások panel
+	Signed after this signature, so what they signed includes it: {names}.	Ezután hozzáadott aláírások, amelyek aláírt tartalma magában foglalja: {names}.
 	Signed and all signatures are valid.	Aláírva, és minden aláírás érvényes.
 	Signed and saved to {path}	Aláírva és mentve ide: {path}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Aláírta: {signer}, {time}; a tartalom nem egyezik az aláírttal; az aláíró megbízhatóságát nem ellenőriztük.
@@ -2272,6 +2350,11 @@ key	Space	Szóköz
 	Spacing between copies	Távolság a másolatok között
 	Special	Speciális
 	Speed:	Sebesség:
+	Spelling checks stay on this device.	A helyesírás-ellenőrzés ezen az eszközön történik.
+	Spelling dictionary unavailable	A helyesírási szótár nem érhető el
+	Spelling language	Helyesírás-ellenőrzés nyelve
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	A helyesírási jelölések nem módosítják a dokumentumot. Javaslatokhoz kattintson jobb gombbal egy aláhúzott szóra.
+	Spelling suggestions	Helyesírási javaslatok
 	Split document	Dokumentum felosztása
 	Split document…	Dokumentum felosztása…
 	Split into files…	Felosztás fájlokra…
@@ -2296,6 +2379,8 @@ action wizard	Start	Indítás
 	Steps	Lépések
 	Sticky note	Cetli
 	Stop reading	Felolvasás leállítása
+	Straighten scanned page	Beszkennelt oldal kiegyenesítése
+	Straighten skewed scans	Ferde szkennelt oldalak kiegyenesítése
 	Strength: {s}	Erősség: {s}
 	Strikethrough	Áthúzás
 	Strikethrough text	Szöveg áthúzása
@@ -2308,12 +2393,14 @@ action wizard	Start	Indítás
 	Submit FDF data	FDF-adatok küldése
 	Submit PDF document	PDF-dokumentum küldése
 	Submit XFDF data	XFDF-adatok küldése
+	Suggest edits	Módosítások javaslata
 	sum (+)	összeg (+)
 	Summarize	Összefoglalás
 	Summarize comments	Megjegyzések összefoglalása
 	Summarize Options	Összefoglaló beállításai
 	Summarize with AI	Összefoglalás MI-vel
 	Summary	Összefoglaló
+	Swap width and height	Szélesség és magasság felcserélése
 	Switch light / dark theme	Világos / sötét téma váltása
 	Switch page theme	Oldaltéma váltása
 	Switch to List view to change the pages it takes.	Válts listanézetre, ha módosítanád, mely oldalak kerüljenek bele.
@@ -2406,6 +2493,7 @@ action wizard	Start	Indítás
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	A dokumentum jelszó nélkül nyílik meg; ez a jelszó a korlátozások módosításához kell. Mentéskor lép életbe.
 	The document was changed in another window. Check your text, then apply it again.	A dokumentumot egy másik ablakban módosították. Ellenőrizd a szöveget, majd alkalmazd újra.
 	The document was closed before it could be saved.	A dokumentum bezárult, mielőtt menteni lehetett volna.
+	The document will no longer be certified.	A dokumentum többé nem lesz hitelesítve.
 	The document's security settings don't allow copying text and images	A dokumentum biztonsági beállításai nem engedik a szöveg és a képek másolását
 	The document's security settings don't allow filling in form fields	A dokumentum biztonsági beállításai nem engedik az űrlapmezők kitöltését
 	The document's security settings don't allow printing	A dokumentum biztonsági beállításai nem engedik a nyomtatást
@@ -2414,6 +2502,7 @@ action wizard	Start	Indítás
 	The field properties could not be changed.	A mezőtulajdonságokat nem sikerült módosítani.
 	The field properties dialog is no longer open.	A mezőtulajdonságok párbeszédablak már nincs megnyitva.
 	The field {name} no longer exists.	A(z) {name} mező már nem létezik.
+	The fields this signature locked ({names}) can be changed again.	Az aláírás által zárolt mezők ({names}) ismét módosíthatók lesznek.
 	The font must include Latin letters and numbers for interface controls.	A betűtípusnak latin betűket és számjegyeket kell tartalmaznia a kezelőfelülethez.
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	A PdfCraft által íráshoz használt betűtípusok nem tudják megjeleníteni ezt: „{c}” ({code}), ezért minden PDF-megjelenítőben ? látszik a helyén. A szöveg mentve van.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Az űrlap ide kéri a beküldést: {u}; a PdfCraft nem küld űrlapadatot. Mentsd a dokumentumot, hogy megmaradjanak a beírásaid.
@@ -2434,13 +2523,16 @@ action wizard	Start	Indítás
 	The linked PDF opened, but its page destination was out of range.	A hivatkozott PDF megnyílt, de a céloldal a tartományon kívül esik.
 	The module's tokens hold no digital ID PdfCraft can sign with.	A modul tokenjein nincs olyan digitális azonosító, amellyel a PdfCraft aláírhat.
 	the name is not a plain file name	a név nem egyszerű fájlnév
+	The new file has no signature left and no earlier revision holding it.	Az új fájlban már nincs aláírás, és olyan korábbi változat sincs, amely tartalmazná.
 	The newest {n} of {total} PDFs	A legújabb {n} / {total} PDF
 	The objects are already aligned.	Az objektumok már igazítva vannak.
 	The operation failed.	A művelet nem sikerült.
 	The order saved in the PDF needs tidying	A PDF-ben mentett sorrend rendbetételre szorul
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	A többi aláírás ({names}) jelezni fogja, hogy a dokumentum az aláírása után megváltozott. Ellenőrizze újra őket: semmi sem garantálja, hogy érvényesek maradnak.
 	The page has changed; select the image again	Az oldal megváltozott; jelölje ki újra a képet
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Az oldalak kinyerése megtörtént, de nem lettek törölve, mert a dokumentum megváltozott, amíg mappát választottál.
 	the password is incorrect	a jelszó hibás
+	The password is incorrect.	A jelszó helytelen.
 	The password is only used to read the file; it isn't saved.	A jelszó csak a fájl olvasásához kell, és nem kerül mentésre.
 	The passwords don't match.	A jelszavak nem egyeznek.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	A PDF szövegének betűtípusai nem tudják megjeleníteni ezt: „{c}” ({code}). Válasszon támogatott szöveget.
@@ -2454,6 +2546,7 @@ action wizard	Start	Indítás
 	The release has ambiguous packages. Choose a package on the official release page.	A kiadáshoz többféle csomag tartozik. Válassz egyet a hivatalos kiadási oldalon.
 	The release is not a published stable update. Try again later.	Ez a kiadás nem közzétett stabil frissítés. Próbáld újra később.
 	The replacement file doesn't have that many pages.	A cserefájlban nincs ennyi oldal.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	A korlátozások a „Minden engedély” nélküli címzettekre vonatkoznak. Mentéskor lép életbe.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	a sorok túl alacsonyak: növeld a terület magasságát, vagy használj kevesebb sort vagy kisebb sorközt
 	The same password is tried on each file.	Ugyanezt a jelszót próbáljuk meg minden fájlon.
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	A képernyő valódi képpont/hüvelyk értéke. Kalibráljon vonalzóval, hogy a tényleges méret (100%) valódi méretükben mutassa az oldalakat.
@@ -2462,7 +2555,9 @@ action wizard	Start	Indítás
 	The selected redaction is unavailable or invalid.	A kijelölt kitakarás nem érhető el vagy érvénytelen.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	A(z) {provider} munkamenete véget ért. Jelentkezzen be újra a Digitális azonosító beállítása résznél.
 	The shared folder:	A közös mappa:
+	The signature was not removed: {e}	Az aláírás nem lett eltávolítva: {e}
 	The signature will be invisible.	Az aláírás láthatatlan lesz.
+	The signature {names} locks this field.	A(z) {names} aláírás zárolja ezt a mezőt.
 	the signing service is unreachable ({reason})	az aláírási szolgáltatás nem érhető el ({reason})
 	The signing service lists no certificate for this account.	Az aláírási szolgáltatás nem sorol fel tanúsítványt ehhez a fiókhoz.
 	the signing service refused to list the certificates	az aláírási szolgáltatás megtagadta a tanúsítványok listázását
@@ -2501,6 +2596,7 @@ action wizard	Start	Indítás
 	This compatibility level supports only plain ASCII passwords.	Ez a kompatibilitási szint csak sima ASCII-jelszót fogad el.
 	This dialog shows the details of a certificate and its chain.	Ez a párbeszédablak a tanúsítvány és a lánca részleteit mutatja.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Ez a dokumentum teljes képernyős módban kér megnyitást: az oldal kitölti a képernyőt, és semmi más nem látszik. Az Esc billentyűvel bármikor kiléphet.
+	This document can't be changed: {names}	Ez a dokumentum nem módosítható: {names}
 	This document can't be checked: it couldn't be read for editing	Ez a dokumentum nem ellenőrizhető: nem sikerült szerkesztésre beolvasni
 	This document contains {n} interactive form fields.	Ez a dokumentum {n} interaktív űrlapmezőt tartalmaz.
 	This document does not allow adding form fields	Ez a dokumentum nem engedélyezi űrlapmezők hozzáadását
@@ -2514,6 +2610,7 @@ action wizard	Start	Indítás
 	This document has no layers.	Ebben a dokumentumban nincs réteg.
 	This document has no pages.	Ebben a dokumentumban nincs oldal.
 	This document has no restrictions to lift	Ebben a dokumentumban nincs feloldható korlátozás
+	This document has no signature that can be removed.	Ebben a dokumentumban nincs eltávolítható aláírás.
 	This document has no signatures.	Ebben a dokumentumban nincs aláírás.
 	This document has no tagged figures.	Ebben a dokumentumban nincsenek címkézett ábrák.
 	This document has no XMP metadata.	Ennek a dokumentumnak nincsenek XMP-metaadatai.
@@ -2544,6 +2641,7 @@ action wizard	Start	Indítás
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	Ezt a telepítést egy RPM-csomag kezeli. A PdfCraft frissítéséhez használd a rendszer szoftverkezelőjét.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Ez egy dinamikus XFA-űrlap, amelyet a PdfCraft még nem tud megjeleníteni. Amit látsz, a fájl helyőrző oldala.
 	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	Ez egyszeri letöltés a GitHubról. Ezután a felismerés internetkapcsolat nélkül működik. A PDF-ek ezen az eszközön maradnak.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	Ez egy aláírás képe, nem digitális aláírás: csak az oldalon lévő jel tűnik el. Az eredeti fájl változatlan marad.
 	This is the first PDF in its folder	Ez a mappa első PDF-je
 	This is the last PDF in its folder	Ez a mappa utolsó PDF-je
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Ez az utolsó próbálkozás a token PIN-kódjának zárolása előtt. Egy hibás PIN itt véglegesen zárolhatja.
@@ -2558,6 +2656,7 @@ action wizard	Start	Indítás
 	This point could not be moved. Try a smaller move.	Ezt a pontot nem sikerült áthelyezni. Próbáljon kisebb elmozdítást.
 	This printer offers no settings of its own.	Ennek a nyomtatónak nincsenek saját beállításai.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	A nyomtató illesztőprogramja nem fogadja el más programoktól a kétoldalas nyomtatás beállítását, ezért a saját beállítása érvényes. Módosítás: Tulajdonságok…
+	this signature can't be removed on its own	ez az aláírás nem távolítható el önmagában
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	ez az aláírási szolgáltatás nem használható: böngészőben történő OAuth-bejelentkezést igényel, amelyet a PdfCraft még nem támogat
 	This tab is already first	Ez a lap már az első
 	This tab is already last	Ez a lap már az utolsó
@@ -2606,6 +2705,7 @@ signature pad	Type	Gépelés
 	Type text	Szöveg beírása
 	Type the web address.	Írd be a webcímet.
 	Type your {what}.	Írd be a következőt: {what}.
+	Uncertain orientations are left unchanged. Deskew fits the full image inside the page.	A bizonytalan tájolás változatlan marad. A kiegyenesítés a teljes képet az oldalon belül tartja.
 	Unchecked	Nincs bejelölve
 	Unchecked reads	Ellenőrizetlen olvasások
 	Underline	Aláhúzás
@@ -2614,6 +2714,7 @@ signature pad	Type	Gépelés
 	Undo {action}	{action} visszavonása
 	Unit	Mértékegység
 	Unknown author	Ismeretlen szerző
+	unknown signer	ismeretlen aláíró
 	Unlock comment	Megjegyzés feloldása
 	Unlock {name}	{name} feloldása
 	Unlock {n} files	{n} fájl feloldása
@@ -2626,6 +2727,7 @@ signature pad	Type	Gépelés
 	Unpin {folder}	{folder} kitűzésének megszüntetése
 	Unpinned {tool} from Home	{tool} leválasztva a kezdőlapról
 	Unplaced	Nincs elhelyezve
+	Unsaved changes to this document are saved in the new file too.	A dokumentum nem mentett módosításai is az új fájlba kerülnek.
 	Unsupported measurements	Nem támogatott mérések
 	Update background	Háttér frissítése
 	Update background…	Háttér frissítése…
@@ -2669,6 +2771,9 @@ signature pad	Type	Gépelés
 	Validate	Ellenőrzés
 	Validate all	Összes ellenőrzése
 	Validate all signatures	Összes aláírás ellenőrzése
+	validated: invalid	ellenőrzés: érvénytelen
+	validated: valid	ellenőrzés: érvényes
+	validated: validity unknown	ellenőrzés: érvényessége ismeretlen
 	Validity ends	Érvényesség vége
 	Validity starts	Érvényesség kezdete
 	Validity unknown	Ismeretlen érvényesség
@@ -2690,6 +2795,8 @@ signature pad	Type	Gépelés
 	Viewport rectangle in page points (x, y, width, height)	Nézetablak téglalapja oldalpontokban (x, y, szélesség, magasság)
 	Visible Rectangle	Látható téglalap
 	Visual	Vizuális
+	Visual initials (Fill & Sign, not digital)	Vizuális kezdőbetűk (Kitöltés és aláírás, nem digitális)
+	Visual signature (Fill & Sign, not digital)	Vizuális aláírás (Kitöltés és aláírás, nem digitális)
 	Voice and Speech	Hang és beszéd
 	Voice:	Hang:
 	Volume:	Hangerő:
@@ -2728,6 +2835,7 @@ document scrollbar width	Wide	Széles
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	A(z) „{from}“ {rev}. változatát tekinti meg. Ez egy pillanatkép: az itteni módosítások nem érintik az eredetit.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	A(z) „{from}“ aláírt változatát (a {rev}. változatot) tekinti meg. Ez egy pillanatkép: az itteni módosítások nem érintik az eredetit.
 	You can pin up to {n} folders. Unpin one first.	Legfeljebb {n} mappát tűzhetsz ki. Előbb szüntesd meg az egyik kitűzését.
+	You choose where the new version is saved. Continue?	Ön választja ki, hová kerüljön az új változat. Folytatja?
 	You have version {c}. Download the new version from its release page.	A jelenlegi verzió: {c}. Töltsd le az újat a kiadási oldaláról.
 	Your changes will be lost if you don't save them.	A módosításaid elvesznek, ha nem mented őket.
 	Your name	A neved
@@ -2773,7 +2881,10 @@ document scrollbar width	Wide	Széles
 	{month} {y}	{y}. {month}
 	{msg} to {dir}	{msg} ide: {dir}
 	{names} and {last}	{names} és {last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} megjegyzések engedélyezése nélkül hitelesíti ezt a dokumentumot, és jelezni fogja ezt a módosítást.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} hitelesíti ezt a dokumentumot, és az aláírás eltávolítása nem olyan módosítás, amelyet a hitelesítés megenged.
 	{name} (default)	{name} (alapértelmezett)
+	{name} (you)	{name} (te)
 	{name} can't be combined: {why}	{name} nem egyesíthető: {why}
 	{name} has no action	{name} művelet nélkül
 	{name} is read-only	{name} csak olvasható
@@ -2782,6 +2893,7 @@ document scrollbar width	Wide	Széles
 	{name} — unsaved changes	{name} — nem mentett módosítások
 	{name}: choosing images arrives on the web with file pickers for images	{name}: a képek kiválasztása a webes változatban a képválasztóval együtt érkezik
 	{name}: the {other} action isn't supported yet	{name}: ez a művelet még nem támogatott ({other})
+	{name}_unsigned.pdf	{name}_alairas_nelkul.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} számítás mostantól az új nevet használja.|{n} számítás mostantól az új nevet használja.
 	{n} contributors · {c} commits	{n} közreműködő · {c} commit
 	{n} days ago	{n} napja
@@ -2819,6 +2931,7 @@ document scrollbar width	Wide	Széles
 	{verb} Background	Háttér: {verb}
 	{verb} Header and Footer	Fejléc és lábléc: {verb}
 	{verb} Watermark	Vízjel: {verb}
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. {file} mentve és ellenőrizve: minden oldalával újra megnyílik. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	{who} ebben a dokumentumban olyan címet próbált megnyitni, amelyet a PdfCraft nem nyit meg: {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} ebben a dokumentumban olyan címet próbált megnyitni, amelyet a PdfCraft nem nyit meg: {e}. Dokumentumokból csak webes (http, https) és e-mail (mailto) hivatkozások nyílnak meg.
 	{who} in this document wants to open this address in your browser:	{who} ebben a dokumentumban meg akarja nyitni ezt a címet a böngésződben:
@@ -2828,6 +2941,7 @@ document scrollbar width	Wide	Széles
 	— (protection is applied when you save)	— (a védelem mentéskor lép életbe)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	A(z) „{name}” megváltozott a lemezen a megnyitás vagy az utolsó mentés óta. A mentés most ezt az újabb változatot cseréli le erre.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	„{name}” biztonsági korlátozásokat tartalmaz. Add meg a jogosultsági jelszavát a feloldásukhoz.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	„{name}” meghatározott személyek számára van titkosítva. A megnyitásához válaszd ki a digitális azonosítódat, és add meg a jelszavát.
 	“{name}” is protected. Enter a password to open it.	„{name}” védett. Add meg a jelszót a megnyitásához.
 	…or paste the raw text here; # headings, - bullets	…vagy illessze be ide a nyers szöveget; # címsorok, - felsorolások
 	−LOC	−LOC

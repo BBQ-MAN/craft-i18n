@@ -52,6 +52,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	A diagonal CONFIDENTIAL watermark on every page.
 	a document must keep at least one page	문서에는 페이지가 하나 이상 있어야 합니다.
 	A document needs at least one page: copy instead	문서에는 페이지가 하나 이상 필요합니다. 대신 복사하세요.
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	문서 타임스탬프는 파일 전체에 적용되며 누구의 서명도 아니므로 단독으로 제거할 수 없습니다.
 	a field named {name} already exists	{name}(이)라는 필드가 이미 있습니다
 	A font isn't embedded	글꼴이 포함되어 있지 않습니다
 	A form field has additional actions	양식 필드에 추가 동작이 있습니다.
@@ -61,6 +62,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG 또는 SVG 파일입니다. PdfCraft를 시작할 때마다 이 위치에서 읽습니다.
 	A script	스크립트
 	A selected field has no widget on any page, so the fields can't be edited together.	A selected field has no widget on any page, so the fields can't be edited together.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	스캔한 페이지처럼 페이지 내용의 일부인 서명은 필드나 주석이 아니므로 단독으로 제거할 수 없으며, PdfCraft는 이를 숨기려고 페이지의 일부를 지우지 않습니다. 제거하려면 해당 영역의 민감 정보를 제거하거나(민감 정보 제거), 서명이 별도의 이미지인 경우 PDF 편집으로 이미지를 삭제하세요.
 	A stream refers to an external file	스트림이 외부 파일을 참조합니다.
 	A stream uses LZW compression	스트림이 LZW 압축을 사용합니다.
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	A summary describes the table's purpose and layout. Add a Summary attribute to each table.
@@ -111,12 +113,14 @@
 	Add an Action	Add an Action
 	Add an image field	이미지 필드 추가
 	Add arrow	화살표 추가
+	Add at least one recipient.	수신자를 한 명 이상 추가하세요.
 	Add at least two files	파일을 두 개 이상 추가하세요.
 	Add background	배경 추가
 	Add background…	배경 추가…
 	Add Bates numbering…	Bates 번호 매기기 추가…
 	Add bookmark	책갈피 추가
 	Add callout	말풍선 추가
+	Add certificate file…	인증서 파일 추가…
 	Add checkmark	확인 표시 추가
 	Add cloud	구름 추가
 	Add comment	Add comment
@@ -168,11 +172,13 @@
 	Add the files to combine	결합할 파일 추가
 	Add the PDFs to combine	결합할 PDF 추가
 	Add the steps this action runs, in order.	Add the steps this action runs, in order.
+	Add to dictionary	사전에 추가
 	Add to Trusted Certificates	신뢰하는 인증서에 추가
 	Add to trusted certificates	신뢰하는 인증서에 추가
 	Add underline	밑줄 추가
 	Add watermark	워터마크 추가
 	Add watermark…	워터마크 추가…
+	Add your digital ID	디지털 ID 추가
 	Add {what}	Add {what}
 	Added 1 comment	Added 1 comment
 	Added more than once	두 번 이상 추가됨
@@ -186,6 +192,7 @@
 	Advanced options	고급 옵션
 	Advanced Options {chevron}	Advanced Options {chevron}
 	Advanced search…	고급 검색…
+	AI Assistant	AI 도우미
 	AI assistant	AI 도우미
 	Algorithm	알고리즘
 	Align	정렬
@@ -202,6 +209,7 @@
 	All page content is tagged	모든 페이지 콘텐츠에 태그가 지정되었습니다.
 	All pages in document	문서의 모든 페이지
 	All pages in range	범위의 모든 페이지
+	All permissions	모든 권한
 	All tools	모든 도구
 	Allow	허용
 	Allow Rich Text Formatting	Allow Rich Text Formatting
@@ -259,6 +267,7 @@ calendar date	April	4월
 	Arrange	배치
 	Arrange image	이미지 정렬
 	Ask about this document	이 문서에 대해 질문
+	Ask whether to recognize the current page or all pages when editing a scan.	스캔을 편집할 때 현재 페이지 또는 모든 페이지의 텍스트를 인식할지 묻습니다.
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.
 	Associated with content	콘텐츠와 연결됨
 	At least one signature has problems.	하나 이상의 서명에 문제가 있습니다.
@@ -342,10 +351,13 @@ certificate	Basic constraints	기본 제약 조건
 	Center vertically	세로 중앙
 	Center window on screen	화면에서 창 가운데 맞춤
 	Centre	가운데 정렬
+	Certificate	인증서
 	Certificate authority	인증 기관
+	Certificate encryption will be applied when you save	저장할 때 인증서 암호화가 적용됩니다
 	Certificate Signing	인증서 서명
 	Certificate Viewer	Certificate Viewer
 	Certificates	인증서
+	Certification signature (level {p})	인증 서명(수준 {p})
 	Certified by {by}	{by} 인증
 	Certify	인증
 	Certify (invisible signature)	인증(숨은 서명)
@@ -390,6 +402,7 @@ certificate	Basic constraints	기본 제약 조건
 	Check for updates	업데이트 확인
 	Check for updates…	업데이트 확인…
 	Check spelling	맞춤법 검사
+	Check spelling while typing	입력 중 맞춤법 검사
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	태그가 일반 독자가 읽는 순서로 읽히는지 확인하세요. 읽기 순서 도구 또는 태그 패널을 사용하여 수정하세요.
 	Check the pages	페이지 확인
 	Check the pages of {name}: {why}	Check the pages of {name}: {why}
@@ -400,6 +413,7 @@ certificate	Basic constraints	기본 제약 조건
 	Checking Options ({on} of 32 in all categories)	Checking Options ({on} of 32 in all categories)
 	Checking pages…	페이지 확인 중…
 	Checkmark	체크 표시
+	Choose a digital ID file	디지털 ID 파일 선택
 	Choose a digital ID.	디지털 ID를 선택하세요.
 	Choose a file…	파일 선택…
 	Choose a folder for the exported files	내보낸 파일을 저장할 폴더 선택
@@ -413,17 +427,21 @@ certificate	Basic constraints	기본 제약 조건
 	Choose a logo	로고 선택
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	PNG 또는 JPEG 이미지(최대 4MiB)를 선택하세요. 투명도가 유지됩니다.
 	Choose a provider.	공급자를 선택하세요.
+	Choose a signature that can be removed.	제거할 수 있는 서명을 선택하세요.
 	Choose a stamp, then click on the page to place it.	스탬프를 선택한 다음 페이지를 클릭하여 배치하세요.
 	Choose an image	이미지 선택
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	다른 파일을 선택하세요. 원본은 그대로 유지되고, 서명이 없는 버전은 그 옆에 저장됩니다.
 	Choose images	이미지 선택
 	Choose image…	이미지 선택…
 	Choose photo…	사진 선택…
 	Choose the digital ID that you want to use for signing:	서명에 사용할 디지털 ID를 선택하세요:
+	Choose the signature to remove:	제거할 서명을 선택하세요:
 	Choose where to save the signed file. The service signs it once you have.	서명된 파일을 저장할 위치를 선택하세요. 선택하면 서비스가 서명합니다.
 	Clean Up	정리
 	Clean-up	정리
 	Clear all	모두 지우기
 	Clear form	양식 지우기
+	Clear personal dictionary	개인 사전 지우기
 	Clear Recent Files	최근 파일 지우기
 	Clear redaction marks	교정 표시 지우기
 	Clear search	검색 지우기
@@ -527,6 +545,7 @@ certificate	Basic constraints	기본 제약 조건
 	Couldn't copy the image: {e}	이미지를 복사할 수 없습니다: {e}
 	Couldn't create a PDF: {e}	PDF를 만들 수 없습니다: {e}
 	Couldn't download {name}: {e}	Couldn't download {name}: {e}
+	Couldn't encrypt: {e}	암호화할 수 없습니다: {e}
 	Couldn't extract pages: {e}	페이지를 추출할 수 없습니다: {e}
 	Couldn't fit the visible content: {e}	보이는 콘텐츠를 맞출 수 없습니다: {e}
 	Couldn't follow linked PDF: {reason}	Couldn't follow linked PDF: {reason}
@@ -603,6 +622,7 @@ key	Ctrl	Ctrl
 	Current page — type a page number or label (such as iv) and press Enter	현재 페이지 — 페이지 번호나 레이블(예: iv)을 입력하고 Enter 키를 누르세요
 	Custom	사용자 정의
 	Custom font	사용자 지정 글꼴
+	Custom page…	사용자 지정 페이지…
 	Custom scale:	사용자 지정 배율:
 	Custom size	사용자 지정 크기
 	Custom stamps arrive on the web with file pickers for images	웹에서는 이미지 파일 선택기로 사용자 지정 스탬프를 추가합니다.
@@ -673,6 +693,7 @@ key	Delete	Delete
 	Diamond	다이아몬드
 	Digital ID	디지털 ID
 	Digital ID password	디지털 ID 암호
+	Digital ID required	디지털 ID 필요
 	Digital Signature	디지털 서명
 	Digital signature	디지털 서명
 	Digital Signature Properties	Digital Signature Properties
@@ -721,6 +742,7 @@ key	Delete	Delete
 	document security store	문서 보안 저장소
 	document structure	문서 구조
 	Document structure provides a logical reading order	Document structure provides a logical reading order
+	Document timestamp	문서 타임스탬프
 	Document Title	Document Title
 	Document title is showing in title bar	Document title is showing in title bar
 	Documents and view	문서 및 보기
@@ -735,6 +757,7 @@ key	Delete	Delete
 	Downsample to	다음으로 다운샘플링:
 	DPI sets the printed page size without resampling the image.	DPI는 이미지를 다시 샘플링하지 않고 인쇄된 페이지 크기를 설정합니다.
 	Drag a field to move it, or select it and press {up} or {down}.	Drag a field to move it, or select it and press {up} or {down}.
+	Drag a point to reshape the line. Delete removes it.	점을 끌어 선의 모양을 바꿉니다. Delete 키로 점을 삭제합니다.
 	Drag a rectangle around the area to copy	복사할 영역 주위로 사각형을 끌어 놓으세요.
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	페이지에서 사각형을 끌어 자르고, 페이지를 두 번 클릭하여 페이지 상자 설정을 여세요.
 	Drag a rectangle to create a link; double-click a link to edit it	사각형을 끌어 링크를 만들고, 링크를 두 번 클릭하여 편집하세요.
@@ -764,6 +787,9 @@ key	Delete	Delete
 	Duplicate field	필드 복제
 	Duplicate page	페이지 복제
 	Duplicate pages	페이지 복제
+	Duplicate pages with new field names	새 필드 이름으로 페이지 복제
+	Duplicate pages — 1 field renamed	페이지 복제 — 필드 1개 이름 변경됨
+	Duplicate pages — fields renamed	페이지 복제 — 필드 이름 변경됨
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Dynamic XFA form laid out from its template: {pages}, {fields}.
 	Dynamic zoom	동적 확대/축소
 	E-Sign	전자 서명
@@ -801,7 +827,11 @@ comment menu	Edit	편집
 	Enabled	활성화됨
 	Encipher Only	암호화 전용
 	Encrypt	암호화
+	Encrypt for recipient	수신자용으로 암호화
+	Encrypt for recipients	수신자용으로 암호화
+	Encrypt with Certificate	인증서로 암호화
 	Encrypt with certificate	인증서로 암호화
+	Encrypt with certificate…	인증서로 암호화…
 	Encryption	암호화
 key	End	End
 	End entity	최종 엔터티
@@ -840,12 +870,14 @@ key	Esc	Esc
 	Exclude tagged tables	태그가 지정된 표 제외
 	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.
 	Execute a menu item	메뉴 항목 실행
+	Exit	종료
 	Expand all	Expand all
 	Expand all bookmarks	모든 책갈피 펼치기
 	Expand all pages	Expand all pages
 	Expand all tools	모든 도구 펼치기
 	Expand tag	태그 펼치기
 	Expand top-level bookmarks	최상위 책갈피 펼치기
+	Expires {date}	만료일 {date}
 	Explain	설명
 	Export & Convert	내보내기 및 변환
 	Export a PDF	PDF 내보내기
@@ -905,6 +937,7 @@ calendar date	February	2월
 	Field properties…	필드 속성…
 	Field value is in range:	Field value is in range:
 	Field value is not validated	Field value is not validated
+	Field: {field}	필드: {field}
 	Field: {field} on page {p}	Field: {field} on page {p}
 	Fields to reset (comma-separated; empty: all)	Fields to reset (comma-separated; empty: all)
 	Figure {i} of {n}{page}	Figure {i} of {n}{page}
@@ -1018,6 +1051,7 @@ calendar date	February	2월
 calendar weekday	Fr	금
 	From a PDF page or an image	PDF 페이지 또는 이미지에서
 	From colour	원래 색상
+	From template	서식 파일에서
 	From {file}	From {file}
 	From:	시작:
 	Front side only	앞면만
@@ -1035,6 +1069,7 @@ calendar weekday	Fr	금
 	Green on black	검은색 바탕에 녹색
 	Greyscale	회색조
 	Grid view	격자 보기
+	Group select	그룹 선택
 	H / Space (hold)	H / Space(누르고 있음)
 	Hand	손 도구
 	Hand (H)	손 도구(H)
@@ -1118,6 +1153,7 @@ key	Home	Home
 	Installed fonts…	설치된 글꼴…
 	Intended usage	용도
 certificate	Intended usage	용도
+	Interface and appearance	인터페이스 및 모양
 	Interface size	인터페이스 크기
 	Intersection	교차점
 	Intersections	교차점
@@ -1137,6 +1173,7 @@ certificate	Issued by	발급자
 certificate	Issued to	발급 대상
 	Issuer	발급자
 certificate	Issuer	발급자
+	it was still in the document afterwards, so the change was undone	제거 후에도 문서에 남아 있어 변경을 취소했습니다
 	Item List	항목 목록
 	Item:	항목:
 	Items marked Ready work today.	준비됨으로 표시된 항목은 지금 사용할 수 있습니다.
@@ -1158,6 +1195,7 @@ calendar date	July	7월
 	June	6월
 calendar date	June	6월
 	Justify	양쪽 정렬
+	Keep an empty signature field to sign again	다시 서명할 수 있도록 빈 서명 필드 유지
 	Keep source fonts	원본 글꼴 유지
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	탭 스트립 위에 Windows 제목 표시줄을 유지합니다. 끄면 탭 스트립이 제목 표시줄이 되고 창 버튼은 오른쪽 끝에 놓입니다. 최대화 버튼의 스냅 레이아웃(Snap Layouts)을 쓰려면 Windows 제목 표시줄이 필요합니다.
 	Keep tool selected	도구 선택 유지
@@ -1174,6 +1212,7 @@ certificate	Key usage	키 용도
 	Landscape and Portrait Pages	가로 및 세로 페이지
 	Landscape Pages	가로 페이지
 	Landscape pages	가로 페이지
+	Language and spelling	언어 및 맞춤법
 	Larger pages	큰 페이지
 	Larger thumbnails	Larger thumbnails
 	Last commit	마지막 커밋
@@ -1181,6 +1220,7 @@ certificate	Key usage	키 용도
 	Later	나중에
 	Later in calculation order	Later in calculation order
 	Later in tab order	탭 순서에서 뒤
+	Latin (accented)	라틴 문자(발음 구별 부호 포함)
 	Layer options	Layer options
 	Layers panel	레이어 패널
 	Layers Panel and Page	레이어 패널 및 페이지
@@ -1198,6 +1238,7 @@ certificate	Key usage	키 용도
 	Light theme	밝은 테마
 	Limit of	제한:
 	Line	선
+	Line colour	선 색상
 	Line delta	줄 변화량
 	Line ending	줄바꿈
 	Line Style:	선 스타일:
@@ -1396,12 +1437,14 @@ calendar weekday	Mo	월
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	프린터를 찾을 수 없습니다. 프린터가 설치되어 있고 인쇄 스풀러가 실행 중인지 확인한 다음 인쇄를 다시 여세요.
 	No problems found: the document conforms to {level}.	No problems found: the document conforms to {level}.
 	No recent files	최근 파일 없음
+	No recipients yet.	아직 수신자가 없습니다.
 	No security	보안 없음
 	No sheets	시트 없음
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	프레임에서 서명을 찾지 못했습니다. 프레임을 서명 위로 이동하거나 잉크 감도를 높이세요.
 	No signing certificate was found on this device. Is it connected?	이 장치에서 서명 인증서를 찾지 못했습니다. 연결되어 있나요?
 	No status has been set.	상태가 설정되지 않았습니다.
 	no such document	해당 문서 없음
+	No suggestions	제안 없음
 	no summary	요약 없음
 	No tools match your search.	검색과 일치하는 도구가 없습니다.
 	No unlinked web addresses were found in the text	텍스트에서 연결되지 않은 웹 주소를 찾지 못했습니다.
@@ -1411,7 +1454,10 @@ calendar weekday	Mo	월
 	none	없음
 	None (prefix only)	없음(접두사만)
 	None found	찾을 수 없음
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	수신자 중 누구도 사용자의 디지털 ID가 아니므로 저장된 문서를 열 수 없습니다.
+	None of these signatures can be removed.	이 서명 중 제거할 수 있는 것이 없습니다.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	None of those files can be made into a PDF; use PDFs, images or .txt files
+	None of your digital IDs can open this document.	사용자의 디지털 ID 중 이 문서를 열 수 있는 것이 없습니다.
 	None — everything is allowed	없음 — 모두 허용
 scroll speed	Normal	보통
 	Not allowed	허용 안 됨
@@ -1462,11 +1508,13 @@ animation effects	On	켜짐
 	One {f} file per page, named after the document.	페이지마다 문서 이름으로 지정된 {f}개 파일
 	One-time code (OTP)	일회용 코드(OTP)
 	Only allow this if you trust the source document.	Only allow this if you trust the source document.
+	Only certificates with RSA keys can be recipients.	RSA 키가 있는 인증서만 수신자가 될 수 있습니다.
 	Only change the colour of black text or line art	검은색 텍스트 또는 선화의 색상만 변경
 	Only checked properties will change. Mixed means the selected fields have different values.	Only checked properties will change. Mixed means the selected fields have different values.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	이 문서를 신뢰하는 경우에만 계속하세요. 주소에 양식에 입력한 내용 같은 문서 정보가 포함될 수 있습니다.
 	Only the document's owner can change its security (open it with the permissions password)	문서 소유자만 보안을 변경할 수 있습니다(권한 암호로 여세요)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	페이지 콘텐츠만 변경되며 원본 페이지의 링크, 주석, 양식 필드 및 책갈피는 유지됩니다.
+	Only the recipients can open the document, each with the private key of their own certificate.	수신자만 각자 인증서의 개인 키로 문서를 열 수 있습니다.
 	Open a document first	먼저 문서를 여세요.
 	Open a PDF ({key})	Open a PDF ({key})
 	Open a PDF (⌘O)	PDF 열기(⌘O)
@@ -1493,6 +1541,7 @@ animation effects	On	켜짐
 	open to see what it will include	열어서 포함될 내용을 확인하세요
 	Opened with	Opened with
 	Opened, but its security settings don't allow combining. Enter the permissions password.	열렸지만 보안 설정에서 결합을 허용하지 않습니다. 권한 암호를 입력하세요.
+	Opening documents	문서 열기
 	Opening the browser's print dialog…	Opening the browser's print dialog…
 	Opening {name}…	{name} 여는 중…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	프린터 드라이버 환경설정을 엽니다. 이 컴퓨터에서 인쇄할 때마다 저장되며, 여기서 선택한 복사본 수, 양면, 회색조 및 용지가 계속 적용됩니다.
@@ -1525,6 +1574,8 @@ animation effects	On	켜짐
 	Other elements that require alternate text	대체 텍스트가 필요한 기타 요소
 	Other options	Other options
 	Other provider (CSC API)	기타 제공업체(CSC API)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	다른 서명이 남아 있으므로 사본은 서명된 파일의 업데이트로 저장됩니다. 제거한 서명은 이전 개정판에 남아 있어 복구할 수 있습니다.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	다른 서명이 남아 있으므로 제거한 서명은 파일의 이전 개정판에 여전히 있습니다. 남은 서명을 다시 확인하세요.
 	Outdent	내어쓰기
 	Outline colour:	윤곽선 색상:
 	Output appears here.	출력이 여기에 표시됩니다.
@@ -1562,6 +1613,7 @@ animation effects	On	켜짐
 	Page {n} of {total}	{total}페이지 중 {n}페이지
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	배경을 추가한 뒤 {pages}페이지가 바뀌어서 자체 흰색 채우기가 꺼진 채로 남습니다. 흰 종이에서는 똑같이 보입니다.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	{pages}페이지에는 배경을 가리는 자체 흰색 채우기가 있습니다. 바꾸기
+	Page {p}	{p}페이지
 	Page {p} doesn't tab in structure order	{p}페이지의 탭 순서가 구조 순서와 다릅니다
 	Page {p} of {n}	전체 {n}페이지 중 {p}페이지
 	Page {p}: {n} untagged content item	{p}페이지: 태그 없는 내용 {n}개
@@ -1732,9 +1784,12 @@ certificate	Public key	공개 키
 	Recent	최근 파일
 	Recent colours	최근 색상
 	Recent files to keep	Recent files to keep
+	Recipients	수신자
+	Recognize scanned text automatically	스캔한 텍스트 자동 인식
 	Recognize Text	텍스트 인식
 	Recognize text	텍스트 인식
 	Recognize text in multiple files…	여러 파일에서 텍스트 인식…
+	Recognize text on this page or throughout the document?	이 페이지의 텍스트를 인식할까요, 문서 전체의 텍스트를 인식할까요?
 	Recognize Text…	텍스트 인식…
 	Recognize text…	텍스트 인식…
 	Recognized 1 word	단어 1개를 인식했습니다.
@@ -1772,6 +1827,7 @@ certificate	Public key	공개 키
 	Remove "{name}" from this list? The certificate stays with the signing service.	이 목록에서 "{name}"을(를) 제거할까요? 인증서는 서명 서비스에 그대로 남습니다.
 	Remove "{name}" from this list? The file itself is not deleted.	Remove "{name}" from this list? The file itself is not deleted.
 	Remove all links	모든 링크 제거
+	Remove and Save As…	제거 후 다른 이름으로 저장…
 	Remove background	배경 제거
 	Remove checkmark	확인 표시 제거
 	Remove Crop	Remove Crop
@@ -1787,6 +1843,10 @@ certificate	Public key	공개 키
 	Remove redaction marks	삭제 표시 제거
 	Remove saved {what}	Remove saved {what}
 	Remove security	보안 제거
+	Remove Signature	서명 제거
+	Remove signature	서명 제거
+	Remove signature…	서명 제거…
+	Remove the signature {name}	서명 {name} 제거
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Remove this leaf tag from reading order and mark its direct content as an artifact
 	Remove unreferenced named destinations	Remove unreferenced named destinations
 	Remove unused objects and merge identical ones	Remove unused objects and merge identical ones
@@ -1799,9 +1859,14 @@ certificate	Public key	공개 키
 	Remove {n} pages	Remove {n} pages
 	Removed 1 hidden item. Save to remove them from the file.	숨겨진 항목 1개가 제거되었습니다. 파일에서 완전히 제거하려면 저장하세요.
 	Removed 1 link	링크 1개 제거됨
+	Removed the signature {field} and kept its empty field	서명 {field}을(를) 제거하고 빈 필드는 유지했습니다
+	Removed the signature {field} with its field	서명 {field}을(를) 필드와 함께 제거했습니다
+	Removed the visual signature on page {p}	{p}페이지의 시각적 서명을 제거했습니다
 	Removed {n} hidden items. Save to remove them from the file.	숨겨진 항목 {n}개가 제거되었습니다. 파일에서 완전히 제거하려면 저장하세요.
 	Removed {n} links	링크 {n}개 제거됨
 	Removing the background puts the page's own backdrop back.	배경을 제거하면 페이지 자체의 흰색 채우기가 복원됩니다.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	이 서명을 제거하면 문서가 변경되고, 결과 버전에서 이 서명은 무효가 됩니다. 다른 서명과 인증에 영향을 줄 수 있습니다. 원본 파일은 그대로 유지됩니다.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	이 서명을 제거하면 문서가 변경되고, 결과 버전에서 이 서명은 무효가 됩니다. 원본 파일은 그대로 유지됩니다.
 	Removing white margins… page {d} of {t}	흰색 여백 제거 중… {t}페이지 중 {d}페이지
 	Rename bookmark	책갈피 이름 바꾸기
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)
@@ -1832,6 +1897,7 @@ certificate	Public key	공개 키
 	Required	필수
 	Required, given by Aruba with the account	필수, Aruba가 계정과 함께 제공
 	Requires user to enter a password for:	다음 작업에 사용자 암호 입력 필요:
+	Reset	초기화
 	Reset a form	양식 재설정
 	Reset columns	열 초기화
 	Reset page size	페이지 크기 초기화
@@ -1847,6 +1913,7 @@ certificate	Public key	공개 키
 	Restrictions	제한
 	Restrictions lifted	제한이 해제되었습니다.
 	Retain existing	기존 항목 유지
+	Return to document	문서로 돌아가기
 	Rev. {rev}: Certified by an unknown signer	리비전 {rev}: 알 수 없는 서명자가 인증함
 	Rev. {rev}: Certified by {name}	리비전 {rev}: {name}이(가) 인증함
 	Rev. {rev}: Signed by an unknown signer	리비전 {rev}: 알 수 없는 서명자가 서명함
@@ -1899,6 +1966,7 @@ certificate	Public key	공개 키
 	Run JavaScript	JavaScript 실행
 	Running action… file {d} of {t}	동작 실행 중… 전체 {t}개 파일 중 {d}번째
 calendar weekday	Sa	토
+	Same as interface	인터페이스와 동일
 	Same as interface ({language})	Same as interface ({language})
 	Sanitize	정리
 	Sanitize document	문서 정리
@@ -1915,6 +1983,7 @@ calendar weekday	Sa	토
 	Save as PDF/A-3b	PDF/A-3b로 저장
 	Save as PDF/UA	PDF/UA로 저장
 	Save as PDF/X	PDF/X로 저장
+	Save as template	서식 파일로 저장
 	Save as {level}	{level}(으)로 저장
 	Save as…	다른 이름으로 저장…
 	Save attachment…	Save attachment…
@@ -1940,12 +2009,14 @@ calendar weekday	Sa	토
 	Saved {place}: {before} → {after} (not smaller){detail}	Saved {place}: {before} → {after} (not smaller){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Saved {place}: {before} → {after} ({pct}% smaller){detail}
 	Saved, but reopening failed: {e}	저장했지만 다시 열 수 없습니다: {e}
+	Saves document	문서를 저장합니다
 	Scale	축척
 	Scale corner {n}	모서리 {n}에서 크기 조절
 	Scale object	개체 크기 조절
 	Scale relative to target page	대상 페이지에 맞춰 크기 조정
 	Scan	스캔
 	Scan & OCR	스캔 및 OCR
+	Scanned text detected	스캔한 텍스트 감지됨
 	Screen flicker	화면 깜박임
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.
 	Script	Script
@@ -2095,6 +2166,7 @@ key	Shift	Shift
 	Signature validity is UNKNOWN:	서명 유효성을 알 수 없습니다:
 	Signatures	서명
 	Signatures panel	서명 패널
+	Signed after this signature, so what they signed includes it: {names}.	이 서명 이후에 서명되어, 서명한 내용에 이 서명이 포함됩니다: {names}.
 	Signed and all signatures are valid.	Signed and all signatures are valid.
 	Signed and saved to {path}	Signed and saved to {path}
 	Signer	서명자
@@ -2134,6 +2206,11 @@ scroll speed	Slow	느리게
 	sorted descending	내림차순 정렬
 key	Space	Space
 	Space Audit	공간 사용량 검사
+	Spelling checks stay on this device.	맞춤법 검사는 이 기기에서 수행됩니다.
+	Spelling dictionary unavailable	맞춤법 사전을 사용할 수 없음
+	Spelling language	맞춤법 검사 언어
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	맞춤법 표시는 문서를 변경하지 않습니다. 밑줄 친 단어를 마우스 오른쪽 버튼으로 클릭하면 제안을 볼 수 있습니다.
+	Spelling suggestions	맞춤법 제안
 	Split	분할
 	Split document	문서 분할
 	Split document…	문서 분할…
@@ -2165,11 +2242,13 @@ certificate	Subject	주제
 	Subscript	Subscript
 	Subset	부분 집합
 	Success	성공
+	Suggest edits	수정 제안
 	sum (+)	합계(+)
 	Summarize	요약
 	Summarize comments	주석 요약
 	Summarize Options	요약 옵션
 	Superscript	Superscript
+	Swap width and height	너비와 높이 바꾸기
 	Switch light / dark theme	밝은 테마 / 어두운 테마 전환
 	Switch to List view to change the pages it takes.	사용할 페이지를 변경하려면 목록 보기로 전환하세요.
 	Switch to two-page view first to show the cover page	표지 페이지를 표시하려면 먼저 2페이지 보기로 전환하세요.
@@ -2264,6 +2343,7 @@ calendar weekday	Th	목
 	The document now conforms to {level}; save it to keep the changes	The document now conforms to {level}; save it to keep the changes
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	문서는 암호 없이 열리지만 제한을 변경하려면 이 암호가 필요합니다. 저장할 때 적용됩니다.
 	The document was closed before it could be saved.	저장하기 전에 문서가 닫혔습니다.
+	The document will no longer be certified.	문서가 더 이상 인증되지 않습니다.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	문서에 포함된 해지 정보에 따르면 서명자 인증서는 해지되지 않았습니다.
 	The document's security settings don't allow copying text and images	문서의 보안 설정에서 텍스트와 이미지 복사를 허용하지 않습니다.
 	The document's security settings don't allow filling in form fields	문서의 보안 설정에서 양식 필드 입력을 허용하지 않습니다
@@ -2276,6 +2356,7 @@ calendar weekday	Th	목
 	The field properties could not be changed.	필드 속성을 변경할 수 없습니다.
 	The field properties dialog is no longer open.	필드 속성 대화 상자가 더 이상 열려 있지 않습니다.
 	The field {name} no longer exists.	The field {name} no longer exists.
+	The fields this signature locked ({names}) can be changed again.	이 서명이 잠근 필드({names})를 다시 변경할 수 있게 됩니다.
 	the first heading is an H{n}; headings should not skip levels	첫 제목이 H{n}임. 제목 수준을 건너뛰면 안 됨
 	the first row number can be at most {max}	첫 행 번호는 최대 {max}입니다
 	The font {} isn't embedded	{} 글꼴이 포함되어 있지 않습니다
@@ -2295,9 +2376,11 @@ calendar weekday	Th	목
 	The linked PDF opened, but its page destination was out of range.	연결된 PDF가 열렸지만 페이지 대상이 범위를 벗어났습니다.
 	The metadata doesn't identify the file as {}	메타데이터에서 파일을 {}(으)로 식별하지 않습니다
 	the name is not a plain file name	이름이 일반 파일 이름이 아닙니다.
+	The new file has no signature left and no earlier revision holding it.	새 파일에는 남은 서명도, 서명을 담은 이전 개정판도 없습니다.
 	The newest {n} of {total} PDFs	최신 PDF {total}개 중 {n}개
 	The operation failed.	작업에 실패했습니다.
 	The order saved in the PDF needs tidying	The order saved in the PDF needs tidying
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	다른 서명({names})은 서명 후 문서가 변경되었다고 보고합니다. 다시 확인하세요. 계속 유효하다는 보장은 없습니다.
 	The page has changed; select the image again	페이지가 변경되었습니다. 이미지를 다시 선택하세요.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	폴더를 선택하는 동안 문서가 변경되어 페이지를 추출했지만 삭제하지 않았습니다.
 	the password is incorrect	암호가 올바르지 않습니다.
@@ -2312,6 +2395,7 @@ calendar weekday	Th	목
 	The provider's page didn't come back in time. Try again.	공급자 페이지가 제때 돌아오지 않았습니다. 다시 시도하세요.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	리디렉션 URI는 포트가 있는 http://127.0.0.1 또는 http://localhost여야 합니다.
 	The replacement file doesn't have that many pages.	대체 파일에 페이지가 그만큼 많지 않습니다.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	“모든 권한”이 없는 수신자에게는 제한이 적용됩니다. 저장할 때 적용됩니다.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	행이 너무 낮습니다: 영역을 더 높게 하거나 행 수 또는 행 간격을 줄이세요
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA 서명 값의 길이가 키 모듈러스와 다릅니다(선행 0바이트가 제거되거나 추가됨). 그래도 읽었습니다.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	RSA 서명의 DigestInfo에 NULL 매개 변수가 없습니다(이전 서명 프로그램의 방식). 그래도 읽었습니다.
@@ -2331,7 +2415,9 @@ calendar weekday	Th	목
 	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	서명이 DER 대신 BER(미정 길이)로 인코딩되어 관대한 방식으로 읽었습니다.
 	The signature uses the legacy adbe.x509.rsa_sha1 format.	서명이 이전 adbe.x509.rsa_sha1 형식을 사용합니다.
 	The signature value does not match the signer's certificate: the signature is corrupt.	서명 값이 서명자 인증서와 일치하지 않습니다. 서명이 손상되었습니다.
+	The signature was not removed: {e}	서명을 제거하지 못했습니다: {e}
 	The signature will be invisible.	서명이 표시되지 않습니다.
+	The signature {names} locks this field.	서명 {names}이(가) 이 필드를 잠급니다.
 	The signature's byte range does not exclude exactly its contents.	서명의 바이트 범위가 서명 내용만 정확하게 제외하지 않습니다.
 	The signature's byte range does not match the file.	서명의 바이트 범위가 파일과 일치하지 않습니다.
 	The signature's timestamp token could not be verified ({}).	서명의 타임스탬프 토큰을 검증하지 못했습니다({}).
@@ -2389,6 +2475,7 @@ calendar weekday	Th	목
 	This compatibility level supports only plain ASCII passwords.	이 호환성 수준은 일반 ASCII 암호만 지원합니다.
 	This dialog shows the details of a certificate and its chain.	이 대화 상자에는 인증서와 인증서 체인의 세부 정보가 표시됩니다.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	이 문서가 전체 화면 모드로 열리려고 합니다. 페이지가 화면을 채우고 다른 항목은 표시되지 않습니다. 언제든 Esc를 눌러 나가세요.
+	This document can't be changed: {names}	이 문서는 변경할 수 없습니다: {names}
 	This document can't be checked: it couldn't be read for editing	이 문서는 검사할 수 없습니다. 편집을 위해 읽을 수 없습니다.
 	This document contains {n} interactive form fields.	이 문서에는 대화형 양식 필드 {n}개가 있습니다.
 	This document has no attachments.	이 문서에는 첨부 파일이 없습니다.
@@ -2402,6 +2489,7 @@ calendar weekday	Th	목
 	This document has no layers.	이 문서에는 레이어가 없습니다.
 	This document has no pages.	이 문서에는 페이지가 없습니다.
 	This document has no restrictions to lift	이 문서에는 해제할 제한이 없습니다.
+	This document has no signature that can be removed.	이 문서에는 제거할 수 있는 서명이 없습니다.
 	This document has no signatures.	이 문서에는 서명이 없습니다.
 	This document has no tagged figures.	이 문서에는 태그가 지정된 그림이 없습니다.
 	This document has no {kind} to change	This document has no {kind} to change
@@ -2427,6 +2515,7 @@ calendar weekday	Th	목
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	이 양식에는 PdfCraft가 아직 읽지 못하는 XFA 데이터도 있습니다. 필드에 입력할 수 있지만 Acrobat에서는 대신 XFA 값이 표시될 수 있습니다.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	이 양식의 스크립트가 너무 오래 실행되어 꺼졌습니다. 문서를 다시 열어 스크립트를 다시 실행하세요.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	동적 XFA 양식이며 PdfCraft는 아직 표시할 수 없습니다. 현재 보이는 것은 파일의 자리 표시자 페이지입니다.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	이것은 디지털 서명이 아니라 서명 이미지입니다. 페이지의 표시만 제거됩니다. 원본 파일은 그대로 유지됩니다.
 	This is the first PDF in its folder	폴더의 첫 번째 PDF입니다
 	This is the last PDF in its folder	폴더의 마지막 PDF입니다
 	This measurement needs at least {n} points.	이 측정에는 최소 {n}개의 점이 필요합니다.
@@ -2437,8 +2526,10 @@ calendar weekday	Th	목
 	This page has an opaque background of its own, which hides anything behind it. Choose Blend with page content.	이 페이지에는 뒤에 있는 모든 것을 가리는 자체 불투명 배경이 있습니다. 페이지 내용과 혼합을 선택하세요.
 	This page has an opaque background of its own, which hides the image behind it.	이 페이지에는 뒤에 있는 이미지를 가리는 자체 불투명 배경이 있습니다.
 	This PDF uses the unsupported {s} action.	이 PDF는 지원되지 않는 {s} 동작을 사용합니다.
+	This point could not be moved. Try a smaller move.	이 점을 이동할 수 없습니다. 더 짧은 거리로 이동해 보세요.
 	This printer offers no settings of its own.	이 프린터에는 자체 설정이 없습니다.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…
+	this signature can't be removed on its own	이 서명은 단독으로 제거할 수 없습니다
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	이 서명은 더 이상 서명용으로 권장되지 않는 이전 160비트 해시 알고리즘 RIPEMD-160을 사용합니다. 검증은 통과하지만 신뢰의 근거로 삼지 않아야 합니다.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	이 서명은 충돌이 입증된 약한 해시 알고리즘 SHA-1을 사용합니다. 오래전에 서명된 문서에서 많이 사용하여 검증은 통과하지만 신뢰의 근거로 삼지 않아야 합니다.
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	이 서명 서비스는 사용할 수 없음: 브라우저에서 OAuth 로그인이 필요하지만 PdfCraft는 아직 이를 지원하지 않음
@@ -2491,6 +2582,7 @@ signature pad	Type	유형
 	Unit	단위
 	Unknown	알 수 없음
 	Unknown author	알 수 없는 작성자
+	unknown signer	알 수 없는 서명자
 	Unlock comment	주석 잠금 해제
 	Unlock {name}	Unlock {name}
 	Unlock {n} files	파일 {n}개 잠금 해제
@@ -2503,6 +2595,7 @@ signature pad	Type	유형
 	Unpin {folder}	Unpin {folder}
 	Unpinned {tool} from Home	{tool}의 홈 고정을 해제했습니다
 	Unplaced	배치되지 않음
+	Unsaved changes to this document are saved in the new file too.	이 문서의 저장되지 않은 변경 사항도 새 파일에 저장됩니다.
 	Unsigned signature field	서명되지 않은 서명 필드
 	Unsigned signature field: {name}	서명되지 않은 서명 필드: {name}
 	Unsupported measurements	지원되지 않는 측정
@@ -2546,6 +2639,9 @@ certificate	Valid to	유효 종료일
 	Validate	유효성 검사
 	Validate all	모두 검증
 	Validate all signatures	모든 서명 검증
+	validated: invalid	검증 결과: 유효하지 않음
+	validated: valid	검증 결과: 유효함
+	validated: validity unknown	검증 결과: 유효성 알 수 없음
 	Validity ends	유효 기간 종료
 certificate	Validity ends	유효 기간 종료
 	Validity starts	유효 기간 시작
@@ -2569,6 +2665,8 @@ certificate	Version	버전
 	Viewport rectangle in page points (x, y, width, height)	페이지 포인트의 뷰포트 사각형(x, y, 너비, 높이)
 	Visible Rectangle	표시 사각형
 	Visual	시각적
+	Visual initials (Fill & Sign, not digital)	시각적 이니셜(채우기 및 서명, 디지털 아님)
+	Visual signature (Fill & Sign, not digital)	시각적 서명(채우기 및 서명, 디지털 아님)
 	Waiting for the system print dialog…	시스템 인쇄 대화 상자를 기다리는 중…
 	Waiting for your approval in the browser…	브라우저에서 승인을 기다리는 중…
 	watermark	워터마크
@@ -2600,6 +2698,7 @@ calendar weekday	We	수
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.
 	You can pin up to {n} folders. Unpin one first.	폴더는 최대 {n}개까지 고정할 수 있습니다. 먼저 하나를 고정 해제하세요.
+	You choose where the new version is saved. Continue?	새 버전을 저장할 위치를 직접 선택합니다. 계속하시겠습니까?
 	You have version {c}. All releases are listed at {page}.	You have version {c}. All releases are listed at {page}.
 	You have version {c}. Download the new version from its release page.	현재 버전은 {c}입니다. 릴리스 페이지에서 새 버전을 다운로드하세요.
 	Your name	이름
@@ -2640,7 +2739,10 @@ calendar weekday	We	수
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} to {dir}
 	{names} and {last}	{names} and {last}
+	{names} certifies this document without allowing comments, and will report this change.	{names}이(가) 주석을 허용하지 않고 이 문서를 인증하므로 이 변경을 보고합니다.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names}이(가) 이 문서를 인증하며, 서명 제거는 해당 인증이 허용하는 변경이 아닙니다.
 	{name} (default)	{name} (default)
+	{name} (you)	{name} (나)
 	{name} can't be combined: {why}	{name} can't be combined: {why}
 	{name} has no action	{name} has no action
 	{name} is read-only	{name} is read-only
@@ -2649,6 +2751,7 @@ calendar weekday	We	수
 	{name} — unsaved changes	{name} — unsaved changes
 	{name}: choosing images arrives on the web with file pickers for images	{name}: choosing images arrives on the web with file pickers for images
 	{name}: the {other} action isn't supported yet	{name}: the {other} action isn't supported yet
+	{name}_unsigned.pdf	{name}_서명없음.pdf
 @plural	{n} byte|{n} bytes	{n}바이트
 @plural	{n} comment|{n} comments	댓글 {n}개
 	{n} contributors · {c} commits	기여자 {n}명 · 커밋 {c}개
@@ -2689,6 +2792,7 @@ calendar weekday	We	수
 	{verb} Background	{verb} Background
 	{verb} Header and Footer	{verb} Header and Footer
 	{verb} Watermark	{verb} Watermark
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. {file}을(를) 저장했고 모든 페이지와 함께 다시 열리는지 확인했습니다. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	{who} in this document tried to open an address PdfCraft won't open: {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.
 	{who} in this document wants to open this address in your browser:	{who} in this document wants to open this address in your browser:
@@ -2704,6 +2808,7 @@ calendar weekday	We	수
 	— (protection is applied when you save)	— (저장할 때 보호 적용)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	“{name}” has security restrictions. Enter its permissions password to lift them.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	“{name}”은(는) 특정 사용자용으로 암호화되어 있습니다. 디지털 ID를 선택하고 비밀번호를 입력해 여세요.
 	“{name}” is protected. Enter a password to open it.	“{name}” is protected. Enter a password to open it.
 	… and {n} more	… 외 {n}개
 	−Bin	−바이너리

@@ -39,8 +39,11 @@
 	4 x 6 in label (101.6 x 152.4 mm)	Štítek 4 × 6 in (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 číslice, A písmeno, O písmeno nebo číslice, X libovolný znak
 	; 1 page already had text	; 1 stránka už text obsahovala
+	; 1 page skipped	; přeskočena 1 stránka
+	; corrected {n} pages	; opraveno stránek: {n}
 	; failed: {list}	; selhalo: {list}
 	; {n} pages already had text	; stránky, které už text obsahovaly: {n}
+	; {n} pages skipped	; přeskočeno stránek: {n}
 	? of {n}	? z {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: PR: {prs}, commity: {commits}, +{added} / −{deleted} řádků (Δ {delta}), +{bin_added} / −{bin_deleted} binárních souborů, {first} – {last}
 	`{command}` {when}	Příkaz `{command}` {when}
@@ -51,6 +54,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	Diagonální vodoznak CONFIDENTIAL na každé stránce.
 	a document must keep at least one page	dokument musí mít alespoň jednu stránku
 	A document needs at least one page: copy instead	Dokument musí mít alespoň jednu stránku: použijte místo toho kopírování
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Časové razítko dokumentu pokrývá celý soubor a není ničím podpisem, a proto ho nelze odstranit samostatně.
 	a field named {name} already exists	pole s názvem {name} už existuje
 	A font isn't embedded	Písmo není vložené
 	A form field has additional actions	Formulářové pole má dodatečné akce
@@ -61,6 +65,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Soubor PNG nebo SVG. Načítá se z tohoto místa při každém spuštění PdfCraft.
 	A script	Skript
 	A selected field has no widget on any page, so the fields can't be edited together.	Vybrané pole nemá na žádné stránce widget, takže pole nelze upravit společně.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Podpis, který je součástí obsahu stránky, například na naskenované stránce, není pole ani poznámka, a proto ho nelze odstranit samostatně. PdfCraft nemaže části stránky, aby ho skryl. Chcete-li ho odstranit, začerněte tuto oblast (Začernění), nebo pokud je podpis samostatný obrázek, smažte obrázek pomocí Upravit PDF.
 	A stream refers to an external file	Proud odkazuje na externí soubor
 	A stream uses LZW compression	Proud používá kompresi LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Souhrn popisuje účel a uspořádání tabulky. Přidejte ke každé tabulce atribut Summary.
@@ -108,12 +113,14 @@
 	Add an Action	Přidat akci
 	Add an image field	Přidat pole obrázku
 	Add arrow	Přidat šipku
+	Add at least one recipient.	Přidejte alespoň jednoho příjemce.
 	Add at least two files	Přidejte alespoň dva soubory
 	Add background	Přidat pozadí
 	Add background…	Přidat pozadí…
 	Add Bates numbering…	Přidat Batesovo číslování…
 	Add bookmark	Přidat záložku
 	Add callout	Přidat popisek se šipkou
+	Add certificate file…	Přidat soubor certifikátu…
 	Add checkmark	Přidat zaškrtnutí
 	Add circle	Přidat kruh
 	Add cloud	Přidat obláček
@@ -153,6 +160,7 @@
 	Add rectangle	Přidat obdélník
 	Add redaction mark	Přidat značku začernění
 	Add search index	Přidat vyhledávací index
+	Add searchable text	Přidat prohledávatelný text
 	Add signature	Přidat podpis
 	Add squiggly underline	Přidat podtržení vlnovkou
 	Add stamp	Přidat razítko
@@ -166,11 +174,13 @@
 	Add the files to combine	Přidejte soubory ke sloučení
 	Add the PDFs to combine	Přidejte soubory PDF ke sloučení
 	Add the steps this action runs, in order.	Přidejte kroky, které tato akce provede, v daném pořadí.
+	Add to dictionary	Přidat do slovníku
 	Add to Trusted Certificates	Přidat k důvěryhodným certifikátům
 	Add to trusted certificates	Přidat k důvěryhodným certifikátům
 	Add underline	Přidat podtržení
 	Add watermark	Přidat vodoznak
 	Add watermark…	Přidat vodoznak…
+	Add your digital ID	Přidat vaše digitální ID
 	Add {what}	Přidat {what}
 	Added 1 comment	Přidán 1 komentář
 	Added more than once	Přidáno vícekrát
@@ -187,6 +197,7 @@
 	Advanced Options {chevron}	Pokročilé možnosti {chevron}
 	Advanced search…	Rozšířené hledání…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Po kliknutí na Podepsat zadejte v okně CloudSigneru kód OTT z aplikace mSzafir a schvalte podpis v aplikaci. Se zapnutým trvalým kódem OTT v CloudSigneru se kód zadává jen jednou za několik minut.
+	AI Assistant	Asistent AI
 	AI assistant	AI asistent
 	AI chat isn't available in the web build; use the desktop app or CLI.	AI chat není ve webové verzi k dispozici; použijte desktopovou aplikaci nebo CLI.
 	Algorithm	Algoritmus
@@ -205,6 +216,7 @@
 	All page content is tagged	Veškerý obsah stránek je označkovaný
 	All pages in document	Všechny stránky dokumentu
 	All pages in range	Všechny stránky v rozsahu
+	All permissions	Všechna oprávnění
 	All tools	Všechny nástroje
 	Allow	Povolit
 	Allow Rich Text Formatting	Povolit formátovaný text
@@ -297,6 +309,7 @@ calendar date	August	srpna
 	Auto-detect	Automaticky rozpoznat
 	Auto-rotate pages	Automaticky otáčet stránky
 	Auto-size text to fit redaction region	Automaticky přizpůsobit velikost textu oblasti začernění
+	Automatically rotate sideways and upside-down pages	Automaticky otáčet stránky na boku a vzhůru nohama
 	Automatically tag PDF	Automaticky označkovat PDF
 	Available version: {v}	Dostupná verze: {v}
 	average	průměr
@@ -371,10 +384,13 @@ certificate	Basic constraints	Základní omezení
 	Center vertically	Vycentrovat svisle
 	Center window on screen	Vycentrovat okno na obrazovce
 	Centre	Na střed
+	Certificate	Certifikát
 	Certificate authority	Certifikační autorita
+	Certificate encryption will be applied when you save	Šifrování certifikátem se použije při uložení
 	Certificate Signing	Podepisování certifikátů
 	Certificate Viewer	Prohlížeč certifikátů
 	Certificates	Certifikáty
+	Certification signature (level {p})	Certifikační podpis (úroveň {p})
 	Certified by {by}	Certifikováno: {by}
 	Certify	Certifikovat
 	Certify (invisible signature)	Certifikovat (neviditelný podpis)
@@ -419,6 +435,7 @@ certificate	Basic constraints	Základní omezení
 	Check for accessibility…	Zkontrolovat přístupnost…
 	Check for updates…	Zkontrolovat aktualizace…
 	Check spelling	Kontrolovat pravopis
+	Check spelling while typing	Kontrolovat pravopis při psaní
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Zkontrolujte, že tagy jdou v pořadí, v jakém by četl vidící čtenář. Opravte je nástrojem Pořadí čtení nebo v panelu Tagy.
 	Check the pages	Zkontrolujte stránky
 	Check the pages of {name}: {why}	Zkontrolujte stránky souboru {name}: {why}
@@ -430,6 +447,7 @@ certificate	Basic constraints	Základní omezení
 	Checking Options ({on} of 32 in all categories)	Možnosti kontroly (zapnuto {on} z 32 ve všech kategoriích)
 	Checking pages…	Kontrola stránek…
 	Checkmark	Zaškrtnutí
+	Choose a digital ID file	Vyberte soubor digitálního ID
 	Choose a digital ID.	Vyberte digitální ID.
 	Choose a file…	Vybrat soubor…
 	Choose a folder for the exported files	Vyberte složku pro exportované soubory
@@ -443,8 +461,10 @@ certificate	Basic constraints	Základní omezení
 	Choose a logo	Vyberte logo
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Vyberte obrázek PNG nebo JPEG (nejvýše 4 MiB). Průhlednost bude zachována.
 	Choose a provider.	Vyberte poskytovatele.
+	Choose a signature that can be removed.	Zvolte podpis, který lze odstranit.
 	Choose a stamp, then click on the page to place it.	Vyberte razítko a klikněte na stránku, kam ho chcete umístit.
 	Choose an image	Vyberte obrázek
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Zvolte jiný soubor: originál zůstane beze změny a verze bez podpisu se uloží vedle něj.
 	Choose font…	Vybrat písmo…
 	Choose images	Vyberte obrázky
 	Choose image…	Vybrat obrázek…
@@ -454,12 +474,14 @@ certificate	Basic constraints	Základní omezení
 	Choose reference…	Vybrat předlohu…
 	Choose the digital ID that you want to use for signing:	Vyberte digitální ID, kterým chcete podepisovat:
 	Choose the module's library file.	Vyberte soubor knihovny modulu.
+	Choose the signature to remove:	Zvolte podpis, který chcete odstranit:
 	Choose where to save the signed file. The service signs it once you have.	Zvolte, kam uložit podepsaný soubor. Služba ho podepíše, jakmile to uděláte.
 	Clean Up	Vyčištění
 	Clean-up	Vyčištění
 	Clear All	Zrušit výběr
 	Clear all	Vymazat vše
 	Clear form	Vymazat formulář
+	Clear personal dictionary	Vymazat osobní slovník
 	Clear redaction marks	Vymazat značky začernění
 	Clear search	Vymazat hledání
 	Clear selection / close find	Zrušit výběr / zavřít hledání
@@ -568,6 +590,8 @@ certificate	Basic constraints	Základní omezení
 	Copyright notice	Upozornění na autorská práva
 	Copyright status	Stav autorských práv
 	Correct recognized text	Opravit rozpoznaný text
+	Correct scans	Opravit skeny
+	Corrected scan	Opravený sken
 	Could not copy the selection because text could not be read on every page	Výběr nelze zkopírovat, protože text nebylo možné přečíst na všech stránkách
 	Could not mark the selection because text could not be read on every page	Výběr nelze označit, protože text nebylo možné přečíst na všech stránkách
 	Could not save: {e}	Nelze uložit: {e}
@@ -576,6 +600,7 @@ certificate	Basic constraints	Základní omezení
 	Couldn't copy the image: {e}	Obrázek nelze zkopírovat: {e}
 	Couldn't create a PDF: {e}	PDF nelze vytvořit: {e}
 	Couldn't download {name}: {e}	{name} nelze stáhnout: {e}
+	Couldn't encrypt: {e}	Nelze zašifrovat: {e}
 	Couldn't extract pages: {e}	Stránky nelze extrahovat: {e}
 	Couldn't extract the original PDF: {e}	Původní PDF nelze extrahovat: {e}
 	Couldn't fit the visible content: {e}	Viditelný obsah nelze přizpůsobit: {e}
@@ -652,6 +677,7 @@ certificate	Basic constraints	Základní omezení
 	Crop image	Oříznout obrázek
 	Crop page	Oříznout stránku
 	Crop pages	Oříznout stránky
+	Crop scanner borders to the paper edge	Oříznout okraje skenu k hraně papíru
 	Cross	Křížek
 key	Ctrl	Ctrl
 	Currency symbol:	Symbol měny:
@@ -661,6 +687,7 @@ key	Ctrl	Ctrl
 	Current page — type a page number or label (such as iv) and press Enter	Aktuální stránka — zadejte číslo nebo označení stránky (třeba iv) a stiskněte Enter
 	Cursor coordinates	Souřadnice kurzoru
 	Custom font	Vlastní písmo
+	Custom page…	Vlastní stránka…
 	Custom role	Vlastní role
 	Custom scale:	Vlastní měřítko:
 	Custom size	Vlastní velikost
@@ -740,6 +767,7 @@ key	Delete	Delete
 	Diagnostic details	Diagnostické podrobnosti
 	Digital ID	Digitální ID
 	Digital ID password	Heslo digitálního ID
+	Digital ID required	Je vyžadováno digitální ID
 	Digital Signature	Digitální podpis
 	Digital signature	Digitální podpis
 	Digital Signature Properties	Vlastnosti digitálního podpisu
@@ -792,6 +820,7 @@ key	Delete	Delete
 	document security store	úložiště zabezpečení dokumentu
 	document structure	struktura dokumentu
 	Document structure provides a logical reading order	Struktura dokumentu poskytuje logické pořadí čtení
+	Document timestamp	Časové razítko dokumentu
 	Document title is showing in title bar	V záhlaví okna se zobrazuje název dokumentu
 	Documents and view	Dokumenty a zobrazení
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Dokumenty s více než 20 stránkami potřebují k navigaci záložky. Přidejte záložky hlavních oddílů.
@@ -846,6 +875,9 @@ key	Delete	Delete
 	Duplicate field	Duplikovat pole
 	Duplicate page	Duplikovat stránku
 	Duplicate pages	Duplikovat stránky
+	Duplicate pages with new field names	Duplikovat stránky s novými názvy polí
+	Duplicate pages — 1 field renamed	Duplikovat stránky — 1 pole přejmenováno
+	Duplicate pages — fields renamed	Duplikovat stránky — pole přejmenována
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Dynamický formulář XFA rozvržený podle šablony: {pages}, {fields}.
 	Dynamic zoom	Dynamické zvětšení
 	E-Sign	E-podpis
@@ -887,7 +919,11 @@ comment menu	Edit	Upravit
 	Enabled	Povoleno
 	Encipher Only	Pouze šifrování
 	Encrypt	Šifrovat
+	Encrypt for recipient	Šifrovat pro jednoho příjemce
+	Encrypt for recipients	Šifrovat pro příjemce
+	Encrypt with Certificate	Šifrovat certifikátem
 	Encrypt with certificate	Šifrovat certifikátem
+	Encrypt with certificate…	Šifrovat certifikátem…
 	Encryption	Šifrování
 key	End	End
 	End entity	Koncová entita
@@ -938,6 +974,7 @@ key	Esc	Esc
 	Expand all tools	Rozbalit všechny nástroje
 	Expand tag	Rozbalit tag
 	Expand top-level bookmarks	Rozbalit záložky nejvyšší úrovně
+	Expires {date}	Platnost do {date}
 	Explain	Vysvětlit
 	Export & Convert	Exportovat a převést
 	Export a PDF	Exportovat PDF
@@ -998,6 +1035,7 @@ calendar date	February	února
 	Field properties…	Vlastnosti pole…
 	Field value is in range:	Hodnota pole je v rozsahu:
 	Field value is not validated	Hodnota pole se neověřuje
+	Field: {field}	Pole: {field}
 	Field: {field} on page {p}	Pole: {field} na stránce {p}
 	Fields to reset (comma-separated; empty: all)	Pole k resetování (oddělená čárkami; prázdné: všechna)
 	Figure {i} of {n}{page}	Obrázek {i} z {n}{page}
@@ -1122,6 +1160,7 @@ calendar date	February	února
 calendar weekday	Fr	Pá
 	From a PDF page or an image	Ze stránky PDF nebo z obrázku
 	From colour	Z barvy
+	From template	Ze šablony
 	From {file}	Ze souboru {file}
 	From:	Od:
 	Front side only	Jen přední strana
@@ -1142,6 +1181,7 @@ calendar weekday	Fr	Pá
 	Grayscale Images	Obrázky ve stupních šedi
 	Green on black	Zelená na černém
 	Greyscale	Stupně šedi
+	Group select	Výběr skupiny
 	H / Space (hold)	H / mezerník (podržet)
 	Hand	Ruka
 	Hand (H)	Ruka (H)
@@ -1243,6 +1283,7 @@ key	Home	Home
 	Integrity	Integrita
 	Intended usage	Zamýšlené použití
 certificate	Intended usage	Zamýšlené použití
+	Interface and appearance	Rozhraní a vzhled
 	Interface font	Písmo rozhraní
 	Interface size	Velikost rozhraní
 	Intersections	Průsečíky
@@ -1262,6 +1303,7 @@ certificate	Issued by	Vydal
 certificate	Issued to	Vydáno pro
 	Issuer	Vydavatel
 certificate	Issuer	Vydavatel
+	it was still in the document afterwards, so the change was undone	po odstranění byl v dokumentu stále, proto byla změna vrácena
 	Item List	Seznam položek
 	Item:	Položka:
 	Items marked Ready work today.	Položky označené Připraveno fungují už dnes.
@@ -1281,6 +1323,7 @@ calendar date	January	ledna
 calendar date	July	července
 	June	Červen
 calendar date	June	června
+	Keep an empty signature field to sign again	Ponechat prázdné podpisové pole pro nové podepsání
 	Keep source fonts	Zachovat zdrojová písma
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Ponechat záhlaví Windows nad pruhem karet. Při vypnutí je záhlavím pruh karet s tlačítky okna vpravo; rozložení Snap Layouts na tlačítku maximalizace vyžadují záhlaví Windows.
 	Keep tool selected	Ponechat nástroj vybraný
@@ -1297,12 +1340,14 @@ certificate	Key usage	Použití klíče
 	Landscape and Portrait Pages	Stránky na šířku i na výšku
 	Landscape Pages	Stránky na šířku
 	Landscape pages	Stránky na šířku
+	Language and spelling	Jazyk a pravopis
 	Larger pages	Větší stránky
 	Larger text	Větší text
 	Larger thumbnails	Větší miniatury
 	Last page	Poslední stránka
 	Later in calculation order	Později v pořadí výpočtů
 	Later in tab order	Později v pořadí tabulátoru
+	Latin (accented)	Latinka (s diakritikou)
 	Layer options	Možnosti vrstev
 	Layers panel	Panel vrstev
 	Layers Panel and Page	Panel vrstev a stránka
@@ -1554,6 +1599,7 @@ calendar weekday	Mo	Po
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Nebyly nalezeny žádné tiskárny. Zkontrolujte, že je tiskárna nainstalovaná a zařazování tisku běží, a pak znovu otevřete Tisk.
 	No problems found: the document conforms to {level}.	Nenalezeny žádné problémy: dokument vyhovuje standardu {level}.
 	No raw file yet	Zatím žádný zdrojový soubor
+	No recipients yet.	Zatím žádní příjemci.
 	No reference yet	Zatím žádná předloha
 	No release notes were provided.	Poznámky k vydání nebyly poskytnuty.
 	No scanner found	Nebyl nalezen žádný skener
@@ -1565,6 +1611,7 @@ calendar weekday	Mo	Po
 	No size estimate: {e}	Bez odhadu velikosti: {e}
 	No status has been set.	Nebyl nastaven žádný stav.
 	no such document	takový dokument neexistuje
+	No suggestions	Žádné návrhy
 	no summary	chybí souhrn
 	No tools match your search.	Hledání neodpovídá žádný nástroj.
 	No unlinked web addresses were found in the text	V textu nebyly nalezeny žádné webové adresy bez odkazu
@@ -1574,7 +1621,10 @@ calendar weekday	Mo	Po
 	none	žádná
 	None (prefix only)	Žádný (jen předpona)
 	None found	Nic nenalezeno
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	Žádný z příjemců není vaším digitálním ID: uložený dokument nebudete moci otevřít.
+	None of these signatures can be removed.	Žádný z těchto podpisů nelze odstranit.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Ze žádného z těchto souborů nelze vytvořit PDF; použijte soubory PDF, obrázky nebo soubory .txt
+	None of your digital IDs can open this document.	Žádné z vašich digitálních ID tento dokument neotevře.
 	None — everything is allowed	Žádná — vše je povoleno
 scroll speed	Normal	Normální
 	Normal page	Normální stránka
@@ -1628,14 +1678,17 @@ animation effects	On	Zapnuto
 	One {f} file per page, named after the document.	Jeden soubor {f} na stránku, pojmenovaný podle dokumentu.
 	One-time code (OTP)	Jednorázový kód (OTP)
 	Only allow this if you trust the source document.	Povolte tuto akci pouze v případě, že důvěřujete zdrojovému dokumentu.
+	Only certificates with RSA keys can be recipients.	Příjemci mohou být jen certifikáty s klíči RSA.
 	Only change the colour of black text or line art	Změnit jen barvu černého textu a čar
 	Only checked properties will change. Mixed means the selected fields have different values.	Změní se pouze zaškrtnuté vlastnosti. „Různé hodnoty“ znamená, že vybraná pole mají odlišné hodnoty.
+	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Oříznou se pouze zřetelné hrany papíru. Nerozlišitelné bílé okraje zůstanou zachovány.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Pokračujte, jen pokud tomuto dokumentu důvěřujete. Adresa může nést informace z dokumentu, například to, co jste zadali do jeho formuláře.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Odesílejte pouze tehdy, pokud tomuto dokumentu a cíli důvěřujete. GET vloží hodnoty formuláře do adresy URL.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Odesílejte jen tehdy, pokud tomuto dokumentu a cíli důvěřujete. Celý PDF opustí tento počítač.
 	Only send if you trust this document and destination. The form values leave this computer.	Odesílejte pouze tehdy, pokud tomuto dokumentu a cíli důvěřujete. Hodnoty formuláře opustí tento počítač.
 	Only the document's owner can change its security (open it with the permissions password)	Zabezpečení může změnit jen vlastník dokumentu (otevřete ho heslem oprávnění)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Mění se jen obsah stránek: odkazy, komentáře, formulářová pole a záložky na původních stránkách zůstanou.
+	Only the recipients can open the document, each with the private key of their own certificate.	Dokument mohou otevřít jen příjemci, každý soukromým klíčem svého certifikátu.
 	Opacity:	Neprůhlednost:
 	Open a document first	Nejdřív otevřete dokument
 	Open a PDF ({key})	Otevřít PDF ({key})
@@ -1669,6 +1722,7 @@ animation effects	On	Zapnuto
 	Opened from a detached CAdES signature — read-only.	Otevřeno z odděleného podpisu CAdES — pouze pro čtení.
 	Opened with	Otevřeno pomocí
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Otevřeno, ale nastavení zabezpečení nedovoluje slučování. Zadejte heslo oprávnění.
+	Opening documents	Otevírání dokumentů
 	Opening the browser's print dialog…	Otevírá se dialog tisku prohlížeče…
 	Opening {name}…	Otevírá se {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Otevře předvolby ovladače tiskárny. Ukládají se pro každý tisk z tohoto počítače; počet kopií, oboustranný tisk, stupně šedi a papír zvolené zde platí dál.
@@ -1702,6 +1756,8 @@ animation effects	On	Zapnuto
 	Other elements that require alternate text	Ostatní prvky, které vyžadují alternativní text
 	Other options	Další možnosti
 	Other provider (CSC API)	Jiný poskytovatel (CSC API)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Zůstávají jiné podpisy, proto se kopie ukládá jako aktualizace podepsaného souboru: odstraněný podpis zůstane v dřívější revizi, odkud ho lze obnovit.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Zůstávají jiné podpisy, takže odstraněný podpis je stále v dřívější revizi souboru; zbylé podpisy znovu ověřte.
 	Outdent	Zmenšit odsazení
 	Outline colour:	Barva obrysu:
 	Outline over page	Obrysy přes stránku
@@ -1742,6 +1798,7 @@ animation effects	On	Zapnuto
 	Page {n} of {total}	Stránka {n} z {total}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Stránka {pages} se po přidání pozadí změnila, proto její vlastní bílá výplň zůstává vypnutá. Na bílém papíře vypadá stejně.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Stránka {pages} má vlastní bílou výplň, která by zakryla pozadí. Nahradit ji
+	Page {p}	Stránka {p}
 	Page {p} doesn't tab in structure order	Stránka {p} nepřechází tabulátorem v pořadí struktury
 	Page {p} of {n}	Stránka {p} z {n}
 	Page {p}: {n} untagged content item	Stránka {p}: neoznačkované položky obsahu: {n}
@@ -1943,6 +2000,7 @@ certificate	Public key	Veřejný klíč
 	Reason: 	Důvod: 
 	Recent colours	Nedávné barvy
 	Recent files to keep	Recent files to keep
+	Recipients	Příjemci
 	Recognize scanned text automatically	Automaticky rozpoznávat naskenovaný text
 	Recognize Text	Rozpoznat text
 	Recognize text	Rozpoznat text
@@ -1990,6 +2048,7 @@ certificate	Public key	Veřejný klíč
 	Remove "{name}" from this list? The certificate stays with the signing service.	Odebrat „{name}“ z tohoto seznamu? Certifikát zůstane u podpisové služby.
 	Remove "{name}" from this list? The file itself is not deleted.	Odebrat „{name}“ z tohoto seznamu? Samotný soubor se nesmaže.
 	Remove all links	Odebrat všechny odkazy
+	Remove and Save As…	Odstranit a uložit jako…
 	Remove background	Odebrat pozadí
 	Remove checkmark	Odebrat zaškrtnutí
 	Remove Crop	Odebrat oříznutí
@@ -2005,6 +2064,10 @@ certificate	Public key	Veřejný klíč
 	Remove redaction marks	Odebrat značky začernění
 	Remove saved {what}	Odebrat uložené: {what}
 	Remove security	Odebrat zabezpečení
+	Remove Signature	Odstranit podpis
+	Remove signature	Odstranit podpis
+	Remove signature…	Odstranit podpis…
+	Remove the signature {name}	Odstranit podpis {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Odebrat tento koncový tag z pořadí čtení a jeho přímý obsah označit jako artefakt
 	Remove unreferenced named destinations	Odebrat nepoužívané pojmenované cíle
 	Remove unused objects and merge identical ones	Odebrat nepoužívané objekty a sloučit shodné
@@ -2018,9 +2081,14 @@ certificate	Public key	Veřejný klíč
 	Remove {standard} identification	Odebrat identifikaci {standard}
 	Removed 1 hidden item. Save to remove them from the file.	Odebrána 1 skrytá položka. Uložením ji odstraníte ze souboru.
 	Removed 1 link	Odebrán 1 odkaz
+	Removed the signature {field} and kept its empty field	Podpis {field} byl odstraněn a jeho prázdné pole zůstalo
+	Removed the signature {field} with its field	Podpis {field} byl odstraněn i s polem
+	Removed the visual signature on page {p}	Vizuální podpis na stránce {p} byl odstraněn
 	Removed {n} hidden items. Save to remove them from the file.	Odebráno skrytých položek: {n}. Uložením je odstraníte ze souboru.
 	Removed {n} links	Odebrané odkazy: {n}
 	Removing the background puts the page's own backdrop back.	Odebráním pozadí se vrátí vlastní bílá výplň stránky.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	Odstranění tohoto podpisu změní dokument a zneplatní tento podpis ve výsledné verzi. Může ovlivnit ostatní podpisy a certifikace. Původní soubor zůstane beze změny.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	Odstranění tohoto podpisu změní dokument a zneplatní tento podpis ve výsledné verzi. Původní soubor zůstane beze změny.
 	Removing white margins… page {d} of {t}	Odstraňování bílých okrajů… stránka {d} z {t}
 	Rename bookmark	Přejmenovat záložku
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Vykreslování: hayro (zaváděcí) · UI: egui · Ikony: Lucide (ISC) · Písma: Inter, JetBrains Mono, Dancing Script (OFL)
@@ -2074,6 +2142,7 @@ certificate	Public key	Veřejný klíč
 	Resume reading	Pokračovat ve čtení
 	Retain existing	Ponechat stávající
 	Retry	Zkusit znovu
+	Return to document	Zpět k dokumentu
 	Rev. {rev}: Certified by an unknown signer	Rev. {rev}: Certifikováno – neznámý podepisující
 	Rev. {rev}: Certified by {name}	Rev. {rev}: Certifikováno – {name}
 	Rev. {rev}: Signed by an unknown signer	Rev. {rev}: Podepsáno – neznámý podepisující
@@ -2129,6 +2198,8 @@ certificate	Public key	Veřejný klíč
 	Running action… file {d} of {t}	Probíhá akce… soubor {d} z {t}
 	Runtime	Prostředí
 calendar weekday	Sa	So
+	Safety margin (pt)	Ochranný okraj (b.)
+	Same as interface	Stejný jako rozhraní
 	Same as interface ({language})	Stejný jako rozhraní ({language})
 	Sanitize	Vyčistit
 	Sanitize document	Vyčistit dokument
@@ -2145,6 +2216,7 @@ calendar weekday	Sa	So
 	Save as PDF/A-3b	Uložit jako PDF/A-3b
 	Save as PDF/UA	Uložit jako PDF/UA
 	Save as PDF/X	Uložit jako PDF/X
+	Save as template	Uložit jako šablonu
 	Save as to cloud	Uložit jako do cloudu
 	Save as to cloud…	Uložit jako do cloudu…
 	Save as {level}	Uložit jako {level}
@@ -2166,6 +2238,7 @@ calendar weekday	Sa	So
 	Save the spreadsheet	Uložit tabulku
 	Save these pages as one PDF	Uložit tyto stránky jako jedno PDF
 	Save this document to a folder first	Nejprve tento dokument uložte do složky
+	Saved	Uloženo
 	Saved in the shared folder	Uloženo ve sdílené složce
 	Saved measurements	Uložená měření
 	Saved measurements.	Měření uložena.
@@ -2174,13 +2247,17 @@ calendar weekday	Sa	So
 	Saved {place}: {before} → {after} (not smaller){detail}	Uloženo {place}: {before} → {after} (není menší){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Uloženo {place}: {before} → {after} (o {pct} % menší){detail}
 	Saved, but reopening failed: {e}	Uloženo, ale opětovné otevření selhalo: {e}
+	Saves document	Uloží dokument
 	Saving… {pct}%	Ukládá se… {pct} %
 	Scale corner {n}	Změnit měřítko z rohu {n}
 	Scale object	Změnit měřítko objektu
 	Scale relative to target page	Měřítko vzhledem k cílové stránce
 	Scan	Skenovat
 	Scan & OCR	Sken a OCR
+	Scan and text recognition	Skenování a rozpoznávání textu
+	Scan correction	Oprava skenu
 	Scan next page	Skenovat další stránku
+	Scan processing cancelled	Zpracování skenů zrušeno
 	Scanned pages need OCR. Reading order follows extracted page text.	Naskenované stránky vyžadují OCR. Pořadí čtení odpovídá textu získanému ze stránky.
 	Scanned text detected	Byl zjištěn naskenovaný text
 	Scanner	Skener
@@ -2211,6 +2288,7 @@ calendar weekday	Sa	So
 	Search tools and commands	Hledat nástroje a příkazy
 	Search tools and commands…	Hledat nástroje a příkazy…
 	Search tools…	Hledat nástroje…
+	Searchable Image	Prohledávatelný obrázek
 	Searchable Image (Exact)	Prohledávatelný obraz (přesný)
 	Searching…	Hledání…
 	Searching… {s} of {p} pages	Hledání… stránka {s} z {p}
@@ -2363,6 +2441,7 @@ key	Shift	Shift
 	Signatures	Podpisy
 	Signatures and seals are not carried over or checked.	Podpisy a pečeti se nepřenášejí ani neověřují.
 	Signatures panel	Panel podpisů
+	Signed after this signature, so what they signed includes it: {names}.	Podpisy přidané po tomto podpisu, jejichž podepsaný obsah ho zahrnuje: {names}.
 	Signed and all signatures are valid.	Podepsáno a všechny podpisy jsou platné.
 	Signed and saved to {path}	Podepsáno a uloženo do {path}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Podepsal {signer} dne {time}; obsah neodpovídá podepsanému; důvěryhodnost podepisujícího nebyla ověřena.
@@ -2413,6 +2492,11 @@ key	Space	Mezerník
 	Space Audit	Analýza využití místa
 	Spacing between copies	Mezera mezi kopiemi
 	Speed:	Rychlost:
+	Spelling checks stay on this device.	Kontrola pravopisu probíhá na tomto zařízení.
+	Spelling dictionary unavailable	Pravopisný slovník není dostupný
+	Spelling language	Jazyk kontroly pravopisu
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	Pravopisné značky nemění dokument. Návrhy zobrazíte kliknutím pravým tlačítkem na podtržené slovo.
+	Spelling suggestions	Pravopisné návrhy
 	Split document	Rozdělit dokument
 	Split document…	Rozdělit dokument…
 	Split into files…	Rozdělit na soubory…
@@ -2436,6 +2520,8 @@ action wizard	Start	Spustit
 	Sticky note	Rychlá poznámka
 	Still rendering — this page is unusually complex…	Stále se vykresluje – tato stránka je neobvykle složitá…
 	Stop reading	Zastavit čtení
+	Straighten scanned page	Narovnat naskenovanou stránku
+	Straighten skewed scans	Narovnat šikmé skeny
 	Strength: {s}	Síla: {s}
 	Strikethrough	Přeškrtnutí
 	Strikethrough text	Přeškrtnout text
@@ -2451,11 +2537,13 @@ certificate	Subject	Subjekt
 	Submit PDF document	Odeslat dokument PDF
 	Submit XFDF data	Odeslat data XFDF
 	Success	Hotovo
+	Suggest edits	Navrhnout úpravy
 	sum (+)	součet (+)
 	Summarize	Shrnout
 	Summarize comments	Shrnout komentáře
 	Summarize Options	Možnosti souhrnu
 	Summarize with AI	Shrnout pomocí AI
+	Swap width and height	Prohodit šířku a výšku
 	Switch light / dark theme	Přepnout světlý / tmavý motiv
 	Switch page theme	Přepnout motiv stránky
 	Switch to List view to change the pages it takes.	Stránky, které se ze souboru použijí, změníte v zobrazení seznamu.
@@ -2566,6 +2654,7 @@ calendar weekday	Th	Čt
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Dokument se otevře bez hesla; toto heslo je potřeba ke změně omezení. Použije se při uložení.
 	The document was changed in another window. Check your text, then apply it again.	Dokument byl změněn v jiném okně. Zkontrolujte svůj text a použijte ho znovu.
 	The document was closed before it could be saved.	Dokument byl zavřen dříve, než mohl být uložen.
+	The document will no longer be certified.	Dokument přestane být certifikovaný.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Informace o odvolání vložené v dokumentu ukazují, že certifikát podepisující osoby nebyl odvolán.
 	The document's security settings don't allow copying text and images	Nastavení zabezpečení dokumentu nedovoluje kopírovat text a obrázky
 	The document's security settings don't allow filling in form fields	Nastavení zabezpečení dokumentu nedovoluje vyplňovat formulářová pole
@@ -2578,6 +2667,7 @@ calendar weekday	Th	Čt
 	The field properties could not be changed.	Vlastnosti polí nelze změnit.
 	The field properties dialog is no longer open.	Dialogové okno vlastností polí už není otevřené.
 	The field {name} no longer exists.	Pole {name} už neexistuje.
+	The fields this signature locked ({names}) can be changed again.	Pole, která tento podpis uzamykal ({names}), bude možné znovu měnit.
 	the first heading is an H{n}; headings should not skip levels	první nadpis je H{n}; nadpisy by neměly přeskakovat úrovně
 	The font must include Latin letters and numbers for interface controls.	Písmo musí obsahovat latinská písmena a číslice pro ovládací prvky rozhraní.
 	The font {} isn't embedded	Písmo {} není vložené
@@ -2601,10 +2691,12 @@ calendar weekday	Th	Čt
 	The metadata doesn't identify the file as {}	Metadata neoznačují soubor jako {}
 	The module's tokens hold no digital ID PdfCraft can sign with.	Tokeny modulu neobsahují žádné digitální ID, kterým může PdfCraft podepisovat.
 	the name is not a plain file name	název není prostý název souboru
+	The new file has no signature left and no earlier revision holding it.	Nový soubor už neobsahuje žádný podpis ani dřívější revizi, která by ho uchovávala.
 	The newest {n} of {total} PDFs	Nejnovější soubory PDF: {n} z {total}
 	The objects are already aligned.	Objekty jsou již zarovnány.
 	The operation failed.	Operace selhala.
 	The order saved in the PDF needs tidying	Pořadí uložené v PDF je potřeba uklidit
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Ostatní podpisy ({names}) budou hlásit, že se dokument po jejich podepsání změnil. Znovu je ověřte: nic nezaručuje, že zůstanou platné.
 	The page has changed; select the image again	Stránka se změnila; vyberte obrázek znovu
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Stránky byly extrahovány, ale neodstraněny, protože se dokument změnil, zatímco jste vybírali složku.
 	the password is incorrect	heslo je nesprávné
@@ -2624,6 +2716,7 @@ calendar weekday	Th	Čt
 	The release has ambiguous packages. Choose a package on the official release page.	Vydání obsahuje nejednoznačné balíčky. Vyberte balíček na oficiální stránce vydání.
 	The release is not a published stable update. Try again later.	Toto vydání není zveřejněná stabilní aktualizace. Zkuste to později.
 	The replacement file doesn't have that many pages.	Náhradní soubor nemá tolik stránek.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Omezení platí pro příjemce bez „Všechna oprávnění“. Použije se při uložení.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	řádky jsou příliš nízké: zvětšete výšku oblasti nebo použijte méně řádků či menší mezeru mezi řádky
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	Hodnota podpisu RSA nemá délku modulu klíče (úvodní nulové bajty chybí nebo přebývají); přesto byla načtena.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	DigestInfo podpisu RSA nemá parametr NULL (starší podepisovací programy jej tak zapisují); přesto byl načten.
@@ -2646,7 +2739,9 @@ calendar weekday	Th	Čt
 	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	Podpis je kódován v BER (neurčité délky) místo DER; byl načten benevolentně.
 	The signature uses the legacy adbe.x509.rsa_sha1 format.	Podpis používá zastaralý formát adbe.x509.rsa_sha1.
 	The signature value does not match the signer's certificate: the signature is corrupt.	Hodnota podpisu neodpovídá certifikátu podepisující osoby: podpis je poškozený.
+	The signature was not removed: {e}	Podpis nebyl odstraněn: {e}
 	The signature will be invisible.	Podpis bude neviditelný.
+	The signature {names} locks this field.	Podpis {names} uzamyká toto pole.
 	The signature's byte range does not exclude exactly its contents.	Rozsah bajtů podpisu nevynechává přesně jeho obsah.
 	The signature's byte range does not match the file.	Rozsah bajtů podpisu neodpovídá souboru.
 	The signature's signed attributes have no content type, which CMS requires; it was read anyway.	Podepsané atributy podpisu neobsahují typ obsahu, který CMS vyžaduje; přesto byl podpis načten.
@@ -2713,6 +2808,7 @@ calendar weekday	Th	Čt
 	This compatibility level supports only plain ASCII passwords.	Tato úroveň kompatibility podporuje jen hesla z prostých znaků ASCII.
 	This dialog shows the details of a certificate and its chain.	Toto dialogové okno zobrazuje podrobnosti certifikátu a jeho řetězce.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Tento dokument žádá o otevření v režimu celé obrazovky: stránka vyplní obrazovku a nic jiného se nezobrazí. Stisknutím Esc jej kdykoli opustíte.
+	This document can't be changed: {names}	Tento dokument nelze změnit: {names}
 	This document can't be checked: it couldn't be read for editing	Tento dokument nelze zkontrolovat: nepodařilo se ho načíst pro úpravy
 	This document contains {n} interactive form fields.	Tento dokument obsahuje interaktivní formulářová pole (počet: {n}).
 	This document does not allow adding form fields	Tento dokument neumožňuje přidávat formulářová pole
@@ -2726,6 +2822,7 @@ calendar weekday	Th	Čt
 	This document has no layers.	Tento dokument nemá žádné vrstvy.
 	This document has no pages.	Tento dokument nemá žádné stránky.
 	This document has no restrictions to lift	Tento dokument nemá žádná omezení ke zrušení
+	This document has no signature that can be removed.	Tento dokument nemá žádný podpis, který by šel odstranit.
 	This document has no signatures.	Tento dokument nemá žádné podpisy.
 	This document has no tagged figures.	Tento dokument nemá žádné označkované obrázky.
 	This document has no XMP metadata.	Tento dokument nemá metadata XMP.
@@ -2758,6 +2855,7 @@ calendar weekday	Th	Čt
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	Tuto instalaci spravuje balíček RPM. Aktualizujte PdfCraft ve správci softwaru.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Toto je dynamický formulář XFA, který PdfCraft zatím neumí zobrazit. Vidíte zástupnou stránku souboru.
 	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	Jde o jednorázové stažení z GitHubu. Poté rozpoznávání funguje offline. Vaše PDF zůstávají v tomto zařízení.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	Jde o obrázek podpisu, ne o digitální podpis: odstraní se jen značka na stránce. Původní soubor zůstane beze změny.
 	This is the first PDF in its folder	Toto je první PDF ve složce
 	This is the last PDF in its folder	Toto je poslední PDF ve složce
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Toto je poslední pokus před zablokováním PIN tokenu. Nesprávný PIN jej může trvale zablokovat.
@@ -2772,6 +2870,7 @@ calendar weekday	Th	Čt
 	This point could not be moved. Try a smaller move.	Tento bod se nepodařilo přesunout. Zkuste menší posun.
 	This printer offers no settings of its own.	Tato tiskárna nenabízí žádné vlastní nastavení.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Ovladač této tiskárny nepřijímá nastavení oboustranného tisku z jiných programů, proto platí jeho vlastní nastavení. Změňte ho ve Vlastnosti…
+	this signature can't be removed on its own	tento podpis nelze odstranit samostatně
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Tento podpis používá klíč RSA kratší než 2048 bitů, který už se pro podpisy nepovažuje za dostatečně silný. Ověření stále projde, ale nelze se na něj spoléhat.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Tento podpis používá RIPEMD-160, zastaralý 160bitový hashovací algoritmus, který se už pro podpisy nedoporučuje. Podpis se stále ověří, ale nelze na něj spoléhat.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Tento podpis používá SHA-1, slabý hashovací algoritmus, u kterého byly prokázány kolize. Stále se ověří, protože jej používá mnoho dokumentů podepsaných před lety, ale nelze na něj spoléhat.
@@ -2824,6 +2923,7 @@ signature pad	Type	Napsat
 	Type text	Napsat text
 	Type the web address.	Zadejte webovou adresu.
 	Type your {what}.	Napište {what}.
+	Uncertain orientations are left unchanged. Deskew fits the full image inside the page.	Nejistá orientace zůstane beze změny. Narovnání zachová celý obrázek uvnitř stránky.
 	Unchecked	Nezaškrtnuto
 	Unchecked reads	Neověřená čtení
 	Underline	Podtržení
@@ -2831,6 +2931,7 @@ signature pad	Type	Napsat
 	Undid {label}	Vráceno zpět: {label}
 	Unit	Jednotka
 	Unknown author	Neznámý autor
+	unknown signer	neznámý podepisující
 	Unlock comment	Odemknout komentář
 	Unlock {name}	Odemknout {name}
 	Unlock {n} files	Odemknout soubory ({n})
@@ -2843,6 +2944,7 @@ signature pad	Type	Napsat
 	Unpin {folder}	Odepnout {folder}
 	Unpinned {tool} from Home	{tool} odepnuto z úvodní stránky
 	Unplaced	Neumístěno
+	Unsaved changes to this document are saved in the new file too.	Neuložené změny tohoto dokumentu se uloží také do nového souboru.
 	Unsigned signature field	Nepodepsané podpisové pole
 	Unsigned signature field: {name}	Nepodepsané podpisové pole: {name}
 	Unsupported measurements	Nepodporovaná měření
@@ -2890,6 +2992,9 @@ certificate	Valid to	Platný do
 	Validate	Ověření
 	Validate all	Ověřit vše
 	Validate all signatures	Ověřit všechny podpisy
+	validated: invalid	ověření: neplatný
+	validated: valid	ověření: platný
+	validated: validity unknown	ověření: platnost neznámá
 	Validity ends	Konec platnosti
 certificate	Validity ends	Konec platnosti
 	Validity starts	Začátek platnosti
@@ -2914,6 +3019,8 @@ certificate	Version	Verze
 	Viewport rectangle in page points (x, y, width, height)	Obdélník výřezu v bodech stránky (x, y, šířka, výška)
 	Visible Rectangle	Viditelný obdélník
 	Visual	Vizuální
+	Visual initials (Fill & Sign, not digital)	Vizuální iniciály (Vyplnit a podepsat, ne digitální)
+	Visual signature (Fill & Sign, not digital)	Vizuální podpis (Vyplnit a podepsat, ne digitální)
 	Voice and Speech	Hlas a řeč
 	Voice:	Hlas:
 	Volume:	Hlasitost:
@@ -2952,6 +3059,7 @@ document scrollbar width	Wide	Široký
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Prohlížíte si revizi {rev} dokumentu „{from}“. Je to snímek: změny zde neovlivní originál.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Prohlížíte si podepsanou verzi dokumentu „{from}“ (revize {rev}). Je to snímek: změny zde neovlivní originál.
 	You can pin up to {n} folders. Unpin one first.	Připnout lze nejvýše {n} složek. Nejdříve některou odepněte.
+	You choose where the new version is saved. Continue?	O umístění nové verze rozhodnete vy. Pokračovat?
 	You have version {c}. Download the new version from its release page.	Máte verzi {c}. Novou verzi si stáhněte z její stránky s vydáním.
 	Your name	Vaše jméno
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy nebo yy rok · m nebo mm měsíc · mmm nebo mmmm název měsíce · d nebo dd den · ddd nebo dddd den v týdnu. H, h, M, s a t jsou písmena času a samostatně je použít nelze: chcete-li písmeno zobrazit tak, jak je, napište před něj {escape}.
@@ -3000,7 +3108,10 @@ document scrollbar width	Wide	Široký
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} (složka {dir})
 	{names} and {last}	{names} a {last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} certifikuje tento dokument bez povolení komentářů a tuto změnu ohlásí.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} certifikuje tento dokument a odstranění podpisu není změna, kterou jeho certifikace povoluje.
 	{name} (default)	{name} (výchozí)
+	{name} (you)	{name} (vy)
 	{name} can't be combined: {why}	{name} nelze sloučit: {why}
 	{name} has no action	{name} nemá žádnou akci
 	{name} is read-only	{name} je jen pro čtení
@@ -3009,6 +3120,7 @@ document scrollbar width	Wide	Široký
 	{name} — unsaved changes	{name} — neuložené změny
 	{name}: choosing images arrives on the web with file pickers for images	{name}: výběr obrázků přijde na web s výběrem obrázkových souborů
 	{name}: the {other} action isn't supported yet	{name}: akce {other} zatím není podporována
+	{name}_unsigned.pdf	{name}_bez_podpisu.pdf
 @plural	{n} byte|{n} bytes	{n} bajt|{n} bajty|{n} bajtů
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} výpočet nyní používá nový název.|{n} výpočty nyní používají nový název.|{n} výpočtů nyní používá nový název.
 @plural	{n} comment|{n} comments	{n} komentář|{n} komentáře|{n} komentářů
@@ -3057,6 +3169,7 @@ document scrollbar width	Wide	Široký
 	{verb} Background	{verb} pozadí
 	{verb} Header and Footer	{verb} záhlaví a zápatí
 	{verb} Watermark	{verb} vodoznak
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. Soubor {file} byl uložen a ověřen: znovu se otevře se všemi stránkami. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	Pokus o otevření adresy, kterou PdfCraft neotevře ({who} v tomto dokumentu): {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	Pokus o otevření adresy, kterou PdfCraft neotevře ({who} v tomto dokumentu): {e}. Z dokumentů se otevírají jen webové (http, https) a e-mailové (mailto) odkazy.
 	{who} in this document wants to open this address in your browser:	{who} v tomto dokumentu chce ve vašem prohlížeči otevřít tuto adresu:
@@ -3070,6 +3183,7 @@ document scrollbar width	Wide	Široký
 	— (protection is applied when you save)	— (ochrana se použije při uložení)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	Soubor „{name}“ se na disku změnil po otevření nebo posledním uložení. Uložení nyní nahradí tuto novější verzi touto.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	Dokument „{name}“ má bezpečnostní omezení. Pro jejich zrušení zadejte heslo oprávnění.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	Soubor „{name}“ je šifrovaný pro konkrétní osoby. Vyberte své digitální ID a zadejte jeho heslo pro otevření.
 	“{name}” is protected. Enter a password to open it.	Soubor „{name}“ je chráněný. Zadejte heslo pro jeho otevření.
 	… and {n} more	… a další ({n})
 	…or paste the raw text here; # headings, - bullets	…nebo sem vložte zdrojový text; # nadpisy, - odrážky

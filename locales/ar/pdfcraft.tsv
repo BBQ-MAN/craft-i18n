@@ -36,8 +36,11 @@
 	4 x 6 in label (101.6 x 152.4 mm)	ملصق 4 × 6 بوصة (101.6 × 152.4 مم)
 	9 digit, A letter, O letter or digit, X any character	9 رقم، A حرف، O حرف أو رقم، X أي محرف
 	; 1 page already had text	؛ صفحة واحدة كان فيها نص بالفعل
+	; 1 page skipped	; تم تخطي صفحة واحدة
+	; corrected {n} pages	; تم تصحيح {n} صفحات
 	; failed: {list}	؛ فشل: {list}
 	; {n} pages already had text	؛ {n} صفحات كان فيها نص بالفعل
+	; {n} pages skipped	; تم تخطي {n} صفحات
 	? of {n}	? من {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} طلبات سحب، {commits} إيداعات، +{added} / −{deleted} أسطر (Δ {delta})، +{bin_added} / −{bin_deleted} أصول ثنائية، {first} – {last}
 	`{command}` {when}	`{command}` {when}
@@ -48,6 +51,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	علامة مائية قطرية CONFIDENTIAL على كل صفحة.
 	a document must keep at least one page	يجب أن يحتفظ المستند بصفحة واحدة على الأقل
 	A document needs at least one page: copy instead	المستند يحتاج إلى صفحة واحدة على الأقل: استخدم النسخ بدلًا من ذلك
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	يشمل الختم الزمني للمستند الملف كله وليس توقيعًا لأحد، لذا لا يمكن إزالته وحده.
 	a field named {name} already exists	يوجد حقل باسم {name} بالفعل
 	A font isn't embedded	أحد الخطوط غير مدمج
 	A form field has additional actions	حقل نموذج له إجراءات إضافية
@@ -58,6 +62,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	ملف PNG أو SVG. يُقرأ من هذا المكان في كل مرة يبدأ فيها PdfCraft.
 	A script	سكربت
 	A selected field has no widget on any page, so the fields can't be edited together.	أحد الحقول المحددة ليس له عنصر واجهة في أي صفحة، لذا لا يمكن تحرير الحقول معًا.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	التوقيع الذي يكون جزءًا من محتوى الصفحة، كما في صفحة ممسوحة ضوئيًا، ليس حقلًا ولا تعليقًا توضيحيًا، لذا لا يمكن إزالته وحده، ولا يمسح PdfCraft أجزاءً من الصفحة لإخفائه. لإزالته، احجب تلك المنطقة (حجب)، أو إذا كان التوقيع صورة مستقلة فاحذف الصورة باستخدام تحرير ملف PDF.
 	A stream refers to an external file	تدفق يشير إلى ملف خارجي
 	A stream uses LZW compression	تدفق يستخدم ضغط LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	الملخص يصف غرض الجدول وتخطيطه. أضف سمة Summary لكل جدول.
@@ -105,12 +110,14 @@
 	Add an Action	إضافة إجراء
 	Add an image field	إضافة حقل صورة
 	Add arrow	إضافة سهم
+	Add at least one recipient.	أضف مستلمًا واحدًا على الأقل.
 	Add at least two files	أضف ملفين على الأقل
 	Add background	إضافة خلفية
 	Add background…	إضافة خلفية…
 	Add Bates numbering…	إضافة ترقيم بيتس…
 	Add bookmark	إضافة إشارة مرجعية
 	Add callout	إضافة وسيلة شرح
+	Add certificate file…	إضافة ملف شهادة…
 	Add checkmark	إضافة علامة صح
 	Add circle	إضافة دائرة
 	Add cloud	إضافة سحابة
@@ -150,6 +157,7 @@
 	Add rectangle	إضافة مستطيل
 	Add redaction mark	إضافة علامة حجب
 	Add search index	إضافة فهرس بحث
+	Add searchable text	إضافة نص قابل للبحث
 	Add signature	إضافة توقيع
 	Add squiggly underline	إضافة تسطير متعرج
 	Add stamp	إضافة ختم
@@ -163,11 +171,13 @@
 	Add the files to combine	أضف الملفات المراد دمجها
 	Add the PDFs to combine	أضف ملفات PDF للدمج
 	Add the steps this action runs, in order.	أضف الخطوات التي ينفذها هذا الإجراء بالترتيب.
+	Add to dictionary	إضافة إلى القاموس
 	Add to Trusted Certificates	إضافة إلى الشهادات الموثوقة
 	Add to trusted certificates	إضافة إلى الشهادات الموثوقة
 	Add underline	إضافة تسطير
 	Add watermark	إضافة علامة مائية
 	Add watermark…	إضافة علامة مائية…
+	Add your digital ID	إضافة معرّفك الرقمي
 	Add {what}	إضافة {what}
 	Added 1 comment	أُضيف تعليق واحد
 	Added more than once	أُضيف أكثر من مرة
@@ -183,6 +193,7 @@
 	Advanced Options {chevron}	خيارات متقدمة {chevron}
 	Advanced search…	بحث متقدم…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	بعد النقر على توقيع، أدخل رمز OTT من تطبيق mSzafir في نافذة CloudSigner ووافق على التوقيع في التطبيق. عند تفعيل رمز OTT الدائم في CloudSigner، يُطلب الرمز مرة واحدة فقط كل بضع دقائق.
+	AI Assistant	مساعد الذكاء الاصطناعي
 	AI assistant	مساعد الذكاء الاصطناعي
 	AI chat isn't available in the web build; use the desktop app or CLI.	دردشة الذكاء الاصطناعي غير متوفرة في إصدار الويب؛ استخدم تطبيق سطح المكتب أو CLI.
 	Algorithm	الخوارزمية
@@ -203,6 +214,7 @@
 	All page content is tagged	كل محتوى الصفحة موسوم
 	All pages in document	كل صفحات المستند
 	All pages in range	كل الصفحات في النطاق
+	All permissions	كل الأذونات
 	All tools	كل الأدوات
 	Allow	السماح
 	Allow Rich Text Formatting	السماح بتنسيق النص الغني
@@ -293,6 +305,7 @@ calendar date	August	أغسطس
 	Auto-detect	اكتشاف تلقائي
 	Auto-rotate pages	تدوير الصفحات تلقائيًا
 	Auto-size text to fit redaction region	تحجيم النص تلقائيًا ليلائم منطقة الحجب
+	Automatically rotate sideways and upside-down pages	تدوير الصفحات الجانبية والمقلوبة تلقائيًا
 	Automatically tag PDF	وسم PDF تلقائيًا
 	Available version: {v}	الإصدار المتاح: {v}
 	average	المتوسط
@@ -363,10 +376,13 @@ certificate	Basic constraints	القيود الأساسية
 	Center vertically	توسيط عمودي
 	Center window on screen	توسيط النافذة على الشاشة
 	Centre	توسيط
+	Certificate	شهادة
 	Certificate authority	سلطة تصديق
+	Certificate encryption will be applied when you save	سيُطبَّق التشفير بالشهادة عند الحفظ
 	Certificate Signing	توقيع الشهادات
 	Certificate Viewer	عارض الشهادات
 	Certificates	الشهادات
+	Certification signature (level {p})	توقيع تصديق (المستوى {p})
 	Certified by {by}	مصدَّق من {by}
 	Certify	تصديق
 	Certify (invisible signature)	تصديق (توقيع غير مرئي)
@@ -411,6 +427,7 @@ certificate	Basic constraints	القيود الأساسية
 	Check for accessibility…	فحص إمكانية الوصول…
 	Check for updates…	التحقق من التحديثات…
 	Check spelling	تدقيق إملائي
+	Check spelling while typing	التدقيق الإملائي أثناء الكتابة
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	تحقق من أن الوسوم تُقرأ بالترتيب الذي يتبعه القارئ المبصر. استخدم أداة ترتيب القراءة أو لوحة الوسوم لتصحيحه.
 	Check the pages	تحقق من الصفحات
 	Check the pages of {name}: {why}	تحقق من صفحات {name}: {why}
@@ -422,6 +439,7 @@ certificate	Basic constraints	القيود الأساسية
 	Checking Options ({on} of 32 in all categories)	خيارات الفحص ({on} من 32 في كل الفئات)
 	Checking pages…	جارٍ فحص الصفحات…
 	Checkmark	علامة صح
+	Choose a digital ID file	اختر ملف معرّف رقمي
 	Choose a digital ID.	اختر معرّفاً رقمياً.
 	Choose a file…	اختيار ملف…
 	Choose a folder for the exported files	اختر مجلدًا للملفات المصدَّرة
@@ -435,8 +453,10 @@ certificate	Basic constraints	القيود الأساسية
 	Choose a logo	اختر شعارًا
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	اختر صورة PNG أو JPEG (حتى 4 MiB). الشفافية تُحفظ.
 	Choose a provider.	اختر مزوّدًا.
+	Choose a signature that can be removed.	اختر توقيعًا يمكن إزالته.
 	Choose a stamp, then click on the page to place it.	اختر ختمًا، ثم انقر على الصفحة لوضعه.
 	Choose an image	اختر صورة
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	اختر ملفًا آخر: يبقى الأصل كما هو، ويُحفظ الإصدار الذي لا يحتوي على التوقيع بجانبه.
 	Choose font…	اختيار خط…
 	Choose images	اختر صورًا
 	Choose image…	اختيار صورة…
@@ -446,11 +466,13 @@ certificate	Basic constraints	القيود الأساسية
 	Choose reference…	اختيار المرجع…
 	Choose the digital ID that you want to use for signing:	اختر المعرّف الرقمي الذي تريد استخدامه للتوقيع:
 	Choose the module's library file.	اختر ملف مكتبة الوحدة.
+	Choose the signature to remove:	اختر التوقيع المراد إزالته:
 	Choose where to save the signed file. The service signs it once you have.	اختر مكان حفظ الملف الموقّع. ستوقّعه الخدمة بمجرد أن تختار.
 	Clean Up	تنظيف
 	Clean-up	تنظيف
 	Clear all	مسح الكل
 	Clear form	مسح النموذج
+	Clear personal dictionary	مسح القاموس الشخصي
 	Clear redaction marks	مسح علامات الحجب
 	Clear search	مسح البحث
 	Clear selection / close find	مسح التحديد / إغلاق البحث
@@ -555,6 +577,8 @@ certificate	Basic constraints	القيود الأساسية
 	Copyright status	حالة حقوق النشر
 	Copyrighted	محمي بحقوق النشر
 	Correct recognized text	تصحيح النص المتعرَّف عليه
+	Correct scans	تصحيح الصفحات الممسوحة
+	Corrected scan	مسح مصحح
 	Could not copy the selection because text could not be read on every page	تعذر نسخ التحديد لأنه تعذرت قراءة النص في كل الصفحات
 	Could not mark the selection because text could not be read on every page	تعذر وضع علامة على التحديد لأنه تعذرت قراءة النص في كل الصفحات
 	Could not save: {e}	تعذّر الحفظ: {e}
@@ -563,6 +587,7 @@ certificate	Basic constraints	القيود الأساسية
 	Couldn't copy the image: {e}	تعذّر نسخ الصورة: {e}
 	Couldn't create a PDF: {e}	تعذّر إنشاء ملف PDF: {e}
 	Couldn't download {name}: {e}	تعذّر تنزيل {name}: {e}
+	Couldn't encrypt: {e}	تعذّر التشفير: {e}
 	Couldn't extract pages: {e}	تعذّر استخراج الصفحات: {e}
 	Couldn't extract the original PDF: {e}	تعذّر استخراج ملف PDF الأصلي: {e}
 	Couldn't fit the visible content: {e}	تعذّرت ملاءمة المحتوى المرئي: {e}
@@ -636,6 +661,7 @@ certificate	Basic constraints	القيود الأساسية
 	Crop Image	قص الصورة
 	Crop page	اقتصاص الصفحة
 	Crop pages	اقتصاص الصفحات
+	Crop scanner borders to the paper edge	قص حواف المسح حتى حافة الورق
 key	Ctrl	Ctrl
 	Currency symbol:	رمز العملة:
 	Current document	المستند الحالي
@@ -644,6 +670,7 @@ key	Ctrl	Ctrl
 	Current page — type a page number or label (such as iv) and press Enter	الصفحة الحالية — اكتب رقم صفحة أو تسميتها (مثل iv) ثم اضغط Enter
 	Cursor coordinates	إحداثيات المؤشر
 	Custom font	خط مخصص
+	Custom page…	صفحة مخصصة…
 	Custom role	دور مخصص
 	Custom scale:	مقياس مخصص:
 	Custom size	حجم مخصص
@@ -720,6 +747,7 @@ key	Delete	Delete
 	Diagnostic details	تفاصيل التشخيص
 	Digital ID	معرّف رقمي
 	Digital ID password	كلمة مرور المعرّف الرقمي
+	Digital ID required	مطلوب معرّف رقمي
 	Digital Signature	توقيع رقمي
 	Digital signature	توقيع رقمي
 	Digital Signature Properties	خصائص التوقيع الرقمي
@@ -771,7 +799,9 @@ key	Delete	Delete
 	document security store	مخزن أمان المستند
 	document structure	بنية المستند
 	Document structure provides a logical reading order	بنية المستند توفر ترتيب قراءة منطقيًا
+	Document timestamp	ختم زمني للمستند
 	Document title is showing in title bar	عنوان المستند يظهر في شريط العنوان
+	Documents	المستندات
 	Documents and view	المستندات والعرض
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	المستندات التي تزيد على 20 صفحة تحتاج إلى إشارات مرجعية للتنقل. أضف إشارات مرجعية للأقسام الرئيسية.
 	Does not match what was signed	لا يطابق ما تم توقيعه
@@ -824,6 +854,9 @@ key	Delete	Delete
 	Duplicate field	تكرار الحقل
 	Duplicate page	تكرار الصفحة
 	Duplicate pages	تكرار الصفحات
+	Duplicate pages with new field names	تكرار الصفحات بأسماء حقول جديدة
+	Duplicate pages — 1 field renamed	تكرار الصفحات — تمت إعادة تسمية حقل واحد
+	Duplicate pages — fields renamed	تكرار الصفحات — تمت إعادة تسمية حقول
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	نموذج XFA ديناميكي رُتِّب من قالبه: {pages}، {fields}.
 	Dynamic zoom	تكبير ديناميكي
 	E-Sign	توقيع إلكتروني
@@ -864,7 +897,11 @@ comment menu	Edit	تحرير
 	Enabled	ممكّن
 	Encipher Only	التشفير فقط
 	Encrypt	تشفير
+	Encrypt for recipient	تشفير لمستلم
+	Encrypt for recipients	تشفير لمستلمين
+	Encrypt with Certificate	تشفير بشهادة
 	Encrypt with certificate	تشفير بشهادة
+	Encrypt with certificate…	تشفير بشهادة…
 	Encryption	التشفير
 key	End	End
 	End entity	كيان نهائي
@@ -906,12 +943,14 @@ key	Esc	Esc
 	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	تعتمد الاستثناءات على وسوم PDF. تبقى الجداول والتعليمات البرمجية غير الموسومة ضمن العدد. يستبعد خيار الصور النص غير المرئي أيضًا.
 	Execute a menu item	تنفيذ عنصر قائمة
 	Executive	Executive
+	Exit	خروج
 	Expand all	توسيع الكل
 	Expand all bookmarks	توسيع كل الإشارات المرجعية
 	Expand all pages	توسيع كل الصفحات
 	Expand all tools	توسيع كل الأدوات
 	Expand tag	توسيع الوسم
 	Expand top-level bookmarks	توسيع إشارات المستوى الأعلى
+	Expires {date}	تنتهي في {date}
 	Explain	شرح
 	Export & Convert	تصدير وتحويل
 	Export a PDF	تصدير ملف PDF
@@ -972,6 +1011,7 @@ calendar date	February	فبراير
 	Field properties…	خصائص الحقل…
 	Field value is in range:	قيمة الحقل ضمن النطاق:
 	Field value is not validated	لا يُتحقق من قيمة الحقل
+	Field: {field}	الحقل: {field}
 	Field: {field} on page {p}	الحقل: {field} في الصفحة {p}
 	Fields to reset (comma-separated; empty: all)	الحقول المراد إعادة ضبطها (مفصولة بفواصل؛ فارغ: الكل)
 	Figure {i} of {n}{page}	الشكل {i} من {n}{page}
@@ -983,6 +1023,7 @@ calendar date	February	فبراير
 	File size	حجم الملف
 @id	file.word_count	عدد الكلمات…
 	Filename	اسم الملف
+	Files	الملفات
 	Files are combined from top to bottom. Leave Pages empty to take every page.	تُدمج الملفات من الأعلى إلى الأسفل. اترك «الصفحات» فارغًا لأخذ كل الصفحات.
 	Files are combined in the order shown. Drag them to change it.	تُدمج الملفات بالترتيب المعروض. اسحبها لتغيير الترتيب.
 	Files are combined in this order. Leave Pages empty to take every page.	تُدمج الملفات بهذا الترتيب. اترك «الصفحات» فارغًا لأخذ كل الصفحات.
@@ -1093,6 +1134,7 @@ calendar date	February	فبراير
 calendar weekday	Fr	جمعة
 	From a PDF page or an image	من صفحة PDF أو صورة
 	From colour	من لون
+	From template	من قالب
 	From {file}	من {file}
 	From:	من:
 	Front side only	الوجه الأمامي فقط
@@ -1101,6 +1143,7 @@ calendar weekday	Fr	جمعة
 	Generate styled PDF	إنشاء PDF منسّق
 	Geospatial location	الموقع الجغرافي
 	Get help, share feedback and follow development on Discord.	احصل على المساعدة وشارك ملاحظاتك وتابع التطوير على Discord.
+	Glass	زجاجي
 	Go	انتقال
 	Go to a page view	الانتقال إلى عرض صفحة
 	Go to page {p}	الانتقال إلى الصفحة {p}
@@ -1112,6 +1155,7 @@ calendar weekday	Fr	جمعة
 	Grayscale Images	الصور الرمادية
 	Green on black	أخضر على أسود
 	Greyscale	تدرج رمادي
+	Group select	تحديد مجموعة
 	H / Space (hold)	H / مسافة (مع الضغط المستمر)
 	Hand	يد
 	Hand (H)	يد (H)
@@ -1210,6 +1254,7 @@ key	Home	Home
 	Integrity	السلامة
 	Intended usage	الاستخدام المقصود
 certificate	Intended usage	الاستخدام المقصود
+	Interface and appearance	الواجهة والمظهر
 	Interface font	خط الواجهة
 	Interface size	حجم الواجهة
 	Intersections	التقاطعات
@@ -1229,6 +1274,7 @@ certificate	Issued by	صادر من
 certificate	Issued to	مُصدر إلى
 	Issuer	المُصدِر
 certificate	Issuer	المُصدر
+	it was still in the document afterwards, so the change was undone	بقي في المستند بعد إزالته، لذا تم التراجع عن التغيير
 	Item List	قائمة العناصر
 	Item:	العنصر:
 	Items marked Ready work today.	العناصر الموسومة بـ«جاهز» تعمل اليوم.
@@ -1248,6 +1294,7 @@ calendar date	January	يناير
 calendar date	July	يوليو
 	June	يونيو
 calendar date	June	يونيو
+	Keep an empty signature field to sign again	الإبقاء على حقل توقيع فارغ للتوقيع من جديد
 	Keep source fonts	الاحتفاظ بالخطوط الأصلية
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	إبقاء شريط عنوان Windows فوق شريط الألسنة. عند إيقافه، يصبح شريط الألسنة هو شريط العنوان، مع أزرار النافذة على يمينه؛ وتحتاج تخطيطات الانطباق (Snap Layouts) على زر التكبير إلى شريط عنوان Windows.
 	Keep tool selected	إبقاء الأداة محددة
@@ -1263,12 +1310,14 @@ certificate	Key usage	استخدام المفتاح
 	Landscape and Portrait Pages	الصفحات الأفقية والعمودية
 	Landscape Pages	الصفحات الأفقية
 	Landscape pages	الصفحات الأفقية
+	Language and spelling	اللغة والتدقيق الإملائي
 	Larger pages	صفحات أكبر
 	Larger text	نص أكبر
 	Larger thumbnails	تكبير الصور المصغرة
 	Last page	الصفحة الأخيرة
 	Later in calculation order	أبعد في ترتيب الحساب
 	Later in tab order	أبعد في ترتيب التنقل
+	Latin (accented)	اللاتينية (بعلامات تشكيل)
 	Layer options	خيارات الطبقات
 	Layers panel	لوحة الطبقات
 	Layers Panel and Page	لوحة الطبقات والصفحة
@@ -1432,6 +1481,7 @@ calendar weekday	Mo	إثنين
 	N or {row} is the row number, {col} the column number, {seq} the cell number. With none of them, the row number goes last.	N أو {row} هو رقم الصف، و{col} رقم العمود، و{seq} رقم الخلية. إذا لم يوجد أي منها، يُضاف رقم الصف في النهاية.
 	Name on new comments	الاسم على التعليقات الجديدة
 	Named Destinations	الوجهات المسماة
+	Navigation	التنقل
 	Navigation links	روابط التنقل
 	Navigation links are not repetitive	روابط التنقل غير متكررة
 	Navigation tab	تبويب التنقل
@@ -1515,6 +1565,7 @@ calendar weekday	Mo	إثنين
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	لم يُعثر على أي طابعة. تحقّق من أن الطابعة مثبّتة وأن خدمة التخزين المؤقت للطباعة تعمل، ثم افتح «طباعة» مرة أخرى.
 	No problems found: the document conforms to {level}.	لم يُعثر على مشكلات: المستند مطابق لـ {level}.
 	No raw file yet	لا يوجد ملف خام بعد
+	No recipients yet.	لا يوجد مستلمون بعد.
 	No reference yet	لا يوجد مرجع بعد
 	No release notes were provided.	لم تُرفق ملاحظات الإصدار.
 	No security	بلا أمان
@@ -1524,6 +1575,7 @@ calendar weekday	Mo	إثنين
 	No size estimate: {e}	لا يوجد تقدير للحجم: {e}
 	No status has been set.	لم تُعيَّن أي حالة.
 	no such document	لا يوجد مستند كهذا
+	No suggestions	لا توجد اقتراحات
 	no summary	لا ملخصاً
 	No tools match your search.	لا توجد أدوات تطابق بحثك.
 	No unlinked web addresses were found in the text	لم يُعثر في النص على عناوين ويب غير مرتبطة
@@ -1533,7 +1585,10 @@ calendar weekday	Mo	إثنين
 	none	لا شيء
 	None (prefix only)	لا شيء (البادئة فقط)
 	None found	لم يُعثر على شيء
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	لا أحد من المستلمين هو أحد معرّفاتك الرقمية: لن تتمكن من فتح المستند المحفوظ.
+	None of these signatures can be removed.	لا يمكن إزالة أي من هذه التوقيعات.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	لا يمكن تحويل أي من هذه الملفات إلى PDF؛ استخدم ملفات PDF أو صورًا أو ملفات .txt
+	None of your digital IDs can open this document.	لا يمكن لأي من معرّفاتك الرقمية فتح هذا المستند.
 	None — everything is allowed	لا شيء — كل شيء مسموح
 scroll speed	Normal	عادية
 	Normal page	صفحة عادية
@@ -1586,13 +1641,16 @@ animation effects	On	مفعّلة
 	One {f} file per page, named after the document.	ملف {f} واحد لكل صفحة، يُسمى باسم المستند.
 	One-time code (OTP)	رمز لمرة واحدة (OTP)
 	Only allow this if you trust the source document.	لا تسمح بذلك إلا إذا كنت تثق بالمستند المصدر.
+	Only certificates with RSA keys can be recipients.	لا يمكن أن يكون المستلمون إلا شهادات بمفاتيح RSA.
 	Only change the colour of black text or line art	تغيير لون النص الأسود والخطوط فقط
 	Only checked properties will change. Mixed means the selected fields have different values.	الخصائص المؤشَّر عليها فقط ستتغير. «متباين» يعني أن للحقول المحددة قيمًا مختلفة.
+	Only clear paper edges are cropped. Indistinguishable white borders are kept.	يتم قص حواف الورق الواضحة فقط. تُحفظ الحواف البيضاء التي لا يمكن تمييزها.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	تابع فقط إن كنت تثق بهذا المستند. العنوان قد يحمل معلومات من المستند، مثل ما كتبته في نموذجه.
 	Only send if you trust this document and destination. GET puts form values in the URL.	أرسل فقط إذا كنت تثق بهذا المستند والوجهة. يضع GET قيم النموذج في عنوان URL.
 	Only send if you trust this document and destination. The form values leave this computer.	أرسل فقط إذا كنت تثق بهذا المستند والوجهة. ستغادر قيم النموذج هذا الكمبيوتر.
 	Only the document's owner can change its security (open it with the permissions password)	مالك المستند وحده يستطيع تغيير أمانه (افتحه بكلمة مرور الأذونات)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	يتغير محتوى الصفحة فقط: الروابط والتعليقات وحقول النموذج والإشارات المرجعية على الصفحات الأصلية تبقى.
+	Only the recipients can open the document, each with the private key of their own certificate.	لا يمكن فتح المستند إلا للمستلمين، كلٌّ بالمفتاح الخاص لشهادته.
 	Open a document first	افتح مستندًا أولًا
 	Open a PDF ({key})	فتح ملف PDF ({key})
 	Open a PDF (⌘O)	فتح PDF‏ (⌘O)
@@ -1624,6 +1682,7 @@ animation effects	On	مفعّلة
 	Opened from a detached CAdES signature — read-only.	فُتح من توقيع CAdES منفصل — للقراءة فقط.
 	Opened with	فُتح بـ
 	Opened, but its security settings don't allow combining. Enter the permissions password.	فُتح، لكن إعدادات أمانه لا تسمح بالدمج. أدخل كلمة مرور الأذونات.
+	Opening documents	فتح المستندات
 	Opening the browser's print dialog…	جارٍ فتح مربع حوار الطباعة في المتصفح…
 	Opening {name}…	جارٍ فتح {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	يفتح تفضيلات تعريف الطابعة. تُحفظ لكل طباعة من هذا الحاسوب؛ عدد النسخ والطباعة على الوجهين وتدرج الرمادي والورق المختارة هنا تبقى سارية.
@@ -1657,6 +1716,8 @@ animation effects	On	مفعّلة
 	Other elements that require alternate text	عناصر أخرى تتطلب نصًا بديلًا
 	Other options	خيارات أخرى
 	Other provider (CSC API)	مزوّد آخر (CSC API)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	لا تزال هناك توقيعات أخرى، لذا تُحفظ النسخة كتحديث للملف الموقّع: يبقى التوقيع المُزال في المراجعة السابقة ويمكن استعادته منها.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	لا تزال هناك توقيعات أخرى، لذا يبقى التوقيع المُزال في المراجعة السابقة للملف؛ تحقق من التوقيعات المتبقية من جديد.
 	Outdent	إزاحة للخارج
 	Outline colour:	لون الحد الخارجي:
 	Outline over page	المخطط التفصيلي فوق الصفحة
@@ -1696,6 +1757,7 @@ animation effects	On	مفعّلة
 	Page {n} of {total}	صفحة {n} من {total}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	تغيّرت الصفحة {pages} بعد إضافة الخلفية، لذا تبقى تعبئتها البيضاء الخاصة متوقفة. تبدو كما هي على الورق الأبيض.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	الصفحة {pages} ترسم تعبئة بيضاء خاصة بها ستُخفي الخلفية. استبدالها
+	Page {p}	الصفحة {p}
 	Page {p} doesn't tab in structure order	الصفحة {p} لا تترتب بترتيب البنية
 	Page {p} of {n}	الصفحة {p} من {n}
 	Page {p}: {n} untagged content item	الصفحة {p}: {n} عنصر محتوى غير موسوم
@@ -1894,6 +1956,7 @@ certificate	Public key	المفتاح العام
 	Reason: 	السبب: 
 	Recent colours	الألوان الأخيرة
 	Recent files to keep	Recent files to keep
+	Recipients	المستلمون
 	Recognize scanned text automatically	التعرّف تلقائيًا على النص الممسوح ضوئيًا
 	Recognize Text	التعرف على النص
 	Recognize text	التعرف على النص
@@ -1941,6 +2004,7 @@ certificate	Public key	المفتاح العام
 	Remove "{name}" from this list? The certificate stays with the signing service.	إزالة "{name}" من هذه القائمة؟ تبقى الشهادة لدى خدمة التوقيع.
 	Remove "{name}" from this list? The file itself is not deleted.	إزالة "{name}" من هذه القائمة؟ لن يُحذف الملف نفسه.
 	Remove all links	إزالة كل الروابط
+	Remove and Save As…	إزالة وحفظ باسم…
 	Remove background	إزالة الخلفية
 	Remove checkmark	إزالة علامة الصح
 	Remove Crop	إزالة القص
@@ -1956,6 +2020,10 @@ certificate	Public key	المفتاح العام
 	Remove redaction marks	إزالة علامات الحجب
 	Remove saved {what}	إزالة {what} المحفوظ
 	Remove security	إزالة الحماية
+	Remove Signature	إزالة التوقيع
+	Remove signature	إزالة التوقيع
+	Remove signature…	إزالة التوقيع…
+	Remove the signature {name}	إزالة التوقيع {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	أزل هذه العلامة من ترتيب القراءة وضع علامة على محتواها المباشر كعنصر زخرفي
 	Remove unreferenced named destinations	إزالة الوجهات المسماة غير المشار إليها
 	Remove unused objects and merge identical ones	إزالة الكائنات غير المستخدمة ودمج المتطابقة
@@ -1968,9 +2036,14 @@ certificate	Public key	المفتاح العام
 	Remove {n} pages	إزالة {n} صفحات
 	Removed 1 hidden item. Save to remove them from the file.	أُزيل عنصر مخفي واحد. احفظ لإزالته من الملف.
 	Removed 1 link	تمت إزالة رابط واحد
+	Removed the signature {field} and kept its empty field	تمت إزالة التوقيع {field} مع الإبقاء على حقله فارغًا
+	Removed the signature {field} with its field	تمت إزالة التوقيع {field} مع حقله
+	Removed the visual signature on page {p}	تمت إزالة التوقيع المرئي في الصفحة {p}
 	Removed {n} hidden items. Save to remove them from the file.	أُزيل {n} عناصر مخفية. احفظ لإزالتها من الملف.
 	Removed {n} links	الروابط التي أزيلت: {n}
 	Removing the background puts the page's own backdrop back.	إزالة الخلفية تعيد التعبئة البيضاء الخاصة بالصفحة.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	تؤدي إزالة هذا التوقيع إلى تغيير المستند وإبطال هذا التوقيع في الإصدار الناتج. وقد يؤثر ذلك في التوقيعات والتصديقات الأخرى. يبقى الملف الأصلي كما هو.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	تؤدي إزالة هذا التوقيع إلى تغيير المستند وإبطال هذا التوقيع في الإصدار الناتج. يبقى الملف الأصلي كما هو.
 	Removing white margins… page {d} of {t}	جارٍ إزالة الهوامش البيضاء… الصفحة {d} من {t}
 	Rename bookmark	إعادة تسمية الإشارة المرجعية
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	العرض: hayro (مبدئي) · الواجهة: egui · الأيقونات: Lucide (ISC) · الخطوط: Inter, JetBrains Mono, Dancing Script (OFL)
@@ -2027,6 +2100,7 @@ certificate	Public key	المفتاح العام
 	Resume reading	استئناف القراءة
 	Retain existing	الإبقاء على الحالي
 	Retry	إعادة المحاولة
+	Return to document	العودة إلى المستند
 	Rev. {rev}: Certified by an unknown signer	المراجعة {rev}: معتمد من موقّع مجهول
 	Rev. {rev}: Certified by {name}	المراجعة {rev}: معتمد من {name}
 	Rev. {rev}: Signed by an unknown signer	المراجعة {rev}: موقع من موقع مجهول
@@ -2081,6 +2155,8 @@ certificate	Public key	المفتاح العام
 	Running action… file {d} of {t}	جارٍ تشغيل الإجراء… الملف {d} من {t}
 	Runtime	المشغّل
 calendar weekday	Sa	سبت
+	Safety margin (pt)	هامش الأمان (نقطة)
+	Same as interface	مثل الواجهة
 	Same as interface ({language})	مثل الواجهة ({language})
 	Sanitize	تنظيف
 	Sanitize document	تنظيف المستند
@@ -2097,6 +2173,7 @@ calendar weekday	Sa	سبت
 	Save as PDF/A-3b	حفظ بصيغة PDF/A-3b
 	Save as PDF/UA	حفظ بصيغة PDF/UA
 	Save as PDF/X	حفظ بصيغة PDF/X
+	Save as template	حفظ كقالب
 	Save as to cloud	حفظ باسم إلى السحابة
 	Save as to cloud…	حفظ باسم إلى السحابة…
 	Save as {level}	حفظ كـ {level}
@@ -2118,6 +2195,7 @@ calendar weekday	Sa	سبت
 	Save the spreadsheet	حفظ جدول البيانات
 	Save these pages as one PDF	حفظ هذه الصفحات كملف PDF واحد
 	Save this document to a folder first	احفظ هذا المستند في مجلد أولًا
+	Saved	محفوظ
 	Saved in the shared folder	محفوظ في المجلد المشترك
 	Saved measurements	القياسات المحفوظة
 	Saved measurements.	حُفظت القياسات.
@@ -2126,6 +2204,7 @@ calendar weekday	Sa	سبت
 	Saved {place}: {before} → {after} (not smaller){detail}	تم الحفظ {place}: {before} → {after} (ليس أصغر){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	تم الحفظ {place}: {before} → {after} (أصغر بنسبة {pct}%){detail}
 	Saved, but reopening failed: {e}	تم الحفظ، لكن فشلت إعادة الفتح: {e}
+	Saves document	يحفظ المستند
 	Saving… {pct}%	يحفظ… {pct}%
 	Scale	المقياس
 	Scale corner {n}	تحجيم الزاوية {n}
@@ -2133,6 +2212,9 @@ calendar weekday	Sa	سبت
 	Scale relative to target page	المقياس نسبةً إلى الصفحة الهدف
 	Scan	مسح ضوئي
 	Scan & OCR	مسح ضوئي وتعرف على النص
+	Scan and text recognition	المسح والتعرف على النص
+	Scan correction	تصحيح المسح
+	Scan processing cancelled	أُلغيت معالجة المسح
 	Scanned pages need OCR. Reading order follows extracted page text.	تحتاج الصفحات الممسوحة إلى OCR. يتبع ترتيب القراءة النص المستخرج من الصفحة.
 	Scanned text detected	تم اكتشاف نص ممسوح ضوئيًا
 	Screen / email	الشاشة / البريد الإلكتروني
@@ -2158,6 +2240,7 @@ calendar weekday	Sa	سبت
 	Search tools and commands	البحث في الأدوات والأوامر
 	Search tools and commands…	البحث في الأدوات والأوامر…
 	Search tools…	البحث عن الأدوات…
+	Searchable Image	صورة قابلة للبحث
 	Searchable Image (Exact)	صورة قابلة للبحث (مطابقة)
 	Searching… {s} of {p} pages	جارٍ البحث… {s} من {p} صفحات
 	Searching… {s}/{p}	جارٍ البحث… {s}/{p}
@@ -2310,6 +2393,7 @@ key	Shift	Shift
 	Signatures	التوقيعات
 	Signatures and seals are not carried over or checked.	لا يتم نقل التوقيعات والأختام ولا التحقق منها.
 	Signatures panel	لوحة التوقيعات
+	Signed after this signature, so what they signed includes it: {names}.	توقيعات أُضيفت بعد هذا التوقيع ويشمله محتواها الموقّع: {names}.
 	Signed and all signatures are valid.	موقَّع وكل التوقيعات صالحة.
 	Signed and saved to {path}	تم التوقيع والحفظ في {path}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	وقّعه {signer} في {time}؛ المحتوى لا يطابق ما تم توقيعه؛ لم يُتحقق من ثقة الموقِّع.
@@ -2361,6 +2445,11 @@ key	Space	مسافة
 	Spacing between copies	المسافة بين النسخ
 	Speed	السرعة
 	Speed:	السرعة:
+	Spelling checks stay on this device.	يتم التدقيق الإملائي على هذا الجهاز.
+	Spelling dictionary unavailable	قاموس التدقيق الإملائي غير متاح
+	Spelling language	لغة التدقيق الإملائي
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	علامات التدقيق لا تغير المستند. انقر بزر الفأرة الأيمن على كلمة مسطرة لعرض الاقتراحات.
+	Spelling suggestions	اقتراحات إملائية
 	Split document	تقسيم المستند
 	Split document…	تقسيم المستند…
 	Split into files…	تقسيم إلى ملفات…
@@ -2385,6 +2474,8 @@ action wizard	Start	بدء
 	Still rendering — this page is unusually complex…	لا يزال العرض جارياً — هذه الصفحة معقدة على غير العادة…
 	Stop	إيقاف
 	Stop reading	إيقاف القراءة
+	Straighten scanned page	تسوية الصفحة الممسوحة ضوئيًا
+	Straighten skewed scans	تقويم الصفحات الممسوحة المائلة
 	Strength: {s}	القوة: {s}
 	Strikethrough text	شطب النص
 	String length (0 turns it off)	طول الخيط (0 لإيقافه)
@@ -2397,12 +2488,14 @@ certificate	Subject	صاحب الشهادة
 	Submit a form with GET	إرسال نموذج (GET)
 	Subscript	نص منخفض
 	Success	نجاح
+	Suggest edits	اقتراح تعديلات
 	sum (+)	المجموع (+)
 	Summarize	تلخيص
 	Summarize comments	تلخيص التعليقات
 	Summarize Options	خيارات التلخيص
 	Summarize with AI	التلخيص بالذكاء الاصطناعي
 	Superscript	نص مرتفع
+	Swap width and height	تبديل العرض والارتفاع
 	Switch light / dark theme	التبديل بين السمة الفاتحة والداكنة
 	Switch page theme	تبديل سمة الصفحة
 	Switch to List view to change the pages it takes.	انتقل إلى عرض القائمة لتغيير الصفحات التي يأخذها.
@@ -2510,6 +2603,7 @@ calendar weekday	Th	خميس
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	يُفتح المستند دون كلمة مرور؛ كلمة المرور هذه لازمة لتغيير القيود. تُطبَّق عند الحفظ.
 	The document was changed in another window. Check your text, then apply it again.	تم تغيير المستند في نافذة أخرى. راجع نصك ثم طبّقه مرة أخرى.
 	The document was closed before it could be saved.	أُغلق المستند قبل أن يمكن حفظه.
+	The document will no longer be certified.	لن يعود المستند مصدّقًا.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	تُظهر معلومات الإلغاء المدمجة في المستند أن شهادة الموقّع لم تُلغَ.
 	The document's security settings don't allow copying text and images	إعدادات أمان المستند لا تسمح بنسخ النصوص والصور
 	The document's security settings don't allow filling in form fields	إعدادات أمان المستند لا تسمح بتعبئة حقول النموذج
@@ -2522,6 +2616,7 @@ calendar weekday	Th	خميس
 	The field properties could not be changed.	تعذّر تغيير خصائص الحقل.
 	The field properties dialog is no longer open.	حوار خصائص الحقل لم يعد مفتوحًا.
 	The field {name} no longer exists.	الحقل {name} لم يعد موجودًا.
+	The fields this signature locked ({names}) can be changed again.	ستصبح الحقول التي كان هذا التوقيع يقفلها ({names}) قابلة للتغيير من جديد.
 	the first heading is an H{n}; headings should not skip levels	العنوان الأول H{n}؛ لا ينبغي للعناوين تخطي المستويات
 	The font must include Latin letters and numbers for interface controls.	يجب أن يتضمن الخط حروفًا لاتينية وأرقامًا لعناصر التحكم في الواجهة.
 	The font {} isn't embedded	الخط {} غير مدمج
@@ -2545,10 +2640,12 @@ calendar weekday	Th	خميس
 	The metadata doesn't identify the file as {}	البيانات الوصفية لا تحدد الملف كـ {}
 	The module's tokens hold no digital ID PdfCraft can sign with.	لا تحتوي رموز هذه الوحدة على معرّف رقمي يمكن لـ PdfCraft التوقيع به.
 	the name is not a plain file name	الاسم ليس اسم ملف بسيطًا
+	The new file has no signature left and no earlier revision holding it.	لم يعد في الملف الجديد أي توقيع ولا مراجعة سابقة تحتفظ به.
 	The newest {n} of {total} PDFs	أحدث {n} من أصل {total} ملف PDF
 	The objects are already aligned.	العناصر محاذاة بالفعل.
 	The operation failed.	فشلت العملية.
 	The order saved in the PDF needs tidying	يحتاج الترتيب المحفوظ في PDF إلى تنظيم
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	ستُبلغ التوقيعات الأخرى ({names}) بأن المستند تغيّر بعد توقيعها. تحقق منها من جديد: لا شيء يضمن بقاءها صالحة.
 	The page has changed; select the image again	تغيّرت الصفحة؛ حدّد الصورة مرة أخرى
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	استُخرجت الصفحات لكنها لم تُحذف، لأن المستند تغيّر أثناء اختيارك مجلدًا.
 	the password is incorrect	كلمة المرور غير صحيحة
@@ -2567,6 +2664,7 @@ calendar weekday	Th	خميس
 	The release has ambiguous packages. Choose a package on the official release page.	تتضمن هذه النسخة حزمًا غير واضحة. اختر حزمة من صفحة الإصدار الرسمية.
 	The release is not a published stable update. Try again later.	هذا الإصدار ليس تحديثًا مستقرًا منشورًا. حاول مجددًا لاحقًا.
 	The replacement file doesn't have that many pages.	الملف البديل لا يحتوي على هذا العدد من الصفحات.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	تنطبق القيود على المستلمين الذين ليس لديهم «كل الأذونات». يُطبَّق عند الحفظ.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	الصفوف قصيرة جدًا: اجعل المنطقة أطول، أو استخدم صفوفًا أقل أو مسافة أقل بين الصفوف
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	قيمة توقيع RSA ليست بطول معامل المفتاح (بايتات صفرية بادئة حُذفت أو أُضيفت)؛ قُرئ مع ذلك.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	لا يحوي DigestInfo لتوقيع RSA معلمة NULL (كذلك تكتبها الموقّعات القديمة)؛ قُرئ مع ذلك.
@@ -2589,7 +2687,9 @@ calendar weekday	Th	خميس
 	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	التوقيع مرمّز BER (أطوال غير محددة) لا DER؛ قُرئ بتساهل.
 	The signature uses the legacy adbe.x509.rsa_sha1 format.	يستخدم التوقيع تنسيق adbe.x509.rsa_sha1 القديم.
 	The signature value does not match the signer's certificate: the signature is corrupt.	قيمة التوقيع لا تطابق شهادة الموقّع: التوقيع تالف.
+	The signature was not removed: {e}	لم تتم إزالة التوقيع: {e}
 	The signature will be invisible.	سيكون التوقيع غير مرئي.
+	The signature {names} locks this field.	التوقيع {names} يقفل هذا الحقل.
 	The signature's byte range does not exclude exactly its contents.	نطاق بايتات التوقيع لا يستبعد محتوياته بالضبط.
 	The signature's byte range does not match the file.	نطاق بايتات التوقيع لا يطابق الملف.
 	The signature's timestamp token could not be verified ({}).	تعذر تثبت رمز الطابع الزمني للتوقيع ({}).
@@ -2652,6 +2752,7 @@ calendar weekday	Th	خميس
 	This compatibility level supports only plain ASCII passwords.	مستوى التوافق هذا يدعم كلمات مرور ASCII البسيطة فقط.
 	This dialog shows the details of a certificate and its chain.	يعرض هذا الحوار تفاصيل شهادة وسلسلتها.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	يطلب هذا المستند أن يُفتح في وضع ملء الشاشة: تملأ الصفحة الشاشة ولا يظهر شيء آخر. اضغط Esc في أي وقت للخروج منه.
+	This document can't be changed: {names}	لا يمكن تغيير هذا المستند: {names}
 	This document can't be checked: it couldn't be read for editing	لا يمكن فحص هذا المستند: تعذّرت قراءته للتحرير
 	This document contains {n} interactive form fields.	هذا المستند يحتوي على {n} حقول نموذج تفاعلية.
 	This document does not allow adding form fields	لا يسمح هذا المستند بإضافة حقول نموذج
@@ -2665,6 +2766,7 @@ calendar weekday	Th	خميس
 	This document has no layers.	هذا المستند لا يحتوي على طبقات.
 	This document has no pages.	هذا المستند لا يحتوي على صفحات.
 	This document has no restrictions to lift	لا توجد في هذا المستند قيود لرفعها
+	This document has no signature that can be removed.	لا يحتوي هذا المستند على توقيع يمكن إزالته.
 	This document has no signatures.	هذا المستند لا يحتوي على توقيعات.
 	This document has no tagged figures.	هذا المستند لا يحتوي على أشكال موسومة.
 	This document has no XMP metadata.	لا يحتوي هذا المستند على بيانات تعريف XMP.
@@ -2698,6 +2800,7 @@ calendar weekday	Th	خميس
 	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	هذه النسخة مثبّتة بواسطة حزمة RPM. استخدم مدير برامج النظام لتحديث PdfCraft.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	هذا نموذج XFA ديناميكي، لا يستطيع PdfCraft عرضه بعد. ما تراه هو الصفحة البديلة للملف.
 	This is a one-time download from GitHub. Afterward, form detection works offline. Your PDFs stay on this device.	هذا تنزيل لمرة واحدة من GitHub. بعد ذلك، يعمل الاكتشاف دون اتصال بالإنترنت. تبقى ملفات PDF على هذا الجهاز.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	هذه صورة توقيع وليست توقيعًا رقميًا: تُزال العلامة الموجودة على الصفحة فقط. يبقى الملف الأصلي كما هو.
 	This is the first PDF in its folder	هذا أول ملف PDF في مجلده
 	This is the last PDF in its folder	هذا آخر ملف PDF في مجلده
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	هذه المحاولة الأخيرة قبل قفل رقم التعريف الشخصي للرمز. قد يؤدي إدخال رقم خاطئ هنا إلى قفله نهائيًا.
@@ -2712,6 +2815,7 @@ calendar weekday	Th	خميس
 	This point could not be moved. Try a smaller move.	تعذّر نقل هذه النقطة. جرّب إزاحة أصغر.
 	This printer offers no settings of its own.	هذه الطابعة لا تقدم إعدادات خاصة بها.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	لا يقبل برنامج تشغيل هذه الطابعة إعدادات الطباعة على الوجهين من البرامج الأخرى، لذا يُطبَّق إعداده الخاص. غيّره من خصائص…
+	this signature can't be removed on its own	لا يمكن إزالة هذا التوقيع وحده
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	يستخدم هذا التوقيع RIPEMD-160، خوارزمية هضم قديمة بطول 160 بت لم تعد موصى بها للتواقيع. لا يزال يصح، لكن لا ينبغي الاعتماد عليه.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	يستخدم هذا التوقيع SHA-1، خوارزمية هضم ضعيفة: أُثبتت تصادمات فيها. لا يزال يصح لأن مستندات كثيرة وقّعت قبل سنوات تستخدمه، لكن لا ينبغي الاعتماد عليه.
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	لا يمكن استخدام خدمة التوقيع هذه: فهي تتطلب تسجيل الدخول عبر OAuth في متصفح، وهو ما لا يدعمه PdfCraft بعد
@@ -2765,12 +2869,14 @@ signature pad	Type	كتابة
 	Type text	اكتب نصًا
 	Type the web address.	اكتب عنوان الويب.
 	Type your {what}.	اكتب {what}.
+	Uncertain orientations are left unchanged. Deskew fits the full image inside the page.	تبقى الاتجاهات غير المؤكدة دون تغيير. يحافظ التقويم على الصورة كاملة داخل الصفحة.
 	Unchecked	غير محدد
 	Unchecked reads	قراءات غير مفحوصة
 	Underline text	تسطير النص
 	Undid {label}	تم التراجع عن {label}
 	Unit	الوحدة
 	Unknown author	مؤلف غير معروف
+	unknown signer	موقّع غير معروف
 	Unlock comment	إلغاء قفل التعليق
 	Unlock {name}	إلغاء قفل {name}
 	Unlock {n} files	إلغاء قفل {n} ملفات
@@ -2783,6 +2889,8 @@ signature pad	Type	كتابة
 	Unpin {folder}	إلغاء تثبيت {folder}
 	Unpinned {tool} from Home	تم إلغاء تثبيت {tool} من الرئيسية
 	Unplaced	غير موضوع
+	Unsaved changes	تغييرات غير محفوظة
+	Unsaved changes to this document are saved in the new file too.	تُحفظ التغييرات غير المحفوظة في هذا المستند في الملف الجديد أيضًا.
 	Unsigned signature field	حقل توقيع غير موقع
 	Unsigned signature field: {name}	حقل توقيع غير موقع: {name}
 	Unsupported measurements	قياسات غير مدعومة
@@ -2830,6 +2938,9 @@ certificate	Valid to	صالح إلى
 	Validate	التحقق
 	Validate all	التحقق من الكل
 	Validate all signatures	التحقق من كل التوقيعات
+	validated: invalid	التحقق: غير صالح
+	validated: valid	التحقق: صالح
+	validated: validity unknown	التحقق: الصلاحية غير معروفة
 	Validity ends	نهاية الصلاحية
 certificate	Validity ends	تنتهي الصلاحية
 	Validity starts	بداية الصلاحية
@@ -2854,6 +2965,8 @@ certificate	Version	الإصدار
 	Viewport rectangle in page points (x, y, width, height)	مستطيل منفذ العرض بنقاط الصفحة (x, y, العرض, الارتفاع)
 	Visible Rectangle	مستطيل مرئي
 	Visual	بصري
+	Visual initials (Fill & Sign, not digital)	أحرف أولى مرئية (تعبئة وتوقيع، ليست رقمية)
+	Visual signature (Fill & Sign, not digital)	توقيع مرئي (تعبئة وتوقيع، ليس رقميًا)
 	Voice	الصوت
 	Voice and Speech	الصوت والكلام
 	Voice:	الصوت:
@@ -2893,6 +3006,7 @@ document scrollbar width	Wide	عريض
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	أنت تعرض المراجعة {rev} من “{from}”. هذه لقطة: التغييرات هنا لن تؤثر على الأصل.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	أنت تعرض النسخة الموقعة من “{from}” (المراجعة {rev}). هذه لقطة: التغييرات هنا لن تؤثر على الأصل.
 	You can pin up to {n} folders. Unpin one first.	يمكنك تثبيت {n} مجلدات كحد أقصى. ألغِ تثبيت أحدها أولًا.
+	You choose where the new version is saved. Continue?	أنت تختار مكان حفظ الإصدار الجديد. هل تريد المتابعة؟
 	You have version {c}. Download the new version from its release page.	لديك الإصدار {c}. نزّل الإصدار الجديد من صفحة إصداره.
 	Your name	اسمك
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy أو yy السنة · m أو mm الشهر · mmm أو mmmm اسم الشهر · d أو dd اليوم · ddd أو dddd يوم الأسبوع. H و h و M و s و t أحرف الوقت ولا يمكن استخدامها وحدها: ضع {escape} قبل الحرف لإظهاره كما هو.
@@ -2940,7 +3054,10 @@ document scrollbar width	Wide	عريض
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} إلى {dir}
 	{names} and {last}	{names} و{last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} يصدّق هذا المستند دون السماح بالتعليقات، وسيُبلغ بهذا التغيير.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} يصدّق هذا المستند، وإزالة توقيع ليست تغييرًا يسمح به هذا التصديق.
 	{name} (default)	{name} (الافتراضية)
+	{name} (you)	{name} (أنت)
 	{name} can't be combined: {why}	لا يمكن دمج {name}: {why}
 	{name} has no action	{name} ليس له إجراء
 	{name} is read-only	{name} للقراءة فقط
@@ -2949,6 +3066,7 @@ document scrollbar width	Wide	عريض
 	{name} — unsaved changes	{name} — تغييرات غير محفوظة
 	{name}: choosing images arrives on the web with file pickers for images	{name}: اختيار الصور سيتوفر على الويب مع منتقيات ملفات الصور
 	{name}: the {other} action isn't supported yet	{name}: الإجراء {other} غير مدعوم بعد
+	{name}_unsigned.pdf	{name}_بدون_توقيع.pdf
 @plural	{n} byte|{n} bytes	{n} بايت|{n} بايت|{n} بايتان|{n} بايتات|{n} بايتاً|{n} بايت
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	تم تحديث {n} من العمليات الحسابية لتستخدم الاسم الجديد.|عملية حسابية واحدة ({n}) تستخدم الآن الاسم الجديد.|عمليتان حسابيتان ({n}) تستخدمان الآن الاسم الجديد.|{n} عمليات حسابية تستخدم الآن الاسم الجديد.|{n} عملية حسابية تستخدم الآن الاسم الجديد.|{n} من العمليات الحسابية تستخدم الآن الاسم الجديد.
 @plural	{n} comment|{n} comments	{n} تعليق|{n} تعليق|{n} تعليقان|{n} تعليقات|{n} تعليقاً|{n} تعليق
@@ -2996,6 +3114,7 @@ document scrollbar width	Wide	عريض
 	{verb} Background	{verb} الخلفية
 	{verb} Header and Footer	{verb} الرأس والتذييل
 	{verb} Watermark	{verb} العلامة المائية
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. تم حفظ {file} والتحقق من أنه يُفتح من جديد بكل صفحاته. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	{who} في هذا المستند حاول فتح عنوان لن يفتحه PdfCraft: {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} في هذا المستند حاول فتح عنوان لن يفتحه PdfCraft: {e}. روابط الويب (http, https) والبريد (mailto) وحدها تُفتح من المستندات.
 	{who} in this document wants to open this address in your browser:	{who} في هذا المستند يريد فتح هذا العنوان في متصفحك:
@@ -3009,6 +3128,7 @@ document scrollbar width	Wide	عريض
 	— (protection is applied when you save)	— (تُطبَّق الحماية عند الحفظ)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	تغيّر «{name}» على القرص بعد فتحه أو حفظه آخر مرة. الحفظ الآن يستبدل تلك النسخة الأحدث بهذه.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	«{name}» عليه قيود أمان. أدخل كلمة مرور الأذونات الخاصة به لرفعها.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	«{name}» مشفّر لأشخاص محددين. اختر معرّفك الرقمي وأدخل كلمة مروره لفتحه.
 	“{name}” is protected. Enter a password to open it.	«{name}» محمي. أدخل كلمة مرور لفتحه.
 	… and {n} more	… و{n} أخرى
 	…or paste the raw text here; # headings, - bullets	…أو الصق النص الخام هنا؛ # عناوين، - تعداد نقطي

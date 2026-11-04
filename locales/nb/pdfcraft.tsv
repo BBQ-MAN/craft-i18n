@@ -46,6 +46,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	Et diagonalt KONFIDENSIELT-vannmerke på hver side.
 	a document must keep at least one page	et dokument må beholde minst én side
 	A document needs at least one page: copy instead	Et dokument trenger minst én side: kopier i stedet
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Et dokumenttidsstempel dekker hele filen og er ingens signatur, så det kan ikke fjernes alene.
 	A font isn't embedded	En skrift er ikke innebygd
 	A form field has additional actions	Et skjemafelt har tilleggshandlinger
 	A link	En lenke
@@ -54,6 +55,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	En PNG- eller SVG-fil. Den leses fra dette stedet hver gang PdfCraft starter.
 	A script	Et skript
 	A selected field has no widget on any page, so the fields can't be edited together.	Et valgt felt har ingen kontroll på noen side, så feltene kan ikke redigeres sammen.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	En signatur som er en del av sideinnholdet, for eksempel på en skannet side, er verken et felt eller en merknad, så den kan ikke fjernes alene, og PdfCraft sletter ikke deler av en side for å skjule den. For å fjerne den kan du sladde området (Sladd), eller slette bildet med Rediger en PDF når signaturen er et eget bilde.
 	A stream refers to an external file	En strøm viser til en ekstern fil
 	A stream uses LZW compression	En strøm bruker LZW-komprimering
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Et sammendrag beskriver tabellens formål og oppsett. Legg til et Summary-attributt på hver tabell.
@@ -155,6 +157,7 @@
 	Add the files to combine	Legg til filene som skal slås sammen
 	Add the PDFs to combine	Legg til PDF-ene som skal slås sammen
 	Add the steps this action runs, in order.	Legg til trinnene denne handlingen kjører, i rekkefølge.
+	Add to dictionary	Legg til i ordbok
 	Add to Trusted Certificates	Legg til i klarerte sertifikater
 	Add to trusted certificates	Legg til i klarerte sertifikater
 	Add underline	Legg til understreking
@@ -173,6 +176,7 @@
 	Advanced options	Avanserte alternativer
 	Advanced Options {chevron}	Avanserte alternativer {chevron}
 	Advanced search…	Avansert søk…
+	AI Assistant	KI-assistent
 	AI assistant	AI-assistent
 	Algorithm	Algoritme
 	Align fields	Juster felt
@@ -323,6 +327,7 @@ certificate	Basic constraints	Grunnleggende begrensninger
 	Certificate Signing	Sertifikatsignering
 	Certificate Viewer	Sertifikatvisning
 	Certificates	Sertifikater
+	Certification signature (level {p})	Sertifiseringssignatur (nivå {p})
 	Certified by {by}	Sertifisert av {by}
 	Certify	Sertifiser
 	Certify (invisible signature)	Sertifiser (usynlig signatur)
@@ -365,6 +370,7 @@ certificate	Basic constraints	Grunnleggende begrensninger
 	Check for accessibility…	Sjekk tilgjengelighet…
 	Check for updates…	Se etter oppdateringer…
 	Check spelling	Stavekontroll
+	Check spelling while typing	Kontroller staving mens du skriver
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Kontroller at taggene leses i den rekkefølgen en seende leser ville brukt. Bruk verktøyet Leserekkefølge eller Tagger-panelet for å rette det.
 	Check the pages	Kontroller sidene
 	Check the pages of {name}: {why}	Kontroller sidene i {name}: {why}
@@ -387,12 +393,15 @@ certificate	Basic constraints	Grunnleggende begrensninger
 	Choose a logo	Velg en logo
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Velg et PNG- eller JPEG-bilde (opptil 4 MiB). Gjennomsiktighet bevares.
 	Choose a provider.	Velg en leverandør.
+	Choose a signature that can be removed.	Velg en signatur som kan fjernes.
 	Choose a stamp, then click on the page to place it.	Velg et stempel, og klikk deretter på siden for å plassere det.
 	Choose an image	Velg et bilde
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Velg en annen fil: originalen beholdes som den er, og versjonen uten signaturen lagres ved siden av.
 	Choose images	Velg bilder
 	Choose image…	Velg bilde…
 	Choose photo…	Velg foto…
 	Choose the digital ID that you want to use for signing:	Velg den digitale ID-en du vil signere med:
+	Choose the signature to remove:	Velg signaturen som skal fjernes:
 	Choose where to save the signed file. The service signs it once you have.	Velg hvor den signerte filen skal lagres. Tjenesten signerer den når du har valgt.
 	Clean Up	Rydd opp
 	Clean-up	Opprydding
@@ -400,6 +409,7 @@ certificate	Basic constraints	Grunnleggende begrensninger
 	Clear All	Tøm alt
 	Clear all	Tøm alt
 	Clear form	Tøm skjema
+	Clear personal dictionary	Tøm personlig ordbok
 	Clear Recent Files	Tøm nylige filer
 	Clear redaction marks	Fjern sladdemarkeringer
 	Clear search	Tøm søk
@@ -569,6 +579,7 @@ key	Ctrl	Ctrl
 	Current page only	Bare gjeldende side
 	Current page — type a page number or label (such as iv) and press Enter	Gjeldende side – skriv inn et sidetall eller en sideetikett (som iv) og trykk Enter
 	Custom font	Egendefinert skrift
+	Custom page…	Egendefinert side…
 	Custom scale:	Egendefinert skala:
 	Custom size	Egendefinert størrelse
 	Custom stamps arrive on the web with file pickers for images	Egendefinerte stempler kommer på nettet med filvelgere for bilder
@@ -681,6 +692,7 @@ key	Delete	Delete
 	document security store	dokumentets sikkerhetslager
 	document structure	dokumentstruktur
 	Document structure provides a logical reading order	Dokumentstrukturen gir en logisk leserekkefølge
+	Document timestamp	Dokumenttidsstempel
 	Document title is showing in title bar	Dokumenttittelen vises i tittellinjen
 	Documents and view	Dokumenter og visning
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Dokumenter på mer enn 20 sider trenger bokmerker for navigering. Legg til bokmerker for hovedavsnittene.
@@ -722,6 +734,9 @@ key	Delete	Delete
 	Duplicate field	Dupliser felt
 	Duplicate page	Dupliser side
 	Duplicate pages	Dupliser sider
+	Duplicate pages with new field names	Dupliser sider med nye feltnavn
+	Duplicate pages — 1 field renamed	Dupliser sider — 1 felt fikk nytt navn
+	Duplicate pages — fields renamed	Dupliser sider — felt fikk nytt navn
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Dynamisk XFA-skjema satt opp fra malen: {pages}, {fields}.
 	Dynamic zoom	Dynamisk zoom
 	E-Sign	E-signer
@@ -852,6 +867,7 @@ calendar date	February	februar
 	Field properties…	Feltegenskaper…
 	Field value is in range:	Feltverdien er i området:
 	Field value is not validated	Feltverdien valideres ikke
+	Field: {field}	Felt: {field}
 	Field: {field} on page {p}	Felt: {field} på side {p}
 	Fields to reset (comma-separated; empty: all)	Felt som skal tilbakestilles (kommaseparert; tomt: alle)
 	Figure {i} of {n}{page}	Figur {i} av {n}{page}
@@ -962,12 +978,14 @@ calendar date	February	februar
 calendar weekday	Fr	fr
 	From a PDF page or an image	Fra en PDF-side eller et bilde
 	From colour	Fra farge
+	From template	Fra mal
 	From {file}	Fra {file}
 	From:	Fra:
 	Front side only	Bare forsiden
 	Full screen mode	Fullskjermmodus
 	Geospatial location	Geografisk plassering
 	Get help, share feedback and follow development on Discord.	Få hjelp, gi tilbakemelding og følg utviklingen på Discord.
+	Glass	Glassaktig
 	Go	Gå
 	Go to a page view	Gå til en sidevisning
 	Go to page {p}	Gå til side {p}
@@ -978,6 +996,7 @@ calendar weekday	Fr	fr
 	Grayscale Images	Gråtonebilder
 	Green on black	Grønn på svart
 	Greyscale	Gråtoner
+	Group select	Gruppevalg
 	H / Space (hold)	H / Mellomrom (hold)
 	Hand (H)	Hånd (H)
 	Has JavaScript actions (run in M6)	Har JavaScript-handlinger (kjøres i M6)
@@ -1059,6 +1078,7 @@ key	Home	Home
 	Installed fonts…	Installerte skrifter…
 	Intended usage	Tiltenkt bruk
 certificate	Intended usage	Tiltenkt bruk
+	Interface and appearance	Grensesnitt og utseende
 	Interface size	Grensesnittstørrelse
 	Intersection	Snitt
 	Intersections	Skjæringspunkter
@@ -1077,6 +1097,7 @@ certificate	Issued by	Utstedt av
 certificate	Issued to	Utstedt til
 	Issuer	Utsteder
 certificate	Issuer	Utsteder
+	it was still in the document afterwards, so the change was undone	den var fortsatt i dokumentet etterpå, så endringen ble angret
 	Item List	Elementliste
 	Item:	Element:
 	Items marked Ready work today.	Elementer merket Klar fungerer i dag.
@@ -1099,6 +1120,7 @@ calendar date	July	juli
 	June	juni
 calendar date	June	juni
 	just now	nettopp
+	Keep an empty signature field to sign again	Behold et tomt signaturfelt for å signere på nytt
 	Keep source fonts	Behold kildeskrifter
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Behold Windows-tittellinjen over fanelinjen. Slått av blir fanelinjen tittellinjen, med vindusknappene til høyre; fest-oppsett (Snap Layouts) på maksimer-knappen trenger Windows-tittellinjen.
 	Keep tool selected	Behold verktøyet valgt
@@ -1114,9 +1136,11 @@ certificate	Key usage	Nøkkelbruk
 	Landscape and Portrait Pages	Liggende og stående sider
 	Landscape Pages	Liggende sider
 	Landscape pages	Liggende sider
+	Language and spelling	Språk og staving
 	Larger pages	Større sider
 	Last page	Siste side
 	Later in tab order	Senere i tabulatorrekkefølgen
+	Latin (accented)	Latin (med aksenter)
 	Layers panel	Lagpanel
 	Layers Panel and Page	Lagpanel og side
 	Layout and Magnification	Oppsett og forstørrelse
@@ -1251,6 +1275,7 @@ calendar weekday	Mo	ma
 	Multiplies the background with the page: white areas show it and text stays dark.	Multipliserer bakgrunnen med siden: hvite områder viser den, og teksten forblir mørk.
 	Name on new comments	Navn på nye kommentarer
 	Named Destinations	Navngitte mål
+	Navigation	Navigasjon
 	Navigation links	Navigasjonslenker
 	Navigation links are not repetitive	Navigasjonslenker er ikke repeterende
 	Navigation tab	Navigasjonsfane
@@ -1322,6 +1347,7 @@ calendar weekday	Mo	ma
 	No signing certificate was found on this device. Is it connected?	Fant ikke noe signeringssertifikat på denne enheten. Er den koblet til?
 	No status has been set.	Ingen status er angitt.
 	no such document	dokumentet finnes ikke
+	No suggestions	Ingen forslag
 	no summary	ikke noe sammendrag
 	No tools match your search.	Ingen verktøy samsvarer med søket.
 	No unlinked web addresses were found in the text	Fant ingen nettadresser uten lenke i teksten
@@ -1331,6 +1357,7 @@ calendar weekday	Mo	ma
 	none	ingen
 	None (prefix only)	Ingen (bare prefiks)
 	None found	Ingen funnet
+	None of these signatures can be removed.	Ingen av disse signaturene kan fjernes.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Ingen av de filene kan gjøres om til PDF; bruk PDF-er, bilder eller .txt-filer
 	None — everything is allowed	Ingen — alt er tillatt
 scroll speed	Normal	Normal
@@ -1407,6 +1434,7 @@ animation effects	On	På
 	open to see what it will include	åpne for å se hva som blir med
 	Opened with	Åpnet med
 	Opened, but its security settings don't allow combining. Enter the permissions password.	Åpnet, men sikkerhetsinnstillingene tillater ikke sammenslåing. Skriv inn tillatelsespassordet.
+	Opening documents	Åpning av dokumenter
 	Opening the browser's print dialog…	Åpner nettleserens utskriftsdialog…
 	Opening {name}…	Åpner {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Åpner innstillingene til skriverdriveren. De lagres for alle utskrifter fra denne datamaskinen; antall kopier, tosidig, gråtoner og papir valgt her gjelder fortsatt.
@@ -1436,6 +1464,8 @@ animation effects	On	På
 	Other elements alternate text	Alternativ tekst for andre elementer
 	Other elements that require alternate text	Andre elementer som krever alternativ tekst
 	Other provider (CSC API)	Annen leverandør (CSC API)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Andre signaturer gjenstår, så kopien lagres som en oppdatering av den signerte filen: den fjernede signaturen blir værende i den tidligere revisjonen, der den kan gjenopprettes.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Andre signaturer gjenstår, så den fjernede finnes fortsatt i filens tidligere revisjon; kontroller de gjenværende signaturene på nytt.
 	Outdent	Reduser innrykk
 	Outline	Disposisjon
 	Outline colour:	Kantfarge:
@@ -1475,6 +1505,7 @@ animation effects	On	På
 	Page {n} of {total}	Side {n} av {total}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	Side {pages} ble endret etter at bakgrunnen ble lagt til, så sidens egen hvite flate forblir slått av. På hvitt papir ser den lik ut.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	Side {pages} maler sin egen hvite flate, som ville skjult bakgrunnen. Erstatt den
+	Page {p}	Side {p}
 	Page {p} doesn't tab in structure order	Side {p} tabulerer ikke i strukturrekkefølge
 	Page {p} of {n}	Side {p} av {n}
 	Page {p}: {n} untagged content item	Side {p}: {n} utagget innholdselement
@@ -1673,6 +1704,7 @@ certificate	Public key	Offentlig nøkkel
 	Remove "{name}" from this list? The certificate stays with the signing service.	Fjerne «{name}» fra denne listen? Sertifikatet blir værende hos signeringstjenesten.
 	Remove "{name}" from this list? The file itself is not deleted.	Fjerne «{name}» fra denne listen? Selve filen slettes ikke.
 	Remove all links	Fjern alle lenker
+	Remove and Save As…	Fjern og lagre som…
 	Remove background	Fjern bakgrunn
 	Remove checkmark	Fjern hake
 	Remove Crop	Fjern beskjæring
@@ -1688,6 +1720,10 @@ certificate	Public key	Offentlig nøkkel
 	Remove redaction marks	Fjern sladdemerker
 	Remove saved {what}	Fjern lagret {what}
 	Remove security	Fjern sikkerhet
+	Remove Signature	Fjern signatur
+	Remove signature	Fjern signatur
+	Remove signature…	Fjern signatur…
+	Remove the signature {name}	Fjern signaturen {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Fjern denne taggen fra leserekkefølgen og merk innholdet dens som artefakt
 	Remove unreferenced named destinations	Fjern navngitte mål uten referanser
 	Remove unused objects and merge identical ones	Fjern ubrukte objekter og slå sammen identiske
@@ -1700,9 +1736,14 @@ certificate	Public key	Offentlig nøkkel
 	Remove {n} pages	Fjern {n} sider
 	Removed 1 hidden item. Save to remove them from the file.	Fjernet 1 skjult element. Lagre for å fjerne det fra filen.
 	Removed 1 link	Fjernet 1 lenke
+	Removed the signature {field} and kept its empty field	Fjernet signaturen {field} og beholdt det tomme feltet
+	Removed the signature {field} with its field	Fjernet signaturen {field} sammen med feltet
+	Removed the visual signature on page {p}	Fjernet den visuelle signaturen på side {p}
 	Removed {n} hidden items. Save to remove them from the file.	Fjernet {n} skjulte elementer. Lagre for å fjerne dem fra filen.
 	Removed {n} links	Fjernet {n} lenker
 	Removing the background puts the page's own backdrop back.	Når bakgrunnen fjernes, kommer sidens egen hvite flate tilbake.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	Å fjerne denne signaturen endrer dokumentet og gjør denne signaturen ugyldig i versjonen som blir resultatet. Det kan påvirke de andre signaturene og sertifiseringene. Originalfilen beholdes som den er.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	Å fjerne denne signaturen endrer dokumentet og gjør denne signaturen ugyldig i versjonen som blir resultatet. Originalfilen beholdes som den er.
 	Removing white margins… page {d} of {t}	Fjerner hvite marger … side {d} av {t}
 	Rename bookmark	Gi bokmerke nytt navn
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Gjengivelse: hayro (oppstart) · Grensesnitt: egui · Ikoner: Lucide (ISC) · Skrifter: Inter, JetBrains Mono, Dancing Script (OFL)
@@ -1747,6 +1788,7 @@ certificate	Public key	Offentlig nøkkel
 	Restrictions	Begrensninger
 	Restrictions lifted	Begrensninger opphevet
 	Retain existing	Behold eksisterende
+	Return to document	Tilbake til dokumentet
 	Rev. {rev}: Certified by an unknown signer	Rev. {rev}: Sertifisert av en ukjent undertegner
 	Rev. {rev}: Certified by {name}	Rev. {rev}: Sertifisert av {name}
 	Rev. {rev}: Signed by an unknown signer	Rev. {rev}: Signert av en ukjent undertegner
@@ -1797,6 +1839,7 @@ certificate	Public key	Offentlig nøkkel
 	Run JavaScript	Kjør JavaScript
 	Running action… file {d} of {t}	Kjører handling… fil {d} av {t}
 calendar weekday	Sa	lø
+	Same as interface	Samme som grensesnittet
 	Same as interface ({language})	Samme som grensesnittet ({language})
 	Sanitize	Rens
 	Sanitize document	Rens dokument
@@ -1813,6 +1856,7 @@ calendar weekday	Sa	lø
 	Save as PDF/A-3b	Lagre som PDF/A-3b
 	Save as PDF/UA	Lagre som PDF/UA
 	Save as PDF/X	Lagre som PDF/X
+	Save as template	Lagre som mal
 	Save as {level}	Lagre som {level}
 	Save as…	Lagre som…
 	Save attachment…	Lagre vedlegg…
@@ -1838,6 +1882,7 @@ calendar weekday	Sa	lø
 	Saved {place}: {before} → {after} (not smaller){detail}	Lagret {place}: {before} → {after} (ikke mindre){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Lagret {place}: {before} → {after} ({pct} % mindre){detail}
 	Saved, but reopening failed: {e}	Lagret, men gjenåpning mislyktes: {e}
+	Saves document	Lagrer dokumentet
 	Scale	Målestokk
 	Scale corner {n}	Skaler fra hjørne {n}
 	Scale object	Skaler objekt
@@ -1988,6 +2033,7 @@ key	Shift	Shift
 	Signature validity is UNKNOWN:	Signaturens gyldighet er UKJENT:
 	Signatures	Signaturer
 	Signatures panel	Signaturpanel
+	Signed after this signature, so what they signed includes it: {names}.	Signert etter denne signaturen, så det de signerte inkluderer den: {names}.
 	Signed and all signatures are valid.	Signert, og alle signaturer er gyldige.
 	Signed and saved to {path}	Signert og lagret til {path}
 	Signer	Underskriver
@@ -2026,6 +2072,11 @@ scroll speed	Slow	Sakte
 key	Space	Mellomrom
 	Space Audit	Plassrevisjon
 	Special	Spesial
+	Spelling checks stay on this device.	Stavekontrollen skjer på denne enheten.
+	Spelling dictionary unavailable	Staveordbok er utilgjengelig
+	Spelling language	Språk for stavekontroll
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	Stavemerker endrer ikke dokumentet. Høyreklikk på et understreket ord for forslag.
+	Spelling suggestions	Staveforslag
 	Split	Del opp
 	Split document	Del opp dokument
 	Split document…	Del opp dokument…
@@ -2055,10 +2106,12 @@ calendar weekday	Su	sø
 certificate	Subject	Emne
 	Submit a form	Send inn et skjema
 	Success	Vellykket
+	Suggest edits	Foreslå endringer
 	sum (+)	sum (+)
 	Summarize	Oppsummer
 	Summarize comments	Oppsummer kommentarer
 	Summarize Options	Alternativer for sammendrag
+	Swap width and height	Bytt bredde og høyde
 	Switch light / dark theme	Bytt mellom lyst og mørkt tema
 	Switch to List view to change the pages it takes.	Bytt til listevisning for å endre hvilke sider den tar.
 	Switch to two-page view first to show the cover page	Bytt til tosidevisning først for å vise forsiden
@@ -2149,6 +2202,7 @@ calendar weekday	Th	to
 	The document now conforms to {level}; save it to keep the changes	Dokumentet samsvarer nå med {level}; lagre det for å beholde endringene
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Dokumentet åpnes uten passord; dette passordet trengs for å endre begrensningene. Det brukes når du lagrer.
 	The document was closed before it could be saved.	Dokumentet ble lukket før det kunne lagres.
+	The document will no longer be certified.	Dokumentet vil ikke lenger være sertifisert.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Dokumentets innebygde tilbakekallingsinformasjon viser at undertegnerens sertifikat ikke er tilbakekalt.
 	The document's security settings don't allow copying text and images	Dokumentets sikkerhetsinnstillinger tillater ikke kopiering av tekst og bilder
 	The document's security settings don't allow filling in form fields	Dokumentets sikkerhetsinnstillinger tillater ikke utfylling av skjemafelt
@@ -2160,6 +2214,7 @@ calendar weekday	Th	to
 	The field properties could not be changed.	Feltegenskapene kunne ikke endres.
 	The field properties dialog is no longer open.	Dialogen for feltegenskaper er ikke lenger åpen.
 	The field {name} no longer exists.	Feltet {name} finnes ikke lenger.
+	The fields this signature locked ({names}) can be changed again.	Feltene denne signaturen låste ({names}) kan endres igjen.
 	the first heading is an H{n}; headings should not skip levels	den første overskriften er en H{n}; overskrifter bør ikke hoppe over nivåer
 	The font {} isn't embedded	Skriften {} er ikke innebygd
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Skriftene PdfCraft skriver med kan ikke tegne «{c}» ({code}), så det vises som ? i alle PDF-visere. Teksten blir lagret.
@@ -2178,8 +2233,10 @@ calendar weekday	Th	to
 	The linked PDF opened, but its page destination was out of range.	Den lenkede PDF-en ble åpnet, men sidemålet var utenfor området.
 	The metadata doesn't identify the file as {}	Metadataene identifiserer ikke filen som {}
 	the name is not a plain file name	navnet er ikke et vanlig filnavn
+	The new file has no signature left and no earlier revision holding it.	Den nye filen har ingen signatur igjen og ingen tidligere revisjon som inneholder den.
 	The newest {n} of {total} PDFs	De nyeste {n} av {total} PDF-er
 	The operation failed.	Operasjonen mislyktes.
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	De andre signaturene ({names}) vil melde at dokumentet ble endret etter at de signerte. Kontroller dem på nytt: ingenting sier at de forblir gyldige.
 	The page has changed; select the image again	Siden er endret; velg bildet på nytt
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sidene ble trukket ut, men ikke slettet, fordi dokumentet ble endret mens du valgte en mappe.
 	the password is incorrect	passordet er feil
@@ -2212,7 +2269,9 @@ calendar weekday	Th	to
 	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	Signaturen er BER-kodet (ubestemte lengder) i stedet for DER; den ble lest lempelig.
 	The signature uses the legacy adbe.x509.rsa_sha1 format.	Signaturen bruker det eldre formatet adbe.x509.rsa_sha1.
 	The signature value does not match the signer's certificate: the signature is corrupt.	Signaturverdien stemmer ikke med undertegnerens sertifikat: signaturen er skadet.
+	The signature was not removed: {e}	Signaturen ble ikke fjernet: {e}
 	The signature will be invisible.	Signaturen blir usynlig.
+	The signature {names} locks this field.	Signaturen {names} låser dette feltet.
 	The signature's byte range does not exclude exactly its contents.	Signaturens byteområde utelater ikke nøyaktig innholdet sitt.
 	The signature's byte range does not match the file.	Signaturens byteområde stemmer ikke med filen.
 	The signature's timestamp token could not be verified ({}).	Signaturens tidsstempeltoken kunne ikke verifiseres ({}).
@@ -2270,6 +2329,7 @@ calendar weekday	Th	to
 	This compatibility level supports only plain ASCII passwords.	Dette kompatibilitetsnivået støtter bare rene ASCII-passord.
 	This dialog shows the details of a certificate and its chain.	Denne dialogen viser detaljene for et sertifikat og kjeden dets.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Dette dokumentet ber om å bli åpnet i fullskjermmodus: siden fyller hele skjermen, og ingenting annet vises. Trykk Esc når som helst for å avslutte.
+	This document can't be changed: {names}	Dette dokumentet kan ikke endres: {names}
 	This document can't be checked: it couldn't be read for editing	Dette dokumentet kan ikke kontrolleres: det kunne ikke leses for redigering
 	This document contains {n} interactive form fields.	Dette dokumentet inneholder {n} interaktive skjemafelt.
 	This document has no attachments.	Dette dokumentet har ingen vedlegg.
@@ -2282,6 +2342,7 @@ calendar weekday	Th	to
 	This document has no layers.	Dette dokumentet har ingen lag.
 	This document has no pages.	Dette dokumentet har ingen sider.
 	This document has no restrictions to lift	Dette dokumentet har ingen begrensninger å oppheve
+	This document has no signature that can be removed.	Dette dokumentet har ingen signatur som kan fjernes.
 	This document has no signatures.	Dette dokumentet har ingen signaturer.
 	This document has no tagged figures.	Dette dokumentet har ingen taggede figurer.
 	This document has no {kind} to change	Dette dokumentet har ingen {kind} å endre
@@ -2307,6 +2368,7 @@ calendar weekday	Th	to
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Dette skjemaet inneholder også XFA-data, som PdfCraft ikke leser ennå. Du kan fylle ut feltene, men Acrobat kan vise XFA-verdiene i stedet.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Skriptene i dette skjemaet er slått av fordi ett kjørte for lenge. Åpne dokumentet på nytt for å kjøre dem igjen.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Dette er et dynamisk XFA-skjema, som PdfCraft ikke kan vise ennå. Det du ser er filens plassholderside.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	Dette er et bilde av en signatur, ikke en digital signatur: bare merket på siden fjernes. Originalfilen beholdes som den er.
 	This is the first PDF in its folder	Dette er den første PDF-en i mappen
 	This is the last PDF in its folder	Dette er den siste PDF-en i mappen
 	This measurement needs at least {n} points.	Denne målingen trenger minst {n} punkter.
@@ -2318,6 +2380,7 @@ calendar weekday	Th	to
 	This PDF uses the unsupported {s} action.	Denne PDF-en bruker handlingen {s}, som ikke støttes.
 	This printer offers no settings of its own.	Denne skriveren har ingen egne innstillinger.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Driveren til denne skriveren tar ikke imot tosidig-innstillinger fra andre programmer, så dens egen innstilling gjelder. Endre den under Egenskaper…
+	this signature can't be removed on its own	denne signaturen kan ikke fjernes alene
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Denne signaturen bruker RIPEMD-160, en eldre 160-bits hashalgoritme som ikke lenger anbefales for signaturer. Den validerer fortsatt, men bør ikke stoles på.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Denne signaturen bruker SHA-1, en svak hashalgoritme: kollisjoner i den er påvist. Den validerer fortsatt fordi mange dokumenter signert for flere år siden bruker den, men bør ikke stoles på.
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	denne signeringstjenesten kan ikke brukes: den krever OAuth-pålogging i en nettleser, som PdfCraft ikke støtter ennå
@@ -2366,6 +2429,7 @@ signature pad	Type	Skriv
 	Undid {label}	Angret {label}
 	Unit	Enhet
 	Unknown author	Ukjent forfatter
+	unknown signer	ukjent signatar
 	Unlock comment	Lås opp kommentar
 	Unlock {name}	Lås opp {name}
 	Unlock {n} files	Lås opp {n} filer
@@ -2378,6 +2442,7 @@ signature pad	Type	Skriv
 	Unpin {folder}	Løsne {folder}
 	Unpinned {tool} from Home	Løsnet {tool} fra Hjem
 	Unplaced	Ikke plassert
+	Unsaved changes to this document are saved in the new file too.	Ulagrede endringer i dette dokumentet lagres også i den nye filen.
 	Unsigned signature field	Usignert signaturfelt
 	Unsigned signature field: {name}	Usignert signaturfelt: {name}
 	Unsupported measurements	Målinger som ikke støttes
@@ -2420,6 +2485,9 @@ certificate	Valid to	Gyldig til
 	Validate	Valider
 	Validate all	Valider alle
 	Validate all signatures	Valider alle signaturer
+	validated: invalid	validert: ugyldig
+	validated: valid	validert: gyldig
+	validated: validity unknown	validert: gyldighet ukjent
 	Validity ends	Gyldighet slutter
 certificate	Validity ends	Gyldighet slutter
 	Validity starts	Gyldighet starter
@@ -2443,6 +2511,8 @@ certificate	Version	Versjon
 	Viewport rectangle in page points (x, y, width, height)	Visningsområdets rektangel i sidepunkter (x, y, bredde, høyde)
 	Visible Rectangle	Synlig rektangel
 	Visual	Visuell
+	Visual initials (Fill & Sign, not digital)	Visuelle initialer (Fyll ut og signer, ikke digital)
+	Visual signature (Fill & Sign, not digital)	Visuell signatur (Fyll ut og signer, ikke digital)
 	Waiting for the system print dialog…	Venter på systemets utskriftsdialog…
 	Waiting for your approval in the browser…	Venter på godkjenningen din i nettleseren …
 	watermark	vannmerke
@@ -2472,6 +2542,7 @@ calendar weekday	We	on
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	Du ser på revisjon {rev} av «{from}». Dette er et øyeblikksbilde: endringer her påvirker ikke originalen.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	Du ser på den signerte versjonen av «{from}» (revisjon {rev}). Dette er et øyeblikksbilde: endringer her påvirker ikke originalen.
 	You can pin up to {n} folders. Unpin one first.	Du kan feste opptil {n} mapper. Løsne én først.
+	You choose where the new version is saved. Continue?	Du velger hvor den nye versjonen lagres. Fortsette?
 	You have version {c}. Download the new version from its release page.	Du har versjon {c}. Last ned den nye versjonen fra utgivelsessiden.
 	Your name	Navnet ditt
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy eller yy år · m eller mm måned · mmm eller mmmm månedsnavn · d eller dd dag · ddd eller dddd ukedag. H, h, M, s og t er tidsbokstaver og kan ikke brukes alene: sett {escape} foran en bokstav for å vise den som den er.
@@ -2509,6 +2580,8 @@ calendar weekday	We	on
 	{month} {day}, {y}	{day}. {month} {y}
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} til {dir}
+	{names} certifies this document without allowing comments, and will report this change.	{names} sertifiserer dette dokumentet uten å tillate kommentarer, og vil melde denne endringen.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} sertifiserer dette dokumentet, og å fjerne en signatur er ikke en endring sertifiseringen tillater.
 	{name} (default)	{name} (standard)
 	{name} can't be combined: {why}	{name} kan ikke slås sammen: {why}
 	{name} has no action	{name} har ingen handling
@@ -2518,6 +2591,7 @@ calendar weekday	We	on
 	{name} — unsaved changes	{name} — ulagrede endringer
 	{name}: choosing images arrives on the web with file pickers for images	{name}: bildevalg kommer på nett med filvelgere for bilder
 	{name}: the {other} action isn't supported yet	{name}: handlingen {other} støttes ikke ennå
+	{name}_unsigned.pdf	{name}_usignert.pdf
 @plural	{n} byte|{n} bytes	{n} byte|{n} byte
 @plural	{n} comment|{n} comments	{n} kommentar|{n} kommentarer
 	{n} contributors · {c} commits	{n} bidragsytere · {c} commits
@@ -2562,6 +2636,7 @@ calendar weekday	We	on
 	{verb} Background	{verb} bakgrunn
 	{verb} Header and Footer	{verb} topptekst og bunntekst
 	{verb} Watermark	{verb} vannmerke
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. Lagret {file}, kontrollert at den åpnes igjen med alle sider. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	{who} i dette dokumentet prøvde å åpne en adresse PdfCraft ikke åpner: {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} i dette dokumentet prøvde å åpne en adresse PdfCraft ikke åpner: {e}. Bare nettlenker (http, https) og e-postlenker (mailto) åpnes fra dokumenter.
 	{who} in this document wants to open this address in your browser:	{who} i dette dokumentet vil åpne denne adressen i nettleseren din:

@@ -50,6 +50,7 @@
 	A diagonal CONFIDENTIAL watermark on every page.	Una marca d'aigua diagonal CONFIDENCIAL a cada pàgina.
 	a document must keep at least one page	un document ha de conservar almenys una pàgina
 	A document needs at least one page: copy instead	Un document necessita almenys una pàgina: copia-la en lloc de retallar-la
+	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Una marca de temps del document cobreix tot el fitxer i no és la signatura de ningú, de manera que no es pot eliminar tota sola.
 	a field named {name} already exists	ja existeix un camp anomenat {name}
 	A font isn't embedded	Un tipus de lletra no està incrustat
 	A form field has additional actions	Un camp de formulari té accions addicionals
@@ -59,6 +60,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un fitxer PNG o SVG. Es llegeix des d'aquesta ubicació cada vegada que s'inicia PdfCraft.
 	A script	Un script
 	A selected field has no widget on any page, so the fields can't be edited together.	Un camp seleccionat no té cap giny a cap pàgina, de manera que els camps no es poden editar junts.
+	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Una signatura que forma part del contingut d'una pàgina, com en una pàgina escanejada, no és un camp ni una anotació, de manera que no es pot eliminar tota sola, i el PdfCraft no esborra parts d'una pàgina per amagar-la. Per treure-la, censureu aquesta àrea (Censura) o, si la signatura és una imatge independent, suprimiu la imatge amb Edita un PDF.
 	A stream refers to an external file	Un flux fa referència a un fitxer extern
 	A stream uses LZW compression	Un flux utilitza compressió LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Un resum descriu la finalitat i la disposició de la taula. Afegeix un atribut Summary a cada taula.
@@ -114,12 +116,14 @@
 	Add an Action	Afegeix una acció
 	Add an image field	Afegeix un camp d'imatge
 	Add arrow	Afegeix una fletxa
+	Add at least one recipient.	Afegeix almenys un destinatari.
 	Add at least two files	Afegeix almenys dos fitxers
 	Add background	Afegeix un fons
 	Add background…	Afegeix un fons…
 	Add Bates numbering…	Afegeix numeració Bates…
 	Add bookmark	Afegeix un marcador
 	Add callout	Afegeix una crida
+	Add certificate file…	Afegeix un fitxer de certificat…
 	Add checkmark	Afegeix una marca de verificació
 	Add cloud	Afegeix un núvol
 	Add comment	Afegeix un comentari
@@ -171,11 +175,13 @@
 	Add the files to combine	Afegeix els fitxers que vulguis combinar
 	Add the PDFs to combine	Afegeix els PDF per combinar
 	Add the steps this action runs, in order.	Afegeix els passos que executa aquesta acció, per ordre.
+	Add to dictionary	Afegeix al diccionari
 	Add to Trusted Certificates	Afegeix als certificats de confiança
 	Add to trusted certificates	Afegeix als certificats de confiança
 	Add underline	Afegeix un subratllat
 	Add watermark	Afegeix una marca d'aigua
 	Add watermark…	Afegeix una marca d'aigua…
+	Add your digital ID	Afegeix el teu identificador digital
 	Add {what}	Afegeix {what}
 	Added 1 comment	S'ha afegit 1 comentari
 	Added more than once	Afegit més d'una vegada
@@ -190,6 +196,7 @@
 	Advanced options	Opcions avançades
 	Advanced Options {chevron}	Opcions avançades {chevron}
 	Advanced search…	Cerca avançada…
+	AI Assistant	Assistent d’IA
 	AI assistant	Assistent d'IA
 	Algorithm	Algorisme
 	Align	Alinea
@@ -211,6 +218,7 @@
 	All pages	Totes les pàgines
 	All pages in document	Totes les pàgines del document
 	All pages in range	Totes les pàgines de l'interval
+	All permissions	Tots els permisos
 	All tools	Totes les eines
 	Allow	Permet
 	Allow Rich Text Formatting	Permet el format de text enriquit
@@ -377,10 +385,13 @@ certificate	Basic constraints	Restriccions bàsiques
 	Center vertically	Centra verticalment
 	Center window on screen	Centra la finestra a la pantalla
 	Centre	Centra
+	Certificate	Certificat
 	Certificate authority	Autoritat de certificació
+	Certificate encryption will be applied when you save	El xifratge amb certificat s'aplicarà en desar
 	Certificate Signing	Signatura de certificats
 	Certificate Viewer	Visor de certificats
 	Certificates	Certificats
+	Certification signature (level {p})	Signatura de certificació (nivell {p})
 	Certified by {by}	Certificat per {by}
 	Certify	Certifica
 	Certify (invisible signature)	Certifica (signatura invisible)
@@ -424,6 +435,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	Check for accessibility…	Comprova l'accessibilitat…
 	Check for updates…	Cerca actualitzacions…
 	Check spelling	Revisa l'ortografia
+	Check spelling while typing	Comprova l’ortografia mentre escric
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Comprova que les etiquetes es llegeixin en l'ordre en què ho faria un lector amb visió. Utilitza l'eina d'ordre de lectura o el tauler d'etiquetes per corregir-lo.
 	Check the pages	Revisa les pàgines
 	Check the pages of {name}: {why}	Comprova les pàgines de {name}: {why}
@@ -433,6 +445,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	Checking Options ({on} of 32 in all categories)	Opcions de comprovació ({on} de 32 en totes les categories)
 	Checking pages…	S'estan comprovant les pàgines…
 	Checkmark	Marca de verificació
+	Choose a digital ID file	Tria un fitxer d'identificador digital
 	Choose a digital ID.	Tria un identificador digital.
 	Choose a file…	Tria un fitxer…
 	Choose a folder for the exported files	Tria una carpeta per als fitxers exportats
@@ -446,12 +459,15 @@ certificate	Basic constraints	Restriccions bàsiques
 	Choose a logo	Tria un logotip
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Tria una imatge PNG o JPEG (fins a 4 MiB). Es conserva la transparència.
 	Choose a provider.	Trieu un proveïdor.
+	Choose a signature that can be removed.	Trieu una signatura que es pugui eliminar.
 	Choose a stamp, then click on the page to place it.	Tria un segell i fes clic a la pàgina per col·locar-lo.
 	Choose an image	Tria una imatge
+	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Trieu un altre fitxer: l'original es manté tal com és, i la versió sense la signatura es desa al costat.
 	Choose images	Tria imatges
 	Choose image…	Tria una imatge…
 	Choose photo…	Tria una foto…
 	Choose the digital ID that you want to use for signing:	Tria l'identificador digital que vols utilitzar per signar:
+	Choose the signature to remove:	Trieu la signatura que voleu eliminar:
 	Choose where to save the signed file. The service signs it once you have.	Tria on vols desar el fitxer signat. El servei el signarà quan ho hagis triat.
 	Choose…	Tria…
 	Circle	Cercle
@@ -461,6 +477,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	Clear All	Esborra-ho tot
 	Clear all	Esborra-ho tot
 	Clear form	Neteja el formulari
+	Clear personal dictionary	Buida el diccionari personal
 	Clear Recent Files	Esborra els fitxers recents
 	Clear redaction marks	Esborra les marques de censura
 	Clear search	Neteja la cerca
@@ -579,6 +596,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	Couldn't copy the image: {e}	No s'ha pogut copiar la imatge: {e}
 	Couldn't create a PDF: {e}	No s'ha pogut crear un PDF: {e}
 	Couldn't download {name}: {e}	No s'ha pogut baixar {name}: {e}
+	Couldn't encrypt: {e}	No s'ha pogut xifrar: {e}
 	Couldn't extract pages: {e}	No s'han pogut extreure les pàgines: {e}
 	Couldn't fit the visible content: {e}	No s'ha pogut ajustar el contingut visible: {e}
 	Couldn't follow linked PDF: {reason}	No s'ha pogut seguir el PDF enllaçat: {reason}
@@ -659,6 +677,7 @@ key	Ctrl	Ctrl
 	Current page — type a page number or label (such as iv) and press Enter	Pàgina actual — escriu un número o una etiqueta de pàgina (com ara iv) i prem Retorn
 	Custom	Personalitzat
 	Custom font	Tipus de lletra personalitzat
+	Custom page…	Pàgina personalitzada…
 	Custom scale:	Escala personalitzada:
 	Custom size	Mida personalitzada
 	Custom stamps arrive on the web with file pickers for images	Els segells personalitzats arriben a la web amb selectors de fitxers per a les imatges
@@ -707,6 +726,8 @@ key	Delete	Supr
 	Delete document JavaScript	Suprimeix el JavaScript del document
 	Delete field	Suprimeix el camp
 	Delete image	Suprimeix la imatge
+	Delete line	Suprimeix la línia
+	Delete lines	Suprimeix les línies
 	Delete link	Suprimeix l'enllaç
 	Delete object	Suprimeix l'objecte
 	Delete objects	Suprimeix els objectes
@@ -739,6 +760,7 @@ key	Delete	Supr
 	Diamond	Rombe
 	Digital ID	Identificador digital
 	Digital ID password	Contrasenya de l'identificador digital
+	Digital ID required	Cal un identificador digital
 	Digital Signature	Signatura digital
 	Digital signature	Signatura digital
 	Digital Signature Properties	Propietats de la signatura digital
@@ -793,8 +815,10 @@ key	Delete	Supr
 	document security store	magatzem de seguretat del document
 	document structure	estructura del document
 	Document structure provides a logical reading order	L'estructura del document proporciona un ordre de lectura lògic
+	Document timestamp	Marca de temps del document
 	Document Title	Títol del document
 	Document title is showing in title bar	El títol del document es mostra a la barra de títol
+	Documents	Documents
 	Documents and view	Documents i visualització
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Els documents de més de 20 pàgines necessiten marcadors per navegar-hi. Afegeix marcadors per a les seccions principals.
 	Domain	Domini
@@ -811,6 +835,7 @@ key	Delete	Supr
 	Downsample to	Redueix la resolució a
 	DPI sets the printed page size without resampling the image.	Els DPI defineixen la mida de la pàgina impresa sense remostrejar la imatge.
 	Drag a field to move it, or select it and press {up} or {down}.	Drag a field to move it, or select it and press {up} or {down}.
+	Drag a point to reshape the line. Delete removes it.	Arrossegueu un punt per canviar la forma de la línia. Supr l'elimina.
 	Drag a rectangle around the area to copy	Arrossega un rectangle al voltant de l'àrea que vols copiar
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Arrossega un rectangle sobre una pàgina per escapçar-la; fes doble clic en una pàgina per definir els quadres de pàgina
 	Drag a rectangle to create a link; double-click a link to edit it	Arrossega un rectangle per crear un enllaç; fes doble clic en un enllaç per editar-lo
@@ -842,6 +867,9 @@ key	Delete	Supr
 	Duplicate field	Duplica el camp
 	Duplicate page	Duplica la pàgina
 	Duplicate pages	Duplica pàgines
+	Duplicate pages with new field names	Duplica les pàgines amb noms de camp nous
+	Duplicate pages — 1 field renamed	Duplica pàgines — 1 camp s'ha reanomenat
+	Duplicate pages — fields renamed	Duplica pàgines — camps reanomenats
 	Duplicate…	Duplica…
 	Dynamic	Dinàmic
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Formulari XFA dinàmic disposat a partir de la seva plantilla: {pages}, {fields}.
@@ -884,7 +912,11 @@ comment menu	Edit	Edita
 	Enabled	Habilitat
 	Encipher Only	Només xifratge
 	Encrypt	Xifra
+	Encrypt for recipient	Xifra per al destinatari
+	Encrypt for recipients	Xifra per als destinataris
+	Encrypt with Certificate	Xifra amb certificat
 	Encrypt with certificate	Xifra amb certificat
+	Encrypt with certificate…	Xifra amb certificat…
 	Encryption	Xifratge
 key	End	Fi
 	End entity	Entitat final
@@ -927,6 +959,7 @@ key	Esc	Esc
 	Exclude tagged tables	Exclou les taules etiquetades
 	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	Les exclusions utilitzen les etiquetes del PDF. Les taules i el codi sense etiquetar continuen inclosos. Excloure imatges també elimina el text invisible.
 	Execute a menu item	Executa un element de menú
+	Exit	Surt
 	Expand	Desplega
 	Expand all	Expandeix-ho tot
 	Expand all bookmarks	Expandeix tots els marcadors
@@ -934,6 +967,7 @@ key	Esc	Esc
 	Expand all tools	Desplega totes les eines
 	Expand tag	Expandeix l'etiqueta
 	Expand top-level bookmarks	Expandeix els marcadors de primer nivell
+	Expires {date}	Caduca el {date}
 	Explain	Explica
 	Export	Exporta
 	Export & Convert	Exporta i converteix
@@ -997,6 +1031,7 @@ calendar date	February	Febrer
 	Field properties…	Propietats del camp…
 	Field value is in range:	El valor del camp és dins de l'interval:
 	Field value is not validated	El valor del camp no es valida
+	Field: {field}	Camp: {field}
 	Field: {field} on page {p}	Camp: {field} a la pàgina {p}
 	Fields	Camps
 	Fields to reset (comma-separated; empty: all)	Camps per restablir (separats per comes; buit: tots)
@@ -1011,6 +1046,7 @@ calendar date	February	Febrer
 	File size	Mida del fitxer
 @id	file.word_count	Recompte de paraules…
 	Filename	Nom del fitxer
+	Files	Fitxers
 	Files are combined from top to bottom. Leave Pages empty to take every page.	Els fitxers es combinen de dalt a baix. Deixa Pàgines en blanc per agafar totes les pàgines.
 	Files are combined in the order shown. Drag them to change it.	Els fitxers es combinen en l'ordre mostrat. Arrossega'ls per canviar-lo.
 	Files are combined in this order. Leave Pages empty to take every page.	Els fitxers es combinen en aquest ordre. Deixa Pàgines en blanc per agafar totes les pàgines.
@@ -1115,6 +1151,8 @@ calendar date	February	Febrer
 	form fill	emplenament de formulari
 	Form fill-in and digital signatures	Emplenament de formularis i signatures digitals
 	Format	Format
+	Format line	Formata la línia
+	Format lines	Formata les línies
 	Format text	Dona format al text
 	Format:	Format:
 	Forms	Formularis
@@ -1125,6 +1163,7 @@ calendar weekday	Fr	dv.
 	From	Des de
 	From a PDF page or an image	Des d'una pàgina PDF o una imatge
 	From colour	Des del color
+	From template	Des d’una plantilla
 	From {file}	Des de {file}
 	From:	De:
 	Front side only	Només la cara anterior
@@ -1133,6 +1172,7 @@ calendar weekday	Fr	dv.
 	General	General
 	Geospatial location	Ubicació geoespacial
 	Get help, share feedback and follow development on Discord.	Obtén ajuda, comparteix comentaris i segueix el desenvolupament a Discord.
+	Glass	Vidre
 	Go	Vés
 	Go to a page view	Ves a una vista de pàgina
 	Go to page {p}	Ves a la pàgina {p}
@@ -1147,6 +1187,7 @@ calendar weekday	Fr	dv.
 	Green on black	Verd sobre negre
 	Greyscale	Escala de grisos
 	Grid view	Visualització en quadrícula
+	Group select	Selecció de grup
 	H / Space (hold)	H / Espai (mantén premut)
 	Hand	Mà
 	Hand (H)	Mà (H)
@@ -1246,6 +1287,7 @@ key	Home	Inici
 	Installed fonts…	Tipus de lletra instal·lats…
 	Intended usage	Ús previst
 certificate	Intended usage	Ús previst
+	Interface and appearance	Interfície i aparença
 	Interface language	Idioma de la interfície
 	Interface size	Mida de la interfície
 	Intersection	Intersecció
@@ -1266,6 +1308,7 @@ certificate	Issued by	Emès per
 certificate	Issued to	Emès per a
 	Issuer	Emissor
 certificate	Issuer	Emissor
+	it was still in the document afterwards, so the change was undone	encara era al document després, de manera que s'ha desfet el canvi
 	Italic	Cursiva
 	Item List	Llista d'elements
 	Item:	Element:
@@ -1290,6 +1333,7 @@ calendar date	July	Juliol
 calendar date	June	Juny
 	just now	ara mateix
 	Justify	Justifica
+	Keep an empty signature field to sign again	Mantén un camp de signatura buit per tornar a signar
 	Keep source fonts	Conserva els tipus de lletra d'origen
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Manté la barra de títol de Windows a sobre de la tira de pestanyes. Desactivat, la tira de pestanyes fa de barra de títol, amb els botons de la finestra a la dreta; els dissenys d'ajust (Snap Layouts) del botó de maximitzar necessiten la barra de títol de Windows.
 	Keep tool selected	Mantén l'eina seleccionada
@@ -1310,6 +1354,7 @@ certificate	Key usage	Ús de la clau
 	Landscape Pages	Pàgines horitzontals
 	Landscape pages	Pàgines horitzontals
 	Language	Idioma
+	Language and spelling	Llengua i ortografia
 	Larger pages	Pàgines més grans
 	Larger thumbnails	Larger thumbnails
 	Last	Última
@@ -1318,6 +1363,7 @@ certificate	Key usage	Ús de la clau
 	Later	Més tard
 	Later in calculation order	Later in calculation order
 	Later in tab order	Després en l'ordre de tabulació
+	Latin (accented)	Llatí (amb accents)
 	Layer options	Layer options
 	Layers	Capes
 	Layers panel	Tauler de capes
@@ -1340,12 +1386,14 @@ certificate	Key usage	Ús de la clau
 	Light theme	Tema clar
 	Limit of	Límit de
 	Line	Línia
+	Line colour	Color de la línia
 	Line delta	Diferència de línies
 	Line ending	Final de línia
 	Line spacing	Interlineat
 	Line Style:	Estil de línia:
 	Line thickness	Gruix de línia
 	Line Thickness:	Gruix de línia:
+	Lines	Línies
 	Lines +/−	Línies +/−
 	Lines added	Línies afegides
 	Lines deleted	Línies suprimides
@@ -1469,6 +1517,7 @@ calendar weekday	Mo	dl.
 	Move earlier	Mou abans
 	Move image	Mou la imatge
 	Move later	Mou després
+	Move line point	Mou un punt de la línia
 	Move object	Mou l'objecte
 	Move objects	Mou els objectes
 	Move only what must move, so every field calculates after the fields it reads.	Move only what must move, so every field calculates after the fields it reads.
@@ -1493,6 +1542,7 @@ calendar weekday	Mo	dl.
 	Name on new comments	Nom als comentaris nous
 	Name:	Nom:
 	Named Destinations	Destinacions amb nom
+	Navigation	Navegació
 	Navigation links	Enllaços de navegació
 	Navigation links are not repetitive	Els enllaços de navegació no són repetitius
 	Navigation tab	Pestanya de navegació
@@ -1570,6 +1620,7 @@ calendar weekday	Mo	dl.
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	No s'ha trobat cap impressora. Comprova que la impressora estigui instal·lada i que el servei d'impressió s'estigui executant, i torna a obrir Imprimeix.
 	No problems found: the document conforms to {level}.	No s'ha trobat cap problema: el document és conforme a {level}.
 	No recent files	No hi ha fitxers recents
+	No recipients yet.	Encara no hi ha destinataris.
 	No results	Cap resultat
 	No security	Sense seguretat
 	No sheets	Cap full
@@ -1577,6 +1628,7 @@ calendar weekday	Mo	dl.
 	No signing certificate was found on this device. Is it connected?	No s'ha trobat cap certificat de signatura en aquest dispositiu. Està connectat?
 	No status has been set.	No s'ha definit cap estat.
 	no such document	no existeix aquest document
+	No suggestions	Sense suggeriments
 	no summary	sense resum
 	No tools match your search.	Cap eina coincideix amb la cerca.
 	No unlinked web addresses were found in the text	No s'ha trobat cap adreça web sense enllaç al text
@@ -1587,7 +1639,10 @@ calendar weekday	Mo	dl.
 	none	cap
 	None (prefix only)	Cap (només prefix)
 	None found	No se n'ha trobat cap
+	None of the recipients is one of your digital IDs: you won't be able to open the saved document.	Cap dels destinataris és un dels teus identificadors digitals: no podràs obrir el document desat.
+	None of these signatures can be removed.	Cap d'aquestes signatures no es pot eliminar.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Cap d'aquests fitxers es pot convertir en PDF; utilitza PDF, imatges o fitxers .txt
+	None of your digital IDs can open this document.	Cap dels teus identificadors digitals pot obrir aquest document.
 	None — everything is allowed	Cap — tot està permès
 scroll speed	Normal	Normal
 	Not allowed	No permès
@@ -1638,11 +1693,13 @@ animation effects	On	Activats
 	One {f} file per page, named after the document.	Un fitxer {f} per pàgina, amb el nom del document.
 	One-time code (OTP)	Codi d'un sol ús (OTP)
 	Only allow this if you trust the source document.	Permet-ho només si confies en el document d'origen.
+	Only certificates with RSA keys can be recipients.	Només els certificats amb claus RSA poden ser destinataris.
 	Only change the colour of black text or line art	Canvia només el color del text negre o dels dibuixos de línies
 	Only checked properties will change. Mixed means the selected fields have different values.	Només canviaran les propietats marcades. Barrejat vol dir que els camps seleccionats tenen valors diferents.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Continua només si confies en aquest document. Una adreça pot dur informació del document, com ara el que has escrit al formulari.
 	Only the document's owner can change its security (open it with the permissions password)	Només el propietari del document en pot canviar la seguretat (obre'l amb la contrasenya de permisos)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Només canvia el contingut de la pàgina: els enllaços, comentaris, camps de formulari i marcadors de les pàgines originals es mantenen.
+	Only the recipients can open the document, each with the private key of their own certificate.	Només els destinataris poden obrir el document, cadascun amb la clau privada del seu propi certificat.
 	Opacity	Opacitat
 	Opacity:	Opacitat:
 	Open	Obre
@@ -1672,6 +1729,7 @@ animation effects	On	Activats
 	open to see what it will include	obre per veure què inclourà
 	Opened with	S'ha obert amb
 	Opened, but its security settings don't allow combining. Enter the permissions password.	S'ha obert, però la seva configuració de seguretat no permet combinar. Introdueix la contrasenya de permisos.
+	Opening documents	Obertura de documents
 	Opening the browser's print dialog…	Obrint el diàleg d'impressió del navegador…
 	Opening {name}…	Obrint {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Obre les preferències del controlador de la impressora. Es desen per a totes les impressions d'aquest ordinador; les còpies, la impressió a doble cara, l'escala de grisos i el paper triats aquí continuen aplicant-se.
@@ -1709,6 +1767,8 @@ animation effects	On	Activats
 	Other elements that require alternate text	Altres elements que requereixen text alternatiu
 	Other options	Other options
 	Other provider (CSC API)	Un altre proveïdor (API CSC)
+	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Queden altres signatures, de manera que la còpia es desa com a actualització del fitxer signat: la signatura eliminada es queda a la revisió anterior, d'on es pot recuperar.
+	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Queden altres signatures, de manera que l'eliminada encara és a la revisió anterior del fitxer; torneu a comprovar les signatures que queden.
 	Outdent	Treu el sagnat
 	Outline	Contorn
 	Outline colour:	Color del contorn:
@@ -1750,6 +1810,7 @@ animation effects	On	Activats
 	Page {n} of {total}	Pàgina {n} de {total}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	La pàgina {pages} ha canviat després d'afegir el fons, així que el seu propi farciment blanc continua desactivat. Es veu igual sobre paper blanc.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	La pàgina {pages} té el seu propi farciment blanc, que amagaria el fons. Substitueix-lo
+	Page {p}	Pàgina {p}
 	Page {p} doesn't tab in structure order	La pàgina {p} no segueix l'ordre d'estructura en tabular
 	Page {p} of {n}	Pàgina {p} de {n}
 	Page {p}: {n} untagged content item	Pàgina {p}: {n} element de contingut sense etiquetar
@@ -1944,6 +2005,7 @@ certificate	Public key	Clau pública
 	Recent	Recents
 	Recent colours	Colors recents
 	Recent files to keep	Recent files to keep
+	Recipients	Destinataris
 	Recognize scanned text automatically	Reconeix automàticament el text escanejat
 	Recognize Text	Reconeixement de text
 	Recognize text	Reconeixement de text
@@ -1992,6 +2054,7 @@ certificate	Public key	Clau pública
 	Remove "{name}" from this list? The certificate stays with the signing service.	Vols eliminar "{name}" d'aquesta llista? El certificat continua al servei de signatura.
 	Remove "{name}" from this list? The file itself is not deleted.	Vols eliminar "{name}" d'aquesta llista? El fitxer en si no se suprimeix.
 	Remove all links	Elimina tots els enllaços
+	Remove and Save As…	Elimina i desa com a…
 	Remove background	Elimina el fons
 	Remove checkmark	Elimina la marca de verificació
 	Remove Crop	Elimina l’escapçat
@@ -2007,6 +2070,10 @@ certificate	Public key	Clau pública
 	Remove redaction marks	Elimina les marques de censura
 	Remove saved {what}	Elimina {what} desats
 	Remove security	Elimina la seguretat
+	Remove Signature	Elimina la signatura
+	Remove signature	Elimina la signatura
+	Remove signature…	Elimina la signatura…
+	Remove the signature {name}	Elimina la signatura {name}
 	Remove this leaf tag from reading order and mark its direct content as an artifact	Elimina aquesta etiqueta final de l'ordre de lectura i marca el seu contingut directe com a artefacte
 	Remove unreferenced named destinations	Elimina les destinacions amb nom sense referència
 	Remove unused objects and merge identical ones	Elimina els objectes no utilitzats i combina els idèntics
@@ -2020,9 +2087,14 @@ certificate	Public key	Clau pública
 	Remove {standard} identification	Remove {standard} identification
 	Removed 1 hidden item. Save to remove them from the file.	S'ha eliminat 1 element ocult. Desa per eliminar-lo del fitxer.
 	Removed 1 link	S'ha eliminat 1 enllaç
+	Removed the signature {field} and kept its empty field	S'ha eliminat la signatura {field} i s'ha mantingut el camp buit
+	Removed the signature {field} with its field	S'ha eliminat la signatura {field} amb el seu camp
+	Removed the visual signature on page {p}	S'ha eliminat la signatura visual de la pàgina {p}
 	Removed {n} hidden items. Save to remove them from the file.	S'han eliminat {n} elements ocults. Desa per eliminar-los del fitxer.
 	Removed {n} links	S'han eliminat {n} enllaços
 	Removing the background puts the page's own backdrop back.	En eliminar el fons, es restaura el farciment blanc propi de la pàgina.
+	Removing this signature changes the document and invalidates this signature in the version that results. It can affect the other signatures and certifications. The original file is kept as it is.	Eliminar aquesta signatura canvia el document i la invalida a la versió resultant. Pot afectar les altres signatures i certificacions. El fitxer original es manté tal com és.
+	Removing this signature changes the document and invalidates this signature in the version that results. The original file is kept as it is.	Eliminar aquesta signatura canvia el document i la invalida a la versió resultant. El fitxer original es manté tal com és.
 	Removing white margins… page {d} of {t}	S'estan eliminant els marges blancs… pàgina {d} de {t}
 	Rename	Canvia el nom
 	Rename bookmark	Canvia el nom del marcador
@@ -2077,6 +2149,7 @@ certificate	Public key	Clau pública
 	Restrictions	Restriccions
 	Restrictions lifted	Restriccions aixecades
 	Retain existing	Conserva l'existent
+	Return to document	Torna al document
 	Rev. {rev}: Certified by an unknown signer	Rev. {rev}: certificat per un signant desconegut
 	Rev. {rev}: Certified by {name}	Rev. {rev}: certificat per {name}
 	Rev. {rev}: Signed by an unknown signer	Rev. {rev}: signat per un signant desconegut
@@ -2137,6 +2210,7 @@ certificate	Public key	Clau pública
 	Run JavaScript	Executa JavaScript
 	Running action… file {d} of {t}	Executant l'acció… fitxer {d} de {t}
 calendar weekday	Sa	ds.
+	Same as interface	Igual que la interfície
 	Same as interface ({language})	Igual que la interfície ({language})
 	Sanitize	Neteja
 	Sanitize document	Neteja el document
@@ -2155,6 +2229,7 @@ calendar weekday	Sa	ds.
 	Save as PDF/A-3b	Anomena i desa com a PDF/A-3b
 	Save as PDF/UA	Anomena i desa com a PDF/UA
 	Save as PDF/X	Anomena i desa com a PDF/X
+	Save as template	Desa com a plantilla
 	Save as {level}	Anomena i desa com a {level}
 	Save as…	Anomena i desa…
 	Save attachment…	Desa l'adjunt…
@@ -2173,6 +2248,7 @@ calendar weekday	Sa	ds.
 	Save the spreadsheet	Desa el full de càlcul
 	Save these pages as one PDF	Desa aquestes pàgines com un sol PDF
 	Save this document to a folder first	Primer deseu aquest document en una carpeta
+	Saved	Desat
 	Saved measurements	Mesures desades
 	Saved measurements.	Mesures desades.
 	Saved the print-ready PDF to {path}	S'ha desat el PDF llest per imprimir a {path}
@@ -2180,6 +2256,7 @@ calendar weekday	Sa	ds.
 	Saved {place}: {before} → {after} (not smaller){detail}	S'ha desat {place}: {before} → {after} (no és més petit){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	S'ha desat {place}: {before} → {after} ({pct} % més petit){detail}
 	Saved, but reopening failed: {e}	S'ha desat, però no s'ha pogut tornar a obrir: {e}
+	Saves document	Desa el document
 	Scale	Escala
 	Scale corner {n}	Canvia la mida des de la cantonada {n}
 	Scale object	Canvia la mida de l’objecte
@@ -2348,6 +2425,7 @@ key	Shift	Maj
 	Signature validity is UNKNOWN:	La validesa de la signatura és DESCONEGUDA:
 	Signatures	Signatures
 	Signatures panel	Tauler de signatures
+	Signed after this signature, so what they signed includes it: {names}.	Signades després d'aquesta signatura, de manera que el que van signar la inclou: {names}.
 	Signed and all signatures are valid.	Signat i totes les signatures són vàlides.
 	Signed and saved to {path}	Signat i desat a {path}
 	Signer	Signant
@@ -2391,6 +2469,11 @@ scroll speed	Slow	Lenta
 key	Space	Espai
 	Space Audit	Auditoria d'espai
 	Special	Especial
+	Spelling checks stay on this device.	La comprovació ortogràfica es fa en aquest dispositiu.
+	Spelling dictionary unavailable	Diccionari ortogràfic no disponible
+	Spelling language	Llengua de correcció
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	Les marques ortogràfiques no modifiquen el document. Fes clic dret en una paraula subratllada per veure suggeriments.
+	Spelling suggestions	Suggeriments ortogràfics
 	Split	Divideix
 	Split document	Divideix el document
 	Split document…	Divideix el document…
@@ -2429,12 +2512,14 @@ certificate	Subject	Subjecte
 	Subscript	Subscript
 	Subset	Subconjunt
 	Success	Èxit
+	Suggest edits	Suggereix canvis
 	sum (+)	suma (+)
 	Summarize	Resumeix
 	Summarize comments	Resumeix els comentaris
 	Summarize Options	Opcions de resum
 	Summary	Resum
 	Superscript	Superscript
+	Swap width and height	Intercanvia l’amplada i l’alçada
 	Switch light / dark theme	Canvia el tema clar / fosc
 	Switch to List view to change the pages it takes.	Canvia a la visualització en llista per canviar les pàgines que utilitza.
 	Switch to two-page view first to show the cover page	Canvia primer a la visualització de dues pàgines per mostrar la portada
@@ -2535,6 +2620,7 @@ calendar weekday	Th	dj.
 	The document now conforms to {level}; save it to keep the changes	El document ara compleix {level}; desa'l per conservar els canvis
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	El document s'obre sense contrasenya; aquesta contrasenya cal per canviar les restriccions. S'aplica en desar.
 	The document was closed before it could be saved.	El document s'ha tancat abans de poder-se desar.
+	The document will no longer be certified.	El document deixarà d'estar certificat.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	La informació de revocació incrustada al document mostra que el certificat del signant no ha estat revocat.
 	The document's security settings don't allow copying text and images	La configuració de seguretat del document no permet copiar text ni imatges
 	The document's security settings don't allow filling in form fields	La configuració de seguretat del document no permet omplir camps de formulari
@@ -2547,6 +2633,7 @@ calendar weekday	Th	dj.
 	The field properties could not be changed.	No s'han pogut canviar les propietats dels camps.
 	The field properties dialog is no longer open.	El diàleg de propietats dels camps ja no és obert.
 	The field {name} no longer exists.	El camp {name} ja no existeix.
+	The fields this signature locked ({names}) can be changed again.	Els camps que bloquejava aquesta signatura ({names}) es podran tornar a modificar.
 	the first heading is an H{n}; headings should not skip levels	el primer encapçalament és un H{n}; els encapçalaments no haurien de saltar nivells
 	the first row number can be at most {max}	el número de la primera fila pot ser com a màxim {max}
 	The font {} isn't embedded	El tipus de lletra {} no està incrustat
@@ -2566,9 +2653,11 @@ calendar weekday	Th	dj.
 	The linked PDF opened, but its page destination was out of range.	S'ha obert el PDF enllaçat, però la seva destinació de pàgina era fora de l'interval.
 	The metadata doesn't identify the file as {}	Les metadades no identifiquen el fitxer com a {}
 	the name is not a plain file name	the name is not a plain file name
+	The new file has no signature left and no earlier revision holding it.	El fitxer nou no té cap signatura ni cap revisió anterior que la contingui.
 	The newest {n} of {total} PDFs	Els {n} més recents de {total} PDF
 	The operation failed.	L'operació ha fallat.
 	The order saved in the PDF needs tidying	The order saved in the PDF needs tidying
+	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Les altres signatures ({names}) indicaran que el document ha canviat després de signar-lo. Torneu-les a comprovar: res no garanteix que continuïn sent vàlides.
 	The page has changed; select the image again	La pàgina ha canviat; torna a seleccionar la imatge
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Les pàgines s'han extret però no s'han suprimit, perquè el document ha canviat mentre triaves una carpeta.
 	the password is incorrect	la contrasenya és incorrecta
@@ -2584,6 +2673,7 @@ calendar weekday	Th	dj.
 	The provider's page didn't come back in time. Try again.	La pàgina del proveïdor no ha tornat a temps. Torneu-ho a provar.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	L'URI de redirecció ha de ser http://127.0.0.1 o http://localhost amb un port.
 	The replacement file doesn't have that many pages.	El fitxer de substitució no té tantes pàgines.
+	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Les restriccions s'apliquen als destinataris sense «Tots els permisos». S'apliquen en desar.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	les files són massa baixes: fes l'àrea més alta o fes servir menys files o menys espai entre files
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	El valor de la signatura RSA no té la longitud del mòdul de la clau (s'han suprimit o afegit bytes zero inicials); s'ha llegit igualment.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	El DigestInfo de la signatura RSA no té el paràmetre NULL (els signants més antics l'escriuen així); s'ha llegit igualment.
@@ -2603,7 +2693,9 @@ calendar weekday	Th	dj.
 	The signature is BER-encoded (indefinite lengths) rather than DER; it was read leniently.	La signatura està codificada en BER (longituds indefinides) en lloc de DER; s'ha llegit de manera permissiva.
 	The signature uses the legacy adbe.x509.rsa_sha1 format.	La signatura utilitza el format antic adbe.x509.rsa_sha1.
 	The signature value does not match the signer's certificate: the signature is corrupt.	El valor de la signatura no coincideix amb el certificat del signant: la signatura està corrompuda.
+	The signature was not removed: {e}	No s'ha eliminat la signatura: {e}
 	The signature will be invisible.	La signatura serà invisible.
+	The signature {names} locks this field.	La signatura {names} bloqueja aquest camp.
 	The signature's byte range does not exclude exactly its contents.	L'interval de bytes de la signatura no exclou exactament el seu contingut.
 	The signature's byte range does not match the file.	L'interval de bytes de la signatura no coincideix amb el fitxer.
 	The signature's signed attributes have no content type, which CMS requires; it was read anyway.	The signature's signed attributes have no content type, which CMS requires; it was read anyway.
@@ -2667,6 +2759,7 @@ calendar weekday	Th	dj.
 	This compatibility level supports only plain ASCII passwords.	Aquest nivell de compatibilitat només admet contrasenyes en ASCII simple.
 	This dialog shows the details of a certificate and its chain.	Aquest diàleg mostra els detalls d'un certificat i la seva cadena.
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	Aquest document demana obrir-se en mode de pantalla completa: la pàgina omple la pantalla i no es veu res més. Prem Esc en qualsevol moment per sortir-ne.
+	This document can't be changed: {names}	Aquest document no es pot modificar: {names}
 	This document can't be checked: it couldn't be read for editing	No es pot comprovar aquest document: no s'ha pogut llegir per editar-lo
 	This document contains {n} interactive form fields.	Aquest document conté {n} camps de formulari interactius.
 	This document has no attachments.	Aquest document no té adjunts.
@@ -2680,6 +2773,7 @@ calendar weekday	Th	dj.
 	This document has no layers.	Aquest document no té capes.
 	This document has no pages.	Aquest document no té pàgines.
 	This document has no restrictions to lift	Aquest document no té restriccions per aixecar
+	This document has no signature that can be removed.	Aquest document no té cap signatura que es pugui eliminar.
 	This document has no signatures.	Aquest document no té signatures.
 	This document has no tagged figures.	Aquest document no té figures etiquetades.
 	This document has no {kind} to change	Aquest document no té cap {kind} per canviar
@@ -2705,6 +2799,7 @@ calendar weekday	Th	dj.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Aquest formulari també conté dades XFA, que PdfCraft encara no llegeix. Pots emplenar-ne els camps, però Acrobat pot mostrar els valors XFA.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Els scripts d'aquest formulari estan desactivats perquè un s'ha executat massa temps. Torna a obrir el document per executar-los de nou.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Aquest és un formulari XFA dinàmic, que PdfCraft encara no pot mostrar. El que veus és la pàgina de substitució del fitxer.
+	This is a picture of a signature, not a digital signature: only the mark on the page goes. The original file is kept as it is.	Això és la imatge d'una signatura, no una signatura digital: només s'elimina la marca de la pàgina. El fitxer original es manté tal com és.
 	This is the first PDF in its folder	Aquest és el primer PDF de la carpeta
 	This is the last PDF in its folder	Aquest és l'últim PDF de la carpeta
 	This measurement needs at least {n} points.	Aquesta mesura necessita almenys {n} punts.
@@ -2714,8 +2809,10 @@ calendar weekday	Th	dj.
 	This page has an opaque background of its own, which hides anything behind it. Choose Blend with page content.	Aquesta pàgina té un fons opac propi, que amaga tot el que hi ha al darrere. Trieu «Barreja amb el contingut de la pàgina».
 	This page has an opaque background of its own, which hides the image behind it.	Aquesta pàgina té un fons opac propi, que amaga la imatge que hi ha al darrere.
 	This PDF uses the unsupported {s} action.	Aquest PDF utilitza l'acció {s}, que no és compatible.
+	This point could not be moved. Try a smaller move.	No s'ha pogut moure aquest punt. Proveu un desplaçament més petit.
 	This printer offers no settings of its own.	Aquesta impressora no ofereix cap configuració pròpia.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	El controlador d'aquesta impressora no accepta la configuració de doble cara d'altres programes, de manera que s'aplica la seva pròpia configuració. Canvia-la a Propietats…
+	this signature can't be removed on its own	aquesta signatura no es pot eliminar tota sola
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Aquesta signatura utilitza RIPEMD-160, un algorisme de resum antic de 160 bits que ja no es recomana per a signatures. Encara es valida, però no s'hi ha de confiar.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Aquesta signatura utilitza SHA-1, un algorisme de resum feble: se n'han demostrat col·lisions. Encara se'n valida perquè molts documents signats fa anys l'utilitzen, però no s'hi ha de confiar.
@@ -2783,6 +2880,7 @@ signature pad	Type	Escriu
 	Units	Unitats
 	Unknown	Desconegut
 	Unknown author	Autor desconegut
+	unknown signer	signant desconegut
 	Unlock	Desbloqueja
 	Unlock comment	Desbloqueja el comentari
 	Unlock {name}	Desbloqueja {name}
@@ -2796,6 +2894,8 @@ signature pad	Type	Escriu
 	Unpin {folder}	Deixa de fixar {folder}
 	Unpinned {tool} from Home	{tool} desfixat d’Inici
 	Unplaced	Sense col·locar
+	Unsaved changes	Canvis sense desar
+	Unsaved changes to this document are saved in the new file too.	Els canvis no desats d'aquest document també es desen al fitxer nou.
 	Unsigned signature field	Camp de signatura sense signar
 	Unsigned signature field: {name}	Camp de signatura sense signar: {name}
 	Unsupported measurements	Mesures no compatibles
@@ -2841,6 +2941,9 @@ certificate	Valid to	Vàlid fins a
 	Validate	Valida
 	Validate all	Valida-ho tot
 	Validate all signatures	Valida totes les signatures
+	validated: invalid	validació: no vàlida
+	validated: valid	validació: vàlida
+	validated: validity unknown	validació: validesa desconeguda
 	Validity ends	La validesa acaba
 certificate	Validity ends	La validesa acaba
 	Validity starts	La validesa comença
@@ -2868,6 +2971,8 @@ certificate	Version	Versió
 	Viewport rectangle in page points (x, y, width, height)	Rectangle de la zona visible en punts de pàgina (x, y, amplada, alçada)
 	Visible Rectangle	Rectangle visible
 	Visual	Visual
+	Visual initials (Fill & Sign, not digital)	Inicials visuals (Omple i signa, no digitals)
+	Visual signature (Fill & Sign, not digital)	Signatura visual (Omple i signa, no digital)
 	Waiting for the system print dialog…	Esperant el diàleg d'impressió del sistema…
 	Waiting for your approval in the browser…	S'està esperant la vostra aprovació al navegador…
 	Warning	Avís
@@ -2907,6 +3012,7 @@ calendar weekday	We	dc.
 	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.	You are viewing revision {rev} of “{from}”. It is a snapshot: changes here won't affect the original.
 	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.	You are viewing the signed version of “{from}” (revision {rev}). It is a snapshot: changes here won't affect the original.
 	You can pin up to {n} folders. Unpin one first.	Es poden fixar fins a {n} carpetes. Primer deixa'n de fixar una.
+	You choose where the new version is saved. Continue?	Vós trieu on es desa la versió nova. Voleu continuar?
 	You have version {c}. Download the new version from its release page.	Tens la versió {c}. Baixa la versió nova des de la seva pàgina de publicació.
 	Your changes will be lost if you don't save them.	Els canvis es perdran si no els deses.
 	Your name	El teu nom
@@ -2956,7 +3062,10 @@ calendar weekday	We	dc.
 	{month} {y}	{month} {y}
 	{msg} to {dir}	{msg} a {dir}
 	{names} and {last}	{names} and {last}
+	{names} certifies this document without allowing comments, and will report this change.	{names} certifica aquest document sense permetre comentaris i indicarà aquest canvi.
+	{names} certifies this document, and removing a signature is not a change its certification permits.	{names} certifica aquest document, i eliminar una signatura no és un canvi que la certificació permeti.
 	{name} (default)	{name} (per defecte)
+	{name} (you)	{name} (tu)
 	{name} can't be combined: {why}	{name} no es pot combinar: {why}
 	{name} has no action	{name} no té cap acció
 	{name} is read-only	{name} és de només lectura
@@ -2965,6 +3074,7 @@ calendar weekday	We	dc.
 	{name} — unsaved changes	{name} — canvis sense desar
 	{name}: choosing images arrives on the web with file pickers for images	{name}: la selecció d'imatges arribarà al web amb selectors de fitxers d'imatge
 	{name}: the {other} action isn't supported yet	{name}: l'acció {other} encara no és compatible
+	{name}_unsigned.pdf	{name}_sense_signatura.pdf
 @plural	{n} byte|{n} bytes	{n} byte|{n} bytes
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} calculation now uses the new name.|{n} calculations now use the new name.
 @plural	{n} comment|{n} comments	{n} comentari|{n} comentaris
@@ -3013,6 +3123,7 @@ calendar weekday	We	dc.
 	{verb} Background	{verb} fons
 	{verb} Header and Footer	{verb} capçalera i peu de pàgina
 	{verb} Watermark	{verb} marca d'aigua
+	{what}. Saved {file}, checked to reopen with every page. {history}	{what}. S'ha desat {file} i s'ha comprovat que es torna a obrir amb totes les pàgines. {history}
 	{who} in this document tried to open an address PdfCraft won't open: {e}.	{who} d'aquest document ha intentat obrir una adreça que PdfCraft no obre: {e}.
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} d'aquest document ha intentat obrir una adreça que PdfCraft no obre: {e}. Als documents només s'hi poden obrir enllaços web (http, https) i de correu electrònic (mailto).
 	{who} in this document wants to open this address in your browser:	{who} d'aquest document vol obrir aquesta adreça al navegador:
@@ -3026,6 +3137,7 @@ calendar weekday	We	dc.
 	— (protection is applied when you save)	— (la protecció s'aplica en desar)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	«{name}» ha canviat al disc després d'obrir-lo o d'haver-lo desat per última vegada. Si ara el deses, aquesta versió substituirà la més recent.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	“{name}” té restriccions de seguretat. Introdueix-ne la contrasenya de permisos per aixecar-les.
+	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	«{name}» està xifrat per a persones concretes. Tria el teu identificador digital i introdueix-ne la contrasenya per obrir-lo.
 	“{name}” is protected. Enter a password to open it.	“{name}” està protegit. Introdueix una contrasenya per obrir-lo.
 	… and {n} more	… i {n} més
 	−Bin	−Bin
