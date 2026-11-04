@@ -174,6 +174,7 @@
 	Advanced Options {chevron}	詳細オプション {chevron}
 	Advanced search…	高度な検索…
 	Advanced unit formats	詳細な単位形式
+	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	「署名」の後、mSzafir アプリの OTT コードを CloudSigner のウィンドウに入力し、アプリで署名を承認してください。CloudSigner の永続 OTT コードを有効にすると、コードの入力は数分に 1 回だけです。
 	AI assistant	AI アシスタント
 	AI chat isn't available in the web build; use the desktop app or CLI.	AIチャットはWeb版では使えません。デスクトップアプリかCLIを使ってください。
 	Algorithm	アルゴリズム
@@ -416,6 +417,7 @@
 	Choose raw file…	原文ファイルを選ぶ…
 	Choose reference…	参照を選ぶ…
 	Choose the digital ID that you want to use for signing:	署名に使用するデジタル ID を選択してください:
+	Choose the module's library file.	モジュールのライブラリファイルを選択してください。
 	Choose the two endpoints.	2つの端点を選択してください。
 	Choose three points on the circle.	円周上の3点を選択してください。
 	Clean Up	クリーンアップ
@@ -449,6 +451,7 @@
 	Close window	ウインドウを閉じる
 	Closed arrow	閉じた矢印
 	Cloud	雲形
+	CloudSigner (mSzafir) is found by itself when it is installed: start it and log in before signing.	CloudSigner（mSzafir）はインストールされていれば自動的に見つかります。署名の前に起動してログインしてください。
 	Collapse all	すべて折りたたむ
 	Collapse all bookmarks	すべてのしおりを折りたたむ
 	Collapse all pages	すべてのページを折りたたむ
@@ -814,6 +817,7 @@ key	End	End
 	Enter a scale such as 1:50.	1:50 のように縮尺を入力してください。
 	Enter known map coordinates for at least three page positions.	ページ上の少なくとも 3 点の既知の地図座標を入力してください。
 	Enter permissions password…	権限パスワードを入力…
+	Enter the device's PIN.	デバイスの PIN を入力してください。
 	Enter the password that opens it	ファイルを開くパスワードを入力してください
 	Enter the permissions password to allow combining	結合を許可するには権限パスワードを入力してください
 	Entire page	ページ全体
@@ -1271,6 +1275,7 @@ key	Home	Home
 	Model:	モデル：
 	Modified	変更日時
 	Modify page	ページの変更
+	Module (.dylib, .so, .dll)	モジュール（.dylib、.so、.dll）
 	Monochrome Images	白黒画像
 	More	その他
 	More options	詳細オプション
@@ -1587,6 +1592,7 @@ animation effects	On	オン
 	Pictures cover pages {pages} (scans?), so the background won't show there.	{pages} ページが画像（スキャン？）で覆われているため、そこでは背景は表示されません。
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	画像には内容を説明する代替テキストを付けるか、装飾として指定する必要があります。各図に代替テキストを追加してください。
 	Pictures on those pages are recognized too; words already in the page's text are not added again	それらのページ上の画像も認識します。ページのテキストに既にある単語は再度追加されません
+	PIN	PIN
 	Pin	ピン留め
 	Pin a folder to Home	フォルダーをホームにピン留め
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	フォルダーをピン留めすると、スキャナーや同期中のクラウドドライブの保存先など、そのフォルダー内の新しい PDF がここに表示されます。
@@ -1601,6 +1607,7 @@ animation effects	On	オン
 	Pinned Tools	ピン留めしたツール
 	Pinned {folder} to Home	{folder} をホームにピン留めしました
 	Pinned {tool} to Home	{tool} をホームにピン留めしました
+	PKCS #11 device  ·  	PKCS #11 デバイス · 
 	PKCS #11 module	PKCS #11 モジュール
 	PKCS #11 token  ·  	PKCS #11 トークン · 
 	Place caption	キャプションを配置
@@ -2178,10 +2185,12 @@ key	Space	スペース
 	The answer proposes formatting changes.	回答に書式変更の提案が含まれています。
 	The answer stopped unexpectedly.	回答が途中で止まりました。
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	計算順序に、何も計算しない項目が {n} 件あります。「順序を修正」で削除されます。
+	the certificate expired on {date}	証明書は {date} に有効期限が切れています
 	The checker found 1 problem which may prevent the document from being fully accessible.	文書のアクセシビリティを妨げる可能性のある問題が 1 件見つかりました。
 	The checker found no problems in this document.	この文書に問題は見つかりませんでした。
 	The checker found {n} problems which may prevent the document from being fully accessible.	文書のアクセシビリティを妨げる可能性のある問題が {n} 件見つかりました。
 	The clipboard has no image or text	クリップボードに画像やテキストがありません
+	The device's digital ID isn't available any more; start signing again to list it.	デバイスのデジタル ID は利用できなくなりました。署名をやり直して一覧を表示してください。
 	The display datum transformation is approximate.	表示座標の測地系変換は近似です。
 	The document changed while you were choosing a file, so nothing was changed.	ファイルを選択している間に文書が変更されたため、何も変更されていません。
 	The document changed while you were editing field properties.	フィールドのプロパティを編集中に文書が変更されました。
@@ -2216,12 +2225,15 @@ key	Space	スペース
 	the image is empty	画像が空です
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	鍵は macOS のキーチェーンに保存されています。PdfCraft に使用を許可するか確認される場合があります。
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	鍵は Windows の証明書ストアに保存されています。PdfCraft に使用を許可するか確認される場合があります。
+	The key is on the device, which may ask for its PIN itself.	鍵はデバイス上にあり、デバイス自身が PIN を求める場合があります。
+	The key is on the device, which signs once it has its PIN.	鍵はデバイス上にあり、PIN を入力すると署名します。
 	The Keychain's digital IDs couldn't be listed: {e}	キーチェーンのデジタル ID を一覧表示できませんでした: {e}
 	The labels are in English: the signature's font can't draw them in this language.	署名のフォントではこの言語のラベルを描画できないため、ラベルは英語になります。
 	The linked PDF opened, but its named destination was not applied.	リンク先の PDF を開きましたが、名前付き移動先は適用されませんでした。
 	The linked PDF opened, but its page destination was out of range.	リンク先の PDF を開きましたが、移動先のページが範囲外です。
 	The measurement list reached its safety limit.	測定一覧が安全上の上限に達しました。
 	The model viewport is too narrow to display.	モデルの表示領域が狭すぎます。
+	The module's tokens hold no digital ID PdfCraft can sign with.	このモジュールのトークンには、PdfCraft で署名できるデジタル ID がありません。
 	the name is not a plain file name	名前が単独のファイル名ではありません
 	The newest {n} of {total} PDFs	{total} 件中、新しい {n} 件の PDF
 	The objects are already aligned.	オブジェクトは既に揃っています。
@@ -2232,6 +2244,7 @@ key	Space	スペース
 	the password is incorrect	パスワードが正しくありません
 	The password is only used to read the file; it isn't saved.	パスワードはファイルの読み込みにのみ使用され、保存されません。
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF テキスト用フォントでは「{c}」（{code}）を表示できません。対応している文字を使用してください。
+	The PIN is incorrect.	PIN が正しくありません。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 トークンのデジタル ID の一覧を取得できませんでした：{e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	この印刷に使うプリンタードライバー独自の設定：給紙トレイ、用紙の種類、後処理など。
 	The raw text was truncated to what fits.	テキストが収まる長さに切り詰められました。
@@ -2395,6 +2408,7 @@ signature pad	Type	入力
 	Use 72 DPI (one point per pixel)	72 DPI を使用（1 ピクセルあたり 1 ポイント）
 	Use a certificate	証明書を使用
 	Use a Digital ID from a file	ファイルのデジタル ID を使用
+	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	署名生成デバイスを使用（PKCS #11 モジュール：スマートカード、トークン、mSzafir 用 CloudSigner）
 	Use custom DPI	カスタム DPI を使用
 	Use default font	既定のフォントに戻す
 	Use each image's embedded DPI; use 72 DPI when it is absent.	各画像に埋め込まれた DPI を使用します。埋め込まれていない場合は 72 DPI を使用します。
@@ -2507,6 +2521,7 @@ signature pad	Type	入力
 @plural	{field} reads {fields}, which the form doesn't have.|{field} reads {fields}, which the form doesn't have.	{field} はフォームにない {fields} を読み取ります。
 	{field}: {e}	{field}: {e}
 	{file} is too large for a stamp (at most {n} MB)	{file} はスタンプの上限（{n} MB）を超えています
+	{file}: there is no such file.	{file}: そのファイルはありません。
 	{folder} is already pinned to Home	{folder} はすでにホームにピン留めされています
 	{kind} field	{kind}フィールド
 	{kind} Properties	{kind}のプロパティ

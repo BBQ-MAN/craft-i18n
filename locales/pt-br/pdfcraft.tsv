@@ -177,6 +177,7 @@
 	Advanced options	Opções avançadas
 	Advanced Options {chevron}	Opções avançadas {chevron}
 	Advanced search…	Pesquisa avançada…
+	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Depois de Assinar, digite o código OTT do app mSzafir na janela do CloudSigner e aprove a assinatura no app. Com o código OTT persistente do CloudSigner ativado, o código é pedido só uma vez a cada poucos minutos.
 	AI assistant	Assistente de IA
 	AI chat isn't available in the web build; use the desktop app or CLI.	O chat de IA não está disponível na versão web; use o aplicativo para desktop ou a CLI.
 	Algorithm	Algoritmo
@@ -416,6 +417,7 @@ certificate	Basic constraints	Restrições básicas
 	Choose raw file…	Escolher arquivo original…
 	Choose reference…	Escolher referência…
 	Choose the digital ID that you want to use for signing:	Escolha a ID digital que deseja usar para assinar:
+	Choose the module's library file.	Escolha o arquivo de biblioteca do módulo.
 	Clean Up	Limpar
 	Clean-up	Limpeza
 	Clear all	Limpar tudo
@@ -439,6 +441,7 @@ certificate	Basic constraints	Restrições básicas
 	Close window	Fechar janela
 	Closed arrow	Seta fechada
 	Cloud	Nuvem
+	CloudSigner (mSzafir) is found by itself when it is installed: start it and log in before signing.	O CloudSigner (mSzafir) é encontrado automaticamente quando está instalado: abra-o e faça login antes de assinar.
 	Collapse all	Recolher tudo
 	Collapse all bookmarks	Recolher todos os marcadores
 	Collapse all pages	Recolher todas as páginas
@@ -807,6 +810,7 @@ key	End	End
 	Enter a scale such as 1:50.	Digite uma escala como 1:50.
 	Enter a URL	Informe uma URL
 	Enter permissions password…	Digitar senha de permissões…
+	Enter the device's PIN.	Digite o PIN do dispositivo.
 	Enter the field names	Informe os nomes dos campos
 	Enter the password that opens it	Digite a senha que o abre
 	Enter the permissions password to allow combining	Digite a senha de permissões para permitir a combinação
@@ -1267,6 +1271,7 @@ calendar weekday	Mo	Seg
 	Mobile	Celular
 	Model:	Modelo:
 	Modify page	Modificar página
+	Module (.dylib, .so, .dll)	Módulo (.dylib, .so, .dll)
 	Monochrome Images	Imagens monocromáticas
 	More options	Mais opções
 	More options:	Mais opções:
@@ -1603,6 +1608,7 @@ animation effects	On	Ativados
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Imagens cobrem as páginas {pages} (digitalizações?), então o plano de fundo não aparecerá nelas.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Imagens precisam de texto alternativo que as descreva ou devem ser marcadas como decorativas. Adicione texto alternativo a cada figura.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	As imagens dessas páginas também são reconhecidas; as palavras que já estão no texto da página não são adicionadas novamente
+	PIN	PIN
 	Pin	Fixar
 	Pin a folder to Home	Fixar uma pasta no Início
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Fixe uma pasta para listar aqui os PDFs mais recentes dela, como onde o seu scanner ou uma unidade de nuvem sincronizada os salva.
@@ -1617,6 +1623,7 @@ animation effects	On	Ativados
 	Pinned Tools	Ferramentas fixadas
 	Pinned {folder} to Home	{folder} fixada no Início
 	Pinned {tool} to Home	{tool} fixado no Início
+	PKCS #11 device  ·  	Dispositivo PKCS #11  ·  
 	PKCS #11 module	Módulo PKCS #11
 	PKCS #11 token  ·  	Token PKCS #11  ·  
 	Place saved {what}	Posicionar item salvo: {what}
@@ -2186,6 +2193,7 @@ calendar weekday	Th	Qui
 	The answer stopped unexpectedly.	A resposta foi interrompida inesperadamente.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	a área, o espaçamento e as larguras das colunas devem ser números, o espaçamento 0 ou mais e cada largura maior que 0
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	A ordem de cálculo tem {n} entrada que não calcula nada. "Corrigir ordem" a remove.|A ordem de cálculo tem {n} entradas que não calculam nada. "Corrigir ordem" as remove.
+	the certificate expired on {date}	o certificado expirou em {date}
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	O certificado de {} não permite essa quantidade de certificados de AC abaixo dele (comprimento do caminho), então não é usado para atestar a validade de {}.
 	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.
 	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	O certificado de {} não é um certificado de AC autorizado a emitir certificados, então não é usado para atestar a validade de {}.
@@ -2195,6 +2203,7 @@ calendar weekday	Th	Qui
 	The checker found problems which may prevent the document from being fully accessible.	A verificação encontrou problemas que podem impedir que o documento seja totalmente acessível.
 	The checker found {n} problems which may prevent the document from being fully accessible.	O verificador encontrou {n} problemas que podem impedir o documento de ser totalmente acessível.
 	The clipboard has no image or text	A área de transferência não contém imagem nem texto
+	The device's digital ID isn't available any more; start signing again to list it.	A ID digital do dispositivo não está mais disponível; inicie a assinatura novamente para listá-la.
 	The document changed while you were choosing a file, so nothing was changed.	O documento mudou enquanto você escolhia um arquivo, então nada foi alterado.
 	The document changed while you were editing field properties.	O documento mudou enquanto você editava as propriedades dos campos.
 	The document has additional actions (/AA)	O documento contém ações adicionais (/AA)
@@ -2245,11 +2254,14 @@ calendar weekday	Th	Qui
 	the image is empty	a imagem está vazia
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	A chave está no Chaveiro do macOS, que pode solicitar permissão para o PdfCraft usá-la.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	A chave está no repositório de certificados do Windows, que pode solicitar permissão para o PdfCraft usá-la.
+	The key is on the device, which may ask for its PIN itself.	A chave está no dispositivo, que pode pedir o PIN por conta própria.
+	The key is on the device, which signs once it has its PIN.	A chave está no dispositivo, que assina depois de receber o PIN.
 	The Keychain's digital IDs couldn't be listed: {e}	Não foi possível listar as IDs digitais do Chaveiro: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Os rótulos estão em inglês: a fonte da assinatura não consegue desenhá-los neste idioma.
 	The linked PDF opened, but its named destination was not applied.	O PDF vinculado foi aberto, mas seu destino nomeado não foi aplicado.
 	The linked PDF opened, but its page destination was out of range.	O PDF vinculado foi aberto, mas sua página de destino está fora do intervalo.
 	The metadata doesn't identify the file as {}	Os metadados não identificam o arquivo como {}
+	The module's tokens hold no digital ID PdfCraft can sign with.	Os tokens do módulo não contêm nenhuma ID digital com a qual o PdfCraft possa assinar.
 	the name is not a plain file name	o nome não é um nome de arquivo simples
 	The newest {n} of {total} PDFs	Os {n} PDFs mais recentes de {total}
 	The objects are already aligned.	Os objetos já estão alinhados.
@@ -2264,6 +2276,7 @@ calendar weekday	Th	Qui
 	The password must have at least 8 characters.	A senha deve ter pelo menos 8 caracteres.
 	The passwords do not match.	As senhas não correspondem.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	As fontes de texto PDF não podem exibir “{c}” ({code}). Escolha um texto compatível.
+	The PIN is incorrect.	O PIN está incorreto.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Não foi possível listar os IDs digitais dos tokens PKCS #11: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	As configurações próprias do driver da impressora para esta impressão: bandeja, tipo de papel, acabamento e mais.
 	The raw text was truncated to what fits.	O texto original foi truncado.
@@ -2462,6 +2475,7 @@ signature pad	Type	Digitar
 	Use 72 DPI (one point per pixel)	Usar 72 DPI (um ponto por pixel)
 	Use a certificate	Usar um certificado
 	Use a Digital ID from a file	Usar uma ID digital de um arquivo
+	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Usar um dispositivo de criação de assinatura (módulo PKCS #11: cartão inteligente, token, CloudSigner para mSzafir)
 	Use custom DPI	Usar DPI personalizado
 	Use default font	Usar fonte padrão
 	Use each image's embedded DPI; use 72 DPI when it is absent.	Usar o DPI incorporado de cada imagem; usar 72 DPI quando estiver ausente.
@@ -2573,6 +2587,7 @@ calendar weekday	We	Qua
 @plural	{field} reads {fields}, which the form doesn't have.|{field} reads {fields}, which the form doesn't have.	{field} lê {fields}, que não existe no formulário.|{field} lê {fields}, que não existem no formulário.
 	{field}: {e}	{field}: {e}
 	{file} is too large for a stamp (at most {n} MB)	{file} é muito grande para um carimbo (no máximo {n} MB)
+	{file}: there is no such file.	{file}: esse arquivo não existe.
 	{folder} is already pinned to Home	{folder} já está fixada no Início
 	{kind} field	campo {kind}
 	{kind} Properties	Propriedades de {kind}

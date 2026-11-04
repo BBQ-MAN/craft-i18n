@@ -172,6 +172,7 @@
 	Advanced Options {chevron}	進階選項 {chevron}
 	Advanced search…	進階搜尋…
 	Advanced unit formats	進階單位格式
+	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	按下簽名後，請在 CloudSigner 視窗中輸入 mSzafir 應用程式提供的 OTT 碼，並在應用程式中核准簽名。開啟 CloudSigner 的持續 OTT 碼後，每隔幾分鐘才需輸入一次。
 	AI assistant	AI 助理
 	AI chat isn't available in the web build; use the desktop app or CLI.	網頁版不支援 AI 聊天；請使用桌面應用程式或 CLI。
 	Algorithm	演算法
@@ -408,6 +409,7 @@
 	Choose raw file…	選擇原始檔案…
 	Choose reference…	選擇參考檔案…
 	Choose the digital ID that you want to use for signing:	選擇要用於簽名的數位 ID：
+	Choose the module's library file.	請選擇模組的程式庫檔案。
 	Choose the two endpoints.	選擇兩個端點。
 	Choose three points on the circle.	選擇圓周上的三個點。
 	Clean Up	清理
@@ -441,6 +443,7 @@
 	Close window	關閉視窗
 	Closed arrow	閉合箭頭
 	Cloud	雲形
+	CloudSigner (mSzafir) is found by itself when it is installed: start it and log in before signing.	安裝 CloudSigner (mSzafir) 後會自動找到：簽名前請先啟動並登入。
 	Collapse all	全部摺疊
 	Collapse all bookmarks	摺疊所有書籤
 	Collapse all pages	摺疊所有頁面
@@ -804,6 +807,7 @@ key	End	End
 	Enter a scale such as 1:50.	請輸入比例，例如 1:50。
 	Enter known map coordinates for at least three page positions.	請輸入至少三個頁面位置的已知地圖座標。
 	Enter permissions password…	輸入許可權密碼…
+	Enter the device's PIN.	請輸入裝置的 PIN。
 	Enter the password that opens it	輸入開啟該檔案的密碼
 	Enter the permissions password to allow combining	輸入權限密碼以允許合併
 	Entire page	整個頁面
@@ -1260,6 +1264,7 @@ key	Home	Home
 	Model:	模型：
 	Modified	修改時間
 	Modify page	修改頁面
+	Module (.dylib, .so, .dll)	模組 (.dylib, .so, .dll)
 	Monochrome Images	單色圖片
 	More options	更多選項
 	More options:	更多選項：
@@ -1576,6 +1581,7 @@ animation effects	On	開
 	Pictures cover pages {pages} (scans?), so the background won't show there.	第 {pages} 頁被圖片覆蓋（掃描檔？），因此那裡不會顯示背景。
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	圖片需要描述性的替代文字，或標為裝飾性。請為每個圖形新增替代文字。
 	Pictures on those pages are recognized too; words already in the page's text are not added again	這些頁面上的圖片也會被辨識；頁面文字中已有的字詞不會重複加入
+	PIN	PIN
 	Pin	釘選
 	Pin a folder to Home	將資料夾釘選到首頁
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	釘選資料夾後，即可在此列出其中最新的 PDF，例如掃描器或同步雲端硬碟儲存檔案的位置。
@@ -1591,6 +1597,8 @@ animation effects	On	開
 	Pinned Tools	已釘選的工具
 	Pinned {folder} to Home	已將 {folder} 釘選到首頁
 	Pinned {tool} to Home	已將 {tool} 釘選至首頁
+	PKCS #11 device  ·  	PKCS #11 裝置  ·  
+	PKCS #11 module	PKCS #11 模組
 	PKCS #11 token  ·  	PKCS #11 權杖  ·  
 	Place caption	放置標題
 	Plain text in reading order; pages are separated by form feeds.	按閱讀順序的純文字；頁面之間用換頁符分隔。
@@ -2157,10 +2165,12 @@ key	Space	空格
 	The answer proposes formatting changes.	回答中包含格式修改建議。
 	The answer stopped unexpectedly.	回答意外中斷。
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	計算順序中有 {n} 個不計算任何內容的項目。「修正順序」會將其刪除。
+	the certificate expired on {date}	憑證已於 {date} 到期
 	The checker found 1 problem which may prevent the document from being fully accessible.	檢驗器發現 1 個問題，可能導致文件無法完全無障礙。
 	The checker found no problems in this document.	檢驗器在本文件中未發現問題。
 	The checker found {n} problems which may prevent the document from being fully accessible.	檢驗器發現 {n} 個問題，可能導致文件無法完全無障礙。
 	The clipboard has no image or text	剪貼簿沒有圖片或文字
+	The device's digital ID isn't available any more; start signing again to list it.	裝置的數位 ID 已無法使用；請重新開始簽名以列出它。
 	The display datum transformation is approximate.	顯示座標的基準轉換為近似值。
 	The document changed while you were editing field properties.	編輯欄位屬性時文件已變更。
 	The document has additional actions (/AA)	此文件具有額外動作（/AA）
@@ -2193,12 +2203,15 @@ key	Space	空格
 	the image is empty	圖片是空的
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	金鑰位於 macOS 鑰匙串中，系統可能會詢問是否允許 PdfCraft 使用它。
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	金鑰位於 Windows 憑證存放區中，系統可能會詢問是否允許 PdfCraft 使用它。
+	The key is on the device, which may ask for its PIN itself.	金鑰在裝置上，裝置可能會自行要求輸入 PIN。
+	The key is on the device, which signs once it has its PIN.	金鑰在裝置上，裝置取得 PIN 後即會簽名。
 	The Keychain's digital IDs couldn't be listed: {e}	無法列出鑰匙串中的數位 ID：{e}
 	The labels are in English: the signature's font can't draw them in this language.	簽名使用的字型無法顯示此語言的標籤，因此標籤以英文顯示。
 	The linked PDF opened, but its named destination was not applied.	已開啟連結的 PDF，但未套用其命名目的地。
 	The linked PDF opened, but its page destination was out of range.	已開啟連結的 PDF，但其頁面目的地超出範圍。
 	The measurement list reached its safety limit.	量測清單已達到安全上限。
 	The model viewport is too narrow to display.	模型視埠太窄，無法顯示。
+	The module's tokens hold no digital ID PdfCraft can sign with.	模組的權杖中沒有 PdfCraft 可用來簽名的數位 ID。
 	the name is not a plain file name	名稱不是單純的檔案名稱
 	The newest {n} of {total} PDFs	共 {total} 個 PDF 中最新的 {n} 個
 	The objects are already aligned.	物件已經對齊。
@@ -2208,6 +2221,7 @@ key	Space	空格
 	the password is incorrect	密碼不正確
 	The password is only used to read the file; it isn't saved.	密碼僅用於讀取檔案，不會被儲存。
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF 文字字型無法顯示「{c}」（{code}）。請選擇支援的文字。
+	The PIN is incorrect.	PIN 不正確。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	無法列出 PKCS #11 權杖的數位 ID：{e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	此次列印的印表機驅動程式專屬設定：紙匣、紙張類型、裝訂整理等。
 	The raw text was truncated to what fits.	原始文字已被截斷。
@@ -2363,6 +2377,7 @@ key	Space	空格
 	Use 72 DPI (one point per pixel)	使用 72 DPI（每個像素一點）
 	Use a certificate	使用憑證
 	Use a Digital ID from a file	使用檔案中的數位 ID
+	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	使用簽名建立裝置（PKCS #11 模組：智慧卡、權杖、mSzafir 的 CloudSigner）
 	Use custom DPI	使用自訂 DPI
 	Use default font	恢復預設字型
 	Use each image's embedded DPI; use 72 DPI when it is absent.	使用每張圖片內嵌的 DPI；沒有時使用 72 DPI。
@@ -2470,6 +2485,7 @@ key	Space	空格
 @plural	{field} reads {fields}, which the form doesn't have.|{field} reads {fields}, which the form doesn't have.	{field} 讀取表單中不存在的 {fields}。
 	{field}: {e}	{field}：{e}
 	{file} is too large for a stamp (at most {n} MB)	{file} 對於戳記來說太大了（最大 {n} MB）
+	{file}: there is no such file.	{file}：沒有這個檔案。
 	{folder} is already pinned to Home	{folder} 已釘選到首頁
 	{kind} field	{kind} 欄位
 	{kind} Properties	{kind} 屬性

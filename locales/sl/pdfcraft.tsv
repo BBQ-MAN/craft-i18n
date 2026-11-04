@@ -166,6 +166,7 @@
 	Advanced options	Napredne možnosti
 	Advanced Options {chevron}	Napredne možnosti {chevron}
 	Advanced search…	Napredno iskanje…
+	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Po kliku Podpiši v okno CloudSignerja vnesite kodo OTT iz aplikacije mSzafir in podpis odobrite v aplikaciji. Z vklopljeno trajno kodo OTT v CloudSignerju se koda zahteva le enkrat na nekaj minut.
 	AI assistant	Pomočnik za UI
 	AI chat isn't available in the web build; use the desktop app or CLI.	Klepet UI ni na voljo v spletni različici; uporabite namizno aplikacijo ali CLI.
 	Algorithm	Algoritem
@@ -388,6 +389,7 @@
 	Choose raw file…	Izberi surovo datoteko…
 	Choose reference…	Izberi referenco…
 	Choose the digital ID that you want to use for signing:	Izberite digitalno identiteto, s katero želite podpisati:
+	Choose the module's library file.	Izberite datoteko knjižnice modula.
 	Clean Up	Počisti
 	Clean-up	Čiščenje
 	Clear all	Počisti vse
@@ -411,6 +413,7 @@
 	Close window	Zapri okno
 	Closed arrow	Zaprta puščica
 	Cloud	Oblak
+	CloudSigner (mSzafir) is found by itself when it is installed: start it and log in before signing.	CloudSigner (mSzafir) se najde sam, če je nameščen: pred podpisovanjem ga zaženite in se prijavite.
 	Collapse all	Strni vse
 	Collapse all bookmarks	Strni vse zaznamke
 	Collapse all pages	Strni vse strani
@@ -743,6 +746,7 @@ key	End	End
 	Enhance scanned file	Izboljšaj skenirano datoteko
 	Enter a scale such as 1:50.	Vnesite merilo, na primer 1:50.
 	Enter permissions password…	Vnesi geslo za dovoljenja …
+	Enter the device's PIN.	Vnesite PIN naprave.
 	Enter the password that opens it	Vnesite geslo, s katerim se odpre
 	Enter the permissions password to allow combining	Vnesite geslo za dovoljenja, da omogočite združevanje
 	Entire page	Cela stran
@@ -1167,6 +1171,7 @@ key	Home	Home
 	Mixed	Mešano
 	Model:	Model:
 	Modify page	Spremeni stran
+	Module (.dylib, .so, .dll)	Modul (.dylib, .so, .dll)
 	Monochrome Images	Enobarvne slike
 	More options	Več možnosti
 	More options:	Več možnosti:
@@ -1467,6 +1472,7 @@ animation effects	On	Vklopljeni
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Strani, ki jih prekrivajo slike (skeniranja?): {pages}; ozadje tam ne bo vidno.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Slike potrebujejo nadomestno besedilo, ki jih opisuje, ali pa morajo biti označene kot dekorativne. Vsaki sliki dodajte nadomestno besedilo.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	Prepoznane bodo tudi slike na teh straneh; besede, ki so že v besedilu strani, ne bodo dodane znova
+	PIN	PIN
 	Pin	Pripni
 	Pin a folder to Home	Pripni mapo na domačo stran
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Pripnite mapo, da se tukaj prikažejo njeni najnovejši PDF-ji, na primer tja, kamor shranjuje vaš skener ali sinhroniziran pogon v oblaku.
@@ -1481,6 +1487,7 @@ animation effects	On	Vklopljeni
 	Pinned Tools	Pripeta orodja
 	Pinned {folder} to Home	Mapa {folder} je pripeta na domačo stran
 	Pinned {tool} to Home	{tool} pripeto na domačo stran
+	PKCS #11 device  ·  	Naprava PKCS #11  ·  
 	PKCS #11 module	Modul PKCS #11
 	PKCS #11 token  ·  	Žeton PKCS #11  ·  
 	Place saved {what}	Postavi shranjeno: {what}
@@ -2014,10 +2021,12 @@ certificate	Subject	Imetnik
 	The answer proposes formatting changes.	Odgovor predlaga spremembe oblikovanja.
 	The answer stopped unexpectedly.	Odgovor se je nepričakovano ustavil.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Vrstni red izračunov ima {n} vnos, ki ne izračuna ničesar. »Popravi vrstni red« ga odstrani.|Vrstni red izračunov ima {n} vnosa, ki ne izračunata ničesar. »Popravi vrstni red« ju odstrani.|Vrstni red izračunov ima {n} vnose, ki ne izračunajo ničesar. »Popravi vrstni red« jih odstrani.|Vrstni red izračunov ima {n} vnosov, ki ne izračunajo ničesar. »Popravi vrstni red« jih odstrani.
+	the certificate expired on {date}	potrdilo je poteklo {date}
 	The checker found 1 problem which may prevent the document from being fully accessible.	Preverjanje je našlo 1 težavo, ki morda preprečuje popolno dostopnost dokumenta.
 	The checker found no problems in this document.	Preverjanje v tem dokumentu ni našlo težav.
 	The checker found {n} problems which may prevent the document from being fully accessible.	Preverjanje je našlo težave: {n}, ki morda preprečujejo popolno dostopnost dokumenta.
 	The clipboard has no image or text	Odložišče nima slike ali besedila
+	The device's digital ID isn't available any more; start signing again to list it.	Digitalna identiteta naprave ni več na voljo; za prikaz znova začnite podpisovanje.
 	The document changed while you were choosing a file, so nothing was changed.	Dokument se je spremenil, medtem ko ste izbirali datoteko, zato ni bilo spremenjeno nič.
 	The document changed while you were editing field properties.	Dokument se je spremenil med urejanjem lastnosti polja.
 	The document has additional actions (/AA)	Dokument ima dodatna dejanja (/AA)
@@ -2051,10 +2060,13 @@ certificate	Subject	Imetnik
 	the image is empty	slika je prazna
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Ključ je v macOS Keychain, ki lahko zahteva dovoljenje, da ga PdfCraft uporabi.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Ključ je v shrambi potrdil Windows, ki lahko zahteva dovoljenje, da ga PdfCraft uporabi.
+	The key is on the device, which may ask for its PIN itself.	Ključ je na napravi, ki lahko sama zahteva PIN.
+	The key is on the device, which signs once it has its PIN.	Ključ je na napravi, ki podpiše, ko dobi PIN.
 	The Keychain's digital IDs couldn't be listed: {e}	Digitalnih identitet iz Keychaina ni bilo mogoče prikazati: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Oznake so v angleščini: pisava podpisa jih v tem jeziku ne more prikazati.
 	The linked PDF opened, but its named destination was not applied.	Povezani PDF se je odprl, vendar njegov poimenovani cilj ni bil uporabljen.
 	The linked PDF opened, but its page destination was out of range.	Povezani PDF se je odprl, vendar je ciljna stran zunaj obsega.
+	The module's tokens hold no digital ID PdfCraft can sign with.	Žetoni modula ne vsebujejo digitalne identitete, s katero bi PdfCraft lahko podpisal.
 	the name is not a plain file name	ime ni preprosto ime datoteke
 	The newest {n} of {total} PDFs	Najnovejših {n} od {total} datotek PDF
 	The objects are already aligned.	Predmeti so že poravnani.
@@ -2065,6 +2077,7 @@ certificate	Subject	Imetnik
 	the password is incorrect	geslo je napačno
 	The password is only used to read the file; it isn't saved.	Geslo se uporabi samo za branje datoteke; ni shranjeno.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Pisave za besedilo PDF ne morejo izrisati znaka „{c}“ ({code}). Izberite podprto besedilo.
+	The PIN is incorrect.	PIN ni pravilen.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Digitalnih identitet iz žetonov PKCS #11 ni bilo mogoče prikazati: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Lastne nastavitve gonilnika tiskalnika za to tiskanje: pladenj za papir, vrsta papirja, dodelava in drugo.
 	The raw text was truncated to what fits.	Surovo besedilo je bilo skrajšano.
@@ -2213,6 +2226,7 @@ signature pad	Type	Vtipkaj
 	Use 72 DPI (one point per pixel)	Uporabi 72 DPI (ena točka na slikovno piko)
 	Use a certificate	Uporabi potrdilo
 	Use a Digital ID from a file	Uporabi digitalno identiteto iz datoteke
+	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Uporabi napravo za ustvarjanje podpisa (modul PKCS #11: pametna kartica, žeton, CloudSigner za mSzafir)
 	Use custom DPI	Uporabi lasten DPI
 	Use default font	Uporabi privzeto pisavo
 	Use each image's embedded DPI; use 72 DPI when it is absent.	Uporabi vdelani DPI vsake slike; če ga ni, uporabi 72 DPI.
@@ -2317,6 +2331,7 @@ signature pad	Type	Vtipkaj
 @plural	{field} reads {fields}, which the form doesn't have.|{field} reads {fields}, which the form doesn't have.	{field} bere {fields}, ki ga v obrazcu ni.|{field} bere {fields}, ki ju v obrazcu ni.|{field} bere {fields}, ki jih v obrazcu ni.|{field} bere {fields}, ki jih v obrazcu ni.
 	{field}: {e}	{field}: {e}
 	{file} is too large for a stamp (at most {n} MB)	Datoteka {file} je prevelika za žig (največ {n} MB)
+	{file}: there is no such file.	{file}: te datoteke ni.
 	{folder} is already pinned to Home	Mapa {folder} je že pripeta na domačo stran
 	{kind} field	Polje: {kind}
 	{kind} Properties	Lastnosti: {kind}
