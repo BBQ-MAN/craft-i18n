@@ -2480,7 +2480,7 @@ certificate	Public key	Chave pública
 	Remove {name} from Recent	Remover {name} dos recentes
 	Remove {n} files	Remover {n} arquivos
 	Remove {n} pages	Remover {n} páginas
-	Remove {standard} identification	Remove {standard} identification
+	Remove {standard} identification	Remover a identificação de {standard}
 	removed	removida
 	Removed 1 hidden item. Save to remove them from the file.	1 item oculto removido. Salve para removê-lo do arquivo.
 	Removed 1 link	1 link removido
@@ -3138,7 +3138,7 @@ calendar weekday	Th	Qui
 	the certificate authorities	as autoridades certificadoras
 	the certificate expired on {date}	o certificado expirou em {date}
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	O certificado de {} não permite essa quantidade de certificados de AC abaixo dele (comprimento do caminho), então não é usado para atestar a validade de {}.
-	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.
+	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	O certificado de {} tem extensões críticas que o PdfCraft não reconhece, por isso não é usado para atestar {}.
 	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	O certificado de {} não é um certificado de AC autorizado a emitir certificados, então não é usado para atestar a validade de {}.
 	The certificate of {} was not valid at the time of signing, so it is not used to vouch for {}.	O certificado de {} não era válido no momento da assinatura, então não é usado para atestar a validade de {}.
 	The check stopped unexpectedly.	A verificação parou inesperadamente.
@@ -3376,9 +3376,9 @@ calendar weekday	Th	Qui
 	The signature {names} locks this field.	A assinatura {names} bloqueia este campo.
 	The signature's byte range does not exclude exactly its contents.	O intervalo de bytes da assinatura não exclui exatamente o conteúdo dela.
 	The signature's byte range does not match the file.	O intervalo de bytes da assinatura não corresponde ao arquivo.
-	The signature's signed attributes have no content type, which CMS requires; it was read anyway.	The signature's signed attributes have no content type, which CMS requires; it was read anyway.
-	The signature's signed attributes have no message digest, so the signature does not cover the document.	The signature's signed attributes have no message digest, so the signature does not cover the document.
-	The signature's signed attributes name a content type other than data, so it is not a signature of the document.	The signature's signed attributes name a content type other than data, so it is not a signature of the document.
+	The signature's signed attributes have no content type, which CMS requires; it was read anyway.	Os atributos assinados da assinatura não têm tipo de conteúdo, que o CMS exige; mesmo assim foram lidos.
+	The signature's signed attributes have no message digest, so the signature does not cover the document.	Os atributos assinados da assinatura não têm resumo de mensagem, por isso a assinatura não cobre o documento.
+	The signature's signed attributes name a content type other than data, so it is not a signature of the document.	Os atributos assinados da assinatura indicam um tipo de conteúdo diferente de dados, por isso não é uma assinatura do documento.
 	The signature's timestamp token could not be verified ({}).	Não foi possível validar o token de carimbo de data e hora da assinatura ({}).
 	The signature's timestamp token does not cover the signature value.	O token de carimbo de data e hora da assinatura não abrange o valor da assinatura.
 	The signed content is a constructed (segmented) OCTET STRING, as BER allows; it was read anyway.	O conteúdo assinado é uma OCTET STRING construída (segmentada), como permite o BER; mesmo assim, foi lido.
@@ -3411,7 +3411,7 @@ calendar weekday	Th	Qui
 	The tesseract program, run as an external process	O programa tesseract, executado como processo externo
 	The text is the same	O texto é o mesmo
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	os modelos de reconhecimento de texto não estão instalados (reinstale o PdfCraft ou defina PDFCRAFT_MODELS como a pasta que os contém)
-	The timestamp authority's certificate is not issued for time stamping.	The timestamp authority's certificate is not issued for time stamping.
+	The timestamp authority's certificate is not issued for time stamping.	O certificado da autoridade de carimbo de data/hora não foi emitido para carimbo de data/hora.
 	The timestamp authority's certificate was not valid at the time of timestamping.	O certificado da autoridade de carimbo de data e hora não era válido no momento da emissão do carimbo.
 	The timestamp contents are not hexadecimal.	O conteúdo do carimbo de data e hora não está em hexadecimal.
 	The timestamp has no valid byte range.	O carimbo de data e hora não tem um intervalo de bytes válido.
@@ -3539,7 +3539,7 @@ calendar weekday	Th	Qui
 	This printer only prints one-sided.	Esta impressora imprime apenas em um lado.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	O driver desta impressora não aceita configurações de frente e verso de outros programas, então vale a configuração dele. Altere em Propriedades…
 	this signature can't be removed on its own	esta assinatura não pode ser removida sozinha
-	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.
+	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Esta assinatura usa uma chave RSA menor que 2048 bits, que já não é considerada forte o suficiente para assinaturas. Ela ainda é validada, mas não se deve confiar nela.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Esta assinatura usa RIPEMD-160, um algoritmo de hash legado de 160 bits que não é mais recomendado para assinaturas. Ela ainda é validada, mas não deve ser considerada confiável.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Esta assinatura usa SHA-1, um algoritmo de hash fraco para o qual já foram demonstradas colisões. Ela ainda é validada porque muitos documentos assinados há anos o utilizam, mas não deve ser considerada confiável.
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	este serviço de assinatura não pode ser usado: ele exige login OAuth em um navegador, que o PdfCraft ainda não suporta
