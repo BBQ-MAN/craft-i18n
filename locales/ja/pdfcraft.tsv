@@ -1443,6 +1443,7 @@ key	Home	Home
 	Keep	保持
 	Keep all images	すべての画像をそのまま
 	Keep an empty signature field to sign again	空の署名フィールドを残して署名し直せるようにする
+	Keep only how the signatures look, as page content (a name or date they show stays visible)	署名の見た目だけをページの内容として残す（表示されている名前や日付は見えたまま）
 	Keep opaque images	不透明な画像はそのまま
 	Keep source fonts	元のフォントを保持
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Windows のタイトルバーをタブバーの上に残します。オフにすると、タブバーがタイトルバーになり、ウィンドウボタンはその右端に並びます。最大化ボタンのスナップレイアウトには Windows のタイトルバーが必要です。
@@ -2277,6 +2278,7 @@ animation effects	On	オン
 	Remove signature	署名を削除
 	Remove signature…	署名を削除…
 	Remove tag, keep its contents	タグを削除して内容を保持
+	Remove the digital signatures: their fields, how they look on the page and their validation data	デジタル署名を削除する：署名フィールド、ページ上の外観、検証データ
 	Remove the signature {name}	署名 {name} を削除
 	Remove unit	単位を削除
 	Remove unreferenced named destinations	参照されていない名前付き移動先を削除
@@ -2419,6 +2421,8 @@ animation effects	On	オン
 	Same as interface ({language})	表示言語と同じ（{language}）
 	Sanitize	非表示情報を削除
 	Sanitize document	文書の機密情報を削除
+	Sanitize document and flatten signatures	文書の機密情報を削除して署名を平坦化
+	Sanitize document and remove signatures	文書の機密情報と署名を削除
 	Sanitize Documents	文書の非表示情報を削除
 	Sanitize document…	文書の機密情報を削除…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	非表示情報の削除では、メタデータ、添付ファイル、注釈、フォームフィールド（統合）、非表示テキストとレイヤー、しおり、リンク、アクション、スクリプト、アプリケーションのプライベートデータを文書から削除します。
@@ -3117,6 +3121,7 @@ document scrollbar width	Standard	標準
 	This document has no XMP metadata.	この文書にはXMPメタデータがありません。
 	This document has no {kind} to change	この文書に変更する{kind}はありません
 	This document hasn't been checked yet.	この文書はまだチェックされていません。
+	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	この文書にはデジタル署名があります。機密情報の削除はファイル全体を書き直すため署名が無効になります。署名を削除する場合にのみ実行できます。
 	This document is not inside a CAdES envelope	この文書はCAdES署名エンベロープの内部にありません。
 	This document is secured. Some changes are restricted by its security settings.	この文書は保護されています。セキュリティ設定により一部の変更が制限されています。
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	この文書は署名済みです。書き直すと署名が無効になります（代わりに増分保存してください）
