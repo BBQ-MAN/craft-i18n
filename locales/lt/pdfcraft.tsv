@@ -50,7 +50,12 @@
 	a bookmark cannot be moved inside itself	žymelės negalima perkelti į ją pačią
 	A button	Mygtukas
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Švarių patalpų principu kuriama atvirojo kodo PDF programa, parašyta „Rust“ kalba. MIT OR Apache-2.0.
+	A colour operator's operands don't match its colour space	Spalvos operatoriaus operandai neatitinka jo spalvų erdvės
+	A colour space is nested too deeply to convert	Spalvų erdvė įdėta per giliai, kad būtų galima ją konvertuoti
+	A colour space's ICC profile can't be used to convert its colour	Spalvų erdvės ICC profilio negalima naudoti jos spalvai konvertuoti
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	stulpelis per siauras: praplatinkite sritį, skirkite stulpeliui daugiau pločio arba naudokite mažiau stulpelių ar mažesnį tarpą tarp jų
+	A content stream can't be read, so its colour can't be converted	Turinio srauto negalima perskaityti, todėl jo spalvos negalima konvertuoti
+	A content stream is drawn with different resources in different places, so its colour can't be converted	Turinio srautas skirtingose vietose piešiamas su skirtingais ištekliais, todėl jo spalvos negalima konvertuoti
 	A cover on the scanner is open.	Skaitytuvo dangtis atidarytas.
 	A diagonal CONFIDENTIAL watermark on every page.	Įstrižas vandenženklis „KONFIDENCIALU“ kiekviename puslapyje.
 	a document must keep at least one page	dokumente turi likti bent vienas puslapis
@@ -65,17 +70,23 @@
 	A graphics state uses a soft mask	Grafikos būsena naudoja minkštąją kaukę
 	A graphics state uses the {} blend mode	Grafikos būsena naudoja maišymo režimą {}
 	a header cell with no Scope, in a table that doesn't use Headers	antraštės langelis be Scope lentelėje, kurioje nenaudojama Headers
+	A JPEG picture in CMYK can't be converted yet	JPEG paveikslėlio CMYK spalvomis dar negalima konvertuoti
 	A link	Saitas
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Vietinis modelis nėraflagšipinis debesies modelis: jis gali klysti, o ilgas atsakymas procesoriuje užtrunka. Patikrinkite visa, kas svarbu, ir prieš atsisiųsdami atmintokite modelio dydį pagal šį kompiuterį.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logotipas arba pavadinimas kairėje nuo kortelių, kur jį rodytų antraštės juosta: PdfCraft arba jūsų įmonės.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Puslapių skaičius sustabdo tiekiklį po tiek lapų. Atšaukimas baigia perdavimą anksčiau; jau gauti puslapiai lieka dokumente.
+	A pattern over RGB or device-independent colour can't be converted to CMYK yet	Rašto, paremto RGB arba nuo įrenginio nepriklausoma spalva, dar negalima konvertuoti į CMYK
 	A picture covers page {pages} (a scan?), so the background won't show there.	Paveikslėliu padengtas puslapis (nuskaitytas?): {pages}; fonas ten nesimatys.
+	A picture with a decode array or a colour-key mask can't be converted to CMYK yet	Paveikslėlio su dekodavimo masyvu arba spalvos rakto kauke dar negalima konvertuoti į CMYK
+	A picture with other than 8 bits per component can't be converted to CMYK yet	Paveikslėlio, kurio komponentui tenka ne 8 bitai, dar negalima konvertuoti į CMYK
+	A picture's data can't be read, so it can't be converted to CMYK	Paveikslėlio duomenų negalima perskaityti, todėl jo negalima konvertuoti į CMYK
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG arba SVG failas. Jis skaitomas iš šios vietos kiekvieną kartą paleidus PdfCraft.
 	A PrinterMark annotation overlaps the TrimBox or ArtBox	PrinterMark anotacija persidengia su TrimBox arba ArtBox
 	A script	Scenarijus
 	a second {} in its table	antras {} jo lentelėje
 	A selected field has no widget on any page, so the fields can't be edited together.	Pasirinktas laukas neturi valdiklio jokiame puslapyje, todėl laukų negalima redaguoti kartu.
 	A setting isn't valid	Nustatymas netinkamas
+	A shading in RGB or device-independent colour can't be converted to CMYK yet	Šešėliavimo RGB arba nuo įrenginio nepriklausoma spalva dar negalima konvertuoti į CMYK
 	A signature is still waiting for its approval.	Parašas vis dar laukia patvirtinimo.
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Parašas, kuris yra puslapio turinio dalis (pvz., nuskaitytame puslapyje), nėra nei laukas, nei anotacija, todėl jo negalima pašalinti atskirai, o PdfCraft netrina puslapio dalių, kad jį paslėptų. Norėdami jį pašalinti, pašalinkite konfidencialią tos srities informaciją (Pašalinti konfidencialią informaciją) arba, jei parašas yra atskiras paveikslėlis, ištrinkite jį su „Redaguoti PDF“.
 	A stream refers to an external file	Srautas nurodo išorinį failą
@@ -269,6 +280,7 @@
 	An image has a soft mask	Paveikslėlis turi minkštąją kaukę
 	An image has alternates or OPI information	Paveikslėlis turi alternatyvių versijų arba OPI informacijos
 	An image or form has OPI information	Paveikslėlis arba forma turi OPI informacijos
+	An indexed colour space's table is too short to convert	Indeksuotos spalvų erdvės lentelė per trumpa, kad būtų galima ją konvertuoti
 	An open-source PDF workbench — local, private, and scriptable.	Atvirojo kodo PDF aplinka — vietinė, privati ir valdoma scenarijais.
 	An optional content configuration has an AS entry	Pasirenkamojo turinio konfigūracija turi įrašą AS
 	and {n} more	ir dar {n}
@@ -407,6 +419,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Calibrate…	Kalibruoti…
 	Callout	Išnaša
 	Can't be read: {e}	Nepavyksta perskaityti: {e}
+	Can't save as {level}; nothing was changed:	Negalima įrašyti kaip {level}; niekas nepakeista:
 	Cancel reverse sides	Atšaukti kitas puses
 	Canceling…	Atšaukiama…
 	Cancelled	Atšaukta
@@ -509,6 +522,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Choose an image	Pasirinkite paveikslėlį
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Pasirinkite kitą failą: originalas lieka nepakeistas, o versija be parašo įrašoma šalia jo.
 	Choose font…	Pasirinkti šriftą…
+	Choose ICC profile…	Pasirinkti ICC profilį…
 	Choose images	Pasirinkite paveikslėlius
 	Choose image…	Pasirinkite paveikslėlį…
 	Choose new keys for {command}	Pasirinkite naujus klavišus komandai {command}
@@ -553,6 +567,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Closed arrow	Uždara rodyklė
 	Cloud	Debesis
 	CloudSigner (mSzafir) is found by itself when it is installed: start it and log in before signing.	„CloudSigner“ („mSzafir“) randamas automatiškai, jei įdiegtas: prieš pasirašydami jį paleiskite ir prisijunkite.
+	CMYK colour needs a CMYK printing condition	CMYK spalvai reikia CMYK spausdinimo sąlygos
 	Code sent	Kodas išsiųstas
 	Collapse all	Suskleisti viską
 	Collapse all bookmarks	Suskleisti visas žymeles
@@ -626,6 +641,8 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Contrast	Kontrastas
 	Convert colors	Konvertuoti spalvas
 	Convert mode	Konvertavimo veiksena
+	Converted to {level} ({n} changes)	Konvertuota į {level} (pakeitimų: {n})
+	Converting colour to CMYK needs the printing condition's ICC profile: choose a profile file	Spalvai konvertuoti į CMYK reikia spausdinimo sąlygos ICC profilio: pasirinkite profilio failą
 	Converting {name}…	Konvertuojamas {name}…
 	Copied to clipboard	Nukopijuota į iškarpinę
 	Copied {what}	Nukopijuota: {what}
@@ -671,6 +688,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Couldn't optimize the file: {e}	Nepavyko optimizuoti failo: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Nepavyko spausdinti iš naršyklės ({e}); vietoj to atsisiųstas spausdintinas failas {name}
 	Couldn't reach the printer	Nepavyko pasiekti spausdintuvo
+	Couldn't read the ICC profile {name}: {e}	Nepavyko perskaityti ICC profilio {name}: {e}
 	Couldn't read {name}: {e}	Nepavyko perskaityti {name}: {e}
 	Couldn't recover {name}: {e}	Nepavyko atkurti {name}: {e}
 	Couldn't reload {name}: {e}	Nepavyko iš naujo įkelti {name}: {e}
@@ -1182,6 +1200,7 @@ calendar date	February	vasario
 	Fixed what could be fixed; {n} problems remain	Ištaisyta tai, ką buvo galima; liko problemų: {n}
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	Šį įdiegimą tvarko Flatpak. Naujinimų ieškokite sistemos programinės įrangos tvarkytuvėje arba naudodami flatpak update.
 	Flatten comments	Suplokštinti komentarus
+	Flatten comments and form fields	Suplokštinti komentarus ir formos laukus
 	Flatten Fill & Sign	Suplokštinti pildymo ir pasirašymo turinį
 	Flatten Fill & Sign when saving	Įrašant suplokštinti pildymo ir pasirašymo turinį
 	Flatten form fields	Suplokštinti formos laukus
@@ -1335,6 +1354,7 @@ key	Home	Home
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Vengrų kalbos OCR reikia darbalaukio programos su Tesseract 5 ir hun kalbos modeliu. Įdiegę paleiskite PdfCraft iš naujo.
 	H{n} follows an H{d}; headings should not skip levels	Po H{d} eina H{n}; antraščių lygiai neturi būti praleidžiami
 	I confirm sending this document to this printer	Patvirtinu, kad šis dokumentas siunčiamas į šį spausdintuvą
+	ICC profile: {name}	ICC profilis: {name}
 	Identity	Tapatybė
 	Image (PNG)	Paveikslėlis (PNG)
 	Image field	Paveikslėlio laukas
@@ -1438,6 +1458,7 @@ calendar date	January	sausio
 	JavaScript, e.g. getField("total").value	JavaScript, pvz., getField("total").value
 	JBIG2 (lossless)	JBIG2 (be nuostolių)
 	Join the ArtCraft community	Prisijunkite prie „ArtCraft“ bendruomenės
+	JPEG 2000 pictures need PDF 1.5, newer than {} allows	JPEG 2000 paveikslėliams reikia PDF 1.5, naujesnės versijos nei leidžia {}
 	July	liepa
 calendar date	July	liepos
 	June	birželis
@@ -1472,6 +1493,7 @@ certificate	Key usage	Rakto naudojimas
 	Later in tab order	Vėlesnė skirtukų tvarka
 	Latin (accented)	Lotynų (su diakritiniais ženklais)
 	Layer options	Sluoksnių parinktys
+	Layers (optional content) need PDF 1.5, newer than {} allows	Sluoksniams (pasirinktiniam turiniui) reikia PDF 1.5, naujesnės versijos nei leidžia {}
 	Layers panel	Sluoksnių skydelis
 	Layers Panel and Page	Sluoksnių skydelis ir puslapis
 	Layout and Magnification	Išdėstymas ir mastelis
@@ -1766,6 +1788,7 @@ calendar weekday	Mo	Pr
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Nė vieno iš šių failų negalima paversti PDF; naudokite PDF, paveikslėlius arba .txt failus
 	None of your digital IDs can open this document.	Nė vienas jūsų skaitmeninis ID negali atverti šio dokumento.
 	None — everything is allowed	Nėra — viskas leidžiama
+	None: sRGB for RGB and gray documents	Nėra: sRGB RGB ir pilkos spalvos dokumentams
 	Normal	Įprasta
 scroll speed	Normal	Įprastas
 	Normal page	Įprastas puslapis
@@ -1879,6 +1902,7 @@ animation effects	On	Įjungta
 	Opening the browser's print dialog…	Atveriamas naršyklės spausdinimo dialogas…
 	Opening {name}…	Atidaroma {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Atveriamos spausdintuvo tvarkyklės nuostatos. Jos įrašomos visiems šiuo kompiuteriu atliekamiems spausdinimams; čia pasirinktas kopijų skaičius, dvipusis spausdinimas, pilki atspalviai ir popierius lieka taikomi.
+	OpenType font programs need PDF 1.6, newer than {} allows	OpenType šriftų programoms reikia PDF 1.6, naujesnės versijos nei leidžia {}
 	Optical resolution {x} × {y} dpi.	Optinė skyra {x} × {y} dpi.
 	Optimization cancelled	Optimizavimas atšauktas
 	Optimization is already running	Optimizavimas jau vykdomas
@@ -1920,7 +1944,9 @@ animation effects	On	Įjungta
 	Outline view	Kontūrų rodinys
 	Output appears here.	Čia bus rodoma išvestis.
 	Output folder	Išvesties aplankas
+	Output intent profile:	Išvesties paskirties profilis:
 	Output intent: {list}	Išvesties paskirtis: {list}
+	Output intents with profiles don't all share one profile	Išvesties paskirtys su profiliais nenaudoja vieno bendro profilio
 	Output preview	Išvesties peržiūra
 	Owner password (no restrictions apply)	Savininko slaptažodis (apribojimai netaikomi)
 	Package: {name}	Paketas: {name}
@@ -1968,6 +1994,7 @@ animation effects	On	Įjungta
 	Page {p}: {n} untagged content item	Puslapis {p}: turinio elementų be žymų: {n}
 	Page {p}: {n} untagged content items	Puslapis {p}: turinio elementų be žymų: {n}
 	Page {} has additional actions	Puslapis {} turi papildomų veiksmų
+	Page {}'s TrimBox, BleedBox and CropBox don't overlap	{} puslapio TrimBox, BleedBox ir CropBox nepersidengia
 	pages	puslapiai
 	pages added or removed	puslapių pridėjimas arba šalinimas
 	Pages counted	Suskaičiuoti puslapiai
@@ -2020,7 +2047,9 @@ animation effects	On	Įjungta
 	PDF version	PDF versija
 	PDF, images and text	PDF, paveikslėliai ir tekstas
 	PDF/A and standards advice	Patarimai dėl PDF/A ir standartų
+	PDF/A embeds the output intent's ICC profile: choose a profile file	PDF/A įterpia išvesties paskirties ICC profilį: pasirinkite profilio failą
 	PDF/A…	PDF/A…
+	PDF/X-4 embeds the printing condition's ICC profile: choose a profile file	PDF/X-4 įterpia spausdinimo sąlygos ICC profilį: pasirinkite profilio failą
 	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	„PdfCraft“ dar negali patikrinti šio parašo: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	„PdfCraft“ buvo uždaryta netinkamai. Šių dokumentų pakeitimai buvo automatiškai įrašyti:
@@ -2123,6 +2152,7 @@ animation effects	On	Įjungta
 	Printer status: {state}	Spausdintuvo būsena: {state}
 	Printer's mark annotation on page {p} is in the structure tree	Spaudos žymės anotacija puslapyje {p} yra struktūros medyje
 	Printing allowed	Leidžiama spausdinti
+	Printing condition:	Spausdinimo sąlyga:
 	Privacy	Privatumas
 	Private data of other applications	Kitų programų privatūs duomenys
 	Producer	PDF kūrimo programa
@@ -2442,6 +2472,8 @@ calendar weekday	Sa	Št
 	Saved measurements.	Matavimai įrašyti.
 	Saved the print-ready PDF to {path}	Spausdinimui parengtas PDF įrašytas į {path}
 	Saved {name}	Įrašyta: {name}
+	Saved {name} and verified it: it conforms to {level}.	{name} įrašytas ir patikrintas: atitinka {level} reikalavimus.
+	Saved {name}, but verifying it found {n} problems.	{name} įrašytas, bet patikrinus rasta problemų: {n}.
 	Saved {place}: {before} → {after} (not smaller){detail}	Įrašyta {place}: {before} → {after} (nesumažėjo){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Įrašyta {place}: {before} → {after} (sumažėjo {pct}%){detail}
 	Saved, but reopening failed: {e}	Įrašyta, tačiau nepavyko atverti iš naujo: {e}
@@ -2826,6 +2858,7 @@ certificate	Subject	Sertifikato subjektas
 	Text Field Table	Teksto laukų lentelė
 	Text field table	Teksto laukų lentelė
 	Text in images isn't found; recognise text (OCR) first.	Paveikslėliuose esantis tekstas nerandamas; pirmiausia atpažinkite tekstą (OCR).
+	Text in the font {} uses the Private Use Area without ActualText	Tekstas šriftu {} naudoja privačiojo naudojimo sritį be ActualText
 	Text is compared word by word; the differences are shown on the new file.	Tekstas lyginamas žodis po žodžio; skirtumai rodomi naujame faile.
 	Text language is specified	Teksto kalba nurodyta
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Tekstas turi pakankamai išsiskirti iš fono, kad jį matytų silpnaregiai. Patikrinkite spalvas vizualiai arba kontrasto tikrinimo įrankiu.
@@ -2870,6 +2903,7 @@ calendar weekday	Th	Kt
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Darbalaukio portalo failų parinkiklis neveikia ({packages}). Patikrinkite jį komanda systemctl --user status {first} arba atsijunkite ir vėl prisijunkite.
 	The device's digital ID isn't available any more; start signing again to list it.	Įrenginio skaitmeninis ID nebepasiekiamas; pradėkite pasirašyti iš naujo, kad jis būtų parodytas.
 	The Dock shows it the next time PdfCraft opens.	„Dock“ ją rodys kitą kartą atidarius „PdfCraft“.
+	The document can't be converted: {}	Dokumento negalima konvertuoti: {}
 	The document changed while it was being signed, so the signature wasn't saved.	Pasirašant dokumentas pasikeitė, todėl parašas neišsaugotas.
 	The document changed while its margins were measured; nothing was cropped	Dokumentas pasikeitė matuojant paraštes; niekas neapkirpta
 	The document changed while you were choosing a file, so nothing was changed.	Renkantis failą dokumentas pasikeitė, todėl pakeitimai nepritaikyti.
@@ -2886,6 +2920,7 @@ calendar weekday	Th	Kt
 	The document has document-level JavaScript	Dokumentas turi dokumento lygmens „JavaScript“ scenarijų
 	the document has no form fields	dokumente nėra formos laukų
 	the document has no page tree	dokumente nėra puslapių medžio
+	The document has no structure tree: it isn't tagged	Dokumentas neturi struktūros medžio: jis nežymėtas
 	the document has no tags	dokumente nėra žymų
 	The document has no tags (structure tree)	Dokumentas neturi žymų (struktūros medžio)
 	The document has no title	Dokumentas neturi pavadinimo
@@ -2893,14 +2928,17 @@ calendar weekday	Th	Kt
 	The document information and the metadata name different PDF/X versions	Dokumento informacijoje ir metaduomenyse nurodytos skirtingos PDF/X versijos
 	The document information doesn't identify the file as {}	Dokumento informacija nenurodo, kad failas atitinka {}
 	The document is encrypted	Dokumentas užšifruotas
+	The document is encrypted: open it with its permissions password to remove the security	Dokumentas užšifruotas: atidarykite jį su leidimų slaptažodžiu, kad pašalintumėte apsaugą
 	The document is no longer open.	Dokumentas jau užvertas.
 	the document is protected by a password	dokumentas apsaugotas slaptažodžiu
+	The document isn't marked as tagged (MarkInfo /Marked true)	Dokumentas nepažymėtas kaip žymėtas (MarkInfo /Marked true)
 	The document isn't marked as tagged (MarkInfo Marked)	Dokumentas nepažymėtas kaip turintis struktūros žymas (MarkInfo Marked)
 	The document isn't tagged, so none of its content is	Dokumentas neturi struktūros žymų, todėl jų neturi ir jo turinys
 	The document now conforms to {level}; save it to keep the changes	Dokumentas dabar atitinka {level}; įrašykite jį, kad išsaugotumėte pakeitimus
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Dokumentą galima atverti be slaptažodžio; šis slaptažodis reikalingas apribojimams keisti. Jis pritaikomas įrašant dokumentą.
 	The document sets no language (Lang), and neither do its tags	Dokumente nenurodyta kalba (Lang), jo žymose taip pat
 	The document uses both H and numbered headings (H1–H6)	Dokumente naudojamos ir H, ir numeruotos antraštės (H1–H6)
+	The document uses CMYK colour: choose the ICC profile of a CMYK printing condition for its output intent	Dokumente naudojama CMYK spalva: pasirinkite CMYK spausdinimo sąlygos ICC profilį jo išvesties paskirčiai
 	The document was changed in another window. Check your text, then apply it again.	Dokumentas buvo pakeistas kitame lange. Patikrinkite savo tekstą ir pritaikykite jį dar kartą.
 	The document was closed before it could be saved.	Dokumentas užvertas prieš jį įrašant.
 	The document wasn't signed: {e}	Dokumentas nepasirašytas: {e}
@@ -2931,12 +2969,18 @@ calendar weekday	Th	Kt
 	the first heading is an H{n}; headings should not skip levels	pirmoji antraštė yra H{n}; antraščių lygiai neturi būti praleidžiami
 	the first row number can be at most {max}	pirmosios eilutės numeris gali būti ne didesnis nei {max}
 	The font must include Latin letters and numbers for interface controls.	Šrifte turi būti lotyniškų raidžių ir skaičių, reikalingų sąsajos valdikliams.
+	The font {} has characters with no Unicode value	Šrifte {} yra simbolių be Unicode reikšmės
 	The font {} isn't embedded	Šriftas {} neįdėtas
+	The font {} maps characters to U+0000, U+FEFF or U+FFFE	Šriftas {} susieja simbolius su U+0000, U+FEFF arba U+FFFE
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	„PdfCraft“ naudojami šriftai negali atvaizduoti simbolio „{c}“ ({code}), todėl visose PDF žiūryklėse jis rodomas kaip ?. Tekstas įrašytas.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Forma prašo pateikti duomenis į {u}; „PdfCraft“ formos duomenų nesiunčia. Įrašykite dokumentą, kad išsaugotumėte įvestas reikšmes.
 	The form asks viewers to make appearances (NeedAppearances)	Forma prašo žiūryklių sukurti laukų išvaizdą (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	Formos paskirtis ir jos laukai (pavadinimai, tipai, tabuliatoriaus seka)
 	The fronts already scanned are kept for the reverse-side pass.	Jau nuskaitytos pirmosios pusės paliekamos kitų pusių perėjimui.
+	The ICC profile {} isn't a CMYK profile, which PDF/X-1a needs	ICC profilis {} nėra CMYK profilis, kurio reikia PDF/X-1a
+	The ICC profile {} isn't a gray, RGB or CMYK profile	ICC profilis {} nėra pilkos spalvos, RGB ar CMYK profilis
+	The ICC profile {} isn't an output (printer) profile	ICC profilis {} nėra išvesties (spausdintuvo) profilis
+	The ICC profile {} isn't an output or display profile	ICC profilis {} nėra nei išvesties, nei ekrano profilis
 	The image couldn't be used as an icon: {e}	Paveikslėlio nepavyko naudoti kaip piktogramos: {e}
 	The image has been copied ({w} × {h} pixels)	Paveikslėlis nukopijuotas ({w} × {h} pikselių)
 	The image has been copied as a {ext} file	Paveikslėlis nukopijuotas kaip {ext} failas
@@ -2949,6 +2993,7 @@ calendar weekday	Th	Kt
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Raktas yra įrenginyje {device}, kuris pats paprašo patvirtinimo (PIN klaviatūra arba programėlė jūsų telefone).
 	The Keychain's digital IDs couldn't be listed: {e}	Nepavyko gauti raktinėje esančių skaitmeninių ID sąrašo: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Etiketės rodomos angliškai: parašo šriftas negali jų atvaizduoti šia kalba.
+	The language {} isn't a valid language tag	Kalba {} nėra tinkama kalbos žymė
 	The linked PDF opened, but its named destination was not applied.	Susietas PDF atvertas, tačiau pavadinta paskirties vieta nepritaikyta.
 	The linked PDF opened, but its page destination was out of range.	Susietas PDF atvertas, tačiau paskirties puslapis nepatenka į puslapių intervalą.
 	The metadata doesn't identify the file as PDF/UA (pdfuaid:part)	Metaduomenys nenurodo, kad failas yra PDF/UA (pdfuaid:part)
@@ -2974,6 +3019,7 @@ calendar weekday	Th	Kt
 	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	Išvesties paskirties profilis neturi įrenginio į PCS transformacijos (AToB1 arba grayTRC)
 	The output intent's profile isn't a valid ICC profile	Išvesties paskirties profilis nėra galiojantis ICC profilis
 	The output intent's profile isn't an output (printer) profile	Išvesties paskirties profilis nėra išvesties (spausdintuvo) profilis
+	The output profile can't convert colour to CMYK ({})	Išvesties profilis negali konvertuoti spalvos į CMYK ({})
 	The page has both a TrimBox and an ArtBox	Puslapis turi ir TrimBox, ir ArtBox
 	The page has changed; select the image again	Puslapis pasikeitė; pažymėkite paveikslėlį iš naujo
 	The page has neither a TrimBox nor an ArtBox	Puslapis neturi nei TrimBox, nei ArtBox
@@ -3016,6 +3062,7 @@ calendar weekday	Th	Kt
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Apribojimai taikomi gavėjams be „Visi leidimai“. Pritaikoma įrašant.
 	The reverse sides already scanned are kept.	Jau nuskaitytos kitos pusės paliekamos.
 	The reverse sides were cancelled: their document was closed.	Antrųjų pusių nuskaitymas atšauktas: jų dokumentas uždarytas.
+	The role map maps {} in a circle	Vaidmenų žemėlapis susieja {} ratu
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	eilutės per žemos: padidinkite srities aukštį arba naudokite mažiau eilučių ar mažesnį tarpą tarp jų
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA parašo reikšmės ilgis neatitinka rakto modulio ilgio (pradžioje pašalinti arba pridėti nuliniai baitai); ji vis tiek perskaityta.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	RSA parašo „DigestInfo“ neturi parametro NULL (taip įrašo senesnės pasirašymo programos); jis vis tiek perskaitytas.
@@ -3084,8 +3131,11 @@ calendar weekday	Th	Kt
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	pasirašymo paslauga atmetė PIN kodą arba OTP (galbūt baigėsi OTP galiojimas)
 	the signing service rejected the user name or password	pasirašymo paslauga atmetė naudotojo vardą arba slaptažodį
 	The smart card's digital IDs couldn't be listed: {e}	Nepavyko išvardyti lustinės kortelės skaitmeninių ID: {e}
+	The spot colour {} has an alternate that can't be converted to CMYK yet	Taškinė spalva {} turi alternatyvą, kurios dar negalima konvertuoti į CMYK
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standartiniai šriftai negali atvaizduoti simbolio „{c}“ ({code}). Kol kas galima įvesti tik Vakarų Europos simbolius.
 	The standard it must meet and where the file goes	Standartas, kurio reikia laikytis, ir kur eina failas
+	The standard structure type {} is mapped to a type that isn't standard	Standartinis struktūros tipas {} susietas su nestandartiniu tipu
+	The structure type {} isn't standard and isn't mapped to a standard type	Struktūros tipas {} nėra standartinis ir nesusietas su standartiniu tipu
 	The text is the same	Tekstas sutampa
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	teksto atpažinimo modeliai neįdiegti (iš naujo įdiekite „PdfCraft“ arba nustatykite PDFCRAFT_MODELS aplanką, kuriame jie laikomi)
 	The timestamp authority's certificate is not issued for time stamping.	The timestamp authority's certificate is not issued for time stamping.
@@ -3548,7 +3598,9 @@ document scrollbar width	Wide	Platus
 	{} annotation on page {p} isn't tagged	Anotacija {} puslapyje {p} neturi struktūros žymos
 	{} annotation on page {p}: its description has no language (Lang)	Anotacija {} puslapyje {p}: jos aprašas neturi kalbos (Lang)
 	{} annotations aren't allowed	Anotacijos {} neleidžiamos
+	{} colour can't be converted to CMYK yet	{} spalvos dar negalima konvertuoti į CMYK
 	{} colour doesn't match the output intent's colour space	{} spalvos neatitinka išvesties paskirties spalvų erdvės
+	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} reikia įterpto spausdinimo sąlygos ICC profilio RGB arba nuo įrenginio nepriklausomai spalvai: pasirinkite profilio failą
 	ΔLOC	ΔEil.
 	— (protection is applied when you save)	— (apsauga pritaikoma įrašant)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	„{name}“ diske pasikeitė po atidarymo arba paskutinio įrašymo. Įrašius dabar ta naujesnė versija bus pakeista šia.

@@ -384,6 +384,7 @@
 	Calibrate…	Калибровать…
 	Callout	Выноска
 	Can't be read: {e}	Нельзя прочитать: {e}
+	Can't save as {level}; nothing was changed:	Не удаётся сохранить как {level}; ничего не изменено:
 	Cancel caption placement	Отменить размещение подписи
 	Cancel reverse sides	Отменить оборотные стороны
 	Canceling…	Отмена…
@@ -483,6 +484,7 @@
 	Choose an image	Выберите изображение
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Выберите другой файл: оригинал остаётся без изменений, а версия без подписи сохраняется рядом с ним.
 	Choose font…	Выбрать шрифт…
+	Choose ICC profile…	Выбрать профиль ICC…
 	Choose images	Выбрать изображения
 	Choose image…	Выбрать изображение…
 	Choose new keys for {command}	Выберите новые клавиши для {command}
@@ -608,6 +610,7 @@
 	Convert	Конвертация
 	Convert colors	Преобразовать цвета
 	Convert mode	Режим конвертирования
+	Converted to {level} ({n} changes)	Преобразовано в {level} (изменений: {n})
 	Converting {name}…	Преобразование {name}…
 	Converts PDF user coordinates to easting, northing and elevation.	Преобразует пользовательские координаты PDF в восточную и северную координаты и высоту.
 	Copied {what}	Скопировано: {what}
@@ -651,6 +654,7 @@
 	Couldn't optimize the file: {e}	Не удалось оптимизировать файл: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Не удалось напечатать из браузера ({e}); вместо этого для печати скачан файл {name}
 	Couldn't reach the printer	Не удалось связаться с принтером
+	Couldn't read the ICC profile {name}: {e}	Не удалось прочитать профиль ICC {name}: {e}
 	Couldn't read {name}: {e}	Не удалось прочитать {name}: {e}
 	Couldn't recover {name}: {e}	Не удалось восстановить {name}: {e}
 	Couldn't reload {name}: {e}	Не удалось перезагрузить {name}: {e}
@@ -1153,6 +1157,7 @@ scroll speed	Fast	Высокая
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	Flatpak управляет этой установкой. Проверяйте обновления в системном менеджере программ или командой flatpak update.
 	Flatten	Расплющить
 	Flatten comments	Расплющить комментарии
+	Flatten comments and form fields	Расплющить комментарии и поля форм
 	Flatten Fill & Sign when saving	Расплющить «Заполнить и подписать» при сохранении
 	Flatten form fields	Расплющить поля формы
 	Flip Horizontal	Отразить по горизонтали
@@ -1266,6 +1271,7 @@ key	Home	Home
 	HTML web page	Веб-страница HTML
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Для венгерского OCR требуется настольное приложение с Tesseract 5 и языковой моделью hun. После установки перезапустите PdfCraft.
 	I confirm sending this document to this printer	Подтверждаю отправку этого документа на этот принтер
+	ICC profile: {name}	Профиль ICC: {name}
 	Identity	Идентификация
 	Image (PNG)	Изображение (PNG)
 	Image field	Поле изображения
@@ -1685,6 +1691,7 @@ key	Home	Home
 	None of these signatures can be removed.	Ни одну из этих подписей нельзя удалить.
 	None of your digital IDs can open this document.	Ни один из ваших цифровых идентификаторов не может открыть этот документ.
 	None — everything is allowed	Нет — всё разрешено
+	None: sRGB for RGB and gray documents	Нет: sRGB для документов RGB и в оттенках серого
 	Normal	Обычное
 scroll speed	Normal	Обычная
 	Normal page	Обычная страница
@@ -1819,6 +1826,7 @@ animation effects	On	Вкл
 	Outline view	Режим контуров
 	Output appears here.	Вывод появляется здесь.
 	Output folder	Папка для результатов
+	Output intent profile:	Профиль выходного намерения:
 	Output intent: {list}	Выходное намерение: {list}
 	Output preview	Предварительный просмотр вывода
 	Owner password (no restrictions apply)	Пароль владельца (ограничения не применяются)
@@ -2001,6 +2009,7 @@ animation effects	On	Вкл
 	Printer properties	Свойства принтера
 	Printer status: {state}	Состояние принтера: {state}
 	Printing allowed	Печать разрешена
+	Printing condition:	Условия печати:
 	Privacy	Конфиденциальность
 	Private data of other applications	Личные данные других приложения
 	product (x)	произведение (x)
@@ -2316,6 +2325,8 @@ animation effects	On	Вкл
 	Saved measurements.	Сохранённые измерения.
 	Saved the print-ready PDF to {path}	Сохранён PDF, готовый к печати, в {path}
 	Saved {name}	Сохранено: {name}
+	Saved {name} and verified it: it conforms to {level}.	{name} сохранён и проверен: соответствует {level}.
+	Saved {name}, but verifying it found {n} problems.	{name} сохранён, но при проверке найдено проблем: {n}.
 	Saved {place}: {before} → {after} (not smaller){detail}	Сохранено {place}: {before} → {after} (не меньше){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Сохранено {place}: {before} → {after} (на {pct}% меньше){detail}
 	Saved, but reopening failed: {e}	Сохранено, но повторное открытие не удалось: {e}

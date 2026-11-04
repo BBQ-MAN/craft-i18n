@@ -395,6 +395,7 @@ certificate	Basic constraints	मूल बाधाएँ
 	Calibrate from two points	दो बिंदुओं से कैलिब्रेट करें
 	Callout	कॉलआउट
 	Can't be read: {e}	पढ़ा नहीं जा सकता: {e}
+	Can't save as {level}; nothing was changed:	{level} के रूप में सहेजा नहीं जा सकता; कुछ भी नहीं बदला गया:
 	Cancel	रद्द करें
 	Cancel reverse sides	Cancel reverse sides
 	Canceling…	रद्द किया जा रहा है…
@@ -498,6 +499,7 @@ certificate	Basic constraints	मूल बाधाएँ
 	Choose a stamp, then click on the page to place it.	एक स्टाम्प चुनें, फिर उसे लगाने के लिए पृष्ठ पर क्लिक करें।
 	Choose an image	कोई छवि चुनें
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	कोई दूसरी फ़ाइल चुनें: मूल फ़ाइल जैसी है वैसी रहती है, और बिना हस्ताक्षर वाला संस्करण उसके पास सहेजा जाता है।
+	Choose ICC profile…	ICC प्रोफ़ाइल चुनें…
 	Choose images	छवियाँ चुनें
 	Choose image…	छवि चुनें…
 	Choose new keys for {command}	{command} के लिए नई कुंजियाँ चुनें
@@ -624,6 +626,7 @@ certificate	Basic constraints	मूल बाधाएँ
 	Convert	रूपांतरित करें
 	Convert colors	रंग रूपांतरित करें
 	Convert mode	रूपांतरण मोड
+	Converted to {level} ({n} changes)	{level} में बदला गया ({n} बदलाव)
 	Copied to clipboard	क्लिपबोर्ड पर कॉपी किया गया
 	Copied {what}	कॉपी किया गया: {what}
 	Copies, two-sided printing and colour are chosen in the browser's print dialog.	प्रतियाँ, दोतरफ़ा छपाई और रंग ब्राउज़र के प्रिंट संवाद में चुने जाते हैं।
@@ -1176,6 +1179,7 @@ calendar date	February	फ़रवरी
 	Fixed what could be fixed; {n} problems remain	जो ठीक हो सकता था, ठीक कर दिया गया; {n} समस्याएँ बची हैं
 	Flatten	फ़्लैटन करें
 	Flatten comments	टिप्पणियाँ फ़्लैट करें
+	Flatten comments and form fields	टिप्पणियों और फ़ॉर्म फ़ील्ड को समतल करें
 	Flatten Fill & Sign	भरें और हस्ताक्षर करें को समतल करें
 	Flatten Fill & Sign when saving	सहेजते समय फ़िल और साइन फ़्लैटन करें
 	Flatten form fields	फ़ॉर्म फ़ील्ड फ़्लैट करें
@@ -1305,6 +1309,7 @@ key	Home	Home
 	HTML web page	HTML वेबपेज
 	H{n} follows an H{d}; headings should not skip levels	H{n}, H{d} के बाद आया है; शीर्षकों में स्तर नहीं छूटने चाहिए
 	I confirm sending this document to this printer	इस दस्तावेज़ को इस प्रिंटर पर भेजने की पुष्टि है
+	ICC profile: {name}	ICC प्रोफ़ाइल: {name}
 	Icon	आइकन
 	Identity	पहचान
 	Image	छवि
@@ -1741,6 +1746,7 @@ calendar weekday	Mo	सोम
 	None of those files can be made into a PDF; use PDFs, images or .txt files	इनमें से कोई भी फ़ाइल पीडीएफ़ नहीं बन सकती; पीडीएफ़, छवियाँ या .txt फ़ाइलें उपयोग करें
 	None of your digital IDs can open this document.	आपकी कोई भी डिजिटल आईडी इस दस्तावेज़ को नहीं खोल सकती।
 	None — everything is allowed	कोई नहीं — सब कुछ की अनुमति है
+	None: sRGB for RGB and gray documents	कोई नहीं: RGB और ग्रे दस्तावेज़ों के लिए sRGB
 	Normal	सामान्य
 scroll speed	Normal	सामान्य
 	Not allowed	अनुमति नहीं
@@ -1881,6 +1887,7 @@ animation effects	On	चालू
 	Output	आउटपुट
 	Output appears here.	आउटपुट यहाँ दिखता है।
 	Output folder	आउटपुट फ़ोल्डर
+	Output intent profile:	आउटपुट इंटेंट प्रोफ़ाइल:
 	Output intent: {list}	आउटपुट इंटेंट: {list}
 	Output preview	आउटपुट प्रीव्यू
 	Oval	अंडाकार
@@ -2084,6 +2091,7 @@ animation effects	On	चालू
 	Printer:	प्रिंटर:
 	Printing	प्रिंटिंग
 	Printing allowed	प्रिंटिंग की अनुमति है
+	Printing condition:	मुद्रण स्थिति:
 	Print…	प्रिंट करें…
 	Privacy	गोपनीयता
 	Private data of other applications	अन्य ऐप्लिकेशन का निजी डेटा
@@ -2388,6 +2396,8 @@ calendar weekday	Sa	शनि
 	Saved measurements.	मापन सहेजे गए।
 	Saved the print-ready PDF to {path}	प्रिंट के लिए तैयार पीडीएफ़ {path} पर सहेजा गया
 	Saved {name}	{name} सहेजा गया
+	Saved {name} and verified it: it conforms to {level}.	{name} सहेजा गया और सत्यापित किया गया: यह {level} के अनुरूप है।
+	Saved {name}, but verifying it found {n} problems.	{name} सहेजा गया, लेकिन सत्यापन में {n} समस्याएँ मिलीं।
 	Saved {place}: {before} → {after} (not smaller){detail}	सहेजा गया {place}: {before} → {after} (छोटा नहीं){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	सहेजा गया {place}: {before} → {after} ({pct}% छोटा){detail}
 	Saved, but reopening failed: {e}	सहेजा गया, लेकिन दोबारा खोलना विफल रहा: {e}

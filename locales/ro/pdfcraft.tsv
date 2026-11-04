@@ -49,7 +49,12 @@
 	a bookmark cannot be moved inside itself	un semn de carte nu poate fi mutat în interiorul său
 	A button	Un buton
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	O aplicație PDF open-source, clean-room, scrisă în Rust. MIT OR Apache-2.0.
+	A colour operator's operands don't match its colour space	Operanzii unui operator de culoare nu corespund spațiului său de culoare
+	A colour space is nested too deeply to convert	Un spațiu de culoare este imbricat prea adânc pentru a fi convertit
+	A colour space's ICC profile can't be used to convert its colour	Profilul ICC al unui spațiu de culoare nu poate fi folosit pentru a-i converti culoarea
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	o coloană este prea îngustă: măriți lățimea zonei, dați coloanei o parte mai mare din ea sau folosiți mai puține coloane ori o spațiere mai mică între coloane
+	A content stream can't be read, so its colour can't be converted	Un flux de conținut nu poate fi citit, deci culoarea lui nu poate fi convertită
+	A content stream is drawn with different resources in different places, so its colour can't be converted	Un flux de conținut este desenat cu resurse diferite în locuri diferite, deci culoarea lui nu poate fi convertită
 	A cover on the scanner is open.	A cover on the scanner is open.
 	A diagonal CONFIDENTIAL watermark on every page.	Un filigran diagonal CONFIDENȚIAL pe fiecare pagină.
 	a document must keep at least one page	un document trebuie să păstreze cel puțin o pagină
@@ -64,16 +69,22 @@
 	A graphics state uses a soft mask	O stare grafică folosește o mască soft
 	A graphics state uses the {} blend mode	O stare grafică folosește modul de amestecare {}
 	a header cell with no Scope, in a table that doesn't use Headers	o celulă de antet fără Scope, într-un tabel care nu folosește Headers
+	A JPEG picture in CMYK can't be converted yet	O imagine JPEG în CMYK nu poate fi convertită încă
 	A link	Un link
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Un logo sau un nume în stânga filelor, unde o bară de titlu ar afișa unul: al PdfCraft sau al companiei tale.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
+	A pattern over RGB or device-independent colour can't be converted to CMYK yet	Un model peste culoare RGB sau independentă de dispozitiv nu poate fi convertit încă în CMYK
 	A picture covers page {pages} (a scan?), so the background won't show there.	O imagine acoperă pagina {pages} (o scanare?), deci fundalul nu se va vedea acolo.
+	A picture with a decode array or a colour-key mask can't be converted to CMYK yet	O imagine cu matrice de decodare sau mască color-key nu poate fi convertită încă în CMYK
+	A picture with other than 8 bits per component can't be converted to CMYK yet	O imagine cu alt număr decât 8 biți pe componentă nu poate fi convertită încă în CMYK
+	A picture's data can't be read, so it can't be converted to CMYK	Datele unei imagini nu pot fi citite, deci nu poate fi convertită în CMYK
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un fișier PNG sau SVG. Este citit din acest loc la fiecare pornire a PdfCraft.
 	A PrinterMark annotation overlaps the TrimBox or ArtBox	O adnotare PrinterMark se suprapune peste TrimBox sau ArtBox
 	A script	Un script
 	a second {} in its table	un al doilea {} în tabelul său
 	A selected field has no widget on any page, so the fields can't be edited together.	Un câmp selectat nu are widget pe nicio pagină, așa că acele câmpuri nu pot fi editate împreună.
 	A setting isn't valid	O setare nu este validă
+	A shading in RGB or device-independent colour can't be converted to CMYK yet	O umbrire în culoare RGB sau independentă de dispozitiv nu poate fi convertită încă în CMYK
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	O semnătură care face parte din conținutul unei pagini, ca pe o pagină scanată, nu este un câmp sau o adnotare, așa că nu poate fi eliminată separat, iar PdfCraft nu șterge părți dintr-o pagină pentru a o ascunde. Pentru a o elimina, anonimizați zona respectivă (Anonimizare) sau, dacă semnătura este o imagine separată, ștergeți imaginea cu Editare PDF.
 	A stream refers to an external file	Un flux face referire la un fișier extern
 	A stream uses JBIG2 compression	Un flux folosește compresia JBIG2
@@ -271,6 +282,7 @@
 	An image has a soft mask	O imagine are o mască soft
 	An image has alternates or OPI information	O imagine are alternative sau informații OPI
 	An image or form has OPI information	O imagine sau un formular are informații OPI
+	An indexed colour space's table is too short to convert	Tabelul unui spațiu de culoare indexat este prea scurt pentru a fi convertit
 	An open-source PDF workbench — local, private, and scriptable.	Un spațiu de lucru PDF open-source: local, privat și scriptabil.
 	An optional content configuration has an AS entry	O configurație de conținut opțional are o intrare AS
 	and {n} more	și încă {n}
@@ -408,6 +420,7 @@ certificate	Basic constraints	Constrângeri de bază
 	Calibrate from two points	Calibrare din două puncte
 	Callout	Casetă explicativă
 	Can't be read: {e}	Nu poate fi citit: {e}
+	Can't save as {level}; nothing was changed:	Nu se poate salva ca {level}; nu s-a modificat nimic:
 	Cancel	Anulare
 	Cancel reverse sides	Cancel reverse sides
 	Canceling…	Se anulează…
@@ -511,6 +524,7 @@ certificate	Basic constraints	Constrângeri de bază
 	Choose a stamp, then click on the page to place it.	Alegeți o ștampilă, apoi faceți clic pe pagină pentru a o plasa.
 	Choose an image	Alegeți o imagine
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Alegeți alt fișier: originalul rămâne neschimbat, iar versiunea fără semnătură se salvează lângă el.
+	Choose ICC profile…	Alegere profil ICC…
 	Choose images	Alegeți imagini
 	Choose image…	Alegere imagine…
 	Choose new keys for {command}	Alegeți taste noi pentru {command}
@@ -553,6 +567,7 @@ certificate	Basic constraints	Constrângeri de bază
 	Close Window	Închidere fereastră
 	Closed arrow	Săgeată închisă
 	Cloud	Nor
+	CMYK colour needs a CMYK printing condition	Culoarea CMYK necesită o condiție de imprimare CMYK
 	Code sent	Cod trimis
 	Collapse	Restrângere
 	Collapse all	Restrângere toate
@@ -639,6 +654,8 @@ certificate	Basic constraints	Constrângeri de bază
 	Convert	Conversie
 	Convert colors	Conversie culori
 	Convert mode	Mod conversie
+	Converted to {level} ({n} changes)	Convertit în {level} ({n} modificări)
+	Converting colour to CMYK needs the printing condition's ICC profile: choose a profile file	Conversia culorii în CMYK necesită profilul ICC al condiției de imprimare: alegeți un fișier de profil
 	Copied to clipboard	Copiat în clipboard
 	Copied {what}	Copiat: {what}
 	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Copiile, imprimarea față-verso și culoarea se aleg în dialogul de imprimare al browserului.
@@ -677,6 +694,7 @@ certificate	Basic constraints	Constrângeri de bază
 	Couldn't optimize the file: {e}	Nu s-a putut optimiza fișierul: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Nu s-a putut imprima din browser ({e}); s-a descărcat {name} pentru imprimare
 	Couldn't reach the printer	Imprimanta nu a putut fi contactată
+	Couldn't read the ICC profile {name}: {e}	Nu s-a putut citi profilul ICC {name}: {e}
 	Couldn't read {name}: {e}	Nu s-a putut citi {name}: {e}
 	Couldn't recover {name}: {e}	Nu s-a putut recupera {name}: {e}
 	Couldn't reload {name}: {e}	Nu s-a putut reîncărca {name}: {e}
@@ -1200,6 +1218,7 @@ calendar date	February	februarie
 	Fixed what could be fixed; {n} problems remain	S-a corectat ce se putea; rămân {n} probleme
 	Flatten	Aplatizare
 	Flatten comments	Aplatizare comentarii
+	Flatten comments and form fields	Aplatizare comentarii și câmpuri de formular
 	Flatten Fill & Sign	Aplatizare Completare și semnare
 	Flatten Fill & Sign when saving	Aplatizare Completare și semnare la salvare
 	Flatten form fields	Aplatizare câmpuri de formular
@@ -1364,6 +1383,7 @@ key	Home	Home
 	HTML web page	Pagină web HTML
 	H{n} follows an H{d}; headings should not skip levels	H{n} urmează după un H{d}; titlurile nu ar trebui să sară niveluri
 	I confirm sending this document to this printer	Confirm trimiterea acestui document la această imprimantă
+	ICC profile: {name}	Profil ICC: {name}
 	Icon	Pictogramă
 	Identity	Identitate
 	Image	Imagine
@@ -1467,6 +1487,7 @@ calendar date	January	ianuarie
 	Join our Discord	Intrați pe Discord-ul nostru
 	Join the ArtCraft community	Alăturați-vă comunității ArtCraft
 	Join the ArtCraft Discord	Intrați pe Discord-ul ArtCraft
+	JPEG 2000 pictures need PDF 1.5, newer than {} allows	Imaginile JPEG 2000 necesită PDF 1.5, mai nou decât permite {}
 	July	Iulie
 calendar date	July	iulie
 	June	Iunie
@@ -1510,6 +1531,7 @@ certificate	Key usage	Utilizare cheie
 	Latin (accented)	Latină (cu diacritice)
 	Layer options	Layer options
 	Layers	Straturi
+	Layers (optional content) need PDF 1.5, newer than {} allows	Straturile (conținut opțional) necesită PDF 1.5, mai nou decât permite {}
 	Layers panel	Panou straturi
 	Layers Panel and Page	Panoul Straturi și pagina
 	Layout and Magnification	Aspect și mărire
@@ -1810,6 +1832,7 @@ calendar weekday	Mo	Lu
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Niciunul dintre aceste fișiere nu poate fi transformat în PDF; folosiți PDF-uri, imagini sau fișiere .txt
 	None of your digital IDs can open this document.	Niciunul dintre ID-urile dvs. digitale nu poate deschide acest document.
 	None — everything is allowed	Niciuna: totul este permis
+	None: sRGB for RGB and gray documents	Niciunul: sRGB pentru documentele RGB și în tonuri de gri
 	Normal	Normală
 scroll speed	Normal	Normală
 	Not allowed	Nepermis
@@ -1915,6 +1938,7 @@ animation effects	On	Activate
 	Opening the browser's print dialog…	Se deschide dialogul de imprimare al browserului…
 	Opening {name}…	Se deschide {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Deschide preferințele driverului de imprimantă. Se salvează pentru toate imprimările de pe acest calculator; numărul de copii, față-verso, tonurile de gri și hârtia alese aici se aplică în continuare.
+	OpenType font programs need PDF 1.6, newer than {} allows	Programele de font OpenType necesită PDF 1.6, mai nou decât permite {}
 	Open…	Deschidere…
 	Optical resolution {x} × {y} dpi.	Optical resolution {x} × {y} dpi.
 	Optimization cancelled	Optimizare anulată
@@ -1960,7 +1984,9 @@ animation effects	On	Activate
 	Output	Ieșire
 	Output appears here.	Rezultatul apare aici.
 	Output folder	Folder de ieșire
+	Output intent profile:	Profilul intenției de ieșire:
 	Output intent: {list}	Intenție de ieșire: {list}
+	Output intents with profiles don't all share one profile	Intențiile de ieșire cu profiluri nu au toate același profil
 	Output preview	Previzualizare ieșire
 	Oval	Oval
 	Overlap:	Suprapunere:
@@ -2010,6 +2036,7 @@ animation effects	On	Activate
 	Page {p}: {n} untagged content item	Pagina {p}: {n} element de conținut neetichetat
 	Page {p}: {n} untagged content items	Pagina {p}: {n} elemente de conținut neetichetate
 	Page {} has additional actions	Pagina {} are acțiuni suplimentare
+	Page {}'s TrimBox, BleedBox and CropBox don't overlap	TrimBox, BleedBox și CropBox ale paginii {} nu se suprapun
 	Pages	Pagini
 	pages	pagini
 	pages added or removed	pagini adăugate sau eliminate
@@ -2057,7 +2084,9 @@ animation effects	On	Activate
 	PDF scale: {scale}%	Scară PDF: {scale}%
 	PDF version	Versiune PDF
 	PDF, images and text	PDF, imagini și text
+	PDF/A embeds the output intent's ICC profile: choose a profile file	PDF/A încorporează profilul ICC al intenției de ieșire: alegeți un fișier de profil
 	PDF/A…	PDF/A…
+	PDF/X-4 embeds the printing condition's ICC profile: choose a profile file	PDF/X-4 încorporează profilul ICC al condiției de imprimare: alegeți un fișier de profil
 	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft nu poate verifica încă această semnătură: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft nu s-a închis normal. Aceste documente aveau modificări salvate automat:
@@ -2171,6 +2200,7 @@ animation effects	On	Activate
 	Printer:	Imprimantă:
 	Printing	Imprimare
 	Printing allowed	Imprimare permisă
+	Printing condition:	Condiție de imprimare:
 	Print…	Imprimare…
 	Privacy	Confidențialitate
 	Private data of other applications	Date private ale altor aplicații
@@ -2481,6 +2511,8 @@ calendar weekday	Sa	Sâ
 	Saved measurements.	Măsurători salvate.
 	Saved the print-ready PDF to {path}	PDF-ul pregătit pentru imprimare a fost salvat în {path}
 	Saved {name}	S-a salvat {name}
+	Saved {name} and verified it: it conforms to {level}.	S-a salvat {name} și s-a verificat: este conform cu {level}.
+	Saved {name}, but verifying it found {n} problems.	S-a salvat {name}, dar verificarea a găsit {n} probleme.
 	Saved {place}: {before} → {after} (not smaller){detail}	S-a salvat {place}: {before} → {after} (nu e mai mic){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	S-a salvat {place}: {before} → {after} (cu {pct}% mai mic){detail}
 	Saved, but reopening failed: {e}	Salvat, dar redeschiderea a eșuat: {e}
@@ -2834,6 +2866,7 @@ certificate	Subject	Subiect
 	Text Field Table	Tabel de câmpuri text
 	Text field table	Tabel de câmpuri text
 	Text in images isn't found; recognise text (OCR) first.	Textul din imagini nu este găsit; rulați întâi recunoașterea textului (OCR).
+	Text in the font {} uses the Private Use Area without ActualText	Textul din fontul {} folosește zona de uz privat fără ActualText
 	Text is compared word by word; the differences are shown on the new file.	Textul se compară cuvânt cu cuvânt; diferențele sunt afișate pe fișierul nou.
 	Text language is specified	Limba textului este specificată
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Textul trebuie să contrasteze suficient cu fundalul pentru persoanele cu vedere slabă. Verificați culorile cu ochiul liber sau cu un instrument de contrast.
@@ -2871,6 +2904,7 @@ calendar weekday	Th	Jo
 	The default optional content configuration (D) has no Name	Configurația implicită de conținut opțional (D) nu are Name
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Selectorul de fișiere al portalului de desktop nu rulează ({packages}). Verificați-l cu systemctl --user status {first} sau deconectați-vă și reconectați-vă.
 	The Dock shows it the next time PdfCraft opens.	Dock-ul o va afișa la următoarea deschidere a PdfCraft.
+	The document can't be converted: {}	Documentul nu poate fi convertit: {}
 	The document changed while it was being signed, so the signature wasn't saved.	Documentul s-a modificat în timpul semnării, așa că semnătura nu a fost salvată.
 	The document changed while its margins were measured; nothing was cropped	Documentul s-a schimbat în timp ce i se măsurau marginile; nu s-a decupat nimic
 	The document changed while you were choosing a file, so nothing was changed.	Documentul s-a modificat în timp ce alegeați un fișier, așa că nu s-a schimbat nimic.
@@ -2887,6 +2921,7 @@ calendar weekday	Th	Jo
 	The document has document-level JavaScript	Documentul are JavaScript la nivel de document
 	the document has no form fields	documentul nu are câmpuri de formular
 	the document has no page tree	documentul nu are arbore de pagini
+	The document has no structure tree: it isn't tagged	Documentul nu are arbore de structură: nu este etichetat
 	the document has no tags	documentul nu are etichete
 	The document has no tags (structure tree)	Documentul nu are etichete (arbore de structură)
 	The document has no title	Documentul nu are titlu
@@ -2894,14 +2929,17 @@ calendar weekday	Th	Jo
 	The document information and the metadata name different PDF/X versions	Informațiile documentului și metadatele indică versiuni PDF/X diferite
 	The document information doesn't identify the file as {}	Informațiile documentului nu identifică fișierul ca {}
 	The document is encrypted	Documentul este criptat
+	The document is encrypted: open it with its permissions password to remove the security	Documentul este criptat: deschideți-l cu parola de permisiuni pentru a elimina securitatea
 	The document is no longer open.	Documentul nu mai este deschis.
 	the document is protected by a password	documentul este protejat cu parolă
+	The document isn't marked as tagged (MarkInfo /Marked true)	Documentul nu este marcat ca etichetat (MarkInfo /Marked true)
 	The document isn't marked as tagged (MarkInfo Marked)	Documentul nu este marcat ca etichetat (MarkInfo Marked)
 	The document isn't tagged, so none of its content is	Documentul nu este etichetat, deci niciun conținut al său nu este
 	The document now conforms to {level}; save it to keep the changes	Documentul este acum conform cu {level}; salvați-l pentru a păstra modificările
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Documentul se deschide fără parolă; această parolă este necesară pentru a modifica restricțiile. Se aplică la salvare.
 	The document sets no language (Lang), and neither do its tags	Documentul nu setează nicio limbă (Lang) și nici etichetele sale
 	The document uses both H and numbered headings (H1–H6)	Documentul folosește atât H, cât și titluri numerotate (H1–H6)
+	The document uses CMYK colour: choose the ICC profile of a CMYK printing condition for its output intent	Documentul folosește culoare CMYK: alegeți profilul ICC al unei condiții de imprimare CMYK pentru intenția sa de ieșire
 	The document was closed before it could be saved.	Documentul a fost închis înainte de a putea fi salvat.
 	The document wasn't signed: {e}	Documentul nu a fost semnat: {e}
 	The document will no longer be certified.	Documentul nu va mai fi certificat.
@@ -2930,11 +2968,17 @@ calendar weekday	Th	Jo
 	The file trailer has no document ID	Trailerul fișierului nu are ID de document
 	the first heading is an H{n}; headings should not skip levels	primul titlu este un H{n}; titlurile nu ar trebui să sară niveluri
 	the first row number can be at most {max}	numărul primului rând poate fi cel mult {max}
+	The font {} has characters with no Unicode value	Fontul {} are caractere fără valoare Unicode
 	The font {} isn't embedded	Fontul {} nu este încorporat
+	The font {} maps characters to U+0000, U+FEFF or U+FFFE	Fontul {} asociază caractere cu U+0000, U+FEFF sau U+FFFE
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Fonturile cu care scrie PdfCraft nu pot desena „{c}” ({code}), așa că apare ca ? în orice vizualizator PDF. Textul se salvează.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Formularul cere să fie trimis la {u}; PdfCraft nu trimite date de formular. Salvați documentul pentru a păstra ce ați completat.
 	The form asks viewers to make appearances (NeedAppearances)	Formularul cere vizualizatoarelor să creeze aspectele (NeedAppearances)
 	The fronts already scanned are kept for the reverse-side pass.	The fronts already scanned are kept for the reverse-side pass.
+	The ICC profile {} isn't a CMYK profile, which PDF/X-1a needs	Profilul ICC {} nu este un profil CMYK, de care are nevoie PDF/X-1a
+	The ICC profile {} isn't a gray, RGB or CMYK profile	Profilul ICC {} nu este un profil gri, RGB sau CMYK
+	The ICC profile {} isn't an output (printer) profile	Profilul ICC {} nu este un profil de ieșire (de imprimantă)
+	The ICC profile {} isn't an output or display profile	Profilul ICC {} nu este un profil de ieșire sau de afișaj
 	The image couldn't be used as an icon: {e}	Imaginea nu a putut fi folosită ca pictogramă: {e}
 	The image has been copied ({w} × {h} pixels)	Imaginea a fost copiată ({w} × {h} pixeli)
 	The image has been copied as a {ext} file	Imaginea a fost copiată ca fișier {ext}
@@ -2945,6 +2989,7 @@ calendar weekday	Th	Jo
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Cheia este pe {device}, care cere singur aprobarea (o tastatură PIN sau o aplicație de pe telefon).
 	The Keychain's digital IDs couldn't be listed: {e}	ID-urile digitale din Keychain nu au putut fi listate: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Etichetele sunt în engleză: fontul semnăturii nu le poate desena în această limbă.
+	The language {} isn't a valid language tag	Limba {} nu este o etichetă de limbă validă
 	The linked PDF opened, but its named destination was not applied.	PDF-ul legat s-a deschis, dar destinația sa denumită nu a fost aplicată.
 	The linked PDF opened, but its page destination was out of range.	PDF-ul legat s-a deschis, dar destinația de pagină era în afara intervalului.
 	The metadata doesn't identify the file as PDF/UA (pdfuaid:part)	Metadatele nu identifică fișierul ca PDF/UA (pdfuaid:part)
@@ -2968,6 +3013,7 @@ calendar weekday	Th	Jo
 	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	Profilul intenției de ieșire nu are transformare din dispozitiv în PCS (AToB1 sau grayTRC)
 	The output intent's profile isn't a valid ICC profile	Profilul intenției de ieșire nu este un profil ICC valid
 	The output intent's profile isn't an output (printer) profile	Profilul intenției de ieșire nu este un profil de ieșire (de imprimantă)
+	The output profile can't convert colour to CMYK ({})	Profilul de ieșire nu poate converti culoarea în CMYK ({})
 	The page has both a TrimBox and an ArtBox	Pagina are atât TrimBox, cât și ArtBox
 	The page has changed; select the image again	Pagina s-a schimbat; selectați din nou imaginea
 	The page has neither a TrimBox nor an ArtBox	Pagina nu are nici TrimBox, nici ArtBox
@@ -3006,6 +3052,7 @@ calendar weekday	Th	Jo
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Restricțiile se aplică destinatarilor fără „Toate permisiunile”. Se aplică la salvare.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
+	The role map maps {} in a circle	Harta de roluri asociază {} în cerc
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	rândurile sunt prea joase: măriți înălțimea zonei sau folosiți mai puține rânduri ori o spațiere mai mică între rânduri
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	Valoarea semnăturii RSA nu are lungimea modulului cheii (octeți zero de început eliminați sau adăugați); a fost citită oricum.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	DigestInfo din semnătura RSA nu are parametrul NULL (semnatarii mai vechi îl scriu așa); a fost citită oricum.
@@ -3071,7 +3118,10 @@ calendar weekday	Th	Jo
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	serviciul de semnare a respins PIN-ul sau codul OTP (este posibil ca codul OTP să fi expirat)
 	the signing service rejected the user name or password	serviciul de semnare a respins numele de utilizator sau parola
 	The smart card's digital IDs couldn't be listed: {e}	ID-urile digitale ale cardului inteligent nu au putut fi listate: {e}
+	The spot colour {} has an alternate that can't be converted to CMYK yet	Culoarea spot {} are o alternativă care nu poate fi convertită încă în CMYK
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Fonturile standard nu pot desena „{c}” ({code}). Deocamdată se pot adăuga ca text doar caractere vest-europene.
+	The standard structure type {} is mapped to a type that isn't standard	Tipul de structură standard {} este asociat cu un tip care nu este standard
+	The structure type {} isn't standard and isn't mapped to a standard type	Tipul de structură {} nu este standard și nu este asociat cu un tip standard
 	The text is the same	Textul este identic
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	modelele de recunoaștere a textului nu sunt instalate (reinstalați PdfCraft sau setați PDFCRAFT_MODELS la folderul care le conține)
 	The timestamp authority's certificate is not issued for time stamping.	The timestamp authority's certificate is not issued for time stamping.
@@ -3534,7 +3584,9 @@ calendar weekday	We	Mi
 	{} annotation on page {p} isn't tagged	Adnotarea {} de pe pagina {p} nu este etichetată
 	{} annotation on page {p}: its description has no language (Lang)	Adnotarea {} de pe pagina {p}: descrierea sa nu are limbă (Lang)
 	{} annotations aren't allowed	Adnotările {} nu sunt permise
+	{} colour can't be converted to CMYK yet	Culoarea {} nu poate fi convertită încă în CMYK
 	{} colour doesn't match the output intent's colour space	Culoarea {} nu corespunde spațiului de culoare al intenției de ieșire
+	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} necesită profilul ICC al condiției de imprimare încorporat pentru culoarea RGB sau independentă de dispozitiv: alegeți un fișier de profil
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (protecția se aplică la salvare)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	„{name}” s-a modificat pe disc după ce a fost deschis sau salvat ultima dată. Salvarea acum înlocuiește acea versiune mai nouă cu aceasta.

@@ -396,6 +396,7 @@
 	Calibrate…	Kalibre et…
 	Callout	Açıklama Balonu
 	Can't be read: {e}	Okunamıyor: {e}
+	Can't save as {level}; nothing was changed:	{level} olarak kaydedilemiyor; hiçbir şey değiştirilmedi:
 	Cancel reverse sides	Arka yüzleri iptal et
 	Canceling…	İptal ediliyor…
 	Cancelled	İptal edildi
@@ -497,6 +498,7 @@
 	Choose an image	Bir resim seçin
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Başka bir dosya seçin: orijinal olduğu gibi kalır, imzasız sürüm onun yanına kaydedilir.
 	Choose font…	Yazı tipi seç…
+	Choose ICC profile…	ICC profili seç…
 	Choose images	Resimleri seçin
 	Choose image…	Resim seç…
 	Choose new keys for {command}	{command} için yeni tuşlar seçin
@@ -614,6 +616,7 @@
 	Continuous scrolling	Sürekli kaydırma
 	Convert colors	Renkleri dönüştür
 	Convert mode	Dönüştürme modu
+	Converted to {level} ({n} changes)	{level} biçimine dönüştürüldü ({n} değişiklik)
 	Converting {name}…	{name} dönüştürülüyor…
 	Copied to clipboard	Panoya kopyalandı
 	Copied {what}	{what} kopyalandı
@@ -660,6 +663,7 @@
 	Couldn't optimize the file: {e}	Dosya en iyileştirilemedi: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Tarayıcıdan yazdırılamadı ({e}); bunun yerine yazdırmak için {name} indirildi
 	Couldn't reach the printer	Yazıcıya ulaşılamadı
+	Couldn't read the ICC profile {name}: {e}	{name} ICC profili okunamadı: {e}
 	Couldn't read {name}: {e}	{name} okunamadı: {e}
 	Couldn't recover {name}: {e}	{name} kurtarılamadı: {e}
 	Couldn't reload {name}: {e}	{name} yeniden yüklenemedi: {e}
@@ -1170,6 +1174,7 @@ scroll speed	Fast	Hızlı
 	Fixed what could be fixed; {n} problems remain	Düzeltilebilecek olanlar düzeltildi; {n} sorun kaldı
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	Bu kurulumu Flatpak yönetir. Güncellemeleri sistem yazılım yöneticinizden veya flatpak update komutuyla denetleyin.
 	Flatten comments	Yorumları düzleştir
+	Flatten comments and form fields	Yorumları ve form alanlarını düzleştir
 	Flatten Fill & Sign	Doldur ve İmzala'yı düzleştir
 	Flatten Fill & Sign when saving	Kaydederken Doldur ve İmzala'yı düzleştir
 	Flatten form fields	Form alanlarını düzleştir
@@ -1291,6 +1296,7 @@ key	Home	Home
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Macarca OCR için Tesseract 5 ve hun dil modeli içeren masaüstü uygulaması gerekir. Kurulumdan sonra PdfCraft uygulamasını yeniden başlatın.
 	H{n} follows an H{d}; headings should not skip levels	H{n}, bir H{d} ardından geliyor; başlıklar düzey atlamamalı
 	I confirm sending this document to this printer	Bu belgenin bu yazıcıya gönderilmesini onaylıyorum
+	ICC profile: {name}	ICC profili: {name}
 	Identity	Kimlik
 	Image	Resim
 	Image (PNG)	Resim (PNG)
@@ -1729,6 +1735,7 @@ calendar weekday	Mo	Pt
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Bu dosyaların hiçbiri PDF'e dönüştürülemez; PDF'ler, resimler veya .txt dosyaları kullanın
 	None of your digital IDs can open this document.	Dijital kimliklerinizin hiçbiri bu belgeyi açamıyor.
 	None — everything is allowed	Yok — her şeye izin verilir
+	None: sRGB for RGB and gray documents	Yok: RGB ve gri belgeler için sRGB
 	Normal	Standart
 scroll speed	Normal	Orta
 	Normal page	Normal sayfa
@@ -1875,6 +1882,7 @@ animation effects	On	Açık
 	Output	Çıktı
 	Output appears here.	Çıktı burada görünür.
 	Output folder	Çıktı klasörü
+	Output intent profile:	Çıktı amacı profili:
 	Output intent: {list}	Çıktı amacı: {list}
 	Output preview	Çıktı önizleme
 	Oval	Elips
@@ -2072,6 +2080,7 @@ animation effects	On	Açık
 	Printer properties	Yazıcı özellikleri
 	Printer status: {state}	Yazıcı durumu: {state}
 	Printing allowed	Baskıya izin verildi
+	Printing condition:	Baskı koşulu:
 	Privacy	Gizlilik
 	Private data of other applications	Diğer uygulamaların özel verileri
 	Producer	Üretici
@@ -2390,6 +2399,8 @@ calendar weekday	Sa	Ct
 	Saved measurements.	Ölçümler kaydedildi.
 	Saved the print-ready PDF to {path}	Baskıya hazır PDF {path} konumuna kaydedildi
 	Saved {name}	{name} kaydedildi
+	Saved {name} and verified it: it conforms to {level}.	{name} kaydedildi ve doğrulandı: {level} standardına uygundur.
+	Saved {name}, but verifying it found {n} problems.	{name} kaydedildi, ancak doğrulama {n} sorun buldu.
 	Saved {place}: {before} → {after} (not smaller){detail}	{place} kaydedildi: {before} → {after} (küçülmedi){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	{place} kaydedildi: {before} → {after} (%{pct} daha küçük){detail}
 	Saved, but reopening failed: {e}	Kaydedildi, ancak yeniden açma başarısız oldu: {e}

@@ -396,6 +396,7 @@
 	Calibrate…	キャリブレーション…
 	Callout	引き出し線
 	Can't be read: {e}	読み込めません: {e}
+	Can't save as {level}; nothing was changed:	{level} として保存できません。何も変更されていません:
 	Cancel caption placement	キャプション配置を取り消す
 	Cancel reverse sides	裏面のスキャンをやめる
 	Canceling…	キャンセルしています…
@@ -496,6 +497,7 @@
 	Choose an image	画像を選択
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	別のファイルを選んでください。元のファイルはそのまま残し、署名を削除した版はその隣に保存します。
 	Choose font…	フォントを選択…
+	Choose ICC profile…	ICC プロファイルを選択…
 	Choose images	画像を選択
 	Choose image…	画像を選択…
 	Choose new keys for {command}	{command} の新しいキーを選択
@@ -625,6 +627,7 @@
 	Conversion factor	換算係数
 	Convert colors	色を変換
 	Convert mode	変換モード
+	Converted to {level} ({n} changes)	{level} に変換しました ({n} 件の変更)
 	Converting {name}…	{name} を変換しています…
 	Converts PDF user coordinates to easting, northing and elevation.	PDF ユーザー座標を東方向座標、北方向座標、高度に変換します。
 	Copied {what}	{what}をコピーしました
@@ -669,6 +672,7 @@
 	Couldn't optimize the file: {e}	ファイルを最適化できませんでした: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	ブラウザーから印刷できませんでした ({e})。代わりに印刷用の {name} をダウンロードしました
 	Couldn't reach the printer	プリンターに接続できませんでした
+	Couldn't read the ICC profile {name}: {e}	ICC プロファイル {name} を読み込めませんでした: {e}
 	Couldn't read {name}: {e}	{name} を読み取れませんでした: {e}
 	Couldn't recover {name}: {e}	{name} を復元できませんでした: {e}
 	Couldn't reload {name}: {e}	{name} を再読み込みできませんでした: {e}
@@ -1176,6 +1180,7 @@ scroll speed	Fast	速い
 	Flatbed	フラットベッド
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	このインストールはFlatpakが管理しています。システムのソフトウェア管理ツールまたは flatpak update で更新を確認してください。
 	Flatten comments	コメントを統合
+	Flatten comments and form fields	コメントとフォームフィールドを統合
 	Flatten Fill & Sign when saving	保存時に入力と署名を統合する
 	Flatten form fields	フォームフィールドを統合
 	Flip horizontal	左右反転
@@ -1291,6 +1296,7 @@ key	Home	Home
 	HTML web page	HTML ウェブページ
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	ハンガリー語OCRには、デスクトップアプリ、Tesseract 5、hun言語モデルが必要です。インストール後にPdfCraftを再起動してください。
 	I confirm sending this document to this printer	この文書をこのプリンターに送信することを確認します
+	ICC profile: {name}	ICC プロファイル: {name}
 	Identity	個人情報
 	Image (PNG)	画像（PNG）
 	Image field	画像フィールド
@@ -1713,6 +1719,7 @@ key	Home	Home
 	None of those files can be made into a PDF; use PDFs, images or .txt files	これらのファイルは PDF にできません。PDF、画像、.txt ファイルを使用してください
 	None of your digital IDs can open this document.	どのデジタル ID でもこの文書を開けません。
 	None — everything is allowed	なし — すべて許可
+	None: sRGB for RGB and gray documents	なし: RGB とグレーの文書には sRGB
 	Normal	標準
 scroll speed	Normal	標準
 	Normal page	通常のページ
@@ -1851,6 +1858,7 @@ animation effects	On	オン
 	Outline view	アウトライン表示
 	Output appears here.	出力はここに表示されます。
 	Output folder	出力フォルダー
+	Output intent profile:	出力インテントのプロファイル:
 	Output intent: {list}	出力インテント: {list}
 	Output preview	出力プレビュー
 	Owner password (no restrictions apply)	所有者パスワード（制限なし）
@@ -2039,6 +2047,7 @@ animation effects	On	オン
 	Printer properties	プリンターのプロパティ
 	Printer status: {state}	プリンターの状態: {state}
 	Printing allowed	印刷を許可
+	Printing condition:	印刷条件:
 	Privacy	プライバシー
 	Private data of other applications	他のアプリケーションのプライベートデータ
 	product (x)	積（×）
@@ -2357,6 +2366,8 @@ animation effects	On	オン
 	Saved measurements.	測定結果を保存しました。
 	Saved the print-ready PDF to {path}	印刷用 PDF を {path} に保存しました
 	Saved {name}	{name} を保存しました
+	Saved {name} and verified it: it conforms to {level}.	{name} を保存して検証しました。{level} に準拠しています。
+	Saved {name}, but verifying it found {n} problems.	{name} を保存しましたが、検証で {n} 件の問題が見つかりました。
 	Saved {place}: {before} → {after} (not smaller){detail}	{place} に保存: {before} → {after}（縮小なし）{detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	{place} に保存: {before} → {after}（{pct}% 削減）{detail}
 	Saved, but reopening failed: {e}	保存しましたが、再度開けませんでした: {e}

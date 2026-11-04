@@ -49,7 +49,12 @@
 	a bookmark cannot be moved inside itself	un marcador no es pot moure dins d'ell mateix
 	A button	Un botó
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Una aplicació PDF de codi obert i clean-room escrita en Rust. MIT OR Apache-2.0.
+	A colour operator's operands don't match its colour space	Els operands d'un operador de color no coincideixen amb el seu espai de color
+	A colour space is nested too deeply to convert	Un espai de color està massa imbricat per convertir-lo
+	A colour space's ICC profile can't be used to convert its colour	El perfil ICC d'un espai de color no es pot fer servir per convertir-ne el color
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	una columna és massa estreta: fes l'àrea més ampla, dona-li més part a la columna o fes servir menys columnes o menys espai entre columnes
+	A content stream can't be read, so its colour can't be converted	No es pot llegir un flux de contingut, de manera que no se'n pot convertir el color
+	A content stream is drawn with different resources in different places, so its colour can't be converted	Un flux de contingut es dibuixa amb recursos diferents en llocs diferents, de manera que no se'n pot convertir el color
 	A cover on the scanner is open.	A cover on the scanner is open.
 	A diagonal CONFIDENTIAL watermark on every page.	Una marca d'aigua diagonal CONFIDENCIAL a cada pàgina.
 	a document must keep at least one page	un document ha de conservar almenys una pàgina
@@ -64,16 +69,22 @@
 	A graphics state uses a soft mask	Un estat gràfic fa servir una màscara suau
 	A graphics state uses the {} blend mode	Un estat gràfic fa servir el mode de fusió {}
 	a header cell with no Scope, in a table that doesn't use Headers	una cel·la de capçalera sense Scope, en una taula que no fa servir Headers
+	A JPEG picture in CMYK can't be converted yet	Encara no es pot convertir una imatge JPEG en CMYK
 	A link	Un enllaç
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Un logotip o un nom a l'esquerra de les pestanyes, on una barra de títol en mostraria un: el de PdfCraft o el de la teva empresa.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
+	A pattern over RGB or device-independent colour can't be converted to CMYK yet	Encara no es pot convertir a CMYK un patró sobre color RGB o independent del dispositiu
 	A picture covers page {pages} (a scan?), so the background won't show there.	Una imatge cobreix la pàgina {pages} (un escaneig?), així que el fons no s'hi veurà.
+	A picture with a decode array or a colour-key mask can't be converted to CMYK yet	Encara no es pot convertir a CMYK una imatge amb una matriu de descodificació o una màscara de color clau
+	A picture with other than 8 bits per component can't be converted to CMYK yet	Encara no es pot convertir a CMYK una imatge amb un nombre de bits per component diferent de 8
+	A picture's data can't be read, so it can't be converted to CMYK	No es poden llegir les dades d'una imatge, de manera que no es pot convertir a CMYK
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un fitxer PNG o SVG. Es llegeix des d'aquesta ubicació cada vegada que s'inicia PdfCraft.
 	A PrinterMark annotation overlaps the TrimBox or ArtBox	Una anotació PrinterMark se superposa a la TrimBox o l'ArtBox
 	A script	Un script
 	a second {} in its table	un segon {} a la seva taula
 	A selected field has no widget on any page, so the fields can't be edited together.	Un camp seleccionat no té cap giny a cap pàgina, de manera que els camps no es poden editar junts.
 	A setting isn't valid	Una opció no és vàlida
+	A shading in RGB or device-independent colour can't be converted to CMYK yet	Encara no es pot convertir a CMYK un ombrejat en color RGB o independent del dispositiu
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Una signatura que forma part del contingut d'una pàgina, com en una pàgina escanejada, no és un camp ni una anotació, de manera que no es pot eliminar tota sola, i el PdfCraft no esborra parts d'una pàgina per amagar-la. Per treure-la, censureu aquesta àrea (Censura) o, si la signatura és una imatge independent, suprimiu la imatge amb Edita un PDF.
 	A stream refers to an external file	Un flux fa referència a un fitxer extern
 	A stream uses JBIG2 compression	Un flux fa servir compressió JBIG2
@@ -271,6 +282,7 @@
 	An image has a soft mask	Una imatge té una màscara suau
 	An image has alternates or OPI information	Una imatge té alternatives o informació OPI
 	An image or form has OPI information	Una imatge o un formulari té informació OPI
+	An indexed colour space's table is too short to convert	La taula d'un espai de color indexat és massa curta per convertir-la
 	An open-source PDF workbench — local, private, and scriptable.	Un banc de treball de PDF de codi obert — local, privat i programable.
 	An optional content configuration has an AS entry	Una configuració de contingut opcional té una entrada AS
 	and {n} more	i {n} més
@@ -408,6 +420,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	Calibrate from two points	Calibra a partir de dos punts
 	Callout	Crida
 	Can't be read: {e}	No es pot llegir: {e}
+	Can't save as {level}; nothing was changed:	No es pot desar com a {level}; no s'ha canviat res:
 	Cancel	Cancel·la
 	Cancel reverse sides	Cancel reverse sides
 	Canceling…	Cancel·lant…
@@ -511,6 +524,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	Choose a stamp, then click on the page to place it.	Tria un segell i fes clic a la pàgina per col·locar-lo.
 	Choose an image	Tria una imatge
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Trieu un altre fitxer: l'original es manté tal com és, i la versió sense la signatura es desa al costat.
+	Choose ICC profile…	Tria un perfil ICC…
 	Choose images	Tria imatges
 	Choose image…	Tria una imatge…
 	Choose new keys for {command}	Trieu tecles noves per a {command}
@@ -553,6 +567,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	Close Window	Tanca la finestra
 	Closed arrow	Fletxa tancada
 	Cloud	Núvol
+	CMYK colour needs a CMYK printing condition	El color CMYK necessita una condició d'impressió CMYK
 	Code sent	Codi enviat
 	Collapse	Replega
 	Collapse all	Replega-ho tot
@@ -639,6 +654,8 @@ certificate	Basic constraints	Restriccions bàsiques
 	Convert	Converteix
 	Convert colors	Converteix els colors
 	Convert mode	Mode de conversió
+	Converted to {level} ({n} changes)	Convertit a {level} ({n} canvis)
+	Converting colour to CMYK needs the printing condition's ICC profile: choose a profile file	Per convertir el color a CMYK cal el perfil ICC de la condició d'impressió: tria un fitxer de perfil
 	Copied to clipboard	S'ha copiat al porta-retalls
 	Copied {what}	S'ha copiat {what}
 	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Les còpies, la impressió a doble cara i el color es trien al diàleg d'impressió del navegador.
@@ -677,6 +694,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	Couldn't optimize the file: {e}	No s'ha pogut optimitzar el fitxer: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	No s'ha pogut imprimir des del navegador ({e}); s'ha baixat {name} per imprimir-lo en lloc d'això
 	Couldn't reach the printer	No s'ha pogut contactar amb la impressora
+	Couldn't read the ICC profile {name}: {e}	No s'ha pogut llegir el perfil ICC {name}: {e}
 	Couldn't read {name}: {e}	No s'ha pogut llegir {name}: {e}
 	Couldn't recover {name}: {e}	No s'ha pogut recuperar {name}: {e}
 	Couldn't reload {name}: {e}	No s'ha pogut tornar a carregar {name}: {e}
@@ -1200,6 +1218,7 @@ calendar date	February	Febrer
 	Fixed what could be fixed; {n} problems remain	S'ha corregit el que s'ha pogut; queden {n} problemes
 	Flatten	Aplana
 	Flatten comments	Aplana els comentaris
+	Flatten comments and form fields	Aplana els comentaris i els camps de formulari
 	Flatten Fill & Sign	Aplana Emplena i signa
 	Flatten Fill & Sign when saving	Aplana Omple i signa en desar
 	Flatten form fields	Aplana els camps de formulari
@@ -1364,6 +1383,7 @@ key	Home	Inici
 	HTML web page	Pàgina web HTML
 	H{n} follows an H{d}; headings should not skip levels	H{n} va després d'un H{d}; els encapçalaments no haurien de saltar nivells
 	I confirm sending this document to this printer	Confirmo l'enviament d'aquest document a aquesta impressora
+	ICC profile: {name}	Perfil ICC: {name}
 	Icon	Icona
 	Identity	Identitat
 	Image	Imatge
@@ -1467,6 +1487,7 @@ calendar date	January	Gener
 	Join our Discord	Uneix-te al nostre Discord
 	Join the ArtCraft community	Uneix-te a la comunitat d'ArtCraft
 	Join the ArtCraft Discord	Uneix-te al Discord d'ArtCraft
+	JPEG 2000 pictures need PDF 1.5, newer than {} allows	Les imatges JPEG 2000 necessiten PDF 1.5, més recent del que permet {}
 	July	juliol
 calendar date	July	Juliol
 	June	juny
@@ -1510,6 +1531,7 @@ certificate	Key usage	Ús de la clau
 	Latin (accented)	Llatí (amb accents)
 	Layer options	Layer options
 	Layers	Capes
+	Layers (optional content) need PDF 1.5, newer than {} allows	Les capes (contingut opcional) necessiten PDF 1.5, més recent del que permet {}
 	Layers panel	Tauler de capes
 	Layers Panel and Page	Tauler de capes i pàgina
 	Layout and Magnification	Disposició i ampliació
@@ -1810,6 +1832,7 @@ calendar weekday	Mo	dl.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Cap d'aquests fitxers es pot convertir en PDF; utilitza PDF, imatges o fitxers .txt
 	None of your digital IDs can open this document.	Cap dels teus identificadors digitals pot obrir aquest document.
 	None — everything is allowed	Cap — tot està permès
+	None: sRGB for RGB and gray documents	Cap: sRGB per a documents RGB i en gris
 	Normal	Normal
 scroll speed	Normal	Normal
 	Not allowed	No permès
@@ -1915,6 +1938,7 @@ animation effects	On	Activats
 	Opening the browser's print dialog…	Obrint el diàleg d'impressió del navegador…
 	Opening {name}…	Obrint {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Obre les preferències del controlador de la impressora. Es desen per a totes les impressions d'aquest ordinador; les còpies, la impressió a doble cara, l'escala de grisos i el paper triats aquí continuen aplicant-se.
+	OpenType font programs need PDF 1.6, newer than {} allows	Els programes de tipus de lletra OpenType necessiten PDF 1.6, més recent del que permet {}
 	Open…	Obre…
 	Optical resolution {x} × {y} dpi.	Optical resolution {x} × {y} dpi.
 	Optimization cancelled	Optimització cancel·lada
@@ -1960,7 +1984,9 @@ animation effects	On	Activats
 	Output	Sortida
 	Output appears here.	La sortida apareix aquí.
 	Output folder	Carpeta de sortida
+	Output intent profile:	Perfil del propòsit de sortida:
 	Output intent: {list}	Intenció de sortida: {list}
+	Output intents with profiles don't all share one profile	Els propòsits de sortida amb perfil no comparteixen tots el mateix perfil
 	Output preview	Previsualització de sortida
 	Oval	Oval
 	Overlap:	Superposició:
@@ -2010,6 +2036,7 @@ animation effects	On	Activats
 	Page {p}: {n} untagged content item	Pàgina {p}: {n} element de contingut sense etiquetar
 	Page {p}: {n} untagged content items	Pàgina {p}: {n} elements de contingut sense etiquetar
 	Page {} has additional actions	La pàgina {} té accions addicionals
+	Page {}'s TrimBox, BleedBox and CropBox don't overlap	La TrimBox, la BleedBox i la CropBox de la pàgina {} no se superposen
 	Pages	Pàgines
 	pages	pàgines
 	pages added or removed	pàgines afegides o eliminades
@@ -2057,7 +2084,9 @@ animation effects	On	Activats
 	PDF scale: {scale}%	Escala del PDF: {scale} %
 	PDF version	Versió del PDF
 	PDF, images and text	PDF, imatges i text
+	PDF/A embeds the output intent's ICC profile: choose a profile file	PDF/A incrusta el perfil ICC del propòsit de sortida: tria un fitxer de perfil
 	PDF/A…	PDF/A…
+	PDF/X-4 embeds the printing condition's ICC profile: choose a profile file	PDF/X-4 incrusta el perfil ICC de la condició d'impressió: tria un fitxer de perfil
 	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft encara no pot comprovar aquesta signatura: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft no s'ha tancat amb normalitat. Aquests documents tenien canvis desats automàticament:
@@ -2171,6 +2200,7 @@ animation effects	On	Activats
 	Printer:	Impressora:
 	Printing	Impressió
 	Printing allowed	Impressió permesa
+	Printing condition:	Condició d'impressió:
 	Print…	Imprimeix…
 	Privacy	Privadesa
 	Private data of other applications	Dades privades d'altres aplicacions
@@ -2481,6 +2511,8 @@ calendar weekday	Sa	ds.
 	Saved measurements.	Mesures desades.
 	Saved the print-ready PDF to {path}	S'ha desat el PDF llest per imprimir a {path}
 	Saved {name}	S'ha desat {name}
+	Saved {name} and verified it: it conforms to {level}.	S'ha desat {name} i s'ha verificat: és conforme amb {level}.
+	Saved {name}, but verifying it found {n} problems.	S'ha desat {name}, però la verificació ha trobat {n} problemes.
 	Saved {place}: {before} → {after} (not smaller){detail}	S'ha desat {place}: {before} → {after} (no és més petit){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	S'ha desat {place}: {before} → {after} ({pct} % més petit){detail}
 	Saved, but reopening failed: {e}	S'ha desat, però no s'ha pogut tornar a obrir: {e}
@@ -2834,6 +2866,7 @@ certificate	Subject	Subjecte
 	Text Field Table	Taula de camps de text
 	Text field table	Taula de camps de text
 	Text in images isn't found; recognise text (OCR) first.	El text de les imatges no es troba; reconeix el text (OCR) primer.
+	Text in the font {} uses the Private Use Area without ActualText	El text del tipus de lletra {} fa servir l'àrea d'ús privat sense ActualText
 	Text is compared word by word; the differences are shown on the new file.	El text es compara paraula per paraula; les diferències es mostren al fitxer nou.
 	Text language is specified	S'ha especificat l'idioma del text
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	El text ha de contrastar prou amb el fons per a les persones amb baixa visió. Comprova els colors a ull o amb una eina de contrast.
@@ -2871,6 +2904,7 @@ calendar weekday	Th	dj.
 	The default optional content configuration (D) has no Name	La configuració de contingut opcional per defecte (D) no té Name
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	El selector de fitxers del portal d'escriptori no s'està executant ({packages}). Comprova-ho amb systemctl --user status {first}, o tanca la sessió i torna a entrar.
 	The Dock shows it the next time PdfCraft opens.	El Dock la mostrarà la propera vegada que s'obri el PdfCraft.
+	The document can't be converted: {}	No es pot convertir el document: {}
 	The document changed while it was being signed, so the signature wasn't saved.	El document ha canviat mentre es signava, així que la signatura no s'ha desat.
 	The document changed while its margins were measured; nothing was cropped	El document ha canviat mentre se'n mesuraven els marges; no s'ha escapçat res
 	The document changed while you were choosing a file, so nothing was changed.	El document ha canviat mentre triaves un fitxer, de manera que no s'ha modificat res.
@@ -2887,6 +2921,7 @@ calendar weekday	Th	dj.
 	The document has document-level JavaScript	El document té JavaScript a nivell de document
 	the document has no form fields	el document no té camps de formulari
 	the document has no page tree	el document no té arbre de pàgines
+	The document has no structure tree: it isn't tagged	El document no té arbre d'estructura: no està etiquetat
 	the document has no tags	el document no té etiquetes
 	The document has no tags (structure tree)	El document no té etiquetes (arbre d'estructura)
 	The document has no title	El document no té títol
@@ -2894,14 +2929,17 @@ calendar weekday	Th	dj.
 	The document information and the metadata name different PDF/X versions	La informació del document i les metadades indiquen versions de PDF/X diferents
 	The document information doesn't identify the file as {}	La informació del document no identifica el fitxer com a {}
 	The document is encrypted	El document està xifrat
+	The document is encrypted: open it with its permissions password to remove the security	El document està xifrat: obre'l amb la contrasenya de permisos per treure'n la seguretat
 	The document is no longer open.	El document ja no és obert.
 	the document is protected by a password	el document està protegit amb una contrasenya
+	The document isn't marked as tagged (MarkInfo /Marked true)	El document no està marcat com a etiquetat (MarkInfo /Marked true)
 	The document isn't marked as tagged (MarkInfo Marked)	El document no està marcat com a etiquetat (MarkInfo Marked)
 	The document isn't tagged, so none of its content is	El document no està etiquetat, de manera que cap dels seus continguts ho està
 	The document now conforms to {level}; save it to keep the changes	El document ara compleix {level}; desa'l per conservar els canvis
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	El document s'obre sense contrasenya; aquesta contrasenya cal per canviar les restriccions. S'aplica en desar.
 	The document sets no language (Lang), and neither do its tags	El document no estableix cap idioma (Lang), ni tampoc les seves etiquetes
 	The document uses both H and numbered headings (H1–H6)	El document fa servir alhora H i encapçalaments numerats (H1–H6)
+	The document uses CMYK colour: choose the ICC profile of a CMYK printing condition for its output intent	El document fa servir color CMYK: tria el perfil ICC d'una condició d'impressió CMYK per al seu propòsit de sortida
 	The document was closed before it could be saved.	El document s'ha tancat abans de poder-se desar.
 	The document wasn't signed: {e}	El document no s'ha signat: {e}
 	The document will no longer be certified.	El document deixarà d'estar certificat.
@@ -2930,11 +2968,17 @@ calendar weekday	Th	dj.
 	The file trailer has no document ID	El tràiler del fitxer no té ID de document
 	the first heading is an H{n}; headings should not skip levels	el primer encapçalament és un H{n}; els encapçalaments no haurien de saltar nivells
 	the first row number can be at most {max}	el número de la primera fila pot ser com a màxim {max}
+	The font {} has characters with no Unicode value	El tipus de lletra {} té caràcters sense valor Unicode
 	The font {} isn't embedded	El tipus de lletra {} no està incrustat
+	The font {} maps characters to U+0000, U+FEFF or U+FFFE	El tipus de lletra {} assigna caràcters a U+0000, U+FEFF o U+FFFE
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Els tipus de lletra amb què escriu PdfCraft no poden dibuixar “{c}” ({code}), de manera que es mostra com a ? a tots els visors de PDF. El text es desa.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	El formulari demana que s'enviï a {u}; PdfCraft no envia dades de formularis. Desa el document per conservar les dades introduïdes.
 	The form asks viewers to make appearances (NeedAppearances)	El formulari demana als visualitzadors que generin aparences (NeedAppearances)
 	The fronts already scanned are kept for the reverse-side pass.	The fronts already scanned are kept for the reverse-side pass.
+	The ICC profile {} isn't a CMYK profile, which PDF/X-1a needs	El perfil ICC {} no és un perfil CMYK, que és el que necessita PDF/X-1a
+	The ICC profile {} isn't a gray, RGB or CMYK profile	El perfil ICC {} no és un perfil de gris, RGB ni CMYK
+	The ICC profile {} isn't an output (printer) profile	El perfil ICC {} no és un perfil de sortida (d'impressora)
+	The ICC profile {} isn't an output or display profile	El perfil ICC {} no és un perfil de sortida ni de pantalla
 	The image couldn't be used as an icon: {e}	No s'ha pogut utilitzar la imatge com a icona: {e}
 	The image has been copied ({w} × {h} pixels)	S'ha copiat la imatge ({w} × {h} píxels)
 	The image has been copied as a {ext} file	S'ha copiat la imatge com a fitxer {ext}
@@ -2945,6 +2989,7 @@ calendar weekday	Th	dj.
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	La clau és a {device}, que demana l'aprovació pel seu compte (un teclat de PIN o una aplicació al telèfon).
 	The Keychain's digital IDs couldn't be listed: {e}	No s'han pogut llistar els identificadors digitals del Clauer: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Les etiquetes són en anglès: el tipus de lletra de la signatura no pot dibuixar-les en aquesta llengua.
+	The language {} isn't a valid language tag	L'idioma {} no és una etiqueta d'idioma vàlida
 	The linked PDF opened, but its named destination was not applied.	S'ha obert el PDF enllaçat, però no s'ha aplicat la seva destinació amb nom.
 	The linked PDF opened, but its page destination was out of range.	S'ha obert el PDF enllaçat, però la seva destinació de pàgina era fora de l'interval.
 	The metadata doesn't identify the file as PDF/UA (pdfuaid:part)	Les metadades no identifiquen el fitxer com a PDF/UA (pdfuaid:part)
@@ -2968,6 +3013,7 @@ calendar weekday	Th	dj.
 	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	El perfil del propòsit de sortida no té transformació de dispositiu a PCS (AToB1 o grayTRC)
 	The output intent's profile isn't a valid ICC profile	El perfil del propòsit de sortida no és un perfil ICC vàlid
 	The output intent's profile isn't an output (printer) profile	El perfil del propòsit de sortida no és un perfil de sortida (d'impressora)
+	The output profile can't convert colour to CMYK ({})	El perfil de sortida no pot convertir el color a CMYK ({})
 	The page has both a TrimBox and an ArtBox	La pàgina té alhora una TrimBox i una ArtBox
 	The page has changed; select the image again	La pàgina ha canviat; torna a seleccionar la imatge
 	The page has neither a TrimBox nor an ArtBox	La pàgina no té ni TrimBox ni ArtBox
@@ -3006,6 +3052,7 @@ calendar weekday	Th	dj.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Les restriccions s'apliquen als destinataris sense «Tots els permisos». S'apliquen en desar.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
+	The role map maps {} in a circle	El mapa de rols assigna {} en cercle
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	les files són massa baixes: fes l'àrea més alta o fes servir menys files o menys espai entre files
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	El valor de la signatura RSA no té la longitud del mòdul de la clau (s'han suprimit o afegit bytes zero inicials); s'ha llegit igualment.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	El DigestInfo de la signatura RSA no té el paràmetre NULL (els signants més antics l'escriuen així); s'ha llegit igualment.
@@ -3071,7 +3118,10 @@ calendar weekday	Th	dj.
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	el servei de signatura ha rebutjat el PIN o l'OTP (l'OTP pot haver caducat)
 	the signing service rejected the user name or password	el servei de signatura ha rebutjat el nom d'usuari o la contrasenya
 	The smart card's digital IDs couldn't be listed: {e}	No s'han pogut llistar els identificadors digitals de la targeta intel·ligent: {e}
+	The spot colour {} has an alternate that can't be converted to CMYK yet	El color pla {} té un alternatiu que encara no es pot convertir a CMYK
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Els tipus de lletra estàndard no poden dibuixar “{c}” ({code}). De moment només es poden afegir com a text caràcters d'Europa occidental.
+	The standard structure type {} is mapped to a type that isn't standard	El tipus d'estructura estàndard {} s'assigna a un tipus que no és estàndard
+	The structure type {} isn't standard and isn't mapped to a standard type	El tipus d'estructura {} no és estàndard i no s'assigna a cap tipus estàndard
 	The text is the same	El text és el mateix
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	els models de reconeixement de text no estan instal·lats (reinstal·la PdfCraft o defineix PDFCRAFT_MODELS amb la carpeta que els conté)
 	The timestamp authority's certificate is not issued for time stamping.	The timestamp authority's certificate is not issued for time stamping.
@@ -3534,7 +3584,9 @@ calendar weekday	We	dc.
 	{} annotation on page {p} isn't tagged	L'anotació {} de la pàgina {p} no està etiquetada
 	{} annotation on page {p}: its description has no language (Lang)	Anotació {} de la pàgina {p}: la seva descripció no té idioma (Lang)
 	{} annotations aren't allowed	No es permeten les anotacions {}
+	{} colour can't be converted to CMYK yet	Encara no es pot convertir a CMYK el color {}
 	{} colour doesn't match the output intent's colour space	El color {} no coincideix amb l'espai de color del propòsit de sortida
+	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} necessita el perfil ICC de la condició d'impressió incrustat per al color RGB o independent del dispositiu: tria un fitxer de perfil
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (la protecció s'aplica en desar)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	«{name}» ha canviat al disc després d'obrir-lo o d'haver-lo desat per última vegada. Si ara el deses, aquesta versió substituirà la més recent.

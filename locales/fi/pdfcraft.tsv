@@ -48,7 +48,12 @@
 	a bookmark cannot be moved inside itself	kirjanmerkkiä ei voi siirtää itsensä sisään
 	A button	Painike
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Puhtaan huoneen menetelmällä kehitetty avoimen lähdekoodin PDF-sovellus, kirjoitettu Rustilla. MIT OR Apache-2.0.
+	A colour operator's operands don't match its colour space	Värioperaattorin operandit eivät vastaa sen väriavaruutta
+	A colour space is nested too deeply to convert	Väriavaruus on sisäkkäin liian syvällä muunnettavaksi
+	A colour space's ICC profile can't be used to convert its colour	Väriavaruuden ICC-profiilia ei voi käyttää sen värin muuntamiseen
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	sarake on liian kapea: tee alueesta leveämpi, anna sarakkeelle siitä suurempi osuus tai käytä vähemmän sarakkeita tai pienempää sarakeväliä
+	A content stream can't be read, so its colour can't be converted	Sisältövirtaa ei voi lukea, joten sen väriä ei voi muuntaa
+	A content stream is drawn with different resources in different places, so its colour can't be converted	Sisältövirta piirretään eri paikoissa eri resursseilla, joten sen väriä ei voi muuntaa
 	A cover on the scanner is open.	A cover on the scanner is open.
 	A diagonal CONFIDENTIAL watermark on every page.	Vinottainen LUOTTAMUKSELLINEN-vesileima jokaiselle sivulle.
 	a document must keep at least one page	asiakirjassa on oltava vähintään yksi sivu
@@ -63,16 +68,22 @@
 	A graphics state uses a soft mask	Grafiikkatila käyttää pehmeää maskia
 	A graphics state uses the {} blend mode	Grafiikkatila käyttää sekoitustilaa {}
 	a header cell with no Scope, in a table that doesn't use Headers	otsikkosolu ilman Scopea taulukossa, joka ei käytä Headersia
+	A JPEG picture in CMYK can't be converted yet	CMYK-JPEG-kuvaa ei vielä voi muuntaa
 	A link	Linkki
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logo tai nimi välilehtien vasemmalla puolella, jossa otsikkorivi näyttäisi sellaisen: PdfCraftin oma tai yrityksesi.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
+	A pattern over RGB or device-independent colour can't be converted to CMYK yet	RGB- tai laitteesta riippumattoman värin päällä olevaa kuviota ei vielä voi muuntaa CMYK:ksi
 	A picture covers page {pages} (a scan?), so the background won't show there.	Kuva peittää sivun {pages} (skannaus?), joten tausta ei näy siinä.
+	A picture with a decode array or a colour-key mask can't be converted to CMYK yet	Kuvaa, jossa on dekoodaustaulukko tai väriavainmaski, ei vielä voi muuntaa CMYK:ksi
+	A picture with other than 8 bits per component can't be converted to CMYK yet	Kuvaa, jossa on muu kuin 8 bittiä komponenttia kohden, ei vielä voi muuntaa CMYK:ksi
+	A picture's data can't be read, so it can't be converted to CMYK	Kuvan tietoja ei voi lukea, joten sitä ei voi muuntaa CMYK:ksi
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG- tai SVG-tiedosto. Se luetaan tästä sijainnista aina, kun PdfCraft käynnistyy.
 	A PrinterMark annotation overlaps the TrimBox or ArtBox	PrinterMark-merkintä menee TrimBoxin tai ArtBoxin päälle
 	A script	Komentosarja
 	a second {} in its table	toinen {} taulukossaan
 	A selected field has no widget on any page, so the fields can't be edited together.	Yhdellä valituista kentistä ei ole kenttäelementtiä millään sivulla, joten kenttiä ei voi muokata yhdessä.
 	A setting isn't valid	Asetus ei kelpaa
+	A shading in RGB or device-independent colour can't be converted to CMYK yet	RGB- tai laitteesta riippumattoman värin sävytystä ei vielä voi muuntaa CMYK:ksi
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Sivun sisältöön kuuluva allekirjoitus, kuten skannatulla sivulla, ei ole kenttä eikä merkintä, joten sitä ei voi poistaa yksinään, eikä PdfCraft pyyhi sivun osia sen piilottamiseksi. Poista se peittämällä alue (Peitä) tai, jos allekirjoitus on erillinen kuva, poistamalla kuva toiminnolla Muokkaa PDF:ää.
 	A stream refers to an external file	Virta viittaa ulkoiseen tiedostoon
 	A stream uses JBIG2 compression	Virta käyttää JBIG2-pakkausta
@@ -260,6 +271,7 @@
 	An image has a soft mask	Kuvalla on pehmeä maski
 	An image has alternates or OPI information	Kuvalla on vaihtoehtoisia kuvia tai OPI-tietoja
 	An image or form has OPI information	Kuvassa tai lomakkeessa on OPI-tietoja
+	An indexed colour space's table is too short to convert	Indeksoidun väriavaruuden taulukko on liian lyhyt muunnettavaksi
 	An open-source PDF workbench — local, private, and scriptable.	Avoimen lähdekoodin PDF-työpöytä – paikallinen, yksityinen ja skriptattava.
 	An optional content configuration has an AS entry	Valinnaisen sisällön määrityksessä on AS-avain
 	and {n} more	ja {n} muuta
@@ -386,6 +398,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Calibrate from two points	Kalibroi kahdesta pisteestä
 	Callout	Selite
 	Can't be read: {e}	Ei voi lukea: {e}
+	Can't save as {level}; nothing was changed:	Ei voi tallentaa muotoon {level}; mitään ei muutettu:
 	Cancel reverse sides	Cancel reverse sides
 	Canceling…	Perutaan…
 	Cancelled	Peruttu
@@ -486,6 +499,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Choose a stamp, then click on the page to place it.	Valitse leima ja sijoita se napsauttamalla sivua.
 	Choose an image	Valitse kuva
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Valitse toinen tiedosto: alkuperäinen säilyy ennallaan, ja versio ilman allekirjoitusta tallennetaan sen viereen.
+	Choose ICC profile…	Valitse ICC-profiili…
 	Choose images	Valitse kuvat
 	Choose image…	Valitse kuva…
 	Choose new keys for {command}	Valitse uudet näppäimet komennolle {command}
@@ -522,6 +536,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Close Window	Sulje ikkuna
 	Closed arrow	Suljettu nuoli
 	Cloud	Pilvi
+	CMYK colour needs a CMYK printing condition	CMYK-väri tarvitsee CMYK-painoehdon
 	Code sent	Koodi lähetetty
 	Collapse	Kutista
 	Collapse all	Kutista kaikki
@@ -600,6 +615,8 @@ certificate	Basic constraints	Perusrajoitukset
 	Contributors	Osallistujat
 	Convert colors	Muunna värit
 	Convert mode	Muunnostila
+	Converted to {level} ({n} changes)	Muunnettu muotoon {level} ({n} muutosta)
+	Converting colour to CMYK needs the printing condition's ICC profile: choose a profile file	Värin muuntaminen CMYK:ksi tarvitsee painoehdon ICC-profiilin: valitse profiilitiedosto
 	Copied to clipboard	Kopioitu leikepöydälle
 	Copied {what}	Kopioitiin {what}
 	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Kopiot, kaksipuolinen tulostus ja väri valitaan selaimen tulostusikkunassa.
@@ -636,6 +653,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Couldn't optimize the file: {e}	Tiedoston optimointi epäonnistui: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Selaimesta ei voitu tulostaa ({e}); ladattiin {name} tulostettavaksi sen sijaan
 	Couldn't reach the printer	Tulostimeen ei saatu yhteyttä
+	Couldn't read the ICC profile {name}: {e}	ICC-profiilia {name} ei voitu lukea: {e}
 	Couldn't read {name}: {e}	Tiedoston {name} lukeminen epäonnistui: {e}
 	Couldn't recover {name}: {e}	Tiedoston {name} palauttaminen epäonnistui: {e}
 	Couldn't reload {name}: {e}	Kohdetta {name} ei voitu ladata uudelleen: {e}
@@ -1122,6 +1140,7 @@ calendar date	February	helmikuuta
 	Fixed what could be fixed; 1 problem remains	Korjattiin, mikä voitiin; 1 ongelma jäljellä
 	Fixed what could be fixed; {n} problems remain	Korjattiin, mikä voitiin; {n} ongelmaa jäljellä
 	Flatten comments	Litistä kommentit
+	Flatten comments and form fields	Litistä kommentit ja lomakekentät
 	Flatten Fill & Sign	Litistä Täytä ja allekirjoita
 	Flatten Fill & Sign when saving	Litistä Täytä ja allekirjoita -sisältö tallennettaessa
 	Flatten form fields	Litistä lomakekentät
@@ -1263,6 +1282,7 @@ key	Home	Home
 	HTML web page	HTML-verkkosivu
 	H{n} follows an H{d}; headings should not skip levels	H{n} seuraa otsikkoa H{d}; otsikkotasoja ei pidä ohittaa
 	I confirm sending this document to this printer	Vahvistan tämän asiakirjan lähettämisen tälle tulostimelle
+	ICC profile: {name}	ICC-profiili: {name}
 	Icon	Kuvake
 	Identity	Henkilöllisyys
 	Image (PNG)	Kuva (PNG)
@@ -1361,6 +1381,7 @@ calendar date	January	tammikuuta
 	JBIG2 (lossless)	JBIG2 (häviötön)
 	Join the ArtCraft community	Liity ArtCraft-yhteisöön
 	Join the ArtCraft Discord	Liity ArtCraftin Discordiin
+	JPEG 2000 pictures need PDF 1.5, newer than {} allows	JPEG 2000 -kuvat tarvitsevat PDF 1.5:n, joka on uudempi kuin {} sallii
 	July	Heinäkuu
 calendar date	July	heinäkuuta
 	June	Kesäkuu
@@ -1398,6 +1419,7 @@ certificate	Key usage	Avaimen käyttö
 	Later in tab order	Myöhemmäksi sarkainjärjestyksessä
 	Latin (accented)	Latinalainen (tarkkeineen)
 	Layer options	Layer options
+	Layers (optional content) need PDF 1.5, newer than {} allows	Tasot (valinnainen sisältö) tarvitsevat PDF 1.5:n, joka on uudempi kuin {} sallii
 	Layers panel	Tasopaneeli
 	Layers Panel and Page	Tasopaneeli ja sivu
 	Layout and Magnification	Asettelu ja suurennus
@@ -1666,6 +1688,7 @@ calendar weekday	Mo	Ma
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Mistään näistä tiedostoista ei voi tehdä PDF:ää; käytä PDF-, kuva- tai .txt-tiedostoja
 	None of your digital IDs can open this document.	Mikään digitaalisista tunnuksistasi ei voi avata tätä asiakirjaa.
 	None — everything is allowed	Ei mitään – kaikki on sallittu
+	None: sRGB for RGB and gray documents	Ei mitään: sRGB RGB- ja harmaasävyasiakirjoille
 scroll speed	Normal	Normaali
 	Not allowed	Ei sallittu
 	not allowed directly in a TOC	ei sallittu suoraan TOC:ssa
@@ -1765,6 +1788,7 @@ animation effects	On	Käytössä
 	Opening the browser's print dialog…	Avataan selaimen tulostusikkunaa…
 	Opening {name}…	Avataan {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Avaa tulostinohjaimen asetukset. Ne tallennetaan kaikkiin tämän tietokoneen tulostuksiin; tässä valitut kopiot, kaksipuolisuus, harmaasävy ja paperi ovat silti voimassa.
+	OpenType font programs need PDF 1.6, newer than {} allows	OpenType-fonttiohjelmat tarvitsevat PDF 1.6:n, joka on uudempi kuin {} sallii
 	Optical resolution {x} × {y} dpi.	Optical resolution {x} × {y} dpi.
 	Optimization cancelled	Optimointi peruutettu
 	Optimization is already running	Optimointi on jo käynnissä
@@ -1802,7 +1826,9 @@ animation effects	On	Käytössä
 	Outline colour:	Ääriviivan väri:
 	Output appears here.	Tuloste näkyy tässä.
 	Output folder	Tulostekansio
+	Output intent profile:	Tulostustarkoituksen profiili:
 	Output intent: {list}	Tulostustarkoitus: {list}
+	Output intents with profiles don't all share one profile	Profiilin sisältävät tulostustarkoitukset eivät kaikki jaa samaa profiilia
 	Output preview	Tulosteen esikatselu
 	Owner password (no restrictions apply)	Omistajan salasana (rajoitukset eivät koske)
 	Page background	Sivun tausta
@@ -1849,6 +1875,7 @@ animation effects	On	Käytössä
 	Page {p}: {n} untagged content item	Sivu {p}: {n} tagaamaton sisältökohde
 	Page {p}: {n} untagged content items	Sivu {p}: {n} tagaamatonta sisältökohdetta
 	Page {} has additional actions	Sivulla {} on lisätoimintoja
+	Page {}'s TrimBox, BleedBox and CropBox don't overlap	Sivun {} TrimBox, BleedBox ja CropBox eivät mene päällekkäin
 	pages	sivua
 	pages added or removed	sivuja lisätty tai poistettu
 	Pages counted	Lasketut sivut
@@ -1890,7 +1917,9 @@ animation effects	On	Käytössä
 	PDF scale: {scale}%	PDF-mittakaava: {scale} %
 	PDF version	PDF-versio
 	PDF, images and text	PDF, kuvat ja teksti
+	PDF/A embeds the output intent's ICC profile: choose a profile file	PDF/A upottaa tulostustarkoituksen ICC-profiilin: valitse profiilitiedosto
 	PDF/A…	PDF/A…
+	PDF/X-4 embeds the printing condition's ICC profile: choose a profile file	PDF/X-4 upottaa painoehdon ICC-profiilin: valitse profiilitiedosto
 	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft ei vielä pysty tarkistamaan tätä allekirjoitusta: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft ei sulkeutunut normaalisti. Näiden asiakirjojen muutokset tallennettiin automaattisesti:
@@ -1993,6 +2022,7 @@ animation effects	On	Käytössä
 	Printer's mark annotation on page {p} is in the structure tree	Sivun {p} painomerkkimerkintä on rakennepuussa
 	Printing	Tulostus
 	Printing allowed	Tulostus sallittu
+	Printing condition:	Painoehto:
 	Privacy	Tietosuoja
 	Private data of other applications	Muiden sovellusten yksityiset tiedot
 	Producer	PDF-tuottaja
@@ -2277,6 +2307,8 @@ calendar weekday	Sa	La
 	Saved measurements.	Mittaukset tallennettu.
 	Saved the print-ready PDF to {path}	Painovalmis PDF tallennettiin kohteeseen {path}
 	Saved {name}	Tallennettiin {name}
+	Saved {name} and verified it: it conforms to {level}.	{name} tallennettiin ja tarkistettiin: se on {level}-yhdenmukainen.
+	Saved {name}, but verifying it found {n} problems.	{name} tallennettiin, mutta tarkistus löysi {n} ongelmaa.
 	Saved {place}: {before} → {after} (not smaller){detail}	Tallennettu {place}: {before} → {after} (ei pienempi){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Tallennettu {place}: {before} → {after} ({pct} % pienempi){detail}
 	Saved, but reopening failed: {e}	Tallennettiin, mutta uudelleen avaaminen epäonnistui: {e}
@@ -2609,6 +2641,7 @@ certificate	Subject	Kohde
 	Text Field Table	Tekstikenttätaulukko
 	Text field table	Tekstikenttätaulukko
 	Text in images isn't found; recognise text (OCR) first.	Kuvissa olevaa tekstiä ei löydy; tunnista teksti (OCR) ensin.
+	Text in the font {} uses the Private Use Area without ActualText	Fontin {} teksti käyttää yksityiskäyttöaluetta ilman ActualTextiä
 	Text is compared word by word; the differences are shown on the new file.	Tekstiä verrataan sana sanalta; erot näytetään uudessa tiedostossa.
 	Text language is specified	Tekstin kieli on määritetty
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Tekstin on erotuttava taustastaan riittävästi heikkonäköisille. Tarkista värit silmämääräisesti tai kontrastityökalulla.
@@ -2646,6 +2679,7 @@ calendar weekday	Th	To
 	The default optional content configuration (D) has no Name	Valinnaisen sisällön oletusmäärityksellä (D) ei ole Namea
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Työpöytäportaalin tiedostonvalitsin ei ole käynnissä ({packages}). Tarkista se komennolla systemctl --user status {first} tai kirjaudu ulos ja takaisin sisään.
 	The Dock shows it the next time PdfCraft opens.	Dock näyttää sen, kun PdfCraft avataan seuraavan kerran.
+	The document can't be converted: {}	Asiakirjaa ei voi muuntaa: {}
 	The document changed while it was being signed, so the signature wasn't saved.	Asiakirja muuttui allekirjoittamisen aikana, joten allekirjoitusta ei tallennettu.
 	The document changed while its margins were measured; nothing was cropped	Asiakirja muuttui reunuksia mitattaessa; mitään ei rajattu
 	The document changed while you were choosing a file, so nothing was changed.	Asiakirja muuttui tiedoston valinnan aikana, joten mitään ei muutettu.
@@ -2662,6 +2696,7 @@ calendar weekday	Th	To
 	The document has document-level JavaScript	Asiakirjassa on asiakirjatason JavaScriptiä
 	the document has no form fields	asiakirjassa ei ole lomakekenttiä
 	the document has no page tree	asiakirjassa ei ole sivupuuta
+	The document has no structure tree: it isn't tagged	Asiakirjassa ei ole rakennepuuta: sitä ei ole tagattu
 	the document has no tags	asiakirjassa ei ole tageja
 	The document has no tags (structure tree)	Asiakirjassa ei ole tageja (rakennepuu)
 	The document has no title	Asiakirjalla ei ole otsikkoa
@@ -2669,14 +2704,17 @@ calendar weekday	Th	To
 	The document information and the metadata name different PDF/X versions	Asiakirjan tiedot ja metatiedot nimeävät eri PDF/X-versiot
 	The document information doesn't identify the file as {}	Asiakirjan tiedot eivät tunnista tiedostoa muotoon {}
 	The document is encrypted	Asiakirja on salattu
+	The document is encrypted: open it with its permissions password to remove the security	Asiakirja on salattu: avaa se käyttöoikeussalasanalla poistaaksesi suojauksen
 	The document is no longer open.	Asiakirja ei ole enää auki.
 	the document is protected by a password	asiakirja on suojattu salasanalla
+	The document isn't marked as tagged (MarkInfo /Marked true)	Asiakirjaa ei ole merkitty tagatuksi (MarkInfo /Marked true)
 	The document isn't marked as tagged (MarkInfo Marked)	Asiakirjaa ei ole merkitty tagatuksi (MarkInfo Marked)
 	The document isn't tagged, so none of its content is	Asiakirjaa ei ole tagattu, joten mitään sen sisällöstä ei ole tagattu
 	The document now conforms to {level}; save it to keep the changes	Asiakirja on nyt {level}-yhteensopiva; tallenna se, jotta muutokset säilyvät
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Asiakirja avautuu ilman salasanaa; tätä salasanaa tarvitaan rajoitusten muuttamiseen. Se otetaan käyttöön tallennettaessa.
 	The document sets no language (Lang), and neither do its tags	Asiakirja ei määritä kieltä (Lang), eivätkä sen tagit myöskään
 	The document uses both H and numbered headings (H1–H6)	Asiakirjassa käytetään sekä H-otsikoita että numeroituja otsikoita (H1–H6)
+	The document uses CMYK colour: choose the ICC profile of a CMYK printing condition for its output intent	Asiakirja käyttää CMYK-väriä: valitse sen tulostustarkoitukselle CMYK-painoehdon ICC-profiili
 	The document was closed before it could be saved.	Asiakirja suljettiin ennen kuin se ehdittiin tallentaa.
 	The document wasn't signed: {e}	Asiakirjaa ei allekirjoitettu: {e}
 	The document will no longer be certified.	Asiakirja ei ole enää sertifioitu.
@@ -2705,11 +2743,17 @@ calendar weekday	Th	To
 	The file trailer has no document ID	Tiedoston trailerissa ei ole asiakirjan tunnistetta
 	the first heading is an H{n}; headings should not skip levels	ensimmäinen otsikko on H{n}; otsikkotasoja ei pidä ohittaa
 	the first row number can be at most {max}	ensimmäisen rivin numero voi olla enintään {max}
+	The font {} has characters with no Unicode value	Fontissa {} on merkkejä, joilla ei ole Unicode-arvoa
 	The font {} isn't embedded	Fonttia {} ei ole upotettu
+	The font {} maps characters to U+0000, U+FEFF or U+FFFE	Fontti {} yhdistää merkkejä arvoihin U+0000, U+FEFF tai U+FFFE
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraftin käyttämät fontit eivät pysty piirtämään merkkiä ”{c}” ({code}), joten se näkyy merkkinä ? kaikissa PDF-katseluohjelmissa. Teksti tallennetaan.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Lomake pyytää lähettämään tiedot osoitteeseen {u}; PdfCraft ei lähetä lomaketietoja. Tallenna asiakirja, jotta syötetyt tiedot säilyvät.
 	The form asks viewers to make appearances (NeedAppearances)	Lomake pyytää katseluohjelmia luomaan ulkoasut (NeedAppearances)
 	The fronts already scanned are kept for the reverse-side pass.	The fronts already scanned are kept for the reverse-side pass.
+	The ICC profile {} isn't a CMYK profile, which PDF/X-1a needs	ICC-profiili {} ei ole CMYK-profiili, jota PDF/X-1a tarvitsee
+	The ICC profile {} isn't a gray, RGB or CMYK profile	ICC-profiili {} ei ole harmaa-, RGB- eikä CMYK-profiili
+	The ICC profile {} isn't an output (printer) profile	ICC-profiili {} ei ole tulostus- (tulostin)profiili
+	The ICC profile {} isn't an output or display profile	ICC-profiili {} ei ole tulostus- eikä näyttöprofiili
 	The image couldn't be used as an icon: {e}	Kuvaa ei voitu käyttää kuvakkeena: {e}
 	The image has been copied ({w} × {h} pixels)	Kuva on kopioitu ({w} × {h} pikseliä)
 	The image has been copied as a {ext} file	Kuva on kopioitu {ext}-tiedostona
@@ -2720,6 +2764,7 @@ calendar weekday	Th	To
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Avain on laitteessa {device}, joka pyytää hyväksynnän itse (PIN-näppäimistö tai puhelimen sovellus).
 	The Keychain's digital IDs couldn't be listed: {e}	Avainnipun digitaalisia tunnuksia ei voitu luetella: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Tunnisteet ovat englanniksi: allekirjoituksen fontti ei pysty piirtämään niitä tällä kielellä.
+	The language {} isn't a valid language tag	Kieli {} ei ole kelvollinen kielitunniste
 	The linked PDF opened, but its named destination was not applied.	Linkitetty PDF avautui, mutta sen nimettyä kohdetta ei käytetty.
 	The linked PDF opened, but its page destination was out of range.	Linkitetty PDF avautui, mutta sen kohdesivu oli alueen ulkopuolella.
 	The metadata doesn't identify the file as PDF/UA (pdfuaid:part)	Metatiedot eivät tunnista tiedostoa PDF/UA-tiedostoksi (pdfuaid:part)
@@ -2743,6 +2788,7 @@ calendar weekday	Th	To
 	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	Tulostustarkoituksen profiilissa ei ole laitteesta PCS:ään -muunnosta (AToB1 tai grayTRC)
 	The output intent's profile isn't a valid ICC profile	Tulostustarkoituksen profiili ei ole kelvollinen ICC-profiili
 	The output intent's profile isn't an output (printer) profile	Tulostustarkoituksen profiili ei ole tulostus- (tulostin)profiili
+	The output profile can't convert colour to CMYK ({})	Tulostusprofiili ei voi muuntaa väriä CMYK:ksi ({})
 	The page has both a TrimBox and an ArtBox	Sivulla on sekä TrimBox että ArtBox
 	The page has changed; select the image again	Sivu on muuttunut; valitse kuva uudelleen
 	The page has neither a TrimBox nor an ArtBox	Sivulla ei ole TrimBoxia eikä ArtBoxia
@@ -2781,6 +2827,7 @@ calendar weekday	Th	To
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Rajoitukset koskevat vastaanottajia, joilla ei ole “Kaikki oikeudet” -oikeutta. Ne otetaan käyttöön tallennettaessa.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
+	The role map maps {} in a circle	Roolikartta yhdistää tyypin {} kehään
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	rivit ovat liian matalia: tee alueesta korkeampi tai käytä vähemmän rivejä tai pienempää riviväliä
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA-allekirjoituksen arvon pituus ei vastaa avaimen modulusta (alun nollatavuja poistettu tai lisätty); se luettiin silti.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	RSA-allekirjoituksen DigestInfo-rakenteesta puuttuu NULL-parametri (vanhemmat allekirjoittajat kirjoittavat sen näin); se luettiin silti.
@@ -2846,7 +2893,10 @@ calendar weekday	Th	To
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	allekirjoituspalvelu hylkäsi PIN-koodin tai kertakäyttökoodin (kertakäyttökoodi on voinut vanhentua)
 	the signing service rejected the user name or password	allekirjoituspalvelu hylkäsi käyttäjänimen tai salasanan
 	The smart card's digital IDs couldn't be listed: {e}	Älykortin digitaalisia tunnuksia ei voitu luetella: {e}
+	The spot colour {} has an alternate that can't be converted to CMYK yet	Spottivärillä {} on vaihtoehtoinen väri, jota ei vielä voi muuntaa CMYK:ksi
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Vakiofontit eivät pysty piirtämään merkkiä ”{c}” ({code}). Toistaiseksi tekstinä voi lisätä vain länsieurooppalaisia merkkejä.
+	The standard structure type {} is mapped to a type that isn't standard	Vakiorakennetyyppi {} on yhdistetty tyyppiin, joka ei ole vakiotyyppi
+	The structure type {} isn't standard and isn't mapped to a standard type	Rakennetyyppi {} ei ole vakiotyyppi eikä sitä ole yhdistetty vakiotyyppiin
 	The text is the same	Teksti on sama
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	tekstintunnistusmalleja ei ole asennettu (asenna PdfCraft uudelleen tai aseta PDFCRAFT_MODELS osoittamaan mallien kansioon)
 	The timestamp authority's certificate is not issued for time stamping.	The timestamp authority's certificate is not issued for time stamping.
@@ -3293,7 +3343,9 @@ calendar weekday	We	Ke
 	{} annotation on page {p} isn't tagged	Sivun {p} {}-merkintää ei ole tagattu
 	{} annotation on page {p}: its description has no language (Lang)	Sivun {p} {}-merkintä: sen kuvauksella ei ole kieltä (Lang)
 	{} annotations aren't allowed	{}-merkinnät eivät ole sallittuja
+	{} colour can't be converted to CMYK yet	Väriä {} ei vielä voi muuntaa CMYK:ksi
 	{} colour doesn't match the output intent's colour space	Väri {} ei vastaa tulostustarkoituksen väriavaruutta
+	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} tarvitsee painoehdon ICC-profiilin upotettuna RGB- tai laitteesta riippumatonta väriä varten: valitse profiilitiedosto
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (suojaus otetaan käyttöön tallennettaessa)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	”{name}” muuttui levyllä avaamisen tai edellisen tallennuksen jälkeen. Tallentaminen nyt korvaa tuon uudemman version tällä versiolla.

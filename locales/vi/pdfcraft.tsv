@@ -50,7 +50,12 @@
 	a bookmark cannot be moved inside itself	không thể di chuyển dấu trang vào bên trong chính nó
 	A button	Một nút
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Ứng dụng PDF mã nguồn mở, viết lại độc lập (clean-room) bằng Rust. MIT OR Apache-2.0.
+	A colour operator's operands don't match its colour space	Toán hạng của một toán tử màu không khớp với không gian màu của nó
+	A colour space is nested too deeply to convert	Một không gian màu lồng quá sâu để chuyển đổi
+	A colour space's ICC profile can't be used to convert its colour	Không thể dùng hồ sơ ICC của một không gian màu để chuyển màu của nó
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	một cột quá hẹp: hãy làm vùng rộng hơn, cho cột thêm độ rộng, hoặc dùng ít cột hơn hay khoảng cách cột nhỏ hơn
+	A content stream can't be read, so its colour can't be converted	Không đọc được một luồng nội dung nên không thể chuyển màu của nó
+	A content stream is drawn with different resources in different places, so its colour can't be converted	Một luồng nội dung được vẽ với tài nguyên khác nhau ở những nơi khác nhau nên không thể chuyển màu của nó
 	A cover on the scanner is open.	Một nắp của máy quét đang mở.
 	A diagonal CONFIDENTIAL watermark on every page.	Hình mờ CONFIDENTIAL nằm chéo trên mọi trang.
 	a document must keep at least one page	tài liệu phải giữ ít nhất một trang
@@ -65,16 +70,22 @@
 	A graphics state uses a soft mask	Một trạng thái đồ họa dùng mặt nạ mềm
 	A graphics state uses the {} blend mode	Một trạng thái đồ họa dùng chế độ hòa trộn {}
 	a header cell with no Scope, in a table that doesn't use Headers	ô tiêu đề không có Scope, trong một bảng không dùng Headers
+	A JPEG picture in CMYK can't be converted yet	Ảnh JPEG ở CMYK chưa thể chuyển đổi
 	A link	Một liên kết
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Một logo hoặc tên ở bên trái các thẻ, nơi thanh tiêu đề thường hiển thị: của PdfCraft hoặc của công ty bạn.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Số trang sẽ dừng khay nạp sau ngần ấy tờ. Hủy sẽ kết thúc quá trình truyền sớm; các trang đã nhận vẫn ở lại trong tài liệu.
+	A pattern over RGB or device-independent colour can't be converted to CMYK yet	Mẫu tô trên màu RGB hoặc màu không phụ thuộc thiết bị chưa thể chuyển sang CMYK
 	A picture covers page {pages} (a scan?), so the background won't show there.	Một hình ảnh phủ kín trang {pages} (bản quét?), nên nền sẽ không hiện ở đó.
+	A picture with a decode array or a colour-key mask can't be converted to CMYK yet	Ảnh có mảng giải mã hoặc mặt nạ khóa màu chưa thể chuyển sang CMYK
+	A picture with other than 8 bits per component can't be converted to CMYK yet	Ảnh không phải 8 bit mỗi thành phần chưa thể chuyển sang CMYK
+	A picture's data can't be read, so it can't be converted to CMYK	Không đọc được dữ liệu của một ảnh nên không thể chuyển sang CMYK
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Một tệp PNG hoặc SVG. Tệp được đọc từ vị trí này mỗi lần PdfCraft khởi động.
 	A PrinterMark annotation overlaps the TrimBox or ArtBox	Chú thích PrinterMark chồng lên TrimBox hoặc ArtBox
 	A script	Một script
 	a second {} in its table	{} thứ hai trong bảng của nó
 	A selected field has no widget on any page, so the fields can't be edited together.	Một trường đã chọn không có widget trên trang nào, nên các trường không thể được chỉnh sửa cùng nhau.
 	A setting isn't valid	Một thiết lập không hợp lệ
+	A shading in RGB or device-independent colour can't be converted to CMYK yet	Tô chuyển sắc bằng màu RGB hoặc màu không phụ thuộc thiết bị chưa thể chuyển sang CMYK
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Chữ ký là một phần nội dung của trang, ví dụ trên trang được quét, không phải là trường hay chú thích nên không thể gỡ riêng, và PdfCraft không xóa một phần trang để che nó. Để bỏ nó đi, hãy xóa nội dung nhạy cảm ở vùng đó (Xóa nội dung nhạy cảm), hoặc nếu chữ ký là một hình ảnh riêng thì xóa hình ảnh bằng Chỉnh sửa một PDF.
 	A stream refers to an external file	Một luồng tham chiếu đến tệp bên ngoài
 	A stream uses JBIG2 compression	Một luồng dùng nén JBIG2
@@ -260,6 +271,7 @@
 	An image has a soft mask	Một hình ảnh có mặt nạ mềm
 	An image has alternates or OPI information	Một hình ảnh có bản thay thế hoặc thông tin OPI
 	An image or form has OPI information	Một hình ảnh hoặc biểu mẫu có thông tin OPI
+	An indexed colour space's table is too short to convert	Bảng của một không gian màu chỉ mục quá ngắn để chuyển đổi
 	An open-source PDF workbench — local, private, and scriptable.	Bộ công cụ PDF mã nguồn mở — chạy cục bộ, riêng tư và có thể viết kịch bản.
 	An optional content configuration has an AS entry	Một cấu hình nội dung tùy chọn có mục AS
 	and {n} more	và {n} mục nữa
@@ -382,6 +394,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Calibrate…	Hiệu chỉnh…
 	Callout	Khung chú thích
 	Can't be read: {e}	Không thể đọc: {e}
+	Can't save as {level}; nothing was changed:	Không thể lưu thành {level}; không có gì thay đổi:
 	Cancel reverse sides	Hủy quét mặt sau
 	Canceling…	Đang hủy…
 	Cancelled	Đã hủy
@@ -481,6 +494,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Choose a stamp, then click on the page to place it.	Chọn một con dấu, sau đó bấm vào trang để đặt.
 	Choose an image	Chọn một hình ảnh
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Hãy chọn tệp khác: bản gốc được giữ nguyên, còn phiên bản không có chữ ký được lưu bên cạnh.
+	Choose ICC profile…	Chọn hồ sơ ICC…
 	Choose images	Chọn hình ảnh
 	Choose image…	Chọn hình ảnh…
 	Choose new keys for {command}	Chọn phím mới cho {command}
@@ -519,6 +533,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Closed arrow	Mũi tên đóng
 	Cloud	Đám mây
 	CloudSigner (mSzafir) is found by itself when it is installed: start it and log in before signing.	CloudSigner (mSzafir) được tự động tìm thấy khi đã cài đặt: hãy khởi động và đăng nhập trước khi ký.
+	CMYK colour needs a CMYK printing condition	Màu CMYK cần điều kiện in CMYK
 	Code sent	Đã gửi mã
 	Collapse all	Thu gọn tất cả
 	Collapse all bookmarks	Thu gọn tất cả dấu trang
@@ -590,6 +605,8 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Contrast	Độ tương phản
 	Convert colors	Chuyển đổi màu
 	Convert mode	Chế độ chuyển đổi
+	Converted to {level} ({n} changes)	Đã chuyển đổi sang {level} ({n} thay đổi)
+	Converting colour to CMYK needs the printing condition's ICC profile: choose a profile file	Chuyển màu sang CMYK cần hồ sơ ICC của điều kiện in: hãy chọn một tệp hồ sơ
 	Converting {name}…	Đang chuyển đổi {name}…
 	Copied to clipboard	Đã sao chép vào bảng tạm
 	Copied {what}	Đã sao chép {what}
@@ -635,6 +652,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Couldn't optimize the file: {e}	Không thể tối ưu hóa tệp: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Không thể in từ trình duyệt ({e}); đã tải {name} xuống để in thay thế
 	Couldn't reach the printer	Không thể kết nối tới máy in
+	Couldn't read the ICC profile {name}: {e}	Không thể đọc hồ sơ ICC {name}: {e}
 	Couldn't read {name}: {e}	Không thể đọc {name}: {e}
 	Couldn't recover {name}: {e}	Không thể khôi phục {name}: {e}
 	Couldn't reload {name}: {e}	Không thể tải lại {name}: {e}
@@ -1124,6 +1142,7 @@ calendar date	February	tháng 2
 	Fixed what could be fixed; {n} problems remain	Đã sửa những gì có thể sửa; còn lại {n} vấn đề
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	Flatpak quản lý bản cài đặt này. Hãy kiểm tra cập nhật trong trình quản lý phần mềm hệ thống hoặc chạy flatpak update.
 	Flatten comments	Làm phẳng bình luận
+	Flatten comments and form fields	Làm phẳng bình luận và trường biểu mẫu
 	Flatten Fill & Sign	Làm phẳng Điền & Ký
 	Flatten Fill & Sign when saving	Làm phẳng Điền & Ký khi lưu
 	Flatten form fields	Làm phẳng trường biểu mẫu
@@ -1266,6 +1285,7 @@ key	Home	Home
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	OCR tiếng Hungary yêu cầu ứng dụng máy tính với Tesseract 5 và mô hình ngôn ngữ hun. Khởi động lại PdfCraft sau khi cài đặt.
 	H{n} follows an H{d}; headings should not skip levels	H{n} theo sau H{d}; các đề mục không nên bỏ qua cấp
 	I confirm sending this document to this printer	Tôi xác nhận gửi tài liệu này đến máy in này
+	ICC profile: {name}	Hồ sơ ICC: {name}
 	Identity	Danh tính
 	Image (PNG)	Hình ảnh (PNG)
 	Image field	Trường hình ảnh
@@ -1366,6 +1386,7 @@ calendar date	January	tháng 1
 	JavaScript, e.g. getField("total").value	JavaScript, ví dụ getField("total").value
 	JBIG2 (lossless)	JBIG2 (không mất dữ liệu)
 	Join the ArtCraft community	Tham gia cộng đồng ArtCraft
+	JPEG 2000 pictures need PDF 1.5, newer than {} allows	Ảnh JPEG 2000 cần PDF 1.5, mới hơn mức {} cho phép
 	July	Tháng 7
 calendar date	July	tháng 7
 	June	Tháng 6
@@ -1400,6 +1421,7 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Later in tab order	Muộn hơn theo thứ tự tab
 	Latin (accented)	Chữ Latinh (có dấu)
 	Layer options	Tùy chọn lớp
+	Layers (optional content) need PDF 1.5, newer than {} allows	Lớp (nội dung tùy chọn) cần PDF 1.5, mới hơn mức {} cho phép
 	Layers panel	Bảng lớp
 	Layers Panel and Page	Bảng Các lớp và trang
 	Layout and Magnification	Bố cục và độ phóng đại
@@ -1675,6 +1697,7 @@ calendar weekday	Mo	T2
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Không tệp nào trong số đó có thể chuyển thành PDF; hãy dùng PDF, hình ảnh hoặc tệp .txt
 	None of your digital IDs can open this document.	Không Digital ID nào của bạn mở được tài liệu này.
 	None — everything is allowed	Không có — mọi thứ đều được phép
+	None: sRGB for RGB and gray documents	Không có: sRGB cho tài liệu RGB và xám
 	Normal	Bình thường
 scroll speed	Normal	Bình thường
 	Not allowed	Không được phép
@@ -1780,6 +1803,7 @@ animation effects	On	Bật
 	Opening the browser's print dialog…	Đang mở hộp thoại in của trình duyệt…
 	Opening {name}…	Đang mở {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Mở tùy chọn của trình điều khiển máy in. Các tùy chọn này được lưu cho mọi lần in từ máy tính này; số bản sao, in hai mặt, thang xám và giấy được chọn ở đây vẫn được áp dụng.
+	OpenType font programs need PDF 1.6, newer than {} allows	Chương trình phông chữ OpenType cần PDF 1.6, mới hơn mức {} cho phép
 	Optical resolution {x} × {y} dpi.	Độ phân giải quang học {x} × {y} dpi.
 	Optimization cancelled	Đã hủy tối ưu hóa
 	Optimization is already running	Việc tối ưu hóa đang chạy
@@ -1817,7 +1841,9 @@ animation effects	On	Bật
 	Outline colour:	Màu đường viền:
 	Output appears here.	Đầu ra xuất hiện ở đây.
 	Output folder	Thư mục đầu ra
+	Output intent profile:	Hồ sơ của mục đích đầu ra:
 	Output intent: {list}	Mục đích đầu ra: {list}
+	Output intents with profiles don't all share one profile	Các mục đích đầu ra có hồ sơ không dùng chung một hồ sơ
 	Output preview	Xem trước đầu ra
 	Owner password (no restrictions apply)	Mật khẩu chủ sở hữu (không áp dụng hạn chế)
 	Package: {name}	Gói: {name}
@@ -1865,6 +1891,7 @@ animation effects	On	Bật
 	Page {p}: {n} untagged content item	Trang {p}: {n} mục nội dung chưa gắn thẻ
 	Page {p}: {n} untagged content items	Trang {p}: {n} mục nội dung chưa gắn thẻ
 	Page {} has additional actions	Trang {} có các hành động bổ sung
+	Page {}'s TrimBox, BleedBox and CropBox don't overlap	TrimBox, BleedBox và CropBox của trang {} không chồng lên nhau
 	pages	trang
 	pages added or removed	trang được thêm hoặc xóa
 	Pages counted	Số trang đã đếm
@@ -1910,7 +1937,9 @@ animation effects	On	Bật
 	PDF scale: {scale}%	Tỷ lệ PDF: {scale}%
 	PDF version	Phiên bản PDF
 	PDF, images and text	PDF, hình ảnh và văn bản
+	PDF/A embeds the output intent's ICC profile: choose a profile file	PDF/A nhúng hồ sơ ICC của mục đích đầu ra: hãy chọn một tệp hồ sơ
 	PDF/A…	PDF/A…
+	PDF/X-4 embeds the printing condition's ICC profile: choose a profile file	PDF/X-4 nhúng hồ sơ ICC của điều kiện in: hãy chọn một tệp hồ sơ
 	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft chưa thể kiểm tra chữ ký này: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft không đóng bình thường. Các tài liệu này có thay đổi đã được tự động lưu:
@@ -2011,6 +2040,7 @@ animation effects	On	Bật
 	Printer status: {state}	Trạng thái máy in: {state}
 	Printer's mark annotation on page {p} is in the structure tree	Chú thích dấu in trên trang {p} nằm trong cây cấu trúc
 	Printing allowed	Cho phép in
+	Printing condition:	Điều kiện in:
 	Privacy	Quyền riêng tư
 	Private data of other applications	Dữ liệu riêng của các ứng dụng khác
 	Producer	Ứng dụng sản xuất
@@ -2303,6 +2333,8 @@ calendar weekday	Sa	T7
 	Saved measurements.	Đã lưu các phép đo.
 	Saved the print-ready PDF to {path}	Đã lưu PDF sẵn sàng in vào {path}
 	Saved {name}	Đã lưu {name}
+	Saved {name} and verified it: it conforms to {level}.	Đã lưu {name} và xác minh: tài liệu tuân thủ {level}.
+	Saved {name}, but verifying it found {n} problems.	Đã lưu {name}, nhưng việc xác minh tìm thấy {n} vấn đề.
 	Saved {place}: {before} → {after} (not smaller){detail}	Đã lưu {place}: {before} → {after} (không nhỏ hơn){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Đã lưu {place}: {before} → {after} (nhỏ hơn {pct}%){detail}
 	Saved, but reopening failed: {e}	Đã lưu, nhưng mở lại thất bại: {e}
@@ -2661,6 +2693,7 @@ certificate	Subject	Chủ thể chứng chỉ
 	Text Field Table	Bảng trường văn bản
 	Text field table	Bảng trường văn bản
 	Text in images isn't found; recognise text (OCR) first.	Văn bản trong hình ảnh không được tìm thấy; hãy nhận dạng văn bản (OCR) trước.
+	Text in the font {} uses the Private Use Area without ActualText	Văn bản dùng phông chữ {} dùng Vùng sử dụng riêng mà không có ActualText
 	Text is compared word by word; the differences are shown on the new file.	Văn bản được so sánh từng từ; các khác biệt được hiển thị trên tệp mới.
 	Text language is specified	Đã chỉ định ngôn ngữ văn bản
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Văn bản phải đủ tương phản với nền để người kém thị lực nhìn được. Hãy kiểm tra màu bằng mắt hoặc bằng công cụ đo độ tương phản.
@@ -2703,6 +2736,7 @@ calendar weekday	Th	T5
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Trình chọn tệp của cổng máy tính không chạy ({packages}). Hãy kiểm tra bằng systemctl --user status {first}, hoặc đăng xuất rồi đăng nhập lại.
 	The device's digital ID isn't available any more; start signing again to list it.	Digital ID của thiết bị không còn khả dụng; hãy bắt đầu ký lại để liệt kê nó.
 	The Dock shows it the next time PdfCraft opens.	Dock sẽ hiển thị biểu tượng này vào lần mở PdfCraft tiếp theo.
+	The document can't be converted: {}	Không thể chuyển đổi tài liệu: {}
 	The document changed while it was being signed, so the signature wasn't saved.	Tài liệu đã thay đổi trong lúc đang được ký, nên chữ ký không được lưu.
 	The document changed while its margins were measured; nothing was cropped	Tài liệu đã thay đổi trong khi đo lề; không có gì bị cắt
 	The document changed while you were choosing a file, so nothing was changed.	Tài liệu đã thay đổi trong lúc bạn chọn tệp, nên không có gì bị thay đổi.
@@ -2719,6 +2753,7 @@ calendar weekday	Th	T5
 	The document has document-level JavaScript	Tài liệu có JavaScript cấp tài liệu
 	the document has no form fields	tài liệu không có trường biểu mẫu
 	the document has no page tree	tài liệu không có cây trang
+	The document has no structure tree: it isn't tagged	Tài liệu không có cây cấu trúc: tài liệu không có thẻ
 	the document has no tags	tài liệu không có thẻ
 	The document has no tags (structure tree)	Tài liệu không có thẻ (cây cấu trúc)
 	The document has no title	Tài liệu không có tiêu đề
@@ -2726,14 +2761,17 @@ calendar weekday	Th	T5
 	The document information and the metadata name different PDF/X versions	Thông tin tài liệu và siêu dữ liệu ghi các phiên bản PDF/X khác nhau
 	The document information doesn't identify the file as {}	Thông tin tài liệu không xác định tệp là {}
 	The document is encrypted	Tài liệu đã được mã hóa
+	The document is encrypted: open it with its permissions password to remove the security	Tài liệu được mã hóa: hãy mở bằng mật khẩu quyền để gỡ bảo mật
 	The document is no longer open.	Tài liệu không còn được mở.
 	the document is protected by a password	tài liệu được bảo vệ bằng mật khẩu
+	The document isn't marked as tagged (MarkInfo /Marked true)	Tài liệu không được đánh dấu là có thẻ (MarkInfo /Marked true)
 	The document isn't marked as tagged (MarkInfo Marked)	Tài liệu không được đánh dấu là có gắn thẻ (MarkInfo Marked)
 	The document isn't tagged, so none of its content is	Tài liệu chưa được gắn thẻ, nên không nội dung nào của nó được gắn thẻ
 	The document now conforms to {level}; save it to keep the changes	Tài liệu hiện tuân thủ {level}; hãy lưu để giữ các thay đổi
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Tài liệu mở không cần mật khẩu; mật khẩu này cần để thay đổi các hạn chế. Mật khẩu được áp dụng khi bạn lưu.
 	The document sets no language (Lang), and neither do its tags	Tài liệu không đặt ngôn ngữ (Lang), các thẻ của nó cũng vậy
 	The document uses both H and numbered headings (H1–H6)	Tài liệu dùng cả H lẫn các đề mục có đánh số (H1–H6)
+	The document uses CMYK colour: choose the ICC profile of a CMYK printing condition for its output intent	Tài liệu dùng màu CMYK: hãy chọn hồ sơ ICC của một điều kiện in CMYK cho mục đích đầu ra của nó
 	The document was closed before it could be saved.	Tài liệu đã bị đóng trước khi kịp lưu.
 	The document wasn't signed: {e}	Tài liệu chưa được ký: {e}
 	The document will no longer be certified.	Tài liệu sẽ không còn được chứng nhận.
@@ -2762,11 +2800,17 @@ calendar weekday	Th	T5
 	The file trailer has no document ID	Phần trailer của tệp không có ID tài liệu
 	the first heading is an H{n}; headings should not skip levels	đề mục đầu tiên là H{n}; các đề mục không nên bỏ qua cấp
 	the first row number can be at most {max}	số hàng đầu tiên tối đa là {max}
+	The font {} has characters with no Unicode value	Phông chữ {} có ký tự không có giá trị Unicode
 	The font {} isn't embedded	Phông chữ {} chưa được nhúng
+	The font {} maps characters to U+0000, U+FEFF or U+FFFE	Phông chữ {} ánh xạ ký tự tới U+0000, U+FEFF hoặc U+FFFE
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Phông chữ mà PdfCraft dùng để ghi không thể vẽ “{c}” ({code}), nên nó hiển thị là ? trong mọi trình xem PDF. Văn bản vẫn được lưu.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Biểu mẫu yêu cầu được gửi đến {u}; PdfCraft không gửi dữ liệu biểu mẫu. Hãy lưu tài liệu để giữ các mục bạn đã nhập.
 	The form asks viewers to make appearances (NeedAppearances)	Biểu mẫu yêu cầu trình xem tạo diện mạo (NeedAppearances)
 	The fronts already scanned are kept for the reverse-side pass.	Các mặt trước đã quét được giữ lại cho lượt quét mặt sau.
+	The ICC profile {} isn't a CMYK profile, which PDF/X-1a needs	Hồ sơ ICC {} không phải là hồ sơ CMYK mà PDF/X-1a cần
+	The ICC profile {} isn't a gray, RGB or CMYK profile	Hồ sơ ICC {} không phải là hồ sơ xám, RGB hay CMYK
+	The ICC profile {} isn't an output (printer) profile	Hồ sơ ICC {} không phải là hồ sơ đầu ra (máy in)
+	The ICC profile {} isn't an output or display profile	Hồ sơ ICC {} không phải là hồ sơ đầu ra hay màn hình
 	The image couldn't be used as an icon: {e}	Không thể dùng hình ảnh làm biểu tượng: {e}
 	The image has been copied ({w} × {h} pixels)	Đã sao chép hình ảnh ({w} × {h} điểm ảnh)
 	The image has been copied as a {ext} file	Đã sao chép hình ảnh dưới dạng tệp {ext}
@@ -2779,6 +2823,7 @@ calendar weekday	Th	T5
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Khóa nằm trên {device}, thiết bị tự yêu cầu phê duyệt (bàn phím PIN hoặc ứng dụng trên điện thoại).
 	The Keychain's digital IDs couldn't be listed: {e}	Không thể liệt kê các Digital ID của Keychain: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Các nhãn được hiển thị bằng tiếng Anh: phông chữ của chữ ký không thể hiển thị chúng bằng ngôn ngữ này.
+	The language {} isn't a valid language tag	Ngôn ngữ {} không phải là thẻ ngôn ngữ hợp lệ
 	The linked PDF opened, but its named destination was not applied.	PDF được liên kết đã mở, nhưng đích đến có tên của nó chưa được áp dụng.
 	The linked PDF opened, but its page destination was out of range.	PDF được liên kết đã mở, nhưng đích đến trang của nó nằm ngoài phạm vi.
 	The metadata doesn't identify the file as PDF/UA (pdfuaid:part)	Siêu dữ liệu không xác định tệp là PDF/UA (pdfuaid:part)
@@ -2803,6 +2848,7 @@ calendar weekday	Th	T5
 	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	Hồ sơ của mục đích đầu ra không có phép biến đổi từ thiết bị sang PCS (AToB1 hoặc grayTRC)
 	The output intent's profile isn't a valid ICC profile	Hồ sơ của mục đích đầu ra không phải là hồ sơ ICC hợp lệ
 	The output intent's profile isn't an output (printer) profile	Hồ sơ của mục đích đầu ra không phải là hồ sơ đầu ra (máy in)
+	The output profile can't convert colour to CMYK ({})	Hồ sơ đầu ra không thể chuyển màu sang CMYK ({})
 	The page has both a TrimBox and an ArtBox	Trang có cả TrimBox lẫn ArtBox
 	The page has changed; select the image again	Trang đã thay đổi; hãy chọn lại hình ảnh
 	The page has neither a TrimBox nor an ArtBox	Trang không có TrimBox cũng không có ArtBox
@@ -2843,6 +2889,7 @@ calendar weekday	Th	T5
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Các hạn chế áp dụng cho người nhận không có “Mọi quyền”. Thay đổi được áp dụng khi bạn lưu.
 	The reverse sides already scanned are kept.	Các mặt sau đã quét được giữ lại.
 	The reverse sides were cancelled: their document was closed.	Đã hủy quét mặt sau: tài liệu của chúng đã bị đóng.
+	The role map maps {} in a circle	Bản đồ vai trò ánh xạ {} thành vòng lặp
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	các hàng quá thấp: hãy làm vùng cao hơn, hoặc dùng ít hàng hơn hay khoảng cách hàng nhỏ hơn
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	Giá trị chữ ký RSA không có độ dài bằng môđun của khóa (các byte không ở đầu bị bỏ hoặc thêm); nó vẫn được đọc.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	DigestInfo của chữ ký RSA không có tham số NULL (các trình ký cũ ghi như vậy); nó vẫn được đọc.
@@ -2910,7 +2957,10 @@ calendar weekday	Th	T5
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	dịch vụ ký đã từ chối mã PIN hoặc OTP (có thể mã OTP đã hết hạn)
 	the signing service rejected the user name or password	dịch vụ ký đã từ chối tên người dùng hoặc mật khẩu
 	The smart card's digital IDs couldn't be listed: {e}	Không thể liệt kê ID số của thẻ thông minh: {e}
+	The spot colour {} has an alternate that can't be converted to CMYK yet	Màu pha {} có không gian thay thế chưa thể chuyển sang CMYK
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Phông chữ chuẩn không thể vẽ “{c}” ({code}). Hiện chỉ có thể thêm các ký tự Tây Âu làm văn bản.
+	The standard structure type {} is mapped to a type that isn't standard	Kiểu cấu trúc chuẩn {} được ánh xạ tới một kiểu không chuẩn
+	The structure type {} isn't standard and isn't mapped to a standard type	Kiểu cấu trúc {} không chuẩn và không được ánh xạ tới kiểu chuẩn
 	The text is the same	Văn bản giống nhau
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	các mô hình nhận dạng văn bản chưa được cài đặt (hãy cài đặt lại PdfCraft, hoặc đặt PDFCRAFT_MODELS thành thư mục chứa chúng)
 	The timestamp authority's certificate is not issued for time stamping.	Chứng chỉ của cơ quan cấp dấu thời gian không được cấp cho mục đích đóng dấu thời gian.
@@ -3353,7 +3403,9 @@ document scrollbar width	Wide	Rộng
 	{} annotation on page {p} isn't tagged	Chú thích {} trên trang {p} chưa được gắn thẻ
 	{} annotation on page {p}: its description has no language (Lang)	Chú thích {} trên trang {p}: mô tả của nó không có ngôn ngữ (Lang)
 	{} annotations aren't allowed	Chú thích {} không được phép
+	{} colour can't be converted to CMYK yet	Màu {} chưa thể chuyển sang CMYK
 	{} colour doesn't match the output intent's colour space	Màu {} không khớp với không gian màu của mục đích đầu ra
+	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} cần nhúng hồ sơ ICC của điều kiện in cho màu RGB hoặc màu không phụ thuộc thiết bị: hãy chọn một tệp hồ sơ
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (việc bảo vệ được áp dụng khi bạn lưu)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	“{name}” đã thay đổi trên đĩa sau khi được mở hoặc lưu lần cuối. Lưu lúc này sẽ thay thế phiên bản mới hơn đó bằng phiên bản này.

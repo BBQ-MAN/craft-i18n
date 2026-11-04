@@ -389,6 +389,7 @@ certificate	Basic constraints	القيود الأساسية
 	Calibrate…	معايرة…
 	Callout	وسيلة شرح
 	Can't be read: {e}	تتعذر قراءته: {e}
+	Can't save as {level}; nothing was changed:	تعذّر الحفظ بصيغة {level}؛ لم يتغير شيء:
 	Cancel reverse sides	إلغاء الوجه الخلفي
 	Canceling…	جارٍ الإلغاء…
 	Cancelled	ملغى
@@ -491,6 +492,7 @@ certificate	Basic constraints	القيود الأساسية
 	Choose an image	اختر صورة
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	اختر ملفًا آخر: يبقى الأصل كما هو، ويُحفظ الإصدار الذي لا يحتوي على التوقيع بجانبه.
 	Choose font…	اختيار خط…
+	Choose ICC profile…	اختيار ملف تعريف ICC…
 	Choose images	اختر صورًا
 	Choose image…	اختيار صورة…
 	Choose new keys for {command}	اختر مفاتيح جديدة لـ {command}
@@ -605,6 +607,7 @@ certificate	Basic constraints	القيود الأساسية
 	Contrast	التباين
 	Convert colors	تحويل الألوان
 	Convert mode	وضع التحويل
+	Converted to {level} ({n} changes)	تم التحويل إلى {level} ({n} من التغييرات)
 	Converting {name}…	جارٍ تحويل {name}…
 	Copied to clipboard	نُسخ إلى الحافظة
 	Copied {what}	تم نسخ {what}
@@ -650,6 +653,7 @@ certificate	Basic constraints	القيود الأساسية
 	Couldn't optimize the file: {e}	تعذّر تحسين الملف: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	تعذّرت الطباعة من المتصفح ({e})؛ نُزّل {name} لطباعته بدلًا من ذلك
 	Couldn't reach the printer	تعذر الوصول إلى الطابعة
+	Couldn't read the ICC profile {name}: {e}	تعذّرت قراءة ملف تعريف ICC {name}: {e}
 	Couldn't read {name}: {e}	تعذّرت قراءة {name}: {e}
 	Couldn't recover {name}: {e}	تعذّرت استعادة {name}: {e}
 	Couldn't reload {name}: {e}	تعذّرت إعادة تحميل {name}: {e}
@@ -1153,6 +1157,7 @@ calendar date	February	فبراير
 	Fixed what could be fixed; {n} problems remain	أُصلح ما أمكن إصلاحه؛ بقيت {n} مشكلات
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	يدير Flatpak هذا التثبيت. تحقّق من التحديثات في مدير برامج النظام أو باستخدام flatpak update.
 	Flatten comments	تسطيح التعليقات
+	Flatten comments and form fields	تسطيح التعليقات وحقول النماذج
 	Flatten Fill & Sign	تسطيح التعبئة والتوقيع
 	Flatten Fill & Sign when saving	تسطيح التعبئة والتوقيع عند الحفظ
 	Flatten form fields	تسطيح حقول النموذج
@@ -1271,6 +1276,7 @@ key	Home	Home
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	يتطلب OCR للمجرية تطبيق سطح المكتب مع Tesseract 5 ونموذج اللغة hun. أعد تشغيل PdfCraft بعد التثبيت.
 	H{n} follows an H{d}; headings should not skip levels	يتبع H{n} عنوان H{d}؛ لا ينبغي للعناوين تخطي المستويات
 	I confirm sending this document to this printer	أؤكد إرسال هذا المستند إلى هذه الطابعة
+	ICC profile: {name}	ملف تعريف ICC: {name}
 	Identity	الهوية
 	Image (PNG)	صورة (PNG)
 	Image field	حقل صورة
@@ -1693,6 +1699,7 @@ calendar weekday	Mo	إثنين
 	None of those files can be made into a PDF; use PDFs, images or .txt files	لا يمكن تحويل أي من هذه الملفات إلى PDF؛ استخدم ملفات PDF أو صورًا أو ملفات .txt
 	None of your digital IDs can open this document.	لا يمكن لأي من معرّفاتك الرقمية فتح هذا المستند.
 	None — everything is allowed	لا شيء — كل شيء مسموح
+	None: sRGB for RGB and gray documents	لا شيء: sRGB لمستندات RGB والرمادي
 	Normal	عادية
 scroll speed	Normal	عادية
 	Normal page	صفحة عادية
@@ -1837,6 +1844,7 @@ animation effects	On	مفعّلة
 	Outline view	عرض المخطط التفصيلي
 	Output appears here.	يظهر الناتج هنا.
 	Output folder	مجلد الإخراج
+	Output intent profile:	ملف تعريف هدف الإخراج:
 	Output intent: {list}	هدف الإخراج: {list}
 	Output preview	معاينة الإخراج
 	Owner password (no restrictions apply)	كلمة مرور المالك (لا تنطبق أي قيود)
@@ -2031,6 +2039,7 @@ animation effects	On	مفعّلة
 	Printer properties	خصائص الطابعة
 	Printer status: {state}	حالة الطابعة: {state}
 	Printing allowed	الطباعة المسموح بها
+	Printing condition:	ظروف الطباعة:
 	Privacy	الخصوصية
 	Private data of other applications	البيانات الخاصة بالتطبيقات الأخرى
 	Producer	المنتج
@@ -2347,6 +2356,8 @@ calendar weekday	Sa	سبت
 	Saved measurements.	حُفظت القياسات.
 	Saved the print-ready PDF to {path}	تم حفظ ملف PDF الجاهز للطباعة في {path}
 	Saved {name}	تم حفظ {name}
+	Saved {name} and verified it: it conforms to {level}.	حُفظ {name} وتم التحقق منه: إنه مطابق لـ {level}.
+	Saved {name}, but verifying it found {n} problems.	حُفظ {name}، لكن التحقق منه وجد {n} من المشكلات.
 	Saved {place}: {before} → {after} (not smaller){detail}	تم الحفظ {place}: {before} → {after} (ليس أصغر){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	تم الحفظ {place}: {before} → {after} (أصغر بنسبة {pct}%){detail}
 	Saved, but reopening failed: {e}	تم الحفظ، لكن فشلت إعادة الفتح: {e}

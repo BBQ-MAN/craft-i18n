@@ -53,8 +53,13 @@
 	a bookmark cannot be moved inside itself	záložku nelze přesunout do ní samé
 	A button	Tlačítko
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Open-source aplikace pro PDF napsaná v Rustu metodou clean-room. MIT OR Apache-2.0.
+	A colour operator's operands don't match its colour space	Operandy barevného operátoru neodpovídají jeho barevnému prostoru
 	A colour space is nested too deeply for the spaces under it to be checked	Barevný prostor je vnořen příliš hluboko, takže prostory pod ním nelze zkontrolovat
+	A colour space is nested too deeply to convert	Barevný prostor je vnořený příliš hluboko na převod
+	A colour space's ICC profile can't be used to convert its colour	Profil ICC barevného prostoru nelze použít k převodu jeho barvy
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	sloupec je příliš úzký: rozšiřte oblast, dejte sloupci více místa nebo použijte méně sloupců či menší mezeru mezi sloupci
+	A content stream can't be read, so its colour can't be converted	Proud obsahu nelze přečíst, takže jeho barvu nelze převést
+	A content stream is drawn with different resources in different places, so its colour can't be converted	Proud obsahu se na různých místech kreslí s různými prostředky, takže jeho barvu nelze převést
 	A cover on the scanner is open.	Kryt skeneru je otevřený.
 	A diagonal CONFIDENTIAL watermark on every page.	Diagonální vodoznak CONFIDENTIAL na každé stránce.
 	a document must keep at least one page	dokument musí mít alespoň jednu stránku
@@ -69,17 +74,23 @@
 	A graphics state uses a soft mask	Grafický stav používá měkkou masku
 	A graphics state uses the {} blend mode	Grafický stav používá režim prolnutí {}
 	a header cell with no Scope, in a table that doesn't use Headers	buňka záhlaví bez Scope v tabulce, která nepoužívá Headers
+	A JPEG picture in CMYK can't be converted yet	Obrázek JPEG v CMYK zatím nelze převést
 	A link	Odkaz
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Místní model není špičkový cloudový model: může se mýlit a dlouhá odpověď na procesoru chvíli trvá. Důležité si ověřte a před stažením si uvědomte velikost modelu proti tomuto počítači.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logo nebo název vlevo od karet, kde by je zobrazil záhlaví okna: vlastní PdfCraft, nebo vaší firmy.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Počet stránek zastaví podavač po tolika listech. Storno ukončí přenos dříve; už přijaté stránky zůstanou v dokumentu.
+	A pattern over RGB or device-independent colour can't be converted to CMYK yet	Vzorek přes barvu RGB nebo nezávislou na zařízení zatím nelze převést do CMYK
 	A picture covers page {pages} (a scan?), so the background won't show there.	Stránku {pages} pokrývá obrázek (sken?), takže pozadí na ní nebude vidět.
+	A picture with a decode array or a colour-key mask can't be converted to CMYK yet	Obrázek s polem dekódování nebo maskou barevného klíče zatím nelze převést do CMYK
+	A picture with other than 8 bits per component can't be converted to CMYK yet	Obrázek s jiným počtem bitů na složku než 8 zatím nelze převést do CMYK
+	A picture's data can't be read, so it can't be converted to CMYK	Data obrázku nelze přečíst, takže ho nelze převést do CMYK
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Soubor PNG nebo SVG. Načítá se z tohoto místa při každém spuštění PdfCraft.
 	A PrinterMark annotation overlaps the TrimBox or ArtBox	Anotace PrinterMark zasahuje do TrimBox nebo ArtBox
 	A script	Skript
 	a second {} in its table	druhý {} v jeho tabulce
 	A selected field has no widget on any page, so the fields can't be edited together.	Vybrané pole nemá na žádné stránce widget, takže pole nelze upravit společně.
 	A setting isn't valid	Nastavení není platné
+	A shading in RGB or device-independent colour can't be converted to CMYK yet	Stínování v barvě RGB nebo nezávislé na zařízení zatím nelze převést do CMYK
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Podpis, který je součástí obsahu stránky, například na naskenované stránce, není pole ani poznámka, a proto ho nelze odstranit samostatně. PdfCraft nemaže části stránky, aby ho skryl. Chcete-li ho odstranit, začerněte tuto oblast (Začernění), nebo pokud je podpis samostatný obrázek, smažte obrázek pomocí Upravit PDF.
 	A stream refers to an external file	Proud odkazuje na externí soubor
 	A stream uses JBIG2 compression	Proud používá kompresi JBIG2
@@ -269,6 +280,7 @@
 	An image has a soft mask	Obrázek má měkkou masku
 	An image has alternates or OPI information	Obrázek má alternativy nebo informace OPI
 	An image or form has OPI information	Obrázek nebo formulář obsahuje informace OPI
+	An indexed colour space's table is too short to convert	Tabulka indexovaného barevného prostoru je na převod příliš krátká
 	An open-source PDF workbench — local, private, and scriptable.	Open-source dílna pro PDF — lokální, soukromá a skriptovatelná.
 	An optional content configuration has an AS entry	Konfigurace volitelného obsahu má položku AS
 	and {n} more	a dalších {n}
@@ -410,6 +422,7 @@ certificate	Basic constraints	Základní omezení
 	Calibrate…	Kalibrovat…
 	Callout	Popisek se šipkou
 	Can't be read: {e}	Nelze přečíst: {e}
+	Can't save as {level}; nothing was changed:	Nelze uložit jako {level}; nic nebylo změněno:
 	Cancel reverse sides	Zrušit rubové strany
 	Canceling…	Ruším…
 	Cancelled	Zrušeno
@@ -512,6 +525,7 @@ certificate	Basic constraints	Základní omezení
 	Choose an image	Vyberte obrázek
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Zvolte jiný soubor: originál zůstane beze změny a verze bez podpisu se uloží vedle něj.
 	Choose font…	Vybrat písmo…
+	Choose ICC profile…	Vybrat profil ICC…
 	Choose images	Vyberte obrázky
 	Choose image…	Vybrat obrázek…
 	Choose new keys for {command}	Zvolte nové klávesy pro {command}
@@ -557,6 +571,7 @@ certificate	Basic constraints	Základní omezení
 	Closed arrow	Uzavřená šipka
 	Cloud	Obláček
 	CloudSigner (mSzafir) is found by itself when it is installed: start it and log in before signing.	CloudSigner (mSzafir) se najde sám, pokud je nainstalovaný: před podepsáním ho spusťte a přihlaste se.
+	CMYK colour needs a CMYK printing condition	Barva CMYK potřebuje tiskovou podmínku CMYK
 	Code sent	Kód odeslán
 	Collapse all	Sbalit vše
 	Collapse all bookmarks	Sbalit všechny záložky
@@ -633,6 +648,8 @@ certificate	Basic constraints	Základní omezení
 	Convert	Převod
 	Convert colors	Převést barvy
 	Convert mode	Režim převodu
+	Converted to {level} ({n} changes)	Převedeno na {level} (změny: {n})
+	Converting colour to CMYK needs the printing condition's ICC profile: choose a profile file	Převod barvy do CMYK potřebuje profil ICC tiskové podmínky: vyberte soubor profilu
 	Converting {name}…	Převádění {name}…
 	Copied to clipboard	Zkopírováno do schránky
 	Copied {what}	Zkopírováno: {what}
@@ -677,6 +694,7 @@ certificate	Basic constraints	Základní omezení
 	Couldn't optimize the file: {e}	Soubor nelze optimalizovat: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Z prohlížeče nelze tisknout ({e}); místo toho byl k tisku stažen soubor {name}
 	Couldn't reach the printer	Tiskárnu se nepodařilo zastihnout
+	Couldn't read the ICC profile {name}: {e}	Profil ICC {name} nelze přečíst: {e}
 	Couldn't read {name}: {e}	{name} nelze přečíst: {e}
 	Couldn't recover {name}: {e}	{name} nelze obnovit: {e}
 	Couldn't reload {name}: {e}	Soubor {name} nelze znovu načíst: {e}
@@ -1197,6 +1215,7 @@ calendar date	February	února
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	Tuto instalaci spravuje Flatpak. Aktualizace vyhledejte ve správci softwaru nebo příkazem flatpak update.
 	Flatten	Sloučit se stránkou
 	Flatten comments	Sloučit komentáře se stránkou
+	Flatten comments and form fields	Sloučit komentáře a pole formulářů se stránkou
 	Flatten Fill & Sign	Sloučit Vyplnit a podepsat se stránkou
 	Flatten Fill & Sign when saving	Při ukládání sloučit obsah Vyplnit a podepsat se stránkou
 	Flatten form fields	Sloučit formulářová pole se stránkou
@@ -1347,6 +1366,7 @@ key	Home	Home
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Maďarské OCR vyžaduje desktopovou aplikaci s Tesseract 5 a jazykovým modelem hun. Po instalaci restartujte PdfCraft.
 	H{n} follows an H{d}; headings should not skip levels	H{n} následuje po H{d}; nadpisy by neměly přeskakovat úrovně
 	I confirm sending this document to this printer	Potvrzuji odeslání tohoto dokumentu na tuto tiskárnu
+	ICC profile: {name}	Profil ICC: {name}
 	Identity	Identita
 	Image	Obrázek
 	Image (PNG)	Obrázek (PNG)
@@ -1454,6 +1474,7 @@ calendar date	January	ledna
 	JavaScript, e.g. getField("total").value	JavaScript, např. getField("total").value
 	JBIG2 (lossless)	JBIG2 (bezeztrátová)
 	Join the ArtCraft community	Připojte se ke komunitě ArtCraft
+	JPEG 2000 pictures need PDF 1.5, newer than {} allows	Obrázky JPEG 2000 potřebují PDF 1.5, novější, než {} povoluje
 	July	Červenec
 calendar date	July	července
 	June	Červen
@@ -1489,6 +1510,7 @@ certificate	Key usage	Použití klíče
 	Later in tab order	Později v pořadí tabulátoru
 	Latin (accented)	Latinka (s diakritikou)
 	Layer options	Možnosti vrstev
+	Layers (optional content) need PDF 1.5, newer than {} allows	Vrstvy (volitelný obsah) potřebují PDF 1.5, novější, než {} povoluje
 	Layers panel	Panel vrstev
 	Layers Panel and Page	Panel vrstev a stránka
 	Layout and Magnification	Rozvržení a zvětšení
@@ -1788,6 +1810,7 @@ calendar weekday	Mo	Po
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Ze žádného z těchto souborů nelze vytvořit PDF; použijte soubory PDF, obrázky nebo soubory .txt
 	None of your digital IDs can open this document.	Žádné z vašich digitálních ID tento dokument neotevře.
 	None — everything is allowed	Žádná — vše je povoleno
+	None: sRGB for RGB and gray documents	Žádný: sRGB pro dokumenty RGB a ve stupních šedi
 scroll speed	Normal	Normální
 	Normal page	Normální stránka
 	Not allowed	Nepovoleno
@@ -1903,6 +1926,7 @@ animation effects	On	Zapnuto
 	Opening the browser's print dialog…	Otevírá se dialog tisku prohlížeče…
 	Opening {name}…	Otevírá se {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Otevře předvolby ovladače tiskárny. Ukládají se pro každý tisk z tohoto počítače; počet kopií, oboustranný tisk, stupně šedi a papír zvolené zde platí dál.
+	OpenType font programs need PDF 1.6, newer than {} allows	Programy písem OpenType potřebují PDF 1.6, novější, než {} povoluje
 	Optical resolution {x} × {y} dpi.	Optické rozlišení {x} × {y} dpi.
 	Optimization cancelled	Optimalizace zrušena
 	Optimization is already running	Optimalizace už běží
@@ -1943,7 +1967,9 @@ animation effects	On	Zapnuto
 	Outline view	Zobrazení obrysů
 	Output appears here.	Zde se zobrazí výstup.
 	Output folder	Výstupní složka
+	Output intent profile:	Profil výstupního záměru:
 	Output intent: {list}	Výstupní záměr: {list}
+	Output intents with profiles don't all share one profile	Výstupní záměry s profily nesdílejí všechny tentýž profil
 	Output preview	Náhled výstupu
 	Overlap:	Překryv:
 	Owner password (no restrictions apply)	Heslo vlastníka (žádná omezení neplatí)
@@ -1992,6 +2018,7 @@ animation effects	On	Zapnuto
 	Page {p}: {n} untagged content item	Stránka {p}: neoznačkované položky obsahu: {n}
 	Page {p}: {n} untagged content items	Stránka {p}: neoznačkované položky obsahu: {n}
 	Page {} has additional actions	Stránka {} má další akce
+	Page {}'s TrimBox, BleedBox and CropBox don't overlap	TrimBox, BleedBox a CropBox stránky {} se nepřekrývají
 	pages	str.
 	pages added or removed	přidané nebo odebrané stránky
 	Pages counted	Započítané stránky
@@ -2045,7 +2072,9 @@ animation effects	On	Zapnuto
 	PDF version	Verze PDF
 	PDF, images and text	PDF, obrázky a text
 	PDF/A and standards advice	Rady k PDF/A a normám
+	PDF/A embeds the output intent's ICC profile: choose a profile file	PDF/A vkládá profil ICC výstupního záměru: vyberte soubor profilu
 	PDF/A…	PDF/A…
+	PDF/X-4 embeds the printing condition's ICC profile: choose a profile file	PDF/X-4 vkládá profil ICC tiskové podmínky: vyberte soubor profilu
 	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft zatím nedokáže tento podpis ověřit: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft nebyl řádně ukončen. V těchto dokumentech byly změny, které se automaticky uložily:
@@ -2149,6 +2178,7 @@ animation effects	On	Zapnuto
 	Printer status: {state}	Stav tiskárny: {state}
 	Printer's mark annotation on page {p} is in the structure tree	Anotace tiskové značky na stránce {p} je ve stromu struktury
 	Printing allowed	Povolený tisk
+	Printing condition:	Tiskové podmínky:
 	Privacy	Soukromí
 	Private data of other applications	Soukromá data jiných aplikací
 	Producer	Producent PDF
@@ -2463,6 +2493,8 @@ calendar weekday	Sa	So
 	Saved measurements.	Měření uložena.
 	Saved the print-ready PDF to {path}	PDF připravené k tisku bylo uloženo do {path}
 	Saved {name}	Uloženo: {name}
+	Saved {name} and verified it: it conforms to {level}.	Soubor {name} byl uložen a ověřen: vyhovuje standardu {level}.
+	Saved {name}, but verifying it found {n} problems.	Soubor {name} byl uložen, ale ověření našlo problémy: {n}.
 	Saved {place}: {before} → {after} (not smaller){detail}	Uloženo {place}: {before} → {after} (není menší){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Uloženo {place}: {before} → {after} (o {pct} % menší){detail}
 	Saved, but reopening failed: {e}	Uloženo, ale opětovné otevření selhalo: {e}
@@ -2849,6 +2881,7 @@ certificate	Subject	Subjekt
 	Text Field Table	Tabulka textových polí
 	Text field table	Tabulka textových polí
 	Text in images isn't found; recognise text (OCR) first.	Text v obrázcích se nenajde; nejdřív rozpoznejte text (OCR).
+	Text in the font {} uses the Private Use Area without ActualText	Text v písmu {} používá oblast pro soukromé použití bez ActualText
 	Text is compared word by word; the differences are shown on the new file.	Text se porovnává slovo po slovu; rozdíly se zobrazí v novém souboru.
 	Text language is specified	Jazyk textu je určen
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Text musí dostatečně kontrastovat s pozadím kvůli lidem se slabým zrakem. Zkontrolujte barvy okem nebo nástrojem pro kontrast.
@@ -2893,6 +2926,7 @@ calendar weekday	Th	Čt
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Výběr souborů portálu pracovní plochy neběží ({packages}). Zkontrolujte jej příkazem systemctl --user status {first}, nebo se odhlaste a znovu přihlaste.
 	The device's digital ID isn't available any more; start signing again to list it.	Digitální ID zařízení už není k dispozici; začněte podepisovat znovu, aby se zobrazilo.
 	The Dock shows it the next time PdfCraft opens.	Dock ji zobrazí při příštím otevření PdfCraftu.
+	The document can't be converted: {}	Dokument nelze převést: {}
 	The document changed while it was being signed, so the signature wasn't saved.	Dokument se během podepisování změnil, proto podpis nebyl uložen.
 	The document changed while its margins were measured; nothing was cropped	Dokument se změnil během měření okrajů; nic nebylo oříznuto
 	The document changed while you were choosing a file, so nothing was changed.	Dokument se změnil, zatímco jste vybírali soubor, proto se nic nezměnilo.
@@ -2909,6 +2943,7 @@ calendar weekday	Th	Čt
 	The document has document-level JavaScript	Dokument má JavaScript na úrovni dokumentu
 	the document has no form fields	dokument nemá žádná formulářová pole
 	the document has no page tree	dokument nemá strom stránek
+	The document has no structure tree: it isn't tagged	Dokument nemá strom struktury: není otagovaný
 	the document has no tags	dokument nemá žádné tagy
 	The document has no tags (structure tree)	Dokument nemá tagy (strom struktury)
 	The document has no title	Dokument nemá název
@@ -2916,14 +2951,17 @@ calendar weekday	Th	Čt
 	The document information and the metadata name different PDF/X versions	Informace o dokumentu a metadata uvádějí různé verze PDF/X
 	The document information doesn't identify the file as {}	Informace o dokumentu neoznačují soubor jako {}
 	The document is encrypted	Dokument je šifrovaný
+	The document is encrypted: open it with its permissions password to remove the security	Dokument je zašifrovaný: otevřete ho heslem oprávnění a odeberte zabezpečení
 	The document is no longer open.	Dokument už není otevřený.
 	the document is protected by a password	dokument je chráněný heslem
+	The document isn't marked as tagged (MarkInfo /Marked true)	Dokument není označen jako otagovaný (MarkInfo /Marked true)
 	The document isn't marked as tagged (MarkInfo Marked)	Dokument není označen jako označkovaný (MarkInfo Marked)
 	The document isn't tagged, so none of its content is	Dokument není označkovaný, a tak není označkovaný ani žádný jeho obsah
 	The document now conforms to {level}; save it to keep the changes	Dokument nyní vyhovuje standardu {level}; změny zachováte uložením
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Dokument se otevře bez hesla; toto heslo je potřeba ke změně omezení. Použije se při uložení.
 	The document sets no language (Lang), and neither do its tags	Dokument nenastavuje jazyk (Lang) a jeho tagy také ne
 	The document uses both H and numbered headings (H1–H6)	Dokument používá H i číslované nadpisy (H1–H6)
+	The document uses CMYK colour: choose the ICC profile of a CMYK printing condition for its output intent	Dokument používá barvu CMYK: pro jeho výstupní záměr vyberte profil ICC tiskové podmínky CMYK
 	The document was changed in another window. Check your text, then apply it again.	Dokument byl změněn v jiném okně. Zkontrolujte svůj text a použijte ho znovu.
 	The document was closed before it could be saved.	Dokument byl zavřen dříve, než mohl být uložen.
 	The document wasn't signed: {e}	Dokument nebyl podepsán: {e}
@@ -2953,12 +2991,18 @@ calendar weekday	Th	Čt
 	The file trailer has no document ID	Trailer souboru nemá ID dokumentu
 	the first heading is an H{n}; headings should not skip levels	první nadpis je H{n}; nadpisy by neměly přeskakovat úrovně
 	The font must include Latin letters and numbers for interface controls.	Písmo musí obsahovat latinská písmena a číslice pro ovládací prvky rozhraní.
+	The font {} has characters with no Unicode value	Písmo {} má znaky bez hodnoty Unicode
 	The font {} isn't embedded	Písmo {} není vložené
+	The font {} maps characters to U+0000, U+FEFF or U+FFFE	Písmo {} převádí znaky na U+0000, U+FEFF nebo U+FFFE
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Písma, kterými PdfCraft píše, neumí zobrazit „{c}“ ({code}), proto se ve všech prohlížečích PDF zobrazí jako ?. Text se uloží.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Formulář žádá o odeslání na {u}; PdfCraft data formulářů neodesílá. Své údaje zachováte uložením dokumentu.
 	The form asks viewers to make appearances (NeedAppearances)	Formulář žádá prohlížeče, aby vytvořily vzhledy polí (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	Účel formuláře a jeho pole (názvy, typy, pořadí tabulátoru)
 	The fronts already scanned are kept for the reverse-side pass.	Již naskenované lícové strany jsou uchovány pro průchod rubových stran.
+	The ICC profile {} isn't a CMYK profile, which PDF/X-1a needs	Profil ICC {} není profil CMYK, který PDF/X-1a potřebuje
+	The ICC profile {} isn't a gray, RGB or CMYK profile	Profil ICC {} není šedý, RGB ani CMYK profil
+	The ICC profile {} isn't an output (printer) profile	Profil ICC {} není výstupní (tiskárenský) profil
+	The ICC profile {} isn't an output or display profile	Profil ICC {} není výstupní ani zobrazovací profil
 	The image couldn't be used as an icon: {e}	Obrázek nelze použít jako ikonu: {e}
 	The image has been copied ({w} × {h} pixels)	Obrázek byl zkopírován ({w} × {h} pixelů)
 	The image has been copied as a {ext} file	Obrázek byl zkopírován jako soubor {ext}
@@ -2971,6 +3015,7 @@ calendar weekday	Th	Čt
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Klíč je v zařízení {device}, které si samo vyžádá schválení (klávesnice pro PIN nebo aplikace v telefonu).
 	The Keychain's digital IDs couldn't be listed: {e}	Digitální ID z Klíčenky nelze vypsat: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Popisky jsou v angličtině: písmo podpisu je v tomto jazyce nedokáže vykreslit.
+	The language {} isn't a valid language tag	Jazyk {} není platná jazyková značka
 	The linked PDF opened, but its named destination was not applied.	Odkazovaný PDF se otevřel, ale jeho pojmenovaný cíl nebyl použit.
 	The linked PDF opened, but its page destination was out of range.	Odkazovaný PDF se otevřel, ale cílová stránka je mimo rozsah.
 	The metadata doesn't identify the file as PDF/UA (pdfuaid:part)	Metadata neoznačují soubor jako PDF/UA (pdfuaid:part)
@@ -2996,6 +3041,7 @@ calendar weekday	Th	Čt
 	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	Profil výstupního záměru nemá převod ze zařízení do PCS (AToB1 nebo grayTRC)
 	The output intent's profile isn't a valid ICC profile	Profil výstupního záměru není platný profil ICC
 	The output intent's profile isn't an output (printer) profile	Profil výstupního záměru není výstupní (tiskárenský) profil
+	The output profile can't convert colour to CMYK ({})	Výstupní profil nedokáže převést barvu do CMYK ({})
 	The page has both a TrimBox and an ArtBox	Stránka má TrimBox i ArtBox
 	The page has changed; select the image again	Stránka se změnila; vyberte obrázek znovu
 	The page has neither a TrimBox nor an ArtBox	Stránka nemá TrimBox ani ArtBox
@@ -3037,6 +3083,7 @@ calendar weekday	Th	Čt
 	The replacement file doesn't have that many pages.	Náhradní soubor nemá tolik stránek.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Omezení platí pro příjemce bez „Všechna oprávnění“. Použije se při uložení.
 	The reverse sides already scanned are kept.	Již naskenované rubové strany jsou uchovány.
+	The role map maps {} in a circle	Mapa rolí mapuje {} v kruhu
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	řádky jsou příliš nízké: zvětšete výšku oblasti nebo použijte méně řádků či menší mezeru mezi řádky
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	Hodnota podpisu RSA nemá délku modulu klíče (úvodní nulové bajty chybí nebo přebývají); přesto byla načtena.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	DigestInfo podpisu RSA nemá parametr NULL (starší podepisovací programy jej tak zapisují); přesto byl načten.
@@ -3104,8 +3151,11 @@ calendar weekday	Th	Čt
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	podpisová služba odmítla PIN kód nebo OTP (platnost OTP možná vypršela)
 	the signing service rejected the user name or password	podpisová služba odmítla uživatelské jméno nebo heslo
 	The smart card's digital IDs couldn't be listed: {e}	Digitální ID čipové karty se nepodařilo vypsat: {e}
+	The spot colour {} has an alternate that can't be converted to CMYK yet	Přímá barva {} má alternativu, kterou zatím nelze převést do CMYK
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standardní písma nedokážou vykreslit „{c}“ ({code}). Jako text lze zatím přidat jen západoevropské znaky.
 	The standard it must meet and where the file goes	Jaké normě musí vyhovět a kam soubor putuje
+	The standard structure type {} is mapped to a type that isn't standard	Standardní typ struktury {} je mapován na typ, který není standardní
+	The structure type {} isn't standard and isn't mapped to a standard type	Typ struktury {} není standardní a není mapován na standardní typ
 	The text is the same	Text je stejný
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	modely pro rozpoznávání textu nejsou nainstalované (přeinstalujte PdfCraft nebo nastavte PDFCRAFT_MODELS na složku, ve které jsou)
 	The timestamp authority's certificate is not issued for time stamping.	Certifikát autority časových razítek není vystaven pro vydávání časových razítek.
@@ -3565,7 +3615,9 @@ document scrollbar width	Wide	Široký
 	{} annotation on page {p} isn't tagged	Anotace {} na stránce {p} není označkovaná
 	{} annotation on page {p}: its description has no language (Lang)	Anotace {} na stránce {p}: její popis nemá jazyk (Lang)
 	{} annotations aren't allowed	Anotace {} nejsou povoleny
+	{} colour can't be converted to CMYK yet	Barvu {} zatím nelze převést do CMYK
 	{} colour doesn't match the output intent's colour space	Barva {} neodpovídá barevnému prostoru výstupního záměru
+	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} potřebuje pro barvu RGB nebo nezávislou na zařízení vložený profil ICC tiskové podmínky: vyberte soubor profilu
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (ochrana se použije při uložení)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	Soubor „{name}“ se na disku změnil po otevření nebo posledním uložení. Uložení nyní nahradí tuto novější verzi touto.

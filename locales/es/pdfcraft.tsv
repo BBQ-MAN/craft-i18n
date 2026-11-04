@@ -52,8 +52,13 @@
 	a bookmark cannot be moved inside itself	un marcador no se puede mover dentro de sí mismo
 	A button	Un botón
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Una aplicación PDF de código abierto, de sala limpia, escrita en Rust. MIT OR Apache-2.0.
+	A colour operator's operands don't match its colour space	Los operandos de un operador de color no coinciden con su espacio de color
 	A colour space is nested too deeply for the spaces under it to be checked	Un espacio de color está anidado a demasiada profundidad para comprobar los espacios que tiene debajo
+	A colour space is nested too deeply to convert	Un espacio de color está anidado demasiado profundamente para convertirlo
+	A colour space's ICC profile can't be used to convert its colour	El perfil ICC de un espacio de color no se puede usar para convertir su color
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	una columna es demasiado estrecha: haz el área más ancha, dale más anchura a la columna o usa menos columnas o menos espacio entre columnas
+	A content stream can't be read, so its colour can't be converted	No se puede leer un flujo de contenido, así que su color no se puede convertir
+	A content stream is drawn with different resources in different places, so its colour can't be converted	Un flujo de contenido se dibuja con recursos distintos en distintos lugares, así que su color no se puede convertir
 	A cover on the scanner is open.	Hay una tapa del escáner abierta.
 	A diagonal CONFIDENTIAL watermark on every page.	Una marca de agua diagonal CONFIDENCIAL en todas las páginas.
 	a document must keep at least one page	un documento debe conservar al menos una página
@@ -68,17 +73,23 @@
 	A graphics state uses a soft mask	Un estado gráfico usa una máscara suave
 	A graphics state uses the {} blend mode	Un estado gráfico usa el modo de fusión {}
 	a header cell with no Scope, in a table that doesn't use Headers	celda de encabezado sin Scope, en una tabla que no usa Headers
+	A JPEG picture in CMYK can't be converted yet	Una imagen JPEG en CMYK aún no se puede convertir
 	A link	Un enlace
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Un modelo local no es un modelo puntero en la nube: puede equivocarse, y una respuesta larga tarda lo suyo en la CPU. Compruebe todo lo crítico y valore el tamaño del modelo frente a esta máquina antes de descargarlo.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Un logotipo o un nombre a la izquierda de las pestañas, donde lo mostraría una barra de título: el de PdfCraft o el de tu empresa.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Un recuento de páginas detiene el alimentador tras esas hojas. Cancelar termina la transferencia antes; las páginas ya recibidas permanecen en el documento.
+	A pattern over RGB or device-independent colour can't be converted to CMYK yet	Un motivo sobre color RGB o independiente del dispositivo aún no se puede convertir a CMYK
 	A picture covers page {pages} (a scan?), so the background won't show there.	Una imagen cubre la página {pages} (¿un escaneo?), así que el fondo no se verá ahí.
+	A picture with a decode array or a colour-key mask can't be converted to CMYK yet	Una imagen con matriz de decodificación o máscara de color clave aún no se puede convertir a CMYK
+	A picture with other than 8 bits per component can't be converted to CMYK yet	Una imagen con un número de bits por componente distinto de 8 aún no se puede convertir a CMYK
+	A picture's data can't be read, so it can't be converted to CMYK	No se pueden leer los datos de una imagen, así que no se puede convertir a CMYK
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un archivo PNG o SVG. Se lee desde esta ubicación cada vez que se inicia PdfCraft.
 	A PrinterMark annotation overlaps the TrimBox or ArtBox	Una anotación PrinterMark se superpone al TrimBox o al ArtBox
 	A script	Un script
 	a second {} in its table	un segundo {} en su tabla
 	A selected field has no widget on any page, so the fields can't be edited together.	Un campo seleccionado no tiene ningún widget en ninguna página, así que los campos no se pueden editar juntos.
 	A setting isn't valid	Un ajuste no es válido
+	A shading in RGB or device-independent colour can't be converted to CMYK yet	Un sombreado en color RGB o independiente del dispositivo aún no se puede convertir a CMYK
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Una firma que forma parte del contenido de una página, como en una página escaneada, no es un campo ni una anotación, así que no se puede quitar por sí sola, y PdfCraft no borra partes de una página para ocultarla. Para quitarla, censure esa zona (Censurar) o, si la firma es una imagen aparte, elimine la imagen con Editar un PDF.
 	A stream refers to an external file	Una secuencia hace referencia a un archivo externo
 	A stream uses JBIG2 compression	Una secuencia usa compresión JBIG2
@@ -269,6 +280,7 @@
 	An image has a soft mask	Una imagen tiene una máscara suave
 	An image has alternates or OPI information	Una imagen tiene alternativas o información OPI
 	An image or form has OPI information	Una imagen o un formulario tiene información OPI
+	An indexed colour space's table is too short to convert	La tabla de un espacio de color indexado es demasiado corta para convertirla
 	An open-source PDF workbench — local, private, and scriptable.	Un banco de trabajo PDF de código abierto: local, privado y automatizable.
 	An optional content configuration has an AS entry	Una configuración de contenido opcional tiene una entrada AS
 	and {n} more	y {n} más
@@ -412,6 +424,7 @@ certificate	Basic constraints	Restricciones básicas
 	Calibrate…	Calibrar…
 	Callout	Llamada
 	Can't be read: {e}	No se puede leer: {e}
+	Can't save as {level}; nothing was changed:	No se puede guardar como {level}; no se ha cambiado nada:
 	Cancel reverse sides	Cancelar los reversos
 	Canceling…	Cancelando…
 	Cancelled	Cancelado
@@ -513,6 +526,7 @@ certificate	Basic constraints	Restricciones básicas
 	Choose an image	Elige una imagen
 	Choose another file: the original is kept as it is, and the version without the signature is saved next to it.	Elija otro archivo: el original se conserva tal como está y la versión sin la firma se guarda junto a él.
 	Choose font…	Elegir fuente…
+	Choose ICC profile…	Elegir perfil ICC…
 	Choose images	Elegir imágenes
 	Choose image…	Elegir imagen…
 	Choose new keys for {command}	Elija teclas nuevas para {command}
@@ -557,6 +571,7 @@ certificate	Basic constraints	Restricciones básicas
 	Closed arrow	Flecha cerrada
 	Cloud	Nube
 	CloudSigner (mSzafir) is found by itself when it is installed: start it and log in before signing.	CloudSigner (mSzafir) se detecta solo cuando está instalado: ábralo e inicie sesión antes de firmar.
+	CMYK colour needs a CMYK printing condition	El color CMYK necesita una condición de impresión CMYK
 	Code sent	Código enviado
 	Collapse all	Contraer todo
 	Collapse all bookmarks	Contraer todos los marcadores
@@ -630,6 +645,8 @@ certificate	Basic constraints	Restricciones básicas
 	Continuous scrolling	Desplazamiento continuo
 	Convert colors	Convertir colores
 	Convert mode	Modo de conversión
+	Converted to {level} ({n} changes)	Convertido a {level} ({n} cambios)
+	Converting colour to CMYK needs the printing condition's ICC profile: choose a profile file	Para convertir el color a CMYK hace falta el perfil ICC de la condición de impresión: elige un archivo de perfil
 	Converting {name}…	Convirtiendo {name}…
 	Copied to clipboard	Copiado al portapapeles
 	Copied {what}	Copiado: {what}
@@ -674,6 +691,7 @@ certificate	Basic constraints	Restricciones básicas
 	Couldn't optimize the file: {e}	No se pudo optimizar el archivo: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	No se pudo imprimir desde el navegador ({e}); se descargó {name} para imprimirlo
 	Couldn't reach the printer	No se pudo conectar con la impresora
+	Couldn't read the ICC profile {name}: {e}	No se ha podido leer el perfil ICC {name}: {e}
 	Couldn't read {name}: {e}	No se pudo leer {name}: {e}
 	Couldn't recover {name}: {e}	No se pudo recuperar {name}: {e}
 	Couldn't reload {name}: {e}	No se pudo recargar {name}: {e}
@@ -1193,6 +1211,7 @@ calendar date	February	febrero
 	Flatbed	Cristal
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	Flatpak administra esta instalación. Busca actualizaciones en el gestor de software del sistema o con flatpak update.
 	Flatten comments	Acoplar comentarios
+	Flatten comments and form fields	Acoplar comentarios y campos de formulario
 	Flatten Fill & Sign	Acoplar Rellenar y firmar
 	Flatten Fill & Sign when saving	Acoplar Rellenar y firmar al guardar
 	Flatten form fields	Acoplar campos de formulario
@@ -1342,6 +1361,7 @@ key	Home	Inicio
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	El OCR húngaro requiere la aplicación de escritorio con Tesseract 5 y el modelo de idioma hun. Reinicia PdfCraft después de la instalación.
 	H{n} follows an H{d}; headings should not skip levels	un H{n} va después de un H{d}; los encabezados no deben saltarse niveles
 	I confirm sending this document to this printer	Confirmo el envío de este documento a esta impresora
+	ICC profile: {name}	Perfil ICC: {name}
 	Identity	Identidad
 	Image (PNG)	Imagen (PNG)
 	Image field	Campo de imagen
@@ -1444,6 +1464,7 @@ calendar date	January	enero
 	JavaScript, e.g. getField("total").value	JavaScript, p. ej., getField("total").value
 	JBIG2 (lossless)	JBIG2 (sin pérdida)
 	Join the ArtCraft community	Únete a la comunidad de ArtCraft
+	JPEG 2000 pictures need PDF 1.5, newer than {} allows	Las imágenes JPEG 2000 necesitan PDF 1.5, más reciente de lo que permite {}
 	July	julio
 calendar date	July	julio
 	June	junio
@@ -1478,6 +1499,7 @@ certificate	Key usage	Uso de la clave
 	Later in tab order	Después en el orden de tabulación
 	Latin (accented)	Latín (con acentos)
 	Layer options	Opciones de capas
+	Layers (optional content) need PDF 1.5, newer than {} allows	Las capas (contenido opcional) necesitan PDF 1.5, más reciente de lo que permite {}
 	Layers panel	Panel de capas
 	Layers Panel and Page	Panel de capas y página
 	Layout and Magnification	Presentación y ampliación
@@ -1778,6 +1800,7 @@ calendar weekday	Mo	Lu
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Ninguno de esos archivos se puede convertir en PDF; usa archivos PDF, imágenes o .txt
 	None of your digital IDs can open this document.	Ninguno de tus ID digitales puede abrir este documento.
 	None — everything is allowed	Ninguna: todo está permitido
+	None: sRGB for RGB and gray documents	Ninguno: sRGB para documentos en RGB y en gris
 	Normal	Estándar
 scroll speed	Normal	Normal
 	Normal page	Página normal
@@ -1891,6 +1914,7 @@ animation effects	On	Activados
 	Opening the browser's print dialog…	Abriendo el diálogo de impresión del navegador…
 	Opening {name}…	Abriendo {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Abre las preferencias del controlador de la impresora. Se guardan para todas las impresiones de este equipo; las copias, la impresión a doble cara, la escala de grises y el papel elegidos aquí se siguen aplicando.
+	OpenType font programs need PDF 1.6, newer than {} allows	Los programas de fuentes OpenType necesitan PDF 1.6, más reciente de lo que permite {}
 	Optical resolution {x} × {y} dpi.	Resolución óptica {x} × {y} ppp.
 	Optimization cancelled	Optimización cancelada
 	Optimization is already running	La optimización ya está en ejecución
@@ -1931,7 +1955,9 @@ animation effects	On	Activados
 	Outline view	Vista de contorno
 	Output appears here.	La salida aparece aquí.
 	Output folder	Carpeta de salida
+	Output intent profile:	Perfil del propósito de salida:
 	Output intent: {list}	Propósito de salida: {list}
+	Output intents with profiles don't all share one profile	Los propósitos de salida con perfil no comparten todos el mismo perfil
 	Output preview	Vista previa de salida
 	Overlap:	Solapamiento:
 	Owner password (no restrictions apply)	Contraseña de propietario (no se aplica ninguna restricción)
@@ -1980,6 +2006,7 @@ animation effects	On	Activados
 	Page {p}: {n} untagged content item	Página {p}: {n} elemento de contenido sin etiquetar
 	Page {p}: {n} untagged content items	Página {p}: {n} elementos de contenido sin etiquetar
 	Page {} has additional actions	La página {} tiene acciones adicionales
+	Page {}'s TrimBox, BleedBox and CropBox don't overlap	El TrimBox, el BleedBox y el CropBox de la página {} no se solapan
 	pages	páginas
 	pages added or removed	páginas añadidas o quitadas
 	Pages counted	Páginas contadas
@@ -2033,7 +2060,9 @@ animation effects	On	Activados
 	PDF version	Versión de PDF
 	PDF, images and text	PDF, imágenes y texto
 	PDF/A and standards advice	Consejos de PDF/A y normas
+	PDF/A embeds the output intent's ICC profile: choose a profile file	PDF/A incrusta el perfil ICC del propósito de salida: elige un archivo de perfil
 	PDF/A…	PDF/A…
+	PDF/X-4 embeds the printing condition's ICC profile: choose a profile file	PDF/X-4 incrusta el perfil ICC de la condición de impresión: elige un archivo de perfil
 	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft todavía no puede comprobar esta firma: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft no se cerró correctamente. Estos documentos tenían cambios que se guardaron automáticamente:
@@ -2137,6 +2166,7 @@ animation effects	On	Activados
 	Printer status: {state}	Estado de la impresora: {state}
 	Printer's mark annotation on page {p} is in the structure tree	Una anotación de marca de impresora de la página {p} está en el árbol de estructura
 	Printing allowed	Impresión permitida
+	Printing condition:	Condición de impresión:
 	Privacy	Privacidad
 	Private data of other applications	Datos privados de otras aplicaciones
 	Producer	Productor
@@ -2456,6 +2486,8 @@ calendar weekday	Sa	Sá
 	Saved measurements.	Mediciones guardadas.
 	Saved the print-ready PDF to {path}	PDF listo para imprimir guardado en {path}
 	Saved {name}	{name} guardado
+	Saved {name} and verified it: it conforms to {level}.	Se ha guardado {name} y se ha verificado: cumple {level}.
+	Saved {name}, but verifying it found {n} problems.	Se ha guardado {name}, pero la verificación ha encontrado {n} problemas.
 	Saved {place}: {before} → {after} (not smaller){detail}	Guardado {place}: {before} → {after} (no es más pequeño){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Guardado {place}: {before} → {after} ({pct}% más pequeño){detail}
 	Saved, but reopening failed: {e}	Guardado, pero no se pudo volver a abrir: {e}
@@ -2838,6 +2870,7 @@ certificate	Subject	Titular
 	Text Field Table	Tabla de campos de texto
 	Text field table	Tabla de campos de texto
 	Text in images isn't found; recognise text (OCR) first.	El texto de las imágenes no se encuentra; reconoce antes el texto (OCR).
+	Text in the font {} uses the Private Use Area without ActualText	El texto con la fuente {} usa el área de uso privado sin ActualText
 	Text is compared word by word; the differences are shown on the new file.	El texto se compara palabra por palabra; las diferencias se muestran en el archivo nuevo.
 	Text language is specified	El idioma del texto está especificado
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	El texto debe contrastar lo suficiente con el fondo para las personas con baja visión. Comprueba los colores a simple vista o con una herramienta de contraste.
@@ -2883,6 +2916,7 @@ calendar weekday	Th	Ju
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	El selector de archivos del portal de escritorio no se está ejecutando ({packages}). Compruébalo con systemctl --user status {first}, o cierra la sesión y vuelve a iniciarla.
 	The device's digital ID isn't available any more; start signing again to list it.	El ID digital del dispositivo ya no está disponible; vuelva a iniciar la firma para que aparezca.
 	The Dock shows it the next time PdfCraft opens.	El Dock lo mostrará la próxima vez que se abra PdfCraft.
+	The document can't be converted: {}	El documento no se puede convertir: {}
 	The document changed while it was being signed, so the signature wasn't saved.	El documento cambió mientras se firmaba, así que la firma no se guardó.
 	The document changed while its margins were measured; nothing was cropped	El documento cambió mientras se medían sus márgenes; no se ha recortado nada
 	The document changed while you were choosing a file, so nothing was changed.	El documento cambió mientras elegías un archivo, así que no se modificó nada.
@@ -2899,6 +2933,7 @@ calendar weekday	Th	Ju
 	The document has document-level JavaScript	El documento tiene JavaScript de nivel de documento
 	the document has no form fields	el documento no tiene campos de formulario
 	the document has no page tree	el documento no tiene árbol de páginas
+	The document has no structure tree: it isn't tagged	El documento no tiene árbol de estructura: no está etiquetado
 	the document has no tags	el documento no tiene etiquetas
 	The document has no tags (structure tree)	El documento no tiene etiquetas (árbol de estructura)
 	The document has no title	El documento no tiene título
@@ -2906,14 +2941,17 @@ calendar weekday	Th	Ju
 	The document information and the metadata name different PDF/X versions	La información del documento y los metadatos indican versiones de PDF/X distintas
 	The document information doesn't identify the file as {}	La información del documento no identifica el archivo como {}
 	The document is encrypted	El documento está cifrado
+	The document is encrypted: open it with its permissions password to remove the security	El documento está cifrado: ábrelo con su contraseña de permisos para quitar la seguridad
 	The document is no longer open.	El documento ya no está abierto.
 	the document is protected by a password	el documento está protegido con contraseña
+	The document isn't marked as tagged (MarkInfo /Marked true)	El documento no está marcado como etiquetado (MarkInfo /Marked true)
 	The document isn't marked as tagged (MarkInfo Marked)	El documento no está marcado como etiquetado (MarkInfo Marked)
 	The document isn't tagged, so none of its content is	El documento no está etiquetado, así que su contenido tampoco lo está
 	The document now conforms to {level}; save it to keep the changes	El documento ahora cumple {level}; guárdalo para conservar los cambios
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	El documento se abre sin contraseña; esta contraseña hace falta para cambiar las restricciones. Se aplica al guardar.
 	The document sets no language (Lang), and neither do its tags	El documento no indica ningún idioma (Lang), ni tampoco sus etiquetas
 	The document uses both H and numbered headings (H1–H6)	El documento usa a la vez H y encabezados numerados (H1–H6)
+	The document uses CMYK colour: choose the ICC profile of a CMYK printing condition for its output intent	El documento usa color CMYK: elige el perfil ICC de una condición de impresión CMYK para su propósito de salida
 	The document was changed in another window. Check your text, then apply it again.	El documento se modificó en otra ventana. Revise su texto y aplíquelo de nuevo.
 	The document was closed before it could be saved.	El documento se cerró antes de poder guardarlo.
 	The document wasn't signed: {e}	El documento no se firmó: {e}
@@ -2944,12 +2982,18 @@ calendar weekday	Th	Ju
 	the first heading is an H{n}; headings should not skip levels	el primer encabezado es un H{n}; los encabezados no deben saltarse niveles
 	the first row number can be at most {max}	el número de la primera fila puede ser como mucho {max}
 	The font must include Latin letters and numbers for interface controls.	La fuente debe incluir letras latinas y números para los controles de la interfaz.
+	The font {} has characters with no Unicode value	La fuente {} tiene caracteres sin valor Unicode
 	The font {} isn't embedded	La fuente {} no está incrustada
+	The font {} maps characters to U+0000, U+FEFF or U+FFFE	La fuente {} asigna caracteres a U+0000, U+FEFF o U+FFFE
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Las fuentes con las que escribe PdfCraft no pueden mostrar «{c}» ({code}), así que aparece como ? en todos los visores de PDF. El texto se guarda.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	El formulario pide enviarse a {u}; PdfCraft no envía datos de formulario. Guarda el documento para conservar lo que has introducido.
 	The form asks viewers to make appearances (NeedAppearances)	El formulario pide a los visores que generen las apariencias (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	El propósito del formulario y sus campos (nombres, tipos, orden de tabulación)
 	The fronts already scanned are kept for the reverse-side pass.	Los anversos ya escaneados se conservan para la pasada de los reversos.
+	The ICC profile {} isn't a CMYK profile, which PDF/X-1a needs	El perfil ICC {} no es un perfil CMYK, que es lo que PDF/X-1a necesita
+	The ICC profile {} isn't a gray, RGB or CMYK profile	El perfil ICC {} no es un perfil de gris, RGB ni CMYK
+	The ICC profile {} isn't an output (printer) profile	El perfil ICC {} no es un perfil de salida (de impresora)
+	The ICC profile {} isn't an output or display profile	El perfil ICC {} no es un perfil de salida ni de pantalla
 	The image couldn't be used as an icon: {e}	La imagen no se pudo usar como icono: {e}
 	The image has been copied ({w} × {h} pixels)	Se ha copiado la imagen ({w} × {h} píxeles)
 	The image has been copied as a {ext} file	Se ha copiado la imagen como archivo {ext}
@@ -2962,6 +3006,7 @@ calendar weekday	Th	Ju
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	La clave está en {device}, que pide la aprobación por sí mismo (un teclado para el PIN o una app en su teléfono).
 	The Keychain's digital IDs couldn't be listed: {e}	No se pudieron listar los ID digitales del Llavero: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Las etiquetas están en inglés: la fuente de la firma no puede dibujarlas en este idioma.
+	The language {} isn't a valid language tag	El idioma {} no es una etiqueta de idioma válida
 	The linked PDF opened, but its named destination was not applied.	El PDF vinculado se abrió, pero no se aplicó su destino con nombre.
 	The linked PDF opened, but its page destination was out of range.	El PDF vinculado se abrió, pero su página de destino está fuera de rango.
 	The metadata doesn't identify the file as PDF/UA (pdfuaid:part)	Los metadatos no identifican el archivo como PDF/UA (pdfuaid:part)
@@ -2987,6 +3032,7 @@ calendar weekday	Th	Ju
 	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	El perfil del propósito de salida no tiene transformación de dispositivo a PCS (AToB1 o grayTRC)
 	The output intent's profile isn't a valid ICC profile	El perfil del propósito de salida no es un perfil ICC válido
 	The output intent's profile isn't an output (printer) profile	El perfil del propósito de salida no es un perfil de salida (de impresora)
+	The output profile can't convert colour to CMYK ({})	El perfil de salida no puede convertir el color a CMYK ({})
 	The page has both a TrimBox and an ArtBox	La página tiene a la vez TrimBox y ArtBox
 	The page has changed; select the image again	La página ha cambiado; vuelva a seleccionar la imagen
 	The page has neither a TrimBox nor an ArtBox	La página no tiene ni TrimBox ni ArtBox
@@ -3029,6 +3075,7 @@ calendar weekday	Th	Ju
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Las restricciones se aplican a los destinatarios sin «Todos los permisos». Se aplica al guardar.
 	The reverse sides already scanned are kept.	Los reversos ya escaneados se conservan.
 	The reverse sides were cancelled: their document was closed.	Se cancelaron los reversos: se cerró su documento.
+	The role map maps {} in a circle	El mapa de funciones asigna {} en círculo
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	las filas son demasiado bajas: haz el área más alta o usa menos filas o menos espacio entre filas
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	El valor de la firma RSA no tiene la longitud del módulo de la clave (se han quitado o añadido ceros iniciales); se ha leído igualmente.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	El DigestInfo de la firma RSA no lleva el parámetro NULL (los firmadores antiguos lo escriben así); se ha leído igualmente.
@@ -3097,8 +3144,11 @@ calendar weekday	Th	Ju
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	el servicio de firma rechazó el PIN o el OTP (el OTP puede haber caducado)
 	the signing service rejected the user name or password	el servicio de firma rechazó el nombre de usuario o la contraseña
 	The smart card's digital IDs couldn't be listed: {e}	No se pudieron listar los ID digitales de la tarjeta inteligente: {e}
+	The spot colour {} has an alternate that can't be converted to CMYK yet	La tinta plana {} tiene un espacio alternativo que aún no se puede convertir a CMYK
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Las fuentes estándar no pueden mostrar «{c}» ({code}). Por ahora solo se pueden añadir como texto caracteres de Europa occidental.
 	The standard it must meet and where the file goes	La norma que debe cumplir y a dónde va el archivo
+	The standard structure type {} is mapped to a type that isn't standard	El tipo de estructura estándar {} está asignado a un tipo que no es estándar
+	The structure type {} isn't standard and isn't mapped to a standard type	El tipo de estructura {} no es estándar ni está asignado a un tipo estándar
 	The text is the same	El texto es el mismo
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	los modelos de reconocimiento de texto no están instalados (reinstala PdfCraft o define PDFCRAFT_MODELS con la carpeta que los contiene)
 	The timestamp authority's certificate is not issued for time stamping.	El certificado de la autoridad de sellado de tiempo no está emitido para sellar el tiempo.
@@ -3556,7 +3606,9 @@ document scrollbar width	Wide	Ancha
 	{} annotation on page {p} isn't tagged	Una anotación {} de la página {p} no está etiquetada
 	{} annotation on page {p}: its description has no language (Lang)	Anotación {} de la página {p}: su descripción no tiene idioma (Lang)
 	{} annotations aren't allowed	No se permiten las anotaciones {}
+	{} colour can't be converted to CMYK yet	El color {} aún no se puede convertir a CMYK
 	{} colour doesn't match the output intent's colour space	El color {} no coincide con el espacio de color del propósito de salida
+	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} necesita incrustado el perfil ICC de la condición de impresión para el color RGB o independiente del dispositivo: elige un archivo de perfil
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (la protección se aplica al guardar)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	«{name}» cambió en el disco después de abrirse o guardarse por última vez. Guardar ahora reemplaza esa versión más reciente por esta.
