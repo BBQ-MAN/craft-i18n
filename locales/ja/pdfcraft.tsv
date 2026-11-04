@@ -1290,6 +1290,7 @@ scroll speed	Fast	速い
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	画質を高くするとファイルは大きくなります。元より小さくなる場合のみコピーを保存します。
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	高画質で、通常はファイルが大きくなります。450 ppi を超える JPEG 写真を 300 ppi、品質 85 に縮小します。可逆圧縮の図版とマスク付き画像は元のピクセルを保持します。
 	Highlight	ハイライト
+	Highlight coverage above	次を超えるインキ量を強調表示
 	Highlight fields	フィールドをハイライト
 	Highlight Style:	ハイライトの形式:
 	Highlight text	テキストをハイライト
@@ -1330,6 +1331,7 @@ key	Home	Home
 	Initials	イニシャル
 	initials	イニシャル
 	Ink sensitivity	インクの感度
+	Inks	インキ
 	Insert a blank page after the selection	選択範囲の後に空白ページを挿入
 	Insert a file at the end	最後にファイルを挿入
 	Insert a file before page {label}	ページ {label} の前にファイルを挿入
@@ -1719,6 +1721,7 @@ key	Home	Home
 	No unlinked web addresses were found in the text	テキスト内にリンクのない Web アドレスはありませんでした
 	No untagged content was found.	タグなしのコンテンツは見つかりませんでした。
 	no unused output name	使用可能な出力名がありません
+	No usable CMYK output intent: RGB and CIE-based colours separate by the ISO 32000 device formulas.	使用できる CMYK 出力インテントがありません。RGB と CIE ベースのカラーは ISO 32000 のデバイス変換式で色分解されます。
 	none	なし
 	None (prefix only)	なし（接頭辞のみ）
 	None found	見つかりませんでした
@@ -1881,6 +1884,7 @@ animation effects	On	オン
 	Page grid	ページ一覧
 	Page labels	ページラベル
 	Page layout	ページレイアウト
+	Page maximum: {n}%	ページ最大値: {n}%
 	Page navigation	ページ移動
 	Page number	ページ番号
 	Page Only	ページのみ
@@ -2008,6 +2012,7 @@ animation effects	On	オン
 	Planned for milestone {m} — open to see what it will include	マイルストーン {m} で対応予定 — 開くと予定内容を確認できます
 	Planned · {m}	予定 · {m}
 	Plugins	プラグイン
+	Point at the page to read its ink coverage.	ページにポインターを合わせるとインキ量が表示されます。
 	Points from the page's bottom-left corner.	ページの左下隅からの距離（ポイント）。
 	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	ポータブルモードは無効です: {folder} に書き込めません ({error})。設定は代わりにユーザーフォルダーに保存されます。
 	Portrait Pages	縦向きページ
@@ -2504,6 +2509,7 @@ animation effects	On	オン
 	Separate the sheets and load the remaining ones, then choose Continue.	用紙をさばいて残りをセットし、「スキャンを続行」を選んでください。
 	Separate the sheets and load them again, then choose Try again.	用紙をさばいてもう一度セットし、「再試行」を選んでください。
 	Separate vertical units	縦方向の単位を個別に設定
+	Separating page {n}…	ページ {n} を色分解しています…
 	Separator style:	区切り文字の形式:
 	Sepia	セピア
 	Sepia night	ナイトセピア
@@ -2630,6 +2636,9 @@ key	Shift	Shift
 	Signing… Confirm the signature on your other device.	署名しています… もう一方のデバイスで署名を承認してください。
 	Silhouettes	輪郭
 	Simplified field notation:	簡易フィールド表記:
+	Simulate overprinting	オーバープリントをシミュレート
+	Simulation: device formulas	シミュレーション: デバイス変換式
+	Simulation: {profile}	シミュレーション: {profile}
 	Single file	単一ファイル
 	Single Page	単一ページ
 	Single page	単一ページ
@@ -2875,6 +2884,7 @@ document scrollbar width	Standard	標準
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	元のファイルは変更されません。出力フォルダーに同じ名前のファイルがある場合はそのまま残り、新しいファイルには番号が付きます。
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	ほかの署名（{names}）は、署名後に文書が変更されたと報告します。検証し直してください。有効なままである保証はありません。
 	The output folder can't be one of the folders being read, or contain one.	出力フォルダーには、読み込むフォルダー自体やそれを含むフォルダーは指定できません。
+	The page could not be separated: {error}	ページを色分解できませんでした: {error}
 	The page has changed; select the image again	ページが変更されました。画像をもう一度選択してください
 	The pages already scanned were kept in the document.	スキャン済みのページは文書に保持されています。
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	フォルダーを選択している間に文書が変更されたため、ページは抽出しましたが、削除はしていません。
@@ -3073,10 +3083,12 @@ document scrollbar width	Standard	標準
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	トークンとスマートカードは PKCS #11 モジュールを通じて署名します。信頼できるモジュールだけを追加してください。モジュールは独自のコードを実行します。
 	Too early	早すぎる
 	Too many copies: increase the spacing or the size.	コピーが多すぎます。間隔またはサイズを大きくしてください。
+	Too many spot inks to separate: {names}	特色が多すぎるため色分解されません: {names}
 	Tools panel side	ツールパネルの位置
 	Tooltip	ツールチップ
 	Tooltip:	ツールチップ:
 	Top-level bookmarks ({n})	最上位のしおり（{n}）
+	Total area coverage	総インキ量
 	TR must be a child of Table, THead, TBody, or TFoot	TR は Table、THead、TBody、TFoot の子要素である必要があります
 	Transfer format: {format}.	転送形式: {format}。
 	Transform image	画像を変換

@@ -1285,6 +1285,7 @@ calendar weekday	Fr	T6
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Chất lượng ảnh cao hơn đồng nghĩa với tệp lớn hơn. Chỉ lưu bản sao nếu tệp nhỏ hơn.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Chất lượng cao hơn, tệp thường lớn hơn. Ảnh JPEG trên 450 ppi được giảm xuống 300 ppi, chất lượng 85. Đồ họa nén không mất dữ liệu và ảnh có mặt nạ giữ nguyên điểm ảnh.
 	Highlight	Tô sáng
+	Highlight coverage above	Tô sáng độ phủ vượt quá
 	Highlight fields	Tô sáng các trường
 	Highlight Style:	Kiểu tô sáng:
 	Highlight text	Tô sáng văn bản
@@ -1324,6 +1325,7 @@ key	Home	Home
 	Initials	Chữ viết tắt
 	initials	chữ viết tắt
 	Ink sensitivity	Độ nhạy nét mực
+	Inks	Mực in
 	Insert a blank page after the selection	Chèn một trang trống sau vùng chọn
 	Insert a file at the end	Chèn một tệp vào cuối
 	Insert a file before page {label}	Chèn một tệp trước trang {label}
@@ -1701,6 +1703,7 @@ calendar weekday	Mo	T2
 	No unlinked web addresses were found in the text	Không tìm thấy địa chỉ web nào chưa được liên kết trong văn bản
 	No untagged content was found.	Không tìm thấy nội dung nào chưa được gắn thẻ.
 	no unused output name	không có tên đầu ra chưa dùng
+	No usable CMYK output intent: RGB and CIE-based colours separate by the ISO 32000 device formulas.	Không có mục đích đầu ra CMYK dùng được: màu RGB và màu dựa trên CIE được tách theo công thức thiết bị của ISO 32000.
 	Non-Repudiation	Chống chối bỏ
 	none	không có
 	None (prefix only)	Không có (chỉ tiền tố)
@@ -1871,6 +1874,7 @@ animation effects	On	Bật
 	Page grid	Lưới trang
 	Page labels	Nhãn trang
 	Page layout	Bố cục trang
+	Page maximum: {n}%	Mức tối đa của trang: {n}%
 	Page navigation	Điều hướng trang
 	Page number	Số trang
 	Page Only	Chỉ trang
@@ -2004,6 +2008,7 @@ animation effects	On	Bật
 	Planned · {m}	Đã lên kế hoạch · {m}
 	Plugins	Plugin
 	Plugins are sandboxed WebAssembly packages. They survive PdfCraft updates as long as their API version is supported.	Plugin là các gói WebAssembly chạy trong sandbox. Chúng vẫn hoạt động sau khi cập nhật PdfCraft miễn là phiên bản API của chúng còn được hỗ trợ.
+	Point at the page to read its ink coverage.	Trỏ vào trang để xem độ phủ mực.
 	Points from the page's bottom-left corner.	Điểm tính từ góc dưới bên trái của trang.
 	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	Chế độ di động đang tắt: không thể ghi vào {folder} ({error}). Cài đặt được lưu trong thư mục người dùng của bạn thay thế.
 	Portrait Pages	Trang dọc
@@ -2466,6 +2471,7 @@ certificate	Self-signed	Tự ký
 	Separate PDFs	Các PDF riêng biệt
 	Separate the sheets and load the remaining ones, then choose Continue.	Tách các tờ và nạp những tờ còn lại, rồi chọn Tiếp tục.
 	Separate the sheets and load them again, then choose Try again.	Tách các tờ và nạp lại, rồi chọn Thử lại.
+	Separating page {n}…	Đang tách màu trang {n}…
 	Separator style:	Kiểu dấu phân cách:
 	Sepia night	Nâu đỏ ban đêm
 	September	Tháng 9
@@ -2588,6 +2594,9 @@ key	Shift	Shift
 	Signing…	Đang ký…
 	Signing… Confirm the signature on your other device.	Đang ký… Hãy xác nhận chữ ký trên thiết bị khác của bạn.
 	Simplified field notation:	Ký hiệu trường rút gọn:
+	Simulate overprinting	Mô phỏng in chồng
+	Simulation: device formulas	Mô phỏng: công thức thiết bị
+	Simulation: {profile}	Mô phỏng: {profile}
 	Single file	Một tệp
 	Single Page	Một trang
 	Single page	Một trang
@@ -2874,6 +2883,7 @@ calendar weekday	Th	T5
 	The output intent's profile isn't a valid ICC profile	Hồ sơ của mục đích đầu ra không phải là hồ sơ ICC hợp lệ
 	The output intent's profile isn't an output (printer) profile	Hồ sơ của mục đích đầu ra không phải là hồ sơ đầu ra (máy in)
 	The output profile can't convert colour to CMYK ({})	Hồ sơ đầu ra không thể chuyển màu sang CMYK ({})
+	The page could not be separated: {error}	Không thể tách màu trang: {error}
 	The page has both a TrimBox and an ArtBox	Trang có cả TrimBox lẫn ArtBox
 	The page has changed; select the image again	Trang đã thay đổi; hãy chọn lại hình ảnh
 	The page has neither a TrimBox nor an ArtBox	Trang không có TrimBox cũng không có ArtBox
@@ -3130,10 +3140,12 @@ calendar weekday	Th	T5
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	Token và thẻ thông minh ký thông qua mô-đun PKCS #11. Chỉ thêm các mô-đun bạn tin cậy: mô-đun chạy mã của chính nó.
 	Too early	Quá sớm
 	Too many copies: increase the spacing or the size.	Quá nhiều bản sao: hãy tăng khoảng cách hoặc kích thước.
+	Too many spot inks to separate: {names}	Quá nhiều mực pha để tách màu: {names}
 	Tools panel side	Phía của bảng công cụ
 	Tooltip	Chú giải công cụ
 	Tooltip:	Chú giải công cụ:
 	Top-level bookmarks ({n})	Dấu trang cấp cao nhất ({n})
+	Total area coverage	Tổng độ phủ mực
 	TR must be a child of Table, THead, TBody, or TFoot	TR phải là con của Table, THead, TBody hoặc TFoot
 	Transfer format: {format}.	Định dạng truyền: {format}.
 	Transform image	Chuyển đổi hình ảnh

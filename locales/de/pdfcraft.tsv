@@ -1337,6 +1337,7 @@ calendar weekday	Fr	Fr
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Höhere Bildqualität bedeutet größere Dateien. Eine Kopie wird nur gespeichert, wenn sie kleiner ist.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Höhere Qualität, meist größere Dateien. JPEG-Fotos über 450 ppi werden auf 300 ppi reduziert, Qualität 85. Verlustfreie Grafiken und maskierte Bilder behalten ihre Pixel.
 	Highlight	Hervorheben
+	Highlight coverage above	Farbauftrag hervorheben über
 	Highlight fields	Felder hervorheben
 	Highlight Style:	Hervorhebungsstil:
 	Highlight text	Text hervorheben
@@ -1378,6 +1379,7 @@ key	Home	Pos1
 	Initials	Initialen
 	initials	Initialen
 	Ink sensitivity	Tintenempfindlichkeit
+	Inks	Druckfarben
 	Insert a blank page after the selection	Leere Seite nach der Auswahl einfügen
 	Insert a file at the end	Datei am Ende einfügen
 	Insert a file before page {label}	Datei vor Seite {label} einfügen
@@ -1767,6 +1769,7 @@ calendar weekday	Mo	Mo
 	No unlinked web addresses were found in the text	Im Text wurden keine unverlinkten Webadressen gefunden
 	No untagged content was found.	Es wurde kein ungetaggter Inhalt gefunden.
 	no unused output name	kein freier Ausgabename
+	No usable CMYK output intent: RGB and CIE-based colours separate by the ISO 32000 device formulas.	Kein verwendbarer CMYK-Output-Intent: RGB- und CIE-basierte Farben werden nach den Geräteformeln von ISO 32000 separiert.
 	Non-Repudiation	Nichtabstreitbarkeit
 	none	keine
 	None (prefix only)	Keiner (nur Präfix)
@@ -1942,6 +1945,7 @@ animation effects	On	Ein
 	Page grid	Seitenraster
 	Page labels	Seitenbeschriftungen
 	Page layout	Seitenlayout
+	Page maximum: {n}%	Seitenmaximum: {n} %
 	Page navigation	Seitennavigation
 	Page number	Seitenzahl
 	Page Only	Nur Seite
@@ -2075,6 +2079,7 @@ animation effects	On	Ein
 	Planned for milestone {m} — open to see what it will include	Geplant für Meilenstein {m} – öffnen, um zu sehen, was enthalten sein wird
 	Planned · {m}	Geplant · {m}
 	Plugins	Plugins
+	Point at the page to read its ink coverage.	Zeigen Sie auf die Seite, um den Farbauftrag abzulesen.
 	Points from the page's bottom-left corner.	Punkte ab der unteren linken Ecke der Seite.
 	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	Der portable Modus ist aus: In {folder} kann nicht geschrieben werden ({error}). Die Einstellungen werden stattdessen in deinem Benutzerordner gespeichert.
 	Portrait Pages	Seiten im Hochformat
@@ -2579,6 +2584,7 @@ calendar weekday	Sa	Sa
 	Separate PDFs	Einzelne PDFs
 	Separate the sheets and load the remaining ones, then choose Continue.	Trennen Sie die Blätter und legen Sie die restlichen ein. Wählen Sie dann „Weiter scannen“.
 	Separate the sheets and load them again, then choose Try again.	Trennen Sie die Blätter und legen Sie sie erneut ein. Wählen Sie dann „Erneut versuchen“.
+	Separating page {n}…	Seite {n} wird separiert…
 	Separator style:	Trennzeichen:
 	Sepia	Sepia
 	Sepia night	Nacht-Sepia
@@ -2710,6 +2716,9 @@ key	Shift	Umschalt
 	Signing…	Wird signiert…
 	Signing… Confirm the signature on your other device.	Wird signiert… Bestätigen Sie die Signatur auf Ihrem anderen Gerät.
 	Simplified field notation:	Vereinfachte Feldschreibweise:
+	Simulate overprinting	Überdrucken simulieren
+	Simulation: device formulas	Simulation: Geräteformeln
+	Simulation: {profile}	Simulation: {profile}
 	Single file	Einzelne Datei
 	Single Page	Einzelseite
 	Single page	Einzelseite
@@ -2980,6 +2989,7 @@ calendar weekday	Th	Do
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Die Originale bleiben unverändert. Eine gleichnamige Datei im Ausgabeordner bleibt erhalten, die neue bekommt eine Nummer.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Die anderen Signaturen ({names}) werden melden, dass das Dokument nach ihrer Signatur geändert wurde. Prüfen Sie sie erneut: Nichts garantiert, dass sie gültig bleiben.
 	The output folder can't be one of the folders being read, or contain one.	Der Ausgabeordner darf keiner der gelesenen Ordner sein und keinen davon enthalten.
+	The page could not be separated: {error}	Die Seite konnte nicht separiert werden: {error}
 	the page flattening model is not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds it)	das Modell zum Glätten von Seiten ist nicht installiert (installieren Sie PdfCraft neu oder setzen Sie PDFCRAFT_MODELS auf den Ordner, der es enthält)
 	The page has changed; select the image again	Die Seite hat sich geändert; wähle das Bild erneut aus
 	The pages already scanned were kept in the document.	Die bereits gescannten Seiten wurden im Dokument behalten.
@@ -3228,10 +3238,12 @@ calendar weekday	Th	Do
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	Token und Smartcards signieren über ein PKCS #11-Modul. Fügen Sie nur Module hinzu, denen Sie vertrauen: Ein Modul führt eigenen Code aus.
 	Too early	Zu früh
 	Too many copies: increase the spacing or the size.	Zu viele Kopien: Abstand oder Größe erhöhen.
+	Too many spot inks to separate: {names}	Zu viele Volltonfarben zum Separieren: {names}
 	Tools panel side	Seite des Werkzeugbereichs
 	Tooltip	Tooltip
 	Tooltip:	Tooltip:
 	Top-level bookmarks ({n})	Lesezeichen der obersten Ebene ({n})
+	Total area coverage	Gesamtfarbauftrag
 	TR must be a child of Table, THead, TBody, or TFoot	TR muss ein untergeordnetes Element von Table, THead, TBody oder TFoot sein
 	Transfer format: {format}.	Übertragungsformat: {format}.
 	Transform image	Bild transformieren

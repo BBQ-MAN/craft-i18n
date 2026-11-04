@@ -1229,6 +1229,7 @@ scroll speed	Fast	Gyors
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	A jobb képminőség nagyobb fájlmérettel jár. Másolat csak akkor készül, ha kisebb.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Jobb minőség, általában nagyobb fájlok. A 450 ppi feletti JPEG-fotók 300 ppi felbontásra csökkennek, 85-ös minőséggel. A veszteségmentes grafikák és a maszkolt képek megőrzik képpontjaikat.
 	Highlight	Kiemelés
+	Highlight coverage above	Kiemelés, ha a fedettség nagyobb, mint
 	Highlight fields	Mezők kiemelése
 	Highlight Style:	Kiemelés stílusa:
 	Highlight text	Szöveg kiemelése
@@ -1270,6 +1271,7 @@ key	Home	Home
 	Initials	Monogram
 	initials	monogram
 	Ink sensitivity	Tintaérzékenység
+	Inks	Festékek
 	Insert a blank page after the selection	Üres oldal beszúrása a kijelölés után
 	Insert a file at the end	Fájl beszúrása a végére
 	Insert a file before page {label}	Fájl beszúrása a {label}. oldal elé
@@ -1641,6 +1643,7 @@ key	Home	Home
 	No unlinked web addresses were found in the text	A szövegben nem találtunk hivatkozás nélküli webcímet
 	No untagged content was found.	Nem található címkézetlen tartalom.
 	no unused output name	nincs szabad kimeneti név
+	No usable CMYK output intent: RGB and CIE-based colours separate by the ISO 32000 device formulas.	Nincs használható CMYK kimeneti cél: az RGB és a CIE-alapú színek az ISO 32000 eszközképletei szerint bontódnak.
 	none	nincs
 	None (prefix only)	Nincs (csak előtag)
 	None found	Nem található
@@ -1798,6 +1801,7 @@ animation effects	On	Be
 	Page grid	Oldalrács
 	Page labels	Oldalcímkék
 	Page layout	Oldalelrendezés
+	Page maximum: {n}%	Oldal maximuma: {n}%
 	Page navigation	Oldalnavigáció
 	Page number	Oldalszám
 	Page Only	Csak az oldal
@@ -1920,6 +1924,7 @@ animation effects	On	Be
 	Planned for milestone {m} — open to see what it will include	{m} mérföldkőre tervezve — nyisd meg, és meglátod, mi lesz benne
 	Planned · {m}	Tervezett · {m}
 	Plugins	Bővítmények
+	Point at the page to read its ink coverage.	Mutasson az oldalra a festékfedettség leolvasásához.
 	Points from the page's bottom-left corner.	Pontok az oldal bal alsó sarkától.
 	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	A hordozható mód ki van kapcsolva: {folder} nem írható ({error}). A beállítások helyette a felhasználói mappádban maradnak.
 	Portrait Pages	Álló oldalak
@@ -2391,6 +2396,7 @@ animation effects	On	Be
 	Separate PDFs	Külön PDF-ek
 	Separate the sheets and load the remaining ones, then choose Continue.	Válassza szét a lapokat, és töltse be a hátralévőket, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
 	Separate the sheets and load them again, then choose Try again.	Válassza szét a lapokat, és töltse be őket újra, majd válassza a(z) „Újra” lehetőséget.
+	Separating page {n}…	{n}. oldal színbontása…
 	Separator style:	Elválasztó stílusa:
 	Sepia	Szépia
 	Sepia night	Éjszakai szépia
@@ -2515,6 +2521,9 @@ key	Shift	Shift
 	Signing…	Aláírás folyamatban…
 	Signing… Confirm the signature on your other device.	Aláírás folyamatban… Erősítse meg az aláírást a másik eszközén.
 	Simplified field notation:	Egyszerűsített mezőjelölés:
+	Simulate overprinting	Felülnyomás szimulálása
+	Simulation: device formulas	Szimuláció: eszközképletek
+	Simulation: {profile}	Szimuláció: {profile}
 	Single file	Egy fájl
 	Single Page	Egy oldal
 	Single page	Egy oldal
@@ -2754,6 +2763,7 @@ action wizard	Start	Indítás
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Az eredeti fájlok nem változnak. A kimeneti mappában lévő azonos nevű fájl megmarad, az új pedig sorszámot kap.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	A többi aláírás ({names}) jelezni fogja, hogy a dokumentum az aláírása után megváltozott. Ellenőrizze újra őket: semmi sem garantálja, hogy érvényesek maradnak.
 	The output folder can't be one of the folders being read, or contain one.	A kimeneti mappa nem lehet egyik beolvasott mappa sem, és nem tartalmazhat ilyet.
+	The page could not be separated: {error}	Az oldal színbontása nem sikerült: {error}
 	The page has changed; select the image again	Az oldal megváltozott; jelölje ki újra a képet
 	The pages already scanned were kept in the document.	A már beolvasott oldalak megmaradtak a dokumentumban.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Az oldalak kinyerése megtörtént, de nem lettek törölve, mert a dokumentum megváltozott, amíg mappát választottál.
@@ -2949,10 +2959,12 @@ action wizard	Start	Indítás
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	A tokenek és okoskártyák PKCS #11 modulon keresztül írnak alá. Csak megbízható modulokat adjon hozzá: a modul saját kódot futtat.
 	Too early	Túl korán
 	Too many copies: increase the spacing or the size.	Túl sok másolat: növelje a távolságot vagy a méretet.
+	Too many spot inks to separate: {names}	Túl sok direkt szín a bontáshoz: {names}
 	Tools panel side	Az Eszközök panel oldala
 	Tooltip	Elemleírás
 	Tooltip:	Elemleírás:
 	Top-level bookmarks ({n})	Legfelső szintű könyvjelzők ({n})
+	Total area coverage	Teljes festékfedettség
 	TR must be a child of Table, THead, TBody, or TFoot	A TR a Table, a THead, a TBody vagy a TFoot gyermeke kell legyen
 	Transfer format: {format}.	Átviteli formátum: {format}.
 	Transform image	Kép transzformálása

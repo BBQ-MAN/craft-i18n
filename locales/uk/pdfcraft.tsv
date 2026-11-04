@@ -1232,6 +1232,7 @@ calendar date	February	лютого
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Вища якість зображень означає більші файли. Копія зберігається лише тоді, коли вона менша.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Вища якість, зазвичай більші файли. Фотографії JPEG понад 450 ppi зменшуються до 300 ppi, якість 85. Графіка без втрат і зображення з масками зберігають свої пікселі.
 	Highlight	Виділення кольором
+	Highlight coverage above	Виділяти покриття понад
 	Highlight fields	Підсвітити поля
 	Highlight Style:	Стиль підсвічування:
 	Highlight text	Виділити текст кольором
@@ -1271,6 +1272,7 @@ key	Home	Home
 	Initials	Ініціали
 	initials	ініціали
 	Ink sensitivity	Чутливість до чорнила
+	Inks	Фарби
 	Insert a blank page after the selection	Вставити порожню сторінку після вибраних
 	Insert a file at the end	Вставити файл у кінці
 	Insert a file before page {label}	Вставити файл перед сторінкою {label}
@@ -1649,6 +1651,7 @@ calendar date	May	травня
 	No unlinked web addresses were found in the text	У тексті не знайдено вебадрес без посилань
 	No untagged content was found.	Нетегованого вмісту не знайдено.
 	no unused output name	немає вільної назви для вихідного файлу
+	No usable CMYK output intent: RGB and CIE-based colours separate by the ISO 32000 device formulas.	Немає придатного профілю виводу CMYK: кольори RGB і кольори на основі CIE розділяються за формулами пристрою з ISO 32000.
 	none	немає
 	None (prefix only)	Немає (лише префікс)
 	None found	Нічого не знайдено
@@ -1810,6 +1813,7 @@ animation effects	On	Увімкнено
 	Page grid	Сітка сторінок
 	Page labels	Позначки сторінок
 	Page layout	Макет сторінок
+	Page maximum: {n}%	Максимум на сторінці: {n}%
 	Page navigation	Навігація сторінками
 	Page number	Номер сторінки
 	Page Only	Лише сторінка
@@ -1932,6 +1936,7 @@ animation effects	On	Увімкнено
 	Planned · {m}	Заплановано · {m}
 	Plugins	Плагіни
 	Plugins are sandboxed WebAssembly packages. They survive PdfCraft updates as long as their API version is supported.	Плагіни — це ізольовані пакети WebAssembly. Вони зберігаються після оновлень PdfCraft, доки підтримується їхня версія API.
+	Point at the page to read its ink coverage.	Наведіть вказівник на сторінку, щоб побачити покриття фарбами.
 	Points from the page's bottom-left corner.	Пункти від нижнього лівого кута сторінки.
 	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	Портативний режим вимкнено: неможливо записати в {folder} ({error}). Налаштування зберігаються у вашій користувацькій теці.
 	Portrait Pages	Книжкові сторінки
@@ -2402,6 +2407,7 @@ animation effects	On	Увімкнено
 	Separate PDFs	Окремі PDF-файли
 	Separate the sheets and load the remaining ones, then choose Continue.	Розділіть аркуші та завантажте решту, потім виберіть «Продовжити сканування».
 	Separate the sheets and load them again, then choose Try again.	Розділіть аркуші та завантажте їх знову, потім виберіть «Повторити».
+	Separating page {n}…	Кольороподіл сторінки {n}…
 	Separator style:	Стиль роздільників:
 	Sepia	Сепія
 	Sepia night	Нічна сепія
@@ -2527,6 +2533,9 @@ key	Shift	Shift
 	Signing…	Підписування…
 	Signing… Confirm the signature on your other device.	Підписування… Підтвердьте підпис на іншому своєму пристрої.
 	Simplified field notation:	Спрощений запис полів:
+	Simulate overprinting	Імітувати накладання фарб
+	Simulation: device formulas	Імітація: формули пристрою
+	Simulation: {profile}	Імітація: {profile}
 	Single file	Один файл
 	Single Page	Одна сторінка
 	Single page	Одна сторінка
@@ -2763,6 +2772,7 @@ certificate	Subject	Власник сертифіката
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Оригінали не змінюються. Файл із тією самою назвою в теці для результатів зберігається, а новий отримує номер.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Інші підписи ({names}) повідомлятимуть, що документ змінився після підписання. Перевірте їх повторно: ніщо не гарантує, що вони залишаться дійсними.
 	The output folder can't be one of the folders being read, or contain one.	Тека для результатів не може бути однією з тек, що читаються, або містити таку теку.
+	The page could not be separated: {error}	Не вдалося виконати кольороподіл сторінки: {error}
 	The page has changed; select the image again	Сторінка змінилася; виберіть зображення ще раз
 	The pages already scanned were kept in the document.	Уже відскановані сторінки збережено в документі.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Сторінки видобуто, але не видалено, бо документ змінився, поки ви вибирали теку.
@@ -2956,11 +2966,13 @@ certificate	Subject	Власник сертифіката
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	Токени та смарт-картки підписують через модуль PKCS #11. Додавайте лише модулі, яким довіряєте: модуль виконує власний код.
 	Too early	Зарано
 	Too many copies: increase the spacing or the size.	Забагато копій: збільште відстань або розмір.
+	Too many spot inks to separate: {names}	Забагато плашкових фарб для кольороподілу: {names}
 	Tools	Інструменти
 	Tools panel side	Бік панелі інструментів
 	Tooltip	Підказка
 	Tooltip:	Підказка:
 	Top-level bookmarks ({n})	Закладки верхнього рівня ({n})
+	Total area coverage	Загальне покриття фарбами
 	TR must be a child of Table, THead, TBody, or TFoot	TR має бути дочірнім елементом Table, THead, TBody або TFoot
 	Transfer format: {format}.	Формат передавання: {format}.
 	Transform image	Трансформувати зображення

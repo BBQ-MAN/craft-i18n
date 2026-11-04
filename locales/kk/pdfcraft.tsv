@@ -1220,6 +1220,7 @@ calendar date	February	Ақпан
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Кескін сапасы жоғары болса, файл көлемі де үлкен болады. Көшірме тек көлемі кішірейсе сақталады.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Сапасы жоғары, әдетте көлемі үлкен файлдар. 450 ppi-ден жоғары JPEG фотосуреттері 300 ppi-ге дейін, сапасы 85 болып кішірейтіледі. Шығынсыз графика мен маскасы бар кескіндер өз пиксельдерін сақтайды.
 	Highlight	Бояп белгілеу
+	Highlight coverage above	Мына мәннен жоғары жабынды бөлектеу
 	Highlight fields	Өрістерді бояп белгілеу
 	Highlight Style:	Ерекшелеу стилі:
 	Highlight text	Мәтінді бояп белгілеу
@@ -1260,6 +1261,7 @@ key	Home	Home
 	Initials	Бас әріптер
 	initials	инициалдар
 	Ink sensitivity	Сия сезімталдығы
+	Inks	Бояулар
 	Insert a blank page after the selection	Таңдалған беттерден кейін бос бет енгізу
 	Insert a file at the end	Файлды соңына енгізу
 	Insert a file before page {label}	Файлды {label} беттің алдына енгізу
@@ -1628,6 +1630,7 @@ calendar date	May	Мамыр
 	No unlinked web addresses were found in the text	Мәтінде сілтемесіз веб-мекенжайлар табылмады
 	No untagged content was found.	Тегтелмеген мазмұн табылмады.
 	no unused output name	бос шығыс атауы жоқ
+	No usable CMYK output intent: RGB and CIE-based colours separate by the ISO 32000 device formulas.	Пайдалануға болатын CMYK шығыс профилі жоқ: RGB және CIE негізіндегі түстер ISO 32000 құрылғы формулаларымен бөлінеді.
 	none	жоқ
 	None (prefix only)	Жоқ (тек префикс)
 	None found	Ештеңе табылмады
@@ -1788,6 +1791,7 @@ animation effects	On	Қосулы
 	Page grid	Бет торы
 	Page labels	Бет белгілері
 	Page layout	Бет орналасуы
+	Page maximum: {n}%	Беттегі ең жоғары мән: {n}%
 	Page navigation	Беттер бойынша навигация
 	Page number	Бет нөмірі
 	Page Only	Тек бет
@@ -1910,6 +1914,7 @@ animation effects	On	Қосулы
 	Planned · {m}	Жоспарланған · {m}
 	Plugins	Плагиндер
 	Plugins are sandboxed WebAssembly packages. They survive PdfCraft updates as long as their API version is supported.	Плагиндер — құмсалғыштағы WebAssembly пакеттері. Олар API нұсқасы қолдау тапқанша PdfCraft жаңартуларынан кейін де сақталады.
+	Point at the page to read its ink coverage.	Бояу жабынын көру үшін бетті көрсетіңіз.
 	Points from the page's bottom-left corner.	Беттің төменгі сол жақ бұрышынан (пункттермен).
 	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	Портативті режим өшірулі: {folder} ішіне жазу мүмкін емес ({error}). Параметрлер орнына пайдаланушы қалтаңызда сақталады.
 	Portrait Pages	Тік беттер
@@ -2377,6 +2382,7 @@ animation effects	On	Қосулы
 	Separate PDFs	Бөлек PDF файлдары
 	Separate the sheets and load the remaining ones, then choose Continue.	Парақтарды ажыратып, қалғандарын салыңыз, содан кейін «Сканерлеуді жалғастыру» таңдаңыз.
 	Separate the sheets and load them again, then choose Try again.	Парақтарды ажыратып, қайта салыңыз, содан кейін «Қайта көру» таңдаңыз.
+	Separating page {n}…	{n}-бет түстерге бөлінуде…
 	Separator style:	Бөлгіш стилі:
 	Sepia	Сепия
 	Sepia night	Түнгі сепия
@@ -2500,6 +2506,9 @@ key	Shift	Shift
 	Signing…	Қол қойылуда…
 	Signing… Confirm the signature on your other device.	Қол қойылуда… Қолтаңбаны басқа құрылғыңызда растаңыз.
 	Simplified field notation:	Жеңілдетілген өріс жазылуы:
+	Simulate overprinting	Үстінен басуды үлгілеу
+	Simulation: device formulas	Үлгілеу: құрылғы формулалары
+	Simulation: {profile}	Үлгілеу: {profile}
 	Single file	Бір файл
 	Single Page	Бір бет
 	Single page	Бір бет
@@ -2732,6 +2741,7 @@ certificate	Subject	Субъект
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Түпнұсқалар өзгермейді. Шығыс қалтасындағы аттас файл сақталады, ал жаңасына нөмір беріледі.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Басқа қолтаңбалар ({names}) құжат қол қойылғаннан кейін өзгергенін хабарлайды. Оларды қайта тексеріңіз: жарамды болып қалатынына кепілдік жоқ.
 	The output folder can't be one of the folders being read, or contain one.	Шығыс қалтасы оқылатын қалталардың бірі бола алмайды және олардың ешбірін қамти алмайды.
+	The page could not be separated: {error}	Бетті түстерге бөлу мүмкін болмады: {error}
 	The page has changed; select the image again	Бет өзгерді; суретті қайта таңдаңыз
 	The pages already scanned were kept in the document.	Сканерленген беттер құжатта сақталды.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Беттер шығарып алынды, бірақ жойылмады, себебі сіз қалта таңдап жатқанда құжат өзгерді.
@@ -2924,12 +2934,14 @@ certificate	Subject	Субъект
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	Токендер мен смарт-карталар PKCS #11 модулі арқылы қол қояды. Тек сенімді модульдерді қосыңыз: модуль өз кодын іске қосады.
 	Too early	Тым ерте
 	Too many copies: increase the spacing or the size.	Көшірмелер тым көп: аралықты немесе өлшемді үлкейтіңіз.
+	Too many spot inks to separate: {names}	Бөлу үшін арнайы бояулар тым көп: {names}
 	Too many windows are open	Тым көп терезе ашық
 	Too many windows for this document	Бұл құжат үшін терезе тым көп
 	Tools panel side	Құралдар панелінің жағы
 	Tooltip	Қалтқы
 	Tooltip:	Қалтқы:
 	Top-level bookmarks ({n})	Жоғарғы деңгейдегі бетбелгілер ({n})
+	Total area coverage	Жалпы бояу жабыны
 	TR must be a child of Table, THead, TBody, or TFoot	TR Table, THead, TBody немесе TFoot ішінде болуы тиіс
 	Transfer format: {format}.	Тасымал пішімі: {format}.
 	Transform image	Кескінді түрлендіру

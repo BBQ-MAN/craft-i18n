@@ -1354,6 +1354,7 @@ calendar weekday	Fr	Pn
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Aukštesnė vaizdų kokybė reiškia didesnius failus. Kopija išsaugoma tik jei ji mažesnė.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Aukštesnė kokybė, paprastai didesni failai. JPEG nuotraukos, kurių raiška viršija 450 ppi, sumažinamos iki 300 ppi, kokybė 85. Be nuostolių suglaudinta grafika ir vaizdai su kaukėmis išlaiko savo pikselius.
 	Highlight	Paryškinti
+	Highlight coverage above	Paryškinti padengimą virš
 	Highlight fields	Paryškinti laukus
 	Highlight Style:	Paryškinimo stilius:
 	Highlight text	Paryškinti tekstą
@@ -1395,6 +1396,7 @@ key	Home	Home
 	Initials	Inicialai
 	initials	inicialai
 	Ink sensitivity	Rašiklio jautrumas
+	Inks	Dažai
 	Insert a blank page after the selection	Po pasirinkimo įterpti tuščią puslapį
 	Insert a file at the end	Failą įterpti pabaigoje
 	Insert a file before page {label}	Failą įterpti prieš puslapį {label}
@@ -1792,6 +1794,7 @@ calendar weekday	Mo	Pr
 	No unlinked web addresses were found in the text	Tekste nerasta žiniatinklio adresų be saitų
 	No untagged content was found.	Nepažymėto turinio nerasta.
 	no unused output name	nėra nenaudojamo išvesties pavadinimo
+	No usable CMYK output intent: RGB and CIE-based colours separate by the ISO 32000 device formulas.	Nėra tinkamo CMYK išvesties profilio: RGB ir CIE pagrįstos spalvos išskiriamos pagal ISO 32000 įrenginio formules.
 	Non-Repudiation	Neišsižadėjimas
 	none	nėra
 	None (prefix only)	Nėra (tik priešdėlis)
@@ -1974,6 +1977,7 @@ animation effects	On	Įjungta
 	Page grid	Puslapių tinklelis
 	Page labels	Puslapių žymos
 	Page layout	Puslapio išdėstymas
+	Page maximum: {n}%	Puslapio didžiausia vertė: {n} %
 	Page navigation	Naršymas puslapiuose
 	Page number	Puslapio numeris
 	Page Only	Tik puslapis
@@ -2116,6 +2120,7 @@ animation effects	On	Įjungta
 	Planned · {m}	Planuojama · {m}
 	Plugins	Papildiniai
 	Plugins are sandboxed WebAssembly packages. They survive PdfCraft updates as long as their API version is supported.	Papildiniai yra smėlio dėžėje veikiantys „WebAssembly“ paketai. Jie išlieka po PdfCraft atnaujinimų, kol palaikoma jų API versija.
+	Point at the page to read its ink coverage.	Nurodykite puslapį, kad pamatytumėte dažų padengimą.
 	Points from the page's bottom-left corner.	Taškai skaičiuojami nuo puslapio apatinio kairiojo kampo.
 	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	Nešiojamoji veiksena išjungta: negalima rašyti į {folder} ({error}). Nuostatos saugomos naudotojo aplanke.
 	Portrait Pages	Stačios orientacijos puslapiai
@@ -2609,6 +2614,7 @@ certificate	Self-signed	Savarankiškai pasirašytas
 	Separate PDFs	Atskiri PDF dokumentai
 	Separate the sheets and load the remaining ones, then choose Continue.	Atskirkite lapus ir įdėkite likusius, tada pasirinkite Tęsti.
 	Separate the sheets and load them again, then choose Try again.	Atskirkite lapus ir įdėkite juos iš naujo, tada pasirinkite Bandyti dar kartą.
+	Separating page {n}…	Atskiriamos {n} puslapio spalvos…
 	Separator style:	Skirtuko stilius:
 	Sepia	Sepija
 	Sepia night	Naktinė sepija
@@ -2740,6 +2746,9 @@ key	Shift	Shift
 	Signing…	Pasirašoma…
 	Signing… Confirm the signature on your other device.	Pasirašoma… Patvirtinkite parašą kitame savo įrenginyje.
 	Simplified field notation:	Supaprastinta lauko išraiška:
+	Simulate overprinting	Imituoti perspaudimą
+	Simulation: device formulas	Imitacija: įrenginio formulės
+	Simulation: {profile}	Imitacija: {profile}
 	Single file	Vienas failas
 	Single Page	Vienas puslapis
 	Single page	Vienas puslapis
@@ -3045,6 +3054,7 @@ calendar weekday	Th	Kt
 	The output intent's profile isn't a valid ICC profile	Išvesties paskirties profilis nėra galiojantis ICC profilis
 	The output intent's profile isn't an output (printer) profile	Išvesties paskirties profilis nėra išvesties (spausdintuvo) profilis
 	The output profile can't convert colour to CMYK ({})	Išvesties profilis negali konvertuoti spalvos į CMYK ({})
+	The page could not be separated: {error}	Nepavyko atskirti puslapio spalvų: {error}
 	The page has both a TrimBox and an ArtBox	Puslapis turi ir TrimBox, ir ArtBox
 	The page has changed; select the image again	Puslapis pasikeitė; pažymėkite paveikslėlį iš naujo
 	The page has neither a TrimBox nor an ArtBox	Puslapis neturi nei TrimBox, nei ArtBox
@@ -3315,12 +3325,14 @@ calendar weekday	Th	Kt
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	Žetonai ir lustinės kortelės pasirašo per PKCS #11 modulį. Pridėkite tik tuos modulius, kuriais pasitikite: modulis vykdo savo kodą.
 	Too early	Per anksti
 	Too many copies: increase the spacing or the size.	Per daug kopijų: padidinkite tarpą arba dydį.
+	Too many spot inks to separate: {names}	Per daug specialiųjų dažų atskyrimui: {names}
 	Too many windows are open	Atidaryta per daug langų
 	Too many windows for this document	Per daug langų šiam dokumentui
 	Tools panel side	Įrankių skydelio pusė
 	Tooltip	Patarimas
 	Tooltip:	Patarimas:
 	Top-level bookmarks ({n})	Aukščiausio lygio žymelės ({n})
+	Total area coverage	Bendras dažų padengimas
 	TR must be a child of Table, THead, TBody, or TFoot	TR turi būti Table, THead, TBody arba TFoot antrinis elementas
 	Transfer format: {format}.	Perdavimo formatas: {format}.
 	Transform image	Transformuoti paveikslėlį

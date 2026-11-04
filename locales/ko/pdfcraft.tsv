@@ -1182,6 +1182,7 @@ calendar weekday	Fr	금
 	High Resolution	고해상도
 	High resolution	고해상도
 	Highlight	형광펜
+	Highlight coverage above	다음 값을 넘는 커버리지 강조
 	Highlight fields	필드 강조 표시
 	Highlight Style:	강조 스타일:
 	Highlight text	텍스트 강조 표시
@@ -1219,6 +1220,7 @@ key	Home	Home
 	Initials	이니셜
 	initials	이니셜
 	Ink sensitivity	잉크 민감도
+	Inks	잉크
 	Insert a blank page after the selection	선택 항목 뒤에 빈 페이지 삽입
 	Insert a file at the end	끝에 파일 삽입
 	Insert a file before page {label}	{label} 페이지 앞에 파일 삽입
@@ -1567,6 +1569,7 @@ calendar weekday	Mo	월
 	No unlinked web addresses were found in the text	텍스트에서 링크되지 않은 웹 주소를 찾지 못했습니다
 	No untagged content was found.	태그 없는 콘텐츠를 찾지 못했습니다.
 	no unused output name	사용 가능한 출력 파일 이름 없음
+	No usable CMYK output intent: RGB and CIE-based colours separate by the ISO 32000 device formulas.	사용할 수 있는 CMYK 출력 의도가 없습니다. RGB 및 CIE 기반 색상은 ISO 32000 장치 공식으로 분판됩니다.
 	Non-Repudiation	부인 방지
 	none	없음
 	None (prefix only)	없음(접두사만)
@@ -1721,6 +1724,7 @@ animation effects	On	켜기
 	Page grid	페이지 그리드
 	Page labels	페이지 레이블
 	Page layout	페이지 레이아웃
+	Page maximum: {n}%	페이지 최대값: {n}%
 	Page navigation	페이지 탐색
 	Page number	페이지 번호
 	Page Only	페이지만
@@ -1840,6 +1844,7 @@ animation effects	On	켜기
 	Planned for milestone	마일스톤에 예정됨
 	Planned for milestone {m} — open to see what it will include	마일스톤 {m}에 계획됨 — 열면 포함될 기능을 볼 수 있습니다
 	Planned · {m}	계획됨 · {m}
+	Point at the page to read its ink coverage.	페이지를 가리키면 잉크 커버리지를 볼 수 있습니다.
 	Points from the page's bottom-left corner.	페이지 왼쪽 아래 모서리를 기준으로 한 포인트 단위 위치입니다.
 	Polyline	폴리라인
 	Portable mode is off: {folder} can't be written ({error}). Settings are kept in your user folder instead.	휴대용 모드가 꺼져 있습니다: {folder}에 쓸 수 없습니다({error}). 대신 사용자 폴더에 설정이 보관됩니다.
@@ -2269,6 +2274,7 @@ certificate	Self-signed	자체 서명됨
 	Separate PDFs	개별 PDF
 	Separate the sheets and load the remaining ones, then choose Continue.	Separate the sheets and load the remaining ones, then choose Continue.
 	Separate the sheets and load them again, then choose Try again.	Separate the sheets and load them again, then choose Try again.
+	Separating page {n}…	{n}페이지 분판 중…
 	Separator style:	구분 기호 스타일:
 	Sepia night	야간 세피아
 	September	9월
@@ -2378,6 +2384,9 @@ key	Shift	Shift
 	Signing…	서명하는 중…
 	Signing… Confirm the signature on your other device.	서명하는 중… 다른 기기에서 서명을 확인하세요.
 	Simplified field notation:	단순화된 필드 표기법:
+	Simulate overprinting	중복 인쇄 시뮬레이션
+	Simulation: device formulas	시뮬레이션: 장치 공식
+	Simulation: {profile}	시뮬레이션: {profile}
 	Single file	단일 파일
 	Single Page	단일 페이지
 	Single page	단일 페이지
@@ -2607,6 +2616,7 @@ calendar weekday	Th	목
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	원본은 변경되지 않습니다. 출력 폴더에 같은 이름의 파일이 있으면 그대로 두고 새 파일에 번호를 붙입니다.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	다른 서명({names})은 서명 후 문서가 변경되었다고 보고합니다. 다시 확인하세요. 계속 유효하다는 보장은 없습니다.
 	The output folder can't be one of the folders being read, or contain one.	출력 폴더는 읽는 폴더 중 하나이거나 그중 하나를 포함할 수 없습니다.
+	The page could not be separated: {error}	페이지를 분판할 수 없습니다: {error}
 	The page has changed; select the image again	페이지가 변경되었으므로 이미지를 다시 선택하세요
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	폴더를 선택하는 동안 문서가 변경되어 페이지가 추출되었지만 삭제되지는 않았습니다.
@@ -2823,10 +2833,12 @@ calendar weekday	Th	목
 	Token PIN	토큰 PIN
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	토큰과 스마트 카드는 PKCS #11 모듈을 통해 서명합니다. 신뢰할 수 있는 모듈만 추가하세요. 모듈은 자체 코드를 실행합니다.
 	Too early	Too early
+	Too many spot inks to separate: {names}	분판할 별색 잉크가 너무 많습니다: {names}
 	Tools panel side	도구 패널 위치
 	Tooltip	도구 설명
 	Tooltip:	도구 설명:
 	Top-level bookmarks ({n})	최상위 책갈피({n})
+	Total area coverage	총 영역 커버리지
 	TR must be a child of Table, THead, TBody, or TFoot	TR은 Table, THead, TBody 또는 TFoot의 하위 요소여야 합니다
 	Transfer format: {format}.	Transfer format: {format}.
 	Trim the picture with its handles; Enter or Done applies	핸들로 그림을 다듬으세요. Enter 또는 완료를 누르면 적용됩니다

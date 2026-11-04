@@ -1266,6 +1266,7 @@ scroll speed	Fast	Высокая
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Более высокое качество изображений увеличивает размер файла. Копия сохраняется, только если она меньше.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Более высокое качество, обычно больший размер файла. Фотографии JPEG выше 450 ppi уменьшаются до 300 ppi, качество 85. Графика без потерь и изображения с масками сохраняют свои пиксели.
 	Highlight	Выделить
+	Highlight coverage above	Выделять покрытие выше
 	Highlight fields	Выделять поля
 	Highlight Style:	Стиль выделения:
 	Highlight text	Выделить текст
@@ -1307,6 +1308,7 @@ key	Home	Home
 	Initials	Инициалы
 	initials	инициалы
 	Ink sensitivity	Чувствительность к чернилам
+	Inks	Краски
 	Insert	Вставить
 	Insert a blank page after the selection	Вставить пустую страницу после выделения
 	Insert a file at the end	Вставить файл в конец
@@ -1692,6 +1694,7 @@ key	Home	Home
 	No unlinked web addresses were found in the text	В тексте не найдено несвязанных веб-адресов
 	No untagged content was found.	Нетегированный контент не найден.
 	no unused output name	нет свободного имени для выходного файла
+	No usable CMYK output intent: RGB and CIE-based colours separate by the ISO 32000 device formulas.	Нет пригодного выходного намерения CMYK: цвета RGB и цвета на основе CIE разделяются по формулам устройства из ISO 32000.
 	none	нет
 	None (prefix only)	Нет (только префикс)
 	None found	Ничего не найдено
@@ -1849,6 +1852,7 @@ animation effects	On	Вкл
 	Page grid	Сетка страниц
 	Page labels	Метки страниц
 	Page layout	Макет страницы
+	Page maximum: {n}%	Максимум на странице: {n}%
 	Page navigation	Навигация по страницам
 	Page number	Номер страницы
 	Page Only	Только страница
@@ -1971,6 +1975,7 @@ animation effects	On	Вкл
 	Planned for milestone {m} — open to see what it will include	Запланировано на этап {m} — откройте, чтобы увидеть содержимое
 	Planned · {m}	Запланировано · {m}
 	Plugins	Плагины
+	Point at the page to read its ink coverage.	Наведите указатель на страницу, чтобы увидеть покрытие красками.
 	Points from the page's bottom-left corner.	Точки от левого нижнего угла страницы.
 	Portrait Pages	Книжные страницы
 	Portrait pages	Книжные страницы
@@ -2465,6 +2470,7 @@ animation effects	On	Вкл
 	Separate the sheets and load the remaining ones, then choose Continue.	Разделите листы и загрузите оставшиеся, затем нажмите «Продолжить сканирование».
 	Separate the sheets and load them again, then choose Try again.	Разделите листы и загрузите их снова, затем нажмите «Повторить».
 	Separate vertical units	Отдельные вертикальные единицы
+	Separating page {n}…	Цветоделение страницы {n}…
 	Separator style:	Стиль разделителя:
 	Sepia	Сепия
 	Sepia night	Ночная сепия
@@ -2589,6 +2595,9 @@ key	Shift	Shift
 	Signing… Confirm the signature on your other device.	Подписание… Подтвердите подпись на другом устройстве.
 	Silhouettes	Силуэты
 	Simplified field notation:	Упрощённая запись полей:
+	Simulate overprinting	Имитировать наложение красок
+	Simulation: device formulas	Имитация: формулы устройства
+	Simulation: {profile}	Имитация: {profile}
 	Single file	Один файл
 	Single Page	Одна страница
 	Single page	Одна страница
@@ -2826,6 +2835,7 @@ document scrollbar width	Standard	Стандартная
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Оригиналы не изменяются. Файл с тем же именем в папке для результатов сохраняется, а новый получает номер.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Другие подписи ({names}) будут сообщать, что документ изменился после подписания. Проверьте их заново: ничто не гарантирует, что они останутся действительными.
 	The output folder can't be one of the folders being read, or contain one.	Папка для результатов не может быть одной из читаемых папок или содержать такую папку.
+	The page could not be separated: {error}	Не удалось выполнить цветоделение страницы: {error}
 	The page has changed; select the image again	Страница изменилась; выберите изображение снова
 	The pages already scanned were kept in the document.	Уже отсканированные страницы сохранены в документе.
 	the password is incorrect	пароль неверен
@@ -3021,12 +3031,14 @@ document scrollbar width	Standard	Стандартная
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	Токены и смарт-карты подписывают через модуль PKCS #11. Добавляйте только доверенные модули: модуль выполняет собственный код.
 	Too early	Слишком рано
 	Too many copies: increase the spacing or the size.	Слишком много копий: увеличьте расстояние или размер.
+	Too many spot inks to separate: {names}	Слишком много плашечных красок для цветоделения: {names}
 	Tools panel side	Сторона панели инструментов
 	Tooltip	Подсказка
 	Tooltip:	Подсказка:
 	Top	Верх
 	Top-level bookmarks ({n})	Закладки верхнего уровня ({n})
 	Total	Итого
+	Total area coverage	Общее покрытие красками
 	TR must be a child of Table, THead, TBody, or TFoot	TR должен быть потомком Table, THead, TBody или TFoot
 	Transfer format: {format}.	Формат передачи: {format}.
 	Transform image	Трансформировать изображение
