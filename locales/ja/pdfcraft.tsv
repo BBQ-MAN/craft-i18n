@@ -68,6 +68,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG または SVG ファイル。PdfCraft の起動のたびにこの場所から読み込まれます。
 	A script	スクリプト
 	A selected field has no widget on any page, so the fields can't be edited together.	選択したフィールドの一つがどのページにもウィジェットを持たないため、まとめて編集できません。
+	A setting isn't valid	無効な設定があります
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	スキャンしたページのようにページの内容の一部になっている署名は、フィールドでも注釈でもないため、それだけを削除することはできません。また PdfCraft は署名を隠すためにページの一部を消すことはしません。取り除くには、その範囲を墨消し（墨消し）するか、署名が独立した画像の場合は「PDF を編集」で画像を削除してください。
 	A stream refers to an external file	ストリームが外部ファイルを参照しています
 	A stream uses LZW compression	ストリームに LZW 圧縮が使用されています
@@ -75,6 +76,7 @@
 	About PdfCraft	PdfCraft について
 	About {app}	{app}について
 	Accepted	承認
+	Accepted by {printer}	{printer} が受け付けました
 	Accessibility Checker	アクセシビリティチェック
 	Accessibility Checker Options	アクセシビリティチェックのオプション
 	Accessibility panel	アクセシビリティパネル
@@ -288,6 +290,7 @@
 	Ask in any language	どの言語でも質問できます
 	Ask to scan more pages	さらにスキャンするか確認する
 	Ask whether to recognize the current page or all pages when editing a scan.	スキャンした文書の編集時に、現在のページとすべてのページのどちらを認識するか確認します。
+	Asking the printer…	プリンターに問い合わせています…
 	Asking {server}…	{server} に問い合わせています…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	GitHub で最新リリースを確認します。自動でダウンロードやインストールは行いません。
 	Assistant	アシスタント
@@ -386,6 +389,7 @@
 	Can't be read: {e}	読み込めません: {e}
 	Cancel caption placement	キャプション配置を取り消す
 	Cancel reverse sides	裏面のスキャンをやめる
+	Canceling…	キャンセルしています…
 	Cancelled	キャンセル済み
 	Cancelling…	キャンセルしています…
 	Card driver (PKCS #11)	カードドライバー (PKCS #11)
@@ -651,6 +655,7 @@
 	Couldn't optimize the file	ファイルを最適化できませんでした
 	Couldn't optimize the file: {e}	ファイルを最適化できませんでした: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	ブラウザーから印刷できませんでした ({e})。代わりに印刷用の {name} をダウンロードしました
+	Couldn't reach the printer	プリンターに接続できませんでした
 	Couldn't read {name}: {e}	{name} を読み取れませんでした: {e}
 	Couldn't recover {name}: {e}	{name} を復元できませんでした: {e}
 	Couldn't reload {name}: {e}	{name} を再読み込みできませんでした: {e}
@@ -878,6 +883,7 @@ key	Delete	Delete
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	ダウンロードはブラウザーで開きます。インストールは手動で行います。自動ではインストールされません。
 	Downsample to	ダウンサンプル:
 	DPI sets the printed page size without resampling the image.	DPI で印刷時のページサイズが決まります。画像は再サンプリングされません。
+	Draft	下書き
 	Drag a field to move it, or select it and press {up} or {down}.	フィールドをドラッグして移動するか、選択して {up} または {down} を押します。
 	Drag a point to reshape the line. Delete removes it.	点をドラッグして線の形を変更します。Delete キーで削除します。
 	Drag a rectangle around the area to copy	コピーする領域を長方形で囲んでください
@@ -1235,6 +1241,7 @@ scroll speed	Fast	速い
 	Hebrew (ISO 8859-8)	ヘブライ語（ISO 8859-8）
 	Hebrew (Windows-1255)	ヘブライ語（Windows-1255）
 	Hectares	ヘクタール
+	Held by the printer	プリンターが保留しています
 	Heritage	Heritage
 	Hidden layers	非表示レイヤー
 	Hide a field	フィールドを非表示
@@ -1265,6 +1272,7 @@ key	Home	Home
 	How Edit text reads old fonts that don't say which letters they draw. Auto-detect recognises Hebrew fonts laid out for ISO 8859-8 or Windows-1255.	描画する文字を示さない古いフォントを「テキストを編集」がどう読むかを指定します。自動検出では ISO 8859-8 または Windows-1255 に基づくヘブライ語フォントを認識します。
 	HTML web page	HTML ウェブページ
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	ハンガリー語OCRには、デスクトップアプリ、Tesseract 5、hun言語モデルが必要です。インストール後にPdfCraftを再起動してください。
+	I confirm sending this document to this printer	この文書をこのプリンターに送信することを確認します
 	Identity	個人情報
 	Image (PNG)	画像（PNG）
 	Image field	画像フィールド
@@ -1581,6 +1589,7 @@ key	Home	Home
 	Nested alternate text	入れ子の代替テキスト
 	Network	ネットワーク
 	Network address	ネットワークアドレス
+	Network printer (WS-Print)	ネットワークプリンター (WS-Print)
 	New Action	新しいアクション
 	New Action…	新しいアクション…
 	New blank PDF	空白の PDF を作成
@@ -1678,10 +1687,12 @@ key	Home	Home
 	None of those files can be made into a PDF; use PDFs, images or .txt files	これらのファイルは PDF にできません。PDF、画像、.txt ファイルを使用してください
 	None of your digital IDs can open this document.	どのデジタル ID でもこの文書を開けません。
 	None — everything is allowed	なし — すべて許可
+	Normal	標準
 scroll speed	Normal	標準
 	Normal page	通常のページ
 	Northing	北方向座標
 	Not allowed	許可しない
+	Not confirmed by the printer	プリンターからは確認されていません
 	Not in order	順序にない
 	Not now	今はしない
 	Not present	なし
@@ -1732,6 +1743,7 @@ animation effects	On	オン
 	Only checked properties will change. Mixed means the selected fields have different values.	チェックしたプロパティのみ変更します。「混在」は選択したフィールドの値が異なることを示します。
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	明確な用紙の端だけを切り抜きます。区別できない白い余白は保持します。
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	この文書を信頼できる場合にのみ続行してください。アドレスには、フォームに入力した内容など、文書内の情報が含まれていることがあります。
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	このネットワーク内の IP アドレス (プライベート、リンクローカル、ループバック) のみ使えます。ホスト名は使えません。
 	Only send if you trust this document and destination. GET puts form values in the URL.	この文書と送信先を信頼できる場合だけ送信してください。GET はフォームの値を URL に含めます。
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	この文書と送信先を信頼できる場合のみ送信してください。PDF 全体がこのコンピューターから送信されます。
 	Only send if you trust this document and destination. The form values leave this computer.	この文書と送信先を信頼できる場合だけ送信してください。フォームの値はこのコンピューターから外部に送られます。
@@ -1986,9 +1998,14 @@ animation effects	On	オン
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	片面印刷してください。用紙の順序を保ったままマークに沿って裁断し、できた束を左から右、上から下の順に重ねてください。
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print、NextPage、PrevPage、FirstPage、LastPage のいずれか
 	Printed through the system print dialog	システムの印刷ダイアログで印刷しました
+	Printed with errors	エラー付きで印刷しました
+	Printed with warnings	警告付きで印刷しました
+	Printer address:	プリンターのアドレス:
 	Printer default	プリンターの既定
+	Printer orientation:	プリンター側の向き:
 	Printer paper and scaling may differ. Check driver settings.	プリンターの用紙や倍率は異なる場合があります。ドライバーの設定を確認してください。
 	Printer properties	プリンターのプロパティ
+	Printer status: {state}	プリンターの状態: {state}
 	Printing allowed	印刷を許可
 	Privacy	プライバシー
 	Private data of other applications	他のアプリケーションのプライベートデータ
@@ -2006,7 +2023,10 @@ animation effects	On	オン
 	Public domain	パブリックドメイン
 	Public key	公開鍵
 	PushButton	プッシュボタン
+	Quality:	品質:
 	Quantity	測定する量
+	Query printer	プリンターに問い合わせ
+	Query the printer first to see what it supports.	まずプリンターに問い合わせて、対応している内容を確認してください。
 	Quirks	特記事項
 	Quit	終了
 	Quit PdfCraft	PdfCraftを終了
@@ -2044,6 +2064,7 @@ animation effects	On	オン
 	Real length	実際の長さ
 	Reason	理由
 	Reason: 	理由: 
+	Reasons: {reasons}	理由: {reasons}
 	Recent colours	最近使った色
 	Recent files to keep	Recent files to keep
 	Recipients	受信者
@@ -2205,8 +2226,10 @@ animation effects	On	オン
 	Reveal in File Explorer	ファイルエクスプローラーで表示
 	Reveal in Finder	Finderで表示
 	Reverse closed arrow	逆向きの閉じた矢印
+	Reverse landscape	横 (反転)
 	Reverse open arrow	逆向きの開いた矢印
 	Reverse pages	逆順で印刷
+	Reverse portrait	縦 (反転)
 	reverse side(s)	裏面
 	Reverse sides	裏面
 	Reverse sides interleaved.	裏面を差し込みました。
@@ -2406,6 +2429,7 @@ animation effects	On	オン
 	Sending…	送信中…
 	Sensitivity (screen pixels)	感度（画面ピクセル）
 	Sent to {printer}: {msg}	{printer} に送信しました: {msg}
+	Sent. The printer can't say whether it printed.	送信しました。プリンターは印刷されたかどうかを答えられません。
 	Separate display coordinate system	表示用の座標系を指定
 	Separate PDFs	個別の PDF
 	Separate the sheets and load the remaining ones, then choose Continue.	用紙をさばいて残りをセットし、「スキャンを続行」を選んでください。
@@ -2449,6 +2473,8 @@ animation effects	On	オン
 	Shadings	シェーディング
 	Shared Field Properties	共通のフィールドプロパティ
 	Sheet {s} of {n}	用紙 {s} / {n}
+	Sheets printed: {done} of {total}	印刷した枚数: {done} / {total}
+	Sheets printed: {n}	印刷した枚数: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shiftで45度刻みに制限します。Backspaceで頂点を削除し、Escapeで取り消します。
 	Shift drags freely	Shift で自由に移動
@@ -2600,6 +2626,7 @@ document scrollbar width	Standard	標準
 	Status	ステータス
 	Steps	手順
 	Sticky note	ノート注釈
+	Still printing; the job continues on the printer	印刷中です。ジョブはプリンターで続行されます
 	Stop reading	読み上げを停止
 	Straighten scanned page	スキャンしたページの傾きを補正
 	Straighten skewed scans	スキャンの傾きを補正
@@ -2711,6 +2738,7 @@ document scrollbar width	Standard	標準
 	The document changed while its margins were measured; nothing was cropped	余白の測定中に文書が変更されたため、トリミングしませんでした
 	The document changed while you were choosing a file, so nothing was changed.	ファイルを選択している間に文書が変更されたため、何も変更されていません。
 	The document changed while you were editing field properties.	フィールドのプロパティを編集中に文書が変更されました。
+	The document couldn't be prepared	文書を準備できませんでした
 	The document has additional actions (/AA)	文書に追加アクション（/AA）があります
 	The document has document-level JavaScript	文書に文書レベルの JavaScript があります
 	the document has no form fields	文書にフォームフィールドはありません
@@ -2750,6 +2778,7 @@ document scrollbar width	Standard	標準
 	The image has been copied ({w} × {h} pixels)	画像をコピーしました（{w} × {h} ピクセル）
 	The image has been copied as a {ext} file	画像を {ext} ファイルとしてコピーしました
 	the image is empty	画像が空です
+	The job was canceled	ジョブをキャンセルしました
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	鍵は macOS のキーチェーンに保存されています。PdfCraft に使用を許可するか確認される場合があります。
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	鍵は Windows の証明書ストアに保存されています。PdfCraft に使用を許可するか確認される場合があります。
 	The key is on the device, which may ask for its PIN itself.	鍵はデバイス上にあり、デバイス自身が PIN を求める場合があります。
@@ -2780,7 +2809,18 @@ document scrollbar width	Standard	標準
 	The PIN is incorrect.	PIN が正しくありません。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 トークンのデジタル ID の一覧を取得できませんでした：{e}
 	The preview could not be shown.	プレビューを表示できませんでした。
+	The print job stopped unexpectedly	印刷ジョブが予期せず停止しました
+	The printer accepts none of the formats this document can be sent in	プリンターは、この文書を送信できる形式のどれにも対応していません
+	The printer address was refused	プリンターのアドレスが拒否されました
+	The printer doesn't support this setting	プリンターはこの設定に対応していません
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	この印刷に使うプリンタードライバー独自の設定：給紙トレイ、用紙の種類、後処理など。
+	The printer is printing it	プリンターが印刷中です
+	The printer may have received the document. Check the printer before sending again.	プリンターが文書を受信している可能性があります。再送信する前にプリンターを確認してください。
+	The printer no longer lists the job; it most likely finished	プリンターのジョブ一覧にありません。おそらく完了しています
+	The printer paused the job; it needs attention	プリンターがジョブを一時停止しました。確認が必要です
+	The printer refused the request	プリンターが要求を拒否しました
+	The printer stopped the job	プリンターがジョブを停止しました
+	The printer's reply couldn't be understood	プリンターの応答を解釈できませんでした
 	The provider's page didn't come back in time. Try again.	プロバイダーのページが時間内に戻りませんでした。もう一度お試しください。
 	The raw text was truncated to what fits.	テキストが収まる長さに切り詰められました。
 	The redaction does not fit page {page}; no pages were marked.	墨消しがページ {page} に収まらないため、ページはマークされませんでした。
@@ -2916,7 +2956,13 @@ document scrollbar width	Standard	標準
 	This page has no 3D models.	このページには3Dモデルがありません。
 	This PDF uses the unsupported {s} action.	この PDF では未対応の {s} アクションが使われています。
 	This point could not be moved. Try a smaller move.	この点を移動できませんでした。移動量を小さくして再試行してください。
+	This printer does not take a copies setting.	このプリンターは部数の設定に対応していません。
+	This printer does not take a quality setting.	このプリンターは品質の設定に対応していません。
+	This printer does not take a resolution setting.	このプリンターは解像度の設定に対応していません。
+	This printer does not take an orientation setting.	このプリンターは向きの設定に対応していません。
 	This printer offers no settings of its own.	このプリンターには独自の設定がありません。
+	This printer only prints in black and white.	このプリンターは白黒印刷のみ対応しています。
+	This printer only prints one-sided.	このプリンターは片面印刷のみ対応しています。
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	このプリンターのドライバーは他のプログラムからの両面印刷の設定を受け付けないため、ドライバー自身の設定が使われます。変更先: プロパティ…
 	this signature can't be removed on its own	この署名だけを削除することはできません
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	この署名サービスは使用できません: ブラウザーでの OAuth サインインが必要ですが、PdfCraft はまだ対応していません
@@ -3094,6 +3140,7 @@ signature pad	Type	入力
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	スキャナーの処理が終わるまで待つか、スキャナーを使用している他のプログラムを閉じて、「再試行」を選んでください。
 	Waiting for the system print dialog…	システムの印刷ダイアログを待っています…
 	Waiting for your approval in the browser…	ブラウザーでの承認を待っています…
+	Waiting in the printer's queue	プリンターのキューで待機中
 	Warning	Warning
 	watermark	透かし
 	Weak	弱い

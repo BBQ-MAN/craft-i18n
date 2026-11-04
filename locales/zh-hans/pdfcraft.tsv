@@ -65,6 +65,7 @@
 	A picture covers page {pages} (a scan?), so the background won't show there.	第 {pages} 页被一张图片覆盖（扫描件？），因此那里不会显示背景。
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	一个 PNG 或 SVG 文件。每次 PdfCraft 启动时都从此位置读取。
 	A selected field has no widget on any page, so the fields can't be edited together.	某个所选字段在任何页面上都没有控件，因此无法一起编辑这些字段。
+	A setting isn't valid	某项设置无效
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	属于页面内容一部分的签名（例如扫描页面上的签名）既不是字段也不是注释，因此无法单独移除，PdfCraft 也不会为隐藏它而擦除页面的某些部分。要去掉它，请对该区域进行密文处理（密文），如果签名是一张独立的图像，也可以用“编辑 PDF”删除该图像。
 	A stream refers to an external file	数据流引用了外部文件
 	A stream uses LZW compression	数据流使用 LZW 压缩
@@ -72,6 +73,7 @@
 	About PdfCraft	关于 PdfCraft
 	About {app}	关于 {app}
 	Accepted	已接受
+	Accepted by {printer}	已被 {printer} 接受
 	Accessibility Checker	无障碍检查器
 	Accessibility Checker Options	无障碍检查器选项
 	Accessibility panel	辅助功能面板
@@ -282,6 +284,7 @@
 	Ask in any language	可以用任何语言提问
 	Ask to scan more pages	询问是否继续扫描更多页面
 	Ask whether to recognize the current page or all pages when editing a scan.	编辑扫描文档时，询问是识别当前页还是所有页面。
+	Asking the printer…	正在查询打印机…
 	Asking {server}…	正在询问 {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	向 GitHub 查询最新版本。不会自动下载或安装任何内容。
 	Assistant	助手
@@ -378,6 +381,7 @@
 	Can't be read: {e}	无法读取：{e}
 	Cancel caption placement	取消标题放置
 	Cancel reverse sides	取消背面扫描
+	Canceling…	正在取消…
 	Cancelled	已取消
 	Cancelling…	正在取消…
 	Card driver (PKCS #11)	卡驱动程序 (PKCS #11)
@@ -643,6 +647,7 @@
 	Couldn't optimize the file	无法优化文件
 	Couldn't optimize the file: {e}	无法优化文件：{e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	无法从浏览器打印（{e}）；已改为下载 {name} 以便打印
+	Couldn't reach the printer	无法连接到打印机
 	Couldn't read {name}: {e}	无法读取{name}：{e}
 	Couldn't recover {name}: {e}	无法恢复{name}：{e}
 	Couldn't reload {name}: {e}	无法重新加载{name}：{e}
@@ -1223,6 +1228,7 @@ scroll speed	Fast	快
 	Hebrew (ISO 8859-8)	希伯来语 (ISO 8859-8)
 	Hebrew (Windows-1255)	希伯来语 (Windows-1255)
 	Hectares	公顷
+	Held by the printer	已被打印机保留
 	Heritage	Heritage
 	Hidden layers	隐藏图层
 	Hide a field	隐藏字段
@@ -1252,6 +1258,7 @@ key	Home	Home
 	How Edit text reads old fonts that don't say which letters they draw. Auto-detect recognises Hebrew fonts laid out for ISO 8859-8 or Windows-1255.	“编辑文本”如何读取未说明所绘字母的旧字体。自动检测可识别按 ISO 8859-8 或 Windows-1255 排列的希伯来语字体。
 	HTML web page	HTML 网页
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	匈牙利语 OCR 需要桌面应用、Tesseract 5 和 hun 语言模型。安装后请重启 PdfCraft。
+	I confirm sending this document to this printer	我确认将此文档发送到这台打印机
 	Identity	身份
 	Image (PNG)	图像 (PNG)
 	Image field	图像字段
@@ -1566,6 +1573,7 @@ key	Home	Home
 	Nested alternate text	嵌套替代文本
 	Network	网络
 	Network address	网络地址
+	Network printer (WS-Print)	网络打印机 (WS-Print)
 	New Action	新建操作
 	New Action…	新建操作…
 	New blank PDF	新建空白 PDF
@@ -1668,6 +1676,7 @@ scroll speed	Normal	正常
 	Normal page	普通页面
 	Northing	北坐标
 	Not allowed	不允许
+	Not confirmed by the printer	打印机未确认
 	Not in order	不在顺序中
 	Not now	暂不
 	Not present	不存在
@@ -1718,6 +1727,7 @@ animation effects	On	开
 	Only checked properties will change. Mixed means the selected fields have different values.	只会更改勾选的属性。“混合”表示所选字段的值不同。
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	仅裁剪清晰的纸张边缘。无法区分的白色边框将保留。
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	仅在您信任此文档时继续。链接地址可能携带文档中的信息，例如您在表单中输入的内容。
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	只接受本网络内的 IP 地址（专用、链路本地或环回地址），不接受主机名。
 	Only send if you trust this document and destination. GET puts form values in the URL.	仅在信任此文档和目标地址时发送。GET 会将表单值放入 URL。
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	仅在信任此文档和目标地址时发送。完整 PDF 将离开此计算机。
 	Only send if you trust this document and destination. The form values leave this computer.	仅当您信任此文档和目标地址时才发送。表单值将离开这台电脑。
@@ -1972,9 +1982,14 @@ animation effects	On	开
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	请使用单面打印。保持纸张顺序，沿裁切标记切开，然后按从左到右、从上到下的顺序叠放各摞纸张。
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print、NextPage、PrevPage、FirstPage 或 LastPage
 	Printed through the system print dialog	已通过系统打印对话框打印
+	Printed with errors	已打印，有错误
+	Printed with warnings	已打印，有警告
+	Printer address:	打印机地址：
 	Printer default	打印机默认
+	Printer orientation:	打印机方向：
 	Printer paper and scaling may differ. Check driver settings.	打印机纸张和缩放可能不同。请检查驱动程序设置。
 	Printer properties	打印机属性
+	Printer status: {state}	打印机状态：{state}
 	Printing allowed	允许打印
 	Privacy	隐私
 	Private data of other applications	其他应用程序的私有数据
@@ -1993,7 +2008,10 @@ animation effects	On	开
 	Public key	公钥
 	Purple	紫色
 	PushButton	按钮
+	Quality:	质量：
 	Quantity	测量量
+	Query printer	查询打印机
+	Query the printer first to see what it supports.	请先查询打印机，了解它支持哪些功能。
 	Quirks	特例
 	Quit	退出
 	Quit PdfCraft	退出 PdfCraft
@@ -2030,6 +2048,7 @@ animation effects	On	开
 	Real length	实际长度
 	Reason	原因
 	Reason: 	原因：
+	Reasons: {reasons}	原因：{reasons}
 	Recent colours	最近使用的颜色
 	Recent files to keep	Recent files to keep
 	Recipients	收件人
@@ -2187,8 +2206,10 @@ animation effects	On	开
 	Return to document	返回文档
 	Reveal in File Explorer	在文件资源管理器中显示
 	Reverse closed arrow	反向闭合箭头
+	Reverse landscape	横向（反向）
 	Reverse open arrow	反向开口箭头
 	Reverse pages	逆序页面
+	Reverse portrait	纵向（反向）
 	reverse side(s)	背面
 	Reverse sides	背面
 	Reverse sides interleaved.	已交错插入背面。
@@ -2389,6 +2410,7 @@ animation effects	On	开
 	Sensitivity (screen pixels)	灵敏度（屏幕像素）
 	Sent to {printer}	已发送到{printer}
 	Sent to {printer}: {msg}	已发送到{printer}：{msg}
+	Sent. The printer can't say whether it printed.	已发送。打印机无法说明是否已打印。
 	Separate display coordinate system	使用单独的显示坐标系
 	Separate PDFs	单独的 PDF
 	Separate the sheets and load the remaining ones, then choose Continue.	请将纸张分开，装入剩余的纸张，然后选择“继续扫描”。
@@ -2430,6 +2452,8 @@ animation effects	On	开
 	Shadings	着色
 	Shared Field Properties	共享字段属性
 	Sheet {s} of {n}	第 {s} 张，共 {n} 张
+	Sheets printed: {done} of {total}	已打印页数：{done}/{total}
+	Sheets printed: {n}	已打印页数：{n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift 限制为 45 度角。Backspace 移除顶点。Escape 取消。
 	Shift drags freely	按住 Shift 自由拖动
@@ -2580,6 +2604,7 @@ document scrollbar width	Standard	标准
 	Start page number	起始页码
 	Steps	步骤
 	Sticky note	附注
+	Still printing; the job continues on the printer	仍在打印；作业将在打印机上继续
 	Stop reading	停止朗读
 	Straighten scanned page	校正扫描页面的倾斜
 	Straighten skewed scans	校正扫描件倾斜
@@ -2687,6 +2712,7 @@ document scrollbar width	Standard	标准
 	The document changed while it was being signed, so the signature wasn't saved.	签名期间文档已更改，因此未保存签名。
 	The document changed while its margins were measured; nothing was cropped	测量页边距时文档已更改，未进行裁剪
 	The document changed while you were editing field properties.	编辑字段属性时文档已更改。
+	The document couldn't be prepared	无法准备文档
 	The document has additional actions (/AA)	文档包含附加动作（/AA）
 	The document has document-level JavaScript	文档包含文档级 JavaScript
 	the document has no form fields	文档没有表单字段
@@ -2725,6 +2751,7 @@ document scrollbar width	Standard	标准
 	The image has been copied ({w} × {h} pixels)	图像已复制（{w} × {h} 像素）
 	The image has been copied as a {ext} file	图像已复制为 {ext} 文件
 	the image is empty	图像为空
+	The job was canceled	作业已取消
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	密钥位于 macOS 钥匙串中，系统可能会询问是否允许 PdfCraft 使用它。
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	密钥位于 Windows 证书存储中，系统可能会询问是否允许 PdfCraft 使用它。
 	The key is on the device, which may ask for its PIN itself.	密钥位于设备上，设备可能会自行要求输入 PIN。
@@ -2754,7 +2781,18 @@ document scrollbar width	Standard	标准
 	The PIN is incorrect.	PIN 不正确。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	无法列出 PKCS #11 令牌的数字 ID：{e}
 	The preview could not be shown.	无法显示预览。
+	The print job stopped unexpectedly	打印作业意外停止
+	The printer accepts none of the formats this document can be sent in	打印机不接受此文档可发送的任何格式
+	The printer address was refused	打印机地址被拒绝
+	The printer doesn't support this setting	打印机不支持此设置
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	此次打印的打印机驱动程序专属设置：纸盒、纸张类型、装订整理等。
+	The printer is printing it	打印机正在打印
+	The printer may have received the document. Check the printer before sending again.	打印机可能已收到文档。再次发送之前，请先检查打印机。
+	The printer no longer lists the job; it most likely finished	打印机不再列出该作业；很可能已完成
+	The printer paused the job; it needs attention	打印机已暂停作业；需要处理
+	The printer refused the request	打印机拒绝了请求
+	The printer stopped the job	打印机已停止作业
+	The printer's reply couldn't be understood	无法理解打印机的回复
 	The provider's page didn't come back in time. Try again.	提供商页面未及时返回。请重试。
 	The raw text was truncated to what fits.	原始文本已被截断。
 	The redaction does not fit page {page}; no pages were marked.	密文标记不适合第 {page} 页；未标记任何页面。
@@ -2889,7 +2927,13 @@ document scrollbar width	Standard	标准
 	This page has no 3D models.	此页没有3D模型。
 	This PDF uses the unsupported {s} action.	此 PDF 使用了不支持的 {s} 操作。
 	This point could not be moved. Try a smaller move.	无法移动此点。请尝试较小的移动。
+	This printer does not take a copies setting.	此打印机不支持份数设置。
+	This printer does not take a quality setting.	此打印机不支持质量设置。
+	This printer does not take a resolution setting.	此打印机不支持分辨率设置。
+	This printer does not take an orientation setting.	此打印机不支持方向设置。
 	This printer offers no settings of its own.	此打印机没有专属设置。
+	This printer only prints in black and white.	此打印机仅支持黑白打印。
+	This printer only prints one-sided.	此打印机仅支持单面打印。
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	此打印机的驱动程序不接受其他程序的双面打印设置，因此使用其自身设置。更改位置：属性…
 	this signature can't be removed on its own	此签名无法单独移除
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	无法使用此签名服务：它需要在浏览器中进行 OAuth 登录，而 PdfCraft 尚不支持
@@ -3066,6 +3110,7 @@ document scrollbar width	Standard	标准
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	请等待扫描仪完成，或关闭其他正在使用它的程序，然后选择“重试”。
 	Waiting for the system print dialog…	正在等待系统打印对话框…
 	Waiting for your approval in the browser…	正在等待你在浏览器中批准…
+	Waiting in the printer's queue	正在打印机队列中等待
 	Warning	Warning
 	watermark	水印
 	Weak	弱

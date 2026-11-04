@@ -68,6 +68,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un archivo PNG o SVG. Se lee desde esta ubicación cada vez que se inicia PdfCraft.
 	A script	Un script
 	A selected field has no widget on any page, so the fields can't be edited together.	Un campo seleccionado no tiene ningún widget en ninguna página, así que los campos no se pueden editar juntos.
+	A setting isn't valid	Un ajuste no es válido
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Una firma que forma parte del contenido de una página, como en una página escaneada, no es un campo ni una anotación, así que no se puede quitar por sí sola, y PdfCraft no borra partes de una página para ocultarla. Para quitarla, censure esa zona (Censurar) o, si la firma es una imagen aparte, elimine la imagen con Editar un PDF.
 	A stream refers to an external file	Una secuencia hace referencia a un archivo externo
 	A stream uses LZW compression	Una secuencia usa compresión LZW
@@ -81,6 +82,7 @@
 	About PdfCraft	Acerca de PdfCraft
 	About {app}	Acerca de {app}
 	Accepted	Aceptado
+	Accepted by {printer}	Aceptado por {printer}
 	Accessibility Checker	Comprobador de accesibilidad
 	Accessibility Checker Options	Opciones del comprobador de accesibilidad
 	Accessibility panel	Panel de accesibilidad
@@ -290,6 +292,7 @@ calendar date	April	abril
 	Ask in any language	Pregunte en cualquier idioma
 	Ask to scan more pages	Preguntar si se escanean más páginas
 	Ask whether to recognize the current page or all pages when editing a scan.	Al editar un documento escaneado, preguntar si se debe reconocer la página actual o todas las páginas.
+	Asking the printer…	Consultando la impresora…
 	Asking {server}…	Consultando a {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Consulta a GitHub cuál es la última versión. No se descarga ni se instala nada automáticamente.
 	Assistant	Asistente
@@ -387,6 +390,7 @@ certificate	Basic constraints	Restricciones básicas
 	Callout	Llamada
 	Can't be read: {e}	No se puede leer: {e}
 	Cancel reverse sides	Cancelar los reversos
+	Canceling…	Cancelando…
 	Cancelled	Cancelado
 	Cancelling…	Cancelando…
 	Card driver (PKCS #11)	Controlador de la tarjeta (PKCS #11)
@@ -640,6 +644,7 @@ certificate	Basic constraints	Restricciones básicas
 	Couldn't optimize the file	No se pudo optimizar el archivo
 	Couldn't optimize the file: {e}	No se pudo optimizar el archivo: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	No se pudo imprimir desde el navegador ({e}); se descargó {name} para imprimirlo
+	Couldn't reach the printer	No se pudo conectar con la impresora
 	Couldn't read {name}: {e}	No se pudo leer {name}: {e}
 	Couldn't recover {name}: {e}	No se pudo recuperar {name}: {e}
 	Couldn't reload {name}: {e}	No se pudo recargar {name}: {e}
@@ -1232,6 +1237,7 @@ calendar weekday	Fr	Vi
 	Hebrew (ISO 8859-8)	Hebreo (ISO 8859-8)
 	Hebrew (Windows-1255)	Hebreo (Windows-1255)
 	Height	Alto
+	Held by the printer	Retenido por la impresora
 	Help…	Ayuda…
 	Heritage	Heritage
 	Hidden layers	Capas ocultas
@@ -1262,6 +1268,7 @@ key	Home	Inicio
 	HTML web page	Página web HTML
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	El OCR húngaro requiere la aplicación de escritorio con Tesseract 5 y el modelo de idioma hun. Reinicia PdfCraft después de la instalación.
 	H{n} follows an H{d}; headings should not skip levels	un H{n} va después de un H{d}; los encabezados no deben saltarse niveles
+	I confirm sending this document to this printer	Confirmo el envío de este documento a esta impresora
 	Identity	Identidad
 	Image (PNG)	Imagen (PNG)
 	Image field	Campo de imagen
@@ -1577,6 +1584,7 @@ calendar weekday	Mo	Lu
 	Nested alternate text	Texto alternativo anidado
 	Network	Red
 	Network address	Dirección de red
+	Network printer (WS-Print)	Impresora de red (WS-Print)
 	New Action	Nueva acción
 	New Action…	Nueva acción…
 	New blank PDF	Nuevo PDF en blanco
@@ -1681,9 +1689,11 @@ calendar weekday	Mo	Lu
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Ninguno de esos archivos se puede convertir en PDF; usa archivos PDF, imágenes o .txt
 	None of your digital IDs can open this document.	Ninguno de tus ID digitales puede abrir este documento.
 	None — everything is allowed	Ninguna: todo está permitido
+	Normal	Estándar
 scroll speed	Normal	Normal
 	Normal page	Página normal
 	Not allowed	No permitido
+	Not confirmed by the printer	La impresora no lo ha confirmado
 	not in a Table, THead, TBody or TFoot	no está dentro de un Table, THead, TBody ni TFoot
 	not in a TR	no está dentro de un TR
 	not in an L (list)	no está dentro de una L (lista)
@@ -1739,6 +1749,7 @@ animation effects	On	Activados
 	Only checked properties will change. Mixed means the selected fields have different values.	Solo se cambiarán las propiedades marcadas. «Valores distintos» indica que los campos seleccionados tienen valores diferentes.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Solo se recortan los bordes claros del papel. Se conservan los bordes blancos indistinguibles.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Continúa solo si confías en este documento. Una dirección puede llevar información del documento, como lo que escribiste en su formulario.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Solo se aceptan direcciones IP de esta red (privadas, de enlace local o de bucle invertido), no nombres de host.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Envía los datos solo si confías en este documento y en el destino. GET coloca los valores del formulario en la URL.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Envíalo solo si confías en este documento y en el destino. El PDF completo saldrá de este ordenador.
 	Only send if you trust this document and destination. The form values leave this computer.	Envía los datos solo si confías en este documento y en el destino. Los valores del formulario saldrán de este ordenador.
@@ -2005,9 +2016,14 @@ animation effects	On	Activados
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Imprime a una cara. Mantén las hojas en orden, corta por las marcas y apila los montones de izquierda a derecha y de arriba abajo.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage o LastPage
 	Printed through the system print dialog	Impreso con el diálogo de impresión del sistema
+	Printed with errors	Impreso con errores
+	Printed with warnings	Impreso con advertencias
+	Printer address:	Dirección de la impresora:
 	Printer default	Predeterminado de la impresora
+	Printer orientation:	Orientación de la impresora:
 	Printer paper and scaling may differ. Check driver settings.	El papel y la escala de la impresora pueden variar. Revisa los ajustes del controlador.
 	Printer properties	Propiedades de la impresora
+	Printer status: {state}	Estado de la impresora: {state}
 	Printing allowed	Impresión permitida
 	Privacy	Privacidad
 	Private data of other applications	Datos privados de otras aplicaciones
@@ -2026,6 +2042,9 @@ animation effects	On	Activados
 certificate	Public key	Clave pública
 	Purple	Morado
 	PushButton	Botón
+	Quality:	Calidad:
+	Query printer	Consultar impresora
+	Query the printer first to see what it supports.	Consulta primero la impresora para ver qué admite.
 	Quirks	Particularidades
 	Quit	Salir
 	Quit PdfCraft	Salir de PdfCraft
@@ -2060,6 +2079,7 @@ certificate	Public key	Clave pública
 	Reads {name}, which the form doesn't have, so it gets no value there.	Lee {name}, que no existe en el formulario, así que no obtiene ningún valor de ahí.
 	Reason	Motivo
 	Reason: 	Motivo: 
+	Reasons: {reasons}	Motivos: {reasons}
 	Recent colours	Colores recientes
 	Recent files to keep	Recent files to keep
 	Recipients	Destinatarios
@@ -2215,8 +2235,10 @@ certificate	Public key	Clave pública
 	Rev. {rev}: Signed by {name}	Rev. {rev}: Firmado por {name}
 	Reveal in File Explorer	Mostrar en el explorador de archivos
 	Reverse closed arrow	Flecha cerrada invertida
+	Reverse landscape	Horizontal invertido
 	Reverse open arrow	Flecha abierta invertida
 	Reverse pages	Invertir páginas
+	Reverse portrait	Vertical invertido
 	reverse side(s)	reverso(s)
 	Reverse sides	Reversos
 	Reverse sides interleaved.	Reversos intercalados.
@@ -2423,6 +2445,7 @@ certificate	Self-signed	Autofirmado
 	Sending to {printer}…	Enviando a {printer}…
 	Sending…	Enviando…
 	Sent to {printer}: {msg}	Enviado a {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Enviado. La impresora no puede decir si se imprimió.
 	Separate PDFs	PDF separados
 	Separate the sheets and load the remaining ones, then choose Continue.	Separe las hojas, cargue las restantes y elija Continuar.
 	Separate the sheets and load them again, then choose Try again.	Separe las hojas, vuelva a cargarlas y elija Reintentar.
@@ -2468,6 +2491,8 @@ certificate	SHA-256 digest	Huella SHA-256
 	Shadings	Sombreados
 	Shared Field Properties	Propiedades comunes de los campos
 	Sheet {s} of {n}	Hoja {s} de {n}
+	Sheets printed: {done} of {total}	Hojas impresas: {done} de {total}
+	Sheets printed: {n}	Hojas impresas: {n}
 key	Shift	Mayús
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Mayús restringe a 45 grados. Retroceso quita un vértice. Escape cancela.
 	Shift drags freely	Shift arrastra libremente
@@ -2612,6 +2637,7 @@ action wizard	Start	Iniciar
 	Start page number	Número de página inicial
 	Steps	Pasos
 	Sticky note	Nota adhesiva
+	Still printing; the job continues on the printer	Aún se está imprimiendo; el trabajo continúa en la impresora
 	Still rendering — this page is unusually complex…	Sigue renderizando: esta página es excepcionalmente compleja…
 	Stop reading	Detener lectura
 	Straighten scanned page	Enderezar página escaneada
@@ -2731,6 +2757,7 @@ calendar weekday	Th	Ju
 	The document changed while its margins were measured; nothing was cropped	El documento cambió mientras se medían sus márgenes; no se ha recortado nada
 	The document changed while you were choosing a file, so nothing was changed.	El documento cambió mientras elegías un archivo, así que no se modificó nada.
 	The document changed while you were editing field properties.	El documento cambió mientras editabas las propiedades de los campos.
+	The document couldn't be prepared	No se pudo preparar el documento
 	The document has additional actions (/AA)	El documento tiene acciones adicionales (/AA)
 	The document has been altered or corrupted since the signature was applied.	El documento se ha alterado o se ha dañado desde que se aplicó la firma.
 	The document has been altered or corrupted since the timestamp was applied.	El documento se ha alterado o se ha dañado desde que se aplicó el sello de tiempo.
@@ -2787,6 +2814,7 @@ calendar weekday	Th	Ju
 	The image has been copied ({w} × {h} pixels)	Se ha copiado la imagen ({w} × {h} píxeles)
 	The image has been copied as a {ext} file	Se ha copiado la imagen como archivo {ext}
 	the image is empty	la imagen está vacía
+	The job was canceled	Se canceló el trabajo
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	La clave está en el Llavero de macOS, que puede pedirte permiso para que PdfCraft la use.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	La clave está en el almacén de certificados de Windows, que puede pedirte permiso para que PdfCraft la use.
 	The key is on the device, which may ask for its PIN itself.	La clave está en el dispositivo, que puede pedir su PIN por sí mismo.
@@ -2819,7 +2847,18 @@ calendar weekday	Th	Ju
 	The PIN is incorrect.	El PIN es incorrecto.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	No se pudieron listar los ID digitales de los tokens PKCS #11: {e}
 	The preview could not be shown.	No se pudo mostrar la vista previa.
+	The print job stopped unexpectedly	El trabajo de impresión se detuvo inesperadamente
+	The printer accepts none of the formats this document can be sent in	La impresora no acepta ninguno de los formatos en los que se puede enviar este documento
+	The printer address was refused	Se rechazó la dirección de la impresora
+	The printer doesn't support this setting	La impresora no admite este ajuste
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Los ajustes propios del controlador de la impresora para esta impresión: bandeja, tipo de papel, acabado y más.
+	The printer is printing it	La impresora lo está imprimiendo
+	The printer may have received the document. Check the printer before sending again.	Puede que la impresora haya recibido el documento. Revisa la impresora antes de enviarlo de nuevo.
+	The printer no longer lists the job; it most likely finished	La impresora ya no muestra el trabajo; lo más probable es que haya terminado
+	The printer paused the job; it needs attention	La impresora puso el trabajo en pausa; necesita atención
+	The printer refused the request	La impresora rechazó la solicitud
+	The printer stopped the job	La impresora detuvo el trabajo
+	The printer's reply couldn't be understood	No se entendió la respuesta de la impresora
 	The provider's page didn't come back in time. Try again.	La página del proveedor no volvió a tiempo. Inténtelo de nuevo.
 	The raw text was truncated to what fits.	El texto original se ha truncado.
 	The redaction does not fit page {page}; no pages were marked.	La redacción no cabe en la página {page}; no se ha marcado ninguna página.
@@ -2997,7 +3036,13 @@ calendar weekday	Th	Ju
 	This page has an opaque background of its own, which hides the image behind it.	Esta página tiene un fondo opaco propio que oculta la imagen que hay detrás.
 	This PDF uses the unsupported {s} action.	Este PDF usa una acción {s} no compatible.
 	This point could not be moved. Try a smaller move.	No se pudo mover este punto. Prueba con un desplazamiento menor.
+	This printer does not take a copies setting.	Esta impresora no admite el ajuste del número de copias.
+	This printer does not take a quality setting.	Esta impresora no admite el ajuste de calidad.
+	This printer does not take a resolution setting.	Esta impresora no admite el ajuste de resolución.
+	This printer does not take an orientation setting.	Esta impresora no admite el ajuste de orientación.
 	This printer offers no settings of its own.	Esta impresora no ofrece ajustes propios.
+	This printer only prints in black and white.	Esta impresora solo imprime en blanco y negro.
+	This printer only prints one-sided.	Esta impresora solo imprime por una cara.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	El controlador de esta impresora no acepta los ajustes de doble cara de otros programas, así que se aplica su propio ajuste. Cámbialo en Propiedades…
 	this signature can't be removed on its own	esta firma no se puede quitar por sí sola
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Esta firma usa una clave RSA de menos de 2048 bits, que ya no se considera lo bastante fuerte para firmas. Sigue siendo válida, pero no conviene fiarse de ella.
@@ -3166,6 +3211,7 @@ certificate	Version	Versión
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Espere a que el escáner termine, o cierre cualquier otro programa que lo use, y elija Reintentar.
 	Waiting for the system print dialog…	Esperando al diálogo de impresión del sistema…
 	Waiting for your approval in the browser…	Esperando su aprobación en el navegador…
+	Waiting in the printer's queue	Esperando en la cola de la impresora
 	watermark	marca de agua
 calendar weekday	We	Mi
 	Weak	Débil

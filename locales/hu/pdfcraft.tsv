@@ -65,6 +65,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Egy PNG vagy SVG fájl. A PdfCraft minden indításakor erről a helyről olvassa be.
 	A script	Egy szkript
 	A selected field has no widget on any page, so the fields can't be edited together.	Az egyik kijelölt mezőnek egyik oldalon sincs widgetje, ezért a mezők nem szerkeszthetők együtt.
+	A setting isn't valid	Egy beállítás érvénytelen
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Az oldal tartalmának részét képező aláírás – például egy beszkennelt oldalon – nem mező és nem megjegyzés, ezért nem távolítható el önmagában, és a PdfCraft nem töröl részeket az oldalból az elrejtéséhez. Az eltávolításhoz takarja ki az adott területet (Kitakarás), vagy ha az aláírás külön kép, törölje a képet a „PDF szerkesztése” eszközzel.
 	A stream refers to an external file	Egy adatfolyam külső fájlra hivatkozik
 	A stream uses LZW compression	Egy adatfolyam LZW-tömörítést használ
@@ -72,6 +73,7 @@
 	About PdfCraft	A PdfCraftról
 	About {app}	A(z) {app} névjegye
 	Accepted	Elfogadva
+	Accepted by {printer}	{printer} elfogadta
 	Accessibility Checker	Akadálymentesség ellenőrzése
 	Accessibility Checker Options	Akadálymentesség-ellenőrzés beállításai
 	Accessibility panel	Kisegítő lehetőségek panel
@@ -276,6 +278,7 @@
 	Ask in any language	Kérdezzen bármely nyelven
 	Ask to scan more pages	Rákérdezés további oldalak beolvasására
 	Ask whether to recognize the current page or all pages when editing a scan.	Beolvasott dokumentum szerkesztésekor kérdezzen rá, hogy az aktuális vagy az összes oldalt ismerje-e fel.
+	Asking the printer…	A nyomtató lekérdezése…
 	Asking {server}…	Lekérdezés: {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	A GitHubtól kéri le a legújabb kiadást. Semmi sem töltődik le vagy települ automatikusan.
 	Assistant	Asszisztens
@@ -370,6 +373,7 @@
 	Callout	Szövegbuborék
 	Can't be read: {e}	Nem olvasható: {e}
 	Cancel reverse sides	Hátoldalak megszakítása
+	Canceling…	Megszakítás…
 	Cancelled	Megszakítva
 	Cancelling…	Megszakítás…
 	Card driver (PKCS #11)	Kártya-illesztőprogram (PKCS #11)
@@ -619,6 +623,7 @@
 	Couldn't optimize the file	A fájlt nem sikerült optimalizálni
 	Couldn't optimize the file: {e}	A fájlt nem sikerült optimalizálni: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Nem sikerült nyomtatni a böngészőből ({e}); helyette a(z) {name} letöltődött nyomtatáshoz
+	Couldn't reach the printer	Nem sikerült elérni a nyomtatót
 	Couldn't read {name}: {e}	{name} olvasása nem sikerült: {e}
 	Couldn't recover {name}: {e}	{name} visszaállítása nem sikerült: {e}
 	Couldn't reload {name}: {e}	{name} újratöltése nem sikerült: {e}
@@ -831,6 +836,7 @@ key	Delete	Delete
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	A letöltések a böngészőben nyílnak meg. A telepítés kézi; semmi sem települ automatikusan.
 	Downsample to	Feloldás csökkentése erre
 	DPI sets the printed page size without resampling the image.	A DPI a nyomtatott oldalméretet állítja be, a kép újramintázása nélkül.
+	Draft	Piszkozat
 	Drag a field to move it, or select it and press {up} or {down}.	Húzz el egy mezőt az áthelyezéshez, vagy jelöld ki, és nyomd meg ezt: {up} vagy {down}.
 	Drag a point to reshape the line. Delete removes it.	Húzzon el egy pontot a vonal alakjának módosításához. A Delete törli a vonalat.
 	Drag a rectangle around the area to copy	Húzz egy téglalapot a másolandó terület köré
@@ -1173,6 +1179,7 @@ scroll speed	Fast	Gyors
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	A címsorszintek ne ugorjanak (például H1 után ne H3 következzék). Címkézd újra a címsorokat.
 	Hebrew (ISO 8859-8)	Héber (ISO 8859-8)
 	Hebrew (Windows-1255)	Héber (Windows-1255)
+	Held by the printer	A nyomtató visszatartja
 	Heritage	Heritage
 	Hidden layers	Rejtett rétegek
 	Hide a field	Mező elrejtése
@@ -1203,6 +1210,7 @@ key	Home	Home
 	How Edit text reads old fonts that don't say which letters they draw. Auto-detect recognises Hebrew fonts laid out for ISO 8859-8 or Windows-1255.	Hogyan olvassa a Szöveg szerkesztése a régi betűtípusokat, amelyek nem adják meg, milyen betűket rajzolnak. Az automatikus felismerés az ISO 8859-8 vagy Windows-1255 szerint felépített héber betűtípusokat ismeri fel.
 	HTML web page	HTML-weboldal
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	A magyar OCR-hez az asztali alkalmazás, a Tesseract 5 és a hun nyelvi modell szükséges. Telepítés után indítsd újra a PdfCraftot.
+	I confirm sending this document to this printer	Megerősítem, hogy ezt a dokumentumot erre a nyomtatóra küldöm
 	Identity	Személyazonosság
 	Image (PNG)	Kép (PNG)
 	Image field	Képmező
@@ -1505,6 +1513,7 @@ key	Home	Home
 	Nested alternate text	Beágyazott helyettesítő szöveg
 	Network	Hálózat
 	Network address	Hálózati cím
+	Network printer (WS-Print)	Hálózati nyomtató (WS-Print)
 	New Action	Új művelet
 	New Action…	Új művelet…
 	New blank PDF	Új üres PDF
@@ -1602,6 +1611,7 @@ key	Home	Home
 scroll speed	Normal	Normál
 	Normal page	Normál oldal
 	Not allowed	Nem engedélyezett
+	Not confirmed by the printer	A nyomtató nem erősítette meg
 	Not in order	Nincs a sorrendben
 	Not now	Most nem
 	Not present	Nincs megadva
@@ -1650,6 +1660,7 @@ animation effects	On	Be
 	Only checked properties will change. Mixed means the selected fields have different values.	Csak a bejelölt tulajdonságok változnak. Az „Eltérő értékek” azt jelenti, hogy a kijelölt mezők értékei különböznek.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Csak a jól felismerhető papírszéleket vágja körbe. A megkülönböztethetetlen fehér szegélyek megmaradnak.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Csak akkor folytasd, ha megbízol ebben a dokumentumban. Egy cím adatokat vihet a dokumentumból, például azt, amit az űrlapjába írtál.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Csak ennek a hálózatnak az IP-címei fogadhatók el (privát, link-local vagy loopback), gépnevek nem.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Csak akkor küldje el, ha megbízik ebben a dokumentumban és a célban. A GET az űrlap értékeit az URL-be helyezi.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Csak akkor küldje el, ha megbízik a dokumentumban és a címzettben. A teljes PDF elhagyja ezt a számítógépet.
 	Only send if you trust this document and destination. The form values leave this computer.	Csak akkor küldd el, ha megbízol a dokumentumban és a címzettben. Az űrlapértékek elhagyják ezt a számítógépet.
@@ -1898,9 +1909,14 @@ animation effects	On	Be
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Nyomtass egyoldalasan. Tartsd a lapokat sorrendben, vágd el a jeleknél, majd rakd a kötegeket balról jobbra, fentről lefelé egymásra.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage vagy LastPage
 	Printed through the system print dialog	Kinyomtatva a rendszer nyomtatási párbeszédablakával
+	Printed with errors	Kinyomtatva hibákkal
+	Printed with warnings	Kinyomtatva figyelmeztetésekkel
+	Printer address:	Nyomtató címe:
 	Printer default	Nyomtató alapértéke
+	Printer orientation:	A nyomtató tájolása:
 	Printer paper and scaling may differ. Check driver settings.	A nyomtató papírja és méretezése eltérhet. Ellenőrizze az illesztőprogram beállításait.
 	Printer properties	Nyomtató tulajdonságai
+	Printer status: {state}	Nyomtató állapota: {state}
 	Printing allowed	Nyomtatás engedélyezve
 	Privacy	Adatvédelem
 	Private data of other applications	Más alkalmazások privát adatai
@@ -1916,6 +1932,9 @@ animation effects	On	Be
 	Public domain	Közkincs
 	Public key	Nyilvános kulcs
 	PushButton	Nyomógomb
+	Quality:	Minőség:
+	Query printer	Nyomtató lekérdezése
+	Query the printer first to see what it supports.	Először kérdezd le a nyomtatót, hogy lásd, mit támogat.
 	Quirks	Sajátosságok
 	Quit	Kilépés
 	Quit PdfCraft	Kilépés a PdfCraftból
@@ -1950,6 +1969,7 @@ animation effects	On	Be
 	Reads {name}, which the form doesn't have, so it gets no value there.	Ezt olvassa: {name}, amely nincs az űrlapon, így onnan nem kap értéket.
 	Reason	Ok
 	Reason: 	Indok: 
+	Reasons: {reasons}	Okok: {reasons}
 	Recent colours	Legutóbbi színek
 	Recent files to keep	Recent files to keep
 	Recipients	Címzettek
@@ -2100,8 +2120,10 @@ animation effects	On	Be
 	Return to document	Vissza a dokumentumhoz
 	Reveal in File Explorer	Megjelenítés a fájlkezelőben
 	Reverse closed arrow	Fordított zárt nyíl
+	Reverse landscape	Fekvő, fordított
 	Reverse open arrow	Fordított nyitott nyíl
 	Reverse pages	Oldalak fordított sorrendben
+	Reverse portrait	Álló, fordított
 	reverse side(s)	hátlap
 	Reverse sides	Hátoldalak
 	Reverse sides interleaved.	Hátoldalak beszúrva.
@@ -2296,6 +2318,7 @@ animation effects	On	Be
 	Sending to {printer}…	Küldés ide: {printer}…
 	Sending…	Küldés…
 	Sent to {printer}: {msg}	Elküldve ide: {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Elküldve. A nyomtató nem tudja megmondani, hogy kinyomtatta-e.
 	Separate PDFs	Külön PDF-ek
 	Separate the sheets and load the remaining ones, then choose Continue.	Válassza szét a lapokat, és töltse be a hátralévőket, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
 	Separate the sheets and load them again, then choose Try again.	Válassza szét a lapokat, és töltse be őket újra, majd válassza a(z) „Újra” lehetőséget.
@@ -2337,6 +2360,8 @@ animation effects	On	Be
 	Shadings	Árnyalatok
 	Shared Field Properties	Közös mezőtulajdonságok
 	Sheet {s} of {n}	{s}. lap / {n}
+	Sheets printed: {done} of {total}	Kinyomtatott lapok: {done} / {total}
+	Sheets printed: {n}	Kinyomtatott lapok: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	A Shift 45 fokra korlátoz. A Backspace töröl egy csúcspontot. Az Escape megszakítja.
 	Shift drags freely	A Shift szabadon mozgat
@@ -2484,6 +2509,7 @@ action wizard	Start	Indítás
 	Start page number	Kezdő oldalszám
 	Steps	Lépések
 	Sticky note	Cetli
+	Still printing; the job continues on the printer	Még nyomtat; a feladat a nyomtatón folytatódik
 	Stop reading	Felolvasás leállítása
 	Straighten scanned page	Beszkennelt oldal kiegyenesítése
 	Straighten skewed scans	Ferde szkennelt oldalak kiegyenesítése
@@ -2593,6 +2619,7 @@ action wizard	Start	Indítás
 	The document changed while its margins were measured; nothing was cropped	A dokumentum megváltozott a margók mérése közben; semmi sem lett körbevágva
 	The document changed while you were choosing a file, so nothing was changed.	A dokumentum megváltozott, amíg fájlt választottál, ezért semmi sem módosult.
 	The document changed while you were editing field properties.	A dokumentum megváltozott, miközben a mezőtulajdonságokat szerkesztetted.
+	The document couldn't be prepared	A dokumentumot nem sikerült előkészíteni
 	The document has additional actions (/AA)	A dokumentumnak további műveletei vannak (/AA)
 	The document has document-level JavaScript	A dokumentum dokumentumszintű JavaScriptet tartalmaz
 	the document has no form fields	a dokumentumnak nincs űrlapmezője
@@ -2632,6 +2659,7 @@ action wizard	Start	Indítás
 	The image has been copied ({w} × {h} pixels)	A kép a vágólapra került ({w} × {h} képpont)
 	The image has been copied as a {ext} file	A kép {ext}-fájlként a vágólapra került
 	the image is empty	a kép üres
+	The job was canceled	A feladat megszakítva
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	A kulcs a macOS Kulcskarikában van, amely megkérdezheti, engedélyezed-e a PdfCraftnak a használatát.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	A kulcs a Windows tanúsítványtárolójában van, amely megkérdezheti, engedélyezed-e a PdfCraftnak a használatát.
 	The key is on the device, which may ask for its PIN itself.	A kulcs az eszközön van, amely maga is kérheti a PIN-kódját.
@@ -2661,7 +2689,18 @@ action wizard	Start	Indítás
 	The PIN is incorrect.	A PIN-kód helytelen.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	A PKCS #11 tokenek digitális azonosítóit nem sikerült listázni: {e}
 	The preview could not be shown.	Az előnézetet nem lehetett megjeleníteni.
+	The print job stopped unexpectedly	A nyomtatási feladat váratlanul leállt
+	The printer accepts none of the formats this document can be sent in	A nyomtató a dokumentum egyik küldhető formátumát sem fogadja el
+	The printer address was refused	A nyomtató címét elutasították
+	The printer doesn't support this setting	A nyomtató nem támogatja ezt a beállítást
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	A nyomtató-illesztőprogram saját beállításai ehhez a nyomtatáshoz: papírtálca, papírtípus, utófeldolgozás és egyebek.
+	The printer is printing it	A nyomtató nyomtatja
+	The printer may have received the document. Check the printer before sending again.	A nyomtató lehet, hogy megkapta a dokumentumot. Ellenőrizd a nyomtatót, mielőtt újra elküldöd.
+	The printer no longer lists the job; it most likely finished	A nyomtató már nem listázza a feladatot; valószínűleg elkészült
+	The printer paused the job; it needs attention	A nyomtató szüneteltette a feladatot; figyelmet igényel
+	The printer refused the request	A nyomtató elutasította a kérést
+	The printer stopped the job	A nyomtató leállította a feladatot
+	The printer's reply couldn't be understood	A nyomtató válasza nem értelmezhető
 	The provider's page didn't come back in time. Try again.	A szolgáltató oldala nem tért vissza időben. Próbálja újra.
 	The raw text was truncated to what fits.	A nyers szöveg csonkolva lett.
 	The redaction does not fit page {page}; no pages were marked.	A kitakarás nem fér el a(z) {page}. oldalon; nem lett oldal megjelölve.
@@ -2794,7 +2833,13 @@ action wizard	Start	Indítás
 	This page has an opaque background of its own, which hides the image behind it.	Ennek az oldalnak saját, átlátszatlan háttere van, amely eltakarja a mögötte lévő képet.
 	This PDF uses the unsupported {s} action.	Ez a PDF nem támogatott {s} műveletet használ.
 	This point could not be moved. Try a smaller move.	Ezt a pontot nem sikerült áthelyezni. Próbáljon kisebb elmozdítást.
+	This printer does not take a copies setting.	Ez a nyomtató nem támogatja a példányszám beállítását.
+	This printer does not take a quality setting.	Ez a nyomtató nem támogatja a minőség beállítását.
+	This printer does not take a resolution setting.	Ez a nyomtató nem támogatja a felbontás beállítását.
+	This printer does not take an orientation setting.	Ez a nyomtató nem támogatja a tájolás beállítását.
 	This printer offers no settings of its own.	Ennek a nyomtatónak nincsenek saját beállításai.
+	This printer only prints in black and white.	Ez a nyomtató csak fekete-fehérben nyomtat.
+	This printer only prints one-sided.	Ez a nyomtató csak egyoldalas nyomtatásra képes.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	A nyomtató illesztőprogramja nem fogadja el más programoktól a kétoldalas nyomtatás beállítását, ezért a saját beállítása érvényes. Módosítás: Tulajdonságok…
 	this signature can't be removed on its own	ez az aláírás nem távolítható el önmagában
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	ez az aláírási szolgáltatás nem használható: böngészőben történő OAuth-bejelentkezést igényel, amelyet a PdfCraft még nem támogat
@@ -2955,6 +3000,7 @@ signature pad	Type	Gépelés
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Várja meg, amíg a lapolvasó végez, vagy zárjon be minden más, a lapolvasót használó programot, majd válassza a(z) „Újra” lehetőséget.
 	Waiting for the system print dialog…	Várakozás a rendszer nyomtatási párbeszédablakára…
 	Waiting for your approval in the browser…	Várakozás a jóváhagyására a böngészőben…
+	Waiting in the printer's queue	Várakozik a nyomtató sorában
 	Warning	Warning
 	watermark	vízjel
 	Weak	Gyenge

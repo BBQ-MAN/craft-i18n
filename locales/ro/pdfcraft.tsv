@@ -64,6 +64,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un fișier PNG sau SVG. Este citit din acest loc la fiecare pornire a PdfCraft.
 	A script	Un script
 	A selected field has no widget on any page, so the fields can't be edited together.	Un câmp selectat nu are widget pe nicio pagină, așa că acele câmpuri nu pot fi editate împreună.
+	A setting isn't valid	O setare nu este validă
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	O semnătură care face parte din conținutul unei pagini, ca pe o pagină scanată, nu este un câmp sau o adnotare, așa că nu poate fi eliminată separat, iar PdfCraft nu șterge părți dintr-o pagină pentru a o ascunde. Pentru a o elimina, anonimizați zona respectivă (Anonimizare) sau, dacă semnătura este o imagine separată, ștergeți imaginea cu Editare PDF.
 	A stream refers to an external file	Un flux face referire la un fișier extern
 	A stream uses LZW compression	Un flux folosește comprimare LZW
@@ -78,6 +79,7 @@
 	About PdfCraft	Despre PdfCraft
 	About {app}	Despre {app}
 	Accepted	Acceptat
+	Accepted by {printer}	Acceptată de {printer}
 	Accessibility	Accesibilitate
 	Accessibility Checker	Verificator de accesibilitate
 	Accessibility Checker Options	Opțiuni verificator de accesibilitate
@@ -292,6 +294,7 @@ calendar date	April	aprilie
 	Ask about this document	Întrebări despre acest document
 	Ask before a document opens in Full Screen mode	Întreabă înainte ca un document să se deschidă în modul Ecran complet
 	Ask whether to recognize the current page or all pages when editing a scan.	Întreabă dacă se recunoaște pagina curentă sau toate paginile la editarea unei scanări.
+	Asking the printer…	Se interoghează imprimanta…
 	Asking {server}…	Se interoghează {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Întreabă GitHub care este cea mai nouă versiune. Nimic nu se descarcă sau se instalează automat.
 	Associated with content	Asociat cu conținut
@@ -386,6 +389,7 @@ certificate	Basic constraints	Constrângeri de bază
 	Can't be read: {e}	Nu poate fi citit: {e}
 	Cancel	Anulare
 	Cancel reverse sides	Cancel reverse sides
+	Canceling…	Se anulează…
 	Cancelled	Anulat
 	Cancelling…	Se anulează…
 	Card driver (PKCS #11)	Driverul cardului (PKCS #11)
@@ -644,6 +648,7 @@ certificate	Basic constraints	Constrângeri de bază
 	Couldn't optimize the file	Nu s-a putut optimiza fișierul
 	Couldn't optimize the file: {e}	Nu s-a putut optimiza fișierul: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Nu s-a putut imprima din browser ({e}); s-a descărcat {name} pentru imprimare
+	Couldn't reach the printer	Imprimanta nu a putut fi contactată
 	Couldn't read {name}: {e}	Nu s-a putut citi {name}: {e}
 	Couldn't recover {name}: {e}	Nu s-a putut recupera {name}: {e}
 	Couldn't reload {name}: {e}	Nu s-a putut reîncărca {name}: {e}
@@ -872,6 +877,7 @@ key	Delete	Delete
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Descărcarea atașamentelor pe web vine cu M3.10 ({n} octeți pregătiți)
 	Downsample to	Reeșantionare la
 	DPI sets the printed page size without resampling the image.	DPI stabilește dimensiunea paginii imprimate fără a reeșantiona imaginea.
+	Draft	Ciornă
 	Drag a field to move it, or select it and press {up} or {down}.	Drag a field to move it, or select it and press {up} or {down}.
 	Drag a point to reshape the line. Delete removes it.	Trageți un punct pentru a modifica forma liniei. Tasta Delete îl elimină.
 	Drag a rectangle around the area to copy	Trageți un dreptunghi în jurul zonei de copiat
@@ -1250,6 +1256,7 @@ calendar weekday	Fr	Vi
 	Headings	Titluri
 	Height	Înălțime
 	Height:	Înălțime:
+	Held by the printer	Reținută de imprimantă
 	Help	Ajutor
 	Help…	Ajutor…
 	Hidden layers	Straturi ascunse
@@ -1284,6 +1291,7 @@ key	Home	Home
 	Horizontally	Pe orizontală
 	HTML web page	Pagină web HTML
 	H{n} follows an H{d}; headings should not skip levels	H{n} urmează după un H{d}; titlurile nu ar trebui să sară niveluri
+	I confirm sending this document to this printer	Confirm trimiterea acestui document la această imprimantă
 	Icon	Pictogramă
 	Identity	Identitate
 	Image	Imagine
@@ -1619,6 +1627,7 @@ calendar weekday	Mo	Lu
 	Negative number style:	Stil numere negative:
 	Nested alternate text	Text alternativ imbricat
 	Network	Network
+	Network printer (WS-Print)	Imprimantă de rețea (WS-Print)
 	Never	Niciodată
 	New Action	Acțiune nouă
 	New Action…	Acțiune nouă…
@@ -1716,8 +1725,10 @@ calendar weekday	Mo	Lu
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Niciunul dintre aceste fișiere nu poate fi transformat în PDF; folosiți PDF-uri, imagini sau fișiere .txt
 	None of your digital IDs can open this document.	Niciunul dintre ID-urile dvs. digitale nu poate deschide acest document.
 	None — everything is allowed	Niciuna: totul este permis
+	Normal	Normală
 scroll speed	Normal	Normală
 	Not allowed	Nepermis
+	Not confirmed by the printer	Neconfirmat de imprimantă
 	not in a Table, THead, TBody or TFoot	nu se află într-un Table, THead, TBody sau TFoot
 	not in a TR	nu se află într-un TR
 	not in an L (list)	nu se află într-un L (listă)
@@ -1771,6 +1782,7 @@ animation effects	On	Activate
 	Only change the colour of black text or line art	Schimbă doar culoarea textului sau a liniilor negre
 	Only checked properties will change. Mixed means the selected fields have different values.	Se modifică doar proprietățile bifate. Mixt înseamnă că câmpurile selectate au valori diferite.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Continuați doar dacă aveți încredere în acest document. O adresă poate transmite informații din document, de exemplu ce ați scris în formularul lui.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Sunt acceptate doar adrese IP din această rețea (private, link-local sau loopback), nu nume de gazdă.
 	Only the document's owner can change its security (open it with the permissions password)	Doar proprietarul documentului îi poate modifica securitatea (deschideți-l cu parola de permisiuni)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Se modifică doar conținutul paginii: linkurile, comentariile, câmpurile de formular și semnele de carte de pe paginile originale rămân.
 	Only the recipients can open the document, each with the private key of their own certificate.	Doar destinatarii pot deschide documentul, fiecare cu cheia privată a propriului certificat.
@@ -2041,9 +2053,14 @@ animation effects	On	Activate
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Imprimați pe o singură față. Păstrați foile în ordine, tăiați la semne, apoi stivuiți teancurile de la stânga la dreapta, de sus în jos.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage sau LastPage
 	Printed through the system print dialog	Imprimat prin dialogul de imprimare al sistemului
+	Printed with errors	Tipărit cu erori
+	Printed with warnings	Tipărit cu avertismente
+	Printer address:	Adresa imprimantei:
 	Printer default	Printer default
+	Printer orientation:	Orientarea imprimantei:
 	Printer paper and scaling may differ. Check driver settings.	Hârtia și scalarea imprimantei pot fi diferite. Verificați setările driverului.
 	Printer properties	Proprietăți imprimantă
+	Printer status: {state}	Starea imprimantei: {state}
 	Printer:	Imprimantă:
 	Printing	Imprimare
 	Printing allowed	Imprimare permisă
@@ -2067,6 +2084,9 @@ certificate	Public key	Cheie publică
 	Purple	Mov
 	PushButton	Buton de comandă
 	Quality	Calitate
+	Quality:	Calitate:
+	Query printer	Interoghează imprimanta
+	Query the printer first to see what it supports.	Interoghează mai întâi imprimanta pentru a vedea ce acceptă.
 	Quit PdfCraft	Ieșire din PdfCraft
 	Quit {app}	Ieșire din {app}
 	Radio	Radio
@@ -2085,6 +2105,7 @@ certificate	Public key	Cheie publică
 	Real name	Nume real
 	Reason	Motiv
 	Reason: 	Motiv: 
+	Reasons: {reasons}	Motive: {reasons}
 	Recent	Recente
 	Recent colours	Culori recente
 	Recent files to keep	Recent files to keep
@@ -2243,8 +2264,10 @@ certificate	Public key	Cheie publică
 	Reveal in File Explorer	Afișare în File Explorer
 	Reveal in Finder	Afișare în Finder
 	Reverse closed arrow	Săgeată închisă inversată
+	Reverse landscape	Peisaj inversat
 	Reverse open arrow	Săgeată deschisă inversată
 	Reverse pages	Inversare ordine pagini
+	Reverse portrait	Portret inversat
 	reverse side(s)	reverse side(s)
 	Reverse sides	Reverse sides
 	Reverse sides interleaved.	Reverse sides interleaved.
@@ -2439,6 +2462,7 @@ certificate	Self-signed	Autosemnat
 	Sensitivity	Sensibilitate
 	Sent to {printer}	Trimis la {printer}
 	Sent to {printer}: {msg}	Trimis la {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Trimis. Imprimanta nu poate spune dacă a tipărit.
 	Separate PDFs	PDF-uri separate
 	Separate the sheets and load the remaining ones, then choose Continue.	Separate the sheets and load the remaining ones, then choose Continue.
 	Separate the sheets and load them again, then choose Try again.	Separate the sheets and load them again, then choose Try again.
@@ -2484,6 +2508,8 @@ certificate	SHA-256 digest	Rezumat SHA-256
 	Shadings	Umbriri
 	Shared Field Properties	Proprietăți comune ale câmpurilor
 	Sheet {s} of {n}	Foaia {s} din {n}
+	Sheets printed: {done} of {total}	Coli tipărite: {done} din {total}
+	Sheets printed: {n}	Coli tipărite: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift limitează la 45 de grade. Backspace elimină un vârf. Escape anulează.
 	Shift- or Ctrl/Command-click to select several fields.	Shift- sau Ctrl/Command-clic pentru a selecta mai multe câmpuri.
@@ -2614,6 +2640,7 @@ action wizard	Start	Pornire
 	Status	Stare
 	Steps	Pași
 	Sticky note	Notă
+	Still printing; the job continues on the printer	Încă se tipărește; lucrarea continuă pe imprimantă
 	Still rendering — this page is unusually complex…	Se randează încă: această pagină este neobișnuit de complexă…
 	Stop	Stop
 	Straighten the page	Straighten the page
@@ -2721,6 +2748,7 @@ calendar weekday	Th	Jo
 	The document changed while its margins were measured; nothing was cropped	Documentul s-a schimbat în timp ce i se măsurau marginile; nu s-a decupat nimic
 	The document changed while you were choosing a file, so nothing was changed.	Documentul s-a modificat în timp ce alegeați un fișier, așa că nu s-a schimbat nimic.
 	The document changed while you were editing field properties.	Documentul s-a modificat în timp ce editați proprietățile câmpului.
+	The document couldn't be prepared	Documentul nu a putut fi pregătit
 	The document has additional actions (/AA)	Documentul are acțiuni suplimentare (/AA)
 	The document has been altered or corrupted since the signature was applied.	Documentul a fost modificat sau deteriorat după aplicarea semnăturii.
 	The document has been altered or corrupted since the timestamp was applied.	Documentul a fost modificat sau deteriorat după aplicarea marcajului temporal.
@@ -2774,6 +2802,7 @@ calendar weekday	Th	Jo
 	The image has been copied ({w} × {h} pixels)	Imaginea a fost copiată ({w} × {h} pixeli)
 	The image has been copied as a {ext} file	Imaginea a fost copiată ca fișier {ext}
 	the image is empty	imaginea este goală
+	The job was canceled	Lucrarea a fost anulată
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Cheia se află în Keychain-ul macOS, care poate cere permisiunea ca PdfCraft să o folosească.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Cheia se află în depozitul de certificate Windows, care poate cere permisiunea ca PdfCraft să o folosească.
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Cheia este pe {device}, care cere singur aprobarea (o tastatură PIN sau o aplicație de pe telefon).
@@ -2802,7 +2831,18 @@ calendar weekday	Th	Jo
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN-ul ajunge doar la card; PdfCraft nu îl păstrează.
 	The PIN is incorrect.	Codul PIN este incorect.
 	The preview could not be shown.	The preview could not be shown.
+	The print job stopped unexpectedly	Lucrarea de tipărire s-a oprit neașteptat
+	The printer accepts none of the formats this document can be sent in	Imprimanta nu acceptă niciunul dintre formatele în care poate fi trimis acest document
+	The printer address was refused	Adresa imprimantei a fost refuzată
+	The printer doesn't support this setting	Imprimanta nu acceptă această setare
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Setările proprii ale driverului de imprimantă pentru această imprimare: tava de hârtie, tipul de hârtie, finisarea și altele.
+	The printer is printing it	Imprimanta o tipărește
+	The printer may have received the document. Check the printer before sending again.	Este posibil ca imprimanta să fi primit documentul. Verifică imprimanta înainte de a trimite din nou.
+	The printer no longer lists the job; it most likely finished	Imprimanta nu mai listează lucrarea; cel mai probabil s-a terminat
+	The printer paused the job; it needs attention	Imprimanta a pus lucrarea în pauză; are nevoie de atenție
+	The printer refused the request	Imprimanta a refuzat cererea
+	The printer stopped the job	Imprimanta a oprit lucrarea
+	The printer's reply couldn't be understood	Răspunsul imprimantei nu a putut fi înțeles
 	The provider's page didn't come back in time. Try again.	Pagina furnizorului nu a revenit la timp. Încercați din nou.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI-ul de redirecționare trebuie să fie http://127.0.0.1 sau http://localhost cu un port.
 	The replacement file doesn't have that many pages.	Fișierul de înlocuire nu are atâtea pagini.
@@ -2963,7 +3003,13 @@ calendar weekday	Th	Jo
 	This page has an opaque background of its own, which hides the image behind it.	Această pagină are propriul fundal opac, care ascunde imaginea din spatele lui.
 	This PDF uses the unsupported {s} action.	Acest PDF folosește acțiunea neacceptată {s}.
 	This point could not be moved. Try a smaller move.	Acest punct nu a putut fi mutat. Încercați o deplasare mai mică.
+	This printer does not take a copies setting.	Această imprimantă nu acceptă setarea numărului de copii.
+	This printer does not take a quality setting.	Această imprimantă nu acceptă setarea calității.
+	This printer does not take a resolution setting.	Această imprimantă nu acceptă setarea rezoluției.
+	This printer does not take an orientation setting.	Această imprimantă nu acceptă setarea orientării.
 	This printer offers no settings of its own.	Această imprimantă nu are setări proprii.
+	This printer only prints in black and white.	Această imprimantă tipărește doar alb-negru.
+	This printer only prints one-sided.	Această imprimantă tipărește doar pe o singură față.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Driverul acestei imprimante nu preia setările față-verso de la alte programe, așa că se aplică setarea proprie. Schimbați-o în Proprietăți…
 	this signature can't be removed on its own	această semnătură nu poate fi eliminată separat
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.
@@ -3142,6 +3188,7 @@ certificate	Version	Versiune
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	Se așteaptă dialogul de imprimare al sistemului…
 	Waiting for your approval in the browser…	Se așteaptă aprobarea dvs. în browser…
+	Waiting in the printer's queue	În așteptare în coada imprimantei
 	Warning	Avertisment
 	Warnings	Avertismente
 	Watermark	Filigran

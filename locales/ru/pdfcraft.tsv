@@ -62,6 +62,7 @@
 	A picture covers page {pages} (a scan?), so the background won't show there.	Страница, закрытая изображением (скан?): {pages}; фон там не будет виден.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Файл PNG или SVG. Читается из этого места при каждом запуске PdfCraft.
 	A selected field has no widget on any page, so the fields can't be edited together.	У одного из выбранных полей нет виджета ни на одной странице, поэтому поля нельзя изменить вместе.
+	A setting isn't valid	Недопустимый параметр
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Подпись, которая является частью содержимого страницы (например, на отсканированной странице), не является ни полем, ни примечанием, поэтому её нельзя удалить отдельно, а PdfCraft не стирает части страницы, чтобы её скрыть. Чтобы убрать её, скройте эту область (Скрыть) или, если подпись — отдельное изображение, удалите его с помощью «Редактировать PDF».
 	A stream refers to an external file	Поток ссылается на внешний файл
 	A stream uses LZW compression	Поток использует сжатие LZW
@@ -69,6 +70,7 @@
 	About PdfCraft	О программе PdfCraft
 	About {app}	О программе {app}
 	Accepted	Принято
+	Accepted by {printer}	Принято принтером {printer}
 	Accessibility	Доступность
 	Accessibility Checker	Проверка доступности
 	Accessibility Checker Options	Параметры проверки доступности
@@ -277,6 +279,7 @@
 	Ask in any language	Спрашивайте на любом языке
 	Ask to scan more pages	Предлагать сканировать ещё страницы
 	Ask whether to recognize the current page or all pages when editing a scan.	При редактировании скана спрашивать, распознать текущую страницу или все страницы.
+	Asking the printer…	Опрос принтера…
 	Asking {server}…	Запрос к {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Запрашивает у GitHub последний релиз. Ничего не скачивается и не устанавливается автоматически.
 	Assistant	Ассистент
@@ -374,6 +377,7 @@
 	Can't be read: {e}	Нельзя прочитать: {e}
 	Cancel caption placement	Отменить размещение подписи
 	Cancel reverse sides	Отменить оборотные стороны
+	Canceling…	Отмена…
 	Cancelled	Отменено
 	Cancelling…	Отмена…
 	Card driver (PKCS #11)	Драйвер карты (PKCS #11)
@@ -633,6 +637,7 @@
 	Couldn't open the signed version: {e}	Не удалось открыть подписанную версию: {e}
 	Couldn't optimize the file: {e}	Не удалось оптимизировать файл: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Не удалось напечатать из браузера ({e}); вместо этого для печати скачан файл {name}
+	Couldn't reach the printer	Не удалось связаться с принтером
 	Couldn't read {name}: {e}	Не удалось прочитать {name}: {e}
 	Couldn't recover {name}: {e}	Не удалось восстановить {name}: {e}
 	Couldn't reload {name}: {e}	Не удалось перезагрузить {name}: {e}
@@ -853,6 +858,7 @@ key	Delete	Delete
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	Загрузки открываются в браузере. Установка выполняется вручную; автоматической установки нет.
 	Downsample to	Уменьшить до
 	DPI sets the printed page size without resampling the image.	DPI задаёт размер печатной страницы без передискретизации изображения.
+	Draft	Черновик
 	Drag a field to move it, or select it and press {up} or {down}.	Перетащите поле, чтобы переместить его, или выберите его и нажмите {up} или {down}.
 	Drag a point to reshape the line. Delete removes it.	Перетащите точку, чтобы изменить форму линии. Клавиша Delete удаляет линию.
 	Drag a rectangle around the area to copy	Перетащите прямоугольник вокруг области для копирования
@@ -1211,6 +1217,7 @@ scroll speed	Fast	Высокая
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Уровни заголовков не должны пропускать (H1, за которым следует H3). Переразметьте заголовки.
 	Hebrew (ISO 8859-8)	Иврит (ISO 8859-8)
 	Hebrew (Windows-1255)	Иврит (Windows-1255)
+	Held by the printer	Удерживается принтером
 	Heritage	Heritage
 	Hidden layers	Скрытые слои
 	Hide a field	Скрыть поле
@@ -1240,6 +1247,7 @@ key	Home	Home
 	How Edit text reads old fonts that don't say which letters they draw. Auto-detect recognises Hebrew fonts laid out for ISO 8859-8 or Windows-1255.	Как «Редактировать текст» читает старые шрифты, которые не сообщают, какие буквы они рисуют. Автоопределение распознаёт шрифты для иврита, построенные по ISO 8859-8 или Windows-1255.
 	HTML web page	Веб-страница HTML
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Для венгерского OCR требуется настольное приложение с Tesseract 5 и языковой моделью hun. После установки перезапустите PdfCraft.
+	I confirm sending this document to this printer	Подтверждаю отправку этого документа на этот принтер
 	Identity	Идентификация
 	Image (PNG)	Изображение (PNG)
 	Image field	Поле изображения
@@ -1556,6 +1564,7 @@ key	Home	Home
 	Nested alternate text	Вложенный альтернативный текст
 	Network	Сеть
 	Network address	Сетевой адрес
+	Network printer (WS-Print)	Сетевой принтер (WS-Print)
 	New Action	Новое действие
 	New Action…	Новое действие…
 	New blank PDF	Новый пустой PDF
@@ -1650,9 +1659,11 @@ key	Home	Home
 	None of these signatures can be removed.	Ни одну из этих подписей нельзя удалить.
 	None of your digital IDs can open this document.	Ни один из ваших цифровых идентификаторов не может открыть этот документ.
 	None — everything is allowed	Нет — всё разрешено
+	Normal	Обычное
 scroll speed	Normal	Обычная
 	Normal page	Обычная страница
 	Not allowed	Не разрешено
+	Not confirmed by the printer	Не подтверждено принтером
 	Not in order	Вне порядка
 	Not now	Не сейчас
 	Not present	Отсутствует
@@ -1704,6 +1715,7 @@ animation effects	On	Вкл
 	Only change the colour of black text or line art	Менять только цвет чёрного текста и линий
 	Only checked properties will change. Mixed means the selected fields have different values.	Изменятся только отмеченные свойства. «Разные значения» означает, что значения выбранных полей различаются.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Обрезаются только чёткие края бумаги. Неразличимые белые поля сохраняются.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Принимаются только IP-адреса этой сети (частные, link-local или loopback), но не имена узлов.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Отправляйте данные, только если доверяете документу и адресу назначения. GET помещает значения формы в URL.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Отправляйте только если доверяете документу и адресу назначения. Весь PDF покинет этот компьютер.
 	Only send if you trust this document and destination. The form values leave this computer.	Отправляйте данные, только если доверяете документу и адресу назначения. Значения формы покинут этот компьютер.
@@ -1948,9 +1960,14 @@ animation effects	On	Вкл
 	Print production	Подготовка к печати
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage или LastPage
 	Printed through the system print dialog	Напечатано через системный диалог печати
+	Printed with errors	Напечатано с ошибками
+	Printed with warnings	Напечатано с предупреждениями
+	Printer address:	Адрес принтера:
 	Printer default	По умолчанию для принтера
+	Printer orientation:	Ориентация принтера:
 	Printer paper and scaling may differ. Check driver settings.	Бумага и масштаб принтера могут отличаться. Проверьте настройки драйвера.
 	Printer properties	Свойства принтера
+	Printer status: {state}	Состояние принтера: {state}
 	Printing allowed	Печать разрешена
 	Privacy	Конфиденциальность
 	Private data of other applications	Личные данные других приложения
@@ -1970,7 +1987,10 @@ animation effects	On	Вкл
 	Public key	Открытый ключ
 	Purple	Фиолетовый
 	PushButton	Кнопка
+	Quality:	Качество:
 	Quantity	Величина
+	Query printer	Опросить принтер
+	Query the printer first to see what it supports.	Сначала опросите принтер, чтобы узнать, что он поддерживает.
 	Quirks	Особенности
 	Quit	Выйти
 	Quit PdfCraft	Завершить PdfCraft
@@ -2007,6 +2027,7 @@ animation effects	On	Вкл
 	Real length	Реальная длина
 	Reason	Причина
 	Reason: 	Причина: 
+	Reasons: {reasons}	Причины: {reasons}
 	Recent	Недавние
 	Recent colours	Недавние цвета
 	Recent files to keep	Recent files to keep
@@ -2166,8 +2187,10 @@ animation effects	On	Вкл
 	Return to document	Вернуться к документу
 	Reveal in File Explorer	Показать в проводнике
 	Reverse closed arrow	Обратная закрытая стрелка
+	Reverse landscape	Альбомная, перевёрнутая
 	Reverse open arrow	Обратная открытая стрелка
 	Reverse pages	Страницы в обратном порядке
+	Reverse portrait	Книжная, перевёрнутая
 	reverse side(s)	оборот(ы)
 	Reverse sides	Оборотные стороны
 	Reverse sides interleaved.	Обороты вставлены поочерёдно.
@@ -2368,6 +2391,7 @@ animation effects	On	Вкл
 	Sending…	Отправка…
 	Sensitivity (screen pixels)	Чувствительность (пиксели экрана)
 	Sent to {printer}: {msg}	Отправлено на {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Отправлено. Принтер не может сказать, напечатано ли.
 	Separate display coordinate system	Отдельная система координат отображения
 	Separate PDFs	Отдельные PDF
 	Separate the sheets and load the remaining ones, then choose Continue.	Разделите листы и загрузите оставшиеся, затем нажмите «Продолжить сканирование».
@@ -2409,6 +2433,8 @@ animation effects	On	Вкл
 	Shadings	Теневые
 	Shared Field Properties	Общие свойства полей
 	Sheet {s} of {n}	Лист {s} из {n}
+	Sheets printed: {done} of {total}	Напечатано листов: {done} из {total}
+	Sheets printed: {n}	Напечатано листов: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift ограничивает до 45 градусов. Backspace удаляет вершину. Escape отменяет.
 	Shift drags freely	Shift перетаскивает свободно
@@ -2556,6 +2582,7 @@ document scrollbar width	Standard	Стандартная
 	Status	Статус
 	Steps	Шаги
 	Sticky note	Стикер
+	Still printing; the job continues on the printer	Печать продолжается; задание выполняется на принтере
 	Stop reading	Остановить чтение
 	Straighten scanned page	Выровнять отсканированную страницу
 	Straighten skewed scans	Выравнивать наклонённые сканы
@@ -2664,6 +2691,7 @@ document scrollbar width	Standard	Стандартная
 	The document changed while it was being signed, so the signature wasn't saved.	Документ изменился во время подписания, поэтому подпись не сохранена.
 	The document changed while its margins were measured; nothing was cropped	Документ изменился во время измерения полей; ничего не обрезано
 	The document changed while you were editing field properties.	Документ изменился, пока вы редактировали свойства полей.
+	The document couldn't be prepared	Не удалось подготовить документ
 	The document has additional actions (/AA)	У документа есть дополнительные действия (/AA)
 	The document has document-level JavaScript	У документа есть JavaScript уровня документа
 	the document has no form fields	в документе нет полей формы
@@ -2702,6 +2730,7 @@ document scrollbar width	Standard	Стандартная
 	The image has been copied ({w} × {h} pixels)	Изображение скопировано ({w} × {h} пикселей)
 	The image has been copied as a {ext} file	Изображение скопировано как файл {ext}
 	the image is empty	изображение пустое
+	The job was canceled	Задание отменено
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Ключ находится в Keychain macOS, который может запросить разрешение на использование PdfCraft.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Ключ находится в хранилище сертификатов Windows, которое может запросить разрешение на использование PdfCraft.
 	The key is on the device, which may ask for its PIN itself.	Ключ находится на устройстве, которое может само запросить PIN-код.
@@ -2731,7 +2760,18 @@ document scrollbar width	Standard	Стандартная
 	The PIN is incorrect.	Неверный PIN-код.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Не удалось перечислить цифровые идентификаторы токенов PKCS #11: {e}
 	The preview could not be shown.	Не удалось показать предпросмотр.
+	The print job stopped unexpectedly	Задание печати неожиданно остановилось
+	The printer accepts none of the formats this document can be sent in	Принтер не принимает ни один из форматов, в которых можно отправить этот документ
+	The printer address was refused	Адрес принтера отклонён
+	The printer doesn't support this setting	Принтер не поддерживает этот параметр
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Собственные параметры драйвера принтера для этой печати: лоток, тип бумаги, финишная обработка и другое.
+	The printer is printing it	Принтер печатает задание
+	The printer may have received the document. Check the printer before sending again.	Возможно, принтер получил документ. Проверьте принтер, прежде чем отправлять снова.
+	The printer no longer lists the job; it most likely finished	Принтер больше не показывает задание; скорее всего, оно завершено
+	The printer paused the job; it needs attention	Принтер приостановил задание; требуется внимание
+	The printer refused the request	Принтер отклонил запрос
+	The printer stopped the job	Принтер остановил задание
+	The printer's reply couldn't be understood	Ответ принтера не удалось понять
 	The provider's page didn't come back in time. Try again.	Страница поставщика не вернулась вовремя. Попробуйте ещё раз.
 	The raw text was truncated to what fits.	Исходный текст был обрезан.
 	The redaction does not fit page {page}; no pages were marked.	Область удаления не помещается на странице {page}; страницы не отмечены.
@@ -2866,7 +2906,13 @@ document scrollbar width	Standard	Стандартная
 	This page has no 3D models.	На этой странице нет 3D-моделей.
 	This PDF uses the unsupported {s} action.	В этом PDF используется неподдерживаемое действие {s}.
 	This point could not be moved. Try a smaller move.	Не удалось переместить эту точку. Попробуйте меньшее смещение.
+	This printer does not take a copies setting.	Этот принтер не поддерживает настройку числа копий.
+	This printer does not take a quality setting.	Этот принтер не поддерживает настройку качества.
+	This printer does not take a resolution setting.	Этот принтер не поддерживает настройку разрешения.
+	This printer does not take an orientation setting.	Этот принтер не поддерживает настройку ориентации.
 	This printer offers no settings of its own.	У этого принтера нет собственных параметров.
+	This printer only prints in black and white.	Этот принтер печатает только в чёрно-белом режиме.
+	This printer only prints one-sided.	Этот принтер печатает только на одной стороне.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Драйвер этого принтера не принимает настройки двусторонней печати от других программ, поэтому действует его собственная настройка. Измените её в окне Свойства…
 	this signature can't be removed on its own	эту подпись нельзя удалить отдельно
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	эту службу подписи нельзя использовать: ей нужен вход через OAuth в браузере, который PdfCraft пока не поддерживает
@@ -3040,6 +3086,7 @@ document scrollbar width	Standard	Стандартная
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Дождитесь, пока сканер закончит работу, или закройте другие программы, которые его используют, затем нажмите «Повторить».
 	Waiting for the system print dialog…	Ожидание системного диалога печати…
 	Waiting for your approval in the browser…	Ожидание вашего подтверждения в браузере…
+	Waiting in the printer's queue	Ожидает в очереди принтера
 	Warning	Warning
 	Watermark	Водяной знак
 	watermark	водяной знак

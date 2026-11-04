@@ -68,6 +68,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Bir PNG veya SVG dosyası. PdfCraft her başlatıldığında bu konumdan okunur.
 	A script	Bir komut dosyası
 	A selected field has no widget on any page, so the fields can't be edited together.	Seçilen bir alanın hiçbir sayfada pencere öğesi yok, bu nedenle alanlar birlikte düzenlenemez.
+	A setting isn't valid	Bir ayar geçerli değil
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Sayfa içeriğinin parçası olan bir imza, örneğin taranmış bir sayfada, bir alan ya da açıklama değildir; bu yüzden tek başına kaldırılamaz ve PdfCraft onu gizlemek için sayfanın bölümlerini silmez. Kaldırmak için o alanı karartın (Karart) ya da imza ayrı bir görüntüyse görüntüyü PDF'i düzenle ile silin.
 	A stream refers to an external file	Bir akış harici bir dosyaya başvuruyor
 	A stream uses LZW compression	Bir akış LZW sıkıştırması kullanıyor
@@ -81,6 +82,7 @@
 	About PdfCraft	PdfCraft hakkında
 	About {app}	{app} Hakkında
 	Accepted	Kabul edildi
+	Accepted by {printer}	{printer} kabul etti
 	Accessibility Checker	Erişilebilirlik Denetleyicisi
 	Accessibility Checker Options	Erişilebilirlik Denetleyicisi Seçenekleri
 	Accessibility panel	Erişilebilirlik paneli
@@ -290,6 +292,7 @@
 	Ask before a document opens in Full Screen mode	Bir belge tam ekran modunda açılmadan önce sor
 	Ask in any language	Herhangi bir dilde sorun
 	Ask whether to recognize the current page or all pages when editing a scan.	Taranmış bir belge düzenlenirken geçerli sayfanın mı yoksa tüm sayfaların mı tanınacağını sor.
+	Asking the printer…	Yazıcıya soruluyor…
 	Asking {server}…	{server} sorgulanıyor…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	En son sürüm için GitHub'ı sorgular. Hiçbir şey otomatik olarak indirilmez veya kurulmaz.
 	Assistant	Yardımcı
@@ -385,6 +388,7 @@
 	Callout	Açıklama Balonu
 	Can't be read: {e}	Okunamıyor: {e}
 	Cancel reverse sides	Arka yüzleri iptal et
+	Canceling…	İptal ediliyor…
 	Cancelled	İptal edildi
 	Cancelling…	İptal ediliyor…
 	Card driver (PKCS #11)	Kart sürücüsü (PKCS #11)
@@ -642,6 +646,7 @@
 	Couldn't optimize the file	Dosya en iyileştirilemedi
 	Couldn't optimize the file: {e}	Dosya en iyileştirilemedi: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Tarayıcıdan yazdırılamadı ({e}); bunun yerine yazdırmak için {name} indirildi
+	Couldn't reach the printer	Yazıcıya ulaşılamadı
 	Couldn't read {name}: {e}	{name} okunamadı: {e}
 	Couldn't recover {name}: {e}	{name} kurtarılamadı: {e}
 	Couldn't reload {name}: {e}	{name} yeniden yüklenemedi: {e}
@@ -1232,6 +1237,7 @@ calendar weekday	Fr	Cu
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Başlık düzeyleri atlanmamalıdır (örneğin H1 ardından H3). Başlıkları yeniden etiketleyin.
 	Hebrew (ISO 8859-8)	İbranice (ISO 8859-8)
 	Hebrew (Windows-1255)	İbranice (Windows-1255)
+	Held by the printer	Yazıcı tarafından bekletiliyor
 	Help…	Yardım…
 	Heritage	Heritage
 	Hidden layers	Gizli katmanlar
@@ -1266,6 +1272,7 @@ key	Home	Home
 	HTML web page	HTML web sayfası
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Macarca OCR için Tesseract 5 ve hun dil modeli içeren masaüstü uygulaması gerekir. Kurulumdan sonra PdfCraft uygulamasını yeniden başlatın.
 	H{n} follows an H{d}; headings should not skip levels	H{n}, bir H{d} ardından geliyor; başlıklar düzey atlamamalı
+	I confirm sending this document to this printer	Bu belgenin bu yazıcıya gönderilmesini onaylıyorum
 	Identity	Kimlik
 	Image	Resim
 	Image (PNG)	Resim (PNG)
@@ -1589,6 +1596,7 @@ calendar weekday	Mo	Pt
 	Negative number style:	Negatif sayı stili:
 	Nested alternate text	İç içe alternatif metin
 	Network	Ağ
+	Network printer (WS-Print)	Ağ yazıcısı (WS-Print)
 	Never	Hiçbir zaman
 	New Action	Yeni Eylem
 	New Action…	Yeni Eylem…
@@ -1695,9 +1703,11 @@ calendar weekday	Mo	Pt
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Bu dosyaların hiçbiri PDF'e dönüştürülemez; PDF'ler, resimler veya .txt dosyaları kullanın
 	None of your digital IDs can open this document.	Dijital kimliklerinizin hiçbiri bu belgeyi açamıyor.
 	None — everything is allowed	Yok — her şeye izin verilir
+	Normal	Standart
 scroll speed	Normal	Orta
 	Normal page	Normal sayfa
 	Not allowed	İzin verilmiyor
+	Not confirmed by the printer	Yazıcı tarafından doğrulanmadı
 	not in a Table, THead, TBody or TFoot	bir Table, THead, TBody ya da TFoot içinde değil
 	not in a TR	bir TR içinde değil
 	not in an L (list)	bir L (liste) içinde değil
@@ -1751,6 +1761,7 @@ animation effects	On	Açık
 	Only checked properties will change. Mixed means the selected fields have different values.	Yalnızca işaretli özellikler değişir. Karışık, seçilen alanların farklı değerlere sahip olduğu anlamına gelir.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Yalnızca belirgin kâğıt kenarları kırpılır. Ayırt edilemeyen beyaz kenarlıklar korunur.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Yalnızca bu belgeye güveniyorsanız devam edin. Bir adres, formuna yazdıklarınız gibi belgeden bilgi taşıyabilir.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Yalnızca bu ağdaki IP adresleri kabul edilir (özel, bağlantı yerel veya geri döngü); ana bilgisayar adları kabul edilmez.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Yalnızca bu belgeye ve hedefe güveniyorsanız gönderin. GET form değerlerini URL’ye koyar.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Yalnızca bu belgeye ve hedefe güveniyorsanız gönderin. Tam PDF belgesi bu bilgisayardan çıkar.
 	Only send if you trust this document and destination. The form values leave this computer.	Yalnızca bu belgeye ve hedefe güveniyorsanız gönderin. Form değerleri bu bilgisayardan çıkar.
@@ -2020,9 +2031,14 @@ animation effects	On	Açık
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Tek taraflı yazdırın. Sayfaları sırayla tutun, işaretlerden kesin, ardından desteleri soldan sağa, yukarıdan aşağıya istifleyin.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage veya LastPage
 	Printed through the system print dialog	Sistemin yazdırma penceresiyle yazdırıldı
+	Printed with errors	Hatalarla yazdırıldı
+	Printed with warnings	Uyarılarla yazdırıldı
+	Printer address:	Yazıcı adresi:
 	Printer default	Yazıcı varsayılanı
+	Printer orientation:	Yazıcı yönü:
 	Printer paper and scaling may differ. Check driver settings.	Yazıcı kâğıdı ve ölçekleme farklı olabilir. Sürücü ayarlarını kontrol edin.
 	Printer properties	Yazıcı özellikleri
+	Printer status: {state}	Yazıcı durumu: {state}
 	Printing allowed	Baskıya izin verildi
 	Privacy	Gizlilik
 	Private data of other applications	Diğer uygulamaların özel verileri
@@ -2039,6 +2055,9 @@ animation effects	On	Açık
 	Public domain	Kamu malı
 	Public key	Ortak anahtar
 	PushButton	BasmaDüğmesi
+	Quality:	Kalite:
+	Query printer	Yazıcıyı sorgula
+	Query the printer first to see what it supports.	Neleri desteklediğini görmek için önce yazıcıyı sorgulayın.
 	Quirks	Özel durumlar
 	Quit	Çıkış
 	Quit PdfCraft	PdfCraft’ten Çık
@@ -2073,6 +2092,7 @@ animation effects	On	Açık
 	Reads {name}, which the form doesn't have, so it gets no value there.	Formda olmayan {name} alanını okur, bu yüzden oradan değer alamaz.
 	Reason	Neden
 	Reason: 	Neden: 
+	Reasons: {reasons}	Nedenler: {reasons}
 	Recent	Son kullanılanlar
 	Recent colours	Son kullanılan renkler
 	Recent files to keep	Saklanacak son dosya sayısı
@@ -2234,8 +2254,10 @@ animation effects	On	Açık
 	Reveal in File Explorer	Dosya Gezgini’nde göster
 	Reveal in Finder	Finder’da göster
 	Reverse closed arrow	Ters kapalı ok
+	Reverse landscape	Yatay, ters
 	Reverse open arrow	Ters açık ok
 	Reverse pages	Sayfaları ters sırala
+	Reverse portrait	Dikey, ters
 	reverse side(s)	arka yüz
 	Reverse sides	Arka yüzler
 	Reverse sides interleaved.	Arka yüzler aralandı.
@@ -2439,6 +2461,7 @@ calendar weekday	Sa	Ct
 	Sending…	Gönderiliyor…
 	Sensitivity	Duyarlılık
 	Sent to {printer}: {msg}	{printer} yazıcısına gönderildi: {msg}
+	Sent. The printer can't say whether it printed.	Gönderildi. Yazıcı yazdırıp yazdırmadığını söyleyemiyor.
 	Separate PDFs	Ayrı PDF'ler
 	Separate the sheets and load the remaining ones, then choose Continue.	Sayfaları ayırın ve kalanları yerleştirin, ardından “Taramaya devam et” seçeneğini seçin.
 	Separate the sheets and load them again, then choose Try again.	Sayfaları ayırın ve yeniden yerleştirin, ardından “Yeniden dene” seçeneğini seçin.
@@ -2481,6 +2504,8 @@ calendar weekday	Sa	Ct
 	Shadings	Gölgelendirmeler
 	Shared Field Properties	Paylaşılan Alan Özellikleri
 	Sheet {s} of {n}	Yaprak {s} / {n}
+	Sheets printed: {done} of {total}	Yazdırılan sayfalar: {done} / {total}
+	Sheets printed: {n}	Yazdırılan sayfalar: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift 45 dereceye sabitler. Geri alma tuşu bir köşeyi kaldırır. Escape iptal eder.
 	Shift drags freely	Shift serbest sürükler
@@ -2629,6 +2654,7 @@ action wizard	Start	Başlat
 	Steps	Adımlar
 	Stick to a side:	Bir kenara yapıştır:
 	Sticky note	Not
+	Still printing; the job continues on the printer	Yazdırma sürüyor; iş yazıcıda devam ediyor
 	Still rendering — this page is unusually complex…	Hâlâ işleniyor — bu sayfa alışılmadık derecede karmaşık…
 	Stop reading	Okumayı durdur
 	Straighten scanned page	Taranmış sayfayı düzelt
@@ -2746,6 +2772,7 @@ calendar weekday	Th	Pe
 	The document changed while its margins were measured; nothing was cropped	Kenar boşlukları ölçülürken belge değişti; hiçbir şey kırpılmadı
 	The document changed while you were choosing a file, so nothing was changed.	Bir dosya seçerken belge değişti, bu yüzden hiçbir şey değiştirilmedi.
 	The document changed while you were editing field properties.	Alan özelliklerini düzenlerken belge değişti.
+	The document couldn't be prepared	Belge hazırlanamadı
 	The document has additional actions (/AA)	Belgede ek eylemler var (/AA)
 	The document has been altered or corrupted since the signature was applied.	Belge, imza uygulandıktan sonra değiştirilmiş ya da bozulmuş.
 	The document has been altered or corrupted since the timestamp was applied.	Belge, zaman damgası uygulandıktan sonra değiştirilmiş ya da bozulmuş.
@@ -2802,6 +2829,7 @@ calendar weekday	Th	Pe
 	The image has been copied ({w} × {h} pixels)	Resim kopyalandı ({w} × {h} piksel)
 	The image has been copied as a {ext} file	Resim {ext} dosyası olarak kopyalandı
 	the image is empty	resim boş
+	The job was canceled	İş iptal edildi
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Anahtar macOS Anahtar Zinciri'ndedir ve PdfCraft'ın kullanmasına izin vermenizi isteyebilir.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Anahtar Windows sertifika deposundadır ve PdfCraft'ın kullanmasına izin vermenizi isteyebilir.
 	The key is on the device, which may ask for its PIN itself.	Anahtar cihazdadır; cihaz PIN kodunu kendisi isteyebilir.
@@ -2834,7 +2862,18 @@ calendar weekday	Th	Pe
 	The PIN is incorrect.	PIN yanlış.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 jetonlarının dijital kimlikleri listelenemedi: {e}
 	The preview could not be shown.	Önizleme gösterilemedi.
+	The print job stopped unexpectedly	Yazdırma işi beklenmedik şekilde durdu
+	The printer accepts none of the formats this document can be sent in	Yazıcı, bu belgenin gönderilebileceği biçimlerin hiçbirini kabul etmiyor
+	The printer address was refused	Yazıcı adresi reddedildi
+	The printer doesn't support this setting	Yazıcı bu ayarı desteklemiyor
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Bu baskı için yazıcı sürücüsünün kendi ayarları: kağıt tepsisi, kağıt türü, sonlandırma ve daha fazlası.
+	The printer is printing it	Yazıcı bunu yazdırıyor
+	The printer may have received the document. Check the printer before sending again.	Yazıcı belgeyi almış olabilir. Yeniden göndermeden önce yazıcıyı kontrol edin.
+	The printer no longer lists the job; it most likely finished	Yazıcı işi artık listelemiyor; büyük olasılıkla tamamlandı
+	The printer paused the job; it needs attention	Yazıcı işi duraklattı; ilgi gerekiyor
+	The printer refused the request	Yazıcı isteği reddetti
+	The printer stopped the job	Yazıcı işi durdurdu
+	The printer's reply couldn't be understood	Yazıcının yanıtı anlaşılamadı
 	The provider's page didn't come back in time. Try again.	Sağlayıcının sayfası zamanında dönmedi. Yeniden deneyin.
 	The raw text was truncated to what fits.	Ham metin kısaltıldı.
 	The redaction does not fit page {page}; no pages were marked.	Karartma {page}. sayfaya sığmıyor; hiçbir sayfa işaretlenmedi.
@@ -3011,7 +3050,13 @@ calendar weekday	Th	Pe
 	This page has an opaque background of its own, which hides the image behind it.	Bu sayfanın kendine ait opak bir arka planı var ve arkasındaki görüntüyü gizler.
 	This PDF uses the unsupported {s} action.	Bu PDF desteklenmeyen {s} eylemini kullanıyor.
 	This point could not be moved. Try a smaller move.	Bu nokta taşınamadı. Daha küçük bir kaydırma deneyin.
+	This printer does not take a copies setting.	Bu yazıcı kopya sayısı ayarını desteklemiyor.
+	This printer does not take a quality setting.	Bu yazıcı kalite ayarını desteklemiyor.
+	This printer does not take a resolution setting.	Bu yazıcı çözünürlük ayarını desteklemiyor.
+	This printer does not take an orientation setting.	Bu yazıcı yön ayarını desteklemiyor.
 	This printer offers no settings of its own.	Bu yazıcı kendi başına hiçbir ayar sunmuyor.
+	This printer only prints in black and white.	Bu yazıcı yalnızca siyah beyaz yazdırır.
+	This printer only prints one-sided.	Bu yazıcı yalnızca tek yüze yazdırır.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Bu yazıcının sürücüsü diğer programlardan gelen çift taraflı yazdırma ayarlarını kabul etmez, bu yüzden kendi ayarı geçerlidir. Değiştirmek için: Özellikler…
 	this signature can't be removed on its own	bu imza tek başına kaldırılamaz
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Bu imza, artık imzalar için yeterince güçlü sayılmayan, 2048 bitten kısa bir RSA anahtarı kullanıyor. Hâlâ doğrulanıyor ancak güvenilmemelidir.
@@ -3192,6 +3237,7 @@ signature pad	Type	Yaz
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Tarayıcının işi bitirmesini bekleyin veya onu kullanan diğer programları kapatın, ardından “Yeniden dene” seçeneğini seçin.
 	Waiting for the system print dialog…	Sistemin yazdırma penceresi bekleniyor…
 	Waiting for your approval in the browser…	Tarayıcıda onayınız bekleniyor…
+	Waiting in the printer's queue	Yazıcının sırasında bekliyor
 	watermark	filigran
 calendar weekday	We	Ça
 	Weak	Zayıf

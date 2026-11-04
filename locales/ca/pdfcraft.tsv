@@ -64,6 +64,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un fitxer PNG o SVG. Es llegeix des d'aquesta ubicació cada vegada que s'inicia PdfCraft.
 	A script	Un script
 	A selected field has no widget on any page, so the fields can't be edited together.	Un camp seleccionat no té cap giny a cap pàgina, de manera que els camps no es poden editar junts.
+	A setting isn't valid	Una opció no és vàlida
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Una signatura que forma part del contingut d'una pàgina, com en una pàgina escanejada, no és un camp ni una anotació, de manera que no es pot eliminar tota sola, i el PdfCraft no esborra parts d'una pàgina per amagar-la. Per treure-la, censureu aquesta àrea (Censura) o, si la signatura és una imatge independent, suprimiu la imatge amb Edita un PDF.
 	A stream refers to an external file	Un flux fa referència a un fitxer extern
 	A stream uses LZW compression	Un flux utilitza compressió LZW
@@ -78,6 +79,7 @@
 	About PdfCraft	Quant a PdfCraft
 	About {app}	Quant al {app}
 	Accepted	Acceptat
+	Accepted by {printer}	Acceptada per {printer}
 	Accessibility	Accessibilitat
 	Accessibility Checker	Verificador d'accessibilitat
 	Accessibility Checker Options	Opcions del verificador d'accessibilitat
@@ -292,6 +294,7 @@ calendar date	April	Abril
 	Ask about this document	Pregunta sobre aquest document
 	Ask before a document opens in Full Screen mode	Pregunta abans que un document s'obri en mode de pantalla completa
 	Ask whether to recognize the current page or all pages when editing a scan.	Pregunta si cal reconèixer la pàgina actual o totes les pàgines en editar un document escanejat.
+	Asking the printer…	Consultant la impressora…
 	Asking {server}…	S'està consultant {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Consulta a GitHub la darrera versió. No es baixa ni s'instal·la res automàticament.
 	Associated with content	Associat amb contingut
@@ -386,6 +389,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	Can't be read: {e}	No es pot llegir: {e}
 	Cancel	Cancel·la
 	Cancel reverse sides	Cancel reverse sides
+	Canceling…	Cancel·lant…
 	Cancelled	Cancel·lat
 	Cancelling…	Cancel·lant…
 	Card driver (PKCS #11)	Controlador de la targeta (PKCS #11)
@@ -644,6 +648,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	Couldn't optimize the file	No s'ha pogut optimitzar el fitxer
 	Couldn't optimize the file: {e}	No s'ha pogut optimitzar el fitxer: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	No s'ha pogut imprimir des del navegador ({e}); s'ha baixat {name} per imprimir-lo en lloc d'això
+	Couldn't reach the printer	No s'ha pogut contactar amb la impressora
 	Couldn't read {name}: {e}	No s'ha pogut llegir {name}: {e}
 	Couldn't recover {name}: {e}	No s'ha pogut recuperar {name}: {e}
 	Couldn't reload {name}: {e}	No s'ha pogut tornar a carregar {name}: {e}
@@ -872,6 +877,7 @@ key	Delete	Supr
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	La baixada d'adjunts a la web arriba amb M3.10 ({n} bytes preparats)
 	Downsample to	Redueix la resolució a
 	DPI sets the printed page size without resampling the image.	Els DPI defineixen la mida de la pàgina impresa sense remostrejar la imatge.
+	Draft	Esborrany
 	Drag a field to move it, or select it and press {up} or {down}.	Drag a field to move it, or select it and press {up} or {down}.
 	Drag a point to reshape the line. Delete removes it.	Arrossegueu un punt per canviar la forma de la línia. Supr l'elimina.
 	Drag a rectangle around the area to copy	Arrossega un rectangle al voltant de l'àrea que vols copiar
@@ -1250,6 +1256,7 @@ calendar weekday	Fr	dv.
 	Headings	Encapçalaments
 	Height	Alçada
 	Height:	Alçada:
+	Held by the printer	Retinguda per la impressora
 	Help	Ajuda
 	Help…	Ajuda…
 	Hidden layers	Capes ocultes
@@ -1284,6 +1291,7 @@ key	Home	Inici
 	Horizontally	Horitzontalment
 	HTML web page	Pàgina web HTML
 	H{n} follows an H{d}; headings should not skip levels	H{n} va després d'un H{d}; els encapçalaments no haurien de saltar nivells
+	I confirm sending this document to this printer	Confirmo l'enviament d'aquest document a aquesta impressora
 	Icon	Icona
 	Identity	Identitat
 	Image	Imatge
@@ -1619,6 +1627,7 @@ calendar weekday	Mo	dl.
 	Negative number style:	Estil dels números negatius:
 	Nested alternate text	Text alternatiu imbricat
 	Network	Network
+	Network printer (WS-Print)	Impressora de xarxa (WS-Print)
 	Never	Mai
 	New Action	Acció nova
 	New Action…	Acció nova…
@@ -1716,8 +1725,10 @@ calendar weekday	Mo	dl.
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Cap d'aquests fitxers es pot convertir en PDF; utilitza PDF, imatges o fitxers .txt
 	None of your digital IDs can open this document.	Cap dels teus identificadors digitals pot obrir aquest document.
 	None — everything is allowed	Cap — tot està permès
+	Normal	Normal
 scroll speed	Normal	Normal
 	Not allowed	No permès
+	Not confirmed by the printer	La impressora no ho ha confirmat
 	not in a Table, THead, TBody or TFoot	no és dins d'un Table, THead, TBody o TFoot
 	not in a TR	no és dins d'un TR
 	not in an L (list)	no és dins d'un L (llista)
@@ -1771,6 +1782,7 @@ animation effects	On	Activats
 	Only change the colour of black text or line art	Canvia només el color del text negre o dels dibuixos de línies
 	Only checked properties will change. Mixed means the selected fields have different values.	Només canviaran les propietats marcades. Barrejat vol dir que els camps seleccionats tenen valors diferents.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Continua només si confies en aquest document. Una adreça pot dur informació del document, com ara el que has escrit al formulari.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Només s'accepten adreces IP d'aquesta xarxa (privades, d'enllaç local o de bucle local), no noms d'amfitrió.
 	Only the document's owner can change its security (open it with the permissions password)	Només el propietari del document en pot canviar la seguretat (obre'l amb la contrasenya de permisos)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Només canvia el contingut de la pàgina: els enllaços, comentaris, camps de formulari i marcadors de les pàgines originals es mantenen.
 	Only the recipients can open the document, each with the private key of their own certificate.	Només els destinataris poden obrir el document, cadascun amb la clau privada del seu propi certificat.
@@ -2041,9 +2053,14 @@ animation effects	On	Activats
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Imprimeix a una cara. Mantén els fulls en ordre, talla per les marques i apila els munts d'esquerra a dreta i de dalt a baix.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage o LastPage
 	Printed through the system print dialog	S'ha imprès amb el diàleg d'impressió del sistema
+	Printed with errors	Impresa amb errors
+	Printed with warnings	Impresa amb advertiments
+	Printer address:	Adreça de la impressora:
 	Printer default	Printer default
+	Printer orientation:	Orientació de la impressora:
 	Printer paper and scaling may differ. Check driver settings.	El paper i l'escala de la impressora poden ser diferents. Revisa la configuració del controlador.
 	Printer properties	Propietats de la impressora
+	Printer status: {state}	Estat de la impressora: {state}
 	Printer:	Impressora:
 	Printing	Impressió
 	Printing allowed	Impressió permesa
@@ -2067,6 +2084,9 @@ certificate	Public key	Clau pública
 	Purple	Porpra
 	PushButton	Botó d'acció
 	Quality	Qualitat
+	Quality:	Qualitat:
+	Query printer	Consulta la impressora
+	Query the printer first to see what it supports.	Consulta primer la impressora per veure què admet.
 	Quit PdfCraft	Surt del PdfCraft
 	Quit {app}	Surt de {app}
 	Radio	Botó d'opció
@@ -2085,6 +2105,7 @@ certificate	Public key	Clau pública
 	Real name	Nom real
 	Reason	Motiu
 	Reason: 	Motiu: 
+	Reasons: {reasons}	Motius: {reasons}
 	Recent	Recents
 	Recent colours	Colors recents
 	Recent files to keep	Recent files to keep
@@ -2243,8 +2264,10 @@ certificate	Public key	Clau pública
 	Reveal in File Explorer	Mostra a l'Explorador de fitxers
 	Reveal in Finder	Mostra al Finder
 	Reverse closed arrow	Fletxa tancada inversa
+	Reverse landscape	Horitzontal invertit
 	Reverse open arrow	Fletxa oberta inversa
 	Reverse pages	Inverteix les pàgines
+	Reverse portrait	Vertical invertit
 	reverse side(s)	reverse side(s)
 	Reverse sides	Reverse sides
 	Reverse sides interleaved.	Reverse sides interleaved.
@@ -2439,6 +2462,7 @@ certificate	Self-signed	Autosignat
 	Sensitivity	Sensibilitat
 	Sent to {printer}	Enviat a {printer}
 	Sent to {printer}: {msg}	Enviat a {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Enviat. La impressora no pot dir si ha imprès.
 	Separate PDFs	PDF separats
 	Separate the sheets and load the remaining ones, then choose Continue.	Separate the sheets and load the remaining ones, then choose Continue.
 	Separate the sheets and load them again, then choose Try again.	Separate the sheets and load them again, then choose Try again.
@@ -2484,6 +2508,8 @@ certificate	SHA-256 digest	Resum SHA-256
 	Shadings	Degradats
 	Shared Field Properties	Propietats compartides dels camps
 	Sheet {s} of {n}	Full {s} de {n}
+	Sheets printed: {done} of {total}	Fulls impresos: {done} de {total}
+	Sheets printed: {n}	Fulls impresos: {n}
 key	Shift	Maj
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Maj restringeix a 45 graus. Retrocés elimina un vèrtex. Esc cancel·la.
 	Shift- or Ctrl/Command-click to select several fields.	Fes clic amb Maj o Ctrl/Ordre premuts per seleccionar diversos camps.
@@ -2614,6 +2640,7 @@ action wizard	Start	Inicia
 	Status	Estat
 	Steps	Passos
 	Sticky note	Nota adhesiva
+	Still printing; the job continues on the printer	Encara s'imprimeix; la feina continua a la impressora
 	Still rendering — this page is unusually complex…	Encara es renderitza — aquesta pàgina és inusualment complexa…
 	Stop	Stop
 	Straighten the page	Straighten the page
@@ -2721,6 +2748,7 @@ calendar weekday	Th	dj.
 	The document changed while its margins were measured; nothing was cropped	El document ha canviat mentre se'n mesuraven els marges; no s'ha escapçat res
 	The document changed while you were choosing a file, so nothing was changed.	El document ha canviat mentre triaves un fitxer, de manera que no s'ha modificat res.
 	The document changed while you were editing field properties.	El document ha canviat mentre n'editaves les propietats dels camps.
+	The document couldn't be prepared	No s'ha pogut preparar el document
 	The document has additional actions (/AA)	El document té accions addicionals (/AA)
 	The document has been altered or corrupted since the signature was applied.	El document ha estat alterat o s'ha corromput des que es va aplicar la signatura.
 	The document has been altered or corrupted since the timestamp was applied.	El document ha estat alterat o s'ha corromput des que es va aplicar la marca de temps.
@@ -2774,6 +2802,7 @@ calendar weekday	Th	dj.
 	The image has been copied ({w} × {h} pixels)	S'ha copiat la imatge ({w} × {h} píxels)
 	The image has been copied as a {ext} file	S'ha copiat la imatge com a fitxer {ext}
 	the image is empty	la imatge és buida
+	The job was canceled	S'ha cancel·lat la feina
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	La clau és al clauer de macOS, que pot demanar permís perquè PdfCraft la utilitzi.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	La clau és al magatzem de certificats de Windows, que pot demanar permís perquè PdfCraft la utilitzi.
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	La clau és a {device}, que demana l'aprovació pel seu compte (un teclat de PIN o una aplicació al telèfon).
@@ -2802,7 +2831,18 @@ calendar weekday	Th	dj.
 	The PIN goes only to the card; PdfCraft doesn't keep it.	El PIN només va a la targeta; el PdfCraft no el desa.
 	The PIN is incorrect.	El PIN és incorrecte.
 	The preview could not be shown.	The preview could not be shown.
+	The print job stopped unexpectedly	La feina d'impressió s'ha aturat de manera inesperada
+	The printer accepts none of the formats this document can be sent in	La impressora no accepta cap dels formats en què es pot enviar aquest document
+	The printer address was refused	S'ha rebutjat l'adreça de la impressora
+	The printer doesn't support this setting	La impressora no admet aquesta opció
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	La configuració pròpia del controlador de la impressora per a aquesta impressió: safata de paper, tipus de paper, acabats i més.
+	The printer is printing it	La impressora l'està imprimint
+	The printer may have received the document. Check the printer before sending again.	És possible que la impressora hagi rebut el document. Comprova la impressora abans de tornar a enviar.
+	The printer no longer lists the job; it most likely finished	La impressora ja no mostra la feina; probablement ha acabat
+	The printer paused the job; it needs attention	La impressora ha posat la feina en pausa; necessita atenció
+	The printer refused the request	La impressora ha rebutjat la sol·licitud
+	The printer stopped the job	La impressora ha aturat la feina
+	The printer's reply couldn't be understood	No s'ha entès la resposta de la impressora
 	The provider's page didn't come back in time. Try again.	La pàgina del proveïdor no ha tornat a temps. Torneu-ho a provar.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	L'URI de redirecció ha de ser http://127.0.0.1 o http://localhost amb un port.
 	The replacement file doesn't have that many pages.	El fitxer de substitució no té tantes pàgines.
@@ -2963,7 +3003,13 @@ calendar weekday	Th	dj.
 	This page has an opaque background of its own, which hides the image behind it.	Aquesta pàgina té un fons opac propi, que amaga la imatge que hi ha al darrere.
 	This PDF uses the unsupported {s} action.	Aquest PDF utilitza l'acció {s}, que no és compatible.
 	This point could not be moved. Try a smaller move.	No s'ha pogut moure aquest punt. Proveu un desplaçament més petit.
+	This printer does not take a copies setting.	Aquesta impressora no admet l'opció de còpies.
+	This printer does not take a quality setting.	Aquesta impressora no admet l'opció de qualitat.
+	This printer does not take a resolution setting.	Aquesta impressora no admet l'opció de resolució.
+	This printer does not take an orientation setting.	Aquesta impressora no admet l'opció d'orientació.
 	This printer offers no settings of its own.	Aquesta impressora no ofereix cap configuració pròpia.
+	This printer only prints in black and white.	Aquesta impressora només imprimeix en blanc i negre.
+	This printer only prints one-sided.	Aquesta impressora només imprimeix a una cara.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	El controlador d'aquesta impressora no accepta la configuració de doble cara d'altres programes, de manera que s'aplica la seva pròpia configuració. Canvia-la a Propietats…
 	this signature can't be removed on its own	aquesta signatura no es pot eliminar tota sola
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.
@@ -3142,6 +3188,7 @@ certificate	Version	Versió
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	Esperant el diàleg d'impressió del sistema…
 	Waiting for your approval in the browser…	S'està esperant la vostra aprovació al navegador…
+	Waiting in the printer's queue	Esperant a la cua de la impressora
 	Warning	Avís
 	Warnings	Avisos
 	Watermark	Marca d'aigua

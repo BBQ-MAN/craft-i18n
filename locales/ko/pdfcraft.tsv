@@ -67,6 +67,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG 또는 SVG 파일입니다. PdfCraft를 시작할 때마다 이 위치에서 읽습니다.
 	A script	스크립트
 	A selected field has no widget on any page, so the fields can't be edited together.	선택한 필드 중 하나가 어느 페이지에도 위젯이 없어 필드를 함께 편집할 수 없습니다.
+	A setting isn't valid	설정이 올바르지 않습니다
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	스캔한 페이지처럼 페이지 내용의 일부인 서명은 필드나 주석이 아니므로 단독으로 제거할 수 없으며, PdfCraft는 이를 숨기려고 페이지의 일부를 지우지 않습니다. 제거하려면 해당 영역의 민감 정보를 제거하거나(민감 정보 제거), 서명이 별도의 이미지인 경우 PDF 편집으로 이미지를 삭제하세요.
 	A stream refers to an external file	스트림이 외부 파일을 참조합니다
 	A stream uses LZW compression	스트림이 LZW 압축을 사용합니다
@@ -80,6 +81,7 @@
 	About PdfCraft	PdfCraft 정보
 	About {app}	{app} 정보
 	Accepted	수락됨
+	Accepted by {printer}	{printer}에서 수락함
 	Accessibility Checker	접근성 검사기
 	Accessibility Checker Options	접근성 검사기 옵션
 	Accessibility panel	접근성 패널
@@ -279,6 +281,7 @@ calendar date	April	4월
 	Ask about this document	이 문서에 대해 질문
 	Ask before a document opens in Full Screen mode	문서를 전체 화면 모드로 열기 전에 확인
 	Ask whether to recognize the current page or all pages when editing a scan.	스캔을 편집할 때 현재 페이지 또는 모든 페이지의 텍스트를 인식할지 묻습니다.
+	Asking the printer…	프린터에 문의하는 중…
 	Asking {server}…	{server}에 확인 중…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	GitHub에 최신 릴리스를 요청합니다. 어떤 것도 자동으로 다운로드하거나 설치하지 않습니다.
 	Associated with content	콘텐츠와 연결됨
@@ -363,6 +366,7 @@ certificate	Basic constraints	기본 제약 조건
 	Callout	설명선
 	Can't be read: {e}	읽을 수 없음: {e}
 	Cancel reverse sides	Cancel reverse sides
+	Canceling…	취소하는 중…
 	Cancelled	취소됨
 	Cancelling…	취소하는 중…
 	Card driver (PKCS #11)	카드 드라이버(PKCS #11)
@@ -597,6 +601,7 @@ certificate	Basic constraints	기본 제약 조건
 	Couldn't optimize the file	파일을 최적화할 수 없습니다
 	Couldn't optimize the file: {e}	파일을 최적화할 수 없습니다: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	브라우저에서 인쇄할 수 없습니다({e}). 대신 인쇄용으로 {name}을(를) 내려받았습니다
+	Couldn't reach the printer	프린터에 연결할 수 없습니다
 	Couldn't read {name}: {e}	{name}을(를) 읽을 수 없습니다: {e}
 	Couldn't recover {name}: {e}	{name}을(를) 복구할 수 없습니다: {e}
 	Couldn't reload {name}: {e}	{name}을(를) 다시 불러올 수 없습니다: {e}
@@ -1132,6 +1137,7 @@ calendar weekday	Fr	금
 	header or footer	머리글 또는 바닥글
 	Headers	머리글
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	제목 수준을 건너뛰지 않아야 합니다(H1 다음에 H3이 오는 경우). 제목 태그를 다시 지정하세요.
+	Held by the printer	프린터에서 보류됨
 	Help…	도움말…
 	Hidden layers	숨겨진 레이어
 	Hide a field	필드 숨기기
@@ -1160,6 +1166,7 @@ key	Home	Home
 	Horizontal scale	가로 배율
 	HTML web page	HTML 웹 페이지
 	H{n} follows an H{d}; headings should not skip levels	H{n}이(가) H{d} 뒤에 옵니다. 제목 수준을 건너뛰면 안 됩니다
+	I confirm sending this document to this printer	이 문서를 이 프린터로 보내는 것을 확인합니다
 	Identity	신원 정보
 	Image (PNG)	이미지 (PNG)
 	Image field	이미지 필드
@@ -1447,6 +1454,7 @@ calendar weekday	Mo	월
 	Negative number style:	음수 스타일:
 	Nested alternate text	중첩된 대체 텍스트
 	Network	Network
+	Network printer (WS-Print)	네트워크 프린터(WS-Print)
 	New Action	새 동작
 	New Action…	새 동작…
 	New blank PDF	새 빈 PDF
@@ -1535,8 +1543,10 @@ calendar weekday	Mo	월
 	None of those files can be made into a PDF; use PDFs, images or .txt files	이 파일들은 어느 것도 PDF로 만들 수 없습니다. PDF, 이미지 또는 .txt 파일을 사용하세요
 	None of your digital IDs can open this document.	사용자의 디지털 ID 중 이 문서를 열 수 있는 것이 없습니다.
 	None — everything is allowed	없음 — 모든 작업이 허용됨
+	Normal	보통
 scroll speed	Normal	보통
 	Not allowed	허용 안 됨
+	Not confirmed by the printer	프린터가 확인하지 않음
 	not in a Table, THead, TBody or TFoot	Table, THead, TBody 또는 TFoot 안에 없음
 	not in a TR	TR 안에 없음
 	not in an L (list)	L(목록) 안에 없음
@@ -1589,6 +1599,7 @@ animation effects	On	켜기
 	Only change the colour of black text or line art	검은색 텍스트 또는 선 그림의 색상만 변경
 	Only checked properties will change. Mixed means the selected fields have different values.	체크한 속성만 변경됩니다. '혼합'은 선택한 필드가 서로 다른 값을 가진다는 뜻입니다.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	이 문서를 신뢰하는 경우에만 계속하세요. 주소에는 양식에 입력한 내용처럼 문서의 정보가 담길 수 있습니다.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	이 네트워크의 IP 주소만 허용됩니다(사설, 링크 로컬 또는 루프백). 호스트 이름은 허용되지 않습니다.
 	Only the document's owner can change its security (open it with the permissions password)	문서 소유자만 보안을 변경할 수 있습니다(권한 암호로 여세요)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	페이지 콘텐츠만 변경됩니다: 원본 페이지의 링크, 주석, 양식 필드 및 책갈피는 그대로 유지됩니다.
 	Only the recipients can open the document, each with the private key of their own certificate.	수신자만 각자 인증서의 개인 키로 문서를 열 수 있습니다.
@@ -1831,9 +1842,14 @@ animation effects	On	켜기
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	단면으로 인쇄하세요. 용지 순서를 유지하고 표시선에서 자른 다음, 더미를 왼쪽에서 오른쪽으로, 위에서 아래로 쌓으세요.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage 또는 LastPage
 	Printed through the system print dialog	시스템 인쇄 대화 상자로 인쇄했습니다
+	Printed with errors	오류와 함께 인쇄됨
+	Printed with warnings	경고와 함께 인쇄됨
+	Printer address:	프린터 주소:
 	Printer default	Printer default
+	Printer orientation:	프린터 방향:
 	Printer paper and scaling may differ. Check driver settings.	프린터 용지와 배율이 다를 수 있습니다. 드라이버 설정을 확인하세요.
 	Printer properties	프린터 속성
+	Printer status: {state}	프린터 상태: {state}
 	Printing allowed	인쇄 허용됨
 	Privacy	개인정보 보호
 	Private data of other applications	다른 응용 프로그램의 개인 데이터
@@ -1851,6 +1867,9 @@ animation effects	On	켜기
 certificate	Public key	공개 키
 	Purple	보라색
 	PushButton	누름 단추
+	Quality:	품질:
+	Query printer	프린터에 문의
+	Query the printer first to see what it supports.	먼저 프린터에 문의하여 지원하는 기능을 확인하세요.
 	Quit PdfCraft	PdfCraft 종료
 	Quit {app}	{app} 종료
 	Radio	라디오 단추
@@ -1867,6 +1886,7 @@ certificate	Public key	공개 키
 	Reads {name}, which the form doesn't have, so it gets no value there.	Reads {name}, which the form doesn't have, so it gets no value there.
 	Reason	이유
 	Reason: 	사유: 
+	Reasons: {reasons}	사유: {reasons}
 	Recent colours	최근 사용한 색상
 	Recent files to keep	Recent files to keep
 	Recipients	수신자
@@ -2010,8 +2030,10 @@ certificate	Public key	공개 키
 	Rev. {rev}: Signed by {name}	개정 {rev}: {name}이(가) 서명함
 	Reveal in File Explorer	파일 탐색기에서 보기
 	Reverse closed arrow	역방향 닫힌 화살표
+	Reverse landscape	가로 반전
 	Reverse open arrow	역방향 열린 화살표
 	Reverse pages	페이지 역순 인쇄
+	Reverse portrait	세로 반전
 	reverse side(s)	reverse side(s)
 	Reverse sides	Reverse sides
 	Reverse sides interleaved.	Reverse sides interleaved.
@@ -2189,6 +2211,7 @@ certificate	Self-signed	자체 서명됨
 	Sensitivity	민감도
 	Sent to {printer}	{printer}(으)로 보냈습니다
 	Sent to {printer}: {msg}	{printer}(으)로 보냈습니다: {msg}
+	Sent. The printer can't say whether it printed.	전송했습니다. 프린터는 인쇄 여부를 알려 줄 수 없습니다.
 	Separate PDFs	개별 PDF
 	Separate the sheets and load the remaining ones, then choose Continue.	Separate the sheets and load the remaining ones, then choose Continue.
 	Separate the sheets and load them again, then choose Try again.	Separate the sheets and load them again, then choose Try again.
@@ -2231,6 +2254,8 @@ certificate	SHA-256 digest	SHA-256 다이제스트
 	Shadings	음영
 	Shared Field Properties	공유 필드 속성
 	Sheet {s} of {n}	용지 {s}/{n}
+	Sheets printed: {done} of {total}	인쇄된 용지: {total}장 중 {done}장
+	Sheets printed: {n}	인쇄된 용지: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift 키를 누르면 45도 각도로 제한됩니다. Backspace 키는 꼭짓점을 지웁니다. Esc 키를 누르면 취소됩니다.
 	Shift- or Ctrl/Command-click to select several fields.	Shift 키 또는 Ctrl/Command 키를 누른 채 클릭하면 여러 필드를 선택할 수 있습니다.
@@ -2352,6 +2377,7 @@ action wizard	Start	시작
 	Start page number	시작 페이지 번호
 	Steps	단계
 	Sticky note	스티커 메모
+	Still printing; the job continues on the printer	아직 인쇄 중입니다. 작업은 프린터에서 계속됩니다
 	Still rendering — this page is unusually complex…	아직 렌더링 중입니다. 이 페이지는 이례적으로 복잡합니다…
 	Stop	Stop
 	Straighten the page	Straighten the page
@@ -2450,6 +2476,7 @@ calendar weekday	Th	목
 	The document changed while its margins were measured; nothing was cropped	여백을 측정하는 동안 문서가 변경되어 아무것도 자르지 않았습니다
 	The document changed while you were choosing a file, so nothing was changed.	파일을 선택하는 동안 문서가 변경되어 아무것도 변경되지 않았습니다.
 	The document changed while you were editing field properties.	필드 속성을 편집하는 동안 문서가 변경되었습니다.
+	The document couldn't be prepared	문서를 준비할 수 없습니다
 	The document has additional actions (/AA)	문서에 추가 동작(/AA)이 있습니다
 	The document has been altered or corrupted since the signature was applied.	서명이 적용된 이후 문서가 변경되었거나 손상되었습니다.
 	The document has been altered or corrupted since the timestamp was applied.	타임스탬프가 적용된 이후 문서가 변경되었거나 손상되었습니다.
@@ -2503,6 +2530,7 @@ calendar weekday	Th	목
 	The image has been copied ({w} × {h} pixels)	이미지가 복사되었습니다({w} × {h} 픽셀)
 	The image has been copied as a {ext} file	이미지가 {ext} 파일로 복사되었습니다
 	the image is empty	이미지가 비어 있음
+	The job was canceled	작업이 취소되었습니다
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	키가 macOS 키체인에 있으며, 이 키를 PdfCraft에서 사용할 수 있도록 허용할지 묻는 메시지가 표시될 수 있습니다.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	키가 Windows 인증서 저장소에 있으며, 이 키를 PdfCraft에서 사용할 수 있도록 허용할지 묻는 메시지가 표시될 수 있습니다.
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	키는 {device}에 있으며, 장치가 직접 승인을 요청합니다(PIN 패드 또는 휴대폰 앱).
@@ -2530,7 +2558,18 @@ calendar weekday	Th	목
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN은 카드로만 전달되며 PdfCraft는 저장하지 않습니다.
 	The PIN is incorrect.	PIN 번호가 올바르지 않습니다.
 	The preview could not be shown.	The preview could not be shown.
+	The print job stopped unexpectedly	인쇄 작업이 예기치 않게 중지되었습니다
+	The printer accepts none of the formats this document can be sent in	프린터가 이 문서를 보낼 수 있는 형식을 하나도 지원하지 않습니다
+	The printer address was refused	프린터 주소가 거부되었습니다
+	The printer doesn't support this setting	프린터가 이 설정을 지원하지 않습니다
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	이번 인쇄의 프린터 드라이버 자체 설정: 용지함, 용지 종류, 마감 처리 등.
+	The printer is printing it	프린터가 인쇄하는 중입니다
+	The printer may have received the document. Check the printer before sending again.	프린터가 문서를 받았을 수 있습니다. 다시 보내기 전에 프린터를 확인하세요.
+	The printer no longer lists the job; it most likely finished	프린터에 더 이상 작업이 표시되지 않습니다. 완료되었을 가능성이 높습니다
+	The printer paused the job; it needs attention	프린터가 작업을 일시 중지했습니다. 확인이 필요합니다
+	The printer refused the request	프린터가 요청을 거부했습니다
+	The printer stopped the job	프린터가 작업을 중지했습니다
+	The printer's reply couldn't be understood	프린터의 응답을 이해할 수 없습니다
 	The provider's page didn't come back in time. Try again.	공급자 페이지가 제때 돌아오지 않았습니다. 다시 시도하세요.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	리디렉션 URI는 포트가 있는 http://127.0.0.1 또는 http://localhost여야 합니다.
 	The replacement file doesn't have that many pages.	교체 파일에는 그만큼 많은 페이지가 없습니다.
@@ -2685,7 +2724,13 @@ calendar weekday	Th	목
 	This page has an opaque background of its own, which hides the image behind it.	이 페이지에는 뒤에 있는 이미지를 가리는 자체 불투명 배경이 있습니다.
 	This PDF uses the unsupported {s} action.	이 PDF는 지원되지 않는 {s} 작업을 사용합니다.
 	This point could not be moved. Try a smaller move.	이 점을 이동할 수 없습니다. 더 짧은 거리로 이동해 보세요.
+	This printer does not take a copies setting.	이 프린터는 매수 설정을 지원하지 않습니다.
+	This printer does not take a quality setting.	이 프린터는 품질 설정을 지원하지 않습니다.
+	This printer does not take a resolution setting.	이 프린터는 해상도 설정을 지원하지 않습니다.
+	This printer does not take an orientation setting.	이 프린터는 방향 설정을 지원하지 않습니다.
 	This printer offers no settings of its own.	이 프린터에는 자체 설정이 없습니다.
+	This printer only prints in black and white.	이 프린터는 흑백으로만 인쇄합니다.
+	This printer only prints one-sided.	이 프린터는 단면 인쇄만 지원합니다.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	이 프린터의 드라이버는 다른 프로그램의 양면 인쇄 설정을 받지 않으므로 자체 설정이 적용됩니다. 변경하려면 속성…
 	this signature can't be removed on its own	이 서명은 단독으로 제거할 수 없습니다
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	이 서명은 서명용으로 더 이상 권장되지 않는 레거시 160비트 해시 알고리즘인 RIPEMD-160을 사용합니다. 여전히 검증되지만 의존해서는 안 됩니다.
@@ -2841,6 +2886,7 @@ certificate	Version	버전
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	시스템 인쇄 대화 상자를 기다리는 중…
 	Waiting for your approval in the browser…	브라우저에서 승인을 기다리는 중…
+	Waiting in the printer's queue	프린터 대기열에서 대기 중
 	watermark	워터마크
 calendar weekday	We	수
 	Weak	약함

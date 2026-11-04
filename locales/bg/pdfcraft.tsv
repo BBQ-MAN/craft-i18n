@@ -63,6 +63,7 @@
 	A picture covers page {pages} (a scan?), so the background won't show there.	Изображение покрива страница {pages} (сканиране?), затова фонът няма да се вижда там.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG или SVG файл. Чете се от това място при всяко стартиране на PdfCraft.
 	A selected field has no widget on any page, so the fields can't be edited together.	Едно от избраните полета няма елемент на нито една страница, затова полетата не могат да се редактират заедно.
+	A setting isn't valid	Настройка не е валидна
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Подпис, който е част от съдържанието на страница (например на сканирана страница), не е поле или анотация, затова не може да се премахне самостоятелно, а PdfCraft не изтрива части от страницата, за да го скрие. За да го махнете, заличете тази област (Заличаване) или, ако подписът е отделно изображение, изтрийте го с „Редактирай PDF“.
 	A stream refers to an external file	Поток препраща към външен файл
 	A stream uses LZW compression	Поток използва LZW компресия
@@ -71,6 +72,7 @@
 	About PdfCraft	За PdfCraft
 	About {app}	Относно {app}
 	Accepted	Прието
+	Accepted by {printer}	Прието от {printer}
 	Accessibility Checker	Проверка на достъпността
 	Accessibility Checker Options	Опции на проверката за достъпност
 	Accessibility panel	Панел за достъпност
@@ -278,6 +280,7 @@
 	Ask in any language	Попитайте на всеки език
 	Ask to scan more pages	Питане за сканиране на още страници
 	Ask whether to recognize the current page or all pages when editing a scan.	При редактиране на сканиран документ да се пита дали да се разпознае текущата страница или всички страници.
+	Asking the printer…	Запитване към принтера…
 	Asking {server}…	Запитване към {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Запитва GitHub за най-новото издание. Нищо не се изтегля и не се инсталира автоматично.
 	Assistant	Асистент
@@ -369,6 +372,7 @@
 	Callout	Изнесена бележка
 	Can't be read: {e}	Не може да бъде прочетен: {e}
 	Cancel reverse sides	Отмени оборотните страни
+	Canceling…	Отказване…
 	Cancelled	Отменено
 	Cancelling…	Отказване…
 	Card driver (PKCS #11)	Драйвер на картата (PKCS #11)
@@ -622,6 +626,7 @@
 	Couldn't optimize the file	Файлът не можа да бъде оптимизиран
 	Couldn't optimize the file: {e}	Файлът не можа да бъде оптимизиран: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Не може да се печата от браузъра ({e}); вместо това за печат е изтеглен {name}
+	Couldn't reach the printer	Принтерът не може да бъде достигнат
 	Couldn't read {name}: {e}	{name} не можа да бъде прочетен: {e}
 	Couldn't recover {name}: {e}	{name} не можа да бъде възстановен: {e}
 	Couldn't reload {name}: {e}	Неуспешно презареждане на {name}: {e}
@@ -1191,6 +1196,7 @@ scroll speed	Fast	Висока
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Нивата на заглавията не трябва да се прескачат (H1, последвано от H3). Етикетирайте заглавията наново.
 	Hebrew (ISO 8859-8)	Иврит (ISO 8859-8)
 	Hebrew (Windows-1255)	Иврит (Windows-1255)
+	Held by the printer	Задържано от принтера
 	Heritage	Heritage
 	Hidden layers	Скрити слоеве
 	Hide a field	Скрий поле
@@ -1220,6 +1226,7 @@ key	Home	Home
 	How Edit text reads old fonts that don't say which letters they draw. Auto-detect recognises Hebrew fonts laid out for ISO 8859-8 or Windows-1255.	Как „Редактирай текста“ чете стари шрифтове, които не посочват кои букви изобразяват. Автоматичното откриване разпознава шрифтове на иврит, подредени по ISO 8859-8 или Windows-1255.
 	HTML web page	HTML уеб страница
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Унгарското OCR изисква настолното приложение с Tesseract 5 и езиковия модел hun. Рестартирайте PdfCraft след инсталирането.
+	I confirm sending this document to this printer	Потвърждавам изпращането на този документ до този принтер
 	Identity	Самоличност
 	Image (PNG)	Изображение (PNG)
 	Image field	Поле за изображение
@@ -1521,6 +1528,7 @@ key	Home	Home
 	Nested alternate text	Вложен алтернативен текст
 	Network	Мрежа
 	Network address	Мрежов адрес
+	Network printer (WS-Print)	Мрежов принтер (WS-Print)
 	New Action	Ново действие
 	New Action…	Ново действие…
 	New blank PDF	Нов празен PDF
@@ -1618,6 +1626,7 @@ key	Home	Home
 scroll speed	Normal	Нормална
 	Normal page	Нормална страница
 	Not allowed	Не е разрешено
+	Not confirmed by the printer	Не е потвърдено от принтера
 	Not in order	Извън реда
 	Not now	Не сега
 	Not present	Няма
@@ -1667,6 +1676,7 @@ animation effects	On	Включени
 	Only checked properties will change. Mixed means the selected fields have different values.	Ще се променят само отметнатите свойства. „Различни стойности“ означава, че избраните полета имат различни стойности.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Изрязват се само ясно различими ръбове на хартията. Неразличимите бели полета се запазват.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Продължете само ако имате доверие на този документ. Адресът може да пренася информация от документа, например въведеното във формуляра му.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Приемат се само IP адреси от тази мрежа (частни, link-local или loopback), не имена на хостове.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Изпращайте само ако имате доверие на този документ и получателя. GET поставя стойностите на формуляра в URL адреса.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Изпращайте само ако имате доверие на документа и получателя. Целият PDF напуска този компютър.
 	Only send if you trust this document and destination. The form values leave this computer.	Изпращайте само ако имате доверие на документа и получателя. Стойностите от формуляра ще напуснат този компютър.
@@ -1920,9 +1930,14 @@ animation effects	On	Включени
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Отпечатайте едностранно. Запазете реда на листовете, изрежете по маркировките, след което подредете купчините отляво надясно и отгоре надолу.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage или LastPage
 	Printed through the system print dialog	Отпечатано чрез системния диалог за печат
+	Printed with errors	Отпечатано с грешки
+	Printed with warnings	Отпечатано с предупреждения
+	Printer address:	Адрес на принтера:
 	Printer default	По подразбиране за принтера
+	Printer orientation:	Ориентация на принтера:
 	Printer paper and scaling may differ. Check driver settings.	Хартията и мащабът на принтера може да се различават. Проверете настройките на драйвера.
 	Printer properties	Свойства на принтера
+	Printer status: {state}	Състояние на принтера: {state}
 	Printing allowed	Разрешен печат
 	Print…	Отпечатай…
 	Privacy	Поверителност
@@ -1941,6 +1956,9 @@ animation effects	On	Включени
 	Public key	Публичен ключ
 	Purple	Лилаво
 	PushButton	Бутон
+	Quality:	Качество:
+	Query printer	Запитване към принтера
+	Query the printer first to see what it supports.	Първо направете запитване към принтера, за да видите какво поддържа.
 	Quirks	Особености
 	Quit	Изход
 	Quit PdfCraft	Изход от PdfCraft
@@ -1975,6 +1993,7 @@ animation effects	On	Включени
 	Reads {name}, which the form doesn't have, so it gets no value there.	Чете {name}, което го няма във формуляра, затова не получава стойност оттам.
 	Reason	Причина
 	Reason: 	Причина: 
+	Reasons: {reasons}	Причини: {reasons}
 	Recent colours	Последни цветове
 	Recent files to keep	Recent files to keep
 	Recipients	Получатели
@@ -2131,8 +2150,10 @@ animation effects	On	Включени
 	Return to document	Връщане към документа
 	Reveal in File Explorer	Показване във файловия мениджър
 	Reverse closed arrow	Обърната затворена стрелка
+	Reverse landscape	Пейзаж, обърнат
 	Reverse open arrow	Обърната отворена стрелка
 	Reverse pages	Обърнат ред на страниците
+	Reverse portrait	Портрет, обърнат
 	reverse side(s)	оборотни
 	Reverse sides	Оборотни страни
 	Reverse sides interleaved.	Оборотните страни са вмъкнати последователно.
@@ -2331,6 +2352,7 @@ animation effects	On	Включени
 	Sending to {printer}…	Изпращане до {printer}…
 	Sending…	Изпраща се…
 	Sent to {printer}: {msg}	Изпратено до {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Изпратено. Принтерът не може да каже дали е отпечатано.
 	Separate PDFs	Отделни PDF файлове
 	Separate the sheets and load the remaining ones, then choose Continue.	Разделете листовете и заредете останалите, после изберете „Продължи сканирането“.
 	Separate the sheets and load them again, then choose Try again.	Разделете листовете и ги заредете отново, после изберете „Опитай отново“.
@@ -2370,6 +2392,8 @@ animation effects	On	Включени
 	Shadings	Преливания
 	Shared Field Properties	Общи свойства на полетата
 	Sheet {s} of {n}	Лист {s} от {n}
+	Sheets printed: {done} of {total}	Отпечатани листове: {done} от {total}
+	Sheets printed: {n}	Отпечатани листове: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift ограничава до 45 градуса. Backspace премахва връх. Escape отменя.
 	Shift drags freely	Shift влачи свободно
@@ -2516,6 +2540,7 @@ action wizard	Start	Старт
 	Start page number	Начален номер на страница
 	Steps	Стъпки
 	Sticky note	Бележка
+	Still printing; the job continues on the printer	Печатът продължава; заданието се изпълнява на принтера
 	Stop	Стоп
 	Stop reading	Спиране на четенето
 	Straighten scanned page	Изправяне на сканирана страница
@@ -2622,6 +2647,7 @@ action wizard	Start	Старт
 	The document changed while it was being signed, so the signature wasn't saved.	Документът се промени, докато се подписваше, затова подписът не беше запазен.
 	The document changed while its margins were measured; nothing was cropped	Документът се промени, докато се измерваха полетата му; нищо не е изрязано
 	The document changed while you were editing field properties.	Документът се промени, докато редактирахте свойствата на полетата.
+	The document couldn't be prepared	Документът не можа да бъде подготвен
 	The document has additional actions (/AA)	Документът има допълнителни действия (/AA)
 	The document has document-level JavaScript	Документът съдържа JavaScript на ниво документ
 	the document has no form fields	документът няма полета на формуляр
@@ -2660,6 +2686,7 @@ action wizard	Start	Старт
 	The image has been copied ({w} × {h} pixels)	Изображението е копирано ({w} × {h} пиксела)
 	The image has been copied as a {ext} file	Изображението е копирано като файл {ext}
 	the image is empty	изображението е празно
+	The job was canceled	Заданието е отказано
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Ключът е в macOS Keychain, който може да поиска разрешение PdfCraft да го използва.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Ключът е в хранилището за сертификати на Windows, което може да поиска разрешение PdfCraft да го използва.
 	The key is on the device, which may ask for its PIN itself.	Ключът е на устройството, което може само да поиска PIN кода си.
@@ -2687,7 +2714,18 @@ action wizard	Start	Старт
 	The PIN is incorrect.	ПИН кодът е грешен.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Цифровите идентификатори от токените PKCS #11 не можаха да бъдат изброени: {e}
 	The preview could not be shown.	Прегледът не можа да се покаже.
+	The print job stopped unexpectedly	Заданието за печат спря неочаквано
+	The printer accepts none of the formats this document can be sent in	Принтерът не приема нито един от форматите, в които може да се изпрати този документ
+	The printer address was refused	Адресът на принтера беше отхвърлен
+	The printer doesn't support this setting	Принтерът не поддържа тази настройка
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Собствените настройки на драйвера на принтера за този печат: тава за хартия, вид хартия, довършителна обработка и други.
+	The printer is printing it	Принтерът го отпечатва
+	The printer may have received the document. Check the printer before sending again.	Принтерът може да е получил документа. Проверете принтера, преди да изпратите отново.
+	The printer no longer lists the job; it most likely finished	Принтерът вече не показва заданието; най-вероятно е приключило
+	The printer paused the job; it needs attention	Принтерът е спрял заданието; то изисква внимание
+	The printer refused the request	Принтерът отхвърли заявката
+	The printer stopped the job	Принтерът спря заданието
+	The printer's reply couldn't be understood	Отговорът на принтера не можа да бъде разбран
 	The provider's page didn't come back in time. Try again.	Страницата на доставчика не се върна навреме. Опитайте отново.
 	The raw text was truncated to what fits.	Суровият текст е съкратен.
 	The redaction does not fit page {page}; no pages were marked.	Заличаването не се побира на страница {page}; няма маркирани страници.
@@ -2819,7 +2857,13 @@ action wizard	Start	Старт
 	This page has an opaque background of its own, which hides the image behind it.	Тази страница има собствен непрозрачен фон, който скрива изображението зад него.
 	This PDF uses the unsupported {s} action.	Този PDF използва неподдържаното действие {s}.
 	This point could not be moved. Try a smaller move.	Тази точка не можа да бъде преместена. Опитайте с по-малко преместване.
+	This printer does not take a copies setting.	Този принтер не поддържа настройка за брой копия.
+	This printer does not take a quality setting.	Този принтер не поддържа настройка за качество.
+	This printer does not take a resolution setting.	Този принтер не поддържа настройка за резолюция.
+	This printer does not take an orientation setting.	Този принтер не поддържа настройка за ориентация.
 	This printer offers no settings of its own.	Този принтер няма собствени настройки.
+	This printer only prints in black and white.	Този принтер печата само в черно и бяло.
+	This printer only prints one-sided.	Този принтер печата само от едната страна.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Драйверът на този принтер не приема настройки за двустранен печат от други програми и прилага собствената си настройка. Променете я от Свойства…
 	this signature can't be removed on its own	този подпис не може да се премахне самостоятелно
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	тази услуга за подписване не може да се използва: тя изисква вход с OAuth в браузър, който PdfCraft все още не поддържа
@@ -2982,6 +3026,7 @@ signature pad	Type	Въвеждане
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Изчакайте скенерът да приключи или затворете всяка друга програма, която го използва, после изберете „Опитай отново“.
 	Waiting for the system print dialog…	Изчакване на системния диалог за печат…
 	Waiting for your approval in the browser…	Изчакване на одобрението ви в браузъра…
+	Waiting in the printer's queue	Чака в опашката на принтера
 	watermark	воден знак
 	Weak	Слаба
 	Welcome to PdfCraft	Добре дошли в PdfCraft

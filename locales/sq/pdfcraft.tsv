@@ -61,6 +61,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Një skedar PNG ose SVG. Lexohet nga ky vend sa herë që niset PdfCraft.
 	A script	Një skript
 	A selected field has no widget on any page, so the fields can't be edited together.	Një fushë e zgjedhur nuk ka widget në asnjë faqe, kështu që fushat nuk mund të redaktohen së bashku.
+	A setting isn't valid	Një cilësim nuk është i vlefshëm
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Një nënshkrim që është pjesë e përmbajtjes së faqes, si në një faqe të skanuar, nuk është fushë apo shënim, prandaj nuk mund të hiqet më vete, dhe PdfCraft nuk fshin pjesë të faqes për ta fshehur. Për ta hequr, redaktoni atë zonë (Redakto) ose, kur nënshkrimi është imazh më vete, fshini imazhin me Redakto një PDF.
 	A stream refers to an external file	Një rrjedhë i referohet një skedari të jashtëm
 	A stream uses LZW compression	Një rrjedhë përdor kompresimin LZW
@@ -71,6 +72,7 @@
 	About PdfCraft	Rreth PdfCraft
 	About {app}	Rreth {app}
 	Accepted	Pranuar
+	Accepted by {printer}	Pranuar nga {printer}
 	Accessibility	Qasshmëria
 	Accessibility Checker	Kontrolluesi i qasshmërisë
 	Accessibility Checker Options	Opsionet e kontrolluesit të qasshmërisë
@@ -279,6 +281,7 @@
 	Ask about this document	Pyet për këtë dokument
 	Ask before a document opens in Full Screen mode	Pyet përpara se një dokument të hapet në modalitetin e ekranit të plotë
 	Ask whether to recognize the current page or all pages when editing a scan.	Gjatë redaktimit të një dokumenti të skanuar, pyet nëse duhet njohur faqja aktuale apo të gjitha faqet.
+	Asking the printer…	Po pyetet printeri…
 	Asking {server}…	Po pyetet {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	I kërkon GitHub-it versionin më të fundit. Asgjë nuk shkarkohet ose instalohet automatikisht.
 	Associated with content	E lidhur me përmbajtjen
@@ -370,6 +373,7 @@
 	Can't be read: {e}	Nuk mund të lexohet: {e}
 	Cancel	Anulo
 	Cancel reverse sides	Cancel reverse sides
+	Canceling…	Po anulohet…
 	Cancelled	Anuluar
 	Cancelling…	Duke anuluar…
 	Card driver (PKCS #11)	Drejtuesi i kartës (PKCS #11)
@@ -614,6 +618,7 @@
 	Couldn't optimize the file	Nuk u optimizua dot skedari
 	Couldn't optimize the file: {e}	Nuk u optimizua dot skedari: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Nuk u printua nga shfletuesi ({e}); u shkarkua {name} për ta printuar
+	Couldn't reach the printer	Printeri nuk u arrit
 	Couldn't read {name}: {e}	Nuk u lexua {name}: {e}
 	Couldn't recover {name}: {e}	Nuk u rikuperua {name}: {e}
 	Couldn't reload {name}: {e}	Nuk u ringarkua {name}: {e}
@@ -823,6 +828,7 @@ key	Delete	Fshi
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Shkarkimi i bashkëngjitjeve në ueb vjen me M3.10 ({n} bajte gati)
 	Downsample to	Zvogëlo rezolucionin në
 	DPI sets the printed page size without resampling the image.	DPI cakton madhësinë e faqes së printuar pa e rimostruar imazhin.
+	Draft	Skicë
 	Drag a field to move it, or select it and press {up} or {down}.	Drag a field to move it, or select it and press {up} or {down}.
 	Drag a point to reshape the line. Delete removes it.	Zvarritni një pikë për të ndryshuar formën e vijës. Delete e heq atë.
 	Drag a rectangle around the area to copy	Tërhiq një drejtkëndësh rreth zonës që do të kopjohet
@@ -1178,6 +1184,7 @@ scroll speed	Fast	Shpejt
 	Headings	Titujt
 	Height	Lartësia
 	Height:	Lartësia:
+	Held by the printer	Mbajtur nga printeri
 	Help	Ndihma
 	Hidden layers	Shtresat e fshehura
 	Hidden text	Teksti i fshehur
@@ -1210,6 +1217,7 @@ key	Home	Home
 	Horizontal scale	Shkalla horizontale
 	Horizontally	Horizontalisht
 	HTML web page	Faqe interneti HTML
+	I confirm sending this document to this printer	Konfirmoj dërgimin e këtij dokumenti te ky printer
 	Icon	Ikona
 	Identity	Identiteti
 	Image	Imazh
@@ -1523,6 +1531,7 @@ key	Home	Home
 	Negative number style:	Stili i numrave negativë:
 	Nested alternate text	Tekst alternativ i brendshëm
 	Network	Network
+	Network printer (WS-Print)	Printer rrjeti (WS-Print)
 	New Action	Veprim i ri
 	New Action…	Veprim i ri…
 	New blank PDF	PDF e re bosh
@@ -1610,8 +1619,10 @@ key	Home	Home
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Asnjë nga ato skedarë nuk mund të bëhet PDF; përdor PDF, imazhe ose skedarë .txt
 	None of your digital IDs can open this document.	Asnjë nga ID-të tuaja dixhitale nuk e hap dot këtë dokument.
 	None — everything is allowed	Asnjë — gjithçka lejohet
+	Normal	Normale
 scroll speed	Normal	Normale
 	Not allowed	Nuk lejohet
+	Not confirmed by the printer	Nuk u konfirmua nga printeri
 	Not in order	Not in order
 	Not now	Not now
 	Not present	Nuk ekziston
@@ -1657,6 +1668,7 @@ animation effects	On	Aktiv
 	Only change the colour of black text or line art	Ndrysho vetëm ngjyrën e tekstit të zi ose të vijave
 	Only checked properties will change. Mixed means the selected fields have different values.	Vetëm vetitë e shënuara do të ndryshojnë. E përzier do të thotë se fushat e zgjedhura kanë vlera të ndryshme.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Vazhdo vetëm nëse i beson këtij dokumenti. Një adresë mund të mbartë informacion nga dokumenti, si ajo që shkruatë në formularin e tij.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Pranohen vetëm adresa IP të këtij rrjeti (private, lidhje-lokale ose loopback), jo emra hosti.
 	Only the document's owner can change its security (open it with the permissions password)	Vetëm zotëruesi i dokumentit mund të ndryshojë sigurinë e tij (hape me fjalëkalimin e lejeve)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Ndryshon vetëm përmbajtja e faqes: lidhjet, komentet, fushat e formularit dhe libërshënuesit në faqet origjinale mbeten.
 	Only the recipients can open the document, each with the private key of their own certificate.	Dokumentin mund ta hapin vetëm marrësit, secili me çelësin privat të certifikatës së vet.
@@ -1911,9 +1923,14 @@ animation effects	On	Aktiv
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Printo vetëm nga njëra anë. Mbaji fletët në radhë, pri te shenjat, pastaj vendosi grumbujt nga e majta në të djathtë, nga lart poshtë.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage ose LastPage
 	Printed through the system print dialog	U printua përmes dialogut të printimit të sistemit
+	Printed with errors	Printuar me gabime
+	Printed with warnings	Printuar me paralajmërime
+	Printer address:	Adresa e printerit:
 	Printer default	Printer default
+	Printer orientation:	Orientimi i printerit:
 	Printer paper and scaling may differ. Check driver settings.	Letra dhe shkallëzimi i printerit mund të ndryshojnë. Kontrolloni cilësimet e drajverit.
 	Printer properties	Vetitë e printerit
+	Printer status: {state}	Gjendja e printerit: {state}
 	Printer:	Printeri:
 	Printing	Printimi
 	Printing allowed	Printimi lejohet
@@ -1935,6 +1952,9 @@ animation effects	On	Aktiv
 	Purple	Vjollcë
 	PushButton	PushButton
 	Quality	Cilësia
+	Quality:	Cilësia:
+	Query printer	Pyet printerin
+	Query the printer first to see what it supports.	Pyet fillimisht printerin për të parë çfarë mbështet.
 	Quit PdfCraft	Dil nga PdfCraft
 	Quit {app}	Dil nga {app}
 	Radio	Radio
@@ -1953,6 +1973,7 @@ animation effects	On	Aktiv
 	Real name	Emri real
 	Reason	Arsyeja
 	Reason: 	Arsyeja: 
+	Reasons: {reasons}	Arsyet: {reasons}
 	Recent	Të fundit
 	Recent colours	Ngjyrat e fundit
 	Recent files to keep	Recent files to keep
@@ -2103,8 +2124,10 @@ animation effects	On	Aktiv
 	Reveal in File Explorer	Shfaq në File Explorer
 	Reveal in Finder	Shfaq në Finder
 	Reverse closed arrow	Shigjetë e mbyllur e kundërt
+	Reverse landscape	Peizazh i kthyer
 	Reverse open arrow	Shigjetë e hapur e kundërt
 	Reverse pages	Ktheje radhën e faqeve
+	Reverse portrait	Portret i kthyer
 	reverse side(s)	reverse side(s)
 	Reverse sides	Reverse sides
 	Reverse sides interleaved.	Reverse sides interleaved.
@@ -2290,6 +2313,7 @@ animation effects	On	Aktiv
 	Sensitivity	Ndjeshmëria
 	Sent to {printer}	U dërgua te {printer}
 	Sent to {printer}: {msg}	U dërgua te {printer}: {msg}
+	Sent. The printer can't say whether it printed.	U dërgua. Printeri nuk mund të thotë nëse printoi.
 	Separate PDFs	PDF të veçanta
 	Separate the sheets and load the remaining ones, then choose Continue.	Separate the sheets and load the remaining ones, then choose Continue.
 	Separate the sheets and load them again, then choose Try again.	Separate the sheets and load them again, then choose Try again.
@@ -2329,6 +2353,8 @@ animation effects	On	Aktiv
 	Shadings	Hijëzimet
 	Shared Field Properties	Vetitë e përbashkëta të fushës
 	Sheet {s} of {n}	Fleta {s} nga {n}
+	Sheets printed: {done} of {total}	Fletë të printuara: {done} nga {total}
+	Sheets printed: {n}	Fletë të printuara: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift e kufizon në 45 gradë. Backspace heq një kulm. Escape anulon.
 	Shift- or Ctrl/Command-click to select several fields.	Shift- ose Ctrl/Command-klikoni për të zgjedhur disa fusha.
@@ -2455,6 +2481,7 @@ action wizard	Start	Fillo
 	Status	Statusi
 	Steps	Hapat
 	Sticky note	Shënim ngjitës
+	Still printing; the job continues on the printer	Ende po printohet; puna vazhdon në printer
 	Stop	Stop
 	Straighten the page	Straighten the page
 	Strength: {s}	Fuqia: {s}
@@ -2551,6 +2578,7 @@ certificate	Subject	Subjekti
 	The document changed while its margins were measured; nothing was cropped	Dokumenti ndryshoi ndërsa i matej kufijtë; nuk u pre asgjë
 	The document changed while you were choosing a file, so nothing was changed.	Dokumenti ndryshoi ndërsa zgjidhnit një skedar, ndaj nuk u ndryshua asgjë.
 	The document changed while you were editing field properties.	Dokumenti ndryshoi ndërsa po redaktonit vetitë e fushës.
+	The document couldn't be prepared	Dokumenti nuk u përgatit dot
 	The document has additional actions (/AA)	Dokumenti ka veprime shtesë (/AA)
 	The document has document-level JavaScript	Dokumenti ka JavaScript në nivel dokumenti
 	the document has no form fields	dokumenti nuk ka fusha formulari
@@ -2588,6 +2616,7 @@ certificate	Subject	Subjekti
 	The image has been copied ({w} × {h} pixels)	Imazhi u kopjua ({w} × {h} piksel)
 	The image has been copied as a {ext} file	Imazhi u kopjua si skedar {ext}
 	the image is empty	imazhi është bosh
+	The job was canceled	Puna u anulua
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Çelësi është në Keychain të macOS, i cili mund të kërkojë të lejohet PdfCraft ta përdorë.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Çelësi është në depon e certifikatave të Windows, e cila mund të kërkojë të lejohet PdfCraft ta përdorë.
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Çelësi është në {device}, që e kërkon vetë miratimin (një tastierë PIN ose një aplikacion në telefon).
@@ -2612,7 +2641,18 @@ certificate	Subject	Subjekti
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN-i shkon vetëm te karta; PdfCraft nuk e ruan.
 	The PIN is incorrect.	Kodi PIN është i pasaktë.
 	The preview could not be shown.	The preview could not be shown.
+	The print job stopped unexpectedly	Puna e printimit u ndal papritur
+	The printer accepts none of the formats this document can be sent in	Printeri nuk pranon asnjë nga formatet në të cilat mund të dërgohet ky dokument
+	The printer address was refused	Adresa e printerit u refuzua
+	The printer doesn't support this setting	Printeri nuk e mbështet këtë cilësim
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Cilësimet e vetë drajverit të printerit për këtë printim: tabaka e letrës, lloji i letrës, përfundimi e më shumë.
+	The printer is printing it	Printeri po e printon
+	The printer may have received the document. Check the printer before sending again.	Printeri mund ta ketë marrë dokumentin. Kontrollo printerin para se ta dërgosh sërish.
+	The printer no longer lists the job; it most likely finished	Printeri nuk e liston më punën; ka shumë gjasa që ka mbaruar
+	The printer paused the job; it needs attention	Printeri e ndali përkohësisht punën; ka nevojë për vëmendje
+	The printer refused the request	Printeri e refuzoi kërkesën
+	The printer stopped the job	Printeri e ndali punën
+	The printer's reply couldn't be understood	Përgjigja e printerit nuk u kuptua
 	The provider's page didn't come back in time. Try again.	Faqja e ofruesit nuk u kthye në kohë. Provoni përsëri.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI-ja e ridrejtimit duhet të jetë http://127.0.0.1 ose http://localhost me një portë.
 	The replacement file doesn't have that many pages.	Skedari zëvendësues nuk ka kaq shumë faqe.
@@ -2724,7 +2764,13 @@ certificate	Subject	Subjekti
 	This page has an opaque background of its own, which hides the image behind it.	Kjo faqe ka sfondin e saj të patejdukshëm, që fsheh imazhin pas tij.
 	This PDF uses the unsupported {s} action.	Ky PDF përdor veprimin e pambështetur {s}.
 	This point could not be moved. Try a smaller move.	Kjo pikë nuk mund të zhvendosej. Provoni një zhvendosje më të vogël.
+	This printer does not take a copies setting.	Ky printer nuk e mbështet cilësimin e kopjeve.
+	This printer does not take a quality setting.	Ky printer nuk e mbështet cilësimin e cilësisë.
+	This printer does not take a resolution setting.	Ky printer nuk e mbështet cilësimin e rezolucionit.
+	This printer does not take an orientation setting.	Ky printer nuk e mbështet cilësimin e orientimit.
 	This printer offers no settings of its own.	Ky printer nuk ofron cilësime të veta.
+	This printer only prints in black and white.	Ky printer printon vetëm bardhezi.
+	This printer only prints one-sided.	Ky printer printon vetëm njëanshëm.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Drajveri i këtij printeri nuk i merr cilësimet dyanshe nga programet e tjera, ndaj zbatohet cilësimi i tij. Ndryshojeni te Vetitë…
 	this signature can't be removed on its own	ky nënshkrim nuk mund të hiqet më vete
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	ky shërbim nënshkrimi nuk mund të përdoret: kërkon hyrje me OAuth në një shfletues, të cilën PdfCraft ende nuk e mbështet
@@ -2889,6 +2935,7 @@ signature pad	Type	Shkruaj
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	Po pritet dialogu i printimit të sistemit…
 	Waiting for your approval in the browser…	Në pritje të miratimit tuaj në shfletues…
+	Waiting in the printer's queue	Në pritje në radhën e printerit
 	Warnings	Paralajmërimet
 	Watermark	Filigran
 	watermark	filigrami

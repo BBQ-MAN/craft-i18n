@@ -64,6 +64,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Datoteka PNG ali SVG. Prebere se s tega mesta ob vsakem zagonu PdfCrafta.
 	A script	Skript
 	A selected field has no widget on any page, so the fields can't be edited together.	Izbrano polje nima gradnika na nobeni strani, zato polj ni mogoče urejati skupaj.
+	A setting isn't valid	Nastavitev ni veljavna
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Podpis, ki je del vsebine strani (na primer na skenirani strani), ni polje ali opomba, zato ga ni mogoče odstraniti samostojno, PdfCraft pa ne briše delov strani, da bi ga skril. Če ga želite odstraniti, počrnite to območje (Počrni) ali, če je podpis samostojna slika, sliko izbrišite z Uredi PDF.
 	A stream refers to an external file	Tok se sklicuje na zunanjo datoteko
 	A stream uses LZW compression	Tok uporablja stiskanje LZW
@@ -71,6 +72,7 @@
 	About PdfCraft	O programu PdfCraft
 	About {app}	O programu {app}
 	Accepted	Potrjeno
+	Accepted by {printer}	Sprejel tiskalnik {printer}
 	Accessibility Checker	Preverjanje dostopnosti
 	Accessibility Checker Options	Možnosti preverjanja dostopnosti
 	Accessibility panel	Razdelek za dostopnost
@@ -276,6 +278,7 @@
 	Ask before a document opens in Full Screen mode	Vprašaj, preden se dokument odpre v celozaslonskem načinu
 	Ask in any language	Vprašajte v katerem koli jeziku
 	Ask whether to recognize the current page or all pages when editing a scan.	Pri urejanju optično prebranega dokumenta vprašaj, ali prepoznati trenutno stran ali vse strani.
+	Asking the printer…	Povpraševanje tiskalnika…
 	Asking {server}…	Poizvedba pri {server} …
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Vpraša GitHub za najnovejšo izdajo. Ničesar se ne prenese ali namesti samodejno.
 	Assistant	Pomočnik
@@ -367,6 +370,7 @@
 	Callout	Oblaček
 	Can't be read: {e}	Ni mogoče prebrati: {e}
 	Cancel reverse sides	Prekliči hrbtne strani
+	Canceling…	Preklic…
 	Cancelled	Preklicano
 	Cancelling…	Preklicevanje…
 	Card driver (PKCS #11)	Gonilnik kartice (PKCS #11)
@@ -610,6 +614,7 @@
 	Couldn't optimize the file	Datoteke ni bilo mogoče optimizirati
 	Couldn't optimize the file: {e}	Datoteke ni bilo mogoče optimizirati: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Tiskanje iz brskalnika ni mogoče ({e}); namesto tega je bila za tiskanje prenesena datoteka {name}
+	Couldn't reach the printer	Tiskalnika ni bilo mogoče doseči
 	Couldn't read {name}: {e}	Datoteke {name} ni bilo mogoče prebrati: {e}
 	Couldn't recover {name}: {e}	Datoteke {name} ni bilo mogoče obnoviti: {e}
 	Couldn't reload {name}: {e}	Datoteke {name} ni bilo mogoče znova naložiti: {e}
@@ -819,6 +824,7 @@ key	Delete	Delete
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	Prenosi se odprejo v brskalniku. Namestitev je ročna; nič se ne namesti samodejno.
 	Downsample to	Zmanjšaj vzorčenje na
 	DPI sets the printed page size without resampling the image.	DPI določa velikost natisnjene strani brez ponovnega vzorčenja slike.
+	Draft	Osnutek
 	Drag a field to move it, or select it and press {up} or {down}.	Polje premaknete tako, da ga povlečete, ali pa ga izberite in pritisnite {up} ali {down}.
 	Drag a point to reshape the line. Delete removes it.	Povlecite točko, da spremenite obliko črte. Tipka Delete jo odstrani.
 	Drag a rectangle around the area to copy	Povlecite pravokotnik okoli območja, ki ga želite kopirati
@@ -1160,6 +1166,7 @@ scroll speed	Fast	Hitro
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Ravni naslovov ne smejo preskakovati (H1, ki mu sledi H3). Ponovno označite naslove.
 	Hebrew (ISO 8859-8)	Hebrejščina (ISO 8859-8)
 	Hebrew (Windows-1255)	Hebrejščina (Windows-1255)
+	Held by the printer	Tiskalnik ga zadržuje
 	Heritage	Heritage
 	Hidden layers	Skrite plasti
 	Hide a field	Skrij polje
@@ -1189,6 +1196,7 @@ key	Home	Home
 	How Edit text reads old fonts that don't say which letters they draw. Auto-detect recognises Hebrew fonts laid out for ISO 8859-8 or Windows-1255.	Kako Uredi besedilo bere stare pisave, ki ne povedo, katere črke rišejo. Samodejno zaznavanje prepozna hebrejske pisave, urejene po ISO 8859-8 ali Windows-1255.
 	HTML web page	Spletna stran HTML
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Madžarski OCR zahteva namizno aplikacijo s Tesseract 5 in jezikovnim modelom hun. Po namestitvi znova zaženite PdfCraft.
+	I confirm sending this document to this printer	Potrjujem pošiljanje tega dokumenta v ta tiskalnik
 	Identity	Identiteta
 	Image (PNG)	Slika (PNG)
 	Image field	Polje za sliko
@@ -1484,6 +1492,7 @@ key	Home	Home
 	Negative number style:	Slog negativnih števil:
 	Nested alternate text	Gnezdeno nadomestno besedilo
 	Network	Omrežje
+	Network printer (WS-Print)	Omrežni tiskalnik (WS-Print)
 	New Action	Novo dejanje
 	New Action…	Novo dejanje…
 	New blank PDF	Nov prazen PDF
@@ -1579,9 +1588,11 @@ key	Home	Home
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Nobene od teh datotek ni mogoče pretvoriti v PDF; uporabite datoteke PDF, slike ali .txt
 	None of your digital IDs can open this document.	Nobena od vaših digitalnih identitet ne more odpreti tega dokumenta.
 	None — everything is allowed	Brez — vse je dovoljeno
+	Normal	Običajna
 scroll speed	Normal	Običajno
 	Normal page	Navadna stran
 	Not allowed	Ni dovoljeno
+	Not confirmed by the printer	Tiskalnik tega ni potrdil
 	Not in order	Ni v vrstnem redu
 	Not now	Ne zdaj
 	Not present	Ni prisotno
@@ -1630,6 +1641,7 @@ animation effects	On	Vklopljeni
 	Only checked properties will change. Mixed means the selected fields have different values.	Spremenile se bodo samo označene lastnosti. Mešano pomeni, da imajo izbrana polja različne vrednosti.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Obrežejo se samo jasni robovi papirja. Nerazločljivi beli robovi se ohranijo.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Nadaljujte samo, če temu dokumentu zaupate. Naslov lahko prenaša podatke iz dokumenta, na primer to, kar ste vnesli v njegov obrazec.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Sprejeti so le naslovi IP tega omrežja (zasebni, link-local ali povratna zanka), ne imena gostiteljev.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Pošljite le, če zaupate dokumentu in cilju. GET vredi obrazca vpiše v URL.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Pošljite le, če zaupate dokumentu in cilju. Celoten PDF dokument zapusti ta računalnik.
 	Only send if you trust this document and destination. The form values leave this computer.	Pošljite le, če zaupate dokumentu in cilju. Vrednosti obrazca zapustijo ta računalnik.
@@ -1879,9 +1891,14 @@ animation effects	On	Vklopljeni
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Natisnite enostransko. Liste ohranite v vrstnem redu, razrežite po oznakah, nato zložite kupčke od leve proti desni, od zgoraj navzdol.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage ali LastPage
 	Printed through the system print dialog	Natisnjeno prek sistemskega pogovornega okna za tiskanje
+	Printed with errors	Natisnjeno z napakami
+	Printed with warnings	Natisnjeno z opozorili
+	Printer address:	Naslov tiskalnika:
 	Printer default	Privzeto tiskalnika
+	Printer orientation:	Usmerjenost tiskalnika:
 	Printer paper and scaling may differ. Check driver settings.	Papir in merilo tiskalnika se lahko razlikujeta. Preverite nastavitve gonilnika.
 	Printer properties	Lastnosti tiskalnika
+	Printer status: {state}	Stanje tiskalnika: {state}
 	Printing allowed	Tiskanje dovoljeno
 	Privacy	Zasebnost
 	Private data of other applications	Zasebni podatki drugih programov
@@ -1897,6 +1914,9 @@ animation effects	On	Vklopljeni
 	Public domain	Javna last
 	Public key	Javni ključ
 	PushButton	Potisni gumb
+	Quality:	Kakovost:
+	Query printer	Povprašaj tiskalnik
+	Query the printer first to see what it supports.	Najprej povprašajte tiskalnik, da vidite, kaj podpira.
 	Quirks	Posebnosti
 	Quit	Izhod
 	Quit PdfCraft	Končaj PdfCraft
@@ -1931,6 +1951,7 @@ animation effects	On	Vklopljeni
 	Reads {name}, which the form doesn't have, so it gets no value there.	Bere {name}, ki ga v obrazcu ni, zato od tam ne dobi vrednosti.
 	Reason	Razlog
 	Reason: 	Razlog: 
+	Reasons: {reasons}	Razlogi: {reasons}
 	Recent colours	Nedavne barve
 	Recent files to keep	Recent files to keep
 	Recipients	Prejemniki
@@ -2082,8 +2103,10 @@ animation effects	On	Vklopljeni
 	Return to document	Nazaj na dokument
 	Reveal in File Explorer	Prikaži v upravljalniku datotek
 	Reverse closed arrow	Obrnjena zaprta puščica
+	Reverse landscape	Ležeče, obrnjeno
 	Reverse open arrow	Obrnjena odprta puščica
 	Reverse pages	Obrni vrstni red strani
+	Reverse portrait	Pokončno, obrnjeno
 	reverse side(s)	hrbtne
 	Reverse sides	Hrbtne strani
 	Reverse sides interleaved.	Hrbtne strani so vstavljene izmenično.
@@ -2274,6 +2297,7 @@ animation effects	On	Vklopljeni
 	Sending to {printer}…	Pošiljanje na {printer}…
 	Sending…	Pošiljanje…
 	Sent to {printer}: {msg}	Poslano na {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Poslano. Tiskalnik ne more povedati, ali je natisnil.
 	Separate PDFs	Ločeni PDF-ji
 	Separate the sheets and load the remaining ones, then choose Continue.	Ločite liste in naložite preostale, nato izberite »Nadaljuj z branjem«.
 	Separate the sheets and load them again, then choose Try again.	Ločite liste in jih naložite znova, nato izberite »Poskusi znova«.
@@ -2316,6 +2340,8 @@ animation effects	On	Vklopljeni
 	Shadings	Senčenja
 	Shared Field Properties	Skupne lastnosti polj
 	Sheet {s} of {n}	List {s} od {n}
+	Sheets printed: {done} of {total}	Natisnjeni listi: {done} od {total}
+	Sheets printed: {n}	Natisnjeni listi: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift omeji na 45 stopinj. Backspace odstrani oglišče. Escape prekliče.
 	Shift drags freely	Shift vleče prosto
@@ -2458,6 +2484,7 @@ action wizard	Start	Začni
 	Start page number	Številka začetne strani
 	Steps	Koraki
 	Sticky note	Opomba
+	Still printing; the job continues on the printer	Tiskanje še poteka; opravilo se nadaljuje v tiskalniku
 	Stop	Ustavi
 	Stop reading	Ustavi branje
 	Straighten scanned page	Poravnaj skenirano stran
@@ -2564,6 +2591,7 @@ certificate	Subject	Imetnik
 	The document changed while its margins were measured; nothing was cropped	Dokument se je spremenil med merjenjem robov; nič ni bilo obrezano
 	The document changed while you were choosing a file, so nothing was changed.	Dokument se je spremenil, medtem ko ste izbirali datoteko, zato ni bilo spremenjeno nič.
 	The document changed while you were editing field properties.	Dokument se je spremenil med urejanjem lastnosti polja.
+	The document couldn't be prepared	Dokumenta ni bilo mogoče pripraviti
 	The document has additional actions (/AA)	Dokument ima dodatna dejanja (/AA)
 	The document has document-level JavaScript	Dokument vsebuje JavaScript na ravni dokumenta
 	the document has no form fields	dokument nima polj obrazca
@@ -2603,6 +2631,7 @@ certificate	Subject	Imetnik
 	The image has been copied ({w} × {h} pixels)	Slika je kopirana ({w} × {h} slikovnih pik)
 	The image has been copied as a {ext} file	Slika je kopirana kot datoteka {ext}
 	the image is empty	slika je prazna
+	The job was canceled	Opravilo je preklicano
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Ključ je v macOS Keychain, ki lahko zahteva dovoljenje, da ga PdfCraft uporabi.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Ključ je v shrambi potrdil Windows, ki lahko zahteva dovoljenje, da ga PdfCraft uporabi.
 	The key is on the device, which may ask for its PIN itself.	Ključ je na napravi, ki lahko sama zahteva PIN.
@@ -2631,7 +2660,18 @@ certificate	Subject	Imetnik
 	The PIN is incorrect.	PIN ni pravilen.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Digitalnih identitet iz žetonov PKCS #11 ni bilo mogoče prikazati: {e}
 	The preview could not be shown.	Predogleda ni bilo mogoče prikazati.
+	The print job stopped unexpectedly	Tiskarsko opravilo se je nepričakovano ustavilo
+	The printer accepts none of the formats this document can be sent in	Tiskalnik ne sprejme nobene od oblik, v katerih je mogoče poslati ta dokument
+	The printer address was refused	Naslov tiskalnika je bil zavrnjen
+	The printer doesn't support this setting	Tiskalnik te nastavitve ne podpira
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Lastne nastavitve gonilnika tiskalnika za to tiskanje: pladenj za papir, vrsta papirja, dodelava in drugo.
+	The printer is printing it	Tiskalnik ga tiska
+	The printer may have received the document. Check the printer before sending again.	Tiskalnik je dokument morda prejel. Preden ga pošljete znova, preverite tiskalnik.
+	The printer no longer lists the job; it most likely finished	Tiskalnik opravila ne navaja več; verjetno je končano
+	The printer paused the job; it needs attention	Tiskalnik je opravilo začasno ustavil; potrebuje pozornost
+	The printer refused the request	Tiskalnik je zavrnil zahtevo
+	The printer stopped the job	Tiskalnik je ustavil opravilo
+	The printer's reply couldn't be understood	Odgovora tiskalnika ni bilo mogoče razumeti
 	The provider's page didn't come back in time. Try again.	Stran ponudnika se ni pravočasno vrnila. Poskusite znova.
 	The raw text was truncated to what fits.	Surovo besedilo je bilo skrajšano.
 	The redaction does not fit page {page}; no pages were marked.	Prekritje ne ustreza strani {page}; nobena stran ni bila označena.
@@ -2762,7 +2802,13 @@ certificate	Subject	Imetnik
 	This page has an opaque background of its own, which hides the image behind it.	Ta stran ima lastno neprosojno ozadje, ki skrije sliko za njim.
 	This PDF uses the unsupported {s} action.	Ta PDF uporablja nepodprto dejanje {s}.
 	This point could not be moved. Try a smaller move.	Te točke ni bilo mogoče premakniti. Poskusite z manjšim premikom.
+	This printer does not take a copies setting.	Ta tiskalnik ne podpira nastavitve števila kopij.
+	This printer does not take a quality setting.	Ta tiskalnik ne podpira nastavitve kakovosti.
+	This printer does not take a resolution setting.	Ta tiskalnik ne podpira nastavitve ločljivosti.
+	This printer does not take an orientation setting.	Ta tiskalnik ne podpira nastavitve usmerjenosti.
 	This printer offers no settings of its own.	Ta tiskalnik nima lastnih nastavitev.
+	This printer only prints in black and white.	Ta tiskalnik tiska samo črno-belo.
+	This printer only prints one-sided.	Ta tiskalnik tiska samo enostransko.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Gonilnik tega tiskalnika ne sprejema nastavitev obojestranskega tiskanja iz drugih programov, zato velja njegova lastna nastavitev. Spremenite jo v Lastnosti…
 	this signature can't be removed on its own	tega podpisa ni mogoče odstraniti samostojno
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	te storitve za podpisovanje ni mogoče uporabiti: zahteva prijavo OAuth v brskalniku, ki je PdfCraft še ne podpira
@@ -2925,6 +2971,7 @@ signature pad	Type	Vtipkaj
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Počakajte, da optični bralnik konča, ali zaprite vse druge programe, ki ga uporabljajo, nato izberite »Poskusi znova«.
 	Waiting for the system print dialog…	Čakanje na sistemsko pogovorno okno za tiskanje…
 	Waiting for your approval in the browser…	Čakanje na vašo odobritev v brskalniku …
+	Waiting in the printer's queue	Čaka v vrsti tiskalnika
 	watermark	vodni žig
 	Weak	Šibko
 	Welcome to PdfCraft	Dobrodošli v PdfCraftu

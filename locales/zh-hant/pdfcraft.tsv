@@ -65,6 +65,7 @@
 	A picture covers page {pages} (a scan?), so the background won't show there.	第 {pages} 頁被一張圖片覆蓋（掃描檔？），因此那裡不會顯示背景。
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	一個 PNG 或 SVG 檔案。每次 PdfCraft 啟動時都從此位置讀取。
 	A selected field has no widget on any page, so the fields can't be edited together.	某個所選欄位在任何頁面上都沒有控制項，因此無法一起編輯這些欄位。
+	A setting isn't valid	某項設定無效
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	屬於頁面內容一部分的簽章（例如掃描頁面上的簽章）既不是欄位也不是註解，因此無法單獨移除，PdfCraft 也不會為了隱藏它而擦除頁面的某些部分。若要去除它，請遮蔽該區域（遮蔽），如果簽章是一張獨立的影像，也可以用「編輯 PDF」刪除該影像。
 	A stream refers to an external file	串流參照了外部檔案
 	A stream uses LZW compression	串流使用了 LZW 壓縮
@@ -72,6 +73,7 @@
 	About PdfCraft	關於 PdfCraft
 	About {app}	關於 {app}
 	Accepted	已接受
+	Accepted by {printer}	已被 {printer} 接受
 	Accessibility Checker	無障礙偵測工具
 	Accessibility Checker Options	無障礙檢驗器選項
 	Accessibility panel	協助工具面板
@@ -282,6 +284,7 @@
 	Ask before a document opens in Full Screen mode	文件以全螢幕模式開啟前詢問
 	Ask in any language	可用任何語言提問
 	Ask to scan more pages	詢問是否繼續掃描更多頁面
+	Asking the printer…	正在查詢印表機…
 	Asking {server}…	正在詢問 {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	向 GitHub 搜尋最新版本。不會自動下載或安裝任何內容。
 	Assistant	助理
@@ -378,6 +381,7 @@
 	Can't be read: {e}	無法讀取：{e}
 	Cancel caption placement	取消標題放置
 	Cancel reverse sides	Cancel reverse sides
+	Canceling…	正在取消…
 	Cancelled	已取消
 	Cancelling…	正在取消…
 	Case-sensitive	區分大小寫
@@ -638,6 +642,7 @@
 	Couldn't optimize the file	無法最佳化檔案
 	Couldn't optimize the file: {e}	無法最佳化檔案：{e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	無法從瀏覽器列印（{e}）；已改為下載 {name} 以供列印
+	Couldn't reach the printer	無法連線到印表機
 	Couldn't read {name}: {e}	無法讀取{name}：{e}
 	Couldn't recover {name}: {e}	無法恢復{name}：{e}
 	Couldn't reload {name}: {e}	無法重新載入{name}：{e}
@@ -1218,6 +1223,7 @@ scroll speed	Fast	快
 	Hebrew (ISO 8859-8)	希伯來文（ISO 8859-8）
 	Hebrew (Windows-1255)	希伯來文（Windows-1255）
 	Hectares	公頃
+	Held by the printer	已被印表機保留
 	Heritage	Heritage
 	Hidden layers	隱藏圖層
 	Hide a field	隱藏欄位
@@ -1247,6 +1253,7 @@ key	Home	Home
 	How Edit text reads old fonts that don't say which letters they draw. Auto-detect recognises Hebrew fonts laid out for ISO 8859-8 or Windows-1255.	「編輯文字」如何讀取未說明所繪字母的舊字型。自動偵測可辨識依 ISO 8859-8 或 Windows-1255 排列的希伯來文字型。
 	HTML web page	HTML 網頁
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	匈牙利語 OCR 需要桌面應用程式、Tesseract 5 和 hun 語言模型。安裝後請重新啟動 PdfCraft。
+	I confirm sending this document to this printer	我確認將此文件傳送到這台印表機
 	Identity	個人資訊
 	Image	圖片
 	Image (PNG)	圖片（PNG）
@@ -1551,6 +1558,7 @@ key	Home	Home
 	Nested alternate text	巢狀替代文字
 	Network	網路
 	Network address	網路位址
+	Network printer (WS-Print)	網路印表機 (WS-Print)
 	New Action	新建操作
 	New Action…	新建操作…
 	New blank PDF	新增空白 PDF
@@ -1642,10 +1650,12 @@ key	Home	Home
 	None of those files can be made into a PDF; use PDFs, images or .txt files	這些檔案都無法轉換為 PDF；請使用 PDF、圖片或 .txt 檔案
 	None of your digital IDs can open this document.	你的數位 ID 都無法開啟此文件。
 	None — everything is allowed	無 — 允許一切操作
+	Normal	標準
 scroll speed	Normal	正常
 	Normal page	一般頁面
 	Northing	北座標
 	Not allowed	不允許
+	Not confirmed by the printer	印表機未確認
 	Not in order	不在順序中
 	Not now	暫時不要
 	Not present	不存在
@@ -1695,6 +1705,7 @@ animation effects	On	開
 	Only checked properties will change. Mixed means the selected fields have different values.	只會變更勾選的屬性。「混合」表示所選欄位的值不同。
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	僅裁剪清晰的紙張邊緣。無法區分的白色邊框將保留。
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	請僅在信任此文件時繼續。網址可能夾帶文件中的資訊，例如您在表單中輸入的內容。
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	只接受本網路內的 IP 位址（私人、連結本機或回送位址），不接受主機名稱。
 	Only send if you trust this document and destination. GET puts form values in the URL.	只有在信任此文件與目的地時才傳送。GET 會將表單值放入 URL。
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	僅在信任此文件和目的地時傳送。完整 PDF 將離開這部電腦。
 	Only send if you trust this document and destination. The form values leave this computer.	只有在信任此文件與目的地時才傳送。表單值將離開這部電腦。
@@ -1948,9 +1959,14 @@ animation effects	On	開
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	請單面列印。保持紙張順序，沿裁切標記裁切，再依由左至右、由上至下的順序疊放各疊紙張。
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print、NextPage、PrevPage、FirstPage 或 LastPage
 	Printed through the system print dialog	已透過系統列印對話方塊列印
+	Printed with errors	已列印，有錯誤
+	Printed with warnings	已列印，有警告
+	Printer address:	印表機位址：
 	Printer default	印表機預設
+	Printer orientation:	印表機方向：
 	Printer paper and scaling may differ. Check driver settings.	印表機的紙張與縮放可能不同，請檢查驅動程式設定。
 	Printer properties	印表機內容
+	Printer status: {state}	印表機狀態：{state}
 	Printer:	列印機：
 	Printing allowed	允許列印
 	Privacy	隱私
@@ -1969,7 +1985,10 @@ animation effects	On	開
 	Public domain	公有領域
 	Public key	公鑰
 	PushButton	按鈕
+	Quality:	品質：
 	Quantity	測量量
+	Query printer	查詢印表機
+	Query the printer first to see what it supports.	請先查詢印表機，了解它支援哪些功能。
 	Quirks	特例
 	Quit	結束
 	Quit PdfCraft	結束 PdfCraft
@@ -2007,6 +2026,7 @@ animation effects	On	開
 	Real length	實際長度
 	Reason	原因
 	Reason: 	原因：
+	Reasons: {reasons}	原因：{reasons}
 	Recent colours	最近使用的顏色
 	Recent files to keep	Recent files to keep
 	Recipients	收件者
@@ -2157,8 +2177,10 @@ animation effects	On	開
 	Return to document	返回文件
 	Reveal in File Explorer	在檔案總管中顯示
 	Reverse closed arrow	反向閉合箭頭
+	Reverse landscape	橫向（反向）
 	Reverse open arrow	反向開口箭頭
 	Reverse pages	逆序頁面
+	Reverse portrait	縱向（反向）
 	reverse side(s)	reverse side(s)
 	Reverse sides	Reverse sides
 	Reverse sides interleaved.	Reverse sides interleaved.
@@ -2357,6 +2379,7 @@ animation effects	On	開
 	Sensitivity (screen pixels)	靈敏度（螢幕像素）
 	Sent to {printer}	已傳送到{printer}
 	Sent to {printer}: {msg}	已傳送到{printer}：{msg}
+	Sent. The printer can't say whether it printed.	已傳送。印表機無法說明是否已列印。
 	Separate display coordinate system	使用獨立的顯示座標系
 	Separate PDFs	個別 PDF
 	Separate the sheets and load the remaining ones, then choose Continue.	Separate the sheets and load the remaining ones, then choose Continue.
@@ -2396,6 +2419,8 @@ animation effects	On	開
 	Shadings	著色
 	Shared Field Properties	共用欄位屬性
 	Sheet {s} of {n}	第 {s} 張，共 {n} 張
+	Sheets printed: {done} of {total}	已列印張數：{done}/{total}
+	Sheets printed: {n}	已列印張數：{n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift 限制為 45 度角。Backspace 移除頂點。Escape 取消。
 	Shift drags freely	按住 Shift 自由拖曳
@@ -2534,6 +2559,7 @@ document scrollbar width	Standard	標準
 	Start page number	起始頁碼
 	Steps	步驟
 	Sticky note	便利貼註解
+	Still printing; the job continues on the printer	仍在列印；工作會在印表機上繼續
 	Stop	Stop
 	Stop reading	停止朗讀
 	Straighten scanned page	校正掃描頁面的傾斜
@@ -2640,6 +2666,7 @@ document scrollbar width	Standard	標準
 	The Dock shows it the next time PdfCraft opens.	下次開啟 PdfCraft 時，Dock 會顯示此圖示。
 	The document changed while its margins were measured; nothing was cropped	測量頁邊距時文件已變更，未進行裁切
 	The document changed while you were editing field properties.	編輯欄位屬性時文件已變更。
+	The document couldn't be prepared	無法準備文件
 	The document has additional actions (/AA)	此文件具有額外動作（/AA）
 	The document has document-level JavaScript	此文件具有文件層級的 JavaScript
 	the document has no form fields	此文件沒有表單欄位
@@ -2678,6 +2705,7 @@ document scrollbar width	Standard	標準
 	The image has been copied ({w} × {h} pixels)	圖片已複製（{w} × {h} 畫素）
 	The image has been copied as a {ext} file	圖片已複製為 {ext} 檔案
 	the image is empty	圖片是空的
+	The job was canceled	工作已取消
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	金鑰位於 macOS 鑰匙串中，系統可能會詢問是否允許 PdfCraft 使用它。
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	金鑰位於 Windows 憑證存放區中，系統可能會詢問是否允許 PdfCraft 使用它。
 	The key is on the device, which may ask for its PIN itself.	金鑰在裝置上，裝置可能會自行要求輸入 PIN。
@@ -2706,7 +2734,18 @@ document scrollbar width	Standard	標準
 	The PIN is incorrect.	PIN 不正確。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	無法列出 PKCS #11 權杖的數位 ID：{e}
 	The preview could not be shown.	The preview could not be shown.
+	The print job stopped unexpectedly	列印工作意外停止
+	The printer accepts none of the formats this document can be sent in	印表機不接受此文件可傳送的任何格式
+	The printer address was refused	印表機位址遭拒絕
+	The printer doesn't support this setting	印表機不支援此設定
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	此次列印的印表機驅動程式專屬設定：紙匣、紙張類型、裝訂整理等。
+	The printer is printing it	印表機正在列印
+	The printer may have received the document. Check the printer before sending again.	印表機可能已收到文件。再次傳送之前，請先檢查印表機。
+	The printer no longer lists the job; it most likely finished	印表機不再列出該工作；很可能已完成
+	The printer paused the job; it needs attention	印表機已暫停工作；需要處理
+	The printer refused the request	印表機拒絕了要求
+	The printer stopped the job	印表機已停止工作
+	The printer's reply couldn't be understood	無法理解印表機的回覆
 	The provider's page didn't come back in time. Try again.	提供者頁面未及時返回。請再試一次。
 	The raw text was truncated to what fits.	原始文字已被截斷。
 	The redaction does not fit page {page}; no pages were marked.	密文標記不適合第 {page} 頁；未標記任何頁面。
@@ -2830,7 +2869,13 @@ document scrollbar width	Standard	標準
 	This page has an opaque background of its own, which hides the image behind it.	此頁面有自己的不透明背景，會遮住其後的圖像。
 	This page has no 3D models.	此頁沒有3D模型。
 	This PDF uses the unsupported {s} action.	此 PDF 使用了不支援的 {s} 動作。
+	This printer does not take a copies setting.	此印表機不支援份數設定。
+	This printer does not take a quality setting.	此印表機不支援品質設定。
+	This printer does not take a resolution setting.	此印表機不支援解析度設定。
+	This printer does not take an orientation setting.	此印表機不支援方向設定。
 	This printer offers no settings of its own.	此印表機沒有專屬設定。
+	This printer only prints in black and white.	此印表機僅支援黑白列印。
+	This printer only prints one-sided.	此印表機僅支援單面列印。
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	此印表機的驅動程式不接受其他程式的雙面列印設定，因此使用其自身設定。變更位置：屬性…
 	this signature can't be removed on its own	此簽章無法單獨移除
 	This tab is already first	此分頁已是第一個
@@ -3001,6 +3046,7 @@ document scrollbar width	Standard	標準
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	正在等待系統列印對話方塊…
 	Waiting for your approval in the browser…	正在等候您在瀏覽器中核准…
+	Waiting in the printer's queue	正在印表機佇列中等候
 	watermark	浮水印
 	Weak	弱
 	Welcome to PdfCraft	歡迎使用 PdfCraft

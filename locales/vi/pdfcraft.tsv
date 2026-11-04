@@ -65,6 +65,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Một tệp PNG hoặc SVG. Tệp được đọc từ vị trí này mỗi lần PdfCraft khởi động.
 	A script	Một script
 	A selected field has no widget on any page, so the fields can't be edited together.	Một trường đã chọn không có widget trên trang nào, nên các trường không thể được chỉnh sửa cùng nhau.
+	A setting isn't valid	Một thiết lập không hợp lệ
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Chữ ký là một phần nội dung của trang, ví dụ trên trang được quét, không phải là trường hay chú thích nên không thể gỡ riêng, và PdfCraft không xóa một phần trang để che nó. Để bỏ nó đi, hãy xóa nội dung nhạy cảm ở vùng đó (Xóa nội dung nhạy cảm), hoặc nếu chữ ký là một hình ảnh riêng thì xóa hình ảnh bằng Chỉnh sửa một PDF.
 	A stream refers to an external file	Một luồng tham chiếu đến tệp bên ngoài
 	A stream uses LZW compression	Một luồng dùng nén LZW
@@ -78,6 +79,7 @@
 	About PdfCraft	Giới thiệu PdfCraft
 	About {app}	Giới thiệu về {app}
 	Accepted	Đã chấp nhận
+	Accepted by {printer}	Đã được {printer} chấp nhận
 	Accessibility Checker	Trình kiểm tra trợ năng
 	Accessibility Checker Options	Tùy chọn trình kiểm tra trợ năng
 	Accessibility panel	Bảng trợ năng
@@ -272,6 +274,7 @@ calendar date	April	tháng 4
 	Ask AI about this document	Hỏi AI về tài liệu này
 	Ask before a document opens in Full Screen mode	Hỏi trước khi tài liệu mở ở chế độ toàn màn hình
 	Ask whether to recognize the current page or all pages when editing a scan.	Khi chỉnh sửa tài liệu đã quét, hỏi có nhận dạng trang hiện tại hay tất cả các trang.
+	Asking the printer…	Đang hỏi máy in…
 	Asking {server}…	Đang hỏi {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Hỏi GitHub về bản phát hành mới nhất. Không có gì được tải xuống hoặc cài đặt tự động.
 	Associated with content	Được liên kết với nội dung
@@ -358,6 +361,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Callout	Khung chú thích
 	Can't be read: {e}	Không thể đọc: {e}
 	Cancel reverse sides	Hủy quét mặt sau
+	Canceling…	Đang hủy…
 	Cancelled	Đã hủy
 	Cancelling…	Đang hủy…
 	Card driver (PKCS #11)	Trình điều khiển thẻ (PKCS #11)
@@ -602,6 +606,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Couldn't optimize the file	Không thể tối ưu hóa tệp
 	Couldn't optimize the file: {e}	Không thể tối ưu hóa tệp: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Không thể in từ trình duyệt ({e}); đã tải {name} xuống để in thay thế
+	Couldn't reach the printer	Không thể kết nối tới máy in
 	Couldn't read {name}: {e}	Không thể đọc {name}: {e}
 	Couldn't recover {name}: {e}	Không thể khôi phục {name}: {e}
 	Couldn't reload {name}: {e}	Không thể tải lại {name}: {e}
@@ -1157,6 +1162,7 @@ calendar weekday	Fr	T6
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Cấp đề mục không nên bị bỏ qua (H1 theo sau là H3). Hãy gắn thẻ lại các đề mục.
 	Hebrew (ISO 8859-8)	Tiếng Do Thái (ISO 8859-8)
 	Hebrew (Windows-1255)	Tiếng Do Thái (Windows-1255)
+	Held by the printer	Máy in đang giữ lệnh in
 	Help…	Trợ giúp…
 	Heritage	Heritage
 	Hidden layers	Lớp ẩn
@@ -1187,6 +1193,7 @@ key	Home	Home
 	HTML web page	Trang web HTML
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	OCR tiếng Hungary yêu cầu ứng dụng máy tính với Tesseract 5 và mô hình ngôn ngữ hun. Khởi động lại PdfCraft sau khi cài đặt.
 	H{n} follows an H{d}; headings should not skip levels	H{n} theo sau H{d}; các đề mục không nên bỏ qua cấp
+	I confirm sending this document to this printer	Tôi xác nhận gửi tài liệu này đến máy in này
 	Identity	Danh tính
 	Image (PNG)	Hình ảnh (PNG)
 	Image field	Trường hình ảnh
@@ -1483,6 +1490,7 @@ calendar weekday	Mo	T2
 	Negative number style:	Kiểu số âm:
 	Nested alternate text	Văn bản thay thế lồng nhau
 	Network	Mạng
+	Network printer (WS-Print)	Máy in mạng (WS-Print)
 	New Action	Hành động mới
 	New Action…	Hành động mới…
 	New blank PDF	PDF trống mới
@@ -1579,8 +1587,10 @@ calendar weekday	Mo	T2
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Không tệp nào trong số đó có thể chuyển thành PDF; hãy dùng PDF, hình ảnh hoặc tệp .txt
 	None of your digital IDs can open this document.	Không Digital ID nào của bạn mở được tài liệu này.
 	None — everything is allowed	Không có — mọi thứ đều được phép
+	Normal	Bình thường
 scroll speed	Normal	Bình thường
 	Not allowed	Không được phép
+	Not confirmed by the printer	Máy in chưa xác nhận
 	not in a Table, THead, TBody or TFoot	không nằm trong Table, THead, TBody hoặc TFoot
 	not in a TR	không nằm trong TR
 	not in an L (list)	không nằm trong L (danh sách)
@@ -1635,6 +1645,7 @@ animation effects	On	Bật
 	Only checked properties will change. Mixed means the selected fields have different values.	Chỉ các thuộc tính được đánh dấu mới thay đổi. Hỗn hợp nghĩa là các trường đã chọn có giá trị khác nhau.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Chỉ cắt khi xác định rõ mép giấy. Các viền trắng không thể phân biệt sẽ được giữ nguyên.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Chỉ tiếp tục nếu bạn tin cậy tài liệu này. Một địa chỉ có thể mang thông tin từ tài liệu, chẳng hạn những gì bạn đã nhập vào biểu mẫu của nó.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Chỉ chấp nhận địa chỉ IP trong mạng này (riêng, liên kết cục bộ hoặc loopback), không chấp nhận tên máy chủ.
 	Only the document's owner can change its security (open it with the permissions password)	Chỉ chủ sở hữu tài liệu mới có thể thay đổi bảo mật của nó (hãy mở bằng mật khẩu quyền hạn)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Chỉ nội dung trang thay đổi: liên kết, bình luận, trường biểu mẫu và dấu trang trên các trang gốc được giữ nguyên.
 	Only the recipients can open the document, each with the private key of their own certificate.	Chỉ những người nhận mới mở được tài liệu, mỗi người bằng khóa riêng tư của chứng chỉ của mình.
@@ -1880,9 +1891,14 @@ animation effects	On	Bật
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	In một mặt. Giữ các tờ theo thứ tự, cắt theo các dấu, rồi xếp các chồng từ trái sang phải, từ trên xuống dưới.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage hoặc LastPage
 	Printed through the system print dialog	Đã in qua hộp thoại in của hệ thống
+	Printed with errors	Đã in nhưng có lỗi
+	Printed with warnings	Đã in nhưng có cảnh báo
+	Printer address:	Địa chỉ máy in:
 	Printer default	Mặc định của máy in
+	Printer orientation:	Hướng của máy in:
 	Printer paper and scaling may differ. Check driver settings.	Giấy in và tỷ lệ của máy in có thể khác. Hãy kiểm tra cài đặt trình điều khiển.
 	Printer properties	Thuộc tính máy in
+	Printer status: {state}	Trạng thái máy in: {state}
 	Printing allowed	Cho phép in
 	Privacy	Quyền riêng tư
 	Private data of other applications	Dữ liệu riêng của các ứng dụng khác
@@ -1900,6 +1916,9 @@ animation effects	On	Bật
 	Public key	Khóa công khai
 certificate	Public key	Khóa công khai
 	PushButton	PushButton
+	Quality:	Chất lượng:
+	Query printer	Truy vấn máy in
+	Query the printer first to see what it supports.	Hãy truy vấn máy in trước để xem máy in hỗ trợ những gì.
 	Quirks	Điểm đặc biệt
 	Quit	Thoát
 	Quit PdfCraft	Thoát PdfCraft
@@ -1921,6 +1940,7 @@ certificate	Public key	Khóa công khai
 	Reads {name}, which the form doesn't have, so it gets no value there.	Đọc {name}, nhưng biểu mẫu không có trường này, nên không nhận được giá trị nào từ đó.
 	Reason	Lý do
 	Reason: 	Lý do: 
+	Reasons: {reasons}	Lý do: {reasons}
 	Recent colours	Màu gần đây
 	Recent files to keep	Recent files to keep
 	Recipients	Người nhận
@@ -2071,8 +2091,10 @@ certificate	Public key	Khóa công khai
 	Rev. {rev}: Signed by {name}	Bản sửa đổi {rev}: Được ký bởi {name}
 	Reveal in File Explorer	Hiện trong File Explorer
 	Reverse closed arrow	Mũi tên đóng đảo ngược
+	Reverse landscape	Ngang đảo ngược
 	Reverse open arrow	Mũi tên mở đảo ngược
 	Reverse pages	Đảo ngược các trang
+	Reverse portrait	Dọc đảo ngược
 	reverse side(s)	mặt sau
 	Reverse sides	Mặt sau
 	Reverse sides interleaved.	Đã xen kẽ các mặt sau.
@@ -2262,6 +2284,7 @@ certificate	Self-signed	Tự ký
 	Sending to {printer}…	Đang gửi đến {printer}…
 	Sent to {printer}	Đã gửi đến {printer}
 	Sent to {printer}: {msg}	Đã gửi đến {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Đã gửi. Máy in không thể cho biết đã in hay chưa.
 	Separate PDFs	Các PDF riêng biệt
 	Separate the sheets and load the remaining ones, then choose Continue.	Tách các tờ và nạp những tờ còn lại, rồi chọn Tiếp tục.
 	Separate the sheets and load them again, then choose Try again.	Tách các tờ và nạp lại, rồi chọn Thử lại.
@@ -2305,6 +2328,8 @@ certificate	SHA-256 digest	Giá trị băm SHA-256
 	Shadings	Chuyển sắc
 	Shared Field Properties	Thuộc tính trường dùng chung
 	Sheet {s} of {n}	Tờ {s} trên {n}
+	Sheets printed: {done} of {total}	Số tờ đã in: {done} / {total}
+	Sheets printed: {n}	Số tờ đã in: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift giới hạn ở góc 45 độ. Backspace xóa một đỉnh. Escape để hủy.
 	Shift- or Ctrl/Command-click to select several fields.	Nhấn Shift hoặc Ctrl/Command khi bấm để chọn nhiều trường.
@@ -2442,6 +2467,7 @@ action wizard	Start	Bắt đầu
 	Start page number	Số trang bắt đầu
 	Steps	Các bước
 	Sticky note	Ghi chú dán
+	Still printing; the job continues on the printer	Vẫn đang in; lệnh in tiếp tục trên máy in
 	Still rendering — this page is unusually complex…	Vẫn đang kết xuất — trang này phức tạp bất thường…
 	Straighten scanned page	Căn thẳng trang đã quét
 	Straighten skewed scans	Căn thẳng các bản quét bị nghiêng
@@ -2549,6 +2575,7 @@ calendar weekday	Th	T5
 	The document changed while its margins were measured; nothing was cropped	Tài liệu đã thay đổi trong khi đo lề; không có gì bị cắt
 	The document changed while you were choosing a file, so nothing was changed.	Tài liệu đã thay đổi trong lúc bạn chọn tệp, nên không có gì bị thay đổi.
 	The document changed while you were editing field properties.	Tài liệu đã thay đổi trong lúc bạn chỉnh sửa thuộc tính trường.
+	The document couldn't be prepared	Không thể chuẩn bị tài liệu
 	The document has additional actions (/AA)	Tài liệu có các hành động bổ sung (/AA)
 	The document has been altered or corrupted since the signature was applied.	Tài liệu đã bị thay đổi hoặc hỏng kể từ khi chữ ký được áp dụng.
 	The document has been altered or corrupted since the timestamp was applied.	Tài liệu đã bị thay đổi hoặc hỏng kể từ khi dấu thời gian được áp dụng.
@@ -2602,6 +2629,7 @@ calendar weekday	Th	T5
 	The image has been copied ({w} × {h} pixels)	Đã sao chép hình ảnh ({w} × {h} điểm ảnh)
 	The image has been copied as a {ext} file	Đã sao chép hình ảnh dưới dạng tệp {ext}
 	the image is empty	hình ảnh trống
+	The job was canceled	Lệnh in đã bị hủy
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Khóa nằm trong macOS Keychain, nơi có thể yêu cầu cho phép PdfCraft sử dụng nó.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Khóa nằm trong kho chứng chỉ Windows, nơi có thể yêu cầu cho phép PdfCraft sử dụng nó.
 	The key is on the device, which may ask for its PIN itself.	Khóa nằm trên thiết bị, thiết bị có thể tự hỏi mã PIN.
@@ -2632,7 +2660,18 @@ calendar weekday	Th	T5
 	The PIN goes only to the card; PdfCraft doesn't keep it.	Mã PIN chỉ được gửi tới thẻ; PdfCraft không lưu nó.
 	The PIN is incorrect.	Mã PIN không đúng.
 	The preview could not be shown.	Không thể hiển thị bản xem trước.
+	The print job stopped unexpectedly	Lệnh in dừng bất ngờ
+	The printer accepts none of the formats this document can be sent in	Máy in không nhận định dạng nào mà tài liệu này có thể được gửi
+	The printer address was refused	Địa chỉ máy in bị từ chối
+	The printer doesn't support this setting	Máy in không hỗ trợ thiết lập này
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Cài đặt riêng của trình điều khiển máy in cho lần in này: khay giấy, loại giấy, hoàn thiện và nhiều hơn nữa.
+	The printer is printing it	Máy in đang in
+	The printer may have received the document. Check the printer before sending again.	Máy in có thể đã nhận tài liệu. Hãy kiểm tra máy in trước khi gửi lại.
+	The printer no longer lists the job; it most likely finished	Máy in không còn liệt kê lệnh in; nhiều khả năng lệnh in đã hoàn tất
+	The printer paused the job; it needs attention	Máy in đã tạm dừng lệnh in; cần được xử lý
+	The printer refused the request	Máy in đã từ chối yêu cầu
+	The printer stopped the job	Máy in đã dừng lệnh in
+	The printer's reply couldn't be understood	Không thể hiểu phản hồi của máy in
 	The provider's page didn't come back in time. Try again.	Trang của nhà cung cấp không phản hồi kịp. Hãy thử lại.
 	The redaction does not fit page {page}; no pages were marked.	Vùng che không vừa trang {page}; không trang nào được đánh dấu.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI chuyển hướng phải là http://127.0.0.1 hoặc http://localhost kèm cổng.
@@ -2802,7 +2841,13 @@ calendar weekday	Th	T5
 	This page has an opaque background of its own, which hides the image behind it.	Trang này có nền đục riêng, che hình ảnh phía sau.
 	This PDF uses the unsupported {s} action.	PDF này dùng hành động {s} chưa được hỗ trợ.
 	This point could not be moved. Try a smaller move.	Không thể di chuyển điểm này. Hãy thử dịch chuyển nhỏ hơn.
+	This printer does not take a copies setting.	Máy in này không nhận thiết lập số bản sao.
+	This printer does not take a quality setting.	Máy in này không nhận thiết lập chất lượng.
+	This printer does not take a resolution setting.	Máy in này không nhận thiết lập độ phân giải.
+	This printer does not take an orientation setting.	Máy in này không nhận thiết lập hướng giấy.
 	This printer offers no settings of its own.	Máy in này không có cài đặt riêng.
+	This printer only prints in black and white.	Máy in này chỉ in đen trắng.
+	This printer only prints one-sided.	Máy in này chỉ in một mặt.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Trình điều khiển của máy in này không nhận cài đặt in hai mặt từ các chương trình khác, nên cài đặt riêng của nó được áp dụng. Hãy thay đổi trong Thuộc tính…
 	this signature can't be removed on its own	không thể gỡ riêng chữ ký này
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Chữ ký này dùng khóa RSA ngắn hơn 2048 bit, không còn được coi là đủ mạnh cho chữ ký. Nó vẫn xác thực được, nhưng không nên dựa vào nó.
@@ -2966,6 +3011,7 @@ certificate	Version	Phiên bản
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Chờ máy quét xong, hoặc đóng mọi chương trình khác đang dùng nó, rồi chọn Thử lại.
 	Waiting for the system print dialog…	Đang chờ hộp thoại in của hệ thống…
 	Waiting for your approval in the browser…	Đang chờ bạn phê duyệt trong trình duyệt…
+	Waiting in the printer's queue	Đang chờ trong hàng đợi của máy in
 	watermark	hình mờ
 calendar weekday	We	T4
 	Weak	Yếu

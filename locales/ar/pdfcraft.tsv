@@ -66,6 +66,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	ملف PNG أو SVG. يُقرأ من هذا المكان في كل مرة يبدأ فيها PdfCraft.
 	A script	سكربت
 	A selected field has no widget on any page, so the fields can't be edited together.	أحد الحقول المحددة ليس له عنصر واجهة في أي صفحة، لذا لا يمكن تحرير الحقول معًا.
+	A setting isn't valid	أحد الإعدادات غير صالح
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	التوقيع الذي يكون جزءًا من محتوى الصفحة، كما في صفحة ممسوحة ضوئيًا، ليس حقلًا ولا تعليقًا توضيحيًا، لذا لا يمكن إزالته وحده، ولا يمسح PdfCraft أجزاءً من الصفحة لإخفائه. لإزالته، احجب تلك المنطقة (حجب)، أو إذا كان التوقيع صورة مستقلة فاحذف الصورة باستخدام تحرير ملف PDF.
 	A stream refers to an external file	تدفق يشير إلى ملف خارجي
 	A stream uses LZW compression	تدفق يستخدم ضغط LZW
@@ -77,6 +78,7 @@
 	About PdfCraft	حول PdfCraft
 	About {app}	حول {app}
 	Accepted	مقبول
+	Accepted by {printer}	قبلته {printer}
 	Accessibility Checker	مدقق إمكانية الوصول
 	Accessibility Checker Options	خيارات مدقق إمكانية الوصول
 	Accessibility panel	لوحة إمكانية الوصول
@@ -285,6 +287,7 @@ calendar date	April	أبريل
 	Ask before a document opens in Full Screen mode	السؤال قبل فتح المستند في وضع ملء الشاشة
 	Ask in any language	اسأل بأي لغة
 	Ask whether to recognize the current page or all pages when editing a scan.	السؤال عمّا إذا كان ينبغي التعرّف على الصفحة الحالية أو جميع الصفحات عند تحرير مستند ممسوح ضوئيًا.
+	Asking the printer…	جارٍ الاستعلام عن الطابعة…
 	Asking {server}…	جارٍ سؤال {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	يسأل GitHub عن أحدث إصدار. لا يُنزَّل أو يُثبَّت شيء تلقائيًا.
 	Assistant	المساعد
@@ -378,6 +381,7 @@ certificate	Basic constraints	القيود الأساسية
 	Callout	وسيلة شرح
 	Can't be read: {e}	تتعذر قراءته: {e}
 	Cancel reverse sides	إلغاء الوجه الخلفي
+	Canceling…	جارٍ الإلغاء…
 	Cancelled	ملغى
 	Cancelling…	جارٍ الإلغاء…
 	Card driver (PKCS #11)	برنامج تشغيل البطاقة (PKCS #11)
@@ -631,6 +635,7 @@ certificate	Basic constraints	القيود الأساسية
 	Couldn't optimize the file	تعذّر تحسين الملف
 	Couldn't optimize the file: {e}	تعذّر تحسين الملف: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	تعذّرت الطباعة من المتصفح ({e})؛ نُزّل {name} لطباعته بدلًا من ذلك
+	Couldn't reach the printer	تعذر الوصول إلى الطابعة
 	Couldn't read {name}: {e}	تعذّرت قراءة {name}: {e}
 	Couldn't recover {name}: {e}	تعذّرت استعادة {name}: {e}
 	Couldn't reload {name}: {e}	تعذّرت إعادة تحميل {name}: {e}
@@ -856,6 +861,7 @@ key	Delete	Delete
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	تُفتح التنزيلات في المتصفح. التثبيت يدوي؛ ولا يُثبَّت أي شيء تلقائيًا.
 	Downsample to	تقليل العينات إلى
 	DPI sets the printed page size without resampling the image.	قيمة DPI تحدد حجم الصفحة المطبوعة دون إعادة تشكيل الصورة.
+	Draft	مسودة
 	Drag a field to move it, or select it and press {up} or {down}.	اسحب حقلًا لنقله، أو حدده واضغط {up} أو {down}.
 	Drag a point to reshape the line. Delete removes it.	اسحب نقطة لتغيير شكل الخط. يحذفه مفتاح Delete.
 	Drag a rectangle around the area to copy	اسحب مستطيلًا حول المنطقة المراد نسخها
@@ -1213,6 +1219,7 @@ calendar weekday	Fr	جمعة
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	مستويات العناوين ينبغي ألا تتخطى مستوى (H1 يتبعه H3). أعد وسم العناوين.
 	Hebrew (ISO 8859-8)	العبرية (ISO 8859-8)
 	Hebrew (Windows-1255)	العبرية (Windows-1255)
+	Held by the printer	محتجزة لدى الطابعة
 	Help…	تعليمات…
 	Heritage	Heritage
 	Hidden layers	الطبقات المخفية
@@ -1244,6 +1251,7 @@ key	Home	Home
 	HTML web page	صفحة ويب HTML
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	يتطلب OCR للمجرية تطبيق سطح المكتب مع Tesseract 5 ونموذج اللغة hun. أعد تشغيل PdfCraft بعد التثبيت.
 	H{n} follows an H{d}; headings should not skip levels	يتبع H{n} عنوان H{d}؛ لا ينبغي للعناوين تخطي المستويات
+	I confirm sending this document to this printer	أؤكد إرسال هذا المستند إلى هذه الطابعة
 	Identity	الهوية
 	Image (PNG)	صورة (PNG)
 	Image field	حقل صورة
@@ -1556,6 +1564,7 @@ calendar weekday	Mo	إثنين
 	Negative number style:	نمط الأرقام السالبة:
 	Nested alternate text	نص بديل متداخل
 	Network	الشبكة
+	Network printer (WS-Print)	طابعة شبكية (WS-Print)
 	New Action	إجراء جديد
 	New Action…	إجراء جديد…
 	New blank PDF	ملف PDF فارغ جديد
@@ -1657,9 +1666,11 @@ calendar weekday	Mo	إثنين
 	None of those files can be made into a PDF; use PDFs, images or .txt files	لا يمكن تحويل أي من هذه الملفات إلى PDF؛ استخدم ملفات PDF أو صورًا أو ملفات .txt
 	None of your digital IDs can open this document.	لا يمكن لأي من معرّفاتك الرقمية فتح هذا المستند.
 	None — everything is allowed	لا شيء — كل شيء مسموح
+	Normal	عادية
 scroll speed	Normal	عادية
 	Normal page	صفحة عادية
 	Not allowed	غير مسموح
+	Not confirmed by the printer	لم تؤكده الطابعة
 	not in a Table, THead, TBody or TFoot	ليس في Table أو THead أو TBody أو TFoot
 	not in a TR	ليس في TR
 	not in an L (list)	ليس في L (قائمة)
@@ -1715,6 +1726,7 @@ animation effects	On	مفعّلة
 	Only checked properties will change. Mixed means the selected fields have different values.	الخصائص المؤشَّر عليها فقط ستتغير. «متباين» يعني أن للحقول المحددة قيمًا مختلفة.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	يتم قص حواف الورق الواضحة فقط. تُحفظ الحواف البيضاء التي لا يمكن تمييزها.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	تابع فقط إن كنت تثق بهذا المستند. العنوان قد يحمل معلومات من المستند، مثل ما كتبته في نموذجه.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	تُقبل عناوين IP الخاصة بهذه الشبكة فقط (خاصة أو محلية الارتباط أو الحلقة الراجعة)، وليس أسماء المضيفين.
 	Only send if you trust this document and destination. GET puts form values in the URL.	أرسل فقط إذا كنت تثق بهذا المستند والوجهة. يضع GET قيم النموذج في عنوان URL.
 	Only send if you trust this document and destination. The form values leave this computer.	أرسل فقط إذا كنت تثق بهذا المستند والوجهة. ستغادر قيم النموذج هذا الكمبيوتر.
 	Only the document's owner can change its security (open it with the permissions password)	مالك المستند وحده يستطيع تغيير أمانه (افتحه بكلمة مرور الأذونات)
@@ -1977,9 +1989,14 @@ animation effects	On	مفعّلة
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	اطبع على وجه واحد. أبقِ الأوراق بترتيبها، وقص عند العلامات، ثم كدّس الرزم من اليسار إلى اليمين ومن الأعلى إلى الأسفل.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print أو NextPage أو PrevPage أو FirstPage أو LastPage
 	Printed through the system print dialog	طُبع عبر مربع حوار الطباعة في النظام
+	Printed with errors	تمت الطباعة مع أخطاء
+	Printed with warnings	تمت الطباعة مع تحذيرات
+	Printer address:	عنوان الطابعة:
 	Printer default	افتراضي الطابعة
+	Printer orientation:	اتجاه الطابعة:
 	Printer paper and scaling may differ. Check driver settings.	قد يختلف ورق الطابعة ومقياس الطباعة. تحقق من إعدادات برنامج التشغيل.
 	Printer properties	خصائص الطابعة
+	Printer status: {state}	حالة الطابعة: {state}
 	Printing allowed	الطباعة المسموح بها
 	Privacy	الخصوصية
 	Private data of other applications	البيانات الخاصة بالتطبيقات الأخرى
@@ -1997,6 +2014,9 @@ animation effects	On	مفعّلة
 	Public key	المفتاح العام
 certificate	Public key	المفتاح العام
 	PushButton	زر ضغط
+	Quality:	الجودة:
+	Query printer	استعلام عن الطابعة
+	Query the printer first to see what it supports.	استعلم عن الطابعة أولًا لمعرفة ما تدعمه.
 	Quirks	ملاحظات خاصة
 	Quit	إنهاء
 	Quit PdfCraft	إنهاء PdfCraft
@@ -2031,6 +2051,7 @@ certificate	Public key	المفتاح العام
 	Reads {name}, which the form doesn't have, so it gets no value there.	يقرأ {name}، وهو غير موجود في النموذج، لذا لا يحصل منه على أي قيمة.
 	Reason	السبب
 	Reason: 	السبب: 
+	Reasons: {reasons}	الأسباب: {reasons}
 	Recent colours	الألوان الأخيرة
 	Recent files to keep	Recent files to keep
 	Recipients	المستلمون
@@ -2187,8 +2208,10 @@ certificate	Public key	المفتاح العام
 	Rev. {rev}: Signed by {name}	المراجعة {rev}: موقع من {name}
 	Reveal in File Explorer	إظهار في مستكشف الملفات
 	Reverse closed arrow	سهم مغلق معكوس
+	Reverse landscape	أفقي معكوس
 	Reverse open arrow	سهم مفتوح معكوس
 	Reverse pages	عكس ترتيب الصفحات
+	Reverse portrait	عمودي معكوس
 	reverse side(s)	خلفي
 	Reverse sides	الوجوه الخلفية
 	Reverse sides interleaved.	أُدرجت الوجوه الخلفية بالتناوب.
@@ -2388,6 +2411,7 @@ certificate	Self-signed	ذاتي التوقيع
 	Sending to {printer}…	جارٍ الإرسال إلى {printer}…
 	Sending…	جارٍ الإرسال…
 	Sent to {printer}: {msg}	أُرسل إلى {printer}: {msg}
+	Sent. The printer can't say whether it printed.	تم الإرسال. لا تستطيع الطابعة أن تقول ما إذا كانت قد طبعت.
 	Separate PDFs	ملفات PDF منفصلة
 	Separate the sheets and load the remaining ones, then choose Continue.	افصل الأوراق وضع المتبقية منها، ثم اختر «متابعة المسح».
 	Separate the sheets and load them again, then choose Try again.	افصل الأوراق وضعها مرة أخرى، ثم اختر «إعادة المحاولة».
@@ -2433,6 +2457,8 @@ certificate	SHA-256 digest	بصمة SHA-256
 	Shadings	التظليلات
 	Shared Field Properties	خصائص الحقول المشتركة
 	Sheet {s} of {n}	الورقة {s} من {n}
+	Sheets printed: {done} of {total}	الأوراق المطبوعة: {done} من {total}
+	Sheets printed: {n}	الأوراق المطبوعة: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift يقيّد الزاوية بمضاعفات 45 درجة. Backspace يزيل رأسًا. Escape يلغي.
 	Shift drags freely	Shift للسحب بحرّية
@@ -2580,6 +2606,7 @@ action wizard	Start	بدء
 	Start page number	رقم صفحة البداية
 	Steps	الخطوات
 	Sticky note	ملاحظة لاصقة
+	Still printing; the job continues on the printer	ما زالت الطباعة جارية؛ تتابع المهمة عملها على الطابعة
 	Still rendering — this page is unusually complex…	لا يزال العرض جارياً — هذه الصفحة معقدة على غير العادة…
 	Stop	إيقاف
 	Stop reading	إيقاف القراءة
@@ -2694,6 +2721,7 @@ calendar weekday	Th	خميس
 	The document changed while its margins were measured; nothing was cropped	تغيّر المستند أثناء قياس هوامشه؛ لم يُقتطع شيء
 	The document changed while you were choosing a file, so nothing was changed.	تغيّر المستند أثناء اختيارك ملفًا، فلم يُغيَّر شيء.
 	The document changed while you were editing field properties.	تغيّر المستند أثناء تحريرك خصائص الحقل.
+	The document couldn't be prepared	تعذر تجهيز المستند
 	The document has additional actions (/AA)	المستند له إجراءات إضافية (/AA)
 	The document has been altered or corrupted since the signature was applied.	عُدّل المستند أو تلف منذ تطبيق التوقيع.
 	The document has been altered or corrupted since the timestamp was applied.	عُدّل المستند أو تلف منذ تطبيق الطابع الزمني.
@@ -2749,6 +2777,7 @@ calendar weekday	Th	خميس
 	The image has been copied ({w} × {h} pixels)	نُسخت الصورة ({w} × {h} بكسل)
 	The image has been copied as a {ext} file	نُسخت الصورة كملف {ext}
 	the image is empty	الصورة فارغة
+	The job was canceled	تم إلغاء المهمة
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	المفتاح موجود في سلسلة مفاتيح macOS، وقد تطلب الإذن لـ PdfCraft باستخدامه.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	المفتاح موجود في مخزن شهادات Windows، وقد يطلب الإذن لـ PdfCraft باستخدامه.
 	The key is on the device, which may ask for its PIN itself.	المفتاح موجود على الجهاز، الذي قد يطلب رمز PIN بنفسه.
@@ -2780,7 +2809,18 @@ calendar weekday	Th	خميس
 	The PIN is incorrect.	رمز PIN غير صحيح.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	تعذّر سرد المعرّفات الرقمية على رموز PKCS #11: {e}
 	The preview could not be shown.	تعذّر إظهار المعاينة.
+	The print job stopped unexpectedly	توقفت مهمة الطباعة بشكل غير متوقع
+	The printer accepts none of the formats this document can be sent in	لا تقبل الطابعة أيًا من التنسيقات التي يمكن إرسال هذا المستند بها
+	The printer address was refused	تم رفض عنوان الطابعة
+	The printer doesn't support this setting	لا تدعم الطابعة هذا الإعداد
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	إعدادات تعريف الطابعة الخاصة بهذه الطباعة: درج الورق ونوع الورق والتشطيب وغيرها.
+	The printer is printing it	الطابعة تطبعه الآن
+	The printer may have received the document. Check the printer before sending again.	ربما تلقّت الطابعة المستند. تحقق من الطابعة قبل الإرسال مرة أخرى.
+	The printer no longer lists the job; it most likely finished	لم تعد الطابعة تعرض المهمة؛ والأرجح أنها انتهت
+	The printer paused the job; it needs attention	أوقفت الطابعة المهمة مؤقتًا؛ تحتاج إلى انتباه
+	The printer refused the request	رفضت الطابعة الطلب
+	The printer stopped the job	أوقفت الطابعة المهمة
+	The printer's reply couldn't be understood	تعذر فهم رد الطابعة
 	The provider's page didn't come back in time. Try again.	لم تعُد صفحة المزوّد في الوقت المحدد. حاول مرة أخرى.
 	The raw text was truncated to what fits.	تم اقتطاع النص الخام.
 	The redaction does not fit page {page}; no pages were marked.	لا يلائم التنقيح الصفحة {page}؛ لم تُعلَّم أي صفحات.
@@ -2954,7 +2994,13 @@ calendar weekday	Th	خميس
 	This page has an opaque background of its own, which hides the image behind it.	لهذه الصفحة خلفية معتمة خاصة بها تُخفي الصورة الموضوعة خلفها.
 	This PDF uses the unsupported {s} action.	يستخدم هذا الملف إجراء {s} غير مدعوم.
 	This point could not be moved. Try a smaller move.	تعذّر نقل هذه النقطة. جرّب إزاحة أصغر.
+	This printer does not take a copies setting.	هذه الطابعة لا تدعم إعداد عدد النسخ.
+	This printer does not take a quality setting.	هذه الطابعة لا تدعم إعداد الجودة.
+	This printer does not take a resolution setting.	هذه الطابعة لا تدعم إعداد الدقة.
+	This printer does not take an orientation setting.	هذه الطابعة لا تدعم إعداد الاتجاه.
 	This printer offers no settings of its own.	هذه الطابعة لا تقدم إعدادات خاصة بها.
+	This printer only prints in black and white.	هذه الطابعة تطبع بالأبيض والأسود فقط.
+	This printer only prints one-sided.	هذه الطابعة تطبع على وجه واحد فقط.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	لا يقبل برنامج تشغيل هذه الطابعة إعدادات الطباعة على الوجهين من البرامج الأخرى، لذا يُطبَّق إعداده الخاص. غيّره من خصائص…
 	this signature can't be removed on its own	لا يمكن إزالة هذا التوقيع وحده
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	يستخدم هذا التوقيع RIPEMD-160، خوارزمية هضم قديمة بطول 160 بت لم تعد موصى بها للتواقيع. لا يزال يصح، لكن لا ينبغي الاعتماد عليه.
@@ -3127,6 +3173,7 @@ certificate	Version	الإصدار
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	انتظر حتى ينتهي الماسح الضوئي، أو أغلق أي برنامج آخر يستخدمه، ثم اختر «إعادة المحاولة».
 	Waiting for the system print dialog…	في انتظار مربع حوار الطباعة في النظام…
 	Waiting for your approval in the browser…	بانتظار موافقتك في المتصفح…
+	Waiting in the printer's queue	في انتظار دوره في قائمة انتظار الطابعة
 	watermark	علامة مائية
 calendar weekday	We	أربعاء
 	Weak	ضعيفة

@@ -69,6 +69,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Soubor PNG nebo SVG. Načítá se z tohoto místa při každém spuštění PdfCraft.
 	A script	Skript
 	A selected field has no widget on any page, so the fields can't be edited together.	Vybrané pole nemá na žádné stránce widget, takže pole nelze upravit společně.
+	A setting isn't valid	Nastavení není platné
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Podpis, který je součástí obsahu stránky, například na naskenované stránce, není pole ani poznámka, a proto ho nelze odstranit samostatně. PdfCraft nemaže části stránky, aby ho skryl. Chcete-li ho odstranit, začerněte tuto oblast (Začernění), nebo pokud je podpis samostatný obrázek, smažte obrázek pomocí Upravit PDF.
 	A stream refers to an external file	Proud odkazuje na externí soubor
 	A stream uses LZW compression	Proud používá kompresi LZW
@@ -80,6 +81,7 @@
 	About PdfCraft	O aplikaci PdfCraft
 	About {app}	O aplikaci {app}
 	Accepted	Přijato
+	Accepted by {printer}	Přijato tiskárnou {printer}
 	Accessibility Checker	Kontrola přístupnosti
 	Accessibility Checker Options	Možnosti kontroly přístupnosti
 	Accessibility panel	Panel přístupnosti
@@ -289,6 +291,7 @@ calendar date	April	dubna
 	Ask in any language	Ptejte se v jakémkoli jazyce
 	Ask to scan more pages	Zeptat se na skenování dalších stránek
 	Ask whether to recognize the current page or all pages when editing a scan.	Při úpravě skenu se zeptat, zda rozpoznat aktuální stránku, nebo všechny stránky.
+	Asking the printer…	Dotazuji se tiskárny…
 	Asking {server}…	Dotaz na {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Zjistí na GitHubu nejnovější vydání. Nic se automaticky nestahuje ani neinstaluje.
 	Assistant	Asistent
@@ -385,6 +388,7 @@ certificate	Basic constraints	Základní omezení
 	Callout	Popisek se šipkou
 	Can't be read: {e}	Nelze přečíst: {e}
 	Cancel reverse sides	Zrušit rubové strany
+	Canceling…	Ruším…
 	Cancelled	Zrušeno
 	Cancelling…	Ruší se…
 	Card driver (PKCS #11)	Ovladač karty (PKCS #11)
@@ -643,6 +647,7 @@ certificate	Basic constraints	Základní omezení
 	Couldn't optimize the file	Soubor nelze optimalizovat
 	Couldn't optimize the file: {e}	Soubor nelze optimalizovat: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Z prohlížeče nelze tisknout ({e}); místo toho byl k tisku stažen soubor {name}
+	Couldn't reach the printer	Tiskárnu se nepodařilo zastihnout
 	Couldn't read {name}: {e}	{name} nelze přečíst: {e}
 	Couldn't recover {name}: {e}	{name} nelze obnovit: {e}
 	Couldn't reload {name}: {e}	Soubor {name} nelze znovu načíst: {e}
@@ -1237,6 +1242,7 @@ calendar weekday	Fr	Pá
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Úrovně nadpisů by se neměly přeskakovat (H1 následovaný H3). Označkujte nadpisy znovu.
 	Hebrew (ISO 8859-8)	Hebrejština (ISO 8859-8)
 	Hebrew (Windows-1255)	Hebrejština (Windows-1255)
+	Held by the printer	Tiskárna úlohu pozdržela
 	Help…	Nápověda…
 	Heritage	Heritage
 	Hidden layers	Skryté vrstvy
@@ -1267,6 +1273,7 @@ key	Home	Home
 	HTML web page	Webová stránka HTML
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Maďarské OCR vyžaduje desktopovou aplikaci s Tesseract 5 a jazykovým modelem hun. Po instalaci restartujte PdfCraft.
 	H{n} follows an H{d}; headings should not skip levels	H{n} následuje po H{d}; nadpisy by neměly přeskakovat úrovně
+	I confirm sending this document to this printer	Potvrzuji odeslání tohoto dokumentu na tuto tiskárnu
 	Identity	Identita
 	Image	Obrázek
 	Image (PNG)	Obrázek (PNG)
@@ -1588,6 +1595,7 @@ calendar weekday	Mo	Po
 	Nested alternate text	Vnořený alternativní text
 	Network	Síť
 	Network address	Síťová adresa
+	Network printer (WS-Print)	Síťová tiskárna (WS-Print)
 	New Action	Nová akce
 	New Action…	Nová akce…
 	New blank PDF	Nový prázdný dokument PDF
@@ -1694,6 +1702,7 @@ calendar weekday	Mo	Po
 scroll speed	Normal	Normální
 	Normal page	Normální stránka
 	Not allowed	Nepovoleno
+	Not confirmed by the printer	Tiskárna nepotvrdila
 	not in a Table, THead, TBody or TFoot	není v Table, THead, TBody ani TFoot
 	not in a TR	není v TR
 	not in an L (list)	není v L (seznam)
@@ -1750,6 +1759,7 @@ animation effects	On	Zapnuto
 	Only checked properties will change. Mixed means the selected fields have different values.	Změní se pouze zaškrtnuté vlastnosti. „Různé hodnoty“ znamená, že vybraná pole mají odlišné hodnoty.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Oříznou se pouze zřetelné hrany papíru. Nerozlišitelné bílé okraje zůstanou zachovány.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Pokračujte, jen pokud tomuto dokumentu důvěřujete. Adresa může nést informace z dokumentu, například to, co jste zadali do jeho formuláře.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Přijímají se jen IP adresy z této sítě (soukromé, link-local nebo loopback), ne názvy hostitelů.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Odesílejte pouze tehdy, pokud tomuto dokumentu a cíli důvěřujete. GET vloží hodnoty formuláře do adresy URL.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Odesílejte jen tehdy, pokud tomuto dokumentu a cíli důvěřujete. Celý PDF opustí tento počítač.
 	Only send if you trust this document and destination. The form values leave this computer.	Odesílejte pouze tehdy, pokud tomuto dokumentu a cíli důvěřujete. Hodnoty formuláře opustí tento počítač.
@@ -2018,9 +2028,14 @@ animation effects	On	Zapnuto
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Tiskněte jednostranně. Listy udržujte v pořadí, rozřežte je podle značek a pak stohy skládejte zleva doprava a shora dolů.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage nebo LastPage
 	Printed through the system print dialog	Vytištěno přes systémový dialog tisku
+	Printed with errors	Vytištěno s chybami
+	Printed with warnings	Vytištěno s upozorněním
+	Printer address:	Adresa tiskárny:
 	Printer default	Podle tiskárny
+	Printer orientation:	Orientace tiskárny:
 	Printer paper and scaling may differ. Check driver settings.	Papír a měřítko tiskárny se mohou lišit. Zkontrolujte nastavení ovladače.
 	Printer properties	Vlastnosti tiskárny
+	Printer status: {state}	Stav tiskárny: {state}
 	Printing allowed	Povolený tisk
 	Privacy	Soukromí
 	Private data of other applications	Soukromá data jiných aplikací
@@ -2038,6 +2053,9 @@ animation effects	On	Zapnuto
 	Public key	Veřejný klíč
 certificate	Public key	Veřejný klíč
 	PushButton	Tlačítko
+	Quality:	Kvalita:
+	Query printer	Zjistit stav tiskárny
+	Query the printer first to see what it supports.	Nejprve se tiskárny zeptejte, co podporuje.
 	Quirks	Zvláštnosti
 	Quit	Ukončit
 	Quit PdfCraft	Ukončit PdfCraft
@@ -2072,6 +2090,7 @@ certificate	Public key	Veřejný klíč
 	Reads {name}, which the form doesn't have, so it gets no value there.	Čte {name}, které formulář nemá, takže odtud nedostane žádnou hodnotu.
 	Reason	Důvod
 	Reason: 	Důvod: 
+	Reasons: {reasons}	Důvody: {reasons}
 	Recent colours	Nedávné barvy
 	Recent files to keep	Recent files to keep
 	Recipients	Příjemci
@@ -2226,8 +2245,10 @@ certificate	Public key	Veřejný klíč
 	Rev. {rev}: Signed by {name}	Rev. {rev}: Podepsáno – {name}
 	Reveal in File Explorer	Zobrazit v Průzkumníku souborů
 	Reverse closed arrow	Obrácená uzavřená šipka
+	Reverse landscape	Na šířku, otočeně
 	Reverse open arrow	Obrácená otevřená šipka
 	Reverse pages	Obrátit pořadí stránek
+	Reverse portrait	Na výšku, otočeně
 	reverse side(s)	rub(y)
 	Reverse sides	Rubové strany
 	Reverse sides interleaved.	Rubové strany proloženy.
@@ -2433,6 +2454,7 @@ certificate	Self-signed	Samopodepsaný
 	Sending…	Odesílání…
 	Sent to {printer}	Odesláno na {printer}
 	Sent to {printer}: {msg}	Odesláno na {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Odesláno. Tiskárna neumí říct, zda se tisklo.
 	Separate PDFs	Samostatná PDF
 	Separate the sheets and load the remaining ones, then choose Continue.	Oddělte listy a vložte zbývající, potom zvolte „Pokračovat ve skenování“.
 	Separate the sheets and load them again, then choose Try again.	Oddělte listy a vložte je znovu, potom zvolte „Zkusit znovu“.
@@ -2478,6 +2500,8 @@ certificate	SHA-256 digest	Otisk SHA-256
 	Shadings	Stínování
 	Shared Field Properties	Společné vlastnosti polí
 	Sheet {s} of {n}	List {s} z {n}
+	Sheets printed: {done} of {total}	Vytištěné listy: {done} z {total}
+	Sheets printed: {n}	Vytištěné listy: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift omezí směr na násobky 45 stupňů. Backspace odebere vrchol. Escape měření zruší.
 	Shift drags freely	Shift táhne volně
@@ -2622,6 +2646,7 @@ action wizard	Start	Spustit
 	Start page number	Počáteční číslo stránky
 	Steps	Kroky
 	Sticky note	Rychlá poznámka
+	Still printing; the job continues on the printer	Stále se tiskne; úloha pokračuje na tiskárně
 	Still rendering — this page is unusually complex…	Stále se vykresluje – tato stránka je neobvykle složitá…
 	Stop reading	Zastavit čtení
 	Straighten scanned page	Narovnat naskenovanou stránku
@@ -2742,6 +2767,7 @@ calendar weekday	Th	Čt
 	The document changed while its margins were measured; nothing was cropped	Dokument se změnil během měření okrajů; nic nebylo oříznuto
 	The document changed while you were choosing a file, so nothing was changed.	Dokument se změnil, zatímco jste vybírali soubor, proto se nic nezměnilo.
 	The document changed while you were editing field properties.	Dokument se změnil, zatímco jste upravovali vlastnosti polí.
+	The document couldn't be prepared	Dokument se nepodařilo připravit
 	The document has additional actions (/AA)	Dokument má dodatečné akce (/AA)
 	The document has been altered or corrupted since the signature was applied.	Dokument byl od připojení podpisu změněn nebo poškozen.
 	The document has been altered or corrupted since the timestamp was applied.	Dokument byl od připojení časového razítka změněn nebo poškozen.
@@ -2797,6 +2823,7 @@ calendar weekday	Th	Čt
 	The image has been copied ({w} × {h} pixels)	Obrázek byl zkopírován ({w} × {h} pixelů)
 	The image has been copied as a {ext} file	Obrázek byl zkopírován jako soubor {ext}
 	the image is empty	obrázek je prázdný
+	The job was canceled	Úloha byla zrušena
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Klíč je v Klíčence systému macOS, která se může zeptat, zda PdfCraftu povolit jeho použití.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Klíč je v úložišti certifikátů Windows, které se může zeptat, zda PdfCraftu povolit jeho použití.
 	The key is on the device, which may ask for its PIN itself.	Klíč je na zařízení, které si může o PIN říct samo.
@@ -2829,7 +2856,18 @@ calendar weekday	Th	Čt
 	The PIN is incorrect.	PIN je nesprávný.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Digitální ID z tokenů PKCS #11 nelze vypsat: {e}
 	The preview could not be shown.	Náhled se nepodařilo zobrazit.
+	The print job stopped unexpectedly	Tisková úloha se neočekávaně zastavila
+	The printer accepts none of the formats this document can be sent in	Tiskárna nepřijímá žádný z formátů, ve kterých lze tento dokument odeslat
+	The printer address was refused	Adresa tiskárny byla odmítnuta
+	The printer doesn't support this setting	Tiskárna toto nastavení nepodporuje
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Vlastní nastavení ovladače tiskárny pro tento tisk: zásobník papíru, typ papíru, dokončovací úpravy a další.
+	The printer is printing it	Tiskárna úlohu tiskne
+	The printer may have received the document. Check the printer before sending again.	Tiskárna mohla dokument přijmout. Před dalším odesláním zkontrolujte tiskárnu.
+	The printer no longer lists the job; it most likely finished	Tiskárna úlohu už neuvádí; nejspíš je hotová
+	The printer paused the job; it needs attention	Tiskárna úlohu pozastavila; vyžaduje pozornost
+	The printer refused the request	Tiskárna požadavek odmítla
+	The printer stopped the job	Tiskárna úlohu zastavila
+	The printer's reply couldn't be understood	Odpovědi tiskárny nebylo možné porozumět
 	The provider's page didn't come back in time. Try again.	Stránka poskytovatele se včas nevrátila. Zkuste to znovu.
 	The raw text was truncated to what fits.	Zdrojový text byl zkrácen.
 	The redaction does not fit page {page}; no pages were marked.	Začernění se nevejde na stránku {page}; žádné stránky nebyly označeny.
@@ -3007,7 +3045,13 @@ calendar weekday	Th	Čt
 	This page has an opaque background of its own, which hides the image behind it.	Tato stránka má vlastní neprůhledné pozadí, které zakryje obrázek za ním.
 	This PDF uses the unsupported {s} action.	Tento PDF používá nepodporovanou akci {s}.
 	This point could not be moved. Try a smaller move.	Tento bod se nepodařilo přesunout. Zkuste menší posun.
+	This printer does not take a copies setting.	Tato tiskárna nepodporuje nastavení počtu kopií.
+	This printer does not take a quality setting.	Tato tiskárna nepodporuje nastavení kvality.
+	This printer does not take a resolution setting.	Tato tiskárna nepodporuje nastavení rozlišení.
+	This printer does not take an orientation setting.	Tato tiskárna nepodporuje nastavení orientace.
 	This printer offers no settings of its own.	Tato tiskárna nenabízí žádné vlastní nastavení.
+	This printer only prints in black and white.	Tato tiskárna tiskne pouze černobíle.
+	This printer only prints one-sided.	Tato tiskárna tiskne pouze jednostranně.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Ovladač této tiskárny nepřijímá nastavení oboustranného tisku z jiných programů, proto platí jeho vlastní nastavení. Změňte ho ve Vlastnosti…
 	this signature can't be removed on its own	tento podpis nelze odstranit samostatně
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Tento podpis používá klíč RSA kratší než 2048 bitů, který už se pro podpisy nepovažuje za dostatečně silný. Ověření stále projde, ale nelze se na něj spoléhat.
@@ -3177,6 +3221,7 @@ certificate	Version	Verze
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Počkejte, až skener dokončí práci, nebo zavřete jiný program, který jej používá, potom zvolte „Zkusit znovu“.
 	Waiting for the system print dialog…	Čeká se na systémový dialog tisku…
 	Waiting for your approval in the browser…	Čeká se na vaše schválení v prohlížeči…
+	Waiting in the printer's queue	Čeká ve frontě tiskárny
 	watermark	vodoznak
 calendar weekday	We	St
 	Weak	Slabé

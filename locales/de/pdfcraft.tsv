@@ -72,6 +72,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Eine PNG- oder SVG-Datei. Sie wird bei jedem Start von PdfCraft von diesem Ort gelesen.
 	A script	Ein Skript
 	A selected field has no widget on any page, so the fields can't be edited together.	Ein ausgewähltes Feld hat auf keiner Seite ein Widget, daher können die Felder nicht gemeinsam bearbeitet werden.
+	A setting isn't valid	Eine Einstellung ist ungültig
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Eine Signatur, die Teil des Seiteninhalts ist, etwa auf einer gescannten Seite, ist weder ein Feld noch eine Anmerkung. Sie kann daher nicht einzeln entfernt werden, und PdfCraft löscht keine Teile einer Seite, um sie zu verbergen. Um sie zu entfernen, schwärzen Sie diesen Bereich (Schwärzen) oder löschen Sie das Bild mit „PDF bearbeiten“, wenn die Signatur ein eigenes Bild ist.
 	A stream refers to an external file	Ein Stream verweist auf eine externe Datei
 	A stream uses LZW compression	Ein Stream verwendet LZW-Komprimierung
@@ -85,6 +86,7 @@
 	About PdfCraft	Über PdfCraft
 	About {app}	Über {app}
 	Accepted	Angenommen
+	Accepted by {printer}	Von {printer} angenommen
 	Accessibility Checker	Barrierefreiheitsprüfung
 	Accessibility Checker Options	Optionen der Barrierefreiheitsprüfung
 	Accessibility panel	Barrierefreiheitsbereich
@@ -295,6 +297,7 @@
 	Ask in any language	Fragen Sie in jeder Sprache
 	Ask to scan more pages	Nach weiteren Seiten fragen
 	Ask whether to recognize the current page or all pages when editing a scan.	Beim Bearbeiten eines Scans fragen, ob die aktuelle Seite oder alle Seiten erkannt werden sollen.
+	Asking the printer…	Drucker wird abgefragt…
 	Asking {server}…	{server} wird gefragt …
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Fragt GitHub nach dem neuesten Release. Es wird nichts automatisch heruntergeladen oder installiert.
 	Assistant	Assistent
@@ -388,6 +391,7 @@
 	Callout	Text mit Hinweislinie
 	Can't be read: {e}	Kann nicht gelesen werden: {e}
 	Cancel reverse sides	Rückseiten abbrechen
+	Canceling…	Wird abgebrochen…
 	Cancelled	Abgebrochen
 	Cancelling…	Wird abgebrochen…
 	Card driver (PKCS #11)	Kartentreiber (PKCS #11)
@@ -646,6 +650,7 @@
 	Couldn't optimize the file	Die Datei konnte nicht optimiert werden
 	Couldn't optimize the file: {e}	Die Datei konnte nicht optimiert werden: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Drucken aus dem Browser nicht möglich ({e}); stattdessen wurde {name} zum Drucken heruntergeladen
+	Couldn't reach the printer	Der Drucker ist nicht erreichbar
 	Couldn't read {name}: {e}	{name} konnte nicht gelesen werden: {e}
 	Couldn't recover {name}: {e}	{name} konnte nicht wiederhergestellt werden: {e}
 	Couldn't reload {name}: {e}	{name} konnte nicht neu geladen werden: {e}
@@ -1236,6 +1241,7 @@ calendar weekday	Fr	Fr
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Überschriftenebenen sollten nicht übersprungen werden (z. B. H1 gefolgt von H3). Tagge die Überschriften neu.
 	Hebrew (ISO 8859-8)	Hebräisch (ISO 8859-8)
 	Hebrew (Windows-1255)	Hebräisch (Windows-1255)
+	Held by the printer	Vom Drucker zurückgehalten
 	Help…	Hilfe…
 	Heritage	Heritage
 	Hidden layers	Ausgeblendete Ebenen
@@ -1266,6 +1272,7 @@ key	Home	Pos1
 	HTML web page	HTML-Webseite
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Ungarische OCR erfordert die Desktop-App mit Tesseract 5 und dem Sprachmodell hun. Starten Sie PdfCraft nach der Installation neu.
 	H{n} follows an H{d}; headings should not skip levels	Auf H{d} folgt H{n}; Überschriften sollten keine Ebenen überspringen
+	I confirm sending this document to this printer	Ich bestätige, dass dieses Dokument an diesen Drucker gesendet wird
 	Identity	Identität
 	Image (PNG)	Bild (PNG)
 	Image field	Bildfeld
@@ -1570,6 +1577,7 @@ calendar weekday	Mo	Mo
 	Nested alternate text	Verschachtelter Alternativtext
 	Network	Netzwerk
 	Network address	Netzwerkadresse
+	Network printer (WS-Print)	Netzwerkdrucker (WS-Print)
 	New Action	Neue Aktion
 	New Action…	Neue Aktion…
 	New blank PDF	Neues leeres PDF
@@ -1674,9 +1682,11 @@ calendar weekday	Mo	Mo
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Keine dieser Dateien lässt sich in ein PDF umwandeln; verwende PDFs, Bilder oder .txt-Dateien
 	None of your digital IDs can open this document.	Keine deiner digitalen IDs kann dieses Dokument öffnen.
 	None — everything is allowed	Keine – alles ist erlaubt
+	Normal	Standard
 scroll speed	Normal	Normal
 	Normal page	Normale Seite
 	Not allowed	Nicht erlaubt
+	Not confirmed by the printer	Vom Drucker nicht bestätigt
 	not in a Table, THead, TBody or TFoot	nicht in Table, THead, TBody oder TFoot
 	not in a TR	nicht in einem TR
 	not in an L (list)	nicht in einem L (Liste)
@@ -1731,6 +1741,7 @@ animation effects	On	Ein
 	Only checked properties will change. Mixed means the selected fields have different values.	Nur angehakte Eigenschaften werden geändert. „Gemischt“ bedeutet, dass die ausgewählten Felder unterschiedliche Werte haben.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Nur erkennbare Papierkanten werden beschnitten. Nicht unterscheidbare weiße Ränder bleiben erhalten.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Fahre nur fort, wenn du diesem Dokument vertraust. Eine Adresse kann Informationen aus dem Dokument übermitteln, etwa was du in sein Formular eingegeben hast.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Nur IP-Adressen in diesem Netzwerk werden akzeptiert (privat, Link-Local oder Loopback), keine Hostnamen.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Nur senden, wenn Sie diesem Dokument und dem Ziel vertrauen. GET fügt die Formularwerte in die URL ein.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Nur senden, wenn Sie diesem Dokument und dem Ziel vertrauen. Das gesamte PDF verlässt diesen Computer.
 	Only send if you trust this document and destination. The form values leave this computer.	Nur senden, wenn Sie diesem Dokument und dem Ziel vertrauen. Die Formularwerte verlassen diesen Computer.
@@ -2004,9 +2015,14 @@ animation effects	On	Ein
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Einseitig drucken. Halte die Blätter in Reihenfolge, schneide an den Marken und lege die Stapel dann von links nach rechts, von oben nach unten aufeinander.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage oder LastPage
 	Printed through the system print dialog	Über den Systemdruckdialog gedruckt
+	Printed with errors	Mit Fehlern gedruckt
+	Printed with warnings	Mit Warnungen gedruckt
+	Printer address:	Druckeradresse:
 	Printer default	Druckerstandard
+	Printer orientation:	Ausrichtung am Drucker:
 	Printer paper and scaling may differ. Check driver settings.	Druckerpapier und Skalierung können abweichen. Treibereinstellungen prüfen.
 	Printer properties	Druckereigenschaften
+	Printer status: {state}	Druckerstatus: {state}
 	Printing allowed	Drucken erlaubt
 	Privacy	Datenschutz
 	Private data of other applications	Private Daten anderer Anwendungen
@@ -2024,6 +2040,9 @@ animation effects	On	Ein
 	Public key	Öffentlicher Schlüssel
 	Pure Black	Reines Schwarz
 	PushButton	Schaltfläche
+	Quality:	Qualität:
+	Query printer	Drucker abfragen
+	Query the printer first to see what it supports.	Frage zuerst den Drucker ab, um zu sehen, was er unterstützt.
 	Quirks	Besonderheiten
 	Quit	Beenden
 	Quit PdfCraft	PdfCraft beenden
@@ -2058,6 +2077,7 @@ animation effects	On	Ein
 	Reads {name}, which the form doesn't have, so it gets no value there.	Liest {name}, das es im Formular nicht gibt, und erhält dort deshalb keinen Wert.
 	Reason	Grund
 	Reason: 	Grund: 
+	Reasons: {reasons}	Gründe: {reasons}
 	Recent colours	Zuletzt verwendete Farben
 	Recent files to keep	Recent files to keep
 	Recipients	Empfänger
@@ -2215,8 +2235,10 @@ animation effects	On	Ein
 	Rev. {rev}: Signed by {name}	Rev. {rev}: Signiert von {name}
 	Reveal in File Explorer	Im Datei-Explorer anzeigen
 	Reverse closed arrow	Geschlossener Pfeil umgekehrt
+	Reverse landscape	Querformat, gedreht
 	Reverse open arrow	Offener Pfeil umgekehrt
 	Reverse pages	Seiten umkehren
+	Reverse portrait	Hochformat, gedreht
 	reverse side(s)	Rückseite(n)
 	Reverse sides	Rückseiten
 	Reverse sides interleaved.	Rückseiten eingefügt.
@@ -2418,6 +2440,7 @@ calendar weekday	Sa	Sa
 	Sending to {printer}…	Wird an {printer} gesendet…
 	Sending…	Wird gesendet…
 	Sent to {printer}: {msg}	An {printer} gesendet: {msg}
+	Sent. The printer can't say whether it printed.	Gesendet. Der Drucker kann nicht sagen, ob gedruckt wurde.
 	Separate PDFs	Einzelne PDFs
 	Separate the sheets and load the remaining ones, then choose Continue.	Trennen Sie die Blätter und legen Sie die restlichen ein. Wählen Sie dann „Weiter scannen“.
 	Separate the sheets and load them again, then choose Try again.	Trennen Sie die Blätter und legen Sie sie erneut ein. Wählen Sie dann „Erneut versuchen“.
@@ -2459,6 +2482,8 @@ calendar weekday	Sa	Sa
 	Shadings	Verläufe
 	Shared Field Properties	Gemeinsame Feldeigenschaften
 	Sheet {s} of {n}	Blatt {s} von {n}
+	Sheets printed: {done} of {total}	Gedruckte Blätter: {done} von {total}
+	Sheets printed: {n}	Gedruckte Blätter: {n}
 key	Shift	Umschalt
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Umschalt beschränkt auf 45-Grad-Schritte. Rücktaste entfernt einen Eckpunkt. Esc bricht ab.
 	Shift drags freely	Shift zieht frei
@@ -2607,6 +2632,7 @@ action wizard	Start	Starten
 	Start page number	Erste Seitenzahl
 	Steps	Schritte
 	Sticky note	Notiz
+	Still printing; the job continues on the printer	Es wird noch gedruckt; der Auftrag läuft auf dem Drucker weiter
 	Still rendering — this page is unusually complex…	Wird noch gerendert – diese Seite ist ungewöhnlich komplex…
 	Stop	Stopp
 	Stop reading	Vorlesen beenden
@@ -2728,6 +2754,7 @@ calendar weekday	Th	Do
 	The document changed while its margins were measured; nothing was cropped	Das Dokument hat sich geändert, während seine Ränder gemessen wurden; nichts wurde zugeschnitten
 	The document changed while you were choosing a file, so nothing was changed.	Das Dokument hat sich geändert, während du eine Datei ausgewählt hast; deshalb wurde nichts geändert.
 	The document changed while you were editing field properties.	Das Dokument hat sich geändert, während du die Feldeigenschaften bearbeitet hast.
+	The document couldn't be prepared	Das Dokument konnte nicht vorbereitet werden
 	The document has additional actions (/AA)	Das Dokument hat zusätzliche Aktionen (/AA)
 	The document has been altered or corrupted since the signature was applied.	Das Dokument wurde seit dem Anbringen der Signatur verändert oder beschädigt.
 	The document has been altered or corrupted since the timestamp was applied.	Das Dokument wurde seit dem Anbringen des Zeitstempels verändert oder beschädigt.
@@ -2785,6 +2812,7 @@ calendar weekday	Th	Do
 	The image has been copied ({w} × {h} pixels)	Das Bild wurde kopiert ({w} × {h} Pixel)
 	The image has been copied as a {ext} file	Das Bild wurde als {ext}-Datei kopiert
 	the image is empty	das Bild ist leer
+	The job was canceled	Der Auftrag wurde abgebrochen
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Der Schlüssel liegt im macOS-Schlüsselbund, der dich eventuell fragt, ob PdfCraft ihn verwenden darf.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Der Schlüssel liegt im Windows-Zertifikatspeicher, der dich eventuell fragt, ob PdfCraft ihn verwenden darf.
 	The key is on the device, which may ask for its PIN itself.	Der Schlüssel liegt auf dem Gerät, das selbst nach seiner PIN fragen kann.
@@ -2817,7 +2845,18 @@ calendar weekday	Th	Do
 	The PIN is incorrect.	Die PIN ist falsch.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Die digitalen IDs auf den PKCS-#11-Token konnten nicht aufgelistet werden: {e}
 	The preview could not be shown.	Die Vorschau konnte nicht angezeigt werden.
+	The print job stopped unexpectedly	Der Druckauftrag wurde unerwartet beendet
+	The printer accepts none of the formats this document can be sent in	Der Drucker akzeptiert keines der Formate, in denen dieses Dokument gesendet werden kann
+	The printer address was refused	Die Druckeradresse wurde abgelehnt
+	The printer doesn't support this setting	Der Drucker unterstützt diese Einstellung nicht
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Die eigenen Einstellungen des Druckertreibers für diesen Druck: Papierfach, Papiersorte, Endverarbeitung und mehr.
+	The printer is printing it	Der Drucker druckt den Auftrag
+	The printer may have received the document. Check the printer before sending again.	Der Drucker hat das Dokument möglicherweise erhalten. Prüfe den Drucker, bevor du erneut sendest.
+	The printer no longer lists the job; it most likely finished	Der Drucker führt den Auftrag nicht mehr auf; er ist höchstwahrscheinlich fertig
+	The printer paused the job; it needs attention	Der Drucker hat den Auftrag pausiert; er braucht Aufmerksamkeit
+	The printer refused the request	Der Drucker hat die Anfrage abgelehnt
+	The printer stopped the job	Der Drucker hat den Auftrag angehalten
+	The printer's reply couldn't be understood	Die Antwort des Druckers wurde nicht verstanden
 	The provider's page didn't come back in time. Try again.	Die Seite des Anbieters kam nicht rechtzeitig zurück. Versuchen Sie es erneut.
 	The raw text was truncated to what fits.	Der Rohtext wurde auf die passende Länge gekürzt.
 	The redaction does not fit page {page}; no pages were marked.	Die Schwärzung passt nicht auf Seite {page}; es wurden keine Seiten markiert.
@@ -2995,7 +3034,13 @@ calendar weekday	Th	Do
 	This page has an opaque background of its own, which hides the image behind it.	Diese Seite hat einen eigenen deckenden Hintergrund, der das Bild dahinter verdeckt.
 	This PDF uses the unsupported {s} action.	Dieses PDF verwendet die nicht unterstützte Aktion {s}.
 	This point could not be moved. Try a smaller move.	Dieser Punkt ließ sich nicht verschieben. Versuche eine kleinere Verschiebung.
+	This printer does not take a copies setting.	Dieser Drucker unterstützt keine Einstellung für die Anzahl der Kopien.
+	This printer does not take a quality setting.	Dieser Drucker unterstützt keine Qualitätseinstellung.
+	This printer does not take a resolution setting.	Dieser Drucker unterstützt keine Auflösungseinstellung.
+	This printer does not take an orientation setting.	Dieser Drucker unterstützt keine Ausrichtungseinstellung.
 	This printer offers no settings of its own.	Dieser Drucker bietet keine eigenen Einstellungen.
+	This printer only prints in black and white.	Dieser Drucker druckt nur in Schwarzweiß.
+	This printer only prints one-sided.	Dieser Drucker druckt nur einseitig.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Der Treiber dieses Druckers übernimmt keine Einstellungen für beidseitigen Druck von anderen Programmen, daher gilt seine eigene Einstellung. Ändere sie unter Eigenschaften…
 	this signature can't be removed on its own	diese Signatur kann nicht einzeln entfernt werden
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Diese Signatur verwendet einen RSA-Schlüssel mit weniger als 2048 Bit, der für Signaturen nicht mehr als ausreichend sicher gilt. Sie ist weiterhin gültig, du solltest dich aber nicht darauf verlassen.
@@ -3160,6 +3205,7 @@ signature pad	Type	Tippen
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Warten Sie, bis der Scanner fertig ist, oder schließen Sie andere Programme, die ihn verwenden. Wählen Sie dann „Erneut versuchen“.
 	Waiting for the system print dialog…	Warten auf den Systemdruckdialog…
 	Waiting for your approval in the browser…	Warten auf Ihre Bestätigung im Browser …
+	Waiting in the printer's queue	Wartet in der Warteschlange des Druckers
 	Warm Sepia	Warmes Sepia
 	Warning	Warnung
 	watermark	Wasserzeichen

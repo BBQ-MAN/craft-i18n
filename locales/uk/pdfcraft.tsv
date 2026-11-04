@@ -65,6 +65,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Файл PNG або SVG. Читається з цього місця під час кожного запуску PdfCraft.
 	A script	Сценарій
 	A selected field has no widget on any page, so the fields can't be edited together.	Одне з вибраних полів не має віджета на жодній сторінці, тому поля не можна редагувати разом.
+	A setting isn't valid	Недійсний параметр
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Підпис, що є частиною вмісту сторінки (наприклад, на сканованій сторінці), не є ні полем, ні приміткою, тому його не можна вилучити окремо, а PdfCraft не стирає частини сторінки, щоб його приховати. Щоб прибрати його, вилучіть вміст цієї ділянки («Вилучити вміст») або, якщо підпис — окреме зображення, видаліть його за допомогою «Редагувати PDF».
 	A stream refers to an external file	Потік посилається на зовнішній файл
 	A stream uses LZW compression	Потік використовує стиснення LZW
@@ -72,6 +73,7 @@
 	About PdfCraft	Про PdfCraft
 	About {app}	Про {app}
 	Accepted	Прийнято
+	Accepted by {printer}	Прийнято принтером {printer}
 	Accessibility Checker	Перевірка доступності
 	Accessibility Checker Options	Параметри перевірки доступності
 	Accessibility panel	Панель доступності
@@ -279,6 +281,7 @@ calendar date	April	квітня
 	Ask in any language	Питайте будь-якою мовою
 	Ask to scan more pages	Пропонувати сканувати ще сторінки
 	Ask whether to recognize the current page or all pages when editing a scan.	Під час редагування сканованого документа запитувати, чи розпізнати поточну сторінку або всі сторінки.
+	Asking the printer…	Опитування принтера…
 	Asking {server}…	Запит до {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Запитує в GitHub найновіший випуск. Нічого не завантажується й не встановлюється автоматично.
 	Assistant	Асистент
@@ -374,6 +377,7 @@ calendar date	August	серпня
 	Callout	Виноска
 	Can't be read: {e}	Не вдалося прочитати: {e}
 	Cancel reverse sides	Скасувати зворотні боки
+	Canceling…	Скасування…
 	Cancelled	Скасовано
 	Cancelling…	Скасування…
 	Card driver (PKCS #11)	Драйвер картки (PKCS #11)
@@ -617,6 +621,7 @@ calendar date	August	серпня
 	Couldn't optimize the file	Не вдалося оптимізувати файл
 	Couldn't optimize the file: {e}	Не вдалося оптимізувати файл: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Не вдалося надрукувати з браузера ({e}); натомість для друку завантажено файл {name}
+	Couldn't reach the printer	Не вдалося зв'язатися з принтером
 	Couldn't read {name}: {e}	Не вдалося прочитати {name}: {e}
 	Couldn't recover {name}: {e}	Не вдалося відновити {name}: {e}
 	Couldn't reload {name}: {e}	Не вдалося перезавантажити {name}: {e}
@@ -1178,6 +1183,7 @@ calendar date	February	лютого
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Рівні заголовків не мають пропускатися (H1, за яким іде H3). Змініть теги заголовків.
 	Hebrew (ISO 8859-8)	Іврит (ISO 8859-8)
 	Hebrew (Windows-1255)	Іврит (Windows-1255)
+	Held by the printer	Утримується принтером
 	Heritage	Heritage
 	Hidden layers	Приховані шари
 	Hide a field	Приховати поле
@@ -1207,6 +1213,7 @@ key	Home	Home
 	How Edit text reads old fonts that don't say which letters they draw. Auto-detect recognises Hebrew fonts laid out for ISO 8859-8 or Windows-1255.	Як «Редагувати текст» читає старі шрифти, які не вказують, які літери вони малюють. Автовизначення розпізнає шрифти для івриту, побудовані за ISO 8859-8 або Windows-1255.
 	HTML web page	Вебсторінка HTML
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Для угорського OCR потрібна настільна програма з Tesseract 5 і мовною моделлю hun. Після встановлення перезапустіть PdfCraft.
+	I confirm sending this document to this printer	Підтверджую надсилання цього документа на цей принтер
 	Identity	Особисті дані
 	Image (PNG)	Зображення (PNG)
 	Image field	Поле зображення
@@ -1515,6 +1522,7 @@ calendar date	May	травня
 	Nested alternate text	Вкладений альтернативний текст
 	Network	Мережа
 	Network address	Мережева адреса
+	Network printer (WS-Print)	Мережевий принтер (WS-Print)
 	New Action	Нова дія
 	New Action…	Нова дія…
 	New blank PDF	Новий порожній PDF
@@ -1609,9 +1617,11 @@ calendar date	May	травня
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Жоден із цих файлів неможливо перетворити на PDF; використовуйте PDF, зображення або файли .txt
 	None of your digital IDs can open this document.	Жодне з ваших цифрових посвідчень не може відкрити цей документ.
 	None — everything is allowed	Немає — усе дозволено
+	Normal	Звичайна
 scroll speed	Normal	Звичайна
 	Normal page	Звичайна сторінка
 	Not allowed	Заборонено
+	Not confirmed by the printer	Не підтверджено принтером
 	Not in order	Поза порядком
 	Not now	Не зараз
 	Not present	Відсутнє
@@ -1663,6 +1673,7 @@ animation effects	On	Увімкнено
 	Only checked properties will change. Mixed means the selected fields have different values.	Зміняться лише позначені властивості. «Різні значення» означає, що значення вибраних полів відрізняються.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Обрізаються лише чіткі краї паперу. Нерозрізненні білі поля зберігаються.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Продовжуйте лише якщо довіряєте цьому документу. Адреса може містити інформацію з документа, наприклад дані, введені у форму.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Приймаються лише IP-адреси цієї мережі (приватні, link-local або loopback), а не імена вузлів.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Надсилайте лише тоді, коли довіряєте цьому документу та адресі призначення. GET додає значення форми до URL.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Надсилайте лише якщо довіряєте документу та адресату. Увесь PDF залишить цей комп’ютер.
 	Only send if you trust this document and destination. The form values leave this computer.	Надсилайте дані, лише якщо довіряєте документу й адресі призначення. Значення форми залишать цей комп’ютер.
@@ -1911,9 +1922,14 @@ animation effects	On	Увімкнено
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Друкуйте з одного боку. Зберігайте порядок аркушів, розріжте за мітками, а потім складіть стоси зліва направо, згори донизу.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage або LastPage
 	Printed through the system print dialog	Надруковано через системний діалог друку
+	Printed with errors	Надруковано з помилками
+	Printed with warnings	Надруковано з попередженнями
+	Printer address:	Адреса принтера:
 	Printer default	За замовчуванням принтера
+	Printer orientation:	Орієнтація принтера:
 	Printer paper and scaling may differ. Check driver settings.	Папір і масштаб принтера можуть відрізнятися. Перевірте налаштування драйвера.
 	Printer properties	Властивості принтера
+	Printer status: {state}	Стан принтера: {state}
 	Printing allowed	Дозволений друк
 	Privacy	Приватність
 	Private data of other applications	Приватні дані інших застосунків
@@ -1929,6 +1945,9 @@ animation effects	On	Увімкнено
 	Public domain	Суспільне надбання
 	Public key	Відкритий ключ
 	PushButton	Кнопка
+	Quality:	Якість:
+	Query printer	Опитати принтер
+	Query the printer first to see what it supports.	Спершу опитайте принтер, щоб дізнатися, що він підтримує.
 	Quirks	Особливості
 	Quit	Вийти
 	Quit PdfCraft	Вийти з PdfCraft
@@ -1963,6 +1982,7 @@ animation effects	On	Увімкнено
 	Reads {name}, which the form doesn't have, so it gets no value there.	Читає {name}, якого немає у формі, тому не отримує звідти значення.
 	Reason	Причина
 	Reason: 	Причина: 
+	Reasons: {reasons}	Причини: {reasons}
 	Recent colours	Нещодавні кольори
 	Recent files to keep	Recent files to keep
 	Recipients	Одержувачі
@@ -2113,8 +2133,10 @@ animation effects	On	Увімкнено
 	Return to document	Повернутися до документа
 	Reveal in File Explorer	Показати у файловому провіднику
 	Reverse closed arrow	Зворотна закрита стрілка
+	Reverse landscape	Альбомна, перевернута
 	Reverse open arrow	Зворотна відкрита стрілка
 	Reverse pages	Зворотний порядок сторінок
+	Reverse portrait	Книжкова, перевернута
 	reverse side(s)	зворотн.
 	Reverse sides	Зворотні боки
 	Reverse sides interleaved.	Зворотні боки вставлено почергово.
@@ -2308,6 +2330,7 @@ animation effects	On	Увімкнено
 	Sending to {printer}…	Надсилання на {printer}…
 	Sending…	Надсилання…
 	Sent to {printer}: {msg}	Надіслано на {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Надіслано. Принтер не може сказати, чи надруковано.
 	Separate PDFs	Окремі PDF-файли
 	Separate the sheets and load the remaining ones, then choose Continue.	Розділіть аркуші та завантажте решту, потім виберіть «Продовжити сканування».
 	Separate the sheets and load them again, then choose Try again.	Розділіть аркуші та завантажте їх знову, потім виберіть «Повторити».
@@ -2350,6 +2373,8 @@ calendar date	September	вересня
 	Shadings	Градієнтні заливки
 	Shared Field Properties	Спільні властивості полів
 	Sheet {s} of {n}	Аркуш {s} із {n}
+	Sheets printed: {done} of {total}	Надруковано аркушів: {done} з {total}
+	Sheets printed: {n}	Надруковано аркушів: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift обмежує кут до 45 градусів. Backspace видаляє вершину. Escape скасовує.
 	Shift drags freely	Shift перетягує вільно
@@ -2494,6 +2519,7 @@ action wizard	Start	Почати
 	Status	Статус
 	Steps	Кроки
 	Sticky note	Нотатка
+	Still printing; the job continues on the printer	Друк триває; завдання виконується на принтері
 	Stop	Стоп
 	Stop reading	Зупинити читання
 	Straighten scanned page	Вирівняти відскановану сторінку
@@ -2603,6 +2629,7 @@ certificate	Subject	Власник сертифіката
 	The document changed while its margins were measured; nothing was cropped	Документ змінився під час вимірювання полів; нічого не обрізано
 	The document changed while you were choosing a file, so nothing was changed.	Документ змінився, поки ви вибирали файл, тому нічого не змінено.
 	The document changed while you were editing field properties.	Документ змінився, поки ви редагували властивості полів.
+	The document couldn't be prepared	Не вдалося підготувати документ
 	The document has additional actions (/AA)	Документ має додаткові дії (/AA)
 	The document has document-level JavaScript	Документ має JavaScript рівня документа
 	the document has no form fields	документ не має полів форми
@@ -2642,6 +2669,7 @@ certificate	Subject	Власник сертифіката
 	The image has been copied ({w} × {h} pixels)	Зображення скопійовано ({w} × {h} пікселів)
 	The image has been copied as a {ext} file	Зображення скопійовано як файл {ext}
 	the image is empty	зображення порожнє
+	The job was canceled	Завдання скасовано
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Ключ у В’язці ключів macOS, яка може запитати дозвіл на його використання PdfCraft.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Ключ у сховищі сертифікатів Windows, яке може запитати дозвіл на його використання PdfCraft.
 	The key is on the device, which may ask for its PIN itself.	Ключ на пристрої, який може сам запитати PIN-код.
@@ -2670,7 +2698,18 @@ certificate	Subject	Власник сертифіката
 	The PIN is incorrect.	Неправильний PIN-код.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Не вдалося отримати список цифрових посвідчень із токенів PKCS #11: {e}
 	The preview could not be shown.	Не вдалося показати попередній перегляд.
+	The print job stopped unexpectedly	Завдання друку несподівано зупинилося
+	The printer accepts none of the formats this document can be sent in	Принтер не приймає жодного з форматів, у яких можна надіслати цей документ
+	The printer address was refused	Адресу принтера відхилено
+	The printer doesn't support this setting	Принтер не підтримує цей параметр
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Власні налаштування драйвера принтера для цього друку: лоток, тип паперу, післядрукова обробка тощо.
+	The printer is printing it	Принтер друкує завдання
+	The printer may have received the document. Check the printer before sending again.	Можливо, принтер отримав документ. Перевірте принтер, перш ніж надсилати знову.
+	The printer no longer lists the job; it most likely finished	Принтер більше не показує завдання; найімовірніше, воно завершилося
+	The printer paused the job; it needs attention	Принтер призупинив завдання; потрібна увага
+	The printer refused the request	Принтер відхилив запит
+	The printer stopped the job	Принтер зупинив завдання
+	The printer's reply couldn't be understood	Відповідь принтера не вдалося зрозуміти
 	The provider's page didn't come back in time. Try again.	Сторінка постачальника не повернулася вчасно. Спробуйте ще раз.
 	The raw text was truncated to what fits.	Вхідний текст було скорочено.
 	The redaction does not fit page {page}; no pages were marked.	Область видалення не вміщується на сторінці {page}; сторінки не позначено.
@@ -2803,7 +2842,13 @@ certificate	Subject	Власник сертифіката
 	This page has an opaque background of its own, which hides the image behind it.	Ця сторінка має власне непрозоре тло, яке приховує зображення позаду.
 	This PDF uses the unsupported {s} action.	У цьому PDF використовується непідтримувана дія {s}.
 	This point could not be moved. Try a smaller move.	Цю точку не вдалося перемістити. Спробуйте менше зміщення.
+	This printer does not take a copies setting.	Цей принтер не підтримує налаштування кількості копій.
+	This printer does not take a quality setting.	Цей принтер не підтримує налаштування якості.
+	This printer does not take a resolution setting.	Цей принтер не підтримує налаштування роздільної здатності.
+	This printer does not take an orientation setting.	Цей принтер не підтримує налаштування орієнтації.
 	This printer offers no settings of its own.	Цей принтер не має власних налаштувань.
+	This printer only prints in black and white.	Цей принтер друкує лише чорно-білим.
+	This printer only prints one-sided.	Цей принтер друкує лише з одного боку.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Драйвер цього принтера не приймає налаштування двобічного друку від інших програм, тому діє його власне налаштування. Змініть його у вікні Властивості…
 	this signature can't be removed on its own	цей підпис не можна вилучити окремо
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	цю службу підписування не можна використати: вона потребує входу через OAuth у браузері, якого PdfCraft поки не підтримує
@@ -2962,6 +3007,7 @@ signature pad	Type	Ввести
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Зачекайте, поки сканер завершить роботу, або закрийте інші програми, які його використовують, потім виберіть «Повторити».
 	Waiting for the system print dialog…	Очікування системного діалогу друку…
 	Waiting for your approval in the browser…	Очікування вашого схвалення в браузері…
+	Waiting in the printer's queue	Очікує в черзі принтера
 	watermark	водяний знак
 	Weak	Слабкий
 	Welcome to PdfCraft	Вітаємо в PdfCraft

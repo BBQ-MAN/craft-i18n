@@ -63,6 +63,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG- tai SVG-tiedosto. Se luetaan tästä sijainnista aina, kun PdfCraft käynnistyy.
 	A script	Komentosarja
 	A selected field has no widget on any page, so the fields can't be edited together.	Yhdellä valituista kentistä ei ole kenttäelementtiä millään sivulla, joten kenttiä ei voi muokata yhdessä.
+	A setting isn't valid	Asetus ei kelpaa
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Sivun sisältöön kuuluva allekirjoitus, kuten skannatulla sivulla, ei ole kenttä eikä merkintä, joten sitä ei voi poistaa yksinään, eikä PdfCraft pyyhi sivun osia sen piilottamiseksi. Poista se peittämällä alue (Peitä) tai, jos allekirjoitus on erillinen kuva, poistamalla kuva toiminnolla Muokkaa PDF:ää.
 	A stream refers to an external file	Virta viittaa ulkoiseen tiedostoon
 	A stream uses LZW compression	Virta käyttää LZW-pakkausta
@@ -76,6 +77,7 @@
 	About PdfCraft	Tietoja PdfCraftista
 	About {app}	Tietoja: {app}
 	Accepted	Hyväksytty
+	Accepted by {printer}	{printer} hyväksyi työn
 	Accessibility	Saavutettavuus
 	Accessibility Checker	Saavutettavuuden tarkistus
 	Accessibility Checker Options	Saavutettavuuden tarkistuksen asetukset
@@ -275,6 +277,7 @@ calendar date	April	huhtikuuta
 	Ask about this document	Kysy tästä asiakirjasta
 	Ask before a document opens in Full Screen mode	Kysy ennen kuin asiakirja avataan koko näytön tilassa
 	Ask whether to recognize the current page or all pages when editing a scan.	Kysy skannattua asiakirjaa muokattaessa, tunnistetaanko nykyinen sivu vai kaikki sivut.
+	Asking the printer…	Kysytään tulostimelta…
 	Asking {server}…	Kysytään palvelimelta {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Kysyy uusinta julkaisua GitHubista. Mitään ei ladata tai asenneta automaattisesti.
 	Associated with content	Liitetty sisältöön
@@ -363,6 +366,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Callout	Selite
 	Can't be read: {e}	Ei voi lukea: {e}
 	Cancel reverse sides	Cancel reverse sides
+	Canceling…	Perutaan…
 	Cancelled	Peruttu
 	Cancelling…	Peruutetaan…
 	Card driver (PKCS #11)	Kortin ohjain (PKCS #11)
@@ -604,6 +608,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Couldn't optimize the file	Tiedoston optimointi epäonnistui
 	Couldn't optimize the file: {e}	Tiedoston optimointi epäonnistui: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Selaimesta ei voitu tulostaa ({e}); ladattiin {name} tulostettavaksi sen sijaan
+	Couldn't reach the printer	Tulostimeen ei saatu yhteyttä
 	Couldn't read {name}: {e}	Tiedoston {name} lukeminen epäonnistui: {e}
 	Couldn't recover {name}: {e}	Tiedoston {name} palauttaminen epäonnistui: {e}
 	Couldn't reload {name}: {e}	Kohdetta {name} ei voitu ladata uudelleen: {e}
@@ -810,6 +815,7 @@ key	Delete	Delete
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Liitteiden lataus verkkoversiossa tulee versiossa M3.10 ({n} tavua valmiina)
 	Downsample to	Alinäytteistä tarkkuuteen
 	DPI sets the printed page size without resampling the image.	DPI määrittää tulostetun sivun koon kuvaa uudelleennäytteistämättä.
+	Draft	Luonnos
 	Drag a field to move it, or select it and press {up} or {down}.	Drag a field to move it, or select it and press {up} or {down}.
 	Drag a point to reshape the line. Delete removes it.	Muotoile viivaa vetämällä pistettä. Delete poistaa sen.
 	Drag a rectangle around the area to copy	Vedä suorakulmio kopioitavan alueen ympärille
@@ -1156,6 +1162,7 @@ calendar weekday	Fr	Pe
 	Headers	Otsikkosolut
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Otsikkotasoja ei pitäisi ohittaa (H1, jota seuraa H3). Tagita otsikot uudelleen.
 	Headings	Otsikot
+	Held by the printer	Tulostin pitää työtä pidossa
 	Help…	Ohje…
 	Hidden layers	Piilotetut tasot
 	Hidden text	Piilotettu teksti
@@ -1184,6 +1191,7 @@ key	Home	Home
 	Horizontally	Vaakasuunnassa
 	HTML web page	HTML-verkkosivu
 	H{n} follows an H{d}; headings should not skip levels	H{n} seuraa otsikkoa H{d}; otsikkotasoja ei pidä ohittaa
+	I confirm sending this document to this printer	Vahvistan tämän asiakirjan lähettämisen tälle tulostimelle
 	Icon	Kuvake
 	Identity	Henkilöllisyys
 	Image (PNG)	Kuva (PNG)
@@ -1481,6 +1489,7 @@ calendar weekday	Mo	Ma
 	Negative number style:	Negatiivisen luvun tyyli:
 	Nested alternate text	Sisäkkäinen vaihtoehtoinen teksti
 	Network	Network
+	Network printer (WS-Print)	Verkkotulostin (WS-Print)
 	Never	Ei koskaan
 	New Action	Uusi toiminto
 	New Action…	Uusi toiminto…
@@ -1575,6 +1584,7 @@ calendar weekday	Mo	Ma
 	None — everything is allowed	Ei mitään – kaikki on sallittu
 scroll speed	Normal	Normaali
 	Not allowed	Ei sallittu
+	Not confirmed by the printer	Tulostin ei vahvistanut
 	not in a Table, THead, TBody or TFoot	ei ole Table-, THead-, TBody- tai TFoot-elementissä
 	not in a TR	ei ole TR-elementissä
 	not in an L (list)	ei ole L-elementissä (luettelo)
@@ -1626,6 +1636,7 @@ animation effects	On	Käytössä
 	Only change the colour of black text or line art	Muuta vain mustan tekstin tai viivagrafiikan väriä
 	Only checked properties will change. Mixed means the selected fields have different values.	Vain rastitetut ominaisuudet muuttuvat. Vaihteleva tarkoittaa, että valituilla kentillä on eri arvot.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Jatka vain, jos luotat tähän asiakirjaan. Osoite voi välittää tietoja asiakirjasta, kuten lomakkeeseen kirjoittamasi tekstin.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Vain tämän verkon IP-osoitteet hyväksytään (yksityiset, linkkipaikalliset tai loopback), ei isäntänimiä.
 	Only the document's owner can change its security (open it with the permissions password)	Vain asiakirjan omistaja voi muuttaa sen suojausta (avaa se käyttöoikeussalasanalla)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Vain sivujen sisältö muuttuu: alkuperäisten sivujen linkit, kommentit, lomakekentät ja kirjanmerkit säilyvät.
 	Only the recipients can open the document, each with the private key of their own certificate.	Vain vastaanottajat voivat avata asiakirjan, kukin oman varmenteensa yksityisellä avaimella.
@@ -1866,9 +1877,14 @@ animation effects	On	Käytössä
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Tulosta yksipuolisena. Pidä arkit järjestyksessä, leikkaa merkkien kohdalta ja pinoa sitten pinot vasemmalta oikealle, ylhäältä alas.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage tai LastPage
 	Printed through the system print dialog	Tulostettu järjestelmän tulostusikkunan kautta
+	Printed with errors	Tulostettu virheillä
+	Printed with warnings	Tulostettu varoituksin
+	Printer address:	Tulostimen osoite:
 	Printer default	Printer default
+	Printer orientation:	Tulostimen suunta:
 	Printer paper and scaling may differ. Check driver settings.	Tulostimen paperi ja skaalaus voivat poiketa. Tarkista ohjaimen asetukset.
 	Printer properties	Tulostimen ominaisuudet
+	Printer status: {state}	Tulostimen tila: {state}
 	Printing	Tulostus
 	Printing allowed	Tulostus sallittu
 	Privacy	Tietosuoja
@@ -1887,6 +1903,9 @@ animation effects	On	Käytössä
 	Public key	Julkinen avain
 certificate	Public key	Julkinen avain
 	PushButton	Painike
+	Quality:	Laatu:
+	Query printer	Kysy tulostimelta
+	Query the printer first to see what it supports.	Kysy ensin tulostimelta, mitä se tukee.
 	Quit PdfCraft	Lopeta PdfCraft
 	Quit {app}	Lopeta {app}
 	Radio	Valintanappi
@@ -1903,6 +1922,7 @@ certificate	Public key	Julkinen avain
 	Reads {name}, which the form doesn't have, so it gets no value there.	Lukee kenttää {name}, jota lomakkeessa ei ole, joten se ei saa siitä arvoa.
 	Reason	Syy
 	Reason: 	Syy: 
+	Reasons: {reasons}	Syyt: {reasons}
 	Recent colours	Viimeisimmät värit
 	Recent files to keep	Recent files to keep
 	Recipients	Vastaanottajat
@@ -2048,8 +2068,10 @@ certificate	Public key	Julkinen avain
 	Reveal in File Explorer	Näytä Resurssienhallinnassa
 	Reveal in Finder	Näytä Finderissa
 	Reverse closed arrow	Käänteinen suljettu nuoli
+	Reverse landscape	Käänteinen vaaka
 	Reverse open arrow	Käänteinen avoin nuoli
 	Reverse pages	Käänteinen sivujärjestys
+	Reverse portrait	Käänteinen pysty
 	reverse side(s)	reverse side(s)
 	Reverse sides	Reverse sides
 	Reverse sides interleaved.	Reverse sides interleaved.
@@ -2232,6 +2254,7 @@ certificate	Self-signed	Itse allekirjoitettu
 	Sensitivity	Herkkyys
 	Sent to {printer}	Lähetetty tulostimeen {printer}
 	Sent to {printer}: {msg}	Lähetetty tulostimeen {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Lähetetty. Tulostin ei voi kertoa, tulostuiko se.
 	Separate PDFs	Erilliset PDF-tiedostot
 	Separate the sheets and load the remaining ones, then choose Continue.	Separate the sheets and load the remaining ones, then choose Continue.
 	Separate the sheets and load them again, then choose Try again.	Separate the sheets and load them again, then choose Try again.
@@ -2275,6 +2298,8 @@ certificate	SHA-256 digest	SHA-256-tiiviste
 	Shadings	Varjostukset
 	Shared Field Properties	Yhteiset kenttäominaisuudet
 	Sheet {s} of {n}	Arkki {s}/{n}
+	Sheets printed: {done} of {total}	Tulostetut arkit: {done} / {total}
+	Sheets printed: {n}	Tulostetut arkit: {n}
 key	Shift	Vaihto
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Vaihto rajoittaa 45 asteeseen. Askelpalautin poistaa kärkipisteen. Esc peruuttaa.
 	Shift- or Ctrl/Command-click to select several fields.	Valitse useita kenttiä napsauttamalla Vaihto- tai Ctrl/Command-näppäin painettuna.
@@ -2397,6 +2422,7 @@ action wizard	Start	Aloita
 	Start page number	Aloitussivunumero
 	Steps	Vaiheet
 	Sticky note	Muistilappu
+	Still printing; the job continues on the printer	Tulostus on yhä kesken; työ jatkuu tulostimessa
 	Still rendering — this page is unusually complex…	Hahmonnetaan yhä – tämä sivu on tavallista monimutkaisempi…
 	Stop	Stop
 	Straighten the page	Straighten the page
@@ -2498,6 +2524,7 @@ calendar weekday	Th	To
 	The document changed while its margins were measured; nothing was cropped	Asiakirja muuttui reunuksia mitattaessa; mitään ei rajattu
 	The document changed while you were choosing a file, so nothing was changed.	Asiakirja muuttui tiedoston valinnan aikana, joten mitään ei muutettu.
 	The document changed while you were editing field properties.	Asiakirja muuttui kenttäominaisuuksien muokkauksen aikana.
+	The document couldn't be prepared	Asiakirjaa ei voitu valmistella
 	The document has additional actions (/AA)	Asiakirjassa on lisätoimintoja (/AA)
 	The document has been altered or corrupted since the signature was applied.	Asiakirjaa on muutettu tai se on vioittunut allekirjoituksen lisäämisen jälkeen.
 	The document has been altered or corrupted since the timestamp was applied.	Asiakirjaa on muutettu tai se on vioittunut aikaleiman lisäämisen jälkeen.
@@ -2551,6 +2578,7 @@ calendar weekday	Th	To
 	The image has been copied ({w} × {h} pixels)	Kuva on kopioitu ({w} × {h} pikseliä)
 	The image has been copied as a {ext} file	Kuva on kopioitu {ext}-tiedostona
 	the image is empty	kuva on tyhjä
+	The job was canceled	Työ peruttiin
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Avain on macOS-avainnipussa, joka voi pyytää lupaa PdfCraftin käytölle.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Avain on Windowsin varmennesäilössä, joka voi pyytää lupaa PdfCraftin käytölle.
 	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Avain on laitteessa {device}, joka pyytää hyväksynnän itse (PIN-näppäimistö tai puhelimen sovellus).
@@ -2579,7 +2607,18 @@ calendar weekday	Th	To
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN-koodi menee vain kortille; PdfCraft ei tallenna sitä.
 	The PIN is incorrect.	PIN-koodi on väärä.
 	The preview could not be shown.	The preview could not be shown.
+	The print job stopped unexpectedly	Tulostustyö pysähtyi odottamatta
+	The printer accepts none of the formats this document can be sent in	Tulostin ei hyväksy yhtään muotoa, jossa tämä asiakirja voidaan lähettää
+	The printer address was refused	Tulostimen osoite hylättiin
+	The printer doesn't support this setting	Tulostin ei tue tätä asetusta
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Tulostinohjaimen omat asetukset tälle tulostukselle: paperilokero, paperityyppi, viimeistely ym.
+	The printer is printing it	Tulostin tulostaa sitä
+	The printer may have received the document. Check the printer before sending again.	Tulostin on saattanut vastaanottaa asiakirjan. Tarkista tulostin, ennen kuin lähetät uudelleen.
+	The printer no longer lists the job; it most likely finished	Tulostin ei enää listaa työtä; se on todennäköisesti valmis
+	The printer paused the job; it needs attention	Tulostin keskeytti työn; se tarvitsee huomiota
+	The printer refused the request	Tulostin hylkäsi pyynnön
+	The printer stopped the job	Tulostin keskeytti työn
+	The printer's reply couldn't be understood	Tulostimen vastausta ei ymmärretty
 	The provider's page didn't come back in time. Try again.	Palveluntarjoajan sivu ei palannut ajoissa. Yritä uudelleen.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Uudelleenohjauksen URI:n on oltava http://127.0.0.1 tai http://localhost portin kanssa.
 	The replacement file doesn't have that many pages.	Korvaavassa tiedostossa ei ole niin montaa sivua.
@@ -2740,7 +2779,13 @@ calendar weekday	Th	To
 	This page has an opaque background of its own, which hides the image behind it.	Tällä sivulla on oma peittävä tausta, joka peittää sen alla olevan kuvan.
 	This PDF uses the unsupported {s} action.	Tämä PDF käyttää toimintoa {s}, jota ei tueta.
 	This point could not be moved. Try a smaller move.	Tätä pistettä ei voitu siirtää. Kokeile pienempää siirtoa.
+	This printer does not take a copies setting.	Tämä tulostin ei tue kopiomäärän asetusta.
+	This printer does not take a quality setting.	Tämä tulostin ei tue laatuasetusta.
+	This printer does not take a resolution setting.	Tämä tulostin ei tue tarkkuusasetusta.
+	This printer does not take an orientation setting.	Tämä tulostin ei tue suunta-asetusta.
 	This printer offers no settings of its own.	Tällä tulostimella ei ole omia asetuksia.
+	This printer only prints in black and white.	Tämä tulostin tulostaa vain mustavalkoisena.
+	This printer only prints one-sided.	Tämä tulostin tulostaa vain yksipuolisesti.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Tämän tulostimen ohjain ei hyväksy kaksipuolisuusasetuksia muilta ohjelmilta, joten sen oma asetus on voimassa. Muuta sitä kohdassa Ominaisuudet…
 	this signature can't be removed on its own	tätä allekirjoitusta ei voi poistaa yksinään
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.
@@ -2909,6 +2954,7 @@ certificate	Version	Versio
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	Odotetaan järjestelmän tulostusikkunaa…
 	Waiting for your approval in the browser…	Odotetaan hyväksyntääsi selaimessa…
+	Waiting in the printer's queue	Odottaa tulostimen jonossa
 	Warning	Varoitus
 	Watermark	Vesileima
 	watermark	vesileima

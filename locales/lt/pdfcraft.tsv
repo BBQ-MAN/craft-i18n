@@ -66,6 +66,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG arba SVG failas. Jis skaitomas iš šios vietos kiekvieną kartą paleidus PdfCraft.
 	A script	Scenarijus
 	A selected field has no widget on any page, so the fields can't be edited together.	Pasirinktas laukas neturi valdiklio jokiame puslapyje, todėl laukų negalima redaguoti kartu.
+	A setting isn't valid	Nustatymas netinkamas
 	A signature is still waiting for its approval.	Parašas vis dar laukia patvirtinimo.
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Parašas, kuris yra puslapio turinio dalis (pvz., nuskaitytame puslapyje), nėra nei laukas, nei anotacija, todėl jo negalima pašalinti atskirai, o PdfCraft netrina puslapio dalių, kad jį paslėptų. Norėdami jį pašalinti, pašalinkite konfidencialią tos srities informaciją (Pašalinti konfidencialią informaciją) arba, jei parašas yra atskiras paveikslėlis, ištrinkite jį su „Redaguoti PDF“.
 	A stream refers to an external file	Srautas nurodo išorinį failą
@@ -80,6 +81,7 @@
 	About PdfCraft	Apie „PdfCraft“
 	About {app}	Apie „{app}“
 	Accepted	Priimta
+	Accepted by {printer}	Priėmė {printer}
 	Accessibility Checker	Prieinamumo tikrintuvas
 	Accessibility Checker Options	Prieinamumo tikrintuvo parinktys
 	Accessibility panel	Pritaikymo neįgaliesiems skydelis
@@ -290,6 +292,7 @@ calendar date	April	balandžio
 	Ask before a document opens in Full Screen mode	Paklausti, prieš dokumentui atsidarant viso ekrano režimu
 	Ask in any language	Klauskite bet kuria kalba
 	Ask whether to recognize the current page or all pages when editing a scan.	Redaguojant nuskaitytą dokumentą paklausti, ar atpažinti dabartinį puslapį, ar visus puslapius.
+	Asking the printer…	Klausiama spausdintuvo…
 	Asking {server}…	Klausiama {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	„GitHub“ tikrinama, ar yra naujausia laida. Nieko automatiškai neatsisiunčiama ir neįdiegiama.
 	Assistant	Padėjėjas
@@ -383,6 +386,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Callout	Išnaša
 	Can't be read: {e}	Nepavyksta perskaityti: {e}
 	Cancel reverse sides	Atšaukti kitas puses
+	Canceling…	Atšaukiama…
 	Cancelled	Atšaukta
 	Cancelling…	Atšaukiama…
 	Card driver (PKCS #11)	Kortelės tvarkyklė (PKCS #11)
@@ -637,6 +641,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Couldn't optimize the file	Nepavyko optimizuoti failo
 	Couldn't optimize the file: {e}	Nepavyko optimizuoti failo: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Nepavyko spausdinti iš naršyklės ({e}); vietoj to atsisiųstas spausdintinas failas {name}
+	Couldn't reach the printer	Nepavyko pasiekti spausdintuvo
 	Couldn't read {name}: {e}	Nepavyko perskaityti {name}: {e}
 	Couldn't recover {name}: {e}	Nepavyko atkurti {name}: {e}
 	Couldn't reload {name}: {e}	Nepavyko iš naujo įkelti {name}: {e}
@@ -863,6 +868,7 @@ key	Delete	Delete
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	Atsisiuntimai atidaromi naršyklėje. Įdiegti reikia rankiniu būdu; niekas neįdiegiama automatiškai.
 	Downsample to	Sumažinti raišką iki
 	DPI sets the printed page size without resampling the image.	DPI nustato spausdinamo puslapio dydį nekeičiant paveikslėlio raiškos.
+	Draft	Juodraštis
 	Drag a field to move it, or select it and press {up} or {down}.	Vilkite lauką, kad jį perkeltumėte, arba pažymėkite jį ir paspauskite {up} arba {down}.
 	Drag a point to reshape the line. Delete removes it.	Vilkite tašką, kad pakeistumėte linijos formą. Klavišas Delete ją pašalina.
 	Drag a rectangle around the area to copy	Apibrėžkite kopijuojamą sritį vilkdami stačiakampį
@@ -1223,6 +1229,7 @@ calendar weekday	Fr	Pn
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Antraščių lygiai neturėtų būti praleidžiami (pvz., po H1 iškart H3). Pataisykite antraščių žymas.
 	Hebrew (ISO 8859-8)	Hebrajų (ISO 8859-8)
 	Hebrew (Windows-1255)	Hebrajų (Windows-1255)
+	Held by the printer	Spausdintuvo sulaikyta
 	Help…	Žinynas…
 	Heritage	Heritage
 	Hidden layers	Paslėpti sluoksniai
@@ -1254,6 +1261,7 @@ key	Home	Home
 	HTML web page	HTML tinklalapis
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Vengrų kalbos OCR reikia darbalaukio programos su Tesseract 5 ir hun kalbos modeliu. Įdiegę paleiskite PdfCraft iš naujo.
 	H{n} follows an H{d}; headings should not skip levels	Po H{d} eina H{n}; antraščių lygiai neturi būti praleidžiami
+	I confirm sending this document to this printer	Patvirtinu, kad šis dokumentas siunčiamas į šį spausdintuvą
 	Identity	Tapatybė
 	Image (PNG)	Paveikslėlis (PNG)
 	Image field	Paveikslėlio laukas
@@ -1567,6 +1575,7 @@ calendar weekday	Mo	Pr
 	Negative number style:	Neigiamų skaičių formatas:
 	Nested alternate text	Įdėtasis alternatyvusis tekstas
 	Network	Tinklas
+	Network printer (WS-Print)	Tinklo spausdintuvas (WS-Print)
 	New Action	Naujas veiksmas
 	New Action…	Naujas veiksmas…
 	New blank PDF	Naujas tuščias PDF dokumentas
@@ -1668,9 +1677,11 @@ calendar weekday	Mo	Pr
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Nė vieno iš šių failų negalima paversti PDF; naudokite PDF, paveikslėlius arba .txt failus
 	None of your digital IDs can open this document.	Nė vienas jūsų skaitmeninis ID negali atverti šio dokumento.
 	None — everything is allowed	Nėra — viskas leidžiama
+	Normal	Įprasta
 scroll speed	Normal	Įprastas
 	Normal page	Įprastas puslapis
 	Not allowed	Neleidžiama
+	Not confirmed by the printer	Spausdintuvas nepatvirtino
 	not in a Table, THead, TBody or TFoot	nepriklauso Table, THead, TBody arba TFoot
 	not in a TR	nepriklauso TR
 	not in an L (list)	nepriklauso L (sąrašui)
@@ -1726,6 +1737,7 @@ animation effects	On	Įjungta
 	Only checked properties will change. Mixed means the selected fields have different values.	Bus pakeistos tik pažymėtos savybės. „Mišrios reikšmės“ reiškia, kad pasirinktų laukų reikšmės skiriasi.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Apkerpami tik aiškūs popieriaus kraštai. Neatskiriami balti kraštai paliekami.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Tęskite tik jei pasitikite šiuo dokumentu. Adresu gali būti perduota dokumento informacija, pavyzdžiui, tai, ką įvedėte į jo formą.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Priimami tik šio tinklo IP adresai (privatūs, link-local ar loopback), o ne pagrindinių kompiuterių vardai.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Siųskite tik tuo atveju, jei pasitikite šiuo dokumentu ir paskirties vieta. GET įrašo formos duomenis į URL.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Siųskite tik tuo atveju, jei pasitikite šiuo dokumentu ir paskirties vieta. Visas PDF dokumentas palieka šį kompiuterį.
 	Only send if you trust this document and destination. The form values leave this computer.	Siųskite tik tuo atveju, jei pasitikite šiuo dokumentu ir paskirties vieta. Formos duomenys palieka šį kompiuterį.
@@ -1990,9 +2002,14 @@ animation effects	On	Įjungta
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Spausdinkite vienpusiškai. Išlaikykite lapų tvarką, pjaukite ties žymomis, tada sudėkite krūveles iš kairės į dešinę ir iš viršaus į apačią.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage arba LastPage
 	Printed through the system print dialog	Išspausdinta per sistemos spausdinimo dialogą
+	Printed with errors	Atspausdinta su klaidomis
+	Printed with warnings	Atspausdinta su įspėjimais
+	Printer address:	Spausdintuvo adresas:
 	Printer default	Pagal spausdintuvą
+	Printer orientation:	Spausdintuvo orientacija:
 	Printer paper and scaling may differ. Check driver settings.	Spausdintuvo popieriaus formatas ir mastelis gali skirtis. Patikrinkite tvarkyklės nuostatas.
 	Printer properties	Spausdintuvo savybės
+	Printer status: {state}	Spausdintuvo būsena: {state}
 	Printing allowed	Leidžiama spausdinti
 	Privacy	Privatumas
 	Private data of other applications	Kitų programų privatūs duomenys
@@ -2010,6 +2027,9 @@ animation effects	On	Įjungta
 	Public key	Viešasis raktas
 certificate	Public key	Viešasis raktas
 	PushButton	Mygtukas
+	Quality:	Kokybė:
+	Query printer	Užklausti spausdintuvo
+	Query the printer first to see what it supports.	Pirmiausia užklauskite spausdintuvo, kad pamatytumėte, ką jis palaiko.
 	Quirks	Ypatumai
 	Quit	Baigti
 	Quit PdfCraft	Išeiti iš PdfCraft
@@ -2044,6 +2064,7 @@ certificate	Public key	Viešasis raktas
 	Reads {name}, which the form doesn't have, so it gets no value there.	Skaito {name}, kurio formoje nėra, todėl iš ten negauna jokios reikšmės.
 	Reason	Priežastis
 	Reason: 	Priežastis: 
+	Reasons: {reasons}	Priežastys: {reasons}
 	Recent colours	Paskiausiai naudotos spalvos
 	Recent files to keep	Recent files to keep
 	Recipients	Gavėjai
@@ -2201,8 +2222,10 @@ certificate	Public key	Viešasis raktas
 	Rev. {rev}: Signed by {name}	Versija {rev}: pasirašė {name}
 	Reveal in File Explorer	Rodyti „File Explorer“
 	Reverse closed arrow	Atvirkštinė uždara rodyklė
+	Reverse landscape	Gulsčias, apverstas
 	Reverse open arrow	Atvirkštinė atvira rodyklė
 	Reverse pages	Apversti puslapius
+	Reverse portrait	Stačias, apverstas
 	reverse side(s)	kitos pusės
 	Reverse sides	Kitos pusės
 	Reverse sides interleaved.	Kitos pusės sudėtos pakaitomis.
@@ -2403,6 +2426,7 @@ certificate	Self-signed	Savarankiškai pasirašytas
 	Sending to {printer}…	Siunčiama į {printer}…
 	Sending…	Siunčiama…
 	Sent to {printer}: {msg}	Išsiųsta į {printer}: {msg}
+	Sent. The printer can't say whether it printed.	Išsiųsta. Spausdintuvas negali pasakyti, ar atspausdinta.
 	Separate PDFs	Atskiri PDF dokumentai
 	Separate the sheets and load the remaining ones, then choose Continue.	Atskirkite lapus ir įdėkite likusius, tada pasirinkite Tęsti.
 	Separate the sheets and load them again, then choose Try again.	Atskirkite lapus ir įdėkite juos iš naujo, tada pasirinkite Bandyti dar kartą.
@@ -2449,6 +2473,8 @@ certificate	SHA-256 digest	SHA-256 santrauka
 	Shadings	Spalvų perėjimai
 	Shared Field Properties	Bendrosios laukų savybės
 	Sheet {s} of {n}	{s} lapas iš {n}
+	Sheets printed: {done} of {total}	Atspausdinta lapų: {done} iš {total}
+	Sheets printed: {n}	Atspausdinta lapų: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	„Shift“ apriboja kampą iki 45 laipsnių. „Backspace“ pašalina viršūnę. „Escape“ atšaukia veiksmą.
 	Shift drags freely	Shift velka laisvai
@@ -2596,6 +2622,7 @@ action wizard	Start	Pradėti
 	Start page number	Pradinio puslapio numeris
 	Steps	Veiksmai
 	Sticky note	Lipnusis raštelis
+	Still printing; the job continues on the printer	Dar spausdinama; užduotis tęsiama spausdintuve
 	Still rendering — this page is unusually complex…	Vis dar atvaizduojama — šis puslapis neįprastai sudėtingas…
 	Stop	Stop
 	Stop reading	Stabdyti skaitymą
@@ -2715,6 +2742,7 @@ calendar weekday	Th	Kt
 	The document changed while its margins were measured; nothing was cropped	Dokumentas pasikeitė matuojant paraštes; niekas neapkirpta
 	The document changed while you were choosing a file, so nothing was changed.	Renkantis failą dokumentas pasikeitė, todėl pakeitimai nepritaikyti.
 	The document changed while you were editing field properties.	Redaguojant lauko savybes dokumentas pasikeitė.
+	The document couldn't be prepared	Nepavyko paruošti dokumento
 	The document has additional actions (/AA)	Dokumentas turi papildomų veiksmų (/AA)
 	The document has been altered or corrupted since the signature was applied.	Po pasirašymo dokumentas buvo pakeistas arba pažeistas.
 	The document has been altered or corrupted since the timestamp was applied.	Pridėjus laiko žymą dokumentas buvo pakeistas arba pažeistas.
@@ -2771,6 +2799,7 @@ calendar weekday	Th	Kt
 	The image has been copied ({w} × {h} pixels)	Paveikslėlis nukopijuotas ({w} × {h} pikselių)
 	The image has been copied as a {ext} file	Paveikslėlis nukopijuotas kaip {ext} failas
 	the image is empty	paveikslėlis tuščias
+	The job was canceled	Užduotis atšaukta
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Raktas saugomas „macOS“ raktinėje; gali būti paprašyta leisti „PdfCraft“ juo naudotis.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Raktas saugomas „Windows“ sertifikatų saugykloje; gali būti paprašyta leisti „PdfCraft“ juo naudotis.
 	The key is on the device, which may ask for its PIN itself.	Raktas yra įrenginyje, kuris gali pats paprašyti PIN kodo.
@@ -2803,7 +2832,18 @@ calendar weekday	Th	Kt
 	The PIN is incorrect.	PIN kodas neteisingas.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Nepavyko gauti „PKCS #11“ raktuose esančių skaitmeninių ID sąrašo: {e}
 	The preview could not be shown.	Nepavyko parodyti peržiūros.
+	The print job stopped unexpectedly	Spausdinimo užduotis netikėtai sustojo
+	The printer accepts none of the formats this document can be sent in	Spausdintuvas nepriima nė vieno formato, kuriuo galima siųsti šį dokumentą
+	The printer address was refused	Spausdintuvo adresas atmestas
+	The printer doesn't support this setting	Spausdintuvas nepalaiko šio nustatymo
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Šio spausdinimo spausdintuvo tvarkyklės nuostatos: popieriaus dėklas, popieriaus tipas, apdaila ir kita.
+	The printer is printing it	Spausdintuvas ją spausdina
+	The printer may have received the document. Check the printer before sending again.	Spausdintuvas galėjo gauti dokumentą. Prieš siųsdami iš naujo, patikrinkite spausdintuvą.
+	The printer no longer lists the job; it most likely finished	Spausdintuvas užduoties nebeišvardija; greičiausiai ji baigta
+	The printer paused the job; it needs attention	Spausdintuvas pristabdė užduotį; reikia dėmesio
+	The printer refused the request	Spausdintuvas atmetė užklausą
+	The printer stopped the job	Spausdintuvas sustabdė užduotį
+	The printer's reply couldn't be understood	Spausdintuvo atsakymo nepavyko suprasti
 	The provider's page didn't come back in time. Try again.	Teikėjo puslapis laiku negrįžo. Bandykite dar kartą.
 	The raw text was truncated to what fits.	Pirminis tekstas sutrumpintas.
 	The redaction does not fit page {page}; no pages were marked.	Užtušavimas netelpa {page} puslapyje; puslapiai nepažymėti.
@@ -2983,7 +3023,13 @@ calendar weekday	Th	Kt
 	This page has an opaque background of its own, which hides the image behind it.	Šis puslapis turi savo nepermatomą foną, kuris paslepia už jo esantį paveikslėlį.
 	This PDF uses the unsupported {s} action.	Šis PDF naudoja nepalaikomą veiksmą {s}.
 	This point could not be moved. Try a smaller move.	Šio taško nepavyko perkelti. Pabandykite mažesnį poslinkį.
+	This printer does not take a copies setting.	Šis spausdintuvas nepalaiko kopijų skaičiaus nustatymo.
+	This printer does not take a quality setting.	Šis spausdintuvas nepalaiko kokybės nustatymo.
+	This printer does not take a resolution setting.	Šis spausdintuvas nepalaiko raiškos nustatymo.
+	This printer does not take an orientation setting.	Šis spausdintuvas nepalaiko orientacijos nustatymo.
 	This printer offers no settings of its own.	Šis spausdintuvas neturi atskirų nuostatų.
+	This printer only prints in black and white.	Šis spausdintuvas spausdina tik nespalvotai.
+	This printer only prints one-sided.	Šis spausdintuvas spausdina tik vienoje pusėje.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Šio spausdintuvo tvarkyklė neperima dvipusio spausdinimo nuostatų iš kitų programų, todėl taikoma jos nuostata. Pakeiskite ją skiltyje „Savybės“…
 	this signature can't be removed on its own	šio parašo negalima pašalinti atskirai
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Šis parašas naudoja trumpesnį nei 2048 bitų RSA raktą, kuris parašams nebelaikomas pakankamai stipriu. Parašas vis dar patvirtinamas, tačiau juo nereikėtų pasikliauti.
@@ -3157,6 +3203,7 @@ certificate	Version	Versija
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Palaukite, kol skaitytuvas baigs darbą, arba uždarykite kitas jį naudojančias programas, tada pasirinkite Bandyti dar kartą.
 	Waiting for the system print dialog…	Laukiama sistemos spausdinimo dialogo…
 	Waiting for your approval in the browser…	Laukiama jūsų patvirtinimo naršyklėje…
+	Waiting in the printer's queue	Laukia spausdintuvo eilėje
 	watermark	vandenženklis
 calendar weekday	We	Tr
 	Weak	Silpnas

@@ -64,6 +64,7 @@
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG немесе SVG файлы. PdfCraft әр іске қосылғанда осы орыннан оқылады.
 	A script	Сценарий
 	A selected field has no widget on any page, so the fields can't be edited together.	Таңдалған өрістің ешбір бетте виджеті жоқ, сондықтан өрістерді бірге түзетуге болмайды.
+	A setting isn't valid	Параметр жарамсыз
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Бет мазмұнының бөлігі болып табылатын қолтаңба, мысалы сканерленген бетте, өріс те, аңдатпа да емес, сондықтан оны жеке алып тастау мүмкін емес, ал PdfCraft оны жасыру үшін беттің бөліктерін өшірмейді. Оны алып тастау үшін сол аймақты жасырыңыз (Жасыру) немесе қолтаңба бөлек сурет болса, суретті «PDF түзету» арқылы жойыңыз.
 	A stream refers to an external file	Ағын сыртқы файлға сілтеме жасайды
 	A stream uses LZW compression	Ағын LZW қысуын қолданады
@@ -71,6 +72,7 @@
 	About PdfCraft	PdfCraft туралы
 	About {app}	{app} туралы
 	Accepted	Қабылданды
+	Accepted by {printer}	{printer} қабылдады
 	Accessibility Checker	Қолжетімділік тексеруіші
 	Accessibility Checker Options	Қолжетімділікті тексеру параметрлері
 	Accessibility panel	Қолжетімділік панелі
@@ -277,6 +279,7 @@ calendar date	April	Сәуір
 	Ask before a document opens in Full Screen mode	Құжат толық экран режимінде ашылар алдында сұрау
 	Ask in any language	Кез келген тілде сұраңыз
 	Ask whether to recognize the current page or all pages when editing a scan.	Сканерленген құжатты өңдегенде ағымдағы бетті немесе барлық беттерді тану керектігін сұрау.
+	Asking the printer…	Принтерден сұралуда…
 	Asking {server}…	{server} сұралуда…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	GitHub-тан соңғы шығарылымды сұрайды. Ештеңе автоматты түрде жүктелмейді немесе орнатылмайды.
 	Assistant	Көмекші
@@ -369,6 +372,7 @@ calendar date	August	Тамыз
 	Callout	Көрсетпе
 	Can't be read: {e}	Оқу мүмкін емес: {e}
 	Cancel reverse sides	Артқы жақтарды болдырмау
+	Canceling…	Бас тартылуда…
 	Cancelled	Бас тартылды
 	Cancelling…	Бас тартылуда…
 	Card driver (PKCS #11)	Карта драйвері (PKCS #11)
@@ -613,6 +617,7 @@ calendar date	August	Тамыз
 	Couldn't optimize the file	Файлды оңтайландыру мүмкін болмады
 	Couldn't optimize the file: {e}	Файлды оңтайландыру мүмкін болмады: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Браузерден басып шығару мүмкін болмады ({e}); оның орнына басып шығару үшін {name} жүктелді
+	Couldn't reach the printer	Принтерге қол жеткізу мүмкін болмады
 	Couldn't read {name}: {e}	«{name}» оқылмады: {e}
 	Couldn't recover {name}: {e}	{name} файлын қалпына келтіру мүмкін болмады: {e}
 	Couldn't reload {name}: {e}	{name} қайта жүктеу мүмкін болмады: {e}
@@ -821,6 +826,7 @@ key	Delete	Delete
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	Жүктеп алынған файлдар браузерде ашылады. Орнату қолмен орындалады; ештеңе автоматты түрде орнатылмайды.
 	Downsample to	Ажыратымдылықты төмендету
 	DPI sets the printed page size without resampling the image.	DPI пиксельдер санын өзгертпей, басып шығарылатын беттің өлшемін орнатады.
+	Draft	Нобай
 	Drag a field to move it, or select it and press {up} or {down}.	Өрісті жылжыту үшін сүйреңіз немесе оны таңдап, {up} не {down} пернесін басыңыз.
 	Drag a point to reshape the line. Delete removes it.	Сызық пішінін өзгерту үшін нүктені сүйреңіз. Delete пернесі оны жояды.
 	Drag a rectangle around the area to copy	Көшіретін аймақтың айналасына тіктөртбұрыш сүйреңіз
@@ -1164,6 +1170,7 @@ calendar date	February	Ақпан
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	Тақырып деңгейлері үзілмеуі тиіс (H1-ден кейін H3 келмеуі керек). Тақырыптарды қайта тегтеңіз.
 	Hebrew (ISO 8859-8)	Иврит (ISO 8859-8)
 	Hebrew (Windows-1255)	Иврит (Windows-1255)
+	Held by the printer	Принтер ұстап тұр
 	Heritage	Heritage
 	Hidden layers	Жасырын қабаттар
 	Hide a field	Өрісті жасыру
@@ -1193,6 +1200,7 @@ key	Home	Home
 	How Edit text reads old fonts that don't say which letters they draw. Auto-detect recognises Hebrew fonts laid out for ISO 8859-8 or Windows-1255.	«Мәтінді түзету» қандай әріптер салатынын көрсетпейтін ескі қаріптерді қалай оқиды. Автоматты анықтау ISO 8859-8 немесе Windows-1255 бойынша жасалған иврит қаріптерін таниды.
 	HTML web page	HTML веб-беті
 	Hungarian OCR requires the desktop app with Tesseract 5 and the hun language model. Restart PdfCraft after installation.	Венгр тіліндегі OCR үшін Tesseract 5 және hun тілдік моделі бар жұмыс үстелі қолданбасы қажет. Орнатқаннан кейін PdfCraft қолданбасын қайта іске қосыңыз.
+	I confirm sending this document to this printer	Осы құжатты осы принтерге жіберетінімді растаймын
 	Identity	Жеке деректер
 	Image (PNG)	Кескін (PNG)
 	Image field	Кескін өрісі
@@ -1493,6 +1501,7 @@ calendar date	May	Мамыр
 	Negative number style:	Теріс сандар стилі:
 	Nested alternate text	Кірістірілген балама мәтін
 	Network	Желі
+	Network printer (WS-Print)	Желілік принтер (WS-Print)
 	New Action	Жаңа әрекет
 	New Action…	Жаңа әрекет…
 	New blank PDF	Жаңа бос PDF
@@ -1586,9 +1595,11 @@ calendar date	May	Мамыр
 	None of those files can be made into a PDF; use PDFs, images or .txt files	Осы файлдардың ешбірінен PDF жасауға болмайды; PDF, суреттер немесе .txt файлдарын қолданыңыз
 	None of your digital IDs can open this document.	Цифрлық ID-іңіздің ешқайсысы бұл құжатты аша алмайды.
 	None — everything is allowed	Жоқ — бәріне рұқсат етіледі
+	Normal	Қалыпты
 scroll speed	Normal	Қалыпты
 	Normal page	Қалыпты бет
 	Not allowed	Рұқсат етілмеген
+	Not confirmed by the printer	Принтер растамаған
 	Not in order	Ретте жоқ
 	Not now	Қазір емес
 	Not present	Жоқ
@@ -1639,6 +1650,7 @@ animation effects	On	Қосулы
 	Only checked properties will change. Mixed means the selected fields have different values.	Тек белгіленген сипаттар өзгереді. «Аралас» дегені — таңдалған өрістердің мәндері әртүрлі деген сөз.
 	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Тек анық қағаз шеттері қиылады. Ажыратылмайтын ақ жиектер сақталады.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Тек осы құжатқа сенетін болсаңыз ғана жалғастырыңыз. Адрес құжаттан ақпарат алып жүруі мүмкін, мысалы формаға енгізгендеріңіз.
+	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Тек осы желінің IP мекенжайлары қабылданады (жеке, link-local немесе loopback), хост атаулары емес.
 	Only send if you trust this document and destination. GET puts form values in the URL.	Құжат пен мақсат орнына сенсеңіз ғана жіберіңіз. GET пішін мәндерін URL-ге қояды.
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Құжат пен мақсат орнына сенсеңіз ғана жіберіңіз. Толық PDF құжат осы компьютерден шығады.
 	Only send if you trust this document and destination. The form values leave this computer.	Құжат пен мақсат орнына сенсеңіз ғана жіберіңіз. Пішін мәндері осы компьютерден шығады.
@@ -1886,9 +1898,14 @@ animation effects	On	Қосулы
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	Бір жақты басып шығарыңыз. Парақтардың ретін бұзбай, белгілер бойынша кесіңіз, содан кейін топтамаларды солдан оңға, үстінен астына үйіңіз.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage немесе LastPage
 	Printed through the system print dialog	Жүйенің басып шығару терезесі арқылы басып шығарылды
+	Printed with errors	Қателермен басылды
+	Printed with warnings	Ескертулермен басылды
+	Printer address:	Принтер мекенжайы:
 	Printer default	Принтер әдепкісі
+	Printer orientation:	Принтер бағыты:
 	Printer paper and scaling may differ. Check driver settings.	Принтер қағазы мен масштабы өзгеше болуы мүмкін. Драйвер параметрлерін тексеріңіз.
 	Printer properties	Принтер сипаттары
+	Printer status: {state}	Принтер күйі: {state}
 	Printing allowed	Басып шығаруға рұқсат етілген
 	Privacy	Жекелік
 	Private data of other applications	Басқа қосымшалардың жеке деректері
@@ -1904,6 +1921,9 @@ animation effects	On	Қосулы
 	Public domain	Қоғамдық игілік
 	Public key	Ашық кілт
 	PushButton	Түйме
+	Quality:	Сапасы:
+	Query printer	Принтерден сұрау
+	Query the printer first to see what it supports.	Алдымен принтердің нені қолдайтынын көру үшін одан сұраңыз.
 	Quirks	Ерекшеліктер
 	Quit	Шығу
 	Quit PdfCraft	PdfCraft-тан шығу
@@ -1938,6 +1958,7 @@ animation effects	On	Қосулы
 	Reads {name}, which the form doesn't have, so it gets no value there.	{name} өрісін оқиды, бірақ ол пішінде жоқ, сондықтан одан мән алмайды.
 	Reason	Себеп
 	Reason: 	Себебі: 
+	Reasons: {reasons}	Себептері: {reasons}
 	Recent colours	Соңғы түстер
 	Recent files to keep	Recent files to keep
 	Recipients	Алушылар
@@ -2089,8 +2110,10 @@ animation effects	On	Қосулы
 	Return to document	Құжатқа оралу
 	Reveal in File Explorer	Файл шолғышында көрсету
 	Reverse closed arrow	Кері жабық көрсеткі
+	Reverse landscape	Жатық, төңкерілген
 	Reverse open arrow	Кері ашық көрсеткі
 	Reverse pages	Беттерді кері ретпен
+	Reverse portrait	Тік, төңкерілген
 	reverse side(s)	артқы
 	Reverse sides	Артқы жақтар
 	Reverse sides interleaved.	Артқы жақтар араластырылып енгізілді.
@@ -2280,6 +2303,7 @@ animation effects	On	Қосулы
 	Sending to {printer}…	{printer} құрылғысына жіберілуде…
 	Sending…	Жіберілуде…
 	Sent to {printer}: {msg}	{printer} принтеріне жіберілді: {msg}
+	Sent. The printer can't say whether it printed.	Жіберілді. Принтер басылған-басылмағанын айта алмайды.
 	Separate PDFs	Бөлек PDF файлдары
 	Separate the sheets and load the remaining ones, then choose Continue.	Парақтарды ажыратып, қалғандарын салыңыз, содан кейін «Сканерлеуді жалғастыру» таңдаңыз.
 	Separate the sheets and load them again, then choose Try again.	Парақтарды ажыратып, қайта салыңыз, содан кейін «Қайта көру» таңдаңыз.
@@ -2323,6 +2347,8 @@ calendar date	September	Қыркүйек
 	Shadings	Градиенттер
 	Shared Field Properties	Ортақ өріс сипаттары
 	Sheet {s} of {n}	Парақ {s} / {n}
+	Sheets printed: {done} of {total}	Басылған парақтар: {done} / {total}
+	Sheets printed: {n}	Басылған парақтар: {n}
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift бұрышты 45 градусқа шектейді. Backspace шыңды алып тастайды. Escape — бас тарту.
 	Shift drags freely	Shift еркін жылжытады
@@ -2465,6 +2491,7 @@ action wizard	Start	Бастау
 	Start page number	Бастапқы бет нөмірі
 	Steps	Қадамдар
 	Sticky note	Жапсырма жазба
+	Still printing; the job continues on the printer	Басып шығару жалғасуда; тапсырма принтерде орындалуда
 	Stop	Тоқтату
 	Stop reading	Оқуды тоқтату
 	Straighten scanned page	Сканерленген бетті түзету
@@ -2570,6 +2597,7 @@ certificate	Subject	Субъект
 	The document changed while its margins were measured; nothing was cropped	Жиектері өлшеніп жатқанда құжат өзгерді; ештеңе қиылмады
 	The document changed while you were choosing a file, so nothing was changed.	Сіз файл таңдап жатқанда құжат өзгергендіктен, ешнәрсе өзгертілген жоқ.
 	The document changed while you were editing field properties.	Өріс сипаттарын түзетіп жүргенде құжат өзгерді.
+	The document couldn't be prepared	Құжатты дайындау мүмкін болмады
 	The document has additional actions (/AA)	Құжатта қосымша әрекеттер бар (/AA)
 	The document has document-level JavaScript	Құжатта құжат деңгейіндегі JavaScript бар
 	the document has no form fields	құжатта форма өрістері жоқ
@@ -2609,6 +2637,7 @@ certificate	Subject	Субъект
 	The image has been copied ({w} × {h} pixels)	Сурет көшірілді ({w} × {h} пиксель)
 	The image has been copied as a {ext} file	Сурет {ext} файлы ретінде көшірілді
 	the image is empty	кескін бос
+	The job was canceled	Тапсырмадан бас тартылды
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Кілт macOS Keychain ішінде; ол PdfCraft-ге оны пайдалануға рұқсат сұрауы мүмкін.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Кілт Windows сертификаттар қоймасында; ол PdfCraft-ге оны пайдалануға рұқсат сұрауы мүмкін.
 	The key is on the device, which may ask for its PIN itself.	Кілт құрылғыда; ол PIN кодын өзі сұрауы мүмкін.
@@ -2637,7 +2666,18 @@ certificate	Subject	Субъект
 	The PIN is incorrect.	PIN қате.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 токендеріндегі цифрлық ID-лерді тізімдеу мүмкін болмады: {e}
 	The preview could not be shown.	Алдын ала көріністі көрсету мүмкін болмады.
+	The print job stopped unexpectedly	Басып шығару тапсырмасы күтпеген жерден тоқтады
+	The printer accepts none of the formats this document can be sent in	Принтер осы құжатты жіберуге болатын форматтардың ешқайсысын қабылдамайды
+	The printer address was refused	Принтер мекенжайы қабылданбады
+	The printer doesn't support this setting	Принтер бұл параметрді қолдамайды
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Осы басып шығаруға арналған принтер драйверінің дербес параметрлері: қағаз науасы, қағаз түрі, соңғы өңдеу және т.б.
+	The printer is printing it	Принтер оны басып шығаруда
+	The printer may have received the document. Check the printer before sending again.	Принтер құжатты алған болуы мүмкін. Қайта жіберместен бұрын принтерді тексеріңіз.
+	The printer no longer lists the job; it most likely finished	Принтер тапсырманы енді көрсетпейді; ол көбіне аяқталған
+	The printer paused the job; it needs attention	Принтер тапсырманы кідіртті; назар аударуды қажет етеді
+	The printer refused the request	Принтер сұрауды қабылдамады
+	The printer stopped the job	Принтер тапсырманы тоқтатты
+	The printer's reply couldn't be understood	Принтер жауабы түсініксіз болды
 	The provider's page didn't come back in time. Try again.	Провайдер беті уақытында оралмады. Қайталап көріңіз.
 	The raw text was truncated to what fits.	Бастапқы мәтін қысқартылды.
 	The redaction does not fit page {page}; no pages were marked.	Өшіру {page} бетіне сыймайды; ешбір бет белгіленбеді.
@@ -2768,7 +2808,13 @@ certificate	Subject	Субъект
 	This page has an opaque background of its own, which hides the image behind it.	Бұл беттің өз мөлдір емес фоны бар, ол артындағы суретті жасырады.
 	This PDF uses the unsupported {s} action.	Бұл PDF қолдау көрсетілмейтін {s} әрекетін пайдаланады.
 	This point could not be moved. Try a smaller move.	Бұл нүктені жылжыту мүмкін болмады. Азырақ жылжытып көріңіз.
+	This printer does not take a copies setting.	Бұл принтер көшірме санын баптауды қолдамайды.
+	This printer does not take a quality setting.	Бұл принтер сапаны баптауды қолдамайды.
+	This printer does not take a resolution setting.	Бұл принтер ажыратымдылықты баптауды қолдамайды.
+	This printer does not take an orientation setting.	Бұл принтер бағдарды баптауды қолдамайды.
 	This printer offers no settings of its own.	Бұл принтердің дербес параметрлері жоқ.
+	This printer only prints in black and white.	Бұл принтер тек ақ-қара басады.
+	This printer only prints one-sided.	Бұл принтер тек бір жағына басады.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Бұл принтердің драйвері басқа бағдарламалардан екі жақты басып шығару баптауларын қабылдамайды, сондықтан өз баптауы қолданылады. Оны мына жерден өзгертіңіз: Сипаттар…
 	this signature can't be removed on its own	бұл қолтаңбаны жеке алып тастау мүмкін емес
 	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	бұл қолтаңба қызметін пайдалану мүмкін емес: ол браузерде OAuth арқылы кіруді талап етеді, ал PdfCraft оны әлі қолдамайды
@@ -2931,6 +2977,7 @@ signature pad	Type	Теру
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Сканердің жұмысы аяқталғанша күтіңіз немесе оны пайдаланатын басқа бағдарламаны жабыңыз, содан кейін «Қайта көру» таңдаңыз.
 	Waiting for the system print dialog…	Жүйенің басып шығару терезесі күтілуде…
 	Waiting for your approval in the browser…	Браузердегі мақұлдауыңыз күтілуде…
+	Waiting in the printer's queue	Принтер кезегінде күтуде
 	watermark	су белгісі
 	Weak	Әлсіз
 	Welcome to PdfCraft	PdfCraft-ге қош келдіңіз
