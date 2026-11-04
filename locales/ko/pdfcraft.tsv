@@ -25,8 +25,8 @@
 	({n} at {dpi} dpi, the largest size they can be drawn at)	({dpi}dpi에서 그릴 수 있는 최대 크기: {n})
 	({s} not exported: {first})	({s} not exported: {first})
 	+ Page {p}	+ {p} 페이지
-	+Bin	+Bin
-	+LOC	+LOC
+	+Bin	+바이너리
+	+LOC	+코드 줄
 	, Expires:	, 만료:
 	, Expires: 	, 만료일: 
 	1 difference found	차이점 1개가 발견되었습니다
@@ -711,7 +711,7 @@ certificate	Basic constraints	기본 제약 조건
 	Create links	링크 만들기
 	Create links from URLs	URL로 링크 만들기
 	Create Link…	링크 만들기…
-	Create PDF	Create PDF
+	Create PDF	PDF 만들기
 	Create PDF Comment Summary	PDF 주석 요약 만들기
 	Create PDF comment summary…	PDF 주석 요약 만들기…
 	Create PDF from clipboard	클립보드에서 PDF 만들기
@@ -854,7 +854,7 @@ key	Delete	Delete
 	Distribute evenly	균등하게 분배
 	Distribute fields	필드 분배
 	Distribute objects	개체 분배
-	DN: 	DN: 
+	DN: 	식별 이름(DN): 
 	Document actions	문서 작업
 	Document and markups	문서 및 변경 표시
 	Document and stamps	문서 및 스탬프
@@ -1289,7 +1289,7 @@ calendar weekday	Fr	금
 	Historical print (Fraktur)	역사적 인쇄체(프락투어)
 	Historical spelling is preserved. Handwriting, abbreviations and complex layouts need checking.	역사적 철자가 그대로 유지됩니다. 손글씨, 약어, 복잡한 레이아웃은 확인이 필요합니다.
 key	Home	Home
-	Home / End	Home / End
+	Home / End	Home / End 키
 	Horizontal reversed	가로 역순
 	Horizontal scale	가로 배율
 	HTML web page	HTML 웹 페이지
@@ -1314,7 +1314,7 @@ key	Home	Home
 	In tab order	탭 순서대로
 	In this file	이 파일에서
 	Include revocation information when signing (LTV)	서명할 때 해지 정보 포함(LTV)
-	Include subfolders	Include subfolders
+	Include subfolders	하위 폴더 포함
 	Includes unsaved changes	저장되지 않은 변경 내용 포함
 	Incorrect password. Try again.	암호가 올바르지 않습니다. 다시 시도하세요.
 	Indent	들여쓰기
@@ -1387,7 +1387,7 @@ certificate	Issuer	발급자
 	Its security settings don't allow copying pages	보안 설정에서 페이지 복사를 허용하지 않습니다
 	January	1월
 calendar date	January	1월
-	JavaScript	JavaScript
+	JavaScript	JavaScript 스크립트
 	JavaScript Console	JavaScript 콘솔
 	JavaScript console…	JavaScript 콘솔…
 	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript가 꺼져 있습니다(기본 설정 ▸ JavaScript).
@@ -1558,7 +1558,7 @@ calendar date	May	5월
 	Merged {n} files into {path}	파일 {n}개를 {path}에 병합했습니다
 	Merging data files needs the desktop app	데이터 파일 병합에는 데스크톱 앱이 필요합니다
 	metadata	메타데이터
-	Microsoft Word (.docx)	Microsoft Word (.docx)
+	Microsoft Word (.docx)	Microsoft Word(.docx)
 	Midpoint	중점
 	Midpoints	중점
 	minimum	최솟값
@@ -1954,7 +1954,7 @@ animation effects	On	켜기
 	Pattern strokes	패턴 선
 	Patterns	패턴
 	Patterns (graphics objects)	패턴(그래픽 개체)
-	PDF Optimizer	PDF Optimizer
+	PDF Optimizer	PDF 최적화r
 	PDF or image	PDF 또는 이미지
 	PDF page: {size}	PDF 페이지: {size}
 	PDF producer	PDF 생성기
@@ -1962,7 +1962,7 @@ animation effects	On	켜기
 	PDF version	PDF 버전
 	PDF, images and text	PDF, 이미지 및 텍스트
 	PDF, images, text and Office documents	PDF, 이미지, 텍스트 및 Office 문서
-	PDF/A…	PDF/A…
+	PDF/A…	PDF/A 형식…
 	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft에서 아직 이 서명을 확인할 수 없습니다: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft가 정상적으로 종료되지 않았습니다. 다음 문서의 변경 내용이 자동 저장되었습니다:
@@ -2019,7 +2019,7 @@ animation effects	On	켜기
 	Portrait Pages	세로 페이지
 	Portrait pages	세로 페이지
 	Post	게시
-	PostScript / EPS	PostScript / EPS
+	PostScript / EPS	PostScript / EPS 형식
 	PostScript XObjects aren't allowed	PostScript XObject는 허용되지 않습니다
 	Preferences	환경설정
 	Preferences…	환경설정…
@@ -3122,7 +3122,7 @@ calendar weekday	Th	목
 	Trim marks	재단 표시
 	Trim the picture with its handles; Enter or Done applies	핸들로 그림을 다듬으세요. Enter 또는 완료를 누르면 적용됩니다
 	Trust	신뢰
-	Try again	Try again
+	Try again	다시 시도
 	Try the form as people filling it in will see it	양식을 작성하는 사용자에게 보이는 그대로 양식을 사용해 보세요
 calendar weekday	Tu	화
 	Turn JPEG XL images back into the JPEGs they were made from	JPEG XL 이미지를 원래의 JPEG로 되돌리기
@@ -3309,7 +3309,7 @@ calendar weekday	We	수
 	Your name	이름
 	yyyy or yy year · m or mm month · mmm or mmmm month name · d or dd day · ddd or dddd weekday. H, h, M, s and t are time letters and can't be used on their own: put {escape} before a letter to show it as is.	yyyy 또는 yy는 연도 · m 또는 mm은 월 · mmm 또는 mmmm은 월 이름 · d 또는 dd는 일 · ddd 또는 dddd는 요일입니다. H, h, M, s, t는 시간 문자이므로 단독으로 사용할 수 없습니다. 문자를 그대로 표시하려면 앞에 {escape}를 붙이세요.
 	Zero-width lines always count as narrower.	너비가 0인 선은 항상 더 좁은 것으로 간주됩니다.
-	ZIP	ZIP
+	ZIP	ZIP 형식
 	Zip Code	우편번호
 	Zip Code + 4	우편번호 + 4
 	Zoom (Z)	확대/축소 (Z)
@@ -3321,7 +3321,7 @@ calendar weekday	We	수
 	Zoom out (⌘−)	축소 (⌘−)
 	Zoom to page level	페이지 크기에 맞춤
 	Zoom — type a percentage and press Enter	줌 — 백분율을 입력하고 Enter를 누르세요
-	{0}: {1}	{0}: {1}
+	{0}: {1}	오류 {0}: {1}
 	{batch} — 1 field renamed	{batch} — 필드 1개 이름 변경됨
 	{batch} — fields renamed	{batch} — 필드 이름 변경됨
 	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	{chars}은(는) 아직 PDF에 쓸 수 없습니다. 채우기 및 서명 텍스트는 서유럽 문자만 지원합니다. dd.mm.yyyy 같은 숫자 형식을 선택하세요.
@@ -3348,7 +3348,7 @@ calendar weekday	We	수
 	{label} ({n} issues)	{label} (문제 {n}개)
 	{label} failed: {e}	{label} 실패: {e}
 	{month} {day}, {y}	{y}년 {month} {day}일
-	{month} {y}	{month} {y}
+	{month} {y}	{y}년 {month}
 	{msg} to {dir}	{msg} → {dir}
 	{names} and {last}	{names} and {last}
 	{names} certifies this document without allowing comments, and will report this change.	{names}이(가) 주석을 허용하지 않고 이 문서를 인증하므로 이 변경을 보고합니다.
@@ -3397,7 +3397,7 @@ calendar weekday	We	수
 	{n} selected	{n}개 선택됨
 	{n} tags	태그 {n}개
 	{n} word(s) or phrase(s)	단어 또는 구문 {n}개
-	{n} {kind}	{n} {kind}
+	{n} {kind}	{kind} {n}개
 	{page} is not a page number or label	{page}은(는) 페이지 번호나 레이블이 아닙니다
 	{program} can't take a file from PdfCraft.	{program}은(는) PdfCraft에서 파일을 받을 수 없습니다.
 	{rule} - {status}	{rule} - {status}
@@ -3422,7 +3422,7 @@ calendar weekday	We	수
 	{} annotations aren't allowed	{} 주석은 허용되지 않습니다
 	· not fixable here	· 여기서 수정할 수 없음
 	· password-protected	· 암호로 보호됨
-	ΔLOC	ΔLOC
+	ΔLOC	Δ코드 줄
 	— (protection is applied when you save)	— (저장할 때 보호가 적용됨)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	“{name}” 파일이 열리거나 마지막으로 저장된 후 디스크에서 변경되었습니다. 지금 저장하면 디스크의 최신 버전이 이 버전으로 대체됩니다.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	“{name}”에 보안 제한이 있습니다. 제한을 해제하려면 권한 암호를 입력하세요.
@@ -3430,4 +3430,4 @@ calendar weekday	We	수
 	“{name}” is protected. Enter a password to open it.	“{name}”은(는) 보호되어 있습니다. 열려면 암호를 입력하세요.
 	… and {n} more	… 외 {n}개
 	− Page {p}	− {p} 페이지
-	−LOC	−LOC
+	−LOC	−코드 줄
