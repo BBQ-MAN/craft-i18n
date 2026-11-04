@@ -409,6 +409,7 @@
 	Callout	Szövegbuborék
 	Can't be read: {e}	Nem olvasható: {e}
 	Can't save as {level}; nothing was changed:	Nem menthető {level} formátumban; semmi sem változott:
+	Cancel drawing	Rajzolás megszakítása
 	Cancel reverse sides	Hátoldalak megszakítása
 	Canceling…	Megszakítás…
 	Cancelled	Megszakítva
@@ -456,6 +457,7 @@
 	Change {key}	{key} módosítása
 	Change {what}	{what} módosítása
 	Changes allowed	Módosítás engedélyezve
+	Changes here apply to all {n} selected comments	Az itt végzett módosítások mind a(z) {n} kijelölt megjegyzésre vonatkoznak
 	Changing the document	A dokumentum módosítása
 	Character encoding	Karakterkódolás
 	Character limit 0 means no limit. A comb of characters needs a limit.	A 0 karakterkorlát korlátlan hosszt jelent. A karaktercellákhoz korlát szükséges.
@@ -539,6 +541,7 @@
 	Click the first point to begin.	Kattints az első pontra a kezdéshez.
 	Click to sort, drag to move the column. Drag its edge to resize it.	Kattints a rendezéshez, húzd az oszlop áthelyezéséhez. A szélét húzva méretezd.
 	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	Kattints a csúcspontokra. Az Enter vagy a dupla kattintás lezárja a kerületet vagy a területet. Az első pontra kattintva zárod a területet.
+	Click where the copied comments go; Escape lets them go	Kattintson oda, ahová a másolt megjegyzések kerüljenek; az Escape elengedi őket
 	Clockwise 90 degrees	90 fok az óramutató járásával megegyezően
 	Close all	Összes bezárása
 	Close file	Fájl bezárása
@@ -599,6 +602,7 @@
 	Comments panel	Megjegyzések panel
 	Comments to send	Elküldendő megjegyzések
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	A megjegyzéseknek, hivatkozásoknak és mezőknek a címkefában kell lenniük, hogy bemondják őket. Címkézd a széljegyzeteket.
+	Comments: {n}	Megjegyzések: {n}
 	Commit selected value immediately	A kijelölt érték azonnali átvétele
 	Common Properties	Általános tulajdonságok
 	Common scales	Gyakori méretarányok
@@ -609,6 +613,7 @@
 	Compare files…	Fájlok összehasonlítása…
 	Compare panel	Összehasonlítás panel
 	Compare this file with an older version: Compare files… in All tools.	Hasonlítsd össze ezt a fájlt egy régebbi változattal: Fájlok összehasonlítása… a Minden eszközben.
+	Complete	Befejezés
 	Completed	Befejezve
 	Compress a PDF	PDF tömörítése
 	Compress and export	Tömörítés és exportálás
@@ -648,6 +653,9 @@
 	Copies, two-sided printing, colour and the printer are chosen in the system print dialog, which opens when you print.	A példányszámot, a kétoldalas nyomtatást, a színt és a nyomtatót a rendszer nyomtatási párbeszédablakában lehet megadni, amely nyomtatáskor nyílik meg.
 	Copies:	Példányok:
 	Copy a text box or an image first	Előbb másolj egy szövegdobozt vagy egy képet
+	Copy comment	Megjegyzés másolása
+	Copy comments	Megjegyzések másolása
+	Copy comments first	Először másoljon megjegyzéseket
 	Copy Image	Kép másolása
 	Copy Image in Original Format	Kép másolása eredeti formátumban
 	Copy or cut pages first	Előbb másolj vagy vágj ki oldalakat
@@ -805,6 +813,7 @@ key	Delete	Delete
 	Delete bookmark	Könyvjelző törlése
 	Delete bookmarks	Könyvjelzők törlése
 	Delete comment	Megjegyzés törlése
+	Delete comments	Megjegyzések törlése
 	Delete content	Tartalom törlése
 	Delete document JavaScript	Dokumentum-JavaScript törlése
 	Delete field	Mező törlése
@@ -1618,6 +1627,7 @@ key	Home	Home
 	Mouse wheel scroll speed	Egérgörgő görgetési sebessége
 	Move bookmark	Könyvjelző áthelyezése
 	Move comment	Megjegyzés áthelyezése
+	Move comments	Megjegyzések áthelyezése
 	Move down	Lejjebb
 	Move earlier	Előbbre helyezés
 	Move image	Kép áthelyezése
@@ -1990,6 +2000,7 @@ animation effects	On	Be
 	Password-protected	Jelszóval védett
 	Paste after	Beillesztés utána
 	Paste an OpenRouter key	OpenRouter-kulcs beillesztése
+	Paste comments	Megjegyzések beillesztése
 	Paste field	Mező beillesztése
 	Paste fields	Mezők beillesztése
 	Paste Image	Kép beillesztése
@@ -2915,7 +2926,9 @@ action wizard	Start	Indítás
 	The checker found no problems in this document.	Az ellenőrzés nem talált problémát ebben a dokumentumban.
 	The checker found {n} problems which may prevent the document from being fully accessible.	Az ellenőrzés {n} problémát talált, amelyek megakadályozhatják, hogy a dokumentum teljesen akadálymentes legyen.
 	The clipboard has no image or text	A vágólapon nincs kép vagy szöveg
+	The clipboard holds no comments	A vágólap nem tartalmaz megjegyzéseket
 	The comment being edited no longer exists, so its text was not saved.	A szerkesztett megjegyzés már nem létezik, ezért a szövege nem lett mentve.
+	The copied comments are larger than this page; they were placed as they are	A másolt megjegyzések nagyobbak ennél az oldalnál; változatlanul kerültek elhelyezésre
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Az asztali portál fájlválasztója nem fut ({packages}). Ellenőrizze ezzel: systemctl --user status {first}, vagy jelentkezzen ki, majd be.
 	The device's digital ID isn't available any more; start signing again to list it.	Az eszköz digitális azonosítója már nem érhető el; kezdd újra az aláírást a listázásához.
 	The Dock shows it the next time PdfCraft opens.	A Dock a PdfCraft következő megnyitásakor mutatja.
@@ -3253,6 +3266,7 @@ signature pad	Type	Gépelés
 	Underline text	Szöveg aláhúzása
 	Undid {label}	{label} visszavonva
 	Undo ({key})	Visszavonás ({key})
+	Undo last point	Utolsó pont visszavonása
 	Undo the last review change (Ctrl+Z)	Az utolsó ellenőrzési módosítás visszavonása (Ctrl+Z)
 	Undo {action}	{action} visszavonása
 	Ungroup artwork	Ábra csoportbontása

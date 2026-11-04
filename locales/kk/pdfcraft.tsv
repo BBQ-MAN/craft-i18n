@@ -409,6 +409,7 @@ calendar date	August	Тамыз
 	Callout	Көрсетпе
 	Can't be read: {e}	Оқу мүмкін емес: {e}
 	Can't save as {level}; nothing was changed:	{level} ретінде сақтау мүмкін емес; ештеңе өзгертілмеді:
+	Cancel drawing	Сызуды тоқтату
 	Cancel reverse sides	Артқы жақтарды болдырмау
 	Canceling…	Бас тартылуда…
 	Cancelled	Бас тартылды
@@ -456,6 +457,7 @@ calendar date	August	Тамыз
 	Change {key}	Өзгерту: {key}
 	Change {what}	Өзгерту: {what}
 	Changes allowed	Өзгертулерге рұқсат етілген
+	Changes here apply to all {n} selected comments	Мұндағы өзгерістер таңдалған барлық {n} пікірге қолданылады
 	Changing the document	Құжатты өзгерту
 	Character encoding	Таңбаларды кодтау
 	Character limit 0 means no limit. A comb of characters needs a limit.	Таңба шегі 0 деген — шексіз. Таңбалар торы шекті қажет етеді.
@@ -539,6 +541,7 @@ calendar date	August	Тамыз
 	Click the first point to begin.	Бастау үшін бірінші нүктені шертіңіз.
 	Click to sort, drag to move the column. Drag its edge to resize it.	Сұрыптау үшін шертіңіз, бағанды жылжыту үшін сүйреңіз. Өлшемін өзгерту үшін бағанның шетін сүйреңіз.
 	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	Шыңдарды шертіңіз. Enter немесе қос шерту периметр мен ауданды аяқтайды. Ауданды жабу үшін бірінші нүктені шертіңіз.
+	Click where the copied comments go; Escape lets them go	Көшірілген пікірлер орналасатын жерді басыңыз; Escape оларды босатады
 	Clockwise 90 degrees	Сағат тілінің бағытымен 90 градус
 	Close all	Барлығын жабу
 	Close file	Файлды жабу
@@ -596,6 +599,7 @@ calendar date	August	Тамыз
 	Comments panel	Түсініктемелер панелі
 	Comments to send	Жіберуге арналған түсініктемелер
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Түсініктемелер, сілтемелер мен өрістер дауыстап хабарлануы үшін тег ағашында болуы тиіс. Белгілеулерді тегтеңіз.
+	Comments: {n}	Пікірлер: {n}
 	Commit selected value immediately	Таңдалған мәнді бірден қолдану
 	Common Properties	Жалпы сипаттар
 	Common scales	Жиі қолданылатын масштабтар
@@ -606,6 +610,7 @@ calendar date	August	Тамыз
 	Compare files…	Файлдарды салыстыру…
 	Compare panel	Салыстыру панелі
 	Compare this file with an older version: Compare files… in All tools.	Бұл файлды ескірек нұсқасымен салыстырыңыз: «Барлық құралдар» ішіндегі «Файлдарды салыстыру…».
+	Complete	Аяқтау
 	Completed	Аяқталды
 	Compress a PDF	PDF сығу
 	Compress and export	Сығу және экспорттау
@@ -643,6 +648,9 @@ calendar date	August	Тамыз
 	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Көшірмелер саны, екі жақты басып шығару және түс браузердің басып шығару терезесінде таңдалады.
 	Copies, two-sided printing, colour and the printer are chosen in the system print dialog, which opens when you print.	Көшірмелер саны, екі жақты басып шығару, түс және принтер басып шығарғанда ашылатын жүйенің басып шығару терезесінде таңдалады.
 	Copy a text box or an image first	Алдымен мәтін жәшігін немесе кескінді көшіріңіз
+	Copy comment	Пікірді көшіру
+	Copy comments	Пікірлерді көшіру
+	Copy comments first	Алдымен пікірлерді көшіріңіз
 	Copy Image	Суретті көшіру
 	Copy Image in Original Format	Суретті бастапқы пішімде көшіру
 	Copy or cut pages first	Алдымен беттерді көшіріңіз немесе кесіңіз
@@ -797,6 +805,7 @@ key	Delete	Delete
 	Delete bookmark	Бетбелгіні жою
 	Delete bookmarks	Бетбелгілерді жою
 	Delete comment	Түсініктемені жою
+	Delete comments	Пікірлерді жою
 	Delete content	Мазмұнды жою
 	Delete document JavaScript	Құжаттың JavaScript-ін жою
 	Delete field	Өрісті жою
@@ -1607,6 +1616,7 @@ calendar date	May	Мамыр
 	Mouse wheel scroll speed	Тінтуір дөңгелегімен айналдыру жылдамдығы
 	Move bookmark	Бетбелгіні жылжыту
 	Move comment	Түсініктемені жылжыту
+	Move comments	Пікірлерді жылжыту
 	Move down	Төмен жылжыту
 	Move earlier	Алдыңға жылжыту
 	Move image	Кескінді жылжыту
@@ -1981,6 +1991,7 @@ animation effects	On	Қосулы
 	Paste	Қою
 	Paste after	Артына қою
 	Paste an OpenRouter key	OpenRouter кілтін қойыңыз
+	Paste comments	Пікірлерді қою
 	Paste field	Өрісті қою
 	Paste fields	Өрістерді қою
 	Paste Image	Суретті қою
@@ -2894,7 +2905,9 @@ certificate	Subject	Субъект
 	The checker found no problems in this document.	Тексеру барысында бұл құжатта ешбір мәселе табылмады.
 	The checker found {n} problems which may prevent the document from being fully accessible.	Тексеру барысында құжаттың толық қолжетімді болуына кедергі келтіруі мүмкін {n} мәселе табылды.
 	The clipboard has no image or text	Алмасу буферінде сурет те, мәтін де жоқ
+	The clipboard holds no comments	Алмасу буферінде пікірлер жоқ
 	The comment being edited no longer exists, so its text was not saved.	Түзетіліп жатқан түсініктеме енді жоқ, сондықтан оның мәтіні сақталмады.
+	The copied comments are larger than this page; they were placed as they are	Көшірілген пікірлер бұл беттен үлкен; олар сол күйінде орналастырылды
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Жұмыс үстелі порталының файл таңдағышы іске қосылмаған ({packages}). Оны systemctl --user status {first} арқылы тексеріңіз немесе жүйеден шығып, қайта кіріңіз.
 	The device's digital ID isn't available any more; start signing again to list it.	Құрылғының цифрлық ID-і енді қолжетімсіз; оны тізімде көру үшін қол қоюды қайта бастаңыз.
 	The Dock shows it the next time PdfCraft opens.	Dock оны PdfCraft келесі ашылғанда көрсетеді.
@@ -3230,6 +3243,7 @@ signature pad	Type	Теру
 	Underline text	Мәтінді астын сызу
 	Undid {label}	Болдырылды: {label}
 	Undo ({key})	Болдырмау ({key})
+	Undo last point	Соңғы нүктені қайтару
 	Undo the last review change (Ctrl+Z)	Соңғы тексеру өзгерісін болдырмау (Ctrl+Z)
 	Ungroup	Топтан шығару
 	Ungroup artwork	Графиканы топтан шығару

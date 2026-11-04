@@ -423,6 +423,7 @@ certificate	Basic constraints	Podstawowe ograniczenia
 	Callout	Objaśnienie
 	Can't be read: {e}	Nie można odczytać: {e}
 	Can't save as {level}; nothing was changed:	Nie można zapisać jako {level}; nic nie zostało zmienione:
+	Cancel drawing	Anuluj rysowanie
 	Cancel reverse sides	Cancel reverse sides
 	Canceling…	Anulowanie…
 	Cancelled	Anulowane
@@ -474,6 +475,7 @@ certificate	Basic constraints	Podstawowe ograniczenia
 	Change {key}	Zmień {key}
 	Change {what}	Zmień {what}
 	Changes allowed	Dozwolone zmiany
+	Changes here apply to all {n} selected comments	Zmiany wprowadzone tutaj dotyczą wszystkich zaznaczonych komentarzy ({n})
 	Changing the document	Zmienianie dokumentu
 	Character encoding	Kodowanie znaków
 	Character limit 0 means no limit. A comb of characters needs a limit.	Limit znaków 0 oznacza brak limitu. Podział na kratki wymaga limitu znaków.
@@ -558,6 +560,7 @@ certificate	Basic constraints	Podstawowe ograniczenia
 	Click the first point to begin.	Kliknij pierwszy punkt, aby rozpocząć.
 	Click to sort, drag to move the column. Drag its edge to resize it.	Kliknij, aby sortować; przeciągnij, aby przenieść kolumnę. Przeciągnij jej krawędź, aby zmienić szerokość.
 	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	Klikaj wierzchołki. Enter lub dwukrotne kliknięcie kończy pomiar obwodu lub pola. Kliknij pierwszy punkt, aby zamknąć obszar.
+	Click where the copied comments go; Escape lets them go	Kliknij tam, gdzie mają trafić skopiowane komentarze; Escape je puszcza
 	Clockwise 90 degrees	90 stopni w prawo
 	Close all	Zamknij wszystkie
 	Close file	Zamknij plik
@@ -616,6 +619,7 @@ certificate	Basic constraints	Podstawowe ograniczenia
 	Comments panel	Panel komentarzy
 	Comments to send	Komentarze do wysłania
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Komentarze, łącza i pola muszą znajdować się w drzewie tagów, aby mogły zostać odczytane. Oznacz adnotacje tagami.
+	Comments: {n}	Komentarze: {n}
 	Commit selected value immediately	Zatwierdzaj wybraną wartość natychmiast
 	Common Properties	Wspólne właściwości
 	Common scales	Popularne skale
@@ -626,6 +630,7 @@ certificate	Basic constraints	Podstawowe ograniczenia
 	Compare files…	Porównaj pliki…
 	Compare panel	Panel porównywania
 	Compare this file with an older version: Compare files… in All tools.	Porównaj ten plik ze starszą wersją: Porównaj pliki… we Wszystkich narzędziach.
+	Complete	Zakończ
 	Completed	Ukończone
 	Compress a PDF	Kompresuj PDF
 	Compress and export	Kompresja i eksport
@@ -664,6 +669,9 @@ certificate	Basic constraints	Podstawowe ograniczenia
 	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Liczbę kopii, druk dwustronny i kolor wybiera się w oknie drukowania przeglądarki.
 	Copies, two-sided printing, colour and the printer are chosen in the system print dialog, which opens when you print.	Liczbę kopii, druk dwustronny, kolor i drukarkę wybiera się w systemowym oknie drukowania, które otwiera się podczas drukowania.
 	Copy a text box or an image first	Najpierw skopiuj pole tekstowe lub obraz
+	Copy comment	Kopiuj komentarz
+	Copy comments	Kopiuj komentarze
+	Copy comments first	Najpierw skopiuj komentarze
 	Copy Image	Kopiuj obraz
 	Copy Image in Original Format	Kopiuj obraz w oryginalnym formacie
 	Copy or cut pages first	Najpierw skopiuj lub wytnij strony
@@ -828,6 +836,7 @@ key	Delete	Delete
 	Delete attachment {key}	Usuń załącznik {key}
 	Delete bookmark	Usuń zakładkę
 	Delete comment	Usuń komentarz
+	Delete comments	Usuń komentarze
 	Delete content	Usuń zawartość
 	Delete document JavaScript	Usuń JavaScript dokumentu
 	Delete field	Usuń pole
@@ -1679,6 +1688,7 @@ calendar weekday	Mo	Pn
 	Move	Przenieś
 	Move bookmark	Przenieś zakładkę
 	Move comment	Przenieś komentarz
+	Move comments	Przenieś komentarze
 	Move down	Przenieś w dół
 	Move earlier	Przenieś wcześniej
 	Move image	Przenieś obraz
@@ -2080,6 +2090,7 @@ animation effects	On	Włączone
 	Password-protected	Chroniony hasłem
 	Paste after	Wklej po
 	Paste an OpenRouter key	Wklej klucz OpenRouter
+	Paste comments	Wklej komentarze
 	Paste field	Wklej pole
 	Paste fields	Wklej pola
 	Paste Image	Wklej obraz
@@ -3029,7 +3040,9 @@ calendar weekday	Th	Cz
 	The checker found problems which may prevent the document from being fully accessible.	Sprawdzanie wykryło problemy, które mogą uniemożliwić pełną dostępność dokumentu.
 	The checker found {n} problems which may prevent the document from being fully accessible.	Znaleziono problemy w liczbie {n}, które mogą uniemożliwiać pełną dostępność dokumentu.
 	The clipboard has no image or text	Schowek nie zawiera obrazu ani tekstu
+	The clipboard holds no comments	Schowek nie zawiera komentarzy
 	The comment being edited no longer exists, so its text was not saved.	Edytowany komentarz już nie istnieje, więc jego tekst nie został zapisany.
+	The copied comments are larger than this page; they were placed as they are	Skopiowane komentarze są większe niż ta strona; umieszczono je bez zmian
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Okno wyboru plików portalu pulpitu nie działa ({packages}). Sprawdź je poleceniem systemctl --user status {first} albo wyloguj się i zaloguj ponownie.
 	The device's digital ID isn't available any more; start signing again to list it.	Identyfikator cyfrowy urządzenia nie jest już dostępny; zacznij podpisywanie od nowa, żeby go wyświetlić.
 	The Dock shows it the next time PdfCraft opens.	Dock pokaże ją przy następnym otwarciu PdfCraft.
@@ -3433,6 +3446,7 @@ signature pad	Type	Wpisz
 	Underline text	Podkreśl tekst
 	Undid {label}	Cofnięto: {label}
 	Undo ({key})	Cofnij ({key})
+	Undo last point	Cofnij ostatni punkt
 	Undo the last review change (Ctrl+Z)	Cofnij ostatnią zmianę przeglądu (Ctrl+Z)
 	Ungroup artwork	Rozgrupuj grafikę
 	Unit	Jednostka

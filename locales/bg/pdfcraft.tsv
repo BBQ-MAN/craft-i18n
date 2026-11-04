@@ -408,6 +408,7 @@
 	Callout	Изнесена бележка
 	Can't be read: {e}	Не може да бъде прочетен: {e}
 	Can't save as {level}; nothing was changed:	Не може да се запише като {level}; нищо не е променено:
+	Cancel drawing	Отказ от рисуването
 	Cancel reverse sides	Отмени оборотните страни
 	Canceling…	Отказване…
 	Cancelled	Отменено
@@ -453,6 +454,7 @@
 	Change {key}	Промени {key}
 	Change {what}	Промени {what}
 	Changes allowed	Разрешени промени
+	Changes here apply to all {n} selected comments	Промените тук се прилагат към всички {n} избрани коментара
 	Changing the document	Промяна на документа
 	Character encoding	Кодиране на знаците
 	Character limit 0 means no limit. A comb of characters needs a limit.	Ограничение 0 означава без ограничение. Клетките за знаци изискват ограничение.
@@ -538,6 +540,7 @@
 	Click the first point to begin.	Щракнете върху първата точка, за да започнете.
 	Click to sort, drag to move the column. Drag its edge to resize it.	Щракнете за сортиране, плъзнете, за да преместите колоната. Плъзнете ръба на колоната, за да промените размера.
 	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	Щракнете върху върховете. Enter или двукратно щракване завършва периметър или площ. Щракнете върху първата точка, за да затворите площ.
+	Click where the copied comments go; Escape lets them go	Щракнете там, където да отидат копираните коментари; Escape ги пуска
 	Clockwise 90 degrees	По часовниковата стрелка на 90 градуса
 	Close	Затвори
 	Close all	Затвори всички
@@ -600,6 +603,7 @@
 	Comments panel	Панел с коментари
 	Comments to send	Коментари за изпращане
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Коментарите, връзките и полетата трябва да са в дървото на етикетите, за да бъдат обявявани. Етикетирайте анотациите.
+	Comments: {n}	Коментари: {n}
 	Commit selected value immediately	Приеми избраната стойност веднага
 	Commits	Къмитове
 	Common Properties	Общи свойства
@@ -612,6 +616,7 @@
 	Compare files…	Сравни файлове…
 	Compare panel	Панел за сравнение
 	Compare this file with an older version: Compare files… in All tools.	Сравнете този файл с по-стара версия: „Сравни файлове…“ във „Всички инструменти“.
+	Complete	Завършване
 	Completed	Завършено
 	Compress a PDF	Компресирай PDF
 	Compress and export	Компресиране и експортиране
@@ -650,6 +655,9 @@
 	Copies, two-sided printing, colour and the printer are chosen in the system print dialog, which opens when you print.	Броят копия, двустранният печат, цветът и принтерът се избират в системния диалог за печат, който се отваря при печат.
 	Copy	Копирай
 	Copy a text box or an image first	Първо копирайте текстово поле или изображение
+	Copy comment	Копиране на коментара
+	Copy comments	Копиране на коментарите
+	Copy comments first	Първо копирайте коментари
 	Copy Image	Копирай изображението
 	Copy Image in Original Format	Копирай изображението в оригиналния формат
 	Copy or cut pages first	Първо копирайте или изрежете страници
@@ -814,6 +822,7 @@ key	Delete	Delete
 	Delete bookmark	Изтрий отметката
 	Delete bookmarks	Изтрий отметките
 	Delete comment	Изтрий коментара
+	Delete comments	Изтриване на коментарите
 	Delete content	Изтрий съдържанието
 	Delete document JavaScript	Изтрий JavaScript на документа
 	Delete field	Изтрий полето
@@ -1631,6 +1640,7 @@ key	Home	Home
 	Mouse wheel scroll speed	Скорост на превъртане с колелцето на мишката
 	Move bookmark	Премести отметката
 	Move comment	Премести коментара
+	Move comments	Преместване на коментарите
 	Move down	Премести надолу
 	Move earlier	Премести по-напред
 	Move image	Премести изображението
@@ -2007,6 +2017,7 @@ animation effects	On	Включени
 	Paste	Постави
 	Paste after	Постави след
 	Paste an OpenRouter key	Поставете OpenRouter ключ
+	Paste comments	Поставяне на коментарите
 	Paste field	Постави полето
 	Paste fields	Постави полетата
 	Paste Image	Постави изображението
@@ -2942,7 +2953,9 @@ action wizard	Start	Старт
 	The checker found no problems in this document.	Проверката не откри проблеми в този документ.
 	The checker found {n} problems which may prevent the document from being fully accessible.	Проверката откри {n} проблема, които могат да попречат документът да бъде напълно достъпен.
 	The clipboard has no image or text	В клипборда няма изображение или текст
+	The clipboard holds no comments	Клипбордът не съдържа коментари
 	The comment being edited no longer exists, so its text was not saved.	Коментарът, който се редактираше, вече не съществува, затова текстът му не е записан.
+	The copied comments are larger than this page; they were placed as they are	Копираните коментари са по-големи от тази страница; поставени са както са
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Изборът на файлове на десктоп портала не работи ({packages}). Проверете го със systemctl --user status {first} или излезте и влезте отново.
 	The device's digital ID isn't available any more; start signing again to list it.	Цифровият идентификатор на устройството вече не е достъпен; започнете подписването отново, за да го покажете.
 	The Dock shows it the next time PdfCraft opens.	Dock ще я покаже при следващото отваряне на PdfCraft.
@@ -3275,6 +3288,7 @@ signature pad	Type	Въвеждане
 	Undid {label}	Отменено: {label}
 	Undo	Отмени
 	Undo ({key})	Отмени ({key})
+	Undo last point	Отмяна на последната точка
 	Undo the last review change (Ctrl+Z)	Отмени последната промяна в прегледа (Ctrl+Z)
 	Undo {action}	Отмени {action}
 	Ungroup artwork	Разгрупиране на графиката

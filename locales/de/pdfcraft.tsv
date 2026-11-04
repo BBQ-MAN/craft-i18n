@@ -436,6 +436,7 @@
 	Callout	Text mit Hinweislinie
 	Can't be read: {e}	Kann nicht gelesen werden: {e}
 	Can't save as {level}; nothing was changed:	Speichern als {level} nicht möglich; nichts wurde geändert:
+	Cancel drawing	Zeichnen abbrechen
 	Cancel reverse sides	Rückseiten abbrechen
 	Canceling…	Wird abgebrochen…
 	Cancelled	Abgebrochen
@@ -489,6 +490,7 @@
 	Change {key}	{key} ändern
 	Change {what}	{what} ändern
 	Changes allowed	Änderungen erlaubt
+	Changes here apply to all {n} selected comments	Änderungen hier gelten für alle {n} ausgewählten Kommentare
 	Changing the document	Ändern des Dokuments
 	Character encoding	Zeichenkodierung
 	Character limit 0 means no limit. A comb of characters needs a limit.	Zeichenlimit 0 bedeutet unbegrenzt. Ein Kammfeld benötigt ein Limit.
@@ -579,6 +581,7 @@
 	Click the first point to begin.	Klicke, um den ersten Punkt zu setzen.
 	Click to sort, drag to move the column. Drag its edge to resize it.	Klicke zum Sortieren, ziehe zum Verschieben der Spalte. Ziehe ihren Rand, um die Breite zu ändern.
 	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	Klicke Eckpunkte an. Eingabetaste oder Doppelklick schließt einen Umfang oder eine Fläche ab. Klicke auf den ersten Punkt, um eine Fläche zu schließen.
+	Click where the copied comments go; Escape lets them go	Klicke dorthin, wo die kopierten Kommentare hin sollen; Escape lässt sie los
 	Clockwise 90 degrees	90 Grad im Uhrzeigersinn
 	Close all	Alle schließen
 	Close file	Datei schließen
@@ -638,6 +641,7 @@
 	Comments panel	Kommentarbereich
 	Comments to send	Zu sendende Kommentare
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Kommentare, Links und Felder müssen im Tag-Baum stehen, damit sie vorgelesen werden. Tagge die Anmerkungen.
+	Comments: {n}	Kommentare: {n}
 	Commit selected value immediately	Ausgewählten Wert sofort übernehmen
 	Common Properties	Allgemeine Eigenschaften
 	Common scales	Gängige Maßstäbe
@@ -648,6 +652,7 @@
 	Compare files…	Dateien vergleichen…
 	Compare panel	Vergleichsbereich
 	Compare this file with an older version: Compare files… in All tools.	Vergleiche diese Datei mit einer älteren Version: „Dateien vergleichen…“ unter „Alle Werkzeuge“.
+	Complete	Fertigstellen
 	Completed	Abgeschlossen
 	Compress a PDF	PDF komprimieren
 	Compress and export	Komprimieren und exportieren
@@ -687,6 +692,9 @@
 	Copies, two-sided printing, colour and the printer are chosen in the system print dialog, which opens when you print.	Exemplare, beidseitiger Druck, Farbe und Drucker werden im Systemdruckdialog gewählt, der sich beim Drucken öffnet.
 	Copies:	Exemplare:
 	Copy a text box or an image first	Kopiere zuerst eine Textbox oder ein Bild
+	Copy comment	Kommentar kopieren
+	Copy comments	Kommentare kopieren
+	Copy comments first	Zuerst Kommentare kopieren
 	Copy example	Beispiel kopieren
 	Copy Image	Bild kopieren
 	Copy Image in Original Format	Bild im Originalformat kopieren
@@ -857,6 +865,7 @@ key	Delete	Entf
 	Delete bookmark	Lesezeichen löschen
 	Delete bookmarks	Lesezeichen löschen
 	Delete comment	Kommentar löschen
+	Delete comments	Kommentare löschen
 	Delete content	Inhalt löschen
 	Delete document JavaScript	Dokument-JavaScript löschen
 	Delete field	Feld löschen
@@ -1733,6 +1742,7 @@ calendar weekday	Mo	Mo
 	Mouse wheel scroll speed	Bildlaufgeschwindigkeit des Mausrads
 	Move bookmark	Lesezeichen verschieben
 	Move comment	Kommentar verschieben
+	Move comments	Kommentare verschieben
 	Move down	Nach unten
 	Move earlier	Nach vorne verschieben
 	Move image	Bild verschieben
@@ -2147,6 +2157,7 @@ animation effects	On	Ein
 	Password-protected	Passwortgeschützt
 	Paste after	Danach einfügen
 	Paste an OpenRouter key	OpenRouter-Schlüssel einfügen
+	Paste comments	Kommentare einfügen
 	Paste field	Feld einfügen
 	Paste fields	Felder einfügen
 	Paste Image	Bild einfügen
@@ -3124,7 +3135,9 @@ calendar weekday	Th	Do
 	The checker found problems which may prevent the document from being fully accessible.	Die Prüfung hat Probleme gefunden, die die vollständige Barrierefreiheit des Dokuments verhindern können.
 	The checker found {n} problems which may prevent the document from being fully accessible.	Die Prüfung hat {n} Probleme gefunden, die die vollständige Barrierefreiheit des Dokuments verhindern können.
 	The clipboard has no image or text	Die Zwischenablage enthält weder Bild noch Text
+	The clipboard holds no comments	Die Zwischenablage enthält keine Kommentare
 	The comment being edited no longer exists, so its text was not saved.	Der bearbeitete Kommentar existiert nicht mehr, daher wurde sein Text nicht gespeichert.
+	The copied comments are larger than this page; they were placed as they are	Die kopierten Kommentare sind größer als diese Seite; sie wurden unverändert platziert
 	The desktop portal's file chooser isn't running ({packages}). Check it with systemctl --user status {first}, or log out and back in.	Die Dateiauswahl des Desktop-Portals läuft nicht ({packages}). Prüfen Sie sie mit systemctl --user status {first}, oder melden Sie sich ab und wieder an.
 	The device's digital ID isn't available any more; start signing again to list it.	Die digitale ID des Geräts ist nicht mehr verfügbar; starte das Signieren neu, um sie aufzulisten.
 	The Dock shows it the next time PdfCraft opens.	Das Dock zeigt es beim nächsten Öffnen von PdfCraft.
@@ -3535,6 +3548,7 @@ signature pad	Type	Tippen
 	Underline text	Text unterstreichen
 	Undid {label}	{label} rückgängig gemacht
 	Undo ({key})	Rückgängig ({key})
+	Undo last point	Letzten Punkt zurücknehmen
 	Undo the last review change (Ctrl+Z)	Letzte Prüfungsänderung rückgängig machen (Strg+Z)
 	Ungroup artwork	Grafikgruppierung aufheben
 	Unit	Einheit
