@@ -52,7 +52,9 @@
 	A font isn't embedded	มีแบบอักษรที่ไม่ได้ฝัง
 	A form field has additional actions	มีช่องแบบฟอร์มที่มีการทำงานเพิ่มเติม
 	A link	ลิงก์
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	โลโก้หรือชื่อทางซ้ายของแท็บ ตรงที่แถบชื่อเรื่องจะแสดง: ของ PdfCraft เอง หรือของบริษัทคุณ
 	A picture covers page {pages} (a scan?), so the background won't show there.	มีรูปภาพปิดหน้า {pages} อยู่ (ภาพสแกน?) จึงจะมองไม่เห็นพื้นหลังที่นั่น
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	ไฟล์ PNG หรือ SVG ระบบจะอ่านจากตำแหน่งนี้ทุกครั้งที่ PdfCraft เริ่มทำงาน
 	A script	สคริปต์
 	A selected field has no widget on any page, so the fields can't be edited together.	มีช่องที่เลือกซึ่งไม่มีวิดเจ็ตบนหน้าใดเลย จึงแก้ไขช่องพร้อมกันไม่ได้
 	A stream refers to an external file	มีสตรีมที่อ้างถึงไฟล์ภายนอก
@@ -413,6 +415,7 @@ certificate	Basic constraints	ข้อจำกัดพื้นฐาน
 	Choose a folder on this computer to pin	เลือกโฟลเดอร์บนคอมพิวเตอร์เครื่องนี้เพื่อปักหมุด
 	Choose a folder…	เลือกโฟลเดอร์…
 	Choose a layout:	เลือกเค้าโครง:
+	Choose a logo	เลือกโลโก้
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	เลือกรูปภาพ PNG หรือ JPEG (ไม่เกิน 4 MiB) ความโปร่งใสจะคงไว้
 	Choose a provider.	เลือกผู้ให้บริการ
 	Choose a stamp, then click on the page to place it.	เลือกตราประทับ แล้วคลิกบนหน้าเพื่อวาง
@@ -1292,6 +1295,8 @@ certificate	Key usage	การใช้งานกุญแจ
 	Lock comment	ล็อกความคิดเห็น
 	Locked	ล็อกอยู่
 	Logical Reading Order	ลำดับการอ่านเชิงตรรกะ
+	Logo	โลโก้
+	Logo and name	โลโก้และชื่อ
 	Looking for PDFs…	กำลังค้นหา PDF…
 	Looking for printers…	กำลังค้นหาเครื่องพิมพ์…
 	Low	ต่ำ
@@ -1501,6 +1506,7 @@ scroll speed	Normal	ปกติ
 	Not now	ไม่ใช่ตอนนี้
 	Not present	ไม่มี
 	Note	โน้ต
+	Nothing	ไม่มี
 	nothing in the file matches this document	ไม่มีอะไรในไฟล์ที่ตรงกับเอกสารนี้
 	Nothing to redo	ไม่มีอะไรให้ทำซ้ำ
 	nothing to redo	ไม่มีอะไรให้ทำซ้ำ
@@ -1700,6 +1706,7 @@ animation effects	On	เปิด
 	PdfCraft web page	หน้าเว็บ PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft ทำงานแบบออฟไลน์ ไม่มีการเก็บข้อมูลการใช้งาน ไม่ต้องมีบัญชี และไม่ประมวลผลบนคลาวด์ เว้นแต่คุณจะเพิ่มผู้ให้บริการเอง
 	PdfCraft {v} is available.	มี PdfCraft {v} ให้ใช้งานแล้ว
+	PdfCraft's own	ของ PdfCraft เอง
 	People may need more time to respond. Check that nothing has a time limit.	ผู้ใช้อาจต้องการเวลาตอบสนองมากขึ้น ตรวจสอบว่าไม่มีสิ่งใดจำกัดเวลา
 	Percentage	เปอร์เซ็นต์
 	Perimeter	เส้นรอบรูป
@@ -1929,6 +1936,7 @@ certificate	Public key	กุญแจสาธารณะ
 	Report…	รายงาน…
 	Required	จำเป็น
 	Requires user to enter a password for:	ต้องให้ผู้ใช้ป้อนรหัสผ่านสำหรับ:
+	Reset	รีเซ็ต
 	Reset a form	รีเซ็ตแบบฟอร์ม
 	Reset columns	รีเซ็ตคอลัมน์
 	Reset page size	รีเซ็ตขนาดหน้า
@@ -2165,6 +2173,7 @@ key	Shift	Shift
 	Show certificate…	แสดงใบรับรอง…
 	Show cover page in two-page view	แสดงหน้าปกในมุมมองสองหน้า
 	Show gaps between pages	แสดงช่องว่างระหว่างหน้า
+	Show in the tab strip	แสดงในแถบแท็บ
 	Show layer	แสดงเลเยอร์
 	Show less	แสดงน้อยลง
 	Show password	แสดงรหัสผ่าน
@@ -2505,6 +2514,8 @@ calendar weekday	Th	พฤ
 	This drawing exceeds the snapping limit; only the first paths are used.	ภาพวาดนี้เกินขีดจำกัดของการยึด จะใช้เฉพาะเส้นทางชุดแรก
 	This field is locked. Unlock it to change its properties.	ช่องนี้ถูกล็อก ปลดล็อกเพื่อเปลี่ยนคุณสมบัติ
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	แบบอักษรของช่องนี้วาด “{c}” ({code}) ไม่ได้ PdfCraft จึงแสดง ? แทน ค่าถูกบันทึกไว้ และโปรแกรมอ่าน PDF อื่นจะวาดช่องใหม่จากค่านั้น
+	This file can't be used as the logo: it's larger than {max} MB.	ใช้ไฟล์นี้เป็นโลโก้ไม่ได้: ไฟล์ใหญ่กว่า {max} MB
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	ใช้ไฟล์นี้เป็นโลโก้ไม่ได้: พาธของไฟล์ไม่ใช่ UTF-8 ที่ถูกต้อง จึงบันทึกพร้อมการตั้งค่าไม่ได้
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	ไฟล์นี้เปลี่ยนแปลงบนดิสก์ โหลดใหม่เพื่อดูรุ่นใหม่ การเปลี่ยนแปลงที่ยังไม่ได้บันทึกจะหายไป
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	ไฟล์นี้ถูกเปลี่ยนแปลงบนดิสก์ "โหลดใหม่" จะแสดงรุ่นใหม่และทิ้งการเปลี่ยนแปลงที่ยังไม่ได้บันทึก ส่วน "บันทึก" จะแทนที่ไฟล์ด้วยรุ่นนี้
 	This file is already as small as it can be made ({size}). No copy was saved.	ไฟล์นี้เล็กที่สุดเท่าที่ทำได้แล้ว ({size}) ไม่ได้บันทึกสำเนา

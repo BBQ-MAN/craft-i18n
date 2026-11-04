@@ -53,7 +53,9 @@
 	A form field has additional actions	Formos laukas turi papildomų veiksmų
 	A link	Saitas
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Vietinis modelis nėraflagšipinis debesies modelis: jis gali klysti, o ilgas atsakymas procesoriuje užtrunka. Patikrinkite visa, kas svarbu, ir prieš atsisiųsdami atmintokite modelio dydį pagal šį kompiuterį.
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logotipas arba pavadinimas kairėje nuo kortelių, kur jį rodytų antraštės juosta: PdfCraft arba jūsų įmonės.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Paveikslėliu padengtas puslapis (nuskaitytas?): {pages}; fonas ten nesimatys.
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG arba SVG failas. Jis skaitomas iš šios vietos kiekvieną kartą paleidus PdfCraft.
 	A script	Scenarijus
 	A selected field has no widget on any page, so the fields can't be edited together.	Pasirinktas laukas neturi valdiklio jokiame puslapyje, todėl laukų negalima redaguoti kartu.
 	A signature is still waiting for its approval.	Parašas vis dar laukia patvirtinimo.
@@ -425,6 +427,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Choose a folder on this computer to pin	Pasirinkite prisegamą šio kompiuterio aplanką
 	Choose a folder…	Pasirinkti aplanką…
 	Choose a layout:	Pasirinkite išdėstymą:
+	Choose a logo	Pasirinkite logotipą
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Pasirinkite PNG arba JPEG paveikslėlį (iki 4 MiB). Skaidrumas išsaugomas.
 	Choose a provider.	Pasirinkite teikėją.
 	Choose a stamp, then click on the page to place it.	Pasirinkite antspaudą, tada spustelėkite puslapį, kad jį įdėtumėte.
@@ -1292,6 +1295,8 @@ certificate	Key usage	Rakto naudojimas
 	Location: 	Vieta: 
 	Lock comment	Užrakinti komentarą
 	Logical Reading Order	Loginė skaitymo tvarka
+	Logo	Logotipas
+	Logo and name	Logotipas ir pavadinimas
 	Looking for a local model runtime…	Ieškoma vietinės modelių vykdymo aplinkos…
 	Looking for certificates…	Ieškoma sertifikatų…
 	Looking for PDFs…	Ieškoma PDF failų…
@@ -1516,6 +1521,7 @@ scroll speed	Normal	Įprastas
 	Not present	Nėra
 	Not rated	Neįvertinta
 	Note	Raštelis
+	Nothing	Nieko
 	nothing in the file matches this document	faile nėra šį dokumentą atitinkančių duomenų
 	Nothing to redo	Nėra ką pakartoti
 	nothing to redo	nėra ką pakartoti
@@ -1724,6 +1730,7 @@ animation effects	On	Įjungta
 	PdfCraft web page	„PdfCraft“ svetainė
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	„PdfCraft“ veikia neprisijungus. Nerenkami telemetrijos duomenys, nereikia paskyros ir nenaudojamos debesijos paslaugos, nebent pridėtumėte jų teikėją.
 	PdfCraft {v} is available.	Išleista „PdfCraft“ versija {v}.
+	PdfCraft's own	PdfCraft
 	People may need more time to respond. Check that nothing has a time limit.	Žmonėms gali reikėti daugiau laiko atsakyti. Patikrinkite, ar nėra laiko apribojimų.
 	Permissions password	Teisių slaptažodis
 	Permitted actions after certifying	Po patvirtinimo leidžiami veiksmai
@@ -1967,6 +1974,7 @@ certificate	Public key	Viešasis raktas
 	Required	Privaloma
 	Required, given by Aruba with the account	Privaloma, „Aruba“ suteikia kartu su paskyra
 	Requires user to enter a password for:	Naudotojas turi įvesti slaptažodį, kad galėtų:
+	Reset	Atstatyti
 	Reset a form	Išvalyti formą
 	Reset columns	Atkurti stulpelius
 	Reset page size	Atkurti puslapio dydį
@@ -2221,6 +2229,7 @@ key	Shift	Shift
 	Show in Explorer	Rodyti „File Explorer“
 	Show in Finder	Rodyti „Finder“
 	Show in folder	Rodyti aplanke
+	Show in the tab strip	Rodyti kortelių juostoje
 	Show layer	Rodyti sluoksnį
 	Show less	Rodyti mažiau
 	Show on the page which fields each field reads	Rodyti puslapyje, kuriuos laukus skaito kiekvienas laukas
@@ -2638,6 +2647,8 @@ calendar weekday	Th	Kt
 	This drawing exceeds the snapping limit; only the first paths are used.	Brėžinys viršija pritraukimo ribą; naudojami tik pirmieji keliai.
 	This field is locked. Unlock it to change its properties.	Šis laukas užrakintas. Atrakinkite jį, kad galėtumėte keisti savybes.
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	Šio lauko šriftas negali atvaizduoti simbolio „{c}“ ({code}), todėl „PdfCraft“ vietoj jo rodo ?. Reikšmė įrašoma, o kitos PDF žiūryklės pagal ją iš naujo atvaizduoja lauką.
+	This file can't be used as the logo: it's larger than {max} MB.	Šio failo negalima naudoti kaip logotipo: jis didesnis nei {max} MB.
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	Šio failo negalima naudoti kaip logotipo: jo kelias nėra tinkamas UTF-8, todėl jo nepavyktų išsaugoti su nustatymais.
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	Šis failas diske pasikeitė. Įkelkite jį iš naujo, kad pamatytumėte naują versiją; neįrašyti pakeitimai bus prarasti.
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Šis failas diske pasikeitė. „Įkelti iš naujo“ parodo naują versiją ir atmeta neįrašytus pakeitimus; „Įrašyti“ pakeičia ją šia versija.
 	This file is already as small as it can be made ({size}). No copy was saved.	Šio failo daugiau sumažinti negalima ({size}). Kopija neįrašyta.

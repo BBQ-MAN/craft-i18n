@@ -53,7 +53,9 @@
 	A font isn't embedded	Fonttia ei ole upotettu
 	A form field has additional actions	Lomakekentällä on lisätoimintoja
 	A link	Linkki
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logo tai nimi välilehtien vasemmalla puolella, jossa otsikkorivi näyttäisi sellaisen: PdfCraftin oma tai yrityksesi.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Kuva peittää sivun {pages} (skannaus?), joten tausta ei näy siinä.
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG- tai SVG-tiedosto. Se luetaan tästä sijainnista aina, kun PdfCraft käynnistyy.
 	A script	Komentosarja
 	A selected field has no widget on any page, so the fields can't be edited together.	Yhdellä valituista kentistä ei ole kenttäelementtiä millään sivulla, joten kenttiä ei voi muokata yhdessä.
 	A stream refers to an external file	Virta viittaa ulkoiseen tiedostoon
@@ -407,6 +409,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Choose a folder on this computer to pin	Valitse kiinnitettävä kansio tältä tietokoneelta
 	Choose a folder…	Valitse kansio…
 	Choose a layout:	Valitse asettelu:
+	Choose a logo	Valitse logo
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Valitse PNG- tai JPEG-kuva (enintään 4 MiB). Läpinäkyvyys säilyy.
 	Choose a provider.	Valitse palveluntarjoaja.
 	Choose a stamp, then click on the page to place it.	Valitse leima ja sijoita se napsauttamalla sivua.
@@ -1216,6 +1219,8 @@ certificate	Key usage	Avaimen käyttö
 	Location: 	Sijainti: 
 	Lock comment	Lukitse kommentti
 	Logical Reading Order	Looginen lukujärjestys
+	Logo	Logo
+	Logo and name	Logo ja nimi
 	Looking for certificates…	Etsitään varmenteita…
 	Looking for PDFs…	Etsitään PDF-tiedostoja…
 	Looking for printers…	Etsitään tulostimia…
@@ -1414,6 +1419,7 @@ scroll speed	Normal	Normaali
 	Not now	Ei nyt
 	Not present	Ei mukana
 	Note	Huomautus
+	Nothing	Ei mitään
 	nothing in the file matches this document	mikään tiedostossa ei vastaa tätä asiakirjaa
 	Nothing to redo	Ei uudelleen tehtävää
 	nothing to redo	ei uudelleen tehtävää
@@ -1597,6 +1603,7 @@ animation effects	On	Käytössä
 	PdfCraft web page	PdfCraftin verkkosivu
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft toimii ilman verkkoyhteyttä. Ei telemetriaa, ei tiliä eikä pilvikäsittelyä, ellei palveluntarjoajaa lisätä.
 	PdfCraft {v} is available.	PdfCraft {v} on saatavilla.
+	PdfCraft's own	PdfCraftin oma
 	People may need more time to respond. Check that nothing has a time limit.	Käyttäjät voivat tarvita enemmän aikaa vastaamiseen. Tarkista, ettei missään ole aikarajaa.
 	Percentage	Prosentti
 	Perimeter	Ympärysmitta
@@ -2042,6 +2049,7 @@ key	Shift	Vaihto
 	Show certificate…	Näytä varmenne…
 	Show cover page in two-page view	Näytä kansilehti kahden sivun näkymässä
 	Show gaps between pages	Näytä sivujen väliset välit
+	Show in the tab strip	Näytä välilehtirivillä
 	Show layer	Näytä taso
 	Show less	Näytä vähemmän
 	Show on the page which fields each field reads	Näytä sivulla, mitä kenttiä kukin kenttä lukee
@@ -2400,6 +2408,8 @@ calendar weekday	Th	To
 	This drawing exceeds the snapping limit; only the first paths are used.	Tämä piirustus ylittää tartunnan rajan; vain ensimmäiset polut käytetään.
 	This field is locked. Unlock it to change its properties.	Kenttä on lukittu. Avaa lukitus muuttaaksesi sen ominaisuuksia.
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	Tämän kentän fontti ei pysty piirtämään merkkiä ”{c}” ({code}), joten PdfCraft näyttää sen tilalla merkin ?. Arvo tallennetaan, ja muut PDF-katseluohjelmat piirtävät kentän sen perusteella uudelleen.
+	This file can't be used as the logo: it's larger than {max} MB.	Tätä tiedostoa ei voi käyttää logona: se on suurempi kuin {max} MB.
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	Tätä tiedostoa ei voi käyttää logona: sen polku ei ole kelvollista UTF-8:aa, joten sitä ei voitu tallentaa asetuksiin.
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	Tämä tiedosto muuttui levyllä. Lataa se uudelleen nähdäksesi uuden version; tallentamattomat muutokset menetetään.
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Tämä tiedosto muuttui levyllä. Lataa uudelleen näyttää uuden version ja hylkää tallentamattomat muutoksesi; Tallenna korvaa sen tällä versiolla.
 	This file is already as small as it can be made ({size}). No copy was saved.	Tiedosto on jo niin pieni kuin mahdollista ({size}). Kopiota ei tallennettu.

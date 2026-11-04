@@ -53,7 +53,9 @@
 	a field named {name} already exists	已有名為 {name} 的欄位
 	A form field has additional actions	表單欄位具有額外動作
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	本機模型不是最先進的雲端模型：它可能出錯，較長的回答在處理器上需要時間。重要事項請務必查證，下載前也請留意模型大小與這台機器的匹配。
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	在分頁左側、標題列通常顯示的位置放一個標誌或名稱：PdfCraft 自己的，或你公司的。
 	A picture covers page {pages} (a scan?), so the background won't show there.	第 {pages} 頁被一張圖片覆蓋（掃描檔？），因此那裡不會顯示背景。
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	一個 PNG 或 SVG 檔案。每次 PdfCraft 啟動時都從此位置讀取。
 	A selected field has no widget on any page, so the fields can't be edited together.	某個所選欄位在任何頁面上都沒有控制項，因此無法一起編輯這些欄位。
 	A stream refers to an external file	串流參照了外部檔案
 	A stream uses LZW compression	串流使用了 LZW 壓縮
@@ -411,6 +413,7 @@
 	Choose a folder for the split files	選擇拆分檔案的資料夾
 	Choose a folder on this computer to pin	請選擇這部電腦上要釘選的資料夾
 	Choose a layout:	選擇佈局：
+	Choose a logo	選擇標誌
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	選擇 PNG 或 JPEG 圖像（最大 4 MiB）。透明度會保留。
 	Choose a point, then the two endpoints of a reference line.	先選擇一個點，再選擇參考線的兩個端點。
 	Choose a provider.	請選擇提供者。
@@ -1274,6 +1277,8 @@ key	Home	Home
 	Location: 	位置：
 	Lock comment	鎖定註解
 	Logical Reading Order	邏輯閱讀順序
+	Logo	標誌
+	Logo and name	標誌和名稱
 	Longitude	經度
 	Looking for a local model runtime…	正在尋找本機模型執行環境…
 	Looking for PDFs…	正在尋找 PDF…
@@ -1497,6 +1502,7 @@ scroll speed	Normal	正常
 	Not present	不存在
 	Not rated	未評等
 	Note	附註
+	Nothing	無
 	nothing in the file matches this document	檔案中沒有與此文件相符的資料
 	Nothing to redo	沒有可重做的操作
 	nothing to redo	沒有可重做的操作
@@ -1691,6 +1697,7 @@ animation effects	On	開
 	PdfCraft web page	PdfCraft 網頁
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft 可離線使用，不收集遙測資料，也不需要帳號。只有在您新增服務供應商後，才會使用雲端處理。
 	PdfCraft {v} is available.	PdfCraft {v} 可用。
+	PdfCraft's own	PdfCraft 自己的
 	People may need more time to respond. Check that nothing has a time limit.	人們可能需要更多時間來回應。請檢驗確認沒有時間限制。
 	Permissions password	許可權密碼
 	Permitted actions after certifying	認證後允許的操作
@@ -2182,6 +2189,7 @@ key	Shift	Shift
 	Show in Explorer	在檔案總管中顯示
 	Show in Finder	在 Finder 中顯示
 	Show in folder	在資料夾中顯示
+	Show in the tab strip	在分頁列中顯示
 	Show layer	顯示圖層
 	Show less	顯示較少
 	Show on the page which fields each field reads	在頁面上顯示每個欄位讀取哪些欄位
@@ -2499,6 +2507,8 @@ document scrollbar width	Standard	標準
 	This drawing exceeds the snapping limit; only the first paths are used.	此圖面超過吸附上限；僅使用最前面的路徑。
 	This field is locked. Unlock it to change its properties.	此欄位已鎖定。解鎖後可更改其屬性。
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	此欄位的字型無法顯示「{c}」（{code}），PdfCraft 會在該處顯示 ?。值已儲存，其他 PDF 閱讀器會依據該值重新繪製此欄位。
+	This file can't be used as the logo: it's larger than {max} MB.	此檔案不能用作標誌：它大於 {max} MB。
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	此檔案不能用作標誌：其路徑不是有效的 UTF-8，因此無法隨設定一起儲存。
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	此檔案已在磁碟上變更。請重新載入以查看新版本；未儲存的變更將會遺失。
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	此檔案已在磁碟上變更。「重新載入」會顯示新版本並捨棄未儲存的變更；「儲存」則會以此版本取代它。
 	This file is already as small as it can be made ({size}). No copy was saved.	此檔案已經是最小的了（{size}）。未儲存副本。

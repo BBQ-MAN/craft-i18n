@@ -56,7 +56,9 @@
 	A font isn't embedded	글꼴이 포함되어 있지 않습니다
 	A form field has additional actions	양식 필드에 추가 동작이 있습니다.
 	A link	링크
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	제목 표시줄이 있을 자리인 탭 왼쪽에 로고나 이름을 표시합니다. PdfCraft 기본 로고나 회사 로고를 쓸 수 있습니다.
 	A picture covers page {pages} (a scan?), so the background won't show there.	이미지가 {pages}페이지를 덮고 있어(스캔본?) 배경이 보이지 않습니다.
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG 또는 SVG 파일입니다. PdfCraft를 시작할 때마다 이 위치에서 읽습니다.
 	A script	스크립트
 	A selected field has no widget on any page, so the fields can't be edited together.	A selected field has no widget on any page, so the fields can't be edited together.
 	A stream refers to an external file	스트림이 외부 파일을 참조합니다.
@@ -397,6 +399,7 @@ certificate	Basic constraints	기본 제약 조건
 	Choose a folder on this computer to pin	고정할 이 컴퓨터의 폴더 선택
 	Choose a folder…	폴더 선택…
 	Choose a layout:	레이아웃 선택:
+	Choose a logo	로고 선택
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	PNG 또는 JPEG 이미지(최대 4MiB)를 선택하세요. 투명도가 유지됩니다.
 	Choose a provider.	공급자를 선택하세요.
 	Choose a stamp, then click on the page to place it.	스탬프를 선택한 다음 페이지를 클릭하여 배치하세요.
@@ -1185,6 +1188,8 @@ certificate	Key usage	키 용도
 	Location: 	위치: 
 	Lock comment	주석 잠그기
 	Logical Reading Order	논리적 읽기 순서
+	Logo	로고
+	Logo and name	로고와 이름
 	Looking for certificates…	인증서를 찾는 중…
 	Looking for PDFs…	PDF 찾는 중…
 	Looking for printers…	프린터 검색 중…
@@ -1377,6 +1382,7 @@ scroll speed	Normal	보통
 	Not now	나중에
 	Not present	없음
 	Note	메모
+	Nothing	없음
 	nothing in the file matches this document	파일에 이 문서와 일치하는 항목이 없습니다.
 	Nothing to redo	다시 실행할 항목 없음
 	nothing to redo	다시 실행할 항목 없음
@@ -1565,6 +1571,7 @@ animation effects	On	켜짐
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft는 오프라인으로 작동합니다. 제공자를 추가하지 않는 한 원격 측정, 계정, 클라우드 처리가 없습니다.
 	PdfCraft {c} is up to date.	PdfCraft {c}은(는) 최신 버전입니다.
 	PdfCraft {v} is available.	PdfCraft {v}을(를) 사용할 수 있습니다.
+	PdfCraft's own	PdfCraft 기본값
 	People may need more time to respond. Check that nothing has a time limit.	사용자가 응답하는 데 더 많은 시간이 필요할 수 있습니다. 시간 제한이 설정된 항목이 없는지 확인하세요.
 	Percentage	백분율
 	Permissions password	권한 암호
@@ -1995,6 +2002,7 @@ key	Shift	Shift
 	Show certificate…	Show certificate…
 	Show cover page in two-page view	두 페이지 보기에서 표지 페이지 표시
 	Show gaps between pages	페이지 사이 간격 표시
+	Show in the tab strip	탭 스트립에 표시
 	Show layer	레이어 표시
 	Show less	간단히 보기
 	Show on the page which fields each field reads	Show on the page which fields each field reads
@@ -2341,6 +2349,8 @@ calendar weekday	Th	목
 	This drawing exceeds the snapping limit; only the first paths are used.	이 도면은 스냅 한도를 초과합니다. 처음 경로만 사용됩니다.
 	This field is locked. Unlock it to change its properties.	이 필드는 잠겨 있습니다. 속성을 변경하려면 잠금을 해제하세요.
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.
+	This file can't be used as the logo: it's larger than {max} MB.	이 파일은 로고로 쓸 수 없습니다. 크기가 {max}MB를 넘습니다.
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	이 파일은 로고로 쓸 수 없습니다. 경로가 올바른 UTF-8이 아니어서 설정에 저장할 수 없습니다.
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	디스크의 파일이 변경되었습니다. 새 버전을 보려면 다시 불러오세요. 저장하지 않은 변경 내용은 사라집니다.
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.
 	This file is already as small as it can be made ({size}). No copy was saved.	This file is already as small as it can be made ({size}). No copy was saved.

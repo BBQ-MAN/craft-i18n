@@ -55,7 +55,9 @@
 	A form field has additional actions	フォームフィールドに追加アクションがあります
 	A link	リンク
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	ローカルモデルは最先端のクラウドモデルではありません。間違うことがあり、長い回答には CPU で時間がかかります。重要な事柄は必ず確認し、ダウンロード前にモデルのサイズをこのマシンと比べてください。
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	タブの左側、タイトルバーが表示する位置に出すロゴや名前。PdfCraft のもの、または会社のものを指定できます。
 	A picture covers page {pages} (a scan?), so the background won't show there.	{pages} ページは画像（スキャン？）で覆われているため、背景は表示されません。
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG または SVG ファイル。PdfCraft の起動のたびにこの場所から読み込まれます。
 	A script	スクリプト
 	A selected field has no widget on any page, so the fields can't be edited together.	選択したフィールドの一つがどのページにもウィジェットを持たないため、まとめて編集できません。
 	A stream refers to an external file	ストリームが外部ファイルを参照しています
@@ -422,6 +424,7 @@
 	Choose a folder for the split files	分割ファイルの保存先フォルダーを選択
 	Choose a folder on this computer to pin	ピン留めするフォルダーをこのコンピューターから選択してください
 	Choose a layout:	レイアウトを選択:
+	Choose a logo	ロゴを選択
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	PNG または JPEG 画像を選択してください（最大 4 MiB）。透明度は保持されます。
 	Choose a point, then the two endpoints of a reference line.	点を選択し、次に基準線の2つの端点を選択してください。
 	Choose a provider.	プロバイダーを選択してください。
@@ -1298,6 +1301,8 @@ key	Home	Home
 	Lock comment	注釈をロック
 	Locked	ロック中
 	Logical Reading Order	論理的な読み取り順序
+	Logo	ロゴ
+	Logo and name	ロゴと名前
 	Longitude	経度
 	Looking for a local model runtime…	ローカルのモデルランタイムを探しています…
 	Looking for certificates…	証明書を検索しています…
@@ -1532,6 +1537,7 @@ scroll speed	Normal	標準
 	Not present	なし
 	Not rated	評価なし
 	Note	ノート注釈
+	Nothing	なし
 	nothing in the file matches this document	この文書に一致する項目がファイルにありません
 	Nothing to redo	やり直す操作はありません
 	nothing to redo	やり直す操作はありません
@@ -1726,6 +1732,7 @@ animation effects	On	オン
 	PdfCraft web page	PdfCraft の Web 版
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft はオフラインで動作します。使用状況の送信やアカウント登録はありません。サービス提供元を追加しない限り、クラウド処理も行いません。
 	PdfCraft {v} is available.	PdfCraft {v} が利用できます。
+	PdfCraft's own	PdfCraft のもの
 	People may need more time to respond. Check that nothing has a time limit.	応答には時間がかかる場合があります。時間制限がないか確認してください。
 	Perimeter	周長
 	Permissions password	権限パスワード
@@ -2233,6 +2240,7 @@ key	Shift	Shift
 	Show in Explorer	エクスプローラーで表示
 	Show in Finder	Finder で表示
 	Show in folder	フォルダーで表示
+	Show in the tab strip	タブバーに表示
 	Show layer	レイヤーを表示
 	Show less	表示を減らす
 	Show on the page which fields each field reads	各フィールドが読み取るフィールドをページ上に表示します
@@ -2580,6 +2588,8 @@ document scrollbar width	Standard	標準
 	This drawing exceeds the snapping limit; only the first paths are used.	図面がスナップの上限を超えているため、最初のパスのみを使用します。
 	This field is locked. Unlock it to change its properties.	このフィールドはロックされています。プロパティを変更するにはロックを解除してください。
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	このフィールドのフォントでは「{c}」（{code}）を表示できないため、PdfCraft では ? と表示されます。値は保存され、他の PDF ビューアーではこの値からフィールドが再描画されます。
+	This file can't be used as the logo: it's larger than {max} MB.	このファイルはロゴとして使えません。サイズが {max} MB を超えています。
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	このファイルはロゴとして使えません。パスが有効な UTF-8 ではないため、設定と一緒に保存できません。
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	このファイルはディスク上で変更されました。再読み込みすると新しいバージョンが表示されますが、未保存の変更は失われます。
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	このファイルはディスク上で変更されました。「再読み込み」は新しい版を表示して未保存の変更を破棄し、「保存」はこの版で置き換えます。
 	This file is already as small as it can be made ({size}). No copy was saved.	このファイルはすでに最小のサイズです（{size}）。コピーは保存されませんでした。

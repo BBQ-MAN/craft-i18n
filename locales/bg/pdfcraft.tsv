@@ -51,7 +51,9 @@
 	a field named {name} already exists	вече съществува поле с име {name}
 	A form field has additional actions	Поле на формуляр има допълнителни действия
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локалният модел не е водещ облачен модел: може да греши, а дълъг отговор отнема време на процесор. Проверявайте важното и съобразявайте размера на модела с тази машина, преди да го изтеглите.
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Лого или име вляво от разделите, където би ги показала заглавната лента: на PdfCraft или на вашата фирма.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Изображение покрива страница {pages} (сканиране?), затова фонът няма да се вижда там.
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG или SVG файл. Чете се от това място при всяко стартиране на PdfCraft.
 	A selected field has no widget on any page, so the fields can't be edited together.	Едно от избраните полета няма елемент на нито една страница, затова полетата не могат да се редактират заедно.
 	A stream refers to an external file	Поток препраща към външен файл
 	A stream uses LZW compression	Поток използва LZW компресия
@@ -403,6 +405,7 @@
 	Choose a folder for the split files	Изберете папка за разделените файлове
 	Choose a folder on this computer to pin	Изберете папка на този компютър, която да закачите
 	Choose a layout:	Изберете оформление:
+	Choose a logo	Изберете лого
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Изберете PNG или JPEG изображение (до 4 MiB). Прозрачността се запазва.
 	Choose a provider.	Изберете доставчик.
 	Choose a stamp, then click on the page to place it.	Изберете печат, след което щракнете върху страницата, за да го поставите.
@@ -1255,6 +1258,8 @@ key	Home	Home
 	Lock comment	Заключи коментара
 	Locked	Заключено
 	Logical Reading Order	Логически ред на четене
+	Logo	Лого
+	Logo and name	Лого и име
 	Looking for a local model runtime…	Търсене на локален моделен рантайм…
 	Looking for certificates…	Търсене на сертификати…
 	Looking for PDFs…	Търсене на PDF файлове…
@@ -1467,6 +1472,7 @@ scroll speed	Normal	Нормална
 	Not present	Няма
 	Not rated	Без оценка
 	Note	Бележка
+	Nothing	Нищо
 	nothing in the file matches this document	нищо във файла не съответства на този документ
 	Nothing to redo	Няма какво да се повтори
 	nothing to redo	няма какво да се повтори
@@ -1664,6 +1670,7 @@ animation effects	On	Включени
 	PdfCraft web page	Уебстраница на PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft работи офлайн. Без телеметрия, без акаунт и без обработка в облака, освен ако не добавите доставчик.
 	PdfCraft {v} is available.	Налична е PdfCraft {v}.
+	PdfCraft's own	На PdfCraft
 	People may need more time to respond. Check that nothing has a time limit.	Някои хора може да се нуждаят от повече време за отговор. Проверете дали нищо няма времево ограничение.
 	Permissions password	Парола за разрешения
 	Permitted actions after certifying	Разрешени действия след сертифициране
@@ -2155,6 +2162,7 @@ key	Shift	Shift
 	Show in Explorer	Покажи в Explorer
 	Show in Finder	Покажи във Finder
 	Show in folder	Покажи в папката
+	Show in the tab strip	Показване в лентата с раздели
 	Show layer	Покажи слоя
 	Show less	Покажи по-малко
 	Show on the page which fields each field reads	Показване на страницата кои полета чете всяко поле
@@ -2484,6 +2492,8 @@ action wizard	Start	Старт
 	This drawing exceeds the snapping limit; only the first paths are used.	Този чертеж надвишава ограничението за прилепване; използват се само първите контури.
 	This field is locked. Unlock it to change its properties.	Това поле е заключено. Отключете го, за да промените свойствата му.
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	Шрифтът на това поле не може да покаже „{c}“ ({code}), затова PdfCraft показва ? на негово място. Стойността е запазена и другите програми за PDF преначертават полето по нея.
+	This file can't be used as the logo: it's larger than {max} MB.	Този файл не може да се използва като лого: по-голям е от {max} MB.
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	Този файл не може да се използва като лого: пътят му не е валиден UTF-8, затова не би могъл да се запази с настройките.
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	Този файл е променен на диска. Презаредете го, за да видите новата версия; незаписаните ви промени ще бъдат загубени.
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Този файл беше променен на диска. „Презареждане“ показва новата версия и отхвърля незаписаните ви промени; „Запис“ я заменя с тази версия.
 	This file is already as small as it can be made ({size}). No copy was saved.	Файлът вече е възможно най-малък ({size}). Не е записано копие.

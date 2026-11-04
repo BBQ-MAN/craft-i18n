@@ -51,7 +51,9 @@
 	a field named {name} already exists	ekziston tashmë një fushë me emrin {name}
 	A form field has additional actions	Një fushë formulari ka veprime shtesë
 	A link	Një lidhje
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Një logo ose emër në të majtë të skedave, aty ku një shirit titulli do ta shfaqte: ai i PdfCraft ose ai i kompanisë suaj.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Një imazh e mbulon faqen {pages} (skanim?), prandaj sfondi nuk do të duket aty.
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Një skedar PNG ose SVG. Lexohet nga ky vend sa herë që niset PdfCraft.
 	A script	Një skript
 	A selected field has no widget on any page, so the fields can't be edited together.	Një fushë e zgjedhur nuk ka widget në asnjë faqe, kështu që fushat nuk mund të redaktohen së bashku.
 	A stream refers to an external file	Një rrjedhë i referohet një skedari të jashtëm
@@ -405,6 +407,7 @@
 	Choose a folder for the split files	Zgjidhni një dosje për skedarët e ndarë
 	Choose a folder on this computer to pin	Zgjidhni një dosje në këtë kompjuter për ta fiksuar
 	Choose a layout:	Zgjidhni një paraqitje:
+	Choose a logo	Zgjidh një logo
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Zgjidhni një imazh PNG ose JPEG (deri në 4 MiB). Transparenca ruhet.
 	Choose a provider.	Zgjidhni një ofrues.
 	Choose a stamp, then click on the page to place it.	Zgjidhni një vulë, pastaj klikoni në faqe për ta vendosur.
@@ -414,6 +417,7 @@
 	Choose photo…	Zgjidh foton…
 	Choose the digital ID that you want to use for signing:	Zgjidhni identitetin dixhital që dëshironi të përdorni për nënshkrim:
 	Choose where to save the signed file. The service signs it once you have.	Zgjidhni ku të ruhet skedari i nënshkruar. Shërbimi e nënshkruan sapo ta keni zgjedhur.
+	Choose…	Zgjidh…
 	Circle	Rreth
 	Clean Up	Pastro
 	Clean-up	Pastrimi
@@ -1247,6 +1251,8 @@ key	Home	Home
 	Lock comment	Blloko komentin
 	Locked	E bllokuar
 	Logical Reading Order	Renditja logjike e leximit
+	Logo	Logo
+	Logo and name	Logo dhe emri
 	Looking for certificates…	Po kërkohen certifikatat…
 	Looking for PDFs…	Po kërkohen PDF…
 	Looking for printers…	Po kërkohen printerë…
@@ -1446,6 +1452,7 @@ scroll speed	Normal	Normale
 	Not now	Not now
 	Not present	Nuk ekziston
 	Note	Shënim
+	Nothing	Asgjë
 	nothing in the file matches this document	asgjë në skedar nuk përputhet me këtë dokument
 	Nothing to redo	Nuk ka asgjë për ripërsëritje
 	nothing to redo	asgjë për ta ribërë
@@ -1632,6 +1639,7 @@ animation effects	On	Aktiv
 	PdfCraft web page	Faqja ueb e PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft funksionon pa internet. Pa telemetri, pa llogari dhe pa përpunim në re, përveçse nëse shton një ofrues.
 	PdfCraft {v} is available.	PdfCraft {v} është i disponueshëm.
+	PdfCraft's own	Ai i PdfCraft
 	People may need more time to respond. Check that nothing has a time limit.	Njerëzit mund të kenë nevojë për më shumë kohë për të përgjigjur. Kontrollo që asgjë të mos ketë kufi kohe.
 	Percentage	Përqindja
 	Perimeter	Perimetri
@@ -1865,6 +1873,7 @@ animation effects	On	Aktiv
 	Required	E detyrueshme
 	Required, given by Aruba with the account	E detyrueshme, jepet nga Aruba bashkë me llogarinë
 	Requires user to enter a password for:	Kërkon që përdoruesi të fusë një fjalëkalim për:
+	Reset	Rivendos
 	Reset a form	Rivendos një formular
 	Reset columns	Rivendos kolonat
 	Reset page size	Rivendos madhësinë e faqes
@@ -2091,6 +2100,7 @@ key	Shift	Shift
 	Show certificate…	Shfaq certifikatën…
 	Show cover page in two-page view	Shfaq faqen e kopertinës në pamjen me dy faqe
 	Show gaps between pages	Shfaq hapësirat midis faqeve
+	Show in the tab strip	Shfaq në shiritin e skedave
 	Show layer	Shfaq shtresën
 	Show less	Shfaq më pak
 	Show on the page which fields each field reads	Show on the page which fields each field reads
@@ -2380,6 +2390,8 @@ certificate	Subject	Subjekti
 	This drawing exceeds the snapping limit; only the first paths are used.	Ky vizatim e tejkalon kufirin e ngjitjes; përdoren vetëm shtigjet e para.
 	This field is locked. Unlock it to change its properties.	Kjo fushë është e kyçur. Shkyçeni për të ndryshuar veçoritë e saj.
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	Fonti i kësaj fushe nuk mund të vizatojë “{c}” ({code}), ndaj PdfCraft shfaq ? në vend të tij. Vlera ruhet dhe shfaqësit e tjerë PDF e vizatojnë fushën nga ajo.
+	This file can't be used as the logo: it's larger than {max} MB.	Ky skedar nuk mund të përdoret si logo: është më i madh se {max} MB.
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	Ky skedar nuk mund të përdoret si logo: shtegu i tij nuk është UTF-8 i vlefshëm, prandaj nuk mund të ruhej me cilësimet.
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	Ky skedar ndryshoi në disk. Ringarkojeni për të parë versionin e ri; ndryshimet tuaja të paruajtura do të humbasin.
 	This file is already as small as it can be made ({size}). No copy was saved.	Ky skedar është tashmë sa më i vogël që mund të bëhet ({size}). Nuk u ruajt asnjë kopje.
 	this file isn't XFDF, FDF, XML or text form data	ky skedar nuk është të dhëna formulari XFDF, FDF, XML ose tekst

@@ -53,7 +53,9 @@
 	A form field has additional actions	حقل نموذج له إجراءات إضافية
 	A link	رابط
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	النموذج المحلي ليس نموذجًا سحابيًا ضخمًا: قد يخطئ، والإجابة الطويلة تأخذ وقتها على المعالج. تحقّق من كل أمر حرج، وانتبه لحجم النموذج مقابل هذا الجهاز قبل تنزيله.
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	شعار أو اسم على يسار علامات التبويب، حيث يُعرض عادةً في شريط العنوان: شعار PdfCraft أو شعار شركتك.
 	A picture covers page {pages} (a scan?), so the background won't show there.	تغطي صورة الصفحة {pages} (مسح ضوئي؟)، لذا لن تظهر الخلفية فيها.
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	ملف PNG أو SVG. يُقرأ من هذا المكان في كل مرة يبدأ فيها PdfCraft.
 	A script	سكربت
 	A selected field has no widget on any page, so the fields can't be edited together.	أحد الحقول المحددة ليس له عنصر واجهة في أي صفحة، لذا لا يمكن تحرير الحقول معًا.
 	A stream refers to an external file	تدفق يشير إلى ملف خارجي
@@ -420,6 +422,7 @@ certificate	Basic constraints	القيود الأساسية
 	Choose a folder on this computer to pin	اختر مجلدًا على هذا الحاسوب لتثبيته
 	Choose a folder…	اختيار مجلد…
 	Choose a layout:	اختر تخطيطًا:
+	Choose a logo	اختر شعارًا
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	اختر صورة PNG أو JPEG (حتى 4 MiB). الشفافية تُحفظ.
 	Choose a provider.	اختر مزوّدًا.
 	Choose a stamp, then click on the page to place it.	اختر ختمًا، ثم انقر على الصفحة لوضعه.
@@ -1281,6 +1284,8 @@ certificate	Key usage	استخدام المفتاح
 	Location: 	الموقع: 
 	Lock comment	قفل التعليق
 	Logical Reading Order	ترتيب القراءة المنطقي
+	Logo	الشعار
+	Logo and name	الشعار والاسم
 	Looking for a local model runtime…	البحث عن مشغّل نماذج محلي…
 	Looking for certificates…	جارٍ البحث عن الشهادات…
 	Looking for PDFs…	جارٍ البحث عن ملفات PDF…
@@ -1505,6 +1510,7 @@ scroll speed	Normal	عادية
 	Not present	غير موجود
 	Not rated	غير مقيَّم
 	Note	ملاحظة
+	Nothing	لا شيء
 	nothing in the file matches this document	لا شيء في الملف يطابق هذا المستند
 	Nothing to redo	لا شيء لإعادته
 	nothing to redo	لا شيء لإعادته
@@ -1712,6 +1718,7 @@ animation effects	On	مفعّلة
 	PdfCraft web page	صفحة PdfCraft على الويب
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	يعمل PdfCraft دون اتصال. لا قياس عن بُعد ولا حساب ولا معالجة سحابية إلا إذا أضفت مزوّدًا.
 	PdfCraft {v} is available.	PdfCraft {v} متاح.
+	PdfCraft's own	شعار PdfCraft
 	People may need more time to respond. Check that nothing has a time limit.	قد يحتاج الناس إلى وقت أطول للاستجابة. تحقق من أن لا شيء له مهلة زمنية.
 	Permissions password	كلمة مرور الأذونات
 	Permitted actions after certifying	الإجراءات المسموح بها بعد التصديق
@@ -1952,6 +1959,7 @@ certificate	Public key	المفتاح العام
 	Required	مطلوب
 	Required, given by Aruba with the account	مطلوب، تمنحه Aruba مع الحساب
 	Requires user to enter a password for:	يتطلب من المستخدم إدخال كلمة مرور من أجل:
+	Reset	إعادة ضبط
 	Reset a form	إعادة ضبط نموذج
 	Reset columns	إعادة ضبط الأعمدة
 	Reset page size	إعادة ضبط حجم الصفحة
@@ -2204,6 +2212,7 @@ key	Shift	Shift
 	Show in Explorer	إظهار في مستكشف الملفات
 	Show in Finder	إظهار في Finder
 	Show in folder	إظهار في المجلد
+	Show in the tab strip	إظهار في شريط علامات التبويب
 	Show layer	إظهار الطبقة
 	Show less	عرض أقل
 	Show on the page which fields each field reads	إظهار الحقول التي يقرؤها كل حقل على الصفحة
@@ -2610,6 +2619,8 @@ calendar weekday	Th	خميس
 	This drawing exceeds the snapping limit; only the first paths are used.	هذا الرسم يتجاوز حد الانجذاب؛ تُستخدم المسارات الأولى فقط.
 	This field is locked. Unlock it to change its properties.	هذا الحقل مقفل. ألغِ قفله لتغيير خصائصه.
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	خط هذا الحقل لا يستطيع رسم «{c}» ({code})، لذا يعرض PdfCraft علامة ? مكانه. القيمة محفوظة، وتعيد برامج عرض PDF الأخرى رسم الحقل منها.
+	This file can't be used as the logo: it's larger than {max} MB.	لا يمكن استخدام هذا الملف كشعار: حجمه أكبر من {max} ميغابايت.
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	لا يمكن استخدام هذا الملف كشعار: مساره ليس بترميز UTF-8 صالح، لذا تعذّر حفظه مع الإعدادات.
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	تغيّر هذا الملف على القرص. أعد تحميله لعرض النسخة الجديدة؛ ستفقد تغييراتك غير المحفوظة.
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	تغيّر هذا الملف على القرص. «إعادة التحميل» تعرض النسخة الجديدة وتُسقط تغييراتك غير المحفوظة؛ و«حفظ» يستبدلها بهذه النسخة.
 	This file is already as small as it can be made ({size}). No copy was saved.	هذا الملف صغير بالفعل قدر الإمكان ({size}). لم تُحفظ أي نسخة.

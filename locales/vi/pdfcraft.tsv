@@ -52,7 +52,9 @@
 	A font isn't embedded	Một phông chữ chưa được nhúng
 	A form field has additional actions	Một trường biểu mẫu có các hành động bổ sung
 	A link	Một liên kết
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Một logo hoặc tên ở bên trái các thẻ, nơi thanh tiêu đề thường hiển thị: của PdfCraft hoặc của công ty bạn.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Một hình ảnh phủ kín trang {pages} (bản quét?), nên nền sẽ không hiện ở đó.
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Một tệp PNG hoặc SVG. Tệp được đọc từ vị trí này mỗi lần PdfCraft khởi động.
 	A script	Một script
 	A selected field has no widget on any page, so the fields can't be edited together.	Một trường đã chọn không có widget trên trang nào, nên các trường không thể được chỉnh sửa cùng nhau.
 	A stream refers to an external file	Một luồng tham chiếu đến tệp bên ngoài
@@ -399,6 +401,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Choose a folder on this computer to pin	Chọn một thư mục trên máy tính này để ghim
 	Choose a folder…	Chọn một thư mục…
 	Choose a layout:	Chọn bố cục:
+	Choose a logo	Chọn một logo
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Chọn ảnh PNG hoặc JPEG (tối đa 4 MiB). Độ trong suốt được giữ nguyên.
 	Choose a provider.	Hãy chọn một nhà cung cấp.
 	Choose a stamp, then click on the page to place it.	Chọn một con dấu, sau đó bấm vào trang để đặt.
@@ -1221,6 +1224,8 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Location: 	Vị trí: 
 	Lock comment	Khóa bình luận
 	Logical Reading Order	Thứ tự đọc hợp lý
+	Logo	Logo
+	Logo and name	Logo và tên
 	Looking for certificates…	Đang tìm chứng chỉ…
 	Looking for PDFs…	Đang tìm PDF…
 	Looking for printers…	Đang tìm máy in…
@@ -1429,6 +1434,7 @@ scroll speed	Normal	Bình thường
 	Not present	Không có mặt
 	Not rated	Chưa xếp hạng
 	Note	Ghi chú
+	Nothing	Không có gì
 	nothing in the file matches this document	không có gì trong tệp khớp với tài liệu này
 	Nothing to redo	Không có gì để làm lại
 	nothing to redo	không có gì để làm lại
@@ -1620,6 +1626,7 @@ animation effects	On	Bật
 	PdfCraft web page	Trang web PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft hoạt động ngoại tuyến. Không thu thập dữ liệu sử dụng, không cần tài khoản, và không xử lý đám mây trừ khi bạn thêm nhà cung cấp.
 	PdfCraft {v} is available.	PdfCraft {v} đã có sẵn.
+	PdfCraft's own	Của PdfCraft
 	People may need more time to respond. Check that nothing has a time limit.	Mọi người có thể cần thêm thời gian để phản hồi. Hãy kiểm tra rằng không có gì bị giới hạn thời gian.
 	Permissions password	Mật khẩu quyền hạn
 	Permitted actions after certifying	Các hành động được phép sau khi chứng nhận
@@ -2077,6 +2084,7 @@ key	Shift	Shift
 	Show certificate…	Hiện chứng chỉ…
 	Show cover page in two-page view	Hiện trang bìa ở chế độ hai trang
 	Show gaps between pages	Hiện khoảng cách giữa các trang
+	Show in the tab strip	Hiện trên thanh thẻ
 	Show layer	Hiện lớp
 	Show less	Hiện ít hơn
 	Show on the page which fields each field reads	Hiện trên trang các trường mà mỗi trường đọc
@@ -2463,6 +2471,8 @@ calendar weekday	Th	T5
 	This drawing exceeds the snapping limit; only the first paths are used.	Bản vẽ này vượt quá giới hạn bắt dính; chỉ các đường đầu tiên được sử dụng.
 	This field is locked. Unlock it to change its properties.	Trường này đã bị khóa. Hãy mở khóa để thay đổi thuộc tính của nó.
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	Phông chữ của trường này không thể vẽ “{c}” ({code}), nên PdfCraft hiển thị ? thay thế. Giá trị vẫn được lưu, và các trình xem PDF khác vẽ lại trường từ giá trị đó.
+	This file can't be used as the logo: it's larger than {max} MB.	Không thể dùng tệp này làm logo: tệp lớn hơn {max} MB.
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	Không thể dùng tệp này làm logo: đường dẫn của nó không phải UTF-8 hợp lệ, nên không thể lưu cùng với cài đặt.
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	Tệp này đã thay đổi trên đĩa. Hãy tải lại để xem phiên bản mới; các thay đổi chưa lưu của bạn sẽ bị mất.
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Tệp này đã thay đổi trên đĩa. Tải lại sẽ hiển thị phiên bản mới và bỏ các thay đổi chưa lưu của bạn; Lưu sẽ thay thế tệp bằng phiên bản này.
 	This file is already as small as it can be made ({size}). No copy was saved.	Tệp này đã nhỏ hết mức có thể ({size}). Không có bản sao nào được lưu.

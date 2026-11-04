@@ -55,7 +55,9 @@
 	A form field has additional actions	Un campo de formulario tiene acciones adicionales
 	A link	Un enlace
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Un modelo local no es un modelo puntero en la nube: puede equivocarse, y una respuesta larga tarda lo suyo en la CPU. Compruebe todo lo crítico y valore el tamaño del modelo frente a esta máquina antes de descargarlo.
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Un logotipo o un nombre a la izquierda de las pestañas, donde lo mostraría una barra de título: el de PdfCraft o el de tu empresa.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Una imagen cubre la página {pages} (¿un escaneo?), así que el fondo no se verá ahí.
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un archivo PNG o SVG. Se lee desde esta ubicación cada vez que se inicia PdfCraft.
 	A script	Un script
 	A selected field has no widget on any page, so the fields can't be edited together.	Un campo seleccionado no tiene ningún widget en ninguna página, así que los campos no se pueden editar juntos.
 	A stream refers to an external file	Una secuencia hace referencia a un archivo externo
@@ -429,6 +431,7 @@ certificate	Basic constraints	Restricciones básicas
 	Choose a folder on this computer to pin	Elige una carpeta de este equipo para anclarla
 	Choose a folder…	Elegir una carpeta…
 	Choose a layout:	Elige una disposición:
+	Choose a logo	Elige un logotipo
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Elige una imagen PNG o JPEG (hasta 4 MiB). Se conserva la transparencia.
 	Choose a provider.	Elija un proveedor.
 	Choose a stamp, then click on the page to place it.	Elige un sello y haz clic en la página para colocarlo.
@@ -1302,6 +1305,8 @@ certificate	Key usage	Uso de la clave
 	Location: 	Ubicación: 
 	Lock comment	Bloquear comentario
 	Logical Reading Order	Orden de lectura lógico
+	Logo	Logotipo
+	Logo and name	Logotipo y nombre
 	Looking for a local model runtime…	Buscando un entorno local de modelos…
 	Looking for certificates…	Buscando certificados…
 	Looking for PDFs…	Buscando PDF…
@@ -1535,6 +1540,7 @@ scroll speed	Normal	Normal
 	Not present	No presente
 	Not rated	Sin valorar
 	Note	Nota
+	Nothing	Nada
 	nothing in the file matches this document	nada en el archivo coincide con este documento
 	Nothing to redo	Nada que rehacer
 	nothing to redo	nada que rehacer
@@ -1745,6 +1751,7 @@ animation effects	On	Activados
 	PdfCraft web page	Página web de PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft funciona sin conexión. Sin telemetría, sin cuenta y sin procesamiento en la nube, salvo que añadas un proveedor.
 	PdfCraft {v} is available.	PdfCraft {v} está disponible.
+	PdfCraft's own	El de PdfCraft
 	People may need more time to respond. Check that nothing has a time limit.	Algunas personas pueden necesitar más tiempo para responder. Comprueba que nada tenga un límite de tiempo.
 	Permissions password	Contraseña de permisos
 	Permitted actions after certifying	Acciones permitidas después de certificar
@@ -2250,6 +2257,7 @@ key	Shift	Mayús
 	Show in Explorer	Mostrar en el Explorador
 	Show in Finder	Mostrar en el Finder
 	Show in folder	Mostrar en la carpeta
+	Show in the tab strip	Mostrar en la barra de pestañas
 	Show layer	Mostrar capa
 	Show less	Mostrar menos
 	Show on the page which fields each field reads	Mostrar en la página qué campos lee cada campo
@@ -2661,6 +2669,8 @@ calendar weekday	Th	Ju
 	This drawing exceeds the snapping limit; only the first paths are used.	Este dibujo supera el límite de ajuste; solo se usan los primeros trazados.
 	This field is locked. Unlock it to change its properties.	Este campo está bloqueado. Desbloquéalo para cambiar sus propiedades.
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	La fuente de este campo no puede mostrar «{c}» ({code}), así que PdfCraft muestra ? en su lugar. El valor se guarda y los demás visores de PDF vuelven a dibujar el campo a partir de él.
+	This file can't be used as the logo: it's larger than {max} MB.	Este archivo no puede usarse como logotipo: ocupa más de {max} MB.
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	Este archivo no puede usarse como logotipo: su ruta no es UTF-8 válido, así que no podría guardarse con los ajustes.
 	This file changed on disk. Reload it to see the new version; your unsaved changes will be lost.	Este archivo cambió en el disco. Recárgalo para ver la versión nueva; se perderán los cambios sin guardar.
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Este archivo cambió en el disco. Recargar muestra la versión nueva y descarta los cambios sin guardar; Guardar la reemplaza por esta versión.
 	This file is already as small as it can be made ({size}). No copy was saved.	Este archivo ya es lo más pequeño posible ({size}). No se guardó ninguna copia.
