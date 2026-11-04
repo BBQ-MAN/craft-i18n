@@ -1,4 +1,4 @@
-# lo (lo) interface catalog for PdfCraft.
+# ພາສາລາວ (lo) interface catalog for PdfCraft.
 # Columns, separated by a TAB:  context <TAB> English source text <TAB> translation
 #   context  usually empty. `@plural`, `@id` and `@msg` mean something to the apps; any other
 #            word is a label that tells apart two meanings of the same English.
@@ -20,6 +20,7 @@
 	 · password-protected	 · ປົກປ້ອງດ້ວຍລະຫັດຜ່ານ
 	% of all commits	% ຂອງຄອມມິດທັງໝົດ
 	(none)	(ບໍ່ມີ)
+	+ Page {p}	+ ໜ້າ {p}
 	+Bin	+Bin
 	+LOC	+LOC
 	, Expires: 	, ໝົດອາຍຸ: 
@@ -33,24 +34,34 @@
 	1 page	1 ໜ້າ
 	1 page selected	ເລືອກແລ້ວ 1 ໜ້າ
 	1 page selected.	ເລືອກແລ້ວ 1 ໜ້າ.
+	1 page was scanned.	1 page was scanned.
 	180 degrees	180 ອົງສາ
 	4 x 6 in label (101.6 x 152.4 mm)	ປ້າຍ 4 x 6 ນິ້ວ (101.6 x 152.4 ມມ)
 	9 digit, A letter, O letter or digit, X any character	9: ຕົວເລກ, A: ຕົວອັກສອນ, O: ຕົວອັກສອນ ຫຼື ຕົວເລກ, X: ຕົວອັກສອນໃດກໍໄດ້
 	; 1 page already had text	; 1 ໜ້າມີຂໍ້ຄວາມຢູ່ແລ້ວ
 	; failed: {list}	; ບໍ່ສຳເລັດ: {list}
+	; skipped: {n}	; ຂ້າມ: {n}
 	; {n} pages already had text	; {n} ໜ້າມີຂໍ້ຄວາມຢູ່ແລ້ວ
 	? of {n}	? ຈາກ {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} ແຖວ (Δ {delta}), +{bin_added} / −{bin_deleted} ໄຟລ໌ບາຍນາຣີ, {first} – {last}
+	[Custom]	[ກຳນົດເອງ]
 	`{command}` {when}	`{command}` {when}
 	a bookmark cannot be moved inside itself	ບໍ່ສາມາດຍ້າຍບຸກມາກເຂົ້າໄປໄວ້ໃນຕົວມັນເອງໄດ້
 	A button	ປຸ່ມ
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	ແອັບພລິເຄຊັນ PDF ໂອເພນຊອດແບບ clean-room ທີ່ຂຽນດ້ວຍ Rust. ພາຍໃຕ້ສັນຍາອະນຸຍາດ MIT ຫຼື Apache-2.0.
+	A colour on this page couldn't be computed and is shown in a fallback colour.	ບໍ່ສາມາດຄຳນວນສີໜຶ່ງໃນໜ້ານີ້ໄດ້ ຈຶ່ງສະແດງດ້ວຍສີສຳຮອງ.
+	A cover on the scanner is open.	A cover on the scanner is open.
 	A diagonal CONFIDENTIAL watermark on every page.	ເພີ່ມລາຍນ້ຳ CONFIDENTIAL ແວງສະຫຼຽງໃນທຸກໆ ໜ້າ.
 	a document must keep at least one page	ເອກະສານຕ້ອງເຫຼືອໄວ້ຢ່າງໜ້ອຍໜຶ່ງໜ້າ
 	A document needs at least one page: copy instead	ເອກະສານຕ້ອງມີຢ່າງໜ້ອຍໜຶ່ງໜ້າ: ໃຫ້ສຳເນົາແທນ
 	A form field has additional actions	ຊ່ອງຟອມມີການກະທຳເພີ່ມເຕີມ
 	A link	ລິ້ງ
+	A link or special file, which isn't followed	A link or special file, which isn't followed
+	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	ໂລໂກ້ ຫຼື ຊື່ ຢູ່ທາງຊ້າຍຂອງແທັບ, ບ່ອນທີ່ແຖບຫົວຂໍ້ຈະສະແດງ: ຂອງ PdfCraft ເອງ ຫຼື ຂອງບໍລິສັດທ່ານ.
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
 	A picture covers page {pages} (a scan?), so the background won't show there.	ມີຮູບພາບປົກໜ້າ {pages} ຢູ່ (ພາບສະແກນ?), ສະນັ້ນພື້ນຫຼັງຈະບໍ່ສະແດງຢູ່ບ່ອນນັ້ນ.
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	ລາຍເຊັນທີ່ວາງໄວ້ເປັນຄຳເຫັນຈົນກວ່າຈະຖືກລັອກ: ທຸກຄົນທີ່ມີໂປຣແກຣມແກ້ໄຂ PDF ສາມາດຍ້າຍ ຫຼື ລຶບມັນອອກໄດ້. ການລັອກຈະເຮັດໃຫ້ຂໍ້ຄວາມ, ເຄື່ອງໝາຍ ແລະ ລາຍເຊັນຂອງ ຕື່ມຂໍ້ມູນ & ເຊັນ ກາຍເປັນສ່ວນໜຶ່ງຂອງໜ້າ.
+	A PNG or SVG file. It is read from this place each time PdfCraft starts.	ໄຟລ໌ PNG ຫຼື SVG. ມັນຈະຖືກອ່ານຈາກບ່ອນນີ້ທຸກຄັ້ງທີ່ PdfCraft ເລີ່ມຕົ້ນ.
 	A script	ສະຄຣິບ
 	A selected field has no widget on any page, so the fields can't be edited together.	ຊ່ອງຂໍ້ມູນທີ່ເລືອກບໍ່ມີ widget ໃນໜ້າໃດເລີຍ, ຈຶ່ງບໍ່ສາມາດແກ້ໄຂພ້ອມກັນໄດ້.
 	A stream refers to an external file	ສະຕຣີມອ້າງອີງເຖິງໄຟລ໌ພາຍນອກ
@@ -58,10 +69,14 @@
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	ບົດສະຫຼຸບຫຍໍ້ອະທິບາຍເຖິງຈຸດປະສົງ ແລະ ໂຄງຮ່າງຂອງຕາຕະລາງ. ເພີ່ມຄຸນລັກສະນະ Summary ໃສ່ແຕ່ລະຕາຕະລາງ.
 	About	ກ່ຽວກັບ
 	About PdfCraft	ກ່ຽວກັບ PdfCraft
+	About {app}	ກ່ຽວກັບ {app}
+	about {h} h {m} min left	ເຫຼືອປະມານ {h} ຊມ {m} ນາທີ
+	about {n} min left	ເຫຼືອປະມານ {n} ນາທີ
 	Accepted	ຍອມຮັບແລ້ວ
 	Accessibility	ການເຂົ້າເຖິງ
 	Accessibility Checker	ຕົວກວດສອບການເຂົ້າເຖິງ
 	Accessibility Checker Options	ຕົວເລືອກການກວດສອບການເຂົ້າເຖິງ
+	Accessibility panel	ແຜງການເຂົ້າເຖິງ
 	Accessibility permission flag	ເຄື່ອງໝາຍສິດທິການເຂົ້າເຖິງ
 	Accessibility permission flag is set	ຕັ້ງຄ່າເຄື່ອງໝາຍສິດທິການເຂົ້າເຖິງແລ້ວ
 	Acrobat 3.0 and later (40-bit RC4)	Acrobat 3.0 ແລະ ໃໝ່ກວ່າ (40-bit RC4)
@@ -78,6 +93,7 @@
 	Actual size	ຂະໜາດຕົວຈິງ
 	Actual text	ຂໍ້ຄວາມຈິງ
 	Add	ເພີ່ມ
+	Add a bookmark for each file	ເພີ່ມບຸກມາກໃຫ້ແຕ່ລະໄຟລ໌
 	Add a button	ເພີ່ມປຸ່ມ
 	Add a callout	ເພີ່ມກ່ອງຂໍ້ຄວາມຊີ້ບອກ
 	Add a checkbox	ເພີ່ມກ່ອງໝາຍ
@@ -85,7 +101,9 @@
 	Add a date field	ເພີ່ມຊ່ອງວັນທີ
 	Add a digital signature field	ເພີ່ມຊ່ອງລາຍເຊັນດິຈິຕອນ
 	Add a drop-down list	ເພີ່ມລາຍການເລື່ອນລົງ
+	Add a line filled in when the stamp is placed	ເພີ່ມແຖວທີ່ຈະຖືກຕື່ມເມື່ອວາງກາປະທັບ
 	Add a list box	ເພີ່ມກ່ອງລາຍການ
+	Add a page from template {name}	ເພີ່ມໜ້າຈາກແມ່ແບບ {name}
 	Add a radio button	ເພີ່ມປຸ່ມຕົວເລືອກ
 	Add a reply	ເພີ່ມການຕອບກັບ
 	Add a stamp	ເພີ່ມກາປະທັບ
@@ -115,6 +133,7 @@
 	Add drawing	ເພີ່ມຮູບແຕ້ມ
 	Add field	ເພີ່ມຊ່ອງຂໍ້ມູນ
 	Add file attachment	ເພີ່ມໄຟລ໌ແນບ
+	Add files or folders to recognize.	ເພີ່ມໄຟລ໌ ຫຼື ໂຟນເດີເພື່ອຈຳແນກຂໍ້ຄວາມ.
 	Add files to combine	ເພີ່ມໄຟລ໌ເພື່ອຮວມ
 	Add files…	ເພີ່ມໄຟລ໌…
 	Add folder	ເພີ່ມໂຟນເດີ
@@ -152,6 +171,7 @@
 	Add the choices people pick from.	ເພີ່ມຕົວເລືອກໃຫ້ຜູ້ໃຊ້ເລືອກ.
 	Add the files to combine	ເພີ່ມໄຟລ໌ທີ່ຈະຮວມກັນ
 	Add the steps this action runs, in order.	ເພີ່ມຂັ້ນຕອນທີ່ການກະທຳນີ້ຈະປະຕິບັດຕາມລຳດັບ.
+	Add to dictionary	ເພີ່ມໃສ່ພົດຈະນານຸກົມ
 	Add to Trusted Certificates	ເພີ່ມເຂົ້າໃນໃບຢັ້ງຢືນທີ່ເຊື່ອຖື
 	Add to trusted certificates	ເພີ່ມເຂົ້າໃນໃບຢັ້ງຢືນທີ່ເຊື່ອຖື
 	Add underline	ເພີ່ມເສັ້ນກ້ອງ
@@ -170,11 +190,14 @@
 	Advanced options	ຕົວເລືອກຂັ້ນສູງ
 	Advanced Options {chevron}	ຕົວເລືອກຂັ້ນສູງ {chevron}
 	Advanced search…	ການຄົ້ນຫາຂັ້ນສູງ…
+	Advanced…	Advanced…
+	AI Assistant	ຜູ້ຊ່ວຍ AI
 	AI assistant	ຜູ້ຊ່ວຍ AI
 	Algorithm	ອັລກໍຣິທຶມ
 	Align	ຈັດລຽງ
 	Align fields	ຈັດລຽງຊ່ອງຂໍ້ມູນ
 	Align left	ຈັດຊິດຊ້າຍ
+	Align objects	ຈັດລຽງວັດຖຸ
 	Align right	ຈັດຊິດຂວາ
 	Alignment:	ການຈັດວາງ:
 	All	ທັງໝົດ
@@ -187,6 +210,7 @@
 	All open documents	ທຸກເອກະສານທີ່ເປີດຢູ່
 	All page content is tagged	ເນື້ອໃນທັງໝົດຂອງໜ້າມີແທັກແລ້ວ
 	All pages	ທຸກໜ້າ
+	All pages asks the driver for the whole stack.	All pages asks the driver for the whole stack.
 	All pages in document	ທຸກໜ້າໃນເອກະສານ
 	All pages in range	ທຸກໜ້າໃນຂອບເຂດ
 	All tools	ເຄື່ອງມືທັງໝົດ
@@ -196,6 +220,7 @@
 	Allowed	ອະນຸຍາດ
 	already a PDF	ເປັນ PDF ຢູ່ແລ້ວ
 	Also recognize pages that already have text	ຮັບຮູ້ຂໍ້ຄວາມໃນໜ້າທີ່ມີຂໍ້ຄວາມຢູ່ແລ້ວນຳດ້ວຍ
+	Alt combinations can't be shortcuts. Try Ctrl or Shift.	ການປະສົມກັບ Alt ບໍ່ສາມາດເປັນປຸ່ມລັດໄດ້. ລອງ Ctrl ຫຼື Shift.
 	Alternate Text	ຂໍ້ຄວາມທົດແທນ
 	Alternate text	ຂໍ້ຄວາມອະທິບາຍແທນ
 	Alternate text inside an element that already has alternate text is never read. Remove the inner alternate text.	ຂໍ້ຄວາມທົດແທນທີ່ຢູ່ພາຍໃນອົງປະກອບທີ່ມີຂໍ້ຄວາມທົດແທນຢູ່ແລ້ວຈະບໍ່ຖືກອ່ານ. ລຶບຂໍ້ຄວາມທົດແທນດ້ານໃນອອກ.
@@ -219,6 +244,7 @@
 	Any	ໃດກໍໄດ້
 	Any except extracting pages	ທຸກຢ່າງຍົກເວັ້ນການແຍກໜ້າອອກ
 	Anyone opening the document will need this password. It's applied when you save.	ທຸກຄົນທີ່ເປີດເອກະສານຈະຕ້ອງໃຊ້ລະຫັດຜ່ານນີ້. ມັນຈະຖືກນຳໃຊ້ເມື່ອທ່ານບັນທຶກ.
+	App icon	ໄອຄອນແອັບ
 	Appear behind page	ສະແດງຢູ່ທາງຫຼັງໜ້າ
 	Appear on top of page	ສະແດງຢູ່ເທິງສຸດຂອງໜ້າ
 	Appearance	ຮູບລັກສະນະ
@@ -240,10 +266,12 @@
 	Arbitrary Mask	ມາກສ໌ແບບກຳນົດເອງ
 	Archive documents	ເກັບເອກະສານເຂົ້າຄັງ
 	Area	ເນື້ອທີ່
+	Arrange	ຈັດລຳດັບ
 	Arrange image	ຈັດຮູບພາບ
 	Arrow	ລູກສອນ
 	ArtCraft website	ເວັບໄຊຕ໌ ArtCraft
 	Ask about this document	ຖາມກ່ຽວກັບເອກະສານນີ້
+	Ask before a document opens in Full Screen mode	ຖາມກ່ອນເອກະສານຈະເປີດໃນໂໝດເຕັມຈໍ
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	ກວດສອບລຸ້ນລ່າສຸດຈາກ GitHub. ຈະບໍ່ມີການດາວໂຫຼດ ຫຼື ຕິດຕັ້ງໂດຍອັດຕະໂນມັດ.
 	Associated with content	ເຊື່ອມໂຍງກັບເນື້ອໃນ
 	At least one signature has problems.	ມີຢ່າງໜ້ອຍໜຶ່ງລາຍເຊັນທີ່ມີບັນຫາ.
@@ -253,6 +281,7 @@
 	Attach file	ແນບໄຟລ໌
 	Attachment	ໄຟລ໌ແນບ
 	Attachments	ໄຟລ໌ແນບ
+	Attachments panel	ແຜງໄຟລ໌ແນບ
 	Attachments Panel and Page	ແຜງໄຟລ໌ແນບ ແລະ ໜ້າ
 	Audit space usage	ກວດສອບການໃຊ້ພື້ນທີ່
 	Audit space usage…	ກວດສອບການໃຊ້ພື້ນທີ່…
@@ -262,21 +291,27 @@
 	Auto ({percent}%)	ອັດຕະໂນມັດ ({percent}%)
 	Auto follows the system's text size. Pages always render at the display's full resolution.	ອັດຕະໂນມັດຈະປັບຕາມຂະໜາດຕົວໜັງສືຂອງລະບົບ. ໜ້າຕ່າງໆຈະສະແດງຜົນດ້ວຍຄວາມລະອຽດສູງສຸດຂອງຈໍສະແດງຜົນສະເໝີ.
 	Auto portrait/landscape	ແນວຕັ້ງ/ແນວນອນອັດຕະໂນມັດ
+	Auto-deskew	Auto-deskew
 	Auto-rotate pages	ໝູນໜ້າອັດຕະໂນມັດ
 	Auto-size text to fit redaction region	ປັບຂະໜາດຂໍ້ຄວາມອັດຕະໂນມັດໃຫ້ພໍດີກັບພື້ນທີ່ປິດບັງ
+	Automatic (historical model)	ອັດຕະໂນມັດ (ແບບຈຳລອງປະຫວັດສາດ)
+	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	ສະຄຣິບອັດຕະໂນມັດຂອງ AcroForm ຖືກປິດໄວ້ຈົນກວ່າຈະມີການແຍກການທຳງານທີ່ປອດໄພ; ຄ່າຟິວທີ່ບັນທຶກໄວ້ຖືກຮັກສາໄວ້. ສະຄຣິບຂອງປຸ່ມ ແລະ ຄອນໂຊນຍັງໃຊ້ໄດ້.
 	Automatically tag PDF	ຕິດແທັກ PDF ໂດຍອັດຕະໂນມັດ
 	Available	ພ້ອມໃຊ້ງານ
 	average	ຄ່າສະເລ່ຍ
 	Back	ກັບຄືນ
 	Back side only	ສະເພາະດ້ານຫຼັງ
 	Back to all tools	ກັບໄປຫາເຄື່ອງມືທັງໝົດ
+	Back to the default keys	ກັບໄປຫາປຸ່ມເລີ່ມຕົ້ນ
 	Back to the document	ກັບໄປທີ່ເອກະສານ
 	Background	ພື້ນຫຼັງ
 	background	ພື້ນຫຼັງ
 	Basic constraints	ຂໍ້ກຳນົດພື້ນຖານ
 	Bates numbering	ເລກ Bates
+	Bed	Bed
 	Before each selected page (select pages in Organize)	ກ່ອນແຕ່ລະໜ້າທີ່ເລືອກ (ເລືອກໜ້າໃນສ່ວນຈັດລະບຽບ)
 	Before the number	ຢູ່ທາງໜ້າຕົວເລກ
+	Behind text and images	ຢູ່ຫຼັງຂໍ້ຄວາມ ແລະ ຮູບພາບ
 	Beveled	ຂອບນູນ
 	Bicubic downsampling to	ຫຼຸດຄວາມລະອຽດແບບ Bicubic ລົງເປັນ:
 	Binary assets added	ເພີ່ມໄຟລ໌ບາຍນາຣີແລ້ວ
@@ -287,6 +322,7 @@
 	Black and white	ຂາວດຳ
 	Black on white	ຕົວໜັງສືດຳພື້ນຂາວ
 	Blank page	ໜ້າຫວ່າງເປົ່າ
+	Blend with page content	ປະສົມກັບເນື້ອຫາໜ້າ
 	Blue	ຟ້າ
 	Bold	ຕົວໜາ
 	Booklet	ປຶ້ມນ້ອຍ
@@ -294,16 +330,25 @@
 	Bookmark options	ຕົວເລືອກບຸກມາກ
 	Bookmarks	ບຸກມາກ
 	Bookmarks are present in large documents	ມີບຸກມາກໃນເອກະສານຂະໜາດໃຫຍ່
+	Bookmarks panel	ແຜງບຸກມາກ
 	Bookmarks Panel and Page	ແຜງບຸກມາກ ແລະ ໜ້າ
 	Border Color:	ສີເສັ້ນຂອບ:
+	Border colour	ສີເສັ້ນຂອບ
+	Border opacity	ຄວາມໂປ່ງແສງຂອງຂອບ
+	Border shape	ຮູບຮ່າງເສັ້ນຂອບ
+	Border:	ເສັ້ນຂອບ:
 	Borders and Colors	ເສັ້ນຂອບ ແລະ ສີ
 	Both	ທັງສອງ
 	Both sides	ທັງສອງໜ້າ
 	Bottom	ລຸ່ມ
+	Bottom left	ລຸ່ມຊ້າຍ
+	Bottom right	ລຸ່ມຂວາ
 	Bottom:	ລຸ່ມ:
 	Box	ກ່ອງ
-	Bring forward	ນຳມາທາງໜ້າ
-	Bring to front	ນຳມາໄວ້ໜ້າສຸດ
+	Brightness	Brightness
+	Bring All to Front	ນຳທັງໝົດມາໄວ້ດ້ານໜ້າ
+	Bring forward	ຂຶ້ນໜຶ່ງຊັ້ນ
+	Bring to front	ໜ້າສຸດ
 	Bring your own model (off by default)	ໃຊ້ໂມເດວຂອງທ່ານເອງ (ປິດໄວ້ເປັນຄ່າເລີ່ມຕົ້ນ)
 	Browser's print dialog	ກ່ອງຂໍ້ຄວາມການພິມຂອງບຣາວເຊີ
 	Browse…	ເລືອກເບິ່ງ…
@@ -319,6 +364,8 @@
 	Callout	ຄຳບັນຍາຍຊີ້ບອກ
 	Can't be read: {e}	ບໍ່ສາມາດອ່ານໄດ້: {e}
 	Cancel	ຍົກເລີກ
+	Cancel drawing	ຍົກເລີກການແຕ້ມ
+	Cancel reverse sides	Cancel reverse sides
 	Cancelled	ຍົກເລີກແລ້ວ
 	Cancelling…	ກຳລັງຍົກເລີກ…
 	Case-sensitive	ແຍກຕົວພິມໃຫຍ່-ນ້ອຍ
@@ -331,12 +378,18 @@
 	Center vertically	ເຄິ່ງກາງແນວຕັ້ງ
 	Center window on screen	ຈັດປ່ອງຢ້ຽມໄວ້ເຄິ່ງກາງໜ້າຈໍ
 	Centre	ຈັດເຄິ່ງກາງ
+	Centre point	ຈຸດສູນກາງ
+	Centre points	ຈຸດສູນກາງ
 	Certificate Viewer	ຕົວເບິ່ງໃບຢັ້ງຢືນ
 	Certificates	ໃບຢັ້ງຢືນ
 	Certified by {by}	ຢັ້ງຢືນໂດຍ {by}
 	Certify	ຢັ້ງຢືນ
 	Certify (invisible signature)	ຢັ້ງຢືນ (ລາຍເຊັນທີ່ເບິ່ງບໍ່ເຫັນ)
 	Certify (visible signature)	ຢັ້ງຢືນ (ລາຍເຊັນທີ່ເບິ່ງເຫັນ)
+	Change	ປ່ຽນ
+	Change a signed document?	ປ່ຽນເອກະສານທີ່ເຊັນແລ້ວບໍ່?
+	Change anyway	ປ່ຽນເລີຍ
+	Change colour	ປ່ຽນສີ
 	Change comment properties	ປ່ຽນຄຸນສົມບັດຄວາມເຫັນ
 	Change document properties	ປ່ຽນແປງຄຸນສົມບັດເອກະສານ
 	Change field properties	ປ່ຽນຄຸນສົມບັດຊ່ອງຂໍ້ມູນ
@@ -352,6 +405,7 @@
 	Change {key}	ປ່ຽນ {key}
 	Change {what}	ປ່ຽນແປງ {what}
 	Changes allowed	ອະນຸຍາດໃຫ້ປ່ຽນແປງ
+	Changes here apply to all {n} selected comments	ການປ່ຽນແປງຢູ່ນີ້ຈະໃຊ້ກັບຄຳເຫັນທີ່ເລືອກທັງໝົດ {n} ລາຍການ
 	Changing the document	ການດັດແກ້ເອກະສານ
 	Character encoding	ການເຂົ້າລະຫັດຕົວອັກສອນ
 	Character limit 0 means no limit. A comb of characters needs a limit.	ຈຳກັດຕົວອັກສອນ 0 ໝາຍເຖິງບໍ່ຈຳກັດ. ການແບ່ງຊ່ອງຕົວອັກສອນຕ້ອງມີການກຳນົດຂອບເຂດ.
@@ -368,16 +422,24 @@
 	Check Box Style:	ຮູບແບບກ່ອງໝາຍເລືອກ:
 	Check for accessibility	ກວດສອບຄວາມສະດວກໃນການເຂົ້າເຖິງ
 	Check for accessibility…	ກວດສອບຄວາມສະດວກໃນການເຂົ້າເຖິງ…
+	Check for updates	ກວດສອບການອັບເດດ
 	Check for updates…	ກວດສອບການອັບເດດ…
 	Check spelling	ກວດສອບຕົວສະກົດ
+	Check spelling while typing	ກວດການສະກົດຄຳໃນຂະນະພິມ
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	ກວດສອບວ່າແທັກຖືກອ່ານຕາມລຳດັບສາຍຕາຂອງຜູ້ອ່ານຫຼືບໍ່. ໃຊ້ເຄື່ອງມືລຳດັບການອ່ານ ຫຼື ແຜງແທັກເພື່ອແກ້ໄຂ.
 	Check the pages	ກວດສອບໜ້າ
 	Check the pages of {name}: {why}	ກວດສອບໜ້າຕ່າງໆຂອງ {name}: {why}
+	Check the scanner is on and connected, then choose Continue.	Check the scanner is on and connected, then choose Continue.
+	Check the scanner is on and connected, then choose Try again.	Check the scanner is on and connected, then choose Try again.
 	CheckBox	ກ່ອງໝາຍເລືອກ
 	Checkbox	ກ່ອງໝາຍ
 	Checked	ໝາຍຖືກແລ້ວ
+	Checking for a newer version…	ກຳລັງກວດສອບເວີຊັນໃໝ່…
 	Checking Options ({on} of 32 in all categories)	ຕົວເລືອກການກວດສອບ ({on} ຈາກທັງໝົດ 32 ລາຍການໃນທຸກໝວດ)
 	Checking pages…	ກຳລັງກວດສອບໜ້າ…
+	Checking the scanner…	Checking the scanner…
 	Checkmark	ເຄື່ອງໝາຍຖືກ
 	Choose a folder for the exported files	ເລືອກໂຟນເດີສຳລັບໄຟລ໌ທີ່ສົ່ງອອກ
 	Choose a folder for the extracted pages	ເລືອກໂຟນເດີສຳລັບໜ້າທີ່ແຍກອອກມາ
@@ -386,13 +448,18 @@
 	Choose a folder for the split files	ເລືອກໂຟນເດີສຳລັບໄຟລ໌ທີ່ແບ່ງແລ້ວ
 	Choose a folder on this computer to pin	ເລືອກໂຟນເດີໃນຄອມພິວເຕີນີ້ເພື່ອປັກໝຸດ
 	Choose a layout:	ເລືອກໂຄງຮ່າງ:
+	Choose a logo	ເລືອກໂລໂກ້
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	ເລືອກຮູບພາບ PNG ຫຼື JPEG (ສູງສຸດບໍ່ເກີນ 4 MiB). ຄວາມໂປ່ງໃສຈະຖືກຮັກສາໄວ້.
+	Choose a provider.	ເລືອກຜູ້ໃຫ້ບໍລິການ.
 	Choose a stamp, then click on the page to place it.	ເລືອກຕາປະທັບ, ແລ້ວກົດໃສ່ໜ້າເພື່ອວາງ.
 	Choose an image	ເລືອກຮູບພາບ
 	Choose images	ເລືອກຮູບພາບ
 	Choose image…	ເລືອກຮູບພາບ…
+	Choose individual tools	ເລືອກເຄື່ອງມືແຕ່ລະອັນ
+	Choose new keys for {command}	ເລືອກປຸ່ມໃໝ່ສຳລັບ {command}
 	Choose photo…	ເລືອກຮູບຖ່າຍ…
 	Choose the digital ID that you want to use for signing:	ເລືອກ Digital ID ທີ່ທ່ານຕ້ອງການໃຊ້ເຊັນ:
+	Choose…	ເລືອກ…
 	Circle	ວົງມົນ
 	Clean Up	ອະນາໄມ
 	Clean-up	ອະນາໄມປັບແຕ່ງ
@@ -400,16 +467,21 @@
 	Clear All	ລຶບລ້າງທັງໝົດ
 	Clear all	ລຶບລ້າງທັງໝົດ
 	Clear form	ລຶບຂໍ້ມູນໃນຟອມ
+	Clear personal dictionary	ລ້າງພົດຈະນານຸກົມສ່ວນຕົວ
 	Clear Recent Files	ລຶບລາຍການໄຟລ໌ຫຼ້າສຸດ
 	Clear redaction marks	ລ້າງເຄື່ອງໝາຍປິດບັງຂໍ້ມູນ
+	Clear region	Clear region
 	Clear search	ລ້າງການຄົ້ນຫາ
 	Clear selection / close find	ຍົກເລີກການເລືອກ / ປິດການຄົ້ນຫາ
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	Clear the jam and load the remaining sheets squarely, then choose Continue.
+	Clear the jam and load the sheets squarely, then choose Try again.	Clear the jam and load the sheets squarely, then choose Try again.
 	Click on the page to add a {tool}, or drag to set its size	ກົດໃສ່ໜ້າເພື່ອເພີ່ມ {tool}, ຫຼື ລາກເພື່ອກຳນົດຂະໜາດ
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	ຄລິກໃສ່ໜ້າເພື່ອເພີ່ມຂໍ້ຄວາມ; ແຕ່ລະຄັ້ງທີ່ຄລິກຈະສ້າງກ່ອງໃໝ່ ແລະ ✓ ເພື່ອສຳເລັດ. ລາກລາຍການເພື່ອຍ້າຍ, ລາກມຸມເພື່ອປັບຂະໜາດ, ດັບເບິລຄລິກໃສ່ຂໍ້ຄວາມເພື່ອແກ້ໄຂ.
 	Click text or an image to edit it	ກົດໃສ່ຂໍ້ຄວາມ ຫຼື ຮູບພາບເພື່ອແກ້ໄຂ
 	Click the first point to begin.	ກົດຈຸດທຳອິດເພື່ອເລີ່ມຕົ້ນ.
 	Click to sort, drag to move the column. Drag its edge to resize it.	ກົດເພື່ອຈັດຮຽງ, ລາກເພື່ອຍ້າຍຖັນ. ລາກຂອບເພື່ອປັບຂະໜາດ.
 	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	ກົດໃສ່ຈຸດຍອດ. ກົດ Enter ຫຼື ກົດສອງເທື່ອເພື່ອຈົບການວັດແທກລວງຮອບ ຫຼື ເນື້ອທີ່. ກົດຈຸດທຳອິດເພື່ອປິດຂອບເຂດເນື້ອທີ່.
+	Click where the copied comments go; Escape lets them go	ຄລິກບ່ອນທີ່ຈະວາງຄຳເຫັນທີ່ສຳເນົາໄວ້; Escape ເພື່ອປ່ອຍມັນ
 	Clipboard	ຄລິບບອດ
 	Clockwise 90 degrees	ຕາມເຂັມໂມງ 90 ອົງສາ
 	Close	ປິດ
@@ -418,6 +490,10 @@
 	Close file	ປິດໄຟລ໌
 	Close panel	ປິດແຜງ
 	Close Tab	ປິດແທັບ
+	Close the feeder cover and check the paper, then choose Continue.	Close the feeder cover and check the paper, then choose Continue.
+	Close the feeder cover and check the paper, then choose Try again.	Close the feeder cover and check the paper, then choose Try again.
+	Close Window	ປິດໜ້າຕ່າງ
+	Close window	ປິດໜ້າຕ່າງ
 	Closed arrow	ລູກສອນປາຍປິດ
 	Cloud	ກ້ອນເມກ
 	Collapse	ຫຍໍ້ເຂົ້າ
@@ -426,8 +502,11 @@
 	Collapse all pages	ຫຍໍ້ທຸກໜ້າ
 	Collapse all tools	ຫຍໍ້ເຄື່ອງມືທັງໝົດເຂົ້າ
 	Collapse tag	ຫຍໍ້ແທັກ
+	Collapse {folder}	ຫຍໍ້ {folder}
 	Collate	ຈັດຮຽງຊຸດ
+	Color	Color
 	Color contrast	ຄວາມຄົມຊັດຂອງສີ
+	Color document	Color document
 	Color Images	ຮູບພາບສີ
 	Color Spaces	ພື້ນທີ່ສີ
 	Color:	ສີ:
@@ -438,6 +517,7 @@
 	Comb of characters	ຊ່ອງຕາລາງຕົວອັກສອນ
 	Combine	ຮວມ
 	Combine files	ຮວມໄຟລ໌
+	Combine files in PdfCraft…	ຮວມໄຟລ໌ໃນ PdfCraft…
 	Combine files…	ຮວມໄຟລ໌…
 	Combine the rest	ຮວມສ່ວນທີ່ເຫຼືອ
 	Combined {n} files	ຮວມແລ້ວ {n} ໄຟລ໌
@@ -451,21 +531,26 @@
 	Commenting, filling in form fields, and signing existing signature fields	ການອອກຄວາມເຫັນ, ຕື່ມຂໍ້ມູນໃນຊ່ອງຟອມ ແລະ ເຊັນຊ່ອງລາຍເຊັນທີ່ມີຢູ່
 	Comments	ຄຳເຫັນ
 	Comments & Forms	ຄວາມເຫັນ ແລະ ຟອມ
+	Comments & Markup	ຄຳເຫັນ ແລະ ເຄື່ອງໝາຍ
 	Comments and markups	ຄວາມເຫັນ ແລະ ເຄື່ອງໝາຍປະກອບ
 	Comments only	ສະເພາະຄວາມເຫັນ
 	Comments panel	ແຜງຄຳເຫັນ
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	ຄວາມເຫັນ, ລິ້ງ ແລະ ຊ່ອງຂໍ້ມູນຕ້ອງຢູ່ໃນໂຄງສ້າງຕົ້ນໄມ້ຂອງແທັກຈຶ່ງຈະຖືກອ່ານອອກສຽງໄດ້. ໃສ່ແທັກໃຫ້ຄຳອະທິບາຍປະກອບ.
+	Comments: {n}	ຄຳເຫັນ: {n}
 	Commit selected value immediately	ຢືນຢັນຄ່າທີ່ເລືອກໃນທັນທີ
 	Commits	ຄອມມິດ
 	Common Properties	ຄຸນສົມບັດທົ່ວໄປ
 	Common scales	ມາດຕາສ່ວນທີ່ໃຊ້ທົ່ວໄປ
+	Compact Home (tools and recent files only)	ໜ້າຫຼັກແບບຫຍໍ້ (ສະເພາະເຄື່ອງມື ແລະ ໄຟລ໌ຫຼ້າສຸດ)
 	Company	ບໍລິສັດ
 	Compare	ປຽບທຽບ
 	Compare Files	ປຽບທຽບໄຟລ໌
 	Compare files	ປຽບທຽບໄຟລ໌
 	Compare files…	ປຽບທຽບໄຟລ໌…
+	Compare panel	ແຜງປຽບທຽບ
 	Compare this file with an older version: Compare files… in All tools.	ປຽບທຽບໄຟລ໌ນີ້ກັບເວີຊັນເກົ່າ: ເລືອກ ປຽບທຽບໄຟລ໌… ໃນ ເຄື່ອງມືທັງໝົດ.
 	Compatibility	ຄວາມເຂົ້າກັນໄດ້
+	Complete	ເຮັດໃຫ້ສຳເລັດ
 	Completed	ສຳເລັດແລ້ວ
 	Compress a PDF	ບີບອັດ PDF
 	Compress document structure (object streams)	ບີບອັດໂຄງສ້າງເອກະສານ (ສະຕຣີມວັດຖຸ)
@@ -474,29 +559,48 @@
 	Configure New Digital ID	ກຳນົດຄ່າ Digital ID ໃໝ່
 	Confirm Password	ຢືນຢັນລະຫັດຜ່ານ
 	Conformance level:	ລະດັບຄວາມສອດຄ່ອງ:
+	Connected by USB.	Connected by USB.
 	Connected lines	ເສັ້ນເຊື່ອມຕໍ່
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	Connected over the network (Web Services). Options come from that driver, not the USB one.
 	Console	ຄອນໂຊລ
 	Content copying	ການສຳເນົາເນື້ອໃນ
 	Content copying for accessibility	ການສຳເນົາເນື້ອໃນເພື່ອການເຂົ້າເຖິງ
 	Content Streams	ສະຕຣີມເນື້ອຫາ
 	Continue	ສືບຕໍ່
+	Continue scanning	Continue scanning
+	Continue scanning fronts	Continue scanning fronts
+	Continue scanning reverse sides	Continue scanning reverse sides
 	Continuous scrolling	ເລື່ອນຕໍ່ເນື່ອງ
+	Contrast	Contrast
 	Contributors	ຜູ້ປະກອບສ່ວນ
 	Convert	ແປງໄຟລ໌
 	Convert colors	ແປງລະບົບສີ
+	Convert mode	ໂໝດປ່ຽນຮູບແບບ
+	Convert to PDF and email…	ປ່ຽນເປັນ PDF ແລະ ສົ່ງອີເມວ…
+	Convert to PDF with PdfCraft	ປ່ຽນເປັນ PDF ດ້ວຍ PdfCraft
+	Converted {name}. Approximated: {notes}	ປ່ຽນ {name} ແລ້ວ. ປະມານ: {notes}
 	Copied {what}	ສຳເນົາ {what} ແລ້ວ
 	Copies, two-sided printing and colour are chosen in the browser's print dialog.	ຈຳນວນຊຸດ, ການພິມສອງໜ້າ ແລະ ສີ ແມ່ນຖືກເລືອກໃນກ່ອງຂໍ້ຄວາມການພິມຂອງບຣາວເຊີ.
+	Copies, two-sided printing, colour and the printer are chosen in the system print dialog, which opens when you print.	ຈຳນວນຊຸດ, ການພິມສອງໜ້າ, ສີ ແລະ ເຄື່ອງພິມ ແມ່ນຖືກເລືອກໃນກ່ອງຂໍ້ຄວາມການພິມຂອງລະບົບ ເຊິ່ງຈະເປີດຂຶ້ນເມື່ອທ່ານພິມ.
 	Copies:	ຈຳນວນຊຸດ:
 	Copy	ສຳເນົາ
+	Copy a text box or an image first	ສຳເນົາກ່ອງຂໍ້ຄວາມ ຫຼື ຮູບພາບກ່ອນ
+	Copy comment	ສຳເນົາຄຳເຫັນ
+	Copy comments	ສຳເນົາບັນດາຄຳເຫັນ
+	Copy comments first	ສຳເນົາຄຳເຫັນກ່ອນ
 	Copy Image	ສຳເນົາຮູບພາບ
 	Copy Image in Original Format	ສຳເນົາຮູບພາບໃນຮູບແບບຕົ້ນສະບັບ
 	Copy or cut pages first	ສຳເນົາ ຫຼື ຕັດໜ້າກ່ອນ
+	Copy page numbers	ສຳເນົາເລກໜ້າ
 	Copy pages	ສຳເນົາໜ້າ
 	Copy selected text	ສຳເນົາຂໍ້ຄວາມທີ່ເລືອກ
 	Copy text	ສຳເນົາຂໍ້ຄວາມ
+	Copy the pages with a match as a list such as 1-3, 7	ສຳເນົາໜ້າທີ່ກົງກັນເປັນລາຍການເຊັ່ນ 1-3, 7
 	Correct recognized text	ແກ້ໄຂຂໍ້ຄວາມທີ່ກວດພົບ
 	Could not save: {e}	ບໍ່ສາມາດບັນທຶກໄດ້: {e}
 	Couldn't add {name}: {e}	ບໍ່ສາມາດເພີ່ມ {name} ໄດ້: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
+	Couldn't check for updates: {e}	ບໍ່ສາມາດກວດສອບການອັບເດດໄດ້: {e}
 	Couldn't combine files: {e}	ບໍ່ສາມາດຮວມໄຟລ໌ໄດ້: {e}
 	Couldn't copy the image: {e}	ບໍ່ສາມາດສຳເນົາຮູບພາບໄດ້: {e}
 	Couldn't create a PDF: {e}	ບໍ່ສາມາດສ້າງ PDF ໄດ້: {e}
@@ -531,6 +635,7 @@
 	Counterclockwise 90 degrees	ທວນເຂັມໂມງ 90 ອົງສາ
 	Counting words… {n} pages read	ກຳລັງນັບຄຳ… ອ່ານແລ້ວ {n} ໜ້າ
 	Country/Region	ປະເທດ/ພາກພື້ນ
+	Courier can't draw “{c}” ({code}) in other PDF viewers. Choose Helvetica or Times.	Courier ບໍ່ສາມາດສະແດງ “{c}” ({code}) ໃນໂປຣແກຣມເບິ່ງ PDF ອື່ນໄດ້. ກະລຸນາເລືອກ Helvetica ຫຼື Times.
 	Create	ສ້າງ
 	Create & Edit	ສ້າງ & ແກ້ໄຂ
 	Create a new Digital ID (self-signed, saved to a password-protected file)	ສ້າງ Digital ID ໃໝ່ (ເຊັນດ້ວຍຕົນເອງ, ບັນທຶກລົງໄຟລ໌ທີ່ປ້ອງກັນດ້ວຍລະຫັດຜ່ານ)
@@ -543,6 +648,7 @@
 	Create link	ສ້າງລິ້ງ
 	Create links from URLs	ສ້າງລິ້ງຄ໌ຈາກ URL
 	Create Link…	ສ້າງລິ້ງ…
+	Create PDF	ສ້າງ PDF
 	Create PDF Comment Summary	ສ້າງບົດສະຫຼຸບຄວາມເຫັນ PDF
 	Create PDF comment summary…	ສ້າງບົດສະຫຼຸບຄວາມເຫັນ PDF…
 	Create PDF from clipboard	ສ້າງ PDF ຈາກຄລິບບອດ
@@ -557,7 +663,9 @@
 	Created a PDF from the first {n} files	ສ້າງ PDF ຈາກ {n} ໄຟລ໌ທຳອິດແລ້ວ
 	Created a PDF from {n} files	ສ້າງ PDF ຈາກ {n} ໄຟລ໌ແລ້ວ
 	Created a PDF from {n} files; left out: {names}	ສ້າງ PDF ຈາກ {n} ໄຟລ໌ແລ້ວ; ຍົກເວັ້ນ: {names}
+	Created Scan.pdf	Created Scan.pdf
 	Created {n} links	ສ້າງແລ້ວ {n} ລິ້ງ
+	Created {n} scanned files	Created {n} scanned files
 	Creates 1 file from {n} pages.	ສ້າງ 1 ໄຟລ໌ຈາກ {n} ໜ້າ.
 	Creates {f} files from {n} pages.	ສ້າງ {f} ໄຟລ໌ຈາກ {n} ໜ້າ.
 	Credit Cards	ບັດເຄຣດິດ
@@ -576,7 +684,10 @@ key	Ctrl	Ctrl
 	Current page — type a page number or label (such as iv) and press Enter	ໜ້າປັດຈຸບັນ — ພິມໝາຍເລກໜ້າ ຫຼື ປ້າຍຊື່ (ເຊັ່ນ: iv) ແລ້ວກົດ Enter
 	Custom	ກຳນົດເອງ
 	Custom font	ຟອນກຳນົດເອງ
+	Custom page…	ໜ້າແບບກຳນົດເອງ…
 	Custom scale:	ມາດຕາສ່ວນກຳນົດເອງ:
+	Custom selection	ການເລືອກແບບກຳນົດເອງ
+	Custom size	ຂະໜາດກຳນົດເອງ
 	Custom stamps arrive on the web with file pickers for images	ຕາປະທັບກຳນົດເອງຈະໃຊ້ງານໄດ້ໃນເວັບເມື່ອມີຕົວເລືອກໄຟລ໌ຮູບພາບ
 	Custom text:	ຂໍ້ຄວາມກຳນົດເອງ:
 	Custom:	ກຳນົດເອງ:
@@ -591,6 +702,7 @@ key	Ctrl	Ctrl
 	Dark	ມືດ
 	Dark gray	ສີເທົາເຂັ້ມ
 	Dark gray theme	ຮູບແບບສີເທົາເຂັ້ມ
+	Dark ink	ນ້ຳມຶກສີເຂັ້ມ
 	Dark theme	ຮູບແບບມືດ
 	Dashed	ເສັ້ນຂາດ
 	Date	ວັນທີ
@@ -613,11 +725,14 @@ key	Ctrl	Ctrl
 key	Delete	Delete
 	Delete bookmark	ລຶບບຸກມາກ
 	Delete comment	ລຶບຄວາມເຫັນ
+	Delete comments	ລຶບບັນດາຄຳເຫັນ
 	Delete content	ລຶບເນື້ອໃນ
 	Delete document JavaScript	ລຶບ JavaScript ຂອງເອກະສານ
 	Delete field	ລຶບຊ່ອງຂໍ້ມູນ
 	Delete image	ລຶບຮູບພາບ
 	Delete link	ລຶບລິ້ງ
+	Delete object	ລຶບວັດຖຸ
+	Delete objects	ລຶບຫຼາຍວັດຖຸ
 	Delete page	ລຶບໜ້າ
 	Delete page {label}	ລຶບໜ້າ {label}
 	Delete pages	ລຶບໜ້າ
@@ -625,18 +740,23 @@ key	Delete	Delete
 	Delete pages after extracting	ລຶບໜ້າອອກຫຼັງຈາກແຍກອອກແລ້ວ
 	Delete selected fields	ລຶບຊ່ອງຂໍ້ມູນທີ່ເລືອກ
 	Delete selected pages (Organize)	ລຶບໜ້າທີ່ເລືອກ (ຈັດລະບຽບໜ້າ)
+	Delete Settings	ລຶບການຕັ້ງຄ່າ
 	Delete stamp	ລຶບກາປະທັບ
 	Delete the selected pages	ລຶບໜ້າທີ່ເລືອກ
+	Delete the selection	ລຶບສິ່ງທີ່ເລືອກ
 	Delete {o}	ລຶບ {o}
 	Deleted	ລຶບອອກ
+	Deleted page	ໜ້າທີ່ລຶບ
 	Describe the figure	ອະທິບາຍຮູບພາບ
 	Description	ຄຳອະທິບາຍ
 	Description:	ຄຳອະທິບາຍ:
+	Deskew pages	ແກ້ໄຂຄວາມອຽງຂອງໜ້າ
 	Details	ລາຍລະອຽດ
 	Detect form fields	ກວດຫາຊ່ອງຟອມ
 	Detected 1 form field	ກວດພົບຊ່ອງຟອມ 1 ຊ່ອງ
 	Detected {n} form fields	ກວດພົບຊ່ອງຟອມ {n} ຊ່ອງ
 	Device colour is used, but there is no PDF/A output intent	ມີການໃຊ້ສີອຸປະກອນ ແຕ່ບໍ່ມີ PDF/A output intent
+	Device library (PKCS #11)	ຫ້ອງສະໝຸດອຸປະກອນ (PKCS #11)
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	ມີການໃຊ້ DeviceCMYK: ຈຳເປັນຕ້ອງມີ CMYK output intent (ບໍ່ໄດ້ເພີ່ມໂດຍອັດຕະໂນມັດ)
 	Diagnostic details	ລາຍລະອຽດການກວດວິນິດໄສ
 	Diamond	ຮູບດອກຈັນ
@@ -649,6 +769,7 @@ key	Delete	Delete
 	Direction:	ທິດທາງ:
 	Discard	ປະຖິ້ມ
 	Discard all comments, forms and multimedia	ຕັດຄຳເຫັນ, ຟອມ ແລະ ມັລຕິມີເດຍທັງໝົດອອກ
+	Discard all form submission, import and reset actions	ຕັດການດຳເນີນການສົ່ງ ນຳເຂົ້າ ແລະຕັ້ງຄ່າຟອມໃໝ່ທັງໝົດອອກ
 	Discard all links, actions and JavaScript	ຕັດລິ້ງຄ໌, ການກະທຳ ແລະ JavaScript ທັງໝົດອອກ
 	Discard all object data (file attachments)	ຕັດຂໍ້ມູນວັດຖຸທັງໝົດ (ໄຟລ໌ແນບ) ອອກ
 	Discard alternate images	ຕັດຮູບພາບສຳຮອງອອກ
@@ -664,12 +785,14 @@ key	Delete	Delete
 	Discard this text (Esc)	ປະຖິ້ມຂໍ້ຄວາມນີ້ (Esc)
 	Discard User Data	ຕັດຂໍ້ມູນຜູ້ໃຊ້ອອກ
 	Dismiss	ປິດໄປ
+	Display	ຈໍສະແດງຜົນ
 	Display name	ຊື່ສະແດງຜົນ
 	Display theme	ຮູບແບບການສະແດງຜົນ
 	Distance	ໄລຍະຫ່າງ
 	Distinguished name	ຊື່ສະເພາະ (Distinguished Name)
 	Distribute	ກະຈາຍໄລຍະຫ່າງ
 	Distribute fields	ກະຈາຍໄລຍະຫ່າງຊ່ອງຂໍ້ມູນ
+	Distribute objects	ກະຈາຍໄລຍະຫ່າງວັດຖຸ
 	DN: 	DN: 
 	Document	ເອກະສານ
 	Document actions	ການກະທຳຂອງເອກະສານ
@@ -690,8 +813,10 @@ key	Delete	Delete
 	Document structure provides a logical reading order	ໂຄງສ້າງເອກະສານມີລຳດັບການອ່ານຕາມເຫດຜົນ
 	Document Title	ຊື່ເອກະສານ
 	Document title is showing in title bar	ຊື່ເອກະສານກຳລັງສະແດງຢູ່ແຖບຫົວຂໍ້
+	Documents	ເອກະສານ
 	Documents and view	ເອກະສານ ແລະ ການເບິ່ງ
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	ເອກະສານທີ່ມີຫຼາຍກວ່າ 20 ໜ້າຕ້ອງມີບຸກມາກເພື່ອນຳທາງ. ເພີ່ມບຸກມາກສຳລັບພາກສ່ວນຫຼັກ.
+	Don't ask again	ບໍ່ຕ້ອງຖາມອີກ
 	Don't save	ບໍ່ບັນທຶກ
 	Don't show again	ບໍ່ຕ້ອງສະແດງອີກ
 	Done	ສຳເລັດ
@@ -699,6 +824,7 @@ key	Delete	Delete
 	Dot	ຈຸດ
 	Double-click	ດັບເບິລຄລິກ
 	Download	ດາວໂຫຼດ
+	Download historical OCR add-on (13 MB)	ດາວໂຫຼດສ່ວນເສີມ OCR ປະຫວັດສາດ (13 MB)
 	Downloaded {name}	ດາວໂຫຼດ {name} ແລ້ວ
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	ດາວໂຫຼດແລ້ວ {n} PDF
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	ການດາວໂຫຼດໄຟລ໌ແນບໃນເວັບຈະມາພ້ອມກັບ M3.10 (ພ້ອມແລ້ວ {n} ໄບຕ໌)
@@ -707,10 +833,13 @@ key	Delete	Delete
 	Drag a rectangle around the area to copy	ລາກຮູບສີ່ແຈສາກອ້ອມຮອບພື້ນທີ່ທີ່ຈະສຳເນົາ
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	ລາກຮູບສີ່ແຈສາກໃສ່ໜ້າເພື່ອຕັດຂອບ; ກົດສອງເທື່ອໃສ່ໜ້າເພື່ອຕັ້ງຄ່າຂອບເຂດໜ້າ
 	Drag a rectangle to create a link; double-click a link to edit it	ລາກຮູບສີ່ແຈສາກເພື່ອສ້າງລິ້ງ; ກົດສອງເທື່ອໃສ່ລິ້ງເພື່ອແກ້ໄຂ
+	Drag on the preview to choose a region. An empty selection scans the whole area.	Drag on the preview to choose a region. An empty selection scans the whole area.
 	Drag the corners onto the document's edges, then choose Enhance page.	ລາກມຸມຕ່າງໆໄປໃສ່ຂອບຂອງເອກະສານ, ຈາກນັ້ນເລືອກ ປັບປຸງໜ້າ.
 	Drag the selection to move it. Esc clears the selection.	ລາກສ່ວນທີ່ເລືອກເພື່ອຍ້າຍ. Esc ເພື່ອຍົກເລີກການເລືອກ.
 	Drag to draw the area where the signature should appear.	ລາກເພື່ອແຕ້ມພື້ນທີ່ທີ່ຕ້ອງການໃຫ້ລາຍເຊັນປະກົດ.
 	Drag to reorder	ລາກເພື່ອຈັດລຳດັບໃໝ່
+	Drag to rotate · Shift: 15° steps · Tab while dragging: quarter turns	ລາກເພື່ອໝູນ · Shift: ເທື່ອລະ 15° · Tab ຂະນະລາກ: ເທື່ອລະ 90°
+	Drag to rotate. Hold Shift for 15° steps; Esc cancels.	ລາກເພື່ອໝຸນ. ກົດ Shift ຄ້າງໄວ້ເພື່ອໝຸນເທື່ອລະ 15°; Esc ເພື່ອຍົກເລີກ.
 	Draw	ແຕ້ມ
 	Draw a cloud	ແຕ້ມຮູບກ້ອນເມກ
 	Draw a line	ແຕ້ມເສັ້ນຊື່
@@ -724,17 +853,25 @@ key	Delete	Delete
 	Drawing	ການແຕ້ມ
 	Drawing scale	ມາດຕາສ່ວນຮູບແຕ້ມ
 	Drawing scale changes. Use Actual size for full-scale plans.	ມາດຕາສ່ວນຮູບແຕ້ມປ່ຽນແປງ. ໃຊ້ "ຂະໜາດຈິງ" ສຳລັບແບບແຜນເຕັມສ່ວນ.
+	Driver default	Driver default
 	Drop PDFs, images, text files or folders here, or choose them.	ວາງໄຟລ໌ PDF, ຮູບພາບ, ໄຟລ໌ຂໍ້ຄວາມ ຫຼື ໂຟນເດີຢູ່ນີ້, ຫຼື ເລືອກພວກມັນ.
 	Drop-down list	ລາຍການເລື່ອນລົງ
 	Dropdown Properties	ຄຸນສົມບັດຂອງລາຍການເລື່ອນລົງ
+	Duplex	Duplex
+	Duplex is not offered.	Duplex is not offered.
 	Duplicate "{name}" onto:	ສຳເນົາຊ້ຳ "{name}" ໃສ່:
 	Duplicate Field	ສຳເນົາຊ້ຳຊ່ອງຂໍ້ມູນ
 	Duplicate field	ສຳເນົາຊ້ຳຊ່ອງຂໍ້ມູນ
 	Duplicate page	ສຳເນົາໜ້າຊ້ຳ
 	Duplicate pages	ສຳເນົາໜ້າຊ້ຳ
+	Duplicate pages with new field names	ສຳເນົາໜ້າຊ້ຳດ້ວຍຊື່ຊ່ອງຂໍ້ມູນໃໝ່
+	Duplicate pages — 1 field renamed	ສຳເນົາໜ້າຊ້ຳ — ປ່ຽນຊື່ແລ້ວ 1 ຊ່ອງ
+	Duplicate pages — fields renamed	ສຳເນົາໜ້າຊ້ຳ — ປ່ຽນຊື່ຊ່ອງຂໍ້ມູນແລ້ວ
+	Duplicate Tab	ຊ້ຳແທັບ
 	Duplicate…	ສຳເນົາຊ້ຳ…
 	Dynamic	ໄດນາມິກ
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	ຟອມ XFA ແບບໄດນາມິກຈັດວາງຈາກແມ່ແບບ: {pages}, {fields}.
+	Dynamic zoom	ການຊູມແບບໄດນາມິກ
 	E-Sign	ລາຍເຊັນອີເລັກໂຕຣນິກ
 	e.g. en-US	ຕົວຢ່າງ: lo-LA
 	e.g. My stamps	ເຊັ່ນ: ກາປະທັບຂອງຂ້ອຍ
@@ -743,14 +880,17 @@ key	Delete	Delete
 	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	ແຕ່ລະຮູບພາບຈະຖືກວັດແທກບ່ອນທີ່ໜ້າສະແດງຜົນ; ຮູບພາບຈະຖືກປ່ຽນແທນກໍຕໍ່ເມື່ອຜົນໄດ້ຮັບມີຂະໜາດນ້ອຍລົງ.
 	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	ແຕ່ລະຮູບພາບໜຶ່ງຄັ້ງ, ຕັ້ງຊື່ຕາມເອກະສານ ແລະ ໜ້າ. ຮູບພາບ JPEG ຈະຖືກບັນທຶກໂດຍບໍ່ປ່ຽນແປງ; ຮູບພາບອື່ນໆ ບັນທຶກເປັນ PNG.
 	Earlier in tab order	ລຳດັບແທັບກ່ອນໜ້າ
+	earlier saves are still waiting for the website	ການບັນທຶກກ່ອນໜ້ານີ້ຍັງລໍຖ້າເວັບໄຊຕ໌ຢູ່
 	Edit	ແກ້ໄຂ
 	Edit a PDF	ແກ້ໄຂ PDF
 	Edit Action	ແກ້ໄຂການກະທຳ
 	Edit comment	ແກ້ໄຂຄວາມເຫັນ
+	Edit Content	ແກ້ໄຂເນື້ອຫາ
 	Edit content	ແກ້ໄຂເນື້ອໃນ
 	Edit document JavaScript	ແກ້ໄຂ JavaScript ຂອງເອກະສານ
 	Edit fields	ແກ້ໄຂຊ່ອງຂໍ້ມູນ
 	Edit image	ແກ້ໄຂຮູບພາບ
+	Edit mode	ໂໝດແກ້ໄຂ
 	Edit script of {name}	ແກ້ໄຂສະຄຣິບຂອງ {name}
 	Edit text	ແກ້ໄຂຂໍ້ຄວາມ
 	Edit text & images	ແກ້ໄຂຂໍ້ຄວາມ ແລະ ຮູບພາບ
@@ -775,6 +915,7 @@ key	End	End
 	Enhance page	ປັບປຸງໜ້າ
 	Enhance scanned file	ປັບປຸງຄຸນນະພາບໄຟລ໌ສະແກນ
 	Enter a scale such as 1:50.	ປ້ອນມາດຕາສ່ວນ ເຊັ່ນ 1:50.
+	Enter Full Screen	ເຂົ້າສູ່ໂໝດເຕັມຈໍ
 	Enter permissions password…	ປ້ອນລະຫັດຜ່ານການອະນຸຍາດ…
 	Enter the password that opens it	ປ້ອນລະຫັດຜ່ານເພື່ອເປີດໄຟລ໌
 	Enter the permissions password to allow combining	ປ້ອນລະຫັດຜ່ານການອະນຸຍາດເພື່ອຮວມໄຟລ໌
@@ -797,6 +938,7 @@ key	Esc	Esc
 	Exclude tagged tables	ຍົກເວັ້ນຕາຕະລາງທີ່ມີແທັກ
 	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	ການຍົກເວັ້ນແມ່ນໃຊ້ແທັກ PDF. ຕາຕະລາງ ແລະ ໂຄ້ດທີ່ບໍ່ມີແທັກຈະຍັງຄົງຖືກນັບຮວມ. ການຍົກເວັ້ນຮູບພາບຈະລຶບຂໍ້ຄວາມທີ່ເຊື່ອງໄວ້ອອກນຳດ້ວຍ.
 	Execute a menu item	ປະຕິບັດຕາມລາຍການເມນູ
+	Exit	ອອກ
 	Expand	ຂະຫຍາຍອອກ
 	Expand all	ຂະຫຍາຍທັງໝົດ
 	Expand all bookmarks	ຂະຫຍາຍບຸກມາກທັງໝົດ
@@ -804,8 +946,10 @@ key	Esc	Esc
 	Expand all tools	ຂະຫຍາຍເຄື່ອງມືທັງໝົດ
 	Expand tag	ຂະຫຍາຍແທັກ
 	Expand top-level bookmarks	ຂະຫຍາຍບຸກມາກລະດັບເທິງສຸດ
+	Expand {folder}	ຂະຫຍາຍ {folder}
 	Explain	ອະທິບາຍ
 	Export	ສົ່ງອອກ
+	Export & Convert	ສົ່ງອອກ ແລະ ປ່ຽນຮູບແບບ
 	Export a PDF	ສົ່ງອອກ PDF
 	Export all comments to data file…	ສົ່ງອອກຄຳເຫັນທັງໝົດເປັນໄຟລ໌ຂໍ້ມູນ…
 	Export All Images	ສົ່ງອອກຮູບພາບທັງໝົດ
@@ -823,9 +967,11 @@ key	Esc	Esc
 	Export stopped: {e}	ການສົ່ງອອກຢຸດລົງ: {e}
 	Export this PDF	ສົ່ງອອກ PDF ນີ້
 	Export to	ສົ່ງອອກໄປເປັນ
+	Export to Excel…	ສົ່ງອອກເປັນ Excel…
 	Export to HTML…	ສົ່ງອອກເປັນ HTML…
 	Export to Image	ສົ່ງອອກເປັນຮູບພາບ
 	Export to image…	ສົ່ງອອກເປັນຮູບພາບ…
+	Export to Markdown…	ສົ່ງອອກເປັນ Markdown…
 	Export to PowerPoint…	ສົ່ງອອກເປັນ PowerPoint…
 	Export to RTF…	ສົ່ງອອກເປັນ RTF…
 	Export to Text	ສົ່ງອອກເປັນຂໍ້ຄວາມ
@@ -851,6 +997,7 @@ key	Esc	Esc
 	Failed	ບໍ່ຜ່ານ
 scroll speed	Fast	ໄວ
 	February	ກຸມພາ
+	Feeder	Feeder
 	Field	ຊ່ອງຂໍ້ມູນ
 	Field descriptions	ຄຳອະທິບາຍຊ່ອງຂໍ້ມູນ
 	Field is used for file selection	ຊ່ອງຂໍ້ມູນນີ້ໃຊ້ສຳລັບການເລືອກໄຟລ໌
@@ -874,6 +1021,7 @@ scroll speed	Fast	ໄວ
 	File name	ຊື່ໄຟລ໌
 	File size	ຂະໜາດໄຟລ໌
 @id	file.word_count	ຈຳນວນຄຳ…
+	Files	ໄຟລ໌
 	Files are combined from top to bottom. Leave Pages empty to take every page.	ໄຟລ໌ຈະຖືກຮວມແຕ່ເທິງລົງລຸ່ມ. ປະຊ່ອງໜ້າຫວ່າງໄວ້ເພື່ອເອົາທຸກໜ້າ.
 	Files are combined in the order shown. Drag them to change it.	ໄຟລ໌ຈະຖືກຮວມຕາມລຳດັບທີ່ສະແດງ. ລາກເພື່ອປ່ຽນລຳດັບ.
 	Files are combined in this order. Leave Pages empty to take every page.	ໄຟລ໌ຈະຖືກຮວມຕາມລຳດັບນີ້. ປະຊ່ອງໜ້າຫວ່າງໄວ້ເພື່ອເອົາທຸກໜ້າ.
@@ -882,7 +1030,10 @@ scroll speed	Fast	ໄວ
 	Fill	ຕື່ມຂໍ້ມູນ
 	Fill & Sign	ຕື່ມຂໍ້ມູນ & ເຊັນ
 	Fill & Sign dates	ວັນທີຕື່ມ ແລະ ເຊັນ
+	Fill & sign mode	ໂໝດຕື່ມ ແລະ ເຊັນ
 	Fill & Sign signature	ລາຍເຊັນຕື່ມຂໍ້ມູນ & ເຊັນ
+	Fill & Sign: add another saved signature	ຕື່ມ ແລະ ເຊັນ: ເພີ່ມລາຍເຊັນທີ່ບັນທຶກໄວ້ອີກອັນໜຶ່ງ
+	Fill & Sign: add other saved initials	ຕື່ມ ແລະ ເຊັນ: ເພີ່ມລາຍເຊັນຫຍໍ້ທີ່ບັນທຶກໄວ້ອີກອັນໜຶ່ງ
 	Fill & Sign: add text	ຕື່ມຂໍ້ມູນ & ເຊັນ: ເພີ່ມຂໍ້ຄວາມ
 	Fill & Sign: change initials	ຕື່ມ ແລະ ເຊັນ: ປ່ຽນລາຍເຊັນຫຍໍ້
 	Fill & Sign: change signature	ຕື່ມ ແລະ ເຊັນ: ປ່ຽນລາຍເຊັນ
@@ -900,9 +1051,11 @@ scroll speed	Fast	ໄວ
 	Fill colour:	ສີຕື່ມ:
 	Fill colour: none	ສີຕື່ມ: ບໍ່ມີ
 	Fill in {name}	ຕື່ມໃສ່ {name}
+	Fill opacity	ຄວາມໂປ່ງແສງຂອງສີຕື່ມ
 	Filling in form fields and signing existing signature fields	ການຕື່ມຂໍ້ມູນໃນຊ່ອງຟອມ ແລະ ເຊັນຊ່ອງລາຍເຊັນທີ່ມີຢູ່
 	Filling of form fields	ການຕື່ມຂໍ້ມູນໃນຊ່ອງຟອມ
 	Filter comments	ກັ່ນຕອງຄວາມເຫັນ
+	Find a command	ຊອກຫາຄຳສັ່ງ
 	Find a tag	ຊອກຫາແທັກ
 	Find options	ຕົວເລືອກການຄົ້ນຫາ
 	Find text	ຊອກຫາຂໍ້ຄວາມ
@@ -914,10 +1067,12 @@ scroll speed	Fast	ໄວ
 	Find untagged content	ຊອກຫາເນື້ອໃນທີ່ບໍ່ມີແທັກ
 	Finding document fonts…	ກຳລັງຊອກຫາຟອນຕ໌ເອກະສານ…
 	Find…	ຄົ້ນຫາ…
+	Finish	Finish
 	Finish or discard the text being edited before selecting several objects.	ເຮັດໃຫ້ສຳເລັດ ຫຼື ປະຖິ້ມຂໍ້ຄວາມທີ່ກຳລັງແກ້ໄຂກ່ອນທີ່ຈະເລືອກຫຼາຍວັດຖຸ.
 	First	ທຳອິດ
 	First / last page	ໜ້າທຳອິດ / ໜ້າສຸດທ້າຍ
 	First commit	ຄອມມິດທຳອິດ
+	First page	ໜ້າທຳອິດ
 	Fit	ພໍດີໜ້າ
 	Fit Height	ພໍດີລວງສູງ
 	Fit one full page	ພໍດີເຕັມໜ້າເທື່ອລະໜ້າ
@@ -946,8 +1101,10 @@ scroll speed	Fast	ໄວ
 	Flip Vertical	ປີ້ນຕາມລວງຕັ້ງ
 	Flip vertical	ປີ້ນຕາມລວງຕັ້ງ
 	Float panel	ແຍກແຜງໃຫ້ລອຍ
+	Folder	Folder
 	Folders	ໂຟນເດີ
 	Font colour:	ສີຟອນ:
+	Font file	ໄຟລ໌ຟອນ
 	Font size	ຂະໜາດຟອນ
 	Font size 0 uses automatic sizing.	ຂະໜາດຟອນ 0 ແມ່ນໃຊ້ການປັບຂະໜາດອັດຕະໂນມັດ.
 	Font Size:	ຂະໜາດຕົວອັກສອນ:
@@ -970,19 +1127,30 @@ scroll speed	Fast	ໄວ
 	Format:	ຮູບແບບ:
 	Forms	ຟອມ
 	Forms & Signatures	ຟອມ & ລາຍເຊັນ
+	Forms and signing	ຟອມ ແລະ ການເຊັນ
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	ສູດຄິດໄລ່ ແລະ ອົງປະກອບທີ່ບໍ່ແມ່ນຂໍ້ຄວາມທີ່ຄ້າຍຄືກັນຕ້ອງມີຂໍ້ຄວາມທົດແທນ. ເພີ່ມຂໍ້ຄວາມທົດແທນໃຫ້ອົງປະກອບເຫຼົ່ານັ້ນ.
 	Found {n} untagged content problems.	ພົບບັນຫາເນື້ອໃນທີ່ບໍ່ມີແທັກ {n} ລາຍການ.
+	Fraktur and Kurrent use an optional 13 MB add-on. After download, recognition works offline.	Fraktur ແລະ Kurrent ໃຊ້ສ່ວນເສີມທາງເລືອກຂະໜາດ 13 MB. ຫຼັງຈາກດາວໂຫຼດແລ້ວ ການຈຳແນກຈະເຮັດວຽກແບບອອບລາຍ.
 	From	ຈາກ
 	From a PDF page or an image	ຈາກໜ້າ PDF ຫຼື ຮູບພາບ
 	From colour	ຈາກສີ
+	From scanner…	From scanner…
+	From template	ຈາກແມ່ແບບ
 	From {file}	ຈາກ {file}
 	From:	ຈາກ:
 	Front side only	ສະເພາະດ້ານໜ້າ
+	front(s)	front(s)
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.
+	Full area	Full area
 	Full Screen	ເຕັມຈໍ
 	Full screen mode	ໂໝດເຕັມຈໍ
+	Future placements use this size. Existing signatures are unchanged.	ການວາງໃນອະນາຄົດຈະໃຊ້ຂະໜາດນີ້. ລາຍເຊັນທີ່ມີຢູ່ຈະບໍ່ປ່ຽນແປງ.
 	General	ທົ່ວໄປ
 	Geospatial location	ຕຳແໜ່ງທາງພູມສາດ
 	Get help, share feedback and follow development on Discord.	ຂໍຄວາມຊ່ວຍເຫຼືອ, ແບ່ງປັນຄຳຕິຊົມ ແລະ ຕິດຕາມການພັດທະນາໄດ້ທີ່ Discord.
+	Glass	ແກ້ວ
+	Go	ໄປ
 	Go to a page view	ໄປຍັງມຸມມອງໜ້າ
 	Go to page {p}	ໄປຫາໜ້າ {p}
 	Go to page…	ໄປຫາໜ້າ…
@@ -996,9 +1164,13 @@ scroll speed	Fast	ໄວ
 	Green on black	ຕົວໜັງສືຂຽວພື້ນດຳ
 	Greyscale	ລະດັບສີເທົາ
 	Grid view	ມຸມມອງຕາຕະລາງ
+	Group select	ເລືອກກຸ່ມ
 	H / Space (hold)	H / Space (ກົດຄ້າງ)
+	Hand	ມືຈັບ
 	Hand (H)	ມືຈັບ (H)
 	Hand Tool	ເຄື່ອງມືມື
+	Hand tool	ເຄື່ອງມືມື
+	Handwriting requires upright horizontal lines in one text column. Columns, tables and marginal notes are not supported.	ລາຍມືຕ້ອງເປັນແຖວລວງນອນທີ່ຕັ້ງຊື່ໃນຖັນຂໍ້ຄວາມດຽວ. ບໍ່ຮອງຮັບຫຼາຍຖັນ, ຕາຕະລາງ ແລະ ບັນທຶກຂອບ.
 	Has JavaScript actions (run in M6)	ມີການກະທຳ JavaScript (ເຮັດວຽກໃນ M6)
 	Header and footer	ຫົວເຈ້ຍ ແລະ ທ້າຍເຈ້ຍ
 	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	ຫົວຕາລາງ (TH) ບອກຜູ້ຟັງວ່າແຕ່ລະຖັນ ຫຼື ແຖວບັນຈຸຫຍັງແດ່. ໝາຍຫົວຕາລາງໄວ້.
@@ -1011,6 +1183,7 @@ scroll speed	Fast	ໄວ
 	Help	ຊ່ວຍເຫຼືອ
 	Hidden layers	ຊັ້ນທີ່ເຊື່ອງໄວ້
 	Hidden text	ຂໍ້ຄວາມທີ່ເຊື່ອງໄວ້
+	Hidden tools stay available from the menus, the mode tabs and keyboard shortcuts.	ເຄື່ອງມືທີ່ເຊື່ອງໄວ້ຍັງໃຊ້ໄດ້ຈາກເມນູ, ແຖບໂໝດ ແລະ ປຸ່ມລັດແປ້ນພິມ.
 	Hide a field	ເຊື່ອງຊ່ອງຂໍ້ມູນ
 	Hide all comments	ເຊື່ອງຄຳເຫັນທັງໝົດ
 	Hide field highlights	ເຊື່ອງໄຮໄລ້ຊ່ອງຂໍ້ມູນ
@@ -1018,9 +1191,13 @@ scroll speed	Fast	ໄວ
 	Hide hover previews for highlights without comment text	ເຊື່ອງການສະແດງຕົວຢ່າງເມື່ອເອົາເມົາສ໌ຊີ້ ສຳລັບການເນັ້ນຂໍ້ຄວາມທີ່ບໍ່ມີຄຳເຫັນ
 	Hide layer	ເຊື່ອງຊັ້ນຂໍ້ມູນ
 	Hide menu bar	ເຊື່ອງແຖບເມນູ
+	Hide Others	ເຊື່ອງອື່ນໆ
 	Hide password	ເຊື່ອງລະຫັດຜ່ານ
+	Hide PdfCraft	ເຊື່ອງ PdfCraft
+	Hide template {name}	ເຊື່ອງແມ່ແບບ {name}
 	Hide toolbars	ເຊື່ອງແຖບເຄື່ອງມື
 	Hide window controls	ເຊື່ອງປຸ່ມຄວບຄຸມປ່ອງຢ້ຽມ
+	Hide {app}	ເຊື່ອງ {app}
 	Hides annotation	ບັງຄຳອະທິບາຍປະກອບ
 	High	ສູງ
 	High Resolution	ຄວາມລະອຽດສູງ
@@ -1029,6 +1206,11 @@ scroll speed	Fast	ໄວ
 	Highlight fields	ໄຮໄລ້ຊ່ອງຂໍ້ມູນ
 	Highlight Style:	ຮູບແບບການເນັ້ນ:
 	Highlight text	ເນັ້ນຂໍ້ຄວາມ
+	Historical handwriting (Kurrent)	ລາຍມືປະຫວັດສາດ (Kurrent)
+	Historical OCR add-on installed	ຕິດຕັ້ງສ່ວນເສີມ OCR ປະຫວັດສາດແລ້ວ
+	Historical OCR add-ons require the desktop app.	ສ່ວນເສີມ OCR ປະຫວັດສາດຕ້ອງໃຊ້ແອັບເດັສທັອບ.
+	Historical print (Fraktur)	ຕົວພິມປະຫວັດສາດ (Fraktur)
+	Historical spelling is preserved. Handwriting, abbreviations and complex layouts need checking.	ການສະກົດຄຳແບບປະຫວັດສາດຈະຖືກຮັກສາໄວ້. ລາຍມື, ຕົວຫຍໍ້ ແລະ ໂຄງຮ່າງທີ່ຊັບຊ້ອນຕ້ອງກວດສອບ.
 	Home	ໜ້າຫຼັກ
 key	Home	Home
 	Home / End	Home / End
@@ -1055,7 +1237,9 @@ key	Home	Home
 	Importing data arrives on the web with file pickers for data files	ການນຳເຂົ້າຂໍ້ມູນຈະໃຊ້ງານໄດ້ໃນເວັບເມື່ອມີຕົວເລືອກໄຟລ໌ຂໍ້ມູນ
 	In multiple files	ໃນຫຼາຍໄຟລ໌
 	In streams that use LZW encoding, use Flate instead	ໃຊ້ Flate ແທນ LZW ໃນສະຕຣີມທີ່ເຂົ້າລະຫັດດ້ວຍ LZW
+	In tab order	ຕາມລຳດັບແຖບ
 	In this file	ໃນໄຟລ໌ນີ້
+	Include subfolders	ລວມໂຟນເດີຍ່ອຍ
 	Includes unsaved changes	ລວມມີການປ່ຽນແປງທີ່ຍັງບໍ່ໄດ້ບັນທຶກ
 	Incorrect password. Try again.	ລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ. ກະລຸນາລອງໃໝ່ອີກຄັ້ງ.
 	Indent	ຫຍໍ້ໜ້າເຂົ້າ
@@ -1063,6 +1247,8 @@ key	Home	Home
 	Initial View	ມຸມມອງເລີ່ມຕົ້ນ
 	Initials	ລາຍເຊັນຫຍໍ້
 	initials	ລາຍເຊັນຫຍໍ້
+	Initials {n}	ລາຍເຊັນຫຍໍ້ {n}
+	Ink	ນ້ຳມຶກ
 	Ink sensitivity	ຄວາມໄວຕໍ່ນ້ຳມຶກ
 	Insert	ແຊກ
 	Insert a blank page after the selection	ແຊກໜ້າຫວ່າງຫຼັງຈາກສ່ວນທີ່ເລືອກ
@@ -1078,18 +1264,30 @@ key	Home	Home
 	Insert pages from {name}	ແຊກໜ້າຈາກ {name}
 	Insert pages from {name} — 1 field renamed	ແຊກໜ້າຈາກ {name} — ປ່ຽນຊື່ແລ້ວ 1 ຊ່ອງ
 	Insert pages from {name} — fields renamed	ແຊກໜ້າຈາກ {name} — ປ່ຽນຊື່ຊ່ອງຂໍ້ມູນແລ້ວ
+	Insert scanned pages	Insert scanned pages
 	Insert text	ແຊກຂໍ້ຄວາມ
+	Insert the USB token or smart card, then refresh to list its digital IDs.	ໃສ່ໂທເຄັນ USB ຫຼື ສະມາດກາດ, ແລ້ວໂຫຼດຄືນໃໝ່ເພື່ອສະແດງ ID ດິຈິຕອນຂອງມັນ.
 	Inserted	ແຊກເຂົ້າ
+	Inserted page	ໜ້າທີ່ແຊກ
+	Inserted scanned pages	Inserted scanned pages
 	Inserting, deleting, and rotating pages	ການແຊກ, ການລຶບ ແລະ ການໝູນໜ້າ
 	Inset	ແບບຍຸບລົງ
 	Inspector	ຕົວສະແດງກວດກາ
 	Installed fonts…	ຟອນຕ໌ທີ່ຕິດຕັ້ງແລ້ວ…
 	Intended usage	ຈຸດປະສົງການນຳໃຊ້
+	Intent	Intent
+	Interface and appearance	ສ່ວນຕິດຕໍ່ ແລະ ຮູບລັກສະນະ
+	Interface font	ຟອນຂອງສ່ວນຕິດຕໍ່
 	Interface language	ພາສາສະແດງຜົນ
 	Interface size	ຂະໜາດອິນເຕີເຟສ
 	Intersection	ຈຸດຕັດກັນ
 	Intersections	ຈຸດຕັດກັນ
 	Invert	ກັບສີ
+	Invert colors	ປີ້ນສີ
+	Invert everything	ປີ້ນທັງໝົດ
+	Invert tones	Invert tones
+	Inverted page background	ພື້ນຫຼັງໜ້າທີ່ປີ້ນສີ
+	Inverted text	ຂໍ້ຄວາມທີ່ປີ້ນສີ
 	Invisible Rectangle	ຮູບສີ່ແຈສາກທີ່ເບິ່ງບໍ່ເຫັນ
 	Irregular tables confuse cell navigation. Give every row the same number of cells (counting spans).	ຕາຕະລາງທີ່ບໍ່ສະໝ່ຳສະເໝີຈະເຮັດໃຫ້ການນຳທາງລະຫວ່າງຕາລາງສັບສົນ. ກຳນົດໃຫ້ທຸກແຖວມີຈຳນວນຕາລາງເທົ່າກັນ (ລວມທັງການລວມຕາລາງ).
 	is available	ໃຊ້ງານໄດ້
@@ -1098,6 +1296,9 @@ key	Home	Home
 	Issued by: 	ອອກໃຫ້ໂດຍ: 
 	Issued to	ອອກໃຫ້ແກ່
 	Issuer	ຜູ້ອອກໃຫ້
+	It is certified with no changes allowed: any change invalidates the certification.	ເອກະສານນີ້ຖືກຢັ້ງຢືນ ແລະ ບໍ່ອະນຸຍາດໃຫ້ປ່ຽນແປງ: ການປ່ຽນແປງໃດໆຈະເຮັດໃຫ້ການຢັ້ງຢືນບໍ່ມີຜົນ.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	ເອກະສານນີ້ຖືກຢັ້ງຢືນ: ອະນຸຍາດໃຫ້ຕື່ມແບບຟອມ ແລະ ເຊັນ; ການປ່ຽນແປງອື່ນຈະເຮັດໃຫ້ການຢັ້ງຢືນບໍ່ມີຜົນ.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	ເອກະສານນີ້ຖືກຢັ້ງຢືນ: ອະນຸຍາດໃຫ້ຕື່ມແບບຟອມ, ເຊັນ ແລະ ໃຫ້ຄຳເຫັນ; ການປ່ຽນແປງອື່ນຈະເຮັດໃຫ້ການຢັ້ງຢືນບໍ່ມີຜົນ.
 	Italic	ຕົວອຽງ
 	Item List	ລາຍຊື່ລາຍການ
 	Item:	ລາຍການ:
@@ -1109,6 +1310,7 @@ key	Home	Home
 	JavaScript Console	ຄອນໂຊລ JavaScript
 	JavaScript console…	ຄອນໂຊລ JavaScript…
 	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript ຖືກປິດຢູ່ (ການຕັ້ງຄ່າ ▸ JavaScript).
+	JavaScript is turned off by your administrator.	JavaScript ຖືກປິດໂດຍຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານ.
 	JavaScript, e.g. getField("total").value	JavaScript ເຊັ່ນ getField("total").value
 	JBIG2 (lossless)	JBIG2 (ບໍ່ສູນເສຍ)
 	Join our Discord	ເຂົ້າຮ່ວມ Discord ຂອງພວກເຮົາ
@@ -1118,28 +1320,40 @@ key	Home	Home
 	June	ມິຖຸນາ
 	just now	ຫວ່າງກີ້ນີ້
 	Justify	ຈັດພຽງຊ້າຍຂວາ
+	Keep editable	ໃຫ້ແກ້ໄຂໄດ້ຢູ່
+	Keep only how the signatures look, as page content (a name or date they show stays visible)	ເກັບໄວ້ພຽງລັກສະນະຂອງລາຍເຊັນ ເປັນເນື້ອຫາຂອງໜ້າ (ຊື່ ຫຼື ວັນທີທີ່ສະແດງຍັງເຫັນໄດ້)
 	Keep source fonts	ຮັກສາຟອນຕ໌ຕົ້ນສະບັບ
+	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	ຮັກສາແຖບຫົວຂໍ້ຂອງ Windows ໄວ້ເທິງແຖບແທັບ. ເມື່ອປິດ, ແຖບແທັບຈະເປັນແຖບຫົວຂໍ້ ໂດຍມີປຸ່ມປ່ອງຢ້ຽມຢູ່ທາງຂວາ; Snap Layouts ຢູ່ປຸ່ມຂະຫຍາຍເຕັມຈໍຕ້ອງການແຖບຫົວຂໍ້ຂອງ Windows.
 	Keep tool selected	ຮັກສາການເລືອກເຄື່ອງມືໄວ້
 	Keep tool selected: on	ຮັກສາການເລືອກເຄື່ອງມືໄວ້: ເປີດ
 	Key Algorithm	ອັລກໍຣິທຶມກະແຈ
 	Key usage	ການໃຊ້ງານກະແຈ
 	Keyboard shortcuts	ປຸ່ມລັດແປ້ນພິມ
 	Keychain  ·  	Keychain · 
+	Keys of the document view	ປຸ່ມຂອງມຸມມອງເອກະສານ
 	Keywords	ຄຳຄົ້ນຫາ
 	Label	ປ້າຍຊື່
 	Labels	ປ້າຍຊື່
 	Labels: {preview}. Later pages keep their labels.	ປ້າຍກຳກັບ: {preview}. ໜ້າຫຼັງຈາກນັ້ນຈະຮັກສາປ້າຍກຳກັບເດີມໄວ້.
+	Lamp	Lamp
+	Lamp on	Lamp on
 	Landscape	ແນວນອນ
 	Landscape and Portrait Pages	ໜ້າແນວນອນ ແລະ ແນວຕັ້ງ
 	Landscape Pages	ໜ້າແນວນອນ
 	Landscape pages	ໜ້າແນວນອນ
 	Language	ພາສາ
+	Language and spelling	ພາສາ ແລະ ການສະກົດຄຳ
+	Large scan	Large scan
 	Larger pages	ໜ້າໃຫຍ່ຂຶ້ນ
+	Larger than 512 MiB	Larger than 512 MiB
 	Last	ສຸດທ້າຍ
 	Last commit	ຄອມມິດສຸດທ້າຍ
+	Last page	ໜ້າສຸດທ້າຍ
 	Later	ພາຍຫຼັງ
 	Later in tab order	ລຳດັບແທັບຖັດໄປ
+	Latin (accented)	ລາຕິນ (ມີເຄື່ອງໝາຍ)
 	Layers	ເລເຍີ
+	Layers panel	ແຜງເລເຢີ
 	Layers Panel and Page	ແຜງຊັ້ນຂໍ້ມູນ ແລະ ໜ້າ
 	Layout and Magnification	ໂຄງຮ່າງ ແລະ ມາດຕາສ່ວນຂະຫຍາຍ
 	Lbl and LBody	Lbl ແລະ LBody
@@ -1151,15 +1365,19 @@ key	Home	Home
 	Left Header Text	ຂໍ້ຄວາມຫົວເຈ້ຍດ້ານຊ້າຍ
 	Left out: {names}	ຍົກເວັ້ນ: {names}
 	Left:	ຊ້າຍ:
+	less than a minute left	ເຫຼືອບໍ່ເຖິງໜຶ່ງນາທີ
 	LI must be a child of L	LI ຕ້ອງເປັນອົງປະກອບລູກຂອງ L
 	Light	ແຈ້ງ
 	Light blue	ຟ້າອ່ອນ
 	Light gray	ສີເທົາອ່ອນ
+	Light ink	ນ້ຳມຶກສີອ່ອນ
 	Light theme	ຮູບແບບແຈ້ງ
+	Like macOS (fuller strokes, sub-pixel placement)	ຄື macOS (ເສັ້ນໜາຂຶ້ນ, ການວາງລະດັບຍ່ອຍພິກເຊລ)
 	Limit of	ຈຳກັດບໍ່ເກີນ
 	Line	ເສັ້ນ
 	Line delta	ການປ່ຽນແປງຈຳນວນແຖວ
 	Line ending	ຈຸດຈົບຂອງເສັ້ນ
+	Line opacity	ຄວາມໂປ່ງແສງຂອງເສັ້ນ
 	Line spacing	ໄລຍະຫ່າງແຖວ
 	Line Style:	ຮູບແບບເສັ້ນ:
 	Line thickness	ຄວາມໜາຂອງເສັ້ນ
@@ -1181,15 +1399,29 @@ key	Home	Home
 	List items belong in a list. Fix the list's tags.	ລາຍການຍ່ອຍຕ້ອງຢູ່ໃນລາຍການຫຼັກ. ແກ້ໄຂແທັກຂອງລາຍການ.
 	List labels and bodies belong in a list item. Fix the list's tags.	ປ້າຍຊື່ ແລະ ເນື້ອໃນລາຍການຕ້ອງຢູ່ໃນລາຍການຍ່ອຍ. ແກ້ໄຂແທັກຂອງລາຍການ.
 	List view	ມຸມມອງລາຍການ
+	Listing scanners…	Listing scanners…
+	Listing the folder…	Listing the folder…
 	Lists	ລາຍການ
 	Load document font	ໂຫຼດຟອນເອກະສານ
 	Load font…	ໂຫຼດຟອນຕ໌…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.
+	Load sheets in the feeder, then choose Try again.	Load sheets in the feeder, then choose Try again.
+	Load to edit	Load to edit
+	Loading {name}…	Loading {name}…
 	Local cross-PDF links require the desktop app	ລິ້ງຂ້າມ PDF ພາຍໃນເຄື່ອງຕ້ອງການແອັບເດັສທັອບ
 	Location	ບ່ອນເກັບ
 	Location: 	ສະຖານທີ່: 
+	Lock and save	ລັອກ ແລະ ບັນທຶກ
 	Lock comment	ລັອກຄວາມເຫັນ
+	Lock into the page when saving	ລັອກເຂົ້າໃນໜ້າເມື່ອບັນທຶກ
+	Lock now	ລັອກດຽວນີ້
+	Lock your signature into the page?	ລັອກລາຍເຊັນຂອງທ່ານເຂົ້າໃນໜ້າບໍ່?
 	Locked	ລັອກຢູ່
 	Logical Reading Order	ລຳດັບການອ່ານຕາມເຫດຜົນ
+	Logo	ໂລໂກ້
+	Logo and name	ໂລໂກ້ ແລະ ຊື່
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.
 	Looking for PDFs…	ກຳລັງຊອກຫາ PDF…
 	Looking for printers…	ກຳລັງຊອກຫາເຄື່ອງພິມ…
 	Low	ຕ່ຳ
@@ -1203,6 +1435,8 @@ key	Home	Home
 	Make properties default	ກຳນົດຄຸນສົມບັດເປັນຄ່າເລີ່ມຕົ້ນ
 	Make scans searchable, then make them smaller.	ເຮັດໃຫ້ເອກະສານສະແກນສາມາດຄົ້ນຫາໄດ້, ຈາກນັ້ນຫຼຸດຂະໜາດໄຟລ໌ລົງ.
 	Manage embedded index	ຈັດການດັດຊະນີທີ່ຝັງໄວ້
+	Manage levels	ຈັດການຊັ້ນ
+	Manual duplex needs one reverse side for each front.	Manual duplex needs one reverse side for each front.
 	March	ມີນາ
 	Margins	ໄລຍະຂອບ
 	Mark all	ໝາຍທັງໝົດ
@@ -1223,6 +1457,7 @@ key	Home	Home
 	Mask:	ມາກສ໌:
 	Match field sizes	ປັບຂະໜາດຊ່ອງຂໍ້ມູນໃຫ້ເທົ່າກັນ
 	Match page at 100%	ປັບໃຫ້ກົງກັບໜ້າທີ່ 100%
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximize	ຂະຫຍາຍເຕັມຈໍ
 	Maximum	ສູງສຸດ
 	maximum	ຄ່າສູງສຸດ
@@ -1237,6 +1472,7 @@ key	Home	Home
 	Measuring tool	ເຄື່ອງມືວັດແທກ
 	Medium	ປານກາງ
 	Menu	ເມນູ
+	Merge all windows	ລວມໜ້າຕ່າງທັງໝົດ
 	Merge data files into spreadsheet…	ຮວມໄຟລ໌ຂໍ້ມູນເຂົ້າໃນສະເປຣດຊີດ…
 	Merge image fragments	ຮວມຊິ້ນສ່ວນຮູບພາບ
 	Merged 1 file into {path}	ຮວມ 1 ໄຟລ໌ເຂົ້າໃນ {path} ແລ້ວ
@@ -1245,16 +1481,20 @@ key	Home	Home
 	Merging data files needs the desktop app	ການຮວມໄຟລ໌ຂໍ້ມູນຕ້ອງການແອັບເດັສທັອບ
 	Metadata	ເມຕາເດຕາ
 	Microsoft Word (.docx)	Microsoft Word (.docx)
+	Middle	ເຄິ່ງກາງ
 	Midpoint	ຈຸດເຄິ່ງກາງ
 	Midpoints	ຈຸດເຄິ່ງກາງ
 	Minimize	ຫຍໍ້ໜ້າຕ່າງ
 	Minimum	ຕ່ຳສຸດ
 	minimum	ຄ່າຕ່ຳສຸດ
+	Mirror	Mirror
+	Mirror the page	Mirror the page
 	Missing field	Missing field
 	Mixed	ປະສົມ
 	Mobile	ມືຖື
 	Model	ໂມເດວ
 	Models	ໂມເດວ
+	Modern print	ຕົວພິມສະໄໝໃໝ່
 	Modified	ແກ້ໄຂເມື່ອ
 	Modify page	ແກ້ໄຂໜ້າ
 	Monochrome Images	ຮູບພາບຂາວດຳ
@@ -1262,12 +1502,14 @@ key	Home	Home
 	More options	ຕົວເລືອກເພີ່ມເຕີມ
 	More options:	ຕົວເລືອກເພີ່ມເຕີມ:
 	More ways to add files	ວິທີອື່ນໆໃນການເພີ່ມໄຟລ໌
+	Most recently used first	ທີ່ໃຊ້ຫຼ້າສຸດກ່ອນ
 	Mouse Down	ກົດປຸ່ມເມົາສ໌
 	Mouse Enter	ເມົາສ໌ເລື່ອນເຂົ້າ
 	Mouse Exit	ເມົາສ໌ເລື່ອນອອກ
 	Mouse Up	ປ່ອຍປຸ່ມເມົາສ໌
 	Move bookmark	ຍ້າຍບຸກມາກ
 	Move comment	ຍ້າຍຄວາມເຫັນ
+	Move comments	ຍ້າຍບັນດາຄຳເຫັນ
 	Move down	ຍ້າຍລົງ
 	Move earlier	ຍ້າຍໄປກ່ອນ
 	Move image	ຍ້າຍຮູບພາບ
@@ -1276,20 +1518,30 @@ key	Home	Home
 	Move objects	ຍ້າຍຫຼາຍວັດຖຸ
 	Move page	ຍ້າຍໜ້າ
 	Move pages	ຍ້າຍໜ້າ
+	Move Tab to New Window	ຍ້າຍແຖບໄປຫາປ່ອງຢ້ຽມໃໝ່
+	Move tab to new window	ຍ້າຍແຖບໄປໜ້າຕ່າງໃໝ່
+	Move Tab to This Window	ຍ້າຍແຖບໄປຫາປ່ອງຢ້ຽມນີ້
 	Move tag earlier	ຍ້າຍແທັກໄປກ່ອນ
 	Move tag later	ຍ້າຍແທັກໄປຫຼັງ
 	Move to group	ຍ້າຍໄປກຸ່ມ
+	Move to new window	ຍ້າຍໄປໜ້າຕ່າງໃໝ່
+	Move to window	ຍ້າຍໄປໜ້າຕ່າງ
 	Move up	ຍ້າຍຂຶ້ນ
+	Moved page	ໜ້າທີ່ຍ້າຍ
 	Multi-line	ຫຼາຍແຖວ
 	Multiple	ຫຼາຍໜ້າຕໍ່ແຜ່ນ
 	Multiple files	ຫຼາຍໄຟລ໌
 	Multiple selection	ເລືອກໄດ້ຫຼາຍລາຍການ
 	Multiple words or phrases	ຫຼາຍຄຳ ຫຼື ຫຼາຍວະລີ
+	Multiplies the background with the page: white areas show it and text stays dark.	ຄູນພື້ນຫຼັງກັບໜ້າ: ພື້ນທີ່ສີຂາວຈະສະແດງພື້ນຫຼັງ ແລະ ຂໍ້ຄວາມຍັງຄົງເຂັ້ມ.
 	Name	ຊື່
 	Name (A–Z)	ຊື່ (A–Z)
+	Name a text watermark to save it	ຕັ້ງຊື່ລາຍນ້ຳຂໍ້ຄວາມເພື່ອບັນທຶກມັນ
 	Name on new comments	ຊື່ຜູ້ຂຽນຄຳເຫັນໃໝ່
 	Name:	ຊື່:
 	Named Destinations	ຈຸດໝາຍປາຍທາງທີ່ມີຊື່
+	Native tabs (as in Finder on macOS and File Explorer on Windows)	ແຖບແບບລະບົບ (ຄືໃນ Finder ຂອງ macOS ແລະ File Explorer ຂອງ Windows)
+	Navigation	ການນຳທາງ
 	Navigation links	ລິ້ງນຳທາງ
 	Navigation links are not repetitive	ລິ້ງນຳທາງບໍ່ຊ້ຳຊ້ອນກັນ
 	Navigation tab	ແທັບນຳທາງ
@@ -1297,6 +1549,7 @@ key	Home	Home
 	Needs manual check	ຕ້ອງມີການກວດສອບດ້ວຍຕົນເອງ
 	Negative number style:	ຮູບແບບຕົວເລກລົບ:
 	Nested alternate text	ຂໍ້ຄວາມທົດແທນຊ້ອນກັນ
+	Network	Network
 	New Action	ການກະທຳໃໝ່
 	New Action…	ການກະທຳໃໝ່…
 	New blank PDF	ສ້າງ PDF ຫວ່າງເປົ່າໃໝ່
@@ -1314,9 +1567,11 @@ key	Home	Home
 	Next page	ໜ້າຖັດໄປ
 	Next sheet	ແຜ່ນຖັດໄປ
 	Next tab	ແຖບຖັດໄປ
+	Next tab and Previous tab	ແຖບຖັດໄປ ແລະ ແຖບກ່ອນໜ້າ
 	Next view	ມຸມມອງຖັດໄປ
 	No	ບໍ່
 	No actions	ບໍ່ມີການກະທຳ
+	No certificate was found with this provider.	ບໍ່ພົບໃບຢັ້ງຢືນກັບຜູ້ໃຫ້ບໍລິການນີ້.
 	No changes allowed	ບໍ່ອະນຸຍາດໃຫ້ປ່ຽນແປງ
 	No changes to save	ບໍ່ມີການປ່ຽນແປງໃດໆທີ່ຈະບັນທຶກ
 	No check has run yet.	ຍັງບໍ່ທັນມີການກວດສອບເທື່ອ.
@@ -1345,6 +1600,8 @@ key	Home	Home
 	no output folder was chosen	ບໍ່ໄດ້ເລືອກໂຟນເດີຜົນອອກ
 	No pages match those choices	ບໍ່ມີໜ້າທີ່ກົງກັບຕົວເລືອກເຫຼົ່ານັ້ນ
 	No pages selected	ບໍ່ມີໜ້າໃດຖືກເລືອກ
+	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	ບໍ່ພົບໄຟລ໌ PDF.
 	No PDFs in this folder yet	ຍັງບໍ່ມີໄຟລ໌ PDF ໃນໂຟນເດີນີ້
 	No PDFs, images or text files found in {folder}	ບໍ່ພົບໄຟລ໌ PDF, ຮູບພາບ ຫຼື ຂໍ້ຄວາມໃນ {folder}
 	No photo chosen	ບໍ່ໄດ້ເລືອກຮູບຖ່າຍ
@@ -1352,11 +1609,16 @@ key	Home	Home
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	ບໍ່ພົບເຄື່ອງພິມ. ກວດສອບໃຫ້ແນ່ໃຈວ່າໄດ້ຕິດຕັ້ງເຄື່ອງພິມແລ້ວ ແລະ ລະບົບພິມກຳລັງເຮັດວຽກ, ຈາກນັ້ນເປີດໜ້າພິມຄືນໃໝ່.
 	No problems found: the document conforms to {level}.	ບໍ່ພົບບັນຫາ: ເອກະສານສອດຄ່ອງຕາມ {level}.
 	No recent files	ບໍ່ມີໄຟລ໌ຫຼ້າສຸດ
+	No scanner is connected.	No scanner is connected.
 	No security	ບໍ່ມີການປ້ອງກັນ
 	No sheets	ບໍ່ມີແຜ່ນເຈ້ຍ
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	ບໍ່ພົບລາຍເຊັນໃນກອບ. ຍ້າຍກອບໄປທັບລາຍເຊັນ ຫຼື ເພີ່ມຄວາມໄວຕໍ່ນ້ຳມຶກ.
+	No signature was found. Adjust the ink sensitivity or keep the original image.	ບໍ່ພົບລາຍເຊັນ. ປັບຄວາມໄວຕໍ່ນ້ຳມຶກ ຫຼືເກັບຮູບພາບຕົ້ນສະບັບໄວ້.
+	No signing certificate was found on this device. Is it connected?	ບໍ່ພົບໃບຢັ້ງຢືນການເຊັນໃນອຸປະກອນນີ້. ມັນເຊື່ອມຕໍ່ແລ້ວບໍ?
 	No status has been set.	ຍັງບໍ່ໄດ້ກຳນົດສະຖານະ.
 	no such document	ບໍ່ມີເອກະສານດັ່ງກ່າວ
+	No suggestions	ບໍ່ມີຄຳແນະນຳ
+	No tools are shown. Choose them in Preferences.	ບໍ່ມີເຄື່ອງມືສະແດງ. ເລືອກພວກມັນໃນການຕັ້ງຄ່າ.
 	No tools match your search.	ບໍ່ມີເຄື່ອງມືທີ່ກົງກັບການຄົ້ນຫາຂອງທ່ານ.
 	No unlinked web addresses were found in the text	ບໍ່ພົບທີ່ຢູ່ເວັບທີ່ບໍ່ມີລິ້ງໃນຂໍ້ຄວາມ
 	No untagged content was found.	ບໍ່ພົບເນື້ອໃນທີ່ບໍ່ມີແທັກ.
@@ -1371,7 +1633,9 @@ scroll speed	Normal	ປົກກະຕິ
 	Not allowed	ບໍ່ອະນຸຍາດ
 	Not now	ບໍ່ແມ່ນຕອນນີ້
 	Not present	ບໍ່ມີ
+	Not searched: {n}	Not searched: {n}
 	Note	ບັນທຶກ
+	Nothing	ບໍ່ມີ
 	nothing in the file matches this document	ບໍ່ມີສິ່ງໃດໃນໄຟລ໌ກົງກັບເອກະສານນີ້
 	Nothing to redo	ບໍ່ມີສິ່ງໃດໃຫ້ເຮັດຄືນ
 	nothing to redo	ບໍ່ມີສິ່ງໃດໃຫ້ເຮັດຄືນ
@@ -1392,6 +1656,7 @@ scroll speed	Normal	ປົກກະຕິ
 	of {pages}	ຈາກ {pages} ໜ້າ
 	Off	ປິດ
 animation effects	Off	ປິດ
+	Off, a document's request to open in Full Screen mode is ignored. You can still enter it from the View menu.	ເມື່ອປິດ, ຄຳຮ້ອງຂອງເອກະສານທີ່ຂໍເປີດໃນໂໝດເຕັມຈໍຈະຖືກບໍ່ສົນໃຈ. ຍັງສາມາດເຂົ້າໂໝດນີ້ໄດ້ຈາກເມນູມຸມມອງ.
 	Offset from centre	ໄລຍະຫ່າງຈາກຈຸດເຄິ່ງກາງ
 	OK	ຕົກລົງ
 	Old file:	ໄຟລ໌ເກົ່າ:
@@ -1424,7 +1689,11 @@ animation effects	On	ເປີດ
 	Open in Full Screen mode	ເປີດໃນໂໝດເຕັມຈໍ
 	Open in Full Screen mode?	ເປີດໃນໂໝດເຕັມຈໍຫຼືບໍ່?
 	Open link	ເປີດລິ້ງ
+	Open next PDF in folder	ເປີດ PDF ຖັດໄປໃນໂຟນເດີ
+	Open previous PDF in folder	ເປີດ PDF ກ່ອນໜ້າໃນໂຟນເດີ
 	Open Recent	ເປີດໄຟລ໌ຫຼ້າສຸດ
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.
 	Open the file as it was saved then	ເປີດໄຟລ໌ຕາມສະພາບທີ່ບັນທຶກໄວ້ໃນຕອນນັ້ນ
 	Open the older version first	ເປີດເວີຊັນເກົ່າກ່ອນ
 	Open this local PDF?	ເປີດ PDF ພາຍໃນເຄື່ອງນີ້ຫຼືບໍ່?
@@ -1433,9 +1702,12 @@ animation effects	On	ເປີດ
 	open to see what it will include	ເປີດເພື່ອເບິ່ງສິ່ງທີ່ຈະຮວມຢູ່ໃນນັ້ນ
 	Opened with	ເປີດດ້ວຍ
 	Opened, but its security settings don't allow combining. Enter the permissions password.	ເປີດແລ້ວ, ແຕ່ການຕັ້ງຄ່າຄວາມປອດໄພບໍ່ອະນຸຍາດໃຫ້ຮວມໄຟລ໌. ກະລຸນາປ້ອນລະຫັດຜ່ານການອະນຸຍາດ.
+	Opening documents	ການເປີດເອກະສານ
 	Opening the browser's print dialog…	ກຳລັງເປີດກ່ອງຂໍ້ຄວາມການພິມຂອງບຣາວເຊີ…
+	Opening {name}…	ກຳລັງເປີດ {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	ເປີດການຕັ້ງຄ່າໄດຣເວີເຄື່ອງພິມ. ການຕັ້ງຄ່າຈະຖືກບັນທຶກໄວ້ສຳລັບທຸກການພິມຈາກຄອມພິວເຕີນີ້; ຈຳນວນຊຸດ, ການພິມສອງໜ້າ, ລະດັບສີເທົາ ແລະ ເຈ້ຍທີ່ເລືອກຢູ່ນີ້ຈະຍັງຄົງມີຜົນບັງຄັບໃຊ້.
 	Open…	ເປີດ…
+	Optical resolution {x} × {y} dpi.	Optical resolution {x} × {y} dpi.
 	Optimization cancelled	ຍົກເລີກການປັບແຕ່ງແລ້ວ
 	Optimization is already running	ການປັບແຕ່ງກຳລັງດຳເນີນການຢູ່ແລ້ວ
 	Optimize	ປັບແຕ່ງໃຫ້ເໝາະສົມ
@@ -1458,17 +1730,20 @@ animation effects	On	ເປີດ
 	Organization Name	ຊື່ອົງກອນ
 	Organizational Unit	ໜ່ວຍງານໃນອົງກອນ
 	Organize pages	ຈັດລະບຽບໜ້າ
+	Orientation	Orientation
 	Orientation:	ທິດທາງ:
 	Original	ຕົ້ນສະບັບ
 	Original: replace pages	ເອກະສານເດີມ: ໜ້າທີ່ຈະປ່ຽນແທນ
 	Other colour…	ສີອື່ນໆ…
 	Other elements alternate text	ຂໍ້ຄວາມທົດແທນຂອງອົງປະກອບອື່ນ
 	Other elements that require alternate text	ອົງປະກອບອື່ນທີ່ຕ້ອງການຂໍ້ຄວາມທົດແທນ
+	Otherwise, ask on the first save after a signature is placed	ຖ້າບໍ່ດັ່ງນັ້ນ, ຖາມເມື່ອບັນທຶກຄັ້ງທຳອິດຫຼັງຈາກວາງລາຍເຊັນ
 	Outdent	ຍື່ນໜ້າອອກ
 	Outline	ເສັ້ນໂຄງຮ່າງ
 	Outline colour:	ສີເສັ້ນຂອບ:
 	Output	ຜົນອອກ
 	Output appears here.	ຜົນອອກຈະສະແດງຢູ່ນີ້.
+	Output folder	ໂຟນເດີຜົນອອກ
 	Output intent: {list}	ເປົ້າໝາຍຜົນຜະລິດ: {list}
 	Output preview	ສະແດງຕົວຢ່າງຜົນຜະລິດ
 	Oval	ຮູບໄຂ່
@@ -1494,10 +1769,12 @@ animation effects	On	ເປີດ
 	Page size	ຂະໜາດໜ້າ
 	Page Sizing & Handling	ຂະໜາດໜ້າ ແລະ ການຈັດການ
 	Page thumbnails	ຮູບຫຍໍ້ຂອງໜ້າ
+	Page thumbnails panel	ແຜງຮູບຫຍໍ້ໜ້າ
 	Page tools	ເຄື່ອງມືໜ້າ
 	Page transitions	ຮູບແບບການປ່ຽນໜ້າ
 	Page will not cause screen flicker	ໜ້າຈະບໍ່ເຮັດໃຫ້ເກີດການກະພິບຂອງໜ້າຈໍ
 	Page {label}	ໜ້າ {label}
+	Page {old} → Page {new}	ໜ້າ {old} → ໜ້າ {new}
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	ໜ້າ {pages} ປ່ຽນໄປຫຼັງຈາກເພີ່ມພື້ນຫຼັງ, ສະນັ້ນພື້ນສີຂາວຂອງມັນເອງຍັງປິດຢູ່. ເທິງເຈ້ຍສີຂາວມັນເບິ່ງຄືເກົ່າ.
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	ໜ້າ {pages} ມີພື້ນສີຂາວຂອງມັນເອງ ເຊິ່ງຈະບັງພື້ນຫຼັງ. ປ່ຽນແທນ
 	Page {p} of {n}	ໜ້າ {p} ຈາກ {n}
@@ -1511,23 +1788,29 @@ animation effects	On	ເປີດ
 	Pages per sheet:	ຈຳນວນໜ້າຕໍ່ແຜ່ນ:
 	Pages selected	ໜ້າທີ່ເລືອກ
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	ໜ້າທີ່ມີພຽງຮູບພາບຂອງຂໍ້ຄວາມຈະບໍ່ສາມາດອ່ານອອກສຽງ ຫຼື ຄົ້ນຫາໄດ້. ກະລຸນາຮັບຮູ້ຂໍ້ຄວາມ (OCR) ເພື່ອເພີ່ມຊັ້ນຂໍ້ຄວາມ.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages to Print	ໜ້າທີ່ຈະພິມ
+	Pages whose text couldn't be read: {n}. A match on them isn't listed.	ໜ້າທີ່ອ່ານຂໍ້ຄວາມບໍ່ໄດ້: {n}. ຜົນທີ່ກົງກັນໃນໜ້າເຫຼົ່ານັ້ນບໍ່ໄດ້ຖືກລາຍການ.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	ໜ້າທີ່ມີລິ້ງ, ຄວາມເຫັນ ຫຼື ຊ່ອງຂໍ້ມູນຄວນກົດແທັບຕາມລຳດັບໂຄງສ້າງ. ການແກ້ໄຂຈະຕັ້ງຄ່າລຳດັບການແທັບຂອງແຕ່ລະໜ້າເປັນ ໃຊ້ໂຄງສ້າງເອກະສານ.
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	ໜ້າ {pages} ປ່ຽນໄປຫຼັງຈາກເພີ່ມພື້ນຫຼັງ, ສະນັ້ນພື້ນສີຂາວຂອງພວກມັນເອງຍັງປິດຢູ່. ເທິງເຈ້ຍສີຂາວພວກມັນເບິ່ງຄືເກົ່າ.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	ໜ້າ {pages} ມີພື້ນສີຂາວຂອງພວກມັນເອງ ເຊິ່ງຈະບັງພື້ນຫຼັງ. ປ່ຽນແທນ
 	Pages:	ໜ້າ:
 	Pages: {k} of {n}	ໜ້າ: {k} ຈາກ {n}
+	Pan & zoom	ເລື່ອນ ແລະ ຊູມ
 	Panels	ແຜງ
 	Paper:	ເຈ້ຍ:
 	Part of	ສ່ວນໜຶ່ງຂອງ
+	Part of this page isn't shown: its content goes past the most PdfCraft draws for one page.	ບາງສ່ວນຂອງໜ້ານີ້ບໍ່ໄດ້ສະແດງ: ເນື້ອຫາຂອງມັນເກີນຂີດສູງສຸດທີ່ PdfCraft ແຕ້ມສຳລັບໜຶ່ງໜ້າ.
 	Passed	ຜ່ານ
 	Password	ລະຫັດຜ່ານ
+	Password & Security	ລະຫັດຜ່ານ ແລະ ຄວາມປອດໄພ
 	Password protection will be applied when you save	ການປ້ອງກັນດ້ວຍລະຫັດຜ່ານຈະຖືກນຳໃຊ້ເມື່ອທ່ານບັນທຶກ
 	Password required	ຕ້ອງການລະຫັດຜ່ານ
 	Password security	ຄວາມປອດໄພດ້ວຍລະຫັດຜ່ານ
 	Password-protected	ປົກປ້ອງດ້ວຍລະຫັດຜ່ານ
 	Paste	ວາງ
 	Paste after	ວາງຕໍ່ທ້າຍ
+	Paste comments	ວາງບັນດາຄຳເຫັນ
 	Paste pages	ວາງໜ້າ
 	Path	ເສັ້ນທາງເດີນ
 	Paths	ເສັ້ນທາງເດີນ
@@ -1541,13 +1824,18 @@ animation effects	On	ເປີດ
 	PDF scale: {scale}%	ມາດຕາສ່ວນ PDF: {scale}%
 	PDF version	ເວີຊັນ PDF
 	PDF, images and text	PDF, ຮູບພາບ ແລະ ຂໍ້ຄວາມ
+	PDF, images, text and Office documents	PDF, ຮູບພາບ, ຂໍ້ຄວາມ ແລະ ເອກະສານ Office
 	PDF/A…	PDF/A…
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft ບໍ່ໄດ້ປິດລົງຢ່າງປົກກະຕິ. ເອກະສານເຫຼົ່ານີ້ມີການປ່ຽນແປງທີ່ຖືກບັນທຶກອັດຕະໂນມັດໄວ້:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft ກຳລັງແຕ້ມສະແດງຜົນໂດຍບໍ່ໃຊ້ໜ່ວຍປະມວນຜົນກຣາບຟິກ, ເຊິ່ງອາດເຮັດໃຫ້ຊ້າ. ການອັບເດດໄດຣເວີກຣາບຟິກອາດຊ່ວຍໄດ້.
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft ຊອກຫາຫ້ອງສະໝຸດທີ່ຜູ້ຜະລິດອຸປະກອນຕິດຕັ້ງ. ເລືອກອັນໜຶ່ງສະເພາະເມື່ອບໍ່ພົບອຸປະກອນຂອງທ່ານ.
 	PdfCraft on GitHub	PdfCraft ເທິງ GitHub
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft ເປີດໜ້າຂອງຜູ້ໃຫ້ບໍລິການ ເຊິ່ງທ່ານເຂົ້າສູ່ລະບົບດ້ວຍ CPF, PIN ແລະ ລະຫັດໃຊ້ຄັ້ງດຽວ.
 	PdfCraft web page	ໜ້າເວັບ PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft ເຮັດວຽກແບບອອບລາຍ. ບໍ່ມີການສົ່ງຂໍ້ມູນການໃຊ້ງານ, ບໍ່ຕ້ອງມີບັນຊີ ແລະ ບໍ່ມີການປະມວນຜົນເທິງຄລາວ ເວັ້ນເສຍແຕ່ທ່ານຈະເພີ່ມຜູ້ໃຫ້ບໍລິການ.
+	PdfCraft {c} is up to date.	PdfCraft {c} ເປັນເວີຊັນລ່າສຸດແລ້ວ.
 	PdfCraft {v} is available.	ມີ PdfCraft {v} ພ້ອມໃຫ້ໃຊ້ງານແລ້ວ.
+	PdfCraft's own	ຂອງ PdfCraft ເອງ
 	People may need more time to respond. Check that nothing has a time limit.	ຜູ້ໃຊ້ອາດຕ້ອງການເວລາເພີ່ມເຕີມໃນການຕອບສະໜອງ. ກວດສອບໃຫ້ແນ່ໃຈວ່າບໍ່ມີສິ່ງໃດກຳນົດເວລາ.
 	Percentage	ເປີເຊັນ
 	Perimeter	ລວງຮອບ
@@ -1556,10 +1844,12 @@ animation effects	On	ເປີດ
 	Phone Number	ເບີໂທລະສັບ
 	Phone Numbers	ເບີໂທລະສັບ
 	Photo	ຮູບຖ່າຍ
+	Photometric	Photometric
 	Pick a tool in the quick bar, or type above.	ເລືອກເຄື່ອງມືໃນແຖບດ່ວນ ຫຼື ພິມໃສ່ດ້ານເທິງ.
 	Pictures cover pages {pages} (scans?), so the background won't show there.	ມີຮູບພາບຫຼາຍຮູບປົກໜ້າ {pages} ຢູ່ (ພາບສະແກນ?), ສະນັ້ນພື້ນຫຼັງຈະບໍ່ສະແດງຢູ່ບ່ອນນັ້ນ.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	ຮູບພາບຕ້ອງມີຂໍ້ຄວາມທົດແທນທີ່ອະທິບາຍຮູບ ຫຼື ຕ້ອງໝາຍວ່າເປັນການຕົກແຕ່ງ. ເພີ່ມຂໍ້ຄວາມທົດແທນໃຫ້ແຕ່ລະຮູບ.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	ຮູບພາບໃນໜ້າເຫຼົ່ານັ້ນຈະຖືກຮັບຮູ້ນຳດ້ວຍ; ຄຳທີ່ມີຢູ່ແລ້ວໃນຂໍ້ຄວາມຂອງໜ້າຈະບໍ່ຖືກເພີ່ມຄືນອີກ
+	PIN	ລະຫັດ PIN
 	Pin	ປັກໝຸດ
 	Pin a folder to Home	ປັກໝຸດໂຟນເດີໄວ້ໜ້າຫຼັກ
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	ປັກໝຸດໂຟນເດີເພື່ອສະແດງໄຟລ໌ PDF ໃໝ່ລ່າສຸດຢູ່ນີ້ ເຊັ່ນ: ບ່ອນທີ່ສະແກນເນີ ຫຼື ຄລາວໄດຣຟ໌ທີ່ຊິ້ງຄ໌ໄວ້ບັນທຶກລົງ.
@@ -1575,6 +1865,7 @@ animation effects	On	ເປີດ
 	Pinned Tools	ເຄື່ອງມືທີ່ປັກໝຸດ
 	Pinned {folder} to Home	ປັກໝຸດ {folder} ໄວ້ໜ້າຫຼັກແລ້ວ
 	Pinned {tool} to Home	ປັກໝຸດ {tool} ໄວ້ໜ້າຫຼັກແລ້ວ
+	PKCS #11 modules	ໂມດູນ PKCS #11
 	Place saved {what}	ວາງ {what} ທີ່ບັນທຶກໄວ້
 	Plain text in reading order; pages are separated by form feeds.	ຂໍ້ຄວາມທຳມະດາຕາມລຳດັບການອ່ານ; ໜ້າຕ່າງໆ ຈະຖືກແຍກດ້ວຍຕົວອັກສອນຂຶ້ນໜ້າໃໝ່ (form feed).
 	Planned	ວາງແຜນໄວ້
@@ -1601,11 +1892,17 @@ animation effects	On	ເປີດ
 	Prepare for Distribution	ກະກຽມສຳລັບການແຈກຢາຍ
 	Prepare for distribution	ກະກຽມສຳລັບການແຈກຢາຍ
 	Prepare for distribution…	ກະກຽມສຳລັບການແຈກຢາຍ…
+	Preparing OCR add-on…	ກຳລັງກະກຽມສ່ວນເສີມ OCR…
 	Preparing sheet {done} of {total} for printing…	ກຳລັງກຽມແຜ່ນ {done} ຈາກ {total} ສຳລັບການພິມ…
 	Preparing {n} sheets for printing…	ກຳລັງກຽມ {n} ແຜ່ນສຳລັບການພິມ…
 	Presentation (.pptx)	ງານນຳສະເໜີ (.pptx)
+	Preset	ຄ່າທີ່ຕັ້ງໄວ້
+	Press the new keys (Esc cancels)	ກົດປຸ່ມໃໝ່ (Esc ເພື່ອຍົກເລີກ)
+	Prevent G-SYNC/FreeSync flicker (applies at next launch)	ປ້ອງກັນການກະພິບ G-SYNC/FreeSync (ມີຜົນໃນການເປີດຄັ້ງຕໍ່ໄປ)
 	Preview	ສະແດງຕົວຢ່າງ
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.
 	Preview unavailable: {e}	ບໍ່ສາມາດສະແດງຕົວຢ່າງໄດ້: {e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	Preview uses the bed. Switch the source to Bed, or scan without a preview.
 	Preview: page {p} of {n}	ຕົວຢ່າງ: ໜ້າ {p} ຈາກ {n}
 	Previous ({key})	ກ່ອນໜ້າ ({key})
 	Previous / next page	ໜ້າກ່ອນໜ້າ / ໜ້າຖັດໄປ
@@ -1624,6 +1921,7 @@ animation effects	On	ເປີດ
 	Print production	ຂະບວນການຜະລິດສິ່ງພິມ
 	Print single-sided. Keep the sheets in order, cut at the marks, then stack the piles left to right, top to bottom.	ພິມໜ້າດຽວ. ຮັກສາລຳດັບແຜ່ນເຈ້ຍໄວ້, ຕັດຕາມຮອຍໝາຍ, ແລ້ວວາງຊ້ອນກອງເຈ້ຍຈາກຊ້າຍຫາຂວາ, ແຕ່ເທິງລົງລຸ່ມ.
 	Print, NextPage, PrevPage, FirstPage or LastPage	Print, NextPage, PrevPage, FirstPage ຫຼື LastPage
+	Printed through the system print dialog	ພິມຜ່ານກ່ອງຂໍ້ຄວາມການພິມຂອງລະບົບແລ້ວ
 	Printer paper and scaling may differ. Check driver settings.	ເຈ້ຍເຄື່ອງພິມ ແລະ ມາດຕາສ່ວນອາດແຕກຕ່າງກັນ. ກວດສອບການຕັ້ງຄ່າໄດຣເວີ.
 	Printer properties	ຄຸນສົມບັດເຄື່ອງພິມ
 	Printer:	ເຄື່ອງພິມ:
@@ -1641,24 +1939,30 @@ animation effects	On	ເປີດ
 	Protect using password…	ປ້ອງກັນດ້ວຍລະຫັດຜ່ານ…
 	Protect with password	ປ້ອງກັນດ້ວຍລະຫັດຜ່ານ
 	Protected: the combined file won't keep its security settings	ຖືກປົກປ້ອງຢູ່: ໄຟລ໌ທີ່ຮວມແລ້ວຈະບໍ່ຮັກສາການຕັ້ງຄ່າຄວາມປອດໄພໄວ້
+	Provider	ຜູ້ໃຫ້ບໍລິການ
 	PRs	PRs
 	Public key	ກະແຈສາທາລະນະ
 	Purple	ມ່ວງ
 	PushButton	ປຸ່ມກົດ
 	Quality	ຄຸນນະພາບ
+	Quit PdfCraft	ອອກຈາກ PdfCraft
+	Quit {app}	ອອກຈາກ {app}
 	Radio	ປຸ່ມເລືອກທາງດຽວ
 	Radio button	ປຸ່ມຕົວເລືອກ
 	Radio Button Properties	ຄຸນສົມບັດຂອງປຸ່ມຕົວເລືອກ
 	Re-type Password	ປ້ອນລະຫັດຜ່ານຄືນໃໝ່
 	Read	ອ່ານ
+	Read and comment	ອ່ານ ແລະ ຄຳເຫັນ
 	Read mode	ໂໝດອ່ານ
 	Read Only	ອ່ານໄດ້ຢ່າງດຽວ
 	Reading colours	ສີສຳລັບການອ່ານ
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reads {name}, which the form doesn't have, so it gets no value there.	Reads {name}, which the form doesn't have, so it gets no value there.
 	Ready	ພ້ອມແລ້ວ
 	Real name	ຊື່ແທ້
 	Reason	ເຫດຜົນ
 	Reason: 	ເຫດຜົນ: 
+	Reassign	ກຳນົດໃໝ່
 	Recent	ຫຼ້າສຸດ
 	Recent colours	ສີທີ່ໃຊ້ຫຼ້າສຸດ
 	Recent files to keep	Recent files to keep
@@ -1692,8 +1996,14 @@ animation effects	On	ເປີດ
 	Redaction Tool Properties	ຄຸນສົມບັດເຄື່ອງມືປິດບັງຂໍ້ຄວາມ
 	Redid {label}	ເຮັດຄືນ {label} ແລ້ວ
 	Redo	ເຮັດຊ້ຳ
+	Redo ({key})	ເຮັດຊ້ຳ ({key})
+	Reduce & Optimize	ຫຼຸດຂະໜາດ ແລະ ປັບແຕ່ງ
 	Reduce file size	ຫຼຸດຂະໜາດໄຟລ໌
 	Reduce file size…	ຫຼຸດຂະໜາດໄຟລ໌…
+	Reference point: {point} (Tab: next)	ຈຸດອ້າງອີງ: {point} (Tab: ຕໍ່ໄປ)
+	Refresh	ໂຫຼດຄືນໃໝ່
+	Refresh lists scanners. It does not feed paper.	Refresh lists scanners. It does not feed paper.
+	Region in inches. Leave the width or the height at zero to scan the whole area.	Region in inches. Leave the width or the height at zero to scan the whole area.
 	Regularity	ຄວາມສະໝ່ຳສະເໝີ
 	Rejected	ປະຕິເສດແລ້ວ
 	Reliable character encoding is provided	ມີການເຂົ້າລະຫັດຕົວອັກສອນທີ່ເຊື່ອຖືໄດ້
@@ -1701,6 +2011,7 @@ animation effects	On	ເປີດ
 	Reload documents when their files change on disk	ໂຫຼດເອກະສານຄືນໃໝ່ເມື່ອໄຟລ໌ໃນດິສກ໌ມີການປ່ຽນແປງ
 	Remove	ລຶບອອກ
 	Remove "{name}" from this list? The file itself is not deleted.	ລຶບ "{name}" ອອກຈາກລາຍການນີ້ບໍ່? ຕົວໄຟລ໌ຕົວຈິງຈະບໍ່ຖືກລຶບ.
+	Remove add-on	ລຶບສ່ວນເສີມ
 	Remove all links	ລຶບລິ້ງຄ໌ທັງໝົດ
 	Remove background	ລຶບພື້ນຫຼັງ
 	Remove checkmark	ລຶບເຄື່ອງໝາຍຖືກອອກ
@@ -1717,10 +2028,14 @@ animation effects	On	ເປີດ
 	Remove redaction marks	ລຶບເຄື່ອງໝາຍປິດບັງອອກ
 	Remove saved {what}	ລຶບ {what} ທີ່ບັນທຶກໄວ້ອອກ
 	Remove security	ປົດການປ້ອງກັນຄວາມປອດໄພ
+	Remove security?	ລຶບຄວາມປອດໄພອອກບໍ່?
+	Remove the digital signatures: their fields, how they look on the page and their validation data	ລຶບລາຍເຊັນດິຈິຕອນ: ຊ່ອງຂອງມັນ, ລັກສະນະທີ່ເຫັນໃນໜ້າ ແລະ ຂໍ້ມູນການກວດສອບ
 	Remove this leaf tag from reading order and mark its direct content as an artifact	ລຶບແທັກໃບນີ້ອອກຈາກລຳດັບການອ່ານ ແລະ ໝາຍເນື້ອໃນໂດຍກົງຂອງມັນວ່າເປັນວັດຖຸປະກອບ
 	Remove unreferenced named destinations	ລຶບຈຸດໝາຍປາຍທາງທີ່ມີຊື່ເຊິ່ງບໍ່ມີການອ້າງອີງ
 	Remove unused objects and merge identical ones	ລຶບວັດຖຸທີ່ບໍ່ໄດ້ໃຊ້ ແລະ ຮວມວັດຖຸທີ່ຄືກັນເຂົ້າກັນ
 	Remove watermark	ລຶບລາຍນ້ຳ
+	Remove white margins	ລຶບຂອບສີຂາວ
+	Remove white margins is already running	ການລຶບຂອບສີຂາວກຳລັງດຳເນີນຢູ່ແລ້ວ
 	Remove {name}	ລຶບ {name} ອອກ
 	Remove {name} from Recent	ລຶບ {name} ອອກຈາກລາຍການຫຼ້າສຸດ
 	Remove {n} files	ລຶບອອກ {n} ໄຟລ໌
@@ -1730,6 +2045,7 @@ animation effects	On	ເປີດ
 	Removed {n} hidden items. Save to remove them from the file.	ລຶບລາຍການທີ່ເຊື່ອງໄວ້ {n} ລາຍການແລ້ວ. ບັນທຶກເພື່ອລຶບອອກຈາກໄຟລ໌.
 	Removed {n} links	ລຶບລິ້ງຄ໌ອອກແລ້ວ {n} ລິ້ງຄ໌
 	Removing the background puts the page's own backdrop back.	ການລຶບພື້ນຫຼັງຈະເອົາພື້ນສີຂາວເດີມຂອງໜ້າກັບຄືນມາ.
+	Removing white margins… page {d} of {t}	ກຳລັງລຶບຂອບສີຂາວ… ໜ້າ {d} ຈາກ {t}
 	Rename	ປ່ຽນຊື່
 	Rename bookmark	ປ່ຽນຊື່ບຸກມາກ
 	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	ການສະແດງຜົນ: hayro (bootstrap) · UI: egui · ໄອຄອນ: Lucide (ISC) · ຟອນ: Inter, JetBrains Mono, Dancing Script (OFL)
@@ -1737,6 +2053,7 @@ animation effects	On	ເປີດ
 	Reopen the files that were open when PdfCraft last closed	ເປີດໄຟລ໌ທີ່ເຄີຍເປີດຢູ່ຕອນປິດ PdfCraft ຄັ້ງຫຼ້າສຸດຄືນໃໝ່
 	Repair log	ບັນທຶກການສ້ອມແປງ
 	Repairs	ການສ້ອມແປງ
+	Repeat on pages	ເຮັດຊ້ຳໃນໜ້າ
 	Repeat overlay text	ເຮັດຊ້ຳຂໍ້ຄວາມຊ້ອນທັບ
 	Repeated navigation links should be skippable. Check links that appear on every page.	ລິ້ງນຳທາງທີ່ຊ້ຳກັນຄວນສາມາດຂ້າມໄດ້. ກວດສອບລິ້ງທີ່ປະກົດຢູ່ທຸກໜ້າ.
 	Replace	ປ່ຽນແທນ
@@ -1760,12 +2077,15 @@ animation effects	On	ເປີດ
 	Report…	ລາຍງານ…
 	Required	ຈຳເປັນຕ້ອງໃສ່
 	Requires user to enter a password for:	ຮຽກຮ້ອງໃຫ້ຜູ້ໃຊ້ປ້ອນລະຫັດຜ່ານສຳລັບ:
+	Reset	ຕັ້ງຄ່າຄືນ
 	Reset a form	ຕັ້ງຄ່າຟອມໃໝ່
+	Reset all shortcuts	ຕັ້ງຄ່າປຸ່ມລັດທັງໝົດຄືນ
 	Reset columns	ຕັ້ງຄ່າຖັນຄືນໃໝ່
 	Reset page size	ຕັ້ງຄ່າຂະໜາດໜ້າຄືນໃໝ່
 	Reset panel layout	ຕັ້ງຄ່າໂຄງຮ່າງແຜງຄືນໃໝ່
 	Reset to printer defaults	ຕັ້ງຄ່າຄືນເປັນຄ່າເລີ່ມຕົ້ນຂອງເຄື່ອງພິມ
 	Resize comment	ປັບຂະໜາດຄວາມເຫັນ
+	Resize object	ປັບຂະໜາດວັດຖຸ
 	Resize panel window	ປັບຂະໜາດປ່ອງຢ້ຽມແຜງ
 	Resize panels	ປັບຂະໜາດແຜງ
 	Resize window to initial page	ປັບຂະໜາດປ່ອງຢ້ຽມໃຫ້ພໍດີກັບໜ້າເລີ່ມຕົ້ນ
@@ -1775,11 +2095,15 @@ animation effects	On	ເປີດ
 	Restrictions	ຂໍ້ຈຳກັດ
 	Restrictions lifted	ປົດລັອກຂໍ້ຈຳກັດແລ້ວ
 	Retain existing	ຮັກສາຄ່າທີ່ມີຢູ່
+	Return to document	ກັບໄປຫາເອກະສານ
 	Reveal in File Explorer	ສະແດງໃນ File Explorer
 	Reveal in Finder	ສະແດງໃນ Finder
 	Reverse closed arrow	ລູກສອນປາຍປິດປີ້ນກັບ
 	Reverse open arrow	ລູກສອນປາຍເປີດປີ້ນກັບ
 	Reverse pages	ພິມໜ້າແບບຍ້ອນກັບ
+	reverse side(s)	reverse side(s)
+	Reverse sides	Reverse sides
+	Reverse sides interleaved.	Reverse sides interleaved.
 	Reverse the order	ປີ້ນລຳດັບ
 	Revert	ກັບຄືນສູ່ສະພາບເດີມ
 	Revert changes	ຍົກເລີກການປ່ຽນແປງ
@@ -1794,12 +2118,17 @@ animation effects	On	ເປີດ
 	Right Edge	ຂອບຂວາ
 	Right Footer Text	ຂໍ້ຄວາມທ້າຍເຈ້ຍດ້ານຂວາ
 	Right Header Text	ຂໍ້ຄວາມຫົວເຈ້ຍດ້ານຂວາ
+	Right-to-left page order	ລຳດັບໜ້າຈາກຂວາໄປຊ້າຍ
+	Right-to-left page order in two-page view	ລຽງໜ້າຈາກຂວາຫາຊ້າຍໃນມຸມມອງສອງໜ້າ
 	Rotate	ໝູນ
 	Rotate Clockwise	ໝູນຕາມເຂັມໂມງ
 	Rotate clockwise	ໝູນຕາມເຂັມໂມງ
+	Rotate comment	ໝູນຄວາມເຫັນ
+	Rotate corner {n}	ໝຸນມຸມ {n}
 	Rotate Counterclockwise	ໝູນທວນເຂັມໂມງ
 	Rotate counterclockwise	ໝູນທວນເຂັມໂມງ
 	Rotate image	ໝູນຮູບພາບ
+	Rotate object	ໝຸນວັດຖຸ
 	Rotate page	ໝູນໜ້າ
 	Rotate page {label} clockwise	ໝູນໜ້າ {label} ຕາມເຂັມໂມງ
 	Rotate page {label} counterclockwise	ໝູນໜ້າ {label} ທວນເຂັມໂມງ
@@ -1818,20 +2147,26 @@ animation effects	On	ເປີດ
 	Rotation	ການໝູນ
 	Rotation:	ການໝູນ:
 	Rows	ແຖວ
+	Rulers	ໄມ້ບັນທັດ
 	Run	ເອີ້ນໃຊ້
 	Run a JavaScript	ເອີ້ນໃຊ້ JavaScript
 	Run form script	ດຳເນີນການສະຄຣິບຟອມ
 	Run JavaScript	ດຳເນີນການ JavaScript
 	Running action… file {d} of {t}	ກຳລັງດຳເນີນການກະທຳ… ໄຟລ໌ {d} ຈາກ {t}
+	Same as interface	ຄືກັບສ່ວນຕິດຕໍ່
 	Same as interface ({language})	ຄືກັບພາສາລະບົບ ({language})
+	Same as text	ຄືກັບຂໍ້ຄວາມ
 	Sanitize	ລຶບລ້າງຂໍ້ມູນລັບ
 	Sanitize document	ລຶບລ້າງຂໍ້ມູນລັບໃນເອກະສານ
+	Sanitize document and flatten signatures	ລຶບລ້າງຂໍ້ມູນລັບໃນເອກະສານ ແລະ ແປງລາຍເຊັນເປັນເນື້ອຫາ
+	Sanitize document and remove signatures	ລຶບລ້າງຂໍ້ມູນລັບໃນເອກະສານ ແລະ ລຶບລາຍເຊັນ
 	Sanitize Documents	ລຶບລ້າງຂໍ້ມູນລັບໃນເອກະສານ
 	Sanitize document…	ລຶບລ້າງຂໍ້ມູນລັບໃນເອກະສານ…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	ການລຶບລ້າງຂໍ້ມູນລັບຈະລຶບຂໍ້ມູນທີ່ເຊື່ອງໄວ້ອອກຈາກເອກະສານ: ເມຕາເດຕາ, ໄຟລ໌ແນບ, ຄວາມເຫັນ, ຊ່ອງຟອມ (ທີ່ຮວບແລ້ວ), ຂໍ້ຄວາມ ແລະ ຊັ້ນທີ່ເຊື່ອງໄວ້, ບຸກມາກ, ລິ້ງ, ການກະທຳ, ສະຄຣິບ ແລະ ຂໍ້ມູນສ່ວນຕົວຂອງແອັບພລິເຄຊັນ.
 	Save	ບັນທຶກ
 	Save & Close	ບັນທຶກ ແລະ ປິດ
 	Save ({key})	ບັນທຶກ ({key})
+	Save a signature first	ບັນທຶກລາຍເຊັນກ່ອນ
 	Save anyway	ບັນທຶກຕໍ່ໄປ
 	Save as PDF	ບັນທຶກເປັນ PDF
 	Save as PDF/A	ບັນທຶກເປັນ PDF/A
@@ -1840,31 +2175,58 @@ animation effects	On	ເປີດ
 	Save as PDF/A-3b	ບັນທຶກເປັນ PDF/A-3b
 	Save as PDF/UA	ບັນທຶກເປັນ PDF/UA
 	Save as PDF/X	ບັນທຶກເປັນ PDF/X
+	Save as template	ບັນທຶກເປັນແມ່ແບບ
 	Save as…	ບັນທຶກເປັນ…
 	Save attachment…	ບັນທຶກໄຟລ໌ແນບ…
 	Save changes to “{name}” before closing?	ບັນທຶກການປ່ຽນແປງໃນ “{name}” ກ່ອນທີ່ຈະປິດບໍ່?
 	Save image	ບັນທຶກຮູບພາບ
 	Save Image As…	ບັນທຶກຮູບພາບເປັນ…
+	Save initials first	ບັນທຶກລາຍເຊັນຫຍໍ້ກ່ອນ
 	Save or revert changes before selecting another tag.	ບັນທຶກ ຫຼື ຍົກເລີກການປ່ຽນແປງກ່ອນທີ່ຈະເລືອກແທັກອື່ນ.
 	Save over the changed file?	ບັນທຶກທັບໄຟລ໌ທີ່ມີການປ່ຽນແປງຫຼືບໍ່?
 	Save pages	ບັນທຶກໜ້າ
+	Save Settings	ບັນທຶກການຕັ້ງຄ່າ
 	Save tag properties	ບັນທຶກຄຸນສົມບັດແທັກ
 	Save the accessibility report	ບັນທຶກລາຍງານການເຂົ້າເຖິງ
 	Save the document afterwards: saving rewrites the whole file so no trace of the removed content stays in it.	ບັນທຶກເອກະສານຫຼັງຈາກນັ້ນ: ການບັນທຶກຈະຂຽນໄຟລ໌ໃໝ່ທັງໝົດເພື່ອບໍ່ໃຫ້ເຫຼືອຮ່ອງຮອຍຂອງເນື້ອໃນທີ່ລຶບອອກ.
 	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	ບັນທຶກເອກະສານຫຼັງຈາກນັ້ນ; ການບັນທຶກຈະຂຽນໄຟລ໌ໃໝ່ທັງໝົດເພື່ອບໍ່ໃຫ້ສິ່ງທີ່ລຶບອອກຍັງເຫຼືອຢູ່.
 	Save the spreadsheet	ບັນທຶກສະເປຣດຊີດ
 	Save these pages as one PDF	ບັນທຶກໜ້າເຫຼົ່ານີ້ເປັນ PDF ດຽວ
+	Save this document to a folder first	ບັນທຶກເອກະສານນີ້ໃສ່ໂຟນເດີກ່ອນ
+	Saved	ບັນທຶກແລ້ວ
 	Saved measurements	ການວັດແທກທີ່ບັນທຶກໄວ້
 	Saved measurements.	ບັນທຶກການວັດແທກແລ້ວ.
+	Saved Settings	ການຕັ້ງຄ່າທີ່ບັນທຶກໄວ້
 	Saved the print-ready PDF to {path}	ບັນທຶກໄຟລ໌ PDF ສຳລັບພິມໄປທີ່ {path} ແລ້ວ
 	Saved {name}	ບັນທຶກ {name} ແລ້ວ
 	Saved {place}: {before} → {after} (not smaller){detail}	ບັນທຶກໄວ້ທີ່ {place}: {before} → {after} (ບໍ່ໄດ້ຫຼຸດລົງ){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	ບັນທຶກໄວ້ທີ່ {place}: {before} → {after} (ຫຼຸດລົງ {pct}%){detail}
 	Saved, but reopening failed: {e}	ບັນທຶກແລ້ວ, ແຕ່ການເປີດຄືນໃໝ່ບໍ່ສຳເລັດ: {e}
+	Saves document	ບັນທຶກເອກະສານ
 	Scale	ມາດຕາສ່ວນ
+	Scale corner {n}	ປັບຂະໜາດຈາກມຸມ {n}
+	Scale object	ປັບຂະໜາດວັດຖຸ
 	Scale relative to target page	ມາດຕາສ່ວນທຽບໃສ່ໜ້າເປົ້າໝາຍ
 	Scan	ສະແກນ
 	Scan & OCR	ສະແກນ & OCR
+	Scan interrupted	Scan interrupted
+	Scan reverse side now (1 front)	Scan reverse side now (1 front)
+	Scan reverse sides	Scan reverse sides
+	Scan reverse sides now ({n} fronts)	Scan reverse sides now ({n} fronts)
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	Scan the front, flip the sheet on the bed, then scan the reverse side.
+	Scan the fronts before the reverse sides.	Scan the fronts before the reverse sides.
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …
+	Scan the missing reverse sides, then choose Finish.	Scan the missing reverse sides, then choose Finish.
+	Scanner	Scanner
+	Scanner settings	Scanner settings
+	Scanning front {n} of {t}…	Scanning front {n} of {t}…
+	Scanning front {n}…	Scanning front {n}…
+	Scanning needs Windows (WIA) in this version.	Scanning needs Windows (WIA) in this version.
+	Scanning page {n} of {t}…	Scanning page {n} of {t}…
+	Scanning page {n}…	Scanning page {n}…
+	Scanning reverse side {n} of {t}…	Scanning reverse side {n} of {t}…
+	Scanning reverse side {n}…	Scanning reverse side {n}…
+	Scanning…	Scanning…
 	Screen flicker	ການກະພິບຂອງໜ້າຈໍ
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	ໂປຣແກຣມອ່ານໜ້າຈໍຈະເລືອກສຽງຕາມພາສາຂອງເອກະສານ. ຕັ້ງຄ່າໄດ້ທີ່ ຄຸນສົມບັດເອກະສານ > ຂັ້ນສູງ > ພາສາ.
 	Script Name:	ຊື່ສະຄຣິບ:
@@ -1877,15 +2239,21 @@ animation effects	On	ເປີດ
 	Scroll speed (mouse wheel and arrow keys)	ຄວາມໄວໃນການເລື່ອນ (ລໍ້ເມົາສ໌ ແລະ ປຸ່ມລູກສອນ)
 	Scroll tabs left	ເລື່ອນແທັບໄປທາງຊ້າຍ
 	Scroll tabs right	ເລື່ອນແທັບໄປທາງຂວາ
+	Scroll the page	ເລື່ອນໜ້າ
 	Search	ຄົ້ນຫາ
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	ຄົ້ນຫາຄວາມເຫັນ
+	Search panel	ແຜງຄົ້ນຫາ
 	Search tools and commands	ຄົ້ນຫາເຄື່ອງມື ແລະ ຄຳສັ່ງ
 	Search tools and commands…	ຄົ້ນຫາເຄື່ອງມື ແລະ ຄຳສັ່ງ…
 	Search tools…	ຄົ້ນຫາເຄື່ອງມື…
 	Searchable Image (Exact)	ຮູບພາບທີ່ຄົ້ນຫາໄດ້ (ຮັກສາຮູບເດີມ)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	ກຳລັງຄົ້ນຫາ… {s} ຈາກ {p} ໜ້າ
 	Searching… {s}/{p}	ກຳລັງຄົ້ນຫາ… {s}/{p}
 	Search…	ຄົ້ນຫາ…
+	Secured	Secured
 	Security	ຄວາມປອດໄພ
 	Security method	ວິທີການຮັກສາຄວາມປອດໄພ
 	Security properties	ຄຸນສົມບັດຄວາມປອດໄພ
@@ -1893,10 +2261,13 @@ animation effects	On	ເປີດ
 	Security settings	ການຕັ້ງຄ່າຄວາມປອດໄພ
 	Security settings must allow assistive technology to read the content ("Enable text access for screen reader devices"). Change the document's security to allow it.	ການຕັ້ງຄ່າຄວາມປອດໄພຕ້ອງອະນຸຍາດໃຫ້ເຕັກໂນໂລຊີຊ່ວຍເຫຼືອອ່ານເນື້ອໃນໄດ້ ("ເປີດໃຊ້ການເຂົ້າເຖິງຂໍ້ຄວາມສຳລັບອຸປະກອນອ່ານໜ້າຈໍ"). ກະລຸນາປ່ຽນການຕັ້ງຄ່າຄວາມປອດໄພຂອງເອກະສານເພື່ອອະນຸຍາດ.
 	Security will be removed when you save	ຄວາມປອດໄພຈະຖືກລຶບອອກເມື່ອທ່ານບັນທຶກ
+	Select	ເລືອກ
 	Select (V)	ເລືອກ (V)
 	Select a file first	ເລືອກໄຟລ໌ກ່ອນ
 	Select a file for the stamp	ເລືອກໄຟລ໌ສຳລັບຕາປະທັບ
 	Select a password-protected file first	ເລືອກໄຟລ໌ທີ່ປົກປ້ອງດ້ວຍລະຫັດຜ່ານກ່ອນ
+	Select a placed signature first	ເລືອກລາຍເຊັນທີ່ວາງໄວ້ກ່ອນ
+	Select a text box or an image first	ເລືອກກ່ອງຂໍ້ຄວາມ ຫຼື ຮູບພາບກ່ອນ
 	Select a word	ເລືອກຄຳສັບ
 	Select Action:	ເລືອກການກະທຳ:
 	Select All	ເລືອກທັງໝົດ
@@ -1908,25 +2279,32 @@ animation effects	On	ເປີດ
 	Select Icon	ເລືອກໄອຄອນ
 	Select page {label}	ເລືອກໜ້າ {label}
 	Select pages	ເລືອກໜ້າ
+	Select text, a text box or an image first	ເລືອກຂໍ້ຄວາມ, ກ່ອງຂໍ້ຄວາມ ຫຼື ຮູບພາບກ່ອນ
 	Select the items to remove from this document.	ເລືອກລາຍການທີ່ຈະລຶບອອກຈາກເອກະສານນີ້.
+	Select the {n} pages with a match, for Extract, Print or Delete	ເລືອກ {n} ໜ້າທີ່ກົງກັນ ເພື່ອແຍກອອກ, ພິມ ຫຼື ລຶບ
 	Select Tool	ເຄື່ອງມືເລືອກ
+	Select tool	ເຄື່ອງມືເລືອກ
 	Select tools to display on your Home page for quick access.	ເລືອກເຄື່ອງມືໃຫ້ສະແດງໃນໜ້າຫຼັກເພື່ອເຂົ້າໃຊ້ໄດ້ໄວ.
 	Select Trigger:	ເລືອກຕົວກະຕຸ້ນ:
 	Selected image files: {count}	ໄຟລ໌ຮູບພາບທີ່ເລືອກ: {count}
 	Selected pages	ໜ້າທີ່ເລືອກ
 	Selection	ສ່ວນທີ່ເລືອກ
 	Self-signed	ເຊັນດ້ວຍຕົນເອງ
-	Send backward	ສົ່ງໄປທາງຫຼັງ
-	Send to back	ສົ່ງໄປໄວ້ຫຼັງສຸດ
+	Send backward	ລົງໜຶ່ງຊັ້ນ
+	Send to back	ຫຼັງສຸດ
 	Sending sheet {s} of {n} to {printer}…	ກຳລັງສົ່ງແຜ່ນ {s} ຈາກ {n} ໄປຍັງ {printer}…
 	Sending to {printer}…	ກຳລັງສົ່ງໄປຍັງ {printer}…
 	Sensitivity	ຄວາມໄວຕໍ່ການຕອບສະໜອງ
 	Sent to {printer}	ສົ່ງໄປຍັງ {printer} ແລ້ວ
 	Sent to {printer}: {msg}	ສົ່ງໄປຍັງ {printer} ແລ້ວ: {msg}
 	Separate PDFs	ແຍກເປັນແຕ່ລະ PDF
+	Separate the sheets and load the remaining ones, then choose Continue.	Separate the sheets and load the remaining ones, then choose Continue.
+	Separate the sheets and load them again, then choose Try again.	Separate the sheets and load them again, then choose Try again.
 	Separator style:	ຮູບແບບຕົວຂັ້ນ:
+	Sepia night	ເຊເປຍກາງຄືນ
 	September	ກັນຍາ
 	Serial number	ໝາຍເລກຊີຣຽວ
+	Services	ບໍລິການ
 	Set Alternate Text	ຕັ້ງຂໍ້ຄວາມອະທິບາຍແທນ
 	Set alternate text	ກຳນົດຂໍ້ຄວາມທົດແທນ
 	Set bookmark destination	ກຳນົດປາຍທາງຂອງບຸກມາກ
@@ -1951,6 +2329,7 @@ animation effects	On	ເປີດ
 	Set to current page ({n})	ກຳນົດເປັນໜ້າປະຈຸບັນ ({n})
 	Set to zero	ຕັ້ງເປັນສູນ
 	Settings	ການຕັ້ງຄ່າ
+	Settings this source offers. Leave a control alone to keep the driver’s value.	Settings this source offers. Leave a control alone to keep the driver’s value.
 	SHA-1 digest	SHA-1 ໄດເຈສ
 	SHA-256 digest	SHA-256 ໄດເຈສ
 	Shadings	ການໄລ່ລະດັບສີ
@@ -1965,17 +2344,28 @@ key	Shift	Shift
 	Show a basic title bar for the window buttons instead of the tab strip. GNOME doesn't draw title bars for apps, so this one doesn't follow its theme.	ສະແດງແຖບຫົວຂໍ້ແບບພື້ນຖານສຳລັບປຸ່ມປ່ອງຢ້ຽມແທນແຖບແທັບ. GNOME ບໍ່ແຕ້ມແຖບຫົວຂໍ້ສຳລັບແອັບ, ດັ່ງນັ້ນອັນນີ້ຈຶ່ງບໍ່ເປັນໄປຕາມຮູບແບບຂອງມັນ.
 	Show a field	ສະແດງຊ່ອງຂໍ້ມູນ
 	Show a notice when a document is secured	ສະແດງການແຈ້ງເຕືອນເມື່ອເອກະສານຖືກປ້ອງກັນໄວ້
+	Show All	ສະແດງທັງໝົດ
 	Show all	ສະແດງທັງໝົດ
 	Show all comments	ສະແດງຄວາມເຫັນທັງໝົດ
 	Show certificate…	ສະແດງໃບຢັ້ງຢືນ…
 	Show cover page in two-page view	ສະແດງໜ້າປົກໃນມຸມມອງສອງໜ້າ
+	Show form field reminder	ສະແດງການເຕືອນກ່ຽວກັບຊ່ອງແບບຟອມ
 	Show gaps between pages	ສະແດງຊ່ອງຫວ່າງລະຫວ່າງໜ້າ
+	Show in the tab strip	ສະແດງໃນແຖບແທັບ
 	Show layer	ສະແດງຊັ້ນຂໍ້ມູນ
 	Show less	ສະແດງໜ້ອຍລົງ
+	Show line weights	ສະແດງຄວາມໜາຂອງເສັ້ນ
+	Show on other pages too	ສະແດງໃນໜ້າອື່ນນຳ
+	Show or hide toolbars and panels	ສະແດງ ຫຼື ເຊື່ອງແຖບເຄື່ອງມື ແລະ ແຜງ
 	Show password	ສະແດງລະຫັດຜ່ານ
 	Show Report	ສະແດງລາຍງານ
+	Show template {name}	ສະແດງແມ່ແບບ {name}
 	Show the accessibility report	ສະແດງລາຍງານການເຂົ້າເຖິງ
+	Show the current page number over the document	Show the current page number over the document
+	Show the Discord button in the title bar and the community card on Home	ສະແດງປຸ່ມ Discord ຢູ່ແຖບຫົວຂໍ້ ແລະ ບັດຊຸມຊົນຢູ່ໜ້າຫຼັກ
+	Show the menus in the macOS menu bar	ສະແດງເມນູໃນແຖບເມນູຂອງ macOS
 	Show this dialog when the Checker starts	ສະແດງກ່ອງຂໍ້ຄວາມນີ້ເມື່ອເລີ່ມການກວດສອບ
+	Show validation marks over signed signatures	ສະແດງເຄື່ອງໝາຍການກວດສອບເທິງລາຍເຊັນທີ່ເຊັນແລ້ວ
 	Show {n} more	ສະແດງຕື່ມອີກ {n} ລາຍການ
 	Show:	ສະແດງ:
 	Shown while the pointer is over a mark.	ສະແດງເມື່ອຕົວຊີ້ເມົາສ໌ຢູ່ເທິງເຄື່ອງໝາຍ.
@@ -1983,6 +2373,7 @@ key	Shift	Shift
 	Side by side	ຄຽງຂ້າງກັນ
 	Side panels	ແຜງດ້ານຂ້າງ
 	Sign	ເຊັນ
+	Sign & Certify	ເຊັນ ແລະ ຢັ້ງຢືນ
 	Sign a sheet of white paper and take a photo of it in bright, even light (use the flash). Choose the photo or drop it here: PdfCraft finds the signature and removes the paper.	ເຊັນລົງໃນເຈ້ຍສີຂາວ ແລະ ຖ່າຍຮູບໃນບ່ອນທີ່ມີແສງສະຫວ່າງພຽງພໍ ແລະ ສະໝ່ຳສະເໝີ (ໃຊ້ແຟລຊ). ເລືອກຮູບ ຫຼື ລາກມາວາງຢູ່ນີ້: PdfCraft ຈະກວດຫາລາຍເຊັນ ແລະ ລຶບພື້ນເຈ້ຍອອກ.
 	Sign Here	ເຊັນຢູ່ນີ້
 	Sign this field…	ເຊັນຊ່ອງຂໍ້ມູນນີ້…
@@ -1990,11 +2381,17 @@ key	Shift	Shift
 	Sign yourself	ເຊັນດ້ວຍຕົນເອງ
 	Signature	ລາຍເຊັນ
 	signature	ລາຍເຊັນ
+	Signature added. Others can move it until it's locked.	ເພີ່ມລາຍເຊັນແລ້ວ. ຄົນອື່ນສາມາດຍ້າຍມັນໄດ້ຈົນກວ່າຈະຖືກລັອກ.
+	Signature cleanup stopped unexpectedly.	ການລ້າງລາຍເຊັນຢຸດໂດຍບໍ່ຄາດຄິດ.
 	Signature Details	ລາຍລະອຽດລາຍເຊັນ
+	Signature invalid	ລາຍເຊັນບໍ່ຖືກຕ້ອງ
 	Signature is INVALID:	ລາຍເຊັນບໍ່ຖືກຕ້ອງ:
 	Signature is valid:	ລາຍເຊັນຖືກຕ້ອງ:
+	Signature locked into the page.	ລັອກລາຍເຊັນເຂົ້າໃນໜ້າແລ້ວ.
 	Signature panel	ແຜງລາຍເຊັນ
+	Signature valid	ລາຍເຊັນຖືກຕ້ອງ
 	Signature validity is UNKNOWN:	ຄວາມຖືກຕ້ອງຂອງລາຍເຊັນ: ບໍ່ຮູ້ຈັກ:
+	Signature {n}	ລາຍເຊັນ {n}
 	Signatures	ລາຍເຊັນ
 	Signatures panel	ແຜງລາຍເຊັນ
 	Signed and all signatures are valid.	ເຊັນແລ້ວ ແລະ ທຸກລາຍເຊັນຖືກຕ້ອງສົມບູນ.
@@ -2014,10 +2411,14 @@ key	Shift	Shift
 	Slash	ເສັ້ນຂີດສະຫຼຽງ
 scroll speed	Slow	ຊ້າ
 	Smaller pages	ໜ້າລົງນ້ອຍ
+	Snap targets	ເປົ້າໝາຍການດູດຈັບ
 	Snap to drawing	ດູດຈັບກັບຮູບແຕ້ມ
+	Snap to drawing: off	ດູດຈັບກັບຮູບແຕ້ມ: ປິດ
+	Snap to drawing: on	ດູດຈັບກັບຮູບແຕ້ມ: ເປີດ
 	Snapping	ການດູດຈັບ
 	Social Security Number	ເລກປະກັນສັງຄົມ
 	Social Security Numbers	ເລກປະກັນສັງຄົມ
+	Soft dark gray	ສີເທົາເຂັ້ມນຸ່ມ
 	Solid	ເສັ້ນທຶບ
 	Some bookmarks are not shown here: the panel lists a limited number, nested a limited depth.	ບາງບຸກມາກບໍ່ໄດ້ສະແດງຢູ່ນີ້: ແຜງສະແດງຈຳນວນຈຳກັດ ແລະ ຄວາມເລິກຊັ້ນຈຳກັດ.
 	Some content could not be classified safely and was kept in the count.	ເນື້ອໃນບາງສ່ວນບໍ່ສາມາດຈັດໝວດໝູ່ໄດ້ຢ່າງແນ່ນອນ ແລະ ຍັງຄົງຖືກນັບຮວມໄວ້.
@@ -2034,6 +2435,11 @@ scroll speed	Slow	ຊ້າ
 key	Space	Space
 	Space Audit	ການກວດສອບພື້ນທີ່
 	Special	ພິເສດ
+	Spelling checks stay on this device.	ການກວດສະກົດຄຳເຮັດໃນອຸປະກອນນີ້.
+	Spelling dictionary unavailable	ບໍ່ມີພົດຈະນານຸກົມສະກົດຄຳ
+	Spelling language	ພາສາກວດການສະກົດຄຳ
+	Spelling marks do not change the document. Right-click an underlined word for suggestions.	ເຄື່ອງໝາຍສະກົດຄຳບໍ່ປ່ຽນເອກະສານ. ຄລິກຂວາໃສ່ຄຳທີ່ຂີດກ້ອງເພື່ອເບິ່ງຄຳແນະນຳ.
+	Spelling suggestions	ຄຳແນະນຳການສະກົດຄຳ
 	Split	ແບ່ງ
 	Split document	ແບ່ງເອກະສານ
 	Split document…	ແບ່ງເອກະສານ…
@@ -2047,6 +2453,7 @@ key	Space	Space
 	Stamp palette	ຈານກາປະທັບ
 	Stamps	ກາປະທັບ
 	Standard	ມາດຕະຖານ
+	Standard (Inter)	ມາດຕະຖານ (Inter)
 	Standard Business	ທຸລະກິດມາດຕະຖານ
 	Standards	ມາດຕະຖານ
 	Star	ດາວ
@@ -2056,23 +2463,36 @@ key	Space	Space
 	Status	ສະຖານະ
 	Steps	ຂັ້ນຕອນ
 	Sticky note	ໂນ້ດຕິດ
+	Stop	Stop
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
+	Store JPEG images as JPEG XL (smaller, can be undone; needs a reader that supports JPEG XL)	ບັນທຶກຮູບ JPEG ເປັນ JPEG XL (ນ້ອຍກວ່າ, ຍ້ອນກັບໄດ້; ຕ້ອງການໂປຣແກຣມອ່ານທີ່ຮອງຮັບ JPEG XL)
+	Straighten the page	Straighten the page
 	Strength: {s}	ຄວາມປອດໄພ: {s}
 	Strikethrough	ຂີດຂ້າ
 	Strikethrough text	ຂີດຂ້າຂໍ້ຄວາມ
+	Stroke colour	ສີເສັ້ນ
 	Strong	ແຂງແຮງ
 	Structure Info	ຂໍ້ມູນໂຄງສ້າງ
 	Style	ຮູບແບບ
 	Subject	ເລື່ອງ
 	Submit a form	ສົ່ງຟອມ
 	Subset	ກຸ່ມຍ່ອຍ
+	Suggest edits	ແນະນຳການແກ້ໄຂ
 	sum (+)	ຜົນບວກ (+)
 	Summarize	ສະຫຼຸບ
 	Summarize comments	ສະຫຼຸບຄຳເຫັນ
 	Summarize Options	ຕົວເລືອກການສະຫຼຸບ
 	Summary	ບົດສະຫຼຸບຫຍໍ້
+	Swap width and height	ສະຫຼັບຄວາມກວ້າງແລະຄວາມສູງ
 	Switch light / dark theme	ສະຫຼັບຮູບແບບແຈ້ງ / ມືດ
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	Switch the scanner off and on again, wait until it is ready, then choose Continue.
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	Switch the scanner off and on again, wait until it is ready, then choose Try again.
 	Switch to List view to change the pages it takes.	ປ່ຽນເປັນມຸມມອງລາຍການເພື່ອປ່ຽນໜ້າທີ່ເລືອກ.
 	Switch to two-page view first to show the cover page	ກະລຸນາປ່ຽນໄປເປັນມຸມມອງສອງໜ້າກ່ອນເພື່ອສະແດງໜ້າປົກ
+	System font	ຟອນຂອງລະບົບ
+	System print dialog…	ກ່ອງຂໍ້ຄວາມການພິມຂອງລະບົບ…
 	Tab order	ລຳດັບການແທັບ
 	Tab order by columns	ລຳດັບແທັບຕາມຖັນ
 	Tab order by rows	ລຳດັບແທັບຕາມແຖວນອນ
@@ -2081,6 +2501,7 @@ key	Space	Space
 	Tab order: by document structure	ລຳດັບແທັບ: ຕາມໂຄງສ້າງເອກະສານ
 	Tab order: by rows	ລຳດັບແທັບ: ຕາມແຖວນອນ
 	Tab order: move a field with its arrows.	ລຳດັບການແທັບ: ຍ້າຍຊ່ອງຂໍ້ມູນດ້ວຍລູກສອນ.
+	Tab: the next target under the pointer	Tab: ເປົ້າໝາຍຕໍ່ໄປພາຍໃຕ້ຕົວຊີ້
 	Table	ຕາຕະລາງ
 	Table cells belong in a row. Fix the table's tags.	ຕາລາງຂອງຕາຕະລາງຕ້ອງຢູ່ໃນແຖວ. ແກ້ໄຂແທັກຂອງຕາຕະລາງ.
 	Table rows belong directly in a table or its head, body or foot. Fix the table's tags.	ແຖວຕາຕະລາງຕ້ອງຢູ່ໃນຕາຕະລາງໂດຍກົງ ຫຼື ຢູ່ໃນຫົວ, ຕົວເນື້ອໃນ ຫຼື ທ້າຍຂອງຕາຕະລາງ. ແກ້ໄຂແທັກຂອງຕາຕະລາງ.
@@ -2102,18 +2523,25 @@ key	Space	Space
 	Text	ຂໍ້ຄວາມ
 	Text (plain)	ຂໍ້ຄວາມທຳມະດາ (plain text)
 	Text alignment:	ການຈັດລຽງຂໍ້ຄວາມ:
+	Text and added items can't be deleted with this selection.	ບໍ່ສາມາດລຶບຂໍ້ຄວາມ ແລະ ລາຍການທີ່ເພີ່ມເຂົ້າມາດ້ວຍການເລືອກນີ້ໄດ້.
 	Text box	ກ່ອງຂໍ້ຄວາມ
 	Text Color:	ສີຕົວອັກສອນ:
 	Text editing line	ແຖວແກ້ໄຂຂໍ້ຄວາມ
+	Text extends outside the frame.	ຂໍ້ຄວາມລົ້ນອອກນອກກອບ.
 	Text field	ຊ່ອງຂໍ້ຄວາມ
 	Text Field Properties	ຄຸນສົມບັດຂອງຊ່ອງຂໍ້ຄວາມ
 	Text in images isn't found; recognise text (OCR) first.	ບໍ່ພົບຂໍ້ຄວາມໃນຮູບພາບ; ກະລຸນາຮັບຮູ້ຂໍ້ຄວາມ (OCR) ກ່ອນ.
 	Text is compared word by word; the differences are shown on the new file.	ຂໍ້ຄວາມຈະຖືກປຽບທຽບແບບຄຳຕໍ່ຄຳ; ສ່ວນທີ່ແຕກຕ່າງຈະສະແດງໃນໄຟລ໌ໃໝ່.
 	Text language is specified	ລະບຸພາສາຂອງຂໍ້ຄວາມແລ້ວ
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	ຂໍ້ຄວາມຕ້ອງມີຄວາມຄົມຊັດພຽງພໍກັບພື້ນຫຼັງສຳລັບຜູ້ທີ່ມີບັນຫາທາງສາຍຕາ. ກວດສອບສີດ້ວຍສາຍຕາ ຫຼື ດ້ວຍເຄື່ອງມືວັດແທກຄວາມຄົມຊັດ.
+	Text only, keep images	ສະເພາະຂໍ້ຄວາມ, ຮັກສາຮູບພາບ
+	Text opacity	ຄວາມໂປ່ງແສງຂອງຂໍ້ຄວາມ
+	Text recognition cancelled. {summary}	ຍົກເລີກການຈຳແນກຂໍ້ຄວາມແລ້ວ. {summary}
 	Text recognition is already running	ການຮັບຮູ້ຂໍ້ຄວາມກຳລັງດຳເນີນການຢູ່ແລ້ວ
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	ການຮັບຮູ້ຂໍ້ຄວາມຍັງບໍ່ໄດ້ຮັບການຕິດຕັ້ງ: ໄຟລ໌ໂມເດວສູນຫາຍ. ກະລຸນາຕິດຕັ້ງ PdfCraft ຄືນໃໝ່ ຫຼື ຕັ້ງຄ່າ PDFCRAFT_MODELS ໄປຫາໂຟນເດີທີ່ບັນຈຸໄຟລ໌ດັ່ງກ່າວ.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	ການຮັບຮູ້ຂໍ້ຄວາມຍັງບໍ່ໄດ້ຕິດຕັ້ງ: ໂມເດວສູນຫາຍ (ດຳເນີນການ `cargo xtask models`, ຫຼື ຕັ້ງຄ່າ PDFCRAFT_MODELS).
+	Text rendering	ການສະແດງຂໍ້ຄວາມ
+	Text style	ຮູບແບບຂໍ້ຄວາມ
 	Text to find	ຂໍ້ຄວາມທີ່ຕ້ອງການຊອກຫາ
 	Text to insert	ຂໍ້ຄວາມທີ່ຈະແຊກ
 	Text to place	ຂໍ້ຄວາມທີ່ຈະວາງ
@@ -2124,10 +2552,15 @@ key	Space	Space
 	Thai and Arabic use regular fallback fonts when available.	ພາສາໄທ ແລະ ອາຣັບ ຈະໃຊ້ຟອນຕ໌ສຳຮອງແບບປົກກະຕິເມື່ອມີໃຫ້ໃຊ້ງານ.
 	That didn't work: an internal error stopped it ({m}).	ບໍ່ສຳເລັດ: ເກີດຂໍ້ຜິດພາດພາຍໃນຢຸດການເຮັດວຽກ ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	ບໍ່ສຳເລັດ: ເກີດຂໍ້ຜິດພາດພາຍໃນຢຸດການເຮັດວຽກ ({m}). ເອກະສານຂອງທ່ານບໍ່ມີການປ່ຽນແປງ.
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
 	The checker found 1 problem which may prevent the document from being fully accessible.	ຕົວລະບົບກວດສອບພົບ 1 ບັນຫາທີ່ອາດຂັດຂວາງການເຂົ້າເຖິງເອກະສານຢ່າງເຕັມສ່ວນ.
 	The checker found no problems in this document.	ຕົວລະບົບກວດສອບບໍ່ພົບບັນຫາໃນເອກະສານນີ້.
 	The checker found {n} problems which may prevent the document from being fully accessible.	ຕົວລະບົບກວດສອບພົບ {n} ບັນຫາທີ່ອາດຂັດຂວາງການເຂົ້າເຖິງເອກະສານຢ່າງເຕັມສ່ວນ.
 	The clipboard has no image or text	ຄລິບບອດບໍ່ມີຮູບພາບ ຫຼື ຂໍ້ຄວາມ
+	The clipboard holds no comments	ຄລິບບອດບໍ່ມີຄຳເຫັນ
+	The copied comments are larger than this page; they were placed as they are	ຄຳເຫັນທີ່ສຳເນົາໄວ້ໃຫຍ່ກວ່າໜ້ານີ້; ຈຶ່ງວາງໄວ້ຕາມເດີມ
+	The Dock shows it the next time PdfCraft opens.	Dock ຈະສະແດງມັນໃນເທື່ອຕໍ່ໄປທີ່ PdfCraft ເປີດ.
+	The document changed while its margins were measured; nothing was cropped	ເອກະສານປ່ຽນແປງໃນຂະນະວັດແທກຂອບ; ບໍ່ໄດ້ຕັດຫຍັງ
 	The document changed while you were choosing a file, so nothing was changed.	ເອກະສານມີການປ່ຽນແປງໃນຂະນະທີ່ທ່ານກຳລັງເລືອກໄຟລ໌, ດັ່ງນັ້ນຈຶ່ງບໍ່ມີສິ່ງໃດຖືກປ່ຽນແປງ.
 	The document changed while you were editing field properties.	ເອກະສານມີການປ່ຽນແປງໃນຂະນະທີ່ທ່ານກຳລັງແກ້ໄຂຄຸນສົມບັດຊ່ອງຂໍ້ມູນ.
 	The document has additional actions (/AA)	ເອກະສານມີການກະທຳເພີ່ມເຕີມ (/AA)
@@ -2145,35 +2578,75 @@ key	Space	Space
 	The document's security settings don't allow copying text and images	ການຕັ້ງຄ່າຄວາມປອດໄພຂອງເອກະສານບໍ່ອະນຸຍາດໃຫ້ສຳເນົາຂໍ້ຄວາມ ແລະ ຮູບພາບ
 	The document's security settings don't allow filling in form fields	ການຕັ້ງຄ່າຄວາມປອດໄພຂອງເອກະສານບໍ່ອະນຸຍາດໃຫ້ຕື່ມຂໍ້ມູນໃສ່ຊ່ອງຟອມ
 	The document's security settings don't allow this change	ການຕັ້ງຄ່າຄວາມປອດໄພຂອງເອກະສານບໍ່ອະນຸຍາດໃຫ້ມີການປ່ຽນແປງນີ້
+	The driver may accept a turn and leave the picture as it was.	The driver may accept a turn and leave the picture as it was.
+	The driver reports a paper jam.	The driver reports a paper jam.
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	The driver reports a sheet waiting. The bit can stay on after the tray is empty.
 	The existing action will be preserved.	ການກະທຳທີ່ມີຢູ່ແລ້ວຈະຖືກຮັກສາໄວ້.
+	The extracted pages aren't protected: the original's security settings don't carry over.	ໜ້າທີ່ແຍກອອກມາບໍ່ໄດ້ຮັບການປ້ອງກັນ: ການຕັ້ງຄ່າຄວາມປອດໄພຂອງຕົ້ນສະບັບບໍ່ຕິດໄປນຳ.
+	The feeder ran out of paper.	The feeder ran out of paper.
+	The feeder took more than one sheet.	The feeder took more than one sheet.
 	The field properties could not be changed.	ບໍ່ສາມາດປ່ຽນແປງຄຸນສົມບັດຊ່ອງຂໍ້ມູນໄດ້.
 	The field properties dialog is no longer open.	ກ່ອງຂໍ້ຄວາມຄຸນສົມບັດຊ່ອງຂໍ້ມູນບໍ່ໄດ້ເປີດຢູ່ອີກຕໍ່ໄປ.
 	The field {name} no longer exists.	ຊ່ອງຂໍ້ມູນ {name} ບໍ່ມີຢູ່ນີ້ອີກຕໍ່ໄປ.
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	ຟອນທີ່ PdfCraft ໃຊ້ຂຽນບໍ່ສາມາດສະແດງ “{c}” ({code}) ໄດ້, ດັ່ງນັ້ນມັນຈຶ່ງສະແດງເປັນ ? ໃນທຸກໂປຣແກຣມອ່ານ PDF. ຂໍ້ຄວາມຖືກບັນທຶກໄວ້ແລ້ວ.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	ຟອມຮ້ອງຂໍໃຫ້ສົ່ງໄປທີ່ {u}; PdfCraft ບໍ່ໄດ້ສົ່ງຂໍ້ມູນຟອມ. ກະລຸນາບັນທຶກເອກະສານເພື່ອຮັກສາສິ່ງທີ່ທ່ານປ້ອນໄວ້.
 	The form asks viewers to make appearances (NeedAppearances)	ຟອມຮ້ອງຂໍໃຫ້ຕົວເບິ່ງເອກະສານສ້າງການສະແດງຜົນ (NeedAppearances)
+	The fronts already scanned are kept for the reverse-side pass.	The fronts already scanned are kept for the reverse-side pass.
+	The historical model detects its supported scripts automatically; Japanese is not included.	ແບບຈຳລອງປະຫວັດສາດກວດຫາອັກສອນທີ່ຮອງຮັບໂດຍອັດຕະໂນມັດ; ບໍ່ລວມພາສາຍີ່ປຸ່ນ.
+	The image couldn't be used as an icon: {e}	ບໍ່ສາມາດໃຊ້ຮູບເປັນໄອຄອນໄດ້: {e}
 	The image has been copied ({w} × {h} pixels)	ສຳເນົາຮູບພາບແລ້ວ ({w} × {h} ພິກເຊວ)
 	The image has been copied as a {ext} file	ສຳເນົາຮູບພາບເປັນໄຟລ໌ {ext} ແລ້ວ
 	the image is empty	ຮູບພາບຫວ່າງເປົ່າ
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	ກະແຈຢູ່ໃນ macOS Keychain, ເຊິ່ງອາດຈະຖາມເພື່ອອະນຸຍາດໃຫ້ PdfCraft ໃຊ້ງານ.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	ກະແຈຢູ່ໃນ Windows Certificate Store, ເຊິ່ງອາດຈະຖາມເພື່ອອະນຸຍາດໃຫ້ PdfCraft ໃຊ້ງານ.
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	ກະແຈຢູ່ໃນ {device} ເຊິ່ງຂໍການອະນຸມັດເອງ (ແປ້ນ PIN ຫຼື ແອັບໃນໂທລະສັບຂອງທ່ານ).
 	The Keychain's digital IDs couldn't be listed: {e}	ບໍ່ສາມາດສະແດງລາຍຊື່ Digital ID ຂອງ Keychain ໄດ້: {e}
 	The labels are in English: the signature's font can't draw them in this language.	ປ້າຍກຳກັບເປັນພາສາອັງກິດ: ຟອນຕ໌ຂອງລາຍເຊັນບໍ່ສາມາດສະແດງຜົນໃນພາສານີ້ໄດ້.
 	The linked PDF opened, but its named destination was not applied.	ເປີດ PDF ທີ່ເຊື່ອມໂຍງແລ້ວ, ແຕ່ບໍ່ໄດ້ນຳໃຊ້ປາຍທາງທີ່ມີຊື່.
 	The linked PDF opened, but its page destination was out of range.	ເປີດ PDF ທີ່ເຊື່ອມໂຍງແລ້ວ, ແຕ່ໜ້າປາຍທາງຢູ່ນອກຂອບເຂດ.
 	The newest {n} of {total} PDFs	ໄຟລ໌ PDF ໃໝ່ສຸດ {n} ຈາກ {total} ໄຟລ໌
 	The operation failed.	ການເຮັດວຽກບໍ່ສຳເລັດ.
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	ໄຟລ໌ຕົ້ນສະບັບບໍ່ຖືກປ່ຽນແປງ. ໄຟລ໌ທີ່ມີຊື່ດຽວກັນໃນໂຟນເດີຜົນອອກຈະຖືກເກັບໄວ້ ແລະ ໄຟລ໌ໃໝ່ຈະໄດ້ຮັບໝາຍເລກ.
+	The output folder can't be one of the folders being read, or contain one.	ໂຟນເດີຜົນອອກບໍ່ສາມາດເປັນໜຶ່ງໃນໂຟນເດີທີ່ກຳລັງອ່ານ ຫຼື ບັນຈຸໂຟນເດີເຫຼົ່ານັ້ນໄດ້.
 	The page has changed; select the image again	ໜ້າປ່ຽນໄປແລ້ວ; ກະລຸນາເລືອກຮູບພາບອີກຄັ້ງ
+	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	ແຍກໜ້າອອກມາແລ້ວແຕ່ບໍ່ໄດ້ຖືກລຶບ, ເນື່ອງຈາກເອກະສານມີການປ່ຽນແປງໃນຂະນະທີ່ທ່ານກຳລັງເລືອກໂຟນເດີ.
 	the password is incorrect	ລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ
 	The password is only used to read the file; it isn't saved.	ລະຫັດຜ່ານໃຊ້ສະເພາະສຳລັບການອ່ານໄຟລ໌ເທົ່ານັ້ນ; ຈະບໍ່ຖືກບັນທຶກໄວ້.
+	The passwords and the restrictions are removed when you save.	ລະຫັດຜ່ານ ແລະ ຂໍ້ຈຳກັດຈະຖືກລຶບອອກເມື່ອທ່ານບັນທຶກ.
 	The passwords don't match.	ລະຫັດຜ່ານບໍ່ກົງກັນ.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	ຟອນຂໍ້ຄວາມ PDF ບໍ່ສາມາດສະແດງ “{c}” ({code}) ໄດ້. ກະລຸນາເລືອກຂໍ້ຄວາມທີ່ຮອງຮັບ.
+	The PIN is incorrect.	ລະຫັດ PIN ບໍ່ຖືກຕ້ອງ.
+	The preview could not be shown.	The preview could not be shown.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	ການຕັ້ງຄ່າສະເພາະຂອງໄດຣເວີເຄື່ອງພິມສຳລັບການພິມນີ້: ຖາດເຈ້ຍ, ປະເພດເຈ້ຍ, ການຕົກແຕ່ງຂັ້ນສຸດທ້າຍ ແລະ ອື່ນໆ.
+	The provider's page didn't come back in time. Try again.	ໜ້າຂອງຜູ້ໃຫ້ບໍລິການບໍ່ກັບມາທັນເວລາ. ລອງໃໝ່.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI ປ່ຽນທາງຕ້ອງເປັນ http://127.0.0.1 ຫຼື http://localhost ພ້ອມພອດ.
 	The replacement file doesn't have that many pages.	ໄຟລ໌ທີ່ນຳມາປ່ຽນແທນບໍ່ມີຈຳນວນໜ້າຫຼາຍເທົ່ານັ້ນ.
+	The rest are left out of this list.	The rest are left out of this list.
+	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
+	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
 	The same password is tried on each file.	ລະຫັດຜ່ານດຽວກັນຈະຖືກນຳໄປທົດລອງກັບແຕ່ລະໄຟລ໌.
+	The same printer is also available over the network.	The same printer is also available over the network.
+	The same printer is also available over USB.	The same printer is also available over USB.
+	The scan could not be started.	The scan could not be started.
+	The scan produced no pages.	The scan produced no pages.
+	The scan was cancelled at the scanner.	The scan was cancelled at the scanner.
+	The scan was interrupted.	The scan was interrupted.
+	The scan was stopped: its document was closed.	The scan was stopped: its document was closed.
+	The scanner has a paper jam.	The scanner has a paper jam.
+	The scanner is busy, or the feeder has no paper.	The scanner is busy, or the feeder has no paper.
+	The scanner is busy.	The scanner is busy.
+	The scanner is offline or needs attention.	The scanner is offline or needs attention.
+	The scanner list could not be refreshed.	The scanner list could not be refreshed.
+	The scanner needs attention.	The scanner needs attention.
+	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
+	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The selected area has been copied ({w} × {h} pixels)	ສຳເນົາພື້ນທີ່ທີ່ເລືອກແລ້ວ ({w} × {h} ພິກເຊວ)
 	The selected fields could not be found. Select them again.	ບໍ່ພົບຊ່ອງຂໍ້ມູນທີ່ເລືອກ. ກະລຸນາເລືອກໃໝ່ອີກຄັ້ງ.
+	The selection changed. Select the signature again.	ການເລືອກປ່ຽນແປງແລ້ວ. ເລືອກລາຍເຊັນອີກຄັ້ງ.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	ເຊດຊັນກັບ {provider} ສິ້ນສຸດແລ້ວ. ເຂົ້າສູ່ລະບົບອີກຄັ້ງຈາກ ຕັ້ງຄ່າ ID ດິຈິຕອນ.
+	The signature font can't draw “{c}” ({code}). Type it in Latin, Cyrillic or Greek letters, or use Draw or Image.	ຟອນລາຍເຊັນບໍ່ສາມາດສະແດງ “{c}” ({code}) ໄດ້. ພິມດ້ວຍຕົວອັກສອນລາຕິນ, ຊີຣິລລິກ ຫຼື ກຣີກ, ຫຼື ໃຊ້ “ແຕ້ມ” ຫຼື “ຮູບພາບ”.
 	The signature will be invisible.	ລາຍເຊັນຈະບໍ່ສະແດງໃຫ້ເຫັນ.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	ຟອນມາດຕະຖານບໍ່ສາມາດສະແດງ “{c}” ({code}) ໄດ້. ໃນປະຈຸບັນ ສາມາດເພີ່ມໄດ້ສະເພາະຕົວອັກສອນຢູໂຣບຕາເວັນຕົກເທົ່ານັ້ນ.
 	The text is the same	ຂໍ້ຄວາມຄືກັນທຸກຢ່າງ
@@ -2181,8 +2654,10 @@ key	Space	Space
 	The title in the metadata and the document information differ	ຊື່ຫົວຂໍ້ໃນເມຕາເດຕາ ແລະ ຂໍ້ມູນເອກະສານແຕກຕ່າງກັນ
 	the title must not be empty	ຫົວຂໍ້ຕ້ອງບໍ່ຫວ່າງເປົ່າ
 	The value is shown as typed.	ສະແດງຄ່າຕາມທີ່ພິມ.
+	the website did not confirm that it stored the file	ເວັບໄຊຕ໌ບໍ່ໄດ້ຢືນຢັນວ່າໄດ້ບັນທຶກໄຟລ໌ແລ້ວ
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	ປ່ອງຢ້ຽມຄວນສະແດງຊື່ຫົວຂໍ້ທີ່ມີຄວາມໝາຍແທນທີ່ຈະເປັນຊື່ໄຟລ໌. ຕັ້ງຊື່ຫົວຂໍ້ ແລະ ມຸມມອງເລີ່ມຕົ້ນ > ສະແດງ: ຊື່ເອກະສານ.
 	The Windows store's digital IDs couldn't be listed: {e}	ບໍ່ສາມາດສະແດງລາຍການ ID ດິຈິທອນຂອງ Windows store ໄດ້: {e}
+	There are no other pages in that range.	ບໍ່ມີໜ້າອື່ນໃນຂອບເຂດນັ້ນ.
 	there are no pages to print	ບໍ່ມີໜ້າທີ່ຈະພິມ
 	There are no redaction marks (mark text, areas or pages first)	ບໍ່ມີເຄື່ອງໝາຍປິດບັງ (ໝາຍຂໍ້ຄວາມ, ພື້ນທີ່ ຫຼື ໜ້າກ່ອນ)
 	There are no redaction marks to apply	ບໍ່ມີເຄື່ອງໝາຍປິດບັງທີ່ຈະນຳໃຊ້
@@ -2217,29 +2692,45 @@ key	Space	Space
 	This document has no tagged figures.	ເອກະສານນີ້ບໍ່ມີຮູບພາບທີ່ຕິດແທັກ.
 	This document has no {kind} to change	ເອກະສານນີ້ບໍ່ມີ {kind} ທີ່ຈະປ່ຽນແປງ
 	This document hasn't been checked yet.	ເອກະສານນີ້ຍັງບໍ່ທັນໄດ້ຮັບການກວດສອບເທື່ອ.
+	This document hides the toolbars and panels. Press {key} to show them.	ເອກະສານນີ້ເຊື່ອງແຖບເຄື່ອງມື ແລະ ແຜງ. ກົດ {key} ເພື່ອສະແດງພວກມັນ.
+	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	ເອກະສານນີ້ມີລາຍເຊັນດິຈິຕອນ. ການລຶບລ້າງຂໍ້ມູນລັບຈະຂຽນໄຟລ໌ທັງໝົດຄືນໃໝ່ ເຊິ່ງເຮັດໃຫ້ລາຍເຊັນບໍ່ຖືກຕ້ອງ, ສະນັ້ນມັນສາມາດດຳເນີນຕໍ່ໄດ້ໂດຍບໍ່ມີລາຍເຊັນເທົ່ານັ້ນ.
 	This document is secured. Some changes are restricted by its security settings.	ເອກະສານນີ້ຖືກປ້ອງກັນໄວ້. ການປ່ຽນແປງບາງຢ່າງຖືກຈຳກັດໂດຍການຕັ້ງຄ່າຄວາມປອດໄພ.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	ເອກະສານນີ້ເຊັນແລ້ວ. ການປ່ຽນແປງຈະເພີ່ມສະບັບໃໝ່: ລາຍເຊັນຍັງໃຊ້ໄດ້ສຳລັບສະບັບທີ່ເຊັນໄວ້, ແລະ ໂປຣແກຣມເບິ່ງຈະສະແດງວ່າເອກະສານຖືກປ່ຽນແປງຫຼັງຈາກເຊັນ.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	ເອກະສານນີ້ມີລາຍເຊັນແລ້ວ: ການຂຽນໃໝ່ທັງໝົດຈະເຮັດໃຫ້ລາຍເຊັນໃຊ້ການບໍ່ໄດ້ (ກະລຸນາບັນທຶກແບບເພີ່ມເຕີມແທນ)
 	This document is trying to open a local file:	ເອກະສານນີ້ກຳລັງພະຍາຍາມເປີດໄຟລ໌ພາຍໃນເຄື່ອງ:
+	This document isn't in a folder yet: save it first	ເອກະສານນີ້ຍັງບໍ່ຢູ່ໃນໂຟນເດີໃດ: ບັນທຶກມັນກ່ອນ
 	This document isn't password-protected	ເອກະສານນີ້ບໍ່ໄດ້ຖືກປົກປ້ອງດ້ວຍລະຫັດຜ່ານ
 	This drawing exceeds the snapping limit; only the first paths are used.	ຮູບແຕ້ມນີ້ເກີນຂີດຈຳກັດການດູດຈັບ; ຈະໃຊ້ສະເພາະເສັ້ນທາງເດີນຊຸດທຳອິດເທົ່ານັ້ນ.
 	This field is locked. Unlock it to change its properties.	ຊ່ອງຂໍ້ມູນນີ້ຖືກລັອກຢູ່. ປົດລັອກເພື່ອປ່ຽນຄຸນສົມບັດຂອງມັນ.
 	This field's font can't draw “{c}” ({code}), so PdfCraft shows ? in its place. The value is saved, and other PDF viewers redraw the field from it.	ຟອນຂອງຊ່ອງນີ້ບໍ່ສາມາດສະແດງ “{c}” ({code}) ໄດ້, ດັ່ງນັ້ນ PdfCraft ຈຶ່ງສະແດງ ? ແທນ. ຄ່ານີ້ຖືກບັນທຶກໄວ້ ແລະ ໂປຣແກຣມອ່ານ PDF ອື່ນໆຈະແຕ້ມສະແດງຜົນຊ່ອງຂໍ້ມູນຄືນໃໝ່ຈາກຄ່ານັ້ນ.
+	This file can't be used as the logo: it's larger than {max} MB.	ບໍ່ສາມາດໃຊ້ໄຟລ໌ນີ້ເປັນໂລໂກ້ໄດ້: ມັນໃຫຍ່ກວ່າ {max} MB.
+	This file can't be used as the logo: its path isn't valid UTF-8, so it couldn't be saved with the settings.	ບໍ່ສາມາດໃຊ້ໄຟລ໌ນີ້ເປັນໂລໂກ້ໄດ້: ເສັ້ນທາງຂອງມັນບໍ່ແມ່ນ UTF-8 ທີ່ຖືກຕ້ອງ, ຈຶ່ງບໍ່ສາມາດບັນທຶກພ້ອມກັບການຕັ້ງຄ່າໄດ້.
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	ໄຟລ໌ນີ້ມີການປ່ຽນແປງໃນດິສກ໌. "ໂຫຼດຄືນໃໝ່" ຈະສະແດງເວີຊັນໃໝ່ ແລະ ປະຖິ້ມການປ່ຽນແປງທີ່ຍັງບໍ່ໄດ້ບັນທຶກ; "ບັນທຶກ" ຈະຂຽນທັບດ້ວຍເວີຊັນນີ້.
 	This file is already as small as it can be made ({size}). No copy was saved.	ໄຟລ໌ນີ້ມີຂະໜາດນ້ອຍທີ່ສຸດເທົ່າທີ່ຈະເຮັດໄດ້ແລ້ວ ({size}). ບໍ່ມີການບັນທຶກສຳເນົາ.
 	this file isn't XFDF, FDF, XML or text form data	ໄຟລ໌ນີ້ບໍ່ແມ່ນຂໍ້ມູນຟອມປະເພດ XFDF, FDF, XML ຫຼື ຂໍ້ຄວາມ
 	This file was damaged and has been repaired. Saving keeps the repaired version.	ໄຟລ໌ນີ້ເຄີຍເສຍຫາຍ ແລະ ໄດ້ຮັບການສ້ອມແປງແລ້ວ. ການບັນທຶກຈະຮັກສາເວີຊັນທີ່ສ້ອມແປງແລ້ວໄວ້.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	ໂຟນເດີນີ້ບໍ່ພ້ອມໃຊ້ງານໃນຕອນນີ້. ມັນອາດຈະຖືກຍ້າຍ, ຫຼື ໄດຣຟ໌ ຫຼື ການຊິ້ງຄ໌ຄລາວອອບລາຍຢູ່.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	ຟອມນີ້ຍັງມີຂໍ້ມູນ XFA ທີ່ PdfCraft ຍັງບໍ່ສາມາດອ່ານໄດ້. ທ່ານສາມາດຕື່ມຂໍ້ມູນລົງໃນຊ່ອງໄດ້, ແຕ່ Acrobat ອາດຈະສະແດງຄ່າ XFA ແທນ.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	ສະຄຣິບຂອງຟອມນີ້ຖືກປິດເນື່ອງຈາກບາງສະຄຣິບເຮັດວຽກດົນເກີນໄປ. ເປີດເອກະສານຄືນໃໝ່ເພື່ອໃຫ້ສະຄຣິບເຮັດວຽກອີກຄັ້ງ.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	ນີ້ແມ່ນຟອມ XFA ແບບໄດນາມິກ ເຊິ່ງ PdfCraft ຍັງບໍ່ສາມາດສະແດງຜົນໄດ້. ສິ່ງທີ່ທ່ານເຫັນແມ່ນໜ້າຕົວແທນຊົ່ວຄາວຂອງໄຟລ໌.
+	This is the first PDF in its folder	ນີ້ແມ່ນ PDF ທຳອິດໃນໂຟນເດີຂອງມັນ
+	This is the last PDF in its folder	ນີ້ແມ່ນ PDF ສຸດທ້າຍໃນໂຟນເດີຂອງມັນ
+	This key is used for “{what}” and can't be changed.	ປຸ່ມນີ້ໃຊ້ສຳລັບ “{what}” ແລະ ບໍ່ສາມາດປ່ຽນໄດ້.
+	This key moves around the interface on its own. Add Ctrl to use it.	ປຸ່ມນີ້ເຄື່ອນທີ່ໃນສ່ວນຕິດຕໍ່ດ້ວຍຕົວມັນເອງ. ເພີ່ມ Ctrl ເພື່ອໃຊ້ມັນ.
+	This large file is being read from disk to save memory, so it can't be edited, filled in or signed yet.	This large file is being read from disk to save memory, so it can't be edited, filled in or signed yet.
 	This measurement needs at least {n} points.	ການວັດແທກນີ້ຕ້ອງການຢ່າງໜ້ອຍ {n} ຈຸດ.
 	This page contains objects that cannot be selected together.	ໜ້ານີ້ມີວັດຖຸທີ່ບໍ່ສາມາດເລືອກພ້ອມກັນໄດ້.
 	This page couldn't be displayed.\n{e}	ບໍ່ສາມາດສະແດງໜ້ານີ້ໄດ້.\n{e}
+	This page has an opaque background of its own, so the background is blended with its content.	ໜ້ານີ້ມີພື້ນຫຼັງທຶບຂອງມັນເອງ, ສະນັ້ນພື້ນຫຼັງຈະຖືກປະສົມກັບເນື້ອຫາຂອງມັນ.
+	This page has an opaque background of its own, which hides anything behind it. Choose Blend with page content.	ໜ້ານີ້ມີພື້ນຫຼັງທຶບຂອງມັນເອງ ເຊິ່ງບັງທຸກສິ່ງທີ່ຢູ່ຫຼັງມັນ. ເລືອກ ປະສົມກັບເນື້ອຫາໜ້າ.
+	This page has an opaque background of its own, which hides the image behind it.	ໜ້ານີ້ມີພື້ນຫຼັງທຶບຂອງມັນເອງ ເຊິ່ງບັງຮູບພາບທີ່ຢູ່ຫຼັງມັນ.
 	This PDF uses the unsupported {s} action.	PDF ນີ້ໃຊ້ການກະທຳ {s} ທີ່ຍັງບໍ່ຮອງຮັບ.
 	This printer offers no settings of its own.	ເຄື່ອງພິມນີ້ບໍ່ມີການຕັ້ງຄ່າສະເພາະຂອງຕົນເອງ.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	ໄດຣເວີຂອງເຄື່ອງພິມນີ້ບໍ່ຮັບການຕັ້ງຄ່າການພິມສອງໜ້າຈາກໂປຣແກຣມອື່ນ, ດັ່ງນັ້ນຈຶ່ງໃຊ້ການຕັ້ງຄ່າຂອງມັນເອງ. ປ່ຽນແປງໄດ້ທີ່ ຄຸນສົມບັດ…
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	ທີ່ຢູ່ເວັບນີ້ມີການປະສົມຕົວອັກສອນຈາກລະບົບຕົວຂຽນທີ່ຕ່າງກັນ, ເຊິ່ງເປັນວິທີທົ່ວໄປໃນການປອມແປງຊື່ເວັບໄຊອື່ນ.
 	This web address uses letters from another alphabet, which can look like familiar ones.	ທີ່ຢູ່ເວັບນີ້ໃຊ້ຕົວອັກສອນຈາກລະບົບຕົວຂຽນອື່ນ, ເຊິ່ງອາດເບິ່ງຄືກັບຕົວອັກສອນທີ່ຄຸ້ນເຄີຍ.
+	Threshold	Threshold
 	Thumbnails	ຮູບຫຍໍ້
 	Tile scale:	ມາດຕາສ່ວນການຮຽງຕໍ່:
 	Time	ເວລາ
@@ -2248,26 +2739,43 @@ key	Space	Space
 	Title	ຊື່ຫົວຂໍ້
 	to	ຫາ
 	To change locked fields, also set Locked to No.	ເພື່ອປ່ຽນແປງຊ່ອງທີ່ຖືກລັອກ, ໃຫ້ຕັ້ງຄ່າ ລັອກ ເປັນ ບໍ່.
+	To print this large file, load all of it first with Load to edit.	To print this large file, load all of it first with Load to edit.
 	to {n}	ຫາ {n}
 	To:	ຫາ:
 	Today	ມື້ນີ້
 	Today: {date}	ມື້ນີ້: {date}
 	Toggle fit page / fit width	ສະຫຼັບ ພໍດີໜ້າ / ພໍດີລວງກວ້າງ
+	Token  ·  	ໂທເຄັນ  ·  
+	Token PIN	PIN ຂອງໂທເຄັນ
+	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	ໂທເຄັນ ແລະ ສະມາດກາດ ລົງລາຍເຊັນຜ່ານໂມດູນ PKCS #11. ເພີ່ມສະເພາະໂມດູນທີ່ທ່ານໄວ້ໃຈ: ໂມດູນຈະແລ່ນລະຫັດຂອງມັນເອງ.
+	Too many windows are open	ເປີດໜ້າຕ່າງຫຼາຍເກີນໄປ
+	Took too long to read	Took too long to read
 	Tool	ເຄື່ອງມື
 	Tools	ເຄື່ອງມື
 	Tools panel side	ດ້ານຂອງແຜງເຄື່ອງມື
+	Tools shown in All tools	ເຄື່ອງມືທີ່ສະແດງໃນ «ເຄື່ອງມືທັງໝົດ»
 	Tooltip	ຄຳແນະນຳເຄື່ອງມື
 	Tooltip:	ຄຳແນະນຳເຄື່ອງມື:
 	Top	ເທິງ
+	Top left	ເທິງຊ້າຍ
+	Top right	ເທິງຂວາ
 	Top-level bookmarks ({n})	ບຸກມາກລະດັບເທິງສຸດ ({n})
 	Total	ລວມທັງໝົດ
 	TR must be a child of Table, THead, TBody, or TFoot	TR ຕ້ອງເປັນອົງປະກອບລູກຂອງ Table, THead, TBody ຫຼື TFoot
+	Transfer format: {format}.	Transfer format: {format}.
 	Transform image	ປ່ຽນຮູບຮ່າງຮູບ
 	Translate	ແປພາສາ
 	Trim the picture with its handles; Enter or Done applies	ຕັດແຕ່ງຮູບດ້ວຍປຸ່ມຈັບ; ກົດ Enter ຫຼື ສຳເລັດ ເພື່ອນຳໃຊ້
 	Trust	ຄວາມເຊື່ອຖື
+	Try again	Try again
 	Try the form as people filling it in will see it	ທົດລອງໃຊ້ຟອມໃນມຸມມອງທີ່ຜູ້ປ້ອນຂໍ້ມູນຈະເຫັນ
+	Turn JPEG XL images back into the JPEGs they were made from	ປ່ຽນຮູບ JPEG XL ກັບເປັນ JPEG ທີ່ສ້າງມາຈາກ
+	Turn off continuous scrolling	ປິດການເລື່ອນຕໍ່ເນື່ອງ
+	Turn on continuous scrolling	ເປີດການເລື່ອນຕໍ່ເນື່ອງ
 	Turn upside down (180°)	ປີ້ນຫົວລົງ (180°)
+	Turned left	Turned left
+	Turned off because your administrator's policy couldn't be read.	ຖືກປິດ ເພາະບໍ່ສາມາດອ່ານນະໂຍບາຍຂອງຜູ້ເບິ່ງແຍງລະບົບໄດ້.
+	Turned off by your administrator.	ຖືກປິດໂດຍຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານ.
 	Two-page view	ມຸມມອງສອງໜ້າ
 	Two-sided:	ພິມສອງໜ້າ:
 	Two-Up (Cover Page)	ສອງໜ້າຄູ່ກັນ (ມີໜ້າປົກ)
@@ -2288,6 +2796,10 @@ signature pad	Type	ພິມ
 	Underline text	ຂີດກ້ອງຂໍ້ຄວາມ
 	Undid {label}	ຍົກເລີກ {label} ແລ້ວ
 	Undo	ຍົກເລີກການກະທຳ
+	Undo ({key})	ຍົກເລີກການກະທຳ ({key})
+	Undo last point	ຍົກເລີກຈຸດສຸດທ້າຍ
+	Ungroup	ຍົກເລີກກຸ່ມ
+	Ungroup artwork	ຍົກເລີກກຸ່ມກຣາຟິກ
 	Unit	ຫົວໜ່ວຍ
 	Units	ຫົວໜ່ວຍ
 	Unknown	ບໍ່ຮູ້ຈັກ
@@ -2305,6 +2817,7 @@ signature pad	Type	ພິມ
 	Unpin {folder}	ຖອນການປັກໝຸດ {folder}
 	Unpinned {tool} from Home	ຖອນໝຸດ {tool} ຈາກໜ້າຫຼັກແລ້ວ
 	Unplaced	ຍັງບໍ່ໄດ້ຈັດວາງ
+	Unsaved changes	ການປ່ຽນແປງທີ່ຍັງບໍ່ໄດ້ບັນທຶກ
 	Unsupported measurements	ການວັດແທກທີ່ບໍ່ຮອງຮັບ
 	Up	ຂຶ້ນ
 	Update	ອັບເດດ
@@ -2314,9 +2827,13 @@ signature pad	Type	ພິມ
 	Update header & footer…	ອັບເດດຫົວເຈ້ຍ & ທ້າຍເຈ້ຍ…
 	Update watermark	ອັບເດດລາຍນ້ຳ
 	Update watermark…	ອັບເດດລາຍນ້ຳ…
+	Upside down	Upside down
 	URL to submit to	URL ປາຍທາງທີ່ຈະສົ່ງຟອມ
+	USB	USB
 	Use 72 DPI (one point per pixel)	ໃຊ້ 72 DPI (ໜຶ່ງຈຸດຕໍ່ພິກເຊວ)
 	Use a certificate	ໃຊ້ໃບຢັ້ງຢືນ
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	ໃຊ້ໃບຢັ້ງຢືນຄລາວ (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	ໃຊ້ ID ດິຈິຕອນຈາກອຸປະກອນ (ບັດອັດສະລິຍະ, ໂທເຄັນ USB ຫຼື ໃບຢັ້ງຢືນຄລາວ)
 	Use a Digital ID from a file	ໃຊ້ Digital ID ຈາກໄຟລ໌
 	Use custom DPI	ໃຊ້ DPI ກຳນົດເອງ
 	Use each image's embedded DPI; use 72 DPI when it is absent.	ໃຊ້ DPI ທີ່ຝັງຢູ່ໃນແຕ່ລະຮູບພາບ; ໃຊ້ 72 DPI ເມື່ອບໍ່ມີຂໍ້ມູນ.
@@ -2330,6 +2847,9 @@ signature pad	Type	ພິມ
 	Use print production	ໃຊ້ຂະບວນການຜະລິດສິ່ງພິມ
 	Use system setting	ໃຊ້ການຕັ້ງຄ່າລະບົບ
 	Use system title bar	ໃຊ້ແຖບຫົວຂໍ້ຂອງລະບົບ
+	Use the default	ໃຊ້ຄ່າເລີ່ມຕົ້ນ
+	Use this size for saved initials	ໃຊ້ຂະໜາດນີ້ສຳລັບລາຍເຊັນຫຍໍ້ທີ່ບັນທຶກໄວ້
+	Use this size for saved signature	ໃຊ້ຂະໜາດນີ້ສຳລັບລາຍເຊັນທີ່ບັນທຶກໄວ້
 	Use {what}	ໃຊ້ {what}
 	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	ໃຊ້ເມື່ອ PDF ບໍ່ໄດ້ກຳນົດໂຄງຮ່າງ ຫຼື ມາດຕາສ່ວນຊູມ. ການເລື່ອນແບບຕໍ່ເນື່ອງຈະບໍ່ມີການດູດຕິດລະຫວ່າງໜ້າ.
 	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	ໃຊ້ເມື່ອເປີດ PDF. ຮູບແບບການເປີດ ຫຼື ການຄວບຄຸມທີ່ກຳນົດຊັດເຈນຈະມີຜົນກ່ອນສຳລັບເຊສຊັນນັ້ນ.
@@ -2345,6 +2865,7 @@ signature pad	Type	ພິມ
 	Validate all signatures	ກວດສອບຄວາມຖືກຕ້ອງຂອງລາຍເຊັນທັງໝົດ
 	Validity ends	ໝົດອາຍຸການໃຊ້ງານ
 	Validity starts	ເລີ່ມຕົ້ນໃຊ້ໄດ້
+	Validity unknown	ຄວາມຖືກຕ້ອງຂອງລາຍເຊັນ: ບໍ່ຮູ້ຈັກ
 	Value is not calculated	ຄ່າບໍ່ໄດ້ຖືກຄຳນວນ
 	Value is the	ຄ່າແມ່ນ
 	Value:	ຄ່າ:
@@ -2352,7 +2873,9 @@ signature pad	Type	ພິມ
 	Verify to see what the document needs.	ກວດສອບເບິ່ງວ່າເອກະສານຕ້ອງການສິ່ງໃດ.
 	Version	ເວີຊັນ
 	Version {v}	ເວີຊັນ {v}
+	Vertex	ຈຸດຍອດ
 	Vertical	ແນວຕັ້ງ
+	Vertical resolution	Vertical resolution
 	Vertical reversed	ແນວຕັ້ງຍ້ອນກັບ
 	Vertical text cannot be moved with this selection.	ບໍ່ສາມາດຍ້າຍຂໍ້ຄວາມແນວຕັ້ງດ້ວຍການເລືອກນີ້ໄດ້.
 	Vertically	ຕາມແນວຕັ້ງ
@@ -2367,6 +2890,11 @@ signature pad	Type	ພິມ
 	Viewport rectangle in page points (x, y, width, height)	ຂອບເຂດສີ່ແຈສາກມຸມມອງໃນຈຸດໜ້າເຈ້ຍ (x, y, ລວງກວ້າງ, ລວງສູງ)
 	Visible Rectangle	ຮູບສີ່ແຈສາກທີ່ເບິ່ງເຫັນໄດ້
 	Visual	ຮູບລັກສະນະທີ່ເຫັນ
+	Wait for text recognition to finish before changing add-ons	ລໍຖ້າໃຫ້ການຈຳແນກຂໍ້ຄວາມສຳເລັດກ່ອນປ່ຽນສ່ວນເສີມ
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Wait for the scanner to finish, or close any other program using it, then choose Continue.
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
+	Waiting for the system print dialog…	ກຳລັງລໍຖ້າກ່ອງຂໍ້ຄວາມການພິມຂອງລະບົບ…
+	Waiting for your approval in the browser…	ກຳລັງລໍຖ້າການອະນຸມັດຂອງທ່ານໃນບຣາວເຊີ…
 	Warnings	ຄຳເຕືອນ
 	Watermark	ລາຍນ້ຳ
 	watermark	ລາຍນ້ຳ
@@ -2378,13 +2906,19 @@ signature pad	Type	ພິມ
 	Whole words only	ສະເພາະຄຳທີ່ກົງກັນທັງໝົດ
 	Width	ລວງກວ້າງ
 	Width:	ລວງກວ້າງ:
+	Will use the bed.	Will use the bed.
+	Will use the feeder.	Will use the feeder.
+	Window	ໜ້າຕ່າງ
 	Window Options	ຕົວເລືອກປ່ອງຢ້ຽມ
 	Windows store  ·  	Windows 証明書ストア · 
 	Word count	ຈຳນວນຄຳ
 	Word counting stopped unexpectedly.	ການນັບຄຳຢຸດລົງໂດຍບໍ່ຄາດຄິດ.
 	Word count…	ຈຳນວນຄຳ…
+	Word, PowerPoint and Excel (converted to PDF)	Word, PowerPoint ແລະ Excel (ປ່ຽນເປັນ PDF)
 	Words	ຄຳ
 	Words or phrases to redact	ຄຳ ຫຼື ວະລີທີ່ຈະປິດບັງ
+	Work, Personal, a name…	ວຽກ, ສ່ວນຕົວ, ຊື່…
+	Workspace modes	ໂໝດພື້ນທີ່ເຮັດວຽກ
 	Write this email?	ຂຽນອີເມວນີ້ຫຼືບໍ່?
 	Wrong password	ລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ
 	Wrote 1 file to {dir}	ຂຽນ 1 ໄຟລ໌ລົງໃນ {dir} ແລ້ວ
@@ -2397,7 +2931,10 @@ signature pad	Type	ພິມ
 	yesterday	ມື້ວານນີ້
 	You are about to apply 1 redaction mark. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	ທ່ານກຳລັງຈະນຳໃຊ້ເຄື່ອງໝາຍປິດບັງ 1 ລາຍການ. ຂໍ້ຄວາມ, ຮູບພາບ ແລະ ຮູບແຕ້ມພາຍໃຕ້ເຄື່ອງໝາຍ, ລວມທັງຄວາມເຫັນ ແລະ ຊ່ອງຟອມທີ່ທັບຊ້ອນກັນ ຈະຖືກລຶບອອກຖາວອນ.
 	You are about to apply {n} redaction marks. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	ທ່ານກຳລັງຈະນຳໃຊ້ເຄື່ອງໝາຍປິດບັງ {n} ລາຍການ. ຂໍ້ຄວາມ, ຮູບພາບ ແລະ ຮູບແຕ້ມພາຍໃຕ້ເຄື່ອງໝາຍ, ລວມທັງຄວາມເຫັນ ແລະ ຊ່ອງຟອມທີ່ທັບຊ້ອນກັນ ຈະຖືກລຶບອອກຖາວອນ.
+	You can keep up to {n} sets of initials. Remove one to add another.	ທ່ານສາມາດເກັບລາຍເຊັນຫຍໍ້ໄດ້ສູງສຸດ {n} ອັນ. ລຶບອອກອັນໜຶ່ງເພື່ອເພີ່ມອັນໃໝ່.
+	You can keep up to {n} signatures. Remove one to add another.	ທ່ານສາມາດເກັບລາຍເຊັນໄດ້ສູງສຸດ {n} ອັນ. ລຶບອອກອັນໜຶ່ງເພື່ອເພີ່ມອັນໃໝ່.
 	You can pin up to {n} folders. Unpin one first.	ທ່ານສາມາດປັກໝຸດໄດ້ສູງສຸດ {n} ໂຟນເດີ. ກະລຸນາຖອນການປັກໝຸດໂຟນເດີໃດໜຶ່ງອອກກ່ອນ.
+	You have version {c}. All releases are listed at {page}.	ທ່ານກຳລັງໃຊ້ເວີຊັນ {c}. ລາຍການ release ທັງໝົດແມ່ນສະແດງຢູ່ທີ່ {page}.
 	You have version {c}. Download the new version from its release page.	ທ່ານກຳລັງໃຊ້ເວີຊັນ {c}. ດາວໂຫຼດເວີຊັນໃໝ່ໄດ້ຈາກໜ້າ release.
 	Your changes will be lost if you don't save them.	ການປ່ຽນແປງຂອງທ່ານຈະສູນຫາຍ ຖ້າທ່ານບໍ່ບັນທຶກ.
 	Your name	ຊື່ຂອງທ່ານ
@@ -2406,6 +2943,7 @@ signature pad	Type	ພິມ
 	Zip Code	ລະຫັດໄປສະນີ
 	Zip Code + 4	ລະຫັດໄປສະນີ + 4
 	Zoom	ຊູມ
+	Zoom (Z)	ຊູມ (Z)
 	Zoom in	ຊູມເຂົ້າ
 	Zoom in ({key})	ຊູມເຂົ້າ ({key})
 	Zoom in / out (also pinch or {key}-scroll)	ຊູມເຂົ້າ / ອອກ (ຫຼື ໃຊ້ນິ້ວຢິບ ຫຼື {key}+ເລື່ອນ)
@@ -2413,13 +2951,18 @@ signature pad	Type	ພິມ
 	Zoom out ({key})	ຊູມອອກ ({key})
 	Zoom to page level	ຊູມພໍດີໜ້າ
 	{0}: {1}	{0}: {1}
+	{batch} — 1 field renamed	{batch} — ປ່ຽນຊື່ແລ້ວ 1 ຊ່ອງ
+	{batch} — fields renamed	{batch} — ປ່ຽນຊື່ຊ່ອງຂໍ້ມູນແລ້ວ
 	{chars} can't be written into the PDF yet: Fill & Sign text is Western European only. Pick a numeric format such as dd.mm.yyyy.	ຍັງບໍ່ສາມາດຂຽນ {chars} ລົງໃນ PDF ໄດ້ເທື່ອ: ຂໍ້ຄວາມຕື່ມ ແລະ ເຊັນ ຮອງຮັບສະເພາະຕົວອັກສອນຢູໂຣບຕາເວັນຕົກເທົ່ານັ້ນ. ກະລຸນາເລືອກຮູບແບບຕົວເລກ ເຊັ່ນ dd.mm.yyyy.
+	{chars} can't be written into the PDF yet: Fill & Sign text is Western European or Korean only. Pick a numeric format such as dd.mm.yyyy.	ຍັງບໍ່ສາມາດຂຽນ {chars} ລົງໃນ PDF ໄດ້ເທື່ອ: ຂໍ້ຄວາມຕື່ມ ແລະ ເຊັນ ຮອງຮັບສະເພາະຕົວອັກສອນຢູໂຣບຕາເວັນຕົກ ແລະ ເກົາຫຼີເທົ່ານັ້ນ. ກະລຸນາເລືອກຮູບແບບຕົວເລກ ເຊັ່ນ dd.mm.yyyy.
 	{c} of {n}{more}	{c} ຈາກ {n}{more}
 	{dpi} pixels/inch	{dpi} ພິກເຊວ/ນິ້ວ
 	{field} reads fields named as it runs	{field} reads fields named as it runs
 	{field}: {e}	{field}: {e}
 	{file} is too large for a stamp (at most {n} MB)	{file} ມີຂະໜາດໃຫຍ່ເກີນໄປສຳລັບຕາປະທັບ (ສູງສຸດບໍ່ເກີນ {n} MB)
 	{folder} is already pinned to Home	{folder} ຖືກປັກໝຸດໄວ້ໜ້າຫຼັກແລ້ວ
+	{key} is already used by “{other}”.	{key} ຖືກໃຊ້ຢູ່ແລ້ວໂດຍ “{other}”.
+	{key} was taken from “{other}”, which now has no shortcut.	ໄດ້ເອົາ {key} ມາຈາກ “{other}” ເຊິ່ງຕອນນີ້ບໍ່ມີປຸ່ມລັດ.
 	{kind} field	ຊ່ອງຂໍ້ມູນ {kind}
 	{kind} Properties	ຄຸນສົມບັດຂອງ {kind}
 	{kind} · page {p}	{kind} · ໜ້າ {p}
@@ -2438,6 +2981,7 @@ signature pad	Type	ພິມ
 	{name} is too large for a word list (at most 1 MB).	{name} ມີຂະໜາດໃຫຍ່ເກີນໄປສຳລັບລາຍການຄຳສັບ (ສູງສຸດບໍ່ເກີນ 1 MB).
 	{name} submits the form to {url}; PdfCraft doesn't send form data. Save the document to keep your entries.	{name} ສົ່ງຟອມໄປທີ່ {url}; PdfCraft ບໍ່ໄດ້ສົ່ງຂໍ້ມູນຟອມ. ກະລຸນາບັນທຶກເອກະສານເພື່ອຮັກສາສິ່ງທີ່ທ່ານປ້ອນໄວ້.
 	{name} — unsaved changes	{name} — ມີການປ່ຽນແປງທີ່ຍັງບໍ່ໄດ້ບັນທຶກ
+	{name}, {date} and {time} become your name, the date and the time.	{name}, {date} ແລະ {time} ຈະກາຍເປັນຊື່ຂອງທ່ານ, ວັນທີ ແລະ ເວລາ.
 	{name}: choosing images arrives on the web with file pickers for images	{name}: ການເລືອກຮູບພາບຈະໃຊ້ງານໄດ້ໃນເວັບເມື່ອມີຕົວເລືອກໄຟລ໌ຮູບພາບ
 	{name}: the {other} action isn't supported yet	{name}: ຍັງບໍ່ຮອງຮັບການກະທຳ {other} ເທື່ອ
 	{n} contributors · {c} commits	{n} ຜູ້ປະກອບສ່ວນ · {c} ຄອມມິດ
@@ -2457,9 +3001,11 @@ signature pad	Type	ພິມ
 	{n} measurements use an unsupported format and are left out.	ການວັດແທກ {n} ລາຍການໃຊ້ຮູບແບບທີ່ບໍ່ຮອງຮັບ ແລະ ຖືກຍົກເວັ້ນອອກ.
 	{n} min ago	{n} ນາທີກ່ອນ
 @plural	{n} object selected|{n} objects selected	ເລືອກແລ້ວ {n} ວັດຖຸ
+	{n} of {m} pages were scanned.	{n} of {m} pages were scanned.
 	{n} pages	{n} ໜ້າ
 	{n} pages selected	ເລືອກແລ້ວ {n} ໜ້າ
 	{n} pages selected.	ເລືອກແລ້ວ {n} ໜ້າ.
+	{n} pages were scanned.	{n} pages were scanned.
 @plural	{n} page|{n} pages	{n} ໜ້າ
 @plural	{n} reply|{n} replies	ການຕອບກັບ {n} ລາຍການ
 	{n} selected	ເລືອກແລ້ວ {n} ລາຍການ
@@ -2477,10 +3023,12 @@ signature pad	Type	ພິມ
 	{who} in this document wants to open this address in your browser:	{who} ໃນເອກະສານນີ້ຕ້ອງການເປີດທີ່ຢູ່ນີ້ໃນບຣາວເຊີຂອງທ່ານ:
 	{who} in this document wants to open your email app with this address:	{who} ໃນເອກະສານນີ້ຕ້ອງການເປີດແອັບອີເມວຂອງທ່ານດ້ວຍທີ່ຢູ່ນີ້:
 	{words} on {pages}	{words} ໃນ {pages}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} in, {pxw} × {pxh} pixels, {size}
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (ການປົກປ້ອງຈະຖືກນຳໃຊ້ເມື່ອທ່ານບັນທຶກ)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	“{name}” ມີການປ່ຽນແປງໃນດິສກ໌ຫຼັງຈາກເປີດ ຫຼື ບັນທຶກຫຼ້າສຸດ. ການບັນທຶກດຽວນີ້ຈະຂຽນທັບເວີຊັນໃໝ່ນັ້ນດ້ວຍເວີຊັນນີ້.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	“{name}” ມີຂໍ້ຈຳກັດຄວາມປອດໄພ. ປ້ອນລະຫັດຜ່ານການອະນຸຍາດເພື່ອປົດລັອກຂໍ້ຈຳກັດເຫຼົ່ານັ້ນ.
 	“{name}” is protected. Enter a password to open it.	“{name}” ຖືກປ້ອງກັນໄວ້. ປ້ອນລະຫັດຜ່ານເພື່ອເປີດ.
+	− Page {p}	− ໜ້າ {p}
 	−Bin	−Bin
 	−LOC	−LOC
