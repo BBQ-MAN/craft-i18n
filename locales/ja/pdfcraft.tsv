@@ -52,6 +52,7 @@
 	; {n} pages skipped	; {n} ページをスキップ
 	? of {n}	?/{n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}：PR {prs} 件、コミット {commits} 件、行数 +{added} / −{deleted}（Δ {delta}）、バイナリファイル +{bin_added} / −{bin_deleted}、{first} – {last}
+	[Custom]	[カスタム]
 	`{command}` {when}	`{command}`: {when}
 	A 3×3 median filter against scan speckle	スキャンのノイズを取る 3×3 メディアンフィルタ
 	a bookmark cannot be moved inside itself	しおりを自分自身の内部に移動することはできません
@@ -829,6 +830,7 @@ key	Delete	Delete
 	Delete pages after extracting	抽出後にページを削除
 	Delete selected fields	選択したフィールドを削除
 	Delete selected pages (Organize)	選択したページを削除（ページ整理）
+	Delete Settings	設定を削除
 	Delete stamp	スタンプを削除
 	Delete tag	タグを削除
 	Delete the selected pages	選択したページを削除
@@ -1662,6 +1664,7 @@ key	Home	Home
 	Multiple words or phrases	複数の単語または語句
 	Multiplies the background with the page: white areas show it and text stays dark.	背景をページと乗算します。白い部分に背景が表示され、文字は濃いままです。
 	N or {row} is the row number, {col} the column number, {seq} the cell number. With none of them, the row number goes last.	N または {row} は行番号、{col} は列番号、{seq} はセル番号です。どれもない場合は、行番号が末尾に付きます。
+	Name a text watermark to save it	保存するにはテキストの透かしに名前を付けてください
 	Name on new comments	新しい注釈の作成者名
 	Named Destinations	名前付き移動先
 	Native tabs (as in Finder on macOS and File Explorer on Windows)	ネイティブのタブ (macOS の Finder、Windows のエクスプローラーと同じ)
@@ -2446,6 +2449,7 @@ animation effects	On	オン
 	Save or revert changes before selecting another tag.	別のタグを選択する前に変更を保存するか元に戻してください。
 	Save over the changed file?	変更されたファイルに上書きしますか？
 	Save pages	ページを保存
+	Save Settings	設定を保存
 	Save tag properties	タグのプロパティを保存
 	Save the accessibility report	アクセシビリティレポートを保存
 	Save the document afterwards: saving rewrites the whole file so no trace of the removed content stays in it.	処理後に文書を保存してください。保存時にファイル全体を書き直し、削除した内容の痕跡を残しません。
@@ -2457,6 +2461,7 @@ animation effects	On	オン
 	Saved measurements	保存済みの測定
 	Saved measurements keep their original scale.	保存済みの測定は元の縮尺を保持します。
 	Saved measurements.	測定結果を保存しました。
+	Saved Settings	保存された設定
 	Saved the print-ready PDF to {path}	印刷用 PDF を {path} に保存しました
 	Saved {name}	{name} を保存しました
 	Saved {name} and verified it: it conforms to {level}.	{name} を保存して検証しました。{level} に準拠しています。
