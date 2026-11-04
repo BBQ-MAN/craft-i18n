@@ -53,6 +53,7 @@
 	A font isn't embedded	Bir yazı tipi gömülü değil
 	A form field has additional actions	Bir form alanının ek eylemleri var
 	A link	Bir bağlantı
+	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Yerel bir model, en iyi bulut modeli değildir: yanılabilir ve uzun bir yanıt işlemcide zaman alır. Kritik olan her şeyi denetleyin; indirmeden önce modelin boyutunu bu makineyle karşılaştırın.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Resimle kaplı sayfa (tarama mı?): {pages}; arka plan orada görünmez.
 	A script	Bir komut dosyası
 	A selected field has no widget on any page, so the fields can't be edited together.	Seçilen bir alanın hiçbir sayfada pencere öğesi yok, bu nedenle alanlar birlikte düzenlenemez.
@@ -241,8 +242,12 @@
 	Arbitrary Mask	İsteğe Bağlı Maske
 	Archive documents	Belgeleri arşivle
 	Arrange image	Resmi düzenle
+	Ask	Sor
 	Ask about this document	Bu belge hakkında soru sor
+	Ask anything	Her şeyi sorun
+	Ask in any language	Herhangi bir dilde sorun
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	En son sürüm için GitHub'ı sorgular. Hiçbir şey otomatik olarak indirilmez veya kurulmaz.
+	Assistant	Yardımcı
 	Associated with content	İçerikle ilişkili
 	At least one signature has problems.	En az bir imzada sorun var.
 	At least one signature is invalid.	En az bir imza geçersiz.
@@ -275,6 +280,11 @@
 	Bates numbering	Bates numaralandırması
 	Before each selected page (select pages in Organize)	Seçilen her sayfadan önce (Düzenle bölümünde sayfaları seçin)
 	Before the number	Sayının önünde
+	Best for: a step up in quality, still light	Şunun için en iyisi: kalitede bir adım yukarı, yine de hafif
+	Best for: balanced everyday and technical work	Şunun için en iyisi: dengeli günlük ve teknik iş
+	Best for: everyday help on the lightest machines	Şunun için en iyisi: en hafif makinelerde günlük yardım
+	Best for: near-flagship answers at MoE speed	Şunun için en iyisi: MoE hızıyla amiral gemisine yakın yanıtlar
+	Best for: the deepest reasoning this family has	Şunun için en iyisi: bu ailenin en derin akıl yürütmesi
 	Beveled	Eğimli
 	Bicubic downsampling to	Şu değere bikübik alt örnekleme:
 	Binding	Ciltleme
@@ -459,6 +469,7 @@
 	Compare this file with an older version: Compare files… in All tools.	Bu dosyayı daha eski bir sürümle karşılaştırın: Tüm araçlar bölümündeki Dosyaları karşılaştır… aracını kullanın.
 	Completed	Tamamlandı
 	Compress a PDF	PDF'i sıkıştır
+	Compress and export	Sıkıştır ve dışa aktar
 	Compress document structure (object streams)	Belge yapısını sıkıştır (nesne akışları)
 	Configure a Digital ID for Signing	İmzalama için Dijital Kimlik Yapılandır
 	Configure New Digital ID	Yeni Dijital Kimlik Yapılandır
@@ -519,6 +530,9 @@
 	Counterclockwise 90 degrees	Saat yönünün tersine 90 derece
 	Counting words… {n} pages read	Sözcükler sayılıyor… {n} sayfa okundu
 	Country/Region	Ülke/Bölge
+	Craft AI runs a local Gemma model on this machine. Nothing you write here leaves it: no account, no cloud service, no telemetry — the panel talks to a model runtime on 127.0.0.1.	Craft AI bu makinede yerel bir Gemma modeli çalıştırır. Buraya yazdığınız hiçbir şey makineden çıkmaz: hesap yok, bulut hizmeti yok, telemetri yok — panel, 127.0.0.1 üzerindeki bir model çalışma zamanıyla konuşur.
+	Craft AI runs in the native app — it needs a local model runtime.	Craft AI masaüstü uygulamada çalışır — yerel bir model çalışma zamanına ihtiyaç duyar.
+	Craft AI talks to a model runtime on this machine — Ollama, LM Studio or llama.cpp's server — and never to a cloud service. Start one, then Refresh.	Craft AI bu makinedeki bir model çalışma zamanıyla konuşur — Ollama, LM Studio ya da llama.cpp sunucusu — ve asla bir bulut hizmetiyle değil. Birini başlatın, sonra Yenile'ye basın.
 	Create & Edit	Oluştur ve Düzenle
 	Create a new Digital ID (self-signed, saved to a password-protected file)	Yeni bir Dijital Kimlik oluştur (kendinden imzalı, parola korumalı bir dosyaya kaydedilir)
 	Create a PDF	PDF oluştur
@@ -604,6 +618,7 @@ key	Delete	Delete
 	Delete content	İçeriği sil
 	Delete document JavaScript	Belge JavaScript'ini sil
 	Delete field	Alanı sil
+	Delete file	Dosyayı sil
 	Delete image	Resmi sil
 	Delete link	Bağlantıyı sil
 	Delete page	Sayfayı sil
@@ -651,6 +666,7 @@ key	Delete	Delete
 	Discard private data of other applications	Diğer uygulamaların özel verilerini at
 	Discard this text (Esc)	Bu metni at (Esc)
 	Discard User Data	Kullanıcı Verilerini At
+	Disk {size}	Disk {size}
 	Dismiss	Kapat
 	Display theme	Görünüm teması
 	Distance	Mesafe
@@ -685,9 +701,11 @@ key	Delete	Delete
 	Don't save	Kaydetme
 	Don't show again	Bir daha gösterme
 	Done adding text	Metin ekleme bitti
+	Download with Ollama	Ollama ile indir
 	Downloaded {name}	{name} indirildi
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	{n} PDF indirildi|{n} PDF indirildi
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web'de ek indirme M3.10 ile sunulacaktır ({n} bayt hazır)
+	Downloading… {pct}% — {note}	İndiriliyor… {pct}% — {note}
 	Downsample to	Şu değere alt örnekle:
 	DPI sets the printed page size without resampling the image.	DPI, resmi yeniden örneklemeden yazdırılan sayfa boyutunu ayarlar.
 	Drag a field to move it, or select it and press {up} or {down}.	Taşımak için bir alanı sürükleyin veya seçip {up} ya da {down} tuşuna basın.
@@ -920,6 +938,7 @@ scroll speed	Fast	Hızlı
 	Fit Visible	Görünene Sığdır
 	Fit visible	Görünene sığdır
 	Fit Width	Genişliğe Sığdır
+	Fits this machine	Bu makineye uygun
 	Fix	Düzelt
 	Fix hairlines	Kılcal çizgileri düzelt
 	Fix order	Sırayı düzelt
@@ -949,6 +968,7 @@ scroll speed	Fast	Hızlı
 	for images above	bundan büyük resimler için:
 	For page sizes and margins.	Sayfa boyutları ve kenar boşlukları için.
 	Form data and PDF forms	Form verileri ve PDF formları
+	Form field advice	Form alanları için öneriler
 	Form field on page {p} isn't tagged	{p}. sayfadaki form alanı etiketli değil
 	Form fields	Form alanları
 	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	Form alanları düzleştirilir: Değerleri görünür kalır. Kaydetme tüm dosyayı yeniden yazar.
@@ -1133,6 +1153,7 @@ key	Home	Home
 	Light blue	Açık mavi
 	Light theme	Açık tema
 	Limit of	Sınır:
+	Limits	Sınırlar
 	Line	Çizgi
 	Line ending	Çizgi sonu
 	Line Style:	Çizgi Stili:
@@ -1157,10 +1178,12 @@ key	Home	Home
 	Load document font	Belge yazı tipini yükle
 	Load font…	Yazı tipi yükle…
 	Loading…	Yükleniyor…
+	Local and private	Yerel ve özel
 	Local cross-PDF links require the desktop app	PDF'ler arası yerel bağlantılar masaüstü uygulamasını gerektirir
 	Location: 	Konum: 
 	Lock comment	Yorumu kilitle
 	Logical Reading Order	Mantıksal Okuma Sırası
+	Looking for a local model runtime…	Yerel bir model çalışma zamanı aranıyor…
 	Looking for PDFs…	PDF'ler aranıyor…
 	Looking for printers…	Yazıcılar aranıyor…
 	Loop	Döngü
@@ -1268,6 +1291,8 @@ calendar weekday	Mo	Pt
 	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	OpenSC veya p11-kit gibi bir modülün kurulu olması gerekir. Belirtecin kendi PIN tuş takımı varsa o kullanılır.
 	needs an AI provider (off by default)	bir yapay zeka sağlayıcısı gerektirir (varsayılan olarak kapalı)
 	Needs manual check	Manuel denetim gerekiyor
+	Needs {disk} GB of disk	{disk} GB disk gerekir
+	Needs {ram} GB of RAM	{ram} GB RAM gerekir
 	Negative number style:	Negatif sayı stili:
 	Nested alternate text	İç içe alternatif metin
 	Never	Hiçbir zaman
@@ -1319,9 +1344,11 @@ calendar weekday	Mo	Pt
 	No inaccessible scripts	Erişilemeyen komut dosyası yok
 	No issues found	Sorun bulunamadı
 	No links to remove	Kaldırılacak bağlantı yok
+	No local model runtime found.	Yerel bir model çalışma zamanı bulunamadı.
 	No matches	Eşleşme yok
 	No matching tools	Eşleşen araç yok
 	No model credits were built into this copy.	Bu kopyaya hiçbir model kredisi dahil edilmedi.
+	No model installed yet — see the Models tab.	Henüz bir model kurulu değil — Modeller sekmesine bakın.
 	No openly licensed document fonts found. Load a font file.	Açık lisanslı belge yazı tipi bulunamadı. Bir yazı tipi dosyası yükleyin.
 	No order can fix a loop. Change one of the formulas.	Hiçbir sıra bir döngüyü düzeltemez. Formüllerden birini değiştirin.
 	no output folder was chosen	çıktı klasörü seçilmedi
@@ -1391,6 +1418,7 @@ animation effects	On	Açık
 	On Focus	Odaklanıldığında
 	on page {label}	sayfa {label} üzerinde
 	On the web, open or drop an image to convert it	Web'de dönüştürmek için bir resim açın veya sürükleyip bırakın
+	One download serves every ArtCraft app: the model lands in a shared folder all of them read.	Tek indirme her ArtCraft uygulamasına hizmet eder: model, hepsinin okuduğu paylaşılan bir klasöre iner.
 	One word or phrase per line	Her satıra bir sözcük veya ifade
 	One {f} file per page, named after the document.	Belgenin adını taşıyan sayfa başına bir {f} dosyası.
 	Only allow this if you trust the source document.	Buna yalnızca kaynak belgeye güveniyorsanız izin verin.
@@ -1445,6 +1473,7 @@ animation effects	On	Açık
 	Organizational Unit	Kurumsal Birim
 	Organize	Düzenle
 	Organize pages	Sayfaları düzenle
+	Organize pages plan	Sayfa düzenleme planı
 	Original: replace pages	Orijinal: değiştirilecek sayfalar
 	other changes	diğer değişiklikler
 	Other colour…	Diğer renk…
@@ -1535,6 +1564,7 @@ animation effects	On	Açık
 	PDF scale: {scale}%	PDF ölçeği: %{scale}
 	PDF version	PDF sürümü
 	PDF, images and text	PDF, resimler ve metin
+	PDF/A and standards advice	PDF/A ve standartlar için öneriler
 	PDF/A…	PDF/A…
 	PdfCraft can't check this signature yet: {}.	PdfCraft bu imzayı henüz denetleyemiyor: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft normal şekilde kapanmadı. Bu belgelerde otomatik olarak kaydedilen değişiklikler vardı:
@@ -1629,6 +1659,7 @@ animation effects	On	Açık
 	Radio	Radyo
 	Radio button	Radyo düğmesi
 	Radio Button Properties	Radyo Düğmesi Özellikleri
+	RAM {gb} GB	RAM {gb} GB
 	Re-type Password	Parolayı Yeniden Yazın
 	Read	Oku
 	Read mode	Okuma modu
@@ -1665,6 +1696,7 @@ animation effects	On	Açık
 	Redact pages…	Sayfaları karart…
 	Redact text and images	Metin ve resimleri karart
 	Redacted area fill colour:	Karartılan alan dolgu rengi:
+	Redaction checklist	Karartma kontrol listesi
 	Redaction code:	Karartma kodu:
 	Redaction mark appearance	Karartma işareti görünümü
 	Redaction properties…	Karartma özellikleri…
@@ -1802,6 +1834,7 @@ animation effects	On	Açık
 	Run form script	Form komut dosyasını çalıştır
 	Run JavaScript	JavaScript çalıştır
 	Running action… file {d} of {t}	Eylem çalıştırılıyor… Dosya {d} / {t}
+	Runtime	Çalışma zamanı
 calendar weekday	Sa	Ct
 	Same as interface ({language})	Arayüz ile aynı ({language})
 	Sanitize	Temizle
@@ -1827,6 +1860,7 @@ calendar weekday	Sa	Ct
 	Save file	Dosyayı kaydet
 	Save image	Resmi kaydet
 	Save Image As…	Resmi Farklı Kaydet…
+	Save model file	Model dosyasını kaydet
 	Save or revert changes before selecting another tag.	Başka bir etiket seçmeden önce değişiklikleri kaydedin veya geri alın.
 	Save over the changed file?	Değiştirilen dosyanın üzerine kaydedilsin mi?
 	Save pages	Sayfaları kaydet
@@ -1836,6 +1870,7 @@ calendar weekday	Sa	Ct
 	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	Ardından belgeyi kaydedin; kaydetme tüm dosyayı yeniden yazar, böylece kaldırılan hiçbir şey kalmaz.
 	Save the spreadsheet	Elektronik tabloyu kaydet
 	Save these pages as one PDF	Bu sayfaları tek bir PDF olarak kaydet
+	Saved in the shared folder	Paylaşılan klasöre kaydedildi
 	Saved measurements	Kayıtlı ölçümler
 	Saved measurements.	Ölçümler kaydedildi.
 	Saved the print-ready PDF to {path}	Baskıya hazır PDF {path} konumuna kaydedildi
@@ -1843,6 +1878,7 @@ calendar weekday	Sa	Ct
 	Saved {place}: {before} → {after} (not smaller){detail}	{place} kaydedildi: {before} → {after} (küçülmedi){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	{place} kaydedildi: {before} → {after} (%{pct} daha küçük){detail}
 	Saved, but reopening failed: {e}	Kaydedildi, ancak yeniden açma başarısız oldu: {e}
+	Saving… {pct}%	Kaydediliyor… {pct}%
 	Scale	Ölçek
 	Scale relative to target page	Hedef sayfaya göre ölçekle
 	Scan	Tara
@@ -2092,6 +2128,7 @@ certificate	Subject	Konu
 	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	Etiketler belgeye yardımcı teknolojilerin takip ettiği mantıksal bir yapı kazandırır. Belgeyi etiketleyin (PDF'i otomatik etiketle).
 	Tags panel	Etiketler paneli
 	Take a snapshot	Anlık görüntü al
+	Task	Görev
 	Text (plain)	Metin (düz)
 	Text alignment:	Metin hizalama:
 	Text box	Metin kutusu
@@ -2174,6 +2211,7 @@ calendar weekday	Th	Pe
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraft'ın yazdığı yazı tipleri “{c}” ({code}) karakterini çizemiyor, bu yüzden her PDF görüntüleyicide ? olarak görünür. Metin kaydedilir.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Form {u} adresine gönderilmek isteniyor; PdfCraft form verilerini göndermez. Girdilerinizi korumak için belgeyi kaydedin.
 	The form asks viewers to make appearances (NeedAppearances)	Form, görüntüleyicilerden görünüm oluşturmasını istiyor (NeedAppearances)
+	The form's purpose and its fields (names, types, tab order)	Formun amacı ve alanları (adlar, türler, sekme sırası)
 	The image has been copied ({w} × {h} pixels)	Resim kopyalandı ({w} × {h} piksel)
 	The image has been copied as a {ext} file	Resim {ext} dosyası olarak kopyalandı
 	the image is empty	resim boş
@@ -2207,6 +2245,7 @@ calendar weekday	Th	Pe
 	The security settings don't allow screen readers to read the text	Güvenlik ayarları ekran okuyucuların metni okumasına izin vermiyor
 	The selected area has been copied ({w} × {h} pixels)	Seçilen alan kopyalandı ({w} × {h} piksel)
 	The selected fields could not be found. Select them again.	Seçilen alanlar bulunamadı. Bunları tekrar seçin.
+	The shared folder:	Paylaşılan klasör:
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	İmza algoritması ile SignerInfo'nun özet algoritması farklı karma işlevleri belirtiyor; imza SignerInfo'dakiyle oluşturulmuş.
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	İmza doğrulanmamış bir zaman damgası taşıyor ({}): zaman damgası yetkilisi güvenilen sertifikalar listenizde değil, bu yüzden onun yerine imzalayanın bildirdiği imzalama zamanı kullanılıyor.
 	The signature contents are not hexadecimal.	İmza içeriği onaltılık değil.
@@ -2237,6 +2276,7 @@ calendar weekday	Th	Pe
 	The signer's identity is unknown because it has not been included in your list of trusted certificates and none of its parent certificates are trusted certificates.	İmzalayanın kimliği bilinmiyor; çünkü güvenilen sertifikalar listenize eklenmemiş ve üst sertifikalarının hiçbiri güvenilen sertifika değil.
 	The signer's identity is valid.	İmzalayanın kimliği geçerli.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standart yazı tipleri “{c}” ({code}) karakterini çizemiyor. Şimdilik metin olarak yalnızca Batı Avrupa karakterleri eklenebilir.
+	The standard it must meet and where the file goes	Uyması gereken standart ve dosyanın gideceği yer
 	The text is the same	Metin aynı
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	metin tanıma modelleri yüklü değil (PdfCraft'ı yeniden yükleyin veya PDFCRAFT_MODELS değişkenini bunları içeren klasöre ayarlayın)
 	The timestamp authority's certificate is not issued for time stamping.	Zaman damgası yetkilisinin sertifikası zaman damgalama için verilmemiş.
@@ -2264,6 +2304,7 @@ calendar weekday	Th	Pe
 	These objects could not be moved. Select them again and try a smaller move.	Bu nesneler taşınamadı. Bunları tekrar seçin ve daha küçük bir taşıma deneyin.
 	Thick	Kalın
 	Thin	İnce
+	Thinking… {s}s	Düşünüyor… {s}sn
 	This area has too many overlapping paths; intersection snapping is limited.	Bu alanda çok fazla örtüşen yol var; kesişim yakalama sınırlandırıldı.
 	This certificate is in your list of trusted certificates.	Bu sertifika güvenilen sertifikalar listenizde yer alıyor.
 	This certificate is not trusted. Signatures made with it show an unknown identity.	Bu sertifikaya güvenilmiyor. Bununla yapılan imzalar bilinmeyen bir kimlik gösterir.
@@ -2309,6 +2350,7 @@ calendar weekday	Th	Pe
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Bu formun komut dosyaları kapatıldı, çünkü biri çok uzun süre çalıştı. Yeniden çalıştırmak için belgeyi yeniden açın.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Bu, PdfCraft'ın henüz görüntüleyemediği dinamik bir XFA formudur. Gördüğünüz şey dosyanın yer tutucu sayfasıdır.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Bu, belirtecin PIN'i kilitlenmeden önceki son deneme. Buradaki yanlış bir PIN, kalıcı olarak kilitleyebilir.
+	This machine: {ram} GB RAM, {disk} GB free	Bu makine: {ram} GB RAM, {disk} GB boş
 	This measurement needs at least {n} points.	Bu ölçüm en az {n} nokta gerektirir.
 	This page contains objects that cannot be selected together.	Bu sayfa birlikte seçilemeyen nesneler içeriyor.
 	This page couldn't be displayed.\n{e}	Bu sayfa görüntülenemedi.\n{e}
@@ -2452,8 +2494,11 @@ signature pad	Type	Yaz
 calendar weekday	We	Ça
 	Weak	Zayıf
 	Welcome to PdfCraft	PdfCraft'a Hoş Geldiniz
+	What must go, and what the document is	Neyin gitmesi gerektiği ve belgenin ne olduğu
 	What takes up the space in this file, by kind of content.	Bu dosyadaki alanı neyin kapladığı, içerik türüne göre.
 	What word or phrase would you like to search for?	Hangi sözcüğü veya kelime öbeğini aramak istersiniz?
+	What you want to end up with (order, extract, split, combine)	Ne elde etmek istiyorsunuz (sıra, çıkar, böl, birleştir)
+	Where the file is going and what matters (size, quality, compatibility)	Dosya nereye gidiyor ve ne önemli (boyut, kalite, uyumluluk)
 	White on black	Siyah üzerinde beyaz
 	Whole words only	Yalnızca tam sözcükler
 	Window Options	Pencere Seçenekleri

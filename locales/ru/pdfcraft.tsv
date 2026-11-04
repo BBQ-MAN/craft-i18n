@@ -48,6 +48,7 @@
 	A document needs at least one page: copy instead	Документу нужна хотя бы одна страница: копируйте вместо этого
 	a field named {name} already exists	поле с именем {name} уже существует
 	A form field has additional actions	У поля формы есть дополнительные действия
+	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локальная модель — не передовая облачная: она может ошибаться, и длинный ответ на процессоре занимает время. Проверяйте всё важное и соотносите размер модели с этой машиной до загрузки.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Страница, закрытая изображением (скан?): {pages}; фон там не будет виден.
 	A selected field has no widget on any page, so the fields can't be edited together.	У одного из выбранных полей нет виджета ни на одной странице, поэтому поля нельзя изменить вместе.
 	A stream refers to an external file	Поток ссылается на внешний файл
@@ -228,9 +229,13 @@
 	Arbitrary Mask	Произвольная маска
 	Archive documents	Архивировать документы
 	Arrange image	Упорядочить изображение
+	Ask	Спросить
 	Ask about this document	Спросить об этом документе
+	Ask anything	Спросите о чём угодно
+	Ask in any language	Спрашивайте на любом языке
 	Ask to scan more pages	Предлагать сканировать ещё страницы
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Запрашивает у GitHub последний релиз. Ничего не скачивается и не устанавливается автоматически.
+	Assistant	Ассистент
 	Associated with content	Связан с содержимым
 	At least one signature has problems.	Хотя бы одна подпись имеет проблемы.
 	At least one signature is invalid.	Хотя бы одна подпись недействительна.
@@ -262,6 +267,11 @@
 	Bates numbering	Нумерация Бейтса
 	Before each selected page (select pages in Organize)	Перед каждой выделенной страницей (выделите страницы в Организации)
 	Before the number	Перед числом
+	Best for: a step up in quality, still light	Лучше всего для: качество на ступень выше, по-прежнему лёгкий
+	Best for: balanced everyday and technical work	Лучше всего для: баланса повседневных и технических задач
+	Best for: everyday help on the lightest machines	Лучше всего для: повседневной помощи на самых слабых машинах
+	Best for: near-flagship answers at MoE speed	Лучше всего для: ответов почти флагманского уровня на скорости MoE
+	Best for: the deepest reasoning this family has	Лучше всего для: самого глубокого рассуждения в этом семействе
 	Beveled	Скошенный
 	Bicubic downsampling to	Бикубическое уменьшение до
 	Binding	Переплёт
@@ -453,6 +463,7 @@
 	Compare this file with an older version: Compare files… in All tools.	Сравните этот файл с более старой версией: Сравнить файлы… во Всех инструментах.
 	Completed	Завершено
 	Compress a PDF	Сжать PDF
+	Compress and export	Сжатие и экспорт
 	Compress document structure (object streams)	Сжать структуру документа (потоки объектов)
 	Configure a Digital ID for Signing	Настроить цифровой идентификатор для подписи
 	Configure New Digital ID	Настроить новый цифровой идентификатор
@@ -514,6 +525,9 @@
 	Counterclockwise 90 degrees	против часовой стрелке 90 градусов
 	Counting words… {n} pages read	Подсчёт слов… прочитано страниц: {n}
 	Country/Region	Страна/регион
+	Craft AI runs a local Gemma model on this machine. Nothing you write here leaves it: no account, no cloud service, no telemetry — the panel talks to a model runtime on 127.0.0.1.	Craft AI запускает локальную модель Gemma прямо на этой машине. Написанное здесь никуда не уходит: ни аккаунта, ни облачного сервиса, ни телеметрии — панель говорит со средой запуска моделей на 127.0.0.1.
+	Craft AI runs in the native app — it needs a local model runtime.	Craft AI работает в нативном приложении — ему нужна локальная среда запуска моделей.
+	Craft AI talks to a model runtime on this machine — Ollama, LM Studio or llama.cpp's server — and never to a cloud service. Start one, then Refresh.	Craft AI говорит со средой запуска моделей на этой машине — Ollama, LM Studio или сервером llama.cpp — и никогда с облачным сервисом. Запустите одну из них и нажмите «Обновить».
 	Create & Edit	Создание и редактирование
 	Create a new Digital ID (self-signed, saved to a password-protected file)	Создать новый цифровой идентификатор (самоподписанный, в файле с паролем)
 	Create a PDF	Создать PDF
@@ -599,6 +613,7 @@ key	Delete	Delete
 	Delete content	Удалить содержимое
 	Delete document JavaScript	Удалить JavaScript документа
 	Delete field	Удалить поле
+	Delete file	Удалить файл
 	Delete image	Удалить изображение
 	Delete link	Удалить ссылку
 	Delete measurement	Удалить измерение
@@ -642,6 +657,7 @@ key	Delete	Delete
 	Discard private data of other applications	Удалить личные данные других приложений
 	Discard this text (Esc)	Отклонить этот текст (Esc)
 	Discard User Data	Удалить пользовательские данные
+	Disk {size}	Диск {size}
 	Display theme	Тема оформления
 	Distinguished name	Уникальное имя
 	Distribute evenly	Распределить равномерно
@@ -671,9 +687,11 @@ key	Delete	Delete
 	Don't show again	Больше не показывать
 	Done adding text	Завершить добавление текста
 	Double-click also finishes a perimeter or area.	Двойной щелчок также завершает измерение периметра или площади.
+	Download with Ollama	Скачать через Ollama
 	Downloaded {name}	Скачано: {name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	Скачан {n} PDF-файл|Скачано {n} PDF-файла|Скачано {n} PDF-файлов
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Скачивание вложений в веб-версии появится с M3.10 ({n} байт .ready)
+	Downloading… {pct}% — {note}	Скачивание… {pct}% — {note}
 	Downsample to	Уменьшить до
 	DPI sets the printed page size without resampling the image.	DPI задаёт размер печатной страницы без передискретизации изображения.
 	Drag a field to move it, or select it and press {up} or {down}.	Перетащите поле, чтобы переместить его, или выберите его и нажмите {up} или {down}.
@@ -902,6 +920,7 @@ scroll speed	Fast	Высокая
 	Fit Visible	По видимой области
 	Fit visible	По видимой области
 	Fit Width	По ширине
+	Fits this machine	Подходит этой машине
 	Fix	Исправить
 	Fix hairlines	Исправить тонкие линии
 	Fix order	Исправить порядок
@@ -932,6 +951,7 @@ scroll speed	Fast	Высокая
 	for images above	для изображений выше
 	For page sizes and margins.	Для размеров страниц и полей.
 	Form data and PDF forms	Данные формы и формы PDF
+	Form field advice	Советы по полям формы
 	Form fields	Поля формы
 	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	Поля формы расплющены: их значения остаются видимыми. Сохранение перезаписывает весь файл.
 	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	Поля формы должны быть в дереве тегов (теги Form), чтобы озвучиваться. Разметьте поля формы.
@@ -1101,6 +1121,7 @@ key	Home	Home
 	Light gray	Светло-серый
 	Light theme	Светлая тема
 	Limit of	Ограничение
+	Limits	Ограничения
 	Line ending	Окончание линии
 	Line Style:	Стиль линии:
 	Line thickness	Толщина линии
@@ -1121,6 +1142,7 @@ key	Home	Home
 	Lists	Списки
 	Load document font	Загрузить шрифт документа
 	Load font…	Загрузить шрифт…
+	Local and private	Локально и приватно
 	Local cross-PDF links require the desktop app	Локальные ссылки между PDF работают только в настольном приложении
 	Location	Местоположение
 	Location: 	Местоположение: 
@@ -1128,6 +1150,7 @@ key	Home	Home
 	Locked	Заблокировано
 	Logical Reading Order	Логический порядок чтения
 	Longitude	Долгота
+	Looking for a local model runtime…	Идёт поиск локальной среды запуска моделей…
 	Looking for PDFs…	Поиск PDF…
 	Looking for printers…	Поиск принтеров…
 	Loop	Цикл
@@ -1240,6 +1263,8 @@ key	Home	Home
 	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Требуется установленный модуль, например OpenSC или p11-kit. Если у токена есть собственная PIN-клавиатура, используется она.
 	needs an AI provider (off by default)	нужен AI-провайдер (по умолчанию выключено)
 	Needs manual check	Требует ручной проверки
+	Needs {disk} GB of disk	Нужно {disk} ГБ на диске
+	Needs {ram} GB of RAM	Нужно {ram} ГБ ОЗУ
 	Negative number style:	Стиль отрицательного числа:
 	Nested alternate text	Вложенный альтернативный текст
 	Network	Сеть
@@ -1286,8 +1311,10 @@ key	Home	Home
 	No issues found	Проблем не найдено
 	No limit	Без ограничений
 	No links to remove	Нет ссылок для удаления
+	No local model runtime found.	Локальная среда запуска моделей не найдена.
 	No matches	Совпадений нет
 	No matching tools	Нет подходящих инструментов
+	No model installed yet — see the Models tab.	Модель ещё не установлена — см. вкладку «Модели».
 	No openly licensed document fonts found. Load a font file.	Шрифты с открытой лицензией не найдены. Загрузите файл шрифта.
 	No order can fix a loop. Change one of the formulas.	Никакой порядок не исправит цикл. Измените одну из формул.
 	no output folder was chosen	не выбрана папка для вывода
@@ -1352,6 +1379,7 @@ animation effects	On	Вкл
 	On Focus	При фокусе
 	on page {label}	на стр. {label}
 	On the web, open or drop an image to convert it	В веб-версии откройте или перетащите изображение для конвертации
+	One download serves every ArtCraft app: the model lands in a shared folder all of them read.	Одна загрузка обслуживает все приложения ArtCraft: модель попадает в общую папку, которую читают все.
 	One word or phrase per line	По одному слову или фразе в строке
 	One {f} file per page, named after the document.	Один файл {f} на страницу, по имени документа.
 	Only allow this if you trust the source document.	Разрешите это действие, только если доверяете исходному документу.
@@ -1399,6 +1427,7 @@ animation effects	On	Вкл
 	Organization Name	Название организации
 	Organizational Unit	Организационное подразделение
 	Organize pages	Организовать страницы
+	Organize pages plan	План упорядочивания страниц
 	Original: replace pages	Оригинал: заменить страницы
 	Other colour…	Другой цвет…
 	Other elements alternate text	Альтернативный текст других элементов
@@ -1474,6 +1503,7 @@ animation effects	On	Вкл
 	PDF scale: {scale}%	Масштаб PDF: {scale}%
 	PDF version	Версия PDF
 	PDF, images and text	PDF, изображения и текст
+	PDF/A and standards advice	Советы по PDF/A и стандартам
 	PDF/A…	PDF/A…
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft завершился некорректно. В этих документах были изменения, сохранённые автоматически:
 	PdfCraft on GitHub	PdfCraft на GitHub
@@ -1571,6 +1601,7 @@ animation effects	On	Вкл
 	Radio button	Переключатель
 	Radio Button Properties	Свойства переключателя
 	Radius / diameter	Радиус / диаметр
+	RAM {gb} GB	ОЗУ {gb} ГБ
 	Re-type Password	Повторите пароль
 	Read	Чтение
 	Read mode	Режим чтения
@@ -1608,6 +1639,7 @@ animation effects	On	Вкл
 	Redact pages…	Скрыть страницы…
 	Redact text and images	Скрыть текст и изображения
 	Redacted area fill colour:	Цвет заливки скрытой области:
+	Redaction checklist	Контрольный список засекречивания
 	Redaction code:	Код сокрытия:
 	Redaction mark appearance	Вид метки скрытия
 	Redaction properties…	Свойства сокрытия…
@@ -1741,6 +1773,7 @@ animation effects	On	Вкл
 	Run a JavaScript	Запустить JavaScript
 	Run JavaScript	Запустить JavaScript
 	Running action… file {d} of {t}	Выполняется действие… файл {d} из {t}
+	Runtime	Среда
 	Same as interface ({language})	Как в интерфейсе ({language})
 	Sanitize	Очистить
 	Sanitize document	Очистить документ
@@ -1762,6 +1795,7 @@ animation effects	On	Вкл
 	Save image	Сохранить изображение
 	Save Image As…	Сохранить изображение как…
 	Save measurement	Сохранить измерение
+	Save model file	Сохранить файл модели
 	Save or revert changes before selecting another tag.	Сохраните или отмените изменения перед выбором другого тега.
 	Save over the changed file?	Сохранить поверх изменённого файла?
 	Save pages	Сохранить страницы
@@ -1771,6 +1805,7 @@ animation effects	On	Вкл
 	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	Сохраните документ после этого; сохранение перезаписывает весь файл, чтобы ничего удалённого не осталось.
 	Save the spreadsheet	Сохранить электронную таблицу
 	Save these pages as one PDF	Сохранить эти страницы в один PDF
+	Saved in the shared folder	Сохранено в общей папке
 	Saved measurements	Сохранённые измерения
 	Saved measurements keep their original scale.	Сохранённые измерения сохраняют исходный масштаб.
 	Saved measurements.	Сохранённые измерения.
@@ -1779,6 +1814,7 @@ animation effects	On	Вкл
 	Saved {place}: {before} → {after} (not smaller){detail}	Сохранено {place}: {before} → {after} (не меньше){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Сохранено {place}: {before} → {after} (на {pct}% меньше){detail}
 	Saved, but reopening failed: {e}	Сохранено, но повторное открытие не удалось: {e}
+	Saving… {pct}%	Сохранение… {pct}%
 	Scale description	Описание масштаба
 	Scale relative to target page	Масштаб относительно целевой страницы
 	Scan	Сканировать
@@ -2026,6 +2062,7 @@ key	Space	Пробел
 	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	Теги придают документу логическую структуру, которой следуют вспомогательные технологии. Разметьте документ (Автоматически разметить PDF).
 	Tags panel	Панель тегов
 	Take a snapshot	Сделать снимок
+	Task	Задача
 	Text (plain)	Текст (обычный)
 	Text alignment:	Выравнивание текста:
 	Text box	Текстовое поле
@@ -2083,6 +2120,7 @@ key	Space	Пробел
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Шрифты, которыми пишет PdfCraft, не могут отобразить «{c}» ({code}), поэтому во всех программах просмотра PDF на его месте будет ?. Текст сохранён.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Форма просит отправить данные на {u}; PdfCraft не отправляет данные форм. Сохраните документ, чтобы сохранить введённые данные.
 	The form asks viewers to make appearances (NeedAppearances)	Форма просит зрителей создать внешний вид (NeedAppearances)
+	The form's purpose and its fields (names, types, tab order)	Назначение формы и её поля (имена, типы, порядок табуляции)
 	The image has been copied ({w} × {h} pixels)	Изображение скопировано ({w} × {h} пикселей)
 	The image has been copied as a {ext} file	Изображение скопировано как файл {ext}
 	the image is empty	изображение пустое
@@ -2110,8 +2148,10 @@ key	Space	Пробел
 	The selected area has been copied ({w} × {h} pixels)	Выделенная область скопирована ({w} × {h} пикселей)
 	The selected fields could not be found. Select them again.	Выбранные поля не найдены. Выберите их снова.
 	The selected scale could not be read.	Не удалось прочитать выбранный масштаб.
+	The shared folder:	Общая папка:
 	The signature will be invisible.	Подпись будет невидимой.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Стандартные шрифты не могут отобразить «{c}» ({code}). Пока в виде текста можно добавлять только западноевропейские символы.
+	The standard it must meet and where the file goes	Какой стандарт соблюсти и куда идёт файл
 	The text is the same	Текст одинаков
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	модели распознавания текста не установлены (переустановите PdfCraft или задайте в PDFCRAFT_MODELS папку, в которой они лежат)
 	The title in the metadata and the document information differ	Название в метаданных и информация документа различаются
@@ -2127,6 +2167,7 @@ key	Space	Пробел
 	These objects could not be moved. Select them again and try a smaller move.	Не удалось переместить эти объекты. Выберите их снова и попробуйте меньшее смещение.
 	Thick	Толстая
 	Thin	Тонкая
+	Thinking… {s}s	Думает… {s} с
 	This area has too many overlapping paths; intersection snapping is limited.	В этой области слишком много перекрывающихся контуров; привязка к пересечениям ограничена.
 	This certificate is in your list of trusted certificates.	Этот сертификат находится в вашем списке доверенных сертификатов.
 	This certificate is not trusted. Signatures made with it show an unknown identity.	Этот сертификат не доверен. Подписи, сделанные им, показывают неизвестную идентичность.
@@ -2169,6 +2210,7 @@ key	Space	Пробел
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Скрипты этой формы выключены: один из них выполнялся слишком долго. Чтобы запустить их снова, откройте документ заново.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Это динамическая форма XFA, которую PdfCraft пока не может отобразить. То, что вы видите, — заглушка страницы файла.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Это последняя попытка перед блокировкой PIN-кода токена. Неверный PIN-код может заблокировать его навсегда.
+	This machine: {ram} GB RAM, {disk} GB free	Эта машина: ОЗУ {ram} ГБ, свободно {disk} ГБ
 	This measurement needs at least {n} points.	Для этого измерения нужно не менее {n} точек.
 	This page contains objects that cannot be selected together.	На этой странице есть объекты, которые нельзя выделить вместе.
 	This page couldn't be displayed.\n{e}	Не удалось отобразить эту страницу.\n{e}
@@ -2310,8 +2352,11 @@ key	Space	Пробел
 	watermark	водяной знак
 	Weak	Низкая
 	Welcome to PdfCraft	Добро пожаловать в PdfCraft
+	What must go, and what the document is	Что должно исчезнуть и что за документ
 	What takes up the space in this file, by kind of content.	Что занимает место в этом файле, по типу содержимого.
 	What word or phrase would you like to search for?	Какое слово или фразу вы хотите найти?
+	What you want to end up with (order, extract, split, combine)	Что нужно получить (порядок, извлечь, разделить, объединить)
+	Where the file is going and what matters (size, quality, compatibility)	Куда идёт файл и что важно (размер, качество, совместимость)
 	White on black	Белый на чёрном
 	Whole words only	Только целые слова
 	Window Options	Параметры окна

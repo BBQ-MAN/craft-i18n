@@ -51,6 +51,7 @@
 	A font isn't embedded	أحد الخطوط غير مدمج
 	A form field has additional actions	حقل نموذج له إجراءات إضافية
 	A link	رابط
+	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	النموذج المحلي ليس نموذجًا سحابيًا ضخمًا: قد يخطئ، والإجابة الطويلة تأخذ وقتها على المعالج. تحقّق من كل أمر حرج، وانتبه لحجم النموذج مقابل هذا الجهاز قبل تنزيله.
 	A picture covers page {pages} (a scan?), so the background won't show there.	تغطي صورة الصفحة {pages} (مسح ضوئي؟)، لذا لن تظهر الخلفية فيها.
 	A script	سكربت
 	A selected field has no widget on any page, so the fields can't be edited together.	أحد الحقول المحددة ليس له عنصر واجهة في أي صفحة، لذا لا يمكن تحرير الحقول معًا.
@@ -237,8 +238,12 @@ calendar date	April	أبريل
 	Arbitrary Mask	قناع حر
 	Archive documents	أرشفة المستندات
 	Arrange image	ترتيب الصورة
+	Ask	اسأل
 	Ask about this document	اسأل عن هذا المستند
+	Ask anything	اسأل عن أي شيء
+	Ask in any language	اسأل بأي لغة
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	يسأل GitHub عن أحدث إصدار. لا يُنزَّل أو يُثبَّت شيء تلقائيًا.
+	Assistant	المساعد
 	Associated with content	مرتبط بمحتوى
 	At least one signature has problems.	توقيع واحد على الأقل فيه مشكلات.
 	At least one signature is invalid.	توقيع واحد على الأقل غير صالح.
@@ -272,6 +277,11 @@ certificate	Basic constraints	القيود الأساسية
 	Bates numbering	ترقيم بيتس
 	Before each selected page (select pages in Organize)	قبل كل صفحة محددة (حدد الصفحات في «تنظيم»)
 	Before the number	قبل الرقم
+	Best for: a step up in quality, still light	الأفضل لـ: درجة أعلى في الجودة مع بقائه خفيفًا
+	Best for: balanced everyday and technical work	الأفضل لـ: التوازن بين العمل اليومي والعمل التقني
+	Best for: everyday help on the lightest machines	الأفضل لـ: العون اليومي على أخفّ الأجهزة
+	Best for: near-flagship answers at MoE speed	الأفضل لـ: إجابات قريبة من الرائدة بسرعة خليط الخبراء (MoE)
+	Best for: the deepest reasoning this family has	الأفضل لـ: أعمق استدلال تملكه هذه العائلة
 	Beveled	مشطوف
 	Bicubic downsampling to	تقليل العينات بطريقة Bicubic إلى
 	Binding	التجليد
@@ -452,6 +462,7 @@ certificate	Basic constraints	القيود الأساسية
 	Compare this file with an older version: Compare files… in All tools.	قارن هذا الملف بنسخة أقدم: «مقارنة الملفات…» في كل الأدوات.
 	Completed	مكتمل
 	Compress a PDF	ضغط ملف PDF
+	Compress and export	الضغط والتصدير
 	Compress document structure (object streams)	ضغط بنية المستند (تدفقات الكائنات)
 	Configure a Digital ID for Signing	إعداد معرّف رقمي للتوقيع
 	Configure New Digital ID	إعداد معرّف رقمي جديد
@@ -511,6 +522,9 @@ certificate	Basic constraints	القيود الأساسية
 	Counterclockwise 90 degrees	90 درجة عكس عقارب الساعة
 	Counting words… {n} pages read	جارٍ عد الكلمات… تمت قراءة {n} من الصفحات
 	Country/Region	البلد/المنطقة
+	Craft AI runs a local Gemma model on this machine. Nothing you write here leaves it: no account, no cloud service, no telemetry — the panel talks to a model runtime on 127.0.0.1.	يشغّل Craft AI نموذج Gemma محليًا على هذا الجهاز. لا يخرج ما تكتبه هنا منه: لا حساب، ولا خدمة سحابية، ولا قياس عن بُعد — اللوحة تتحدث إلى مشغّل نماذج على 127.0.0.1.
+	Craft AI runs in the native app — it needs a local model runtime.	يعمل Craft AI في التطبيق المكتبي — يحتاج مشغّل نماذج محلي.
+	Craft AI talks to a model runtime on this machine — Ollama, LM Studio or llama.cpp's server — and never to a cloud service. Start one, then Refresh.	يتحدث Craft AI إلى مشغّل نماذج على هذا الجهاز — Ollama أو LM Studio أو خادم llama.cpp — ولا يتحدث إلى خدمة سحابية أبدًا. شغّل أحدها ثم حدّث.
 	Create & Edit	الإنشاء والتحرير
 	Create a new Digital ID (self-signed, saved to a password-protected file)	إنشاء معرّف رقمي جديد (موقَّع ذاتيًا، يُحفظ في ملف محمي بكلمة مرور)
 	Create a PDF	إنشاء ملف PDF
@@ -596,6 +610,7 @@ key	Delete	Delete
 	Delete content	حذف المحتوى
 	Delete document JavaScript	حذف JavaScript المستند
 	Delete field	حذف الحقل
+	Delete file	احذف الملف
 	Delete image	حذف الصورة
 	Delete link	حذف الرابط
 	Delete page	حذف الصفحة
@@ -642,6 +657,7 @@ key	Delete	Delete
 	Discard private data of other applications	تجاهل البيانات الخاصة بالتطبيقات الأخرى
 	Discard this text (Esc)	تجاهل هذا النص (Esc)
 	Discard User Data	تجاهل بيانات المستخدم
+	Disk {size}	القرص {size}
 	Display theme	سمة العرض
 	Distinguished name	الاسم المميز
 	Distribute evenly	توزيع بالتساوي
@@ -672,9 +688,11 @@ key	Delete	Delete
 	Don't save	عدم الحفظ
 	Don't show again	عدم الإظهار مرة أخرى
 	Done adding text	إنهاء إضافة النص
+	Download with Ollama	نزّل عبر Ollama
 	Downloaded {name}	تم تنزيل {name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	تم تنزيل {n} من ملفات PDF|تم تنزيل ملف PDF واحد ({n})|تم تنزيل ملفي PDF ({n})|تم تنزيل {n} ملفات PDF|تم تنزيل {n} ملف PDF|تم تنزيل {n} من ملفات PDF
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	تنزيل المرفقات على الويب سيتوفر مع M3.10 ({n} بايت جاهزة)
+	Downloading… {pct}% — {note}	ينزّل… {pct}% — {note}
 	Downsample to	تقليل العينات إلى
 	DPI sets the printed page size without resampling the image.	قيمة DPI تحدد حجم الصفحة المطبوعة دون إعادة تشكيل الصورة.
 	Drag a field to move it, or select it and press {up} or {down}.	اسحب حقلًا لنقله، أو حدده واضغط {up} أو {down}.
@@ -901,6 +919,7 @@ calendar date	February	فبراير
 	Fit Visible	ملاءمة المرئي
 	Fit visible	ملاءمة المرئي
 	Fit Width	ملاءمة العرض
+	Fits this machine	يناسب هذا الجهاز
 	Fix	إصلاح
 	Fix hairlines	إصلاح الخطوط الرفيعة
 	Fix order	إصلاح الترتيب
@@ -928,6 +947,7 @@ calendar date	February	فبراير
 	for images above	للصور التي تتجاوز
 	For page sizes and margins.	لأحجام الصفحات والهوامش.
 	Form data and PDF forms	بيانات النماذج ونماذج PDF
+	Form field advice	نصائح لحقول النموذج
 	Form field on page {p} isn't tagged	حقل النموذج في الصفحة {p} غير موسوم
 	Form fields	حقول النموذج
 	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	حقول النموذج تُسطَّح: قيمها تبقى مرئية. الحفظ يعيد كتابة الملف كله.
@@ -1107,6 +1127,7 @@ certificate	Key usage	استخدام المفتاح
 	Light blue	أزرق فاتح
 	Light theme	سمة فاتحة
 	Limit of	حد أقصى
+	Limits	الحدود
 	Line ending	نهاية الخط
 	Line Style:	نمط الخط:
 	Line thickness	سماكة الخط
@@ -1129,10 +1150,12 @@ certificate	Key usage	استخدام المفتاح
 	Load document font	تحميل خط المستند
 	Load font…	تحميل خط…
 	Loading…	يُحمَّل…
+	Local and private	محلي وخاص
 	Local cross-PDF links require the desktop app	تتطلب الروابط المحلية بين ملفات PDF تطبيق سطح المكتب
 	Location: 	الموقع: 
 	Lock comment	قفل التعليق
 	Logical Reading Order	ترتيب القراءة المنطقي
+	Looking for a local model runtime…	البحث عن مشغّل نماذج محلي…
 	Looking for PDFs…	جارٍ البحث عن ملفات PDF…
 	Looking for printers…	جارٍ البحث عن الطابعات…
 	Loop	حلقة
@@ -1235,6 +1258,8 @@ calendar weekday	Mo	إثنين
 	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	يتطلب تثبيت وحدة مثل OpenSC أو p11-kit. إذا كان للرمز لوحة رقم تعريف شخصي خاصة به، يتم استخدامها.
 	needs an AI provider (off by default)	يتطلب مزوّد ذكاء اصطناعي (متوقف افتراضيًا)
 	Needs manual check	يحتاج إلى فحص يدوي
+	Needs {disk} GB of disk	يحتاج مساحة {disk} غيغابايت
+	Needs {ram} GB of RAM	يحتاج ذاكرة {ram} غيغابايت
 	Negative number style:	نمط الأرقام السالبة:
 	Nested alternate text	نص بديل متداخل
 	New Action	إجراء جديد
@@ -1283,9 +1308,11 @@ calendar weekday	Mo	إثنين
 	No inaccessible scripts	لا توجد سكربتات يتعذر الوصول إليها
 	No issues found	لم يُعثر على مشكلات
 	No links to remove	لا توجد روابط لإزالتها
+	No local model runtime found.	لا يوجد مشغّل نماذج محلي.
 	No matches	لا توجد تطابقات
 	No matching tools	لا توجد أدوات مطابقة
 	No model credits were built into this copy.	لم يُضمَّن ذكر النماذج في هذه النسخة.
+	No model installed yet — see the Models tab.	لا يوجد نموذج مثبّت بعد — انظر تبويب النماذج.
 	No openly licensed document fonts found. Load a font file.	لم يُعثر على خطوط ذات ترخيص مفتوح. حمّل ملف خط.
 	No order can fix a loop. Change one of the formulas.	لا يمكن لأي ترتيب إصلاح حلقة. غيّر إحدى الصيغ.
 	no output folder was chosen	لم يتم اختيار مجلد للإخراج
@@ -1355,6 +1382,7 @@ animation effects	On	مفعّلة
 	On Focus	عند التركيز
 	on page {label}	في الصفحة {label}
 	On the web, open or drop an image to convert it	على الويب، افتح صورة أو أفلتها لتحويلها
+	One download serves every ArtCraft app: the model lands in a shared folder all of them read.	تنزيل واحد يكفي كل تطبيقات ArtCraft: يوضع النموذج في مجلد مشترك تقرؤه كلها.
 	One word or phrase per line	كلمة أو عبارة واحدة في كل سطر
 	One {f} file per page, named after the document.	ملف {f} واحد لكل صفحة، يُسمى باسم المستند.
 	Only allow this if you trust the source document.	لا تسمح بذلك إلا إذا كنت تثق بالمستند المصدر.
@@ -1408,6 +1436,7 @@ animation effects	On	مفعّلة
 	Organizational Unit	الوحدة التنظيمية
 	Organize	تنظيم
 	Organize pages	تنظيم الصفحات
+	Organize pages plan	خطة تنظيم الصفحات
 	Original: replace pages	الأصل: استبدال الصفحات
 	other changes	تغييرات أخرى
 	Other colour…	لون آخر…
@@ -1493,6 +1522,7 @@ animation effects	On	مفعّلة
 	PDF scale: {scale}%	مقياس PDF: {scale}%
 	PDF version	إصدار PDF
 	PDF, images and text	PDF وصور ونص
+	PDF/A and standards advice	نصائح PDF/A والمعايير
 	PDF/A…	PDF/A…
 	PdfCraft can't check this signature yet: {}.	لا يستطيع PdfCraft التحقق من هذا التوقيع بعد: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	لم يُغلق PdfCraft بشكل طبيعي. هذه المستندات فيها تغييرات حُفظت تلقائيًا:
@@ -1588,6 +1618,7 @@ certificate	Public key	المفتاح العام
 	Radio	زر اختيار
 	Radio button	زر اختيار
 	Radio Button Properties	خصائص زر الاختيار
+	RAM {gb} GB	الذاكرة {gb} غيغابايت
 	Re-type Password	أعد كتابة كلمة المرور
 	Read	قراءة
 	Read mode	وضع القراءة
@@ -1623,6 +1654,7 @@ certificate	Public key	المفتاح العام
 	Redact pages…	حجب صفحات…
 	Redact text and images	حجب النص والصور
 	Redacted area fill colour:	لون تعبئة المنطقة المحجوبة:
+	Redaction checklist	قائمة تحقق الحجب
 	Redaction code:	رمز الحجب:
 	Redaction mark appearance	مظهر علامة الحجب
 	Redaction properties…	خصائص الحجب…
@@ -1753,6 +1785,7 @@ certificate	Public key	المفتاح العام
 	Run form script	تشغيل سكربت النموذج
 	Run JavaScript	تشغيل JavaScript
 	Running action… file {d} of {t}	جارٍ تشغيل الإجراء… الملف {d} من {t}
+	Runtime	المشغّل
 calendar weekday	Sa	سبت
 	Same as interface ({language})	مثل الواجهة ({language})
 	Sanitize	تنظيف
@@ -1778,6 +1811,7 @@ calendar weekday	Sa	سبت
 	Save file	حفظ الملف
 	Save image	حفظ الصورة
 	Save Image As…	حفظ الصورة باسم…
+	Save model file	احفظ ملف النموذج
 	Save or revert changes before selecting another tag.	احفظ التغييرات أو تراجع عنها قبل تحديد وسم آخر.
 	Save over the changed file?	الحفظ فوق الملف الذي تغيّر؟
 	Save pages	حفظ الصفحات
@@ -1787,6 +1821,7 @@ calendar weekday	Sa	سبت
 	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	احفظ المستند بعد ذلك؛ الحفظ يعيد كتابة الملف كله كي لا يبقى فيه شيء مما أُزيل.
 	Save the spreadsheet	حفظ جدول البيانات
 	Save these pages as one PDF	حفظ هذه الصفحات كملف PDF واحد
+	Saved in the shared folder	محفوظ في المجلد المشترك
 	Saved measurements	القياسات المحفوظة
 	Saved measurements.	حُفظت القياسات.
 	Saved the print-ready PDF to {path}	تم حفظ ملف PDF الجاهز للطباعة في {path}
@@ -1794,6 +1829,7 @@ calendar weekday	Sa	سبت
 	Saved {place}: {before} → {after} (not smaller){detail}	تم الحفظ {place}: {before} → {after} (ليس أصغر){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	تم الحفظ {place}: {before} → {after} (أصغر بنسبة {pct}%){detail}
 	Saved, but reopening failed: {e}	تم الحفظ، لكن فشلت إعادة الفتح: {e}
+	Saving… {pct}%	يحفظ… {pct}%
 	Scale	المقياس
 	Scale relative to target page	المقياس نسبةً إلى الصفحة الهدف
 	Scan	مسح ضوئي
@@ -2040,6 +2076,7 @@ certificate	Subject	صاحب الشهادة
 	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	الوسوم تمنح المستند بنية منطقية تتبعها التقنيات المساعدة. وسّم المستند (وسم PDF تلقائيًا).
 	Tags panel	لوحة الوسوم
 	Take a snapshot	التقاط لقطة
+	Task	المهمة
 	Text (plain)	نص (عادي)
 	Text alignment:	محاذاة النص:
 	Text box	مربع نص
@@ -2119,6 +2156,7 @@ calendar weekday	Th	خميس
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	الخطوط التي يكتب بها PdfCraft لا تستطيع رسم «{c}» ({code})، لذا يظهر بشكل ? في كل برامج عرض PDF. النص محفوظ.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	النموذج يطلب إرساله إلى {u}؛ PdfCraft لا يرسل بيانات النماذج. احفظ المستند للاحتفاظ بما أدخلته.
 	The form asks viewers to make appearances (NeedAppearances)	النموذج يطلب من العارضات إنشاء المظاهر (NeedAppearances)
+	The form's purpose and its fields (names, types, tab order)	غرض النموذج وحقوله (الأسماء، الأنواع، ترتيب التنقل)
 	The image has been copied ({w} × {h} pixels)	نُسخت الصورة ({w} × {h} بكسل)
 	The image has been copied as a {ext} file	نُسخت الصورة كملف {ext}
 	the image is empty	الصورة فارغة
@@ -2151,6 +2189,7 @@ calendar weekday	Th	خميس
 	The security settings don't allow screen readers to read the text	إعدادات الأمان لا تسمح لقارئات الشاشة بقراءة النص
 	The selected area has been copied ({w} × {h} pixels)	نُسخت المنطقة المحددة ({w} × {h} بكسل)
 	The selected fields could not be found. Select them again.	تعذّر العثور على الحقول المحددة. حددها من جديد.
+	The shared folder:	المجلد المشترك:
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	خوارزمية التوقيع وخوارزمية الهضم في SignerInfo تسمّيان هضمين مختلفين؛ صُنع التوقيع بخوارزمية SignerInfo.
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	يحمل التوقيع طابعاً زمنياً غير موثق ({}): سلطة الطابع الزمني ليست في قائمة شهاداتك الموثوقة، لذا يُستخدم وقت التوقيع الذي زعمه الموقّع بدلاً منه.
 	The signature contents are not hexadecimal.	محتويات التوقيع ليست سداسية عشرية.
@@ -2178,6 +2217,7 @@ calendar weekday	Th	خميس
 	The signer's identity is unknown because it has not been included in your list of trusted certificates and none of its parent certificates are trusted certificates.	هوية الموقّع مجهولة لأنها ليست في قائمة شهاداتك الموثوقة ولا أي من شهاداتها الأم موثوقة.
 	The signer's identity is valid.	هوية الموقّع صحيحة.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	الخطوط القياسية لا تستطيع رسم «{c}» ({code}). حاليًا يمكن إضافة محارف أوروبا الغربية فقط كنص.
+	The standard it must meet and where the file goes	المعيار الذي يجب تلبيته وإلى أين يذهب الملف
 	The text is the same	النص متطابق
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	نماذج التعرف على النص غير مثبتة (أعد تثبيت PdfCraft، أو اضبط PDFCRAFT_MODELS على المجلد الذي يحتويها)
 	The timestamp authority's certificate was not valid at the time of timestamping.	شهادة سلطة الطابع الزمني لم تكن صالحة وقت التوقيت.
@@ -2204,6 +2244,7 @@ calendar weekday	Th	خميس
 	These objects could not be moved. Select them again and try a smaller move.	تعذر نقل هذه العناصر. حددها مجددًا وحاول نقلها بمسافة أقل.
 	Thick	سميك
 	Thin	رفيع
+	Thinking… {s}s	يفكر… {s}ث
 	This area has too many overlapping paths; intersection snapping is limited.	هذه المنطقة فيها مسارات متداخلة كثيرة جدًا؛ الانجذاب إلى التقاطعات محدود.
 	This certificate is in your list of trusted certificates.	هذه الشهادة موجودة في قائمة شهاداتك الموثوقة.
 	This certificate is not trusted. Signatures made with it show an unknown identity.	هذه الشهادة غير موثوقة. التوقيعات المنشأة بها تظهر بهوية غير معروفة.
@@ -2247,6 +2288,7 @@ calendar weekday	Th	خميس
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	سكربتات هذا النموذج متوقفة لأن أحدها استغرق وقتًا طويلًا جدًا. أعد فتح المستند لتشغيلها من جديد.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	هذا نموذج XFA ديناميكي، لا يستطيع PdfCraft عرضه بعد. ما تراه هو الصفحة البديلة للملف.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	هذه المحاولة الأخيرة قبل قفل رقم التعريف الشخصي للرمز. قد يؤدي إدخال رقم خاطئ هنا إلى قفله نهائيًا.
+	This machine: {ram} GB RAM, {disk} GB free	هذا الجهاز: ذاكرة {ram} غيغابايت، ومساحة متاحة {disk} غيغابايت
 	This measurement needs at least {n} points.	هذا القياس يحتاج إلى {n} نقاط على الأقل.
 	This page contains objects that cannot be selected together.	تحتوي هذه الصفحة على عناصر لا يمكن تحديدها معًا.
 	This page couldn't be displayed.\n{e}	تعذّر عرض هذه الصفحة.\n{e}
@@ -2382,8 +2424,11 @@ certificate	Version	الإصدار
 calendar weekday	We	أربعاء
 	Weak	ضعيفة
 	Welcome to PdfCraft	مرحبًا بك في PdfCraft
+	What must go, and what the document is	ما يجب حجبه، وما هو المستند
 	What takes up the space in this file, by kind of content.	ما الذي يشغل المساحة في هذا الملف، حسب نوع المحتوى.
 	What word or phrase would you like to search for?	ما الكلمة أو العبارة التي تريد البحث عنها؟
+	What you want to end up with (order, extract, split, combine)	ما تريد الوصول إليه (ترتيب، استخراج، تقسيم، دمج)
+	Where the file is going and what matters (size, quality, compatibility)	إلى أين يذهب الملف وما يهم (الحجم، الجودة، التوافق)
 	White on black	أبيض على أسود
 	Whole words only	كلمات كاملة فقط
 	Window	النافذة

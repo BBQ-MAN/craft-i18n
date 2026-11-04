@@ -50,6 +50,7 @@
 	a field named {name} already exists	ein Feld namens {name} ist bereits vorhanden
 	A form field has additional actions	Ein Formularfeld hat zusätzliche Aktionen
 	A link	Ein Link
+	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Ein lokales Modell ist kein Spitzengroßmodell aus der Cloud: Es kann sich irren, und lange Antworten brauchen auf der CPU ihre Zeit. Prüfen Sie alles Entscheidende und bedenken Sie die Modellgröße gegen diesen Rechner vor dem Download.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Ein Bild bedeckt Seite {pages} (ein Scan?), daher ist der Hintergrund dort nicht zu sehen.
 	A script	Ein Skript
 	A selected field has no widget on any page, so the fields can't be edited together.	Ein ausgewähltes Feld hat auf keiner Seite ein Widget, daher können die Felder nicht gemeinsam bearbeitet werden.
@@ -228,9 +229,13 @@
 	Arbitrary Mask	Beliebige Maske
 	Archive documents	Dokumente archivieren
 	Arrange image	Bild anordnen
+	Ask	Fragen
 	Ask about this document	Fragen zu diesem Dokument stellen
+	Ask anything	Fragen Sie alles
+	Ask in any language	Fragen Sie in jeder Sprache
 	Ask to scan more pages	Nach weiteren Seiten fragen
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Fragt GitHub nach dem neuesten Release. Es wird nichts automatisch heruntergeladen oder installiert.
+	Assistant	Assistent
 	Associated with content	Mit Inhalt verknüpft
 	At least one signature has problems.	Mindestens eine Signatur weist Probleme auf.
 	At least one signature is invalid.	Mindestens eine Signatur ist ungültig.
@@ -262,6 +267,11 @@
 	Bates numbering	Bates-Nummerierung
 	Before each selected page (select pages in Organize)	Vor jeder ausgewählten Seite (Seiten unter „Organisieren“ auswählen)
 	Before the number	Vor der Zahl
+	Best for: a step up in quality, still light	Am besten für: eine Stufe mehr Qualität, weiterhin leicht
+	Best for: balanced everyday and technical work	Am besten für: die Balance aus Alltäglichem und Technischem
+	Best for: everyday help on the lightest machines	Am besten für: alltägliche Hilfe auf den leichtesten Rechnern
+	Best for: near-flagship answers at MoE speed	Am besten für: Antworten nahe der Spitzenklasse, mit MoE-Tempo
+	Best for: the deepest reasoning this family has	Am besten für: das tiefste Abwägen, das diese Familie hat
 	Beveled	Abgeschrägt
 	Bicubic downsampling to	Bikubische Neuberechnung auf
 	Binding	Bindung
@@ -437,6 +447,7 @@
 	Compare this file with an older version: Compare files… in All tools.	Vergleiche diese Datei mit einer älteren Version: „Dateien vergleichen…“ unter „Alle Werkzeuge“.
 	Completed	Abgeschlossen
 	Compress a PDF	PDF komprimieren
+	Compress and export	Komprimieren und exportieren
 	Compress document structure (object streams)	Dokumentstruktur komprimieren (Objekt-Streams)
 	Configure a Digital ID for Signing	Digitale ID zum Signieren einrichten
 	Configure New Digital ID	Neue digitale ID einrichten
@@ -496,6 +507,9 @@
 	Counterclockwise 90 degrees	90 Grad gegen den Uhrzeigersinn
 	Counting words… {n} pages read	Wörter werden gezählt… {n} Seiten gelesen
 	Country/Region	Land/Region
+	Craft AI runs a local Gemma model on this machine. Nothing you write here leaves it: no account, no cloud service, no telemetry — the panel talks to a model runtime on 127.0.0.1.	Craft AI führt ein lokales Gemma-Modell auf diesem Rechner aus. Nichts, was Sie hier schreiben, verlässt ihn: kein Konto, kein Cloud-Dienst, keine Telemetrie — das Panel spricht mit einer Modell-Laufzeit auf 127.0.0.1.
+	Craft AI runs in the native app — it needs a local model runtime.	Craft AI läuft in der nativen App — es braucht eine lokale Modell-Laufzeit.
+	Craft AI talks to a model runtime on this machine — Ollama, LM Studio or llama.cpp's server — and never to a cloud service. Start one, then Refresh.	Craft AI spricht mit einer Modell-Laufzeit auf diesem Rechner — Ollama, LM Studio oder llama.cpps Server — und nie mit einem Cloud-Dienst. Starten Sie eine und klicken Sie auf „Neu laden“.
 	Create & Edit	Erstellen & Bearbeiten
 	Create a new Digital ID (self-signed, saved to a password-protected file)	Neue digitale ID erstellen (selbstsigniert, in einer passwortgeschützten Datei gespeichert)
 	Create a PDF	PDF erstellen
@@ -576,6 +590,7 @@ key	Delete	Entf
 	Delete content	Inhalt löschen
 	Delete document JavaScript	Dokument-JavaScript löschen
 	Delete field	Feld löschen
+	Delete file	Datei löschen
 	Delete image	Bild löschen
 	Delete link	Link löschen
 	Delete page	Seite löschen
@@ -616,6 +631,7 @@ key	Delete	Entf
 	Discard private data of other applications	Private Daten anderer Anwendungen verwerfen
 	Discard this text (Esc)	Diesen Text verwerfen (Esc)
 	Discard User Data	Benutzerdaten verwerfen
+	Disk {size}	Speicher {size}
 	Display theme	Design
 	Distinguished name	Distinguished Name
 	Distribute evenly	Gleichmäßig verteilen
@@ -646,9 +662,11 @@ key	Delete	Entf
 	Don't show again	Nicht mehr anzeigen
 	Done adding text	Texteingabe abschließen
 	Double-click	Doppelklick
+	Download with Ollama	Mit Ollama laden
 	Downloaded {name}	{name} heruntergeladen
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	{n} PDF heruntergeladen|{n} PDFs heruntergeladen
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Anhänge herunterladen kommt im Web mit M3.10 ({n} Bytes bereit)
+	Downloading… {pct}% — {note}	Wird geladen… {pct} % — {note}
 	Downsample to	Herunterrechnen auf
 	DPI sets the printed page size without resampling the image.	Die DPI bestimmt die gedruckte Seitengröße, ohne das Bild neu zu berechnen.
 	Drag a field to move it, or select it and press {up} or {down}.	Ziehe ein Feld, um es zu verschieben, oder wähle es aus und drücke {up} oder {down}.
@@ -863,6 +881,7 @@ scroll speed	Fast	Schnell
 	Fit Visible	Sichtbarer Bereich
 	Fit visible	Sichtbaren Inhalt einpassen
 	Fit Width	Seitenbreite
+	Fits this machine	Passt auf diesen Rechner
 	Fix	Korrigieren
 	Fix hairlines	Haarlinien korrigieren
 	Fix order	Reihenfolge korrigieren
@@ -889,6 +908,7 @@ scroll speed	Fast	Schnell
 	for images above	für Bilder über
 	For page sizes and margins.	Für Seitengrößen und Ränder.
 	Form data and PDF forms	Formulardaten und PDF-Formulare
+	Form field advice	Rat zu Formularfeldern
 	Form fields	Formularfelder
 	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	Formularfelder werden reduziert, ihre Werte bleiben sichtbar. Beim Speichern wird die gesamte Datei neu geschrieben.
 	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	Formularfelder müssen im Tag-Baum stehen (Form-Tags), damit sie vorgelesen werden. Tagge die Formularfelder.
@@ -1050,6 +1070,7 @@ key	Home	Pos1
 	Light blue	Hellblau
 	Light theme	Helles Design
 	Limit of	Begrenzen auf
+	Limits	Grenzen
 	Line ending	Linienende
 	Line Style:	Linienstil:
 	Line thickness	Linienstärke
@@ -1070,10 +1091,12 @@ key	Home	Pos1
 	Lists	Listen
 	Load document font	Dokumentschriftart laden
 	Load font…	Schriftart laden…
+	Local and private	Lokal und privat
 	Local cross-PDF links require the desktop app	Lokale Verknüpfungen zwischen PDFs erfordern die Desktop-App
 	Location: 	Ort: 
 	Lock comment	Kommentar sperren
 	Logical Reading Order	Logische Lesereihenfolge
+	Looking for a local model runtime…	Suche nach einer lokalen Modell-Laufzeit…
 	Looking for PDFs…	PDFs werden gesucht…
 	Looking for printers…	Drucker werden gesucht…
 	Loop	Schleife
@@ -1175,6 +1198,8 @@ key	Home	Pos1
 	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Erfordert ein installiertes Modul wie OpenSC oder p11-kit. Besitzt das Token ein eigenes PIN-Pad, wird dieses verwendet.
 	needs an AI provider (off by default)	benötigt einen KI-Anbieter (standardmäßig aus)
 	Needs manual check	Manuelle Prüfung nötig
+	Needs {disk} GB of disk	Braucht {disk} GB Speicher
+	Needs {ram} GB of RAM	Braucht {ram} GB RAM
 	Negative number style:	Darstellung negativer Zahlen:
 	Nested alternate text	Verschachtelter Alternativtext
 	Network	Netzwerk
@@ -1220,9 +1245,11 @@ key	Home	Pos1
 	No inaccessible scripts	Keine nicht barrierefreien Skripte
 	No issues found	Keine Probleme gefunden
 	No links to remove	Keine Links zum Entfernen
+	No local model runtime found.	Keine lokale Modell-Laufzeit gefunden.
 	No matches	Keine Treffer
 	No matching tools	Keine passenden Werkzeuge
 	No model credits were built into this copy.	In diese Version wurden keine Modellnachweise eingebaut.
+	No model installed yet — see the Models tab.	Noch kein Modell installiert — siehe Reiter „Modelle“.
 	No openly licensed document fonts found. Load a font file.	Keine offen lizenzierten Schriftarten gefunden. Laden Sie eine Schriftartdatei.
 	No order can fix a loop. Change one of the formulas.	Keine Reihenfolge kann eine Schleife beheben. Ändere eine der Formeln.
 	no output folder was chosen	kein Ausgabeordner gewählt
@@ -1284,6 +1311,7 @@ animation effects	On	Ein
 	On Focus	Fokus erhalten
 	on page {label}	auf Seite {label}
 	On the web, open or drop an image to convert it	Öffne im Web ein Bild oder zieh es hierher, um es zu konvertieren
+	One download serves every ArtCraft app: the model lands in a shared folder all of them read.	Ein Download reicht für alle ArtCraft-Apps: Das Modell landet in einem gemeinsamen Ordner, den alle lesen.
 	One word or phrase per line	Ein Wort oder Ausdruck pro Zeile
 	One {f} file per page, named after the document.	Eine {f}-Datei pro Seite, benannt nach dem Dokument.
 	Only allow this if you trust the source document.	Lassen Sie dies nur zu, wenn Sie dem Quelldokument vertrauen.
@@ -1334,6 +1362,7 @@ animation effects	On	Ein
 	Organization Name	Organisation
 	Organizational Unit	Organisationseinheit
 	Organize pages	Seiten organisieren
+	Organize pages plan	Plan zum Ordnen der Seiten
 	Original: replace pages	Original: Seiten ersetzen
 	Other colour…	Andere Farbe…
 	Other elements alternate text	Alternativtext für andere Elemente
@@ -1410,6 +1439,7 @@ animation effects	On	Ein
 	PDF scale: {scale}%	PDF-Maßstab: {scale}%
 	PDF version	PDF-Version
 	PDF, images and text	PDF, Bilder und Text
+	PDF/A and standards advice	Rat zu PDF/A und Standards
 	PDF/A…	PDF/A…
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft wurde nicht ordnungsgemäß beendet. Diese Dokumente hatten automatisch gesicherte Änderungen:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft zeichnet ohne Grafikprozessor und kann daher langsam sein. Ein aktualisierter Grafiktreiber kann helfen.
@@ -1504,6 +1534,7 @@ animation effects	On	Ein
 	Radio	Optionsfeld
 	Radio button	Optionsfeld
 	Radio Button Properties	Optionsfeld-Eigenschaften
+	RAM {gb} GB	RAM {gb} GB
 	Re-type Password	Passwort wiederholen
 	Read	Lesen
 	Read mode	Lesemodus
@@ -1539,6 +1570,7 @@ animation effects	On	Ein
 	Redact pages…	Seiten schwärzen…
 	Redact text and images	Text und Bilder schwärzen
 	Redacted area fill colour:	Füllfarbe geschwärzter Bereiche:
+	Redaction checklist	Checkliste für Schwärzungen
 	Redaction code:	Schwärzungscode:
 	Redaction mark appearance	Aussehen der Schwärzungsmarkierung
 	Redaction properties…	Schwärzungseigenschaften…
@@ -1662,6 +1694,7 @@ animation effects	On	Ein
 	Run form script	Formularskript ausführen
 	Run JavaScript	JavaScript ausführen
 	Running action… file {d} of {t}	Aktion läuft… Datei {d} von {t}
+	Runtime	Laufzeit
 	Same as interface ({language})	Wie die Oberfläche ({language})
 	Sanitize	Bereinigen
 	Sanitize document	Dokument bereinigen
@@ -1682,6 +1715,7 @@ animation effects	On	Ein
 	Save changes to “{name}” before closing?	Änderungen an „{name}“ vor dem Schließen speichern?
 	Save image	Bild speichern
 	Save Image As…	Bild speichern unter…
+	Save model file	Modelldatei speichern
 	Save or revert changes before selecting another tag.	Speichere oder verwerfe die Änderungen, bevor du ein anderes Tag auswählst.
 	Save over the changed file?	Die geänderte Datei überschreiben?
 	Save pages	Seiten speichern
@@ -1691,6 +1725,7 @@ animation effects	On	Ein
 	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	Speichere das Dokument anschließend. Beim Speichern wird die gesamte Datei neu geschrieben, sodass nichts Entferntes darin verbleibt.
 	Save the spreadsheet	Tabelle speichern
 	Save these pages as one PDF	Diese Seiten als ein PDF speichern
+	Saved in the shared folder	Im gemeinsamen Ordner gespeichert
 	Saved measurements	Gespeicherte Messungen
 	Saved measurements.	Messungen gespeichert.
 	Saved the print-ready PDF to {path}	Druckfertiges PDF unter {path} gespeichert
@@ -1698,6 +1733,7 @@ animation effects	On	Ein
 	Saved {place}: {before} → {after} (not smaller){detail}	{place} gespeichert: {before} → {after} (nicht kleiner){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	{place} gespeichert: {before} → {after} ({pct} % kleiner){detail}
 	Saved, but reopening failed: {e}	Gespeichert, aber erneutes Öffnen fehlgeschlagen: {e}
+	Saving… {pct}%	Wird gespeichert… {pct} %
 	Scale	Maßstab
 	Scale relative to target page	Relativ zur Zielseite skalieren
 	Scan	Scannen
@@ -1936,6 +1972,7 @@ certificate	Subject	Zertifikatsinhaber
 	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	Tags geben dem Dokument eine logische Struktur, der Hilfstechnologien folgen. Tagge das Dokument (PDF automatisch taggen).
 	Tags panel	Tags-Bereich
 	Take a snapshot	Schnappschuss erstellen
+	Task	Aufgabe
 	Text (plain)	Text (unformatiert)
 	Text alignment:	Textausrichtung:
 	Text box	Textbox
@@ -1994,6 +2031,7 @@ certificate	Subject	Zertifikatsinhaber
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Die Schriften, mit denen PdfCraft schreibt, können „{c}“ ({code}) nicht darstellen, daher erscheint es in jedem PDF-Viewer als ?. Der Text ist gespeichert.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Das Formular soll an {u} gesendet werden; PdfCraft sendet keine Formulardaten. Speichere das Dokument, um deine Eingaben zu behalten.
 	The form asks viewers to make appearances (NeedAppearances)	Das Formular fordert Anzeigeprogramme auf, Darstellungen zu erzeugen (NeedAppearances)
+	The form's purpose and its fields (names, types, tab order)	Zweck des Formulars und seine Felder (Namen, Typen, Tabulatorreihenfolge)
 	The image has been copied ({w} × {h} pixels)	Das Bild wurde kopiert ({w} × {h} Pixel)
 	The image has been copied as a {ext} file	Das Bild wurde als {ext}-Datei kopiert
 	the image is empty	das Bild ist leer
@@ -2019,8 +2057,10 @@ certificate	Subject	Zertifikatsinhaber
 	The same password is tried on each file.	Dasselbe Passwort wird bei jeder Datei versucht.
 	The selected area has been copied ({w} × {h} pixels)	Der ausgewählte Bereich wurde kopiert ({w} × {h} Pixel)
 	The selected fields could not be found. Select them again.	Die ausgewählten Felder wurden nicht gefunden. Wähle sie erneut aus.
+	The shared folder:	Der gemeinsame Ordner:
 	The signature will be invisible.	Die Signatur wird unsichtbar sein.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Die Standardschriften können „{c}“ ({code}) nicht darstellen. Derzeit lassen sich nur westeuropäische Zeichen als Text hinzufügen.
+	The standard it must meet and where the file goes	Der Standard, den es erfüllen muss, und wohin die Datei geht
 	The text is the same	Der Text ist identisch
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	die Modelle für die Texterkennung sind nicht installiert (installiere PdfCraft neu oder setze PDFCRAFT_MODELS auf den Ordner, der sie enthält)
 	The title in the metadata and the document information differ	Der Titel in den Metadaten und in den Dokumentinformationen weicht voneinander ab
@@ -2037,6 +2077,7 @@ certificate	Subject	Zertifikatsinhaber
 	These objects could not be moved. Select them again and try a smaller move.	Diese Objekte konnten nicht verschoben werden. Wählen Sie sie erneut aus und versuchen Sie eine kleinere Verschiebung.
 	Thick	Dick
 	Thin	Dünn
+	Thinking… {s}s	Denkt nach… {s} s
 	This area has too many overlapping paths; intersection snapping is limited.	Dieser Bereich hat zu viele überlappende Pfade; das Einrasten an Schnittpunkten ist eingeschränkt.
 	This certificate is in your list of trusted certificates.	Dieses Zertifikat steht in deiner Liste vertrauenswürdiger Zertifikate.
 	This certificate is not trusted. Signatures made with it show an unknown identity.	Diesem Zertifikat wird nicht vertraut. Damit erstellte Signaturen zeigen eine unbekannte Identität.
@@ -2078,6 +2119,7 @@ certificate	Subject	Zertifikatsinhaber
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Die Skripte dieses Formulars sind ausgeschaltet, weil eines zu lange lief. Öffne das Dokument erneut, um sie wieder auszuführen.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Dies ist ein dynamisches XFA-Formular, das PdfCraft noch nicht anzeigen kann. Du siehst die Platzhalterseite der Datei.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Dies ist der letzte Versuch, bevor die PIN des Tokens gesperrt wird. Eine falsche PIN kann es hier dauerhaft sperren.
+	This machine: {ram} GB RAM, {disk} GB free	Dieser Rechner: {ram} GB RAM, {disk} GB frei
 	This measurement needs at least {n} points.	Diese Messung braucht mindestens {n} Punkte.
 	This page contains objects that cannot be selected together.	Diese Seite enthält Objekte, die nicht gemeinsam ausgewählt werden können.
 	This page couldn't be displayed.\n{e}	Diese Seite konnte nicht angezeigt werden.\n{e}
@@ -2200,8 +2242,11 @@ signature pad	Type	Tippen
 	watermark	Wasserzeichen
 	Weak	Schwach
 	Welcome to PdfCraft	Willkommen bei PdfCraft
+	What must go, and what the document is	Was geschwärzt werden muss und um welches Dokument es geht
 	What takes up the space in this file, by kind of content.	Wofür der Platz in dieser Datei verwendet wird, nach Art des Inhalts.
 	What word or phrase would you like to search for?	Nach welchem Wort oder Ausdruck möchtest du suchen?
+	What you want to end up with (order, extract, split, combine)	Was am Ende herauskommen soll (Reihenfolge, extrahieren, teilen, zusammenführen)
+	Where the file is going and what matters (size, quality, compatibility)	Wohin die Datei geht und was zählt (Größe, Qualität, Kompatibilität)
 	White on black	Weiß auf schwarz
 	Whole words only	Nur ganze Wörter
 	Window Options	Fensteroptionen

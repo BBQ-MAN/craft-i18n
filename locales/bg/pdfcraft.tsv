@@ -49,6 +49,7 @@
 	A document needs at least one page: copy instead	Документът трябва да има поне една страница: използвайте копиране
 	a field named {name} already exists	вече съществува поле с име {name}
 	A form field has additional actions	Поле на формуляр има допълнителни действия
+	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локалният модел не е водещ облачен модел: може да греши, а дълъг отговор отнема време на процесор. Проверявайте важното и съобразявайте размера на модела с тази машина, преди да го изтеглите.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Изображение покрива страница {pages} (сканиране?), затова фонът няма да се вижда там.
 	A selected field has no widget on any page, so the fields can't be edited together.	Едно от избраните полета няма елемент на нито една страница, затова полетата не могат да се редактират заедно.
 	A stream refers to an external file	Поток препраща към външен файл
@@ -228,9 +229,13 @@
 	Archive documents	Архивирай документи
 	Area	Площ
 	Arrange image	Подреждане на изображението
+	Ask	Попитай
 	Ask about this document	Попитай за този документ
+	Ask anything	Попитайте каквото искате
+	Ask in any language	Попитайте на всеки език
 	Ask to scan more pages	Питане за сканиране на още страници
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Запитва GitHub за най-новото издание. Нищо не се изтегля и не се инсталира автоматично.
+	Assistant	Асистент
 	Associated with content	Свързан със съдържание
 	At least one signature has problems.	Поне един подпис има проблеми.
 	At least one signature is invalid.	Поне един подпис е невалиден.
@@ -261,6 +266,11 @@
 	Bates numbering	Номериране на Бейтс
 	Before each selected page (select pages in Organize)	Преди всяка избрана страница (изберете страници в Организиране)
 	Before the number	Пред числото
+	Best for: a step up in quality, still light	Най-подходящ за: крачка нагоре в качеството, пак лек
+	Best for: balanced everyday and technical work	Най-подходящ за: балансирана всекидневна и техническа работа
+	Best for: everyday help on the lightest machines	Най-подходящ за: ежедневна помощ на най-леките машини
+	Best for: near-flagship answers at MoE speed	Най-подходящ за: почти водещи отговори със скоростта на MoE
+	Best for: the deepest reasoning this family has	Най-подходящ за: най-дълбокото разсъждение в семейството
 	Beveled	Скосена
 	Bicubic downsampling to	Бикубично понижаване на резолюцията до
 	Binding	Подвързване
@@ -443,6 +453,7 @@
 	Compare this file with an older version: Compare files… in All tools.	Сравнете този файл с по-стара версия: „Сравни файлове…“ във „Всички инструменти“.
 	Completed	Завършено
 	Compress a PDF	Компресирай PDF
+	Compress and export	Компресиране и експортиране
 	Compress document structure (object streams)	Компресирай структурата на документа (потоци от обекти)
 	Configure a Digital ID for Signing	Конфигуриране на цифров идентификатор за подписване
 	Configure New Digital ID	Конфигурирай нов цифров идентификатор
@@ -502,6 +513,9 @@
 	Counterclockwise 90 degrees	Обратно на часовниковата стрелка на 90 градуса
 	Counting words… {n} pages read	Преброяване на думи… прочетени страници: {n}
 	Country/Region	Държава/регион
+	Craft AI runs a local Gemma model on this machine. Nothing you write here leaves it: no account, no cloud service, no telemetry — the panel talks to a model runtime on 127.0.0.1.	Craft AI изпълнява локален Gemma модел на тази машина. Нищо, което напишете тук, не я напуска: без регистрация, без облак, без телеметрия — панелът говори с моделен рантайм на 127.0.0.1.
+	Craft AI runs in the native app — it needs a local model runtime.	Craft AI работи в настолното приложение — има нужда от локален моделен рантайм.
+	Craft AI talks to a model runtime on this machine — Ollama, LM Studio or llama.cpp's server — and never to a cloud service. Start one, then Refresh.	Craft AI говори с моделен рантайм на тази машина — Ollama, LM Studio или сървъра на llama.cpp — и никога с облачна услуга. Стартирайте един и опреснете.
 	Create	Създай
 	Create & Edit	Създаване и редактиране
 	Create a new Digital ID (self-signed, saved to a password-protected file)	Създай нов цифров идентификатор (самоподписан, записан във файл, защитен с парола)
@@ -589,6 +603,7 @@ key	Delete	Delete
 	Delete content	Изтрий съдържанието
 	Delete document JavaScript	Изтрий JavaScript на документа
 	Delete field	Изтрий полето
+	Delete file	Изтрий файла
 	Delete image	Изтрий изображението
 	Delete link	Изтрий връзката
 	Delete page	Изтрий страницата
@@ -630,6 +645,7 @@ key	Delete	Delete
 	Discard private data of other applications	Премахни частните данни на други приложения
 	Discard this text (Esc)	Отхвърли този текст (Esc)
 	Discard User Data	Премахване на потребителски данни
+	Disk {size}	Диск {size}
 	Display theme	Тема на показване
 	Distinguished name	Отличително име
 	Distribute	Разпредели
@@ -661,9 +677,11 @@ key	Delete	Delete
 	Done adding text	Готово с добавянето на текст
 	Double-click	Двукратно щракване
 	Download	Изтегли
+	Download with Ollama	Изтегли с Ollama
 	Downloaded {name}	Изтеглен: {name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	Изтеглен е {n} PDF|Изтеглени са {n} PDF файла
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Изтеглянето на прикачени файлове в уеб версията ще стане достъпно с M3.10 ({n} байта готови)
+	Downloading… {pct}% — {note}	Изтегляне… {pct}% — {note}
 	Downsample to	Намали разделителната способност до
 	DPI sets the printed page size without resampling the image.	DPI определя размера на отпечатаната страница без преизчисляване на изображението.
 	Drag a field to move it, or select it and press {up} or {down}.	Плъзнете поле, за да го преместите, или го изберете и натиснете {up} или {down}.
@@ -885,6 +903,7 @@ scroll speed	Fast	Висока
 	Fit Visible	Побери видимото
 	Fit visible	Побери видимото
 	Fit Width	Побери по ширина
+	Fits this machine	Подхожда на тази машина
 	Fix	Поправи
 	Fix hairlines	Поправи тънките линии
 	Fix order	Поправяне на реда
@@ -913,6 +932,7 @@ scroll speed	Fast	Висока
 	for images above	за изображения над
 	For page sizes and margins.	За размери на страници и полета.
 	Form data and PDF forms	Данни от формуляри и PDF формуляри
+	Form field advice	Съвети за полетата на формуляра
 	Form fields	Полета на формуляр
 	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	Полетата на формуляри се сплескват: стойностите им остават видими. Записването презаписва целия файл.
 	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	Полетата на формуляри трябва да са в дървото на етикетите (етикети Form), за да бъдат обявявани. Етикетирайте полетата на формуляра.
@@ -1078,6 +1098,7 @@ key	Home	Home
 	Light blue	Светлосиньо
 	Light theme	Светла тема
 	Limit of	Ограничение от
+	Limits	Ограничения
 	Line ending	Край на линията
 	Line Style:	Стил на линията:
 	Line thickness	Дебелина на линията
@@ -1098,11 +1119,13 @@ key	Home	Home
 	Lists	Списъци
 	Load document font	Зареждане на шрифт на документа
 	Load font…	Зареждане на шрифт…
+	Local and private	Локално и поверително
 	Local cross-PDF links require the desktop app	Локалните връзки между PDF файлове изискват настолното приложение
 	Location: 	Местоположение: 
 	Lock comment	Заключи коментара
 	Locked	Заключено
 	Logical Reading Order	Логически ред на четене
+	Looking for a local model runtime…	Търсене на локален моделен рантайм…
 	Looking for PDFs…	Търсене на PDF файлове…
 	Looking for printers…	Търсене на принтери…
 	Loop	Цикъл
@@ -1202,6 +1225,8 @@ key	Home	Home
 	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Изисква инсталиран модул, например OpenSC или p11-kit. Ако токенът има собствена ПИН клавиатура, тя се използва.
 	needs an AI provider (off by default)	изисква доставчик на ИИ (изключено по подразбиране)
 	Needs manual check	Нужна е ръчна проверка
+	Needs {disk} GB of disk	Изисква {disk} GB диск
+	Needs {ram} GB of RAM	Изисква {ram} GB памет
 	Negative number style:	Стил на отрицателните числа:
 	Nested alternate text	Вложен алтернативен текст
 	Network	Мрежа
@@ -1247,9 +1272,11 @@ key	Home	Home
 	No inaccessible scripts	Няма недостъпни скриптове
 	No issues found	Не са открити проблеми
 	No links to remove	Няма връзки за премахване
+	No local model runtime found.	Не е намерен локален моделен рантайм.
 	No matches	Няма съвпадения
 	No matching tools	Няма съответстващи инструменти
 	No model credits were built into this copy.	В това копие няма вградени данни за моделите.
+	No model installed yet — see the Models tab.	Все още няма инсталиран модел — вижте раздела „Модели“.
 	No openly licensed document fonts found. Load a font file.	Не са открити шрифтове с отворен лиценз. Заредете файл с шрифт.
 	No order can fix a loop. Change one of the formulas.	Никой ред не може да поправи цикъл. Променете някоя от формулите.
 	no output folder was chosen	не е избрана папка за изхода
@@ -1311,6 +1338,7 @@ animation effects	On	Включени
 	On Focus	При фокусиране
 	on page {label}	на страница {label}
 	On the web, open or drop an image to convert it	В уеб версията отворете или пуснете изображение, за да го конвертирате
+	One download serves every ArtCraft app: the model lands in a shared folder all of them read.	Едно изтегляне служи на всяко ArtCraft приложение: моделът попада в споделена папка, която всички четат.
 	One word or phrase per line	По една дума или фраза на ред
 	One {f} file per page, named after the document.	По един {f} файл на страница, именуван по документа.
 	Only allow this if you trust the source document.	Разрешете това само ако имате доверие на изходния документ.
@@ -1363,6 +1391,7 @@ animation effects	On	Включени
 	Organization Name	Име на организацията
 	Organizational Unit	Организационна единица
 	Organize pages	Организиране на страници
+	Organize pages plan	План за подреждане на страниците
 	Original: replace pages	Оригинал: замени страниците
 	Other colour…	Друг цвят…
 	Other elements alternate text	Алтернативен текст на други елементи
@@ -1442,6 +1471,7 @@ animation effects	On	Включени
 	PDF scale: {scale}%	Мащаб на PDF: {scale}%
 	PDF version	Версия на PDF
 	PDF, images and text	PDF, изображения и текст
+	PDF/A and standards advice	Съвети за PDF/A и стандартите
 	PDF/A…	PDF/A…
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft не беше затворен нормално. Тези документи имат автоматично записани промени:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft рисува без графичен процесор, затова може да е бавен. Обновяването на графичния драйвер може да помогне.
@@ -1537,6 +1567,7 @@ animation effects	On	Включени
 	Radio	Радиобутон
 	Radio button	Радиобутон
 	Radio Button Properties	Свойства на радиобутон
+	RAM {gb} GB	Памет {gb} GB
 	Re-type Password	Повторете паролата
 	Read	Четене
 	Read mode	Режим на четене
@@ -1573,6 +1604,7 @@ animation effects	On	Включени
 	Redact pages…	Заличи страници…
 	Redact text and images	Заличи текст и изображения
 	Redacted area fill colour:	Цвят на запълване на заличената област:
+	Redaction checklist	Списък за изчистване
 	Redaction code:	Код за заличаване:
 	Redaction mark appearance	Вид на маркировката за заличаване
 	Redaction properties…	Свойства на заличаването…
@@ -1582,6 +1614,7 @@ animation effects	On	Включени
 	Redo {action}	Повтори {action}
 	Reduce file size	Намали размера на файла
 	Reduce file size…	Намали размера на файла…
+	Refresh	Опресни
 	Regularity	Регулярност
 	Rejected	Отхвърлено
 	Reliable character encoding is provided	Осигурено е надеждно кодиране на знаците
@@ -1701,6 +1734,7 @@ animation effects	On	Включени
 	Run a JavaScript	Изпълни JavaScript
 	Run JavaScript	Изпълни JavaScript
 	Running action… file {d} of {t}	Изпълнение на действие… файл {d} от {t}
+	Runtime	Рантайм
 	Same as interface ({language})	Като интерфейса ({language})
 	Sanitize	Почисти
 	Sanitize document	Почисти документа
@@ -1722,6 +1756,7 @@ animation effects	On	Включени
 	Save changes to “{name}” before closing?	Да се запишат ли промените в „{name}“ преди затваряне?
 	Save image	Запиши изображението
 	Save Image As…	Запиши изображението като…
+	Save model file	Запази файла на модела
 	Save or revert changes before selecting another tag.	Запазете или отменете промените, преди да изберете друг таг.
 	Save over the changed file?	Да се запише ли върху променения файл?
 	Save pages	Запиши страниците
@@ -1731,6 +1766,7 @@ animation effects	On	Включени
 	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	След това запишете документа; записването презаписва целия файл, така че в него да не остане нищо от премахнатото.
 	Save the spreadsheet	Запиши електронната таблица
 	Save these pages as one PDF	Запиши тези страници като един PDF файл
+	Saved in the shared folder	Запазен в споделената папка
 	Saved measurements	Запазени измервания
 	Saved measurements.	Измерванията са запазени.
 	Saved the print-ready PDF to {path}	Готовият за печат PDF е записан в {path}
@@ -1738,6 +1774,7 @@ animation effects	On	Включени
 	Saved {place}: {before} → {after} (not smaller){detail}	Записано {place}: {before} → {after} (не е по-малко){detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	Записано {place}: {before} → {after} (с {pct}% по-малко){detail}
 	Saved, but reopening failed: {e}	Записано, но повторното отваряне не бе успешно: {e}
+	Saving… {pct}%	Запазване… {pct}%
 	Scale	Мащаб
 	Scale relative to target page	Мащабирай спрямо целевата страница
 	Scan	Сканиране
@@ -1977,6 +2014,7 @@ action wizard	Start	Старт
 	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	Етикетите придават на документа логическа структура, която помощните технологии следват. Етикетирайте документа („Автоматично етикетиране на PDF“).
 	Tags panel	Панел с тагове
 	Take a snapshot	Направи моментна снимка
+	Task	Задача
 	Text (plain)	Текст (обикновен)
 	Text alignment:	Подравняване на текста:
 	Text box	Текстово поле
@@ -2032,6 +2070,7 @@ action wizard	Start	Старт
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Шрифтовете, с които PdfCraft пише, не могат да покажат „{c}“ ({code}), затова във всяка програма за PDF то се показва като ?. Текстът е запазен.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Формулярът изисква да бъде изпратен до {u}; PdfCraft не изпраща данни от формуляри. Запишете документа, за да запазите въведеното.
 	The form asks viewers to make appearances (NeedAppearances)	Формулярът изисква от програмите за преглед да генерират изгледите на полетата (NeedAppearances)
+	The form's purpose and its fields (names, types, tab order)	Предназначението на формуляра и полетата му (имена, типове, ред на табулация)
 	The image has been copied ({w} × {h} pixels)	Изображението е копирано ({w} × {h} пиксела)
 	The image has been copied as a {ext} file	Изображението е копирано като файл {ext}
 	the image is empty	изображението е празно
@@ -2056,8 +2095,10 @@ action wizard	Start	Старт
 	The same password is tried on each file.	Една и съща парола се опитва за всеки файл.
 	The selected area has been copied ({w} × {h} pixels)	Избраната област е копирана ({w} × {h} пиксела)
 	The selected fields could not be found. Select them again.	Избраните полета не бяха намерени. Изберете ги отново.
+	The shared folder:	Споделената папка:
 	The signature will be invisible.	Подписът ще бъде невидим.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Стандартните шрифтове не могат да покажат „{c}“ ({code}). Засега като текст могат да се добавят само западноевропейски символи.
+	The standard it must meet and where the file goes	Стандартът, който трябва да покрие, и накъде отива файлът
 	The text is the same	Текстът е същият
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	моделите за разпознаване на текст не са инсталирани (инсталирайте PdfCraft отново или задайте в PDFCRAFT_MODELS папката, която ги съдържа)
 	The title in the metadata and the document information differ	Заглавието в метаданните и в информацията за документа се различават
@@ -2073,6 +2114,7 @@ action wizard	Start	Старт
 	These objects could not be moved. Select them again and try a smaller move.	Тези обекти не можаха да бъдат преместени. Изберете ги отново и опитайте по-малко отместване.
 	Thick	Дебела
 	Thin	Тънка
+	Thinking… {s}s	Мисли… {s}сек
 	This area has too many overlapping paths; intersection snapping is limited.	Тази област има твърде много припокриващи се контури; прилепването към пресечни точки е ограничено.
 	This certificate is in your list of trusted certificates.	Този сертификат е в списъка ви с надеждни сертификати.
 	This certificate is not trusted. Signatures made with it show an unknown identity.	Този сертификат не е надежден. Подписите, направени с него, показват неизвестна самоличност.
@@ -2114,6 +2156,7 @@ action wizard	Start	Старт
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Скриптовете на този формуляр са изключени, защото един от тях се изпълняваше твърде дълго. Отворете документа отново, за да се изпълнят пак.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Това е динамичен XFA формуляр, който PdfCraft все още не може да показва. Виждате заместващата страница на файла.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Това е последният опит преди заключване на ПИН кода на токена. Грешен ПИН тук може да го заключи окончателно.
+	This machine: {ram} GB RAM, {disk} GB free	Тази машина: {ram} GB памет, {disk} GB свободни
 	This measurement needs at least {n} points.	Това измерване изисква поне {n} точки.
 	This page contains objects that cannot be selected together.	Тази страница съдържа обекти, които не могат да се изберат заедно.
 	This page couldn't be displayed.\n{e}	Тази страница не може да бъде показана.\n{e}
@@ -2240,8 +2283,11 @@ signature pad	Type	Въвеждане
 	watermark	воден знак
 	Weak	Слаба
 	Welcome to PdfCraft	Добре дошли в PdfCraft
+	What must go, and what the document is	Какво трябва да изчезне и какъв е документът
 	What takes up the space in this file, by kind of content.	Какво заема мястото в този файл, по вид съдържание.
 	What word or phrase would you like to search for?	Каква дума или фраза искате да търсите?
+	What you want to end up with (order, extract, split, combine)	Какъв искате краен резултат (ред, извличане, разделяне, обединяване)
+	Where the file is going and what matters (size, quality, compatibility)	Накъде отива файлът и какво има значение (размер, качество, съвместимост)
 	White on black	Бяло на черно
 	Whole words only	Само цели думи
 	Window Options	Опции на прозореца

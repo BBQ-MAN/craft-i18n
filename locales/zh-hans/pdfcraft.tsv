@@ -51,6 +51,7 @@
 	A document needs at least one page: copy instead	文档至少需要保留一页，请改用复制
 	a field named {name} already exists	已存在名为 {name} 的字段
 	A form field has additional actions	表单字段包含附加动作
+	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	本地模型不是最先进的云端模型：它可能出错，较长的回答在处理器上需要时间。重要事项请务必核实，下载前也请留意模型大小与这台机器是否匹配。
 	A picture covers page {pages} (a scan?), so the background won't show there.	第 {pages} 页被一张图片覆盖（扫描件？），因此那里不会显示背景。
 	A selected field has no widget on any page, so the fields can't be edited together.	某个所选字段在任何页面上都没有控件，因此无法一起编辑这些字段。
 	A stream refers to an external file	数据流引用了外部文件
@@ -234,9 +235,13 @@
 	Area units	面积单位
 	Arrange image	排列图像
 	ArtCraft website	ArtCraft 官网
+	Ask	询问
 	Ask about this document	询问本文档
+	Ask anything	什么都可以问
+	Ask in any language	可以用任何语言提问
 	Ask to scan more pages	询问是否继续扫描更多页面
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	向 GitHub 查询最新版本。不会自动下载或安装任何内容。
+	Assistant	助手
 	Associated with content	与内容关联
 	At least one signature has problems.	至少一个签名存在问题。
 	At least one signature is invalid.	至少一个签名无效。
@@ -269,6 +274,11 @@
 	Bates numbering	贝茨编号
 	Before each selected page (select pages in Organize)	在每个选定页面之前拆分（在组织页面中选择）
 	Before the number	在数字之前
+	Best for: a step up in quality, still light	最适合：品质再上一阶，依然轻巧
+	Best for: balanced everyday and technical work	最适合：日常与技术工作并重
+	Best for: everyday help on the lightest machines	最适合：在最轻量的机器上处理日常事务
+	Best for: near-flagship answers at MoE speed	最适合：以 MoE 速度给出接近旗舰级的回答
+	Best for: the deepest reasoning this family has	最适合：这个系列中最深入的推理
 	Beveled	斜面
 	Bicubic downsampling to	双三次降采样至
 	Binding	装订
@@ -463,6 +473,7 @@
 	Compare this file with an older version: Compare files… in All tools.	将此文件与旧版本比较：在所有工具中使用“比较文件…”。
 	Completed	已完成
 	Compress a PDF	压缩 PDF
+	Compress and export	压缩与导出
 	Compress document structure (object streams)	压缩文档结构（对象流）
 	Configure a Digital ID for Signing	配置用于签名的数字 ID
 	Configure New Digital ID	配置新数字 ID
@@ -524,6 +535,9 @@
 	Counterclockwise 90 degrees	逆时针 90 度
 	Counting words… {n} pages read	正在统计字词… 已读取{n}页
 	Country/Region	国家/地区
+	Craft AI runs a local Gemma model on this machine. Nothing you write here leaves it: no account, no cloud service, no telemetry — the panel talks to a model runtime on 127.0.0.1.	Craft AI 在这台机器上运行本地 Gemma 模型。你在这里写的任何内容都不会离开这台机器：没有账户、没有云端服务、没有遥测 — 面板只与 127.0.0.1 上的模型运行环境通信。
+	Craft AI runs in the native app — it needs a local model runtime.	Craft AI 在原生应用中运行 — 需要本地模型运行环境。
+	Craft AI talks to a model runtime on this machine — Ollama, LM Studio or llama.cpp's server — and never to a cloud service. Start one, then Refresh.	Craft AI 只与这台机器上的模型运行环境通信 — Ollama、LM Studio 或 llama.cpp 的服务器 — 绝不与云端服务通信。启动其中一个后点击“刷新”。
 	Create & Edit	创建和编辑
 	Create a new Digital ID (self-signed, saved to a password-protected file)	创建新数字 ID（自签名，保存到受密码保护的文件）
 	Create a PDF	创建 PDF
@@ -608,6 +622,7 @@ key	Delete	Delete
 	Delete content	删除内容
 	Delete document JavaScript	删除文档 JavaScript
 	Delete field	删除字段
+	Delete file	删除文件
 	Delete image	删除图像
 	Delete link	删除链接
 	Delete measurement	删除测量
@@ -651,6 +666,7 @@ key	Delete	Delete
 	Discard private data of other applications	丢弃其他应用程序的私有数据
 	Discard this text (Esc)	放弃此文本 (Esc)
 	Discard User Data	丢弃用户数据
+	Disk {size}	磁盘 {size}
 	Display theme	显示主题
 	Distance unit	距离单位
 	Distance units	距离单位
@@ -682,9 +698,11 @@ key	Delete	Delete
 	Don't show again	不再显示
 	Done adding text	完成添加文本
 	Double-click also finishes a perimeter or area.	双击也可完成周长或面积测量。
+	Download with Ollama	用 Ollama 下载
 	Downloaded {name}	已下载{name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	已下载 {n} 个 PDF
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web 端附件下载将于 M3.10 到来（{n} 字节已就绪）
+	Downloading… {pct}% — {note}	下载中… {pct}% — {note}
 	Downsample to	降采样至
 	DPI sets the printed page size without resampling the image.	DPI 用于设置打印页面尺寸，不会对图像重新采样。
 	Drag a field to move it, or select it and press {up} or {down}.	拖动字段以移动它，或选中它后按 {up} 或 {down}。
@@ -917,6 +935,7 @@ scroll speed	Fast	快
 	Fit Visible	适合可见区域
 	Fit visible	适合可见区域
 	Fit Width	适合宽度
+	Fits this machine	适合这台机器
 	Fix	修复
 	Fix hairlines	修复细线
 	Fix order	修正顺序
@@ -943,6 +962,7 @@ scroll speed	Fast	快
 	for images above	（高于此分辨率的图像）
 	For page sizes and margins.	用于页面尺寸和边距。
 	Form data and PDF forms	表单数据和 PDF 表单
+	Form field advice	表单字段建议
 	Form fields	表单域
 	Form fields are flattened: their values stay visible. Saving rewrites the whole file.	表单域将被拼合：其值保持可见。保存将重写整个文件。
 	Form fields must be in the tag tree (Form tags) to be announced. Tag the form fields.	表单域必须位于标记树（表单标记）中才能被播报。请标记表单域。
@@ -1114,6 +1134,7 @@ key	Home	Home
 	Light blue	浅蓝色
 	Light theme	浅色主题
 	Limit of	限制为
+	Limits	局限
 	Line delta	净增行数
 	Line ending	线条端点
 	Line Style:	线条样式：
@@ -1135,11 +1156,13 @@ key	Home	Home
 	Lists	列表
 	Load document font	加载文档字体
 	Load font…	加载字体…
+	Local and private	本地且私有
 	Local cross-PDF links require the desktop app	PDF 之间的本地链接需要桌面应用
 	Location: 	位置：
 	Lock comment	锁定注释
 	Logical Reading Order	逻辑阅读顺序
 	Longitude	经度
+	Looking for a local model runtime…	正在寻找本地模型运行环境…
 	Looking for PDFs…	正在查找 PDF…
 	Looking for printers…	正在查找打印机…
 	Loop	循环
@@ -1254,6 +1277,8 @@ key	Home	Home
 	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	需要安装 OpenSC 或 p11-kit 等模块。如果令牌自带 PIN 键盘,将使用该键盘。
 	needs an AI provider (off by default)	需要 AI 服务商（默认关闭）
 	Needs manual check	需人工检查
+	Needs {disk} GB of disk	需要 {disk} GB 磁盘
+	Needs {ram} GB of RAM	需要 {ram} GB 内存
 	Negative number style:	负数样式：
 	Nested alternate text	嵌套替代文本
 	Network	网络
@@ -1301,10 +1326,12 @@ key	Home	Home
 	No inaccessible scripts	没有无障碍脚本
 	No issues found	未发现问题
 	No links to remove	没有可删除的链接
+	No local model runtime found.	找不到本地模型运行环境。
 	No matches	无匹配
 	No matches.	无匹配。
 	No matching tools	没有匹配的工具
 	No model credits were built into this copy.	此版本未包含模型贡献记录。
+	No model installed yet — see the Models tab.	尚未安装模型 — 见“模型”标签页。
 	No openly licensed document fonts found. Load a font file.	未找到采用开放许可证的字体。请加载字体文件。
 	No order can fix a loop. Change one of the formulas.	任何顺序都无法修复循环。请修改其中一个公式。
 	no output folder was chosen	未选择输出文件夹
@@ -1369,6 +1396,7 @@ animation effects	On	开
 	On Focus	获得焦点
 	on page {label}	第 {label} 页
 	On the web, open or drop an image to convert it	在 Web 端，打开或拖入图像进行转换
+	One download serves every ArtCraft app: the model lands in a shared folder all of them read.	下载一次即可供所有 ArtCraft 应用使用：模型放在所有应用共同读取的共享文件夹。
 	One word or phrase per line	每行一个单词或短语
 	One {f} file per page, named after the document.	每页一个 {f} 文件，以文档命名。
 	Only allow this if you trust the source document.	仅在您信任源文档时才允许此操作。
@@ -1420,6 +1448,7 @@ animation effects	On	开
 	Organization Name	组织名称
 	Organizational Unit	组织单位
 	Organize pages	组织页面
+	Organize pages plan	页面整理方案
 	Original: replace pages	原文档：替换页面
 	Other colour…	其他颜色…
 	Other elements alternate text	其他元素替代文本
@@ -1497,6 +1526,7 @@ animation effects	On	开
 	PDF scale: {scale}%	PDF 缩放：{scale}%
 	PDF version	PDF 版本
 	PDF, images and text	PDF、图像和文本
+	PDF/A and standards advice	PDF/A 与标准建议
 	PDF/A…	PDF/A…
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft 未正常关闭。以下文档的更改已自动保存：
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft 正在不使用图形处理器的情况下绘制，因此可能较慢。更新显卡驱动程序可能会有帮助。
@@ -1597,6 +1627,7 @@ animation effects	On	开
 	Radio button	单选按钮
 	Radio Button Properties	单选按钮属性
 	Radius / diameter	半径／直径
+	RAM {gb} GB	内存 {gb} GB
 	Re-type Password	重新输入密码
 	Read	阅读
 	Read mode	阅读模式
@@ -1633,6 +1664,7 @@ animation effects	On	开
 	Redact pages…	密文页面…
 	Redact text and images	密文文本和图像
 	Redacted area fill colour:	密文区域填充颜色：
+	Redaction checklist	密文遮盖清单
 	Redaction code:	密文代码：
 	Redaction mark appearance	涂黑标记外观
 	Redaction properties…	密文属性…
@@ -1767,6 +1799,7 @@ animation effects	On	开
 	Run a JavaScript	运行 JavaScript
 	Run JavaScript	运行 JavaScript
 	Running action… file {d} of {t}	正在运行操作…第{d}个文件，共{t}个
+	Runtime	运行环境
 	Same as interface ({language})	与界面相同（{language}）
 	Sanitize	清理
 	Sanitize document	清理文档
@@ -1788,6 +1821,7 @@ animation effects	On	开
 	Save image	保存图像
 	Save Image As…	图像另存为…
 	Save measurement	保存测量
+	Save model file	保存模型文件
 	Save or revert changes before selecting another tag.	选择其他标签前，请保存或撤销更改。
 	Save over the changed file?	覆盖已更改的文件？
 	Save pages	保存页面
@@ -1797,6 +1831,7 @@ animation effects	On	开
 	Save the document afterwards; saving rewrites the whole file so nothing removed stays in it.	之后请保存文档；保存将重写整个文件，使删除的内容不残留。
 	Save the spreadsheet	保存电子表格
 	Save these pages as one PDF	将这些页面保存为一个 PDF
+	Saved in the shared folder	已存入共享文件夹
 	Saved measurements	已保存的测量
 	Saved measurements keep their original scale.	已保存的测量保留原有比例。
 	Saved measurements.	已保存测量结果。
@@ -1805,6 +1840,7 @@ animation effects	On	开
 	Saved {place}: {before} → {after} (not smaller){detail}	已保存{place}：{before} → {after}（未缩小）{detail}
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	已保存{place}：{before} → {after}（缩小了{pct}%）{detail}
 	Saved, but reopening failed: {e}	已保存，但重新打开失败：{e}
+	Saving… {pct}%	保存中… {pct}%
 	Scale	比例
 	Scale description	比例说明
 	Scale relative to target page	相对于目标页面的缩放
@@ -2052,6 +2088,7 @@ key	Space	空格
 	Tags give the document a logical structure that assistive technology follows. Tag the document (Automatically tag PDF).	标记为文档提供辅助技术遵循的逻辑结构。请标记文档（自动标记 PDF）。
 	Tags panel	标签面板
 	Take a snapshot	拍摄快照
+	Task	任务
 	Text (plain)	纯文本
 	Text alignment:	文本对齐：
 	Text box	文本框
@@ -2109,6 +2146,7 @@ key	Space	空格
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraft 写入时使用的字体无法显示“{c}”（{code}），因此它在所有 PDF 阅读器中都会显示为 ?。文本已保存。
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	该表单请求提交到{u}；PdfCraft 不发送表单数据。请保存文档以保留填写内容。
 	The form asks viewers to make appearances (NeedAppearances)	表单要求阅读器生成外观（NeedAppearances）
+	The form's purpose and its fields (names, types, tab order)	表单的用途及其字段（名称、类型、Tab 顺序）
 	The image has been copied ({w} × {h} pixels)	图像已复制（{w} × {h} 像素）
 	The image has been copied as a {ext} file	图像已复制为 {ext} 文件
 	the image is empty	图像为空
@@ -2136,8 +2174,10 @@ key	Space	空格
 	The selected area has been copied ({w} × {h} pixels)	所选区域已复制（{w} × {h} 像素）
 	The selected fields could not be found. Select them again.	找不到所选字段。请重新选择。
 	The selected scale could not be read.	无法读取所选比例。
+	The shared folder:	共享文件夹：
 	The signature will be invisible.	签名将不可见。
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	标准字体无法显示“{c}”（{code}）。目前只能添加西欧字符作为文本。
+	The standard it must meet and where the file goes	需要满足的标准，以及文件的去向
 	The text is the same	文本相同
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	尚未安装文本识别模型（请重新安装 PdfCraft，或将 PDFCRAFT_MODELS 设置为包含这些模型的文件夹）
 	The title in the metadata and the document information differ	元数据与文档信息中的标题不一致
@@ -2153,6 +2193,7 @@ key	Space	空格
 	These objects could not be moved. Select them again and try a smaller move.	无法移动这些对象。请重新选择并尝试较小的移动距离。
 	Thick	粗
 	Thin	细
+	Thinking… {s}s	思考中… {s} 秒
 	This area has too many overlapping paths; intersection snapping is limited.	此区域有太多重叠路径；交点吸附受到限制。
 	This certificate is in your list of trusted certificates.	此证书位于受信任证书列表中。
 	This certificate is not trusted. Signatures made with it show an unknown identity.	此证书不受信任。使用它制作的签名显示未知身份。
@@ -2195,6 +2236,7 @@ key	Space	空格
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	此表单的脚本已关闭，因为其中一个脚本运行时间过长。重新打开文档即可再次运行。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	这是动态 XFA 表单，PdfCraft 暂无法显示。您看到的是文件的占位页面。
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	这是令牌 PIN 锁定前的最后一次尝试。此处输入错误的 PIN 可能会使其永久锁定。
+	This machine: {ram} GB RAM, {disk} GB free	这台机器：{ram} GB 内存、{disk} GB 可用
 	This measurement needs at least {n} points.	此测量至少需要 {n} 个点。
 	This page contains objects that cannot be selected together.	此页面包含无法一起选择的对象。
 	This page couldn't be displayed.\n{e}	无法显示此页面。\n{e}
@@ -2337,8 +2379,11 @@ key	Space	空格
 	watermark	水印
 	Weak	弱
 	Welcome to PdfCraft	欢迎使用 PdfCraft
+	What must go, and what the document is	需要遮盖的内容，以及文档的用途
 	What takes up the space in this file, by kind of content.	此文件的空间被哪些内容占用，按内容类型列出。
 	What word or phrase would you like to search for?	您想搜索哪个词或短语？
+	What you want to end up with (order, extract, split, combine)	想要达到的效果（顺序、提取、拆分、合并）
+	Where the file is going and what matters (size, quality, compatibility)	文件的去向与要点（大小、质量、兼容性）
 	White on black	黑底白字
 	Whole words only	仅全字匹配
 	Window Options	窗口选项
