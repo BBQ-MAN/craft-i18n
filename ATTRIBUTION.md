@@ -46,6 +46,7 @@ catalog came from (`<app>@<sha>`). Translations are contributed under the reposi
 | `sr` | WordCraft: no individual credit recorded upstream | `wordcraft@67a0e72` |
 | `sr-latn` | WordCraft: no individual credit recorded upstream; PhotoCraft: PhotoCraft contributors (some rows from PR #582 by neko233-com) | `wordcraft@67a0e72`, `photocraft@8d2e615` |
 | `sv` | WordCraft: Erik Holmbom (@holmbom) with Claude Code; VectorCraft: mostly agent-written (`bflatastic`), not recorded as native-reviewed; CADCraft: Erik Holmbom (@holmbom) with Claude Code (AI-assisted), terminology and the running app reviewed by a native speaker | `wordcraft@67a0e72`, `vectorcraft@73f40e3`, `cadcraft@b23d362` |
+| `ta` | PdfCraft (pdfcraft#5735): @newsbaba24x7, clean-room per the PR; AI assistance not stated, not recorded as native-reviewed | `pdfcraft#5735` |
 | `te` | PdfCraft: PdfCraft contributors, clean-room; later additions AI-assisted, not separately native-reviewed | `pdfcraft@ecdd1e6` |
 | `th` | PdfCraft: PdfCraft contributors, clean-room; later additions AI-assisted, not separately native-reviewed | `pdfcraft@ecdd1e6` |
 | `tr` | WordCraft: @PbyLoyth with Codex and Claude Code; PdfCraft: PdfCraft contributors, clean-room; later additions AI-assisted, not separately native-reviewed; PhotoCraft: PhotoCraft contributors | `wordcraft@67a0e72`, `pdfcraft@ecdd1e6`, `photocraft@8d2e615` |
