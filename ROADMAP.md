@@ -1,6 +1,6 @@
 # craft-i18n roadmap
 
-> **Last updated:** 2026-11-03 · **Change:** minor (3a: PdfCraft cutover started; checker plural forms on `icu_plurals`)
+> **Last updated:** 2026-11-03 · **Change:** minor (file-size `unit` rows and a shared byte count for craft-libs#204)
 
 Shared translations for the storytold Crafting Apps: one catalog per locale for shared strings,
 one per app, checked in CI and embedded by each app at build time. Vocabulary is in
@@ -103,3 +103,4 @@ As surveyed on 2026-10-16 (VectorCraft recounted 2026-10-18). Locale counts excl
 | 2026-11-02 | minor | Milestone 4 phase 3, compounding: da, de, de-at, de-ch, eo, et, fa, hr, hu, nb, nl, nn, sv, sv-fi unhidden (75 published, 2 hidden, 3 Excluded; mn stays hidden: suggestions take 200–580 ms over its 12,066 affix rules; th stays hidden: craft-proof splits words only at spaces and punctuation, so a Thai sentence would be checked as one word); needs craft-proof flag-based compounding (craft-libs #497, merged at `47c9f625`); de, de-at, de-ch check words now capitalised nouns and et, nb, nn have real misspellings, each checked with the hunspell 1.7.5 CLI; nb and nn hyphenate with hyph-no.tex (their own files hold only exceptions) |
 | 2026-11-03 | minor | 3a: PdfCraft cutover sync (`pdfcraft@ecdd1e6`, 12 new PdfCraft locales); PdfCraft wired now, not last: it already draws logical catalogs on storytold/egui |
 | 2026-11-03 | patch | Checker takes each locale's plural form count from the runtime crate (`craft-i18n` at storytold/craft-libs `32b2fd8a`, a normal dependency; its own CLDR 48.2.1 data on `icu_plurals` since craft-libs#210), replacing `intl_pluralrules` 7.0.2 and its Hebrew workaround; `icu_plurals`' compiled data has no `ckb` rules (1 form), the crate's data has 2; `tests/runtime_agreement.rs` checks every locale's count and that the crate accepts every catalog's `@plural` rows; no existing locale's count changed |
+| 2026-11-03 | minor | File sizes (storytold/craft-libs#204): `@plural {n} byte\|{n} bytes` moved from 20 locales' `pdfcraft.tsv` to `common.tsv` (additive, ADR 0003); `unit` rows (`{n} KB`, `{n} MiB`, …) only where the symbol differs from English: `fr`, `ru`, `uk` |
