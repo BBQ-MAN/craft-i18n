@@ -31,6 +31,9 @@
 	1 page selected	已選取 1 頁
 	1 page selected.	已選擇 1 頁。
 	180 degrees	180 度
+	3D model	3D模型
+	3D model canvas	3D模型畫布
+	3D models on this page	此頁的3D模型
 	4 x 6 in label (101.6 x 152.4 mm)	4 × 6 英吋標籤 (101.6 × 152.4 公釐)
 	9 digit, A letter, O letter or digit, X any character	9 表示數字，A 表示字母，O 表示字母或數字，X 表示任意字元
 	; 1 page already had text	；1 頁已有文字
@@ -58,6 +61,7 @@
 	Accessibility Checker Options	無障礙檢驗器選項
 	Accessibility permission flag	無障礙許可標誌
 	Accessibility permission flag is set	已設定無障礙許可標誌
+	Acres	英畝
 	Acrobat 3.0 and later (40-bit RC4)	Acrobat 3.0 及更高版本（40 位 RC4）
 	Acrobat 5.0 and later (128-bit RC4)	Acrobat 5.0 及更高版本（128 位 RC4）
 	Acrobat 7.0 and later (128-bit AES)	Acrobat 7.0 及更高版本（128 位 AES）
@@ -95,6 +99,7 @@
 	Add background…	新增背景…
 	Add Bates numbering…	新增 Bates 編號…
 	Add bookmark	新增書籤
+	Add boundary point	新增邊界點
 	Add callout	新增引線註解
 	Add checkmark	新增勾選記號
 	Add cloud	新增雲形
@@ -102,6 +107,7 @@
 	Add comments	新增註解
 	Add connected lines	新增連續線段
 	Add content	新增內容
+	Add control point	新增控制點
 	Add cross	新增叉號
 	Add dot	新增圓點
 	Add drawing	新增繪圖
@@ -135,6 +141,7 @@
 	Add redaction mark	新增遮蔽標記
 	Add search index	新增搜尋索引
 	Add signature	新增簽名
+	Add smaller unit	新增較小單位
 	Add squiggly underline	新增波浪底線
 	Add stamp	新增印章
 	Add Step	新增步驟
@@ -162,6 +169,7 @@
 	Advanced options	進階選項
 	Advanced Options {chevron}	進階選項 {chevron}
 	Advanced search…	進階搜尋…
+	Advanced unit formats	進階單位格式
 	AI assistant	AI 助理
 	Algorithm	演算法
 	Align left	左對齊
@@ -199,6 +207,7 @@
 	An image has alternates or OPI information	圖片具有替代圖片或 OPI 資訊
 	An open-source PDF workbench — local, private, and scriptable.	開源 PDF 工作台，在本機處理、保護隱私，並支援指令碼。
 	and {n} more	以及另外 {n} 個
+	Angular unit	角度單位
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	閃爍的動畫可能導致癲癇發作。請檢驗指令碼和媒體是否存在閃爍。
 	Annotations, form fill-in, and digital signatures	註解、填寫表單和數位簽章
 	Any except extracting pages	除提取頁面外的任何操作
@@ -220,6 +229,8 @@
 	April	四月
 	Arbitrary Mask	任意掩碼
 	Archive documents	封存文件
+	Area unit	面積單位
+	Area units	面積單位
 	Arrange image	排列影像
 	Ask about this document	詢問此文件
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	向 GitHub 搜尋最新版本。不會自動下載或安裝任何內容。
@@ -244,9 +255,11 @@
 	Auto-size text to fit redaction region	自動調整文字大小以適應遮蔽內容區域
 	Automatically tag PDF	自動標記 PDF
 	average	平均值
+	Azimuth	方位角
 	Back	返回
 	Back side only	僅背面
 	Back to all tools	返回所有工具
+	Back to measurement	返回量測
 	Back to Prepare a form	返回準備表單
 	Back to the document	返回文件
 	background	背景
@@ -267,6 +280,8 @@
 	Bookmarks Panel and Page	書籤面板和頁面
 	Border Color:	邊框顏色：
 	Borders and Colors	邊框和顏色
+	Boundary coordinates run from 0 to 1 across the viewport.	邊界座標在檢視區內的範圍為 0 到 1。
+	Boundary point	邊界點
 	Box	框
 	Bring forward	上移一層
 	Bring to front	移到最上層
@@ -284,6 +299,7 @@
 	Calibrate from two points	使用兩點校準
 	Callout	標註
 	Can't be read: {e}	無法讀取：{e}
+	Cancel caption placement	取消標題放置
 	Cancelled	已取消
 	Cancelling…	正在取消…
 	Case-sensitive	區分大小寫
@@ -301,6 +317,7 @@
 	Certify (invisible signature)	認證（不可見簽章）
 	Certify (visible signature)	認證（可見簽章）
 	Change comment properties	變更註解內容
+	Change drawing scale	變更圖面比例
 	Change field properties	變更欄位內容
 	Change initial view	變更初始檢視
 	Change initials	變更姓名縮寫
@@ -341,6 +358,7 @@
 	Checking pages…	正在檢查頁面…
 	Checkmark	勾選記號
 	Chinese (Simplified) and English	簡體中文和英語
+	Choose a control point inside the viewport.	請選擇檢視區內的控制點。
 	Choose a folder for the exported files	選擇匯出檔案的資料夾
 	Choose a folder for the extracted pages	選擇提取頁面的資料夾
 	Choose a folder for the results	選擇結果資料夾
@@ -349,25 +367,39 @@
 	Choose a folder on this computer to pin	請選擇這部電腦上要釘選的資料夾
 	Choose a layout:	選擇佈局：
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	選擇 PNG 或 JPEG 圖像（最大 4 MiB）。透明度會保留。
+	Choose a point, then the two endpoints of a reference line.	先選擇一個點，再選擇參考線的兩個端點。
 	Choose a stamp, then click on the page to place it.	選擇戳記，然後按一下頁面放置。
+	Choose a tool to start measuring.	選擇工具開始量測。
+	Choose a visible point on the model.	請選擇模型上的可見點。
+	Choose advanced unit formats first.	請先設定進階單位格式。
+	Choose an endpoint, the angle vertex, then the other endpoint.	依次選擇端點、角的頂點、另一個端點。
 	Choose an image	選擇圖片
 	Choose images	選取圖片
 	Choose image…	選擇圖片…
 	Choose photo…	選擇相片…
 	Choose the digital ID that you want to use for signing:	選擇要用於簽名的數位 ID：
+	Choose the two endpoints.	選擇兩個端點。
+	Choose three points on the circle.	選擇圓周上的三個點。
 	Clean Up	清理
 	Clean-up	清理
 	Clear all	全部清除
 	Clear form	清除表單
+	Clear points	清除點
 	Clear Recent Files	清除最近的檔案
 	Clear redaction marks	清除遮蔽標記
 	Clear search	清除搜尋
 	Clear selection / close find	清除選取／關閉尋找
+	Click each vertex. Enter finishes the perimeter.	依序點擊各頂點，按 Enter 完成周長量測。
 	Click on the page to add a {tool}, or drag to set its size	按一下頁面新增{tool}，或拖動設定其大小
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	按一下頁面新增文字；每次按一下開始一個新文字框，✓ 完成。拖動專案以移動，拖動角落以調整大小，按兩下文字進行編輯。
 	Click text or an image to edit it	按一下文字或圖片進行編輯
+	Click the boundary. Enter or the first point closes the area.	點擊邊界，按 Enter 或點擊起點閉合區域。
+	Click the control point on the map.	請按一下地圖上的控制點。
+	Click the ends of a known reference length.	點擊已知長度參考線的兩端。
 	Click the first point to begin.	按一下起點以開始。
+	Click the preview to place the caption on its measurement plane.	點選預覽，在測量平面上放置標題。
 	Click to sort, drag to move the column. Drag its edge to resize it.	按一下以排序，拖曳以移動欄。拖曳欄邊緣可調整寬度。
+	Click two points to measure a distance.	點擊兩點以量測距離。
 	Click vertices. Enter or double-click finishes a perimeter or area. Click the first point to close an area.	按一下頂點。按 Enter 或按兩下以完成周長或面積測量。按一下起點以封閉區域。
 	Clockwise 90 degrees	順時針 90 度
 	Close all	全部關閉
@@ -381,6 +413,7 @@
 	Collapse all pages	摺疊所有頁面
 	Collapse all tools	摺疊所有工具
 	Collapse tag	收合標籤
+	Color	顏色
 	Color contrast	顏色對比度
 	Color Images	彩色圖片
 	Color Spaces	顏色空間
@@ -428,7 +461,11 @@
 	Content copying for accessibility	為無障礙複製內容
 	Content Streams	內容流
 	Continuous scrolling	連續捲動
+	Control point	控制點
+	Control points	控制點
+	Conversion factor	換算係數
 	Convert colors	轉換色彩
+	Converts PDF user coordinates to easting, northing and elevation.	將 PDF 使用者座標轉換為東座標、北座標和高程。
 	Copied {what}	已複製{what}
 	Copies, two-sided printing and colour are chosen in the browser's print dialog.	份數、雙面列印和色彩在瀏覽器的列印對話方塊中選擇。
 	Copy Image	複製圖片
@@ -527,16 +564,21 @@ key	Ctrl	Ctrl
 	Dark theme	深色主題
 	Date field	日期欄位
 	Date: 	日期：
+	Datum accuracy	基準精度
 	December	十二月
+	Decimal	小數
 	Decimal places:	小數位數：
+	Decimal separator	小數分隔符
 	Decimals	小數位數
 	Declared conformance: {shown}	宣告的一致性：{shown}
 	Decorative figure	裝飾性圖形
 	Default page display	預設頁面顯示
 	Default Value:	預設值：
+	Default view	預設視圖
 	Default workspace mode	預設工作區模式
 	Default zoom	預設縮放
 	Default:	預設值：
+	Degrees	度
 key	Delete	Delete
 	Delete attachment	刪除附件
 	Delete attachment {key}	刪除附件 {key}
@@ -547,6 +589,7 @@ key	Delete	Delete
 	Delete field	刪除欄位
 	Delete image	刪除圖片
 	Delete link	刪除連結
+	Delete measurement	刪除測量
 	Delete page	刪除頁面
 	Delete page {label}	刪除頁面 {label}
 	Delete pages	刪除頁面
@@ -557,6 +600,7 @@ key	Delete	Delete
 	Delete stamp	刪除戳記
 	Delete the selected pages	刪除所選頁面
 	Delete {o}	刪除 {o}
+	Denominator	分母
 	Describe the figure	描述該圖形
 	Details	詳情
 	Detect form fields	偵測表單欄位
@@ -565,6 +609,7 @@ key	Delete	Delete
 	Device colour is used, but there is no PDF/A output intent	使用了裝置色彩，但沒有 PDF/A 輸出目的
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	使用了 DeviceCMYK：需要 CMYK 輸出目的，目前無法自動新增
 	Diagnostic details	診斷詳細資訊
+	Diameter	直徑
 	Digital ID	數位 ID
 	Digital ID password	數位 ID 密碼
 	Digital signature	數位簽章
@@ -588,6 +633,8 @@ key	Delete	Delete
 	Discard this text (Esc)	捨棄此文字（Esc）
 	Discard User Data	捨棄使用者資料
 	Display theme	顯示主題
+	Distance unit	距離單位
+	Distance units	距離單位
 	Distinguished name	可分辨名稱
 	Distribute	分佈
 	Distribute evenly	平均分配
@@ -615,6 +662,7 @@ key	Delete	Delete
 	Don't show again	不再顯示
 	Done adding text	完成新增文字
 	Double-click	滑鼠按兩下
+	Double-click also finishes a perimeter or area.	按兩下也可完成周長或面積量測。
 	Downloaded {name}	已下載{name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	已下載 {n} 個 PDF
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web 端附件下載將於 M3.10 到來（{n} 位元組已就緒）
@@ -627,6 +675,7 @@ key	Delete	Delete
 	Drag the corners onto the document's edges, then choose Enhance page.	將四個角拖曳到文件邊緣，然後選擇「增強頁面」。
 	Drag the selection to move it. Esc clears the selection.	拖曳選取範圍即可移動。按 Esc 清除選取。
 	Drag to draw the area where the signature should appear.	拖動繪製簽名應顯示的區域。
+	Drag to orbit. Right or middle drag pans. Scroll zooms. Click the model to measure.	拖曳旋轉，右鍵或中鍵拖曳平移，捲動縮放。點擊模型進行測量。
 	Drag to reorder	拖曳以重新排序
 	Draw a cloud	繪製雲形
 	Draw a line	繪製直線
@@ -659,6 +708,8 @@ key	Delete	Delete
 	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	每個圖片一次，以文件和頁面命名。JPEG 圖片原樣儲存，其他為 PNG。
 	Earlier in calculation order	在計算順序中前移
 	Earlier in tab order	在 Tab 順序中前移
+	Easting	東座標
+	Edge snapping	吸附邊
 	Edit a PDF	編輯 PDF
 	Edit Action	編輯操作
 	Edit comment	編輯註解
@@ -666,6 +717,8 @@ key	Delete	Delete
 	Edit document JavaScript	編輯文件 JavaScript
 	Edit fields	編輯欄位
 	Edit image	編輯圖片
+	Edit measurement	編輯測量
+	Edit measurement viewport	編輯量測檢視區
 	Edit script of {name}	編輯 {name} 的指令碼
 	Edit text	編輯文字
 	Edit text & images	編輯文字與圖片
@@ -678,6 +731,7 @@ key	Delete	Delete
 	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	嵌入的檔案本身必須符合 PDF/A；其他檔案請使用 PDF/A-3
 	Enable Acrobat JavaScript	啟用 Acrobat JavaScript
 	Enable copying of text, images, and other content	允許複製文字、圖片和其他內容
+	Enable snapping	啟用吸附
 	Enable text access for screen reader devices for the visually impaired	允許螢幕閱讀器裝置存取文字以幫助視障人士
 	Encrypt	加密
 	Encrypt with certificate	使用憑證加密
@@ -689,10 +743,12 @@ key	End	End
 	Enhance page	增強頁面
 	Enhance scanned file	增強掃描檔案
 	Enter a scale such as 1:50.	請輸入比例，例如 1:50。
+	Enter known map coordinates for at least three page positions.	請輸入至少三個頁面位置的已知地圖座標。
 	Enter permissions password…	輸入許可權密碼…
 	Enter the password that opens it	輸入開啟該檔案的密碼
 	Enter the permissions password to allow combining	輸入權限密碼以允許合併
 	Entire page	整個頁面
+	EPSG code	EPSG 代碼
 	Erase drawings	擦除繪圖
 key	Esc	Esc
 	Even and Odd Pages	奇偶頁
@@ -748,6 +804,7 @@ key	Esc	Esc
 	Exported {n} images	已匯出{n}張圖片
 	Exporting… {d} of {t}	正在匯出…第{d}個，共{t}個
 	Extended Graphics States	擴充套件圖形狀態
+	Extension length (points)	延長線長度（點）
 	Extract pages	擷取頁面
 	Extract pages as separate files	將頁面提取為單獨檔案
 	Extract pages to a new document	將頁面提取到新文件
@@ -758,6 +815,9 @@ key	Esc	Esc
 	Failed	未通過
 scroll speed	Fast	快
 	February	二月
+	Feet	英呎
+	Feet and inches	英呎與英吋
+	Feet and inches uses ft as the scale unit.	英呎與英吋格式使用 ft 作為比例單位。
 	Field descriptions	欄位描述
 	Field is used for file selection	欄位用於檔案選擇
 	Field list	欄位清單
@@ -816,11 +876,14 @@ scroll speed	Fast	快
 	Find tools and commands…	尋找工具與指令…
 	Find untagged content	尋找未標記的內容
 	Finding document fonts…	正在尋找文件字型…
+	Finish measurement	完成量測
 	Finish or discard the text being edited before selecting several objects.	請先完成或放棄正在編輯的文字，再選取多個物件。
+	Finished measurements appear here and are saved in the PDF.	完成的量測顯示於此，並儲存在 PDF 中。
 	First / last page	第一頁／最後一頁
 	First row number	起始列號
 	Fit	適合
 	Fit Height	適合高度
+	Fit model	符合模型大小
 	Fit one full page	單頁完整顯示
 	Fit Page	適合頁面
 	Fit to height	符合高度
@@ -843,6 +906,7 @@ scroll speed	Fast	快
 	Flip image	翻轉圖片
 	Flip on long edge	沿長邊翻轉
 	Flip on short edge	沿短邊翻轉
+	Flip text up	翻轉文字朝上方向
 	Flip vertical	垂直翻轉
 	Float panel	浮動面板
 	Folders	資料夾
@@ -867,13 +931,16 @@ scroll speed	Fast	快
 	Forms & Signatures	表單與簽名
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	公式及類似非文字元素需要替代文字。請為它們新增替代文字。
 	Found {n} untagged content problems.	發現 {n} 個未標記內容問題。
+	Fraction	分數
 	From a PDF page or an image	來自 PDF 頁面或圖片
 	From colour	使用顏色
 	From {file}	來自 {file}
 	From:	從：
 	Front side only	僅正面
 	Full screen mode	全螢幕模式
+	Geographic	地理座標
 	Geospatial location	地理位置
+	Geospatial map	地理空間地圖
 	Get help, share feedback and follow development on Discord.	在 Discord 取得協助、提供意見並追蹤開發進度。
 	Go to a page view	轉到頁面檢視
 	Go to page {p}	移至第 {p} 頁
@@ -881,6 +948,7 @@ scroll speed	Fast	快
 	Go to the page	轉到該頁面
 	Go to this result	轉到此結果
 	Grab bag	精簡
+	Grads	百分度
 	Grayscale Images	灰階圖片
 	Green on black	黑底綠字
 	Greyscale	灰階
@@ -891,6 +959,7 @@ scroll speed	Fast	快
 	header or footer	頁首或頁尾
 	Headers	表頭
 	Heading levels shouldn't skip (an H1 followed by an H3). Retag the headings.	標題級別不應跳躍（H1 後面不應直接跟 H3）。請重新標記標題。
+	Hectares	公頃
 	Hidden layers	隱藏圖層
 	Hide a field	隱藏欄位
 	Hide all comments	隱藏所有註解
@@ -908,6 +977,7 @@ scroll speed	Fast	快
 	Highlight Style:	醒目提示樣式：
 	Highlight text	醒目提示文字
 key	Home	Home
+	Horizontal coordinates	橫向座標
 	Horizontal reversed	水平反轉
 	Horizontally	水平分佈
 	HTML web page	HTML 網頁
@@ -985,10 +1055,12 @@ key	Home	Home
 	Keep source fonts	保留原始字型
 	Keep tool selected	保持工具選取
 	Keep tool selected: on	保持工具選取：開
+	Keep trailing zeros or denominator	保留末尾零或分母
 	Key Algorithm	金鑰演算法
 	Key usage	金鑰用途
 	Keyboard shortcuts	鍵盤快速鍵
 	Keychain  ·  	鑰匙串 · 
+	Kilometres	公里
 	Labels: {preview}. Later pages keep their labels.	標籤：{preview}。後續頁面保留其標籤。
 	Landscape and Portrait Pages	橫向和縱向頁面
 	Landscape Pages	橫向頁面
@@ -997,6 +1069,7 @@ key	Home	Home
 	Larger thumbnails	放大縮圖
 	Later in calculation order	在計算順序中後移
 	Later in tab order	在 Tab 順序中後移
+	Latitude	緯度
 	Layer options	圖層選項
 	Layers Panel and Page	圖層和頁面
 	Layout and Magnification	佈局和縮放
@@ -1036,6 +1109,7 @@ key	Home	Home
 	Location: 	位置：
 	Lock comment	鎖定註解
 	Logical Reading Order	邏輯閱讀順序
+	Longitude	經度
 	Looking for PDFs…	正在尋找 PDF…
 	Looking for printers…	正在尋找印表機…
 	Loop	迴圈
@@ -1048,6 +1122,11 @@ key	Home	Home
 	Make properties default	將內容設為預設
 	Make scans searchable, then make them smaller.	使掃描件可搜尋，然後將其變小。
 	Manage embedded index	管理內嵌索引
+	Map accuracy	地圖精度
+	Map boundary	地圖邊界
+	Map coordinate system	地圖座標系
+	Map coordinates	地圖座標
+	Map registration needs control points.	地圖配準需要控制點。
 	March	三月
 	Mark all	全部標記
 	Mark as artifact	標記為成品
@@ -1059,6 +1138,7 @@ key	Home	Home
 	Mark with checkmark	新增勾選標記
 	Marked	已標記
 	Markup	標記
+	Markup text	標註文字
 	Marquee Zoom	選取範圍縮放
 	Marquee zoom	選取範圍縮放
 	Mask:	掩碼：
@@ -1066,10 +1146,13 @@ key	Home	Home
 	Maximum	最高
 	maximum	最大值
 	May	五月
+	Measure 3D	測量3D
+	Measure 3D model	測量3D模型
 	Measure area	測量面積
 	Measure distance	測量距離
 	Measure objects	測量物件
 	Measure perimeter	測量周長
+	Measurement error	量測錯誤
 	Measurement information	測量資訊
 	Measurement snapping	測量吸附
 	Measuring tool	測量工具
@@ -1079,8 +1162,10 @@ key	Home	Home
 	Merged 1 file into {path}	已將 1 個檔案合併到{path}
 	Merged {n} files into {path}	已將{n}個檔案合併到{path}
 	Merging data files needs the desktop app	合併資料檔案需要桌面端應用
+	Metres	公尺
 	Microsoft Word (.docx)	Microsoft Word（.docx）
 	Midpoints	中點
+	Miles	英里
 	Minimum	最低
 	minimum	最小值
 	Missing field	缺少欄位
@@ -1110,6 +1195,8 @@ key	Home	Home
 	Move tag earlier	將標記前移
 	Move tag later	將標記後移
 	Move to group	移至群組
+	Move unit down	下移單位
+	Move unit up	上移單位
 	Move up	上移
 	Moves only what must move	只移動必須移動的
 	Multi-line	多行
@@ -1120,6 +1207,7 @@ key	Home	Home
 	N or {row} is the row number, {col} the column number, {seq} the cell number. With none of them, the row number goes last.	N 或 {row} 代表列號，{col} 代表欄號，{seq} 代表儲存格序號。若都沒有，列號會加在結尾。
 	Name on new comments	新註解的作者名稱
 	Named Destinations	命名目標
+	Nautical miles	海里
 	Navigation links	導覽連結
 	Navigation links are not repetitive	導覽連結不重複
 	Navigation tab	導覽索引標籤
@@ -1136,7 +1224,9 @@ key	Home	Home
 	New file only	僅新檔案
 	New file:	新檔案：
 	New file: {name}	新檔案：{name}
+	New viewport	新增檢視區
 	New {tool} comments will look like this one	新的{tool}註解將採用此外觀
+	Next	下一頁
 	Next ({key})	下一個 ({key})
 	Next / previous match	下一個／上一個相符項目
 	Next figure	下一個圖形
@@ -1181,6 +1271,7 @@ key	Home	Home
 	No preview	無預覽
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	找不到印表機。請確認印表機已安裝、列印多工緩衝處理器正在執行，然後重新開啟「列印」。
 	No problems found: the document conforms to {level}.	未發現問題：文件符合 {level}。
+	No saved measurements in this view.	此視圖中沒有已儲存的測量。
 	No security	無安全性
 	No sheets	無紙張
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	框內找不到簽名。請將框移到簽名上，或提高墨跡靈敏度。
@@ -1196,6 +1287,7 @@ key	Home	Home
 	None of those files can be made into a PDF; use PDFs, images or .txt files	這些檔案都無法轉換為 PDF；請使用 PDF、圖片或 .txt 檔案
 	None — everything is allowed	無 — 允許一切操作
 scroll speed	Normal	正常
+	Northing	北座標
 	Not allowed	不允許
 	Not in order	不在順序中
 	Not now	暫時不要
@@ -1209,6 +1301,7 @@ scroll speed	Normal	正常
 	November	十一月
 	Number	數字
 	Number every page in the footer.	在頁尾為每頁編號。
+	Number format	數值格式
 	Number of pages	頁數
 	Number pages	頁面編號
 	Number pages…	編訂頁碼…
@@ -1313,6 +1406,8 @@ animation effects	On	開
 	Page tools	頁面工具
 	Page transitions	頁面轉場
 	Page will not cause screen flicker	頁面不會導致螢幕閃爍
+	Page X	頁面 X
+	Page Y	頁面 Y
 	Page {label}	第 {label} 頁
 	Page {pages} changed after the background was added, so its own white backdrop stays off. It looks the same on white paper.	第 {pages} 頁在加入背景後有變更，因此其本身的白色填色維持關閉。在白紙上看起來一樣。
 	Page {pages} paints its own white backdrop, which would hide the background. Replace it	第 {pages} 頁有自己的白色填色，會遮住背景。取代它
@@ -1362,9 +1457,11 @@ animation effects	On	開
 	People may need more time to respond. Check that nothing has a time limit.	人們可能需要更多時間來回應。請檢驗確認沒有時間限制。
 	Permissions password	許可權密碼
 	Permitted actions after certifying	認證後允許的操作
+	Perpendicular	垂直距離
 	Phone Number	電話號碼
 	Phone Numbers	電話號碼
 	Pick a tool in the quick bar, or type above.	在快捷欄中選擇工具，或在上方輸入。
+	Pick page position	在頁面上選取位置
 	Pictures cover pages {pages} (scans?), so the background won't show there.	第 {pages} 頁被圖片覆蓋（掃描檔？），因此那裡不會顯示背景。
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	圖片需要描述性的替代文字，或標為裝飾性。請為每個圖形新增替代文字。
 	Pictures on those pages are recognized too; words already in the page's text are not added again	這些頁面上的圖片也會被辨識；頁面文字中已有的字詞不會重複加入
@@ -1383,6 +1480,7 @@ animation effects	On	開
 	Pinned Tools	已釘選的工具
 	Pinned {folder} to Home	已將 {folder} 釘選到首頁
 	Pinned {tool} to Home	已將 {tool} 釘選至首頁
+	Place caption	放置標題
 	Plain text in reading order; pages are separated by form feeds.	按閱讀順序的純文字；頁面之間用換頁符分隔。
 	Planned	規劃中
 	Planned for milestone	預計於里程碑
@@ -1395,6 +1493,7 @@ animation effects	On	開
 	Post	張貼
 	PostScript / EPS	PostScript / EPS
 	PostScript XObjects aren't allowed	不允許 PostScript XObject
+	Precision	精度
 	Preflight	印前偵測
 	Prepare a form	準備表單
 	Prepare for accessibility	準備無障礙支援
@@ -1406,6 +1505,7 @@ animation effects	On	開
 	Presentation (.pptx)	簡報（.pptx）
 	Preview unavailable: {e}	無法預覽：{e}
 	Preview: page {p} of {n}	預覽：第 {p} 頁，共 {n} 頁
+	Previous	上一頁
 	Previous ({key})	上一個 ({key})
 	Previous / next page	上一頁／下一頁
 	Previous figure	上一個圖形
@@ -1429,6 +1529,8 @@ animation effects	On	開
 	Privacy	隱私
 	Private data of other applications	其他應用程式的私有資料
 	product (x)	求積 (x)
+	Projected	投影座標
+	Projected coordinate matrix	投影座標矩陣
 	Properties…	屬性…
 	Protect & Standardize	保護與標準化
 	Protect a PDF	保護 PDF
@@ -1438,9 +1540,11 @@ animation effects	On	開
 	Protected: the combined file won't keep its security settings	受保護：合併後的檔案不會保留其安全性設定
 	Public key	公鑰
 	PushButton	按鈕
+	Quantity	測量量
 	Radio	選項按鈕
 	Radio button	選項按鈕
 	Radio Button Properties	選項按鈕屬性
+	Radius / diameter	半徑／直徑
 	Re-type Password	重新輸入密碼
 	Read	閱讀
 	Read mode	閱讀模式
@@ -1451,6 +1555,7 @@ animation effects	On	開
 	Reads {name}, which calculates later, so it shows an old value.	讀取 {name}，而它之後才計算，因此顯示的是舊值。
 	Reads {name}, which the form doesn't have, so it gets no value there.	讀取表單中不存在的 {name}，因此從中得不到值。
 	Ready	可使用
+	Real length	實際長度
 	Reason	原因
 	Reason: 	原因：
 	Recent colours	最近使用的顏色
@@ -1483,6 +1588,11 @@ animation effects	On	開
 	Redid {label}	已重做{label}
 	Reduce file size	縮小檔案大小
 	Reduce file size…	縮小檔案大小…
+	Reference captured. Enter its real length below.	已取得參考線，請在下方輸入實際長度。
+	Reference length (page points)	參考長度（頁面點）
+	Reference length must be positive.	參考長度必須為正數。
+	Reference preview	基準預覽
+	Registration residual	配準殘差
 	Regularity	規則性
 	Rejected	已拒絕
 	Reliable character encoding is provided	提供了可靠的字元編碼
@@ -1490,7 +1600,9 @@ animation effects	On	開
 	Remove "{name}" from this list? The file itself is not deleted.	從此清單中移除「{name}」？檔案本身不會被刪除。
 	Remove all links	移除所有連結
 	Remove background	移除背景
+	Remove boundary point	移除邊界點
 	Remove checkmark	刪除勾選標記
+	Remove control point	移除控制點
 	Remove Crop	移除裁切
 	Remove crop	移除裁切
 	Remove from Recent	從最近的檔案中移除
@@ -1500,12 +1612,15 @@ animation effects	On	開
 	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	刪除隱藏資訊、中繼資料、指令碼和嵌入內容，並重寫檔案。
 	Remove hidden information…	移除隱藏資訊…
 	Remove invalid links and bookmarks	刪除無效連結和書籤
+	Remove measurement viewport	移除量測檢視區
 	Remove page	刪除頁面
 	Remove redaction marks	移除遮蔽標記
 	Remove security	移除安全性設定
 	Remove this leaf tag from reading order and mark its direct content as an artifact	從閱讀順序中移除此葉標記，並將其直接內容標記為成品
+	Remove unit	移除單位
 	Remove unreferenced named destinations	刪除未引用的命名目標
 	Remove unused objects and merge identical ones	刪除未使用的物件併合並相同的物件
+	Remove viewport	移除檢視區
 	Remove watermark	移除浮水印
 	Remove {name}	刪除{name}
 	Remove {name} from Recent	從最近的檔案中移除{name}
@@ -1543,6 +1658,7 @@ animation effects	On	開
 	Required	必填
 	Requires user to enter a password for:	需要使用者輸入密碼，用於：
 	Reset a form	重設表單
+	Reset caption	重設標題
 	Reset columns	重設欄
 	Reset page size	重設頁面大小
 	Reset panel layout	重設面板配置
@@ -1555,6 +1671,7 @@ animation effects	On	開
 	Restrictions	限制
 	Restrictions lifted	已解除限制
 	Retain existing	保留現有
+	Retry	重試
 	Reveal in File Explorer	在檔案總管中顯示
 	Reverse closed arrow	反向閉合箭頭
 	Reverse open arrow	反向開口箭頭
@@ -1589,6 +1706,7 @@ animation effects	On	開
 	Rotate view clockwise	順時針旋轉檢視
 	Rotate view clockwise ({key})	順時針旋轉檢視（{key}）
 	Rotate view counterclockwise	逆時針旋轉檢視
+	Rounded	四捨五入
 	Row spacing	列間距
 	Run	執行
 	Run a JavaScript	執行 JavaScript
@@ -1615,6 +1733,7 @@ animation effects	On	開
 	Save changes to “{name}” before closing?	在關閉前儲存對「{name}」的更改？
 	Save image	儲存圖片
 	Save Image As…	圖片另存新檔…
+	Save measurement	儲存測量
 	Save or revert changes before selecting another tag.	選取其他標籤前，請儲存或還原變更。
 	Save over the changed file?	覆寫已變更的檔案？
 	Save pages	儲存頁面
@@ -1625,6 +1744,7 @@ animation effects	On	開
 	Save the spreadsheet	儲存電子表格
 	Save these pages as one PDF	將這些頁面儲存為一個 PDF
 	Saved measurements	已儲存的測量
+	Saved measurements keep their original scale.	已儲存的量測保留原有比例。
 	Saved measurements.	已儲存測量結果。
 	Saved the print-ready PDF to {path}	列印就緒的 PDF 已儲存到{path}
 	Saved {name}	已儲存{name}
@@ -1632,6 +1752,7 @@ animation effects	On	開
 	Saved {place}: {before} → {after} ({pct}% smaller){detail}	已儲存{place}：{before} → {after}（縮小了{pct}%）{detail}
 	Saved, but reopening failed: {e}	已儲存，但重新開啟失敗：{e}
 	Scale	比例
+	Scale description	比例說明
 	Scale relative to target page	相對於目標頁面的縮放
 	Scan	掃描
 	Scan & OCR	掃描與 OCR
@@ -1680,14 +1801,19 @@ animation effects	On	開
 	Select tools to display on your Home page for quick access.	選取要在首頁上顯示的工具以便快速存取。
 	Select Trigger:	選擇觸發器：
 	Selected image files: {count}	已選取的圖片檔案：{count}
+	Selected points: {n}	已選點：{n}
+	Selected unit	所選單位
 	Self-signed	自我簽署
 	Send backward	下移一層
 	Send to back	移到最下層
 	Sending sheet {s} of {n} to {printer}…	正在將第 {s} 張（共 {n} 張）傳送到{printer}…
 	Sending to {printer}…	正在傳送到{printer}…
+	Sensitivity (screen pixels)	靈敏度（螢幕像素）
 	Sent to {printer}	已傳送到{printer}
 	Sent to {printer}: {msg}	已傳送到{printer}：{msg}
+	Separate display coordinate system	使用獨立的顯示座標系
 	Separate PDFs	個別 PDF
+	Separate vertical units	單獨設定縱向單位
 	Separator style:	分隔符樣式：
 	September	九月
 	Serial number	序列號
@@ -1729,6 +1855,7 @@ key	Shift	Shift
 	Show all	全部顯示
 	Show all comments	顯示所有註解
 	Show certificate…	顯示憑證…
+	Show circle	顯示圓
 	Show cover page in two-page view	在雙頁檢視中顯示封面
 	Show gaps between pages	顯示頁面間距
 	Show layer	顯示圖層
@@ -1765,6 +1892,7 @@ key	Shift	Shift
 	Signer	簽署者
 	Signer's name	簽署者姓名
 	Signing time	簽署時間
+	Silhouettes	輪廓
 	Simplified field notation:	簡化欄位表示法：
 	Single file	單一檔案
 	Single Page	單頁
@@ -1777,6 +1905,7 @@ key	Shift	Shift
 scroll speed	Slow	慢
 	Smaller pages	縮小頁面
 	Smaller thumbnails	縮小縮圖
+	Snap	吸附
 	Snap to drawing	吸附至圖面
 	Snapping	吸附
 	Social Security Number	社會安全號碼
@@ -1787,6 +1916,7 @@ scroll speed	Slow	慢
 	Some names are built as it runs	部分名稱在執行時才組出
 	Some page content couldn't be read; snapping uses the rest.	部分頁面內容無法讀取；將對其餘內容進行貼齊。
 	Some pages contain no countable text. Scanned images need OCR first.	部分頁面沒有可統計的文字。掃描影像需要先進行OCR辨識。
+	Some soft masks or pattern paints need a visibility check before snapping.	部分軟遮罩或圖樣填色需要在吸附前檢查可見性。
 	Sort comments by:	註解排序依據：
 	Sort items	排序項目
 	sorted ascending	遞增排序
@@ -1797,6 +1927,10 @@ key	Space	空格
 	Split document…	分割文件…
 	Split into files…	拆分為多個檔案…
 	Spreadsheet (.xlsx)	試算表（.xlsx）
+	Square kilometres	平方公里
+	Square metres	平方公尺
+	Square miles	平方英里
+	Square US survey feet	平方美國測量英呎
 	Squiggly underline	波浪底線
 	Squiggly underline text	文字加上波浪底線
 	Stamp palette	印章選擇工具
@@ -1817,6 +1951,7 @@ key	Space	空格
 	Summarize	摘要
 	Summarize comments	建立註解摘要
 	Summarize Options	彙總選項
+	Surfaces	表面
 	Switch light / dark theme	切換淺色／深色主題
 	Switch to List view to change the pages it takes.	切換到清單檢視以變更要使用的頁面。
 	Switch to two-page view first to show the cover page	請先切換到雙頁檢視，才能顯示封面
@@ -1853,6 +1988,7 @@ key	Space	空格
 	Text Field Properties	文字欄位屬性
 	Text Field Table	文字欄位表格
 	Text field table	文字欄位表格
+	Text height (points)	文字高度（點）
 	Text in images isn't found; recognise text (OCR) first.	圖片中的文字無法找到；請先識別文字（OCR）。
 	Text is compared word by word; the differences are shown on the new file.	逐詞比較文字；差異顯示在新檔案上。
 	Text language is specified	已指定文字語言
@@ -1873,6 +2009,7 @@ key	Space	空格
 	The checker found no problems in this document.	檢驗器在本文件中未發現問題。
 	The checker found {n} problems which may prevent the document from being fully accessible.	檢驗器發現 {n} 個問題，可能導致文件無法完全無障礙。
 	The clipboard has no image or text	剪貼簿沒有圖片或文字
+	The display datum transformation is approximate.	顯示座標的基準轉換為近似值。
 	The document changed while you were editing field properties.	編輯欄位屬性時文件已變更。
 	The document has additional actions (/AA)	此文件具有額外動作（/AA）
 	The document has document-level JavaScript	此文件具有文件層級的 JavaScript
@@ -1905,6 +2042,8 @@ key	Space	空格
 	The labels are in English: the signature's font can't draw them in this language.	簽名使用的字型無法顯示此語言的標籤，因此標籤以英文顯示。
 	The linked PDF opened, but its named destination was not applied.	已開啟連結的 PDF，但未套用其命名目的地。
 	The linked PDF opened, but its page destination was out of range.	已開啟連結的 PDF，但其頁面目的地超出範圍。
+	The measurement list reached its safety limit.	量測清單已達到安全上限。
+	The model viewport is too narrow to display.	模型視埠太窄，無法顯示。
 	the name is not a plain file name	名稱不是單純的檔案名稱
 	The newest {n} of {total} PDFs	共 {total} 個 PDF 中最新的 {n} 個
 	The operation failed.	操作失敗。
@@ -1919,6 +2058,7 @@ key	Space	空格
 	The same password is tried on each file.	將對每個檔案嘗試同一密碼。
 	The selected area has been copied ({w} × {h} pixels)	所選區域已複製（{w} × {h} 畫素）
 	The selected fields could not be found. Select them again.	找不到所選欄位。請重新選取。
+	The selected scale could not be read.	無法讀取所選比例。
 	The signature will be invisible.	簽名將不可見。
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	標準字型無法顯示「{c}」（{code}）。目前只能新增西歐字元作為文字。
 	The text is the same	文字相同
@@ -1945,6 +2085,7 @@ key	Space	空格
 	This document asks to open in Full Screen mode: the page fills the screen and nothing else shows. Press Esc at any time to leave it.	這份文件要求以全螢幕模式開啟：頁面佔滿整個螢幕，不顯示其他東西。隨時按 Esc 即可離開。
 	This document can't be checked: it couldn't be read for editing	無法檢驗本文件：無法讀取進行編輯
 	This document contains {n} interactive form fields.	本文件包含 {n} 個互動式表單欄位。
+	This document does not allow measurement edits.	此文件不允許編輯量測。
 	This document has no attachments.	本文件沒有附件。
 	This document has no comments to flatten	本文件沒有可平面化的註解
 	This document has no document-level scripts.	本文件沒有文件級指令碼。
@@ -1977,11 +2118,13 @@ key	Space	空格
 	This measurement needs at least {n} points.	此測量至少需要 {n} 個點。
 	This page contains objects that cannot be selected together.	此頁面包含無法一起選取的物件。
 	This page couldn't be displayed.\n{e}	無法顯示此頁面。\n{e}
+	This page has no 3D models.	此頁沒有3D模型。
 	This PDF uses the unsupported {s} action.	此 PDF 使用了不支援的 {s} 動作。
 	This printer offers no settings of its own.	此印表機沒有專屬設定。
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	此印表機的驅動程式不接受其他程式的雙面列印設定，因此使用其自身設定。變更位置：屬性…
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	這個網址混用了不同字母系統的字母，這是仿冒其他網站名稱的常見手法。
 	This web address uses letters from another alphabet, which can look like familiar ones.	這個網址使用了其他字母系統的字母，看起來可能和常見字母很像。
+	Thousands separator	千位分隔符
 	Thumbnail size	縮圖大小
 	Tile scale:	平鋪比例：
 	Timed responses	限時回應
@@ -2001,6 +2144,7 @@ key	Space	空格
 	TR must be a child of Table, THead, TBody, or TFoot	TR 必須是 Table、THead、TBody 或 TFoot 的子級
 	Transform image	變換影像
 	Trim the picture with its handles; Enter or Done applies	用控點裁切圖片;按 Enter 或「完成」套用
+	Truncated	截斷
 	Trust	信任
 	Try the form as people filling it in will see it	以填寫者的角度試用表單
 	Turn upside down (180°)	上下顛倒 (180°)
@@ -2021,6 +2165,12 @@ key	Space	空格
 	Underline text	文字加上底線
 	Undid {label}	已復原{label}
 	Unit	單位
+	Unit before value	單位顯示在數值前
+	Unit display format	單位顯示格式
+	Unit prefix	單位前綴
+	Unit suffix	單位後綴
+	Units per model unit	每個模型單位的單位數
+	Units run from largest to smallest. Later factors convert the remainder.	單位從大到小排列，後續係數換算餘數。
 	Unknown author	未知作者
 	Unlock comment	解鎖註解
 	Unlock {name}	解除鎖定 {name}
@@ -2039,9 +2189,12 @@ key	Space	空格
 	Update background…	更新背景…
 	Update header & footer	更新頁首與頁尾
 	Update header & footer…	更新頁首與頁尾…
+	Update measurement	更新測量
 	Update watermark	更新浮水印
 	Update watermark…	更新浮水印…
+	Updating 3D view…	正在更新3D視圖…
 	URL to submit to	要送出到的 URL
+	US survey feet	美國測量英呎
 	Use 72 DPI (one point per pixel)	使用 72 DPI（每個像素一點）
 	Use a certificate	使用憑證
 	Use a Digital ID from a file	使用檔案中的數位 ID
@@ -2055,8 +2208,10 @@ key	Space	空格
 	Use now	立即使用
 	Use overlay text	使用覆蓋文字
 	Use print production	使用印刷製作工具
+	Use projected coordinate matrix	使用投影座標矩陣
 	Use system setting	使用系統設定
 	Use system title bar	使用系統標題列
+	Use WKT definition	使用 WKT 定義
 	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	在 PDF 未指定版面配置或縮放時使用。連續捲動不會在頁面之間自動對齊。
 	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	開啟 PDF 時使用。若啟動時或透過控制通道明確指定了模式，則本次工作階段以該模式為準。
 	User Interface Options	使用者介面選項
@@ -2075,9 +2230,13 @@ key	Space	空格
 	Verify	驗證
 	Verify to see what the document needs.	驗證以檢視文件需要什麼。
 	Version {v}	版本{v}
+	Vertex snapping	吸附頂點
+	Vertical coordinates	縱向座標
 	Vertical reversed	垂直反轉
 	Vertical text cannot be moved with this selection.	無法隨此選取範圍移動直排文字。
+	Vertical to horizontal conversion	縱向到橫向換算
 	Vertically	垂直分佈
+	Vertices	頂點
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	影片、聲音和富媒體必須標記才能被播報。請標記多媒體註解。
 	View less	顯示較少
 	View more	顯示更多
@@ -2086,6 +2245,7 @@ key	Space	空格
 	Viewing	檢視
 	Viewport	視埠
 	Viewport rectangle in page points (x, y, width, height)	以頁面點數指定視埠矩形（x、y、寬度、高度）
+	Viewport width and height must be positive.	檢視區的寬度和高度必須為正數。
 	Visible Rectangle	可見矩形
 	Visual	視覺
 	watermark	浮水印
@@ -2097,6 +2257,7 @@ key	Space	空格
 	Whole words only	僅全字相符
 	Window Options	視窗選項
 	Windows store  ·  	Windows 憑證存放區 · 
+	WKT definition	WKT 定義
 	Word count	字詞統計
 	Word counting stopped unexpectedly.	字詞統計意外停止。
 	Word count…	字詞統計…
