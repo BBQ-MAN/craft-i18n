@@ -64,6 +64,7 @@
 	a field named {name} already exists	вече съществува поле с име {name}
 	A folder is asked for when a multiple-file run starts	Папката се избира при стартиране на обработка на няколко файла
 	A form field has additional actions	Поле на формуляр има допълнителни действия
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локалният модел не е водещ облачен модел: може да греши, а дълъг отговор отнема време на процесор. Проверявайте важното и съобразявайте размера на модела с тази машина, преди да го изтеглите.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Лого или име вляво от разделите, където би ги показала заглавната лента: на PdfCraft или на вашата фирма.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Броят страници спира подавача след толкова листа. Отказът спира прехвърлянето по-рано; вече получените страници остават в документа.
@@ -654,6 +655,7 @@
 	Could not mark the selection because text could not be read on every page	Избраният текст не може да бъде маркиран, защото текстът не можа да бъде прочетен на всички страници
 	Could not save: {e}	Неуспешно записване: {e}
 	Couldn't add {name}: {e}	{name} не можа да бъде добавен: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Файловете не можаха да бъдат обединени: {e}
 	Couldn't copy the image: {e}	Изображението не можа да бъде копирано: {e}
 	Couldn't create a PDF: {e}	Не можа да се създаде PDF файл: {e}
@@ -1203,6 +1205,7 @@ scroll speed	Fast	Висока
 	Flip Vertical	Обърни вертикално
 	Flip vertical	Обърни вертикално
 	Float panel	Откачи панела
+	Folder	Folder
 	Folders	Папки
 	Font colour:	Цвят на шрифта:
 	Font file	Файл с шрифт
@@ -1330,7 +1333,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Кодирай с Flate потоците, кодирани с LZW
 	In this file	В този файл
 	Include revocation information when signing (LTV)	Включване на информация за отмяна при подписване (LTV)
-	Include subfolders	Включване на подпапките
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Съдържа незаписани промени
 	Incompatible	Несъвместимо
 	Incorrect password. Try again.	Грешна парола. Опитайте отново.
@@ -1435,6 +1438,7 @@ key	Home	Home
 	Large scan	Голямо сканиране
 	Larger pages	По-големи страници
 	Larger text	По-голям текст
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	По-големи миниатюри
 	Last commit	Последен къмит
 	Last page	Последна страница
@@ -1486,6 +1490,7 @@ key	Home	Home
 	List labels and bodies belong in a list item. Fix the list's tags.	Етикетите и телата на списъка трябва да са в елемент на списък. Поправете етикетите на списъка.
 	List PKCS #11 token (smart card, HSM) signing identities	Извеждане на списък с идентичности за подписване от PKCS #11 токени (чип карти, HSM)
 	Listing scanners…	Изброяване на скенери…
+	Listing the folder…	Listing the folder…
 	Lists	Списъци
 	Load document font	Зареждане на шрифт на документа
 	Load font…	Зареждане на шрифт…
@@ -1545,6 +1550,7 @@ key	Home	Home
 	Mask:	Маска:
 	Match page at 100%	Хартия по страницата, мащаб 100%
 	Matches what was signed	Съответства на подписаното
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximum	Максимално
 	maximum	максимума
 	May	Май
@@ -1758,6 +1764,7 @@ scroll speed	Normal	Нормална
 	Not present	Няма
 	Not rated	Без оценка
 	Not replaced: {why}	Не е заменено: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Бележка
 	Nothing	Нищо
 	nothing in the file matches this document	нищо във файла не съответства на този документ
@@ -1935,6 +1942,7 @@ animation effects	On	Включени
 	Pages per sheet:	Страници на лист:
 	Pages selected	Избрани страници
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Страниците, които са само снимки на текст, не могат да се четат на глас или да се търсят. Разпознайте текста (OCR), за да добавите текстов слой.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Страниците, които използват шрифтове Type 3, се отпечатват като изображения, защото Windows може да затвори PdfCraft, докато ги отпечатва. Останалите страници се отпечатват както обикновено.
 	Pages to Print	Страници за печат
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Страници, чийто текст не можа да бъде прочетен: {n}. Съвпадение в тях не е показано.
@@ -2133,6 +2141,7 @@ animation effects	On	Включени
 	Read to end of document	Четене до края на документа
 	Read {n} words on {m} of {t} pages	Прочетени {n} думи на {m} от {t} страници
 	Reading colours	Цветове за четене
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Опции за четене…
 	Reading page {page}…	Четене на страница {page}…
 	Reading Preferences	Предпочитания за четене
@@ -2486,6 +2495,8 @@ animation effects	On	Включени
 	Scroll tabs left	Превърти разделите наляво
 	Scroll tabs right	Превърти разделите надясно
 	Scroll the page	Превъртане на страницата
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Търсене в коментарите
 	Search complete.	Търсенето приключи.
 	Search panel	Панел за търсене
@@ -2494,10 +2505,12 @@ animation effects	On	Включени
 	Search tools…	Търсене на инструменти…
 	Searchable Image	Изображение с търсене
 	Searchable Image (Exact)	Изображение с възможност за търсене (точно)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching…	Търсене…
 	Searching… {s} of {p} pages	Търсене… {s} от {p} страници
 	Searching… {s}/{p}	Търсене… {s}/{p}
 	Search…	Търсене…
+	Secured	Secured
 	Security	Защита
 	Security method	Метод на защита
 	Security properties	Свойства на защитата
@@ -2756,8 +2769,11 @@ action wizard	Start	Старт
 	Sticky note	Бележка
 	still checking whether the tesseract program can run; try again in a moment	все още се проверява дали програмата tesseract може да работи; опитайте отново след малко
 	Still printing; the job continues on the printer	Печатът продължава; заданието се изпълнява на принтера
-	Stop	Стоп
+	Stop	Stop
 	Stop reading	Спиране на четенето
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Изправяне на сканирана страница
 	Straighten skewed scans	Изправяне на наклонени сканирани страници
 	Straighten the page	Изправи страницата
@@ -2973,6 +2989,7 @@ action wizard	Start	Старт
 	The release has ambiguous packages. Choose a package on the official release page.	Пакетите за това издание са нееднозначни. Изберете пакет от официалната страница на изданието.
 	The release is not a published stable update. Try again later.	Това издание не е публикувана стабилна актуализация. Опитайте отново по-късно.
 	The replacement file doesn't have that many pages.	Заместващият файл няма толкова страници.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Ограниченията важат за получателите без „Всички разрешения“. Прилага се при записване.
 	The reverse sides already scanned are kept.	Вече сканираните оборотни страни са запазени.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	редовете са твърде ниски: направете областта по-висока или използвайте по-малко редове или по-малко разстояние между тях
@@ -2992,6 +3009,7 @@ action wizard	Start	Старт
 	The scanner reported a lamp or device error.	Скенерът съобщи за грешка на лампата или устройството.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Скенерът съобщи за проблем с хартията (заседнала хартия или няколко едновременно подадени листа).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Действителният брой пиксели на инч на екрана. Калибрирайте с линийка, за да може действителният размер (100%) да показва страниците в истинския им размер.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	Копията с възможност за търсене се записват тук под имената на изходните файлове
 	The selected area has been copied ({w} × {h} pixels)	Избраната област е копирана ({w} × {h} пиксела)
 	The selected area is no longer on a page of this document.	Избраната област вече не е на страница от този документ.
@@ -3085,6 +3103,7 @@ action wizard	Start	Старт
 	This file is already as small as it can be made ({size}). No copy was saved.	Файлът вече е възможно най-малък ({size}). Не е записано копие.
 	this file isn't XFDF, FDF, XML or text form data	този файл не е XFDF, FDF, XML или текстови данни на формуляр
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Този файл беше повреден и е поправен. При записване се запазва поправената версия.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Тази папка в момента не е достъпна. Може да е преместена или дискът, на който е, или облачната синхронизация да не са на линия.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Този файл с шрифт не може да се използва. Изберете четим файл TTF, OTF или TTC.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Този формуляр съдържа и XFA данни, които PdfCraft все още не чете. Можете да попълвате полетата му, но Acrobat може да покаже вместо това XFA стойностите.
@@ -3146,6 +3165,7 @@ action wizard	Start	Старт
 	Too early	Твърде рано
 	Too many copies: increase the spacing or the size.	Твърде много копия: увеличете разстоянието или размера.
 	Too many spot inks to separate: {names}	Твърде много специални мастила за цветоотделяне: {names}
+	Took too long to read	Took too long to read
 	Tools panel side	Страна на панела с инструменти
 	Tooltip	Подсказка
 	Tooltip:	Подсказка:

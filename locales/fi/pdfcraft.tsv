@@ -77,6 +77,7 @@
 	A line has width 0, the thinnest the printer can draw	Viivan leveys on 0, ohuin, jonka tulostin voi piirtää
 	A line is {} pt wide	Viivan leveys on {} pt
 	A link	Linkki
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logo tai nimi välilehtien vasemmalla puolella, jossa otsikkorivi näyttäisi sellaisen: PdfCraftin oma tai yrityksesi.
 	A mesh shading's colours change too sharply between its corners to convert to CMYK exactly	Verkkosävytyksen värit muuttuvat kulmien välillä liian jyrkästi tarkasti CMYK:ksi muunnettaviksi
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
@@ -673,6 +674,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Correct recognized text	Korjaa tunnistettu teksti
 	Could not save: {e}	Tallennus epäonnistui: {e}
 	Couldn't add {name}: {e}	Tiedoston {name} lisääminen epäonnistui: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't check for updates: {e}	Päivitysten tarkistus epäonnistui: {e}
 	Couldn't combine files: {e}	Tiedostojen yhdistäminen epäonnistui: {e}
 	Couldn't copy the image: {e}	Kuvan kopiointi epäonnistui: {e}
@@ -1369,7 +1371,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Koodaa LZW-koodatut virrat Flate-menetelmällä
 	In this file	Tässä tiedostossa
 	Include revocation information when signing (LTV)	Sisällytä sulkutiedot allekirjoitettaessa (LTV)
-	Include subfolders	Sisällytä alikansiot
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Sisältää tallentamattomia muutoksia
 	Incorrect password. Try again.	Väärä salasana. Yritä uudelleen.
 	Indent	Sisennä
@@ -1484,6 +1486,7 @@ certificate	Key usage	Avaimen käyttö
 	Language and spelling	Kieli ja oikeinkirjoitus
 	Large scan	Large scan
 	Larger pages	Suuremmat sivut
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Larger thumbnails
 	Last page	Viimeinen sivu
 	Later	Myöhemmin
@@ -1539,6 +1542,7 @@ certificate	Key usage	Avaimen käyttö
 	List labels and bodies belong in a list item. Fix the list's tags.	Luettelon nimiöiden ja runko-osien kuuluu olla luettelon kohteessa. Korjaa luettelon tagit.
 	List view	Luettelonäkymä
 	Listing scanners…	Listing scanners…
+	Listing the folder…	Listing the folder…
 	Lists	Luettelot
 	Load document font	Lataa asiakirjan fontti
 	Load font…	Lataa fontti…
@@ -1595,6 +1599,7 @@ calendar date	March	maaliskuuta
 	Mask:	Maski:
 	Match field sizes	Yhtenäistä kenttien koot
 	Match page at 100%	Sivu koossa 100 %
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	maximum	maksimi
 	May	Toukokuu
 calendar date	May	toukokuuta
@@ -1805,6 +1810,7 @@ scroll speed	Normal	Normaali
 	Not now	Ei nyt
 	Not present	Ei mukana
 	Not replaced: {why}	Ei korvattu: {why}
+	Not searched: {n}	Not searched: {n}
 	not the first child of its list	ei luettelonsa ensimmäinen lapsi
 	not the first or last child of its table	ei taulukkonsa ensimmäinen eikä viimeinen lapsi
 	Note	Huomautus
@@ -1988,6 +1994,7 @@ animation effects	On	Käytössä
 	Pages per sheet:	Sivuja arkille:
 	Pages selected	Valitut sivut
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Sivuja, jotka ovat pelkkiä kuvia tekstistä, ei voi lukea ääneen eikä hakea. Lisää tekstitaso tunnistamalla teksti (OCR).
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Type 3 -fontteja käyttävät sivut tulostetaan kuvina, koska Windows voi sulkea PdfCraftin niitä tulostettaessa. Muut sivut tulostetaan tavalliseen tapaan.
 	Pages to Print	Tulostettavat sivut
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Sivuja, joiden tekstiä ei voitu lukea: {n}. Niillä olevia osumia ei näytetä.
@@ -2163,6 +2170,7 @@ certificate	Public key	Julkinen avain
 	Read mode	Lukutila
 	Read Only	Vain luku
 	Reading colours	Lukuvärit
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading the printer's settings…	Reading the printer's settings…
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.
 	Reads {name}, which calculates later, so it shows an old value.	Reads {name}, which calculates later, so it shows an old value.
@@ -2491,6 +2499,8 @@ calendar weekday	Sa	La
 	Scroll tabs left	Vieritä välilehtiä vasemmalle
 	Scroll tabs right	Vieritä välilehtiä oikealle
 	Scroll the page	Vieritä sivua
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Hae kommenteista
 	Search panel	Hakupaneeli
 	Search results	Hakutulokset
@@ -2498,9 +2508,11 @@ calendar weekday	Sa	La
 	Search tools and commands…	Hae työkaluja ja komentoja…
 	Search tools…	Etsi työkaluja…
 	Searchable Image (Exact)	Haettava kuva (tarkka)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Haetaan… {s}/{p} sivua
 	Searching… {s}/{p}	Haetaan… {s}/{p}
 	Search…	Hae…
+	Secured	Secured
 	Security handler	Suojauksen käsittelijä
 	Security method	Suojausmenetelmä
 	Security properties	Suojausominaisuudet
@@ -2734,6 +2746,9 @@ action wizard	Start	Aloita
 	Still printing; the job continues on the printer	Tulostus on yhä kesken; työ jatkuu tulostimessa
 	Still rendering — this page is unusually complex…	Hahmonnetaan yhä – tämä sivu on tavallista monimutkaisempi…
 	Stop	Stop
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten the page	Straighten the page
 	Strength: {s}	Vahvuus: {s}
 	Strikethrough text	Yliviivaa tekstiä
@@ -3000,6 +3015,7 @@ calendar weekday	Th	To
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Uudelleenohjauksen URI:n on oltava http://127.0.0.1 tai http://localhost portin kanssa.
 	The replacement file doesn't have that many pages.	Korvaavassa tiedostossa ei ole niin montaa sivua.
 	The resolution of an image can't be measured	Kuvan tarkkuutta ei voi mitata
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Rajoitukset koskevat vastaanottajia, joilla ei ole “Kaikki oikeudet” -oikeutta. Ne otetaan käyttöön tallennettaessa.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
@@ -3023,6 +3039,7 @@ calendar weekday	Th	To
 	The scanner needs attention.	The scanner needs attention.
 	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
 	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The security settings don't allow screen readers to read the text	Suojausasetukset eivät salli näytönlukuohjelmien lukea tekstiä
 	The selected area has been copied ({w} × {h} pixels)	Valittu alue on kopioitu ({w} × {h} pikseliä)
 	The selected area is no longer on a page of this document.	Valittu alue ei ole enää tämän asiakirjan millään sivulla.
@@ -3165,6 +3182,7 @@ calendar weekday	Th	To
 	This file is already as small as it can be made ({size}). No copy was saved.	Tiedosto on jo niin pieni kuin mahdollista ({size}). Kopiota ei tallennettu.
 	this file isn't XFDF, FDF, XML or text form data	tämä tiedosto ei ole XFDF-, FDF-, XML- tai tekstimuotoista lomaketietoa
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Tämä tiedosto oli vioittunut, ja se on korjattu. Tallennus säilyttää korjatun version.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Kansio ei ole juuri nyt käytettävissä. Se on ehkä siirretty, tai sen asema tai pilvisynkronointi on offline-tilassa.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Tämä lomake sisältää myös XFA-tietoja, joita PdfCraft ei vielä lue. Voit täyttää kentät, mutta Acrobat saattaa näyttää XFA-arvot niiden sijaan.
 	This form has too many fields, or a field name too long, for PdfCraft to read them all. Any signature among the rest is not listed, so the document is treated as signed.	Tässä lomakkeessa on liian monta kenttää tai liian pitkä kentän nimi, jotta PdfCraft voisi lukea ne kaikki. Muiden joukossa olevia allekirjoituksia ei näytetä luettelossa, joten asiakirjaa käsitellään allekirjoitettuna.
@@ -3222,6 +3240,7 @@ calendar weekday	Th	To
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	Tunnukset ja älykortit allekirjoittavat PKCS #11 -moduulin kautta. Lisää vain luotettuja moduuleja: moduuli suorittaa omaa koodiaan.
 	Too early	Too early
 	Too many spot inks to separate: {names}	Liian monta spottimustetta eroteltavaksi: {names}
+	Took too long to read	Took too long to read
 	Tools panel side	Työkalupaneelin puoli
 	Tooltip	Työkaluvihje
 	Tooltip:	Työkaluvihje:

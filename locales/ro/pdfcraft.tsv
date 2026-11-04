@@ -78,6 +78,7 @@
 	A line has width 0, the thinnest the printer can draw	O linie are lățimea 0, cea mai subțire pe care o poate desena imprimanta
 	A line is {} pt wide	O linie are lățimea de {} pt
 	A link	Un link
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Un logo sau un nume în stânga filelor, unde o bară de titlu ar afișa unul: al PdfCraft sau al companiei tale.
 	A mesh shading's colours change too sharply between its corners to convert to CMYK exactly	Culorile unei umbriri mesh se schimbă prea brusc între colțuri pentru a fi convertite exact în CMYK
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
@@ -714,6 +715,7 @@ certificate	Basic constraints	Constrângeri de bază
 	Correct recognized text	Corectare text recunoscut
 	Could not save: {e}	Nu s-a putut salva: {e}
 	Couldn't add {name}: {e}	Nu s-a putut adăuga {name}: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't check for updates: {e}	Nu s-au putut căuta actualizări: {e}
 	Couldn't combine files: {e}	Nu s-au putut combina fișierele: {e}
 	Couldn't copy the image: {e}	Nu s-a putut copia imaginea: {e}
@@ -1472,7 +1474,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Folosire Flate în locul LZW pentru fluxurile codate LZW
 	In this file	În acest fișier
 	Include revocation information when signing (LTV)	Include informațiile de revocare la semnare (LTV)
-	Include subfolders	Include subfolderele
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Include modificările nesalvate
 	Incorrect password. Try again.	Parolă incorectă. Încercați din nou.
 	Indent	Indentare
@@ -1593,6 +1595,7 @@ certificate	Key usage	Utilizare cheie
 	Language and spelling	Limbă și ortografie
 	Large scan	Large scan
 	Larger pages	Pagini mai mari
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Larger thumbnails
 	Last	Ultimul
 	Last commit	Ultimul commit
@@ -1660,6 +1663,7 @@ certificate	Key usage	Utilizare cheie
 	List labels and bodies belong in a list item. Fix the list's tags.	Etichetele și corpurile listei trebuie să fie într-un element de listă. Corectați etichetele listei.
 	List view	Vizualizare listă
 	Listing scanners…	Listing scanners…
+	Listing the folder…	Listing the folder…
 	Lists	Liste
 	Load document font	Încărcare font document
 	Load font…	Încărcare font…
@@ -1719,6 +1723,7 @@ calendar date	March	martie
 	Mask:	Mască:
 	Match field sizes	Potrivire dimensiuni câmpuri
 	Match page at 100%	Potrivire pagină la 100%
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximize	Maximizare
 	Maximum	Maxim
 	maximum	maxim
@@ -1950,6 +1955,7 @@ scroll speed	Normal	Normală
 	Not now	Nu acum
 	Not present	Absent
 	Not replaced: {why}	Neînlocuit: {why}
+	Not searched: {n}	Not searched: {n}
 	not the first child of its list	nu este primul copil al listei sale
 	not the first or last child of its table	nu este nici primul, nici ultimul copil al tabelului său
 	Note	Notă
@@ -2150,6 +2156,7 @@ animation effects	On	Activate
 	Pages per sheet:	Pagini pe foaie:
 	Pages selected	Pagini selectate
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Paginile care sunt doar imagini ale textului nu pot fi citite cu voce tare sau căutate. Rulați recunoașterea textului (OCR) pentru a adăuga un strat de text.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Paginile care folosesc fonturi Type 3 se imprimă ca imagini, deoarece Windows poate închide PdfCraft în timp ce le imprimă. Celelalte pagini se imprimă ca de obicei.
 	Pages to Print	Pagini de imprimat
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Pagini al căror text nu a putut fi citit: {n}. Potrivirile de pe ele nu sunt listate.
@@ -2345,6 +2352,7 @@ certificate	Public key	Cheie publică
 	Read mode	Mod citire
 	Read Only	Doar citire
 	Reading colours	Culori de citire
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading the printer's settings…	Reading the printer's settings…
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.
 	Reads {name}, which calculates later, so it shows an old value.	Reads {name}, which calculates later, so it shows an old value.
@@ -2697,6 +2705,8 @@ calendar weekday	Sa	Sâ
 	Scroll tabs right	Derulare file la dreapta
 	Scroll the page	Derulează pagina
 	Search	Căutare
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Căutare în comentarii
 	Search panel	Panou căutare
 	Search results	Rezultatele căutării
@@ -2704,9 +2714,11 @@ calendar weekday	Sa	Sâ
 	Search tools and commands…	Căutare instrumente și comenzi…
 	Search tools…	Caută instrumente…
 	Searchable Image (Exact)	Imagine în care se poate căuta (exactă)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Se caută… {s} din {p} pagini
 	Searching… {s}/{p}	Se caută… {s}/{p}
 	Search…	Caută…
+	Secured	Secured
 	Security	Securitate
 	Security handler	Handler de securitate
 	Security method	Metodă de securitate
@@ -2953,6 +2965,9 @@ action wizard	Start	Pornire
 	Still printing; the job continues on the printer	Încă se tipărește; lucrarea continuă pe imprimantă
 	Still rendering — this page is unusually complex…	Se randează încă: această pagină este neobișnuit de complexă…
 	Stop	Stop
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten the page	Straighten the page
 	Strength: {s}	Putere: {s}
 	Strikethrough	Tăiere cu o linie
@@ -3225,6 +3240,7 @@ calendar weekday	Th	Jo
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI-ul de redirecționare trebuie să fie http://127.0.0.1 sau http://localhost cu un port.
 	The replacement file doesn't have that many pages.	Fișierul de înlocuire nu are atâtea pagini.
 	The resolution of an image can't be measured	Rezoluția unei imagini nu poate fi măsurată
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Restricțiile se aplică destinatarilor fără „Toate permisiunile”. Se aplică la salvare.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
@@ -3248,6 +3264,7 @@ calendar weekday	Th	Jo
 	The scanner needs attention.	The scanner needs attention.
 	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
 	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The security settings don't allow screen readers to read the text	Setările de securitate nu permit cititoarelor de ecran să citească textul
 	The selected area has been copied ({w} × {h} pixels)	Zona selectată a fost copiată ({w} × {h} pixeli)
 	The selected area is no longer on a page of this document.	Zona selectată nu se mai află pe o pagină a acestui document.
@@ -3390,6 +3407,7 @@ calendar weekday	Th	Jo
 	This file is already as small as it can be made ({size}). No copy was saved.	Acest fișier este deja cât de mic poate fi ({size}). Nu s-a salvat nicio copie.
 	this file isn't XFDF, FDF, XML or text form data	acest fișier nu conține date de formular XFDF, FDF, XML sau text
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Acest fișier era deteriorat și a fost reparat. Salvarea păstrează versiunea reparată.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Acest folder nu este disponibil acum. Poate a fost mutat sau unitatea ori sincronizarea cloud este offline.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Acest formular conține și date XFA, pe care PdfCraft nu le citește încă. Puteți completa câmpurile, dar Acrobat poate afișa în schimb valorile XFA.
 	This form has too many fields, or a field name too long, for PdfCraft to read them all. Any signature among the rest is not listed, so the document is treated as signed.	Acest formular are prea multe câmpuri sau un nume de câmp prea lung pentru ca PdfCraft să le poată citi pe toate. Nicio semnătură dintre celelalte nu apare în listă, așa că documentul este tratat ca semnat.
@@ -3447,6 +3465,7 @@ calendar weekday	Th	Jo
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	Tokenurile și cardurile inteligente semnează printr-un modul PKCS #11. Adăugați doar module în care aveți încredere: un modul rulează propriul cod.
 	Too early	Too early
 	Too many spot inks to separate: {names}	Prea multe cerneluri spot de separat: {names}
+	Took too long to read	Took too long to read
 	Tool	Instrument
 	Tools	Instrumente
 	Tools panel side	Partea panoului de instrumente

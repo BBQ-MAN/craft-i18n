@@ -64,6 +64,7 @@
 	A folder is asked for when a multiple-file run starts	Mapa se izbere ob zagonu obdelave več datotek
 	A form field has additional actions	Polje obrazca ima dodatna dejanja
 	A link	Povezava
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Krajevni model ni vodilni oblak: lahko se zmoti, dolg odgovor pa na procesorju vzame svoj čas. Preverite vse ključno in pred prenosom primerjte velikost modela s tem računalnikom.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logotip ali ime levo od zavihkov, kjer bi ga pokazala naslovna vrstica: PdfCraftov ali vašega podjetja.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Število strani ustavi podajalnik po toliko listih. Preklic prej konča prenos; že prejete strani ostanejo v dokumentu.
@@ -644,6 +645,7 @@
 	Could not mark the selection because text could not be read on every page	Izbire ni bilo mogoče označiti, ker besedila ni bilo mogoče prebrati na vseh straneh
 	Could not save: {e}	Shranjevanje ni uspelo: {e}
 	Couldn't add {name}: {e}	Datoteke {name} ni bilo mogoče dodati: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Datotek ni bilo mogoče združiti: {e}
 	Couldn't copy the image: {e}	Slike ni bilo mogoče kopirati: {e}
 	Couldn't create a PDF: {e}	PDF-ja ni bilo mogoče ustvariti: {e}
@@ -1173,6 +1175,7 @@ scroll speed	Fast	Hitro
 	Flip on short edge	Obrni po kratkem robu
 	Flip vertical	Prezrcali navpično
 	Float panel	Odtrgaj razdelek
+	Folder	Folder
 	Folders	Mape
 	Font	Pisava
 	Font colour:	Barva pisave:
@@ -1302,7 +1305,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	V tokovih s kodiranjem LZW uporabi Flate
 	In this file	V tej datoteki
 	Include revocation information when signing (LTV)	Ob podpisovanju vključi podatke o preklicu (LTV)
-	Include subfolders	Vključi podmape
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Vključuje neshranjene spremembe
 	Incompatible	Nezdružljivo
 	Incorrect password. Try again.	Napačno geslo. Poskusite znova.
@@ -1405,6 +1408,7 @@ key	Home	Home
 	Large scan	Velik optični prepis
 	Larger pages	Večje strani
 	Larger text	Večje besedilo
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Večje sličice
 	Last page	Zadnja stran
 	Later in calculation order	Pozneje v vrstnem redu izračunov
@@ -1454,6 +1458,7 @@ key	Home	Home
 	List labels and bodies belong in a list item. Fix the list's tags.	Oznake in telesa seznama sodijo v element seznama. Popravite oznake seznama.
 	List PKCS #11 token (smart card, HSM) signing identities	Prikaz identitet za podpisovanje iz žetonov PKCS #11 (pametne kartice, HSM)
 	Listing scanners…	Seznam optičnih bralnikov…
+	Listing the folder…	Listing the folder…
 	Lists	Seznami
 	Load document font	Naloži pisavo dokumenta
 	Load font…	Naloži pisavo…
@@ -1515,6 +1520,7 @@ key	Home	Home
 	Match field sizes	Uskladi velikosti polj
 	Match page at 100%	Prilagodi strani pri 100 %
 	Matches what was signed	Se ujema s podpisanim
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	maximum	največ
 	May	Maj
 	Measure area	Izmeri ploščino
@@ -1726,6 +1732,7 @@ scroll speed	Normal	Običajno
 	Not present	Ni prisotno
 	Not rated	Brez ocene
 	Not replaced: {why}	Ni zamenjano: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Zapisek
 	Nothing	Nič
 	nothing in the file matches this document	nič v datoteki se ne ujema s tem dokumentom
@@ -1901,6 +1908,7 @@ animation effects	On	Vklopljeni
 	Pages per sheet:	Strani na list:
 	Pages selected	Izbrane strani
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Strani, ki so samo slike besedila, ni mogoče prebrati na glas ali iskati. Prepoznajte besedilo (OCR), da dodate besedilno plast.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Strani, ki uporabljajo pisave Type 3, se natisnejo kot slike, ker lahko Windows med njihovim tiskanjem zapre PdfCraft. Druge strani se natisnejo kot običajno.
 	Pages to Print	Strani za tiskanje
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Strani, katerih besedila ni bilo mogoče prebrati: {n}. Zadetki na njih niso navedeni.
@@ -2092,6 +2100,7 @@ animation effects	On	Vklopljeni
 	Read to end of document	Preberi do konca dokumenta
 	Read {n} words on {m} of {t} pages	Prebranih {n} besed na {m} od {t} strani
 	Reading colours	Barve za branje
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Možnosti branja…
 	Reading page {page}…	Branje strani {page}…
 	Reading Preferences	Možnosti branja
@@ -2439,6 +2448,8 @@ animation effects	On	Vklopljeni
 	Scroll tabs left	Pomakni zavihke levo
 	Scroll tabs right	Pomakni zavihke desno
 	Scroll the page	Pomikaj stran
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Išči po komentarjih
 	Search complete.	Iskanje je končano.
 	Search panel	Razdelek za iskanje
@@ -2447,9 +2458,11 @@ animation effects	On	Vklopljeni
 	Search tools…	Išči orodja…
 	Searchable Image	Slika z iskalnim besedilom
 	Searchable Image (Exact)	Iskalna slika (natančna)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Iskanje… {s} od {p} strani
 	Searching… {s}/{p}	Iskanje… {s}/{p}
 	Search…	Išči…
+	Secured	Secured
 	Security method	Varnostna metoda
 	Security properties	Varnostne lastnosti
 	Security properties…	Varnostne lastnosti…
@@ -2701,8 +2714,11 @@ action wizard	Start	Začni
 	Sticky note	Opomba
 	still checking whether the tesseract program can run; try again in a moment	še preverjam, ali se program tesseract lahko zažene; poskusite znova čez trenutek
 	Still printing; the job continues on the printer	Tiskanje še poteka; opravilo se nadaljuje v tiskalniku
-	Stop	Ustavi
+	Stop	Stop
 	Stop reading	Ustavi branje
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Poravnaj skenirano stran
 	Straighten skewed scans	Poravnaj poševne skene
 	Straighten the page	Poravnaj stran
@@ -2920,6 +2936,7 @@ certificate	Subject	Imetnik
 	The release has ambiguous packages. Choose a package on the official release page.	Izdaja vsebuje več ustreznih paketov. Izberite paket na uradni strani izdaj.
 	The release is not a published stable update. Try again later.	Izdaja ni objavljena kot stabilna posodobitev. Poskusite znova pozneje.
 	The replacement file doesn't have that many pages.	Nadomestna datoteka nima toliko strani.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Omejitve veljajo za prejemnike brez „Vsa dovoljenja“. Uporabljeno ob shranjevanju.
 	The reverse sides already scanned are kept.	Že prebrane hrbtne strani so shranjene.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	vrstice so prenizke: povečajte višino območja ali uporabite manj vrstic ali manjši razmik med vrsticami
@@ -2939,6 +2956,7 @@ certificate	Subject	Imetnik
 	The scanner reported a lamp or device error.	Optični bralnik je sporočil napako svetilke ali naprave.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Optični bralnik je sporočil težavo s papirjem (zagozden papir ali več hkrati povlečenih listov).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Dejansko število slikovnih pik na palec zaslona. Umerite z ravnilom, da dejanska velikost (100 %) prikaže strani v njihovi resnični velikosti.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	Kopije z iskanjem se zapišejo sem pod imeni izvornih datotek
 	The selected area has been copied ({w} × {h} pixels)	Izbrano območje je kopirano ({w} × {h} slikovnih pik)
 	The selected area is no longer on a page of this document.	Izbrano območje ni več na nobeni strani tega dokumenta.
@@ -3032,6 +3050,7 @@ certificate	Subject	Imetnik
 	This file is already as small as it can be made ({size}). No copy was saved.	Ta datoteka je že tako majhna, kot je mogoče ({size}). Kopija ni bila shranjena.
 	this file isn't XFDF, FDF, XML or text form data	ta datoteka ni podatkov obrazca XFDF, FDF, XML ali besedilnih
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Ta datoteka je bila poškodovana in je bila popravljena. Shranjevanje obdrži popravljeno različico.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Ta mapa trenutno ni na voljo. Morda je bila premaknjena ali pa je njen pogon ali sinhronizacija v oblaku brez povezave.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Te datoteke pisave ni mogoče uporabiti. Izberite berljivo datoteko TTF, OTF ali TTC.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ta obrazec vsebuje tudi podatke XFA, ki jih PdfCraft še ne bere. Polja lahko izpolnite, vendar Acrobat morda prikaže vrednosti XFA.
@@ -3095,6 +3114,7 @@ certificate	Subject	Imetnik
 	Too many spot inks to separate: {names}	Preveč posebnih črnil za ločevanje: {names}
 	Too many windows are open	Odprtih je preveč oken
 	Too many windows for this document	Preveč oken za ta dokument
+	Took too long to read	Took too long to read
 	Tools panel side	Stran podokna z orodji
 	Tooltip	Namig
 	Tooltip:	Namig:

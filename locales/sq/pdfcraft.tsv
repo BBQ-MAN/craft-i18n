@@ -57,6 +57,7 @@
 	a field named {name} already exists	ekziston tashmë një fushë me emrin {name}
 	A form field has additional actions	Një fushë formulari ka veprime shtesë
 	A link	Një lidhje
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Një logo ose emër në të majtë të skedave, aty ku një shirit titulli do ta shfaqte: ai i PdfCraft ose ai i kompanisë suaj.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Një imazh e mbulon faqen {pages} (skanim?), prandaj sfondi nuk do të duket aty.
@@ -624,6 +625,7 @@
 	Correct recognized text	Korrigjo tekstin e njohur
 	Could not save: {e}	Nuk u ruajt: {e}
 	Couldn't add {name}: {e}	Nuk u shtua {name}: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't check for updates: {e}	Nuk u kontrollua për përditësime: {e}
 	Couldn't combine files: {e}	Nuk u bashkuan skedarët: {e}
 	Couldn't copy the image: {e}	Imazhi nuk u kopjua: {e}
@@ -1151,6 +1153,7 @@ scroll speed	Fast	Shpejt
 	Flip Vertical	Përmbys vertikalisht
 	Flip vertical	Përmbys vertikalisht
 	Float panel	Shkëput panelin
+	Folder	Folder
 	Folders	Dosjet
 	Font	Font
 	Font colour:	Ngjyra e shkronjave:
@@ -1286,7 +1289,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Në rrjedhat që përdorin kodimin LZW, përdor Flate në vend të tij
 	In this file	Në këtë skedar
 	Include revocation information when signing (LTV)	Përfshi informacionin e revokimit gjatë nënshkrimit (LTV)
-	Include subfolders	Përfshi nëndosjet
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Përfshin ndryshime të paruajtura
 	Incorrect password. Try again.	Fjalëkalim i pasaktë. Provo përsëri.
 	Indent	Zhvendos djathtas
@@ -1391,6 +1394,7 @@ key	Home	Home
 	Language and spelling	Gjuha dhe drejtshkrimi
 	Large scan	Large scan
 	Larger pages	Faqe më të mëdha
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Larger thumbnails
 	Last	E fundit
 	Last commit	Commit-i i fundit
@@ -1452,6 +1456,7 @@ key	Home	Home
 	List labels and bodies belong in a list item. Fix the list's tags.	Etiketat dhe trupat e listës i përkasin një artikulli liste. Ndreqi etiketat e listës.
 	List view	Pamja me listë
 	Listing scanners…	Listing scanners…
+	Listing the folder…	Listing the folder…
 	Lists	Listat
 	Load document font	Ngarko shkronjën e dokumentit
 	Load font…	Ngarko shkronja…
@@ -1507,6 +1512,7 @@ key	Home	Home
 	Mask:	Maska:
 	Match field sizes	Përputh madhësitë e fushave
 	Match page at 100%	Përputh faqen në 100%
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximize	Maksimizo
 	Maximum	Maksimumi
 	maximum	maksimumi
@@ -1707,6 +1713,7 @@ scroll speed	Normal	Normale
 	Not now	Not now
 	Not present	Nuk ekziston
 	Not replaced: {why}	Nuk u zëvendësua: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Shënim
 	Nothing	Asgjë
 	nothing in the file matches this document	asgjë në skedar nuk përputhet me këtë dokument
@@ -1878,6 +1885,7 @@ animation effects	On	Aktiv
 	Pages per sheet:	Faqe për fletë:
 	Pages selected	Pages selected
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Faqet që janë vetëm figura teksti nuk mund të lexohen me zë ose të kërkohen. Njih tekstin (OCR) për të shtuar një shtresë teksti.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages to Print	Faqet për t'u printuar
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Faqe teksti i të cilave nuk mund të lexohej: {n}. Përputhjet në to nuk renditen.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Faqet me lidhje, komente ose fusha duhet të kalojnë me tab sipas radhës së strukturës. Rregullimi vendos radhën e tab-it të çdo faqeje te Përdor strukturën e dokumentit.
@@ -2058,6 +2066,7 @@ animation effects	On	Aktiv
 	Read mode	Modaliteti i leximit
 	Read Only	Vetëm lexim
 	Reading colours	Ngjyrat e leximit
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading the printer's settings…	Reading the printer's settings…
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.
 	Reads {name}, which calculates later, so it shows an old value.	Reads {name}, which calculates later, so it shows an old value.
@@ -2386,15 +2395,19 @@ animation effects	On	Aktiv
 	Scroll tabs right	Lëviz skedat djathtas
 	Scroll the page	Rrëshqit faqen
 	Search	Kërko
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Kërko te komentet
 	Search panel	Paneli i kërkimit
 	Search tools and commands	Kërko mjete dhe komanda
 	Search tools and commands…	Kërko mjete dhe komanda…
 	Search tools…	Kërko mjete…
 	Searchable Image (Exact)	Imazh i kërkueshëm (i saktë)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Po kërkohet… {s} nga {p} faqe
 	Searching… {s}/{p}	Po kërkohet… {s}/{p}
 	Search…	Kërko…
+	Secured	Secured
 	Security	Siguria
 	Security method	Metoda e sigurisë
 	Security properties	Veçoritë e sigurisë
@@ -2620,6 +2633,9 @@ action wizard	Start	Fillo
 	Sticky note	Shënim ngjitës
 	Still printing; the job continues on the printer	Ende po printohet; puna vazhdon në printer
 	Stop	Stop
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten the page	Straighten the page
 	Strength: {s}	Fuqia: {s}
 	Strikethrough	Vizë mbi tekst
@@ -2807,6 +2823,7 @@ certificate	Subject	Subjekti
 	The provider's page didn't come back in time. Try again.	Faqja e ofruesit nuk u kthye në kohë. Provoni përsëri.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI-ja e ridrejtimit duhet të jetë http://127.0.0.1 ose http://localhost me një portë.
 	The replacement file doesn't have that many pages.	Skedari zëvendësues nuk ka kaq shumë faqe.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Kufizimet zbatohen për marrësit pa “Të gjitha lejet”. Zbatohet kur ruani.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
@@ -2827,6 +2844,7 @@ certificate	Subject	Subjekti
 	The scanner needs attention.	The scanner needs attention.
 	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
 	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The selected area has been copied ({w} × {h} pixels)	Zona e zgjedhur u kopjua ({w} × {h} piksel)
 	The selected area is no longer on a page of this document.	Zona e zgjedhur nuk është më në një faqe të këtij dokumenti.
 	The selected fields could not be found. Select them again.	Fushat e zgjedhura nuk u gjetën. Zgjidhni ato përsëri.
@@ -2905,6 +2923,7 @@ certificate	Subject	Subjekti
 	This file is already as small as it can be made ({size}). No copy was saved.	Ky skedar është tashmë sa më i vogël që mund të bëhet ({size}). Nuk u ruajt asnjë kopje.
 	this file isn't XFDF, FDF, XML or text form data	ky skedar nuk është të dhëna formulari XFDF, FDF, XML ose tekst
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Ky skedar ishte i dëmtuar dhe u riparua. Ruajtja mban versionin e riparuar.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Kjo dosje nuk është e disponueshme tani. Mund të jetë zhvendosur, ose disku apo sinkronizimi i saj në re është jashtë linje.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ky formular përmban edhe të dhëna XFA, të cilat PdfCraft ende nuk i lexon. Mund t'i plotësoni fushat e tij, por Acrobat mund të shfaqë në vend të tyre vlerat XFA.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Skriptet e këtij formulari janë çaktivizuar sepse njëri u ekzekutua shumë gjatë. Rihape dokumentin për t'i ekzekutuar përsëri.
@@ -2958,6 +2977,7 @@ certificate	Subject	Subjekti
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	Tokenët dhe kartat inteligjente nënshkruajnë përmes një moduli PKCS #11. Shtoni vetëm module që u besoni: një modul ekzekuton kodin e vet.
 	Too early	Too early
 	Too many spot inks to separate: {names}	Shumë bojëra spot për t'u ndarë: {names}
+	Took too long to read	Took too long to read
 	Tool	Mjeti
 	Tools	Veglat
 	Tools panel side	Ana e panelit të veglave

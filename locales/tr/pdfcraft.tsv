@@ -68,6 +68,7 @@
 	A font isn't embedded	Bir yazı tipi gömülü değil
 	A form field has additional actions	Bir form alanının ek eylemleri var
 	A link	Bir bağlantı
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Yerel bir model, en iyi bulut modeli değildir: yanılabilir ve uzun bir yanıt işlemcide zaman alır. Kritik olan her şeyi denetleyin; indirmeden önce modelin boyutunu bu makineyle karşılaştırın.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Sekmelerin solunda, başlık çubuğunun göstereceği yerde bir logo veya ad: PdfCraft'ınki ya da şirketinizinki.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Sayfa sayısı, o kadar yapraktan sonra besleyiciyi durdurur. İptal aktarımı erken bitirir; alınan sayfalar belgede kalır.
@@ -673,6 +674,7 @@
 	Could not mark the selection because text could not be read on every page	Tüm sayfalardaki metin okunamadığı için seçim işaretlenemedi
 	Could not save: {e}	Kaydedilemedi: {e}
 	Couldn't add {name}: {e}	{name} eklenemedi: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Dosyalar birleştirilemedi: {e}
 	Couldn't copy the image: {e}	Resim kopyalanamadı: {e}
 	Couldn't create a PDF: {e}	PDF oluşturulamadı: {e}
@@ -1238,6 +1240,7 @@ scroll speed	Fast	Hızlı
 	Flip vertical	Dikey çevir
 	Float (drag anywhere)	Serbest (istediğin yere sürükle)
 	Float panel	Paneli yüzdür
+	Folder	Folder
 	Folders	Klasörler
 	Font	Yazı tipi
 	Font (unnamed) on page {p} doesn't map its characters to Unicode	{p}. sayfadaki (adsız) yazı tipi karakterlerini Unicode'a eşlemiyor
@@ -1378,7 +1381,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	LZW kodlamalı akışlarda bunun yerine Flate kullan
 	In this file	Bu dosyada
 	Include revocation information when signing (LTV)	İmzalarken iptal bilgilerini ekle (LTV)
-	Include subfolders	Alt klasörleri dahil et
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Kaydedilmemiş değişiklikleri içerir
 	Incompatible	Uyumsuz
 	Incorrect password. Try again.	Yanlış parola. Tekrar deneyin.
@@ -1491,6 +1494,7 @@ key	Home	Home
 	Large scan	Büyük tarama
 	Larger pages	Daha büyük sayfalar
 	Larger text	Daha büyük metin
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Küçük resimleri büyüt
 	Last commit	Son işleme
 	Last page	Son sayfa
@@ -1545,6 +1549,7 @@ key	Home	Home
 	List labels and bodies belong in a list item. Fix the list's tags.	Liste etiketleri ve gövdeleri bir liste öğesine aittir. Listenin etiketlerini düzeltin.
 	List PKCS #11 token (smart card, HSM) signing identities	PKCS #11 belirteçlerindeki (akıllı kart, HSM) imza kimliklerini listele
 	Listing scanners…	Tarayıcılar listeleniyor…
+	Listing the folder…	Listing the folder…
 	Lists	Listeler
 	Load document font	Belge yazı tipini yükle
 	Load font…	Yazı tipi yükle…
@@ -1610,6 +1615,7 @@ key	Home	Home
 	Match field sizes	Alan boyutlarını eşleştir
 	Match page at 100%	Sayfayı %100'de eşleştir
 	Matches what was signed	İmzalananla eşleşiyor
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximum	En Yüksek
 	maximum	en büyük
 	May	Mayıs
@@ -1843,6 +1849,7 @@ scroll speed	Normal	Orta
 	Not present	Mevcut değil
 	Not rated	Derecelendirilmedi
 	Not replaced: {why}	Değiştirilmedi: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Not
 	Nothing	Hiçbiri
 	nothing in the file matches this document	dosyadaki hiçbir şey bu belgeyle eşleşmiyor
@@ -2037,6 +2044,7 @@ animation effects	On	Açık
 	Pages per sheet:	Yaprak başına sayfa:
 	Pages selected	Seçilen sayfalar
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Yalnızca metin resimlerinden oluşan sayfalar sesli okunamıyor veya aranamıyor. Metin katmanı eklemek için metni tanıyın (OCR).
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Type 3 yazı tipleri kullanan sayfalar resim olarak yazdırılır, çünkü Windows bu sayfaları yazdırırken PdfCraft'ı kapatabilir. Diğer sayfalar her zamanki gibi yazdırılır.
 	Pages to Print	Yazdırılacak Sayfalar
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Metni okunamayan sayfalar: {n}. Bu sayfalardaki eşleşmeler listelenmez.
@@ -2232,6 +2240,7 @@ animation effects	On	Açık
 	Read to end of document	Belgenin sonuna kadar oku
 	Read {n} words on {m} of {t} pages	{t} sayfanın {m} sayfasında {n} sözcük okundu
 	Reading colours	Okuma renkleri
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Okuma seçenekleri…
 	Reading page {page}…	{page}. sayfa okunuyor…
 	Reading Preferences	Okuma Tercihleri
@@ -2595,6 +2604,8 @@ calendar weekday	Sa	Ct
 	Scroll tabs left	Sekmeleri sola kaydır
 	Scroll tabs right	Sekmeleri sağa kaydır
 	Scroll the page	Sayfayı kaydır
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search all tools…	Tüm araçlarda ara…
 	Search comments	Yorumları ara
 	Search complete.	Arama tamamlandı.
@@ -2606,9 +2617,11 @@ calendar weekday	Sa	Ct
 	Search tools…	Araçları ara…
 	Searchable Image	Aranabilir Resim
 	Searchable Image (Exact)	Aranabilir Resim (Tam)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Aranıyor… {s} / {p} sayfa
 	Searching… {s}/{p}	Aranıyor… {s}/{p}
 	Search…	Ara…
+	Secured	Secured
 	Security method	Güvenlik yöntemi
 	Security properties	Güvenlik özellikleri
 	Security properties…	Güvenlik özellikleri…
@@ -2870,7 +2883,11 @@ action wizard	Start	Başlat
 	still checking whether the tesseract program can run; try again in a moment	tesseract programının çalışıp çalışamayacağı hâlâ denetleniyor; birazdan yeniden deneyin
 	Still printing; the job continues on the printer	Yazdırma sürüyor; iş yazıcıda devam ediyor
 	Still rendering — this page is unusually complex…	Hâlâ işleniyor — bu sayfa alışılmadık derecede karmaşık…
+	Stop	Stop
 	Stop reading	Okumayı durdur
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Taranmış sayfayı düzelt
 	Straighten skewed scans	Eğik taramaları düzelt
 	Straighten the page	Sayfayı düzelt
@@ -3120,6 +3137,7 @@ calendar weekday	Th	Pe
 	The release has ambiguous packages. Choose a package on the official release page.	Sürümde birden fazla uyumlu paket var. Resmî sürüm sayfasından bir paket seçin.
 	The release is not a published stable update. Try again later.	Sürüm, yayımlanmış kararlı bir güncelleme değil. Daha sonra yeniden deneyin.
 	The replacement file doesn't have that many pages.	Yedek dosyada o kadar sayfa yok.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Kısıtlamalar “Tüm izinler” olmayan alıcılar için geçerlidir. Kaydettiğinizde uygulanır.
 	The reverse sides already scanned are kept.	Daha önce taranan arka yüzler saklandı.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	satırlar çok kısa: alanı uzatın ya da daha az satır veya daha az satır aralığı kullanın
@@ -3141,6 +3159,7 @@ calendar weekday	Th	Pe
 	The scanner reported a lamp or device error.	Tarayıcı bir lamba veya aygıt hatası bildirdi.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Tarayıcı bir kağıt sorunu bildirdi (sıkışma veya birden fazla sayfanın birlikte çekilmesi).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Ekranın inç başına gerçek piksel sayısı. Gerçek boyutun (%100) sayfaları gerçek büyüklüklerinde göstermesi için bir cetvelle kalibre edin.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	Aranabilir kopyalar buraya kaynak adlarıyla yazılır
 	The security settings don't allow screen readers to read the text	Güvenlik ayarları ekran okuyucuların metni okumasına izin vermiyor
 	The selected area has been copied ({w} × {h} pixels)	Seçilen alan kopyalandı ({w} × {h} piksel)
@@ -3278,6 +3297,7 @@ calendar weekday	Th	Pe
 	This file is already as small as it can be made ({size}). No copy was saved.	Bu dosya zaten olabildiğince küçük ({size}). Kopya kaydedilmedi.
 	this file isn't XFDF, FDF, XML or text form data	bu dosya XFDF, FDF, XML veya metin form verisi değil
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Bu dosya hasarlıydı ve onarıldı. Kaydetmek onarılan sürümü korur.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Bu klasör şu anda kullanılamıyor. Taşınmış olabilir veya sürücüsü ya da bulut eşitlemesi çevrimdışı olabilir.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Bu yazı tipi dosyası kullanılamıyor. Okunabilir bir TTF, OTF veya TTC dosyası seçin.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Bu form aynı zamanda PdfCraft'ın henüz okumadığı XFA verilerini de içerir. Alanlarını doldurabilirsiniz ancak Acrobat bunun yerine XFA değerlerini gösterebilir.
@@ -3344,6 +3364,7 @@ calendar weekday	Th	Pe
 	Too many spot inks to separate: {names}	Ayrıştırılamayacak kadar çok spot mürekkep: {names}
 	Too many windows are open	Çok fazla pencere açık
 	Too many windows for this document	Bu belge için çok fazla pencere var
+	Took too long to read	Took too long to read
 	Toolbar size	Araç çubuğu boyutu
 	Tools panel side	Araçlar panelinin yeri
 	Tooltip	İpucu

@@ -65,6 +65,7 @@
 	A folder is asked for when a multiple-file run starts	Теку запитують під час запуску обробки кількох файлів
 	A form field has additional actions	Поле форми має додаткові дії
 	A link	Посилання
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локальна модель — не передова хмарна: вона може помилятися, і довга відповідь на процесорі займає час. Перевіряйте все важливе й співвідносьте розмір моделі з цією машиною до завантаження.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Логотип або назва ліворуч від вкладок, там, де їх показав би рядок заголовка: PdfCraft або вашої компанії.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Кількість сторінок зупиняє подавач після стількох аркушів. Скасування раніше завершує передачу; уже отримані сторінки лишаються в документі.
@@ -649,6 +650,7 @@ calendar date	August	серпня
 	Could not mark the selection because text could not be read on every page	Не вдалося позначити виділення, оскільки текст не вдалося прочитати на всіх сторінках
 	Could not save: {e}	Не вдалося зберегти: {e}
 	Couldn't add {name}: {e}	Не вдалося додати {name}: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Не вдалося об’єднати файли: {e}
 	Couldn't copy the image: {e}	Не вдалося скопіювати зображення: {e}
 	Couldn't create a PDF: {e}	Не вдалося створити PDF: {e}
@@ -1188,6 +1190,7 @@ calendar date	February	лютого
 	Flip on short edge	Перевертати за коротким краєм
 	Flip vertical	Віддзеркалити вертикально
 	Float panel	Відкріпити панель
+	Folder	Folder
 	Folders	Теки
 	Font colour:	Колір шрифту:
 	Font file	Файл шрифту
@@ -1316,7 +1319,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Використовувати Flate замість LZW у потоках із кодуванням LZW
 	In this file	У цьому файлі
 	Include revocation information when signing (LTV)	Додавати відомості про відкликання під час підписування (LTV)
-	Include subfolders	Разом із вкладеними теками
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Містить незбережені зміни
 	Incompatible	Несумісно
 	Incorrect password. Try again.	Неправильний пароль. Спробуйте ще раз.
@@ -1424,6 +1427,7 @@ calendar date	June	червня
 	Large scan	Велике сканування
 	Larger pages	Більші сторінки
 	Larger text	Більший текст
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Збільшити мініатюри
 	Last page	Остання сторінка
 	Later in calculation order	Пізніше в порядку обчислень
@@ -1475,6 +1479,7 @@ calendar date	June	червня
 	List labels and bodies belong in a list item. Fix the list's tags.	Позначки й вміст списку мають належати елементу списку. Виправте теги списку.
 	List PKCS #11 token (smart card, HSM) signing identities	Список ідентифікаторів підпису з токенів PKCS #11 (смарт-карти, HSM)
 	Listing scanners…	Список сканерів…
+	Listing the folder…	Listing the folder…
 	Lists	Списки
 	Load document font	Завантажити шрифт документа
 	Load font…	Завантажити шрифт…
@@ -1539,6 +1544,7 @@ calendar date	March	березня
 	Match field sizes	Задати однакові розміри полів
 	Match page at 100%	Підібрати папір, масштаб 100%
 	Matches what was signed	Відповідає підписаному
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximum	Максимальна
 	maximum	максимум
 	May	Травень
@@ -1753,6 +1759,7 @@ scroll speed	Normal	Звичайна
 	Not present	Відсутнє
 	Not rated	Без оцінки
 	Not replaced: {why}	Не замінено: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Нотатка
 	Nothing	Нічого
 	nothing in the file matches this document	ніщо у файлі не відповідає цьому документу
@@ -1930,6 +1937,7 @@ animation effects	On	Увімкнено
 	Pages per sheet:	Сторінок на аркуші:
 	Pages selected	Вибрані сторінки
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Сторінки, які є лише зображеннями тексту, неможливо прочитати вголос або шукати. Розпізнайте текст (OCR), щоб додати текстовий шар.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Сторінки зі шрифтами Type 3 друкуються як зображення, бо Windows може закрити PdfCraft під час їх друку. Інші сторінки друкуються як зазвичай.
 	Pages to Print	Сторінки для друку
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Сторінки, текст яких не вдалося прочитати: {n}. Збіги на них не показано.
@@ -2122,6 +2130,7 @@ animation effects	On	Увімкнено
 	Read to end of document	Читати до кінця документа
 	Read {n} words on {m} of {t} pages	Прочитано {n} слів на {m} з {t} сторінок
 	Reading colours	Кольори для читання
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Параметри читання…
 	Reading page {page}…	Читання сторінки {page}…
 	Reading Preferences	Параметри читання
@@ -2468,6 +2477,8 @@ animation effects	On	Увімкнено
 	Scroll tabs left	Прокрутити вкладки ліворуч
 	Scroll tabs right	Прокрутити вкладки праворуч
 	Scroll the page	Прокрутити сторінку
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Пошук коментарів
 	Search complete.	Пошук завершено.
 	Search panel	Панель пошуку
@@ -2476,10 +2487,12 @@ animation effects	On	Увімкнено
 	Search tools…	Шукати інструменти…
 	Searchable Image	Зображення з пошуком
 	Searchable Image (Exact)	Зображення з пошуком (точне)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching…	Пошук…
 	Searching… {s} of {p} pages	Пошук… {s} із {p} сторінок
 	Searching… {s}/{p}	Пошук… {s}/{p}
 	Search…	Пошук…
+	Secured	Secured
 	Security	Захист
 	Security method	Спосіб захисту
 	Security properties	Властивості захисту
@@ -2735,8 +2748,11 @@ action wizard	Start	Почати
 	Sticky note	Нотатка
 	still checking whether the tesseract program can run; try again in a moment	триває перевірка, чи може запуститися програма tesseract; спробуйте ще раз за мить
 	Still printing; the job continues on the printer	Друк триває; завдання виконується на принтері
-	Stop	Стоп
+	Stop	Stop
 	Stop reading	Зупинити читання
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Вирівняти відскановану сторінку
 	Straighten skewed scans	Вирівнювати нахилені скани
 	Straighten the page	Вирівняти сторінку
@@ -2957,6 +2973,7 @@ certificate	Subject	Власник сертифіката
 	The release has ambiguous packages. Choose a package on the official release page.	У випуску є кілька сумісних пакетів. Виберіть пакет на офіційній сторінці випусків.
 	The release is not a published stable update. Try again later.	Це не опубліковане стабільне оновлення. Спробуйте пізніше.
 	The replacement file doesn't have that many pages.	Файл заміни не має такої кількості сторінок.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Обмеження діють для одержувачів без «Усі дозволи». Застосовується під час збереження.
 	The reverse sides already scanned are kept.	Уже відскановані зворотні боки збережено.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	рядки занадто низькі: збільште висоту області, зменште кількість рядків або інтервал між ними
@@ -2976,6 +2993,7 @@ certificate	Subject	Власник сертифіката
 	The scanner reported a lamp or device error.	Сканер повідомив про помилку лампи або пристрою.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Сканер повідомив про проблему з папером (зминання або одночасна подача кількох аркушів).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Справжня кількість пікселів на дюйм екрана. Відкалібруйте лінійкою, щоб реальний розмір (100%) показував сторінки в їхньому справжньому розмірі.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	Копії з пошуком записуються сюди під назвами вихідних файлів
 	The selected area has been copied ({w} × {h} pixels)	Вибрану область скопійовано ({w} × {h} пікселів)
 	The selected area is no longer on a page of this document.	Вибраної області більше немає на жодній сторінці цього документа.
@@ -3070,6 +3088,7 @@ certificate	Subject	Власник сертифіката
 	This file is already as small as it can be made ({size}). No copy was saved.	Цей файл уже мінімального розміру ({size}). Копію не збережено.
 	this file isn't XFDF, FDF, XML or text form data	цей файл не містить даних форми XFDF, FDF, XML чи текстових даних
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Цей файл було пошкоджено й виправлено. Збереження збереже виправлену версію.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Ця тека зараз недоступна. Можливо, її переміщено або її диск чи хмарна синхронізація не в мережі.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Цей файл шрифту неможливо використати. Виберіть доступний для читання файл TTF, OTF або TTC.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ця форма також містить дані XFA, які PdfCraft ще не читає. Ви можете заповнювати поля, але Acrobat може показувати натомість значення XFA.
@@ -3131,6 +3150,7 @@ certificate	Subject	Власник сертифіката
 	Too early	Зарано
 	Too many copies: increase the spacing or the size.	Забагато копій: збільште відстань або розмір.
 	Too many spot inks to separate: {names}	Забагато плашкових фарб для кольороподілу: {names}
+	Took too long to read	Took too long to read
 	Tools	Інструменти
 	Tools panel side	Бік панелі інструментів
 	Tooltip	Підказка

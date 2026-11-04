@@ -64,6 +64,7 @@
 	A folder is asked for when a multiple-file run starts	Folder jest wybierany przy uruchomieniu przetwarzania wielu plików
 	A form field has additional actions	Pole formularza zawiera dodatkowe akcje
 	A link	Łącze
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Lokalny model to nie czołowy model z chmury: może się mylić, a długa odpowiedź na procesorze zajmuje chwilkę. Sprawdzaj wszystko krytyczne i przed pobraniem porównaj rozmiar modelu z tym komputerem.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logo lub nazwa po lewej stronie kart, tam gdzie pokazałby je pasek tytułu: PdfCraft albo Twojej firmy.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Liczba stron zatrzymuje podajnik po tylu arkuszach. Anulowanie kończy transfer wcześniej; już odebrane strony pozostają w dokumencie.
@@ -644,6 +645,7 @@ calendar date	August	sierpnia
 	Could not mark the selection because text could not be read on every page	Nie można oznaczyć zaznaczenia, ponieważ nie udało się odczytać tekstu na wszystkich stronach
 	Could not save: {e}	Nie można zapisać: {e}
 	Couldn't add {name}: {e}	Nie można dodać {name}: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Nie można połączyć plików: {e}
 	Couldn't copy the image: {e}	Nie można skopiować obrazu: {e}
 	Couldn't create a PDF: {e}	Nie można utworzyć PDF: {e}
@@ -1305,7 +1307,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Zakoduj strumienie LZW metodą Flate
 	In this file	W tym pliku
 	Include revocation information when signing (LTV)	Dołączaj informacje o unieważnieniu podczas podpisywania (LTV)
-	Include subfolders	Uwzględnij podfoldery
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Zawiera niezapisane zmiany
 	Incorrect password. Try again.	Nieprawidłowe hasło. Spróbuj ponownie.
 	Indent	Zwiększ wcięcie
@@ -1408,6 +1410,7 @@ calendar date	June	czerwca
 	Large scan	Large scan
 	Larger pages	Większe strony
 	Larger text	Większy tekst
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Większe miniatury
 	Last page	Ostatnia strona
 	Later in calculation order	Później w kolejności obliczeń
@@ -1462,6 +1465,7 @@ calendar date	June	czerwca
 	List labels and bodies belong in a list item. Fix the list's tags.	Etykiety i treść listy należą do jej elementu. Popraw tagi listy.
 	List view	Widok listy
 	Listing scanners…	Listing scanners…
+	Listing the folder…	Listing the folder…
 	Lists	Listy
 	Load document font	Wczytaj czcionkę dokumentu
 	Load font…	Wczytaj czcionkę…
@@ -1523,6 +1527,7 @@ calendar date	March	marca
 	Match field sizes	Dopasuj rozmiary pól
 	Match page at 100%	Dopasuj stronę w skali 100%
 	Matches what was signed	Odpowiada temu, co podpisano
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximize	Zmaksymalizuj
 	maximum	maksimum
 	May	Maj
@@ -1733,6 +1738,7 @@ scroll speed	Normal	Normalna
 	Not present	Brak
 	Not rated	Bez oceny
 	Not replaced: {why}	Nie zastąpiono: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Notatka
 	Nothing	Nic
 	nothing in the file matches this document	żadne dane w pliku nie pasują do tego dokumentu
@@ -1916,6 +1922,7 @@ animation effects	On	Włączone
 	Pages per sheet:	Strony na arkusz:
 	Pages selected	Zaznaczone strony
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Stron będących jedynie obrazami tekstu nie można odczytać na głos ani przeszukiwać. Rozpoznaj tekst (OCR), aby dodać warstwę tekstową.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Strony z czcionkami Type 3 są drukowane jako obrazy, ponieważ Windows może zamknąć PdfCraft podczas ich drukowania. Pozostałe strony drukują się jak zwykle.
 	Pages to Print	Strony do wydrukowania
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Strony, których tekstu nie udało się odczytać: {n}. Dopasowania na nich nie są wymienione.
@@ -2111,6 +2118,7 @@ animation effects	On	Włączone
 	Read to end of document	Czytaj do końca dokumentu
 	Read {n} words on {m} of {t} pages	Odczytano {n} słów na {m} z {t} stron
 	Reading colours	Kolory do czytania
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Opcje czytania…
 	Reading page {page}…	Czytanie strony {page}…
 	Reading Preferences	Preferencje czytania
@@ -2454,6 +2462,8 @@ animation effects	On	Włączone
 	Scroll tabs right	Przewiń karty w prawo
 	Scroll the page	Przewiń stronę
 	Search	Szukaj
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Szukaj komentarzy
 	Search complete.	Wyszukiwanie zakończone.
 	Search panel	Panel wyszukiwania
@@ -2462,9 +2472,11 @@ animation effects	On	Włączone
 	Search tools…	Szukaj narzędzi…
 	Searchable Image	Obraz z możliwością wyszukiwania
 	Searchable Image (Exact)	Obraz z możliwością wyszukiwania (dokładny)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Wyszukiwanie… strona {s} z {p}
 	Searching… {s}/{p}	Wyszukiwanie… {s}/{p}
 	Search…	Szukaj…
+	Secured	Secured
 	Security method	Metoda zabezpieczeń
 	Security properties	Właściwości zabezpieczeń
 	Security properties…	Właściwości zabezpieczeń…
@@ -2719,6 +2731,9 @@ action wizard	Start	Uruchom
 	Still printing; the job continues on the printer	Nadal trwa drukowanie; zadanie jest kontynuowane na drukarce
 	Stop	Stop
 	Stop reading	Zatrzymaj czytanie
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Wyprostuj zeskanowaną stronę
 	Straighten skewed scans	Prostuj przekrzywione skany
 	Straighten the page	Straighten the page
@@ -2951,6 +2966,7 @@ certificate	Subject	Podmiot certyfikatu
 	The release has ambiguous packages. Choose a package on the official release page.	W tym wydaniu dostępne są niejednoznaczne pakiety. Wybierz pakiet na oficjalnej stronie wydań.
 	The release is not a published stable update. Try again later.	To wydanie nie jest opublikowaną stabilną aktualizacją. Spróbuj ponownie później.
 	The replacement file doesn't have that many pages.	Plik zastępczy nie ma tylu stron.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Ograniczenia dotyczą odbiorców bez „Wszystkie uprawnienia”. Zostanie zastosowane podczas zapisu.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
@@ -2973,6 +2989,7 @@ certificate	Subject	Podmiot certyfikatu
 	The scanner needs attention.	The scanner needs attention.
 	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
 	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	Kopie z możliwością wyszukiwania są zapisywane tutaj pod nazwami plików źródłowych
 	The selected area has been copied ({w} × {h} pixels)	Zaznaczony obszar został skopiowany ({w} × {h} pikseli)
 	The selected area is no longer on a page of this document.	Zaznaczony obszar nie znajduje się już na żadnej stronie tego dokumentu.
@@ -3103,6 +3120,7 @@ certificate	Subject	Podmiot certyfikatu
 	This file changed on disk. Reload shows the new version and drops your unsaved changes; Save replaces it with this version.	Ten plik zmienił się na dysku. Wczytaj ponownie pokazuje nową wersję i odrzuca niezapisane zmiany; Zapisz zastępuje ją tą wersją.
 	this file isn't XFDF, FDF, XML or text form data	ten plik nie zawiera danych formularza XFDF, FDF, XML ani tekstowych
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Ten plik był uszkodzony i został naprawiony. Zapis zachowa naprawioną wersję.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Ten folder jest teraz niedostępny. Mógł zostać przeniesiony albo jego dysk lub synchronizacja z chmurą jest nieaktywna.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Nie można użyć tego pliku czcionki. Wybierz czytelny plik TTF, OTF lub TTC.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ten formularz zawiera również dane XFA, których PdfCraft jeszcze nie odczytuje. Możesz wypełniać jego pola, ale Acrobat może zamiast nich wyświetlać wartości XFA.
@@ -3166,6 +3184,7 @@ certificate	Subject	Podmiot certyfikatu
 	Too many spot inks to separate: {names}	Zbyt wiele farb dodatkowych do rozbarwienia: {names}
 	Too many windows are open	Otwarto zbyt wiele okien
 	Too many windows for this document	Zbyt wiele okien dla tego dokumentu
+	Took too long to read	Took too long to read
 	Tools panel side	Strona panelu narzędzi
 	Tooltip	Podpowiedź
 	Tooltip:	Podpowiedź:

@@ -64,6 +64,7 @@
 	A folder is asked for when a multiple-file run starts	Қалта бірнеше файлды өңдеу басталғанда сұралады
 	A form field has additional actions	Форма өрісінде қосымша әрекеттер бар
 	A link	Сілтеме
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Жергілікті модель — құздық моделі емес: ол қате жіберуі мүмкін, ал ұзақ жауап процессорда уақыт алады. Маңызды нәрсені тексеріңіз және модельді жүктеп алмас бұрын оның өлшемін осы машинаға салыстырыңыз.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Қойындылардың сол жағында, тақырып жолағы көрсететін жерде, логотип немесе атау: PdfCraft-тың өзінікі немесе компанияңыздікі.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Бет саны сонша парақтан кейін бергішті тоқтатады. Бас тарту тасымалды ертерек аяқтайды; қабылданған беттер құжатта қалады.
@@ -647,6 +648,7 @@ calendar date	August	Тамыз
 	Could not mark the selection because text could not be read on every page	Барлық беттегі мәтін оқылмағандықтан, таңдалған мәтінді белгілеу мүмкін болмады
 	Could not save: {e}	Сақтау мүмкін болмады: {e}
 	Couldn't add {name}: {e}	{name} файлын қосу мүмкін болмады: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Файлдарды біріктіру мүмкін болмады: {e}
 	Couldn't copy the image: {e}	Суретті көшіру мүмкін болмады: {e}
 	Couldn't create a PDF: {e}	PDF жасау мүмкін болмады: {e}
@@ -1177,6 +1179,7 @@ calendar date	February	Ақпан
 	Flip on short edge	Қысқа жиек бойынша аудару
 	Flip vertical	Тікке аудару
 	Float panel	Панельді бөлек терезеге шығару
+	Folder	Folder
 	Folders	Қалталар
 	Font	Қаріп
 	Font colour:	Қаріп түсі:
@@ -1306,7 +1309,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	LZW кодталған ағындарда оның орнына Flate қолдану
 	In this file	Осы файлда
 	Include revocation information when signing (LTV)	Қол қою кезінде кері шақыру туралы мәліметті қосу (LTV)
-	Include subfolders	Ішкі қалталарды қосу
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Сақталмаған өзгерістері бар
 	Incompatible	Үйлесімсіз
 	Incorrect password. Try again.	Құпиясөз дұрыс емес. Қайталап көріңіз.
@@ -1412,6 +1415,7 @@ calendar date	June	Маусым
 	Large scan	Үлкен сканерлеу
 	Larger pages	Үлкенірек беттер
 	Larger text	Үлкенірек мәтін
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Үлкенірек нобайлар
 	Last page	Соңғы бет
 	Later in calculation order	Есептеу реті бойынша кейінгі
@@ -1461,6 +1465,7 @@ calendar date	June	Маусым
 	List labels and bodies belong in a list item. Fix the list's tags.	Тізім белгілері мен денелері тізім элементінде болуы тиіс. Тізімнің тегтерін жөндеңіз.
 	List PKCS #11 token (smart card, HSM) signing identities	PKCS #11 токендеріндегі (смарт-карталар, HSM) қол қою жеке куәліктерін тізу
 	Listing scanners…	Сканерлер тізімделуде…
+	Listing the folder…	Listing the folder…
 	Lists	Тізімдер
 	Load document font	Құжат қаріпін жүктеу
 	Load font…	Қаріпті жүктеу…
@@ -1523,6 +1528,7 @@ calendar date	March	Наурыз
 	Match field sizes	Өріс өлшемдерін теңестіру
 	Match page at 100%	Бетке 100% сәйкестендіру
 	Matches what was signed	Қол қойылған нәрсеге сәйкес келеді
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	maximum	максимум
 	May	Мамыр
 calendar date	May	Мамыр
@@ -1733,6 +1739,7 @@ scroll speed	Normal	Қалыпты
 	Not present	Жоқ
 	Not rated	Бағаланбаған
 	Not replaced: {why}	Ауыстырылмады: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Жазба
 	Nothing	Ештеңе
 	nothing in the file matches this document	файлдағы ешнәрсе бұл құжатқа сәйкес келмейді
@@ -1909,6 +1916,7 @@ animation effects	On	Қосулы
 	Pages per sheet:	Бір парақтағы бет саны:
 	Pages selected	Таңдалған беттер
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Мәтіннің суреті ғана болып табылатын беттерді дауыстап оқуға немесе іздеуге болмайды. Мәтін қабатын қосу үшін мәтінді тануыңыз (OCR).
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Type 3 қаріптерін пайдаланатын беттер сурет ретінде басып шығарылады, себебі оларды басып шығару кезінде Windows PdfCraft бағдарламасын жауып тастауы мүмкін. Басқа беттер әдеттегідей басып шығарылады.
 	Pages to Print	Басып шығарылатын беттер
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Мәтінін оқу мүмкін болмаған беттер: {n}. Олардағы сәйкестіктер тізімде жоқ.
@@ -2099,6 +2107,7 @@ animation effects	On	Қосулы
 	Read to end of document	Құжаттың соңына дейін оқу
 	Read {n} words on {m} of {t} pages	{t} беттің {m} бетінде {n} сөз оқылды
 	Reading colours	Оқу түстері
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Оқу параметрлері…
 	Reading page {page}…	{page}-бетті оқу…
 	Reading Preferences	Оқу баптаулары
@@ -2445,6 +2454,8 @@ animation effects	On	Қосулы
 	Scroll tabs left	Қойындыларды солға айналдыру
 	Scroll tabs right	Қойындыларды оңға айналдыру
 	Scroll the page	Бетті айналдыру
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Түсініктемелерді іздеу
 	Search complete.	Іздеу аяқталды.
 	Search panel	Іздеу панелі
@@ -2453,9 +2464,11 @@ animation effects	On	Қосулы
 	Search tools…	Құралдарды іздеу…
 	Searchable Image	Іздеуге болатын сурет
 	Searchable Image (Exact)	Іздеуге болатын сурет (дәл)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Ізделуде… {s}/{p} бет
 	Searching… {s}/{p}	Ізделуде… {s}/{p}
 	Search…	Іздеу…
+	Secured	Secured
 	Security method	Қауіпсіздік әдісі
 	Security properties	Қауіпсіздік сипаттары
 	Security properties…	Қорғаныс сипаттары…
@@ -2708,8 +2721,11 @@ action wizard	Start	Бастау
 	Sticky note	Жапсырма жазба
 	still checking whether the tesseract program can run; try again in a moment	tesseract бағдарламасы іске қосыла ала ма, әлі тексерілуде; біраздан кейін қайталап көріңіз
 	Still printing; the job continues on the printer	Басып шығару жалғасуда; тапсырма принтерде орындалуда
-	Stop	Тоқтату
+	Stop	Stop
 	Stop reading	Оқуды тоқтату
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Сканерленген бетті түзету
 	Straighten skewed scans	Қиғаш скандарды түзету
 	Straighten the page	Бетті түзету
@@ -2926,6 +2942,7 @@ certificate	Subject	Субъект
 	The release has ambiguous packages. Choose a package on the official release page.	Бұл шығарылымда бірнеше түрлі пакет бар. Ресми шығарылым бетінен пакет таңдаңыз.
 	The release is not a published stable update. Try again later.	Бұл шығарылым жарияланған тұрақты жаңарту емес. Кейінірек қайталап көріңіз.
 	The replacement file doesn't have that many pages.	Ауыстырғыш файлда соншалық бет жоқ.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Шектеулер «Барлық рұқсаттар» жоқ алушыларға қолданылады. Сақтау кезінде қолданылады.
 	The reverse sides already scanned are kept.	Сканерленген артқы жақтар сақталды.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	жолдар тым аласа: аймақты биіктетіңіз немесе жолдар санын не жолдар аралығын азайтыңыз
@@ -2945,6 +2962,7 @@ certificate	Subject	Субъект
 	The scanner reported a lamp or device error.	Сканер шам немесе құрылғы қатесі туралы хабарлады.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Сканер қағазға байланысты ақау туралы хабарлады (қағаз қысылды немесе бірнеше парақ бірге алынды).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Экранның бір дюймдегі нақты пиксель саны. Нақты өлшем (100%) беттерді шын өлшемінде көрсетуі үшін сызғышпен калибрлеңіз.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	Іздеуге болатын көшірмелер осында бастапқы файлдардың аттарымен жазылады
 	The selected area has been copied ({w} × {h} pixels)	Таңдалған аймақ көшірілді ({w} × {h} пиксель)
 	The selected area is no longer on a page of this document.	Таңдалған аймақ енді осы құжаттың ешбір бетінде жоқ.
@@ -3038,6 +3056,7 @@ certificate	Subject	Субъект
 	This file is already as small as it can be made ({size}). No copy was saved.	Бұл файлды одан әрі кішірейту мүмкін емес ({size}). Көшірме сақталмады.
 	this file isn't XFDF, FDF, XML or text form data	бұл файл XFDF, FDF, XML немесе мәтіндік форма деректері емес
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Бұл файл зақымдалған еді және жөнделді. Сақтау кезінде жөнделген нұсқа сақталады.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Бұл қалта қазір қолжетімді емес. Ол басқа жерге көшірілген, не болмаса оның дискісі мен бұлт синхроны желіден тыс болуы мүмкін.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Бұл қаріп файлын пайдалану мүмкін емес. Оқуға болатын TTF, OTF немесе TTC файлын таңдаңыз.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Бұл формада PdfCraft әлі оқымайтын XFA деректері де бар. Өрістерін толтыра аласыз, бірақ Acrobat орнына XFA мәндерін көрсетуі мүмкін.
@@ -3101,6 +3120,7 @@ certificate	Subject	Субъект
 	Too many spot inks to separate: {names}	Бөлу үшін арнайы бояулар тым көп: {names}
 	Too many windows are open	Тым көп терезе ашық
 	Too many windows for this document	Бұл құжат үшін терезе тым көп
+	Took too long to read	Took too long to read
 	Tools panel side	Құралдар панелінің жағы
 	Tooltip	Қалтқы
 	Tooltip:	Қалтқы:

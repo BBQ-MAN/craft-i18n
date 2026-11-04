@@ -65,6 +65,7 @@
 	A folder is asked for when a multiple-file run starts	A mappát több fájl feldolgozásának indításakor kérdezi meg
 	A form field has additional actions	Egy űrlapmezőnek további műveletei vannak
 	A link	Egy hivatkozás
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	A helyi modell nem élvonalbeli felhőmodell: tévedhet, és egy hosszú válasz a processzoron időbe telik. Minden kritikus dolgot ellenőrizzen, és a letöltés előtt mérlegelje a modell méretét e géphez képest.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Egy logó vagy név a lapoktól balra, ahol a címsor mutatná: a PdfCraft sajátja vagy a cégedé.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Az oldalszám ennyi lap után leállítja az adagolót. A megszakítás korábban véget vet az átvitelnek; a már megkapott oldalak a dokumentumban maradnak.
@@ -652,6 +653,7 @@
 	Could not mark the selection because text could not be read on every page	A kijelölés nem jelölhető meg, mert nem sikerült minden oldalon beolvasni a szöveget
 	Could not save: {e}	A mentés nem sikerült: {e}
 	Couldn't add {name}: {e}	{name} hozzáadása nem sikerült: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	A fájlokat nem sikerült egyesíteni: {e}
 	Couldn't copy the image: {e}	A képet nem sikerült másolni: {e}
 	Couldn't create a PDF: {e}	A PDF létrehozása nem sikerült: {e}
@@ -1184,6 +1186,7 @@ scroll speed	Fast	Gyors
 	Flip on short edge	Rövid él mentén
 	Flip vertical	Függőleges tükrözés
 	Float panel	Panel lebegtetése
+	Folder	Folder
 	Folders	Mappák
 	Font colour:	Betű színe:
 	Font file	Betűtípusfájl
@@ -1314,7 +1317,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Az LZW kódolású adatfolyamok Flate kódolása
 	In this file	Ebben a fájlban
 	Include revocation information when signing (LTV)	Visszavonási adatok beágyazása aláíráskor (LTV)
-	Include subfolders	Almappákkal együtt
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Nem mentett módosításokat tartalmaz
 	Incompatible	Nem kompatibilis
 	Incorrect password. Try again.	Hibás jelszó. Próbáld újra.
@@ -1420,6 +1423,7 @@ key	Home	Home
 	Large scan	Nagy beolvasás
 	Larger pages	Nagyobb oldalak
 	Larger text	Nagyobb szöveg
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Nagyobb bélyegképek
 	Last page	Utolsó oldal
 	Later in calculation order	Hátrébb a számítási sorrendben
@@ -1470,6 +1474,7 @@ key	Home	Home
 	List labels and bodies belong in a list item. Fix the list's tags.	A listacímkék és a listatartalom egy listaelembe tartoznak. Javítsd a lista címkéit.
 	List PKCS #11 token (smart card, HSM) signing identities	PKCS #11 tokenek (intelligens kártyák, HSM-ek) aláírási azonosítóinak listázása
 	Listing scanners…	Szkennerek listázása…
+	Listing the folder…	Listing the folder…
 	Lists	Listák
 	Load document font	Dokumentum betűtípusának betöltése
 	Load font…	Betűtípus betöltése…
@@ -1532,6 +1537,7 @@ key	Home	Home
 	Match field sizes	Mezőméretek egyeztetése
 	Match page at 100%	Papír illesztése az oldalhoz, 100%
 	Matches what was signed	Megegyezik az aláírttal
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximize	Maximalizálás
 	maximum	maximum
 	May	május
@@ -1744,6 +1750,7 @@ scroll speed	Normal	Normál
 	Not present	Nincs megadva
 	Not rated	Nincs értékelve
 	Not replaced: {why}	Nincs lecserélve: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Jegyzet
 	Nothing	Semmi
 	nothing in the file matches this document	a fájlban semmi sem illeszkedik ehhez a dokumentumhoz
@@ -1918,6 +1925,7 @@ animation effects	On	Be
 	Pages per sheet:	Oldalak laponként:
 	Pages selected	Kijelölt oldalak
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	A csak szöveg képéből álló oldalak nem olvashatók fel, és nem kereshetők. Futtass szövegfelismerést (OCR), hogy szöveges réteg kerüljön rájuk.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	A Type 3 betűtípust használó oldalak képként nyomtatódnak, mert a Windows bezárhatja a PdfCraftot a nyomtatásuk közben. A többi oldal a szokásos módon nyomtatódik.
 	Pages to Print	Nyomtatandó oldalak
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Oldalak, amelyek szövegét nem sikerült beolvasni: {n}. Az ezeken lévő találatok nem szerepelnek a listában.
@@ -2110,6 +2118,7 @@ animation effects	On	Be
 	Read to end of document	Felolvasás a dokumentum végéig
 	Read {n} words on {m} of {t} pages	{n} szó beolvasva {t} oldalból {m} oldalon
 	Reading colours	Olvasási színek
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Olvasási lehetőségek…
 	Reading page {page}…	{page}. oldal felolvasása…
 	Reading Preferences	Olvasási beállítások
@@ -2457,6 +2466,8 @@ animation effects	On	Be
 	Scroll tabs left	Lapok görgetése balra
 	Scroll tabs right	Lapok görgetése jobbra
 	Scroll the page	Az oldal görgetése
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Megjegyzések keresése
 	Search complete.	A keresés befejeződött.
 	Search panel	Keresés panel
@@ -2465,10 +2476,12 @@ animation effects	On	Be
 	Search tools…	Eszközök keresése…
 	Searchable Image	Kereshető kép
 	Searchable Image (Exact)	Kereshető kép (pontos)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching…	Keresés…
 	Searching… {s} of {p} pages	Keresés… {s} / {p} oldal
 	Searching… {s}/{p}	Keresés… {s}/{p}
 	Search…	Keresés…
+	Secured	Secured
 	Security method	Biztonsági módszer
 	Security properties	Biztonság tulajdonságai
 	Security properties…	Biztonság tulajdonságai…
@@ -2725,7 +2738,11 @@ action wizard	Start	Indítás
 	Sticky note	Cetli
 	still checking whether the tesseract program can run; try again in a moment	még folyik annak ellenőrzése, hogy a tesseract program futtatható-e; próbálja újra egy pillanat múlva
 	Still printing; the job continues on the printer	Még nyomtat; a feladat a nyomtatón folytatódik
+	Stop	Stop
 	Stop reading	Felolvasás leállítása
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Beszkennelt oldal kiegyenesítése
 	Straighten skewed scans	Ferde szkennelt oldalak kiegyenesítése
 	Straighten the page	Oldal egyenesítése
@@ -2948,6 +2965,7 @@ action wizard	Start	Indítás
 	The release has ambiguous packages. Choose a package on the official release page.	A kiadáshoz többféle csomag tartozik. Válassz egyet a hivatalos kiadási oldalon.
 	The release is not a published stable update. Try again later.	Ez a kiadás nem közzétett stabil frissítés. Próbáld újra később.
 	The replacement file doesn't have that many pages.	A cserefájlban nincs ennyi oldal.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	A korlátozások a „Minden engedély” nélküli címzettekre vonatkoznak. Mentéskor lép életbe.
 	The reverse sides already scanned are kept.	A már beolvasott hátoldalak megmaradtak.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	a sorok túl alacsonyak: növeld a terület magasságát, vagy használj kevesebb sort vagy kisebb sorközt
@@ -2967,6 +2985,7 @@ action wizard	Start	Indítás
 	The scanner reported a lamp or device error.	A lapolvasó lámpa- vagy készülékhibát jelzett.
 	The scanner reported a paper problem (a jam or several sheets fed together).	A lapolvasó papírhibát jelzett (elakadás vagy több lap együttes behúzása).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	A képernyő valódi képpont/hüvelyk értéke. Kalibráljon vonalzóval, hogy a tényleges méret (100%) valódi méretükben mutassa az oldalakat.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	A kereshető másolatok ide íródnak, a forrásfájlok nevével
 	The selected area has been copied ({w} × {h} pixels)	A kijelölt terület a vágólapra került ({w} × {h} képpont)
 	The selected area is no longer on a page of this document.	A kijelölt terület már nincs a dokumentum egyik oldalán sem.
@@ -3061,6 +3080,7 @@ action wizard	Start	Indítás
 	This file is already as small as it can be made ({size}). No copy was saved.	Ez a fájl már a lehető legkisebb ({size}). Nem készült másolat.
 	this file isn't XFDF, FDF, XML or text form data	ez a fájl nem XFDF, FDF, XML vagy szöveges űrlapadat
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Ez a fájl sérült volt, és javítottuk. A mentés megtartja a javított változatot.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Ez a mappa jelenleg nem érhető el. Lehet, hogy áthelyezték, vagy a meghajtója, illetve a felhőszinkron offline.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Ez a betűtípusfájl nem használható. Válasszon olvasható TTF-, OTF- vagy TTC-fájlt.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ez az űrlap XFA-adatokat is tartalmaz, amelyeket a PdfCraft még nem olvas. Kitöltheted a mezőit, de az Acrobat helyettük az XFA-értékeket mutathatja.
@@ -3123,6 +3143,7 @@ action wizard	Start	Indítás
 	Too early	Túl korán
 	Too many copies: increase the spacing or the size.	Túl sok másolat: növelje a távolságot vagy a méretet.
 	Too many spot inks to separate: {names}	Túl sok direkt szín a bontáshoz: {names}
+	Took too long to read	Took too long to read
 	Tools panel side	Az Eszközök panel oldala
 	Tooltip	Elemleírás
 	Tooltip:	Elemleírás:

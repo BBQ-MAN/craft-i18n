@@ -79,6 +79,7 @@
 	A line has width 0, the thinnest the printer can draw	Một đường có độ dày 0, mảnh nhất mà máy in vẽ được
 	A line is {} pt wide	Một đường dày {} pt
 	A link	Một liên kết
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Một logo hoặc tên ở bên trái các thẻ, nơi thanh tiêu đề thường hiển thị: của PdfCraft hoặc của công ty bạn.
 	A mesh shading's colours change too sharply between its corners to convert to CMYK exactly	Màu của một tô chuyển sắc dạng lưới thay đổi quá đột ngột giữa các góc để chuyển chính xác sang CMYK
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Số trang sẽ dừng khay nạp sau ngần ấy tờ. Hủy sẽ kết thúc quá trình truyền sớm; các trang đã nhận vẫn ở lại trong tài liệu.
@@ -674,6 +675,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Could not mark the selection because text could not be read on every page	Không thể đánh dấu vùng chọn vì không đọc được văn bản trên tất cả các trang
 	Could not save: {e}	Không thể lưu: {e}
 	Couldn't add {name}: {e}	Không thể thêm {name}: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Không thể kết hợp các tệp: {e}
 	Couldn't copy the image: {e}	Không thể sao chép hình ảnh: {e}
 	Couldn't create a PDF: {e}	Không thể tạo PDF: {e}
@@ -1376,7 +1378,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Dùng Flate thay cho LZW trong các luồng mã hóa LZW
 	In this file	Trong tệp này
 	Include revocation information when signing (LTV)	Đưa thông tin thu hồi vào khi ký (LTV)
-	Include subfolders	Bao gồm thư mục con
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Bao gồm các thay đổi chưa lưu
 	Incompatible	Không tương thích
 	Incorrect password. Try again.	Mật khẩu không đúng. Hãy thử lại.
@@ -1495,6 +1497,7 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Large scan	Bản quét lớn
 	Larger pages	Trang lớn hơn
 	Larger text	Chữ lớn hơn
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Tăng kích thước hình thu nhỏ
 	Last page	Trang cuối
 	Later in calculation order	Muộn hơn theo thứ tự tính toán
@@ -1548,6 +1551,7 @@ certificate	Key usage	Mục đích sử dụng khóa
 	List items belong in a list. Fix the list's tags.	Các mục danh sách phải nằm trong một danh sách. Hãy sửa thẻ của danh sách.
 	List labels and bodies belong in a list item. Fix the list's tags.	Nhãn và nội dung danh sách phải nằm trong một mục danh sách. Hãy sửa thẻ của danh sách.
 	Listing scanners…	Đang liệt kê máy quét…
+	Listing the folder…	Listing the folder…
 	Lists	Danh sách
 	Load document font	Tải phông chữ của tài liệu
 	Load font…	Tải phông chữ…
@@ -1605,6 +1609,7 @@ calendar date	March	tháng 3
 	Match field sizes	Khớp kích thước trường
 	Match page at 100%	Khớp trang ở mức 100%
 	Matches what was signed	Khớp với nội dung được ký
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	maximum	tối đa
 	May	Tháng 5
 calendar date	May	tháng 5
@@ -1824,6 +1829,7 @@ scroll speed	Normal	Bình thường
 	Not present	Không có mặt
 	Not rated	Chưa xếp hạng
 	Not replaced: {why}	Không thay thế: {why}
+	Not searched: {n}	Not searched: {n}
 	not the first child of its list	không phải là phần tử con đầu tiên của danh sách
 	not the first or last child of its table	không phải là phần tử con đầu tiên hay cuối cùng của bảng
 	Note	Ghi chú
@@ -2012,6 +2018,7 @@ animation effects	On	Bật
 	Pages per sheet:	Số trang mỗi tờ:
 	Pages selected	Số trang đã chọn
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Các trang chỉ là hình chụp của văn bản không thể được đọc to hoặc tìm kiếm. Hãy nhận dạng văn bản (OCR) để thêm lớp văn bản.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Các trang dùng phông chữ Type 3 được in dưới dạng hình ảnh, vì Windows có thể đóng PdfCraft khi in các trang này. Các trang khác được in như bình thường.
 	Pages to Print	Các trang cần in
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Các trang không đọc được văn bản: {n}. Các kết quả khớp trên các trang đó không được liệt kê.
@@ -2194,6 +2201,7 @@ certificate	Public key	Khóa công khai
 	Read out loud	Đọc thành tiếng
 	Read out loud requires Windows, macOS or Linux.	Tính năng Đọc thành tiếng yêu cầu Windows, macOS hoặc Linux.
 	Reading colours	Màu khi đọc
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading the printer's settings…	Đang đọc cài đặt của máy in…
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Đọc {names}, các trường này lại đọc ngược nó. Không thứ tự nào sửa được vòng lặp: hãy đổi một trong các công thức.
 	Reads {name}, which calculates later, so it shows an old value.	Đọc {name}, trường được tính sau, nên hiển thị giá trị cũ.
@@ -2529,6 +2537,8 @@ calendar weekday	Sa	T7
 	Scroll tabs left	Cuộn các thẻ sang trái
 	Scroll tabs right	Cuộn các thẻ sang phải
 	Scroll the page	Cuộn trang
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Tìm bình luận
 	Search complete.	Đã tìm kiếm xong.
 	Search panel	Bảng tìm kiếm
@@ -2538,9 +2548,11 @@ calendar weekday	Sa	T7
 	Search tools…	Tìm kiếm công cụ…
 	Searchable Image	Ảnh có thể tìm kiếm
 	Searchable Image (Exact)	Ảnh có thể tìm kiếm (Chính xác)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Đang tìm… {s} trên {p} trang
 	Searching… {s}/{p}	Đang tìm… {s}/{p}
 	Search…	Tìm kiếm…
+	Secured	Secured
 	Security handler	Trình xử lý bảo mật
 	Security method	Phương thức bảo mật
 	Security properties	Thuộc tính bảo mật
@@ -2792,6 +2804,10 @@ action wizard	Start	Bắt đầu
 	Sticky note	Ghi chú dán
 	Still printing; the job continues on the printer	Vẫn đang in; lệnh in tiếp tục trên máy in
 	Still rendering — this page is unusually complex…	Vẫn đang kết xuất — trang này phức tạp bất thường…
+	Stop	Stop
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Căn thẳng trang đã quét
 	Straighten skewed scans	Căn thẳng các bản quét bị nghiêng
 	Straighten the page	Làm thẳng trang
@@ -3070,6 +3086,7 @@ calendar weekday	Th	T5
 	The release is not a published stable update. Try again later.	Bản phát hành này chưa phải là bản cập nhật ổn định đã được công bố. Hãy thử lại sau.
 	The replacement file doesn't have that many pages.	Tệp thay thế không có nhiều trang như vậy.
 	The resolution of an image can't be measured	Không đo được độ phân giải của một ảnh
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Các hạn chế áp dụng cho người nhận không có “Mọi quyền”. Thay đổi được áp dụng khi bạn lưu.
 	The reverse sides already scanned are kept.	Các mặt sau đã quét được giữ lại.
 	The reverse sides were cancelled: their document was closed.	Đã hủy quét mặt sau: tài liệu của chúng đã bị đóng.
@@ -3094,6 +3111,7 @@ calendar weekday	Th	T5
 	The scanner reported a lamp or device error.	Máy quét báo lỗi đèn hoặc lỗi thiết bị.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Máy quét báo sự cố giấy (kẹt giấy hoặc nhiều tờ bị nạp cùng lúc).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Số điểm ảnh thực trên mỗi inch của màn hình. Hiệu chỉnh bằng thước để Kích thước thực (100%) hiển thị trang đúng kích thước thật.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The security settings don't allow screen readers to read the text	Cài đặt bảo mật không cho phép trình đọc màn hình đọc văn bản
 	The selected area has been copied ({w} × {h} pixels)	Đã sao chép vùng đã chọn ({w} × {h} điểm ảnh)
 	The selected area is no longer on a page of this document.	Vùng đã chọn không còn nằm trên trang nào của tài liệu này.
@@ -3238,6 +3256,7 @@ calendar weekday	Th	T5
 	This file is already as small as it can be made ({size}). No copy was saved.	Tệp này đã nhỏ hết mức có thể ({size}). Không có bản sao nào được lưu.
 	this file isn't XFDF, FDF, XML or text form data	tệp này không phải dữ liệu biểu mẫu XFDF, FDF, XML hoặc văn bản
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Tệp này bị hỏng và đã được sửa chữa. Việc lưu sẽ giữ phiên bản đã sửa.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Thư mục này hiện không khả dụng. Nó có thể đã bị di chuyển, hoặc ổ đĩa hay đồng bộ đám mây của nó đang ngoại tuyến.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Biểu mẫu này còn chứa dữ liệu XFA mà PdfCraft chưa đọc được. Bạn có thể điền các trường của nó, nhưng Acrobat có thể hiển thị giá trị XFA thay thế.
 	This form has too many fields, or a field name too long, for PdfCraft to read them all. Any signature among the rest is not listed, so the document is treated as signed.	Biểu mẫu này có quá nhiều trường, hoặc tên trường quá dài, nên PdfCraft không đọc hết được. Chữ ký trong các trường còn lại không được liệt kê, vì vậy tài liệu được coi là đã ký.
@@ -3297,6 +3316,7 @@ calendar weekday	Th	T5
 	Too early	Quá sớm
 	Too many copies: increase the spacing or the size.	Quá nhiều bản sao: hãy tăng khoảng cách hoặc kích thước.
 	Too many spot inks to separate: {names}	Quá nhiều mực pha để tách màu: {names}
+	Took too long to read	Took too long to read
 	Tools panel side	Phía của bảng công cụ
 	Tooltip	Chú giải công cụ
 	Tooltip:	Chú giải công cụ:

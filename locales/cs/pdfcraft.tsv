@@ -88,6 +88,7 @@
 	A line has width 0, the thinnest the printer can draw	Čára má šířku 0, nejtenčí, jakou tiskárna dokáže nakreslit
 	A line is {} pt wide	Čára je široká {} pt
 	A link	Odkaz
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Místní model není špičkový cloudový model: může se mýlit a dlouhá odpověď na procesoru chvíli trvá. Důležité si ověřte a před stažením si uvědomte velikost modelu proti tomuto počítači.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logo nebo název vlevo od karet, kde by je zobrazil záhlaví okna: vlastní PdfCraft, nebo vaší firmy.
 	A mesh shading's colours change too sharply between its corners to convert to CMYK exactly	Barvy síťového stínování se mezi rohy mění příliš prudce na přesný převod do CMYK
@@ -736,6 +737,7 @@ certificate	Basic constraints	Základní omezení
 	Could not mark the selection because text could not be read on every page	Výběr nelze označit, protože text nebylo možné přečíst na všech stránkách
 	Could not save: {e}	Nelze uložit: {e}
 	Couldn't add {name}: {e}	{name} nelze přidat: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Soubory nelze sloučit: {e}
 	Couldn't copy the image: {e}	Obrázek nelze zkopírovat: {e}
 	Couldn't create a PDF: {e}	PDF nelze vytvořit: {e}
@@ -1489,7 +1491,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Proudy kódované LZW kódovat metodou Flate
 	In this file	V tomto souboru
 	Include revocation information when signing (LTV)	Při podepisování vložit informace o odvolání (LTV)
-	Include subfolders	Zahrnout podsložky
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Obsahuje neuložené změny
 	Incompatible	Nekompatibilní
 	Incorrect password. Try again.	Nesprávné heslo. Zkuste to znovu.
@@ -1611,6 +1613,7 @@ certificate	Key usage	Použití klíče
 	Large scan	Velký sken
 	Larger pages	Větší stránky
 	Larger text	Větší text
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Větší miniatury
 	Last page	Poslední stránka
 	Later in calculation order	Později v pořadí výpočtů
@@ -1666,6 +1669,7 @@ certificate	Key usage	Použití klíče
 	List labels and bodies belong in a list item. Fix the list's tags.	Návěští a těla seznamu patří do položky seznamu. Opravte tagy seznamu.
 	List PKCS #11 token (smart card, HSM) signing identities	Zobrazit podpisové identity tokenů PKCS #11 (čipové karty, HSM)
 	Listing scanners…	Načítání skenerů…
+	Listing the folder…	Listing the folder…
 	Lists	Seznamy
 	Load document font	Načíst písmo dokumentu
 	Load font…	Načíst písmo…
@@ -1731,6 +1735,7 @@ calendar date	March	března
 	Match field sizes	Sjednotit velikost polí
 	Match page at 100%	Papír podle stránky, 100 %
 	Matches what was signed	Odpovídá podepsanému
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	maximum	největší hodnota
 	May	Květen
 calendar date	May	května
@@ -1969,6 +1974,7 @@ scroll speed	Normal	Normální
 	Not present	Není uvedeno
 	Not rated	Bez hodnocení
 	Not replaced: {why}	Nenahrazeno: {why}
+	Not searched: {n}	Not searched: {n}
 	not the first child of its list	není prvním potomkem svého seznamu
 	not the first or last child of its table	není prvním ani posledním potomkem své tabulky
 	Note	Poznámka
@@ -2175,6 +2181,7 @@ animation effects	On	Zapnuto
 	Pages per sheet:	Stránek na list:
 	Pages selected	Vybrané stránky
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Stránky, které jsou jen obrázky textu, nelze předčítat ani v nich vyhledávat. Rozpoznáním textu (OCR) přidáte textovou vrstvu.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Stránky, které používají písma Type 3, se tisknou jako obrázky, protože Windows může při jejich tisku PdfCraft zavřít. Ostatní stránky se tisknou jako obvykle.
 	Pages to Print	Stránky k tisku
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Stránky, jejichž text nešlo přečíst: {n}. Shody na nich nejsou uvedeny.
@@ -2381,6 +2388,7 @@ certificate	Public key	Veřejný klíč
 	Read to end of document	Číst do konce dokumentu
 	Read {n} words on {m} of {t} pages	Načteno {n} slov na {m} z {t} stránek
 	Reading colours	Barvy pro čtení
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Možnosti čtení…
 	Reading page {page}…	Čtení stránky {page}…
 	Reading Preferences	Předvolby čtení
@@ -2745,6 +2753,8 @@ calendar weekday	Sa	So
 	Scroll tabs right	Posunout karty doprava
 	Scroll the page	Posouvat stránku
 	Search	Hledání
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Hledat v komentářích
 	Search complete.	Hledání dokončeno.
 	Search panel	Panel hledání
@@ -2754,10 +2764,12 @@ calendar weekday	Sa	So
 	Search tools…	Hledat nástroje…
 	Searchable Image	Prohledávatelný obrázek
 	Searchable Image (Exact)	Prohledávatelný obraz (přesný)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching…	Hledání…
 	Searching… {s} of {p} pages	Hledání… stránka {s} z {p}
 	Searching… {s}/{p}	Hledání… {s}/{p}
 	Search…	Hledat…
+	Secured	Secured
 	Security handler	Obslužná rutina zabezpečení
 	Security method	Metoda zabezpečení
 	Security properties	Vlastnosti zabezpečení
@@ -3026,7 +3038,11 @@ action wizard	Start	Spustit
 	still checking whether the tesseract program can run; try again in a moment	stále se ověřuje, zda lze program tesseract spustit; zkuste to za chvíli znovu
 	Still printing; the job continues on the printer	Stále se tiskne; úloha pokračuje na tiskárně
 	Still rendering — this page is unusually complex…	Stále se vykresluje – tato stránka je neobvykle složitá…
+	Stop	Stop
 	Stop reading	Zastavit čtení
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Narovnat naskenovanou stránku
 	Straighten skewed scans	Narovnat šikmé skeny
 	Straighten the page	Narovnat stránku
@@ -3332,6 +3348,7 @@ calendar weekday	Th	Čt
 	The release is not a published stable update. Try again later.	Toto vydání není zveřejněná stabilní aktualizace. Zkuste to později.
 	The replacement file doesn't have that many pages.	Náhradní soubor nemá tolik stránek.
 	The resolution of an image can't be measured	Rozlišení obrázku nelze změřit
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Omezení platí pro příjemce bez „Všechna oprávnění“. Použije se při uložení.
 	The reverse sides already scanned are kept.	Již naskenované rubové strany jsou uchovány.
 	The role map maps {} in a circle	Mapa rolí mapuje {} v kruhu
@@ -3354,6 +3371,7 @@ calendar weekday	Th	Čt
 	The scanner reported a lamp or device error.	Skener ohlásil chybu lampy nebo zařízení.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Skener ohlásil potíže s papírem (uvíznutí nebo současné podání více listů).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Skutečný počet pixelů na palec obrazovky. Zkalibrujte pravítkem, aby skutečná velikost (100 %) zobrazovala stránky v jejich opravdové velikosti.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	Prohledávatelné kopie se ukládají sem pod původními názvy
 	The security settings don't allow screen readers to read the text	Nastavení zabezpečení nedovoluje čtečkám obrazovky číst text
 	The selected area has been copied ({w} × {h} pixels)	Vybraná oblast byla zkopírována ({w} × {h} pixelů)
@@ -3508,6 +3526,7 @@ calendar weekday	Th	Čt
 	This file is already as small as it can be made ({size}). No copy was saved.	Soubor je už tak malý, jak to jde ({size}). Žádná kopie nebyla uložena.
 	this file isn't XFDF, FDF, XML or text form data	tento soubor neobsahuje data formuláře ve formátu XFDF, FDF, XML ani v textovém
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Tento soubor byl poškozený a byl opraven. Uložením se zachová opravená verze.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Tato složka teď není dostupná. Mohla být přesunuta nebo je její disk či cloudová synchronizace offline.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Tento soubor písma nelze použít. Vyberte čitelný soubor TTF, OTF nebo TTC.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Tento formulář obsahuje také data XFA, která PdfCraft zatím nečte. Pole můžete vyplnit, ale Acrobat může místo nich zobrazit hodnoty XFA.
@@ -3573,6 +3592,7 @@ calendar weekday	Th	Čt
 	Too early	Příliš brzy
 	Too many copies: increase the spacing or the size.	Příliš mnoho kopií: zvětšete mezeru nebo velikost.
 	Too many spot inks to separate: {names}	Příliš mnoho přímých barev k separaci: {names}
+	Took too long to read	Took too long to read
 	Tools panel side	Strana panelu nástrojů
 	Tooltip	Popisek
 	Tooltip:	Popisek:

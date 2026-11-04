@@ -55,6 +55,7 @@
 	A font isn't embedded	En skrift er ikke innebygd
 	A form field has additional actions	Et skjemafelt har tilleggshandlinger
 	A link	En lenke
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	En logo eller et navn til venstre for fanene, der en tittellinje ville vist det: PdfCrafts egen eller bedriftens.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Et bilde dekker side {pages} (en skanning?), så bakgrunnen vises ikke der.
@@ -546,6 +547,7 @@ certificate	Basic constraints	Grunnleggende begrensninger
 	Correct recognized text	Korriger gjenkjent tekst
 	Could not save: {e}	Kunne ikke lagre: {e}
 	Couldn't add {name}: {e}	Kunne ikke legge til {name}: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't check for updates: {e}	Kunne ikke se etter oppdateringer: {e}
 	Couldn't combine files: {e}	Kunne ikke slå sammen filene: {e}
 	Couldn't copy the image: {e}	Kunne ikke kopiere bildet: {e}
@@ -1119,7 +1121,7 @@ key	Home	Home
 	In multiple files	I flere filer
 	In streams that use LZW encoding, use Flate instead	Bruk Flate i stedet for LZW i strømmer som er LZW-kodet
 	In this file	I denne filen
-	Include subfolders	Ta med undermapper
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Inkluderer ulagrede endringer
 	Incorrect password. Try again.	Feil passord. Prøv igjen.
 	Indent	Innrykk
@@ -1224,6 +1226,7 @@ certificate	Key usage	Nøkkelbruk
 	Language and spelling	Språk og staving
 	Large scan	Large scan
 	Larger pages	Større sider
+	Larger than 512 MiB	Larger than 512 MiB
 	Last page	Siste side
 	Later in tab order	Senere i tabulatorrekkefølgen
 	Latin (accented)	Latin (med aksenter)
@@ -1265,6 +1268,7 @@ certificate	Key usage	Nøkkelbruk
 	List items belong in a list. Fix the list's tags.	Listeelementer hører hjemme i en liste. Rett listens tagger.
 	List labels and bodies belong in a list item. Fix the list's tags.	Listeetiketter og -innhold hører hjemme i et listeelement. Rett listens tagger.
 	Listing scanners…	Listing scanners…
+	Listing the folder…	Listing the folder…
 	Lists	Lister
 	Load document font	Last inn dokumentskrift
 	Load font…	Last inn skrift…
@@ -1316,6 +1320,7 @@ calendar date	March	mars
 	Mask:	Maske:
 	Match field sizes	Tilpass feltstørrelser
 	Match page at 100%	Vis siden i 100 %
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	maximum	maksimum
 	May	mai
 calendar date	May	mai
@@ -1477,6 +1482,7 @@ scroll speed	Normal	Normal
 	not in an LI (list item)	ikke i en LI (listeelement)
 	Not now	Ikke nå
 	Not present	Ikke til stede
+	Not searched: {n}	Not searched: {n}
 	Note	Notat
 	Nothing	Ingenting
 	nothing in the file matches this document	ingenting i filen passer til dette dokumentet
@@ -1638,6 +1644,7 @@ animation effects	On	På
 	Pages per sheet:	Sider per ark:
 	Pages selected	Valgte sider
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Sider som bare er bilder av tekst, kan ikke leses opp eller søkes i. Gjenkjenn tekst (OCR) for å legge til et tekstlag.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages to Print	Sider som skal skrives ut
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Sider der teksten ikke kunne leses: {n}. Treff på dem er ikke oppført.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Sider med lenker, kommentarer eller felt bør ha tabulatorrekkefølge etter strukturen. Reparasjonen setter hver sides tabulatorrekkefølge til Bruk dokumentstruktur.
@@ -1782,6 +1789,7 @@ certificate	Public key	Offentlig nøkkel
 	Read mode	Lesemodus
 	Read Only	Skrivebeskyttet
 	Reading colours	Lesefarger
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reads {name}, which the form doesn't have, so it gets no value there.	Reads {name}, which the form doesn't have, so it gets no value there.
 	Real name	Egentlig navn
 	Reason	Årsak
@@ -2059,6 +2067,8 @@ calendar weekday	Sa	lø
 	Scroll tabs left	Rull faner til venstre
 	Scroll tabs right	Rull faner til høyre
 	Scroll the page	Rull siden
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Søk i kommentarer
 	Search panel	Søkepanel
 	Search results	Søkeresultater
@@ -2066,9 +2076,11 @@ calendar weekday	Sa	lø
 	Search tools and commands…	Søk etter verktøy og kommandoer…
 	Search tools…	Søk etter verktøy…
 	Searchable Image (Exact)	Søkbart bilde (eksakt)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Søker… {s} av {p} sider
 	Searching… {s}/{p}	Søker… {s}/{p}
 	Search…	Søk…
+	Secured	Secured
 	Security method	Sikkerhetsmetode
 	Security properties	Sikkerhetsegenskaper
 	Security properties…	Sikkerhetsegenskaper…
@@ -2271,6 +2283,9 @@ action wizard	Start	Start
 	Sticky note	Notatlapp
 	Still rendering — this page is unusually complex…	Gjengir fortsatt – denne siden er uvanlig kompleks…
 	Stop	Stop
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten the page	Straighten the page
 	Strength: {s}	Styrke: {s}
 	Strikethrough text	Gjennomstreking av tekst
@@ -2445,6 +2460,7 @@ calendar weekday	Th	to
 	The provider's page didn't come back in time. Try again.	Leverandørens side kom ikke tilbake i tide. Prøv igjen.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Omdirigerings-URI-en må være http://127.0.0.1 eller http://localhost med en port.
 	The replacement file doesn't have that many pages.	Erstatningsfilen har ikke så mange sider.
+	The rest are left out of this list.	The rest are left out of this list.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA-signaturverdien har ikke samme lengde som nøkkelens modulus (innledende nullbyte er fjernet eller lagt til); den ble lest likevel.
@@ -2465,6 +2481,7 @@ calendar weekday	Th	to
 	The scanner needs attention.	The scanner needs attention.
 	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
 	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The security settings don't allow screen readers to read the text	Sikkerhetsinnstillingene tillater ikke at skjermlesere leser teksten
 	The selected area has been copied ({w} × {h} pixels)	Det merkede området er kopiert ({w} × {h} piksler)
 	The selected fields could not be found. Select them again.	Fant ikke de valgte feltene. Velg dem på nytt.
@@ -2579,6 +2596,7 @@ calendar weekday	Th	to
 	This file is already as small as it can be made ({size}). No copy was saved.	Denne filen er allerede så liten som den kan bli ({size}). Ingen kopi ble lagret.
 	this file isn't XFDF, FDF, XML or text form data	denne filen er ikke XFDF, FDF, XML eller skjemadata som tekst
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Denne filen var skadet og er reparert. Lagring beholder den reparerte versjonen.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Denne mappen er ikke tilgjengelig akkurat nå. Den kan ha blitt flyttet, eller stasjonen eller skysynkroniseringen er frakoblet.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Dette skjemaet inneholder også XFA-data, som PdfCraft ikke leser ennå. Du kan fylle ut feltene, men Acrobat kan vise XFA-verdiene i stedet.
 	This form has too many fields, or a field name too long, for PdfCraft to read them all. Any signature among the rest is not listed, so the document is treated as signed.	Dette skjemaet har for mange felt, eller et for langt feltnavn, til at PdfCraft kan lese dem alle. En eventuell signatur blant de øvrige vises ikke i listen, så dokumentet behandles som signert.
@@ -2620,6 +2638,7 @@ calendar weekday	Th	to
 	Token  ·  	Token  ·  
 	Token PIN	Token-PIN
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	Tokener og smartkort signerer via en PKCS #11-modul. Legg bare til moduler du stoler på: en modul kjører sin egen kode.
+	Took too long to read	Took too long to read
 	Tools panel side	Side for verktøypanelet
 	Tooltip	Verktøytips
 	Tooltip:	Verktøytips:

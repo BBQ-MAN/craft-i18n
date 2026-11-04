@@ -65,6 +65,7 @@
 	A font isn't embedded	Un carattere non è incorporato
 	A form field has additional actions	Un campo modulo ha azioni aggiuntive
 	A link	Un collegamento
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Un modello locale non è un modello cloud d'avanguardia: può sbagliare, e una risposta lunga richiede il suo tempo sulla CPU. Verifica tutto ciò che è critico e valuta la dimensione del modello rispetto a questa macchina prima di scaricarlo.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Un logo o un nome a sinistra delle schede, dove lo mostrerebbe una barra del titolo: quello di PdfCraft o quello della tua azienda.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Un numero di pagine ferma l’alimentatore dopo tanti fogli. Annulla interrompe il trasferimento prima; le pagine già ricevute restano nel documento.
@@ -656,6 +657,7 @@ certificate	Basic constraints	Vincoli di base
 	Could not mark the selection because text could not be read on every page	Impossibile contrassegnare la selezione perché non è stato possibile leggere il testo su tutte le pagine
 	Could not save: {e}	Impossibile salvare: {e}
 	Couldn't add {name}: {e}	Impossibile aggiungere {name}: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Impossibile combinare i file: {e}
 	Couldn't copy the image: {e}	Impossibile copiare l'immagine: {e}
 	Couldn't create a PDF: {e}	Impossibile creare un PDF: {e}
@@ -1205,6 +1207,7 @@ calendar date	February	febbraio
 	Flip on short edge	Rilegatura sul lato corto
 	Flip vertical	Capovolgi verticalmente
 	Float panel	Rendi pannello flottante
+	Folder	Folder
 	Folders	Cartelle
 	Font (unnamed) on page {p} doesn't map its characters to Unicode	Il carattere (senza nome) a pagina {p} non associa i propri glifi a Unicode
 	Font colour:	Colore carattere:
@@ -1340,7 +1343,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Nei flussi con codifica LZW, usa Flate
 	In this file	In questo file
 	Include revocation information when signing (LTV)	Includi le informazioni di revoca durante la firma (LTV)
-	Include subfolders	Includi sottocartelle
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Include modifiche non salvate
 	Incompatible	Incompatibile
 	Incorrect password. Try again.	Password errata. Riprova.
@@ -1456,6 +1459,7 @@ certificate	Key usage	Utilizzo chiave
 	Large scan	Acquisizione grande
 	Larger pages	Pagine più grandi
 	Larger text	Testo più grande
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Miniature più grandi
 	Last page	Ultima pagina
 	Later in calculation order	Dopo nell'ordine di calcolo
@@ -1506,6 +1510,7 @@ certificate	Key usage	Utilizzo chiave
 	List PKCS #11 token (smart card, HSM) signing identities	Elenca le identità di firma dei token PKCS #11 (smart card, HSM)
 	List view	Vista elenco
 	Listing scanners…	Elenco degli scanner…
+	Listing the folder…	Listing the folder…
 	Lists	Elenchi
 	Load document font	Carica il font del documento
 	Load font…	Carica carattere…
@@ -1568,6 +1573,7 @@ calendar date	March	marzo
 	Match field sizes	Uniforma dimensioni dei campi
 	Match page at 100%	Adatta il foglio alla pagina al 100%
 	Matches what was signed	Corrisponde a quanto firmato
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximum	Massima
 	maximum	il massimo
 	May	maggio
@@ -1790,6 +1796,7 @@ scroll speed	Normal	Normale
 	Not present	Non presente
 	Not rated	Nessuna valutazione
 	Not replaced: {why}	Non sostituito: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Nota
 	Nothing	Niente
 	nothing in the file matches this document	nulla nel file corrisponde a questo documento
@@ -1973,6 +1980,7 @@ animation effects	On	Attivati
 	Pages per sheet:	Pagine per foglio:
 	Pages selected	Pagine selezionate
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Le pagine che sono solo immagini di testo non possono essere lette ad alta voce né ricercate. Riconosci il testo (OCR) per aggiungere un livello di testo.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Le pagine che usano font Type 3 vengono stampate come immagini, perché Windows può chiudere PdfCraft durante la loro stampa. Le altre pagine vengono stampate come al solito.
 	Pages to Print	Pagine da stampare
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Pagine il cui testo non è stato possibile leggere: {n}. Le corrispondenze su di esse non sono elencate.
@@ -2167,6 +2175,7 @@ certificate	Public key	Chiave pubblica
 	Read to end of document	Leggi fino alla fine del documento
 	Read {n} words on {m} of {t} pages	Lette {n} parole in {m} pagine su {t}
 	Reading colours	Colori di lettura
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Opzioni di lettura…
 	Reading page {page}…	Lettura pagina {page}…
 	Reading Preferences	Preferenze di lettura
@@ -2521,6 +2530,8 @@ calendar weekday	Sa	Sa
 	Scroll tabs left	Scorri le schede a sinistra
 	Scroll tabs right	Scorri le schede a destra
 	Scroll the page	Scorri la pagina
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Cerca nei commenti
 	Search complete.	Ricerca completata.
 	Search panel	Pannello di ricerca
@@ -2529,9 +2540,11 @@ calendar weekday	Sa	Sa
 	Search tools…	Cerca strumenti…
 	Searchable Image	Immagine ricercabile
 	Searchable Image (Exact)	Immagine ricercabile (esatta)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Ricerca in corso… {s} di {p} pagine
 	Searching… {s}/{p}	Ricerca in corso… {s}/{p}
 	Search…	Cerca…
+	Secured	Secured
 	Security method	Metodo di protezione
 	Security properties	Proprietà di sicurezza
 	Security properties…	Proprietà di sicurezza…
@@ -2794,7 +2807,11 @@ action wizard	Start	Avvia
 	still checking whether the tesseract program can run; try again in a moment	verifica in corso se il programma tesseract può essere eseguito; riprova tra un momento
 	Still printing; the job continues on the printer	Stampa ancora in corso; il lavoro continua sulla stampante
 	Still rendering — this page is unusually complex…	Rendering ancora in corso: questa pagina è insolitamente complessa…
+	Stop	Stop
 	Stop reading	Interrompi lettura
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Raddrizza pagina scansionata
 	Straighten skewed scans	Raddrizza le scansioni inclinate
 	Straighten the page	Raddrizza la pagina
@@ -3038,6 +3055,7 @@ calendar weekday	Th	Gi
 	The release has ambiguous packages. Choose a package on the official release page.	La versione include pacchetti ambigui. Scegli un pacchetto nella pagina ufficiale delle versioni.
 	The release is not a published stable update. Try again later.	Questa versione non è un aggiornamento stabile pubblicato. Riprova più tardi.
 	The replacement file doesn't have that many pages.	Il file sostitutivo non ha così tante pagine.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Le restrizioni valgono per i destinatari senza “Tutte le autorizzazioni”. Viene applicato al salvataggio.
 	The reverse sides already scanned are kept.	I retro già acquisiti sono conservati.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	le righe sono troppo basse: rendi l'area più alta oppure usa meno righe o meno spaziatura tra le righe
@@ -3059,6 +3077,7 @@ calendar weekday	Th	Gi
 	The scanner reported a lamp or device error.	Lo scanner ha segnalato un errore della lampada o del dispositivo.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Lo scanner ha segnalato un problema con la carta (inceppamento o più fogli prelevati insieme).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	I pixel per pollice reali dello schermo. Calibra con un righello perché la dimensione effettiva (100%) mostri le pagine alla loro vera dimensione.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	Le copie ricercabili vengono scritte qui con i nomi dei file di origine
 	The security settings don't allow screen readers to read the text	Le impostazioni di sicurezza non consentono ai lettori di schermo di leggere il testo
 	The selected area has been copied ({w} × {h} pixels)	L'area selezionata è stata copiata ({w} × {h} pixel)
@@ -3191,6 +3210,7 @@ calendar weekday	Th	Gi
 	This file is already as small as it can be made ({size}). No copy was saved.	Questo file è già il più piccolo possibile ({size}). Nessuna copia salvata.
 	this file isn't XFDF, FDF, XML or text form data	questo file non contiene dati modulo XFDF, FDF, XML o di testo
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Questo file era danneggiato ed è stato riparato. Il salvataggio mantiene la versione riparata.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	La cartella non è disponibile in questo momento. Potrebbe essere stata spostata, oppure il disco o il servizio cloud che la contiene non è in linea.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Impossibile usare questo file del carattere. Scegli un file TTF, OTF o TTC leggibile.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Questo modulo contiene anche dati XFA, che PdfCraft non legge ancora. Puoi compilarne i campi, ma Acrobat potrebbe mostrare invece i valori XFA.
@@ -3257,6 +3277,7 @@ calendar weekday	Th	Gi
 	Too many spot inks to separate: {names}	Troppi inchiostri spot da separare: {names}
 	Too many windows are open	Troppe finestre aperte
 	Too many windows for this document	Troppe finestre per questo documento
+	Took too long to read	Took too long to read
 	Tools panel side	Lato del pannello Strumenti
 	Tooltip	Descrizione comando
 	Tooltip:	Descrizione comando:

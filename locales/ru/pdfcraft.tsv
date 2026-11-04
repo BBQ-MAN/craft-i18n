@@ -70,6 +70,7 @@
 	A font isn't embedded	Шрифт не встроен
 	A form field has additional actions	У поля формы есть дополнительные действия
 	A link	Ссылка
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локальная модель — не передовая облачная: она может ошибаться, и длинный ответ на процессоре занимает время. Проверяйте всё важное и соотносите размер модели с этой машиной до загрузки.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Логотип или название слева от вкладок, там, где их показала бы строка заголовка: PdfCraft или вашей компании.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Число страниц останавливает податчик после стольких листов. Отмена раньше завершает передачу; уже полученные страницы остаются в документе.
@@ -706,6 +707,7 @@ certificate	Basic constraints	Основные ограничения
 	Could not mark the selection because text could not be read on every page	Не удалось пометить выделение, поскольку текст не удалось прочитать на всех страницах
 	Could not save: {e}	Не удалось сохранить: {e}
 	Couldn't add {name}: {e}	Не удалось добавить {name}: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Не удалось объединить файлы: {e}
 	Couldn't copy the image: {e}	Не удалось скопировать изображение: {e}
 	Couldn't create a PDF: {e}	Не удалось создать PDF: {e}
@@ -1296,6 +1298,7 @@ calendar date	February	Февраль
 	Flip Vertical	Отразить по вертикали
 	Flip vertical	Отразить по вертикали
 	Float panel	Сделать панель плавающей
+	Folder	Folder
 	Folders	Папки
 	Font (unnamed) on page {p} doesn't map its characters to Unicode	Шрифт (без имени) на странице {p} не сопоставляет символы с Юникодом
 	Font colour:	Цвет шрифта:
@@ -1435,7 +1438,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Использовать Flate вместо LZW в потоках с кодированием LZW
 	In this file	В этом файле
 	Include revocation information when signing (LTV)	Добавлять сведения об отзыве при подписании (LTV)
-	Include subfolders	Включая вложенные папки
+	Include subfolders	Include subfolders
 	Includes unsaved changes	Включает несохранённые изменения
 	Incompatible	Несовместимо
 	Incorrect password. Try again.	Неверный пароль. Попробуйте снова.
@@ -1553,6 +1556,7 @@ certificate	Key usage	Назначение ключа
 	Large scan	Крупное сканирование
 	Larger pages	Крупнее страницы
 	Larger text	Больший текст
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Увеличить миниатюры
 	Last	Последняя
 	Last page	Последняя страница
@@ -1606,6 +1610,7 @@ certificate	Key usage	Назначение ключа
 	List labels and bodies belong in a list item. Fix the list's tags.	Метки и тела списков принадлежат элементу списка. Исправьте теги списка.
 	List PKCS #11 token (smart card, HSM) signing identities	Список удостоверений подписи с токенов PKCS #11 (смарт-карты, HSM)
 	Listing scanners…	Список сканеров…
+	Listing the folder…	Listing the folder…
 	Lists	Списки
 	Load document font	Загрузить шрифт документа
 	Load font…	Загрузить шрифт…
@@ -1680,6 +1685,7 @@ calendar date	March	Март
 	Match field sizes	Выровнять размеры полей
 	Match page at 100%	Подобрать бумагу, масштаб 100%
 	Matches what was signed	Соответствует подписанному
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximum	Максимальное
 	maximum	максимум
 	May	Май
@@ -1920,6 +1926,7 @@ scroll speed	Normal	Обычная
 	Not present	Отсутствует
 	Not rated	Без оценки
 	Not replaced: {why}	Не заменено: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Заметка
 	Nothing	Ничего
 	nothing in the file matches this document	ничего в файле не соответствует этому документу
@@ -2115,6 +2122,7 @@ animation effects	On	Вкл
 	Pages per sheet:	Страниц на листе:
 	Pages selected	Выделенные страницы
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Страницы, которые являются только изображениями текста, нельзя озвучить или искать. Распознайте текст (OCR), чтобы добавить текстовый слой.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Страницы со шрифтами Type 3 печатаются как изображения, потому что Windows может закрыть PdfCraft во время их печати. Остальные страницы печатаются как обычно.
 	Pages to Print	Страницы для печати
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Страницы, текст которых не удалось прочитать: {n}. Совпадения на них не показаны.
@@ -2323,6 +2331,7 @@ certificate	Public key	Открытый ключ
 	Read to end of document	Прочитать до конца документа
 	Read {n} words on {m} of {t} pages	Прочитано {n} слов на {m} из {t} страниц
 	Reading colours	Цвета для чтения
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Параметры чтения…
 	Reading page {page}…	Чтение страницы {page}…
 	Reading Preferences	Настройки чтения
@@ -2702,6 +2711,8 @@ calendar weekday	Sa	Сб
 	Scroll tabs left	Прокрутить вкладки влево
 	Scroll tabs right	Прокрутить вкладки вправо
 	Scroll the page	Прокрутить страницу
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Поиск по комментариям
 	Search complete.	Поиск завершён.
 	Search panel	Панель поиска
@@ -2711,10 +2722,12 @@ calendar weekday	Sa	Сб
 	Search tools…	Поиск инструментов…
 	Searchable Image	Изображение с поиском
 	Searchable Image (Exact)	Доступное для поиска изображение (точное)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching…	Поиск…
 	Searching… {s} of {p} pages	Поиск… {s} из {p} страниц
 	Searching… {s}/{p}	Поиск… {s}/{p}
 	Search…	Поиск…
+	Secured	Secured
 	Security method	Метод безопасности
 	Security properties	Свойства безопасности
 	Security properties…	Свойства безопасности…
@@ -2990,7 +3003,11 @@ action wizard	Start	Начать
 	still checking whether the tesseract program can run; try again in a moment	идёт проверка, может ли запуститься программа tesseract; повторите попытку через мгновение
 	Still printing; the job continues on the printer	Печать продолжается; задание выполняется на принтере
 	Still rendering — this page is unusually complex…	Отрисовка продолжается: эта страница необычно сложная…
+	Stop	Stop
 	Stop reading	Остановить чтение
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	Выровнять отсканированную страницу
 	Straighten skewed scans	Выравнивать наклонённые сканы
 	Straighten the page	Выпрямить страницу
@@ -3248,6 +3265,7 @@ calendar weekday	Th	Чт
 	The release has ambiguous packages. Choose a package on the official release page.	В выпуске найдено несколько подходящих пакетов. Выберите пакет на официальной странице выпусков.
 	The release is not a published stable update. Try again later.	Выпуск не является опубликованным стабильным обновлением. Попробуйте позже.
 	The replacement file doesn't have that many pages.	В заменяющем файле нет столько страниц.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Ограничения действуют для получателей без «Все разрешения». Применяется при сохранении.
 	The reverse sides already scanned are kept.	Уже отсканированные обороты сохранены.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	строки слишком низкие: увеличьте высоту области, уменьшите число строк или интервал между ними
@@ -3269,6 +3287,7 @@ calendar weekday	Th	Чт
 	The scanner reported a lamp or device error.	Сканер сообщил об ошибке лампы или устройства.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Сканер сообщил о проблеме с бумагой (замятие или одновременная подача нескольких листов).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Реальное число пикселей на дюйм экрана. Откалибруйте с помощью линейки, чтобы реальный размер (100%) показывал страницы в их настоящем размере.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	Копии с поиском записываются сюда под именами исходных файлов
 	The security settings don't allow screen readers to read the text	Настройки защиты не позволяют программам чтения с экрана читать текст
 	The selected area has been copied ({w} × {h} pixels)	Выделенная область скопирована ({w} × {h} пикселей)
@@ -3407,6 +3426,7 @@ calendar weekday	Th	Чт
 	This file is already as small as it can be made ({size}). No copy was saved.	Этот файл уже минимального размера ({size}). Копия не сохранена.
 	this file isn't XFDF, FDF, XML or text form data	этот файл не является XFDF, FDF, XML или текстовыми данными формы
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Этот файл был повреждён и восстановлен. Сохранение сохраняет восстановленную версию.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Эта папка сейчас недоступна. Возможно, она перемещена или её диск либо облачная синхронизация не в сети.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Этот файл шрифта нельзя использовать. Выберите доступный для чтения файл TTF, OTF или TTC.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Эта форма также содержит данные XFA, которые PdfCraft пока не читает. Вы можете заполнить её поля, но Acrobat может показать значения XFA вместо них.
@@ -3473,6 +3493,7 @@ calendar weekday	Th	Чт
 	Too early	Слишком рано
 	Too many copies: increase the spacing or the size.	Слишком много копий: увеличьте расстояние или размер.
 	Too many spot inks to separate: {names}	Слишком много плашечных красок для цветоделения: {names}
+	Took too long to read	Took too long to read
 	Tools panel side	Сторона панели инструментов
 	Tooltip	Подсказка
 	Tooltip:	Подсказка:

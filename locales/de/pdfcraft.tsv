@@ -78,6 +78,7 @@
 	A font isn't embedded	Eine Schrift ist nicht eingebettet
 	A form field has additional actions	Ein Formularfeld hat zusätzliche Aktionen
 	A link	Ein Link
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Ein lokales Modell ist kein Spitzengroßmodell aus der Cloud: Es kann sich irren, und lange Antworten brauchen auf der CPU ihre Zeit. Prüfen Sie alles Entscheidende und bedenken Sie die Modellgröße gegen diesen Rechner vor dem Download.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Ein Logo oder ein Name links neben den Tabs, wo eine Titelleiste ihn zeigen würde: das von PdfCraft oder das deiner Firma.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Eine Seitenzahl stoppt den Einzug nach so vielen Blättern. Abbrechen beendet die Übertragung früher; bereits empfangene Seiten bleiben im Dokument.
@@ -692,6 +693,7 @@
 	Could not mark the selection because text could not be read on every page	Die Auswahl konnte nicht markiert werden, weil der Text nicht auf allen Seiten gelesen werden konnte
 	Could not save: {e}	Speichern fehlgeschlagen: {e}
 	Couldn't add {name}: {e}	{name} konnte nicht hinzugefügt werden: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	Dateien konnten nicht zusammengeführt werden: {e}
 	Couldn't copy the image: {e}	Das Bild konnte nicht kopiert werden: {e}
 	Couldn't create a PDF: {e}	PDF konnte nicht erstellt werden: {e}
@@ -1274,6 +1276,7 @@ scroll speed	Fast	Schnell
 	Flip on short edge	An kurzer Kante wenden
 	Flip vertical	Vertikal spiegeln
 	Float panel	Bereich frei platzieren
+	Folder	Folder
 	Folders	Ordner
 	Font	Schrift
 	Font (unnamed) on page {p} doesn't map its characters to Unicode	Eine unbenannte Schrift auf Seite {p} ordnet ihre Zeichen nicht Unicode zu
@@ -1423,7 +1426,7 @@ key	Home	Pos1
 	In streams that use LZW encoding, use Flate instead	In LZW-codierten Streams stattdessen Flate verwenden
 	In this file	In dieser Datei
 	Include revocation information when signing (LTV)	Sperrinformationen beim Signieren einbetten (LTV)
-	Include subfolders	Unterordner einbeziehen
+	Include subfolders	Include subfolders
 	Include the grid settings	Rastereinstellungen einschließen
 	Includes unsaved changes	Enthält ungespeicherte Änderungen
 	Incompatible	Inkompatibel
@@ -1530,6 +1533,7 @@ key	Home	Pos1
 	Large scan	Großer Scan
 	Larger pages	Größere Seiten
 	Larger text	Größerer Text
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Größere Miniaturen
 	Last page	Letzte Seite
 	Later in calculation order	Später in der Berechnungsreihenfolge
@@ -1582,6 +1586,7 @@ key	Home	Pos1
 	List labels and bodies belong in a list item. Fix the list's tags.	Listenbeschriftungen und -inhalte gehören in einen Listeneintrag. Korrigiere die Tags der Liste.
 	List PKCS #11 token (smart card, HSM) signing identities	PKCS-#11-Token (Smartcards, HSMs) als Signaturidentitäten aufführen
 	Listing scanners…	Scanner werden aufgelistet…
+	Listing the folder…	Listing the folder…
 	Lists	Listen
 	Load document font	Dokumentschriftart laden
 	Load font…	Schriftart laden…
@@ -1646,6 +1651,7 @@ key	Home	Pos1
 	Match field sizes	Feldgrößen angleichen
 	Match page at 100%	Papier passend zur Seite (100 %)
 	Matches what was signed	Stimmt mit dem Signierten überein
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	maximum	Maximum
 	May	Mai
 	Measure area	Fläche messen
@@ -1878,6 +1884,7 @@ scroll speed	Normal	Normal
 	Not present	Nicht vorhanden
 	Not rated	Nicht bewertet
 	Not replaced: {why}	Nicht ersetzt: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	Notiz
 	Nothing	Nichts
 	nothing in the file matches this document	nichts in der Datei passt zu diesem Dokument
@@ -2072,6 +2079,7 @@ animation effects	On	Ein
 	Pages per sheet:	Seiten pro Blatt:
 	Pages selected	Ausgewählte Seiten
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	Seiten, die nur aus Bildern von Text bestehen, können weder vorgelesen noch durchsucht werden. Führe „Text erkennen“ (OCR) aus, um eine Textebene hinzuzufügen.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	Seiten mit Type-3-Schriften werden als Bilder gedruckt, weil Windows PdfCraft beim Drucken dieser Seiten schließen kann. Die anderen Seiten werden wie gewohnt gedruckt.
 	Pages to Print	Zu druckende Seiten
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Seiten, deren Text nicht gelesen werden konnte: {n}. Treffer darauf werden nicht aufgeführt.
@@ -2275,6 +2283,7 @@ animation effects	On	Ein
 	Read to end of document	Bis zum Ende des Dokuments vorlesen
 	Read {n} words on {m} of {t} pages	{n} Wörter auf {m} von {t} Seiten gelesen
 	Reading colours	Lesefarben
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	Leseoptionen…
 	Reading page {page}…	Seite {page} wird vorgelesen…
 	Reading Preferences	Leseeinstellungen
@@ -2647,6 +2656,8 @@ calendar weekday	Sa	Sa
 	Scroll tabs left	Tabs nach links scrollen
 	Scroll tabs right	Tabs nach rechts scrollen
 	Scroll the page	Seite scrollen
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	Kommentare durchsuchen
 	Search complete.	Suche abgeschlossen.
 	Search panel	Suchbereich
@@ -2656,10 +2667,12 @@ calendar weekday	Sa	Sa
 	Search tools…	Werkzeuge suchen…
 	Searchable Image	Durchsuchbares Bild
 	Searchable Image (Exact)	Durchsuchbares Bild (exakt)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching…	Wird gesucht…
 	Searching… {s} of {p} pages	Suche läuft… {s} von {p} Seiten
 	Searching… {s}/{p}	Suche läuft… {s}/{p}
 	Search…	Suchen…
+	Secured	Secured
 	Security method	Sicherheitsmethode
 	Security properties	Sicherheitseigenschaften
 	Security properties…	Sicherheitseigenschaften…
@@ -2922,8 +2935,11 @@ action wizard	Start	Starten
 	still checking whether the tesseract program can run; try again in a moment	es wird noch geprüft, ob das Programm tesseract ausgeführt werden kann; versuchen Sie es gleich noch einmal
 	Still printing; the job continues on the printer	Es wird noch gedruckt; der Auftrag läuft auf dem Drucker weiter
 	Still rendering — this page is unusually complex…	Wird noch gerendert – diese Seite ist ungewöhnlich komplex…
-	Stop	Stopp
+	Stop	Stop
 	Stop reading	Vorlesen beenden
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten a page that is curved, folded or photographed at an angle, so its lines of text run straight	Begradigt eine gewölbte, gefaltete oder schräg fotografierte Seite, sodass ihre Textzeilen gerade verlaufen
 	Straighten scanned page	Gescannte Seite geraderichten
 	Straighten skewed scans	Schief eingescannte Seiten geraderichten
@@ -3180,6 +3196,7 @@ calendar weekday	Th	Do
 	The release has ambiguous packages. Choose a package on the official release page.	Für dieses Release gibt es mehrere mögliche Pakete. Wähle ein Paket auf der offiziellen Release-Seite.
 	The release is not a published stable update. Try again later.	Diese Veröffentlichung ist kein veröffentlichtes stabiles Update. Versuche es später erneut.
 	The replacement file doesn't have that many pages.	Die Ersatzdatei hat nicht so viele Seiten.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Die Einschränkungen gelten für Empfänger ohne „Alle Berechtigungen“. Wird beim Speichern angewendet.
 	The reverse sides already scanned are kept.	Die bereits gescannten Rückseiten werden aufbewahrt.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	die Zeilen sind zu niedrig: Mach den Bereich höher oder verwende weniger Zeilen oder weniger Zeilenabstand
@@ -3201,6 +3218,7 @@ calendar weekday	Th	Do
 	The scanner reported a lamp or device error.	Der Scanner meldet einen Lampen- oder Gerätefehler.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Der Scanner meldet ein Papierproblem (Papierstau oder mehrere gemeinsam eingezogene Blätter).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Die tatsächlichen Pixel pro Zoll des Bildschirms. Mit einem Lineal kalibrieren, damit die tatsächliche Größe (100 %) Seiten in ihrer echten Größe zeigt.
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	Die durchsuchbaren Kopien werden hier unter den Namen der Quelldateien gespeichert
 	The security settings don't allow screen readers to read the text	Die Sicherheitseinstellungen erlauben Screenreadern nicht, den Text zu lesen
 	The selected area has been copied ({w} × {h} pixels)	Der ausgewählte Bereich wurde kopiert ({w} × {h} Pixel)
@@ -3340,6 +3358,7 @@ calendar weekday	Th	Do
 	This file is already as small as it can be made ({size}). No copy was saved.	Diese Datei ist bereits so klein wie möglich ({size}). Es wurde keine Kopie gespeichert.
 	this file isn't XFDF, FDF, XML or text form data	diese Datei enthält keine Formulardaten als XFDF, FDF, XML oder Text
 	This file was damaged and has been repaired. Saving keeps the repaired version.	Diese Datei war beschädigt und wurde repariert. Beim Speichern bleibt die reparierte Version erhalten.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	Dieser Ordner ist gerade nicht verfügbar. Er wurde vielleicht verschoben, oder sein Laufwerk bzw. die Cloud-Synchronisierung ist offline.
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Diese Schriftdatei kann nicht verwendet werden. Wählen Sie eine lesbare TTF-, OTF- oder TTC-Datei.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Dieses Formular enthält auch XFA-Daten, die PdfCraft noch nicht liest. Du kannst die Felder ausfüllen, aber Acrobat zeigt eventuell stattdessen die XFA-Werte an.
@@ -3405,6 +3424,7 @@ calendar weekday	Th	Do
 	Too early	Zu früh
 	Too many copies: increase the spacing or the size.	Zu viele Kopien: Abstand oder Größe erhöhen.
 	Too many spot inks to separate: {names}	Zu viele Volltonfarben zum Separieren: {names}
+	Took too long to read	Took too long to read
 	Tools panel side	Seite des Werkzeugbereichs
 	Tooltip	Tooltip
 	Tooltip:	Tooltip:

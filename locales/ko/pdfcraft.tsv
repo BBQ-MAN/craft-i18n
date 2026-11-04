@@ -63,6 +63,7 @@
 	A font isn't embedded	글꼴이 포함되어 있지 않습니다
 	A form field has additional actions	양식 필드에 추가 동작이 있습니다
 	A link	링크
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	제목 표시줄이 있을 자리인 탭 왼쪽에 로고나 이름을 표시합니다. PdfCraft 기본 로고나 회사 로고를 쓸 수 있습니다.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
 	A picture covers page {pages} (a scan?), so the background won't show there.	이미지가 {pages}페이지를 덮고 있어(스캔본?) 배경이 보이지 않습니다.
@@ -606,6 +607,7 @@ certificate	Basic constraints	기본 제약 조건
 	Correct recognized text	인식된 텍스트 수정
 	Could not save: {e}	저장할 수 없습니다: {e}
 	Couldn't add {name}: {e}	{name}을(를) 추가할 수 없습니다: {e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't check for updates: {e}	업데이트를 확인할 수 없습니다: {e}
 	Couldn't combine files: {e}	파일을 결합할 수 없습니다: {e}
 	Couldn't copy the image: {e}	이미지를 복사할 수 없습니다: {e}
@@ -1231,7 +1233,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	LZW 인코딩 스트림을 Flate로 인코딩
 	In this file	이 파일에서
 	Include revocation information when signing (LTV)	서명할 때 해지 정보 포함(LTV)
-	Include subfolders	하위 폴더 포함
+	Include subfolders	Include subfolders
 	Includes unsaved changes	저장되지 않은 변경 내용 포함
 	Incorrect password. Try again.	암호가 올바르지 않습니다. 다시 시도하세요.
 	Indent	들여쓰기
@@ -1337,6 +1339,7 @@ certificate	Key usage	키 용도
 	Language and spelling	언어 및 맞춤법
 	Large scan	Large scan
 	Larger pages	더 큰 페이지
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	Larger thumbnails
 	Last commit	마지막 커밋
 	Last page	마지막 페이지
@@ -1385,6 +1388,7 @@ certificate	Key usage	키 용도
 	List labels and bodies belong in a list item. Fix the list's tags.	목록 레이블과 본문은 목록 항목에 속해야 합니다. 목록의 태그를 수정하세요.
 	List view	목록 보기
 	Listing scanners…	Listing scanners…
+	Listing the folder…	Listing the folder…
 	Lists	목록
 	Load document font	문서 글꼴 불러오기
 	Load font…	글꼴 로드…
@@ -1439,6 +1443,7 @@ calendar date	March	3월
 	Mask:	마스크:
 	Match field sizes	필드 크기 맞춤
 	Match page at 100%	100% 배율로 페이지에 맞춤
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	maximum	최댓값
 	May	5월
 calendar date	May	5월
@@ -1633,6 +1638,7 @@ scroll speed	Normal	보통
 	Not now	지금은 안 함
 	Not present	없음
 	Not replaced: {why}	바꾸지 않음: {why}
+	Not searched: {n}	Not searched: {n}
 	Note	메모
 	Nothing	없음
 	nothing in the file matches this document	파일에서 이 문서와 일치하는 항목이 없음
@@ -1806,6 +1812,7 @@ animation effects	On	켜기
 	Pages per sheet:	용지당 페이지 수:
 	Pages selected	선택한 페이지
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	텍스트가 사진으로만 되어 있는 페이지는 소리 내어 읽거나 검색할 수 없습니다. 텍스트 레이어를 추가하려면 텍스트 인식(OCR)을 실행하세요.
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages to Print	인쇄할 페이지
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	텍스트를 읽을 수 없는 페이지: {n}. 해당 페이지의 일치 항목은 목록에 없습니다.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	링크, 주석 또는 필드가 있는 페이지는 구조 순서대로 탭 이동해야 합니다. 수정하면 각 페이지의 탭 순서가 문서 구조 사용으로 설정됩니다.
@@ -1972,6 +1979,7 @@ certificate	Public key	공개 키
 	Read mode	읽기 모드
 	Read Only	읽기 전용
 	Reading colours	읽기 색상
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading the printer's settings…	Reading the printer's settings…
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.
 	Reads {name}, which calculates later, so it shows an old value.	Reads {name}, which calculates later, so it shows an old value.
@@ -2281,6 +2289,8 @@ calendar weekday	Sa	토
 	Scroll tabs left	탭 왼쪽으로 스크롤
 	Scroll tabs right	탭 오른쪽으로 스크롤
 	Scroll the page	페이지 스크롤
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	주석 검색
 	Search panel	검색 패널
 	Search results	검색 결과
@@ -2288,9 +2298,11 @@ calendar weekday	Sa	토
 	Search tools and commands…	도구 및 명령 검색…
 	Search tools…	도구 검색…
 	Searchable Image (Exact)	검색 가능한 이미지(정확한)
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	검색 중… {p}페이지 중 {s}
 	Searching… {s}/{p}	검색 중… {s}/{p}
 	Search…	검색…
+	Secured	Secured
 	Security method	보안 방법
 	Security properties	보안 속성
 	Security properties…	보안 속성…
@@ -2514,6 +2526,9 @@ action wizard	Start	시작
 	Still printing; the job continues on the printer	아직 인쇄 중입니다. 작업은 프린터에서 계속됩니다
 	Still rendering — this page is unusually complex…	아직 렌더링 중입니다. 이 페이지는 이례적으로 복잡합니다…
 	Stop	Stop
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten the page	Straighten the page
 	Strength: {s}	강도: {s}
 	Strikethrough text	텍스트 취소선
@@ -2721,6 +2736,7 @@ calendar weekday	Th	목
 	The provider's page didn't come back in time. Try again.	공급자 페이지가 제때 돌아오지 않았습니다. 다시 시도하세요.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	리디렉션 URI는 포트가 있는 http://127.0.0.1 또는 http://localhost여야 합니다.
 	The replacement file doesn't have that many pages.	교체 파일에는 그만큼 많은 페이지가 없습니다.
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	“모든 권한”이 없는 수신자에게는 제한이 적용됩니다. 저장할 때 적용됩니다.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
@@ -2743,6 +2759,7 @@ calendar weekday	Th	목
 	The scanner needs attention.	The scanner needs attention.
 	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
 	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The security settings don't allow screen readers to read the text	보안 설정에서 화면 낭독기가 텍스트를 읽는 것을 허용하지 않습니다
 	The selected area has been copied ({w} × {h} pixels)	선택한 영역이 복사되었습니다({w} × {h}픽셀)
 	The selected area is no longer on a page of this document.	선택한 영역이 더 이상 이 문서의 페이지에 없습니다.
@@ -2861,6 +2878,7 @@ calendar weekday	Th	목
 	This file is already as small as it can be made ({size}). No copy was saved.	이 파일은 이미 최소 크기({size})입니다. 사본이 저장되지 않았습니다.
 	this file isn't XFDF, FDF, XML or text form data	이 파일은 XFDF, FDF, XML 또는 텍스트 양식 데이터가 아님
 	This file was damaged and has been repaired. Saving keeps the repaired version.	이 파일은 손상되었다가 복구되었습니다. 저장하면 복구된 버전이 유지됩니다.
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	현재 이 폴더를 사용할 수 없습니다. 폴더가 이동되었거나 해당 드라이브 또는 클라우드 동기화가 오프라인 상태일 수 있습니다.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	이 양식에는 PdfCraft가 아직 읽지 못하는 XFA 데이터도 들어 있습니다. 필드는 채울 수 있지만 Acrobat이 대신 XFA 값을 표시할 수 있습니다.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	스크립트 하나가 너무 오래 실행되어 이 양식의 스크립트가 꺼졌습니다. 다시 실행하려면 문서를 다시 여세요.
@@ -2915,6 +2933,7 @@ calendar weekday	Th	목
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	토큰과 스마트 카드는 PKCS #11 모듈을 통해 서명합니다. 신뢰할 수 있는 모듈만 추가하세요. 모듈은 자체 코드를 실행합니다.
 	Too early	Too early
 	Too many spot inks to separate: {names}	분판할 별색 잉크가 너무 많습니다: {names}
+	Took too long to read	Took too long to read
 	Tools panel side	도구 패널 위치
 	Tooltip	도구 설명
 	Tooltip:	도구 설명:

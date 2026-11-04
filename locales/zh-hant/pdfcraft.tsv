@@ -66,6 +66,7 @@
 	a field named {name} already exists	已有名為 {name} 的欄位
 	A folder is asked for when a multiple-file run starts	多檔案執行開始時會詢問資料夾
 	A form field has additional actions	表單欄位具有額外動作
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	本機模型不是最先進的雲端模型：它可能出錯，較長的回答在處理器上需要時間。重要事項請務必查證，下載前也請留意模型大小與這台機器的匹配。
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	在分頁左側、標題列通常顯示的位置放一個標誌或名稱：PdfCraft 自己的，或你公司的。
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	指定頁數會在掃完這些頁後停止進紙器。取消會提前結束傳輸；已收到的頁面仍保留在文件中。
@@ -669,6 +670,7 @@
 	Could not mark the selection because text could not be read on every page	無法標記選取範圍，因為無法讀取所有頁面的文字
 	Could not save: {e}	無法儲存：{e}
 	Couldn't add {name}: {e}	無法新增{name}：{e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	無法合併檔案：{e}
 	Couldn't copy the image: {e}	無法複製圖片：{e}
 	Couldn't create a PDF: {e}	無法建立 PDF：{e}
@@ -1220,6 +1222,7 @@ scroll speed	Fast	快
 	Flip text up	翻轉文字朝上方向
 	Flip vertical	垂直翻轉
 	Float panel	浮動面板
+	Folder	Folder
 	Folders	資料夾
 	Font colour:	字型顏色：
 	Font file	字型檔案
@@ -1355,7 +1358,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	在使用 LZW 編碼的流中改用 Flate
 	In this file	在此檔案中
 	Include revocation information when signing (LTV)	簽署時包含撤銷資訊 (LTV)
-	Include subfolders	包含子資料夾
+	Include subfolders	Include subfolders
 	Includes unsaved changes	包含未儲存的變更
 	Incorrect password. Try again.	密碼不正確，請重試。
 	Indent	縮排
@@ -1456,6 +1459,7 @@ key	Home	Home
 	Large scan	Large scan
 	Larger pages	放大頁面
 	Larger text	放大文字
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	放大縮圖
 	Last page	最後一頁
 	Later in calculation order	在計算順序中後移
@@ -1504,6 +1508,7 @@ key	Home	Home
 	List items belong in a list. Fix the list's tags.	清單項應位於清單內。請修復清單標記。
 	List labels and bodies belong in a list item. Fix the list's tags.	清單標籤和正文應位於清單項內。請修復清單標記。
 	Listing scanners…	Listing scanners…
+	Listing the folder…	Listing the folder…
 	Lists	清單
 	Load document font	載入文件字型
 	Load font…	載入字型…
@@ -1566,6 +1571,7 @@ key	Home	Home
 	Mask:	掩碼：
 	Match page at 100%	以 100% 符合頁面
 	Matches what was signed	與所簽內容一致
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	Maximum	最高
 	maximum	最大值
 	May	五月
@@ -1784,6 +1790,7 @@ scroll speed	Normal	正常
 	Not present	不存在
 	Not rated	未評等
 	Not replaced: {why}	未取代：{why}
+	Not searched: {n}	Not searched: {n}
 	Note	附註
 	Nothing	無
 	nothing in the file matches this document	檔案中沒有與此文件相符的資料
@@ -1962,6 +1969,7 @@ animation effects	On	開
 	Pages per sheet:	每張紙頁數：
 	Pages selected	選取的頁面
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	僅為文字圖片的頁面無法朗讀或搜尋。請辨識文字（OCR）以新增文字層。
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	使用 Type 3 字型的頁面會以影像列印，因為列印這些頁面時 Windows 可能會關閉 PdfCraft。其他頁面照常列印。
 	Pages to Print	要列印的頁面
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	無法讀取文字的頁面：{n}。這些頁面上的相符項目未列出。
@@ -2161,6 +2169,7 @@ animation effects	On	開
 	Read to end of document	朗讀到文件末尾
 	Read {n} words on {m} of {t} pages	在 {t} 頁中的 {m} 頁上讀取了 {n} 個單詞
 	Reading colours	閱讀色彩
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	朗讀選項…
 	Reading page {page}…	正在朗讀第 {page} 頁…
 	Reading Preferences	朗讀偏好設定
@@ -2512,6 +2521,8 @@ animation effects	On	開
 	Scroll tabs left	向左捲動索引標籤
 	Scroll tabs right	向右捲動索引標籤
 	Scroll the page	捲動頁面
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	搜尋註解
 	Search complete.	搜尋完成。
 	Search panel	搜尋面板
@@ -2520,10 +2531,12 @@ animation effects	On	開
 	Search tools…	搜尋工具…
 	Searchable Image	可搜尋的影像
 	Searchable Image (Exact)	可搜尋圖片（精確）
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching…	正在搜尋…
 	Searching… {s} of {p} pages	正在搜尋… {s}/{p} 頁
 	Searching… {s}/{p}	正在搜尋… {s}/{p}
 	Search…	搜尋…
+	Secured	Secured
 	Security	安全
 	Security method	安全方法
 	Security properties	安全性內容
@@ -2774,6 +2787,9 @@ document scrollbar width	Standard	標準
 	Still printing; the job continues on the printer	仍在列印；工作會在印表機上繼續
 	Stop	Stop
 	Stop reading	停止朗讀
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	校正掃描頁面的傾斜
 	Straighten skewed scans	校正掃描件傾斜
 	Straighten the page	Straighten the page
@@ -2990,6 +3006,7 @@ document scrollbar width	Standard	標準
 	The release has ambiguous packages. Choose a package on the official release page.	此版本有多個相容套件。請在官方發行頁面選擇一個套件。
 	The release is not a published stable update. Try again later.	此版本不是已發布的穩定更新。請稍後再試。
 	The replacement file doesn't have that many pages.	替換檔案沒有那麼多頁面。
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	限制適用於沒有「所有權限」的收件者。儲存時套用。
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
@@ -3011,6 +3028,7 @@ document scrollbar width	Standard	標準
 	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
 	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	螢幕實際的每英吋像素數。用尺校準後，實際大小 (100%) 會以真實尺寸顯示頁面。
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	可搜尋副本以來源檔名寫入此資料夾
 	The selected area has been copied ({w} × {h} pixels)	所選區域已複製（{w} × {h} 畫素）
 	The selected area is no longer on a page of this document.	所選區域已不在此文件的任何頁面上。
@@ -3095,6 +3113,7 @@ document scrollbar width	Standard	標準
 	This file is already as small as it can be made ({size}). No copy was saved.	此檔案已經是最小的了（{size}）。未儲存副本。
 	this file isn't XFDF, FDF, XML or text form data	此檔案不是 XFDF、FDF、XML 或純文字表單資料
 	This file was damaged and has been repaired. Saving keeps the repaired version.	此檔案已損壞並已修復。儲存將保留修復後的版本。
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	此資料夾目前無法使用。它可能已被移動，或其所在磁碟或雲端同步處於離線狀態。
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	無法使用此字型檔案。請選擇可讀取的 TTF、OTF 或 TTC 檔案。
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	此表單還包含 XFA 資料，PdfCraft 暫不讀取。您可以填寫欄位，但 Acrobat 可能顯示 XFA 值。
@@ -3153,6 +3172,7 @@ document scrollbar width	Standard	標準
 	Tokens and smart cards sign through a PKCS #11 module. Only add modules you trust: a module runs its own code.	權杖與智慧卡透過 PKCS #11 模組簽署。只加入您信任的模組：模組會執行它自己的程式碼。
 	Too early	過早
 	Too many spot inks to separate: {names}	特別色過多，無法分色：{names}
+	Took too long to read	Took too long to read
 	Tools panel side	工具面板位置
 	Tooltip	提示
 	Tooltip:	提示：

@@ -66,6 +66,7 @@
 	a field named {name} already exists	已存在名为 {name} 的字段
 	A folder is asked for when a multiple-file run starts	多文件运行开始时会询问文件夹
 	A form field has additional actions	表单字段包含附加动作
+	A link or special file, which isn't followed	A link or special file, which isn't followed
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	本地模型不是最先进的云端模型：它可能出错，较长的回答在处理器上需要时间。重要事项请务必核实，下载前也请留意模型大小与这台机器是否匹配。
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	在标签左侧、标题栏通常显示的位置放一个徽标或名称：PdfCraft 自己的，或你公司的。
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	指定页数会在扫完这些页后停止进纸器。取消会提前结束传输；已收到的页面仍保留在文档中。
@@ -675,6 +676,7 @@
 	Could not mark the selection because text could not be read on every page	无法标记选区，因为无法读取所有页面上的文本
 	Could not save: {e}	无法保存：{e}
 	Couldn't add {name}: {e}	无法添加{name}：{e}
+	Couldn't be read: {reason}	Couldn't be read: {reason}
 	Couldn't combine files: {e}	无法合并文件：{e}
 	Couldn't copy the image: {e}	无法复制图像：{e}
 	Couldn't create a PDF: {e}	无法创建 PDF：{e}
@@ -1230,6 +1232,7 @@ scroll speed	Fast	快
 	Flip text up	翻转文字朝上方向
 	Flip vertical	垂直翻转
 	Float panel	浮动面板
+	Folder	Folder
 	Folders	文件夹
 	Font colour:	字体颜色：
 	Font file	字体文件
@@ -1361,7 +1364,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	在使用 LZW 编码的流中改用 Flate
 	In this file	当前文件
 	Include revocation information when signing (LTV)	签名时包含吊销信息 (LTV)
-	Include subfolders	包含子文件夹
+	Include subfolders	Include subfolders
 	Includes unsaved changes	包含未保存的更改
 	Incompatible	不兼容
 	Incorrect password. Try again.	密码不正确，请重试。
@@ -1466,6 +1469,7 @@ key	Home	Home
 	Large scan	大图扫描
 	Larger pages	放大页面
 	Larger text	放大文字
+	Larger than 512 MiB	Larger than 512 MiB
 	Larger thumbnails	放大缩略图
 	Last page	最后一页
 	Later in calculation order	在计算顺序中后移
@@ -1517,6 +1521,7 @@ key	Home	Home
 	List labels and bodies belong in a list item. Fix the list's tags.	列表标签和正文应位于列表项内。请修复列表标记。
 	List PKCS #11 token (smart card, HSM) signing identities	列出 PKCS #11 令牌(智能卡、HSM)上的签名身份
 	Listing scanners…	正在列出扫描仪…
+	Listing the folder…	Listing the folder…
 	Lists	列表
 	Load document font	加载文档字体
 	Load font…	加载字体…
@@ -1582,6 +1587,7 @@ key	Home	Home
 	Mask:	掩码：
 	Match page at 100%	匹配页面并设为 100%
 	Matches what was signed	与所签内容一致
+	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.	Matches: {matches}. Files with matches: {files}. PDFs read to the end: {searched} of {found}.
 	maximum	最大值
 	May	五月
 	Measure	测量
@@ -1808,6 +1814,7 @@ scroll speed	Normal	正常
 	Not present	不存在
 	Not rated	未评级
 	Not replaced: {why}	未替换：{why}
+	Not searched: {n}	Not searched: {n}
 	Note	附注
 	Nothing	无
 	nothing in the file matches this document	文件中没有与此文档匹配的数据
@@ -1986,6 +1993,7 @@ animation effects	On	开
 	Pages per sheet:	每张纸页数：
 	Pages selected	选定的页面
 	Pages that are only pictures of text can't be read aloud or searched. Recognize text (OCR) to add a text layer.	仅为文本图片的页面无法朗读或搜索。请识别文本（OCR）以添加文本层。
+	Pages that couldn't be read: {n}	Pages that couldn't be read: {n}
 	Pages that use Type 3 fonts print as images, because Windows can close PdfCraft while printing them. The other pages print as usual.	使用 Type 3 字体的页面将作为图像打印，因为打印这些页面时 Windows 可能会关闭 PdfCraft。其他页面照常打印。
 	Pages to Print	要打印的页面
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	无法读取文本的页面：{n}。这些页面上的匹配项未列出。
@@ -2187,6 +2195,7 @@ animation effects	On	开
 	Read to end of document	朗读到文档末尾
 	Read {n} words on {m} of {t} pages	在 {t} 页中的 {m} 页上读取了 {n} 个词
 	Reading colours	阅读配色
+	Reading file {n} of {total}: {name}	Reading file {n} of {total}: {name}
 	Reading options…	朗读选项…
 	Reading page {page}…	正在朗读第 {page} 页…
 	Reading Preferences	朗读偏好设置
@@ -2544,6 +2553,8 @@ animation effects	On	开
 	Scroll tabs left	向左滚动选项卡
 	Scroll tabs right	向右滚动选项卡
 	Scroll the page	滚动页面
+	Search a folder	Search a folder
+	Search a folder…	Search a folder…
 	Search comments	搜索注释
 	Search complete.	搜索完成。
 	Search panel	搜索面板
@@ -2552,10 +2563,12 @@ animation effects	On	开
 	Search tools…	搜索工具…
 	Searchable Image	可搜索的图像
 	Searchable Image (Exact)	可搜索图像（精确）
+	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching…	正在搜索…
 	Searching… {s} of {p} pages	正在搜索… {s}/{p} 页
 	Searching… {s}/{p}	正在搜索… {s}/{p}
 	Search…	搜索…
+	Secured	Secured
 	Security	安全
 	Security method	安全方法
 	Security properties	安全性属性
@@ -2819,7 +2832,11 @@ document scrollbar width	Standard	标准
 	Sticky note	附注
 	still checking whether the tesseract program can run; try again in a moment	仍在检查 tesseract 程序能否运行；请稍后重试
 	Still printing; the job continues on the printer	仍在打印；作业将在打印机上继续
+	Stop	Stop
 	Stop reading	停止朗读
+	Stopped at {limit} matches.	Stopped at {limit} matches.
+	Stopped before the end.	Stopped before the end.
+	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Straighten scanned page	校正扫描页面的倾斜
 	Straighten skewed scans	校正扫描件倾斜
 	Straighten the page	扶正页面
@@ -3039,6 +3056,7 @@ document scrollbar width	Standard	标准
 	The release has ambiguous packages. Choose a package on the official release page.	此版本有多个兼容的软件包。请在官方发布页面选择一个软件包。
 	The release is not a published stable update. Try again later.	此版本不是已发布的稳定更新。请稍后重试。
 	The replacement file doesn't have that many pages.	替换文件没有那么多页面。
+	The rest are left out of this list.	The rest are left out of this list.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	限制适用于没有“所有权限”的收件人。保存时应用。
 	The reverse sides already scanned are kept.	已扫描的背面已保留。
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	行太矮：请增加区域高度，或减少行数或行间距
@@ -3058,6 +3076,7 @@ document scrollbar width	Standard	标准
 	The scanner reported a lamp or device error.	扫描仪报告了灯管或设备错误。
 	The scanner reported a paper problem (a jam or several sheets fed together).	扫描仪报告了纸张问题（卡纸或多张纸一同送入）。
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	屏幕实际的每英寸像素数。用尺子校准后，实际大小 (100%) 会按真实尺寸显示页面。
+	The search stopped unexpectedly.	The search stopped unexpectedly.
 	The searchable copies are written here under the source names	可检索副本以源文件名写入此文件夹
 	The selected area has been copied ({w} × {h} pixels)	所选区域已复制（{w} × {h} 像素）
 	The selected area is no longer on a page of this document.	所选区域已不在此文档的任何页面上。
@@ -3153,6 +3172,7 @@ document scrollbar width	Standard	标准
 	This file is already as small as it can be made ({size}). No copy was saved.	此文件已经是最小的了（{size}）。未保存副本。
 	this file isn't XFDF, FDF, XML or text form data	此文件不是 XFDF、FDF、XML 或文本格式的表单数据
 	This file was damaged and has been repaired. Saving keeps the repaired version.	此文件已损坏并已修复。保存将保留修复后的版本。
+	This folder is too large or too deep to search all of it.	This folder is too large or too deep to search all of it.
 	This folder isn't available right now. It may have moved, or its drive or cloud sync is offline.	此文件夹当前不可用。它可能已被移动，或其所在驱动器或云同步处于离线状态。
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	无法使用此字体文件。请选择可读取的 TTF、OTF 或 TTC 文件。
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	此表单还包含 XFA 数据，PdfCraft 暂不读取。您可以填写字段，但 Acrobat 可能显示 XFA 值。
@@ -3216,6 +3236,7 @@ document scrollbar width	Standard	标准
 	Too early	过早
 	Too many copies: increase the spacing or the size.	副本过多：请增大间距或大小。
 	Too many spot inks to separate: {names}	专色过多，无法分色：{names}
+	Took too long to read	Took too long to read
 	Tools panel side	工具面板位置
 	Tooltip	提示
 	Tooltip:	提示：
