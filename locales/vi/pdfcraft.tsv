@@ -246,6 +246,7 @@ calendar date	April	tháng 4
 	At least one signature has problems.	Ít nhất một chữ ký có vấn đề.
 	At least one signature is invalid.	Ít nhất một chữ ký không hợp lệ.
 	At most	Tối đa
+	At the current {ppi} ppi this line should measure {length} {unit}.	Với độ phân giải hiện tại {ppi} ppi, đường này phải dài {length} {unit}.
 	Atelier	Atelier
 	Attach a file	Đính kèm một tệp
 	Attach a file…	Đính kèm tệp…
@@ -307,6 +308,8 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Bytes	Byte
 	Calculation order	Thứ tự tính toán
 	Calibrate from two points	Hiệu chuẩn từ hai điểm
+	Calibrate screen	Hiệu chỉnh màn hình
+	Calibrate…	Hiệu chỉnh…
 	Callout	Khung chú thích
 	Can't be read: {e}	Không thể đọc: {e}
 	Cancelled	Đã hủy
@@ -1186,7 +1189,9 @@ calendar date	May	tháng 5
 	Measure area	Đo diện tích
 	Measure distance	Đo khoảng cách
 	Measure objects	Đo đối tượng
+	Measure one of the lines below with a ruler, from one end mark to the other, and type its length beside it. The longest line you can measure is the most accurate; measuring several averages them.	Dùng thước đo một trong các đường bên dưới, từ vạch đầu này đến vạch đầu kia, rồi nhập độ dài bên cạnh. Đường dài nhất bạn đo được là chính xác nhất; đo nhiều đường sẽ lấy trung bình.
 	Measure perimeter	Đo chu vi
+	Measured length	Độ dài đo được
 	Measurement information	Thông tin phép đo
 	Measurement snapping	Bắt dính phép đo
 	Measuring tool	Công cụ đo
@@ -1824,6 +1829,7 @@ calendar weekday	Sa	T7
 	Scan & OCR	Quét & OCR
 	Screen flicker	Nhấp nháy màn hình
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Trình đọc màn hình chọn giọng đọc dựa trên ngôn ngữ của tài liệu. Hãy đặt trong Thuộc tính tài liệu > Nâng cao > Ngôn ngữ.
+	Screen resolution	Độ phân giải màn hình
 	Script	Tập lệnh
 	Script Name:	Tên script:
 	Script:	Nội dung script:
@@ -2006,6 +2012,7 @@ key	Space	Space
 	Squiggly underline text	Gạch chân lượn sóng cho văn bản
 	Stamp palette	Bảng chọn con dấu
 	Stamps	Con dấu
+	Standard (96 ppi)	Tiêu chuẩn (96 ppi)
 	Standard Business	Standard Business
 	Standards	Chuẩn
 	Start	Bắt đầu
@@ -2082,6 +2089,7 @@ calendar weekday	Th	T5
 	Thai and Arabic use regular fallback fonts when available.	Tiếng Thái và tiếng Ả Rập dùng phông chữ dự phòng thông thường khi có.
 	That didn't work: an internal error stopped it ({m}).	Không thành công: một lỗi nội bộ đã dừng nó ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Không thành công: một lỗi nội bộ đã dừng nó ({m}). Các tài liệu của bạn không thay đổi.
+	That length can't be right for this line: check the unit.	Độ dài này không thể đúng với đường này: hãy kiểm tra đơn vị.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	vùng, khoảng cách và độ rộng cột phải là số, khoảng cách từ 0 trở lên và mỗi độ rộng lớn hơn 0
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Thứ tự tính toán có {n} mục không tính gì. "Sửa thứ tự" sẽ xóa chúng.
 	the certificate expired on {date}	chứng chỉ đã hết hạn vào {date}
@@ -2172,6 +2180,7 @@ calendar weekday	Th	T5
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	Giá trị chữ ký RSA không có độ dài bằng môđun của khóa (các byte không ở đầu bị bỏ hoặc thêm); nó vẫn được đọc.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	DigestInfo của chữ ký RSA không có tham số NULL (các trình ký cũ ghi như vậy); nó vẫn được đọc.
 	The same password is tried on each file.	Cùng một mật khẩu được thử trên từng tệp.
+	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Số điểm ảnh thực trên mỗi inch của màn hình. Hiệu chỉnh bằng thước để Kích thước thực (100%) hiển thị trang đúng kích thước thật.
 	The security settings don't allow screen readers to read the text	Cài đặt bảo mật không cho phép trình đọc màn hình đọc văn bản
 	The selected area has been copied ({w} × {h} pixels)	Đã sao chép vùng đã chọn ({w} × {h} điểm ảnh)
 	The selected fields could not be found. Select them again.	Không tìm thấy các trường đã chọn. Hãy chọn lại.
@@ -2228,6 +2237,7 @@ calendar weekday	Th	T5
 	there are no redaction marks to apply	không có dấu đánh dấu xóa nào để áp dụng
 	There is no folder to save the digital ID in.	Không có thư mục nào để lưu Digital ID.
 	These files can't be read, so they won't be in the combined PDF:	Không đọc được các tệp này, nên chúng sẽ không có trong PDF kết hợp:
+	These measurements differ by more than 2%: check them.	Các số đo này chênh nhau hơn 2%: hãy kiểm tra lại.
 	These objects could not be moved. Select them again and try a smaller move.	Không thể di chuyển các đối tượng này. Hãy chọn lại chúng và thử di chuyển ít hơn.
 	Thick	Dày
 	Thin	Mỏng
