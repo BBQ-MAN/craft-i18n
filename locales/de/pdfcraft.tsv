@@ -559,6 +559,7 @@ key	Ctrl	Strg
 	Decimals	Nachkommastellen
 	Declared conformance: {shown}	Angegebene Konformität: {shown}
 	Decorative figure	Dekorative Abbildung
+	Default (p11-kit, then OpenSC)	Standard (p11-kit, dann OpenSC)
 	Default page display	Standard-Seitenanzeige
 	Default paper size	Standard-Papierformat
 	Default Value:	Standardwert:
@@ -1063,6 +1064,7 @@ key	Home	Pos1
 	List items	Listeneinträge
 	List items belong in a list. Fix the list's tags.	Listeneinträge gehören in eine Liste. Korrigiere die Tags der Liste.
 	List labels and bodies belong in a list item. Fix the list's tags.	Listenbeschriftungen und -inhalte gehören in einen Listeneintrag. Korrigiere die Tags der Liste.
+	List PKCS #11 token (smart card, HSM) signing identities	PKCS-#11-Token (Smartcards, HSMs) als Signaturidentitäten aufführen
 	Lists	Listen
 	Load document font	Dokumentschriftart laden
 	Load font…	Schriftart laden…
@@ -1167,6 +1169,7 @@ key	Home	Pos1
 	Navigation links	Navigationslinks
 	Navigation links are not repetitive	Navigationslinks wiederholen sich nicht
 	Navigation tab	Navigationsbereich
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Erfordert ein installiertes Modul wie OpenSC oder p11-kit. Besitzt das Token ein eigenes PIN-Pad, wird dieses verwendet.
 	needs an AI provider (off by default)	benötigt einen KI-Anbieter (standardmäßig aus)
 	Needs manual check	Manuelle Prüfung nötig
 	Negative number style:	Darstellung negativer Zahlen:
@@ -1435,6 +1438,7 @@ animation effects	On	Ein
 	Pinned Tools	Angeheftete Werkzeuge
 	Pinned {folder} to Home	{folder} an Start angeheftet
 	Pinned {tool} to Home	{tool} an Start angeheftet
+	PKCS #11 module	PKCS-#11-Modul
 	PKCS #11 token  ·  	PKCS-#11-Token  ·  
 	Place saved {what}	Gespeicherte {what} platzieren
 	Plain text in reading order; pages are separated by form feeds.	Reiner Text in Lesereihenfolge; Seiten werden durch Seitenvorschübe getrennt.
@@ -1839,6 +1843,7 @@ key	Shift	Umschalt
 	Signed and saved to {path}	Signiert und gespeichert unter {path}
 	Signer	Unterzeichner
 	Signer's name	Name des Unterzeichners
+	Signing	Signieren
 	Signing time	Signaturzeitpunkt
 	Simplified field notation:	Vereinfachte Feldschreibweise:
 	Single file	Einzelne Datei
@@ -2015,6 +2020,7 @@ certificate	Subject	Zertifikatsinhaber
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	die Modelle für die Texterkennung sind nicht installiert (installiere PdfCraft neu oder setze PDFCRAFT_MODELS auf den Ordner, der sie enthält)
 	The title in the metadata and the document information differ	Der Titel in den Metadaten und in den Dokumentinformationen weicht voneinander ab
 	the title must not be empty	der Titel darf nicht leer sein
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Das Token besitzt ein eigenes PIN-Pad oder einen biometrischen Leser; es fragt die PIN selbst ab.
 	The value is shown as typed.	Der Wert wird so angezeigt, wie er eingegeben wurde.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Das Fenster sollte einen aussagekräftigen Titel statt des Dateinamens zeigen. Lege einen Titel fest und wähle Anfangsansicht > Anzeigen: Dokumenttitel.
 	The Windows store's digital IDs couldn't be listed: {e}	Die digitalen IDs im Windows-Zertifikatspeicher konnten nicht aufgelistet werden: {e}
@@ -2066,12 +2072,15 @@ certificate	Subject	Zertifikatsinhaber
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Dieses Formular enthält auch XFA-Daten, die PdfCraft noch nicht liest. Du kannst die Felder ausfüllen, aber Acrobat zeigt eventuell stattdessen die XFA-Werte an.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Die Skripte dieses Formulars sind ausgeschaltet, weil eines zu lange lief. Öffne das Dokument erneut, um sie wieder auszuführen.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Dies ist ein dynamisches XFA-Formular, das PdfCraft noch nicht anzeigen kann. Du siehst die Platzhalterseite der Datei.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Dies ist der letzte Versuch, bevor die PIN des Tokens gesperrt wird. Eine falsche PIN kann es hier dauerhaft sperren.
 	This measurement needs at least {n} points.	Diese Messung braucht mindestens {n} Punkte.
 	This page contains objects that cannot be selected together.	Diese Seite enthält Objekte, die nicht gemeinsam ausgewählt werden können.
 	This page couldn't be displayed.\n{e}	Diese Seite konnte nicht angezeigt werden.\n{e}
 	This PDF uses the unsupported {s} action.	Dieses PDF verwendet die nicht unterstützte Aktion {s}.
 	This printer offers no settings of its own.	Dieser Drucker bietet keine eigenen Einstellungen.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Der Treiber dieses Druckers übernimmt keine Einstellungen für beidseitigen Druck von anderen Programmen, daher gilt seine eigene Einstellung. Ändern unter Eigenschaften…
+	This token's PIN is locked. Signing will not work until it is unlocked.	Die PIN dieses Tokens ist gesperrt. Signieren funktioniert erst nach der Entsperrung.
+	This token's PIN is low on tries remaining.	Für die PIN dieses Tokens bleiben nur noch wenige Versuche.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Diese Webadresse mischt Buchstaben aus verschiedenen Alphabeten – ein häufiger Trick, um den Namen einer anderen Website nachzuahmen.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Diese Webadresse verwendet Buchstaben aus einem anderen Alphabet, die bekannten Buchstaben ähneln können.
 	Thumbnail size	Miniaturgröße

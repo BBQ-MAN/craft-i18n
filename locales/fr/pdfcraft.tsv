@@ -619,6 +619,7 @@ calendar date	December	décembre
 	Decipher Only	Déchiffrement seul
 	Declared conformance: {shown}	Conformité déclarée : {shown}
 	Decorative figure	Figure décorative
+	Default (p11-kit, then OpenSC)	Par défaut (p11-kit, puis OpenSC)
 	Default page display	Affichage des pages par défaut
 	Default paper size	Format de papier par défaut
 	Default Value:	Valeur par défaut :
@@ -1195,6 +1196,7 @@ certificate	Key usage	Usage de la clé
 	List items	Éléments de liste
 	List items belong in a list. Fix the list's tags.	Les éléments de liste appartiennent à une liste. Corrigez les balises de la liste.
 	List labels and bodies belong in a list item. Fix the list's tags.	Les étiquettes et les corps de liste appartiennent à un élément de liste. Corrigez les balises de la liste.
+	List PKCS #11 token (smart card, HSM) signing identities	Lister les identités de signature des jetons PKCS #11 (cartes à puce, HSM)
 	Lists	Listes
 	Load document font	Charger la police du document
 	Load font…	Charger une police…
@@ -1318,6 +1320,7 @@ calendar weekday	Mo	Lu
 	Navigation links	Liens de navigation
 	Navigation links are not repetitive	Les liens de navigation ne sont pas répétitifs
 	Navigation tab	Onglet de navigation
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Nécessite un module tel qu'OpenSC ou p11-kit installé. Le clavier PIN propre au jeton est utilisé lorsqu'il en possède un.
 	needs an AI provider (off by default)	nécessite un fournisseur d'IA (désactivé par défaut)
 	Needs manual check	Vérification manuelle requise
 	Negative number style:	Style des nombres négatifs :
@@ -1625,7 +1628,8 @@ animation effects	On	Activés
 	Pinned Tools	Outils épinglés
 	Pinned {folder} to Home	{folder} épinglé à l'Accueil
 	Pinned {tool} to Home	{tool} épinglé à l’Accueil
-	PKCS #11 token  ·  	jeton PKCS #11  ·  
+	PKCS #11 module	Module PKCS #11
+	PKCS #11 token  ·  	Jeton PKCS #11  ·  
 	Place caption	Placer le libellé
 	Place saved {what}	Placer {what} (version enregistrée)
 	Plain text in reading order; pages are separated by form feeds.	Texte brut dans l'ordre de lecture ; les pages sont séparées par des sauts de page.
@@ -2085,6 +2089,7 @@ key	Shift	Maj
 	Signed and saved to {path}	Signé et enregistré dans {path}
 	Signer	Signataire
 	Signer's name	Nom du signataire
+	Signing	Signature
 	Signing time	Heure de signature
 	Signing time is from the clock on the signer's computer.	L'heure de signature provient de l'horloge de l'ordinateur du signataire.
 	Silhouettes	Contours
@@ -2342,6 +2347,7 @@ calendar weekday	Th	Je
 	The timestamp's byte range does not match the file.	La plage d'octets de l'horodatage ne correspond pas au fichier.
 	The title in the metadata and the document information differ	Le titre des métadonnées et celui des informations du document diffèrent
 	the title must not be empty	le titre ne doit pas être vide
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Le jeton possède son propre clavier PIN ou lecteur biométrique ; il demandera lui-même le code PIN.
 	The value is shown as typed.	La valeur s'affiche telle qu'elle est saisie.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	La fenêtre doit afficher un titre explicite plutôt que le nom du fichier. Définissez un titre et Affichage initial > Afficher : Titre du document.
 	The window shows the file name, not the title (Initial View > Show)	La fenêtre affiche le nom du fichier et non le titre (Affichage initial > Afficher)
@@ -2399,6 +2405,7 @@ calendar weekday	Th	Je
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ce formulaire contient aussi des données XFA, que PdfCraft ne lit pas encore. Vous pouvez remplir ses champs, mais Acrobat peut afficher les valeurs XFA à la place.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Les scripts de ce formulaire sont désactivés, car l'un d'eux s'est exécuté trop longtemps. Rouvrez le document pour les exécuter à nouveau.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Ceci est un formulaire XFA dynamique, que PdfCraft ne peut pas encore afficher. Ce que vous voyez est la page de substitution du fichier.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	C'est la dernière tentative avant le verrouillage du code PIN du jeton. Un code PIN erroné ici peut le verrouiller définitivement.
 	This measurement needs at least {n} points.	Cette mesure nécessite au moins {n} points.
 	This page contains objects that cannot be selected together.	Cette page contient des objets qui ne peuvent pas être sélectionnés ensemble.
 	This page couldn't be displayed.\n{e}	Impossible d'afficher cette page.\n{e}
@@ -2409,6 +2416,8 @@ calendar weekday	Th	Je
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Cette signature utilise une clé RSA de moins de 2048 bits, ce qui n'est plus considéré comme suffisamment robuste pour des signatures. Elle se valide toujours, mais il ne faut pas s'y fier.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Cette signature utilise RIPEMD-160, un ancien algorithme de hachage de 160 bits qui n'est plus recommandé pour les signatures. Elle reste valide, mais il ne faut pas s'y fier.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Cette signature utilise SHA-1, un algorithme de hachage faible : des collisions ont été démontrées. Elle reste valide car de nombreux documents signés il y a des années l'utilisent, mais il ne faut pas s'y fier.
+	This token's PIN is locked. Signing will not work until it is unlocked.	Le code PIN de ce jeton est verrouillé. La signature ne fonctionnera pas jusqu'à son déverrouillage.
+	This token's PIN is low on tries remaining.	Il reste peu de tentatives pour le code PIN de ce jeton.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Cette adresse web mélange des lettres d'alphabets différents, un moyen courant d'imiter le nom d'un autre site.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Cette adresse web utilise des lettres d'un autre alphabet, qui peuvent ressembler à des lettres familières.
 	Thumbnail size	Taille des vignettes

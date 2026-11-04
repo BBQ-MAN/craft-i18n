@@ -546,6 +546,7 @@ key	Ctrl	Ctrl
 	Decimals	Decimalke
 	Declared conformance: {shown}	Deklarirana skladnost: {shown}
 	Decorative figure	Dekorativna slika
+	Default (p11-kit, then OpenSC)	Privzeto (p11-kit, nato OpenSC)
 	Default page display	Privzet prikaz strani
 	Default paper size	Privzeta velikost papirja
 	Default Value:	Privzeta vrednost:
@@ -1048,6 +1049,7 @@ key	Home	Home
 	List items	Elementi seznama
 	List items belong in a list. Fix the list's tags.	Elementi seznama sodijo v seznam. Popravite oznake seznama.
 	List labels and bodies belong in a list item. Fix the list's tags.	Oznake in telesa seznama sodijo v element seznama. Popravite oznake seznama.
+	List PKCS #11 token (smart card, HSM) signing identities	Prikaz identitet za podpisovanje iz žetonov PKCS #11 (pametne kartice, HSM)
 	Lists	Seznami
 	Load document font	Naloži pisavo dokumenta
 	Load font…	Naloži pisavo…
@@ -1149,6 +1151,7 @@ key	Home	Home
 	Navigation links	Navigacijske povezave
 	Navigation links are not repetitive	Navigacijske povezave se ne ponavljajo
 	Navigation tab	Zavihek za navigacijo
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Potreben je nameščen modul, na primer OpenSC ali p11-kit. Če ima žeton svojo tipkovnico za PIN, se uporabi ta.
 	needs an AI provider (off by default)	potrebuje ponudnika umetne inteligence (privzeto izklopljeno)
 	Needs manual check	Zahteva ročni pregled
 	Negative number style:	Slog negativnih števil:
@@ -1413,7 +1416,8 @@ animation effects	On	Vklopljeni
 	Pinned Tools	Pripeta orodja
 	Pinned {folder} to Home	Mapa {folder} je pripeta na domačo stran
 	Pinned {tool} to Home	{tool} pripeto na domačo stran
-	PKCS #11 token  ·  	žeton PKCS #11  ·  
+	PKCS #11 module	Modul PKCS #11
+	PKCS #11 token  ·  	Žeton PKCS #11  ·  
 	Place saved {what}	Postavi shranjeno: {what}
 	Plain text in reading order; pages are separated by form feeds.	Navadno besedilo v vrstnem redu branja; strani so ločene z znaki za prelom strani.
 	Planned	Načrtovano
@@ -1807,6 +1811,7 @@ key	Shift	Shift
 	Signed and saved to {path}	Podpisano in shranjeno v {path}
 	Signer	Podpisnik
 	Signer's name	Ime podpisnika
+	Signing	Podpisovanje
 	Signing time	Čas podpisa
 	Simplified field notation:	Poenostavljen zapis polj:
 	Single file	Ena datoteka
@@ -1982,6 +1987,7 @@ certificate	Subject	Imetnik
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	modeli za prepoznavanje besedila niso nameščeni (ponovno namestite PdfCraft ali nastavite PDFCRAFT_MODELS na mapo, v kateri so)
 	The title in the metadata and the document information differ	Naslov v metapodatkih in podatkih o dokumentu se razlikujeta
 	the title must not be empty	naslov ne sme biti prazen
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Žeton ima svojo tipkovnico za PIN ali biometrični bralnik; za PIN bo vprašal sam.
 	The value is shown as typed.	Vrednost je prikazana, kot je vnesena.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Okno naj prikazuje smiseln naslov namesto imena datoteke. Nastavite naslov in Začetni pogled > Pokaži: Naslov dokumenta.
 	The Windows store's digital IDs couldn't be listed: {e}	Digitalnih identitet iz shrambe Windows ni bilo mogoče prikazati: {e}
@@ -2033,12 +2039,15 @@ certificate	Subject	Imetnik
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ta obrazec vsebuje tudi podatke XFA, ki jih PdfCraft še ne bere. Polja lahko izpolnite, vendar Acrobat morda prikaže vrednosti XFA.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Skripti tega obrazca so izklopljeni, ker se je eden izvajal predolgo. Če jih želite znova zagnati, znova odprite dokument.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	To je dinamični obrazec XFA, ki ga PdfCraft še ne more prikazati. Tisto, kar vidite, je nadomestna stran datoteke.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	To je zadnji poskus, preden se PIN žetona zaklene. Napačen PIN lahko žeton trajno zaklene.
 	This measurement needs at least {n} points.	Ta meritev potrebuje vsaj točk: {n}.
 	This page contains objects that cannot be selected together.	Ta stran vsebuje objekte, ki jih ni mogoče izbrati skupaj.
 	This page couldn't be displayed.\n{e}	Te strani ni bilo mogoče prikazati.\n{e}
 	This PDF uses the unsupported {s} action.	Ta PDF uporablja nepodprto dejanje {s}.
 	This printer offers no settings of its own.	Ta tiskalnik nima lastnih nastavitev.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Gonilnik tega tiskalnika ne sprejema nastavitev obojestranskega tiskanja iz drugih programov, zato velja njegova lastna nastavitev. Spremenite jo v Lastnosti…
+	This token's PIN is locked. Signing will not work until it is unlocked.	PIN tega žetona je zaklenjen. Podpisovanje ne bo delovalo, dokler ni odklenjen.
+	This token's PIN is low on tries remaining.	PIN tega žetona ima le še nekaj poskusov.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Ta spletni naslov meša črke iz različnih abeced, kar je pogost način posnemanja imena druge strani.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Ta spletni naslov uporablja črke iz druge abecede, ki so lahko podobne znanim črkam.
 	Thumbnail size	Velikost sličic

@@ -581,6 +581,7 @@ key	Ctrl	Ctrl
 	Decimals	Десятичные знаки
 	Declared conformance: {shown}	Заявленное соответствие: {shown}
 	Decorative figure	Декоративная фигура
+	Default (p11-kit, then OpenSC)	По умолчанию (p11-kit, затем OpenSC)
 	Default page display	Отображение страниц по умолчанию
 	Default paper size	Размер бумаги по умолчанию
 	Default Value:	Значение по умолчанию:
@@ -1114,6 +1115,7 @@ key	Home	Home
 	List items	Элементы списка
 	List items belong in a list. Fix the list's tags.	Элементы списка принадлежат списку. Исправьте теги списка.
 	List labels and bodies belong in a list item. Fix the list's tags.	Метки и тела списков принадлежат элементу списка. Исправьте теги списка.
+	List PKCS #11 token (smart card, HSM) signing identities	Список удостоверений подписи с токенов PKCS #11 (смарт-карты, HSM)
 	Lists	Списки
 	Load document font	Загрузить шрифт документа
 	Load font…	Загрузить шрифт…
@@ -1232,6 +1234,7 @@ key	Home	Home
 	Navigation links	Навигационные ссылки
 	Navigation links are not repetitive	Навигационные ссылки не повторяются
 	Navigation tab	Вкладка навигации
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Требуется установленный модуль, например OpenSC или p11-kit. Если у токена есть собственная PIN-клавиатура, используется она.
 	needs an AI provider (off by default)	нужен AI-провайдер (по умолчанию выключено)
 	Needs manual check	Требует ручной проверки
 	Negative number style:	Стиль отрицательного числа:
@@ -1499,7 +1502,8 @@ animation effects	On	Вкл
 	Pinned Tools	Закрепленные инструменты
 	Pinned {folder} to Home	Папка {folder} закреплена на главной
 	Pinned {tool} to Home	{tool} закреплён на главной
-	PKCS #11 token  ·  	токен PKCS #11  ·  
+	PKCS #11 module	Модуль PKCS #11
+	PKCS #11 token  ·  	Токен PKCS #11  ·
 	Place caption	Разместить подпись
 	Plain text in reading order; pages are separated by form feeds.	Обычный текст в порядке чтения; страницы разделены переводами формата.
 	Planned	Запланировано
@@ -1927,6 +1931,7 @@ key	Shift	Shift
 	Signed and saved to {path}	Подписано и сохранено в {path}
 	Signer	Подписант
 	Signer's name	Имя подписывающего
+	Signing	Подпись
 	Signing time	Время подписания
 	Silhouettes	Силуэты
 	Simplified field notation:	Упрощённая запись полей:
@@ -2106,6 +2111,7 @@ key	Space	Пробел
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	модели распознавания текста не установлены (переустановите PdfCraft или задайте в PDFCRAFT_MODELS папку, в которой они лежат)
 	The title in the metadata and the document information differ	Название в метаданных и информация документа различаются
 	the title must not be empty	название не должно быть пустым
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	У токена есть собственная PIN-клавиатура или биометрический считыватель; он запросит PIN-код самостоятельно.
 	The value is shown as typed.	Значение отображается как введённое.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Окно должно показывать осмысленный заголовок вместо имени файла. Задайте название и Начальный вид > Показать: Название документа.
 	there are no pages to print	нет страниц для печати
@@ -2157,6 +2163,7 @@ key	Space	Пробел
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Эта форма также содержит данные XFA, которые PdfCraft пока не читает. Вы можете заполнить её поля, но Acrobat может показать значения XFA вместо них.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Скрипты этой формы выключены: один из них выполнялся слишком долго. Чтобы запустить их снова, откройте документ заново.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Это динамическая форма XFA, которую PdfCraft пока не может отобразить. То, что вы видите, — заглушка страницы файла.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Это последняя попытка перед блокировкой PIN-кода токена. Неверный PIN-код может заблокировать его навсегда.
 	This measurement needs at least {n} points.	Для этого измерения нужно не менее {n} точек.
 	This page contains objects that cannot be selected together.	На этой странице есть объекты, которые нельзя выделить вместе.
 	This page couldn't be displayed.\n{e}	Не удалось отобразить эту страницу.\n{e}
@@ -2164,6 +2171,8 @@ key	Space	Пробел
 	This PDF uses the unsupported {s} action.	В этом PDF используется неподдерживаемое действие {s}.
 	This printer offers no settings of its own.	У этого принтера нет собственных параметров.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Драйвер этого принтера не принимает настройки двусторонней печати от других программ, поэтому действует его собственная настройка. Измените её в окне Свойства…
+	This token's PIN is locked. Signing will not work until it is unlocked.	PIN-код этого токена заблокирован. Подпись не будет работать до его разблокировки.
+	This token's PIN is low on tries remaining.	У PIN-кода этого токена осталось мало попыток.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Этот веб-адрес смешивает буквы из разных алфавитов, распространённый способ имитировать имя другого сайта.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Этот веб-адрес использует буквы из другого алфавита, которые могут выглядеть как знакомые.
 	Thumbnail size	Размер миниатюр
@@ -2178,7 +2187,7 @@ key	Space	Пробел
 	Today	Сегодня
 	Today: {date}	Сегодня: {date}
 	Toggle fit page / fit width	Переключить по странице / по ширине
-	Token PIN	PIN токена
+	Token PIN	PIN-код токена
 	Too early	Слишком рано
 	Tools panel side	Сторона панели инструментов
 	Tooltip	Подсказка

@@ -601,6 +601,7 @@ key	Ctrl	Ctrl
 	Decimals	小数桁数
 	Declared conformance: {shown}	宣言された準拠規格: {shown}
 	Decorative figure	装飾用の図
+	Default (p11-kit, then OpenSC)	デフォルト(p11-kit、次に OpenSC)
 	Default page display	既定のページ表示
 	Default paper size	既定の用紙サイズ
 	Default Value:	既定値:
@@ -1137,6 +1138,7 @@ key	Home	Home
 	List items	リスト項目
 	List items belong in a list. Fix the list's tags.	リスト項目はリストに含める必要があります。リストのタグを修正してください。
 	List labels and bodies belong in a list item. Fix the list's tags.	リストのラベルと本文はリスト項目に含める必要があります。リストのタグを修正してください。
+	List PKCS #11 token (smart card, HSM) signing identities	PKCS #11 トークン(IC カード、HSM)の署名用アイデンティティを一覧表示
 	Lists	リスト
 	Load document font	文書フォントを読み込む
 	Load font…	フォントを読み込む…
@@ -1258,6 +1260,7 @@ key	Home	Home
 	Navigation links	ナビゲーションリンク
 	Navigation links are not repetitive	ナビゲーションリンクが繰り返されていません
 	Navigation tab	ナビゲーションタブ
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	OpenSC や p11-kit などのモジュールのインストールが必要です。トークン自体に PIN パッドがある場合はそれが使われます。
 	needs an AI provider (off by default)	AI プロバイダーが必要（既定では無効）
 	Needs manual check	手動チェックが必要
 	Negative number style:	負の数の形式:
@@ -1534,7 +1537,8 @@ animation effects	On	オン
 	Pinned Tools	ピン留めしたツール
 	Pinned {folder} to Home	{folder} をホームにピン留めしました
 	Pinned {tool} to Home	{tool} をホームにピン留めしました
-	PKCS #11 token  ·  	PKCS #11 トークン  ·  
+	PKCS #11 module	PKCS #11 モジュール
+	PKCS #11 token  ·  	PKCS #11 トークン · 
 	Place caption	キャプションを配置
 	Place saved {what}	保存済みの{what}を配置
 	Plain text in reading order; pages are separated by form feeds.	読み取り順のプレーンテキストです。ページは改ページ文字で区切られます。
@@ -1966,6 +1970,7 @@ key	Shift	Shift
 	Signed and saved to {path}	署名して {path} に保存しました
 	Signer	署名者
 	Signer's name	署名者名
+	Signing	署名
 	Signing time	署名日時
 	Silhouettes	輪郭
 	Simplified field notation:	簡易フィールド表記:
@@ -2153,6 +2158,7 @@ key	Space	スペース
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	テキスト認識モデルがインストールされていません（PdfCraft を再インストールするか、PDFCRAFT_MODELS にモデルのあるフォルダーを設定してください）
 	The title in the metadata and the document information differ	メタデータと文書情報のタイトルが一致しません
 	the title must not be empty	タイトルは空欄にできません
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	トークンに専用の PIN パッドや生体認証リーダーがある場合、トークン自体が PIN の入力を求めます。
 	The value is shown as typed.	入力した値をそのまま表示します。
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	ウィンドウにはファイル名ではなく意味のあるタイトルを表示してください。タイトルを設定し、「初期表示 > 表示: 文書タイトル」を選択します。
 	The Windows store's digital IDs couldn't be listed: {e}	Windows 証明書ストアのデジタル ID の一覧を取得できませんでした：{e}
@@ -2205,6 +2211,7 @@ key	Space	スペース
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	このフォームには PdfCraft がまだ読み取れない XFA データも含まれます。フィールドには入力できますが、Acrobat は代わりに XFA の値を表示する場合があります。
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	このフォームのスクリプトは、実行に時間がかかりすぎたものがあったため無効になっています。もう一度実行するには、文書を再度開いてください。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	この文書は動的 XFA フォームで、PdfCraft はまだ表示できません。現在はファイルの代替ページを表示しています。
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	これはトークンの PIN がロックされる前の最後の試行です。ここで PIN を誤るとロックが解除できなくなる場合があります。
 	This measurement needs at least {n} points.	この測定には少なくとも{n}点が必要です。
 	This page contains objects that cannot be selected together.	このページには一緒に選択できないオブジェクトがあります。
 	This page couldn't be displayed.\n{e}	このページを表示できませんでした。\n{e}
@@ -2212,6 +2219,8 @@ key	Space	スペース
 	This PDF uses the unsupported {s} action.	この PDF では未対応の {s} アクションが使われています。
 	This printer offers no settings of its own.	このプリンターには独自の設定がありません。
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	このプリンターのドライバーは他のプログラムからの両面印刷の設定を受け付けないため、ドライバー自身の設定が使われます。変更先: プロパティ…
+	This token's PIN is locked. Signing will not work until it is unlocked.	このトークンの PIN はロックされています。ロックが解除されるまで署名はできません。
+	This token's PIN is low on tries remaining.	このトークンの PIN は残り試行回数が少なくなっています。
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	このウェブアドレスには、異なる文字体系の文字が混在しています。これはほかのサイトの名前を装う際によく使われる手口です。
 	This web address uses letters from another alphabet, which can look like familiar ones.	このウェブアドレスには別の文字体系の文字が使われており、見慣れた文字と似て見えることがあります。
 	Thousands separator	桁区切り記号

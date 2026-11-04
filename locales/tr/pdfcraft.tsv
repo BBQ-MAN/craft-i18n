@@ -587,6 +587,7 @@ key	Ctrl	Ctrl
 	Decipher Only	Yalnızca Şifre Çözme
 	Declared conformance: {shown}	Bildirilen uyumluluk: {shown}
 	Decorative figure	Dekoratif şekil
+	Default (p11-kit, then OpenSC)	Varsayılan (p11-kit, ardından OpenSC)
 	Default page display	Varsayılan sayfa görünümü
 	Default paper size	Varsayılan kağıt boyutu
 	Default Value:	Varsayılan Değer:
@@ -1149,6 +1150,7 @@ key	Home	Home
 	List items	Liste öğeleri
 	List items belong in a list. Fix the list's tags.	Liste öğeleri bir listeye aittir. Listenin etiketlerini düzeltin.
 	List labels and bodies belong in a list item. Fix the list's tags.	Liste etiketleri ve gövdeleri bir liste öğesine aittir. Listenin etiketlerini düzeltin.
+	List PKCS #11 token (smart card, HSM) signing identities	PKCS #11 belirteçlerindeki (akıllı kart, HSM) imza kimliklerini listele
 	Lists	Listeler
 	Load document font	Belge yazı tipini yükle
 	Load font…	Yazı tipi yükle…
@@ -1260,6 +1262,7 @@ calendar weekday	Mo	Pt
 	Navigation links are not repetitive	Gezinme bağlantıları yinelenmiyor
 	Navigation rail side	Gezinme çubuğunun kenarı
 	Navigation tab	Gezinme sekmesi
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	OpenSC veya p11-kit gibi bir modülün kurulu olması gerekir. Belirtecin kendi PIN tuş takımı varsa o kullanılır.
 	needs an AI provider (off by default)	bir yapay zeka sağlayıcısı gerektirir (varsayılan olarak kapalı)
 	Needs manual check	Manuel denetim gerekiyor
 	Negative number style:	Negatif sayı stili:
@@ -1560,7 +1563,8 @@ animation effects	On	Açık
 	Pinned Tools	Sabitlenen Araçlar
 	Pinned {folder} to Home	{folder} Giriş'e sabitlendi
 	Pinned {tool} to Home	{tool} Ana Sayfaya sabitlendi
-	PKCS #11 token  ·  	PKCS #11 jetonu  ·  
+	PKCS #11 module	PKCS #11 modülü
+	PKCS #11 token  ·  	PKCS #11 belirteci  ·  
 	Place saved {what}	Kayıtlı {what} yerleştir
 	Plain text in reading order; pages are separated by form feeds.	Okuma sırasına göre düz metin; sayfalar sayfa sonlarıyla ayrılır.
 	Planned	Planlandı
@@ -1988,6 +1992,7 @@ key	Shift	Shift
 	Signed and saved to {path}	İmzalandı ve {path} konumuna kaydedildi
 	Signer	İmzalayan
 	Signer's name	İmzalayanın adı
+	Signing	İmzalama
 	Signing time	İmzalama zamanı
 	Signing time is from the clock on the signer's computer.	İmzalama zamanı, imzalayanın bilgisayarındaki saatten alınmıştır.
 	Simplified field notation:	Basitleştirilmiş alan gösterimi:
@@ -2240,6 +2245,7 @@ calendar weekday	Th	Pe
 	The timestamp's byte range does not match the file.	Zaman damgasının bayt aralığı dosyayla eşleşmiyor.
 	The title in the metadata and the document information differ	Meta verilerdeki başlık ile belge bilgilerindeki başlık farklı
 	the title must not be empty	başlık boş olmamalıdır
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Belirtecin kendi PIN tuş takımı veya biyometrik okuyucusu var; PIN'i kendisi soracaktır.
 	The value is shown as typed.	Değer yazıldığı gibi gösterilir.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Pencere, dosya adı yerine anlamlı bir başlık göstermelidir. Bir başlık ayarlayın ve İlk Görünüm > Göster: Belge Başlığı'nı seçin.
 	The window shows the file name, not the title (Initial View > Show)	Pencere başlığı değil dosya adını gösteriyor (İlk Görünüm > Göster)
@@ -2297,6 +2303,7 @@ calendar weekday	Th	Pe
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Bu form aynı zamanda PdfCraft'ın henüz okumadığı XFA verilerini de içerir. Alanlarını doldurabilirsiniz ancak Acrobat bunun yerine XFA değerlerini gösterebilir.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Bu formun komut dosyaları kapatıldı, çünkü biri çok uzun süre çalıştı. Yeniden çalıştırmak için belgeyi yeniden açın.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Bu, PdfCraft'ın henüz görüntüleyemediği dinamik bir XFA formudur. Gördüğünüz şey dosyanın yer tutucu sayfasıdır.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Bu, belirtecin PIN'i kilitlenmeden önceki son deneme. Buradaki yanlış bir PIN, kalıcı olarak kilitleyebilir.
 	This measurement needs at least {n} points.	Bu ölçüm en az {n} nokta gerektirir.
 	This page contains objects that cannot be selected together.	Bu sayfa birlikte seçilemeyen nesneler içeriyor.
 	This page couldn't be displayed.\n{e}	Bu sayfa görüntülenemedi.\n{e}
@@ -2306,6 +2313,8 @@ calendar weekday	Th	Pe
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Bu imza, artık imzalar için yeterince güçlü sayılmayan, 2048 bitten kısa bir RSA anahtarı kullanıyor. Hâlâ doğrulanıyor ancak güvenilmemelidir.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Bu imza, artık imzalar için önerilmeyen eski bir 160 bitlik karma algoritması olan RIPEMD-160'ı kullanıyor. Hâlâ doğrulanıyor ancak güvenilmemelidir.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Bu imza, zayıf bir karma algoritması olan SHA-1'i kullanıyor: bu algoritmada çakışmalar gösterilmiştir. Yıllar önce imzalanmış birçok belge onu kullandığı için hâlâ doğrulanıyor ancak güvenilmemelidir.
+	This token's PIN is locked. Signing will not work until it is unlocked.	Bu belirtecin PIN'i kilitli. Kilit açılana kadar imzalama çalışmaz.
+	This token's PIN is low on tries remaining.	Bu belirtecin PIN'i için kalan deneme sayısı az.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Bu web adresi, başka bir sitenin adını taklit etmenin yaygın bir yolu olan farklı alfabelerden harfleri karıştırıyor.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Bu web adresi, tanıdık harflere benzeyebilen başka bir alfabeden harfler kullanıyor.
 	Thumbnail size	Küçük resim boyutu
@@ -2320,7 +2329,7 @@ calendar weekday	Th	Pe
 	Today	Bugün
 	Today: {date}	Bugün: {date}
 	Toggle fit page / fit width	Sayfayı sığdır / genişliğe sığdır geçişi
-	Token PIN	Jeton PIN'i
+	Token PIN	Belirteç PIN'i
 	Too early	Çok erken
 	Too many windows are open	Çok fazla pencere açık
 	Too many windows for this document	Bu belge için çok fazla pencere var

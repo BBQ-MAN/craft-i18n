@@ -602,6 +602,7 @@ calendar date	December	prosince
 	Decipher Only	Pouze dešifrování
 	Declared conformance: {shown}	Deklarovaná shoda: {shown}
 	Decorative figure	Dekorativní obrázek
+	Default (p11-kit, then OpenSC)	Výchozí (p11-kit, poté OpenSC)
 	Default page display	Výchozí zobrazení stránek
 	Default paper size	Výchozí formát papíru
 	Default Value:	Výchozí hodnota:
@@ -1160,6 +1161,7 @@ certificate	Key usage	Použití klíče
 	List items	Položky seznamu
 	List items belong in a list. Fix the list's tags.	Položky seznamu patří do seznamu. Opravte tagy seznamu.
 	List labels and bodies belong in a list item. Fix the list's tags.	Návěští a těla seznamu patří do položky seznamu. Opravte tagy seznamu.
+	List PKCS #11 token (smart card, HSM) signing identities	Zobrazit podpisové identity tokenů PKCS #11 (čipové karty, HSM)
 	Lists	Seznamy
 	Load document font	Načíst písmo dokumentu
 	Load font…	Načíst písmo…
@@ -1271,6 +1273,7 @@ calendar weekday	Mo	Po
 	Navigation links	Navigační odkazy
 	Navigation links are not repetitive	Navigační odkazy se neopakují
 	Navigation tab	Navigační karta
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Vyžaduje nainstalovaný modul, například OpenSC nebo p11-kit. Pokud má token vlastní PIN klávesnici, použije se ta.
 	needs an AI provider (off by default)	vyžaduje poskytovatele AI (ve výchozím stavu vypnuto)
 	Needs manual check	Vyžaduje ruční kontrolu
 	Negative number style:	Styl záporného čísla:
@@ -1572,7 +1575,8 @@ animation effects	On	Zapnuto
 	Pinned Tools	Připnuté nástroje
 	Pinned {folder} to Home	Složka {folder} je připnutá na úvodní obrazovce
 	Pinned {tool} to Home	{tool} připnuto na úvodní stránku
-	PKCS #11 token  ·  	token PKCS #11  ·  
+	PKCS #11 module	Modul PKCS #11
+	PKCS #11 token  ·  	Token PKCS #11  ·  
 	Place saved {what}	Umístit uložené: {what}
 	Plain text in reading order; pages are separated by form feeds.	Prostý text v pořadí čtení; stránky jsou oddělené znakem nové stránky.
 	Planned	Plánováno
@@ -2002,6 +2006,7 @@ key	Shift	Shift
 	Signed and saved to {path}	Podepsáno a uloženo do {path}
 	Signer	Podepsal
 	Signer's name	Jméno podepisující osoby
+	Signing	Podepisování
 	Signing time	Čas podpisu
 	Signing time is from the clock on the signer's computer.	Čas podpisu pochází z hodin v počítači podepisující osoby.
 	Simplified field notation:	Zjednodušený zápis polí:
@@ -2250,6 +2255,7 @@ calendar weekday	Th	Čt
 	The timestamp's byte range does not match the file.	Rozsah bajtů časového razítka neodpovídá souboru.
 	The title in the metadata and the document information differ	Název v metadatech a v informacích o dokumentu se liší
 	the title must not be empty	název nesmí být prázdný
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Token má vlastní PIN klávesnici nebo biometrickou čtečku; o PIN si požádá sám.
 	The value is shown as typed.	Hodnota se zobrazí tak, jak byla zadána.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Okno by mělo místo názvu souboru zobrazovat smysluplný název. Nastavte název a Úvodní zobrazení > Zobrazit: Název dokumentu.
 	The window shows the file name, not the title (Initial View > Show)	Okno zobrazuje název souboru, ne název dokumentu (Počáteční zobrazení > Zobrazit)
@@ -2306,6 +2312,7 @@ calendar weekday	Th	Čt
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Tento formulář obsahuje také data XFA, která PdfCraft zatím nečte. Pole můžete vyplnit, ale Acrobat může místo nich zobrazit hodnoty XFA.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Skripty tohoto formuláře jsou vypnuté, protože jeden z nich běžel příliš dlouho. Chcete-li je znovu spustit, otevřete dokument znovu.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Toto je dynamický formulář XFA, který PdfCraft zatím neumí zobrazit. Vidíte zástupnou stránku souboru.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Toto je poslední pokus před zablokováním PIN tokenu. Nesprávný PIN jej může trvale zablokovat.
 	This measurement needs at least {n} points.	Toto měření potřebuje alespoň {n} bodů.
 	This page contains objects that cannot be selected together.	Tato stránka obsahuje objekty, které nelze vybrat společně.
 	This page couldn't be displayed.\n{e}	Tuto stránku nelze zobrazit.\n{e}
@@ -2315,6 +2322,8 @@ calendar weekday	Th	Čt
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Tento podpis používá klíč RSA kratší než 2048 bitů, který už se pro podpisy nepovažuje za dostatečně silný. Ověření stále projde, ale nelze se na něj spoléhat.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Tento podpis používá RIPEMD-160, zastaralý 160bitový hashovací algoritmus, který se už pro podpisy nedoporučuje. Podpis se stále ověří, ale nelze na něj spoléhat.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Tento podpis používá SHA-1, slabý hashovací algoritmus, u kterého byly prokázány kolize. Stále se ověří, protože jej používá mnoho dokumentů podepsaných před lety, ale nelze na něj spoléhat.
+	This token's PIN is locked. Signing will not work until it is unlocked.	PIN tohoto tokenu je zablokován. Podepisování nebude fungovat, dokud nebude odblokován.
+	This token's PIN is low on tries remaining.	PIN tohoto tokenu má jen málo zbývajících pokusů.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Tato webová adresa míchá písmena z různých abeced, což je běžný způsob napodobení názvu jiného webu.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Tato webová adresa používá písmena z jiné abecedy, která mohou vypadat jako známá písmena.
 	Thumbnail size	Velikost miniatur

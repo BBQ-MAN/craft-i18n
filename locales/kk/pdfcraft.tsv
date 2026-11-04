@@ -549,6 +549,7 @@ calendar date	December	Желтоқсан
 	Decimals	Ондық таңбалар
 	Declared conformance: {shown}	Жарияланған сәйкестік: {shown}
 	Decorative figure	Декоративті сурет
+	Default (p11-kit, then OpenSC)	Әдепкі (p11-kit, содан кейін OpenSC)
 	Default page display	Әдепкі беттер көрсету
 	Default paper size	Әдепкі қағаз өлшемі
 	Default Value:	Әдепкі мәні:
@@ -1055,6 +1056,7 @@ calendar date	June	Маусым
 	List items	Тізім элементтері
 	List items belong in a list. Fix the list's tags.	Тізім элементтері тізімде болуы тиіс. Тізімнің тегтерін жөндеңіз.
 	List labels and bodies belong in a list item. Fix the list's tags.	Тізім белгілері мен денелері тізім элементінде болуы тиіс. Тізімнің тегтерін жөндеңіз.
+	List PKCS #11 token (smart card, HSM) signing identities	PKCS #11 токендеріндегі (смарт-карталар, HSM) қол қою жеке куәліктерін тізу
 	Lists	Тізімдер
 	Load document font	Құжат қаріпін жүктеу
 	Load font…	Қаріпті жүктеу…
@@ -1158,6 +1160,7 @@ calendar date	May	Мамыр
 	Navigation links	Навигация сілтемелері
 	Navigation links are not repetitive	Навигация сілтемелері қайталанбайды
 	Navigation tab	Навигация қойындысы
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	OpenSC немесе p11-kit сияқты орнатылған модуль қажет. Токенде өз PIN тақтасы болса, сол пайдаланылады.
 	needs an AI provider (off by default)	ЖИ провайдерін қажет етеді (әдепкіде өшірулі)
 	Needs manual check	Қолмен тексеру қажет
 	Negative number style:	Теріс сандар стилі:
@@ -1421,6 +1424,7 @@ animation effects	On	Қосулы
 	Pinned Tools	Бекітілген құралдар
 	Pinned {folder} to Home	{folder} Басты бетке бекітілді
 	Pinned {tool} to Home	{tool} басты бетке бекітілді
+	PKCS #11 module	PKCS #11 модулі
 	PKCS #11 token  ·  	PKCS #11 токені  ·  
 	Place saved {what}	Орналастыру: сақталған {what}
 	Plain text in reading order; pages are separated by form feeds.	Оқылу ретімен қарапайым мәтін; беттер бет ауыстыру таңбасымен бөлінеді.
@@ -1813,6 +1817,7 @@ key	Shift	Shift
 	Signed and saved to {path}	Қол қойылып, {path} жолына сақталды
 	Signer	Қол қоюшы
 	Signer's name	Қол қоюшының аты
+	Signing	Қол қою
 	Signing time	Қол қою уақыты
 	Simplified field notation:	Жеңілдетілген өріс жазылуы:
 	Single file	Бір файл
@@ -1987,6 +1992,7 @@ certificate	Subject	Субъект
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	мәтінді тану модельдері орнатылмаған (PdfCraft қайта орнатыңыз немесе PDFCRAFT_MODELS айнымалысына олар жатқан қалтаны көрсетіңіз)
 	The title in the metadata and the document information differ	Метадеректер мен құжат ақпаратындағы тақырыптар сәйкес келмейді
 	the title must not be empty	тақырып бос болмауы тиіс
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Токенде өз PIN тақтасы немесе биометриялық оқу құрылғысы бар; ол PIN кодты өзі сұрайды.
 	The value is shown as typed.	Мән енгізілген күйінде көрсетіледі.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Терезе файл атауының орнына мазмұнды тақырыпты көрсетуі тиіс. Тақырыпты орнатып, «Бастапқы көрініс > Көрсету: Құжат тақырыбы» параметрін белгілеңіз.
 	The Windows store's digital IDs couldn't be listed: {e}	Windows қоймасындағы цифрлық ID-лерді тізімдеу мүмкін болмады: {e}
@@ -2038,12 +2044,15 @@ certificate	Subject	Субъект
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Бұл формада PdfCraft әлі оқымайтын XFA деректері де бар. Өрістерін толтыра аласыз, бірақ Acrobat орнына XFA мәндерін көрсетуі мүмкін.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Бұл форманың скрипттері өшірілді, себебі олардың бірі тым ұзақ орындалды. Оларды қайта іске қосу үшін құжатты қайта ашыңыз.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Бұл динамикалық XFA формасы, оны PdfCraft әлі көрсете алмайды. Көріп тұрғаныңыз — файлдың орынбасар беті.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Бұл токеннің PIN коды құлыптаудан бұрынғы соңғы талпыныс. Мұнда қате PIN оны мүлдем құлыптап тастауы мүмкін.
 	This measurement needs at least {n} points.	Бұл өлшемге кемінде {n} нүкте қажет.
 	This page contains objects that cannot be selected together.	Бұл бетте бірге таңдалмайтын объектілер бар.
 	This page couldn't be displayed.\n{e}	Бұл бет көрсетіле алмады.\n{e}
 	This PDF uses the unsupported {s} action.	Бұл PDF қолдау көрсетілмейтін {s} әрекетін пайдаланады.
 	This printer offers no settings of its own.	Бұл принтердің дербес параметрлері жоқ.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Бұл принтердің драйвері басқа бағдарламалардан екі жақты басып шығару баптауларын қабылдамайды, сондықтан өз баптауы қолданылады. Оны мына жерден өзгертіңіз: Сипаттар…
+	This token's PIN is locked. Signing will not work until it is unlocked.	Бұл токеннің PIN коды құлыпталған. Құлып ашылғанша қол қою жұмыс істемейді.
+	This token's PIN is low on tries remaining.	Бұл токеннің PIN кодының қалған талпыныстары аз.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Бұл веб-адрес әртүрлі әліпбилердің әріптерін араластырады — бұл басқа сайт атауына еліктеудің жиі кездесетін тәсілі.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Бұл веб-адрес басқа әліпбидің әріптерін қолданады, олар таныс әріптер сияқты көрінуі мүмкін.
 	Thumbnail size	Нобай өлшемі
@@ -2057,7 +2066,7 @@ certificate	Subject	Субъект
 	Today	Бүгін
 	Today: {date}	Бүгін: {date}
 	Toggle fit page / fit width	Бетке / еніне сыйдыруды ауыстыру
-	Token PIN	Токен PIN
+	Token PIN	Токен PIN коды
 	Too early	Тым ерте
 	Too many windows are open	Тым көп терезе ашық
 	Too many windows for this document	Бұл құжат үшін терезе тым көп

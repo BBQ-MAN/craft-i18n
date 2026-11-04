@@ -579,6 +579,7 @@ calendar date	December	ديسمبر
 	Decipher Only	فك التشفير فقط
 	Declared conformance: {shown}	المطابقة المعلنة: {shown}
 	Decorative figure	شكل زخرفي
+	Default (p11-kit, then OpenSC)	الافتراضي (p11-kit، ثم OpenSC)
 	Default page display	عرض الصفحات الافتراضي
 	Default paper size	حجم الورق الافتراضي
 	Default Value:	القيمة الافتراضية:
@@ -1121,6 +1122,7 @@ certificate	Key usage	استخدام المفتاح
 	List items	عناصر القائمة
 	List items belong in a list. Fix the list's tags.	عناصر القائمة مكانها داخل قائمة. أصلح وسوم القائمة.
 	List labels and bodies belong in a list item. Fix the list's tags.	تسميات القائمة ومتونها مكانها داخل عنصر قائمة. أصلح وسوم القائمة.
+	List PKCS #11 token (smart card, HSM) signing identities	سرد هويات التوقيع من رموز PKCS #11 (البطاقات الذكية، وحدات HSM)
 	Lists	القوائم
 	Load document font	تحميل خط المستند
 	Load font…	تحميل خط…
@@ -1227,6 +1229,7 @@ calendar weekday	Mo	إثنين
 	Navigation links	روابط التنقل
 	Navigation links are not repetitive	روابط التنقل غير متكررة
 	Navigation tab	تبويب التنقل
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	يتطلب تثبيت وحدة مثل OpenSC أو p11-kit. إذا كان للرمز لوحة رقم تعريف شخصي خاصة به، يتم استخدامها.
 	needs an AI provider (off by default)	يتطلب مزوّد ذكاء اصطناعي (متوقف افتراضيًا)
 	Needs manual check	يحتاج إلى فحص يدوي
 	Negative number style:	نمط الأرقام السالبة:
@@ -1518,7 +1521,8 @@ animation effects	On	مفعّلة
 	Pinned Tools	الأدوات المثبتة
 	Pinned {folder} to Home	تم تثبيت {folder} في الصفحة الرئيسية
 	Pinned {tool} to Home	تم تثبيت {tool} في الرئيسية
-	PKCS #11 token  ·  	بطاقة PKCS #11  ·  
+	PKCS #11 module	وحدة PKCS #11
+	PKCS #11 token  ·  	رمز PKCS #11  ·  
 	Place saved {what}	وضع {what} المحفوظ
 	Plain text in reading order; pages are separated by form feeds.	نص عادي بترتيب القراءة؛ تُفصل الصفحات بمحارف تغذية الصفحة.
 	Planned	مخطط له
@@ -1939,6 +1943,7 @@ key	Shift	Shift
 	Signed and saved to {path}	تم التوقيع والحفظ في {path}
 	Signer	الموقِّع
 	Signer's name	اسم الموقّع
+	Signing	التوقيع
 	Signing time	وقت التوقيع
 	Signing time is from the clock on the signer's computer.	وقت التوقيع من ساعة حاسوب الموقّع.
 	Simplified field notation:	صيغة الحقول المبسطة:
@@ -2180,6 +2185,7 @@ calendar weekday	Th	خميس
 	The timestamp's byte range does not match the file.	نطاق بايتات الطابع الزمني لا يطابق الملف.
 	The title in the metadata and the document information differ	العنوان في البيانات الوصفية يختلف عنه في معلومات المستند
 	the title must not be empty	يجب ألا يكون العنوان فارغًا
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	يملك الرمز لوحة رقم تعريف شخصي أو قارئًا بيومتريًا خاصًا به؛ سيطلب رقم التعريف الشخصي بنفسه.
 	The value is shown as typed.	تُعرض القيمة كما كُتبت.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	ينبغي أن تعرض النافذة عنوانًا ذا معنى لا اسم الملف. عيّن عنوانًا واختر العرض الأولي > إظهار: عنوان المستند.
 	The window shows the file name, not the title (Initial View > Show)	تُظهر النافذة اسم الملف لا العنوان (العرض الأولي > إظهار)
@@ -2235,6 +2241,7 @@ calendar weekday	Th	خميس
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	هذا النموذج يحتوي أيضًا على بيانات XFA، لا يقرؤها PdfCraft بعد. يمكنك تعبئة حقوله، لكن Acrobat قد يعرض قيم XFA بدلًا منها.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	سكربتات هذا النموذج متوقفة لأن أحدها استغرق وقتًا طويلًا جدًا. أعد فتح المستند لتشغيلها من جديد.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	هذا نموذج XFA ديناميكي، لا يستطيع PdfCraft عرضه بعد. ما تراه هو الصفحة البديلة للملف.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	هذه المحاولة الأخيرة قبل قفل رقم التعريف الشخصي للرمز. قد يؤدي إدخال رقم خاطئ هنا إلى قفله نهائيًا.
 	This measurement needs at least {n} points.	هذا القياس يحتاج إلى {n} نقاط على الأقل.
 	This page contains objects that cannot be selected together.	تحتوي هذه الصفحة على عناصر لا يمكن تحديدها معًا.
 	This page couldn't be displayed.\n{e}	تعذّر عرض هذه الصفحة.\n{e}
@@ -2243,6 +2250,8 @@ calendar weekday	Th	خميس
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	لا يقبل برنامج تشغيل هذه الطابعة إعدادات الطباعة على الوجهين من البرامج الأخرى، لذا يُطبَّق إعداده الخاص. غيّره من خصائص…
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	يستخدم هذا التوقيع RIPEMD-160، خوارزمية هضم قديمة بطول 160 بت لم تعد موصى بها للتواقيع. لا يزال يصح، لكن لا ينبغي الاعتماد عليه.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	يستخدم هذا التوقيع SHA-1، خوارزمية هضم ضعيفة: أُثبتت تصادمات فيها. لا يزال يصح لأن مستندات كثيرة وقّعت قبل سنوات تستخدمه، لكن لا ينبغي الاعتماد عليه.
+	This token's PIN is locked. Signing will not work until it is unlocked.	رقم التعريف الشخصي لهذا الرمز مقفل. لن يعمل التوقيع حتى يتم إلغاء القفل.
+	This token's PIN is low on tries remaining.	تبقّت محاولات قليلة لرقم التعريف الشخصي لهذا الرمز.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	عنوان الويب هذا يخلط حروفًا من أبجديات مختلفة، وهي طريقة شائعة لانتحال اسم موقع آخر.
 	This web address uses letters from another alphabet, which can look like familiar ones.	عنوان الويب هذا يستخدم حروفًا من أبجدية أخرى قد تشبه الحروف المألوفة.
 	Thumbnail size	حجم الصور المصغرة
@@ -2256,7 +2265,7 @@ calendar weekday	Th	خميس
 	Today	اليوم
 	Today: {date}	اليوم: {date}
 	Toggle fit page / fit width	التبديل بين ملاءمة الصفحة وملاءمة العرض
-	Token PIN	الرقم السري للبطاقة
+	Token PIN	رقم التعريف الشخصي للرمز
 	Too early	مبكر جدًا
 	Too many windows are open	عدد النوافذ المفتوحة كبير جدًا
 	Too many windows for this document	عدد النوافذ لهذا المستند كبير جدًا

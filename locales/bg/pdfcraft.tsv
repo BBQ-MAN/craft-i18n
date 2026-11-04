@@ -571,6 +571,7 @@ key	Ctrl	Ctrl
 	Decimals	Десетични знаци
 	Declared conformance: {shown}	Декларирано съответствие: {shown}
 	Decorative figure	Декоративна фигура
+	Default (p11-kit, then OpenSC)	По подразбиране (p11-kit, после OpenSC)
 	Default page display	Показване на страниците по подразбиране
 	Default paper size	Размер на хартията по подразбиране
 	Default Value:	Стойност по подразбиране:
@@ -1091,6 +1092,7 @@ key	Home	Home
 	List items	Елементи на списък
 	List items belong in a list. Fix the list's tags.	Елементите на списък трябва да са в списък. Поправете етикетите на списъка.
 	List labels and bodies belong in a list item. Fix the list's tags.	Етикетите и телата на списъка трябва да са в елемент на списък. Поправете етикетите на списъка.
+	List PKCS #11 token (smart card, HSM) signing identities	Извеждане на списък с идентичности за подписване от PKCS #11 токени (чип карти, HSM)
 	Lists	Списъци
 	Load document font	Зареждане на шрифт на документа
 	Load font…	Зареждане на шрифт…
@@ -1194,6 +1196,7 @@ key	Home	Home
 	Navigation links	Навигационни връзки
 	Navigation links are not repetitive	Навигационните връзки не се повтарят
 	Navigation tab	Навигационен раздел
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Изисква инсталиран модул, например OpenSC или p11-kit. Ако токенът има собствена ПИН клавиатура, тя се използва.
 	needs an AI provider (off by default)	изисква доставчик на ИИ (изключено по подразбиране)
 	Needs manual check	Нужна е ръчна проверка
 	Negative number style:	Стил на отрицателните числа:
@@ -1467,7 +1470,8 @@ animation effects	On	Включени
 	Pinned Tools	Закачени инструменти
 	Pinned {folder} to Home	{folder} е закачена в Начало
 	Pinned {tool} to Home	{tool} е закачен в Начало
-	PKCS #11 token  ·  	токен PKCS #11  ·  
+	PKCS #11 module	Модул PKCS #11
+	PKCS #11 token  ·  	PKCS #11 токен  ·  
 	Plain text in reading order; pages are separated by form feeds.	Обикновен текст в реда на четене; страниците се разделят със знаци за нова страница.
 	Planned	Планирано
 	Planned for milestone	Планирано за етап
@@ -1882,6 +1886,7 @@ key	Shift	Shift
 	Signed and saved to {path}	Подписано и записано в {path}
 	Signer	Подписал
 	Signer's name	Име на подписващия
+	Signing	Подписване
 	Signing time	Час на подписване
 	Simplified field notation:	Опростен запис с полета:
 	Single file	Един файл
@@ -2052,6 +2057,7 @@ action wizard	Start	Старт
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	моделите за разпознаване на текст не са инсталирани (инсталирайте PdfCraft отново или задайте в PDFCRAFT_MODELS папката, която ги съдържа)
 	The title in the metadata and the document information differ	Заглавието в метаданните и в информацията за документа се различават
 	the title must not be empty	заглавието не може да е празно
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Токенът има собствена ПИН клавиатура или биометричен четец; той сам ще поиска ПИН кода.
 	The value is shown as typed.	Стойността се показва както е въведена.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Прозорецът трябва да показва смислено заглавие вместо името на файла. Задайте заглавие и „Начален изглед > Показване: Заглавие на документа“.
 	there are no pages to print	няма страници за печат
@@ -2102,12 +2108,15 @@ action wizard	Start	Старт
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Този формуляр съдържа и XFA данни, които PdfCraft все още не чете. Можете да попълвате полетата му, но Acrobat може да покаже вместо това XFA стойностите.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Скриптовете на този формуляр са изключени, защото един от тях се изпълняваше твърде дълго. Отворете документа отново, за да се изпълнят пак.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Това е динамичен XFA формуляр, който PdfCraft все още не може да показва. Виждате заместващата страница на файла.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Това е последният опит преди заключване на ПИН кода на токена. Грешен ПИН тук може да го заключи окончателно.
 	This measurement needs at least {n} points.	Това измерване изисква поне {n} точки.
 	This page contains objects that cannot be selected together.	Тази страница съдържа обекти, които не могат да се изберат заедно.
 	This page couldn't be displayed.\n{e}	Тази страница не може да бъде показана.\n{e}
 	This PDF uses the unsupported {s} action.	Този PDF използва неподдържаното действие {s}.
 	This printer offers no settings of its own.	Този принтер няма собствени настройки.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Драйверът на този принтер не приема настройки за двустранен печат от други програми и прилага собствената си настройка. Променете я от Свойства…
+	This token's PIN is locked. Signing will not work until it is unlocked.	ПИН кодът на този токен е заключен. Подписването няма да работи, докато не бъде отключен.
+	This token's PIN is low on tries remaining.	ПИН кодът на този токен има малко оставащи опити.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Този уеб адрес смесва букви от различни азбуки — често използван начин за имитиране на името на друг сайт.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Този уеб адрес използва букви от друга азбука, които може да изглеждат като познати.
 	Thumbnail size	Размер на миниатюрите
@@ -2121,7 +2130,7 @@ action wizard	Start	Старт
 	Today	Днес
 	Today: {date}	Днес: {date}
 	Toggle fit page / fit width	Превключи между „побери страницата“ и „побери по ширина“
-	Token PIN	PIN на токена
+	Token PIN	ПИН на токена
 	Too early	Твърде рано
 	Tools panel side	Страна на панела с инструменти
 	Tooltip	Подсказка

@@ -589,6 +589,7 @@ key	Ctrl	Ctrl
 	Decimals	小数位数
 	Declared conformance: {shown}	声明的一致性：{shown}
 	Decorative figure	装饰性图形
+	Default (p11-kit, then OpenSC)	默认(先 p11-kit,再 OpenSC)
 	Default page display	默认页面显示
 	Default paper size	默认纸张大小
 	Default Value:	默认值：
@@ -1128,6 +1129,7 @@ key	Home	Home
 	List items	列表项
 	List items belong in a list. Fix the list's tags.	列表项应位于列表内。请修复列表标记。
 	List labels and bodies belong in a list item. Fix the list's tags.	列表标签和正文应位于列表项内。请修复列表标记。
+	List PKCS #11 token (smart card, HSM) signing identities	列出 PKCS #11 令牌(智能卡、HSM)上的签名身份
 	Lists	列表
 	Load document font	加载文档字体
 	Load font…	加载字体…
@@ -1246,6 +1248,7 @@ key	Home	Home
 	Navigation links	导航链接
 	Navigation links are not repetitive	导航链接不重复
 	Navigation tab	导航选项卡
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	需要安装 OpenSC 或 p11-kit 等模块。如果令牌自带 PIN 键盘,将使用该键盘。
 	needs an AI provider (off by default)	需要 AI 服务商（默认关闭）
 	Needs manual check	需人工检查
 	Negative number style:	负数样式：
@@ -1524,7 +1527,8 @@ animation effects	On	开
 	Pinned Tools	已固定的工具
 	Pinned {folder} to Home	已将 {folder} 固定到主页
 	Pinned {tool} to Home	已将 {tool} 固定到主页
-	PKCS #11 token  ·  	PKCS #11 令牌  ·  
+	PKCS #11 module	PKCS #11 模块
+	PKCS #11 token  ·  	PKCS #11 令牌 · 
 	Place caption	放置标题
 	Plain text in reading order; pages are separated by form feeds.	按阅读顺序的纯文本；页面之间用换页符分隔。
 	Planned	计划中
@@ -1952,6 +1956,7 @@ key	Shift	Shift
 	Signed and saved to {path}	已签名并保存到{path}
 	Signer	签署者
 	Signer's name	签名者姓名
+	Signing	签名
 	Signing time	签署时间
 	Silhouettes	轮廓
 	Simplified field notation:	简化字段表示法：
@@ -2132,6 +2137,7 @@ key	Space	空格
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	尚未安装文本识别模型（请重新安装 PdfCraft，或将 PDFCRAFT_MODELS 设置为包含这些模型的文件夹）
 	The title in the metadata and the document information differ	元数据与文档信息中的标题不一致
 	the title must not be empty	标题不能为空
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	该令牌自带 PIN 键盘或生物识别读取器,会自行要求输入 PIN。
 	The value is shown as typed.	按输入显示值。
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	窗口应显示有意义的标题而非文件名。请设置标题，并在“初始视图”>“显示”中选择“文档标题”。
 	there are no pages to print	没有可打印的页面
@@ -2183,6 +2189,7 @@ key	Space	空格
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	此表单还包含 XFA 数据，PdfCraft 暂不读取。您可以填写字段，但 Acrobat 可能显示 XFA 值。
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	此表单的脚本已关闭，因为其中一个脚本运行时间过长。重新打开文档即可再次运行。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	这是动态 XFA 表单，PdfCraft 暂无法显示。您看到的是文件的占位页面。
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	这是令牌 PIN 锁定前的最后一次尝试。此处输入错误的 PIN 可能会使其永久锁定。
 	This measurement needs at least {n} points.	此测量至少需要 {n} 个点。
 	This page contains objects that cannot be selected together.	此页面包含无法一起选择的对象。
 	This page couldn't be displayed.\n{e}	无法显示此页面。\n{e}
@@ -2190,6 +2197,8 @@ key	Space	空格
 	This PDF uses the unsupported {s} action.	此 PDF 使用了不支持的 {s} 操作。
 	This printer offers no settings of its own.	此打印机没有专属设置。
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	此打印机的驱动程序不接受其他程序的双面打印设置，因此使用其自身设置。更改位置：属性…
+	This token's PIN is locked. Signing will not work until it is unlocked.	此令牌的 PIN 已锁定。解锁前无法进行签名。
+	This token's PIN is low on tries remaining.	此令牌的 PIN 剩余尝试次数不多。
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	此网址混用了不同字母表的字母，这是仿冒其他网站名称的常见手法。
 	This web address uses letters from another alphabet, which can look like familiar ones.	此网址使用了其他字母表的字母，它们可能看起来像熟悉的字母。
 	Thousands separator	千位分隔符

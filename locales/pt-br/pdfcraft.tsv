@@ -593,6 +593,7 @@ calendar date	December	dezembro
 	Decipher Only	Somente descriptografia
 	Declared conformance: {shown}	Conformidade declarada: {shown}
 	Decorative figure	Figura decorativa
+	Default (p11-kit, then OpenSC)	Padrão (p11-kit, depois OpenSC)
 	Default page display	Exibição de página padrão
 	Default paper size	Tamanho de papel padrão
 	Default Value:	Valor padrão:
@@ -1142,6 +1143,7 @@ certificate	Key usage	Uso da chave
 	List items	Itens de lista
 	List items belong in a list. Fix the list's tags.	Itens de lista pertencem a uma lista. Corrija as marcas da lista.
 	List labels and bodies belong in a list item. Fix the list's tags.	Rótulos e corpos de lista pertencem a um item de lista. Corrija as marcas da lista.
+	List PKCS #11 token (smart card, HSM) signing identities	Listar identidades de assinatura de tokens PKCS #11 (cartões inteligentes, HSMs)
 	Lists	Listas
 	Load document font	Carregar fonte do documento
 	Load font…	Carregar fonte…
@@ -1251,6 +1253,7 @@ calendar weekday	Mo	Seg
 	Navigation links	Links de navegação
 	Navigation links are not repetitive	Os links de navegação não são repetitivos
 	Navigation tab	Aba de navegação
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Requer um módulo instalado, como o OpenSC ou o p11-kit. O teclado PIN próprio do token é usado quando ele tiver um.
 	needs an AI provider (off by default)	requer um provedor de IA (desativado por padrão)
 	Needs manual check	Requer verificação manual
 	Negative number style:	Estilo de número negativo:
@@ -1550,7 +1553,8 @@ animation effects	On	Ativados
 	Pinned Tools	Ferramentas fixadas
 	Pinned {folder} to Home	{folder} fixada no Início
 	Pinned {tool} to Home	{tool} fixado no Início
-	PKCS #11 token  ·  	token PKCS #11  ·  
+	PKCS #11 module	Módulo PKCS #11
+	PKCS #11 token  ·  	Token PKCS #11  ·  
 	Place saved {what}	Posicionar item salvo: {what}
 	Plain text in reading order; pages are separated by form feeds.	Texto sem formatação na ordem de leitura; páginas separadas por quebras de página.
 	Planned	Planejado
@@ -1976,6 +1980,7 @@ key	Shift	Shift
 	Signed and saved to {path}	Assinado e salvo em {path}
 	Signer	Signatário
 	Signer's name	Nome do signatário
+	Signing	Assinatura
 	Signing time	Hora da assinatura
 	Signing time is from the clock on the signer's computer.	O horário da assinatura vem do relógio do computador do signatário.
 	Simplified field notation:	Notação simplificada de campo:
@@ -2224,6 +2229,7 @@ calendar weekday	Th	Qui
 	The timestamp's byte range does not match the file.	O intervalo de bytes do carimbo de data e hora não corresponde ao arquivo.
 	The title in the metadata and the document information differ	Os títulos nos metadados e nas informações do documento são diferentes
 	the title must not be empty	o título não deve estar vazio
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	O token tem seu próprio teclado PIN ou leitor biométrico; ele mesmo solicitará o PIN.
 	The value is shown as typed.	O valor é exibido como digitado.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	A janela deve mostrar um título significativo em vez do nome do arquivo. Defina um título e Exibição inicial > Mostrar: Título do documento.
 	The window shows the file name, not the title (Initial View > Show)	A janela exibe o nome do arquivo, e não o título (Exibição inicial > Mostrar)
@@ -2280,6 +2286,7 @@ calendar weekday	Th	Qui
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Este formulário também contém dados XFA, que o PdfCraft ainda não lê. Você pode preencher seus campos, mas o Acrobat pode exibir os valores XFA em vez disso.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Os scripts deste formulário estão desativados porque um deles demorou demais para ser executado. Reabra o documento para executá-los novamente.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Este é um formulário XFA dinâmico, que o PdfCraft ainda não pode exibir. O que você vê é a página de espaço reservado do arquivo.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Esta é a última tentativa antes de o PIN do token ser bloqueado. Um PIN incorreto aqui pode bloqueá-lo permanentemente.
 	This measurement needs at least {n} points.	Esta medição precisa de pelo menos {n} pontos.
 	This page contains objects that cannot be selected together.	Esta página contém objetos que não podem ser selecionados juntos.
 	This page couldn't be displayed.\n{e}	Não foi possível exibir esta página.\n{e}
@@ -2289,6 +2296,8 @@ calendar weekday	Th	Qui
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Esta assinatura usa RIPEMD-160, um algoritmo de hash legado de 160 bits que não é mais recomendado para assinaturas. Ela ainda é validada, mas não deve ser considerada confiável.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Esta assinatura usa SHA-1, um algoritmo de hash fraco para o qual já foram demonstradas colisões. Ela ainda é validada porque muitos documentos assinados há anos o utilizam, mas não deve ser considerada confiável.
+	This token's PIN is locked. Signing will not work until it is unlocked.	O PIN deste token está bloqueado. A assinatura não funcionará até que seja desbloqueado.
+	This token's PIN is low on tries remaining.	O PIN deste token está com poucas tentativas restantes.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Este endereço da web mistura letras de alfabetos diferentes, uma forma comum de imitar o nome de outro site.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Este endereço da web usa letras de outro alfabeto, que podem parecer familiares.
 	Thumbnail size	Tamanho das miniaturas

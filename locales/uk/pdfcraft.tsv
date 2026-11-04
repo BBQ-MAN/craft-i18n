@@ -566,6 +566,7 @@ calendar date	December	грудня
 	Decimals	Знаків після коми
 	Declared conformance: {shown}	Заявлена відповідність: {shown}
 	Decorative figure	Декоративний рисунок
+	Default (p11-kit, then OpenSC)	За умовчанням (p11-kit, потім OpenSC)
 	Default page display	Типове відображення сторінок
 	Default paper size	Стандартний формат паперу
 	Default Value:	Типове значення:
@@ -1080,6 +1081,7 @@ calendar date	June	червня
 	List items	Елементи списку
 	List items belong in a list. Fix the list's tags.	Елементи списку мають належати списку. Виправте теги списку.
 	List labels and bodies belong in a list item. Fix the list's tags.	Позначки й вміст списку мають належати елементу списку. Виправте теги списку.
+	List PKCS #11 token (smart card, HSM) signing identities	Список ідентифікаторів підпису з токенів PKCS #11 (смарт-карти, HSM)
 	Lists	Списки
 	Load document font	Завантажити шрифт документа
 	Load font…	Завантажити шрифт…
@@ -1188,6 +1190,7 @@ calendar date	May	травня
 	Navigation links	Навігаційні посилання
 	Navigation links are not repetitive	Навігаційні посилання не повторюються
 	Navigation tab	Вкладка навігації
+	Needs a module such as OpenSC or p11-kit installed. The token's own PIN pad is used when it has one.	Потрібен установлений модуль, наприклад OpenSC або p11-kit. Якщо в токена є власна PIN-клавіатура, використовується вона.
 	needs an AI provider (off by default)	потребує постачальника ШІ (типово вимкнено)
 	Needs manual check	Потрібна ручна перевірка
 	Negative number style:	Стиль від’ємних чисел:
@@ -1457,7 +1460,8 @@ animation effects	On	Увімкнено
 	Pinned Tools	Закріплені інструменти
 	Pinned {folder} to Home	Теку {folder} закріплено на головній
 	Pinned {tool} to Home	{tool} закріплено на головній
-	PKCS #11 token  ·  	токен PKCS #11  ·  
+	PKCS #11 module	Модуль PKCS #11
+	PKCS #11 token  ·  	Токен PKCS #11  ·  
 	Place saved {what}	Розмістити збережене: {what}
 	Plain text in reading order; pages are separated by form feeds.	Звичайний текст у порядку читання; сторінки розділено символами переведення сторінки.
 	Planned	Заплановано
@@ -1862,6 +1866,7 @@ key	Shift	Shift
 	Signed and saved to {path}	Підписано й збережено в {path}
 	Signer	Підписувач
 	Signer's name	Ім’я підписувача
+	Signing	Підпис
 	Signing time	Час підписування
 	Simplified field notation:	Спрощений запис полів:
 	Single file	Один файл
@@ -2039,6 +2044,7 @@ certificate	Subject	Власник сертифіката
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	моделі розпізнавання тексту не встановлено (перевстановіть PdfCraft або задайте в PDFCRAFT_MODELS теку, у якій вони лежать)
 	The title in the metadata and the document information differ	Заголовки в метаданих і відомостях про документ відрізняються
 	the title must not be empty	заголовок не має бути порожнім
+	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	У токена є власна PIN-клавіатура або біометричний зчитувач; він запитає PIN-код самостійно.
 	The value is shown as typed.	Значення відображається як введено.
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Вікно має показувати змістовний заголовок замість назви файлу. Задайте заголовок і «Початковий вигляд > Показувати: Заголовок документа».
 	The Windows store's digital IDs couldn't be listed: {e}	Не вдалося отримати список цифрових посвідчень зі сховища Windows: {e}
@@ -2090,12 +2096,15 @@ certificate	Subject	Власник сертифіката
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ця форма також містить дані XFA, які PdfCraft ще не читає. Ви можете заповнювати поля, але Acrobat може показувати натомість значення XFA.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Сценарії цієї форми вимкнено, бо один із них виконувався надто довго. Щоб запустити їх знову, відкрийте документ повторно.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Це динамічна форма XFA, яку PdfCraft ще не може відобразити. Ви бачите сторінку-заглушку файлу.
+	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Це остання спроба перед блокуванням PIN-коду токена. Неправильний PIN-код тут може заблокувати його назавжди.
 	This measurement needs at least {n} points.	Для цього вимірювання потрібно щонайменше точок: {n}.
 	This page contains objects that cannot be selected together.	На цій сторінці є об’єкти, які не можна виділити разом.
 	This page couldn't be displayed.\n{e}	Не вдалося відобразити цю сторінку.\n{e}
 	This PDF uses the unsupported {s} action.	У цьому PDF використовується непідтримувана дія {s}.
 	This printer offers no settings of its own.	Цей принтер не має власних налаштувань.
 	This printer's driver doesn't take two-sided settings from other programs, so its own setting applies. Change it in Properties…	Драйвер цього принтера не приймає налаштування двобічного друку від інших програм, тому діє його власне налаштування. Змініть його у вікні Властивості…
+	This token's PIN is locked. Signing will not work until it is unlocked.	PIN-код цього токена заблоковано. Підписання не працюватиме, доки його не розблокують.
+	This token's PIN is low on tries remaining.	У PIN-коду цього токена залишилося мало спроб.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Ця вебадреса поєднує літери різних абеток — поширений спосіб імітувати назву іншого сайту.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Ця вебадреса використовує літери іншої абетки, які можуть виглядати як знайомі.
 	Thumbnail size	Розмір мініатюр
@@ -2109,7 +2118,7 @@ certificate	Subject	Власник сертифіката
 	Today	Сьогодні
 	Today: {date}	Сьогодні: {date}
 	Toggle fit page / fit width	Перемкнути масштаб за сторінкою / за шириною
-	Token PIN	PIN токена
+	Token PIN	PIN-код токена
 	Too early	Зарано
 	Tools panel side	Бік панелі інструментів
 	Tooltip	Підказка
