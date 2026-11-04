@@ -151,6 +151,21 @@ all three rows on 1 November 2026. This credit and review cover these additions
 only, not the whole Romanian catalog. No in-app review is recorded. All wording
 was prepared from the English meaning without consulting another product’s localization.
 
+## WordCraft: Options > Language rows (Your languages, Add a language)
+
+The rows for WordCraft's Options > Language page (Your languages with its proofing status, Set as
+default, the Add a language picker and its download notice, Dictionary files), the missing-pack bar
+and context-menu texts ("Possible spelling mistake", "Gets the list of Language packs…"), and the
+names of 28 Language pack languages (Afrikaans to Vietnamese) are in `wordcraft.tsv` of every locale
+that has one: `ar`, `bg`, `bn`, `bs`, `cs`, `da`, `de`, `es`, `et`, `fa`, `fr`, `he`, `hr`, `hu`,
+`id`, `it`, `ja`, `ka`, `ko`, `nb`, `nl`, `pl`, `pt-br`, `ro`, `ru`, `sk`, `sl`, `sr`, `sr-latn`,
+`sv`, `tr`, `uk`, `vi`, `zh-hans` and `zh-hant`. Contributor: Martin Ball with
+Claude Code (Claude Sonnet 5.5), AI-assisted: every translation was written by the model from the
+plain meaning of the English, with no other product's localisation consulted. **No native speaker
+has reviewed these rows.** Terminology follows each locale's existing rows ("Dictionaries folder:",
+"Dutch", "Download"); "Language pack" is translated as a pack of languages in each locale's own
+words, and the same wording is used in every row of the group.
+
 ## Language data
 
 Every file under `language-data/` ([ADR 0004](docs/adr/0004-third-party-language-data.md),
