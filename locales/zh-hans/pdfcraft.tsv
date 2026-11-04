@@ -32,6 +32,7 @@
 	1 page scanned	已扫描 1 页
 	1 page selected	已选择 1 页
 	1 page selected.	已选择 1 页。
+	1 page was scanned.	已扫描 1 页。
 	180 degrees	180 度
 	3D model	3D模型
 	3D model canvas	3D模型画布
@@ -50,6 +51,7 @@
 	a bookmark cannot be moved inside itself	无法将书签移入其自身内部
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	用 Rust 从零编写的开源 PDF 应用。MIT OR Apache-2.0 许可。
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	某列太窄：请加宽区域、给该列更多宽度，或减少列数或列间距
+	A cover on the scanner is open.	扫描仪盖板处于打开状态。
 	A diagonal CONFIDENTIAL watermark on every page.	每页上的对角线 CONFIDENTIAL 水印。
 	a document must keep at least one page	文档必须保留至少一页
 	A document needs at least one page: copy instead	文档至少需要保留一页，请改用复制
@@ -58,6 +60,7 @@
 	A form field has additional actions	表单字段包含附加动作
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	本地模型不是最先进的云端模型：它可能出错，较长的回答在处理器上需要时间。重要事项请务必核实，下载前也请留意模型大小与这台机器是否匹配。
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	在标签左侧、标题栏通常显示的位置放一个徽标或名称：PdfCraft 自己的，或你公司的。
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	指定页数会在扫完这些页后停止进纸器。取消会提前结束传输；已收到的页面仍保留在文档中。
 	A picture covers page {pages} (a scan?), so the background won't show there.	第 {pages} 页被一张图片覆盖（扫描件？），因此那里不会显示背景。
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	一个 PNG 或 SVG 文件。每次 PdfCraft 启动时都从此位置读取。
 	A selected field has no widget on any page, so the fields can't be edited together.	某个所选字段在任何页面上都没有控件，因此无法一起编辑这些字段。
@@ -189,6 +192,7 @@
 	Advanced Options {chevron}	高级选项 {chevron}
 	Advanced search…	高级搜索…
 	Advanced unit formats	高级单位格式
+	Advanced…	高级…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	点击“签名”后，在 CloudSigner 窗口中输入 mSzafir 应用里的 OTT 代码，并在应用中批准签名。在 CloudSigner 中开启持久 OTT 代码后，每隔几分钟才需输入一次代码。
 	AI Assistant	AI 助手
 	AI assistant	AI 助手
@@ -207,6 +211,7 @@
 	All multimedia objects are tagged	所有多媒体对象都已标记
 	All open documents	所有已打开的文档
 	All page content is tagged	所有页面内容都已标记
+	All pages asks the driver for the whole stack.	“全部页面”会向驱动程序请求整叠纸张。
 	All pages in document	文档中的所有页面
 	All pages in range	范围内的所有页面
 	All permissions	所有权限
@@ -298,6 +303,7 @@
 	Author title	作者职务
 	Auto follows the system's text size. Pages always render at the display's full resolution.	“自动”会跟随系统的文字大小。页面始终以显示器的完整分辨率渲染。
 	Auto portrait/landscape	自动纵向/横向
+	Auto-deskew	自动纠偏
 	Auto-detect	自动检测
 	Auto-rotate pages	自动旋转页面
 	Auto-size text to fit redaction region	自动调整文本大小以适应密文区域
@@ -316,6 +322,7 @@
 	Balanced	均衡
 	Balanced and Compact reduce image quality to make a smaller file. Text and forms stay editable.	“均衡”和“紧凑”会降低图像质量以缩小文件。文本和表单仍可编辑。
 	Bates numbering	贝茨编号
+	Bed	稿台
 	Before each selected page (select pages in Organize)	在每个选定页面之前拆分（在组织页面中选择）
 	Before the number	在数字之前
 	Behind text and images	在文本和图像后方
@@ -367,6 +374,7 @@
 	Callout	标注
 	Can't be read: {e}	无法读取：{e}
 	Cancel caption placement	取消标题放置
+	Cancel reverse sides	取消背面扫描
 	Cancelled	已取消
 	Cancelling…	正在取消…
 	Case-sensitive	区分大小写
@@ -424,9 +432,13 @@
 	Check for updates…	检查更新…
 	Check spelling	检查拼写
 	Check spelling while typing	输入时检查拼写
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	请检查进纸器中是否有纸张，或等待扫描仪完成，然后选择“继续扫描”。
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	请检查进纸器中是否有纸张，或等待扫描仪完成，然后选择“重试”。
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	检查标记的阅读顺序是否与明眼读者一致。使用阅读顺序工具或标记面板进行更正。
 	Check the pages	请检查页码
 	Check the pages of {name}: {why}	请检查 {name} 的页码：{why}
+	Check the scanner is on and connected, then choose Continue.	请检查扫描仪已开机并已连接，然后选择“继续扫描”。
+	Check the scanner is on and connected, then choose Try again.	请检查扫描仪已开机并已连接，然后选择“重试”。
 	CheckBox	复选框
 	Checkbox	复选框
 	Checked	已勾选
@@ -434,6 +446,7 @@
 	Checking Hungarian OCR installation…	正在检查匈牙利语 OCR 的安装…
 	Checking Options ({on} of 32 in all categories)	检查选项（所有类别共 32 项，已选 {on} 项）
 	Checking pages…	正在检查页面…
+	Checking the scanner…	正在检查扫描仪…
 	Checkmark	对勾
 	Chinese (Simplified) and English	简体中文和英语
 	Choose a control point inside the viewport.	请选择视口内的控制点。
@@ -478,8 +491,11 @@
 	Clear points	清除点
 	Clear Recent Files	清除最近的文件
 	Clear redaction marks	清除密文标记
+	Clear region	清除区域
 	Clear search	清除搜索
 	Clear selection / close find	清除选择/关闭查找
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	请清除卡纸，并将剩余纸张摆放整齐后装入，然后选择“继续扫描”。
+	Clear the jam and load the sheets squarely, then choose Try again.	请清除卡纸，并将纸张摆放整齐后装入，然后选择“重试”。
 	Click each vertex. Enter finishes the perimeter.	依次点击各顶点，按 Enter 完成周长测量。
 	Click on the page to add a {tool}, or drag to set its size	单击页面添加{tool}，或拖动设置其大小
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	单击页面添加文本；每次单击开始一个新文本框，✓ 完成。拖动项目以移动，拖动角落以调整大小，双击文本进行编辑。
@@ -501,6 +517,8 @@
 	Close Tab	关闭标签页
 	Close Tabs to the Right	关闭右侧标签页
 	Close tabs to the right	关闭右侧标签页
+	Close the feeder cover and check the paper, then choose Continue.	请合上进纸器盖板并检查纸张，然后选择“继续扫描”。
+	Close the feeder cover and check the paper, then choose Try again.	请合上进纸器盖板并检查纸张，然后选择“重试”。
 	Close Window	关闭窗口
 	Close window	关闭窗口
 	Closed arrow	闭合箭头
@@ -512,8 +530,10 @@
 	Collapse all pages	折叠所有页面
 	Collapse all tools	折叠所有工具
 	Collapse tag	折叠标签
+	Color	彩色
 	Color contrast	颜色对比度
 	Color Document	彩色文档
+	Color document	彩色文档
 	Color Images	彩色图像
 	Color Photo	彩色照片
 	Color Spaces	颜色空间
@@ -561,11 +581,16 @@
 	Configure New Digital ID	配置新数字 ID
 	Confirm Password	确认密码
 	Conformance level:	一致性级别：
+	Connected by USB.	已通过 USB 连接。
 	Connected lines	连接线
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	通过网络（Web 服务）连接。选项来自该驱动，而非 USB 驱动。
 	Console	控制台
 	Content copying	内容复制
 	Content copying for accessibility	为无障碍复制内容
 	Content Streams	内容流
+	Continue scanning	继续扫描
+	Continue scanning fronts	继续扫描正面
+	Continue scanning reverse sides	继续扫描背面
 	Continuous scrolling	连续滚动
 	Control point	控制点
 	Control points	控制点
@@ -663,7 +688,9 @@
 	Created a PDF from the first {n} files	已从前 {n} 个文件创建 PDF
 	Created a PDF from {n} files	已从 {n} 个文件创建 PDF
 	Created a PDF from {n} files; left out: {names}	已从 {n} 个文件创建 PDF；已忽略：{names}
+	Created Scan.pdf	已创建 Scan.pdf
 	Created {n} links	已创建{n}个链接
+	Created {n} scanned files	已创建 {n} 个扫描文件
 	Creates 1 file from {n} pages.	从 {n} 页创建 1 个文件。
 	Creates {f} files from {n} pages.	从 {n} 页创建 {f} 个文件。
 	Credit Cards	信用卡
@@ -835,6 +862,7 @@ key	Delete	Delete
 	Drag a rectangle around the area to copy	拖动框选要复制的区域
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	拖动页面上的矩形进行裁剪；双击页面可设置页面框
 	Drag a rectangle to create a link; double-click a link to edit it	拖动矩形创建链接；双击链接进行编辑
+	Drag on the preview to choose a region. An empty selection scans the whole area.	在预览上拖选区域。空选则扫描整页。
 	Drag the corners onto the document's edges, then choose Enhance page.	将四个角拖到文档边缘，然后选择“增强页面”。
 	Drag the selection to move it. Esc clears the selection.	拖动选区即可移动。按 Esc 清除选择。
 	Drag to draw the area where the signature should appear.	拖动绘制签名应显示的区域。
@@ -855,9 +883,12 @@ key	Delete	Delete
 	Drawing	绘图
 	Drawing scale	图面比例
 	Drawing scale changes. Use Actual size for full-scale plans.	图纸比例发生变化。按原比例打印图纸时请使用实际大小。
+	Driver default	驱动默认
 	Drop PDFs, images, text files or folders here, or choose them.	将 PDF、图像、文本文件或文件夹拖放到此处，或选择它们。
 	Drop-down list	下拉列表
 	Dropdown Properties	下拉列表属性
+	Duplex	双面
+	Duplex is not offered.	不提供双面。
 	Duplicate "{name}" onto:	将“{name}”复制到：
 	Duplicate Field	复制字段
 	Duplicate field	复制字段
@@ -1011,6 +1042,7 @@ key	Esc	Esc
 	Failed	未通过
 scroll speed	Fast	快
 	February	二月
+	Feeder	进纸器
 	Feet	英尺
 	Feet and inches	英尺和英寸
 	Feet and inches uses ft as the scale unit.	英尺和英寸格式使用 ft 作为比例单位。
@@ -1145,10 +1177,15 @@ scroll speed	Fast	快
 	Fraction	分数
 	From a PDF page or an image	来自 PDF 页面或图像
 	From colour	使用颜色
+	From scanner…	从扫描仪…
 	From template	从模板创建
 	From {file}	来自 {file}
 	From:	从：
 	Front side only	仅正面
+	front(s)	正面
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	已扫描正面：{n}。请翻转玻璃板上的纸张，然后选择“扫描背面”。
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	已扫描正面：{n}。请翻转整叠纸张，使最后一张在最上面，重新装入，然后选择“扫描背面”。
+	Full area	整页
 	Full screen mode	全屏模式
 	Full screen mode ({key}); Esc leaves it	全屏模式 ({key}); Esc
 	Generate styled PDF	生成样式 PDF
@@ -1248,8 +1285,10 @@ key	Home	Home
 	Insert pages from {name}	从 {name} 插入页面
 	Insert pages from {name} — 1 field renamed	从 {name} 插入页面 — 已重命名 1 个字段
 	Insert pages from {name} — fields renamed	从 {name} 插入页面 — 已重命名字段
+	Insert scanned pages	插入扫描页
 	Insert text	插入文本
 	Inserted	插入
+	Inserted scanned pages	已插入扫描页
 	Inserting, deleting, and rotating pages	插入、删除和旋转页面
 	Inset	嵌入
 	Inspector	检查器
@@ -1260,6 +1299,7 @@ key	Home	Home
 	Installed version: {v}	已安装版本：{v}
 	Integrity	完整性
 	Intended usage	预期用途
+	Intent	用途
 	Interface and appearance	界面和外观
 	Interface font	界面字体
 	Interface size	界面大小
@@ -1268,6 +1308,7 @@ key	Home	Home
 	Invert	反转
 	Invert colors	反转颜色
 	Invert everything	全部反转
+	Invert tones	反转色调
 	Inverted page background	反转页面背景
 	Inverted text	反转文本
 	Invisible Rectangle	不可见矩形
@@ -1306,10 +1347,13 @@ key	Home	Home
 	Keychain  ·  	钥匙串 · 
 	Kilometres	千米
 	Labels: {preview}. Later pages keep their labels.	标签：{preview}。后续页面保留其标签。
+	Lamp	灯
+	Lamp on	开灯
 	Landscape and Portrait Pages	横向和纵向页面
 	Landscape Pages	横向页面
 	Landscape pages	横向页面
 	Language and spelling	语言和拼写
+	Large scan	大图扫描
 	Larger pages	放大页面
 	Larger text	放大文字
 	Larger thumbnails	放大缩略图
@@ -1358,9 +1402,12 @@ key	Home	Home
 	List items belong in a list. Fix the list's tags.	列表项应位于列表内。请修复列表标记。
 	List labels and bodies belong in a list item. Fix the list's tags.	列表标签和正文应位于列表项内。请修复列表标记。
 	List PKCS #11 token (smart card, HSM) signing identities	列出 PKCS #11 令牌(智能卡、HSM)上的签名身份
+	Listing scanners…	正在列出扫描仪…
 	Lists	列表
 	Load document font	加载文档字体
 	Load font…	加载字体…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	请装入更多纸张后选择“继续扫描”，或选择“完成”以保留已扫描的内容。
+	Load sheets in the feeder, then choose Try again.	请将纸张装入进纸器，然后选择“重试”。
 	Local and private	本地且私有
 	Local cross-PDF links require the desktop app	PDF 之间的本地链接需要桌面应用
 	Location: 	位置：
@@ -1369,6 +1416,8 @@ key	Home	Home
 	Logo	徽标
 	Logo and name	徽标和名称
 	Longitude	经度
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	请查看扫描仪是否显示消息，或是否有门或盖板未关好，并排除问题，然后选择“继续扫描”。
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	请查看扫描仪是否显示消息，或是否有门或盖板未关好，并排除问题，然后选择“重试”。
 	Looking for a local model runtime…	正在寻找本地模型运行环境…
 	Looking for certificates…	正在查找证书…
 	Looking for PDFs…	正在查找 PDF…
@@ -1387,6 +1436,7 @@ key	Home	Home
 	Make searchable (recognize text)	生成可搜索的 PDF（识别文字）
 	Manage embedded index	管理嵌入式索引
 	Manage plugins…	管理插件…
+	Manual duplex needs one reverse side for each front.	手动双面要求每一张正面都有一张背面。
 	Map accuracy	地图精度
 	Map boundary	地图边界
 	Map coordinate system	地图坐标系
@@ -1440,6 +1490,7 @@ key	Home	Home
 	Miles	英里
 	Minimum	最低
 	minimum	最小值
+	Mirror the page	镜像页面
 	Missing field	缺少字段
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	PDF 中保存的计算顺序缺少此字段：其他 PDF 查看器可能不会计算它。
 	Mixed	混合
@@ -1564,6 +1615,7 @@ key	Home	Home
 	no output folder was chosen	未选择输出文件夹
 	No pages match those choices	所选条件没有匹配的页面
 	No pages selected	未选择任何页面
+	No pages were scanned.	没有扫描任何页面。
 	No PDFs in this folder yet	此文件夹中还没有 PDF
 	No PDFs, images or text files found in {folder}	在 {folder} 中未找到 PDF、图像或文本文件
 	No photo chosen	未选择照片
@@ -1579,6 +1631,7 @@ key	Home	Home
 	No release notes were provided.	未提供发行说明。
 	No saved measurements in this view.	此视图中没有已保存的测量。
 	No scanner found	未找到扫描仪
+	No scanner is connected.	未连接扫描仪。
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	未找到扫描仪。请检查扫描仪是否已开机并连接，或输入其网络地址。
 	No security	无安全性
 	No sheets	无纸张
@@ -1679,6 +1732,8 @@ animation effects	On	开
 	Open previous PDF in folder	打开文件夹中的上一个 PDF
 	Open Recent	打开最近的文件
 	Open tabs and edits update the search automatically.	打开的标签页和编辑内容会自动更新搜索。
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	请打开盖板，清除可能的卡纸或一同送入的纸张，并将剩余纸张摆放整齐后装入，然后选择“继续扫描”。
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	请打开盖板，清除可能的卡纸或一同送入的纸张，并将纸张摆放整齐后装入，然后选择“重试”。
 	Open the file as it was saved then	打开当时保存的文件
 	Open the older version first	请先打开旧版本
 	Open this local PDF?	是否打开此本地 PDF？
@@ -1693,6 +1748,7 @@ animation effects	On	开
 	Opening the browser's print dialog…	正在打开浏览器的打印对话框…
 	Opening {name}…	正在打开 {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	打开打印机驱动程序的首选项。这些设置会保存并用于此电脑上的所有打印；此处选择的份数、双面、灰度和纸张仍然适用。
+	Optical resolution {x} × {y} dpi.	光学分辨率 {x} × {y} dpi。
 	Optimization cancelled	已取消优化
 	Optimization is already running	优化已在运行
 	Optimize	优化
@@ -1827,6 +1883,7 @@ animation effects	On	开
 	Perpendicular	垂直距离
 	Phone Number	电话号码
 	Phone Numbers	电话号码
+	Photometric	光度
 	Pick a tool in the quick bar, or type above.	在快捷栏中选择工具，或在上方输入。
 	Pick page position	在页面上选取位置
 	Pictures cover pages {pages} (scans?), so the background won't show there.	第 {pages} 页被图片覆盖（扫描件？），因此那里不会显示背景。
@@ -1881,7 +1938,9 @@ animation effects	On	开
 	Preparing {n} sheets for printing…	正在准备 {n} 张纸用于打印…
 	Presentation (.pptx)	演示文稿（.pptx）
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	防止 G-SYNC/FreeSync 闪烁（下次启动时生效）
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	预览用于稿台。在下方用英寸设置区域，留空则扫描整张。
 	Preview unavailable: {e}	无法预览：{e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	预览使用稿台。将来源改为稿台，或不预览直接扫描。
 	Preview: page {p} of {n}	预览：第 {p} 页，共 {n} 页
 	Previous	上一页
 	Previous ({key})	上一个 ({key})
@@ -1999,7 +2058,9 @@ animation effects	On	开
 	Reference length must be positive.	参照长度必须为正数。
 	Reference preview	基准预览
 	Reference:	参考文件：
+	Refresh lists scanners. It does not feed paper.	刷新会重新列出扫描仪。不会进纸。
 	Refresh plugins	刷新插件
+	Region in inches. Leave the width or the height at zero to scan the whole area.	区域（英寸）。宽度或高度留 0 则扫描整页。
 	Registration residual	配准残差
 	Regularity	规则性
 	Rejected	已拒绝
@@ -2114,6 +2175,9 @@ animation effects	On	开
 	Reverse closed arrow	反向闭合箭头
 	Reverse open arrow	反向开口箭头
 	Reverse pages	逆序页面
+	reverse side(s)	背面
+	Reverse sides	背面
+	Reverse sides interleaved.	已交错插入背面。
 	Reverse the order	反转排序
 	Revert	还原
 	Revert changes	撤销更改
@@ -2215,12 +2279,28 @@ animation effects	On	开
 	Scan & OCR	扫描和 OCR
 	Scan and text recognition	扫描和文字识别
 	Scan correction	扫描校正
+	Scan interrupted	扫描已中断
 	Scan next page	扫描下一页
 	Scan processing cancelled	扫描处理已取消
+	Scan reverse side now (1 front)	立即扫描背面（1 张正面）
+	Scan reverse sides	扫描背面
+	Scan reverse sides now ({n} fronts)	立即扫描背面（{n} 张正面）
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	扫描正面，在稿台上翻面，再扫描背面。
+	Scan the fronts before the reverse sides.	请先扫描正面，再扫描背面。
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	扫描正面，将纸叠翻面（最后一页在上），再扫描背面。页面按正、背、…交错…
+	Scan the missing reverse sides, then choose Finish.	请扫描缺少的背面，然后选择“完成”。
 	Scanned pages need OCR. Reading order follows extracted page text.	扫描页面需要OCR。朗读顺序遵循从页面提取的文本。
 	Scanned text detected	检测到扫描文本
 	Scanner	扫描仪
+	Scanner settings	扫描仪设置
 	Scanner's full area	扫描仪的整个区域
+	Scanning front {n} of {t}…	正在扫描正面 {n} / {t}…
+	Scanning front {n}…	正在扫描正面 {n}…
+	Scanning needs Windows (WIA) in this version.	此版本的扫描功能需要 Windows (WIA)。
+	Scanning page {n} of {t}…	正在扫描第 {n} / {t} 页…
+	Scanning page {n}…	正在扫描第 {n} 页…
+	Scanning reverse side {n} of {t}…	正在扫描背面 {n} / {t}…
+	Scanning reverse side {n}…	正在扫描背面 {n}…
 	Scanning was stopped	扫描已停止
 	Scanning…	正在扫描…
 	Screen / email	屏幕 / 电子邮件
@@ -2297,6 +2377,8 @@ animation effects	On	开
 	Sent to {printer}: {msg}	已发送到{printer}：{msg}
 	Separate display coordinate system	使用单独的显示坐标系
 	Separate PDFs	单独的 PDF
+	Separate the sheets and load the remaining ones, then choose Continue.	请将纸张分开，装入剩余的纸张，然后选择“继续扫描”。
+	Separate the sheets and load them again, then choose Try again.	请将纸张分开，重新装入，然后选择“重试”。
 	Separate vertical units	单独设置纵向单位
 	Separator style:	分隔符样式：
 	Sepia	棕褐色
@@ -2330,6 +2412,7 @@ animation effects	On	开
 	Set the image of {name}	设置 {name} 的图像
 	Set to current page ({n})	设为当前页（第 {n} 页）
 	Set to zero	置零
+	Settings this source offers. Leave a control alone to keep the driver’s value.	此来源提供的设置。不改动则保留驱动的值。
 	Shadings	着色
 	Shared Field Properties	共享字段属性
 	Sheet {s} of {n}	第 {s} 张，共 {n} 张
@@ -2481,6 +2564,7 @@ document scrollbar width	Standard	标准
 	Stop reading	停止朗读
 	Straighten scanned page	校正扫描页面的倾斜
 	Straighten skewed scans	校正扫描件倾斜
+	Straighten the page	扶正页面
 	Strength: {s}	强度：{s}
 	Strikethrough text	删除线文本
 	String length (0 turns it off)	绳长（0 为关闭）
@@ -2502,6 +2586,8 @@ document scrollbar width	Standard	标准
 	Swap width and height	交换宽度和高度
 	Switch light / dark theme	切换浅色/深色主题
 	Switch page theme	切换页面主题
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	请关闭扫描仪后重新开机，并等待其就绪，然后选择“继续扫描”。
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	请关闭扫描仪后重新开机，并等待其就绪，然后选择“重试”。
 	Switch to List view to change the pages it takes.	切换到列表视图以更改要使用的页面。
 	Switch to two-page view first to show the cover page	请先切换到双页视图，才能显示封面页
 	System default	系统默认
@@ -2564,6 +2650,7 @@ document scrollbar width	Standard	标准
 	The answer proposes formatting changes.	回答中包含格式修改建议。
 	The answer stopped unexpectedly.	回答意外中断。
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API 密钥将以未加密方式发送到此地址。除非服务器位于你信任的网络中，否则请使用 https://。
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	稿台一次扫描一页。先扫正面，翻面后再扫背面。
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	计算顺序中有 {n} 个不计算任何内容的条目。“修正顺序”会将其删除。
 	the certificate expired on {date}	证书已于 {date} 过期
 	The checker found 1 problem which may prevent the document from being fully accessible.	检查器发现 1 个问题，可能导致文档无法完全无障碍。
@@ -2595,7 +2682,12 @@ document scrollbar width	Standard	标准
 	The document's security settings don't allow filling in form fields	文档安全设置不允许填写表单域
 	The document's security settings don't allow printing	文档安全设置不允许打印
 	The document's security settings don't allow this change	文档安全设置不允许此更改
+	The driver may accept a turn and leave the picture as it was.	驱动可能接受旋转设置，却仍按原样返回图像。
+	The driver reports a paper jam.	驱动报告卡纸。
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	驱动报告有纸等待。纸盒空了后该位仍可能保持。
 	The existing action will be preserved.	将保留现有操作。
+	The feeder ran out of paper.	进纸器中的纸用完了。
+	The feeder took more than one sheet.	进纸器一次送入了多张纸。
 	The field properties could not be changed.	无法更改字段属性。
 	The field properties dialog is no longer open.	字段属性对话框已不再打开。
 	The field {name} no longer exists.	字段 {name} 已不存在。
@@ -2605,6 +2697,7 @@ document scrollbar width	Standard	标准
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	该表单请求提交到{u}；PdfCraft 不发送表单数据。请保存文档以保留填写内容。
 	The form asks viewers to make appearances (NeedAppearances)	表单要求阅读器生成外观（NeedAppearances）
 	The form's purpose and its fields (names, types, tab order)	表单的用途及其字段（名称、类型、Tab 顺序）
+	The fronts already scanned are kept for the reverse-side pass.	已扫描的正面已保留，供扫描背面使用。
 	The image couldn't be used as an icon: {e}	无法将该图像用作图标：{e}
 	The image has been copied ({w} × {h} pixels)	图像已复制（{w} × {h} 像素）
 	The image has been copied as a {ext} file	图像已复制为 {ext} 文件
@@ -2629,12 +2722,14 @@ document scrollbar width	Standard	标准
 	The order saved in the PDF needs tidying	PDF 中保存的顺序需要整理
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	其他签名（{names}）将报告文档在签名后已被更改。请重新验证它们：无法保证它们仍然有效。
 	The page has changed; select the image again	页面已更改；请重新选择图像
+	The pages already scanned were kept in the document.	已扫描的页面已保留在文档中。
 	the password is incorrect	密码不正确
 	The password is incorrect.	密码不正确。
 	The password is only used to read the file; it isn't saved.	密码仅用于读取文件，不会被保存。
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF 文本字体无法显示“{c}”（{code}）。请选择受支持的文本。
 	The PIN is incorrect.	PIN 不正确。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	无法列出 PKCS #11 令牌的数字 ID：{e}
+	The preview could not be shown.	无法显示预览。
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	此次打印的打印机驱动程序专属设置：纸盒、纸张类型、装订整理等。
 	The provider's page didn't come back in time. Try again.	提供商页面未及时返回。请重试。
 	The raw text was truncated to what fits.	原始文本已被截断。
@@ -2644,8 +2739,23 @@ document scrollbar width	Standard	标准
 	The release is not a published stable update. Try again later.	此版本不是已发布的稳定更新。请稍后重试。
 	The replacement file doesn't have that many pages.	替换文件没有那么多页面。
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	限制适用于没有“所有权限”的收件人。保存时应用。
+	The reverse sides already scanned are kept.	已扫描的背面已保留。
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	行太矮：请增加区域高度，或减少行数或行间距
 	The same password is tried on each file.	将对每个文件尝试同一密码。
+	The same printer is also available over the network.	同一台打印机也可通过网络使用。
+	The same printer is also available over USB.	同一台打印机也可通过 USB 使用。
+	The scan could not be started.	无法开始扫描。
+	The scan produced no pages.	扫描未产生页面。
+	The scan was cancelled at the scanner.	扫描已在扫描仪上取消。
+	The scan was interrupted.	扫描被中断了。
+	The scanner has a paper jam.	扫描仪卡纸了。
+	The scanner is busy, or the feeder has no paper.	扫描仪正忙，或进纸器中没有纸张。
+	The scanner is busy.	扫描仪正忙。
+	The scanner is offline or needs attention.	扫描仪已脱机或需要处理。
+	The scanner list could not be refreshed.	无法刷新扫描仪列表。
+	The scanner needs attention.	扫描仪需要处理。
+	The scanner reported a lamp or device error.	扫描仪报告了灯管或设备错误。
+	The scanner reported a paper problem (a jam or several sheets fed together).	扫描仪报告了纸张问题（卡纸或多张纸一同送入）。
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	屏幕实际的每英寸像素数。用尺子校准后，实际大小 (100%) 会按真实尺寸显示页面。
 	The selected area has been copied ({w} × {h} pixels)	所选区域已复制（{w} × {h} 像素）
 	The selected fields could not be found. Select them again.	找不到所选字段。请重新选择。
@@ -2785,6 +2895,7 @@ document scrollbar width	Standard	标准
 	Tooltip:	提示：
 	Top-level bookmarks ({n})	顶层书签（{n} 个）
 	TR must be a child of Table, THead, TBody, or TFoot	TR 必须是 Table、THead、TBody 或 TFoot 的子级
+	Transfer format: {format}.	传输格式：{format}。
 	Transform image	变换图像
 	Translate with AI	用 AI 翻译
 	Trim the picture with its handles; Enter or Done applies	用控制柄裁剪图片;按 Enter 或“完成”应用
@@ -2793,6 +2904,7 @@ document scrollbar width	Standard	标准
 	Try again	重试
 	Try the form as people filling it in will see it	以填写者视角试用表单
 	Turn upside down (180°)	上下颠倒 (180°)
+	Turned left	向左旋转
 	two cells would both be named {name}	两个单元格的名称都会是 {name}
 	Two-page view	双页视图
 	Two-sided:	双面：
@@ -2842,9 +2954,11 @@ document scrollbar width	Standard	标准
 	Update watermark	更新水印
 	Update watermark…	更新水印…
 	Updating 3D view…	正在更新3D视图…
+	Upside down	上下颠倒
 	URL to submit to	要提交到的 URL
 	US Letter	美式信纸
 	US survey feet	美国测量英尺
+	USB	USB
 	Use 72 DPI (one point per pixel)	使用 72 DPI（每像素 1 点）
 	Use a certificate	使用证书
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	使用云证书（ICP-Brasil：BirdID、VIDaaS、NeoID、SafeID…）
@@ -2893,6 +3007,7 @@ document scrollbar width	Standard	标准
 	Version {v}	版本{v}
 	Vertex snapping	吸附顶点
 	Vertical coordinates	纵向坐标
+	Vertical resolution	垂直分辨率
 	Vertical reversed	垂直反转
 	Vertical text cannot be moved with this selection.	无法随此选区移动竖排文本。
 	Vertical to horizontal conversion	纵向到横向换算
@@ -2916,6 +3031,8 @@ document scrollbar width	Standard	标准
 	Voice and Speech	语音与朗读
 	Voice:	语音：
 	Volume:	音量：
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	请等待扫描仪完成，或关闭其他正在使用它的程序，然后选择“继续扫描”。
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	请等待扫描仪完成，或关闭其他正在使用它的程序，然后选择“重试”。
 	Waiting for the system print dialog…	正在等待系统打印对话框…
 	Waiting for your approval in the browser…	正在等待你在浏览器中批准…
 	Warning	Warning
@@ -2930,6 +3047,8 @@ document scrollbar width	Standard	标准
 	White on black	黑底白字
 	Whole words only	仅全字匹配
 document scrollbar width	Wide	宽
+	Will use the bed.	将使用稿台。
+	Will use the feeder.	将使用进纸器。
 	Window Options	窗口选项
 	Windows store  ·  	Windows 证书存储 · 
 	WKT definition	WKT 定义
@@ -3030,11 +3149,13 @@ document scrollbar width	Wide	宽
 @plural	{n} more field calculates too early.|{n} more fields calculate too early.	另有 {n} 个字段计算过早。
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	另有 {n} 个公式读取了缺失的字段。
 @plural	{n} object selected|{n} objects selected	已选择 {n} 个对象
+	{n} of {m} pages were scanned.	已扫描 {n} / {m} 页。
 	{n} pages	{n} 页
 	{n} pages could not be searched; results are incomplete.	无法搜索 {n} 页；结果不完整。
 	{n} pages scanned	已扫描 {n} 页
 	{n} pages selected	已选择 {n} 页
 	{n} pages selected.	已选择 {n} 页。
+	{n} pages were scanned.	已扫描 {n} 页。
 @plural	{n} page|{n} pages	{n} 页
 @plural	{n} reply|{n} replies	{n} 条回复
 	{n} selected	已选择 {n} 个
@@ -3052,6 +3173,7 @@ document scrollbar width	Wide	宽
 	{who} in this document wants to open this address in your browser:	此文档中的{who}请求在浏览器中打开以下地址：
 	{who} in this document wants to open your email app with this address:	此文档中的{who}请求打开邮件应用并使用以下地址：
 	{words} on {pages}	在{pages}{words}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} 英寸，{pxw} × {pxh} 像素，{size}
 	ΔLOC	净增行
 	— (protection is applied when you save)	—（保存时应用保护）
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	“{name}”在打开或上次保存后已在磁盘上更改。现在保存会用此版本替换那个较新的版本。

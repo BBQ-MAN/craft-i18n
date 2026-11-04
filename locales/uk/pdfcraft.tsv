@@ -32,6 +32,7 @@
 	1 page scanned	Відскановано 1 сторінку
 	1 page selected	Вибрано 1 сторінку
 	1 page selected.	Вибрано 1 сторінку.
+	1 page was scanned.	Відскановано 1 сторінку.
 	180 degrees	180 градусів
 	4 x 6 in label (101.6 x 152.4 mm)	Етикетка 4 × 6 дюйма (101,6 × 152,4 мм)
 	9 digit, A letter, O letter or digit, X any character	9 — цифра, A — літера, O — літера або цифра, X — будь-який символ
@@ -48,6 +49,7 @@
 	A button	Кнопка
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Відкритий застосунок для PDF, написаний на Rust за принципом незалежної розробки. MIT OR Apache-2.0.
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	стовпець занадто вузький: розширте область, дайте стовпцю більше ширини, зменште кількість стовпців або інтервал між ними
+	A cover on the scanner is open.	Кришка сканера відкрита.
 	A diagonal CONFIDENTIAL watermark on every page.	Діагональний водяний знак CONFIDENTIAL на кожній сторінці.
 	a document must keep at least one page	документ має зберігати щонайменше одну сторінку
 	A document needs at least one page: copy instead	Документ потребує щонайменше однієї сторінки: натомість скопіюйте
@@ -57,6 +59,7 @@
 	A link	Посилання
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локальна модель — не передова хмарна: вона може помилятися, і довга відповідь на процесорі займає час. Перевіряйте все важливе й співвідносьте розмір моделі з цією машиною до завантаження.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Логотип або назва ліворуч від вкладок, там, де їх показав би рядок заголовка: PdfCraft або вашої компанії.
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Кількість сторінок зупиняє подавач після стількох аркушів. Скасування раніше завершує передачу; уже отримані сторінки лишаються в документі.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Сторінка, закрита зображенням (скан?): {pages}; тло там не буде видно.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Файл PNG або SVG. Читається з цього місця під час кожного запуску PdfCraft.
 	A script	Сценарій
@@ -186,6 +189,7 @@
 	Advanced options	Додаткові параметри
 	Advanced Options {chevron}	Додаткові параметри {chevron}
 	Advanced search…	Розширений пошук…
+	Advanced…	Додатково…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Після «Підписати» введіть OTT-код із застосунку mSzafir у вікні CloudSigner і підтвердіть підпис у застосунку. Якщо в CloudSigner увімкнено постійний OTT-код, код запитується лише раз на кілька хвилин.
 	AI Assistant	ШІ-помічник
 	AI assistant	ШІ-асистент
@@ -206,6 +210,7 @@
 	All multimedia objects are tagged	Усі мультимедійні об’єкти мають теги
 	All open documents	Усі відкриті документи
 	All page content is tagged	Увесь вміст сторінок має теги
+	All pages asks the driver for the whole stack.	«Усі сторінки» просить у драйвера весь стіс.
 	All pages in document	Усі сторінки документа
 	All pages in range	Усі сторінки діапазону
 	All permissions	Усі дозволи
@@ -295,6 +300,7 @@ calendar date	August	серпня
 	Author title	Посада автора
 	Auto follows the system's text size. Pages always render at the display's full resolution.	Автоматичний режим використовує розмір тексту із системних налаштувань. Сторінки завжди відображаються в повній роздільній здатності екрана.
 	Auto portrait/landscape	Автоматично: книжкова/альбомна
+	Auto-deskew	Автовирівнювання
 	Auto-detect	Визначати автоматично
 	Auto-rotate pages	Автоматично повертати сторінки
 	Auto-size text to fit redaction region	Автоматично добирати розмір тексту до області вилучення
@@ -313,6 +319,7 @@ calendar date	August	серпня
 	Balanced and Compact reduce image quality to make a smaller file. Text and forms stay editable.	Збалансований і Компактний знижують якість зображень, щоб зменшити розмір файлу. Текст і форми залишаються редагованими.
 	Basic constraints	Основні обмеження
 	Bates numbering	Нумерація Бейтса
+	Bed	Скло
 	Before each selected page (select pages in Organize)	Перед кожною вибраною сторінкою (виберіть сторінки в «Упорядкуванні»)
 	Before the number	Перед числом
 	Behind text and images	Під текстом і зображеннями
@@ -362,6 +369,7 @@ calendar date	August	серпня
 	Calibrate…	Калібрувати…
 	Callout	Виноска
 	Can't be read: {e}	Не вдалося прочитати: {e}
+	Cancel reverse sides	Скасувати зворотні боки
 	Cancelled	Скасовано
 	Cancelling…	Скасування…
 	Case-sensitive	З урахуванням регістру
@@ -419,9 +427,13 @@ calendar date	August	серпня
 	Check for updates…	Перевірити оновлення…
 	Check spelling	Перевіряти правопис
 	Check spelling while typing	Перевіряти правопис під час введення
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	Перевірте, чи є папір у подавачі, або зачекайте, поки сканер завершить роботу, потім виберіть «Продовжити сканування».
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	Перевірте, чи є папір у подавачі, або зачекайте, поки сканер завершить роботу, потім виберіть «Повторити».
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Перевірте, чи теги читаються в тому порядку, у якому читав би зрячий читач. Виправте порядок інструментом порядку читання або на панелі тегів.
 	Check the pages	Перевірте сторінки
 	Check the pages of {name}: {why}	Перевірте сторінки {name}: {why}
+	Check the scanner is on and connected, then choose Continue.	Переконайтеся, що сканер увімкнено й підключено, потім виберіть «Продовжити сканування».
+	Check the scanner is on and connected, then choose Try again.	Переконайтеся, що сканер увімкнено й підключено, потім виберіть «Повторити».
 	CheckBox	Прапорець
 	Checkbox	Прапорець
 	Checked	Із позначкою
@@ -429,6 +441,7 @@ calendar date	August	серпня
 	Checking Hungarian OCR installation…	Перевірка встановлення угорського OCR…
 	Checking Options ({on} of 32 in all categories)	Параметри перевірки ({on} із 32 в усіх категоріях)
 	Checking pages…	Перевірка сторінок…
+	Checking the scanner…	Перевірка сканера…
 	Checkmark	Позначка
 	Choose a digital ID file	Виберіть файл цифрового посвідчення
 	Choose a folder for the exported files	Виберіть теку для експортованих файлів
@@ -462,8 +475,11 @@ calendar date	August	серпня
 	Clear form	Очистити форму
 	Clear personal dictionary	Очистити особистий словник
 	Clear redaction marks	Очистити позначки вилучення
+	Clear region	Очистити область
 	Clear search	Очистити пошук
 	Clear selection / close find	Зняти виділення / закрити пошук
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	Усуньте зминання та рівно завантажте решту аркушів, потім виберіть «Продовжити сканування».
+	Clear the jam and load the sheets squarely, then choose Try again.	Усуньте зминання та рівно завантажте аркуші, потім виберіть «Повторити».
 	Click on the page to add a {tool}, or drag to set its size	Клацніть на сторінці, щоб додати інструмент «{tool}», або перетягніть, щоб задати розмір
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Клацніть на сторінці, щоб додати текст; кожне клацання створює нове поле, а ✓ завершує. Перетягуйте елементи, щоб перемістити їх, тягніть за кут, щоб змінити розмір, двічі клацніть текст, щоб редагувати його.
 	Click text or an image to edit it	Клацніть текст або зображення для редагування
@@ -479,6 +495,8 @@ calendar date	August	серпня
 	Close Tab	Закрити вкладку
 	Close Tabs to the Right	Закрити вкладки праворуч
 	Close tabs to the right	Закрити вкладки праворуч
+	Close the feeder cover and check the paper, then choose Continue.	Закрийте кришку пристрою подачі та перевірте папір, потім виберіть «Продовжити сканування».
+	Close the feeder cover and check the paper, then choose Try again.	Закрийте кришку пристрою подачі та перевірте папір, потім виберіть «Повторити».
 	Close Window	Закрити вікно
 	Close window	Закрити вікно
 	Closed arrow	Закрита стрілка
@@ -493,6 +511,7 @@ calendar date	August	серпня
 	Collate	Зібрати за копіями
 	Color contrast	Колірний контраст
 	Color Document	Кольоровий документ
+	Color document	Кольоровий документ
 	Color Images	Кольорові зображення
 	Color Photo	Кольорове фото
 	Color Spaces	Колірні простори
@@ -540,11 +559,16 @@ calendar date	August	серпня
 	Configure New Digital ID	Налаштувати нове цифрове посвідчення
 	Confirm Password	Підтвердьте пароль
 	Conformance level:	Рівень відповідності:
+	Connected by USB.	Підключено через USB.
 	Connected lines	Ламана лінія
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	Підключено мережею (вебслужби). Параметри з цього драйвера, не з USB.
 	Console	Консоль
 	Content copying	Копіювання вмісту
 	Content copying for accessibility	Копіювання вмісту для доступності
 	Content Streams	Потоки вмісту
+	Continue scanning	Продовжити сканування
+	Continue scanning fronts	Продовжити сканування лицьових боків
+	Continue scanning reverse sides	Продовжити сканування зворотних боків
 	Continuous scrolling	Безперервне прокручування
 	Convert colors	Перетворити кольори
 	Convert mode	Режим конвертування
@@ -638,7 +662,9 @@ calendar date	August	серпня
 	Created a PDF from the first {n} files	Створено PDF із перших файлів: {n}
 	Created a PDF from {n} files	Створено PDF із файлів: {n}
 	Created a PDF from {n} files; left out: {names}	Створено PDF із файлів ({n}); пропущено: {names}
+	Created Scan.pdf	Створено Scan.pdf
 	Created {n} links	Створено посилань: {n}
+	Created {n} scanned files	Створено {n} відсканованих файлів
 	Creates 1 file from {n} pages.	Створює 1 файл зі сторінок: {n}.
 	Creates {f} files from {n} pages.	Створює файли ({f}) зі сторінок ({n}).
 	Credit Cards	Кредитні картки
@@ -808,6 +834,7 @@ key	Delete	Delete
 	Drag a rectangle around the area to copy	Намалюйте прямокутник навколо області для копіювання
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Намалюйте прямокутник на сторінці, щоб обітнути її; двічі клацніть сторінку, щоб задати її межі
 	Drag a rectangle to create a link; double-click a link to edit it	Намалюйте прямокутник, щоб створити посилання; двічі клацніть посилання, щоб редагувати його
+	Drag on the preview to choose a region. An empty selection scans the whole area.	Перетягніть на попередньому перегляді, щоб обрати область. Порожній вибір сканує все.
 	Drag the corners onto the document's edges, then choose Enhance page.	Перетягніть кути до країв документа, потім виберіть «Поліпшити сторінку».
 	Drag the selection to move it. Esc clears the selection.	Перетягніть виділення, щоб перемістити його. Esc скасовує виділення.
 	Drag to draw the area where the signature should appear.	Намалюйте область, у якій має з’явитися підпис.
@@ -826,9 +853,12 @@ key	Delete	Delete
 	Drawing	Малювання
 	Drawing scale	Масштаб креслення
 	Drawing scale changes. Use Actual size for full-scale plans.	Масштаб креслення змінюється. Для друку в початковому масштабі виберіть Фактичний розмір.
+	Driver default	Типове драйвера
 	Drop PDFs, images, text files or folders here, or choose them.	Перетягніть сюди PDF, зображення, текстові файли або теки чи виберіть їх.
 	Drop-down list	Розкривний список
 	Dropdown Properties	Властивості розкривного списку
+	Duplex	Двосторонньо
+	Duplex is not offered.	Двостороннє сканування не пропонується.
 	Duplicate "{name}" onto:	Дублювати «{name}» на:
 	Duplicate Field	Дублювати поле
 	Duplicate field	Дублювати поле
@@ -973,6 +1003,7 @@ key	Esc	Esc
 scroll speed	Fast	Швидка
 	February	Лютий
 calendar date	February	лютого
+	Feeder	Подавач
 	Field descriptions	Описи полів
 	Field is used for file selection	Поле використовується для вибору файлу
 	Field list	Список полів
@@ -1039,6 +1070,7 @@ calendar date	February	лютого
 	Find untagged content	Знайти нетегований вміст
 	Finding document fonts…	Пошук шрифтів для документа…
 	Finding fields… page {d} of {t}	Пошук полів… сторінка {d} із {t}
+	Finish	Готово
 	Finish or discard the text being edited before selecting several objects.	Завершіть або скасуйте редагування тексту, перш ніж вибирати кілька об’єктів.
 	First / last page	Перша / остання сторінка
 	First page	Перша сторінка
@@ -1103,10 +1135,15 @@ calendar date	February	лютого
 	Found {n} untagged content problems.	Знайдено проблем із нетегованим вмістом: {n}.
 	From a PDF page or an image	Із сторінки PDF або зображення
 	From colour	Із кольору
+	From scanner…	Зі сканера…
 	From template	Із шаблону
 	From {file}	Із {file}
 	From:	Від:
 	Front side only	Лише лицьовий бік
+	front(s)	лицьов.
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	Лицьових боків відскановано: {n}. Переверніть аркуш на склі, потім виберіть «Сканувати зворотні боки».
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	Лицьових боків відскановано: {n}. Переверніть стопку так, щоб останній аркуш був зверху, завантажте її знову, потім виберіть «Сканувати зворотні боки».
+	Full area	Уся область
 	Full screen mode	Повноекранний режим
 	Full screen mode ({key}); Esc leaves it	Повноекранний режим ({key}); Esc
 	Generate styled PDF	Створити форматований PDF
@@ -1202,8 +1239,10 @@ key	Home	Home
 	Insert pages from {name}	Вставити сторінки з {name}
 	Insert pages from {name} — 1 field renamed	Вставити сторінки з {name} — 1 поле перейменовано
 	Insert pages from {name} — fields renamed	Вставити сторінки з {name} — поля перейменовано
+	Insert scanned pages	Вставити відскановані сторінки
 	Insert text	Вставити текст
 	Inserted	Вставлено
+	Inserted scanned pages	Вставлено відскановані сторінки
 	Inserted text	Вставлений текст
 	Inserting, deleting, and rotating pages	Вставлення, видалення й поворот сторінок
 	Inset	Заглиблення
@@ -1214,6 +1253,7 @@ key	Home	Home
 	Installed version: {v}	Встановлена версія: {v}
 	Integrity	Цілісність
 	Intended usage	Призначення
+	Intent	Призначення
 	Interface and appearance	Інтерфейс і вигляд
 	Interface font	Шрифт інтерфейсу
 	Interface size	Розмір інтерфейсу
@@ -1222,6 +1262,7 @@ key	Home	Home
 	Invert	Інверсія
 	Invert colors	Інвертувати кольори
 	Invert everything	Інвертувати все
+	Invert tones	Інвертувати тони
 	Inverted page background	Тло інвертованої сторінки
 	Inverted text	Інвертований текст
 	Invisible Rectangle	Невидимий прямокутник
@@ -1263,10 +1304,13 @@ calendar date	June	червня
 	Keychain  ·  	В’язка ключів  ·  
 	Label	Позначка
 	Labels: {preview}. Later pages keep their labels.	Позначки: {preview}. Наступні сторінки зберігають свої позначки.
+	Lamp	Лампа
+	Lamp on	Лампа увімкнена
 	Landscape and Portrait Pages	Альбомні й книжкові сторінки
 	Landscape Pages	Альбомні сторінки
 	Landscape pages	Альбомні сторінки
 	Language and spelling	Мова та правопис
+	Large scan	Велике сканування
 	Larger pages	Більші сторінки
 	Larger text	Більший текст
 	Larger thumbnails	Збільшити мініатюри
@@ -1314,9 +1358,12 @@ calendar date	June	червня
 	List items belong in a list. Fix the list's tags.	Елементи списку мають належати списку. Виправте теги списку.
 	List labels and bodies belong in a list item. Fix the list's tags.	Позначки й вміст списку мають належати елементу списку. Виправте теги списку.
 	List PKCS #11 token (smart card, HSM) signing identities	Список ідентифікаторів підпису з токенів PKCS #11 (смарт-карти, HSM)
+	Listing scanners…	Список сканерів…
 	Lists	Списки
 	Load document font	Завантажити шрифт документа
 	Load font…	Завантажити шрифт…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	Завантажте ще аркуші й виберіть «Продовжити сканування» або виберіть «Готово», щоб зберегти відскановане.
+	Load sheets in the feeder, then choose Try again.	Завантажте аркуші в пристрій подачі, потім виберіть «Повторити».
 	Local and private	Локально й приватно
 	Local cross-PDF links require the desktop app	Локальні посилання між PDF працюють лише в настільному застосунку
 	Location: 	Місце: 
@@ -1325,6 +1372,8 @@ calendar date	June	червня
 	Logical Reading Order	Логічний порядок читання
 	Logo	Логотип
 	Logo and name	Логотип і назва
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	Перевірте, чи сканер показує повідомлення та чи не відчинені дверцята або кришка, і усуньте причину, потім виберіть «Продовжити сканування».
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	Перевірте, чи сканер показує повідомлення та чи не відчинені дверцята або кришка, і усуньте причину, потім виберіть «Повторити».
 	Looking for a local model runtime…	Триває пошук локального середовища запуску моделей…
 	Looking for certificates…	Пошук сертифікатів…
 	Looking for PDFs…	Пошук PDF…
@@ -1342,6 +1391,7 @@ calendar date	June	червня
 	Make searchable (recognize text)	Зробити придатним для пошуку (розпізнати текст)
 	Manage embedded index	Керувати вбудованим індексом
 	Manage plugins…	Керування плагінами…
+	Manual duplex needs one reverse side for each front.	Ручний дуплекс потребує зворотного боку для кожного лицьового.
 	Maps to standard role	Зіставляє зі стандартною роллю
 	March	Березень
 calendar date	March	березня
@@ -1392,6 +1442,7 @@ calendar date	May	травня
 	Midpoints	Серединні точки
 	Minimum	Мінімальна
 	minimum	мінімум
+	Mirror the page	Віддзеркалити сторінку
 	Missing field	Немає поля
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Відсутнє в порядку обчислень, збереженому в PDF: інші переглядачі PDF можуть його не обчислювати.
 	Mixed	Різні значення
@@ -1508,6 +1559,7 @@ calendar date	May	травня
 	no output folder was chosen	не вибрано теку для виводу
 	No pages match those choices	Жодна сторінка не відповідає вибраним параметрам
 	No pages selected	Сторінки не вибрано
+	No pages were scanned.	Жодної сторінки не відскановано.
 	No PDFs in this folder yet	У цій теці ще немає PDF
 	No PDFs, images or text files found in {folder}	У {folder} не знайдено PDF, зображень або текстових файлів
 	No photo chosen	Фото не вибрано
@@ -1522,6 +1574,7 @@ calendar date	May	травня
 	No reference yet	Зразка поки немає
 	No release notes were provided.	Приміток до випуску немає.
 	No scanner found	Сканер не знайдено
+	No scanner is connected.	Сканер не підключено.
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Сканери не знайдено. Перевірте, чи сканер увімкнено й під’єднано, або введіть його мережеву адресу.
 	No security	Без захисту
 	No sheets	Немає аркушів
@@ -1621,6 +1674,8 @@ animation effects	On	Увімкнено
 	Open previous PDF in folder	Відкрити попередній PDF у теці
 	Open Recent	Відкрити нещодавні
 	Open tabs and edits update the search automatically.	Відкриті вкладки та зміни автоматично оновлюють пошук.
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	Відкрийте кришку, усуньте можливе зминання або аркуші, подані разом, і рівно завантажте решту аркушів, потім виберіть «Продовжити сканування».
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	Відкрийте кришку, усуньте можливе зминання або аркуші, подані разом, і рівно завантажте аркуші, потім виберіть «Повторити».
 	Open the file as it was saved then	Відкрити файл у стані на момент того збереження
 	Open the older version first	Спочатку відкрийте старішу версію
 	Open this local PDF?	Відкрити цей локальний PDF?
@@ -1635,6 +1690,7 @@ animation effects	On	Увімкнено
 	Opening the browser's print dialog…	Відкривається діалог друку браузера…
 	Opening {name}…	Відкривається {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Відкриває налаштування драйвера принтера. Вони зберігаються для кожного друку з цього комп’ютера; вибрані тут кількість копій, двосторонній друк, відтінки сірого й папір і далі діють.
+	Optical resolution {x} × {y} dpi.	Оптична роздільність {x} × {y} dpi.
 	Optimization cancelled	Оптимізацію скасовано
 	Optimization is already running	Оптимізація вже виконується
 	Optimize	Оптимізувати
@@ -1767,6 +1823,7 @@ animation effects	On	Увімкнено
 	Permitted actions after certifying	Дозволені дії після засвідчення
 	Phone Number	Номер телефону
 	Phone Numbers	Номери телефонів
+	Photometric	Фотометрія
 	Pick a tool in the quick bar, or type above.	Виберіть інструмент на панелі швидкого доступу або введіть текст вище.
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Сторінки, закриті зображеннями (скани?): {pages}; тло там не буде видно.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Зображення потребують альтернативного тексту з описом або позначки декоративного рисунка. Додайте альтернативний текст до кожного рисунка.
@@ -1819,7 +1876,9 @@ animation effects	On	Увімкнено
 	Presentation (.pptx)	Презентація (.pptx)
 	Preset	Набір параметрів
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	Запобігати мерехтінню G-SYNC/FreeSync (після перезапуску)
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	Попередній перегляд для скла. Нижче задайте область у дюймах або залиште порожньою для всього аркуша.
 	Preview unavailable: {e}	Попередній перегляд недоступний: {e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	Попередній перегляд використовує скло. Установіть джерело «Скло» або скануйте без перегляду.
 	Preview: page {p} of {n}	Попередній перегляд: сторінка {p} із {n}
 	Previous ({key})	Попередній ({key})
 	Previous / next page	Попередня / наступна сторінка
@@ -1927,7 +1986,9 @@ animation effects	On	Увімкнено
 	Reduce file size	Зменшити розмір файлу
 	Reduce file size…	Зменшити розмір файлу…
 	Reference:	Зразок:
+	Refresh lists scanners. It does not feed paper.	Оновити знову перелічує сканери. Папір не подає.
 	Refresh plugins	Оновити плагіни
+	Region in inches. Leave the width or the height at zero to scan the whole area.	Область у дюймах. Залиште ширину або висоту нулем, щоб сканувати все.
 	Regularity	Регулярність
 	Rejected	Відхилено
 	Release notes	Примітки до випуску
@@ -2038,6 +2099,9 @@ animation effects	On	Увімкнено
 	Reverse closed arrow	Зворотна закрита стрілка
 	Reverse open arrow	Зворотна відкрита стрілка
 	Reverse pages	Зворотний порядок сторінок
+	reverse side(s)	зворотн.
+	Reverse sides	Зворотні боки
+	Reverse sides interleaved.	Зворотні боки вставлено почергово.
 	Revert	Повернути збережену версію
 	Revert changes	Скасувати зміни
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	Повернутися до попередньої збереженої версії «{name}»? Після цього зміни, внесені відтоді, неможливо буде повернути.
@@ -2135,12 +2199,28 @@ animation effects	On	Увімкнено
 	Scan & OCR	Сканування й OCR
 	Scan and text recognition	Сканування та розпізнавання тексту
 	Scan correction	Виправлення скану
+	Scan interrupted	Сканування перервано
 	Scan next page	Сканувати наступну сторінку
 	Scan processing cancelled	Обробку сканів скасовано
+	Scan reverse side now (1 front)	Сканувати зворотний бік зараз (1 лицьовий)
+	Scan reverse sides	Сканувати зворотні боки
+	Scan reverse sides now ({n} fronts)	Сканувати зворотні боки зараз (лицьових: {n})
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	Відскануйте лицьовий бік, переверніть аркуш на склі, потім зворотний.
+	Scan the fronts before the reverse sides.	Спочатку скануйте лицьові боки, потім зворотні.
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Відскануйте лицьові, переверніть стос (останній зверху), потім зворотні. Сторінки чергуються: лицьова, зворотна, …
+	Scan the missing reverse sides, then choose Finish.	Відскануйте відсутні зворотні боки, потім виберіть «Готово».
 	Scanned pages need OCR. Reading order follows extracted page text.	Скановані сторінки потребують OCR. Порядок читання відповідає витягнутому тексту сторінки.
 	Scanned text detected	Виявлено сканований текст
 	Scanner	Сканер
+	Scanner settings	Параметри сканера
 	Scanner's full area	Уся площа сканера
+	Scanning front {n} of {t}…	Лицьова {n} з {t}…
+	Scanning front {n}…	Лицьова {n}…
+	Scanning needs Windows (WIA) in this version.	Для сканування в цій версії потрібен Windows (WIA).
+	Scanning page {n} of {t}…	Сканування сторінки {n} з {t}…
+	Scanning page {n}…	Сканування сторінки {n}…
+	Scanning reverse side {n} of {t}…	Зворотний {n} з {t}…
+	Scanning reverse side {n}…	Зворотний {n}…
 	Scanning was stopped	Сканування зупинено
 	Scanning…	Сканування…
 	Screen / email	Екран / пошта
@@ -2213,6 +2293,8 @@ animation effects	On	Увімкнено
 	Sending…	Надсилання…
 	Sent to {printer}: {msg}	Надіслано на {printer}: {msg}
 	Separate PDFs	Окремі PDF-файли
+	Separate the sheets and load the remaining ones, then choose Continue.	Розділіть аркуші та завантажте решту, потім виберіть «Продовжити сканування».
+	Separate the sheets and load them again, then choose Try again.	Розділіть аркуші та завантажте їх знову, потім виберіть «Повторити».
 	Separator style:	Стиль роздільників:
 	Sepia	Сепія
 	Sepia night	Нічна сепія
@@ -2246,6 +2328,7 @@ calendar date	September	вересня
 	Set the image of {name}	Задати зображення для {name}
 	Set to current page ({n})	Задати поточну сторінку ({n})
 	Set to zero	Установити нуль
+	Settings this source offers. Leave a control alone to keep the driver’s value.	Параметри цього джерела. Не чіпайте елемент, щоб лишити значення драйвера.
 	SHA-1 digest	Відбиток SHA-1
 	SHA-256 digest	Відбиток SHA-256
 	Shadings	Градієнтні заливки
@@ -2390,9 +2473,11 @@ action wizard	Start	Почати
 	Status	Статус
 	Steps	Кроки
 	Sticky note	Нотатка
+	Stop	Стоп
 	Stop reading	Зупинити читання
 	Straighten scanned page	Вирівняти відскановану сторінку
 	Straighten skewed scans	Вирівнювати нахилені скани
+	Straighten the page	Вирівняти сторінку
 	Strength: {s}	Надійність: {s}
 	Strikethrough text	Закреслити текст
 	String length (0 turns it off)	Довжина нитки (0 вимикає)
@@ -2416,6 +2501,8 @@ certificate	Subject	Власник сертифіката
 	Swap width and height	Поміняти ширину й висоту
 	Switch light / dark theme	Перемкнути світлу / темну тему
 	Switch page theme	Змінити тему сторінки
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	Вимкніть і знову ввімкніть сканер та зачекайте, доки він буде готовий, потім виберіть «Продовжити сканування».
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	Вимкніть і знову ввімкніть сканер та зачекайте, доки він буде готовий, потім виберіть «Повторити».
 	Switch to List view to change the pages it takes.	Перейдіть до вигляду списком, щоб змінити, які сторінки взяти.
 	Switch to two-page view first to show the cover page	Спочатку перемкніть на двосторінковий вигляд, щоб показати обкладинку
 	System default	Системний за замовчуванням
@@ -2479,6 +2566,7 @@ certificate	Subject	Власник сертифіката
 	The answer proposes formatting changes.	Відповідь пропонує зміни форматування.
 	The answer stopped unexpectedly.	Відповідь несподівано перервалася.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Ключ API буде надіслано на цю адресу без шифрування. Використовуйте https://, якщо сервер не в довіреній мережі.
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Скло сканує по одній сторінці. Відскануйте лицьову, переверніть, потім зворотну.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	У порядку обчислень є {n} запис, який нічого не обчислює. «Виправити порядок» його видалить.|У порядку обчислень є {n} записи, які нічого не обчислюють. «Виправити порядок» їх видалить.|У порядку обчислень є {n} записів, які нічого не обчислюють. «Виправити порядок» їх видалить.
 	the certificate expired on {date}	термін дії сертифіката минув {date}
 	The checker found 1 problem which may prevent the document from being fully accessible.	Перевірка виявила 1 проблему, яка може заважати повній доступності документа.
@@ -2511,7 +2599,12 @@ certificate	Subject	Власник сертифіката
 	The document's security settings don't allow filling in form fields	Налаштування захисту документа не дозволяють заповнювати поля форми
 	The document's security settings don't allow printing	Налаштування захисту документа не дозволяють друк
 	The document's security settings don't allow this change	Налаштування захисту документа не дозволяють цю зміну
+	The driver may accept a turn and leave the picture as it was.	Драйвер може прийняти оберт і все одно лишити зображення як було.
+	The driver reports a paper jam.	Драйвер повідомляє про застрягання паперу.
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	Драйвер повідомляє про аркуш у очікуванні. Біт може лишатися після порожнього лотка.
 	The existing action will be preserved.	Наявну дію буде збережено.
+	The feeder ran out of paper.	У пристрої подачі закінчився папір.
+	The feeder took more than one sheet.	Пристрій подачі захопив більше одного аркуша.
 	The field properties could not be changed.	Не вдалося змінити властивості полів.
 	The field properties dialog is no longer open.	Вікно властивостей полів більше не відкрите.
 	The field {name} no longer exists.	Поле {name} більше не існує.
@@ -2521,6 +2614,7 @@ certificate	Subject	Власник сертифіката
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Форма запитує надсилання до {u}; PdfCraft не надсилає дані форми. Збережіть документ, щоб зберегти введені дані.
 	The form asks viewers to make appearances (NeedAppearances)	Форма просить засоби перегляду створювати вигляд полів (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	Призначення форми та її поля (назви, типи, порядок табуляції)
+	The fronts already scanned are kept for the reverse-side pass.	Уже відскановані лицьові боки збережено для проходу зворотних боків.
 	The image couldn't be used as an icon: {e}	Не вдалося використати зображення як значок: {e}
 	The image has been copied ({w} × {h} pixels)	Зображення скопійовано ({w} × {h} пікселів)
 	The image has been copied as a {ext} file	Зображення скопійовано як файл {ext}
@@ -2543,6 +2637,7 @@ certificate	Subject	Власник сертифіката
 	The order saved in the PDF needs tidying	Порядок, збережений у PDF, потребує впорядкування
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Інші підписи ({names}) повідомлятимуть, що документ змінився після підписання. Перевірте їх повторно: ніщо не гарантує, що вони залишаться дійсними.
 	The page has changed; select the image again	Сторінка змінилася; виберіть зображення ще раз
+	The pages already scanned were kept in the document.	Уже відскановані сторінки збережено в документі.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Сторінки видобуто, але не видалено, бо документ змінився, поки ви вибирали теку.
 	the password is incorrect	неправильний пароль
 	The password is incorrect.	Неправильний пароль.
@@ -2550,6 +2645,7 @@ certificate	Subject	Власник сертифіката
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифти тексту PDF не можуть відобразити «{c}» ({code}). Виберіть підтримуваний текст.
 	The PIN is incorrect.	Неправильний PIN-код.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Не вдалося отримати список цифрових посвідчень із токенів PKCS #11: {e}
+	The preview could not be shown.	Не вдалося показати попередній перегляд.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Власні налаштування драйвера принтера для цього друку: лоток, тип паперу, післядрукова обробка тощо.
 	The provider's page didn't come back in time. Try again.	Сторінка постачальника не повернулася вчасно. Спробуйте ще раз.
 	The raw text was truncated to what fits.	Вхідний текст було скорочено.
@@ -2559,8 +2655,23 @@ certificate	Subject	Власник сертифіката
 	The release is not a published stable update. Try again later.	Це не опубліковане стабільне оновлення. Спробуйте пізніше.
 	The replacement file doesn't have that many pages.	Файл заміни не має такої кількості сторінок.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Обмеження діють для одержувачів без «Усі дозволи». Застосовується під час збереження.
+	The reverse sides already scanned are kept.	Уже відскановані зворотні боки збережено.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	рядки занадто низькі: збільште висоту області, зменште кількість рядків або інтервал між ними
 	The same password is tried on each file.	Той самий пароль перевіряється для кожного файлу.
+	The same printer is also available over the network.	Той самий принтер доступний також через мережу.
+	The same printer is also available over USB.	Той самий принтер доступний також через USB.
+	The scan could not be started.	Не вдалося почати сканування.
+	The scan produced no pages.	Сканування не дало сторінок.
+	The scan was cancelled at the scanner.	Сканування було скасовано на сканері.
+	The scan was interrupted.	Сканування було перервано.
+	The scanner has a paper jam.	У сканері застрягнув папір.
+	The scanner is busy, or the feeder has no paper.	Сканер зайнятий, або в подавачі немає паперу.
+	The scanner is busy.	Сканер зайнятий.
+	The scanner is offline or needs attention.	Сканер не в мережі або потребує уваги.
+	The scanner list could not be refreshed.	Не вдалося оновити список сканерів.
+	The scanner needs attention.	Сканер потребує уваги.
+	The scanner reported a lamp or device error.	Сканер повідомив про помилку лампи або пристрою.
+	The scanner reported a paper problem (a jam or several sheets fed together).	Сканер повідомив про проблему з папером (зминання або одночасна подача кількох аркушів).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Справжня кількість пікселів на дюйм екрана. Відкалібруйте лінійкою, щоб реальний розмір (100%) показував сторінки в їхньому справжньому розмірі.
 	The selected area has been copied ({w} × {h} pixels)	Вибрану область скопійовано ({w} × {h} пікселів)
 	The selected fields could not be found. Select them again.	Вибрані поля не знайдено. Виберіть їх знову.
@@ -2698,13 +2809,15 @@ certificate	Subject	Власник сертифіката
 	Tooltip:	Підказка:
 	Top-level bookmarks ({n})	Закладки верхнього рівня ({n})
 	TR must be a child of Table, THead, TBody, or TFoot	TR має бути дочірнім елементом Table, THead, TBody або TFoot
+	Transfer format: {format}.	Формат передавання: {format}.
 	Transform image	Трансформувати зображення
 	Translate with AI	Перекласти за допомогою ШІ
 	Trim the picture with its handles; Enter or Done applies	Обріжте зображення за маркери; Enter або «Готово» застосовує
 	Trust	Довіра
-	Try again	Спробувати ще раз
+	Try again	Повторити
 	Try the form as people filling it in will see it	Перевірте форму так, як її бачитимуть користувачі під час заповнення
 	Turn upside down (180°)	Перевернути (180°)
+	Turned left	Повернуто ліворуч
 	two cells would both be named {name}	дві клітинки мали б однакове ім'я {name}
 	Two-page view	Дві сторінки
 	Two-sided:	Двобічний друк:
@@ -2746,8 +2859,10 @@ signature pad	Type	Ввести
 	Update header & footer…	Оновити колонтитули…
 	Update watermark	Оновити водяний знак
 	Update watermark…	Оновити водяний знак…
+	Upside down	Догори дном
 	URL to submit to	URL для надсилання
 	US Letter	Американський Letter
+	USB	Через USB
 	Use 72 DPI (one point per pixel)	Використовувати 72 DPI (один пункт на піксель)
 	Use a certificate	Використати сертифікат
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Використати хмарний сертифікат (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
@@ -2793,6 +2908,7 @@ signature pad	Type	Ввести
 	Verify	Перевірити
 	Verify to see what the document needs.	Виконайте перевірку, щоб з’ясувати потреби документа.
 	Version {v}	Версія {v}
+	Vertical resolution	Вертикальна роздільність
 	Vertical reversed	Вертикально у зворотному порядку
 	Vertical text cannot be moved with this selection.	Вертикальний текст не можна перемістити разом із цим виділенням.
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	Відео, звук та інтерактивне мультимедіа повинні мати теги для озвучення. Додайте теги до мультимедійних коментарів.
@@ -2811,6 +2927,8 @@ signature pad	Type	Ввести
 	Voice and Speech	Голос і мовлення
 	Voice:	Голос:
 	Volume:	Гучність:
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Зачекайте, поки сканер завершить роботу, або закрийте інші програми, які його використовують, потім виберіть «Продовжити сканування».
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Зачекайте, поки сканер завершить роботу, або закрийте інші програми, які його використовують, потім виберіть «Повторити».
 	Waiting for the system print dialog…	Очікування системного діалогу друку…
 	Waiting for your approval in the browser…	Очікування вашого схвалення в браузері…
 	watermark	водяний знак
@@ -2824,6 +2942,8 @@ signature pad	Type	Ввести
 	White on black	Білий на чорному
 	Whole words only	Лише цілі слова
 document scrollbar width	Wide	Широка
+	Will use the bed.	Буде використано скло.
+	Will use the feeder.	Буде використано подавач.
 	Window Options	Параметри вікна
 	Windows store  ·  	Сховище Windows  ·  
 	Word count	Кількість слів
@@ -2922,11 +3042,13 @@ document scrollbar width	Wide	Широка
 @plural	{n} more field calculates too early.|{n} more fields calculate too early.	Ще {n} поле обчислюється зарано.|Ще {n} поля обчислюються зарано.|Ще {n} полів обчислюються зарано.
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	Ще {n} формула читає відсутнє поле.|Ще {n} формули читають відсутні поля.|Ще {n} формул читають відсутні поля.
 @plural	{n} object selected|{n} objects selected	Виділено {n} об’єкт|Виділено {n} об’єкти|Виділено {n} об’єктів
+	{n} of {m} pages were scanned.	Відскановано сторінок: {n} з {m}.
 	{n} pages	Сторінок: {n}
 	{n} pages could not be searched; results are incomplete.	Не вдалося виконати пошук на {n} сторінках; результати неповні.
 	{n} pages scanned	Відскановано сторінок: {n}
 	{n} pages selected	Вибрано сторінок: {n}
 	{n} pages selected.	Вибрано сторінок: {n}.
+	{n} pages were scanned.	Відскановано сторінок: {n}.
 @plural	{n} page|{n} pages	{n} сторінка|{n} сторінки|{n} сторінок
 @plural	{n} reply|{n} replies	{n} відповідь|{n} відповіді|{n} відповідей
 	{n} selected	Вибрано: {n}
@@ -2946,6 +3068,7 @@ document scrollbar width	Wide	Широка
 	{who} in this document wants to open this address in your browser:	{who} у цьому документі хоче відкрити цю адресу у вашому браузері:
 	{who} in this document wants to open your email app with this address:	{who} у цьому документі хоче відкрити ваш поштовий застосунок із цією адресою:
 	{words} on {pages}	{words} на {pages}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} дюйм, {pxw} × {pxh} пікс., {size}
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (захист застосовується під час збереження)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	«{name}» змінено на диску після відкриття або останнього збереження. Збереження зараз замінить ту новішу версію цією.

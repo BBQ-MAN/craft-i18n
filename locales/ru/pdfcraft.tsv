@@ -30,6 +30,7 @@
 	1 page scanned	Отсканирована 1 страница
 	1 page selected	Выделена 1 страница
 	1 page selected.	Выделена 1 страница.
+	1 page was scanned.	Отсканирована 1 страница.
 	180 degrees	180 градусов
 	3D model	3D-модель
 	3D model canvas	Область 3D-модели
@@ -47,6 +48,7 @@
 	a bookmark cannot be moved inside itself	закладку нельзя переместить внутрь самой себя
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Открытое PDF-приложение с чистой комнатой, написанное на Rust. MIT OR Apache-2.0.
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	столбец слишком узкий: расширьте область, отдайте столбцу больше ширины, уменьшите число столбцов или интервал между ними
+	A cover on the scanner is open.	Крышка сканера открыта.
 	A diagonal CONFIDENTIAL watermark on every page.	Диагональный водяной знак CONFIDENTIAL на каждой странице.
 	a document must keep at least one page	документ должен содержать хотя бы одну страницу
 	A document needs at least one page: copy instead	Документу нужна хотя бы одна страница: копируйте вместо этого
@@ -55,6 +57,7 @@
 	A form field has additional actions	У поля формы есть дополнительные действия
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локальная модель — не передовая облачная: она может ошибаться, и длинный ответ на процессоре занимает время. Проверяйте всё важное и соотносите размер модели с этой машиной до загрузки.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Логотип или название слева от вкладок, там, где их показала бы строка заголовка: PdfCraft или вашей компании.
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Число страниц останавливает податчик после стольких листов. Отмена раньше завершает передачу; уже полученные страницы остаются в документе.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Страница, закрытая изображением (скан?): {pages}; фон там не будет виден.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Файл PNG или SVG. Читается из этого места при каждом запуске PdfCraft.
 	A selected field has no widget on any page, so the fields can't be edited together.	У одного из выбранных полей нет виджета ни на одной странице, поэтому поля нельзя изменить вместе.
@@ -187,6 +190,7 @@
 	Advanced Options {chevron}	Дополнительные параметры {chevron}
 	Advanced search…	Расширенный поиск…
 	Advanced unit formats	Расширенные форматы единиц
+	Advanced…	Дополнительно…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	После нажатия «Подписать» введите OTT-код из приложения mSzafir в окне CloudSigner и подтвердите подпись в приложении. Если в CloudSigner включён постоянный OTT-код, код запрашивается лишь раз в несколько минут.
 	AI Assistant	ИИ-помощник
 	AI assistant	AI-ассистент
@@ -206,6 +210,7 @@
 	All multimedia objects are tagged	Все объекты мультимедиа размечены
 	All open documents	Все открытые документы
 	All page content is tagged	Всё содержимое страницы размечено
+	All pages asks the driver for the whole stack.	«Все страницы» запрашивает у драйвера весь стек.
 	All pages in document	Все страницы документа
 	All pages in range	Все страницы в диапазоне
 	All permissions	Все разрешения
@@ -292,6 +297,7 @@
 	Author title	Должность автора
 	Auto follows the system's text size. Pages always render at the display's full resolution.	В режиме «Авто» используется размер текста из настроек системы. Страницы всегда отображаются в полном разрешении экрана.
 	Auto portrait/landscape	Авто книжная/альбомная
+	Auto-deskew	Автовыравнивание
 	Auto-detect	Определять автоматически
 	Auto-rotate pages	Автоповорот страниц
 	Auto-size text to fit redaction region	Автоподбор размера текста по области сокрытия
@@ -309,6 +315,7 @@
 	Balanced	Сбалансированный
 	Balanced and Compact reduce image quality to make a smaller file. Text and forms stay editable.	Сбалансированный и Компактный снижают качество изображений, чтобы уменьшить размер файла. Текст и формы остаются редактируемыми.
 	Bates numbering	Нумерация Бейтса
+	Bed	Стекло
 	Before each selected page (select pages in Organize)	Перед каждой выделенной страницей (выделите страницы в Организации)
 	Before the number	Перед числом
 	Behind text and images	Под текстом и изображениями
@@ -362,6 +369,7 @@
 	Callout	Выноска
 	Can't be read: {e}	Нельзя прочитать: {e}
 	Cancel caption placement	Отменить размещение подписи
+	Cancel reverse sides	Отменить оборотные стороны
 	Cancelled	Отменено
 	Cancelling…	Отмена…
 	Case-sensitive	С учётом регистра
@@ -419,9 +427,13 @@
 	Check for updates…	Проверить обновления…
 	Check spelling	Проверить орфографию
 	Check spelling while typing	Проверять правописание при вводе
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	Проверьте, есть ли бумага в подающем устройстве, или дождитесь, пока сканер закончит работу, затем нажмите «Продолжить сканирование».
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	Проверьте, есть ли бумага в подающем устройстве, или дождитесь, пока сканер закончит работу, затем нажмите «Повторить».
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Проверьте, что теги читаются в порядке, который ожидает зрячий читатель. Используйте инструмент «Порядок чтения» или панель «Теги» для исправления.
 	Check the pages	Проверьте страницы
 	Check the pages of {name}: {why}	Проверьте страницы {name}: {why}
+	Check the scanner is on and connected, then choose Continue.	Убедитесь, что сканер включён и подключён, затем нажмите «Продолжить сканирование».
+	Check the scanner is on and connected, then choose Try again.	Убедитесь, что сканер включён и подключён, затем нажмите «Повторить».
 	CheckBox	Флажок
 	Checkbox	Флажок
 	Checked	Отмечено
@@ -429,6 +441,7 @@
 	Checking Hungarian OCR installation…	Проверка установки венгерского OCR…
 	Checking Options ({on} of 32 in all categories)	Параметры проверки ({on} из 32 по всем категориям)
 	Checking pages…	Проверка страниц…
+	Checking the scanner…	Проверка сканера…
 	Checkmark	Галочка
 	Choose a control point inside the viewport.	Выберите контрольную точку внутри области просмотра.
 	Choose a digital ID file	Выберите файл цифрового идентификатора
@@ -472,8 +485,11 @@
 	Clear points	Очистить точки
 	Clear Recent Files	Очистить недавние файлы
 	Clear redaction marks	Очистить метки сокрытия
+	Clear region	Очистить область
 	Clear search	Очистить поиск
 	Clear selection / close find	Снять выделение / закрыть поиск
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	Устраните замятие и ровно загрузите оставшиеся листы, затем нажмите «Продолжить сканирование».
+	Clear the jam and load the sheets squarely, then choose Try again.	Устраните замятие и ровно загрузите листы, затем нажмите «Повторить».
 	Click on the page to add a {tool}, or drag to set its size	Щёлкните на странице, чтобы добавить {tool}, или перетащите, чтобы задать размер
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Щёлкните на странице, чтобы добавить текст; каждый щелчок создаёт новое поле, ✓ завершает. Перетаскивайте элементы для перемещения, угол — для размера, двойной щелчок по тексту — для редактирования.
 	Click text or an image to edit it	Щёлкните текст или изображение, чтобы редактировать
@@ -490,6 +506,8 @@
 	Close Tab	Закрыть вкладку
 	Close Tabs to the Right	Закрыть вкладки справа
 	Close tabs to the right	Закрыть вкладки справа
+	Close the feeder cover and check the paper, then choose Continue.	Закройте крышку устройства подачи и проверьте бумагу, затем нажмите «Продолжить сканирование».
+	Close the feeder cover and check the paper, then choose Try again.	Закройте крышку устройства подачи и проверьте бумагу, затем нажмите «Повторить».
 	Close Window	Закрыть окно
 	Close window	Закрыть окно
 	Closed arrow	Закрытая стрелка
@@ -504,6 +522,7 @@
 	Collate	Собирать в тетради
 	Color contrast	Цветовой контраст
 	Color Document	Цветной документ
+	Color document	Цветной документ
 	Color Images	Цветные изображения
 	Color Photo	Цветная фотография
 	Color Spaces	Цветовые пространства
@@ -551,11 +570,16 @@
 	Configure New Digital ID	Настроить новый цифровой идентификатор
 	Confirm Password	Подтвердите пароль
 	Conformance level:	Уровень соответствия:
+	Connected by USB.	Подключено по USB.
 	Connected lines	Соединённые линии
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	Подключено по сети (веб-службы). Параметры берутся у этого драйвера, не у USB.
 	Console	Консоль
 	Content copying	Копирование содержимого
 	Content copying for accessibility	Копирование содержимого для доступности
 	Content Streams	Потоки содержимого
+	Continue scanning	Продолжить сканирование
+	Continue scanning fronts	Продолжить сканирование лицевых сторон
+	Continue scanning reverse sides	Продолжить сканирование оборотов
 	Continuous scrolling	Непрерывная прокрутка
 	Control point	Контрольная точка
 	Control points	Контрольные точки
@@ -653,7 +677,9 @@
 	Created a PDF from the first {n} files	PDF создан из первых файлов: {n}
 	Created a PDF from {n} files	PDF создан из файлов: {n}
 	Created a PDF from {n} files; left out: {names}	PDF создан из файлов: {n}; пропущены: {names}
+	Created Scan.pdf	Создан Scan.pdf
 	Created {n} links	Создано {n} ссылок
+	Created {n} scanned files	Создано {n} отсканированных файлов
 	Creates 1 file from {n} pages.	Создаёт 1 файл из {n} страниц.
 	Creates {f} files from {n} pages.	Создаёт {f} файлов из {n} страниц.
 	Credit Cards	Кредитные карты
@@ -825,6 +851,7 @@ key	Delete	Delete
 	Drag a rectangle around the area to copy	Перетащите прямоугольник вокруг области для копирования
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Перетащите прямоугольник на странице, чтобы обрезать её; двойной щелчок по странице — для «Задать поля страницы»
 	Drag a rectangle to create a link; double-click a link to edit it	Перетащите прямоугольник, чтобы создать ссылку; двойной щелчок по ссылке — для редактирования
+	Drag on the preview to choose a region. An empty selection scans the whole area.	Перетащите на предпросмотре, чтобы выбрать область. Пустой выбор сканирует всё.
 	Drag the corners onto the document's edges, then choose Enhance page.	Перетащите углы к краям документа, затем выберите «Улучшить страницу».
 	Drag the selection to move it. Esc clears the selection.	Перетащите выделение, чтобы переместить его. Esc снимает выделение.
 	Drag to draw the area where the signature should appear.	Перетащите, чтобы нарисовать область, где должна появиться подпись.
@@ -846,9 +873,12 @@ key	Delete	Delete
 	Drawing	Рисование
 	Drawing scale	Масштаб чертежа
 	Drawing scale changes. Use Actual size for full-scale plans.	Масштаб чертежа изменяется. Для печати в исходном масштабе выберите Фактический размер.
+	Driver default	По умолчанию драйвера
 	Drop PDFs, images, text files or folders here, or choose them.	Перетащите PDF, изображения, текстовые файлы или папки сюда или выберите их.
 	Drop-down list	Раскрывающийся список
 	Dropdown Properties	Свойства раскрывающегося списка
+	Duplex	Двусторонний
+	Duplex is not offered.	Двусторонняя печать не предлагается.
 	Duplicate "{name}" onto:	Дублировать «{name}» на:
 	Duplicate Field	Дублировать поле
 	Duplicate field	Дублировать поле
@@ -999,6 +1029,7 @@ key	Esc	Esc
 	Failed	Не пройдено
 scroll speed	Fast	Высокая
 	February	Февраль
+	Feeder	Податчик
 	Feet and inches uses ft as the scale unit.	Формат футов и дюймов использует ft как единицу масштаба.
 	Field descriptions	Описания полей
 	Field is used for file selection	Поле используется для выбора файла
@@ -1065,6 +1096,7 @@ scroll speed	Fast	Высокая
 	Find untagged content	Найти нетегированный контент
 	Finding document fonts…	Поиск шрифтов для документа…
 	Finding fields… page {d} of {t}	Поиск полей… страница {d} из {t}
+	Finish	Готово
 	Finish measurement	Завершить измерение
 	Finish or discard the text being edited before selecting several objects.	Завершите или отмените редактирование текста, прежде чем выбирать несколько объектов.
 	Finished measurements appear here and are saved in the PDF.	Завершённые измерения появляются здесь и сохраняются в PDF.
@@ -1134,10 +1166,15 @@ scroll speed	Fast	Высокая
 	Found {n} untagged content problems.	Найдено проблем с нетегированным контентом: {n}.
 	From a PDF page or an image	Из страницы PDF или изображения
 	From colour	Из цвета
+	From scanner…	Со сканера…
 	From template	Из шаблона
 	From {file}	Из {file}
 	From:	От:
 	Front side only	Только лицевая сторона
+	front(s)	лиц.
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	Лицевых сторон отсканировано: {n}. Переверните лист на стекле, затем нажмите «Сканировать обороты».
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	Лицевых сторон отсканировано: {n}. Переверните стопку так, чтобы последний лист оказался сверху, загрузите её снова, затем нажмите «Сканировать обороты».
+	Full area	Вся область
 	Full Screen	Полный экран
 	Full screen mode	Полноэкранный режим
 	Full screen mode ({key}); Esc leaves it	Полноэкранный режим ({key}); Esc
@@ -1238,8 +1275,10 @@ key	Home	Home
 	Insert pages from {name}	Вставить страницы из {name}
 	Insert pages from {name} — 1 field renamed	Вставить страницы из {name} — 1 поле переименовано
 	Insert pages from {name} — fields renamed	Вставить страницы из {name} — поля переименованы
+	Insert scanned pages	Вставить отсканированные страницы
 	Insert text	Вставить текст
 	Inserted	Вставлено
+	Inserted scanned pages	Отсканированные страницы вставлены
 	Inserting, deleting, and rotating pages	Вставка, удаление и поворот страниц
 	Inset	Внутри
 	Inspector	Инспектор
@@ -1250,6 +1289,7 @@ key	Home	Home
 	Installed version: {v}	Установленная версия: {v}
 	Integrity	Целостность
 	Intended usage	Назначение
+	Intent	Назначение
 	Interface and appearance	Интерфейс и оформление
 	Interface font	Шрифт интерфейса
 	Interface size	Размер интерфейса
@@ -1257,6 +1297,7 @@ key	Home	Home
 	Invalid page range	Недопустимый диапазон страниц
 	Invert colors	Инвертировать цвета
 	Invert everything	Инвертировать всё
+	Invert tones	Инвертировать тона
 	Inverted page background	Фон инвертированной страницы
 	Inverted text	Инвертированный текст
 	Invisible Rectangle	Невидимый прямоугольник
@@ -1295,10 +1336,13 @@ key	Home	Home
 	Keychain  ·  	Keychain  ·
 	Labels	Метки
 	Labels: {preview}. Later pages keep their labels.	Метки: {preview}. Последующие страницы сохраняют свои метки.
+	Lamp	Лампа
+	Lamp on	Лампа включена
 	Landscape and Portrait Pages	Альбомные и книжные страницы
 	Landscape Pages	Альбомные страницы
 	Landscape pages	Альбомные страницы
 	Language and spelling	Язык и правописание
+	Large scan	Крупное сканирование
 	Larger pages	Крупнее страницы
 	Larger text	Больший текст
 	Larger thumbnails	Увеличить миниатюры
@@ -1346,9 +1390,12 @@ key	Home	Home
 	List items belong in a list. Fix the list's tags.	Элементы списка принадлежат списку. Исправьте теги списка.
 	List labels and bodies belong in a list item. Fix the list's tags.	Метки и тела списков принадлежат элементу списка. Исправьте теги списка.
 	List PKCS #11 token (smart card, HSM) signing identities	Список удостоверений подписи с токенов PKCS #11 (смарт-карты, HSM)
+	Listing scanners…	Список сканеров…
 	Lists	Списки
 	Load document font	Загрузить шрифт документа
 	Load font…	Загрузить шрифт…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	Загрузите ещё листы и нажмите «Продолжить сканирование» или нажмите «Готово», чтобы сохранить отсканированное.
+	Load sheets in the feeder, then choose Try again.	Загрузите листы в устройство подачи, затем нажмите «Повторить».
 	Local and private	Локально и приватно
 	Local cross-PDF links require the desktop app	Локальные ссылки между PDF работают только в настольном приложении
 	Location	Местоположение
@@ -1359,6 +1406,8 @@ key	Home	Home
 	Logo	Логотип
 	Logo and name	Логотип и название
 	Longitude	Долгота
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	Посмотрите, нет ли на сканере сообщения или открытой дверцы или крышки, и устраните причину, затем нажмите «Продолжить сканирование».
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	Посмотрите, нет ли на сканере сообщения или открытой дверцы или крышки, и устраните причину, затем нажмите «Повторить».
 	Looking for a local model runtime…	Идёт поиск локальной среды запуска моделей…
 	Looking for certificates…	Поиск сертификатов…
 	Looking for PDFs…	Поиск PDF…
@@ -1377,6 +1426,7 @@ key	Home	Home
 	Make searchable (recognize text)	Сделать доступным для поиска (распознать текст)
 	Manage embedded index	Управлять встроенным индексом
 	Manage plugins…	Управление плагинами…
+	Manual duplex needs one reverse side for each front.	Ручной дуплекс требует оборот для каждой лицевой стороны.
 	Map accuracy	Точность карты
 	Map boundary	Граница карты
 	Map coordinate system	Система координат карты
@@ -1429,6 +1479,7 @@ key	Home	Home
 	Midpoints	Середины отрезков
 	Minimum	Минимальное
 	minimum	минимум
+	Mirror the page	Отразить страницу
 	Missing field	Нет поля
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Отсутствует в порядке вычислений, сохранённом в PDF: другие программы просмотра PDF могут его не вычислять.
 	Mixed	Разные значения
@@ -1549,6 +1600,7 @@ key	Home	Home
 	no output folder was chosen	не выбрана папка для вывода
 	No pages match those choices	Страницы не соответствуют этим выбору
 	No pages selected	Страницы не выбраны
+	No pages were scanned.	Ни одной страницы не отсканировано.
 	No PDFs in this folder yet	В этой папке пока нет PDF
 	No PDFs, images or text files found in {folder}	В {folder} не найдено PDF, изображений или текстовых файлов
 	No photo chosen	Фото не выбрано
@@ -1564,6 +1616,7 @@ key	Home	Home
 	No release notes were provided.	Примечания к выпуску не предоставлены.
 	No saved measurements in this view.	В этом виде нет сохранённых измерений.
 	No scanner found	Сканер не найден
+	No scanner is connected.	Сканер не подключён.
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Сканеры не найдены. Проверьте, включён и подключён ли сканер, или введите его сетевой адрес.
 	No security	Без безопасности
 	No sheets	Нет листов
@@ -1661,6 +1714,8 @@ animation effects	On	Вкл
 	Open OFD (early alpha)…	Открыть OFD (ранняя альфа)…
 	Open previous PDF in folder	Открыть предыдущий PDF в папке
 	Open tabs and edits update the search automatically.	Открытые вкладки и правки автоматически обновляют поиск.
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	Откройте крышку, устраните возможное замятие или одновременно поданные листы и ровно загрузите оставшиеся листы, затем нажмите «Продолжить сканирование».
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	Откройте крышку, устраните возможное замятие или одновременно поданные листы и ровно загрузите листы, затем нажмите «Повторить».
 	Open the file as it was saved then	Открыть файл, как он был сохранён тогда
 	Open the older version first	Сначала откройте более старую версию
 	Open this local PDF?	Открыть этот локальный PDF?
@@ -1675,6 +1730,7 @@ animation effects	On	Вкл
 	Opening the browser's print dialog…	Открывается диалог печати браузера…
 	Opening {name}…	Открывается {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Открывает настройки драйвера принтера. Они сохраняются для всей печати с этого компьютера; выбранные здесь копии, двусторонняя печать, оттенки серого и бумага по-прежнему применяются.
+	Optical resolution {x} × {y} dpi.	Оптическое разрешение {x} × {y} dpi.
 	Optimize	Оптимизировать
 	Optimize PDF…	Оптимизировать PDF…
 	Optimize Scanned Documents	Оптимизировать отсканированные документы
@@ -1805,6 +1861,7 @@ animation effects	On	Вкл
 	Perpendicular	Перпендикуляр
 	Phone Number	Номер телефона
 	Phone Numbers	Номера телефонов
+	Photometric	Фотометрия
 	Pick a tool in the quick bar, or type above.	Выберите инструмент на быстрой панели или введите выше.
 	Pick page position	Выбрать позицию на странице
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Страницы, закрытые изображениями (сканы?): {pages}; фон там не будет виден.
@@ -1857,7 +1914,9 @@ animation effects	On	Вкл
 	Presentation (.pptx)	Презентация (.pptx)
 	Preset	Предустановка
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	Предотвращать мерцание G-SYNC/FreeSync (после перезапуска)
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	Предпросмотр для стекла. Задайте область в дюймах ниже или оставьте пустой для всего листа.
 	Preview unavailable: {e}	Предпросмотр недоступен: {e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	Предпросмотр использует стекло. Выберите источник «Стекло» или сканируйте без предпросмотра.
 	Preview: page {p} of {n}	Предпросмотр: стр. {p} из {n}
 	Previous ({key})	Предыдущее ({key})
 	Previous / next page	Предыдущая / следующая страница
@@ -1976,7 +2035,9 @@ animation effects	On	Вкл
 	Reference length must be positive.	Длина эталона должна быть положительной.
 	Reference preview	Предпросмотр эталона
 	Reference:	Образец :
+	Refresh lists scanners. It does not feed paper.	Обновить заново перечисляет сканеры. Бумагу не подаёт.
 	Refresh plugins	Обновить плагины
+	Region in inches. Leave the width or the height at zero to scan the whole area.	Область в дюймах. Оставьте ширину или высоту нулём, чтобы сканировать всё.
 	Registration residual	Остаточная ошибка привязки
 	Regularity	Регулярность
 	Rejected	Отклонено
@@ -2091,6 +2152,9 @@ animation effects	On	Вкл
 	Reverse closed arrow	Обратная закрытая стрелка
 	Reverse open arrow	Обратная открытая стрелка
 	Reverse pages	Страницы в обратном порядке
+	reverse side(s)	оборот(ы)
+	Reverse sides	Оборотные стороны
+	Reverse sides interleaved.	Обороты вставлены поочерёдно.
 	Revert changes	Отменить изменения
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	Вернуть к ранее сохранённой версии «{name}»? Изменения с тех пор нельзя будет отменить.
 	Reverted to the last saved version	Восстановлено к последней сохранённой версии
@@ -2190,13 +2254,29 @@ animation effects	On	Вкл
 	Scan & OCR	Сканирование и OCR
 	Scan and text recognition	Сканирование и распознавание текста
 	Scan correction	Исправление скана
+	Scan interrupted	Сканирование прервано
 	Scan next page	Сканировать следующую страницу
 	Scan processing cancelled	Обработка сканов отменена
+	Scan reverse side now (1 front)	Сканировать оборот сейчас (1 лицевая)
+	Scan reverse sides	Сканировать обороты
+	Scan reverse sides now ({n} fronts)	Сканировать обороты сейчас (лицевых: {n})
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	Отсканируйте лицевую сторону, переверните лист на стекле и отсканируйте оборот.
+	Scan the fronts before the reverse sides.	Сначала отсканируйте лицевые стороны, потом обороты.
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Отсканируйте лицевые стороны, переверните стопку (последний лист сверху), затем обороты. Страницы чередуются: лицо, оборот, …
+	Scan the missing reverse sides, then choose Finish.	Отсканируйте недостающие обороты, затем нажмите «Готово».
 	Scanned pages need OCR. Reading order follows extracted page text.	Для сканированных страниц нужен OCR. Порядок чтения соответствует извлечённому тексту страницы.
 	Scanned text detected	Обнаружен отсканированный текст
 	Scanner	Сканер
+	Scanner settings	Параметры сканера
 	Scanner's full area	Вся область сканера
+	Scanning front {n} of {t}…	Лицевая {n} из {t}…
+	Scanning front {n}…	Лицевая {n}…
 	Scanning isn't available in the web version	Сканирование недоступно в веб-версии
+	Scanning needs Windows (WIA) in this version.	Для сканирования в этой версии нужен Windows (WIA).
+	Scanning page {n} of {t}…	Сканирование страницы {n} из {t}…
+	Scanning page {n}…	Сканирование страницы {n}…
+	Scanning reverse side {n} of {t}…	Оборот {n} из {t}…
+	Scanning reverse side {n}…	Оборот {n}…
 	Scanning was stopped	Сканирование остановлено
 	Scanning…	Сканирование…
 	Screen / email	Экран / почта
@@ -2274,6 +2354,8 @@ animation effects	On	Вкл
 	Sent to {printer}: {msg}	Отправлено на {printer}: {msg}
 	Separate display coordinate system	Отдельная система координат отображения
 	Separate PDFs	Отдельные PDF
+	Separate the sheets and load the remaining ones, then choose Continue.	Разделите листы и загрузите оставшиеся, затем нажмите «Продолжить сканирование».
+	Separate the sheets and load them again, then choose Try again.	Разделите листы и загрузите их снова, затем нажмите «Повторить».
 	Separate vertical units	Отдельные вертикальные единицы
 	Separator style:	Стиль разделителя:
 	Sepia	Сепия
@@ -2307,6 +2389,7 @@ animation effects	On	Вкл
 	Set the image of {name}	Задать изображение: {name}
 	Set to current page ({n})	Установить текущей страницей ({n})
 	Set to zero	Установить в ноль
+	Settings this source offers. Leave a control alone to keep the driver’s value.	Параметры этого источника. Не трогайте элемент, чтобы оставить значение драйвера.
 	Shadings	Теневые
 	Shared Field Properties	Общие свойства полей
 	Sheet {s} of {n}	Лист {s} из {n}
@@ -2452,10 +2535,10 @@ document scrollbar width	Standard	Стандартная
 	Status	Статус
 	Steps	Шаги
 	Sticky note	Стикер
-	Stop	Остановить
 	Stop reading	Остановить чтение
 	Straighten scanned page	Выровнять отсканированную страницу
 	Straighten skewed scans	Выравнивать наклонённые сканы
+	Straighten the page	Выпрямить страницу
 	Strength: {s}	Надёжность: {s}
 	Strikethrough	Зачеркивание
 	Strikethrough text	Зачеркнуть текст
@@ -2478,6 +2561,8 @@ document scrollbar width	Standard	Стандартная
 	Swap width and height	Поменять ширину и высоту
 	Switch light / dark theme	Переключить светлую / тёмную тему
 	Switch page theme	Сменить тему страницы
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	Выключите и снова включите сканер и дождитесь его готовности, затем нажмите «Продолжить сканирование».
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	Выключите и снова включите сканер и дождитесь его готовности, затем нажмите «Повторить».
 	Switch to List view to change the pages it takes.	Переключитесь на вид списком, чтобы изменить, какие страницы взять.
 	Switch to two-page view first to show the cover page	Сначала переключитесь в двухстраничный вид, чтобы показать титульную страницу
 	System default	Системный по умолчанию
@@ -2540,6 +2625,7 @@ document scrollbar width	Standard	Стандартная
 	The answer proposes formatting changes.	Ответ содержит предложения по форматированию.
 	The answer stopped unexpectedly.	Ответ неожиданно прервался.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Ключ API будет отправлен на этот адрес без шифрования. Используйте https://, если сервер не находится в доверенной сети.
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Стекло сканирует по одной странице. Отсканируйте лицевую, переверните и оборот.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	В порядке вычислений {n} запись, которая ничего не вычисляет. «Исправить порядок» удалит её.|В порядке вычислений {n} записи, которые ничего не вычисляют. «Исправить порядок» удалит их.|В порядке вычислений {n} записей, которые ничего не вычисляют. «Исправить порядок» удалит их.
 	the certificate expired on {date}	срок действия сертификата истёк {date}
 	The checker found 1 problem which may prevent the document from being fully accessible.	Проверка нашла 1 проблему, которая может помешать полной доступности документа.
@@ -2571,7 +2657,12 @@ document scrollbar width	Standard	Стандартная
 	The document's security settings don't allow filling in form fields	Настройки безопасности документа не позволяют заполнять поля формы
 	The document's security settings don't allow printing	Настройки безопасности документа не разрешают печать
 	The document's security settings don't allow this change	Настройки безопасности документа не разрешают это изменение
+	The driver may accept a turn and leave the picture as it was.	Драйвер может принять поворот и всё же отдать изображение как было.
+	The driver reports a paper jam.	Драйвер сообщает о замятии бумаги.
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	Драйвер сообщает о листе в ожидании. Бит может остаться после пустого лотка.
 	The existing action will be preserved.	Существующее действие будет сохранено.
+	The feeder ran out of paper.	В устройстве подачи закончилась бумага.
+	The feeder took more than one sheet.	Устройство подачи захватило больше одного листа.
 	The field properties could not be changed.	Не удалось изменить свойства полей.
 	The field properties dialog is no longer open.	Окно свойств полей больше не открыто.
 	The field {name} no longer exists.	Поле {name} больше не существует.
@@ -2581,6 +2672,7 @@ document scrollbar width	Standard	Стандартная
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Форма просит отправить данные на {u}; PdfCraft не отправляет данные форм. Сохраните документ, чтобы сохранить введённые данные.
 	The form asks viewers to make appearances (NeedAppearances)	Форма просит зрителей создать внешний вид (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	Назначение формы и её поля (имена, типы, порядок табуляции)
+	The fronts already scanned are kept for the reverse-side pass.	Уже отсканированные лицевые стороны сохранены для прохода по оборотам.
 	The image couldn't be used as an icon: {e}	Не удалось использовать изображение как значок: {e}
 	The image has been copied ({w} × {h} pixels)	Изображение скопировано ({w} × {h} пикселей)
 	The image has been copied as a {ext} file	Изображение скопировано как файл {ext}
@@ -2605,12 +2697,14 @@ document scrollbar width	Standard	Стандартная
 	The order saved in the PDF needs tidying	Сохранённый в PDF порядок нуждается в исправлении
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Другие подписи ({names}) будут сообщать, что документ изменился после подписания. Проверьте их заново: ничто не гарантирует, что они останутся действительными.
 	The page has changed; select the image again	Страница изменилась; выберите изображение снова
+	The pages already scanned were kept in the document.	Уже отсканированные страницы сохранены в документе.
 	the password is incorrect	пароль неверен
 	The password is incorrect.	Неверный пароль.
 	The password is only used to read the file; it isn't saved.	Пароль используется только для чтения файла; он не сохраняется.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифты текста PDF не могут отобразить «{c}» ({code}). Выберите поддерживаемый текст.
 	The PIN is incorrect.	Неверный PIN-код.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Не удалось перечислить цифровые идентификаторы токенов PKCS #11: {e}
+	The preview could not be shown.	Не удалось показать предпросмотр.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Собственные параметры драйвера принтера для этой печати: лоток, тип бумаги, финишная обработка и другое.
 	The provider's page didn't come back in time. Try again.	Страница поставщика не вернулась вовремя. Попробуйте ещё раз.
 	The raw text was truncated to what fits.	Исходный текст был обрезан.
@@ -2620,8 +2714,23 @@ document scrollbar width	Standard	Стандартная
 	The release is not a published stable update. Try again later.	Выпуск не является опубликованным стабильным обновлением. Попробуйте позже.
 	The replacement file doesn't have that many pages.	В заменяющем файле нет столько страниц.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Ограничения действуют для получателей без «Все разрешения». Применяется при сохранении.
+	The reverse sides already scanned are kept.	Уже отсканированные обороты сохранены.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	строки слишком низкие: увеличьте высоту области, уменьшите число строк или интервал между ними
 	The same password is tried on each file.	Один и тот же пароль пробуется на каждом файле.
+	The same printer is also available over the network.	Тот же принтер доступен также по сети.
+	The same printer is also available over USB.	Тот же принтер доступен также по USB.
+	The scan could not be started.	Не удалось начать сканирование.
+	The scan produced no pages.	Сканирование не дало страниц.
+	The scan was cancelled at the scanner.	Сканирование было отменено на сканере.
+	The scan was interrupted.	Сканирование было прервано.
+	The scanner has a paper jam.	В сканере застряла бумага.
+	The scanner is busy, or the feeder has no paper.	Сканер занят, или в подающем устройстве нет бумаги.
+	The scanner is busy.	Сканер занят.
+	The scanner is offline or needs attention.	Сканер не в сети или требует внимания.
+	The scanner list could not be refreshed.	Не удалось обновить список сканеров.
+	The scanner needs attention.	Сканер требует внимания.
+	The scanner reported a lamp or device error.	Сканер сообщил об ошибке лампы или устройства.
+	The scanner reported a paper problem (a jam or several sheets fed together).	Сканер сообщил о проблеме с бумагой (замятие или одновременная подача нескольких листов).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Реальное число пикселей на дюйм экрана. Откалибруйте с помощью линейки, чтобы реальный размер (100%) показывал страницы в их настоящем размере.
 	The selected area has been copied ({w} × {h} pixels)	Выделенная область скопирована ({w} × {h} пикселей)
 	The selected fields could not be found. Select them again.	Выбранные поля не найдены. Выберите их снова.
@@ -2763,6 +2872,7 @@ document scrollbar width	Standard	Стандартная
 	Top-level bookmarks ({n})	Закладки верхнего уровня ({n})
 	Total	Итого
 	TR must be a child of Table, THead, TBody, or TFoot	TR должен быть потомком Table, THead, TBody или TFoot
+	Transfer format: {format}.	Формат передачи: {format}.
 	Transform image	Трансформировать изображение
 	Translate with AI	Перевести с помощью AI
 	Trim the picture with its handles; Enter or Done applies	Обрежьте изображение за маркеры; Enter или «Готово» применяет
@@ -2770,6 +2880,7 @@ document scrollbar width	Standard	Стандартная
 	Try again	Повторить
 	Try the form as people filling it in will see it	Попробовать форму, как её увидят заполняющие
 	Turn upside down (180°)	Перевернуть (180°)
+	Turned left	Повёрнуто влево
 	two cells would both be named {name}	две ячейки получили бы одно имя {name}
 	Two-page view	Двухстраничный вид
 	Two-sided:	Двусторонняя:
@@ -2817,8 +2928,10 @@ document scrollbar width	Standard	Стандартная
 	Update watermark	Обновить водяной знак
 	Update watermark…	Обновить водяной знак…
 	Updating 3D view…	Обновление 3D-вида…
+	Upside down	Вверх ногами
 	URL to submit to	URL для отправки
 	US Letter	Американский Letter
+	USB	USB
 	Use 72 DPI (one point per pixel)	Использовать 72 DPI (одна точка на пиксель)
 	Use a certificate	Использовать сертификат
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Использовать облачный сертификат (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
@@ -2867,6 +2980,7 @@ document scrollbar width	Standard	Стандартная
 	Version {v}	Версия {v}
 	Vertex snapping	Привязка к вершинам
 	Vertical	По вертикали
+	Vertical resolution	Вертикальное разрешение
 	Vertical reversed	По вертикали в обратном порядке
 	Vertical text cannot be moved with this selection.	Вертикальный текст нельзя переместить вместе с этим выделением.
 	Vertical to horizontal conversion	Пересчёт вертикальных единиц в горизонтальные
@@ -2889,6 +3003,8 @@ document scrollbar width	Standard	Стандартная
 	Voice and Speech	Голос и речь
 	Voice:	Голос:
 	Volume:	Громкость:
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Дождитесь, пока сканер закончит работу, или закройте другие программы, которые его используют, затем нажмите «Продолжить сканирование».
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Дождитесь, пока сканер закончит работу, или закройте другие программы, которые его используют, затем нажмите «Повторить».
 	Waiting for the system print dialog…	Ожидание системного диалога печати…
 	Waiting for your approval in the browser…	Ожидание вашего подтверждения в браузере…
 	Warning	Warning
@@ -2904,6 +3020,8 @@ document scrollbar width	Standard	Стандартная
 	White on black	Белый на чёрном
 	Whole words only	Только целые слова
 document scrollbar width	Wide	Широкая
+	Will use the bed.	Будет использовано стекло.
+	Will use the feeder.	Будет использован податчик.
 	Window Options	Параметры окна
 	Windows store  ·  	Хранилище Windows  ·
 	WKT definition	Определение WKT
@@ -3002,11 +3120,13 @@ document scrollbar width	Wide	Широкая
 @plural	{n} more field calculates too early.|{n} more fields calculate too early.	Ещё {n} поле вычисляется слишком рано.|Ещё {n} поля вычисляются слишком рано.|Ещё {n} полей вычисляются слишком рано.
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	Ещё {n} формула читает отсутствующее поле.|Ещё {n} формулы читают отсутствующие поля.|Ещё {n} формул читают отсутствующие поля.
 @plural	{n} object selected|{n} objects selected	Выделен {n} объект|Выделено {n} объекта|Выделено {n} объектов
+	{n} of {m} pages were scanned.	Отсканировано страниц: {n} из {m}.
 	{n} pages	{n} страниц
 	{n} pages could not be searched; results are incomplete.	Не удалось выполнить поиск на {n} страницах; результаты неполные.
 	{n} pages scanned	Отсканировано страниц: {n}
 	{n} pages selected	Выбрано {n} страницы
 	{n} pages selected.	Выбрано {n} страницы.
+	{n} pages were scanned.	Отсканировано страниц: {n}.
 @plural	{n} page|{n} pages	{n} страница|{n} страницы|{n} страниц
 @plural	{n} reply|{n} replies	{n} ответ|{n} ответа|{n} ответов
 	{n} selected	Выбрано: {n}
@@ -3024,6 +3144,7 @@ document scrollbar width	Wide	Широкая
 	{who} in this document wants to open this address in your browser:	{who} в этом документе хочет открыть этот адрес в вашем браузере:
 	{who} in this document wants to open your email app with this address:	{who} в этом документе хочет открыть ваше почтовое приложение с этим адресом:
 	{words} on {pages}	{words} на {pages}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} дюйм, {pxw} × {pxh} пикс., {size}
 	— (protection is applied when you save)	— (защита применяется при сохранении)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	«{name}» был изменён на диске после открытия или последнего сохранения. Сохранение сейчас заменит ту более новую версию этой.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	У «{name}» есть ограничения безопасности. Введите пароль разрешений, чтобы снять их.

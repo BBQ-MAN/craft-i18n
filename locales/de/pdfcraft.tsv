@@ -33,6 +33,7 @@
 	1 page scanned	1 Seite gescannt
 	1 page selected	1 Seite ausgewählt
 	1 page selected.	1 Seite ausgewählt.
+	1 page was scanned.	Es wurde 1 Seite gescannt.
 	180 degrees	180 Grad
 	4 x 6 in label (101.6 x 152.4 mm)	Etikett 4 × 6 Zoll (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 Ziffer, A Buchstabe, O Buchstabe oder Ziffer, X beliebiges Zeichen
@@ -49,6 +50,7 @@
 	A button	Eine Schaltfläche
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Eine in Clean-Room-Entwicklung entstandene Open-Source-PDF-Anwendung, geschrieben in Rust. MIT OR Apache-2.0.
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	eine Spalte ist zu schmal: Mach den Bereich breiter, gib der Spalte mehr Breite oder verwende weniger Spalten oder weniger Spaltenabstand
+	A cover on the scanner is open.	Eine Abdeckung am Scanner ist geöffnet.
 	A diagonal CONFIDENTIAL watermark on every page.	Ein diagonales Wasserzeichen „CONFIDENTIAL“ auf jeder Seite.
 	a document must keep at least one page	ein Dokument muss mindestens eine Seite behalten
 	A document needs at least one page: copy instead	Ein Dokument braucht mindestens eine Seite: Kopiere stattdessen
@@ -59,6 +61,7 @@
 	A link	Ein Link
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Ein lokales Modell ist kein Spitzengroßmodell aus der Cloud: Es kann sich irren, und lange Antworten brauchen auf der CPU ihre Zeit. Prüfen Sie alles Entscheidende und bedenken Sie die Modellgröße gegen diesen Rechner vor dem Download.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Ein Logo oder ein Name links neben den Tabs, wo eine Titelleiste ihn zeigen würde: das von PdfCraft oder das deiner Firma.
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Eine Seitenzahl stoppt den Einzug nach so vielen Blättern. Abbrechen beendet die Übertragung früher; bereits empfangene Seiten bleiben im Dokument.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Ein Bild bedeckt Seite {pages} (ein Scan?), daher ist der Hintergrund dort nicht zu sehen.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Eine PNG- oder SVG-Datei. Sie wird bei jedem Start von PdfCraft von diesem Ort gelesen.
 	A script	Ein Skript
@@ -195,6 +198,7 @@
 	Advanced options	Erweiterte Optionen
 	Advanced Options {chevron}	Erweiterte Optionen {chevron}
 	Advanced search…	Erweiterte Suche…
+	Advanced…	Erweitert…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Gib nach „Signieren“ den OTT-Code aus der mSzafir-App im Fenster von CloudSigner ein und bestätige die Signatur in der App. Mit dem dauerhaften OTT-Code in CloudSigner wird der Code nur alle paar Minuten abgefragt.
 	AI Assistant	KI-Assistent
 	AI assistant	KI-Assistent
@@ -216,6 +220,7 @@
 	All multimedia objects are tagged	Alle Multimedia-Objekte sind getaggt
 	All open documents	Alle geöffneten Dokumente
 	All page content is tagged	Gesamter Seiteninhalt ist getaggt
+	All pages asks the driver for the whole stack.	„Alle Seiten“ fordert den gesamten Stapel vom Treiber an.
 	All pages in document	Alle Seiten im Dokument
 	All pages in range	Alle Seiten im Bereich
 	All permissions	Alle Berechtigungen
@@ -305,6 +310,7 @@
 	Author title	Position des Verfassers
 	Auto follows the system's text size. Pages always render at the display's full resolution.	Automatisch folgt der Textgröße des Systems. Seiten werden immer in der vollen Auflösung des Bildschirms dargestellt.
 	Auto portrait/landscape	Hoch-/Querformat automatisch
+	Auto-deskew	Automatisch ausrichten
 	Auto-detect	Automatisch erkennen
 	Auto-rotate pages	Seiten automatisch drehen
 	Auto-size text to fit redaction region	Textgröße automatisch an Schwärzungsbereich anpassen
@@ -323,6 +329,7 @@
 	Balanced and Compact reduce image quality to make a smaller file. Text and forms stay editable.	Ausgewogen und Kompakt verringern die Bildqualität, um die Datei zu verkleinern. Text und Formulare bleiben bearbeitbar.
 	Basic constraints	Basiseinschränkungen
 	Bates numbering	Bates-Nummerierung
+	Bed	Vorlageglas
 	Before each selected page (select pages in Organize)	Vor jeder ausgewählten Seite (Seiten unter „Organisieren“ auswählen)
 	Before the number	Vor der Zahl
 	Behind text and images	Hinter Text und Bildern
@@ -371,6 +378,7 @@
 	Calibrate…	Kalibrieren…
 	Callout	Text mit Hinweislinie
 	Can't be read: {e}	Kann nicht gelesen werden: {e}
+	Cancel reverse sides	Rückseiten abbrechen
 	Cancelled	Abgebrochen
 	Cancelling…	Wird abgebrochen…
 	Case-sensitive	Groß-/Kleinschreibung beachten
@@ -434,9 +442,13 @@
 	Check for updates…	Nach Updates suchen…
 	Check spelling	Rechtschreibung prüfen
 	Check spelling while typing	Rechtschreibung während der Eingabe prüfen
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	Prüfen Sie, ob im Einzug Papier liegt, oder warten Sie, bis der Scanner fertig ist. Wählen Sie dann „Weiter scannen“.
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	Prüfen Sie, ob im Einzug Papier liegt, oder warten Sie, bis der Scanner fertig ist. Wählen Sie dann „Erneut versuchen“.
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Prüfe, ob die Tags in der Reihenfolge gelesen werden, in der eine sehende Person lesen würde. Korrigiere sie mit dem Werkzeug „Lesereihenfolge“ oder im Tags-Bereich.
 	Check the pages	Prüfe die Seiten
 	Check the pages of {name}: {why}	Prüfe die Seiten von {name}: {why}
+	Check the scanner is on and connected, then choose Continue.	Prüfen Sie, ob der Scanner eingeschaltet und verbunden ist. Wählen Sie dann „Weiter scannen“.
+	Check the scanner is on and connected, then choose Try again.	Prüfen Sie, ob der Scanner eingeschaltet und verbunden ist. Wählen Sie dann „Erneut versuchen“.
 	CheckBox	Kontrollkästchen
 	Checkbox	Kontrollkästchen
 	Checked	Abgehakt
@@ -444,6 +456,7 @@
 	Checking Hungarian OCR installation…	Installation der ungarischen OCR wird geprüft…
 	Checking Options ({on} of 32 in all categories)	Prüfoptionen ({on} von 32 in allen Kategorien)
 	Checking pages…	Seiten werden geprüft…
+	Checking the scanner…	Scanner wird geprüft…
 	Checkmark	Häkchen
 	Choose a digital ID file	Datei mit digitaler ID auswählen
 	Choose a digital ID.	Wähle eine digitale ID aus.
@@ -482,8 +495,11 @@
 	Clear personal dictionary	Persönliches Wörterbuch leeren
 	Clear Recent Files	Liste „Zuletzt geöffnet“ leeren
 	Clear redaction marks	Schwärzungsmarkierungen entfernen
+	Clear region	Bereich löschen
 	Clear search	Suche löschen
 	Clear selection / close find	Auswahl aufheben / Suche schließen
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	Beseitigen Sie den Papierstau und legen Sie die restlichen Blätter gerade ein. Wählen Sie dann „Weiter scannen“.
+	Clear the jam and load the sheets squarely, then choose Try again.	Beseitigen Sie den Papierstau und legen Sie die Blätter gerade ein. Wählen Sie dann „Erneut versuchen“.
 	Click on the page to add a {tool}, or drag to set its size	Klicke auf die Seite, um „{tool}“ hinzuzufügen, oder ziehe, um die Größe festzulegen
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Klicke auf die Seite, um Text hinzuzufügen; jeder Klick beginnt einen neuen Textblock, ✓ schließt ab. Ziehe Elemente, um sie zu verschieben, ziehe an einer Ecke, um die Größe zu ändern, und doppelklicke auf Text, um ihn zu bearbeiten.
 	Click text or an image to edit it	Klicke auf Text oder ein Bild, um es zu bearbeiten
@@ -499,6 +515,8 @@
 	Close Tab	Tab schließen
 	Close Tabs to the Right	Tabs rechts schließen
 	Close tabs to the right	Tabs rechts schließen
+	Close the feeder cover and check the paper, then choose Continue.	Schließen Sie die Abdeckung des Einzugs und prüfen Sie das Papier. Wählen Sie dann „Weiter scannen“.
+	Close the feeder cover and check the paper, then choose Try again.	Schließen Sie die Abdeckung des Einzugs und prüfen Sie das Papier. Wählen Sie dann „Erneut versuchen“.
 	Close Window	Fenster schließen
 	Close window	Fenster schließen
 	Closed arrow	Geschlossener Pfeil
@@ -512,6 +530,7 @@
 	Collapse tag	Tag einklappen
 	Color contrast	Farbkontrast
 	Color Document	Farbdokument
+	Color document	Farbdokument
 	Color Images	Farbbilder
 	Color Photo	Farbfoto
 	Color Spaces	Farbräume
@@ -560,11 +579,16 @@
 	Configure New Digital ID	Neue digitale ID einrichten
 	Confirm Password	Passwort bestätigen
 	Conformance level:	Konformitätsstufe:
+	Connected by USB.	Per USB verbunden.
 	Connected lines	Verbundene Linien
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	Über das Netzwerk (Web Services) verbunden. Optionen kommen von diesem Treiber, nicht vom USB-Treiber.
 	Console	Konsole
 	Content copying	Kopieren von Inhalten
 	Content copying for accessibility	Kopieren von Inhalten für Barrierefreiheit
 	Content Streams	Inhalts-Streams
+	Continue scanning	Weiter scannen
+	Continue scanning fronts	Vorderseiten weiter scannen
+	Continue scanning reverse sides	Rückseiten weiter scannen
 	Continuous scrolling	Fortlaufendes Scrollen
 	Convert colors	Farben konvertieren
 	Convert mode	Konvertierungsmodus
@@ -663,7 +687,9 @@
 	Created a PDF from the first {n} files	PDF aus den ersten {n} Dateien erstellt
 	Created a PDF from {n} files	PDF aus {n} Dateien erstellt
 	Created a PDF from {n} files; left out: {names}	PDF aus {n} Dateien erstellt; ausgelassen: {names}
+	Created Scan.pdf	Scan.pdf erstellt
 	Created {n} links	{n} Links erstellt
+	Created {n} scanned files	{n} gescannte Dateien erstellt
 	Creates 1 file from {n} pages.	Erstellt 1 Datei aus {n} Seiten.
 	Creates {f} files from {n} pages.	Erstellt {f} Dateien aus {n} Seiten.
 	Creator	Erstellende Anwendung
@@ -843,6 +869,7 @@ key	Delete	Entf
 	Drag a rectangle around the area to copy	Ziehe ein Rechteck um den zu kopierenden Bereich
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Ziehe ein Rechteck auf einer Seite auf, um sie zuzuschneiden; doppelklicke auf eine Seite für „Seitenrahmen festlegen“
 	Drag a rectangle to create a link; double-click a link to edit it	Ziehe ein Rechteck auf, um einen Link zu erstellen; doppelklicke auf einen Link, um ihn zu bearbeiten
+	Drag on the preview to choose a region. An empty selection scans the whole area.	Ziehen Sie in der Vorschau einen Bereich. Eine leere Auswahl scannt die ganze Fläche.
 	Drag the corners onto the document's edges, then choose Enhance page.	Ziehe die Ecken auf die Kanten des Dokuments und wähle dann „Seite verbessern“.
 	Drag the selection to move it. Esc clears the selection.	Ziehe die Auswahl, um sie zu verschieben. Esc hebt die Auswahl auf.
 	Drag to draw the area where the signature should appear.	Ziehe den Bereich auf, in dem die Signatur erscheinen soll.
@@ -861,10 +888,13 @@ key	Delete	Entf
 	Drawing	Zeichnen
 	Drawing scale	Zeichnungsmaßstab
 	Drawing scale changes. Use Actual size for full-scale plans.	Der Zeichnungsmaßstab ändert sich. Für maßstabsgetreue Pläne „Originalgröße“ verwenden.
+	Driver default	Treiberstandard
 	Drop PDFs or folders here, or choose them.	Lege PDFs oder Ordner hier ab oder wähle sie aus.
 	Drop PDFs, images, text files or folders here, or choose them.	Lege PDFs, Bilder, Textdateien oder Ordner hier ab oder wähle sie aus.
 	Drop-down list	Dropdown-Liste
 	Dropdown Properties	Dropdown-Listen-Eigenschaften
+	Duplex	Duplex
+	Duplex is not offered.	Duplex wird nicht angeboten.
 	Duplicate "{name}" onto:	„{name}“ duplizieren auf:
 	Duplicate Field	Feld duplizieren
 	Duplicate field	Feld duplizieren
@@ -1017,6 +1047,7 @@ key	Esc	Esc
 	Failed	Fehlgeschlagen
 scroll speed	Fast	Schnell
 	February	Februar
+	Feeder	Einzug
 	Field "{}" on page {p} has no description (tooltip)	Feld „{}“ auf Seite {p} hat keine Beschreibung (Tooltip)
 	Field descriptions	Feldbeschreibungen
 	Field is used for file selection	Feld dient zur Dateiauswahl
@@ -1085,6 +1116,7 @@ scroll speed	Fast	Schnell
 	Find untagged content	Ungetaggten Inhalt suchen
 	Finding document fonts…	Dokumentschriftarten werden gesucht…
 	Finding fields… page {d} of {t}	Felder werden gesucht… Seite {d} von {t}
+	Finish	Fertig
 	Finish or discard the text being edited before selecting several objects.	Schließe die Textbearbeitung ab oder verwirf sie, bevor du mehrere Objekte auswählst.
 	First / last page	Erste / letzte Seite
 	First page	Erste Seite
@@ -1153,10 +1185,15 @@ scroll speed	Fast	Schnell
 calendar weekday	Fr	Fr
 	From a PDF page or an image	Aus einer PDF-Seite oder einem Bild
 	From colour	Aus Farbe
+	From scanner…	Vom Scanner…
 	From template	Aus Vorlage
 	From {file}	Aus {file}
 	From:	Von:
 	Front side only	Nur Vorderseite
+	front(s)	Vorderseite(n)
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	Vorderseiten gescannt: {n}. Drehen Sie das Blatt auf dem Glas um. Wählen Sie dann „Rückseiten scannen“.
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	Vorderseiten gescannt: {n}. Drehen Sie den Stapel so um, dass das letzte Blatt oben liegt, und legen Sie ihn erneut ein. Wählen Sie dann „Rückseiten scannen“.
+	Full area	Gesamte Fläche
 	Full screen mode	Vollbildmodus
 	Full screen mode ({key}); Esc leaves it	Vollbildmodus ({key}); Esc
 	Generate styled PDF	Gestyltes PDF erzeugen
@@ -1256,8 +1293,10 @@ key	Home	Pos1
 	Insert pages from {name}	Seiten aus {name} einfügen
 	Insert pages from {name} — 1 field renamed	Seiten aus {name} einfügen — 1 Feld umbenannt
 	Insert pages from {name} — fields renamed	Seiten aus {name} einfügen — Felder umbenannt
+	Insert scanned pages	Gescannte Seiten einfügen
 	Insert text	Text einfügen
 	Inserted	Eingefügt
+	Inserted scanned pages	Gescannte Seiten eingefügt
 	Inserted text	Eingefügter Text
 	Inserting, deleting, and rotating pages	Seiten einfügen, löschen und drehen
 	Inset	Eingedrückt
@@ -1269,6 +1308,7 @@ key	Home	Pos1
 	Installed version: {v}	Installierte Version: {v}
 	Integrity	Integrität
 	Intended usage	Vorgesehene Verwendung
+	Intent	Absicht
 	Interface and appearance	Oberfläche und Darstellung
 	Interface font	Schrift der Benutzeroberfläche
 	Interface size	Größe der Oberfläche
@@ -1276,6 +1316,7 @@ key	Home	Pos1
 	Invalid page range	Ungültiger Seitenbereich
 	Invert colors	Farben umkehren
 	Invert everything	Alles umkehren
+	Invert tones	Töne umkehren
 	Inverted page background	Hintergrund der invertierten Seite
 	Inverted text	Invertierter Text
 	Invisible Rectangle	Unsichtbares Rechteck
@@ -1315,10 +1356,13 @@ key	Home	Pos1
 	Keyboard shortcuts	Tastenkürzel
 	Keychain  ·  	Schlüsselbund  ·  
 	Labels: {preview}. Later pages keep their labels.	Beschriftungen: {preview}. Spätere Seiten behalten ihre Beschriftungen.
+	Lamp	Lampe
+	Lamp on	Lampe ein
 	Landscape and Portrait Pages	Seiten im Quer- und Hochformat
 	Landscape Pages	Seiten im Querformat
 	Landscape pages	Seiten im Querformat
 	Language and spelling	Sprache und Rechtschreibung
+	Large scan	Großer Scan
 	Larger pages	Größere Seiten
 	Larger text	Größerer Text
 	Larger thumbnails	Größere Miniaturen
@@ -1365,9 +1409,12 @@ key	Home	Pos1
 	List items belong in a list. Fix the list's tags.	Listeneinträge gehören in eine Liste. Korrigiere die Tags der Liste.
 	List labels and bodies belong in a list item. Fix the list's tags.	Listenbeschriftungen und -inhalte gehören in einen Listeneintrag. Korrigiere die Tags der Liste.
 	List PKCS #11 token (smart card, HSM) signing identities	PKCS-#11-Token (Smartcards, HSMs) als Signaturidentitäten aufführen
+	Listing scanners…	Scanner werden aufgelistet…
 	Lists	Listen
 	Load document font	Dokumentschriftart laden
 	Load font…	Schriftart laden…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	Legen Sie weitere Blätter ein und wählen Sie „Weiter scannen“, oder wählen Sie „Fertig“, um das Gescannte zu behalten.
+	Load sheets in the feeder, then choose Try again.	Legen Sie Blätter in den Einzug ein. Wählen Sie dann „Erneut versuchen“.
 	Loading…	Wird geladen…
 	Local and private	Lokal und privat
 	Local cross-PDF links require the desktop app	Lokale Verknüpfungen zwischen PDFs erfordern die Desktop-App
@@ -1376,6 +1423,8 @@ key	Home	Pos1
 	Logical Reading Order	Logische Lesereihenfolge
 	Logo	Logo
 	Logo and name	Logo und Name
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	Prüfen Sie am Scanner, ob eine Meldung angezeigt wird oder eine Tür oder Abdeckung offen ist, und beheben Sie die Ursache. Wählen Sie dann „Weiter scannen“.
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	Prüfen Sie am Scanner, ob eine Meldung angezeigt wird oder eine Tür oder Abdeckung offen ist, und beheben Sie die Ursache. Wählen Sie dann „Erneut versuchen“.
 	Looking for a local model runtime…	Suche nach einer lokalen Modell-Laufzeit…
 	Looking for certificates…	Zertifikate werden gesucht…
 	Looking for PDFs…	PDFs werden gesucht…
@@ -1393,6 +1442,7 @@ key	Home	Pos1
 	Make searchable (recognize text)	Durchsuchbar machen (Text erkennen)
 	Manage embedded index	Eingebetteten Index verwalten
 	Manage plugins…	Plugins verwalten…
+	Manual duplex needs one reverse side for each front.	Manuelles Duplex braucht für jede Vorderseite eine Rückseite.
 	Maps to standard role	Ordnet einer Standardrolle zu
 	March	März
 	Margins (in)	Ränder (Zoll)
@@ -1440,6 +1490,7 @@ key	Home	Pos1
 	Midpoints	Mittelpunkte
 	Minimum	Minimal
 	minimum	Minimum
+	Mirror the page	Seite spiegeln
 	Missing field	Feld fehlt
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Fehlt in der im PDF gespeicherten Berechnungsreihenfolge: Andere PDF-Viewer berechnen es womöglich nicht.
 	Mixed	Gemischt
@@ -1564,6 +1615,7 @@ calendar weekday	Mo	Mo
 	No page has text: the document appears to be images of pages	Keine Seite enthält Text: Das Dokument scheint nur aus Seitenbildern zu bestehen
 	No pages match those choices	Keine Seiten entsprechen dieser Auswahl
 	No pages selected	Keine Seiten ausgewählt
+	No pages were scanned.	Es wurden keine Seiten gescannt.
 	No PDFs found in {folder}	Keine PDFs in {folder} gefunden
 	No PDFs in this folder yet	Noch keine PDFs in diesem Ordner
 	No PDFs, images or text files found in {folder}	Keine PDFs, Bilder oder Textdateien in {folder} gefunden
@@ -1579,6 +1631,7 @@ calendar weekday	Mo	Mo
 	No reference yet	Noch keine Referenz
 	No release notes were provided.	Es wurden keine Versionshinweise bereitgestellt.
 	No scanner found	Kein Scanner gefunden
+	No scanner is connected.	Kein Scanner ist verbunden.
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Es wurden keine Scanner gefunden. Prüfen Sie, ob der Scanner eingeschaltet und verbunden ist, oder geben Sie seine Netzwerkadresse ein.
 	No security	Keine Sicherheit
 	No sheets	Keine Blätter
@@ -1686,6 +1739,8 @@ animation effects	On	Ein
 	Open previous PDF in folder	Vorherige PDF im Ordner öffnen
 	Open Recent	Zuletzt geöffnet
 	Open tabs and edits update the search automatically.	Offene Tabs und Änderungen aktualisieren die Suche automatisch.
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	Öffnen Sie die Abdeckung, beseitigen Sie einen eventuellen Papierstau oder gemeinsam eingezogene Blätter und legen Sie die restlichen Blätter gerade ein. Wählen Sie dann „Weiter scannen“.
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	Öffnen Sie die Abdeckung, beseitigen Sie einen eventuellen Papierstau oder gemeinsam eingezogene Blätter und legen Sie die Blätter gerade ein. Wählen Sie dann „Erneut versuchen“.
 	Open the file as it was saved then	Die Datei so öffnen, wie sie damals gespeichert wurde
 	Open the older version first	Öffne zuerst die ältere Version
 	Open this local PDF?	Diese lokale PDF-Datei öffnen?
@@ -1700,6 +1755,7 @@ animation effects	On	Ein
 	Opening the browser's print dialog…	Der Druckdialog des Browsers wird geöffnet…
 	Opening {name}…	{name} wird geöffnet…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Öffnet die Einstellungen des Druckertreibers. Sie gelten für jeden Druck von diesem Computer; die hier gewählten Angaben zu Exemplaren, beidseitigem Druck, Graustufen und Papier gelten weiterhin.
+	Optical resolution {x} × {y} dpi.	Optische Auflösung {x} × {y} dpi.
 	Optimization cancelled	Optimierung abgebrochen
 	Optimization is already running	Die Optimierung läuft bereits
 	Optimize	Optimieren
@@ -1848,6 +1904,7 @@ animation effects	On	Ein
 	Permitted actions after certifying	Erlaubte Aktionen nach dem Zertifizieren
 	Phone Number	Telefonnummer
 	Phone Numbers	Telefonnummern
+	Photometric	Photometrisch
 	Pick a tool in the quick bar, or type above.	Wähle ein Werkzeug in der Schnellleiste oder tippe oben.
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Bilder bedecken die Seiten {pages} (Scans?), daher ist der Hintergrund dort nicht zu sehen.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Bilder brauchen einen beschreibenden Alternativtext oder müssen als dekorativ markiert sein. Füge jeder Abbildung Alternativtext hinzu.
@@ -1903,7 +1960,9 @@ animation effects	On	Ein
 	Preset	Voreinstellung
 	Preset Swatches	Farbfelder
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	G-SYNC/FreeSync-Flackern verhindern (ab dem nächsten Start)
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	Die Vorschau gilt für das Glas. Legen Sie unten einen Bereich in Zoll fest oder lassen Sie ihn leer für das ganze Blatt.
 	Preview unavailable: {e}	Keine Vorschau: {e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	Die Vorschau nutzt das Glas. Stellen Sie die Quelle auf Vorlageglas oder scannen Sie ohne Vorschau.
 	Preview: page {p} of {n}	Vorschau: Seite {p} von {n}
 	Previous	Vorheriger
 	Previous ({key})	Vorheriger ({key})
@@ -2016,7 +2075,9 @@ animation effects	On	Ein
 	Reduce file size	Dateigröße reduzieren
 	Reduce file size…	Dateigröße reduzieren…
 	Reference:	Referenz:
+	Refresh lists scanners. It does not feed paper.	Aktualisieren listet Scanner neu auf. Es zieht kein Papier ein.
 	Refresh plugins	Plugins aktualisieren
+	Region in inches. Leave the width or the height at zero to scan the whole area.	Bereich in Zoll. Breite oder Höhe auf null lassen, um die ganze Fläche zu scannen.
 	Regularity	Regelmäßigkeit
 	Rejected	Abgelehnt
 	Release notes	Versionshinweise
@@ -2134,6 +2195,9 @@ animation effects	On	Ein
 	Reverse closed arrow	Geschlossener Pfeil umgekehrt
 	Reverse open arrow	Offener Pfeil umgekehrt
 	Reverse pages	Seiten umkehren
+	reverse side(s)	Rückseite(n)
+	Reverse sides	Rückseiten
+	Reverse sides interleaved.	Rückseiten eingefügt.
 	Revert changes	Änderungen verwerfen
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	Zur zuletzt gespeicherten Version von „{name}“ zurückkehren? Seitdem vorgenommene Änderungen lassen sich danach nicht wiederherstellen.
 	Reverted to the last saved version	Auf die zuletzt gespeicherte Version zurückgesetzt
@@ -2238,14 +2302,30 @@ calendar weekday	Sa	Sa
 	Scan & OCR	Scan und OCR
 	Scan and text recognition	Scan und Texterkennung
 	Scan correction	Scan korrigieren
+	Scan interrupted	Scan unterbrochen
 	Scan next page	Nächste Seite scannen
 	Scan processing cancelled	Scan-Verarbeitung abgebrochen
+	Scan reverse side now (1 front)	Rückseite jetzt scannen (1 Vorderseite)
+	Scan reverse sides	Rückseiten scannen
+	Scan reverse sides now ({n} fronts)	Rückseiten jetzt scannen ({n} Vorderseiten)
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	Scannen Sie die Vorderseite, drehen Sie das Blatt auf dem Glas um und scannen Sie die Rückseite.
+	Scan the fronts before the reverse sides.	Scannen Sie die Vorderseiten vor den Rückseiten.
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Scannen Sie die Vorderseiten, drehen Sie den Stapel um (letztes Blatt oben) und scannen Sie die Rückseiten. Seiten werden Vorder-, Rückseite, … verschachtelt…
+	Scan the missing reverse sides, then choose Finish.	Scannen Sie die fehlenden Rückseiten. Wählen Sie dann „Fertig“.
 	Scanned pages need OCR. Reading order follows extracted page text.	Gescannte Seiten benötigen OCR. Die Lesereihenfolge folgt dem extrahierten Seitentext.
 	Scanned text detected	Gescannter Text erkannt
 	Scanner	Scanner
+	Scanner settings	Scannereinstellungen
 	Scanner's full area	Gesamte Scanfläche
+	Scanning front {n} of {t}…	Vorderseite {n} von {t} wird gescannt…
+	Scanning front {n}…	Vorderseite {n} wird gescannt…
+	Scanning needs Windows (WIA) in this version.	Das Scannen erfordert in dieser Version Windows (WIA).
+	Scanning page {n} of {t}…	Seite {n} von {t} wird gescannt…
+	Scanning page {n}…	Seite {n} wird gescannt…
+	Scanning reverse side {n} of {t}…	Rückseite {n} von {t} wird gescannt…
+	Scanning reverse side {n}…	Rückseite {n} wird gescannt…
 	Scanning was stopped	Das Scannen wurde angehalten
-	Scanning…	Wird gescannt…
+	Scanning…	Scannen…
 	Screen / email	Bildschirm / E-Mail
 	Screen flicker	Bildschirmflackern
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Screenreader wählen ihre Stimme anhand der Dokumentsprache. Lege sie unter Dokumenteigenschaften > Erweitert > Sprache fest.
@@ -2317,6 +2397,8 @@ calendar weekday	Sa	Sa
 	Sending…	Wird gesendet…
 	Sent to {printer}: {msg}	An {printer} gesendet: {msg}
 	Separate PDFs	Einzelne PDFs
+	Separate the sheets and load the remaining ones, then choose Continue.	Trennen Sie die Blätter und legen Sie die restlichen ein. Wählen Sie dann „Weiter scannen“.
+	Separate the sheets and load them again, then choose Try again.	Trennen Sie die Blätter und legen Sie sie erneut ein. Wählen Sie dann „Erneut versuchen“.
 	Separator style:	Trennzeichen:
 	Sepia	Sepia
 	Sepia night	Nacht-Sepia
@@ -2349,6 +2431,7 @@ calendar weekday	Sa	Sa
 	Set the image of {name}	Bild von {name} festlegen
 	Set to current page ({n})	Auf aktuelle Seite setzen ({n})
 	Set to zero	Auf null setzen
+	Settings this source offers. Leave a control alone to keep the driver’s value.	Einstellungen, die diese Quelle anbietet. Unberührt bleibt der Treiberwert.
 	SHA-1 digest	SHA-1-Fingerabdruck
 	SHA-256 digest	SHA-256-Fingerabdruck
 	Shadings	Verläufe
@@ -2502,6 +2585,7 @@ action wizard	Start	Starten
 	Stop reading	Vorlesen beenden
 	Straighten scanned page	Gescannte Seite geraderichten
 	Straighten skewed scans	Schief eingescannte Seiten geraderichten
+	Straighten the page	Seite begradigen
 	Strength: {s}	Stärke: {s}
 	Strikethrough text	Text durchstreichen
 	String length (0 turns it off)	Fadenlänge (0 schaltet ihn aus)
@@ -2526,6 +2610,8 @@ certificate	Subject	Zertifikatsinhaber
 	Swap width and height	Breite und Höhe tauschen
 	Switch light / dark theme	Helles / dunkles Design umschalten
 	Switch page theme	Seitendesign wechseln
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	Schalten Sie den Scanner aus und wieder ein und warten Sie, bis er bereit ist. Wählen Sie dann „Weiter scannen“.
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	Schalten Sie den Scanner aus und wieder ein und warten Sie, bis er bereit ist. Wählen Sie dann „Erneut versuchen“.
 	Switch to List view to change the pages it takes.	Wechsle zur Listenansicht, um die übernommenen Seiten zu ändern.
 	Switch to two-page view first to show the cover page	Wechsle zuerst zur Doppelseitenansicht, um das Deckblatt anzuzeigen
 	System default	Systemstandard
@@ -2592,6 +2678,7 @@ calendar weekday	Th	Do
 	The answer stopped unexpectedly.	Die Antwort ist unerwartet abgebrochen.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Der API-Schlüssel würde unverschlüsselt an diese Adresse gesendet. Verwende https://, außer der Server steht in einem Netzwerk, dem du vertraust.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	Bereich, Abstand und Spaltenbreiten müssen Zahlen sein, der Abstand 0 oder mehr und jede Breite größer als 0
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Das Glas scannt eine Seite nach der anderen. Scannen Sie eine Vorderseite, drehen Sie um und scannen Sie die Rückseite.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Die Berechnungsreihenfolge hat {n} Eintrag, der nichts berechnet. „Reihenfolge korrigieren“ entfernt ihn.|Die Berechnungsreihenfolge hat {n} Einträge, die nichts berechnen. „Reihenfolge korrigieren“ entfernt sie.
 	the certificate expired on {date}	das Zertifikat ist am {date} abgelaufen
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Das Zertifikat von {} erlaubt nicht so viele CA-Zertifikate unter sich (Pfadlänge) und wird daher nicht als Bürge für {} verwendet.
@@ -2640,11 +2727,16 @@ calendar weekday	Th	Do
 	The document's security settings don't allow filling in form fields	Die Sicherheitseinstellungen des Dokuments erlauben kein Ausfüllen von Formularfeldern
 	The document's security settings don't allow printing	Die Sicherheitseinstellungen des Dokuments erlauben kein Drucken
 	The document's security settings don't allow this change	Die Sicherheitseinstellungen des Dokuments erlauben diese Änderung nicht
+	The driver may accept a turn and leave the picture as it was.	Der Treiber kann eine Drehung annehmen und das Bild trotzdem unverändert liefern.
+	The driver reports a paper jam.	Der Treiber meldet einen Papierstau.
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	Der Treiber meldet ein wartendes Blatt. Das Bit kann nach leerem Fach gesetzt bleiben.
 	The ECDSA signature is not in canonical DER (trailing bytes, padding or a missing sign byte); it was read anyway.	Die ECDSA-Signatur liegt nicht in kanonischem DER vor (überzählige Bytes, Auffüllung oder fehlendes Vorzeichenbyte); sie wurde trotzdem gelesen.
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	Die ECDSA-Signatur besteht aus den rohen Werten r und s statt aus einer DER-Sequenz; sie wurde trotzdem gelesen.
 	The edited text is set in {font} instead of its own font.	Der bearbeitete Text ist in {font} statt in seiner eigenen Schrift gesetzt.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Der eingebettete Zeitstempel ist gültig und sein Zeitstempeldienst vertrauenswürdig; die vertrauenswürdige Zeit ist {}.
 	The existing action will be preserved.	Die vorhandene Aktion bleibt erhalten.
+	The feeder ran out of paper.	Dem Einzug ist das Papier ausgegangen.
+	The feeder took more than one sheet.	Der Einzug hat mehr als ein Blatt eingezogen.
 	The field properties could not be changed.	Die Feldeigenschaften konnten nicht geändert werden.
 	The field properties dialog is no longer open.	Der Dialog „Feldeigenschaften“ ist nicht mehr geöffnet.
 	The field {name} no longer exists.	Das Feld {name} existiert nicht mehr.
@@ -2657,6 +2749,7 @@ calendar weekday	Th	Do
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Das Formular soll an {u} gesendet werden; PdfCraft sendet keine Formulardaten. Speichere das Dokument, um deine Eingaben zu behalten.
 	The form asks viewers to make appearances (NeedAppearances)	Das Formular fordert Anzeigeprogramme auf, Darstellungen zu erzeugen (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	Zweck des Formulars und seine Felder (Namen, Typen, Tabulatorreihenfolge)
+	The fronts already scanned are kept for the reverse-side pass.	Die bereits gescannten Vorderseiten werden für den Rückseitendurchgang aufbewahrt.
 	The image couldn't be used as an icon: {e}	Das Bild kann nicht als Symbol verwendet werden: {e}
 	The image has been copied ({w} × {h} pixels)	Das Bild wurde kopiert ({w} × {h} Pixel)
 	The image has been copied as a {ext} file	Das Bild wurde als {ext}-Datei kopiert
@@ -2680,6 +2773,7 @@ calendar weekday	Th	Do
 	The order saved in the PDF needs tidying	Die im PDF gespeicherte Reihenfolge muss bereinigt werden
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Die anderen Signaturen ({names}) werden melden, dass das Dokument nach ihrer Signatur geändert wurde. Prüfen Sie sie erneut: Nichts garantiert, dass sie gültig bleiben.
 	The page has changed; select the image again	Die Seite hat sich geändert; wähle das Bild erneut aus
+	The pages already scanned were kept in the document.	Die bereits gescannten Seiten wurden im Dokument behalten.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Die Seiten wurden extrahiert, aber nicht gelöscht, weil sich das Dokument geändert hat, während du einen Ordner ausgewählt hast.
 	the password is incorrect	das Passwort ist falsch
 	The password is incorrect.	Das Passwort ist falsch.
@@ -2690,6 +2784,7 @@ calendar weekday	Th	Do
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Die PDF-Textschriften können „{c}“ ({code}) nicht darstellen. Wähle unterstützten Text.
 	The PIN is incorrect.	Die PIN ist falsch.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Die digitalen IDs auf den PKCS-#11-Token konnten nicht aufgelistet werden: {e}
+	The preview could not be shown.	Die Vorschau konnte nicht angezeigt werden.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Die eigenen Einstellungen des Druckertreibers für diesen Druck: Papierfach, Papiersorte, Endverarbeitung und mehr.
 	The provider's page didn't come back in time. Try again.	Die Seite des Anbieters kam nicht rechtzeitig zurück. Versuchen Sie es erneut.
 	The raw text was truncated to what fits.	Der Rohtext wurde auf die passende Länge gekürzt.
@@ -2699,10 +2794,25 @@ calendar weekday	Th	Do
 	The release is not a published stable update. Try again later.	Diese Veröffentlichung ist kein veröffentlichtes stabiles Update. Versuche es später erneut.
 	The replacement file doesn't have that many pages.	Die Ersatzdatei hat nicht so viele Seiten.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Die Einschränkungen gelten für Empfänger ohne „Alle Berechtigungen“. Wird beim Speichern angewendet.
+	The reverse sides already scanned are kept.	Die bereits gescannten Rückseiten werden aufbewahrt.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	die Zeilen sind zu niedrig: Mach den Bereich höher oder verwende weniger Zeilen oder weniger Zeilenabstand
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	Der RSA-Signaturwert hat nicht die Länge des Schlüsselmoduls (führende Nullbytes weggelassen oder hinzugefügt); er wurde trotzdem gelesen.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	Die DigestInfo der RSA-Signatur hat keinen NULL-Parameter (ältere Signaturprogramme schreiben sie so); sie wurde trotzdem gelesen.
 	The same password is tried on each file.	Dasselbe Passwort wird bei jeder Datei versucht.
+	The same printer is also available over the network.	Derselbe Drucker ist auch über das Netzwerk verfügbar.
+	The same printer is also available over USB.	Derselbe Drucker ist auch per USB verfügbar.
+	The scan could not be started.	Der Scan konnte nicht gestartet werden.
+	The scan produced no pages.	Der Scan ergab keine Seiten.
+	The scan was cancelled at the scanner.	Der Scanvorgang wurde am Scanner abgebrochen.
+	The scan was interrupted.	Der Scanvorgang wurde unterbrochen.
+	The scanner has a paper jam.	Im Scanner steckt Papier fest.
+	The scanner is busy, or the feeder has no paper.	Der Scanner ist beschäftigt, oder im Einzug liegt kein Papier.
+	The scanner is busy.	Der Scanner ist beschäftigt.
+	The scanner is offline or needs attention.	Der Scanner ist offline oder benötigt Aufmerksamkeit.
+	The scanner list could not be refreshed.	Die Scannerliste konnte nicht aktualisiert werden.
+	The scanner needs attention.	Der Scanner benötigt Aufmerksamkeit.
+	The scanner reported a lamp or device error.	Der Scanner meldet einen Lampen- oder Gerätefehler.
+	The scanner reported a paper problem (a jam or several sheets fed together).	Der Scanner meldet ein Papierproblem (Papierstau oder mehrere gemeinsam eingezogene Blätter).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Die tatsächlichen Pixel pro Zoll des Bildschirms. Mit einem Lineal kalibrieren, damit die tatsächliche Größe (100 %) Seiten in ihrer echten Größe zeigt.
 	The security settings don't allow screen readers to read the text	Die Sicherheitseinstellungen erlauben Screenreadern nicht, den Text zu lesen
 	The selected area has been copied ({w} × {h} pixels)	Der ausgewählte Bereich wurde kopiert ({w} × {h} Pixel)
@@ -2886,6 +2996,7 @@ calendar weekday	Th	Do
 	Tooltip:	Tooltip:
 	Top-level bookmarks ({n})	Lesezeichen der obersten Ebene ({n})
 	TR must be a child of Table, THead, TBody, or TFoot	TR muss ein untergeordnetes Element von Table, THead, TBody oder TFoot sein
+	Transfer format: {format}.	Übertragungsformat: {format}.
 	Transform image	Bild transformieren
 	Translate with AI	Mit KI übersetzen
 	Trim the picture with its handles; Enter or Done applies	Bild mit den Griffen zuschneiden; Eingabetaste oder „Fertig“ übernimmt
@@ -2894,6 +3005,7 @@ calendar weekday	Th	Do
 	Try the form as people filling it in will see it	Teste das Formular so, wie es Ausfüllende sehen
 calendar weekday	Tu	Di
 	Turn upside down (180°)	Auf den Kopf drehen (180°)
+	Turned left	Nach links gedreht
 	two cells would both be named {name}	zwei Zellen hätten beide den Namen {name}
 	Two-page view	Doppelseitenansicht
 	Two-sided:	Beidseitig:
@@ -2937,8 +3049,10 @@ signature pad	Type	Tippen
 	Update header & footer…	Kopf- und Fußzeile aktualisieren…
 	Update watermark	Wasserzeichen aktualisieren
 	Update watermark…	Wasserzeichen aktualisieren…
+	Upside down	Auf dem Kopf
 	URL to submit to	Ziel-URL zum Senden
 	US Letter	US-Letter
+	USB	USB
 	Use 72 DPI (one point per pixel)	72 DPI verwenden (ein Punkt pro Pixel)
 	Use a certificate	Zertifikat verwenden
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Cloud-Zertifikat verwenden (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID …)
@@ -2984,6 +3098,7 @@ signature pad	Type	Tippen
 	Verify	Prüfen
 	Verify to see what the document needs.	Führe eine Prüfung durch, um zu sehen, was das Dokument benötigt.
 	Version {v}	Version {v}
+	Vertical resolution	Vertikale Auflösung
 	Vertical reversed	Vertikal umgekehrt
 	Vertical text cannot be moved with this selection.	Vertikaler Text kann mit dieser Auswahl nicht verschoben werden.
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	Video, Ton und Rich Media müssen getaggt sein, damit sie vorgelesen werden. Tagge die Multimedia-Anmerkungen.
@@ -3002,6 +3117,8 @@ signature pad	Type	Tippen
 	Voice and Speech	Stimme und Sprache
 	Voice:	Stimme:
 	Volume:	Lautstärke:
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Warten Sie, bis der Scanner fertig ist, oder schließen Sie andere Programme, die ihn verwenden. Wählen Sie dann „Weiter scannen“.
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Warten Sie, bis der Scanner fertig ist, oder schließen Sie andere Programme, die ihn verwenden. Wählen Sie dann „Erneut versuchen“.
 	Waiting for the system print dialog…	Warten auf den Systemdruckdialog…
 	Waiting for your approval in the browser…	Warten auf Ihre Bestätigung im Browser …
 	Warm Sepia	Warmes Sepia
@@ -3018,6 +3135,8 @@ calendar weekday	We	Mi
 	White on black	Weiß auf Schwarz
 	Whole words only	Nur ganze Wörter
 document scrollbar width	Wide	Breit
+	Will use the bed.	Es wird das Glas verwendet.
+	Will use the feeder.	Es wird der Einzug verwendet.
 	Window Options	Fensteroptionen
 	Windows store  ·  	Windows-Zertifikatspeicher  ·  
 	Word count	Wörter zählen
@@ -3125,12 +3244,14 @@ document scrollbar width	Wide	Breit
 @plural	{n} more field calculates too early.|{n} more fields calculate too early.	{n} weiteres Feld wird zu früh berechnet.|{n} weitere Felder werden zu früh berechnet.
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	{n} weitere Formel liest ein fehlendes Feld.|{n} weitere Formeln lesen fehlende Felder.
 @plural	{n} object selected|{n} objects selected	{n} Objekt ausgewählt|{n} Objekte ausgewählt
+	{n} of {m} pages were scanned.	Es wurden {n} von {m} Seiten gescannt.
 	{n} pages	{n} Seiten
 	{n} pages and no bookmarks	{n} Seiten und keine Lesezeichen
 	{n} pages could not be searched; results are incomplete.	{n} Seiten konnten nicht durchsucht werden; die Ergebnisse sind unvollständig.
 	{n} pages scanned	{n} Seiten gescannt
 	{n} pages selected	{n} Seiten ausgewählt
 	{n} pages selected.	{n} Seiten ausgewählt.
+	{n} pages were scanned.	Es wurden {n} Seiten gescannt.
 @plural	{n} page|{n} pages	{n} Seite|{n} Seiten
 @plural	{n} pixel|{n} pixels	{n} Pixel|{n} Pixel
 @plural	{n} reply|{n} replies	{n} Antwort|{n} Antworten
@@ -3157,6 +3278,7 @@ document scrollbar width	Wide	Breit
 	{who}, certificate issued by an unknown issuer.	{who}, Zertifikat ausgestellt von einem unbekannten Aussteller.
 	{who}, certificate issued by {issuer}.	{who}, Zertifikat ausgestellt von {issuer}.
 	{words} on {pages}	{words} auf {pages}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} Zoll, {pxw} × {pxh} Pixel, {size}
 	{} annotation on page {p} isn't tagged	Anmerkung vom Typ {} auf Seite {p} ist nicht getaggt
 	{} annotations aren't allowed	Anmerkungen vom Typ {} sind nicht zulässig
 	ΔLOC	ΔLOC

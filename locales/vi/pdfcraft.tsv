@@ -32,6 +32,7 @@
 	1 page	1 trang
 	1 page selected	Đã chọn 1 trang
 	1 page selected.	Đã chọn 1 trang.
+	1 page was scanned.	Đã quét 1 trang.
 	180 degrees	180 độ
 	4 x 6 in label (101.6 x 152.4 mm)	Nhãn 4 × 6 in (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 chữ số, A chữ cái, O chữ cái hoặc chữ số, X ký tự bất kỳ
@@ -48,6 +49,7 @@
 	A button	Một nút
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Ứng dụng PDF mã nguồn mở, viết lại độc lập (clean-room) bằng Rust. MIT OR Apache-2.0.
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	một cột quá hẹp: hãy làm vùng rộng hơn, cho cột thêm độ rộng, hoặc dùng ít cột hơn hay khoảng cách cột nhỏ hơn
+	A cover on the scanner is open.	Một nắp của máy quét đang mở.
 	A diagonal CONFIDENTIAL watermark on every page.	Hình mờ CONFIDENTIAL nằm chéo trên mọi trang.
 	a document must keep at least one page	tài liệu phải giữ ít nhất một trang
 	A document needs at least one page: copy instead	Một tài liệu cần ít nhất một trang: hãy sao chép thay vào đó
@@ -57,6 +59,7 @@
 	A form field has additional actions	Một trường biểu mẫu có các hành động bổ sung
 	A link	Một liên kết
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Một logo hoặc tên ở bên trái các thẻ, nơi thanh tiêu đề thường hiển thị: của PdfCraft hoặc của công ty bạn.
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Số trang sẽ dừng khay nạp sau ngần ấy tờ. Hủy sẽ kết thúc quá trình truyền sớm; các trang đã nhận vẫn ở lại trong tài liệu.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Một hình ảnh phủ kín trang {pages} (bản quét?), nên nền sẽ không hiện ở đó.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Một tệp PNG hoặc SVG. Tệp được đọc từ vị trí này mỗi lần PdfCraft khởi động.
 	A script	Một script
@@ -192,6 +195,7 @@
 	Advanced options	Tùy chọn nâng cao
 	Advanced Options {chevron}	Tùy chọn nâng cao {chevron}
 	Advanced search…	Tìm nâng cao…
+	Advanced…	Nâng cao…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Sau khi bấm Ký, nhập mã OTT từ ứng dụng mSzafir vào cửa sổ CloudSigner và phê duyệt chữ ký trong ứng dụng. Khi bật mã OTT cố định của CloudSigner, mã chỉ được hỏi vài phút một lần.
 	AI Assistant	Trợ lý AI
 	AI assistant	Trợ lý AI
@@ -207,6 +211,7 @@
 	All multimedia objects are tagged	Tất cả đối tượng đa phương tiện đã được gắn thẻ
 	All open documents	Tất cả tài liệu đang mở
 	All page content is tagged	Tất cả nội dung trang đã được gắn thẻ
+	All pages asks the driver for the whole stack.	Tất cả các trang yêu cầu trình điều khiển quét toàn bộ xấp giấy.
 	All pages in document	Tất cả các trang trong tài liệu
 	All pages in range	Tất cả các trang trong phạm vi
 	All permissions	Mọi quyền
@@ -288,6 +293,7 @@ calendar date	August	tháng 8
 	Author title	Chức danh tác giả
 	Auto follows the system's text size. Pages always render at the display's full resolution.	Chế độ Tự động theo kích thước chữ của hệ thống. Các trang luôn được hiển thị ở độ phân giải đầy đủ của màn hình.
 	Auto portrait/landscape	Tự động dọc/ngang
+	Auto-deskew	Tự động chỉnh thẳng
 	Auto-detect	Tự động phát hiện
 	Auto-rotate pages	Tự động xoay trang
 	Auto-size text to fit redaction region	Tự động chỉnh cỡ chữ vừa vùng xóa
@@ -306,6 +312,7 @@ calendar date	August	tháng 8
 	Basic constraints	Ràng buộc cơ bản
 certificate	Basic constraints	Ràng buộc cơ bản
 	Bates numbering	Đánh số Bates
+	Bed	Mặt kính
 	Before each selected page (select pages in Organize)	Trước mỗi trang đã chọn (chọn trang trong Sắp xếp)
 	Before the number	Trước số
 	Behind text and images	Phía sau văn bản và hình ảnh
@@ -347,6 +354,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Calibrate…	Hiệu chỉnh…
 	Callout	Khung chú thích
 	Can't be read: {e}	Không thể đọc: {e}
+	Cancel reverse sides	Hủy quét mặt sau
 	Cancelled	Đã hủy
 	Cancelling…	Đang hủy…
 	Case-sensitive	Phân biệt chữ hoa/thường
@@ -408,9 +416,13 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Check for updates…	Kiểm tra bản cập nhật…
 	Check spelling	Kiểm tra chính tả
 	Check spelling while typing	Kiểm tra chính tả khi nhập
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	Kiểm tra khay nạp có giấy, hoặc chờ máy quét xong, rồi chọn Tiếp tục.
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	Kiểm tra khay nạp có giấy, hoặc chờ máy quét xong, rồi chọn Thử lại.
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Hãy kiểm tra rằng các thẻ được đọc theo thứ tự mà người đọc nhìn thấy được sẽ đọc. Dùng công cụ Thứ tự đọc hoặc bảng Thẻ để sửa.
 	Check the pages	Kiểm tra các trang
 	Check the pages of {name}: {why}	Kiểm tra các trang của {name}: {why}
+	Check the scanner is on and connected, then choose Continue.	Kiểm tra máy quét đã bật và được kết nối, rồi chọn Tiếp tục.
+	Check the scanner is on and connected, then choose Try again.	Kiểm tra máy quét đã bật và được kết nối, rồi chọn Thử lại.
 	CheckBox	CheckBox
 	Checkbox	Hộp kiểm
 	Checked	Đã đánh dấu chọn
@@ -418,6 +430,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Checking Hungarian OCR installation…	Đang kiểm tra cài đặt OCR tiếng Hungary…
 	Checking Options ({on} of 32 in all categories)	Tùy chọn kiểm tra ({on} trên 32 ở tất cả danh mục)
 	Checking pages…	Đang kiểm tra các trang…
+	Checking the scanner…	Đang kiểm tra máy quét…
 	Checkmark	Dấu kiểm
 	Choose a digital ID file	Chọn tệp Digital ID
 	Choose a digital ID.	Chọn một Digital ID.
@@ -450,8 +463,11 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Clear form	Xóa dữ liệu biểu mẫu
 	Clear personal dictionary	Xóa từ điển cá nhân
 	Clear redaction marks	Xóa các dấu đánh dấu
+	Clear region	Xóa vùng chọn
 	Clear search	Xóa tìm kiếm
 	Clear selection / close find	Bỏ chọn / đóng tìm
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	Gỡ giấy kẹt và nạp ngay ngắn các tờ còn lại, rồi chọn Tiếp tục.
+	Clear the jam and load the sheets squarely, then choose Try again.	Gỡ giấy kẹt và nạp ngay ngắn các tờ, rồi chọn Thử lại.
 	Click on the page to add a {tool}, or drag to set its size	Bấm vào trang để thêm {tool}, hoặc kéo để đặt kích thước
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Bấm vào trang để thêm văn bản; mỗi lần bấm sẽ tạo một khung mới, và ✓ để hoàn tất. Kéo các mục để di chuyển, kéo một góc để đổi kích thước, bấm đúp vào văn bản để chỉnh sửa.
 	Click text or an image to edit it	Bấm vào văn bản hoặc hình ảnh để chỉnh sửa
@@ -465,6 +481,8 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Close panel	Đóng bảng
 	Close Tab	Đóng thẻ
 	Close Tabs to the Right	Đóng các thẻ bên phải
+	Close the feeder cover and check the paper, then choose Continue.	Đóng nắp khay nạp và kiểm tra giấy, rồi chọn Tiếp tục.
+	Close the feeder cover and check the paper, then choose Try again.	Đóng nắp khay nạp và kiểm tra giấy, rồi chọn Thử lại.
 	Close Window	Đóng cửa sổ
 	Closed arrow	Mũi tên đóng
 	Cloud	Đám mây
@@ -477,6 +495,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Collapse tag	Thu gọn thẻ
 	Collate	Sắp theo bộ
 	Color contrast	Độ tương phản màu
+	Color document	Tài liệu màu
 	Color Images	Ảnh màu
 	Color Spaces	Không gian màu
 	Colours are remapped while rendering; the document itself never changes.	Màu được ánh xạ lại khi hiển thị; bản thân tài liệu không bao giờ thay đổi.
@@ -522,12 +541,18 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Configure New Digital ID	Cấu hình Digital ID mới
 	Confirm Password	Xác nhận mật khẩu
 	Conformance level:	Mức tuân thủ:
+	Connected by USB.	Kết nối qua USB.
 	Connected lines	Các đường nối liền
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	Kết nối qua mạng (Dịch vụ Web). Các tùy chọn lấy từ trình điều khiển đó, không phải trình điều khiển USB.
 	Console	Bảng điều khiển
 	Content copying	Sao chép nội dung
 	Content copying for accessibility	Sao chép nội dung cho trợ năng
 	Content Streams	Luồng nội dung
+	Continue scanning	Tiếp tục quét
+	Continue scanning fronts	Tiếp tục quét mặt trước
+	Continue scanning reverse sides	Tiếp tục quét mặt sau
 	Continuous scrolling	Cuộn liên tục
+	Contrast	Độ tương phản
 	Convert colors	Chuyển đổi màu
 	Convert mode	Chế độ chuyển đổi
 	Converting {name}…	Đang chuyển đổi {name}…
@@ -618,7 +643,9 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Created a PDF from the first {n} files	Đã tạo một PDF từ {n} tệp đầu tiên
 	Created a PDF from {n} files	Đã tạo một PDF từ {n} tệp
 	Created a PDF from {n} files; left out: {names}	Đã tạo một PDF từ {n} tệp; đã bỏ qua: {names}
+	Created Scan.pdf	Đã tạo Scan.pdf
 	Created {n} links	Đã tạo {n} liên kết
+	Created {n} scanned files	Đã tạo {n} tệp đã quét
 	Creates 1 file from {n} pages.	Tạo 1 tệp từ {n} trang.
 	Creates {f} files from {n} pages.	Tạo {f} tệp từ {n} trang.
 	Creator	Ứng dụng tạo
@@ -786,6 +813,7 @@ key	Delete	Delete
 	Drag a rectangle around the area to copy	Kéo một hình chữ nhật quanh vùng cần sao chép
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Kéo một hình chữ nhật trên trang để cắt xén; bấm đúp vào trang để mở Đặt các hộp trang
 	Drag a rectangle to create a link; double-click a link to edit it	Kéo một hình chữ nhật để tạo liên kết; bấm đúp vào liên kết để chỉnh sửa
+	Drag on the preview to choose a region. An empty selection scans the whole area.	Kéo trên bản xem trước để chọn một vùng. Không chọn gì thì quét toàn bộ vùng.
 	Drag the corners onto the document's edges, then choose Enhance page.	Kéo các góc vào cạnh của tài liệu, rồi chọn Nâng cao chất lượng trang.
 	Drag the selection to move it. Esc clears the selection.	Kéo vùng chọn để di chuyển. Esc để bỏ chọn.
 	Drag to draw the area where the signature should appear.	Kéo để vẽ vùng nơi chữ ký sẽ xuất hiện.
@@ -804,10 +832,13 @@ key	Delete	Delete
 	Drawing	Bản vẽ
 	Drawing scale	Tỷ lệ bản vẽ
 	Drawing scale changes. Use Actual size for full-scale plans.	Tỷ lệ bản vẽ thay đổi. Dùng Kích thước thực cho các bản vẽ tỷ lệ đầy đủ.
+	Driver default	Mặc định của trình điều khiển
 	Drop PDFs or folders here, or choose them.	Thả PDF hoặc thư mục vào đây, hoặc chọn chúng.
 	Drop PDFs, images, text files or folders here, or choose them.	Thả PDF, hình ảnh, tệp văn bản hoặc thư mục vào đây, hoặc chọn chúng.
 	Drop-down list	Danh sách thả xuống
 	Dropdown Properties	Thuộc tính danh sách thả xuống
+	Duplex	Hai mặt
+	Duplex is not offered.	Không hỗ trợ quét hai mặt.
 	Duplicate "{name}" onto:	Nhân bản "{name}" sang:
 	Duplicate Field	Nhân bản trường
 	Duplicate field	Nhân bản trường
@@ -956,6 +987,7 @@ key	Esc	Esc
 scroll speed	Fast	Nhanh
 	February	Tháng 2
 calendar date	February	tháng 2
+	Feeder	Khay nạp
 	Field "{}" on page {p} has no description (tooltip)	Trường "{}" trên trang {p} không có mô tả (chú giải công cụ)
 	Field descriptions	Mô tả trường
 	Field is used for file selection	Trường được dùng để chọn tệp
@@ -1084,10 +1116,15 @@ calendar date	February	tháng 2
 calendar weekday	Fr	T6
 	From a PDF page or an image	Từ một trang PDF hoặc một hình ảnh
 	From colour	Từ màu
+	From scanner…	Từ máy quét…
 	From template	Từ mẫu
 	From {file}	Từ {file}
 	From:	Từ:
 	Front side only	Chỉ mặt trước
+	front(s)	mặt trước
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	Đã quét mặt trước: {n}. Lật tờ giấy trên mặt kính, rồi chọn Quét mặt sau.
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	Đã quét mặt trước: {n}. Lật xấp giấy để tờ cuối nằm trên cùng, nạp lại, rồi chọn Quét mặt sau.
+	Full area	Toàn bộ vùng
 	Full screen mode	Chế độ toàn màn hình
 	Geospatial location	Vị trí địa lý
 	Get help, share feedback and follow development on Discord.	Nhận trợ giúp, chia sẻ phản hồi và theo dõi quá trình phát triển trên Discord.
@@ -1183,8 +1220,10 @@ key	Home	Home
 	Insert pages from {name}	Chèn trang từ {name}
 	Insert pages from {name} — 1 field renamed	Chèn trang từ {name} — 1 trường được đổi tên
 	Insert pages from {name} — fields renamed	Chèn trang từ {name} — các trường được đổi tên
+	Insert scanned pages	Chèn các trang đã quét
 	Insert text	Chèn văn bản
 	Inserted	Đã chèn
+	Inserted scanned pages	Đã chèn các trang đã quét
 	Inserted text	Văn bản được chèn
 	Inserting, deleting, and rotating pages	Chèn, xóa và xoay trang
 	Inset	Lõm
@@ -1197,12 +1236,14 @@ key	Home	Home
 	Integrity	Toàn vẹn
 	Intended usage	Mục đích sử dụng
 certificate	Intended usage	Mục đích sử dụng
+	Intent	Mục đích
 	Interface and appearance	Giao diện và hình thức
 	Interface size	Kích thước giao diện
 	Intersections	Giao điểm
 	Invalid page range	Phạm vi trang không hợp lệ
 	Invert colors	Đảo ngược màu
 	Invert everything	Đảo ngược tất cả
+	Invert tones	Đảo ngược tông màu
 	Inverted page background	Nền trang đã đảo màu
 	Inverted text	Văn bản đã đảo màu
 	Invisible Rectangle	Hình chữ nhật ẩn
@@ -1249,10 +1290,13 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Keyboard shortcuts	Phím tắt
 	Keychain  ·  	Keychain  ·  
 	Labels: {preview}. Later pages keep their labels.	Nhãn: {preview}. Các trang sau giữ nhãn của chúng.
+	Lamp	Đèn
+	Lamp on	Bật đèn
 	Landscape and Portrait Pages	Trang ngang và dọc
 	Landscape Pages	Trang ngang
 	Landscape pages	Các trang ngang
 	Language and spelling	Ngôn ngữ và chính tả
+	Large scan	Bản quét lớn
 	Larger pages	Trang lớn hơn
 	Larger text	Chữ lớn hơn
 	Larger thumbnails	Tăng kích thước hình thu nhỏ
@@ -1297,9 +1341,12 @@ certificate	Key usage	Mục đích sử dụng khóa
 	List items	Mục danh sách
 	List items belong in a list. Fix the list's tags.	Các mục danh sách phải nằm trong một danh sách. Hãy sửa thẻ của danh sách.
 	List labels and bodies belong in a list item. Fix the list's tags.	Nhãn và nội dung danh sách phải nằm trong một mục danh sách. Hãy sửa thẻ của danh sách.
+	Listing scanners…	Đang liệt kê máy quét…
 	Lists	Danh sách
 	Load document font	Tải phông chữ của tài liệu
 	Load font…	Tải phông chữ…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	Nạp thêm giấy rồi chọn Tiếp tục; hoặc chọn Hoàn tất để giữ những gì đã quét.
+	Load sheets in the feeder, then choose Try again.	Nạp giấy vào khay nạp, rồi chọn Thử lại.
 	Loading…	Đang tải…
 	Local cross-PDF links require the desktop app	Liên kết PDF cục bộ giữa các tệp yêu cầu ứng dụng máy tính
 	Location: 	Vị trí: 
@@ -1307,6 +1354,8 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Logical Reading Order	Thứ tự đọc hợp lý
 	Logo	Logo
 	Logo and name	Logo và tên
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	Xem máy quét có thông báo hoặc cửa hay nắp đang mở không, khắc phục, rồi chọn Tiếp tục.
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	Xem máy quét có thông báo hoặc cửa hay nắp đang mở không, khắc phục, rồi chọn Thử lại.
 	Looking for certificates…	Đang tìm chứng chỉ…
 	Looking for PDFs…	Đang tìm PDF…
 	Looking for printers…	Đang tìm máy in…
@@ -1321,6 +1370,7 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Make scans searchable, then make them smaller.	Làm cho bản quét có thể tìm kiếm được, rồi làm cho chúng nhỏ hơn.
 	Manage embedded index	Quản lý chỉ mục nhúng
 	Manage plugins…	Quản lý plugin…
+	Manual duplex needs one reverse side for each front.	Quét hai mặt thủ công cần một mặt sau cho mỗi mặt trước.
 	March	Tháng 3
 calendar date	March	tháng 3
 	Margins (in)	Lề (inch)
@@ -1367,6 +1417,8 @@ calendar date	May	tháng 5
 	Microsoft Word (.docx)	Microsoft Word (.docx)
 	Midpoints	Điểm giữa
 	minimum	tối thiểu
+	Mirror	Lật gương
+	Mirror the page	Lật gương trang
 	Missing field	Thiếu trường
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Không có trong thứ tự tính toán lưu trong PDF: các trình xem PDF khác có thể không tính trường này.
 	Mixed	Hỗn hợp
@@ -1419,6 +1471,7 @@ calendar weekday	Mo	T2
 	Needs manual check	Cần kiểm tra thủ công
 	Negative number style:	Kiểu số âm:
 	Nested alternate text	Văn bản thay thế lồng nhau
+	Network	Mạng
 	New Action	Hành động mới
 	New Action…	Hành động mới…
 	New blank PDF	PDF trống mới
@@ -1478,6 +1531,7 @@ calendar weekday	Mo	T2
 	No page has text: the document appears to be images of pages	Không trang nào có văn bản: tài liệu có vẻ là hình ảnh của các trang
 	No pages match those choices	Không có trang nào khớp với các lựa chọn đó
 	No pages selected	Chưa chọn trang
+	No pages were scanned.	Không quét được trang nào.
 	No PDFs found in {folder}	Không tìm thấy PDF nào trong {folder}
 	No PDFs in this folder yet	Chưa có PDF nào trong thư mục này
 	No PDFs, images or text files found in {folder}	Không tìm thấy PDF, hình ảnh hoặc tệp văn bản nào trong {folder}
@@ -1490,6 +1544,7 @@ calendar weekday	Mo	T2
 	No problems found: the document conforms to {level}.	Không tìm thấy vấn đề: tài liệu tuân thủ {level}.
 	No recipients yet.	Chưa có người nhận nào.
 	No release notes were provided.	Không có ghi chú phát hành.
+	No scanner is connected.	Không có máy quét nào được kết nối.
 	No security	Không có bảo mật
 	No sheets	Không có tờ
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Không tìm thấy chữ ký trong khung. Hãy di chuyển khung lên chữ ký hoặc tăng độ nhạy nét mực.
@@ -1588,6 +1643,8 @@ animation effects	On	Bật
 	Open OFD (early alpha)…	Mở OFD (bản alpha sớm)…
 	Open previous PDF in folder	Mở PDF trước đó trong thư mục
 	Open tabs and edits update the search automatically.	Các thẻ đang mở và các chỉnh sửa sẽ tự động cập nhật kết quả tìm kiếm.
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	Mở nắp, gỡ giấy kẹt hoặc các tờ bị nạp dính nhau, nạp ngay ngắn các tờ còn lại, rồi chọn Tiếp tục.
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	Mở nắp, gỡ giấy kẹt hoặc các tờ bị nạp dính nhau, nạp ngay ngắn các tờ, rồi chọn Thử lại.
 	Open the file as it was saved then	Mở tệp như khi nó được lưu lúc đó
 	Open the older version first	Hãy mở phiên bản cũ hơn trước
 	Open this local PDF?	Mở PDF cục bộ này?
@@ -1602,6 +1659,7 @@ animation effects	On	Bật
 	Opening the browser's print dialog…	Đang mở hộp thoại in của trình duyệt…
 	Opening {name}…	Đang mở {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Mở tùy chọn của trình điều khiển máy in. Các tùy chọn này được lưu cho mọi lần in từ máy tính này; số bản sao, in hai mặt, thang xám và giấy được chọn ở đây vẫn được áp dụng.
+	Optical resolution {x} × {y} dpi.	Độ phân giải quang học {x} × {y} dpi.
 	Optimization cancelled	Đã hủy tối ưu hóa
 	Optimization is already running	Việc tối ưu hóa đang chạy
 	Optimize	Tối ưu hóa
@@ -1736,6 +1794,7 @@ animation effects	On	Bật
 	Permitted actions after certifying	Các hành động được phép sau khi chứng nhận
 	Phone Number	Số điện thoại
 	Phone Numbers	Số điện thoại
+	Photometric	Trắc quang
 	Pick a tool in the quick bar, or type above.	Chọn một công cụ trên thanh nhanh, hoặc nhập ở phía trên.
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Hình ảnh phủ kín các trang {pages} (bản quét?), nên nền sẽ không hiện ở đó.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Hình ảnh cần văn bản thay thế mô tả chúng, hoặc phải được đánh dấu là trang trí. Hãy thêm văn bản thay thế cho mỗi hình.
@@ -1785,7 +1844,9 @@ animation effects	On	Bật
 	Preparing {n} sheets for printing…	Đang chuẩn bị {n} tờ để in…
 	Presentation (.pptx)	Bản trình bày (.pptx)
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	Ngăn nhấp nháy G-SYNC/FreeSync (áp dụng lần khởi chạy tiếp theo)
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	Bản xem trước dành cho mặt kính. Đặt một vùng tính bằng inch bên dưới, hoặc để trống để quét cả tờ.
 	Preview unavailable: {e}	Không có bản xem trước: {e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	Bản xem trước dùng mặt kính. Chuyển nguồn sang Mặt kính, hoặc quét mà không xem trước.
 	Preview: page {p} of {n}	Xem trước: trang {p} trên {n}
 	Previous ({key})	Trước ({key})
 	Previous (⇧⌘G)	Trước (⇧⌘G)
@@ -1882,7 +1943,9 @@ certificate	Public key	Khóa công khai
 	Reduce & Optimize	Giảm dung lượng & Tối ưu hóa
 	Reduce file size	Giảm kích thước tệp
 	Reduce file size…	Giảm kích thước tệp…
+	Refresh lists scanners. It does not feed paper.	Làm mới sẽ liệt kê lại máy quét. Thao tác này không nạp giấy.
 	Refresh plugins	Làm mới plugin
+	Region in inches. Leave the width or the height at zero to scan the whole area.	Vùng tính bằng inch. Để chiều rộng hoặc chiều cao bằng không để quét toàn bộ vùng.
 	Regularity	Tính đều đặn
 	Rejected	Đã từ chối
 	Release notes	Ghi chú phát hành
@@ -1995,6 +2058,9 @@ certificate	Public key	Khóa công khai
 	Reverse closed arrow	Mũi tên đóng đảo ngược
 	Reverse open arrow	Mũi tên mở đảo ngược
 	Reverse pages	Đảo ngược các trang
+	reverse side(s)	mặt sau
+	Reverse sides	Mặt sau
+	Reverse sides interleaved.	Đã xen kẽ các mặt sau.
 	Reverse the order	Đảo thứ tự
 	Revert changes	Hoàn nguyên các thay đổi
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	Hoàn nguyên về phiên bản đã lưu trước đó của “{name}”? Sau đó sẽ không thể hoàn tác các thay đổi kể từ lúc ấy.
@@ -2092,9 +2158,27 @@ calendar weekday	Sa	T7
 	Scan & OCR	Quét & OCR
 	Scan and text recognition	Quét và nhận dạng văn bản
 	Scan correction	Chỉnh sửa bản quét
+	Scan interrupted	Quá trình quét bị gián đoạn
 	Scan processing cancelled	Đã hủy xử lý bản quét
+	Scan reverse side now (1 front)	Quét mặt sau ngay (1 mặt trước)
+	Scan reverse sides	Quét mặt sau
+	Scan reverse sides now ({n} fronts)	Quét các mặt sau ngay ({n} mặt trước)
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	Quét mặt trước, lật tờ giấy trên mặt kính, rồi quét mặt sau.
+	Scan the fronts before the reverse sides.	Quét các mặt trước trước khi quét mặt sau.
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Quét các mặt trước, lật xấp giấy (tờ cuối nằm trên cùng), rồi quét các mặt sau. Các trang được xen kẽ: trước, sau, …
+	Scan the missing reverse sides, then choose Finish.	Quét các mặt sau còn thiếu, rồi chọn Hoàn tất.
 	Scanned pages need OCR. Reading order follows extracted page text.	Các trang quét cần OCR. Thứ tự đọc theo văn bản được trích xuất từ trang.
 	Scanned text detected	Phát hiện văn bản đã quét
+	Scanner	Máy quét
+	Scanner settings	Cài đặt máy quét
+	Scanning front {n} of {t}…	Đang quét mặt trước {n}/{t}…
+	Scanning front {n}…	Đang quét mặt trước {n}…
+	Scanning needs Windows (WIA) in this version.	Phiên bản này cần Windows (WIA) để quét.
+	Scanning page {n} of {t}…	Đang quét trang {n}/{t}…
+	Scanning page {n}…	Đang quét trang {n}…
+	Scanning reverse side {n} of {t}…	Đang quét mặt sau {n}/{t}…
+	Scanning reverse side {n}…	Đang quét mặt sau {n}…
+	Scanning…	Đang quét…
 	Screen / email	Màn hình / email
 	Screen flicker	Nhấp nháy màn hình
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Trình đọc màn hình chọn giọng đọc dựa trên ngôn ngữ của tài liệu. Hãy đặt trong Thuộc tính tài liệu > Nâng cao > Ngôn ngữ.
@@ -2164,6 +2248,8 @@ certificate	Self-signed	Tự ký
 	Sent to {printer}	Đã gửi đến {printer}
 	Sent to {printer}: {msg}	Đã gửi đến {printer}: {msg}
 	Separate PDFs	Các PDF riêng biệt
+	Separate the sheets and load the remaining ones, then choose Continue.	Tách các tờ và nạp những tờ còn lại, rồi chọn Tiếp tục.
+	Separate the sheets and load them again, then choose Try again.	Tách các tờ và nạp lại, rồi chọn Thử lại.
 	Separator style:	Kiểu dấu phân cách:
 	Sepia night	Nâu đỏ ban đêm
 	September	Tháng 9
@@ -2196,6 +2282,7 @@ certificate	Serial number	Số sê-ri
 	Set the image of {name}	Đặt hình ảnh của {name}
 	Set to current page ({n})	Đặt thành trang hiện tại ({n})
 	Set to zero	Đặt về 0
+	Settings this source offers. Leave a control alone to keep the driver’s value.	Các cài đặt nguồn này cung cấp. Để nguyên một điều khiển để giữ giá trị của trình điều khiển.
 	SHA-1 digest	Giá trị băm SHA-1
 certificate	SHA-1 digest	Giá trị băm SHA-1
 	SHA-256 digest	Giá trị băm SHA-256
@@ -2338,6 +2425,7 @@ action wizard	Start	Bắt đầu
 	Still rendering — this page is unusually complex…	Vẫn đang kết xuất — trang này phức tạp bất thường…
 	Straighten scanned page	Căn thẳng trang đã quét
 	Straighten skewed scans	Căn thẳng các bản quét bị nghiêng
+	Straighten the page	Làm thẳng trang
 	Strength: {s}	Độ mạnh: {s}
 	Strikethrough text	Gạch ngang văn bản
 	String length (0 turns it off)	Độ dài dây (0 để tắt)
@@ -2356,6 +2444,8 @@ certificate	Subject	Chủ thể chứng chỉ
 	Summarize with AI	Tóm tắt bằng AI
 	Swap width and height	Hoán đổi chiều rộng và chiều cao
 	Switch light / dark theme	Chuyển chủ đề sáng / tối
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	Tắt rồi bật lại máy quét, chờ đến khi sẵn sàng, rồi chọn Tiếp tục.
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	Tắt rồi bật lại máy quét, chờ đến khi sẵn sàng, rồi chọn Thử lại.
 	Switch to List view to change the pages it takes.	Chuyển sang dạng danh sách để thay đổi các trang mà nó lấy.
 	Switch to two-page view first to show the cover page	Hãy chuyển sang chế độ hai trang trước để hiển thị trang bìa
 	System print dialog…	Hộp thoại in của hệ thống…
@@ -2416,6 +2506,7 @@ calendar weekday	Th	T5
 	That length can't be right for this line: check the unit.	Độ dài này không thể đúng với đường này: hãy kiểm tra đơn vị.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Khóa API sẽ được gửi đến địa chỉ này mà không mã hóa. Hãy dùng https:// trừ khi máy chủ nằm trong mạng bạn tin cậy.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	vùng, khoảng cách và độ rộng cột phải là số, khoảng cách từ 0 trở lên và mỗi độ rộng lớn hơn 0
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Mặt kính quét từng trang một. Quét một mặt trước, lật tờ giấy, rồi quét mặt sau của nó.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Thứ tự tính toán có {n} mục không tính gì. "Sửa thứ tự" sẽ xóa chúng.
 	the certificate expired on {date}	chứng chỉ đã hết hạn vào {date}
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Chứng chỉ của {} không cho phép có nhiều chứng chỉ CA ở dưới nó như vậy (độ dài đường dẫn), nên nó không được dùng để bảo chứng cho {}.
@@ -2463,10 +2554,15 @@ calendar weekday	Th	T5
 	The document's security settings don't allow filling in form fields	Cài đặt bảo mật của tài liệu không cho phép điền các trường biểu mẫu
 	The document's security settings don't allow printing	Cài đặt bảo mật của tài liệu không cho phép in
 	The document's security settings don't allow this change	Cài đặt bảo mật của tài liệu không cho phép thay đổi này
+	The driver may accept a turn and leave the picture as it was.	Trình điều khiển có thể chấp nhận lệnh xoay nhưng giữ nguyên hình ảnh.
+	The driver reports a paper jam.	Trình điều khiển báo kẹt giấy.
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	Trình điều khiển báo có tờ đang chờ. Cờ này có thể vẫn bật sau khi khay đã trống.
 	The ECDSA signature is not in canonical DER (trailing bytes, padding or a missing sign byte); it was read anyway.	Chữ ký ECDSA không ở dạng DER chuẩn (có byte thừa ở cuối, phần đệm hoặc thiếu byte dấu); nó vẫn được đọc.
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	Chữ ký ECDSA là các giá trị r và s thô thay vì một chuỗi DER; nó vẫn được đọc.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Mã thông báo dấu thời gian được nhúng hợp lệ và cơ quan cấp nó được tin cậy; thời gian tin cậy là {}.
 	The existing action will be preserved.	Hành động hiện có sẽ được giữ nguyên.
+	The feeder ran out of paper.	Khay nạp đã hết giấy.
+	The feeder took more than one sheet.	Khay nạp đã lấy nhiều hơn một tờ.
 	The field properties could not be changed.	Không thể thay đổi thuộc tính của trường.
 	The field properties dialog is no longer open.	Hộp thoại thuộc tính trường không còn được mở.
 	The field {name} no longer exists.	Trường {name} không còn tồn tại.
@@ -2477,6 +2573,7 @@ calendar weekday	Th	T5
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	Phông chữ mà PdfCraft dùng để ghi không thể vẽ “{c}” ({code}), nên nó hiển thị là ? trong mọi trình xem PDF. Văn bản vẫn được lưu.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Biểu mẫu yêu cầu được gửi đến {u}; PdfCraft không gửi dữ liệu biểu mẫu. Hãy lưu tài liệu để giữ các mục bạn đã nhập.
 	The form asks viewers to make appearances (NeedAppearances)	Biểu mẫu yêu cầu trình xem tạo diện mạo (NeedAppearances)
+	The fronts already scanned are kept for the reverse-side pass.	Các mặt trước đã quét được giữ lại cho lượt quét mặt sau.
 	The image couldn't be used as an icon: {e}	Không thể dùng hình ảnh làm biểu tượng: {e}
 	The image has been copied ({w} × {h} pixels)	Đã sao chép hình ảnh ({w} × {h} điểm ảnh)
 	The image has been copied as a {ext} file	Đã sao chép hình ảnh dưới dạng tệp {ext}
@@ -2499,6 +2596,7 @@ calendar weekday	Th	T5
 	The order saved in the PDF needs tidying	Thứ tự lưu trong PDF cần được sắp xếp lại
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Các chữ ký khác ({names}) sẽ báo rằng tài liệu đã thay đổi sau khi ký. Hãy xác thực lại: không có gì bảo đảm chúng vẫn hợp lệ.
 	The page has changed; select the image again	Trang đã thay đổi; hãy chọn lại hình ảnh
+	The pages already scanned were kept in the document.	Các trang đã quét được giữ lại trong tài liệu.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Các trang đã được trích xuất nhưng chưa bị xóa, vì tài liệu đã thay đổi trong lúc bạn chọn thư mục.
 	the password is incorrect	mật khẩu không đúng
 	The password is incorrect.	Mật khẩu không đúng.
@@ -2508,6 +2606,7 @@ calendar weekday	Th	T5
 	The passwords do not match.	Các mật khẩu không khớp.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Phông chữ văn bản PDF không thể vẽ “{c}” ({code}). Hãy chọn văn bản được hỗ trợ.
 	The PIN is incorrect.	Mã PIN không đúng.
+	The preview could not be shown.	Không thể hiển thị bản xem trước.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Cài đặt riêng của trình điều khiển máy in cho lần in này: khay giấy, loại giấy, hoàn thiện và nhiều hơn nữa.
 	The provider's page didn't come back in time. Try again.	Trang của nhà cung cấp không phản hồi kịp. Hãy thử lại.
 	The redaction does not fit page {page}; no pages were marked.	Vùng che không vừa trang {page}; không trang nào được đánh dấu.
@@ -2516,10 +2615,27 @@ calendar weekday	Th	T5
 	The release is not a published stable update. Try again later.	Bản phát hành này chưa phải là bản cập nhật ổn định đã được công bố. Hãy thử lại sau.
 	The replacement file doesn't have that many pages.	Tệp thay thế không có nhiều trang như vậy.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Các hạn chế áp dụng cho người nhận không có “Mọi quyền”. Thay đổi được áp dụng khi bạn lưu.
+	The reverse sides already scanned are kept.	Các mặt sau đã quét được giữ lại.
+	The reverse sides were cancelled: their document was closed.	Đã hủy quét mặt sau: tài liệu của chúng đã bị đóng.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	các hàng quá thấp: hãy làm vùng cao hơn, hoặc dùng ít hàng hơn hay khoảng cách hàng nhỏ hơn
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	Giá trị chữ ký RSA không có độ dài bằng môđun của khóa (các byte không ở đầu bị bỏ hoặc thêm); nó vẫn được đọc.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	DigestInfo của chữ ký RSA không có tham số NULL (các trình ký cũ ghi như vậy); nó vẫn được đọc.
 	The same password is tried on each file.	Cùng một mật khẩu được thử trên từng tệp.
+	The same printer is also available over the network.	Máy in này cũng có thể dùng qua mạng.
+	The same printer is also available over USB.	Máy in này cũng có thể dùng qua USB.
+	The scan could not be started.	Không thể bắt đầu quét.
+	The scan produced no pages.	Quá trình quét không tạo ra trang nào.
+	The scan was cancelled at the scanner.	Quá trình quét đã bị hủy tại máy quét.
+	The scan was interrupted.	Quá trình quét bị gián đoạn.
+	The scan was stopped: its document was closed.	Đã dừng quét: tài liệu của nó đã bị đóng.
+	The scanner has a paper jam.	Máy quét bị kẹt giấy.
+	The scanner is busy, or the feeder has no paper.	Máy quét đang bận, hoặc khay nạp không có giấy.
+	The scanner is busy.	Máy quét đang bận.
+	The scanner is offline or needs attention.	Máy quét đang ngoại tuyến hoặc cần được kiểm tra.
+	The scanner list could not be refreshed.	Không thể làm mới danh sách máy quét.
+	The scanner needs attention.	Máy quét cần được kiểm tra.
+	The scanner reported a lamp or device error.	Máy quét báo lỗi đèn hoặc lỗi thiết bị.
+	The scanner reported a paper problem (a jam or several sheets fed together).	Máy quét báo sự cố giấy (kẹt giấy hoặc nhiều tờ bị nạp cùng lúc).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Số điểm ảnh thực trên mỗi inch của màn hình. Hiệu chỉnh bằng thước để Kích thước thực (100%) hiển thị trang đúng kích thước thật.
 	The security settings don't allow screen readers to read the text	Cài đặt bảo mật không cho phép trình đọc màn hình đọc văn bản
 	The selected area has been copied ({w} × {h} pixels)	Đã sao chép vùng đã chọn ({w} × {h} điểm ảnh)
@@ -2691,6 +2807,7 @@ calendar weekday	Th	T5
 	Tooltip:	Chú giải công cụ:
 	Top-level bookmarks ({n})	Dấu trang cấp cao nhất ({n})
 	TR must be a child of Table, THead, TBody, or TFoot	TR phải là con của Table, THead, TBody hoặc TFoot
+	Transfer format: {format}.	Định dạng truyền: {format}.
 	Transform image	Chuyển đổi hình ảnh
 	Translate with AI	Dịch bằng AI
 	Trim the picture with its handles; Enter or Done applies	Xén hình bằng các tay nắm; nhấn Enter hoặc Xong để áp dụng
@@ -2699,6 +2816,7 @@ calendar weekday	Th	T5
 	Try the form as people filling it in will see it	Dùng thử biểu mẫu như người điền sẽ thấy
 calendar weekday	Tu	T3
 	Turn upside down (180°)	Lật ngược (180°)
+	Turned left	Xoay sang trái
 	two cells would both be named {name}	hai ô sẽ cùng có tên {name}
 	Two-page view	Chế độ hai trang
 	Two-sided:	Hai mặt:
@@ -2742,8 +2860,10 @@ signature pad	Type	Nhập chữ
 	Update header & footer…	Cập nhật đầu trang & chân trang…
 	Update watermark	Cập nhật hình mờ
 	Update watermark…	Cập nhật hình mờ…
+	Upside down	Lộn ngược
 	URL to submit to	URL để gửi đến
 	US Letter	Thư Mỹ
+	USB	USB
 	Use 72 DPI (one point per pixel)	Dùng 72 DPI (một điểm cho mỗi điểm ảnh)
 	Use a certificate	Dùng chứng chỉ
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Dùng chứng thư trên đám mây (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
@@ -2793,6 +2913,7 @@ certificate	Validity starts	Hiệu lực bắt đầu
 	Verify to see what the document needs.	Hãy xác minh để biết tài liệu cần gì.
 certificate	Version	Phiên bản
 	Version {v}	Phiên bản {v}
+	Vertical resolution	Độ phân giải dọc
 	Vertical reversed	Dọc đảo ngược
 	Vertical text cannot be moved with this selection.	Văn bản dọc không thể di chuyển cùng vùng chọn này.
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	Video, âm thanh và đa phương tiện phong phú phải được gắn thẻ để được đọc to. Hãy gắn thẻ cho các chú thích đa phương tiện.
@@ -2809,6 +2930,8 @@ certificate	Version	Phiên bản
 	Visual initials (Fill & Sign, not digital)	Chữ viết tắt hình ảnh (Điền & Ký, không phải chữ ký số)
 	Visual signature (Fill & Sign, not digital)	Chữ ký hình ảnh (Điền & Ký, không phải chữ ký số)
 	Voice	Giọng đọc
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Chờ máy quét xong, hoặc đóng mọi chương trình khác đang dùng nó, rồi chọn Tiếp tục.
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Chờ máy quét xong, hoặc đóng mọi chương trình khác đang dùng nó, rồi chọn Thử lại.
 	Waiting for the system print dialog…	Đang chờ hộp thoại in của hệ thống…
 	Waiting for your approval in the browser…	Đang chờ bạn phê duyệt trong trình duyệt…
 	watermark	hình mờ
@@ -2820,6 +2943,8 @@ calendar weekday	We	T4
 	White on black	Trắng trên nền đen
 	Whole words only	Chỉ khớp toàn bộ từ
 document scrollbar width	Wide	Rộng
+	Will use the bed.	Sẽ dùng mặt kính.
+	Will use the feeder.	Sẽ dùng khay nạp.
 	Window Options	Tùy chọn cửa sổ
 	Windows store  ·  	Kho Windows  ·  
 	Word count	Số từ
@@ -2927,11 +3052,13 @@ document scrollbar width	Wide	Rộng
 @plural	{n} more field calculates too early.|{n} more fields calculate too early.	Còn {n} trường khác được tính quá sớm.
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	Còn {n} công thức khác đọc trường bị thiếu.
 @plural	{n} object selected|{n} objects selected	Đã chọn {n} đối tượng
+	{n} of {m} pages were scanned.	Đã quét {n}/{m} trang.
 	{n} pages	{n} trang
 	{n} pages and no bookmarks	{n} trang và không có dấu trang
 	{n} pages could not be searched; results are incomplete.	Không thể tìm kiếm trong {n} trang; kết quả chưa đầy đủ.
 	{n} pages selected	Đã chọn {n} trang
 	{n} pages selected.	Đã chọn {n} trang.
+	{n} pages were scanned.	Đã quét {n} trang.
 @plural	{n} page|{n} pages	{n} trang
 @plural	{n} pixel|{n} pixels	{n} điểm ảnh
 @plural	{n} reply|{n} replies	{n} câu trả lời
@@ -2958,6 +3085,7 @@ document scrollbar width	Wide	Rộng
 	{who}, certificate issued by an unknown issuer.	{who}, chứng chỉ do tổ chức không rõ cấp.
 	{who}, certificate issued by {issuer}.	{who}, chứng chỉ do {issuer} cấp.
 	{words} on {pages}	{words} trên {pages}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} inch, {pxw} × {pxh} điểm ảnh, {size}
 	{} annotation on page {p} isn't tagged	Chú thích {} trên trang {p} chưa được gắn thẻ
 	{} annotations aren't allowed	Chú thích {} không được phép
 	ΔLOC	ΔLOC

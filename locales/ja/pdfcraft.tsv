@@ -32,6 +32,7 @@
 	1 page scanned	1 ページをスキャンしました
 	1 page selected	1 ページ選択中
 	1 page selected.	1 ページ選択中。
+	1 page was scanned.	1 ページをスキャンしました。
 	180 degrees	180 度
 	3D model	3Dモデル
 	3D model canvas	3Dモデルの表示領域
@@ -51,6 +52,7 @@
 	A button	ボタン
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Rust で記述したクリーンルーム方式のオープンソース PDF アプリケーション。MIT OR Apache-2.0。
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	列の幅が足りません: 範囲を広げるか、その列の幅を増やすか、列数または列の間隔を減らしてください
+	A cover on the scanner is open.	スキャナーのカバーが開いています。
 	A diagonal CONFIDENTIAL watermark on every page.	すべてのページに斜めの CONFIDENTIAL 透かしを追加します。
 	a document must keep at least one page	文書には少なくとも 1 ページを残す必要があります
 	A document needs at least one page: copy instead	文書には少なくとも 1 ページが必要です。代わりにコピーしてください
@@ -60,6 +62,7 @@
 	A link	リンク
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	ローカルモデルは最先端のクラウドモデルではありません。間違うことがあり、長い回答には CPU で時間がかかります。重要な事柄は必ず確認し、ダウンロード前にモデルのサイズをこのマシンと比べてください。
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	タブの左側、タイトルバーが表示する位置に出すロゴや名前。PdfCraft のもの、または会社のものを指定できます。
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	ページ数を指定すると、その枚数でフィーダーが止まります。キャンセルすると転送は途中で終わり、すでに受け取ったページは文書に残ります。
 	A picture covers page {pages} (a scan?), so the background won't show there.	{pages} ページは画像（スキャン？）で覆われているため、背景は表示されません。
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG または SVG ファイル。PdfCraft の起動のたびにこの場所から読み込まれます。
 	A script	スクリプト
@@ -193,6 +196,7 @@
 	Advanced Options {chevron}	詳細オプション {chevron}
 	Advanced search…	高度な検索…
 	Advanced unit formats	詳細な単位形式
+	Advanced…	詳細…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	「署名」の後、mSzafir アプリの OTT コードを CloudSigner のウィンドウに入力し、アプリで署名を承認してください。CloudSigner の永続 OTT コードを有効にすると、コードの入力は数分に 1 回だけです。
 	AI Assistant	AI アシスタント
 	AI assistant	AI アシスタント
@@ -212,6 +216,7 @@
 	All multimedia objects are tagged	すべてのマルチメディアオブジェクトにタグがあります
 	All open documents	開いているすべての文書
 	All page content is tagged	すべてのページ内容にタグがあります
+	All pages asks the driver for the whole stack.	「すべてのページ」はドライバにトレイ全体を要求します。
 	All pages in document	文書内のすべてのページ
 	All pages in range	範囲内のすべてのページ
 	All permissions	すべての権限
@@ -304,6 +309,7 @@
 	Author title	作成者の役職
 	Auto follows the system's text size. Pages always render at the display's full resolution.	自動にすると、システムの文字サイズに合わせます。ページは常にディスプレイの最大解像度で描画されます。
 	Auto portrait/landscape	縦・横を自動選択
+	Auto-deskew	自動傾き補正
 	Auto-detect	自動検出
 	Auto-rotate pages	ページを自動回転
 	Auto-size text to fit redaction region	墨消し領域に合わせて文字サイズを自動調整
@@ -323,6 +329,7 @@
 	Balanced and Compact reduce image quality to make a smaller file. Text and forms stay editable.	「バランス」と「コンパクト」は画像の画質を下げてファイルサイズを小さくします。テキストとフォームは引き続き編集できます。
 	Basic constraints	基本制約
 	Bates numbering	ベイツ番号
+	Bed	原稿台
 	Before each selected page (select pages in Organize)	選択した各ページの前（ページ整理で選択）
 	Before the number	数値の前
 	Behind text and images	テキストと画像の背面
@@ -375,6 +382,7 @@
 	Callout	引き出し線
 	Can't be read: {e}	読み込めません: {e}
 	Cancel caption placement	キャプション配置を取り消す
+	Cancel reverse sides	裏面のスキャンをやめる
 	Cancelled	キャンセル済み
 	Cancelling…	キャンセルしています…
 	Case-sensitive	大文字と小文字を区別
@@ -432,9 +440,13 @@
 	Check for updates…	更新を確認…
 	Check spelling	スペルチェック
 	Check spelling while typing	入力中にスペルを確認
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	フィーダーに用紙があるか確認するか、スキャナーの処理が終わるまで待って、「スキャンを続行」を選んでください。
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	フィーダーに用紙があるか確認するか、スキャナーの処理が終わるまで待って、「再試行」を選んでください。
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	タグが視覚的な読み取り順序と一致するか確認してください。読み取り順序ツールまたはタグパネルで修正できます。
 	Check the pages	ページ指定を確認してください
 	Check the pages of {name}: {why}	{name} のページ指定を確認してください: {why}
+	Check the scanner is on and connected, then choose Continue.	スキャナーの電源が入っていて接続されていることを確認し、「スキャンを続行」を選んでください。
+	Check the scanner is on and connected, then choose Try again.	スキャナーの電源が入っていて接続されていることを確認し、「再試行」を選んでください。
 	CheckBox	チェックボックス
 	Checkbox	チェックボックス
 	Checked	チェック済み
@@ -442,6 +454,7 @@
 	Checking Hungarian OCR installation…	ハンガリー語OCRのインストールを確認中…
 	Checking Options ({on} of 32 in all categories)	チェック項目（全カテゴリ 32 項目中 {on} 項目）
 	Checking pages…	ページを確認しています…
+	Checking the scanner…	スキャナーを確認しています…
 	Checkmark	チェックマーク
 	Choose a control point inside the viewport.	ビューポート内の基準点を選択してください。
 	Choose a digital ID file	デジタル ID ファイルを選択
@@ -485,8 +498,11 @@
 	Clear points	選択点を消去
 	Clear Recent Files	最近のファイルをクリア
 	Clear redaction marks	墨消しマークをクリア
+	Clear region	範囲をクリア
 	Clear search	検索をクリア
 	Clear selection / close find	選択を解除／検索を閉じる
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	紙詰まりを取り除き、残りの用紙をまっすぐにセットして、「スキャンを続行」を選んでください。
+	Clear the jam and load the sheets squarely, then choose Try again.	紙詰まりを取り除き、用紙をまっすぐにセットして、「再試行」を選んでください。
 	Click each vertex. Enter finishes the perimeter.	頂点を順にクリックし、Enterで周長を確定します。
 	Click on the page to add a {tool}, or drag to set its size	ページをクリックして{tool}を追加するか、ドラッグしてサイズを指定してください
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	ページをクリックしてテキストを追加します。クリックごとに新しいボックスを作成し、✓ で完了します。項目をドラッグして移動、角をドラッグしてサイズ変更、テキストをダブルクリックして編集できます。
@@ -508,6 +524,8 @@
 	Close Tab	タブを閉じる
 	Close Tabs to the Right	右側のタブを閉じる
 	Close tabs to the right	右側のタブを閉じる
+	Close the feeder cover and check the paper, then choose Continue.	フィーダーのカバーを閉じて用紙を確認し、「スキャンを続行」を選んでください。
+	Close the feeder cover and check the paper, then choose Try again.	フィーダーのカバーを閉じて用紙を確認し、「再試行」を選んでください。
 	Close Window	ウインドウを閉じる
 	Close window	ウインドウを閉じる
 	Closed arrow	閉じた矢印
@@ -522,6 +540,7 @@
 	Color	カラー
 	Color contrast	色のコントラスト
 	Color Document	カラーの文書
+	Color document	カラー文書
 	Color Images	カラー画像
 	Color Photo	カラー写真
 	Color Spaces	色空間
@@ -570,11 +589,16 @@
 	Configure New Digital ID	新しいデジタル ID を設定
 	Confirm Password	パスワードを確認
 	Conformance level:	準拠レベル:
+	Connected by USB.	USB で接続しています。
 	Connected lines	連結線
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	ネットワーク（Web サービス）経由で接続しています。設定はそのドライバから来ます（USB ではありません）。
 	Console	コンソール
 	Content copying	内容のコピー
 	Content copying for accessibility	アクセシビリティ用の内容のコピー
 	Content Streams	コンテンツストリーム
+	Continue scanning	スキャンを続行
+	Continue scanning fronts	おもて面のスキャンを続行
+	Continue scanning reverse sides	裏面のスキャンを続行
 	Continuous scrolling	連続スクロール
 	Control point	基準点
 	Control points	基準点
@@ -656,7 +680,7 @@
 	Create link	リンクを作成
 	Create links from URLs	URL からリンクを作成
 	Create Link…	リンクを作成…
-	Create PDF	PDFを作成
+	Create PDF	PDF を作成
 	Create PDF Comment Summary	PDF 注釈の一覧を作成
 	Create PDF comment summary…	PDF 注釈の一覧を作成…
 	Create PDF from clipboard	クリップボードから PDF を作成
@@ -673,7 +697,9 @@
 	Created a PDF from the first {n} files	最初の {n} 個のファイルから PDF を作成しました
 	Created a PDF from {n} files	{n} 個のファイルから PDF を作成しました
 	Created a PDF from {n} files; left out: {names}	{n} 個のファイルから PDF を作成しました。除外: {names}
+	Created Scan.pdf	Scan.pdf を作成しました
 	Created {n} links	リンクを {n} 件作成しました
+	Created {n} scanned files	スキャンしたファイルを {n} 件作成しました
 	Creates 1 file from {n} pages.	{n} ページから 1 ファイルを作成します。
 	Creates {f} files from {n} pages.	{n} ページから {f} ファイルを作成します。
 	Credit Cards	クレジットカード番号
@@ -851,6 +877,7 @@ key	Delete	Delete
 	Drag a rectangle around the area to copy	コピーする領域を長方形で囲んでください
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	ページ上で長方形をドラッグしてトリミングします。ページをダブルクリックするとページボックスを設定できます
 	Drag a rectangle to create a link; double-click a link to edit it	長方形をドラッグしてリンクを作成し、リンクをダブルクリックして編集
+	Drag on the preview to choose a region. An empty selection scans the whole area.	プレビューをドラッグして範囲を選びます。空の選択では全体をスキャンします。
 	Drag the corners onto the document's edges, then choose Enhance page.	四隅を文書の端までドラッグしてから、「ページを補正」を選択します。
 	Drag the selection to move it. Esc clears the selection.	選択範囲をドラッグして移動します。Escで選択を解除します。
 	Drag to draw the area where the signature should appear.	ドラッグして署名の表示領域を指定してください。
@@ -870,9 +897,12 @@ key	Delete	Delete
 	Drawing	描画
 	Drawing scale	図面の縮尺
 	Drawing scale changes. Use Actual size for full-scale plans.	図面の縮尺が変わります。原寸で印刷するには「実際のサイズ」を使用してください。
+	Driver default	ドライバの既定
 	Drop PDFs, images, text files or folders here, or choose them.	ここに PDF、画像、テキストファイル、またはフォルダーをドロップするか、選択してください。
 	Drop-down list	ドロップダウンリスト
 	Dropdown Properties	ドロップダウンのプロパティ
+	Duplex	両面
+	Duplex is not offered.	両面は使えません。
 	Duplicate "{name}" onto:	「{name}」の複製先:
 	Duplicate Field	フィールドを複製
 	Duplicate field	フィールドを複製
@@ -1022,6 +1052,7 @@ key	Esc	Esc
 	Failed	不合格
 scroll speed	Fast	速い
 	February	2月
+	Feeder	フィーダー
 	Feet	フィート
 	Feet and inches	フィートとインチ
 	Feet and inches uses ft as the scale unit.	フィートとインチの縮尺単位はftです。
@@ -1157,10 +1188,15 @@ scroll speed	Fast	速い
 	Fraction	分数
 	From a PDF page or an image	PDF ページまたは画像から作成
 	From colour	色を指定
+	From scanner…	スキャナーから…
 	From template	テンプレートから
 	From {file}	元ファイル: {file}
 	From:	開始:
 	Front side only	表面のみ
+	front(s)	おもて面
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	スキャン済みのおもて面: {n} 枚。原稿台の用紙を裏返して、「裏面をスキャン」を選んでください。
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	スキャン済みのおもて面: {n} 枚。最後の1枚が一番上になるように束を裏返してセットし直し、「裏面をスキャン」を選んでください。
+	Full area	全体
 	Full screen mode	全画面表示
 	Full screen mode ({key}); Esc leaves it	全画面表示 ({key}); Esc
 	Generate styled PDF	スタイル付きPDFを生成
@@ -1262,8 +1298,10 @@ key	Home	Home
 	Insert pages from {name}	{name} からページを挿入
 	Insert pages from {name} — 1 field renamed	{name} からページを挿入 — 1 個のフィールド名を変更
 	Insert pages from {name} — fields renamed	{name} からページを挿入 — フィールド名を変更
+	Insert scanned pages	スキャンしたページを挿入
 	Insert text	テキストを挿入
 	Inserted	挿入
+	Inserted scanned pages	スキャンしたページを挿入しました
 	Inserting, deleting, and rotating pages	ページの挿入、削除、回転
 	Inset	凹型
 	Inspector	インスペクター
@@ -1274,6 +1312,7 @@ key	Home	Home
 	Installed version: {v}	インストール済みのバージョン: {v}
 	Integrity	整合性
 	Intended usage	使用目的
+	Intent	インテント
 	Interface and appearance	インターフェイスと外観
 	Interface font	インターフェースのフォント
 	Interface size	表示サイズ
@@ -1281,6 +1320,7 @@ key	Home	Home
 	Invalid page range	ページ範囲が無効です
 	Invert colors	色を反転
 	Invert everything	すべて反転
+	Invert tones	階調を反転
 	Inverted page background	反転ページの背景
 	Inverted text	反転テキスト
 	Invisible Rectangle	非表示の長方形
@@ -1319,10 +1359,13 @@ key	Home	Home
 	Keychain  ·  	キーチェーン · 
 	Kilometres	キロメートル
 	Labels: {preview}. Later pages keep their labels.	ラベル: {preview}。それ以降のページのラベルは維持します。
+	Lamp	ランプ
+	Lamp on	ランプオン
 	Landscape and Portrait Pages	横向きページと縦向きページ
 	Landscape Pages	横向きページ
 	Landscape pages	横向きページ
 	Language and spelling	言語とスペルチェック
+	Large scan	大きなスキャン
 	Larger pages	ページを大きく表示
 	Larger text	文字を大きく
 	Larger thumbnails	サムネイルを大きく
@@ -1370,9 +1413,12 @@ key	Home	Home
 	List items belong in a list. Fix the list's tags.	リスト項目はリストに含める必要があります。リストのタグを修正してください。
 	List labels and bodies belong in a list item. Fix the list's tags.	リストのラベルと本文はリスト項目に含める必要があります。リストのタグを修正してください。
 	List PKCS #11 token (smart card, HSM) signing identities	PKCS #11 トークン(IC カード、HSM)の署名用アイデンティティを一覧表示
+	Listing scanners…	スキャナーを列挙しています…
 	Lists	リスト
 	Load document font	文書フォントを読み込む
 	Load font…	フォントを読み込む…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	用紙を追加して「スキャンを続行」を選ぶか、スキャン済みの分を残すには「完了」を選んでください。
+	Load sheets in the feeder, then choose Try again.	フィーダーに用紙をセットして、「再試行」を選んでください。
 	Local and private	ローカルでプライベート
 	Local cross-PDF links require the desktop app	PDF 間のローカルリンクにはデスクトップアプリが必要です
 	Location: 	場所: 
@@ -1382,6 +1428,8 @@ key	Home	Home
 	Logo	ロゴ
 	Logo and name	ロゴと名前
 	Longitude	経度
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	スキャナーにメッセージが表示されていないか、ドアやカバーが開いていないかを確認し、原因を解消して、「スキャンを続行」を選んでください。
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	スキャナーにメッセージが表示されていないか、ドアやカバーが開いていないかを確認し、原因を解消して、「再試行」を選んでください。
 	Looking for a local model runtime…	ローカルのモデルランタイムを探しています…
 	Looking for certificates…	証明書を検索しています…
 	Looking for PDFs…	PDF を探しています…
@@ -1399,6 +1447,7 @@ key	Home	Home
 	Make searchable (recognize text)	検索可能にする（テキストを認識）
 	Manage embedded index	埋め込みインデックスを管理
 	Manage plugins…	プラグインを管理…
+	Manual duplex needs one reverse side for each front.	手動両面では、おもて面と同じ枚数の裏面が必要です。
 	Map accuracy	地図の精度
 	Map boundary	地図の境界
 	Map coordinate system	地図の座標系
@@ -1456,6 +1505,8 @@ key	Home	Home
 	Miles	マイル
 	Minimum	最低
 	minimum	最小値
+	Mirror	左右反転
+	Mirror the page	ページを左右反転
 	Missing field	フィールドがない
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	PDF に保存された計算順序にありません。ほかの PDF ビューアーでは計算されない可能性があります。
 	Mixed	混在
@@ -1578,6 +1629,7 @@ key	Home	Home
 	no output folder was chosen	出力フォルダーが選択されていません
 	No pages match those choices	条件に一致するページはありません
 	No pages selected	ページが選択されていません
+	No pages were scanned.	スキャンされたページはありません。
 	No PDFs in this folder yet	このフォルダーにはまだ PDF がありません
 	No PDFs, images or text files found in {folder}	{folder} に PDF、画像、テキストファイルが見つかりません
 	No photo chosen	写真が選択されていません
@@ -1593,6 +1645,7 @@ key	Home	Home
 	No release notes were provided.	リリースノートはありません。
 	No saved measurements in this view.	このビューに保存済みの測定はありません。
 	No scanner found	スキャナーが見つかりません
+	No scanner is connected.	スキャナーが接続されていません。
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	スキャナーが見つかりません。電源が入って接続されているか確認するか、ネットワークアドレスを入力してください。
 	No security	セキュリティなし
 	No sheets	用紙なし
@@ -1692,6 +1745,8 @@ animation effects	On	オン
 	Open previous PDF in folder	フォルダー内の前の PDF を開く
 	Open Recent	最近のファイルを開く
 	Open tabs and edits update the search automatically.	開いているタブや編集内容に応じて検索を自動更新します。
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	カバーを開け、紙詰まりや重なって給紙された用紙があれば取り除き、残りの用紙をまっすぐにセットして、「スキャンを続行」を選んでください。
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	カバーを開け、紙詰まりや重なって給紙された用紙があれば取り除き、用紙をまっすぐにセットして、「再試行」を選んでください。
 	Open the file as it was saved then	その時点で保存された状態のファイルを開く
 	Open the older version first	先に古いバージョンを開いてください
 	Open this local PDF?	このローカルPDFを開きますか？
@@ -1706,6 +1761,7 @@ animation effects	On	オン
 	Opening the browser's print dialog…	ブラウザーの印刷ダイアログを開いています…
 	Opening {name}…	{name} を開いています…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	プリンタードライバーの基本設定を開きます。設定はこのコンピューターからのすべての印刷に保存されます。ここで選んだ部数、両面、グレースケール、用紙は引き続き適用されます。
+	Optical resolution {x} × {y} dpi.	光学解像度 {x} × {y} dpi。
 	Optimization cancelled	最適化をキャンセルしました
 	Optimization is already running	最適化はすでに実行中です
 	Optimize	最適化
@@ -1727,6 +1783,7 @@ animation effects	On	オン
 	Organizational Unit	部署名
 	Organize pages	ページを整理
 	Organize pages plan	ページ整理の計画
+	Orientation	向き
 	Original (lossless)	オリジナル（可逆）
 	Original: replace pages	元の文書: 置換するページ
 	Other colour…	その他の色…
@@ -1842,6 +1899,7 @@ animation effects	On	オン
 	Perpendicular	垂直距離
 	Phone Number	電話番号
 	Phone Numbers	電話番号
+	Photometric	光度
 	Pick a tool in the quick bar, or type above.	クイックバーでツールを選ぶか、上に入力してください。
 	Pick page position	ページ上の位置を選択
 	Pictures cover pages {pages} (scans?), so the background won't show there.	{pages} ページが画像（スキャン？）で覆われているため、そこでは背景は表示されません。
@@ -1895,7 +1953,9 @@ animation effects	On	オン
 	Preparing {n} sheets for printing…	{n} 枚のシートを印刷用に準備しています…
 	Presentation (.pptx)	プレゼンテーション（.pptx）
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	G-SYNC/FreeSync のちらつきを防ぐ（次回起動時に適用）
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	プレビューは原稿台用です。下でインチ単位の範囲を指定するか、空のまま全体をスキャンします。
 	Preview unavailable: {e}	プレビューを表示できません: {e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	プレビューは原稿台を使います。入力を原稿台にするか、プレビューなしでスキャンしてください。
 	Preview: page {p} of {n}	プレビュー: {n} ページ中 {p} ページ
 	Previous ({key})	前へ（{key}）
 	Previous / next page	前／次のページ
@@ -2013,7 +2073,9 @@ animation effects	On	オン
 	Reference length must be positive.	基準線の長さは正の値にしてください。
 	Reference preview	基準のプレビュー
 	Reference:	参照：
+	Refresh lists scanners. It does not feed paper.	更新はスキャナー一覧を取り直します。用紙は送りません。
 	Refresh plugins	プラグインを更新
+	Region in inches. Leave the width or the height at zero to scan the whole area.	範囲（インチ）。幅か高さを 0 のままにすると全体をスキャンします。
 	Registration residual	位置合わせの残差
 	Regularity	規則性
 	Rejected	却下
@@ -2131,6 +2193,9 @@ animation effects	On	オン
 	Reverse closed arrow	逆向きの閉じた矢印
 	Reverse open arrow	逆向きの開いた矢印
 	Reverse pages	逆順で印刷
+	reverse side(s)	裏面
+	Reverse sides	裏面
+	Reverse sides interleaved.	裏面を差し込みました。
 	Reverse the order	並び順を逆にする
 	Revert changes	変更を元に戻す
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	「{name}」を保存済みの状態に戻しますか？それ以降の変更は後から取り消せません。
@@ -2232,12 +2297,28 @@ animation effects	On	オン
 	Scan & OCR	スキャンと OCR
 	Scan and text recognition	スキャンと文字認識
 	Scan correction	スキャン補正
+	Scan interrupted	スキャンの中断
 	Scan next page	次のページをスキャン
 	Scan processing cancelled	スキャン処理をキャンセルしました
+	Scan reverse side now (1 front)	裏面を今すぐスキャン (おもて面 1 枚)
+	Scan reverse sides	裏面をスキャン
+	Scan reverse sides now ({n} fronts)	裏面を今すぐスキャン (おもて面 {n} 枚)
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	おもて面をスキャンし、原稿台上で裏返してから裏面をスキャンします。
+	Scan the fronts before the reverse sides.	裏面の前に、おもて面をスキャンしてください。
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	おもて面をスキャンし、束を裏返して（最後の用紙を上に）、裏面をスキャンします。ページは表・裏・…の順に差し込まれます…
+	Scan the missing reverse sides, then choose Finish.	足りない裏面をスキャンしてから、「完了」を選んでください。
 	Scanned pages need OCR. Reading order follows extracted page text.	スキャンしたページにはOCRが必要です。読み上げ順序はページから抽出したテキストに従います。
 	Scanned text detected	スキャンしたテキストを検出しました
 	Scanner	スキャナー
+	Scanner settings	スキャナーの設定
 	Scanner's full area	スキャナーの全領域
+	Scanning front {n} of {t}…	おもて面 {n} / {t} をスキャン中…
+	Scanning front {n}…	おもて面 {n} をスキャン中…
+	Scanning needs Windows (WIA) in this version.	このバージョンでスキャンするには Windows (WIA) が必要です。
+	Scanning page {n} of {t}…	ページ {n} / {t} をスキャン中…
+	Scanning page {n}…	ページ {n} をスキャン中…
+	Scanning reverse side {n} of {t}…	裏面 {n} / {t} をスキャン中…
+	Scanning reverse side {n}…	裏面 {n} をスキャン中…
 	Scanning was stopped	スキャンを停止しました
 	Scanning…	スキャン中…
 	Screen / email	画面 / メール
@@ -2313,6 +2394,8 @@ animation effects	On	オン
 	Sent to {printer}: {msg}	{printer} に送信しました: {msg}
 	Separate display coordinate system	表示用の座標系を指定
 	Separate PDFs	個別の PDF
+	Separate the sheets and load the remaining ones, then choose Continue.	用紙をさばいて残りをセットし、「スキャンを続行」を選んでください。
+	Separate the sheets and load them again, then choose Try again.	用紙をさばいてもう一度セットし、「再試行」を選んでください。
 	Separate vertical units	縦方向の単位を個別に設定
 	Separator style:	区切り文字の形式:
 	Sepia	セピア
@@ -2346,6 +2429,7 @@ animation effects	On	オン
 	Set the image of {name}	{name} の画像を設定
 	Set to current page ({n})	現在のページ（{n}）を設定
 	Set to zero	ゼロに設定
+	Settings this source offers. Leave a control alone to keep the driver’s value.	この入力が提供する設定です。触らないとドライバの値が使われます。
 	SHA-1 digest	SHA-1 ダイジェスト
 	SHA-256 digest	SHA-256 ダイジェスト
 	Shadings	シェーディング
@@ -2500,6 +2584,7 @@ document scrollbar width	Standard	標準
 	Stop reading	読み上げを停止
 	Straighten scanned page	スキャンしたページの傾きを補正
 	Straighten skewed scans	スキャンの傾きを補正
+	Straighten the page	ページをまっすぐにする
 	Strength: {s}	強度: {s}
 	Strikethrough text	テキストに取り消し線
 	String length (0 turns it off)	ひもの長さ（0 で無効）
@@ -2521,6 +2606,8 @@ document scrollbar width	Standard	標準
 	Swap width and height	幅と高さを入れ替え
 	Switch light / dark theme	明るい／暗いテーマを切り替え
 	Switch page theme	ページのテーマを切り替え
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	スキャナーの電源を切って入れ直し、準備ができるまで待って、「スキャンを続行」を選んでください。
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	スキャナーの電源を切って入れ直し、準備ができるまで待って、「再試行」を選んでください。
 	Switch to List view to change the pages it takes.	使用するページを変更するには、リスト表示に切り替えてください。
 	Switch to two-page view first to show the cover page	表紙を表示するには、先に見開き表示に切り替えてください
 	System default	システムデフォルト
@@ -2586,6 +2673,7 @@ document scrollbar width	Standard	標準
 	The answer proposes formatting changes.	回答に書式変更の提案が含まれています。
 	The answer stopped unexpectedly.	回答が途中で止まりました。
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API キーは暗号化されずにこのアドレスへ送信されます。サーバーが信頼できるネットワーク内にある場合を除き、https:// を使用してください。
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	原稿台は一度に 1 ページです。おもて面をスキャンし、裏返して裏面をスキャンします。
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	計算順序に、何も計算しない項目が {n} 件あります。「順序を修正」で削除されます。
 	the certificate expired on {date}	証明書は {date} に有効期限が切れています
 	The checker found 1 problem which may prevent the document from being fully accessible.	文書のアクセシビリティを妨げる可能性のある問題が 1 件見つかりました。
@@ -2619,7 +2707,12 @@ document scrollbar width	Standard	標準
 	The document's security settings don't allow filling in form fields	文書のセキュリティ設定によりフォームフィールドへの入力が許可されていません
 	The document's security settings don't allow printing	文書のセキュリティ設定により、印刷は許可されていません
 	The document's security settings don't allow this change	文書のセキュリティ設定により、この変更は許可されていません
+	The driver may accept a turn and leave the picture as it was.	ドライバは回転指定を受け付けても、画像をそのまま返すことがあります。
+	The driver reports a paper jam.	ドライバが紙詰まりを報告しています。
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	ドライバが用紙待ちを報告しています。トレイが空でもビットが残ることがあります。
 	The existing action will be preserved.	既存のアクションは保持されます。
+	The feeder ran out of paper.	フィーダーの用紙がなくなりました。
+	The feeder took more than one sheet.	フィーダーが複数枚を同時に給紙しました。
 	The field properties could not be changed.	フィールドのプロパティを変更できませんでした。
 	The field properties dialog is no longer open.	フィールドのプロパティのダイアログはもう開かれていません。
 	The field {name} no longer exists.	フィールド {name} はもう存在しません。
@@ -2629,6 +2722,7 @@ document scrollbar width	Standard	標準
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	フォームは {u} への送信を要求していますが、PdfCraft はフォームデータを送信しません。入力内容を保持するには文書を保存してください。
 	The form asks viewers to make appearances (NeedAppearances)	フォームがビューアーに外観の生成を要求しています（NeedAppearances）
 	The form's purpose and its fields (names, types, tab order)	フォームの目的とフィールド（名前、種類、タブ順）
+	The fronts already scanned are kept for the reverse-side pass.	スキャン済みのおもて面は、裏面のスキャン用に保持されています。
 	The image couldn't be used as an icon: {e}	画像をアイコンとして使用できませんでした: {e}
 	The image has been copied ({w} × {h} pixels)	画像をコピーしました（{w} × {h} ピクセル）
 	The image has been copied as a {ext} file	画像を {ext} ファイルとしてコピーしました
@@ -2653,6 +2747,7 @@ document scrollbar width	Standard	標準
 	The order saved in the PDF needs tidying	PDF に保存された順序の整理が必要です
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	ほかの署名（{names}）は、署名後に文書が変更されたと報告します。検証し直してください。有効なままである保証はありません。
 	The page has changed; select the image again	ページが変更されました。画像をもう一度選択してください
+	The pages already scanned were kept in the document.	スキャン済みのページは文書に保持されています。
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	フォルダーを選択している間に文書が変更されたため、ページは抽出しましたが、削除はしていません。
 	the password is incorrect	パスワードが正しくありません
 	The password is incorrect.	パスワードが正しくありません。
@@ -2660,6 +2755,7 @@ document scrollbar width	Standard	標準
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF テキスト用フォントでは「{c}」（{code}）を表示できません。対応している文字を使用してください。
 	The PIN is incorrect.	PIN が正しくありません。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 トークンのデジタル ID の一覧を取得できませんでした：{e}
+	The preview could not be shown.	プレビューを表示できませんでした。
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	この印刷に使うプリンタードライバー独自の設定：給紙トレイ、用紙の種類、後処理など。
 	The provider's page didn't come back in time. Try again.	プロバイダーのページが時間内に戻りませんでした。もう一度お試しください。
 	The raw text was truncated to what fits.	テキストが収まる長さに切り詰められました。
@@ -2669,8 +2765,23 @@ document scrollbar width	Standard	標準
 	The release is not a published stable update. Try again later.	このリリースは公開済みの安定版アップデートではありません。後でもう一度お試しください。
 	The replacement file doesn't have that many pages.	置換元のファイルには指定した数のページがありません。
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	制限は「すべての権限」のない受信者に適用されます。保存時に適用されます。
+	The reverse sides already scanned are kept.	スキャン済みの裏面は保持されています。
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	行の高さが足りません: 範囲を高くするか、行数または行の間隔を減らしてください
 	The same password is tried on each file.	同じパスワードを各ファイルに試します。
+	The same printer is also available over the network.	同じプリンターはネットワーク経由でも利用できます。
+	The same printer is also available over USB.	同じプリンターは USB でも利用できます。
+	The scan could not be started.	スキャンを開始できませんでした。
+	The scan produced no pages.	スキャンでページが得られませんでした。
+	The scan was cancelled at the scanner.	スキャナー側でスキャンがキャンセルされました。
+	The scan was interrupted.	スキャンが中断されました。
+	The scanner has a paper jam.	スキャナーで紙詰まりが発生しています。
+	The scanner is busy, or the feeder has no paper.	スキャナーが使用中か、フィーダーに用紙がありません。
+	The scanner is busy.	スキャナーは使用中です。
+	The scanner is offline or needs attention.	スキャナーがオフラインか、確認が必要です。
+	The scanner list could not be refreshed.	スキャナー一覧を更新できませんでした。
+	The scanner needs attention.	スキャナーの確認が必要です。
+	The scanner reported a lamp or device error.	スキャナーでランプまたは装置のエラーが報告されました。
+	The scanner reported a paper problem (a jam or several sheets fed together).	スキャナーで用紙の問題が報告されました（紙詰まり、または複数枚の同時給紙）。
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	画面の実際の 1 インチあたりのピクセル数です。定規でキャリブレーションすると、実際のサイズ (100%) でページが実寸で表示されます。
 	The selected area has been copied ({w} × {h} pixels)	選択範囲をコピーしました（{w} × {h} ピクセル）
 	The selected fields could not be found. Select them again.	選択したフィールドが見つかりません。もう一度選択してください。
@@ -2812,6 +2923,7 @@ document scrollbar width	Standard	標準
 	Tooltip:	ツールチップ:
 	Top-level bookmarks ({n})	最上位のしおり（{n}）
 	TR must be a child of Table, THead, TBody, or TFoot	TR は Table、THead、TBody、TFoot の子要素である必要があります
+	Transfer format: {format}.	転送形式: {format}。
 	Transform image	画像を変換
 	Translate with AI	AI で翻訳
 	Trim the picture with its handles; Enter or Done applies	ハンドルで画像を切り抜きます。Enter または完了で適用
@@ -2820,6 +2932,7 @@ document scrollbar width	Standard	標準
 	Try again	再試行
 	Try the form as people filling it in will see it	利用者が入力するときの表示でフォームを試す
 	Turn upside down (180°)	上下反転 (180°)
+	Turned left	左に回転
 	two cells would both be named {name}	2 つのセルが同じ名前 {name} になります
 	Two-page view	見開き表示
 	Two-sided:	両面印刷:
@@ -2870,9 +2983,11 @@ signature pad	Type	入力
 	Update watermark	透かしを更新
 	Update watermark…	透かしを更新…
 	Updating 3D view…	3Dビューを更新中…
+	Upside down	上下逆
 	URL to submit to	送信先 URL
 	US Letter	USレター
 	US survey feet	米国測量フィート
+	USB	USB
 	Use 72 DPI (one point per pixel)	72 DPI を使用（1 ピクセルあたり 1 ポイント）
 	Use a certificate	証明書を使用
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	クラウド証明書を使用 (ICP-Brasil: BirdID、VIDaaS、NeoID、SafeID…)
@@ -2922,6 +3037,7 @@ signature pad	Type	入力
 	Version {v}	バージョン {v}
 	Vertex snapping	頂点にスナップ
 	Vertical coordinates	縦方向の座標
+	Vertical resolution	垂直解像度
 	Vertical reversed	縦（逆順）
 	Vertical text cannot be moved with this selection.	この選択範囲では縦書きのテキストを移動できません。
 	Vertical to horizontal conversion	縦方向から横方向への換算
@@ -2943,6 +3059,8 @@ signature pad	Type	入力
 	Voice and Speech	音声とスピーチ
 	Voice:	音声:
 	Volume:	音量:
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	スキャナーの処理が終わるまで待つか、スキャナーを使用している他のプログラムを閉じて、「スキャンを続行」を選んでください。
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	スキャナーの処理が終わるまで待つか、スキャナーを使用している他のプログラムを閉じて、「再試行」を選んでください。
 	Waiting for the system print dialog…	システムの印刷ダイアログを待っています…
 	Waiting for your approval in the browser…	ブラウザーでの承認を待っています…
 	Warning	Warning
@@ -2957,6 +3075,8 @@ signature pad	Type	入力
 	White on black	黒地に白
 	Whole words only	単語単位で検索
 document scrollbar width	Wide	太い
+	Will use the bed.	原稿台を使います。
+	Will use the feeder.	フィーダーを使います。
 	Window Options	ウィンドウのオプション
 	Windows store  ·  	Windows 証明書ストア · 
 	WKT definition	WKT 定義
@@ -3058,11 +3178,13 @@ document scrollbar width	Wide	太い
 @plural	{n} more field calculates too early.|{n} more fields calculate too early.	さらに {n} 個のフィールドが早すぎます。
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	ほかに {n} 個の数式が存在しないフィールドを読み取ります。
 @plural	{n} object selected|{n} objects selected	{n}個のオブジェクトを選択中
+	{n} of {m} pages were scanned.	{m} ページ中 {n} ページをスキャンしました。
 	{n} pages	{n} ページ
 	{n} pages could not be searched; results are incomplete.	{n} ページを検索できませんでした。結果は不完全です。
 	{n} pages scanned	{n} ページをスキャンしました
 	{n} pages selected	{n} ページ選択中
 	{n} pages selected.	{n} ページ選択中。
+	{n} pages were scanned.	{n} ページをスキャンしました。
 @plural	{n} page|{n} pages	{n} ページ
 @plural	{n} reply|{n} replies	{n} 件の返信
 	{n} selected	{n} 個選択
@@ -3082,6 +3204,7 @@ document scrollbar width	Wide	太い
 	{who} in this document wants to open this address in your browser:	この文書内の{who}が、次のアドレスをブラウザーで開こうとしています：
 	{who} in this document wants to open your email app with this address:	この文書内の{who}が、次のアドレスでメールアプリを開こうとしています：
 	{words} on {pages}	{pages} で{words}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} in、{pxw} × {pxh} ピクセル、{size}
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	—（保護は保存時に適用されます）
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	「{name}」は開いた後または最後に保存した後にディスク上で変更されました。今保存すると、その新しい版がこの版で置き換えられます。

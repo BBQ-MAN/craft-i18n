@@ -33,6 +33,7 @@
 	1 page scanned	1 сканирана страница
 	1 page selected	Избрана е 1 страница
 	1 page selected.	Избрана е 1 страница.
+	1 page was scanned.	Сканирана е 1 страница.
 	180 degrees	180 градуса
 	4 x 6 in label (101.6 x 152.4 mm)	Етикет 4 × 6 in (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 цифра, A буква, O буква или цифра, X произволен знак
@@ -48,6 +49,7 @@
 	a bookmark cannot be moved inside itself	отметка не може да бъде преместена в самата себе си
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Независимо разработено PDF приложение с отворен код, написано на Rust. MIT OR Apache-2.0.
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	колона е твърде тясна: направете областта по-широка, дайте ѝ повече място или използвайте по-малко колони или по-малко разстояние между тях
+	A cover on the scanner is open.	Капак на скенера е отворен.
 	A diagonal CONFIDENTIAL watermark on every page.	Диагонален воден знак CONFIDENTIAL на всяка страница.
 	a document must keep at least one page	документът трябва да съдържа поне една страница
 	A document needs at least one page: copy instead	Документът трябва да има поне една страница: използвайте копиране
@@ -56,6 +58,7 @@
 	A form field has additional actions	Поле на формуляр има допълнителни действия
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локалният модел не е водещ облачен модел: може да греши, а дълъг отговор отнема време на процесор. Проверявайте важното и съобразявайте размера на модела с тази машина, преди да го изтеглите.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Лого или име вляво от разделите, където би ги показала заглавната лента: на PdfCraft или на вашата фирма.
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Броят страници спира подавача след толкова листа. Отказът спира прехвърлянето по-рано; вече получените страници остават в документа.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Изображение покрива страница {pages} (сканиране?), затова фонът няма да се вижда там.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG или SVG файл. Чете се от това място при всяко стартиране на PdfCraft.
 	A selected field has no widget on any page, so the fields can't be edited together.	Едно от избраните полета няма елемент на нито една страница, затова полетата не могат да се редактират заедно.
@@ -184,6 +187,7 @@
 	Advanced options	Разширени опции
 	Advanced Options {chevron}	Разширени опции {chevron}
 	Advanced search…	Разширено търсене…
+	Advanced…	Разширени…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	След „Подпиши“ въведете OTT кода от приложението mSzafir в прозореца на CloudSigner и одобрете подписа в приложението. Ако постоянният OTT код в CloudSigner е включен, кодът се иска само веднъж на няколко минути.
 	AI Assistant	AI асистент
 	AI assistant	AI асистент
@@ -205,6 +209,7 @@
 	All multimedia objects are tagged	Всички мултимедийни обекти са етикетирани
 	All open documents	Всички отворени документи
 	All page content is tagged	Цялото съдържание на страниците е етикетирано
+	All pages asks the driver for the whole stack.	„Всички страници“ иска от драйвера целия стек.
 	All pages in document	Всички страници в документа
 	All pages in range	Всички страници в диапазона
 	All permissions	Всички разрешения
@@ -293,6 +298,7 @@
 	Author title	Длъжност на автора
 	Auto follows the system's text size. Pages always render at the display's full resolution.	Автоматично следва размера на текста в системата. Страниците винаги се изобразяват с пълната разделителна способност на екрана.
 	Auto portrait/landscape	Автоматично портрет/пейзаж
+	Auto-deskew	Автоматично изравняване
 	Auto-detect	Автоматично откриване
 	Auto-rotate pages	Автоматично завъртане на страниците
 	Auto-size text to fit redaction region	Автоматично оразмеряване на текста според областта на заличаване
@@ -309,6 +315,7 @@
 	Balanced	Балансирано
 	Balanced and Compact reduce image quality to make a smaller file. Text and forms stay editable.	„Балансирано“ и „Компактно“ намаляват качеството на изображенията, за да намалят размера на файла. Текстът и формулярите остават редактируеми.
 	Bates numbering	Номериране на Бейтс
+	Bed	Стъкло
 	Before each selected page (select pages in Organize)	Преди всяка избрана страница (изберете страници в Организиране)
 	Before the number	Пред числото
 	Behind text and images	Зад текста и изображенията
@@ -357,6 +364,7 @@
 	Calibrate…	Калибриране…
 	Callout	Изнесена бележка
 	Can't be read: {e}	Не може да бъде прочетен: {e}
+	Cancel reverse sides	Отмени оборотните страни
 	Cancelled	Отменено
 	Cancelling…	Отказване…
 	Case-sensitive	Чувствително към регистъра
@@ -413,9 +421,13 @@
 	Check for updates…	Провери за актуализации…
 	Check spelling	Проверка на правописа
 	Check spelling while typing	Проверка на правописа при писане
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	Проверете дали в подаващото устройство има хартия или изчакайте скенерът да приключи, после изберете „Продължи сканирането“.
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	Проверете дали в подаващото устройство има хартия или изчакайте скенерът да приключи, после изберете „Опитай отново“.
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Проверете дали етикетите се четат в реда, в който би чел зрящ читател. Използвайте инструмента „Ред на четене“ или панела „Етикети“, за да го коригирате.
 	Check the pages	Проверете страниците
 	Check the pages of {name}: {why}	Проверете страниците на {name}: {why}
+	Check the scanner is on and connected, then choose Continue.	Проверете дали скенерът е включен и свързан, после изберете „Продължи сканирането“.
+	Check the scanner is on and connected, then choose Try again.	Проверете дали скенерът е включен и свързан, после изберете „Опитай отново“.
 	CheckBox	Квадратче за отметка
 	Checkbox	Отметка (квадратче)
 	Checked	Отметнато
@@ -423,6 +435,7 @@
 	Checking Hungarian OCR installation…	Проверка на инсталацията на унгарското OCR…
 	Checking Options ({on} of 32 in all categories)	Опции за проверка ({on} от 32 във всички категории)
 	Checking pages…	Проверка на страниците…
+	Checking the scanner…	Проверка на скенера…
 	Checkmark	Отметка
 	Choose a digital ID file	Изберете файл с цифров идентификатор
 	Choose a folder for the exported files	Изберете папка за експортираните файлове
@@ -459,8 +472,11 @@
 	Clear personal dictionary	Изчистване на личния речник
 	Clear Recent Files	Изчисти последно отваряните файлове
 	Clear redaction marks	Изчисти маркировките за заличаване
+	Clear region	Изчисти областта
 	Clear search	Изчистване на търсенето
 	Clear selection / close find	Изчисти избора / затвори търсенето
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	Отстранете заседналата хартия и заредете останалите листове подравнени, после изберете „Продължи сканирането“.
+	Clear the jam and load the sheets squarely, then choose Try again.	Отстранете заседналата хартия и заредете листовете подравнени, после изберете „Опитай отново“.
 	Click on the page to add a {tool}, or drag to set its size	Щракнете върху страницата, за да добавите {tool}, или плъзнете, за да зададете размера
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Щракнете върху страницата, за да добавите текст; всяко щракване създава ново поле, а ✓ завършва. Плъзнете елементите, за да ги преместите, плъзнете ъгъл, за да промените размера, щракнете двукратно върху текст, за да го редактирате.
 	Click text or an image to edit it	Щракнете върху текст или изображение, за да го редактирате
@@ -477,6 +493,8 @@
 	Close Tab	Затваряне на раздела
 	Close Tabs to the Right	Затваряне на разделите вдясно
 	Close tabs to the right	Затвори разделите вдясно
+	Close the feeder cover and check the paper, then choose Continue.	Затворете капака на подаващото устройство и проверете хартията, после изберете „Продължи сканирането“.
+	Close the feeder cover and check the paper, then choose Try again.	Затворете капака на подаващото устройство и проверете хартията, после изберете „Опитай отново“.
 	Close Window	Затвори прозореца
 	Close window	Затвори прозореца
 	Closed arrow	Затворена стрелка
@@ -492,6 +510,7 @@
 	Collate	Подреди по копия
 	Color contrast	Цветови контраст
 	Color Document	Цветен документ
+	Color document	Цветен документ
 	Color Images	Цветни изображения
 	Color Photo	Цветна снимка
 	Color Spaces	Цветови пространства
@@ -542,11 +561,16 @@
 	Configure New Digital ID	Конфигурирай нов цифров идентификатор
 	Confirm Password	Потвърдете паролата
 	Conformance level:	Ниво на съответствие:
+	Connected by USB.	Свързан чрез USB.
 	Connected lines	Свързани линии
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	Свързан през мрежата (уеб услуги). Опциите идват от този драйвер, не от USB.
 	Console	Конзола
 	Content copying	Копиране на съдържание
 	Content copying for accessibility	Копиране на съдържание за достъпност
 	Content Streams	Потоци на съдържанието
+	Continue scanning	Продължи сканирането
+	Continue scanning fronts	Продължи сканирането на предните страни
+	Continue scanning reverse sides	Продължи сканирането на оборотните страни
 	Continuous scrolling	Непрекъснато превъртане
 	Convert	Конвертиране
 	Convert colors	Преобразувай цветовете
@@ -626,7 +650,7 @@
 	Create link	Създай връзка
 	Create links from URLs	Създай връзки от URL адреси
 	Create Link…	Създай връзка…
-	Create PDF	Създаване на PDF
+	Create PDF	Създай PDF
 	Create PDF Comment Summary	Създай PDF обобщение на коментарите
 	Create PDF comment summary…	Създай обобщение на коментарите в PDF…
 	Create PDF from clipboard	Създай PDF от клипборда
@@ -643,7 +667,9 @@
 	Created a PDF from the first {n} files	Създаден е PDF от първите {n} файла
 	Created a PDF from {n} files	Създаден е PDF от {n} файла
 	Created a PDF from {n} files; left out: {names}	Създаден е PDF от {n} файла; пропуснати: {names}
+	Created Scan.pdf	Създаден е Scan.pdf
 	Created {n} links	Създадени са {n} връзки
+	Created {n} scanned files	Създадени са {n} сканирани файла
 	Creates 1 file from {n} pages.	Създава 1 файл от {n} страници.
 	Creates {f} files from {n} pages.	Създава {f} файла от {n} страници.
 	Credit Cards	Кредитни карти
@@ -816,6 +842,7 @@ key	Delete	Delete
 	Drag a rectangle around the area to copy	Очертайте правоъгълник около областта за копиране
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Очертайте правоъгълник върху страница, за да я изрежете; щракнете двукратно върху страница за „Задай полета на страницата“
 	Drag a rectangle to create a link; double-click a link to edit it	Очертайте правоъгълник, за да създадете връзка; щракнете двукратно върху връзка, за да я редактирате
+	Drag on the preview to choose a region. An empty selection scans the whole area.	Плъзнете върху прегледа за област. Празната селекция сканира цялата площ.
 	Drag the corners onto the document's edges, then choose Enhance page.	Плъзнете ъглите до краищата на документа, след това изберете „Подобри страницата“.
 	Drag the selection to move it. Esc clears the selection.	Плъзнете избраното, за да го преместите. Esc премахва избора.
 	Drag to draw the area where the signature should appear.	Плъзнете, за да очертаете областта, където да се появи подписът.
@@ -834,9 +861,12 @@ key	Delete	Delete
 	Drawing	Рисуване
 	Drawing scale	Мащаб на чертежа
 	Drawing scale changes. Use Actual size for full-scale plans.	Мащабът на чертежа се променя. Използвайте Действителен размер за планове в оригинален мащаб.
+	Driver default	По подразбиране на драйвера
 	Drop PDFs, images, text files or folders here, or choose them.	Пуснете тук PDF файлове, изображения, текстови файлове или папки или ги изберете.
 	Drop-down list	Падащ списък
 	Dropdown Properties	Свойства на падащ списък
+	Duplex	Двустранно
+	Duplex is not offered.	Двустранното сканиране не се предлага.
 	Duplicate "{name}" onto:	Дублирай „{name}“ върху:
 	Duplicate Field	Дублиране на поле
 	Duplicate field	Дублирай полето
@@ -984,6 +1014,7 @@ key	Esc	Esc
 	Failed	Неуспешно
 scroll speed	Fast	Висока
 	February	Февруари
+	Feeder	Подавач
 	Field descriptions	Описания на полетата
 	Field is used for file selection	Полето се използва за избор на файл
 	Field list	Списък с полета
@@ -1050,6 +1081,7 @@ scroll speed	Fast	Висока
 	Find untagged content	Намиране на немаркирано съдържание
 	Finding document fonts…	Търсене на шрифтове за документа…
 	Finding fields… page {d} of {t}	Търсене на полета… страница {d} от {t}
+	Finish	Готово
 	Finish or discard the text being edited before selecting several objects.	Завършете или отменете редактирането на текста, преди да изберете няколко обекта.
 	First / last page	Първа / последна страница
 	First commit	Първи къмит
@@ -1116,10 +1148,15 @@ scroll speed	Fast	Висока
 	Found {n} untagged content problems.	Открити са {n} проблема с немаркирано съдържание.
 	From a PDF page or an image	От страница на PDF или изображение
 	From colour	От цвят
+	From scanner…	От скенер…
 	From template	От шаблон
 	From {file}	От {file}
 	From:	От:
 	Front side only	Само лицева страна
+	front(s)	предни
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	Сканирани предни страни: {n}. Обърнете листа върху стъклото, после изберете „Сканирай оборотните страни“.
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	Сканирани предни страни: {n}. Обърнете купчината, така че последният лист да е отгоре, заредете я отново, после изберете „Сканирай оборотните страни“.
+	Full area	Цялата площ
 	Full screen mode	Цял екран
 	Full screen mode ({key}); Esc leaves it	Цял екран ({key}); Esc
 	Generate styled PDF	Създаване на форматиран PDF
@@ -1217,8 +1254,10 @@ key	Home	Home
 	Insert pages from {name}	Вмъкни страници от {name}
 	Insert pages from {name} — 1 field renamed	Вмъкни страници от {name} — 1 поле е преименувано
 	Insert pages from {name} — fields renamed	Вмъкни страници от {name} — полета са преименувани
+	Insert scanned pages	Вмъкни сканираните страници
 	Insert text	Вмъкни текст
 	Inserted	Вмъкнато
+	Inserted scanned pages	Вмъкнати са сканираните страници
 	Inserting, deleting, and rotating pages	Вмъкване, изтриване и завъртане на страници
 	Inset	Вдлъбнато
 	Inspector	Инспектор
@@ -1229,6 +1268,7 @@ key	Home	Home
 	Installed version: {v}	Инсталирана версия: {v}
 	Integrity	Цялостност
 	Intended usage	Предназначение
+	Intent	Предназначение
 	Interface and appearance	Интерфейс и изглед
 	Interface font	Шрифт на интерфейса
 	Interface size	Размер на интерфейса
@@ -1237,6 +1277,7 @@ key	Home	Home
 	Invalid page range	Невалиден диапазон от страници
 	Invert colors	Обръщане на цветовете
 	Invert everything	Обръщане на всичко
+	Invert tones	Обърни тоновете
 	Inverted page background	Фон на обърнатата страница
 	Inverted text	Обърнат текст
 	Invisible Rectangle	Невидим правоъгълник
@@ -1274,10 +1315,13 @@ key	Home	Home
 	Keyboard shortcuts	Клавишни комбинации
 	Keychain  ·  	Keychain  ·  
 	Labels: {preview}. Later pages keep their labels.	Етикети: {preview}. Следващите страници запазват етикетите си.
+	Lamp	Лампа
+	Lamp on	Лампата е включена
 	Landscape and Portrait Pages	Пейзажни и портретни страници
 	Landscape Pages	Пейзажни страници
 	Landscape pages	Пейзажни страници
 	Language and spelling	Език и правопис
+	Large scan	Голямо сканиране
 	Larger pages	По-големи страници
 	Larger text	По-голям текст
 	Larger thumbnails	По-големи миниатюри
@@ -1325,9 +1369,12 @@ key	Home	Home
 	List items belong in a list. Fix the list's tags.	Елементите на списък трябва да са в списък. Поправете етикетите на списъка.
 	List labels and bodies belong in a list item. Fix the list's tags.	Етикетите и телата на списъка трябва да са в елемент на списък. Поправете етикетите на списъка.
 	List PKCS #11 token (smart card, HSM) signing identities	Извеждане на списък с идентичности за подписване от PKCS #11 токени (чип карти, HSM)
+	Listing scanners…	Изброяване на скенери…
 	Lists	Списъци
 	Load document font	Зареждане на шрифт на документа
 	Load font…	Зареждане на шрифт…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	Заредете още листове и изберете „Продължи сканирането“ или изберете „Готово“, за да запазите сканираното.
+	Load sheets in the feeder, then choose Try again.	Заредете листове в подаващото устройство, после изберете „Опитай отново“.
 	Local and private	Локално и поверително
 	Local cross-PDF links require the desktop app	Локалните връзки между PDF файлове изискват настолното приложение
 	Location: 	Местоположение: 
@@ -1336,6 +1383,8 @@ key	Home	Home
 	Logical Reading Order	Логически ред на четене
 	Logo	Лого
 	Logo and name	Лого и име
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	Проверете скенера за съобщение или отворена врата или капак и отстранете причината, после изберете „Продължи сканирането“.
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	Проверете скенера за съобщение или отворена врата или капак и отстранете причината, после изберете „Опитай отново“.
 	Looking for a local model runtime…	Търсене на локален моделен рантайм…
 	Looking for certificates…	Търсене на сертификати…
 	Looking for PDFs…	Търсене на PDF файлове…
@@ -1353,6 +1402,7 @@ key	Home	Home
 	Make searchable (recognize text)	Възможност за търсене (разпознаване на текст)
 	Manage embedded index	Управлявай вградения индекс
 	Manage plugins…	Управление на плъгини…
+	Manual duplex needs one reverse side for each front.	Ръчният двустранен режим изисква обратна страна за всяка предна.
 	Maps to standard role	Съответства на стандартна роля
 	March	Март
 	Margins (in)	Полета (in)
@@ -1396,6 +1446,8 @@ key	Home	Home
 	Midpoints	Средни точки
 	Minimum	Минимално
 	minimum	минимума
+	Mirror	Огледало
+	Mirror the page	Огледай страницата
 	Missing field	Липсващо поле
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Липсва в реда на изчисляване, записан в PDF файла: други програми за PDF може да не го изчисляват.
 	Mixed	Различни стойности
@@ -1513,6 +1565,7 @@ key	Home	Home
 	no output folder was chosen	не е избрана папка за изхода
 	No pages match those choices	Няма страници, отговарящи на този избор
 	No pages selected	Няма избрани страници
+	No pages were scanned.	Не са сканирани страници.
 	No PDFs in this folder yet	В тази папка все още няма PDF файлове
 	No PDFs, images or text files found in {folder}	Не са открити PDF файлове, изображения или текстови файлове в {folder}
 	No photo chosen	Няма избрана снимка
@@ -1527,6 +1580,7 @@ key	Home	Home
 	No reference yet	Все още няма образец
 	No release notes were provided.	Няма предоставени бележки към изданието.
 	No scanner found	Не е намерен скенер
+	No scanner is connected.	Няма свързан скенер.
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Не са намерени скенери. Проверете дали скенерът е включен и свързан, или въведете мрежовия му адрес.
 	No security	Без защита
 	No sheets	Няма листове
@@ -1624,6 +1678,8 @@ animation effects	On	Включени
 	Open OFD (early alpha)…	Отваряне на OFD (ранна алфа)…
 	Open previous PDF in folder	Отвори предишния PDF в папката
 	Open tabs and edits update the search automatically.	Отворените раздели и редакциите обновяват търсенето автоматично.
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	Отворете капака, отстранете евентуално заседнала хартия или едновременно подадени листове и заредете останалите листове подравнени, после изберете „Продължи сканирането“.
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	Отворете капака, отстранете евентуално заседнала хартия или едновременно подадени листове и заредете листовете подравнени, после изберете „Опитай отново“.
 	Open the file as it was saved then	Отвори файла във вида, в който е записан тогава
 	Open the older version first	Първо отворете по-старата версия
 	Open this local PDF?	Да се отвори ли този локален PDF?
@@ -1639,6 +1695,7 @@ animation effects	On	Включени
 	Opening {name}…	Отваряне на {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Отваря предпочитанията на драйвера на принтера. Те се запазват за всеки печат от този компютър; избраните тук копия, двустранен печат, сива скала и хартия продължават да важат.
 	Open…	Отвори…
+	Optical resolution {x} × {y} dpi.	Оптична разделителна способност {x} × {y} dpi.
 	Optimization cancelled	Оптимизирането е отказано
 	Optimization is already running	Оптимизирането вече се изпълнява
 	Optimize	Оптимизиране
@@ -1775,6 +1832,7 @@ animation effects	On	Включени
 	Permitted actions after certifying	Разрешени действия след сертифициране
 	Phone Number	Телефонен номер
 	Phone Numbers	Телефонни номера
+	Photometric	Фотометрия
 	Pick a tool in the quick bar, or type above.	Изберете инструмент от бързата лента или пишете по-горе.
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Изображения покриват страници {pages} (сканирания?), затова фонът няма да се вижда там.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Изображенията се нуждаят от алтернативен текст, който ги описва, или трябва да са маркирани като декоративни. Добавете алтернативен текст към всяка фигура.
@@ -1827,7 +1885,9 @@ animation effects	On	Включени
 	Preset	Предварителна настройка
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	Предотвратяване на трептене с G-SYNC/FreeSync (при следващото стартиране)
 	Preview	Преглед
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	Прегледът е за стъклото. Задайте област в инчове по-долу или оставете празна за целия лист.
 	Preview unavailable: {e}	Няма преглед: {e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	Прегледът ползва стъклото. Превключете източника на Стъкло или сканирайте без преглед.
 	Preview: page {p} of {n}	Преглед: страница {p} от {n}
 	Previous ({key})	Предишно ({key})
 	Previous / next page	Предишна / следваща страница
@@ -1940,8 +2000,10 @@ animation effects	On	Включени
 	Reduce file size	Намали размера на файла
 	Reduce file size…	Намали размера на файла…
 	Reference:	Образец:
-	Refresh	Обновяване
+	Refresh	Опресни
+	Refresh lists scanners. It does not feed paper.	Опресни отново изброява скенерите. Не подава хартия.
 	Refresh plugins	Обновяване на плъгините
+	Region in inches. Leave the width or the height at zero to scan the whole area.	Област в инчове. Оставете ширина или височина нула за цялата площ.
 	Regularity	Регулярност
 	Rejected	Отхвърлено
 	Release notes	Бележки към изданието
@@ -2055,6 +2117,9 @@ animation effects	On	Включени
 	Reverse closed arrow	Обърната затворена стрелка
 	Reverse open arrow	Обърната отворена стрелка
 	Reverse pages	Обърнат ред на страниците
+	reverse side(s)	оборотни
+	Reverse sides	Оборотни страни
+	Reverse sides interleaved.	Оборотните страни са вмъкнати последователно.
 	Reverse the order	Обърни реда
 	Revert	Върни последно записаното
 	Revert changes	Отмени промените
@@ -2154,12 +2219,28 @@ animation effects	On	Включени
 	Scan & OCR	Сканиране и OCR
 	Scan and text recognition	Сканиране и разпознаване на текст
 	Scan correction	Корекция на сканиране
+	Scan interrupted	Сканирането е прекъснато
 	Scan next page	Сканиране на следващата страница
 	Scan processing cancelled	Обработката на сканиранията е отменена
+	Scan reverse side now (1 front)	Сканирай оборотната страна сега (1 предна)
+	Scan reverse sides	Сканирай оборотните страни
+	Scan reverse sides now ({n} fronts)	Сканирай оборотните страни сега ({n} предни)
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	Сканирайте предната страна, обърнете листа върху стъклото и сканирайте обратната.
+	Scan the fronts before the reverse sides.	Сканирайте предните страни преди оборотните.
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Сканирайте предните, обърнете купчината (последният отгоре), после оборотните. Страниците се редуват предна, обратна, …
+	Scan the missing reverse sides, then choose Finish.	Сканирайте липсващите оборотни страни, после изберете „Готово“.
 	Scanned pages need OCR. Reading order follows extracted page text.	Сканираните страници изискват OCR. Редът на четене следва извлечения текст на страницата.
 	Scanned text detected	Открит е сканиран текст
 	Scanner	Скенер
+	Scanner settings	Настройки на скенера
 	Scanner's full area	Цялата площ на скенера
+	Scanning front {n} of {t}…	Сканиране на предна {n} от {t}…
+	Scanning front {n}…	Сканиране на предна {n}…
+	Scanning needs Windows (WIA) in this version.	Сканирането изисква Windows (WIA) в тази версия.
+	Scanning page {n} of {t}…	Сканиране на страница {n} от {t}…
+	Scanning page {n}…	Сканиране на страница {n}…
+	Scanning reverse side {n} of {t}…	Сканиране на обратна {n} от {t}…
+	Scanning reverse side {n}…	Сканиране на обратна {n}…
 	Scanning was stopped	Сканирането беше спряно
 	Scanning…	Сканиране…
 	Screen / email	Екран / имейл
@@ -2235,6 +2316,8 @@ animation effects	On	Включени
 	Sending…	Изпраща се…
 	Sent to {printer}: {msg}	Изпратено до {printer}: {msg}
 	Separate PDFs	Отделни PDF файлове
+	Separate the sheets and load the remaining ones, then choose Continue.	Разделете листовете и заредете останалите, после изберете „Продължи сканирането“.
+	Separate the sheets and load them again, then choose Try again.	Разделете листовете и ги заредете отново, после изберете „Опитай отново“.
 	Separator style:	Стил на разделителя:
 	Sepia	Сепия
 	Sepia night	Нощна сепия
@@ -2267,6 +2350,7 @@ animation effects	On	Включени
 	Set the image of {name}	Задай изображението на {name}
 	Set to current page ({n})	Задай текущата страница ({n})
 	Set to zero	Задай нула
+	Settings this source offers. Leave a control alone to keep the driver’s value.	Настройки, които този източник предлага. Оставете контрола за стойността на драйвера.
 	Shadings	Преливания
 	Shared Field Properties	Общи свойства на полетата
 	Sheet {s} of {n}	Лист {s} от {n}
@@ -2411,9 +2495,11 @@ action wizard	Start	Старт
 	Start page number	Начален номер на страница
 	Steps	Стъпки
 	Sticky note	Бележка
+	Stop	Стоп
 	Stop reading	Спиране на четенето
 	Straighten scanned page	Изправяне на сканирана страница
 	Straighten skewed scans	Изправяне на наклонени сканирани страници
+	Straighten the page	Изправи страницата
 	Strength: {s}	Надеждност: {s}
 	Strikethrough text	Зачертай текст
 	String length (0 turns it off)	Дължина на нишката (0 го изключва)
@@ -2435,6 +2521,8 @@ action wizard	Start	Старт
 	Swap width and height	Размяна на ширина и височина
 	Switch light / dark theme	Превключи светла / тъмна тема
 	Switch page theme	Смяна на темата на страницата
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	Изключете скенера и го включете отново, като изчакате да е готов, после изберете „Продължи сканирането“.
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	Изключете скенера и го включете отново, като изчакате да е готов, после изберете „Опитай отново“.
 	Switch to List view to change the pages it takes.	Превключете към изглед списък, за да промените кои страници се вземат.
 	Switch to two-page view first to show the cover page	Първо превключете към изглед с две страници, за да се покаже корицата
 	System default	По подразбиране за системата
@@ -2496,6 +2584,7 @@ action wizard	Start	Старт
 	The answer proposes formatting changes.	Отговорът предлага промени във форматирането.
 	The answer stopped unexpectedly.	Отговорът спря неочаквано.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API ключът ще бъде изпратен към този адрес без криптиране. Използвайте https://, освен ако сървърът не е в мрежа, на която имате доверие.
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Стъклото сканира по една страница. Сканирайте предна, обърнете, после обратна.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Редът на изчисляване има {n} запис, който не изчислява нищо. „Поправяне на реда“ го премахва.|Редът на изчисляване има {n} записа, които не изчисляват нищо. „Поправяне на реда“ ги премахва.
 	the certificate expired on {date}	сертификатът е изтекъл на {date}
 	The checker found 1 problem which may prevent the document from being fully accessible.	Проверката откри 1 проблем, който може да попречи документът да бъде напълно достъпен.
@@ -2526,7 +2615,12 @@ action wizard	Start	Старт
 	The document's security settings don't allow filling in form fields	Настройките за защита на документа не позволяват попълване на полетата на формуляра
 	The document's security settings don't allow printing	Настройките за защита на документа не позволяват печат
 	The document's security settings don't allow this change	Настройките за защита на документа не позволяват тази промяна
+	The driver may accept a turn and leave the picture as it was.	Драйверът може да приеме завъртане и пак да остави изображението както е било.
+	The driver reports a paper jam.	Драйверът съобщава за заседнала хартия.
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	Драйверът съобщава за лист в очакване. Битът може да остане след празна тава.
 	The existing action will be preserved.	Съществуващото действие ще бъде запазено.
+	The feeder ran out of paper.	В подаващото устройство свърши хартията.
+	The feeder took more than one sheet.	Подаващото устройство взе повече от един лист.
 	The field properties could not be changed.	Свойствата на полетата не можаха да бъдат променени.
 	The field properties dialog is no longer open.	Прозорецът със свойства на полетата вече не е отворен.
 	The field {name} no longer exists.	Полето {name} вече не съществува.
@@ -2536,6 +2630,7 @@ action wizard	Start	Старт
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Формулярът изисква да бъде изпратен до {u}; PdfCraft не изпраща данни от формуляри. Запишете документа, за да запазите въведеното.
 	The form asks viewers to make appearances (NeedAppearances)	Формулярът изисква от програмите за преглед да генерират изгледите на полетата (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	Предназначението на формуляра и полетата му (имена, типове, ред на табулация)
+	The fronts already scanned are kept for the reverse-side pass.	Вече сканираните предни страни са запазени за преминаването на оборотните.
 	The image couldn't be used as an icon: {e}	Изображението не може да се използва като икона: {e}
 	The image has been copied ({w} × {h} pixels)	Изображението е копирано ({w} × {h} пиксела)
 	The image has been copied as a {ext} file	Изображението е копирано като файл {ext}
@@ -2558,12 +2653,14 @@ action wizard	Start	Старт
 	The order saved in the PDF needs tidying	Редът, запазен в PDF файла, има нужда от подреждане
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Другите подписи ({names}) ще отчетат, че документът е променен след подписването им. Проверете ги отново: нищо не гарантира, че ще останат валидни.
 	The page has changed; select the image again	Страницата е променена; изберете изображението отново
+	The pages already scanned were kept in the document.	Вече сканираните страници са запазени в документа.
 	the password is incorrect	паролата е грешна
 	The password is incorrect.	Паролата е грешна.
 	The password is only used to read the file; it isn't saved.	Паролата се използва само за четене на файла; тя не се запазва.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифтовете за PDF текст не могат да изобразят „{c}“ ({code}). Изберете поддържан текст.
 	The PIN is incorrect.	ПИН кодът е грешен.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Цифровите идентификатори от токените PKCS #11 не можаха да бъдат изброени: {e}
+	The preview could not be shown.	Прегледът не можа да се покаже.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Собствените настройки на драйвера на принтера за този печат: тава за хартия, вид хартия, довършителна обработка и други.
 	The provider's page didn't come back in time. Try again.	Страницата на доставчика не се върна навреме. Опитайте отново.
 	The raw text was truncated to what fits.	Суровият текст е съкратен.
@@ -2573,8 +2670,23 @@ action wizard	Start	Старт
 	The release is not a published stable update. Try again later.	Това издание не е публикувана стабилна актуализация. Опитайте отново по-късно.
 	The replacement file doesn't have that many pages.	Заместващият файл няма толкова страници.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Ограниченията важат за получателите без „Всички разрешения“. Прилага се при записване.
+	The reverse sides already scanned are kept.	Вече сканираните оборотни страни са запазени.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	редовете са твърде ниски: направете областта по-висока или използвайте по-малко редове или по-малко разстояние между тях
 	The same password is tried on each file.	Една и съща парола се опитва за всеки файл.
+	The same printer is also available over the network.	Същият принтер е достъпен и през мрежата.
+	The same printer is also available over USB.	Същият принтер е достъпен и през USB.
+	The scan could not be started.	Сканирането не можа да стартира.
+	The scan produced no pages.	Сканирането не създаде страници.
+	The scan was cancelled at the scanner.	Сканирането беше отменено от скенера.
+	The scan was interrupted.	Сканирането беше прекъснато.
+	The scanner has a paper jam.	В скенера има заседнала хартия.
+	The scanner is busy, or the feeder has no paper.	Скенерът е зает или във подаващото устройство няма хартия.
+	The scanner is busy.	Скенерът е зает.
+	The scanner is offline or needs attention.	Скенерът е офлайн или изисква внимание.
+	The scanner list could not be refreshed.	Списъкът със скенери не можа да се опресни.
+	The scanner needs attention.	Скенерът изисква внимание.
+	The scanner reported a lamp or device error.	Скенерът съобщи за грешка на лампата или устройството.
+	The scanner reported a paper problem (a jam or several sheets fed together).	Скенерът съобщи за проблем с хартията (заседнала хартия или няколко едновременно подадени листа).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Действителният брой пиксели на инч на екрана. Калибрирайте с линийка, за да може действителният размер (100%) да показва страниците в истинския им размер.
 	The selected area has been copied ({w} × {h} pixels)	Избраната област е копирана ({w} × {h} пиксела)
 	The selected fields could not be found. Select them again.	Избраните полета не бяха намерени. Изберете ги отново.
@@ -2710,6 +2822,7 @@ action wizard	Start	Старт
 	Tooltip:	Подсказка:
 	Top-level bookmarks ({n})	Отметки от най-горно ниво ({n})
 	TR must be a child of Table, THead, TBody, or TFoot	TR трябва да е дъщерен елемент на Table, THead, TBody или TFoot
+	Transfer format: {format}.	Формат на пренос: {format}.
 	Transform image	Трансформиране на изображение
 	Translate	Преведи
 	Translate with AI	Преведи с AI
@@ -2718,6 +2831,7 @@ action wizard	Start	Старт
 	Try again	Опитай отново
 	Try the form as people filling it in will see it	Изпробвайте формуляра така, както ще го виждат попълващите го
 	Turn upside down (180°)	Обърни наопаки (180°)
+	Turned left	Завъртяно наляво
 	two cells would both be named {name}	две клетки биха имали едно и също име {name}
 	Two-page view	Изглед с две страници
 	Two-sided:	Двустранен печат:
@@ -2764,8 +2878,10 @@ signature pad	Type	Въвеждане
 	Update header & footer…	Актуализирай горния и долния колонтитул…
 	Update watermark	Актуализирай водния знак
 	Update watermark…	Актуализирай водния знак…
+	Upside down	Наопаки
 	URL to submit to	URL за изпращане
 	US Letter	Американски Letter
+	USB	USB
 	Use 72 DPI (one point per pixel)	Използвай 72 DPI (една точка на пиксел)
 	Use a certificate	Използвай сертификат
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Използвай облачен сертификат (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
@@ -2810,6 +2926,7 @@ signature pad	Type	Въвеждане
 	Verify	Провери
 	Verify to see what the document needs.	Проверете, за да видите от какво се нуждае документът.
 	Version {v}	Версия {v}
+	Vertical resolution	Вертикална разделителна способност
 	Vertical reversed	Вертикално обратно
 	Vertical text cannot be moved with this selection.	Вертикалният текст не може да се премести с този избор.
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	Видеото, звукът и мултимедийното съдържание трябва да са етикетирани, за да бъдат обявявани. Етикетирайте мултимедийните анотации.
@@ -2828,6 +2945,8 @@ signature pad	Type	Въвеждане
 	Voice and Speech	Глас и реч
 	Voice:	Глас:
 	Volume:	Сила на звука:
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Изчакайте скенерът да приключи или затворете всяка друга програма, която го използва, после изберете „Продължи сканирането“.
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Изчакайте скенерът да приключи или затворете всяка друга програма, която го използва, после изберете „Опитай отново“.
 	Waiting for the system print dialog…	Изчакване на системния диалог за печат…
 	Waiting for your approval in the browser…	Изчакване на одобрението ви в браузъра…
 	watermark	воден знак
@@ -2841,6 +2960,8 @@ signature pad	Type	Въвеждане
 	White on black	Бяло на черно
 	Whole words only	Само цели думи
 document scrollbar width	Wide	Широка
+	Will use the bed.	Ще се ползва стъклото.
+	Will use the feeder.	Ще се ползва подавачът.
 	Window Options	Опции на прозореца
 	Windows store  ·  	Хранилище на Windows  ·  
 	Word count	Брой думи
@@ -2940,11 +3061,13 @@ document scrollbar width	Wide	Широка
 @plural	{n} more field calculates too early.|{n} more fields calculate too early.	Още {n} поле се изчислява твърде рано.|Още {n} полета се изчисляват твърде рано.
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	Още {n} формула чете липсващо поле.|Още {n} формули четат липсващи полета.
 @plural	{n} object selected|{n} objects selected	Избран е {n} обект|Избрани са {n} обекта
+	{n} of {m} pages were scanned.	Сканирани са {n} от {m} страници.
 	{n} pages	{n} страници
 	{n} pages could not be searched; results are incomplete.	Търсенето в {n} страници не беше възможно; резултатите са непълни.
 	{n} pages scanned	{n} сканирани страници
 	{n} pages selected	Избрани страници: {n}
 	{n} pages selected.	Избрани са {n} страници.
+	{n} pages were scanned.	Сканирани са {n} страници.
 @plural	{n} page|{n} pages	{n} страница|{n} страници
 @plural	{n} reply|{n} replies	{n} отговор|{n} отговора
 	{n} selected	Избрани: {n}
@@ -2962,6 +3085,7 @@ document scrollbar width	Wide	Широка
 	{who} in this document wants to open this address in your browser:	{who} в този документ иска да отвори този адрес в браузъра ви:
 	{who} in this document wants to open your email app with this address:	{who} в този документ иска да отвори имейл приложението ви с този адрес:
 	{words} on {pages}	{words} на {pages}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} in, {pxw} × {pxh} пиксела, {size}
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (защитата се прилага при записване)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	„{name}“ беше променен на диска след отварянето или последното записване. Записването сега заменя тази по-нова версия с настоящата.

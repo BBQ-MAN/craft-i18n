@@ -34,6 +34,7 @@
 	1 page	1 sayfa
 	1 page selected	1 sayfa seçildi
 	1 page selected.	1 sayfa seçildi.
+	1 page was scanned.	1 sayfa tarandı.
 	180 degrees	180 derece
 	4 x 6 in label (101.6 x 152.4 mm)	4 × 6 inç etiket (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 rakam, A harf, O harf veya rakam, X herhangi bir karakter
@@ -50,6 +51,7 @@
 	A button	Bir düğme
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Rust ile yazılmış, temiz oda tekniğiyle geliştirilmiş açık kaynaklı bir PDF uygulaması. MIT VEYA Apache-2.0.
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	bir sütun çok dar: alanı genişletin, sütuna daha fazla yer verin ya da daha az sütun veya daha az sütun aralığı kullanın
+	A cover on the scanner is open.	Tarayıcı kapağı açık.
 	A diagonal CONFIDENTIAL watermark on every page.	Her sayfada köşegen GİZLİ filigranı.
 	a document must keep at least one page	bir belge en az bir sayfayı korumalıdır
 	A document needs at least one page: copy instead	Bir belgenin en az bir sayfaya ihtiyacı vardır: bunun yerine kopyalayın
@@ -60,6 +62,7 @@
 	A link	Bir bağlantı
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Yerel bir model, en iyi bulut modeli değildir: yanılabilir ve uzun bir yanıt işlemcide zaman alır. Kritik olan her şeyi denetleyin; indirmeden önce modelin boyutunu bu makineyle karşılaştırın.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Sekmelerin solunda, başlık çubuğunun göstereceği yerde bir logo veya ad: PdfCraft'ınki ya da şirketinizinki.
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Sayfa sayısı, o kadar yapraktan sonra besleyiciyi durdurur. İptal aktarımı erken bitirir; alınan sayfalar belgede kalır.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Resimle kaplı sayfa (tarama mı?): {pages}; arka plan orada görünmez.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Bir PNG veya SVG dosyası. PdfCraft her başlatıldığında bu konumdan okunur.
 	A script	Bir komut dosyası
@@ -198,6 +201,7 @@
 	Advanced options	Gelişmiş seçenekler
 	Advanced Options {chevron}	Gelişmiş Seçenekler {chevron}
 	Advanced search…	Gelişmiş arama…
+	Advanced…	Gelişmiş…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	İmzala'dan sonra mSzafir uygulamasındaki OTT kodunu CloudSigner penceresine girin ve imzayı uygulamada onaylayın. CloudSigner'da kalıcı OTT kodu açıkken kod yalnızca birkaç dakikada bir istenir.
 	AI Assistant	Yapay zekâ asistanı
 	AI assistant	Yapay zeka asistanı
@@ -217,6 +221,7 @@
 	All multimedia objects are tagged	Tüm multimedya nesneleri etiketli
 	All open documents	Tüm açık belgeler
 	All page content is tagged	Tüm sayfa içeriği etiketli
+	All pages asks the driver for the whole stack.	“Tüm sayfalar” sürücüden tüm yığını ister.
 	All pages in document	Belgedeki tüm sayfalar
 	All pages in range	Aralıktaki tüm sayfalar
 	All permissions	Tüm izinler
@@ -306,6 +311,7 @@
 	Auto Detect	Otomatik Algıla
 	Auto follows the system's text size. Pages always render at the display's full resolution.	Otomatik, sistemin metin boyutunu izler. Sayfalar her zaman ekranın tam çözünürlüğünde işlenir.
 	Auto portrait/landscape	Otomatik dikey/yatay
+	Auto-deskew	Otomatik düzeltme
 	Auto-detect	Otomatik algıla
 	Auto-rotate pages	Sayfaları otomatik döndür
 	Auto-size text to fit redaction region	Metni karartma bölgesine sığacak şekilde otomatik boyutlandır
@@ -324,6 +330,7 @@
 	Balanced and Compact reduce image quality to make a smaller file. Text and forms stay editable.	Dengeli ve Kompakt, dosya boyutunu küçültmek için görüntü kalitesini düşürür. Metin ve formlar düzenlenebilir kalır.
 	Basic constraints	Temel kısıtlamalar
 	Bates numbering	Bates numaralandırması
+	Bed	Cam
 	Before each selected page (select pages in Organize)	Seçilen her sayfadan önce (Düzenle bölümünde sayfaları seçin)
 	Before the number	Sayının önünde
 	Behind text and images	Metin ve görsellerin arkasında
@@ -373,6 +380,7 @@
 	Calibrate…	Kalibre et…
 	Callout	Açıklama Balonu
 	Can't be read: {e}	Okunamıyor: {e}
+	Cancel reverse sides	Arka yüzleri iptal et
 	Cancelled	İptal edildi
 	Cancelling…	İptal ediliyor…
 	Case-sensitive	Büyük/küçük harfe duyarlı
@@ -435,9 +443,13 @@
 	Check for updates…	Güncellemeleri denetle…
 	Check spelling	Yazım denetimi yap
 	Check spelling while typing	Yazarken yazımı denetle
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	Besleyicide kağıt olup olmadığını denetleyin veya tarayıcının işi bitirmesini bekleyin, ardından “Taramaya devam et” seçeneğini seçin.
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	Besleyicide kağıt olup olmadığını denetleyin veya tarayıcının işi bitirmesini bekleyin, ardından “Yeniden dene” seçeneğini seçin.
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Etiketlerin gören bir okuyucunun okuyacağı sırada okunduğunu denetleyin. Düzeltmek için Okuma Sırası aracını veya Etiketler panelini kullanın.
 	Check the pages	Sayfaları denetle
 	Check the pages of {name}: {why}	{name} sayfalarını denetleyin: {why}
+	Check the scanner is on and connected, then choose Continue.	Tarayıcının açık ve bağlı olduğunu kontrol edin, ardından “Taramaya devam et” seçeneğini seçin.
+	Check the scanner is on and connected, then choose Try again.	Tarayıcının açık ve bağlı olduğunu kontrol edin, ardından “Yeniden dene” seçeneğini seçin.
 	CheckBox	OnayKutusu
 	Checkbox	Onay kutusu
 	Checked	İşaretli
@@ -445,6 +457,7 @@
 	Checking Hungarian OCR installation…	Macarca OCR kurulumu denetleniyor…
 	Checking Options ({on} of 32 in all categories)	Denetim Seçenekleri (tüm kategorilerde {on} / 32)
 	Checking pages…	Sayfalar denetleniyor…
+	Checking the scanner…	Tarayıcı denetleniyor…
 	Checkmark	Onay işareti
 	Choose a digital ID file	Bir dijital kimlik dosyası seçin
 	Choose a digital ID.	Bir dijital kimlik seçin.
@@ -482,8 +495,11 @@
 	Clear personal dictionary	Kişisel sözlüğü temizle
 	Clear Recent Files	Son kullanılan dosyaları temizle
 	Clear redaction marks	Karartma işaretlerini temizle
+	Clear region	Bölgeyi temizle
 	Clear search	Aramayı temizle
 	Clear selection / close find	Seçimi temizle / bulmayı kapat
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	Sıkışmayı giderin ve kalan sayfaları düzgünce yerleştirin, ardından “Taramaya devam et” seçeneğini seçin.
+	Clear the jam and load the sheets squarely, then choose Try again.	Sıkışmayı giderin ve sayfaları düzgünce yerleştirin, ardından “Yeniden dene” seçeneğini seçin.
 	Click on the page to add a {tool}, or drag to set its size	Bir {tool} eklemek için sayfaya tıklayın veya boyutunu ayarlamak için sürükleyin
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Metin eklemek için sayfaya tıklayın; her tıklama yeni bir kutu başlatır ve ✓ tamamlar. Taşımak için öğeleri sürükleyin, yeniden boyutlandırmak için bir köşeden sürükleyin, düzenlemek için metne çift tıklayın.
 	Click text or an image to edit it	Düzenlemek için metne veya resme tıklayın
@@ -500,6 +516,8 @@
 	Close Tab	Sekmeyi kapat
 	Close Tabs to the Right	Sağdaki sekmeleri kapat
 	Close tabs to the right	Sağdaki sekmeleri kapat
+	Close the feeder cover and check the paper, then choose Continue.	Besleyici kapağını kapatıp kağıdı kontrol edin, ardından “Taramaya devam et” seçeneğini seçin.
+	Close the feeder cover and check the paper, then choose Try again.	Besleyici kapağını kapatıp kağıdı kontrol edin, ardından “Yeniden dene” seçeneğini seçin.
 	Close Window	Pencereyi Kapat
 	Close window	Pencereyi kapat
 	Closed arrow	Kapalı ok
@@ -512,6 +530,7 @@
 	Collapse all tools	Tüm araçları daralt
 	Collapse tag	Etiketi daralt
 	Color contrast	Renk kontrastı
+	Color document	Renkli belge
 	Color Images	Renkli Resimler
 	Color Spaces	Renk Uzayları
 	Colours are remapped while rendering; the document itself never changes.	Renkler görüntülenirken yeniden eşlenir; belgenin kendisi asla değişmez.
@@ -560,12 +579,17 @@
 	Configure New Digital ID	Yeni Dijital Kimlik Yapılandır
 	Confirm Password	Parolayı Onayla
 	Conformance level:	Uyumluluk düzeyi:
+	Connected by USB.	USB ile bağlı.
 	Connected lines	Bağlantılı çizgiler
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	Ağ üzerinden (Web Services) bağlı. Seçenekler USB sürücüsünden değil, o sürücüden gelir.
 	Console	Konsol
 	Content copying	İçerik kopyalama
 	Content copying for accessibility	Erişilebilirlik için içerik kopyalama
 	Content Streams	İçerik Akışları
 	Continue	Devam Et
+	Continue scanning	Taramaya devam et
+	Continue scanning fronts	Ön yüzleri taramaya devam et
+	Continue scanning reverse sides	Arka yüzleri taramaya devam et
 	Continuous scrolling	Sürekli kaydırma
 	Convert colors	Renkleri dönüştür
 	Convert mode	Dönüştürme modu
@@ -646,7 +670,7 @@
 	Create links	Bağlantı oluştur
 	Create links from URLs	URL'lerden bağlantı oluştur
 	Create Link…	Bağlantı oluştur…
-	Create PDF	PDF Oluştur
+	Create PDF	PDF oluştur
 	Create PDF Comment Summary	PDF Yorum Özeti Oluştur
 	Create PDF comment summary…	PDF yorum özeti oluştur…
 	Create PDF from clipboard	Panodan PDF oluştur
@@ -661,7 +685,9 @@
 	Created a PDF from the first {n} files	İlk {n} dosyadan bir PDF oluşturuldu
 	Created a PDF from {n} files	{n} dosyadan bir PDF oluşturuldu
 	Created a PDF from {n} files; left out: {names}	{n} dosyadan bir PDF oluşturuldu; hariç tutulanlar: {names}
+	Created Scan.pdf	Scan.pdf oluşturuldu
 	Created {n} links	{n} bağlantı oluşturuldu
+	Created {n} scanned files	{n} taranmış dosya oluşturuldu
 	Creates 1 file from {n} pages.	{n} sayfadan 1 dosya oluşturur.
 	Creates {f} files from {n} pages.	{n} sayfadan {f} dosya oluşturur.
 	Creator	Oluşturan
@@ -843,6 +869,7 @@ key	Delete	Delete
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Kırpmak için bir sayfada dikdörtgen sürükleyin; Sayfa Kutularını Ayarla için bir sayfaya çift tıklayın
 	Drag a rectangle to create a link; double-click a link to edit it	Bağlantı oluşturmak için bir dikdörtgen sürükleyin; düzenlemek için bir bağlantıya çift tıklayın
 	Drag hotbar	Kısayol çubuğunu sürükle
+	Drag on the preview to choose a region. An empty selection scans the whole area.	Bölge seçmek için önizlemede sürükleyin. Boş seçim tüm alanı tarar.
 	Drag the corners onto the document's edges, then choose Enhance page.	Köşeleri belgenin kenarlarına sürükleyin, ardından Sayfayı iyileştir'i seçin.
 	Drag the selection to move it. Esc clears the selection.	Taşımak için seçimi sürükleyin. Esc seçimi temizler.
 	Drag to draw the area where the signature should appear.	İmzanın görünmesi gereken alanı çizmek için sürükleyin.
@@ -861,10 +888,13 @@ key	Delete	Delete
 	Drawing	Çizim
 	Drawing scale	Çizim ölçeği
 	Drawing scale changes. Use Actual size for full-scale plans.	Çizim ölçeği değişir. Tam ölçekli planlar için Gerçek boyutu kullanın.
+	Driver default	Sürücü varsayılanı
 	Drop PDFs or folders here, or choose them.	PDF'leri veya klasörleri buraya bırakın ya da seçin.
 	Drop PDFs, images, text files or folders here, or choose them.	PDF'leri, resimleri, metin dosyalarını veya klasörleri buraya bırakın ya da seçin.
 	Drop-down list	Açılır liste
 	Dropdown Properties	Açılır Liste Özellikleri
+	Duplex	Çift yüz
+	Duplex is not offered.	Çift yüz sunulmuyor.
 	Duplicate "{name}" onto:	"{name}" şuraya çoğaltılsın:
 	Duplicate Field	Alanı Çoğalt
 	Duplicate field	Alanı çoğalt
@@ -1020,6 +1050,7 @@ key	Esc	Esc
 	Failed	Başarısız
 scroll speed	Fast	Hızlı
 	February	Şubat
+	Feeder	Besleyici
 	Field "{}" on page {p} has no description (tooltip)	{p}. sayfadaki "{}" alanının açıklaması (araç ipucu) yok
 	Field descriptions	Alan açıklamaları
 	Field is used for file selection	Alan dosya seçimi için kullanılır
@@ -1087,6 +1118,7 @@ scroll speed	Fast	Hızlı
 	Find untagged content	Etiketlenmemiş içeriği bul
 	Finding document fonts…	Belge yazı tipleri aranıyor…
 	Finding fields… page {d} of {t}	Alanlar bulunuyor… {t} sayfadan {d}. sayfa
+	Finish	Bitir
 	Finish or discard the text being edited before selecting several objects.	Birden fazla nesne seçmeden önce düzenlenen metni tamamlayın veya iptal edin.
 	First / last page	İlk / son sayfa
 	First commit	İlk işleme
@@ -1156,10 +1188,15 @@ calendar weekday	Fr	Cu
 	From	Başlangıç
 	From a PDF page or an image	Bir PDF sayfasından veya resimden
 	From colour	Renginden
+	From scanner…	Tarayıcıdan…
 	From template	Şablondan
 	From {file}	{file} dosyasından
 	From:	Başlangıç:
 	Front side only	Yalnızca ön taraf
+	front(s)	ön yüz
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	Taranan ön yüz: {n}. Camdaki sayfayı çevirin, ardından “Arka yüzleri tara” seçeneğini seçin.
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	Taranan ön yüz: {n}. Desteyi son sayfa üstte olacak şekilde çevirin ve yeniden yerleştirin, ardından “Arka yüzleri tara” seçeneğini seçin.
+	Full area	Tüm alan
 	Full screen mode	Tam ekran modu
 	Full screen mode ({key}); Esc leaves it	Tam ekran modu ({key}); Esc
 	Full-side strip	Tam kenar şeridi
@@ -1267,8 +1304,10 @@ key	Home	Home
 	Insert pages from {name}	{name} belgesinden sayfalar ekle
 	Insert pages from {name} — 1 field renamed	{name} dosyasından sayfa ekle — 1 alan yeniden adlandırıldı
 	Insert pages from {name} — fields renamed	{name} dosyasından sayfa ekle — alanlar yeniden adlandırıldı
+	Insert scanned pages	Taranan sayfaları ekle
 	Insert text	Metin ekle
 	Inserted	Eklendi
+	Inserted scanned pages	Taranan sayfalar eklendi
 	Inserted text	Eklenen metin
 	Inserting, deleting, and rotating pages	Sayfa ekleme, silme ve döndürme
 	Inset	İçe Göçük
@@ -1280,6 +1319,7 @@ key	Home	Home
 	Installed version: {v}	Yüklü sürüm: {v}
 	Integrity	Bütünlük
 	Intended usage	Kullanım amacı
+	Intent	Amaç
 	Interface and appearance	Arayüz ve görünüm
 	Interface font	Arayüz yazı tipi
 	Interface size	Arayüz boyutu
@@ -1287,6 +1327,7 @@ key	Home	Home
 	Invalid page range	Geçersiz sayfa aralığı
 	Invert colors	Renkleri ters çevir
 	Invert everything	Her şeyi ters çevir
+	Invert tones	Tonları ters çevir
 	Inverted page background	Ters çevrilmiş sayfa arka planı
 	Inverted text	Ters çevrilmiş metin
 	Invisible Rectangle	Görünmez Dikdörtgen
@@ -1330,10 +1371,13 @@ key	Home	Home
 	Keychain  ·  	Anahtar Zinciri  ·  
 	Keywords	Anahtar Kelimeler
 	Labels: {preview}. Later pages keep their labels.	Etiketler: {preview}. Sonraki sayfalar etiketlerini korur.
+	Lamp	Lamba
+	Lamp on	Lamba açık
 	Landscape and Portrait Pages	Yatay ve Dikey Sayfalar
 	Landscape Pages	Yatay Sayfalar
 	Landscape pages	Yatay sayfalar
 	Language and spelling	Dil ve yazım
+	Large scan	Büyük tarama
 	Larger pages	Daha büyük sayfalar
 	Larger text	Daha büyük metin
 	Larger thumbnails	Küçük resimleri büyüt
@@ -1384,9 +1428,12 @@ key	Home	Home
 	List items belong in a list. Fix the list's tags.	Liste öğeleri bir listeye aittir. Listenin etiketlerini düzeltin.
 	List labels and bodies belong in a list item. Fix the list's tags.	Liste etiketleri ve gövdeleri bir liste öğesine aittir. Listenin etiketlerini düzeltin.
 	List PKCS #11 token (smart card, HSM) signing identities	PKCS #11 belirteçlerindeki (akıllı kart, HSM) imza kimliklerini listele
+	Listing scanners…	Tarayıcılar listeleniyor…
 	Lists	Listeler
 	Load document font	Belge yazı tipini yükle
 	Load font…	Yazı tipi yükle…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	Daha fazla sayfa yerleştirip “Taramaya devam et” seçeneğini seçin veya taranan sayfaları tutmak için “Bitir” seçeneğini seçin.
+	Load sheets in the feeder, then choose Try again.	Besleyiciye sayfa yerleştirin, ardından “Yeniden dene” seçeneğini seçin.
 	Loading…	Yükleniyor…
 	Local and private	Yerel ve özel
 	Local cross-PDF links require the desktop app	PDF'ler arası yerel bağlantılar masaüstü uygulamasını gerektirir
@@ -1395,6 +1442,8 @@ key	Home	Home
 	Logical Reading Order	Mantıksal Okuma Sırası
 	Logo	Logo
 	Logo and name	Logo ve ad
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	Tarayıcıda bir ileti olup olmadığına ya da bir kapak veya kapının açık olup olmadığına bakın ve sorunu giderin, ardından “Taramaya devam et” seçeneğini seçin.
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	Tarayıcıda bir ileti olup olmadığına ya da bir kapak veya kapının açık olup olmadığına bakın ve sorunu giderin, ardından “Yeniden dene” seçeneğini seçin.
 	Looking for a local model runtime…	Yerel bir model çalışma zamanı aranıyor…
 	Looking for certificates…	Sertifikalar aranıyor…
 	Looking for PDFs…	PDF'ler aranıyor…
@@ -1413,6 +1462,7 @@ key	Home	Home
 	Make scans searchable, then make them smaller.	Taramaları aranabilir yapın, ardından boyutlarını küçültün.
 	Manage embedded index	Gömülü dizini yönet
 	Manage plugins…	Eklentileri yönet…
+	Manual duplex needs one reverse side for each front.	Elle çift yüz, her ön yüz için bir arka yüz ister.
 	Maps to standard role	Standart rolle eşler
 	March	Mart
 	Margins	Kenar boşlukları
@@ -1463,6 +1513,8 @@ key	Home	Home
 	Midpoints	Orta noktalar
 	Minimum	En Düşük
 	minimum	en küçük
+	Mirror	Ayna
+	Mirror the page	Sayfayı aynala
 	Missing field	Eksik alan
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	PDF'te kayıtlı hesaplama sırasında yok: diğer PDF görüntüleyicileri bunu hesaplamayabilir.
 	Mixed	Karışık
@@ -1524,6 +1576,7 @@ calendar weekday	Mo	Pt
 	Needs {ram} GB of RAM	{ram} GB RAM gerekir
 	Negative number style:	Negatif sayı stili:
 	Nested alternate text	İç içe alternatif metin
+	Network	Ağ
 	Never	Hiçbir zaman
 	New Action	Yeni Eylem
 	New Action…	Yeni Eylem…
@@ -1589,6 +1642,7 @@ calendar weekday	Mo	Pt
 	No page has text: the document appears to be images of pages	Hiçbir sayfada metin yok: belge sayfa resimlerinden oluşuyor gibi görünüyor
 	No pages match those choices	Bu seçimlerle eşleşen sayfa yok
 	No pages selected	Hiçbir sayfa seçilmedi
+	No pages were scanned.	Hiç sayfa taranmadı.
 	No PDFs found in {folder}	{folder} içinde PDF bulunamadı
 	No PDFs in this folder yet	Bu klasörde henüz PDF yok
 	No PDFs, images or text files found in {folder}	{folder} içinde PDF, resim veya metin dosyası bulunamadı
@@ -1605,6 +1659,7 @@ calendar weekday	Mo	Pt
 	No reference yet	Henüz referans yok
 	No release notes were provided.	Sürüm notu sağlanmadı.
 	No results	Sonuç yok
+	No scanner is connected.	Bağlı tarayıcı yok.
 	No security	Güvenlik yok
 	No sheets	Yaprak yok
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Çerçevede imza bulunamadı. Çerçeveyi imzanın üzerine taşıyın veya mürekkep hassasiyetini artırın.
@@ -1710,6 +1765,8 @@ animation effects	On	Açık
 	Open previous PDF in folder	Klasördeki önceki PDF'yi aç
 	Open Recent	Son kullanılanları aç
 	Open tabs and edits update the search automatically.	Açık sekmeler ve düzenlemeler aramayı otomatik olarak günceller.
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	Kapağı açın, varsa sıkışan kağıdı veya birlikte çekilen sayfaları çıkarın ve kalan sayfaları düzgünce yerleştirin, ardından “Taramaya devam et” seçeneğini seçin.
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	Kapağı açın, varsa sıkışan kağıdı veya birlikte çekilen sayfaları çıkarın ve sayfaları düzgünce yerleştirin, ardından “Yeniden dene” seçeneğini seçin.
 	Open the file as it was saved then	Dosyayı o zamanki kaydedildiği haliyle aç
 	Open the older version first	Önce eski sürümü açın
 	Open this local PDF?	Bu yerel PDF açılsın mı?
@@ -1724,6 +1781,7 @@ animation effects	On	Açık
 	Opening the browser's print dialog…	Tarayıcının yazdırma penceresi açılıyor…
 	Opening {name}…	{name} açılıyor…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Yazıcı sürücüsünün tercihlerini açar. Bu bilgisayardan yapılan her yazdırma için kaydedilirler; burada seçilen kopya, çift taraflı, gri tonlama ve kağıt geçerli olmaya devam eder.
+	Optical resolution {x} × {y} dpi.	Optik çözünürlük {x} × {y} dpi.
 	Optimization cancelled	En iyileştirme iptal edildi
 	Optimization is already running	En iyileştirme zaten çalışıyor
 	Optimize	En iyileştir
@@ -1746,6 +1804,7 @@ animation effects	On	Açık
 	Organize	Düzenle
 	Organize pages	Sayfaları düzenle
 	Organize pages plan	Sayfa düzenleme planı
+	Orientation	Yön
 	Origin:	Başlangıç:
 	Original (lossless)	Orijinal (kayıpsız)
 	Original: replace pages	Orijinal: değiştirilecek sayfalar
@@ -1873,6 +1932,7 @@ animation effects	On	Açık
 	Permitted actions after certifying	Sertifikalandırma sonrası izin verilen eylemler
 	Phone Number	Telefon Numarası
 	Phone Numbers	Telefon Numaraları
+	Photometric	Fotometrik
 	Pick a tool in the quick bar, or type above.	Hızlı çubuktan bir araç seçin veya yukarıya yazın.
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Resimlerle kaplı sayfalar (tarama mı?): {pages}; arka plan orada görünmez.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Resimlerin bunları tanımlayan bir alternatif metne ihtiyacı vardır veya dekoratif olarak işaretlenmelidir. Her şekle alternatif metin ekleyin.
@@ -1923,7 +1983,9 @@ animation effects	On	Açık
 	Preparing {n} sheets for printing…	Yazdırma için {n} sayfa hazırlanıyor…
 	Presentation (.pptx)	Sunum (.pptx)
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	G-SYNC/FreeSync titremesini önle (sonraki açılışta uygulanır)
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	Önizleme cam içindir. Aşağıda inç cinsinden bölge ayarlayın veya tüm yaprak için boş bırakın.
 	Preview unavailable: {e}	Önizleme kullanılamıyor: {e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	Önizleme camı kullanır. Kaynağı Cam yapın veya önizlemesiz tarayın.
 	Preview: page {p} of {n}	Önizleme: Sayfa {p} / {n}
 	Previous ({key})	Önceki ({key})
 	Previous (⇧⌘G)	Önceki (⇧⌘G)
@@ -2035,7 +2097,9 @@ animation effects	On	Açık
 	Reduce file size	Dosya boyutunu küçült
 	Reduce file size…	Dosya boyutunu küçült…
 	Reference:	Referans:
+	Refresh lists scanners. It does not feed paper.	Yenile tarayıcıları yeniden listeler. Kâğıt beslemez.
 	Refresh plugins	Eklentileri yenile
+	Region in inches. Leave the width or the height at zero to scan the whole area.	Bölge (inç). Genişlik veya yüksekliği sıfır bırakırsanız tüm alan taranır.
 	Regularity	Düzenlilik
 	Rejected	Reddedildi
 	Release notes	Sürüm notları
@@ -2156,6 +2220,9 @@ animation effects	On	Açık
 	Reverse closed arrow	Ters kapalı ok
 	Reverse open arrow	Ters açık ok
 	Reverse pages	Sayfaları ters sırala
+	reverse side(s)	arka yüz
+	Reverse sides	Arka yüzler
+	Reverse sides interleaved.	Arka yüzler aralandı.
 	Revert	Geri döndür
 	Revert changes	Değişiklikleri geri al
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	“{name}” belgesinin daha önce kaydedilmiş sürümüne geri dönülsün mü? O andan sonraki değişiklikler geri alınamaz.
@@ -2262,9 +2329,27 @@ calendar weekday	Sa	Ct
 	Scan & OCR	Tara ve OCR
 	Scan and text recognition	Tarama ve metin tanıma
 	Scan correction	Tarama düzeltme
+	Scan interrupted	Tarama kesildi
 	Scan processing cancelled	Tarama işlemi iptal edildi
+	Scan reverse side now (1 front)	Arka yüzü şimdi tara (1 ön yüz)
+	Scan reverse sides	Arka yüzleri tara
+	Scan reverse sides now ({n} fronts)	Arka yüzleri şimdi tara ({n} ön yüz)
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	Ön yüzü tarayın, camda çevirip arka yüzü tarayın.
+	Scan the fronts before the reverse sides.	Arka yüzlerden önce ön yüzleri tarayın.
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Ön yüzleri tarayın, desteyi çevirin (son yaprak üstte), sonra arka yüzleri. Sayfalar ön, arka, … olarak aralanır…
+	Scan the missing reverse sides, then choose Finish.	Eksik arka yüzleri tarayın, ardından “Bitir” seçeneğini seçin.
 	Scanned pages need OCR. Reading order follows extracted page text.	Taranmış sayfalar OCR gerektirir. Okuma sırası sayfadan çıkarılan metni izler.
 	Scanned text detected	Taranmış metin algılandı
+	Scanner	Tarayıcı
+	Scanner settings	Tarayıcı ayarları
+	Scanning front {n} of {t}…	Ön yüz {n} / {t} taranıyor…
+	Scanning front {n}…	Ön yüz {n} taranıyor…
+	Scanning needs Windows (WIA) in this version.	Bu sürümde tarama için Windows (WIA) gerekir.
+	Scanning page {n} of {t}…	Sayfa {n} / {t} taranıyor…
+	Scanning page {n}…	Sayfa {n} taranıyor…
+	Scanning reverse side {n} of {t}…	Arka yüz {n} / {t} taranıyor…
+	Scanning reverse side {n}…	Arka yüz {n} taranıyor…
+	Scanning…	Taranıyor…
 	Screen / email	Ekran / e-posta
 	Screen flicker	Ekran titremesi
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Ekran okuyucular seslerini belgenin diline göre seçer. Bunu Belge Özellikleri > Gelişmiş > Dil bölümünden ayarlayın.
@@ -2339,6 +2424,8 @@ calendar weekday	Sa	Ct
 	Sensitivity	Duyarlılık
 	Sent to {printer}: {msg}	{printer} yazıcısına gönderildi: {msg}
 	Separate PDFs	Ayrı PDF'ler
+	Separate the sheets and load the remaining ones, then choose Continue.	Sayfaları ayırın ve kalanları yerleştirin, ardından “Taramaya devam et” seçeneğini seçin.
+	Separate the sheets and load them again, then choose Try again.	Sayfaları ayırın ve yeniden yerleştirin, ardından “Yeniden dene” seçeneğini seçin.
 	Separator style:	Ayırıcı stili:
 	Sepia	Sepya
 	Sepia night	Gece sepyası
@@ -2372,6 +2459,7 @@ calendar weekday	Sa	Ct
 	Set the image of {name}	{name} resmini ayarla
 	Set to current page ({n})	Geçerli sayfaya ayarla ({n})
 	Set to zero	Sıfırla
+	Settings this source offers. Leave a control alone to keep the driver’s value.	Bu kaynağın sunduğu ayarlar. Sürücü değerini korumak için bir denetimi olduğu gibi bırakın.
 	SHA-1 digest	SHA-1 özeti
 	SHA-256 digest	SHA-256 özeti
 	Shadings	Gölgelendirmeler
@@ -2524,6 +2612,7 @@ action wizard	Start	Başlat
 	Stop reading	Okumayı durdur
 	Straighten scanned page	Taranmış sayfayı düzelt
 	Straighten skewed scans	Eğik taramaları düzelt
+	Straighten the page	Sayfayı düzelt
 	Strength: {s}	Güç: {s}
 	Strikethrough	Üstü çizili
 	Strikethrough text	Metnin üstünü çiz
@@ -2546,6 +2635,8 @@ certificate	Subject	Konu
 	Swap width and height	Genişlik ve yüksekliği değiştir
 	Switch light / dark theme	Açık / koyu temaya geç
 	Switch page theme	Sayfa temasını değiştir
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	Tarayıcıyı kapatıp yeniden açın ve hazır olmasını bekleyin, ardından “Taramaya devam et” seçeneğini seçin.
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	Tarayıcıyı kapatıp yeniden açın ve hazır olmasını bekleyin, ardından “Yeniden dene” seçeneğini seçin.
 	Switch to List view to change the pages it takes.	Alacağı sayfaları değiştirmek için Liste görünümüne geçin.
 	Switch to two-page view first to show the cover page	Kapak sayfasını göstermek için önce iki sayfalı görünüme geçin
 	System default	Sistem varsayılanı
@@ -2612,6 +2703,7 @@ calendar weekday	Th	Pe
 	The answer stopped unexpectedly.	Yanıt beklenmedik şekilde durdu.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API anahtarı bu adrese şifrelenmeden gönderilir. Sunucu güvendiğin bir ağda değilse https:// kullan.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	alan, aralık ve sütun genişlikleri sayı olmalı; aralık 0 veya daha büyük, her genişlik 0'dan büyük olmalı
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Cam her seferinde bir sayfa tarar. Bir ön yüz tarayıp çevirin, sonra arka yüzü.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Hesaplama sırasında hiçbir şey hesaplamayan {n} giriş var. "Sırayı düzelt" bunları kaldırır.|Hesaplama sırasında hiçbir şey hesaplamayan {n} giriş var. "Sırayı düzelt" bunları kaldırır.
 	the certificate expired on {date}	sertifikanın süresi {date} tarihinde doldu
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	{} sertifikası altında bu kadar çok CA sertifikasına izin vermiyor (yol uzunluğu), bu yüzden {} için güvence olarak kullanılmıyor.
@@ -2660,10 +2752,15 @@ calendar weekday	Th	Pe
 	The document's security settings don't allow filling in form fields	Belgenin güvenlik ayarları form alanlarının doldurulmasına izin vermiyor
 	The document's security settings don't allow printing	Belgenin güvenlik ayarları yazdırmaya izin vermiyor
 	The document's security settings don't allow this change	Belgenin güvenlik ayarları bu değişikliğe izin vermiyor
+	The driver may accept a turn and leave the picture as it was.	Sürücü bir döndürmeyi kabul edip görüntüyü olduğu gibi bırakabilir.
+	The driver reports a paper jam.	Sürücü kâğıt sıkışması bildiriyor.
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	Sürücü bekleyen bir yaprak bildiriyor. Tepsi boşken bit açık kalabilir.
 	The ECDSA signature is not in canonical DER (trailing bytes, padding or a missing sign byte); it was read anyway.	ECDSA imzası kurallı DER biçiminde değil (sondaki baytlar, dolgu ya da eksik işaret baytı); yine de okundu.
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	ECDSA imzası bir DER dizisi yerine ham r ve s değerlerinden oluşuyor; yine de okundu.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Gömülü zaman damgası belirteci geçerli ve yetkilisine güveniliyor; güvenilir zaman {}.
 	The existing action will be preserved.	Mevcut işlem korunacak.
+	The feeder ran out of paper.	Besleyicideki kağıt bitti.
+	The feeder took more than one sheet.	Besleyici birden fazla sayfa çekti.
 	The field properties could not be changed.	Alan özellikleri değiştirilemedi.
 	The field properties dialog is no longer open.	Alan özellikleri iletişim kutusu artık açık değil.
 	The field {name} no longer exists.	{name} alanı artık mevcut değil.
@@ -2676,6 +2773,7 @@ calendar weekday	Th	Pe
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Form {u} adresine gönderilmek isteniyor; PdfCraft form verilerini göndermez. Girdilerinizi korumak için belgeyi kaydedin.
 	The form asks viewers to make appearances (NeedAppearances)	Form, görüntüleyicilerden görünüm oluşturmasını istiyor (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	Formun amacı ve alanları (adlar, türler, sekme sırası)
+	The fronts already scanned are kept for the reverse-side pass.	Daha önce taranan ön yüzler, arka yüz geçişi için saklandı.
 	The image couldn't be used as an icon: {e}	Görüntü simge olarak kullanılamadı: {e}
 	The image has been copied ({w} × {h} pixels)	Resim kopyalandı ({w} × {h} piksel)
 	The image has been copied as a {ext} file	Resim {ext} dosyası olarak kopyalandı
@@ -2699,6 +2797,7 @@ calendar weekday	Th	Pe
 	The order saved in the PDF needs tidying	PDF'te kayıtlı sıranın düzenlenmesi gerekiyor
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Diğer imzalar ({names}) belgenin imzalandıktan sonra değiştiğini bildirecek. Onları yeniden doğrulayın: geçerli kalacaklarının hiçbir garantisi yok.
 	The page has changed; select the image again	Sayfa değişti; resmi yeniden seçin
+	The pages already scanned were kept in the document.	Daha önce taranan sayfalar belgede tutuldu.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sayfalar ayıklandı ancak silinmedi, çünkü bir klasör seçerken belge değişti.
 	the password is incorrect	parola yanlış
 	The password is incorrect.	Parola yanlış.
@@ -2709,6 +2808,7 @@ calendar weekday	Th	Pe
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF metin yazı tipleri “{c}” ({code}) karakterini çizemez. Desteklenen bir metin seçin.
 	The PIN is incorrect.	PIN yanlış.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 jetonlarının dijital kimlikleri listelenemedi: {e}
+	The preview could not be shown.	Önizleme gösterilemedi.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Bu baskı için yazıcı sürücüsünün kendi ayarları: kağıt tepsisi, kağıt türü, sonlandırma ve daha fazlası.
 	The provider's page didn't come back in time. Try again.	Sağlayıcının sayfası zamanında dönmedi. Yeniden deneyin.
 	The raw text was truncated to what fits.	Ham metin kısaltıldı.
@@ -2718,10 +2818,25 @@ calendar weekday	Th	Pe
 	The release is not a published stable update. Try again later.	Sürüm, yayımlanmış kararlı bir güncelleme değil. Daha sonra yeniden deneyin.
 	The replacement file doesn't have that many pages.	Yedek dosyada o kadar sayfa yok.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Kısıtlamalar “Tüm izinler” olmayan alıcılar için geçerlidir. Kaydettiğinizde uygulanır.
+	The reverse sides already scanned are kept.	Daha önce taranan arka yüzler saklandı.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	satırlar çok kısa: alanı uzatın ya da daha az satır veya daha az satır aralığı kullanın
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA imza değeri, anahtarın modülüyle aynı uzunlukta değil (baştaki sıfır baytlar atılmış ya da eklenmiş); yine de okundu.
 	The RSA signature's DigestInfo has no NULL parameter (older signers write it so); it was read anyway.	RSA imzasının DigestInfo alanında NULL parametresi yok (eski imzalayıcılar böyle yazar); yine de okundu.
 	The same password is tried on each file.	Her dosyada aynı parola denenir.
+	The same printer is also available over the network.	Aynı yazıcı ağ üzerinden de kullanılabilir.
+	The same printer is also available over USB.	Aynı yazıcı USB üzerinden de kullanılabilir.
+	The scan could not be started.	Tarama başlatılamadı.
+	The scan produced no pages.	Tarama sayfa üretmedi.
+	The scan was cancelled at the scanner.	Tarama tarayıcıda iptal edildi.
+	The scan was interrupted.	Tarama yarıda kesildi.
+	The scanner has a paper jam.	Tarayıcıda kağıt sıkışması var.
+	The scanner is busy, or the feeder has no paper.	Tarayıcı meşgul veya besleyicide kağıt yok.
+	The scanner is busy.	Tarayıcı meşgul.
+	The scanner is offline or needs attention.	Tarayıcı çevrimdışı veya dikkat gerektiriyor.
+	The scanner list could not be refreshed.	Tarayıcı listesi yenilenemedi.
+	The scanner needs attention.	Tarayıcı dikkat gerektiriyor.
+	The scanner reported a lamp or device error.	Tarayıcı bir lamba veya aygıt hatası bildirdi.
+	The scanner reported a paper problem (a jam or several sheets fed together).	Tarayıcı bir kağıt sorunu bildirdi (sıkışma veya birden fazla sayfanın birlikte çekilmesi).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Ekranın inç başına gerçek piksel sayısı. Gerçek boyutun (%100) sayfaları gerçek büyüklüklerinde göstermesi için bir cetvelle kalibre edin.
 	The security settings don't allow screen readers to read the text	Güvenlik ayarları ekran okuyucuların metni okumasına izin vermiyor
 	The selected area has been copied ({w} × {h} pixels)	Seçilen alan kopyalandı ({w} × {h} piksel)
@@ -2908,15 +3023,17 @@ calendar weekday	Th	Pe
 	Top-left	Sol üst
 	Top-level bookmarks ({n})	Üst düzey yer işaretleri ({n})
 	TR must be a child of Table, THead, TBody, or TFoot	TR; Table, THead, TBody veya TFoot öğesinin alt öğesi olmalıdır
+	Transfer format: {format}.	Aktarım biçimi: {format}.
 	Transform image	Görüntüyü dönüştür
 	Translate with AI	Yapay zekayla çevir
 	Translating...	Çevriliyor...
 	Trim the picture with its handles; Enter or Done applies	Resmi tutamaçlarıyla kırpın; Enter veya Bitti uygular
 	Trust	Güven
-	Try again	Tekrar dene
+	Try again	Yeniden dene
 	Try the form as people filling it in will see it	Formu dolduran kişilerin göreceği şekilde deneyin
 calendar weekday	Tu	Sa
 	Turn upside down (180°)	Baş aşağı çevir (180°)
+	Turned left	Sola döndürüldü
 	two cells would both be named {name}	iki hücrenin de adı {name} olurdu
 	Two-page view	İki sayfa görünümü
 	Two-sided:	Çift taraflı:
@@ -2967,8 +3084,10 @@ signature pad	Type	Yaz
 	Update header & footer…	Üstbilgi ve altbilgiyi güncelle…
 	Update watermark	Filigranı güncelle
 	Update watermark…	Filigranı güncelle…
+	Upside down	Ters
 	URL to submit to	Gönderilecek URL
 	US Letter	ABD Letter
+	USB	USB ile
 	Use 72 DPI (one point per pixel)	72 DPI kullan (piksel başına bir nokta)
 	Use a certificate	Sertifika kullan
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Bulut sertifikası kullan (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
@@ -3018,6 +3137,7 @@ signature pad	Type	Yaz
 	Verify to see what the document needs.	Belgenin neye ihtiyacı olduğunu görmek için doğrulayın.
 	Version {v}	Sürüm {v}
 	Vertical layout	Dikey düzen
+	Vertical resolution	Dikey çözünürlük
 	Vertical reversed	Dikey ters
 	Vertical text cannot be moved with this selection.	Dikey metin bu seçimle taşınamaz.
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	Seslendirilebilmesi için video, ses ve zengin medyanın etiketlenmesi gerekir. Multimedya açıklamalarını etiketleyin.
@@ -3036,6 +3156,8 @@ signature pad	Type	Yaz
 	Voice and Speech	Ses ve Konuşma
 	Voice:	Ses:
 	Volume:	Ses Düzeyi:
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Tarayıcının işi bitirmesini bekleyin veya onu kullanan diğer programları kapatın, ardından “Taramaya devam et” seçeneğini seçin.
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Tarayıcının işi bitirmesini bekleyin veya onu kullanan diğer programları kapatın, ardından “Yeniden dene” seçeneğini seçin.
 	Waiting for the system print dialog…	Sistemin yazdırma penceresi bekleniyor…
 	Waiting for your approval in the browser…	Tarayıcıda onayınız bekleniyor…
 	watermark	filigran
@@ -3050,6 +3172,8 @@ calendar weekday	We	Ça
 	White on black	Siyah üzerinde beyaz
 	Whole words only	Yalnızca tam sözcükler
 document scrollbar width	Wide	Geniş
+	Will use the bed.	Cam kullanılacak.
+	Will use the feeder.	Besleyici kullanılacak.
 	Window Options	Pencere Seçenekleri
 	Windows store  ·  	Windows depolama alanı  ·  
 	Word count	Sözcük sayısı
@@ -3158,11 +3282,13 @@ document scrollbar width	Wide	Geniş
 @plural	{n} more field calculates too early.|{n} more fields calculate too early.	{n} alan daha çok erken hesaplanıyor.|{n} alan daha çok erken hesaplanıyor.
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	{n} formül daha eksik alanları okuyor.|{n} formül daha eksik alanları okuyor.
 @plural	{n} object selected|{n} objects selected	{n} nesne seçildi|{n} nesne seçildi
+	{n} of {m} pages were scanned.	{m} sayfadan {n} tanesi tarandı.
 	{n} pages	{n} sayfa
 	{n} pages and no bookmarks	{n} sayfa ve hiç yer işareti yok
 	{n} pages could not be searched; results are incomplete.	{n} sayfada arama yapılamadı; sonuçlar eksik.
 	{n} pages selected	{n} sayfa seçildi
 	{n} pages selected.	{n} sayfa seçildi.
+	{n} pages were scanned.	{n} sayfa tarandı.
 @plural	{n} page|{n} pages	{n} sayfa|{n} sayfa
 @plural	{n} pixel|{n} pixels	{n} piksel|{n} piksel
 @plural	{n} reply|{n} replies	{n} yanıt|{n} yanıt
@@ -3189,6 +3315,7 @@ document scrollbar width	Wide	Geniş
 	{who}, certificate issued by an unknown issuer.	{who}, sertifikayı bilinmeyen bir yayımcı vermiş.
 	{who}, certificate issued by {issuer}.	{who}, sertifikayı {issuer} vermiş.
 	{words} on {pages}	{pages} üzerinde {words}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} inç, {pxw} × {pxh} piksel, {size}
 	{} annotation on page {p} isn't tagged	{p}. sayfadaki {} açıklaması etiketli değil
 	{} annotations aren't allowed	{} açıklamalarına izin verilmiyor
 	ΔLOC	ΔLOC

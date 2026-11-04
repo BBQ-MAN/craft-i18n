@@ -32,6 +32,7 @@
 	1 page scanned	1 oldal beolvasva
 	1 page selected	1 oldal kijelölve
 	1 page selected.	1 oldal kijelölve.
+	1 page was scanned.	1 oldal lett beolvasva.
 	180 degrees	180 fok
 	4 x 6 in label (101.6 x 152.4 mm)	4 × 6 hüvelykes címke (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 számjegy, A betű, O betű vagy számjegy, X bármely karakter
@@ -48,6 +49,7 @@
 	A button	Egy gomb
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Tiszta szobás, nyílt forráskódú PDF-alkalmazás, Rustban írva. MIT OR Apache-2.0.
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	egy oszlop túl keskeny: szélesítsd a területet, adj több helyet az oszlopnak, vagy használj kevesebb oszlopot vagy kisebb oszlopközt
+	A cover on the scanner is open.	A szkenner fedele nyitva van.
 	A diagonal CONFIDENTIAL watermark on every page.	Átlós BIZALMAS vízjel minden oldalon.
 	a document must keep at least one page	egy dokumentumnak legalább egy oldala kell maradjon
 	A document needs at least one page: copy instead	Egy dokumentumnak legalább egy oldala kell legyen: inkább másold
@@ -57,6 +59,7 @@
 	A link	Egy hivatkozás
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	A helyi modell nem élvonalbeli felhőmodell: tévedhet, és egy hosszú válasz a processzoron időbe telik. Minden kritikus dolgot ellenőrizzen, és a letöltés előtt mérlegelje a modell méretét e géphez képest.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Egy logó vagy név a lapoktól balra, ahol a címsor mutatná: a PdfCraft sajátja vagy a cégedé.
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Az oldalszám ennyi lap után leállítja az adagolót. A megszakítás korábban véget vet az átvitelnek; a már megkapott oldalak a dokumentumban maradnak.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Egy kép fedi le ezt az oldalt: {pages} (szkennelt?), így ott nem látszik a háttér.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Egy PNG vagy SVG fájl. A PdfCraft minden indításakor erről a helyről olvassa be.
 	A script	Egy szkript
@@ -184,6 +187,7 @@
 	Advanced options	Speciális beállítások
 	Advanced Options {chevron}	Speciális beállítások {chevron}
 	Advanced search…	Részletes keresés…
+	Advanced…	Speciális…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	Az Aláírás után írd be a CloudSigner ablakába az mSzafir alkalmazás OTT-kódját, és hagyd jóvá az aláírást az alkalmazásban. Ha a CloudSignerben be van kapcsolva a tartós OTT-kód, a kódot csak néhány percenként kéri.
 	AI Assistant	AI-asszisztens
 	AI assistant	MI-asszisztens
@@ -205,6 +209,7 @@
 	All multimedia objects are tagged	Minden multimédia-objektum címkézett
 	All open documents	Minden megnyitott dokumentum
 	All page content is tagged	Az oldal teljes tartalma címkézett
+	All pages asks the driver for the whole stack.	A „Minden oldal” a teljes köteget kéri a meghajtótól.
 	All pages in document	A dokumentum összes oldala
 	All pages in range	A tartomány minden oldala
 	All permissions	Minden engedély
@@ -291,6 +296,7 @@
 	Author title	A szerző beosztása
 	Auto follows the system's text size. Pages always render at the display's full resolution.	Az Automatikus beállítás a rendszer szövegméretét követi. Az oldalak mindig a kijelző teljes felbontásában jelennek meg.
 	Auto portrait/landscape	Álló/fekvő automatikusan
+	Auto-deskew	Automatikus egyenesítés
 	Auto-detect	Automatikus felismerés
 	Auto-rotate pages	Oldalak automatikus forgatása
 	Auto-size text to fit redaction region	A szöveg automatikus méretezése a kitakarási területhez
@@ -308,6 +314,7 @@
 	Balanced and Compact reduce image quality to make a smaller file. Text and forms stay editable.	A Kiegyensúlyozott és a Tömör csökkentik a képek minőségét, így kisebb lesz a fájl. A szöveg és az űrlapok szerkeszthetők maradnak.
 	Basic constraints	Alapvető korlátozások
 	Bates numbering	Bates-számozás
+	Bed	Üveg
 	Before each selected page (select pages in Organize)	Minden kijelölt oldal előtt (az oldalakat a Rendezésben jelöld ki)
 	Before the number	A szám előtt
 	Behind text and images	A szöveg és a képek mögött
@@ -336,6 +343,7 @@
 	Borders and Colors	Szegélyek és színek
 	Bottom:	Alsó:
 	Box	Keret
+	Brightness	Fényerő
 	Bring All to Front	Az összes előrehozása
 	Bring forward	Előrébb hozás
 	Bring to front	Előtérbe hozás
@@ -357,6 +365,7 @@
 	Calibrate…	Kalibrálás…
 	Callout	Szövegbuborék
 	Can't be read: {e}	Nem olvasható: {e}
+	Cancel reverse sides	Hátoldalak megszakítása
 	Cancelled	Megszakítva
 	Cancelling…	Megszakítás…
 	Case-sensitive	Kis- és nagybetű
@@ -414,9 +423,13 @@
 	Check for updates…	Frissítések keresése…
 	Check spelling	Helyesírás-ellenőrzés
 	Check spelling while typing	Helyesírás ellenőrzése gépelés közben
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	Ellenőrizze, hogy van-e papír az adagolóban, vagy várja meg, amíg a lapolvasó végez, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	Ellenőrizze, hogy van-e papír az adagolóban, vagy várja meg, amíg a lapolvasó végez, majd válassza a(z) „Újra” lehetőséget.
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	Ellenőrizd, hogy a címkék abban a sorrendben olvasódnak-e, ahogy egy látó olvasó haladna. Javítsd az Olvasási sorrend eszközzel vagy a Címkék panelen.
 	Check the pages	Ellenőrizd az oldalakat
 	Check the pages of {name}: {why}	Ellenőrizd {name} oldalait: {why}
+	Check the scanner is on and connected, then choose Continue.	Ellenőrizze, hogy a lapolvasó be van-e kapcsolva és csatlakoztatva van-e, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
+	Check the scanner is on and connected, then choose Try again.	Ellenőrizze, hogy a lapolvasó be van-e kapcsolva és csatlakoztatva van-e, majd válassza a(z) „Újra” lehetőséget.
 	CheckBox	Jelölőnégyzet
 	Checkbox	Jelölőnégyzet
 	Checked	Bejelölve
@@ -424,6 +437,7 @@
 	Checking Hungarian OCR installation…	A magyar OCR telepítésének ellenőrzése…
 	Checking Options ({on} of 32 in all categories)	Ellenőrzési beállítások ({on} / 32, minden kategóriában)
 	Checking pages…	Oldalak ellenőrzése…
+	Checking the scanner…	A szkenner ellenőrzése…
 	Checkmark	Pipa
 	Choose a digital ID file	Válassz digitálisazonosító-fájlt
 	Choose a folder for the exported files	Válassz mappát az exportált fájloknak
@@ -458,8 +472,11 @@
 	Clear form	Űrlap kiürítése
 	Clear personal dictionary	Személyes szótár törlése
 	Clear redaction marks	Kitakarásjelölések törlése
+	Clear region	Terület törlése
 	Clear search	Keresés törlése
 	Clear selection / close find	Kijelölés törlése / keresés bezárása
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	Szüntesse meg az elakadást, és egyenesen töltse be a hátralévő lapokat, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
+	Clear the jam and load the sheets squarely, then choose Try again.	Szüntesse meg az elakadást, és egyenesen töltse be a lapokat, majd válassza a(z) „Újra” lehetőséget.
 	Click on the page to add a {tool}, or drag to set its size	Kattints az oldalra egy {tool} hozzáadásához, vagy húzással állítsd be a méretét
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Kattints az oldalra szöveg hozzáadásához; minden kattintás új dobozt kezd, a ✓ befejezi. Húzd az elemeket az áthelyezéshez, a sarkot a méretezéshez, és kattints duplán a szövegre a szerkesztéshez.
 	Click text or an image to edit it	Kattints a szövegre vagy egy képre a szerkesztéshez
@@ -475,6 +492,8 @@
 	Close Tab	Lap bezárása
 	Close Tabs to the Right	Jobbra lévő lapok bezárása
 	Close tabs to the right	Jobbra lévő lapok bezárása
+	Close the feeder cover and check the paper, then choose Continue.	Zárja be az adagoló fedelét, ellenőrizze a papírt, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
+	Close the feeder cover and check the paper, then choose Try again.	Zárja be az adagoló fedelét, ellenőrizze a papírt, majd válassza a(z) „Újra” lehetőséget.
 	Close Window	Ablak bezárása
 	Close window	Ablak bezárása
 	Closed arrow	Zárt nyíl
@@ -489,6 +508,7 @@
 	Collate	Szétválogatás
 	Color contrast	Színkontraszt
 	Color Document	Színes dokumentum
+	Color document	Színes dokumentum
 	Color Images	Színes képek
 	Color Photo	Színes fénykép
 	Color Spaces	Színterek
@@ -537,12 +557,17 @@
 	Configure New Digital ID	Új digitális azonosító beállítása
 	Confirm Password	Jelszó megerősítése
 	Conformance level:	Megfelelőségi szint:
+	Connected by USB.	USB-n csatlakozik.
 	Connected lines	Összekötött vonalak
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	Hálózaton (webservices) csatlakozik. A beállítások ettől a meghajtótól jönnek, nem az USB-től.
 	Console	Konzol
 	Content copying	Tartalom másolása
 	Content copying for accessibility	Tartalom másolása akadálymentességhez
 	Content Streams	Tartalomfolyamok
 	Continue	Tovább
+	Continue scanning	Beolvasás folytatása
+	Continue scanning fronts	Előlapok beolvasásának folytatása
+	Continue scanning reverse sides	Hátoldalak beolvasásának folytatása
 	Continuous scrolling	Folyamatos görgetés
 	Convert	Konvertálás
 	Convert colors	Színek konvertálása
@@ -639,7 +664,9 @@
 	Created a PDF from the first {n} files	PDF létrehozva az első {n} fájlból
 	Created a PDF from {n} files	PDF létrehozva {n} fájlból
 	Created a PDF from {n} files; left out: {names}	PDF létrehozva {n} fájlból; kimaradt: {names}
+	Created Scan.pdf	Scan.pdf létrehozva
 	Created {n} links	{n} hivatkozás létrehozva
+	Created {n} scanned files	{n} beolvasott fájl létrehozva
 	Creates 1 file from {n} pages.	1 fájl jön létre {n} oldalból.
 	Creates {f} files from {n} pages.	{f} fájl jön létre {n} oldalból.
 	Credit Cards	Bankkártyák
@@ -802,6 +829,7 @@ key	Delete	Delete
 	Drag a rectangle around the area to copy	Húzz egy téglalapot a másolandó terület köré
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	Húzz egy téglalapot egy oldalon a levágáshoz; dupla kattintás az Oldalkeretek beállításához
 	Drag a rectangle to create a link; double-click a link to edit it	Húzz egy téglalapot hivatkozás létrehozásához; dupla kattintással szerkesztheted
+	Drag on the preview to choose a region. An empty selection scans the whole area.	Húzzon az előnézeten a terület kiválasztásához. Üres kijelölés a teljes területet beolvassa.
 	Drag the corners onto the document's edges, then choose Enhance page.	Húzza a sarkokat a dokumentum széleire, majd válassza az Oldal javítása lehetőséget.
 	Drag the selection to move it. Esc clears the selection.	A kijelölés áthelyezéséhez húzza azt. Az Esc törli a kijelölést.
 	Drag to draw the area where the signature should appear.	Húzással rajzold meg, hol jelenjen meg az aláírás.
@@ -820,9 +848,12 @@ key	Delete	Delete
 	Drawing	Rajz
 	Drawing scale	Rajz méretaránya
 	Drawing scale changes. Use Actual size for full-scale plans.	A rajz méretaránya változik. Méretarányos tervekhez használja a Tényleges méret beállítást.
+	Driver default	Meghajtó alapértelmezett
 	Drop PDFs, images, text files or folders here, or choose them.	Húzz ide PDF-eket, képeket, szövegfájlokat vagy mappákat, vagy válaszd ki őket.
 	Drop-down list	Legördülő lista
 	Dropdown Properties	Legördülő lista tulajdonságai
+	Duplex	Kétoldalas
+	Duplex is not offered.	Kétoldalas beolvasás nem elérhető.
 	Duplicate "{name}" onto:	„{name}” másolása ide:
 	Duplicate Field	Mező megkettőzése
 	Duplicate field	Mező megkettőzése
@@ -967,6 +998,7 @@ key	Esc	Esc
 	Failed	Nem felelt meg
 scroll speed	Fast	Gyors
 	February	február
+	Feeder	Adagoló
 	Field descriptions	Mezőleírások
 	Field is used for file selection	A mező fájlválasztásra szolgál
 	Field list	Mezőlista
@@ -1096,10 +1128,15 @@ scroll speed	Fast	Gyors
 	From	Ettől
 	From a PDF page or an image	PDF-oldalból vagy képből
 	From colour	Színből
+	From scanner…	Szkennerből…
 	From template	Sablonból
 	From {file}	Ebből: {file}
 	From:	Ettől:
 	Front side only	Csak az előlap
+	front(s)	előlap
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	Beolvasott előlapok: {n}. Fordítsa meg a lapot az üvegen, majd válassza a(z) „Hátoldalak beolvasása” lehetőséget.
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	Beolvasott előlapok: {n}. Fordítsa meg a köteget úgy, hogy az utolsó lap legyen felül, töltse be újra, majd válassza a(z) „Hátoldalak beolvasása” lehetőséget.
+	Full area	Teljes terület
 	Full screen mode	Teljes képernyő
 	Full screen mode ({key}); Esc leaves it	Teljes képernyő ({key}); Esc
 	Generate styled PDF	Formázott PDF létrehozása
@@ -1199,8 +1236,10 @@ key	Home	Home
 	Insert pages from {name}	Oldalak beszúrása ebből: {name}
 	Insert pages from {name} — 1 field renamed	Oldalak beszúrása ebből: {name} — 1 mező átnevezve
 	Insert pages from {name} — fields renamed	Oldalak beszúrása ebből: {name} — mezők átnevezve
+	Insert scanned pages	Beolvasott oldalak beillesztése
 	Insert text	Szöveg beszúrása
 	Inserted	Beszúrva
+	Inserted scanned pages	Beolvasott oldalak beillesztve
 	Inserting, deleting, and rotating pages	Oldalak beszúrása, törlése és forgatása
 	Inset	Besüllyesztett
 	Inspector	Tulajdonságvizsgáló
@@ -1211,6 +1250,7 @@ key	Home	Home
 	Installed version: {v}	Telepített verzió: {v}
 	Integrity	Integritás
 	Intended usage	Tervezett használat
+	Intent	Szándék
 	Interface and appearance	Felület és megjelenés
 	Interface font	Felület betűtípusa
 	Interface size	Felület mérete
@@ -1219,6 +1259,7 @@ key	Home	Home
 	Invalid page range	Érvénytelen oldaltartomány
 	Invert colors	Színek megfordítása
 	Invert everything	Minden megfordítása
+	Invert tones	Tónusok invertálása
 	Inverted page background	Megfordított oldal háttere
 	Inverted text	Megfordított szöveg
 	Invisible Rectangle	Láthatatlan téglalap
@@ -1257,10 +1298,13 @@ key	Home	Home
 	Keychain  ·  	Kulcskarika  ·  
 	Label	Felirat
 	Labels: {preview}. Later pages keep their labels.	Címkék: {preview}. A későbbi oldalak megtartják a címkéjüket.
+	Lamp	Lámpa
+	Lamp on	Lámpa be
 	Landscape and Portrait Pages	Fekvő és álló oldalak
 	Landscape Pages	Fekvő oldalak
 	Landscape pages	Fekvő oldalak
 	Language and spelling	Nyelv és helyesírás
+	Large scan	Nagy beolvasás
 	Larger pages	Nagyobb oldalak
 	Larger text	Nagyobb szöveg
 	Larger thumbnails	Nagyobb bélyegképek
@@ -1307,9 +1351,12 @@ key	Home	Home
 	List items belong in a list. Fix the list's tags.	A listaelemek egy listába tartoznak. Javítsd a lista címkéit.
 	List labels and bodies belong in a list item. Fix the list's tags.	A listacímkék és a listatartalom egy listaelembe tartoznak. Javítsd a lista címkéit.
 	List PKCS #11 token (smart card, HSM) signing identities	PKCS #11 tokenek (intelligens kártyák, HSM-ek) aláírási azonosítóinak listázása
+	Listing scanners…	Szkennerek listázása…
 	Lists	Listák
 	Load document font	Dokumentum betűtípusának betöltése
 	Load font…	Betűtípus betöltése…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	Töltsön be további lapokat, majd válassza a(z) „Beolvasás folytatása” lehetőséget, vagy a(z) „Befejezés” lehetőséget a beolvasottak megtartásához.
+	Load sheets in the feeder, then choose Try again.	Töltsön lapokat az adagolóba, majd válassza a(z) „Újra” lehetőséget.
 	Local and private	Helyi és privát
 	Local cross-PDF links require the desktop app	A PDF-ek közötti helyi hivatkozásokhoz az asztali alkalmazás szükséges
 	Location: 	Hely: 
@@ -1317,6 +1364,8 @@ key	Home	Home
 	Logical Reading Order	Logikai olvasási sorrend
 	Logo	Logó
 	Logo and name	Logó és név
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	Nézze meg, hogy a lapolvasó üzenetet jelez-e, vagy nyitva van-e egy ajtó vagy fedél, és hárítsa el a problémát, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	Nézze meg, hogy a lapolvasó üzenetet jelez-e, vagy nyitva van-e egy ajtó vagy fedél, és hárítsa el a problémát, majd válassza a(z) „Újra” lehetőséget.
 	Looking for a local model runtime…	Helyi modelfuttató keresése…
 	Looking for certificates…	Tanúsítványok keresése…
 	Looking for PDFs…	PDF-ek keresése…
@@ -1334,6 +1383,7 @@ key	Home	Home
 	Make searchable (recognize text)	Kereshetővé tétel (szövegfelismerés)
 	Manage embedded index	Beágyazott index kezelése
 	Manage plugins…	Bővítmények kezelése…
+	Manual duplex needs one reverse side for each front.	Kézi kétoldalas beolvasáshoz minden előlaphoz egy hátlap kell.
 	Maps to standard role	Szabványos szerephez rendeli
 	March	március
 	Margins (in)	Margók (hüvelyk)
@@ -1382,6 +1432,8 @@ key	Home	Home
 	Midpoints	Felezőpontok
 	Minimize	Minimalizálás
 	minimum	minimum
+	Mirror	Tükrözés
+	Mirror the page	Oldal tükrözése
 	Missing field	Hiányzó mező
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Hiányzik a PDF-ben mentett számítási sorrendből: más PDF-megjelenítők talán nem számítják ki.
 	Mixed	Eltérő értékek
@@ -1497,6 +1549,7 @@ key	Home	Home
 	no output folder was chosen	nincs kiválasztva kimeneti mappa
 	No pages match those choices	Egy oldal sem felel meg ezeknek a választásoknak
 	No pages selected	Nincs kijelölt oldal
+	No pages were scanned.	Egy oldal sem lett beolvasva.
 	No PDFs in this folder yet	Ebben a mappában még nincs PDF
 	No PDFs, images or text files found in {folder}	Nem található PDF, kép vagy szövegfájl itt: {folder}
 	No photo chosen	Nincs kiválasztott fénykép
@@ -1511,6 +1564,7 @@ key	Home	Home
 	No reference yet	Még nincs referencia
 	No release notes were provided.	Nem érkeztek kiadási megjegyzések.
 	No scanner found	Nem található lapolvasó
+	No scanner is connected.	Nincs csatlakoztatott szkenner.
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Nem található lapolvasó. Ellenőrizze, hogy a lapolvasó be van-e kapcsolva és csatlakoztatva van-e, vagy adja meg a hálózati címét.
 	No security	Nincs védelem
 	No sheets	Nincs lap
@@ -1606,6 +1660,8 @@ animation effects	On	Be
 	Open OFD (early alpha)…	OFD megnyitása (korai alfa)…
 	Open previous PDF in folder	A mappa előző PDF-jének megnyitása
 	Open tabs and edits update the search automatically.	A nyitott lapok és módosítások automatikusan frissítik a keresést.
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	Nyissa fel a fedelet, szüntesse meg az esetleges elakadást vagy az együtt behúzott lapokat, és egyenesen töltse be a hátralévő lapokat, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	Nyissa fel a fedelet, szüntesse meg az esetleges elakadást vagy az együtt behúzott lapokat, és egyenesen töltse be a lapokat, majd válassza a(z) „Újra” lehetőséget.
 	Open the file as it was saved then	A fájl megnyitása úgy, ahogy akkor mentve volt
 	Open the older version first	Először a régebbi változatot nyisd meg
 	Open this local PDF?	Megnyitja ezt a helyi PDF-fájlt?
@@ -1620,6 +1676,7 @@ animation effects	On	Be
 	Opening the browser's print dialog…	A böngésző nyomtatási párbeszédablakának megnyitása…
 	Opening {name}…	A(z) {name} megnyitása…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	Megnyitja a nyomtató-illesztőprogram beállításait. Ezek a számítógépről indított minden nyomtatásra érvényesek; az itt választott példányszám, kétoldalas nyomtatás, szürkeárnyalat és papír továbbra is érvényes.
+	Optical resolution {x} × {y} dpi.	Optikai felbontás {x} × {y} dpi.
 	Optimization cancelled	Optimalizálás megszakítva
 	Optimization is already running	Az optimalizálás már fut
 	Optimize	Optimalizálás
@@ -1754,6 +1811,7 @@ animation effects	On	Be
 	Phone Number	Telefonszám
 	Phone Numbers	Telefonszámok
 	Photo	Fénykép
+	Photometric	Fotometria
 	Pick a tool in the quick bar, or type above.	Válassz eszközt a gyorssávon, vagy írj felülre.
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Képek fedik le ezeket az oldalakat: {pages} (szkenneltek?), így ott nem látszik a háttér.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	A képekhez leíró helyettesítő szöveg kell, vagy dekoratívnak kell jelölni őket. Adj helyettesítő szöveget minden ábrához.
@@ -1805,7 +1863,9 @@ animation effects	On	Be
 	Preparing {n} sheets for printing…	{n} lap előkészítése nyomtatásra…
 	Presentation (.pptx)	Bemutató (.pptx)
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	G-SYNC/FreeSync villogás megelőzése (a következő indításkor)
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	Az előnézet az üveghez van. Állítson be lent hüvelykben egy területet, vagy hagyja üresen a teljes laphoz.
 	Preview unavailable: {e}	Nincs előnézet: {e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	Az előnézet az üveget használja. Állítsa a forrást Üvegre, vagy olvasson be előnézet nélkül.
 	Preview: page {p} of {n}	Előnézet: {p}. oldal / {n}
 	Previous ({key})	Előző ({key})
 	Previous / next page	Előző / következő oldal
@@ -1914,7 +1974,9 @@ animation effects	On	Be
 	Reduce file size	Fájlméret csökkentése
 	Reduce file size…	Fájlméret csökkentése…
 	Reference:	Referencia:
+	Refresh lists scanners. It does not feed paper.	A frissítés újra listázza a szkennereket. Nem húz be papírt.
 	Refresh plugins	Bővítmények frissítése
+	Region in inches. Leave the width or the height at zero to scan the whole area.	Terület hüvelykben. Hagyja a szélességet vagy magasságot nullán a teljes területhez.
 	Regularity	Szabályosság
 	Rejected	Elutasítva
 	Release notes	Kiadási megjegyzések
@@ -2024,6 +2086,9 @@ animation effects	On	Be
 	Reverse closed arrow	Fordított zárt nyíl
 	Reverse open arrow	Fordított nyitott nyíl
 	Reverse pages	Oldalak fordított sorrendben
+	reverse side(s)	hátlap
+	Reverse sides	Hátoldalak
+	Reverse sides interleaved.	Hátoldalak beszúrva.
 	Reverse the order	Sorrend megfordítása
 	Revert changes	Módosítások visszavonása
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	Visszatérsz „{name}” előzőleg mentett változatához? Az azóta tett módosítások utána nem vonhatók vissza.
@@ -2122,12 +2187,28 @@ animation effects	On	Be
 	Scan & OCR	Beolvasás és OCR
 	Scan and text recognition	Szkennelés és szövegfelismerés
 	Scan correction	Szkennelés javítása
+	Scan interrupted	Megszakadt beolvasás
 	Scan next page	Következő oldal beolvasása
 	Scan processing cancelled	Szkennelések feldolgozása megszakítva
+	Scan reverse side now (1 front)	Hátoldal beolvasása most (1 előlap)
+	Scan reverse sides	Hátoldalak beolvasása
+	Scan reverse sides now ({n} fronts)	Hátoldalak beolvasása most ({n} előlap)
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	Olvassa be az előlapot, fordítsa meg a lapot az üvegen, majd a hátlapot.
+	Scan the fronts before the reverse sides.	A hátoldalak előtt olvassa be az előlapokat.
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Olvassa be az előlapokat, fordítsa meg a köteget (utolsó lap felül), majd a hátoldalakat. Az oldalak előlap, hátlap, … sorrendben kerülnek be…
+	Scan the missing reverse sides, then choose Finish.	Olvassa be a hiányzó hátoldalakat, majd válassza a(z) „Befejezés” lehetőséget.
 	Scanned pages need OCR. Reading order follows extracted page text.	A szkennelt oldalakhoz OCR szükséges. Az olvasási sorrend az oldal kinyert szövegét követi.
 	Scanned text detected	Beolvasott szöveg észlelve
 	Scanner	Lapolvasó
+	Scanner settings	Szkennerbeállítások
 	Scanner's full area	A lapolvasó teljes területe
+	Scanning front {n} of {t}…	{n} / {t}. előlap beolvasása…
+	Scanning front {n}…	{n}. előlap beolvasása…
+	Scanning needs Windows (WIA) in this version.	A beolvasáshoz ebben a verzióban Windows (WIA) szükséges.
+	Scanning page {n} of {t}…	{n}. / {t}. oldal szkennelése…
+	Scanning page {n}…	{n}. oldal szkennelése…
+	Scanning reverse side {n} of {t}…	{n} / {t}. hátlap beolvasása…
+	Scanning reverse side {n}…	{n}. hátlap beolvasása…
 	Scanning was stopped	A beolvasás leállt
 	Scanning…	Beolvasás…
 	Screen / email	Képernyő / e-mail
@@ -2200,6 +2281,8 @@ animation effects	On	Be
 	Sending…	Küldés…
 	Sent to {printer}: {msg}	Elküldve ide: {printer}: {msg}
 	Separate PDFs	Külön PDF-ek
+	Separate the sheets and load the remaining ones, then choose Continue.	Válassza szét a lapokat, és töltse be a hátralévőket, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
+	Separate the sheets and load them again, then choose Try again.	Válassza szét a lapokat, és töltse be őket újra, majd válassza a(z) „Újra” lehetőséget.
 	Separator style:	Elválasztó stílusa:
 	Sepia	Szépia
 	Sepia night	Éjszakai szépia
@@ -2232,6 +2315,7 @@ animation effects	On	Be
 	Set the image of {name}	{name} képének beállítása
 	Set to current page ({n})	Beállítás az aktuális oldalra ({n})
 	Set to zero	Nullázás
+	Settings this source offers. Leave a control alone to keep the driver’s value.	Az ehhez a forráshoz tartozó beállítások. Hagyjon egy vezérlőt, ha a meghajtó értékét akarja.
 	SHA-1 digest	SHA-1 kivonat
 	SHA-256 digest	SHA-256 kivonat
 	Shadings	Árnyalatok
@@ -2382,6 +2466,7 @@ action wizard	Start	Indítás
 	Stop reading	Felolvasás leállítása
 	Straighten scanned page	Beszkennelt oldal kiegyenesítése
 	Straighten skewed scans	Ferde szkennelt oldalak kiegyenesítése
+	Straighten the page	Oldal egyenesítése
 	Strength: {s}	Erősség: {s}
 	Strikethrough	Áthúzás
 	Strikethrough text	Szöveg áthúzása
@@ -2404,6 +2489,8 @@ action wizard	Start	Indítás
 	Swap width and height	Szélesség és magasság felcserélése
 	Switch light / dark theme	Világos / sötét téma váltása
 	Switch page theme	Oldaltéma váltása
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	Kapcsolja ki, majd be a lapolvasót, és várja meg, amíg készen áll, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	Kapcsolja ki, majd be a lapolvasót, és várja meg, amíg készen áll, majd válassza a(z) „Újra” lehetőséget.
 	Switch to List view to change the pages it takes.	Válts listanézetre, ha módosítanád, mely oldalak kerüljenek bele.
 	Switch to two-page view first to show the cover page	Előbb válts kétoldalas nézetre a borító megjelenítéséhez
 	System default	Rendszer alapértelmezett
@@ -2467,6 +2554,7 @@ action wizard	Start	Indítás
 	The answer proposes formatting changes.	A válasz formázási módosításokat javasol.
 	The answer stopped unexpectedly.	A válasz váratlanul megszakadt.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Az API-kulcs titkosítatlanul kerülne elküldésre erre a címre. Használj https://-t, hacsak a szerver nem egy megbízható hálózaton van.
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Az üveg egyszerre egy oldalt olvas. Olvassa be az előlapot, fordítsa meg, majd a hátlapot.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	A számítási sorrendben {n} bejegyzés semmit nem számít ki. A „Sorrend javítása” eltávolítja.|A számítási sorrendben {n} bejegyzés semmit nem számít ki. A „Sorrend javítása” eltávolítja őket.
 	the certificate expired on {date}	a tanúsítvány lejárt: {date}
 	The checker found 1 problem which may prevent the document from being fully accessible.	Az ellenőrzés 1 problémát talált, amely megakadályozhatja, hogy a dokumentum teljesen akadálymentes legyen.
@@ -2499,7 +2587,12 @@ action wizard	Start	Indítás
 	The document's security settings don't allow filling in form fields	A dokumentum biztonsági beállításai nem engedik az űrlapmezők kitöltését
 	The document's security settings don't allow printing	A dokumentum biztonsági beállításai nem engedik a nyomtatást
 	The document's security settings don't allow this change	A dokumentum biztonsági beállításai nem engedik ezt a módosítást
+	The driver may accept a turn and leave the picture as it was.	A meghajtó elfogadhat egy forgatást, és mégis az eredeti képet adja vissza.
+	The driver reports a paper jam.	A meghajtó papírelakadást jelez.
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	A meghajtó várakozó lapot jelez. A bit üres tálca után is bekapcsolva maradhat.
 	The existing action will be preserved.	A meglévő művelet megmarad.
+	The feeder ran out of paper.	Az adagolóból kifogyott a papír.
+	The feeder took more than one sheet.	Az adagoló egynél több lapot húzott be.
 	The field properties could not be changed.	A mezőtulajdonságokat nem sikerült módosítani.
 	The field properties dialog is no longer open.	A mezőtulajdonságok párbeszédablak már nincs megnyitva.
 	The field {name} no longer exists.	A(z) {name} mező már nem létezik.
@@ -2509,6 +2602,7 @@ action wizard	Start	Indítás
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Az űrlap ide kéri a beküldést: {u}; a PdfCraft nem küld űrlapadatot. Mentsd a dokumentumot, hogy megmaradjanak a beírásaid.
 	The form asks viewers to make appearances (NeedAppearances)	Az űrlap arra kéri a megjelenítőket, hogy készítsenek megjelenést (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	Az űrlap célja és mezői (nevek, típusok, tab-sorrend)
+	The fronts already scanned are kept for the reverse-side pass.	A már beolvasott előlapok megmaradtak a hátoldalak menetéhez.
 	The image couldn't be used as an icon: {e}	A kép nem használható ikonként: {e}
 	The image has been copied ({w} × {h} pixels)	A kép a vágólapra került ({w} × {h} képpont)
 	The image has been copied as a {ext} file	A kép {ext}-fájlként a vágólapra került
@@ -2531,6 +2625,7 @@ action wizard	Start	Indítás
 	The order saved in the PDF needs tidying	A PDF-ben mentett sorrend rendbetételre szorul
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	A többi aláírás ({names}) jelezni fogja, hogy a dokumentum az aláírása után megváltozott. Ellenőrizze újra őket: semmi sem garantálja, hogy érvényesek maradnak.
 	The page has changed; select the image again	Az oldal megváltozott; jelölje ki újra a képet
+	The pages already scanned were kept in the document.	A már beolvasott oldalak megmaradtak a dokumentumban.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Az oldalak kinyerése megtörtént, de nem lettek törölve, mert a dokumentum megváltozott, amíg mappát választottál.
 	the password is incorrect	a jelszó hibás
 	The password is incorrect.	A jelszó helytelen.
@@ -2539,6 +2634,7 @@ action wizard	Start	Indítás
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	A PDF szövegének betűtípusai nem tudják megjeleníteni ezt: „{c}” ({code}). Válasszon támogatott szöveget.
 	The PIN is incorrect.	A PIN-kód helytelen.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	A PKCS #11 tokenek digitális azonosítóit nem sikerült listázni: {e}
+	The preview could not be shown.	Az előnézetet nem lehetett megjeleníteni.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	A nyomtató-illesztőprogram saját beállításai ehhez a nyomtatáshoz: papírtálca, papírtípus, utófeldolgozás és egyebek.
 	The provider's page didn't come back in time. Try again.	A szolgáltató oldala nem tért vissza időben. Próbálja újra.
 	The raw text was truncated to what fits.	A nyers szöveg csonkolva lett.
@@ -2548,8 +2644,23 @@ action wizard	Start	Indítás
 	The release is not a published stable update. Try again later.	Ez a kiadás nem közzétett stabil frissítés. Próbáld újra később.
 	The replacement file doesn't have that many pages.	A cserefájlban nincs ennyi oldal.
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	A korlátozások a „Minden engedély” nélküli címzettekre vonatkoznak. Mentéskor lép életbe.
+	The reverse sides already scanned are kept.	A már beolvasott hátoldalak megmaradtak.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	a sorok túl alacsonyak: növeld a terület magasságát, vagy használj kevesebb sort vagy kisebb sorközt
 	The same password is tried on each file.	Ugyanezt a jelszót próbáljuk meg minden fájlon.
+	The same printer is also available over the network.	Ugyanez a nyomtató a hálózaton keresztül is elérhető.
+	The same printer is also available over USB.	Ugyanez a nyomtató USB-n keresztül is elérhető.
+	The scan could not be started.	A beolvasást nem lehetett elindítani.
+	The scan produced no pages.	A beolvasás nem hozott létre oldalakat.
+	The scan was cancelled at the scanner.	A beolvasást a lapolvasón törölték.
+	The scan was interrupted.	A beolvasás megszakadt.
+	The scanner has a paper jam.	Papírelakadás van a lapolvasóban.
+	The scanner is busy, or the feeder has no paper.	A lapolvasó foglalt, vagy nincs papír az adagolóban.
+	The scanner is busy.	A lapolvasó foglalt.
+	The scanner is offline or needs attention.	A lapolvasó offline állapotban van, vagy figyelmet igényel.
+	The scanner list could not be refreshed.	A szkennerlista nem frissíthető.
+	The scanner needs attention.	A lapolvasó figyelmet igényel.
+	The scanner reported a lamp or device error.	A lapolvasó lámpa- vagy készülékhibát jelzett.
+	The scanner reported a paper problem (a jam or several sheets fed together).	A lapolvasó papírhibát jelzett (elakadás vagy több lap együttes behúzása).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	A képernyő valódi képpont/hüvelyk értéke. Kalibráljon vonalzóval, hogy a tényleges méret (100%) valódi méretükben mutassa az oldalakat.
 	The selected area has been copied ({w} × {h} pixels)	A kijelölt terület a vágólapra került ({w} × {h} képpont)
 	The selected fields could not be found. Select them again.	A kijelölt mezők nem találhatók. Jelöld ki őket újra.
@@ -2665,6 +2776,7 @@ action wizard	Start	Indítás
 	This token's PIN is low on tries remaining.	Ennek a tokennek a PIN-kódjából már csak kevés próbálkozás van hátra.
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	Ez a webcím több ábécé betűit keveri, ami gyakori módja egy másik oldal nevének utánzásának.
 	This web address uses letters from another alphabet, which can look like familiar ones.	Ez a webcím egy másik ábécé betűit használja, amelyek ismerős betűkre hasonlíthatnak.
+	Threshold	Küszöb
 	Thumbnail size	Bélyegképek mérete
 	Tile scale:	Csempe méretaránya:
 	Timed responses	Időzített válaszok
@@ -2686,13 +2798,15 @@ action wizard	Start	Indítás
 	Tooltip:	Elemleírás:
 	Top-level bookmarks ({n})	Legfelső szintű könyvjelzők ({n})
 	TR must be a child of Table, THead, TBody, or TFoot	A TR a Table, a THead, a TBody vagy a TFoot gyermeke kell legyen
+	Transfer format: {format}.	Átviteli formátum: {format}.
 	Transform image	Kép transzformálása
 	Translate with AI	Fordítás MI-vel
 	Trim the picture with its handles; Enter or Done applies	Vágja körül a képet a fogantyúival; Enter vagy Kész alkalmazza
 	Trust	Megbízhatóság
-	Try again	Újrapróbálás
+	Try again	Újra
 	Try the form as people filling it in will see it	Próbáld ki az űrlapot úgy, ahogy a kitöltők látják
 	Turn upside down (180°)	Fejjel lefelé fordítás (180°)
+	Turned left	Balra forgatva
 	two cells would both be named {name}	két cella neve is {name} lenne
 	Two-page view	Kétoldalas nézet
 	Two-sided:	Kétoldalas:
@@ -2736,8 +2850,10 @@ signature pad	Type	Gépelés
 	Update header & footer…	Fejléc és lábléc frissítése…
 	Update watermark	Vízjel frissítése
 	Update watermark…	Vízjel frissítése…
+	Upside down	Fejjel lefelé
 	URL to submit to	A beküldés URL-je
 	US Letter	Amerikai Letter
+	USB	USB
 	Use 72 DPI (one point per pixel)	72 DPI használata (egy pont képpontonként)
 	Use a certificate	Tanúsítvány használata
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Felhőalapú tanúsítvány használata (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
@@ -2783,6 +2899,7 @@ signature pad	Type	Gépelés
 	Verify	Ellenőrzés
 	Verify to see what the document needs.	Ellenőrizd, mire van szüksége a dokumentumnak.
 	Version {v}	{v} verzió
+	Vertical resolution	Függőleges felbontás
 	Vertical reversed	Függőleges, fordított
 	Vertical text cannot be moved with this selection.	A függőleges szöveg nem helyezhető át ezzel a kijelöléssel.
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	A videót, a hangot és a rich médiát címkézni kell, hogy bemondják őket. Címkézd a multimédia-széljegyzeteket.
@@ -2801,6 +2918,8 @@ signature pad	Type	Gépelés
 	Voice and Speech	Hang és beszéd
 	Voice:	Hang:
 	Volume:	Hangerő:
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Várja meg, amíg a lapolvasó végez, vagy zárjon be minden más, a lapolvasót használó programot, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Várja meg, amíg a lapolvasó végez, vagy zárjon be minden más, a lapolvasót használó programot, majd válassza a(z) „Újra” lehetőséget.
 	Waiting for the system print dialog…	Várakozás a rendszer nyomtatási párbeszédablakára…
 	Waiting for your approval in the browser…	Várakozás a jóváhagyására a böngészőben…
 	Warning	Warning
@@ -2815,6 +2934,8 @@ signature pad	Type	Gépelés
 	White on black	Fehér feketén
 	Whole words only	Csak egész szavak
 document scrollbar width	Wide	Széles
+	Will use the bed.	Az üveget fogja használni.
+	Will use the feeder.	Az adagolót fogja használni.
 	Window Options	Ablakbeállítások
 	Windows store  ·  	Windows-tároló  ·  
 	Word count	Szavak száma
@@ -2914,11 +3035,13 @@ document scrollbar width	Wide	Széles
 @plural	{n} more field calculates too early.|{n} more fields calculate too early.	További {n} mező túl korán számítódik.|További {n} mező túl korán számítódik.
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	További {n} képlet hiányzó mezőt olvas.|További {n} képlet hiányzó mezőket olvas.
 @plural	{n} object selected|{n} objects selected	{n} objektum kijelölve|{n} objektum kijelölve
+	{n} of {m} pages were scanned.	{n} / {m} oldal lett beolvasva.
 	{n} pages	{n} oldal
 	{n} pages could not be searched; results are incomplete.	{n} oldal nem volt kereshető; az eredmények hiányosak.
 	{n} pages scanned	{n} oldal beolvasva
 	{n} pages selected	{n} oldal kijelölve
 	{n} pages selected.	{n} oldal kijelölve.
+	{n} pages were scanned.	{n} oldal lett beolvasva.
 @plural	{n} page|{n} pages	{n} oldal|{n} oldal
 @plural	{n} reply|{n} replies	{n} válasz|{n} válasz
 	{n} selected	{n} kijelölve
@@ -2938,6 +3061,7 @@ document scrollbar width	Wide	Széles
 	{who} in this document wants to open this address in your browser:	{who} ebben a dokumentumban meg akarja nyitni ezt a címet a böngésződben:
 	{who} in this document wants to open your email app with this address:	{who} ebben a dokumentumban meg akarja nyitni az e-mail alkalmazásodat ezzel a címmel:
 	{words} on {pages}	{words}, itt: {pages}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} hüvelyk, {pxw} × {pxh} képpont, {size}
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (a védelem mentéskor lép életbe)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	A(z) „{name}” megváltozott a lemezen a megnyitás vagy az utolsó mentés óta. A mentés most ezt az újabb változatot cseréli le erre.

@@ -32,6 +32,7 @@
 	1 page scanned	已掃描 1 頁
 	1 page selected	已選取 1 頁
 	1 page selected.	已選擇 1 頁。
+	1 page was scanned.	1 page was scanned.
 	180 degrees	180 度
 	3D model	3D模型
 	3D model canvas	3D模型畫布
@@ -50,6 +51,7 @@
 	a bookmark cannot be moved inside itself	無法將書籤移至其自身內部
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	用 Rust 從零編寫的開源 PDF 應用。MIT OR Apache-2.0 許可。
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	某欄太窄：請加寬區域、給該欄更多寬度，或減少欄數或欄間距
+	A cover on the scanner is open.	A cover on the scanner is open.
 	A diagonal CONFIDENTIAL watermark on every page.	每頁上的對角線 CONFIDENTIAL 浮水印。
 	a document must keep at least one page	文件至少必須保留一頁
 	A document needs at least one page: copy instead	文件至少需要保留一頁，請改用複製
@@ -58,6 +60,7 @@
 	A form field has additional actions	表單欄位具有額外動作
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	本機模型不是最先進的雲端模型：它可能出錯，較長的回答在處理器上需要時間。重要事項請務必查證，下載前也請留意模型大小與這台機器的匹配。
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	在分頁左側、標題列通常顯示的位置放一個標誌或名稱：PdfCraft 自己的，或你公司的。
+	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	指定頁數會在掃完這些頁後停止進紙器。取消會提前結束傳輸；已收到的頁面仍保留在文件中。
 	A picture covers page {pages} (a scan?), so the background won't show there.	第 {pages} 頁被一張圖片覆蓋（掃描檔？），因此那裡不會顯示背景。
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	一個 PNG 或 SVG 檔案。每次 PdfCraft 啟動時都從此位置讀取。
 	A selected field has no widget on any page, so the fields can't be edited together.	某個所選欄位在任何頁面上都沒有控制項，因此無法一起編輯這些欄位。
@@ -191,6 +194,7 @@
 	Advanced Options {chevron}	進階選項 {chevron}
 	Advanced search…	進階搜尋…
 	Advanced unit formats	進階單位格式
+	Advanced…	Advanced…
 	After Sign, enter the OTT code from the mSzafir app in CloudSigner's window and approve the signature in the app. With CloudSigner's persistent OTT code on, the code is asked for only once every few minutes.	按下簽名後，請在 CloudSigner 視窗中輸入 mSzafir 應用程式提供的 OTT 碼，並在應用程式中核准簽名。開啟 CloudSigner 的持續 OTT 碼後，每隔幾分鐘才需輸入一次。
 	AI Assistant	AI 助理
 	AI assistant	AI 助理
@@ -210,6 +214,7 @@
 	All multimedia objects are tagged	所有多媒體物件都已標記
 	All open documents	所有已開啟的文件
 	All page content is tagged	所有頁面內容都已標記
+	All pages asks the driver for the whole stack.	「全部頁面」會向驅動程式要求整疊紙張。
 	All pages in document	文件中的所有頁面
 	All pages in range	範圍內的所有頁面
 	All permissions	所有權限
@@ -297,6 +302,7 @@
 	Author title	作者職稱
 	Auto follows the system's text size. Pages always render at the display's full resolution.	「自動」會跟隨系統的文字大小。頁面一律以螢幕的完整解析度呈現。
 	Auto portrait/landscape	自動縱向/橫向
+	Auto-deskew	Auto-deskew
 	Auto-detect	自動偵測
 	Auto-rotate pages	自動旋轉頁面
 	Auto-size text to fit redaction region	自動調整文字大小以適應遮蔽內容區域
@@ -315,6 +321,7 @@
 	Balanced	平衡
 	Balanced and Compact reduce image quality to make a smaller file. Text and forms stay editable.	「平衡」和「精簡」會降低影像品質以縮小檔案。文字和表單仍可編輯。
 	Bates numbering	Bates 編號
+	Bed	Bed
 	Before each selected page (select pages in Organize)	在每個選定頁面之前拆分（在組織頁面中選擇）
 	Before the number	在數字之前
 	Behind text and images	在文字與影像後方
@@ -343,6 +350,7 @@
 	Boundary coordinates run from 0 to 1 across the viewport.	邊界座標在檢視區內的範圍為 0 到 1。
 	Boundary point	邊界點
 	Box	框
+	Brightness	Brightness
 	Bring All to Front	全部移至最前
 	Bring forward	上移一層
 	Bring to front	移至最上層
@@ -365,6 +373,7 @@
 	Callout	標註
 	Can't be read: {e}	無法讀取：{e}
 	Cancel caption placement	取消標題放置
+	Cancel reverse sides	Cancel reverse sides
 	Cancelled	已取消
 	Cancelling…	正在取消…
 	Case-sensitive	區分大小寫
@@ -420,9 +429,13 @@
 	Check for updates…	尋找更新…
 	Check spelling	檢驗拼字
 	Check spelling while typing	輸入時檢查拼字
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.	Check that the feeder has paper, or wait for the scanner to finish, then choose Continue.
+	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.	Check that the feeder has paper, or wait for the scanner to finish, then choose Try again.
 	Check that the tags read in the order a sighted reader would. Use the Reading Order tool or the Tags panel to correct it.	檢驗標記的閱讀順序是否與明眼讀者一致。使用閱讀順序工具或標記面板進行更正。
 	Check the pages	請檢查頁碼
 	Check the pages of {name}: {why}	請檢查 {name} 的頁碼：{why}
+	Check the scanner is on and connected, then choose Continue.	Check the scanner is on and connected, then choose Continue.
+	Check the scanner is on and connected, then choose Try again.	Check the scanner is on and connected, then choose Try again.
 	CheckBox	核取方塊
 	Checkbox	核取方塊
 	Checked	已勾選
@@ -430,6 +443,7 @@
 	Checking Hungarian OCR installation…	正在檢查匈牙利語 OCR 的安裝…
 	Checking Options ({on} of 32 in all categories)	檢驗選項（所有類別共 32 項，已選 {on} 項）
 	Checking pages…	正在檢查頁面…
+	Checking the scanner…	正在檢查掃描器…
 	Checkmark	勾選記號
 	Chinese (Simplified) and English	簡體中文和英語
 	Choose a control point inside the viewport.	請選擇檢視區內的控制點。
@@ -473,8 +487,11 @@
 	Clear points	清除點
 	Clear Recent Files	清除最近的檔案
 	Clear redaction marks	清除遮蔽標記
+	Clear region	Clear region
 	Clear search	清除搜尋
 	Clear selection / close find	清除選取／關閉尋找
+	Clear the jam and load the remaining sheets squarely, then choose Continue.	Clear the jam and load the remaining sheets squarely, then choose Continue.
+	Clear the jam and load the sheets squarely, then choose Try again.	Clear the jam and load the sheets squarely, then choose Try again.
 	Click each vertex. Enter finishes the perimeter.	依序點擊各頂點，按 Enter 完成周長量測。
 	Click on the page to add a {tool}, or drag to set its size	按一下頁面新增{tool}，或拖動設定其大小
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	按一下頁面新增文字；每次按一下開始一個新文字框，✓ 完成。拖動專案以移動，拖動角落以調整大小，按兩下文字進行編輯。
@@ -496,6 +513,8 @@
 	Close Tab	關閉分頁
 	Close Tabs to the Right	關閉右側分頁
 	Close tabs to the right	關閉右側分頁
+	Close the feeder cover and check the paper, then choose Continue.	Close the feeder cover and check the paper, then choose Continue.
+	Close the feeder cover and check the paper, then choose Try again.	Close the feeder cover and check the paper, then choose Try again.
 	Close Window	關閉視窗
 	Close window	關閉視窗
 	Closed arrow	閉合箭頭
@@ -506,8 +525,10 @@
 	Collapse all pages	摺疊所有頁面
 	Collapse all tools	摺疊所有工具
 	Collapse tag	收合標籤
+	Color	Color
 	Color contrast	顏色對比度
 	Color Document	彩色文件
+	Color document	Color document
 	Color Images	彩色圖片
 	Color Photo	彩色照片
 	Color Spaces	顏色空間
@@ -555,12 +576,18 @@
 	Configure New Digital ID	配置新數位 ID
 	Confirm Password	確認密碼
 	Conformance level:	一致性級別：
+	Connected by USB.	Connected by USB.
 	Connected lines	連線線
+	Connected over the network (Web Services). Options come from that driver, not the USB one.	Connected over the network (Web Services). Options come from that driver, not the USB one.
 	Console	主控台
 	Content copying	內容複製
 	Content copying for accessibility	為無障礙複製內容
 	Content Streams	內容流
+	Continue scanning	Continue scanning
+	Continue scanning fronts	Continue scanning fronts
+	Continue scanning reverse sides	Continue scanning reverse sides
 	Continuous scrolling	連續捲動
+	Contrast	Contrast
 	Control point	控制點
 	Control points	控制點
 	Conversion factor	換算係數
@@ -640,7 +667,7 @@
 	Create link	建立連結
 	Create links from URLs	從網址建立連結
 	Create Link…	建立連結…
-	Create PDF	建立 PDF
+	Create PDF	Create PDF
 	Create PDF Comment Summary	建立 PDF 註解摘要
 	Create PDF comment summary…	建立 PDF 註解摘要…
 	Create PDF from clipboard	從剪貼簿建立 PDF
@@ -657,7 +684,9 @@
 	Created a PDF from the first {n} files	已從前 {n} 個檔案建立 PDF
 	Created a PDF from {n} files	已從 {n} 個檔案建立 PDF
 	Created a PDF from {n} files; left out: {names}	已從 {n} 個檔案建立 PDF；已略過：{names}
+	Created Scan.pdf	已建立 Scan.pdf
 	Created {n} links	已建立{n}個連結
+	Created {n} scanned files	已建立 {n} 個掃描檔案
 	Creates 1 file from {n} pages.	從 {n} 頁建立 1 個檔案。
 	Creates {f} files from {n} pages.	從 {n} 頁建立 {f} 個檔案。
 	Credit Cards	信用卡
@@ -830,6 +859,7 @@ key	Delete	Delete
 	Drag a rectangle around the area to copy	拖動框選要複製的區域
 	Drag a rectangle on a page to crop it; double-click a page for Set Page Boxes	拖動頁面上的矩形進行裁切；按兩下頁面可設定頁面框
 	Drag a rectangle to create a link; double-click a link to edit it	拖動矩形建立連結；按兩下連結進行編輯
+	Drag on the preview to choose a region. An empty selection scans the whole area.	Drag on the preview to choose a region. An empty selection scans the whole area.
 	Drag the corners onto the document's edges, then choose Enhance page.	將四個角拖曳到文件邊緣，然後選擇「增強頁面」。
 	Drag the selection to move it. Esc clears the selection.	拖曳選取範圍即可移動。按 Esc 清除選取。
 	Drag to draw the area where the signature should appear.	拖動繪製簽名應顯示的區域。
@@ -849,9 +879,12 @@ key	Delete	Delete
 	Drawing	繪圖
 	Drawing scale	圖面比例
 	Drawing scale changes. Use Actual size for full-scale plans.	圖面比例會改變。如需原尺寸的圖面，請使用「實際大小」。
+	Driver default	Driver default
 	Drop PDFs, images, text files or folders here, or choose them.	將 PDF、圖片、文字檔案或資料夾拖放到此處，或選取它們。
 	Drop-down list	下拉式清單
 	Dropdown Properties	下拉選單屬性
+	Duplex	Duplex
+	Duplex is not offered.	Duplex is not offered.
 	Duplicate "{name}" onto:	將「{name}」複製到：
 	Duplicate Field	複製欄位
 	Duplicate field	複製欄位
@@ -1002,6 +1035,7 @@ key	Esc	Esc
 	Failed	未通過
 scroll speed	Fast	快
 	February	二月
+	Feeder	Feeder
 	Feet	英呎
 	Feet and inches	英呎與英吋
 	Feet and inches uses ft as the scale unit.	英呎與英吋格式使用 ft 作為比例單位。
@@ -1069,6 +1103,7 @@ scroll speed	Fast	快
 	Find untagged content	尋找未標記的內容
 	Finding document fonts…	正在尋找文件字型…
 	Finding fields… page {d} of {t}	正在尋找欄位…第 {d} 頁，共 {t} 頁
+	Finish	Finish
 	Finish measurement	完成量測
 	Finish or discard the text being edited before selecting several objects.	請先完成或放棄正在編輯的文字，再選取多個物件。
 	Finished measurements appear here and are saved in the PDF.	完成的量測顯示於此，並儲存在 PDF 中。
@@ -1138,10 +1173,15 @@ scroll speed	Fast	快
 	Fraction	分數
 	From a PDF page or an image	來自 PDF 頁面或圖片
 	From colour	使用顏色
+	From scanner…	從掃描器…
 	From template	從範本建立
 	From {file}	來自 {file}
 	From:	從：
 	Front side only	僅正面
+	front(s)	front(s)
+	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.	Fronts scanned: {n}. Flip the sheet on the bed, then choose Scan reverse sides.
+	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.	Fronts scanned: {n}. Flip the stack so the last sheet is on top, reload it, then choose Scan reverse sides.
+	Full area	Full area
 	Full screen mode	全螢幕模式
 	Full screen mode ({key}); Esc leaves it	全螢幕模式 ({key}); Esc
 	Generate styled PDF	產生樣式 PDF
@@ -1241,8 +1281,10 @@ key	Home	Home
 	Insert pages from {name}	從 {name} 插入頁面
 	Insert pages from {name} — 1 field renamed	從 {name} 插入頁面 — 已重新命名 1 個欄位
 	Insert pages from {name} — fields renamed	從 {name} 插入頁面 — 已重新命名欄位
+	Insert scanned pages	Insert scanned pages
 	Insert text	插入文字
 	Inserted	插入
+	Inserted scanned pages	已插入掃描頁面
 	Inserting, deleting, and rotating pages	插入、刪除和旋轉頁面
 	Inset	嵌入
 	Inspector	檢查器
@@ -1251,6 +1293,7 @@ key	Home	Home
 	Installed version: {v}	已安裝版本：{v}
 	Integrity	完整性
 	Intended usage	預期用途
+	Intent	Intent
 	Interface and appearance	介面和外觀
 	Interface font	介面字型
 	Interface size	介面大小
@@ -1258,6 +1301,7 @@ key	Home	Home
 	Invalid page range	頁碼範圍無效
 	Invert colors	反轉顏色
 	Invert everything	全部反轉
+	Invert tones	Invert tones
 	Inverted page background	反轉頁面背景
 	Inverted text	反轉文字
 	Invisible Rectangle	不可見矩形
@@ -1297,10 +1341,13 @@ key	Home	Home
 	Keychain  ·  	鑰匙串 · 
 	Kilometres	公里
 	Labels: {preview}. Later pages keep their labels.	標籤：{preview}。後續頁面保留其標籤。
+	Lamp	Lamp
+	Lamp on	Lamp on
 	Landscape and Portrait Pages	橫向和縱向頁面
 	Landscape Pages	橫向頁面
 	Landscape pages	橫向頁面
 	Language and spelling	語言和拼字
+	Large scan	Large scan
 	Larger pages	放大頁面
 	Larger text	放大文字
 	Larger thumbnails	放大縮圖
@@ -1346,9 +1393,12 @@ key	Home	Home
 	List items	清單項
 	List items belong in a list. Fix the list's tags.	清單項應位於清單內。請修復清單標記。
 	List labels and bodies belong in a list item. Fix the list's tags.	清單標籤和正文應位於清單項內。請修復清單標記。
+	Listing scanners…	Listing scanners…
 	Lists	清單
 	Load document font	載入文件字型
 	Load font…	載入字型…
+	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.	Load more sheets, then choose Continue; or choose Finish to keep what was scanned.
+	Load sheets in the feeder, then choose Try again.	Load sheets in the feeder, then choose Try again.
 	Local and private	本機且私有
 	Local cross-PDF links require the desktop app	PDF 之間的本機連結需要桌面應用程式
 	Location: 	位置：
@@ -1357,6 +1407,8 @@ key	Home	Home
 	Logo	標誌
 	Logo and name	標誌和名稱
 	Longitude	經度
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Continue.
+	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.	Look at the scanner for a message or an open door or cover, fix what it shows, then choose Try again.
 	Looking for a local model runtime…	正在尋找本機模型執行環境…
 	Looking for PDFs…	正在尋找 PDF…
 	Looking for printers…	正在尋找印表機…
@@ -1372,6 +1424,7 @@ key	Home	Home
 	Make scans searchable, then make them smaller.	使掃描件可搜尋，然後將其變小。
 	Make searchable (recognize text)	產生可搜尋的 PDF（辨識文字）
 	Manage embedded index	管理內嵌索引
+	Manual duplex needs one reverse side for each front.	Manual duplex needs one reverse side for each front.
 	Map accuracy	地圖精度
 	Map boundary	地圖邊界
 	Map coordinate system	地圖座標系
@@ -1425,6 +1478,8 @@ key	Home	Home
 	Miles	英里
 	Minimum	最低
 	minimum	最小值
+	Mirror	Mirror
+	Mirror the page	Mirror the page
 	Missing field	缺少欄位
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	PDF 中儲存的計算順序缺少此欄位：其他 PDF 檢視器可能不會計算它。
 	Mixed	混合
@@ -1543,6 +1598,7 @@ key	Home	Home
 	no output folder was chosen	未選擇輸出資料夾
 	No pages match those choices	所選條件沒有相符的頁面
 	No pages selected	未選取任何頁面
+	No pages were scanned.	No pages were scanned.
 	No PDFs in this folder yet	此資料夾中還沒有 PDF
 	No PDFs, images or text files found in {folder}	在 {folder} 中找不到 PDF、圖片或文字檔案
 	No photo chosen	未選擇相片
@@ -1555,6 +1611,7 @@ key	Home	Home
 	No release notes were provided.	沒有提供發行說明。
 	No saved measurements in this view.	此視圖中沒有已儲存的測量。
 	No scanner found	找不到掃描器
+	No scanner is connected.	No scanner is connected.
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	找不到掃描器。請檢查掃描器是否已開機並連線，或輸入其網路位址。
 	No security	無安全性
 	No sheets	無紙張
@@ -1654,6 +1711,8 @@ animation effects	On	開
 	Open previous PDF in folder	開啟資料夾中的上一個 PDF
 	Open Recent	開啟最近的檔案
 	Open tabs and edits update the search automatically.	開啟的分頁與編輯內容會自動更新搜尋。
+	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.	Open the cover, clear any jam or sheets fed together, load the remaining sheets squarely, then choose Continue.
+	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.	Open the cover, clear any jam or sheets fed together, load the sheets squarely, then choose Try again.
 	Open the file as it was saved then	開啟當時儲存的檔案
 	Open the older version first	請先開啟舊版本
 	Open this local PDF?	要開啟此本機 PDF 嗎？
@@ -1668,6 +1727,7 @@ animation effects	On	開
 	Opening the browser's print dialog…	正在開啟瀏覽器的列印對話方塊…
 	Opening {name}…	正在開啟 {name}…
 	Opens the printer driver's preferences. They are saved for every print from this computer; the copies, two-sided, grayscale and paper chosen here still apply.	開啟印表機驅動程式的喜好設定。這些設定會儲存並用於此電腦的所有列印；此處選擇的份數、雙面、灰階和紙張仍然適用。
+	Optical resolution {x} × {y} dpi.	Optical resolution {x} × {y} dpi.
 	Optimization cancelled	已取消最佳化
 	Optimization is already running	最佳化已在執行
 	Optimize	最佳化
@@ -1689,6 +1749,7 @@ animation effects	On	開
 	Organizational Unit	組織單位
 	Organize pages	整理頁面
 	Organize pages plan	頁面整理方案
+	Orientation	Orientation
 	Original (lossless)	原始（無損）
 	Original: replace pages	原文件：替換頁面
 	Other colour…	其他顏色…
@@ -1801,6 +1862,7 @@ animation effects	On	開
 	Perpendicular	垂直距離
 	Phone Number	電話號碼
 	Phone Numbers	電話號碼
+	Photometric	Photometric
 	Pick a tool in the quick bar, or type above.	在快捷欄中選擇工具，或在上方輸入。
 	Pick page position	在頁面上選取位置
 	Pictures cover pages {pages} (scans?), so the background won't show there.	第 {pages} 頁被圖片覆蓋（掃描檔？），因此那裡不會顯示背景。
@@ -1854,7 +1916,9 @@ animation effects	On	開
 	Presentation (.pptx)	簡報（.pptx）
 	Preset	預設
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	防止 G-SYNC/FreeSync 閃爍（下次啟動時生效）
+	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.
 	Preview unavailable: {e}	無法預覽：{e}
+	Preview uses the bed. Switch the source to Bed, or scan without a preview.	Preview uses the bed. Switch the source to Bed, or scan without a preview.
 	Preview: page {p} of {n}	預覽：第 {p} 頁，共 {n} 頁
 	Previous	上一頁
 	Previous ({key})	上一個 ({key})
@@ -1971,6 +2035,9 @@ animation effects	On	開
 	Reference length must be positive.	參考長度必須為正數。
 	Reference preview	基準預覽
 	Reference:	參考檔案：
+	Refresh	Refresh
+	Refresh lists scanners. It does not feed paper.	Refresh lists scanners. It does not feed paper.
+	Region in inches. Leave the width or the height at zero to scan the whole area.	Region in inches. Leave the width or the height at zero to scan the whole area.
 	Registration residual	配準殘差
 	Regularity	規則性
 	Rejected	已拒絕
@@ -2081,6 +2148,9 @@ animation effects	On	開
 	Reverse closed arrow	反向閉合箭頭
 	Reverse open arrow	反向開口箭頭
 	Reverse pages	逆序頁面
+	reverse side(s)	reverse side(s)
+	Reverse sides	Reverse sides
+	Reverse sides interleaved.	Reverse sides interleaved.
 	Revert	回復至上次儲存
 	Revert changes	還原變更
 	Revert to the previously saved version of “{name}”? Changes since then can't be undone afterwards.	還原到「{name}」的上次儲存版本？此後的更改將無法復原。
@@ -2182,13 +2252,29 @@ animation effects	On	開
 	Scan & OCR	掃描與 OCR
 	Scan and text recognition	掃描與文字辨識
 	Scan correction	掃描校正
+	Scan interrupted	Scan interrupted
 	Scan next page	掃描下一頁
 	Scan processing cancelled	掃描處理已取消
+	Scan reverse side now (1 front)	Scan reverse side now (1 front)
+	Scan reverse sides	Scan reverse sides
+	Scan reverse sides now ({n} fronts)	Scan reverse sides now ({n} fronts)
+	Scan the front, flip the sheet on the bed, then scan the reverse side.	Scan the front, flip the sheet on the bed, then scan the reverse side.
+	Scan the fronts before the reverse sides.	Scan the fronts before the reverse sides.
+	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …
+	Scan the missing reverse sides, then choose Finish.	Scan the missing reverse sides, then choose Finish.
 	Scanned pages need OCR. Reading order follows extracted page text.	掃描頁面需要OCR。朗讀順序依循從頁面擷取的文字。
 	Scanner	掃描器
+	Scanner settings	Scanner settings
 	Scanner's full area	掃描器的整個區域
+	Scanning front {n} of {t}…	Scanning front {n} of {t}…
+	Scanning front {n}…	Scanning front {n}…
+	Scanning needs Windows (WIA) in this version.	此版本的掃描功能需要 Windows (WIA)。
+	Scanning page {n} of {t}…	正在掃描第 {n} / {t} 頁…
+	Scanning page {n}…	正在掃描第 {n} 頁…
+	Scanning reverse side {n} of {t}…	Scanning reverse side {n} of {t}…
+	Scanning reverse side {n}…	Scanning reverse side {n}…
 	Scanning was stopped	掃描已停止
-	Scanning…	正在掃描…
+	Scanning…	Scanning…
 	Screen / email	螢幕 / 電子郵件
 	Screen flicker	螢幕閃爍
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	螢幕閱讀器根據文件語言選擇語音。請在「文件屬性」>「進階」>「語言」中設定。
@@ -2262,6 +2348,8 @@ animation effects	On	開
 	Sent to {printer}: {msg}	已傳送到{printer}：{msg}
 	Separate display coordinate system	使用獨立的顯示座標系
 	Separate PDFs	個別 PDF
+	Separate the sheets and load the remaining ones, then choose Continue.	Separate the sheets and load the remaining ones, then choose Continue.
+	Separate the sheets and load them again, then choose Try again.	Separate the sheets and load them again, then choose Try again.
 	Separate vertical units	單獨設定縱向單位
 	Separator style:	分隔符樣式：
 	Sepia	棕褐色
@@ -2293,6 +2381,7 @@ animation effects	On	開
 	Set the image of {name}	設定 {name} 的圖片
 	Set to current page ({n})	設為目前頁（第 {n} 頁）
 	Set to zero	置零
+	Settings this source offers. Leave a control alone to keep the driver’s value.	Settings this source offers. Leave a control alone to keep the driver’s value.
 	Shadings	著色
 	Shared Field Properties	共用欄位屬性
 	Sheet {s} of {n}	第 {s} 張，共 {n} 張
@@ -2430,9 +2519,11 @@ document scrollbar width	Standard	標準
 	Start page number	起始頁碼
 	Steps	步驟
 	Sticky note	便利貼註解
+	Stop	Stop
 	Stop reading	停止朗讀
 	Straighten scanned page	校正掃描頁面的傾斜
 	Straighten skewed scans	校正掃描件傾斜
+	Straighten the page	Straighten the page
 	Strength: {s}	強度：{s}
 	Strikethrough text	文字加上刪除線
 	Stroke colour	線條顏色
@@ -2453,6 +2544,8 @@ document scrollbar width	Standard	標準
 	Swap width and height	交換寬度和高度
 	Switch light / dark theme	切換淺色／深色主題
 	Switch page theme	切換頁面主題
+	Switch the scanner off and on again, wait until it is ready, then choose Continue.	Switch the scanner off and on again, wait until it is ready, then choose Continue.
+	Switch the scanner off and on again, wait until it is ready, then choose Try again.	Switch the scanner off and on again, wait until it is ready, then choose Try again.
 	Switch to List view to change the pages it takes.	切換到清單檢視以變更要使用的頁面。
 	Switch to two-page view first to show the cover page	請先切換到雙頁檢視，才能顯示封面
 	System default	系統預設
@@ -2516,6 +2609,7 @@ document scrollbar width	Standard	標準
 	The answer proposes formatting changes.	回答中包含格式修改建議。
 	The answer stopped unexpectedly.	回答意外中斷。
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API 金鑰將以未加密方式傳送到此位址。除非伺服器位於你信任的網路中，否則請使用 https://。
+	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	計算順序中有 {n} 個不計算任何內容的項目。「修正順序」會將其刪除。
 	the certificate expired on {date}	憑證已於 {date} 到期
 	The checker found 1 problem which may prevent the document from being fully accessible.	檢驗器發現 1 個問題，可能導致文件無法完全無障礙。
@@ -2545,7 +2639,12 @@ document scrollbar width	Standard	標準
 	The document's security settings don't allow filling in form fields	文件安全設定不允許填寫表單欄位
 	The document's security settings don't allow printing	文件安全設定不允許列印
 	The document's security settings don't allow this change	文件安全設定不允許此更改
+	The driver may accept a turn and leave the picture as it was.	The driver may accept a turn and leave the picture as it was.
+	The driver reports a paper jam.	The driver reports a paper jam.
+	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	The driver reports a sheet waiting. The bit can stay on after the tray is empty.
 	The existing action will be preserved.	將保留現有動作。
+	The feeder ran out of paper.	The feeder ran out of paper.
+	The feeder took more than one sheet.	The feeder took more than one sheet.
 	The field properties could not be changed.	無法變更欄位屬性。
 	The field properties dialog is no longer open.	欄位屬性對話方塊已不再開啟。
 	The field {name} no longer exists.	欄位 {name} 已不存在。
@@ -2555,6 +2654,7 @@ document scrollbar width	Standard	標準
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	該表單請求送出到{u}；PdfCraft 不傳送表單資料。請儲存文件以保留填寫內容。
 	The form asks viewers to make appearances (NeedAppearances)	此表單要求檢視器產生外觀（NeedAppearances）
 	The form's purpose and its fields (names, types, tab order)	表單的用途及其欄位（名稱、類型、Tab 順序）
+	The fronts already scanned are kept for the reverse-side pass.	The fronts already scanned are kept for the reverse-side pass.
 	The image couldn't be used as an icon: {e}	無法將此影像用作圖示：{e}
 	The image has been copied ({w} × {h} pixels)	圖片已複製（{w} × {h} 畫素）
 	The image has been copied as a {ext} file	圖片已複製為 {ext} 檔案
@@ -2579,12 +2679,14 @@ document scrollbar width	Standard	標準
 	The order saved in the PDF needs tidying	PDF 中儲存的順序需要整理
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	其他簽章（{names}）將回報文件在簽署後已被變更。請重新驗證它們：無法保證它們仍然有效。
 	The page has changed; select the image again	頁面已變更；請重新選取圖片
+	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	the password is incorrect	密碼不正確
 	The password is incorrect.	密碼不正確。
 	The password is only used to read the file; it isn't saved.	密碼僅用於讀取檔案，不會被儲存。
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF 文字字型無法顯示「{c}」（{code}）。請選擇支援的文字。
 	The PIN is incorrect.	PIN 不正確。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	無法列出 PKCS #11 權杖的數位 ID：{e}
+	The preview could not be shown.	The preview could not be shown.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	此次列印的印表機驅動程式專屬設定：紙匣、紙張類型、裝訂整理等。
 	The provider's page didn't come back in time. Try again.	提供者頁面未及時返回。請再試一次。
 	The raw text was truncated to what fits.	原始文字已被截斷。
@@ -2594,8 +2696,25 @@ document scrollbar width	Standard	標準
 	The release is not a published stable update. Try again later.	此版本不是已發布的穩定更新。請稍後再試。
 	The replacement file doesn't have that many pages.	替換檔案沒有那麼多頁面。
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	限制適用於沒有「所有權限」的收件者。儲存時套用。
+	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
+	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	列太矮：請加高區域，或減少列數或列間距
 	The same password is tried on each file.	將對每個檔案嘗試同一密碼。
+	The same printer is also available over the network.	同一台印表機也可透過網路使用。
+	The same printer is also available over USB.	同一台印表機也可透過 USB 使用。
+	The scan could not be started.	The scan could not be started.
+	The scan produced no pages.	The scan produced no pages.
+	The scan was cancelled at the scanner.	The scan was cancelled at the scanner.
+	The scan was interrupted.	The scan was interrupted.
+	The scan was stopped: its document was closed.	The scan was stopped: its document was closed.
+	The scanner has a paper jam.	The scanner has a paper jam.
+	The scanner is busy, or the feeder has no paper.	The scanner is busy, or the feeder has no paper.
+	The scanner is busy.	The scanner is busy.
+	The scanner is offline or needs attention.	The scanner is offline or needs attention.
+	The scanner list could not be refreshed.	The scanner list could not be refreshed.
+	The scanner needs attention.	The scanner needs attention.
+	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
+	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	螢幕實際的每英吋像素數。用尺校準後，實際大小 (100%) 會以真實尺寸顯示頁面。
 	The selected area has been copied ({w} × {h} pixels)	所選區域已複製（{w} × {h} 畫素）
 	The selected fields could not be found. Select them again.	找不到所選欄位。請重新選取。
@@ -2699,6 +2818,7 @@ document scrollbar width	Standard	標準
 	This web address mixes letters from different alphabets, a common way to imitate another site's name.	這個網址混用了不同字母系統的字母，這是仿冒其他網站名稱的常見手法。
 	This web address uses letters from another alphabet, which can look like familiar ones.	這個網址使用了其他字母系統的字母，看起來可能和常見字母很像。
 	Thousands separator	千位分隔符
+	Threshold	Threshold
 	Thumbnail size	縮圖大小
 	Tile scale:	平鋪比例：
 	Timed responses	限時回應
@@ -2719,14 +2839,16 @@ document scrollbar width	Standard	標準
 	Tooltip:	提示：
 	Top-level bookmarks ({n})	頂層書籤（{n} 個）
 	TR must be a child of Table, THead, TBody, or TFoot	TR 必須是 Table、THead、TBody 或 TFoot 的子級
+	Transfer format: {format}.	Transfer format: {format}.
 	Transform image	變換影像
 	Translate with AI	用 AI 翻譯
 	Trim the picture with its handles; Enter or Done applies	用控點裁切圖片;按 Enter 或「完成」套用
 	Truncated	截斷
 	Trust	信任
-	Try again	重試
+	Try again	Try again
 	Try the form as people filling it in will see it	以填寫者的角度試用表單
 	Turn upside down (180°)	上下顛倒 (180°)
+	Turned left	Turned left
 	two cells would both be named {name}	兩個儲存格的名稱都會是 {name}
 	Two-page view	雙頁檢視
 	Two-sided:	雙面：
@@ -2775,9 +2897,11 @@ document scrollbar width	Standard	標準
 	Update watermark	更新浮水印
 	Update watermark…	更新浮水印…
 	Updating 3D view…	正在更新3D視圖…
+	Upside down	Upside down
 	URL to submit to	要送出到的 URL
 	US Letter	美式信紙
 	US survey feet	美國測量英呎
+	USB	USB
 	Use 72 DPI (one point per pixel)	使用 72 DPI（每個像素一點）
 	Use a certificate	使用憑證
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	使用雲端憑證（ICP-Brasil：BirdID、VIDaaS、NeoID、SafeID…）
@@ -2826,6 +2950,7 @@ document scrollbar width	Standard	標準
 	Version {v}	版本{v}
 	Vertex snapping	吸附頂點
 	Vertical coordinates	縱向座標
+	Vertical resolution	Vertical resolution
 	Vertical reversed	垂直反轉
 	Vertical text cannot be moved with this selection.	無法隨此選取範圍移動直排文字。
 	Vertical to horizontal conversion	縱向到橫向換算
@@ -2848,6 +2973,8 @@ document scrollbar width	Standard	標準
 	Voice and Speech	語音與朗讀
 	Voice:	語音：
 	Volume:	音量：
+	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Wait for the scanner to finish, or close any other program using it, then choose Continue.
+	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	正在等待系統列印對話方塊…
 	Waiting for your approval in the browser…	正在等候您在瀏覽器中核准…
 	watermark	浮水印
@@ -2861,6 +2988,8 @@ document scrollbar width	Standard	標準
 	White on black	黑底白字
 	Whole words only	僅全字相符
 document scrollbar width	Wide	寬
+	Will use the bed.	Will use the bed.
+	Will use the feeder.	Will use the feeder.
 	Window Options	視窗選項
 	Windows store  ·  	Windows 憑證存放區 · 
 	WKT definition	WKT 定義
@@ -2959,11 +3088,13 @@ document scrollbar width	Wide	寬
 @plural	{n} more field calculates too early.|{n} more fields calculate too early.	另有 {n} 個欄位計算過早。
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	另有 {n} 個公式讀取了缺少的欄位。
 @plural	{n} object selected|{n} objects selected	已選取 {n} 個物件
+	{n} of {m} pages were scanned.	{n} of {m} pages were scanned.
 	{n} pages	{n} 頁
 	{n} pages could not be searched; results are incomplete.	無法搜尋 {n} 頁；結果不完整。
 	{n} pages scanned	已掃描 {n} 頁
 	{n} pages selected	已選取 {n} 頁
 	{n} pages selected.	已選擇 {n} 頁。
+	{n} pages were scanned.	{n} pages were scanned.
 @plural	{n} page|{n} pages	{n} 頁
 @plural	{n} reply|{n} replies	{n} 則回覆
 	{n} selected	已選取 {n} 個
@@ -2981,6 +3112,7 @@ document scrollbar width	Wide	寬
 	{who} in this document wants to open this address in your browser:	此文件中的{who}想在瀏覽器中開啟這個網址：
 	{who} in this document wants to open your email app with this address:	此文件中的{who}想用這個地址開啟您的電子郵件應用程式：
 	{words} on {pages}	在{pages}{words}
+	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} in, {pxw} × {pxh} pixels, {size}
 	ΔLOC	行數增減
 	— (protection is applied when you save)	—（儲存時套用保護）
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	「{name}」在開啟或上次儲存後已在磁碟上變更。現在儲存會以此版本取代那個較新的版本。
