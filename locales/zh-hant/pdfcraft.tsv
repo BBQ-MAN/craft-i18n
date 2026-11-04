@@ -179,6 +179,7 @@
 	Add Page Numbers	新增頁碼
 	Add polygon	新增多邊形
 	Add printer marks	新增印刷標記
+	Add printer marks…	新增印刷標記…
 	Add rectangle	新增長方形
 	Add redaction mark	新增遮蔽標記
 	Add search index	新增搜尋索引
@@ -234,6 +235,7 @@
 	All document contents except metadata	除中繼資料外的所有文件內容
 	All form fields are tagged	所有表單欄位都已標記
 	All form fields have description	所有表單欄位都有描述
+	All marks	所有標記
 	All multimedia objects are tagged	所有多媒體物件都已標記
 	All open documents	所有已開啟的文件
 	All page content is tagged	所有頁面內容都已標記
@@ -373,6 +375,7 @@
 	Black & White Document	黑白文件
 	Black on white	白底黑字
 	Blank page	空白頁面
+	Bleed marks	出血標記
 	Blend with page content	與頁面內容混合
 	Booklet	小冊子
 	Booklet subset:	小冊子子集：
@@ -580,6 +583,7 @@
 	Color Images	彩色圖片
 	Color Photo	彩色照片
 	Color Spaces	顏色空間
+	Colour bars	色條
 	Colours are remapped while rendering; the document itself never changes.	色彩僅在顯示時重新對應；文件本身不會變更。
 	Column select	欄選取
 	Column spacing	欄間距
@@ -1507,6 +1511,7 @@ key	Home	Home
 	Line Style:	線條樣式：
 	Line thickness	線條粗細
 	Line Thickness:	線條粗細：
+	Line weight	線條粗細
 	Line weights	線寬
 	Lines drawn inside Type 3 glyphs and tiling patterns; off by default.	繪製在 Type 3 字符和拼貼圖樣內部的線；預設關閉。
 	Link Action	連結動作
@@ -1581,6 +1586,7 @@ key	Home	Home
 	Mark this page as reviewed (Ctrl+T)	將此頁標記為已校對（Ctrl+T）
 	Mark with checkmark	新增勾選標記
 	Marked	已標記
+	Marks	標記
 	Marks do not remove content. Select Redact all, then save.	標記不會移除內容。請選取「全部遮蔽」，然後儲存。
 	Markup	標記
 	Markup text	標註文字
@@ -1954,6 +1960,7 @@ animation effects	On	開
 	Page display: {layout}	頁面顯示：{layout}
 	Page does not require timed responses	頁面不需要限時回應
 	Page grid	頁面格狀檢視
+	Page information	頁面資訊
 	Page labels	頁面標籤
 	Page layout	頁面佈局
 	Page maximum: {n}%	頁面最大值：{n}%
@@ -2140,6 +2147,8 @@ animation effects	On	開
 	Printed with warnings	已列印，有警告
 	Printer address:	印表機位址：
 	Printer default	印表機預設
+	printer marks	印刷標記
+	Printer marks added	已新增印刷標記
 	Printer orientation:	印表機方向：
 	Printer paper and scaling may differ. Check driver settings.	印表機的紙張與縮放可能不同，請檢查驅動程式設定。
 	Printer properties	印表機內容
@@ -2257,6 +2266,7 @@ animation effects	On	開
 	Reference:	參考檔案：
 	Refresh lists scanners. It does not feed paper.	Refresh lists scanners. It does not feed paper.
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Region in inches. Leave the width or the height at zero to scan the whole area.
+	Registration marks	對位標記
 	Registration residual	配準殘差
 	Regularity	規則性
 	Reject	放棄
@@ -2285,6 +2295,7 @@ animation effects	On	開
 	Remove invalid links and bookmarks	刪除無效連結和書籤
 	Remove measurement viewport	移除量測檢視區
 	Remove page	刪除頁面
+	Remove printer marks	移除印刷標記
 	Remove redaction marks	移除遮蔽標記
 	Remove security	移除安全性設定
 	Remove security?	要移除安全性嗎？
@@ -2401,6 +2412,7 @@ animation effects	On	開
 	Right-to-left page order in two-page view	在雙頁檢視中由右至左排列頁面
 	Right-to-left text	由右至左文字
 	Role map	角色對應
+	Room on each side	每側空間
 	Rotate Clockwise	順時針旋轉
 	Rotate clockwise	順時針旋轉
 	Rotate corner {n}	從角 {n} 旋轉
@@ -3085,6 +3097,7 @@ document scrollbar width	Standard	標準
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	尚未安裝文字辨識模型（請重新安裝 PdfCraft，或將 PDFCRAFT_MODELS 設定為包含這些模型的資料夾）
 	The title in the metadata and the document information differ	中繼資料與文件資訊中的標題不同
 	the title must not be empty	標題不可空白
+	The trim box is kept where it is, so the printed page cuts the same.	裁切框保持不變，列印頁面的裁切位置相同。
 	The value is shown as typed.	按輸入顯示值。
 	the website did not confirm that it stored the file	網站未確認已儲存檔案
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	視窗應顯示有意義的標題而非檔案名。請設定標題，並在「初始檢視」>「顯示」中選擇「文件標題」。
@@ -3218,6 +3231,7 @@ document scrollbar width	Standard	標準
 	Transfer format: {format}.	Transfer format: {format}.
 	Transform image	變換影像
 	Translate with AI	用 AI 翻譯
+	Trim marks	裁切標記
 	Trim the picture with its handles; Enter or Done applies	用控點裁切圖片;按 Enter 或「完成」套用
 	Truncated	截斷
 	Trust	信任
@@ -3388,6 +3402,7 @@ document scrollbar width	Standard	標準
 	White on black	黑底白字
 	Whole words only	僅全字相符
 document scrollbar width	Wide	寬
+	Widen the page to make room	加寬頁面以留出空間
 	Will use the bed.	Will use the bed.
 	Will use the feeder.	Will use the feeder.
 	Window Options	視窗選項

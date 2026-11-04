@@ -181,6 +181,7 @@
 	Add Page Numbers	ページ番号を追加
 	Add polygon	多角形を追加
 	Add printer marks	プリンターマークを追加
+	Add printer marks…	プリンターマークを追加…
 	Add rectangle	長方形を追加
 	Add redaction mark	墨消しマークを追加
 	Add search index	検索インデックスを追加
@@ -236,6 +237,7 @@
 	All document contents except metadata	メタデータ以外のすべての内容
 	All form fields are tagged	すべてのフォームフィールドにタグがあります
 	All form fields have description	すべてのフォームフィールドに説明があります
+	All marks	すべてのマーク
 	All multimedia objects are tagged	すべてのマルチメディアオブジェクトにタグがあります
 	All open documents	開いているすべての文書
 	All page content is tagged	すべてのページ内容にタグがあります
@@ -382,6 +384,7 @@
 	Black & White Document	白黒の文書
 	Black on white	白地に黒
 	Blank page	空白のページ
+	Bleed marks	裁ち落としマーク
 	Blend with page content	ページの内容と合成
 	Blue	青
 	Booklet	小冊子
@@ -595,6 +598,7 @@
 	Color Photo	カラー写真
 	Color Spaces	色空間
 	Colour	色
+	Colour bars	カラーバー
 	Colours are remapped while rendering; the document itself never changes.	色は描画時に置き換えられ、文書自体が変わることはありません。
 	Column select	列の選択
 	Column spacing	列の間隔
@@ -1530,6 +1534,7 @@ key	Home	Home
 	Line Style:	線の形式:
 	Line thickness	線の太さ
 	Line Thickness:	線の太さ:
+	Line weight	線の太さ
 	Line weights	線の太さ
 	Lines	複数の線
 	Lines drawn inside Type 3 glyphs and tiling patterns; off by default.	Type 3 グリフとタイルパターンの内部に描かれた線。既定ではオフです。
@@ -1612,6 +1617,7 @@ key	Home	Home
 	Mark this page as reviewed (Ctrl+T)	このページを確認済みにします（Ctrl+T）
 	Mark with checkmark	チェックマークを付ける
 	Marked	マーク済み
+	Marks	マーク
 	Marks do not remove content. Select Redact all, then save.	マークだけでは内容は削除されません。「すべて墨消し」を選択してから保存してください。
 	Markup	テキストマークアップ
 	Markup text	マークアップの文字
@@ -1995,6 +2001,7 @@ animation effects	On	オン
 	Page display: {layout}	ページ表示：{layout}
 	Page does not require timed responses	ページに時間制限付きの応答はありません
 	Page grid	ページ一覧
+	Page information	ページ情報
 	Page labels	ページラベル
 	Page layout	ページレイアウト
 	Page maximum: {n}%	ページ最大値: {n}%
@@ -2182,6 +2189,8 @@ animation effects	On	オン
 	Printed with warnings	警告付きで印刷しました
 	Printer address:	プリンターのアドレス:
 	Printer default	プリンターの既定
+	printer marks	プリンターマーク
+	Printer marks added	プリンターマークを追加しました
 	Printer orientation:	プリンター側の向き:
 	Printer paper and scaling may differ. Check driver settings.	プリンターの用紙や倍率は異なる場合があります。ドライバーの設定を確認してください。
 	Printer properties	プリンターのプロパティ
@@ -2302,6 +2311,7 @@ animation effects	On	オン
 	Refresh lists scanners. It does not feed paper.	更新はスキャナー一覧を取り直します。用紙は送りません。
 	Refresh plugins	プラグインを更新
 	Region in inches. Leave the width or the height at zero to scan the whole area.	範囲（インチ）。幅か高さを 0 のままにすると全体をスキャンします。
+	Registration marks	レジストレーションマーク
 	Registration residual	位置合わせの残差
 	Regularity	規則性
 	Reject	拒否
@@ -2333,6 +2343,7 @@ animation effects	On	オン
 	Remove invalid links and bookmarks	無効なリンクとしおりを削除
 	Remove measurement viewport	測定ビューポートを削除
 	Remove page	ページを削除
+	Remove printer marks	プリンターマークを削除
 	Remove redaction marks	墨消しマークを削除
 	Remove saved {what}	保存済みの{what}を削除
 	Remove security	セキュリティを解除
@@ -2453,6 +2464,7 @@ animation effects	On	オン
 	Right-to-left page order in two-page view	見開き表示でページを右から左へ並べる
 	Right-to-left text	右から左へのテキスト
 	Role map	ロールマップ
+	Room on each side	各辺の余白
 	Rotate Clockwise	時計回りに回転
 	Rotate clockwise	時計回りに回転
 	Rotate corner {n}	角 {n} から回転
@@ -3173,6 +3185,7 @@ document scrollbar width	Standard	標準
 	The title in the metadata and the document information differ	メタデータと文書情報のタイトルが一致しません
 	the title must not be empty	タイトルは空欄にできません
 	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	トークンに専用の PIN パッドや生体認証リーダーがある場合、トークン自体が PIN の入力を求めます。
+	The trim box is kept where it is, so the printed page cuts the same.	仕上がりボックスはそのままなので、印刷したページは同じ位置で裁断されます。
 	The value is shown as typed.	入力した値をそのまま表示します。
 	the website did not confirm that it stored the file	Web サイトがファイルの保存を確認しませんでした
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	ウィンドウにはファイル名ではなく意味のあるタイトルを表示してください。タイトルを設定し、「初期表示 > 表示: 文書タイトル」を選択します。
@@ -3313,6 +3326,7 @@ document scrollbar width	Standard	標準
 	Transfer format: {format}.	転送形式: {format}。
 	Transform image	画像を変換
 	Translate with AI	AI で翻訳
+	Trim marks	トンボ（仕上がり）
 	Trim the picture with its handles; Enter or Done applies	ハンドルで画像を切り抜きます。Enter または完了で適用
 	Truncated	切り捨て
 	Trust	信頼
@@ -3486,6 +3500,7 @@ signature pad	Type	入力
 	White on black	黒地に白
 	Whole words only	単語単位で検索
 document scrollbar width	Wide	太い
+	Widen the page to make room	余白を作るためにページを広げる
 	Will use the bed.	原稿台を使います。
 	Will use the feeder.	フィーダーを使います。
 	Window Options	ウィンドウのオプション
