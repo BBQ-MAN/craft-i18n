@@ -40,6 +40,7 @@
 	; 1 page skipped	; pominięto 1 stronę
 	; corrected {n} pages	; poprawiono stron: {n}
 	; failed: {list}	; niepowodzenia: {list}
+	; skipped: {n}	; pominięte: {n}
 	; {n} pages already had text	; liczba stron zawierających już tekst: {n}
 	; {n} pages skipped	; pominięto stron: {n}
 	? of {n}	? z {n}
@@ -72,6 +73,8 @@
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Podsumowanie opisuje cel i układ tabeli. Dodaj atrybut Summary do każdej tabeli.
 	About PdfCraft	O PdfCraft
 	About {app}	O programie {app}
+	about {h} h {m} min left	zostało ok. {h} godz. {m} min
+	about {n} min left	zostało ok. {n} min
 	Accepted	Zaakceptowane
 	Accepted by {printer}	Przyjęte przez drukarkę {printer}
 	Accessibility	Dostępność
@@ -132,6 +135,7 @@
 	Add field	Dodaj pole
 	Add fields	Dodaj pola
 	Add file attachment	Dodaj załącznik plikowy
+	Add files or folders to recognize.	Dodaj pliki lub foldery do rozpoznania.
 	Add files to combine	Dodaj pliki do połączenia
 	Add files…	Dodaj pliki…
 	Add folder	Dodaj folder
@@ -1226,6 +1230,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Zakoduj strumienie LZW metodą Flate
 	In this file	W tym pliku
 	Include revocation information when signing (LTV)	Dołączaj informacje o unieważnieniu podczas podpisywania (LTV)
+	Include subfolders	Uwzględnij podfoldery
 	Includes unsaved changes	Zawiera niezapisane zmiany
 	Incorrect password. Try again.	Nieprawidłowe hasło. Spróbuj ponownie.
 	Indent	Zwiększ wcięcie
@@ -1340,6 +1345,7 @@ calendar date	June	czerwca
 	Left:	Od lewej:
 	Legacy text encoding	Starsze kodowanie tekstu
 	Less	Less
+	less than a minute left	zostało mniej niż minutę
 	LI must be a child of L	LI musi być elementem podrzędnym L
 	Light blue	Jasnoniebieski
 	Light theme	Jasny motyw
@@ -1570,6 +1576,7 @@ calendar date	May	maja
 	No pages match those choices	Żadna strona nie pasuje do wybranych opcji
 	No pages selected	Nie zaznaczono stron
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	Nie znaleziono plików PDF.
 	No PDFs in this folder yet	W tym folderze nie ma jeszcze plików PDF
 	No PDFs, images or text files found in {folder}	Nie znaleziono plików PDF, obrazów ani plików tekstowych w {folder}
 	No photo chosen	Nie wybrano zdjęcia
@@ -1740,6 +1747,7 @@ animation effects	On	Włączone
 	Outline view	Widok konturów
 	Output	Wynik
 	Output appears here.	Tutaj pojawią się wyniki.
+	Output folder	Folder wyjściowy
 	Output intent: {list}	Profil wyjściowy: {list}
 	Output preview	Podgląd wyjściowy
 	Overlap:	Zakładka kafelków:
@@ -2586,6 +2594,7 @@ certificate	Subject	Podmiot certyfikatu
 	Text language is specified	Określono język tekstu
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Tekst musi wystarczająco kontrastować z tłem dla osób słabowidzących. Sprawdź kolory wzrokowo lub narzędziem pomiaru kontrastu.
 	Text only, keep images	Tylko tekst, obrazy bez zmian
+	Text recognition cancelled. {summary}	Anulowano rozpoznawanie tekstu. {summary}
 	Text recognition is already running	Rozpoznawanie tekstu już trwa
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Rozpoznawanie tekstu nie jest zainstalowane: brakuje plików modeli. Zainstaluj PdfCraft ponownie lub ustaw PDFCRAFT_MODELS na folder zawierający te pliki.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Rozpoznawanie tekstu nie jest zainstalowane: brakuje modeli (uruchom `cargo xtask models` lub ustaw PDFCRAFT_MODELS).
@@ -2689,7 +2698,9 @@ certificate	Subject	Podmiot certyfikatu
 	The objects are already aligned.	Obiekty są już wyrównane.
 	The operation failed.	Operacja nie powiodła się.
 	The order saved in the PDF needs tidying	Kolejność zapisana w pliku PDF wymaga uporządkowania
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Oryginały nie są zmieniane. Plik o tej samej nazwie w folderze wyjściowym zostaje zachowany, a nowy otrzymuje numer.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Pozostałe podpisy ({names}) zgłoszą, że dokument zmienił się po ich złożeniu. Sprawdź je ponownie: nic nie gwarantuje, że pozostaną prawidłowe.
+	The output folder can't be one of the folders being read, or contain one.	Folder wyjściowy nie może być żadnym z odczytywanych folderów ani zawierać żadnego z nich.
 	The page has changed; select the image again	Strona się zmieniła; zaznacz obraz ponownie
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Strony zostały wyodrębnione, ale nie usunięte, ponieważ dokument zmienił się podczas wybierania folderu.

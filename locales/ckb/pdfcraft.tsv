@@ -41,6 +41,7 @@
 	9 digit, A letter, O letter or digit, X any character	9 ژمارە، A پیت، O پیت یان ژمارە، X هەر پیتێک
 	; 1 page already had text	؛ 1 پەڕە پێشتر دەقی هەبوو
 	; failed: {list}	؛ شکستی هێنا: {list}
+	; skipped: {n}	؛ بازدرا: {n}
 	; {n} pages already had text	؛ {n} پەڕە پێشتر دەقی هەبوو
 	? of {n}	? لە {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} داواکاری کێشانەوە، {commits} کۆمیت، +{added} / −{deleted} هێڵ (Δ {delta})، +{bin_added} / −{bin_deleted} ئاسێتی دووانی، {first} – {last}
@@ -71,6 +72,8 @@
 	About	دەربارە
 	About PdfCraft	دەربارەی PdfCraft
 	About {app}	دەربارەی {app}
+	about {h} h {m} min left	نزیکەی {h} کاتژمێر و {m} خولەک ماوە
+	about {n} min left	نزیکەی {n} خولەک ماوە
 	Accepted	پەسندکراو
 	Accessibility	دەستڕاگەیشتن
 	Accessibility Checker	پشکنەری دەستڕاگەیشتن
@@ -131,6 +134,7 @@
 	Add drawing	زیادکردنی وێنەکێشان
 	Add field	زیادکردنی خانە
 	Add file attachment	زیادکردنی پێوەکراوی فایل
+	Add files or folders to recognize.	پەڕگە یان فۆڵدەر زیاد بکە بۆ ناسینەوە.
 	Add files to combine	زیادکردنی فایل بۆ تێکەڵکردن
 	Add files…	زیادکردنی فایلەکان…
 	Add folder	زیادکردنی فۆڵدەر
@@ -1236,6 +1240,7 @@ key	Home	Home
 	In multiple files	لە چەند فایلێکدا
 	In streams that use LZW encoding, use Flate instead	بەکارهێنانی Flate لە جیاتی LZW بۆ ئەو لێشاوانەی بە LZW کۆد کراون
 	In this file	لەم فایلەدا
+	Include subfolders	فۆڵدەرە لاوەکییەکانیش لەخۆبگرە
 	Includes unsaved changes	گۆڕانکاریی پاشەکەوتنەکراوی تێدایە
 	Incorrect password. Try again.	وشەی نهێنی هەڵەیە. دووبارە هەوڵ بدەرەوە.
 	Indent	چوونە ژوورەوە
@@ -1363,6 +1368,7 @@ certificate	Key usage	بەکارهێنانی کلیل
 	Left Header Text	دەقی سەرەوەی چەپ
 	Left out: {names}	دەرکرا: {names}
 	Left:	چەپ:
+	less than a minute left	کەمتر لە خولەکێک ماوە
 	LI must be a child of L	LI دەبێت منداڵی L بێت
 	Light	ڕووناک
 	Light blue	شینی کاڵ
@@ -1591,6 +1597,7 @@ calendar weekday	Mo	دووشەممە
 	No pages match those choices	هیچ پەڕەیەک لەگەڵ ئەو هەڵبژاردانە ناگونجێت
 	No pages selected	هیچ پەڕەیەک هەڵبژێردراو نییە
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	هیچ پەڕگەیەکی PDF نەدۆزرایەوە.
 	No PDFs found in {folder}	هیچ PDF ـێک لە {folder} نەدۆزرایەوە
 	No PDFs in this folder yet	هێشتا هیچ PDFێک لەم فۆڵدەرەدا نییە
 	No PDFs, images or text files found in {folder}	هیچ PDF، وێنە یان فایلی دەقێک لە {folder} نەدۆزرایەوە
@@ -1745,6 +1752,7 @@ animation effects	On	چالاک
 	Outline colour:	ڕەنگی سنوور:
 	Output	دەرهاویشتە
 	Output appears here.	دەرهاویشتەکە لێرە دەردەکەوێت.
+	Output folder	فۆڵدەری دەرچوون
 	Output intent: {list}	مەبەستی دەرهاویشتە: {list}
 	Output preview	پێشبینینی دەرهاویشتە
 	Oval	هێلکەیی
@@ -2533,6 +2541,7 @@ certificate	Subject	بابەت
 	Text language is specified	زمانی دەقەکە دیاریکراوە
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	دەق دەبێت بە پێی پێویست لەگەڵ پاشبنەماکەی جیاوازیی ڕەنگی هەبێت بۆ ئەوانەی بیناییان لاوازە. ڕەنگەکان بە چاو یان بە ئامرازی جیاوازیی ڕەنگ بپشکنە.
 	Text only, keep images	تەنها دەق، وێنەکان بهێڵەرەوە
+	Text recognition cancelled. {summary}	ناسینەوەی دەق هەڵوەشێنرایەوە. {summary}
 	Text recognition is already running	ناسینەوەی دەق پێشتر لە جێبەجێکردندایە
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	ناسینەوەی دەق دانەمەزراوە: فایلەکانی مۆدێلەکەی نین. PdfCraft دووبارە دامەزرێنە، یان PDFCRAFT_MODELS بکە بە ئەو فۆڵدەرەی کە لەخۆی دەگرێت.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	ناسینەوەی دەق دانەمەزراوە: مۆدێلەکانی ونن (`cargo xtask models` جێبەجێ بکە، یان PDFCRAFT_MODELS دابنێ).
@@ -2619,6 +2628,8 @@ calendar weekday	Th	پێنجشەممە
 	the name is not a plain file name	ناوەکە ناوی فایلی ئاسایی نییە
 	The newest {n} of {total} PDFs	نوێترین {n} لە {total} PDF
 	The operation failed.	کردارەکە شکستی هێنا.
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	ڕەسەنەکان ناگۆڕدرێن. پەڕگەیەک بە هەمان ناو لە فۆڵدەری دەرچوون دەمێنێتەوە، و پەڕگە نوێیەکە ژمارەیەک وەردەگرێت.
+	The output folder can't be one of the folders being read, or contain one.	فۆڵدەری دەرچوون نابێت یەکێک بێت لەو فۆڵدەرانەی دەخوێندرێنەوە، یان یەکێکیان لەخۆ بگرێت.
 	The page has changed; select the image again	پەڕەکە گۆڕاوە؛ دووبارە وێنەکە هەڵبژێرە
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	پەڕەکان دەرهێنران بەڵام نەسڕدرانەوە، چونکە بەڵگەنامەکە گۆڕا لە کاتێکدا تۆ فۆڵدەرێکت هەڵدەبژارد.

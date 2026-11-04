@@ -41,6 +41,7 @@
 	; 1 page skipped	; đã bỏ qua 1 trang
 	; corrected {n} pages	; đã chỉnh sửa {n} trang
 	; failed: {list}	; thất bại: {list}
+	; skipped: {n}	; bỏ qua: {n}
 	; {n} pages already had text	; {n} trang đã có văn bản
 	; {n} pages skipped	; đã bỏ qua {n} trang
 	? of {n}	? trên {n}
@@ -78,6 +79,8 @@
 	A {} annotation isn't set to print, or is hidden	Chú thích {} không được đặt để in, hoặc bị ẩn
 	About PdfCraft	Giới thiệu PdfCraft
 	About {app}	Giới thiệu về {app}
+	about {h} h {m} min left	còn khoảng {h} giờ {m} phút
+	about {n} min left	còn khoảng {n} phút
 	Accepted	Đã chấp nhận
 	Accepted by {printer}	Đã được {printer} chấp nhận
 	Accessibility Checker	Trình kiểm tra trợ năng
@@ -137,6 +140,7 @@
 	Add field	Thêm trường
 	Add fields	Thêm các trường
 	Add file attachment	Thêm tệp đính kèm
+	Add files or folders to recognize.	Thêm tệp hoặc thư mục để nhận dạng.
 	Add files to combine	Thêm tệp để kết hợp
 	Add files…	Thêm tệp…
 	Add folder	Thêm thư mục
@@ -1212,6 +1216,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Dùng Flate thay cho LZW trong các luồng mã hóa LZW
 	In this file	Trong tệp này
 	Include revocation information when signing (LTV)	Đưa thông tin thu hồi vào khi ký (LTV)
+	Include subfolders	Bao gồm thư mục con
 	Includes unsaved changes	Bao gồm các thay đổi chưa lưu
 	Incompatible	Không tương thích
 	Incorrect password. Try again.	Mật khẩu không đúng. Hãy thử lại.
@@ -1335,6 +1340,7 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Left-to-right text	Văn bản từ trái sang phải
 	Legacy text encoding	Bảng mã văn bản cũ
 	Less	Less
+	less than a minute left	còn chưa đến một phút
 	LI must be a child of L	LI phải là con của L
 	Light blue	Xanh lam nhạt
 	Light theme	Chủ đề sáng
@@ -1552,6 +1558,7 @@ calendar weekday	Mo	T2
 	No pages match those choices	Không có trang nào khớp với các lựa chọn đó
 	No pages selected	Chưa chọn trang
 	No pages were scanned.	Không quét được trang nào.
+	No PDF files were found.	Không tìm thấy tệp PDF nào.
 	No PDFs found in {folder}	Không tìm thấy PDF nào trong {folder}
 	No PDFs in this folder yet	Chưa có PDF nào trong thư mục này
 	No PDFs, images or text files found in {folder}	Không tìm thấy PDF, hình ảnh hoặc tệp văn bản nào trong {folder}
@@ -1719,6 +1726,7 @@ animation effects	On	Bật
 	Outdent	Giảm thụt lề
 	Outline colour:	Màu đường viền:
 	Output appears here.	Đầu ra xuất hiện ở đây.
+	Output folder	Thư mục đầu ra
 	Output intent: {list}	Mục đích đầu ra: {list}
 	Output preview	Xem trước đầu ra
 	Owner password (no restrictions apply)	Mật khẩu chủ sở hữu (không áp dụng hạn chế)
@@ -2541,6 +2549,7 @@ certificate	Subject	Chủ thể chứng chỉ
 	Text language is specified	Đã chỉ định ngôn ngữ văn bản
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Văn bản phải đủ tương phản với nền để người kém thị lực nhìn được. Hãy kiểm tra màu bằng mắt hoặc bằng công cụ đo độ tương phản.
 	Text only, keep images	Chỉ văn bản, giữ nguyên hình ảnh
+	Text recognition cancelled. {summary}	Đã hủy nhận dạng văn bản. {summary}
 	Text recognition is already running	Việc nhận dạng văn bản đang chạy
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Tính năng nhận dạng văn bản chưa được cài đặt: thiếu các tệp mô hình. Hãy cài đặt lại PdfCraft, hoặc đặt PDFCRAFT_MODELS thành thư mục chứa chúng.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Tính năng nhận dạng văn bản chưa được cài đặt: thiếu các mô hình (hãy chạy `cargo xtask models`, hoặc đặt PDFCRAFT_MODELS).
@@ -2650,7 +2659,9 @@ calendar weekday	Th	T5
 	The newest {n} of {total} PDFs	{n} PDF mới nhất trong tổng số {total}
 	The operation failed.	Thao tác thất bại.
 	The order saved in the PDF needs tidying	Thứ tự lưu trong PDF cần được sắp xếp lại
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Các tệp gốc không bị thay đổi. Tệp cùng tên trong thư mục đầu ra được giữ lại, và tệp mới được đánh số.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Các chữ ký khác ({names}) sẽ báo rằng tài liệu đã thay đổi sau khi ký. Hãy xác thực lại: không có gì bảo đảm chúng vẫn hợp lệ.
+	The output folder can't be one of the folders being read, or contain one.	Thư mục đầu ra không được là một trong các thư mục đang đọc hoặc chứa một trong số đó.
 	The page has changed; select the image again	Trang đã thay đổi; hãy chọn lại hình ảnh
 	The pages already scanned were kept in the document.	Các trang đã quét được giữ lại trong tài liệu.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Các trang đã được trích xuất nhưng chưa bị xóa, vì tài liệu đã thay đổi trong lúc bạn chọn thư mục.

@@ -40,6 +40,7 @@
 	9 digit, A letter, O letter or digit, X any character	9: ຕົວເລກ, A: ຕົວອັກສອນ, O: ຕົວອັກສອນ ຫຼື ຕົວເລກ, X: ຕົວອັກສອນໃດກໍໄດ້
 	; 1 page already had text	; 1 ໜ້າມີຂໍ້ຄວາມຢູ່ແລ້ວ
 	; failed: {list}	; ບໍ່ສຳເລັດ: {list}
+	; skipped: {n}	; ຂ້າມ: {n}
 	; {n} pages already had text	; {n} ໜ້າມີຂໍ້ຄວາມຢູ່ແລ້ວ
 	? of {n}	? ຈາກ {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} ແຖວ (Δ {delta}), +{bin_added} / −{bin_deleted} ໄຟລ໌ບາຍນາຣີ, {first} – {last}
@@ -65,6 +66,8 @@
 	About	ກ່ຽວກັບ
 	About PdfCraft	ກ່ຽວກັບ PdfCraft
 	About {app}	ກ່ຽວກັບ {app}
+	about {h} h {m} min left	ເຫຼືອປະມານ {h} ຊມ {m} ນາທີ
+	about {n} min left	ເຫຼືອປະມານ {n} ນາທີ
 	Accepted	ຍອມຮັບແລ້ວ
 	Accessibility	ການເຂົ້າເຖິງ
 	Accessibility Checker	ຕົວກວດສອບການເຂົ້າເຖິງ
@@ -124,6 +127,7 @@
 	Add drawing	ເພີ່ມຮູບແຕ້ມ
 	Add field	ເພີ່ມຊ່ອງຂໍ້ມູນ
 	Add file attachment	ເພີ່ມໄຟລ໌ແນບ
+	Add files or folders to recognize.	ເພີ່ມໄຟລ໌ ຫຼື ໂຟນເດີເພື່ອຈຳແນກຂໍ້ຄວາມ.
 	Add files to combine	ເພີ່ມໄຟລ໌ເພື່ອຮວມ
 	Add files…	ເພີ່ມໄຟລ໌…
 	Add folder	ເພີ່ມໂຟນເດີ
@@ -1161,6 +1165,7 @@ key	Home	Home
 	In multiple files	ໃນຫຼາຍໄຟລ໌
 	In streams that use LZW encoding, use Flate instead	ໃຊ້ Flate ແທນ LZW ໃນສະຕຣີມທີ່ເຂົ້າລະຫັດດ້ວຍ LZW
 	In this file	ໃນໄຟລ໌ນີ້
+	Include subfolders	ລວມໂຟນເດີຍ່ອຍ
 	Includes unsaved changes	ລວມມີການປ່ຽນແປງທີ່ຍັງບໍ່ໄດ້ບັນທຶກ
 	Incorrect password. Try again.	ລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ. ກະລຸນາລອງໃໝ່ອີກຄັ້ງ.
 	Indent	ຫຍໍ້ໜ້າເຂົ້າ
@@ -1275,6 +1280,7 @@ key	Home	Home
 	Left Header Text	ຂໍ້ຄວາມຫົວເຈ້ຍດ້ານຊ້າຍ
 	Left out: {names}	ຍົກເວັ້ນ: {names}
 	Left:	ຊ້າຍ:
+	less than a minute left	ເຫຼືອບໍ່ເຖິງໜຶ່ງນາທີ
 	LI must be a child of L	LI ຕ້ອງເປັນອົງປະກອບລູກຂອງ L
 	Light	ແຈ້ງ
 	Light blue	ຟ້າອ່ອນ
@@ -1487,6 +1493,7 @@ key	Home	Home
 	No pages match those choices	ບໍ່ມີໜ້າທີ່ກົງກັບຕົວເລືອກເຫຼົ່ານັ້ນ
 	No pages selected	ບໍ່ມີໜ້າໃດຖືກເລືອກ
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	ບໍ່ພົບໄຟລ໌ PDF.
 	No PDFs in this folder yet	ຍັງບໍ່ມີໄຟລ໌ PDF ໃນໂຟນເດີນີ້
 	No PDFs, images or text files found in {folder}	ບໍ່ພົບໄຟລ໌ PDF, ຮູບພາບ ຫຼື ຂໍ້ຄວາມໃນ {folder}
 	No photo chosen	ບໍ່ໄດ້ເລືອກຮູບຖ່າຍ
@@ -1624,6 +1631,7 @@ animation effects	On	ເປີດ
 	Outline colour:	ສີເສັ້ນຂອບ:
 	Output	ຜົນອອກ
 	Output appears here.	ຜົນອອກຈະສະແດງຢູ່ນີ້.
+	Output folder	ໂຟນເດີຜົນອອກ
 	Output intent: {list}	ເປົ້າໝາຍຜົນຜະລິດ: {list}
 	Output preview	ສະແດງຕົວຢ່າງຜົນຜະລິດ
 	Oval	ຮູບໄຂ່
@@ -2362,6 +2370,7 @@ key	Space	Space
 	Text language is specified	ລະບຸພາສາຂອງຂໍ້ຄວາມແລ້ວ
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	ຂໍ້ຄວາມຕ້ອງມີຄວາມຄົມຊັດພຽງພໍກັບພື້ນຫຼັງສຳລັບຜູ້ທີ່ມີບັນຫາທາງສາຍຕາ. ກວດສອບສີດ້ວຍສາຍຕາ ຫຼື ດ້ວຍເຄື່ອງມືວັດແທກຄວາມຄົມຊັດ.
 	Text only, keep images	ສະເພາະຂໍ້ຄວາມ, ຮັກສາຮູບພາບ
+	Text recognition cancelled. {summary}	ຍົກເລີກການຈຳແນກຂໍ້ຄວາມແລ້ວ. {summary}
 	Text recognition is already running	ການຮັບຮູ້ຂໍ້ຄວາມກຳລັງດຳເນີນການຢູ່ແລ້ວ
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	ການຮັບຮູ້ຂໍ້ຄວາມຍັງບໍ່ໄດ້ຮັບການຕິດຕັ້ງ: ໄຟລ໌ໂມເດວສູນຫາຍ. ກະລຸນາຕິດຕັ້ງ PdfCraft ຄືນໃໝ່ ຫຼື ຕັ້ງຄ່າ PDFCRAFT_MODELS ໄປຫາໂຟນເດີທີ່ບັນຈຸໄຟລ໌ດັ່ງກ່າວ.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	ການຮັບຮູ້ຂໍ້ຄວາມຍັງບໍ່ໄດ້ຕິດຕັ້ງ: ໂມເດວສູນຫາຍ (ດຳເນີນການ `cargo xtask models`, ຫຼື ຕັ້ງຄ່າ PDFCRAFT_MODELS).
@@ -2425,6 +2434,8 @@ key	Space	Space
 	The linked PDF opened, but its page destination was out of range.	ເປີດ PDF ທີ່ເຊື່ອມໂຍງແລ້ວ, ແຕ່ໜ້າປາຍທາງຢູ່ນອກຂອບເຂດ.
 	The newest {n} of {total} PDFs	ໄຟລ໌ PDF ໃໝ່ສຸດ {n} ຈາກ {total} ໄຟລ໌
 	The operation failed.	ການເຮັດວຽກບໍ່ສຳເລັດ.
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	ໄຟລ໌ຕົ້ນສະບັບບໍ່ຖືກປ່ຽນແປງ. ໄຟລ໌ທີ່ມີຊື່ດຽວກັນໃນໂຟນເດີຜົນອອກຈະຖືກເກັບໄວ້ ແລະ ໄຟລ໌ໃໝ່ຈະໄດ້ຮັບໝາຍເລກ.
+	The output folder can't be one of the folders being read, or contain one.	ໂຟນເດີຜົນອອກບໍ່ສາມາດເປັນໜຶ່ງໃນໂຟນເດີທີ່ກຳລັງອ່ານ ຫຼື ບັນຈຸໂຟນເດີເຫຼົ່ານັ້ນໄດ້.
 	The page has changed; select the image again	ໜ້າປ່ຽນໄປແລ້ວ; ກະລຸນາເລືອກຮູບພາບອີກຄັ້ງ
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	ແຍກໜ້າອອກມາແລ້ວແຕ່ບໍ່ໄດ້ຖືກລຶບ, ເນື່ອງຈາກເອກະສານມີການປ່ຽນແປງໃນຂະນະທີ່ທ່ານກຳລັງເລືອກໂຟນເດີ.

@@ -41,6 +41,7 @@
 	; 1 page skipped	; praleistas 1 puslapis
 	; corrected {n} pages	; pataisyta puslapių: {n}
 	; failed: {list}	; nepavyko: {list}
+	; skipped: {n}	; praleista: {n}
 	; {n} pages already had text	; {n} puslapiuose tekstas jau buvo
 	; {n} pages skipped	; praleista puslapių: {n}
 	? of {n}	? iš {n}
@@ -80,6 +81,8 @@
 	A {} annotation isn't set to print, or is hidden	Anotacija {} nenumatyta spausdinti arba yra paslėpta
 	About PdfCraft	Apie „PdfCraft“
 	About {app}	Apie „{app}“
+	about {h} h {m} min left	liko apie {h} val. {m} min.
+	about {n} min left	liko apie {n} min.
 	Accepted	Priimta
 	Accepted by {printer}	Priėmė {printer}
 	Accessibility Checker	Prieinamumo tikrintuvas
@@ -140,6 +143,7 @@
 	Add field	Pridėti lauką
 	Add fields	Pridėti laukus
 	Add file attachment	Pridėti failo priedą
+	Add files or folders to recognize.	Pridėkite failų ar aplankų atpažinimui.
 	Add files to combine	Pridėti jungiamus failus
 	Add files…	Pridėti failus…
 	Add folder	Pridėti aplanką
@@ -1282,6 +1286,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	LZW koduotiems srautams naudoti „Flate“
 	In this file	Šiame faile
 	Include revocation information when signing (LTV)	Pasirašant įtraukti atšaukimo informaciją (LTV)
+	Include subfolders	Įtraukti poaplankius
 	Includes unsaved changes	Yra neįrašytų pakeitimų
 	Incompatible	Nesuderinama
 	Incorrect password. Try again.	Netinkamas slaptažodis. Bandykite dar kartą.
@@ -1406,6 +1411,7 @@ certificate	Key usage	Rakto naudojimas
 	Left-to-right text	Tekstas iš kairės į dešinę
 	Legacy text encoding	Senoji teksto koduotė
 	Less	Mažiau
+	less than a minute left	liko mažiau nei minutė
 	LI must be a child of L	LI turi būti L antrinis elementas
 	Light blue	Šviesiai mėlyna
 	Light theme	Šviesioji tema
@@ -1640,6 +1646,7 @@ calendar weekday	Mo	Pr
 	No pages match those choices	Nė vienas puslapis neatitinka pasirinkimų
 	No pages selected	Nepasirinkta puslapių
 	No pages were scanned.	Nenuskaityta jokių puslapių.
+	No PDF files were found.	PDF failų nerasta.
 	No PDFs found in {folder}	Aplanke {folder} nerasta PDF failų
 	No PDFs in this folder yet	Šiame aplanke PDF failų dar nėra
 	No PDFs, images or text files found in {folder}	Aplanke {folder} nerasta PDF, paveikslėlių ar tekstinių failų
@@ -1821,6 +1828,7 @@ animation effects	On	Įjungta
 	Outline over page	Kontūrai virš puslapio
 	Outline view	Kontūrų rodinys
 	Output appears here.	Čia bus rodoma išvestis.
+	Output folder	Išvesties aplankas
 	Output intent: {list}	Išvesties paskirtis: {list}
 	Output preview	Išvesties peržiūra
 	Owner password (no restrictions apply)	Savininko slaptažodis (apribojimai netaikomi)
@@ -2706,6 +2714,7 @@ certificate	Subject	Sertifikato subjektas
 	Text language is specified	Teksto kalba nurodyta
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Tekstas turi pakankamai išsiskirti iš fono, kad jį matytų silpnaregiai. Patikrinkite spalvas vizualiai arba kontrasto tikrinimo įrankiu.
 	Text only, keep images	Tik tekstas, paveikslėliai lieka
+	Text recognition cancelled. {summary}	Teksto atpažinimas atšauktas. {summary}
 	Text recognition is already running	Teksto atpažinimas jau vykdomas
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Teksto atpažinimas neįdiegtas: trūksta modelio failų. Iš naujo įdiekite „PdfCraft“ arba nustatykite PDFCRAFT_MODELS aplanką, kuriame jie laikomi.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Teksto atpažinimas neįdiegtas: trūksta modelių (vykdykite `cargo xtask models` arba nustatykite PDFCRAFT_MODELS).
@@ -2821,7 +2830,9 @@ calendar weekday	Th	Kt
 	The objects are already aligned.	Objektai jau sulygiuoti.
 	The operation failed.	Veiksmas nepavyko.
 	The order saved in the PDF needs tidying	PDF faile įrašytą tvarką reikia sutvarkyti
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Originalai nekeičiami. Išvesties aplanke esantis tokio pat pavadinimo failas išsaugomas, o naujas gauna numerį.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Kiti parašai ({names}) praneš, kad dokumentas pasikeitė po pasirašymo. Patikrinkite juos iš naujo: niekas negarantuoja, kad jie liks galiojantys.
+	The output folder can't be one of the folders being read, or contain one.	Išvesties aplankas negali būti vienas iš skaitomų aplankų ar jo turėti.
 	The page has changed; select the image again	Puslapis pasikeitė; pažymėkite paveikslėlį iš naujo
 	The pages already scanned were kept in the document.	Jau nuskaityti puslapiai palikti dokumente.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Puslapiai išskirti, bet nepašalinti, nes renkantis aplanką dokumentas pasikeitė.

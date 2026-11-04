@@ -41,6 +41,7 @@
 	9 digit, A letter, O letter or digit, X any character	9 अंक, A अक्षर, O अक्षर या अंक, X कोई भी वर्ण
 	; 1 page already had text	; 1 पृष्ठ में पहले से टेक्स्ट था
 	; failed: {list}	; विफल: {list}
+	; skipped: {n}	; छोड़ी गईं: {n}
 	; {n} pages already had text	; {n} पृष्ठों में पहले से टेक्स्ट था
 	? of {n}	{n} में से ?
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} कमिट, +{added} / −{deleted} पंक्तियाँ (Δ {delta}), +{bin_added} / −{bin_deleted} बाइनरी एसेट, {first} – {last}
@@ -78,6 +79,8 @@
 	About	के बारे में
 	About PdfCraft	PdfCraft के बारे में
 	About {app}	{app} के बारे में
+	about {h} h {m} min left	लगभग {h} घं {m} मि बचे हैं
+	about {n} min left	लगभग {n} मिनट बचे हैं
 	Accepted	स्वीकृत
 	Accepted by {printer}	{printer} ने स्वीकार किया
 	Accessibility	ऐक्सेसिबिलिटी
@@ -142,6 +145,7 @@
 	Add field	फ़ील्ड जोड़ें
 	Add fields	फ़ील्ड जोड़ें
 	Add file attachment	फ़ाइल अटैचमेंट जोड़ें
+	Add files or folders to recognize.	पहचानने के लिए फ़ाइलें या फ़ोल्डर जोड़ें।
 	Add files to combine	संयोजित करने के लिए फ़ाइलें जोड़ें
 	Add files…	फ़ाइलें जोड़ें…
 	Add folder	फ़ोल्डर जोड़ें
@@ -1309,6 +1313,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	LZW एन्कोडिंग वाली स्ट्रीम में इसके बजाय Flate का उपयोग करें
 	In this file	इस फ़ाइल में
 	Include revocation information when signing (LTV)	हस्ताक्षर करते समय निरस्तीकरण जानकारी शामिल करें (LTV)
+	Include subfolders	सबफ़ोल्डर शामिल करें
 	Includes unsaved changes	असहेजे बदलाव शामिल हैं
 	Incorrect password. Try again.	गलत पासवर्ड। पुनः प्रयास करें।
 	Indent	इंडेंट बढ़ाएँ
@@ -1442,6 +1447,7 @@ certificate	Key usage	कुंजी उपयोग
 	Left out: {names}	छोड़े गए: {names}
 	Left:	बाएँ:
 	Less	Less
+	less than a minute left	एक मिनट से कम बचा है
 	LI must be a child of L	LI को L की संतान होना चाहिए
 	Light	हल्का
 	Light blue	हल्का नीला
@@ -1685,6 +1691,7 @@ calendar weekday	Mo	सोम
 	No pages match those choices	इन विकल्पों से कोई पृष्ठ मेल नहीं खाता
 	No pages selected	कोई पृष्ठ चयनित नहीं
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	कोई PDF फ़ाइल नहीं मिली।
 	No PDFs found in {folder}	{folder} में कोई पीडीएफ़ नहीं मिली
 	No PDFs in this folder yet	इस फ़ोल्डर में अभी तक कोई पीडीएफ़ नहीं है
 	No PDFs, images or text files found in {folder}	{folder} में कोई पीडीएफ़, तस्वीर या टेक्स्ट फ़ाइल नहीं मिली
@@ -1858,6 +1865,7 @@ animation effects	On	चालू
 	Outline colour:	रूपरेखा रंग:
 	Output	आउटपुट
 	Output appears here.	आउटपुट यहाँ दिखता है।
+	Output folder	आउटपुट फ़ोल्डर
 	Output intent: {list}	आउटपुट इंटेंट: {list}
 	Output preview	आउटपुट प्रीव्यू
 	Oval	अंडाकार
@@ -2709,6 +2717,7 @@ certificate	Subject	विषय
 	Text language is specified	पाठ की भाषा निर्दिष्ट है
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	कम दृष्टि वाले लोगों के लिए पाठ का पृष्ठभूमि से पर्याप्त कंट्रास्ट होना चाहिए। रंग आँख से या कंट्रास्ट टूल से जाँचें।
 	Text only, keep images	केवल पाठ, चित्र जैसे हैं वैसे रखें
+	Text recognition cancelled. {summary}	टेक्स्ट पहचान रद्द की गई। {summary}
 	Text recognition is already running	टेक्स्ट पहचान पहले से चल रही है
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	टेक्स्ट पहचान इंस्टॉल नहीं है: इसकी मॉडल फ़ाइलें मौजूद नहीं हैं। PdfCraft दोबारा इंस्टॉल करें, या PDFCRAFT_MODELS को उस फ़ोल्डर पर सेट करें जिसमें वे रखी हैं।
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	टेक्स्ट पहचान स्थापित नहीं है: इसके मॉडल गायब हैं (`cargo xtask models` चलाएँ, या PDFCRAFT_MODELS सेट करें)।
@@ -2808,7 +2817,9 @@ calendar weekday	Th	गुरु
 	The newest {n} of {total} PDFs	{total} पीडीएफ़ में से नवीनतम {n}
 	The operation failed.	ऑपरेशन विफल हो गया।
 	The order saved in the PDF needs tidying	The order saved in the PDF needs tidying
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	मूल फ़ाइलें नहीं बदलतीं। आउटपुट फ़ोल्डर में उसी नाम की फ़ाइल बनी रहती है, और नई फ़ाइल को एक संख्या मिलती है।
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	अन्य हस्ताक्षर ({names}) बताएँगे कि उनके हस्ताक्षर के बाद दस्तावेज़ बदला गया। उन्हें फिर से जाँचें: इसकी कोई गारंटी नहीं कि वे मान्य बने रहेंगे।
+	The output folder can't be one of the folders being read, or contain one.	आउटपुट फ़ोल्डर पढ़े जा रहे फ़ोल्डरों में से कोई नहीं हो सकता, और न ही उनमें से किसी को समाहित कर सकता है।
 	The page has changed; select the image again	पृष्ठ बदल गया है; छवि फिर से चुनें
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	पृष्ठ निकाले गए, पर हटाए नहीं गए, क्योंकि आप फ़ोल्डर चुन रहे थे तभी दस्तावेज़ बदल गया।

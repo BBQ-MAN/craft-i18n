@@ -42,6 +42,7 @@
 	; 1 page skipped	; пропусната 1 страница
 	; corrected {n} pages	; коригирани страници: {n}
 	; failed: {list}	; неуспешни: {list}
+	; skipped: {n}	; пропуснати: {n}
 	; {n} pages already had text	; {n} страници вече съдържаха текст
 	; {n} pages skipped	; пропуснати страници: {n}
 	? of {n}	? от {n}
@@ -71,6 +72,8 @@
 	About	За програмата
 	About PdfCraft	За PdfCraft
 	About {app}	Относно {app}
+	about {h} h {m} min left	остават около {h} ч {m} мин
+	about {n} min left	остават около {n} мин
 	Accepted	Прието
 	Accepted by {printer}	Прието от {printer}
 	Accessibility Checker	Проверка на достъпността
@@ -132,6 +135,7 @@
 	Add field	Добави поле
 	Add fields	Добави полета
 	Add file attachment	Добави прикачен файл
+	Add files or folders to recognize.	Добавете файлове или папки за разпознаване.
 	Add files to combine	Добавете файлове за обединяване
 	Add files…	Добави файлове…
 	Add folder	Добави папка
@@ -1247,6 +1251,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Кодирай с Flate потоците, кодирани с LZW
 	In this file	В този файл
 	Include revocation information when signing (LTV)	Включване на информация за отмяна при подписване (LTV)
+	Include subfolders	Включване на подпапките
 	Includes unsaved changes	Съдържа незаписани промени
 	Incompatible	Несъвместимо
 	Incorrect password. Try again.	Грешна парола. Опитайте отново.
@@ -1362,6 +1367,7 @@ key	Home	Home
 	Left-to-right text	Текст отляво надясно
 	Legacy text encoding	Наследено кодиране на текста
 	Less	Less
+	less than a minute left	остава по-малко от минута
 	Letter	Letter
 	LI must be a child of L	LI трябва да е дъщерен елемент на L
 	Light	Светъл
@@ -1587,6 +1593,7 @@ key	Home	Home
 	No pages match those choices	Няма страници, отговарящи на този избор
 	No pages selected	Няма избрани страници
 	No pages were scanned.	Не са сканирани страници.
+	No PDF files were found.	Не са намерени PDF файлове.
 	No PDFs in this folder yet	В тази папка все още няма PDF файлове
 	No PDFs, images or text files found in {folder}	Не са открити PDF файлове, изображения или текстови файлове в {folder}
 	No photo chosen	Няма избрана снимка
@@ -1758,6 +1765,7 @@ animation effects	On	Включени
 	Outline view	Контурен изглед
 	Output	Резултат
 	Output appears here.	Резултатът се показва тук.
+	Output folder	Изходна папка
 	Output intent: {list}	Изходно предназначение: {list}
 	Output preview	Преглед на изхода
 	Owner password (no restrictions apply)	Парола на собственика (без ограничения)
@@ -2620,6 +2628,7 @@ action wizard	Start	Старт
 	Text language is specified	Езикът на текста е зададен
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Текстът трябва да контрастира достатъчно с фона си за хора с намалено зрение. Проверете цветовете на око или с инструмент за контраст.
 	Text only, keep images	Само текст, изображенията се запазват
+	Text recognition cancelled. {summary}	Разпознаването на текст е отменено. {summary}
 	Text recognition is already running	Разпознаването на текст вече се изпълнява
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Разпознаването на текст не е инсталирано: файловете на моделите му липсват. Инсталирайте PdfCraft отново или задайте в PDFCRAFT_MODELS папката, която ги съдържа.
 	Text to find	Текст за търсене
@@ -2707,7 +2716,9 @@ action wizard	Start	Старт
 	The objects are already aligned.	Обектите вече са подравнени.
 	The operation failed.	Операцията е неуспешна.
 	The order saved in the PDF needs tidying	Редът, запазен в PDF файла, има нужда от подреждане
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Оригиналите не се променят. Файл със същото име в изходната папка се запазва, а новият получава номер.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Другите подписи ({names}) ще отчетат, че документът е променен след подписването им. Проверете ги отново: нищо не гарантира, че ще останат валидни.
+	The output folder can't be one of the folders being read, or contain one.	Изходната папка не може да е някоя от четените папки или да съдържа такава.
 	The page has changed; select the image again	Страницата е променена; изберете изображението отново
 	The pages already scanned were kept in the document.	Вече сканираните страници са запазени в документа.
 	the password is incorrect	паролата е грешна

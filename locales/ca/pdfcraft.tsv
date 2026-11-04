@@ -41,6 +41,7 @@
 	9 digit, A letter, O letter or digit, X any character	9 dígit, A lletra, O lletra o dígit, X qualsevol caràcter
 	; 1 page already had text	; 1 pàgina ja tenia text
 	; failed: {list}	; ha fallat: {list}
+	; skipped: {n}	; omesos: {n}
 	; {n} pages already had text	; {n} pàgines ja tenien text
 	? of {n}	? de {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} contribucions, +{added} / −{deleted} línies (Δ {delta}), +{bin_added} / −{bin_deleted} recursos binaris, {first} – {last}
@@ -78,6 +79,8 @@
 	About	Quant a
 	About PdfCraft	Quant a PdfCraft
 	About {app}	Quant al {app}
+	about {h} h {m} min left	queden unes {h} h {m} min
+	about {n} min left	queden uns {n} min
 	Accepted	Acceptat
 	Accepted by {printer}	Acceptada per {printer}
 	Accessibility	Accessibilitat
@@ -142,6 +145,7 @@
 	Add field	Afegeix un camp
 	Add fields	Afegeix els camps
 	Add file attachment	Afegeix un fitxer adjunt
+	Add files or folders to recognize.	Afegeix fitxers o carpetes per reconèixer.
 	Add files to combine	Afegeix fitxers per combinar
 	Add files…	Afegeix fitxers…
 	Add folder	Afegeix una carpeta
@@ -1314,6 +1318,7 @@ key	Home	Inici
 	In streams that use LZW encoding, use Flate instead	Als fluxos que utilitzen codificació LZW, utilitza Flate
 	In this file	En aquest fitxer
 	Include revocation information when signing (LTV)	Inclou informació de revocació en signar (LTV)
+	Include subfolders	Inclou les subcarpetes
 	Includes unsaved changes	Inclou canvis sense desar
 	Incorrect password. Try again.	Contrasenya incorrecta. Torna-ho a provar.
 	Indent	Sagna
@@ -1447,6 +1452,7 @@ certificate	Key usage	Ús de la clau
 	Left out: {names}	Exclosos: {names}
 	Left:	Esquerra:
 	Less	Less
+	less than a minute left	queda menys d'un minut
 	LI must be a child of L	LI ha de ser fill de L
 	Light	Clar
 	Light blue	Blau clar
@@ -1692,6 +1698,7 @@ calendar weekday	Mo	dl.
 	No pages match those choices	Cap pàgina coincideix amb aquestes opcions
 	No pages selected	Cap pàgina seleccionada
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	No s'ha trobat cap fitxer PDF.
 	No PDFs found in {folder}	No s'ha trobat cap PDF a {folder}
 	No PDFs in this folder yet	Encara no hi ha cap PDF en aquesta carpeta
 	No PDFs, images or text files found in {folder}	No s'ha trobat cap PDF, imatge ni fitxer de text a {folder}
@@ -1865,6 +1872,7 @@ animation effects	On	Activats
 	Outline colour:	Color del contorn:
 	Output	Sortida
 	Output appears here.	La sortida apareix aquí.
+	Output folder	Carpeta de sortida
 	Output intent: {list}	Intenció de sortida: {list}
 	Output preview	Previsualització de sortida
 	Oval	Oval
@@ -2719,6 +2727,7 @@ certificate	Subject	Subjecte
 	Text language is specified	S'ha especificat l'idioma del text
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	El text ha de contrastar prou amb el fons per a les persones amb baixa visió. Comprova els colors a ull o amb una eina de contrast.
 	Text only, keep images	Només el text, conserva les imatges
+	Text recognition cancelled. {summary}	S'ha cancel·lat el reconeixement de text. {summary}
 	Text recognition is already running	El reconeixement de text ja s'està executant
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	El reconeixement de text no està instal·lat: falten els seus fitxers de model. Reinstal·la PdfCraft o defineix PDFCRAFT_MODELS amb la carpeta que els conté.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	El reconeixement de text no està instal·lat: falten els seus models (executa `cargo xtask models` o defineix PDFCRAFT_MODELS).
@@ -2820,7 +2829,9 @@ calendar weekday	Th	dj.
 	The newest {n} of {total} PDFs	Els {n} més recents de {total} PDF
 	The operation failed.	L'operació ha fallat.
 	The order saved in the PDF needs tidying	The order saved in the PDF needs tidying
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Els originals no es modifiquen. Si la carpeta de sortida ja té un fitxer amb el mateix nom, es conserva i el nou rep un número.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Les altres signatures ({names}) indicaran que el document ha canviat després de signar-lo. Torneu-les a comprovar: res no garanteix que continuïn sent vàlides.
+	The output folder can't be one of the folders being read, or contain one.	La carpeta de sortida no pot ser cap de les carpetes que es llegeixen ni contenir-ne cap.
 	The page has changed; select the image again	La pàgina ha canviat; torna a seleccionar la imatge
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Les pàgines s'han extret però no s'han suprimit, perquè el document ha canviat mentre triaves una carpeta.

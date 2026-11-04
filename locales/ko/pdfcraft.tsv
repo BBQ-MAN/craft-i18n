@@ -44,6 +44,7 @@
 	9 digit, A letter, O letter or digit, X any character	9 숫자, A 문자, O 문자 또는 숫자, X 모든 문자
 	; 1 page already had text	; 페이지 1개에는 이미 텍스트가 있었습니다
 	; failed: {list}	; 실패: {list}
+	; skipped: {n}	; 건너뜀: {n}
 	; {n} pages already had text	; 페이지 {n}개에는 이미 텍스트가 있었습니다
 	? of {n}	?/{n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: PR {prs}개, 커밋 {commits}개, 줄 +{added} / −{deleted} (Δ {delta}), 바이너리 자산 +{bin_added} / −{bin_deleted}, {first} – {last}
@@ -80,6 +81,8 @@
 	A {} annotation isn't set to print, or is hidden	{} 주석이 인쇄되지 않도록 설정되었거나 숨겨져 있습니다
 	About PdfCraft	PdfCraft 정보
 	About {app}	{app} 정보
+	about {h} h {m} min left	약 {h}시간 {m}분 남음
+	about {n} min left	약 {n}분 남음
 	Accepted	수락됨
 	Accepted by {printer}	{printer}에서 수락함
 	Accessibility Checker	접근성 검사기
@@ -140,6 +143,7 @@
 	Add field	필드 추가
 	Add fields	필드 추가
 	Add file attachment	파일 첨부 추가
+	Add files or folders to recognize.	인식할 파일이나 폴더를 추가하세요.
 	Add files to combine	결합할 파일 추가
 	Add files…	파일 추가…
 	Add folder	폴더 추가
@@ -1185,6 +1189,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	LZW 인코딩 스트림을 Flate로 인코딩
 	In this file	이 파일에서
 	Include revocation information when signing (LTV)	서명할 때 해지 정보 포함(LTV)
+	Include subfolders	하위 폴더 포함
 	Includes unsaved changes	저장되지 않은 변경 내용 포함
 	Incorrect password. Try again.	암호가 올바르지 않습니다. 다시 시도하세요.
 	Indent	들여쓰기
@@ -1304,6 +1309,7 @@ certificate	Key usage	키 용도
 	Left Header Text	왼쪽 머리글 텍스트
 	Left out: {names}	제외: {names}
 	Less	Less
+	less than a minute left	1분 미만 남음
 	LI must be a child of L	LI는 L의 하위 요소여야 합니다
 	Light blue	연한 파란색
 	Light theme	밝은 테마
@@ -1512,6 +1518,7 @@ calendar weekday	Mo	월
 	No pages match those choices	이 선택 조건에 일치하는 페이지가 없습니다
 	No pages selected	선택한 페이지가 없습니다
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	PDF 파일을 찾지 못했습니다.
 	No PDFs found in {folder}	{folder}에서 PDF를 찾을 수 없습니다
 	No PDFs in this folder yet	이 폴더에는 아직 PDF가 없습니다
 	No PDFs, images or text files found in {folder}	{folder}에서 PDF, 이미지 또는 텍스트 파일을 찾지 못했습니다
@@ -1672,6 +1679,7 @@ animation effects	On	켜기
 	Outdent	내어쓰기
 	Outline colour:	윤곽선 색:
 	Output appears here.	출력이 여기에 표시됩니다.
+	Output folder	출력 폴더
 	Output intent: {list}	출력 인텐트: {list}
 	Output preview	출력 미리 보기
 	Owner password (no restrictions apply)	소유자 암호(제한이 적용되지 않음)
@@ -2449,6 +2457,7 @@ certificate	Subject	주체
 	Text language is specified	텍스트 언어가 지정되었습니다
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	텍스트는 저시력 사용자를 위해 배경과 충분한 대비를 이뤄야 합니다. 색상을 눈으로 또는 대비 검사 도구로 확인하세요.
 	Text only, keep images	텍스트만, 이미지 유지
+	Text recognition cancelled. {summary}	텍스트 인식이 취소되었습니다. {summary}
 	Text recognition is already running	텍스트 인식이 이미 실행 중입니다
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	텍스트 인식이 설치되어 있지 않습니다: 모델 파일이 없습니다. PdfCraft를 다시 설치하거나 PDFCRAFT_MODELS를 모델 파일이 있는 폴더로 설정하세요.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	텍스트 인식이 설치되어 있지 않습니다. 모델이 없습니다(`cargo xtask models`를 실행하거나 PDFCRAFT_MODELS를 설정하세요).
@@ -2548,7 +2557,9 @@ calendar weekday	Th	목
 	The newest {n} of {total} PDFs	전체 {total}개 PDF 중 최신 {n}개
 	The operation failed.	작업이 실패했습니다.
 	The order saved in the PDF needs tidying	The order saved in the PDF needs tidying
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	원본은 변경되지 않습니다. 출력 폴더에 같은 이름의 파일이 있으면 그대로 두고 새 파일에 번호를 붙입니다.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	다른 서명({names})은 서명 후 문서가 변경되었다고 보고합니다. 다시 확인하세요. 계속 유효하다는 보장은 없습니다.
+	The output folder can't be one of the folders being read, or contain one.	출력 폴더는 읽는 폴더 중 하나이거나 그중 하나를 포함할 수 없습니다.
 	The page has changed; select the image again	페이지가 변경되었으므로 이미지를 다시 선택하세요
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	폴더를 선택하는 동안 문서가 변경되어 페이지가 추출되었지만 삭제되지는 않았습니다.

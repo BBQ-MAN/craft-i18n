@@ -40,6 +40,7 @@
 	9 digit, A letter, O letter or digit, X any character	9 numero, A kirjain, O kirjain tai numero, X mikä tahansa merkki
 	; 1 page already had text	; 1 sivulla oli jo tekstiä
 	; failed: {list}	; epäonnistui: {list}
+	; skipped: {n}	; ohitettu: {n}
 	; {n} pages already had text	; {n} sivulla oli jo tekstiä
 	? of {n}	?/{n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR:ää, {commits} committia, +{added} / −{deleted} riviä (Δ {delta}), +{bin_added} / −{bin_deleted} binääritiedostoa, {first} – {last}
@@ -76,6 +77,8 @@
 	A {} annotation isn't set to print, or is hidden	{}-merkintää ei ole asetettu tulostumaan, tai se on piilotettu
 	About PdfCraft	Tietoja PdfCraftista
 	About {app}	Tietoja: {app}
+	about {h} h {m} min left	noin {h} h {m} min jäljellä
+	about {n} min left	noin {n} min jäljellä
 	Accepted	Hyväksytty
 	Accepted by {printer}	{printer} hyväksyi työn
 	Accessibility	Saavutettavuus
@@ -137,6 +140,7 @@
 	Add field	Lisää kenttä
 	Add fields	Lisää kentät
 	Add file attachment	Lisää tiedostoliite
+	Add files or folders to recognize.	Lisää tunnistettavat tiedostot tai kansiot.
 	Add files to combine	Lisää yhdistettävät tiedostot
 	Add files…	Lisää tiedostoja…
 	Add folder	Lisää kansio
@@ -1212,6 +1216,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Koodaa LZW-koodatut virrat Flate-menetelmällä
 	In this file	Tässä tiedostossa
 	Include revocation information when signing (LTV)	Sisällytä sulkutiedot allekirjoitettaessa (LTV)
+	Include subfolders	Sisällytä alikansiot
 	Includes unsaved changes	Sisältää tallentamattomia muutoksia
 	Incorrect password. Try again.	Väärä salasana. Yritä uudelleen.
 	Indent	Sisennä
@@ -1334,6 +1339,7 @@ certificate	Key usage	Avaimen käyttö
 	Left Header Text	Vasen ylätunnisteteksti
 	Left out: {names}	Jätettiin pois: {names}
 	Less	Less
+	less than a minute left	alle minuutti jäljellä
 	LI must be a child of L	LI:n on oltava L-elementin alielementti
 	Light blue	Vaaleansininen
 	Light gray	Vaaleanharmaa
@@ -1551,6 +1557,7 @@ calendar weekday	Mo	Ma
 	No pages match those choices	Mikään sivu ei vastaa valintoja
 	No pages selected	Sivuja ei ole valittu
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	PDF-tiedostoja ei löytynyt.
 	No PDFs found in {folder}	Kansiosta {folder} ei löytynyt PDF-tiedostoja
 	No PDFs in this folder yet	Kansiossa ei ole vielä PDF-tiedostoja
 	No PDFs, images or text files found in {folder}	Kansiosta {folder} ei löytynyt PDF-, kuva- tai tekstitiedostoja
@@ -1708,6 +1715,7 @@ animation effects	On	Käytössä
 	Outdent	Poista sisennys
 	Outline colour:	Ääriviivan väri:
 	Output appears here.	Tuloste näkyy tässä.
+	Output folder	Tulostekansio
 	Output intent: {list}	Tulostustarkoitus: {list}
 	Output preview	Tulosteen esikatselu
 	Owner password (no restrictions apply)	Omistajan salasana (rajoitukset eivät koske)
@@ -2495,6 +2503,7 @@ certificate	Subject	Kohde
 	Text language is specified	Tekstin kieli on määritetty
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Tekstin on erotuttava taustastaan riittävästi heikkonäköisille. Tarkista värit silmämääräisesti tai kontrastityökalulla.
 	Text only, keep images	Vain teksti, kuvat säilyvät
+	Text recognition cancelled. {summary}	Tekstintunnistus peruttiin. {summary}
 	Text recognition is already running	Tekstintunnistus on jo käynnissä
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Tekstintunnistusta ei ole asennettu: sen mallitiedostot puuttuvat. Asenna PdfCraft uudelleen tai aseta PDFCRAFT_MODELS osoittamaan kansioon, jossa ne ovat.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Tekstintunnistusta ei ole asennettu: sen mallit puuttuvat (suorita `cargo xtask models` tai aseta PDFCRAFT_MODELS).
@@ -2596,7 +2605,9 @@ calendar weekday	Th	To
 	The newest {n} of {total} PDFs	Uusimmat {n}/{total} PDF-tiedostoa
 	The operation failed.	Toiminto epäonnistui.
 	The order saved in the PDF needs tidying	The order saved in the PDF needs tidying
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Alkuperäisiä ei muuteta. Samanniminen tiedosto tulostekansiossa säilyy, ja uusi saa numeron.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Muut allekirjoitukset ({names}) ilmoittavat, että asiakirjaa on muutettu niiden jälkeen. Tarkista ne uudelleen: mikään ei takaa, että ne pysyvät kelvollisina.
+	The output folder can't be one of the folders being read, or contain one.	Tulostekansio ei voi olla mikään luettavista kansioista eikä sisältää niistä yhtäkään.
 	The page has changed; select the image again	Sivu on muuttunut; valitse kuva uudelleen
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sivut poimittiin mutta niitä ei poistettu, koska asiakirja muuttui kansion valinnan aikana.

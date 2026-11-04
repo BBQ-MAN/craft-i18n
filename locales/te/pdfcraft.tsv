@@ -42,6 +42,7 @@
 	; 1 page skipped	; 1 పేజీ దాటవేయబడింది
 	; corrected {n} pages	; {n} పేజీలు సరిచేయబడ్డాయి
 	; failed: {list}	; విఫలమైనవి: {list}
+	; skipped: {n}	; దాటవేసినవి: {n}
 	; {n} pages already had text	; {n} పేజీలలో ఇప్పటికే టెక్స్ట్ ఉంది
 	; {n} pages skipped	; {n} పేజీలు దాటవేయబడ్డాయి
 	? of {n}	{n}లో ?
@@ -70,6 +71,8 @@
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	సారాంశం పట్టిక ఉద్దేశాన్ని, లేఅవుట్‌ను వివరిస్తుంది. ప్రతి పట్టికకు Summary ఆట్రిబ్యూట్‌ను జోడించండి.
 	About PdfCraft	PdfCraft గురించి
 	About {app}	{app} గురించి
+	about {h} h {m} min left	సుమారు {h} గం {m} నిమి మిగిలి ఉంది
+	about {n} min left	సుమారు {n} నిమి మిగిలి ఉంది
 	Accepted	ఆమోదించబడింది
 	Accepted by {printer}	{printer} అంగీకరించింది
 	Accessibility Checker	యాక్సెసిబిలిటీ తనిఖీ సాధనం
@@ -129,6 +132,7 @@
 	Add field	ఫీల్డ్ జోడించు
 	Add fields	ఫీల్డ్‌లు జోడించు
 	Add file attachment	ఫైల్ జోడింపు జోడించు
+	Add files or folders to recognize.	గుర్తించడానికి ఫైల్‌లు లేదా ఫోల్డర్‌లను జోడించండి.
 	Add files to combine	కలపడానికి ఫైల్‌లను జోడించు
 	Add files…	ఫైల్‌లను జోడించు…
 	Add folder	ఫోల్డర్‌ను జోడించు
@@ -1185,6 +1189,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	LZW ఎన్‌కోడింగ్ ఉన్న స్ట్రీమ్‌లలో బదులుగా Flate ఉపయోగించు
 	In this file	ఈ ఫైల్‌లో
 	Include revocation information when signing (LTV)	సంతకం చేసేటప్పుడు రద్దు సమాచారాన్ని చేర్చు (LTV)
+	Include subfolders	ఉప ఫోల్డర్‌లను చేర్చు
 	Includes unsaved changes	సేవ్ చేయని మార్పులు ఉన్నాయి
 	Incorrect password. Try again.	పాస్‌వర్డ్ తప్పు. మళ్లీ ప్రయత్నించండి.
 	Indent	లోపలికి జరుపు
@@ -1291,6 +1296,7 @@ key	Home	Home
 	Legacy text encoding	పాత టెక్స్ట్ ఎన్‌కోడింగ్
 	Legal	లీగల్
 	Less	తక్కువ
+	less than a minute left	ఒక నిమిషం కంటే తక్కువ మిగిలి ఉంది
 	Letter	లెటర్
 	LI must be a child of L	LI తప్పనిసరిగా L లోపల నేరుగా ఉండాలి
 	Light blue	లేత నీలం
@@ -1496,6 +1502,7 @@ key	Home	Home
 	No pages match those choices	ఆ ఎంపికలకు సరిపోయే పేజీలు ఏవీ లేవు
 	No pages selected	పేజీలు ఏవీ ఎంచుకోబడలేదు
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	PDF ఫైల్‌లు ఏవీ కనబడలేదు.
 	No PDFs, images or text files found in {folder}	{folder}లో PDFలు, చిత్రాలు లేదా టెక్స్ట్ ఫైల్‌లు ఏవీ కనుగొనబడలేదు
 	No photo chosen	ఫోటో ఎంచుకోలేదు
 	No preview	ప్రివ్యూ లేదు
@@ -1655,6 +1662,7 @@ animation effects	On	ఆన్
 	Outline over page	పేజీపై అవుట్‌లైన్
 	Outline view	అవుట్‌లైన్ వీక్షణ
 	Output appears here.	అవుట్‌పుట్ ఇక్కడ కనిపిస్తుంది.
+	Output folder	అవుట్‌పుట్ ఫోల్డర్
 	Output intent: {list}	అవుట్‌పుట్ ఇంటెంట్: {list}
 	Output preview	అవుట్‌పుట్ ప్రివ్యూ
 	Owner password (no restrictions apply)	యజమాని పాస్‌వర్డ్ (పరిమితులు ఏవీ వర్తించవు)
@@ -2450,6 +2458,7 @@ action wizard	Start	ప్రారంభించు
 	Text language is specified	టెక్స్ట్ భాష పేర్కొనబడింది
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	కంటిచూపు తక్కువగా ఉన్నవారు చదవగలిగేలా టెక్స్ట్‌కు దాని నేపథ్యంతో తగినంత కాంట్రాస్ట్ ఉండాలి. రంగులను కంటితో లేదా కాంట్రాస్ట్ సాధనంతో తనిఖీ చేయండి.
 	Text only, keep images	వచనం మాత్రమే, చిత్రాలు అలాగే ఉంచండి
+	Text recognition cancelled. {summary}	టెక్స్ట్ గుర్తింపు రద్దు చేయబడింది. {summary}
 	Text recognition is already running	టెక్స్ట్ గుర్తింపు ఇప్పటికే అమలవుతోంది
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	టెక్స్ట్ గుర్తింపు ఇన్‌స్టాల్ కాలేదు: దాని మోడల్ ఫైల్‌లు లేవు. PdfCraftను మళ్లీ ఇన్‌స్టాల్ చేయండి, లేదా వాటిని కలిగి ఉన్న ఫోల్డర్‌కు PDFCRAFT_MODELSను సెట్ చేయండి.
 	Text to find	కనుగొనాల్సిన టెక్స్ట్
@@ -2531,7 +2540,9 @@ action wizard	Start	ప్రారంభించు
 	The objects are already aligned.	వస్తువులు ఇప్పటికే అమర్చబడ్డాయి.
 	The operation failed.	చర్య విఫలమైంది.
 	The order saved in the PDF needs tidying	PDFలో సేవ్ చేసిన క్రమాన్ని సరిదిద్దాలి
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	అసలు ఫైల్‌లు మారవు. అవుట్‌పుట్ ఫోల్డర్‌లో అదే పేరుతో ఉన్న ఫైల్ అలాగే ఉంటుంది, కొత్త ఫైల్‌కు ఒక సంఖ్య వస్తుంది.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	ఇతర సంతకాలు ({names}) సంతకం చేసిన తర్వాత పత్రం మారిందని నివేదిస్తాయి. వాటిని మళ్లీ ధృవీకరించండి: అవి చెల్లుబాటులో ఉంటాయనే హామీ లేదు.
+	The output folder can't be one of the folders being read, or contain one.	అవుట్‌పుట్ ఫోల్డర్ చదువుతున్న ఫోల్డర్‌లలో ఒకటి కాకూడదు, వాటిలో దేనినీ కలిగి ఉండకూడదు.
 	The page has changed; select the image again	పేజీ మారింది; చిత్రాన్ని మళ్లీ ఎంచుకోండి
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	the password is incorrect	పాస్‌వర్డ్ తప్పు

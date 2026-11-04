@@ -42,6 +42,7 @@
 	; 1 page skipped	; пропущена 1 страница
 	; corrected {n} pages	; исправлено страниц: {n}
 	; failed: {list}	; не удалось: {list}
+	; skipped: {n}	; пропущено: {n}
 	; {n} pages already had text	; {n} страниц уже имели текст
 	; {n} pages skipped	; пропущено страниц: {n}
 	? of {n}	? из {n}
@@ -69,6 +70,8 @@
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Сводка описывает назначение и структуру таблицы. Добавьте атрибут Summary к каждой таблице.
 	About PdfCraft	О программе PdfCraft
 	About {app}	О программе {app}
+	about {h} h {m} min left	осталось около {h} ч {m} мин
+	about {n} min left	осталось около {n} мин
 	Accepted	Принято
 	Accepted by {printer}	Принято принтером {printer}
 	Accessibility	Доступность
@@ -133,6 +136,7 @@
 	Add field	Добавить поле
 	Add fields	Добавить поля
 	Add file attachment	Добавить вложенный файл
+	Add files or folders to recognize.	Добавьте файлы или папки для распознавания.
 	Add files to combine	Добавить файлы для объединения
 	Add files…	Добавить файлы…
 	Add folder	Добавить папку
@@ -1268,6 +1272,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Использовать Flate вместо LZW в потоках с кодированием LZW
 	In this file	В этом файле
 	Include revocation information when signing (LTV)	Добавлять сведения об отзыве при подписании (LTV)
+	Include subfolders	Включая вложенные папки
 	Includes unsaved changes	Включает несохранённые изменения
 	Incompatible	Несовместимо
 	Incorrect password. Try again.	Неверный пароль. Попробуйте снова.
@@ -1384,6 +1389,7 @@ key	Home	Home
 	Left-to-right text	Текст слева направо
 	Legacy text encoding	Устаревшая кодировка текста
 	Less	Less
+	less than a minute left	осталось меньше минуты
 	LI must be a child of L	LI должен быть потомком L
 	Light	Светлое
 	Light blue	Голубой
@@ -1623,6 +1629,7 @@ key	Home	Home
 	No pages match those choices	Страницы не соответствуют этим выбору
 	No pages selected	Страницы не выбраны
 	No pages were scanned.	Ни одной страницы не отсканировано.
+	No PDF files were found.	PDF-файлы не найдены.
 	No PDFs in this folder yet	В этой папке пока нет PDF
 	No PDFs, images or text files found in {folder}	В {folder} не найдено PDF, изображений или текстовых файлов
 	No photo chosen	Фото не выбрано
@@ -1792,6 +1799,7 @@ animation effects	On	Вкл
 	Outline over page	Контуры поверх страницы
 	Outline view	Режим контуров
 	Output appears here.	Вывод появляется здесь.
+	Output folder	Папка для результатов
 	Output intent: {list}	Выходное намерение: {list}
 	Output preview	Предварительный просмотр вывода
 	Owner password (no restrictions apply)	Пароль владельца (ограничения не применяются)
@@ -2663,6 +2671,7 @@ document scrollbar width	Standard	Стандартная
 	Text language is specified	Язык текста указан
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Текст должен достаточно контрастировать с фоном для людей со слабым зрением. Проверьте цвета глазами или с помощью инструмента контраста.
 	Text only, keep images	Только текст, изображения без изменений
+	Text recognition cancelled. {summary}	Распознавание текста отменено. {summary}
 	Text recognition is already running	Распознавание текста уже выполняется
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Распознавание текста не установлено: отсутствуют файлы моделей. Переустановите PdfCraft или задайте в PDFCRAFT_MODELS папку, в которой они лежат.
 	Text to find	Текст для поиска
@@ -2753,7 +2762,9 @@ document scrollbar width	Standard	Стандартная
 	The objects are already aligned.	Объекты уже выровнены.
 	The operation failed.	Операция не удалась.
 	The order saved in the PDF needs tidying	Сохранённый в PDF порядок нуждается в исправлении
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Оригиналы не изменяются. Файл с тем же именем в папке для результатов сохраняется, а новый получает номер.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Другие подписи ({names}) будут сообщать, что документ изменился после подписания. Проверьте их заново: ничто не гарантирует, что они останутся действительными.
+	The output folder can't be one of the folders being read, or contain one.	Папка для результатов не может быть одной из читаемых папок или содержать такую папку.
 	The page has changed; select the image again	Страница изменилась; выберите изображение снова
 	The pages already scanned were kept in the document.	Уже отсканированные страницы сохранены в документе.
 	the password is incorrect	пароль неверен

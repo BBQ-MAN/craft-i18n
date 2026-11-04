@@ -43,6 +43,7 @@
 	; 1 page skipped	; 1 sayfa atlandı
 	; corrected {n} pages	; {n} sayfa düzeltildi
 	; failed: {list}	; başarısız oldu: {list}
+	; skipped: {n}	; atlandı: {n}
 	; {n} pages already had text	; {n} sayfada zaten metin vardı
 	; {n} pages skipped	; {n} sayfa atlandı
 	? of {n}	? / {n}
@@ -81,6 +82,8 @@
 	A {} annotation isn't set to print, or is hidden	Bir {} açıklaması yazdırılacak şekilde ayarlanmamış ya da gizli
 	About PdfCraft	PdfCraft hakkında
 	About {app}	{app} Hakkında
+	about {h} h {m} min left	yaklaşık {h} sa {m} dk kaldı
+	about {n} min left	yaklaşık {n} dk kaldı
 	Accepted	Kabul edildi
 	Accepted by {printer}	{printer} kabul etti
 	Accessibility Checker	Erişilebilirlik Denetleyicisi
@@ -142,6 +145,7 @@
 	Add field	Alan ekle
 	Add fields	Alanları ekle
 	Add file attachment	Dosya eki ekle
+	Add files or folders to recognize.	Tanınacak dosyaları veya klasörleri ekleyin.
 	Add files to combine	Birleştirilecek dosyaları ekle
 	Add files…	Dosya ekle…
 	Add folder	Klasör ekle
@@ -1294,6 +1298,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	LZW kodlamalı akışlarda bunun yerine Flate kullan
 	In this file	Bu dosyada
 	Include revocation information when signing (LTV)	İmzalarken iptal bilgilerini ekle (LTV)
+	Include subfolders	Alt klasörleri dahil et
 	Includes unsaved changes	Kaydedilmemiş değişiklikleri içerir
 	Incompatible	Uyumsuz
 	Incorrect password. Try again.	Yanlış parola. Tekrar deneyin.
@@ -1418,6 +1423,7 @@ key	Home	Home
 	Left-to-right text	Soldan sağa metin
 	Legacy text encoding	Eski metin kodlaması
 	Less	Less
+	less than a minute left	bir dakikadan az kaldı
 	Level {n}	Düzey {n}
 	LI must be a child of L	LI, L öğesinin alt öğesi olmalıdır
 	Light blue	Açık mavi
@@ -1664,6 +1670,7 @@ calendar weekday	Mo	Pt
 	No pages match those choices	Bu seçimlerle eşleşen sayfa yok
 	No pages selected	Hiçbir sayfa seçilmedi
 	No pages were scanned.	Hiç sayfa taranmadı.
+	No PDF files were found.	PDF dosyası bulunamadı.
 	No PDFs found in {folder}	{folder} içinde PDF bulunamadı
 	No PDFs in this folder yet	Bu klasörde henüz PDF yok
 	No PDFs, images or text files found in {folder}	{folder} içinde PDF, resim veya metin dosyası bulunamadı
@@ -1848,6 +1855,7 @@ animation effects	On	Açık
 	Outline view	Anahat görünümü
 	Output	Çıktı
 	Output appears here.	Çıktı burada görünür.
+	Output folder	Çıktı klasörü
 	Output intent: {list}	Çıktı amacı: {list}
 	Output preview	Çıktı önizleme
 	Oval	Elips
@@ -2736,6 +2744,7 @@ certificate	Subject	Konu
 	Text language is specified	Metin dili belirtildi
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Az gören kişiler için metnin arka planıyla yeterince kontrast oluşturması gerekir. Renkleri gözle veya bir kontrast aracıyla denetleyin.
 	Text only, keep images	Yalnızca metin, görseller kalsın
+	Text recognition cancelled. {summary}	Metin tanıma iptal edildi. {summary}
 	Text recognition is already running	Metin tanıma zaten çalışıyor
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Metin tanıma yüklü değil: model dosyaları eksik. PdfCraft'ı yeniden yükleyin veya PDFCRAFT_MODELS ortam değişkenini bunları içeren klasöre ayarlayın.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Metin tanıma kurulu değil: modelleri eksik (`cargo xtask models` çalıştırın ya da PDFCRAFT_MODELS ayarlayın).
@@ -2851,7 +2860,9 @@ calendar weekday	Th	Pe
 	The objects are already aligned.	Nesneler zaten hizalı.
 	The operation failed.	İşlem başarısız oldu.
 	The order saved in the PDF needs tidying	PDF'te kayıtlı sıranın düzenlenmesi gerekiyor
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Orijinaller değiştirilmez. Çıktı klasöründe aynı adlı bir dosya varsa korunur ve yeni dosya bir numara alır.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Diğer imzalar ({names}) belgenin imzalandıktan sonra değiştiğini bildirecek. Onları yeniden doğrulayın: geçerli kalacaklarının hiçbir garantisi yok.
+	The output folder can't be one of the folders being read, or contain one.	Çıktı klasörü okunan klasörlerden biri olamaz veya bunlardan birini içeremez.
 	The page has changed; select the image again	Sayfa değişti; resmi yeniden seçin
 	The pages already scanned were kept in the document.	Daha önce taranan sayfalar belgede tutuldu.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sayfalar ayıklandı ancak silinmedi, çünkü bir klasör seçerken belge değişti.

@@ -41,6 +41,7 @@
 	9 digit, A letter, O letter or digit, X any character	9 cifră, A literă, O literă sau cifră, X orice caracter
 	; 1 page already had text	; 1 pagină avea deja text
 	; failed: {list}	; eșuate: {list}
+	; skipped: {n}	; omise: {n}
 	; {n} pages already had text	; {n} pagini aveau deja text
 	? of {n}	? din {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR-uri, {commits} commit-uri, +{added} / −{deleted} linii (Δ {delta}), +{bin_added} / −{bin_deleted} resurse binare, {first} – {last}
@@ -78,6 +79,8 @@
 	About	Despre
 	About PdfCraft	Despre PdfCraft
 	About {app}	Despre {app}
+	about {h} h {m} min left	au mai rămas circa {h} h {m} min
+	about {n} min left	au mai rămas circa {n} min
 	Accepted	Acceptat
 	Accepted by {printer}	Acceptată de {printer}
 	Accessibility	Accesibilitate
@@ -142,6 +145,7 @@
 	Add field	Adăugare câmp
 	Add fields	Adăugare câmpuri
 	Add file attachment	Adăugare fișier atașat
+	Add files or folders to recognize.	Adăugați fișiere sau foldere pentru recunoaștere.
 	Add files to combine	Adăugare fișiere de combinat
 	Add files…	Adăugare fișiere…
 	Add folder	Adăugare folder
@@ -1314,6 +1318,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Folosire Flate în locul LZW pentru fluxurile codate LZW
 	In this file	În acest fișier
 	Include revocation information when signing (LTV)	Include informațiile de revocare la semnare (LTV)
+	Include subfolders	Include subfolderele
 	Includes unsaved changes	Include modificările nesalvate
 	Incorrect password. Try again.	Parolă incorectă. Încercați din nou.
 	Indent	Indentare
@@ -1447,6 +1452,7 @@ certificate	Key usage	Utilizare cheie
 	Left out: {names}	Omise: {names}
 	Left:	Stânga:
 	Less	Less
+	less than a minute left	a mai rămas mai puțin de un minut
 	LI must be a child of L	LI trebuie să fie copil al L
 	Light	Luminoasă
 	Light blue	Albastru deschis
@@ -1692,6 +1698,7 @@ calendar weekday	Mo	Lu
 	No pages match those choices	Nicio pagină nu se potrivește cu aceste opțiuni
 	No pages selected	Nicio pagină selectată
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	Nu s-au găsit fișiere PDF.
 	No PDFs found in {folder}	Nu s-au găsit PDF-uri în {folder}
 	No PDFs in this folder yet	Încă nu există PDF-uri în acest folder
 	No PDFs, images or text files found in {folder}	Nu s-au găsit PDF-uri, imagini sau fișiere text în {folder}
@@ -1865,6 +1872,7 @@ animation effects	On	Activate
 	Outline colour:	Culoare contur:
 	Output	Ieșire
 	Output appears here.	Rezultatul apare aici.
+	Output folder	Folder de ieșire
 	Output intent: {list}	Intenție de ieșire: {list}
 	Output preview	Previzualizare ieșire
 	Oval	Oval
@@ -2719,6 +2727,7 @@ certificate	Subject	Subiect
 	Text language is specified	Limba textului este specificată
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Textul trebuie să contrasteze suficient cu fundalul pentru persoanele cu vedere slabă. Verificați culorile cu ochiul liber sau cu un instrument de contrast.
 	Text only, keep images	Doar textul, păstrează imaginile
+	Text recognition cancelled. {summary}	Recunoașterea textului a fost anulată. {summary}
 	Text recognition is already running	Recunoașterea textului rulează deja
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Recunoașterea textului nu este instalată: lipsesc fișierele modelului. Reinstalați PdfCraft sau setați PDFCRAFT_MODELS la folderul care le conține.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Recunoașterea textului nu este instalată: lipsesc modelele (rulați `cargo xtask models` sau setați PDFCRAFT_MODELS).
@@ -2820,7 +2829,9 @@ calendar weekday	Th	Jo
 	The newest {n} of {total} PDFs	Cele mai noi {n} din {total} PDF-uri
 	The operation failed.	Operația a eșuat.
 	The order saved in the PDF needs tidying	The order saved in the PDF needs tidying
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Originalele nu se modifică. Un fișier cu același nume din folderul de ieșire este păstrat, iar cel nou primește un număr.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Celelalte semnături ({names}) vor raporta că documentul s-a modificat după semnare. Verificați-le din nou: nimic nu garantează că rămân valide.
+	The output folder can't be one of the folders being read, or contain one.	Folderul de ieșire nu poate fi unul dintre folderele citite și nici nu poate conține unul dintre ele.
 	The page has changed; select the image again	Pagina s-a schimbat; selectați din nou imaginea
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Paginile au fost extrase, dar nu șterse, deoarece documentul s-a modificat în timp ce alegeați un folder.

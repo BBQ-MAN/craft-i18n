@@ -41,6 +41,7 @@
 	; 1 page skipped	; пропущено 1 сторінку
 	; corrected {n} pages	; виправлено сторінок: {n}
 	; failed: {list}	; невдалі: {list}
+	; skipped: {n}	; пропущено: {n}
 	; {n} pages already had text	; сторінки ({n}) вже мали текст
 	; {n} pages skipped	; пропущено сторінок: {n}
 	? of {n}	? із {n}
@@ -72,6 +73,8 @@
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Зведення описує призначення й будову таблиці. Додайте атрибут Summary до кожної таблиці.
 	About PdfCraft	Про PdfCraft
 	About {app}	Про {app}
+	about {h} h {m} min left	лишилося близько {h} год {m} хв
+	about {n} min left	лишилося близько {n} хв
 	Accepted	Прийнято
 	Accepted by {printer}	Прийнято принтером {printer}
 	Accessibility Checker	Перевірка доступності
@@ -133,6 +136,7 @@
 	Add field	Додати поле
 	Add fields	Додати поля
 	Add file attachment	Додати файлове вкладення
+	Add files or folders to recognize.	Додайте файли або теки для розпізнавання.
 	Add files to combine	Додати файли для об’єднання
 	Add files…	Додати файли…
 	Add folder	Додати теку
@@ -1233,6 +1237,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Використовувати Flate замість LZW у потоках із кодуванням LZW
 	In this file	У цьому файлі
 	Include revocation information when signing (LTV)	Додавати відомості про відкликання під час підписування (LTV)
+	Include subfolders	Разом із вкладеними теками
 	Includes unsaved changes	Містить незбережені зміни
 	Incompatible	Несумісно
 	Incorrect password. Try again.	Неправильний пароль. Спробуйте ще раз.
@@ -1350,6 +1355,7 @@ calendar date	June	червня
 	Left-to-right text	Текст зліва направо
 	Legacy text encoding	Застаріле кодування тексту
 	Less	Less
+	less than a minute left	лишилося менше хвилини
 	Letter	Letter (США)
 	LI must be a child of L	LI має бути дочірнім елементом L
 	Light blue	Блакитний
@@ -1581,6 +1587,7 @@ calendar date	May	травня
 	No pages match those choices	Жодна сторінка не відповідає вибраним параметрам
 	No pages selected	Сторінки не вибрано
 	No pages were scanned.	Жодної сторінки не відскановано.
+	No PDF files were found.	PDF-файлів не знайдено.
 	No PDFs in this folder yet	У цій теці ще немає PDF
 	No PDFs, images or text files found in {folder}	У {folder} не знайдено PDF, зображень або текстових файлів
 	No photo chosen	Фото не вибрано
@@ -1753,6 +1760,7 @@ animation effects	On	Увімкнено
 	Outline over page	Контури поверх сторінки
 	Outline view	Режим контурів
 	Output appears here.	Тут з’являється вивід.
+	Output folder	Тека для результатів
 	Output intent: {list}	Профіль виводу: {list}
 	Output preview	Попередній перегляд виводу
 	Owner password (no restrictions apply)	Пароля власника (обмеження не застосовуються)
@@ -2600,6 +2608,7 @@ certificate	Subject	Власник сертифіката
 	Text language is specified	Мову тексту вказано
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Текст має достатньо контрастувати з тлом для людей зі слабким зором. Перевірте кольори візуально або інструментом перевірки контрасту.
 	Text only, keep images	Лише текст, зображення без змін
+	Text recognition cancelled. {summary}	Розпізнавання тексту скасовано. {summary}
 	Text recognition is already running	Розпізнавання тексту вже виконується
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Розпізнавання тексту не встановлено: бракує файлів моделей. Перевстановіть PdfCraft або задайте в PDFCRAFT_MODELS теку, у якій вони лежать.
 	Text to find	Текст для пошуку
@@ -2690,7 +2699,9 @@ certificate	Subject	Власник сертифіката
 	The objects are already aligned.	Об’єкти вже вирівняні.
 	The operation failed.	Операція завершилася невдало.
 	The order saved in the PDF needs tidying	Порядок, збережений у PDF, потребує впорядкування
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Оригінали не змінюються. Файл із тією самою назвою в теці для результатів зберігається, а новий отримує номер.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Інші підписи ({names}) повідомлятимуть, що документ змінився після підписання. Перевірте їх повторно: ніщо не гарантує, що вони залишаться дійсними.
+	The output folder can't be one of the folders being read, or contain one.	Тека для результатів не може бути однією з тек, що читаються, або містити таку теку.
 	The page has changed; select the image again	Сторінка змінилася; виберіть зображення ще раз
 	The pages already scanned were kept in the document.	Уже відскановані сторінки збережено в документі.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Сторінки видобуто, але не видалено, бо документ змінився, поки ви вибирали теку.

@@ -40,6 +40,7 @@
 	; 1 page skipped	; 1 pagina saltata
 	; corrected {n} pages	; {n} pagine corrette
 	; failed: {list}	; non riusciti: {list}
+	; skipped: {n}	; saltati: {n}
 	; {n} pages already had text	; {n} pagine contenevano già testo
 	; {n} pages skipped	; {n} pagine saltate
 	? of {n}	? di {n}
@@ -78,6 +79,8 @@
 	A {} annotation isn't set to print, or is hidden	Un'annotazione {} non è impostata per la stampa oppure è nascosta
 	About PdfCraft	Informazioni su PdfCraft
 	About {app}	Informazioni su {app}
+	about {h} h {m} min left	mancano circa {h} h {m} min
+	about {n} min left	mancano circa {n} min
 	Accepted	Accettato
 	Accepted by {printer}	Accettato da {printer}
 	Accessibility Checker	Controllo accessibilità
@@ -139,6 +142,7 @@
 	Add field	Aggiungi campo
 	Add fields	Aggiungi campi
 	Add file attachment	Aggiungi file allegato
+	Add files or folders to recognize.	Aggiungi file o cartelle da riconoscere.
 	Add files to combine	Aggiungi file da combinare
 	Add files…	Aggiungi file…
 	Add folder	Aggiungi cartella
@@ -1256,6 +1260,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Nei flussi con codifica LZW, usa Flate
 	In this file	In questo file
 	Include revocation information when signing (LTV)	Includi le informazioni di revoca durante la firma (LTV)
+	Include subfolders	Includi sottocartelle
 	Includes unsaved changes	Include modifiche non salvate
 	Incompatible	Incompatibile
 	Incorrect password. Try again.	Password errata. Riprova.
@@ -1381,6 +1386,7 @@ certificate	Key usage	Utilizzo chiave
 	Left-to-right text	Testo da sinistra a destra
 	Legacy text encoding	Codifica del testo legacy
 	Less	Less
+	less than a minute left	manca meno di un minuto
 	LI must be a child of L	LI deve essere figlio di L
 	Light blue	Azzurro
 	Light theme	Tema chiaro
@@ -1614,6 +1620,7 @@ calendar weekday	Mo	Lu
 	No pages match those choices	Nessuna pagina corrisponde a queste scelte
 	No pages selected	Nessuna pagina selezionata
 	No pages were scanned.	Nessuna pagina è stata acquisita.
+	No PDF files were found.	Nessun file PDF trovato.
 	No PDFs in this folder yet	Ancora nessun PDF in questa cartella
 	No PDFs, images or text files found in {folder}	Nessun PDF, immagine o file di testo trovato in {folder}
 	No photo chosen	Nessuna foto scelta
@@ -1788,6 +1795,7 @@ animation effects	On	Attivati
 	Outline over page	Contorno sulla pagina
 	Outline view	Visualizzazione contorno
 	Output appears here.	L'output compare qui.
+	Output folder	Cartella di destinazione
 	Output intent: {list}	Output intent: {list}
 	Output preview	Anteprima output
 	Owner password (no restrictions apply)	Password proprietario (nessuna restrizione applicata)
@@ -2655,6 +2663,7 @@ certificate	Subject	Titolare
 	Text language is specified	La lingua del testo è specificata
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Il testo deve contrastare a sufficienza con lo sfondo per le persone ipovedenti. Controlla i colori a occhio o con uno strumento di contrasto.
 	Text only, keep images	Solo il testo, mantieni le immagini
+	Text recognition cancelled. {summary}	Riconoscimento del testo annullato. {summary}
 	Text recognition is already running	Il riconoscimento del testo è già in esecuzione
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Il riconoscimento del testo non è installato: mancano i file dei modelli. Reinstalla PdfCraft o imposta PDFCRAFT_MODELS sulla cartella che li contiene.
 	Text to find	Testo da trovare
@@ -2768,7 +2777,9 @@ calendar weekday	Th	Gi
 	The objects are already aligned.	Gli oggetti sono già allineati.
 	The operation failed.	L'operazione non è riuscita.
 	The order saved in the PDF needs tidying	L'ordine salvato nel PDF va riordinato
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Gli originali non vengono modificati. Un file con lo stesso nome nella cartella di destinazione viene mantenuto e il nuovo riceve un numero.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Le altre firme ({names}) segnaleranno che il documento è cambiato dopo la firma. Ricontrollale: nulla garantisce che restino valide.
+	The output folder can't be one of the folders being read, or contain one.	La cartella di destinazione non può essere una delle cartelle lette né contenerne una.
 	The page has changed; select the image again	La pagina è cambiata; seleziona di nuovo l'immagine
 	The pages already scanned were kept in the document.	Le pagine già acquisite sono state mantenute nel documento.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Le pagine sono state estratte ma non eliminate, perché il documento è cambiato mentre sceglievi una cartella.

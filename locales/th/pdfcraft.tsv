@@ -41,6 +41,7 @@
 	9 digit, A letter, O letter or digit, X any character	9 คือตัวเลข, A คือตัวอักษร, O คือตัวอักษรหรือตัวเลข, X คืออักขระใดก็ได้
 	; 1 page already had text	; มี 1 หน้าที่มีข้อความอยู่แล้ว
 	; failed: {list}	; ล้มเหลว: {list}
+	; skipped: {n}	; ข้าม: {n}
 	; {n} pages already had text	; มี {n} หน้าที่มีข้อความอยู่แล้ว
 	? of {n}	? จาก {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} คอมมิต, +{added} / −{deleted} บรรทัด (Δ {delta}), ไฟล์ไบนารี +{bin_added} / −{bin_deleted}, {first} – {last}
@@ -71,6 +72,8 @@
 	About	เกี่ยวกับ
 	About PdfCraft	เกี่ยวกับ PdfCraft
 	About {app}	เกี่ยวกับ {app}
+	about {h} h {m} min left	เหลือประมาณ {h} ชม. {m} นาที
+	about {n} min left	เหลือประมาณ {n} นาที
 	Accepted	ยอมรับแล้ว
 	Accessibility	การช่วยการเข้าถึง
 	Accessibility Checker	ตัวตรวจสอบการช่วยการเข้าถึง
@@ -131,6 +134,7 @@
 	Add drawing	เพิ่มภาพวาด
 	Add field	เพิ่มช่อง
 	Add file attachment	เพิ่มไฟล์แนบ
+	Add files or folders to recognize.	เพิ่มไฟล์หรือโฟลเดอร์ที่จะรู้จำข้อความ
 	Add files to combine	เพิ่มไฟล์ที่จะรวม
 	Add files…	เพิ่มไฟล์…
 	Add folder	เพิ่มโฟลเดอร์
@@ -1238,6 +1242,7 @@ key	Home	Home
 	In multiple files	ในหลายไฟล์
 	In streams that use LZW encoding, use Flate instead	ใช้ Flate แทนในสตรีมที่เข้ารหัสแบบ LZW
 	In this file	ในไฟล์นี้
+	Include subfolders	รวมโฟลเดอร์ย่อย
 	Includes unsaved changes	รวมการเปลี่ยนแปลงที่ยังไม่ได้บันทึก
 	Incorrect password. Try again.	รหัสผ่านไม่ถูกต้อง โปรดลองอีกครั้ง
 	Indent	เยื้อง
@@ -1365,6 +1370,7 @@ certificate	Key usage	การใช้งานกุญแจ
 	Left Header Text	ข้อความหัวกระดาษด้านซ้าย
 	Left out: {names}	ไม่รวม: {names}
 	Left:	ซ้าย:
+	less than a minute left	เหลือไม่ถึงหนึ่งนาที
 	LI must be a child of L	LI ต้องเป็นลูกของ L
 	Light	สว่าง
 	Light blue	ฟ้าอ่อน
@@ -1594,6 +1600,7 @@ calendar weekday	Mo	จ
 	No pages match those choices	ไม่มีหน้าที่ตรงกับตัวเลือกเหล่านั้น
 	No pages selected	ยังไม่ได้เลือกหน้า
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	ไม่พบไฟล์ PDF
 	No PDFs found in {folder}	ไม่พบ PDF ใน {folder}
 	No PDFs in this folder yet	ยังไม่มี PDF ในโฟลเดอร์นี้
 	No PDFs, images or text files found in {folder}	ไม่พบ PDF รูปภาพ หรือไฟล์ข้อความใน {folder}
@@ -1749,6 +1756,7 @@ animation effects	On	เปิด
 	Outline colour:	สีเส้นขอบ:
 	Output	ผลลัพธ์
 	Output appears here.	ผลลัพธ์จะแสดงที่นี่
+	Output folder	โฟลเดอร์ผลลัพธ์
 	Output intent: {list}	Output intent: {list}
 	Output preview	ตัวอย่างผลลัพธ์การพิมพ์
 	Oval	วงรี
@@ -2538,6 +2546,7 @@ certificate	Subject	เจ้าของใบรับรอง
 	Text language is specified	ระบุภาษาของข้อความแล้ว
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	ข้อความต้องมีความเปรียบต่างกับพื้นหลังเพียงพอสำหรับผู้มีสายตาเลือนราง ตรวจสอบสีด้วยตาหรือด้วยเครื่องมือวัดความเปรียบต่าง
 	Text only, keep images	เฉพาะข้อความ คงรูปภาพไว้
+	Text recognition cancelled. {summary}	ยกเลิกการรู้จำข้อความแล้ว {summary}
 	Text recognition is already running	การรู้จำข้อความกำลังทำงานอยู่แล้ว
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	ยังไม่ได้ติดตั้งการรู้จำข้อความ: ไม่พบไฟล์โมเดล โปรดติดตั้ง PdfCraft ใหม่ หรือตั้ง PDFCRAFT_MODELS ไปยังโฟลเดอร์ที่มีไฟล์เหล่านั้น
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	ยังไม่ได้ติดตั้งการรู้จำข้อความ: ไม่พบโมเดล (รัน `cargo xtask models` หรือตั้ง PDFCRAFT_MODELS)
@@ -2623,6 +2632,8 @@ calendar weekday	Th	พฤ
 	The metadata doesn't identify the file as {}	เมทาดาทาไม่ได้ระบุว่าไฟล์เป็น {}
 	The newest {n} of {total} PDFs	PDF ล่าสุด {n} จาก {total} ไฟล์
 	The operation failed.	การดำเนินการล้มเหลว
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	ไฟล์ต้นฉบับจะไม่ถูกเปลี่ยนแปลง ไฟล์ชื่อเดียวกันในโฟลเดอร์ผลลัพธ์จะถูกเก็บไว้ และไฟล์ใหม่จะได้รับหมายเลข
+	The output folder can't be one of the folders being read, or contain one.	โฟลเดอร์ผลลัพธ์ต้องไม่ใช่โฟลเดอร์ที่กำลังอ่าน และต้องไม่มีโฟลเดอร์เหล่านั้นอยู่ข้างใน
 	The page has changed; select the image again	หน้ามีการเปลี่ยนแปลง โปรดเลือกรูปภาพอีกครั้ง
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	แยกหน้าออกมาแล้วแต่ไม่ได้ลบ เพราะเอกสารเปลี่ยนแปลงระหว่างที่คุณเลือกโฟลเดอร์

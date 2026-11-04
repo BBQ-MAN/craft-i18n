@@ -41,6 +41,7 @@
 	; 1 page skipped	; 1 oldal kihagyva
 	; corrected {n} pages	; {n} oldal javítva
 	; failed: {list}	; nem sikerült: {list}
+	; skipped: {n}	; kihagyva: {n}
 	; {n} pages already had text	; {n} oldalon már volt szöveg
 	; {n} pages skipped	; {n} oldal kihagyva
 	? of {n}	? / {n}
@@ -72,6 +73,8 @@
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Az összefoglaló leírja a táblázat célját és elrendezését. Adj minden táblázathoz Summary attribútumot.
 	About PdfCraft	A PdfCraftról
 	About {app}	A(z) {app} névjegye
+	about {h} h {m} min left	kb. {h} óra {m} perc van hátra
+	about {n} min left	kb. {n} perc van hátra
 	Accepted	Elfogadva
 	Accepted by {printer}	{printer} elfogadta
 	Accessibility Checker	Akadálymentesség ellenőrzése
@@ -131,6 +134,7 @@
 	Add field	Mező hozzáadása
 	Add fields	Mezők hozzáadása
 	Add file attachment	Fájlmelléklet hozzáadása
+	Add files or folders to recognize.	Adjon hozzá felismerendő fájlokat vagy mappákat.
 	Add files to combine	Fájlok hozzáadása az egyesítéshez
 	Add files…	Fájlok hozzáadása…
 	Add folder	Mappa hozzáadása
@@ -1230,6 +1234,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Az LZW kódolású adatfolyamok Flate kódolása
 	In this file	Ebben a fájlban
 	Include revocation information when signing (LTV)	Visszavonási adatok beágyazása aláíráskor (LTV)
+	Include subfolders	Almappákkal együtt
 	Includes unsaved changes	Nem mentett módosításokat tartalmaz
 	Incompatible	Nem kompatibilis
 	Incorrect password. Try again.	Hibás jelszó. Próbáld újra.
@@ -1345,6 +1350,7 @@ key	Home	Home
 	Left-to-right text	Balról jobbra írt szöveg
 	Legacy text encoding	Régi szövegkódolás
 	Less	Less
+	less than a minute left	kevesebb mint egy perc van hátra
 	LI must be a child of L	Az LI az L gyermeke kell legyen
 	Light blue	Világoskék
 	Light theme	Világos téma
@@ -1572,6 +1578,7 @@ key	Home	Home
 	No pages match those choices	Egy oldal sem felel meg ezeknek a választásoknak
 	No pages selected	Nincs kijelölt oldal
 	No pages were scanned.	Egy oldal sem lett beolvasva.
+	No PDF files were found.	Nem található PDF-fájl.
 	No PDFs in this folder yet	Ebben a mappában még nincs PDF
 	No PDFs, images or text files found in {folder}	Nem található PDF, kép vagy szövegfájl itt: {folder}
 	No photo chosen	Nincs kiválasztott fénykép
@@ -1739,6 +1746,7 @@ animation effects	On	Be
 	Outline over page	Körvonal az oldalon
 	Outline view	Körvonalnézet
 	Output appears here.	A kimenet itt jelenik meg.
+	Output folder	Kimeneti mappa
 	Output intent: {list}	Kimeneti cél: {list}
 	Output preview	Kimenet előnézete
 	Oval	Ellipszis
@@ -2590,6 +2598,7 @@ action wizard	Start	Indítás
 	Text language is specified	A szöveg nyelve meg van adva
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	A szövegnek eléggé el kell ütnie a hátterétől a gyengén látók számára. Ellenőrizd a színeket szemmel vagy kontraszteszközzel.
 	Text only, keep images	Csak a szöveg, a képek maradnak
+	Text recognition cancelled. {summary}	A szövegfelismerés megszakítva. {summary}
 	Text recognition is already running	A szövegfelismerés már fut
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	A szövegfelismerés nincs telepítve: hiányoznak a modellfájljai. Telepítsd újra a PdfCraftot, vagy állítsd a PDFCRAFT_MODELS változót az őket tartalmazó mappára.
 	Text to find	Keresett szöveg
@@ -2680,7 +2689,9 @@ action wizard	Start	Indítás
 	The objects are already aligned.	Az objektumok már igazítva vannak.
 	The operation failed.	A művelet nem sikerült.
 	The order saved in the PDF needs tidying	A PDF-ben mentett sorrend rendbetételre szorul
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Az eredeti fájlok nem változnak. A kimeneti mappában lévő azonos nevű fájl megmarad, az új pedig sorszámot kap.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	A többi aláírás ({names}) jelezni fogja, hogy a dokumentum az aláírása után megváltozott. Ellenőrizze újra őket: semmi sem garantálja, hogy érvényesek maradnak.
+	The output folder can't be one of the folders being read, or contain one.	A kimeneti mappa nem lehet egyik beolvasott mappa sem, és nem tartalmazhat ilyet.
 	The page has changed; select the image again	Az oldal megváltozott; jelölje ki újra a képet
 	The pages already scanned were kept in the document.	A már beolvasott oldalak megmaradtak a dokumentumban.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Az oldalak kinyerése megtörtént, de nem lettek törölve, mert a dokumentum megváltozott, amíg mappát választottál.

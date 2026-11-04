@@ -40,6 +40,7 @@
 	9 digit, A letter, O letter or digit, X any character	9 angka, A huruf, O huruf atau angka, X karakter apa pun
 	; 1 page already had text	; 1 halaman sudah memiliki teks
 	; failed: {list}	; gagal: {list}
+	; skipped: {n}	; dilewati: {n}
 	; {n} pages already had text	; {n} halaman sudah memiliki teks
 	? of {n}	? dari {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} commit, +{added} / −{deleted} baris (Δ {delta}), +{bin_added} / −{bin_deleted} aset biner, {first} – {last}
@@ -76,6 +77,8 @@
 	A {} annotation isn't set to print, or is hidden	Anotasi {} tidak disetel untuk dicetak, atau disembunyikan
 	About PdfCraft	Tentang PdfCraft
 	About {app}	Tentang {app}
+	about {h} h {m} min left	sekitar {h} jam {m} menit lagi
+	about {n} min left	sekitar {n} menit lagi
 	Accepted	Diterima
 	Accepted by {printer}	Diterima oleh {printer}
 	Accessibility	Aksesibilitas
@@ -136,6 +139,7 @@
 	Add field	Tambahkan kolom
 	Add fields	Tambahkan kolom
 	Add file attachment	Tambahkan lampiran file
+	Add files or folders to recognize.	Tambahkan berkas atau folder untuk dikenali.
 	Add files to combine	Tambahkan file untuk digabung
 	Add files…	Tambahkan file…
 	Add folder	Tambahkan folder
@@ -1193,6 +1197,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Pada stream yang memakai pengodean LZW, gunakan Flate sebagai gantinya
 	In this file	Di file ini
 	Include revocation information when signing (LTV)	Sertakan informasi pencabutan saat menandatangani (LTV)
+	Include subfolders	Sertakan subfolder
 	Includes unsaved changes	Termasuk perubahan yang belum disimpan
 	Incorrect password. Try again.	Kata sandi salah. Coba lagi.
 	Indent	Indentasi
@@ -1313,6 +1318,7 @@ certificate	Key usage	Penggunaan kunci
 	Left Header Text	Teks Header Kiri
 	Left out: {names}	Dilewati: {names}
 	Less	Less
+	less than a minute left	kurang dari satu menit lagi
 	LI must be a child of L	LI harus menjadi anak dari L
 	Light blue	Biru muda
 	Light gray	Abu-abu muda
@@ -1525,6 +1531,7 @@ calendar weekday	Mo	Sen
 	No pages match those choices	Tidak ada halaman yang cocok dengan pilihan tersebut
 	No pages selected	Tidak ada halaman yang dipilih
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	Tidak ditemukan berkas PDF.
 	No PDFs found in {folder}	Tidak ada PDF yang ditemukan di {folder}
 	No PDFs in this folder yet	Belum ada PDF di folder ini
 	No PDFs, images or text files found in {folder}	Tidak ditemukan PDF, gambar atau file teks di {folder}
@@ -1684,6 +1691,7 @@ animation effects	On	Aktif
 	Outline	Kerangka
 	Outline colour:	Warna garis tepi:
 	Output appears here.	Keluaran akan muncul di sini.
+	Output folder	Folder keluaran
 	Output intent: {list}	Niat keluaran: {list}
 	Output preview	Pratinjau keluaran
 	Owner password (no restrictions apply)	Kata sandi pemilik (tidak ada pembatasan)
@@ -2454,6 +2462,7 @@ certificate	Subject	Subjek
 	Text language is specified	Bahasa teks sudah ditentukan
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Teks harus kontras cukup dengan latar belakangnya untuk orang dengan penglihatan rendah. Periksa warnanya dengan mata atau dengan alat kontras.
 	Text only, keep images	Hanya teks, pertahankan gambar
+	Text recognition cancelled. {summary}	Pengenalan teks dibatalkan. {summary}
 	Text recognition is already running	Pengenalan teks sudah berjalan
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Pengenalan teks belum terpasang: file modelnya hilang. Pasang ulang PdfCraft, atau atur PDFCRAFT_MODELS ke folder yang memuatnya.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Pengenalan teks belum terpasang: modelnya tidak ada (jalankan `cargo xtask models`, atau atur PDFCRAFT_MODELS).
@@ -2553,7 +2562,9 @@ calendar weekday	Th	Kam
 	The newest {n} of {total} PDFs	{n} PDF terbaru dari {total}
 	The operation failed.	Operasi gagal.
 	The order saved in the PDF needs tidying	The order saved in the PDF needs tidying
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Berkas asli tidak diubah. Berkas bernama sama di folder keluaran tetap disimpan, dan berkas baru diberi nomor.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Tanda tangan lainnya ({names}) akan melaporkan bahwa dokumen berubah setelah ditandatangani. Periksa kembali: tidak ada jaminan tanda tangan tersebut tetap valid.
+	The output folder can't be one of the folders being read, or contain one.	Folder keluaran tidak boleh salah satu folder yang dibaca, atau berisi salah satunya.
 	The page has changed; select the image again	Halaman telah berubah; pilih gambar lagi
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Halaman diekstrak tetapi tidak dihapus, karena dokumen berubah saat Anda memilih folder.

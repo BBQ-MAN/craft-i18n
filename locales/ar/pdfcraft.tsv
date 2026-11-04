@@ -41,6 +41,7 @@
 	; 1 page skipped	; تم تخطي صفحة واحدة
 	; corrected {n} pages	; تم تصحيح {n} صفحات
 	; failed: {list}	؛ فشل: {list}
+	; skipped: {n}	؛ تم التخطي: {n}
 	; {n} pages already had text	؛ {n} صفحات كان فيها نص بالفعل
 	; {n} pages skipped	; تم تخطي {n} صفحات
 	? of {n}	? من {n}
@@ -77,6 +78,8 @@
 	A {} annotation isn't set to print, or is hidden	التعليق التوضيحي {} غير مضبوط للطباعة أو مخفي
 	About PdfCraft	حول PdfCraft
 	About {app}	حول {app}
+	about {h} h {m} min left	حوالي {h} س {m} د متبقية
+	about {n} min left	حوالي {n} دقيقة متبقية
 	Accepted	مقبول
 	Accepted by {printer}	قبلته {printer}
 	Accessibility Checker	مدقق إمكانية الوصول
@@ -137,6 +140,7 @@
 	Add field	إضافة حقل
 	Add fields	إضافة الحقول
 	Add file attachment	إضافة ملف مرفق
+	Add files or folders to recognize.	أضف ملفات أو مجلدات للتعرّف على نصها.
 	Add files to combine	إضافة ملفات للدمج
 	Add files…	إضافة ملفات…
 	Add folder	إضافة مجلد
@@ -1272,6 +1276,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	في التدفقات التي تستخدم ترميز LZW، استخدام Flate بدلاً منه
 	In this file	في هذا الملف
 	Include revocation information when signing (LTV)	تضمين معلومات الإلغاء عند التوقيع (LTV)
+	Include subfolders	تضمين المجلدات الفرعية
 	Includes unsaved changes	يتضمن تغييرات غير محفوظة
 	Incompatible	غير متوافق
 	Incorrect password. Try again.	كلمة المرور غير صحيحة. حاول مجددًا.
@@ -1396,6 +1401,7 @@ certificate	Key usage	استخدام المفتاح
 	Left-to-right text	نص من اليسار إلى اليمين
 	Legacy text encoding	ترميز النص القديم
 	Less	أقل
+	less than a minute left	أقل من دقيقة متبقية
 	LI must be a child of L	LI يجب أن يكون ابنًا لـ L
 	Light blue	أزرق فاتح
 	Light theme	سمة فاتحة
@@ -1629,6 +1635,7 @@ calendar weekday	Mo	إثنين
 	No pages match those choices	لا صفحات تطابق هذه الاختيارات
 	No pages selected	لم تُحدد صفحات
 	No pages were scanned.	لم يتم مسح أي صفحة.
+	No PDF files were found.	لم يُعثر على ملفات PDF.
 	No PDFs found in {folder}	لم يُعثر على ملفات PDF في {folder}
 	No PDFs in this folder yet	لا توجد ملفات PDF في هذا المجلد بعد
 	No PDFs, images or text files found in {folder}	لم يُعثر على ملفات PDF أو صور أو ملفات نصية في {folder}
@@ -1809,6 +1816,7 @@ animation effects	On	مفعّلة
 	Outline over page	المخطط التفصيلي فوق الصفحة
 	Outline view	عرض المخطط التفصيلي
 	Output appears here.	يظهر الناتج هنا.
+	Output folder	مجلد الإخراج
 	Output intent: {list}	هدف الإخراج: {list}
 	Output preview	معاينة الإخراج
 	Owner password (no restrictions apply)	كلمة مرور المالك (لا تنطبق أي قيود)
@@ -2687,6 +2695,7 @@ certificate	Subject	صاحب الشهادة
 	Text language is specified	لغة النص محددة
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	يجب أن يتباين النص مع خلفيته بما يكفي لضعاف البصر. افحص الألوان بالعين أو بأداة تباين.
 	Text only, keep images	النص فقط، مع إبقاء الصور
+	Text recognition cancelled. {summary}	تم إلغاء التعرّف على النص. {summary}
 	Text recognition is already running	التعرف على النص قيد التشغيل بالفعل
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	التعرف على النص غير مثبت: ملفات نماذجه مفقودة. أعد تثبيت PdfCraft، أو اضبط PDFCRAFT_MODELS على المجلد الذي يحتويها.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	التعرف على النص غير مثبت: نماذجه مفقودة (شغّل `cargo xtask models`، أو اضبط PDFCRAFT_MODELS).
@@ -2799,7 +2808,9 @@ calendar weekday	Th	خميس
 	The objects are already aligned.	العناصر محاذاة بالفعل.
 	The operation failed.	فشلت العملية.
 	The order saved in the PDF needs tidying	يحتاج الترتيب المحفوظ في PDF إلى تنظيم
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	لا تتغير الملفات الأصلية. يُحتفظ بأي ملف يحمل الاسم نفسه في مجلد الإخراج، ويحصل الملف الجديد على رقم.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	ستُبلغ التوقيعات الأخرى ({names}) بأن المستند تغيّر بعد توقيعها. تحقق منها من جديد: لا شيء يضمن بقاءها صالحة.
+	The output folder can't be one of the folders being read, or contain one.	لا يمكن أن يكون مجلد الإخراج أحد المجلدات التي تتم قراءتها أو أن يحتوي على أحدها.
 	The page has changed; select the image again	تغيّرت الصفحة؛ حدّد الصورة مرة أخرى
 	The pages already scanned were kept in the document.	تم الاحتفاظ بالصفحات الممسوحة سابقاً في المستند.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	استُخرجت الصفحات لكنها لم تُحذف، لأن المستند تغيّر أثناء اختيارك مجلدًا.

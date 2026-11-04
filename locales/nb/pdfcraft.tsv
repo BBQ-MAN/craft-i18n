@@ -38,6 +38,7 @@
 	9 digit, A letter, O letter or digit, X any character	9 siffer, A bokstav, O bokstav eller siffer, X hvilket som helst tegn
 	; 1 page already had text	; 1 side hadde allerede tekst
 	; failed: {list}	; mislyktes: {list}
+	; skipped: {n}	; hoppet over: {n}
 	; {n} pages already had text	; {n} sider hadde allerede tekst
 	? of {n}	? av {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR-er, {commits} commits, +{added} / −{deleted} linjer (Δ {delta}), +{bin_added} / −{bin_deleted} binærfiler, {first} – {last}
@@ -69,6 +70,8 @@
 	A {} annotation isn't set to print, or is hidden	En {}-merknad er ikke satt til å skrives ut, eller er skjult
 	About PdfCraft	Om PdfCraft
 	About {app}	Om {app}
+	about {h} h {m} min left	omtrent {h} t {m} min igjen
+	about {n} min left	omtrent {n} min igjen
 	Accepted	Godtatt
 	Accessibility Checker	Tilgjengelighetskontroll
 	Accessibility Checker Options	Alternativer for tilgjengelighetskontroll
@@ -123,6 +126,7 @@
 	Add drawing	Legg til tegning
 	Add field	Legg til felt
 	Add file attachment	Legg til filvedlegg
+	Add files or folders to recognize.	Legg til filer eller mapper som skal gjenkjennes.
 	Add files to combine	Legg til filer som skal slås sammen
 	Add files…	Legg til filer…
 	Add folder	Legg til mappe
@@ -1093,6 +1097,7 @@ key	Home	Home
 	In multiple files	I flere filer
 	In streams that use LZW encoding, use Flate instead	Bruk Flate i stedet for LZW i strømmer som er LZW-kodet
 	In this file	I denne filen
+	Include subfolders	Ta med undermapper
 	Includes unsaved changes	Inkluderer ulagrede endringer
 	Incorrect password. Try again.	Feil passord. Prøv igjen.
 	Indent	Innrykk
@@ -1207,6 +1212,7 @@ certificate	Key usage	Nøkkelbruk
 	Left Header Text	Topptekst venstre
 	Left out: {names}	Utelatt: {names}
 	Less	Less
+	less than a minute left	mindre enn ett minutt igjen
 	LI must be a child of L	LI må være et barn av L
 	Light	Lyst
 	Light blue	Lyseblå
@@ -1401,6 +1407,7 @@ calendar weekday	Mo	ma
 	No pages match those choices	Ingen sider samsvarer med de valgene
 	No pages selected	Ingen sider valgt
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	Fant ingen PDF-filer.
 	No PDFs found in {folder}	Fant ingen PDF-er i {folder}
 	No PDFs in this folder yet	Ingen PDF-er i denne mappen ennå
 	No PDFs, images or text files found in {folder}	Fant ingen PDF-er, bilder eller tekstfiler i {folder}
@@ -1544,6 +1551,7 @@ animation effects	On	På
 	Outline	Disposisjon
 	Outline colour:	Kantfarge:
 	Output appears here.	Utdata vises her.
+	Output folder	Utdatamappe
 	Output intent: {list}	Utdataformål: {list}
 	Output preview	Forhåndsvisning av utdata
 	Oval	Ellipse
@@ -2271,6 +2279,7 @@ certificate	Subject	Emne
 	Text language is specified	Tekstspråk er angitt
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Tekst må ha nok kontrast mot bakgrunnen for folk med nedsatt syn. Kontroller fargene med øyet eller med et kontrastverktøy.
 	Text only, keep images	Bare tekst, behold bildene
+	Text recognition cancelled. {summary}	Tekstgjenkjenningen ble avbrutt. {summary}
 	Text recognition is already running	Tekstgjenkjenning kjører allerede
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Tekstgjenkjenning er ikke installert: modellfilene mangler. Installer PdfCraft på nytt, eller sett PDFCRAFT_MODELS til mappen som inneholder dem.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Tekstgjenkjenning er ikke installert: modellene mangler (kjør `cargo xtask models`, eller sett PDFCRAFT_MODELS).
@@ -2361,7 +2370,9 @@ calendar weekday	Th	to
 	The new file has no signature left and no earlier revision holding it.	Den nye filen har ingen signatur igjen og ingen tidligere revisjon som inneholder den.
 	The newest {n} of {total} PDFs	De nyeste {n} av {total} PDF-er
 	The operation failed.	Operasjonen mislyktes.
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Originalene endres ikke. En fil med samme navn i utdatamappen beholdes, og den nye får et nummer.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	De andre signaturene ({names}) vil melde at dokumentet ble endret etter at de signerte. Kontroller dem på nytt: ingenting sier at de forblir gyldige.
+	The output folder can't be one of the folders being read, or contain one.	Utdatamappen kan ikke være en av mappene som leses, eller inneholde en av dem.
 	The page has changed; select the image again	Siden er endret; velg bildet på nytt
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sidene ble trukket ut, men ikke slettet, fordi dokumentet ble endret mens du valgte en mappe.

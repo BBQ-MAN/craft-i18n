@@ -40,6 +40,7 @@
 	; 1 page skipped	; παραλείφθηκε 1 σελίδα
 	; corrected {n} pages	; διορθώθηκαν {n} σελίδες
 	; failed: {list}	· αποτυχία: {list}
+	; skipped: {n}	· παραλείφθηκαν: {n}
 	; {n} pages already had text	· {n} σελίδες περιείχαν ήδη κείμενο
 	; {n} pages skipped	; παραλείφθηκαν {n} σελίδες
 	? of {n}	? από {n}
@@ -71,6 +72,8 @@
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Η σύνοψη περιγράφει τον σκοπό και τη διάταξη του πίνακα. Προσθέστε ιδιότητα «Σύνοψη» σε κάθε πίνακα.
 	About PdfCraft	Σχετικά με το PdfCraft
 	About {app}	Σχετικά με το {app}
+	about {h} h {m} min left	απομένουν περίπου {h} ώ. {m} λ.
+	about {n} min left	απομένουν περίπου {n} λεπτά
 	Accepted	Αποδεκτό
 	Accepted by {printer}	Έγινε αποδεκτό από τον εκτυπωτή {printer}
 	Accessibility Checker	Έλεγχος προσβασιμότητας
@@ -130,6 +133,7 @@
 	Add field	Προσθήκη πεδίου
 	Add fields	Προσθήκη πεδίων
 	Add file attachment	Προσθήκη συνημμένου αρχείου
+	Add files or folders to recognize.	Προσθέστε αρχεία ή φακέλους για αναγνώριση.
 	Add files to combine	Προσθήκη αρχείων για συνδυασμό
 	Add files…	Προσθήκη αρχείων…
 	Add folder	Προσθήκη φακέλου
@@ -1188,6 +1192,7 @@ key	Home	Αρχή
 	In streams that use LZW encoding, use Flate instead	Χρήση Flate αντί για LZW στις ροές με κωδικοποίηση LZW
 	In this file	Σε αυτό το αρχείο
 	Include revocation information when signing (LTV)	Συμπερίληψη πληροφοριών ανάκλησης κατά την υπογραφή (LTV)
+	Include subfolders	Συμπερίληψη υποφακέλων
 	Includes unsaved changes	Περιλαμβάνει μη αποθηκευμένες αλλαγές
 	Incorrect password. Try again.	Λανθασμένος κωδικός πρόσβασης. Δοκιμάστε ξανά.
 	Indent	Αύξηση εσοχής
@@ -1299,6 +1304,7 @@ calendar date	June	Ιούνιος
 	Left-to-right text	Κείμενο από αριστερά προς δεξιά
 	Legacy text encoding	Παλαιά κωδικοποίηση κειμένου
 	Less	Less
+	less than a minute left	απομένει λιγότερο από ένα λεπτό
 	LI must be a child of L	Το LI πρέπει να είναι θυγατρικό στοιχείο του L
 	Light blue	Ανοιχτό μπλε
 	Light theme	Φωτεινό θέμα
@@ -1520,6 +1526,7 @@ calendar date	May	Μάιος
 	No pages match those choices	Καμία σελίδα δεν αντιστοιχεί σε αυτές τις επιλογές
 	No pages selected	Δεν επιλέχθηκαν σελίδες
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	Δεν βρέθηκαν αρχεία PDF.
 	No PDFs found in {folder}	Δεν βρέθηκαν PDF στον φάκελο {folder}
 	No PDFs in this folder yet	Δεν υπάρχουν ακόμη PDF σε αυτόν τον φάκελο
 	No PDFs, images or text files found in {folder}	Δεν βρέθηκαν PDF, εικόνες ή αρχεία κειμένου στο {folder}
@@ -1683,6 +1690,7 @@ animation effects	On	Ενεργά
 	Outline over page	Περίγραμμα πάνω από τη σελίδα
 	Outline view	Προβολή περιγράμματος
 	Output appears here.	Η έξοδος εμφανίζεται εδώ.
+	Output folder	Φάκελος εξόδου
 	Output intent: {list}	Προφίλ χρωματικής εξόδου: {list}
 	Output preview	Προεπισκόπηση εξόδου
 	Owner password (no restrictions apply)	Κωδικός κατόχου (χωρίς περιορισμούς)
@@ -2492,6 +2500,7 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	Text language is specified	Έχει καθοριστεί η γλώσσα του κειμένου
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Το κείμενο πρέπει να ξεχωρίζει επαρκώς από το φόντο για άτομα με μειωμένη όραση. Ελέγξτε τα χρώματα οπτικά ή με εργαλείο αντίθεσης.
 	Text only, keep images	Μόνο κείμενο, οι εικόνες μένουν
+	Text recognition cancelled. {summary}	Η αναγνώριση κειμένου ακυρώθηκε. {summary}
 	Text recognition is already running	Η αναγνώριση κειμένου εκτελείται ήδη
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Η αναγνώριση κειμένου δεν είναι εγκατεστημένη: λείπουν τα αρχεία μοντέλων. Εγκαταστήστε ξανά το PdfCraft ή ορίστε το PDFCRAFT_MODELS στον φάκελο που τα περιέχει.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Η αναγνώριση κειμένου δεν έχει εγκατασταθεί: λείπουν τα μοντέλα της (εκτελέστε `cargo xtask models` ή ορίστε το PDFCRAFT_MODELS).
@@ -2577,7 +2586,9 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	The objects are already aligned.	Τα αντικείμενα είναι ήδη στοιχισμένα.
 	The operation failed.	Η λειτουργία απέτυχε.
 	The order saved in the PDF needs tidying	Η σειρά που είναι αποθηκευμένη στο PDF χρειάζεται τακτοποίηση
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Τα πρωτότυπα δεν αλλάζουν. Ένα αρχείο με το ίδιο όνομα στον φάκελο εξόδου διατηρείται και το νέο παίρνει αριθμό.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Οι άλλες υπογραφές ({names}) θα αναφέρουν ότι το έγγραφο άλλαξε μετά την υπογραφή τους. Ελέγξτε τις ξανά: τίποτα δεν εγγυάται ότι θα παραμείνουν έγκυρες.
+	The output folder can't be one of the folders being read, or contain one.	Ο φάκελος εξόδου δεν μπορεί να είναι ένας από τους φακέλους που διαβάζονται ούτε να περιέχει κάποιον από αυτούς.
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Οι σελίδες εξήχθησαν αλλά δεν διαγράφηκαν, επειδή το έγγραφο τροποποιήθηκε ενώ επιλέγατε φάκελο.
 	the password is incorrect	ο κωδικός πρόσβασης είναι λανθασμένος

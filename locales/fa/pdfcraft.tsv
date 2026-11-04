@@ -37,6 +37,7 @@
 	9 digit, A letter, O letter or digit, X any character	۹: رقم؛ A: حرف؛ O: حرف یا رقم؛ X: هر نویسه
 	; 1 page already had text	؛ ۱ صفحه از قبل متن داشت
 	; failed: {list}	؛ ناموفق: {list}
+	; skipped: {n}	؛ ردشده: {n}
 	; {n} pages already had text	؛ {n} صفحه از قبل متن داشتند
 	? of {n}	؟ از {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR، {commits} کامیت، +{added} / −{deleted} خط (Δ {delta})، +{bin_added} / −{bin_deleted} دارایی دودویی، {first} – {last}
@@ -64,6 +65,8 @@
 	A {} annotation has no appearance stream	یادداشت {} جریان ظاهری ندارد
 	A {} annotation isn't set to print, or is hidden	یادداشت {} برای چاپ تنظیم نشده، یا پنهان است
 	About PdfCraft	درباره PdfCraft
+	about {h} h {m} min left	حدود {h} ساعت و {m} دقیقه مانده
+	about {n} min left	حدود {n} دقیقه مانده
 	Accepted	پذیرفته‌شده
 	Accessibility Checker	بررسی‌کننده دسترس‌پذیری
 	Accessibility Checker Options	گزینه‌های بررسی‌کننده دسترس‌پذیری
@@ -120,6 +123,7 @@
 	Add field	افزودن فیلد
 	Add fields	افزودن فیلد‌ها
 	Add file attachment	افزودن پیوست فایل
+	Add files or folders to recognize.	فایل‌ها یا پوشه‌هایی را برای شناسایی متن اضافه کنید.
 	Add files to combine	افزودن فایل‌ها برای ترکیب
 	Add files…	افزودن فایل‌ها…
 	Add folder	افزودن پوشه
@@ -1043,6 +1047,7 @@ key	Home	Home
 	In multiple files	در چندین فایل
 	In streams that use LZW encoding, use Flate instead	در جریان‌هایی که از کد‌گذاری LZW استفاده می‌کنند، به‌جای آن از Flate استفاده کنید
 	In this file	در این فایل
+	Include subfolders	شامل زیرپوشه‌ها
 	Includes unsaved changes	شامل تغییرات ذخیره‌نشده
 	Incorrect password. Try again.	گذرواژه نادرست است. دوباره تلاش کنید.
 	Indent	افزایش تورفتگی
@@ -1139,6 +1144,7 @@ certificate	Key usage	کاربرد کلید
 	Left Footer Text	متن پاصفحه چپ
 	Left Header Text	متن سرصفحه چپ
 	Left out: {names}	کنار گذاشته‌شده: {names}
+	less than a minute left	کمتر از یک دقیقه مانده
 	LI must be a child of L	LI باید فرزند L باشد
 	Light blue	آبی روشن
 	Light theme	پوسته روشن
@@ -1332,6 +1338,7 @@ calendar weekday	Mo	دو
 	No page has text: the document appears to be images of pages	هیچ صفحه ای متن ندارد: به نظر می‌رسد سند تصویر‌هایی از صفحه‌ها باشد
 	No pages match those choices	هیچ صفحه ای با آن گزینه‌ها مطابقت ندارد
 	No pages selected	هیچ صفح‌های انتخاب نشده
+	No PDF files were found.	هیچ فایل PDF پیدا نشد.
 	No PDFs found in {folder}	هیچ PDFی در {folder} یافت نشد
 	No PDFs in this folder yet	هنوز PDFی در این پوشه نیست
 	No PDFs, images or text files found in {folder}	هیچ فایل PDF، تصویر یا متنی در {folder} پیدا نشد
@@ -1464,6 +1471,7 @@ animation effects	On	روشن
 	Outdent	کاهش تورفتگی
 	Outline colour:	رنگ خط دور:
 	Output appears here.	خروجی اینجا نمایش داده می‌شود.
+	Output folder	پوشهٔ خروجی
 	Output intent: {list}	قصد خروجی: {list}
 	Output preview	پیش‌نمایش خروجی
 	Oval	بیضی
@@ -2082,6 +2090,7 @@ certificate	Subject	دارنده
 	Text is compared word by word; the differences are shown on the new file.	متن واژهبهواژه مقایسه می‌شود؛ تفاوت‌ها روی فایل جدید نشان داده می‌شوند.
 	Text language is specified	زبان متن مشخص شده است
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	متن باید برای افراد کمبینا بهاندازه کافی با پس‌زمینه کنتراست داشته باشد. رنگ‌ها را چشمی یا با ابزار کنتراست بررسی کنید.
+	Text recognition cancelled. {summary}	شناسایی متن لغو شد. {summary}
 	Text recognition is already running	باز‌شناسی متن از قبل در حال اجراست
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	تشخیص متن نصب نیست: فایل‌های مدل آن وجود ندارند. PdfCraft را دوباره نصب کنید، یا PDFCRAFT_MODELS را به پوشه ای که آن‌ها را دارد تنظیم کنید.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	تشخیص متن نصب نشده است: مدل‌های آن وجود ندارند (`cargo xtask models` را اجرا کنید یا PDFCRAFT_MODELS را تنظیم کنید).
@@ -2162,6 +2171,8 @@ calendar weekday	Th	پن
 	The newest {n} of {total} PDFs	{n} PDF جدید‌تر از {total} PDF
 	The operation failed.	عملیات ناموفق بود.
 	The order saved in the PDF needs tidying	ترتیب ذخیره‌شده در PDF نیاز به مرتب‌سازی دارد
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	فایل‌های اصلی تغییر نمی‌کنند. فایلی با همان نام در پوشهٔ خروجی حفظ می‌شود و فایل جدید یک شماره می‌گیرد.
+	The output folder can't be one of the folders being read, or contain one.	پوشهٔ خروجی نمی‌تواند یکی از پوشه‌هایی باشد که خوانده می‌شوند یا یکی از آن‌ها را در بر بگیرد.
 	The page has changed; select the image again	صفحه تغییر کرده است؛ تصویر را دوباره انتخاب کنید
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	صفحه‌ها استخراج شدند اما حذف نشدند، زیرا سند در حین انتخاب پوشه تغییر کرد.
 	the password is incorrect	گذرواژه نادرست است

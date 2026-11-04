@@ -46,6 +46,7 @@
 	; not PDF/A yet: {list} (open them in Apply PDF standards ▸ Save as PDF/A)	; noch nicht PDF/A: {list} (in PDF-Standards anwenden ▸ Als PDF/A speichern öffnen)
 	; not saved as {level}: {why}	; nicht als {level} gespeichert: {why}
 	; saved as {level}	; als {level} gespeichert
+	; skipped: {n}	; übersprungen: {n}
 	; {n} pages already had text	; {n} Seiten enthielten bereits Text
 	; {n} pages skipped	; {n} Seiten übersprungen
 	; {n} saved as PDF/A	; {n} als PDF/A gespeichert
@@ -85,6 +86,8 @@
 	A {} annotation isn't set to print, or is hidden	Eine Anmerkung vom Typ {} ist nicht zum Drucken markiert oder ist ausgeblendet
 	About PdfCraft	Über PdfCraft
 	About {app}	Über {app}
+	about {h} h {m} min left	noch etwa {h} Std. {m} Min.
+	about {n} min left	noch etwa {n} Min.
 	Accepted	Angenommen
 	Accepted by {printer}	Von {printer} angenommen
 	Accessibility Checker	Barrierefreiheitsprüfung
@@ -145,6 +148,7 @@
 	Add field	Feld hinzufügen
 	Add fields	Felder hinzufügen
 	Add file attachment	Dateianhang hinzufügen
+	Add files or folders to recognize.	Füge Dateien oder Ordner hinzu, deren Text erkannt werden soll.
 	Add files to combine	Dateien zum Zusammenführen hinzufügen
 	Add files…	Dateien hinzufügen…
 	Add folder	Ordner hinzufügen
@@ -1306,6 +1310,7 @@ key	Home	Pos1
 	In streams that use LZW encoding, use Flate instead	In LZW-codierten Streams stattdessen Flate verwenden
 	In this file	In dieser Datei
 	Include revocation information when signing (LTV)	Sperrinformationen beim Signieren einbetten (LTV)
+	Include subfolders	Unterordner einbeziehen
 	Includes unsaved changes	Enthält ungespeicherte Änderungen
 	Incompatible	Inkompatibel
 	Incorrect password. Try again.	Falsches Passwort. Versuch es noch einmal.
@@ -1422,6 +1427,7 @@ key	Home	Pos1
 	Left-to-right text	Text von links nach rechts
 	Legacy text encoding	Alte Textkodierung
 	Less	Less
+	less than a minute left	noch weniger als eine Minute
 	Letter	US-Letter
 	LI must be a child of L	LI muss ein untergeordnetes Element von L sein
 	Light blue	Hellblau
@@ -1658,6 +1664,7 @@ calendar weekday	Mo	Mo
 	No pages match those choices	Keine Seiten entsprechen dieser Auswahl
 	No pages selected	Keine Seiten ausgewählt
 	No pages were scanned.	Es wurden keine Seiten gescannt.
+	No PDF files were found.	Keine PDF-Dateien gefunden.
 	No PDFs found in {folder}	Keine PDFs in {folder} gefunden
 	No PDFs in this folder yet	Noch keine PDFs in diesem Ordner
 	No PDFs, images or text files found in {folder}	Keine PDFs, Bilder oder Textdateien in {folder} gefunden
@@ -1842,6 +1849,7 @@ animation effects	On	Ein
 	Outline over page	Pfade über Seite
 	Outline view	Pfadansicht
 	Output appears here.	Die Ausgabe erscheint hier.
+	Output folder	Ausgabeordner
 	Output intent: {list}	Output Intent: {list}
 	Output preview	Ausgabevorschau
 	Owner password (no restrictions apply)	Berechtigungspasswort (keine Einschränkungen)
@@ -2736,6 +2744,7 @@ certificate	Subject	Zertifikatsinhaber
 	Text language is specified	Textsprache ist angegeben
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Text muss sich für Menschen mit Sehschwäche ausreichend vom Hintergrund abheben. Prüfe die Farben mit bloßem Auge oder mit einem Kontrastwerkzeug.
 	Text only, keep images	Nur Text, Bilder bleiben
+	Text recognition cancelled. {summary}	Texterkennung abgebrochen. {summary}
 	Text recognition is already running	Die Texterkennung läuft bereits
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Die Texterkennung ist nicht installiert: ihre Modelldateien fehlen. Installiere PdfCraft neu oder setze PDFCRAFT_MODELS auf den Ordner, der sie enthält.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Die Texterkennung ist nicht installiert: Die Modelle fehlen (führe `cargo xtask models` aus oder setze PDFCRAFT_MODELS).
@@ -2853,7 +2862,9 @@ calendar weekday	Th	Do
 	The objects are already aligned.	Die Objekte sind bereits ausgerichtet.
 	The operation failed.	Der Vorgang ist fehlgeschlagen.
 	The order saved in the PDF needs tidying	Die im PDF gespeicherte Reihenfolge muss bereinigt werden
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Die Originale bleiben unverändert. Eine gleichnamige Datei im Ausgabeordner bleibt erhalten, die neue bekommt eine Nummer.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Die anderen Signaturen ({names}) werden melden, dass das Dokument nach ihrer Signatur geändert wurde. Prüfen Sie sie erneut: Nichts garantiert, dass sie gültig bleiben.
+	The output folder can't be one of the folders being read, or contain one.	Der Ausgabeordner darf keiner der gelesenen Ordner sein und keinen davon enthalten.
 	the page flattening model is not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds it)	das Modell zum Glätten von Seiten ist nicht installiert (installieren Sie PdfCraft neu oder setzen Sie PDFCRAFT_MODELS auf den Ordner, der es enthält)
 	The page has changed; select the image again	Die Seite hat sich geändert; wähle das Bild erneut aus
 	The pages already scanned were kept in the document.	Die bereits gescannten Seiten wurden im Dokument behalten.

@@ -44,6 +44,7 @@
 	; 1 page skipped	; přeskočena 1 stránka
 	; corrected {n} pages	; opraveno stránek: {n}
 	; failed: {list}	; selhalo: {list}
+	; skipped: {n}	; přeskočeno: {n}
 	; {n} pages already had text	; stránky, které už text obsahovaly: {n}
 	; {n} pages skipped	; přeskočeno stránek: {n}
 	? of {n}	? z {n}
@@ -80,6 +81,8 @@
 	A {} annotation isn't set to print, or is hidden	Anotace {} není nastavena k tisku nebo je skrytá
 	About PdfCraft	O aplikaci PdfCraft
 	About {app}	O aplikaci {app}
+	about {h} h {m} min left	zbývá asi {h} h {m} min
+	about {n} min left	zbývá asi {n} min
 	Accepted	Přijato
 	Accepted by {printer}	Přijato tiskárnou {printer}
 	Accessibility Checker	Kontrola přístupnosti
@@ -140,6 +143,7 @@
 	Add field	Přidat pole
 	Add fields	Přidat pole
 	Add file attachment	Přidat připojený soubor
+	Add files or folders to recognize.	Přidejte soubory nebo složky k rozpoznání.
 	Add files to combine	Přidejte soubory ke sloučení
 	Add files…	Přidat soubory…
 	Add folder	Přidat složku
@@ -1296,6 +1300,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Proudy kódované LZW kódovat metodou Flate
 	In this file	V tomto souboru
 	Include revocation information when signing (LTV)	Při podepisování vložit informace o odvolání (LTV)
+	Include subfolders	Zahrnout podsložky
 	Includes unsaved changes	Obsahuje neuložené změny
 	Incompatible	Nekompatibilní
 	Incorrect password. Try again.	Nesprávné heslo. Zkuste to znovu.
@@ -1423,6 +1428,7 @@ certificate	Key usage	Použití klíče
 	Left-to-right text	Text zleva doprava
 	Legacy text encoding	Starší kódování textu
 	Less	Less
+	less than a minute left	zbývá méně než minuta
 	LI must be a child of L	LI musí být potomkem L
 	Light blue	Světle modrá
 	Light gray	Světle šedý
@@ -1660,6 +1666,7 @@ calendar weekday	Mo	Po
 	No pages match those choices	Těmto volbám neodpovídají žádné stránky
 	No pages selected	Nejsou vybrány žádné stránky
 	No pages were scanned.	Nebyly naskenovány žádné stránky.
+	No PDF files were found.	Nebyly nalezeny žádné soubory PDF.
 	No PDFs found in {folder}	Ve složce {folder} nebyly nalezeny žádné soubory PDF
 	No PDFs in this folder yet	V této složce zatím nejsou žádné soubory PDF
 	No PDFs, images or text files found in {folder}	Ve složce {folder} nebyly nalezeny žádné soubory PDF, obrázky ani textové soubory
@@ -1844,6 +1851,7 @@ animation effects	On	Zapnuto
 	Outline over page	Obrysy přes stránku
 	Outline view	Zobrazení obrysů
 	Output appears here.	Zde se zobrazí výstup.
+	Output folder	Výstupní složka
 	Output intent: {list}	Výstupní záměr: {list}
 	Output preview	Náhled výstupu
 	Overlap:	Překryv:
@@ -2731,6 +2739,7 @@ certificate	Subject	Subjekt
 	Text language is specified	Jazyk textu je určen
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Text musí dostatečně kontrastovat s pozadím kvůli lidem se slabým zrakem. Zkontrolujte barvy okem nebo nástrojem pro kontrast.
 	Text only, keep images	Jen text, obrázky zůstanou
+	Text recognition cancelled. {summary}	Rozpoznávání textu bylo zrušeno. {summary}
 	Text recognition is already running	Rozpoznávání textu už běží
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Rozpoznávání textu není nainstalováno: chybí soubory jeho modelů. Přeinstalujte PdfCraft nebo nastavte PDFCRAFT_MODELS na složku, ve které jsou.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Rozpoznávání textu není nainstalováno: chybí jeho modely (spusťte `cargo xtask models` nebo nastavte PDFCRAFT_MODELS).
@@ -2845,7 +2854,9 @@ calendar weekday	Th	Čt
 	The objects are already aligned.	Objekty jsou již zarovnány.
 	The operation failed.	Operace selhala.
 	The order saved in the PDF needs tidying	Pořadí uložené v PDF je potřeba uklidit
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Originály se nemění. Soubor se stejným názvem ve výstupní složce zůstane zachován a nový dostane číslo.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Ostatní podpisy ({names}) budou hlásit, že se dokument po jejich podepsání změnil. Znovu je ověřte: nic nezaručuje, že zůstanou platné.
+	The output folder can't be one of the folders being read, or contain one.	Výstupní složka nemůže být žádnou z čtených složek ani žádnou z nich obsahovat.
 	The page has changed; select the image again	Stránka se změnila; vyberte obrázek znovu
 	The pages already scanned were kept in the document.	Již naskenované stránky zůstaly v dokumentu.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Stránky byly extrahovány, ale neodstraněny, protože se dokument změnil, zatímco jste vybírali složku.

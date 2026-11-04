@@ -42,6 +42,7 @@
 	; 1 page skipped	; 1 página ignorada
 	; corrected {n} pages	; {n} páginas corrigidas
 	; failed: {list}	; falharam: {list}
+	; skipped: {n}	; ignorados: {n}
 	; {n} pages already had text	; {n} páginas já continham texto
 	; {n} pages skipped	; {n} páginas ignoradas
 	? of {n}	? de {n}
@@ -80,6 +81,8 @@
 	A {} annotation isn't set to print, or is hidden	A anotação {} não está configurada para impressão ou está oculta
 	About PdfCraft	Sobre o PdfCraft
 	About {app}	Sobre o {app}
+	about {h} h {m} min left	faltam cerca de {h} h {m} min
+	about {n} min left	faltam cerca de {n} min
 	Accepted	Aceito
 	Accepted by {printer}	Aceito por {printer}
 	Accessibility Checker	Verificador de acessibilidade
@@ -141,6 +144,7 @@
 	Add field	Adicionar campo
 	Add fields	Adicionar campos
 	Add file attachment	Adicionar anexo de arquivo
+	Add files or folders to recognize.	Adicione arquivos ou pastas para reconhecer.
 	Add files to combine	Adicionar arquivos para combinar
 	Add files…	Adicionar arquivos…
 	Add folder	Adicionar pasta
@@ -1297,6 +1301,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Em fluxos que usam codificação LZW, usar Flate
 	In this file	Neste arquivo
 	Include revocation information when signing (LTV)	Incluir informações de revogação ao assinar (LTV)
+	Include subfolders	Incluir subpastas
 	Includes unsaved changes	Inclui alterações não salvas
 	Incompatible	Incompatível
 	Incorrect password. Try again.	Senha incorreta. Tente novamente.
@@ -1425,6 +1430,7 @@ certificate	Key usage	Uso da chave
 	Legacy text encoding	Codificação de texto legada
 	Legal	Ofício
 	Less	Less
+	less than a minute left	falta menos de um minuto
 	LI must be a child of L	LI deve ser filho de L
 	Light blue	Azul-claro
 	Light theme	Tema claro
@@ -1661,6 +1667,7 @@ calendar weekday	Mo	Seg
 	No pages match those choices	Nenhuma página corresponde a essas opções
 	No pages selected	Nenhuma página selecionada
 	No pages were scanned.	Nenhuma página foi digitalizada.
+	No PDF files were found.	Nenhum arquivo PDF encontrado.
 	No PDFs found in {folder}	Nenhum PDF encontrado em {folder}
 	No PDFs in this folder yet	Ainda não há PDFs nesta pasta
 	No PDFs, images or text files found in {folder}	Nenhum PDF, imagem ou arquivo de texto encontrado em {folder}
@@ -1843,6 +1850,7 @@ animation effects	On	Ativados
 	Outline over page	Contorno sobre a página
 	Outline view	Visualização de contorno
 	Output appears here.	A saída aparece aqui.
+	Output folder	Pasta de saída
 	Output intent: {list}	Intenção de saída: {list}
 	Output preview	Pré-visualização de saída
 	Owner password (no restrictions apply)	Senha do proprietário (nenhuma restrição se aplica)
@@ -2729,6 +2737,7 @@ certificate	Subject	Titular
 	Text language is specified	O idioma do texto está especificado
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	O texto deve contrastar suficientemente com o fundo para pessoas com baixa visão. Verifique as cores visualmente ou com uma ferramenta de contraste.
 	Text only, keep images	Só o texto, manter as imagens
+	Text recognition cancelled. {summary}	Reconhecimento de texto cancelado. {summary}
 	Text recognition is already running	O reconhecimento de texto já está em execução
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	O reconhecimento de texto não está instalado: faltam os arquivos dos modelos. Reinstale o PdfCraft ou defina PDFCRAFT_MODELS como a pasta que os contém.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	O reconhecimento de texto não está instalado: faltam os modelos (execute `cargo xtask models` ou defina PDFCRAFT_MODELS).
@@ -2846,7 +2855,9 @@ calendar weekday	Th	Qui
 	The objects are already aligned.	Os objetos já estão alinhados.
 	The operation failed.	A operação falhou.
 	The order saved in the PDF needs tidying	A ordem salva no PDF precisa de uma arrumação
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Os originais não são alterados. Um arquivo com o mesmo nome na pasta de saída é mantido, e o novo recebe um número.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	As outras assinaturas ({names}) vão indicar que o documento mudou depois que foram feitas. Verifique-as de novo: nada garante que continuem válidas.
+	The output folder can't be one of the folders being read, or contain one.	A pasta de saída não pode ser uma das pastas lidas nem conter uma delas.
 	The page has changed; select the image again	A página mudou; selecione a imagem novamente
 	The pages already scanned were kept in the document.	As páginas já digitalizadas foram mantidas no documento.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	As páginas foram extraídas, mas não excluídas, porque o documento mudou enquanto você escolhia uma pasta.

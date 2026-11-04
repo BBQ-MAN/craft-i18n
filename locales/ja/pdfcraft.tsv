@@ -44,6 +44,7 @@
 	; 1 page skipped	; 1 ページをスキップ
 	; corrected {n} pages	; {n} ページを補正
 	; failed: {list}	、失敗: {list}
+	; skipped: {n}	、スキップ: {n}
 	; {n} pages already had text	、{n} ページには既存のテキストがありました
 	; {n} pages skipped	; {n} ページをスキップ
 	? of {n}	?/{n}
@@ -75,6 +76,8 @@
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	概要は表の目的と構成を説明します。各表に Summary 属性を追加してください。
 	About PdfCraft	PdfCraft について
 	About {app}	{app}について
+	about {h} h {m} min left	残り約 {h} 時間 {m} 分
+	about {n} min left	残り約 {n} 分
 	Accepted	承認
 	Accepted by {printer}	{printer} が受け付けました
 	Accessibility Checker	アクセシビリティチェック
@@ -138,6 +141,7 @@
 	Add field	フィールドを追加
 	Add fields	フィールドを追加
 	Add file attachment	添付ファイルを追加
+	Add files or folders to recognize.	認識するファイルまたはフォルダーを追加してください。
 	Add files to combine	結合するファイルを追加
 	Add files…	ファイルを追加…
 	Add folder	フォルダーを追加
@@ -1292,6 +1296,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	LZW エンコードのストリームを Flate でエンコード
 	In this file	このファイル内
 	Include revocation information when signing (LTV)	署名時に失効情報を含める (LTV)
+	Include subfolders	サブフォルダーを含める
 	Includes unsaved changes	未保存の変更を含みます
 	Incompatible	互換性なし
 	Incorrect password. Try again.	パスワードが正しくありません。もう一度入力してください。
@@ -1406,6 +1411,7 @@ key	Home	Home
 	Left-to-right text	左から右へのテキスト
 	Legacy text encoding	レガシーテキストエンコーディング
 	Less	折りたたむ
+	less than a minute left	残り 1 分未満
 	LI must be a child of L	LI は L の子要素である必要があります
 	Light blue	水色
 	Light theme	ライトテーマ
@@ -1650,6 +1656,7 @@ key	Home	Home
 	No pages match those choices	条件に一致するページはありません
 	No pages selected	ページが選択されていません
 	No pages were scanned.	スキャンされたページはありません。
+	No PDF files were found.	PDF ファイルが見つかりませんでした。
 	No PDFs in this folder yet	このフォルダーにはまだ PDF がありません
 	No PDFs, images or text files found in {folder}	{folder} に PDF、画像、テキストファイルが見つかりません
 	No photo chosen	写真が選択されていません
@@ -1824,6 +1831,7 @@ animation effects	On	オン
 	Outline over page	ページ上にアウトライン
 	Outline view	アウトライン表示
 	Output appears here.	出力はここに表示されます。
+	Output folder	出力フォルダー
 	Output intent: {list}	出力インテント: {list}
 	Output preview	出力プレビュー
 	Owner password (no restrictions apply)	所有者パスワード（制限なし）
@@ -2707,6 +2715,7 @@ document scrollbar width	Standard	標準
 	Text language is specified	テキストの言語が指定されています
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	弱視の人が読めるよう、文字と背景に十分なコントラストが必要です。目視またはコントラスト確認ツールで確認してください。
 	Text only, keep images	テキストのみ(画像はそのまま)
+	Text recognition cancelled. {summary}	テキスト認識をキャンセルしました。{summary}
 	Text recognition is already running	テキスト認識はすでに実行中です
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	テキスト認識がインストールされていません。モデルファイルがありません。PdfCraft を再インストールするか、PDFCRAFT_MODELS にモデルファイルのあるフォルダーを設定してください。
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	テキスト認識がインストールされていません。必要なモデルがありません（`cargo xtask models` を実行するか、PDFCRAFT_MODELS を設定してください）。
@@ -2801,7 +2810,9 @@ document scrollbar width	Standard	標準
 	The objects are already aligned.	オブジェクトは既に揃っています。
 	The operation failed.	操作に失敗しました。
 	The order saved in the PDF needs tidying	PDF に保存された順序の整理が必要です
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	元のファイルは変更されません。出力フォルダーに同じ名前のファイルがある場合はそのまま残り、新しいファイルには番号が付きます。
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	ほかの署名（{names}）は、署名後に文書が変更されたと報告します。検証し直してください。有効なままである保証はありません。
+	The output folder can't be one of the folders being read, or contain one.	出力フォルダーには、読み込むフォルダー自体やそれを含むフォルダーは指定できません。
 	The page has changed; select the image again	ページが変更されました。画像をもう一度選択してください
 	The pages already scanned were kept in the document.	スキャン済みのページは文書に保持されています。
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	フォルダーを選択している間に文書が変更されたため、ページは抽出しましたが、削除はしていません。

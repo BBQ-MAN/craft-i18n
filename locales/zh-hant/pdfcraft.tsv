@@ -44,6 +44,7 @@
 	; 1 page skipped	; 已略過 1 頁
 	; corrected {n} pages	; 已校正 {n} 頁
 	; failed: {list}	；失敗：{list}
+	; skipped: {n}	；已略過：{n}
 	; {n} pages already had text	；{n} 頁已有文字
 	; {n} pages skipped	; 已略過 {n} 頁
 	? of {n}	?/{n}
@@ -72,6 +73,8 @@
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	摘要描述表格的用途和佈局。請為每個表格新增 Summary 屬性。
 	About PdfCraft	關於 PdfCraft
 	About {app}	關於 {app}
+	about {h} h {m} min left	剩餘約 {h} 小時 {m} 分鐘
+	about {n} min left	剩餘約 {n} 分鐘
 	Accepted	已接受
 	Accepted by {printer}	已被 {printer} 接受
 	Accessibility Checker	無障礙偵測工具
@@ -137,6 +140,7 @@
 	Add field	新增欄位
 	Add fields	新增欄位
 	Add file attachment	新增附件
+	Add files or folders to recognize.	新增要辨識的檔案或資料夾。
 	Add files to combine	新增要合併的檔案
 	Add files…	新增檔案…
 	Add folder	新增資料夾
@@ -1275,6 +1279,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	在使用 LZW 編碼的流中改用 Flate
 	In this file	在此檔案中
 	Include revocation information when signing (LTV)	簽署時包含撤銷資訊 (LTV)
+	Include subfolders	包含子資料夾
 	Includes unsaved changes	包含未儲存的變更
 	Incorrect password. Try again.	密碼不正確，請重試。
 	Indent	縮排
@@ -1386,6 +1391,7 @@ key	Home	Home
 	Left-to-right text	由左至右文字
 	Legacy text encoding	舊版文字編碼
 	Less	收起
+	less than a minute left	剩餘不到 1 分鐘
 	LI must be a child of L	LI 必須是 L 的子級
 	Light blue	淺藍色
 	Light gray	淺灰色
@@ -1617,6 +1623,7 @@ key	Home	Home
 	No pages match those choices	所選條件沒有相符的頁面
 	No pages selected	未選取任何頁面
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	找不到 PDF 檔案。
 	No PDFs in this folder yet	此資料夾中還沒有 PDF
 	No PDFs, images or text files found in {folder}	在 {folder} 中找不到 PDF、圖片或文字檔案
 	No photo chosen	未選擇相片
@@ -1786,6 +1793,7 @@ animation effects	On	開
 	Outline over page	頁面上疊加外框
 	Outline view	外框檢視
 	Output appears here.	輸出顯示在此處。
+	Output folder	輸出資料夾
 	Output intent: {list}	輸出意圖：{list}
 	Output preview	輸出預覽
 	Owner password (no restrictions apply)	所有者密碼（無限制）
@@ -2640,6 +2648,7 @@ document scrollbar width	Standard	標準
 	Text language is specified	已指定文字語言
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	文字與背景的對比度必須足夠，以便低視力人士閱讀。請目視或使用對比度工具檢驗顏色。
 	Text only, keep images	僅文字,保留圖片
+	Text recognition cancelled. {summary}	已取消文字辨識。{summary}
 	Text recognition is already running	文字識別已在執行
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	未安裝文字辨識：缺少模型檔案。請重新安裝 PdfCraft，或將 PDFCRAFT_MODELS 設定為包含這些檔案的資料夾。
 	Text to find	要尋找的文字
@@ -2728,7 +2737,9 @@ document scrollbar width	Standard	標準
 	The objects are already aligned.	物件已經對齊。
 	The operation failed.	操作失敗。
 	The order saved in the PDF needs tidying	PDF 中儲存的順序需要整理
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	原始檔案不會被變更。輸出資料夾中已有的同名檔案會保留，新檔案會加上編號。
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	其他簽章（{names}）將回報文件在簽署後已被變更。請重新驗證它們：無法保證它們仍然有效。
+	The output folder can't be one of the folders being read, or contain one.	輸出資料夾不能是正在讀取的資料夾之一，也不能包含其中之一。
 	The page has changed; select the image again	頁面已變更；請重新選取圖片
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	the password is incorrect	密碼不正確

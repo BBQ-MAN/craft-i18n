@@ -39,6 +39,7 @@
 	9 digit, A letter, O letter or digit, X any character	9 shifër, A shkronjë, O shkronjë ose shifër, X çdo karakter
 	; 1 page already had text	; 1 faqe kishte tashmë tekst
 	; failed: {list}	; dështoi: {list}
+	; skipped: {n}	; u anashkaluan: {n}
 	; {n} pages already had text	; {n} faqe kishin tashmë tekst
 	? of {n}	? nga {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} commit, +{added} / −{deleted} rreshta (Δ {delta}), +{bin_added} / −{bin_deleted} burime binare, {first} – {last}
@@ -71,6 +72,8 @@
 	About	Rreth
 	About PdfCraft	Rreth PdfCraft
 	About {app}	Rreth {app}
+	about {h} h {m} min left	kanë mbetur rreth {h} orë {m} min
+	about {n} min left	kanë mbetur rreth {n} min
 	Accepted	Pranuar
 	Accepted by {printer}	Pranuar nga {printer}
 	Accessibility	Qasshmëria
@@ -134,6 +137,7 @@
 	Add field	Shto fushë
 	Add fields	Shto fushat
 	Add file attachment	Shto bashkëngjitje skedari
+	Add files or folders to recognize.	Shtoni skedarë ose dosje për njohje.
 	Add files to combine	Shto skedarë për t'u bashkuar
 	Add files…	Shto skedarë…
 	Add folder	Shto dosje
@@ -1239,6 +1243,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	Në rrjedhat që përdorin kodimin LZW, përdor Flate në vend të tij
 	In this file	Në këtë skedar
 	Include revocation information when signing (LTV)	Përfshi informacionin e revokimit gjatë nënshkrimit (LTV)
+	Include subfolders	Përfshi nëndosjet
 	Includes unsaved changes	Përfshin ndryshime të paruajtura
 	Incorrect password. Try again.	Fjalëkalim i pasaktë. Provo përsëri.
 	Indent	Zhvendos djathtas
@@ -1360,6 +1365,7 @@ key	Home	Home
 	Left out: {names}	Lënë jashtë: {names}
 	Left:	Majtas:
 	Less	Less
+	less than a minute left	ka mbetur më pak se një minutë
 	LI must be a child of L	LI duhet të jetë fëmijë i L
 	Light	E çelët
 	Light blue	Blu e çelët
@@ -1589,6 +1595,7 @@ key	Home	Home
 	No pages match those choices	Asnjë faqe nuk përputhet me ato zgjedhje
 	No pages selected	Nuk është zgjedhur asnjë faqe
 	No pages were scanned.	No pages were scanned.
+	No PDF files were found.	Nuk u gjet asnjë skedar PDF.
 	No PDFs found in {folder}	Nuk u gjetën PDF në {folder}
 	No PDFs in this folder yet	Ende nuk ka PDF në këtë dosje
 	No PDFs, images or text files found in {folder}	Nuk u gjetën PDF, imazhe ose skedarë teksti në {folder}
@@ -1748,6 +1755,7 @@ animation effects	On	Aktiv
 	Outline colour:	Outline colour:
 	Output	Dalja
 	Output appears here.	Dalja shfaqet këtu.
+	Output folder	Dosja e daljes
 	Output intent: {list}	Qëllimi i daljes: {list}
 	Output preview	Pamja paraprake e daljes
 	Oval	Ovale
@@ -2556,6 +2564,7 @@ certificate	Subject	Subjekti
 	Text language is specified	Gjuha e tekstit është caktuar
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Teksti duhet të kontrastojë mjaftueshëm me sfondin për personat me shikim të dobët. Kontrolloni ngjyrat me sy ose me një mjet kontrasti.
 	Text only, keep images	Vetëm teksti, ruaji imazhet
+	Text recognition cancelled. {summary}	Njohja e tekstit u anulua. {summary}
 	Text recognition is already running	Njohja e tekstit është tashmë në punë
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Njohja e tekstit nuk është e instaluar: mungojnë skedarët e modelit. Instaloni përsëri PdfCraft, ose vendosni PDFCRAFT_MODELS te dosja që i përmban.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Njohja e tekstit nuk është e instaluar: mungojnë modelet e saj (ekzekutoni `cargo xtask models`, ose caktoni PDFCRAFT_MODELS).
@@ -2633,7 +2642,9 @@ certificate	Subject	Subjekti
 	The newest {n} of {total} PDFs	{n} PDF-të më të reja nga {total}
 	The operation failed.	Veprimi dështoi.
 	The order saved in the PDF needs tidying	The order saved in the PDF needs tidying
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Origjinalet nuk ndryshohen. Një skedar me të njëjtin emër në dosjen e daljes ruhet, dhe i riu merr një numër.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Nënshkrimet e tjera ({names}) do të raportojnë se dokumenti ndryshoi pasi ato u nënshkruan. Kontrollojini sërish: asgjë nuk garanton se mbeten të vlefshme.
+	The output folder can't be one of the folders being read, or contain one.	Dosja e daljes nuk mund të jetë një nga dosjet që lexohen, as të përmbajë ndonjë prej tyre.
 	The page has changed; select the image again	Faqja ka ndryshuar; zgjidh sërish imazhin
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Faqet u nxorën por nuk u fshinë, sepse dokumenti ndryshoi ndërsa zgjidhnit një dosje.

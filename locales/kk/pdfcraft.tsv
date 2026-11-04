@@ -40,6 +40,7 @@
 	; 1 page skipped	; 1 бет өткізіліп жіберілді
 	; corrected {n} pages	; {n} бет түзетілді
 	; failed: {list}	; сәтсіз: {list}
+	; skipped: {n}	; өткізілді: {n}
 	; {n} pages already had text	; {n} бетте мәтін бұрыннан бар еді
 	; {n} pages skipped	; {n} бет өткізіліп жіберілді
 	? of {n}	?/{n}
@@ -71,6 +72,8 @@
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Түйіндеме кестенің мақсаты мен құрылысын сипаттайды. Әр кестеге Summary атрибутын қосыңыз.
 	About PdfCraft	PdfCraft туралы
 	About {app}	{app} туралы
+	about {h} h {m} min left	шамамен {h} сағ {m} мин қалды
+	about {n} min left	шамамен {n} мин қалды
 	Accepted	Қабылданды
 	Accepted by {printer}	{printer} қабылдады
 	Accessibility Checker	Қолжетімділік тексеруіші
@@ -130,6 +133,7 @@
 	Add field	Өріс қосу
 	Add fields	Өрістерді қосу
 	Add file attachment	Файл тіркемесін қосу
+	Add files or folders to recognize.	Танылатын файлдарды немесе қалталарды қосыңыз.
 	Add files to combine	Біріктіруге файлдар қосу
 	Add files…	Файлдарды қосу…
 	Add folder	Қалта қосу
@@ -1221,6 +1225,7 @@ key	Home	Home
 	In streams that use LZW encoding, use Flate instead	LZW кодталған ағындарда оның орнына Flate қолдану
 	In this file	Осы файлда
 	Include revocation information when signing (LTV)	Қол қою кезінде кері шақыру туралы мәліметті қосу (LTV)
+	Include subfolders	Ішкі қалталарды қосу
 	Includes unsaved changes	Сақталмаған өзгерістері бар
 	Incompatible	Үйлесімсіз
 	Incorrect password. Try again.	Құпиясөз дұрыс емес. Қайталап көріңіз.
@@ -1336,6 +1341,7 @@ calendar date	June	Маусым
 	Left-to-right text	Солдан оңға мәтін
 	Legacy text encoding	Ескі мәтін кодтауы
 	Less	Азырақ
+	less than a minute left	бір минуттан аз қалды
 	LI must be a child of L	LI L ішінде болуы тиіс
 	Light blue	Ашық көк
 	Light theme	Ашық тема
@@ -1560,6 +1566,7 @@ calendar date	May	Мамыр
 	No pages match those choices	Ешбір бет бұл таңдауларға сәйкес келмейді
 	No pages selected	Беттер таңдалмады
 	No pages were scanned.	Бірде-бір бет сканерленген жоқ.
+	No PDF files were found.	PDF файлдары табылмады.
 	No PDFs found in {folder}	{folder} ішінен ешбір PDF табылмады
 	No PDFs in this folder yet	Бұл қалтада әзірге PDF файлдары жоқ
 	No PDFs, images or text files found in {folder}	{folder} қалтасынан PDF, сурет не мәтін файлдары табылмады
@@ -1730,6 +1737,7 @@ animation effects	On	Қосулы
 	Outline over page	Бет үстіндегі контур
 	Outline view	Контур көрінісі
 	Output appears here.	Шығыс осында пайда болады.
+	Output folder	Шығыс қалтасы
 	Output intent: {list}	Шығыс профилі: {list}
 	Output preview	Шығысты алдын ала көру
 	Owner password (no restrictions apply)	Иелік құпиясөзі (шектеулер қолданылмайды)
@@ -2569,6 +2577,7 @@ certificate	Subject	Субъект
 	Text language is specified	Мәтін тілі көрсетілген
 	Text must contrast enough with its background for people with low vision. Check the colours by eye or with a contrast tool.	Мәтін нашар көретін адамдар үшін фонмен жеткілікті түрде контрасттануы тиіс. Түстерді көзбен немесе контраст құралымен тексеріңіз.
 	Text only, keep images	Тек мәтін, суреттер өзгермейді
+	Text recognition cancelled. {summary}	Мәтінді тану тоқтатылды. {summary}
 	Text recognition is already running	Мәтінді тану қазіргі уақытта орындалуда
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Мәтінді тану орнатылмаған: модель файлдары жоқ. PdfCraft қайта орнатыңыз немесе PDFCRAFT_MODELS айнымалысына олар жатқан қалтаны көрсетіңіз.
 	Text to find	Ізделетін мәтін
@@ -2658,7 +2667,9 @@ certificate	Subject	Субъект
 	The objects are already aligned.	Нысандар тураланған.
 	The operation failed.	Операция сәтсіз аяқталды.
 	The order saved in the PDF needs tidying	PDF-те сақталған ретті ретке келтіру керек
+	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Түпнұсқалар өзгермейді. Шығыс қалтасындағы аттас файл сақталады, ал жаңасына нөмір беріледі.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Басқа қолтаңбалар ({names}) құжат қол қойылғаннан кейін өзгергенін хабарлайды. Оларды қайта тексеріңіз: жарамды болып қалатынына кепілдік жоқ.
+	The output folder can't be one of the folders being read, or contain one.	Шығыс қалтасы оқылатын қалталардың бірі бола алмайды және олардың ешбірін қамти алмайды.
 	The page has changed; select the image again	Бет өзгерді; суретті қайта таңдаңыз
 	The pages already scanned were kept in the document.	Сканерленген беттер құжатта сақталды.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Беттер шығарып алынды, бірақ жойылмады, себебі сіз қалта таңдап жатқанда құжат өзгерді.
