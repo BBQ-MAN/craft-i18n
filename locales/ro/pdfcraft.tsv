@@ -58,19 +58,25 @@
 	a field named {name} already exists	există deja un câmp numit {name}
 	A font isn't embedded	Un font nu este încorporat
 	A form field has additional actions	Un câmp de formular are acțiuni suplimentare
+	A form XObject refers to a page of another file (reference XObject)	Un XObject de formular face referire la o pagină din alt fișier (XObject de referință)
 	A form XObject with marked content (MCIDs) is drawn {n} times	Un XObject de formular cu conținut marcat (MCID) este desenat de {n} ori
+	A graphics state sets an opacity below 1	O stare grafică setează o opacitate sub 1
+	A graphics state uses a soft mask	O stare grafică folosește o mască soft
+	A graphics state uses the {} blend mode	O stare grafică folosește modul de amestecare {}
 	a header cell with no Scope, in a table that doesn't use Headers	o celulă de antet fără Scope, într-un tabel care nu folosește Headers
 	A link	Un link
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Un logo sau un nume în stânga filelor, unde o bară de titlu ar afișa unul: al PdfCraft sau al companiei tale.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
 	A picture covers page {pages} (a scan?), so the background won't show there.	O imagine acoperă pagina {pages} (o scanare?), deci fundalul nu se va vedea acolo.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un fișier PNG sau SVG. Este citit din acest loc la fiecare pornire a PdfCraft.
+	A PrinterMark annotation overlaps the TrimBox or ArtBox	O adnotare PrinterMark se suprapune peste TrimBox sau ArtBox
 	A script	Un script
 	a second {} in its table	un al doilea {} în tabelul său
 	A selected field has no widget on any page, so the fields can't be edited together.	Un câmp selectat nu are widget pe nicio pagină, așa că acele câmpuri nu pot fi editate împreună.
 	A setting isn't valid	O setare nu este validă
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	O semnătură care face parte din conținutul unei pagini, ca pe o pagină scanată, nu este un câmp sau o adnotare, așa că nu poate fi eliminată separat, iar PdfCraft nu șterge părți dintr-o pagină pentru a o ascunde. Pentru a o elimina, anonimizați zona respectivă (Anonimizare) sau, dacă semnătura este o imagine separată, ștergeți imaginea cu Editare PDF.
 	A stream refers to an external file	Un flux face referire la un fișier extern
+	A stream uses JBIG2 compression	Un flux folosește compresia JBIG2
 	A stream uses LZW compression	Un flux folosește comprimare LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Un rezumat descrie scopul și structura tabelului. Adăugați un atribut Summary fiecărui tabel.
 	a table has 1 to {max} columns	un tabel are între 1 și {max} coloane
@@ -79,6 +85,7 @@
 	A {} annotation has additional actions	O adnotare {} are acțiuni suplimentare
 	A {} annotation has no appearance stream	O adnotare {} nu are flux de aspect
 	A {} annotation isn't set to print, or is hidden	O adnotare {} nu este setată pentru imprimare sau este ascunsă
+	A {} annotation lies within the BleedBox	O adnotare {} se află în BleedBox
 	About	Despre
 	About PdfCraft	Despre PdfCraft
 	About {app}	Despre {app}
@@ -261,7 +268,9 @@
 	an Aruba account needs its domain (the "dominio" Aruba gives with the account): enter it	un cont Aruba are nevoie de domeniul său („dominio” pe care Aruba îl furnizează împreună cu contul): introduceți-l
 	An embedded file has no AFRelationship	Un fișier încorporat nu are AFRelationship
 	An image asks to be interpolated	O imagine cere interpolare
+	An image has a soft mask	O imagine are o mască soft
 	An image has alternates or OPI information	O imagine are alternative sau informații OPI
+	An image or form has OPI information	O imagine sau un formular are informații OPI
 	An open-source PDF workbench — local, private, and scriptable.	Un spațiu de lucru PDF open-source: local, privat și scriptabil.
 	An optional content configuration has an AS entry	O configurație de conținut opțional are o intrare AS
 	and {n} more	și încă {n}
@@ -617,6 +626,8 @@ certificate	Basic constraints	Constrângeri de bază
 	Content copying	Copierea conținutului
 	Content copying for accessibility	Copierea conținutului pentru accesibilitate
 	Content Streams	Fluxuri de conținut
+	Content uses DeviceRGB colour: PDF/X-1a allows only CMYK, gray and spot colour	Conținutul folosește culoare DeviceRGB: PDF/X-1a permite doar CMYK, gri și culori spot
+	Content uses {} colour, which doesn't match the output intent's colour space	Conținutul folosește culoare {}, care nu corespunde spațiului de culoare al intenției de ieșire
 	Continue	Continuare
 	Continue scanning	Continue scanning
 	Continue scanning fronts	Continue scanning fronts
@@ -813,6 +824,7 @@ key	Delete	Delete
 	Detected {n} form fields	Au fost detectate {n} câmpuri de formular
 	Device colour is used, but there is no PDF/A output intent	Se folosește culoare de dispozitiv, dar nu există intenție de ieșire PDF/A
 	Device library (PKCS #11)	Bibliotecă dispozitiv (PKCS #11)
+	Device-independent colour is used, so the output intent needs an embedded profile	Se folosește culoare independentă de dispozitiv, deci intenția de ieșire necesită un profil încorporat
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	Se folosește DeviceCMYK, dar intenția de ieșire PDF/A nu este un profil CMYK
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	Se folosește DeviceCMYK: necesită o intenție de ieșire CMYK (nu se adaugă automat)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	Se folosește DeviceRGB, dar intenția de ieșire PDF/A nu este un profil RGB
@@ -2045,6 +2057,7 @@ animation effects	On	Activate
 	PDF version	Versiune PDF
 	PDF, images and text	PDF, imagini și text
 	PDF/A…	PDF/A…
+	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft nu poate verifica încă această semnătură: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft nu s-a închis normal. Aceste documente aveau modificări salvate automat:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft desenează fără procesor grafic, așa că poate fi lent. Actualizarea driverului plăcii video poate ajuta.
@@ -2862,6 +2875,7 @@ calendar weekday	Th	Jo
 	The document changed while you were choosing a file, so nothing was changed.	Documentul s-a modificat în timp ce alegeați un fișier, așa că nu s-a schimbat nimic.
 	The document changed while you were editing field properties.	Documentul s-a modificat în timp ce editați proprietățile câmpului.
 	The document couldn't be prepared	Documentul nu a putut fi pregătit
+	The document doesn't say whether it is trapped (Trapped)	Documentul nu precizează dacă are trapping (Trapped)
 	The document has additional actions (/AA)	Documentul are acțiuni suplimentare (/AA)
 	The document has been altered or corrupted since the signature was applied.	Documentul a fost modificat sau deteriorat după aplicarea semnăturii.
 	The document has been altered or corrupted since the timestamp was applied.	Documentul a fost modificat sau deteriorat după aplicarea marcajului temporal.
@@ -2876,6 +2890,8 @@ calendar weekday	Th	Jo
 	The document has no tags (structure tree)	Documentul nu are etichete (arbore de structură)
 	The document has no title	Documentul nu are titlu
 	The document has no XMP metadata	Documentul nu are metadate XMP
+	The document information and the metadata name different PDF/X versions	Informațiile documentului și metadatele indică versiuni PDF/X diferite
+	The document information doesn't identify the file as {}	Informațiile documentului nu identifică fișierul ca {}
 	The document is encrypted	Documentul este criptat
 	The document is no longer open.	Documentul nu mai este deschis.
 	the document is protected by a password	documentul este protejat cu parolă
@@ -2910,6 +2926,7 @@ calendar weekday	Th	Jo
 	The file has a reference XObject (Ref)	Fișierul are un XObject de referință (Ref)
 	The file is encrypted but its encryption dictionary has no permissions (P)	Fișierul este criptat, dar dicționarul său de criptare nu are permisiuni (P)
 	The file is PDF {v}, not PDF 2.0	Fișierul este PDF {v}, nu PDF 2.0
+	The file trailer has no document ID	Trailerul fișierului nu are ID de document
 	the first heading is an H{n}; headings should not skip levels	primul titlu este un H{n}; titlurile nu ar trebui să sară niveluri
 	the first row number can be at most {max}	numărul primului rând poate fi cel mult {max}
 	The font {} isn't embedded	Fontul {} nu este încorporat
@@ -2934,6 +2951,7 @@ calendar weekday	Th	Jo
 	The metadata has no language: the document sets none (Lang) and the metadata no xml:lang	Metadatele nu au limbă: documentul nu setează niciuna (Lang), iar metadatele nu au xml:lang
 	The metadata has no PDF/UA revision year (pdfuaid:rev)	Metadatele nu au anul reviziei PDF/UA (pdfuaid:rev)
 	The metadata has no title (dc:title)	Metadatele nu au titlu (dc:title)
+	The metadata has no {}	Metadatele nu au {}
 	The metadata identifies the file as PDF/UA-{n}, not PDF/UA-{want}	Metadatele identifică fișierul ca PDF/UA-{n}, nu PDF/UA-{want}
 	the name is not a plain file name	numele nu este un nume simplu de fișier
 	The new file has no signature left and no earlier revision holding it.	Fișierul nou nu mai are nicio semnătură și nicio revizie anterioară care să o conțină.
@@ -2943,7 +2961,16 @@ calendar weekday	Th	Jo
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Originalele nu se modifică. Un fișier cu același nume din folderul de ieșire este păstrat, iar cel nou primește un număr.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Celelalte semnături ({names}) vor raporta că documentul s-a modificat după semnare. Verificați-le din nou: nimic nu garantează că rămân valide.
 	The output folder can't be one of the folders being read, or contain one.	Folderul de ieșire nu poate fi unul dintre folderele citite și nici nu poate conține unul dintre ele.
+	The output intent's profile describes {} colour, but PDF/X-1a needs a CMYK printing condition	Profilul intenției de ieșire descrie culoare {}, dar PDF/X-1a necesită o condiție de imprimare CMYK
+	The output intent's profile describes {} colour; it must be gray, RGB or CMYK	Profilul intenției de ieșire descrie culoare {}; trebuie să fie gri, RGB sau CMYK
+	The output intent's profile has /N {}, which doesn't match its colour space	Profilul intenției de ieșire are /N {}, care nu corespunde spațiului său de culoare
+	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	Profilul intenției de ieșire nu are transformare din dispozitiv în PCS (AToB1 sau grayTRC)
+	The output intent's profile isn't a valid ICC profile	Profilul intenției de ieșire nu este un profil ICC valid
+	The output intent's profile isn't an output (printer) profile	Profilul intenției de ieșire nu este un profil de ieșire (de imprimantă)
+	The page has both a TrimBox and an ArtBox	Pagina are atât TrimBox, cât și ArtBox
 	The page has changed; select the image again	Pagina s-a schimbat; selectați din nou imaginea
+	The page has neither a TrimBox nor an ArtBox	Pagina nu are nici TrimBox, nici ArtBox
+	The page has no valid MediaBox	Pagina nu are un MediaBox valid
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Paginile au fost extrase, dar nu șterse, deoarece documentul s-a modificat în timp ce alegeați un folder.
 	the password is incorrect	parola este incorectă
@@ -2954,6 +2981,9 @@ calendar weekday	Th	Jo
 	The passwords do not match.	Parolele nu se potrivesc.
 	The passwords don't match.	Parolele nu se potrivesc.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Fonturile de text PDF nu pot desena „{c}” ({code}). Alegeți un text acceptat.
+	The PDF/X output intent has neither an embedded profile nor a characterization in the ICC registry	Intenția de ieșire PDF/X nu are nici un profil încorporat, nici o caracterizare din registrul ICC
+	The PDF/X output intent has no embedded profile (DestOutputProfile)	Intenția de ieșire PDF/X nu are profil încorporat (DestOutputProfile)
+	The PDF/X output intent has no OutputConditionIdentifier	Intenția de ieșire PDF/X nu are OutputConditionIdentifier
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN-ul ajunge doar la card; PdfCraft nu îl păstrează.
 	The PIN is incorrect.	Codul PIN este incorect.
 	The preview could not be shown.	The preview could not be shown.
@@ -3054,19 +3084,26 @@ calendar weekday	Th	Jo
 	The timestamp's byte range does not match the file.	Intervalul de octeți al marcajului temporal nu se potrivește cu fișierul.
 	The title in the metadata and the document information differ	Titlul din metadate diferă de cel din informațiile documentului
 	the title must not be empty	titlul nu poate fi gol
+	The Trapped key and the metadata's pdf:Trapped disagree	Cheia Trapped și pdf:Trapped din metadate nu concordă
 	The value is shown as typed.	Valoarea se afișează așa cum a fost scrisă.
 	The viewer preferences have no DisplayDocTitle entry	Preferințele de vizualizare nu au intrarea DisplayDocTitle
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Fereastra ar trebui să afișeze un titlu cu sens, nu numele fișierului. Setați un titlu și Vizualizare inițială > Afișare: Titlul documentului.
 	The window shows the file name, not the title (Initial View > Show)	Fereastra afișează numele fișierului, nu titlul (Vizualizare inițială > Afișare)
 	The Windows store's digital IDs couldn't be listed: {e}	ID-urile digitale din depozitul Windows nu au putut fi listate: {e}
 	The XFA form requires dynamic rendering (dynamicRender)	Formularul XFA necesită randare dinamică (dynamicRender)
+	The {} colour space isn't allowed: PDF/X-1a allows only CMYK, gray and spot colour	Spațiul de culoare {} nu este permis: PDF/X-1a permite doar CMYK, gri și culori spot
+	The {} extends beyond the BleedBox	{} depășește BleedBox
+	The {} extends beyond the CropBox	{} depășește CropBox
+	The {} extends beyond the MediaBox	{} depășește MediaBox
 	Theme	Temă
 	There are no other pages in that range.	Nu există alte pagini în acest interval.
 	there are no pages to print	nu există pagini de imprimat
 	There are no redaction marks (mark text, areas or pages first)	Nu există marcaje de anonimizare (marcați întâi text, zone sau pagini)
 	There are no redaction marks to apply	Nu există marcaje de anonimizare de aplicat
 	there are no redaction marks to apply	nu există marcaje de anonimizare de aplicat
+	There is more than one PDF/X output intent	Există mai multe intenții de ieșire PDF/X
 	There is no folder to save the digital ID in.	Nu există niciun folder în care să se salveze ID-ul digital.
+	There is no PDF/X output intent (GTS_PDFX)	Nu există nicio intenție de ieșire PDF/X (GTS_PDFX)
 	These files can't be read, so they won't be in the combined PDF:	Aceste fișiere nu pot fi citite, așa că nu vor fi incluse în PDF-ul combinat:
 	These objects could not be moved. Select them again and try a smaller move.	Aceste obiecte nu au putut fi mutate. Selectați-le din nou și încercați o mutare mai mică.
 	Thick	Groasă
@@ -3182,6 +3219,7 @@ calendar weekday	Th	Jo
 	Transfer format: {format}.	Transfer format: {format}.
 	Transform image	Transformare imagine
 	Translate	Traducere
+	Trapped is {}, but it must be /True or /False	Trapped este {}, dar trebuie să fie /True sau /False
 	Trim the picture with its handles; Enter or Done applies	Tăiați imaginea cu mânerele ei; Enter sau Gata aplică
 	Trust	Încredere
 	Try again	Try again
@@ -3296,6 +3334,7 @@ certificate	Validity starts	Începutul valabilității
 	Value:	Valoare:
 	Verify	Verificare
 	Verify PDF/UA	Verificare PDF/UA
+	Verify PDF/X	Verificare PDF/X
 	Verify to see what the document needs.	Verificați pentru a vedea de ce are nevoie documentul.
 	Version	Versiune
 certificate	Version	Versiune
@@ -3494,6 +3533,7 @@ calendar weekday	We	Mi
 	{} annotation on page {p} isn't tagged	Adnotarea {} de pe pagina {p} nu este etichetată
 	{} annotation on page {p}: its description has no language (Lang)	Adnotarea {} de pe pagina {p}: descrierea sa nu are limbă (Lang)
 	{} annotations aren't allowed	Adnotările {} nu sunt permise
+	{} colour doesn't match the output intent's colour space	Culoarea {} nu corespunde spațiului de culoare al intenției de ieșire
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (protecția se aplică la salvare)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	„{name}” s-a modificat pe disc după ce a fost deschis sau salvat ultima dată. Salvarea acum înlocuiește acea versiune mai nouă cu aceasta.

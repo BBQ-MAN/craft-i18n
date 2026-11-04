@@ -52,6 +52,7 @@
 	a bookmark cannot be moved inside itself	un marcador no se puede mover dentro de sí mismo
 	A button	Un botón
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Una aplicación PDF de código abierto, de sala limpia, escrita en Rust. MIT OR Apache-2.0.
+	A colour space is nested too deeply for the spaces under it to be checked	Un espacio de color está anidado a demasiada profundidad para comprobar los espacios que tiene debajo
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	una columna es demasiado estrecha: haz el área más ancha, dale más anchura a la columna o usa menos columnas o menos espacio entre columnas
 	A cover on the scanner is open.	Hay una tapa del escáner abierta.
 	A diagonal CONFIDENTIAL watermark on every page.	Una marca de agua diagonal CONFIDENCIAL en todas las páginas.
@@ -61,7 +62,11 @@
 	a field named {name} already exists	ya existe un campo llamado {name}
 	A font isn't embedded	Hay una fuente que no está incrustada
 	A form field has additional actions	Un campo de formulario tiene acciones adicionales
+	A form XObject refers to a page of another file (reference XObject)	Un XObject de formulario hace referencia a una página de otro archivo (XObject de referencia)
 	A form XObject with marked content (MCIDs) is drawn {n} times	Un XObject de formulario con contenido marcado (MCID) se dibuja {n} veces
+	A graphics state sets an opacity below 1	Un estado gráfico fija una opacidad inferior a 1
+	A graphics state uses a soft mask	Un estado gráfico usa una máscara suave
+	A graphics state uses the {} blend mode	Un estado gráfico usa el modo de fusión {}
 	a header cell with no Scope, in a table that doesn't use Headers	celda de encabezado sin Scope, en una tabla que no usa Headers
 	A link	Un enlace
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Un modelo local no es un modelo puntero en la nube: puede equivocarse, y una respuesta larga tarda lo suyo en la CPU. Compruebe todo lo crítico y valore el tamaño del modelo frente a esta máquina antes de descargarlo.
@@ -69,12 +74,14 @@
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Un recuento de páginas detiene el alimentador tras esas hojas. Cancelar termina la transferencia antes; las páginas ya recibidas permanecen en el documento.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Una imagen cubre la página {pages} (¿un escaneo?), así que el fondo no se verá ahí.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un archivo PNG o SVG. Se lee desde esta ubicación cada vez que se inicia PdfCraft.
+	A PrinterMark annotation overlaps the TrimBox or ArtBox	Una anotación PrinterMark se superpone al TrimBox o al ArtBox
 	A script	Un script
 	a second {} in its table	un segundo {} en su tabla
 	A selected field has no widget on any page, so the fields can't be edited together.	Un campo seleccionado no tiene ningún widget en ninguna página, así que los campos no se pueden editar juntos.
 	A setting isn't valid	Un ajuste no es válido
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Una firma que forma parte del contenido de una página, como en una página escaneada, no es un campo ni una anotación, así que no se puede quitar por sí sola, y PdfCraft no borra partes de una página para ocultarla. Para quitarla, censure esa zona (Censurar) o, si la firma es una imagen aparte, elimine la imagen con Editar un PDF.
 	A stream refers to an external file	Una secuencia hace referencia a un archivo externo
+	A stream uses JBIG2 compression	Una secuencia usa compresión JBIG2
 	A stream uses LZW compression	Una secuencia usa compresión LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Un resumen describe el propósito y la disposición de la tabla. Añade un atributo Summary a cada tabla.
 	a table has 1 to {max} columns	una tabla tiene de 1 a {max} columnas
@@ -83,6 +90,7 @@
 	A {} annotation has additional actions	Una anotación {} tiene acciones adicionales
 	A {} annotation has no appearance stream	Una anotación {} no tiene flujo de apariencia
 	A {} annotation isn't set to print, or is hidden	Una anotación {} no está marcada para imprimirse, o está oculta
+	A {} annotation lies within the BleedBox	Una anotación {} está dentro del BleedBox
 	About PdfCraft	Acerca de PdfCraft
 	About {app}	Acerca de {app}
 	about {h} h {m} min left	quedan unas {h} h {m} min
@@ -258,7 +266,9 @@
 	an Aruba account needs its domain (the "dominio" Aruba gives with the account): enter it	una cuenta de Aruba necesita su dominio (el "dominio" que Aruba da con la cuenta): introdúcelo
 	An embedded file has no AFRelationship	Un archivo incrustado no tiene AFRelationship
 	An image asks to be interpolated	Una imagen pide ser interpolada
+	An image has a soft mask	Una imagen tiene una máscara suave
 	An image has alternates or OPI information	Una imagen tiene alternativas o información OPI
+	An image or form has OPI information	Una imagen o un formulario tiene información OPI
 	An open-source PDF workbench — local, private, and scriptable.	Un banco de trabajo PDF de código abierto: local, privado y automatizable.
 	An optional content configuration has an AS entry	Una configuración de contenido opcional tiene una entrada AS
 	and {n} more	y {n} más
@@ -611,6 +621,8 @@ certificate	Basic constraints	Restricciones básicas
 	Content copying	Copia de contenido
 	Content copying for accessibility	Copia de contenido para accesibilidad
 	Content Streams	Secuencias de contenido
+	Content uses DeviceRGB colour: PDF/X-1a allows only CMYK, gray and spot colour	El contenido usa color DeviceRGB: PDF/X-1a solo admite CMYK, gris y tintas planas
+	Content uses {} colour, which doesn't match the output intent's colour space	El contenido usa color {}, que no coincide con el espacio de color del propósito de salida
 	Continue scanning	Continuar el escaneo
 	Continue scanning fronts	Continuar con los anversos
 	Continue scanning reverse sides	Continuar con los reversos
@@ -809,6 +821,7 @@ key	Delete	Supr
 	Detected {n} form fields	Se han detectado {n} campos de formulario
 	Device colour is used, but there is no PDF/A output intent	Se usa color de dispositivo, pero no hay propósito de salida PDF/A
 	Device library (PKCS #11)	Biblioteca del dispositivo (PKCS #11)
+	Device-independent colour is used, so the output intent needs an embedded profile	Se usa color independiente del dispositivo, así que el propósito de salida necesita un perfil incrustado
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	Se usa DeviceCMYK, pero el propósito de salida PDF/A no es un perfil CMYK
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	Se usa DeviceCMYK: necesita un propósito de salida CMYK (no se añade automáticamente)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	Se usa DeviceRGB, pero el propósito de salida PDF/A no es un perfil RGB
@@ -2020,6 +2033,7 @@ animation effects	On	Activados
 	PDF, images and text	PDF, imágenes y texto
 	PDF/A and standards advice	Consejos de PDF/A y normas
 	PDF/A…	PDF/A…
+	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft todavía no puede comprobar esta firma: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft no se cerró correctamente. Estos documentos tenían cambios que se guardaron automáticamente:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft está dibujando sin procesador gráfico, así que puede ir lento. Actualizar el controlador gráfico puede ayudar.
@@ -2873,6 +2887,7 @@ calendar weekday	Th	Ju
 	The document changed while you were choosing a file, so nothing was changed.	El documento cambió mientras elegías un archivo, así que no se modificó nada.
 	The document changed while you were editing field properties.	El documento cambió mientras editabas las propiedades de los campos.
 	The document couldn't be prepared	No se pudo preparar el documento
+	The document doesn't say whether it is trapped (Trapped)	El documento no indica si se le ha aplicado reventado (Trapped)
 	The document has additional actions (/AA)	El documento tiene acciones adicionales (/AA)
 	The document has been altered or corrupted since the signature was applied.	El documento se ha alterado o se ha dañado desde que se aplicó la firma.
 	The document has been altered or corrupted since the timestamp was applied.	El documento se ha alterado o se ha dañado desde que se aplicó el sello de tiempo.
@@ -2887,6 +2902,8 @@ calendar weekday	Th	Ju
 	The document has no tags (structure tree)	El documento no tiene etiquetas (árbol de estructura)
 	The document has no title	El documento no tiene título
 	The document has no XMP metadata	El documento no tiene metadatos XMP
+	The document information and the metadata name different PDF/X versions	La información del documento y los metadatos indican versiones de PDF/X distintas
+	The document information doesn't identify the file as {}	La información del documento no identifica el archivo como {}
 	The document is encrypted	El documento está cifrado
 	The document is no longer open.	El documento ya no está abierto.
 	the document is protected by a password	el documento está protegido con contraseña
@@ -2922,6 +2939,7 @@ calendar weekday	Th	Ju
 	The file has a reference XObject (Ref)	El archivo tiene un XObject de referencia (Ref)
 	The file is encrypted but its encryption dictionary has no permissions (P)	El archivo está cifrado, pero su diccionario de cifrado no tiene permisos (P)
 	The file is PDF {v}, not PDF 2.0	El archivo es PDF {v}, no PDF 2.0
+	The file trailer has no document ID	El trailer del archivo no tiene ID de documento
 	the first heading is an H{n}; headings should not skip levels	el primer encabezado es un H{n}; los encabezados no deben saltarse niveles
 	the first row number can be at most {max}	el número de la primera fila puede ser como mucho {max}
 	The font must include Latin letters and numbers for interface controls.	La fuente debe incluir letras latinas y números para los controles de la interfaz.
@@ -2950,6 +2968,7 @@ calendar weekday	Th	Ju
 	The metadata has no language: the document sets none (Lang) and the metadata no xml:lang	Los metadatos no tienen idioma: el documento no indica ninguno (Lang) y los metadatos no tienen xml:lang
 	The metadata has no PDF/UA revision year (pdfuaid:rev)	Los metadatos no tienen el año de revisión de PDF/UA (pdfuaid:rev)
 	The metadata has no title (dc:title)	Los metadatos no tienen título (dc:title)
+	The metadata has no {}	Los metadatos no tienen {}
 	The metadata identifies the file as PDF/UA-{n}, not PDF/UA-{want}	Los metadatos identifican el archivo como PDF/UA-{n}, no como PDF/UA-{want}
 	The module's tokens hold no digital ID PdfCraft can sign with.	Los tokens del módulo no contienen ningún ID digital con el que PdfCraft pueda firmar.
 	the name is not a plain file name	el nombre no es un nombre de archivo simple
@@ -2961,7 +2980,16 @@ calendar weekday	Th	Ju
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Los originales no se modifican. Si la carpeta de salida ya tiene un archivo con el mismo nombre, se conserva y el nuevo recibe un número.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Las demás firmas ({names}) indicarán que el documento cambió después de firmarse. Vuelva a comprobarlas: nada garantiza que sigan siendo válidas.
 	The output folder can't be one of the folders being read, or contain one.	La carpeta de salida no puede ser una de las carpetas que se leen ni contener ninguna de ellas.
+	The output intent's profile describes {} colour, but PDF/X-1a needs a CMYK printing condition	El perfil del propósito de salida describe color {}, pero PDF/X-1a necesita una condición de impresión CMYK
+	The output intent's profile describes {} colour; it must be gray, RGB or CMYK	El perfil del propósito de salida describe color {}; debe ser gris, RGB o CMYK
+	The output intent's profile has /N {}, which doesn't match its colour space	El perfil del propósito de salida tiene /N {}, que no coincide con su espacio de color
+	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	El perfil del propósito de salida no tiene transformación de dispositivo a PCS (AToB1 o grayTRC)
+	The output intent's profile isn't a valid ICC profile	El perfil del propósito de salida no es un perfil ICC válido
+	The output intent's profile isn't an output (printer) profile	El perfil del propósito de salida no es un perfil de salida (de impresora)
+	The page has both a TrimBox and an ArtBox	La página tiene a la vez TrimBox y ArtBox
 	The page has changed; select the image again	La página ha cambiado; vuelva a seleccionar la imagen
+	The page has neither a TrimBox nor an ArtBox	La página no tiene ni TrimBox ni ArtBox
+	The page has no valid MediaBox	La página no tiene un MediaBox válido
 	The pages already scanned were kept in the document.	Las páginas ya escaneadas se conservaron en el documento.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Las páginas se extrajeron pero no se eliminaron, porque el documento cambió mientras elegías una carpeta.
 	the password is incorrect	la contraseña es incorrecta
@@ -2971,6 +2999,9 @@ calendar weekday	Th	Ju
 	The password must have at least 8 characters.	La contraseña debe tener al menos 8 caracteres.
 	The passwords do not match.	Las contraseñas no coinciden.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Las fuentes de texto PDF no pueden mostrar «{c}» ({code}). Elige texto compatible.
+	The PDF/X output intent has neither an embedded profile nor a characterization in the ICC registry	El propósito de salida PDF/X no tiene ni un perfil incrustado ni una caracterización del registro ICC
+	The PDF/X output intent has no embedded profile (DestOutputProfile)	El propósito de salida PDF/X no tiene un perfil incrustado (DestOutputProfile)
+	The PDF/X output intent has no OutputConditionIdentifier	El propósito de salida PDF/X no tiene OutputConditionIdentifier
 	The PIN goes only to the card; PdfCraft doesn't keep it.	El PIN solo va a la tarjeta; PdfCraft no lo guarda.
 	The PIN is incorrect.	El PIN es incorrecto.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	No se pudieron listar los ID digitales de los tokens PKCS #11: {e}
@@ -3080,18 +3111,25 @@ calendar weekday	Th	Ju
 	The timestamp's byte range does not match the file.	El intervalo de bytes del sello de tiempo no se corresponde con el archivo.
 	The title in the metadata and the document information differ	El título de los metadatos y el de la información del documento son distintos
 	the title must not be empty	el título no puede estar vacío
+	The Trapped key and the metadata's pdf:Trapped disagree	La clave Trapped y el pdf:Trapped de los metadatos no coinciden
 	The value is shown as typed.	El valor se muestra tal como se escribe.
 	The viewer preferences have no DisplayDocTitle entry	Las preferencias del visor no tienen la entrada DisplayDocTitle
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	La ventana debe mostrar un título descriptivo en lugar del nombre del archivo. Define un título y Vista inicial > Mostrar: Título del documento.
 	The window shows the file name, not the title (Initial View > Show)	La ventana muestra el nombre del archivo, no el título (Vista inicial > Mostrar)
 	The Windows store's digital IDs couldn't be listed: {e}	No se pudieron listar los ID digitales del almacén de Windows: {e}
 	The XFA form requires dynamic rendering (dynamicRender)	El formulario XFA exige representación dinámica (dynamicRender)
+	The {} colour space isn't allowed: PDF/X-1a allows only CMYK, gray and spot colour	El espacio de color {} no está permitido: PDF/X-1a solo admite CMYK, gris y tintas planas
+	The {} extends beyond the BleedBox	El {} sobresale del BleedBox
+	The {} extends beyond the CropBox	El {} sobresale del CropBox
+	The {} extends beyond the MediaBox	El {} sobresale del MediaBox
 	There are no other pages in that range.	No hay otras páginas en ese intervalo.
 	there are no pages to print	no hay páginas que imprimir
 	There are no redaction marks (mark text, areas or pages first)	No hay marcas de censura (marca primero texto, áreas o páginas)
 	There are no redaction marks to apply	No hay marcas de censura que aplicar
 	there are no redaction marks to apply	no hay marcas de censura que aplicar
+	There is more than one PDF/X output intent	Hay más de un propósito de salida PDF/X
 	There is no folder to save the digital ID in.	No hay ninguna carpeta donde guardar el ID digital.
+	There is no PDF/X output intent (GTS_PDFX)	No hay propósito de salida PDF/X (GTS_PDFX)
 	These files can't be read, so they won't be in the combined PDF:	Estos archivos no se pueden leer, así que no estarán en el PDF combinado:
 	These measurements differ by more than 2%: check them.	Estas medidas difieren en más de un 2 %: revíselas.
 	These objects could not be aligned.	No se pudieron alinear estos objetos.
@@ -3212,6 +3250,7 @@ calendar weekday	Th	Ju
 	Transfer format: {format}.	Formato de transferencia: {format}.
 	Transform image	Transformar imagen
 	Translate with AI	Traducir con IA
+	Trapped is {}, but it must be /True or /False	Trapped es {}, pero debe ser /True o /False
 	Trim the picture with its handles; Enter or Done applies	Recorta la imagen con sus tiradores; Intro o Hecho lo aplica
 	Trust	Confianza
 	Try again	Reintentar
@@ -3321,6 +3360,7 @@ certificate	Validity starts	La validez empieza
 	Value is the	El valor es
 	Verify	Verificar
 	Verify PDF/UA	Verificar PDF/UA
+	Verify PDF/X	Verificar PDF/X
 	Verify to see what the document needs.	Verifica para ver qué necesita el documento.
 certificate	Version	Versión
 	Version {v}	Versión {v}
@@ -3515,6 +3555,7 @@ document scrollbar width	Wide	Ancha
 	{} annotation on page {p} isn't tagged	Una anotación {} de la página {p} no está etiquetada
 	{} annotation on page {p}: its description has no language (Lang)	Anotación {} de la página {p}: su descripción no tiene idioma (Lang)
 	{} annotations aren't allowed	No se permiten las anotaciones {}
+	{} colour doesn't match the output intent's colour space	El color {} no coincide con el espacio de color del propósito de salida
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (la protección se aplica al guardar)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	«{name}» cambió en el disco después de abrirse o guardarse por última vez. Guardar ahora reemplaza esa versión más reciente por esta.

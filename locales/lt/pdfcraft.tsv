@@ -59,7 +59,11 @@
 	a field named {name} already exists	laukas pavadinimu {name} jau yra
 	A font isn't embedded	Šriftas neįdėtas
 	A form field has additional actions	Formos laukas turi papildomų veiksmų
+	A form XObject refers to a page of another file (reference XObject)	Formos XObject nurodo kito failo puslapį (nuorodos XObject)
 	A form XObject with marked content (MCIDs) is drawn {n} times	Formos XObject su pažymėtu turiniu (MCID) piešiamas kartų: {n}
+	A graphics state sets an opacity below 1	Grafikos būsena nustato mažesnį nei 1 nepermatomumą
+	A graphics state uses a soft mask	Grafikos būsena naudoja minkštąją kaukę
+	A graphics state uses the {} blend mode	Grafikos būsena naudoja maišymo režimą {}
 	a header cell with no Scope, in a table that doesn't use Headers	antraštės langelis be Scope lentelėje, kurioje nenaudojama Headers
 	A link	Saitas
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Vietinis modelis nėraflagšipinis debesies modelis: jis gali klysti, o ilgas atsakymas procesoriuje užtrunka. Patikrinkite visa, kas svarbu, ir prieš atsisiųsdami atmintokite modelio dydį pagal šį kompiuterį.
@@ -67,6 +71,7 @@
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Puslapių skaičius sustabdo tiekiklį po tiek lapų. Atšaukimas baigia perdavimą anksčiau; jau gauti puslapiai lieka dokumente.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Paveikslėliu padengtas puslapis (nuskaitytas?): {pages}; fonas ten nesimatys.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG arba SVG failas. Jis skaitomas iš šios vietos kiekvieną kartą paleidus PdfCraft.
+	A PrinterMark annotation overlaps the TrimBox or ArtBox	PrinterMark anotacija persidengia su TrimBox arba ArtBox
 	A script	Scenarijus
 	a second {} in its table	antras {} jo lentelėje
 	A selected field has no widget on any page, so the fields can't be edited together.	Pasirinktas laukas neturi valdiklio jokiame puslapyje, todėl laukų negalima redaguoti kartu.
@@ -74,6 +79,7 @@
 	A signature is still waiting for its approval.	Parašas vis dar laukia patvirtinimo.
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Parašas, kuris yra puslapio turinio dalis (pvz., nuskaitytame puslapyje), nėra nei laukas, nei anotacija, todėl jo negalima pašalinti atskirai, o PdfCraft netrina puslapio dalių, kad jį paslėptų. Norėdami jį pašalinti, pašalinkite konfidencialią tos srities informaciją (Pašalinti konfidencialią informaciją) arba, jei parašas yra atskiras paveikslėlis, ištrinkite jį su „Redaguoti PDF“.
 	A stream refers to an external file	Srautas nurodo išorinį failą
+	A stream uses JBIG2 compression	Srautas suglaudintas naudojant JBIG2
 	A stream uses LZW compression	Srautas suglaudintas naudojant LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Santrauka apibūdina lentelės paskirtį ir išdėstymą. Kiekvienai lentelei pridėkite atributą „Summary“.
 	a table has 1 to {max} columns	lentelėje gali būti nuo 1 iki {max} stulpelių
@@ -82,6 +88,7 @@
 	A {} annotation has additional actions	Anotacija {} turi papildomų veiksmų
 	A {} annotation has no appearance stream	Anotacija {} neturi išvaizdos srauto
 	A {} annotation isn't set to print, or is hidden	Anotacija {} nenumatyta spausdinti arba yra paslėpta
+	A {} annotation lies within the BleedBox	Anotacija {} yra BleedBox viduje
 	About PdfCraft	Apie „PdfCraft“
 	About {app}	Apie „{app}“
 	about {h} h {m} min left	liko apie {h} val. {m} min.
@@ -259,7 +266,9 @@
 	an Aruba account needs its domain (the "dominio" Aruba gives with the account): enter it	„Aruba“ paskyrai reikia jos domeno („dominio“, kurį „Aruba“ suteikia kartu su paskyra): įveskite jį
 	An embedded file has no AFRelationship	Įdėtasis failas neturi atributo „AFRelationship“
 	An image asks to be interpolated	Paveikslėliui nurodyta taikyti interpoliaciją
+	An image has a soft mask	Paveikslėlis turi minkštąją kaukę
 	An image has alternates or OPI information	Paveikslėlis turi alternatyvių versijų arba OPI informacijos
+	An image or form has OPI information	Paveikslėlis arba forma turi OPI informacijos
 	An open-source PDF workbench — local, private, and scriptable.	Atvirojo kodo PDF aplinka — vietinė, privati ir valdoma scenarijais.
 	An optional content configuration has an AS entry	Pasirenkamojo turinio konfigūracija turi įrašą AS
 	and {n} more	ir dar {n}
@@ -607,6 +616,8 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Content copying	Turinio kopijavimas
 	Content copying for accessibility	Turinio kopijavimas prieinamumui
 	Content Streams	Turinio srautai
+	Content uses DeviceRGB colour: PDF/X-1a allows only CMYK, gray and spot colour	Turinys naudoja DeviceRGB spalvas: PDF/X-1a leidžia tik CMYK, pilkas ir taškines (spot) spalvas
+	Content uses {} colour, which doesn't match the output intent's colour space	Turinys naudoja {} spalvas, kurios neatitinka išvesties paskirties spalvų erdvės
 	Continue scanning	Tęsti nuskaitymą
 	Continue scanning fronts	Tęsti pirmųjų pusių nuskaitymą
 	Continue scanning reverse sides	Tęsti kitų pusių nuskaitymą
@@ -805,6 +816,7 @@ key	Delete	Delete
 	Detected {n} form fields	Aptikta formos laukų: {n}
 	Device colour is used, but there is no PDF/A output intent	Naudojamos įrenginio spalvos, tačiau nėra PDF/A išvesties profilio
 	Device library (PKCS #11)	Įrenginio biblioteka (PKCS #11)
+	Device-independent colour is used, so the output intent needs an embedded profile	Naudojamos nuo įrenginio nepriklausomos spalvos, todėl išvesties paskirčiai reikia įdėto profilio
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	Naudojama „DeviceCMYK“, tačiau PDF/A išvesties profilis nėra CMYK
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	Naudojama „DeviceCMYK“: reikalingas CMYK išvesties profilis (automatiškai nepridedamas)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	Naudojama „DeviceRGB“, tačiau PDF/A išvesties profilis nėra RGB
@@ -2008,6 +2020,7 @@ animation effects	On	Įjungta
 	PDF, images and text	PDF, paveikslėliai ir tekstas
 	PDF/A and standards advice	Patarimai dėl PDF/A ir standartų
 	PDF/A…	PDF/A…
+	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	„PdfCraft“ dar negali patikrinti šio parašo: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	„PdfCraft“ buvo uždaryta netinkamai. Šių dokumentų pakeitimai buvo automatiškai įrašyti:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	„PdfCraft“ atvaizduoja be grafikos procesoriaus, todėl gali veikti lėtai. Gali padėti grafikos tvarkyklės atnaujinimas.
@@ -2861,6 +2874,7 @@ calendar weekday	Th	Kt
 	The document changed while you were choosing a file, so nothing was changed.	Renkantis failą dokumentas pasikeitė, todėl pakeitimai nepritaikyti.
 	The document changed while you were editing field properties.	Redaguojant lauko savybes dokumentas pasikeitė.
 	The document couldn't be prepared	Nepavyko paruošti dokumento
+	The document doesn't say whether it is trapped (Trapped)	Dokumente nenurodyta, ar jam paruoštos spalvų užlaidos (Trapped)
 	The document has additional actions (/AA)	Dokumentas turi papildomų veiksmų (/AA)
 	The document has been altered or corrupted since the signature was applied.	Po pasirašymo dokumentas buvo pakeistas arba pažeistas.
 	The document has been altered or corrupted since the timestamp was applied.	Pridėjus laiko žymą dokumentas buvo pakeistas arba pažeistas.
@@ -2875,6 +2889,8 @@ calendar weekday	Th	Kt
 	The document has no tags (structure tree)	Dokumentas neturi žymų (struktūros medžio)
 	The document has no title	Dokumentas neturi pavadinimo
 	The document has no XMP metadata	Dokumentas neturi XMP metaduomenų
+	The document information and the metadata name different PDF/X versions	Dokumento informacijoje ir metaduomenyse nurodytos skirtingos PDF/X versijos
+	The document information doesn't identify the file as {}	Dokumento informacija nenurodo, kad failas atitinka {}
 	The document is encrypted	Dokumentas užšifruotas
 	The document is no longer open.	Dokumentas jau užvertas.
 	the document is protected by a password	dokumentas apsaugotas slaptažodžiu
@@ -2910,6 +2926,7 @@ calendar weekday	Th	Kt
 	The file has a reference XObject (Ref)	Faile yra nuorodos XObject (Ref)
 	The file is encrypted but its encryption dictionary has no permissions (P)	Failas užšifruotas, bet jo šifravimo žodyne nėra leidimų (P)
 	The file is PDF {v}, not PDF 2.0	Failas yra PDF {v}, o ne PDF 2.0
+	The file trailer has no document ID	Failo pabaigos įraše (trailer) nėra dokumento ID
 	the first heading is an H{n}; headings should not skip levels	pirmoji antraštė yra H{n}; antraščių lygiai neturi būti praleidžiami
 	the first row number can be at most {max}	pirmosios eilutės numeris gali būti ne didesnis nei {max}
 	The font must include Latin letters and numbers for interface controls.	Šrifte turi būti lotyniškų raidžių ir skaičių, reikalingų sąsajos valdikliams.
@@ -2938,6 +2955,7 @@ calendar weekday	Th	Kt
 	The metadata has no language: the document sets none (Lang) and the metadata no xml:lang	Metaduomenys neturi kalbos: dokumente ji nenurodyta (Lang), o metaduomenyse nėra xml:lang
 	The metadata has no PDF/UA revision year (pdfuaid:rev)	Metaduomenyse nėra PDF/UA leidimo metų (pdfuaid:rev)
 	The metadata has no title (dc:title)	Metaduomenyse nėra pavadinimo (dc:title)
+	The metadata has no {}	Metaduomenyse nėra {}
 	The metadata identifies the file as PDF/UA-{n}, not PDF/UA-{want}	Metaduomenys nurodo, kad failas yra PDF/UA-{n}, o ne PDF/UA-{want}
 	The module's tokens hold no digital ID PdfCraft can sign with.	Modulio žetonuose nėra skaitmeninio ID, kuriuo „PdfCraft“ galėtų pasirašyti.
 	the name is not a plain file name	vardas nėra paprastas failo vardas
@@ -2949,7 +2967,16 @@ calendar weekday	Th	Kt
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Originalai nekeičiami. Išvesties aplanke esantis tokio pat pavadinimo failas išsaugomas, o naujas gauna numerį.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Kiti parašai ({names}) praneš, kad dokumentas pasikeitė po pasirašymo. Patikrinkite juos iš naujo: niekas negarantuoja, kad jie liks galiojantys.
 	The output folder can't be one of the folders being read, or contain one.	Išvesties aplankas negali būti vienas iš skaitomų aplankų ar jo turėti.
+	The output intent's profile describes {} colour, but PDF/X-1a needs a CMYK printing condition	Išvesties paskirties profilis aprašo {} spalvas, bet PDF/X-1a reikia CMYK spausdinimo sąlygų
+	The output intent's profile describes {} colour; it must be gray, RGB or CMYK	Išvesties paskirties profilis aprašo {} spalvas; jos turi būti pilkos, RGB arba CMYK
+	The output intent's profile has /N {}, which doesn't match its colour space	Išvesties paskirties profilio /N yra {}, o tai neatitinka jo spalvų erdvės
+	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	Išvesties paskirties profilis neturi įrenginio į PCS transformacijos (AToB1 arba grayTRC)
+	The output intent's profile isn't a valid ICC profile	Išvesties paskirties profilis nėra galiojantis ICC profilis
+	The output intent's profile isn't an output (printer) profile	Išvesties paskirties profilis nėra išvesties (spausdintuvo) profilis
+	The page has both a TrimBox and an ArtBox	Puslapis turi ir TrimBox, ir ArtBox
 	The page has changed; select the image again	Puslapis pasikeitė; pažymėkite paveikslėlį iš naujo
+	The page has neither a TrimBox nor an ArtBox	Puslapis neturi nei TrimBox, nei ArtBox
+	The page has no valid MediaBox	Puslapis neturi tinkamo MediaBox
 	The pages already scanned were kept in the document.	Jau nuskaityti puslapiai palikti dokumente.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Puslapiai išskirti, bet nepašalinti, nes renkantis aplanką dokumentas pasikeitė.
 	the password is incorrect	slaptažodis netinkamas
@@ -2959,6 +2986,9 @@ calendar weekday	Th	Kt
 	The password must have at least 8 characters.	Slaptažodį turi sudaryti bent 8 simboliai.
 	The passwords do not match.	Slaptažodžiai nesutampa.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF teksto šriftai negali atvaizduoti simbolio „{c}“ ({code}). Pasirinkite palaikomą tekstą.
+	The PDF/X output intent has neither an embedded profile nor a characterization in the ICC registry	PDF/X išvesties paskirtis neturi nei įdėto profilio, nei charakterizacijos iš ICC registro
+	The PDF/X output intent has no embedded profile (DestOutputProfile)	PDF/X išvesties paskirtis neturi įdėto profilio (DestOutputProfile)
+	The PDF/X output intent has no OutputConditionIdentifier	PDF/X išvesties paskirtis neturi OutputConditionIdentifier
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN siunčiamas tik kortelei; PdfCraft jo nesaugo.
 	The PIN is incorrect.	PIN kodas neteisingas.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Nepavyko gauti „PKCS #11“ raktuose esančių skaitmeninių ID sąrašo: {e}
@@ -3069,18 +3099,25 @@ calendar weekday	Th	Kt
 	The title in the metadata and the document information differ	Pavadinimas metaduomenyse skiriasi nuo pavadinimo dokumento informacijoje
 	the title must not be empty	pavadinimas negali būti tuščias
 	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Leksenas turi savo PIN kodo klaviatūrą arba biometrinį skaitytuvą; jis pats paprašys PIN kodo.
+	The Trapped key and the metadata's pdf:Trapped disagree	Rakto Trapped ir metaduomenų pdf:Trapped reikšmės nesutampa
 	The value is shown as typed.	Reikšmė rodoma taip, kaip įvesta.
 	The viewer preferences have no DisplayDocTitle entry	Peržiūros nuostatose nėra įrašo DisplayDocTitle
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Lange turėtų būti rodomas prasmingas pavadinimas, o ne failo vardas. Nustatykite pavadinimą ir pasirinkite „Pradinis rodinys“ > „Rodyti:“ > „Dokumento pavadinimas“.
 	The window shows the file name, not the title (Initial View > Show)	Lange rodomas failo vardas, o ne dokumento pavadinimas („Pradinis rodinys“ > „Rodyti:“)
 	The Windows store's digital IDs couldn't be listed: {e}	Nepavyko gauti „Windows“ saugykloje esančių skaitmeninių ID sąrašo: {e}
 	The XFA form requires dynamic rendering (dynamicRender)	XFA formai reikia dinaminio atvaizdavimo (dynamicRender)
+	The {} colour space isn't allowed: PDF/X-1a allows only CMYK, gray and spot colour	Spalvų erdvė {} neleidžiama: PDF/X-1a leidžia tik CMYK, pilkas ir taškines (spot) spalvas
+	The {} extends beyond the BleedBox	{} išsikiša už BleedBox ribų
+	The {} extends beyond the CropBox	{} išsikiša už CropBox ribų
+	The {} extends beyond the MediaBox	{} išsikiša už MediaBox ribų
 	There are no other pages in that range.	Šiame intervale kitų puslapių nėra.
 	there are no pages to print	nėra spausdintinų puslapių
 	There are no redaction marks (mark text, areas or pages first)	Nėra šalinimo žymų (pirmiausia pažymėkite tekstą, sritis arba puslapius)
 	There are no redaction marks to apply	Nėra pritaikytinų konfidencialios informacijos šalinimo žymų
 	there are no redaction marks to apply	nėra pritaikytinų konfidencialios informacijos šalinimo žymų
+	There is more than one PDF/X output intent	Yra daugiau nei viena PDF/X išvesties paskirtis
 	There is no folder to save the digital ID in.	Nėra aplanko skaitmeniniam ID įrašyti.
+	There is no PDF/X output intent (GTS_PDFX)	Nėra PDF/X išvesties paskirties (GTS_PDFX)
 	These files can't be read, so they won't be in the combined PDF:	Šių failų nepavyksta perskaityti, todėl jie nebus įtraukti į sujungtą PDF:
 	These measurements differ by more than 2%: check them.	Šie matavimai skiriasi daugiau nei 2 %: patikrinkite juos.
 	These objects could not be aligned.	Šių objektų sulygiuoti nepavyko.
@@ -3207,6 +3244,7 @@ calendar weekday	Th	Kt
 	Transfer format: {format}.	Perdavimo formatas: {format}.
 	Transform image	Transformuoti paveikslėlį
 	Translate with AI	Versti su DI
+	Trapped is {}, but it must be /True or /False	Trapped reikšmė yra {}, bet turi būti /True arba /False
 	Trim the picture with its handles; Enter or Done applies	Apkarpykite paveikslėlį rankenėlėmis; Enter arba Atlikta pritaiko
 	Trust	Pasitikėti
 	Try again	Bandyti dar kartą
@@ -3316,6 +3354,7 @@ certificate	Validity starts	Galiojimo pradžia
 	Value is the	Reikšmė yra
 	Verify	Patikrinti
 	Verify PDF/UA	Patikrinti PDF/UA
+	Verify PDF/X	Patikrinti PDF/X
 	Verify to see what the document needs.	Patikrinkite, kad sužinotumėte, ko reikia dokumentui.
 certificate	Version	Versija
 	Version {v}	Versija {v}
@@ -3508,6 +3547,7 @@ document scrollbar width	Wide	Platus
 	{} annotation on page {p} isn't tagged	Anotacija {} puslapyje {p} neturi struktūros žymos
 	{} annotation on page {p}: its description has no language (Lang)	Anotacija {} puslapyje {p}: jos aprašas neturi kalbos (Lang)
 	{} annotations aren't allowed	Anotacijos {} neleidžiamos
+	{} colour doesn't match the output intent's colour space	{} spalvos neatitinka išvesties paskirties spalvų erdvės
 	ΔLOC	ΔEil.
 	— (protection is applied when you save)	— (apsauga pritaikoma įrašant)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	„{name}“ diske pasikeitė po atidarymo arba paskutinio įrašymo. Įrašius dabar ta naujesnė versija bus pakeista šia.

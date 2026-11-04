@@ -59,19 +59,25 @@
 	a field named {name} already exists	đã có trường tên {name}
 	A font isn't embedded	Một phông chữ chưa được nhúng
 	A form field has additional actions	Một trường biểu mẫu có các hành động bổ sung
+	A form XObject refers to a page of another file (reference XObject)	Một XObject biểu mẫu tham chiếu đến một trang của tệp khác (XObject tham chiếu)
 	A form XObject with marked content (MCIDs) is drawn {n} times	Một XObject biểu mẫu có nội dung được đánh dấu (MCID) được vẽ {n} lần
+	A graphics state sets an opacity below 1	Một trạng thái đồ họa đặt độ mờ đục dưới 1
+	A graphics state uses a soft mask	Một trạng thái đồ họa dùng mặt nạ mềm
+	A graphics state uses the {} blend mode	Một trạng thái đồ họa dùng chế độ hòa trộn {}
 	a header cell with no Scope, in a table that doesn't use Headers	ô tiêu đề không có Scope, trong một bảng không dùng Headers
 	A link	Một liên kết
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Một logo hoặc tên ở bên trái các thẻ, nơi thanh tiêu đề thường hiển thị: của PdfCraft hoặc của công ty bạn.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Số trang sẽ dừng khay nạp sau ngần ấy tờ. Hủy sẽ kết thúc quá trình truyền sớm; các trang đã nhận vẫn ở lại trong tài liệu.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Một hình ảnh phủ kín trang {pages} (bản quét?), nên nền sẽ không hiện ở đó.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Một tệp PNG hoặc SVG. Tệp được đọc từ vị trí này mỗi lần PdfCraft khởi động.
+	A PrinterMark annotation overlaps the TrimBox or ArtBox	Chú thích PrinterMark chồng lên TrimBox hoặc ArtBox
 	A script	Một script
 	a second {} in its table	{} thứ hai trong bảng của nó
 	A selected field has no widget on any page, so the fields can't be edited together.	Một trường đã chọn không có widget trên trang nào, nên các trường không thể được chỉnh sửa cùng nhau.
 	A setting isn't valid	Một thiết lập không hợp lệ
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Chữ ký là một phần nội dung của trang, ví dụ trên trang được quét, không phải là trường hay chú thích nên không thể gỡ riêng, và PdfCraft không xóa một phần trang để che nó. Để bỏ nó đi, hãy xóa nội dung nhạy cảm ở vùng đó (Xóa nội dung nhạy cảm), hoặc nếu chữ ký là một hình ảnh riêng thì xóa hình ảnh bằng Chỉnh sửa một PDF.
 	A stream refers to an external file	Một luồng tham chiếu đến tệp bên ngoài
+	A stream uses JBIG2 compression	Một luồng dùng nén JBIG2
 	A stream uses LZW compression	Một luồng dùng nén LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Phần tóm tắt mô tả mục đích và bố cục của bảng. Hãy thêm thuộc tính Summary cho mỗi bảng.
 	a table has 1 to {max} columns	một bảng có từ 1 đến {max} cột
@@ -80,6 +86,7 @@
 	A {} annotation has additional actions	Chú thích {} có các hành động bổ sung
 	A {} annotation has no appearance stream	Chú thích {} không có luồng diện mạo
 	A {} annotation isn't set to print, or is hidden	Chú thích {} không được đặt để in, hoặc bị ẩn
+	A {} annotation lies within the BleedBox	Chú thích {} nằm trong BleedBox
 	About PdfCraft	Giới thiệu PdfCraft
 	About {app}	Giới thiệu về {app}
 	about {h} h {m} min left	còn khoảng {h} giờ {m} phút
@@ -250,7 +257,9 @@
 	an Aruba account needs its domain (the "dominio" Aruba gives with the account): enter it	tài khoản Aruba cần có miền của nó ("dominio" mà Aruba cấp cùng tài khoản): hãy nhập miền
 	An embedded file has no AFRelationship	Một tệp nhúng không có AFRelationship
 	An image asks to be interpolated	Một hình ảnh yêu cầu được nội suy
+	An image has a soft mask	Một hình ảnh có mặt nạ mềm
 	An image has alternates or OPI information	Một hình ảnh có bản thay thế hoặc thông tin OPI
+	An image or form has OPI information	Một hình ảnh hoặc biểu mẫu có thông tin OPI
 	An open-source PDF workbench — local, private, and scriptable.	Bộ công cụ PDF mã nguồn mở — chạy cục bộ, riêng tư và có thể viết kịch bản.
 	An optional content configuration has an AS entry	Một cấu hình nội dung tùy chọn có mục AS
 	and {n} more	và {n} mục nữa
@@ -571,6 +580,8 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Content copying	Sao chép nội dung
 	Content copying for accessibility	Sao chép nội dung cho trợ năng
 	Content Streams	Luồng nội dung
+	Content uses DeviceRGB colour: PDF/X-1a allows only CMYK, gray and spot colour	Nội dung dùng màu DeviceRGB: PDF/X-1a chỉ cho phép CMYK, xám và màu pha (spot)
+	Content uses {} colour, which doesn't match the output intent's colour space	Nội dung dùng màu {}, không khớp với không gian màu của mục đích đầu ra
 	Continue scanning	Tiếp tục quét
 	Continue scanning fronts	Tiếp tục quét mặt trước
 	Continue scanning reverse sides	Tiếp tục quét mặt sau
@@ -762,6 +773,7 @@ key	Delete	Delete
 	Detected {n} form fields	Đã phát hiện {n} trường biểu mẫu
 	Device colour is used, but there is no PDF/A output intent	Màu thiết bị được dùng, nhưng không có mục đích đầu ra PDF/A
 	Device library (PKCS #11)	Thư viện thiết bị (PKCS #11)
+	Device-independent colour is used, so the output intent needs an embedded profile	Màu độc lập với thiết bị được dùng, nên mục đích đầu ra cần một hồ sơ nhúng
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	DeviceCMYK được dùng, nhưng mục đích đầu ra PDF/A không phải là hồ sơ CMYK
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	DeviceCMYK được dùng: cần có mục đích đầu ra CMYK (không được thêm tự động)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	DeviceRGB được dùng, nhưng mục đích đầu ra PDF/A không phải là hồ sơ RGB
@@ -1898,6 +1910,7 @@ animation effects	On	Bật
 	PDF version	Phiên bản PDF
 	PDF, images and text	PDF, hình ảnh và văn bản
 	PDF/A…	PDF/A…
+	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft chưa thể kiểm tra chữ ký này: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft không đóng bình thường. Các tài liệu này có thay đổi đã được tự động lưu:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft đang vẽ mà không có bộ xử lý đồ họa, nên có thể chậm. Cập nhật trình điều khiển đồ họa có thể giúp ích.
@@ -2694,6 +2707,7 @@ calendar weekday	Th	T5
 	The document changed while you were choosing a file, so nothing was changed.	Tài liệu đã thay đổi trong lúc bạn chọn tệp, nên không có gì bị thay đổi.
 	The document changed while you were editing field properties.	Tài liệu đã thay đổi trong lúc bạn chỉnh sửa thuộc tính trường.
 	The document couldn't be prepared	Không thể chuẩn bị tài liệu
+	The document doesn't say whether it is trapped (Trapped)	Tài liệu không cho biết đã được bẫy màu hay chưa (Trapped)
 	The document has additional actions (/AA)	Tài liệu có các hành động bổ sung (/AA)
 	The document has been altered or corrupted since the signature was applied.	Tài liệu đã bị thay đổi hoặc hỏng kể từ khi chữ ký được áp dụng.
 	The document has been altered or corrupted since the timestamp was applied.	Tài liệu đã bị thay đổi hoặc hỏng kể từ khi dấu thời gian được áp dụng.
@@ -2708,6 +2722,8 @@ calendar weekday	Th	T5
 	The document has no tags (structure tree)	Tài liệu không có thẻ (cây cấu trúc)
 	The document has no title	Tài liệu không có tiêu đề
 	The document has no XMP metadata	Tài liệu không có siêu dữ liệu XMP
+	The document information and the metadata name different PDF/X versions	Thông tin tài liệu và siêu dữ liệu ghi các phiên bản PDF/X khác nhau
+	The document information doesn't identify the file as {}	Thông tin tài liệu không xác định tệp là {}
 	The document is encrypted	Tài liệu đã được mã hóa
 	The document is no longer open.	Tài liệu không còn được mở.
 	the document is protected by a password	tài liệu được bảo vệ bằng mật khẩu
@@ -2742,6 +2758,7 @@ calendar weekday	Th	T5
 	The file has a reference XObject (Ref)	Tệp có một XObject tham chiếu (Ref)
 	The file is encrypted but its encryption dictionary has no permissions (P)	Tệp được mã hóa nhưng từ điển mã hóa của nó không có quyền (P)
 	The file is PDF {v}, not PDF 2.0	Tệp là PDF {v}, không phải PDF 2.0
+	The file trailer has no document ID	Phần trailer của tệp không có ID tài liệu
 	the first heading is an H{n}; headings should not skip levels	đề mục đầu tiên là H{n}; các đề mục không nên bỏ qua cấp
 	the first row number can be at most {max}	số hàng đầu tiên tối đa là {max}
 	The font {} isn't embedded	Phông chữ {} chưa được nhúng
@@ -2768,6 +2785,7 @@ calendar weekday	Th	T5
 	The metadata has no language: the document sets none (Lang) and the metadata no xml:lang	Siêu dữ liệu không có ngôn ngữ: tài liệu không đặt ngôn ngữ nào (Lang) và siêu dữ liệu không có xml:lang
 	The metadata has no PDF/UA revision year (pdfuaid:rev)	Siêu dữ liệu không có năm phiên bản PDF/UA (pdfuaid:rev)
 	The metadata has no title (dc:title)	Siêu dữ liệu không có tiêu đề (dc:title)
+	The metadata has no {}	Siêu dữ liệu không có {}
 	The metadata identifies the file as PDF/UA-{n}, not PDF/UA-{want}	Siêu dữ liệu xác định tệp là PDF/UA-{n}, không phải PDF/UA-{want}
 	The module's tokens hold no digital ID PdfCraft can sign with.	Các token của mô-đun không chứa Digital ID nào mà PdfCraft có thể dùng để ký.
 	the name is not a plain file name	tên không phải là tên tệp đơn thuần
@@ -2778,7 +2796,16 @@ calendar weekday	Th	T5
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Các tệp gốc không bị thay đổi. Tệp cùng tên trong thư mục đầu ra được giữ lại, và tệp mới được đánh số.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Các chữ ký khác ({names}) sẽ báo rằng tài liệu đã thay đổi sau khi ký. Hãy xác thực lại: không có gì bảo đảm chúng vẫn hợp lệ.
 	The output folder can't be one of the folders being read, or contain one.	Thư mục đầu ra không được là một trong các thư mục đang đọc hoặc chứa một trong số đó.
+	The output intent's profile describes {} colour, but PDF/X-1a needs a CMYK printing condition	Hồ sơ của mục đích đầu ra mô tả màu {}, nhưng PDF/X-1a cần điều kiện in CMYK
+	The output intent's profile describes {} colour; it must be gray, RGB or CMYK	Hồ sơ của mục đích đầu ra mô tả màu {}; màu phải là xám, RGB hoặc CMYK
+	The output intent's profile has /N {}, which doesn't match its colour space	Hồ sơ của mục đích đầu ra có /N {}, không khớp với không gian màu của nó
+	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	Hồ sơ của mục đích đầu ra không có phép biến đổi từ thiết bị sang PCS (AToB1 hoặc grayTRC)
+	The output intent's profile isn't a valid ICC profile	Hồ sơ của mục đích đầu ra không phải là hồ sơ ICC hợp lệ
+	The output intent's profile isn't an output (printer) profile	Hồ sơ của mục đích đầu ra không phải là hồ sơ đầu ra (máy in)
+	The page has both a TrimBox and an ArtBox	Trang có cả TrimBox lẫn ArtBox
 	The page has changed; select the image again	Trang đã thay đổi; hãy chọn lại hình ảnh
+	The page has neither a TrimBox nor an ArtBox	Trang không có TrimBox cũng không có ArtBox
+	The page has no valid MediaBox	Trang không có MediaBox hợp lệ
 	The pages already scanned were kept in the document.	Các trang đã quét được giữ lại trong tài liệu.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Các trang đã được trích xuất nhưng chưa bị xóa, vì tài liệu đã thay đổi trong lúc bạn chọn thư mục.
 	the password is incorrect	mật khẩu không đúng
@@ -2788,6 +2815,9 @@ calendar weekday	Th	T5
 	The password must have at least 8 characters.	Mật khẩu phải có ít nhất 8 ký tự.
 	The passwords do not match.	Các mật khẩu không khớp.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Phông chữ văn bản PDF không thể vẽ “{c}” ({code}). Hãy chọn văn bản được hỗ trợ.
+	The PDF/X output intent has neither an embedded profile nor a characterization in the ICC registry	Mục đích đầu ra PDF/X không có hồ sơ nhúng cũng không có đặc tính trong sổ đăng ký ICC
+	The PDF/X output intent has no embedded profile (DestOutputProfile)	Mục đích đầu ra PDF/X không có hồ sơ nhúng (DestOutputProfile)
+	The PDF/X output intent has no OutputConditionIdentifier	Mục đích đầu ra PDF/X không có OutputConditionIdentifier
 	The PIN goes only to the card; PdfCraft doesn't keep it.	Mã PIN chỉ được gửi tới thẻ; PdfCraft không lưu nó.
 	The PIN is incorrect.	Mã PIN không đúng.
 	The preview could not be shown.	Không thể hiển thị bản xem trước.
@@ -2893,18 +2923,25 @@ calendar weekday	Th	T5
 	The timestamp's byte range does not match the file.	Dải byte của dấu thời gian không khớp với tệp.
 	The title in the metadata and the document information differ	Tiêu đề trong siêu dữ liệu và trong thông tin tài liệu khác nhau
 	the title must not be empty	tiêu đề không được để trống
+	The Trapped key and the metadata's pdf:Trapped disagree	Khóa Trapped và pdf:Trapped trong siêu dữ liệu không khớp nhau
 	The value is shown as typed.	Giá trị được hiển thị như đã nhập.
 	The viewer preferences have no DisplayDocTitle entry	Tùy chọn trình xem không có mục DisplayDocTitle
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Cửa sổ nên hiển thị một tiêu đề có ý nghĩa thay vì tên tệp. Hãy đặt tiêu đề và Chế độ xem ban đầu > Hiện: Tiêu đề tài liệu.
 	The window shows the file name, not the title (Initial View > Show)	Cửa sổ hiển thị tên tệp, không phải tiêu đề (Chế độ xem ban đầu > Hiện)
 	The Windows store's digital IDs couldn't be listed: {e}	Không thể liệt kê các Digital ID của kho Windows: {e}
 	The XFA form requires dynamic rendering (dynamicRender)	Biểu mẫu XFA yêu cầu hiển thị động (dynamicRender)
+	The {} colour space isn't allowed: PDF/X-1a allows only CMYK, gray and spot colour	Không gian màu {} không được phép: PDF/X-1a chỉ cho phép CMYK, xám và màu pha (spot)
+	The {} extends beyond the BleedBox	{} vượt ra ngoài BleedBox
+	The {} extends beyond the CropBox	{} vượt ra ngoài CropBox
+	The {} extends beyond the MediaBox	{} vượt ra ngoài MediaBox
 	There are no other pages in that range.	Không có trang nào khác trong phạm vi đó.
 	there are no pages to print	không có trang nào để in
 	There are no redaction marks (mark text, areas or pages first)	Không có dấu đánh dấu xóa nào (hãy đánh dấu văn bản, vùng hoặc trang trước)
 	There are no redaction marks to apply	Không có dấu đánh dấu xóa nào để áp dụng
 	there are no redaction marks to apply	không có dấu đánh dấu xóa nào để áp dụng
+	There is more than one PDF/X output intent	Có nhiều hơn một mục đích đầu ra PDF/X
 	There is no folder to save the digital ID in.	Không có thư mục nào để lưu Digital ID.
+	There is no PDF/X output intent (GTS_PDFX)	Không có mục đích đầu ra PDF/X (GTS_PDFX)
 	These files can't be read, so they won't be in the combined PDF:	Không đọc được các tệp này, nên chúng sẽ không có trong PDF kết hợp:
 	These measurements differ by more than 2%: check them.	Các số đo này chênh nhau hơn 2%: hãy kiểm tra lại.
 	These objects could not be moved. Select them again and try a smaller move.	Không thể di chuyển các đối tượng này. Hãy chọn lại chúng và thử di chuyển ít hơn.
@@ -3020,6 +3057,7 @@ calendar weekday	Th	T5
 	Transfer format: {format}.	Định dạng truyền: {format}.
 	Transform image	Chuyển đổi hình ảnh
 	Translate with AI	Dịch bằng AI
+	Trapped is {}, but it must be /True or /False	Trapped là {}, nhưng phải là /True hoặc /False
 	Trim the picture with its handles; Enter or Done applies	Xén hình bằng các tay nắm; nhấn Enter hoặc Xong để áp dụng
 	Trust	Tin cậy
 	Try again	Thử lại
@@ -3127,6 +3165,7 @@ certificate	Validity starts	Hiệu lực bắt đầu
 	Value is the	Giá trị là
 	Verify	Xác minh
 	Verify PDF/UA	Xác minh PDF/UA
+	Verify PDF/X	Xác minh PDF/X
 	Verify to see what the document needs.	Hãy xác minh để biết tài liệu cần gì.
 certificate	Version	Phiên bản
 	Version {v}	Phiên bản {v}
@@ -3313,6 +3352,7 @@ document scrollbar width	Wide	Rộng
 	{} annotation on page {p} isn't tagged	Chú thích {} trên trang {p} chưa được gắn thẻ
 	{} annotation on page {p}: its description has no language (Lang)	Chú thích {} trên trang {p}: mô tả của nó không có ngôn ngữ (Lang)
 	{} annotations aren't allowed	Chú thích {} không được phép
+	{} colour doesn't match the output intent's colour space	Màu {} không khớp với không gian màu của mục đích đầu ra
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (việc bảo vệ được áp dụng khi bạn lưu)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	“{name}” đã thay đổi trên đĩa sau khi được mở hoặc lưu lần cuối. Lưu lúc này sẽ thay thế phiên bản mới hơn đó bằng phiên bản này.

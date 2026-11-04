@@ -53,6 +53,7 @@
 	a bookmark cannot be moved inside itself	záložku nelze přesunout do ní samé
 	A button	Tlačítko
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Open-source aplikace pro PDF napsaná v Rustu metodou clean-room. MIT OR Apache-2.0.
+	A colour space is nested too deeply for the spaces under it to be checked	Barevný prostor je vnořen příliš hluboko, takže prostory pod ním nelze zkontrolovat
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	sloupec je příliš úzký: rozšiřte oblast, dejte sloupci více místa nebo použijte méně sloupců či menší mezeru mezi sloupci
 	A cover on the scanner is open.	Kryt skeneru je otevřený.
 	A diagonal CONFIDENTIAL watermark on every page.	Diagonální vodoznak CONFIDENTIAL na každé stránce.
@@ -62,7 +63,11 @@
 	a field named {name} already exists	pole s názvem {name} už existuje
 	A font isn't embedded	Písmo není vložené
 	A form field has additional actions	Formulářové pole má dodatečné akce
+	A form XObject refers to a page of another file (reference XObject)	Formulářový XObject odkazuje na stránku jiného souboru (referenční XObject)
 	A form XObject with marked content (MCIDs) is drawn {n} times	Formulářový XObject s označeným obsahem (MCID) se kreslí {n}krát
+	A graphics state sets an opacity below 1	Grafický stav nastavuje krytí menší než 1
+	A graphics state uses a soft mask	Grafický stav používá měkkou masku
+	A graphics state uses the {} blend mode	Grafický stav používá režim prolnutí {}
 	a header cell with no Scope, in a table that doesn't use Headers	buňka záhlaví bez Scope v tabulce, která nepoužívá Headers
 	A link	Odkaz
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Místní model není špičkový cloudový model: může se mýlit a dlouhá odpověď na procesoru chvíli trvá. Důležité si ověřte a před stažením si uvědomte velikost modelu proti tomuto počítači.
@@ -70,18 +75,21 @@
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Počet stránek zastaví podavač po tolika listech. Storno ukončí přenos dříve; už přijaté stránky zůstanou v dokumentu.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Stránku {pages} pokrývá obrázek (sken?), takže pozadí na ní nebude vidět.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Soubor PNG nebo SVG. Načítá se z tohoto místa při každém spuštění PdfCraft.
+	A PrinterMark annotation overlaps the TrimBox or ArtBox	Anotace PrinterMark zasahuje do TrimBox nebo ArtBox
 	A script	Skript
 	a second {} in its table	druhý {} v jeho tabulce
 	A selected field has no widget on any page, so the fields can't be edited together.	Vybrané pole nemá na žádné stránce widget, takže pole nelze upravit společně.
 	A setting isn't valid	Nastavení není platné
 	A signature that is part of a page's content, like a scanned page, is not a field or an annotation, so it can't be removed on its own, and PdfCraft doesn't erase parts of a page to hide it. To take it out, redact that area (Redact), or delete the picture with Edit PDF when the signature is an image of its own.	Podpis, který je součástí obsahu stránky, například na naskenované stránce, není pole ani poznámka, a proto ho nelze odstranit samostatně. PdfCraft nemaže části stránky, aby ho skryl. Chcete-li ho odstranit, začerněte tuto oblast (Začernění), nebo pokud je podpis samostatný obrázek, smažte obrázek pomocí Upravit PDF.
 	A stream refers to an external file	Proud odkazuje na externí soubor
+	A stream uses JBIG2 compression	Proud používá kompresi JBIG2
 	A stream uses LZW compression	Proud používá kompresi LZW
 	A summary describes the table's purpose and layout. Add a Summary attribute to each table.	Souhrn popisuje účel a uspořádání tabulky. Přidejte ke každé tabulce atribut Summary.
 	A {} action isn't allowed	Akce {} není povolena
 	A {} annotation has additional actions	Anotace {} má další akce
 	A {} annotation has no appearance stream	Anotace {} nemá datový proud vzhledu
 	A {} annotation isn't set to print, or is hidden	Anotace {} není nastavena k tisku nebo je skrytá
+	A {} annotation lies within the BleedBox	Anotace {} leží uvnitř BleedBox
 	About PdfCraft	O aplikaci PdfCraft
 	About {app}	O aplikaci {app}
 	about {h} h {m} min left	zbývá asi {h} h {m} min
@@ -258,7 +266,9 @@
 	an Aruba account needs its domain (the "dominio" Aruba gives with the account): enter it	účet Aruba potřebuje svou doménu („dominio“, kterou Aruba poskytuje spolu s účtem): zadejte ji
 	An embedded file has no AFRelationship	Vložený soubor nemá AFRelationship
 	An image asks to be interpolated	Obrázek žádá o interpolaci
+	An image has a soft mask	Obrázek má měkkou masku
 	An image has alternates or OPI information	Obrázek má alternativy nebo informace OPI
+	An image or form has OPI information	Obrázek nebo formulář obsahuje informace OPI
 	An open-source PDF workbench — local, private, and scriptable.	Open-source dílna pro PDF — lokální, soukromá a skriptovatelná.
 	An optional content configuration has an AS entry	Konfigurace volitelného obsahu má položku AS
 	and {n} more	a dalších {n}
@@ -613,6 +623,8 @@ certificate	Basic constraints	Základní omezení
 	Content copying	Kopírování obsahu
 	Content copying for accessibility	Kopírování obsahu kvůli přístupnosti
 	Content Streams	Proudy obsahu
+	Content uses DeviceRGB colour: PDF/X-1a allows only CMYK, gray and spot colour	Obsah používá barvu DeviceRGB: PDF/X-1a povoluje jen CMYK, šedou a přímé barvy
+	Content uses {} colour, which doesn't match the output intent's colour space	Obsah používá barvu {}, která neodpovídá barevnému prostoru výstupního záměru
 	Continue scanning	Pokračovat ve skenování
 	Continue scanning fronts	Pokračovat ve skenování lícových stran
 	Continue scanning reverse sides	Pokračovat ve skenování rubových stran
@@ -816,6 +828,7 @@ key	Delete	Delete
 	Detected {n} form fields	Rozpoznáno formulářových polí: {n}
 	Device colour is used, but there is no PDF/A output intent	Používá se barva závislá na zařízení, ale chybí výstupní záměr PDF/A
 	Device library (PKCS #11)	Knihovna zařízení (PKCS #11)
+	Device-independent colour is used, so the output intent needs an embedded profile	Používá se barva nezávislá na zařízení, takže výstupní záměr potřebuje vložený profil
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	Je použit DeviceCMYK, ale výstupní záměr PDF/A není profil CMYK
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	Používá se DeviceCMYK: vyžaduje výstupní záměr CMYK (nepřidává se automaticky)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	Je použit DeviceRGB, ale výstupní záměr PDF/A není profil RGB
@@ -2032,6 +2045,7 @@ animation effects	On	Zapnuto
 	PDF, images and text	PDF, obrázky a text
 	PDF/A and standards advice	Rady k PDF/A a normám
 	PDF/A…	PDF/A…
+	PDF/X…	PDF/X…
 	PdfCraft can't check this signature yet: {}.	PdfCraft zatím nedokáže tento podpis ověřit: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft nebyl řádně ukončen. V těchto dokumentech byly změny, které se automaticky uložily:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft vykresluje bez grafického procesoru, takže může být pomalý. Pomoci může aktualizace grafického ovladače.
@@ -2883,6 +2897,7 @@ calendar weekday	Th	Čt
 	The document changed while you were choosing a file, so nothing was changed.	Dokument se změnil, zatímco jste vybírali soubor, proto se nic nezměnilo.
 	The document changed while you were editing field properties.	Dokument se změnil, zatímco jste upravovali vlastnosti polí.
 	The document couldn't be prepared	Dokument se nepodařilo připravit
+	The document doesn't say whether it is trapped (Trapped)	Dokument neuvádí, zda má přesahy (Trapped)
 	The document has additional actions (/AA)	Dokument má dodatečné akce (/AA)
 	The document has been altered or corrupted since the signature was applied.	Dokument byl od připojení podpisu změněn nebo poškozen.
 	The document has been altered or corrupted since the timestamp was applied.	Dokument byl od připojení časového razítka změněn nebo poškozen.
@@ -2897,6 +2912,8 @@ calendar weekday	Th	Čt
 	The document has no tags (structure tree)	Dokument nemá tagy (strom struktury)
 	The document has no title	Dokument nemá název
 	The document has no XMP metadata	Dokument nemá metadata XMP
+	The document information and the metadata name different PDF/X versions	Informace o dokumentu a metadata uvádějí různé verze PDF/X
+	The document information doesn't identify the file as {}	Informace o dokumentu neoznačují soubor jako {}
 	The document is encrypted	Dokument je šifrovaný
 	The document is no longer open.	Dokument už není otevřený.
 	the document is protected by a password	dokument je chráněný heslem
@@ -2932,6 +2949,7 @@ calendar weekday	Th	Čt
 	The file has a reference XObject (Ref)	Soubor má referenční XObject (Ref)
 	The file is encrypted but its encryption dictionary has no permissions (P)	Soubor je zašifrovaný, ale jeho slovník šifrování nemá oprávnění (P)
 	The file is PDF {v}, not PDF 2.0	Soubor je PDF {v}, ne PDF 2.0
+	The file trailer has no document ID	Trailer souboru nemá ID dokumentu
 	the first heading is an H{n}; headings should not skip levels	první nadpis je H{n}; nadpisy by neměly přeskakovat úrovně
 	The font must include Latin letters and numbers for interface controls.	Písmo musí obsahovat latinská písmena a číslice pro ovládací prvky rozhraní.
 	The font {} isn't embedded	Písmo {} není vložené
@@ -2959,6 +2977,7 @@ calendar weekday	Th	Čt
 	The metadata has no language: the document sets none (Lang) and the metadata no xml:lang	Metadata nemají jazyk: dokument žádný nenastavuje (Lang) a metadata nemají xml:lang
 	The metadata has no PDF/UA revision year (pdfuaid:rev)	Metadata nemají rok revize PDF/UA (pdfuaid:rev)
 	The metadata has no title (dc:title)	Metadata nemají název (dc:title)
+	The metadata has no {}	Metadata nemají {}
 	The metadata identifies the file as PDF/UA-{n}, not PDF/UA-{want}	Metadata označují soubor jako PDF/UA-{n}, ne PDF/UA-{want}
 	The module's tokens hold no digital ID PdfCraft can sign with.	Tokeny modulu neobsahují žádné digitální ID, kterým může PdfCraft podepisovat.
 	the name is not a plain file name	název není prostý název souboru
@@ -2970,7 +2989,16 @@ calendar weekday	Th	Čt
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Originály se nemění. Soubor se stejným názvem ve výstupní složce zůstane zachován a nový dostane číslo.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Ostatní podpisy ({names}) budou hlásit, že se dokument po jejich podepsání změnil. Znovu je ověřte: nic nezaručuje, že zůstanou platné.
 	The output folder can't be one of the folders being read, or contain one.	Výstupní složka nemůže být žádnou z čtených složek ani žádnou z nich obsahovat.
+	The output intent's profile describes {} colour, but PDF/X-1a needs a CMYK printing condition	Profil výstupního záměru popisuje barvu {}, ale PDF/X-1a potřebuje tiskovou podmínku CMYK
+	The output intent's profile describes {} colour; it must be gray, RGB or CMYK	Profil výstupního záměru popisuje barvu {}; musí být šedá, RGB nebo CMYK
+	The output intent's profile has /N {}, which doesn't match its colour space	Profil výstupního záměru má /N {}, což neodpovídá jeho barevnému prostoru
+	The output intent's profile has no device-to-PCS transform (AToB1 or grayTRC)	Profil výstupního záměru nemá převod ze zařízení do PCS (AToB1 nebo grayTRC)
+	The output intent's profile isn't a valid ICC profile	Profil výstupního záměru není platný profil ICC
+	The output intent's profile isn't an output (printer) profile	Profil výstupního záměru není výstupní (tiskárenský) profil
+	The page has both a TrimBox and an ArtBox	Stránka má TrimBox i ArtBox
 	The page has changed; select the image again	Stránka se změnila; vyberte obrázek znovu
+	The page has neither a TrimBox nor an ArtBox	Stránka nemá TrimBox ani ArtBox
+	The page has no valid MediaBox	Stránka nemá platný MediaBox
 	The pages already scanned were kept in the document.	Již naskenované stránky zůstaly v dokumentu.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Stránky byly extrahovány, ale neodstraněny, protože se dokument změnil, zatímco jste vybírali složku.
 	the password is incorrect	heslo je nesprávné
@@ -2980,6 +3008,9 @@ calendar weekday	Th	Čt
 	The password must have at least 8 characters.	Heslo musí mít alespoň 8 znaků.
 	The passwords do not match.	Hesla se neshodují.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Písma pro text v PDF neumí vykreslit „{c}“ ({code}). Zvolte podporovaný text.
+	The PDF/X output intent has neither an embedded profile nor a characterization in the ICC registry	Výstupní záměr PDF/X nemá vložený profil ani charakterizaci z registru ICC
+	The PDF/X output intent has no embedded profile (DestOutputProfile)	Výstupní záměr PDF/X nemá vložený profil (DestOutputProfile)
+	The PDF/X output intent has no OutputConditionIdentifier	Výstupní záměr PDF/X nemá OutputConditionIdentifier
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN jde pouze do karty; PdfCraft si jej neukládá.
 	The PIN is incorrect.	PIN je nesprávný.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Digitální ID z tokenů PKCS #11 nelze vypsat: {e}
@@ -3088,18 +3119,25 @@ calendar weekday	Th	Čt
 	The title in the metadata and the document information differ	Název v metadatech a v informacích o dokumentu se liší
 	the title must not be empty	název nesmí být prázdný
 	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Token má vlastní PIN klávesnici nebo biometrickou čtečku; o PIN si požádá sám.
+	The Trapped key and the metadata's pdf:Trapped disagree	Klíč Trapped a pdf:Trapped v metadatech se neshodují
 	The value is shown as typed.	Hodnota se zobrazí tak, jak byla zadána.
 	The viewer preferences have no DisplayDocTitle entry	Předvolby prohlížeče nemají položku DisplayDocTitle
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Okno by mělo místo názvu souboru zobrazovat smysluplný název. Nastavte název a Úvodní zobrazení > Zobrazit: Název dokumentu.
 	The window shows the file name, not the title (Initial View > Show)	Okno zobrazuje název souboru, ne název dokumentu (Počáteční zobrazení > Zobrazit)
 	The Windows store's digital IDs couldn't be listed: {e}	Digitální ID z úložiště Windows nelze vypsat: {e}
 	The XFA form requires dynamic rendering (dynamicRender)	Formulář XFA vyžaduje dynamické vykreslování (dynamicRender)
+	The {} colour space isn't allowed: PDF/X-1a allows only CMYK, gray and spot colour	Barevný prostor {} není povolen: PDF/X-1a povoluje jen CMYK, šedou a přímé barvy
+	The {} extends beyond the BleedBox	{} přesahuje BleedBox
+	The {} extends beyond the CropBox	{} přesahuje CropBox
+	The {} extends beyond the MediaBox	{} přesahuje MediaBox
 	There are no other pages in that range.	V tomto rozsahu nejsou žádné další stránky.
 	there are no pages to print	nejsou žádné stránky k tisku
 	There are no redaction marks (mark text, areas or pages first)	Nejsou žádné značky začernění (nejdřív označte text, oblasti nebo stránky)
 	There are no redaction marks to apply	Nejsou žádné značky začernění k použití
 	there are no redaction marks to apply	nejsou žádné značky začernění k použití
+	There is more than one PDF/X output intent	Existuje více než jeden výstupní záměr PDF/X
 	There is no folder to save the digital ID in.	Není k dispozici složka, do které by se digitální ID uložilo.
+	There is no PDF/X output intent (GTS_PDFX)	Chybí výstupní záměr PDF/X (GTS_PDFX)
 	These files can't be read, so they won't be in the combined PDF:	Tyto soubory nelze přečíst, a proto nebudou ve sloučeném PDF:
 	These measurements differ by more than 2%: check them.	Tato měření se liší o více než 2 %: zkontrolujte je.
 	These objects could not be aligned.	Tyto objekty se nepodařilo zarovnat.
@@ -3223,6 +3261,7 @@ calendar weekday	Th	Čt
 	Transfer format: {format}.	Formát přenosu: {format}.
 	Transform image	Transformovat obrázek
 	Translate with AI	Přeložit pomocí AI
+	Trapped is {}, but it must be /True or /False	Trapped je {}, ale musí být /True nebo /False
 	Trim the picture with its handles; Enter or Done applies	Ořízněte obrázek úchyty; Enter nebo Hotovo použije
 	Trust	Důvěryhodnost
 	Try again	Zkusit znovu
@@ -3332,6 +3371,7 @@ certificate	Validity starts	Začátek platnosti
 	Value is the	Hodnota je
 	Verify	Ověřit
 	Verify PDF/UA	Ověřit PDF/UA
+	Verify PDF/X	Ověřit PDF/X
 	Verify to see what the document needs.	Ověřte, co dokument potřebuje.
 certificate	Version	Verze
 	Version {v}	Verze {v}
@@ -3524,6 +3564,7 @@ document scrollbar width	Wide	Široký
 	{} annotation on page {p} isn't tagged	Anotace {} na stránce {p} není označkovaná
 	{} annotation on page {p}: its description has no language (Lang)	Anotace {} na stránce {p}: její popis nemá jazyk (Lang)
 	{} annotations aren't allowed	Anotace {} nejsou povoleny
+	{} colour doesn't match the output intent's colour space	Barva {} neodpovídá barevnému prostoru výstupního záměru
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (ochrana se použije při uložení)
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	Soubor „{name}“ se na disku změnil po otevření nebo posledním uložení. Uložení nyní nahradí tuto novější verzi touto.
