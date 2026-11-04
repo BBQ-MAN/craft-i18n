@@ -47,9 +47,11 @@
 	? of {n}	? iš {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: pakeitimų užklausų: {prs}, pakeitimų įrašų: {commits}, eilučių: +{added} / −{deleted} (Δ {delta}), dvejetainių išteklių: +{bin_added} / −{bin_deleted}, {first} – {last}
 	`{command}` {when}	`{command}` · {when}
+	A bitmap image is drawn at {} ppi	Vieno bito vaizdas piešiamas {} ppi raiška
 	a bookmark cannot be moved inside itself	žymelės negalima perkelti į ją pačią
 	A button	Mygtukas
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Švarių patalpų principu kuriama atvirojo kodo PDF programa, parašyta „Rust“ kalba. MIT OR Apache-2.0.
+	A colour image is drawn at {} ppi	Spalvotas vaizdas piešiamas {} ppi raiška
 	A colour operator's operands don't match its colour space	Spalvos operatoriaus operandai neatitinka jo spalvų erdvės
 	A colour space is nested too deeply to convert	Spalvų erdvė įdėta per giliai, kad būtų galima ją konvertuoti
 	A colour space's ICC profile can't be used to convert its colour	Spalvų erdvės ICC profilio negalima naudoti jos spalvai konvertuoti
@@ -64,13 +66,17 @@
 	a field named {name} already exists	laukas pavadinimu {name} jau yra
 	A font isn't embedded	Šriftas neįdėtas
 	A form field has additional actions	Formos laukas turi papildomų veiksmų
+	A form XObject is a transparency group	Formos XObject yra skaidrumo grupė
 	A form XObject refers to a page of another file (reference XObject)	Formos XObject nurodo kito failo puslapį (nuorodos XObject)
 	A form XObject with marked content (MCIDs) is drawn {n} times	Formos XObject su pažymėtu turiniu (MCID) piešiamas kartų: {n}
 	A graphics state sets an opacity below 1	Grafikos būsena nustato mažesnį nei 1 nepermatomumą
 	A graphics state uses a soft mask	Grafikos būsena naudoja minkštąją kaukę
 	A graphics state uses the {} blend mode	Grafikos būsena naudoja maišymo režimą {}
+	A gray image is drawn at {} ppi	Pilkas vaizdas piešiamas {} ppi raiška
 	a header cell with no Scope, in a table that doesn't use Headers	antraštės langelis be Scope lentelėje, kurioje nenaudojama Headers
 	A JPEG picture in CMYK can't be converted yet	JPEG paveikslėlio CMYK spalvomis dar negalima konvertuoti
+	A line has width 0, the thinnest the printer can draw	Linijos storis 0 – ploniausia, kokią gali nupiešti spausdintuvas
+	A line is {} pt wide	Linijos storis – {} pt
 	A link	Saitas
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Vietinis modelis nėraflagšipinis debesies modelis: jis gali klysti, o ilgas atsakymas procesoriuje užtrunka. Patikrinkite visa, kas svarbu, ir prieš atsisiųsdami atmintokite modelio dydį pagal šį kompiuterį.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logotipas arba pavadinimas kairėje nuo kortelių, kur jį rodytų antraštės juosta: PdfCraft arba jūsų įmonės.
@@ -89,6 +95,7 @@
 	A selected field has no widget on any page, so the fields can't be edited together.	Pasirinktas laukas neturi valdiklio jokiame puslapyje, todėl laukų negalima redaguoti kartu.
 	A setting isn't valid	Nustatymas netinkamas
 	A shading in RGB or device-independent colour can't be converted to CMYK yet	Šešėliavimo RGB arba nuo įrenginio nepriklausoma spalva dar negalima konvertuoti į CMYK
+	A shading uses {} colour	Šešėliavimas naudoja {} spalvą
 	A shading's colour function can't be read or evaluated	Šešėliavimo spalvos funkcijos negalima perskaityti ar apskaičiuoti
 	A shading's colour function can't be resampled into CMYK exactly	Šešėliavimo spalvos funkcijos negalima tiksliai perskaičiuoti į CMYK
 	A shading's data can't be read, so it can't be converted to CMYK	Šešėliavimo duomenų negalima perskaityti, todėl jo negalima konvertuoti į CMYK
@@ -104,6 +111,7 @@
 	A {} annotation has additional actions	Anotacija {} turi papildomų veiksmų
 	A {} annotation has no appearance stream	Anotacija {} neturi išvaizdos srauto
 	A {} annotation isn't set to print, or is hidden	Anotacija {} nenumatyta spausdinti arba yra paslėpta
+	A {} annotation lies inside the trim	Anotacija {} yra apkarpymo srityje
 	A {} annotation lies within the BleedBox	Anotacija {} yra BleedBox viduje
 	A {} colour space's parameters can't be read	{} spalvų erdvės parametrų negalima perskaityti
 	About PdfCraft	Apie „PdfCraft“
@@ -114,6 +122,7 @@
 	Accepted by {printer}	Priėmė {printer}
 	Accessibility Checker	Prieinamumo tikrintuvas
 	Accessibility Checker Options	Prieinamumo tikrintuvo parinktys
+	Accessibility Checker rules	Prieinamumo tikrintuvo taisyklės
 	Accessibility panel	Pritaikymo neįgaliesiems skydelis
 	Accessibility permission flag	Prieinamumo leidimo požymis
 	Accessibility permission flag is set	Prieinamumo leidimo požymis nustatytas
@@ -286,12 +295,16 @@
 	An image has a soft mask	Paveikslėlis turi minkštąją kaukę
 	An image has alternates or OPI information	Paveikslėlis turi alternatyvių versijų arba OPI informacijos
 	An image or form has OPI information	Paveikslėlis arba forma turi OPI informacijos
+	An image uses {} colour	Vaizdas naudoja {} spalvą
 	An indexed colour space's table is too short to convert	Indeksuotos spalvų erdvės lentelė per trumpa, kad būtų galima ją konvertuoti
+	An inline image uses {} colour	Įterptinis vaizdas naudoja {} spalvą
+	An object has additional actions (/AA)	Objektas turi papildomų veiksmų (/AA)
 	An open-source PDF workbench — local, private, and scriptable.	Atvirojo kodo PDF aplinka — vietinė, privati ir valdoma scenarijais.
 	An optional content configuration has an AS entry	Pasirenkamojo turinio konfigūracija turi įrašą AS
 	and {n} more	ir dar {n}
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	Mirganti animacija gali sukelti priepuolius. Patikrinkite, ar scenarijai ir medija nesukelia mirgėjimo.
 	Annotation	Anotacija
+	Annotations inside the trim	Anotacijos apkarpymo srityje
 	Annotations, form fill-in, and digital signatures	Anotacijos, formų pildymas ir skaitmeniniai parašai
 	Another file dialog is still open. Finish with it first.	Kitas failų dialogas dar atvertas. Pirmiausia užbaikite veiksmus jame.
 	Any except extracting pages	Bet kas, išskyrus puslapių išskyrimą
@@ -309,6 +322,7 @@
 	Applies to 1 page	Taikoma 1 puslapiui
 	Applies to {n} pages	Taikoma {n} puslapiams
 	Apply PDF standards	Taikyti PDF standartus
+	Apply preflight fixups	Taikyti parengiamosios patikros pataisas
 	Apply redactions	Pašalinti pažymėtą konfidencialią informaciją
 	Apply redactions…	Pritaikyti konfidencialios informacijos šalinimą…
 	Apply scale	Taikyti mastelį
@@ -391,8 +405,10 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Bicubic downsampling to	Bikubinis sumažinimas iki
 	Binding	Įrišimas
 	Binding:	Įrišimas:
+	Bitmap images	Vieno bito vaizdai
 	Black on white	Juoda baltame fone
 	Blank page	Tuščias puslapis
+	Bleed	Užlaida
 	Blend with page content	Sulieti su puslapio turiniu
 	Booklet	Brošiūra
 	Booklet subset:	Brošiūros dalis:
@@ -512,6 +528,9 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Checking the scanner…	Tikrinamas skaitytuvas…
 	Checking the structure… {n} objects so far	Tikrinama struktūra… kol kas {n} objektų
 	Checkmark	Varnelė
+	Checks a file for CMYK printing: fonts, colour, image resolution, hairlines, transparency, page boxes, encryption, JavaScript, annotations, Trapped and the PDF version	Tikrina failą CMYK spaudai: šriftus, spalvas, vaizdų skyrą, itin plonas linijas, skaidrumą, puslapio sritis, šifravimą, JavaScript, anotacijas, Trapped ir PDF versiją
+	Checks not run	Neatliktos patikros
+	Checks passed	Sėkmingos patikros
 	Choose a digital ID file	Pasirinkite skaitmeninio ID failą
 	Choose a digital ID.	Pasirinkite skaitmeninį ID.
 	Choose a file…	Pasirinkti failą…
@@ -543,6 +562,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Choose the module's library file.	Pasirinkite modulio bibliotekos failą.
 	Choose the signature to remove:	Pasirinkite, kurį parašą pašalinti:
 	Choose where to save the signed file. The service signs it once you have.	Pasirinkite, kur įrašyti pasirašytą failą. Paslauga jį pasirašys, kai tai padarysite.
+	Clause	Punktas
 	Clean Up	Išvalyti
 	Clean-up	Valymas
 	Clear all	Išvalyti viską
@@ -587,6 +607,8 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Color document	Spalvotas dokumentas
 	Color Images	Spalvoti paveikslėliai
 	Color Spaces	Spalvų erdvės
+	Colour images	Spalvoti vaizdai
+	Colour the profile doesn't allow	Profilio neleidžiamos spalvos
 	Colours are remapped while rendering; the document itself never changes.	Atvaizduojant spalvos perskaičiuojamos, tačiau pats dokumentas nekeičiamas.
 	Column select	Stulpelio pasirinkimas
 	Column spacing	Tarpas tarp stulpelių
@@ -615,6 +637,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Comments panel	Komentarų skydelis
 	Comments to send	Siunčiami komentarai
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Komentarai, saitai ir laukai turi būti žymų medyje, kad būtų perskaitomi. Pridėkite anotacijų žymas.
+	Commercial print (CMYK)	Komercinė spauda (CMYK)
 	Commit selected value immediately	Iš karto patvirtinti pasirinktą reikšmę
 	Common Properties	Bendrosios savybės
 	Common scales	Dažni masteliai
@@ -640,8 +663,10 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Console	Konsolė
 	Content copying	Turinio kopijavimas
 	Content copying for accessibility	Turinio kopijavimas prieinamumui
+	Content not read to the end on pages: {pages}	Turinys neperskaitytas iki galo puslapiuose: {pages}
 	Content Streams	Turinio srautai
 	Content uses DeviceRGB colour: PDF/X-1a allows only CMYK, gray and spot colour	Turinys naudoja DeviceRGB spalvas: PDF/X-1a leidžia tik CMYK, pilkas ir taškines (spot) spalvas
+	Content uses {} colour	Turinys naudoja {} spalvą
 	Content uses {} colour, which doesn't match the output intent's colour space	Turinys naudoja {} spalvas, kurios neatitinka išvesties paskirties spalvų erdvės
 	Continue scanning	Tęsti nuskaitymą
 	Continue scanning fronts	Tęsti pirmųjų pusių nuskaitymą
@@ -792,6 +817,7 @@ key	Ctrl	Ctrl
 	Data Encipherment	Duomenų šifravimas
 	Date field	Datos laukas
 	Date: 	Data: 
+	Date: {date}	Data: {date}
 	Deactivate Read Out Loud	Išjungti garsinį skaitymą
 	December	gruodis
 calendar date	December	gruodžio
@@ -907,6 +933,7 @@ key	Delete	Delete
 	Document structure provides a logical reading order	Dokumento struktūra užtikrina loginę skaitymo tvarką
 	Document timestamp	Dokumento laiko žyma
 	Document title is showing in title bar	Lango antraštėje rodomas dokumento pavadinimas
+	Document: {name}	Dokumentas: {name}
 	Documents	Dokumentai
 	Documents and view	Dokumentai ir rodinys
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Daugiau nei 20 puslapių dokumentams reikia naršymo žymelių. Pridėkite pagrindinių skyrių žymeles.
@@ -1212,6 +1239,8 @@ calendar date	February	vasario
 	Fix reading order	Taisyti skaitymo tvarką
 	Fixed what could be fixed; 1 problem remains	Ištaisyta tai, ką buvo galima; liko 1 problema
 	Fixed what could be fixed; {n} problems remain	Ištaisyta tai, ką buvo galima; liko problemų: {n}
+	Fixup: {fixup}	Pataisa: {fixup}
+	Flags	Žymos
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	Šį įdiegimą tvarko Flatpak. Naujinimų ieškokite sistemos programinės įrangos tvarkytuvėje arba naudodami flatpak update.
 	Flatten comments	Suplokštinti komentarus
 	Flatten comments and form fields	Suplokštinti komentarus ir formos laukus
@@ -1230,6 +1259,7 @@ calendar date	February	vasario
 	Font colour:	Šrifto spalva:
 	Font size 0 uses automatic sizing.	Šrifto dydis 0 reiškia, kad dydis parenkamas automatiškai.
 	Font size:	Šrifto dydis:
+	Font type	Šrifto tipas
 	Font {} on page {p} doesn't map its characters to Unicode	Šriftas {} puslapyje {p} nesusieja simbolių su „Unicode“
 	Font {} on page {p} draws a glyph its font program lacks (code {code})	Šriftas {} puslapyje {p} piešia glifą, kurio jo šrifto programoje nėra (kodas {code})
 	Font {} on page {p} draws the .notdef glyph (code {code})	Šriftas {} puslapyje {p} piešia glifą .notdef (kodas {code})
@@ -1265,6 +1295,7 @@ calendar date	February	vasario
 	Font {} on page {p}: no Unicode or Mac Roman cmap of its program finds glyph {glyph} (code {code})	Šriftas {} puslapyje {p}: nė vienas jo programos Unicode ar Mac Roman cmap neranda glifo {glyph} (kodas {code})
 	Font: Helvetica	Šriftas: „Helvetica“
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Šriftų simboliai turi būti susieti su „Unicode“, kad tekstą būtų galima skaityti ir kopijuoti. Pataisykite šriftus arba iš naujo sukurkite PDF.
+	Fonts not embedded	Neįdėti šriftai
 	for images above	kai raiška viršija
 	For page sizes and margins.	Puslapių dydžiams ir paraštėms.
 	Form data and PDF forms	Formų duomenys ir PDF formos
@@ -1317,11 +1348,13 @@ calendar weekday	Fr	Pn
 	Go to this result	Pereiti prie šio rezultato
 	Grab bag	Vardų rinkinys
 	Graphics	Grafika
+	Gray images	Pilki vaizdai
 	Grayscale Images	Pilkų atspalvių paveikslėliai
 	Green on black	Žalia juodame fone
 	Greyscale	Pilki atspalviai
 	Group select	Grupės pasirinkimas
 	H / Space (hold)	H / tarpo klavišas (laikyti)
+	Hairlines	Itin plonos linijos
 	Hand	Rankos įrankis
 	Hand (H)	Rankos įrankis (H)
 	Hand Tool	Rankos įrankis
@@ -1356,6 +1389,7 @@ calendar weekday	Fr	Pn
 	Hides annotation	Paslepia anotaciją
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Aukštesnė vaizdų kokybė reiškia didesnius failus. Kopija išsaugoma tik jei ji mažesnė.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Aukštesnė kokybė, paprastai didesni failai. JPEG nuotraukos, kurių raiška viršija 450 ppi, sumažinamos iki 300 ppi, kokybė 85. Be nuostolių suglaudinta grafika ir vaizdai su kaukėmis išlaiko savo pikselius.
+	Highest version	Aukščiausia versija
 	Highlight	Paryškinti
 	Highlight content	Paryškinti turinį
 	Highlight coverage above	Paryškinti padengimą virš
@@ -1375,6 +1409,7 @@ key	Home	Home
 	Image (PNG)	Paveikslėlis (PNG)
 	Image field	Paveikslėlio laukas
 	Image pasted	Paveikslėlis įklijuotas
+	Image resolution	Vaizdų raiška
 	Image-only PDF	PDF vien iš paveikslėlių
 	Images and text	Paveikslėliai ir tekstas
 	Images and text (converted to PDF)	Paveikslėliai ir tekstas (konvertuoti į PDF)
@@ -1469,6 +1504,7 @@ certificate	Issuer	Išdavėjas
 	January	sausis
 calendar date	January	sausio
 	JavaScript	JavaScript
+	JavaScript and actions	JavaScript ir veiksmai
 	JavaScript Console	JavaScript konsolė
 	JavaScript console…	JavaScript konsolė…
 	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript išjungtas (Nuostatos > JavaScript).
@@ -1516,6 +1552,8 @@ certificate	Key usage	Rakto naudojimas
 	Layout and Magnification	Išdėstymas ir mastelis
 	Lbl and LBody	Lbl ir LBody
 	Lbl and LBody must be children of LI	Lbl ir LBody turi būti LI antriniai elementai
+	Least bleed	Mažiausia užlaida
+	Least resolution	Mažiausia raiška
 	Leave out files that can't be read?	Neįtraukti failų, kurių nepavyksta perskaityti?
 	Left Edge	Kairysis kraštas
 	Left Footer Text	Kairysis poraštės tekstas
@@ -1536,6 +1574,7 @@ certificate	Key usage	Rakto naudojimas
 	Line thickness	Linijos storis
 	Line Thickness:	Linijos storis:
 	Line weights	Linijų storiai
+	Line width	Linijos storis
 	Lines	Linijos
 	Link Action	Saito veiksmas
 	Link annotation on page {p} has no description (Contents)	Saito anotacija puslapyje {p} neturi aprašo (Contents)
@@ -1648,6 +1687,7 @@ calendar weekday	Mo	Pr
 	More options:	Daugiau parinkčių:
 	more than one H heading in it	jame yra daugiau nei viena H antraštė
 	More ways to add files	Daugiau būdų pridėti failų
+	Most spot colours	Daugiausia taškinių spalvų
 	Mouse Down	Paspaudus pelės mygtuką
 	Mouse Enter	Pelės žymekliui įėjus
 	Mouse Exit	Pelės žymekliui išėjus
@@ -1782,6 +1822,7 @@ calendar weekday	Mo	Pr
 	No plugins installed. A plugin is a single .wasm file; install one above.	Nėra įdiegtų papildinių. Papildinys yra vienas .wasm failas; įdiekite jį aukščiau.
 	No preview	Peržiūros nėra
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Spausdintuvų nerasta. Patikrinkite, ar spausdintuvas įdiegtas ir ar veikia spausdinimo eilė, tada vėl atverkite Spausdinti.
+	No problems found	Problemų nerasta
 	No problems found: the document conforms to {level}.	Problemų nerasta: dokumentas atitinka {level} reikalavimus.
 	No raw file yet	Pirminio failo dar nėra
 	No recipients yet.	Gavėjų dar nėra.
@@ -2036,6 +2077,7 @@ animation effects	On	Įjungta
 	Pages to Print	Spausdinami puslapiai
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Puslapiai, kurių teksto nepavyko perskaityti: {n}. Atitikmenys juose neišvardyti.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Puslapiuose su saitais, komentarais ar laukais pereiti tabuliavimo klavišu reikia struktūros tvarka. Pataisa nustato kiekvieno puslapio tabuliavimo tvarką pagal dokumento struktūrą.
+	Pages without a TrimBox	Puslapiai be TrimBox
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Puslapiai pasikeitė po fono pridėjimo, todėl jų balti užpildai lieka išjungti: {pages}. Ant balto popieriaus jie atrodo taip pat.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Puslapiai su savo baltu užpildu, kuris paslėptų foną: {pages}. Pakeisti
 	Pages:	Puslapiai:
@@ -2116,11 +2158,13 @@ animation effects	On	Įjungta
 	Pinned {folder} to Home	Aplankas {folder} prisegtas prie pradžios rodinio
 	Pinned {tool} to Home	{tool} prisegtas pradžios puslapyje
 	Pitch:	Aukštis:
+	Pixels	Pikseliai
 	PKCS #11 device  ·  	PKCS #11 įrenginys  ·  
 	PKCS #11 module	PKCS #11 modulis
 	PKCS #11 modules	PKCS #11 moduliai
 	PKCS #11 token  ·  	PKCS #11 leksenas  ·  
 	Place saved {what}	Įdėti įrašytą {what}
+	Placed size	Įdėtas dydis
 	Plain text in reading order; pages are separated by form feeds.	Paprastasis tekstas skaitymo tvarka; puslapiai atskiriami puslapio skirtukais.
 	Planned	Suplanuota
 	Planned for milestone	Numatyta etapui
@@ -2137,6 +2181,7 @@ animation effects	On	Įjungta
 	PostScript / EPS	PostScript / EPS
 	PostScript XObjects aren't allowed	„PostScript“ XObject objektai neleidžiami
 	Preflight	Parengiamoji patikra
+	Preflight report	Parengiamosios patikros ataskaita
 	Prepare a form	Rengti formą
 	Prepare for accessibility	Parengti prieinamumui
 	Prepare for Distribution	Parengti platinimui
@@ -2186,6 +2231,7 @@ animation effects	On	Įjungta
 	Private data of other applications	Kitų programų privatūs duomenys
 	Producer	PDF kūrimo programa
 	product (x)	sandauga (×)
+	Profile: {profile}	Profilis: {profile}
 	Properties…	Savybės…
 	Protect & Standardize	Apsauga ir standartizavimas
 	Protect a PDF	Apsaugoti PDF
@@ -2301,6 +2347,7 @@ certificate	Public key	Viešasis raktas
 	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	Pašalinkite paslėptą informaciją, metaduomenis, scenarijus bei įdėtąjį turinį ir perrašykite failus.
 	Remove hidden information…	Pašalinti paslėptą informaciją…
 	Remove invalid links and bookmarks	Pašalinti netinkamus saitus ir žymeles
+	Remove JavaScript and actions	Pašalinti JavaScript ir veiksmus
 	Remove page	Pašalinti puslapį
 	Remove redaction marks	Pašalinti konfidencialios informacijos šalinimo žymas
 	Remove saved {what}	Pašalinti įrašytą {what}
@@ -2445,6 +2492,7 @@ review-suggestion	Replacement text	Pakaitinis tekstas
 	Row spacing	Tarpas tarp eilučių
 	rows both directly in it and in THead, TBody or TFoot	jame eilutės yra ir tiesiogiai, ir THead, TBody ar TFoot viduje
 	rows have between {min} and {max} columns	eilutėse yra nuo {min} iki {max} stulpelių
+	Rule	Taisyklė
 	Rule Name	Taisyklės pavadinimas
 	Rulers	Liniuotės
 	Run	Vykdyti
@@ -2452,6 +2500,7 @@ review-suggestion	Replacement text	Pakaitinis tekstas
 	Run form script	Vykdyti formos scenarijų
 	Run JavaScript	Vykdyti „JavaScript“
 	Running action… file {d} of {t}	Vykdomas veiksmas… failas {d} iš {t}
+	Runs the Accessibility Checker's rules	Vykdo prieinamumo tikrintuvo taisykles
 	Runtime	Vykdymo aplinka
 calendar weekday	Sa	Št
 	Safety margin (pt)	Apsauginė paraštė (pt)
@@ -2573,6 +2622,7 @@ calendar weekday	Sa	Št
 	Searching… {s} of {p} pages	Ieškoma… {s} iš {p} puslapių
 	Searching… {s}/{p}	Ieškoma… {s}/{p}
 	Search…	Ieškoti…
+	Security handler	Saugos doroklė
 	Security method	Apsaugos būdas
 	Security properties	Apsaugos savybės
 	Security properties…	Apsaugos savybės…
@@ -2642,6 +2692,7 @@ certificate	Serial number	Serijos numeris
 	Set Fields to Same Size	Nustatyti vienodą laukų dydį
 	Set layer visibility	Nustatyti sluoksnio matomumą
 	Set measurement scale	Nustatyti matavimo mastelį
+	Set missing TrimBoxes from the CropBox	Nustatyti trūkstamas TrimBox pagal CropBox
 	Set Page Boxes	Nustatyti puslapio sritis
 	Set page boxes	Nustatyti puslapio sritis
 	Set page boxes…	Nustatyti puslapio sritis…
@@ -2659,6 +2710,8 @@ certificate	Serial number	Serijos numeris
 	Set the image of {name}	Nustatyti {name} paveikslėlį
 	Set to current page ({n})	Nustatyti į dabartinį puslapį ({n})
 	Set to zero	Nustatyti į nulį
+	Set Trapped to False	Nustatyti Trapped į False
+	Set Trapped to True	Nustatyti Trapped į True
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Šio šaltinio siūlomi nustatymai. Palikite valdiklį nepakeistą, kad būtų išlaikyta tvarkyklės reikšmė.
 	SHA-1 digest	SHA-1 santrauka
 certificate	SHA-1 digest	SHA-1 santrauka
@@ -2758,6 +2811,7 @@ key	Shift	Shift
 	Simulate overprinting	Imituoti perspaudimą
 	Simulation: device formulas	Imitacija: įrenginio formulės
 	Simulation: {profile}	Imitacija: {profile}
+	Single checks	Atskiros patikros
 	Single file	Vienas failas
 	Single Page	Vienas puslapis
 	Single page	Vienas puslapis
@@ -2802,6 +2856,8 @@ key	Space	Tarpas
 	Split document	Skaidyti dokumentą
 	Split document…	Skaidyti dokumentą…
 	Split into files…	Skaidyti į failus…
+	Spot colour {}	Taškinė spalva {}
+	Spot colours	Taškinės spalvos
 	Spreadsheet (.xlsx)	Skaičiuoklė (.xlsx)
 	Squiggly	Banguotas
 	Squiggly underline	Banguota pabraukta linija
@@ -2850,6 +2906,7 @@ certificate	Subject	Sertifikato subjektas
 	Summarize comments	Apibendrinti komentarus
 	Summarize Options	Apibendrinimo parinktys
 	Summarize with AI	Apibendrinti su DI
+	Summary: {errors} errors, {warnings} warnings, {info} information	Santrauka: klaidų – {errors}, įspėjimų – {warnings}, informacijos – {info}
 	Superscript	Viršutinis indeksas
 	Swap width and height	Sukeisti plotį ir aukštį
 	Switch light / dark theme	Perjungti šviesiąją ir tamsiąją temas
@@ -2926,6 +2983,7 @@ calendar weekday	Th	Kt
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API raktas šiuo adresu būtų siunčiamas nešifruotas. Naudokite https://, nebent serveris yra jūsų pasitikimame tinkle.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	sritis, tarpai ir stulpelių pločiai turi būti skaičiai, tarpai – 0 arba daugiau, o kiekvienas plotis – daugiau nei 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Stiklas nuskaito po vieną puslapį. Nuskaitykite pirmąją pusę, apverskite ir nuskaitykite kitą pusę.
+	The bleed is {} mm on its narrowest side	Siauriausioje pusėje užlaida yra {} mm
 	The bookmarks have no language: the document sets none (Lang)	Žymelės neturi kalbos: dokumente ji nenurodyta (Lang)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Skaičiavimo tvarkoje yra {n} įrašas, kuris nieko neskaičiuoja. „Pataisyti tvarką“ jį pašalina.|Skaičiavimo tvarkoje yra {n} įrašai, kurie nieko neskaičiuoja. „Pataisyti tvarką“ juos pašalina.|Skaičiavimo tvarkoje yra {n} įrašų, kurie nieko neskaičiuoja. „Pataisyti tvarką“ juos pašalina.
 	The catalog has no metadata stream (XMP)	Kataloge nėra metaduomenų srauto (XMP)
@@ -3010,6 +3068,8 @@ calendar weekday	Th	Kt
 	The file has a reference XObject (Ref)	Faile yra nuorodos XObject (Ref)
 	The file is encrypted but its encryption dictionary has no permissions (P)	Failas užšifruotas, bet jo šifravimo žodyne nėra leidimų (P)
 	The file is PDF {v}, not PDF 2.0	Failas yra PDF {v}, o ne PDF 2.0
+	The file is PDF {}	Failas yra PDF {}
+	The file is PDF {}, newer than the profile allows	Failas yra PDF {}, naujesnis, nei leidžia profilis
 	The file trailer has no document ID	Failo pabaigos įraše (trailer) nėra dokumento ID
 	the first heading is an H{n}; headings should not skip levels	pirmoji antraštė yra H{n}; antraščių lygiai neturi būti praleidžiami
 	the first row number can be at most {max}	pirmosios eilutės numeris gali būti ne didesnis nei {max}
@@ -3069,8 +3129,11 @@ calendar weekday	Th	Kt
 	The page has both a TrimBox and an ArtBox	Puslapis turi ir TrimBox, ir ArtBox
 	The page has changed; select the image again	Puslapis pasikeitė; pažymėkite paveikslėlį iš naujo
 	The page has neither a TrimBox nor an ArtBox	Puslapis neturi nei TrimBox, nei ArtBox
+	The page has no BleedBox	Puslapis neturi BleedBox
 	The page has no valid MediaBox	Puslapis neturi tinkamo MediaBox
+	The page is a transparency group	Puslapis yra skaidrumo grupė
 	The pages already scanned were kept in the document.	Jau nuskaityti puslapiai palikti dokumente.
+	The pages use {} spot colours	Puslapiuose naudojama taškinių spalvų: {}
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Puslapiai išskirti, bet nepašalinti, nes renkantis aplanką dokumentas pasikeitė.
 	the password is incorrect	slaptažodis netinkamas
 	The password is incorrect.	Slaptažodis netinkamas.
@@ -3105,6 +3168,7 @@ calendar weekday	Th	Kt
 	The release has ambiguous packages. Choose a package on the official release page.	Šiame leidime yra kelios galimos paketų parinktys. Pasirinkite paketą oficialiame leidimų puslapyje.
 	The release is not a published stable update. Try again later.	Šis leidimas nėra paskelbtas stabilus naujinys. Bandykite vėliau.
 	The replacement file doesn't have that many pages.	Pakaitiniame faile nėra tiek puslapių.
+	The resolution of an image can't be measured	Vaizdo raiškos išmatuoti nepavyksta
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Apribojimai taikomi gavėjams be „Visi leidimai“. Pritaikoma įrašant.
 	The reverse sides already scanned are kept.	Jau nuskaitytos kitos pusės paliekamos.
 	The reverse sides were cancelled: their document was closed.	Antrųjų pusių nuskaitymas atšauktas: jų dokumentas uždarytas.
@@ -3227,10 +3291,12 @@ calendar weekday	Th	Kt
 	Thick	Storas
 	Thin	Plonas
 	Thinking… {s}s	Mąsto… {s}s
+	Thinnest line	Ploniausia linija
 	This area has too many overlapping paths; intersection snapping is limited.	Šioje srityje persidengia per daug kelių; pritraukimas prie sankirtų apribotas.
 	This certificate is in your list of trusted certificates.	Šis sertifikatas yra patikimų sertifikatų sąraše.
 	This certificate is not trusted. Signatures made with it show an unknown identity.	Šis sertifikatas nepatikimas. Juo pasirašius rodoma nežinoma tapatybė.
 	This certificate is trusted through a certificate above it in the chain.	Šis sertifikatas patikimas dėl aukštesnio sertifikatų grandinės sertifikato.
+	This check needs the Accessibility Checker, which isn't available here	Šiai patikrai reikia prieinamumo tikrintuvo, kurio čia nėra
 	This comment's appearance can't be changed yet.	Šio komentaro išvaizdos kol kas negalima pakeisti.
 	This compatibility level supports only plain ASCII passwords.	Šis suderinamumo lygis palaiko tik slaptažodžius iš paprastų ASCII simbolių.
 	This dialog shows the details of a certificate and its chain.	Šiame dialoge pateikiama sertifikato ir jo grandinės informacija.
@@ -3348,7 +3414,9 @@ calendar weekday	Th	Kt
 	Transfer format: {format}.	Perdavimo formatas: {format}.
 	Transform image	Transformuoti paveikslėlį
 	Translate with AI	Versti su DI
+	Transparency	Skaidrumas
 	Trapped is {}, but it must be /True or /False	Trapped reikšmė yra {}, bet turi būti /True arba /False
+	Trapped key	Raktas Trapped
 	Trim the picture with its handles; Enter or Done applies	Apkarpykite paveikslėlį rankenėlėmis; Enter arba Atlikta pritaiko
 	Trust	Pasitikėti
 	Try again	Bandyti dar kartą
@@ -3459,6 +3527,7 @@ certificate	Validity starts	Galiojimo pradžia
 	Validity unknown	Galiojimas nežinomas
 	Value is not calculated	Reikšmė neskaičiuojama
 	Value is the	Reikšmė yra
+	Verifies the file against the standard, without changing it	Patikrina, ar failas atitinka standartą, jo nekeičiant
 	Verify	Patikrinti
 	Verify PDF/UA	Patikrinti PDF/UA
 	Verify PDF/X	Patikrinti PDF/X
@@ -3672,6 +3741,7 @@ document scrollbar width	Wide	Platus
 	{} annotations aren't allowed	Anotacijos {} neleidžiamos
 	{} colour can't be converted to CMYK yet	{} spalvos dar negalima konvertuoti į CMYK
 	{} colour doesn't match the output intent's colour space	{} spalvos neatitinka išvesties paskirties spalvų erdvės
+	{} compliance	{} atitiktis
 	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} reikia įterpto spausdinimo sąlygos ICC profilio RGB arba nuo įrenginio nepriklausomai spalvai: pasirinkite profilio failą
 	ΔLOC	ΔEil.
 	— (protection is applied when you save)	— (apsauga pritaikoma įrašant)
@@ -3680,6 +3750,7 @@ document scrollbar width	Wide	Platus
 	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	„{name}“ užšifruotas konkretiems žmonėms. Norėdami jį atverti, pasirinkite savo skaitmeninį ID ir įveskite jo slaptažodį.
 	“{name}” is protected. Enter a password to open it.	„{name}“ apsaugotas. Norėdami jį atverti, įveskite slaptažodį.
 	… and {n} more	… ir dar {n}
+	… and {} more on this page	… ir dar {} šiame puslapyje
 	…or paste the raw text here; # headings, - bullets	…arba čia įklijuokite pirminį tekstą; # antraštės, - sąrašai
 	− Page {p}	− {p} puslapis
 	−LOC	−Eil.

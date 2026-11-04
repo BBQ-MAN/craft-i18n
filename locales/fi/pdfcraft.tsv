@@ -45,9 +45,11 @@
 	? of {n}	?/{n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR:ää, {commits} committia, +{added} / −{deleted} riviä (Δ {delta}), +{bin_added} / −{bin_deleted} binääritiedostoa, {first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A bitmap image is drawn at {} ppi	Bittikarttakuva piirretään tarkkuudella {} ppi
 	a bookmark cannot be moved inside itself	kirjanmerkkiä ei voi siirtää itsensä sisään
 	A button	Painike
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Puhtaan huoneen menetelmällä kehitetty avoimen lähdekoodin PDF-sovellus, kirjoitettu Rustilla. MIT OR Apache-2.0.
+	A colour image is drawn at {} ppi	Värikuva piirretään tarkkuudella {} ppi
 	A colour operator's operands don't match its colour space	Värioperaattorin operandit eivät vastaa sen väriavaruutta
 	A colour space is nested too deeply to convert	Väriavaruus on sisäkkäin liian syvällä muunnettavaksi
 	A colour space's ICC profile can't be used to convert its colour	Väriavaruuden ICC-profiilia ei voi käyttää sen värin muuntamiseen
@@ -62,13 +64,17 @@
 	a field named {name} already exists	kenttä nimeltä {name} on jo olemassa
 	A font isn't embedded	Fonttia ei ole upotettu
 	A form field has additional actions	Lomakekentällä on lisätoimintoja
+	A form XObject is a transparency group	Lomake-XObject on läpinäkyvyysryhmä
 	A form XObject refers to a page of another file (reference XObject)	Lomake-XObject viittaa toisen tiedoston sivuun (viittaus-XObject)
 	A form XObject with marked content (MCIDs) is drawn {n} times	Lomake-XObject, jossa on merkittyä sisältöä (MCID), piirretään {n} kertaa
 	A graphics state sets an opacity below 1	Grafiikkatila asettaa peittävyyden alle 1:n
 	A graphics state uses a soft mask	Grafiikkatila käyttää pehmeää maskia
 	A graphics state uses the {} blend mode	Grafiikkatila käyttää sekoitustilaa {}
+	A gray image is drawn at {} ppi	Harmaasävykuva piirretään tarkkuudella {} ppi
 	a header cell with no Scope, in a table that doesn't use Headers	otsikkosolu ilman Scopea taulukossa, joka ei käytä Headersia
 	A JPEG picture in CMYK can't be converted yet	CMYK-JPEG-kuvaa ei vielä voi muuntaa
+	A line has width 0, the thinnest the printer can draw	Viivan leveys on 0, ohuin, jonka tulostin voi piirtää
+	A line is {} pt wide	Viivan leveys on {} pt
 	A link	Linkki
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logo tai nimi välilehtien vasemmalla puolella, jossa otsikkorivi näyttäisi sellaisen: PdfCraftin oma tai yrityksesi.
 	A mesh shading's colours change too sharply between its corners to convert to CMYK exactly	Verkkosävytyksen värit muuttuvat kulmien välillä liian jyrkästi tarkasti CMYK:ksi muunnettaviksi
@@ -86,6 +92,7 @@
 	A selected field has no widget on any page, so the fields can't be edited together.	Yhdellä valituista kentistä ei ole kenttäelementtiä millään sivulla, joten kenttiä ei voi muokata yhdessä.
 	A setting isn't valid	Asetus ei kelpaa
 	A shading in RGB or device-independent colour can't be converted to CMYK yet	RGB- tai laitteesta riippumattoman värin sävytystä ei vielä voi muuntaa CMYK:ksi
+	A shading uses {} colour	Sävytys käyttää väriä {}
 	A shading's colour function can't be read or evaluated	Sävytyksen värifunktiota ei voi lukea eikä laskea
 	A shading's colour function can't be resampled into CMYK exactly	Sävytyksen värifunktiota ei voi uudelleennäytteistää tarkasti CMYK:ksi
 	A shading's data can't be read, so it can't be converted to CMYK	Sävytyksen tietoja ei voi lukea, joten sitä ei voi muuntaa CMYK:ksi
@@ -100,6 +107,7 @@
 	A {} annotation has additional actions	{}-merkinnällä on lisätoimintoja
 	A {} annotation has no appearance stream	{}-merkinnällä ei ole ulkoasuvirtaa
 	A {} annotation isn't set to print, or is hidden	{}-merkintää ei ole asetettu tulostumaan, tai se on piilotettu
+	A {} annotation lies inside the trim	{}-merkintä on rajauksen sisällä
 	A {} annotation lies within the BleedBox	{}-merkintä on BleedBoxin sisällä
 	A {} colour space's parameters can't be read	Väriavaruuden {} parametreja ei voi lukea
 	About PdfCraft	Tietoja PdfCraftista
@@ -111,6 +119,7 @@
 	Accessibility	Saavutettavuus
 	Accessibility Checker	Saavutettavuuden tarkistus
 	Accessibility Checker Options	Saavutettavuuden tarkistuksen asetukset
+	Accessibility Checker rules	Saavutettavuuden tarkistimen säännöt
 	Accessibility panel	Helppokäyttöisyyspaneeli
 	Accessibility permission flag	Saavutettavuuden käyttöoikeuslippu
 	Accessibility permission flag is set	Saavutettavuuden käyttöoikeuslippu on asetettu
@@ -277,13 +286,17 @@
 	An image has a soft mask	Kuvalla on pehmeä maski
 	An image has alternates or OPI information	Kuvalla on vaihtoehtoisia kuvia tai OPI-tietoja
 	An image or form has OPI information	Kuvassa tai lomakkeessa on OPI-tietoja
+	An image uses {} colour	Kuva käyttää väriä {}
 	An indexed colour space's table is too short to convert	Indeksoidun väriavaruuden taulukko on liian lyhyt muunnettavaksi
+	An inline image uses {} colour	Upotettu kuva käyttää väriä {}
+	An object has additional actions (/AA)	Objektilla on lisätoimintoja (/AA)
 	An open-source PDF workbench — local, private, and scriptable.	Avoimen lähdekoodin PDF-työpöytä – paikallinen, yksityinen ja skriptattava.
 	An optional content configuration has an AS entry	Valinnaisen sisällön määrityksessä on AS-avain
 	and {n} more	ja {n} muuta
 	Animation effects	Animaatiotehosteet
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	Vilkkuva animaatio voi aiheuttaa kohtauksia. Tarkista komentosarjat ja media välkynnän varalta.
 	Annotation	Merkintä
+	Annotations inside the trim	Merkinnät rajauksen sisällä
 	Annotations, form fill-in, and digital signatures	Merkinnät, lomakkeiden täyttö ja digitaaliset allekirjoitukset
 	Another file dialog is still open. Finish with it first.	Toinen tiedostoikkuna on vielä auki. Sulje se ensin.
 	Any	Mikä tahansa
@@ -301,6 +314,7 @@ theme	Appearance	Teema
 	Applies to 1 page	Koskee yhtä sivua
 	Applies to {n} pages	Koskee {n} sivua
 	Apply PDF standards	Käytä PDF-standardeja
+	Apply preflight fixups	Käytä esitarkastuksen korjauksia
 	Apply redactions	Käytä peittoja
 	Apply redactions…	Toteuta peitot…
 	Apply scale	Käytä mittakaavaa
@@ -367,9 +381,11 @@ certificate	Basic constraints	Perusrajoitukset
 	Binary assets removed	Poistetut binääritiedostot
 	Binding	Sidonta
 	Binding:	Sidonta:
+	Bitmap images	Bittikarttakuvat
 	Black and white	Mustavalkoinen
 	Black on white	Musta valkoisella
 	Blank page	Tyhjä sivu
+	Bleed	Leikkuuvara
 	Blend with page content	Sekoita sivun sisältöön
 	Bold	Lihavointi
 	Booklet	Vihko
@@ -490,6 +506,9 @@ certificate	Basic constraints	Perusrajoitukset
 	Checking the scanner…	Checking the scanner…
 	Checking the structure… {n} objects so far	Tarkistetaan rakennetta… {n} objektia tähän mennessä
 	Checkmark	Valintamerkki
+	Checks a file for CMYK printing: fonts, colour, image resolution, hairlines, transparency, page boxes, encryption, JavaScript, annotations, Trapped and the PDF version	Tarkistaa tiedoston CMYK-painatusta varten: fontit, värit, kuvien tarkkuus, hiusviivat, läpinäkyvyys, sivun laatikot, salaus, JavaScript, merkinnät, Trapped ja PDF-versio
+	Checks not run	Suorittamattomat tarkistukset
+	Checks passed	Läpäistyt tarkistukset
 	Choose a digital ID file	Valitse digitaalisen tunnuksen tiedosto
 	Choose a digital ID.	Valitse digitaalinen tunnus.
 	Choose a file…	Valitse tiedosto…
@@ -516,6 +535,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Choose the digital ID that you want to use for signing:	Valitse allekirjoitukseen käytettävä digitaalinen tunnus:
 	Choose the signature to remove:	Valitse poistettava allekirjoitus:
 	Choose where to save the signed file. The service signs it once you have.	Valitse, mihin allekirjoitettu tiedosto tallennetaan. Palvelu allekirjoittaa sen, kun olet valinnut.
+	Clause	Kohta
 	Clean Up	Siivoa
 	Clean-up	Siistiminen
 	Clear all	Tyhjennä kaikki
@@ -558,6 +578,8 @@ certificate	Basic constraints	Perusrajoitukset
 	Color Images	Värikuvat
 	Color Spaces	Väriavaruudet
 	Colour	Väri
+	Colour images	Värikuvat
+	Colour the profile doesn't allow	Väri, jota profiili ei salli
 	Colours are remapped while rendering; the document itself never changes.	Värit muunnetaan hahmonnuksen aikana; itse asiakirja ei muutu.
 	Column select	Sarakevalinta
 	Column spacing	Sarakeväli
@@ -588,6 +610,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Comments only	Vain kommentit
 	Comments panel	Kommenttipaneeli
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Kommenttien, linkkien ja kenttien on oltava tagipuussa, jotta ne luetaan ääneen. Tagita merkinnät.
+	Commercial print (CMYK)	Kaupallinen painatus (CMYK)
 	Commit selected value immediately	Vahvista valittu arvo heti
 	Common Properties	Yleiset ominaisuudet
 	Common scales	Yleiset mittakaavat
@@ -612,8 +635,10 @@ certificate	Basic constraints	Perusrajoitukset
 	Console	Konsoli
 	Content copying	Sisällön kopiointi
 	Content copying for accessibility	Sisällön kopiointi saavutettavuutta varten
+	Content not read to the end on pages: {pages}	Sisältöä ei luettu loppuun sivuilla: {pages}
 	Content Streams	Sisältövirrat
 	Content uses DeviceRGB colour: PDF/X-1a allows only CMYK, gray and spot colour	Sisältö käyttää DeviceRGB-väriä: PDF/X-1a sallii vain CMYK-, harmaa- ja spottivärit
+	Content uses {} colour	Sisältö käyttää väriä {}
 	Content uses {} colour, which doesn't match the output intent's colour space	Sisältö käyttää väriä {}, joka ei vastaa tulostustarkoituksen väriavaruutta
 	Continue	Jatka
 	Continue scanning	Continue scanning
@@ -751,6 +776,7 @@ key	Ctrl	Ctrl
 	Date field	Päivämääräkenttä
 	Date format	Päivämäärän muoto
 	Date: 	Päivämäärä: 
+	Date: {date}	Päivämäärä: {date}
 	December	Joulukuu
 calendar date	December	joulukuuta
 	Decimal places:	Desimaalit:
@@ -860,6 +886,7 @@ key	Delete	Delete
 	Document timestamp	Asiakirjan aikaleima
 	Document Title	Asiakirjan otsikko
 	Document title is showing in title bar	Asiakirjan otsikko näkyy otsikkorivillä
+	Document: {name}	Asiakirja: {name}
 	Documents	Asiakirjat
 	Documents and view	Asiakirjat ja näkymä
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Yli 20-sivuisissa asiakirjoissa tarvitaan kirjanmerkit siirtymistä varten. Lisää kirjanmerkit pääosioille.
@@ -1153,6 +1180,8 @@ calendar date	February	helmikuuta
 	Fix reading order	Korjaa lukujärjestys
 	Fixed what could be fixed; 1 problem remains	Korjattiin, mikä voitiin; 1 ongelma jäljellä
 	Fixed what could be fixed; {n} problems remain	Korjattiin, mikä voitiin; {n} ongelmaa jäljellä
+	Fixup: {fixup}	Korjaus: {fixup}
+	Flags	Liput
 	Flatten comments	Litistä kommentit
 	Flatten comments and form fields	Litistä kommentit ja lomakekentät
 	Flatten Fill & Sign	Litistä Täytä ja allekirjoita
@@ -1172,6 +1201,7 @@ calendar date	February	helmikuuta
 	Font size 0 uses automatic sizing.	Fonttikoko 0 käyttää automaattista kokoa.
 	Font Size:	Fonttikoko:
 	Font size:	Fonttikoko:
+	Font type	Fonttityyppi
 	Font {} on page {p} doesn't map its characters to Unicode	Sivun {p} fontti {} ei määritä merkeilleen Unicode-vastineita
 	Font {} on page {p} draws a glyph its font program lacks (code {code})	Sivun {p} fontti {} piirtää glyfin, jota sen fonttiohjelmassa ei ole (koodi {code})
 	Font {} on page {p} draws the .notdef glyph (code {code})	Sivun {p} fontti {} piirtää .notdef-glyfin (koodi {code})
@@ -1207,6 +1237,7 @@ calendar date	February	helmikuuta
 	Font {} on page {p}: no Unicode or Mac Roman cmap of its program finds glyph {glyph} (code {code})	Sivun {p} fontti {}: mikään sen ohjelman Unicode- tai Mac Roman -cmap ei löydä glyfiä {glyph} (koodi {code})
 	Font: Helvetica	Fontti: Helvetica
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Fonttien on yhdistettävä merkkinsä Unicodeen, jotta tekstiä voi lukea ja kopioida. Korjaa fontit tai luo PDF uudelleen.
+	Fonts not embedded	Upottamattomat fontit
 	for images above	kuville, joiden tarkkuus yli
 	For page sizes and margins.	Sivukokoja ja reunuksia varten.
 	Form data and PDF forms	Lomaketiedot ja PDF-lomakkeet
@@ -1250,12 +1281,14 @@ calendar weekday	Fr	Pe
 	Go to the page	Siirry sivulle
 	Go to this result	Siirry tähän tulokseen
 	Grab bag	Sekalaiset
+	Gray images	Harmaasävykuvat
 	Grayscale Images	Harmaasävykuvat
 	Green on black	Vihreä mustalla
 	Greyscale	Harmaasävy
 	Grid view	Ruudukkonäkymä
 	Group select	Ryhmävalinta
 	H / Space (hold)	H / Välilyönti (pidä pohjassa)
+	Hairlines	Hiusviivat
 	Hand (H)	Käsi (H)
 	Hand tool	Käsityökalu
 	Has JavaScript actions (run in M6)	Sisältää JavaScript-toimintoja (suoritetaan M6:ssa)
@@ -1284,6 +1317,7 @@ calendar weekday	Fr	Pe
 	Hide window controls	Piilota ikkunan ohjaimet
 	Hide {app}	Kätke {app}
 	Hides annotation	Piilottaa merkinnän
+	Highest version	Korkein versio
 	Highlight	Korosta
 	Highlight content	Korosta sisältö
 	Highlight coverage above	Korosta peitto, joka ylittää
@@ -1304,6 +1338,7 @@ key	Home	Home
 	Image (PNG)	Kuva (PNG)
 	Image field	Kuvakenttä
 	Image pasted	Kuva liitetty
+	Image resolution	Kuvien tarkkuus
 	Image-only PDF	Pelkistä kuvista koostuva PDF
 	Images and text	Kuvat ja teksti
 	Images and text (converted to PDF)	Kuvat ja teksti (muunnetaan PDF:ksi)
@@ -1391,6 +1426,7 @@ certificate	Issuer	Myöntäjä
 	January	Tammikuu
 calendar date	January	tammikuuta
 	JavaScript	JavaScript
+	JavaScript and actions	JavaScript ja toiminnot
 	JavaScript Console	JavaScript-konsoli
 	JavaScript console…	JavaScript-konsoli…
 	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript on poistettu käytöstä (Asetukset > JavaScript).
@@ -1442,6 +1478,8 @@ certificate	Key usage	Avaimen käyttö
 	Layout and Magnification	Asettelu ja suurennus
 	Lbl and LBody	Lbl ja LBody
 	Lbl and LBody must be children of LI	Lbl- ja LBody-elementtien on oltava LI-elementin alielementtejä
+	Least bleed	Pienin leikkuuvara
+	Least resolution	Pienin tarkkuus
 	Leave out files that can't be read?	Jätetäänkö lukukelvottomat tiedostot pois?
 	Left Edge	Vasen reuna
 	Left Footer Text	Vasen alatunnisteteksti
@@ -1461,6 +1499,7 @@ certificate	Key usage	Avaimen käyttö
 	Line Style:	Viivatyyli:
 	Line thickness	Viivan paksuus
 	Line Thickness:	Viivan paksuus:
+	Line width	Viivan leveys
 	Link Action	Linkin toiminto
 	Link annotation on page {p} has no description (Contents)	Sivun {p} linkkimerkinnällä ei ole kuvausta (Contents)
 	Link Appearance	Linkin ulkoasu
@@ -1566,6 +1605,7 @@ calendar weekday	Mo	Ma
 	More options:	Lisäasetukset:
 	more than one H heading in it	siinä on useampi kuin yksi H-otsikko
 	More ways to add files	Lisää tapoja lisätä tiedostoja
+	Most spot colours	Spottivärien enimmäismäärä
 	Mouse Down	Hiiren painike painetaan
 	Mouse Enter	Hiiri siirtyy alueelle
 	Mouse Exit	Hiiri poistuu alueelta
@@ -1685,6 +1725,7 @@ calendar weekday	Mo	Ma
 	No photo chosen	Kuvaa ei valittu
 	No preview	Ei esikatselua
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Tulostimia ei löytynyt. Tarkista, että tulostin on asennettu ja taustatulostuspalvelu on käynnissä, ja avaa sitten Tulosta uudelleen.
+	No problems found	Ongelmia ei löytynyt
 	No problems found: the document conforms to {level}.	Ongelmia ei löytynyt: asiakirja on {level}-yhteensopiva.
 	No recent files	Ei viimeisimpiä tiedostoja
 	No recipients yet.	Ei vastaanottajia vielä.
@@ -1917,6 +1958,7 @@ animation effects	On	Käytössä
 	Pages to Print	Tulostettavat sivut
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Sivuja, joiden tekstiä ei voitu lukea: {n}. Niillä olevia osumia ei näytetä.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Sivuilla, joilla on linkkejä, kommentteja tai kenttiä, sarkaimen tulisi edetä rakennejärjestyksessä. Korjaus asettaa kunkin sivun sarkainjärjestykseksi Käytä asiakirjan rakennetta.
+	Pages without a TrimBox	Sivut ilman TrimBoxia
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Sivut {pages} muuttuivat taustan lisäämisen jälkeen, joten niiden omat valkoiset täytöt pysyvät pois päältä. Valkoisella paperilla ne näyttävät samalta.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Sivuilla {pages} on oma valkoinen täyttö, joka peittäisi taustan. Korvaa ne
 	Pages:	Sivut:
@@ -1989,8 +2031,10 @@ animation effects	On	Käytössä
 	Pinned Tools	Kiinnitetyt työkalut
 	Pinned {folder} to Home	{folder} kiinnitetty aloitussivulle
 	Pinned {tool} to Home	{tool} kiinnitetty aloitussivulle
+	Pixels	Kuvapisteet
 	PKCS #11 modules	PKCS #11 -moduulit
 	Place saved {what}	Sijoita tallennettu {what}
+	Placed size	Sijoitettu koko
 	Plain text in reading order; pages are separated by form feeds.	Pelkkä teksti lukujärjestyksessä; sivut erotetaan sivunvaihtomerkeillä.
 	Planned	Suunniteltu
 	Planned for milestone	Suunniteltu välitavoitteeseen
@@ -2008,6 +2052,7 @@ animation effects	On	Käytössä
 	PostScript XObjects aren't allowed	PostScript-XObjecteja ei sallita
 	Prefix	Etuliite
 	Preflight	Esitarkastus
+	Preflight report	Esitarkastuksen raportti
 	Prepare a form	Valmistele lomake
 	Prepare for accessibility	Valmistele saavutettavuutta varten
 	Prepare for Distribution	Valmistele jakelua varten
@@ -2056,6 +2101,7 @@ animation effects	On	Käytössä
 	Private data of other applications	Muiden sovellusten yksityiset tiedot
 	Producer	PDF-tuottaja
 	product (x)	tulo (x)
+	Profile: {profile}	Profiili: {profile}
 	Properties…	Ominaisuudet…
 	Protect	Suojaa
 	Protect & Standardize	Suojaa ja standardoi
@@ -2149,6 +2195,7 @@ certificate	Public key	Julkinen avain
 	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	Poista piilotetut tiedot, metatiedot, komentosarjat ja upotettu sisältö ja kirjoita tiedostot uudelleen.
 	Remove hidden information…	Poista piilotetut tiedot…
 	Remove invalid links and bookmarks	Poista virheelliset linkit ja kirjanmerkit
+	Remove JavaScript and actions	Poista JavaScript ja toiminnot
 	Remove page	Poista sivu
 	Remove redaction marks	Poista peittomerkinnät
 	Remove saved {what}	Poista tallennettu {what}
@@ -2287,12 +2334,14 @@ review-suggestion	Replacement text	Korvaava teksti
 	Rows	Rivit
 	rows both directly in it and in THead, TBody or TFoot	rivejä sekä suoraan siinä että THeadissa, TBodyssa tai TFootissa
 	rows have between {min} and {max} columns	riveillä on {min}–{max} saraketta
+	Rule	Sääntö
 	Rule Name	Säännön nimi
 	Run	Suorita
 	Run a JavaScript	Suorita JavaScript
 	Run form script	Suorita lomakkeen komentosarja
 	Run JavaScript	Suorita JavaScript
 	Running action… file {d} of {t}	Suoritetaan toimintoa… tiedosto {d}/{t}
+	Runs the Accessibility Checker's rules	Suorittaa saavutettavuuden tarkistimen säännöt
 calendar weekday	Sa	La
 	Same as interface	Sama kuin käyttöliittymä
 	Same as interface ({language})	Sama kuin käyttöliittymä ({language})
@@ -2397,6 +2446,7 @@ calendar weekday	Sa	La
 	Searching… {s} of {p} pages	Haetaan… {s}/{p} sivua
 	Searching… {s}/{p}	Haetaan… {s}/{p}
 	Search…	Hae…
+	Security handler	Suojauksen käsittelijä
 	Security method	Suojausmenetelmä
 	Security properties	Suojausominaisuudet
 	Security properties…	Suojausominaisuudet…
@@ -2461,6 +2511,7 @@ certificate	Serial number	Sarjanumero
 	Set Fields to Same Size	Aseta kentät samankokoisiksi
 	Set layer visibility	Aseta tason näkyvyys
 	Set measurement scale	Aseta mittakaava
+	Set missing TrimBoxes from the CropBox	Aseta puuttuvat TrimBoxit CropBoxin mukaan
 	Set Page Boxes	Määritä sivualueet
 	Set page boxes	Määritä sivualueet
 	Set page boxes…	Määritä sivualueet…
@@ -2477,6 +2528,8 @@ certificate	Serial number	Sarjanumero
 	Set the image of {name}	Aseta kentän {name} kuva
 	Set to current page ({n})	Aseta nykyiseksi sivuksi ({n})
 	Set to zero	Nollaa
+	Set Trapped to False	Aseta Trapped arvoon False
+	Set Trapped to True	Aseta Trapped arvoon True
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Settings this source offers. Leave a control alone to keep the driver’s value.
 	SHA-1 digest	SHA-1-tiiviste
 certificate	SHA-1 digest	SHA-1-tiiviste
@@ -2557,6 +2610,7 @@ key	Shift	Vaihto
 	Simulate overprinting	Simuloi päällepainatus
 	Simulation: device formulas	Simulointi: laitekaavat
 	Simulation: {profile}	Simulointi: {profile}
+	Single checks	Yksittäiset tarkistukset
 	Single file	Yksi tiedosto
 	Single Page	Yksi sivu
 	Single page	Yksi sivu
@@ -2598,6 +2652,8 @@ key	Space	Välilyönti
 	Split document	Jaa asiakirja
 	Split document…	Jaa asiakirja…
 	Split into files…	Jaa tiedostoiksi…
+	Spot colour {}	Spottiväri {}
+	Spot colours	Spottivärit
 	Spreadsheet (.xlsx)	Laskentataulukko (.xlsx)
 	Squiggly	Aaltoviiva
 	Squiggly underline	Aaltoviiva-alleviivaus
@@ -2636,6 +2692,7 @@ certificate	Subject	Kohde
 	Summarize	Tee yhteenveto
 	Summarize comments	Tee kommenttiyhteenveto
 	Summarize Options	Yhteenvedon asetukset
+	Summary: {errors} errors, {warnings} warnings, {info} information	Yhteenveto: {errors} virhettä, {warnings} varoitusta, {info} tietoa
 	Superscript	Superscript
 	Swap width and height	Vaihda leveys ja korkeus
 	Switch light / dark theme	Vaihda vaalea / tumma teema
@@ -2705,6 +2762,7 @@ calendar weekday	Th	To
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Toiminto epäonnistui sisäisen virheen vuoksi ({m}). Asiakirjasi ovat ennallaan.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	alueen, välien ja sarakeleveyksien on oltava lukuja, välien vähintään 0 ja jokaisen leveyden yli 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
+	The bleed is {} mm on its narrowest side	Leikkuuvara on kapeimmalta sivultaan {} mm
 	The bookmarks have no language: the document sets none (Lang)	Kirjanmerkeillä ei ole kieltä: asiakirja ei määritä sitä (Lang)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.
 	The catalog has no metadata stream (XMP)	Katalogissa ei ole metatietovirtaa (XMP)
@@ -2785,6 +2843,8 @@ calendar weekday	Th	To
 	The file has a reference XObject (Ref)	Tiedostossa on viittaus-XObject (Ref)
 	The file is encrypted but its encryption dictionary has no permissions (P)	Tiedosto on salattu, mutta sen salaussanakirjassa ei ole oikeuksia (P)
 	The file is PDF {v}, not PDF 2.0	Tiedosto on PDF {v}, ei PDF 2.0
+	The file is PDF {}	Tiedosto on PDF {}
+	The file is PDF {}, newer than the profile allows	Tiedosto on PDF {}, uudempi kuin profiili sallii
 	The file trailer has no document ID	Tiedoston trailerissa ei ole asiakirjan tunnistetta
 	the first heading is an H{n}; headings should not skip levels	ensimmäinen otsikko on H{n}; otsikkotasoja ei pidä ohittaa
 	the first row number can be at most {max}	ensimmäisen rivin numero voi olla enintään {max}
@@ -2838,8 +2898,11 @@ calendar weekday	Th	To
 	The page has both a TrimBox and an ArtBox	Sivulla on sekä TrimBox että ArtBox
 	The page has changed; select the image again	Sivu on muuttunut; valitse kuva uudelleen
 	The page has neither a TrimBox nor an ArtBox	Sivulla ei ole TrimBoxia eikä ArtBoxia
+	The page has no BleedBox	Sivulla ei ole BleedBoxia
 	The page has no valid MediaBox	Sivulla ei ole kelvollista MediaBoxia
+	The page is a transparency group	Sivu on läpinäkyvyysryhmä
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
+	The pages use {} spot colours	Sivut käyttävät {} spottiväriä
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sivut poimittiin mutta niitä ei poistettu, koska asiakirja muuttui kansion valinnan aikana.
 	the password is incorrect	salasana on väärä
 	The password is incorrect.	Salasana on väärä.
@@ -2870,6 +2933,7 @@ calendar weekday	Th	To
 	The provider's page didn't come back in time. Try again.	Palveluntarjoajan sivu ei palannut ajoissa. Yritä uudelleen.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Uudelleenohjauksen URI:n on oltava http://127.0.0.1 tai http://localhost portin kanssa.
 	The replacement file doesn't have that many pages.	Korvaavassa tiedostossa ei ole niin montaa sivua.
+	The resolution of an image can't be measured	Kuvan tarkkuutta ei voi mitata
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Rajoitukset koskevat vastaanottajia, joilla ei ole “Kaikki oikeudet” -oikeutta. Ne otetaan käyttöön tallennettaessa.
 	The reverse sides already scanned are kept.	The reverse sides already scanned are kept.
 	The reverse sides were cancelled: their document was closed.	The reverse sides were cancelled: their document was closed.
@@ -2986,10 +3050,12 @@ calendar weekday	Th	To
 	Thick	Paksu
 	Thickness	Paksuus
 	Thin	Ohut
+	Thinnest line	Ohuin viiva
 	This area has too many overlapping paths; intersection snapping is limited.	Tällä alueella on liian monta päällekkäistä polkua; leikkauspisteiden tartunta on rajoitettu.
 	This certificate is in your list of trusted certificates.	Tämä varmenne on luotettujen varmenteiden luettelossa.
 	This certificate is not trusted. Signatures made with it show an unknown identity.	Tähän varmenteeseen ei luoteta. Sillä tehdyt allekirjoitukset näyttävät tuntemattoman henkilöllisyyden.
 	This certificate is trusted through a certificate above it in the chain.	Tähän varmenteeseen luotetaan ketjussa ylempänä olevan varmenteen kautta.
+	This check needs the Accessibility Checker, which isn't available here	Tämä tarkistus tarvitsee saavutettavuuden tarkistimen, joka ei ole käytettävissä täällä
 	This comment's appearance can't be changed yet.	Tämän kommentin ulkoasua ei voi vielä muuttaa.
 	This compatibility level supports only plain ASCII passwords.	Tämä yhteensopivuustaso tukee vain pelkkiä ASCII-salasanoja.
 	This dialog shows the details of a certificate and its chain.	Tässä ikkunassa näkyvät varmenteen ja sen ketjun tiedot.
@@ -3097,6 +3163,7 @@ calendar weekday	Th	To
 	Transform image	Muunna kuvaa
 	Translate	Käännä
 	Trapped is {}, but it must be /True or /False	Trapped on {}, mutta sen on oltava /True tai /False
+	Trapped key	Trapped-avain
 	Trim the picture with its handles; Enter or Done applies	Rajaa kuvaa sen kahvoilla; Enter tai Valmis ottaa rajauksen käyttöön
 	Trust	Luottamus
 	Try again	Try again
@@ -3207,6 +3274,7 @@ certificate	Validity starts	Voimassaolo alkaa
 	Value is not calculated	Arvoa ei lasketa
 	Value is the	Arvo on
 	Value:	Arvo:
+	Verifies the file against the standard, without changing it	Tarkistaa tiedoston standardia vasten muuttamatta sitä
 	Verify	Tarkista
 	Verify PDF/UA	Tarkista PDF/UA
 	Verify PDF/X	Tarkista PDF/X
@@ -3417,6 +3485,7 @@ calendar weekday	We	Ke
 	{} annotations aren't allowed	{}-merkinnät eivät ole sallittuja
 	{} colour can't be converted to CMYK yet	Väriä {} ei vielä voi muuntaa CMYK:ksi
 	{} colour doesn't match the output intent's colour space	Väri {} ei vastaa tulostustarkoituksen väriavaruutta
+	{} compliance	{}-yhdenmukaisuus
 	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} tarvitsee painoehdon ICC-profiilin upotettuna RGB- tai laitteesta riippumatonta väriä varten: valitse profiilitiedosto
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (suojaus otetaan käyttöön tallennettaessa)
@@ -3425,6 +3494,7 @@ calendar weekday	We	Ke
 	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	“{name}” on salattu tietyille henkilöille. Valitse digitaalinen tunnuksesi ja avaa se antamalla sen salasana.
 	“{name}” is protected. Enter a password to open it.	”{name}” on suojattu. Avaa se antamalla salasana.
 	… and {n} more	… ja {n} muuta
+	… and {} more on this page	… ja {} muuta tällä sivulla
 	− Page {p}	− Sivu {p}
 	−Bin	−Bin
 	−LOC	−LOC

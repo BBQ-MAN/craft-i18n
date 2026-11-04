@@ -50,9 +50,11 @@
 	? of {n}	? z {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: PR: {prs}, commity: {commits}, +{added} / −{deleted} řádků (Δ {delta}), +{bin_added} / −{bin_deleted} binárních souborů, {first} – {last}
 	`{command}` {when}	Příkaz `{command}` {when}
+	A bitmap image is drawn at {} ppi	Bitmapový obrázek se kreslí v {} ppi
 	a bookmark cannot be moved inside itself	záložku nelze přesunout do ní samé
 	A button	Tlačítko
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Open-source aplikace pro PDF napsaná v Rustu metodou clean-room. MIT OR Apache-2.0.
+	A colour image is drawn at {} ppi	Barevný obrázek se kreslí v {} ppi
 	A colour operator's operands don't match its colour space	Operandy barevného operátoru neodpovídají jeho barevnému prostoru
 	A colour space is nested too deeply for the spaces under it to be checked	Barevný prostor je vnořen příliš hluboko, takže prostory pod ním nelze zkontrolovat
 	A colour space is nested too deeply to convert	Barevný prostor je vnořený příliš hluboko na převod
@@ -68,13 +70,17 @@
 	a field named {name} already exists	pole s názvem {name} už existuje
 	A font isn't embedded	Písmo není vložené
 	A form field has additional actions	Formulářové pole má dodatečné akce
+	A form XObject is a transparency group	Formulářový XObject je skupina průhlednosti
 	A form XObject refers to a page of another file (reference XObject)	Formulářový XObject odkazuje na stránku jiného souboru (referenční XObject)
 	A form XObject with marked content (MCIDs) is drawn {n} times	Formulářový XObject s označeným obsahem (MCID) se kreslí {n}krát
 	A graphics state sets an opacity below 1	Grafický stav nastavuje krytí menší než 1
 	A graphics state uses a soft mask	Grafický stav používá měkkou masku
 	A graphics state uses the {} blend mode	Grafický stav používá režim prolnutí {}
+	A gray image is drawn at {} ppi	Šedý obrázek se kreslí v {} ppi
 	a header cell with no Scope, in a table that doesn't use Headers	buňka záhlaví bez Scope v tabulce, která nepoužívá Headers
 	A JPEG picture in CMYK can't be converted yet	Obrázek JPEG v CMYK zatím nelze převést
+	A line has width 0, the thinnest the printer can draw	Čára má šířku 0, nejtenčí, jakou tiskárna dokáže nakreslit
+	A line is {} pt wide	Čára je široká {} pt
 	A link	Odkaz
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Místní model není špičkový cloudový model: může se mýlit a dlouhá odpověď na procesoru chvíli trvá. Důležité si ověřte a před stažením si uvědomte velikost modelu proti tomuto počítači.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Logo nebo název vlevo od karet, kde by je zobrazil záhlaví okna: vlastní PdfCraft, nebo vaší firmy.
@@ -93,6 +99,7 @@
 	A selected field has no widget on any page, so the fields can't be edited together.	Vybrané pole nemá na žádné stránce widget, takže pole nelze upravit společně.
 	A setting isn't valid	Nastavení není platné
 	A shading in RGB or device-independent colour can't be converted to CMYK yet	Stínování v barvě RGB nebo nezávislé na zařízení zatím nelze převést do CMYK
+	A shading uses {} colour	Stínování používá barvu {}
 	A shading's colour function can't be read or evaluated	Barevnou funkci stínování nelze přečíst ani vyhodnotit
 	A shading's colour function can't be resampled into CMYK exactly	Barevnou funkci stínování nelze přesně převzorkovat do CMYK
 	A shading's data can't be read, so it can't be converted to CMYK	Data stínování nelze přečíst, takže ho nelze převést do CMYK
@@ -105,6 +112,7 @@
 	A {} annotation has additional actions	Anotace {} má další akce
 	A {} annotation has no appearance stream	Anotace {} nemá datový proud vzhledu
 	A {} annotation isn't set to print, or is hidden	Anotace {} není nastavena k tisku nebo je skrytá
+	A {} annotation lies inside the trim	Anotace {} leží uvnitř ořezu
 	A {} annotation lies within the BleedBox	Anotace {} leží uvnitř BleedBox
 	A {} colour space's parameters can't be read	Parametry barevného prostoru {} nelze přečíst
 	About PdfCraft	O aplikaci PdfCraft
@@ -115,6 +123,7 @@
 	Accepted by {printer}	Přijato tiskárnou {printer}
 	Accessibility Checker	Kontrola přístupnosti
 	Accessibility Checker Options	Možnosti kontroly přístupnosti
+	Accessibility Checker rules	Pravidla kontroly přístupnosti
 	Accessibility panel	Panel přístupnosti
 	Accessibility permission flag	Příznak oprávnění přístupnosti
 	Accessibility permission flag is set	Příznak oprávnění přístupnosti je nastaven
@@ -286,12 +295,16 @@
 	An image has a soft mask	Obrázek má měkkou masku
 	An image has alternates or OPI information	Obrázek má alternativy nebo informace OPI
 	An image or form has OPI information	Obrázek nebo formulář obsahuje informace OPI
+	An image uses {} colour	Obrázek používá barvu {}
 	An indexed colour space's table is too short to convert	Tabulka indexovaného barevného prostoru je na převod příliš krátká
+	An inline image uses {} colour	Vložený obrázek používá barvu {}
+	An object has additional actions (/AA)	Objekt má další akce (/AA)
 	An open-source PDF workbench — local, private, and scriptable.	Open-source dílna pro PDF — lokální, soukromá a skriptovatelná.
 	An optional content configuration has an AS entry	Konfigurace volitelného obsahu má položku AS
 	and {n} more	a dalších {n}
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	Blikající animace může vyvolat záchvat. Zkontrolujte skripty a média, zda neblikají.
 	Annotation	Anotace
+	Annotations inside the trim	Anotace uvnitř ořezu
 	Annotations, form fill-in, and digital signatures	Anotace, vyplňování formulářů a digitální podpisy
 	Another file dialog is still open. Finish with it first.	Je stále otevřené jiné dialogové okno se soubory. Nejdřív ho dokončete.
 	Any except extracting pages	Cokoli kromě extrakce stránek
@@ -310,6 +323,7 @@ theme	Appearance	Vzhled
 	Applies to 1 page	Týká se 1 stránky
 	Applies to {n} pages	Počet dotčených stránek: {n}
 	Apply PDF standards	Použít standardy PDF
+	Apply preflight fixups	Použít opravy předtiskové kontroly
 	Apply redactions	Provést začernění
 	Apply redactions…	Provést začernění…
 	Apply scale	Použít měřítko
@@ -393,9 +407,11 @@ certificate	Basic constraints	Základní omezení
 	Binary assets removed	Odstraněné binární soubory
 	Binding	Vazba
 	Binding:	Vazba:
+	Bitmap images	Bitmapové obrázky
 	Black & White Document	Černobílý dokument
 	Black on white	Černá na bílém
 	Blank page	Prázdná stránka
+	Bleed	Spadávka
 	Blend with page content	Smíchat s obsahem stránky
 	Booklet	Brožura
 	Booklet subset:	Strany brožury:
@@ -515,6 +531,9 @@ certificate	Basic constraints	Základní omezení
 	Checking the scanner…	Kontrola skeneru…
 	Checking the structure… {n} objects so far	Kontrola struktury… zatím {n} objektů
 	Checkmark	Zaškrtnutí
+	Checks a file for CMYK printing: fonts, colour, image resolution, hairlines, transparency, page boxes, encryption, JavaScript, annotations, Trapped and the PDF version	Kontroluje soubor pro tisk CMYK: písma, barvy, rozlišení obrázků, vlasové čáry, průhlednost, rámečky stránky, šifrování, JavaScript, anotace, Trapped a verzi PDF
+	Checks not run	Nespuštěné kontroly
+	Checks passed	Úspěšné kontroly
 	Choose a digital ID file	Vyberte soubor digitálního ID
 	Choose a digital ID.	Vyberte digitální ID.
 	Choose a file…	Vybrat soubor…
@@ -546,6 +565,7 @@ certificate	Basic constraints	Základní omezení
 	Choose the module's library file.	Vyberte soubor knihovny modulu.
 	Choose the signature to remove:	Zvolte podpis, který chcete odstranit:
 	Choose where to save the signed file. The service signs it once you have.	Zvolte, kam uložit podepsaný soubor. Služba ho podepíše, jakmile to uděláte.
+	Clause	Klauzule
 	Clean Up	Vyčištění
 	Clean-up	Vyčištění
 	Clear All	Zrušit výběr
@@ -593,6 +613,8 @@ certificate	Basic constraints	Základní omezení
 	Color Images	Barevné obrázky
 	Color Photo	Barevná fotografie
 	Color Spaces	Barevné prostory
+	Colour images	Barevné obrázky
+	Colour the profile doesn't allow	Barva, kterou profil nepovoluje
 	Colours are remapped while rendering; the document itself never changes.	Barvy se mění při vykreslování; samotný dokument se nikdy nemění.
 	Column select	Výběr sloupce
 	Column spacing	Mezera mezi sloupci
@@ -621,6 +643,7 @@ certificate	Basic constraints	Základní omezení
 	Comments panel	Panel komentářů
 	Comments to send	Komentáře k odeslání
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Komentáře, odkazy a pole musí být ve stromu tagů, aby je čtečky oznámily. Označkujte anotace.
+	Commercial print (CMYK)	Komerční tisk (CMYK)
 	Commit selected value immediately	Potvrdit vybranou hodnotu okamžitě
 	Common Properties	Společné vlastnosti
 	Common scales	Běžná měřítka
@@ -647,8 +670,10 @@ certificate	Basic constraints	Základní omezení
 	Console	Konzole
 	Content copying	Kopírování obsahu
 	Content copying for accessibility	Kopírování obsahu kvůli přístupnosti
+	Content not read to the end on pages: {pages}	Obsah nepřečtený do konce na stránkách: {pages}
 	Content Streams	Proudy obsahu
 	Content uses DeviceRGB colour: PDF/X-1a allows only CMYK, gray and spot colour	Obsah používá barvu DeviceRGB: PDF/X-1a povoluje jen CMYK, šedou a přímé barvy
+	Content uses {} colour	Obsah používá barvu {}
 	Content uses {} colour, which doesn't match the output intent's colour space	Obsah používá barvu {}, která neodpovídá barevnému prostoru výstupního záměru
 	Continue scanning	Pokračovat ve skenování
 	Continue scanning fronts	Pokračovat ve skenování lícových stran
@@ -804,6 +829,7 @@ key	Ctrl	Ctrl
 	Data Encipherment	Šifrování dat
 	Date field	Pole data
 	Date: 	Datum: 
+	Date: {date}	Datum: {date}
 	Dates	Kalendářní data
 	Deactivate Read Out Loud	Deaktivovat hlasité čtení
 	December	Prosinec
@@ -920,6 +946,7 @@ key	Delete	Delete
 	Document structure provides a logical reading order	Struktura dokumentu poskytuje logické pořadí čtení
 	Document timestamp	Časové razítko dokumentu
 	Document title is showing in title bar	V záhlaví okna se zobrazuje název dokumentu
+	Document: {name}	Dokument: {name}
 	Documents and view	Dokumenty a zobrazení
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Dokumenty s více než 20 stránkami potřebují k navigaci záložky. Přidejte záložky hlavních oddílů.
 	Does not match what was signed	Neodpovídá podepsanému
@@ -1225,6 +1252,8 @@ calendar date	February	února
 	Fix reading order	Opravit pořadí čtení
 	Fixed what could be fixed; 1 problem remains	Opraveno, co šlo; zbývá 1 problém
 	Fixed what could be fixed; {n} problems remain	Opraveno, co šlo; zbývající problémy: {n}
+	Fixup: {fixup}	Oprava: {fixup}
+	Flags	Příznaky
 	Flatbed	Sklo skeneru
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	Tuto instalaci spravuje Flatpak. Aktualizace vyhledejte ve správci softwaru nebo příkazem flatpak update.
 	Flatten	Sloučit se stránkou
@@ -1245,6 +1274,7 @@ calendar date	February	února
 	Font colour:	Barva písma:
 	Font size 0 uses automatic sizing.	Velikost písma 0 zapne automatickou velikost.
 	Font size:	Velikost písma:
+	Font type	Typ písma
 	Font {} on page {p} doesn't map its characters to Unicode	Písmo {} na stránce {p} nemapuje své znaky na Unicode
 	Font {} on page {p} draws a glyph its font program lacks (code {code})	Písmo {} na stránce {p} kreslí glyf, který jeho program písma nemá (kód {code})
 	Font {} on page {p} draws the .notdef glyph (code {code})	Písmo {} na stránce {p} kreslí glyf .notdef (kód {code})
@@ -1280,6 +1310,7 @@ calendar date	February	února
 	Font {} on page {p}: no Unicode or Mac Roman cmap of its program finds glyph {glyph} (code {code})	Písmo {} na stránce {p}: žádný cmap Unicode ani Mac Roman jeho programu nenajde glyf {glyph} (kód {code})
 	Font: Helvetica	Písmo: Helvetica
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Písma musí mapovat své znaky na Unicode, aby šel text číst a kopírovat. Opravte písma nebo PDF vytvořte znovu.
+	Fonts not embedded	Nevložená písma
 	for images above	u obrázků nad
 	For page sizes and margins.	Pro velikosti stránek a okraje.
 	Form data and PDF forms	Data formulářů a formuláře PDF
@@ -1329,12 +1360,14 @@ calendar weekday	Fr	Pá
 	Go to this result	Přejít na tento výsledek
 	Grab bag	Volný seznam
 	Graphic	Grafika
+	Gray images	Šedé obrázky
 	Grayscale Document	Dokument ve stupních šedi
 	Grayscale Images	Obrázky ve stupních šedi
 	Green on black	Zelená na černém
 	Greyscale	Stupně šedi
 	Group select	Výběr skupiny
 	H / Space (hold)	H / mezerník (podržet)
+	Hairlines	Vlasové čáry
 	Hand	Ruka
 	Hand (H)	Ruka (H)
 	Hand Tool	Nástroj ručička
@@ -1368,6 +1401,7 @@ calendar weekday	Fr	Pá
 	Hides annotation	Skrývá anotaci
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Vyšší kvalita obrázků znamená větší soubory. Kopie se uloží pouze tehdy, je-li menší.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Vyšší kvalita, obvykle větší soubory. Fotografie JPEG nad 450 ppi se zmenší na 300 ppi, kvalita 85. Bezeztrátová grafika a obrázky s maskami si zachovají své pixely.
+	Highest version	Nejvyšší verze
 	Highlight	Zvýraznění
 	Highlight content	Zvýraznit obsah
 	Highlight coverage above	Zvýraznit krytí nad
@@ -1388,6 +1422,7 @@ key	Home	Home
 	Image (PNG)	Obrázek (PNG)
 	Image field	Pole obrázku
 	Image pasted	Obrázek vložen
+	Image resolution	Rozlišení obrázků
 	Image-only PDF	PDF jen s obrázky
 	Images	Obrázky
 	Images and text	Obrázky a text
@@ -1485,6 +1520,7 @@ certificate	Issuer	Vydavatel
 	January	Leden
 calendar date	January	ledna
 	JavaScript	JavaScript
+	JavaScript and actions	JavaScript a akce
 	JavaScript Console	Konzole JavaScriptu
 	JavaScript console…	Konzole JavaScriptu…
 	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript je vypnutý („Předvolby > JavaScript“).
@@ -1533,6 +1569,8 @@ certificate	Key usage	Použití klíče
 	Layout and Magnification	Rozvržení a zvětšení
 	Lbl and LBody	Lbl a LBody
 	Lbl and LBody must be children of LI	Lbl a LBody musí být potomky LI
+	Least bleed	Nejmenší spadávka
+	Least resolution	Nejmenší rozlišení
 	Leave out files that can't be read?	Vynechat soubory, které nelze přečíst?
 	Left Edge	Levý okraj
 	Left Footer Text	Text zápatí vlevo
@@ -1554,6 +1592,7 @@ certificate	Key usage	Použití klíče
 	Line thickness	Tloušťka čáry
 	Line Thickness:	Tloušťka čáry:
 	Line weights	Tloušťky čar
+	Line width	Šířka čáry
 	Link Action	Akce odkazu
 	Link annotation on page {p} has no description (Contents)	Anotace odkazu na stránce {p} nemá popis (Contents)
 	Link Appearance	Vzhled odkazu
@@ -1669,6 +1708,7 @@ calendar weekday	Mo	Po
 	More options:	Další možnosti:
 	more than one H heading in it	obsahuje více než jeden nadpis H
 	More ways to add files	Další způsoby přidání souborů
+	Most spot colours	Nejvíce přímých barev
 	Mouse Down	Stisknutí tlačítka myši
 	Mouse Enter	Najetí kurzoru
 	Mouse Exit	Odjetí kurzoru
@@ -1802,6 +1842,7 @@ calendar weekday	Mo	Po
 	No plugins installed. A plugin is a single .wasm file; install one above.	Nejsou nainstalovány žádné pluginy. Plugin je jeden soubor .wasm; nainstalujte jej výše.
 	No preview	Bez náhledu
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Nebyly nalezeny žádné tiskárny. Zkontrolujte, že je tiskárna nainstalovaná a zařazování tisku běží, a pak znovu otevřete Tisk.
+	No problems found	Nebyly nalezeny žádné problémy
 	No problems found: the document conforms to {level}.	Nenalezeny žádné problémy: dokument vyhovuje standardu {level}.
 	No raw file yet	Zatím žádný zdrojový soubor
 	No recipients yet.	Zatím žádní příjemci.
@@ -2060,6 +2101,7 @@ animation effects	On	Zapnuto
 	Pages to Print	Stránky k tisku
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Stránky, jejichž text nešlo přečíst: {n}. Shody na nich nejsou uvedeny.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Stránky s odkazy, komentáři nebo poli by se měly procházet tabulátorem v pořadí struktury. Oprava nastaví pořadí tabulátoru každé stránky na Podle struktury dokumentu.
+	Pages without a TrimBox	Stránky bez TrimBox
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Stránky {pages} se po přidání pozadí změnily, proto jejich vlastní bílá výplň zůstává vypnutá. Na bílém papíře vypadají stejně.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Stránky {pages} mají vlastní bílou výplň, která by zakryla pozadí. Nahradit ji
 	Pages:	Stránky:
@@ -2141,11 +2183,13 @@ animation effects	On	Zapnuto
 	Pinned {folder} to Home	Složka {folder} je připnutá na úvodní obrazovce
 	Pinned {tool} to Home	{tool} připnuto na úvodní stránku
 	Pitch:	Výška tónu:
+	Pixels	Pixely
 	PKCS #11 device  ·  	Zařízení PKCS #11  ·  
 	PKCS #11 module	Modul PKCS #11
 	PKCS #11 modules	PKCS #11 moduly
 	PKCS #11 token  ·  	Token PKCS #11  ·  
 	Place saved {what}	Umístit uložené: {what}
+	Placed size	Umístěná velikost
 	Plain text in reading order; pages are separated by form feeds.	Prostý text v pořadí čtení; stránky jsou oddělené znakem nové stránky.
 	Planned	Plánováno
 	Planned for milestone	Plánováno pro milník
@@ -2162,6 +2206,7 @@ animation effects	On	Zapnuto
 	PostScript / EPS	PostScript / EPS
 	PostScript XObjects aren't allowed	Objekty PostScript XObject nejsou povoleny
 	Preflight	Předtisková kontrola
+	Preflight report	Protokol předtiskové kontroly
 	Prepare a form	Připravit formulář
 	Prepare for accessibility	Zajistit přístupnost
 	Prepare for Distribution	Připravit k distribuci
@@ -2212,6 +2257,7 @@ animation effects	On	Zapnuto
 	Private data of other applications	Soukromá data jiných aplikací
 	Producer	Producent PDF
 	product (x)	součin (x)
+	Profile: {profile}	Profil: {profile}
 	Properties…	Vlastnosti…
 	Protect & Standardize	Ochrana a standardizace
 	Protect a PDF	Zabezpečit PDF
@@ -2327,6 +2373,7 @@ certificate	Public key	Veřejný klíč
 	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	Odebere skryté informace, metadata, skripty a vložený obsah a soubory znovu zapíše.
 	Remove hidden information…	Odebrat skryté informace…
 	Remove invalid links and bookmarks	Odebrat neplatné odkazy a záložky
+	Remove JavaScript and actions	Odebrat JavaScript a akce
 	Remove page	Odebrat stránku
 	Remove redaction marks	Odebrat značky začernění
 	Remove saved {what}	Odebrat uložené: {what}
@@ -2466,12 +2513,14 @@ certificate	Public key	Veřejný klíč
 	Row spacing	Mezera mezi řádky
 	rows both directly in it and in THead, TBody or TFoot	řádky přímo v něm i v THead, TBody nebo TFoot
 	rows have between {min} and {max} columns	řádky mají {min} až {max} sloupců
+	Rule	Pravidlo
 	Rule Name	Název pravidla
 	Run	Spustit
 	Run a JavaScript	Spustit JavaScript
 	Run form script	Spustit skript formuláře
 	Run JavaScript	Spustit JavaScript
 	Running action… file {d} of {t}	Probíhá akce… soubor {d} z {t}
+	Runs the Accessibility Checker's rules	Spustí pravidla kontroly přístupnosti
 	Runtime	Prostředí
 calendar weekday	Sa	So
 	Safety margin (pt)	Ochranný okraj (b.)
@@ -2597,6 +2646,7 @@ calendar weekday	Sa	So
 	Searching… {s} of {p} pages	Hledání… stránka {s} z {p}
 	Searching… {s}/{p}	Hledání… {s}/{p}
 	Search…	Hledat…
+	Security handler	Obslužná rutina zabezpečení
 	Security method	Metoda zabezpečení
 	Security properties	Vlastnosti zabezpečení
 	Security properties…	Vlastnosti zabezpečení…
@@ -2665,6 +2715,7 @@ certificate	Serial number	Sériové číslo
 	Set Fields to Same Size	Nastavit polím stejnou velikost
 	Set layer visibility	Nastavit viditelnost vrstvy
 	Set measurement scale	Nastavit měřítko měření
+	Set missing TrimBoxes from the CropBox	Doplnit chybějící TrimBox podle CropBox
 	Set Page Boxes	Nastavit rámečky stránek
 	Set page boxes	Nastavit rámečky stránek
 	Set page boxes…	Nastavit rámečky stránek…
@@ -2682,6 +2733,8 @@ certificate	Serial number	Sériové číslo
 	Set the image of {name}	Nastavit obrázek pole {name}
 	Set to current page ({n})	Nastavit na aktuální stránku ({n})
 	Set to zero	Nastavit na nulu
+	Set Trapped to False	Nastavit Trapped na False
+	Set Trapped to True	Nastavit Trapped na True
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Nastavení, která tento zdroj nabízí. Nechejte ovládací prvek, aby zůstal hodnotou ovladače.
 	SHA-1 digest	Otisk SHA-1
 certificate	SHA-1 digest	Otisk SHA-1
@@ -2780,6 +2833,7 @@ key	Shift	Shift
 	Simulate overprinting	Simulovat přetisk
 	Simulation: device formulas	Simulace: vzorce zařízení
 	Simulation: {profile}	Simulace: {profile}
+	Single checks	Jednotlivé kontroly
 	Single file	Jeden soubor
 	Single Page	Jedna stránka
 	Single page	Jednostránkové zobrazení
@@ -2823,6 +2877,8 @@ key	Space	Mezerník
 	Split document	Rozdělit dokument
 	Split document…	Rozdělit dokument…
 	Split into files…	Rozdělit na soubory…
+	Spot colour {}	Přímá barva {}
+	Spot colours	Přímé barvy
 	Spreadsheet (.xlsx)	Tabulka (.xlsx)
 	Squiggly	Vlnovka
 	Squiggly underline	Podtržení vlnovkou
@@ -2871,6 +2927,7 @@ certificate	Subject	Subjekt
 	Summarize comments	Shrnout komentáře
 	Summarize Options	Možnosti souhrnu
 	Summarize with AI	Shrnout pomocí AI
+	Summary: {errors} errors, {warnings} warnings, {info} information	Souhrn: chyby {errors}, upozornění {warnings}, informace {info}
 	Superscript	Superscript
 	Swap width and height	Prohodit šířku a výšku
 	Switch light / dark theme	Přepnout světlý / tmavý motiv
@@ -2948,6 +3005,7 @@ calendar weekday	Th	Čt
 	The answer stopped unexpectedly.	Odpověď se nečekaně přerušila.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Klíč API bude na tuto adresu odeslán nešifrovaně. Používejte https://, pokud server neběží v síti, které důvěřujete.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Sklo skenuje po jedné stránce. Naskenujte líc, otočte a pak rub.
+	The bleed is {} mm on its narrowest side	Spadávka má na nejužší straně {} mm
 	The bookmarks have no language: the document sets none (Lang)	Záložky nemají jazyk: dokument žádný nenastavuje (Lang)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Pořadí výpočtů má {n} položku, která nic nepočítá. „Opravit pořadí“ ji odstraní.|Pořadí výpočtů má {n} položky, které nic nepočítají. „Opravit pořadí“ je odstraní.|Pořadí výpočtů má {n} položek, které nic nepočítají. „Opravit pořadí“ je odstraní.
 	The catalog has no metadata stream (XMP)	Katalog nemá proud metadat (XMP)
@@ -3032,6 +3090,8 @@ calendar weekday	Th	Čt
 	The file has a reference XObject (Ref)	Soubor má referenční XObject (Ref)
 	The file is encrypted but its encryption dictionary has no permissions (P)	Soubor je zašifrovaný, ale jeho slovník šifrování nemá oprávnění (P)
 	The file is PDF {v}, not PDF 2.0	Soubor je PDF {v}, ne PDF 2.0
+	The file is PDF {}	Soubor je PDF {}
+	The file is PDF {}, newer than the profile allows	Soubor je PDF {}, novější, než profil povoluje
 	The file trailer has no document ID	Trailer souboru nemá ID dokumentu
 	the first heading is an H{n}; headings should not skip levels	první nadpis je H{n}; nadpisy by neměly přeskakovat úrovně
 	The font must include Latin letters and numbers for interface controls.	Písmo musí obsahovat latinská písmena a číslice pro ovládací prvky rozhraní.
@@ -3090,8 +3150,11 @@ calendar weekday	Th	Čt
 	The page has both a TrimBox and an ArtBox	Stránka má TrimBox i ArtBox
 	The page has changed; select the image again	Stránka se změnila; vyberte obrázek znovu
 	The page has neither a TrimBox nor an ArtBox	Stránka nemá TrimBox ani ArtBox
+	The page has no BleedBox	Stránka nemá BleedBox
 	The page has no valid MediaBox	Stránka nemá platný MediaBox
+	The page is a transparency group	Stránka je skupina průhlednosti
 	The pages already scanned were kept in the document.	Již naskenované stránky zůstaly v dokumentu.
+	The pages use {} spot colours	Stránky používají přímých barev: {}
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Stránky byly extrahovány, ale neodstraněny, protože se dokument změnil, zatímco jste vybírali složku.
 	the password is incorrect	heslo je nesprávné
 	The password is incorrect.	Heslo není správné.
@@ -3126,6 +3189,7 @@ calendar weekday	Th	Čt
 	The release has ambiguous packages. Choose a package on the official release page.	Vydání obsahuje nejednoznačné balíčky. Vyberte balíček na oficiální stránce vydání.
 	The release is not a published stable update. Try again later.	Toto vydání není zveřejněná stabilní aktualizace. Zkuste to později.
 	The replacement file doesn't have that many pages.	Náhradní soubor nemá tolik stránek.
+	The resolution of an image can't be measured	Rozlišení obrázku nelze změřit
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Omezení platí pro příjemce bez „Všechna oprávnění“. Použije se při uložení.
 	The reverse sides already scanned are kept.	Již naskenované rubové strany jsou uchovány.
 	The role map maps {} in a circle	Mapa rolí mapuje {} v kruhu
@@ -3246,10 +3310,12 @@ calendar weekday	Th	Čt
 	Thick	Silná
 	Thin	Tenká
 	Thinking… {s}s	Přemýšlí… {s} s
+	Thinnest line	Nejtenčí čára
 	This area has too many overlapping paths; intersection snapping is limited.	Tato oblast má příliš mnoho překrývajících se cest; přichytávání k průsečíkům je omezené.
 	This certificate is in your list of trusted certificates.	Tento certifikát je ve vašem seznamu důvěryhodných certifikátů.
 	This certificate is not trusted. Signatures made with it show an unknown identity.	Tento certifikát není důvěryhodný. Podpisy vytvořené tímto certifikátem mají neznámou identitu.
 	This certificate is trusted through a certificate above it in the chain.	Tento certifikát je důvěryhodný díky certifikátu nad ním v řetězci.
+	This check needs the Accessibility Checker, which isn't available here	Tato kontrola potřebuje kontrolu přístupnosti, která tu není k dispozici
 	This comment's appearance can't be changed yet.	Vzhled tohoto komentáře zatím nelze změnit.
 	This compatibility level supports only plain ASCII passwords.	Tato úroveň kompatibility podporuje jen hesla z prostých znaků ASCII.
 	This dialog shows the details of a certificate and its chain.	Toto dialogové okno zobrazuje podrobnosti certifikátu a jeho řetězce.
@@ -3365,6 +3431,7 @@ calendar weekday	Th	Čt
 	Transform image	Transformovat obrázek
 	Translate with AI	Přeložit pomocí AI
 	Trapped is {}, but it must be /True or /False	Trapped je {}, ale musí být /True nebo /False
+	Trapped key	Klíč Trapped
 	Trim the picture with its handles; Enter or Done applies	Ořízněte obrázek úchyty; Enter nebo Hotovo použije
 	Trust	Důvěryhodnost
 	Try again	Zkusit znovu
@@ -3475,6 +3542,7 @@ certificate	Validity starts	Začátek platnosti
 	Validity unknown	Neznámá platnost
 	Value is not calculated	Hodnota se nepočítá
 	Value is the	Hodnota je
+	Verifies the file against the standard, without changing it	Ověří soubor podle normy, aniž by ho měnil
 	Verify	Ověřit
 	Verify PDF/UA	Ověřit PDF/UA
 	Verify PDF/X	Ověřit PDF/X
@@ -3688,6 +3756,7 @@ document scrollbar width	Wide	Široký
 	{} annotations aren't allowed	Anotace {} nejsou povoleny
 	{} colour can't be converted to CMYK yet	Barvu {} zatím nelze převést do CMYK
 	{} colour doesn't match the output intent's colour space	Barva {} neodpovídá barevnému prostoru výstupního záměru
+	{} compliance	Shoda s {}
 	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} potřebuje pro barvu RGB nebo nezávislou na zařízení vložený profil ICC tiskové podmínky: vyberte soubor profilu
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (ochrana se použije při uložení)
@@ -3696,6 +3765,7 @@ document scrollbar width	Wide	Široký
 	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	Soubor „{name}“ je šifrovaný pro konkrétní osoby. Vyberte své digitální ID a zadejte jeho heslo pro otevření.
 	“{name}” is protected. Enter a password to open it.	Soubor „{name}“ je chráněný. Zadejte heslo pro jeho otevření.
 	… and {n} more	… a další ({n})
+	… and {} more on this page	… a dalších {} na této stránce
 	…or paste the raw text here; # headings, - bullets	…nebo sem vložte zdrojový text; # nadpisy, - odrážky
 	− Page {p}	− Stránka {p}
 	−LOC	−LOC

@@ -47,9 +47,11 @@
 	? of {n}	? trên {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} commit, +{added} / −{deleted} dòng (Δ {delta}), +{bin_added} / −{bin_deleted} tài nguyên nhị phân, {first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A bitmap image is drawn at {} ppi	Một ảnh một bit được vẽ ở {} ppi
 	a bookmark cannot be moved inside itself	không thể di chuyển dấu trang vào bên trong chính nó
 	A button	Một nút
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Ứng dụng PDF mã nguồn mở, viết lại độc lập (clean-room) bằng Rust. MIT OR Apache-2.0.
+	A colour image is drawn at {} ppi	Một ảnh màu được vẽ ở {} ppi
 	A colour operator's operands don't match its colour space	Toán hạng của một toán tử màu không khớp với không gian màu của nó
 	A colour space is nested too deeply to convert	Một không gian màu lồng quá sâu để chuyển đổi
 	A colour space's ICC profile can't be used to convert its colour	Không thể dùng hồ sơ ICC của một không gian màu để chuyển màu của nó
@@ -64,13 +66,17 @@
 	a field named {name} already exists	đã có trường tên {name}
 	A font isn't embedded	Một phông chữ chưa được nhúng
 	A form field has additional actions	Một trường biểu mẫu có các hành động bổ sung
+	A form XObject is a transparency group	Một XObject biểu mẫu là một nhóm trong suốt
 	A form XObject refers to a page of another file (reference XObject)	Một XObject biểu mẫu tham chiếu đến một trang của tệp khác (XObject tham chiếu)
 	A form XObject with marked content (MCIDs) is drawn {n} times	Một XObject biểu mẫu có nội dung được đánh dấu (MCID) được vẽ {n} lần
 	A graphics state sets an opacity below 1	Một trạng thái đồ họa đặt độ mờ đục dưới 1
 	A graphics state uses a soft mask	Một trạng thái đồ họa dùng mặt nạ mềm
 	A graphics state uses the {} blend mode	Một trạng thái đồ họa dùng chế độ hòa trộn {}
+	A gray image is drawn at {} ppi	Một ảnh xám được vẽ ở {} ppi
 	a header cell with no Scope, in a table that doesn't use Headers	ô tiêu đề không có Scope, trong một bảng không dùng Headers
 	A JPEG picture in CMYK can't be converted yet	Ảnh JPEG ở CMYK chưa thể chuyển đổi
+	A line has width 0, the thinnest the printer can draw	Một đường có độ dày 0, mảnh nhất mà máy in vẽ được
+	A line is {} pt wide	Một đường dày {} pt
 	A link	Một liên kết
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Một logo hoặc tên ở bên trái các thẻ, nơi thanh tiêu đề thường hiển thị: của PdfCraft hoặc của công ty bạn.
 	A mesh shading's colours change too sharply between its corners to convert to CMYK exactly	Màu của một tô chuyển sắc dạng lưới thay đổi quá đột ngột giữa các góc để chuyển chính xác sang CMYK
@@ -88,6 +94,7 @@
 	A selected field has no widget on any page, so the fields can't be edited together.	Một trường đã chọn không có widget trên trang nào, nên các trường không thể được chỉnh sửa cùng nhau.
 	A setting isn't valid	Một thiết lập không hợp lệ
 	A shading in RGB or device-independent colour can't be converted to CMYK yet	Tô chuyển sắc bằng màu RGB hoặc màu không phụ thuộc thiết bị chưa thể chuyển sang CMYK
+	A shading uses {} colour	Một vùng chuyển sắc dùng màu {}
 	A shading's colour function can't be read or evaluated	Không đọc hoặc tính được hàm màu của một tô chuyển sắc
 	A shading's colour function can't be resampled into CMYK exactly	Không thể lấy mẫu lại chính xác hàm màu của một tô chuyển sắc sang CMYK
 	A shading's data can't be read, so it can't be converted to CMYK	Không đọc được dữ liệu của một tô chuyển sắc nên không thể chuyển sang CMYK
@@ -102,6 +109,7 @@
 	A {} annotation has additional actions	Chú thích {} có các hành động bổ sung
 	A {} annotation has no appearance stream	Chú thích {} không có luồng diện mạo
 	A {} annotation isn't set to print, or is hidden	Chú thích {} không được đặt để in, hoặc bị ẩn
+	A {} annotation lies inside the trim	Chú thích {} nằm trong vùng xén
 	A {} annotation lies within the BleedBox	Chú thích {} nằm trong BleedBox
 	A {} colour space's parameters can't be read	Không đọc được tham số của một không gian màu {}
 	About PdfCraft	Giới thiệu PdfCraft
@@ -112,6 +120,7 @@
 	Accepted by {printer}	Đã được {printer} chấp nhận
 	Accessibility Checker	Trình kiểm tra trợ năng
 	Accessibility Checker Options	Tùy chọn trình kiểm tra trợ năng
+	Accessibility Checker rules	Quy tắc của Trình kiểm tra trợ năng
 	Accessibility panel	Bảng trợ năng
 	Accessibility permission flag	Cờ quyền trợ năng
 	Accessibility permission flag is set	Cờ quyền trợ năng đã được đặt
@@ -277,12 +286,16 @@
 	An image has a soft mask	Một hình ảnh có mặt nạ mềm
 	An image has alternates or OPI information	Một hình ảnh có bản thay thế hoặc thông tin OPI
 	An image or form has OPI information	Một hình ảnh hoặc biểu mẫu có thông tin OPI
+	An image uses {} colour	Một ảnh dùng màu {}
 	An indexed colour space's table is too short to convert	Bảng của một không gian màu chỉ mục quá ngắn để chuyển đổi
+	An inline image uses {} colour	Một ảnh nội tuyến dùng màu {}
+	An object has additional actions (/AA)	Một đối tượng có hành động bổ sung (/AA)
 	An open-source PDF workbench — local, private, and scriptable.	Bộ công cụ PDF mã nguồn mở — chạy cục bộ, riêng tư và có thể viết kịch bản.
 	An optional content configuration has an AS entry	Một cấu hình nội dung tùy chọn có mục AS
 	and {n} more	và {n} mục nữa
 	Animation that flashes can cause seizures. Check scripts and media for flicker.	Hoạt ảnh nhấp nháy có thể gây co giật. Hãy kiểm tra script và phương tiện xem có nhấp nháy không.
 	Annotation	Chú thích
+	Annotations inside the trim	Chú thích nằm trong vùng xén
 	Annotations, form fill-in, and digital signatures	Chú thích, điền biểu mẫu và chữ ký số
 	Another file dialog is still open. Finish with it first.	Một hộp thoại tệp khác vẫn đang mở. Hãy hoàn tất nó trước.
 	Any except extracting pages	Bất kỳ trừ trích xuất trang
@@ -297,6 +310,7 @@
 	Applies to 1 page	Áp dụng cho 1 trang
 	Applies to {n} pages	Áp dụng cho {n} trang
 	Apply PDF standards	Áp dụng chuẩn PDF
+	Apply preflight fixups	Áp dụng các bản sửa kiểm tra trước in
 	Apply redactions	Xóa vĩnh viễn nội dung đã đánh dấu
 	Apply redactions…	Xóa vĩnh viễn nội dung đã đánh dấu…
 	Apply scale	Áp dụng tỷ lệ
@@ -367,8 +381,10 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Bicubic downsampling to	Giảm mẫu song khối (Bicubic) xuống
 	Binding	Đóng gáy
 	Binding:	Đóng gáy:
+	Bitmap images	Ảnh một bit
 	Black on white	Đen trên nền trắng
 	Blank page	Trang trống
+	Bleed	Tràn lề
 	Blend with page content	Hòa trộn với nội dung trang
 	Booklet	Sách nhỏ
 	Booklet subset:	Tập con sách nhỏ:
@@ -485,6 +501,9 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Checking the scanner…	Đang kiểm tra máy quét…
 	Checking the structure… {n} objects so far	Đang kiểm tra cấu trúc… {n} đối tượng cho đến nay
 	Checkmark	Dấu kiểm
+	Checks a file for CMYK printing: fonts, colour, image resolution, hairlines, transparency, page boxes, encryption, JavaScript, annotations, Trapped and the PDF version	Kiểm tra tệp cho in CMYK: phông chữ, màu, độ phân giải ảnh, đường siêu mảnh, độ trong suốt, các hộp trang, mã hóa, JavaScript, chú thích, Trapped và phiên bản PDF
+	Checks not run	Các bước kiểm tra chưa chạy
+	Checks passed	Các bước kiểm tra đạt
 	Choose a digital ID file	Chọn tệp Digital ID
 	Choose a digital ID.	Chọn một Digital ID.
 	Choose a file…	Chọn một tệp…
@@ -512,6 +531,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Choose the module's library file.	Hãy chọn tệp thư viện của mô-đun.
 	Choose the signature to remove:	Chọn chữ ký cần gỡ:
 	Choose where to save the signed file. The service signs it once you have.	Hãy chọn nơi lưu tệp đã ký. Dịch vụ sẽ ký ngay sau khi bạn chọn.
+	Clause	Điều khoản
 	Clean Up	Dọn dẹp
 	Clean-up	Dọn dẹp
 	Clear all	Xóa tất cả
@@ -554,6 +574,8 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Color document	Tài liệu màu
 	Color Images	Ảnh màu
 	Color Spaces	Không gian màu
+	Colour images	Ảnh màu
+	Colour the profile doesn't allow	Màu mà hồ sơ không cho phép
 	Colours are remapped while rendering; the document itself never changes.	Màu được ánh xạ lại khi hiển thị; bản thân tài liệu không bao giờ thay đổi.
 	Column select	Chọn cột
 	Column spacing	Khoảng cách cột
@@ -580,6 +602,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Comments only	Chỉ bình luận
 	Comments panel	Bảng bình luận
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Bình luận, liên kết và trường phải nằm trong cây thẻ để được đọc to. Hãy gắn thẻ cho các chú thích.
+	Commercial print (CMYK)	In thương mại (CMYK)
 	Commit selected value immediately	Lưu giá trị đã chọn ngay lập tức
 	Common Properties	Thuộc tính chung
 	Common scales	Tỷ lệ thông dụng
@@ -604,8 +627,10 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Console	Bảng điều khiển
 	Content copying	Sao chép nội dung
 	Content copying for accessibility	Sao chép nội dung cho trợ năng
+	Content not read to the end on pages: {pages}	Nội dung chưa được đọc hết trên các trang: {pages}
 	Content Streams	Luồng nội dung
 	Content uses DeviceRGB colour: PDF/X-1a allows only CMYK, gray and spot colour	Nội dung dùng màu DeviceRGB: PDF/X-1a chỉ cho phép CMYK, xám và màu pha (spot)
+	Content uses {} colour	Nội dung dùng màu {}
 	Content uses {} colour, which doesn't match the output intent's colour space	Nội dung dùng màu {}, không khớp với không gian màu của mục đích đầu ra
 	Continue scanning	Tiếp tục quét
 	Continue scanning fronts	Tiếp tục quét mặt trước
@@ -752,6 +777,7 @@ key	Ctrl	Ctrl
 	Data Encipherment	Mã hóa dữ liệu
 	Date field	Trường ngày
 	Date: 	Ngày: 
+	Date: {date}	Ngày: {date}
 	December	Tháng 12
 calendar date	December	tháng 12
 	Decimal places:	Số chữ số thập phân:
@@ -860,6 +886,7 @@ key	Delete	Delete
 	Document structure provides a logical reading order	Cấu trúc tài liệu cung cấp thứ tự đọc hợp lý
 	Document timestamp	Dấu thời gian của tài liệu
 	Document title is showing in title bar	Tiêu đề tài liệu đang hiển thị trên thanh tiêu đề
+	Document: {name}	Tài liệu: {name}
 	Documents and view	Tài liệu và chế độ xem
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Tài liệu có hơn 20 trang cần dấu trang để điều hướng. Hãy thêm dấu trang cho các phần chính.
 	Does not match what was signed	Không khớp với nội dung được ký
@@ -1154,6 +1181,8 @@ calendar date	February	tháng 2
 	Fix reading order	Sửa thứ tự đọc
 	Fixed what could be fixed; 1 problem remains	Đã sửa những gì có thể sửa; còn lại 1 vấn đề
 	Fixed what could be fixed; {n} problems remain	Đã sửa những gì có thể sửa; còn lại {n} vấn đề
+	Fixup: {fixup}	Bản sửa: {fixup}
+	Flags	Cờ
 	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	Flatpak quản lý bản cài đặt này. Hãy kiểm tra cập nhật trong trình quản lý phần mềm hệ thống hoặc chạy flatpak update.
 	Flatten comments	Làm phẳng bình luận
 	Flatten comments and form fields	Làm phẳng bình luận và trường biểu mẫu
@@ -1172,6 +1201,7 @@ calendar date	February	tháng 2
 	Font colour:	Màu chữ:
 	Font size 0 uses automatic sizing.	Cỡ chữ 0 sẽ dùng kích thước tự động.
 	Font size:	Cỡ chữ:
+	Font type	Loại phông chữ
 	Font {} on page {p} doesn't map its characters to Unicode	Phông chữ {} trên trang {p} không ánh xạ các ký tự của nó sang Unicode
 	Font {} on page {p} draws a glyph its font program lacks (code {code})	Phông chữ {} trên trang {p} vẽ một glyph mà chương trình phông chữ không có (mã {code})
 	Font {} on page {p} draws the .notdef glyph (code {code})	Phông chữ {} trên trang {p} vẽ glyph .notdef (mã {code})
@@ -1207,6 +1237,7 @@ calendar date	February	tháng 2
 	Font {} on page {p}: no Unicode or Mac Roman cmap of its program finds glyph {glyph} (code {code})	Phông chữ {} trên trang {p}: không cmap Unicode hay Mac Roman nào của chương trình tìm thấy glyph {glyph} (mã {code})
 	Font: Helvetica	Phông chữ: Helvetica
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Phông chữ phải ánh xạ ký tự của chúng sang Unicode để văn bản có thể được đọc và sao chép. Hãy sửa phông chữ hoặc tạo lại PDF.
+	Fonts not embedded	Phông chữ chưa được nhúng
 	for images above	cho hình ảnh lớn hơn
 	For page sizes and margins.	Dành cho kích thước trang và lề.
 	Form data and PDF forms	Dữ liệu biểu mẫu và biểu mẫu PDF
@@ -1249,11 +1280,13 @@ calendar weekday	Fr	T6
 	Go to the page	Đi tới trang
 	Go to this result	Đi tới kết quả này
 	Grab bag	Tổng hợp
+	Gray images	Ảnh xám
 	Grayscale Images	Ảnh thang xám
 	Green on black	Xanh lá trên nền đen
 	Greyscale	Thang xám
 	Group select	Chọn nhóm
 	H / Space (hold)	H / Space (giữ)
+	Hairlines	Đường siêu mảnh
 	Hand	Bàn tay
 	Hand (H)	Bàn tay (H)
 	Hand Tool	Công cụ bàn tay
@@ -1287,6 +1320,7 @@ calendar weekday	Fr	T6
 	Hides annotation	Che chú thích
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Chất lượng ảnh cao hơn đồng nghĩa với tệp lớn hơn. Chỉ lưu bản sao nếu tệp nhỏ hơn.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Chất lượng cao hơn, tệp thường lớn hơn. Ảnh JPEG trên 450 ppi được giảm xuống 300 ppi, chất lượng 85. Đồ họa nén không mất dữ liệu và ảnh có mặt nạ giữ nguyên điểm ảnh.
+	Highest version	Phiên bản cao nhất
 	Highlight	Tô sáng
 	Highlight content	Tô sáng nội dung
 	Highlight coverage above	Tô sáng độ phủ vượt quá
@@ -1306,6 +1340,7 @@ key	Home	Home
 	Image (PNG)	Hình ảnh (PNG)
 	Image field	Trường hình ảnh
 	Image pasted	Đã dán hình ảnh
+	Image resolution	Độ phân giải ảnh
 	Image-only PDF	PDF chỉ có hình ảnh
 	Images and text	Hình ảnh và văn bản
 	Images and text (converted to PDF)	Hình ảnh và văn bản (đã chuyển thành PDF)
@@ -1397,6 +1432,7 @@ certificate	Issuer	Tổ chức cấp
 	January	Tháng 1
 calendar date	January	tháng 1
 	JavaScript	JavaScript
+	JavaScript and actions	JavaScript và hành động
 	JavaScript Console	Bảng điều khiển JavaScript
 	JavaScript console…	Bảng điều khiển JavaScript…
 	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript đã bị tắt (Tùy chọn > JavaScript).
@@ -1444,6 +1480,8 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Layout and Magnification	Bố cục và độ phóng đại
 	Lbl and LBody	Lbl và LBody
 	Lbl and LBody must be children of LI	Lbl và LBody phải là con của LI
+	Least bleed	Tràn lề tối thiểu
+	Least resolution	Độ phân giải tối thiểu
 	Leave out files that can't be read?	Bỏ qua các tệp không đọc được?
 	Left Edge	Cạnh trái
 	Left Footer Text	Văn bản chân trang trái
@@ -1463,6 +1501,7 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Line thickness	Độ dày đường
 	Line Thickness:	Độ dày đường:
 	Line weights	Độ dày nét
+	Line width	Độ dày nét
 	Lines	Các đường
 	Link Action	Hành động liên kết
 	Link annotation on page {p} has no description (Contents)	Chú thích liên kết trên trang {p} không có mô tả (Contents)
@@ -1569,6 +1608,7 @@ calendar weekday	Mo	T2
 	More options:	Thêm tùy chọn:
 	more than one H heading in it	chứa nhiều hơn một đề mục H
 	More ways to add files	Thêm cách để thêm tệp
+	Most spot colours	Số màu pha tối đa
 	Mouse Down	Nhấn chuột
 	Mouse Enter	Chuột vào
 	Mouse Exit	Chuột ra
@@ -1693,6 +1733,7 @@ calendar weekday	Mo	T2
 	No plugins installed. A plugin is a single .wasm file; install one above.	Chưa cài đặt plugin nào. Plugin là một tệp .wasm duy nhất; hãy cài đặt một plugin ở trên.
 	No preview	Không có bản xem trước
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Không tìm thấy máy in. Kiểm tra xem máy in đã được cài đặt và dịch vụ hàng đợi in đang chạy, rồi mở lại hộp thoại In.
+	No problems found	Không tìm thấy vấn đề nào
 	No problems found: the document conforms to {level}.	Không tìm thấy vấn đề: tài liệu tuân thủ {level}.
 	No recipients yet.	Chưa có người nhận nào.
 	No release notes were provided.	Không có ghi chú phát hành.
@@ -1933,6 +1974,7 @@ animation effects	On	Bật
 	Pages to Print	Các trang cần in
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Các trang không đọc được văn bản: {n}. Các kết quả khớp trên các trang đó không được liệt kê.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Các trang có liên kết, bình luận hoặc trường nên chuyển tab theo thứ tự cấu trúc. Cách sửa đặt thứ tự tab của mỗi trang thành Dùng cấu trúc tài liệu.
+	Pages without a TrimBox	Trang không có TrimBox
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Các trang {pages} đã thay đổi sau khi thêm nền, nên lớp tô trắng riêng của chúng vẫn tắt. Trên giấy trắng trông vẫn như cũ.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Các trang {pages} có lớp tô trắng riêng, sẽ che mất nền. Thay thế
 	Pages:	Trang:
@@ -2005,10 +2047,12 @@ animation effects	On	Bật
 	Pinned Tools	Công cụ đã ghim
 	Pinned {folder} to Home	Đã ghim {folder} vào Trang chủ
 	Pinned {tool} to Home	Đã ghim {tool} vào Trang chủ
+	Pixels	Điểm ảnh
 	PKCS #11 device  ·  	Thiết bị PKCS #11  ·  
 	PKCS #11 module	Mô-đun PKCS #11
 	PKCS #11 modules	Mô-đun PKCS #11
 	Place saved {what}	Đặt {what} đã lưu
+	Placed size	Kích thước khi đặt
 	Plain text in reading order; pages are separated by form feeds.	Văn bản thuần theo thứ tự đọc; các trang được phân tách bằng ký tự sang trang.
 	Planned	Đã lên kế hoạch
 	Planned for milestone	Dự kiến ở cột mốc
@@ -2025,6 +2069,7 @@ animation effects	On	Bật
 	PostScript / EPS	PostScript / EPS
 	PostScript XObjects aren't allowed	PostScript XObject không được phép
 	Preflight	Kiểm tra trước in
+	Preflight report	Báo cáo kiểm tra trước in
 	Prepare a form	Chuẩn bị biểu mẫu
 	Prepare for accessibility	Chuẩn bị cho trợ năng
 	Prepare for Distribution	Chuẩn bị để phân phối
@@ -2074,6 +2119,7 @@ animation effects	On	Bật
 	Private data of other applications	Dữ liệu riêng của các ứng dụng khác
 	Producer	Ứng dụng sản xuất
 	product (x)	tích (x)
+	Profile: {profile}	Hồ sơ: {profile}
 	Properties…	Thuộc tính…
 	Protect & Standardize	Bảo vệ và chuẩn hóa
 	Protect a PDF	Bảo vệ một PDF
@@ -2174,6 +2220,7 @@ certificate	Public key	Khóa công khai
 	Remove hidden information, metadata, scripts and embedded content, and rewrite the files.	Gỡ thông tin ẩn, siêu dữ liệu, script và nội dung nhúng, rồi ghi lại các tệp.
 	Remove hidden information…	Gỡ thông tin ẩn…
 	Remove invalid links and bookmarks	Gỡ các liên kết và dấu trang không hợp lệ
+	Remove JavaScript and actions	Gỡ JavaScript và hành động
 	Remove page	Gỡ trang
 	Remove redaction marks	Gỡ các dấu đánh dấu
 	Remove saved {what}	Xóa {what} đã lưu
@@ -2313,12 +2360,14 @@ review-suggestion	Replacement text	Văn bản được thay vào
 	Row spacing	Khoảng cách hàng
 	rows both directly in it and in THead, TBody or TFoot	có hàng nằm trực tiếp trong nó và cả trong THead, TBody hoặc TFoot
 	rows have between {min} and {max} columns	các hàng có từ {min} đến {max} cột
+	Rule	Quy tắc
 	Rule Name	Tên quy tắc
 	Run	Chạy
 	Run a JavaScript	Chạy một JavaScript
 	Run form script	Chạy script biểu mẫu
 	Run JavaScript	Chạy JavaScript
 	Running action… file {d} of {t}	Đang chạy hành động… tệp {d} trên {t}
+	Runs the Accessibility Checker's rules	Chạy các quy tắc của Trình kiểm tra trợ năng
 calendar weekday	Sa	T7
 	Safety margin (pt)	Lề an toàn (pt)
 	Same as interface	Giống giao diện
@@ -2431,6 +2480,7 @@ calendar weekday	Sa	T7
 	Searching… {s} of {p} pages	Đang tìm… {s} trên {p} trang
 	Searching… {s}/{p}	Đang tìm… {s}/{p}
 	Search…	Tìm kiếm…
+	Security handler	Trình xử lý bảo mật
 	Security method	Phương thức bảo mật
 	Security properties	Thuộc tính bảo mật
 	Security properties…	Thuộc tính bảo mật…
@@ -2497,6 +2547,7 @@ certificate	Serial number	Số sê-ri
 	Set Fields to Same Size	Đặt các trường về cùng kích thước
 	Set layer visibility	Đặt chế độ hiển thị lớp
 	Set measurement scale	Đặt tỷ lệ đo
+	Set missing TrimBoxes from the CropBox	Đặt các TrimBox còn thiếu theo CropBox
 	Set Page Boxes	Đặt các hộp trang
 	Set page boxes	Đặt các hộp trang
 	Set page boxes…	Đặt các hộp trang…
@@ -2513,6 +2564,8 @@ certificate	Serial number	Số sê-ri
 	Set the image of {name}	Đặt hình ảnh của {name}
 	Set to current page ({n})	Đặt thành trang hiện tại ({n})
 	Set to zero	Đặt về 0
+	Set Trapped to False	Đặt Trapped thành False
+	Set Trapped to True	Đặt Trapped thành True
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Các cài đặt nguồn này cung cấp. Để nguyên một điều khiển để giữ giá trị của trình điều khiển.
 	SHA-1 digest	Giá trị băm SHA-1
 certificate	SHA-1 digest	Giá trị băm SHA-1
@@ -2606,6 +2659,7 @@ key	Shift	Shift
 	Simulate overprinting	Mô phỏng in chồng
 	Simulation: device formulas	Mô phỏng: công thức thiết bị
 	Simulation: {profile}	Mô phỏng: {profile}
+	Single checks	Kiểm tra đơn lẻ
 	Single file	Một tệp
 	Single Page	Một trang
 	Single page	Một trang
@@ -2647,6 +2701,8 @@ key	Space	Space
 	Split document	Tách tài liệu
 	Split document…	Tách tài liệu…
 	Split into files…	Tách thành các tệp…
+	Spot colour {}	Màu pha {}
+	Spot colours	Màu pha
 	Spreadsheet (.xlsx)	Bảng tính (.xlsx)
 	Squiggly	Lượn sóng
 	Squiggly underline	Gạch chân lượn sóng
@@ -2689,6 +2745,7 @@ certificate	Subject	Chủ thể chứng chỉ
 	Summarize comments	Tóm tắt bình luận
 	Summarize Options	Tùy chọn tóm tắt
 	Summarize with AI	Tóm tắt bằng AI
+	Summary: {errors} errors, {warnings} warnings, {info} information	Tóm tắt: {errors} lỗi, {warnings} cảnh báo, {info} thông tin
 	Superscript	Superscript
 	Swap width and height	Hoán đổi chiều rộng và chiều cao
 	Switch light / dark theme	Chuyển chủ đề sáng / tối
@@ -2759,6 +2816,7 @@ calendar weekday	Th	T5
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Khóa API sẽ được gửi đến địa chỉ này mà không mã hóa. Hãy dùng https:// trừ khi máy chủ nằm trong mạng bạn tin cậy.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	vùng, khoảng cách và độ rộng cột phải là số, khoảng cách từ 0 trở lên và mỗi độ rộng lớn hơn 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Mặt kính quét từng trang một. Quét một mặt trước, lật tờ giấy, rồi quét mặt sau của nó.
+	The bleed is {} mm on its narrowest side	Tràn lề ở cạnh hẹp nhất là {} mm
 	The bookmarks have no language: the document sets none (Lang)	Các dấu trang không có ngôn ngữ: tài liệu không đặt ngôn ngữ nào (Lang)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Thứ tự tính toán có {n} mục không tính gì. "Sửa thứ tự" sẽ xóa chúng.
 	The catalog has no metadata stream (XMP)	Danh mục không có luồng siêu dữ liệu (XMP)
@@ -2842,6 +2900,8 @@ calendar weekday	Th	T5
 	The file has a reference XObject (Ref)	Tệp có một XObject tham chiếu (Ref)
 	The file is encrypted but its encryption dictionary has no permissions (P)	Tệp được mã hóa nhưng từ điển mã hóa của nó không có quyền (P)
 	The file is PDF {v}, not PDF 2.0	Tệp là PDF {v}, không phải PDF 2.0
+	The file is PDF {}	Tệp là PDF {}
+	The file is PDF {}, newer than the profile allows	Tệp là PDF {}, mới hơn mức hồ sơ cho phép
 	The file trailer has no document ID	Phần trailer của tệp không có ID tài liệu
 	the first heading is an H{n}; headings should not skip levels	đề mục đầu tiên là H{n}; các đề mục không nên bỏ qua cấp
 	the first row number can be at most {max}	số hàng đầu tiên tối đa là {max}
@@ -2898,8 +2958,11 @@ calendar weekday	Th	T5
 	The page has both a TrimBox and an ArtBox	Trang có cả TrimBox lẫn ArtBox
 	The page has changed; select the image again	Trang đã thay đổi; hãy chọn lại hình ảnh
 	The page has neither a TrimBox nor an ArtBox	Trang không có TrimBox cũng không có ArtBox
+	The page has no BleedBox	Trang không có BleedBox
 	The page has no valid MediaBox	Trang không có MediaBox hợp lệ
+	The page is a transparency group	Trang là một nhóm trong suốt
 	The pages already scanned were kept in the document.	Các trang đã quét được giữ lại trong tài liệu.
+	The pages use {} spot colours	Các trang dùng {} màu pha
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Các trang đã được trích xuất nhưng chưa bị xóa, vì tài liệu đã thay đổi trong lúc bạn chọn thư mục.
 	the password is incorrect	mật khẩu không đúng
 	The password is incorrect.	Mật khẩu không đúng.
@@ -2932,6 +2995,7 @@ calendar weekday	Th	T5
 	The release has ambiguous packages. Choose a package on the official release page.	Bản phát hành có nhiều gói có thể phù hợp. Hãy chọn một gói trên trang phát hành chính thức.
 	The release is not a published stable update. Try again later.	Bản phát hành này chưa phải là bản cập nhật ổn định đã được công bố. Hãy thử lại sau.
 	The replacement file doesn't have that many pages.	Tệp thay thế không có nhiều trang như vậy.
+	The resolution of an image can't be measured	Không đo được độ phân giải của một ảnh
 	The restrictions apply to recipients without “All permissions”. It's applied when you save.	Các hạn chế áp dụng cho người nhận không có “Mọi quyền”. Thay đổi được áp dụng khi bạn lưu.
 	The reverse sides already scanned are kept.	Các mặt sau đã quét được giữ lại.
 	The reverse sides were cancelled: their document was closed.	Đã hủy quét mặt sau: tài liệu của chúng đã bị đóng.
@@ -3049,10 +3113,12 @@ calendar weekday	Th	T5
 	These objects could not be moved. Select them again and try a smaller move.	Không thể di chuyển các đối tượng này. Hãy chọn lại chúng và thử di chuyển ít hơn.
 	Thick	Dày
 	Thin	Mỏng
+	Thinnest line	Đường mảnh nhất
 	This area has too many overlapping paths; intersection snapping is limited.	Vùng này có quá nhiều đường chồng lên nhau; việc bắt dính giao điểm bị giới hạn.
 	This certificate is in your list of trusted certificates.	Chứng chỉ này nằm trong danh sách chứng chỉ tin cậy của bạn.
 	This certificate is not trusted. Signatures made with it show an unknown identity.	Chứng chỉ này không được tin cậy. Các chữ ký tạo bằng nó hiển thị danh tính không rõ.
 	This certificate is trusted through a certificate above it in the chain.	Chứng chỉ này được tin cậy thông qua một chứng chỉ ở cấp trên trong chuỗi.
+	This check needs the Accessibility Checker, which isn't available here	Bước kiểm tra này cần Trình kiểm tra trợ năng, nhưng ở đây không có
 	This comment's appearance can't be changed yet.	Chưa thể thay đổi diện mạo của bình luận này.
 	This compatibility level supports only plain ASCII passwords.	Mức tương thích này chỉ hỗ trợ mật khẩu ASCII thuần.
 	This dialog shows the details of a certificate and its chain.	Hộp thoại này hiển thị chi tiết của một chứng chỉ và chuỗi chứng chỉ của nó.
@@ -3162,6 +3228,7 @@ calendar weekday	Th	T5
 	Transform image	Chuyển đổi hình ảnh
 	Translate with AI	Dịch bằng AI
 	Trapped is {}, but it must be /True or /False	Trapped là {}, nhưng phải là /True hoặc /False
+	Trapped key	Khóa Trapped
 	Trim the picture with its handles; Enter or Done applies	Xén hình bằng các tay nắm; nhấn Enter hoặc Xong để áp dụng
 	Trust	Tin cậy
 	Try again	Thử lại
@@ -3270,6 +3337,7 @@ certificate	Validity starts	Hiệu lực bắt đầu
 	Validity unknown	Không rõ tính hợp lệ
 	Value is not calculated	Giá trị không được tính toán
 	Value is the	Giá trị là
+	Verifies the file against the standard, without changing it	Kiểm tra tệp theo tiêu chuẩn mà không thay đổi tệp
 	Verify	Xác minh
 	Verify PDF/UA	Xác minh PDF/UA
 	Verify PDF/X	Xác minh PDF/X
@@ -3477,6 +3545,7 @@ document scrollbar width	Wide	Rộng
 	{} annotations aren't allowed	Chú thích {} không được phép
 	{} colour can't be converted to CMYK yet	Màu {} chưa thể chuyển sang CMYK
 	{} colour doesn't match the output intent's colour space	Màu {} không khớp với không gian màu của mục đích đầu ra
+	{} compliance	Tuân thủ {}
 	{} needs the printing condition's ICC profile embedded for RGB or device-independent colour: choose a profile file	{} cần nhúng hồ sơ ICC của điều kiện in cho màu RGB hoặc màu không phụ thuộc thiết bị: hãy chọn một tệp hồ sơ
 	ΔLOC	ΔLOC
 	— (protection is applied when you save)	— (việc bảo vệ được áp dụng khi bạn lưu)
@@ -3485,5 +3554,6 @@ document scrollbar width	Wide	Rộng
 	“{name}” is encrypted for specific people. Choose your digital ID and enter its password to open it.	“{name}” được mã hóa cho những người cụ thể. Hãy chọn Digital ID của bạn và nhập mật khẩu của nó để mở.
 	“{name}” is protected. Enter a password to open it.	“{name}” được bảo vệ. Hãy nhập mật khẩu để mở.
 	… and {n} more	… và {n} mục nữa
+	… and {} more on this page	… và thêm {} trên trang này
 	− Page {p}	− Trang {p}
 	−LOC	−LOC
