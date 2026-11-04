@@ -413,6 +413,7 @@
 	Button Properties	ボタンのプロパティ
 	Button Style:	ボタンの形状:
 	Buttons with the same name and value are selected in unison	同じ名前と値を持つボタンを連動して選択
+	By the standard device formulas; profiles are not applied.	標準のデバイス式で変換します。プロファイルは適用しません。
 	Bytes	バイト数
 	CAdES signature (.p7m, .p7s)	CAdES署名 (.p7m, .p7s)
 	CAdES signature envelope	CAdES署名エンベロープ
@@ -584,6 +585,7 @@
 	Closed arrow	閉じた矢印
 	Cloud	雲形
 	CloudSigner (mSzafir) is found by itself when it is installed: start it and log in before signing.	CloudSigner（mSzafir）はインストールされていれば自動的に見つかります。署名の前に起動してログインしてください。
+	CMYK	CMYK
 	Code sent	コードを送信しました
 	Collapse all	すべて折りたたむ
 	Collapse all bookmarks	すべてのしおりを折りたたむ
@@ -621,6 +623,7 @@
 	Commenting, filling in form fields, and signing existing signature fields	注釈、フォーム入力、既存の署名フィールドへの署名
 	Comments & Forms	注釈とフォーム
 	Comments & Markup	注釈とマークアップ
+	Comments and form fields	注釈とフォームフィールド
 	Comments and markups	注釈とマークアップ
 	Comments only	注釈のみ
 	Comments panel	コメントパネル
@@ -662,9 +665,13 @@
 	Control points	基準点
 	Conversion factor	換算係数
 	Convert colors	色を変換
+	Convert colours	カラーを変換
+	Convert colours…	カラーを変換…
 	Convert mode	変換モード
+	Convert to	変換先
 	Converted from an EPUB book. Details lists how it was laid out and what was left out.	EPUB ブックから変換しました。詳細には、レイアウトの方法と省略された内容が表示されます。
 	Converted to {level} ({n} changes)	{level} に変換しました ({n} 件の変更)
+	Converted {c} colours and {i} pictures on {p} pages	{p} ページで {c} 色と {i} 個の画像を変換しました
 	Converted {name}. Approximated: {notes}	{name} を変換しました。近似した内容: {notes}
 	Converting {name}…	{name} を変換しています…
 	Converts PDF user coordinates to easting, northing and elevation.	PDF ユーザー座標を東方向座標、北方向座標、高度に変換します。
@@ -1862,6 +1869,7 @@ scroll speed	Normal	標準
 	Note	ノート注釈
 	Nothing	なし
 	nothing in the file matches this document	この文書に一致する項目がファイルにありません
+	Nothing on those pages needed converting	これらのページには変換が必要なものはありません
 	Nothing replaced	何も置換されませんでした
 	Nothing to redo	やり直す操作はありません
 	nothing to redo	やり直す操作はありません
@@ -2113,6 +2121,7 @@ animation effects	On	オン
 	Pictures cover pages {pages} (scans?), so the background won't show there.	{pages} ページが画像（スキャン？）で覆われているため、そこでは背景は表示されません。
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	画像には内容を説明する代替テキストを付けるか、装飾として指定する必要があります。各図に代替テキストを追加してください。
 	Pictures on those pages are recognized too; words already in the page's text are not added again	それらのページ上の画像も認識します。ページのテキストに既にある単語は再度追加されません
+	Pictures too	画像も
 	PIN	PIN
 	Pin	ピン留め
 	Pin a folder to Home	フォルダーをホームにピン留め
@@ -2162,6 +2171,7 @@ animation effects	On	オン
 	Preparing sheet {done} of {total} for printing…	印刷用にシート {done}/{total} を準備しています…
 	Preparing {n} sheets for printing…	{n} 枚のシートを印刷用に準備しています…
 	Presentation (.pptx)	プレゼンテーション（.pptx）
+	Preserve black	黒を保持
 	Press the new keys (Esc cancels)	新しいキーを押してください（Esc でキャンセル）
 	Prevent G-SYNC/FreeSync flicker (applies at next launch)	G-SYNC/FreeSync のちらつきを防ぐ（次回起動時に適用）
 	Preview is for the bed. Set a region in inches below, or leave it empty for the whole sheet.	プレビューは原稿台用です。下でインチ単位の範囲を指定するか、空のまま全体をスキャンします。
@@ -2214,6 +2224,7 @@ animation effects	On	オン
 	Provider	プロバイダー
 	Public domain	パブリックドメイン
 	Public key	公開鍵
+	pure black stays 100% K or gray 0 instead of a mix	純粋な黒は混色にせず K 100% またはグレー 0 のままにします
 	PushButton	プッシュボタン
 	Quality:	品質:
 	Quantity	測定する量
@@ -2230,6 +2241,7 @@ animation effects	On	オン
 	RAM {gb} GB	RAM {gb} GB
 	Rating	評価
 	Raw:	原文：
+	re-encoded in the target space; JPEGs stay JPEG	変換先の色空間で再エンコード。JPEG は JPEG のまま
 	Re-OCR entire page	ページ全体を再認識
 	Re-OCR this region	この範囲を再認識
 	Re-type Password	パスワードを再入力
@@ -3193,6 +3205,7 @@ document scrollbar width	Standard	標準
 	the website did not confirm that it stored the file	Web サイトがファイルの保存を確認しませんでした
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	ウィンドウにはファイル名ではなく意味のあるタイトルを表示してください。タイトルを設定し、「初期表示 > 表示: 文書タイトル」を選択します。
 	The Windows store's digital IDs couldn't be listed: {e}	Windows 証明書ストアのデジタル ID の一覧を取得できませんでした：{e}
+	their appearances as well as the page	ページに加えてその表示
 	There are no other pages in that range.	その範囲に他のページはありません。
 	there are no pages to print	印刷するページはありません
 	There are no redaction marks (mark text, areas or pages first)	墨消しマークがありません（先にテキスト、領域、ページをマークしてください）
