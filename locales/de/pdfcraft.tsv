@@ -166,10 +166,16 @@
 	Advanced Options {chevron}	Erweiterte Optionen {chevron}
 	Advanced search…	Erweiterte Suche…
 	AI assistant	KI-Assistent
+	AI chat isn't available in the web build; use the desktop app or CLI.	KI-Chat gibt es nicht im Web-Build; Desktop-App oder CLI verwenden.
 	Algorithm	Algorithmus
+	Align bottom	Unten ausrichten
+	Align center	Mittig ausrichten
 	Align fields	Felder ausrichten
 	Align left	Linksbündig
+	Align middle	Vertikal mittig ausrichten
+	Align objects	Objekte ausrichten
 	Align right	Rechtsbündig
+	Align top	Oben ausrichten
 	All annotations are tagged	Alle Anmerkungen sind getaggt
 	All document contents	Alle Dokumentinhalte
 	All document contents except metadata	Alle Dokumentinhalte außer Metadaten
@@ -208,6 +214,7 @@
 	Another file dialog is still open. Finish with it first.	Ein anderer Dateidialog ist noch geöffnet. Schließe ihn zuerst.
 	Any except extracting pages	Alle außer Seiten extrahieren
 	Anyone opening the document will need this password. It's applied when you save.	Jeder, der das Dokument öffnet, braucht dieses Passwort. Es wird beim Speichern angewendet.
+	API key:	API-Schlüssel:
 	Appear behind page	Hinter der Seite anzeigen
 	Appear on top of page	Vor der Seite anzeigen
 	Appearance	Darstellung
@@ -231,6 +238,7 @@
 	Arrange image	Bild anordnen
 	Ask	Fragen
 	Ask about this document	Fragen zu diesem Dokument stellen
+	Ask AI to change the formatting	KI bitten, die Formatierung zu ändern
 	Ask anything	Fragen Sie alles
 	Ask in any language	Fragen Sie in jeder Sprache
 	Ask to scan more pages	Nach weiteren Seiten fragen
@@ -379,6 +387,8 @@
 	Choose image…	Bild auswählen…
 	Choose paper by PDF page size	Papier nach PDF-Seitengröße wählen
 	Choose photo…	Foto auswählen…
+	Choose raw file…	Rohdatei wählen…
+	Choose reference…	Referenz wählen…
 	Choose the digital ID that you want to use for signing:	Wähle die digitale ID aus, mit der du signieren möchtest:
 	Clean Up	Aufräumen
 	Clean-up	Bereinigung
@@ -636,6 +646,9 @@ key	Delete	Entf
 	Distinguished name	Distinguished Name
 	Distribute evenly	Gleichmäßig verteilen
 	Distribute fields	Felder verteilen
+	Distribute horizontally	Horizontal verteilen
+	Distribute objects	Objekte verteilen
+	Distribute vertically	Vertikal verteilen
 	DN: 	DN: 
 	Document actions	Dokumentaktionen
 	Document and markups	Dokument und Markierungen
@@ -700,6 +713,7 @@ key	Delete	Entf
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Dynamisches XFA-Formular, aus seiner Vorlage aufgebaut: {pages}, {fields}.
 	E-Sign	E-Signatur
 	e.g. 192.168.1.20	z. B. 192.168.1.20
+	e.g. bigger headings, numbered pages	z. B. größere Überschriften, nummerierte Seiten
 	e.g. en-US	z. B. de-DE
 	e.g. My stamps	z. B. Meine Stempel
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Jedes Feld braucht einen Tooltip, der sagt, was einzugeben ist. Füge ihn unter Feldeigenschaften > Allgemein > Tooltip hinzu.
@@ -915,6 +929,8 @@ scroll speed	Fast	Schnell
 	Form fields only	Nur Formularfelder
 	Form fields panel	Formularfeldbereich
 	Form fill-in and digital signatures	Ausfüllen von Formularen und digitale Signaturen
+	Format Studio	Formatstudio
+	Format Studio…	Formatstudio…
 	Format text	Text formatieren
 	Forms	Formulare
 	Forms & Signatures	Formulare & Signaturen
@@ -927,6 +943,7 @@ scroll speed	Fast	Schnell
 	Front side only	Nur Vorderseite
 	Full screen mode	Vollbildmodus
 	Full screen mode ({key}); Esc leaves it	Vollbildmodus ({key}); Esc
+	Generate styled PDF	Gestyltes PDF erzeugen
 	Geospatial location	Geografische Position
 	Get help, share feedback and follow development on Discord.	Hol dir Hilfe, gib Feedback und verfolge die Entwicklung auf Discord.
 	Go to a page view	Zu einer Seitenansicht wechseln
@@ -1156,6 +1173,7 @@ key	Home	Pos1
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Fehlt in der im PDF gespeicherten Berechnungsreihenfolge: Andere PDF-Viewer berechnen es womöglich nicht.
 	Mixed	Gemischt
 	Mobile	Mobilgerät
+	Model:	Modell:
 	Modify page	Seite ändern
 	Monochrome Images	Monochrome Bilder
 	More options	Weitere Optionen
@@ -1261,6 +1279,8 @@ key	Home	Pos1
 	No preview	Keine Vorschau
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Es wurden keine Drucker gefunden. Prüfen Sie, ob der Drucker installiert ist und die Druckwarteschlange läuft, und öffnen Sie dann „Drucken“ erneut.
 	No problems found: the document conforms to {level}.	Keine Probleme gefunden: Das Dokument entspricht {level}.
+	No raw file yet	Noch keine Rohdatei
+	No reference yet	Noch keine Referenz
 	No scanner found	Kein Scanner gefunden
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Es wurden keine Scanner gefunden. Prüfen Sie, ob der Scanner eingeschaltet und verbunden ist, oder geben Sie seine Netzwerkadresse ein.
 	No security	Keine Sicherheit
@@ -1429,9 +1449,11 @@ animation effects	On	Ein
 	Password security	Passwortschutz
 	Password-protected	Passwortgeschützt
 	Paste after	Danach einfügen
+	Paste an OpenRouter key	OpenRouter-Schlüssel einfügen
 	Paste pages	Kopierte Seiten einfügen
 	Patterns	Muster
 	Patterns (graphics objects)	Muster (Grafikobjekte)
+	PDF and text	PDF und Text
 	PDF Optimizer	PDF-Optimierung
 	PDF or image	PDF oder Bild
 	PDF page: {size}	PDF-Seite: {size}
@@ -1535,12 +1557,14 @@ animation effects	On	Ein
 	Radio button	Optionsfeld
 	Radio Button Properties	Optionsfeld-Eigenschaften
 	RAM {gb} GB	RAM {gb} GB
+	Raw:	Rohtext:
 	Re-type Password	Passwort wiederholen
 	Read	Lesen
 	Read mode	Lesemodus
 	Read Only	Schreibgeschützt
 	Reading colours	Lesefarben
 	Reading the printer's settings…	Druckereinstellungen werden gelesen …
+	Reading the raw document…	Rohdokument wird gelesen…
 	Reading theme	Lesedesign
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Liest {names}, die es wieder lesen. Keine Reihenfolge kann eine Schleife beheben: Ändere eine der Formeln.
 	Reads {name}, which calculates later, so it shows an old value.	Liest {name}, das später berechnet wird, und zeigt deshalb einen alten Wert.
@@ -1579,6 +1603,7 @@ animation effects	On	Ein
 	Redo {action}	{action} wiederholen
 	Reduce file size	Dateigröße reduzieren
 	Reduce file size…	Dateigröße reduzieren…
+	Reference:	Referenz:
 	Regularity	Regelmäßigkeit
 	Rejected	Abgelehnt
 	Reliable character encoding is provided	Zuverlässige Zeichenkodierung ist vorhanden
@@ -1653,6 +1678,8 @@ animation effects	On	Ein
 	Restore the last view (page, zoom and page display) when a document is opened again	Beim erneuten Öffnen eines Dokuments die letzte Ansicht (Seite, Zoom und Seitenanzeige) wiederherstellen
 	Restrictions	Einschränkungen
 	Restrictions lifted	Einschränkungen aufgehoben
+	Restyle raw document	Rohdokument umformatieren
+	Restyle text	Text umformatieren
 	Retain existing	Bestehende beibehalten
 	Reveal in File Explorer	Im Datei-Explorer anzeigen
 	Reverse closed arrow	Geschlossener Pfeil umgekehrt
@@ -1790,10 +1817,12 @@ animation effects	On	Ein
 	Select Trigger:	Auslöser auswählen:
 	Selected image files: {count}	Ausgewählte Bilddateien: {count}
 	Self-signed	Selbstsigniert
+	Send	Senden
 	Send backward	Nach hinten senden
 	Send to back	In den Hintergrund
 	Sending sheet {s} of {n} to {printer}…	Blatt {s} von {n} wird an {printer} gesendet…
 	Sending to {printer}…	Wird an {printer} gesendet…
+	Sending…	Wird gesendet…
 	Sent to {printer}: {msg}	An {printer} gesendet: {msg}
 	Separate PDFs	Einzelne PDFs
 	Separator style:	Trennzeichen:
@@ -1999,6 +2028,8 @@ certificate	Subject	Zertifikatsinhaber
 	That didn't work: an internal error stopped it ({m}).	Das hat nicht geklappt: Ein interner Fehler ist aufgetreten ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Das hat nicht geklappt: Ein interner Fehler ist aufgetreten ({m}). Deine Dokumente sind unverändert.
 	That isn't a scanner address	Das ist keine Scanneradresse
+	The answer proposes formatting changes.	Die Antwort schlägt Formatänderungen vor.
+	The answer stopped unexpectedly.	Die Antwort ist unerwartet abgebrochen.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Die Berechnungsreihenfolge hat {n} Eintrag, der nichts berechnet. „Reihenfolge korrigieren“ entfernt ihn.|Die Berechnungsreihenfolge hat {n} Einträge, die nichts berechnen. „Reihenfolge korrigieren“ entfernt sie.
 	The checker found 1 problem which may prevent the document from being fully accessible.	Die Prüfung hat 1 Problem gefunden, das die vollständige Barrierefreiheit des Dokuments verhindern kann.
 	The checker found no problems in this document.	Die Prüfung hat in diesem Dokument keine Probleme gefunden.
@@ -2043,6 +2074,7 @@ certificate	Subject	Zertifikatsinhaber
 	The linked PDF opened, but its page destination was out of range.	Die verknüpfte PDF wurde geöffnet, aber ihr Seitenziel liegt außerhalb des Bereichs.
 	the name is not a plain file name	der Name ist kein einfacher Dateiname
 	The newest {n} of {total} PDFs	Die neuesten {n} von {total} PDFs
+	The objects are already aligned.	Die Objekte sind bereits ausgerichtet.
 	The operation failed.	Der Vorgang ist fehlgeschlagen.
 	The order saved in the PDF needs tidying	Die im PDF gespeicherte Reihenfolge muss bereinigt werden
 	The page has changed; select the image again	Die Seite hat sich geändert; wählen Sie das Bild erneut aus
@@ -2052,6 +2084,7 @@ certificate	Subject	Zertifikatsinhaber
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Die PDF-Textschriften können „{c}“ ({code}) nicht darstellen. Wählen Sie unterstützten Text.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Die digitalen IDs auf den PKCS-#11-Token konnten nicht aufgelistet werden: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Die eigenen Einstellungen des Druckertreibers für diesen Druck: Papierfach, Papiersorte, Endverarbeitung und mehr.
+	The raw text was truncated to what fits.	Der Rohtext wurde auf die passende Länge gekürzt.
 	The replacement file doesn't have that many pages.	Die Ersatzdatei hat nicht so viele Seiten.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	die Zeilen sind zu niedrig: Mach den Bereich höher oder verwende weniger Zeilen oder weniger Zeilenabstand
 	The same password is tried on each file.	Dasselbe Passwort wird bei jeder Datei versucht.
@@ -2074,6 +2107,7 @@ certificate	Subject	Zertifikatsinhaber
 	There are no redaction marks to apply	Keine Schwärzungsmarkierungen zum Anwenden vorhanden
 	there are no redaction marks to apply	keine Schwärzungsmarkierungen zum Anwenden vorhanden
 	These files can't be read, so they won't be in the combined PDF:	Diese Dateien können nicht gelesen werden und sind deshalb nicht im kombinierten PDF:
+	These objects could not be aligned.	Diese Objekte konnten nicht ausgerichtet werden.
 	These objects could not be moved. Select them again and try a smaller move.	Diese Objekte konnten nicht verschoben werden. Wählen Sie sie erneut aus und versuchen Sie eine kleinere Verschiebung.
 	Thick	Dick
 	Thin	Dünn
@@ -2363,4 +2397,5 @@ signature pad	Type	Tippen
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	„{name}“ wurde auf dem Datenträger geändert, seit es geöffnet oder zuletzt gespeichert wurde. Speichern ersetzt diese neuere Version durch diese hier.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	„{name}“ hat Sicherheitseinschränkungen. Gib das Berechtigungspasswort ein, um sie aufzuheben.
 	“{name}” is protected. Enter a password to open it.	„{name}“ ist geschützt. Gib ein Passwort ein, um es zu öffnen.
+	…or paste the raw text here; # headings, - bullets	…oder Rohtext hier einfügen; # Überschriften, - Aufzählungen
 	−LOC	−LOC

@@ -166,10 +166,16 @@
 	Advanced Options {chevron}	Разширени опции {chevron}
 	Advanced search…	Разширено търсене…
 	AI assistant	AI асистент
+	AI chat isn't available in the web build; use the desktop app or CLI.	ИИ чатът не е наличен в уеб версията; използвайте настолното приложение или CLI.
 	Algorithm	Алгоритъм
 	Align	Подравни
+	Align bottom	Подравни отдолу
+	Align center	Центрирай
 	Align left	Подравни вляво
+	Align middle	Центрирай вертикално
+	Align objects	Подравняване на обекти
 	Align right	Подравни вдясно
+	Align top	Подравни отгоре
 	All annotations are tagged	Всички анотации са етикетирани
 	All document contents	Цялото съдържание на документа
 	All document contents except metadata	Цялото съдържание на документа без метаданните
@@ -207,6 +213,7 @@
 	Annotations, form fill-in, and digital signatures	Анотации, попълване на формуляри и цифрови подписи
 	Any except extracting pages	Всички без извличане на страници
 	Anyone opening the document will need this password. It's applied when you save.	Всеки, който отваря документа, ще се нуждае от тази парола. Тя се прилага при записване.
+	API key:	API ключ:
 	Appear behind page	Под съдържанието на страницата
 	Appear on top of page	Над съдържанието на страницата
 	Appearance mode	Режим на облика
@@ -228,9 +235,11 @@
 	Arbitrary Mask	Произволна маска
 	Archive documents	Архивирай документи
 	Area	Площ
+	Arrange	Подреди
 	Arrange image	Подреждане на изображението
 	Ask	Попитай
 	Ask about this document	Попитай за този документ
+	Ask AI to change the formatting	Помолете ИИ да промени форматирането
 	Ask anything	Попитайте каквото искате
 	Ask in any language	Попитайте на всеки език
 	Ask to scan more pages	Питане за сканиране на още страници
@@ -377,6 +386,8 @@
 	Choose image…	Избор на изображение…
 	Choose paper by PDF page size	Избор на хартия според размера на PDF страницата
 	Choose photo…	Избор на снимка…
+	Choose raw file…	Избор на суров файл…
+	Choose reference…	Избор на образец…
 	Choose the digital ID that you want to use for signing:	Изберете цифровия идентификатор, с който искате да подпишете:
 	Clean Up	Почистване
 	Clean-up	Почистване
@@ -650,6 +661,9 @@ key	Delete	Delete
 	Distinguished name	Отличително име
 	Distribute	Разпредели
 	Distribute evenly	Разпредели равномерно
+	Distribute horizontally	Разпредели хоризонтално
+	Distribute objects	Разпределяне на обекти
+	Distribute vertically	Разпредели вертикално
 	DN: 	DN: 
 	Document actions	Действия на документа
 	Document and markups	Документ и маркировки
@@ -715,6 +729,7 @@ key	Delete	Delete
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Динамичен XFA формуляр, оформен по своя шаблон: {pages}, {fields}.
 	E-Sign	Е-подпис
 	e.g. 192.168.1.20	напр. 192.168.1.20
+	e.g. bigger headings, numbered pages	напр. по-големи заглавия, номерирани страници
 	e.g. en-US	напр. en-US
 	e.g. My stamps	напр. Моите печати
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Всяко поле се нуждае от подсказка, която казва какво да се въведе. Добавете я в „Свойства на полето > Общи > Подсказка“.
@@ -939,6 +954,8 @@ scroll speed	Fast	Висока
 	Form fields only	Само полета на формуляр
 	Form fields panel	Панел с полета на формуляра
 	Form fill-in and digital signatures	Попълване на формуляри и цифрови подписи
+	Format Studio	Студио за форматиране
+	Format Studio…	Студио за форматиране…
 	Format text	Форматирай текст
 	Forms	Формуляри
 	Forms & Signatures	Формуляри и подписи
@@ -951,6 +968,7 @@ scroll speed	Fast	Висока
 	Front side only	Само лицева страна
 	Full screen mode	Цял екран
 	Full screen mode ({key}); Esc leaves it	Цял екран ({key}); Esc
+	Generate styled PDF	Създаване на форматиран PDF
 	Geospatial location	Геопространствено местоположение
 	Get help, share feedback and follow development on Discord.	Получете помощ, споделете мнение и следете разработката в Discord.
 	Go to a page view	Отиди на изглед на страница
@@ -1182,6 +1200,7 @@ key	Home	Home
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Липсва в реда на изчисляване, записан в PDF файла: други програми за PDF може да не го изчисляват.
 	Mixed	Различни стойности
 	Mobile	Мобилни устройства
+	Model:	Модел:
 	Modified	Променено
 	Modify page	Промени страница
 	Monochrome Images	Монохромни изображения
@@ -1288,6 +1307,8 @@ key	Home	Home
 	No preview	Няма преглед
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Не са намерени принтери. Проверете дали принтерът е инсталиран и дали услугата за опашка за печат работи, след което отворете „Печат“ отново.
 	No problems found: the document conforms to {level}.	Не са открити проблеми: документът съответства на {level}.
+	No raw file yet	Все още няма суров файл
+	No reference yet	Все още няма образец
 	No scanner found	Не е намерен скенер
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Не са намерени скенери. Проверете дали скенерът е включен и свързан, или въведете мрежовия му адрес.
 	No security	Без защита
@@ -1458,12 +1479,14 @@ animation effects	On	Включени
 	Password-protected	Защитен с парола
 	Paste	Постави
 	Paste after	Постави след
+	Paste an OpenRouter key	Поставете OpenRouter ключ
 	Paste pages	Постави страниците
 	Path	Контур
 	Paths	Контури
 	Pattern	Шаблон
 	Patterns	Шаблони
 	Patterns (graphics objects)	Шарки (графични обекти)
+	PDF and text	PDF и текст
 	PDF Optimizer	PDF оптимизатор
 	PDF or image	PDF или изображение
 	PDF page: {size}	PDF страница: {size}
@@ -1568,12 +1591,14 @@ animation effects	On	Включени
 	Radio button	Радиобутон
 	Radio Button Properties	Свойства на радиобутон
 	RAM {gb} GB	Памет {gb} GB
+	Raw:	Суров:
 	Re-type Password	Повторете паролата
 	Read	Четене
 	Read mode	Режим на четене
 	Read Only	Само за четене
 	Reading colours	Цветове за четене
 	Reading the printer's settings…	Четене на настройките на принтера…
+	Reading the raw document…	Четене на суровия документ…
 	Reading theme	Тема за четене
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Чете {names}, които на свой ред го четат. Никой ред не може да поправи цикъл: променете една от формулите.
 	Reads {name}, which calculates later, so it shows an old value.	Чете {name}, което се изчислява по-късно, затова показва стара стойност.
@@ -1614,6 +1639,7 @@ animation effects	On	Включени
 	Redo {action}	Повтори {action}
 	Reduce file size	Намали размера на файла
 	Reduce file size…	Намали размера на файла…
+	Reference:	Образец:
 	Refresh	Опресни
 	Regularity	Регулярност
 	Rejected	Отхвърлено
@@ -1691,6 +1717,8 @@ animation effects	On	Включени
 	Restore the last view (page, zoom and page display) when a document is opened again	Възстановяване на последния изглед (страница, мащаб и показване на страниците) при повторно отваряне на документ
 	Restrictions	Ограничения
 	Restrictions lifted	Ограниченията са премахнати
+	Restyle raw document	Рестилизиране на суровия документ
+	Restyle text	Преформатиране на текста
 	Retain existing	Запази съществуващата
 	Reveal in File Explorer	Показване във файловия мениджър
 	Reverse closed arrow	Обърната затворена стрелка
@@ -1834,10 +1862,12 @@ animation effects	On	Включени
 	Selected pages	Избрани страници
 	Selection	Избраните
 	Self-signed	Самоподписан
+	Send	Изпрати
 	Send backward	Преместване назад
 	Send to back	Преместване най-отзад
 	Sending sheet {s} of {n} to {printer}…	Изпращане на лист {s} от {n} до {printer}…
 	Sending to {printer}…	Изпращане до {printer}…
+	Sending…	Изпраща се…
 	Sent to {printer}: {msg}	Изпратено до {printer}: {msg}
 	Separate PDFs	Отделни PDF файлове
 	Separator style:	Стил на разделителя:
@@ -2040,6 +2070,8 @@ action wizard	Start	Старт
 	Thai and Arabic use regular fallback fonts when available.	Тайландският и арабският използват резервни шрифтове с нормален стил, когато са налични.
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Действието не бе успешно: прекъсна го вътрешна грешка ({m}). Документите ви не са променени.
 	That isn't a scanner address	Това не е адрес на скенер
+	The answer proposes formatting changes.	Отговорът предлага промени във форматирането.
+	The answer stopped unexpectedly.	Отговорът спря неочаквано.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Редът на изчисляване има {n} запис, който не изчислява нищо. „Поправяне на реда“ го премахва.|Редът на изчисляване има {n} записа, които не изчисляват нищо. „Поправяне на реда“ ги премахва.
 	The checker found 1 problem which may prevent the document from being fully accessible.	Проверката откри 1 проблем, който може да попречи документът да бъде напълно достъпен.
 	The checker found no problems in this document.	Проверката не откри проблеми в този документ.
@@ -2082,6 +2114,7 @@ action wizard	Start	Старт
 	The linked PDF opened, but its page destination was out of range.	Свързаният PDF се отвори, но целевата му страница е извън обхвата.
 	the name is not a plain file name	името не е обикновено име на файл
 	The newest {n} of {total} PDFs	Най-новите {n} от {total} PDF файла
+	The objects are already aligned.	Обектите вече са подравнени.
 	The operation failed.	Операцията е неуспешна.
 	The order saved in the PDF needs tidying	Редът, запазен в PDF файла, има нужда от подреждане
 	The page has changed; select the image again	Страницата е променена; изберете изображението отново
@@ -2090,6 +2123,7 @@ action wizard	Start	Старт
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифтовете за PDF текст не могат да изобразят „{c}“ ({code}). Изберете поддържан текст.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Цифровите идентификатори от токените PKCS #11 не можаха да бъдат изброени: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Собствените настройки на драйвера на принтера за този печат: тава за хартия, вид хартия, довършителна обработка и други.
+	The raw text was truncated to what fits.	Суровият текст е съкратен.
 	The replacement file doesn't have that many pages.	Заместващият файл няма толкова страници.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	редовете са твърде ниски: направете областта по-висока или използвайте по-малко редове или по-малко разстояние между тях
 	The same password is tried on each file.	Една и съща парола се опитва за всеки файл.
@@ -2111,6 +2145,7 @@ action wizard	Start	Старт
 	There are no redaction marks to apply	Няма маркировки за заличаване, които да бъдат приложени
 	there are no redaction marks to apply	няма маркировки за заличаване, които да бъдат приложени
 	These files can't be read, so they won't be in the combined PDF:	Тези файлове не могат да бъдат прочетени, затова няма да бъдат в обединения PDF:
+	These objects could not be aligned.	Тези обекти не можаха да бъдат подравнени.
 	These objects could not be moved. Select them again and try a smaller move.	Тези обекти не можаха да бъдат преместени. Изберете ги отново и опитайте по-малко отместване.
 	Thick	Дебела
 	Thin	Тънка
@@ -2402,4 +2437,5 @@ signature pad	Type	Въвеждане
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	„{name}“ беше променен на диска след отварянето или последното записване. Записването сега заменя тази по-нова версия с настоящата.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	„{name}“ има ограничения за защита. Въведете паролата за разрешения, за да ги премахнете.
 	“{name}” is protected. Enter a password to open it.	„{name}“ е защитен. Въведете парола, за да го отворите.
+	…or paste the raw text here; # headings, - bullets	…или поставете суровия текст тук; # заглавия, - списъци
 	−LOC	−LOC

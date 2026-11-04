@@ -175,8 +175,14 @@
 	Advanced Options {chevron}	Opzioni avanzate {chevron}
 	Advanced search…	Ricerca avanzata…
 	AI assistant	Assistente IA
+	AI chat isn't available in the web build; use the desktop app or CLI.	La chat IA non è disponibile nella versione web; usa l’app desktop o la CLI.
 	Algorithm	Algoritmo
+	Align bottom	Allinea in basso
+	Align center	Centra
 	Align fields	Allinea campi
+	Align middle	Centra verticalmente
+	Align objects	Allinea oggetti
+	Align top	Allinea in alto
 	All annotations are tagged	Tutte le annotazioni hanno i tag
 	All document contents	Tutto il contenuto del documento
 	All document contents except metadata	Tutto il contenuto del documento tranne i metadati
@@ -217,6 +223,7 @@
 	Another file dialog is still open. Finish with it first.	Un'altra finestra di selezione file è ancora aperta. Completala prima.
 	Any except extracting pages	Tutte tranne l'estrazione di pagine
 	Anyone opening the document will need this password. It's applied when you save.	Chiunque apra il documento avrà bisogno di questa password. Viene applicata al salvataggio.
+	API key:	Chiave API:
 	Appear behind page	Dietro la pagina
 	Appear on top of page	Sopra la pagina
 	Appearance mode	Modalità aspetto
@@ -240,6 +247,7 @@ calendar date	April	aprile
 	Arrange image	Disponi immagine
 	Ask	Chiedi
 	Ask about this document	Fai domande su questo documento
+	Ask AI to change the formatting	Chiedi all’IA di modificare la formattazione
 	Ask anything	Chiedi qualsiasi cosa
 	Ask in any language	Chiedi in qualsiasi lingua
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Chiede a GitHub qual è l'ultima versione. Nulla viene scaricato o installato automaticamente.
@@ -394,6 +402,8 @@ certificate	Basic constraints	Vincoli di base
 	Choose image…	Scegli immagine…
 	Choose paper by PDF page size	Scegli la carta in base alle dimensioni della pagina PDF
 	Choose photo…	Scegli foto…
+	Choose raw file…	Scegli il file grezzo…
+	Choose reference…	Scegli il riferimento…
 	Choose the digital ID that you want to use for signing:	Scegli l'ID digitale da usare per firmare:
 	Clean Up	Pulizia
 	Clean-up	Pulizia
@@ -656,6 +666,9 @@ key	Delete	Canc
 	Distinguished name	Nome distinto
 	Distribute evenly	Distribuisci uniformemente
 	Distribute fields	Distribuisci campi
+	Distribute horizontally	Distribuisci orizzontalmente
+	Distribute objects	Distribuisci oggetti
+	Distribute vertically	Distribuisci verticalmente
 	DN: 	DN: 
 	Document actions	Azioni documento
 	Document and markups	Documento e annotazioni
@@ -719,6 +732,7 @@ key	Delete	Canc
 	Duplicate pages	Duplica pagine
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Modulo XFA dinamico impaginato dal suo modello: {pages}, {fields}.
 	E-Sign	Firma elettronica
+	e.g. bigger headings, numbered pages	es. titoli più grandi, pagine numerate
 	e.g. en-US	es. it-IT
 	e.g. My stamps	es. I miei timbri
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Ogni campo richiede una descrizione comando che indichi cosa inserire. Aggiungila in Proprietà campo > Generale > Descrizione comando.
@@ -950,6 +964,8 @@ calendar date	February	febbraio
 	Form fields panel	Pannello campi modulo
 	form fill	compilazione moduli
 	Form fill-in and digital signatures	Compilazione moduli e firme digitali
+	Format Studio	Studio di formattazione
+	Format Studio…	Studio di formattazione…
 	Format text	Formatta testo
 	Forms	Moduli
 	Forms & Signatures	Moduli e firme
@@ -963,6 +979,7 @@ calendar weekday	Fr	Ve
 	Front side only	Solo fronte
 	Full screen mode	Modalità schermo intero
 	Full screen mode ({key}); Esc leaves it	Modalità schermo intero ({key}); Esc
+	Generate styled PDF	Genera il PDF formattato
 	Geospatial location	Posizione geospaziale
 	Get help, share feedback and follow development on Discord.	Chiedi aiuto, condividi commenti e segui lo sviluppo su Discord.
 	Go to a page view	Vai a una vista di pagina
@@ -1213,6 +1230,7 @@ calendar date	May	maggio
 	Mixed	Valori diversi
 calendar weekday	Mo	Lu
 	Mobile	Cellulare
+	Model:	Modello:
 	Modify page	Modifica pagina
 	Monochrome Images	Immagini monocromatiche
 	More options	Altre opzioni
@@ -1321,6 +1339,8 @@ calendar weekday	Mo	Lu
 	No preview	Nessuna anteprima
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Nessuna stampante trovata. Verifica che la stampante sia installata e che lo spooler di stampa sia in esecuzione, quindi riapri Stampa.
 	No problems found: the document conforms to {level}.	Nessun problema rilevato: il documento è conforme a {level}.
+	No raw file yet	Ancora nessun file grezzo
+	No reference yet	Ancora nessun riferimento
 	No security	Nessuna protezione
 	No sheets	Nessun foglio
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Nessuna firma trovata nella cornice. Sposta la cornice sulla firma o aumenta la sensibilità all’inchiostro.
@@ -1502,10 +1522,12 @@ animation effects	On	Attivati
 	Password security	Protezione con password
 	Password-protected	Protetto da password
 	Paste after	Incolla dopo
+	Paste an OpenRouter key	Incolla una chiave OpenRouter
 	Paste pages	Incolla pagine
 	Pattern	Schema
 	Patterns	Schemi
 	Patterns (graphics objects)	Pattern (oggetti grafici)
+	PDF and text	PDF e testo
 	PDF Optimizer	Ottimizzatore PDF
 	PDF or image	PDF o immagine
 	PDF page: {size}	Pagina PDF: {size}
@@ -1609,12 +1631,14 @@ certificate	Public key	Chiave pubblica
 	Radio button	Pulsante di opzione
 	Radio Button Properties	Proprietà pulsante di opzione
 	RAM {gb} GB	RAM {gb} GB
+	Raw:	Grezzo:
 	Re-type Password	Ridigita password
 	Read	Lettura
 	Read mode	Modalità lettura
 	Read Only	Sola lettura
 	Reading colours	Colori di lettura
 	Reading the printer's settings…	Lettura delle impostazioni della stampante…
+	Reading the raw document…	Lettura del documento grezzo…
 	Reading theme	Tema di lettura
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Legge {names}, che a loro volta lo leggono. Nessun ordine può correggere un ciclo: modifica una delle formule.
 	Reads {name}, which calculates later, so it shows an old value.	Legge {name}, che viene calcolato dopo, quindi mostra un valore vecchio.
@@ -1653,6 +1677,7 @@ certificate	Public key	Chiave pubblica
 	Redo {action}	Ripeti {action}
 	Reduce file size	Riduci dimensione file
 	Reduce file size…	Riduci dimensione file…
+	Reference:	Riferimento:
 	Regularity	Regolarità
 	Rejected	Rifiutato
 	Reliable character encoding is provided	È fornita una codifica dei caratteri affidabile
@@ -1728,6 +1753,8 @@ certificate	Public key	Chiave pubblica
 	Restore the last view (page, zoom and page display) when a document is opened again	Ripristina l’ultima vista (pagina, zoom e visualizzazione delle pagine) quando un documento viene riaperto
 	Restrictions	Restrizioni
 	Restrictions lifted	Restrizioni rimosse
+	Restyle raw document	Riformatta il documento grezzo
+	Restyle text	Riformatta il testo
 	Retain existing	Mantieni esistente
 	Rev. {rev}: Certified by an unknown signer	Rev. {rev}: certificata da un firmatario sconosciuto
 	Rev. {rev}: Certified by {name}	Rev. {rev}: certificata da {name}
@@ -1871,10 +1898,12 @@ calendar weekday	Sa	Sa
 	Selected image files: {count}	File immagine selezionati: {count}
 	Self-signed	Autofirmato
 certificate	Self-signed	Autofirmato
+	Send	Invia
 	Send backward	Porta indietro
 	Send to back	Porta in secondo piano
 	Sending sheet {s} of {n} to {printer}…	Invio del foglio {s} di {n} a {printer}…
 	Sending to {printer}…	Invio a {printer}…
+	Sending…	Invio in corso…
 	Sent to {printer}: {msg}	Inviato a {printer}: {msg}
 	Separate PDFs	PDF separati
 	Separator style:	Stile separatore:
@@ -2089,6 +2118,8 @@ calendar weekday	Th	Gi
 	Thai and Arabic use regular fallback fonts when available.	Il thailandese e l’arabo usano caratteri sostitutivi in stile normale, quando disponibili.
 	That didn't work: an internal error stopped it ({m}).	Operazione non riuscita: un errore interno l'ha interrotta ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Operazione non riuscita: un errore interno l'ha interrotta ({m}). I tuoi documenti non sono stati modificati.
+	The answer proposes formatting changes.	La risposta propone modifiche alla formattazione.
+	The answer stopped unexpectedly.	La risposta si è interrotta inaspettatamente.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	l'area, la spaziatura e le larghezze delle colonne devono essere numeri, la spaziatura 0 o più e ogni larghezza maggiore di 0
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	L'ordine di calcolo ha {n} voce che non calcola nulla. «Correggi ordine» la rimuove.|L'ordine di calcolo ha {n} voci che non calcolano nulla. «Correggi ordine» le rimuove.
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Il certificato di {} non consente così tanti certificati CA sotto di sé (lunghezza del percorso), quindi non viene usato per garantire {}.
@@ -2156,6 +2187,7 @@ calendar weekday	Th	Gi
 	The metadata doesn't identify the file as {}	I metadati non identificano il file come {}
 	the name is not a plain file name	il nome non è un semplice nome file
 	The newest {n} of {total} PDFs	I {n} più recenti di {total} PDF
+	The objects are already aligned.	Gli oggetti sono già allineati.
 	The operation failed.	L'operazione non è riuscita.
 	The order saved in the PDF needs tidying	L'ordine salvato nel PDF va riordinato
 	The page has changed; select the image again	La pagina è cambiata; seleziona di nuovo l'immagine
@@ -2169,6 +2201,7 @@ calendar weekday	Th	Gi
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	I caratteri del testo PDF non possono visualizzare «{c}» ({code}). Scegliere un testo supportato.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Impossibile elencare gli ID digitali dei token PKCS #11: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Le impostazioni proprie del driver della stampante per questa stampa: vassoio, tipo di carta, finitura e altro.
+	The raw text was truncated to what fits.	Il testo grezzo è stato troncato.
 	The replacement file doesn't have that many pages.	Il file sostitutivo non ha così tante pagine.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	le righe sono troppo basse: rendi l'area più alta oppure usa meno righe o meno spaziatura tra le righe
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	Il valore della firma RSA non ha la lunghezza del modulo della chiave (byte zero iniziali rimossi o aggiunti); è stato letto comunque.
@@ -2229,6 +2262,7 @@ calendar weekday	Th	Gi
 	there are no redaction marks to apply	non ci sono segni di oscuramento da applicare
 	There is no folder to save the digital ID in.	Non c'è una cartella in cui salvare l'ID digitale.
 	These files can't be read, so they won't be in the combined PDF:	Questi file non si possono leggere, quindi non saranno nel PDF combinato:
+	These objects could not be aligned.	Impossibile allineare questi oggetti.
 	These objects could not be moved. Select them again and try a smaller move.	Non è stato possibile spostare questi oggetti. Selezionali di nuovo e prova uno spostamento più piccolo.
 	Thick	Spesso
 	Thin	Sottile
@@ -2548,4 +2582,5 @@ calendar weekday	We	Me
 	“{name}” has security restrictions. Enter its permissions password to lift them.	“{name}” ha restrizioni di sicurezza. Inserisci la password delle autorizzazioni per rimuoverle.
 	“{name}” is protected. Enter a password to open it.	“{name}” è protetto. Inserisci una password per aprirlo.
 	… and {n} more	… e altri {n}
+	…or paste the raw text here; # headings, - bullets	…oppure incolla qui il testo grezzo; # titoli, - elenchi puntati
 	−LOC	−LOC

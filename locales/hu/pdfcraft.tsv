@@ -166,10 +166,16 @@
 	Advanced Options {chevron}	Speciális beállítások {chevron}
 	Advanced search…	Részletes keresés…
 	AI assistant	MI-asszisztens
+	AI chat isn't available in the web build; use the desktop app or CLI.	A MI-csevegés nem érhető el a webes verzióban; használja az asztali alkalmazást vagy a CLI-t.
 	Algorithm	Algoritmus
+	Align bottom	Lentre igazítás
+	Align center	Középre igazítás
 	Align fields	Mezők igazítása
 	Align left	Balra igazítás
+	Align middle	Függőlegesen középre
+	Align objects	Objektumok igazítása
 	Align right	Jobbra igazítás
+	Align top	Fentre igazítás
 	All annotations are tagged	Minden széljegyzet címkézett
 	All document contents	A dokumentum teljes tartalma
 	All document contents except metadata	A dokumentum teljes tartalma, a metaadatok kivételével
@@ -208,6 +214,7 @@
 	Another file dialog is still open. Finish with it first.	Egy másik fájlpárbeszédablak még nyitva van. Előbb fejezd be azt.
 	Any except extracting pages	Bármi, az oldalak kinyerése kivételével
 	Anyone opening the document will need this password. It's applied when you save.	A dokumentumot megnyitóknak erre a jelszóra lesz szükségük. Mentéskor lép életbe.
+	API key:	API-kulcs:
 	Appear behind page	Az oldal mögött
 	Appear on top of page	Az oldal előtt
 	Appearance mode	Megjelenési mód
@@ -230,6 +237,7 @@
 	Arrange image	Kép elrendezése
 	Ask	Kérdezés
 	Ask about this document	Kérdezz erről a dokumentumról
+	Ask AI to change the formatting	Kérje meg a MI-t a formázás módosítására
 	Ask anything	Kérdezzen bármit
 	Ask in any language	Kérdezzen bármely nyelven
 	Ask to scan more pages	Rákérdezés további oldalak beolvasására
@@ -379,6 +387,8 @@
 	Choose image…	Kép kiválasztása…
 	Choose paper by PDF page size	Papír kiválasztása a PDF-oldal mérete szerint
 	Choose photo…	Fénykép kiválasztása…
+	Choose raw file…	Nyers fájl választása…
+	Choose reference…	Referencia választása…
 	Choose the digital ID that you want to use for signing:	Válaszd ki az aláíráshoz használandó digitális azonosítót:
 	Clean Up	Tisztítás
 	Clean-up	Tisztítás
@@ -639,6 +649,9 @@ key	Delete	Delete
 	Distinguished name	Megkülönböztető név
 	Distribute evenly	Egyenletes elosztás
 	Distribute fields	Mezők elosztása
+	Distribute horizontally	Vízszintes elosztás
+	Distribute objects	Objektumok elosztása
+	Distribute vertically	Függőleges elosztás
 	DN: 	DN: 
 	Document actions	Dokumentumműveletek
 	Document and markups	Dokumentum és jelölések
@@ -703,6 +716,7 @@ key	Delete	Delete
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Dinamikus XFA-űrlap, a sablonjából felépítve: {pages}, {fields}.
 	E-Sign	E-aláírás
 	e.g. 192.168.1.20	pl. 192.168.1.20
+	e.g. bigger headings, numbered pages	pl. nagyobb címsorok, számozott oldalak
 	e.g. en-US	pl. hu-HU
 	e.g. My stamps	pl. Saját bélyegzők
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Minden mezőhöz kell egy elemleírás, amely megmondja, mit kell beírni. Add hozzá a Mező tulajdonságai > Általános > Elemleírás helyen.
@@ -919,6 +933,8 @@ scroll speed	Fast	Gyors
 	Form fields only	Csak űrlapmezők
 	Form fields panel	Űrlapmezők panel
 	Form fill-in and digital signatures	Űrlapkitöltés és digitális aláírások
+	Format Studio	Formátumstúdió
+	Format Studio…	Formátumstúdió…
 	Format text	Szöveg formázása
 	Forms	Űrlapok
 	Forms & Signatures	Űrlapok és aláírások
@@ -932,6 +948,7 @@ scroll speed	Fast	Gyors
 	Front side only	Csak az előlap
 	Full screen mode	Teljes képernyő
 	Full screen mode ({key}); Esc leaves it	Teljes képernyő ({key}); Esc
+	Generate styled PDF	Formázott PDF létrehozása
 	Geospatial location	Földrajzi hely
 	Get help, share feedback and follow development on Discord.	Kérj segítséget, oszd meg a véleményed, és kövesd a fejlesztést a Discordon.
 	Go to a page view	Ugrás egy oldalnézetre
@@ -1169,6 +1186,7 @@ key	Home	Home
 	Missing field	Hiányzó mező
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Hiányzik a PDF-ben mentett számítási sorrendből: más PDF-megjelenítők talán nem számítják ki.
 	Mixed	Eltérő értékek
+	Model:	Modell:
 	Modify page	Oldal módosítása
 	Monochrome Images	Monokróm képek
 	More options	További beállítások
@@ -1274,6 +1292,8 @@ key	Home	Home
 	No preview	Nincs előnézet
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Nem található nyomtató. Ellenőrizze, hogy a nyomtató telepítve van-e, és fut-e a nyomtatási sorkezelő, majd nyissa meg újra a Nyomtatást.
 	No problems found: the document conforms to {level}.	Nem találtunk problémát: a dokumentum megfelel ennek: {level}.
+	No raw file yet	Még nincs nyers fájl
+	No reference yet	Még nincs referencia
 	No scanner found	Nem található lapolvasó
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Nem található lapolvasó. Ellenőrizze, hogy a lapolvasó be van-e kapcsolva és csatlakoztatva van-e, vagy adja meg a hálózati címét.
 	No security	Nincs védelem
@@ -1440,10 +1460,12 @@ animation effects	On	Be
 	Password security	Jelszavas védelem
 	Password-protected	Jelszóval védett
 	Paste after	Beillesztés utána
+	Paste an OpenRouter key	OpenRouter-kulcs beillesztése
 	Paste pages	Oldalak beillesztése
 	Pattern	Minta
 	Patterns	Minták
 	Patterns (graphics objects)	Minták (grafikai objektumok)
+	PDF and text	PDF és szöveg
 	PDF Optimizer	PDF-optimalizáló
 	PDF or image	PDF vagy kép
 	PDF page: {size}	PDF-oldal: {size}
@@ -1545,12 +1567,14 @@ animation effects	On	Be
 	Radio button	Választógomb
 	Radio Button Properties	Választógomb tulajdonságai
 	RAM {gb} GB	RAM {gb} GB
+	Raw:	Nyers:
 	Re-type Password	Jelszó újra
 	Read	Olvasás
 	Read mode	Olvasási mód
 	Read Only	Csak olvasható
 	Reading colours	Olvasási színek
 	Reading the printer's settings…	A nyomtató beállításainak beolvasása…
+	Reading the raw document…	A nyers dokumentum olvasása…
 	Reading theme	Olvasási téma
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Ezeket olvassa: {names}, amelyek visszaolvassák. Hurkot semmilyen sorrend nem javít meg: módosítsd az egyik képletet.
 	Reads {name}, which calculates later, so it shows an old value.	Ezt olvassa: {name}, amely később számítódik, ezért régi értéket mutat.
@@ -1590,6 +1614,7 @@ animation effects	On	Be
 	Redo {action}	{action} megismétlése
 	Reduce file size	Fájlméret csökkentése
 	Reduce file size…	Fájlméret csökkentése…
+	Reference:	Referencia:
 	Regularity	Szabályosság
 	Rejected	Elutasítva
 	Reliable character encoding is provided	Megbízható karakterkódolás van megadva
@@ -1663,6 +1688,8 @@ animation effects	On	Be
 	Restore the last view (page, zoom and page display) when a document is opened again	A legutóbbi nézet (oldal, nagyítás és oldalmegjelenítés) visszaállítása a dokumentum újbóli megnyitásakor
 	Restrictions	Korlátozások
 	Restrictions lifted	Korlátozások feloldva
+	Restyle raw document	Nyers dokumentum újraformázása
+	Restyle text	Szöveg újraformázása
 	Retain existing	Meglévő megtartása
 	Reveal in File Explorer	Megjelenítés a fájlkezelőben
 	Reverse closed arrow	Fordított zárt nyíl
@@ -1803,10 +1830,12 @@ animation effects	On	Be
 	Select Trigger:	Esemény kiválasztása:
 	Selected image files: {count}	Kiválasztott képfájlok: {count}
 	Self-signed	Önaláírt
+	Send	Küldés
 	Send backward	Hátrébb küldés
 	Send to back	Hátraküldés
 	Sending sheet {s} of {n} to {printer}…	{s}. lap / {n} küldése ide: {printer}…
 	Sending to {printer}…	Küldés ide: {printer}…
+	Sending…	Küldés…
 	Sent to {printer}: {msg}	Elküldve ide: {printer}: {msg}
 	Separate PDFs	Külön PDF-ek
 	Separator style:	Elválasztó stílusa:
@@ -2015,6 +2044,8 @@ action wizard	Start	Indítás
 	That didn't work: an internal error stopped it ({m}).	Ez nem sikerült: belső hiba állította le ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Ez nem sikerült: egy belső hiba megállította ({m}). A dokumentumaid változatlanok.
 	That isn't a scanner address	Ez nem lapolvasócím
+	The answer proposes formatting changes.	A válasz formázási módosításokat javasol.
+	The answer stopped unexpectedly.	A válasz váratlanul megszakadt.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	A számítási sorrendben {n} bejegyzés semmit nem számít ki. A „Sorrend javítása” eltávolítja.|A számítási sorrendben {n} bejegyzés semmit nem számít ki. A „Sorrend javítása” eltávolítja őket.
 	The checker found 1 problem which may prevent the document from being fully accessible.	Az ellenőrzés 1 problémát talált, amely megakadályozhatja, hogy a dokumentum teljesen akadálymentes legyen.
 	The checker found no problems in this document.	Az ellenőrzés nem talált problémát ebben a dokumentumban.
@@ -2059,6 +2090,7 @@ action wizard	Start	Indítás
 	The linked PDF opened, but its page destination was out of range.	A hivatkozott PDF megnyílt, de a céloldal a tartományon kívül esik.
 	the name is not a plain file name	a név nem egyszerű fájlnév
 	The newest {n} of {total} PDFs	A legújabb {n} / {total} PDF
+	The objects are already aligned.	Az objektumok már igazítva vannak.
 	The operation failed.	A művelet nem sikerült.
 	The order saved in the PDF needs tidying	A PDF-ben mentett sorrend rendbetételre szorul
 	The page has changed; select the image again	Az oldal megváltozott; jelölje ki újra a képet
@@ -2069,6 +2101,7 @@ action wizard	Start	Indítás
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	A PDF szövegének betűtípusai nem tudják megjeleníteni ezt: „{c}” ({code}). Válasszon támogatott szöveget.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	A PKCS #11 tokenek digitális azonosítóit nem sikerült listázni: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	A nyomtató-illesztőprogram saját beállításai ehhez a nyomtatáshoz: papírtálca, papírtípus, utófeldolgozás és egyebek.
+	The raw text was truncated to what fits.	A nyers szöveg csonkolva lett.
 	The replacement file doesn't have that many pages.	A cserefájlban nincs ennyi oldal.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	a sorok túl alacsonyak: növeld a terület magasságát, vagy használj kevesebb sort vagy kisebb sorközt
 	The same password is tried on each file.	Ugyanezt a jelszót próbáljuk meg minden fájlon.
@@ -2091,6 +2124,7 @@ action wizard	Start	Indítás
 	There are no redaction marks to apply	Nincs alkalmazható kitakarásjelölés
 	there are no redaction marks to apply	nincs alkalmazható kitakarásjelölés
 	These files can't be read, so they won't be in the combined PDF:	Ezek a fájlok nem olvashatók, ezért nem kerülnek bele az egyesített PDF-be:
+	These objects could not be aligned.	Ezeket az objektumokat nem sikerült igazítani.
 	These objects could not be moved. Select them again and try a smaller move.	Ezeket az objektumokat nem sikerült áthelyezni. Jelölje ki őket újra, és próbáljon kisebb elmozdítást.
 	Thick	Vastag
 	Thin	Vékony
@@ -2383,4 +2417,5 @@ signature pad	Type	Gépelés
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	A(z) „{name}” megváltozott a lemezen a megnyitás vagy az utolsó mentés óta. A mentés most ezt az újabb változatot cseréli le erre.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	„{name}” biztonsági korlátozásokat tartalmaz. Add meg a jogosultsági jelszavát a feloldásukhoz.
 	“{name}” is protected. Enter a password to open it.	„{name}” védett. Add meg a jelszót a megnyitásához.
+	…or paste the raw text here; # headings, - bullets	…vagy illessze be ide a nyers szöveget; # címsorok, - felsorolások
 	−LOC	−LOC

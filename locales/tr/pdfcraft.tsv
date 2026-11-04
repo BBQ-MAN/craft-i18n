@@ -180,8 +180,14 @@
 	Advanced Options {chevron}	Gelişmiş Seçenekler {chevron}
 	Advanced search…	Gelişmiş arama…
 	AI assistant	Yapay zeka asistanı
+	AI chat isn't available in the web build; use the desktop app or CLI.	Yapay zekâ sohbeti web sürümünde yok; masaüstü uygulamasını veya CLI’yi kullanın.
 	Algorithm	Algoritma
+	Align bottom	Alta hizala
+	Align center	Ortala
 	Align fields	Alanları hizala
+	Align middle	Dikey ortala
+	Align objects	Nesneleri hizala
+	Align top	Üste hizala
 	All annotations are tagged	Tüm açıklamalar etiketli
 	All document contents	Tüm belge içerikleri
 	All document contents except metadata	Meta veriler dışındaki tüm belge içerikleri
@@ -222,6 +228,7 @@
 	Another file dialog is still open. Finish with it first.	Başka bir dosya iletişim kutusu hala açık. Önce onu tamamlayın.
 	Any except extracting pages	Sayfa ayıklama hariç tümü
 	Anyone opening the document will need this password. It's applied when you save.	Belgeyi açan herkesin bu parolaya ihtiyacı olacaktır. Kaydettiğinizde uygulanır.
+	API key:	API anahtarı:
 	Appear behind page	Sayfanın arkasında göster
 	Appear on top of page	Sayfanın üstünde göster
 	Appearance mode	Görünüm modu
@@ -241,9 +248,11 @@
 	April	Nisan
 	Arbitrary Mask	İsteğe Bağlı Maske
 	Archive documents	Belgeleri arşivle
+	Arrange	Düzenle
 	Arrange image	Resmi düzenle
 	Ask	Sor
 	Ask about this document	Bu belge hakkında soru sor
+	Ask AI to change the formatting	Yapay zekâdan biçimi değiştirmesini iste
 	Ask anything	Her şeyi sorun
 	Ask in any language	Herhangi bir dilde sorun
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	En son sürüm için GitHub'ı sorgular. Hiçbir şey otomatik olarak indirilmez veya kurulmaz.
@@ -400,6 +409,8 @@
 	Choose image…	Resim seç…
 	Choose paper by PDF page size	Kâğıdı PDF sayfa boyutuna göre seç
 	Choose photo…	Fotoğraf seç…
+	Choose raw file…	Ham dosya seç…
+	Choose reference…	Referans seç…
 	Choose the digital ID that you want to use for signing:	İmzalamak için kullanmak istediğiniz dijital kimliği seçin:
 	Clean Up	Temizle
 	Clean-up	Temizleme
@@ -673,6 +684,9 @@ key	Delete	Delete
 	Distinguished name	Ayırt edici ad
 	Distribute evenly	Eşit dağıt
 	Distribute fields	Alanları dağıt
+	Distribute horizontally	Yatay dağıt
+	Distribute objects	Nesneleri dağıt
+	Distribute vertically	Dikey dağıt
 	DN: 	DN: 
 	Dock navigation rail on Left	Gezinme çubuğunu sola yerleştir
 	Dock navigation rail on Right	Gezinme çubuğunu sağa yerleştir
@@ -740,6 +754,7 @@ key	Delete	Delete
 	Duplicate pages	Sayfaları çoğalt
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Şablonundan oluşturulmuş dinamik XFA formu: {pages}, {fields}.
 	E-Sign	E-İmza
+	e.g. bigger headings, numbered pages	örn. daha büyük başlıklar, numaralı sayfalar
 	e.g. en-US	ör. tr-TR
 	e.g. My stamps	ör. Damgalarım
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Her alanın ne girileceğini belirten bir ipucuna ihtiyacı vardır. Alan Özellikleri > Genel > İpucu bölümünden bir tane ekleyin.
@@ -977,6 +992,8 @@ scroll speed	Fast	Hızlı
 	Form fields panel	Form alanları paneli
 	form fill	form doldurma
 	Form fill-in and digital signatures	Form doldurma ve dijital imzalar
+	Format Studio	Biçim Stüdyosu
+	Format Studio…	Biçim Stüdyosu…
 	Format text	Metni biçimlendir
 	Forms	Formlar
 	Forms & Signatures	Formlar ve İmzalar
@@ -994,6 +1011,7 @@ calendar weekday	Fr	Cu
 	Full screen mode ({key}); Esc leaves it	Tam ekran modu ({key}); Esc
 	Full-side strip	Tam kenar şeridi
 	General & Interface	Genel ve Arayüz
+	Generate styled PDF	Stilli PDF oluştur
 	Geospatial location	Coğrafi konum
 	Get help, share feedback and follow development on Discord.	Discord'da yardım alın, geri bildirim paylaşın ve geliştirmeyi takip edin.
 	Go to a page view	Sayfa görünümüne git
@@ -1246,6 +1264,7 @@ key	Home	Home
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	PDF'te kayıtlı hesaplama sırasında yok: diğer PDF görüntüleyicileri bunu hesaplamayabilir.
 	Mixed	Karışık
 calendar weekday	Mo	Pt
+	Model:	Yapay zekâ modeli:
 	Modify page	Sayfayı değiştir
 	Monochrome Images	Tek Renkli Resimler
 	More	Daha fazla
@@ -1362,7 +1381,9 @@ calendar weekday	Mo	Pt
 	No preview	Önizleme yok
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Yazıcı bulunamadı. Yazıcının yüklü olduğunu ve yazdırma biriktiricisinin çalıştığını denetleyip Yazdır'ı yeniden açın.
 	No problems found: the document conforms to {level}.	Sorun bulunamadı: Belge {level} standardına uygundur.
+	No raw file yet	Henüz ham dosya yok
 	No recent files	Son kullanılan dosya yok
+	No reference yet	Henüz referans yok
 	No results	Sonuç yok
 	No security	Güvenlik yok
 	No sheets	Yaprak yok
@@ -1553,10 +1574,12 @@ animation effects	On	Açık
 	Password security	Parola güvenliği
 	Password-protected	Parola korumalı
 	Paste after	Sonrasına yapıştır
+	Paste an OpenRouter key	OpenRouter anahtarı yapıştır
 	Paste pages	Sayfaları yapıştır
 	Pattern	Kalıp
 	Patterns	Kalıplar
 	Patterns (graphics objects)	Desenler (grafik nesneleri)
+	PDF and text	PDF ve metin
 	PDF Optimizer	PDF En İyileştirici
 	PDF or image	PDF veya resim
 	PDF page: {size}	PDF sayfası: {size}
@@ -1660,12 +1683,14 @@ animation effects	On	Açık
 	Radio button	Radyo düğmesi
 	Radio Button Properties	Radyo Düğmesi Özellikleri
 	RAM {gb} GB	RAM {gb} GB
+	Raw:	Ham:
 	Re-type Password	Parolayı Yeniden Yazın
 	Read	Oku
 	Read mode	Okuma modu
 	Read Only	Salt Okunur
 	Reading colours	Okuma renkleri
 	Reading the printer's settings…	Yazıcı ayarları okunuyor…
+	Reading the raw document…	Ham belge okunuyor…
 	Reading theme	Okuma teması
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	{names} alanlarını okur, onlar da bu alanı okur. Hiçbir sıra bir döngüyü düzeltemez: formüllerden birini değiştirin.
 	Reads {name}, which calculates later, so it shows an old value.	Daha sonra hesaplanan {name} alanını okur, bu yüzden eski bir değer gösterir.
@@ -1705,6 +1730,7 @@ animation effects	On	Açık
 	Redo {action}	{action} yinele
 	Reduce file size	Dosya boyutunu küçült
 	Reduce file size…	Dosya boyutunu küçült…
+	Reference:	Referans:
 	Regularity	Düzenlilik
 	Rejected	Reddedildi
 	Reliable character encoding is provided	Güvenilir karakter kodlaması sağlandı
@@ -1783,6 +1809,8 @@ animation effects	On	Açık
 	Restore the last view (page, zoom and page display) when a document is opened again	Bir belge yeniden açıldığında son görünümü (sayfa, yakınlaştırma ve sayfa görünümü) geri yükle
 	Restrictions	Kısıtlamalar
 	Restrictions lifted	Kısıtlamalar kaldırıldı
+	Restyle raw document	Ham belgeyi yeniden biçimlendir
+	Restyle text	Metni yeniden biçimlendir
 	Retain existing	Mevcut olanı koru
 	Rev. {rev}: Certified by an unknown signer	Rev. {rev}: Bilinmeyen bir imzalayan tarafından onaylandı
 	Rev. {rev}: Certified by {name}	Rev. {rev}: {name} tarafından onaylandı
@@ -1935,10 +1963,12 @@ calendar weekday	Sa	Ct
 	Selected image files: {count}	Seçilen resim dosyaları: {count}
 	Selected pages	Seçilen sayfalar
 	Self-signed	Kendinden imzalı
+	Send	Gönder
 	Send backward	Arkaya gönder
 	Send to back	En arkaya gönder
 	Sending sheet {s} of {n} to {printer}…	{n} yapraktan {s}. yaprak {printer} yazıcısına gönderiliyor…
 	Sending to {printer}…	{printer} yazıcısına gönderiliyor…
+	Sending…	Gönderiliyor…
 	Sensitivity	Duyarlılık
 	Sent to {printer}: {msg}	{printer} yazıcısına gönderildi: {msg}
 	Separate PDFs	Ayrı PDF'ler
@@ -2156,6 +2186,8 @@ calendar weekday	Th	Pe
 	Thai and Arabic use regular fallback fonts when available.	Tayca ve Arapça, mevcut olduğunda normal yedek yazı tiplerini kullanır.
 	That didn't work: an internal error stopped it ({m}).	Bu işlem yapılamadı: dahili bir hata durdurdu ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Bu işlem yapılamadı: dahili bir hata durdurdu ({m}). Belgeleriniz değişmedi.
+	The answer proposes formatting changes.	Yanıt biçim değişiklikleri öneriyor.
+	The answer stopped unexpectedly.	Yanıt beklenmedik şekilde durdu.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	alan, aralık ve sütun genişlikleri sayı olmalı; aralık 0 veya daha büyük, her genişlik 0'dan büyük olmalı
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Hesaplama sırasında hiçbir şey hesaplamayan {n} giriş var. "Sırayı düzelt" bunları kaldırır.|Hesaplama sırasında hiçbir şey hesaplamayan {n} giriş var. "Sırayı düzelt" bunları kaldırır.
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	{} sertifikası altında bu kadar çok CA sertifikasına izin vermiyor (yol uzunluğu), bu yüzden {} için güvence olarak kullanılmıyor.
@@ -2224,6 +2256,7 @@ calendar weekday	Th	Pe
 	The metadata doesn't identify the file as {}	Meta veriler dosyayı {} olarak tanımlamıyor
 	the name is not a plain file name	ad, basit bir dosya adı değil
 	The newest {n} of {total} PDFs	En yeni {n} / {total} PDF
+	The objects are already aligned.	Nesneler zaten hizalı.
 	The operation failed.	İşlem başarısız oldu.
 	The order saved in the PDF needs tidying	PDF'te kayıtlı sıranın düzenlenmesi gerekiyor
 	The page has changed; select the image again	Sayfa değişti; resmi yeniden seçin
@@ -2237,6 +2270,7 @@ calendar weekday	Th	Pe
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF metin yazı tipleri “{c}” ({code}) karakterini çizemez. Desteklenen bir metin seçin.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 jetonlarının dijital kimlikleri listelenemedi: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Bu baskı için yazıcı sürücüsünün kendi ayarları: kağıt tepsisi, kağıt türü, sonlandırma ve daha fazlası.
+	The raw text was truncated to what fits.	Ham metin kısaltıldı.
 	The replacement file doesn't have that many pages.	Yedek dosyada o kadar sayfa yok.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	satırlar çok kısa: alanı uzatın ya da daha az satır veya daha az satır aralığı kullanın
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA imza değeri, anahtarın modülüyle aynı uzunlukta değil (baştaki sıfır baytlar atılmış ya da eklenmiş); yine de okundu.
@@ -2301,6 +2335,7 @@ calendar weekday	Th	Pe
 	there are no redaction marks to apply	uygulanacak karartma işareti yok
 	There is no folder to save the digital ID in.	Dijital kimliğin kaydedileceği bir klasör yok.
 	These files can't be read, so they won't be in the combined PDF:	Bu dosyalar okunamıyor, bu yüzden birleştirilmiş PDF'de yer almayacak:
+	These objects could not be aligned.	Bu nesneler hizalanamadı.
 	These objects could not be moved. Select them again and try a smaller move.	Bu nesneler taşınamadı. Bunları tekrar seçin ve daha küçük bir taşıma deneyin.
 	Thick	Kalın
 	Thin	İnce
@@ -2634,4 +2669,5 @@ calendar weekday	We	Ça
 	“{name}” has security restrictions. Enter its permissions password to lift them.	“{name}” güvenlik kısıtlamalarına sahip. Kaldırmak için izin parolasını girin.
 	“{name}” is protected. Enter a password to open it.	“{name}” korumalı. Açmak için bir parola girin.
 	… and {n} more	… ve {n} tane daha
+	…or paste the raw text here; # headings, - bullets	…veya ham metni buraya yapıştırın; # başlıklar, - madde işaretleri
 	−LOC	−LOC

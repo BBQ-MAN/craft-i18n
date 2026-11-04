@@ -169,9 +169,14 @@
 	Advanced search…	Расширенный поиск…
 	Advanced unit formats	Расширенные форматы единиц
 	AI assistant	AI-ассистент
+	AI chat isn't available in the web build; use the desktop app or CLI.	ИИ-чат недоступен в веб-версии; используйте настольное приложение или CLI.
 	Algorithm	Алгоритм
+	Align bottom	Выровнять по низу
 	Align left	Выровнять влево
+	Align middle	Выровнять по середине
+	Align objects	Выровнять объекты
 	Align right	Выровнять вправо
+	Align top	Выровнять по верху
 	All annotations are tagged	Все аннотации размечены
 	All document contents	Всё содержимое документа
 	All document contents except metadata	Всё содержимое документа, кроме метаданных
@@ -209,6 +214,7 @@
 	Annotations, form fill-in, and digital signatures	Аннотации, заполнение форм и цифровые подписи
 	Any except extracting pages	Любые, кроме извлечения страниц
 	Anyone opening the document will need this password. It's applied when you save.	Любой, кто открывает документ, будет нуждаться в этом пароле. Он применяется при сохранении.
+	API key:	Ключ API :
 	Appear behind page	Позади страницы
 	Appear on top of page	Поверх страницы
 	Appearance mode	Режим оформления
@@ -231,6 +237,7 @@
 	Arrange image	Упорядочить изображение
 	Ask	Спросить
 	Ask about this document	Спросить об этом документе
+	Ask AI to change the formatting	Попросить ИИ изменить форматирование
 	Ask anything	Спросите о чём угодно
 	Ask in any language	Спрашивайте на любом языке
 	Ask to scan more pages	Предлагать сканировать ещё страницы
@@ -389,6 +396,8 @@
 	Choose image…	Выбрать изображение…
 	Choose paper by PDF page size	Выбирать бумагу по размеру страницы PDF
 	Choose photo…	Выбрать фото…
+	Choose raw file…	Выбрать исходный файл…
+	Choose reference…	Выбрать эталон…
 	Choose the digital ID that you want to use for signing:	Выберите цифровой идентификатор для подписи:
 	Choose the two endpoints.	Выберите две конечные точки.
 	Choose three points on the circle.	Выберите три точки на окружности.
@@ -661,6 +670,9 @@ key	Delete	Delete
 	Display theme	Тема оформления
 	Distinguished name	Уникальное имя
 	Distribute evenly	Распределить равномерно
+	Distribute horizontally	Распределить по горизонтали
+	Distribute objects	Распределить объекты
+	Distribute vertically	Распределить по вертикали
 	DN: 	DN: 
 	Document actions	Действия документа
 	Document and markups	Документ и разметка
@@ -728,6 +740,7 @@ key	Delete	Delete
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Динамическая форма XFA, сверстанная по шаблону: {pages}, {fields}.
 	E-Sign	Электронная подпись
 	e.g. 192.168.1.20	например, 192.168.1.20
+	e.g. bigger headings, numbered pages	напр. более крупные заголовки, нумерация страниц
 	e.g. en-US	например, en-US
 	e.g. My stamps	например, Мои штампы
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Каждому полю нужна подсказка, которая говорит, что вводить. Добавьте её в Свойства поля > Общие > Подсказка.
@@ -958,6 +971,8 @@ scroll speed	Fast	Высокая
 	Form fields only	Только поля формы
 	Form fields panel	Панель полей формы
 	Form fill-in and digital signatures	Заполнение форм и цифровые подписи
+	Format Studio	Студия форматирования
+	Format Studio…	Студия форматирования…
 	Format text	Форматировать текст
 	Forms	Формы
 	Forms & Signatures	Формы и подписи
@@ -971,6 +986,7 @@ scroll speed	Fast	Высокая
 	Full Screen	Полный экран
 	Full screen mode	Полноэкранный режим
 	Full screen mode ({key}); Esc leaves it	Полноэкранный режим ({key}); Esc
+	Generate styled PDF	Создать PDF в стиле
 	Geographic	Географическая
 	Geospatial location	Геопространственное положение
 	Geospatial map	Геопространственная карта
@@ -1217,6 +1233,7 @@ key	Home	Home
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Отсутствует в порядке вычислений, сохранённом в PDF: другие программы просмотра PDF могут его не вычислять.
 	Mixed	Разные значения
 	Mobile	Мобильные устройства
+	Model:	Модель :
 	Modify page	Изменить страницу
 	Monochrome Images	Монохромные изображения
 	More	Ещё
@@ -1326,6 +1343,8 @@ key	Home	Home
 	No preview	Нет предпросмотра
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Принтеры не найдены. Проверьте, что принтер установлен, а диспетчер печати запущен, и снова откройте «Печать».
 	No problems found: the document conforms to {level}.	Проблем не найдено: документ соответствует {level}.
+	No raw file yet	Исходный файл пока не выбран
+	No reference yet	Эталон пока не выбран
 	No saved measurements in this view.	В этом виде нет сохранённых измерений.
 	No scanner found	Сканер не найден
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Сканеры не найдены. Проверьте, включён и подключён ли сканер, или введите его сетевой адрес.
@@ -1492,10 +1511,12 @@ animation effects	On	Вкл
 	Password security	Безопасность паролем
 	Password-protected	Защищён паролем
 	Paste after	Вставить после
+	Paste an OpenRouter key	Вставьте ключ OpenRouter
 	Paste pages	Вставить страницы
 	Pattern	Шаблон
 	Patterns	Шаблоны
 	Patterns (graphics objects)	Узоры (графические объекты)
+	PDF and text	PDF и текст
 	PDF Optimizer	Оптимизатор PDF
 	PDF or image	PDF или изображение
 	PDF page: {size}	Страница PDF: {size}
@@ -1602,12 +1623,14 @@ animation effects	On	Вкл
 	Radio Button Properties	Свойства переключателя
 	Radius / diameter	Радиус / диаметр
 	RAM {gb} GB	ОЗУ {gb} ГБ
+	Raw:	Исходник :
 	Re-type Password	Повторите пароль
 	Read	Чтение
 	Read mode	Режим чтения
 	Read Only	Только для чтения
 	Reading colours	Цвета для чтения
 	Reading the printer's settings…	Чтение настроек принтера…
+	Reading the raw document…	Чтение исходного документа…
 	Reading theme	Тема чтения
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Читает {names}, которые в свою очередь читают его. Никакой порядок не исправит цикл: измените одну из формул.
 	Reads {name}, which calculates later, so it shows an old value.	Читает {name}, которое вычисляется позже, поэтому показывает старое значение.
@@ -1652,6 +1675,7 @@ animation effects	On	Вкл
 	Reference length (page points)	Длина эталона (пункты страницы)
 	Reference length must be positive.	Длина эталона должна быть положительной.
 	Reference preview	Предпросмотр эталона
+	Reference:	Образец :
 	Registration residual	Остаточная ошибка привязки
 	Regularity	Регулярность
 	Rejected	Отклонено
@@ -1730,6 +1754,8 @@ animation effects	On	Вкл
 	Restore the last view (page, zoom and page display) when a document is opened again	Восстанавливать последний вид (страницу, масштаб и показ страниц) при повторном открытии документа
 	Restrictions	Ограничения
 	Restrictions lifted	Ограничения сняты
+	Restyle raw document	Применить стиль к исходнику
+	Restyle text	Переформатировать текст
 	Retain existing	Сохранить существующее
 	Retry	Повторить
 	Reveal in File Explorer	Показать в проводнике
@@ -1876,10 +1902,12 @@ animation effects	On	Вкл
 	Selected points: {n}	Выбрано точек: {n}
 	Selected unit	Выбранная единица
 	Self-signed	Самоподписанный
+	Send	Отправить
 	Send backward	Переместить назад
 	Send to back	На задний план
 	Sending sheet {s} of {n} to {printer}…	Отправка листа {s} из {n} на {printer}…
 	Sending to {printer}…	Отправка на {printer}…
+	Sending…	Отправка…
 	Sensitivity (screen pixels)	Чувствительность (пиксели экрана)
 	Sent to {printer}: {msg}	Отправлено на {printer}: {msg}
 	Separate display coordinate system	Отдельная система координат отображения
@@ -2089,6 +2117,8 @@ key	Space	Пробел
 	Thai and Arabic use regular fallback fonts when available.	Для тайского и арабского текста используются доступные резервные шрифты обычного начертания.
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Это не сработало: внутренняя ошибка остановила его ({m}). Ваши документы не изменены.
 	That isn't a scanner address	Это не адрес сканера
+	The answer proposes formatting changes.	Ответ содержит предложения по форматированию.
+	The answer stopped unexpectedly.	Ответ неожиданно прервался.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	В порядке вычислений {n} запись, которая ничего не вычисляет. «Исправить порядок» удалит её.|В порядке вычислений {n} записи, которые ничего не вычисляют. «Исправить порядок» удалит их.|В порядке вычислений {n} записей, которые ничего не вычисляют. «Исправить порядок» удалит их.
 	The checker found 1 problem which may prevent the document from being fully accessible.	Проверка нашла 1 проблему, которая может помешать полной доступности документа.
 	The checker found no problems in this document.	Проверка не нашла проблем в этом документе.
@@ -2134,6 +2164,7 @@ key	Space	Пробел
 	The model viewport is too narrow to display.	Область модели слишком узкая для отображения.
 	the name is not a plain file name	имя не является простым именем файла
 	The newest {n} of {total} PDFs	Последние {n} PDF из {total}
+	The objects are already aligned.	Объекты уже выровнены.
 	The operation failed.	Операция не удалась.
 	The order saved in the PDF needs tidying	Сохранённый в PDF порядок нуждается в исправлении
 	The page has changed; select the image again	Страница изменилась; выберите изображение снова
@@ -2142,6 +2173,7 @@ key	Space	Пробел
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифты текста PDF не могут отобразить «{c}» ({code}). Выберите поддерживаемый текст.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Не удалось перечислить цифровые идентификаторы токенов PKCS #11: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Собственные параметры драйвера принтера для этой печати: лоток, тип бумаги, финишная обработка и другое.
+	The raw text was truncated to what fits.	Исходный текст был обрезан.
 	The replacement file doesn't have that many pages.	В заменяющем файле нет столько страниц.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	строки слишком низкие: увеличьте высоту области, уменьшите число строк или интервал между ними
 	The same password is tried on each file.	Один и тот же пароль пробуется на каждом файле.
@@ -2164,6 +2196,7 @@ key	Space	Пробел
 	There are no redaction marks to apply	Нет меток сокрытия для применения
 	there are no redaction marks to apply	нет меток сокрытия для применения
 	These files can't be read, so they won't be in the combined PDF:	Эти файлы не удаётся прочитать, поэтому их не будет в объединённом PDF:
+	These objects could not be aligned.	Не удалось выровнять эти объекты.
 	These objects could not be moved. Select them again and try a smaller move.	Не удалось переместить эти объекты. Выберите их снова и попробуйте меньшее смещение.
 	Thick	Толстая
 	Thin	Тонкая
@@ -2469,3 +2502,4 @@ key	Space	Пробел
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	«{name}» был изменён на диске после открытия или последнего сохранения. Сохранение сейчас заменит ту более новую версию этой.
 	“{name}” has security restrictions. Enter its permissions password to lift them.	У «{name}» есть ограничения безопасности. Введите пароль разрешений, чтобы снять их.
 	“{name}” is protected. Enter a password to open it.	«{name}» защищён. Введите пароль для открытия.
+	…or paste the raw text here; # headings, - bullets	…или вставьте сюда исходный текст; # заголовки, - списки

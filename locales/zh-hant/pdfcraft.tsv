@@ -173,9 +173,14 @@
 	Advanced search…	進階搜尋…
 	Advanced unit formats	進階單位格式
 	AI assistant	AI 助理
+	AI chat isn't available in the web build; use the desktop app or CLI.	網頁版不支援 AI 聊天；請使用桌面應用程式或 CLI。
 	Algorithm	演算法
+	Align bottom	底端對齊
 	Align left	左對齊
+	Align middle	垂直置中
+	Align objects	對齊物件
 	Align right	右對齊
+	Align top	頂端對齊
 	All annotations are tagged	所有註解都已標記
 	All document contents	所有文件內容
 	All document contents except metadata	除中繼資料外的所有文件內容
@@ -214,6 +219,7 @@
 	Annotations, form fill-in, and digital signatures	註解、填寫表單和數位簽章
 	Any except extracting pages	除提取頁面外的任何操作
 	Anyone opening the document will need this password. It's applied when you save.	開啟文件的任何人都需要此密碼。儲存時套用。
+	API key:	API 金鑰：
 	Appear behind page	顯示在頁面後面
 	Appear on top of page	顯示在頁面上層
 	Appearance mode	外觀模式
@@ -235,9 +241,11 @@
 	Archive documents	封存文件
 	Area unit	面積單位
 	Area units	面積單位
+	Arrange	排列
 	Arrange image	排列影像
 	Ask	詢問
 	Ask about this document	詢問此文件
+	Ask AI to change the formatting	讓 AI 修改格式
 	Ask anything	什麼都能問
 	Ask in any language	可用任何語言提問
 	Ask to scan more pages	詢問是否繼續掃描更多頁面
@@ -395,6 +403,8 @@
 	Choose image…	選擇圖片…
 	Choose paper by PDF page size	依 PDF 頁面大小選擇紙張
 	Choose photo…	選擇相片…
+	Choose raw file…	選擇原始檔案…
+	Choose reference…	選擇參考檔案…
 	Choose the digital ID that you want to use for signing:	選擇要用於簽名的數位 ID：
 	Choose the two endpoints.	選擇兩個端點。
 	Choose three points on the circle.	選擇圓周上的三個點。
@@ -674,6 +684,9 @@ key	Delete	Delete
 	Distinguished name	可分辨名稱
 	Distribute	分佈
 	Distribute evenly	平均分配
+	Distribute horizontally	水平分佈
+	Distribute objects	均勻分佈物件
+	Distribute vertically	垂直分佈
 	DN: 	DN：
 	Document actions	文件動作
 	Document and markups	文件和標記
@@ -741,6 +754,7 @@ key	Delete	Delete
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	依範本排版的動態 XFA 表單：{pages}、{fields}。
 	E-Sign	電子簽署
 	e.g. 192.168.1.20	例如 192.168.1.20
+	e.g. bigger headings, numbered pages	例如更大的標題、頁碼
 	e.g. en-US	例如 en-US
 	e.g. My stamps	例如：我的戳記
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	每個欄位都需要說明輸入內容的提示。在「欄位屬性」>「一般」>「提示」中新增。
@@ -972,6 +986,8 @@ scroll speed	Fast	快
 	Form fields only	僅表單欄位
 	Form fields panel	表單欄位面板
 	Form fill-in and digital signatures	填寫表單和數位簽章
+	Format Studio	格式工作室
+	Format Studio…	格式工作室…
 	Format text	設定文字格式
 	Forms	表單
 	Forms & Signatures	表單與簽名
@@ -985,6 +1001,7 @@ scroll speed	Fast	快
 	Front side only	僅正面
 	Full screen mode	全螢幕模式
 	Full screen mode ({key}); Esc leaves it	全螢幕模式 ({key}); Esc
+	Generate styled PDF	產生樣式 PDF
 	Geographic	地理座標
 	Geospatial location	地理位置
 	Geospatial map	地理空間地圖
@@ -1231,6 +1248,7 @@ key	Home	Home
 	Missing field	缺少欄位
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	PDF 中儲存的計算順序缺少此欄位：其他 PDF 檢視器可能不會計算它。
 	Mixed	混合
+	Model:	模型：
 	Modified	修改時間
 	Modify page	修改頁面
 	Monochrome Images	單色圖片
@@ -1342,6 +1360,8 @@ key	Home	Home
 	No preview	無預覽
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	找不到印表機。請確認印表機已安裝、列印多工緩衝處理器正在執行，然後重新開啟「列印」。
 	No problems found: the document conforms to {level}.	未發現問題：文件符合 {level}。
+	No raw file yet	尚未選擇原始檔案
+	No reference yet	尚未選擇參考檔案
 	No saved measurements in this view.	此視圖中沒有已儲存的測量。
 	No scanner found	找不到掃描器
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	找不到掃描器。請檢查掃描器是否已開機並連線，或輸入其網路位址。
@@ -1515,10 +1535,12 @@ animation effects	On	開
 	Password security	密碼安全性
 	Password-protected	受密碼保護
 	Paste after	在後面貼上
+	Paste an OpenRouter key	貼上 OpenRouter 金鑰
 	Paste pages	貼上頁面
 	Pattern	模式
 	Patterns	模式
 	Patterns (graphics objects)	圖案
+	PDF and text	PDF 和文字
 	PDF Optimizer	PDF 最佳化器
 	PDF or image	PDF 或圖片
 	PDF page: {size}	PDF 頁面：{size}
@@ -1628,12 +1650,14 @@ animation effects	On	開
 	Radio Button Properties	選項按鈕屬性
 	Radius / diameter	半徑／直徑
 	RAM {gb} GB	記憶體 {gb} GB
+	Raw:	原始檔案：
 	Re-type Password	重新輸入密碼
 	Read	閱讀
 	Read mode	閱讀模式
 	Read Only	唯讀
 	Reading colours	閱讀色彩
 	Reading the printer's settings…	正在讀取印表機設定…
+	Reading the raw document…	正在讀取原始文件…
 	Reading theme	閱讀主題
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	讀取 {names}，而它們又讀取此欄位。任何順序都無法修正迴圈：請修改其中一個公式。
 	Reads {name}, which calculates later, so it shows an old value.	讀取 {name}，而它之後才計算，因此顯示的是舊值。
@@ -1677,6 +1701,7 @@ animation effects	On	開
 	Reference length (page points)	參考長度（頁面點）
 	Reference length must be positive.	參考長度必須為正數。
 	Reference preview	基準預覽
+	Reference:	參考檔案：
 	Registration residual	配準殘差
 	Regularity	規則性
 	Rejected	已拒絕
@@ -1755,6 +1780,8 @@ animation effects	On	開
 	Restore the last view (page, zoom and page display) when a document is opened again	再次開啟文件時還原上次的檢視（頁面、縮放與頁面顯示）
 	Restrictions	限制
 	Restrictions lifted	已解除限制
+	Restyle raw document	為原始檔案套用樣式
+	Restyle text	重新設定文字樣式
 	Retain existing	保留現有
 	Retry	重試
 	Reveal in File Explorer	在檔案總管中顯示
@@ -1900,10 +1927,12 @@ animation effects	On	開
 	Selected points: {n}	已選點：{n}
 	Selected unit	所選單位
 	Self-signed	自我簽署
+	Send	傳送
 	Send backward	下移一層
 	Send to back	移到最下層
 	Sending sheet {s} of {n} to {printer}…	正在將第 {s} 張（共 {n} 張）傳送到{printer}…
 	Sending to {printer}…	正在傳送到{printer}…
+	Sending…	傳送中…
 	Sensitivity (screen pixels)	靈敏度（螢幕像素）
 	Sent to {printer}	已傳送到{printer}
 	Sent to {printer}: {msg}	已傳送到{printer}：{msg}
@@ -2112,6 +2141,8 @@ key	Space	空格
 	Thai and Arabic use regular fallback fonts when available.	泰語和阿拉伯語使用可用的一般樣式備用字型。
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	出錯了：內部錯誤中斷了操作（{m}）。文件未更改。
 	That isn't a scanner address	這不是掃描器位址
+	The answer proposes formatting changes.	回答中包含格式修改建議。
+	The answer stopped unexpectedly.	回答意外中斷。
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	計算順序中有 {n} 個不計算任何內容的項目。「修正順序」會將其刪除。
 	The checker found 1 problem which may prevent the document from being fully accessible.	檢驗器發現 1 個問題，可能導致文件無法完全無障礙。
 	The checker found no problems in this document.	檢驗器在本文件中未發現問題。
@@ -2157,6 +2188,7 @@ key	Space	空格
 	The model viewport is too narrow to display.	模型視埠太窄，無法顯示。
 	the name is not a plain file name	名稱不是單純的檔案名稱
 	The newest {n} of {total} PDFs	共 {total} 個 PDF 中最新的 {n} 個
+	The objects are already aligned.	物件已經對齊。
 	The operation failed.	操作失敗。
 	The order saved in the PDF needs tidying	PDF 中儲存的順序需要整理
 	The page has changed; select the image again	頁面已變更；請重新選取圖片
@@ -2165,6 +2197,7 @@ key	Space	空格
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF 文字字型無法顯示「{c}」（{code}）。請選擇支援的文字。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	無法列出 PKCS #11 權杖的數位 ID：{e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	此次列印的印表機驅動程式專屬設定：紙匣、紙張類型、裝訂整理等。
+	The raw text was truncated to what fits.	原始文字已被截斷。
 	The replacement file doesn't have that many pages.	替換檔案沒有那麼多頁面。
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	列太矮：請加高區域，或減少列數或列間距
 	The same password is tried on each file.	將對每個檔案嘗試同一密碼。
@@ -2186,6 +2219,7 @@ key	Space	空格
 	There are no redaction marks to apply	沒有可套用的遮蔽內容標記
 	there are no redaction marks to apply	沒有可套用的遮蔽標記
 	These files can't be read, so they won't be in the combined PDF:	這些檔案無法讀取，因此不會包含在合併後的 PDF 中：
+	These objects could not be aligned.	無法對齊這些物件。
 	These objects could not be moved. Select them again and try a smaller move.	無法移動這些物件。請重新選取並嘗試較小的移動距離。
 	Thick	粗
 	Thin	細
@@ -2488,4 +2522,5 @@ key	Space	空格
 	“{name}” changed on disk after it was opened or last saved. Saving now replaces that newer version with this one.	「{name}」在開啟或上次儲存後已在磁碟上變更。現在儲存會以此版本取代那個較新的版本。
 	“{name}” has security restrictions. Enter its permissions password to lift them.	「{name}」有安全限制。請輸入其許可權密碼以解除限制。
 	“{name}” is protected. Enter a password to open it.	「{name}」受保護。請輸入密碼以開啟。
+	…or paste the raw text here; # headings, - bullets	…或在此貼上原始文字；# 標題，- 項目符號
 	−LOC	刪除行
