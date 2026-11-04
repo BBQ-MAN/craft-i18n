@@ -454,6 +454,7 @@
 	Comments and markups	Megjegyzések és jelölések
 	Comments only	Csak megjegyzések
 	Comments panel	Megjegyzések panel
+	Comments to send	Elküldendő megjegyzések
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	A megjegyzéseknek, hivatkozásoknak és mezőknek a címkefában kell lenniük, hogy bemondják őket. Címkézd a széljegyzeteket.
 	Commit selected value immediately	A kijelölt érték azonnali átvétele
 	Common Properties	Általános tulajdonságok
@@ -513,6 +514,7 @@
 	Couldn't save the image: {e}	A képet nem sikerült menteni: {e}
 	Couldn't save {name}: {e}	{name} mentése nem sikerült: {e}
 	Couldn't save: {e}	A mentés nem sikerült: {e}
+	Couldn't send the form: {error}	Nem sikerült elküldeni az űrlapot: {error}
 	Couldn't show the file picker. Please try again.	Nem sikerült megjeleníteni a fájlválasztót. Próbáld újra.
 	Couldn't split: {e}	A felosztás nem sikerült: {e}
 	Couldn't start scanning	Nem sikerült elindítani a beolvasást
@@ -769,6 +771,7 @@ key	End	End
 	Enter the password that opens it	Add meg a megnyitó jelszót
 	Enter the permissions password to allow combining	Add meg a jogosultsági jelszót az egyesítés engedélyezéséhez
 	Entire page	Teljes oldal
+	Entire PDF document to send: {bytes} bytes	Elküldendő teljes PDF-dokumentum: {bytes} bájt
 	Erase drawings	Rajzok törlése
 key	Esc	Esc
 	Even and Odd Pages	Páros és páratlan oldalak
@@ -942,6 +945,9 @@ scroll speed	Fast	Gyors
 	Form fields only	Csak űrlapmezők
 	Form fields panel	Űrlapmezők panel
 	Form fill-in and digital signatures	Űrlapkitöltés és digitális aláírások
+	Form sent to {url} (HTTP {status}).	Az űrlap elküldve ide: {url} (HTTP {status}).
+	Form submission is not available in the browser.	Az űrlapok elküldése böngészőben nem érhető el.
+	Form values to send: {count}	Elküldendő űrlapértékek: {count}
 	Format Studio	Formátumstúdió
 	Format Studio…	Formátumstúdió…
 	Format text	Szöveg formázása
@@ -1374,6 +1380,9 @@ animation effects	On	Be
 	Only change the colour of black text or line art	Csak a fekete szöveg és a vonalak színének módosítása
 	Only checked properties will change. Mixed means the selected fields have different values.	Csak a bejelölt tulajdonságok változnak. Az „Eltérő értékek” azt jelenti, hogy a kijelölt mezők értékei különböznek.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Csak akkor folytasd, ha megbízol ebben a dokumentumban. Egy cím adatokat vihet a dokumentumból, például azt, amit az űrlapjába írtál.
+	Only send if you trust this document and destination. GET puts form values in the URL.	Csak akkor küldje el, ha megbízik ebben a dokumentumban és a célban. A GET az űrlap értékeit az URL-be helyezi.
+	Only send if you trust this document and destination. The entire PDF leaves this computer.	Csak akkor küldje el, ha megbízik a dokumentumban és a címzettben. A teljes PDF elhagyja ezt a számítógépet.
+	Only send if you trust this document and destination. The form values leave this computer.	Csak akkor küldd el, ha megbízol a dokumentumban és a címzettben. Az űrlapértékek elhagyják ezt a számítógépet.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Csak az oldaltartalom változik: az eredeti oldalak hivatkozásai, megjegyzései, űrlapmezői és könyvjelzői megmaradnak.
 	Open a document first	Előbb nyiss meg egy dokumentumot
 	Open a PDF ({key})	PDF megnyitása ({key})
@@ -1817,6 +1826,7 @@ animation effects	On	Be
 	Script Name:	Szkript neve:
 	Script:	Szkript:
 	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	A szkriptelt tartalomnak billentyűzettel és kisegítő technológiával is használhatónak kell lennie. Ellenőrizd a dokumentum szkriptjeit.
+	Scripted submission to {u} is not supported yet.	A szkriptből történő beküldés ide: {u} még nem támogatott.
 	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	A szkriptek homokozóban futnak, fájl- és hálózat-hozzáférés nélkül. Ha egy szkript weboldalt akar nyitni, előbb az engedélyed kell. Kikapcsolt JavaScript mellett az Acrobat szabványos formázó, ellenőrző és számoló függvényei továbbra is működnek.
 	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	A szkriptek homokozóban futnak, fájl- és hálózat-hozzáférés nélkül. Kikapcsolt JavaScript mellett az Acrobat szabványos formázó, ellenőrző és számoló függvényei továbbra is működnek.
 	Scroll long text	Hosszú szöveg görgetése
@@ -2015,6 +2025,10 @@ action wizard	Start	Indítás
 	Strong	Erős
 	Structure Info	Szerkezetadatok
 	Submit a form	Űrlap elküldése
+	Submit a form with GET	Űrlap elküldése (GET)
+	Submit FDF data	FDF-adatok küldése
+	Submit PDF document	PDF-dokumentum küldése
+	Submit XFDF data	XFDF-adatok küldése
 	sum (+)	összeg (+)
 	Summarize	Összefoglalás
 	Summarize comments	Megjegyzések összefoglalása
@@ -2206,6 +2220,7 @@ action wizard	Start	Indítás
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Ez a betűtípusfájl nem használható. Válasszon olvasható TTF-, OTF- vagy TTC-fájlt.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ez az űrlap XFA-adatokat is tartalmaz, amelyeket a PdfCraft még nem olvas. Kitöltheted a mezőit, de az Acrobat helyettük az XFA-értékeket mutathatja.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Az űrlap szkriptjei ki vannak kapcsolva, mert az egyik túl sokáig futott. Nyisd meg újra a dokumentumot, hogy ismét fussanak.
+	This form's submission format or field selection is not supported yet.	Az űrlap beküldési formátuma vagy mezőválasztása még nem támogatott.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Ez egy dinamikus XFA-űrlap, amelyet a PdfCraft még nem tud megjeleníteni. Amit látsz, a fájl helyőrző oldala.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Ez az utolsó próbálkozás a token PIN-kódjának zárolása előtt. Egy hibás PIN itt véglegesen zárolhatja.
 	This machine: {ram} GB RAM, {disk} GB free	Ez a gép: {ram} GB RAM, {disk} GB szabad

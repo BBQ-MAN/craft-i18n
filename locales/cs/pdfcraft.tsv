@@ -479,6 +479,7 @@ certificate	Basic constraints	Základní omezení
 	Comments and markups	Komentáře a značky
 	Comments only	Jen komentáře
 	Comments panel	Panel komentářů
+	Comments to send	Komentáře k odeslání
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Komentáře, odkazy a pole musí být ve stromu tagů, aby je čtečky oznámily. Označkujte anotace.
 	Commit selected value immediately	Potvrdit vybranou hodnotu okamžitě
 	Common Properties	Společné vlastnosti
@@ -539,6 +540,7 @@ certificate	Basic constraints	Základní omezení
 	Couldn't save the image: {e}	Obrázek nelze uložit: {e}
 	Couldn't save {name}: {e}	{name} nelze uložit: {e}
 	Couldn't save: {e}	Nelze uložit: {e}
+	Couldn't send the form: {error}	Formulář se nepodařilo odeslat: {error}
 	Couldn't show the file picker. Please try again.	Výběr souborů nelze zobrazit. Zkuste to prosím znovu.
 	Couldn't split: {e}	Nelze rozdělit: {e}
 	Couldn't start scanning	Skenování se nepodařilo spustit
@@ -824,6 +826,7 @@ key	End	End
 	Enter the password that opens it	Zadejte heslo, které ho otevře
 	Enter the permissions password to allow combining	Zadejte heslo oprávnění, které povolí slučování
 	Entire page	Celá stránka
+	Entire PDF document to send: {bytes} bytes	Celý dokument PDF k odeslání: {bytes} bajtů
 	Erase	Vymazat
 	Erase drawings	Vymazat kresby
 key	Esc	Esc
@@ -1008,6 +1011,9 @@ calendar date	February	února
 	Form fields panel	Panel formulářových polí
 	form fill	vyplnění formuláře
 	Form fill-in and digital signatures	Vyplňování formulářů a digitální podpisy
+	Form sent to {url} (HTTP {status}).	Formulář byl odeslán na {url} (HTTP {status}).
+	Form submission is not available in the browser.	Odesílání formulářů není v prohlížeči dostupné.
+	Form values to send: {count}	Hodnoty formuláře k odeslání: {count}
 	Format Studio	Studio formátování
 	Format Studio…	Studio formátování…
 	Format text	Formát textu
@@ -1479,6 +1485,9 @@ animation effects	On	Zapnuto
 	Only change the colour of black text or line art	Změnit jen barvu černého textu a čar
 	Only checked properties will change. Mixed means the selected fields have different values.	Změní se pouze zaškrtnuté vlastnosti. „Různé hodnoty“ znamená, že vybraná pole mají odlišné hodnoty.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Pokračujte, jen pokud tomuto dokumentu důvěřujete. Adresa může nést informace z dokumentu, například to, co jste zadali do jeho formuláře.
+	Only send if you trust this document and destination. GET puts form values in the URL.	Odesílejte pouze tehdy, pokud tomuto dokumentu a cíli důvěřujete. GET vloží hodnoty formuláře do adresy URL.
+	Only send if you trust this document and destination. The entire PDF leaves this computer.	Odesílejte jen tehdy, pokud tomuto dokumentu a cíli důvěřujete. Celý PDF opustí tento počítač.
+	Only send if you trust this document and destination. The form values leave this computer.	Odesílejte pouze tehdy, pokud tomuto dokumentu a cíli důvěřujete. Hodnoty formuláře opustí tento počítač.
 	Only the document's owner can change its security (open it with the permissions password)	Zabezpečení může změnit jen vlastník dokumentu (otevřete ho heslem oprávnění)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Mění se jen obsah stránek: odkazy, komentáře, formulářová pole a záložky na původních stránkách zůstanou.
 	Opacity:	Neprůhlednost:
@@ -1955,6 +1964,7 @@ calendar weekday	Sa	So
 	Script Name:	Název skriptu:
 	Script:	Skript:
 	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	Skriptovaný obsah musí jít ovládat klávesnicí a asistivními technologiemi. Zkontrolujte skripty dokumentu.
+	Scripted submission to {u} is not supported yet.	Skriptové odeslání na {u} zatím není podporováno.
 	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Skripty běží v izolovaném prostředí bez přístupu k souborům a síti. Skript, který chce otevřít webovou stránku, nejdřív potřebuje vaše svolení. S vypnutým JavaScriptem dál fungují standardní funkce Acrobatu pro formátování, ověření a výpočty.
 	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Skripty běží v izolovaném prostředí bez přístupu k souborům a síti. S vypnutým JavaScriptem dál fungují standardní funkce Acrobatu pro formátování, ověření a výpočty.
 	Scroll long text	Posouvat dlouhý text
@@ -2162,6 +2172,10 @@ action wizard	Start	Spustit
 calendar weekday	Su	Ne
 certificate	Subject	Subjekt
 	Submit a form	Odeslat formulář
+	Submit a form with GET	Odeslat formulář (GET)
+	Submit FDF data	Odeslat data FDF
+	Submit PDF document	Odeslat dokument PDF
+	Submit XFDF data	Odeslat data XFDF
 	Success	Hotovo
 	sum (+)	součet (+)
 	Summarize	Shrnout
@@ -2426,6 +2440,7 @@ calendar weekday	Th	Čt
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Tento soubor písma nelze použít. Vyberte čitelný soubor TTF, OTF nebo TTC.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Tento formulář obsahuje také data XFA, která PdfCraft zatím nečte. Pole můžete vyplnit, ale Acrobat může místo nich zobrazit hodnoty XFA.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Skripty tohoto formuláře jsou vypnuté, protože jeden z nich běžel příliš dlouho. Chcete-li je znovu spustit, otevřete dokument znovu.
+	This form's submission format or field selection is not supported yet.	Formát odeslání nebo výběr polí tohoto formuláře zatím není podporován.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Toto je dynamický formulář XFA, který PdfCraft zatím neumí zobrazit. Vidíte zástupnou stránku souboru.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Toto je poslední pokus před zablokováním PIN tokenu. Nesprávný PIN jej může trvale zablokovat.
 	This machine: {ram} GB RAM, {disk} GB free	Tento počítač: {ram} GB RAM, volných {disk} GB

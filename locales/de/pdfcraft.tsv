@@ -452,6 +452,7 @@
 	Comments and markups	Kommentare und Markierungen
 	Comments only	Nur Kommentare
 	Comments panel	Kommentarbereich
+	Comments to send	Zu sendende Kommentare
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Kommentare, Links und Felder müssen im Tag-Baum stehen, damit sie vorgelesen werden. Tagge die Anmerkungen.
 	Commit selected value immediately	Ausgewählten Wert sofort übernehmen
 	Common Properties	Allgemeine Eigenschaften
@@ -509,6 +510,7 @@
 	Couldn't save the image: {e}	Das Bild konnte nicht gespeichert werden: {e}
 	Couldn't save {name}: {e}	{name} konnte nicht gespeichert werden: {e}
 	Couldn't save: {e}	Speichern fehlgeschlagen: {e}
+	Couldn't send the form: {error}	Das Formular konnte nicht gesendet werden: {error}
 	Couldn't show the file picker. Please try again.	Die Dateiauswahl konnte nicht angezeigt werden. Versuch es noch einmal.
 	Couldn't split: {e}	Teilen fehlgeschlagen: {e}
 	Couldn't start scanning	Scannen konnte nicht gestartet werden
@@ -766,6 +768,7 @@ key	End	Ende
 	Enter the password that opens it	Gib das Passwort zum Öffnen ein
 	Enter the permissions password to allow combining	Gib das Berechtigungspasswort ein, um das Kombinieren zu erlauben
 	Entire page	Ganze Seite
+	Entire PDF document to send: {bytes} bytes	Gesamtes PDF-Dokument zum Senden: {bytes} Byte
 	Erase drawings	Zeichnungen radieren
 key	Esc	Esc
 	Even and Odd Pages	Gerade und ungerade Seiten
@@ -938,6 +941,9 @@ scroll speed	Fast	Schnell
 	Form fields only	Nur Formularfelder
 	Form fields panel	Formularfeldbereich
 	Form fill-in and digital signatures	Ausfüllen von Formularen und digitale Signaturen
+	Form sent to {url} (HTTP {status}).	Formular an {url} gesendet (HTTP {status}).
+	Form submission is not available in the browser.	Das Senden von Formularen ist im Browser nicht verfügbar.
+	Form values to send: {count}	Zu sendende Formularwerte: {count}
 	Format Studio	Formatstudio
 	Format Studio…	Formatstudio…
 	Format text	Text formatieren
@@ -1362,6 +1368,9 @@ animation effects	On	Ein
 	Only change the colour of black text or line art	Nur die Farbe von schwarzem Text oder Strichzeichnungen ändern
 	Only checked properties will change. Mixed means the selected fields have different values.	Nur angehakte Eigenschaften werden geändert. „Gemischt“ bedeutet, dass die ausgewählten Felder unterschiedliche Werte haben.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Fahre nur fort, wenn du diesem Dokument vertraust. Eine Adresse kann Informationen aus dem Dokument übermitteln, etwa was du in sein Formular eingegeben hast.
+	Only send if you trust this document and destination. GET puts form values in the URL.	Nur senden, wenn Sie diesem Dokument und dem Ziel vertrauen. GET fügt die Formularwerte in die URL ein.
+	Only send if you trust this document and destination. The entire PDF leaves this computer.	Nur senden, wenn Sie diesem Dokument und dem Ziel vertrauen. Das gesamte PDF verlässt diesen Computer.
+	Only send if you trust this document and destination. The form values leave this computer.	Nur senden, wenn Sie diesem Dokument und dem Ziel vertrauen. Die Formularwerte verlassen diesen Computer.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Nur der Seiteninhalt ändert sich: Links, Kommentare, Formularfelder und Lesezeichen auf den Originalseiten bleiben erhalten.
 	Open a document first	Öffne zuerst ein Dokument
 	Open a PDF ({key})	PDF öffnen ({key})
@@ -1805,6 +1814,7 @@ animation effects	On	Ein
 	Script Name:	Skriptname:
 	Script:	Skript:
 	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	Skriptgesteuerte Inhalte müssen mit Tastatur und Hilfstechnologien bedienbar sein. Prüfe die Skripte des Dokuments.
+	Scripted submission to {u} is not supported yet.	Das skriptgesteuerte Senden an {u} wird noch nicht unterstützt.
 	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Skripte laufen in einer Sandbox ohne Datei- oder Netzwerkzugriff. Ein Skript, das eine Webseite öffnen will, braucht zuerst deine Erlaubnis. Bei deaktiviertem JavaScript funktionieren die Standardfunktionen von Acrobat zum Formatieren, Prüfen und Berechnen weiterhin.
 	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Skripte laufen in einer Sandbox ohne Datei- oder Netzwerkzugriff. Auch bei deaktiviertem JavaScript funktionieren die Acrobat-Standardfunktionen zum Formatieren, Prüfen und Berechnen weiterhin.
 	Scroll long text	Langen Text scrollen
@@ -1999,6 +2009,10 @@ action wizard	Start	Starten
 	Structure Info	Strukturinformationen
 certificate	Subject	Zertifikatsinhaber
 	Submit a form	Formular senden
+	Submit a form with GET	Formular senden (GET)
+	Submit FDF data	FDF-Daten senden
+	Submit PDF document	PDF-Dokument senden
+	Submit XFDF data	XFDF-Daten senden
 	sum (+)	Summe (+)
 	Summarize	Zusammenfassen
 	Summarize comments	Kommentare zusammenfassen
@@ -2189,6 +2203,7 @@ certificate	Subject	Zertifikatsinhaber
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Diese Schriftdatei kann nicht verwendet werden. Wählen Sie eine lesbare TTF-, OTF- oder TTC-Datei.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Dieses Formular enthält auch XFA-Daten, die PdfCraft noch nicht liest. Du kannst die Felder ausfüllen, aber Acrobat zeigt eventuell stattdessen die XFA-Werte an.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Die Skripte dieses Formulars sind ausgeschaltet, weil eines zu lange lief. Öffne das Dokument erneut, um sie wieder auszuführen.
+	This form's submission format or field selection is not supported yet.	Das Übermittlungsformat oder die Feldauswahl dieses Formulars wird noch nicht unterstützt.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Dies ist ein dynamisches XFA-Formular, das PdfCraft noch nicht anzeigen kann. Du siehst die Platzhalterseite der Datei.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Dies ist der letzte Versuch, bevor die PIN des Tokens gesperrt wird. Eine falsche PIN kann es hier dauerhaft sperren.
 	This machine: {ram} GB RAM, {disk} GB free	Dieser Rechner: {ram} GB RAM, {disk} GB frei

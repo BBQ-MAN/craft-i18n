@@ -526,6 +526,7 @@ certificate	Basic constraints	القيود الأساسية
 	Couldn't save the image: {e}	تعذّر حفظ الصورة: {e}
 	Couldn't save {name}: {e}	تعذّر حفظ {name}: {e}
 	Couldn't save: {e}	تعذّر الحفظ: {e}
+	Couldn't send the form: {error}	تعذر إرسال النموذج: {error}
 	Couldn't show the file picker. Please try again.	تعذّر إظهار منتقي الملفات. حاول مجددًا.
 	Couldn't split: {e}	تعذّر التقسيم: {e}
 	Couldn't summarize comments: {e}	تعذّر تلخيص التعليقات: {e}
@@ -978,6 +979,9 @@ calendar date	February	فبراير
 	Form fields panel	لوحة حقول النموذج
 	form fill	تعبئة نموذج
 	Form fill-in and digital signatures	تعبئة النماذج والتوقيعات الرقمية
+	Form sent to {url} (HTTP {status}).	أُرسل النموذج إلى {url} (HTTP {status}).
+	Form submission is not available in the browser.	إرسال النماذج غير متاح في المتصفح.
+	Form values to send: {count}	قيم النموذج المراد إرسالها: {count}
 	Format Studio	استوديو التنسيق
 	Format Studio…	استوديو التنسيق…
 	Format text	تنسيق النص
@@ -1275,7 +1279,7 @@ calendar weekday	Mo	إثنين
 	Move pages	نقل الصفحات
 	Move tab to new window	نقل علامة التبويب إلى نافذة جديدة
 	Move tag earlier	نقل العلامة للأعلى
-	Move tag later	نقل العلامة للأسفل
+	Move tag later	نقل العلامة للأسفل=======
 	Move to group	نقل إلى مجموعة
 	Move to new window	نقل إلى نافذة جديدة
 	Move to window	نقل إلى نافذة
@@ -1432,6 +1436,8 @@ animation effects	On	مفعّلة
 	Only change the colour of black text or line art	تغيير لون النص الأسود والخطوط فقط
 	Only checked properties will change. Mixed means the selected fields have different values.	الخصائص المؤشَّر عليها فقط ستتغير. «متباين» يعني أن للحقول المحددة قيمًا مختلفة.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	تابع فقط إن كنت تثق بهذا المستند. العنوان قد يحمل معلومات من المستند، مثل ما كتبته في نموذجه.
+	Only send if you trust this document and destination. GET puts form values in the URL.	أرسل فقط إذا كنت تثق بهذا المستند والوجهة. يضع GET قيم النموذج في عنوان URL.
+	Only send if you trust this document and destination. The form values leave this computer.	أرسل فقط إذا كنت تثق بهذا المستند والوجهة. ستغادر قيم النموذج هذا الكمبيوتر.
 	Only the document's owner can change its security (open it with the permissions password)	مالك المستند وحده يستطيع تغيير أمانه (افتحه بكلمة مرور الأذونات)
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	يتغير محتوى الصفحة فقط: الروابط والتعليقات وحقول النموذج والإشارات المرجعية على الصفحات الأصلية تبقى.
 	Open a document first	افتح مستندًا أولًا
@@ -1895,6 +1901,7 @@ calendar weekday	Sa	سبت
 	Script Name:	اسم السكربت:
 	Script:	السكربت:
 	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	المحتوى المبرمج يجب أن يكون قابلًا للاستخدام بلوحة المفاتيح والتقنيات المساعدة. افحص سكربتات المستند.
+	Scripted submission to {u} is not supported yet.	الإرسال بواسطة برنامج نصي إلى {u} غير مدعوم بعد.
 	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	تعمل السكربتات في بيئة معزولة دون وصول إلى الملفات أو الشبكة. السكربت الذي يطلب فتح صفحة ويب يحتاج إلى إذنك أولًا. عند إيقاف JavaScript تبقى دوال Acrobat القياسية للتنسيق والتحقق والحساب تعمل.
 	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	تعمل السكربتات في بيئة معزولة دون وصول إلى الملفات أو الشبكة. عند إيقاف JavaScript تبقى دوال Acrobat القياسية للتنسيق والتحقق والحساب تعمل.
 	Scroll long text	تمرير النص الطويل
@@ -2100,6 +2107,7 @@ action wizard	Start	بدء
 calendar weekday	Su	أحد
 certificate	Subject	صاحب الشهادة
 	Submit a form	إرسال نموذج
+	Submit a form with GET	إرسال نموذج (GET)
 	Subscript	نص منخفض
 	Success	نجاح
 	sum (+)	المجموع (+)
@@ -2357,6 +2365,7 @@ calendar weekday	Th	خميس
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	لا يمكن استخدام ملف الخط هذا. اختر ملف TTF أو OTF أو TTC قابلاً للقراءة.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	هذا النموذج يحتوي أيضًا على بيانات XFA، لا يقرؤها PdfCraft بعد. يمكنك تعبئة حقوله، لكن Acrobat قد يعرض قيم XFA بدلًا منها.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	سكربتات هذا النموذج متوقفة لأن أحدها استغرق وقتًا طويلًا جدًا. أعد فتح المستند لتشغيلها من جديد.
+	This form's submission format or field selection is not supported yet.	تنسيق إرسال هذا النموذج أو اختيار حقوله غير مدعوم بعد.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	هذا نموذج XFA ديناميكي، لا يستطيع PdfCraft عرضه بعد. ما تراه هو الصفحة البديلة للملف.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	هذه المحاولة الأخيرة قبل قفل رقم التعريف الشخصي للرمز. قد يؤدي إدخال رقم خاطئ هنا إلى قفله نهائيًا.
 	This machine: {ram} GB RAM, {disk} GB free	هذا الجهاز: ذاكرة {ram} غيغابايت، ومساحة متاحة {disk} غيغابايت

@@ -458,6 +458,7 @@ calendar date	August	серпня
 	Comments and markups	Коментарі й розмітка
 	Comments only	Лише коментарі
 	Comments panel	Панель коментарів
+	Comments to send	Коментарі для надсилання
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Коментарі, посилання й поля мають бути в дереві тегів, щоб їх озвучували. Додайте теги до коментарів.
 	Commit selected value immediately	Одразу застосовувати вибране значення
 	Common Properties	Загальні властивості
@@ -514,6 +515,7 @@ calendar date	August	серпня
 	Couldn't save the image: {e}	Не вдалося зберегти зображення: {e}
 	Couldn't save {name}: {e}	Не вдалося зберегти {name}: {e}
 	Couldn't save: {e}	Не вдалося зберегти: {e}
+	Couldn't send the form: {error}	Не вдалося надіслати форму: {error}
 	Couldn't show the file picker. Please try again.	Не вдалося показати вікно вибору файлу. Спробуйте ще раз.
 	Couldn't split: {e}	Не вдалося розділити: {e}
 	Couldn't start scanning	Не вдалося почати сканування
@@ -775,6 +777,7 @@ key	End	End
 	Enter the password that opens it	Введіть пароль для відкриття файлу
 	Enter the permissions password to allow combining	Введіть пароль дозволів для об’єднання
 	Entire page	Уся сторінка
+	Entire PDF document to send: {bytes} bytes	Увесь документ PDF для надсилання: {bytes} байтів
 	Erase drawings	Стерти малюнки
 key	Esc	Esc
 	Even and Odd Pages	Парні й непарні сторінки
@@ -948,6 +951,9 @@ calendar date	February	лютого
 	Form fields only	Лише поля форми
 	Form fields panel	Панель полів форми
 	Form fill-in and digital signatures	Заповнення форми й цифрові підписи
+	Form sent to {url} (HTTP {status}).	Форму надіслано на {url} (HTTP {status}).
+	Form submission is not available in the browser.	Надсилання форм у браузері недоступне.
+	Form values to send: {count}	Значення форми для надсилання: {count}
 	Format Studio	Студія форматування
 	Format Studio…	Студія форматування…
 	Format text	Форматувати текст
@@ -1385,6 +1391,9 @@ animation effects	On	Увімкнено
 	Only change the colour of black text or line art	Змінювати лише колір чорного тексту та ліній
 	Only checked properties will change. Mixed means the selected fields have different values.	Зміняться лише позначені властивості. «Різні значення» означає, що значення вибраних полів відрізняються.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Продовжуйте лише якщо довіряєте цьому документу. Адреса може містити інформацію з документа, наприклад дані, введені у форму.
+	Only send if you trust this document and destination. GET puts form values in the URL.	Надсилайте лише тоді, коли довіряєте цьому документу та адресі призначення. GET додає значення форми до URL.
+	Only send if you trust this document and destination. The entire PDF leaves this computer.	Надсилайте лише якщо довіряєте документу та адресату. Увесь PDF залишить цей комп’ютер.
+	Only send if you trust this document and destination. The form values leave this computer.	Надсилайте дані, лише якщо довіряєте документу й адресі призначення. Значення форми залишать цей комп’ютер.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Змінюється лише вміст сторінок: посилання, коментарі, поля форми й закладки на оригінальних сторінках залишаються.
 	Open a document first	Спочатку відкрийте документ
 	Open a PDF ({key})	Відкрити PDF ({key})
@@ -1826,6 +1835,7 @@ animation effects	On	Увімкнено
 	Script Name:	Назва сценарію:
 	Script:	Сценарій:
 	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	Вміст зі сценаріями має бути доступним для керування за допомогою клавіатури й допоміжних технологій. Перевірте сценарії документа.
+	Scripted submission to {u} is not supported yet.	Надсилання сценарієм на {u} ще не підтримується.
 	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Сценарії виконуються в ізольованому середовищі без доступу до файлів і мережі. Сценарій, що просить відкрити вебсторінку, спочатку потребує вашого дозволу. Коли JavaScript вимкнено, стандартні функції форматування, перевірки й обчислення Acrobat усе одно працюють.
 	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Сценарії виконуються в ізольованому середовищі без доступу до файлів і мережі. Коли JavaScript вимкнено, стандартні функції форматування, перевірки й обчислення Acrobat усе одно працюють.
 	Scroll long text	Прокручувати довгий текст
@@ -2023,6 +2033,10 @@ action wizard	Start	Почати
 	Structure Info	Відомості про структуру
 certificate	Subject	Власник сертифіката
 	Submit a form	Надіслати форму
+	Submit a form with GET	Надіслати форму (GET)
+	Submit FDF data	Надіслати дані FDF
+	Submit PDF document	Надіслати документ PDF
+	Submit XFDF data	Надіслати дані XFDF
 	Subscript	Підрядковий
 	sum (+)	сума (+)
 	Summarize	Створити зведення
@@ -2214,6 +2228,7 @@ certificate	Subject	Власник сертифіката
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Цей файл шрифту неможливо використати. Виберіть доступний для читання файл TTF, OTF або TTC.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ця форма також містить дані XFA, які PdfCraft ще не читає. Ви можете заповнювати поля, але Acrobat може показувати натомість значення XFA.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Сценарії цієї форми вимкнено, бо один із них виконувався надто довго. Щоб запустити їх знову, відкрийте документ повторно.
+	This form's submission format or field selection is not supported yet.	Формат надсилання або вибір полів цієї форми ще не підтримується.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Це динамічна форма XFA, яку PdfCraft ще не може відобразити. Ви бачите сторінку-заглушку файлу.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Це остання спроба перед блокуванням PIN-коду токена. Неправильний PIN-код тут може заблокувати його назавжди.
 	This machine: {ram} GB RAM, {disk} GB free	Ця машина: пам'яті {ram} ГБ, вільно {disk} ГБ

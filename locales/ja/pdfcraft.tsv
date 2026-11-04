@@ -487,6 +487,7 @@
 	Comments and markups	注釈とマークアップ
 	Comments only	注釈のみ
 	Comments panel	コメントパネル
+	Comments to send	送信するコメント
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	注釈、リンク、フィールドを読み上げるにはタグツリーに含める必要があります。注釈にタグを付けてください。
 	Commit selected value immediately	選択値をすぐに確定
 	Common Properties	共通プロパティ
@@ -548,6 +549,7 @@
 	Couldn't save the image: {e}	画像を保存できませんでした: {e}
 	Couldn't save {name}: {e}	{name} を保存できませんでした: {e}
 	Couldn't save: {e}	保存できませんでした: {e}
+	Couldn't send the form: {error}	フォームを送信できませんでした: {error}
 	Couldn't show the file picker. Please try again.	ファイル選択ダイアログを表示できませんでした。もう一度お試しください。
 	Couldn't split: {e}	分割できませんでした: {e}
 	Couldn't start scanning	スキャンを開始できませんでした
@@ -823,6 +825,7 @@ key	End	End
 	Enter the password that opens it	ファイルを開くパスワードを入力してください
 	Enter the permissions password to allow combining	結合を許可するには権限パスワードを入力してください
 	Entire page	ページ全体
+	Entire PDF document to send: {bytes} bytes	送信する PDF 文書全体: {bytes} バイト
 	EPSG code	EPSG コード
 	Erase drawings	描画を消去
 key	Esc	Esc
@@ -1003,6 +1006,9 @@ scroll speed	Fast	速い
 	Form fields only	フォームフィールドのみ
 	Form fields panel	フォームフィールドパネル
 	Form fill-in and digital signatures	フォーム入力とデジタル署名
+	Form sent to {url} (HTTP {status}).	フォームを {url} に送信しました (HTTP {status})。
+	Form submission is not available in the browser.	ブラウザーではフォームを送信できません。
+	Form values to send: {count}	送信するフォームの値: {count} 件
 	Format Studio	フォーマットスタジオ
 	Format Studio…	フォーマットスタジオ…
 	Format text	テキストの書式
@@ -1458,6 +1464,9 @@ animation effects	On	オン
 	Only change the colour of black text or line art	黒いテキストと線画の色だけを変更する
 	Only checked properties will change. Mixed means the selected fields have different values.	チェックしたプロパティのみ変更します。「混在」は選択したフィールドの値が異なることを示します。
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	この文書を信頼できる場合にのみ続行してください。アドレスには、フォームに入力した内容など、文書内の情報が含まれていることがあります。
+	Only send if you trust this document and destination. GET puts form values in the URL.	この文書と送信先を信頼できる場合だけ送信してください。GET はフォームの値を URL に含めます。
+	Only send if you trust this document and destination. The entire PDF leaves this computer.	この文書と送信先を信頼できる場合のみ送信してください。PDF 全体がこのコンピューターから送信されます。
+	Only send if you trust this document and destination. The form values leave this computer.	この文書と送信先を信頼できる場合だけ送信してください。フォームの値はこのコンピューターから外部に送られます。
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	ページ内容のみを変更します。元のページのリンク、注釈、フォームフィールド、しおりは保持します。
 	Open a document first	先に文書を開いてください
 	Open a PDF ({key})	PDF を開く（{key}）
@@ -1926,6 +1935,7 @@ animation effects	On	オン
 	Script Name:	スクリプト名:
 	Script:	スクリプト:
 	Scripted content must be usable with a keyboard and assistive technology. Check the document's scripts.	スクリプトで動作するコンテンツは、キーボードや支援技術でも操作できる必要があります。文書のスクリプトを確認してください。
+	Scripted submission to {u} is not supported yet.	スクリプトによる {u} への送信にはまだ対応していません。
 	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	スクリプトは、ファイルやネットワークにアクセスできないサンドボックス内で実行されます。スクリプトがウェブページを開くには、事前にユーザーの許可が必要です。JavaScript がオフでも、Acrobat 標準の書式・検証・計算関数は引き続き動作します。
 	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	スクリプトはファイルやネットワークにアクセスできないサンドボックスで実行されます。JavaScript を無効にしても、Acrobat の標準の書式設定・検証・計算関数は使用できます。
 	Scroll long text	長いテキストをスクロール
@@ -2131,6 +2141,10 @@ key	Space	スペース
 	Strong	強い
 	Structure Info	構造情報
 	Submit a form	フォームを送信
+	Submit a form with GET	フォームを送信 (GET)
+	Submit FDF data	FDF データを送信
+	Submit PDF document	PDF 文書を送信
+	Submit XFDF data	XFDF データを送信
 	sum (+)	合計（+）
 	Summarize	要約
 	Summarize comments	コメントの一覧を作成
@@ -2328,6 +2342,7 @@ key	Space	スペース
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	このフォントファイルは使用できません。読み取り可能な TTF、OTF、TTC ファイルを選択してください。
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	このフォームには PdfCraft がまだ読み取れない XFA データも含まれます。フィールドには入力できますが、Acrobat は代わりに XFA の値を表示する場合があります。
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	このフォームのスクリプトは、実行に時間がかかりすぎたものがあったため無効になっています。もう一度実行するには、文書を再度開いてください。
+	This form's submission format or field selection is not supported yet.	このフォームの送信形式またはフィールドの選択にはまだ対応していません。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	この文書は動的 XFA フォームで、PdfCraft はまだ表示できません。現在はファイルの代替ページを表示しています。
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	これはトークンの PIN がロックされる前の最後の試行です。ここで PIN を誤るとロックが解除できなくなる場合があります。
 	This machine: {ram} GB RAM, {disk} GB free	このマシン: RAM {ram} GB、空き {disk} GB

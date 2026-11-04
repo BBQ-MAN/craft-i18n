@@ -457,6 +457,7 @@
 	Comments and markups	Коментари и маркировки
 	Comments only	Само коментари
 	Comments panel	Панел с коментари
+	Comments to send	Коментари за изпращане
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Коментарите, връзките и полетата трябва да са в дървото на етикетите, за да бъдат обявявани. Етикетирайте анотациите.
 	Commit selected value immediately	Приеми избраната стойност веднага
 	Commits	Къмитове
@@ -517,6 +518,7 @@
 	Couldn't save the image: {e}	Изображението не можа да бъде записано: {e}
 	Couldn't save {name}: {e}	{name} не можа да бъде записан: {e}
 	Couldn't save: {e}	Записването не бе успешно: {e}
+	Couldn't send the form: {error}	Формулярът не можа да бъде изпратен: {error}
 	Couldn't split: {e}	Разделянето не бе успешно: {e}
 	Couldn't start scanning	Сканирането не можа да започне
 	Couldn't summarize comments: {e}	Коментарите не можаха да бъдат обобщени: {e}
@@ -783,6 +785,7 @@ key	End	End
 	Enter the password that opens it	Въведете паролата за отваряне
 	Enter the permissions password to allow combining	Въведете паролата за разрешения, за да позволите обединяването
 	Entire page	Цялата страница
+	Entire PDF document to send: {bytes} bytes	Целият PDF документ за изпращане: {bytes} байта
 	Erase drawings	Изтрий рисунките
 	Eraser	Гумичка
 key	Esc	Esc
@@ -963,6 +966,9 @@ scroll speed	Fast	Висока
 	Form fields only	Само полета на формуляр
 	Form fields panel	Панел с полета на формуляра
 	Form fill-in and digital signatures	Попълване на формуляри и цифрови подписи
+	Form sent to {url} (HTTP {status}).	Формулярът е изпратен до {url} (HTTP {status}).
+	Form submission is not available in the browser.	Изпращането на формуляри не е налично в браузъра.
+	Form values to send: {count}	Стойности на формуляра за изпращане: {count}
 	Format Studio	Студио за форматиране
 	Format Studio…	Студио за форматиране…
 	Format text	Форматирай текст
@@ -1390,6 +1396,9 @@ animation effects	On	Включени
 	Only change the colour of black text or line art	Да се променя само цветът на черния текст и линиите
 	Only checked properties will change. Mixed means the selected fields have different values.	Ще се променят само отметнатите свойства. „Различни стойности“ означава, че избраните полета имат различни стойности.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Продължете само ако имате доверие на този документ. Адресът може да пренася информация от документа, например въведеното във формуляра му.
+	Only send if you trust this document and destination. GET puts form values in the URL.	Изпращайте само ако имате доверие на този документ и получателя. GET поставя стойностите на формуляра в URL адреса.
+	Only send if you trust this document and destination. The entire PDF leaves this computer.	Изпращайте само ако имате доверие на документа и получателя. Целият PDF напуска този компютър.
+	Only send if you trust this document and destination. The form values leave this computer.	Изпращайте само ако имате доверие на документа и получателя. Стойностите от формуляра ще напуснат този компютър.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Променя се само съдържанието на страниците: връзките, коментарите, полетата на формуляра и отметките на оригиналните страници остават.
 	Open	Отвори
 	Open a document first	Първо отворете документ
@@ -1846,6 +1855,7 @@ animation effects	On	Включени
 	Script	Скрипт
 	Script Name:	Име на скрипта:
 	Script:	Скрипт:
+	Scripted submission to {u} is not supported yet.	Изпращането чрез скрипт до {u} още не се поддържа.
 	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Скриптовете се изпълняват в изолирана среда без достъп до файлове или мрежа. Скрипт, който иска да отвори уебстраница, първо се нуждае от вашето разрешение. При изключен JavaScript стандартните функции на Acrobat за форматиране, валидиране и изчисляване продължават да работят.
 	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Скриптовете се изпълняват в изолирана среда без достъп до файлове и мрежа. При изключен JavaScript стандартните функции на Acrobat за форматиране, проверка и изчисление продължават да работят.
 	Scroll long text	Превъртай дълъг текст
@@ -2043,6 +2053,10 @@ action wizard	Start	Старт
 	Strong	Силна
 	Structure Info	Информация за структурата
 	Submit a form	Изпрати формуляр
+	Submit a form with GET	Изпрати формуляр (GET)
+	Submit FDF data	Изпращане на FDF данни
+	Submit PDF document	Изпрати PDF документ
+	Submit XFDF data	Изпращане на XFDF данни
 	sum (+)	сумата (+)
 	Summarize	Обобщи
 	Summarize comments	Обобщи коментарите
@@ -2227,6 +2241,7 @@ action wizard	Start	Старт
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Този файл с шрифт не може да се използва. Изберете четим файл TTF, OTF или TTC.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Този формуляр съдържа и XFA данни, които PdfCraft все още не чете. Можете да попълвате полетата му, но Acrobat може да покаже вместо това XFA стойностите.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Скриптовете на този формуляр са изключени, защото един от тях се изпълняваше твърде дълго. Отворете документа отново, за да се изпълнят пак.
+	This form's submission format or field selection is not supported yet.	Форматът за изпращане или изборът на полета в този формуляр още не се поддържа.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Това е динамичен XFA формуляр, който PdfCraft все още не може да показва. Виждате заместващата страница на файла.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Това е последният опит преди заключване на ПИН кода на токена. Грешен ПИН тук може да го заключи окончателно.
 	This machine: {ram} GB RAM, {disk} GB free	Тази машина: {ram} GB памет, {disk} GB свободни

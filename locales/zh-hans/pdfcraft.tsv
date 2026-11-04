@@ -477,6 +477,7 @@
 	Comments and markups	注释和标记
 	Comments only	仅注释
 	Comments panel	注释面板
+	Comments to send	要发送的批注
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	注释、链接和字段必须位于标记树中才能被播报。请标记注释。
 	Commit selected value immediately	立即提交所选值
 	Common Properties	常规属性
@@ -537,6 +538,7 @@
 	Couldn't save the image: {e}	无法保存图像：{e}
 	Couldn't save {name}: {e}	无法保存{name}：{e}
 	Couldn't save: {e}	无法保存：{e}
+	Couldn't send the form: {error}	无法提交表单：{error}
 	Couldn't split: {e}	无法拆分：{e}
 	Couldn't start scanning	无法开始扫描
 	Couldn't summarize comments: {e}	无法汇总注释：{e}
@@ -810,6 +812,7 @@ key	End	End
 	Enter the password that opens it	输入打开该文件的密码
 	Enter the permissions password to allow combining	输入权限密码以允许合并
 	Entire page	整个页面
+	Entire PDF document to send: {bytes} bytes	要发送的完整 PDF 文档：{bytes} 字节
 	EPSG code	EPSG 代码
 	Erase drawings	擦除绘图
 key	Esc	Esc
@@ -991,6 +994,9 @@ scroll speed	Fast	快
 	Form fields only	仅表单域
 	Form fields panel	表单域面板
 	Form fill-in and digital signatures	填写表单和数字签名
+	Form sent to {url} (HTTP {status}).	表单已发送至 {url}（HTTP {status}）。
+	Form submission is not available in the browser.	浏览器中无法提交表单。
+	Form values to send: {count}	要发送的表单值：{count} 个
 	Format Studio	格式工作室
 	Format Studio…	格式工作室…
 	Format text	设置文本格式
@@ -1446,6 +1452,9 @@ animation effects	On	开
 	Only change the colour of black text or line art	仅更改黑色文本和线条的颜色
 	Only checked properties will change. Mixed means the selected fields have different values.	只会更改勾选的属性。“混合”表示所选字段的值不同。
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	仅在您信任此文档时继续。链接地址可能携带文档中的信息，例如您在表单中输入的内容。
+	Only send if you trust this document and destination. GET puts form values in the URL.	仅在信任此文档和目标地址时发送。GET 会将表单值放入 URL。
+	Only send if you trust this document and destination. The entire PDF leaves this computer.	仅在信任此文档和目标地址时发送。完整 PDF 将离开此计算机。
+	Only send if you trust this document and destination. The form values leave this computer.	仅当您信任此文档和目标地址时才发送。表单值将离开这台电脑。
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	仅更改页面内容：原页面的链接、注释、表单域和书签保留。
 	Opacity:	不透明度:
 	Open a document first	请先打开文档
@@ -1912,6 +1921,7 @@ animation effects	On	开
 	Script	脚本
 	Script Name:	脚本名称：
 	Script:	脚本：
+	Scripted submission to {u} is not supported yet.	尚不支持通过脚本提交至 {u}。
 	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	脚本在沙盒中运行，无法访问文件或网络。脚本请求打开网页时，需要先获得您的许可。关闭 JavaScript 后，Acrobat 的标准格式、验证和计算函数仍可使用。
 	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	脚本在无文件和网络访问权限的沙盒中运行。关闭 JavaScript 后，Acrobat 的标准格式化、验证和计算函数仍可使用。
 	Scroll long text	滚动长文本
@@ -2116,6 +2126,10 @@ key	Space	空格
 	Strong	强
 	Structure Info	结构信息
 	Submit a form	提交表单
+	Submit a form with GET	提交表单 (GET)
+	Submit FDF data	提交 FDF 数据
+	Submit PDF document	发送 PDF 文档
+	Submit XFDF data	提交 XFDF 数据
 	sum (+)	求和 (+)
 	Summarize	摘要
 	Summarize comments	汇总注释
@@ -2306,6 +2320,7 @@ key	Space	空格
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	无法使用此字体文件。请选择可读取的 TTF、OTF 或 TTC 文件。
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	此表单还包含 XFA 数据，PdfCraft 暂不读取。您可以填写字段，但 Acrobat 可能显示 XFA 值。
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	此表单的脚本已关闭，因为其中一个脚本运行时间过长。重新打开文档即可再次运行。
+	This form's submission format or field selection is not supported yet.	尚不支持此表单的提交格式或字段选择。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	这是动态 XFA 表单，PdfCraft 暂无法显示。您看到的是文件的占位页面。
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	这是令牌 PIN 锁定前的最后一次尝试。此处输入错误的 PIN 可能会使其永久锁定。
 	This machine: {ram} GB RAM, {disk} GB free	这台机器：{ram} GB 内存、{disk} GB 可用

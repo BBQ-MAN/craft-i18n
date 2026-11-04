@@ -467,6 +467,7 @@
 	Comments and markups	Комментарии и разметка
 	Comments only	Только комментарии
 	Comments panel	Панель комментариев
+	Comments to send	Отправляемые комментарии
 	Comments, links and fields must be in the tag tree to be announced. Tag the annotations.	Комментарии, ссылки и поля должны быть в дереве тегов, чтобы озвучиваться. Разметьте аннотации.
 	Commit selected value immediately	Применить выбранное значение сразу
 	Common Properties	Общие свойства
@@ -527,6 +528,7 @@
 	Couldn't save the image: {e}	Не удалось сохранить изображение: {e}
 	Couldn't save {name}: {e}	Не удалось сохранить {name}: {e}
 	Couldn't save: {e}	Не удалось сохранить: {e}
+	Couldn't send the form: {error}	Не удалось отправить форму: {error}
 	Couldn't split: {e}	Не удалось разделить: {e}
 	Couldn't start scanning	Не удалось начать сканирование
 	Couldn't summarize comments: {e}	Не удалось суммировать комментарии: {e}
@@ -798,6 +800,7 @@ key	End	End
 	Enter the password that opens it	Введите пароль для открытия
 	Enter the permissions password to allow combining	Введите пароль разрешений, чтобы разрешить объединение
 	Entire page	Вся страница
+	Entire PDF document to send: {bytes} bytes	Весь документ PDF для отправки: {bytes} байт
 	EPSG code	Код EPSG
 	Erase drawings	Стереть рисунки
 key	Esc	Esc
@@ -980,6 +983,9 @@ scroll speed	Fast	Высокая
 	Form fields only	Только поля формы
 	Form fields panel	Панель полей формы
 	Form fill-in and digital signatures	Заполнение форм и цифровые подписи
+	Form sent to {url} (HTTP {status}).	Форма отправлена по адресу {url} (HTTP {status}).
+	Form submission is not available in the browser.	Отправка форм в браузере недоступна.
+	Form values to send: {count}	Значения формы для отправки: {count}
 	Format Studio	Студия форматирования
 	Format Studio…	Студия форматирования…
 	Format text	Форматировать текст
@@ -1428,6 +1434,9 @@ animation effects	On	Вкл
 	Only allow this if you trust the source document.	Разрешите это действие, только если доверяете исходному документу.
 	Only change the colour of black text or line art	Менять только цвет чёрного текста и линий
 	Only checked properties will change. Mixed means the selected fields have different values.	Изменятся только отмеченные свойства. «Разные значения» означает, что значения выбранных полей различаются.
+	Only send if you trust this document and destination. GET puts form values in the URL.	Отправляйте данные, только если доверяете документу и адресу назначения. GET помещает значения формы в URL.
+	Only send if you trust this document and destination. The entire PDF leaves this computer.	Отправляйте только если доверяете документу и адресу назначения. Весь PDF покинет этот компьютер.
+	Only send if you trust this document and destination. The form values leave this computer.	Отправляйте данные, только если доверяете документу и адресу назначения. Значения формы покинут этот компьютер.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Меняется только содержимое страницы: ссылки, комментарии, поля формы и закладки на исходных страницы остаются.
 	Open a document first	Сначала откройте документ
 	Open a PDF ({key})	Открыть PDF ({key})
@@ -1885,6 +1894,7 @@ animation effects	On	Вкл
 	Script	Скрипт
 	Script Name:	Название скрипта:
 	Script:	Скрипт:
+	Scripted submission to {u} is not supported yet.	Отправка по сценарию на {u} пока не поддерживается.
 	Scripts	Скрипты
 	Scripts run in a sandbox without file or network access. A script that asks to open a web page needs your permission first. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Скрипты выполняются в песочнице без доступа к файлам и сети. Скрипт, который просит открыть веб-страницу, сначала нуждается в вашем разрешении. При отключённом JavaScript стандартные функции Acrobat форматирования, проверки и вычислений всё равно работают.
 	Scripts run in a sandbox without file or network access. With JavaScript off, Acrobat's standard format, validate and calculate functions still work.	Скрипты выполняются в песочнице без доступа к файлам и сети. При отключённом JavaScript стандартные функции Acrobat форматирования, проверки и вычислений всё равно работают.
@@ -2089,6 +2099,10 @@ key	Space	Пробел
 	Strong	Высокая
 	Structure Info	Информация о структуре
 	Submit a form	Отправить форму
+	Submit a form with GET	Отправить форму (GET)
+	Submit FDF data	Отправить данные FDF
+	Submit PDF document	Отправить документ PDF
+	Submit XFDF data	Отправить данные XFDF
 	sum (+)	сумма (+)
 	Summarize	Суммировать
 	Summarize comments	Суммировать комментарии
@@ -2279,6 +2293,7 @@ key	Space	Пробел
 	This font file cannot be used. Choose a readable TTF, OTF or TTC file.	Этот файл шрифта нельзя использовать. Выберите доступный для чтения файл TTF, OTF или TTC.
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Эта форма также содержит данные XFA, которые PdfCraft пока не читает. Вы можете заполнить её поля, но Acrobat может показать значения XFA вместо них.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Скрипты этой формы выключены: один из них выполнялся слишком долго. Чтобы запустить их снова, откройте документ заново.
+	This form's submission format or field selection is not supported yet.	Формат отправки или выбор полей этой формы пока не поддерживается.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Это динамическая форма XFA, которую PdfCraft пока не может отобразить. То, что вы видите, — заглушка страницы файла.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Это последняя попытка перед блокировкой PIN-кода токена. Неверный PIN-код может заблокировать его навсегда.
 	This machine: {ram} GB RAM, {disk} GB free	Эта машина: ОЗУ {ram} ГБ, свободно {disk} ГБ
