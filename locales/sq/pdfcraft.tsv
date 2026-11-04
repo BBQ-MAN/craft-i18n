@@ -38,9 +38,12 @@
 	180 degrees	180 gradë
 	9 digit, A letter, O letter or digit, X any character	9 shifër, A shkronjë, O shkronjë ose shifër, X çdo karakter
 	; 1 page already had text	; 1 faqe kishte tashmë tekst
+	; 1 page skipped	; 1 faqe u anashkalua
+	; corrected {n} pages	; u korrigjuan {n} faqe
 	; failed: {list}	; dështoi: {list}
 	; skipped: {n}	; u anashkaluan: {n}
 	; {n} pages already had text	; {n} faqe kishin tashmë tekst
+	; {n} pages skipped	; {n} faqe u anashkaluan
 	? of {n}	? nga {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} commit, +{added} / −{deleted} rreshta (Δ {delta}), +{bin_added} / −{bin_deleted} burime binare, {first} – {last}
 	[Custom]	[I personalizuar]
@@ -172,6 +175,7 @@
 	Add rectangle	Shto drejtkëndësh
 	Add redaction mark	Shto shenjë redaktimi
 	Add search index	Shto indeks kërkimi
+	Add searchable text	Shto tekst të kërkueshëm
 	Add signature	Shto nënshkrim
 	Add squiggly underline	Shto nënvizim të valëzuar
 	Add stamp	Shto vulë
@@ -325,6 +329,7 @@
 	Auto-rotate pages	Rrotullo faqet automatikisht
 	Auto-size text to fit redaction region	Përshtat madhësinë e tekstit automatikisht me zonën e redaktimit
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Skriptet automatike të AcroForm janë të çaktivizuara derisa të ketë izolim të sigurt të ekzekutimit; vlerat e ruajtura të fushave janë mbajtur. Skriptet e butonave dhe të konsolës mbeten të disponueshme.
+	Automatically rotate sideways and upside-down pages	Rrotullo automatikisht faqet anash dhe me kokë poshtë
 	Automatically tag PDF	Etiketo PDF automatikisht
 	Available	Në dispozicion
 	average	mesatarja
@@ -655,6 +660,8 @@
 	Copy text	Kopjo tekstin
 	Copy the pages with a match as a list such as 1-3, 7	Kopjo faqet me përputhje si listë, p.sh. 1-3, 7
 	Correct recognized text	Korrigjo tekstin e njohur
+	Correct scans	Korrigjo skanimet
+	Corrected scan	Skanim i korrigjuar
 	Could not save: {e}	Nuk u ruajt: {e}
 	Couldn't add {name}: {e}	Nuk u shtua {name}: {e}
 	Couldn't be read: {reason}	Couldn't be read: {reason}
@@ -734,6 +741,7 @@
 	Crop Image	Crop Image
 	Crop page	Prit faqen
 	Crop pages	Prit faqet
+	Crop scanner borders to the paper edge	Prit kufijtë e skanimit deri te buza e letrës
 	Cross	Kryq
 key	Ctrl	Ctrl
 	Currency symbol:	Simboli i monedhës:
@@ -1816,6 +1824,7 @@ animation effects	On	Aktiv
 	Only certificates with RSA keys can be recipients.	Vetëm certifikatat me çelësa RSA mund të jenë marrës.
 	Only change the colour of black text or line art	Ndrysho vetëm ngjyrën e tekstit të zi ose të vijave
 	Only checked properties will change. Mixed means the selected fields have different values.	Vetëm vetitë e shënuara do të ndryshojnë. E përzier do të thotë se fushat e zgjedhura kanë vlera të ndryshme.
+	Only clear paper edges are cropped. Indistinguishable white borders are kept.	Priten vetëm buzët e qarta të letrës. Kufijtë e bardhë që nuk dallohen ruhen.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Vazhdo vetëm nëse i beson këtij dokumenti. Një adresë mund të mbartë informacion nga dokumenti, si ajo që shkruatë në formularin e tij.
 	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Pranohen vetëm adresa IP të këtij rrjeti (private, lidhje-lokale ose loopback), jo emra hosti.
 	Only the document's owner can change its security (open it with the permissions password)	Vetëm zotëruesi i dokumentit mund të ndryshojë sigurinë e tij (hape me fjalëkalimin e lejeve)
@@ -2375,6 +2384,7 @@ animation effects	On	Aktiv
 	Run form script	Ekzekuto skriptin e formularit
 	Run JavaScript	Ekzekuto JavaScript
 	Running action… file {d} of {t}	Duke ekzekutuar veprimin… skedari {d} nga {t}
+	Safety margin (pt)	Hapësirë sigurie (pt)
 	Same as interface	Njësoj si ndërfaqja
 	Same as interface ({language})	Njësoj si ndërfaqja ({language})
 	Same as text	Si teksti
@@ -2440,7 +2450,10 @@ animation effects	On	Aktiv
 	Scale relative to target page	Shkalla në raport me faqen e synuar
 	Scan	Skano
 	Scan & OCR	Skanim dhe OCR
+	Scan and text recognition	Skanim dhe njohje teksti
+	Scan correction	Korrigjimi i skanimit
 	Scan interrupted	Scan interrupted
+	Scan processing cancelled	Përpunimi i skanimit u anulua
 	Scan reverse side now (1 front)	Scan reverse side now (1 front)
 	Scan reverse sides	Scan reverse sides
 	Scan reverse sides now ({n} fronts)	Scan reverse sides now ({n} fronts)
@@ -2482,6 +2495,7 @@ animation effects	On	Aktiv
 	Search tools and commands	Kërko mjete dhe komanda
 	Search tools and commands…	Kërko mjete dhe komanda…
 	Search tools…	Kërko mjete…
+	Searchable Image	Imazh i kërkueshëm
 	Searchable Image (Exact)	Imazh i kërkueshëm (i saktë)
 	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	Po kërkohet… {s} nga {p} faqe
@@ -2721,6 +2735,7 @@ action wizard	Start	Fillo
 	Stopped before the end.	Stopped before the end.
 	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Store JPEG images as JPEG XL (smaller, can be undone; needs a reader that supports JPEG XL)	Ruaji imazhet JPEG si JPEG XL (më të vogla, mund të zhbëhet; kërkon lexues që mbështet JPEG XL)
+	Straighten skewed scans	Drejto skanimet e pjerrëta
 	Straighten the page	Straighten the page
 	Strength: {s}	Fuqia: {s}
 	Strikethrough	Vizë mbi tekst
@@ -3111,6 +3126,7 @@ signature pad	Type	Shkruaj
 	Type the web address.	Shkruani adresën web.
 	Type your {what}.	Shkruani {what} tuaj.
 	Typewriter	Makinë shkrimi
+	Uncertain orientations are left unchanged. Deskew fits the full image inside the page.	Orientimet e pasigurta lihen të pandryshuara. Drejtimi e vendos të gjithë imazhin brenda faqes.
 	Unchecked	Pa shënuar
 	Unchecked reads	Unchecked reads
 	Underline	Nënvizim

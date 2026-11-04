@@ -43,9 +43,12 @@
 	4 x 6 in label (101.6 x 152.4 mm)	4 x 6인치 라벨(101.6 x 152.4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 숫자, A 문자, O 문자 또는 숫자, X 모든 문자
 	; 1 page already had text	; 페이지 1개에는 이미 텍스트가 있었습니다
+	; 1 page skipped	; 1페이지 건너뜀
+	; corrected {n} pages	; {n}페이지 보정됨
 	; failed: {list}	; 실패: {list}
 	; skipped: {n}	; 건너뜀: {n}
 	; {n} pages already had text	; 페이지 {n}개에는 이미 텍스트가 있었습니다
+	; {n} pages skipped	; {n}페이지 건너뜀
 	? of {n}	?/{n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: PR {prs}개, 커밋 {commits}개, 줄 +{added} / −{deleted} (Δ {delta}), 바이너리 자산 +{bin_added} / −{bin_deleted}, {first} – {last}
 	[Custom]	[사용자 지정]
@@ -178,6 +181,7 @@
 	Add rectangle	사각형 추가
 	Add redaction mark	제거 대상 표시 추가
 	Add search index	검색 색인 추가
+	Add searchable text	검색 가능한 텍스트 추가
 	Add signature	서명 추가
 	Add squiggly underline	물결 밑줄 추가
 	Add stamp	스탬프 추가
@@ -325,6 +329,7 @@ calendar date	August	8월
 	Auto-size text to fit redaction region	제거 영역에 맞춰 표시 문구 크기 자동 조정
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	안전한 실행 격리가 가능해질 때까지 AcroForm 자동 스크립트는 꺼져 있습니다. 저장된 필드 값은 그대로입니다. 단추와 콘솔 스크립트는 여전히 직접 실행할 수 있습니다.
 	Automatically	자동
+	Automatically rotate sideways and upside-down pages	옆으로 눕거나 거꾸로 된 페이지 자동 회전
 	Automatically tag PDF	PDF에 자동 태그 지정
 	Available	사용 가능
 	average	평균
@@ -637,6 +642,8 @@ certificate	Basic constraints	기본 제약 조건
 	Copy the pages with a match as a list such as 1-3, 7	일치 항목이 있는 페이지를 1-3, 7 같은 목록으로 복사
 	Copy to clipboard	클립보드에 복사
 	Correct recognized text	인식된 텍스트 수정
+	Correct scans	스캔 보정
+	Corrected scan	보정된 스캔
 	Could not save: {e}	저장할 수 없습니다: {e}
 	Couldn't add {name}: {e}	{name}을(를) 추가할 수 없습니다: {e}
 	Couldn't be read: {reason}	Couldn't be read: {reason}
@@ -718,6 +725,7 @@ certificate	Basic constraints	기본 제약 조건
 	Crop Image	이미지 자르기
 	Crop page	페이지 자르기
 	Crop pages	페이지 자르기
+	Crop scanner borders to the paper edge	스캔 테두리를 용지 가장자리까지 자르기
 	Cross	X 표시
 key	Ctrl	Ctrl
 	Currency symbol:	통화 기호:
@@ -1743,6 +1751,7 @@ animation effects	On	켜기
 	Only certificates with RSA keys can be recipients.	RSA 키가 있는 인증서만 수신자가 될 수 있습니다.
 	Only change the colour of black text or line art	검은색 텍스트 또는 선 그림의 색상만 변경
 	Only checked properties will change. Mixed means the selected fields have different values.	체크한 속성만 변경됩니다. '혼합'은 선택한 필드가 서로 다른 값을 가진다는 뜻입니다.
+	Only clear paper edges are cropped. Indistinguishable white borders are kept.	명확한 용지 가장자리만 자릅니다. 구분할 수 없는 흰색 테두리는 유지됩니다.
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	이 문서를 신뢰하는 경우에만 계속하세요. 주소에는 양식에 입력한 내용처럼 문서의 정보가 담길 수 있습니다.
 	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	이 네트워크의 IP 주소만 허용됩니다(사설, 링크 로컬 또는 루프백). 호스트 이름은 허용되지 않습니다.
 	Only the document's owner can change its security (open it with the permissions password)	문서 소유자만 보안을 변경할 수 있습니다(권한 암호로 여세요)
@@ -2269,6 +2278,7 @@ certificate	Public key	공개 키
 	Run JavaScript	JavaScript 실행
 	Running action… file {d} of {t}	작업 실행 중… 파일 {d}/{t}
 calendar weekday	Sa	토
+	Safety margin (pt)	안전 여백(pt)
 	Same as interface	인터페이스와 동일
 	Same as interface ({language})	인터페이스와 동일({language})
 	Same as text	텍스트와 같음
@@ -2334,7 +2344,10 @@ calendar weekday	Sa	토
 	Scale relative to target page	대상 페이지 기준 배율
 	Scan	스캔
 	Scan & OCR	스캔 및 OCR
+	Scan and text recognition	스캔 및 텍스트 인식
+	Scan correction	스캔 보정
 	Scan interrupted	Scan interrupted
+	Scan processing cancelled	스캔 처리가 취소됨
 	Scan reverse side now (1 front)	Scan reverse side now (1 front)
 	Scan reverse sides	Scan reverse sides
 	Scan reverse sides now ({n} fronts)	Scan reverse sides now ({n} fronts)
@@ -2375,6 +2388,7 @@ calendar weekday	Sa	토
 	Search tools and commands	도구 및 명령 검색
 	Search tools and commands…	도구 및 명령 검색…
 	Search tools…	도구 검색…
+	Searchable Image	검색 가능한 이미지
 	Searchable Image (Exact)	검색 가능한 이미지(정확한)
 	Searching a folder needs the desktop app	Searching a folder needs the desktop app
 	Searching… {s} of {p} pages	검색 중… {p}페이지 중 {s}
@@ -2612,6 +2626,7 @@ action wizard	Start	시작
 	Stopped before the end.	Stopped before the end.
 	Stopped: too many files took too long to read.	Stopped: too many files took too long to read.
 	Store JPEG images as JPEG XL (smaller, can be undone; needs a reader that supports JPEG XL)	JPEG 이미지를 JPEG XL로 저장(더 작고 되돌릴 수 있음, JPEG XL을 지원하는 뷰어 필요)
+	Straighten skewed scans	기울어진 스캔 바로잡기
 	Straighten the page	Straighten the page
 	Strength: {s}	강도: {s}
 	Strikethrough text	텍스트 취소선
@@ -3061,6 +3076,7 @@ signature pad	Type	입력
 	Type text	텍스트 입력
 	Type the web address.	웹 주소를 입력하세요.
 	Type your {what}.	{what}을(를) 입력하세요.
+	Uncertain orientations are left unchanged. Deskew fits the full image inside the page.	방향이 불확실하면 그대로 둡니다. 기울기 보정 시 전체 이미지를 페이지 안에 맞춥니다.
 	Unchecked	선택 안 됨
 	Unchecked reads	Unchecked reads
 	Underline text	텍스트 밑줄
