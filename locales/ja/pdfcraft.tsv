@@ -1049,6 +1049,7 @@ key	Delete	Delete
 	Each file holds as many of the {n} pages as fit.	{n} ページを容量の上限まで各ファイルに格納します。
 	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	各画像の解像度をページ上の表示サイズで評価し、容量が小さくなる場合のみ置き換えます。
 	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	各画像を一度ずつ、文書名とページ番号を付けて保存します。JPEG はそのまま、その他は PNG で保存します。
+	Each page as it looks, its text kept searchable. For documents whose layout matters.	各ページを見たとおりに保ち、テキストは検索できます。レイアウトが重要な書類向けです。
 	Each page prints on the standard sheet it matches (A4, US Letter, …); pages of another size print on the paper above. Only with Size.	各ページは一致する標準用紙（A4、US Letter など）に印刷されます。それ以外のサイズのページは上の用紙に印刷されます。「サイズ」のときのみ。
 	Earlier in calculation order	計算順序を前へ
 	Earlier in tab order	タブ順序を前へ
@@ -1108,6 +1109,7 @@ key	End	End
 	Entire page	ページ全体
 	Entire PDF document to send: {bytes} bytes	送信する PDF 文書全体: {bytes} バイト
 	EPSG code	EPSG コード
+	EPUB book (.epub)	EPUB ブック (.epub)
 	Erase drawings	描画を消去
 	Errors	エラー
 key	Esc	Esc
@@ -1158,6 +1160,8 @@ key	Esc	Esc
 	Export measurements as CSV	測定結果をCSVに書き出す
 	Export stopped: {e}	書き出しを中止しました: {e}
 	Export this PDF	この PDF を書き出す
+	Export to EPUB	EPUB に書き出す
+	Export to EPUB…	EPUB に書き出す…
 	Export to Excel…	Excel に書き出す…
 	Export to HTML…	HTML に書き出す…
 	Export to Image	画像に書き出し
@@ -1175,6 +1179,7 @@ key	Esc	Esc
 	Exported 1 image	画像を 1 件書き出しました
 	Exported the text of 1 page	1 ページのテキストを書き出しました
 	Exported the text of {n} pages	{n} ページのテキストを書き出しました
+	Exported {name}	{name} を書き出しました
 	Exported {n} images	画像を {n} 件書き出しました
 	Exporting… {d} of {t}	書き出し中… {d} / {t}
 	Extended Graphics States	拡張グラフィックス状態
@@ -1287,6 +1292,7 @@ scroll speed	Fast	速い
 	Fix hairlines…	極細線を修正…
 	Fix order	順序を修正
 	Fix reading order	読み上げ順序を修正
+	Fixed layout	固定レイアウト
 	Fixed what could be fixed; 1 problem remains	修正可能な項目を修正しました。問題が 1 件残っています
 	Fixed what could be fixed; {n} problems remain	修正可能な項目を修正しました。問題が {n} 件残っています
 	Fixed {n} hairlines on {p} pages	{p} ページで {n} 本のヘアラインを修正しました
@@ -2377,6 +2383,7 @@ animation effects	On	オン
 	Reference length must be positive.	基準線の長さは正の値にしてください。
 	Reference preview	基準のプレビュー
 	Reference:	参照：
+	Reflowable	リフロー型
 	Refresh lists scanners. It does not feed paper.	更新はスキャナー一覧を取り直します。用紙は送りません。
 	Refresh plugins	プラグインを更新
 	Region in inches. Leave the width or the height at zero to scan the whole area.	範囲（インチ）。幅か高さを 0 のままにすると全体をスキャンします。
@@ -3268,6 +3275,7 @@ document scrollbar width	Standard	標準
 	The tesseract program, run as an external process	tesseract プログラムを外部プロセスとして実行します
 	The text is the same	テキストは同一です
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	テキスト認識モデルがインストールされていません（PdfCraft を再インストールするか、PDFCRAFT_MODELS にモデルのあるフォルダーを設定してください）
+	The text reflows to the reader's screen and font size, in chapters, with the bookmarks as the contents.	テキストは読者の画面とフォントサイズに合わせて流し込まれ、章に分かれ、しおりが目次になります。
 	The title in the metadata and the document information differ	メタデータと文書情報のタイトルが一致しません
 	the title must not be empty	タイトルは空欄にできません
 	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	トークンに専用の PIN パッドや生体認証リーダーがある場合、トークン自体が PIN の入力を求めます。

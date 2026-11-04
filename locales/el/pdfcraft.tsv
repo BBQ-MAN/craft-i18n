@@ -964,6 +964,7 @@ key	Delete	Διαγραφή
 	Each file holds as many of the {n} pages as fit.	Κάθε αρχείο περιέχει όσες από τις {n} σελίδες χωρούν.
 	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	Κάθε εικόνα μετριέται στο μέγεθος που προβάλλεται στις σελίδες και αντικαθίσταται μόνο εάν το αποτέλεσμα είναι μικρότερο.
 	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	Κάθε εικόνα εξάγεται μία φορά με όνομα βάσει του εγγράφου και της σελίδας. Οι εικόνες JPEG αποθηκεύονται χωρίς αλλαγές, οι υπόλοιπες ως PNG.
+	Each page as it looks, its text kept searchable. For documents whose layout matters.	Κάθε σελίδα όπως φαίνεται, με το κείμενό της να παραμένει αναζητήσιμο. Για έγγραφα όπου η διάταξη έχει σημασία.
 	Each page prints on the standard sheet it matches (A4, US Letter, …); pages of another size print on the paper above. Only with Size.	Κάθε σελίδα εκτυπώνεται στο τυπικό φύλλο στο οποίο ταιριάζει (A4, US Letter, …)· οι σελίδες άλλου μεγέθους στο παραπάνω χαρτί. Μόνο με «Μέγεθος».
 	Earlier in calculation order	Νωρίτερα στη σειρά υπολογισμού
 	Earlier in tab order	Νωρίτερα στη σειρά μετακίνησης με Tab
@@ -1016,6 +1017,7 @@ key	End	Τέλος
 	Enter the password that opens it	Εισαγάγετε τον κωδικό πρόσβασης για το άνοιγμά του
 	Enter the permissions password to allow combining	Εισαγάγετε τον κωδικό δικαιωμάτων για να επιτραπεί ο συνδυασμός
 	Entire page	Ολόκληρη η σελίδα
+	EPUB book (.epub)	Βιβλίο EPUB (.epub)
 	Erase	Σβήσιμο
 	Erase drawings	Σβήσιμο σχεδίων
 	Errors	Σφάλματα
@@ -1068,6 +1070,8 @@ key	Esc	Esc
 	Export measurements as CSV	Εξαγωγή μετρήσεων ως CSV
 	Export stopped: {e}	Η εξαγωγή διακόπηκε: {e}
 	Export this PDF	Εξαγωγή αυτού του PDF
+	Export to EPUB	Εξαγωγή σε EPUB
+	Export to EPUB…	Εξαγωγή σε EPUB…
 	Export to Excel…	Εξαγωγή σε Excel…
 	Export to HTML…	Εξαγωγή σε HTML…
 	Export to Image	Εξαγωγή σε εικόνα
@@ -1084,6 +1088,7 @@ key	Esc	Esc
 	Exported 1 image	Εξήχθη 1 εικόνα
 	Exported the text of 1 page	Εξήχθη το κείμενο 1 σελίδας
 	Exported the text of {n} pages	Εξήχθη το κείμενο {n} σελίδων
+	Exported {name}	Έγινε εξαγωγή του {name}
 	Exported {n} images	Εξήχθησαν {n} εικόνες
 	Exporting… {d} of {t}	Εξαγωγή… {d} από {t}
 	Extended Graphics States	Εκτεταμένες καταστάσεις γραφικών
@@ -1188,6 +1193,7 @@ calendar date	February	Φεβρουάριος
 	Fix hairlines…	Διόρθωση πολύ λεπτών γραμμών…
 	Fix order	Διόρθωση σειράς
 	Fix reading order	Διόρθωση σειράς ανάγνωσης
+	Fixed layout	Σταθερή διάταξη
 	Fixed what could be fixed; 1 problem remains	Διορθώθηκαν όσα προβλήματα ήταν δυνατό· απομένει 1 πρόβλημα
 	Fixed what could be fixed; {n} problems remain	Διορθώθηκαν όσα προβλήματα ήταν δυνατό· απομένουν {n} προβλήματα
 	Fixed {n} hairlines on {p} pages	Διορθώθηκαν {n} λεπτές γραμμές σε {p} σελίδες
@@ -2206,6 +2212,7 @@ animation effects	On	Ενεργά
 	Reduce file size	Μείωση μεγέθους αρχείου
 	Reduce file size…	Μείωση μεγέθους αρχείου…
 	Reference:	Αναφορά:
+	Reflowable	Αναδιπλούμενη
 	Refresh lists scanners. It does not feed paper.	Refresh lists scanners. It does not feed paper.
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Region in inches. Leave the width or the height at zero to scan the whole area.
 	Registration marks	Σημάδια σύμπτωσης
@@ -3020,6 +3027,7 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	The tesseract program, run as an external process	Το πρόγραμμα tesseract, που εκτελείται ως εξωτερική διεργασία
 	The text is the same	Το κείμενο είναι ίδιο
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	τα μοντέλα αναγνώρισης κειμένου δεν είναι εγκατεστημένα (επανεγκαταστήστε το PdfCraft ή ορίστε το PDFCRAFT_MODELS στον φάκελο που τα περιέχει)
+	The text reflows to the reader's screen and font size, in chapters, with the bookmarks as the contents.	Το κείμενο προσαρμόζεται στην οθόνη και στο μέγεθος γραμματοσειράς του αναγνώστη, σε κεφάλαια, με τους σελιδοδείκτες ως περιεχόμενα.
 	The title in the metadata and the document information differ	Ο τίτλος στα μεταδεδομένα διαφέρει από τον τίτλο στις πληροφορίες εγγράφου
 	the title must not be empty	ο τίτλος δεν επιτρέπεται να είναι κενός
 	The trim box is kept where it is, so the printed page cuts the same.	Το πλαίσιο ξακρίσματος μένει όπου είναι, ώστε η τυπωμένη σελίδα να κόβεται ίδια.

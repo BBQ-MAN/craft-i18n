@@ -1012,6 +1012,7 @@ key	Delete	Delete
 	Each file holds as many of the {n} pages as fit.	हर फ़ाइल में {n} पृष्ठों में से जितने समा जाते हैं, उतने होते हैं।
 	Each image is measured where pages draw it; an image is replaced only if the result is smaller.	हर छवि को वहीं मापा जाता है जहाँ पृष्ठ उसे बनाते हैं; छवि तभी बदली जाती है जब परिणाम छोटा हो।
 	Each image once, named after the document and page. JPEG images are saved unchanged; others as PNG.	हर छवि एक बार, दस्तावेज़ और पृष्ठ के नाम पर। JPEG छवियाँ बिना बदलाव के सहेजी जाती हैं; बाकी PNG के रूप में।
+	Each page as it looks, its text kept searchable. For documents whose layout matters.	हर पृष्ठ जैसा दिखता है वैसा ही, उसका पाठ खोजने योग्य रहता है। उन दस्तावेज़ों के लिए जिनमें लेआउट मायने रखता है।
 	Earlier in calculation order	Earlier in calculation order
 	Earlier in tab order	टैब क्रम में पहले
 	earlier saves are still waiting for the website	पहले के सहेजने के अनुरोध अभी भी वेबसाइट की प्रतीक्षा कर रहे हैं
@@ -1068,6 +1069,7 @@ key	End	End
 	Enter the password that opens it	वह पासवर्ड दर्ज करें जो इसे खोलता है
 	Enter the permissions password to allow combining	संयोजन की अनुमति देने के लिए अनुमति पासवर्ड दर्ज करें
 	Entire page	पूरा पृष्ठ
+	EPUB book (.epub)	EPUB पुस्तक (.epub)
 	Erase	मिटाएँ
 	Erase drawings	ड्रॉइंग मिटाएँ
 	Eraser	इरेज़र
@@ -1122,6 +1124,8 @@ key	Esc	Esc
 	Export stopped: {e}	निर्यात रुक गया: {e}
 	Export this PDF	इस PDF को निर्यात करें
 	Export to	इसमें निर्यात करें
+	Export to EPUB	EPUB में निर्यात करें
+	Export to EPUB…	EPUB में निर्यात करें…
 	Export to Excel…	Excel में निर्यात करें…
 	Export to HTML…	HTML में निर्यात करें…
 	Export to Image	छवि में निर्यात करें
@@ -1137,6 +1141,7 @@ key	Esc	Esc
 	Exported the text of 1 page	1 पृष्ठ का टेक्स्ट निर्यात किया गया
 	Exported the text of {n} pages	{n} पृष्ठों का टेक्स्ट निर्यात किया गया
 	Exported to {path}	{path} पर निर्यात किया गया
+	Exported {name}	{name} निर्यात किया गया
 	Exported {n} images	{n} तस्वीरें निर्यात की गईं
 	Exporting… {d} of {t}	निर्यात हो रहा है… {t} में से {d}
 	Export…	निर्यात करें…
@@ -1250,6 +1255,7 @@ calendar date	February	फ़रवरी
 	Fix hairlines…	हेयरलाइन ठीक करें…
 	Fix order	Fix order
 	Fix reading order	पढ़ने का क्रम ठीक करें
+	Fixed layout	स्थिर लेआउट
 	Fixed what could be fixed; 1 problem remains	जो ठीक हो सकता था, ठीक कर दिया गया; 1 समस्या बची है
 	Fixed what could be fixed; {n} problems remain	जो ठीक हो सकता था, ठीक कर दिया गया; {n} समस्याएँ बची हैं
 	Fixed {n} hairlines on {p} pages	{p} पृष्ठों पर {n} हेयरलाइन ठीक की गईं
@@ -1549,6 +1555,7 @@ certificate	Key usage	कुंजी उपयोग
 	Layers	परतें
 	Layers panel	लेयर्स पैनल
 	Layers Panel and Page	परत पैनल और पृष्ठ
+	Layout	लेआउट
 	Layout and Magnification	लेआउट और आवर्धन
 	Lbl and LBody	Lbl और LBody
 	Lbl and LBody must be children of LI	Lbl और LBody को LI की संतानाएँ होना चाहिए
@@ -2337,6 +2344,7 @@ certificate	Public key	सार्वजनिक कुंजी
 	Reduce & Optimize	आकार घटाएं और अनुकूलित करें
 	Reduce file size	फ़ाइल का आकार घटाएँ
 	Reduce file size…	फ़ाइल का आकार घटाएँ…
+	Reflowable	पुनर्प्रवाही
 	Refresh	ताज़ा करें
 	Refresh lists scanners. It does not feed paper.	Refresh lists scanners. It does not feed paper.
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Region in inches. Leave the width or the height at zero to scan the whole area.
@@ -3198,6 +3206,7 @@ calendar weekday	Th	गुरु
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	मानक फ़ॉन्ट “{c}” ({code}) नहीं बना सकते। फ़िलहाल टेक्स्ट के रूप में केवल पश्चिमी यूरोपीय अक्षर ही जोड़े जा सकते हैं।
 	The text is the same	टेक्स्ट एक जैसा है
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	टेक्स्ट पहचान मॉडल इंस्टॉल नहीं हैं (PdfCraft दोबारा इंस्टॉल करें, या PDFCRAFT_MODELS को उस फ़ोल्डर पर सेट करें जिसमें वे मौजूद हैं)
+	The text reflows to the reader's screen and font size, in chapters, with the bookmarks as the contents.	पाठ पाठक की स्क्रीन और फ़ॉन्ट आकार के अनुसार अध्यायों में पुनः प्रवाहित होता है, बुकमार्क विषय-सूची बन जाते हैं।
 	The timestamp authority's certificate was not valid at the time of timestamping.	टाइमस्टैम्प प्राधिकारी का प्रमाणपत्र टाइमस्टैम्प लगाते समय मान्य नहीं था।
 	The timestamp contents are not hexadecimal.	टाइमस्टैम्प की सामग्री हेक्साडेसिमल नहीं है।
 	The timestamp has no valid byte range.	टाइमस्टैम्प की कोई मान्य बाइट रेंज नहीं है।
