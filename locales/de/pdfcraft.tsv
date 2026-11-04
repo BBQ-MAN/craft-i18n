@@ -40,10 +40,15 @@
 	9 digit, A letter, O letter or digit, X any character	9 Ziffer, A Buchstabe, O Buchstabe oder Ziffer, X beliebiges Zeichen
 	; 1 page already had text	; 1 Seite enthielt bereits Text
 	; 1 page skipped	; 1 Seite übersprungen
+	; converted to {level}, but not everything complies yet ({first}); see Apply PDF standards ▸ Save as PDF/A	; in {level} umgewandelt, aber noch nicht vollständig konform ({first}); siehe PDF-Standards anwenden ▸ Als PDF/A speichern
 	; corrected {n} pages	; {n} Seiten korrigiert
 	; failed: {list}	; fehlgeschlagen: {list}
+	; not PDF/A yet: {list} (open them in Apply PDF standards ▸ Save as PDF/A)	; noch nicht PDF/A: {list} (in PDF-Standards anwenden ▸ Als PDF/A speichern öffnen)
+	; not saved as {level}: {why}	; nicht als {level} gespeichert: {why}
+	; saved as {level}	; als {level} gespeichert
 	; {n} pages already had text	; {n} Seiten enthielten bereits Text
 	; {n} pages skipped	; {n} Seiten übersprungen
+	; {n} saved as PDF/A	; {n} als PDF/A gespeichert
 	? of {n}	? von {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PRs, {commits} Commits, +{added} / −{deleted} Zeilen (Δ {delta}), +{bin_added} / −{bin_deleted} Binärdateien, {first} – {last}
 	`{command}` {when}	`{command}` {when}
@@ -599,6 +604,7 @@
 	Convert colors	Farben konvertieren
 	Convert mode	Konvertierungsmodus
 	Converting {name}…	{name} wird konvertiert…
+	Converts the result to PDF/A-2b for archiving and says what still keeps it from complying	Wandelt das Ergebnis zur Archivierung in PDF/A-2b um und nennt, was der Konformität noch im Weg steht
 	Copied to clipboard	In die Zwischenablage kopiert
 	Copied {what}	{what} kopiert
 	Copies, two-sided printing and colour are chosen in the browser's print dialog.	Exemplare, beidseitiger Druck und Farbe werden im Druckdialog des Browsers gewählt.
