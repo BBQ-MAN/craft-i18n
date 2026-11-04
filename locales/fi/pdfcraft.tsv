@@ -482,6 +482,7 @@ certificate	Basic constraints	Perusrajoitukset
 	CheckBox	Valintaruutu
 	Checkbox	Valintaruutu
 	Checked	Valittu
+	Checked {objects} objects against the Arlington PDF Model for PDF {version}.	{objects} objektia tarkistettiin Arlington PDF -mallia vasten (PDF {version}).
 	Checking for a newer version…	Tarkistetaan uudempaa versiota…
 	Checking Options ({on} of 32 in all categories)	Tarkistusasetukset ({on}/32 kaikissa luokissa)
 	Checking pages…	Tarkistetaan sivuja…
@@ -975,6 +976,7 @@ key	End	End
 	Entire page	Koko sivu
 	Erase	Pyyhi
 	Erase drawings	Pyyhi piirrokset
+	Errors	Virheet
 key	Esc	Esc
 	Even and Odd Pages	Parilliset ja parittomat sivut
 	Even pages	Parilliset sivut
@@ -1636,6 +1638,8 @@ calendar weekday	Mo	Ma
 	No digital IDs yet.	Digitaalisia tunnuksia ei vielä ole.
 	No document language is set	Asiakirjan kieltä ei ole asetettu
 	No documents are open	Yhtään asiakirjaa ei ole auki
+	No errors in the rules that were evaluated.	Arvioiduissa säännöissä ei ole virheitä.
+	No errors: the structure follows the Arlington PDF Model.	Ei virheitä: rakenne noudattaa Arlington PDF -mallia.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.
 	No field reads it	No field reads it
 	No file chosen	Tiedostoa ei ole valittu
@@ -1701,6 +1705,7 @@ scroll speed	Normal	Normaali
 	not allowed directly inside {in}	ei sallittu suoraan tyypin {in} sisällä
 	Not checked	Ei tarkistettu
 	Not confirmed by the printer	Tulostin ei vahvistanut
+	Not evaluated: {list}	Ei arvioitu: {list}
 	not in a Ruby	ei Rubyn sisällä
 	not in a Table	ei Tablen sisällä
 	not in a Table, THead, TBody or TFoot	ei ole Table-, THead-, TBody- tai TFoot-elementissä
@@ -1760,6 +1765,7 @@ animation effects	On	Käytössä
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Jatka vain, jos luotat tähän asiakirjaan. Osoite voi välittää tietoja asiakirjasta, kuten lomakkeeseen kirjoittamasi tekstin.
 	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Vain tämän verkon IP-osoitteet hyväksytään (yksityiset, linkkipaikalliset tai loopback), ei isäntänimiä.
 	Only the document's owner can change its security (open it with the permissions password)	Vain asiakirjan omistaja voi muuttaa sen suojausta (avaa se käyttöoikeussalasanalla)
+	Only the first {n} of each kind are listed.	Kustakin lajista luetellaan vain ensimmäiset {n}.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Vain sivujen sisältö muuttuu: alkuperäisten sivujen linkit, kommentit, lomakekentät ja kirjanmerkit säilyvät.
 	Only the recipients can open the document, each with the private key of their own certificate.	Vain vastaanottajat voivat avata asiakirjan, kukin oman varmenteensa yksityisellä avaimella.
 	Open a document first	Avaa ensin asiakirja
@@ -2700,6 +2706,7 @@ calendar weekday	Th	To
 	The document has been modified since this signature was applied, but the changes are permitted ({}).	Asiakirjaa on muokattu tämän allekirjoituksen lisäämisen jälkeen, mutta muutokset ovat sallittuja ({}).
 	The document has been modified since this timestamp was applied, but the changes are permitted ({}).	Asiakirjaa on muokattu tämän aikaleiman lisäämisen jälkeen, mutta muutokset ovat sallittuja ({}).
 	The document has document-level JavaScript	Asiakirjassa on asiakirjatason JavaScriptiä
+	The document has more objects than one check covers; the rest was not checked.	Asiakirjassa on enemmän objekteja kuin yksi tarkistus kattaa; loppuja ei tarkistettu.
 	the document has no form fields	asiakirjassa ei ole lomakekenttiä
 	the document has no page tree	asiakirjassa ei ole sivupuuta
 	The document has no structure tree: it isn't tagged	Asiakirjassa ei ole rakennepuuta: sitä ei ole tagattu
@@ -2920,6 +2927,8 @@ calendar weekday	Th	To
 	the title must not be empty	otsikko ei saa olla tyhjä
 	The Trapped key and the metadata's pdf:Trapped disagree	Trapped-avain ja metatietojen pdf:Trapped ovat ristiriidassa
 	The value is shown as typed.	Arvo näytetään kirjoitetussa muodossa.
+	The value {value} of {key} in {type} is deprecated since PDF {since}	Tyypin {type} avaimen {key} arvo {value} on vanhentunut PDF {since}:stä lähtien
+	The value {value} of {key} in {type} is from PDF {since}, later than the file's PDF {version}	Tyypin {type} avaimen {key} arvo {value} on PDF {since}:stä, joka on uudempi kuin tiedoston PDF {version}
 	The viewer preferences have no DisplayDocTitle entry	Katseluohjelman asetuksissa ei ole DisplayDocTitle-avainta
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Ikkunassa tulisi näkyä kuvaava otsikko eikä tiedostonimi. Aseta otsikko ja Alkunäkymä > Näytä: Asiakirjan otsikko.
 	The window shows the file name, not the title (Initial View > Show)	Ikkunassa näkyy tiedostonimi eikä otsikko (Alkunäkymä > Näytä)
@@ -3148,6 +3157,8 @@ certificate	Valid to	Voimassa asti
 	Validate	Tarkistus
 	Validate all	Tarkista kaikki
 	Validate all signatures	Tarkista kaikki allekirjoitukset
+	Validate structure	Validoi rakenne
+	Validate structure…	Validoi rakenne…
 	validated: invalid	tarkistettu: virheellinen
 	validated: valid	tarkistettu: kelvollinen
 	validated: validity unknown	tarkistettu: kelpoisuus tuntematon
@@ -3260,7 +3271,20 @@ calendar weekday	We	Ke
 	{field}: {e}	{field}: {e}
 	{file} is too large for a stamp (at most {n} MB)	{file} on liian suuri leimaksi (enintään {n} MB)
 	{folder} is already pinned to Home	{folder} on jo kiinnitetty aloitussivulle
+	{key} in {type} breaks the rule {rule}	{key} tyypissä {type} rikkoo sääntöä {rule}
+	{key} in {type} is a {found}, which is from PDF {since}, later than the file's PDF {version}	{key} tyypissä {type} on {found}, joka on PDF {since}:stä, uudempi kuin tiedoston PDF {version}
+	{key} in {type} is deprecated since PDF {since}	{key} tyypissä {type} on vanhentunut PDF {since}:stä lähtien
+	{key} in {type} is from PDF {since}, later than the file's PDF {version}	{key} tyypissä {type} on PDF {since}:stä, uudempi kuin tiedoston PDF {version}
+	{key} in {type} is {found}, but must be {expected}	{key} tyypissä {type} on {found}, mutta sen on oltava {expected}
+	{key} in {type} is {value}, which breaks the rule {rule}	{key} tyypissä {type} on {value}, mikä rikkoo sääntöä {rule}
+	{key} in {type} is {value}, which is not one of {allowed}	{key} tyypissä {type} on {value}, joka ei ole mikään arvoista {allowed}
+	{key} in {type} matches none of the types it may have ({candidates})	{key} tyypissä {type} ei vastaa mitään sille sallituista tyypeistä ({candidates})
+	{key} in {type} must be a direct object, not a reference	{key} tyypissä {type} on oltava suora objekti, ei viittaus
+	{key} in {type} must be an indirect reference	{key} tyypissä {type} on oltava epäsuora viittaus
+	{key} in {type} must be {expected} when {rule}	{key} tyypissä {type} on oltava {expected}, kun {rule}
+	{key} in {type} refers to object {object}, which doesn't exist	{key} tyypissä {type} viittaa objektiin {object}, jota ei ole olemassa
 	{key} is already used by “{other}”.	{key} on jo komennon ”{other}” käytössä.
+	{key} is not an entry of {type} in the model	{key} ei ole mallissa tyypin {type} avain
 	{key} was taken from “{other}”, which now has no shortcut.	{key} otettiin komennolta ”{other}”, jolla ei nyt ole pikanäppäintä.
 	{kind} field	{kind}-kenttä
 	{kind} Properties	{kind}: ominaisuudet
@@ -3331,6 +3355,9 @@ calendar weekday	We	Ke
 	{page} is not a page number or label	{page} ei ole sivunumero tai -tunniste
 	{rule} - {status}	{rule} - {status}
 	{s} action	Toiminto {s}
+	{type} has {count} elements, but they come in sets of {n}	Tyypissä {type} on {count} alkiota, mutta niitä tulee {n} alkion ryhminä
+	{type} has {count} elements, more than the {max} it allows	Tyypissä {type} on {count} alkiota, enemmän kuin sallitut {max}
+	{type} lacks the required entry {key}	Tyypistä {type} puuttuu pakollinen avain {key}
 	{ty} element on page {p}: {what}	Sivun {p} {ty}-elementti: {what}
 	{ty} element: {what}	{ty}-elementti: {what}
 	{verb} as "{name}"	{verb} nimellä "{name}"

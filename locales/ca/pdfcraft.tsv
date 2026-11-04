@@ -507,6 +507,7 @@ certificate	Basic constraints	Restriccions bàsiques
 	CheckBox	Casella de selecció
 	Checkbox	Casella de selecció
 	Checked	Marcat
+	Checked {objects} objects against the Arlington PDF Model for PDF {version}.	S'han comprovat {objects} objectes amb el model PDF Arlington per a PDF {version}.
 	Checking for a newer version…	S'està cercant una versió més recent…
 	Checking Options ({on} of 32 in all categories)	Opcions de comprovació ({on} de 32 en totes les categories)
 	Checking pages…	S'estan comprovant les pàgines…
@@ -1044,6 +1045,7 @@ key	End	Fi
 	Erase drawings	Esborra els dibuixos
 	Eraser	Goma d'esborrar
 	Error	Error
+	Errors	Errors
 key	Esc	Esc
 	Even and Odd Pages	Pàgines parelles i senars
 	Even pages	Pàgines parelles
@@ -1777,6 +1779,8 @@ calendar weekday	Mo	dl.
 	No digital IDs yet.	Encara no hi ha cap identificador digital.
 	No document language is set	No s'ha definit cap idioma del document
 	No documents are open	No hi ha cap document obert
+	No errors in the rules that were evaluated.	No hi ha errors en les regles que s'han avaluat.
+	No errors: the structure follows the Arlington PDF Model.	Cap error: l'estructura segueix el model PDF Arlington.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.
 	No field reads it	No field reads it
 	No file chosen	Cap fitxer triat
@@ -1846,6 +1850,7 @@ scroll speed	Normal	Normal
 	not allowed directly inside {in}	no permès directament dins de {in}
 	Not checked	No comprovat
 	Not confirmed by the printer	La impressora no ho ha confirmat
+	Not evaluated: {list}	No avaluat: {list}
 	not in a Ruby	no és dins d'un Ruby
 	not in a Table	no és dins d'una Table
 	not in a Table, THead, TBody or TFoot	no és dins d'un Table, THead, TBody o TFoot
@@ -1907,6 +1912,7 @@ animation effects	On	Activats
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Continua només si confies en aquest document. Una adreça pot dur informació del document, com ara el que has escrit al formulari.
 	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Només s'accepten adreces IP d'aquesta xarxa (privades, d'enllaç local o de bucle local), no noms d'amfitrió.
 	Only the document's owner can change its security (open it with the permissions password)	Només el propietari del document en pot canviar la seguretat (obre'l amb la contrasenya de permisos)
+	Only the first {n} of each kind are listed.	Només es mostren els primers {n} de cada tipus.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Només canvia el contingut de la pàgina: els enllaços, comentaris, camps de formulari i marcadors de les pàgines originals es mantenen.
 	Only the recipients can open the document, each with the private key of their own certificate.	Només els destinataris poden obrir el document, cadascun amb la clau privada del seu propi certificat.
 	Opacity	Opacitat
@@ -2925,6 +2931,7 @@ calendar weekday	Th	dj.
 	The document has been modified since this signature was applied, but the changes are permitted ({}).	El document s'ha modificat des que es va aplicar aquesta signatura, però els canvis són permesos ({}).
 	The document has been modified since this timestamp was applied, but the changes are permitted ({}).	El document s'ha modificat des que es va aplicar aquesta marca de temps, però els canvis són permesos ({}).
 	The document has document-level JavaScript	El document té JavaScript a nivell de document
+	The document has more objects than one check covers; the rest was not checked.	El document té més objectes dels que cobreix una comprovació; la resta no s'ha comprovat.
 	the document has no form fields	el document no té camps de formulari
 	the document has no page tree	el document no té arbre de pàgines
 	The document has no structure tree: it isn't tagged	El document no té arbre d'estructura: no està etiquetat
@@ -3145,6 +3152,8 @@ calendar weekday	Th	dj.
 	the title must not be empty	el títol no pot estar buit
 	The Trapped key and the metadata's pdf:Trapped disagree	La clau Trapped i el pdf:Trapped de les metadades no coincideixen
 	The value is shown as typed.	El valor es mostra tal com s'ha escrit.
+	The value {value} of {key} in {type} is deprecated since PDF {since}	El valor {value} de {key} a {type} està obsolet des de PDF {since}
+	The value {value} of {key} in {type} is from PDF {since}, later than the file's PDF {version}	El valor {value} de {key} a {type} és de PDF {since}, posterior al PDF {version} del fitxer
 	The viewer preferences have no DisplayDocTitle entry	Les preferències del visualitzador no tenen l'entrada DisplayDocTitle
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	La finestra hauria de mostrar un títol significatiu en lloc del nom del fitxer. Defineix un títol i Visualització inicial > Mostra: Títol del document.
 	The window shows the file name, not the title (Initial View > Show)	La finestra mostra el nom del fitxer, no el títol (Visualització inicial > Mostra)
@@ -3380,6 +3389,8 @@ certificate	Valid to	Vàlid fins a
 	Validate	Valida
 	Validate all	Valida-ho tot
 	Validate all signatures	Valida totes les signatures
+	Validate structure	Valida l'estructura
+	Validate structure…	Valida l'estructura…
 	validated: invalid	validació: no vàlida
 	validated: valid	validació: vàlida
 	validated: validity unknown	validació: validesa desconeguda
@@ -3501,7 +3512,20 @@ calendar weekday	We	dc.
 	{field}: {e}	{field}: {e}
 	{file} is too large for a stamp (at most {n} MB)	{file} és massa gran per a un segell (com a màxim {n} MB)
 	{folder} is already pinned to Home	{folder} ja està fixada a l'inici
+	{key} in {type} breaks the rule {rule}	{key} a {type} incompleix la regla {rule}
+	{key} in {type} is a {found}, which is from PDF {since}, later than the file's PDF {version}	{key} a {type} és un {found}, que és de PDF {since}, posterior al PDF {version} del fitxer
+	{key} in {type} is deprecated since PDF {since}	{key} a {type} està obsolet des de PDF {since}
+	{key} in {type} is from PDF {since}, later than the file's PDF {version}	{key} a {type} és de PDF {since}, posterior al PDF {version} del fitxer
+	{key} in {type} is {found}, but must be {expected}	{key} a {type} és {found}, però ha de ser {expected}
+	{key} in {type} is {value}, which breaks the rule {rule}	{key} a {type} és {value}, que incompleix la regla {rule}
+	{key} in {type} is {value}, which is not one of {allowed}	{key} a {type} és {value}, que no és cap de {allowed}
+	{key} in {type} matches none of the types it may have ({candidates})	{key} a {type} no coincideix amb cap dels tipus que pot tenir ({candidates})
+	{key} in {type} must be a direct object, not a reference	{key} a {type} ha de ser un objecte directe, no una referència
+	{key} in {type} must be an indirect reference	{key} a {type} ha de ser una referència indirecta
+	{key} in {type} must be {expected} when {rule}	{key} a {type} ha de ser {expected} quan {rule}
+	{key} in {type} refers to object {object}, which doesn't exist	{key} a {type} fa referència a l'objecte {object}, que no existeix
 	{key} is already used by “{other}”.	{key} ja l'utilitza «{other}».
+	{key} is not an entry of {type} in the model	{key} no és una entrada de {type} al model
 	{key} was taken from “{other}”, which now has no shortcut.	S'ha pres {key} de «{other}», que ara no té cap drecera.
 	{kind} field	Camp de tipus {kind}
 	{kind} Properties	Propietats de {kind}
@@ -3572,6 +3596,9 @@ calendar weekday	We	dc.
 	{page} is not a page number or label	{page} no és un número ni una etiqueta de pàgina
 	{rule} - {status}	{rule} - {status}
 	{s} action	Acció {s}
+	{type} has {count} elements, but they come in sets of {n}	{type} té {count} elements, però van en grups de {n}
+	{type} has {count} elements, more than the {max} it allows	{type} té {count} elements, més dels {max} que permet
+	{type} lacks the required entry {key}	A {type} li falta l'entrada obligatòria {key}
 	{ty} element on page {p}: {what}	Element {ty} a la pàgina {p}: {what}
 	{ty} element: {what}	Element {ty}: {what}
 	{verb} as "{name}"	{verb} com a "{name}"

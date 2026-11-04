@@ -506,6 +506,7 @@ certificate	Basic constraints	Základní omezení
 	CheckBox	Zaškrtávací políčko
 	Checkbox	Zaškrtávací políčko
 	Checked	Zaškrtnuto
+	Checked {objects} objects against the Arlington PDF Model for PDF {version}.	Zkontrolováno {objects} objektů podle modelu Arlington PDF Model pro PDF {version}.
 	Checking form detection…	Kontrola rozpoznávání formulářů…
 	Checking Hungarian OCR installation…	Kontrola instalace maďarského OCR…
 	Checking Options ({on} of 32 in all categories)	Možnosti kontroly (zapnuto {on} z 32 ve všech kategoriích)
@@ -1046,6 +1047,7 @@ key	End	End
 	Entire PDF document to send: {bytes} bytes	Celý dokument PDF k odeslání: {bytes} bajtů
 	Erase	Vymazat
 	Erase drawings	Vymazat kresby
+	Errors	Chyby
 key	Esc	Esc
 	Estimated size: about {size}	Odhadovaná velikost: asi {size}
 	Estimating size…	Odhadování velikosti…
@@ -1749,6 +1751,8 @@ calendar weekday	Mo	Po
 	No digital IDs yet.	Zatím žádná digitální ID.
 	No document language is set	Není nastaven jazyk dokumentu
 	No documents are open	Nejsou otevřené žádné dokumenty
+	No errors in the rules that were evaluated.	V posouzených pravidlech nejsou žádné chyby.
+	No errors: the structure follows the Arlington PDF Model.	Žádné chyby: struktura odpovídá modelu Arlington PDF Model.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Žádné pole tohoto formuláře zatím nepočítá svou hodnotu. Zadejte poli výpočet na kartě Výpočet v jeho vlastnostech a zobrazí se zde.
 	No field reads it	Žádné pole ho nečte
 	No file chosen	Není vybrán žádný soubor
@@ -1824,6 +1828,7 @@ scroll speed	Normal	Normální
 	not allowed directly inside {in}	není povoleno přímo uvnitř {in}
 	Not checked	Nekontrolováno
 	Not confirmed by the printer	Tiskárna nepotvrdila
+	Not evaluated: {list}	Nevyhodnoceno: {list}
 	not in a Ruby	není v Ruby
 	not in a Table	není v Table
 	not in a Table, THead, TBody or TFoot	není v Table, THead, TBody ani TFoot
@@ -1891,6 +1896,7 @@ animation effects	On	Zapnuto
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Odesílejte jen tehdy, pokud tomuto dokumentu a cíli důvěřujete. Celý PDF opustí tento počítač.
 	Only send if you trust this document and destination. The form values leave this computer.	Odesílejte pouze tehdy, pokud tomuto dokumentu a cíli důvěřujete. Hodnoty formuláře opustí tento počítač.
 	Only the document's owner can change its security (open it with the permissions password)	Zabezpečení může změnit jen vlastník dokumentu (otevřete ho heslem oprávnění)
+	Only the first {n} of each kind are listed.	Uvedeno je jen prvních {n} od každého druhu.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Mění se jen obsah stránek: odkazy, komentáře, formulářová pole a záložky na původních stránkách zůstanou.
 	Only the recipients can open the document, each with the private key of their own certificate.	Dokument mohou otevřít jen příjemci, každý soukromým klíčem svého certifikátu.
 	Opacity:	Neprůhlednost:
@@ -2947,6 +2953,7 @@ calendar weekday	Th	Čt
 	The document has been modified since this signature was applied, but the changes are permitted ({}).	Dokument byl od připojení tohoto podpisu upraven, ale změny jsou povolené ({}).
 	The document has been modified since this timestamp was applied, but the changes are permitted ({}).	Dokument byl od připojení tohoto časového razítka upraven, ale změny jsou povolené ({}).
 	The document has document-level JavaScript	Dokument má JavaScript na úrovni dokumentu
+	The document has more objects than one check covers; the rest was not checked.	Dokument má víc objektů, než pokryje jedna kontrola; zbytek nebyl zkontrolován.
 	the document has no form fields	dokument nemá žádná formulářová pole
 	the document has no page tree	dokument nemá strom stránek
 	The document has no structure tree: it isn't tagged	Dokument nemá strom struktury: není otagovaný
@@ -3180,6 +3187,8 @@ calendar weekday	Th	Čt
 	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Token má vlastní PIN klávesnici nebo biometrickou čtečku; o PIN si požádá sám.
 	The Trapped key and the metadata's pdf:Trapped disagree	Klíč Trapped a pdf:Trapped v metadatech se neshodují
 	The value is shown as typed.	Hodnota se zobrazí tak, jak byla zadána.
+	The value {value} of {key} in {type} is deprecated since PDF {since}	Hodnota {value} klíče {key} v {type} je zastaralá od PDF {since}
+	The value {value} of {key} in {type} is from PDF {since}, later than the file's PDF {version}	Hodnota {value} klíče {key} v {type} je z PDF {since}, novějšího než PDF {version} souboru
 	The viewer preferences have no DisplayDocTitle entry	Předvolby prohlížeče nemají položku DisplayDocTitle
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Okno by mělo místo názvu souboru zobrazovat smysluplný název. Nastavte název a Úvodní zobrazení > Zobrazit: Název dokumentu.
 	The window shows the file name, not the title (Initial View > Show)	Okno zobrazuje název souboru, ne název dokumentu (Počáteční zobrazení > Zobrazit)
@@ -3418,6 +3427,8 @@ certificate	Valid to	Platný do
 	Validate	Ověření
 	Validate all	Ověřit vše
 	Validate all signatures	Ověřit všechny podpisy
+	Validate structure	Ověřit strukturu
+	Validate structure…	Ověřit strukturu…
 	validated: invalid	ověření: neplatný
 	validated: valid	ověření: platný
 	validated: validity unknown	ověření: platnost neznámá
@@ -3531,7 +3542,20 @@ document scrollbar width	Wide	Široký
 	{file} is too large for a stamp (at most {n} MB)	{file} je pro razítko příliš velký (nejvýše {n} MB)
 	{file}: there is no such file.	{file}: takový soubor neexistuje.
 	{folder} is already pinned to Home	Složka {folder} už je připnutá na úvodní obrazovce
+	{key} in {type} breaks the rule {rule}	{key} v {type} porušuje pravidlo {rule}
+	{key} in {type} is a {found}, which is from PDF {since}, later than the file's PDF {version}	{key} v {type} je {found}, což je z PDF {since}, novějšího než PDF {version} souboru
+	{key} in {type} is deprecated since PDF {since}	{key} v {type} je zastaralý od PDF {since}
+	{key} in {type} is from PDF {since}, later than the file's PDF {version}	{key} v {type} je z PDF {since}, novějšího než PDF {version} souboru
+	{key} in {type} is {found}, but must be {expected}	{key} v {type} je {found}, ale musí být {expected}
+	{key} in {type} is {value}, which breaks the rule {rule}	{key} v {type} je {value}, což porušuje pravidlo {rule}
+	{key} in {type} is {value}, which is not one of {allowed}	{key} v {type} je {value}, což není žádná z hodnot {allowed}
+	{key} in {type} matches none of the types it may have ({candidates})	{key} v {type} neodpovídá žádnému z typů, které může mít ({candidates})
+	{key} in {type} must be a direct object, not a reference	{key} v {type} musí být přímý objekt, ne odkaz
+	{key} in {type} must be an indirect reference	{key} v {type} musí být nepřímý odkaz
+	{key} in {type} must be {expected} when {rule}	{key} v {type} musí být {expected}, když {rule}
+	{key} in {type} refers to object {object}, which doesn't exist	{key} v {type} odkazuje na objekt {object}, který neexistuje
 	{key} is already used by “{other}”.	{key} už používá „{other}“.
+	{key} is not an entry of {type} in the model	{key} není v modelu položkou {type}
 	{key} was taken from “{other}”, which now has no shortcut.	{key} byla převzata od „{other}“, který teď nemá zkratku.
 	{kind} field	Pole typu {kind}
 	{kind} Properties	Vlastnosti: {kind}
@@ -3603,6 +3627,9 @@ document scrollbar width	Wide	Široký
 	{rule} - {status}	{rule} – {status}
 	{signers} signers; details of the first are shown	Podepsali: {signers}; zobrazují se podrobnosti prvního
 	{s} action	Akce {s}
+	{type} has {count} elements, but they come in sets of {n}	{type} má {count} prvků, ale ty jsou ve skupinách po {n}
+	{type} has {count} elements, more than the {max} it allows	{type} má {count} prvků, víc než povolených {max}
+	{type} lacks the required entry {key}	{type} chybí povinná položka {key}
 	{ty} element on page {p}: {what}	Prvek {ty} na stránce {p}: {what}
 	{ty} element: {what}	Prvek {ty}: {what}
 	{verb} as "{name}"	{verb} jako „{name}“

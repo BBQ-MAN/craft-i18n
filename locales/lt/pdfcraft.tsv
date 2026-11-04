@@ -503,6 +503,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	CheckBox	Žymimasis langelis
 	Checkbox	Žymimasis langelis
 	Checked	Pažymėta
+	Checked {objects} objects against the Arlington PDF Model for PDF {version}.	Patikrinta objektų: {objects} pagal Arlington PDF Model, skirtą PDF {version}.
 	Checking form detection…	Tikrinamas formų aptikimas…
 	Checking Hungarian OCR installation…	Tikrinamas vengrų kalbos OCR diegimas…
 	Checking Options ({on} of 32 in all categories)	Tikrinimo parinktys (visose kategorijose: {on} iš 32)
@@ -1032,6 +1033,7 @@ key	End	End
 	Entire page	Visas puslapis
 	Entire PDF document to send: {bytes} bytes	Siunčiamas visas PDF dokumentas: {bytes} baitų
 	Erase drawings	Ištrinti brėžinius
+	Errors	Klaidos
 key	Esc	Esc
 	Estimated size: about {size}	Apskaičiuotas dydis: apie {size}
 	Estimating size…	Skaičiuojamas dydis…
@@ -1729,6 +1731,8 @@ calendar weekday	Mo	Pr
 	No digital IDs yet.	Skaitmeninių ID dar nėra.
 	No document language is set	Dokumento kalba nenustatyta
 	No documents are open	Nėra atvertų dokumentų
+	No errors in the rules that were evaluated.	Įvertintose taisyklėse klaidų nėra.
+	No errors: the structure follows the Arlington PDF Model.	Klaidų nėra: struktūra atitinka Arlington PDF Model.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Nė vienas šios formos laukas dar neskaičiuoja savo reikšmės. Nustatykite laukui skaičiavimą jo savybių kortelėje „Skaičiavimas“, ir jis bus rodomas čia.
 	No field reads it	Jo neskaito joks laukas
 	No file chosen	Failas nepasirinktas
@@ -1803,6 +1807,7 @@ scroll speed	Normal	Įprastas
 	not allowed directly inside {in}	negali būti tiesiogiai {in} viduje
 	Not checked	Netikrinta
 	Not confirmed by the printer	Spausdintuvas nepatvirtino
+	Not evaluated: {list}	Neįvertinta: {list}
 	not in a Ruby	nepriklauso Ruby
 	not in a Table	nepriklauso Table
 	not in a Table, THead, TBody or TFoot	nepriklauso Table, THead, TBody arba TFoot
@@ -1869,6 +1874,7 @@ animation effects	On	Įjungta
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Siųskite tik tuo atveju, jei pasitikite šiuo dokumentu ir paskirties vieta. Visas PDF dokumentas palieka šį kompiuterį.
 	Only send if you trust this document and destination. The form values leave this computer.	Siųskite tik tuo atveju, jei pasitikite šiuo dokumentu ir paskirties vieta. Formos duomenys palieka šį kompiuterį.
 	Only the document's owner can change its security (open it with the permissions password)	Dokumento apsaugą gali keisti tik savininkas (atverkite dokumentą naudodami teisių slaptažodį)
+	Only the first {n} of each kind are listed.	Rodomi tik pirmieji {n} kiekvienos rūšies.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Keičiamas tik puslapio turinys: saitai, komentarai, formos laukai ir žymelės pradiniuose puslapiuose lieka.
 	Only the recipients can open the document, each with the private key of their own certificate.	Dokumentą gali atverti tik gavėjai, kiekvienas savo sertifikato privačiuoju raktu.
 	Open a document first	Pirmiausia atverkite dokumentą
@@ -2924,6 +2930,7 @@ calendar weekday	Th	Kt
 	The document has been modified since this signature was applied, but the changes are permitted ({}).	Po pasirašymo dokumentas pakeistas, tačiau pakeitimai leidžiami ({}).
 	The document has been modified since this timestamp was applied, but the changes are permitted ({}).	Pridėjus šią laiko žymą dokumentas pakeistas, tačiau pakeitimai leidžiami ({}).
 	The document has document-level JavaScript	Dokumentas turi dokumento lygmens „JavaScript“ scenarijų
+	The document has more objects than one check covers; the rest was not checked.	Dokumente yra daugiau objektų, nei aprėpia vienas patikrinimas; likusi dalis nepatikrinta.
 	the document has no form fields	dokumente nėra formos laukų
 	the document has no page tree	dokumente nėra puslapių medžio
 	The document has no structure tree: it isn't tagged	Dokumentas neturi struktūros medžio: jis nežymėtas
@@ -3160,6 +3167,8 @@ calendar weekday	Th	Kt
 	The token has its own PIN pad or biometric reader; it will ask for the PIN itself.	Leksenas turi savo PIN kodo klaviatūrą arba biometrinį skaitytuvą; jis pats paprašys PIN kodo.
 	The Trapped key and the metadata's pdf:Trapped disagree	Rakto Trapped ir metaduomenų pdf:Trapped reikšmės nesutampa
 	The value is shown as typed.	Reikšmė rodoma taip, kaip įvesta.
+	The value {value} of {key} in {type} is deprecated since PDF {since}	{key} reikšmė {value} objekte {type} nebenaudojama nuo PDF {since}
+	The value {value} of {key} in {type} is from PDF {since}, later than the file's PDF {version}	{key} reikšmė {value} objekte {type} atsirado PDF {since}, vėliau nei failo PDF {version}
 	The viewer preferences have no DisplayDocTitle entry	Peržiūros nuostatose nėra įrašo DisplayDocTitle
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Lange turėtų būti rodomas prasmingas pavadinimas, o ne failo vardas. Nustatykite pavadinimą ir pasirinkite „Pradinis rodinys“ > „Rodyti:“ > „Dokumento pavadinimas“.
 	The window shows the file name, not the title (Initial View > Show)	Lange rodomas failo vardas, o ne dokumento pavadinimas („Pradinis rodinys“ > „Rodyti:“)
@@ -3401,6 +3410,8 @@ certificate	Valid to	Galioja iki
 	Validate	Tikrinimas
 	Validate all	Tikrinti viską
 	Validate all signatures	Patikrinti visus parašus
+	Validate structure	Tikrinti struktūrą
+	Validate structure…	Tikrinti struktūrą…
 	validated: invalid	patikra: negalioja
 	validated: valid	patikra: galioja
 	validated: validity unknown	patikra: galiojimas nežinomas
@@ -3515,7 +3526,20 @@ document scrollbar width	Wide	Platus
 	{file} is too large for a stamp (at most {n} MB)	Failas {file} per didelis antspaudui (leidžiama iki {n} MB)
 	{file}: there is no such file.	{file}: tokio failo nėra.
 	{folder} is already pinned to Home	Aplankas {folder} jau prisegtas prie pradžios rodinio
+	{key} in {type} breaks the rule {rule}	{key} objekte {type} pažeidžia taisyklę {rule}
+	{key} in {type} is a {found}, which is from PDF {since}, later than the file's PDF {version}	{key} objekte {type} yra {found}, kuris atsirado PDF {since}, vėliau nei failo PDF {version}
+	{key} in {type} is deprecated since PDF {since}	{key} objekte {type} nebenaudojamas nuo PDF {since}
+	{key} in {type} is from PDF {since}, later than the file's PDF {version}	{key} objekte {type} atsirado PDF {since}, vėliau nei failo PDF {version}
+	{key} in {type} is {found}, but must be {expected}	{key} objekte {type} yra {found}, bet turi būti {expected}
+	{key} in {type} is {value}, which breaks the rule {rule}	{key} objekte {type} yra {value}, o tai pažeidžia taisyklę {rule}
+	{key} in {type} is {value}, which is not one of {allowed}	{key} objekte {type} yra {value}, o tai nėra viena iš reikšmių {allowed}
+	{key} in {type} matches none of the types it may have ({candidates})	{key} objekte {type} neatitinka nė vieno galimo tipo ({candidates})
+	{key} in {type} must be a direct object, not a reference	{key} objekte {type} turi būti tiesioginis objektas, o ne nuoroda
+	{key} in {type} must be an indirect reference	{key} objekte {type} turi būti netiesioginė nuoroda
+	{key} in {type} must be {expected} when {rule}	{key} objekte {type} turi būti {expected}, kai {rule}
+	{key} in {type} refers to object {object}, which doesn't exist	{key} objekte {type} nurodo objektą {object}, kurio nėra
 	{key} is already used by “{other}”.	{key} jau naudoja „{other}“.
+	{key} is not an entry of {type} in the model	{key} nėra {type} įrašas modelyje
 	{key} was taken from “{other}”, which now has no shortcut.	{key} paimtas iš „{other}“, kuri dabar neturi sparčiojo klavišo.
 	{kind} field	{kind} laukas
 	{kind} Properties	{kind} savybės
@@ -3586,6 +3610,9 @@ document scrollbar width	Wide	Platus
 	{rule} - {status}	Taisyklė {rule} – būsena {status}
 	{signers} signers; details of the first are shown	Pasirašiusiųjų: {signers}; rodoma pirmojo išsami informacija
 	{s} action	Veiksmų: {s}
+	{type} has {count} elements, but they come in sets of {n}	{type} turi {count} elementų, bet jie turi būti grupėmis po {n}
+	{type} has {count} elements, more than the {max} it allows	{type} turi {count} elementų, daugiau nei leidžiami {max}
+	{type} lacks the required entry {key}	{type} trūksta privalomo įrašo {key}
 	{ty} element on page {p}: {what}	Elementas {ty} puslapyje {p}: {what}
 	{ty} element: {what}	Elementas {ty}: {what}
 	{verb} as "{name}"	{verb} kaip „{name}“

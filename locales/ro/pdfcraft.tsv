@@ -507,6 +507,7 @@ certificate	Basic constraints	Constrângeri de bază
 	CheckBox	Casetă de selectare
 	Checkbox	Casetă de selectare
 	Checked	Bifat
+	Checked {objects} objects against the Arlington PDF Model for PDF {version}.	S-au verificat {objects} obiecte față de modelul PDF Arlington pentru PDF {version}.
 	Checking for a newer version…	Se caută o versiune mai nouă…
 	Checking Options ({on} of 32 in all categories)	Opțiuni de verificare ({on} din 32 în toate categoriile)
 	Checking pages…	Se verifică paginile…
@@ -1044,6 +1045,7 @@ key	End	End
 	Erase drawings	Ștergere desene
 	Eraser	Radieră
 	Error	Eroare
+	Errors	Erori
 key	Esc	Esc
 	Even and Odd Pages	Pagini pare și impare
 	Even pages	Pagini pare
@@ -1777,6 +1779,8 @@ calendar weekday	Mo	Lu
 	No digital IDs yet.	Încă nu există ID-uri digitale.
 	No document language is set	Nu este setată limba documentului
 	No documents are open	Niciun document deschis
+	No errors in the rules that were evaluated.	Nicio eroare în regulile care au fost evaluate.
+	No errors: the structure follows the Arlington PDF Model.	Nicio eroare: structura respectă modelul PDF Arlington.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.
 	No field reads it	No field reads it
 	No file chosen	Niciun fișier ales
@@ -1846,6 +1850,7 @@ scroll speed	Normal	Normală
 	not allowed directly inside {in}	nepermis direct în {in}
 	Not checked	Neverificat
 	Not confirmed by the printer	Neconfirmat de imprimantă
+	Not evaluated: {list}	Neevaluate: {list}
 	not in a Ruby	nu este într-un Ruby
 	not in a Table	nu este într-un Table
 	not in a Table, THead, TBody or TFoot	nu se află într-un Table, THead, TBody sau TFoot
@@ -1907,6 +1912,7 @@ animation effects	On	Activate
 	Only continue if you trust this document. An address can carry information from the document, such as what you typed into its form.	Continuați doar dacă aveți încredere în acest document. O adresă poate transmite informații din document, de exemplu ce ați scris în formularul lui.
 	Only IP addresses on this network are accepted (private, link-local or loopback), not host names.	Sunt acceptate doar adrese IP din această rețea (private, link-local sau loopback), nu nume de gazdă.
 	Only the document's owner can change its security (open it with the permissions password)	Doar proprietarul documentului îi poate modifica securitatea (deschideți-l cu parola de permisiuni)
+	Only the first {n} of each kind are listed.	Sunt listate doar primele {n} de fiecare tip.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Se modifică doar conținutul paginii: linkurile, comentariile, câmpurile de formular și semnele de carte de pe paginile originale rămân.
 	Only the recipients can open the document, each with the private key of their own certificate.	Doar destinatarii pot deschide documentul, fiecare cu cheia privată a propriului certificat.
 	Opacity	Opacitate
@@ -2925,6 +2931,7 @@ calendar weekday	Th	Jo
 	The document has been modified since this signature was applied, but the changes are permitted ({}).	Documentul a fost modificat după aplicarea acestei semnături, dar modificările sunt permise ({}).
 	The document has been modified since this timestamp was applied, but the changes are permitted ({}).	Documentul a fost modificat după aplicarea acestui marcaj temporal, dar modificările sunt permise ({}).
 	The document has document-level JavaScript	Documentul are JavaScript la nivel de document
+	The document has more objects than one check covers; the rest was not checked.	Documentul are mai multe obiecte decât acoperă o verificare; restul nu a fost verificat.
 	the document has no form fields	documentul nu are câmpuri de formular
 	the document has no page tree	documentul nu are arbore de pagini
 	The document has no structure tree: it isn't tagged	Documentul nu are arbore de structură: nu este etichetat
@@ -3145,6 +3152,8 @@ calendar weekday	Th	Jo
 	the title must not be empty	titlul nu poate fi gol
 	The Trapped key and the metadata's pdf:Trapped disagree	Cheia Trapped și pdf:Trapped din metadate nu concordă
 	The value is shown as typed.	Valoarea se afișează așa cum a fost scrisă.
+	The value {value} of {key} in {type} is deprecated since PDF {since}	Valoarea {value} a lui {key} din {type} este învechită începând cu PDF {since}
+	The value {value} of {key} in {type} is from PDF {since}, later than the file's PDF {version}	Valoarea {value} a lui {key} din {type} este din PDF {since}, mai nou decât PDF {version} al fișierului
 	The viewer preferences have no DisplayDocTitle entry	Preferințele de vizualizare nu au intrarea DisplayDocTitle
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	Fereastra ar trebui să afișeze un titlu cu sens, nu numele fișierului. Setați un titlu și Vizualizare inițială > Afișare: Titlul documentului.
 	The window shows the file name, not the title (Initial View > Show)	Fereastra afișează numele fișierului, nu titlul (Vizualizare inițială > Afișare)
@@ -3380,6 +3389,8 @@ certificate	Valid to	Valabil până la
 	Validate	Validare
 	Validate all	Validare toate
 	Validate all signatures	Validare toate semnăturile
+	Validate structure	Validare structură
+	Validate structure…	Validare structură…
 	validated: invalid	validare: nevalidă
 	validated: valid	validare: validă
 	validated: validity unknown	validare: validitate necunoscută
@@ -3501,7 +3512,20 @@ calendar weekday	We	Mi
 	{field}: {e}	{field}: {e}
 	{file} is too large for a stamp (at most {n} MB)	{file} este prea mare pentru o ștampilă (cel mult {n} MB)
 	{folder} is already pinned to Home	{folder} este deja fixat în Acasă
+	{key} in {type} breaks the rule {rule}	{key} din {type} încalcă regula {rule}
+	{key} in {type} is a {found}, which is from PDF {since}, later than the file's PDF {version}	{key} din {type} este un {found}, care este din PDF {since}, mai nou decât PDF {version} al fișierului
+	{key} in {type} is deprecated since PDF {since}	{key} din {type} este învechit începând cu PDF {since}
+	{key} in {type} is from PDF {since}, later than the file's PDF {version}	{key} din {type} este din PDF {since}, mai nou decât PDF {version} al fișierului
+	{key} in {type} is {found}, but must be {expected}	{key} din {type} este {found}, dar trebuie să fie {expected}
+	{key} in {type} is {value}, which breaks the rule {rule}	{key} din {type} este {value}, ceea ce încalcă regula {rule}
+	{key} in {type} is {value}, which is not one of {allowed}	{key} din {type} este {value}, care nu este una dintre {allowed}
+	{key} in {type} matches none of the types it may have ({candidates})	{key} din {type} nu corespunde niciunuia dintre tipurile pe care le poate avea ({candidates})
+	{key} in {type} must be a direct object, not a reference	{key} din {type} trebuie să fie un obiect direct, nu o referință
+	{key} in {type} must be an indirect reference	{key} din {type} trebuie să fie o referință indirectă
+	{key} in {type} must be {expected} when {rule}	{key} din {type} trebuie să fie {expected} când {rule}
+	{key} in {type} refers to object {object}, which doesn't exist	{key} din {type} se referă la obiectul {object}, care nu există
 	{key} is already used by “{other}”.	{key} este deja folosită de „{other}”.
+	{key} is not an entry of {type} in the model	{key} nu este o intrare a lui {type} în model
 	{key} was taken from “{other}”, which now has no shortcut.	{key} a fost luată de la „{other}”, care acum nu mai are comandă rapidă.
 	{kind} field	Câmp {kind}
 	{kind} Properties	Proprietăți {kind}
@@ -3572,6 +3596,9 @@ calendar weekday	We	Mi
 	{page} is not a page number or label	{page} nu este un număr sau o etichetă de pagină
 	{rule} - {status}	{rule} - {status}
 	{s} action	acțiunea {s}
+	{type} has {count} elements, but they come in sets of {n}	{type} are {count} elemente, dar acestea vin în grupuri de câte {n}
+	{type} has {count} elements, more than the {max} it allows	{type} are {count} elemente, mai multe decât cele {max} permise
+	{type} lacks the required entry {key}	Lui {type} îi lipsește intrarea obligatorie {key}
 	{ty} element on page {p}: {what}	Element {ty} pe pagina {p}: {what}
 	{ty} element: {what}	Element {ty}: {what}
 	{verb} as "{name}"	{verb} ca „{name}”

@@ -507,6 +507,7 @@ certificate	Basic constraints	Restricciones básicas
 	CheckBox	Casilla de verificación
 	Checkbox	Casilla de verificación
 	Checked	Marcado
+	Checked {objects} objects against the Arlington PDF Model for PDF {version}.	Se han comprobado {objects} objetos con el Arlington PDF Model para PDF {version}.
 	Checking form detection…	Comprobando la detección de formularios…
 	Checking Hungarian OCR installation…	Comprobando la instalación del OCR húngaro…
 	Checking Options ({on} of 32 in all categories)	Opciones de comprobación ({on} de 32 en todas las categorías)
@@ -1042,6 +1043,7 @@ key	End	Fin
 	Entire page	Página completa
 	Entire PDF document to send: {bytes} bytes	Documento PDF completo que se enviará: {bytes} bytes
 	Erase drawings	Borrar dibujos
+	Errors	Errores
 key	Esc	Esc
 	Estimated size: about {size}	Tamaño estimado: unos {size}
 	Estimating size…	Estimando el tamaño…
@@ -1738,6 +1740,8 @@ calendar weekday	Mo	Lu
 	No digital IDs yet.	Aún no hay ningún ID digital.
 	No document language is set	No se ha indicado el idioma del documento
 	No documents are open	No hay documentos abiertos
+	No errors in the rules that were evaluated.	No hay errores en las reglas evaluadas.
+	No errors: the structure follows the Arlington PDF Model.	Sin errores: la estructura sigue el Arlington PDF Model.
 	No field in this form calculates its value yet. Give a field a calculation on the Calculate tab of its properties, and it shows here.	Ningún campo de este formulario calcula todavía su valor. Dale a un campo un cálculo en la pestaña Calcular de sus propiedades y aparecerá aquí.
 	No field reads it	Ningún campo lo lee
 	No file chosen	Ningún archivo elegido
@@ -1815,6 +1819,7 @@ scroll speed	Normal	Normal
 	not allowed directly inside {in}	no se admite directamente dentro de {in}
 	Not checked	No comprobada
 	Not confirmed by the printer	La impresora no lo ha confirmado
+	Not evaluated: {list}	Sin evaluar: {list}
 	not in a Ruby	no está dentro de un Ruby
 	not in a Table	no está dentro de un Table
 	not in a Table, THead, TBody or TFoot	no está dentro de un Table, THead, TBody ni TFoot
@@ -1881,6 +1886,7 @@ animation effects	On	Activados
 	Only send if you trust this document and destination. The entire PDF leaves this computer.	Envíalo solo si confías en este documento y en el destino. El PDF completo saldrá de este ordenador.
 	Only send if you trust this document and destination. The form values leave this computer.	Envía los datos solo si confías en este documento y en el destino. Los valores del formulario saldrán de este ordenador.
 	Only the document's owner can change its security (open it with the permissions password)	Solo el propietario del documento puede cambiar su seguridad (ábrelo con la contraseña de permisos)
+	Only the first {n} of each kind are listed.	Solo se muestran los {n} primeros de cada tipo.
 	Only the page content changes: links, comments, form fields and bookmarks on the original pages stay.	Solo cambia el contenido de la página: los enlaces, comentarios, campos de formulario y marcadores de las páginas originales se conservan.
 	Only the recipients can open the document, each with the private key of their own certificate.	Solo los destinatarios pueden abrir el documento, cada uno con la clave privada de su propio certificado.
 	Open a document first	Abre primero un documento
@@ -2937,6 +2943,7 @@ calendar weekday	Th	Ju
 	The document has been modified since this signature was applied, but the changes are permitted ({}).	El documento se ha modificado desde que se aplicó esta firma, pero son cambios que permite ({}).
 	The document has been modified since this timestamp was applied, but the changes are permitted ({}).	El documento se ha modificado desde que se aplicó este sello de tiempo, pero son cambios que permite ({}).
 	The document has document-level JavaScript	El documento tiene JavaScript de nivel de documento
+	The document has more objects than one check covers; the rest was not checked.	El documento tiene más objetos de los que abarca una comprobación; el resto no se ha comprobado.
 	the document has no form fields	el documento no tiene campos de formulario
 	the document has no page tree	el documento no tiene árbol de páginas
 	The document has no structure tree: it isn't tagged	El documento no tiene árbol de estructura: no está etiquetado
@@ -3172,6 +3179,8 @@ calendar weekday	Th	Ju
 	the title must not be empty	el título no puede estar vacío
 	The Trapped key and the metadata's pdf:Trapped disagree	La clave Trapped y el pdf:Trapped de los metadatos no coinciden
 	The value is shown as typed.	El valor se muestra tal como se escribe.
+	The value {value} of {key} in {type} is deprecated since PDF {since}	El valor {value} de {key} en {type} está obsoleto desde PDF {since}
+	The value {value} of {key} in {type} is from PDF {since}, later than the file's PDF {version}	El valor {value} de {key} en {type} es de PDF {since}, posterior al PDF {version} del archivo
 	The viewer preferences have no DisplayDocTitle entry	Las preferencias del visor no tienen la entrada DisplayDocTitle
 	The window should show a meaningful title rather than the file name. Set a title and Initial View > Show: Document Title.	La ventana debe mostrar un título descriptivo en lugar del nombre del archivo. Define un título y Vista inicial > Mostrar: Título del documento.
 	The window shows the file name, not the title (Initial View > Show)	La ventana muestra el nombre del archivo, no el título (Vista inicial > Mostrar)
@@ -3407,6 +3416,8 @@ certificate	Valid to	Válido hasta
 	Validate	Validar
 	Validate all	Validar todas
 	Validate all signatures	Validar todas las firmas
+	Validate structure	Validar estructura
+	Validate structure…	Validar estructura…
 	validated: invalid	validación: no válida
 	validated: valid	validación: válida
 	validated: validity unknown	validación: validez desconocida
@@ -3522,7 +3533,20 @@ document scrollbar width	Wide	Ancha
 	{file} is too large for a stamp (at most {n} MB)	{file} es demasiado grande para un sello (como máximo {n} MB)
 	{file}: there is no such file.	{file}: no existe ese archivo.
 	{folder} is already pinned to Home	{folder} ya está anclada en Inicio
+	{key} in {type} breaks the rule {rule}	{key} en {type} incumple la regla {rule}
+	{key} in {type} is a {found}, which is from PDF {since}, later than the file's PDF {version}	{key} en {type} es un {found}, que es de PDF {since}, posterior al PDF {version} del archivo
+	{key} in {type} is deprecated since PDF {since}	{key} en {type} está obsoleto desde PDF {since}
+	{key} in {type} is from PDF {since}, later than the file's PDF {version}	{key} en {type} es de PDF {since}, posterior al PDF {version} del archivo
+	{key} in {type} is {found}, but must be {expected}	{key} en {type} es {found}, pero debe ser {expected}
+	{key} in {type} is {value}, which breaks the rule {rule}	{key} en {type} es {value}, que incumple la regla {rule}
+	{key} in {type} is {value}, which is not one of {allowed}	{key} en {type} es {value}, que no es uno de {allowed}
+	{key} in {type} matches none of the types it may have ({candidates})	{key} en {type} no encaja con ninguno de los tipos que puede tener ({candidates})
+	{key} in {type} must be a direct object, not a reference	{key} en {type} debe ser un objeto directo, no una referencia
+	{key} in {type} must be an indirect reference	{key} en {type} debe ser una referencia indirecta
+	{key} in {type} must be {expected} when {rule}	{key} en {type} debe ser {expected} cuando {rule}
+	{key} in {type} refers to object {object}, which doesn't exist	{key} en {type} remite al objeto {object}, que no existe
 	{key} is already used by “{other}”.	{key} ya lo usa «{other}».
+	{key} is not an entry of {type} in the model	{key} no es una entrada de {type} en el modelo
 	{key} was taken from “{other}”, which now has no shortcut.	Se quitó {key} a «{other}», que ahora no tiene atajo.
 	{kind} field	Campo {kind}
 	{kind} Properties	Propiedades de {kind}
@@ -3594,6 +3618,9 @@ document scrollbar width	Wide	Ancha
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	{signers} firmantes; se muestran los detalles del primero
 	{s} action	Acción {s}
+	{type} has {count} elements, but they come in sets of {n}	{type} tiene {count} elementos, pero van en grupos de {n}
+	{type} has {count} elements, more than the {max} it allows	{type} tiene {count} elementos, más de los {max} que admite
+	{type} lacks the required entry {key}	A {type} le falta la entrada obligatoria {key}
 	{ty} element on page {p}: {what}	Elemento {ty} de la página {p}: {what}
 	{ty} element: {what}	Elemento {ty}: {what}
 	{verb} as "{name}"	{verb} como «{name}»
