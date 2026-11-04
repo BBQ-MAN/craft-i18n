@@ -169,6 +169,17 @@ has reviewed these rows.** Terminology follows each locale's existing rows ("Dic
 "Dutch", "Download"); "Language pack" is translated as a pack of languages in each locale's own
 words, and the same wording is used in every row of the group.
 
+## File-size unit rows
+
+Martin Ball (@benandez) contributed the `unit` rows for the runtime crate's file sizes
+(storytold/craft-libs#204: `{n} B`, `{n} KB`, `{n} MB`, `{n} GB`, `{n} TB`, `{n} KiB`, `{n} MiB`,
+`{n} GiB` and `{n} TiB`) in `fr` (`o`, `Ko`, `Mo`, `Go`, `To`, `Kio`, `Mio`, `Gio`, `Tio`), `ru`
+(`Б`, `КБ`, `МБ`, `ГБ`, `ТБ`, `КиБ`, `МиБ`, `ГиБ`, `ТиБ`) and `uk` (`Б`, `КБ`, `МБ`, `ГБ`, `ТБ`,
+`КіБ`, `МіБ`, `ГіБ`, `ТіБ`), AI-assisted with Claude Code and written from the English meaning and
+general knowledge of each language's unit symbols. No native-speaker review is recorded. Other
+locales have no rows and show the English symbols. The `{n} byte|{n} bytes` row moved from 20
+locales' `pdfcraft.tsv` to their `common.tsv` unchanged; its credit stays with PdfCraft's above.
+
 ## Language data
 
 Every file under `language-data/` ([ADR 0004](docs/adr/0004-third-party-language-data.md),
