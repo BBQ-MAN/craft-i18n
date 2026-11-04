@@ -1731,6 +1731,7 @@ calendar weekday	Mo	Ma
 	No limit	Ei rajaa
 	No links to remove	Ei poistettavia linkkejä
 	No matches	Ei osumia
+	No matches to replace	Korvattavia osumia ei ole
 	No matching tools	Ei vastaavia työkaluja
 	No model credits were built into this copy.	Tähän kopioon ei ole sisällytetty mallien tekijätietoja.
 	No openly licensed document fonts found. Load a font file.	Avoimesti lisensoituja asiakirjan fontteja ei löytynyt. Lataa fonttitiedosto.
@@ -1783,6 +1784,7 @@ scroll speed	Normal	Normaali
 	not allowed directly inside {in}	ei sallittu suoraan tyypin {in} sisällä
 	Not checked	Ei tarkistettu
 	Not confirmed by the printer	Tulostin ei vahvistanut
+	not editable text	ei muokattavaa tekstiä
 	Not evaluated: {list}	Ei arvioitu: {list}
 	not in a Ruby	ei Rubyn sisällä
 	not in a Table	ei Tablen sisällä
@@ -1795,11 +1797,13 @@ scroll speed	Normal	Normaali
 	Not in order	Not in order
 	Not now	Ei nyt
 	Not present	Ei mukana
+	Not replaced: {why}	Ei korvattu: {why}
 	not the first child of its list	ei luettelonsa ensimmäinen lapsi
 	not the first or last child of its table	ei taulukkonsa ensimmäinen eikä viimeinen lapsi
 	Note	Huomautus
 	Nothing	Ei mitään
 	nothing in the file matches this document	mikään tiedostossa ei vastaa tätä asiakirjaa
+	Nothing replaced	Mitään ei korvattu
 	Nothing to redo	Ei uudelleen tehtävää
 	nothing to redo	ei uudelleen tehtävää
 	Nothing to undo	Ei kumottavaa
@@ -2263,6 +2267,8 @@ certificate	Public key	Julkinen avain
 	Repeat on pages	Toista sivuilla
 	Repeat overlay text	Toista päällysteksti
 	Repeated navigation links should be skippable. Check links that appear on every page.	Toistuvat siirtymislinkit pitäisi voida ohittaa. Tarkista linkit, jotka näkyvät jokaisella sivulla.
+	Replace ({key})	Korvaa ({key})
+	Replace all	Korvaa kaikki
 	Replace document colours	Korvaa asiakirjan värit
 	Replace image	Korvaa kuva
 	Replace Image…	Korvaa kuva…
@@ -2272,11 +2278,14 @@ certificate	Public key	Julkinen avain
 	Replace pages…	Korvaa sivuja…
 	Replace text	Korvaa tekstiä
 review-suggestion	Replace text	Korvaa tekstiä
+	Replace with	Korvaava teksti
 	Replaced	Korvattu
+	Replaced {n} on {pages}	Korvattiin {n} sivulla {pages}
 	Replacement text	Korvaava teksti
 review-suggestion	Replacement text	Korvaava teksti
 	Replacement: pages of {name}	Korvaava: tiedoston {name} sivut
 	Replaces the existing one on those pages.	Korvaa näiden sivujen nykyisen.
+	Replace…	Korvaa…
 	Replacing images arrives on the web with image file pickers	Kuvien korvaaminen tulee verkkoversioon kuvatiedostojen valitsimien myötä
 	Replacing images on page {p} arrives on the web with image pickers ({i})	Sivun {p} kuvien korvaaminen tulee verkkoversioon kuvavalitsimien myötä ({i})
 	Reply	Vastaa
@@ -2442,6 +2451,7 @@ calendar weekday	Sa	La
 	Scan the fronts before the reverse sides.	Scan the fronts before the reverse sides.
 	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …
 	Scan the missing reverse sides, then choose Finish.	Scan the missing reverse sides, then choose Finish.
+	scanned text	skannattu teksti
 	Scanned text detected	Skannattua tekstiä havaittu
 	Scanner	Scanner
 	Scanner settings	Scanner settings
@@ -2674,6 +2684,7 @@ scroll speed	Slow	Hidas
 	Source	Lähde
 key	Space	Välilyönti
 	Space Audit	Tilankäytön tarkastus
+	spans two paragraphs	ulottuu kahteen kappaleeseen
 	Special	Erikoismuoto
 	Spelling checks stay on this device.	Oikeinkirjoitus tarkistetaan tällä laitteella.
 	Spelling dictionary unavailable	Oikeinkirjoitussanakirja ei ole käytettävissä
@@ -2884,6 +2895,7 @@ calendar weekday	Th	To
 	The file trailer has no document ID	Tiedoston trailerissa ei ole asiakirjan tunnistetta
 	the first heading is an H{n}; headings should not skip levels	ensimmäinen otsikko on H{n}; otsikkotasoja ei pidä ohittaa
 	the first row number can be at most {max}	ensimmäisen rivin numero voi olla enintään {max}
+	the font can't draw it	fontti ei voi piirtää sitä
 	The font {} has characters with no Unicode value	Fontissa {} on merkkejä, joilla ei ole Unicode-arvoa
 	The font {} isn't embedded	Fonttia {} ei ole upotettu
 	The font {} maps characters to U+0000, U+FEFF or U+FFFE	Fontti {} yhdistää merkkejä arvoihin U+0000, U+FEFF tai U+FFFE
@@ -2940,6 +2952,7 @@ calendar weekday	Th	To
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages use {} spot colours	Sivut käyttävät {} spottiväriä
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sivut poimittiin mutta niitä ei poistettu, koska asiakirja muuttui kansion valinnan aikana.
+	the paragraph can't be rewritten	kappaletta ei voi kirjoittaa uudelleen
 	the password is incorrect	salasana on väärä
 	The password is incorrect.	Salasana on väärä.
 	The password is only used to read the file; it isn't saved.	Salasanaa käytetään vain tiedoston lukemiseen; sitä ei tallenneta.
@@ -3436,6 +3449,7 @@ calendar weekday	We	Ke
 	{kind} · page {p}	{kind} · sivu {p}
 	{kind} — click to show it on the page	{kind} – näytä sivulla napsauttamalla
 	{k} of {n}	{k}/{n}
+	{k} skipped: {why}	{k} ohitettu: {why}
 	{label} (1 issue)	{label} (1 ongelma)
 	{label} ({n} issues)	{label} ({n} ongelmaa)
 	{label} failed: {e}	{label} epäonnistui: {e}
@@ -3516,6 +3530,7 @@ calendar weekday	We	Ke
 	{who} in this document wants to open your email app with this address:	{who} tässä asiakirjassa haluaa avata sähköpostisovelluksen tällä osoitteella:
 	{who}, certificate issued by an unknown issuer.	{who}, varmenteen myöntäjä tuntematon.
 	{who}, certificate issued by {issuer}.	{who}, varmenteen myöntäjä {issuer}.
+	{why} ({n})	{why} ({n})
 	{words} on {pages}	{words}, {pages}
 	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} in, {pxw} × {pxh} pixels, {size}
 	{} annotation on page {p} has no description (Contents), and its tag no alternate text	Sivun {p} {}-merkinnällä ei ole kuvausta (Contents), eikä sen tagilla vaihtoehtoista tekstiä

@@ -1872,6 +1872,7 @@ calendar weekday	Mo	dl.
 	No limit	Sense límit
 	No links to remove	No hi ha enllaços per eliminar
 	No matches	Cap coincidència
+	No matches to replace	No hi ha coincidències per substituir
 	No matches.	Cap coincidència.
 	No matching tools	Cap eina coincident
 	No model credits were built into this copy.	En aquesta còpia no s'han inclòs crèdits de models.
@@ -1928,6 +1929,7 @@ scroll speed	Normal	Normal
 	not allowed directly inside {in}	no permès directament dins de {in}
 	Not checked	No comprovat
 	Not confirmed by the printer	La impressora no ho ha confirmat
+	not editable text	text no editable
 	Not evaluated: {list}	No avaluat: {list}
 	not in a Ruby	no és dins d'un Ruby
 	not in a Table	no és dins d'una Table
@@ -1940,11 +1942,13 @@ scroll speed	Normal	Normal
 	Not in order	Not in order
 	Not now	Ara no
 	Not present	No present
+	Not replaced: {why}	No substituït: {why}
 	not the first child of its list	no és el primer fill de la seva llista
 	not the first or last child of its table	no és el primer ni l'últim fill de la seva taula
 	Note	Nota
 	Nothing	Res
 	nothing in the file matches this document	res del fitxer coincideix amb aquest document
+	Nothing replaced	No s'ha substituït res
 	Nothing to redo	No hi ha res per refer
 	nothing to redo	no hi ha res per refer
 	Nothing to undo	No hi ha res per desfer
@@ -2455,6 +2459,8 @@ certificate	Public key	Clau pública
 	Repeat overlay text	Repeteix el text superposat
 	Repeated navigation links should be skippable. Check links that appear on every page.	Els enllaços de navegació repetits haurien de poder-se ometre. Revisa els enllaços que apareixen a totes les pàgines.
 	Replace	Substitueix
+	Replace ({key})	Substitueix ({key})
+	Replace all	Substitueix-ho tot
 	Replace document colours	Substitueix els colors del document
 	Replace image	Substitueix la imatge
 	Replace Image…	Substitueix la imatge…
@@ -2464,11 +2470,14 @@ certificate	Public key	Clau pública
 	Replace pages…	Substitueix pàgines…
 	Replace text	Substitueix el text
 review-suggestion	Replace text	Substitueix el text
+	Replace with	Substitueix per
 	Replaced	Substituït
+	Replaced {n} on {pages}	S'ha substituït {n} a {pages}
 	Replacement text	Text de substitució
 review-suggestion	Replacement text	Text de substitució
 	Replacement: pages of {name}	Substitució: pàgines de {name}
 	Replaces the existing one on those pages.	Substitueix l'existent en aquestes pàgines.
+	Replace…	Substitueix…
 	Replacing images arrives on the web with image file pickers	La substitució d'imatges arribarà al web amb selectors de fitxers d'imatge
 	Replacing images on page {p} arrives on the web with image pickers ({i})	La substitució d'imatges a la pàgina {p} arribarà al web amb selectors d'imatges ({i})
 	Reply	Respon
@@ -2646,6 +2655,7 @@ calendar weekday	Sa	ds.
 	Scan the fronts before the reverse sides.	Scan the fronts before the reverse sides.
 	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …
 	Scan the missing reverse sides, then choose Finish.	Scan the missing reverse sides, then choose Finish.
+	scanned text	text escanejat
 	Scanned text detected	S'ha detectat text escanejat
 	Scanner	Scanner
 	Scanner settings	Scanner settings
@@ -2890,6 +2900,7 @@ scroll speed	Slow	Lenta
 	Source	Origen
 key	Space	Espai
 	Space Audit	Auditoria d'espai
+	spans two paragraphs	abasta dos paràgrafs
 	Special	Especial
 	Spelling checks stay on this device.	La comprovació ortogràfica es fa en aquest dispositiu.
 	Spelling dictionary unavailable	Diccionari ortogràfic no disponible
@@ -3109,6 +3120,7 @@ calendar weekday	Th	dj.
 	The file trailer has no document ID	El tràiler del fitxer no té ID de document
 	the first heading is an H{n}; headings should not skip levels	el primer encapçalament és un H{n}; els encapçalaments no haurien de saltar nivells
 	the first row number can be at most {max}	el número de la primera fila pot ser com a màxim {max}
+	the font can't draw it	la tipografia no el pot dibuixar
 	The font {} has characters with no Unicode value	El tipus de lletra {} té caràcters sense valor Unicode
 	The font {} isn't embedded	El tipus de lletra {} no està incrustat
 	The font {} maps characters to U+0000, U+FEFF or U+FFFE	El tipus de lletra {} assigna caràcters a U+0000, U+FEFF o U+FFFE
@@ -3165,6 +3177,7 @@ calendar weekday	Th	dj.
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages use {} spot colours	Les pàgines fan servir {} colors plans
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Les pàgines s'han extret però no s'han suprimit, perquè el document ha canviat mentre triaves una carpeta.
+	the paragraph can't be rewritten	el paràgraf no es pot reescriure
 	the password is incorrect	la contrasenya és incorrecta
 	The password is incorrect.	La contrasenya és incorrecta.
 	The password is only used to read the file; it isn't saved.	La contrasenya només s'utilitza per llegir el fitxer; no es desa.
@@ -3678,6 +3691,7 @@ calendar weekday	We	dc.
 	{kind} · page {p}	{kind} · pàgina {p}
 	{kind} — click to show it on the page	{kind} — fes clic per mostrar-ho a la pàgina
 	{k} of {n}	{k} de {n}
+	{k} skipped: {why}	{k} omès: {why}
 	{label} (1 issue)	{label} (1 problema)
 	{label} ({n} issues)	{label} ({n} problemes)
 	{label} failed: {e}	{label} ha fallat: {e}
@@ -3758,6 +3772,7 @@ calendar weekday	We	dc.
 	{who} in this document wants to open your email app with this address:	{who} d'aquest document vol obrir l'aplicació de correu amb aquesta adreça:
 	{who}, certificate issued by an unknown issuer.	{who}, certificat emès per un emissor desconegut.
 	{who}, certificate issued by {issuer}.	{who}, certificat emès per {issuer}.
+	{why} ({n})	{why} ({n})
 	{words} on {pages}	{words} a {pages}
 	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} in, {pxw} × {pxh} pixels, {size}
 	{} annotation on page {p} has no description (Contents), and its tag no alternate text	L'anotació {} de la pàgina {p} no té descripció (Contents), i la seva etiqueta no té text alternatiu

@@ -1749,6 +1749,7 @@ key	Home	Home
 	No links to remove	削除するリンクはありません
 	No local model runtime found.	ローカルのモデルランタイムが見つかりません。
 	No matches	一致なし
+	No matches to replace	置換する一致がありません
 	No matches.	一致する項目はありません。
 	No matching tools	該当するツールがありません
 	No model credits were built into this copy.	このビルドにはモデルのクレジット情報が組み込まれていません。
@@ -1808,14 +1809,17 @@ scroll speed	Normal	標準
 	Not allowed	許可しない
 	Not checked	未検査
 	Not confirmed by the printer	プリンターからは確認されていません
+	not editable text	編集できないテキスト
 	Not evaluated: {list}	未評価: {list}
 	Not in order	順序にない
 	Not now	今はしない
 	Not present	なし
 	Not rated	評価なし
+	Not replaced: {why}	置換されませんでした: {why}
 	Note	ノート注釈
 	Nothing	なし
 	nothing in the file matches this document	この文書に一致する項目がファイルにありません
+	Nothing replaced	何も置換されませんでした
 	Nothing to redo	やり直す操作はありません
 	nothing to redo	やり直す操作はありません
 	Nothing to undo	取り消す操作はありません
@@ -2328,6 +2332,7 @@ animation effects	On	オン
 	Repeat on pages…	ページに繰り返す…
 	Repeat overlay text	オーバーレイテキストを繰り返す
 	Repeated navigation links should be skippable. Check links that appear on every page.	繰り返し表示されるナビゲーションリンクはスキップできる必要があります。各ページにあるリンクを確認してください。
+	Replace ({key})	置換（{key}）
 	Replace all	すべて置換
 	Replace document colours	文書の色を置き換える
 	Replace image	画像を置換
@@ -2337,12 +2342,14 @@ animation effects	On	オン
 	Replace pages	ページを置換
 	Replace pages…	ページを置換…
 	Replace text	テキストを置換
-	Replace with	置換後
+	Replace with	置換後の文字列
 	Replace XMP metadata	XMPメタデータを置き換え
 	Replaced	置換
+	Replaced {n} on {pages}	{pages}で {n} 件を置換しました
 	Replacement text	置換テキスト
 	Replacement: pages of {name}	置換元: {name} のページ
 	Replaces the existing one on those pages.	対象ページの既存の項目を置き換えます。
+	Replace…	置換…
 	Replacing images arrives on the web with image file pickers	Web 版の画像置換は画像ファイル選択に対応した際に利用可能になります
 	Replacing images on page {p} arrives on the web with image pickers ({i})	ページ {p} の画像置換は Web 版の画像選択に対応した際に利用可能になります（{i}）
 	Report Options	レポートのオプション
@@ -2513,6 +2520,7 @@ animation effects	On	オン
 	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	おもて面をスキャンし、束を裏返して（最後の用紙を上に）、裏面をスキャンします。ページは表・裏・…の順に差し込まれます…
 	Scan the missing reverse sides, then choose Finish.	足りない裏面をスキャンしてから、「完了」を選んでください。
 	Scanned pages need OCR. Reading order follows extracted page text.	スキャンしたページにはOCRが必要です。読み上げ順序はページから抽出したテキストに従います。
+	scanned text	スキャンしたテキスト
 	Scanned text detected	スキャンしたテキストを検出しました
 	Scanner	スキャナー
 	Scanner settings	スキャナーの設定
@@ -2783,6 +2791,7 @@ scroll speed	Slow	遅い
 key	Space	スペース
 	Space Audit	容量の使用状況
 	Spacing between copies	コピー間の間隔
+	spans two paragraphs	2 つの段落にまたがる
 	Speed:	速度:
 	Spelling checks stay on this device.	スペルチェックはこの端末内で行われます。
 	Spelling dictionary unavailable	スペル辞書を利用できません
@@ -2971,6 +2980,7 @@ document scrollbar width	Standard	標準
 	The field properties dialog is no longer open.	フィールドのプロパティのダイアログはもう開かれていません。
 	The field {name} no longer exists.	フィールド {name} はもう存在しません。
 	The fields this signature locked ({names}) can be changed again.	この署名がロックしていたフィールド（{names}）を再び変更できるようになります。
+	the font can't draw it	フォントで描画できない
 	The font must include Latin letters and numbers for interface controls.	フォントには操作に必要なラテン文字と数字が含まれている必要があります。
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraft が書き込みに使うフォントでは「{c}」（{code}）を表示できないため、どの PDF ビューアーでも ? と表示されます。テキストは保存されています。
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	フォームは {u} への送信を要求していますが、PdfCraft はフォームデータを送信しません。入力内容を保持するには文書を保存してください。
@@ -3011,6 +3021,7 @@ document scrollbar width	Standard	標準
 	The page's words were cleared (undo in the panel)	ページの単語を消去しました（パネルで元に戻せます）
 	The pages already scanned were kept in the document.	スキャン済みのページは文書に保持されています。
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	フォルダーを選択している間に文書が変更されたため、ページは抽出しましたが、削除はしていません。
+	the paragraph can't be rewritten	段落を書き換えられない
 	the password is incorrect	パスワードが正しくありません
 	The password is incorrect.	パスワードが正しくありません。
 	The password is only used to read the file; it isn't saved.	パスワードはファイルの読み込みにのみ使用され、保存されません。
@@ -3465,6 +3476,7 @@ document scrollbar width	Wide	太い
 	{kind} · page {p}	{kind} · ページ {p}
 	{kind} — click to show it on the page	{kind} — クリックしてページ上に表示
 	{k} of {n}	{k}/{n}
+	{k} skipped: {why}	{k} 件をスキップ: {why}
 	{label} (1 issue)	{label}（問題 1 件）
 	{label} ({n} issues)	{label}（問題 {n} 件）
 	{label} failed: {e}	操作「{label}」に失敗しました: {e}
@@ -3532,6 +3544,7 @@ document scrollbar width	Wide	太い
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	この文書内の{who}が、PdfCraft では開けないアドレスを開こうとしました：{e}。文書から開けるのは、ウェブ（http、https）とメール（mailto）のリンクだけです。
 	{who} in this document wants to open this address in your browser:	この文書内の{who}が、次のアドレスをブラウザーで開こうとしています：
 	{who} in this document wants to open your email app with this address:	この文書内の{who}が、次のアドレスでメールアプリを開こうとしています：
+	{why} ({n})	{why}（{n}）
 	{words} on {pages}	{pages} で{words}
 	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} in、{pxw} × {pxh} ピクセル、{size}
 	ΔLOC	ΔLOC

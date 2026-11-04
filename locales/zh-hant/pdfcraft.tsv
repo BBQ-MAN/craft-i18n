@@ -1714,6 +1714,7 @@ key	Home	Home
 	No links to remove	沒有可移除的連結
 	No local model runtime found.	找不到本機模型執行環境。
 	No matches	無相符
+	No matches to replace	沒有可取代的相符項目
 	No matches.	無相符。
 	No matching tools	找不到相符的工具
 	No model credits were built into this copy.	此版本未內建模型致謝資料。
@@ -1769,14 +1770,17 @@ scroll speed	Normal	正常
 	Not allowed	不允許
 	Not checked	未檢查
 	Not confirmed by the printer	印表機未確認
+	not editable text	不可編輯的文字
 	Not evaluated: {list}	未評估：{list}
 	Not in order	不在順序中
 	Not now	暫時不要
 	Not present	不存在
 	Not rated	未評等
+	Not replaced: {why}	未取代：{why}
 	Note	附註
 	Nothing	無
 	nothing in the file matches this document	檔案中沒有與此文件相符的資料
+	Nothing replaced	未取代任何內容
 	Nothing to redo	沒有可重做的操作
 	nothing to redo	沒有可重做的操作
 	Nothing to undo	沒有可復原的操作
@@ -2279,6 +2283,7 @@ animation effects	On	開
 	Repeat on pages…	在頁面上重複…
 	Repeat overlay text	重複覆蓋文字
 	Repeated navigation links should be skippable. Check links that appear on every page.	重複的導覽連結應可跳過。請檢驗出現在每一頁上的連結。
+	Replace ({key})	取代（{key}）
 	Replace all	全部取代
 	Replace document colours	取代文件色彩
 	Replace image	替換圖片
@@ -2291,9 +2296,11 @@ animation effects	On	開
 	Replace with	取代為
 	Replace XMP metadata	取代 XMP 中繼資料
 	Replaced	替換
+	Replaced {n} on {pages}	已取代 {n} 處（{pages}）
 	Replacement text	替換文字
 	Replacement: pages of {name}	替換檔案：{name} 的頁面
 	Replaces the existing one on those pages.	替換這些頁面上的現有內容。
+	Replace…	取代…
 	Replacing images arrives on the web with image file pickers	Web 端替換圖片將使用圖片檔案選擇器
 	Replacing images on page {p} arrives on the web with image pickers ({i})	在 Web 端替換第{p}頁的圖片將使用圖片選擇器（{i}）
 	Report Options	報告選項
@@ -2462,6 +2469,7 @@ animation effects	On	開
 	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …
 	Scan the missing reverse sides, then choose Finish.	Scan the missing reverse sides, then choose Finish.
 	Scanned pages need OCR. Reading order follows extracted page text.	掃描頁面需要OCR。朗讀順序依循從頁面擷取的文字。
+	scanned text	掃描的文字
 	Scanner	掃描器
 	Scanner settings	Scanner settings
 	Scanner's full area	掃描器的整個區域
@@ -2718,6 +2726,7 @@ scroll speed	Slow	慢
 	Source page	來源頁面
 key	Space	空格
 	Space Audit	空間審計
+	spans two paragraphs	跨越兩個段落
 	Speed:	速度：
 	Spelling checks stay on this device.	拼字檢查僅在此裝置上進行。
 	Spelling dictionary unavailable	拼字字典無法使用
@@ -2896,6 +2905,7 @@ document scrollbar width	Standard	標準
 	The field properties dialog is no longer open.	欄位屬性對話方塊已不再開啟。
 	The field {name} no longer exists.	欄位 {name} 已不存在。
 	The fields this signature locked ({names}) can be changed again.	此簽章鎖定的欄位（{names}）將可以再次變更。
+	the font can't draw it	字型無法顯示
 	The font must include Latin letters and numbers for interface controls.	字型必須包含介面控制項需要的拉丁字母和數字。
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraft 寫入時使用的字型無法顯示「{c}」（{code}），因此它在所有 PDF 閱讀器中都會顯示為 ?。文字已儲存。
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	該表單請求送出到{u}；PdfCraft 不傳送表單資料。請儲存文件以保留填寫內容。
@@ -2935,6 +2945,7 @@ document scrollbar width	Standard	標準
 	The page's words were applied as one undoable step ({n} words)	此頁的單詞已作為一步可復原的修改套用（{n} 個單詞）
 	The page's words were cleared (undo in the panel)	已清除頁面的文字（可在面板中復原）
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
+	the paragraph can't be rewritten	無法重寫該段落
 	the password is incorrect	密碼不正確
 	The password is incorrect.	密碼不正確。
 	The password is only used to read the file; it isn't saved.	密碼僅用於讀取檔案，不會被儲存。
@@ -3365,6 +3376,7 @@ document scrollbar width	Wide	寬
 	{kind} · page {p}	{kind} · 第 {p} 頁
 	{kind} — click to show it on the page	{kind} —— 按一下以在頁面上顯示
 	{k} of {n}	{k}/{n}
+	{k} skipped: {why}	已跳過 {k} 處：{why}
 	{label} (1 issue)	{label}（1 個問題）
 	{label} ({n} issues)	{label}（{n} 個問題）
 	{label} failed: {e}	{label}失敗：{e}
@@ -3430,6 +3442,7 @@ document scrollbar width	Wide	寬
 	{what}. Saved {file}, checked to reopen with every page. {history}	{what}。已儲存 {file}，並確認它能帶著所有頁面重新開啟。{history}
 	{who} in this document wants to open this address in your browser:	此文件中的{who}想在瀏覽器中開啟這個網址：
 	{who} in this document wants to open your email app with this address:	此文件中的{who}想用這個地址開啟您的電子郵件應用程式：
+	{why} ({n})	{why}（{n}）
 	{words} on {pages}	在{pages}{words}
 	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} in, {pxw} × {pxh} pixels, {size}
 	ΔLOC	行數增減

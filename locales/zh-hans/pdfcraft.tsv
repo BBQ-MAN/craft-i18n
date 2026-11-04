@@ -1734,6 +1734,7 @@ key	Home	Home
 	No links to remove	没有可删除的链接
 	No local model runtime found.	找不到本地模型运行环境。
 	No matches	无匹配
+	No matches to replace	没有可替换的匹配项
 	No matches.	无匹配。
 	No matching tools	没有匹配的工具
 	No model credits were built into this copy.	此版本未包含模型贡献记录。
@@ -1792,14 +1793,17 @@ scroll speed	Normal	正常
 	Not allowed	不允许
 	Not checked	未检查
 	Not confirmed by the printer	打印机未确认
+	not editable text	不可编辑的文本
 	Not evaluated: {list}	未评估：{list}
 	Not in order	不在顺序中
 	Not now	暂不
 	Not present	不存在
 	Not rated	未评级
+	Not replaced: {why}	未替换：{why}
 	Note	附注
 	Nothing	无
 	nothing in the file matches this document	文件中没有与此文档匹配的数据
+	Nothing replaced	未替换任何内容
 	Nothing to redo	没有可重做的操作
 	nothing to redo	没有可重做的操作
 	Nothing to undo	没有可撤销的操作
@@ -2309,6 +2313,7 @@ animation effects	On	开
 	Repeat on pages…	在页面上重复…
 	Repeat overlay text	重复覆盖文本
 	Repeated navigation links should be skippable. Check links that appear on every page.	重复的导航链接应可跳过。请检查出现在每一页上的链接。
+	Replace ({key})	替换 ({key})
 	Replace all	全部替换
 	Replace document colours	替换文档颜色
 	Replace image	替换图像
@@ -2321,9 +2326,11 @@ animation effects	On	开
 	Replace with	替换为
 	Replace XMP metadata	替换 XMP 元数据
 	Replaced	替换
+	Replaced {n} on {pages}	已替换 {n} 处（{pages}）
 	Replacement text	替换文本
 	Replacement: pages of {name}	替换文件：{name} 的页面
 	Replaces the existing one on those pages.	替换这些页面上的现有内容。
+	Replace…	替换…
 	Replacing images arrives on the web with image file pickers	Web 端替换图像将使用图像文件选择器
 	Replacing images on page {p} arrives on the web with image pickers ({i})	在 Web 端替换第{p}页的图像将使用图像选择器（{i}）
 	Report Options	报告选项
@@ -2492,6 +2499,7 @@ animation effects	On	开
 	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	扫描正面，将纸叠翻面（最后一页在上），再扫描背面。页面按正、背、…交错…
 	Scan the missing reverse sides, then choose Finish.	请扫描缺少的背面，然后选择“完成”。
 	Scanned pages need OCR. Reading order follows extracted page text.	扫描页面需要OCR。朗读顺序遵循从页面提取的文本。
+	scanned text	扫描的文本
 	Scanned text detected	检测到扫描文本
 	Scanner	扫描仪
 	Scanner settings	扫描仪设置
@@ -2762,6 +2770,7 @@ scroll speed	Slow	慢
 key	Space	空格
 	Space Audit	空间审计
 	Spacing between copies	副本之间的间距
+	spans two paragraphs	跨越两个段落
 	Speed:	速度：
 	Spelling checks stay on this device.	拼写检查仅在此设备上进行。
 	Spelling dictionary unavailable	拼写词典不可用
@@ -2943,6 +2952,7 @@ document scrollbar width	Standard	标准
 	The field properties dialog is no longer open.	字段属性对话框已不再打开。
 	The field {name} no longer exists.	字段 {name} 已不存在。
 	The fields this signature locked ({names}) can be changed again.	此签名锁定的字段（{names}）将可以再次更改。
+	the font can't draw it	字体无法显示
 	The font must include Latin letters and numbers for interface controls.	字体必须包含界面控件需要的拉丁字母和数字。
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	PdfCraft 写入时使用的字体无法显示“{c}”（{code}），因此它在所有 PDF 阅读器中都会显示为 ?。文本已保存。
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	该表单请求提交到{u}；PdfCraft 不发送表单数据。请保存文档以保留填写内容。
@@ -2982,6 +2992,7 @@ document scrollbar width	Standard	标准
 	The page's words were applied as one undoable step ({n} words)	此页的词语已作为一步可撤销的修改应用（{n} 个词）
 	The page's words were cleared (undo in the panel)	此页的词语已清除（可在面板中撤销）
 	The pages already scanned were kept in the document.	已扫描的页面已保留在文档中。
+	the paragraph can't be rewritten	无法重写该段落
 	the password is incorrect	密码不正确
 	The password is incorrect.	密码不正确。
 	The password is only used to read the file; it isn't saved.	密码仅用于读取文件，不会被保存。
@@ -3433,6 +3444,7 @@ document scrollbar width	Wide	宽
 	{kind} · page {p}	{kind} · 第 {p} 页
 	{kind} — click to show it on the page	{kind} —— 单击以在页面上显示
 	{k} of {n}	{k}/{n}
+	{k} skipped: {why}	已跳过 {k} 处：{why}
 	{label} (1 issue)	{label}（1 个问题）
 	{label} ({n} issues)	{label}（{n} 个问题）
 	{label} failed: {e}	{label}失败：{e}
@@ -3498,6 +3510,7 @@ document scrollbar width	Wide	宽
 	{what}. Saved {file}, checked to reopen with every page. {history}	{what}。已保存 {file}，并确认它能带着所有页面重新打开。{history}
 	{who} in this document wants to open this address in your browser:	此文档中的{who}请求在浏览器中打开以下地址：
 	{who} in this document wants to open your email app with this address:	此文档中的{who}请求打开邮件应用并使用以下地址：
+	{why} ({n})	{why}（{n}）
 	{words} on {pages}	在{pages}{words}
 	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} 英寸，{pxw} × {pxh} 像素，{size}
 	ΔLOC	净增行

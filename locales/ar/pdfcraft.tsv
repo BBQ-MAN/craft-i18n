@@ -1731,6 +1731,7 @@ calendar weekday	Mo	إثنين
 	No links to remove	لا توجد روابط لإزالتها
 	No local model runtime found.	لا يوجد مشغّل نماذج محلي.
 	No matches	لا توجد تطابقات
+	No matches to replace	لا توجد تطابقات لاستبدالها
 	No matching tools	لا توجد أدوات مطابقة
 	No model credits were built into this copy.	لم يُضمَّن ذكر النماذج في هذه النسخة.
 	No model installed yet — see the Models tab.	لا يوجد نموذج مثبّت بعد — انظر تبويب النماذج.
@@ -1789,6 +1790,7 @@ scroll speed	Normal	عادية
 	Not allowed	غير مسموح
 	Not checked	لم يُتحقق منه
 	Not confirmed by the printer	لم تؤكده الطابعة
+	not editable text	نص غير قابل للتحرير
 	Not evaluated: {list}	لم يُقيَّم: {list}
 	not in a Table, THead, TBody or TFoot	ليس في Table أو THead أو TBody أو TFoot
 	not in a TR	ليس في TR
@@ -1798,9 +1800,11 @@ scroll speed	Normal	عادية
 	Not now	ليس الآن
 	Not present	غير موجود
 	Not rated	غير مقيَّم
+	Not replaced: {why}	لم يُستبدل: {why}
 	Note	ملاحظة
 	Nothing	لا شيء
 	nothing in the file matches this document	لا شيء في الملف يطابق هذا المستند
+	Nothing replaced	لم يُستبدل شيء
 	Nothing to redo	لا شيء لإعادته
 	nothing to redo	لا شيء لإعادته
 	Nothing to undo	لا شيء للتراجع عنه
@@ -2308,6 +2312,7 @@ certificate	Public key	المفتاح العام
 	Repeat on pages…	تكرار على الصفحات…
 	Repeat overlay text	تكرار نص التراكب
 	Repeated navigation links should be skippable. Check links that appear on every page.	روابط التنقل المتكررة ينبغي أن يمكن تخطيها. افحص الروابط التي تظهر في كل صفحة.
+	Replace ({key})	استبدال ({key})
 	Replace all	استبدال الكل
 	Replace document colours	استبدال ألوان المستند
 	Replace image	استبدال الصورة
@@ -2321,10 +2326,12 @@ review-suggestion	Replace text	اقتراح استبدال النص
 	Replace with	استبدال بـ
 	Replace XMP metadata	استبدال بيانات تعريف XMP
 	Replaced	مستبدَل
+	Replaced {n} on {pages}	تم استبدال {n} في {pages}
 	Replacement text	النص البديل
 review-suggestion	Replacement text	اقتراح النص البديل
 	Replacement: pages of {name}	البديل: صفحات {name}
 	Replaces the existing one on those pages.	يستبدل الموجود على تلك الصفحات.
+	Replace…	استبدال…
 	Replacing images arrives on the web with image file pickers	استبدال الصور سيتوفر على الويب مع منتقيات ملفات الصور
 	Replacing images on page {p} arrives on the web with image pickers ({i})	استبدال الصور في الصفحة {p} سيتوفر على الويب مع منتقيات الصور ({i})
 	Report created	أُنشئ التقرير
@@ -2503,6 +2510,7 @@ calendar weekday	Sa	سبت
 	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	امسح الأوجه الأمامية، اقلب الرزمة (آخر ورق أعلاه)، ثم الخلفية. تُدرج الصفحات أمامي، خلفي، …
 	Scan the missing reverse sides, then choose Finish.	امسح الوجوه الخلفية الناقصة، ثم اختر «إنهاء».
 	Scanned pages need OCR. Reading order follows extracted page text.	تحتاج الصفحات الممسوحة إلى OCR. يتبع ترتيب القراءة النص المستخرج من الصفحة.
+	scanned text	نص ممسوح ضوئيًا
 	Scanned text detected	تم اكتشاف نص ممسوح ضوئيًا
 	Scanner	الماسح الضوئي
 	Scanner settings	إعدادات الماسح
@@ -2770,6 +2778,7 @@ scroll speed	Slow	بطيئة
 key	Space	مسافة
 	Space Audit	تدقيق المساحة
 	Spacing between copies	المسافة بين النسخ
+	spans two paragraphs	يمتد عبر فقرتين
 	Speed	السرعة
 	Speed:	السرعة:
 	Spelling checks stay on this device.	يتم التدقيق الإملائي على هذا الجهاز.
@@ -2973,6 +2982,7 @@ calendar weekday	Th	خميس
 	The field {name} no longer exists.	الحقل {name} لم يعد موجودًا.
 	The fields this signature locked ({names}) can be changed again.	ستصبح الحقول التي كان هذا التوقيع يقفلها ({names}) قابلة للتغيير من جديد.
 	the first heading is an H{n}; headings should not skip levels	العنوان الأول H{n}؛ لا ينبغي للعناوين تخطي المستويات
+	the font can't draw it	لا يستطيع الخط رسمه
 	The font must include Latin letters and numbers for interface controls.	يجب أن يتضمن الخط حروفًا لاتينية وأرقامًا لعناصر التحكم في الواجهة.
 	The font {} isn't embedded	الخط {} غير مدمج
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	الخطوط التي يكتب بها PdfCraft لا تستطيع رسم «{c}» ({code})، لذا يظهر بشكل ? في كل برامج عرض PDF. النص محفوظ.
@@ -3013,6 +3023,7 @@ calendar weekday	Th	خميس
 	The page's words were cleared (undo in the panel)	مُسحت كلمات الصفحة (يمكن التراجع من اللوحة)
 	The pages already scanned were kept in the document.	تم الاحتفاظ بالصفحات الممسوحة سابقاً في المستند.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	استُخرجت الصفحات لكنها لم تُحذف، لأن المستند تغيّر أثناء اختيارك مجلدًا.
+	the paragraph can't be rewritten	تتعذر إعادة كتابة الفقرة
 	the password is incorrect	كلمة المرور غير صحيحة
 	The password is incorrect.	كلمة المرور غير صحيحة.
 	The password is only used to read the file; it isn't saved.	تُستخدم كلمة المرور لقراءة الملف فقط؛ ولا تُحفظ.
@@ -3502,6 +3513,7 @@ document scrollbar width	Wide	عريض
 	{kind} · page {p}	{kind} · صفحة {p}
 	{kind} — click to show it on the page	{kind} — انقر لإظهاره على الصفحة
 	{k} of {n}	{k} من {n}
+	{k} skipped: {why}	تم تخطي {k}: {why}
 	{label} (1 issue)	{label} (مشكلة واحدة)
 	{label} ({n} issues)	{label} ({n} مشكلات)
 	{label} failed: {e}	فشل {label}: {e}
@@ -3581,6 +3593,7 @@ document scrollbar width	Wide	عريض
 	{who} in this document wants to open your email app with this address:	{who} في هذا المستند يريد فتح تطبيق بريدك بهذا العنوان:
 	{who}, certificate issued by an unknown issuer.	{who}، شهادة صادرة من مُصدر مجهول.
 	{who}, certificate issued by {issuer}.	{who}، شهادة صادرة من {issuer}.
+	{why} ({n})	{why} ({n})
 	{words} on {pages}	{words} في {pages}
 	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} بوصة، {pxw} × {pxh} بكسل، {size}
 	{} annotation on page {p} isn't tagged	التعليق التوضيحي {} في الصفحة {p} غير موسوم

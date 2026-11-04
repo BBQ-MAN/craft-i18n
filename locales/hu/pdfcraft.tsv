@@ -1673,6 +1673,7 @@ key	Home	Home
 	No links to remove	Nincs eltávolítható hivatkozás
 	No local model runtime found.	Nem található helyi modelfuttató.
 	No matches	Nincs találat
+	No matches to replace	Nincs cserélhető találat
 	No matching tools	Nincs illeszkedő eszköz
 	No model credits were built into this copy.	Ebben a példányban nincsenek beépített modelladatok.
 	No model installed yet — see the Models tab.	Még nincs telepítve modell — lásd a Modellek lapot.
@@ -1728,14 +1729,17 @@ scroll speed	Normal	Normál
 	Not allowed	Nem engedélyezett
 	Not checked	Nincs ellenőrizve
 	Not confirmed by the printer	A nyomtató nem erősítette meg
+	not editable text	nem szerkeszthető szöveg
 	Not evaluated: {list}	Nem kiértékelt: {list}
 	Not in order	Nincs a sorrendben
 	Not now	Most nem
 	Not present	Nincs megadva
 	Not rated	Nincs értékelve
+	Not replaced: {why}	Nincs lecserélve: {why}
 	Note	Jegyzet
 	Nothing	Semmi
 	nothing in the file matches this document	a fájlban semmi sem illeszkedik ehhez a dokumentumhoz
+	Nothing replaced	Semmi sem lett lecserélve
 	Nothing to redo	Nincs mit megismételni
 	nothing to redo	nincs mit megismételni
 	Nothing to undo	Nincs mit visszavonni
@@ -2224,6 +2228,7 @@ animation effects	On	Be
 	Repeat on pages…	Ismétlés az oldalakon…
 	Repeat overlay text	Fedőszöveg ismétlése
 	Repeated navigation links should be skippable. Check links that appear on every page.	Az ismétlődő navigációs hivatkozásokat át kell tudni ugrani. Ellenőrizd a minden oldalon megjelenő hivatkozásokat.
+	Replace ({key})	Csere ({key})
 	Replace all	Összes cseréje
 	Replace document colours	Dokumentumszínek cseréje
 	Replace image	Kép cseréje
@@ -2236,9 +2241,11 @@ animation effects	On	Be
 	Replace with	Csere erre
 	Replace XMP metadata	XMP-metaadatok cseréje
 	Replaced	Lecserélve
+	Replaced {n} on {pages}	Lecserélve: {n} ({pages})
 	Replacement text	Csere szövege
 	Replacement: pages of {name}	Csere: {name} oldalai
 	Replaces the existing one on those pages.	Lecseréli a meglévőt ezeken az oldalakon.
+	Replace…	Csere…
 	Replacing images arrives on the web with image file pickers	A képek cseréje a webes változatban a képfájl-választóval együtt érkezik
 	Replacing images on page {p} arrives on the web with image pickers ({i})	A {p}. oldal képeinek cseréje a webes változatban a képválasztóval együtt érkezik ({i})
 	Report Options	Jelentés beállításai
@@ -2404,6 +2411,7 @@ animation effects	On	Be
 	Scan the fronts, flip the stack (last sheet on top), then scan the reverse sides. Pages are interleaved front, back, …	Olvassa be az előlapokat, fordítsa meg a köteget (utolsó lap felül), majd a hátoldalakat. Az oldalak előlap, hátlap, … sorrendben kerülnek be…
 	Scan the missing reverse sides, then choose Finish.	Olvassa be a hiányzó hátoldalakat, majd válassza a(z) „Befejezés” lehetőséget.
 	Scanned pages need OCR. Reading order follows extracted page text.	A szkennelt oldalakhoz OCR szükséges. Az olvasási sorrend az oldal kinyert szövegét követi.
+	scanned text	beolvasott szöveg
 	Scanned text detected	Beolvasott szöveg észlelve
 	Scanner	Lapolvasó
 	Scanner settings	Szkennerbeállítások
@@ -2667,6 +2675,7 @@ scroll speed	Slow	Lassú
 key	Space	Szóköz
 	Space Audit	Helyfoglalás
 	Spacing between copies	Távolság a másolatok között
+	spans two paragraphs	két bekezdésre terjed ki
 	Special	Speciális
 	Speed:	Sebesség:
 	Spelling checks stay on this device.	A helyesírás-ellenőrzés ezen az eszközön történik.
@@ -2852,6 +2861,7 @@ action wizard	Start	Indítás
 	The field properties dialog is no longer open.	A mezőtulajdonságok párbeszédablak már nincs megnyitva.
 	The field {name} no longer exists.	A(z) {name} mező már nem létezik.
 	The fields this signature locked ({names}) can be changed again.	Az aláírás által zárolt mezők ({names}) ismét módosíthatók lesznek.
+	the font can't draw it	a betűtípus nem tudja megjeleníteni
 	The font must include Latin letters and numbers for interface controls.	A betűtípusnak latin betűket és számjegyeket kell tartalmaznia a kezelőfelülethez.
 	The fonts PdfCraft writes with can't draw “{c}” ({code}), so it shows as ? in every PDF viewer. The text is saved.	A PdfCraft által íráshoz használt betűtípusok nem tudják megjeleníteni ezt: „{c}” ({code}), ezért minden PDF-megjelenítőben ? látszik a helyén. A szöveg mentve van.
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Az űrlap ide kéri a beküldést: {u}; a PdfCraft nem küld űrlapadatot. Mentsd a dokumentumot, hogy megmaradjanak a beírásaid.
@@ -2890,6 +2900,7 @@ action wizard	Start	Indítás
 	The page's words were cleared (undo in the panel)	Az oldal szavai törölve (visszavonás a panelen)
 	The pages already scanned were kept in the document.	A már beolvasott oldalak megmaradtak a dokumentumban.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Az oldalak kinyerése megtörtént, de nem lettek törölve, mert a dokumentum megváltozott, amíg mappát választottál.
+	the paragraph can't be rewritten	a bekezdés nem írható újra
 	the password is incorrect	a jelszó hibás
 	The password is incorrect.	A jelszó helytelen.
 	The password is only used to read the file; it isn't saved.	A jelszó csak a fájl olvasásához kell, és nem kerül mentésre.
@@ -3323,6 +3334,7 @@ document scrollbar width	Wide	Széles
 	{kind} · page {p}	{kind} · {p}. oldal
 	{kind} — click to show it on the page	{kind} — kattints, hogy megjelenjen az oldalon
 	{k} of {n}	{k} / {n}
+	{k} skipped: {why}	{k} kihagyva: {why}
 	{label} (1 issue)	{label} (1 probléma)
 	{label} ({n} issues)	{label} ({n} probléma)
 	{label} failed: {e}	{label} nem sikerült: {e}
@@ -3390,6 +3402,7 @@ document scrollbar width	Wide	Széles
 	{who} in this document tried to open an address PdfCraft won't open: {e}. Only web (http, https) and email (mailto) links open from documents.	{who} ebben a dokumentumban olyan címet próbált megnyitni, amelyet a PdfCraft nem nyit meg: {e}. Dokumentumokból csak webes (http, https) és e-mail (mailto) hivatkozások nyílnak meg.
 	{who} in this document wants to open this address in your browser:	{who} ebben a dokumentumban meg akarja nyitni ezt a címet a böngésződben:
 	{who} in this document wants to open your email app with this address:	{who} ebben a dokumentumban meg akarja nyitni az e-mail alkalmazásodat ezzel a címmel:
+	{why} ({n})	{why} ({n})
 	{words} on {pages}	{words}, itt: {pages}
 	{w} × {h} in, {pxw} × {pxh} pixels, {size}	{w} × {h} hüvelyk, {pxw} × {pxh} képpont, {size}
 	ΔLOC	ΔLOC
