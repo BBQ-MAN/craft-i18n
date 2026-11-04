@@ -352,6 +352,7 @@
 	Auto-rotate	自動回転
 	Auto-rotate pages	ページを自動回転
 	Auto-size text to fit redaction region	墨消し領域に合わせて文字サイズを自動調整
+	Automatic (historical model)	自動（歴史的文字モデル）
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	安全な実行の分離ができるまで、AcroForm の自動スクリプトは無効です。保存済みのフィールド値はそのままです。ボタンとコンソールのスクリプトは、明示的に実行できます。
 	Automatically rotate sideways and upside-down pages	横向きや上下逆のページを自動回転
 	Automatically tag PDF	PDF に自動でタグを付ける
@@ -989,6 +990,7 @@ key	Delete	Delete
 	Double-click also finishes a perimeter or area.	ダブルクリックでも周長や面積を確定できます。
 	Download 121 MB to find text fields, checkboxes and signature areas automatically.	121 MB をダウンロードすると、テキストフィールド、チェックボックス、署名欄を自動で検出できます。
 	Download and detect	ダウンロードして検出
+	Download historical OCR add-on (13 MB)	歴史的文字用OCRアドオンをダウンロード（13 MB）
 	Download package…	パッケージをダウンロード…
 	Download size: {size}	ダウンロードサイズ: {size}
 	Download with Ollama	Ollama でダウンロード
@@ -1350,6 +1352,7 @@ scroll speed	Fast	速い
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	数式などの非テキスト要素には代替テキストが必要です。代替テキストを追加してください。
 	Found {n} untagged content problems.	タグなしのコンテンツの問題が {n} 件見つかりました。
 	Fraction	分数
+	Fraktur and Kurrent use an optional 13 MB add-on. After download, recognition works offline.	フラクトゥールとクレントには、任意でダウンロードできる13 MBのアドオンを使用します。ダウンロード後はオフラインで認識できます。
 	From a PDF page or an image	PDF ページまたは画像から作成
 	From colour	色を指定
 	From Finder: select files, then right-click > Quick Actions > Combine files in PdfCraft. Not listed? Turn it on once under Quick Actions > Customize.	Finder から：ファイルを選択し、右クリック → クイックアクション → “Combine files in PdfCraft”。表示されない場合は、クイックアクション → カスタマイズで一度オンにしてください。
@@ -1387,6 +1390,7 @@ scroll speed	Fast	速い
 	H / Space (hold)	H / Space（押したまま）
 	Hand (H)	手のひら（H）
 	Hand tool	手のひらツール
+	Handwriting requires upright horizontal lines in one text column. Columns, tables and marginal notes are not supported.	手書き文字は、正しい向きの横書き行が1列に並んでいる必要があります。複数列、表、余白の注記には対応していません。
 	Has JavaScript actions (run in M6)	JavaScript アクションあり（M6 で実行）
 	Header and footer	ヘッダーとフッター
 	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	ヘッダーセル（TH）は列や行の内容を読み上げるために使われます。ヘッダーセルを指定してください。
@@ -1425,6 +1429,11 @@ scroll speed	Fast	速い
 	Highlight fields	フィールドをハイライト
 	Highlight Style:	ハイライトの形式:
 	Highlight text	テキストをハイライト
+	Historical handwriting (Kurrent)	歴史的な手書き文字（クレント）
+	Historical OCR add-on installed	歴史的文字用OCRアドオンをインストール済み
+	Historical OCR add-ons require the desktop app.	歴史的文字用OCRアドオンにはデスクトップアプリが必要です。
+	Historical print (Fraktur)	歴史的な印刷文字（フラクトゥール）
+	Historical spelling is preserved. Handwriting, abbreviations and complex layouts need checking.	歴史的な綴りは保持されます。手書き文字、略語、複雑なレイアウトは確認が必要です。
 key	Home	Home
 	Home / End	Home / End
 	Horizontal coordinates	横方向の座標
@@ -1732,6 +1741,7 @@ key	Home	Home
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	PDF に保存された計算順序にありません。ほかの PDF ビューアーでは計算されない可能性があります。
 	Mixed	混在
 	Model:	モデル：
+	Modern print	現代の印刷文字
 	Modified	変更日時
 	Modify page	ページの変更
 	Module (.dylib, .so, .dll)	モジュール（.dylib、.so、.dll）
@@ -2241,6 +2251,7 @@ animation effects	On	オン
 	Prepare for distribution	配布の準備
 	Prepare for distribution…	配布の準備…
 	Preparing form detection…	フォーム検出を準備中…
+	Preparing OCR add-on…	OCRアドオンを準備中…
 	Preparing read-aloud text…	読み上げるテキストを準備中…
 	Preparing sheet {done} of {total} for printing…	印刷用にシート {done}/{total} を準備しています…
 	Preparing {n} sheets for printing…	{n} 枚のシートを印刷用に準備しています…
@@ -2417,6 +2428,7 @@ animation effects	On	オン
 	Remote signing isn't available in this build	このビルドではリモート署名を利用できません
 	Remove "{name}" from this list? The certificate stays with the signing service.	「{name}」をこの一覧から削除しますか？証明書は署名サービスに残ります。
 	Remove "{name}" from this list? The file itself is not deleted.	「{name}」をこの一覧から削除しますか？ファイル自体は削除されません。
+	Remove add-on	アドオンを削除
 	Remove all links	すべてのリンクを削除
 	Remove and Save As…	削除して別名で保存…
 	Remove background	背景を削除
@@ -3099,6 +3111,7 @@ document scrollbar width	Standard	標準
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	テキスト認識がインストールされていません。モデルファイルがありません。PdfCraft を再インストールするか、PDFCRAFT_MODELS にモデルファイルのあるフォルダーを設定してください。
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	テキスト認識がインストールされていません。必要なモデルがありません（`cargo xtask models` を実行するか、PDFCRAFT_MODELS を設定してください）。
 	Text rendering	テキストのレンダリング
+	Text style	文字の種類
 	Text to find	検索するテキスト
 	Text to insert	挿入するテキスト
 	Text to place	配置するテキスト
@@ -3178,6 +3191,7 @@ document scrollbar width	Standard	標準
 	The form asks viewers to make appearances (NeedAppearances)	フォームがビューアーに外観の生成を要求しています（NeedAppearances）
 	The form's purpose and its fields (names, types, tab order)	フォームの目的とフィールド（名前、種類、タブ順）
 	The fronts already scanned are kept for the reverse-side pass.	スキャン済みのおもて面は、裏面のスキャン用に保持されています。
+	The historical model detects its supported scripts automatically; Japanese is not included.	歴史的文字モデルは対応する書体を自動検出します。日本語は含まれていません。
 	The image couldn't be used as an icon: {e}	画像をアイコンとして使用できませんでした: {e}
 	The image has been copied ({w} × {h} pixels)	画像をコピーしました（{w} × {h} ピクセル）
 	The image has been copied as a {ext} file	画像を {ext} ファイルとしてコピーしました
@@ -3609,6 +3623,7 @@ signature pad	Type	入力
 	Voice and Speech	音声とスピーチ
 	Voice:	音声:
 	Volume:	音量:
+	Wait for text recognition to finish before changing add-ons	アドオンを変更する前に文字認識が完了するまでお待ちください
 	Wait for the scanner to finish, or close any other program using it, then choose Continue.	スキャナーの処理が終わるまで待つか、スキャナーを使用している他のプログラムを閉じて、「スキャンを続行」を選んでください。
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	スキャナーの処理が終わるまで待つか、スキャナーを使用している他のプログラムを閉じて、「再試行」を選んでください。
 	Waiting for the system print dialog…	システムの印刷ダイアログを待っています…

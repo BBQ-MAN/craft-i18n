@@ -285,6 +285,7 @@ calendar date	August	august
 	Auto-deskew	Auto-deskew
 	Auto-rotate pages	Roter sider automatisk
 	Auto-size text to fit redaction region	Tilpass tekststørrelsen til sladdeområdet
+	Automatic (historical model)	Automatisk (historisk modell)
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Automatiske AcroForm-skript er slått av til sikker kjøreisolering er tilgjengelig; lagrede feltverdier er beholdt. Skript for knapper og konsollen er fortsatt tilgjengelige.
 	Automatically tag PDF	Tagg PDF automatisk
 	average	gjennomsnitt
@@ -786,6 +787,7 @@ key	Delete	Delete
 	Don't save	Ikke lagre
 	Don't show again	Ikke vis igjen
 	Done adding text	Ferdig med å legge til tekst
+	Download historical OCR add-on (13 MB)	Last ned tillegg for historisk OCR (13 MB)
 	Downloaded {name}	Lastet ned {name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	Lastet ned {n} PDF|Lastet ned {n} PDF-er
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Nedlasting av vedlegg på nettet kommer med M3.10 ({n} byte klare)
@@ -1077,6 +1079,7 @@ calendar date	February	februar
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Formler og lignende elementer som ikke er tekst, trenger alternativ tekst. Legg til alternativ tekst på dem.
 	Found {n} untagged content problems.	Fant {n} problemer med innhold uten tagger.
 calendar weekday	Fr	fr
+	Fraktur and Kurrent use an optional 13 MB add-on. After download, recognition works offline.	Fraktur og kurrent bruker et valgfritt tillegg på 13 MB. Etter nedlasting fungerer gjenkjenningen uten nett.
 	From a PDF page or an image	Fra en PDF-side eller et bilde
 	From colour	Fra farge
 	From scanner…	From scanner…
@@ -1107,6 +1110,7 @@ calendar weekday	Fr	fr
 	H / Space (hold)	H / Mellomrom (hold)
 	Hand (H)	Hånd (H)
 	Hand tool	Håndverktøy
+	Handwriting requires upright horizontal lines in one text column. Columns, tables and marginal notes are not supported.	Håndskrift krever rette, vannrette linjer i én tekstspalte. Spalter, tabeller og margnotater støttes ikke.
 	Has JavaScript actions (run in M6)	Har JavaScript-handlinger (kjøres i M6)
 	Header and footer	Topptekst og bunntekst
 	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	Overskriftsceller (TH) forteller lytteren hva hver kolonne eller rad inneholder. Merk overskriftscellene.
@@ -1134,6 +1138,11 @@ calendar weekday	Fr	fr
 	Highlight fields	Uthev felt
 	Highlight Style:	Uthevingsstil:
 	Highlight text	Uthev tekst
+	Historical handwriting (Kurrent)	Historisk håndskrift (kurrent)
+	Historical OCR add-on installed	Tillegg for historisk OCR er installert
+	Historical OCR add-ons require the desktop app.	Tillegg for historisk OCR krever skrivebordsappen.
+	Historical print (Fraktur)	Historisk trykk (fraktur)
+	Historical spelling is preserved. Handwriting, abbreviations and complex layouts need checking.	Historisk rettskriving beholdes. Håndskrift, forkortelser og komplekse oppsett må kontrolleres.
 key	Home	Home
 	Home / End	Home / End
 	Horizontal	Horisontal
@@ -1395,6 +1404,7 @@ calendar date	May	mai
 	Missing field	Missing field
 	Mixed	Blandet
 calendar weekday	Mo	ma
+	Modern print	Moderne trykk
 	Modify page	Endre side
 	Monochrome Images	Svart-hvitt-bilder
 	More options	Flere alternativer
@@ -1793,6 +1803,7 @@ animation effects	On	På
 	Prepare for Distribution	Klargjør for distribusjon
 	Prepare for distribution	Forbered for distribusjon
 	Prepare for distribution…	Forbered for distribusjon…
+	Preparing OCR add-on…	Klargjør OCR-tillegg…
 	Preparing sheet {done} of {total} for printing…	Klargjør ark {done} av {total} for utskrift…
 	Preparing {n} sheets for printing…	Klargjør {n} ark for utskrift…
 	Presentation (.pptx)	Presentasjon (.pptx)
@@ -1902,6 +1913,7 @@ certificate	Public key	Offentlig nøkkel
 	Remote signing isn't available in this build	Fjernsignering er ikke tilgjengelig i denne versjonen
 	Remove "{name}" from this list? The certificate stays with the signing service.	Fjerne «{name}» fra denne listen? Sertifikatet blir værende hos signeringstjenesten.
 	Remove "{name}" from this list? The file itself is not deleted.	Fjerne «{name}» fra denne listen? Selve filen slettes ikke.
+	Remove add-on	Fjern tillegg
 	Remove all links	Fjern alle lenker
 	Remove and Save As…	Fjern og lagre som…
 	Remove background	Fjern bakgrunn
@@ -2432,6 +2444,7 @@ certificate	Subject	Emne
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Tekstgjenkjenning er ikke installert: modellfilene mangler. Installer PdfCraft på nytt, eller sett PDFCRAFT_MODELS til mappen som inneholder dem.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Tekstgjenkjenning er ikke installert: modellene mangler (kjør `cargo xtask models`, eller sett PDFCRAFT_MODELS).
 	Text rendering	Tekstgjengivelse
+	Text style	Tekststil
 	Text to find	Tekst å finne
 	Text to insert	Tekst å sette inn
 	Text to place	Tekst som skal plasseres
@@ -2506,6 +2519,7 @@ calendar weekday	Th	to
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Skjemaet ber om å bli sendt til {u}; PdfCraft sender ikke skjemadata. Lagre dokumentet for å beholde det du har fylt inn.
 	The form asks viewers to make appearances (NeedAppearances)	Skjemaet ber visningsprogrammet lage utseender (NeedAppearances)
 	The fronts already scanned are kept for the reverse-side pass.	The fronts already scanned are kept for the reverse-side pass.
+	The historical model detects its supported scripts automatically; Japanese is not included.	Den historiske modellen gjenkjenner skriftene den støtter automatisk; japansk er ikke inkludert.
 	The image couldn't be used as an icon: {e}	Bildet kunne ikke brukes som ikon: {e}
 	The image has been copied ({w} × {h} pixels)	Bildet er kopiert ({w} × {h} piksler)
 	The image has been copied as a {ext} file	Bildet er kopiert som en {ext}-fil
@@ -2860,6 +2874,7 @@ certificate	Version	Versjon
 	Visual	Visuell
 	Visual initials (Fill & Sign, not digital)	Visuelle initialer (Fyll ut og signer, ikke digital)
 	Visual signature (Fill & Sign, not digital)	Visuell signatur (Fyll ut og signer, ikke digital)
+	Wait for text recognition to finish before changing add-ons	Vent til tekstgjenkjenningen er ferdig før du endrer tillegg
 	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Wait for the scanner to finish, or close any other program using it, then choose Continue.
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	Venter på systemets utskriftsdialog…

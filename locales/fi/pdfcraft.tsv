@@ -375,6 +375,7 @@ calendar date	August	elokuuta
 	Auto-deskew	Auto-deskew
 	Auto-rotate pages	Kierrä sivut automaattisesti
 	Auto-size text to fit redaction region	Sovita tekstin koko automaattisesti peittoalueeseen
+	Automatic (historical model)	Automaattinen (historiallinen malli)
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Automaattiset AcroForm-skriptit ovat poissa käytöstä, kunnes turvallinen suorituseristys on käytettävissä; tallennetut kenttäarvot säilytettiin. Painikkeiden ja konsolin skriptit ovat yhä käytettävissä.
 	Automatically rotate sideways and upside-down pages	Käännä sivuttain ja ylösalaisin olevat sivut automaattisesti
 	Automatically tag PDF	Tagaa PDF automaattisesti
@@ -973,6 +974,7 @@ key	Delete	Delete
 	Don't show again	Älä näytä uudelleen
 	Done adding text	Tekstin lisäys valmis
 	Double-click	Kaksoisnapsautus
+	Download historical OCR add-on (13 MB)	Lataa historiallisen OCR:n lisäosa (13 Mt)
 	Downloaded {name}	Ladattiin {name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	Ladattiin {n} PDF|Ladattiin {n} PDF:ää
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Liitteiden lataus verkkoversiossa tulee versiossa M3.10 ({n} tavua valmiina)
@@ -1359,6 +1361,7 @@ calendar date	February	helmikuuta
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Kaavat ja vastaavat muut kuin tekstielementit tarvitsevat vaihtoehtoisen tekstin. Lisää niihin vaihtoehtoinen teksti.
 	Found {n} untagged content problems.	Löytyi {n} tagittamattoman sisällön ongelmaa.
 calendar weekday	Fr	Pe
+	Fraktur and Kurrent use an optional 13 MB add-on. After download, recognition works offline.	Fraktuura ja Kurrent käyttävät valinnaista 13 Mt:n lisäosaa. Latauksen jälkeen tunnistus toimii ilman verkkoyhteyttä.
 	Freehand-Highlight	Vapaa korostus
 	From	Alkaen
 	From a PDF page or an image	PDF-sivusta tai kuvasta
@@ -1397,6 +1400,7 @@ calendar weekday	Fr	Pe
 	Hairlines	Hiusviivat
 	Hand (H)	Käsi (H)
 	Hand tool	Käsityökalu
+	Handwriting requires upright horizontal lines in one text column. Columns, tables and marginal notes are not supported.	Käsiala edellyttää pystyasentoisia vaakasuoria rivejä yhdessä tekstipalstassa. Palstoja, taulukoita ja marginaalimerkintöjä ei tueta.
 	Has JavaScript actions (run in M6)	Sisältää JavaScript-toimintoja (suoritetaan M6:ssa)
 	Header and footer	Ylä- ja alatunniste
 	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	Otsikkosolut (TH) kertovat kuuntelijalle, mitä kukin sarake tai rivi sisältää. Merkitse otsikkosolut.
@@ -1431,6 +1435,11 @@ calendar weekday	Fr	Pe
 	Highlight fields	Korosta kentät
 	Highlight Style:	Korostustyyli:
 	Highlight text	Korosta tekstiä
+	Historical handwriting (Kurrent)	Historiallinen käsiala (Kurrent)
+	Historical OCR add-on installed	Historiallisen OCR:n lisäosa asennettu
+	Historical OCR add-ons require the desktop app.	Historiallisen OCR:n lisäosat vaativat työpöytäsovelluksen.
+	Historical print (Fraktur)	Historiallinen painokirjoitus (fraktuura)
+	Historical spelling is preserved. Handwriting, abbreviations and complex layouts need checking.	Historiallinen oikeinkirjoitus säilytetään. Käsiala, lyhenteet ja monimutkaiset asettelut on tarkistettava.
 key	Home	Home
 	Home / End	Home / End
 	Horizontal reversed	Vaakasuora käänteinen
@@ -1741,6 +1750,7 @@ calendar date	May	toukokuuta
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.
 	Mixed	Vaihteleva
 calendar weekday	Mo	Ma
+	Modern print	Nykyaikainen painokirjoitus
 	Modify page	Muokkaa sivua
 	Monochrome Images	Mustavalkokuvat
 	More options	Lisää asetuksia
@@ -2241,6 +2251,7 @@ animation effects	On	Käytössä
 	Prepare for Distribution	Valmistele jakelua varten
 	Prepare for distribution	Valmistele jakelua varten
 	Prepare for distribution…	Valmistele jakelua varten…
+	Preparing OCR add-on…	Valmistellaan OCR-lisäosaa…
 	Preparing sheet {done} of {total} for printing…	Valmistellaan arkkia {done}/{total} tulostusta varten…
 	Preparing {n} sheets for printing…	Valmistellaan {n} arkkia tulostusta varten…
 	Presentation (.pptx)	Esitys (.pptx)
@@ -2380,6 +2391,7 @@ certificate	Public key	Julkinen avain
 	Remote signing isn't available in this build	Etäallekirjoitus ei ole käytettävissä tässä versiossa
 	Remove "{name}" from this list? The certificate stays with the signing service.	Poistetaanko "{name}" tästä luettelosta? Varmenne jää allekirjoituspalveluun.
 	Remove "{name}" from this list? The file itself is not deleted.	Poistetaanko "{name}" tästä luettelosta? Itse tiedostoa ei poisteta.
+	Remove add-on	Poista lisäosa
 	Remove all links	Poista kaikki linkit
 	Remove and Save As…	Poista ja tallenna nimellä…
 	Remove background	Poista tausta
@@ -3021,6 +3033,7 @@ certificate	Subject	Kohde
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Tekstintunnistusta ei ole asennettu: sen mallitiedostot puuttuvat. Asenna PdfCraft uudelleen tai aseta PDFCRAFT_MODELS osoittamaan kansioon, jossa ne ovat.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Tekstintunnistusta ei ole asennettu: sen mallit puuttuvat (suorita `cargo xtask models` tai aseta PDFCRAFT_MODELS).
 	Text rendering	Tekstin piirto
+	Text style	Tekstityyli
 	Text to find	Etsittävä teksti
 	Text to insert	Lisättävä teksti
 	Text to place	Sijoitettava teksti
@@ -3132,6 +3145,7 @@ calendar weekday	Th	To
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Lomake pyytää lähettämään tiedot osoitteeseen {u}; PdfCraft ei lähetä lomaketietoja. Tallenna asiakirja, jotta syötetyt tiedot säilyvät.
 	The form asks viewers to make appearances (NeedAppearances)	Lomake pyytää katseluohjelmia luomaan ulkoasut (NeedAppearances)
 	The fronts already scanned are kept for the reverse-side pass.	The fronts already scanned are kept for the reverse-side pass.
+	The historical model detects its supported scripts automatically; Japanese is not included.	Historiallinen malli tunnistaa tukemansa kirjoitusjärjestelmät automaattisesti; japani ei sisälly.
 	The ICC profile {} isn't a CMYK profile, which PDF/X-1a needs	ICC-profiili {} ei ole CMYK-profiili, jota PDF/X-1a tarvitsee
 	The ICC profile {} isn't a gray, RGB or CMYK profile	ICC-profiili {} ei ole harmaa-, RGB- eikä CMYK-profiili
 	The ICC profile {} isn't an output (printer) profile	ICC-profiili {} ei ole tulostus- (tulostin)profiili
@@ -3614,6 +3628,7 @@ certificate	Version	Versio
 	Visual	Visuaalinen
 	Visual initials (Fill & Sign, not digital)	Visuaaliset nimikirjaimet (Täytä ja allekirjoita, ei digitaaliset)
 	Visual signature (Fill & Sign, not digital)	Visuaalinen allekirjoitus (Täytä ja allekirjoita, ei digitaalinen)
+	Wait for text recognition to finish before changing add-ons	Odota, että tekstintunnistus päättyy, ennen kuin muutat lisäosia
 	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Wait for the scanner to finish, or close any other program using it, then choose Continue.
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	Odotetaan järjestelmän tulostusikkunaa…

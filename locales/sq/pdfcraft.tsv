@@ -330,6 +330,7 @@
 	Auto-deskew	Auto-deskew
 	Auto-rotate pages	Rrotullo faqet automatikisht
 	Auto-size text to fit redaction region	Përshtat madhësinë e tekstit automatikisht me zonën e redaktimit
+	Automatic (historical model)	Automatike (model historik)
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Skriptet automatike të AcroForm janë të çaktivizuara derisa të ketë izolim të sigurt të ekzekutimit; vlerat e ruajtura të fushave janë mbajtur. Skriptet e butonave dhe të konsolës mbeten të disponueshme.
 	Automatically rotate sideways and upside-down pages	Rrotullo automatikisht faqet anash dhe me kokë poshtë
 	Automatically tag PDF	Etiketo PDF automatikisht
@@ -912,6 +913,7 @@ key	Delete	Fshi
 	Dot	Pikë
 	Double-click	Klikim i dyfishtë
 	Download	Shkarko
+	Download historical OCR add-on (13 MB)	Shkarko shtojcën OCR historike (13 MB)
 	Downloaded {name}	U shkarkua {name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	U shkarkua {n} PDF|U shkarkuan {n} PDF
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Shkarkimi i bashkëngjitjeve në ueb vjen me M3.10 ({n} bajte gati)
@@ -1250,6 +1252,7 @@ scroll speed	Fast	Shpejt
 	Forms and signing	Formularë dhe nënshkrim
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Formulat dhe elementët e ngjashëm jo tekst kanë nevojë për tekst alternativ. Shtoju tekst alternativ.
 	Found {n} untagged content problems.	Found {n} untagged content problems.
+	Fraktur and Kurrent use an optional 13 MB add-on. After download, recognition works offline.	Fraktur dhe Kurrent përdorin një shtojcë opsionale 13 MB. Pas shkarkimit, njohja funksionon pa internet.
 	From	Nga
 	From a PDF page or an image	Nga një faqe PDF ose një imazh
 	From colour	Nga ngjyra
@@ -1291,6 +1294,7 @@ scroll speed	Fast	Shpejt
 	Hand (H)	Dora (H)
 	Hand Tool	Mjeti Dorë
 	Hand tool	Mjeti i dorës
+	Handwriting requires upright horizontal lines in one text column. Columns, tables and marginal notes are not supported.	Shkrimi me dorë kërkon rreshta horizontalë të drejtë në një kolonë teksti. Kolonat, tabelat dhe shënimet anësore nuk mbështeten.
 	Has JavaScript actions (run in M6)	Ka veprime JavaScript (ekzekutohen në M6)
 	Header and footer	Koka dhe këmba e faqes
 	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	Qelizat e kokës (TH) u tregojnë dëgjuesve çfarë përmban çdo kolonë ose rresht. Shëno qelizat e kokës.
@@ -1329,6 +1333,11 @@ scroll speed	Fast	Shpejt
 	Highlight fields	Thekso fushat
 	Highlight Style:	Stili i theksimit:
 	Highlight text	Thekso tekstin
+	Historical handwriting (Kurrent)	Shkrim dore historik (Kurrent)
+	Historical OCR add-on installed	Shtojca OCR historike u instalua
+	Historical OCR add-ons require the desktop app.	Shtojcat OCR historike kërkojnë aplikacionin për desktop.
+	Historical print (Fraktur)	Shtyp historik (Fraktur)
+	Historical spelling is preserved. Handwriting, abbreviations and complex layouts need checking.	Drejtshkrimi historik ruhet. Shkrimi me dorë, shkurtimet dhe faqosjet e ndërlikuara duhen kontrolluar.
 	Home	Kreu
 key	Home	Home
 	Home / End	Home / End
@@ -1634,6 +1643,7 @@ key	Home	Home
 	Mobile	Mobile
 	Model	Modeli
 	Models	Modelet
+	Modern print	Shtyp modern
 	Modified	Ndryshuar
 	Modify page	Modifiko faqen
 	Monochrome Images	Imazhe bardhezi
@@ -2099,6 +2109,7 @@ animation effects	On	Aktiv
 	Prepare for Distribution	Përgatit për shpërndarje
 	Prepare for distribution	Përgatit për shpërndarje
 	Prepare for distribution…	Përgatit për shpërndarje…
+	Preparing OCR add-on…	Po përgatitet shtojca OCR…
 	Preparing sheet {done} of {total} for printing…	Po përgatitet fleta {done} nga {total} për printim…
 	Preparing {n} sheets for printing…	Po përgatiten {n} fletë për printim…
 	Presentation (.pptx)	Prezantim (.pptx)
@@ -2249,6 +2260,7 @@ animation effects	On	Aktiv
 	Remove	Hiq
 	Remove "{name}" from this list? The certificate stays with the signing service.	Të hiqet "{name}" nga kjo listë? Certifikata mbetet te shërbimi i nënshkrimit.
 	Remove "{name}" from this list? The file itself is not deleted.	Të hiqet «{name}» nga kjo listë? Vetë skedari nuk fshihet.
+	Remove add-on	Hiq shtojcën
 	Remove all links	Hiq të gjitha lidhjet
 	Remove and Save As…	Hiq dhe ruaj si…
 	Remove background	Hiq sfondin
@@ -2862,6 +2874,7 @@ certificate	Subject	Subjekti
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Njohja e tekstit nuk është e instaluar: mungojnë skedarët e modelit. Instaloni përsëri PdfCraft, ose vendosni PDFCRAFT_MODELS te dosja që i përmban.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Njohja e tekstit nuk është e instaluar: mungojnë modelet e saj (ekzekutoni `cargo xtask models`, ose caktoni PDFCRAFT_MODELS).
 	Text rendering	Paraqitja e tekstit
+	Text style	Stili i tekstit
 	Text to find	Teksti për t'u gjetur
 	Text to insert	Teksti për t'u futur
 	Text to place	Teksti për t'u vendosur
@@ -2927,6 +2940,7 @@ certificate	Subject	Subjekti
 	The form asks to be submitted to {u}; PdfCraft doesn't send form data. Save the document to keep your entries.	Formulari kërkon të dërgohet te {u}; PdfCraft nuk dërgon të dhëna formulari. Ruajeni dokumentin për të mbajtur të dhënat tuaja.
 	The form asks viewers to make appearances (NeedAppearances)	Formulari u kërkon shikuesve të krijojnë pamjet (NeedAppearances)
 	The fronts already scanned are kept for the reverse-side pass.	The fronts already scanned are kept for the reverse-side pass.
+	The historical model detects its supported scripts automatically; Japanese is not included.	Modeli historik i zbulon automatikisht shkrimet që mbështet; japonishtja nuk përfshihet.
 	The image couldn't be used as an icon: {e}	Imazhi nuk mund të përdorej si ikonë: {e}
 	The image has been copied ({w} × {h} pixels)	Imazhi u kopjua ({w} × {h} piksel)
 	The image has been copied as a {ext} file	Imazhi u kopjua si skedar {ext}
@@ -3295,6 +3309,7 @@ signature pad	Type	Shkruaj
 	Visual	Pamor
 	Visual initials (Fill & Sign, not digital)	Iniciale vizuale (Plotëso dhe nënshkruaj, jo dixhitale)
 	Visual signature (Fill & Sign, not digital)	Nënshkrim vizual (Plotëso dhe nënshkruaj, jo dixhital)
+	Wait for text recognition to finish before changing add-ons	Prisni të përfundojë njohja e tekstit përpara se të ndryshoni shtojcat
 	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Wait for the scanner to finish, or close any other program using it, then choose Continue.
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	Po pritet dialogu i printimit të sistemit…

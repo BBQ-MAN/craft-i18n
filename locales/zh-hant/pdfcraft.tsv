@@ -345,6 +345,7 @@
 	Auto-rotate	自動旋轉
 	Auto-rotate pages	自動旋轉頁面
 	Auto-size text to fit redaction region	自動調整文字大小以適應遮蔽內容區域
+	Automatic (historical model)	自動（歷史文字模型）
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	在具備安全的執行隔離之前，AcroForm 的自動指令碼已停用；已儲存的欄位值保持不變。按鈕指令碼與主控台指令碼仍可手動執行。
 	Automatically rotate sideways and upside-down pages	自動旋轉側向和倒置的頁面
 	Automatically tag PDF	自動標記 PDF
@@ -968,6 +969,7 @@ key	Delete	Delete
 	Double-click also finishes a perimeter or area.	按兩下也可完成周長或面積量測。
 	Download 121 MB to find text fields, checkboxes and signature areas automatically.	下載 121 MB 即可自動尋找文字欄位、核取方塊及簽名區域。
 	Download and detect	下載並偵測
+	Download historical OCR add-on (13 MB)	下載歷史文字 OCR 附加元件（13 MB）
 	Download package…	下載套件…
 	Download size: {size}	下載大小：{size}
 	Download with Ollama	用 Ollama 下載
@@ -1330,6 +1332,7 @@ scroll speed	Fast	快
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	公式及類似非文字元素需要替代文字。請為它們新增替代文字。
 	Found {n} untagged content problems.	發現 {n} 個未標記內容問題。
 	Fraction	分數
+	Fraktur and Kurrent use an optional 13 MB add-on. After download, recognition works offline.	Fraktur 和 Kurrent 使用可選的 13 MB 附加元件。下載後即可離線辨識。
 	From a PDF page or an image	來自 PDF 頁面或圖片
 	From colour	使用顏色
 	From Finder: select files, then right-click > Quick Actions > Combine files in PdfCraft. Not listed? Turn it on once under Quick Actions > Customize.	在 Finder 中：選取檔案，然後按右鍵 > 快速動作 > “Combine files in PdfCraft”。沒有列出？請在「快速動作 > 自訂」中開啟一次。
@@ -1366,6 +1369,7 @@ scroll speed	Fast	快
 	Hand	抓手
 	Hand (H)	抓手 (H)
 	Hand tool	手形工具
+	Handwriting requires upright horizontal lines in one text column. Columns, tables and marginal notes are not supported.	手寫內容必須為方向正確的水平行，且只有一欄文字。不支援多欄、表格和頁邊註解。
 	Has JavaScript actions (run in M6)	含 JavaScript 動作（M6 執行）
 	Header and footer	頁首與頁尾
 	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	表頭儲存格（TH）讓聽者知道每欄或每列的內容。請標記表頭儲存格。
@@ -1403,6 +1407,11 @@ scroll speed	Fast	快
 	Highlight fields	醒目提示欄位
 	Highlight Style:	醒目提示樣式：
 	Highlight text	醒目提示文字
+	Historical handwriting (Kurrent)	歷史手寫體（Kurrent）
+	Historical OCR add-on installed	歷史文字 OCR 附加元件已安裝
+	Historical OCR add-ons require the desktop app.	歷史文字 OCR 附加元件需要桌面應用程式。
+	Historical print (Fraktur)	歷史印刷體（Fraktur）
+	Historical spelling is preserved. Handwriting, abbreviations and complex layouts need checking.	保留歷史拼寫。手寫內容、縮寫和複雜版面需要檢查。
 key	Home	Home
 	Horizontal coordinates	橫向座標
 	Horizontal reversed	水平反轉
@@ -1702,6 +1711,7 @@ key	Home	Home
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	PDF 中儲存的計算順序缺少此欄位：其他 PDF 檢視器可能不會計算它。
 	Mixed	混合
 	Model:	模型：
+	Modern print	現代印刷體
 	Modified	修改時間
 	Modify page	修改頁面
 	Module (.dylib, .so, .dll)	模組 (.dylib, .so, .dll)
@@ -2199,6 +2209,7 @@ animation effects	On	開
 	Prepare for distribution	準備發佈
 	Prepare for distribution…	準備發佈…
 	Preparing form detection…	正在準備表單偵測…
+	Preparing OCR add-on…	正在準備 OCR 附加元件…
 	Preparing read-aloud text…	正在準備朗讀文字…
 	Preparing sheet {done} of {total} for printing…	正在準備列印第 {done} 張，共 {total} 張…
 	Preparing {n} sheets for printing…	正在準備 {n} 張紙以供列印…
@@ -2370,6 +2381,7 @@ animation effects	On	開
 	Remember this paper for {printer}	為 {printer} 記住此紙張
 	Remind Me Later	稍後提醒我
 	Remove "{name}" from this list? The file itself is not deleted.	從此清單中移除「{name}」？檔案本身不會被刪除。
+	Remove add-on	移除附加元件
 	Remove all links	移除所有連結
 	Remove and Save As…	移除並另存新檔…
 	Remove background	移除背景
@@ -3029,6 +3041,7 @@ document scrollbar width	Standard	標準
 	Text recognition is already running	文字識別已在執行
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	未安裝文字辨識：缺少模型檔案。請重新安裝 PdfCraft，或將 PDFCRAFT_MODELS 設定為包含這些檔案的資料夾。
 	Text rendering	文字轉譯
+	Text style	文字樣式
 	Text to find	要尋找的文字
 	Text to insert	要插入的文字
 	Text to place	要放置的文字
@@ -3103,6 +3116,7 @@ document scrollbar width	Standard	標準
 	The form asks viewers to make appearances (NeedAppearances)	此表單要求檢視器產生外觀（NeedAppearances）
 	The form's purpose and its fields (names, types, tab order)	表單的用途及其欄位（名稱、類型、Tab 順序）
 	The fronts already scanned are kept for the reverse-side pass.	The fronts already scanned are kept for the reverse-side pass.
+	The historical model detects its supported scripts automatically; Japanese is not included.	歷史文字模型會自動偵測其支援的字體；不包含日語。
 	The image couldn't be used as an icon: {e}	無法將此影像用作圖示：{e}
 	The image has been copied ({w} × {h} pixels)	圖片已複製（{w} × {h} 畫素）
 	The image has been copied as a {ext} file	圖片已複製為 {ext} 檔案
@@ -3514,6 +3528,7 @@ document scrollbar width	Standard	標準
 	Voice and Speech	語音與朗讀
 	Voice:	語音：
 	Volume:	音量：
+	Wait for text recognition to finish before changing add-ons	請等待文字辨識完成後再變更附加元件
 	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Wait for the scanner to finish, or close any other program using it, then choose Continue.
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Wait for the scanner to finish, or close any other program using it, then choose Try again.
 	Waiting for the system print dialog…	正在等待系統列印對話方塊…

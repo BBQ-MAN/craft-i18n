@@ -353,6 +353,7 @@
 	Auto-rotate	Otomatik döndür
 	Auto-rotate pages	Sayfaları otomatik döndür
 	Auto-size text to fit redaction region	Metni karartma bölgesine sığacak şekilde otomatik boyutlandır
+	Automatic (historical model)	Otomatik (tarihî model)
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Güvenli yürütme yalıtımı kullanılabilir olana kadar otomatik AcroForm komut dosyaları devre dışıdır; kaydedilmiş alan değerleri korunmuştur. Düğme ve konsol komut dosyaları kullanılmaya devam eder.
 	Automatically	Otomatik
 	Automatically rotate sideways and upside-down pages	Yan veya baş aşağı sayfaları otomatik döndür
@@ -979,6 +980,7 @@ key	Delete	Delete
 	Done adding text	Metin ekleme bitti
 	Download 121 MB to find text fields, checkboxes and signature areas automatically.	Metin alanlarını, onay kutularını ve imza alanlarını otomatik bulmak için 121 MB indirin.
 	Download and detect	İndir ve algıla
+	Download historical OCR add-on (13 MB)	Tarihî OCR eklentisini indir (13 MB)
 	Download package…	Paketi indir…
 	Download size: {size}	İndirme boyutu: {size}
 	Download with Ollama	Ollama ile indir
@@ -1344,6 +1346,7 @@ scroll speed	Fast	Hızlı
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	Formüller ve benzeri metin dışı öğeler alternatif metne ihtiyaç duyar. Bunlara alternatif metin ekleyin.
 	Found {n} untagged content problems.	{n} etiketlenmemiş içerik sorunu bulundu.
 calendar weekday	Fr	Cu
+	Fraktur and Kurrent use an optional 13 MB add-on. After download, recognition works offline.	Fraktur ve Kurrent isteğe bağlı 13 MB'lık bir eklenti kullanır. İndirdikten sonra tanıma çevrimdışı çalışır.
 	Freehand-Highlight	Serbest Vurgulama
 	From	Başlangıç
 	From a PDF page or an image	Bir PDF sayfasından veya resimden
@@ -1381,6 +1384,7 @@ calendar weekday	Fr	Cu
 	H / Space (hold)	H / Boşluk (basılı tutun)
 	Hand (H)	El (H)
 	Hand tool	El aracı
+	Handwriting requires upright horizontal lines in one text column. Columns, tables and marginal notes are not supported.	El yazısı, tek bir metin sütununda dik ve yatay satırlar gerektirir. Sütunlar, tablolar ve kenar notları desteklenmez.
 	Has JavaScript actions (run in M6)	JavaScript eylemleri var (M6 içinde çalışır)
 	Header and footer	Üstbilgi ve altbilgi
 	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	Üstbilgi hücreleri (TH) dinleyicilere her sütunun veya satırın ne içerdiğini bildirir. Üstbilgi hücrelerini işaretleyin.
@@ -1418,6 +1422,11 @@ calendar weekday	Fr	Cu
 	Highlight fields	Alanları vurgula
 	Highlight Style:	Vurgu Stili:
 	Highlight text	Metni vurgula
+	Historical handwriting (Kurrent)	Tarihî el yazısı (Kurrent)
+	Historical OCR add-on installed	Tarihî OCR eklentisi yüklü
+	Historical OCR add-ons require the desktop app.	Tarihî OCR eklentileri masaüstü uygulamasını gerektirir.
+	Historical print (Fraktur)	Tarihî baskı (Fraktur)
+	Historical spelling is preserved. Handwriting, abbreviations and complex layouts need checking.	Tarihî yazım korunur. El yazısı, kısaltmalar ve karmaşık düzenler kontrol edilmelidir.
 	Home	Ana Sayfa
 key	Home	Home
 	Home / End	Home / End
@@ -1737,6 +1746,7 @@ key	Home	Home
 	Mixed	Karışık
 calendar weekday	Mo	Pt
 	Model:	Yapay zekâ modeli:
+	Modern print	Modern baskı
 	Modify page	Sayfayı değiştir
 	Module (.dylib, .so, .dll)	Modül (.dylib, .so, .dll)
 	Monochrome Images	Tek Renkli Resimler
@@ -2265,6 +2275,7 @@ animation effects	On	Açık
 	Prepare for distribution	Dağıtım için hazırla
 	Prepare for distribution…	Dağıtım için hazırla…
 	Preparing form detection…	Form algılama hazırlanıyor…
+	Preparing OCR add-on…	OCR eklentisi hazırlanıyor…
 	Preparing read-aloud text…	Okunacak metin hazırlanıyor…
 	Preparing sheet {done} of {total} for printing…	Yazdırma için sayfa {done}/{total} hazırlanıyor…
 	Preparing {n} sheets for printing…	Yazdırma için {n} sayfa hazırlanıyor…
@@ -2435,6 +2446,7 @@ animation effects	On	Açık
 	Remote signing isn't available in this build	Uzaktan imzalama bu sürümde kullanılamıyor
 	Remove "{name}" from this list? The certificate stays with the signing service.	"{name}" bu listeden kaldırılsın mı? Sertifika imza hizmetinde kalır.
 	Remove "{name}" from this list? The file itself is not deleted.	"{name}" bu listeden kaldırılsın mı? Dosyanın kendisi silinmez.
+	Remove add-on	Eklentiyi kaldır
 	Remove all links	Tüm bağlantıları kaldır
 	Remove and Save As…	Kaldır ve farklı kaydet…
 	Remove background	Arka planı kaldır
@@ -3120,6 +3132,7 @@ certificate	Subject	Konu
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	Metin tanıma yüklü değil: model dosyaları eksik. PdfCraft'ı yeniden yükleyin veya PDFCRAFT_MODELS ortam değişkenini bunları içeren klasöre ayarlayın.
 	Text recognition isn't installed: its models are missing (run `cargo xtask models`, or set PDFCRAFT_MODELS).	Metin tanıma kurulu değil: modelleri eksik (`cargo xtask models` çalıştırın ya da PDFCRAFT_MODELS ayarlayın).
 	Text rendering	Metin işleme
+	Text style	Metin stili
 	Text to find	Aranacak metin
 	Text to insert	Eklenecek metin
 	Text to place	Yerleştirilecek metin
@@ -3221,6 +3234,7 @@ calendar weekday	Th	Pe
 	The form asks viewers to make appearances (NeedAppearances)	Form, görüntüleyicilerden görünüm oluşturmasını istiyor (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	Formun amacı ve alanları (adlar, türler, sekme sırası)
 	The fronts already scanned are kept for the reverse-side pass.	Daha önce taranan ön yüzler, arka yüz geçişi için saklandı.
+	The historical model detects its supported scripts automatically; Japanese is not included.	Tarihî model desteklediği yazıları otomatik olarak algılar; Japonca dahil değildir.
 	The image couldn't be used as an icon: {e}	Görüntü simge olarak kullanılamadı: {e}
 	The image has been copied ({w} × {h} pixels)	Resim kopyalandı ({w} × {h} piksel)
 	The image has been copied as a {ext} file	Resim {ext} dosyası olarak kopyalandı
@@ -3697,6 +3711,7 @@ signature pad	Type	Yaz
 	Voice and Speech	Ses ve Konuşma
 	Voice:	Ses:
 	Volume:	Ses Düzeyi:
+	Wait for text recognition to finish before changing add-ons	Eklentileri değiştirmeden önce metin tanımanın bitmesini bekleyin
 	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Tarayıcının işi bitirmesini bekleyin veya onu kullanan diğer programları kapatın, ardından “Taramaya devam et” seçeneğini seçin.
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Tarayıcının işi bitirmesini bekleyin veya onu kullanan diğer programları kapatın, ardından “Yeniden dene” seçeneğini seçin.
 	Waiting for the system print dialog…	Sistemin yazdırma penceresi bekleniyor…

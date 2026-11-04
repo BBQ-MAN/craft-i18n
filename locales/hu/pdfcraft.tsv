@@ -340,6 +340,7 @@
 	Auto-rotate	Automatikus forgatás
 	Auto-rotate pages	Oldalak automatikus forgatása
 	Auto-size text to fit redaction region	A szöveg automatikus méretezése a kitakarási területhez
+	Automatic (historical model)	Automatikus (történelmi modell)
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Az automatikus AcroForm-szkriptek ki vannak kapcsolva, amíg nincs biztonságos végrehajtás-elkülönítés; a mentett mezőértékek megmaradtak. A gombok és a konzol szkriptjei továbbra is elérhetők.
 	Automatically rotate sideways and upside-down pages	Oldalra vagy fejjel lefelé álló oldalak automatikus elforgatása
 	Automatically tag PDF	PDF automatikus címkézése
@@ -943,6 +944,7 @@ key	Delete	Delete
 	Done adding text	Szöveg hozzáadásának befejezése
 	Download 121 MB to find text fields, checkboxes and signature areas automatically.	Töltsön le 121 MB-ot a szövegmezők, jelölőnégyzetek és aláírási területek automatikus felismeréséhez.
 	Download and detect	Letöltés és felismerés
+	Download historical OCR add-on (13 MB)	Történelmi OCR-bővítmény letöltése (13 MB)
 	Download package…	Csomag letöltése…
 	Download size: {size}	Letöltés mérete: {size}
 	Download with Ollama	Letöltés Ollamával
@@ -1291,6 +1293,7 @@ scroll speed	Fast	Gyors
 	Forms and signing	Űrlapok és aláírás
 	Formulas and similar non-text elements need alternate text. Add alternate text to them.	A képleteknek és a hasonló nem szöveges elemeknek helyettesítő szöveg kell. Adj nekik helyettesítő szöveget.
 	Found {n} untagged content problems.	{n} címkézetlen tartalmi probléma található.
+	Fraktur and Kurrent use an optional 13 MB add-on. After download, recognition works offline.	A fraktúr és a kurrent egy választható, 13 MB-os bővítményt használ. A letöltés után a felismerés internet nélkül működik.
 	From	Ettől
 	From a PDF page or an image	PDF-oldalból vagy képből
 	From colour	Színből
@@ -1328,6 +1331,7 @@ scroll speed	Fast	Gyors
 	Hand (H)	Kéz (H)
 	Hand Tool	Kéz eszköz
 	Hand tool	Kéz eszköz
+	Handwriting requires upright horizontal lines in one text column. Columns, tables and marginal notes are not supported.	A kézíráshoz helyes irányú, vízszintes sorok szükségesek egyetlen szövegoszlopban. Több oszlop, táblázatok és széljegyzetek nem támogatottak.
 	Has JavaScript actions (run in M6)	JavaScript-műveletei vannak (futás az M6-ban)
 	Header and footer	Fejléc és lábléc
 	Header cells (TH) tell listeners what each column or row holds. Mark the header cells.	A fejléccellák (TH) elmondják, mit tartalmaz az egyes oszlop vagy sor. Jelöld meg a fejléccellákat.
@@ -1365,6 +1369,11 @@ scroll speed	Fast	Gyors
 	Highlight fields	Mezők kiemelése
 	Highlight Style:	Kiemelés stílusa:
 	Highlight text	Szöveg kiemelése
+	Historical handwriting (Kurrent)	Történelmi kézírás (kurrent)
+	Historical OCR add-on installed	Történelmi OCR-bővítmény telepítve
+	Historical OCR add-ons require the desktop app.	A történelmi OCR-bővítményekhez az asztali alkalmazás szükséges.
+	Historical print (Fraktur)	Történelmi nyomtatott szöveg (fraktúr)
+	Historical spelling is preserved. Handwriting, abbreviations and complex layouts need checking.	A történelmi helyesírás megmarad. A kézírást, rövidítéseket és összetett elrendezéseket ellenőrizni kell.
 key	Home	Home
 	Home / End	Home / End
 	Horizontal reversed	Vízszintes, fordított
@@ -1662,6 +1671,7 @@ key	Home	Home
 	Missing from the calculation order saved in the PDF: other PDF viewers may not calculate it.	Hiányzik a PDF-ben mentett számítási sorrendből: más PDF-megjelenítők talán nem számítják ki.
 	Mixed	Eltérő értékek
 	Model:	Modell:
+	Modern print	Modern nyomtatott szöveg
 	Modify page	Oldal módosítása
 	Module (.dylib, .so, .dll)	Modul (.dylib, .so, .dll)
 	Monochrome Images	Monokróm képek
@@ -2153,6 +2163,7 @@ animation effects	On	Be
 	Prepare for distribution	Előkészítés terjesztésre
 	Prepare for distribution…	Előkészítés terjesztésre…
 	Preparing form detection…	Űrlapfelismerés előkészítése…
+	Preparing OCR add-on…	OCR-bővítmény előkészítése…
 	Preparing read-aloud text…	A felolvasandó szöveg előkészítése…
 	Preparing sheet {done} of {total} for printing…	{done}/{total}. lap előkészítése nyomtatásra…
 	Preparing {n} sheets for printing…	{n} lap előkészítése nyomtatásra…
@@ -2320,6 +2331,7 @@ animation effects	On	Be
 	Remote signing isn't available in this build	A távoli aláírás ebben a változatban nem érhető el
 	Remove "{name}" from this list? The certificate stays with the signing service.	Eltávolítja a(z) „{name}” elemet erről a listáról? A tanúsítvány az aláírási szolgáltatásnál marad.
 	Remove "{name}" from this list? The file itself is not deleted.	Eltávolítja a(z) „{name}” elemet erről a listáról? Maga a fájl nem törlődik.
+	Remove add-on	Bővítmény eltávolítása
 	Remove all links	Összes hivatkozás eltávolítása
 	Remove and Save As…	Eltávolítás és mentés másként…
 	Remove background	Háttér eltávolítása
@@ -2982,6 +2994,7 @@ action wizard	Start	Indítás
 	Text recognition is already running	A szövegfelismerés már fut
 	Text recognition isn't installed: its model files are missing. Reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them.	A szövegfelismerés nincs telepítve: hiányoznak a modellfájljai. Telepítsd újra a PdfCraftot, vagy állítsd a PDFCRAFT_MODELS változót az őket tartalmazó mappára.
 	Text rendering	Szövegmegjelenítés
+	Text style	Szövegstílus
 	Text to find	Keresett szöveg
 	Text to insert	Beszúrandó szöveg
 	Text to place	Elhelyezendő szöveg
@@ -3060,6 +3073,7 @@ action wizard	Start	Indítás
 	The form asks viewers to make appearances (NeedAppearances)	Az űrlap arra kéri a megjelenítőket, hogy készítsenek megjelenést (NeedAppearances)
 	The form's purpose and its fields (names, types, tab order)	Az űrlap célja és mezői (nevek, típusok, tab-sorrend)
 	The fronts already scanned are kept for the reverse-side pass.	A már beolvasott előlapok megmaradtak a hátoldalak menetéhez.
+	The historical model detects its supported scripts automatically; Japanese is not included.	A történelmi modell automatikusan felismeri a támogatott írásokat; a japán nem tartozik közéjük.
 	The image couldn't be used as an icon: {e}	A kép nem használható ikonként: {e}
 	The image has been copied ({w} × {h} pixels)	A kép a vágólapra került ({w} × {h} képpont)
 	The image has been copied as a {ext} file	A kép {ext}-fájlként a vágólapra került
@@ -3470,6 +3484,7 @@ signature pad	Type	Gépelés
 	Voice and Speech	Hang és beszéd
 	Voice:	Hang:
 	Volume:	Hangerő:
+	Wait for text recognition to finish before changing add-ons	A bővítmények módosítása előtt várja meg a szövegfelismerés befejezését
 	Wait for the scanner to finish, or close any other program using it, then choose Continue.	Várja meg, amíg a lapolvasó végez, vagy zárjon be minden más, a lapolvasót használó programot, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
 	Wait for the scanner to finish, or close any other program using it, then choose Try again.	Várja meg, amíg a lapolvasó végez, vagy zárjon be minden más, a lapolvasót használó programot, majd válassza a(z) „Újra” lehetőséget.
 	Waiting for the system print dialog…	Várakozás a rendszer nyomtatási párbeszédablakára…
