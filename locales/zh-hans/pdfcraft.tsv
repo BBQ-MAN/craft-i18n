@@ -19,6 +19,7 @@
 	 ({s} warnings: {first})	（{s} 个警告：{first}）
 	 on page {p}	（第 {p} 页）
 	 · password-protected	 · 受密码保护
+	+ Dictionary	+ 词典
 	+ Page {p}	+ 第 {p} 页
 	+Bin	新增资源
 	+LOC	新增行
@@ -42,14 +43,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 表示数字，A 表示字母，O 表示字母或数字，X 表示任意字符
 	; 1 page already had text	；1 页已有文本
 	; 1 page skipped	; 已跳过 1 页
+	; cancelled — {n} files were not run	；已取消——{n} 个文件未运行
 	; corrected {n} pages	; 已校正 {n} 页
 	; failed: {list}	；失败：{list}
 	; skipped: {n}	；已跳过：{n}
+	; {n} files already had text	；{n} 个文件已包含文本
 	; {n} pages already had text	；{n} 页已有文本
 	; {n} pages skipped	; 已跳过 {n} 页
 	? of {n}	?/{n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}：{prs} 个 PR，{commits} 次提交，新增 {added} 行 / 删除 {deleted} 行（净增 {delta} 行），新增 {bin_added} 个 / 删除 {bin_deleted} 个二进制资源，{first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A 3×3 median filter against scan speckle	3×3 中值滤波，去除扫描噪点
 	a bookmark cannot be moved inside itself	无法将书签移入其自身内部
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	用 Rust 从零编写的开源 PDF 应用。MIT OR Apache-2.0 许可。
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	某列太窄：请加宽区域、给该列更多宽度，或减少列数或列间距
@@ -59,6 +63,7 @@
 	A document needs at least one page: copy instead	文档至少需要保留一页，请改用复制
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	文档时间戳覆盖整个文件，不属于任何人的签名，因此无法单独移除。
 	a field named {name} already exists	已存在名为 {name} 的字段
+	A folder is asked for when a multiple-file run starts	多文件运行开始时会询问文件夹
 	A form field has additional actions	表单字段包含附加动作
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	本地模型不是最先进的云端模型：它可能出错，较长的回答在处理器上需要时间。重要事项请务必核实，下载前也请留意模型大小与这台机器是否匹配。
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	在标签左侧、标题栏通常显示的位置放一个徽标或名称：PdfCraft 自己的，或你公司的。
@@ -75,6 +80,8 @@
 	About {app}	关于 {app}
 	about {h} h {m} min left	剩余约 {h} 小时 {m} 分钟
 	about {n} min left	剩余约 {n} 分钟
+	Accept	接受
+	Accept entire page	接受整页
 	Accepted	已接受
 	Accepted by {printer}	已被 {printer} 接受
 	Accessibility Checker	无障碍检查器
@@ -106,6 +113,7 @@
 	Add a page from template {name}	从模板 {name} 添加页面
 	Add a radio button	添加单选按钮
 	Add a reply	添加回复
+	Add a second engine's reading when the first is unsure	当第一个引擎没有把握时，加入第二个引擎的读取结果
 	Add a stamp	添加图章
 	Add a sticky note	添加附注
 	Add a sticky note here	在此处添加附注
@@ -239,6 +247,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	没有页面内容的元素上的替代文本永远无法到达。请删除它或将元素附加到内容。
 	Alternate text should not hide annotation	替代文本不应隐藏注释
 	Alternate text that will never be read	永远不会被朗读的替代文本
+	Always read with both engines and merge the words	始终用两个引擎读取并合并词语
 	Always use my default zoom and page layout	始终使用我的默认缩放和页面布局
 	An action is already running	已有操作正在运行
 	An action with this name already exists.	已存在同名的操作。
@@ -319,6 +328,7 @@
 	Auto portrait/landscape	自动纵向/横向
 	Auto-deskew	自动纠偏
 	Auto-detect	自动检测
+	Auto-rotate	自动旋转
 	Auto-rotate pages	自动旋转页面
 	Auto-size text to fit redaction region	自动调整文本大小以适应密文区域
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	在具备安全的执行隔离之前，AcroForm 的自动脚本已停用；已保存的域值保持不变。按钮脚本和控制台脚本仍可手动运行。
@@ -326,6 +336,7 @@
 	Automatically tag PDF	自动标记 PDF
 	Available version: {v}	可用版本：{v}
 	average	平均值
+	AVG CONFIDENCE	平均置信度
 	Azimuth	方位角
 	Back	返回
 	Back side only	仅背面
@@ -349,6 +360,7 @@
 	Best for: the deepest reasoning this family has	最适合：这个系列中最深入的推理
 	Beveled	斜面
 	Bicubic downsampling to	双三次降采样至
+	Binarize	二值化
 	Binding	装订
 	Binding:	装订：
 	Black	黑色
@@ -365,6 +377,7 @@
 	Bookmarks Panel and Page	书签面板和页面
 	Border Color:	边框颜色：
 	Borders and Colors	边框和颜色
+	Both engines, combined as the Strategy says	两个引擎，按所选策略组合
 	Boundary coordinates run from 0 to 1 across the viewport.	边界坐标在视口内的范围为 0 到 1。
 	Boundary point	边界点
 	Box	框
@@ -394,6 +407,7 @@
 	Cancel reverse sides	取消背面扫描
 	Canceling…	正在取消…
 	Cancelled	已取消
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	已取消——已读取 {t} 页中的 {m} 页共 {n} 个词，其余页面未读取
 	Cancelling…	正在取消…
 	Card driver (PKCS #11)	卡驱动程序 (PKCS #11)
 	Card PIN	卡 PIN
@@ -520,6 +534,7 @@
 	Clear selection / close find	清除选择/关闭查找
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	请清除卡纸，并将剩余纸张摆放整齐后装入，然后选择“继续扫描”。
 	Clear the jam and load the sheets squarely, then choose Try again.	请清除卡纸，并将纸张摆放整齐后装入，然后选择“重试”。
+	Click a word to inspect it; drag a rectangle to re-read part of the page	点击词语可检查；拖出矩形可重新识别页面的一部分
 	Click each vertex. Enter finishes the perimeter.	依次点击各顶点，按 Enter 完成周长测量。
 	Click on the page to add a {tool}, or drag to set its size	单击页面添加{tool}，或拖动设置其大小
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	单击页面添加文本；每次单击开始一个新文本框，✓ 完成。拖动项目以移动，拖动角落以调整大小，双击文本进行编辑。
@@ -602,6 +617,8 @@
 	Compress and export	压缩与导出
 	Compress document structure (object streams)	压缩文档结构（对象流）
 	Compressing combined PDF…	正在压缩合并后的 PDF…
+	CONFIDENCE	置信度
+	Confidence weighted	按置信度加权
 	Configure a Digital ID for Signing	配置用于签名的数字 ID
 	Configure New Digital ID	配置新数字 ID
 	Confirm Password	确认密码
@@ -643,8 +660,11 @@
 	Copyright status	版权状态
 	Copyrighted	受版权保护
 	Correct recognized text	更正识别文本
+	Correct recognized text…	更正识别文本…
 	Correct scans	校正扫描件
+	corrected	已更正
 	Corrected scan	已校正的扫描件
+	Corrected text (Enter commits)	更正后的文本（按 Enter 提交）
 	Could not copy the selection because text could not be read on every page	无法复制选区，因为无法读取所有页面上的文本
 	Could not mark the selection because text could not be read on every page	无法标记选区，因为无法读取所有页面上的文本
 	Could not save: {e}	无法保存：{e}
@@ -803,9 +823,11 @@ key	Delete	Delete
 	Delete XMP metadata	删除 XMP 元数据
 	Delete {o}	删除 {o}
 	Deleted page	删除的页
+	Denoise	降噪
 	Denominator	分母
 	Describe the figure	描述该图形
 	Description writer	描述撰写者
+	Deskew	纠偏
 	Detached signature file	分离式签名文件
 	Details	详情
 	Detect form fields	检测表单域
@@ -966,6 +988,7 @@ key	Delete	Delete
 	Edit text…	编辑文本…
 	Edit this PDF	编辑此 PDF
 	Edit {field}'s formula	编辑 {field} 的公式
+	Editable text	可编辑文本
 	Editorial	Editorial
 	Email Address	电子邮件地址
 	Email Addresses	电子邮件地址
@@ -985,6 +1008,7 @@ key	Delete	Delete
 	Encryption	加密
 key	End	End
 	Endpoints	端点
+	ENGINE · STRATEGY	引擎 · 策略
 	English	英语
 	Enhance camera image	增强相机图像
 	Enhance page	增强页面
@@ -1075,6 +1099,7 @@ key	Esc	Esc
 	Extract the selected pages…	提取所选页面…
 	Extracted 1 page	已提取 1 页
 	Extracted {n} pages	已提取{n}页
+	F8: next word to review; Shift+F8 goes back	F8：下一个待校对词；Shift+F8 上一个
 	Failed	未通过
 scroll speed	Fast	快
 	Fast Web View	快速 Web 查看
@@ -1195,6 +1220,7 @@ scroll speed	Fast	快
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	字体必须将其字符映射到 Unicode，以便读取和复制文本。请修复字体或重新生成 PDF。
 	for images above	（高于此分辨率的图像）
 	For page sizes and margins.	用于页面尺寸和边距。
+	Force OCR (override skip options)	强制 OCR（覆盖跳过选项）
 	Form data and PDF forms	表单数据和 PDF 表单
 	Form field advice	表单字段建议
 	Form field detection is already running	表单字段检测已在运行
@@ -1277,6 +1303,7 @@ scroll speed	Fast	快
 	Hide window controls	隐藏窗口控件
 	Hide {app}	隐藏 {app}
 	Hides annotation	隐藏注释
+	HIGH (>= 90%)	高（≥ 90%）
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	更高的图像质量意味着更大的文件。仅在文件变小时保存副本。
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	质量更高，文件通常更大。超过 450 ppi 的 JPEG 照片缩小到 300 ppi，质量为 85。无损图形和带蒙版的图像保留原有像素。
 	Highlight	突出显示
@@ -1308,6 +1335,7 @@ key	Home	Home
 	Import {name}	导入 {name}
 	Importing data arrives on the web with file pickers for data files	Web 端导入数据将使用数据文件选择器
 	In multiple files	多个文件
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	用于多文件：已含文本的文件单独计入跳过，不为其写入任何内容
 	In new window	在新窗口中打开
 	In streams that use LZW encoding, use Flate instead	在使用 LZW 编码的流中改用 Flate
 	In this file	当前文件
@@ -1482,8 +1510,10 @@ key	Home	Home
 	Looking for PDFs…	正在查找 PDF…
 	Looking for printers…	正在查找打印机…
 	Loop	循环
+	LOW (< 70%)	低（< 70%）
 	Low resolution	低分辨率
 	Low Resolution (150 dpi)	低分辨率（150 dpi）
+	LOW-CONFIDENCE WORDS	低置信度词语
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Magnification	缩放
 	Make accessible	设为无障碍
@@ -1511,6 +1541,7 @@ key	Home	Home
 	Mark everything in this tag as an artifact and remove the tag from reading order	将此标签中的所有内容标记为工件，并从阅读顺序中移除该标签
 	Mark figure as decorative	将图形标记为装饰性内容
 	Mark Page Range	标记页面范围
+	Mark this page as reviewed (Ctrl+T)	将此页标记为已校对（Ctrl+T）
 	Mark with checkmark	添加勾选标记
 	Marked	已标记
 	Marks do not remove content. Select Redact all, then save.	标记不会删除内容。请选择“全部密文”，然后保存。
@@ -1537,6 +1568,7 @@ key	Home	Home
 	Measurement information	测量信息
 	Measurement snapping	测量吸附
 	Measuring tool	测量工具
+	MEDIUM (70-89%)	中（70-89%）
 	Menu	菜单
 	Merge all windows	合并所有窗口
 	Merge data files into spreadsheet…	将数据文件合并到电子表格…
@@ -1642,6 +1674,7 @@ key	Home	Home
 	Next month	下个月
 	Next sheet	下一张
 	Next tab	下一个标签页
+	Next uncertain	下一个可疑词
 	Next view	下一个视图
 	Night	夜间
 	No actions	无操作
@@ -1752,6 +1785,8 @@ scroll speed	Normal	正常
 	Number pages	页面编号
 	Number pages…	页面编号…
 	Numbered list	编号列表
+	OCR complete — no text recognized on this page.	OCR 完成——此页未识别出文本。
+	OCR results rejected.	已放弃 OCR 结果。
 	October	十月
 	Odd pages	奇数页
 	Odd Pages Only	仅奇数页
@@ -1869,6 +1904,7 @@ animation effects	On	开
 	Output preview	输出预览
 	Owner password (no restrictions apply)	所有者密码（无限制）
 	Package: {name}	软件包：{name}
+	PAGE	页码
 	Page background	页面背景
 	Page Content	页面内容
 	Page display	页面显示
@@ -1892,6 +1928,7 @@ animation effects	On	开
 	Page thumbnails panel	页面缩略图面板
 	Page tools	页面工具
 	Page transitions	页面切换
+	Page verified	整页已校对
 	Page will not cause screen flicker	页面不会导致屏幕闪烁
 	Page X	页面 X
 	Page Y	页面 Y
@@ -1914,6 +1951,7 @@ animation effects	On	开
 	Pages to Print	要打印的页面
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	无法读取文本的页面：{n}。这些页面上的匹配项未列出。
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	包含链接、注释或字段的页面应按结构顺序 Tab。修复操作将每页的 Tab 顺序设为“使用文档结构”。
+	Pages with renderable text are left alone and reported as skipped	已含可渲染文本的页面保持原样，并报告为已跳过
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	第 {pages} 页在添加背景后有改动，因此它们自身的白色填充保持关闭。在白纸上看起来一样。
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	第 {pages} 页各有自己的白色填充，会遮住背景。替换它们
 	Pages:	页面：
@@ -2039,8 +2077,10 @@ animation effects	On	开
 	Previous month	上个月
 	Previous sheet	上一张
 	Previous tab	上一个标签页
+	Previous uncertain	上一个可疑词
 	Previous view	上一个视图
 	Primary language	主要语言
+	Primary only	仅主引擎
 	Print ({key})	打印 ({key})
 	Print as image	作为图像打印
 	Print in grayscale	灰度打印
@@ -2091,6 +2131,8 @@ animation effects	On	开
 	RAM {gb} GB	内存 {gb} GB
 	Rating	评级
 	Raw:	原始文件：
+	Re-OCR entire page	重新识别整页
+	Re-OCR this region	重新识别此区域
 	Re-type Password	重新输入密码
 	Read	阅读
 	Read mode	阅读模式
@@ -2102,6 +2144,7 @@ animation effects	On	开
 	Read out loud requires Windows, macOS or Linux.	朗读功能目前需要Windows / macOS / Linux。
 	Read this page only	仅朗读此页
 	Read to end of document	朗读到文档末尾
+	Read {n} words on {m} of {t} pages	在 {t} 页中的 {m} 页上读取了 {n} 个词
 	Reading colours	阅读配色
 	Reading options…	朗读选项…
 	Reading page {page}…	正在朗读第 {page} 页…
@@ -2110,6 +2153,7 @@ animation effects	On	开
 	Reading the printer's settings…	正在读取打印机设置…
 	Reading the raw document…	正在读取原始文档…
 	Reading theme	阅读主题
+	Reads pages and files even where the skip options would leave them alone	即使跳过选项会放过这些页面和文件，也照样读取
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	读取 {names}，而它们又读取此字段。任何顺序都无法修正循环：请修改其中一个公式。
 	Reads {name}, which calculates later, so it shows an old value.	读取 {name}，而它在之后才计算，因此显示的是旧值。
 	Reads {name}, which the form doesn't have, so it gets no value there.	读取表单中不存在的 {name}，因此从中得不到值。
@@ -2129,6 +2173,8 @@ animation effects	On	开
 	Recognize Text…	识别文本…
 	Recognize text…	识别文本…
 	Recognized 1 word	识别了 1 个单词
+	Recognized text	识别的文本
+	Recognized text applied ({n} words, one undoable step)	识别文本已应用（{n} 个词，可一步撤销）
 	Recognized {n} words	识别了{n}个单词
 	Recognized {w} words in 1 file	在 1 个文件中识别了{w}个单词
 	Recognized {w} words in {n} files	在{n}个文件中识别了{w}个单词
@@ -2164,6 +2210,8 @@ animation effects	On	开
 	Region in inches. Leave the width or the height at zero to scan the whole area.	区域（英寸）。宽度或高度留 0 则扫描整页。
 	Registration residual	配准残差
 	Regularity	规则性
+	Reject	放弃
+	Reject entire page	放弃整页
 	Rejected	已拒绝
 	Release notes	发行说明
 	Reliable character encoding is provided	提供了可靠的字符编码
@@ -2208,6 +2256,7 @@ animation effects	On	开
 	Remove {name} from Recent	从最近的文件中移除{name}
 	Remove {n} files	删除 {n} 个文件
 	Remove {n} pages	删除 {n} 页
+	removed	已删除
 	Removed 1 hidden item. Save to remove them from the file.	已删除 1 个隐藏项。保存以从文件中删除它们。
 	Removed 1 link	已删除 1 个链接
 	Removed the signature {field} and kept its empty field	已移除签名 {field}，并保留其空白字段
@@ -2321,10 +2370,12 @@ animation effects	On	开
 	Rotate view clockwise ({key})	顺时针旋转视图 ({key})
 	Rotate view counterclockwise	逆时针旋转视图
 	Rounded	四舍五入
+	ROVER vote	ROVER 表决
 	Row spacing	行间距
 	Run	运行
 	Run a JavaScript	运行 JavaScript
 	Run JavaScript	运行 JavaScript
+	Run OCR	运行 OCR
 	Running action… file {d} of {t}	正在运行操作…第{d}个文件，共{t}个
 	Runtime	运行环境
 	Safety margin (pt)	安全边距（磅）
@@ -2335,6 +2386,7 @@ animation effects	On	开
 	Sanitize Documents	清理文档
 	Sanitize document…	清理文档…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	清理将删除文档中的隐藏信息：元数据、文件附件、注释、表单域（拼合）、隐藏文本和图层、书签、链接、动作和脚本，以及私有应用程序数据。
+	Sauvola binarization: ink to black, paper to white	Sauvola 二值化：墨迹变黑，纸面变白
 	Save & Close	保存并关闭
 	Save ({key})	保存 ({key})
 	Save a signature first	请先保存签名
@@ -2460,6 +2512,7 @@ animation effects	On	开
 	Select a placed signature first	请先选择已放置的签名
 	Select a text box or an image first	请先选择一个文本框或图像
 	Select a word	选择一个词
+	Select a word on the page to inspect it	在页面上选择一个词语以进行检查
 	Select Action:	选择操作：
 	Select all pages (Organize)	选择所有页面（组织页面）
 	Select at least one other page.	请至少选择另一个页面。
@@ -2534,6 +2587,7 @@ animation effects	On	开
 	Set to current page ({n})	设为当前页（第 {n} 页）
 	Set to zero	置零
 	Settings this source offers. Leave a control alone to keep the driver’s value.	此来源提供的设置。不改动则保留驱动的值。
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	多个文件同名，其结果会相互覆盖；未写入任何内容：{list}
 	Shadings	着色
 	Shared Field Properties	共享字段属性
 	Sheet {s} of {n}	第 {s} 张，共 {n} 张
@@ -2542,6 +2596,7 @@ animation effects	On	开
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift 限制为 45 度角。Backspace 移除顶点。Escape 取消。
 	Shift drags freely	按住 Shift 自由拖动
+	Shift+F8: the previous word to review	Shift+F8：上一个待校对词
 	Shift- or Ctrl/Command-click to select several fields.	按住 Shift 或 Ctrl/Command 单击可选择多个字段。
 	Shift-click to select several objects. Drag empty space to select an area.	按住 Shift 单击可选择多个对象。拖动空白区域可框选。
 	ships in milestone {m}	将于 {m} 里程碑推出
@@ -2633,8 +2688,11 @@ key	Shift	Shift
 	Single page	单页
 	Single Page Continuous	单页连续
 	Single word or phrase	单个词或短语
+	Skip files that already have text	跳过已包含文本的文件
+	Skip pages that already have text	跳过已包含文本的页面
 	Skip Rule	跳过规则
 	Skipped	已跳过
+	skipped	已跳过
 	Slash	斜线
 scroll speed	Slow	慢
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	适合屏幕和电子邮件的小文件。超过 225 ppi 的图像缩小到 150 ppi，JPEG 质量为 60；线条图可能丢失细节。
@@ -2662,6 +2720,7 @@ scroll speed	Slow	慢
 	sorted ascending	升序
 	sorted descending	降序
 	Source	来源
+	Source page	源页面
 key	Space	空格
 	Space Audit	空间审计
 	Spacing between copies	副本之间的间距
@@ -2695,11 +2754,13 @@ document scrollbar width	Standard	标准
 	Start page number	起始页码
 	Steps	步骤
 	Sticky note	附注
+	still checking whether the tesseract program can run; try again in a moment	仍在检查 tesseract 程序能否运行；请稍后重试
 	Still printing; the job continues on the printer	仍在打印；作业将在打印机上继续
 	Stop reading	停止朗读
 	Straighten scanned page	校正扫描页面的倾斜
 	Straighten skewed scans	校正扫描件倾斜
 	Straighten the page	扶正页面
+	Straightens skewed text lines before reading	读取前校正倾斜的文本行
 	Strength: {s}	强度：{s}
 	Strikethrough text	删除线文本
 	String length (0 turns it off)	绳长（0 为关闭）
@@ -2713,6 +2774,7 @@ document scrollbar width	Standard	标准
 	Submit XFDF data	提交 XFDF 数据
 	Subscript	Subscript
 	Suggest edits	建议修改
+	Suggestions	建议
 	sum (+)	求和 (+)
 	Summarize	摘要
 	Summarize comments	汇总注释
@@ -2787,12 +2849,14 @@ document scrollbar width	Standard	标准
 	TH and TD must be children of TR	TH 和 TD 必须是 TR 的子级
 	Thai and Arabic use regular fallback fonts when available.	泰语和阿拉伯语使用可用的常规样式备用字体。
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	出错了：内部错误中断了操作（{m}）。文档未更改。
+	That is the source file; choose another destination	这是源文件；请选择其他保存位置
 	That isn't a scanner address	这不是扫描仪地址
 	That length can't be right for this line: check the unit.	这个长度不可能与这条线相符：请检查单位。
 	The answer proposes formatting changes.	回答中包含格式修改建议。
 	The answer stopped unexpectedly.	回答意外中断。
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API 密钥将以未加密方式发送到此地址。除非服务器位于你信任的网络中，否则请使用 https://。
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	稿台一次扫描一页。先扫正面，翻面后再扫背面。
+	The built-in engine (pure Rust)	内置引擎（纯 Rust）
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	计算顺序中有 {n} 个不计算任何内容的条目。“修正顺序”会将其删除。
 	the certificate authorities	证书颁发机构
 	the certificate expired on {date}	证书已于 {date} 过期
@@ -2871,9 +2935,13 @@ document scrollbar width	Standard	标准
 	The order saved in the PDF needs tidying	PDF 中保存的顺序需要整理
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	原文件不会被更改。输出文件夹中已有的同名文件会被保留，新文件会加上编号。
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	其他签名（{names}）将报告文档在签名后已被更改。请重新验证它们：无法保证它们仍然有效。
+	The output folder already holds files of these names; nothing was written: {list}	输出文件夹中已存在这些名称的文件；未写入任何内容：{list}
 	The output folder can't be one of the folders being read, or contain one.	输出文件夹不能是正在读取的文件夹之一，也不能包含其中之一。
 	The page could not be separated: {error}	无法对此页分色：{error}
 	The page has changed; select the image again	页面已更改；请重新选择图像
+	The page was read again; its words were replaced (undo in the panel)	此页已重新读取；其词语已替换（可在面板中撤销）
+	The page's words were applied as one undoable step ({n} words)	此页的词语已作为一步可撤销的修改应用（{n} 个词）
+	The page's words were cleared (undo in the panel)	此页的词语已清除（可在面板中撤销）
 	The pages already scanned were kept in the document.	已扫描的页面已保留在文档中。
 	the password is incorrect	密码不正确
 	The password is incorrect.	密码不正确。
@@ -2897,8 +2965,10 @@ document scrollbar width	Standard	标准
 	The printer's reply couldn't be understood	无法理解打印机的回复
 	The provider's page didn't come back in time. Try again.	提供商页面未及时返回。请重试。
 	The raw text was truncated to what fits.	原始文本已被截断。
+	The re-read found no text; the existing words are unchanged	重新读取未发现文本；现有词语保持不变
 	The redaction does not fit page {page}; no pages were marked.	密文标记不适合第 {page} 页；未标记任何页面。
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	重定向 URI 必须是带端口的 http://127.0.0.1 或 http://localhost。
+	The region was read again; its words were replaced (undo in the panel)	此区域已重新读取；其词语已替换（可在面板中撤销）
 	The release has ambiguous packages. Choose a package on the official release page.	此版本有多个兼容的软件包。请在官方发布页面选择一个软件包。
 	The release is not a published stable update. Try again later.	此版本不是已发布的稳定更新。请稍后重试。
 	The replacement file doesn't have that many pages.	替换文件没有那么多页面。
@@ -2921,10 +2991,12 @@ document scrollbar width	Standard	标准
 	The scanner reported a lamp or device error.	扫描仪报告了灯管或设备错误。
 	The scanner reported a paper problem (a jam or several sheets fed together).	扫描仪报告了纸张问题（卡纸或多张纸一同送入）。
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	屏幕实际的每英寸像素数。用尺子校准后，实际大小 (100%) 会按真实尺寸显示页面。
+	The searchable copies are written here under the source names	可检索副本以源文件名写入此文件夹
 	The selected area has been copied ({w} × {h} pixels)	所选区域已复制（{w} × {h} 像素）
 	The selected fields could not be found. Select them again.	找不到所选字段。请重新选择。
 	The selected redaction is unavailable or invalid.	所选密文标记不可用或无效。
 	The selected scale could not be read.	无法读取所选比例。
+	The selected word is gone; choose another	所选词语已不存在；请另选一个
 	The selection changed. Select the signature again.	选择已更改。请重新选择签名。
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	与 {provider} 的会话已结束。请在“配置数字 ID”中重新登录。
 	The shared folder:	共享文件夹：
@@ -2943,6 +3015,9 @@ document scrollbar width	Standard	标准
 	The smart card's digital IDs couldn't be listed: {e}	无法列出智能卡的数字 ID：{e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	标准字体无法显示“{c}”（{code}）。目前只能添加西欧字符作为文本。
 	The standard it must meet and where the file goes	需要满足的标准，以及文件的去向
+	the tesseract engine is not available in the web build	网页版不提供 tesseract 引擎
+	the tesseract program was not found (install it, or add it to the PATH)	未找到 tesseract 程序（请安装，或将其加入 PATH）
+	The tesseract program, run as an external process	tesseract 程序，作为外部进程运行
 	The text is the same	文本相同
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	尚未安装文本识别模型（请重新安装 PdfCraft，或将 PDFCRAFT_MODELS 设置为包含这些模型的文件夹）
 	The title in the metadata and the document information differ	元数据与文档信息中的标题不一致
@@ -3087,6 +3162,7 @@ document scrollbar width	Standard	标准
 	Turn on continuous scrolling	开启连续滚动
 	Turn upside down (180°)	上下颠倒 (180°)
 	Turned left	向左旋转
+	Turns pages scanned sideways or upside down upright before reading	读取前把横放或倒放的扫描页转正
 	two cells would both be named {name}	两个单元格的名称都会是 {name}
 	Two-page view	双页视图
 	Two-sided:	双面：
@@ -3104,6 +3180,7 @@ document scrollbar width	Standard	标准
 	Unchecked reads	未检查的读取
 	Underline text	下划线文本
 	Undid {label}	已撤销{label}
+	Undo the last review change (Ctrl+Z)	撤销上一次校对修改（Ctrl+Z）
 	Unit	单位
 	Unit before value	单位显示在数值前
 	Unit display format	单位显示格式
@@ -3126,6 +3203,7 @@ document scrollbar width	Standard	标准
 	Unpin {folder}	取消固定 {folder}
 	Unpinned {tool} from Home	已从主页取消固定 {tool}
 	Unplaced	未放置
+	unreviewed	未校对
 	Unsaved changes to this document are saved in the new file too.	此文档中未保存的更改也会保存到新文件中。
 	Unsupported measurements	不支持的测量
 	Untagged content	未标记的内容
@@ -3165,6 +3243,7 @@ document scrollbar width	Standard	标准
 	Use projected coordinate matrix	使用投影坐标矩阵
 	Use system setting	跟随系统设置
 	Use system title bar	使用系统标题栏
+	Use the chosen engine's reading alone	只使用所选引擎的读取结果
 	Use the default	使用默认图标
 	Use this size for saved initials	对已保存的姓名首字母使用此尺寸
 	Use this size for saved signature	对已保存的签名使用此尺寸
@@ -3191,6 +3270,9 @@ document scrollbar width	Standard	标准
 	Validity unknown	有效性未知
 	Value is not calculated	不计算值
 	Value is the	值为
+	Verified	已校对
+	verified	已校对
+	VERIFIED %	已校对 %
 	Verify	验证
 	Verify PDF/UA	验证 PDF/UA
 	Verify PDF/X	验证 PDF/X
@@ -3244,14 +3326,17 @@ document scrollbar width	Wide	宽
 	Window Options	窗口选项
 	Windows store  ·  	Windows 证书存储 · 
 	WKT definition	WKT 定义
+	Word	词语
 	Word count	字词统计
 	Word counting stopped unexpectedly.	字词统计意外停止。
 	Word count…	字词统计…
 	Words or phrases to redact	要密文的单词或短语
 	Workspace modes	工作区模式
 	Write this email?	是否撰写此邮件？
+	Writes a new document of visible text; the scan is not changed	写入一个可见文本的新文档；扫描件不变
 	Wrong password	密码错误
 	Wrote 1 file to {dir}	已将 1 个文件写入{dir}
+	Wrote {name}	已写入 {name}
 	Wrote {n} files to {dir}	已将{n}个文件写入{dir}
 	X Object Forms	XObject 表单
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA 表单：字段与 XFA 数据保持同步，以便其他阅读器显示您填写的内容。
@@ -3325,6 +3410,7 @@ document scrollbar width	Wide	宽
 	{name} — unsaved changes	{name} — 有未保存的更改
 	{name}: choosing images arrives on the web with file pickers for images	{name}：在 Web 端选择图像将使用图像文件选择器
 	{name}: the {other} action isn't supported yet	{name}：{other} 动作暂不受支持
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}：第 {pages} 页上有 {n} 个低置信度词语
 	{name}_unsigned.pdf	{name}_无签名.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} 个计算已改用新名称。
 	{n} contributors · {c} commits	{n} 位贡献者 · {c} 次提交
@@ -3357,6 +3443,7 @@ document scrollbar width	Wide	宽
 	{n} selected	已选择 {n} 个
 	{n} tags	{n} 个标签
 	{n} word(s) or phrase(s)	{n} 个单词或短语
+	{n} word(s) to review	{n} 个词待校对
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	共 {signers} 个签名者；显示第一个的详细信息

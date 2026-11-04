@@ -19,6 +19,7 @@
 	 ({s} warnings: {first})	（{s} 個警告：{first}）
 	 on page {p}	（第 {p} 頁）
 	 · password-protected	 · 受密碼保護
+	+ Dictionary	+ 字典
 	+ Page {p}	+ 第 {p} 頁
 	+Bin	新增二進位
 	+LOC	新增行
@@ -42,14 +43,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 表示數字，A 表示字母，O 表示字母或數字，X 表示任意字元
 	; 1 page already had text	；1 頁已有文字
 	; 1 page skipped	; 已略過 1 頁
+	; cancelled — {n} files were not run	；已取消——{n} 個檔案未執行
 	; corrected {n} pages	; 已校正 {n} 頁
 	; failed: {list}	；失敗：{list}
 	; skipped: {n}	；已略過：{n}
+	; {n} files already had text	；{n} 個檔案已包含文字
 	; {n} pages already had text	；{n} 頁已有文字
 	; {n} pages skipped	; 已略過 {n} 頁
 	? of {n}	?/{n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}：{prs} 個 PR、{commits} 次提交、+{added} / −{deleted} 行（Δ {delta}）、+{bin_added} / −{bin_deleted} 個二進位資產，{first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A 3×3 median filter against scan speckle	3×3 中值濾波，去除掃描雜點
 	a bookmark cannot be moved inside itself	無法將書籤移至其自身內部
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	用 Rust 從零編寫的開源 PDF 應用。MIT OR Apache-2.0 許可。
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	某欄太窄：請加寬區域、給該欄更多寬度，或減少欄數或欄間距
@@ -59,6 +63,7 @@
 	A document needs at least one page: copy instead	文件至少需要保留一頁，請改用複製
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	文件時間戳記涵蓋整個檔案，不屬於任何人的簽章，因此無法單獨移除。
 	a field named {name} already exists	已有名為 {name} 的欄位
+	A folder is asked for when a multiple-file run starts	多檔案執行開始時會詢問資料夾
 	A form field has additional actions	表單欄位具有額外動作
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	本機模型不是最先進的雲端模型：它可能出錯，較長的回答在處理器上需要時間。重要事項請務必查證，下載前也請留意模型大小與這台機器的匹配。
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	在分頁左側、標題列通常顯示的位置放一個標誌或名稱：PdfCraft 自己的，或你公司的。
@@ -75,6 +80,8 @@
 	About {app}	關於 {app}
 	about {h} h {m} min left	剩餘約 {h} 小時 {m} 分鐘
 	about {n} min left	剩餘約 {n} 分鐘
+	Accept	接受
+	Accept entire page	接受整頁
 	Accepted	已接受
 	Accepted by {printer}	已被 {printer} 接受
 	Accessibility Checker	無障礙偵測工具
@@ -108,6 +115,7 @@
 	Add a page from template {name}	從範本 {name} 新增頁面
 	Add a radio button	新增選項按鈕
 	Add a reply	新增回復
+	Add a second engine's reading when the first is unsure	當第一個引擎沒有把握時，加入第二個引擎的讀取結果
 	Add a stamp	新增印章
 	Add a sticky note	新增便利貼註解
 	Add a sticky note here	在此處新增附註
@@ -243,6 +251,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	沒有頁面內容的元素上的替代文字永遠無法到達。請刪除它或將元素附加到內容。
 	Alternate text should not hide annotation	替代文字不應隱藏註解
 	Alternate text that will never be read	永遠不會被朗讀的替代文字
+	Always read with both engines and merge the words	一律用兩個引擎讀取並合併單詞
 	Always use my default zoom and page layout	一律使用我的預設縮放與頁面佈局
 	An action is already running	已有操作正在執行
 	An action with this name already exists.	已存在同名的操作。
@@ -319,6 +328,7 @@
 	Auto portrait/landscape	自動縱向/橫向
 	Auto-deskew	Auto-deskew
 	Auto-detect	自動偵測
+	Auto-rotate	自動旋轉
 	Auto-rotate pages	自動旋轉頁面
 	Auto-size text to fit redaction region	自動調整文字大小以適應遮蔽內容區域
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	在具備安全的執行隔離之前，AcroForm 的自動指令碼已停用；已儲存的欄位值保持不變。按鈕指令碼與主控台指令碼仍可手動執行。
@@ -326,6 +336,7 @@
 	Automatically tag PDF	自動標記 PDF
 	Available version: {v}	可用版本：{v}
 	average	平均值
+	AVG CONFIDENCE	平均信心度
 	Azimuth	方位角
 	Back	返回
 	Back side only	僅背面
@@ -349,6 +360,7 @@
 	Best for: the deepest reasoning this family has	最適合：這個系列中最深入的推理
 	Beveled	斜面
 	Bicubic downsampling to	雙三次降取樣至
+	Binarize	二值化
 	Binding	裝訂
 	Binding:	裝訂：
 	Black & White Document	黑白文件
@@ -364,6 +376,7 @@
 	Bookmarks Panel and Page	書籤面板和頁面
 	Border Color:	邊框顏色：
 	Borders and Colors	邊框和顏色
+	Both engines, combined as the Strategy says	兩個引擎，依所選策略組合
 	Boundary coordinates run from 0 to 1 across the viewport.	邊界座標在檢視區內的範圍為 0 到 1。
 	Boundary point	邊界點
 	Box	框
@@ -394,6 +407,7 @@
 	Cancel reverse sides	Cancel reverse sides
 	Canceling…	正在取消…
 	Cancelled	已取消
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	已取消——已讀取 {t} 頁中的 {m} 頁共 {n} 個單詞，其餘頁面未讀取
 	Cancelling…	正在取消…
 	Case-sensitive	區分大小寫
 	CCITT Group 4	CCITT 第 4 組
@@ -515,6 +529,7 @@
 	Clear selection / close find	清除選取／關閉尋找
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	Clear the jam and load the remaining sheets squarely, then choose Continue.
 	Clear the jam and load the sheets squarely, then choose Try again.	Clear the jam and load the sheets squarely, then choose Try again.
+	Click a word to inspect it; drag a rectangle to re-read part of the page	點擊單詞可檢查；拖出矩形可重新辨識頁面的一部分
 	Click each vertex. Enter finishes the perimeter.	依序點擊各頂點，按 Enter 完成周長量測。
 	Click on the page to add a {tool}, or drag to set its size	按一下頁面新增{tool}，或拖動設定其大小
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	按一下頁面新增文字；每次按一下開始一個新文字框，✓ 完成。拖動專案以移動，拖動角落以調整大小，按兩下文字進行編輯。
@@ -596,6 +611,8 @@
 	Compress and export	壓縮與匯出
 	Compress document structure (object streams)	壓縮文件結構（物件流）
 	Compressing combined PDF…	正在壓縮合併後的 PDF…
+	CONFIDENCE	信心度
+	Confidence weighted	依信心度加權
 	Configure a Digital ID for Signing	設定簽署用的數位 ID
 	Configure New Digital ID	配置新數位 ID
 	Confirm Password	確認密碼
@@ -638,8 +655,11 @@
 	Copyright status	版權狀態
 	Copyrighted	受版權保護
 	Correct recognized text	修正辨識文字
+	Correct recognized text…	修正辨識文字…
 	Correct scans	校正掃描件
+	corrected	已修正
 	Corrected scan	已校正的掃描件
+	Corrected text (Enter commits)	修正後的文字（按 Enter 提交）
 	Could not copy the selection because text could not be read on every page	無法複製選取範圍，因為無法讀取所有頁面的文字
 	Could not mark the selection because text could not be read on every page	無法標記選取範圍，因為無法讀取所有頁面的文字
 	Could not save: {e}	無法儲存：{e}
@@ -798,9 +818,11 @@ key	Delete	Delete
 	Delete XMP metadata	刪除 XMP 中繼資料
 	Delete {o}	刪除 {o}
 	Deleted page	刪除的頁
+	Denoise	降噪
 	Denominator	分母
 	Describe the figure	描述該圖形
 	Description writer	描述撰寫者
+	Deskew	矯正傾斜
 	Detached signature file	分離式簽名檔案
 	Details	詳情
 	Detect form fields	偵測表單欄位
@@ -961,6 +983,7 @@ key	Delete	Delete
 	Edit text…	編輯文字…
 	Edit this PDF	編輯此 PDF
 	Edit {field}'s formula	編輯 {field} 的公式
+	Editable text	可編輯文字
 	Editorial	Editorial
 	Email Address	電子郵件地址
 	Email Addresses	電子郵件地址
@@ -979,6 +1002,7 @@ key	Delete	Delete
 	Encryption	加密
 key	End	End
 	Endpoints	端點
+	ENGINE · STRATEGY	引擎 · 策略
 	English	英語
 	Enhance camera image	增強相機影像
 	Enhance page	增強頁面
@@ -1067,6 +1091,7 @@ key	Esc	Esc
 	Extract the selected pages…	擷取所選頁面…
 	Extracted 1 page	已提取 1 頁
 	Extracted {n} pages	已提取{n}頁
+	F8: next word to review; Shift+F8 goes back	F8：下一個待校對單詞；Shift+F8 上一個
 	Failed	未通過
 scroll speed	Fast	快
 	Fast Web View	快速 Web 檢視
@@ -1190,6 +1215,7 @@ scroll speed	Fast	快
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	字型必須將其字元對映到 Unicode，以便讀取和複製文字。請修復字型或重新生成 PDF。
 	for images above	（高於此解析度的圖片）
 	For page sizes and margins.	用於頁面尺寸和邊距。
+	Force OCR (override skip options)	強制 OCR（覆寫跳過選項）
 	Form data and PDF forms	表單資料和 PDF 表單
 	Form field advice	表單欄位建議
 	Form field detection is already running	表單欄位偵測已在執行
@@ -1272,6 +1298,7 @@ scroll speed	Fast	快
 	Hide window controls	隱藏視窗控制元件
 	Hide {app}	隱藏 {app}
 	Hides annotation	隱藏註解
+	HIGH (>= 90%)	高（≥ 90%）
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	更高的影像品質意味著更大的檔案。僅在檔案變小時儲存副本。
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	品質更高，檔案通常更大。超過 450 ppi 的 JPEG 照片縮小到 300 ppi，品質為 85。無損圖形和帶遮色片的影像保留原有像素。
 	Highlight	突出顯示
@@ -1305,6 +1332,7 @@ key	Home	Home
 	Import {name}	匯入 {name}
 	Importing data arrives on the web with file pickers for data files	Web 端匯入資料將使用資料檔案選擇器
 	In multiple files	在多個檔案中
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	用於多檔案：已含文字的檔案單獨計入跳過，不為其寫入任何內容
 	In new window	在新視窗中開啟
 	In streams that use LZW encoding, use Flate instead	在使用 LZW 編碼的流中改用 Flate
 	In this file	在此檔案中
@@ -1471,8 +1499,10 @@ key	Home	Home
 	Looking for PDFs…	正在尋找 PDF…
 	Looking for printers…	正在尋找印表機…
 	Loop	迴圈
+	LOW (< 70%)	低（< 70%）
 	Low resolution	低解析度
 	Low Resolution (150 dpi)	低解析度（150 dpi）
+	LOW-CONFIDENCE WORDS	低信心度單詞
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	建立無障礙支援
 	Make Current Properties Default	將目前屬性設為預設
@@ -1498,6 +1528,7 @@ key	Home	Home
 	Mark everything in this tag as an artifact and remove the tag from reading order	將此標記中的所有內容標記為成品，並從閱讀順序中移除該標記
 	Mark figure as decorative	將圖片標記為裝飾用途
 	Mark Page Range	標記頁面範圍
+	Mark this page as reviewed (Ctrl+T)	將此頁標記為已校對（Ctrl+T）
 	Mark with checkmark	新增勾選標記
 	Marked	已標記
 	Marks do not remove content. Select Redact all, then save.	標記不會移除內容。請選取「全部遮蔽」，然後儲存。
@@ -1524,6 +1555,7 @@ key	Home	Home
 	Measurement information	測量資訊
 	Measurement snapping	測量吸附
 	Measuring tool	測量工具
+	MEDIUM (70-89%)	中（70-89%）
 	Menu	選單
 	Merge all windows	合併所有視窗
 	Merge data files into spreadsheet…	將資料檔合併為試算表…
@@ -1627,6 +1659,7 @@ key	Home	Home
 	Next month	下個月
 	Next sheet	下一張
 	Next tab	下一個分頁
+	Next uncertain	下一個可疑詞
 	Next view	下一個檢視
 	Night	夜間
 	No actions	無操作
@@ -1731,6 +1764,8 @@ scroll speed	Normal	正常
 	Number pages	頁面編號
 	Number pages…	編訂頁碼…
 	Numbered list	編號清單
+	OCR complete — no text recognized on this page.	OCR 完成——此頁未辨識出文字。
+	OCR results rejected.	已拒絕 OCR 結果。
 	October	十月
 	Odd pages	奇數頁
 	Odd Pages Only	僅奇數頁
@@ -1848,6 +1883,7 @@ animation effects	On	開
 	Output preview	輸出預覽
 	Owner password (no restrictions apply)	所有者密碼（無限制）
 	Package: {name}	套件：{name}
+	PAGE	頁碼
 	Page background	頁面背景
 	Page Content	頁面內容
 	Page display	頁面顯示
@@ -1871,6 +1907,7 @@ animation effects	On	開
 	Page thumbnails panel	頁面縮圖面板
 	Page tools	頁面工具
 	Page transitions	頁面轉場
+	Page verified	整頁已校對
 	Page will not cause screen flicker	頁面不會導致螢幕閃爍
 	Page X	頁面 X
 	Page Y	頁面 Y
@@ -1893,6 +1930,7 @@ animation effects	On	開
 	Pages to Print	要列印的頁面
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	無法讀取文字的頁面：{n}。這些頁面上的相符項目未列出。
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	包含連結、註解或欄位的頁面應按結構順序 Tab。修復操作將每頁的 Tab 順序設為「使用文件結構」。
+	Pages with renderable text are left alone and reported as skipped	已含可呈現文字的頁面保持原樣，並報告為已跳過
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	第 {pages} 頁在加入背景後有變更，因此它們本身的白色填色維持關閉。在白紙上看起來一樣。
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	第 {pages} 頁各有自己的白色填色，會遮住背景。取代它們
 	Pages:	頁面：
@@ -2016,8 +2054,10 @@ animation effects	On	開
 	Previous month	上個月
 	Previous sheet	上一張
 	Previous tab	上一個分頁
+	Previous uncertain	上一個可疑詞
 	Previous view	上一個檢視
 	Primary language	主要語言
+	Primary only	僅主要引擎
 	Print ({key})	列印（{key}）
 	Print as image	以影像列印
 	Print in grayscale	灰階列印
@@ -2068,6 +2108,8 @@ animation effects	On	開
 	RAM {gb} GB	記憶體 {gb} GB
 	Rating	評等
 	Raw:	原始檔案：
+	Re-OCR entire page	重新辨識整頁
+	Re-OCR this region	重新辨識此區域
 	Re-type Password	重新輸入密碼
 	Read	閱讀
 	Read mode	閱讀模式
@@ -2079,6 +2121,7 @@ animation effects	On	開
 	Read out loud requires Windows, macOS or Linux.	朗讀功能目前需要Windows / macOS / Linux。
 	Read this page only	僅朗讀此頁
 	Read to end of document	朗讀到文件末尾
+	Read {n} words on {m} of {t} pages	在 {t} 頁中的 {m} 頁上讀取了 {n} 個單詞
 	Reading colours	閱讀色彩
 	Reading options…	朗讀選項…
 	Reading page {page}…	正在朗讀第 {page} 頁…
@@ -2087,6 +2130,7 @@ animation effects	On	開
 	Reading the printer's settings…	正在讀取印表機設定…
 	Reading the raw document…	正在讀取原始文件…
 	Reading theme	閱讀主題
+	Reads pages and files even where the skip options would leave them alone	即使跳過選項會放過這些頁面和檔案，也照樣讀取
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	讀取 {names}，而它們又讀取此欄位。任何順序都無法修正迴圈：請修改其中一個公式。
 	Reads {name}, which calculates later, so it shows an old value.	讀取 {name}，而它之後才計算，因此顯示的是舊值。
 	Reads {name}, which the form doesn't have, so it gets no value there.	讀取表單中不存在的 {name}，因此從中得不到值。
@@ -2105,6 +2149,8 @@ animation effects	On	開
 	Recognize Text…	辨識文字…
 	Recognize text…	辨識文字…
 	Recognized 1 word	辨識了 1 個單詞
+	Recognized text	辨識的文字
+	Recognized text applied ({n} words, one undoable step)	辨識文字已套用（{n} 個單詞，可一步復原）
 	Recognized {n} words	辨識了{n}個單詞
 	Recognized {w} words in 1 file	在 1 個檔案中辨識了{w}個單詞
 	Recognized {w} words in {n} files	在{n}個檔案中辨識了{w}個單詞
@@ -2139,6 +2185,8 @@ animation effects	On	開
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Region in inches. Leave the width or the height at zero to scan the whole area.
 	Registration residual	配準殘差
 	Regularity	規則性
+	Reject	放棄
+	Reject entire page	放棄整頁
 	Rejected	已拒絕
 	Release notes	發行說明
 	Reliable character encoding is provided	提供了可靠的字元編碼
@@ -2180,6 +2228,7 @@ animation effects	On	開
 	Remove {name} from Recent	從最近的檔案中移除{name}
 	Remove {n} files	刪除 {n} 個檔案
 	Remove {n} pages	刪除 {n} 頁
+	removed	已刪除
 	Removed 1 hidden item. Save to remove them from the file.	已刪除 1 個隱藏項。儲存以從檔案中刪除它們。
 	Removed 1 link	已移除 1 個連結
 	Removed the signature {field} and kept its empty field	已移除簽章 {field}，並保留其空白欄位
@@ -2291,11 +2340,13 @@ animation effects	On	開
 	Rotate view clockwise ({key})	順時針旋轉檢視（{key}）
 	Rotate view counterclockwise	逆時針旋轉檢視
 	Rounded	四捨五入
+	ROVER vote	ROVER 表決
 	Row spacing	列間距
 	Rulers	尺規
 	Run	執行
 	Run a JavaScript	執行 JavaScript
 	Run JavaScript	執行 JavaScript
+	Run OCR	執行 OCR
 	Running action… file {d} of {t}	正在執行操作…第{d}個檔案，共{t}個
 	Runtime	執行環境
 	Safety margin (pt)	安全邊界（點）
@@ -2306,6 +2357,7 @@ animation effects	On	開
 	Sanitize Documents	清理文件
 	Sanitize document…	清理文件…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	清理將刪除文件中的隱藏資訊：中繼資料、檔案附件、註解、表單欄位（平面化）、隱藏文字和圖層、書籤、連結、動作和指令碼，以及私有應用程式資料。
+	Sauvola binarization: ink to black, paper to white	Sauvola 二值化：墨跡變黑，紙面變白
 	Save & Close	儲存並關閉
 	Save ({key})	儲存（{key}）
 	Save a signature first	請先儲存簽名
@@ -2432,6 +2484,7 @@ animation effects	On	開
 	Select a placed signature first	請先選取已放置的簽名
 	Select a text box or an image first	請先選取一個文字方塊或圖片
 	Select a word	選取一個詞
+	Select a word on the page to inspect it	在頁面上選取一個單詞以進行檢查
 	Select Action:	選擇操作：
 	Select all pages (Organize)	選取所有頁面（整理頁面）
 	Select at least one other page.	請至少選取另一個頁面。
@@ -2502,6 +2555,7 @@ animation effects	On	開
 	Set to current page ({n})	設為目前頁（第 {n} 頁）
 	Set to zero	置零
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Settings this source offers. Leave a control alone to keep the driver’s value.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	多個檔案名稱相同，其結果會互相覆寫；未寫入任何內容：{list}
 	Shadings	著色
 	Shared Field Properties	共用欄位屬性
 	Sheet {s} of {n}	第 {s} 張，共 {n} 張
@@ -2510,6 +2564,7 @@ animation effects	On	開
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift 限制為 45 度角。Backspace 移除頂點。Escape 取消。
 	Shift drags freely	按住 Shift 自由拖曳
+	Shift+F8: the previous word to review	Shift+F8：上一個待校對單詞
 	Shift- or Ctrl/Command-click to select several fields.	按住 Shift 或 Ctrl/Command 點按可選取多個欄位。
 	Shift-click to select several objects. Drag empty space to select an area.	按住 Shift 點選可選取多個物件。拖曳空白區域可框選。
 	ships in milestone {m}	將於 {m} 里程碑推出
@@ -2595,8 +2650,11 @@ key	Shift	Shift
 	Single page	單頁
 	Single Page Continuous	單頁連續
 	Single word or phrase	單個詞或短語
+	Skip files that already have text	跳過已包含文字的檔案
+	Skip pages that already have text	跳過已包含文字的頁面
 	Skip Rule	跳過規則
 	Skipped	已跳過
+	skipped	已跳過
 	Slash	斜線
 scroll speed	Slow	慢
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	適合螢幕和電子郵件的小檔案。超過 225 ppi 的影像縮小到 150 ppi，JPEG 品質為 60；線條圖可能遺失細節。
@@ -2621,6 +2679,7 @@ scroll speed	Slow	慢
 	Sort items	排序項目
 	sorted ascending	遞增排序
 	sorted descending	遞減排序
+	Source page	來源頁面
 key	Space	空格
 	Space Audit	空間審計
 	Speed:	速度：
@@ -2651,12 +2710,14 @@ document scrollbar width	Standard	標準
 	Start page number	起始頁碼
 	Steps	步驟
 	Sticky note	便利貼註解
+	still checking whether the tesseract program can run; try again in a moment	仍在檢查 tesseract 程式能否執行；請稍後再試
 	Still printing; the job continues on the printer	仍在列印；工作會在印表機上繼續
 	Stop	Stop
 	Stop reading	停止朗讀
 	Straighten scanned page	校正掃描頁面的傾斜
 	Straighten skewed scans	校正掃描件傾斜
 	Straighten the page	Straighten the page
+	Straightens skewed text lines before reading	讀取前矯正傾斜的文字行
 	Strength: {s}	強度：{s}
 	Strikethrough text	文字加上刪除線
 	Stroke colour	線條顏色
@@ -2669,6 +2730,7 @@ document scrollbar width	Standard	標準
 	Submit XFDF data	傳送 XFDF 資料
 	Subscript	Subscript
 	Suggest edits	建議修改
+	Suggestions	建議
 	sum (+)	求和 (+)
 	Summarize	摘要
 	Summarize comments	建立註解摘要
@@ -2744,12 +2806,14 @@ document scrollbar width	Standard	標準
 	TH and TD must be children of TR	TH 和 TD 必須是 TR 的子級
 	Thai and Arabic use regular fallback fonts when available.	泰語和阿拉伯語使用可用的一般樣式備用字型。
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	出錯了：內部錯誤中斷了操作（{m}）。文件未更改。
+	That is the source file; choose another destination	這是來源檔案；請選擇其他目的地
 	That isn't a scanner address	這不是掃描器位址
 	That length can't be right for this line: check the unit.	這個長度不可能與這條線相符：請檢查單位。
 	The answer proposes formatting changes.	回答中包含格式修改建議。
 	The answer stopped unexpectedly.	回答意外中斷。
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API 金鑰將以未加密方式傳送到此位址。除非伺服器位於你信任的網路中，否則請使用 https://。
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
+	The built-in engine (pure Rust)	內建引擎（純 Rust）
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	計算順序中有 {n} 個不計算任何內容的項目。「修正順序」會將其刪除。
 	the certificate authorities	憑證授權單位
 	the certificate expired on {date}	憑證已於 {date} 到期
@@ -2826,9 +2890,13 @@ document scrollbar width	Standard	標準
 	The order saved in the PDF needs tidying	PDF 中儲存的順序需要整理
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	原始檔案不會被變更。輸出資料夾中已有的同名檔案會保留，新檔案會加上編號。
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	其他簽章（{names}）將回報文件在簽署後已被變更。請重新驗證它們：無法保證它們仍然有效。
+	The output folder already holds files of these names; nothing was written: {list}	輸出資料夾中已存在這些名稱的檔案；未寫入任何內容：{list}
 	The output folder can't be one of the folders being read, or contain one.	輸出資料夾不能是正在讀取的資料夾之一，也不能包含其中之一。
 	The page could not be separated: {error}	無法對此頁分色：{error}
 	The page has changed; select the image again	頁面已變更；請重新選取圖片
+	The page was read again; its words were replaced (undo in the panel)	已重新讀取頁面；其文字已取代（可在面板中復原）
+	The page's words were applied as one undoable step ({n} words)	此頁的單詞已作為一步可復原的修改套用（{n} 個單詞）
+	The page's words were cleared (undo in the panel)	已清除頁面的文字（可在面板中復原）
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	the password is incorrect	密碼不正確
 	The password is incorrect.	密碼不正確。
@@ -2851,8 +2919,10 @@ document scrollbar width	Standard	標準
 	The printer's reply couldn't be understood	無法理解印表機的回覆
 	The provider's page didn't come back in time. Try again.	提供者頁面未及時返回。請再試一次。
 	The raw text was truncated to what fits.	原始文字已被截斷。
+	The re-read found no text; the existing words are unchanged	重新讀取未發現文字；現有單詞保持不變
 	The redaction does not fit page {page}; no pages were marked.	密文標記不適合第 {page} 頁；未標記任何頁面。
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	重新導向 URI 必須是含連接埠的 http://127.0.0.1 或 http://localhost。
+	The region was read again; its words were replaced (undo in the panel)	已重新讀取區域；其文字已取代（可在面板中復原）
 	The release has ambiguous packages. Choose a package on the official release page.	此版本有多個相容套件。請在官方發行頁面選擇一個套件。
 	The release is not a published stable update. Try again later.	此版本不是已發布的穩定更新。請稍後再試。
 	The replacement file doesn't have that many pages.	替換檔案沒有那麼多頁面。
@@ -2877,10 +2947,12 @@ document scrollbar width	Standard	標準
 	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
 	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	螢幕實際的每英吋像素數。用尺校準後，實際大小 (100%) 會以真實尺寸顯示頁面。
+	The searchable copies are written here under the source names	可搜尋副本以來源檔名寫入此資料夾
 	The selected area has been copied ({w} × {h} pixels)	所選區域已複製（{w} × {h} 畫素）
 	The selected fields could not be found. Select them again.	找不到所選欄位。請重新選取。
 	The selected redaction is unavailable or invalid.	所選密文標記無法使用或無效。
 	The selected scale could not be read.	無法讀取所選比例。
+	The selected word is gone; choose another	所選單詞已不存在；請另選一個
 	The selection changed. Select the signature again.	選取項目已變更。請重新選取簽名。
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	與 {provider} 的工作階段已結束。請從「設定數位 ID」重新登入。
 	The shared folder:	共用資料夾：
@@ -2889,6 +2961,9 @@ document scrollbar width	Standard	標準
 	The signature {names} locks this field.	簽章 {names} 鎖定了此欄位。
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	標準字型無法顯示「{c}」（{code}）。目前只能新增西歐字元作為文字。
 	The standard it must meet and where the file goes	需要符合的標準，以及檔案的用途
+	the tesseract engine is not available in the web build	網頁版不提供 tesseract 引擎
+	the tesseract program was not found (install it, or add it to the PATH)	找不到 tesseract 程式（請安裝，或將其加入 PATH）
+	The tesseract program, run as an external process	tesseract 程式，作為外部處理程序執行
 	The text is the same	文字相同
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	尚未安裝文字辨識模型（請重新安裝 PdfCraft，或將 PDFCRAFT_MODELS 設定為包含這些模型的資料夾）
 	The title in the metadata and the document information differ	中繼資料與文件資訊中的標題不同
@@ -3027,6 +3102,7 @@ document scrollbar width	Standard	標準
 	Turn on continuous scrolling	開啟連續捲動
 	Turn upside down (180°)	上下顛倒 (180°)
 	Turned left	Turned left
+	Turns pages scanned sideways or upside down upright before reading	讀取前把橫放或倒放的掃描頁轉正
 	two cells would both be named {name}	兩個儲存格的名稱都會是 {name}
 	Two-page view	雙頁檢視
 	Two-sided:	雙面：
@@ -3044,6 +3120,7 @@ document scrollbar width	Standard	標準
 	Unchecked reads	未檢查的讀取
 	Underline text	文字加上底線
 	Undid {label}	已復原{label}
+	Undo the last review change (Ctrl+Z)	復原上一次校對變更（Ctrl+Z）
 	Unit	單位
 	Unit before value	單位顯示在數值前
 	Unit display format	單位顯示格式
@@ -3065,6 +3142,7 @@ document scrollbar width	Standard	標準
 	Unpin {folder}	取消釘選 {folder}
 	Unpinned {tool} from Home	已從首頁取消釘選 {tool}
 	Unplaced	未放置
+	unreviewed	未校對
 	Unsaved changes to this document are saved in the new file too.	此文件中尚未儲存的變更也會儲存到新檔案中。
 	Unsupported measurements	不支援的測量
 	Untagged content	未標記的內容
@@ -3103,6 +3181,7 @@ document scrollbar width	Standard	標準
 	Use projected coordinate matrix	使用投影座標矩陣
 	Use system setting	使用系統設定
 	Use system title bar	使用系統標題列
+	Use the chosen engine's reading alone	只使用所選引擎的讀取結果
 	Use the default	使用預設圖示
 	Use this size for saved initials	對已儲存的姓名縮寫使用此尺寸
 	Use this size for saved signature	對已儲存的簽名使用此尺寸
@@ -3129,6 +3208,9 @@ document scrollbar width	Standard	標準
 	Validity unknown	有效性未知
 	Value is not calculated	不計算值
 	Value is the	值為
+	Verified	已校對
+	verified	已校對
+	VERIFIED %	已校對 %
 	Verify	驗證
 	Verify PDF/UA	驗證 PDF/UA
 	Verify PDF/X	驗證 PDF/X
@@ -3180,14 +3262,17 @@ document scrollbar width	Wide	寬
 	Window Options	視窗選項
 	Windows store  ·  	Windows 憑證存放區 · 
 	WKT definition	WKT 定義
+	Word	單詞
 	Word count	字詞統計
 	Word counting stopped unexpectedly.	字詞統計意外停止。
 	Word count…	字詞統計…
 	Words or phrases to redact	要遮蔽的字詞或片語
 	Workspace modes	工作區模式
 	Write this email?	要撰寫這封電子郵件嗎？
+	Writes a new document of visible text; the scan is not changed	寫入一份可見文字的新文件；掃描件不變
 	Wrong password	密碼錯誤
 	Wrote 1 file to {dir}	已將 1 個檔案寫入{dir}
+	Wrote {name}	已寫入 {name}
 	Wrote {n} files to {dir}	已將{n}個檔案寫入{dir}
 	X Object Forms	XObject 表單
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA 表單：欄位與 XFA 資料會保持同步，因此其他檢視器也會顯示您填寫的內容。
@@ -3259,6 +3344,7 @@ document scrollbar width	Wide	寬
 	{name} — unsaved changes	{name} — 尚未儲存變更
 	{name}: choosing images arrives on the web with file pickers for images	{name}：在 Web 端選擇圖片將使用圖片檔案選擇器
 	{name}: the {other} action isn't supported yet	{name}：{other} 動作暫不受支援
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}：第 {pages} 頁上有 {n} 個低信心度單詞
 	{name}_unsigned.pdf	{name}_無簽章.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} 個計算已改用新名稱。
 	{n} contributors · {c} commits	{n} 位貢獻者 · {c} 次提交
@@ -3291,6 +3377,7 @@ document scrollbar width	Wide	寬
 	{n} selected	已選取 {n} 個
 	{n} tags	{n} 個標籤
 	{n} word(s) or phrase(s)	{n} 個單字或片語
+	{n} word(s) to review	{n} 個單詞待校對
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	共 {signers} 個簽名者；顯示第一個的詳細資訊

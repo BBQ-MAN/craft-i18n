@@ -19,6 +19,7 @@
 	 ({s} warnings: {first})	 ({s} figyelmeztetés: {first})
 	 on page {p}	 ({p}. oldal)
 	 · password-protected	 · jelszóval védett
+	+ Dictionary	+ Szótár
 	+ Page {p}	+ {p}. oldal
 	+Bin	+Bin
 	+LOC	+LOC
@@ -39,14 +40,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 számjegy, A betű, O betű vagy számjegy, X bármely karakter
 	; 1 page already had text	; 1 oldalon már volt szöveg
 	; 1 page skipped	; 1 oldal kihagyva
+	; cancelled — {n} files were not run	; megszakítva — {n} fájl feldolgozása elmaradt
 	; corrected {n} pages	; {n} oldal javítva
 	; failed: {list}	; nem sikerült: {list}
 	; skipped: {n}	; kihagyva: {n}
+	; {n} files already had text	; {n} fájl már tartalmazott szöveget
 	; {n} pages already had text	; {n} oldalon már volt szöveg
 	; {n} pages skipped	; {n} oldal kihagyva
 	? of {n}	? / {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} commit, +{added} / −{deleted} sor (Δ {delta}), +{bin_added} / −{bin_deleted} bináris fájl, {first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A 3×3 median filter against scan speckle	3×3-as mediánszűrő a beolvasási foltok ellen
 	a bookmark cannot be moved inside itself	egy könyvjelzőt nem lehet saját magába helyezni
 	A button	Egy gomb
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Tiszta szobás, nyílt forráskódú PDF-alkalmazás, Rustban írva. MIT OR Apache-2.0.
@@ -57,6 +61,7 @@
 	A document needs at least one page: copy instead	Egy dokumentumnak legalább egy oldala kell legyen: inkább másold
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	A dokumentum-időbélyeg az egész fájlra vonatkozik, és senkinek sem az aláírása, ezért nem távolítható el önmagában.
 	a field named {name} already exists	már van {name} nevű mező
+	A folder is asked for when a multiple-file run starts	A mappát több fájl feldolgozásának indításakor kérdezi meg
 	A form field has additional actions	Egy űrlapmezőnek további műveletei vannak
 	A link	Egy hivatkozás
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	A helyi modell nem élvonalbeli felhőmodell: tévedhet, és egy hosszú válasz a processzoron időbe telik. Minden kritikus dolgot ellenőrizzen, és a letöltés előtt mérlegelje a modell méretét e géphez képest.
@@ -75,6 +80,8 @@
 	About {app}	A(z) {app} névjegye
 	about {h} h {m} min left	kb. {h} óra {m} perc van hátra
 	about {n} min left	kb. {n} perc van hátra
+	Accept	Elfogadás
+	Accept entire page	Teljes oldal elfogadása
 	Accepted	Elfogadva
 	Accepted by {printer}	{printer} elfogadta
 	Accessibility Checker	Akadálymentesség ellenőrzése
@@ -104,6 +111,7 @@
 	Add a page from template {name}	Oldal hozzáadása a(z) {name} sablonból
 	Add a radio button	Választógomb hozzáadása
 	Add a reply	Válasz hozzáadása
+	Add a second engine's reading when the first is unsure	Hozzáadja egy második motor olvasatát, ha az első bizonytalan
 	Add a stamp	Bélyegző hozzáadása
 	Add a sticky note	Cetli hozzáadása
 	Add a sticky note here	Cetli hozzáadása ide
@@ -238,6 +246,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Egy oldaltartalom nélküli elem helyettesítő szövegéhez soha nem jut el az olvasó. Távolítsd el, vagy kösd az elemet tartalomhoz.
 	Alternate text should not hide annotation	A helyettesítő szöveg ne takarjon széljegyzetet
 	Alternate text that will never be read	Helyettesítő szöveg, amelyet soha nem olvasnak fel
+	Always read with both engines and merge the words	Mindig mindkét motorral olvas, és egyesíti a szavakat
 	Always use my default zoom and page layout	Mindig az alapértelmezett nagyításom és oldalelrendezésem használata
 	An action is already running	Már fut egy művelet
 	An action with this name already exists.	Már van művelet ezzel a névvel.
@@ -313,6 +322,7 @@
 	Auto portrait/landscape	Álló/fekvő automatikusan
 	Auto-deskew	Automatikus egyenesítés
 	Auto-detect	Automatikus felismerés
+	Auto-rotate	Automatikus forgatás
 	Auto-rotate pages	Oldalak automatikus forgatása
 	Auto-size text to fit redaction region	A szöveg automatikus méretezése a kitakarási területhez
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Az automatikus AcroForm-szkriptek ki vannak kapcsolva, amíg nincs biztonságos végrehajtás-elkülönítés; a mentett mezőértékek megmaradtak. A gombok és a konzol szkriptjei továbbra is elérhetők.
@@ -320,6 +330,7 @@
 	Automatically tag PDF	PDF automatikus címkézése
 	Available version: {v}	Elérhető verzió: {v}
 	average	átlag
+	AVG CONFIDENCE	ÁTLAGOS MEGBÍZHATÓSÁG
 	Back	Vissza
 	Back side only	Csak a hátlap
 	Back to all tools	Vissza az összes eszközhöz
@@ -342,6 +353,7 @@
 	Best for: the deepest reasoning this family has	Erre való a leginkább: a legmélyebb gondolkodás ebben a családban
 	Beveled	Leélezett
 	Bicubic downsampling to	Kettős köbös újramintázás erre
+	Binarize	Binarizálás
 	Binary assets added	Hozzáadott bináris fájlok
 	Binding	Kötés
 	Binding:	Kötés:
@@ -358,6 +370,7 @@
 	Bookmarks Panel and Page	Könyvjelzők panel és oldal
 	Border Color:	Szegély színe:
 	Borders and Colors	Szegélyek és színek
+	Both engines, combined as the Strategy says	Mindkét motor, a választott stratégia szerint egyesítve
 	Bottom:	Alsó:
 	Box	Keret
 	Brightness	Fényerő
@@ -386,6 +399,7 @@
 	Cancel reverse sides	Hátoldalak megszakítása
 	Canceling…	Megszakítás…
 	Cancelled	Megszakítva
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	Megszakítva — {n} szó beolvasva {t} oldalból {m} oldalon; a többi nem lett beolvasva
 	Cancelling…	Megszakítás…
 	Card driver (PKCS #11)	Kártya-illesztőprogram (PKCS #11)
 	Card PIN	Kártya PIN-kódja
@@ -503,6 +517,7 @@
 	Clear selection / close find	Kijelölés törlése / keresés bezárása
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	Szüntesse meg az elakadást, és egyenesen töltse be a hátralévő lapokat, majd válassza a(z) „Beolvasás folytatása” lehetőséget.
 	Clear the jam and load the sheets squarely, then choose Try again.	Szüntesse meg az elakadást, és egyenesen töltse be a lapokat, majd válassza a(z) „Újra” lehetőséget.
+	Click a word to inspect it; drag a rectangle to re-read part of the page	Kattintson egy szóra a vizsgálatához; húzzon egy téglalapot az oldal egy részének újraolvasásához
 	Click on the page to add a {tool}, or drag to set its size	Kattints az oldalra egy {tool} hozzáadásához, vagy húzással állítsd be a méretét
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Kattints az oldalra szöveg hozzáadásához; minden kattintás új dobozt kezd, a ✓ befejezi. Húzd az elemeket az áthelyezéshez, a sarkot a méretezéshez, és kattints duplán a szövegre a szerkesztéshez.
 	Click text or an image to edit it	Kattints a szövegre vagy egy képre a szerkesztéshez
@@ -580,6 +595,8 @@
 	Compress and export	Tömörítés és exportálás
 	Compress document structure (object streams)	Dokumentumszerkezet tömörítése (objektumfolyamok)
 	Compressing combined PDF…	Az egyesített PDF tömörítése…
+	CONFIDENCE	MEGBÍZHATÓSÁG
+	Confidence weighted	Megbízhatósággal súlyozott
 	Configure a Digital ID for Signing	Digitális azonosító beállítása aláíráshoz
 	Configure New Digital ID	Új digitális azonosító beállítása
 	Confirm Password	Jelszó megerősítése
@@ -620,8 +637,11 @@
 	Copyright status	Szerzői jogi állapot
 	Copyrighted	Szerzői jog által védett
 	Correct recognized text	Felismert szöveg javítása
+	Correct recognized text…	Felismert szöveg javítása…
 	Correct scans	Szkennelések javítása
+	corrected	javítva
 	Corrected scan	Javított szkennelés
+	Corrected text (Enter commits)	Javított szöveg (az Enter jóváhagyja)
 	Could not copy the selection because text could not be read on every page	A kijelölés nem másolható, mert nem sikerült minden oldalon beolvasni a szöveget
 	Could not mark the selection because text could not be read on every page	A kijelölés nem jelölhető meg, mert nem sikerült minden oldalon beolvasni a szöveget
 	Could not save: {e}	A mentés nem sikerült: {e}
@@ -775,8 +795,10 @@ key	Delete	Delete
 	Delete XMP metadata	XMP-metaadatok törlése
 	Delete {o}	{o} törlése
 	Deleted page	Törölt oldal
+	Denoise	Zajszűrés
 	Describe the figure	Írd le az ábrát
 	Description writer	A leírás szerzője
+	Deskew	Kiegyenesítés
 	Detached signature file	Különálló aláírási fájl
 	Detect form fields	Űrlapmezők felismerése
 	Detected 1 form field	1 űrlapmezőt találtunk
@@ -931,6 +953,7 @@ comment menu	Edit	Szerkesztés
 	Edit text…	Szöveg szerkesztése…
 	Edit this PDF	Ezen PDF szerkesztése
 	Edit {field}'s formula	{field} képletének szerkesztése
+	Editable text	Szerkeszthető szöveg
 	Editorial	Editorial
 	Email Address	E-mail-cím
 	Email Addresses	E-mail-címek
@@ -949,6 +972,7 @@ comment menu	Edit	Szerkesztés
 	Encryption	Titkosítás
 key	End	End
 	Endpoints	Végpontok
+	ENGINE · STRATEGY	MOTOR · STRATÉGIA
 	Enhance camera image	Kamerakép javítása
 	Enhance page	Oldal javítása
 	Enhance scanned file	Beolvasott fájl javítása
@@ -1034,6 +1058,7 @@ key	Esc	Esc
 	Extract the selected pages…	A kijelölt oldalak kibontása…
 	Extracted 1 page	1 oldal kinyerve
 	Extracted {n} pages	{n} oldal kinyerve
+	F8: next word to review; Shift+F8 goes back	F8: a következő ellenőrizendő szó; Shift+F8 vissza
 	Failed	Nem felelt meg
 scroll speed	Fast	Gyors
 	Fast Web View	Gyors webes megjelenítés
@@ -1149,6 +1174,7 @@ scroll speed	Fast	Gyors
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	A betűtípusoknak Unicode-ra kell képezniük a karaktereiket, hogy a szöveg olvasható és másolható legyen. Javítsd a betűtípusokat, vagy hozd létre újra a PDF-et.
 	for images above	az ennél nagyobb képeknél
 	For page sizes and margins.	Oldalméretekhez és margókhoz.
+	Force OCR (override skip options)	OCR kényszerítése (a kihagyási beállítások felülbírálása)
 	Form data and PDF forms	Űrlapadatok és PDF-űrlapok
 	Form field advice	Tanácsok űrlapmezőkhöz
 	Form field detection is already running	Az űrlapmezők felismerése már folyamatban van
@@ -1230,6 +1256,7 @@ scroll speed	Fast	Gyors
 	Hide window controls	Ablakvezérlők elrejtése
 	Hide {app}	A(z) {app} elrejtése
 	Hides annotation	Széljegyzetet takar
+	HIGH (>= 90%)	MAGAS (>= 90%)
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	A jobb képminőség nagyobb fájlmérettel jár. Másolat csak akkor készül, ha kisebb.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Jobb minőség, általában nagyobb fájlok. A 450 ppi feletti JPEG-fotók 300 ppi felbontásra csökkennek, 85-ös minőséggel. A veszteségmentes grafikák és a maszkolt képek megőrzik képpontjaikat.
 	Highlight	Kiemelés
@@ -1261,6 +1288,7 @@ key	Home	Home
 	Import {name}	{name} importálása
 	Importing data arrives on the web with file pickers for data files	Az adatok importálása a webes változatban az adatfájl-választóval együtt érkezik
 	In multiple files	Több fájlban
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	Több fájlnál: a szöveget tartalmazó fájl külön, kihagyottként számít, és nem íródik ki hozzá semmi
 	In new window	Megnyitás új ablakban
 	In streams that use LZW encoding, use Flate instead	Az LZW kódolású adatfolyamok Flate kódolása
 	In this file	Ebben a fájlban
@@ -1434,8 +1462,10 @@ key	Home	Home
 	Looking for PDFs…	PDF-ek keresése…
 	Looking for printers…	Nyomtatók keresése…
 	Loop	Hurok
+	LOW (< 70%)	ALACSONY (< 70%)
 	Low resolution	Alacsony felbontás
 	Low Resolution (150 dpi)	Alacsony felbontás (150 dpi)
+	LOW-CONFIDENCE WORDS	ALACSONY MEGBÍZHATÓSÁGÚ SZAVAK
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	Akadálymentesítés
 	Make Current Properties Default	A jelenlegi tulajdonságok legyenek az alapértelmezettek
@@ -1461,6 +1491,7 @@ key	Home	Home
 	Mark for redaction	Megjelölés kitakarásra
 	Mark Page Range	Oldaltartomány megjelölése
 	Mark pages for redaction	Oldalak megjelölése kitakarásra
+	Mark this page as reviewed (Ctrl+T)	Az oldal megjelölése ellenőrzöttként (Ctrl+T)
 	Mark with checkmark	Megjelölés pipával
 	Marked	Megjelölve
 	Marks do not remove content. Select Redact all, then save.	A jelölések nem távolítják el a tartalmat. Válassza az „Összes kitakarása” lehetőséget, majd mentse a fájlt.
@@ -1484,6 +1515,7 @@ key	Home	Home
 	Measurement information	Mérési adatok
 	Measurement snapping	Illesztés méréskor
 	Measuring tool	Mérőeszköz
+	MEDIUM (70-89%)	KÖZEPES (70–89%)
 	Menu	Menü
 	Merge all windows	Összes ablak egyesítése
 	Merge data files into spreadsheet…	Adatfájlok egyesítése táblázatba…
@@ -1581,6 +1613,7 @@ key	Home	Home
 	Next month	Következő hónap
 	Next sheet	Következő lap
 	Next tab	Következő lap
+	Next uncertain	Következő bizonytalan
 	Next view	Következő nézet
 	Night	Éjszaka
 	No actions	Nincs művelet
@@ -1686,6 +1719,8 @@ scroll speed	Normal	Normál
 	Number pages	Oldalak számozása
 	Number pages…	Oldalak számozása…
 	Numbered list	Számozott lista
+	OCR complete — no text recognized on this page.	Az OCR kész — ezen az oldalon nem ismert fel szöveget.
+	OCR results rejected.	Az OCR eredményei elvetve.
 	October	október
 	Odd pages	Páratlan oldalak
 	Odd Pages Only	Csak a páratlan oldalak
@@ -1803,6 +1838,7 @@ animation effects	On	Be
 	Oval	Ellipszis
 	Owner password (no restrictions apply)	Tulajdonosi jelszó (nincs korlátozás)
 	Package: {name}	Csomag: {name}
+	PAGE	OLDAL
 	Page background	Oldal háttere
 	Page Content	Oldaltartalom
 	Page display	Oldalmegjelenítés
@@ -1826,6 +1862,7 @@ animation effects	On	Be
 	Page thumbnails panel	Oldalbélyegképek panel
 	Page tools	Oldaleszközök
 	Page transitions	Oldalváltások
+	Page verified	Oldal ellenőrizve
 	Page will not cause screen flicker	Az oldal nem okoz képernyővillogást
 	Page {label}	{label}. oldal
 	Page {old} → Page {new}	{old}. oldal → {new}. oldal
@@ -1846,6 +1883,7 @@ animation effects	On	Be
 	Pages to Print	Nyomtatandó oldalak
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Oldalak, amelyek szövegét nem sikerült beolvasni: {n}. Az ezeken lévő találatok nem szerepelnek a listában.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	A hivatkozásokat, megjegyzéseket vagy mezőket tartalmazó oldalakon a tab-sorrend kövesse a szerkezetet. A javítás minden oldal tab-sorrendjét a dokumentumszerkezetre állítja.
+	Pages with renderable text are left alone and reported as skipped	A megjeleníthető szöveget tartalmazó oldalak változatlanok maradnak, és kihagyottként jelennek meg
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Ezek az oldalak megváltoztak a háttér hozzáadása után, ezért a saját fehér kitöltésük kikapcsolva marad: {pages}. Fehér papíron ugyanúgy néznek ki.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Ezeknek az oldalaknak saját fehér kitöltése van, amely eltakarná a hátteret: {pages}. Csere
 	Pages:	Oldalak:
@@ -1967,8 +2005,10 @@ animation effects	On	Be
 	Previous month	Előző hónap
 	Previous sheet	Előző lap
 	Previous tab	Előző lap
+	Previous uncertain	Előző bizonytalan
 	Previous view	Előző nézet
 	Primary language	Elsődleges nyelv
+	Primary only	Csak az elsődleges
 	Print ({key})	Nyomtatás ({key})
 	Print as image	Nyomtatás képként
 	Print in grayscale	Nyomtatás szürkeárnyalatosan
@@ -2014,6 +2054,8 @@ animation effects	On	Be
 	RAM {gb} GB	RAM {gb} GB
 	Rating	Értékelés
 	Raw:	Nyers:
+	Re-OCR entire page	Teljes oldal újra-OCR-ezése
+	Re-OCR this region	Ennek a területnek az újra-OCR-ezése
 	Re-type Password	Jelszó újra
 	Read	Olvasás
 	Read mode	Olvasási mód
@@ -2025,6 +2067,7 @@ animation effects	On	Be
 	Read out loud requires Windows, macOS or Linux.	A felolvasáshoz jelenleg Windows / macOS / Linux szükséges.
 	Read this page only	Csak ezen oldal felolvasása
 	Read to end of document	Felolvasás a dokumentum végéig
+	Read {n} words on {m} of {t} pages	{n} szó beolvasva {t} oldalból {m} oldalon
 	Reading colours	Olvasási színek
 	Reading options…	Olvasási lehetőségek…
 	Reading page {page}…	{page}. oldal felolvasása…
@@ -2033,6 +2076,7 @@ animation effects	On	Be
 	Reading the printer's settings…	A nyomtató beállításainak beolvasása…
 	Reading the raw document…	A nyers dokumentum olvasása…
 	Reading theme	Olvasási téma
+	Reads pages and files even where the skip options would leave them alone	Az oldalakat és fájlokat ott is beolvassa, ahol a kihagyási beállítások kihagynák őket
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Ezeket olvassa: {names}, amelyek visszaolvassák. Hurkot semmilyen sorrend nem javít meg: módosítsd az egyik képletet.
 	Reads {name}, which calculates later, so it shows an old value.	Ezt olvassa: {name}, amely később számítódik, ezért régi értéket mutat.
 	Reads {name}, which the form doesn't have, so it gets no value there.	Ezt olvassa: {name}, amely nincs az űrlapon, így onnan nem kap értéket.
@@ -2051,6 +2095,8 @@ animation effects	On	Be
 	Recognize Text…	Szövegfelismerés…
 	Recognize text…	Szövegfelismerés…
 	Recognized 1 word	1 szó felismerve
+	Recognized text	Felismert szöveg
+	Recognized text applied ({n} words, one undoable step)	A felismert szöveg alkalmazva ({n} szó, egy visszavonható lépés)
 	Recognized {n} words	{n} szó felismerve
 	Recognized {w} words in 1 file	{w} szó felismerve 1 fájlban
 	Recognized {w} words in {n} files	{w} szó felismerve {n} fájlban
@@ -2083,6 +2129,8 @@ animation effects	On	Be
 	Refresh plugins	Bővítmények frissítése
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Terület hüvelykben. Hagyja a szélességet vagy magasságot nullán a teljes területhez.
 	Regularity	Szabályosság
+	Reject	Elvetés
+	Reject entire page	Teljes oldal elvetése
 	Rejected	Elutasítva
 	Release notes	Kiadási megjegyzések
 	Reliable character encoding is provided	Megbízható karakterkódolás van megadva
@@ -2123,6 +2171,7 @@ animation effects	On	Be
 	Remove {name} from Recent	{name} eltávolítása a legutóbbiak közül
 	Remove {n} files	{n} fájl eltávolítása
 	Remove {n} pages	{n} oldal eltávolítása
+	removed	eltávolítva
 	Removed 1 hidden item. Save to remove them from the file.	1 rejtett elemet eltávolítottunk. Ments, hogy a fájlból is kikerüljön.
 	Removed 1 link	1 hivatkozás eltávolítva
 	Removed the signature {field} and kept its empty field	{field} aláírás eltávolítva, az üres mező megmaradt
@@ -2235,11 +2284,13 @@ animation effects	On	Be
 	Rotate view clockwise	Nézet forgatása az óramutató járásával megegyezően
 	Rotate view clockwise ({key})	Nézet forgatása az óramutató járásával megegyezően ({key})
 	Rotate view counterclockwise	Nézet forgatása az óramutató járásával ellentétesen
+	ROVER vote	ROVER-szavazás
 	Row spacing	Sorköz
 	Run	Futtatás
 	Run a JavaScript	JavaScript futtatása
 	Run form script	Űrlapszkript futtatása
 	Run JavaScript	JavaScript futtatása
+	Run OCR	OCR futtatása
 	Running action… file {d} of {t}	Művelet fut… {d}. fájl / {t}
 	Runtime	Futtató
 	Safety margin (pt)	Biztonsági margó (pt)
@@ -2250,6 +2301,7 @@ animation effects	On	Be
 	Sanitize Documents	Dokumentumok megtisztítása
 	Sanitize document…	Dokumentum megtisztítása…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	A megtisztítás eltávolítja a rejtett adatokat a dokumentumból: metaadatokat, fájlmellékleteket, megjegyzéseket, űrlapmezőket (beégetve), rejtett szöveget és rétegeket, könyvjelzőket, hivatkozásokat, műveleteket és szkripteket, valamint az alkalmazások privát adatait.
+	Sauvola binarization: ink to black, paper to white	Sauvola-binarizálás: a tinta fekete, a papír fehér lesz
 	Save & Close	Mentés és bezárás
 	Save ({key})	Mentés ({key})
 	Save a signature first	Először mentsen egy aláírást
@@ -2372,6 +2424,7 @@ animation effects	On	Be
 	Select a placed signature first	Először válasszon ki egy elhelyezett aláírást
 	Select a text box or an image first	Előbb válassz ki egy szövegdobozt vagy egy képet
 	Select a word	Szó kijelölése
+	Select a word on the page to inspect it	Jelöljön ki egy szót az oldalon a vizsgálatához
 	Select Action:	Művelet kiválasztása:
 	Select All	Összes kijelölése
 	Select all pages (Organize)	Összes oldal kijelölése (Rendezés)
@@ -2441,6 +2494,7 @@ animation effects	On	Be
 	Set to current page ({n})	Beállítás az aktuális oldalra ({n})
 	Set to zero	Nullázás
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Az ehhez a forráshoz tartozó beállítások. Hagyjon egy vezérlőt, ha a meghajtó értékét akarja.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	Több fájlnak ugyanaz a neve, így az eredményeik felülírnák egymást; semmi sem íródott ki: {list}
 	SHA-1 digest	SHA-1 kivonat
 	SHA-256 digest	SHA-256 kivonat
 	Shadings	Árnyalatok
@@ -2451,6 +2505,7 @@ animation effects	On	Be
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	A Shift 45 fokra korlátoz. A Backspace töröl egy csúcspontot. Az Escape megszakítja.
 	Shift drags freely	A Shift szabadon mozgat
+	Shift+F8: the previous word to review	Shift+F8: az előző ellenőrizendő szó
 	Shift- or Ctrl/Command-click to select several fields.	Több mező kijelöléséhez kattints a Shift vagy Ctrl/Command nyomva tartásával.
 	Shift-click to select several objects. Drag empty space to select an area.	Több objektum kijelöléséhez kattintson a Shift lenyomásával. Terület kijelöléséhez húzzon az üres részen.
 	ships in milestone {m}	{m} mérföldkőben érkezik
@@ -2540,8 +2595,11 @@ key	Shift	Shift
 	Single page	Egy oldal
 	Single Page Continuous	Egy oldal, folyamatos
 	Single word or phrase	Egy szó vagy kifejezés
+	Skip files that already have text	A már szöveget tartalmazó fájlok kihagyása
+	Skip pages that already have text	A már szöveget tartalmazó oldalak kihagyása
 	Skip Rule	Szabály kihagyása
 	Skipped	Kihagyva
+	skipped	kihagyva
 	Slash	Perjel
 scroll speed	Slow	Lassú
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	Kisebb fájlok képernyőhöz és e-mailhez. A 225 ppi feletti képek 150 ppi felbontásra csökkennek, JPEG 60-as minőséggel; a vonalas rajzok részleteket veszíthetnek.
@@ -2567,6 +2625,7 @@ scroll speed	Slow	Lassú
 	Sort items	Elemek rendezése
 	sorted ascending	növekvő sorrendben
 	sorted descending	csökkenő sorrendben
+	Source page	Forrásoldal
 key	Space	Szóköz
 	Space Audit	Helyfoglalás
 	Spacing between copies	Távolság a másolatok között
@@ -2601,11 +2660,13 @@ action wizard	Start	Indítás
 	Start page number	Kezdő oldalszám
 	Steps	Lépések
 	Sticky note	Cetli
+	still checking whether the tesseract program can run; try again in a moment	még folyik annak ellenőrzése, hogy a tesseract program futtatható-e; próbálja újra egy pillanat múlva
 	Still printing; the job continues on the printer	Még nyomtat; a feladat a nyomtatón folytatódik
 	Stop reading	Felolvasás leállítása
 	Straighten scanned page	Beszkennelt oldal kiegyenesítése
 	Straighten skewed scans	Ferde szkennelt oldalak kiegyenesítése
 	Straighten the page	Oldal egyenesítése
+	Straightens skewed text lines before reading	Olvasás előtt kiegyenesíti a ferde szövegsorokat
 	Strength: {s}	Erősség: {s}
 	Strikethrough	Áthúzás
 	Strikethrough text	Szöveg áthúzása
@@ -2620,6 +2681,7 @@ action wizard	Start	Indítás
 	Submit XFDF data	XFDF-adatok küldése
 	Subscript	Subscript
 	Suggest edits	Módosítások javaslata
+	Suggestions	Javaslatok
 	sum (+)	összeg (+)
 	Summarize	Összefoglalás
 	Summarize comments	Megjegyzések összefoglalása
@@ -2695,12 +2757,14 @@ action wizard	Start	Indítás
 	Thai and Arabic use regular fallback fonts when available.	A thai és az arab szöveg normál stílusú helyettesítő betűtípusokat használ, ha rendelkezésre állnak.
 	That didn't work: an internal error stopped it ({m}).	Ez nem sikerült: belső hiba állította le ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Ez nem sikerült: egy belső hiba megállította ({m}). A dokumentumaid változatlanok.
+	That is the source file; choose another destination	Ez a forrásfájl; válasszon másik célt
 	That isn't a scanner address	Ez nem lapolvasócím
 	That length can't be right for this line: check the unit.	Ez a hossz nem lehet helyes ehhez a vonalhoz: ellenőrizze a mértékegységet.
 	The answer proposes formatting changes.	A válasz formázási módosításokat javasol.
 	The answer stopped unexpectedly.	A válasz váratlanul megszakadt.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Az API-kulcs titkosítatlanul kerülne elküldésre erre a címre. Használj https://-t, hacsak a szerver nem egy megbízható hálózaton van.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Az üveg egyszerre egy oldalt olvas. Olvassa be az előlapot, fordítsa meg, majd a hátlapot.
+	The built-in engine (pure Rust)	A beépített motor (tiszta Rust)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	A számítási sorrendben {n} bejegyzés semmit nem számít ki. A „Sorrend javítása” eltávolítja.|A számítási sorrendben {n} bejegyzés semmit nem számít ki. A „Sorrend javítása” eltávolítja őket.
 	the certificate authorities	a hitelesítésszolgáltatók
 	the certificate expired on {date}	a tanúsítvány lejárt: {date}
@@ -2778,9 +2842,13 @@ action wizard	Start	Indítás
 	The order saved in the PDF needs tidying	A PDF-ben mentett sorrend rendbetételre szorul
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Az eredeti fájlok nem változnak. A kimeneti mappában lévő azonos nevű fájl megmarad, az új pedig sorszámot kap.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	A többi aláírás ({names}) jelezni fogja, hogy a dokumentum az aláírása után megváltozott. Ellenőrizze újra őket: semmi sem garantálja, hogy érvényesek maradnak.
+	The output folder already holds files of these names; nothing was written: {list}	A kimeneti mappában már vannak ilyen nevű fájlok; semmi sem íródott ki: {list}
 	The output folder can't be one of the folders being read, or contain one.	A kimeneti mappa nem lehet egyik beolvasott mappa sem, és nem tartalmazhat ilyet.
 	The page could not be separated: {error}	Az oldal színbontása nem sikerült: {error}
 	The page has changed; select the image again	Az oldal megváltozott; jelölje ki újra a képet
+	The page was read again; its words were replaced (undo in the panel)	Az oldal újra be lett olvasva; a szavait lecserélte (visszavonás a panelen)
+	The page's words were applied as one undoable step ({n} words)	Az oldal szavai egyetlen visszavonható lépésként alkalmazva ({n} szó)
+	The page's words were cleared (undo in the panel)	Az oldal szavai törölve (visszavonás a panelen)
 	The pages already scanned were kept in the document.	A már beolvasott oldalak megmaradtak a dokumentumban.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Az oldalak kinyerése megtörtént, de nem lettek törölve, mert a dokumentum megváltozott, amíg mappát választottál.
 	the password is incorrect	a jelszó hibás
@@ -2806,8 +2874,10 @@ action wizard	Start	Indítás
 	The printer's reply couldn't be understood	A nyomtató válasza nem értelmezhető
 	The provider's page didn't come back in time. Try again.	A szolgáltató oldala nem tért vissza időben. Próbálja újra.
 	The raw text was truncated to what fits.	A nyers szöveg csonkolva lett.
+	The re-read found no text; the existing words are unchanged	Az újraolvasás nem talált szöveget; a meglévő szavak változatlanok
 	The redaction does not fit page {page}; no pages were marked.	A kitakarás nem fér el a(z) {page}. oldalon; nem lett oldal megjelölve.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Az átirányítási URI csak http://127.0.0.1 vagy http://localhost lehet porttal.
+	The region was read again; its words were replaced (undo in the panel)	A terület újra be lett olvasva; a szavait lecserélte (visszavonás a panelen)
 	The release has ambiguous packages. Choose a package on the official release page.	A kiadáshoz többféle csomag tartozik. Válassz egyet a hivatalos kiadási oldalon.
 	The release is not a published stable update. Try again later.	Ez a kiadás nem közzétett stabil frissítés. Próbáld újra később.
 	The replacement file doesn't have that many pages.	A cserefájlban nincs ennyi oldal.
@@ -2830,9 +2900,11 @@ action wizard	Start	Indítás
 	The scanner reported a lamp or device error.	A lapolvasó lámpa- vagy készülékhibát jelzett.
 	The scanner reported a paper problem (a jam or several sheets fed together).	A lapolvasó papírhibát jelzett (elakadás vagy több lap együttes behúzása).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	A képernyő valódi képpont/hüvelyk értéke. Kalibráljon vonalzóval, hogy a tényleges méret (100%) valódi méretükben mutassa az oldalakat.
+	The searchable copies are written here under the source names	A kereshető másolatok ide íródnak, a forrásfájlok nevével
 	The selected area has been copied ({w} × {h} pixels)	A kijelölt terület a vágólapra került ({w} × {h} képpont)
 	The selected fields could not be found. Select them again.	A kijelölt mezők nem találhatók. Jelöld ki őket újra.
 	The selected redaction is unavailable or invalid.	A kijelölt kitakarás nem érhető el vagy érvénytelen.
+	The selected word is gone; choose another	A kijelölt szó már nem létezik; válasszon másikat
 	The selection changed. Select the signature again.	A kijelölés megváltozott. Válassza ki újra az aláírást.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	A(z) {provider} munkamenete véget ért. Jelentkezzen be újra a Digitális azonosító beállítása résznél.
 	The shared folder:	A közös mappa:
@@ -2851,6 +2923,9 @@ action wizard	Start	Indítás
 	The smart card's digital IDs couldn't be listed: {e}	Az intelligens kártya digitális azonosítóit nem sikerült listázni: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	A szabványos betűtípusok nem tudják megjeleníteni ezt: „{c}” ({code}). Egyelőre csak nyugat-európai karakterek adhatók hozzá szövegként.
 	The standard it must meet and where the file goes	Milyen szabványnak kell megfelelnie, és hová kerül a fájl
+	the tesseract engine is not available in the web build	a tesseract motor nem érhető el a webes változatban
+	the tesseract program was not found (install it, or add it to the PATH)	a tesseract program nem található (telepítse, vagy vegye fel a PATH-ba)
+	The tesseract program, run as an external process	A tesseract program, külső folyamatként futtatva
 	The text is the same	A szöveg azonos
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	a szövegfelismerés modelljei nincsenek telepítve (telepítsd újra a PdfCraftot, vagy állítsd a PDFCRAFT_MODELS változót az őket tartalmazó mappára)
 	The title in the metadata and the document information differ	A metaadatokban és a dokumentumadatokban lévő cím eltér
@@ -2993,6 +3068,7 @@ action wizard	Start	Indítás
 	Turn on continuous scrolling	Folyamatos görgetés bekapcsolása
 	Turn upside down (180°)	Fejjel lefelé fordítás (180°)
 	Turned left	Balra forgatva
+	Turns pages scanned sideways or upside down upright before reading	Olvasás előtt állóra fordítja az oldalra fektetve vagy fejjel lefelé beolvasott oldalakat
 	two cells would both be named {name}	két cella neve is {name} lenne
 	Two-page view	Kétoldalas nézet
 	Two-sided:	Kétoldalas:
@@ -3012,6 +3088,7 @@ signature pad	Type	Gépelés
 	Underline	Aláhúzás
 	Underline text	Szöveg aláhúzása
 	Undid {label}	{label} visszavonva
+	Undo the last review change (Ctrl+Z)	Az utolsó ellenőrzési módosítás visszavonása (Ctrl+Z)
 	Undo {action}	{action} visszavonása
 	Unit	Mértékegység
 	Unknown author	Ismeretlen szerző
@@ -3028,6 +3105,7 @@ signature pad	Type	Gépelés
 	Unpin {folder}	{folder} kitűzésének megszüntetése
 	Unpinned {tool} from Home	{tool} leválasztva a kezdőlapról
 	Unplaced	Nincs elhelyezve
+	unreviewed	nincs ellenőrizve
 	Unsaved changes to this document are saved in the new file too.	A dokumentum nem mentett módosításai is az új fájlba kerülnek.
 	Unsupported measurements	Nem támogatott mérések
 	Untagged content	Címkézetlen tartalom
@@ -3063,6 +3141,7 @@ signature pad	Type	Gépelés
 	Use print production	Nyomdai előkészítés használata
 	Use system setting	Rendszerbeállítás használata
 	Use system title bar	Rendszer címsorának használata
+	Use the chosen engine's reading alone	Csak a választott motor olvasatának használata
 	Use the default	Az alapértelmezett használata
 	Use this size for saved initials	Ezt a méretet használja a mentett monogramhoz
 	Use this size for saved signature	Ezt a méretet használja a mentett aláíráshoz
@@ -3089,6 +3168,9 @@ signature pad	Type	Gépelés
 	Validity unknown	Ismeretlen érvényesség
 	Value is not calculated	Az érték nincs számítva
 	Value is the	Az érték a
+	Verified	Ellenőrizve
+	verified	ellenőrizve
+	VERIFIED %	ELLENŐRIZVE %
 	Verify	Ellenőrzés
 	Verify PDF/UA	PDF/UA ellenőrzése
 	Verify PDF/X	PDF/X ellenőrzése
@@ -3134,14 +3216,17 @@ document scrollbar width	Wide	Széles
 	Will use the feeder.	Az adagolót fogja használni.
 	Window Options	Ablakbeállítások
 	Windows store  ·  	Windows-tároló  ·  
+	Word	Szó
 	Word count	Szavak száma
 	Word counting stopped unexpectedly.	A szavak számlálása váratlanul leállt.
 	Word count…	Szavak száma…
 	Words or phrases to redact	Kitakarni kívánt szavak vagy kifejezések
 	Workspace modes	Munkaterület-módok
 	Write this email?	Megírod ezt az e-mailt?
+	Writes a new document of visible text; the scan is not changed	Új, látható szöveget tartalmazó dokumentumot ír; a beolvasott kép nem változik
 	Wrong password	Hibás jelszó
 	Wrote 1 file to {dir}	1 fájl ide írva: {dir}
+	Wrote {name}	Kiírva: {name}
 	Wrote {n} files to {dir}	{n} fájl ide írva: {dir}
 	X Object Forms	XObject-űrlapok
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA-űrlap: a mezői és az XFA-adatai együtt maradnak, így más megjelenítők azt mutatják, amit beírsz.
@@ -3215,6 +3300,7 @@ document scrollbar width	Wide	Széles
 	{name} — unsaved changes	{name} — nem mentett módosítások
 	{name}: choosing images arrives on the web with file pickers for images	{name}: a képek kiválasztása a webes változatban a képválasztóval együtt érkezik
 	{name}: the {other} action isn't supported yet	{name}: ez a művelet még nem támogatott ({other})
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}: {n} alacsony megbízhatóságú szó a következő oldalakon: {pages}
 	{name}_unsigned.pdf	{name}_alairas_nelkul.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} számítás mostantól az új nevet használja.|{n} számítás mostantól az új nevet használja.
 	{n} contributors · {c} commits	{n} közreműködő · {c} commit
@@ -3247,6 +3333,7 @@ document scrollbar width	Wide	Széles
 	{n} selected	{n} kijelölve
 	{n} tags	{n} címke
 	{n} word(s) or phrase(s)	{n} szó vagy kifejezés
+	{n} word(s) to review	{n} ellenőrizendő szó
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} – {status}
 	{signers} signers; details of the first are shown	{signers} aláíró; az első részletei jelennek meg

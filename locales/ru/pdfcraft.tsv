@@ -19,6 +19,7 @@
 	 ({s} warnings: {first})	 ({s} предупреждений: {first})
 	 on page {p}	 на стр. {p}
 	 · password-protected	  · защищён паролем
+	+ Dictionary	+ Словарь
 	+ Page {p}	+ Стр. {p}
 	, Expires: 	, Истекает:
 	1 difference found	Найдено 1 отличие
@@ -40,13 +41,16 @@
 	9 digit, A letter, O letter or digit, X any character	9 — цифра, A — буква, O — буква или цифра, X — любой символ
 	; 1 page already had text	; 1 страница уже имела текст
 	; 1 page skipped	; пропущена 1 страница
+	; cancelled — {n} files were not run	; отменено — {n} файлов не обработано
 	; corrected {n} pages	; исправлено страниц: {n}
 	; failed: {list}	; не удалось: {list}
 	; skipped: {n}	; пропущено: {n}
+	; {n} files already had text	; в {n} файлах уже был текст
 	; {n} pages already had text	; {n} страниц уже имели текст
 	; {n} pages skipped	; пропущено страниц: {n}
 	? of {n}	? из {n}
 	`{command}` {when}	`{command}` {when}
+	A 3×3 median filter against scan speckle	Медианный фильтр 3×3 против пятен скана
 	a bookmark cannot be moved inside itself	закладку нельзя переместить внутрь самой себя
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Открытое PDF-приложение с чистой комнатой, написанное на Rust. MIT OR Apache-2.0.
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	столбец слишком узкий: расширьте область, отдайте столбцу больше ширины, уменьшите число столбцов или интервал между ними
@@ -56,6 +60,7 @@
 	A document needs at least one page: copy instead	Документу нужна хотя бы одна страница: копируйте вместо этого
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Метка времени документа охватывает весь файл и не является чьей-либо подписью, поэтому её нельзя удалить отдельно.
 	a field named {name} already exists	поле с именем {name} уже существует
+	A folder is asked for when a multiple-file run starts	Папка запрашивается при запуске обработки нескольких файлов
 	A form field has additional actions	У поля формы есть дополнительные действия
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локальная модель — не передовая облачная: она может ошибаться, и длинный ответ на процессоре занимает время. Проверяйте всё важное и соотносите размер модели с этой машиной до загрузки.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Логотип или название слева от вкладок, там, где их показала бы строка заголовка: PdfCraft или вашей компании.
@@ -72,6 +77,8 @@
 	About {app}	О программе {app}
 	about {h} h {m} min left	осталось около {h} ч {m} мин
 	about {n} min left	осталось около {n} мин
+	Accept	Принять
+	Accept entire page	Принять всю страницу
 	Accepted	Принято
 	Accepted by {printer}	Принято принтером {printer}
 	Accessibility	Доступность
@@ -104,6 +111,7 @@
 	Add a page from template {name}	Добавить страницу из шаблона {name}
 	Add a radio button	Добавить переключатель
 	Add a reply	Добавить ответ
+	Add a second engine's reading when the first is unsure	Добавляет распознавание второго движка, когда первый не уверен
 	Add a stamp	Добавить штамп
 	Add a sticky note	Добавить стикер
 	Add a sticky note here	Добавить стикер здесь
@@ -239,6 +247,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Альтернативный текст на элементе без содержимого страницы никогда не достигается. Удалите его или присоедините элемент к содержимому.
 	Alternate text should not hide annotation	Альтернативный текст не должен скрывать аннотацию
 	Alternate text that will never be read	Альтернативный текст, который никогда не будет прочитан
+	Always read with both engines and merge the words	Всегда распознаёт обоими движками и объединяет слова
 	Always use my default zoom and page layout	Всегда использовать мой масштаб и макет страницы по умолчанию
 	An action is already running	Действие уже выполняется
 	An action with this name already exists.	Действие с таким названием уже существует.
@@ -314,6 +323,7 @@
 	Auto portrait/landscape	Авто книжная/альбомная
 	Auto-deskew	Автовыравнивание
 	Auto-detect	Определять автоматически
+	Auto-rotate	Автоповорот
 	Auto-rotate pages	Автоповорот страниц
 	Auto-size text to fit redaction region	Автоподбор размера текста по области сокрытия
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Автоматические скрипты AcroForm отключены, пока нет безопасной изоляции выполнения; сохранённые значения полей оставлены как есть. Скрипты кнопок и консоли по-прежнему доступны.
@@ -321,6 +331,7 @@
 	Automatically tag PDF	Автоматически разметить PDF
 	Available version: {v}	Доступная версия: {v}
 	average	среднее
+	AVG CONFIDENCE	СРЕДНЯЯ ДОСТОВЕРНОСТЬ
 	Back	Назад
 	Back side only	Только оборотная сторона
 	Back to all tools	Назад ко всем инструментам
@@ -343,6 +354,7 @@
 	Best for: the deepest reasoning this family has	Лучше всего для: самого глубокого рассуждения в этом семействе
 	Beveled	Скошенный
 	Bicubic downsampling to	Бикубическое уменьшение до
+	Binarize	Бинаризация
 	Binding	Переплёт
 	Binding:	Переплёт:
 	Black & White	Чёрно-белый
@@ -359,6 +371,7 @@
 	Bookmarks Panel and Page	Панель закладок и страница
 	Border Color:	Цвет границы:
 	Borders and Colors	Границы и цвета
+	Both engines, combined as the Strategy says	Оба движка, объединённые по выбранной стратегии
 	Both sides	Обе стороны
 	Bottom	Низ
 	Boundary coordinates run from 0 to 1 across the viewport.	Координаты границы меняются от 0 до 1 в области просмотра.
@@ -390,6 +403,7 @@
 	Cancel reverse sides	Отменить оборотные стороны
 	Canceling…	Отмена…
 	Cancelled	Отменено
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	Отменено — прочитано {n} слов на {m} из {t} страниц; остальное не прочитано
 	Cancelling…	Отмена…
 	Card driver (PKCS #11)	Драйвер карты (PKCS #11)
 	Card PIN	PIN-код карты
@@ -515,6 +529,7 @@
 	Clear selection / close find	Снять выделение / закрыть поиск
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	Устраните замятие и ровно загрузите оставшиеся листы, затем нажмите «Продолжить сканирование».
 	Clear the jam and load the sheets squarely, then choose Try again.	Устраните замятие и ровно загрузите листы, затем нажмите «Повторить».
+	Click a word to inspect it; drag a rectangle to re-read part of the page	Щёлкните слово, чтобы проверить его; выделите прямоугольник, чтобы заново распознать часть страницы
 	Click on the page to add a {tool}, or drag to set its size	Щёлкните на странице, чтобы добавить {tool}, или перетащите, чтобы задать размер
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Щёлкните на странице, чтобы добавить текст; каждый щелчок создаёт новое поле, ✓ завершает. Перетаскивайте элементы для перемещения, угол — для размера, двойной щелчок по тексту — для редактирования.
 	Click text or an image to edit it	Щёлкните текст или изображение, чтобы редактировать
@@ -592,6 +607,8 @@
 	Compress and export	Сжатие и экспорт
 	Compress document structure (object streams)	Сжать структуру документа (потоки объектов)
 	Compressing combined PDF…	Сжатие объединённого PDF…
+	CONFIDENCE	ДОСТОВЕРНОСТЬ
+	Confidence weighted	С учётом достоверности
 	Configure a Digital ID for Signing	Настроить цифровой идентификатор для подписи
 	Configure New Digital ID	Настроить новый цифровой идентификатор
 	Confirm Password	Подтвердите пароль
@@ -634,8 +651,11 @@
 	Copyright status	Статус авторского права
 	Copyrighted	Защищено авторским правом
 	Correct recognized text	Исправить распознанный текст
+	Correct recognized text…	Исправить распознанный текст…
 	Correct scans	Исправить сканы
+	corrected	исправлено
 	Corrected scan	Исправленный скан
+	Corrected text (Enter commits)	Исправленный текст (Enter подтверждает)
 	Could not copy the selection because text could not be read on every page	Не удалось скопировать выделение, поскольку текст не удалось прочитать на всех страницах
 	Could not mark the selection because text could not be read on every page	Не удалось пометить выделение, поскольку текст не удалось прочитать на всех страницах
 	Could not save: {e}	Не удалось сохранить: {e}
@@ -794,9 +814,11 @@ key	Delete	Delete
 	Delete XMP metadata	Удалить метаданные XMP
 	Delete {o}	Удалить {o}
 	Deleted page	Удалённая страница
+	Denoise	Шумоподавление
 	Denominator	Знаменатель
 	Describe the figure	Опишите фигура
 	Description writer	Автор описания
+	Deskew	Выравнивание наклона
 	Detached signature file	Файл отсоединённой подписи
 	Detect form fields	Определить поля формы
 	Detected 1 form field	Обнаружено 1 поле формы
@@ -955,6 +977,7 @@ key	Delete	Delete
 	Edit text…	Редактировать текст…
 	Edit this PDF	Редактировать этот PDF
 	Edit {field}'s formula	Изменить формулу {field}
+	Editable text	Редактируемый текст
 	Editing	Редактирования
 	Editorial	Editorial
 	Edit…	Редактировать…
@@ -976,6 +999,7 @@ key	Delete	Delete
 	Encryption	Шифрование
 key	End	End
 	Endpoints	Конечные точки
+	ENGINE · STRATEGY	ДВИЖОК · СТРАТЕГИЯ
 	Enhance camera image	Улучшить снимок с камеры
 	Enhance page	Улучшить страницу
 	Enhance scanned file	Улучшить отсканированный файл
@@ -1064,6 +1088,7 @@ key	Esc	Esc
 	Extract the selected pages…	Извлечь выбранные страницы…
 	Extracted 1 page	Извлечена 1 страница
 	Extracted {n} pages	Извлечено {n} страниц
+	F8: next word to review; Shift+F8 goes back	F8: следующее слово для проверки; Shift+F8 — назад
 	Failed	Не пройдено
 scroll speed	Fast	Высокая
 	Fast Web View	Быстрый веб-просмотр
@@ -1187,6 +1212,7 @@ scroll speed	Fast	Высокая
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Шрифты должны сопоставлять символы с Unicode, чтобы текст можно было читать и копировать. Исправьте шрифты или пересоздайте PDF.
 	for images above	для изображений выше
 	For page sizes and margins.	Для размеров страниц и полей.
+	Force OCR (override skip options)	Принудительное OCR (игнорировать параметры пропуска)
 	Form data and PDF forms	Данные формы и формы PDF
 	Form field advice	Советы по полям формы
 	Form field detection is already running	Обнаружение полей уже выполняется
@@ -1267,6 +1293,7 @@ scroll speed	Fast	Высокая
 	Hide {app}	Скрыть {app}
 	Hides annotation	Скрывает аннотацию
 	High	Высокое
+	HIGH (>= 90%)	ВЫСОКАЯ (>= 90%)
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Более высокое качество изображений увеличивает размер файла. Копия сохраняется, только если она меньше.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Более высокое качество, обычно больший размер файла. Фотографии JPEG выше 450 ppi уменьшаются до 300 ppi, качество 85. Графика без потерь и изображения с масками сохраняют свои пиксели.
 	Highlight	Выделить
@@ -1298,6 +1325,7 @@ key	Home	Home
 	Importing data arrives on the web with file pickers for data files	Импорт данных появится в веб-версии с выбором файлов данных
 	Import…	Импортировать…
 	In multiple files	В нескольких файлах
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	Для нескольких файлов: файл с текстом учитывается отдельно как пропущенный, и для него ничего не записывается
 	In new window	В новом окне
 	In streams that use LZW encoding, use Flate instead	Использовать Flate вместо LZW в потоках с кодированием LZW
 	In this file	В этом файле
@@ -1476,8 +1504,10 @@ key	Home	Home
 	Looking for printers…	Поиск принтеров…
 	Loop	Цикл
 	Low	Низкое
+	LOW (< 70%)	НИЗКАЯ (< 70%)
 	Low resolution	Низкое разрешение
 	Low Resolution (150 dpi)	Низкое разрешение (150 dpi)
+	LOW-CONFIDENCE WORDS	СЛОВА С НИЗКОЙ ДОСТОВЕРНОСТЬЮ
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	Сделать доступным
 	Make Current Properties Default	Сделать текущие свойства по умолчанию
@@ -1504,6 +1534,7 @@ key	Home	Home
 	Mark everything in this tag as an artifact and remove the tag from reading order	Пометить всё содержимое этого тега как артефакт и убрать тег из порядка чтения
 	Mark figure as decorative	Пометить фигуру как декоративную
 	Mark Page Range	Отметить диапазон страниц
+	Mark this page as reviewed (Ctrl+T)	Отметить эту страницу как проверенную (Ctrl+T)
 	Mark with checkmark	Отметить галочкой
 	Marked	Отмечено
 	Marks do not remove content. Select Redact all, then save.	Метки не удаляют содержимое. Выберите «Скрыть все», затем сохраните файл.
@@ -1530,6 +1561,7 @@ key	Home	Home
 	Measurement information	Информация об измерениях
 	Measurement snapping	Привязка измерений
 	Measuring tool	Инструмент измерения
+	MEDIUM (70-89%)	СРЕДНЯЯ (70-89%)
 	Menu	Меню
 	Merge all windows	Объединить все окна
 	Merge data files into spreadsheet…	Объединить файлы данных в электронную таблицу…
@@ -1632,6 +1664,7 @@ key	Home	Home
 	Next month	Следующий месяц
 	Next sheet	Следующий лист
 	Next tab	Следующая вкладка
+	Next uncertain	Следующее сомнительное
 	Next view	Следующий вид
 	Night	Ночь
 	No actions	Нет действий
@@ -1739,6 +1772,8 @@ scroll speed	Normal	Обычная
 	Number pages	Пронумеровать страницы
 	Number pages…	Пронумеровать страницы…
 	Numbered list	Нумерованный список
+	OCR complete — no text recognized on this page.	OCR завершено — на этой странице текст не распознан.
+	OCR results rejected.	Результаты OCR отклонены.
 	October	Октябрь
 	Odd pages	Нечётные страницы
 	Odd Pages Only	Только нечётные страницы
@@ -1854,6 +1889,7 @@ animation effects	On	Вкл
 	Output preview	Предварительный просмотр вывода
 	Owner password (no restrictions apply)	Пароль владельца (ограничения не применяются)
 	Package: {name}	Пакет: {name}
+	PAGE	СТРАНИЦА
 	Page background	Фон страницы
 	Page Content	Содержимое страницы
 	Page display	Отображение страниц
@@ -1877,6 +1913,7 @@ animation effects	On	Вкл
 	Page thumbnails panel	Панель миниатюр страниц
 	Page tools	Инструменты страниц
 	Page transitions	Переходы страниц
+	Page verified	Страница проверена
 	Page will not cause screen flicker	Страница не вызовет мерцания экрана
 	Page {label}	Стр. {label}
 	Page {old} → Page {new}	Стр. {old} → стр. {new}
@@ -1897,6 +1934,7 @@ animation effects	On	Вкл
 	Pages to Print	Страницы для печати
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Страницы, текст которых не удалось прочитать: {n}. Совпадения на них не показаны.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Страницы со ссылками, комментариями или полями должны табулировать в порядке структуры. Исправление устанавливает порядок табуляции страницы на «По структуре документа».
+	Pages with renderable text are left alone and reported as skipped	Страницы с отображаемым текстом не изменяются и отмечаются как пропущенные
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Страницы изменены после добавления фона, поэтому их собственные белые заливки остаются выключенными: {pages}. На белой бумаге они выглядят так же.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Страницы с собственной белой заливкой, которая скроет фон: {pages}. Заменить
 	Pages:	Страницы:
@@ -2018,8 +2056,10 @@ animation effects	On	Вкл
 	Previous month	Предыдущий месяц
 	Previous sheet	Предыдущий лист
 	Previous tab	Предыдущая вкладка
+	Previous uncertain	Предыдущее сомнительное
 	Previous view	Предыдущий вид
 	Primary language	Основной язык
+	Primary only	Только основной
 	Print ({key})	Печать ({key})
 	Print as image	Печать как изображение
 	Print in grayscale	Печать в оттенках серого
@@ -2070,6 +2110,8 @@ animation effects	On	Вкл
 	RAM {gb} GB	ОЗУ {gb} ГБ
 	Rating	Оценка
 	Raw:	Исходник :
+	Re-OCR entire page	Повторить OCR для всей страницы
+	Re-OCR this region	Повторить OCR для этой области
 	Re-type Password	Повторите пароль
 	Read	Чтение
 	Read mode	Режим чтения
@@ -2081,6 +2123,7 @@ animation effects	On	Вкл
 	Read out loud requires Windows, macOS or Linux.	Чтение вслух пока доступно только в Windows / macOS / Linux.
 	Read this page only	Прочитать только эту страницу
 	Read to end of document	Прочитать до конца документа
+	Read {n} words on {m} of {t} pages	Прочитано {n} слов на {m} из {t} страниц
 	Reading colours	Цвета для чтения
 	Reading options…	Параметры чтения…
 	Reading page {page}…	Чтение страницы {page}…
@@ -2089,6 +2132,7 @@ animation effects	On	Вкл
 	Reading the printer's settings…	Чтение настроек принтера…
 	Reading the raw document…	Чтение исходного документа…
 	Reading theme	Тема чтения
+	Reads pages and files even where the skip options would leave them alone	Распознаёт страницы и файлы, даже если параметры пропуска их бы пропустили
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Читает {names}, которые в свою очередь читают его. Никакой порядок не исправит цикл: измените одну из формул.
 	Reads {name}, which calculates later, so it shows an old value.	Читает {name}, которое вычисляется позже, поэтому показывает старое значение.
 	Reads {name}, which the form doesn't have, so it gets no value there.	Читает {name}, которого нет в форме, поэтому не получает оттуда значения.
@@ -2109,6 +2153,8 @@ animation effects	On	Вкл
 	Recognize Text…	Распознать текст…
 	Recognize text…	Распознать текст…
 	Recognized 1 word	Распознано 1 слово
+	Recognized text	Распознанный текст
+	Recognized text applied ({n} words, one undoable step)	Распознанный текст применён ({n} слов, одно отменяемое действие)
 	Recognized {n} words	Распознано {n} слов
 	Recognized {w} words in 1 file	Распознано {w} слов в 1 файле
 	Recognized {w} words in {n} files	Распознано {w} слов в {n} файлах
@@ -2145,6 +2191,8 @@ animation effects	On	Вкл
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Область в дюймах. Оставьте ширину или высоту нулём, чтобы сканировать всё.
 	Registration residual	Остаточная ошибка привязки
 	Regularity	Регулярность
+	Reject	Отклонить
+	Reject entire page	Отклонить всю страницу
 	Rejected	Отклонено
 	Release notes	Примечания к выпуску
 	Reliable character encoding is provided	Обеспечена надёжная кодировка символов
@@ -2188,6 +2236,7 @@ animation effects	On	Вкл
 	Remove {name} from Recent	Убрать {name} из недавних
 	Remove {n} files	Удалить {n} файлов
 	Remove {n} pages	Удалить страницы: {n}
+	removed	удалено
 	Removed 1 hidden item. Save to remove them from the file.	Удалён 1 скрытый элемент. Сохраните, чтобы удалить их из файла.
 	Removed 1 link	Удалена 1 ссылка
 	Removed the signature {field} and kept its empty field	Удалена подпись {field}, пустое поле сохранено
@@ -2301,10 +2350,12 @@ animation effects	On	Вкл
 	Rotate view clockwise ({key})	Повернуть вид по часовой стрелке ({key})
 	Rotate view counterclockwise	Повернуть вид против часовой стрелки
 	Rotate:	Повернуть:
+	ROVER vote	Голосование ROVER
 	Row spacing	Интервал между строками
 	Run	Запустить
 	Run a JavaScript	Запустить JavaScript
 	Run JavaScript	Запустить JavaScript
+	Run OCR	Запустить OCR
 	Running action… file {d} of {t}	Выполняется действие… файл {d} из {t}
 	Runtime	Среда
 	Safety margin (pt)	Защитное поле (пт)
@@ -2315,6 +2366,7 @@ animation effects	On	Вкл
 	Sanitize Documents	Очистить документы
 	Sanitize document…	Очистить документ…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	Очистка удаляет скрытую информацию из документа: метаданные, вложенные файлы, комментарии, поля формы (расплющенные), скрытый текст и слои, закладки, ссылки, действия и скрипты, а также личные данные приложений.
+	Sauvola binarization: ink to black, paper to white	Бинаризация Саувола: чернила в чёрный, бумага в белый
 	Save & Close	Сохранить и закрыть
 	Save ({key})	Сохранить ({key})
 	Save a signature first	Сначала сохраните подпись
@@ -2440,6 +2492,7 @@ animation effects	On	Вкл
 	Select a placed signature first	Сначала выберите размещённую подпись
 	Select a text box or an image first	Сначала выберите текстовое поле или изображение
 	Select a word	Выделить слово
+	Select a word on the page to inspect it	Выберите слово на странице, чтобы проверить его
 	Select Action:	Выберите действие:
 	Select All	Выбрать все
 	Select all pages (Organize)	Выделить все страницы (Организация)
@@ -2515,6 +2568,7 @@ animation effects	On	Вкл
 	Set to current page ({n})	Установить текущей страницей ({n})
 	Set to zero	Установить в ноль
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Параметры этого источника. Не трогайте элемент, чтобы оставить значение драйвера.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	У нескольких файлов одинаковое имя, и их результаты перезаписали бы друг друга; ничего не записано: {list}
 	Shadings	Теневые
 	Shared Field Properties	Общие свойства полей
 	Sheet {s} of {n}	Лист {s} из {n}
@@ -2523,6 +2577,7 @@ animation effects	On	Вкл
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift ограничивает до 45 градусов. Backspace удаляет вершину. Escape отменяет.
 	Shift drags freely	Shift перетаскивает свободно
+	Shift+F8: the previous word to review	Shift+F8: предыдущее слово для проверки
 	Shift- or Ctrl/Command-click to select several fields.	Щёлкните с Shift или Ctrl/Command, чтобы выбрать несколько полей.
 	Shift-click to select several objects. Drag empty space to select an area.	Щёлкните с Shift, чтобы выбрать несколько объектов. Протяните рамку на пустом месте, чтобы выделить область.
 	ships in milestone {m}	появится на этапе {m}
@@ -2614,8 +2669,11 @@ key	Shift	Shift
 	Single page	Одна страница
 	Single Page Continuous	Одна страница, непрерывная
 	Single word or phrase	Одно слово или фраза
+	Skip files that already have text	Пропускать файлы, в которых уже есть текст
+	Skip pages that already have text	Пропускать страницы, на которых уже есть текст
 	Skip Rule	Пропустить правило
 	Skipped	Пропущено
+	skipped	пропущено
 	Slash	Косая черта
 scroll speed	Slow	Низкая
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	Небольшие файлы для экранов и почты. Изображения с разрешением выше 225 ppi уменьшаются до 150 ppi, JPEG с качеством 60; чертежи могут потерять детали.
@@ -2642,6 +2700,7 @@ scroll speed	Slow	Низкая
 	Sort items	Сортировать пункты
 	sorted ascending	отсортировано по возрастанию
 	sorted descending	отсортировано по убыванию
+	Source page	Исходная страница
 key	Space	Пробел
 	Space Audit	Анализ места
 	Spacing between copies	Расстояние между копиями
@@ -2673,11 +2732,13 @@ document scrollbar width	Standard	Стандартная
 	Status	Статус
 	Steps	Шаги
 	Sticky note	Стикер
+	still checking whether the tesseract program can run; try again in a moment	идёт проверка, может ли запуститься программа tesseract; повторите попытку через мгновение
 	Still printing; the job continues on the printer	Печать продолжается; задание выполняется на принтере
 	Stop reading	Остановить чтение
 	Straighten scanned page	Выровнять отсканированную страницу
 	Straighten skewed scans	Выравнивать наклонённые сканы
 	Straighten the page	Выпрямить страницу
+	Straightens skewed text lines before reading	Выравнивает наклонённые строки текста перед распознаванием
 	Strength: {s}	Надёжность: {s}
 	Strikethrough	Зачеркивание
 	Strikethrough text	Зачеркнуть текст
@@ -2692,6 +2753,7 @@ document scrollbar width	Standard	Стандартная
 	Submit XFDF data	Отправить данные XFDF
 	Subscript	Subscript
 	Suggest edits	Предложить изменения
+	Suggestions	Варианты
 	sum (+)	сумма (+)
 	Summarize	Суммировать
 	Summarize comments	Суммировать комментарии
@@ -2766,12 +2828,14 @@ document scrollbar width	Standard	Стандартная
 	TH and TD must be children of TR	TH и TD должны быть потомками TR
 	Thai and Arabic use regular fallback fonts when available.	Для тайского и арабского текста используются доступные резервные шрифты обычного начертания.
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Это не сработало: внутренняя ошибка остановила его ({m}). Ваши документы не изменены.
+	That is the source file; choose another destination	Это исходный файл; выберите другое место
 	That isn't a scanner address	Это не адрес сканера
 	That length can't be right for this line: check the unit.	Такая длина не может быть верной для этой линии: проверьте единицы измерения.
 	The answer proposes formatting changes.	Ответ содержит предложения по форматированию.
 	The answer stopped unexpectedly.	Ответ неожиданно прервался.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Ключ API будет отправлен на этот адрес без шифрования. Используйте https://, если сервер не находится в доверенной сети.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Стекло сканирует по одной странице. Отсканируйте лицевую, переверните и оборот.
+	The built-in engine (pure Rust)	Встроенный движок (чистый Rust)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	В порядке вычислений {n} запись, которая ничего не вычисляет. «Исправить порядок» удалит её.|В порядке вычислений {n} записи, которые ничего не вычисляют. «Исправить порядок» удалит их.|В порядке вычислений {n} записей, которые ничего не вычисляют. «Исправить порядок» удалит их.
 	the certificate authorities	удостоверяющие центры
 	the certificate expired on {date}	срок действия сертификата истёк {date}
@@ -2850,9 +2914,13 @@ document scrollbar width	Standard	Стандартная
 	The order saved in the PDF needs tidying	Сохранённый в PDF порядок нуждается в исправлении
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Оригиналы не изменяются. Файл с тем же именем в папке для результатов сохраняется, а новый получает номер.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Другие подписи ({names}) будут сообщать, что документ изменился после подписания. Проверьте их заново: ничто не гарантирует, что они останутся действительными.
+	The output folder already holds files of these names; nothing was written: {list}	В папке вывода уже есть файлы с этими именами; ничего не записано: {list}
 	The output folder can't be one of the folders being read, or contain one.	Папка для результатов не может быть одной из читаемых папок или содержать такую папку.
 	The page could not be separated: {error}	Не удалось выполнить цветоделение страницы: {error}
 	The page has changed; select the image again	Страница изменилась; выберите изображение снова
+	The page was read again; its words were replaced (undo in the panel)	Страница распознана заново; её слова заменены (отмена на панели)
+	The page's words were applied as one undoable step ({n} words)	Слова страницы применены одним отменяемым действием ({n} слов)
+	The page's words were cleared (undo in the panel)	Слова страницы удалены (отмена на панели)
 	The pages already scanned were kept in the document.	Уже отсканированные страницы сохранены в документе.
 	the password is incorrect	пароль неверен
 	The password is incorrect.	Неверный пароль.
@@ -2876,8 +2944,10 @@ document scrollbar width	Standard	Стандартная
 	The printer's reply couldn't be understood	Ответ принтера не удалось понять
 	The provider's page didn't come back in time. Try again.	Страница поставщика не вернулась вовремя. Попробуйте ещё раз.
 	The raw text was truncated to what fits.	Исходный текст был обрезан.
+	The re-read found no text; the existing words are unchanged	Повторное распознавание не нашло текста; существующие слова не изменены
 	The redaction does not fit page {page}; no pages were marked.	Область удаления не помещается на странице {page}; страницы не отмечены.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI перенаправления должен быть http://127.0.0.1 или http://localhost с портом.
+	The region was read again; its words were replaced (undo in the panel)	Область распознана заново; её слова заменены (отмена на панели)
 	The release has ambiguous packages. Choose a package on the official release page.	В выпуске найдено несколько подходящих пакетов. Выберите пакет на официальной странице выпусков.
 	The release is not a published stable update. Try again later.	Выпуск не является опубликованным стабильным обновлением. Попробуйте позже.
 	The replacement file doesn't have that many pages.	В заменяющем файле нет столько страниц.
@@ -2900,10 +2970,12 @@ document scrollbar width	Standard	Стандартная
 	The scanner reported a lamp or device error.	Сканер сообщил об ошибке лампы или устройства.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Сканер сообщил о проблеме с бумагой (замятие или одновременная подача нескольких листов).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Реальное число пикселей на дюйм экрана. Откалибруйте с помощью линейки, чтобы реальный размер (100%) показывал страницы в их настоящем размере.
+	The searchable copies are written here under the source names	Копии с поиском записываются сюда под именами исходных файлов
 	The selected area has been copied ({w} × {h} pixels)	Выделенная область скопирована ({w} × {h} пикселей)
 	The selected fields could not be found. Select them again.	Выбранные поля не найдены. Выберите их снова.
 	The selected redaction is unavailable or invalid.	Выбранная область удаления недоступна или недействительна.
 	The selected scale could not be read.	Не удалось прочитать выбранный масштаб.
+	The selected word is gone; choose another	Выбранного слова больше нет; выберите другое
 	The selection changed. Select the signature again.	Выбор изменился. Выберите подпись ещё раз.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Сеанс с {provider} завершён. Войдите снова в разделе «Настроить цифровой идентификатор».
 	The shared folder:	Общая папка:
@@ -2922,6 +2994,9 @@ document scrollbar width	Standard	Стандартная
 	The smart card's digital IDs couldn't be listed: {e}	Не удалось получить список цифровых идентификаторов смарт-карты: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Стандартные шрифты не могут отобразить «{c}» ({code}). Пока в виде текста можно добавлять только западноевропейские символы.
 	The standard it must meet and where the file goes	Какой стандарт соблюсти и куда идёт файл
+	the tesseract engine is not available in the web build	движок tesseract недоступен в веб-версии
+	the tesseract program was not found (install it, or add it to the PATH)	программа tesseract не найдена (установите её или добавьте в PATH)
+	The tesseract program, run as an external process	Программа tesseract, запускаемая как внешний процесс
 	The text is the same	Текст одинаков
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	модели распознавания текста не установлены (переустановите PdfCraft или задайте в PDFCRAFT_MODELS папку, в которой они лежат)
 	The title in the metadata and the document information differ	Название в метаданных и информация документа различаются
@@ -3067,6 +3142,7 @@ document scrollbar width	Standard	Стандартная
 	Turn on continuous scrolling	Включить непрерывную прокрутку
 	Turn upside down (180°)	Перевернуть (180°)
 	Turned left	Повёрнуто влево
+	Turns pages scanned sideways or upside down upright before reading	Поворачивает страницы, отсканированные боком или вверх ногами, перед распознаванием
 	two cells would both be named {name}	две ячейки получили бы одно имя {name}
 	Two-page view	Двухстраничный вид
 	Two-sided:	Двусторонняя:
@@ -3085,6 +3161,7 @@ document scrollbar width	Standard	Стандартная
 	Underline	Подчеркивание
 	Underline text	Подчеркнуть текст
 	Undid {label}	Отменили: {label}
+	Undo the last review change (Ctrl+Z)	Отменить последнее изменение проверки (Ctrl+Z)
 	Unit	Единица
 	Unit before value	Единица перед значением
 	Unit display format	Формат отображения единицы
@@ -3104,6 +3181,7 @@ document scrollbar width	Standard	Стандартная
 	Unpin {folder}	Открепить {folder}
 	Unpinned {tool} from Home	{tool} откреплён от главной
 	Unplaced	Не размещено
+	unreviewed	не проверено
 	Unsaved changes to this document are saved in the new file too.	Несохранённые изменения этого документа тоже будут сохранены в новом файле.
 	Unsupported measurements	Неподдерживаемые измерения
 	Untagged content	Нетегированный контент
@@ -3142,6 +3220,7 @@ document scrollbar width	Standard	Стандартная
 	Use projected coordinate matrix	Использовать матрицу проекционных координат
 	Use system setting	Использовать системные настройки
 	Use system title bar	Использовать системный заголовок окна
+	Use the chosen engine's reading alone	Использовать только распознавание выбранного движка
 	Use the default	Использовать стандартный
 	Use this size for saved initials	Использовать этот размер для сохранённых инициалов
 	Use this size for saved signature	Использовать этот размер для сохранённой подписи
@@ -3168,6 +3247,9 @@ document scrollbar width	Standard	Стандартная
 	Validity unknown	Действительность неизвестна
 	Value is not calculated	Значение не вычисляется
 	Value is the	Значение — это
+	Verified	Проверено
+	verified	проверено
+	VERIFIED %	ПРОВЕРЕНО %
 	Verify	Проверить
 	Verify PDF/UA	Проверить PDF/UA
 	Verify PDF/X	Проверить PDF/X
@@ -3221,14 +3303,17 @@ document scrollbar width	Wide	Широкая
 	Window Options	Параметры окна
 	Windows store  ·  	Хранилище Windows  ·
 	WKT definition	Определение WKT
+	Word	Слово
 	Word count	Количество слов
 	Word counting stopped unexpectedly.	Подсчёт слов неожиданно остановился.
 	Word count…	Количество слов…
 	Words or phrases to redact	Слова или фразы для скрытия
 	Workspace modes	Режимы рабочей области
 	Write this email?	Написать это письмо?
+	Writes a new document of visible text; the scan is not changed	Создаёт новый документ с видимым текстом; скан не изменяется
 	Wrong password	Неверный пароль
 	Wrote 1 file to {dir}	Записан 1 файл в {dir}
+	Wrote {name}	Записано: {name}
 	Wrote {n} files to {dir}	Записано {n} файлов в {dir}
 	X Object Forms	Формы X Object
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	Форма XFA: её поля и данные XFA синхронизированы, поэтому другие просмотрщики показывают то, что вы заполняете.
@@ -3301,6 +3386,7 @@ document scrollbar width	Wide	Широкая
 	{name} — unsaved changes	{name} — несохранённые изменения
 	{name}: choosing images arrives on the web with file pickers for images	{name}: выбор изображений появится в веб-версии с выбором файлов изображений
 	{name}: the {other} action isn't supported yet	{name}: действие {other} пока не поддерживается
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}: слов с низкой достоверностью — {n}, страницы {pages}
 	{name}_unsigned.pdf	{name}_без_подписи.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} вычисление теперь использует новое имя.|{n} вычисления теперь используют новое имя.|{n} вычислений теперь используют новое имя.
 	{n} days ago	{n} дней назад
@@ -3332,6 +3418,7 @@ document scrollbar width	Wide	Широкая
 	{n} selected	Выбрано: {n}
 	{n} tags	{n} тегов
 	{n} word(s) or phrase(s)	Слов или фраз: {n}
+	{n} word(s) to review	Слов для проверки: {n}
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	Подписавших: {signers}; показаны сведения о первом

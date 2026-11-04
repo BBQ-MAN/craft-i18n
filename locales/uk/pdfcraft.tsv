@@ -19,6 +19,7 @@
 	 ({s} warnings: {first})	 (попередження: {s}; перше: {first})
 	 on page {p}	 на сторінці {p}
 	 · password-protected	 · захищено паролем
+	+ Dictionary	+ Словник
 	+ Page {p}	+ Сторінка {p}
 	+Bin	+Bin
 	+LOC	+LOC
@@ -39,14 +40,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 — цифра, A — літера, O — літера або цифра, X — будь-який символ
 	; 1 page already had text	; 1 сторінка вже мала текст
 	; 1 page skipped	; пропущено 1 сторінку
+	; cancelled — {n} files were not run	; скасовано — {n} файлів не оброблено
 	; corrected {n} pages	; виправлено сторінок: {n}
 	; failed: {list}	; невдалі: {list}
 	; skipped: {n}	; пропущено: {n}
+	; {n} files already had text	; у {n} файлах уже був текст
 	; {n} pages already had text	; сторінки ({n}) вже мали текст
 	; {n} pages skipped	; пропущено сторінок: {n}
 	? of {n}	? із {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: PR: {prs}, комітів: {commits}, +{added} / −{deleted} рядків (Δ {delta}), +{bin_added} / −{bin_deleted} бінарних ресурсів, {first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A 3×3 median filter against scan speckle	Медіанний фільтр 3×3 проти плям скану
 	a bookmark cannot be moved inside itself	закладку неможливо перемістити всередину себе
 	A button	Кнопка
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Відкритий застосунок для PDF, написаний на Rust за принципом незалежної розробки. MIT OR Apache-2.0.
@@ -57,6 +61,7 @@
 	A document needs at least one page: copy instead	Документ потребує щонайменше однієї сторінки: натомість скопіюйте
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Позначка часу документа охоплює весь файл і не є нічиїм підписом, тому її не можна вилучити окремо.
 	a field named {name} already exists	поле з іменем {name} уже існує
+	A folder is asked for when a multiple-file run starts	Теку запитують під час запуску обробки кількох файлів
 	A form field has additional actions	Поле форми має додаткові дії
 	A link	Посилання
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Локальна модель — не передова хмарна: вона може помилятися, і довга відповідь на процесорі займає час. Перевіряйте все важливе й співвідносьте розмір моделі з цією машиною до завантаження.
@@ -75,6 +80,8 @@
 	About {app}	Про {app}
 	about {h} h {m} min left	лишилося близько {h} год {m} хв
 	about {n} min left	лишилося близько {n} хв
+	Accept	Прийняти
+	Accept entire page	Прийняти всю сторінку
 	Accepted	Прийнято
 	Accepted by {printer}	Прийнято принтером {printer}
 	Accessibility Checker	Перевірка доступності
@@ -106,6 +113,7 @@
 	Add a page from template {name}	Додати сторінку з шаблону {name}
 	Add a radio button	Додати перемикач
 	Add a reply	Додати відповідь
+	Add a second engine's reading when the first is unsure	Додає розпізнавання другого рушія, коли перший не впевнений
 	Add a stamp	Додати штамп
 	Add a sticky note	Додати нотатку
 	Add a sticky note here	Додати нотатку тут
@@ -239,6 +247,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Альтернативний текст елемента без вмісту сторінки ніколи не буде прочитано. Видаліть його або пов’яжіть елемент із вмістом.
 	Alternate text should not hide annotation	Альтернативний текст не має приховувати коментар
 	Alternate text that will never be read	Альтернативний текст, який ніколи не буде прочитано
+	Always read with both engines and merge the words	Завжди розпізнає обома рушіями й об'єднує слова
 	Always use my default zoom and page layout	Завжди використовувати мій типовий масштаб і макет сторінок
 	An action is already running	Дія вже виконується
 	An action with this name already exists.	Дія з такою назвою вже існує.
@@ -317,6 +326,7 @@ calendar date	August	серпня
 	Auto portrait/landscape	Автоматично: книжкова/альбомна
 	Auto-deskew	Автовирівнювання
 	Auto-detect	Визначати автоматично
+	Auto-rotate	Автоповорот
 	Auto-rotate pages	Автоматично повертати сторінки
 	Auto-size text to fit redaction region	Автоматично добирати розмір тексту до області вилучення
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Автоматичні сценарії AcroForm вимкнено, доки немає безпечної ізоляції виконання; збережені значення полів залишено без змін. Сценарії кнопок і консолі й далі доступні.
@@ -324,6 +334,7 @@ calendar date	August	серпня
 	Automatically tag PDF	Автоматично додати теги до PDF
 	Available version: {v}	Доступна версія: {v}
 	average	середнє
+	AVG CONFIDENCE	СЕРЕДНЯ ДОСТОВІРНІСТЬ
 	Back	Назад
 	Back side only	Лише зворотний бік
 	Back to all tools	Назад до всіх інструментів
@@ -347,6 +358,7 @@ calendar date	August	серпня
 	Best for: the deepest reasoning this family has	Найкращий для: найглибшого міркування в цьому сімействі
 	Beveled	Скошена
 	Bicubic downsampling to	Бікубічне зниження роздільної здатності до
+	Binarize	Бінаризація
 	Binary assets removed	Видалено бінарних ресурсів
 	Binding	Корінець
 	Binding:	Корінець:
@@ -363,6 +375,7 @@ calendar date	August	серпня
 	Bookmarks Panel and Page	Панель закладок і сторінка
 	Border Color:	Колір рамки:
 	Borders and Colors	Рамки й кольори
+	Both engines, combined as the Strategy says	Обидва рушії, поєднані за вибраною стратегією
 	Both sides	Обидва боки
 	Box	Область
 	Bring All to Front	Усі на передній план
@@ -390,6 +403,7 @@ calendar date	August	серпня
 	Cancel reverse sides	Скасувати зворотні боки
 	Canceling…	Скасування…
 	Cancelled	Скасовано
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	Скасовано — прочитано {n} слів на {m} з {t} сторінок; решту не прочитано
 	Cancelling…	Скасування…
 	Card driver (PKCS #11)	Драйвер картки (PKCS #11)
 	Card PIN	PIN-код картки
@@ -505,6 +519,7 @@ calendar date	August	серпня
 	Clear selection / close find	Зняти виділення / закрити пошук
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	Усуньте зминання та рівно завантажте решту аркушів, потім виберіть «Продовжити сканування».
 	Clear the jam and load the sheets squarely, then choose Try again.	Усуньте зминання та рівно завантажте аркуші, потім виберіть «Повторити».
+	Click a word to inspect it; drag a rectangle to re-read part of the page	Клацніть слово, щоб перевірити його; виділіть прямокутник, щоб заново розпізнати частину сторінки
 	Click on the page to add a {tool}, or drag to set its size	Клацніть на сторінці, щоб додати інструмент «{tool}», або перетягніть, щоб задати розмір
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Клацніть на сторінці, щоб додати текст; кожне клацання створює нове поле, а ✓ завершує. Перетягуйте елементи, щоб перемістити їх, тягніть за кут, щоб змінити розмір, двічі клацніть текст, щоб редагувати його.
 	Click text or an image to edit it	Клацніть текст або зображення для редагування
@@ -581,6 +596,8 @@ calendar date	August	серпня
 	Compress and export	Стиснення та експортування
 	Compress document structure (object streams)	Стиснути структуру документа (потоки об’єктів)
 	Compressing combined PDF…	Стискаємо об’єднаний PDF…
+	CONFIDENCE	ДОСТОВІРНІСТЬ
+	Confidence weighted	З урахуванням достовірності
 	Configure a Digital ID for Signing	Налаштувати цифрове посвідчення для підписування
 	Configure New Digital ID	Налаштувати нове цифрове посвідчення
 	Confirm Password	Підтвердьте пароль
@@ -617,8 +634,11 @@ calendar date	August	серпня
 	Copyright notice	Повідомлення про авторське право
 	Copyright status	Статус авторського права
 	Correct recognized text	Виправити розпізнаний текст
+	Correct recognized text…	Виправити розпізнаний текст…
 	Correct scans	Виправити скани
+	corrected	виправлено
 	Corrected scan	Виправлений скан
+	Corrected text (Enter commits)	Виправлений текст (Enter підтверджує)
 	Could not copy the selection because text could not be read on every page	Не вдалося скопіювати виділення, оскільки текст не вдалося прочитати на всіх сторінках
 	Could not mark the selection because text could not be read on every page	Не вдалося позначити виділення, оскільки текст не вдалося прочитати на всіх сторінках
 	Could not save: {e}	Не вдалося зберегти: {e}
@@ -777,8 +797,10 @@ key	Delete	Delete
 	Delete XMP metadata	Видалити метадані XMP
 	Delete {o}	Видалити {o}
 	Deleted page	Видалена сторінка
+	Denoise	Зменшення шуму
 	Describe the figure	Опишіть рисунок
 	Description writer	Автор опису
+	Deskew	Вирівнювання нахилу
 	Detached signature file	Файл від'єднаного підпису
 	Details	Відомості
 	Detect form fields	Виявити поля форми
@@ -933,6 +955,7 @@ comment menu	Edit	Редагувати
 	Edit text…	Редагувати текст…
 	Edit this PDF	Редактировать цей PDF
 	Edit {field}'s formula	Змінити формулу {field}
+	Editable text	Редагований текст
 	Editorial	Editorial
 	Email Address	Адреса електронної пошти
 	Email Addresses	Адреси електронної пошти
@@ -952,6 +975,7 @@ comment menu	Edit	Редагувати
 key	End	End
 	End entity	Кінцевий суб’єкт
 	Endpoints	Кінцеві точки
+	ENGINE · STRATEGY	РУШІЙ · СТРАТЕГІЯ
 	Enhance camera image	Поліпшити знімок з камери
 	Enhance page	Поліпшити сторінку
 	Enhance scanned file	Поліпшити відсканований файл
@@ -1036,6 +1060,7 @@ key	Esc	Esc
 	Extract the selected pages…	Витягнути вибрані сторінки…
 	Extracted 1 page	Видобуто 1 сторінку
 	Extracted {n} pages	Видобуто сторінок: {n}
+	F8: next word to review; Shift+F8 goes back	F8: наступне слово для перевірки; Shift+F8 — назад
 	Failed	Не пройдено
 scroll speed	Fast	Швидка
 	Fast Web View	Швидкий вебперегляд
@@ -1153,6 +1178,7 @@ calendar date	February	лютого
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Шрифти мають зіставляти символи з Unicode, щоб текст можна було читати й копіювати. Виправте шрифти або створіть PDF заново.
 	for images above	для зображень із роздільною здатністю понад
 	For page sizes and margins.	Для розмірів сторінок і полів.
+	Force OCR (override skip options)	Примусове OCR (ігнорувати параметри пропуску)
 	Form data and PDF forms	Дані форми й форми PDF
 	Form field advice	Поради щодо полів форми
 	Form field detection is already running	Виявлення полів форми вже виконується
@@ -1233,6 +1259,7 @@ calendar date	February	лютого
 	Hide window controls	Приховати елементи керування вікном
 	Hide {app}	Сховати {app}
 	Hides annotation	Приховує коментар
+	HIGH (>= 90%)	ВИСОКА (>= 90%)
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Вища якість зображень означає більші файли. Копія зберігається лише тоді, коли вона менша.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Вища якість, зазвичай більші файли. Фотографії JPEG понад 450 ppi зменшуються до 300 ppi, якість 85. Графіка без втрат і зображення з масками зберігають свої пікселі.
 	Highlight	Виділення кольором
@@ -1263,6 +1290,7 @@ key	Home	Home
 	Import {name}	Імпортувати {name}
 	Importing data arrives on the web with file pickers for data files	Імпорт даних з’явиться у вебверсії разом із вибором файлів даних
 	In multiple files	У кількох файлах
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	Для кількох файлів: файл із текстом враховується окремо як пропущений, і для нього нічого не записується
 	In new window	Відкрити в новому вікні
 	In streams that use LZW encoding, use Flate instead	Використовувати Flate замість LZW у потоках із кодуванням LZW
 	In this file	У цьому файлі
@@ -1440,8 +1468,10 @@ calendar date	June	червня
 	Looking for PDFs…	Пошук PDF…
 	Looking for printers…	Пошук принтерів…
 	Loop	Цикл
+	LOW (< 70%)	НИЗЬКА (< 70%)
 	Low resolution	Низька роздільна здатність
 	Low Resolution (150 dpi)	Низька роздільна здатність (150 dpi)
+	LOW-CONFIDENCE WORDS	СЛОВА З НИЗЬКОЮ ДОСТОВІРНІСТЮ
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	Зробити доступним
 	Make Current Properties Default	Зробити поточні властивості типовими
@@ -1468,6 +1498,7 @@ calendar date	March	березня
 	Mark for redaction	Позначити для вилучення вмісту
 	Mark Page Range	Позначити діапазон сторінок
 	Mark pages for redaction	Позначити сторінки для вилучення вмісту
+	Mark this page as reviewed (Ctrl+T)	Позначити цю сторінку як перевірену (Ctrl+T)
 	Mark with checkmark	Установити позначку
 	Marked	Позначено
 	Marks do not remove content. Select Redact all, then save.	Позначки не видаляють вміст. Виберіть «Вилучити весь вміст», а потім збережіть файл.
@@ -1492,6 +1523,7 @@ calendar date	May	травня
 	Measurement information	Відомості про вимірювання
 	Measurement snapping	Прив’язування вимірювань
 	Measuring tool	Інструмент вимірювання
+	MEDIUM (70-89%)	СЕРЕДНЯ (70-89%)
 	Menu	Меню
 	Merge all windows	Об’єднати всі вікна
 	Merge data files into spreadsheet…	Об’єднати файли даних в електронну таблицю…
@@ -1589,6 +1621,7 @@ calendar date	May	травня
 	Next month	Наступний місяць
 	Next sheet	Наступний аркуш
 	Next tab	Наступна вкладка
+	Next uncertain	Наступне сумнівне
 	Next view	Наступний вигляд
 	Night	Ніч
 	No actions	Немає дій
@@ -1697,6 +1730,8 @@ calendar date	November	листопада
 	Number pages	Пронумерувати сторінки
 	Number pages…	Пронумерувати сторінки…
 	Numbered list	Нумерований список
+	OCR complete — no text recognized on this page.	OCR завершено — на цій сторінці текст не розпізнано.
+	OCR results rejected.	Результати OCR відхилено.
 	October	Жовтень
 calendar date	October	жовтня
 	Odd pages	Непарні сторінки
@@ -1815,6 +1850,7 @@ animation effects	On	Увімкнено
 	Output preview	Попередній перегляд виводу
 	Owner password (no restrictions apply)	Пароля власника (обмеження не застосовуються)
 	Package: {name}	Пакет: {name}
+	PAGE	СТОРІНКА
 	Page background	Фон сторінки
 	Page Content	Вміст сторінки
 	Page display	Відображення сторінок
@@ -1838,6 +1874,7 @@ animation effects	On	Увімкнено
 	Page thumbnails panel	Панель мініатюр сторінок
 	Page tools	Інструменти сторінок
 	Page transitions	Переходи між сторінками
+	Page verified	Сторінку перевірено
 	Page will not cause screen flicker	Сторінка не спричинятиме мерехтіння екрана
 	Page {label}	Сторінка {label}
 	Page {old} → Page {new}	Сторінка {old} → сторінка {new}
@@ -1858,6 +1895,7 @@ animation effects	On	Увімкнено
 	Pages to Print	Сторінки для друку
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Сторінки, текст яких не вдалося прочитати: {n}. Збіги на них не показано.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	На сторінках із посиланнями, коментарями чи полями табуляція має відповідати порядку структури. Виправлення задає для кожної сторінки порядок «За структурою документа».
+	Pages with renderable text are left alone and reported as skipped	Сторінки з текстом, що відображається, не змінюються й позначаються як пропущені
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Сторінки змінені після додавання тла, тому їхні власні білі заливки залишаються вимкненими: {pages}. На білому папері вони виглядають так само.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Сторінки з власною білою заливкою, яка приховає тло: {pages}. Замінити
 	Pages:	Сторінки:
@@ -1979,8 +2017,10 @@ animation effects	On	Увімкнено
 	Previous month	Попередній місяць
 	Previous sheet	Попередній аркуш
 	Previous tab	Попередня вкладка
+	Previous uncertain	Попереднє сумнівне
 	Previous view	Попередній вигляд
 	Primary language	Основна мова
+	Primary only	Лише основний
 	Print ({key})	Друк ({key})
 	Print as image	Друкувати як зображення
 	Print in grayscale	Друкувати у відтінках сірого
@@ -2026,6 +2066,8 @@ animation effects	On	Увімкнено
 	RAM {gb} GB	Пам'ять {gb} ГБ
 	Rating	Оцінка
 	Raw:	Вхідний:
+	Re-OCR entire page	Повторити OCR для всієї сторінки
+	Re-OCR this region	Повторити OCR для цієї області
 	Re-type Password	Повторіть пароль
 	Read	Читання
 	Read mode	Режим читання
@@ -2037,6 +2079,7 @@ animation effects	On	Увімкнено
 	Read out loud requires Windows, macOS or Linux.	Читання вголос наразі потребує Windows / macOS / Linux.
 	Read this page only	Читати лише цю сторінку
 	Read to end of document	Читати до кінця документа
+	Read {n} words on {m} of {t} pages	Прочитано {n} слів на {m} з {t} сторінок
 	Reading colours	Кольори для читання
 	Reading options…	Параметри читання…
 	Reading page {page}…	Читання сторінки {page}…
@@ -2045,6 +2088,7 @@ animation effects	On	Увімкнено
 	Reading the printer's settings…	Читання налаштувань принтера…
 	Reading the raw document…	Читання вхідного документа…
 	Reading theme	Тема читання
+	Reads pages and files even where the skip options would leave them alone	Розпізнає сторінки й файли, навіть якщо параметри пропуску їх би пропустили
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Читає {names}, які своєю чергою читають його. Жоден порядок не виправить цикл: змініть одну з формул.
 	Reads {name}, which calculates later, so it shows an old value.	Читає {name}, яке обчислюється пізніше, тому показує старе значення.
 	Reads {name}, which the form doesn't have, so it gets no value there.	Читає {name}, якого немає у формі, тому не отримує звідти значення.
@@ -2063,6 +2107,8 @@ animation effects	On	Увімкнено
 	Recognize Text…	Розпізнати текст…
 	Recognize text…	Розпізнати текст…
 	Recognized 1 word	Розпізнано 1 слово
+	Recognized text	Розпізнаний текст
+	Recognized text applied ({n} words, one undoable step)	Розпізнаний текст застосовано ({n} слів, одна дія, яку можна скасувати)
 	Recognized {n} words	Розпізнано слів: {n}
 	Recognized {w} words in 1 file	Розпізнано слів ({w}) в 1 файлі
 	Recognized {w} words in {n} files	Розпізнано слів ({w}) у файлах ({n})
@@ -2094,6 +2140,8 @@ animation effects	On	Увімкнено
 	Refresh plugins	Оновити плагіни
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Область у дюймах. Залиште ширину або висоту нулем, щоб сканувати все.
 	Regularity	Регулярність
+	Reject	Відхилити
+	Reject entire page	Відхилити всю сторінку
 	Rejected	Відхилено
 	Release notes	Примітки до випуску
 	Reliable character encoding is provided	Забезпечено надійне кодування символів
@@ -2134,6 +2182,7 @@ animation effects	On	Увімкнено
 	Remove {name} from Recent	Вилучити {name} з нещодавніх
 	Remove {n} files	Видалити файли: {n}
 	Remove {n} pages	Видалити сторінки: {n}
+	removed	видалено
 	Removed 1 hidden item. Save to remove them from the file.	Видалено 1 прихований елемент. Збережіть, щоб видалити його з файлу.
 	Removed 1 link	Вилучено 1 посилання
 	Removed the signature {field} and kept its empty field	Вилучено підпис {field}, порожнє поле збережено
@@ -2247,11 +2296,13 @@ animation effects	On	Увімкнено
 	Rotate view clockwise ({key})	Повернути вигляд за годинниковою стрілкою ({key})
 	Rotate view counterclockwise	Повернути вигляд проти годинникової стрілки
 	Rotate:	Повернути:
+	ROVER vote	Голосування ROVER
 	Row spacing	Інтервал між рядками
 	Run	Виконати
 	Run a JavaScript	Виконати JavaScript
 	Run form script	Виконати сценарій форми
 	Run JavaScript	Виконати JavaScript
+	Run OCR	Запустити OCR
 	Running action… file {d} of {t}	Виконання дії… файл {d} із {t}
 	Runtime	Середовище
 	Safety margin (pt)	Захисне поле (пт)
@@ -2262,6 +2313,7 @@ animation effects	On	Увімкнено
 	Sanitize Documents	Очистити документи від конфіденційних даних
 	Sanitize document…	Очистити документ від конфіденційних даних…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	Очищення видаляє приховану інформацію з документа: метадані, файлові вкладення, коментарі, поля форми (зводяться), прихований текст і шари, закладки, посилання, дії та сценарії, а також приватні дані застосунків.
+	Sauvola binarization: ink to black, paper to white	Бінаризація Саувола: чорнило в чорний, папір у білий
 	Save & Close	Зберегти й закрити
 	Save ({key})	Зберегти ({key})
 	Save a signature first	Спочатку збережіть підпис
@@ -2384,6 +2436,7 @@ animation effects	On	Увімкнено
 	Select a placed signature first	Спочатку виберіть розміщений підпис
 	Select a text box or an image first	Спочатку виберіть текстове поле або зображення
 	Select a word	Виділити слово
+	Select a word on the page to inspect it	Виберіть слово на сторінці, щоб перевірити його
 	Select Action:	Виберіть дію:
 	Select all pages (Organize)	Вибрати всі сторінки (Упорядкування)
 	Select at least one other page.	Виберіть принаймні одну іншу сторінку.
@@ -2453,6 +2506,7 @@ calendar date	September	вересня
 	Set to current page ({n})	Задати поточну сторінку ({n})
 	Set to zero	Установити нуль
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Параметри цього джерела. Не чіпайте елемент, щоб лишити значення драйвера.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	Кілька файлів мають однакову назву, тож їхні результати перезаписали б одне одного; нічого не записано: {list}
 	SHA-1 digest	Відбиток SHA-1
 	SHA-256 digest	Відбиток SHA-256
 	Shadings	Градієнтні заливки
@@ -2463,6 +2517,7 @@ calendar date	September	вересня
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift обмежує кут до 45 градусів. Backspace видаляє вершину. Escape скасовує.
 	Shift drags freely	Shift перетягує вільно
+	Shift+F8: the previous word to review	Shift+F8: попереднє слово для перевірки
 	Shift- or Ctrl/Command-click to select several fields.	Клацніть із Shift або Ctrl/Command, щоб вибрати кілька полів.
 	Shift-click to select several objects. Drag empty space to select an area.	Клацніть із Shift, щоб вибрати кілька об’єктів. Протягніть рамку на порожньому місці, щоб виділити область.
 	ships in milestone {m}	з’явиться на етапі {m}
@@ -2552,8 +2607,11 @@ key	Shift	Shift
 	Single page	Одна сторінка
 	Single Page Continuous	Одна сторінка, безперервно
 	Single word or phrase	Окреме слово або фраза
+	Skip files that already have text	Пропускати файли, що вже містять текст
+	Skip pages that already have text	Пропускати сторінки, що вже містять текст
 	Skip Rule	Пропустити правило
 	Skipped	Пропущено
+	skipped	пропущено
 	Slash	Коса риска
 scroll speed	Slow	Повільна
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	Менші файли для екранів і пошти. Зображення понад 225 ppi зменшуються до 150 ppi, JPEG із якістю 60; креслення можуть втратити деталі.
@@ -2578,6 +2636,7 @@ scroll speed	Slow	Повільна
 	Sort items	Сортувати елементи
 	sorted ascending	відсортовано за зростанням
 	sorted descending	відсортовано за спаданням
+	Source page	Вихідна сторінка
 key	Space	Пробіл
 	Space Audit	Аналіз місця
 	Spacing between copies	Відстань між копіями
@@ -2611,12 +2670,14 @@ action wizard	Start	Почати
 	Status	Статус
 	Steps	Кроки
 	Sticky note	Нотатка
+	still checking whether the tesseract program can run; try again in a moment	триває перевірка, чи може запуститися програма tesseract; спробуйте ще раз за мить
 	Still printing; the job continues on the printer	Друк триває; завдання виконується на принтері
 	Stop	Стоп
 	Stop reading	Зупинити читання
 	Straighten scanned page	Вирівняти відскановану сторінку
 	Straighten skewed scans	Вирівнювати нахилені скани
 	Straighten the page	Вирівняти сторінку
+	Straightens skewed text lines before reading	Вирівнює нахилені рядки тексту перед розпізнаванням
 	Strength: {s}	Надійність: {s}
 	Strikethrough text	Закреслити текст
 	String length (0 turns it off)	Довжина нитки (0 вимикає)
@@ -2631,6 +2692,7 @@ certificate	Subject	Власник сертифіката
 	Submit XFDF data	Надіслати дані XFDF
 	Subscript	Підрядковий
 	Suggest edits	Запропонувати зміни
+	Suggestions	Пропозиції
 	sum (+)	сума (+)
 	Summarize	Створити зведення
 	Summarize comments	Створити зведення коментарів
@@ -2705,12 +2767,14 @@ certificate	Subject	Власник сертифіката
 	Thai and Arabic use regular fallback fonts when available.	Для тайського й арабського тексту використовуються доступні резервні шрифти звичайного накреслення.
 	That didn't work: an internal error stopped it ({m}).	Не вдалося: дію зупинила внутрішня помилка ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Не вдалося виконати: внутрішня помилка зупинила дію ({m}). Ваші документи не змінено.
+	That is the source file; choose another destination	Це вихідний файл; виберіть інше місце
 	That isn't a scanner address	Це не адреса сканера
 	That length can't be right for this line: check the unit.	Така довжина не може бути правильною для цієї лінії: перевірте одиниці.
 	The answer proposes formatting changes.	Відповідь пропонує зміни форматування.
 	The answer stopped unexpectedly.	Відповідь несподівано перервалася.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Ключ API буде надіслано на цю адресу без шифрування. Використовуйте https://, якщо сервер не в довіреній мережі.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Скло сканує по одній сторінці. Відскануйте лицьову, переверніть, потім зворотну.
+	The built-in engine (pure Rust)	Вбудований рушій (чистий Rust)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	У порядку обчислень є {n} запис, який нічого не обчислює. «Виправити порядок» його видалить.|У порядку обчислень є {n} записи, які нічого не обчислюють. «Виправити порядок» їх видалить.|У порядку обчислень є {n} записів, які нічого не обчислюють. «Виправити порядок» їх видалить.
 	the certificate authorities	центри сертифікації
 	the certificate expired on {date}	термін дії сертифіката минув {date}
@@ -2788,9 +2852,13 @@ certificate	Subject	Власник сертифіката
 	The order saved in the PDF needs tidying	Порядок, збережений у PDF, потребує впорядкування
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Оригінали не змінюються. Файл із тією самою назвою в теці для результатів зберігається, а новий отримує номер.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Інші підписи ({names}) повідомлятимуть, що документ змінився після підписання. Перевірте їх повторно: ніщо не гарантує, що вони залишаться дійсними.
+	The output folder already holds files of these names; nothing was written: {list}	У теці виводу вже є файли з такими назвами; нічого не записано: {list}
 	The output folder can't be one of the folders being read, or contain one.	Тека для результатів не може бути однією з тек, що читаються, або містити таку теку.
 	The page could not be separated: {error}	Не вдалося виконати кольороподіл сторінки: {error}
 	The page has changed; select the image again	Сторінка змінилася; виберіть зображення ще раз
+	The page was read again; its words were replaced (undo in the panel)	Сторінку розпізнано заново; її слова замінено (скасування на панелі)
+	The page's words were applied as one undoable step ({n} words)	Слова сторінки застосовано однією дією, яку можна скасувати ({n} слів)
+	The page's words were cleared (undo in the panel)	Слова сторінки видалено (скасування на панелі)
 	The pages already scanned were kept in the document.	Уже відскановані сторінки збережено в документі.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Сторінки видобуто, але не видалено, бо документ змінився, поки ви вибирали теку.
 	the password is incorrect	неправильний пароль
@@ -2815,8 +2883,10 @@ certificate	Subject	Власник сертифіката
 	The printer's reply couldn't be understood	Відповідь принтера не вдалося зрозуміти
 	The provider's page didn't come back in time. Try again.	Сторінка постачальника не повернулася вчасно. Спробуйте ще раз.
 	The raw text was truncated to what fits.	Вхідний текст було скорочено.
+	The re-read found no text; the existing words are unchanged	Повторне розпізнавання не знайшло тексту; наявні слова не змінено
 	The redaction does not fit page {page}; no pages were marked.	Область видалення не вміщується на сторінці {page}; сторінки не позначено.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI переспрямування має бути http://127.0.0.1 або http://localhost із портом.
+	The region was read again; its words were replaced (undo in the panel)	Область розпізнано заново; її слова замінено (скасування на панелі)
 	The release has ambiguous packages. Choose a package on the official release page.	У випуску є кілька сумісних пакетів. Виберіть пакет на офіційній сторінці випусків.
 	The release is not a published stable update. Try again later.	Це не опубліковане стабільне оновлення. Спробуйте пізніше.
 	The replacement file doesn't have that many pages.	Файл заміни не має такої кількості сторінок.
@@ -2839,9 +2909,11 @@ certificate	Subject	Власник сертифіката
 	The scanner reported a lamp or device error.	Сканер повідомив про помилку лампи або пристрою.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Сканер повідомив про проблему з папером (зминання або одночасна подача кількох аркушів).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Справжня кількість пікселів на дюйм екрана. Відкалібруйте лінійкою, щоб реальний розмір (100%) показував сторінки в їхньому справжньому розмірі.
+	The searchable copies are written here under the source names	Копії з пошуком записуються сюди під назвами вихідних файлів
 	The selected area has been copied ({w} × {h} pixels)	Вибрану область скопійовано ({w} × {h} пікселів)
 	The selected fields could not be found. Select them again.	Вибрані поля не знайдено. Виберіть їх знову.
 	The selected redaction is unavailable or invalid.	Вибрана область видалення недоступна або недійсна.
+	The selected word is gone; choose another	Вибраного слова більше немає; виберіть інше
 	The selection changed. Select the signature again.	Вибір змінився. Виберіть підпис знову.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Сеанс із {provider} завершився. Увійдіть знову в розділі «Налаштувати цифрове посвідчення».
 	The shared folder:	Спільна тека:
@@ -2860,6 +2932,9 @@ certificate	Subject	Власник сертифіката
 	The smart card's digital IDs couldn't be listed: {e}	Не вдалося отримати список цифрових ідентифікаторів смарт-картки: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Стандартні шрифти не можуть відобразити «{c}» ({code}). Поки що як текст можна додавати лише західноєвропейські символи.
 	The standard it must meet and where the file goes	Стандарт, якого дотриматися, і куди йде файл
+	the tesseract engine is not available in the web build	рушій tesseract недоступний у веб-версії
+	the tesseract program was not found (install it, or add it to the PATH)	програму tesseract не знайдено (установіть її або додайте до PATH)
+	The tesseract program, run as an external process	Програма tesseract, що запускається як зовнішній процес
 	The text is the same	Текст однаковий
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	моделі розпізнавання тексту не встановлено (перевстановіть PdfCraft або задайте в PDFCRAFT_MODELS теку, у якій вони лежать)
 	The title in the metadata and the document information differ	Заголовки в метаданих і відомостях про документ відрізняються
@@ -3002,6 +3077,7 @@ certificate	Subject	Власник сертифіката
 	Turn on continuous scrolling	Увімкнути безперервне прокручування
 	Turn upside down (180°)	Перевернути (180°)
 	Turned left	Повернуто ліворуч
+	Turns pages scanned sideways or upside down upright before reading	Повертає сторінки, відскановані боком або догори дриґом, перед розпізнаванням
 	two cells would both be named {name}	дві клітинки мали б однакове ім'я {name}
 	Two-page view	Дві сторінки
 	Two-sided:	Двобічний друк:
@@ -3020,6 +3096,7 @@ signature pad	Type	Ввести
 	Unchecked reads	Неперевірені читання
 	Underline text	Підкреслити текст
 	Undid {label}	Скасовано: {label}
+	Undo the last review change (Ctrl+Z)	Скасувати останню зміну перевірки (Ctrl+Z)
 	Unit	Одиниця
 	Unknown author	Невідомий автор
 	unknown signer	невідомий підписувач
@@ -3035,6 +3112,7 @@ signature pad	Type	Ввести
 	Unpin {folder}	Відкріпити {folder}
 	Unpinned {tool} from Home	{tool} відкріплено від головної
 	Unplaced	Не розміщено
+	unreviewed	не перевірено
 	Unsaved changes to this document are saved in the new file too.	Незбережені зміни цього документа також буде збережено в новому файлі.
 	Unsupported measurements	Непідтримувані вимірювання
 	Untagged content	Нетегований вміст
@@ -3070,6 +3148,7 @@ signature pad	Type	Ввести
 	Use print production	Підготувати до друку
 	Use system setting	Використовувати системні налаштування
 	Use system title bar	Використовувати системний заголовок вікна
+	Use the chosen engine's reading alone	Використовувати лише розпізнавання вибраного рушія
 	Use the default	Використати стандартний
 	Use this size for saved initials	Використовувати цей розмір для збережених ініціалів
 	Use this size for saved signature	Використовувати цей розмір для збереженого підпису
@@ -3096,6 +3175,9 @@ signature pad	Type	Ввести
 	Validity unknown	Дійсність невідома
 	Value is not calculated	Значення не обчислюється
 	Value is the	Значення — це
+	Verified	Перевірено
+	verified	перевірено
+	VERIFIED %	ПЕРЕВІРЕНО %
 	Verify	Перевірити
 	Verify PDF/UA	Перевірити PDF/UA
 	Verify PDF/X	Перевірити PDF/X
@@ -3140,14 +3222,17 @@ document scrollbar width	Wide	Широка
 	Will use the feeder.	Буде використано подавач.
 	Window Options	Параметри вікна
 	Windows store  ·  	Сховище Windows  ·  
+	Word	Слово
 	Word count	Кількість слів
 	Word counting stopped unexpectedly.	Підрахунок слів несподівано зупинився.
 	Word count…	Кількість слів…
 	Words or phrases to redact	Слова або фрази для вилучення
 	Workspace modes	Режими робочої області
 	Write this email?	Написати цього листа?
+	Writes a new document of visible text; the scan is not changed	Створює новий документ із видимим текстом; скан не змінюється
 	Wrong password	Неправильний пароль
 	Wrote 1 file to {dir}	Записано 1 файл у {dir}
+	Wrote {name}	Записано: {name}
 	Wrote {n} files to {dir}	Записано файлів ({n}) у {dir}
 	X Object Forms	Форми XObject
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	Форма XFA: її поля й дані XFA синхронізуються, тому інші засоби перегляду показують введені вами дані.
@@ -3220,6 +3305,7 @@ document scrollbar width	Wide	Широка
 	{name} — unsaved changes	{name} — незбережені зміни
 	{name}: choosing images arrives on the web with file pickers for images	{name}: вибір зображень з’явиться у вебверсії разом із вибором файлів зображень
 	{name}: the {other} action isn't supported yet	{name}: дія {other} ще не підтримується
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}: слів із низькою достовірністю — {n}, сторінки {pages}
 	{name}_unsigned.pdf	{name}_без_підпису.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} обчислення тепер використовує нову назву.|{n} обчислення тепер використовують нову назву.|{n} обчислень тепер використовують нову назву.
 	{n} contributors · {c} commits	Учасників: {n} · Комітів: {c}
@@ -3252,6 +3338,7 @@ document scrollbar width	Wide	Широка
 	{n} selected	Вибрано: {n}
 	{n} tags	{n} тегів
 	{n} word(s) or phrase(s)	Слів або фраз: {n}
+	{n} word(s) to review	Слів для перевірки: {n}
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	Підписувачів: {signers}; показано відомості про першого

@@ -19,6 +19,7 @@
 	 on page {label}	 στη σελίδα {label}
 	 on page {p}	 στη σελίδα {p}
 	 · password-protected	 · προστατευμένο με κωδικό
+	+ Dictionary	+ Λεξικό
 	+ Page {p}	+ Σελίδα {p}
 	+Bin	+Δυαδ.
 	+LOC	+Γραμμές
@@ -38,14 +39,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 ψηφίο, A γράμμα, O γράμμα ή ψηφίο, X οποιοσδήποτε χαρακτήρας
 	; 1 page already had text	· 1 σελίδα περιείχε ήδη κείμενο
 	; 1 page skipped	; παραλείφθηκε 1 σελίδα
+	; cancelled — {n} files were not run	; ακυρώθηκε — {n} αρχεία δεν επεξεργάστηκαν
 	; corrected {n} pages	; διορθώθηκαν {n} σελίδες
 	; failed: {list}	· αποτυχία: {list}
 	; skipped: {n}	· παραλείφθηκαν: {n}
+	; {n} files already had text	; {n} αρχεία είχαν ήδη κείμενο
 	; {n} pages already had text	· {n} σελίδες περιείχαν ήδη κείμενο
 	; {n} pages skipped	; παραλείφθηκαν {n} σελίδες
 	? of {n}	? από {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} αιτήματα συγχώνευσης, {commits} καταχωρίσεις, +{added} / −{deleted} γραμμές (Δ {delta}), +{bin_added} / −{bin_deleted} δυαδικά στοιχεία, {first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A 3×3 median filter against scan speckle	Φίλτρο διάμεσου 3×3 κατά των κηλίδων σάρωσης
 	a bookmark cannot be moved inside itself	ένας σελιδοδείκτης δεν μπορεί να μετακινηθεί μέσα στον εαυτό του
 	A button	Ένα κουμπί
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Μια εφαρμογή PDF ανοικτού κώδικα, αναπτυγμένη ανεξάρτητα σε Rust. Άδεια MIT ή Apache-2.0.
@@ -56,6 +60,7 @@
 	A document needs at least one page: copy instead	Ένα έγγραφο πρέπει να έχει τουλάχιστον μία σελίδα: χρησιμοποιήστε αντιγραφή
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Μια χρονοσήμανση εγγράφου καλύπτει όλο το αρχείο και δεν είναι υπογραφή κανενός, οπότε δεν μπορεί να αφαιρεθεί μόνη της.
 	a field named {name} already exists	υπάρχει ήδη πεδίο με όνομα {name}
+	A folder is asked for when a multiple-file run starts	Ο φάκελος ζητείται όταν ξεκινά επεξεργασία πολλών αρχείων
 	A form field has additional actions	Ένα πεδίο φόρμας περιέχει πρόσθετες ενέργειες
 	A link	Ένας σύνδεσμος
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Ένα τοπικό μοντέλο δεν είναι ένα κορυφαίο νεφικό μοντέλο: μπορεί να κάνει λάθη, και μια μακριά απάντηση θέλει τον χρόνο της σε επεξεργαστή. Ελέγξτε ό,τι είναι κρίσιμο και προσέξτε το μέγεθος του μοντέλου απέναντι σε αυτόν τον υπολογιστή πριν το κατεβάσετε.
@@ -74,6 +79,8 @@
 	About {app}	Σχετικά με το {app}
 	about {h} h {m} min left	απομένουν περίπου {h} ώ. {m} λ.
 	about {n} min left	απομένουν περίπου {n} λεπτά
+	Accept	Αποδοχή
+	Accept entire page	Αποδοχή ολόκληρης σελίδας
 	Accepted	Αποδεκτό
 	Accepted by {printer}	Έγινε αποδεκτό από τον εκτυπωτή {printer}
 	Accessibility Checker	Έλεγχος προσβασιμότητας
@@ -103,6 +110,7 @@
 	Add a page from template {name}	Προσθήκη σελίδας από το πρότυπο {name}
 	Add a radio button	Προσθήκη κουμπιού επιλογής
 	Add a reply	Προσθήκη απάντησης
+	Add a second engine's reading when the first is unsure	Προσθέτει την ανάγνωση δεύτερης μηχανής όταν η πρώτη δεν είναι βέβαιη
 	Add a stamp	Προσθήκη σφραγίδας
 	Add a sticky note	Προσθήκη αυτοκόλλητης σημείωσης
 	Add a sticky note here	Προσθήκη σημείωσης εδώ
@@ -237,6 +245,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Το εναλλακτικό κείμενο στοιχείου χωρίς περιεχόμενο σελίδας δεν είναι προσβάσιμο. Αφαιρέστε το ή συνδέστε το στοιχείο με περιεχόμενο.
 	Alternate text should not hide annotation	Το εναλλακτικό κείμενο δεν πρέπει να αποκρύπτει σχόλια
 	Alternate text that will never be read	Εναλλακτικό κείμενο που δεν θα αναγνωστεί ποτέ
+	Always read with both engines and merge the words	Διαβάζει πάντα και με τις δύο μηχανές και συγχωνεύει τις λέξεις
 	Always use my default zoom and page layout	Να χρησιμοποιείται πάντα η προεπιλεγμένη μεγέθυνση και διάταξη σελίδας μου
 	An action is already running	Μια ενέργεια εκτελείται ήδη
 	An action with this name already exists.	Υπάρχει ήδη ενέργεια με αυτό το όνομα.
@@ -311,13 +320,16 @@ calendar date	August	Αύγουστος
 	Auto portrait/landscape	Αυτόματα κατακόρυφος/οριζόντιος
 	Auto-deskew	Auto-deskew
 	Auto-detect	Αυτόματος εντοπισμός
+	Auto-rotate	Αυτόματη περιστροφή
 	Auto-rotate pages	Αυτόματη περιστροφή σελίδων
 	Auto-size text to fit redaction region	Αυτόματη προσαρμογή μεγέθους κειμένου στην περιοχή απόκρυψης
+	Automatic	Αυτόματα
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Τα αυτόματα σενάρια AcroForm είναι απενεργοποιημένα μέχρι να υπάρχει ασφαλής απομόνωση εκτέλεσης· οι αποθηκευμένες τιμές πεδίων διατηρήθηκαν. Τα σενάρια κουμπιών και κονσόλας παραμένουν διαθέσιμα.
 	Automatically rotate sideways and upside-down pages	Αυτόματη περιστροφή πλαγιασμένων και ανεστραμμένων σελίδων
 	Automatically tag PDF	Αυτόματη προσθήκη ετικετών δομής PDF
 	Available version: {v}	Διαθέσιμη έκδοση: {v}
 	average	μέσος όρος
+	AVG CONFIDENCE	ΜΕΣΗ ΑΞΙΟΠΙΣΤΙΑ
 	Back	Πίσω
 	Back side only	Μόνο η πίσω όψη
 	Back to all tools	Επιστροφή σε όλα τα εργαλεία
@@ -340,6 +352,7 @@ calendar date	August	Αύγουστος
 	Best for: the deepest reasoning this family has	Καλύτερο για: τη βαθύτερη συλλογιστική της οικογένειας
 	Beveled	Λοξότμητο
 	Bicubic downsampling to	Δικυβική μείωση ανάλυσης σε
+	Binarize	Δυαδικοποίηση
 	Binary assets removed	Δυαδικά στοιχεία που αφαιρέθηκαν
 	Binding	Βιβλιοδεσία
 	Binding:	Βιβλιοδεσία:
@@ -355,6 +368,7 @@ calendar date	August	Αύγουστος
 	Bookmarks Panel and Page	Πίνακας σελιδοδεικτών και σελίδα
 	Border Color:	Χρώμα περιγράμματος:
 	Borders and Colors	Περιγράμματα και χρώματα
+	Both engines, combined as the Strategy says	Και οι δύο μηχανές, συνδυασμένες κατά τη στρατηγική
 	Both sides	Και οι δύο όψεις
 	Box	Πλαίσιο
 	Brightness	Brightness
@@ -381,6 +395,7 @@ calendar date	August	Αύγουστος
 	Cancel reverse sides	Cancel reverse sides
 	Canceling…	Ακύρωση…
 	Cancelled	Ακυρώθηκε
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	Ακυρώθηκε — διαβάστηκαν {n} λέξεις σε {m} από {t} σελίδες· οι υπόλοιπες δεν διαβάστηκαν
 	Cancelling…	Ακύρωση…
 	Case-sensitive	Διάκριση πεζών/κεφαλαίων
 	CCITT Group 4	CCITT Ομάδα 4
@@ -491,6 +506,7 @@ calendar date	August	Αύγουστος
 	Clear selection / close find	Κατάργηση επιλογής / κλείσιμο αναζήτησης
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	Clear the jam and load the remaining sheets squarely, then choose Continue.
 	Clear the jam and load the sheets squarely, then choose Try again.	Clear the jam and load the sheets squarely, then choose Try again.
+	Click a word to inspect it; drag a rectangle to re-read part of the page	Κάντε κλικ σε μια λέξη για να την εξετάσετε· σύρετε ένα ορθογώνιο για να ξαναδιαβάσετε μέρος της σελίδας
 	Click on the page to add a {tool}, or drag to set its size	Κάντε κλικ στη σελίδα για προσθήκη {tool} ή σύρετε για να ορίσετε το μέγεθος
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Κάντε κλικ στη σελίδα για να προσθέσετε κείμενο· κάθε κλικ δημιουργεί νέο πλαίσιο και το ✓ ολοκληρώνει την εισαγωγή. Σύρετε τα στοιχεία για μετακίνηση, μια γωνία για αλλαγή μεγέθους ή κάντε διπλό κλικ στο κείμενο για επεξεργασία.
 	Click text or an image to edit it	Κάντε κλικ σε κείμενο ή εικόνα για επεξεργασία
@@ -563,6 +579,8 @@ calendar date	August	Αύγουστος
 	Compress and export	Συμπίεση και εξαγωγή
 	Compress document structure (object streams)	Συμπίεση δομής εγγράφου (ροές αντικειμένων)
 	Compressing combined PDF…	Συμπίεση του συνδυασμένου PDF…
+	CONFIDENCE	ΑΞΙΟΠΙΣΤΙΑ
+	Confidence weighted	Σταθμισμένη κατά αξιοπιστία
 	Configure a Digital ID for Signing	Ρύθμιση ψηφιακής ταυτότητας για υπογραφή
 	Configure New Digital ID	Ρύθμιση νέας ψηφιακής ταυτότητας
 	Confirm Password	Επιβεβαίωση κωδικού πρόσβασης
@@ -599,8 +617,11 @@ calendar date	August	Αύγουστος
 	Copyright status	Κατάσταση πνευματικών δικαιωμάτων
 	Copyrighted	Με πνευματικά δικαιώματα
 	Correct recognized text	Διόρθωση αναγνωρισμένου κειμένου
+	Correct recognized text…	Διόρθωση αναγνωρισμένου κειμένου…
 	Correct scans	Διόρθωση σαρώσεων
+	corrected	διορθώθηκε
 	Corrected scan	Διορθωμένη σάρωση
+	Corrected text (Enter commits)	Διορθωμένο κείμενο (το Enter επιβεβαιώνει)
 	Could not copy the selection because text could not be read on every page	Δεν ήταν δυνατή η αντιγραφή της επιλογής επειδή δεν ήταν δυνατή η ανάγνωση κειμένου σε όλες τις σελίδες
 	Could not mark the selection because text could not be read on every page	Δεν ήταν δυνατή η επισήμανση της επιλογής επειδή δεν ήταν δυνατή η ανάγνωση κειμένου σε όλες τις σελίδες
 	Could not save: {e}	Δεν ήταν δυνατή η αποθήκευση: {e}
@@ -749,8 +770,10 @@ key	Delete	Διαγραφή
 	Delete XMP metadata	Διαγραφή μεταδεδομένων XMP
 	Delete {o}	Διαγραφή {o}
 	Deleted page	Διαγραμμένη σελίδα
+	Denoise	Αποθορυβοποίηση
 	Describe the figure	Περιγράψτε την εικόνα
 	Description writer	Συντάκτης περιγραφής
+	Deskew	Ίσιωμα
 	Detached signature file	Αρχείο ξεχωριστής υπογραφής
 	Detect form fields	Εντοπισμός πεδίων φόρμας
 	Detected 1 form field	Εντοπίστηκε 1 πεδίο φόρμας
@@ -897,6 +920,7 @@ comment menu	Edit	Επεξεργασία
 	Edit text…	Επεξεργασία κειμένου…
 	Edit this PDF	Επεξεργασία αυτού του PDF
 	Edit {field}'s formula	Επεξεργασία του τύπου του {field}
+	Editable text	Επεξεργάσιμο κείμενο
 	Editorial	Editorial
 	Email Address	Διεύθυνση email
 	Email Addresses	Διευθύνσεις email
@@ -915,6 +939,7 @@ comment menu	Edit	Επεξεργασία
 key	End	Τέλος
 	End entity	Τελική οντότητα
 	Endpoints	Τελικά σημεία
+	ENGINE · STRATEGY	ΜΗΧΑΝΗ · ΣΤΡΑΤΗΓΙΚΗ
 	Enhance camera image	Βελτίωση εικόνας κάμερας
 	Enhance page	Βελτίωση σελίδας
 	Enhance scanned file	Βελτίωση σαρωμένου αρχείου
@@ -1001,6 +1026,7 @@ key	Esc	Esc
 	Extract the selected pages…	Εξαγωγή των επιλεγμένων σελίδων…
 	Extracted 1 page	Εξήχθη 1 σελίδα
 	Extracted {n} pages	Εξήχθησαν {n} σελίδες
+	F8: next word to review; Shift+F8 goes back	F8: επόμενη λέξη για έλεγχο· το Shift+F8 πηγαίνει πίσω
 	Failed	Αποτυχία
 scroll speed	Fast	Γρήγορη
 	Fast Web View	Γρήγορη προβολή στο web
@@ -1114,6 +1140,7 @@ calendar date	February	Φεβρουάριος
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Οι γραμματοσειρές πρέπει να αντιστοιχίζουν τους χαρακτήρες τους σε Unicode, ώστε το κείμενο να διαβάζεται και να αντιγράφεται. Διορθώστε τις γραμματοσειρές ή δημιουργήστε ξανά το PDF.
 	for images above	για εικόνες πάνω από
 	For page sizes and margins.	Για μεγέθη σελίδων και περιθώρια.
+	Force OCR (override skip options)	Αναγκαστικό OCR (παράκαμψη των επιλογών παράλειψης)
 	Form data and PDF forms	Δεδομένα φόρμας και φόρμες PDF
 	Form field advice	Συμβουλές για πεδία φόρμας
 	Form fields	Πεδία φόρμας
@@ -1188,6 +1215,7 @@ calendar date	February	Φεβρουάριος
 	Hide window controls	Απόκρυψη στοιχείων ελέγχου παραθύρου
 	Hide {app}	Απόκρυψη {app}
 	Hides annotation	Απόκρυψη σχολίου
+	HIGH (>= 90%)	ΥΨΗΛΗ (>= 90%)
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Η υψηλότερη ποιότητα εικόνας συνεπάγεται μεγαλύτερα αρχεία. Αποθηκεύεται αντίγραφο μόνο αν είναι μικρότερο.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Υψηλότερη ποιότητα, συνήθως μεγαλύτερα αρχεία. Οι φωτογραφίες JPEG πάνω από 450 ppi μειώνονται σε 300 ppi, ποιότητα 85. Τα γραφικά χωρίς απώλειες και οι εικόνες με μάσκες διατηρούν τα εικονοστοιχεία τους.
 	Highlight	Επισήμανση
@@ -1218,6 +1246,7 @@ key	Home	Αρχή
 	Import {name}	Εισαγωγή του {name}
 	Importing data arrives on the web with file pickers for data files	Η εισαγωγή δεδομένων θα διατεθεί στη διαδικτυακή έκδοση με επιλογή αρχείων δεδομένων
 	In multiple files	Σε πολλά αρχεία
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	Σε πολλά αρχεία: ένα αρχείο με κείμενο μετρά χωριστά ως παραλειπόμενο και δεν γράφεται τίποτα γι' αυτό
 	In new window	Σε νέο παράθυρο
 	In streams that use LZW encoding, use Flate instead	Χρήση Flate αντί για LZW στις ροές με κωδικοποίηση LZW
 	In this file	Σε αυτό το αρχείο
@@ -1383,8 +1412,10 @@ calendar date	June	Ιούνιος
 	Looking for PDFs…	Αναζήτηση αρχείων PDF…
 	Looking for printers…	Αναζήτηση εκτυπωτών…
 	Loop	Βρόχος
+	LOW (< 70%)	ΧΑΜΗΛΗ (< 70%)
 	Low resolution	Χαμηλή ανάλυση
 	Low Resolution (150 dpi)	Χαμηλή ανάλυση (150 dpi)
+	LOW-CONFIDENCE WORDS	ΛΕΞΕΙΣ ΧΑΜΗΛΗΣ ΑΞΙΟΠΙΣΤΙΑΣ
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	Βελτίωση προσβασιμότητας
 	Make Current Properties Default	Ορισμός τρεχουσών ιδιοτήτων ως προεπιλογών
@@ -1409,6 +1440,7 @@ calendar date	March	Μάρτιος
 	Mark for redaction	Σήμανση για οριστική απόκρυψη
 	Mark Page Range	Επισήμανση εύρους σελίδων
 	Mark pages for redaction	Σήμανση σελίδων για οριστική απόκρυψη
+	Mark this page as reviewed (Ctrl+T)	Σήμανση αυτής της σελίδας ως ελεγμένης (Ctrl+T)
 	Mark with checkmark	Σήμανση με σημάδι επιλογής
 	Marked	Επισημασμένο
 	Marks do not remove content. Select Redact all, then save.	Οι σημάνσεις δεν αφαιρούν περιεχόμενο. Επιλέξτε «Απόκρυψη όλων των ευαίσθητων στοιχείων» και αποθηκεύστε.
@@ -1431,6 +1463,7 @@ calendar date	May	Μάιος
 	Measurement information	Πληροφορίες μέτρησης
 	Measurement snapping	Προσκόλληση κατά τη μέτρηση
 	Measuring tool	Εργαλείο μέτρησης
+	MEDIUM (70-89%)	ΜΕΣΑΙΑ (70-89%)
 	Menu	Μενού
 	Merge all windows	Συγχώνευση όλων των παραθύρων
 	Merge data files into spreadsheet…	Συγχώνευση αρχείων δεδομένων σε υπολογιστικό φύλλο…
@@ -1530,6 +1563,7 @@ calendar date	May	Μάιος
 	Next month	Επόμενος μήνας
 	Next sheet	Επόμενο φύλλο
 	Next tab	Επόμενη καρτέλα
+	Next uncertain	Επόμενη αβέβαιη
 	Next view	Επόμενη προβολή
 	Night	Νύχτα
 	No actions	Καμία ενέργεια
@@ -1630,6 +1664,8 @@ calendar date	November	Νοέμβριος
 	Number pages	Αρίθμηση σελίδων
 	Number pages…	Αρίθμηση σελίδων…
 	Numbered list	Αριθμημένη λίστα
+	OCR complete — no text recognized on this page.	Το OCR ολοκληρώθηκε — δεν αναγνωρίστηκε κείμενο σε αυτή τη σελίδα.
+	OCR results rejected.	Τα αποτελέσματα OCR απορρίφθηκαν.
 	October	Οκτώβριος
 calendar date	October	Οκτώβριος
 	Odd pages	Μονές σελίδες
@@ -1745,6 +1781,7 @@ animation effects	On	Ενεργά
 	Output preview	Προεπισκόπηση εξόδου
 	Owner password (no restrictions apply)	Κωδικός κατόχου (χωρίς περιορισμούς)
 	Package: {name}	Πακέτο: {name}
+	PAGE	ΣΕΛΙΔΑ
 	Page background	Φόντο σελίδας
 	Page Content	Περιεχόμενο σελίδας
 	Page display	Εμφάνιση σελίδων
@@ -1768,6 +1805,7 @@ animation effects	On	Ενεργά
 	Page thumbnails panel	Πίνακας μικρογραφιών σελίδων
 	Page tools	Εργαλεία σελίδων
 	Page transitions	Μεταβάσεις σελίδων
+	Page verified	Η σελίδα ελέγχθηκε
 	Page will not cause screen flicker	Η σελίδα δεν προκαλεί τρεμόπαιγμα οθόνης
 	Page {label}	Σελίδα {label}
 	Page {old} → Page {new}	Σελίδα {old} → σελίδα {new}
@@ -1788,6 +1826,7 @@ animation effects	On	Ενεργά
 	Pages to Print	Σελίδες προς εκτύπωση
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Σελίδες των οποίων το κείμενο δεν ήταν δυνατό να διαβαστεί: {n}. Αντιστοιχίες σε αυτές δεν εμφανίζονται.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Στις σελίδες με συνδέσμους, σχόλια ή πεδία, το πλήκτρο Tab πρέπει να ακολουθεί τη σειρά της δομής. Η διόρθωση ορίζει τη σειρά σε «Χρήση δομής εγγράφου».
+	Pages with renderable text are left alone and reported as skipped	Οι σελίδες με κείμενο που αποδίδεται μένουν ως έχουν και αναφέρονται ως παραλειπόμενες
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Οι σελίδες {pages} άλλαξαν μετά την προσθήκη του φόντου, οπότε οι δικές τους λευκές γεμίσεις μένουν απενεργοποιημένες. Σε λευκό χαρτί φαίνονται ίδιες.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Οι σελίδες {pages} έχουν δική τους λευκή γέμιση, που θα έκρυβε το φόντο. Αντικατάσταση
 	Pages:	Σελίδες:
@@ -1903,8 +1942,10 @@ animation effects	On	Ενεργά
 	Previous month	Προηγούμενος μήνας
 	Previous sheet	Προηγούμενο φύλλο
 	Previous tab	Προηγούμενη καρτέλα
+	Previous uncertain	Προηγούμενη αβέβαιη
 	Previous view	Προηγούμενη προβολή
 	Primary language	Κύρια γλώσσα
+	Primary only	Μόνο η κύρια
 	Print ({key})	Εκτύπωση ({key})
 	Print (⌘P)	Εκτύπωση (⌘P)
 	Print as image	Εκτύπωση ως εικόνα
@@ -1952,6 +1993,8 @@ animation effects	On	Ενεργά
 	RAM {gb} GB	Μνήμη {gb} GB
 	Rating	Βαθμολογία
 	Raw:	Ακατέργαστο:
+	Re-OCR entire page	Νέο OCR ολόκληρης σελίδας
+	Re-OCR this region	Νέο OCR αυτής της περιοχής
 	Re-type Password	Πληκτρολογήστε ξανά τον κωδικό πρόσβασης
 	Read	Ανάγνωση
 	Read mode	Λειτουργία ανάγνωσης
@@ -1963,6 +2006,7 @@ animation effects	On	Ενεργά
 	Read out loud requires Windows, macOS or Linux.	Η ανάγνωση φωναχτά απαιτεί προς το παρόν Windows / macOS / Linux.
 	Read this page only	Ανάγνωση μόνο αυτής της σελίδας
 	Read to end of document	Ανάγνωση μέχρι το τέλος του εγγράφου
+	Read {n} words on {m} of {t} pages	Διαβάστηκαν {n} λέξεις σε {m} από {t} σελίδες
 	Reading colours	Χρώματα ανάγνωσης
 	Reading options…	Επιλογές ανάγνωσης…
 	Reading page {page}…	Ανάγνωση σελίδας {page}…
@@ -1971,6 +2015,7 @@ animation effects	On	Ενεργά
 	Reading the printer's settings…	Ανάγνωση των ρυθμίσεων του εκτυπωτή…
 	Reading the raw document…	Ανάγνωση του ακατέργαστου εγγράφου…
 	Reading theme	Θέμα ανάγνωσης
+	Reads pages and files even where the skip options would leave them alone	Διαβάζει σελίδες και αρχεία ακόμη κι εκεί όπου οι επιλογές παράλειψης θα τα παρέλειπαν
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Διαβάζει τα {names}, που με τη σειρά τους το διαβάζουν. Καμία σειρά δεν διορθώνει έναν βρόχο: αλλάξτε έναν από τους τύπους.
 	Reads {name}, which calculates later, so it shows an old value.	Διαβάζει το {name}, που υπολογίζεται αργότερα, οπότε δείχνει παλιά τιμή.
 	Reads {name}, which the form doesn't have, so it gets no value there.	Διαβάζει το {name}, που δεν υπάρχει στη φόρμα, οπότε δεν παίρνει τιμή από εκεί.
@@ -1987,6 +2032,8 @@ animation effects	On	Ενεργά
 	Recognize Text…	Αναγνώριση κειμένου…
 	Recognize text…	Αναγνώριση κειμένου…
 	Recognized 1 word	Αναγνωρίστηκε 1 λέξη
+	Recognized text	Αναγνωρισμένο κείμενο
+	Recognized text applied ({n} words, one undoable step)	Το αναγνωρισμένο κείμενο εφαρμόστηκε ({n} λέξεις, ένα βήμα που αναιρείται)
 	Recognized {n} words	Αναγνωρίστηκαν {n} λέξεις
 	Recognized {w} words in 1 file	Αναγνωρίστηκαν {w} λέξεις σε 1 αρχείο
 	Recognized {w} words in {n} files	Αναγνωρίστηκαν {w} λέξεις σε {n} αρχεία
@@ -2017,6 +2064,8 @@ animation effects	On	Ενεργά
 	Refresh lists scanners. It does not feed paper.	Refresh lists scanners. It does not feed paper.
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Region in inches. Leave the width or the height at zero to scan the whole area.
 	Regularity	Ομοιομορφία
+	Reject	Απόρριψη
+	Reject entire page	Απόρριψη ολόκληρης σελίδας
 	Rejected	Απορρίφθηκε
 	Release notes	Σημειώσεις έκδοσης
 	Reliable character encoding is provided	Παρέχεται αξιόπιστη κωδικοποίηση χαρακτήρων
@@ -2054,6 +2103,7 @@ animation effects	On	Ενεργά
 	Remove {name} from Recent	Αφαίρεση του {name} από τα πρόσφατα
 	Remove {n} files	Αφαίρεση {n} αρχείων
 	Remove {n} pages	Αφαίρεση {n} σελίδων
+	removed	αφαιρέθηκε
 	Removed 1 hidden item. Save to remove them from the file.	Αφαιρέθηκε 1 κρυφό στοιχείο. Αποθηκεύστε για να αφαιρεθεί από το αρχείο.
 	Removed 1 link	Καταργήθηκε 1 σύνδεσμος
 	Removed the signature {field} and kept its empty field	Αφαιρέθηκε η υπογραφή {field} και το πεδίο της έμεινε κενό
@@ -2165,11 +2215,13 @@ animation effects	On	Ενεργά
 	Rotate view clockwise ({key})	Περιστροφή προβολής δεξιόστροφα ({key})
 	Rotate view clockwise (⇧⌘+)	Δεξιόστροφη περιστροφή προβολής (⇧⌘+)
 	Rotate view counterclockwise	Περιστροφή προβολής αριστερόστροφα
+	ROVER vote	Ψηφοφορία ROVER
 	Row spacing	Απόσταση γραμμών
 	Run	Εκτέλεση
 	Run a JavaScript	Εκτέλεση JavaScript
 	Run form script	Εκτέλεση δέσμης ενεργειών φόρμας
 	Run JavaScript	Εκτέλεση JavaScript
+	Run OCR	Εκτέλεση OCR
 	Running action… file {d} of {t}	Εκτέλεση ενέργειας… αρχείο {d} από {t}
 	Runtime	Runtime
 	Safety margin (pt)	Περιθώριο ασφαλείας (pt)
@@ -2180,6 +2232,7 @@ animation effects	On	Ενεργά
 	Sanitize Documents	Αφαίρεση ευαίσθητων δεδομένων από έγγραφα
 	Sanitize document…	Εκκαθάριση εγγράφου…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	Η εκκαθάριση αφαιρεί κρυφές πληροφορίες από το έγγραφο: μεταδεδομένα, συνημμένα, σχόλια, πεδία φόρμας (με ενσωμάτωση στο περιεχόμενο), κρυφό κείμενο και επίπεδα, σελιδοδείκτες, συνδέσμους, ενέργειες, σενάρια και ιδιωτικά δεδομένα εφαρμογών.
+	Sauvola binarization: ink to black, paper to white	Δυαδικοποίηση Sauvola: το μελάνι μαύρο, το χαρτί λευκό
 	Save & Close	Αποθήκευση και κλείσιμο
 	Save (M4)	Αποθήκευση (M4)
 	Save ({key})	Αποθήκευση ({key})
@@ -2297,6 +2350,7 @@ animation effects	On	Ενεργά
 	Select a placed signature first	Επιλέξτε πρώτα μια τοποθετημένη υπογραφή
 	Select a text box or an image first	Επιλέξτε πρώτα πλαίσιο κειμένου ή εικόνα
 	Select a word	Επιλογή λέξης
+	Select a word on the page to inspect it	Επιλέξτε μια λέξη στη σελίδα για να την εξετάσετε
 	Select Action:	Επιλέξτε ενέργεια:
 	Select all pages (Organize)	Επιλογή όλων των σελίδων (Οργάνωση)
 	Select at least one other page.	Επιλέξτε τουλάχιστον μία άλλη σελίδα.
@@ -2363,6 +2417,7 @@ calendar date	September	Σεπτέμβριος
 	Set to current page ({n})	Ορισμός στην τρέχουσα σελίδα ({n})
 	Set to zero	Ορισμός σε μηδέν
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Settings this source offers. Leave a control alone to keep the driver’s value.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	Πολλά αρχεία έχουν το ίδιο όνομα, οπότε τα αποτελέσματά τους θα αντικαθιστούσαν το ένα το άλλο· δεν γράφτηκε τίποτα: {list}
 	SHA-1 digest	Σύνοψη SHA-1
 	SHA-256 digest	Σύνοψη SHA-256
 	Shadings	Σκιάσεις
@@ -2373,6 +2428,7 @@ calendar date	September	Σεπτέμβριος
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Το Shift περιορίζει τις γωνίες σε βήματα των 45 μοιρών. Το Backspace αφαιρεί μια κορυφή. Το Escape ακυρώνει.
 	Shift drags freely	Το Shift σύρει ελεύθερα
+	Shift+F8: the previous word to review	Shift+F8: η προηγούμενη λέξη για έλεγχο
 	Shift- or Ctrl/Command-click to select several fields.	Χρησιμοποιήστε Shift ή Ctrl/Command μαζί με κλικ για να επιλέξετε πολλά πεδία.
 	Shift-click to select several objects. Drag empty space to select an area.	Κάντε κλικ με πατημένο το Shift για επιλογή πολλών αντικειμένων. Σύρετε σε κενό χώρο για να επιλέξετε περιοχή.
 	ships in milestone {m}	θα διατεθεί στο ορόσημο {m}
@@ -2455,8 +2511,11 @@ key	Shift	Shift
 	Single page	Μονή σελίδα
 	Single Page Continuous	Συνεχής προβολή μίας σελίδας
 	Single word or phrase	Μία λέξη ή φράση
+	Skip files that already have text	Παράλειψη αρχείων που έχουν ήδη κείμενο
+	Skip pages that already have text	Παράλειψη σελίδων που έχουν ήδη κείμενο
 	Skip Rule	Παράλειψη κανόνα
 	Skipped	Παραλείφθηκε
+	skipped	παραλείφθηκε
 	Slash	Πλάγια γραμμή
 scroll speed	Slow	Αργή
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	Μικρότερα αρχεία για οθόνες και email. Οι εικόνες πάνω από 225 ppi μειώνονται σε 150 ppi, JPEG ποιότητας 60· τα γραμμικά σχέδια μπορεί να χάσουν λεπτομέρειες.
@@ -2480,6 +2539,7 @@ scroll speed	Slow	Αργή
 	sorted ascending	ταξινομημένα σε αύξουσα σειρά
 	sorted descending	ταξινομημένα σε φθίνουσα σειρά
 	Source	Πηγή
+	Source page	Σελίδα προέλευσης
 key	Space	Διάστημα
 	Space Audit	Έλεγχος χώρου
 	Speed:	Ταχύτητα:
@@ -2508,12 +2568,14 @@ action wizard	Start	Έναρξη
 	Start page number	Αρχικός αριθμός σελίδας
 	Steps	Βήματα
 	Sticky note	Αυτοκόλλητη σημείωση
+	still checking whether the tesseract program can run; try again in a moment	ελέγχεται ακόμη αν μπορεί να εκτελεστεί το πρόγραμμα tesseract· δοκιμάστε ξανά σε λίγο
 	Still printing; the job continues on the printer	Η εκτύπωση συνεχίζεται· η εργασία συνεχίζεται στον εκτυπωτή
 	Stop	Stop
 	Stop reading	Διακοπή ανάγνωσης
 	Straighten scanned page	Ευθυγράμμιση σαρωμένης σελίδας
 	Straighten skewed scans	Ευθυγράμμιση λοξών σαρώσεων
 	Straighten the page	Straighten the page
+	Straightens skewed text lines before reading	Ισιώνει τις κεκλιμένες γραμμές κειμένου πριν από την ανάγνωση
 	Strength: {s}	Ισχύς: {s}
 	Strikethrough text	Διακριτή διαγραφή κειμένου
 	Stroke colour	Χρώμα περιγράμματος
@@ -2523,6 +2585,7 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	Submit a form	Υποβολή φόρμας
 	Subscript	Subscript
 	Suggest edits	Πρόταση αλλαγών
+	Suggestions	Προτάσεις
 	sum (+)	άθροισμα (+)
 	Summarize	Σύνοψη
 	Summarize comments	Σύνοψη σχολίων
@@ -2598,10 +2661,12 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	Thai and Arabic use regular fallback fonts when available.	Τα ταϊλανδικά και τα αραβικά χρησιμοποιούν κανονικές εναλλακτικές γραμματοσειρές, όταν είναι διαθέσιμες.
 	That didn't work: an internal error stopped it ({m}).	Η ενέργεια απέτυχε λόγω εσωτερικού σφάλματος ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Η ενέργεια διακόπηκε από εσωτερικό σφάλμα ({m}). Τα έγγραφά σας δεν άλλαξαν.
+	That is the source file; choose another destination	Αυτό είναι το αρχείο προέλευσης· επιλέξτε άλλο προορισμό
 	The answer proposes formatting changes.	Η απάντηση προτείνει αλλαγές μορφοποίησης.
 	The answer stopped unexpectedly.	Η απάντηση σταμάτησε απροσδόκητα.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Το κλειδί API θα σταλεί χωρίς κρυπτογράφηση σε αυτή τη διεύθυνση. Χρησιμοποιήστε https://, εκτός αν ο διακομιστής βρίσκεται σε δίκτυο που εμπιστεύεστε.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
+	The built-in engine (pure Rust)	Η ενσωματωμένη μηχανή (καθαρή Rust)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Η σειρά υπολογισμού έχει {n} καταχώριση που δεν υπολογίζει τίποτα. Η «Διόρθωση σειράς» την αφαιρεί.|Η σειρά υπολογισμού έχει {n} καταχωρίσεις που δεν υπολογίζουν τίποτα. Η «Διόρθωση σειράς» τις αφαιρεί.
 	the certificate authorities	τις αρχές πιστοποίησης
 	the certificate expired on {date}	το πιστοποιητικό έληξε στις {date}
@@ -2675,8 +2740,12 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	The order saved in the PDF needs tidying	Η σειρά που είναι αποθηκευμένη στο PDF χρειάζεται τακτοποίηση
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Τα πρωτότυπα δεν αλλάζουν. Ένα αρχείο με το ίδιο όνομα στον φάκελο εξόδου διατηρείται και το νέο παίρνει αριθμό.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Οι άλλες υπογραφές ({names}) θα αναφέρουν ότι το έγγραφο άλλαξε μετά την υπογραφή τους. Ελέγξτε τις ξανά: τίποτα δεν εγγυάται ότι θα παραμείνουν έγκυρες.
+	The output folder already holds files of these names; nothing was written: {list}	Ο φάκελος εξόδου περιέχει ήδη αρχεία με αυτά τα ονόματα· δεν γράφτηκε τίποτα: {list}
 	The output folder can't be one of the folders being read, or contain one.	Ο φάκελος εξόδου δεν μπορεί να είναι ένας από τους φακέλους που διαβάζονται ούτε να περιέχει κάποιον από αυτούς.
 	The page could not be separated: {error}	Δεν ήταν δυνατός ο διαχωρισμός της σελίδας: {error}
+	The page was read again; its words were replaced (undo in the panel)	Η σελίδα διαβάστηκε ξανά· οι λέξεις της αντικαταστάθηκαν (αναίρεση στο πλαίσιο)
+	The page's words were applied as one undoable step ({n} words)	Οι λέξεις της σελίδας εφαρμόστηκαν ως ένα βήμα που αναιρείται ({n} λέξεις)
+	The page's words were cleared (undo in the panel)	Οι λέξεις της σελίδας διαγράφηκαν (αναίρεση στο πλαίσιο)
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Οι σελίδες εξήχθησαν αλλά δεν διαγράφηκαν, επειδή το έγγραφο τροποποιήθηκε ενώ επιλέγατε φάκελο.
 	the password is incorrect	ο κωδικός πρόσβασης είναι λανθασμένος
@@ -2700,8 +2769,10 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	The printer's reply couldn't be understood	Η απάντηση του εκτυπωτή δεν έγινε κατανοητή
 	The provider's page didn't come back in time. Try again.	Η σελίδα του παρόχου δεν επέστρεψε εγκαίρως. Δοκιμάστε ξανά.
 	The raw text was truncated to what fits.	Το ακατέργαστο κείμενο περικόπηκε.
+	The re-read found no text; the existing words are unchanged	Η νέα ανάγνωση δεν βρήκε κείμενο· οι υπάρχουσες λέξεις μένουν ως έχουν
 	The redaction does not fit page {page}; no pages were marked.	Η απόκρυψη δεν χωρά στη σελίδα {page}· δεν σημάνθηκε καμία σελίδα.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Το URI ανακατεύθυνσης πρέπει να είναι http://127.0.0.1 ή http://localhost με θύρα.
+	The region was read again; its words were replaced (undo in the panel)	Η περιοχή διαβάστηκε ξανά· οι λέξεις της αντικαταστάθηκαν (αναίρεση στο πλαίσιο)
 	The release has ambiguous packages. Choose a package on the official release page.	Η έκδοση έχει ασαφή πακέτα. Επιλέξτε πακέτο από την επίσημη σελίδα έκδοσης.
 	The release is not a published stable update. Try again later.	Αυτή η έκδοση δεν είναι δημοσιευμένη σταθερή ενημέρωση. Δοκιμάστε ξανά αργότερα.
 	The replacement file doesn't have that many pages.	Το αρχείο αντικατάστασης δεν έχει τόσες σελίδες.
@@ -2725,9 +2796,11 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	The scanner needs attention.	The scanner needs attention.
 	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
 	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
+	The searchable copies are written here under the source names	Τα αντίγραφα με δυνατότητα αναζήτησης γράφονται εδώ με τα ονόματα των αρχείων προέλευσης
 	The selected area has been copied ({w} × {h} pixels)	Η επιλεγμένη περιοχή αντιγράφηκε ({w} × {h} εικονοστοιχεία)
 	The selected fields could not be found. Select them again.	Δεν βρέθηκαν τα επιλεγμένα πεδία. Επιλέξτε τα ξανά.
 	The selected redaction is unavailable or invalid.	Η επιλεγμένη απόκρυψη δεν είναι διαθέσιμη ή δεν είναι έγκυρη.
+	The selected word is gone; choose another	Η επιλεγμένη λέξη δεν υπάρχει πια· επιλέξτε άλλη
 	The selection changed. Select the signature again.	Η επιλογή άλλαξε. Επιλέξτε ξανά την υπογραφή.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Η περίοδος σύνδεσης με τον {provider} έληξε. Συνδεθείτε ξανά από τη Διαμόρφωση ψηφιακής ταυτότητας.
 	The shared folder:	Ο κοινόχρηστος φάκελος:
@@ -2735,6 +2808,9 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	The signature will be invisible.	Η υπογραφή θα είναι αόρατη.
 	The signature {names} locks this field.	Η υπογραφή {names} κλειδώνει αυτό το πεδίο.
 	The standard it must meet and where the file goes	Το πρότυπο που πρέπει να πληροί και πού πηγαίνει το αρχείο
+	the tesseract engine is not available in the web build	η μηχανή tesseract δεν είναι διαθέσιμη στην έκδοση web
+	the tesseract program was not found (install it, or add it to the PATH)	δεν βρέθηκε το πρόγραμμα tesseract (εγκαταστήστε το ή προσθέστε το στο PATH)
+	The tesseract program, run as an external process	Το πρόγραμμα tesseract, που εκτελείται ως εξωτερική διεργασία
 	The text is the same	Το κείμενο είναι ίδιο
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	τα μοντέλα αναγνώρισης κειμένου δεν είναι εγκατεστημένα (επανεγκαταστήστε το PdfCraft ή ορίστε το PDFCRAFT_MODELS στον φάκελο που τα περιέχει)
 	The title in the metadata and the document information differ	Ο τίτλος στα μεταδεδομένα διαφέρει από τον τίτλο στις πληροφορίες εγγράφου
@@ -2868,6 +2944,7 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	Turn on continuous scrolling	Ενεργοποίηση συνεχούς κύλισης
 	Turn upside down (180°)	Αναποδογύρισμα (180°)
 	Turned left	Turned left
+	Turns pages scanned sideways or upside down upright before reading	Ισιώνει σελίδες που σαρώθηκαν πλάγια ή ανάποδα πριν από την ανάγνωση
 	two cells would both be named {name}	δύο κελιά θα είχαν το ίδιο όνομα {name}
 	Two-page view	Προβολή δύο σελίδων
 	Two-sided:	Εκτύπωση διπλής όψης:
@@ -2886,6 +2963,7 @@ signature pad	Type	Πληκτρολόγηση
 	Unchecked reads	Μη ελεγμένες αναγνώσεις
 	Underline text	Υπογράμμιση κειμένου
 	Undid {label}	Αναιρέθηκε: {label}
+	Undo the last review change (Ctrl+Z)	Αναίρεση της τελευταίας αλλαγής ελέγχου (Ctrl+Z)
 	Unit	Μονάδα
 	Unknown author	Άγνωστος συντάκτης
 	unknown signer	άγνωστος υπογράφων
@@ -2901,6 +2979,7 @@ signature pad	Type	Πληκτρολόγηση
 	Unpin {folder}	Ξεκαρφίτσωμα του {folder}
 	Unpinned {tool} from Home	Το {tool} ξεκαρφιτσώθηκε από την Αρχική
 	Unplaced	Χωρίς τοποθέτηση
+	unreviewed	μη ελεγμένη
 	Unsaved changes to this document are saved in the new file too.	Οι μη αποθηκευμένες αλλαγές αυτού του εγγράφου αποθηκεύονται και στο νέο αρχείο.
 	Unsupported measurements	Μη υποστηριζόμενες μετρήσεις
 	Untagged content	Μη επισημασμένο περιεχόμενο
@@ -2934,6 +3013,7 @@ signature pad	Type	Πληκτρολόγηση
 	Use print production	Χρήση εργαλείων προεκτύπωσης
 	Use system setting	Χρήση ρύθμισης συστήματος
 	Use system title bar	Χρήση γραμμής τίτλου συστήματος
+	Use the chosen engine's reading alone	Χρήση μόνο της ανάγνωσης της επιλεγμένης μηχανής
 	Use the default	Χρήση του προεπιλεγμένου
 	Use this size for saved initials	Χρήση αυτού του μεγέθους για τα αποθηκευμένα αρχικά
 	Use this size for saved signature	Χρήση αυτού του μεγέθους για την αποθηκευμένη υπογραφή
@@ -2960,6 +3040,9 @@ signature pad	Type	Πληκτρολόγηση
 	Validity unknown	Άγνωστη εγκυρότητα
 	Value is not calculated	Δεν υπολογίζεται τιμή
 	Value is the	Η τιμή είναι το
+	Verified	Ελέγχθηκε
+	verified	ελέγχθηκε
+	VERIFIED %	ΕΛΕΓΜΕΝΑ %
 	Verify	Επαλήθευση
 	Verify PDF/UA	Επαλήθευση PDF/UA
 	Verify PDF/X	Επαλήθευση PDF/X
@@ -3006,14 +3089,17 @@ document scrollbar width	Wide	Πλατύ
 	Will use the feeder.	Will use the feeder.
 	Window Options	Επιλογές παραθύρου
 	Windows store  ·  	Αποθήκη πιστοποιητικών Windows  ·  
+	Word	Λέξη
 	Word count	Καταμέτρηση λέξεων
 	Word counting stopped unexpectedly.	Η καταμέτρηση λέξεων σταμάτησε απροσδόκητα.
 	Word count…	Καταμέτρηση λέξεων…
 	Words or phrases to redact	Λέξεις ή φράσεις για απόκρυψη
 	Workspace modes	Λειτουργίες χώρου εργασίας
 	Write this email?	Σύνταξη αυτού του email;
+	Writes a new document of visible text; the scan is not changed	Γράφει νέο έγγραφο με ορατό κείμενο· η σάρωση δεν αλλάζει
 	Wrong password	Λανθασμένος κωδικός πρόσβασης
 	Wrote 1 file to {dir}	Γράφτηκε 1 αρχείο στον φάκελο {dir}
+	Wrote {name}	Γράφτηκε το {name}
 	Wrote {n} files to {dir}	Γράφτηκαν {n} αρχεία στον φάκελο {dir}
 	X Object Forms	Φόρμες XObject
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	Φόρμα XFA: τα πεδία και τα δεδομένα XFA συγχρονίζονται, ώστε άλλα προγράμματα προβολής να εμφανίζουν όσα συμπληρώνετε.
@@ -3088,6 +3174,7 @@ document scrollbar width	Wide	Πλατύ
 	{name} — unsaved changes	{name} — μη αποθηκευμένες αλλαγές
 	{name}: choosing images arrives on the web with file pickers for images	{name}: η επιλογή εικόνων θα διατεθεί στη διαδικτυακή έκδοση με επιλογή αρχείων εικόνας
 	{name}: the {other} action isn't supported yet	{name}: η ενέργεια {other} δεν υποστηρίζεται ακόμη
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}: {n} λέξεις χαμηλής αξιοπιστίας στις σελίδες {pages}
 	{name}_unsigned.pdf	{name}_xoris_ypografi.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} υπολογισμός χρησιμοποιεί πλέον το νέο όνομα.|{n} υπολογισμοί χρησιμοποιούν πλέον το νέο όνομα.
 	{n} contributors · {c} commits	{n} συντελεστές · {c} καταχωρίσεις
@@ -3119,6 +3206,7 @@ document scrollbar width	Wide	Πλατύ
 	{n} selected	{n} επιλεγμένα
 	{n} tags	{n} ετικέτες
 	{n} word(s) or phrase(s)	{n} λέξεις ή φράσεις
+	{n} word(s) to review	{n} λέξεις για έλεγχο
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	{signers} υπογράφοντες· εμφανίζονται οι λεπτομέρειες του πρώτου

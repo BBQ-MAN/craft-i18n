@@ -21,6 +21,7 @@
 	 on page {p}	 sayfa {p} üzerinde
 	 · password-protected	 · parola korumalı
 	% of all commits	Tüm işlemelerin %'si
+	+ Dictionary	+ Sözlük
 	+ Page {p}	+ Sayfa {p}
 	+Bin	+Bin
 	+LOC	+LOC
@@ -41,14 +42,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 rakam, A harf, O harf veya rakam, X herhangi bir karakter
 	; 1 page already had text	; 1 sayfada zaten metin vardı
 	; 1 page skipped	; 1 sayfa atlandı
+	; cancelled — {n} files were not run	; iptal edildi — {n} dosya işlenmedi
 	; corrected {n} pages	; {n} sayfa düzeltildi
 	; failed: {list}	; başarısız oldu: {list}
 	; skipped: {n}	; atlandı: {n}
+	; {n} files already had text	; {n} dosyada zaten metin vardı
 	; {n} pages already had text	; {n} sayfada zaten metin vardı
 	; {n} pages skipped	; {n} sayfa atlandı
 	? of {n}	? / {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} işleme, +{added} / −{deleted} satır (Δ {delta}), +{bin_added} / −{bin_deleted} ikili varlık, {first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A 3×3 median filter against scan speckle	Tarama lekelerine karşı 3×3 medyan filtresi
 	a bookmark cannot be moved inside itself	bir yer işareti kendi içine taşınamaz
 	A button	Bir düğme
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Rust ile yazılmış, temiz oda tekniğiyle geliştirilmiş açık kaynaklı bir PDF uygulaması. MIT VEYA Apache-2.0.
@@ -59,6 +63,7 @@
 	A document needs at least one page: copy instead	Bir belgenin en az bir sayfaya ihtiyacı vardır: bunun yerine kopyalayın
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Belge zaman damgası tüm dosyayı kapsar ve kimsenin imzası değildir, bu yüzden tek başına kaldırılamaz.
 	a field named {name} already exists	{name} adlı bir alan zaten var
+	A folder is asked for when a multiple-file run starts	Klasör, çoklu dosya işlemi başlarken sorulur
 	A font isn't embedded	Bir yazı tipi gömülü değil
 	A form field has additional actions	Bir form alanının ek eylemleri var
 	A link	Bir bağlantı
@@ -84,6 +89,8 @@
 	About {app}	{app} Hakkında
 	about {h} h {m} min left	yaklaşık {h} sa {m} dk kaldı
 	about {n} min left	yaklaşık {n} dk kaldı
+	Accept	Kabul et
+	Accept entire page	Tüm sayfayı kabul et
 	Accepted	Kabul edildi
 	Accepted by {printer}	{printer} kabul etti
 	Accessibility Checker	Erişilebilirlik Denetleyicisi
@@ -115,6 +122,7 @@
 	Add a page from template {name}	{name} şablonundan sayfa ekle
 	Add a radio button	Radyo düğmesi ekle
 	Add a reply	Yanıt ekle
+	Add a second engine's reading when the first is unsure	İlk motor emin olmadığında ikinci bir motorun okumasını ekler
 	Add a stamp	Damga ekle
 	Add a sticky note	Not ekle
 	Add a sticky note here	Buraya bir not ekle
@@ -252,6 +260,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Sayfa içeriği olmayan bir öğedeki alternatif metne hiçbir zaman ulaşılamaz. Kaldırın veya öğeyi içeriğe ekleyin.
 	Alternate text should not hide annotation	Alternatif metin açıklamayı gizlememelidir
 	Alternate text that will never be read	Hiçbir zaman okunmayacak alternatif metin
+	Always read with both engines and merge the words	Her zaman iki motorla okur ve sözcükleri birleştirir
 	Always use my default zoom and page layout	Her zaman varsayılan yakınlaştırmamı ve sayfa düzenimi kullan
 	An action is already running	Zaten çalışan bir eylem var
 	An action with this name already exists.	Bu adda bir eylem zaten var.
@@ -328,6 +337,7 @@
 	Auto portrait/landscape	Otomatik dikey/yatay
 	Auto-deskew	Otomatik düzeltme
 	Auto-detect	Otomatik algıla
+	Auto-rotate	Otomatik döndür
 	Auto-rotate pages	Sayfaları otomatik döndür
 	Auto-size text to fit redaction region	Metni karartma bölgesine sığacak şekilde otomatik boyutlandır
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Güvenli yürütme yalıtımı kullanılabilir olana kadar otomatik AcroForm komut dosyaları devre dışıdır; kaydedilmiş alan değerleri korunmuştur. Düğme ve konsol komut dosyaları kullanılmaya devam eder.
@@ -336,6 +346,7 @@
 	Automatically tag PDF	PDF'i otomatik etiketle
 	Available version: {v}	Kullanılabilir sürüm: {v}
 	average	ortalama
+	AVG CONFIDENCE	ORTALAMA GÜVEN
 	Back	Geri
 	Back side only	Yalnızca arka taraf
 	Back to all tools	Tüm araçlara geri dön
@@ -358,6 +369,7 @@
 	Best for: the deepest reasoning this family has	Şunun için en iyisi: bu ailenin en derin akıl yürütmesi
 	Beveled	Eğimli
 	Bicubic downsampling to	Şu değere bikübik alt örnekleme:
+	Binarize	İkili hâle getir
 	Binding	Ciltleme
 	Binding:	Ciltleme:
 	Black on white	Beyaz üzerinde siyah
@@ -374,6 +386,7 @@
 	Border Color:	Kenarlık Rengi:
 	Borders and Colors	Kenarlıklar ve Renkler
 	Both	Her İkisi
+	Both engines, combined as the Strategy says	İki motor, seçilen stratejiye göre birleştirilir
 	Bottom-left	Sol alt
 	Box	Kutu
 	Bring All to Front	Tümünü Öne Getir
@@ -401,6 +414,7 @@
 	Cancel reverse sides	Arka yüzleri iptal et
 	Canceling…	İptal ediliyor…
 	Cancelled	İptal edildi
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	İptal edildi — {t} sayfanın {m} sayfasında {n} sözcük okundu; geri kalanı okunmadı
 	Cancelling…	İptal ediliyor…
 	Card driver (PKCS #11)	Kart sürücüsü (PKCS #11)
 	Card PIN	Kart PIN'i
@@ -525,6 +539,7 @@
 	Clear selection / close find	Seçimi temizle / bulmayı kapat
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	Sıkışmayı giderin ve kalan sayfaları düzgünce yerleştirin, ardından “Taramaya devam et” seçeneğini seçin.
 	Clear the jam and load the sheets squarely, then choose Try again.	Sıkışmayı giderin ve sayfaları düzgünce yerleştirin, ardından “Yeniden dene” seçeneğini seçin.
+	Click a word to inspect it; drag a rectangle to re-read part of the page	İncelemek için bir sözcüğe tıklayın; sayfanın bir bölümünü yeniden okumak için dikdörtgen çizin
 	Click on the page to add a {tool}, or drag to set its size	Bir {tool} eklemek için sayfaya tıklayın veya boyutunu ayarlamak için sürükleyin
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Metin eklemek için sayfaya tıklayın; her tıklama yeni bir kutu başlatır ve ✓ tamamlar. Taşımak için öğeleri sürükleyin, yeniden boyutlandırmak için bir köşeden sürükleyin, düzenlemek için metne çift tıklayın.
 	Click text or an image to edit it	Düzenlemek için metne veya resme tıklayın
@@ -601,6 +616,8 @@
 	Compress and export	Sıkıştır ve dışa aktar
 	Compress document structure (object streams)	Belge yapısını sıkıştır (nesne akışları)
 	Compressing combined PDF…	Birleştirilen PDF sıkıştırılıyor…
+	CONFIDENCE	GÜVEN
+	Confidence weighted	Güvene göre ağırlıklı
 	Configure a Digital ID for Signing	İmzalama için Dijital Kimlik Yapılandır
 	Configure New Digital ID	Yeni Dijital Kimlik Yapılandır
 	Confirm Password	Parolayı Onayla
@@ -641,8 +658,11 @@
 	Copyright notice	Telif hakkı bildirimi
 	Copyright status	Telif hakkı durumu
 	Correct recognized text	Tanınan metni düzelt
+	Correct recognized text…	Tanınan metni düzelt…
 	Correct scans	Taramaları düzelt
+	corrected	düzeltildi
 	Corrected scan	Düzeltilmiş tarama
+	Corrected text (Enter commits)	Düzeltilmiş metin (Enter onaylar)
 	Could not copy the selection because text could not be read on every page	Tüm sayfalardaki metin okunamadığı için seçim kopyalanamadı
 	Could not mark the selection because text could not be read on every page	Tüm sayfalardaki metin okunamadığı için seçim işaretlenemedi
 	Could not save: {e}	Kaydedilemedi: {e}
@@ -804,8 +824,10 @@ key	Delete	Delete
 @plural	Delete {n} field|Delete {n} fields	{n} alanı sil|{n} alanı sil
 	Delete {o}	{o} sil
 	Deleted page	Silinen sayfa
+	Denoise	Gürültü gider
 	Describe the figure	Şekli tanımlayın
 	Description writer	Açıklamayı yazan
+	Deskew	Eğikliği düzelt
 	Detached signature file	Ayrık imza dosyası
 	Detailed Report	Ayrıntılı Rapor
 	Detect form fields	Form alanlarını algıla
@@ -968,6 +990,7 @@ comment menu	Edit	Düzenle
 	Edit text…	Metni düzenle…
 	Edit this PDF	Bu PDF'i düzenle
 	Edit {field}'s formula	{field} formülünü düzenle
+	Editable text	Düzenlenebilir metin
 	Editorial	Editorial
 	Email Address	E-posta Adresi
 	Email Addresses	E-posta Adresleri
@@ -988,6 +1011,7 @@ comment menu	Edit	Düzenle
 key	End	End
 	End entity	Son varlık
 	Endpoints	Uç noktalar
+	ENGINE · STRATEGY	MOTOR · STRATEJİ
 	English	İngilizce
 	Enhance camera image	Kamera görüntüsünü iyileştir
 	Enhance page	Sayfayı iyileştir
@@ -1028,6 +1052,7 @@ key	Esc	Esc
 	Exclusions use PDF tags. Untagged tables and code remain included. Image exclusion also removes invisible text.	Hariç tutma işlemleri PDF etiketlerini kullanır. Etiketsiz tablolar ve kod sayılmaya devam eder. Görüntüleri hariç tutmak görünmez metni de kaldırır.
 	Execute a menu item	Menü öğesini çalıştır
 	Executive	Executive
+	Exit	Çık
 	Expand all	Tümünü genişlet
 	Expand all bookmarks	Tüm yer işaretlerini genişlet
 	Expand all pages	Tüm sayfaları genişlet
@@ -1084,6 +1109,7 @@ key	Esc	Esc
 	Extract the selected pages…	Seçili sayfaları ayıkla…
 	Extracted 1 page	1 sayfa ayıklandı
 	Extracted {n} pages	{n} sayfa ayıklandı
+	F8: next word to review; Shift+F8 goes back	F8: incelenecek sonraki sözcük; Shift+F8 geri gider
 	Failed	Başarısız
 scroll speed	Fast	Hızlı
 	Fast Web View	Hızlı Web Görünümü
@@ -1205,6 +1231,7 @@ scroll speed	Fast	Hızlı
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Metnin okunabilmesi ve kopyalanabilmesi için yazı tiplerinin karakterlerini Unicode ile eşlemesi gerekir. Yazı tiplerini düzeltin veya PDF'i yeniden oluşturun.
 	for images above	bundan büyük resimler için:
 	For page sizes and margins.	Sayfa boyutları ve kenar boşlukları için.
+	Force OCR (override skip options)	OCR'yi zorla (atlama seçeneklerini yok say)
 	Form data and PDF forms	Form verileri ve PDF formları
 	Form field advice	Form alanları için öneriler
 	Form field detection is already running	Form alanı algılama zaten çalışıyor
@@ -1287,6 +1314,7 @@ calendar weekday	Fr	Cu
 	Hide window controls	Pencere kontrollerini gizle
 	Hide {app}	{app} Uygulamasını Gizle
 	Hides annotation	Açıklamayı gizler
+	HIGH (>= 90%)	YÜKSEK (>= %90)
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Daha yüksek görüntü kalitesi daha büyük dosyalar demektir. Yalnızca daha küçükse bir kopya kaydedilir.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Daha yüksek kalite, genellikle daha büyük dosyalar. 450 ppi üzerindeki JPEG fotoğrafları 300 ppi'ye, kalite 85 olacak şekilde küçültülür. Kayıpsız grafikler ve maskeli görüntüler piksellerini korur.
 	Highlight	Vurgula
@@ -1324,6 +1352,7 @@ key	Home	Home
 	Import {name}	{name} içe aktar
 	Importing data arrives on the web with file pickers for data files	Veri içe aktarma web'de veri dosyası seçicileriyle birlikte sunulacaktır
 	In multiple files	Birden çok dosyada
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	Birden çok dosyada: metin içeren bir dosya ayrıca atlanmış sayılır ve onun için hiçbir şey yazılmaz
 	In new window	Yeni pencerede
 	In streams that use LZW encoding, use Flate instead	LZW kodlamalı akışlarda bunun yerine Flate kullan
 	In this file	Bu dosyada
@@ -1511,8 +1540,10 @@ key	Home	Home
 	Loop	Döngü
 	Loupe Tool	Büyüteç Aracı
 	Loupe tool	Büyüteç aracı
+	LOW (< 70%)	DÜŞÜK (< %70)
 	Low resolution	Düşük çözünürlük
 	Low Resolution (150 dpi)	Düşük Çözünürlük (150 dpi)
+	LOW-CONFIDENCE WORDS	DÜŞÜK GÜVENLİ SÖZCÜKLER
 	Lowering this forgets the oldest files. At 0 there is no list.	Bu değeri düşürmek en eski dosyaları unutturur. 0'da liste olmaz.
 	Make accessible	Erişilebilir yap
 	Make Current Properties Default	Geçerli Özellikleri Varsayılan Yap
@@ -1538,6 +1569,7 @@ key	Home	Home
 	Mark for redaction	Karartma için işaretle
 	Mark Page Range	Sayfa Aralığını İşaretle
 	Mark pages for redaction	Sayfaları karartma için işaretle
+	Mark this page as reviewed (Ctrl+T)	Bu sayfayı incelendi olarak işaretle (Ctrl+T)
 	Mark with checkmark	Onay işaretiyle işaretle
 	Marked	İşaretlendi
 	Marks do not remove content. Select Redact all, then save.	İşaretler içeriği kaldırmaz. ‘Tümünü karart’ı seçin ve kaydedin.
@@ -1562,6 +1594,7 @@ key	Home	Home
 	Measurement information	Ölçüm bilgisi
 	Measurement snapping	Ölçüm yakalama
 	Measuring tool	Ölçüm aracı
+	MEDIUM (70-89%)	ORTA (%70-89)
 	Menu	Menü
 	Merge all windows	Tüm pencereleri birleştir
 	Merge data files into spreadsheet…	Veri dosyalarını elektronik tabloda birleştir…
@@ -1667,6 +1700,7 @@ calendar weekday	Mo	Pt
 	Next month	Sonraki ay
 	Next sheet	Sonraki yaprak
 	Next tab	Sonraki sekme
+	Next uncertain	Sonraki belirsiz
 	Next view	Sonraki görünüm
 	Night	Gece
 	No actions	Eylem yok
@@ -1784,6 +1818,8 @@ scroll speed	Normal	Orta
 	Number pages	Sayfaları numaralandır
 	Number pages…	Sayfaları numaralandır…
 	Numbered list	Numaralı liste
+	OCR complete — no text recognized on this page.	OCR tamamlandı — bu sayfada metin tanınmadı.
+	OCR results rejected.	OCR sonuçları reddedildi.
 	October	Ekim
 	Odd pages	Tek sayfalar
 	Odd Pages Only	Yalnızca Tek Sayfalar
@@ -1910,6 +1946,7 @@ animation effects	On	Açık
 	Oval	Elips
 	Owner password (no restrictions apply)	İzin parolası (hiçbir kısıtlama uygulanmaz)
 	Package: {name}	Paket: {name}
+	PAGE	SAYFA
 	Page background	Sayfa arka planı
 	Page Content	Sayfa İçeriği
 	page content	sayfa içeriği
@@ -1936,6 +1973,7 @@ animation effects	On	Açık
 	Page thumbnails panel	Sayfa küçük resimleri paneli
 	Page tools	Sayfa araçları
 	Page transitions	Sayfa geçişleri
+	Page verified	Sayfa doğrulandı
 	Page will not cause screen flicker	Sayfa ekran titremesine neden olmaz
 	Page {label}	Sayfa {label}
 	Page {n}	Sayfa {n}
@@ -1964,6 +2002,7 @@ animation effects	On	Açık
 	Pages to Print	Yazdırılacak Sayfalar
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Metni okunamayan sayfalar: {n}. Bu sayfalardaki eşleşmeler listelenmez.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Bağlantı, yorum veya alan içeren sayfalar yapı sırasına göre sekmelenmelidir. Düzeltme, her sayfanın sekme sırasını Belge Yapısını Kullan olarak ayarlar.
+	Pages with renderable text are left alone and reported as skipped	Görüntülenebilir metin içeren sayfalara dokunulmaz ve atlandı olarak bildirilir
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Arka plan eklendikten sonra değişen sayfalar, bu yüzden kendi beyaz dolguları kapalı kalıyor: {pages}. Beyaz kâğıtta aynı görünürler.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Arka planı gizleyecek kendi beyaz dolgusu olan sayfalar: {pages}. Değiştir
 	Pages:	Sayfalar:
@@ -2086,8 +2125,10 @@ animation effects	On	Açık
 	Previous month	Önceki ay
 	Previous sheet	Önceki yaprak
 	Previous tab	Önceki sekme
+	Previous uncertain	Önceki belirsiz
 	Previous view	Önceki görünüm
 	Primary language	Birincil dil
+	Primary only	Yalnızca birincil
 	Print ({key})	Yazdır ({key})
 	Print (⌘P)	Yazdır (⌘P)
 	Print as image	Resim olarak yazdır
@@ -2135,6 +2176,8 @@ animation effects	On	Açık
 	RAM {gb} GB	RAM {gb} GB
 	Rating	Derecelendirme
 	Raw:	Ham:
+	Re-OCR entire page	Tüm sayfaya yeniden OCR uygula
+	Re-OCR this region	Bu bölgeye yeniden OCR uygula
 	Re-type Password	Parolayı Yeniden Yazın
 	Read	Oku
 	Read mode	Okuma modu
@@ -2146,6 +2189,7 @@ animation effects	On	Açık
 	Read out loud requires Windows, macOS or Linux.	Sesli okuma şu anda Windows / macOS / Linux gerektirir.
 	Read this page only	Yalnızca bu sayfayı oku
 	Read to end of document	Belgenin sonuna kadar oku
+	Read {n} words on {m} of {t} pages	{t} sayfanın {m} sayfasında {n} sözcük okundu
 	Reading colours	Okuma renkleri
 	Reading options…	Okuma seçenekleri…
 	Reading page {page}…	{page}. sayfa okunuyor…
@@ -2154,6 +2198,7 @@ animation effects	On	Açık
 	Reading the printer's settings…	Yazıcı ayarları okunuyor…
 	Reading the raw document…	Ham belge okunuyor…
 	Reading theme	Okuma teması
+	Reads pages and files even where the skip options would leave them alone	Atlama seçenekleri atlayacak olsa bile sayfaları ve dosyaları okur
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	{names} alanlarını okur, onlar da bu alanı okur. Hiçbir sıra bir döngüyü düzeltemez: formüllerden birini değiştirin.
 	Reads {name}, which calculates later, so it shows an old value.	Daha sonra hesaplanan {name} alanını okur, bu yüzden eski bir değer gösterir.
 	Reads {name}, which the form doesn't have, so it gets no value there.	Formda olmayan {name} alanını okur, bu yüzden oradan değer alamaz.
@@ -2173,6 +2218,8 @@ animation effects	On	Açık
 	Recognize Text…	Metni Tanı…
 	Recognize text…	Metni tanı…
 	Recognized 1 word	1 sözcük tanındı
+	Recognized text	Tanınan metin
+	Recognized text applied ({n} words, one undoable step)	Tanınan metin uygulandı ({n} sözcük, geri alınabilir tek adım)
 	Recognized {n} words	{n} sözcük tanındı
 	Recognized {w} words in 1 file	1 dosyada {w} sözcük tanındı
 	Recognized {w} words in {n} files	{n} dosyada {w} sözcük tanındı
@@ -2204,6 +2251,8 @@ animation effects	On	Açık
 	Refresh plugins	Eklentileri yenile
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Bölge (inç). Genişlik veya yüksekliği sıfır bırakırsanız tüm alan taranır.
 	Regularity	Düzenlilik
+	Reject	Reddet
+	Reject entire page	Tüm sayfayı reddet
 	Rejected	Reddedildi
 	Release notes	Sürüm notları
 	Reliable character encoding is provided	Güvenilir karakter kodlaması sağlandı
@@ -2246,6 +2295,7 @@ animation effects	On	Açık
 	Remove {n} files	{n} dosyayı kaldır
 	Remove {n} pages	{n} sayfayı kaldır
 	Remove {standard} identification	{standard} tanımlamasını kaldır
+	removed	kaldırıldı
 	Removed 1 hidden item. Save to remove them from the file.	1 gizli öğe kaldırıldı. Dosyadan kaldırmak için kaydedin.
 	Removed 1 link	1 bağlantı kaldırıldı
 	Removed the signature {field} and kept its empty field	{field} imzası kaldırıldı, boş alanı korundu
@@ -2368,6 +2418,7 @@ animation effects	On	Açık
 	Rotate view clockwise ({key})	Görünümü saat yönünde döndür ({key})
 	Rotate view clockwise (⇧⌘+)	Görünümü saat yönünde döndür (⇧⌘+)
 	Rotate view counterclockwise	Görünümü saat yönünün tersine döndür
+	ROVER vote	ROVER oylaması
 	Row spacing	Satır aralığı
 	rows have between {min} and {max} columns	satırlarda {min} ile {max} arası sütun var
 	Rule Name	Kural Adı
@@ -2375,6 +2426,7 @@ animation effects	On	Açık
 	Run a JavaScript	Bir JavaScript çalıştır
 	Run form script	Form komut dosyasını çalıştır
 	Run JavaScript	JavaScript çalıştır
+	Run OCR	OCR çalıştır
 	Running action… file {d} of {t}	Eylem çalıştırılıyor… Dosya {d} / {t}
 	Runtime	Çalışma zamanı
 calendar weekday	Sa	Ct
@@ -2386,6 +2438,7 @@ calendar weekday	Sa	Ct
 	Sanitize Documents	Belgeleri Temizle
 	Sanitize document…	Belgeyi temizle…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	Temizleme, belgedeki gizli bilgileri kaldırır: meta veriler, dosya ekleri, yorumlar, form alanları (düzleştirilmiş), gizli metinler ve katmanlar, yer işaretleri, bağlantılar, eylemler ve komut dosyaları ile özel uygulama verileri.
+	Sauvola binarization: ink to black, paper to white	Sauvola ikili hâle getirme: mürekkep siyaha, kâğıt beyaza
 	Save & Close	Kaydet ve Kapat
 	Save (M4)	Kaydet (M4)
 	Save ({key})	Kaydet ({key})
@@ -2511,6 +2564,7 @@ calendar weekday	Sa	Ct
 	Select a placed signature first	Önce yerleştirilmiş bir imza seç
 	Select a text box or an image first	Önce bir metin kutusu veya resim seçin
 	Select a word	Bir kelime seç
+	Select a word on the page to inspect it	İncelemek için sayfada bir sözcük seçin
 	Select Action:	Eylem Seçin:
 	Select all	Tümünü seç
 	Select all pages (Organize)	Tüm sayfaları seç (Düzenle)
@@ -2583,6 +2637,7 @@ calendar weekday	Sa	Ct
 	Set to current page ({n})	Geçerli sayfaya ayarla ({n})
 	Set to zero	Sıfırla
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Bu kaynağın sunduğu ayarlar. Sürücü değerini korumak için bir denetimi olduğu gibi bırakın.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	Birkaç dosya aynı ada sahip, bu yüzden sonuçları birbirinin üzerine yazılırdı; hiçbir şey yazılmadı: {list}
 	SHA-1 digest	SHA-1 özeti
 	SHA-256 digest	SHA-256 özeti
 	Shadings	Gölgelendirmeler
@@ -2593,6 +2648,7 @@ calendar weekday	Sa	Ct
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift 45 dereceye sabitler. Geri alma tuşu bir köşeyi kaldırır. Escape iptal eder.
 	Shift drags freely	Shift serbest sürükler
+	Shift+F8: the previous word to review	Shift+F8: incelenecek önceki sözcük
 	Shift- or Ctrl/Command-click to select several fields.	Birden çok alan seçmek için Shift veya Ctrl/Komut tuşuna basarak tıklayın.
 	Shift-click to select several objects. Drag empty space to select an area.	Birden çok nesne seçmek için Shift tuşuna basarak tıklayın. Bir alanı seçmek için boş alanı sürükleyin.
 	ships in milestone {m}	{m} kilometre taşında çıkacak
@@ -2685,8 +2741,11 @@ key	Shift	Shift
 	Single page	Tek sayfa
 	Single Page Continuous	Tek Sayfa Sürekli
 	Single word or phrase	Tek sözcük veya kelime öbeği
+	Skip files that already have text	Zaten metin içeren dosyaları atla
+	Skip pages that already have text	Zaten metin içeren sayfaları atla
 	Skip Rule	Kuralı Atla
 	Skipped	Atlandı
+	skipped	atlandı
 	Slash	Eğik çizgi
 scroll speed	Slow	Yavaş
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	Ekranlar ve e-posta için daha küçük dosyalar. 225 ppi üzerindeki görüntüler 150 ppi'ye, JPEG kalitesi 60 olacak şekilde küçültülür; çizimler ayrıntı kaybedebilir.
@@ -2712,6 +2771,7 @@ scroll speed	Slow	Yavaş
 	Sort items	Öğeleri sırala
 	sorted ascending	artan sırada
 	sorted descending	azalan sırada
+	Source page	Kaynak sayfa
 key	Space	Boşluk
 	Space Audit	Alan Denetimi
 	Spacing between copies	Kopyalar arası boşluk
@@ -2744,12 +2804,14 @@ action wizard	Start	Başlat
 	Steps	Adımlar
 	Stick to a side:	Bir kenara yapıştır:
 	Sticky note	Not
+	still checking whether the tesseract program can run; try again in a moment	tesseract programının çalışıp çalışamayacağı hâlâ denetleniyor; birazdan yeniden deneyin
 	Still printing; the job continues on the printer	Yazdırma sürüyor; iş yazıcıda devam ediyor
 	Still rendering — this page is unusually complex…	Hâlâ işleniyor — bu sayfa alışılmadık derecede karmaşık…
 	Stop reading	Okumayı durdur
 	Straighten scanned page	Taranmış sayfayı düzelt
 	Straighten skewed scans	Eğik taramaları düzelt
 	Straighten the page	Sayfayı düzelt
+	Straightens skewed text lines before reading	Okumadan önce eğik metin satırlarını düzeltir
 	Strength: {s}	Güç: {s}
 	Strikethrough	Üstü çizili
 	Strikethrough text	Metnin üstünü çiz
@@ -2764,6 +2826,7 @@ certificate	Subject	Konu
 	Subscript	Alt simge
 	Success	Başarılı
 	Suggest edits	Düzenleme öner
+	Suggestions	Öneriler
 	sum (+)	toplam (+)
 	Summarize	Özetle
 	Summarize comments	Yorumları özetle
@@ -2841,12 +2904,14 @@ calendar weekday	Th	Pe
 	Thai and Arabic use regular fallback fonts when available.	Tayca ve Arapça, mevcut olduğunda normal yedek yazı tiplerini kullanır.
 	That didn't work: an internal error stopped it ({m}).	Bu işlem yapılamadı: dahili bir hata durdurdu ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Bu işlem yapılamadı: dahili bir hata durdurdu ({m}). Belgeleriniz değişmedi.
+	That is the source file; choose another destination	Bu kaynak dosya; başka bir hedef seçin
 	That length can't be right for this line: check the unit.	Bu uzunluk bu çizgi için doğru olamaz: birimi kontrol edin.
 	The answer proposes formatting changes.	Yanıt biçim değişiklikleri öneriyor.
 	The answer stopped unexpectedly.	Yanıt beklenmedik şekilde durdu.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API anahtarı bu adrese şifrelenmeden gönderilir. Sunucu güvendiğin bir ağda değilse https:// kullan.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	alan, aralık ve sütun genişlikleri sayı olmalı; aralık 0 veya daha büyük, her genişlik 0'dan büyük olmalı
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Cam her seferinde bir sayfa tarar. Bir ön yüz tarayıp çevirin, sonra arka yüzü.
+	The built-in engine (pure Rust)	Yerleşik motor (saf Rust)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Hesaplama sırasında hiçbir şey hesaplamayan {n} giriş var. "Sırayı düzelt" bunları kaldırır.|Hesaplama sırasında hiçbir şey hesaplamayan {n} giriş var. "Sırayı düzelt" bunları kaldırır.
 	the certificate authorities	sertifika yetkilileri
 	the certificate expired on {date}	sertifikanın süresi {date} tarihinde doldu
@@ -2947,9 +3012,13 @@ calendar weekday	Th	Pe
 	The order saved in the PDF needs tidying	PDF'te kayıtlı sıranın düzenlenmesi gerekiyor
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Orijinaller değiştirilmez. Çıktı klasöründe aynı adlı bir dosya varsa korunur ve yeni dosya bir numara alır.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Diğer imzalar ({names}) belgenin imzalandıktan sonra değiştiğini bildirecek. Onları yeniden doğrulayın: geçerli kalacaklarının hiçbir garantisi yok.
+	The output folder already holds files of these names; nothing was written: {list}	Çıktı klasöründe bu adlara sahip dosyalar zaten var; hiçbir şey yazılmadı: {list}
 	The output folder can't be one of the folders being read, or contain one.	Çıktı klasörü okunan klasörlerden biri olamaz veya bunlardan birini içeremez.
 	The page could not be separated: {error}	Sayfa ayrıştırılamadı: {error}
 	The page has changed; select the image again	Sayfa değişti; resmi yeniden seçin
+	The page was read again; its words were replaced (undo in the panel)	Sayfa yeniden okundu; sözcükleri değiştirildi (panelde geri alınabilir)
+	The page's words were applied as one undoable step ({n} words)	Sayfanın sözcükleri geri alınabilir tek adım olarak uygulandı ({n} sözcük)
+	The page's words were cleared (undo in the panel)	Sayfanın sözcükleri temizlendi (panelde geri alınabilir)
 	The pages already scanned were kept in the document.	Daha önce taranan sayfalar belgede tutuldu.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Sayfalar ayıklandı ancak silinmedi, çünkü bir klasör seçerken belge değişti.
 	the password is incorrect	parola yanlış
@@ -2977,8 +3046,10 @@ calendar weekday	Th	Pe
 	The printer's reply couldn't be understood	Yazıcının yanıtı anlaşılamadı
 	The provider's page didn't come back in time. Try again.	Sağlayıcının sayfası zamanında dönmedi. Yeniden deneyin.
 	The raw text was truncated to what fits.	Ham metin kısaltıldı.
+	The re-read found no text; the existing words are unchanged	Yeniden okuma metin bulamadı; mevcut sözcükler değişmedi
 	The redaction does not fit page {page}; no pages were marked.	Karartma {page}. sayfaya sığmıyor; hiçbir sayfa işaretlenmedi.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Yönlendirme URI'si bağlantı noktalı http://127.0.0.1 veya http://localhost olmalıdır.
+	The region was read again; its words were replaced (undo in the panel)	Bölge yeniden okundu; sözcükleri değiştirildi (panelde geri alınabilir)
 	The release has ambiguous packages. Choose a package on the official release page.	Sürümde birden fazla uyumlu paket var. Resmî sürüm sayfasından bir paket seçin.
 	The release is not a published stable update. Try again later.	Sürüm, yayımlanmış kararlı bir güncelleme değil. Daha sonra yeniden deneyin.
 	The replacement file doesn't have that many pages.	Yedek dosyada o kadar sayfa yok.
@@ -3003,10 +3074,12 @@ calendar weekday	Th	Pe
 	The scanner reported a lamp or device error.	Tarayıcı bir lamba veya aygıt hatası bildirdi.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Tarayıcı bir kağıt sorunu bildirdi (sıkışma veya birden fazla sayfanın birlikte çekilmesi).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Ekranın inç başına gerçek piksel sayısı. Gerçek boyutun (%100) sayfaları gerçek büyüklüklerinde göstermesi için bir cetvelle kalibre edin.
+	The searchable copies are written here under the source names	Aranabilir kopyalar buraya kaynak adlarıyla yazılır
 	The security settings don't allow screen readers to read the text	Güvenlik ayarları ekran okuyucuların metni okumasına izin vermiyor
 	The selected area has been copied ({w} × {h} pixels)	Seçilen alan kopyalandı ({w} × {h} piksel)
 	The selected fields could not be found. Select them again.	Seçilen alanlar bulunamadı. Bunları tekrar seçin.
 	The selected redaction is unavailable or invalid.	Seçilen karartma kullanılamıyor veya geçersiz.
+	The selected word is gone; choose another	Seçili sözcük artık yok; başka birini seçin
 	The selection changed. Select the signature again.	Seçim değişti. İmzayı yeniden seç.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	{provider} ile oturum sona erdi. Dijital Kimlik Yapılandır bölümünden yeniden oturum açın.
 	The shared folder:	Paylaşılan klasör:
@@ -3053,6 +3126,9 @@ calendar weekday	Th	Pe
 	The smart card's digital IDs couldn't be listed: {e}	Akıllı kartın dijital kimlikleri listelenemedi: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standart yazı tipleri “{c}” ({code}) karakterini çizemiyor. Şimdilik metin olarak yalnızca Batı Avrupa karakterleri eklenebilir.
 	The standard it must meet and where the file goes	Uyması gereken standart ve dosyanın gideceği yer
+	the tesseract engine is not available in the web build	tesseract motoru web sürümünde kullanılamaz
+	the tesseract program was not found (install it, or add it to the PATH)	tesseract programı bulunamadı (yükleyin veya PATH'e ekleyin)
+	The tesseract program, run as an external process	Harici işlem olarak çalıştırılan tesseract programı
 	The text is the same	Metin aynı
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	metin tanıma modelleri yüklü değil (PdfCraft'ı yeniden yükleyin veya PDFCRAFT_MODELS değişkenini bunları içeren klasöre ayarlayın)
 	The timestamp authority's certificate is not issued for time stamping.	Zaman damgası yetkilisinin sertifikası zaman damgalama için verilmemiş.
@@ -3217,6 +3293,7 @@ calendar weekday	Tu	Sa
 	Turn on continuous scrolling	Sürekli kaydırmayı aç
 	Turn upside down (180°)	Baş aşağı çevir (180°)
 	Turned left	Sola döndürüldü
+	Turns pages scanned sideways or upside down upright before reading	Yan veya ters taranmış sayfaları okumadan önce düzeltir
 	two cells would both be named {name}	iki hücrenin de adı {name} olurdu
 	Two-page view	İki sayfa görünümü
 	Two-sided:	Çift taraflı:
@@ -3237,6 +3314,7 @@ signature pad	Type	Yaz
 	Underline text	Metnin altını çiz
 	Undid {label}	{label} geri alındı
 	Undo	Geri al
+	Undo the last review change (Ctrl+Z)	Son inceleme değişikliğini geri al (Ctrl+Z)
 	Undo {action}	{action} geri al
 	Unit	Birim
 	Unit:	Birim:
@@ -3255,6 +3333,7 @@ signature pad	Type	Yaz
 	Unpin {folder}	{folder} sabitlemesini kaldır
 	Unpinned {tool} from Home	{tool} Ana Sayfadan kaldırıldı
 	Unplaced	Yerleştirilmemiş
+	unreviewed	incelenmedi
 	Unsaved changes to this document are saved in the new file too.	Bu belgedeki kaydedilmemiş değişiklikler de yeni dosyaya kaydedilir.
 	Unsigned signature field	İmzalanmamış imza alanı
 	Unsigned signature field: {name}	İmzalanmamış imza alanı: {name}
@@ -3297,6 +3376,7 @@ signature pad	Type	Yaz
 	Use Row Order	Satır Sırasını Kullan
 	Use system setting	Sistem ayarını kullan
 	Use system title bar	Sistem başlık çubuğunu kullan
+	Use the chosen engine's reading alone	Yalnızca seçilen motorun okumasını kullan
 	Use the default	Varsayılanı kullan
 	Use this size for saved initials	Kaydedilen paraflar için bu boyutu kullan
 	Use this size for saved signature	Kaydedilen imza için bu boyutu kullan
@@ -3323,6 +3403,9 @@ signature pad	Type	Yaz
 	Validity unknown	Geçerlilik bilinmiyor
 	Value is not calculated	Değer hesaplanmaz
 	Value is the	Değer şudur:
+	Verified	Doğrulandı
+	verified	doğrulandı
+	VERIFIED %	DOĞRULANAN %
 	Verify	Doğrula
 	Verify PDF/UA	PDF/UA doğrula
 	Verify PDF/X	PDF/X doğrula
@@ -3369,14 +3452,17 @@ document scrollbar width	Wide	Geniş
 	Will use the feeder.	Besleyici kullanılacak.
 	Window Options	Pencere Seçenekleri
 	Windows store  ·  	Windows depolama alanı  ·  
+	Word	Sözcük
 	Word count	Sözcük sayısı
 	Word counting stopped unexpectedly.	Sözcük sayımı beklenmedik şekilde durdu.
 	Word count…	Sözcük sayısı…
 	Words or phrases to redact	Karartılacak sözcükler veya ifadeler
 	Workspace modes	Çalışma alanı modları
 	Write this email?	Bu e-posta yazılsın mı?
+	Writes a new document of visible text; the scan is not changed	Görünür metinden oluşan yeni bir belge yazar; tarama değiştirilmez
 	Wrong password	Yanlış parola
 	Wrote 1 file to {dir}	1 dosya {dir} konumuna yazıldı
+	Wrote {name}	{name} yazıldı
 	Wrote {n} files to {dir}	{n} dosya {dir} konumuna yazıldı
 	X Object Forms	XObject Formları
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA formu: Diğer görüntüleyicilerin doldurduklarınızı göstermesi için alanları ve XFA verileri eşitlenir.
@@ -3453,6 +3539,7 @@ document scrollbar width	Wide	Geniş
 	{name} — unsaved changes	{name} — kaydedilmemiş değişiklikler
 	{name}: choosing images arrives on the web with file pickers for images	{name}: resim seçimi web'de resim dosyası seçicileriyle birlikte sunulacaktır
 	{name}: the {other} action isn't supported yet	{name}: {other} eylemi henüz desteklenmiyor
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}: {pages} sayfalarında {n} düşük güvenli sözcük
 	{name}_unsigned.pdf	{name}_imzasiz.pdf
 @plural	{n} byte|{n} bytes	{n} bayt|{n} bayt
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} hesaplama artık yeni adı kullanıyor.|{n} hesaplama artık yeni adı kullanıyor.
@@ -3493,6 +3580,7 @@ document scrollbar width	Wide	Geniş
 	{n} selected	{n} seçildi
 	{n} tags	{n} etiket
 	{n} word(s) or phrase(s)	{n} sözcük veya ifade
+	{n} word(s) to review	İncelenecek {n} sözcük
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} bir sayfa numarası ya da etiketi değil
 	{rule} - {status}	{rule} - {status}

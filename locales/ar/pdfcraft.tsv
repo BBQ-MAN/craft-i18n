@@ -20,6 +20,7 @@
 	 on page {label}	 في الصفحة {label}
 	 on page {p}	 في الصفحة {p}
 	 · password-protected	 · محمي بكلمة مرور
+	+ Dictionary	+ القاموس
 	+ Page {p}	+ صفحة {p}
 	+Bin	+Bin
 	+LOC	+LOC
@@ -39,14 +40,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 رقم، A حرف، O حرف أو رقم، X أي محرف
 	; 1 page already had text	؛ صفحة واحدة كان فيها نص بالفعل
 	; 1 page skipped	; تم تخطي صفحة واحدة
+	; cancelled — {n} files were not run	؛ أُلغي — لم تُعالج {n} من الملفات
 	; corrected {n} pages	; تم تصحيح {n} صفحات
 	; failed: {list}	؛ فشل: {list}
 	; skipped: {n}	؛ تم التخطي: {n}
+	; {n} files already had text	؛ كانت {n} من الملفات تحتوي على نص بالفعل
 	; {n} pages already had text	؛ {n} صفحات كان فيها نص بالفعل
 	; {n} pages skipped	; تم تخطي {n} صفحات
 	? of {n}	? من {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} طلبات سحب، {commits} إيداعات، +{added} / −{deleted} أسطر (Δ {delta})، +{bin_added} / −{bin_deleted} أصول ثنائية، {first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A 3×3 median filter against scan speckle	مرشح وسيط 3×3 لإزالة بقع المسح الضوئي
 	a bookmark cannot be moved inside itself	لا يمكن نقل إشارة مرجعية إلى داخل نفسها
 	A button	زر
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	تطبيق PDF مفتوح المصدر مكتوب بلغة Rust بأسلوب الغرفة النظيفة. MIT OR Apache-2.0.
@@ -57,6 +61,7 @@
 	A document needs at least one page: copy instead	المستند يحتاج إلى صفحة واحدة على الأقل: استخدم النسخ بدلًا من ذلك
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	يشمل الختم الزمني للمستند الملف كله وليس توقيعًا لأحد، لذا لا يمكن إزالته وحده.
 	a field named {name} already exists	يوجد حقل باسم {name} بالفعل
+	A folder is asked for when a multiple-file run starts	يُطلب اختيار المجلد عند بدء معالجة عدة ملفات
 	A font isn't embedded	أحد الخطوط غير مدمج
 	A form field has additional actions	حقل نموذج له إجراءات إضافية
 	A link	رابط
@@ -80,6 +85,8 @@
 	About {app}	حول {app}
 	about {h} h {m} min left	حوالي {h} س {m} د متبقية
 	about {n} min left	حوالي {n} دقيقة متبقية
+	Accept	قبول
+	Accept entire page	قبول الصفحة بأكملها
 	Accepted	مقبول
 	Accepted by {printer}	قبلته {printer}
 	Accessibility Checker	مدقق إمكانية الوصول
@@ -110,6 +117,7 @@
 	Add a page from template {name}	إضافة صفحة من القالب {name}
 	Add a radio button	إضافة زر اختيار
 	Add a reply	إضافة رد
+	Add a second engine's reading when the first is unsure	يضيف قراءة محرك ثانٍ عندما لا يكون الأول متأكدًا
 	Add a stamp	إضافة ختم
 	Add a sticky note	إضافة ملاحظة لاصقة
 	Add a sticky note here	إضافة ملاحظة لاصقة هنا
@@ -246,6 +254,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	النص البديل على عنصر بلا محتوى في الصفحة لا يُوصَل إليه أبدًا. أزله أو اربط العنصر بمحتوى.
 	Alternate text should not hide annotation	النص البديل ينبغي ألا يخفي تعليقًا توضيحيًا
 	Alternate text that will never be read	نص بديل لن يُقرأ أبدًا
+	Always read with both engines and merge the words	يقرأ دائمًا بكلا المحركين ويدمج الكلمات
 	Always use my default zoom and page layout	استخدام التكبير وتخطيط الصفحة الافتراضيين دائمًا
 	An action is already running	يوجد إجراء قيد التشغيل بالفعل
 	An action with this name already exists.	يوجد إجراء بهذا الاسم بالفعل.
@@ -323,13 +332,16 @@ calendar date	August	أغسطس
 	Auto portrait/landscape	عمودي/أفقي تلقائيًا
 	Auto-deskew	تصحيح الميل تلقائياً
 	Auto-detect	اكتشاف تلقائي
+	Auto-rotate	تدوير تلقائي
 	Auto-rotate pages	تدوير الصفحات تلقائيًا
 	Auto-size text to fit redaction region	تحجيم النص تلقائيًا ليلائم منطقة الحجب
+	Automatic	تلقائي
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	السكربتات التلقائية لـ AcroForm معطّلة إلى أن يتوفر عزل آمن للتنفيذ؛ بقيت قيم الحقول المحفوظة كما هي. تبقى سكربتات الأزرار ووحدة التحكم متاحة.
 	Automatically rotate sideways and upside-down pages	تدوير الصفحات الجانبية والمقلوبة تلقائيًا
 	Automatically tag PDF	وسم PDF تلقائيًا
 	Available version: {v}	الإصدار المتاح: {v}
 	average	المتوسط
+	AVG CONFIDENCE	متوسط الثقة
 	Back	رجوع
 	Back side only	الوجه الخلفي فقط
 	Back to all tools	العودة إلى كل الأدوات
@@ -353,6 +365,7 @@ certificate	Basic constraints	القيود الأساسية
 	Best for: the deepest reasoning this family has	الأفضل لـ: أعمق استدلال تملكه هذه العائلة
 	Beveled	مشطوف
 	Bicubic downsampling to	تقليل العينات بطريقة Bicubic إلى
+	Binarize	تحويل إلى أبيض وأسود
 	Binding	التجليد
 	Binding:	التجليد:
 	Black on white	أسود على أبيض
@@ -367,6 +380,7 @@ certificate	Basic constraints	القيود الأساسية
 	Bookmarks Panel and Page	لوحة الإشارات المرجعية والصفحة
 	Border Color:	لون الحد:
 	Borders and Colors	الحدود والألوان
+	Both engines, combined as the Strategy says	كلا المحركين، يُجمعان وفق الاستراتيجية المختارة
 	Box	المربع
 	Brightness	السطوع
 	Bring All to Front	إحضار الكل إلى الأمام
@@ -394,6 +408,7 @@ certificate	Basic constraints	القيود الأساسية
 	Cancel reverse sides	إلغاء الوجه الخلفي
 	Canceling…	جارٍ الإلغاء…
 	Cancelled	ملغى
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	أُلغي — قُرئت {n} كلمة في {m} من {t} صفحة؛ ولم يُقرأ الباقي
 	Cancelling…	جارٍ الإلغاء…
 	Card driver (PKCS #11)	برنامج تشغيل البطاقة (PKCS #11)
 	Card PIN	رمز PIN للبطاقة
@@ -518,6 +533,7 @@ certificate	Basic constraints	القيود الأساسية
 	Clear selection / close find	مسح التحديد / إغلاق البحث
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	أزل الورق المحشور وضع الأوراق المتبقية بشكل مستقيم، ثم اختر «متابعة المسح».
 	Clear the jam and load the sheets squarely, then choose Try again.	أزل الورق المحشور وضع الأوراق بشكل مستقيم، ثم اختر «إعادة المحاولة».
+	Click a word to inspect it; drag a rectangle to re-read part of the page	انقر كلمة لفحصها؛ واسحب مستطيلًا لإعادة قراءة جزء من الصفحة
 	Click on the page to add a {tool}, or drag to set its size	انقر على الصفحة لإضافة {tool}، أو اسحب لتحديد حجمه
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	انقر على الصفحة لإضافة نص؛ كل نقرة تبدأ مربعًا جديدًا، و✓ تنهي. اسحب العناصر لنقلها، واسحب زاوية لتغيير الحجم، وانقر نقرًا مزدوجًا على النص لتحريره.
 	Click text or an image to edit it	انقر على نص أو صورة لتحريرها
@@ -592,6 +608,8 @@ certificate	Basic constraints	القيود الأساسية
 	Compress and export	الضغط والتصدير
 	Compress document structure (object streams)	ضغط بنية المستند (تدفقات الكائنات)
 	Compressing combined PDF…	جارٍ ضغط ملف PDF المدمج…
+	CONFIDENCE	الثقة
+	Confidence weighted	مرجّح بالثقة
 	Configure a Digital ID for Signing	إعداد معرّف رقمي للتوقيع
 	Configure New Digital ID	إعداد معرّف رقمي جديد
 	Confirm Password	تأكيد كلمة المرور
@@ -632,8 +650,11 @@ certificate	Basic constraints	القيود الأساسية
 	Copyright status	حالة حقوق النشر
 	Copyrighted	محمي بحقوق النشر
 	Correct recognized text	تصحيح النص المتعرَّف عليه
+	Correct recognized text…	تصحيح النص المتعرَّف عليه…
 	Correct scans	تصحيح الصفحات الممسوحة
+	corrected	مصحَّحة
 	Corrected scan	مسح مصحح
+	Corrected text (Enter commits)	النص المصحَّح (يعتمده Enter)
 	Could not copy the selection because text could not be read on every page	تعذر نسخ التحديد لأنه تعذرت قراءة النص في كل الصفحات
 	Could not mark the selection because text could not be read on every page	تعذر وضع علامة على التحديد لأنه تعذرت قراءة النص في كل الصفحات
 	Could not save: {e}	تعذّر الحفظ: {e}
@@ -794,8 +815,10 @@ key	Delete	Delete
 @plural	Delete {n} field|Delete {n} fields	حذف {n} حقل|حذف {n} حقل|حذف {n} حقلين|حذف {n} حقول|حذف {n} حقلاً|حذف {n} حقل
 	Delete {o}	حذف {o}
 	Deleted page	صفحة محذوفة
+	Denoise	إزالة التشويش
 	Describe the figure	صِف الشكل
 	Description writer	كاتب الوصف
+	Deskew	تقويم الميل
 	Detached signature file	ملف توقيع منفصل
 	Detailed Report	تقرير مفصل
 	Detect form fields	اكتشاف حقول النموذج
@@ -955,6 +978,7 @@ comment menu	Edit	تحرير
 	Edit text…	تحرير النص…
 	Edit this PDF	تحرير هذا الملف PDF
 	Edit {field}'s formula	تحرير صيغة {field}
+	Editable text	نص قابل للتحرير
 	Editorial	Editorial
 	Email Address	عنوان البريد الإلكتروني
 	Email Addresses	عناوين البريد الإلكتروني
@@ -975,6 +999,7 @@ comment menu	Edit	تحرير
 key	End	End
 	End entity	كيان نهائي
 	Endpoints	نقاط النهاية
+	ENGINE · STRATEGY	المحرك · الاستراتيجية
 	English	إنجليزي
 	Enhance camera image	تحسين صورة الكاميرا
 	Enhance page	تحسين الصفحة
@@ -1066,6 +1091,7 @@ key	Esc	Esc
 	Extract the selected pages…	استخراج الصفحات المحددة…
 	Extracted 1 page	استُخرجت صفحة واحدة
 	Extracted {n} pages	استُخرجت {n} صفحات
+	F8: next word to review; Shift+F8 goes back	F8: الكلمة التالية للمراجعة؛ وShift+F8 يعود للخلف
 	Failed	فاشل
 scroll speed	Fast	سريعة
 	Fast Web View	العرض السريع على الويب
@@ -1186,6 +1212,7 @@ calendar date	February	فبراير
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	يجب أن تربط الخطوط محارفها بـ Unicode كي يمكن قراءة النص ونسخه. أصلح الخطوط أو أعد إنشاء ملف PDF.
 	for images above	للصور التي تتجاوز
 	For page sizes and margins.	لأحجام الصفحات والهوامش.
+	Force OCR (override skip options)	فرض التعرف الضوئي (تجاوز خيارات التخطي)
 	Form data and PDF forms	بيانات النماذج ونماذج PDF
 	Form field advice	نصائح لحقول النموذج
 	Form field detection is already running	اكتشاف حقول النموذج قيد التشغيل بالفعل
@@ -1271,6 +1298,7 @@ calendar weekday	Fr	جمعة
 	Hide window controls	إخفاء عناصر تحكم النافذة
 	Hide {app}	إخفاء {app}
 	Hides annotation	يخفي تعليقًا توضيحيًا
+	HIGH (>= 90%)	مرتفعة (>= 90%)
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	زيادة جودة الصور تعني ملفات أكبر. لا تُحفظ نسخة إلا إذا كانت أصغر.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	جودة أعلى وملفات أكبر عادةً. تُخفض صور JPEG التي تتجاوز 450 بكسل لكل بوصة إلى 300، بجودة 85. تحتفظ الرسومات المضغوطة دون فقد والصور ذات الأقنعة ببكسلاتها.
 	Highlight	تمييز
@@ -1303,6 +1331,7 @@ key	Home	Home
 	Importing data arrives on the web with file pickers for data files	استيراد البيانات سيتوفر على الويب مع منتقيات ملفات البيانات
 	Import…	استيراد…
 	In multiple files	في عدة ملفات
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	في عدة ملفات: يُحسب الملف الذي يحتوي على نص ضمن المتخطاة على حدة، ولا يُكتب له شيء
 	In new window	في نافذة جديدة
 	In streams that use LZW encoding, use Flate instead	في التدفقات التي تستخدم ترميز LZW، استخدام Flate بدلاً منه
 	In this file	في هذا الملف
@@ -1485,8 +1514,10 @@ certificate	Key usage	استخدام المفتاح
 	Looking for PDFs…	جارٍ البحث عن ملفات PDF…
 	Looking for printers…	جارٍ البحث عن الطابعات…
 	Loop	حلقة
+	LOW (< 70%)	منخفضة (< 70%)
 	Low resolution	دقة منخفضة
 	Low Resolution (150 dpi)	دقة منخفضة (150 dpi)
+	LOW-CONFIDENCE WORDS	كلمات منخفضة الثقة
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	جعل المستند سهل الوصول
 	Make Current Properties Default	جعل الخصائص الحالية افتراضية
@@ -1512,6 +1543,7 @@ calendar date	March	مارس
 	Mark for redaction	تعليم للحجب
 	Mark Page Range	تعليم نطاق صفحات
 	Mark pages for redaction	تعليم صفحات للحجب
+	Mark this page as reviewed (Ctrl+T)	وضع علامة على هذه الصفحة بأنها رُوجعت (Ctrl+T)
 	Mark with checkmark	تعليم بعلامة صح
 	Marked	معلَّم
 	Marks do not remove content. Select Redact all, then save.	العلامات لا تزيل المحتوى. اختر «حجب الكل»، ثم احفظ الملف.
@@ -1535,6 +1567,7 @@ calendar date	May	مايو
 	Measurement information	معلومات القياس
 	Measurement snapping	انجذاب القياس
 	Measuring tool	أداة القياس
+	MEDIUM (70-89%)	متوسطة (70-89%)
 	Menu	القائمة
 	Merge all windows	دمج كل النوافذ
 	Merge data files into spreadsheet…	دمج ملفات البيانات في جدول بيانات…
@@ -1633,6 +1666,7 @@ calendar weekday	Mo	إثنين
 	Next month	الشهر التالي
 	Next sheet	الورقة التالية
 	Next tab	علامة التبويب التالية
+	Next uncertain	الكلمة غير المؤكدة التالية
 	Next view	العرض التالي
 	Night	ليلي
 	No actions	لا توجد إجراءات
@@ -1749,6 +1783,8 @@ calendar date	November	نوفمبر
 	Number pages	ترقيم الصفحات
 	Number pages…	ترقيم الصفحات…
 	Numbered list	قائمة مرقمة
+	OCR complete — no text recognized on this page.	اكتمل التعرف الضوئي — لم يُتعرف على أي نص في هذه الصفحة.
+	OCR results rejected.	رُفضت نتائج التعرف الضوئي.
 	October	أكتوبر
 calendar date	October	أكتوبر
 	Odd pages	الصفحات الفردية
@@ -1871,6 +1907,7 @@ animation effects	On	مفعّلة
 	Output preview	معاينة الإخراج
 	Owner password (no restrictions apply)	كلمة مرور المالك (لا تنطبق أي قيود)
 	Package: {name}	الحزمة: {name}
+	PAGE	الصفحة
 	Page background	خلفية الصفحة
 	Page Content	محتوى الصفحة
 	page content	محتوى الصفحة
@@ -1895,6 +1932,7 @@ animation effects	On	مفعّلة
 	Page thumbnails panel	لوحة مصغرات الصفحات
 	Page tools	أدوات الصفحات
 	Page transitions	انتقالات الصفحات
+	Page verified	تم التحقق من الصفحة
 	Page will not cause screen flicker	الصفحة لن تسبب وميضًا في الشاشة
 	Page {label}	صفحة {label}
 	Page {n}	صفحة {n}
@@ -1923,6 +1961,7 @@ animation effects	On	مفعّلة
 	Pages to Print	الصفحات المراد طباعتها
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	صفحات تعذّرت قراءة نصها: {n}. لا تُدرج أي مطابقة فيها.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	الصفحات التي تحتوي على روابط أو تعليقات أو حقول ينبغي أن يتبع التنقل فيها ترتيب البنية. يضبط الإصلاح ترتيب التنقل في كل صفحة على «استخدام بنية المستند».
+	Pages with renderable text are left alone and reported as skipped	تُترك الصفحات التي تحتوي على نص قابل للعرض كما هي ويُبلَّغ عنها كمتخطاة
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	تغيّرت الصفحات {pages} بعد إضافة الخلفية، لذا تبقى تعبئتها البيضاء الخاصة متوقفة. تبدو كما هي على الورق الأبيض.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	الصفحات {pages} ترسم تعبئة بيضاء خاصة بها ستُخفي الخلفية. استبدالها
 	Pages:	الصفحات:
@@ -2044,8 +2083,10 @@ animation effects	On	مفعّلة
 	Previous month	الشهر السابق
 	Previous sheet	الورقة السابقة
 	Previous tab	علامة التبويب السابقة
+	Previous uncertain	الكلمة غير المؤكدة السابقة
 	Previous view	العرض السابق
 	Primary language	اللغة الأساسية
+	Primary only	المحرك الأساسي فقط
 	Print ({key})	طباعة ({key})
 	Print (⌘P)	طباعة (⌘P)
 	Print as image	الطباعة كصورة
@@ -2094,6 +2135,8 @@ certificate	Public key	المفتاح العام
 	RAM {gb} GB	الذاكرة {gb} غيغابايت
 	Rating	التقييم
 	Raw:	الخام:
+	Re-OCR entire page	إعادة التعرف الضوئي على الصفحة بأكملها
+	Re-OCR this region	إعادة التعرف الضوئي على هذه المنطقة
 	Re-type Password	أعد كتابة كلمة المرور
 	Read	قراءة
 	Read mode	وضع القراءة
@@ -2105,6 +2148,7 @@ certificate	Public key	المفتاح العام
 	Read out loud requires Windows, macOS or Linux.	تتطلب القراءة بصوت عالٍ حاليًا Windows / macOS / Linux.
 	Read this page only	قراءة هذه الصفحة فقط
 	Read to end of document	قراءة حتى نهاية المستند
+	Read {n} words on {m} of {t} pages	قُرئت {n} كلمة في {m} من {t} صفحة
 	Reading colours	ألوان القراءة
 	Reading options…	خيارات القراءة…
 	Reading page {page}…	جارٍ قراءة الصفحة {page}…
@@ -2113,6 +2157,7 @@ certificate	Public key	المفتاح العام
 	Reading the printer's settings…	جارٍ قراءة إعدادات الطابعة…
 	Reading the raw document…	جارٍ قراءة المستند الخام…
 	Reading theme	سمة القراءة
+	Reads pages and files even where the skip options would leave them alone	يقرأ الصفحات والملفات حتى حيث كانت خيارات التخطي ستتركها
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	يقرأ {names} التي تقرؤه بدورها. لا يمكن لأي ترتيب إصلاح الحلقة: غيّر إحدى الصيغ.
 	Reads {name}, which calculates later, so it shows an old value.	يقرأ {name} الذي يُحسب لاحقًا، لذا يعرض قيمة قديمة.
 	Reads {name}, which the form doesn't have, so it gets no value there.	يقرأ {name}، وهو غير موجود في النموذج، لذا لا يحصل منه على أي قيمة.
@@ -2131,6 +2176,8 @@ certificate	Public key	المفتاح العام
 	Recognize Text…	التعرف على النص…
 	Recognize text…	التعرف على النص…
 	Recognized 1 word	تم التعرف على كلمة واحدة
+	Recognized text	النص المتعرَّف عليه
+	Recognized text applied ({n} words, one undoable step)	طُبِّق النص المتعرَّف عليه ({n} كلمة، خطوة واحدة قابلة للتراجع)
 	Recognized {n} words	تم التعرف على {n} كلمات
 	Recognized {w} words in 1 file	تم التعرف على {w} كلمات في ملف واحد
 	Recognized {w} words in {n} files	تم التعرف على {w} كلمات في {n} ملفات
@@ -2162,6 +2209,8 @@ certificate	Public key	المفتاح العام
 	Refresh plugins	تحديث الإضافات
 	Region in inches. Leave the width or the height at zero to scan the whole area.	المنطقة بالبوصة. اترك العرض أو الارتفاع صفراً لمسح المساحة كلها.
 	Regularity	الانتظام
+	Reject	رفض
+	Reject entire page	رفض الصفحة بأكملها
 	Rejected	مرفوض
 	Release notes	ملاحظات الإصدار
 	Reliable character encoding is provided	ترميز محارف موثوق متوفر
@@ -2202,6 +2251,7 @@ certificate	Public key	المفتاح العام
 	Remove {name} from Recent	إزالة {name} من الأخيرة
 	Remove {n} files	إزالة {n} ملفات
 	Remove {n} pages	إزالة {n} صفحات
+	removed	محذوفة
 	Removed 1 hidden item. Save to remove them from the file.	أُزيل عنصر مخفي واحد. احفظ لإزالته من الملف.
 	Removed 1 link	تمت إزالة رابط واحد
 	Removed the signature {field} and kept its empty field	تمت إزالة التوقيع {field} مع الإبقاء على حقله فارغًا
@@ -2322,6 +2372,7 @@ review-suggestion	Replacement text	اقتراح النص البديل
 	Rotate view clockwise ({key})	تدوير العرض مع عقارب الساعة ({key})
 	Rotate view clockwise (⇧⌘+)	تدوير العرض مع عقارب الساعة (⇧⌘+)
 	Rotate view counterclockwise	تدوير العرض عكس عقارب الساعة
+	ROVER vote	تصويت ROVER
 	Row spacing	المسافة بين الصفوف
 	rows have between {min} and {max} columns	للصفوف بين {min} و{max} عموداً
 	Rule Name	اسم القاعدة
@@ -2330,6 +2381,7 @@ review-suggestion	Replacement text	اقتراح النص البديل
 	Run a JavaScript	تشغيل سكربت JavaScript
 	Run form script	تشغيل سكربت النموذج
 	Run JavaScript	تشغيل JavaScript
+	Run OCR	تشغيل التعرف الضوئي
 	Running action… file {d} of {t}	جارٍ تشغيل الإجراء… الملف {d} من {t}
 	Runtime	المشغّل
 calendar weekday	Sa	سبت
@@ -2341,6 +2393,7 @@ calendar weekday	Sa	سبت
 	Sanitize Documents	تنظيف المستندات
 	Sanitize document…	تنظيف المستند…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	التنظيف يزيل المعلومات المخفية من المستند: البيانات الوصفية والملفات المرفقة والتعليقات وحقول النموذج (تُسطَّح) والنص المخفي والطبقات المخفية والإشارات المرجعية والروابط والإجراءات والسكربتات والبيانات الخاصة بالتطبيقات.
+	Sauvola binarization: ink to black, paper to white	تحويل Sauvola إلى أبيض وأسود: الحبر أسود والورق أبيض
 	Save & Close	حفظ وإغلاق
 	Save (M4)	حفظ (M4)
 	Save ({key})	حفظ ({key})
@@ -2465,6 +2518,7 @@ calendar weekday	Sa	سبت
 	Select a placed signature first	حدّد توقيعًا موضوعًا أولًا
 	Select a text box or an image first	حدد أولًا مربع نص أو صورة
 	Select a word	تحديد كلمة
+	Select a word on the page to inspect it	حدد كلمة في الصفحة لفحصها
 	Select Action:	اختر الإجراء:
 	Select all	تحديد الكل
 	Select all pages (Organize)	تحديد كل الصفحات (تنظيم)
@@ -2537,6 +2591,7 @@ certificate	Serial number	الرقم التسلسلي
 	Set to current page ({n})	تعيين إلى الصفحة الحالية ({n})
 	Set to zero	تصفير
 	Settings this source offers. Leave a control alone to keep the driver’s value.	إعدادات يعرضها هذا المصدر. اترك عناصرًا دون تغيير للإبقاء على قيمة المشغّل.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	لعدة ملفات الاسم نفسه، فستكتب نتائجها فوق بعضها؛ لم يُكتب شيء: {list}
 	SHA-1 digest	بصمة SHA-1
 certificate	SHA-1 digest	بصمة SHA-1
 	SHA-256 digest	بصمة SHA-256
@@ -2549,6 +2604,7 @@ certificate	SHA-256 digest	بصمة SHA-256
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift يقيّد الزاوية بمضاعفات 45 درجة. Backspace يزيل رأسًا. Escape يلغي.
 	Shift drags freely	Shift للسحب بحرّية
+	Shift+F8: the previous word to review	Shift+F8: الكلمة السابقة للمراجعة
 	Shift- or Ctrl/Command-click to select several fields.	انقر مع Shift أو Ctrl/Command لتحديد عدة حقول.
 	Shift-click to select several objects. Drag empty space to select an area.	انقر مع الضغط على Shift لتحديد عدة عناصر. اسحب في مساحة فارغة لتحديد منطقة.
 	ships in milestone {m}	يصدر في المرحلة {m}
@@ -2640,8 +2696,11 @@ key	Shift	Shift
 	Single page	صفحة واحدة
 	Single Page Continuous	صفحة واحدة متواصلة
 	Single word or phrase	كلمة أو عبارة واحدة
+	Skip files that already have text	تخطي الملفات التي تحتوي على نص بالفعل
+	Skip pages that already have text	تخطي الصفحات التي تحتوي على نص بالفعل
 	Skip Rule	تخطي القاعدة
 	Skipped	تم تخطيه
+	skipped	متخطاة
 	Slash	شرطة مائلة
 scroll speed	Slow	بطيئة
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	ملفات أصغر للشاشات والبريد الإلكتروني. تُخفض الصور التي تتجاوز 225 بكسل لكل بوصة إلى 150، بجودة JPEG ‏60؛ قد تفقد الرسومات الخطية بعض التفاصيل.
@@ -2666,6 +2725,7 @@ scroll speed	Slow	بطيئة
 	Sort items	فرز العناصر
 	sorted ascending	مفروز تصاعديًا
 	sorted descending	مفروز تنازليًا
+	Source page	الصفحة المصدر
 key	Space	مسافة
 	Space Audit	تدقيق المساحة
 	Spacing between copies	المسافة بين النسخ
@@ -2698,6 +2758,7 @@ action wizard	Start	بدء
 	Start page number	رقم صفحة البداية
 	Steps	الخطوات
 	Sticky note	ملاحظة لاصقة
+	still checking whether the tesseract program can run; try again in a moment	لا يزال التحقق جاريًا من إمكانية تشغيل برنامج tesseract؛ أعد المحاولة بعد لحظة
 	Still printing; the job continues on the printer	ما زالت الطباعة جارية؛ تتابع المهمة عملها على الطابعة
 	Still rendering — this page is unusually complex…	لا يزال العرض جارياً — هذه الصفحة معقدة على غير العادة…
 	Stop	إيقاف
@@ -2705,6 +2766,7 @@ action wizard	Start	بدء
 	Straighten scanned page	تسوية الصفحة الممسوحة ضوئيًا
 	Straighten skewed scans	تقويم الصفحات الممسوحة المائلة
 	Straighten the page	تسوية الصفحة
+	Straightens skewed text lines before reading	يقوّم أسطر النص المائلة قبل القراءة
 	Strength: {s}	القوة: {s}
 	Strikethrough text	شطب النص
 	String length (0 turns it off)	طول الخيط (0 لإيقافه)
@@ -2718,6 +2780,7 @@ certificate	Subject	صاحب الشهادة
 	Subscript	نص منخفض
 	Success	نجاح
 	Suggest edits	اقتراح تعديلات
+	Suggestions	اقتراحات
 	sum (+)	المجموع (+)
 	Summarize	تلخيص
 	Summarize comments	تلخيص التعليقات
@@ -2794,11 +2857,13 @@ calendar weekday	Th	خميس
 	Thai and Arabic use regular fallback fonts when available.	تستخدم التايلاندية والعربية خطوطًا بديلة بالنمط العادي عند توفرها.
 	That didn't work: an internal error stopped it ({m}).	لم ينجح ذلك: أوقفه خطأ داخلي ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	لم ينجح ذلك: أوقفه خطأ داخلي ({m}). مستنداتك لم تتغير.
+	That is the source file; choose another destination	هذا هو الملف المصدر؛ اختر وجهة أخرى
 	That length can't be right for this line: check the unit.	لا يمكن أن يكون هذا الطول صحيحًا لهذا الخط: تحقق من الوحدة.
 	The answer proposes formatting changes.	تقترح الإجابة تغييرات على التنسيق.
 	The answer stopped unexpectedly.	توقفت الإجابة بشكل غير متوقع.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	سيُرسَل مفتاح API إلى هذا العنوان دون تشفير. استخدم https:// ما لم يكن الخادم على شبكة تثق بها.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	اللوحة تمسح صفحة واحدة كل مرة. امسح وجهاً أمامياً، اقلبه ثم الخلفي.
+	The built-in engine (pure Rust)	المحرك المدمج (Rust خالص)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	يحتوي ترتيب الحساب على {n} من الإدخالات التي لا تحسب شيئًا. «إصلاح الترتيب» يزيلها.|يحتوي ترتيب الحساب على إدخال واحد ({n}) لا يحسب شيئًا. «إصلاح الترتيب» يزيله.|يحتوي ترتيب الحساب على إدخالين ({n}) لا يحسبان شيئًا. «إصلاح الترتيب» يزيلهما.|يحتوي ترتيب الحساب على {n} إدخالات لا تحسب شيئًا. «إصلاح الترتيب» يزيلها.|يحتوي ترتيب الحساب على {n} إدخالًا لا يحسب شيئًا. «إصلاح الترتيب» يزيلها.|يحتوي ترتيب الحساب على {n} من الإدخالات التي لا تحسب شيئًا. «إصلاح الترتيب» يزيلها.
 	the certificate authorities	جهات إصدار الشهادات
 	the certificate expired on {date}	انتهت صلاحية الشهادة في {date}
@@ -2897,9 +2962,13 @@ calendar weekday	Th	خميس
 	The order saved in the PDF needs tidying	يحتاج الترتيب المحفوظ في PDF إلى تنظيم
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	لا تتغير الملفات الأصلية. يُحتفظ بأي ملف يحمل الاسم نفسه في مجلد الإخراج، ويحصل الملف الجديد على رقم.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	ستُبلغ التوقيعات الأخرى ({names}) بأن المستند تغيّر بعد توقيعها. تحقق منها من جديد: لا شيء يضمن بقاءها صالحة.
+	The output folder already holds files of these names; nothing was written: {list}	يحتوي مجلد الإخراج بالفعل على ملفات بهذه الأسماء؛ لم يُكتب شيء: {list}
 	The output folder can't be one of the folders being read, or contain one.	لا يمكن أن يكون مجلد الإخراج أحد المجلدات التي تتم قراءتها أو أن يحتوي على أحدها.
 	The page could not be separated: {error}	تعذّر فصل ألوان الصفحة: {error}
 	The page has changed; select the image again	تغيّرت الصفحة؛ حدّد الصورة مرة أخرى
+	The page was read again; its words were replaced (undo in the panel)	أُعيدت قراءة الصفحة؛ واستُبدلت كلماتها (يمكن التراجع من اللوحة)
+	The page's words were applied as one undoable step ({n} words)	طُبِّقت كلمات الصفحة كخطوة واحدة قابلة للتراجع ({n} كلمة)
+	The page's words were cleared (undo in the panel)	مُسحت كلمات الصفحة (يمكن التراجع من اللوحة)
 	The pages already scanned were kept in the document.	تم الاحتفاظ بالصفحات الممسوحة سابقاً في المستند.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	استُخرجت الصفحات لكنها لم تُحذف، لأن المستند تغيّر أثناء اختيارك مجلدًا.
 	the password is incorrect	كلمة المرور غير صحيحة
@@ -2926,8 +2995,10 @@ calendar weekday	Th	خميس
 	The printer's reply couldn't be understood	تعذر فهم رد الطابعة
 	The provider's page didn't come back in time. Try again.	لم تعُد صفحة المزوّد في الوقت المحدد. حاول مرة أخرى.
 	The raw text was truncated to what fits.	تم اقتطاع النص الخام.
+	The re-read found no text; the existing words are unchanged	لم تجد إعادة القراءة أي نص؛ والكلمات الموجودة لم تتغير
 	The redaction does not fit page {page}; no pages were marked.	لا يلائم التنقيح الصفحة {page}؛ لم تُعلَّم أي صفحات.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	يجب أن يكون عنوان URI لإعادة التوجيه http://127.0.0.1 أو http://localhost مع منفذ.
+	The region was read again; its words were replaced (undo in the panel)	أُعيدت قراءة المنطقة؛ واستُبدلت كلماتها (يمكن التراجع من اللوحة)
 	The release has ambiguous packages. Choose a package on the official release page.	تتضمن هذه النسخة حزمًا غير واضحة. اختر حزمة من صفحة الإصدار الرسمية.
 	The release is not a published stable update. Try again later.	هذا الإصدار ليس تحديثًا مستقرًا منشورًا. حاول مجددًا لاحقًا.
 	The replacement file doesn't have that many pages.	الملف البديل لا يحتوي على هذا العدد من الصفحات.
@@ -2952,10 +3023,12 @@ calendar weekday	Th	خميس
 	The scanner reported a lamp or device error.	أبلغ الماسح الضوئي عن خطأ في المصباح أو الجهاز.
 	The scanner reported a paper problem (a jam or several sheets fed together).	أبلغ الماسح الضوئي عن مشكلة في الورق (انحشار أو سحب عدة أوراق معًا).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	عدد بكسلات الشاشة الفعلي في البوصة. عايِر باستخدام مسطرة ليعرض الحجم الفعلي (100%) الصفحات بحجمها الحقيقي.
+	The searchable copies are written here under the source names	تُكتب النسخ القابلة للبحث هنا بأسماء الملفات المصدر
 	The security settings don't allow screen readers to read the text	إعدادات الأمان لا تسمح لقارئات الشاشة بقراءة النص
 	The selected area has been copied ({w} × {h} pixels)	نُسخت المنطقة المحددة ({w} × {h} بكسل)
 	The selected fields could not be found. Select them again.	تعذّر العثور على الحقول المحددة. حددها من جديد.
 	The selected redaction is unavailable or invalid.	التنقيح المحدد غير متاح أو غير صالح.
+	The selected word is gone; choose another	الكلمة المحددة لم تعد موجودة؛ اختر غيرها
 	The selection changed. Select the signature again.	تغيّر التحديد. حدّد التوقيع مرة أخرى.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	انتهت الجلسة مع {provider}. سجّل الدخول مجددًا من «تكوين معرّف رقمي».
 	The shared folder:	المجلد المشترك:
@@ -2999,6 +3072,9 @@ calendar weekday	Th	خميس
 	The smart card's digital IDs couldn't be listed: {e}	تعذّر سرد المعرّفات الرقمية للبطاقة الذكية: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	الخطوط القياسية لا تستطيع رسم «{c}» ({code}). حاليًا يمكن إضافة محارف أوروبا الغربية فقط كنص.
 	The standard it must meet and where the file goes	المعيار الذي يجب تلبيته وإلى أين يذهب الملف
+	the tesseract engine is not available in the web build	محرك tesseract غير متاح في إصدار الويب
+	the tesseract program was not found (install it, or add it to the PATH)	لم يُعثر على برنامج tesseract (ثبّته أو أضفه إلى PATH)
+	The tesseract program, run as an external process	برنامج tesseract، يعمل كعملية خارجية
 	The text is the same	النص متطابق
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	نماذج التعرف على النص غير مثبتة (أعد تثبيت PdfCraft، أو اضبط PDFCRAFT_MODELS على المجلد الذي يحتويها)
 	The timestamp authority's certificate was not valid at the time of timestamping.	شهادة سلطة الطابع الزمني لم تكن صالحة وقت التوقيت.
@@ -3159,6 +3235,7 @@ calendar weekday	Tu	ثلاثاء
 	Turn on continuous scrolling	تشغيل التمرير المتواصل
 	Turn upside down (180°)	اقلب رأسًا على عقب (180°)
 	Turned left	مُدار يساراً
+	Turns pages scanned sideways or upside down upright before reading	يعدّل الصفحات الممسوحة جانبيًا أو مقلوبة قبل القراءة
 	two cells would both be named {name}	ستحمل خليتان الاسم نفسه {name}
 	Two-page view	عرض صفحتين
 	Two-sided:	على الوجهين:
@@ -3177,6 +3254,7 @@ signature pad	Type	كتابة
 	Unchecked reads	قراءات غير مفحوصة
 	Underline text	تسطير النص
 	Undid {label}	تم التراجع عن {label}
+	Undo the last review change (Ctrl+Z)	التراجع عن آخر تغيير في المراجعة (Ctrl+Z)
 	Unit	الوحدة
 	Unknown author	مؤلف غير معروف
 	unknown signer	موقّع غير معروف
@@ -3192,6 +3270,7 @@ signature pad	Type	كتابة
 	Unpin {folder}	إلغاء تثبيت {folder}
 	Unpinned {tool} from Home	تم إلغاء تثبيت {tool} من الرئيسية
 	Unplaced	غير موضوع
+	unreviewed	لم تُراجع
 	Unsaved changes	تغييرات غير محفوظة
 	Unsaved changes to this document are saved in the new file too.	تُحفظ التغييرات غير المحفوظة في هذا المستند في الملف الجديد أيضًا.
 	Unsigned signature field	حقل توقيع غير موقع
@@ -3230,6 +3309,7 @@ signature pad	Type	كتابة
 	Use print production	استخدام إنتاج الطباعة
 	Use system setting	استخدام إعداد النظام
 	Use system title bar	استخدام شريط عنوان النظام
+	Use the chosen engine's reading alone	استخدام قراءة المحرك المختار وحدها
 	Use the default	استخدام الافتراضية
 	Use this size for saved initials	استخدم هذا الحجم للأحرف الأولى المحفوظة
 	Use this size for saved signature	استخدم هذا الحجم للتوقيع المحفوظ
@@ -3260,6 +3340,9 @@ certificate	Validity starts	تبدأ الصلاحية
 	Validity unknown	الصلاحية غير معروفة
 	Value is not calculated	القيمة غير محسوبة
 	Value is the	القيمة هي
+	Verified	تم التحقق
+	verified	تم التحقق منها
+	VERIFIED %	نسبة التحقق %
 	Verify	تحقق
 	Verify PDF/UA	تحقق من PDF/UA
 	Verify PDF/X	تحقق من PDF/X
@@ -3307,14 +3390,17 @@ document scrollbar width	Wide	عريض
 	Will use the feeder.	سيُستخدم المُغذي.
 	Window Options	خيارات النافذة
 	Windows store  ·  	مخزن Windows  ·  
+	Word	كلمة
 	Word count	عدد الكلمات
 	Word counting stopped unexpectedly.	توقف عد الكلمات بشكل غير متوقع.
 	Word count…	عدد الكلمات…
 	Words or phrases to redact	الكلمات أو العبارات المراد حجبها
 	Workspace modes	أوضاع مساحة العمل
 	Write this email?	هل تريد كتابة هذا البريد؟
+	Writes a new document of visible text; the scan is not changed	يكتب مستندًا جديدًا من نص مرئي؛ ولا يتغير المسح الضوئي
 	Wrong password	كلمة مرور خاطئة
 	Wrote 1 file to {dir}	كُتب ملف واحد في {dir}
+	Wrote {name}	كُتب {name}
 	Wrote {n} files to {dir}	كُتب {n} ملفات في {dir}
 	X Object Forms	نماذج X Object
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	نموذج XFA: حقوله وبيانات XFA فيه تبقى متطابقة، فتعرض العارضات الأخرى ما تعبئه.
@@ -3390,6 +3476,7 @@ document scrollbar width	Wide	عريض
 	{name} — unsaved changes	{name} — تغييرات غير محفوظة
 	{name}: choosing images arrives on the web with file pickers for images	{name}: اختيار الصور سيتوفر على الويب مع منتقيات ملفات الصور
 	{name}: the {other} action isn't supported yet	{name}: الإجراء {other} غير مدعوم بعد
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}: {n} كلمة منخفضة الثقة في الصفحات {pages}
 	{name}_unsigned.pdf	{name}_بدون_توقيع.pdf
 @plural	{n} byte|{n} bytes	{n} بايت|{n} بايت|{n} بايتان|{n} بايتات|{n} بايتاً|{n} بايت
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	تم تحديث {n} من العمليات الحسابية لتستخدم الاسم الجديد.|عملية حسابية واحدة ({n}) تستخدم الآن الاسم الجديد.|عمليتان حسابيتان ({n}) تستخدمان الآن الاسم الجديد.|{n} عمليات حسابية تستخدم الآن الاسم الجديد.|{n} عملية حسابية تستخدم الآن الاسم الجديد.|{n} من العمليات الحسابية تستخدم الآن الاسم الجديد.
@@ -3429,6 +3516,7 @@ document scrollbar width	Wide	عريض
 	{n} selected	{n} محددة
 	{n} tags	{n} وسوم
 	{n} word(s) or phrase(s)	{n} كلمة أو عبارة
+	{n} word(s) to review	{n} كلمة للمراجعة
 	{n} {kind}	{n} {kind}
 	{page} is not a page number or label	{page} ليس رقم صفحة أو تسمية
 	{rule} - {status}	{rule} - {status}

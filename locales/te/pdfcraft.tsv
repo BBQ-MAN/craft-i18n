@@ -19,6 +19,7 @@
 	 ({s} warnings: {first})	 ({s} హెచ్చరికలు: {first})
 	 on page {p}	 ({p}వ పేజీలో)
 	 · password-protected	 · పాస్‌వర్డ్‌తో రక్షించబడింది
+	+ Dictionary	+ నిఘంటువు
 	+ Page {p}	+ పేజీ {p}
 	+Bin	+బైనరీ
 	+LOC	+పంక్తులు
@@ -40,14 +41,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 అంకె, A అక్షరం, O అక్షరం లేదా అంకె, X ఏదైనా గుర్తు
 	; 1 page already had text	; 1 పేజీలో ఇప్పటికే టెక్స్ట్ ఉంది
 	; 1 page skipped	; 1 పేజీ దాటవేయబడింది
+	; cancelled — {n} files were not run	; రద్దు చేయబడింది — {n} ఫైళ్లు ప్రాసెస్ కాలేదు
 	; corrected {n} pages	; {n} పేజీలు సరిచేయబడ్డాయి
 	; failed: {list}	; విఫలమైనవి: {list}
 	; skipped: {n}	; దాటవేసినవి: {n}
+	; {n} files already had text	; {n} ఫైళ్లలో ఇప్పటికే టెక్స్ట్ ఉంది
 	; {n} pages already had text	; {n} పేజీలలో ఇప్పటికే టెక్స్ట్ ఉంది
 	; {n} pages skipped	; {n} పేజీలు దాటవేయబడ్డాయి
 	? of {n}	{n}లో ?
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: PRలు {prs}, కమిట్‌లు {commits}, పంక్తులు +{added} / −{deleted} (Δ {delta}), బైనరీ ఫైల్‌లు +{bin_added} / −{bin_deleted}, {first} – {last}
 	`{command}` {when}	`{command}` కమాండ్ {when}
+	A 3×3 median filter against scan speckle	స్కాన్ మచ్చలను తొలగించే 3×3 మీడియన్ ఫిల్టర్
 	a bookmark cannot be moved inside itself	బుక్‌మార్క్‌ను దాని లోపలికే తరలించడం సాధ్యం కాదు
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Rustలో రాసిన క్లీన్-రూమ్, ఓపెన్-సోర్స్ PDF అప్లికేషన్. MIT OR Apache-2.0.
 	a column is too narrow: make the area wider, give the column more of it, or use fewer columns or less column spacing	ఒక నిలువు వరుస చాలా ఇరుకుగా ఉంది: ప్రాంతాన్ని వెడల్పు చేయండి, ఆ నిలువు వరుసకు ఎక్కువ వెడల్పు ఇవ్వండి, లేదా తక్కువ నిలువు వరుసలు లేదా తక్కువ దూరం వాడండి
@@ -57,6 +61,7 @@
 	A document needs at least one page: copy instead	పత్రంలో కనీసం ఒక పేజీ ఉండాలి: బదులుగా కాపీ చేయండి
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	పత్రం టైమ్‌స్టాంప్ మొత్తం ఫైల్‌ను కవర్ చేస్తుంది, అది ఎవరి సంతకమూ కాదు, కాబట్టి దాన్ని ఒక్కదాన్నే తొలగించలేము.
 	a field named {name} already exists	{name} అనే ఫీల్డ్ ఇప్పటికే ఉంది
+	A folder is asked for when a multiple-file run starts	అనేక ఫైళ్ల ప్రాసెసింగ్ మొదలైనప్పుడు ఫోల్డర్ అడుగుతుంది
 	A form field has additional actions	ఒక ఫారం ఫీల్డ్‌కు అదనపు చర్యలు ఉన్నాయి
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	స్థానిక మోడల్ అగ్రస్థాన క్లౌడ్ మోడల్ కాదు: అది తప్పు చేయగలదు, సుదీర్ఘ సమాధానానికి CPUపై సమయం పడుతుంది. కీలకమైనవి సరిచూసుకోండి, డౌన్‌లోడ్ చేసే ముందు మోడల్ పరిమాణాన్ని ఈ మిషన్‌తో పోల్చుకోండి.
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	ట్యాబ్‌లకు ఎడమవైపు, టైటిల్ బార్ చూపించే చోట, ఒక లోగో లేదా పేరు: PdfCraft యొక్కది లేదా మీ సంస్థది.
@@ -73,6 +78,8 @@
 	About {app}	{app} గురించి
 	about {h} h {m} min left	సుమారు {h} గం {m} నిమి మిగిలి ఉంది
 	about {n} min left	సుమారు {n} నిమి మిగిలి ఉంది
+	Accept	అంగీకరించు
+	Accept entire page	మొత్తం పేజీని అంగీకరించు
 	Accepted	ఆమోదించబడింది
 	Accepted by {printer}	{printer} అంగీకరించింది
 	Accessibility Checker	యాక్సెసిబిలిటీ తనిఖీ సాధనం
@@ -102,6 +109,7 @@
 	Add a page from template {name}	టెంప్లేట్ {name} నుండి పేజీని జోడించు
 	Add a radio button	రేడియో బటన్ జోడించు
 	Add a reply	ప్రత్యుత్తరాన్ని జోడించండి
+	Add a second engine's reading when the first is unsure	మొదటి ఇంజిన్‌కు ఖచ్చితత లేనప్పుడు రెండవ ఇంజిన్ రీడింగ్‌ను జోడిస్తుంది
 	Add a stamp	స్టాంప్ జోడించు
 	Add a sticky note	స్టిక్కీ నోట్ జోడించు
 	Add a sticky note here	ఇక్కడ స్టిక్కీ నోట్‌ను జోడించు
@@ -233,6 +241,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	పేజీ కంటెంట్ లేని ఎలిమెంట్‌పై ఉన్న ప్రత్యామ్నాయ టెక్స్ట్ ఎప్పటికీ అందుబాటులోకి రాదు. దాన్ని తీసివేయండి లేదా ఎలిమెంట్‌ను కంటెంట్‌కు అనుసంధానించండి.
 	Alternate text should not hide annotation	ప్రత్యామ్నాయ టెక్స్ట్ ఉల్లేఖనను దాచకూడదు
 	Alternate text that will never be read	ఎప్పటికీ చదవబడని ప్రత్యామ్నాయ టెక్స్ట్
+	Always read with both engines and merge the words	ఎల్లప్పుడూ రెండు ఇంజిన్లతో చదివి పదాలను కలుపుతుంది
 	Always use my default zoom and page layout	ఎల్లప్పుడూ నా డిఫాల్ట్ జూమ్ మరియు పేజీ లేఅవుట్‌ను ఉపయోగించు
 	An action is already running	ఇప్పటికే ఒక చర్య అమలవుతోంది
 	An action with this name already exists.	ఈ పేరుతో ఒక చర్య ఇప్పటికే ఉంది.
@@ -305,13 +314,16 @@
 	Auto portrait/landscape	ఆటో నిలువు/అడ్డం
 	Auto-deskew	Auto-deskew
 	Auto-detect	స్వయంచాలకంగా గుర్తించు
+	Auto-rotate	ఆటో-తిప్పు
 	Auto-rotate pages	పేజీలను స్వయంచాలకంగా తిప్పు
 	Auto-size text to fit redaction region	రెడాక్షన్ ప్రాంతానికి సరిపోయేలా టెక్స్ట్ పరిమాణాన్ని స్వయంచాలకంగా మార్చు
+	Automatic	ఆటోమేటిక్
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	సురక్షితమైన అమలు వేరుచేయడం అందుబాటులోకి వచ్చే వరకు AcroForm స్వయంచాలక స్క్రిప్ట్‌లు నిలిపివేయబడ్డాయి; సేవ్ చేసిన ఫీల్డ్ విలువలు అలాగే ఉంచబడ్డాయి. బటన్ మరియు కన్సోల్ స్క్రిప్ట్‌లు ఇప్పటికీ అందుబాటులో ఉన్నాయి.
 	Automatically rotate sideways and upside-down pages	పక్కకు లేదా తలక్రిందులుగా ఉన్న పేజీలను స్వయంచాలకంగా తిప్పు
 	Automatically tag PDF	PDFను స్వయంచాలకంగా ట్యాగ్ చేయి
 	Available version: {v}	అందుబాటులో ఉన్న సంస్కరణ: {v}
 	average	సగటు
+	AVG CONFIDENCE	సగటు విశ్వసనీయత
 	Back	వెనుకకు
 	Back side only	వెనుక వైపు మాత్రమే
 	Back to all tools	అన్ని సాధనాలకు తిరిగి వెళ్లు
@@ -333,6 +345,7 @@
 	Best for: the deepest reasoning this family has	ఇందుకు ఉత్తమం: ఈ కుటుంబంలో అత్యంత లోతైన తార్కికత
 	Beveled	బెవెల్డ్
 	Bicubic downsampling to	బైక్యూబిక్ డౌన్‌శాంప్లింగ్, లక్ష్యం:
+	Binarize	బైనరీకరించు
 	Binding	బైండింగ్
 	Binding:	బైండింగ్:
 	Black & White	నలుపు తెలుపు
@@ -349,6 +362,7 @@
 	Bookmarks Panel and Page	బుక్‌మార్క్‌ల ప్యానెల్, పేజీ
 	Border Color:	అంచు రంగు:
 	Borders and Colors	అంచులు, రంగులు
+	Both engines, combined as the Strategy says	రెండు ఇంజిన్లు, ఎంచుకున్న వ్యూహం ప్రకారం కలిపి
 	Box	బాక్స్
 	Brightness	Brightness
 	Bring All to Front	అన్నింటినీ ముందుకు తీసుకురా
@@ -374,6 +388,7 @@
 	Cancel reverse sides	Cancel reverse sides
 	Canceling…	రద్దు చేస్తోంది…
 	Cancelled	రద్దు చేయబడింది
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	రద్దు చేయబడింది — {t} పేజీలలో {m} పేజీలలో {n} పదాలు చదవబడ్డాయి; మిగతావి చదవబడలేదు
 	Cancelling…	రద్దు చేస్తోంది…
 	Case-sensitive	పెద్ద/చిన్న అక్షరాల తేడాతో
 	CCITT Group 4	CCITT గ్రూప్ 4
@@ -483,6 +498,7 @@
 	Clear selection / close find	ఎంపికను క్లియర్ చేయి / శోధనను మూసివేయి
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	Clear the jam and load the remaining sheets squarely, then choose Continue.
 	Clear the jam and load the sheets squarely, then choose Try again.	Clear the jam and load the sheets squarely, then choose Try again.
+	Click a word to inspect it; drag a rectangle to re-read part of the page	పదాన్ని పరిశీలించడానికి దానిపై క్లిక్ చేయండి; పేజీలో కొంత భాగాన్ని మళ్లీ చదవడానికి దీర్ఘచతురస్రం గీయండి
 	Click on the page to add a {tool}, or drag to set its size	{tool} జోడించడానికి పేజీపై క్లిక్ చేయండి, లేదా దాని పరిమాణాన్ని సెట్ చేయడానికి లాగండి
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	టెక్స్ట్ జోడించడానికి పేజీపై క్లిక్ చేయండి; ప్రతి క్లిక్ కొత్త బాక్స్‌ను ప్రారంభిస్తుంది, ✓ నొక్కితే ముగుస్తుంది. అంశాలను తరలించడానికి వాటిని లాగండి, పరిమాణం మార్చడానికి మూలను లాగండి, సవరించడానికి టెక్స్ట్‌పై డబుల్-క్లిక్ చేయండి.
 	Click text or an image to edit it	సవరించడానికి టెక్స్ట్ లేదా చిత్రంపై క్లిక్ చేయండి
@@ -558,6 +574,8 @@
 	Compress and export	కుదించి ఎగుమతి
 	Compress document structure (object streams)	పత్రం నిర్మాణాన్ని కుదించు (ఆబ్జెక్ట్ స్ట్రీమ్‌లు)
 	Compressing combined PDF…	కలిపిన PDFను కుదిస్తోంది…
+	CONFIDENCE	విశ్వసనీయత
+	Confidence weighted	విశ్వసనీయత ఆధారిత
 	Configure a Digital ID for Signing	సంతకం కోసం డిజిటల్ ఐడీని కాన్ఫిగర్ చేయి
 	Configure New Digital ID	కొత్త డిజిటల్ ఐడీని కాన్ఫిగర్ చేయి
 	Confirm Password	పాస్‌వర్డ్ నిర్ధారణ
@@ -596,8 +614,11 @@
 	Copyright status	కాపీరైట్ స్థితి
 	Copyrighted	కాపీరైట్ చేయబడింది
 	Correct recognized text	గుర్తించిన టెక్స్ట్‌ను సరిచేయి
+	Correct recognized text…	గుర్తించిన టెక్స్ట్‌ను సరిదిద్దు…
 	Correct scans	స్కాన్‌లను సరిచేయి
+	corrected	సరిదిద్దబడింది
 	Corrected scan	సరిచేసిన స్కాన్
+	Corrected text (Enter commits)	సరిదిద్దిన టెక్స్ట్ (Enter నిర్ధారిస్తుంది)
 	Could not copy the selection because text could not be read on every page	అన్ని పేజీలలో వచనాన్ని చదవలేకపోయినందున ఎంపికను కాపీ చేయలేకపోయాం
 	Could not mark the selection because text could not be read on every page	అన్ని పేజీలలో వచనాన్ని చదవలేకపోయినందున ఎంపికను గుర్తించలేకపోయాం
 	Could not save: {e}	సేవ్ చేయడం సాధ్యం కాలేదు: {e}
@@ -747,8 +768,10 @@ key	Delete	Delete
 	Delete XMP metadata	XMP మెటాడేటాను తొలగించు
 	Delete {o}	{o}ను తొలగించు
 	Deleted page	తొలగించిన పేజీ
+	Denoise	నాయిస్ తొలగించు
 	Describe the figure	చిత్రాన్ని వివరించండి
 	Description writer	వివరణ రచయిత
+	Deskew	వంపు సరిచేయి
 	Detached signature file	వేరు చేసిన సంతక ఫైల్
 	Detect form fields	ఫారం ఫీల్డ్‌లను గుర్తించు
 	Detected 1 form field	1 ఫారం ఫీల్డ్ గుర్తించబడింది
@@ -893,6 +916,7 @@ comment menu	Edit	సవరించు
 	Edit text…	టెక్స్ట్‌ను సవరించు…
 	Edit this PDF	ఈ PDFను సవరించు
 	Edit {field}'s formula	{field} సూత్రాన్ని సవరించు
+	Editable text	సవరించదగిన టెక్స్ట్
 	Editorial	Editorial
 	Email Address	ఇమెయిల్ చిరునామా
 	Email Addresses	ఇమెయిల్ చిరునామాలు
@@ -910,6 +934,7 @@ comment menu	Edit	సవరించు
 	Encryption	ఎన్‌క్రిప్షన్
 key	End	End
 	Endpoints	అంత్య బిందువులు
+	ENGINE · STRATEGY	ఇంజిన్ · వ్యూహం
 	Enhance camera image	కెమెరా చిత్రాన్ని మెరుగుపరచు
 	Enhance page	పేజీని మెరుగుపరచు
 	Enhance scanned file	స్కాన్ చేసిన ఫైల్‌ను మెరుగుపరచు
@@ -995,6 +1020,7 @@ key	Esc	Esc
 	Extract the selected pages…	ఎంచుకున్న పేజీలను సంగ్రహించు…
 	Extracted 1 page	1 పేజీ వేరు తీయబడింది
 	Extracted {n} pages	{n} పేజీలు వేరు తీయబడ్డాయి
+	F8: next word to review; Shift+F8 goes back	F8: సమీక్షించవలసిన తదుపరి పదం; Shift+F8 వెనక్కి వెళ్తుంది
 	Failed	విఫలమైంది
 scroll speed	Fast	వేగంగా
 	Fast Web View	వేగవంతమైన వెబ్ వీక్షణ
@@ -1105,6 +1131,7 @@ scroll speed	Fast	వేగంగా
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	టెక్స్ట్‌ను చదవడానికి, కాపీ చేయడానికి వీలుగా ఫాంట్‌లు తమ అక్షరాలను యూనికోడ్‌కు మ్యాప్ చేయాలి. ఫాంట్‌లను సరిచేయండి లేదా PDFను మళ్లీ సృష్టించండి.
 	for images above	ఈ రిజల్యూషన్ మించిన చిత్రాలకు:
 	For page sizes and margins.	పేజీ పరిమాణాలు మరియు మార్జిన్‌ల కోసం.
+	Force OCR (override skip options)	OCR‌ను బలవంతంగా అమలు చేయి (దాటవేత ఎంపికలను విస్మరించు)
 	Form data and PDF forms	ఫారం డేటా మరియు PDF ఫారాలు
 	Form field advice	ఫారం ఫీల్డ్‌లపై సలహా
 	Form fields	ఫారం ఫీల్డ్‌లు
@@ -1186,6 +1213,7 @@ scroll speed	Fast	వేగంగా
 	Hide window controls	విండో నియంత్రణలను దాచు
 	Hide {app}	{app} దాచు
 	Hides annotation	ఉల్లేఖనను దాచుతుంది
+	HIGH (>= 90%)	అధికం (>= 90%)
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	ఎక్కువ చిత్ర నాణ్యతతో ఫైలు పరిమాణం పెరుగుతుంది. చిన్నదైతేనే ప్రతిని సేవ్ చేస్తుంది.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	ఎక్కువ నాణ్యత, సాధారణంగా పెద్ద ఫైళ్లు. 450 ppi కంటే ఎక్కువ ఉన్న JPEG ఫోటోలు 300 ppiకి, నాణ్యత 85తో తగ్గుతాయి. నష్టం లేని గ్రాఫిక్స్, మాస్క్ ఉన్న చిత్రాలు తమ పిక్సెల్‌లను అలాగే ఉంచుతాయి.
 	Highlight	హైలైట్
@@ -1215,6 +1243,7 @@ key	Home	Home
 	Importing data arrives on the web with file pickers for data files	డేటాను దిగుమతి చేయడం, డేటా ఫైల్‌ల కోసం ఫైల్ పికర్‌లతో పాటు వెబ్‌లో వస్తుంది
 	Import…	దిగుమతి చేయి…
 	In multiple files	అనేక ఫైల్‌లలో
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	అనేక ఫైళ్లలో: టెక్స్ట్ ఉన్న ఫైల్ వేరుగా దాటవేసినదిగా లెక్కించబడుతుంది, దానికి ఏమీ రాయబడదు
 	In new window	కొత్త విండోలో
 	In streams that use LZW encoding, use Flate instead	LZW ఎన్‌కోడింగ్ ఉన్న స్ట్రీమ్‌లలో బదులుగా Flate ఉపయోగించు
 	In this file	ఈ ఫైల్‌లో
@@ -1372,8 +1401,10 @@ key	Home	Home
 	Looking for a local model runtime…	స్థానిక మోడల్ రన్‌టైమ్ కోసం వెతుకుతోంది…
 	Looking for printers…	ప్రింటర్ల కోసం వెతుకుతోంది…
 	Loop	లూప్
+	LOW (< 70%)	తక్కువ (< 70%)
 	Low resolution	తక్కువ రిజల్యూషన్
 	Low Resolution (150 dpi)	తక్కువ రిజల్యూషన్ (150 dpi)
+	LOW-CONFIDENCE WORDS	తక్కువ విశ్వసనీయత గల పదాలు
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	యాక్సెసిబుల్‌గా మార్చు
 	Make Current Properties Default	ప్రస్తుత లక్షణాలను డిఫాల్ట్‌గా చేయి
@@ -1394,6 +1425,7 @@ key	Home	Home
 	Mark everything in this tag as an artifact and remove the tag from reading order	ఈ ట్యాగ్‌లోని ప్రతిదాన్నీ ఆర్టిఫాక్ట్‌గా గుర్తించి, ట్యాగ్‌ను పఠన క్రమం నుండి తీసివేయి
 	Mark figure as decorative	చిత్రాన్ని అలంకరణగా గుర్తించు
 	Mark Page Range	పేజీ పరిధిని గుర్తించు
+	Mark this page as reviewed (Ctrl+T)	ఈ పేజీని సమీక్షించినట్లు గుర్తించు (Ctrl+T)
 	Mark with checkmark	టిక్ గుర్తుతో గుర్తించు
 	Marked	టిక్ చేయబడింది
 	Marks do not remove content. Select Redact all, then save.	గుర్తులు కంటెంట్‌ను తొలగించవు. «అన్నీ రెడాక్ట్ చేయి» ఎంచుకుని, సేవ్ చేయండి.
@@ -1413,6 +1445,7 @@ key	Home	Home
 	Measurement information	కొలత సమాచారం
 	Measurement snapping	కొలత స్నాపింగ్
 	Measuring tool	కొలత సాధనం
+	MEDIUM (70-89%)	మధ్యస్థం (70-89%)
 	Menu	మెనూ
 	Merge all windows	అన్ని విండోలను విలీనం చేయి
 	Merge data files into spreadsheet…	డేటా ఫైల్‌లను స్ప్రెడ్‌షీట్‌లోకి విలీనం చేయి…
@@ -1508,6 +1541,7 @@ key	Home	Home
 	Next month	తదుపరి నెల
 	Next sheet	తదుపరి షీట్
 	Next tab	తదుపరి ట్యాబ్
+	Next uncertain	తదుపరి అనిశ్చిత
 	Next view	తదుపరి వీక్షణ
 	Night	రాత్రి
 	No actions	చర్యలు లేవు
@@ -1602,6 +1636,8 @@ scroll speed	Normal	సాధారణం
 	Number pages	పేజీలకు సంఖ్యలు వేయి
 	Number pages…	పేజీలకు సంఖ్యలు వేయి…
 	Numbered list	సంఖ్యల జాబితా
+	OCR complete — no text recognized on this page.	OCR పూర్తయింది — ఈ పేజీలో టెక్స్ట్ గుర్తించబడలేదు.
+	OCR results rejected.	OCR ఫలితాలు తిరస్కరించబడ్డాయి.
 	October	అక్టోబర్
 	Odd pages	బేసి పేజీలు
 	Odd Pages Only	బేసి పేజీలు మాత్రమే
@@ -1715,6 +1751,7 @@ animation effects	On	ఆన్
 	Output preview	అవుట్‌పుట్ ప్రివ్యూ
 	Owner password (no restrictions apply)	యజమాని పాస్‌వర్డ్ (పరిమితులు ఏవీ వర్తించవు)
 	Package: {name}	ప్యాకేజీ: {name}
+	PAGE	పేజీ
 	Page background	పేజీ నేపథ్యం
 	Page Content	పేజీ కంటెంట్
 	Page display	పేజీ ప్రదర్శన
@@ -1737,6 +1774,7 @@ animation effects	On	ఆన్
 	Page thumbnails panel	పేజీ సూక్ష్మచిత్రాల ప్యానెల్
 	Page tools	పేజీ సాధనాలు
 	Page transitions	పేజీ ట్రాన్సిషన్‌లు
+	Page verified	పేజీ ధృవీకరించబడింది
 	Page will not cause screen flicker	పేజీ స్క్రీన్ ఫ్లికర్‌కు కారణం కాదు
 	Page {label}	పేజీ {label}
 	Page {old} → Page {new}	పేజీ {old} → పేజీ {new}
@@ -1757,6 +1795,7 @@ animation effects	On	ఆన్
 	Pages to Print	ముద్రించాల్సిన పేజీలు
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	పాఠాన్ని చదవలేకపోయిన పేజీలు: {n}. వాటిలోని సరిపోలికలు జాబితాలో లేవు.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	లింక్‌లు, వ్యాఖ్యలు లేదా ఫీల్డ్‌లు ఉన్న పేజీలలో Tab కీ నిర్మాణ క్రమాన్ని అనుసరించాలి. సరిచేసినప్పుడు ప్రతి పేజీ ట్యాబ్ క్రమం పత్రం నిర్మాణాన్ని ఉపయోగించు అనే ఎంపికకు సెట్ అవుతుంది.
+	Pages with renderable text are left alone and reported as skipped	చూపదగిన టెక్స్ట్ ఉన్న పేజీలు మార్చబడవు, దాటవేసినవిగా నివేదించబడతాయి
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	నేపథ్యాన్ని జోడించిన తర్వాత పేజీలు {pages} మారాయి, కాబట్టి వాటి సొంత తెల్లని నింపులు ఆపివేయబడే ఉంటాయి. తెల్ల కాగితంపై అవి అలాగే కనిపిస్తాయి.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	పేజీలు {pages}కి సొంత తెల్లని నింపు ఉంది, అది నేపథ్యాన్ని దాచేస్తుంది. భర్తీ చేయండి
 	Pages:	పేజీలు:
@@ -1862,8 +1901,10 @@ animation effects	On	ఆన్
 	Previous month	మునుపటి నెల
 	Previous sheet	మునుపటి షీట్
 	Previous tab	మునుపటి ట్యాబ్
+	Previous uncertain	మునుపటి అనిశ్చిత
 	Previous view	మునుపటి వీక్షణ
 	Primary language	ప్రాథమిక భాష
+	Primary only	ప్రధానమైనది మాత్రమే
 	Print ({key})	ముద్రించు ({key})
 	Print as image	చిత్రంగా ముద్రించు
 	Print in grayscale	గ్రేస్కేల్‌లో ముద్రించు
@@ -1908,6 +1949,8 @@ animation effects	On	ఆన్
 	RAM {gb} GB	RAM {gb} GB
 	Rating	రేటింగ్
 	Raw:	ముడి:
+	Re-OCR entire page	మొత్తం పేజీకి మళ్లీ OCR
+	Re-OCR this region	ఈ ప్రాంతానికి మళ్లీ OCR
 	Re-type Password	పాస్‌వర్డ్‌ను మళ్లీ టైప్ చేయండి
 	Read	చదవడం
 	Read mode	చదివే మోడ్
@@ -1919,6 +1962,7 @@ animation effects	On	ఆన్
 	Read out loud requires Windows, macOS or Linux.	బిగ్గరగా చదవడానికి ప్రస్తుతం Windows / macOS / Linux అవసరం.
 	Read this page only	ఈ పేజీని మాత్రమే చదవండి
 	Read to end of document	పత్రం చివరి వరకు చదవండి
+	Read {n} words on {m} of {t} pages	{t} పేజీలలో {m} పేజీలలో {n} పదాలు చదవబడ్డాయి
 	Reading colours	చదవడానికి రంగులు
 	Reading options…	పఠన ఎంపికలు…
 	Reading page {page}…	పేజీ {page} చదువుతోంది…
@@ -1927,6 +1971,7 @@ animation effects	On	ఆన్
 	Reading the printer's settings…	ప్రింటర్ సెట్టింగ్‌లను చదువుతోంది…
 	Reading the raw document…	ముడి పత్రాన్ని చదువుతోంది…
 	Reading theme	చదువు థీమ్
+	Reads pages and files even where the skip options would leave them alone	దాటవేత ఎంపికలు వదిలేసే చోట కూడా పేజీలను, ఫైళ్లను చదువుతుంది
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	{names}ను చదువుతుంది, అవి దీన్ని తిరిగి చదువుతాయి. ఏ క్రమమూ లూప్‌ను సరిచేయదు: సూత్రాలలో ఒకదాన్ని మార్చండి.
 	Reads {name}, which calculates later, so it shows an old value.	{name}ను చదువుతుంది, అది తర్వాత లెక్కించబడుతుంది, కాబట్టి పాత విలువను చూపుతుంది.
 	Reads {name}, which the form doesn't have, so it gets no value there.	{name}ను చదువుతుంది, కానీ అది ఫారమ్‌లో లేదు, కాబట్టి దాని నుండి విలువ రాదు.
@@ -1943,6 +1988,8 @@ animation effects	On	ఆన్
 	Recognize Text…	టెక్స్ట్‌ను గుర్తించు…
 	Recognize text…	టెక్స్ట్‌ను గుర్తించు…
 	Recognized 1 word	1 పదం గుర్తించబడింది
+	Recognized text	గుర్తించిన టెక్స్ట్
+	Recognized text applied ({n} words, one undoable step)	గుర్తించిన టెక్స్ట్ వర్తింపజేయబడింది ({n} పదాలు, రద్దు చేయగల ఒకే దశ)
 	Recognized {n} words	{n} పదాలు గుర్తించబడ్డాయి
 	Recognized {w} words in 1 file	1 ఫైల్‌లో {w} పదాలు గుర్తించబడ్డాయి
 	Recognized {w} words in {n} files	{n} ఫైల్‌లలో {w} పదాలు గుర్తించబడ్డాయి
@@ -1974,6 +2021,8 @@ animation effects	On	ఆన్
 	Refresh lists scanners. It does not feed paper.	Refresh lists scanners. It does not feed paper.
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Region in inches. Leave the width or the height at zero to scan the whole area.
 	Regularity	క్రమబద్ధత
+	Reject	తిరస్కరించు
+	Reject entire page	మొత్తం పేజీని తిరస్కరించు
 	Rejected	తిరస్కరించబడింది
 	Release notes	విడుదల గమనికలు
 	Reliable character encoding is provided	నమ్మదగిన అక్షర ఎన్‌కోడింగ్ అందించబడింది
@@ -2010,6 +2059,7 @@ animation effects	On	ఆన్
 	Remove {name} from Recent	{name}ను ఇటీవలి ఫైళ్ల నుండి తీసివేయి
 	Remove {n} files	{n} ఫైల్‌లను తీసివేయి
 	Remove {n} pages	{n} పేజీలను తీసివేయి
+	removed	తొలగించబడింది
 	Removed 1 hidden item. Save to remove them from the file.	1 దాచిన అంశం తీసివేయబడింది. ఫైల్ నుండి దాన్ని తీసివేయడానికి సేవ్ చేయండి.
 	Removed 1 link	1 లింక్ తీసివేయబడింది
 	Removed the signature {field} and kept its empty field	సంతకం {field} తొలగించబడింది, ఖాళీ ఫీల్డ్ ఉంచబడింది
@@ -2119,11 +2169,13 @@ animation effects	On	ఆన్
 	Rotate view clockwise	వీక్షణను సవ్యదిశలో తిప్పు
 	Rotate view clockwise ({key})	వీక్షణను సవ్యదిశలో తిప్పు ({key})
 	Rotate view counterclockwise	వీక్షణను అపసవ్యదిశలో తిప్పు
+	ROVER vote	ROVER ఓటింగ్
 	Row spacing	వరుసల మధ్య దూరం
 	Rulers	రూలర్లు
 	Run	అమలు చేయి
 	Run a JavaScript	JavaScriptను అమలు చేయి
 	Run JavaScript	JavaScript అమలు చేయి
+	Run OCR	OCR అమలు చేయి
 	Running action… file {d} of {t}	చర్య అమలవుతోంది… {t}లో {d}వ ఫైల్
 	Runtime	రన్‌టైమ్
 	Safety margin (pt)	భద్రతా అంచు (pt)
@@ -2134,6 +2186,7 @@ animation effects	On	ఆన్
 	Sanitize Documents	పత్రాలను శుభ్రపరచు
 	Sanitize document…	పత్రాన్ని శుభ్రపరచు…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	శుభ్రపరచడం వల్ల పత్రంలోని దాచిన సమాచారం తీసివేయబడుతుంది: మెటాడేటా, ఫైల్ జోడింపులు, వ్యాఖ్యలు, ఫారం ఫీల్డ్‌లు (ఫ్లాటెన్ చేయబడతాయి), దాచిన టెక్స్ట్, లేయర్‌లు, బుక్‌మార్క్‌లు, లింక్‌లు, చర్యలు, స్క్రిప్ట్‌లు మరియు అప్లికేషన్‌ల ప్రైవేట్ డేటా.
+	Sauvola binarization: ink to black, paper to white	Sauvola బైనరీకరణ: సిరా నలుపుగా, కాగితం తెలుపుగా
 	Save & Close	సేవ్ చేసి మూసివేయి
 	Save ({key})	సేవ్ చేయి ({key})
 	Save a signature first	ముందుగా సంతకాన్ని సేవ్ చేయండి
@@ -2254,6 +2307,7 @@ animation effects	On	ఆన్
 	Select a placed signature first	ముందుగా ఉంచిన సంతకాన్ని ఎంచుకోండి
 	Select a text box or an image first	ముందుగా ఒక టెక్స్ట్ బాక్స్ లేదా చిత్రాన్ని ఎంచుకోండి
 	Select a word	ఒక పదాన్ని ఎంచుకో
+	Select a word on the page to inspect it	పరిశీలించడానికి పేజీలో ఒక పదాన్ని ఎంచుకోండి
 	Select Action:	చర్యను ఎంచుకోండి:
 	Select all pages (Organize)	అన్ని పేజీలను ఎంచుకో (పేజీల నిర్వహణలో)
 	Select at least one other page.	కనీసం మరొక పేజీని ఎంచుకోండి.
@@ -2318,6 +2372,7 @@ animation effects	On	ఆన్
 	Set to current page ({n})	ప్రస్తుత పేజీకి సెట్ చేయి ({n})
 	Set to zero	సున్నాకు సెట్ చేయి
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Settings this source offers. Leave a control alone to keep the driver’s value.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	అనేక ఫైళ్లకు ఒకే పేరు ఉంది, కాబట్టి వాటి ఫలితాలు ఒకదానిపై ఒకటి రాయబడతాయి; ఏమీ రాయబడలేదు: {list}
 	Shadings	షేడింగ్‌లు
 	Shared Field Properties	ఉమ్మడి ఫీల్డ్ లక్షణాలు
 	Sheet {s} of {n}	{n}లో {s}వ షీట్
@@ -2326,6 +2381,7 @@ animation effects	On	ఆన్
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift నొక్కితే కోణం 45 డిగ్రీలకు పరిమితమవుతుంది. Backspace ఒక శీర్షాన్ని తీసివేస్తుంది. Escape రద్దు చేస్తుంది.
 	Shift drags freely	Shift స్వేచ్ఛగా లాగుతుంది
+	Shift+F8: the previous word to review	Shift+F8: సమీక్షించవలసిన మునుపటి పదం
 	Shift- or Ctrl/Command-click to select several fields.	అనేక ఫీల్డ్‌లను ఎంచుకోవడానికి Shift లేదా Ctrl/Command నొక్కి క్లిక్ చేయండి.
 	Shift-click to select several objects. Drag empty space to select an area.	అనేక వస్తువులను ఎంచుకోవడానికి Shift నొక్కి క్లిక్ చేయండి. ప్రాంతాన్ని ఎంచుకోవడానికి ఖాళీ ప్రదేశంలో లాగండి.
 	ships in milestone {m}	మైల్‌స్టోన్ {m}లో వస్తుంది
@@ -2403,8 +2459,11 @@ key	Shift	Shift
 	Single page	ఒకే పేజీ
 	Single Page Continuous	ఒకే పేజీ, నిరంతర స్క్రోలింగ్
 	Single word or phrase	ఒకే పదం లేదా పదబంధం
+	Skip files that already have text	ఇప్పటికే టెక్స్ట్ ఉన్న ఫైళ్లను దాటవేయి
+	Skip pages that already have text	ఇప్పటికే టెక్స్ట్ ఉన్న పేజీలను దాటవేయి
 	Skip Rule	నియమాన్ని దాటవేయి
 	Skipped	దాటవేయబడింది
+	skipped	దాటవేయబడింది
 	Slash	వాలు గీత
 scroll speed	Slow	నెమ్మదిగా
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	తెరలు, ఇమెయిల్ కోసం చిన్న ఫైళ్లు. 225 ppi కంటే ఎక్కువ ఉన్న చిత్రాలు 150 ppiకి, JPEG నాణ్యత 60తో తగ్గుతాయి; రేఖా చిత్రాల్లో వివరాలు పోవచ్చు.
@@ -2427,6 +2486,7 @@ scroll speed	Slow	నెమ్మదిగా
 	Sort items	అంశాలను క్రమబద్ధీకరించు
 	sorted ascending	ఆరోహణ క్రమంలో అమర్చబడింది
 	sorted descending	అవరోహణ క్రమంలో అమర్చబడింది
+	Source page	మూల పేజీ
 key	Space	స్పేస్
 	Space Audit	స్థల వినియోగ పరిశీలన
 	Speed	వేగం
@@ -2454,12 +2514,14 @@ action wizard	Start	ప్రారంభించు
 	Start page number	ప్రారంభ పేజీ సంఖ్య
 	Steps	దశలు
 	Sticky note	స్టిక్కీ నోట్
+	still checking whether the tesseract program can run; try again in a moment	tesseract ప్రోగ్రామ్ అమలవుతుందో లేదో ఇంకా తనిఖీ చేస్తోంది; కొద్దిసేపటి తర్వాత మళ్లీ ప్రయత్నించండి
 	Still printing; the job continues on the printer	ఇంకా ముద్రణ జరుగుతోంది; జాబ్ ప్రింటర్‌లో కొనసాగుతోంది
 	Stop	Stop
 	Stop reading	చదవడం ఆపండి
 	Straighten scanned page	స్కాన్ చేసిన పేజీని సరిచేయి
 	Straighten skewed scans	వంగిన స్కాన్‌లను నిటారుగా చేయి
 	Straighten the page	Straighten the page
+	Straightens skewed text lines before reading	చదవడానికి ముందు వంగిన టెక్స్ట్ పంక్తులను సరిచేస్తుంది
 	Strength: {s}	బలం: {s}
 	Strikethrough text	టెక్స్ట్‌ను కొట్టివేయి
 	Stroke colour	గీత రంగు
@@ -2472,6 +2534,7 @@ action wizard	Start	ప్రారంభించు
 	Submit XFDF data	XFDF డేటాను పంపు
 	Subscript	సబ్‌స్క్రిప్ట్
 	Suggest edits	మార్పులను సూచించు
+	Suggestions	సూచనలు
 	sum (+)	మొత్తం (+)
 	Summarize	సారాంశం రూపొందించు
 	Summarize comments	వ్యాఖ్యల సారాంశాన్ని సృష్టించు
@@ -2543,11 +2606,13 @@ action wizard	Start	ప్రారంభించు
 	TH and TD must be children of TR	TH మరియు TD తప్పనిసరిగా TR లోపల నేరుగా ఉండాలి
 	Thai and Arabic use regular fallback fonts when available.	థాయ్ మరియు అరబిక్ కోసం అందుబాటులో ఉన్నప్పుడు సాధారణ శైలి ప్రత్యామ్నాయ ఫాంట్‌లను ఉపయోగిస్తారు.
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	అది పని చేయలేదు: అంతర్గత లోపం దాన్ని ఆపివేసింది ({m}). మీ పత్రాలు మారలేదు.
+	That is the source file; choose another destination	ఇది మూల ఫైల్; మరో గమ్యాన్ని ఎంచుకోండి
 	That isn't a scanner address	అది స్కానర్ చిరునామా కాదు
 	The answer proposes formatting changes.	సమాధానం ఫార్మాటింగ్ మార్పులను సూచిస్తోంది.
 	The answer stopped unexpectedly.	సమాధానం అకస్మాత్తుగా ఆగిపోయింది.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API కీ ఈ చిరునామాకు ఎన్‌క్రిప్షన్ లేకుండా పంపబడుతుంది. సర్వర్ మీరు విశ్వసించే నెట్‌వర్క్‌లో లేకపోతే https:// ఉపయోగించండి.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
+	The built-in engine (pure Rust)	అంతర్నిర్మిత ఇంజిన్ (స్వచ్ఛమైన Rust)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	గణన క్రమంలో ఏదీ లెక్కించని {n} ఎంట్రీ ఉంది. "క్రమాన్ని సరిచేయండి" దాన్ని తొలగిస్తుంది.|గణన క్రమంలో ఏదీ లెక్కించని {n} ఎంట్రీలు ఉన్నాయి. "క్రమాన్ని సరిచేయండి" వాటిని తొలగిస్తుంది.
 	the certificate authorities	సర్టిఫికెట్ అధికారులు
 	the certificate expired on {date}	సర్టిఫికెట్ గడువు {date}న ముగిసింది
@@ -2619,8 +2684,12 @@ action wizard	Start	ప్రారంభించు
 	The order saved in the PDF needs tidying	PDFలో సేవ్ చేసిన క్రమాన్ని సరిదిద్దాలి
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	అసలు ఫైల్‌లు మారవు. అవుట్‌పుట్ ఫోల్డర్‌లో అదే పేరుతో ఉన్న ఫైల్ అలాగే ఉంటుంది, కొత్త ఫైల్‌కు ఒక సంఖ్య వస్తుంది.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	ఇతర సంతకాలు ({names}) సంతకం చేసిన తర్వాత పత్రం మారిందని నివేదిస్తాయి. వాటిని మళ్లీ ధృవీకరించండి: అవి చెల్లుబాటులో ఉంటాయనే హామీ లేదు.
+	The output folder already holds files of these names; nothing was written: {list}	అవుట్‌పుట్ ఫోల్డర్‌లో ఈ పేర్లతో ఫైళ్లు ఇప్పటికే ఉన్నాయి; ఏమీ రాయబడలేదు: {list}
 	The output folder can't be one of the folders being read, or contain one.	అవుట్‌పుట్ ఫోల్డర్ చదువుతున్న ఫోల్డర్‌లలో ఒకటి కాకూడదు, వాటిలో దేనినీ కలిగి ఉండకూడదు.
 	The page has changed; select the image again	పేజీ మారింది; చిత్రాన్ని మళ్లీ ఎంచుకోండి
+	The page was read again; its words were replaced (undo in the panel)	పేజీ మళ్లీ చదవబడింది; దాని పదాలు భర్తీ చేయబడ్డాయి (ప్యానెల్‌లో రద్దు చేయవచ్చు)
+	The page's words were applied as one undoable step ({n} words)	పేజీ పదాలు రద్దు చేయగల ఒకే దశగా వర్తింపజేయబడ్డాయి ({n} పదాలు)
+	The page's words were cleared (undo in the panel)	పేజీ పదాలు తొలగించబడ్డాయి (ప్యానెల్‌లో రద్దు చేయవచ్చు)
 	The pages already scanned were kept in the document.	The pages already scanned were kept in the document.
 	the password is incorrect	పాస్‌వర్డ్ తప్పు
 	The password is incorrect.	పాస్‌వర్డ్ తప్పు.
@@ -2642,8 +2711,10 @@ action wizard	Start	ప్రారంభించు
 	The printer's reply couldn't be understood	ప్రింటర్ ప్రత్యుత్తరం అర్థం కాలేదు
 	The provider's page didn't come back in time. Try again.	ప్రొవైడర్ పేజీ సమయానికి తిరిగి రాలేదు. మళ్లీ ప్రయత్నించండి.
 	The raw text was truncated to what fits.	ముడి పాఠం కత్తిరించబడింది.
+	The re-read found no text; the existing words are unchanged	మళ్లీ చదవడంలో టెక్స్ట్ కనబడలేదు; ఉన్న పదాలు మారలేదు
 	The redaction does not fit page {page}; no pages were marked.	రెడాక్షన్ {page} పేజీలో సరిపోదు; ఏ పేజీని గుర్తించలేదు.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	రీడైరెక్ట్ URI పోర్ట్‌తో కూడిన http://127.0.0.1 లేదా http://localhost అయి ఉండాలి.
+	The region was read again; its words were replaced (undo in the panel)	ప్రాంతం మళ్లీ చదవబడింది; దాని పదాలు భర్తీ చేయబడ్డాయి (ప్యానెల్‌లో రద్దు చేయవచ్చు)
 	The release has ambiguous packages. Choose a package on the official release page.	విడుదలలో సరిపడే ప్యాకేజీలు ఒకటి కంటే ఎక్కువ ఉన్నాయి. అధికారిక విడుదలల పేజీలో ఒకదాన్ని ఎంచుకోండి.
 	The release is not a published stable update. Try again later.	ఈ విడుదల ప్రచురించబడిన స్థిరమైన నవీకరణ కాదు. తర్వాత మళ్లీ ప్రయత్నించండి.
 	The replacement file doesn't have that many pages.	భర్తీ ఫైల్‌లో అవసరమైనన్ని పేజీలు లేవు.
@@ -2667,9 +2738,11 @@ action wizard	Start	ప్రారంభించు
 	The scanner needs attention.	The scanner needs attention.
 	The scanner reported a lamp or device error.	The scanner reported a lamp or device error.
 	The scanner reported a paper problem (a jam or several sheets fed together).	The scanner reported a paper problem (a jam or several sheets fed together).
+	The searchable copies are written here under the source names	శోధించదగిన కాపీలు మూల ఫైళ్ల పేర్లతో ఇక్కడ రాయబడతాయి
 	The selected area has been copied ({w} × {h} pixels)	ఎంచుకున్న భాగం కాపీ చేయబడింది ({w} × {h} పిక్సెల్‌లు)
 	The selected fields could not be found. Select them again.	ఎంచుకున్న ఫీల్డ్‌లు కనుగొనబడలేదు. వాటిని మళ్ళీ ఎంచుకోండి.
 	The selected redaction is unavailable or invalid.	ఎంచుకున్న రెడాక్షన్ అందుబాటులో లేదు లేదా చెల్లదు.
+	The selected word is gone; choose another	ఎంచుకున్న పదం ఇక లేదు; మరొకటి ఎంచుకోండి
 	The selection changed. Select the signature again.	ఎంపిక మారింది. సంతకాన్ని మళ్లీ ఎంచుకోండి.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	{provider}తో సెషన్ ముగిసింది. డిజిటల్ ఐడీని కాన్ఫిగర్ చేయి నుండి మళ్లీ సైన్ ఇన్ అవ్వండి.
 	The shared folder:	భాగస్వామ్య ఫోల్డర్:
@@ -2677,6 +2750,9 @@ action wizard	Start	ప్రారంభించు
 	The signature will be invisible.	సంతకం కనిపించదు.
 	The signature {names} locks this field.	సంతకం {names} ఈ ఫీల్డ్‌ను లాక్ చేస్తుంది.
 	The standard it must meet and where the file goes	అది తప్పనిసరిగా తీరుకోవాల్సిన ప్రమాణం, ఫైల్ ఎక్కడికి వెళుతుంది
+	the tesseract engine is not available in the web build	వెబ్ వెర్షన్‌లో tesseract ఇంజిన్ అందుబాటులో లేదు
+	the tesseract program was not found (install it, or add it to the PATH)	tesseract ప్రోగ్రామ్ కనబడలేదు (దాన్ని ఇన్‌స్టాల్ చేయండి లేదా PATH‌కు జోడించండి)
+	The tesseract program, run as an external process	బాహ్య ప్రాసెస్‌గా అమలయ్యే tesseract ప్రోగ్రామ్
 	The text is the same	టెక్స్ట్ ఒకేలా ఉంది
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	టెక్స్ట్ గుర్తింపు మోడల్‌లు ఇన్‌స్టాల్ చేయబడలేదు (PdfCraftను మళ్లీ ఇన్‌స్టాల్ చేయండి, లేదా వాటిని కలిగి ఉన్న ఫోల్డర్‌కు PDFCRAFT_MODELSను సెట్ చేయండి)
 	The title in the metadata and the document information differ	మెటాడేటాలోని శీర్షిక, పత్రం సమాచారంలోని శీర్షిక వేర్వేరుగా ఉన్నాయి
@@ -2803,6 +2879,7 @@ action wizard	Start	ప్రారంభించు
 	Turn on continuous scrolling	నిరంతర స్క్రోలింగ్‌ను ఆన్ చేయి
 	Turn upside down (180°)	తలకిందులుగా తిప్పు (180°)
 	Turned left	Turned left
+	Turns pages scanned sideways or upside down upright before reading	పక్కకు లేదా తలకిందులుగా స్కాన్ చేసిన పేజీలను చదవడానికి ముందు నిటారుగా చేస్తుంది
 	two cells would both be named {name}	రెండు గడులకూ {name} అనే పేరు వస్తుంది
 	Two-page view	రెండు పేజీల వీక్షణ
 	Two-sided:	రెండు వైపులా ముద్రణ:
@@ -2821,6 +2898,7 @@ signature pad	Type	టైప్ చేయి
 	Unchecked reads	తనిఖీ చేయని చదువులు
 	Underline text	టెక్స్ట్‌కు అండర్‌లైన్ చేయి
 	Undid {label}	రద్దు చేయబడింది: {label}
+	Undo the last review change (Ctrl+Z)	చివరి సమీక్ష మార్పును రద్దు చేయి (Ctrl+Z)
 	Unit	యూనిట్
 	Unknown author	తెలియని రచయిత
 	unknown signer	తెలియని సంతకందారు
@@ -2834,6 +2912,7 @@ signature pad	Type	టైప్ చేయి
 	Unpin tool	సాధనాన్ని అన్‌పిన్ చేయి
 	Unpinned {tool} from Home	{tool} హోమ్ నుండి అన్‌పిన్ చేయబడింది
 	Unplaced	ఏ పేజీలోనూ లేనివి
+	unreviewed	సమీక్షించలేదు
 	Unsaved changes	సేవ్ చేయని మార్పులు
 	Unsaved changes to this document are saved in the new file too.	ఈ పత్రంలో సేవ్ చేయని మార్పులు కూడా కొత్త ఫైల్‌లో సేవ్ అవుతాయి.
 	Unsupported measurements	మద్దతు లేని కొలతలు
@@ -2868,6 +2947,7 @@ signature pad	Type	టైప్ చేయి
 	Use print production	ప్రింట్ ప్రొడక్షన్‌ను ఉపయోగించు
 	Use system setting	సిస్టమ్ సెట్టింగ్‌ను ఉపయోగించు
 	Use system title bar	సిస్టమ్ శీర్షిక పట్టీని ఉపయోగించు
+	Use the chosen engine's reading alone	ఎంచుకున్న ఇంజిన్ రీడింగ్‌ను మాత్రమే ఉపయోగించు
 	Use the default	డిఫాల్ట్‌ను ఉపయోగించు
 	Use this size for saved initials	సేవ్ చేసిన పొడి అక్షరాల కోసం ఈ పరిమాణాన్ని ఉపయోగించండి
 	Use this size for saved signature	సేవ్ చేసిన సంతకం కోసం ఈ పరిమాణాన్ని ఉపయోగించండి
@@ -2893,6 +2973,9 @@ signature pad	Type	టైప్ చేయి
 	Validity unknown	చెల్లుబాటు తెలియదు
 	Value is not calculated	విలువ లెక్కించబడదు
 	Value is the	విలువ ఇలా లెక్కించబడుతుంది:
+	Verified	ధృవీకరించబడింది
+	verified	ధృవీకరించబడింది
+	VERIFIED %	ధృవీకరించినవి %
 	Verify	ధృవీకరించు
 	Verify PDF/UA	PDF/UA ధృవీకరించు
 	Verify PDF/X	PDF/X ధృవీకరించు
@@ -2939,14 +3022,17 @@ document scrollbar width	Wide	వెడల్పు
 	Window	విండో
 	Window Options	విండో ఎంపికలు
 	Windows store  ·  	Windows స్టోర్  ·  
+	Word	పదం
 	Word count	పదాల లెక్క
 	Word counting stopped unexpectedly.	పదాల లెక్క అనుకోకుండా ఆగిపోయింది.
 	Word count…	పదాల లెక్క…
 	Words or phrases to redact	రెడాక్ట్ చేయాల్సిన పదాలు లేదా పదబంధాలు
 	Workspace modes	వర్క్‌స్పేస్ మోడ్‌లు
 	Write this email?	ఈ ఇమెయిల్ రాయాలా?
+	Writes a new document of visible text; the scan is not changed	కనిపించే టెక్స్ట్‌తో కొత్త డాక్యుమెంట్‌ను రాస్తుంది; స్కాన్ మారదు
 	Wrong password	పాస్‌వర్డ్ తప్పు
 	Wrote 1 file to {dir}	{dir}లో 1 ఫైల్ సేవ్ చేయబడింది
+	Wrote {name}	{name} రాయబడింది
 	Wrote {n} files to {dir}	{dir}లో {n} ఫైల్‌లు సేవ్ చేయబడ్డాయి
 	X Object Forms	X ఆబ్జెక్ట్ ఫారాలు
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA ఫారం: దీని ఫీల్డ్‌లు, XFA డేటా ఎప్పుడూ ఒకేలా ఉంచబడతాయి, కాబట్టి మీరు నింపినది ఇతర వ్యూయర్‌లలో కూడా కనిపిస్తుంది.
@@ -3015,6 +3101,7 @@ document scrollbar width	Wide	వెడల్పు
 	{name} — unsaved changes	{name} — సేవ్ చేయని మార్పులు
 	{name}: choosing images arrives on the web with file pickers for images	{name}: చిత్రాలను ఎంచుకోవడం, చిత్రాల కోసం ఫైల్ పికర్‌లతో పాటు వెబ్‌లో వస్తుంది
 	{name}: the {other} action isn't supported yet	{name}: {other} చర్యకు ఇంకా మద్దతు లేదు
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}: {pages} పేజీలలో తక్కువ విశ్వసనీయత గల {n} పదాలు
 	{name}_unsigned.pdf	{name}_santakam_leni.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} గణన ఇప్పుడు కొత్త పేరును ఉపయోగిస్తుంది.|{n} గణనలు ఇప్పుడు కొత్త పేరును ఉపయోగిస్తాయి.
 	{n} contributors · {c} commits	సహకారులు: {n} · కమిట్‌లు: {c}
@@ -3047,6 +3134,7 @@ document scrollbar width	Wide	వెడల్పు
 	{n} selected	ఎంచుకున్నవి: {n}
 	{n} tags	{n} ట్యాగ్‌లు
 	{n} word(s) or phrase(s)	పదాలు లేదా పదబంధాలు: {n}
+	{n} word(s) to review	సమీక్షించవలసిన పదాలు: {n}
 	{n} {kind}	{kind}: {n}
 	{rule} - {status}	{rule}: {status}
 	{signers} signers; details of the first are shown	{signers} మంది సంతకదారులు; మొదటి వారి వివరాలు చూపబడ్డాయి

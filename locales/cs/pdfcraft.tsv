@@ -22,6 +22,7 @@
 	 · password-protected	 · chráněno heslem
 	% of all commits	% všech commitů
 	(none)	(žádná)
+	+ Dictionary	+ Slovník
 	+ Page {p}	+ Stránka {p}
 	+Bin	+Bin
 	+LOC	+LOC
@@ -42,14 +43,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 číslice, A písmeno, O písmeno nebo číslice, X libovolný znak
 	; 1 page already had text	; 1 stránka už text obsahovala
 	; 1 page skipped	; přeskočena 1 stránka
+	; cancelled — {n} files were not run	; zrušeno — {n} souborů nebylo zpracováno
 	; corrected {n} pages	; opraveno stránek: {n}
 	; failed: {list}	; selhalo: {list}
 	; skipped: {n}	; přeskočeno: {n}
+	; {n} files already had text	; {n} souborů už obsahovalo text
 	; {n} pages already had text	; stránky, které už text obsahovaly: {n}
 	; {n} pages skipped	; přeskočeno stránek: {n}
 	? of {n}	? z {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: PR: {prs}, commity: {commits}, +{added} / −{deleted} řádků (Δ {delta}), +{bin_added} / −{bin_deleted} binárních souborů, {first} – {last}
 	`{command}` {when}	Příkaz `{command}` {when}
+	A 3×3 median filter against scan speckle	Mediánový filtr 3×3 proti skvrnám ze skenu
 	A bitmap image is drawn at {} ppi	Bitmapový obrázek se kreslí v {} ppi
 	a bookmark cannot be moved inside itself	záložku nelze přesunout do ní samé
 	A button	Tlačítko
@@ -68,6 +72,7 @@
 	A document needs at least one page: copy instead	Dokument musí mít alespoň jednu stránku: použijte místo toho kopírování
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Časové razítko dokumentu pokrývá celý soubor a není ničím podpisem, a proto ho nelze odstranit samostatně.
 	a field named {name} already exists	pole s názvem {name} už existuje
+	A folder is asked for when a multiple-file run starts	Složka se vybere při spuštění běhu přes více souborů
 	A font isn't embedded	Písmo není vložené
 	A form field has additional actions	Formulářové pole má dodatečné akce
 	A form XObject is a transparency group	Formulářový XObject je skupina průhlednosti
@@ -119,6 +124,8 @@
 	About {app}	O aplikaci {app}
 	about {h} h {m} min left	zbývá asi {h} h {m} min
 	about {n} min left	zbývá asi {n} min
+	Accept	Přijmout
+	Accept entire page	Přijmout celou stránku
 	Accepted	Přijato
 	Accepted by {printer}	Přijato tiskárnou {printer}
 	Accessibility Checker	Kontrola přístupnosti
@@ -150,6 +157,7 @@
 	Add a page from template {name}	Přidat stránku ze šablony {name}
 	Add a radio button	Přidat přepínač
 	Add a reply	Přidat odpověď
+	Add a second engine's reading when the first is unsure	Přidá čtení druhého enginu, když si první není jistý
 	Add a stamp	Přidat razítko
 	Add a sticky note	Přidat rychlou poznámku
 	Add a sticky note here	Přidat sem rychlou poznámku
@@ -286,6 +294,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Alternativní text u prvku bez obsahu stránky se nikdy nepřečte. Odeberte ho nebo prvek připojte k obsahu.
 	Alternate text should not hide annotation	Alternativní text by neměl skrývat anotaci
 	Alternate text that will never be read	Alternativní text, který nebude nikdy přečten
+	Always read with both engines and merge the words	Vždy čte oběma enginy a sloučí slova
 	Always use my default zoom and page layout	Vždy používat mé výchozí zvětšení a rozvržení stránky
 	An action is already running	Akce už běží
 	An action with this name already exists.	Akce s tímto názvem už existuje.
@@ -374,6 +383,7 @@ calendar date	August	srpna
 	Auto portrait/landscape	Automaticky na výšku/na šířku
 	Auto-deskew	Automatické narovnání
 	Auto-detect	Automaticky rozpoznat
+	Auto-rotate	Automatické otočení
 	Auto-rotate pages	Automaticky otáčet stránky
 	Auto-size text to fit redaction region	Automaticky přizpůsobit velikost textu oblasti začernění
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Automatické skripty AcroForm jsou vypnuté, dokud nebude k dispozici bezpečné oddělení provádění; uložené hodnoty polí zůstaly zachovány. Skripty tlačítek a konzole jsou dál k dispozici.
@@ -381,6 +391,7 @@ calendar date	August	srpna
 	Automatically tag PDF	Automaticky označkovat PDF
 	Available version: {v}	Dostupná verze: {v}
 	average	průměr
+	AVG CONFIDENCE	PRŮMĚRNÁ SPOLEHLIVOST
 	Back	Zpět
 	Back side only	Jen zadní strana
 	Back to all tools	Zpět na všechny nástroje
@@ -404,6 +415,7 @@ certificate	Basic constraints	Základní omezení
 	Best for: the deepest reasoning this family has	Nejlepší pro: nejhlubší uvažování, jaké tato rodina má
 	Beveled	Zkosená
 	Bicubic downsampling to	Bikubické převzorkování na
+	Binarize	Binarizovat
 	Binary assets removed	Odstraněné binární soubory
 	Binding	Vazba
 	Binding:	Vazba:
@@ -423,6 +435,7 @@ certificate	Basic constraints	Základní omezení
 	Border Color:	Barva ohraničení:
 	Borders and Colors	Ohraničení a barvy
 	Both	Obojí
+	Both engines, combined as the Strategy says	Oba enginy, kombinované podle zvolené strategie
 	Box	Rámeček
 	Bring All to Front	Převést vše do popředí
 	Bring forward	Přenést blíž
@@ -449,6 +462,7 @@ certificate	Basic constraints	Základní omezení
 	Cancel reverse sides	Zrušit rubové strany
 	Canceling…	Ruším…
 	Cancelled	Zrušeno
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	Zrušeno — načteno {n} slov na {m} z {t} stránek; zbytek nebyl načten
 	Cancelling…	Ruší se…
 	Card driver (PKCS #11)	Ovladač karty (PKCS #11)
 	Card PIN	PIN karty
@@ -578,6 +592,7 @@ certificate	Basic constraints	Základní omezení
 	Clear selection / close find	Zrušit výběr / zavřít hledání
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	Odstraňte uvíznutý papír a rovně vložte zbývající listy, potom zvolte „Pokračovat ve skenování“.
 	Clear the jam and load the sheets squarely, then choose Try again.	Odstraňte uvíznutý papír a rovně vložte listy, potom zvolte „Zkusit znovu“.
+	Click a word to inspect it; drag a rectangle to re-read part of the page	Kliknutím na slovo ho prozkoumáte; tažením obdélníku znovu načtete část stránky
 	Click on the page to add a {tool}, or drag to set its size	Kliknutím na stránku přidáte: {tool}; tažením nastavíte velikost
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Kliknutím na stránku přidáte text; každé kliknutí založí nový rámeček a ✓ úpravy dokončí. Položky přesunete přetažením, velikost změníte tažením za roh, text upravíte dvojitým kliknutím.
 	Click text or an image to edit it	Kliknutím na text nebo obrázek ho upravíte
@@ -660,6 +675,8 @@ certificate	Basic constraints	Základní omezení
 	Compress and export	Komprese a export
 	Compress document structure (object streams)	Komprimovat strukturu dokumentu (proudy objektů)
 	Compressing combined PDF…	Komprimuje se sloučené PDF…
+	CONFIDENCE	SPOLEHLIVOST
+	Confidence weighted	Podle spolehlivosti
 	Configure a Digital ID for Signing	Nastavení digitálního ID pro podepisování
 	Configure New Digital ID	Nastavit nové digitální ID
 	Confirm Password	Potvrzení hesla
@@ -704,8 +721,11 @@ certificate	Basic constraints	Základní omezení
 	Copyright notice	Upozornění na autorská práva
 	Copyright status	Stav autorských práv
 	Correct recognized text	Opravit rozpoznaný text
+	Correct recognized text…	Opravit rozpoznaný text…
 	Correct scans	Opravit skeny
+	corrected	opraveno
 	Corrected scan	Opravený sken
+	Corrected text (Enter commits)	Opravený text (Enter potvrdí)
 	Could not copy the selection because text could not be read on every page	Výběr nelze zkopírovat, protože text nebylo možné přečíst na všech stránkách
 	Could not mark the selection because text could not be read on every page	Výběr nelze označit, protože text nebylo možné přečíst na všech stránkách
 	Could not save: {e}	Nelze uložit: {e}
@@ -874,8 +894,10 @@ key	Delete	Delete
 @plural	Delete {n} field|Delete {n} fields	Odstranit {n} pole|Odstranit {n} pole|Odstranit {n} polí
 	Delete {o}	Odstranit {o}
 	Deleted page	Odstraněná stránka
+	Denoise	Potlačit šum
 	Describe the figure	Popište obrázek
 	Description writer	Autor popisu
+	Deskew	Vyrovnat náklon
 	Detached signature file	Soubor s odděleným podpisem
 	Detailed Report	Podrobná zpráva
 	Detect form fields	Rozpoznat formulářová pole
@@ -1039,6 +1061,7 @@ comment menu	Edit	Upravit
 	Edit text…	Upravit text…
 	Edit this PDF	Upravit toto PDF
 	Edit {field}'s formula	Upravit vzorec pole {field}
+	Editable text	Upravitelný text
 	Editorial	Editorial
 	Email Address	E-mailová adresa
 	Email Addresses	E-mailové adresy
@@ -1060,6 +1083,7 @@ comment menu	Edit	Upravit
 key	End	End
 	End entity	Koncová entita
 	Endpoints	Koncové body
+	ENGINE · STRATEGY	ENGINE · STRATEGIE
 	English	Angličtina
 	Enhance camera image	Vylepšit snímek z kamery
 	Enhance page	Vylepšit stránku
@@ -1153,6 +1177,7 @@ key	Esc	Esc
 	Extract the selected pages…	Extrahovat vybrané stránky…
 	Extracted 1 page	Extrahována 1 stránka
 	Extracted {n} pages	Extrahováno stránek: {n}
+	F8: next word to review; Shift+F8 goes back	F8: další slovo ke kontrole; Shift+F8 zpět
 	Failed	Nesplněno
 scroll speed	Fast	Rychlá
 	Fast Web View	Rychlé zobrazení na webu
@@ -1314,6 +1339,7 @@ calendar date	February	února
 	Fonts not embedded	Nevložená písma
 	for images above	u obrázků nad
 	For page sizes and margins.	Pro velikosti stránek a okraje.
+	Force OCR (override skip options)	Vynutit OCR (ignoruje volby přeskočení)
 	Form data and PDF forms	Data formulářů a formuláře PDF
 	Form field advice	Rady k polím formuláře
 	Form field detection is already running	Rozpoznávání polí již probíhá
@@ -1400,6 +1426,7 @@ calendar weekday	Fr	Pá
 	Hide window controls	Skrýt ovládací prvky okna
 	Hide {app}	Skrýt {app}
 	Hides annotation	Skrývá anotaci
+	HIGH (>= 90%)	VYSOKÁ (≥ 90 %)
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Vyšší kvalita obrázků znamená větší soubory. Kopie se uloží pouze tehdy, je-li menší.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Vyšší kvalita, obvykle větší soubory. Fotografie JPEG nad 450 ppi se zmenší na 300 ppi, kvalita 85. Bezeztrátová grafika a obrázky s maskami si zachovají své pixely.
 	Highest version	Nejvyšší verze
@@ -1436,6 +1463,7 @@ key	Home	Home
 	Import {name}	Importovat {name}
 	Importing data arrives on the web with file pickers for data files	Import dat přijde na web s výběrem datových souborů
 	In multiple files	Ve více souborech
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	U více souborů: soubor s jakýmkoli textem jde zvlášť do přeskočených a nic se pro něj neukládá
 	In new window	V novém okně
 	In streams that use LZW encoding, use Flate instead	Proudy kódované LZW kódovat metodou Flate
 	In this file	V tomto souboru
@@ -1631,8 +1659,10 @@ certificate	Key usage	Použití klíče
 	Looking for PDFs…	Hledání souborů PDF…
 	Looking for printers…	Hledání tiskáren…
 	Loop	Smyčka
+	LOW (< 70%)	NÍZKÁ (< 70 %)
 	Low resolution	Nízké rozlišení
 	Low Resolution (150 dpi)	Nízké rozlišení (150 dpi)
+	LOW-CONFIDENCE WORDS	SLOVA S NÍZKOU SPOLEHLIVOSTÍ
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	Zpřístupnit
 	Make Current Properties Default	Nastavit aktuální vlastnosti jako výchozí
@@ -1659,6 +1689,7 @@ calendar date	March	března
 	Mark for redaction	Označit k začernění
 	Mark Page Range	Označit rozsah stránek
 	Mark pages for redaction	Označit stránky k začernění
+	Mark this page as reviewed (Ctrl+T)	Označit tuto stránku jako zkontrolovanou (Ctrl+T)
 	Mark with checkmark	Označit zaškrtnutím
 	Marked	Označeno
 	MarkInfo Suspects is true: the tags are marked as unreliable	MarkInfo Suspects je true: tagy jsou označené jako nespolehlivé
@@ -1684,6 +1715,7 @@ calendar date	May	května
 	Measurement information	Informace o měření
 	Measurement snapping	Přichytávání při měření
 	Measuring tool	Nástroj pro měření
+	MEDIUM (70-89%)	STŘEDNÍ (70-89 %)
 	Menu	Nabídka
 	Merge all windows	Sloučit všechna okna
 	Merge data files into spreadsheet…	Sloučit datové soubory do tabulky…
@@ -1786,6 +1818,7 @@ calendar weekday	Mo	Po
 	Next month	Další měsíc
 	Next sheet	Další list
 	Next tab	Další karta
+	Next uncertain	Další nejisté
 	Next view	Další zobrazení
 	Night	Noc
 	No actions	Žádné akce
@@ -1914,6 +1947,8 @@ calendar date	November	listopadu
 	Number pages	Očíslovat stránky
 	Number pages…	Očíslovat stránky…
 	Numbered list	Číslovaný seznam
+	OCR complete — no text recognized on this page.	OCR hotovo — na této stránce nebyl rozpoznán žádný text.
+	OCR results rejected.	Výsledky OCR byly zamítnuty.
 	October	Říjen
 calendar date	October	října
 	Odd pages	Liché stránky
@@ -2043,6 +2078,7 @@ animation effects	On	Zapnuto
 	Overlap:	Překryv:
 	Owner password (no restrictions apply)	Heslo vlastníka (žádná omezení neplatí)
 	Package: {name}	Balíček: {name}
+	PAGE	STRÁNKA
 	Page background	Pozadí stránky
 	Page Content	Obsah stránky
 	page content	obsah stránek
@@ -2067,6 +2103,7 @@ animation effects	On	Zapnuto
 	Page thumbnails panel	Panel miniatur stránek
 	Page tools	Nástroje stránek
 	Page transitions	Přechody stránek
+	Page verified	Stránka zkontrolována
 	Page will not cause screen flicker	Stránka nezpůsobí blikání obrazovky
 	Page {label}	Stránka {label}
 	Page {n}	Stránka {n}
@@ -2103,6 +2140,7 @@ animation effects	On	Zapnuto
 	Pages to Print	Stránky k tisku
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Stránky, jejichž text nešlo přečíst: {n}. Shody na nich nejsou uvedeny.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Stránky s odkazy, komentáři nebo poli by se měly procházet tabulátorem v pořadí struktury. Oprava nastaví pořadí tabulátoru každé stránky na Podle struktury dokumentu.
+	Pages with renderable text are left alone and reported as skipped	Stránky s vykreslitelným textem zůstanou nedotčené a hlásí se jako přeskočené
 	Pages without a TrimBox	Stránky bez TrimBox
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Stránky {pages} se po přidání pozadí změnily, proto jejich vlastní bílá výplň zůstává vypnutá. Na bílém papíře vypadají stejně.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Stránky {pages} mají vlastní bílou výplň, která by zakryla pozadí. Nahradit ji
@@ -2233,8 +2271,10 @@ animation effects	On	Zapnuto
 	Previous month	Předchozí měsíc
 	Previous sheet	Předchozí list
 	Previous tab	Předchozí karta
+	Previous uncertain	Předchozí nejisté
 	Previous view	Předchozí zobrazení
 	Primary language	Hlavní jazyk
+	Primary only	Jen hlavní engine
 	Print ({key})	Tisk ({key})
 	Print (⌘P)	Tisk (⌘P)
 	Print as image	Tisknout jako obrázek
@@ -2285,6 +2325,8 @@ certificate	Public key	Veřejný klíč
 	RAM {gb} GB	RAM {gb} GB
 	Rating	Hodnocení
 	Raw:	Zdroj:
+	Re-OCR entire page	Znovu rozpoznat celou stránku
+	Re-OCR this region	Znovu rozpoznat tuto oblast
 	Re-type Password	Zadejte heslo znovu
 	Read	Čtení
 	Read mode	Režim čtení
@@ -2296,6 +2338,7 @@ certificate	Public key	Veřejný klíč
 	Read out loud requires Windows, macOS or Linux.	Čtení nahlas nyní vyžaduje Windows / macOS / Linux.
 	Read this page only	Číst pouze tuto stránku
 	Read to end of document	Číst do konce dokumentu
+	Read {n} words on {m} of {t} pages	Načteno {n} slov na {m} z {t} stránek
 	Reading colours	Barvy pro čtení
 	Reading options…	Možnosti čtení…
 	Reading page {page}…	Čtení stránky {page}…
@@ -2304,6 +2347,7 @@ certificate	Public key	Veřejný klíč
 	Reading the printer's settings…	Načítání nastavení tiskárny…
 	Reading the raw document…	Čte se zdrojový dokument…
 	Reading theme	Motiv čtení
+	Reads pages and files even where the skip options would leave them alone	Čte stránky a soubory i tam, kde by volby přeskočení nechaly být
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Čte {names}, která ho čtou zpět. Žádné pořadí smyčku neopraví: změňte jeden ze vzorců.
 	Reads {name}, which calculates later, so it shows an old value.	Čte {name}, které se počítá později, takže ukazuje starou hodnotu.
 	Reads {name}, which the form doesn't have, so it gets no value there.	Čte {name}, které formulář nemá, takže odtud nedostane žádnou hodnotu.
@@ -2322,6 +2366,8 @@ certificate	Public key	Veřejný klíč
 	Recognize Text…	Rozpoznat text…
 	Recognize text…	Rozpoznat text…
 	Recognized 1 word	Rozpoznáno 1 slovo
+	Recognized text	Rozpoznaný text
+	Recognized text applied ({n} words, one undoable step)	Rozpoznaný text byl použit ({n} slov, vratké jedním krokem)
 	Recognized {n} words	Rozpoznáno slov: {n}
 	Recognized {w} words in 1 file	Rozpoznáno slov v 1 souboru: {w}
 	Recognized {w} words in {n} files	Rozpoznáno slov: {w} (souborů: {n})
@@ -2353,6 +2399,8 @@ certificate	Public key	Veřejný klíč
 	Refresh plugins	Obnovit pluginy
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Oblast v palcích. Nechte šířku nebo výšku na nule pro celou plochu.
 	Regularity	Pravidelnost
+	Reject	Zamítnout
+	Reject entire page	Zamítnout celou stránku
 	Rejected	Odmítnuto
 	Release notes	Poznámky k vydání
 	Reliable character encoding is provided	Je zajištěno spolehlivé kódování znaků
@@ -2395,6 +2443,7 @@ certificate	Public key	Veřejný klíč
 	Remove {n} files	Odebrat soubory ({n})
 	Remove {n} pages	Odebrat stránky ({n})
 	Remove {standard} identification	Odebrat identifikaci {standard}
+	removed	odebráno
 	Removed 1 hidden item. Save to remove them from the file.	Odebrána 1 skrytá položka. Uložením ji odstraníte ze souboru.
 	Removed 1 link	Odebrán 1 odkaz
 	Removed the signature {field} and kept its empty field	Podpis {field} byl odstraněn a jeho prázdné pole zůstalo
@@ -2512,6 +2561,7 @@ certificate	Public key	Veřejný klíč
 	Rotate view clockwise (⇧⌘+)	Otočit zobrazení po směru hodinových ručiček (⇧⌘+)
 	Rotate view counterclockwise	Otočit zobrazení proti směru hodinových ručiček
 	Rotate:	Otočit:
+	ROVER vote	Hlasování ROVER
 	Row spacing	Mezera mezi řádky
 	rows both directly in it and in THead, TBody or TFoot	řádky přímo v něm i v THead, TBody nebo TFoot
 	rows have between {min} and {max} columns	řádky mají {min} až {max} sloupců
@@ -2521,6 +2571,7 @@ certificate	Public key	Veřejný klíč
 	Run a JavaScript	Spustit JavaScript
 	Run form script	Spustit skript formuláře
 	Run JavaScript	Spustit JavaScript
+	Run OCR	Spustit OCR
 	Running action… file {d} of {t}	Probíhá akce… soubor {d} z {t}
 	Runs the Accessibility Checker's rules	Spustí pravidla kontroly přístupnosti
 	Runtime	Prostředí
@@ -2533,6 +2584,7 @@ calendar weekday	Sa	So
 	Sanitize Documents	Vyčistit dokumenty
 	Sanitize document…	Vyčistit dokument…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	Vyčištění odebere z dokumentu skryté informace: metadata, připojené soubory, komentáře, formulářová pole (sloučí se se stránkou), skrytý text a vrstvy, záložky, odkazy, akce a skripty a soukromá data aplikací.
+	Sauvola binarization: ink to black, paper to white	Sauvolova binarizace: inkoust do černa, papír do bíla
 	Save & Close	Uložit a zavřít
 	Save (M4)	Uložit (M4)
 	Save ({key})	Uložit ({key})
@@ -2662,6 +2714,7 @@ calendar weekday	Sa	So
 	Select a placed signature first	Nejprve vyberte umístěný podpis
 	Select a text box or an image first	Nejdřív vyberte textový rámeček nebo obrázek
 	Select a word	Vybrat slovo
+	Select a word on the page to inspect it	Vyberte na stránce slovo, které chcete prozkoumat
 	Select Action:	Vyberte akci:
 	Select all	Vybrat vše
 	Select all pages (Organize)	Vybrat všechny stránky (Uspořádání)
@@ -2738,6 +2791,7 @@ certificate	Serial number	Sériové číslo
 	Set Trapped to False	Nastavit Trapped na False
 	Set Trapped to True	Nastavit Trapped na True
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Nastavení, která tento zdroj nabízí. Nechejte ovládací prvek, aby zůstal hodnotou ovladače.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	Několik souborů má stejný název, takže by se jejich výsledky navzájem přepsaly; nic nebylo zapsáno: {list}
 	SHA-1 digest	Otisk SHA-1
 certificate	SHA-1 digest	Otisk SHA-1
 	SHA-256 digest	Otisk SHA-256
@@ -2750,6 +2804,7 @@ certificate	SHA-256 digest	Otisk SHA-256
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift omezí směr na násobky 45 stupňů. Backspace odebere vrchol. Escape měření zruší.
 	Shift drags freely	Shift táhne volně
+	Shift+F8: the previous word to review	Shift+F8: předchozí slovo ke kontrole
 	Shift- or Ctrl/Command-click to select several fields.	Kliknutím se Shift nebo Ctrl/Command vyberete více polí.
 	Shift-click to select several objects. Drag empty space to select an area.	Kliknutím se Shiftem vyberete více objektů. Tažením v prázdném místě vyberete oblast.
 	ships in milestone {m}	přijde v milníku {m}
@@ -2841,8 +2896,11 @@ key	Shift	Shift
 	Single page	Jednostránkové zobrazení
 	Single Page Continuous	Jedna stránka souvisle
 	Single word or phrase	Jedno slovo nebo fráze
+	Skip files that already have text	Přeskočit soubory, které už mají text
+	Skip pages that already have text	Přeskočit stránky, které už mají text
 	Skip Rule	Přeskočit pravidlo
 	Skipped	Přeskočeno
+	skipped	přeskočeno
 	Slash	Lomítko
 scroll speed	Slow	Pomalá
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	Menší soubory pro obrazovky a e-mail. Obrázky nad 225 ppi se zmenší na 150 ppi, JPEG s kvalitou 60; kresby mohou ztratit detaily.
@@ -2867,6 +2925,7 @@ scroll speed	Slow	Pomalá
 	Sort items	Seřadit položky
 	sorted ascending	seřazeno vzestupně
 	sorted descending	seřazeno sestupně
+	Source page	Zdrojová stránka
 key	Space	Mezerník
 	Space Audit	Analýza využití místa
 	Spacing between copies	Mezera mezi kopiemi
@@ -2901,12 +2960,14 @@ action wizard	Start	Spustit
 	Start page number	Počáteční číslo stránky
 	Steps	Kroky
 	Sticky note	Rychlá poznámka
+	still checking whether the tesseract program can run; try again in a moment	stále se ověřuje, zda lze program tesseract spustit; zkuste to za chvíli znovu
 	Still printing; the job continues on the printer	Stále se tiskne; úloha pokračuje na tiskárně
 	Still rendering — this page is unusually complex…	Stále se vykresluje – tato stránka je neobvykle složitá…
 	Stop reading	Zastavit čtení
 	Straighten scanned page	Narovnat naskenovanou stránku
 	Straighten skewed scans	Narovnat šikmé skeny
 	Straighten the page	Narovnat stránku
+	Straightens skewed text lines before reading	Před čtením vyrovná nakloněné řádky textu
 	Strength: {s}	Síla: {s}
 	Strikethrough	Přeškrtnutí
 	Strikethrough text	Přeškrtnout text
@@ -2925,6 +2986,7 @@ certificate	Subject	Subjekt
 	Subscript	Subscript
 	Success	Hotovo
 	Suggest edits	Navrhnout úpravy
+	Suggestions	Návrhy
 	sum (+)	součet (+)
 	Summarize	Shrnout
 	Summarize comments	Shrnout komentáře
@@ -3004,6 +3066,7 @@ calendar weekday	Th	Čt
 	Thai and Arabic use regular fallback fonts when available.	Thajština a arabština používají běžná náhradní písma, pokud jsou k dispozici.
 	That didn't work: an internal error stopped it ({m}).	Nepodařilo se: zastavila to vnitřní chyba ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Nepodařilo se: zastavila to vnitřní chyba ({m}). Vaše dokumenty se nezměnily.
+	That is the source file; choose another destination	To je zdrojový soubor; zvolte jiné umístění
 	That isn't a scanner address	Toto není adresa skeneru
 	That length can't be right for this line: check the unit.	Tato délka nemůže pro tuto čáru platit: zkontrolujte jednotku.
 	The answer proposes formatting changes.	Odpověď navrhuje změny formátování.
@@ -3012,6 +3075,7 @@ calendar weekday	Th	Čt
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Sklo skenuje po jedné stránce. Naskenujte líc, otočte a pak rub.
 	The bleed is {} mm on its narrowest side	Spadávka má na nejužší straně {} mm
 	The bookmarks have no language: the document sets none (Lang)	Záložky nemají jazyk: dokument žádný nenastavuje (Lang)
+	The built-in engine (pure Rust)	Vestavěný engine (čisté Rust)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Pořadí výpočtů má {n} položku, která nic nepočítá. „Opravit pořadí“ ji odstraní.|Pořadí výpočtů má {n} položky, které nic nepočítají. „Opravit pořadí“ je odstraní.|Pořadí výpočtů má {n} položek, které nic nepočítají. „Opravit pořadí“ je odstraní.
 	The catalog has no metadata stream (XMP)	Katalog nemá proud metadat (XMP)
 	the certificate authorities	certifikační autority
@@ -3143,6 +3207,7 @@ calendar weekday	Th	Čt
 	The order saved in the PDF needs tidying	Pořadí uložené v PDF je potřeba uklidit
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Originály se nemění. Soubor se stejným názvem ve výstupní složce zůstane zachován a nový dostane číslo.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Ostatní podpisy ({names}) budou hlásit, že se dokument po jejich podepsání změnil. Znovu je ověřte: nic nezaručuje, že zůstanou platné.
+	The output folder already holds files of these names; nothing was written: {list}	Výstupní složka už obsahuje soubory těchto názvů; nic nebylo uloženo: {list}
 	The output folder can't be one of the folders being read, or contain one.	Výstupní složka nemůže být žádnou z čtených složek ani žádnou z nich obsahovat.
 	The output intent's profile describes {} colour, but PDF/X-1a needs a CMYK printing condition	Profil výstupního záměru popisuje barvu {}, ale PDF/X-1a potřebuje tiskovou podmínku CMYK
 	The output intent's profile describes {} colour; it must be gray, RGB or CMYK	Profil výstupního záměru popisuje barvu {}; musí být šedá, RGB nebo CMYK
@@ -3158,6 +3223,9 @@ calendar weekday	Th	Čt
 	The page has no BleedBox	Stránka nemá BleedBox
 	The page has no valid MediaBox	Stránka nemá platný MediaBox
 	The page is a transparency group	Stránka je skupina průhlednosti
+	The page was read again; its words were replaced (undo in the panel)	Stránka byla přečtena znovu; její slova byla nahrazena (vrátit lze v panelu)
+	The page's words were applied as one undoable step ({n} words)	Slova stránky byla použita jako jedna vratká úprava ({n} slov)
+	The page's words were cleared (undo in the panel)	Slova stránky byla vymazána (vrátit lze v panelu)
 	The pages already scanned were kept in the document.	Již naskenované stránky zůstaly v dokumentu.
 	The pages use {} spot colours	Stránky používají přímých barev: {}
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Stránky byly extrahovány, ale neodstraněny, protože se dokument změnil, zatímco jste vybírali složku.
@@ -3189,8 +3257,10 @@ calendar weekday	Th	Čt
 	The printer's reply couldn't be understood	Odpovědi tiskárny nebylo možné porozumět
 	The provider's page didn't come back in time. Try again.	Stránka poskytovatele se včas nevrátila. Zkuste to znovu.
 	The raw text was truncated to what fits.	Zdrojový text byl zkrácen.
+	The re-read found no text; the existing words are unchanged	Znovunačtení nenašlo žádný text; stávající slova zůstávají
 	The redaction does not fit page {page}; no pages were marked.	Začernění se nevejde na stránku {page}; žádné stránky nebyly označeny.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI přesměrování musí být http://127.0.0.1 nebo http://localhost s portem.
+	The region was read again; its words were replaced (undo in the panel)	Oblast byla přečtena znovu; její slova byla nahrazena (vrátit lze v panelu)
 	The release has ambiguous packages. Choose a package on the official release page.	Vydání obsahuje nejednoznačné balíčky. Vyberte balíček na oficiální stránce vydání.
 	The release is not a published stable update. Try again later.	Toto vydání není zveřejněná stabilní aktualizace. Zkuste to později.
 	The replacement file doesn't have that many pages.	Náhradní soubor nemá tolik stránek.
@@ -3217,10 +3287,12 @@ calendar weekday	Th	Čt
 	The scanner reported a lamp or device error.	Skener ohlásil chybu lampy nebo zařízení.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Skener ohlásil potíže s papírem (uvíznutí nebo současné podání více listů).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Skutečný počet pixelů na palec obrazovky. Zkalibrujte pravítkem, aby skutečná velikost (100 %) zobrazovala stránky v jejich opravdové velikosti.
+	The searchable copies are written here under the source names	Prohledávatelné kopie se ukládají sem pod původními názvy
 	The security settings don't allow screen readers to read the text	Nastavení zabezpečení nedovoluje čtečkám obrazovky číst text
 	The selected area has been copied ({w} × {h} pixels)	Vybraná oblast byla zkopírována ({w} × {h} pixelů)
 	The selected fields could not be found. Select them again.	Vybraná pole nebyla nalezena. Vyberte je znovu.
 	The selected redaction is unavailable or invalid.	Vybrané začernění není dostupné nebo je neplatné.
+	The selected word is gone; choose another	Vybrané slovo už není; vyberte jiné
 	The selection changed. Select the signature again.	Výběr se změnil. Vyberte podpis znovu.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Relace s poskytovatelem {provider} skončila. Přihlaste se znovu v části Konfigurovat digitální ID.
 	The shared folder:	Sdílená složka:
@@ -3270,6 +3342,9 @@ calendar weekday	Th	Čt
 	The standard it must meet and where the file goes	Jaké normě musí vyhovět a kam soubor putuje
 	The standard structure type {} is mapped to a type that isn't standard	Standardní typ struktury {} je mapován na typ, který není standardní
 	The structure type {} isn't standard and isn't mapped to a standard type	Typ struktury {} není standardní a není mapován na standardní typ
+	the tesseract engine is not available in the web build	engine tesseract není ve webové verzi k dispozici
+	the tesseract program was not found (install it, or add it to the PATH)	program tesseract nebyl nalezen (nainstalujte ho nebo ho přidejte do PATH)
+	The tesseract program, run as an external process	Program tesseract, spouštěný jako externí proces
 	The text is the same	Text je stejný
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	modely pro rozpoznávání textu nejsou nainstalované (přeinstalujte PdfCraft nebo nastavte PDFCRAFT_MODELS na složku, ve které jsou)
 	The timestamp authority's certificate is not issued for time stamping.	Certifikát autority časových razítek není vystaven pro vydávání časových razítek.
@@ -3446,6 +3521,7 @@ calendar weekday	Tu	Út
 	Turn on continuous scrolling	Zapnout plynulé posouvání
 	Turn upside down (180°)	Otočit vzhůru nohama (180°)
 	Turned left	Otočeno doleva
+	Turns pages scanned sideways or upside down upright before reading	Před čtením narovná stránky naskenované bokem nebo vzhůru nohama
 	two cells would both be named {name}	dvě buňky by se jmenovaly {name}
 	Two-page view	Dvoustránkové zobrazení
 	Two-sided:	Oboustranně:
@@ -3465,6 +3541,7 @@ signature pad	Type	Napsat
 	Underline	Podtržení
 	Underline text	Podtrhnout text
 	Undid {label}	Vráceno zpět: {label}
+	Undo the last review change (Ctrl+Z)	Vrátí poslední změnu kontroly (Ctrl+Z)
 	Unit	Jednotka
 	Unknown author	Neznámý autor
 	unknown signer	neznámý podepisující
@@ -3480,6 +3557,7 @@ signature pad	Type	Napsat
 	Unpin {folder}	Odepnout {folder}
 	Unpinned {tool} from Home	{tool} odepnuto z úvodní stránky
 	Unplaced	Neumístěno
+	unreviewed	nezkontrolováno
 	Unsaved changes to this document are saved in the new file too.	Neuložené změny tohoto dokumentu se uloží také do nového souboru.
 	Unsigned signature field	Nepodepsané podpisové pole
 	Unsigned signature field: {name}	Nepodepsané podpisové pole: {name}
@@ -3517,6 +3595,7 @@ signature pad	Type	Napsat
 	Use print production	Použít přípravu pro tisk
 	Use system setting	Podle nastavení systému
 	Use system title bar	Použít systémové záhlaví okna
+	Use the chosen engine's reading alone	Použije jen čtení zvoleného enginu
 	Use the default	Použít výchozí
 	Use this size for saved initials	Použít tuto velikost pro uložené iniciály
 	Use this size for saved signature	Použít tuto velikost pro uložený podpis
@@ -3547,6 +3626,9 @@ certificate	Validity starts	Začátek platnosti
 	Validity unknown	Neznámá platnost
 	Value is not calculated	Hodnota se nepočítá
 	Value is the	Hodnota je
+	Verified	Zkontrolováno
+	verified	zkontrolováno
+	VERIFIED %	ZKONTROLOVÁNO %
 	Verifies the file against the standard, without changing it	Ověří soubor podle normy, aniž by ho měnil
 	Verify	Ověřit
 	Verify PDF/UA	Ověřit PDF/UA
@@ -3594,14 +3676,17 @@ document scrollbar width	Wide	Široký
 	Will use the feeder.	Použije se podavač.
 	Window Options	Možnosti okna
 	Windows store  ·  	Úložiště Windows  ·  
+	Word	Slovo
 	Word count	Počet slov
 	Word counting stopped unexpectedly.	Počítání slov se neočekávaně zastavilo.
 	Word count…	Počet slov…
 	Words or phrases to redact	Slova nebo fráze k začernění
 	Workspace modes	Režimy pracovního prostoru
 	Write this email?	Napsat tento e-mail?
+	Writes a new document of visible text; the scan is not changed	Vytvoří nový dokument s viditelným textem; sken se nemění
 	Wrong password	Nesprávné heslo
 	Wrote 1 file to {dir}	Zapsán 1 soubor do {dir}
+	Wrote {name}	Uloženo {name}
 	Wrote {n} files to {dir}	Zapsáno souborů: {n} (složka {dir})
 	X Object Forms	Objekty Form XObject
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	Formulář XFA: jeho pole a data XFA se udržují ve shodě, takže ostatní prohlížeče zobrazí, co vyplníte.
@@ -3691,6 +3776,7 @@ document scrollbar width	Wide	Široký
 	{name} — unsaved changes	{name} — neuložené změny
 	{name}: choosing images arrives on the web with file pickers for images	{name}: výběr obrázků přijde na web s výběrem obrázkových souborů
 	{name}: the {other} action isn't supported yet	{name}: akce {other} zatím není podporována
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}: {n} slov s nízkou spolehlivostí na stránkách {pages}
 	{name}_unsigned.pdf	{name}_bez_podpisu.pdf
 @plural	{n} byte|{n} bytes	{n} bajt|{n} bajty|{n} bajtů
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} výpočet nyní používá nový název.|{n} výpočty nyní používají nový název.|{n} výpočtů nyní používá nový název.
@@ -3731,6 +3817,7 @@ document scrollbar width	Wide	Široký
 	{n} selected	Vybráno: {n}
 	{n} tags	Tagy: {n}
 	{n} word(s) or phrase(s)	Slova nebo fráze: {n}
+	{n} word(s) to review	{n} slov ke kontrole
 	{n} {kind}	{kind}: {n}
 	{page} is not a page number or label	{page} není číslo ani označení stránky
 	{rule} - {status}	{rule} – {status}

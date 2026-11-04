@@ -19,6 +19,7 @@
 	 ({s} warnings: {first})	 ({s} avvisi: {first})
 	 on page {p}	 a pagina {p}
 	 · password-protected	 · protetto da password
+	+ Dictionary	+ Dizionario
 	+ Page {p}	+ Pagina {p}
 	+Bin	+Bin
 	+LOC	+LOC
@@ -38,14 +39,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 cifra, A lettera, O lettera o cifra, X qualsiasi carattere
 	; 1 page already had text	; 1 pagina conteneva già testo
 	; 1 page skipped	; 1 pagina saltata
+	; cancelled — {n} files were not run	; annullato — {n} file non sono stati elaborati
 	; corrected {n} pages	; {n} pagine corrette
 	; failed: {list}	; non riusciti: {list}
 	; skipped: {n}	; saltati: {n}
+	; {n} files already had text	; {n} file contenevano già testo
 	; {n} pages already had text	; {n} pagine contenevano già testo
 	; {n} pages skipped	; {n} pagine saltate
 	? of {n}	? di {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} commit, +{added} / −{deleted} righe (Δ {delta}), +{bin_added} / −{bin_deleted} risorse binarie, {first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A 3×3 median filter against scan speckle	Un filtro mediano 3×3 contro le macchie della scansione
 	a bookmark cannot be moved inside itself	un segnalibro non può essere spostato dentro se stesso
 	A button	Un pulsante
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Un'applicazione PDF clean-room e open source scritta in Rust. MIT OR Apache-2.0.
@@ -56,6 +60,7 @@
 	A document needs at least one page: copy instead	Un documento deve avere almeno una pagina: usa Copia
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Una marca temporale del documento copre tutto il file e non è la firma di nessuno, quindi non può essere rimossa da sola.
 	a field named {name} already exists	esiste già un campo chiamato {name}
+	A folder is asked for when a multiple-file run starts	La cartella viene chiesta all'avvio di un'elaborazione di più file
 	A font isn't embedded	Un carattere non è incorporato
 	A form field has additional actions	Un campo modulo ha azioni aggiuntive
 	A link	Un collegamento
@@ -81,6 +86,8 @@
 	About {app}	Informazioni su {app}
 	about {h} h {m} min left	mancano circa {h} h {m} min
 	about {n} min left	mancano circa {n} min
+	Accept	Accetta
+	Accept entire page	Accetta l'intera pagina
 	Accepted	Accettato
 	Accepted by {printer}	Accettato da {printer}
 	Accessibility Checker	Controllo accessibilità
@@ -112,6 +119,7 @@
 	Add a page from template {name}	Aggiungi una pagina dal modello {name}
 	Add a radio button	Aggiungi un pulsante di opzione
 	Add a reply	Aggiungi una risposta
+	Add a second engine's reading when the first is unsure	Aggiunge la lettura di un secondo motore quando il primo è incerto
 	Add a stamp	Aggiungi un timbro
 	Add a sticky note	Aggiungi una nota adesiva
 	Add a sticky note here	Aggiungi qui una nota adesiva
@@ -246,6 +254,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Il testo alternativo su un elemento privo di contenuto di pagina non viene mai raggiunto. Rimuovilo o associa l'elemento a un contenuto.
 	Alternate text should not hide annotation	Il testo alternativo non deve nascondere l'annotazione
 	Alternate text that will never be read	Testo alternativo che non verrà mai letto
+	Always read with both engines and merge the words	Legge sempre con entrambi i motori e unisce le parole
 	Always use my default zoom and page layout	Usa sempre il mio ingrandimento e layout di pagina predefiniti
 	An action is already running	Un'azione è già in esecuzione
 	An action with this name already exists.	Esiste già un'azione con questo nome.
@@ -322,6 +331,7 @@ calendar date	August	agosto
 	Auto portrait/landscape	Verticale/orizzontale automatico
 	Auto-deskew	Raddrizzamento automatico
 	Auto-detect	Rilevamento automatico
+	Auto-rotate	Rotazione automatica
 	Auto-rotate pages	Ruota pagine automaticamente
 	Auto-size text to fit redaction region	Adatta automaticamente il testo all'area oscurata
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Gli script automatici di AcroForm sono disattivati finché non è disponibile un isolamento sicuro dell'esecuzione; i valori salvati dei campi sono stati conservati. Gli script dei pulsanti e della console restano disponibili.
@@ -329,6 +339,7 @@ calendar date	August	agosto
 	Automatically tag PDF	Aggiungi tag al PDF automaticamente
 	Available version: {v}	Versione disponibile: {v}
 	average	la media
+	AVG CONFIDENCE	AFFIDABILITÀ MEDIA
 	Back	Indietro
 	Back side only	Solo retro
 	Back to all tools	Torna a tutti gli strumenti
@@ -352,6 +363,7 @@ certificate	Basic constraints	Vincoli di base
 	Best for: the deepest reasoning this family has	Ideale per: il ragionamento più profondo di questa famiglia
 	Beveled	Smussato
 	Bicubic downsampling to	Sottocampionamento bicubico a
+	Binarize	Binarizza
 	Binding	Rilegatura
 	Binding:	Rilegatura:
 	Black on white	Nero su bianco
@@ -366,6 +378,7 @@ certificate	Basic constraints	Vincoli di base
 	Bookmarks Panel and Page	Pannello segnalibri e pagina
 	Border Color:	Colore bordo:
 	Borders and Colors	Bordi e colori
+	Both engines, combined as the Strategy says	Entrambi i motori, combinati secondo la strategia scelta
 	Box	Riquadro
 	Bring All to Front	Porta tutto in primo piano
 	Bring forward	Porta avanti
@@ -393,6 +406,7 @@ certificate	Basic constraints	Vincoli di base
 	Cancel reverse sides	Annulla i retro
 	Canceling…	Annullamento…
 	Cancelled	Annullato
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	Annullato — {n} parole lette in {m} pagine su {t}; il resto non è stato letto
 	Cancelling…	Annullamento…
 	Card driver (PKCS #11)	Driver della scheda (PKCS #11)
 	Card PIN	PIN della scheda
@@ -516,6 +530,7 @@ certificate	Basic constraints	Vincoli di base
 	Clear selection / close find	Deseleziona / chiudi ricerca
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	Rimuovi la carta inceppata e carica i fogli rimanenti ben allineati, poi scegli “Continua l’acquisizione”.
 	Clear the jam and load the sheets squarely, then choose Try again.	Rimuovi la carta inceppata e carica i fogli ben allineati, poi scegli “Riprova”.
+	Click a word to inspect it; drag a rectangle to re-read part of the page	Fai clic su una parola per esaminarla; trascina un rettangolo per rileggere parte della pagina
 	Click on the page to add a {tool}, or drag to set its size	{tool}: fai clic sulla pagina per aggiungere l'elemento, oppure trascina per impostarne la dimensione
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Fai clic sulla pagina per aggiungere testo; ogni clic crea una nuova casella e ✓ termina. Trascina gli elementi per spostarli, trascina un angolo per ridimensionarli, fai doppio clic sul testo per modificarlo.
 	Click text or an image to edit it	Fai clic su un testo o un'immagine per modificarlo
@@ -588,6 +603,8 @@ certificate	Basic constraints	Vincoli di base
 	Compress and export	Comprimi ed esporta
 	Compress document structure (object streams)	Comprimi struttura del documento (flussi di oggetti)
 	Compressing combined PDF…	Compressione del PDF combinato…
+	CONFIDENCE	AFFIDABILITÀ
+	Confidence weighted	Ponderata per affidabilità
 	Configure a Digital ID for Signing	Configura un ID digitale per la firma
 	Configure New Digital ID	Configura nuovo ID digitale
 	Confirm Password	Conferma password
@@ -624,8 +641,11 @@ certificate	Basic constraints	Vincoli di base
 	Copyright notice	Nota sul copyright
 	Copyright status	Stato del copyright
 	Correct recognized text	Correggi testo riconosciuto
+	Correct recognized text…	Correggi il testo riconosciuto…
 	Correct scans	Correggi scansioni
+	corrected	corretta
 	Corrected scan	Scansione corretta
+	Corrected text (Enter commits)	Testo corretto (Invio conferma)
 	Could not copy the selection because text could not be read on every page	Impossibile copiare la selezione perché non è stato possibile leggere il testo su tutte le pagine
 	Could not mark the selection because text could not be read on every page	Impossibile contrassegnare la selezione perché non è stato possibile leggere il testo su tutte le pagine
 	Could not save: {e}	Impossibile salvare: {e}
@@ -784,8 +804,10 @@ key	Delete	Canc
 @plural	Delete {n} field|Delete {n} fields	Elimina {n} campo|Elimina {n} campi
 	Delete {o}	Elimina {o}
 	Deleted page	Pagina eliminata
+	Denoise	Riduci rumore
 	Describe the figure	Descrivi la figura
 	Description writer	Autore della descrizione
+	Deskew	Raddrizza
 	Detached signature file	File di firma separata
 	Detailed Report	Rapporto dettagliato
 	Detect form fields	Rileva campi modulo
@@ -943,6 +965,7 @@ comment menu	Edit	Modifica
 	Edit text…	Modifica testo…
 	Edit this PDF	Modifica questo PDF
 	Edit {field}'s formula	Modifica la formula di {field}
+	Editable text	Testo modificabile
 	Editorial	Editorial
 	Email Address	Indirizzo email
 	Email Addresses	Indirizzi email
@@ -963,6 +986,7 @@ comment menu	Edit	Modifica
 key	End	Fine
 	End entity	Entità finale
 	Endpoints	Estremi
+	ENGINE · STRATEGY	MOTORE · STRATEGIA
 	English	Inglese
 	Enhance camera image	Migliora foto della fotocamera
 	Enhance page	Migliora la pagina
@@ -1051,6 +1075,7 @@ key	Esc	Esc
 	Extract the selected pages…	Estrai le pagine selezionate…
 	Extracted 1 page	Estratta 1 pagina
 	Extracted {n} pages	Estratte {n} pagine
+	F8: next word to review; Shift+F8 goes back	F8: parola successiva da rivedere; Maiusc+F8 torna indietro
 	Failed	Non superato
 scroll speed	Fast	Veloce
 	Fast Web View	Visualizzazione web veloce
@@ -1174,6 +1199,7 @@ calendar date	February	febbraio
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	I caratteri devono associare i propri glifi a Unicode perché il testo possa essere letto e copiato. Correggi i caratteri o ricrea il PDF.
 	for images above	per immagini oltre
 	For page sizes and margins.	Per formati pagina e margini.
+	Force OCR (override skip options)	Forza OCR (ignora le opzioni di esclusione)
 	Form data and PDF forms	Dati modulo e moduli PDF
 	Form field advice	Consigli sui campi del modulo
 	Form field detection is already running	Il rilevamento dei campi è già in corso
@@ -1255,6 +1281,7 @@ calendar weekday	Fr	Ve
 	Hide window controls	Nascondi controlli della finestra
 	Hide {app}	Nascondi {app}
 	Hides annotation	Nasconde l'annotazione
+	HIGH (>= 90%)	ALTA (>= 90%)
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Una qualità delle immagini superiore comporta file più grandi. Una copia viene salvata solo se è più piccola.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Qualità superiore, file solitamente più grandi. Le foto JPEG oltre 450 ppi vengono ridotte a 300 ppi, qualità 85. La grafica senza perdita e le immagini con maschera mantengono i propri pixel.
 	Highlight	Evidenzia
@@ -1287,6 +1314,7 @@ key	Home	Home
 	Import {name}	Importa {name}
 	Importing data arrives on the web with file pickers for data files	Sul web, l'importazione dei dati arriverà con i selettori di file per i file di dati
 	In multiple files	In più file
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	Su più file: un file con del testo viene contato a parte come saltato e per esso non viene scritto nulla
 	In new window	In una nuova finestra
 	In streams that use LZW encoding, use Flate instead	Nei flussi con codifica LZW, usa Flate
 	In this file	In questo file
@@ -1470,8 +1498,10 @@ certificate	Key usage	Utilizzo chiave
 	Looking for PDFs…	Ricerca di file PDF…
 	Looking for printers…	Ricerca delle stampanti…
 	Loop	Ciclo
+	LOW (< 70%)	BASSA (< 70%)
 	Low resolution	Bassa risoluzione
 	Low Resolution (150 dpi)	Bassa risoluzione (150 dpi)
+	LOW-CONFIDENCE WORDS	PAROLE A BASSA AFFIDABILITÀ
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	Rendi accessibile
 	Make Current Properties Default	Imposta le proprietà correnti come predefinite
@@ -1497,6 +1527,7 @@ calendar date	March	marzo
 	Mark for redaction	Contrassegna per l'oscuramento
 	Mark Page Range	Contrassegna intervallo di pagine
 	Mark pages for redaction	Contrassegna pagine per l'oscuramento
+	Mark this page as reviewed (Ctrl+T)	Segna questa pagina come rivista (Ctrl+T)
 	Mark with checkmark	Contrassegna con segno di spunta
 	Marked	Contrassegnato
 	Marks do not remove content. Select Redact all, then save.	I contrassegni non rimuovono il contenuto. Seleziona «Oscura tutto», quindi salva.
@@ -1521,6 +1552,7 @@ calendar date	May	maggio
 	Measurement information	Informazioni di misura
 	Measurement snapping	Aggancio misure
 	Measuring tool	Strumento di misura
+	MEDIUM (70-89%)	MEDIA (70-89%)
 	Menu	Menu
 	Merge all windows	Unisci tutte le finestre
 	Merge data files into spreadsheet…	Unisci file di dati in un foglio di calcolo…
@@ -1619,6 +1651,7 @@ calendar weekday	Mo	Lu
 	Next month	Mese successivo
 	Next sheet	Foglio successivo
 	Next tab	Scheda successiva
+	Next uncertain	Incerta successiva
 	Next view	Vista successiva
 	Night	Notte
 	No actions	Nessuna azione
@@ -1733,6 +1766,8 @@ calendar date	November	novembre
 	Number pages	Numera pagine
 	Number pages…	Numera pagine…
 	Numbered list	Elenco numerato
+	OCR complete — no text recognized on this page.	OCR completato — nessun testo riconosciuto in questa pagina.
+	OCR results rejected.	Risultati OCR rifiutati.
 	October	ottobre
 calendar date	October	ottobre
 	Odd pages	Pagine dispari
@@ -1851,6 +1886,7 @@ animation effects	On	Attivati
 	Output preview	Anteprima output
 	Owner password (no restrictions apply)	Password proprietario (nessuna restrizione applicata)
 	Package: {name}	Pacchetto: {name}
+	PAGE	PAGINA
 	Page background	Sfondo della pagina
 	Page Content	Contenuto pagina
 	page content	contenuto della pagina
@@ -1875,6 +1911,7 @@ animation effects	On	Attivati
 	Page thumbnails panel	Pannello miniature di pagina
 	Page tools	Strumenti pagina
 	Page transitions	Transizioni pagina
+	Page verified	Pagina verificata
 	Page will not cause screen flicker	La pagina non causa sfarfallio dello schermo
 	Page {label}	Pagina {label}
 	page {n} is out of range (1–{count})	la pagina {n} è fuori intervallo (1–{count})
@@ -1901,6 +1938,7 @@ animation effects	On	Attivati
 	Pages to Print	Pagine da stampare
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Pagine il cui testo non è stato possibile leggere: {n}. Le corrispondenze su di esse non sono elencate.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Le pagine con collegamenti, commenti o campi dovrebbero seguire l'ordine della struttura. La correzione imposta l'ordine di tabulazione di ogni pagina su “per struttura del documento”.
+	Pages with renderable text are left alone and reported as skipped	Le pagine con testo visualizzabile vengono lasciate invariate e segnalate come saltate
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Le pagine {pages} sono cambiate dopo l'aggiunta dello sfondo, quindi i loro riempimenti bianchi restano disattivati. Su carta bianca appaiono uguali.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Le pagine {pages} hanno un proprio riempimento bianco, che nasconderebbe lo sfondo. Sostituiscilo
 	Pages:	Pagine:
@@ -2022,8 +2060,10 @@ animation effects	On	Attivati
 	Previous month	Mese precedente
 	Previous sheet	Foglio precedente
 	Previous tab	Scheda precedente
+	Previous uncertain	Incerta precedente
 	Previous view	Vista precedente
 	Primary language	Lingua principale
+	Primary only	Solo principale
 	Print ({key})	Stampa ({key})
 	Print as image	Stampa come immagine
 	Print in grayscale	Stampa in scala di grigi
@@ -2071,6 +2111,8 @@ certificate	Public key	Chiave pubblica
 	RAM {gb} GB	RAM {gb} GB
 	Rating	Valutazione
 	Raw:	Grezzo:
+	Re-OCR entire page	Riesegui OCR sull'intera pagina
+	Re-OCR this region	Riesegui OCR su questa area
 	Re-type Password	Ridigita password
 	Read	Lettura
 	Read mode	Modalità lettura
@@ -2082,6 +2124,7 @@ certificate	Public key	Chiave pubblica
 	Read out loud requires Windows, macOS or Linux.	La lettura ad alta voce richiede attualmente Windows / macOS / Linux.
 	Read this page only	Leggi solo questa pagina
 	Read to end of document	Leggi fino alla fine del documento
+	Read {n} words on {m} of {t} pages	Lette {n} parole in {m} pagine su {t}
 	Reading colours	Colori di lettura
 	Reading options…	Opzioni di lettura…
 	Reading page {page}…	Lettura pagina {page}…
@@ -2090,6 +2133,7 @@ certificate	Public key	Chiave pubblica
 	Reading the printer's settings…	Lettura delle impostazioni della stampante…
 	Reading the raw document…	Lettura del documento grezzo…
 	Reading theme	Tema di lettura
+	Reads pages and files even where the skip options would leave them alone	Legge pagine e file anche dove le opzioni di esclusione li salterebbero
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	Legge {names}, che a loro volta lo leggono. Nessun ordine può correggere un ciclo: modifica una delle formule.
 	Reads {name}, which calculates later, so it shows an old value.	Legge {name}, che viene calcolato dopo, quindi mostra un valore vecchio.
 	Reads {name}, which the form doesn't have, so it gets no value there.	Legge {name}, che non esiste nel modulo, quindi da lì non riceve alcun valore.
@@ -2108,6 +2152,8 @@ certificate	Public key	Chiave pubblica
 	Recognize Text…	Riconosci testo…
 	Recognize text…	Riconosci testo…
 	Recognized 1 word	Riconosciuta 1 parola
+	Recognized text	Testo riconosciuto
+	Recognized text applied ({n} words, one undoable step)	Testo riconosciuto applicato ({n} parole, un solo passaggio annullabile)
 	Recognized {n} words	Riconosciute {n} parole
 	Recognized {w} words in 1 file	Riconosciute {w} parole in 1 file
 	Recognized {w} words in {n} files	Riconosciute {w} parole in {n} file
@@ -2139,6 +2185,8 @@ certificate	Public key	Chiave pubblica
 	Refresh plugins	Aggiorna plug-in
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Area in pollici. Lascia larghezza o altezza a zero per acquisire tutta l’area.
 	Regularity	Regolarità
+	Reject	Rifiuta
+	Reject entire page	Rifiuta l'intera pagina
 	Rejected	Rifiutato
 	Release notes	Note di rilascio
 	Reliable character encoding is provided	È fornita una codifica dei caratteri affidabile
@@ -2179,6 +2227,7 @@ certificate	Public key	Chiave pubblica
 	Remove {name} from Recent	Rimuovi {name} dai recenti
 	Remove {n} files	Rimuovi {n} file
 	Remove {n} pages	Rimuovi {n} pagine
+	removed	rimossa
 	Removed 1 hidden item. Save to remove them from the file.	Rimosso 1 elemento nascosto. Salva per eliminarlo dal file.
 	Removed 1 link	1 collegamento rimosso
 	Removed the signature {field} and kept its empty field	Firma {field} rimossa, il campo resta vuoto
@@ -2297,6 +2346,7 @@ certificate	Public key	Chiave pubblica
 	Rotate view clockwise (⇧⌘+)	Ruota la vista in senso orario (⇧⌘+)
 	Rotate view counterclockwise	Ruota vista in senso antiorario
 	Rotate:	Ruota:
+	ROVER vote	Voto ROVER
 	Row spacing	Spaziatura tra le righe
 	rows have between {min} and {max} columns	le righe hanno da {min} a {max} colonne
 	Rule Name	Nome regola
@@ -2304,6 +2354,7 @@ certificate	Public key	Chiave pubblica
 	Run a JavaScript	Esegui un JavaScript
 	Run form script	Esegui script del modulo
 	Run JavaScript	Esegui JavaScript
+	Run OCR	Esegui OCR
 	Running action… file {d} of {t}	Esecuzione azione… file {d} di {t}
 	Runtime	Ambiente
 calendar weekday	Sa	Sa
@@ -2315,6 +2366,7 @@ calendar weekday	Sa	Sa
 	Sanitize Documents	Ripulisci documenti
 	Sanitize document…	Ripulisci documento…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	La pulizia rimuove le informazioni nascoste dal documento: metadati, file allegati, commenti, campi modulo (appiattiti), testo e livelli nascosti, segnalibri, collegamenti, azioni e script, e dati privati delle applicazioni.
+	Sauvola binarization: ink to black, paper to white	Binarizzazione di Sauvola: inchiostro in nero, carta in bianco
 	Save & Close	Salva e chiudi
 	Save (M4)	Salva (M4)
 	Save ({key})	Salva ({key})
@@ -2435,6 +2487,7 @@ calendar weekday	Sa	Sa
 	Select a placed signature first	Seleziona prima una firma posizionata
 	Select a text box or an image first	Seleziona prima una casella di testo o un'immagine
 	Select a word	Seleziona una parola
+	Select a word on the page to inspect it	Seleziona una parola sulla pagina per esaminarla
 	Select Action:	Seleziona azione:
 	Select all pages (Organize)	Seleziona tutte le pagine (Organizza)
 	Select at least one other page.	Seleziona almeno un’altra pagina.
@@ -2506,6 +2559,7 @@ certificate	Serial number	Numero di serie
 	Set to current page ({n})	Imposta sulla pagina corrente ({n})
 	Set to zero	Azzera
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Impostazioni offerte da questa sorgente. Lascia un controllo per tenere il valore del driver.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	Più file hanno lo stesso nome, quindi i risultati si sovrascriverebbero a vicenda; non è stato scritto nulla: {list}
 	SHA-1 digest	Impronta SHA-1
 certificate	SHA-1 digest	Impronta SHA-1
 	SHA-256 digest	Impronta SHA-256
@@ -2518,6 +2572,7 @@ certificate	SHA-256 digest	Impronta SHA-256
 key	Shift	Maiusc
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Maiusc vincola a 45 gradi. Backspace rimuove un vertice. Esc annulla.
 	Shift drags freely	Maiusc trascina liberamente
+	Shift+F8: the previous word to review	Maiusc+F8: la parola precedente da rivedere
 	Shift- or Ctrl/Command-click to select several fields.	Fai clic con Maiusc o Ctrl/Comando per selezionare più campi.
 	Shift-click to select several objects. Drag empty space to select an area.	Fai clic con Maiusc per selezionare più oggetti. Trascina in uno spazio vuoto per selezionare un'area.
 	ships in milestone {m}	arriva nel traguardo {m}
@@ -2611,8 +2666,11 @@ key	Shift	Maiusc
 	Single page	Pagina singola
 	Single Page Continuous	Pagina singola continua
 	Single word or phrase	Singola parola o frase
+	Skip files that already have text	Salta i file che contengono già testo
+	Skip pages that already have text	Salta le pagine che contengono già testo
 	Skip Rule	Ignora regola
 	Skipped	Ignorato
+	skipped	saltata
 	Slash	Barra
 scroll speed	Slow	Lenta
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	File più piccoli per schermi ed email. Le immagini oltre 225 ppi vengono ridotte a 150 ppi, JPEG qualità 60; i disegni possono perdere dettagli.
@@ -2638,6 +2696,7 @@ scroll speed	Slow	Lenta
 	sorted ascending	ordine crescente
 	sorted descending	ordine decrescente
 	Source	Origine
+	Source page	Pagina di origine
 key	Space	Spazio
 	Space Audit	Analisi dello spazio
 	Spacing between copies	Spaziatura tra le copie
@@ -2669,12 +2728,14 @@ action wizard	Start	Avvia
 	Start page number	Numero di pagina iniziale
 	Steps	Passaggi
 	Sticky note	Nota adesiva
+	still checking whether the tesseract program can run; try again in a moment	verifica in corso se il programma tesseract può essere eseguito; riprova tra un momento
 	Still printing; the job continues on the printer	Stampa ancora in corso; il lavoro continua sulla stampante
 	Still rendering — this page is unusually complex…	Rendering ancora in corso: questa pagina è insolitamente complessa…
 	Stop reading	Interrompi lettura
 	Straighten scanned page	Raddrizza pagina scansionata
 	Straighten skewed scans	Raddrizza le scansioni inclinate
 	Straighten the page	Raddrizza la pagina
+	Straightens skewed text lines before reading	Raddrizza le righe di testo inclinate prima della lettura
 	Strength: {s}	Complessità: {s}
 	Strikethrough text	Barra testo
 	String length (0 turns it off)	Lunghezza del filo (0 lo disattiva)
@@ -2687,6 +2748,7 @@ certificate	Subject	Titolare
 	Submit a form with GET	Invia un modulo (GET)
 	Subscript	Subscript
 	Suggest edits	Suggerisci modifiche
+	Suggestions	Suggerimenti
 	sum (+)	la somma (+)
 	Summarize	Riepiloga
 	Summarize comments	Riepiloga commenti
@@ -2762,12 +2824,14 @@ calendar weekday	Th	Gi
 	Thai and Arabic use regular fallback fonts when available.	Il thailandese e l’arabo usano caratteri sostitutivi in stile normale, quando disponibili.
 	That didn't work: an internal error stopped it ({m}).	Operazione non riuscita: un errore interno l'ha interrotta ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Operazione non riuscita: un errore interno l'ha interrotta ({m}). I tuoi documenti non sono stati modificati.
+	That is the source file; choose another destination	Questo è il file di origine; scegli un'altra destinazione
 	That length can't be right for this line: check the unit.	Questa lunghezza non può essere corretta per questa linea: controlla l'unità.
 	The answer proposes formatting changes.	La risposta propone modifiche alla formattazione.
 	The answer stopped unexpectedly.	La risposta si è interrotta inaspettatamente.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	La chiave API verrebbe inviata non cifrata a questo indirizzo. Usa https:// a meno che il server non sia in una rete di cui ti fidi.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	l'area, la spaziatura e le larghezze delle colonne devono essere numeri, la spaziatura 0 o più e ogni larghezza maggiore di 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Il vetro acquisisce una pagina alla volta. Acquisisci un fronte, capovolgi, poi il retro.
+	The built-in engine (pure Rust)	Il motore integrato (puro Rust)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	L'ordine di calcolo ha {n} voce che non calcola nulla. «Correggi ordine» la rimuove.|L'ordine di calcolo ha {n} voci che non calcolano nulla. «Correggi ordine» le rimuove.
 	the certificate authorities	le autorità di certificazione
 	the certificate expired on {date}	il certificato è scaduto il {date}
@@ -2867,9 +2931,13 @@ calendar weekday	Th	Gi
 	The order saved in the PDF needs tidying	L'ordine salvato nel PDF va riordinato
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Gli originali non vengono modificati. Un file con lo stesso nome nella cartella di destinazione viene mantenuto e il nuovo riceve un numero.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Le altre firme ({names}) segnaleranno che il documento è cambiato dopo la firma. Ricontrollale: nulla garantisce che restino valide.
+	The output folder already holds files of these names; nothing was written: {list}	La cartella di destinazione contiene già file con questi nomi; non è stato scritto nulla: {list}
 	The output folder can't be one of the folders being read, or contain one.	La cartella di destinazione non può essere una delle cartelle lette né contenerne una.
 	The page could not be separated: {error}	Impossibile separare la pagina: {error}
 	The page has changed; select the image again	La pagina è cambiata; seleziona di nuovo l'immagine
+	The page was read again; its words were replaced (undo in the panel)	La pagina è stata riletta; le sue parole sono state sostituite (annullabile nel pannello)
+	The page's words were applied as one undoable step ({n} words)	Le parole della pagina sono state applicate come un solo passaggio annullabile ({n} parole)
+	The page's words were cleared (undo in the panel)	Le parole della pagina sono state cancellate (annullabile nel pannello)
 	The pages already scanned were kept in the document.	Le pagine già acquisite sono state mantenute nel documento.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Le pagine sono state estratte ma non eliminate, perché il documento è cambiato mentre sceglievi una cartella.
 	the password is incorrect	la password non è corretta
@@ -2896,8 +2964,10 @@ calendar weekday	Th	Gi
 	The printer's reply couldn't be understood	La risposta della stampante non è stata compresa
 	The provider's page didn't come back in time. Try again.	La pagina del fornitore non è tornata in tempo. Riprova.
 	The raw text was truncated to what fits.	Il testo grezzo è stato troncato.
+	The re-read found no text; the existing words are unchanged	La rilettura non ha trovato testo; le parole esistenti restano invariate
 	The redaction does not fit page {page}; no pages were marked.	La redazione non rientra nella pagina {page}; nessuna pagina è stata contrassegnata.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	L'URI di reindirizzamento deve essere http://127.0.0.1 o http://localhost con una porta.
+	The region was read again; its words were replaced (undo in the panel)	L'area è stata riletta; le sue parole sono state sostituite (annullabile nel pannello)
 	The release has ambiguous packages. Choose a package on the official release page.	La versione include pacchetti ambigui. Scegli un pacchetto nella pagina ufficiale delle versioni.
 	The release is not a published stable update. Try again later.	Questa versione non è un aggiornamento stabile pubblicato. Riprova più tardi.
 	The replacement file doesn't have that many pages.	Il file sostitutivo non ha così tante pagine.
@@ -2922,10 +2992,12 @@ calendar weekday	Th	Gi
 	The scanner reported a lamp or device error.	Lo scanner ha segnalato un errore della lampada o del dispositivo.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Lo scanner ha segnalato un problema con la carta (inceppamento o più fogli prelevati insieme).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	I pixel per pollice reali dello schermo. Calibra con un righello perché la dimensione effettiva (100%) mostri le pagine alla loro vera dimensione.
+	The searchable copies are written here under the source names	Le copie ricercabili vengono scritte qui con i nomi dei file di origine
 	The security settings don't allow screen readers to read the text	Le impostazioni di sicurezza non consentono ai lettori di schermo di leggere il testo
 	The selected area has been copied ({w} × {h} pixels)	L'area selezionata è stata copiata ({w} × {h} pixel)
 	The selected fields could not be found. Select them again.	I campi selezionati non sono stati trovati. Selezionali di nuovo.
 	The selected redaction is unavailable or invalid.	La redazione selezionata non è disponibile o non è valida.
+	The selected word is gone; choose another	La parola selezionata non esiste più; scegline un'altra
 	The selection changed. Select the signature again.	La selezione è cambiata. Seleziona di nuovo la firma.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	La sessione con {provider} è terminata. Accedi di nuovo da Configura un ID digitale.
 	The shared folder:	La cartella condivisa:
@@ -2969,6 +3041,9 @@ calendar weekday	Th	Gi
 	The smart card's digital IDs couldn't be listed: {e}	Impossibile elencare gli ID digitali della smart card: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	I caratteri standard non possono disegnare “{c}” ({code}). Per ora si possono aggiungere come testo solo caratteri dell'Europa occidentale.
 	The standard it must meet and where the file goes	Lo standard da rispettare e la destinazione del file
+	the tesseract engine is not available in the web build	il motore tesseract non è disponibile nella versione web
+	the tesseract program was not found (install it, or add it to the PATH)	il programma tesseract non è stato trovato (installalo o aggiungilo al PATH)
+	The tesseract program, run as an external process	Il programma tesseract, eseguito come processo esterno
 	The text is the same	Il testo è identico
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	i modelli di riconoscimento del testo non sono installati (reinstalla PdfCraft o imposta PDFCRAFT_MODELS sulla cartella che li contiene)
 	The timestamp authority's certificate was not valid at the time of timestamping.	Il certificato dell'autorità di marcatura temporale non era valido al momento della marcatura.
@@ -3128,6 +3203,7 @@ calendar weekday	Tu	Ma
 	Turn on continuous scrolling	Attiva lo scorrimento continuo
 	Turn upside down (180°)	Capovolgi (ruota di 180°)
 	Turned left	Ruotato a sinistra
+	Turns pages scanned sideways or upside down upright before reading	Raddrizza le pagine scansionate di lato o capovolte prima della lettura
 	two cells would both be named {name}	due celle si chiamerebbero entrambe {name}
 	Two-page view	Visualizzazione doppia
 	Two-sided:	Fronte-retro:
@@ -3146,6 +3222,7 @@ signature pad	Type	Digita
 	Unchecked reads	Letture non verificate
 	Underline text	Sottolinea testo
 	Undid {label}	Annullato: {label}
+	Undo the last review change (Ctrl+Z)	Annulla l'ultima modifica della revisione (Ctrl+Z)
 	Unit	Unità
 	Unknown author	Autore sconosciuto
 	unknown signer	firmatario sconosciuto
@@ -3161,6 +3238,7 @@ signature pad	Type	Digita
 	Unpin {folder}	Rimuovi {folder}
 	Unpinned {tool} from Home	{tool} rimosso dai preferiti della Home
 	Unplaced	Non posizionato
+	unreviewed	non rivista
 	Unsaved changes to this document are saved in the new file too.	Anche le modifiche non salvate di questo documento vengono salvate nel nuovo file.
 	Unsigned signature field	Campo firma non firmato
 	Unsigned signature field: {name}	Campo firma non firmato: {name}
@@ -3198,6 +3276,7 @@ signature pad	Type	Digita
 	Use print production	Usa produzione di stampa
 	Use system setting	Usa impostazioni di sistema
 	Use system title bar	Usa la barra del titolo di sistema
+	Use the chosen engine's reading alone	Usa solo la lettura del motore scelto
 	Use the default	Usa quella predefinita
 	Use this size for saved initials	Usa questa dimensione per le iniziali salvate
 	Use this size for saved signature	Usa questa dimensione per la firma salvata
@@ -3228,6 +3307,9 @@ certificate	Validity starts	Inizio validità
 	Validity unknown	Validità sconosciuta
 	Value is not calculated	Il valore non viene calcolato
 	Value is the	Il valore è
+	Verified	Verificata
+	verified	verificata
+	VERIFIED %	VERIFICATE %
 	Verify	Verifica
 	Verify PDF/UA	Verifica PDF/UA
 	Verify PDF/X	Verifica PDF/X
@@ -3275,14 +3357,17 @@ document scrollbar width	Wide	Larga
 	Will use the feeder.	Userà l’alimentatore.
 	Window Options	Opzioni finestra
 	Windows store  ·  	Archivio Windows  ·  
+	Word	Parola
 	Word count	Conteggio parole
 	Word counting stopped unexpectedly.	Il conteggio delle parole si è interrotto in modo imprevisto.
 	Word count…	Conteggio parole…
 	Words or phrases to redact	Parole o frasi da oscurare
 	Workspace modes	Modalità area di lavoro
 	Write this email?	Scrivere questa email?
+	Writes a new document of visible text; the scan is not changed	Scrive un nuovo documento di testo visibile; la scansione non viene modificata
 	Wrong password	Password errata
 	Wrote 1 file to {dir}	Scritto 1 file in {dir}
+	Wrote {name}	Scritto {name}
 	Wrote {n} files to {dir}	Scritti {n} file in {dir}
 	X Object Forms	Form XObject
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	Modulo XFA: i suoi campi e i dati XFA restano allineati, così gli altri visualizzatori mostrano ciò che compili.
@@ -3358,6 +3443,7 @@ document scrollbar width	Wide	Larga
 	{name} — unsaved changes	{name}: modifiche non salvate
 	{name}: choosing images arrives on the web with file pickers for images	{name}: sul web, la scelta di immagini arriverà con i selettori di file per immagini
 	{name}: the {other} action isn't supported yet	{name}: l'azione {other} non è ancora supportata
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}: {n} parola/e a bassa affidabilità alle pagine {pages}
 	{name}_unsigned.pdf	{name}_senza_firma.pdf
 @plural	{n} byte|{n} bytes	{n} byte|{n} byte
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} calcolo ora usa il nuovo nome.|{n} calcoli ora usano il nuovo nome.
@@ -3394,6 +3480,7 @@ document scrollbar width	Wide	Larga
 	{n} selected	Selezionati: {n}
 	{n} tags	{n} tag
 	{n} word(s) or phrase(s)	Parole o frasi: {n}
+	{n} word(s) to review	{n} parola/e da rivedere
 	{n} {kind}	{kind}: {n}
 	{page} is not a page number or label	{page} non è un numero o un'etichetta di pagina
 	{rule} - {status}	{rule} - {status}

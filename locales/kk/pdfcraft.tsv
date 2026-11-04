@@ -19,6 +19,7 @@
 	 ({s} warnings: {first})	 ({s} ескерту: {first})
 	 on page {p}	 {p}-бетте
 	 · password-protected	 · құпиясөзбен қорғалған
+	+ Dictionary	+ Сөздік
 	+ Page {p}	+ {p}-бет
 	+Bin	+Bin
 	+LOC	+LOC
@@ -38,14 +39,17 @@
 	9 digit, A letter, O letter or digit, X any character	9 — сан, A — әріп, O — әріп немесе сан, X — кез келген таңба
 	; 1 page already had text	; 1 бетте мәтін бұрыннан бар еді
 	; 1 page skipped	; 1 бет өткізіліп жіберілді
+	; cancelled — {n} files were not run	; бас тартылды — {n} файл өңделмеді
 	; corrected {n} pages	; {n} бет түзетілді
 	; failed: {list}	; сәтсіз: {list}
 	; skipped: {n}	; өткізілді: {n}
+	; {n} files already had text	; {n} файлда мәтін бұрыннан болған
 	; {n} pages already had text	; {n} бетте мәтін бұрыннан бар еді
 	; {n} pages skipped	; {n} бет өткізіліп жіберілді
 	? of {n}	?/{n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PR, {commits} коммит, +{added} / −{deleted} жол (Δ {delta}), +{bin_added} / −{bin_deleted} бинарлы ресурс, {first} – {last}
 	`{command}` {when}	`{command}` {when}
+	A 3×3 median filter against scan speckle	Скан дақтарына қарсы 3×3 медиандық сүзгі
 	a bookmark cannot be moved inside itself	бетбелгіні өз ішіне жылжытуға болмайды
 	A button	Түйме
 	A clean-room, open-source PDF application written in Rust. MIT OR Apache-2.0.	Rust тілінде жазылған, clean-room әдісімен әзірленген ашық бастапқы кодты PDF қосымшасы. MIT OR Apache-2.0.
@@ -56,6 +60,7 @@
 	A document needs at least one page: copy instead	Құжатқа кемінде бір бет қажет: орнына көшіріңіз
 	A document timestamp covers the whole file and is no one's signature, so it can't be removed on its own.	Құжаттың уақыт белгісі бүкіл файлды қамтиды және ешкімнің қолтаңбасы емес, сондықтан оны жеке алып тастау мүмкін емес.
 	a field named {name} already exists	{name} атты өріс бар
+	A folder is asked for when a multiple-file run starts	Қалта бірнеше файлды өңдеу басталғанда сұралады
 	A form field has additional actions	Форма өрісінде қосымша әрекеттер бар
 	A link	Сілтеме
 	A local model is not a frontier cloud model: it can be wrong, and a long answer takes its time on CPU. Check anything critical, and mind a model's size against this machine before downloading it.	Жергілікті модель — құздық моделі емес: ол қате жіберуі мүмкін, ал ұзақ жауап процессорда уақыт алады. Маңызды нәрсені тексеріңіз және модельді жүктеп алмас бұрын оның өлшемін осы машинаға салыстырыңыз.
@@ -74,6 +79,8 @@
 	About {app}	{app} туралы
 	about {h} h {m} min left	шамамен {h} сағ {m} мин қалды
 	about {n} min left	шамамен {n} мин қалды
+	Accept	Қабылдау
+	Accept entire page	Бүкіл бетті қабылдау
 	Accepted	Қабылданды
 	Accepted by {printer}	{printer} қабылдады
 	Accessibility Checker	Қолжетімділік тексеруіші
@@ -103,6 +110,7 @@
 	Add a page from template {name}	{name} үлгісінен бет қосу
 	Add a radio button	Ауыстырып қосқыш қосу
 	Add a reply	Жауап қосу
+	Add a second engine's reading when the first is unsure	Бірінші қозғалтқыш сенімсіз болғанда екінші қозғалтқыштың оқуын қосады
 	Add a stamp	Мөр қосу
 	Add a sticky note	Стикер қосу
 	Add a sticky note here	Осында жабысқақ жазба қосу
@@ -238,6 +246,7 @@
 	Alternate text on an element without page content is never reached. Remove it or attach the element to content.	Бет мазмұны жоқ элементтегі балама мәтін ешқашан дауыстап оқылмайды. Оны алып тастаңыз немесе элементті мазмұнға байланыстырыңыз.
 	Alternate text should not hide annotation	Балама мәтін белгілеуді жасырмауы тиіс
 	Alternate text that will never be read	Ешқашан оқылмайтын балама мәтін
+	Always read with both engines and merge the words	Әрқашан екі қозғалтқышпен оқып, сөздерді біріктіреді
 	Always use my default zoom and page layout	Әрқашан әдепкі масштаб пен бет орналасуын пайдалану
 	An action is already running	Бір әрекет қазіргі уақытта орындалуда
 	An action with this name already exists.	Осындай атаумен әрекет әлдеқашан бар.
@@ -315,13 +324,16 @@ calendar date	August	Тамыз
 	Auto portrait/landscape	Автоматты тік/жатық
 	Auto-deskew	Автоматты түзету
 	Auto-detect	Автоматты түрде анықтау
+	Auto-rotate	Автоматты бұру
 	Auto-rotate pages	Беттерді автоматты бұру
 	Auto-size text to fit redaction region	Мәтін өлшемін жасыру аймағына автоматты бейімдеу
+	Automatic	Автоматты
 	Automatic AcroForm scripts are disabled until safe execution isolation is available; saved field values were preserved. Explicit button and console scripts are still available.	Қауіпсіз орындау оқшаулауы болғанша AcroForm автоматты скрипттері өшірулі; сақталған өріс мәндері сол күйінде қалды. Түйме мен консоль скрипттері бұрынғыдай қолжетімді.
 	Automatically rotate sideways and upside-down pages	Бүйіріне немесе төңкеріліп сканерленген беттерді автоматты түрде бұру
 	Automatically tag PDF	PDF-ке тегтерді автоматты қосу
 	Available version: {v}	Қолжетімді нұсқа: {v}
 	average	орташа
+	AVG CONFIDENCE	ОРТАША СЕНІМДІЛІК
 	Back	Артқа
 	Back side only	Тек артқы жағы
 	Back to all tools	Барлық құралдарға оралу
@@ -344,6 +356,7 @@ calendar date	August	Тамыз
 	Best for: the deepest reasoning this family has	Ең жақсы: осы отбасындағы ең терең ойлау
 	Beveled	Қиғаш
 	Bicubic downsampling to	Бикубтық төмендету
+	Binarize	Бинарлау
 	Binding	Тігілуі
 	Binding:	Тігу жағы:
 	Black on white	Ақ фонда қара
@@ -358,6 +371,7 @@ calendar date	August	Тамыз
 	Bookmarks Panel and Page	Бетбелгілер панелі және бет
 	Border Color:	Жиек түсі:
 	Borders and Colors	Жиектер мен түстер
+	Both engines, combined as the Strategy says	Екі қозғалтқыш та, таңдалған стратегия бойынша біріктірілген
 	Box	Аумақ
 	Brightness	Жарықтық
 	Bring All to Front	Барлығын алдыға шығару
@@ -385,6 +399,7 @@ calendar date	August	Тамыз
 	Cancel reverse sides	Артқы жақтарды болдырмау
 	Canceling…	Бас тартылуда…
 	Cancelled	Бас тартылды
+	Cancelled — {n} words were read on {m} of {t} pages; the rest were not read	Бас тартылды — {t} беттің {m} бетінде {n} сөз оқылды; қалғаны оқылмады
 	Cancelling…	Бас тартылуда…
 	Card driver (PKCS #11)	Карта драйвері (PKCS #11)
 	Card PIN	Картаның PIN коды
@@ -502,6 +517,7 @@ calendar date	August	Тамыз
 	Clear selection / close find	Таңдауды тазалау / іздеуді жабу
 	Clear the jam and load the remaining sheets squarely, then choose Continue.	Қысылған қағазды алып, қалған парақтарды тегіс салыңыз, содан кейін «Сканерлеуді жалғастыру» таңдаңыз.
 	Clear the jam and load the sheets squarely, then choose Try again.	Қысылған қағазды алып, парақтарды тегіс салыңыз, содан кейін «Қайта көру» таңдаңыз.
+	Click a word to inspect it; drag a rectangle to re-read part of the page	Сөзді тексеру үшін оны басыңыз; беттің бір бөлігін қайта оқу үшін тіктөртбұрыш сызыңыз
 	Click on the page to add a {tool}, or drag to set its size	{tool} қосу үшін бетке шертіңіз немесе өлшемін орнату үшін сүйреңіз
 	Click on the page to add text; each click starts a new box, and ✓ finishes. Drag items to move them, drag a corner to resize, double-click text to edit it.	Мәтін қосу үшін бетті шертіңіз; әр шерту жаңа жәшік бастайды, ✓ аяқтайды. Элементтерді жылжыту үшін сүйреңіз, өлшемін өзгерту үшін бұрышынан тартыңыз, мәтінді түзету үшін қос шертіңіз.
 	Click text or an image to edit it	Түзету үшін мәтінге немесе кескінге шертіңіз
@@ -576,6 +592,8 @@ calendar date	August	Тамыз
 	Compress and export	Сығу және экспорттау
 	Compress document structure (object streams)	Құжат құрылымын сығу (нысан ағындары)
 	Compressing combined PDF…	Біріктірілген PDF сығылуда…
+	CONFIDENCE	СЕНІМДІЛІК
+	Confidence weighted	Сенімділікпен өлшенген
 	Configure a Digital ID for Signing	Қол қоюға арналған цифрлық ID теңшеу
 	Configure New Digital ID	Жаңа цифрлық ID теңшеу
 	Confirm Password	Құпиясөзді растау
@@ -614,8 +632,11 @@ calendar date	August	Тамыз
 	Copyright status	Авторлық құқық күйі
 	Copyrighted	Авторлық құқықпен қорғалған
 	Correct recognized text	Танылған мәтінді түзету
+	Correct recognized text…	Танылған мәтінді түзету…
 	Correct scans	Скандарды түзету
+	corrected	түзетілді
 	Corrected scan	Түзетілген скан
+	Corrected text (Enter commits)	Түзетілген мәтін (Enter растайды)
 	Could not copy the selection because text could not be read on every page	Барлық беттегі мәтін оқылмағандықтан, таңдалған мәтінді көшіру мүмкін болмады
 	Could not mark the selection because text could not be read on every page	Барлық беттегі мәтін оқылмағандықтан, таңдалған мәтінді белгілеу мүмкін болмады
 	Could not save: {e}	Сақтау мүмкін болмады: {e}
@@ -766,8 +787,10 @@ key	Delete	Delete
 	Delete XMP metadata	XMP метадеректерін жою
 	Delete {o}	{o} жою
 	Deleted page	Жойылған бет
+	Denoise	Шуды азайту
 	Describe the figure	Суретті сипаттаңыз
 	Description writer	Сипаттама авторы
+	Deskew	Қисықтықты түзету
 	Detached signature file	Бөлек қолтаңба файлы
 	Detect form fields	Форма өрістерін анықтау
 	Detected 1 form field	1 форма өрісі анықталды
@@ -920,6 +943,7 @@ comment menu	Edit	Түзету
 	Edit text…	Мәтінді түзету…
 	Edit this PDF	Осы PDF файлын түзету
 	Edit {field}'s formula	{field} формуласын өңдеу
+	Editable text	Өңделетін мәтін
 	Editorial	Editorial
 	Email Address	Электрондық пошта мекенжайы
 	Email Addresses	Электрондық пошта адрестері
@@ -939,6 +963,7 @@ comment menu	Edit	Түзету
 key	End	End
 	End entity	Соңғы субъект
 	Endpoints	Шеткі нүктелер
+	ENGINE · STRATEGY	ҚОЗҒАЛТҚЫШ · СТРАТЕГИЯ
 	Enhance camera image	Камера суретін жақсарту
 	Enhance page	Бетті жақсарту
 	Enhance scanned file	Сканерленген файлды жақсарту
@@ -1026,6 +1051,7 @@ key	Esc	Esc
 	Extract the selected pages…	Таңдалған беттерді шығарып алу…
 	Extracted 1 page	1 бет шығарып алынды
 	Extracted {n} pages	{n} бет шығарып алынды
+	F8: next word to review; Shift+F8 goes back	F8: тексерілетін келесі сөз; Shift+F8 артқа қайтарады
 	Failed	Сәтсіз
 scroll speed	Fast	Жылдам
 	Fast Web View	Жылдам веб-қарау
@@ -1142,6 +1168,7 @@ calendar date	February	Ақпан
 	Fonts must map their characters to Unicode so text can be read and copied. Fix the fonts or recreate the PDF.	Қаріптер таңбаларын Unicode-қа сәйкестендіруі тиіс, сонда мәтінді оқуға және көшіруге болады. Қаріптерді жөндеңіз немесе PDF-ті қайта жасаңыз.
 	for images above	мұнан асатын кескіндер үшін
 	For page sizes and margins.	Бет өлшемдері мен шеттері үшін.
+	Force OCR (override skip options)	OCR-ды мәжбүрлеу (өткізіп жіберу параметрлерін елемеу)
 	Form data and PDF forms	Форма деректері және PDF формалары
 	Form field advice	Пішін өрістеріне кеңес
 	Form field detection is already running	Пішін өрістерін анықтау орындалып жатыр
@@ -1221,6 +1248,7 @@ calendar date	February	Ақпан
 	Hide window controls	Терезе басқару элементтерін жасыру
 	Hide {app}	{app} жасыру
 	Hides annotation	Белгілеуді жасырады
+	HIGH (>= 90%)	ЖОҒАРЫ (>= 90%)
 	Higher image quality trades off against smaller file size. A copy is saved only if it is smaller.	Кескін сапасы жоғары болса, файл көлемі де үлкен болады. Көшірме тек көлемі кішірейсе сақталады.
 	Higher quality, usually larger files. JPEG photos above 450 ppi are reduced to 300 ppi, quality 85. Lossless graphics and masked images keep their pixels.	Сапасы жоғары, әдетте көлемі үлкен файлдар. 450 ppi-ден жоғары JPEG фотосуреттері 300 ppi-ге дейін, сапасы 85 болып кішірейтіледі. Шығынсыз графика мен маскасы бар кескіндер өз пиксельдерін сақтайды.
 	Highlight	Бояп белгілеу
@@ -1252,6 +1280,7 @@ key	Home	Home
 	Importing data arrives on the web with file pickers for data files	Деректерді импорттау веб-нұсқада деректер файлдарын таңдау мүмкіндігімен келеді
 	Import…	Импорттау…
 	In multiple files	Бірнеше файлда
+	In multiple files: a file with any text is its own skipped bucket, and nothing is written for it	Бірнеше файлда: мәтіні бар файл бөлек өткізілген ретінде есептеледі және ол үшін ештеңе жазылмайды
 	In new window	Жаңа терезеде
 	In streams that use LZW encoding, use Flate instead	LZW кодталған ағындарда оның орнына Flate қолдану
 	In this file	Осы файлда
@@ -1424,8 +1453,10 @@ calendar date	June	Маусым
 	Looking for PDFs…	PDF файлдары ізделуде…
 	Looking for printers…	Принтерлер ізделуде…
 	Loop	Цикл
+	LOW (< 70%)	ТӨМЕН (< 70%)
 	Low resolution	Төмен ажыратымдылық
 	Low Resolution (150 dpi)	Төмен ажыратымдылық (150 dpi)
+	LOW-CONFIDENCE WORDS	СЕНІМДІЛІГІ ТӨМЕН СӨЗДЕР
 	Lowering this forgets the oldest files. At 0 there is no list.	Lowering this forgets the oldest files. At 0 there is no list.
 	Make accessible	Қолжетімді ету
 	Make Current Properties Default	Ағымдағы сипаттарды әдепкі етіп орнату
@@ -1451,6 +1482,7 @@ calendar date	March	Наурыз
 	Mark for redaction	Жасыру үшін белгілеу
 	Mark Page Range	Беттер ауқымын белгілеу
 	Mark pages for redaction	Беттерді жасыру үшін белгілеу
+	Mark this page as reviewed (Ctrl+T)	Бұл бетті тексерілген деп белгілеу (Ctrl+T)
 	Mark with checkmark	Белгі қою
 	Marked	Ерекшеленген
 	Marks do not remove content. Select Redact all, then save.	Белгілер мазмұнды жоймайды. «Барлығын жасыру» пәрменін таңдап, файлды сақтаңыз.
@@ -1474,6 +1506,7 @@ calendar date	May	Мамыр
 	Measurement information	Өлшеу ақпараты
 	Measurement snapping	Өлшеуді түйістіру
 	Measuring tool	Өлшеу құралы
+	MEDIUM (70-89%)	ОРТАША (70-89%)
 	Menu	Мәзір
 	Merge all windows	Барлық терезелерді біріктіру
 	Merge data files into spreadsheet…	Деректер файлдарын электронды кестеге біріктіру…
@@ -1569,6 +1602,7 @@ calendar date	May	Мамыр
 	Next month	Келесі ай
 	Next sheet	Келесі парақ
 	Next tab	Келесі қойынды
+	Next uncertain	Келесі күмәнді
 	Next view	Келесі көрініс
 	Night	Түн
 	No actions	Әрекеттер жоқ
@@ -1675,6 +1709,8 @@ calendar date	November	Қараша
 	Number pages	Беттерді нөмірлеу
 	Number pages…	Беттерді нөмірлеу…
 	Numbered list	Нөмірленген тізім
+	OCR complete — no text recognized on this page.	OCR аяқталды — бұл бетте мәтін танылмады.
+	OCR results rejected.	OCR нәтижелері қабылданбады.
 	October	Қазан
 calendar date	October	Қазан
 	Odd pages	Тақ беттер
@@ -1793,6 +1829,7 @@ animation effects	On	Қосулы
 	Output preview	Шығысты алдын ала көру
 	Owner password (no restrictions apply)	Иелік құпиясөзі (шектеулер қолданылмайды)
 	Package: {name}	Пакет: {name}
+	PAGE	БЕТ
 	Page background	Бет фоны
 	Page Content	Бет мазмұны
 	Page display	Беттерді көрсету
@@ -1816,6 +1853,7 @@ animation effects	On	Қосулы
 	Page thumbnails panel	Бет нобайлары панелі
 	Page tools	Бет құралдары
 	Page transitions	Бет ауысуы
+	Page verified	Бет тексерілді
 	Page will not cause screen flicker	Бет экранның жыпылықтауын тудырмайды
 	Page {label}	Бет {label}
 	Page {old} → Page {new}	{old}-бет → {new}-бет
@@ -1836,6 +1874,7 @@ animation effects	On	Қосулы
 	Pages to Print	Басып шығарылатын беттер
 	Pages whose text couldn't be read: {n}. A match on them isn't listed.	Мәтінін оқу мүмкін болмаған беттер: {n}. Олардағы сәйкестіктер тізімде жоқ.
 	Pages with links, comments or fields should tab in structure order. The fix sets each page's tab order to Use Document Structure.	Сілтемелері, түсініктемелері немесе өрістері бар беттер құрылым ретімен табуляциялануы тиіс. Түзету әр беттің Tab ретін «Құжат құрылымын пайдалану» деп орнатады.
+	Pages with renderable text are left alone and reported as skipped	Көрсетілетін мәтіні бар беттер өзгертілмейді және өткізілген деп хабарланады
 	Pages {pages} changed after the background was added, so their own white backdrops stay off. They look the same on white paper.	Фон қосылғаннан кейін өзгерген беттер, сондықтан олардың өз ақ толтырулары өшірулі қалады: {pages}. Ақ қағазда бірдей көрінеді.
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Өз ақ толтыруы фонды жасыратын беттер: {pages}. Ауыстыру
 	Pages:	Беттер:
@@ -1955,8 +1994,10 @@ animation effects	On	Қосулы
 	Previous month	Алдыңғы ай
 	Previous sheet	Алдыңғы парақ
 	Previous tab	Алдыңғы қойынды
+	Previous uncertain	Алдыңғы күмәнді
 	Previous view	Алдыңғы көрініс
 	Primary language	Негізгі тіл
+	Primary only	Тек негізгі
 	Print ({key})	Басып шығару ({key})
 	Print as image	Сурет ретінде басып шығару
 	Print in grayscale	Сұр түспен басып шығару
@@ -2002,6 +2043,8 @@ animation effects	On	Қосулы
 	RAM {gb} GB	Жад {gb} ГБ
 	Rating	Бағалау
 	Raw:	Бастапқы:
+	Re-OCR entire page	Бүкіл бетке OCR-ды қайталау
+	Re-OCR this region	Осы аймаққа OCR-ды қайталау
 	Re-type Password	Құпиясөзді қайта енгізіңіз
 	Read	Оқу
 	Read mode	Оқу режимі
@@ -2013,6 +2056,7 @@ animation effects	On	Қосулы
 	Read out loud requires Windows, macOS or Linux.	Дауыстап оқу үшін әзірге Windows / macOS / Linux қажет.
 	Read this page only	Тек осы бетті оқу
 	Read to end of document	Құжаттың соңына дейін оқу
+	Read {n} words on {m} of {t} pages	{t} беттің {m} бетінде {n} сөз оқылды
 	Reading colours	Оқу түстері
 	Reading options…	Оқу параметрлері…
 	Reading page {page}…	{page}-бетті оқу…
@@ -2021,6 +2065,7 @@ animation effects	On	Қосулы
 	Reading the printer's settings…	Принтер параметрлері оқылуда…
 	Reading the raw document…	Бастапқы құжат оқылуда…
 	Reading theme	Оқу тақырыбы
+	Reads pages and files even where the skip options would leave them alone	Өткізіп жіберу параметрлері өткізетін жерде де беттер мен файлдарды оқиды
 	Reads {names}, which read it back. No order can fix a loop: change one of the formulas.	{names} өрістерін оқиды, олар оны қайта оқиды. Ешбір рет циклды түзете алмайды: формулалардың бірін өзгертіңіз.
 	Reads {name}, which calculates later, so it shows an old value.	{name} өрісін оқиды, ол кейінірек есептеледі, сондықтан ескі мәнді көрсетеді.
 	Reads {name}, which the form doesn't have, so it gets no value there.	{name} өрісін оқиды, бірақ ол пішінде жоқ, сондықтан одан мән алмайды.
@@ -2039,6 +2084,8 @@ animation effects	On	Қосулы
 	Recognize Text…	Мәтінді тану…
 	Recognize text…	Мәтінді тану…
 	Recognized 1 word	1 сөз танылды
+	Recognized text	Танылған мәтін
+	Recognized text applied ({n} words, one undoable step)	Танылған мәтін қолданылды ({n} сөз, болдырмауға болатын бір қадам)
 	Recognized {n} words	{n} сөз танылды
 	Recognized {w} words in 1 file	1 файлда {w} сөз танылды
 	Recognized {w} words in {n} files	{n} файлда {w} сөз танылды
@@ -2071,6 +2118,8 @@ animation effects	On	Қосулы
 	Refresh plugins	Плагиндерді жаңарту
 	Region in inches. Leave the width or the height at zero to scan the whole area.	Аймақ дюйммен. Толық аумақ үшін ені немесе биіктігін нөл қалдырыңыз.
 	Regularity	Біркелкілік
+	Reject	Қабылдамау
+	Reject entire page	Бүкіл бетті қабылдамау
 	Rejected	Қабылданбады
 	Release notes	Шығарылым ескертпелері
 	Reliable character encoding is provided	Сенімді таңбаларды кодтау қамтамасыз етілген
@@ -2111,6 +2160,7 @@ animation effects	On	Қосулы
 	Remove {name} from Recent	{name} дегенді соңғылардан алып тастау
 	Remove {n} files	{n} файлды алып тастау
 	Remove {n} pages	{n} бетті алып тастау
+	removed	жойылды
 	Removed 1 hidden item. Save to remove them from the file.	1 жасырын элемент жойылды. Оны файлдан алып тастау үшін сақтаңыз.
 	Removed 1 link	1 сілтеме жойылды
 	Removed the signature {field} and kept its empty field	{field} қолтаңбасы алып тасталды, бос өрісі сақталды
@@ -2222,12 +2272,14 @@ animation effects	On	Қосулы
 	Rotate view clockwise	Көріністі сағат тілінің бағытымен бұру
 	Rotate view clockwise ({key})	Көріністі сағат тілінің бағытымен бұру ({key})
 	Rotate view counterclockwise	Көріністі сағат тіліне қарсы бұру
+	ROVER vote	ROVER дауыс беруі
 	Row spacing	Жолдар аралығы
 	Rulers	Сызғыштар
 	Run	Орындау
 	Run a JavaScript	JavaScript орындау
 	Run form script	Форма сценарийін орындау
 	Run JavaScript	JavaScript орындау
+	Run OCR	OCR іске қосу
 	Running action… file {d} of {t}	Әрекет орындалуда… файл {d}/{t}
 	Runtime	Runtime
 	Safety margin (pt)	Қорғаныш жиегі (пт)
@@ -2238,6 +2290,7 @@ animation effects	On	Қосулы
 	Sanitize Documents	Құжаттарды тазарту
 	Sanitize document…	Құжатты тазарту…
 	Sanitizing removes hidden information from the document: metadata, file attachments, comments, form fields (flattened), hidden text and layers, bookmarks, links, actions and scripts, and private application data.	Тазарту құжаттан жасырын ақпаратты жояды: метадеректер, файл тіркемелері, түсініктемелер, форма өрістері (жазықталады), жасырын мәтін мен қабаттар, бетбелгілер, сілтемелер, әрекеттер мен сценарийлер, сондай-ақ қосымшаның жеке деректері.
+	Sauvola binarization: ink to black, paper to white	Sauvola бинарлауы: сия қара, қағаз ақ болады
 	Save & Close	Сақтау және жабу
 	Save (M4)	Сақтау (M4)
 	Save ({key})	Сақтау ({key})
@@ -2358,6 +2411,7 @@ animation effects	On	Қосулы
 	Select a placed signature first	Алдымен орналастырылған қолтаңбаны таңдаңыз
 	Select a text box or an image first	Алдымен мәтін жәшігін немесе кескінді таңдаңыз
 	Select a word	Сөзді таңдау
+	Select a word on the page to inspect it	Тексеру үшін беттегі сөзді таңдаңыз
 	Select Action:	Әрекетті таңдаңыз:
 	Select all pages (Organize)	Барлық беттерді таңдау (Ұйымдастыру)
 	Select at least one other page.	Кемінде бір басқа бетті таңдаңыз.
@@ -2428,6 +2482,7 @@ calendar date	September	Қыркүйек
 	Set to current page ({n})	Ағымдағы бетке орнату ({n})
 	Set to zero	Нөлге орнату
 	Settings this source offers. Leave a control alone to keep the driver’s value.	Осы дереккөз ұсынатын параметрлер. Драйвер мәнін сақтау үшін басқаруды қозғамаңыз.
+	Several files have the same name, so their results would overwrite each other; nothing was written: {list}	Бірнеше файлдың аты бірдей, сондықтан олардың нәтижелері бірін-бірі қайта жазар еді; ештеңе жазылмады: {list}
 	SHA-1 digest	SHA-1 хеші
 	SHA-256 digest	SHA-256 хеші
 	Shadings	Градиенттер
@@ -2438,6 +2493,7 @@ calendar date	September	Қыркүйек
 key	Shift	Shift
 	Shift constrains to 45 degrees. Backspace removes a vertex. Escape cancels.	Shift бұрышты 45 градусқа шектейді. Backspace шыңды алып тастайды. Escape — бас тарту.
 	Shift drags freely	Shift еркін жылжытады
+	Shift+F8: the previous word to review	Shift+F8: тексерілетін алдыңғы сөз
 	Shift- or Ctrl/Command-click to select several fields.	Бірнеше өрісті таңдау үшін Shift немесе Ctrl/Command басып шертіңіз.
 	Shift-click to select several objects. Drag empty space to select an area.	Бірнеше объектіні таңдау үшін Shift басып шертіңіз. Ауданды таңдау үшін бос орынды сүйреңіз.
 	ships in milestone {m}	{m} кезеңінде шығады
@@ -2524,8 +2580,11 @@ key	Shift	Shift
 	Single page	Бір бет
 	Single Page Continuous	Бір бет, үздіксіз
 	Single word or phrase	Жалғыз сөз немесе тіркес
+	Skip files that already have text	Мәтіні бар файлдарды өткізіп жіберу
+	Skip pages that already have text	Мәтіні бар беттерді өткізіп жіберу
 	Skip Rule	Ережені өткізіп жіберу
 	Skipped	Өткізілді
+	skipped	өткізілді
 	Slash	Қиғаш сызық
 scroll speed	Slow	Баяу
 	Smaller files for screens and email. Images above 225 ppi are reduced to 150 ppi, JPEG quality 60; line art may lose detail.	Экран мен электрондық поштаға арналған шағын файлдар. 225 ppi-ден жоғары кескіндер 150 ppi-ге дейін, JPEG сапасы 60 болып кішірейтіледі; сызбалардың кейбір бөлшектері жоғалуы мүмкін.
@@ -2550,6 +2609,7 @@ scroll speed	Slow	Баяу
 	Sort items	Элементтерді сұрыптау
 	sorted ascending	өсу ретімен сұрыпталған
 	sorted descending	кему ретімен сұрыпталған
+	Source page	Бастапқы бет
 key	Space	Бос орын
 	Space Audit	Кеңістікті пайдалану аудиті
 	Spacing between copies	Көшірмелер арасындағы аралық
@@ -2582,12 +2642,14 @@ action wizard	Start	Бастау
 	Start page number	Бастапқы бет нөмірі
 	Steps	Қадамдар
 	Sticky note	Жапсырма жазба
+	still checking whether the tesseract program can run; try again in a moment	tesseract бағдарламасы іске қосыла ала ма, әлі тексерілуде; біраздан кейін қайталап көріңіз
 	Still printing; the job continues on the printer	Басып шығару жалғасуда; тапсырма принтерде орындалуда
 	Stop	Тоқтату
 	Stop reading	Оқуды тоқтату
 	Straighten scanned page	Сканерленген бетті түзету
 	Straighten skewed scans	Қиғаш скандарды түзету
 	Straighten the page	Бетті түзету
+	Straightens skewed text lines before reading	Оқу алдында қисайған мәтін жолдарын түзейді
 	Strength: {s}	Беріктігі: {s}
 	Strikethrough text	Мәтінді сызып тастау
 	String length (0 turns it off)	Жіптің ұзындығы (0 өшіреді)
@@ -2599,6 +2661,7 @@ certificate	Subject	Субъект
 	Submit PDF document	PDF құжатын жіберу>>>>>>> aa26fd07 (M6: reconcile integration with current main)
 	Subscript	Төменгі индекс
 	Suggest edits	Өзгерістерді ұсыну
+	Suggestions	Ұсыныстар
 	sum (+)	қосындысы (+)
 	Summarize	Түйіндеу
 	Summarize comments	Түсініктемелерді қорытындылау
@@ -2673,11 +2736,13 @@ certificate	Subject	Субъект
 	Thai and Arabic use regular fallback fonts when available.	Тай және араб тілдері қолжетімді болса, қалыпты қосалқы қаріптерді пайдаланады.
 	That didn't work: an internal error stopped it ({m}).	Болмады: ішкі қате әрекетті тоқтатты ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Әрекет сәтсіз аяқталды: оны ішкі қате тоқтатты ({m}). Құжаттарыңыз өзгеріссіз.
+	That is the source file; choose another destination	Бұл — бастапқы файл; басқа орынды таңдаңыз
 	That length can't be right for this line: check the unit.	Бұл ұзындық осы сызыққа сай келмейді: өлшем бірлігін тексеріңіз.
 	The answer proposes formatting changes.	Жауап пішім өзгерістерін ұсынады.
 	The answer stopped unexpectedly.	Жауап күтпеген жерден тоқтады.
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API кілті осы мекенжайға шифрланбай жіберіледі. Сервер сенімді желіде болмаса, https:// пайдаланыңыз.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Әйнек бір уақытта бір бет сканерлейді. Алдыңғысын сканерлеп, аударып, артқысын сканерлеңіз.
+	The built-in engine (pure Rust)	Кірістірілген қозғалтқыш (таза Rust)
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Есептеу ретінде ештеңе есептемейтін {n} жазба бар. «Ретті түзету» оны жояды.|Есептеу ретінде ештеңе есептемейтін {n} жазба бар. «Ретті түзету» оларды жояды.
 	the certificate authorities	куәландыру орталықтары
 	the certificate expired on {date}	сертификаттың мерзімі {date} күні аяқталды
@@ -2755,9 +2820,13 @@ certificate	Subject	Субъект
 	The order saved in the PDF needs tidying	PDF-те сақталған ретті ретке келтіру керек
 	The originals are not changed. A file of the same name in the output folder is kept, and the new one gets a number.	Түпнұсқалар өзгермейді. Шығыс қалтасындағы аттас файл сақталады, ал жаңасына нөмір беріледі.
 	The other signatures ({names}) will report that the document changed after they signed. Check them again: nothing says they stay valid.	Басқа қолтаңбалар ({names}) құжат қол қойылғаннан кейін өзгергенін хабарлайды. Оларды қайта тексеріңіз: жарамды болып қалатынына кепілдік жоқ.
+	The output folder already holds files of these names; nothing was written: {list}	Шығыс қалтасында осындай аттары бар файлдар бар; ештеңе жазылмады: {list}
 	The output folder can't be one of the folders being read, or contain one.	Шығыс қалтасы оқылатын қалталардың бірі бола алмайды және олардың ешбірін қамти алмайды.
 	The page could not be separated: {error}	Бетті түстерге бөлу мүмкін болмады: {error}
 	The page has changed; select the image again	Бет өзгерді; суретті қайта таңдаңыз
+	The page was read again; its words were replaced (undo in the panel)	Бет қайта оқылды; оның сөздері ауыстырылды (панельде болдырмауға болады)
+	The page's words were applied as one undoable step ({n} words)	Беттің сөздері болдырмауға болатын бір қадам ретінде қолданылды ({n} сөз)
+	The page's words were cleared (undo in the panel)	Беттің сөздері тазартылды (панельде болдырмауға болады)
 	The pages already scanned were kept in the document.	Сканерленген беттер құжатта сақталды.
 	The pages were extracted but not deleted, because the document changed while you were choosing a folder.	Беттер шығарып алынды, бірақ жойылмады, себебі сіз қалта таңдап жатқанда құжат өзгерді.
 	the password is incorrect	құпиясөз дұрыс емес
@@ -2782,8 +2851,10 @@ certificate	Subject	Субъект
 	The printer's reply couldn't be understood	Принтер жауабы түсініксіз болды
 	The provider's page didn't come back in time. Try again.	Провайдер беті уақытында оралмады. Қайталап көріңіз.
 	The raw text was truncated to what fits.	Бастапқы мәтін қысқартылды.
+	The re-read found no text; the existing words are unchanged	Қайта оқу мәтін таппады; бар сөздер өзгертілмеді
 	The redaction does not fit page {page}; no pages were marked.	Өшіру {page} бетіне сыймайды; ешбір бет белгіленбеді.
 	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Қайта бағыттау URI-і порты бар http://127.0.0.1 немесе http://localhost болуы керек.
+	The region was read again; its words were replaced (undo in the panel)	Аймақ қайта оқылды; оның сөздері ауыстырылды (панельде болдырмауға болады)
 	The release has ambiguous packages. Choose a package on the official release page.	Бұл шығарылымда бірнеше түрлі пакет бар. Ресми шығарылым бетінен пакет таңдаңыз.
 	The release is not a published stable update. Try again later.	Бұл шығарылым жарияланған тұрақты жаңарту емес. Кейінірек қайталап көріңіз.
 	The replacement file doesn't have that many pages.	Ауыстырғыш файлда соншалық бет жоқ.
@@ -2806,9 +2877,11 @@ certificate	Subject	Субъект
 	The scanner reported a lamp or device error.	Сканер шам немесе құрылғы қатесі туралы хабарлады.
 	The scanner reported a paper problem (a jam or several sheets fed together).	Сканер қағазға байланысты ақау туралы хабарлады (қағаз қысылды немесе бірнеше парақ бірге алынды).
 	The screen's own pixels per inch. Calibrate with a ruler so that Actual size (100%) shows pages at their real size.	Экранның бір дюймдегі нақты пиксель саны. Нақты өлшем (100%) беттерді шын өлшемінде көрсетуі үшін сызғышпен калибрлеңіз.
+	The searchable copies are written here under the source names	Іздеуге болатын көшірмелер осында бастапқы файлдардың аттарымен жазылады
 	The selected area has been copied ({w} × {h} pixels)	Таңдалған аймақ көшірілді ({w} × {h} пиксель)
 	The selected fields could not be found. Select them again.	Таңдалған өрістер табылмады. Оларды қайта таңдаңыз.
 	The selected redaction is unavailable or invalid.	Таңдалған өшіру қолжетімсіз немесе жарамсыз.
+	The selected word is gone; choose another	Таңдалған сөз енді жоқ; басқасын таңдаңыз
 	The selection changed. Select the signature again.	Таңдау өзгерді. Қолтаңбаны қайта таңдаңыз.
 	The session with {provider} has ended. Sign in again from Configure a Digital ID.	{provider} сеансы аяқталды. «Цифрлық ID-ді баптау» арқылы қайта кіріңіз.
 	The shared folder:	Ортақ қалта:
@@ -2826,6 +2899,9 @@ certificate	Subject	Субъект
 	the signing service rejected the user name or password	қолтаңба қызметі пайдаланушы атын немесе құпиясөзді қабылдамады
 	The smart card's digital IDs couldn't be listed: {e}	Смарт-картаның цифрлық ID-лерін тізімдеу мүмкін болмады: {e}
 	The standard it must meet and where the file goes	Қанағаттандыруы тиіс стандарт және файлдың бағыты
+	the tesseract engine is not available in the web build	tesseract қозғалтқышы веб нұсқасында қолжетімді емес
+	the tesseract program was not found (install it, or add it to the PATH)	tesseract бағдарламасы табылмады (оны орнатыңыз немесе PATH-қа қосыңыз)
+	The tesseract program, run as an external process	Сыртқы процесс ретінде іске қосылатын tesseract бағдарламасы
 	The text is the same	Мәтін бірдей
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	мәтінді тану модельдері орнатылмаған (PdfCraft қайта орнатыңыз немесе PDFCRAFT_MODELS айнымалысына олар жатқан қалтаны көрсетіңіз)
 	The title in the metadata and the document information differ	Метадеректер мен құжат ақпаратындағы тақырыптар сәйкес келмейді
@@ -2969,6 +3045,7 @@ certificate	Subject	Субъект
 	Turn on continuous scrolling	Үздіксіз айналдыруды қосу
 	Turn upside down (180°)	Төңкеру (180°)
 	Turned left	Солға бұрылған
+	Turns pages scanned sideways or upside down upright before reading	Бүйірінен немесе төңкеріліп сканерленген беттерді оқу алдында тік қояды
 	two cells would both be named {name}	екі ұяшықтың да атауы {name} болар еді
 	Two-page view	Екі беттік көрініс
 	Two-sided:	Екі жақты:
@@ -2987,6 +3064,7 @@ signature pad	Type	Теру
 	Unchecked reads	Тексерілмеген оқулар
 	Underline text	Мәтінді астын сызу
 	Undid {label}	Болдырылды: {label}
+	Undo the last review change (Ctrl+Z)	Соңғы тексеру өзгерісін болдырмау (Ctrl+Z)
 	Unit	Өлшем бірлігі
 	Unknown author	Белгісіз автор
 	unknown signer	белгісіз қол қоюшы
@@ -3002,6 +3080,7 @@ signature pad	Type	Теру
 	Unpin {folder}	{folder} бекітпесін алып тастау
 	Unpinned {tool} from Home	{tool} басты беттен ажыратылды
 	Unplaced	Орналастырылмаған
+	unreviewed	тексерілмеген
 	Unsaved changes	Сақталмаған өзгерістер
 	Unsaved changes to this document are saved in the new file too.	Осы құжаттағы сақталмаған өзгерістер де жаңа файлға сақталады.
 	Unsupported measurements	Қолдау көрсетілмейтін өлшемдер
@@ -3038,6 +3117,7 @@ signature pad	Type	Теру
 	Use print production	Басып шығаруға дайындауды пайдалану
 	Use system setting	Жүйе параметрін пайдалану
 	Use system title bar	Жүйелік тақырып жолағын пайдалану
+	Use the chosen engine's reading alone	Тек таңдалған қозғалтқыштың оқуын пайдалану
 	Use the default	Әдепкісін пайдалану
 	Use this size for saved initials	Сақталған бас әріптер үшін осы өлшемді пайдалану
 	Use this size for saved signature	Сақталған қолтаңба үшін осы өлшемді пайдалану
@@ -3064,6 +3144,9 @@ signature pad	Type	Теру
 	Validity unknown	Жарамдылығы белгісіз
 	Value is not calculated	Мән есептелмейді
 	Value is the	Мән —
+	Verified	Тексерілді
+	verified	тексерілді
+	VERIFIED %	ТЕКСЕРІЛДІ %
 	Verify	Тексеру
 	Verify PDF/UA	PDF/UA тексеру
 	Verify PDF/X	PDF/X тексеру
@@ -3110,14 +3193,17 @@ document scrollbar width	Wide	Кең
 	Window	Терезе
 	Window Options	Терезе параметрлері
 	Windows store  ·  	Windows қоймасы  ·  
+	Word	Сөз
 	Word count	Сөздер саны
 	Word counting stopped unexpectedly.	Сөздерді санау күтпеген жерден тоқтады.
 	Word count…	Сөздер саны…
 	Words or phrases to redact	Жасырылатын сөздер немесе сөз тіркестері
 	Workspace modes	Жұмыс кеңістігінің режимдері
 	Write this email?	Бұл email жазылсын ба?
+	Writes a new document of visible text; the scan is not changed	Көрінетін мәтіні бар жаңа құжат жазады; скан өзгермейді
 	Wrong password	Құпиясөз дұрыс емес
 	Wrote 1 file to {dir}	1 файл {dir} ішіне жазылды
+	Wrote {name}	{name} жазылды
 	Wrote {n} files to {dir}	{n} файл {dir} ішіне жазылды
 	X Object Forms	XObject формалары
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA формасы: өрістері мен XFA деректері өзара синхрондалып тұрады, сондықтан басқа қарау құралдары да сіз енгізген мәндерді көрсетеді.
@@ -3190,6 +3276,7 @@ document scrollbar width	Wide	Кең
 	{name} — unsaved changes	{name} — сақталмаған өзгерістер
 	{name}: choosing images arrives on the web with file pickers for images	{name}: суреттерді таңдау веб-нұсқада сурет файлдарын таңдау мүмкіндігімен келеді
 	{name}: the {other} action isn't supported yet	{name}: {other} әрекеті әлі қолдау көрсетілмейді
+	{name}: {n} low-confidence word(s) on pages {pages}	{name}: {pages} беттерінде сенімділігі төмен {n} сөз
 	{name}_unsigned.pdf	{name}_qoltanbasyz.pdf
 @plural	{n} calculation now uses the new name.|{n} calculations now use the new name.	{n} есептеу енді жаңа атауды пайдаланады.|{n} есептеу енді жаңа атауды пайдаланады.
 	{n} contributors · {c} commits	{n} үлес қосушы · {c} коммит
@@ -3221,6 +3308,7 @@ document scrollbar width	Wide	Кең
 	{n} selected	Таңдалды: {n}
 	{n} tags	{n} тег
 	{n} word(s) or phrase(s)	{n} сөз немесе тіркес
+	{n} word(s) to review	Тексерілетін сөздер: {n}
 	{n} {kind}	{n} {kind}
 	{rule} - {status}	{rule} - {status}
 	{signers} signers; details of the first are shown	Қол қоюшылар саны: {signers}; біріншісінің мәліметтері көрсетілген
