@@ -28,6 +28,7 @@
 	1 issue	1 probléma
 	1 mark	1 jelölés
 	1 page	1 oldal
+	1 page scanned	1 oldal beolvasva
 	1 page selected	1 oldal kijelölve
 	1 page selected.	1 oldal kijelölve.
 	180 degrees	180 fok
@@ -225,6 +226,7 @@
 	Archive documents	Dokumentumok archiválása
 	Arrange image	Kép elrendezése
 	Ask about this document	Kérdezz erről a dokumentumról
+	Ask to scan more pages	Rákérdezés további oldalak beolvasására
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	A GitHubtól kéri le a legújabb kiadást. Semmi sem töltődik le vagy települ automatikusan.
 	Associated with content	Tartalomhoz társítva
 	At least one signature has problems.	Legalább egy aláírásnak problémája van.
@@ -262,6 +264,7 @@
 	Binary assets added	Hozzáadott bináris fájlok
 	Binding	Kötés
 	Binding:	Kötés:
+	Black & White Document	Fekete-fehér dokumentum
 	Black on white	Fekete fehéren
 	Blank page	Üres oldal
 	Booklet	Füzet
@@ -390,7 +393,9 @@
 	Collapse tag	Címke összecsukása
 	Collate	Szétválogatás
 	Color contrast	Színkontraszt
+	Color Document	Színes dokumentum
 	Color Images	Színes képek
+	Color Photo	Színes fénykép
 	Color Spaces	Színterek
 	Colours are remapped while rendering; the document itself never changes.	A színek a kirajcoláskor módosulnak; maga a dokumentum sosem változik.
 	Column select	Oszlopkijelölés
@@ -475,6 +480,7 @@
 	Couldn't save: {e}	A mentés nem sikerült: {e}
 	Couldn't show the file picker. Please try again.	Nem sikerült megjeleníteni a fájlválasztót. Próbáld újra.
 	Couldn't split: {e}	A felosztás nem sikerült: {e}
+	Couldn't start scanning	Nem sikerült elindítani a beolvasást
 	Couldn't summarize comments: {e}	A megjegyzéseket nem sikerült összefoglalni: {e}
 	Couldn't take the snapshot: {e}	A pillanatképet nem sikerült elkészíteni: {e}
 	Couldn't unlock {name}: {e}	{name} feloldása nem sikerült: {e}
@@ -496,6 +502,7 @@
 	Create link	Hivatkozás létrehozása
 	Create links from URLs	Hivatkozások létrehozása URL-ekből
 	Create Link…	Hivatkozás létrehozása…
+	Create PDF	PDF létrehozása
 	Create PDF Comment Summary	PDF-megjegyzésösszefoglaló létrehozása
 	Create PDF comment summary…	PDF-megjegyzésösszefoglaló létrehozása…
 	Create PDF from clipboard	PDF létrehozása a vágólapról
@@ -503,6 +510,8 @@
 	Create PDF from images	PDF létrehozása képekből
 	Create PDF from images…	PDF létrehozása képekből…
 	Create PDF from multiple files…	PDF létrehozása több fájlból…
+	Create PDF from Scanner	PDF létrehozása lapolvasóról
+	Create PDF from scanner…	PDF létrehozása lapolvasóról…
 	Create separate PDFs…	Külön PDF-ek létrehozása…
 	Create {what}	{what} létrehozása
 	Created 1 link	1 hivatkozás létrehozva
@@ -606,6 +615,8 @@ key	Delete	Delete
 	Document and markups	Dokumentum és jelölések
 	Document and stamps	Dokumentum és bélyegzők
 	Document assembly	Dokumentum összeállítása
+	Document feeder	Lapadagoló
+	Document feeder (both sides)	Lapadagoló (kétoldalas)
 	Document has appropriate color contrast	A dokumentum színkontrasztja megfelelő
 	Document is not image-only PDF	A dokumentum nem csak képből álló PDF
 	Document is tagged PDF	A dokumentum címkézett PDF
@@ -660,6 +671,7 @@ key	Delete	Delete
 	Duplicate…	Megkettőzés…
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Dinamikus XFA-űrlap, a sablonjából felépítve: {pages}, {fields}.
 	E-Sign	E-aláírás
+	e.g. 192.168.1.20	pl. 192.168.1.20
 	e.g. en-US	pl. hu-HU
 	e.g. My stamps	pl. Saját bélyegzők
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Minden mezőhöz kell egy elemleírás, amely megmondja, mit kell beírni. Add hozzá a Mező tulajdonságai > Általános > Elemleírás helyen.
@@ -846,6 +858,7 @@ scroll speed	Fast	Gyors
 	Fix reading order	Olvasási sorrend javítása
 	Fixed what could be fixed; 1 problem remains	Minden javíthatót javítottunk; 1 probléma maradt
 	Fixed what could be fixed; {n} problems remain	Minden javíthatót javítottunk; {n} probléma maradt
+	Flatbed	Síkágyas
 	Flatten	Beégetés
 	Flatten comments	Megjegyzések beégetése
 	Flatten Fill & Sign when saving	Kitöltés és aláírás beégetése mentéskor
@@ -891,6 +904,7 @@ scroll speed	Fast	Gyors
 	Go to the page	Ugrás az oldalra
 	Go to this result	Ugrás ehhez a találathoz
 	Grab bag	Vegyes
+	Grayscale Document	Szürkeárnyalatos dokumentum
 	Grayscale Images	Szürkeárnyalatos képek
 	Green on black	Zöld feketén
 	Greyscale	Szürkeárnyalatos
@@ -1061,6 +1075,7 @@ key	Home	Home
 	Make Properties Default	A tulajdonságok legyenek az alapértelmezettek
 	Make properties default	Tulajdonságok beállítása alapértelmezettként
 	Make scans searchable, then make them smaller.	Tedd kereshetővé a beolvasott oldalakat, majd kicsinyítsd őket.
+	Make searchable (recognize text)	Kereshetővé tétel (szövegfelismerés)
 	Manage embedded index	Beágyazott index kezelése
 	March	március
 	Margins (in)	Margók (hüvelyk)
@@ -1146,6 +1161,8 @@ key	Home	Home
 	Needs manual check	Kézi ellenőrzés kell
 	Negative number style:	Negatív szám stílusa:
 	Nested alternate text	Beágyazott helyettesítő szöveg
+	Network	Hálózat
+	Network address	Hálózati cím
 	New Action	Új művelet
 	New Action…	Új művelet…
 	New blank PDF	Új üres PDF
@@ -1199,6 +1216,8 @@ key	Home	Home
 	No preview	Nincs előnézet
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Nem található nyomtató. Ellenőrizze, hogy a nyomtató telepítve van-e, és fut-e a nyomtatási sorkezelő, majd nyissa meg újra a Nyomtatást.
 	No problems found: the document conforms to {level}.	Nem találtunk problémát: a dokumentum megfelel ennek: {level}.
+	No scanner found	Nem található lapolvasó
+	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Nem található lapolvasó. Ellenőrizze, hogy a lapolvasó be van-e kapcsolva és csatlakoztatva van-e, vagy adja meg a hálózati címét.
 	No security	Nincs védelem
 	No sheets	Nincs lap
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	A keretben nem található aláírás. Húzza a keretet az aláírásra, vagy növelje a tintaérzékenységet.
@@ -1348,6 +1367,7 @@ animation effects	On	Be
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	Ezeknek az oldalaknak saját fehér kitöltése van, amely eltakarná a hátteret: {pages}. Csere
 	Pages:	Oldalak:
 	Pages: {k} of {n}	Oldalak: {k} / {n}
+	Paper size	Papírméret
 	Paper:	Papír:
 	Paragraph spacing	Bekezdéstávolság
 	Part of	Része
@@ -1656,6 +1676,11 @@ animation effects	On	Be
 	Scale relative to target page	Méretezés a céloldalhoz képest
 	Scan	Beolvasás
 	Scan & OCR	Beolvasás és OCR
+	Scan next page	Következő oldal beolvasása
+	Scanner	Lapolvasó
+	Scanner's full area	A lapolvasó teljes területe
+	Scanning was stopped	A beolvasás leállt
+	Scanning…	Beolvasás…
 	Screen flicker	Képernyővillogás
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	A képernyőolvasók a dokumentum nyelve alapján választanak hangot. Állítsd be a Dokumentum tulajdonságai > Speciális > Nyelv helyen.
 	Script	Szkript
@@ -1673,6 +1698,7 @@ animation effects	On	Be
 	Search tools and commands…	Eszközök és parancsok keresése…
 	Search tools…	Eszközök keresése…
 	Searchable Image (Exact)	Kereshető kép (pontos)
+	Searching…	Keresés…
 	Searching… {s} of {p} pages	Keresés… {s} / {p} oldal
 	Searching… {s}/{p}	Keresés… {s}/{p}
 	Search…	Keresés…
@@ -1900,6 +1926,7 @@ action wizard	Start	Indítás
 	Thai and Arabic use regular fallback fonts when available.	A thai és az arab szöveg normál stílusú helyettesítő betűtípusokat használ, ha rendelkezésre állnak.
 	That didn't work: an internal error stopped it ({m}).	Ez nem sikerült: belső hiba állította le ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Ez nem sikerült: egy belső hiba megállította ({m}). A dokumentumaid változatlanok.
+	That isn't a scanner address	Ez nem lapolvasócím
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	A számítási sorrendben {n} bejegyzés semmit nem számít ki. A „Sorrend javítása” eltávolítja.|A számítási sorrendben {n} bejegyzés semmit nem számít ki. A „Sorrend javítása” eltávolítja őket.
 	The checker found 1 problem which may prevent the document from being fully accessible.	Az ellenőrzés 1 problémát talált, amely megakadályozhatja, hogy a dokumentum teljesen akadálymentes legyen.
 	The checker found no problems in this document.	Az ellenőrzés nem talált problémát ebben a dokumentumban.
@@ -2225,6 +2252,7 @@ signature pad	Type	Gépelés
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	További {n} képlet hiányzó mezőt olvas.|További {n} képlet hiányzó mezőket olvas.
 @plural	{n} object selected|{n} objects selected	{n} objektum kijelölve|{n} objektum kijelölve
 	{n} pages	{n} oldal
+	{n} pages scanned	{n} oldal beolvasva
 	{n} pages selected	{n} oldal kijelölve
 	{n} pages selected.	{n} oldal kijelölve.
 @plural	{n} page|{n} pages	{n} oldal|{n} oldal

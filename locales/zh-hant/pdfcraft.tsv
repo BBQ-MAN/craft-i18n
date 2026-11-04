@@ -28,6 +28,7 @@
 	1 issue	1 個問題
 	1 mark	1 個標記
 	1 page	1 頁
+	1 page scanned	已掃描 1 頁
 	1 page selected	已選取 1 頁
 	1 page selected.	已選擇 1 頁。
 	180 degrees	180 度
@@ -233,6 +234,7 @@
 	Area units	面積單位
 	Arrange image	排列影像
 	Ask about this document	詢問此文件
+	Ask to scan more pages	詢問是否繼續掃描更多頁面
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	向 GitHub 搜尋最新版本。不會自動下載或安裝任何內容。
 	Associated with content	與內容關聯
 	At least one signature has problems.	至少一個簽名存在問題。
@@ -270,6 +272,7 @@
 	Bicubic downsampling to	雙三次降取樣至
 	Binding	裝訂
 	Binding:	裝訂：
+	Black & White Document	黑白文件
 	Black on white	白底黑字
 	Blank page	空白頁面
 	Booklet	小冊子
@@ -413,9 +416,10 @@
 	Collapse all pages	摺疊所有頁面
 	Collapse all tools	摺疊所有工具
 	Collapse tag	收合標籤
-	Color	顏色
 	Color contrast	顏色對比度
+	Color Document	彩色文件
 	Color Images	彩色圖片
+	Color Photo	彩色照片
 	Color Spaces	顏色空間
 	Colours are remapped while rendering; the document itself never changes.	色彩僅在顯示時重新對應；文件本身不會變更。
 	Column select	欄選取
@@ -499,6 +503,7 @@
 	Couldn't save {name}: {e}	無法儲存{name}：{e}
 	Couldn't save: {e}	無法儲存：{e}
 	Couldn't split: {e}	無法拆分：{e}
+	Couldn't start scanning	無法開始掃描
 	Couldn't summarize comments: {e}	無法彙總註解：{e}
 	Couldn't take the snapshot: {e}	無法拍攝快照：{e}
 	Couldn't unlock {name}: {e}	無法解鎖 {name}：{e}
@@ -520,6 +525,7 @@
 	Create link	建立連結
 	Create links from URLs	從網址建立連結
 	Create Link…	建立連結…
+	Create PDF	建立 PDF
 	Create PDF Comment Summary	建立 PDF 註解摘要
 	Create PDF comment summary…	建立 PDF 註解摘要…
 	Create PDF from clipboard	從剪貼簿建立 PDF
@@ -527,6 +533,8 @@
 	Create PDF from images	從圖片建立 PDF
 	Create PDF from images…	從圖片建立 PDF…
 	Create PDF from multiple files…	從多個檔案建立 PDF…
+	Create PDF from Scanner	從掃描器建立 PDF
+	Create PDF from scanner…	從掃描器建立 PDF…
 	Create separate PDFs…	建立個別 PDF…
 	Create {what}	建立{what}
 	Created 1 link	已建立 1 個連結
@@ -643,6 +651,8 @@ key	Delete	Delete
 	Document and markups	文件和標記
 	Document and stamps	文件和戳記
 	Document assembly	文件組裝
+	Document feeder	文件進紙器
+	Document feeder (both sides)	文件進紙器（雙面）
 	Document has appropriate color contrast	文件顏色對比度合適
 	Document is not image-only PDF	文件不是純圖片 PDF
 	Document is tagged PDF	文件是標記的 PDF
@@ -700,6 +710,7 @@ key	Delete	Delete
 	Duplicate…	重複…
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	依範本排版的動態 XFA 表單：{pages}、{fields}。
 	E-Sign	電子簽署
+	e.g. 192.168.1.20	例如 192.168.1.20
 	e.g. en-US	例如 en-US
 	e.g. My stamps	例如：我的戳記
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	每個欄位都需要說明輸入內容的提示。在「欄位屬性」>「一般」>「提示」中新增。
@@ -899,6 +910,7 @@ scroll speed	Fast	快
 	Fix reading order	修正閱讀順序
 	Fixed what could be fixed; 1 problem remains	已修復能修復的問題；還剩 1 個問題
 	Fixed what could be fixed; {n} problems remain	已修復能修復的問題；還剩{n}個問題
+	Flatbed	平台
 	Flatten comments	平面化註解
 	Flatten Fill & Sign when saving	儲存時將填寫與簽署內容平面化
 	Flatten form fields	平面化表單欄位
@@ -949,6 +961,7 @@ scroll speed	Fast	快
 	Go to this result	轉到此結果
 	Grab bag	精簡
 	Grads	百分度
+	Grayscale Document	灰階文件
 	Grayscale Images	灰階圖片
 	Green on black	黑底綠字
 	Greyscale	灰階
@@ -1121,6 +1134,7 @@ key	Home	Home
 	Make Properties Default	將屬性設為預設
 	Make properties default	將內容設為預設
 	Make scans searchable, then make them smaller.	使掃描件可搜尋，然後將其變小。
+	Make searchable (recognize text)	產生可搜尋的 PDF（辨識文字）
 	Manage embedded index	管理內嵌索引
 	Map accuracy	地圖精度
 	Map boundary	地圖邊界
@@ -1215,6 +1229,8 @@ key	Home	Home
 	Needs manual check	需要人工檢驗
 	Negative number style:	負數樣式：
 	Nested alternate text	巢狀替代文字
+	Network	網路
+	Network address	網路位址
 	New Action	新建操作
 	New Action…	新建操作…
 	New blank PDF	新增空白 PDF
@@ -1272,6 +1288,8 @@ key	Home	Home
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	找不到印表機。請確認印表機已安裝、列印多工緩衝處理器正在執行，然後重新開啟「列印」。
 	No problems found: the document conforms to {level}.	未發現問題：文件符合 {level}。
 	No saved measurements in this view.	此視圖中沒有已儲存的測量。
+	No scanner found	找不到掃描器
+	No scanners were found. Check that the scanner is on and connected, or enter its network address.	找不到掃描器。請檢查掃描器是否已開機並連線，或輸入其網路位址。
 	No security	無安全性
 	No sheets	無紙張
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	框內找不到簽名。請將框移到簽名上，或提高墨跡靈敏度。
@@ -1427,6 +1445,7 @@ animation effects	On	開
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	第 {pages} 頁各有自己的白色填色，會遮住背景。取代它們
 	Pages:	頁面：
 	Pages: {k} of {n}	頁面：{k}/{n}
+	Paper size	紙張大小
 	Paper:	紙張：
 	Paragraph spacing	段落間距
 	Part of	隸屬於
@@ -1503,6 +1522,7 @@ animation effects	On	開
 	Preparing sheet {done} of {total} for printing…	正在準備列印第 {done} 張，共 {total} 張…
 	Preparing {n} sheets for printing…	正在準備 {n} 張紙以供列印…
 	Presentation (.pptx)	簡報（.pptx）
+	Preset	預設
 	Preview unavailable: {e}	無法預覽：{e}
 	Preview: page {p} of {n}	預覽：第 {p} 頁，共 {n} 頁
 	Previous	上一頁
@@ -1756,6 +1776,11 @@ animation effects	On	開
 	Scale relative to target page	相對於目標頁面的縮放
 	Scan	掃描
 	Scan & OCR	掃描與 OCR
+	Scan next page	掃描下一頁
+	Scanner	掃描器
+	Scanner's full area	掃描器的整個區域
+	Scanning was stopped	掃描已停止
+	Scanning…	正在掃描…
 	Screen flicker	螢幕閃爍
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	螢幕閱讀器根據文件語言選擇語音。請在「文件屬性」>「進階」>「語言」中設定。
 	Script	指令碼
@@ -1772,6 +1797,7 @@ animation effects	On	開
 	Search tools and commands…	搜尋工具與指令…
 	Search tools…	搜尋工具…
 	Searchable Image (Exact)	可搜尋圖片（精確）
+	Searching…	正在搜尋…
 	Searching… {s} of {p} pages	正在搜尋… {s}/{p} 頁
 	Searching… {s}/{p}	正在搜尋… {s}/{p}
 	Search…	搜尋…
@@ -2004,6 +2030,7 @@ key	Space	空格
 	TH and TD must be children of TR	TH 和 TD 必須是 TR 的子級
 	Thai and Arabic use regular fallback fonts when available.	泰語和阿拉伯語使用可用的一般樣式備用字型。
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	出錯了：內部錯誤中斷了操作（{m}）。文件未更改。
+	That isn't a scanner address	這不是掃描器位址
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	計算順序中有 {n} 個不計算任何內容的項目。「修正順序」會將其刪除。
 	The checker found 1 problem which may prevent the document from being fully accessible.	檢驗器發現 1 個問題，可能導致文件無法完全無障礙。
 	The checker found no problems in this document.	檢驗器在本文件中未發現問題。
@@ -2343,6 +2370,7 @@ key	Space	空格
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	另有 {n} 個公式讀取了缺少的欄位。
 @plural	{n} object selected|{n} objects selected	已選取 {n} 個物件
 	{n} pages	{n} 頁
+	{n} pages scanned	已掃描 {n} 頁
 	{n} pages selected	已選取 {n} 頁
 	{n} pages selected.	已選擇 {n} 頁。
 @plural	{n} page|{n} pages	{n} 頁

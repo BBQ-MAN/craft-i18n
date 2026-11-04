@@ -28,6 +28,7 @@
 	1 issue	1 సమస్య
 	1 mark	1 గుర్తు
 	1 page	1 పేజీ
+	1 page scanned	1 పేజీ స్కాన్ అయింది
 	1 page selected	1 పేజీ ఎంచుకోబడింది
 	1 page selected.	1 పేజీ ఎంచుకోబడింది.
 	180 degrees	180 డిగ్రీలు
@@ -219,6 +220,7 @@
 	Archive documents	పత్రాలను ఆర్కైవ్ చేయి
 	Arrange image	చిత్రాన్ని అమర్చు
 	Ask about this document	ఈ పత్రం గురించి అడుగు
+	Ask to scan more pages	మరిన్ని పేజీలు స్కాన్ చేయాలా అని అడుగు
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	తాజా విడుదల గురించి GitHubను అడుగుతుంది. ఏదీ ఆటోమేటిక్‌గా డౌన్‌లోడ్ లేదా ఇన్‌స్టాల్ చేయబడదు.
 	Associated with content	కంటెంట్‌తో అనుబంధించబడింది
 	At least one signature has problems.	కనీసం ఒక సంతకంలో సమస్యలు ఉన్నాయి.
@@ -254,6 +256,8 @@
 	Bicubic downsampling to	బైక్యూబిక్ డౌన్‌శాంప్లింగ్, లక్ష్యం:
 	Binding	బైండింగ్
 	Binding:	బైండింగ్:
+	Black & White	నలుపు తెలుపు
+	Black & White Document	నలుపు తెలుపు పత్రం
 	Black on white	తెలుపుపై నలుపు
 	Blank page	ఖాళీ పేజీ
 	Booklet	బుక్‌లెట్
@@ -375,8 +379,11 @@
 	Collapse all pages	అన్ని పేజీలను ముడుచు
 	Collapse all tools	అన్ని సాధనాలను కుదించు
 	Collapse tag	ట్యాగ్‌ను కుదించు
+	Color	రంగు
 	Color contrast	రంగు కాంట్రాస్ట్
+	Color Document	రంగు పత్రం
 	Color Images	రంగు చిత్రాలు
+	Color Photo	రంగు ఫోటో
 	Color Spaces	కలర్ స్పేస్‌లు
 	Colours are remapped while rendering; the document itself never changes.	రెండర్ చేసేటప్పుడు రంగులు మార్చబడతాయి; పత్రం మాత్రం ఎప్పుడూ మారదు.
 	Column select	నిలువు వరుస ఎంపిక
@@ -456,6 +463,7 @@
 	Couldn't save {name}: {e}	{name}ను సేవ్ చేయడం సాధ్యం కాలేదు: {e}
 	Couldn't save: {e}	సేవ్ చేయడం సాధ్యం కాలేదు: {e}
 	Couldn't split: {e}	విభజించడం సాధ్యం కాలేదు: {e}
+	Couldn't start scanning	స్కానింగ్ ప్రారంభించలేకపోయాము
 	Couldn't summarize comments: {e}	వ్యాఖ్యల సారాంశాన్ని రూపొందించడం సాధ్యం కాలేదు: {e}
 	Couldn't take the snapshot: {e}	స్నాప్‌షాట్ తీయడం సాధ్యం కాలేదు: {e}
 	Couldn't unlock {name}: {e}	{name}ను అన్‌లాక్ చేయలేకపోయాము: {e}
@@ -477,6 +485,7 @@
 	Create link	లింక్ సృష్టించు
 	Create links from URLs	URLల నుండి లింక్‌లను సృష్టించు
 	Create Link…	లింక్ సృష్టించు…
+	Create PDF	PDF సృష్టించు
 	Create PDF Comment Summary	PDF వ్యాఖ్యల సారాంశాన్ని సృష్టించు
 	Create PDF comment summary…	PDF వ్యాఖ్యల సారాంశాన్ని సృష్టించు…
 	Create PDF from clipboard	క్లిప్‌బోర్డ్ నుండి PDF సృష్టించు
@@ -484,6 +493,8 @@
 	Create PDF from images	చిత్రాల నుండి PDF సృష్టించు
 	Create PDF from images…	చిత్రాల నుండి PDF సృష్టించు…
 	Create PDF from multiple files…	అనేక ఫైల్‌ల నుండి PDF సృష్టించు…
+	Create PDF from Scanner	స్కానర్ నుండి PDF సృష్టించు
+	Create PDF from scanner…	స్కానర్ నుండి PDF సృష్టించు…
 	Create separate PDFs…	వేర్వేరు PDFలను సృష్టించు…
 	Create {what}	{what} సృష్టించు
 	Created 1 link	1 లింక్ సృష్టించబడింది
@@ -583,6 +594,8 @@ key	Delete	Delete
 	Document and markups	పత్రం మరియు మార్కప్‌లు
 	Document and stamps	పత్రం మరియు స్టాంప్‌లు
 	Document assembly	పత్రం కూర్పు
+	Document feeder	పత్రాల ఫీడర్
+	Document feeder (both sides)	పత్రాల ఫీడర్ (రెండు వైపులా)
 	Document has appropriate color contrast	పత్రంలో తగిన రంగు కాంట్రాస్ట్ ఉంది
 	Document is not image-only PDF	పత్రం చిత్రాలు మాత్రమే ఉన్న PDF కాదు
 	Document is tagged PDF	పత్రం ట్యాగ్ చేసిన PDF
@@ -634,6 +647,7 @@ key	Delete	Delete
 	Duplicate pages	పేజీలను నకలు చేయి
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	దాని టెంప్లేట్ నుండి అమర్చబడిన డైనమిక్ XFA ఫారం: {pages}, {fields}.
 	E-Sign	ఇ-సంతకం
+	e.g. 192.168.1.20	ఉదా. 192.168.1.20
 	e.g. en-US	ఉదా. en-US
 	e.g. My stamps	ఉదా. నా స్టాంప్‌లు
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	ప్రతి ఫీల్డ్‌కు ఏమి నమోదు చేయాలో చెప్పే టూల్‌టిప్ అవసరం. దాన్ని ఫీల్డ్ లక్షణాలు > సాధారణం > టూల్‌టిప్‌లో జోడించండి.
@@ -816,6 +830,7 @@ scroll speed	Fast	వేగంగా
 	Fix reading order	చదివే క్రమాన్ని సరిచేయి
 	Fixed what could be fixed; 1 problem remains	సరిచేయగలిగినవన్నీ సరిచేయబడ్డాయి; 1 సమస్య మిగిలి ఉంది
 	Fixed what could be fixed; {n} problems remain	సరిచేయగలిగినవన్నీ సరిచేయబడ్డాయి; {n} సమస్యలు మిగిలి ఉన్నాయి
+	Flatbed	ఫ్లాట్‌బెడ్
 	Flatten comments	వ్యాఖ్యలను ఫ్లాటెన్ చేయి
 	Flatten form fields	ఫారం ఫీల్డ్‌లను ఫ్లాటెన్ చేయి
 	Flip horizontal	అడ్డంగా తిరగేయి
@@ -858,6 +873,8 @@ scroll speed	Fast	వేగంగా
 	Go to the page	ఆ పేజీకి వెళ్లు
 	Go to this result	ఈ ఫలితానికి వెళ్లు
 	Grab bag	జాబితా
+	Grayscale	బూడిద ఛాయలు
+	Grayscale Document	బూడిద ఛాయల పత్రం
 	Grayscale Images	గ్రేస్కేల్ చిత్రాలు
 	Green on black	నలుపుపై ఆకుపచ్చ
 	Greyscale	గ్రేస్కేల్
@@ -979,7 +996,9 @@ key	Home	Home
 	Left Footer Text	ఎడమ ఫుటర్ టెక్స్ట్
 	Left Header Text	ఎడమ హెడర్ టెక్స్ట్
 	Left out: {names}	వదిలివేసినవి: {names}
+	Legal	లీగల్
 	Less	తక్కువ
+	Letter	లెటర్
 	LI must be a child of L	LI తప్పనిసరిగా L లోపల నేరుగా ఉండాలి
 	Light blue	లేత నీలం
 	Light theme	లేత థీమ్
@@ -1016,6 +1035,7 @@ key	Home	Home
 	Make Properties Default	లక్షణాలను డిఫాల్ట్‌గా చేయి
 	Make properties default	లక్షణాలను డిఫాల్ట్‌గా చేయి
 	Make scans searchable, then make them smaller.	స్కాన్‌లను వెతకగలిగేలా చేసి, ఆపై వాటి పరిమాణాన్ని తగ్గిస్తుంది.
+	Make searchable (recognize text)	శోధించగలిగేలా చేయి (వచనాన్ని గుర్తించు)
 	Manage embedded index	పొందుపరిచిన ఇండెక్స్‌ను నిర్వహించు
 	March	మార్చి
 	Mark all	అన్నీ మార్క్ చేయి
@@ -1093,6 +1113,8 @@ key	Home	Home
 	Needs manual check	మాన్యువల్ తనిఖీ అవసరం
 	Negative number style:	రుణ సంఖ్య శైలి:
 	Nested alternate text	లోపలి ప్రత్యామ్నాయ టెక్స్ట్
+	Network	నెట్‌వర్క్
+	Network address	నెట్‌వర్క్ చిరునామా
 	New Action	కొత్త చర్య
 	New Action…	కొత్త చర్య…
 	New blank PDF	కొత్త ఖాళీ PDF
@@ -1143,6 +1165,8 @@ key	Home	Home
 	No preview	ప్రివ్యూ లేదు
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	ప్రింటర్లు ఏవీ కనుగొనబడలేదు. ప్రింటర్ ఇన్‌స్టాల్ అయిందో, ప్రింట్ స్పూలర్ నడుస్తోందో తనిఖీ చేసి, ముద్రణను మళ్లీ తెరవండి.
 	No problems found: the document conforms to {level}.	సమస్యలు ఏవీ కనుగొనబడలేదు: పత్రం {level}కు అనుగుణంగా ఉంది.
+	No scanner found	స్కానర్ కనుగొనబడలేదు
+	No scanners were found. Check that the scanner is on and connected, or enter its network address.	స్కానర్‌లు కనుగొనబడలేదు. స్కానర్ ఆన్‌లో ఉండి కనెక్ట్ అయిందో తనిఖీ చేయండి లేదా దాని నెట్‌వర్క్ చిరునామాను నమోదు చేయండి.
 	No security	భద్రత లేదు
 	No sheets	షీట్‌లు లేవు
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	ఫ్రేమ్‌లో సంతకం కనబడలేదు. ఫ్రేమ్‌ను సంతకం మీదకు జరపండి లేదా ఇంక్ సున్నితత్వాన్ని పెంచండి.
@@ -1288,6 +1312,7 @@ animation effects	On	ఆన్
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	పేజీలు {pages}కి సొంత తెల్లని నింపు ఉంది, అది నేపథ్యాన్ని దాచేస్తుంది. భర్తీ చేయండి
 	Pages:	పేజీలు:
 	Pages: {k} of {n}	పేజీలు: {n}లో {k}
+	Paper size	కాగితం పరిమాణం
 	Paper:	కాగితం:
 	Paragraph spacing	పేరా అంతరం
 	Part of	దీనిలో భాగం:
@@ -1349,6 +1374,7 @@ animation effects	On	ఆన్
 	Preparing sheet {done} of {total} for printing…	ముద్రణ కోసం {total}లో షీట్ {done}ను సిద్ధం చేస్తోంది…
 	Preparing {n} sheets for printing…	ముద్రణ కోసం {n} షీట్‌లను సిద్ధం చేస్తోంది…
 	Presentation (.pptx)	ప్రెజెంటేషన్ (.pptx)
+	Preset	ముందస్తు అమరిక
 	Preview unavailable: {e}	ప్రివ్యూ అందుబాటులో లేదు: {e}
 	Preview: page {p} of {n}	ప్రివ్యూ: {n}లో {p}వ పేజీ
 	Previous ({key})	మునుపటి ({key})
@@ -1426,6 +1452,7 @@ animation effects	On	ఆన్
 	Redo {action}	మళ్లీ చేయి: {action}
 	Reduce file size	ఫైల్ పరిమాణాన్ని తగ్గించు
 	Reduce file size…	ఫైల్ పరిమాణాన్ని తగ్గించు…
+	Refresh	రిఫ్రెష్ చేయి
 	Regularity	క్రమబద్ధత
 	Rejected	తిరస్కరించబడింది
 	Reliable character encoding is provided	నమ్మదగిన అక్షర ఎన్‌కోడింగ్ అందించబడింది
@@ -1572,8 +1599,14 @@ animation effects	On	ఆన్
 	Saved, but reopening failed: {e}	సేవ్ చేయబడింది, కానీ మళ్లీ తెరవడం విఫలమైంది: {e}
 	Scale	స్కేల్
 	Scale relative to target page	లక్ష్య పేజీకి సాపేక్షంగా స్కేల్
-	Scan	స్కాన్
+	Scan	స్కాన్ చేయి
 	Scan & OCR	స్కాన్ & OCR
+	Scan next page	తదుపరి పేజీని స్కాన్ చేయి
+	Scanner	స్కానర్
+	Scanner's full area	స్కానర్ పూర్తి ప్రాంతం
+	Scanning isn't available in the web version	వెబ్ వెర్షన్‌లో స్కానింగ్ అందుబాటులో లేదు
+	Scanning was stopped	స్కానింగ్ ఆపివేయబడింది
+	Scanning…	స్కాన్ చేస్తోంది…
 	Screen flicker	స్క్రీన్ ఫ్లికర్
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	స్క్రీన్ రీడర్‌లు పత్రం భాషను బట్టి తమ స్వరాన్ని ఎంచుకుంటాయి. దాన్ని పత్రం లక్షణాలు > అధునాతనం > భాషలో సెట్ చేయండి.
 	Script	స్క్రిప్ట్
@@ -1590,6 +1623,7 @@ animation effects	On	ఆన్
 	Search tools and commands…	సాధనాలు, కమాండ్‌లలో వెతుకు…
 	Search tools…	సాధనాలను శోధించండి…
 	Searchable Image (Exact)	వెతకగలిగే చిత్రం (యథాతథం)
+	Searching…	వెతుకుతోంది…
 	Searching… {s} of {p} pages	వెతుకుతోంది… {p} పేజీలలో {s}
 	Searching… {s}/{p}	వెతుకుతోంది… {s}/{p}
 	Search…	శోధించండి…
@@ -1744,6 +1778,7 @@ action wizard	Start	ప్రారంభించు
 	Start page number	ప్రారంభ పేజీ సంఖ్య
 	Steps	దశలు
 	Sticky note	స్టిక్కీ నోట్
+	Stop	ఆపు
 	Strength: {s}	బలం: {s}
 	Strikethrough text	టెక్స్ట్‌ను కొట్టివేయి
 	Strong	బలమైనది
@@ -1804,6 +1839,7 @@ action wizard	Start	ప్రారంభించు
 	TH and TD must be children of TR	TH మరియు TD తప్పనిసరిగా TR లోపల నేరుగా ఉండాలి
 	Thai and Arabic use regular fallback fonts when available.	థాయ్ మరియు అరబిక్ కోసం అందుబాటులో ఉన్నప్పుడు సాధారణ శైలి ప్రత్యామ్నాయ ఫాంట్‌లను ఉపయోగిస్తారు.
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	అది పని చేయలేదు: అంతర్గత లోపం దాన్ని ఆపివేసింది ({m}). మీ పత్రాలు మారలేదు.
+	That isn't a scanner address	అది స్కానర్ చిరునామా కాదు
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	గణన క్రమంలో ఏదీ లెక్కించని {n} ఎంట్రీ ఉంది. "క్రమాన్ని సరిచేయండి" దాన్ని తొలగిస్తుంది.|గణన క్రమంలో ఏదీ లెక్కించని {n} ఎంట్రీలు ఉన్నాయి. "క్రమాన్ని సరిచేయండి" వాటిని తొలగిస్తుంది.
 	The checker found 1 problem which may prevent the document from being fully accessible.	పత్రం పూర్తి యాక్సెసిబిలిటీకి ఆటంకం కలిగించే అవకాశం ఉన్న 1 సమస్యను తనిఖీ సాధనం కనుగొంది.
 	The checker found no problems in this document.	తనిఖీ సాధనం ఈ పత్రంలో ఎటువంటి సమస్యలనూ కనుగొనలేదు.
@@ -2106,6 +2142,7 @@ signature pad	Type	టైప్ చేయి
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	మరో {n} సూత్రం లేని ఫీల్డ్‌ను చదువుతుంది.|మరో {n} సూత్రాలు లేని ఫీల్డ్‌లను చదువుతాయి.
 @plural	{n} object selected|{n} objects selected	{n} వస్తువు ఎంచుకోబడింది|{n} వస్తువులు ఎంచుకోబడ్డాయి
 	{n} pages	{n} పేజీలు
+	{n} pages scanned	{n} పేజీలు స్కాన్ అయ్యాయి
 	{n} pages selected	{n} పేజీలు ఎంచుకోబడ్డాయి
 	{n} pages selected.	{n} పేజీలు ఎంచుకోబడ్డాయి.
 @plural	{n} page|{n} pages	{n} పేజీ|{n} పేజీలు

@@ -28,6 +28,7 @@
 	1 issue	問題 1 件
 	1 mark	マーク 1 件
 	1 page	1 ページ
+	1 page scanned	1 ページをスキャンしました
 	1 page selected	1 ページ選択中
 	1 page selected.	1 ページ選択中。
 	180 degrees	180 度
@@ -238,6 +239,7 @@
 	Arrange image	画像を配置
 	ArtCraft website	ArtCraft のウェブサイト
 	Ask about this document	この文書について質問
+	Ask to scan more pages	さらにスキャンするか確認する
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	GitHub で最新リリースを確認します。自動でダウンロードやインストールは行いません。
 	Associated with content	コンテンツとの関連付け
 	At least one signature has problems.	問題のある署名があります。
@@ -277,6 +279,7 @@
 	Binary assets removed	削除したバイナリファイル数
 	Binding	とじ方向
 	Binding:	とじ方向:
+	Black & White Document	白黒の文書
 	Black on white	白地に黒
 	Blank page	空白のページ
 	Blue	青
@@ -421,8 +424,11 @@
 	Collapse all pages	すべてのページを折りたたむ
 	Collapse all tools	すべてのツールを折りたたむ
 	Collapse tag	タグを折りたたむ
+	Color	カラー
 	Color contrast	色のコントラスト
+	Color Document	カラーの文書
 	Color Images	カラー画像
+	Color Photo	カラー写真
 	Color Spaces	色空間
 	Colour	色
 	Colours are remapped while rendering; the document itself never changes.	色は描画時に置き換えられ、文書自体が変わることはありません。
@@ -509,6 +515,7 @@
 	Couldn't save: {e}	保存できませんでした: {e}
 	Couldn't show the file picker. Please try again.	ファイル選択ダイアログを表示できませんでした。もう一度お試しください。
 	Couldn't split: {e}	分割できませんでした: {e}
+	Couldn't start scanning	スキャンを開始できませんでした
 	Couldn't summarize comments: {e}	注釈の一覧を作成できませんでした: {e}
 	Couldn't take the snapshot: {e}	スナップショットを作成できませんでした: {e}
 	Couldn't unlock {name}: {e}	{name} のロックを解除できませんでした: {e}
@@ -530,6 +537,7 @@
 	Create link	リンクを作成
 	Create links from URLs	URL からリンクを作成
 	Create Link…	リンクを作成…
+	Create PDF	PDF を作成
 	Create PDF Comment Summary	PDF 注釈の一覧を作成
 	Create PDF comment summary…	PDF 注釈の一覧を作成…
 	Create PDF from clipboard	クリップボードから PDF を作成
@@ -537,6 +545,8 @@
 	Create PDF from images	画像から PDF を作成
 	Create PDF from images…	画像から PDF を作成…
 	Create PDF from multiple files…	複数のファイルから PDF を作成…
+	Create PDF from Scanner	スキャナーから PDF を作成
+	Create PDF from scanner…	スキャナーから PDF を作成…
 	Create separate PDFs…	個別の PDF を作成…
 	Create {what}	{what}を作成
 	Created 1 link	リンクを 1 件作成しました
@@ -653,6 +663,8 @@ key	Delete	Delete
 	Document and markups	文書とマークアップ
 	Document and stamps	文書とスタンプ
 	Document assembly	文書の組み立て
+	Document feeder	ドキュメントフィーダー
+	Document feeder (both sides)	ドキュメントフィーダー（両面）
 	Document has appropriate color contrast	文書の色に適切なコントラストがあります
 	Document is not image-only PDF	文書は画像のみの PDF ではありません
 	Document is tagged PDF	文書はタグ付き PDF です
@@ -708,6 +720,7 @@ key	Delete	Delete
 	Duplicate pages	ページを複製
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	テンプレートをもとにレイアウトした動的 XFA フォームです（{pages}、{fields}）。
 	E-Sign	電子署名
+	e.g. 192.168.1.20	例: 192.168.1.20
 	e.g. en-US	例: ja-JP
 	e.g. My stamps	例: マイスタンプ
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	各フィールドには入力内容を説明するツールチップが必要です。「フィールドのプロパティ > 一般 > ツールチップ」で追加してください。
@@ -906,6 +919,7 @@ scroll speed	Fast	速い
 	Fix reading order	読み上げ順序を修正
 	Fixed what could be fixed; 1 problem remains	修正可能な項目を修正しました。問題が 1 件残っています
 	Fixed what could be fixed; {n} problems remain	修正可能な項目を修正しました。問題が {n} 件残っています
+	Flatbed	フラットベッド
 	Flatten comments	コメントを統合
 	Flatten Fill & Sign when saving	保存時に入力と署名を統合する
 	Flatten form fields	フォームフィールドを統合
@@ -954,6 +968,7 @@ scroll speed	Fast	速い
 	Go to this result	この結果に移動
 	Grab bag	いろいろ
 	Grads	グラード
+	Grayscale Document	グレースケールの文書
 	Grayscale Images	グレースケール画像
 	Green	緑
 	Green on black	黒地に緑
@@ -1125,6 +1140,7 @@ key	Home	Home
 	Make Properties Default	プロパティを既定にする
 	Make properties default	プロパティをデフォルトに設定
 	Make scans searchable, then make them smaller.	スキャンを検索可能にしてから容量を削減します。
+	Make searchable (recognize text)	検索可能にする（テキストを認識）
 	Manage embedded index	埋め込みインデックスを管理
 	Map accuracy	地図の精度
 	Map boundary	地図の境界
@@ -1224,6 +1240,8 @@ key	Home	Home
 	Needs manual check	手動チェックが必要
 	Negative number style:	負の数の形式:
 	Nested alternate text	入れ子の代替テキスト
+	Network	ネットワーク
+	Network address	ネットワークアドレス
 	New Action	新しいアクション
 	New Action…	新しいアクション…
 	New blank PDF	空白の PDF を作成
@@ -1280,6 +1298,8 @@ key	Home	Home
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	プリンターが見つかりません。プリンターがインストールされ、印刷スプーラーが動作していることを確認してから、もう一度［印刷］を開いてください。
 	No problems found: the document conforms to {level}.	問題は見つかりませんでした。文書は {level} に準拠しています。
 	No saved measurements in this view.	このビューに保存済みの測定はありません。
+	No scanner found	スキャナーが見つかりません
+	No scanners were found. Check that the scanner is on and connected, or enter its network address.	スキャナーが見つかりません。電源が入って接続されているか確認するか、ネットワークアドレスを入力してください。
 	No security	セキュリティなし
 	No sheets	用紙なし
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	枠内に署名が見つかりません。枠を署名に合わせるか、インクの感度を上げてください。
@@ -1434,6 +1454,7 @@ animation effects	On	オン
 	Pages {pages} paint their own white backdrop, which would hide the background. Replace it	{pages} ページに独自の白い塗りがあり、背景が隠れてしまいます。置き換える
 	Pages:	ページ:
 	Pages: {k} of {n}	ページ: {k}/{n}
+	Paper size	用紙サイズ
 	Paper:	用紙:
 	Paragraph spacing	段落間隔
 	Part of	関連プロジェクト
@@ -1765,6 +1786,11 @@ animation effects	On	オン
 	Scale relative to target page	対象ページに対する倍率
 	Scan	スキャン
 	Scan & OCR	スキャンと OCR
+	Scan next page	次のページをスキャン
+	Scanner	スキャナー
+	Scanner's full area	スキャナーの全領域
+	Scanning was stopped	スキャンを停止しました
+	Scanning…	スキャン中…
 	Screen flicker	画面のちらつき
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	スクリーンリーダーは文書の言語に基づいて音声を選択します。「文書のプロパティ > 詳細設定 > 言語」で設定してください。
 	Script	スクリプト
@@ -1782,6 +1808,7 @@ animation effects	On	オン
 	Search tools and commands…	ツールとコマンドを検索…
 	Search tools…	ツールを検索…
 	Searchable Image (Exact)	検索可能な画像（元の画像を保持）
+	Searching…	検索中…
 	Searching… {s} of {p} pages	検索中… {p} ページ中 {s} ページ
 	Searching… {s}/{p}	検索中… {s}/{p}
 	Search…	検索…
@@ -2018,6 +2045,7 @@ key	Space	スペース
 	Thai and Arabic use regular fallback fonts when available.	タイ語とアラビア語には、利用可能な場合、標準スタイルの代替フォントを使用します。
 	That didn't work: an internal error stopped it ({m}).	内部エラーのため、操作を完了できませんでした（{m}）。
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	内部エラーにより操作を中止しました（{m}）。文書は変更されていません。
+	That isn't a scanner address	スキャナーのアドレスではありません
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	計算順序に、何も計算しない項目が {n} 件あります。「順序を修正」で削除されます。
 	The checker found 1 problem which may prevent the document from being fully accessible.	文書のアクセシビリティを妨げる可能性のある問題が 1 件見つかりました。
 	The checker found no problems in this document.	この文書に問題は見つかりませんでした。
@@ -2368,6 +2396,7 @@ signature pad	Type	入力
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	ほかに {n} 個の数式が存在しないフィールドを読み取ります。
 @plural	{n} object selected|{n} objects selected	{n}個のオブジェクトを選択中
 	{n} pages	{n} ページ
+	{n} pages scanned	{n} ページをスキャンしました
 	{n} pages selected	{n} ページ選択中
 	{n} pages selected.	{n} ページ選択中。
 @plural	{n} page|{n} pages	{n} ページ

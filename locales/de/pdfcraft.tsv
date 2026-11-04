@@ -28,6 +28,7 @@
 	1 issue	1 Problem
 	1 mark	1 Markierung
 	1 page	1 Seite
+	1 page scanned	1 Seite gescannt
 	1 page selected	1 Seite ausgewählt
 	1 page selected.	1 Seite ausgewählt.
 	180 degrees	180 Grad
@@ -226,6 +227,7 @@
 	Archive documents	Dokumente archivieren
 	Arrange image	Bild anordnen
 	Ask about this document	Fragen zu diesem Dokument stellen
+	Ask to scan more pages	Nach weiteren Seiten fragen
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Fragt GitHub nach dem neuesten Release. Es wird nichts automatisch heruntergeladen oder installiert.
 	Associated with content	Mit Inhalt verknüpft
 	At least one signature has problems.	Mindestens eine Signatur weist Probleme auf.
@@ -262,6 +264,7 @@
 	Bicubic downsampling to	Bikubische Neuberechnung auf
 	Binding	Bindung
 	Binding:	Bindung:
+	Black & White Document	Schwarzweißdokument
 	Black on white	Schwarz auf weiß
 	Blank page	Leere Seite
 	Booklet	Broschüre
@@ -389,7 +392,9 @@
 	Collapse all tools	Alle Werkzeuge einklappen
 	Collapse tag	Tag einklappen
 	Color contrast	Farbkontrast
+	Color Document	Farbdokument
 	Color Images	Farbbilder
+	Color Photo	Farbfoto
 	Color Spaces	Farbräume
 	Colours are remapped while rendering; the document itself never changes.	Farben werden beim Rendern neu zugeordnet; das Dokument selbst bleibt unverändert.
 	Column select	Spaltenauswahl
@@ -471,6 +476,7 @@
 	Couldn't save: {e}	Speichern fehlgeschlagen: {e}
 	Couldn't show the file picker. Please try again.	Die Dateiauswahl konnte nicht angezeigt werden. Versuch es noch einmal.
 	Couldn't split: {e}	Teilen fehlgeschlagen: {e}
+	Couldn't start scanning	Scannen konnte nicht gestartet werden
 	Couldn't summarize comments: {e}	Kommentare konnten nicht zusammengefasst werden: {e}
 	Couldn't take the snapshot: {e}	Der Schnappschuss konnte nicht erstellt werden: {e}
 	Couldn't unlock {name}: {e}	{name} konnte nicht entsperrt werden: {e}
@@ -492,6 +498,7 @@
 	Create link	Link erstellen
 	Create links from URLs	Links aus URLs erstellen
 	Create Link…	Link erstellen…
+	Create PDF	PDF erstellen
 	Create PDF Comment Summary	Kommentarübersicht erstellen
 	Create PDF comment summary…	PDF-Kommentarzusammenfassung erstellen…
 	Create PDF from clipboard	PDF aus Zwischenablage erstellen
@@ -499,6 +506,8 @@
 	Create PDF from images	PDF aus Bildern erstellen
 	Create PDF from images…	PDF aus Bildern erstellen…
 	Create PDF from multiple files…	PDF aus mehreren Dateien erstellen…
+	Create PDF from Scanner	PDF aus Scanner erstellen
+	Create PDF from scanner…	PDF aus Scanner erstellen…
 	Create separate PDFs…	Separate PDFs erstellen…
 	Create {what}	{what} erstellen
 	Created 1 link	1 Link erstellt
@@ -603,6 +612,8 @@ key	Delete	Entf
 	Document and markups	Dokument und Markierungen
 	Document and stamps	Dokument und Stempel
 	Document assembly	Zusammenstellen des Dokuments
+	Document feeder	Dokumenteneinzug
+	Document feeder (both sides)	Dokumenteneinzug (beidseitig)
 	Document has appropriate color contrast	Dokument hat ausreichenden Farbkontrast
 	Document is not image-only PDF	Dokument ist kein reines Bild-PDF
 	Document is tagged PDF	Dokument ist ein getaggtes PDF
@@ -657,6 +668,7 @@ key	Delete	Entf
 	Duplicate pages	Seiten duplizieren
 	Dynamic XFA form laid out from its template: {pages}, {fields}.	Dynamisches XFA-Formular, aus seiner Vorlage aufgebaut: {pages}, {fields}.
 	E-Sign	E-Signatur
+	e.g. 192.168.1.20	z. B. 192.168.1.20
 	e.g. en-US	z. B. de-DE
 	e.g. My stamps	z. B. Meine Stempel
 	Each field needs a tooltip that says what to enter. Add one in Field Properties > General > Tooltip.	Jedes Feld braucht einen Tooltip, der sagt, was einzugeben ist. Füge ihn unter Feldeigenschaften > Allgemein > Tooltip hinzu.
@@ -842,6 +854,7 @@ scroll speed	Fast	Schnell
 	Fix reading order	Lesereihenfolge korrigieren
 	Fixed what could be fixed; 1 problem remains	Alles Behebbare wurde behoben; 1 Problem bleibt bestehen
 	Fixed what could be fixed; {n} problems remain	Alles Behebbare wurde behoben; {n} Probleme bleiben bestehen
+	Flatbed	Flachbett
 	Flatten comments	Kommentare reduzieren
 	Flatten Fill & Sign when saving	Ausfüllen und unterschreiben beim Speichern reduzieren
 	Flatten form fields	Formularfelder reduzieren
@@ -886,6 +899,7 @@ scroll speed	Fast	Schnell
 	Go to the page	Zur Seite wechseln
 	Go to this result	Zu diesem Ergebnis springen
 	Grab bag	Bunt gemischt
+	Grayscale Document	Graustufendokument
 	Grayscale Images	Graustufenbilder
 	Green on black	Grün auf schwarz
 	Greyscale	Graustufen
@@ -1011,6 +1025,7 @@ key	Home	Pos1
 	Left Footer Text	Fußzeile links
 	Left Header Text	Kopfzeile links
 	Left out: {names}	Ausgelassen: {names}
+	Letter	US-Letter
 	LI must be a child of L	LI muss ein untergeordnetes Element von L sein
 	Light blue	Hellblau
 	Light theme	Helles Design
@@ -1049,6 +1064,7 @@ key	Home	Pos1
 	Make Properties Default	Eigenschaften als Standard festlegen
 	Make properties default	Eigenschaften als Standard festlegen
 	Make scans searchable, then make them smaller.	Scans durchsuchbar machen und anschließend verkleinern.
+	Make searchable (recognize text)	Durchsuchbar machen (Text erkennen)
 	Manage embedded index	Eingebetteten Index verwalten
 	March	März
 	Margins (in)	Ränder (Zoll)
@@ -1133,6 +1149,8 @@ key	Home	Pos1
 	Needs manual check	Manuelle Prüfung nötig
 	Negative number style:	Darstellung negativer Zahlen:
 	Nested alternate text	Verschachtelter Alternativtext
+	Network	Netzwerk
+	Network address	Netzwerkadresse
 	New Action	Neue Aktion
 	New Action…	Neue Aktion…
 	New blank PDF	Neues leeres PDF
@@ -1186,6 +1204,8 @@ key	Home	Pos1
 	No preview	Keine Vorschau
 	No printers were found. Check that the printer is installed and the print spooler is running, then open Print again.	Es wurden keine Drucker gefunden. Prüfen Sie, ob der Drucker installiert ist und die Druckwarteschlange läuft, und öffnen Sie dann „Drucken“ erneut.
 	No problems found: the document conforms to {level}.	Keine Probleme gefunden: Das Dokument entspricht {level}.
+	No scanner found	Kein Scanner gefunden
+	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Es wurden keine Scanner gefunden. Prüfen Sie, ob der Scanner eingeschaltet und verbunden ist, oder geben Sie seine Netzwerkadresse ein.
 	No security	Keine Sicherheit
 	No sheets	Keine Blätter
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Im Rahmen wurde keine Unterschrift gefunden. Ziehen Sie den Rahmen über die Unterschrift oder erhöhen Sie die Tintenempfindlichkeit.
@@ -1337,6 +1357,7 @@ animation effects	On	Ein
 	Pages:	Seiten:
 	Pages: {k} of {n}	Seiten: {k} von {n}
 	Panels	Bereiche
+	Paper size	Papierformat
 	Paper:	Papier:
 	Paragraph spacing	Absatzabstand
 	Part of	Teil von
@@ -1411,6 +1432,7 @@ animation effects	On	Ein
 	Preparing sheet {done} of {total} for printing…	Blatt {done} von {total} wird für den Druck vorbereitet…
 	Preparing {n} sheets for printing…	{n} Blätter werden für den Druck vorbereitet…
 	Presentation (.pptx)	Präsentation (.pptx)
+	Preset	Voreinstellung
 	Preview unavailable: {e}	Keine Vorschau: {e}
 	Preview: page {p} of {n}	Vorschau: Seite {p} von {n}
 	Previous ({key})	Vorheriger ({key})
@@ -1643,6 +1665,11 @@ animation effects	On	Ein
 	Scale relative to target page	Relativ zur Zielseite skalieren
 	Scan	Scannen
 	Scan & OCR	Scan und OCR
+	Scan next page	Nächste Seite scannen
+	Scanner	Scanner
+	Scanner's full area	Gesamte Scanfläche
+	Scanning was stopped	Das Scannen wurde angehalten
+	Scanning…	Wird gescannt…
 	Screen flicker	Bildschirmflackern
 	Screen readers choose their voice from the document's language. Set it in Document Properties > Advanced > Language.	Screenreader wählen ihre Stimme anhand der Dokumentsprache. Lege sie unter Dokumenteigenschaften > Erweitert > Sprache fest.
 	Script	Skript
@@ -1660,6 +1687,7 @@ animation effects	On	Ein
 	Search tools and commands…	Tools und Befehle suchen…
 	Search tools…	Werkzeuge suchen…
 	Searchable Image (Exact)	Durchsuchbares Bild (exakt)
+	Searching…	Wird gesucht…
 	Searching… {s} of {p} pages	Suche läuft… {s} von {p} Seiten
 	Searching… {s}/{p}	Suche läuft… {s}/{p}
 	Search…	Suchen…
@@ -1819,6 +1847,7 @@ action wizard	Start	Starten
 	Start page number	Erste Seitenzahl
 	Steps	Schritte
 	Sticky note	Notiz
+	Stop	Anhalten
 	Strength: {s}	Stärke: {s}
 	Strikethrough text	Text durchstreichen
 	Strong	Stark
@@ -1882,6 +1911,7 @@ certificate	Subject	Zertifikatsinhaber
 	Thai and Arabic use regular fallback fonts when available.	Thai und Arabisch verwenden, falls verfügbar, Ersatzschriften im normalen Schriftschnitt.
 	That didn't work: an internal error stopped it ({m}).	Das hat nicht geklappt: Ein interner Fehler ist aufgetreten ({m}).
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	Das hat nicht geklappt: Ein interner Fehler ist aufgetreten ({m}). Deine Dokumente sind unverändert.
+	That isn't a scanner address	Das ist keine Scanneradresse
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Die Berechnungsreihenfolge hat {n} Eintrag, der nichts berechnet. „Reihenfolge korrigieren“ entfernt ihn.|Die Berechnungsreihenfolge hat {n} Einträge, die nichts berechnen. „Reihenfolge korrigieren“ entfernt sie.
 	The checker found 1 problem which may prevent the document from being fully accessible.	Die Prüfung hat 1 Problem gefunden, das die vollständige Barrierefreiheit des Dokuments verhindern kann.
 	The checker found no problems in this document.	Die Prüfung hat in diesem Dokument keine Probleme gefunden.
@@ -2203,6 +2233,7 @@ signature pad	Type	Tippen
 @plural	{n} more formula reads a missing field.|{n} more formulas read missing fields.	{n} weitere Formel liest ein fehlendes Feld.|{n} weitere Formeln lesen fehlende Felder.
 @plural	{n} object selected|{n} objects selected	{n} Objekt ausgewählt|{n} Objekte ausgewählt
 	{n} pages	{n} Seiten
+	{n} pages scanned	{n} Seiten gescannt
 	{n} pages selected	{n} Seiten ausgewählt
 	{n} pages selected.	{n} Seiten ausgewählt.
 @plural	{n} page|{n} pages	{n} Seite|{n} Seiten
