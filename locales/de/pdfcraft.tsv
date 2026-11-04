@@ -15,6 +15,7 @@
 	 (page {p})	 (Seite {p})
 	 (searching… {s} of {p} pages)	 (Suche läuft… {s} von {p} Seiten)
 	 ({n} at {dpi} dpi, the largest size they can be drawn at)	 ({n} mit {dpi} dpi, der größten Auflösung, in der sie gezeichnet werden können)
+	 ({n} left as they are)	 ({n} unverändert belassen)
 	 ({s} not exported: {first})	 ({s} nicht exportiert: {first})
 	 ({s} warnings: {first})	 ({s} Warnungen: {first})
 	 on page {label}	 auf Seite {label}
@@ -38,8 +39,10 @@
 	180 degrees	180 Grad
 	4 x 6 in label (101.6 x 152.4 mm)	Etikett 4 × 6 Zoll (101,6 × 152,4 mm)
 	9 digit, A letter, O letter or digit, X any character	9 Ziffer, A Buchstabe, O Buchstabe oder Ziffer, X beliebiges Zeichen
+	; 1 image downsampled	; 1 Bild heruntergerechnet
 	; 1 page already had text	; 1 Seite enthielt bereits Text
 	; 1 page skipped	; 1 Seite übersprungen
+	; 1 signed file kept its images	; 1 signierte Datei behielt ihre Bilder
 	; converted to {level}, but not everything complies yet ({first}); see Apply PDF standards ▸ Save as PDF/A	; in {level} umgewandelt, aber noch nicht vollständig konform ({first}); siehe PDF-Standards anwenden ▸ Als PDF/A speichern
 	; corrected {n} pages	; {n} Seiten korrigiert
 	; failed: {list}	; fehlgeschlagen: {list}
@@ -47,9 +50,12 @@
 	; not saved as {level}: {why}	; nicht als {level} gespeichert: {why}
 	; saved as {level}	; als {level} gespeichert
 	; skipped: {n}	; übersprungen: {n}
+	; the document is signed, so its images were left as they are	; das Dokument ist signiert, daher bleiben seine Bilder unverändert
+	; {n} images downsampled	; {n} Bilder heruntergerechnet
 	; {n} pages already had text	; {n} Seiten enthielten bereits Text
 	; {n} pages skipped	; {n} Seiten übersprungen
 	; {n} saved as PDF/A	; {n} als PDF/A gespeichert
+	; {n} signed files kept their images	; {n} signierte Dateien behielten ihre Bilder
 	? of {n}	? von {n}
 	@{login}: {prs} PRs, {commits} commits, +{added} / −{deleted} lines (Δ {delta}), +{bin_added} / −{bin_deleted} binary assets, {first} – {last}	@{login}: {prs} PRs, {commits} Commits, +{added} / −{deleted} Zeilen (Δ {delta}), +{bin_added} / −{bin_deleted} Binärdateien, {first} – {last}
 	`{command}` {when}	`{command}` {when}
@@ -206,6 +212,7 @@
 	Added {n} comments	{n} Kommentare hinzugefügt
 	Adding images arrives on the web with file pickers for images	Bilder hinzufügen kommt im Web zusammen mit der Bildauswahl
 	Additional Metadata	Zusätzliche Metadaten
+	Adds invisible text over each word and reduces scan images above the Downsample to resolution to it, for a smaller file	Legt unsichtbaren Text über jedes Wort und verringert Scanbilder oberhalb der Auflösung unter „Herunterrechnen auf“ auf diese, für eine kleinere Datei
 	Adds invisible text over each word; the page image is not changed	Legt unsichtbaren Text über jedes Wort; das Seitenbild bleibt unverändert
 	Advanced optimization	Erweiterte Optimierung
 	Advanced options	Erweiterte Optionen
@@ -901,6 +908,7 @@ key	Delete	Entf
 	Downloading form detection…	Formularerkennung wird heruntergeladen…
 	Downloading… {pct}% — {note}	Wird geladen… {pct} % — {note}
 	Downloads open in your browser. Installation is manual; nothing is installed automatically.	Downloads werden im Browser geöffnet. Die Installation erfolgt manuell; es wird nichts automatisch installiert.
+	Downsample images	Bilder herunterrechnen
 	Downsample to	Herunterrechnen auf
 	DPI sets the printed page size without resampling the image.	Die DPI bestimmt die gedruckte Seitengröße, ohne das Bild neu zu berechnen.
 	Drag a field to move it, or select it and press {up} or {down}.	Ziehe ein Feld, um es zu verschieben, oder wähle es aus und drücke {up} oder {down}.
@@ -2854,6 +2862,7 @@ calendar weekday	Th	Do
 	The Dock shows it the next time PdfCraft opens.	Das Dock zeigt es beim nächsten Öffnen von PdfCraft.
 	The document changed while it was being signed, so the signature wasn't saved.	Das Dokument wurde während des Signierens geändert, daher wurde die Signatur nicht gespeichert.
 	The document changed while its margins were measured; nothing was cropped	Das Dokument hat sich geändert, während seine Ränder gemessen wurden; nichts wurde zugeschnitten
+	The document changed while its text was being recognized, so nothing was added. Run Recognize text again.	Das Dokument wurde während der Texterkennung geändert, daher wurde nichts hinzugefügt. Führen Sie „Text erkennen“ erneut aus.
 	The document changed while you were choosing a file, so nothing was changed.	Das Dokument hat sich geändert, während du eine Datei ausgewählt hast; deshalb wurde nichts geändert.
 	The document changed while you were editing field properties.	Das Dokument hat sich geändert, während du die Feldeigenschaften bearbeitet hast.
 	The document couldn't be prepared	Das Dokument konnte nicht vorbereitet werden
