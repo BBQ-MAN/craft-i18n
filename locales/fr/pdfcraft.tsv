@@ -458,7 +458,9 @@ certificate	Basic constraints	Contraintes de base
 	Certify (invisible signature)	Certifier (signature invisible)
 	Certify (visible signature)	Certifier (signature visible)
 	Challenge: {challenge}	Défi : {challenge}
+	Change a signed document?	Modifier un document signé ?
 	Change additional metadata	Modifier les métadonnées supplémentaires
+	Change anyway	Modifier quand même
 	Change Author	Modifier l'auteur
 	Change colour	Changer la couleur
 	Change comment properties	Modifier les propriétés du commentaire
@@ -1487,6 +1489,9 @@ certificate	Issued by	Émis par
 certificate	Issued to	Émis pour
 	Issuer	Émetteur
 certificate	Issuer	Émetteur
+	It is certified with no changes allowed: any change invalidates the certification.	Il est certifié sans aucune modification autorisée : toute modification invalide la certification.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	Il est certifié : le remplissage de formulaires et la signature sont autorisés ; les autres modifications invalident la certification.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	Il est certifié : le remplissage de formulaires, la signature et les commentaires sont autorisés ; les autres modifications invalident la certification.
 	it was still in the document afterwards, so the change was undone	elle était encore dans le document après la suppression, la modification a donc été annulée
 	Item List	Liste d'éléments
 	Item:	Élément :
@@ -2408,6 +2413,7 @@ certificate	Public key	Clé publique
 	Remove redaction marks	Retirer les marques de biffure
 	Remove saved {what}	Supprimer {what} (version enregistrée)
 	Remove security	Retirer la protection
+	Remove security?	Supprimer la sécurité ?
 	Remove Signature	Supprimer la signature
 	Remove signature	Supprimer la signature
 	Remove signature…	Supprimer la signature…
@@ -3153,6 +3159,7 @@ calendar weekday	Th	Je
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	La signature ECDSA est constituée des valeurs brutes r et s au lieu d'une séquence DER ; elle a tout de même été lue.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Le jeton d'horodatage incorporé est valide et son autorité est approuvée ; l'heure de confiance est {}.
 	The existing action will be preserved.	L’action existante sera conservée.
+	The extracted pages aren't protected: the original's security settings don't carry over.	Les pages extraites ne sont pas protégées : les paramètres de sécurité de l’original ne sont pas conservés.
 	The feeder ran out of paper.	Le chargeur n’a plus de papier.
 	The feeder took more than one sheet.	Le chargeur a entraîné plus d’une feuille.
 	The field properties could not be changed.	Les propriétés des champs n'ont pas pu être modifiées.
@@ -3210,6 +3217,7 @@ calendar weekday	Th	Je
 	The password is only used to read the file; it isn't saved.	Le mot de passe sert uniquement à lire le fichier ; il n'est pas enregistré.
 	The password must have at least 6 characters.	Le mot de passe doit comporter au moins 6 caractères.
 	The password must have at least 8 characters.	Le mot de passe doit comporter au moins 8 caractères.
+	The passwords and the restrictions are removed when you save.	Les mots de passe et les restrictions sont supprimés à l’enregistrement.
 	The passwords do not match.	Les mots de passe ne correspondent pas.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Les polices de texte PDF ne peuvent pas afficher « {c} » ({code}). Choisissez un texte pris en charge.
 	The PIN goes only to the card; PdfCraft doesn't keep it.	Le code PIN n'est transmis qu'à la carte ; PdfCraft ne le conserve pas.
@@ -3312,6 +3320,7 @@ calendar weekday	Th	Je
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	le service de signature a refusé le code PIN ou l'OTP (l'OTP a peut-être expiré)
 	the signing service rejected the user name or password	le service de signature a refusé le nom d'utilisateur ou le mot de passe
 	The smart card's digital IDs couldn't be listed: {e}	Impossible de lister les ID numériques de la carte à puce : {e}
+	The split files aren't protected: the original's security settings don't carry over.	Les fichiers scindés ne sont pas protégés : les paramètres de sécurité de l’original ne sont pas conservés.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Les polices standard ne peuvent pas afficher « {c} » ({code}). Pour l'instant, seuls les caractères d'Europe occidentale peuvent être ajoutés comme texte.
 	The standard it must meet and where the file goes	La norme à respecter et la destination du fichier
 	the tesseract engine is not available in the web build	le moteur tesseract n'est pas disponible dans la version web
@@ -3385,6 +3394,7 @@ calendar weekday	Th	Je
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	Ce document est signé numériquement. L'assainissement réécrit tout le fichier, ce qui invalide les signatures ; il ne peut donc se faire que sans elles.
 	This document is not inside a CAdES envelope	Ce document ne se trouve pas dans une enveloppe de signature CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Ce document est protégé. Sa protection restreint certaines modifications.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	Ce document est signé. Une modification ajoute une nouvelle version : les signatures restent valables pour la version qu’elles ont signée, et les lecteurs indiqueront que le document a été modifié après la signature.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	ce document est signé : le réécrire invaliderait ses signatures (enregistrez-le de façon incrémentale)
 	This document is trying to open a local file:	Ce document tente d’ouvrir un fichier local :
 	This document isn't in a folder yet: save it first	Ce document n'est pas encore dans un dossier : enregistrez-le d'abord

@@ -455,6 +455,8 @@ certificate	Basic constraints	Perusrajoitukset
 	Certify (invisible signature)	Varmenna (näkymätön allekirjoitus)
 	Certify (visible signature)	Varmenna (näkyvä allekirjoitus)
 	Challenge: {challenge}	Haaste: {challenge}
+	Change a signed document?	Muutetaanko allekirjoitettua asiakirjaa?
+	Change anyway	Muuta silti
 	Change Author	Muuta tekijää
 	Change colour	Muuta väriä
 	Change comment properties	Muuta kommentin ominaisuuksia
@@ -1435,6 +1437,9 @@ certificate	Issued by	Myöntäjä
 certificate	Issued to	Myönnetty kohteelle
 	Issuer	Myöntäjä
 certificate	Issuer	Myöntäjä
+	It is certified with no changes allowed: any change invalidates the certification.	Se on varmennettu eikä muutoksia sallita: mikä tahansa muutos mitätöi varmennuksen.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	Se on varmennettu: lomakkeiden täyttäminen ja allekirjoittaminen ovat sallittuja; muut muutokset mitätöivät varmennuksen.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	Se on varmennettu: lomakkeiden täyttäminen, allekirjoittaminen ja kommentointi ovat sallittuja; muut muutokset mitätöivät varmennuksen.
 	it was still in the document afterwards, so the change was undone	se oli yhä asiakirjassa jälkeenpäin, joten muutos kumottiin
 	Italic	Kursivointi
 	Item List	Kohdeluettelo
@@ -2255,6 +2260,7 @@ certificate	Public key	Julkinen avain
 	Remove redaction marks	Poista peittomerkinnät
 	Remove saved {what}	Poista tallennettu {what}
 	Remove security	Poista suojaus
+	Remove security?	Poistetaanko suojaus?
 	Remove Signature	Poista allekirjoitus
 	Remove signature	Poista allekirjoitus
 	Remove signature…	Poista allekirjoitus…
@@ -2925,6 +2931,7 @@ calendar weekday	Th	To
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	ECDSA-allekirjoitus on raakoina r- ja s-arvoina DER-sekvenssin sijaan; se luettiin silti.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Upotettu aikaleimatunniste on kelvollinen ja sen myöntäjä on luotettu; luotettu aika on {}.
 	The existing action will be preserved.	Nykyinen toiminto säilytetään.
+	The extracted pages aren't protected: the original's security settings don't carry over.	Poimitut sivut eivät ole suojattuja: alkuperäisen suojausasetukset eivät siirry niihin.
 	The feeder ran out of paper.	The feeder ran out of paper.
 	The feeder took more than one sheet.	The feeder took more than one sheet.
 	The field properties could not be changed.	Kenttäominaisuuksia ei voitu muuttaa.
@@ -3002,6 +3009,7 @@ calendar weekday	Th	To
 	The password is only used to read the file; it isn't saved.	Salasanaa käytetään vain tiedoston lukemiseen; sitä ei tallenneta.
 	The password must have at least 6 characters.	Salasanassa on oltava vähintään 6 merkkiä.
 	The password must have at least 8 characters.	Salasanassa on oltava vähintään 8 merkkiä.
+	The passwords and the restrictions are removed when you save.	Salasanat ja rajoitukset poistetaan, kun tallennat.
 	The passwords do not match.	Salasanat eivät täsmää.
 	The passwords don't match.	Salasanat eivät täsmää.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF-tekstifontit eivät pysty piirtämään merkkiä ”{c}” ({code}). Valitse tuettua tekstiä.
@@ -3099,6 +3107,7 @@ calendar weekday	Th	To
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	allekirjoituspalvelu hylkäsi PIN-koodin tai kertakäyttökoodin (kertakäyttökoodi on voinut vanhentua)
 	the signing service rejected the user name or password	allekirjoituspalvelu hylkäsi käyttäjänimen tai salasanan
 	The smart card's digital IDs couldn't be listed: {e}	Älykortin digitaalisia tunnuksia ei voitu luetella: {e}
+	The split files aren't protected: the original's security settings don't carry over.	Jaetut tiedostot eivät ole suojattuja: alkuperäisen suojausasetukset eivät siirry niihin.
 	The spot colour {} has an alternate that can't be converted to CMYK yet	Spottivärillä {} on vaihtoehtoinen väri, jota ei vielä voi muuntaa CMYK:ksi
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Vakiofontit eivät pysty piirtämään merkkiä ”{c}” ({code}). Toistaiseksi tekstinä voi lisätä vain länsieurooppalaisia merkkejä.
 	The standard structure type {} is mapped to a type that isn't standard	Vakiorakennetyyppi {} on yhdistetty tyyppiin, joka ei ole vakiotyyppi
@@ -3180,6 +3189,7 @@ calendar weekday	Th	To
 	This document hasn't been checked yet.	Tätä asiakirjaa ei ole vielä tarkistettu.
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	Tämä asiakirja on allekirjoitettu digitaalisesti. Puhdistus kirjoittaa koko tiedoston uudelleen, mikä mitätöi allekirjoitukset, joten se voi jatkua vain ilman niitä.
 	This document is secured. Some changes are restricted by its security settings.	Tämä asiakirja on suojattu. Sen suojausasetukset rajoittavat joitakin muutoksia.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	Tämä asiakirja on allekirjoitettu. Muutos lisää uuden version: allekirjoitukset pysyvät voimassa allekirjoittamassaan versiossa, ja katseluohjelmat näyttävät, että asiakirjaa on muutettu allekirjoittamisen jälkeen.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	tämä asiakirja on allekirjoitettu: sen uudelleenkirjoittaminen mitätöisi allekirjoitukset (tallenna se sen sijaan lisäävästi)
 	This document is trying to open a local file:	Tämä asiakirja yrittää avata paikallisen tiedoston:
 	This document isn't in a folder yet: save it first	Tämä asiakirja ei ole vielä missään kansiossa: tallenna se ensin

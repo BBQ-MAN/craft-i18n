@@ -492,7 +492,9 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Certify (visible signature)	Patvirtinti (matomas parašas)
 	Challenge: {challenge}	Užklausa: {challenge}
 	Change	Keisti
+	Change a signed document?	Keisti pasirašytą dokumentą?
 	Change additional metadata	Keisti papildomus metaduomenis
+	Change anyway	Vis tiek keisti
 	Change Author	Keisti autorių
 	Change colour	Keisti spalvą
 	Change comment properties	Keisti komentaro savybes
@@ -1548,6 +1550,9 @@ certificate	Issued by	Išdavė
 certificate	Issued to	Išduota kam
 	Issuer	Išdavėjas
 certificate	Issuer	Išdavėjas
+	It is certified with no changes allowed: any change invalidates the certification.	Jis sertifikuotas neleidžiant jokių pakeitimų: bet koks pakeitimas panaikina sertifikavimą.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	Jis sertifikuotas: leidžiama pildyti formas ir pasirašyti; kiti pakeitimai panaikina sertifikavimą.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	Jis sertifikuotas: leidžiama pildyti formas, pasirašyti ir komentuoti; kiti pakeitimai panaikina sertifikavimą.
 	it was still in the document afterwards, so the change was undone	pašalinus jis vis dar buvo dokumente, todėl pakeitimas atšauktas
 	Item List	Elementų sąrašas
 	Item:	Elementas:
@@ -2465,6 +2470,7 @@ certificate	Public key	Viešasis raktas
 	Remove redaction marks	Pašalinti konfidencialios informacijos šalinimo žymas
 	Remove saved {what}	Pašalinti įrašytą {what}
 	Remove security	Pašalinti apsaugą
+	Remove security?	Pašalinti saugumą?
 	Remove Signature	Parašo šalinimas
 	Remove signature	Pašalinti parašą
 	Remove signature…	Pašalinti parašą…
@@ -3223,6 +3229,7 @@ calendar weekday	Th	Kt
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	ECDSA parašas pateiktas kaip neapdorotos r ir s reikšmės, o ne DER seka; jis vis tiek perskaitytas.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Įdėtas laiko žymos žetonas galioja, o ją išdavusi įstaiga patikima; patikimas laikas: {}.
 	The existing action will be preserved.	Esamas veiksmas bus išsaugotas.
+	The extracted pages aren't protected: the original's security settings don't carry over.	Išskirti puslapiai neapsaugoti: originalo saugumo nustatymai neperkeliami.
 	The feeder ran out of paper.	Tiekiklyje pasibaigė popierius.
 	The feeder took more than one sheet.	Tiekiklis paėmė daugiau nei vieną lapą.
 	The field properties could not be changed.	Nepavyko pakeisti lauko savybių.
@@ -3310,6 +3317,7 @@ calendar weekday	Th	Kt
 	The password is only used to read the file; it isn't saved.	Slaptažodis naudojamas tik failui perskaityti ir nėra įrašomas.
 	The password must have at least 6 characters.	Slaptažodį turi sudaryti bent 6 simboliai.
 	The password must have at least 8 characters.	Slaptažodį turi sudaryti bent 8 simboliai.
+	The passwords and the restrictions are removed when you save.	Slaptažodžiai ir apribojimai pašalinami įrašant.
 	The passwords do not match.	Slaptažodžiai nesutampa.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF teksto šriftai negali atvaizduoti simbolio „{c}“ ({code}). Pasirinkite palaikomą tekstą.
 	The PDF/X output intent has neither an embedded profile nor a characterization in the ICC registry	PDF/X išvesties paskirtis neturi nei įdėto profilio, nei charakterizacijos iš ICC registro
@@ -3418,6 +3426,7 @@ calendar weekday	Th	Kt
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	pasirašymo paslauga atmetė PIN kodą arba OTP (galbūt baigėsi OTP galiojimas)
 	the signing service rejected the user name or password	pasirašymo paslauga atmetė naudotojo vardą arba slaptažodį
 	The smart card's digital IDs couldn't be listed: {e}	Nepavyko išvardyti lustinės kortelės skaitmeninių ID: {e}
+	The split files aren't protected: the original's security settings don't carry over.	Padalyti failai neapsaugoti: originalo saugumo nustatymai neperkeliami.
 	The spot colour {} has an alternate that can't be converted to CMYK yet	Taškinė spalva {} turi alternatyvą, kurios dar negalima konvertuoti į CMYK
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standartiniai šriftai negali atvaizduoti simbolio „{c}“ ({code}). Kol kas galima įvesti tik Vakarų Europos simbolius.
 	The standard it must meet and where the file goes	Standartas, kurio reikia laikytis, ir kur eina failas
@@ -3508,6 +3517,7 @@ calendar weekday	Th	Kt
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	Šis dokumentas pasirašytas skaitmeniniu parašu. Paslėptos informacijos šalinimas perrašo visą failą, todėl parašai tampa negaliojantys, tad tęsti galima tik be jų.
 	This document is not inside a CAdES envelope	Šis dokumentas nėra CAdES parašo voko viduje.
 	This document is secured. Some changes are restricted by its security settings.	Dokumentas apsaugotas. Saugos nuostatos riboja kai kuriuos pakeitimus.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	Šis dokumentas pasirašytas. Pakeitimas prideda naują versiją: parašai lieka galioti tai versijai, kurią pasirašė, o peržiūros programos rodys, kad dokumentas pakeistas po pasirašymo.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	šis dokumentas pasirašytas: perrašius parašai nebegaliotų (vietoj to įrašykite palaipsniui)
 	This document is trying to open a local file:	Šis dokumentas bando atverti vietinį failą:
 	This document isn't in a folder yet: save it first	Šis dokumentas dar nėra jokiame aplanke: pirmiausia jį įrašykite

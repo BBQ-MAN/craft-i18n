@@ -394,6 +394,8 @@ certificate	Basic constraints	سنووردارکردنە بنەڕەتییەکا�
 	Certify (invisible signature)	بڕوانامەدان (واژووی نەبینراو)
 	Certify (visible signature)	بڕوانامەدان (واژووی بینراو)
 	Change	گۆڕین
+	Change a signed document?	بەڵگەنامەیەکی واژووکراو بگۆڕدرێت؟
+	Change anyway	هەر بیگۆڕە
 	Change Author	گۆڕینی نووسەر
 	Change colour	گۆڕینی ڕەنگ
 	Change comment properties	گۆڕینی تایبەتمەندییەکانی لێدوان
@@ -1330,6 +1332,9 @@ certificate	Issued by	دەرکراوە لەلایەن
 certificate	Issued to	دەرکراوە بۆ
 	Issuer	دەرکەر
 certificate	Issuer	دەرکەر
+	It is certified with no changes allowed: any change invalidates the certification.	پشتڕاستکراوەتەوە و هیچ گۆڕانکارییەک ڕێگەپێدراو نییە: هەر گۆڕانکارییەک پشتڕاستکردنەوەکە پووچەڵ دەکاتەوە.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	پشتڕاستکراوەتەوە: پڕکردنەوەی فۆرم و واژووکردن ڕێگەپێدراون؛ گۆڕانکارییەکانی تر پشتڕاستکردنەوەکە پووچەڵ دەکەنەوە.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	پشتڕاستکراوەتەوە: پڕکردنەوەی فۆرم، واژووکردن و لێدوان ڕێگەپێدراون؛ گۆڕانکارییەکانی تر پشتڕاستکردنەوەکە پووچەڵ دەکەنەوە.
 	Italic	لار
 	Item List	پێڕستی بابەتەکان
 	Item:	بابەت:
@@ -2098,6 +2103,7 @@ certificate	Public key	کلیلی گشتی
 	Remove redaction marks	لابردنی نیشانەکانی شاردنەوە
 	Remove saved {what}	لابردنی {what}ی پاشەکەوتکراو
 	Remove security	لابردنی ئاسایش
+	Remove security?	ئاسایش لاببرێت؟
 	Remove the digital signatures: their fields, how they look on the page and their validation data	لابردنی واژۆ دیجیتاڵییەکان: خانەکانیان، شێوەیان لەسەر پەڕە و زانیاری پشتڕاستکردنەوەیان
 	Remove this leaf tag from reading order and mark its direct content as an artifact	ئەم تاگە گەڵاییە لە ڕیزبەندی خوێندنەوە لابە و ناوەڕۆکە ڕاستەوخۆکەی وەک توخمی ڕازاندنەوە نیشانە بکە
 	Remove unreferenced named destinations	لابردنی مەبەستە ناونراوەکانی ئاماژەپێنەکراو
@@ -2685,6 +2691,7 @@ calendar weekday	Th	پێنجشەممە
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	واژووی ECDSA بەها خاوەکانی r و s ـە لە جیاتی زنجیرەی DER؛ بە هەر حاڵ خوێندرایەوە.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	نیشانەی مۆری کاتی تێکەڵکراو دروستە و دەسەڵاتەکەی متمانەپێکراوە؛ کاتی متمانەپێکراو {} ـە.
 	The existing action will be preserved.	کردارە هەبووەکە دەپارێزرێت.
+	The extracted pages aren't protected: the original's security settings don't carry over.	لاپەڕە دەرهێنراوەکان پارێزراو نین: ڕێکخستنەکانی ئاسایشی ڕەسەنەکە ناگوازرێنەوە.
 	The feeder ran out of paper.	The feeder ran out of paper.
 	The feeder took more than one sheet.	The feeder took more than one sheet.
 	The field properties could not be changed.	نەتوانرا تایبەتمەندییەکانی خانە بگۆڕدرێن.
@@ -2720,6 +2727,7 @@ calendar weekday	Th	پێنجشەممە
 	The password is incorrect.	وشەی نهێنییەکە هەڵەیە.
 	The password is only used to read the file; it isn't saved.	وشە نهێنییەکە تەنیا بۆ خوێندنەوەی فایلەکە بەکار دەهێنرێت؛ پاشەکەوت ناکرێت.
 	The password must have at least 6 characters.	وشەی نهێنی دەبێت لانیکەم 6 پیتی هەبێت.
+	The passwords and the restrictions are removed when you save.	وشە نهێنییەکان و سنووردارکردنەکان لە کاتی پاشەکەوتکردندا لادەبرێن.
 	The passwords do not match.	وشە نهێنییەکان یەک ناگرنەوە.
 	The passwords don't match.	وشە نهێنییەکان یەک ناگرنەوە.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	فۆنتەکانی دەقی PDF ناتوانن «{c}» بکێشن ({code}). دەقی پشتگیریکراو هەڵبژێرە.
@@ -2841,6 +2849,7 @@ calendar weekday	Th	پێنجشەممە
 	This document hasn't been checked yet.	ئەم بەڵگەنامەیە هێشتا پشکنینی بۆ نەکراوە.
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	ئەم بەڵگەنامەیە بە دیجیتاڵی واژۆ کراوە. پاککردنەوە هەموو فایلەکە دەنووسێتەوە، کە واژۆکان نادروست دەکات، بۆیە تەنها بەبێ ئەوان دەتوانێت بەردەوام بێت.
 	This document is secured. Some changes are restricted by its security settings.	ئەم بەڵگەنامەیە پارێزراوە. هەندێک گۆڕانکاری بە ڕێکخستنەکانی ئاسایشەکەی سنووردار کراوە.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	ئەم بەڵگەنامەیە واژووکراوە. گۆڕانکارییەک وەشانێکی نوێ زیاد دەکات: واژووەکان بۆ ئەو وەشانەی واژوویان کردووە دروست دەمێننەوە، و پیشاندەرەکان پیشان دەدەن کە بەڵگەنامەکە دوای واژووکردن گۆڕدراوە.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	ئەم بەڵگەنامەیە واژوو کراوە: نووسینەوەی دووبارە واژووەکانی بێبایەخ دەکات (لە جیاتی ئەوە بە شێوەی زیادکردن پاشەکەوتی بکە)
 	This document is trying to open a local file:	ئەم بەڵگەنامەیە هەوڵی کردنەوەی فایلێکی ناوخۆیی دەدات:
 	This document isn't in a folder yet: save it first	ئەم بەڵگەنامەیە هێشتا لە هیچ فۆڵدەرێکدا نییە: سەرەتا پاشەکەوتی بکە

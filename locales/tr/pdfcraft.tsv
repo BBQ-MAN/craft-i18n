@@ -445,7 +445,9 @@
 	Certify (invisible signature)	Sertifikala (görünmez imza)
 	Certify (visible signature)	Sertifikala (görünür imza)
 	Challenge: {challenge}	Sınama: {challenge}
+	Change a signed document?	İmzalı belge değiştirilsin mi?
 	Change additional metadata	Ek meta verileri değiştir
+	Change anyway	Yine de değiştir
 	Change Author	Yazarı Değiştir
 	Change colour	Rengi değiştir
 	Change comment properties	Yorum özelliklerini değiştir
@@ -1450,6 +1452,9 @@ key	Home	Home
 	Issued by: 	Veren: 
 	Issued to	Verilen kişi/kurum
 	Issuer	Veren
+	It is certified with no changes allowed: any change invalidates the certification.	Değişikliğe izin vermeyen bir sertifikası var: her değişiklik sertifikayı geçersiz kılar.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	Sertifikalı: form doldurma ve imzalama serbest; diğer değişiklikler sertifikayı geçersiz kılar.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	Sertifikalı: form doldurma, imzalama ve yorum ekleme serbest; diğer değişiklikler sertifikayı geçersiz kılar.
 	it was still in the document afterwards, so the change was undone	kaldırıldıktan sonra hâlâ belgedeydi, bu yüzden değişiklik geri alındı
 	italic	italik
 	Item List	Öğe Listesi
@@ -2343,6 +2348,7 @@ animation effects	On	Açık
 	Remove redaction marks	Karartma işaretlerini kaldır
 	Remove saved {what}	Kayıtlı {what} kaldır
 	Remove security	Güvenliği kaldır
+	Remove security?	Güvenlik kaldırılsın mı?
 	Remove Signature	İmzayı Kaldır
 	Remove signature	İmzayı kaldır
 	Remove signature…	İmzayı kaldır…
@@ -3068,6 +3074,7 @@ calendar weekday	Th	Pe
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	ECDSA imzası bir DER dizisi yerine ham r ve s değerlerinden oluşuyor; yine de okundu.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Gömülü zaman damgası belirteci geçerli ve yetkilisine güveniliyor; güvenilir zaman {}.
 	The existing action will be preserved.	Mevcut işlem korunacak.
+	The extracted pages aren't protected: the original's security settings don't carry over.	Çıkarılan sayfalar korumalı değil: özgün belgenin güvenlik ayarları aktarılmaz.
 	The feeder ran out of paper.	Besleyicideki kağıt bitti.
 	The feeder took more than one sheet.	Besleyici birden fazla sayfa çekti.
 	The field properties could not be changed.	Alan özellikleri değiştirilemedi.
@@ -3123,6 +3130,7 @@ calendar weekday	Th	Pe
 	The password is only used to read the file; it isn't saved.	Parola yalnızca dosyayı okumak için kullanılır; kaydedilmez.
 	The password must have at least 6 characters.	Parola en az 6 karakter olmalıdır.
 	The password must have at least 8 characters.	Parola en az 8 karakter olmalıdır.
+	The passwords and the restrictions are removed when you save.	Parolalar ve kısıtlamalar kaydedildiğinde kaldırılır.
 	The passwords do not match.	Parolalar eşleşmiyor.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF metin yazı tipleri “{c}” ({code}) karakterini çizemez. Desteklenen bir metin seçin.
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN yalnızca karta gider; PdfCraft onu saklamaz.
@@ -3224,6 +3232,7 @@ calendar weekday	Th	Pe
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	imza hizmeti PIN kodunu veya OTP'yi reddetti (OTP'nin süresi dolmuş olabilir)
 	the signing service rejected the user name or password	imza hizmeti kullanıcı adını veya parolayı reddetti
 	The smart card's digital IDs couldn't be listed: {e}	Akıllı kartın dijital kimlikleri listelenemedi: {e}
+	The split files aren't protected: the original's security settings don't carry over.	Bölünen dosyalar korumalı değil: özgün belgenin güvenlik ayarları aktarılmaz.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standart yazı tipleri “{c}” ({code}) karakterini çizemiyor. Şimdilik metin olarak yalnızca Batı Avrupa karakterleri eklenebilir.
 	The standard it must meet and where the file goes	Uyması gereken standart ve dosyanın gideceği yer
 	the tesseract engine is not available in the web build	tesseract motoru web sürümünde kullanılamaz
@@ -3297,6 +3306,7 @@ calendar weekday	Th	Pe
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	Bu belge dijital olarak imzalanmış. Temizleme tüm dosyayı yeniden yazar ve bu imzaları geçersiz kılar; bu yüzden yalnızca imzalar olmadan devam edebilir.
 	This document is not inside a CAdES envelope	Bu belge bir CAdES imza zarfının içinde değil.
 	This document is secured. Some changes are restricted by its security settings.	Bu belge güvenlidir. Bazı değişiklikler güvenlik ayarlarıyla kısıtlanmıştır.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	Bu belge imzalı. Bir değişiklik yeni bir sürüm ekler: imzalar imzaladıkları sürüm için geçerli kalır ve görüntüleyiciler belgenin imzadan sonra değiştirildiğini gösterir.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	bu belge imzalanmış: yeniden yazılması imzalarını geçersiz kılar (bunun yerine aşamalı olarak kaydedin)
 	This document is trying to open a local file:	Bu belge yerel bir dosya açmaya çalışıyor:
 	This document isn't in a folder yet: save it first	Bu belge henüz bir klasörde değil: önce kaydedin

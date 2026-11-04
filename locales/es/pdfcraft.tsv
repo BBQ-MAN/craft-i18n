@@ -495,7 +495,9 @@ certificate	Basic constraints	Restricciones básicas
 	Certify (invisible signature)	Certificar (firma invisible)
 	Certify (visible signature)	Certificar (firma visible)
 	Challenge: {challenge}	Desafío: {challenge}
+	Change a signed document?	¿Cambiar un documento firmado?
 	Change additional metadata	Cambiar los metadatos adicionales
+	Change anyway	Cambiar de todos modos
 	Change Author	Cambiar el autor
 	Change colour	Cambiar color
 	Change comment properties	Cambiar propiedades del comentario
@@ -1554,6 +1556,9 @@ certificate	Issued by	Emitido por
 certificate	Issued to	Emitido a
 	Issuer	Emisor
 certificate	Issuer	Emisor
+	It is certified with no changes allowed: any change invalidates the certification.	Está certificado sin permitir cambios: cualquier cambio invalida la certificación.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	Está certificado: se permiten rellenar formularios y firmar; otros cambios invalidan la certificación.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	Está certificado: se permiten rellenar formularios, firmar y comentar; otros cambios invalidan la certificación.
 	it was still in the document afterwards, so the change was undone	seguía en el documento después de quitarla, así que el cambio se deshizo
 	Item List	Lista de elementos
 	Item:	Elemento:
@@ -2479,6 +2484,7 @@ certificate	Public key	Clave pública
 	Remove redaction marks	Quitar marcas de censura
 	Remove saved {what}	Quitar {what} de lo guardado
 	Remove security	Quitar seguridad
+	Remove security?	¿Quitar la seguridad?
 	Remove Signature	Quitar firma
 	Remove signature	Quitar firma
 	Remove signature…	Quitar firma…
@@ -3234,6 +3240,7 @@ calendar weekday	Th	Ju
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	La firma ECDSA son los valores r y s en bruto en vez de una secuencia DER; se ha leído igualmente.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	El sello de tiempo incrustado es válido y su autoridad es de confianza; la hora de confianza es {}.
 	The existing action will be preserved.	Se conservará la acción existente.
+	The extracted pages aren't protected: the original's security settings don't carry over.	Las páginas extraídas no están protegidas: la configuración de seguridad del original no se conserva.
 	The feeder ran out of paper.	Se acabó el papel del alimentador.
 	The feeder took more than one sheet.	El alimentador tomó más de una hoja.
 	The field properties could not be changed.	No se pudieron cambiar las propiedades de los campos.
@@ -3321,6 +3328,7 @@ calendar weekday	Th	Ju
 	The password is only used to read the file; it isn't saved.	La contraseña solo se usa para leer el archivo; no se guarda.
 	The password must have at least 6 characters.	La contraseña debe tener al menos 6 caracteres.
 	The password must have at least 8 characters.	La contraseña debe tener al menos 8 caracteres.
+	The passwords and the restrictions are removed when you save.	Las contraseñas y las restricciones se quitan al guardar.
 	The passwords do not match.	Las contraseñas no coinciden.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Las fuentes de texto PDF no pueden mostrar «{c}» ({code}). Elige texto compatible.
 	The PDF/X output intent has neither an embedded profile nor a characterization in the ICC registry	El propósito de salida PDF/X no tiene ni un perfil incrustado ni una caracterización del registro ICC
@@ -3429,6 +3437,7 @@ calendar weekday	Th	Ju
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	el servicio de firma rechazó el PIN o el OTP (el OTP puede haber caducado)
 	the signing service rejected the user name or password	el servicio de firma rechazó el nombre de usuario o la contraseña
 	The smart card's digital IDs couldn't be listed: {e}	No se pudieron listar los ID digitales de la tarjeta inteligente: {e}
+	The split files aren't protected: the original's security settings don't carry over.	Los archivos divididos no están protegidos: la configuración de seguridad del original no se conserva.
 	The spot colour {} has an alternate that can't be converted to CMYK yet	La tinta plana {} tiene un espacio alternativo que aún no se puede convertir a CMYK
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Las fuentes estándar no pueden mostrar «{c}» ({code}). Por ahora solo se pueden añadir como texto caracteres de Europa occidental.
 	The standard it must meet and where the file goes	La norma que debe cumplir y a dónde va el archivo
@@ -3518,6 +3527,7 @@ calendar weekday	Th	Ju
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	Este documento está firmado digitalmente. Sanearlo reescribe todo el archivo, lo que invalida las firmas, así que solo puede continuar sin ellas.
 	This document is not inside a CAdES envelope	Este documento no está dentro de un sobre de firma CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Este documento está protegido. Su configuración de seguridad restringe algunos cambios.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	Este documento está firmado. Un cambio añade una versión nueva: las firmas siguen siendo válidas para la versión que firmaron, y los visores mostrarán que el documento se cambió después de firmarlo.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	este documento está firmado: reescribirlo invalidaría sus firmas (guárdalo de forma incremental)
 	This document is trying to open a local file:	Este documento intenta abrir un archivo local:
 	This document isn't in a folder yet: save it first	Este documento aún no está en una carpeta: guárdelo primero

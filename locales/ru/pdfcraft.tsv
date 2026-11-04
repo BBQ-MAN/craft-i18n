@@ -461,7 +461,9 @@ certificate	Basic constraints	Основные ограничения
 	Certify (invisible signature)	Сертификат (невидимая подпись)
 	Certify (visible signature)	Сертификат (видимая подпись)
 	Challenge: {challenge}	Запрос: {challenge}
+	Change a signed document?	Изменить подписанный документ?
 	Change additional metadata	Изменить дополнительные метаданные
+	Change anyway	Всё равно изменить
 	Change Author	Изменить автора
 	Change colour	Изменить цвет
 	Change comment properties	Изменить свойства комментария
@@ -1510,6 +1512,9 @@ certificate	Issued by	Кем выдан
 certificate	Issued to	Кому выдан
 	Issuer	Издатель
 certificate	Issuer	Издатель
+	It is certified with no changes allowed: any change invalidates the certification.	Он сертифицирован без разрешённых изменений: любое изменение аннулирует сертификацию.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	Он сертифицирован: разрешены заполнение форм и подписание; другие изменения аннулируют сертификацию.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	Он сертифицирован: разрешены заполнение форм, подписание и комментирование; другие изменения аннулируют сертификацию.
 	it was still in the document afterwards, so the change was undone	после удаления она осталась в документе, поэтому изменение отменено
 	Item List	Список пунктов
 	Item:	Пункт:
@@ -2442,6 +2447,7 @@ certificate	Public key	Открытый ключ
 	Remove redaction marks	Удалить метки сокрытия
 	Remove saved {what}	Удалить сохранённое: {what}
 	Remove security	Удалить защиту
+	Remove security?	Удалить защиту?
 	Remove Signature	Удалить подпись
 	Remove signature	Удалить подпись
 	Remove signature…	Удалить подпись…
@@ -3194,6 +3200,7 @@ calendar weekday	Th	Чт
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	Подпись ECDSA записана как необработанные значения r и s, а не как последовательность DER; она всё равно прочитана.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Встроенный маркер метки времени действителен, и его службе доверяют; доверенное время: {}.
 	The existing action will be preserved.	Существующее действие будет сохранено.
+	The extracted pages aren't protected: the original's security settings don't carry over.	Извлечённые страницы не защищены: настройки безопасности оригинала не переносятся.
 	The feeder ran out of paper.	В устройстве подачи закончилась бумага.
 	The feeder took more than one sheet.	Устройство подачи захватило больше одного листа.
 	The field properties could not be changed.	Не удалось изменить свойства полей.
@@ -3251,6 +3258,7 @@ calendar weekday	Th	Чт
 	The password is only used to read the file; it isn't saved.	Пароль используется только для чтения файла; он не сохраняется.
 	The password must have at least 6 characters.	Пароль должен содержать не менее 6 символов.
 	The password must have at least 8 characters.	Пароль должен содержать не менее 8 символов.
+	The passwords and the restrictions are removed when you save.	Пароли и ограничения удаляются при сохранении.
 	The passwords do not match.	Пароли не совпадают.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифты текста PDF не могут отобразить «{c}» ({code}). Выберите поддерживаемый текст.
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN-код передаётся только карте; PdfCraft его не сохраняет.
@@ -3353,6 +3361,7 @@ calendar weekday	Th	Чт
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	служба подписи отклонила PIN-код или OTP (возможно, срок действия OTP истёк)
 	the signing service rejected the user name or password	служба подписи отклонила имя пользователя или пароль
 	The smart card's digital IDs couldn't be listed: {e}	Не удалось получить список цифровых идентификаторов смарт-карты: {e}
+	The split files aren't protected: the original's security settings don't carry over.	Разделённые файлы не защищены: настройки безопасности оригинала не переносятся.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Стандартные шрифты не могут отобразить «{c}» ({code}). Пока в виде текста можно добавлять только западноевропейские символы.
 	The standard it must meet and where the file goes	Какой стандарт соблюсти и куда идёт файл
 	the tesseract engine is not available in the web build	движок tesseract недоступен в веб-версии
@@ -3426,6 +3435,7 @@ calendar weekday	Th	Чт
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	Этот документ подписан цифровой подписью. Очистка перезаписывает весь файл, что делает подписи недействительными, поэтому продолжить можно только без них.
 	This document is not inside a CAdES envelope	Этот документ не находится внутри конверта подписи CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Этот документ защищён. Некоторые изменения ограничены его настройками безопасности.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	Этот документ подписан. Изменение добавляет новую версию: подписи остаются действительными для подписанной версии, а программы просмотра покажут, что документ был изменён после подписания.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	этот документ подписан: перезапись сделает его подписи недействительными (сохраняйте инкрементально)
 	This document is trying to open a local file:	Этот документ пытается открыть локальный файл:
 	This document isn't in a folder yet: save it first	Этот документ ещё не находится в папке: сначала сохраните его

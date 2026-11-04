@@ -396,6 +396,8 @@ certificate	Basic constraints	ข้อจำกัดพื้นฐาน
 	Certify (invisible signature)	รับรอง (ลายเซ็นที่มองไม่เห็น)
 	Certify (visible signature)	รับรอง (ลายเซ็นที่มองเห็น)
 	Change	เปลี่ยน
+	Change a signed document?	เปลี่ยนเอกสารที่เซ็นแล้วหรือไม่
+	Change anyway	เปลี่ยนต่อไป
 	Change Author	เปลี่ยนผู้เขียน
 	Change colour	เปลี่ยนสี
 	Change comment properties	เปลี่ยนคุณสมบัติความคิดเห็น
@@ -1332,6 +1334,9 @@ certificate	Issued by	ออกโดย
 certificate	Issued to	ออกให้แก่
 	Issuer	ผู้ออก
 certificate	Issuer	ผู้ออก
+	It is certified with no changes allowed: any change invalidates the certification.	เอกสารนี้ได้รับการรับรองโดยไม่อนุญาตให้เปลี่ยนแปลง: การเปลี่ยนแปลงใดๆ จะทำให้การรับรองเป็นโมฆะ
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	เอกสารนี้ได้รับการรับรอง: อนุญาตให้กรอกแบบฟอร์มและเซ็น การเปลี่ยนแปลงอื่นจะทำให้การรับรองเป็นโมฆะ
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	เอกสารนี้ได้รับการรับรอง: อนุญาตให้กรอกแบบฟอร์ม เซ็น และแสดงความคิดเห็น การเปลี่ยนแปลงอื่นจะทำให้การรับรองเป็นโมฆะ
 	Italic	ตัวเอียง
 	Item List	รายการตัวเลือก
 	Item:	รายการ:
@@ -2102,6 +2107,7 @@ certificate	Public key	กุญแจสาธารณะ
 	Remove redaction marks	เอาเครื่องหมายปิดทับออก
 	Remove saved {what}	เอา{what}ที่บันทึกไว้ออก
 	Remove security	เอาการรักษาความปลอดภัยออก
+	Remove security?	เอาความปลอดภัยออกหรือไม่
 	Remove the digital signatures: their fields, how they look on the page and their validation data	ลบลายเซ็นดิจิทัล: ฟิลด์ของลายเซ็น ลักษณะที่ปรากฏบนหน้า และข้อมูลการตรวจสอบ
 	Remove this leaf tag from reading order and mark its direct content as an artifact	นำแท็กปลายสุดนี้ออกจากลำดับการอ่าน และระบุเนื้อหาโดยตรงของแท็กเป็นส่วนตกแต่ง
 	Remove unreferenced named destinations	เอาปลายทางที่มีชื่อซึ่งไม่ถูกอ้างถึงออก
@@ -2690,6 +2696,7 @@ calendar weekday	Th	พฤ
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	ลายเซ็น ECDSA เป็นค่า r และ s ดิบแทนลำดับ DER แต่ยังอ่านได้
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	โทเค็นประทับเวลาที่ฝังไว้ถูกต้องและผู้ออกได้รับความเชื่อถือ เวลาที่เชื่อถือได้คือ {}
 	The existing action will be preserved.	การทำงานที่มีอยู่จะถูกคงไว้
+	The extracted pages aren't protected: the original's security settings don't carry over.	หน้าที่แยกออกมาไม่ได้รับการป้องกัน: การตั้งค่าความปลอดภัยของต้นฉบับไม่ได้ติดไปด้วย
 	The feeder ran out of paper.	The feeder ran out of paper.
 	The feeder took more than one sheet.	The feeder took more than one sheet.
 	The field properties could not be changed.	เปลี่ยนคุณสมบัติช่องไม่ได้
@@ -2725,6 +2732,7 @@ calendar weekday	Th	พฤ
 	The password is only used to read the file; it isn't saved.	รหัสผ่านใช้เพื่ออ่านไฟล์เท่านั้น จะไม่ถูกบันทึกไว้
 	The password must have at least 6 characters.	รหัสผ่านต้องมีอย่างน้อย 6 อักขระ
 	The password must have at least 8 characters.	รหัสผ่านต้องมีอย่างน้อย 8 ตัวอักษร
+	The passwords and the restrictions are removed when you save.	รหัสผ่านและข้อจำกัดจะถูกเอาออกเมื่อคุณบันทึก
 	The passwords do not match.	รหัสผ่านไม่ตรงกัน
 	The passwords don't match.	รหัสผ่านไม่ตรงกัน
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	แบบอักษรข้อความของ PDF วาด “{c}” ({code}) ไม่ได้ โปรดเลือกข้อความที่รองรับ
@@ -2846,6 +2854,7 @@ calendar weekday	Th	พฤ
 	This document hasn't been checked yet.	เอกสารนี้ยังไม่ได้รับการตรวจสอบ
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	เอกสารนี้มีลายเซ็นดิจิทัล การล้างข้อมูลจะเขียนไฟล์ทั้งหมดใหม่ ซึ่งทำให้ลายเซ็นใช้ไม่ได้ จึงทำได้เฉพาะเมื่อลบลายเซ็นออก
 	This document is secured. Some changes are restricted by its security settings.	เอกสารนี้มีการรักษาความปลอดภัย การเปลี่ยนแปลงบางอย่างถูกจำกัดโดยการตั้งค่าความปลอดภัย
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	เอกสารนี้เซ็นแล้ว การเปลี่ยนแปลงจะเพิ่มเวอร์ชันใหม่: ลายเซ็นยังคงใช้ได้สำหรับเวอร์ชันที่เซ็นไว้ และโปรแกรมดูจะแสดงว่าเอกสารถูกเปลี่ยนหลังการเซ็น
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	เอกสารนี้มีลายเซ็น: การเขียนไฟล์ใหม่จะทำให้ลายเซ็นใช้ไม่ได้ (ให้บันทึกแบบเพิ่มต่อท้ายแทน)
 	This document is trying to open a local file:	เอกสารนี้พยายามเปิดไฟล์ในเครื่อง:
 	This document isn't in a folder yet: save it first	เอกสารนี้ยังไม่อยู่ในโฟลเดอร์ใด: บันทึกก่อน

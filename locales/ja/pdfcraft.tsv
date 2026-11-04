@@ -444,7 +444,9 @@
 	Certify (invisible signature)	証明用署名（表示しない署名）
 	Certify (visible signature)	証明用署名（表示する署名）
 	Challenge: {challenge}	チャレンジ: {challenge}
+	Change a signed document?	署名済みの文書を変更しますか？
 	Change additional metadata	追加メタデータを変更
+	Change anyway	変更する
 	Change colour	色を変更
 	Change comment properties	注釈のプロパティを変更
 	Change document properties	文書のプロパティを変更
@@ -1443,6 +1445,9 @@ key	Home	Home
 	Issued by: 	発行者: 
 	Issued to	発行先
 	Issuer	発行者
+	It is certified with no changes allowed: any change invalidates the certification.	変更を許可しない証明が付いています。どんな変更も証明を無効にします。
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	証明が付いています。フォームの入力と署名は許可され、それ以外の変更は証明を無効にします。
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	証明が付いています。フォームの入力、署名、注釈は許可され、それ以外の変更は証明を無効にします。
 	it was still in the document afterwards, so the change was undone	削除後も文書に残っていたため、変更を取り消しました
 	Item List	項目一覧
 	Item:	項目:
@@ -2321,6 +2326,7 @@ animation effects	On	オン
 	Remove redaction marks	墨消しマークを削除
 	Remove saved {what}	保存済みの{what}を削除
 	Remove security	セキュリティを解除
+	Remove security?	セキュリティを解除しますか？
 	Remove Signature	署名を削除
 	Remove signature	署名を削除
 	Remove signature…	署名を削除…
@@ -3021,6 +3027,7 @@ document scrollbar width	Standard	標準
 	The driver reports a paper jam.	ドライバが紙詰まりを報告しています。
 	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	ドライバが用紙待ちを報告しています。トレイが空でもビットが残ることがあります。
 	The existing action will be preserved.	既存のアクションは保持されます。
+	The extracted pages aren't protected: the original's security settings don't carry over.	抽出したページは保護されません。元の文書のセキュリティ設定は引き継がれません。
 	The feeder ran out of paper.	フィーダーの用紙がなくなりました。
 	The feeder took more than one sheet.	フィーダーが複数枚を同時に給紙しました。
 	The field properties could not be changed.	フィールドのプロパティを変更できませんでした。
@@ -3072,6 +3079,7 @@ document scrollbar width	Standard	標準
 	the password is incorrect	パスワードが正しくありません
 	The password is incorrect.	パスワードが正しくありません。
 	The password is only used to read the file; it isn't saved.	パスワードはファイルの読み込みにのみ使用され、保存されません。
+	The passwords and the restrictions are removed when you save.	保存時にパスワードと制限が解除されます。
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF テキスト用フォントでは「{c}」（{code}）を表示できません。対応している文字を使用してください。
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN はカードにのみ送られ、PdfCraft には保存されません。
 	The PIN is incorrect.	PIN が正しくありません。
@@ -3142,6 +3150,7 @@ document scrollbar width	Standard	標準
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	署名サービスが PIN または OTP を拒否しました（OTP の有効期限が切れている可能性があります）
 	the signing service rejected the user name or password	署名サービスがユーザー名またはパスワードを拒否しました
 	The smart card's digital IDs couldn't be listed: {e}	スマートカードのデジタル ID を一覧表示できませんでした: {e}
+	The split files aren't protected: the original's security settings don't carry over.	分割したファイルは保護されません。元の文書のセキュリティ設定は引き継がれません。
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	標準フォントでは「{c}」（{code}）を表示できません。現在、テキストとして追加できるのは西ヨーロッパの文字のみです。
 	The standard it must meet and where the file goes	満たすべき規格とファイルの宛先
 	the tesseract engine is not available in the web build	Web 版では tesseract エンジンを使用できません
@@ -3202,6 +3211,7 @@ document scrollbar width	Standard	標準
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	この文書にはデジタル署名があります。機密情報の削除はファイル全体を書き直すため署名が無効になります。署名を削除する場合にのみ実行できます。
 	This document is not inside a CAdES envelope	この文書はCAdES署名エンベロープの内部にありません。
 	This document is secured. Some changes are restricted by its security settings.	この文書は保護されています。セキュリティ設定により一部の変更が制限されています。
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	この文書は署名されています。変更すると新しい版が追加されます。署名は署名した版に対して有効なままですが、ビューアは署名後に文書が変更されたと表示します。
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	この文書は署名済みです。書き直すと署名が無効になります（代わりに増分保存してください）
 	This document is trying to open a local file:	この文書はローカルファイルを開こうとしています：
 	This document isn't in a folder yet: save it first	この文書はまだフォルダーに保存されていません。先に保存してください

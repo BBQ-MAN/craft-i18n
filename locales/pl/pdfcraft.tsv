@@ -429,7 +429,9 @@ calendar date	August	sierpnia
 	Certify (invisible signature)	Certyfikuj (niewidoczny podpis)
 	Certify (visible signature)	Certyfikuj (widoczny podpis)
 	Challenge: {challenge}	Wyzwanie: {challenge}
+	Change a signed document?	Zmienić podpisany dokument?
 	Change additional metadata	Zmień dodatkowe metadane
+	Change anyway	Zmień mimo to
 	Change colour	Zmień kolor
 	Change comment properties	Zmień właściwości komentarza
 	Change document properties	Zmień właściwości dokumentu
@@ -1370,6 +1372,9 @@ key	Home	Home
 	Issued by: 	Wystawca: 
 	Issued to	Wystawiony dla
 	Issuer	Wystawca certyfikatu
+	It is certified with no changes allowed: any change invalidates the certification.	Jest certyfikowany bez dozwolonych zmian: każda zmiana unieważnia certyfikację.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	Jest certyfikowany: wypełnianie formularzy i podpisywanie są dozwolone; inne zmiany unieważniają certyfikację.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	Jest certyfikowany: wypełnianie formularzy, podpisywanie i komentowanie są dozwolone; inne zmiany unieważniają certyfikację.
 	it was still in the document afterwards, so the change was undone	po usunięciu nadal był w dokumencie, więc zmiana została cofnięta
 	Item List	Lista elementów
 	Item:	Element:
@@ -2218,6 +2223,7 @@ animation effects	On	Włączone
 	Remove redaction marks	Usuń oznaczenia do utajnienia
 	Remove saved {what}	Usuń zapisane: {what}
 	Remove security	Usuń zabezpieczenia
+	Remove security?	Usunąć zabezpieczenia?
 	Remove Signature	Usuń podpis
 	Remove signature	Usuń podpis
 	Remove signature…	Usuń podpis…
@@ -2904,6 +2910,7 @@ certificate	Subject	Podmiot certyfikatu
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	Podpis ECDSA zawiera surowe wartości r i s zamiast sekwencji DER; mimo to go odczytano.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Osadzony token znacznika czasu jest prawidłowy, a jego urząd jest zaufany; zaufany czas to {}.
 	The existing action will be preserved.	Istniejąca akcja zostanie zachowana.
+	The extracted pages aren't protected: the original's security settings don't carry over.	Wyodrębnione strony nie są chronione: ustawienia zabezpieczeń oryginału nie są przenoszone.
 	The feeder ran out of paper.	The feeder ran out of paper.
 	The feeder took more than one sheet.	The feeder took more than one sheet.
 	The field properties could not be changed.	Nie można zmienić właściwości pól.
@@ -2953,6 +2960,7 @@ certificate	Subject	Podmiot certyfikatu
 	the password is incorrect	hasło jest nieprawidłowe
 	The password is incorrect.	Hasło jest nieprawidłowe.
 	The password is only used to read the file; it isn't saved.	Hasło służy wyłącznie do odczytu pliku; nie jest zapisywane.
+	The passwords and the restrictions are removed when you save.	Hasła i ograniczenia są usuwane przy zapisie.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Czcionki tekstu PDF nie obsługują znaku „{c}” ({code}). Wybierz obsługiwany tekst.
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN trafia tylko do karty; PdfCraft go nie przechowuje.
 	The PIN is incorrect.	Kod PIN jest nieprawidłowy.
@@ -3053,6 +3061,7 @@ certificate	Subject	Podmiot certyfikatu
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	usługa podpisu odrzuciła PIN lub kod OTP (kod OTP mógł wygasnąć)
 	the signing service rejected the user name or password	usługa podpisu odrzuciła nazwę użytkownika lub hasło
 	The smart card's digital IDs couldn't be listed: {e}	Nie udało się wyświetlić identyfikatorów cyfrowych karty inteligentnej: {e}
+	The split files aren't protected: the original's security settings don't carry over.	Podzielone pliki nie są chronione: ustawienia zabezpieczeń oryginału nie są przenoszone.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standardowe czcionki nie obsługują znaku „{c}” ({code}). Na razie można dodawać tylko tekst ze znakami zachodnioeuropejskimi.
 	The standard it must meet and where the file goes	Standard, jaki ma spełniać, i dokąd trafia plik
 	the tesseract engine is not available in the web build	silnik tesseract nie jest dostępny w wersji internetowej
@@ -3121,6 +3130,7 @@ certificate	Subject	Podmiot certyfikatu
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	Ten dokument jest podpisany cyfrowo. Oczyszczanie zapisuje cały plik od nowa, co unieważnia podpisy, więc może być wykonane tylko bez nich.
 	This document is not inside a CAdES envelope	Ten dokument nie jest wewnątrz koperty podpisu CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Ten dokument jest zabezpieczony. Niektóre zmiany są ograniczone ustawieniami zabezpieczeń.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	Ten dokument jest podpisany. Zmiana dodaje nową wersję: podpisy pozostają ważne dla wersji, którą podpisały, a przeglądarki pokażą, że dokument zmieniono po podpisaniu.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	ten dokument jest podpisany: zapisanie go na nowo unieważniłoby podpisy (zamiast tego zapisz przyrostowo)
 	This document is trying to open a local file:	Ten dokument próbuje otworzyć plik lokalny:
 	This document isn't in a folder yet: save it first	Ten dokument nie jest jeszcze w żadnym folderze: najpierw go zapisz

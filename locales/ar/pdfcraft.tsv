@@ -441,7 +441,9 @@ certificate	Basic constraints	القيود الأساسية
 	Certify (visible signature)	تصديق (توقيع مرئي)
 	Challenge: {challenge}	التحدي: {challenge}
 	Change	تغيير
+	Change a signed document?	تغيير مستند موقّع؟
 	Change additional metadata	تغيير بيانات التعريف الإضافية
+	Change anyway	التغيير على أي حال
 	Change Author	تغيير المؤلف
 	Change colour	تغيير اللون
 	Change comment properties	تغيير خصائص التعليق
@@ -1430,6 +1432,9 @@ certificate	Issued by	صادر من
 certificate	Issued to	مُصدر إلى
 	Issuer	المُصدِر
 certificate	Issuer	المُصدر
+	It is certified with no changes allowed: any change invalidates the certification.	إنه مصدّق دون السماح بأي تغيير: أي تغيير يبطل التصديق.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	إنه مصدّق: يُسمح بتعبئة النماذج والتوقيع؛ أي تغيير آخر يبطل التصديق.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	إنه مصدّق: يُسمح بتعبئة النماذج والتوقيع والتعليق؛ أي تغيير آخر يبطل التصديق.
 	it was still in the document afterwards, so the change was undone	بقي في المستند بعد إزالته، لذا تم التراجع عن التغيير
 	Item List	قائمة العناصر
 	Item:	العنصر:
@@ -2301,6 +2306,7 @@ certificate	Public key	المفتاح العام
 	Remove redaction marks	إزالة علامات الحجب
 	Remove saved {what}	إزالة {what} المحفوظ
 	Remove security	إزالة الحماية
+	Remove security?	إزالة الأمان؟
 	Remove Signature	إزالة التوقيع
 	Remove signature	إزالة التوقيع
 	Remove signature…	إزالة التوقيع…
@@ -3021,6 +3027,7 @@ calendar weekday	Th	خميس
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	توقيع ECDSA هو قيمتا r وs الخام بدلاً من متتابعة DER؛ قُرئ مع ذلك.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	رمز الطابع الزمني المدمج صالح وسلطته موثوقة؛ الوقت الموثوق هو {}.
 	The existing action will be preserved.	سيتم الاحتفاظ بالإجراء الحالي.
+	The extracted pages aren't protected: the original's security settings don't carry over.	الصفحات المستخرجة غير محمية: إعدادات الأمان الخاصة بالملف الأصلي لا تنتقل إليها.
 	The feeder ran out of paper.	نفد الورق من وحدة التغذية.
 	The feeder took more than one sheet.	سحبت وحدة التغذية أكثر من ورقة واحدة.
 	The field properties could not be changed.	تعذّر تغيير خصائص الحقل.
@@ -3074,6 +3081,7 @@ calendar weekday	Th	خميس
 	The password is incorrect.	كلمة المرور غير صحيحة.
 	The password is only used to read the file; it isn't saved.	تُستخدم كلمة المرور لقراءة الملف فقط؛ ولا تُحفظ.
 	The password must have at least 8 characters.	يجب أن تحوي كلمة المرور 8 محارف على الأقل.
+	The passwords and the restrictions are removed when you save.	تُزال كلمات المرور والقيود عند الحفظ.
 	The passwords do not match.	كلمتا المرور غير متطابقتين.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	لا تستطيع خطوط نص PDF عرض «{c}» ({code}). اختر نصًا مدعومًا.
 	The PIN goes only to the card; PdfCraft doesn't keep it.	يذهب رمز PIN إلى البطاقة فقط؛ ولا يحتفظ به PdfCraft.
@@ -3172,6 +3180,7 @@ calendar weekday	Th	خميس
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	رفضت خدمة التوقيع رمز PIN أو رمز OTP (ربما انتهت صلاحية رمز OTP)
 	the signing service rejected the user name or password	رفضت خدمة التوقيع اسم المستخدم أو كلمة المرور
 	The smart card's digital IDs couldn't be listed: {e}	تعذّر سرد المعرّفات الرقمية للبطاقة الذكية: {e}
+	The split files aren't protected: the original's security settings don't carry over.	الملفات المقسمة غير محمية: إعدادات الأمان الخاصة بالملف الأصلي لا تنتقل إليها.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	الخطوط القياسية لا تستطيع رسم «{c}» ({code}). حاليًا يمكن إضافة محارف أوروبا الغربية فقط كنص.
 	The standard it must meet and where the file goes	المعيار الذي يجب تلبيته وإلى أين يذهب الملف
 	the tesseract engine is not available in the web build	محرك tesseract غير متاح في إصدار الويب
@@ -3243,6 +3252,7 @@ calendar weekday	Th	خميس
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	هذا المستند موقّع رقميًا. التنظيف يعيد كتابة الملف كله، مما يُبطل التوقيعات، لذا لا يمكن المتابعة إلا بدونها.
 	This document is not inside a CAdES envelope	هذا المستند ليس داخل مغلف توقيع CAdES.
 	This document is secured. Some changes are restricted by its security settings.	هذا المستند مؤمَّن. بعض التغييرات مقيدة بإعدادات أمانه.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	هذا المستند موقّع. أي تغيير يضيف نسخة جديدة: تبقى التواقيع صالحة للنسخة التي وقّعتها، وستُظهر برامج العرض أن المستند تغيّر بعد التوقيع.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	هذا المستند موقَّع: إعادة كتابته ستبطل توقيعاته (احفظه حفظًا تزايديًا بدلًا من ذلك)
 	This document is trying to open a local file:	يحاول هذا المستند فتح ملف محلي:
 	This document isn't in a folder yet: save it first	هذا المستند ليس في مجلد بعد: احفظه أولاً

@@ -451,7 +451,9 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Certify (invisible signature)	Chứng nhận (chữ ký ẩn)
 	Certify (visible signature)	Chứng nhận (chữ ký hiển thị)
 	Challenge: {challenge}	Thử thách: {challenge}
+	Change a signed document?	Thay đổi tài liệu đã ký?
 	Change additional metadata	Đổi siêu dữ liệu bổ sung
+	Change anyway	Vẫn thay đổi
 	Change Author	Đổi tác giả
 	Change colour	Đổi màu
 	Change comment properties	Thay đổi thuộc tính bình luận
@@ -1448,6 +1450,9 @@ certificate	Issued by	Cấp bởi
 certificate	Issued to	Cấp cho
 	Issuer	Tổ chức cấp
 certificate	Issuer	Tổ chức cấp
+	It is certified with no changes allowed: any change invalidates the certification.	Tài liệu được chứng nhận và không cho phép thay đổi: mọi thay đổi đều làm mất hiệu lực chứng nhận.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	Tài liệu được chứng nhận: được phép điền biểu mẫu và ký; các thay đổi khác làm mất hiệu lực chứng nhận.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	Tài liệu được chứng nhận: được phép điền biểu mẫu, ký và bình luận; các thay đổi khác làm mất hiệu lực chứng nhận.
 	it was still in the document afterwards, so the change was undone	sau khi gỡ, chữ ký vẫn còn trong tài liệu nên thay đổi đã được hoàn tác
 	Item List	Danh sách mục
 	Item:	Mục:
@@ -2290,6 +2295,7 @@ certificate	Public key	Khóa công khai
 	Remove redaction marks	Gỡ các dấu đánh dấu
 	Remove saved {what}	Xóa {what} đã lưu
 	Remove security	Gỡ bảo mật
+	Remove security?	Gỡ bảo mật?
 	Remove Signature	Gỡ chữ ký
 	Remove signature	Gỡ chữ ký
 	Remove signature…	Gỡ chữ ký…
@@ -2992,6 +2998,7 @@ calendar weekday	Th	T5
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	Chữ ký ECDSA là các giá trị r và s thô thay vì một chuỗi DER; nó vẫn được đọc.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Mã thông báo dấu thời gian được nhúng hợp lệ và cơ quan cấp nó được tin cậy; thời gian tin cậy là {}.
 	The existing action will be preserved.	Hành động hiện có sẽ được giữ nguyên.
+	The extracted pages aren't protected: the original's security settings don't carry over.	Các trang được trích xuất không được bảo vệ: cài đặt bảo mật của bản gốc không được chuyển sang.
 	The feeder ran out of paper.	Khay nạp đã hết giấy.
 	The feeder took more than one sheet.	Khay nạp đã lấy nhiều hơn một tờ.
 	The field properties could not be changed.	Không thể thay đổi thuộc tính của trường.
@@ -3072,6 +3079,7 @@ calendar weekday	Th	T5
 	The password is only used to read the file; it isn't saved.	Mật khẩu chỉ được dùng để đọc tệp; nó không được lưu.
 	The password must have at least 6 characters.	Mật khẩu phải có ít nhất 6 ký tự.
 	The password must have at least 8 characters.	Mật khẩu phải có ít nhất 8 ký tự.
+	The passwords and the restrictions are removed when you save.	Mật khẩu và các hạn chế sẽ bị gỡ khi bạn lưu.
 	The passwords do not match.	Các mật khẩu không khớp.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Phông chữ văn bản PDF không thể vẽ “{c}” ({code}). Hãy chọn văn bản được hỗ trợ.
 	The PDF/X output intent has neither an embedded profile nor a characterization in the ICC registry	Mục đích đầu ra PDF/X không có hồ sơ nhúng cũng không có đặc tính trong sổ đăng ký ICC
@@ -3173,6 +3181,7 @@ calendar weekday	Th	T5
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	dịch vụ ký đã từ chối mã PIN hoặc OTP (có thể mã OTP đã hết hạn)
 	the signing service rejected the user name or password	dịch vụ ký đã từ chối tên người dùng hoặc mật khẩu
 	The smart card's digital IDs couldn't be listed: {e}	Không thể liệt kê ID số của thẻ thông minh: {e}
+	The split files aren't protected: the original's security settings don't carry over.	Các tệp sau khi tách không được bảo vệ: cài đặt bảo mật của bản gốc không được chuyển sang.
 	The spot colour {} has an alternate that can't be converted to CMYK yet	Màu pha {} có không gian thay thế chưa thể chuyển sang CMYK
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Phông chữ chuẩn không thể vẽ “{c}” ({code}). Hiện chỉ có thể thêm các ký tự Tây Âu làm văn bản.
 	The standard structure type {} is mapped to a type that isn't standard	Kiểu cấu trúc chuẩn {} được ánh xạ tới một kiểu không chuẩn
@@ -3256,6 +3265,7 @@ calendar weekday	Th	T5
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	Tài liệu này có chữ ký số. Làm sạch sẽ ghi lại toàn bộ tệp, khiến chữ ký mất hiệu lực, nên chỉ có thể tiếp tục khi không có chúng.
 	This document is not inside a CAdES envelope	Tài liệu này không nằm trong phong bì ký CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Tài liệu này được bảo mật. Một số thay đổi bị hạn chế bởi cài đặt bảo mật của nó.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	Tài liệu này đã được ký. Mỗi thay đổi sẽ thêm một phiên bản mới: chữ ký vẫn hợp lệ cho phiên bản mà chúng đã ký, và trình xem sẽ cho thấy tài liệu đã bị thay đổi sau khi ký.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	tài liệu này đã được ký: việc ghi lại nó sẽ làm mất hiệu lực các chữ ký của nó (hãy lưu tăng dần thay vào đó)
 	This document is trying to open a local file:	Tài liệu này đang cố mở một tệp cục bộ:
 	This document isn't in a folder yet: save it first	Tài liệu này chưa nằm trong thư mục nào: hãy lưu trước

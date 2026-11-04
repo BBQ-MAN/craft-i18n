@@ -437,7 +437,9 @@
 	Certify (invisible signature)	认证（不可见签名）
 	Certify (visible signature)	认证（可见签名）
 	Challenge: {challenge}	质询：{challenge}
+	Change a signed document?	要更改已签名的文档吗？
 	Change additional metadata	更改附加元数据
+	Change anyway	仍要更改
 	Change colour	更改颜色
 	Change comment properties	更改注释属性
 	Change drawing scale	更改图纸比例
@@ -1430,6 +1432,9 @@ key	Home	Home
 	Issued by: 	颁发者：
 	Issued to	颁发给
 	Issuer	颁发者
+	It is certified with no changes allowed: any change invalidates the certification.	它已认证且不允许任何更改：任何更改都会使认证失效。
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	它已认证：允许填写表单和签名；其他更改会使认证失效。
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	它已认证：允许填写表单、签名和添加注释；其他更改会使认证失效。
 	it was still in the document afterwards, so the change was undone	移除后它仍在文档中，因此已撤销此更改
 	Item List	项目列表
 	Item:	项目：
@@ -2303,6 +2308,7 @@ animation effects	On	开
 	Remove page	删除页面
 	Remove redaction marks	移除密文标记
 	Remove security	删除安全性设置
+	Remove security?	要移除安全性吗？
 	Remove Signature	移除签名
 	Remove signature	移除签名
 	Remove signature…	移除签名…
@@ -2993,6 +2999,7 @@ document scrollbar width	Standard	标准
 	The driver reports a paper jam.	驱动报告卡纸。
 	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	驱动报告有纸等待。纸盒空了后该位仍可能保持。
 	The existing action will be preserved.	将保留现有操作。
+	The extracted pages aren't protected: the original's security settings don't carry over.	提取的页面不受保护：原文档的安全设置不会带过去。
 	The feeder ran out of paper.	进纸器中的纸用完了。
 	The feeder took more than one sheet.	进纸器一次送入了多张纸。
 	The field properties could not be changed.	无法更改字段属性。
@@ -3043,6 +3050,7 @@ document scrollbar width	Standard	标准
 	the password is incorrect	密码不正确
 	The password is incorrect.	密码不正确。
 	The password is only used to read the file; it isn't saved.	密码仅用于读取文件，不会被保存。
+	The passwords and the restrictions are removed when you save.	保存时会移除密码和限制。
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF 文本字体无法显示“{c}”（{code}）。请选择受支持的文本。
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN 只发送到卡上；PdfCraft 不会保存它。
 	The PIN is incorrect.	PIN 不正确。
@@ -3113,6 +3121,7 @@ document scrollbar width	Standard	标准
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	签名服务拒绝了 PIN 或 OTP（OTP 可能已过期）
 	the signing service rejected the user name or password	签名服务拒绝了用户名或密码
 	The smart card's digital IDs couldn't be listed: {e}	无法列出智能卡的数字 ID：{e}
+	The split files aren't protected: the original's security settings don't carry over.	拆分后的文件不受保护：原文档的安全设置不会带过去。
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	标准字体无法显示“{c}”（{code}）。目前只能添加西欧字符作为文本。
 	The standard it must meet and where the file goes	需要满足的标准，以及文件的去向
 	the tesseract engine is not available in the web build	网页版不提供 tesseract 引擎
@@ -3172,6 +3181,7 @@ document scrollbar width	Standard	标准
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	此文档已进行数字签名。清理会重写整个文件，从而使签名失效，因此只能在删除签名后进行。
 	This document is not inside a CAdES envelope	此文档不在 CAdES 签名信封内。
 	This document is secured. Some changes are restricted by its security settings.	本文档已加密。其安全设置限制了部分更改。
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	此文档已签名。更改会添加一个新版本：签名对其签署的版本仍然有效，但阅读器会显示文档在签名后被更改过。
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	此文档已签名：重写文件会使签名失效（请改用增量保存）
 	This document is trying to open a local file:	此文档正尝试打开本地文件：
 	This document isn't in a folder yet: save it first	此文档尚未保存在文件夹中：请先保存

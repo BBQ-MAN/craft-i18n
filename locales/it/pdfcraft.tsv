@@ -438,7 +438,9 @@ certificate	Basic constraints	Vincoli di base
 	Certify (visible signature)	Certifica (firma visibile)
 	Challenge: {challenge}	Codice di sfida: {challenge}
 	Change	Modifica
+	Change a signed document?	Modificare un documento firmato?
 	Change additional metadata	Modifica metadati aggiuntivi
+	Change anyway	Modifica comunque
 	Change Author	Modifica autore
 	Change colour	Cambia colore
 	Change comment properties	Modifica proprietà commento
@@ -1414,6 +1416,9 @@ certificate	Issued by	Rilasciato da
 certificate	Issued to	Rilasciato a
 	Issuer	Autorità emittente
 certificate	Issuer	Autorità emittente
+	It is certified with no changes allowed: any change invalidates the certification.	È certificato senza modifiche consentite: qualsiasi modifica invalida la certificazione.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	È certificato: la compilazione dei moduli e la firma sono consentite; altre modifiche invalidano la certificazione.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	È certificato: la compilazione dei moduli, la firma e i commenti sono consentiti; altre modifiche invalidano la certificazione.
 	it was still in the document afterwards, so the change was undone	era ancora nel documento dopo la rimozione, quindi la modifica è stata annullata
 	Item List	Elenco voci
 	Item:	Voce:
@@ -2276,6 +2281,7 @@ certificate	Public key	Chiave pubblica
 	Remove redaction marks	Rimuovi segni di oscuramento
 	Remove saved {what}	Rimuovi l'elemento salvato: {what}
 	Remove security	Rimuovi protezione
+	Remove security?	Rimuovere la protezione?
 	Remove Signature	Rimuovi firma
 	Remove signature	Rimuovi firma
 	Remove signature…	Rimuovi firma…
@@ -2987,6 +2993,7 @@ calendar weekday	Th	Gi
 	The ECDSA signature is the raw r and s values instead of a DER sequence; it was read anyway.	La firma ECDSA contiene i valori r e s grezzi invece di una sequenza DER; è stata letta comunque.
 	The embedded timestamp token is valid and its authority is trusted; trusted time is {}.	Il token della marca temporale incorporata è valido e la sua autorità è attendibile; l'ora attendibile è {}.
 	The existing action will be preserved.	L’azione esistente verrà mantenuta.
+	The extracted pages aren't protected: the original's security settings don't carry over.	Le pagine estratte non sono protette: le impostazioni di sicurezza dell’originale non vengono mantenute.
 	The feeder ran out of paper.	L’alimentatore ha finito la carta.
 	The feeder took more than one sheet.	L’alimentatore ha prelevato più di un foglio.
 	The field properties could not be changed.	Impossibile modificare le proprietà dei campi.
@@ -3041,6 +3048,7 @@ calendar weekday	Th	Gi
 	The password is incorrect.	La password non è corretta.
 	The password is only used to read the file; it isn't saved.	La password viene usata solo per leggere il file; non viene salvata.
 	The password must have at least 8 characters.	La password deve contenere almeno 8 caratteri.
+	The passwords and the restrictions are removed when you save.	Le password e le restrizioni vengono rimosse al salvataggio.
 	The passwords do not match.	Le password non corrispondono.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	I caratteri del testo PDF non possono visualizzare «{c}» ({code}). Scegliere un testo supportato.
 	The PIN goes only to the card; PdfCraft doesn't keep it.	Il PIN va solo alla scheda; PdfCraft non lo conserva.
@@ -3139,6 +3147,7 @@ calendar weekday	Th	Gi
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	il servizio di firma ha rifiutato il PIN o l'OTP (l'OTP potrebbe essere scaduto)
 	the signing service rejected the user name or password	il servizio di firma ha rifiutato il nome utente o la password
 	The smart card's digital IDs couldn't be listed: {e}	Impossibile elencare gli ID digitali della smart card: {e}
+	The split files aren't protected: the original's security settings don't carry over.	I file divisi non sono protetti: le impostazioni di sicurezza dell’originale non vengono mantenute.
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	I caratteri standard non possono disegnare “{c}” ({code}). Per ora si possono aggiungere come testo solo caratteri dell'Europa occidentale.
 	The standard it must meet and where the file goes	Lo standard da rispettare e la destinazione del file
 	the tesseract engine is not available in the web build	il motore tesseract non è disponibile nella versione web
@@ -3210,6 +3219,7 @@ calendar weekday	Th	Gi
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	Questo documento è firmato digitalmente. La pulizia riscrive l'intero file, invalidando le firme, quindi può procedere solo senza di esse.
 	This document is not inside a CAdES envelope	Questo documento non è all'interno di una busta di firma CAdES.
 	This document is secured. Some changes are restricted by its security settings.	Questo documento è protetto. Alcune modifiche sono limitate dalle sue impostazioni di sicurezza.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	Questo documento è firmato. Una modifica aggiunge una nuova versione: le firme restano valide per la versione che hanno firmato, e i lettori mostreranno che il documento è stato modificato dopo la firma.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	questo documento è firmato: riscriverlo invaliderebbe le firme (salvalo invece in modo incrementale)
 	This document is trying to open a local file:	Questo documento sta tentando di aprire un file locale:
 	This document isn't in a folder yet: save it first	Questo documento non è ancora in una cartella: salvalo prima

@@ -430,7 +430,9 @@ calendar date	August	Тамыз
 	Certify (visible signature)	Куәландыру (көрінетін қолтаңба)
 	Challenge: {challenge}	Сұрау: {challenge}
 	Change	Өзгерту
+	Change a signed document?	Қол қойылған құжатты өзгерту керек пе?
 	Change additional metadata	Қосымша метадеректерді өзгерту
+	Change anyway	Бәрібір өзгерту
 	Change colour	Түсін өзгерту
 	Change comment properties	Түсініктеме сипаттарын өзгерту
 	Change document properties	Құжат сипаттарын өзгерту
@@ -1375,6 +1377,9 @@ key	Home	Home
 	Issued by: 	Шығарушы: 
 	Issued to	Кімге берілген
 	Issuer	Шығарушы
+	It is certified with no changes allowed: any change invalidates the certification.	Ол өзгерістерге рұқсат етпей куәландырылған: кез келген өзгеріс куәландыруды жарамсыз етеді.
+	It is certified: filling in forms and signing are allowed; other changes invalidate the certification.	Ол куәландырылған: пішіндерді толтыруға және қол қоюға рұқсат етілген; басқа өзгерістер куәландыруды жарамсыз етеді.
+	It is certified: filling in forms, signing and commenting are allowed; other changes invalidate the certification.	Ол куәландырылған: пішіндерді толтыруға, қол қоюға және түсініктеме қалдыруға рұқсат етілген; басқа өзгерістер куәландыруды жарамсыз етеді.
 	it was still in the document afterwards, so the change was undone	алып тастағаннан кейін ол құжатта қалды, сондықтан өзгеріс болдырылмады
 	Item List	Элементтер тізімі
 	Item:	Элемент:
@@ -2209,6 +2214,7 @@ animation effects	On	Қосулы
 	Remove redaction marks	Жасыру белгілерін алып тастау
 	Remove saved {what}	Алып тастау: сақталған {what}
 	Remove security	Қорғанысты алып тастау
+	Remove security?	Қауіпсіздікті алып тастау керек пе?
 	Remove Signature	Қолтаңбаны алып тастау
 	Remove signature	Қолтаңбаны алып тастау
 	Remove signature…	Қолтаңбаны алып тастау…
@@ -2880,6 +2886,7 @@ certificate	Subject	Субъект
 	The driver reports a paper jam.	Драйвер қағаз кептелуін хабарлайды.
 	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	Драйвер күтіп тұрған парақты хабарлайды. Науа бос болғаннан кейін бит қалуы мүмкін.
 	The existing action will be preserved.	Қолданыстағы әрекет сақталады.
+	The extracted pages aren't protected: the original's security settings don't carry over.	Шығарылған беттер қорғалмаған: түпнұсқаның қауіпсіздік параметрлері көшірілмейді.
 	The feeder ran out of paper.	Беру құрылғысында қағаз таусылды.
 	The feeder took more than one sheet.	Беру құрылғысы бір парақтан артық алды.
 	The field properties could not be changed.	Өріс сипаттарын өзгерту мүмкін болмады.
@@ -2929,6 +2936,7 @@ certificate	Subject	Субъект
 	the password is incorrect	құпиясөз дұрыс емес
 	The password is incorrect.	Құпиясөз қате.
 	The password is only used to read the file; it isn't saved.	Құпиясөз файлды оқу үшін ғана қолданылады; ол сақталмайды.
+	The passwords and the restrictions are removed when you save.	Сақтау кезінде құпиясөздер мен шектеулер алып тасталады.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF мәтін қаріптері «{c}» таңбасын ({code}) сала алмайды. Қолдау көрсетілетін мәтінді таңдаңыз.
 	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN код тек картаға жіберіледі; PdfCraft оны сақтамайды.
 	The PIN is incorrect.	PIN қате.
@@ -2998,6 +3006,7 @@ certificate	Subject	Субъект
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	қолтаңба қызметі PIN-кодты немесе OTP кодын қабылдамады (OTP кодының мерзімі өтіп кеткен болуы мүмкін)
 	the signing service rejected the user name or password	қолтаңба қызметі пайдаланушы атын немесе құпиясөзді қабылдамады
 	The smart card's digital IDs couldn't be listed: {e}	Смарт-картаның цифрлық ID-лерін тізімдеу мүмкін болмады: {e}
+	The split files aren't protected: the original's security settings don't carry over.	Бөлінген файлдар қорғалмаған: түпнұсқаның қауіпсіздік параметрлері көшірілмейді.
 	The standard it must meet and where the file goes	Қанағаттандыруы тиіс стандарт және файлдың бағыты
 	the tesseract engine is not available in the web build	tesseract қозғалтқышы веб нұсқасында қолжетімді емес
 	the tesseract program was not found (install it, or add it to the PATH)	tesseract бағдарламасы табылмады (оны орнатыңыз немесе PATH-қа қосыңыз)
@@ -3056,6 +3065,7 @@ certificate	Subject	Субъект
 	This document is digitally signed. Sanitizing rewrites the whole file, which invalidates the signatures, so it can only go ahead without them.	Бұл құжатқа цифрлық қолтаңба қойылған. Тазарту бүкіл файлды қайта жазады, бұл қолтаңбаларды жарамсыз етеді, сондықтан оны тек оларсыз жалғастыруға болады.
 	This document is not inside a CAdES envelope	Бұл құжат CAdES қолтаңба конвертінің ішінде емес.
 	This document is secured. Some changes are restricted by its security settings.	Бұл құжат қорғалған. Кейбір өзгерістер оның қауіпсіздік параметрлерімен шектеулі.
+	This document is signed. A change adds a new version: the signatures stay valid for the version they signed, and viewers will show that the document was changed after signing.	Бұл құжатқа қол қойылған. Өзгерту жаңа нұсқа қосады: қолтаңбалар өздері қол қойған нұсқа үшін жарамды болып қалады, ал көру бағдарламалары құжаттың қол қойылғаннан кейін өзгертілгенін көрсетеді.
 	this document is signed: rewriting it would invalidate its signatures (save it incrementally instead)	бұл құжат қол қойылған: қайта жазу оның қолтаңбаларын жарамсыз етеді (орнына қосымша сақтаңыз)
 	This document is trying to open a local file:	Бұл құжат жергілікті файлды ашуға әрекеттеніп жатыр:
 	This document isn't in a folder yet: save it first	Бұл құжат әлі ешбір қалтада жоқ: алдымен оны сақтаңыз
