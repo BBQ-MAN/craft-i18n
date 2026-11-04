@@ -226,6 +226,7 @@
 	Always use my default zoom and page layout	Toujours utiliser mon zoom et ma présentation de page par défaut
 	An action is already running	Une action est déjà en cours
 	An action with this name already exists.	Une action portant ce nom existe déjà.
+	an Aruba account needs its domain (the "dominio" Aruba gives with the account): enter it	un compte Aruba a besoin de son domaine (le « dominio » qu'Aruba fournit avec le compte) : saisissez-le
 	An embedded file has no AFRelationship	Un fichier incorporé n'a pas d'AFRelationship
 	An image asks to be interpolated	Une image demande à être interpolée
 	An image has alternates or OPI information	Une image a des variantes ou des informations OPI
@@ -375,6 +376,7 @@ certificate	Basic constraints	Contraintes de base
 	Certify	Certifier
 	Certify (invisible signature)	Certifier (signature invisible)
 	Certify (visible signature)	Certifier (signature visible)
+	Challenge: {challenge}	Défi : {challenge}
 	Change additional metadata	Modifier les métadonnées supplémentaires
 	Change Author	Modifier l'auteur
 	Change comment properties	Modifier les propriétés du commentaire
@@ -453,6 +455,7 @@ certificate	Basic constraints	Contraintes de base
 	Choose the module's library file.	Choisissez le fichier de bibliothèque du module.
 	Choose the two endpoints.	Choisissez les deux extrémités.
 	Choose three points on the circle.	Choisissez trois points sur le cercle.
+	Choose where to save the signed file. The service signs it once you have.	Choisissez où enregistrer le fichier signé. Le service le signe dès que c'est fait.
 	Clean Up	Nettoyer
 	Clean-up	Nettoyage
 	Clear all	Tout effacer
@@ -481,6 +484,7 @@ certificate	Basic constraints	Contraintes de base
 	Closed arrow	Flèche fermée
 	Cloud	Nuage
 	CloudSigner (mSzafir) is found by itself when it is installed: start it and log in before signing.	CloudSigner (mSzafir) est détecté automatiquement s'il est installé : lancez-le et connectez-vous avant de signer.
+	Code sent	Code envoyé
 	Collapse all	Tout réduire
 	Collapse all bookmarks	Réduire tous les signets
 	Collapse all pages	Réduire toutes les pages
@@ -787,6 +791,7 @@ key	Delete	Suppr
 	Documents and view	Documents et affichage
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Les documents de plus de 20 pages ont besoin de signets pour la navigation. Ajoutez des signets pour les sections principales.
 	Does not match what was signed	Ne correspond pas à ce qui a été signé
+	Domain	Domaine
 	Don't save	Ne pas enregistrer
 	Don't show again	Ne plus afficher
 	Done adding text	Terminer l'ajout de texte
@@ -1031,6 +1036,7 @@ calendar date	February	février
 	Filling of form fields	Remplissage des champs de formulaire
 	Filter comments	Filtrer les commentaires
 	Find a tag	Rechercher une balise
+	Find certificates	Rechercher les certificats
 	Find form fields	Rechercher les champs du formulaire
 	Find options	Options de recherche
 	Find text	Rechercher du texte
@@ -1337,6 +1343,7 @@ certificate	Key usage	Usage de la clé
 	Logical Reading Order	Ordre de lecture logique
 	Longitude	Longitude
 	Looking for a local model runtime…	Recherche d'un moteur de modèles local…
+	Looking for certificates…	Recherche des certificats…
 	Looking for PDFs…	Recherche de PDF…
 	Looking for printers…	Recherche des imprimantes…
 	Loop	Boucle
@@ -1613,6 +1620,7 @@ animation effects	On	Activés
 	One download serves every ArtCraft app: the model lands in a shared folder all of them read.	Un seul téléchargement sert toutes les applications ArtCraft : le modèle arrive dans un dossier partagé qu'elles lisent toutes.
 	One word or phrase per line	Un mot ou une expression par ligne
 	One {f} file per page, named after the document.	Un fichier {f} par page, nommé d'après le document.
+	One-time code (OTP)	Code à usage unique (OTP)
 	Only allow this if you trust the source document.	N'autorisez cette action que si vous faites confiance au document source.
 	Only change the colour of black text or line art	Ne changer que la couleur du texte noir et des traits
 	Only checked properties will change. Mixed means the selected fields have different values.	Seules les propriétés cochées seront modifiées. « Valeurs différentes » indique que les champs sélectionnés ont des valeurs différentes.
@@ -1681,6 +1689,7 @@ animation effects	On	Activés
 	Other elements alternate text	Texte de remplacement d'autres éléments
 	Other elements that require alternate text	Autres éléments qui exigent un texte de remplacement
 	Other options	Autres options
+	Other provider (CSC API)	Autre fournisseur (API CSC)
 	Outdent	Diminuer le retrait
 	Outline	Contour
 	Outline colour:	Couleur du contour :
@@ -1963,6 +1972,9 @@ certificate	Public key	Clé publique
 	Reliable character encoding is provided	Un codage de caractères fiable est fourni
 	Reload documents when their files change on disk	Recharger les documents lorsque leurs fichiers sont modifiés sur le disque
 	Remind Me Later	Me le rappeler plus tard
+	Remote signature (OTP)	Signature à distance (OTP)
+	Remote signing isn't available in this build	La signature à distance n’est pas disponible dans cette version
+	Remove "{name}" from this list? The certificate stays with the signing service.	Retirer « {name} » de cette liste ? Le certificat reste auprès du service de signature.
 	Remove "{name}" from this list? The file itself is not deleted.	Retirer « {name} » de cette liste ? Le fichier lui-même n’est pas supprimé.
 	Remove all links	Retirer tous les liens
 	Remove background	Retirer l'arrière-plan
@@ -2029,6 +2041,7 @@ certificate	Public key	Clé publique
 	Report Options	Options du rapport
 	Report…	Rapport…
 	Required	Obligatoire
+	Required, given by Aruba with the account	Obligatoire, fourni par Aruba avec le compte
 	Requires user to enter a password for:	L'utilisateur doit saisir un mot de passe pour :
 	Reset a form	Réinitialiser un formulaire
 	Reset caption	Réinitialiser le libellé
@@ -2220,8 +2233,10 @@ calendar weekday	Sa	Sa
 certificate	Self-signed	Auto-signé
 	Send	Envoyer
 	Send backward	Reculer
+	Send code	Envoyer le code
 	Send to back	Mettre à l'arrière-plan
 	Sending sheet {s} of {n} to {printer}…	Envoi de la feuille {s} sur {n} à {printer}…
+	Sending the code…	Envoi du code…
 	Sending to {printer}…	Envoi à {printer}…
 	Sending…	Envoi en cours…
 	Sensitivity (screen pixels)	Sensibilité (pixels à l’écran)
@@ -2235,6 +2250,8 @@ certificate	Self-signed	Auto-signé
 calendar date	September	septembre
 	Serial number	Numéro de série
 certificate	Serial number	Numéro de série
+	Service	Service
+	Service address	Adresse du service
 	Set Alternate Text	Définir le texte de remplacement
 	Set alternate text	Définir le texte de remplacement
 	Set bookmark destination	Définir la destination du signet
@@ -2337,8 +2354,11 @@ key	Shift	Maj
 	Signer's name	Nom du signataire
 	Signers	Signataires
 	Signing	Signature
+	Signing service  ·  	Service de signature  ·  
 	Signing time	Heure de signature
 	Signing time is from the clock on the signer's computer.	L'heure de signature provient de l'horloge de l'ordinateur du signataire.
+	Signing…	Signature en cours…
+	Signing… Confirm the signature on your other device.	Signature en cours… Confirmez la signature sur votre autre appareil.
 	Silhouettes	Contours
 	Simplified field notation:	Notation de champs simplifiée :
 	Single file	Un seul fichier
@@ -2498,6 +2518,7 @@ calendar weekday	Th	Je
 	The comment being edited no longer exists, so its text was not saved.	Le commentaire en cours de modification n'existe plus, son texte n'a donc pas été enregistré.
 	The device's digital ID isn't available any more; start signing again to list it.	L'ID numérique du périphérique n'est plus disponible ; recommencez la signature pour l'afficher.
 	The display datum transformation is approximate.	La transformation du référentiel d’affichage est approximative.
+	The document changed while it was being signed, so the signature wasn't saved.	Le document a changé pendant sa signature, la signature n'a donc pas été enregistrée.
 	The document changed while you were choosing a file, so nothing was changed.	Le document a changé pendant que vous choisissiez un fichier, donc rien n'a été modifié.
 	The document changed while you were editing field properties.	Le document a changé pendant que vous modifiiez les propriétés des champs.
 	The document has additional actions (/AA)	Le document contient des actions supplémentaires (/AA)
@@ -2620,6 +2641,15 @@ calendar weekday	Th	Je
 	The signer's certificate was not valid at the time of signing.	Le certificat du signataire n'était pas valide au moment de la signature.
 	The signer's identity is unknown because it has not been included in your list of trusted certificates and none of its parent certificates are trusted certificates.	L'identité du signataire est inconnue car elle n'a pas été incluse dans votre liste de certificats approuvés et aucun de ses certificats parents n'est un certificat approuvé.
 	The signer's identity is valid.	L'identité du signataire est valide.
+	the signing service is unreachable ({reason})	le service de signature est injoignable ({reason})
+	The signing service lists no certificate for this account.	Le service de signature n'indique aucun certificat pour ce compte.
+	the signing service refused to list the certificates	le service de signature a refusé de lister les certificats
+	the signing service refused to send the OTP	le service de signature a refusé d'envoyer l'OTP
+	the signing service refused to sign	le service de signature a refusé de signer
+	the signing service rejected the OTP (it may have expired)	le service de signature a refusé l'OTP (il a peut-être expiré)
+	the signing service rejected the PIN	le service de signature a refusé le code PIN
+	the signing service rejected the PIN or the OTP (the OTP may have expired)	le service de signature a refusé le code PIN ou l'OTP (l'OTP a peut-être expiré)
+	the signing service rejected the user name or password	le service de signature a refusé le nom d'utilisateur ou le mot de passe
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Les polices standard ne peuvent pas afficher « {c} » ({code}). Pour l'instant, seuls les caractères d'Europe occidentale peuvent être ajoutés comme texte.
 	The standard it must meet and where the file goes	La norme à respecter et la destination du fichier
 	The text is the same	Le texte est identique
@@ -2716,6 +2746,7 @@ calendar weekday	Th	Je
 	This signature uses an RSA key shorter than 2048 bits, which is no longer considered strong enough for signatures. It still validates, but it should not be relied on.	Cette signature utilise une clé RSA de moins de 2048 bits, ce qui n'est plus considéré comme suffisamment robuste pour des signatures. Elle se valide toujours, mais il ne faut pas s'y fier.
 	This signature uses RIPEMD-160, a legacy 160-bit hash algorithm that is no longer recommended for signatures. It still validates, but it should not be relied on.	Cette signature utilise RIPEMD-160, un ancien algorithme de hachage de 160 bits qui n'est plus recommandé pour les signatures. Elle reste valide, mais il ne faut pas s'y fier.
 	This signature uses SHA-1, a weak hash algorithm: collisions in it have been demonstrated. It still validates because many documents signed years ago use it, but it should not be relied on.	Cette signature utilise SHA-1, un algorithme de hachage faible : des collisions ont été démontrées. Elle reste valide car de nombreux documents signés il y a des années l'utilisent, mais il ne faut pas s'y fier.
+	this signing service can't be used: it needs OAuth sign-in in a browser, which PdfCraft doesn't support yet	ce service de signature ne peut pas être utilisé : il exige une connexion OAuth dans un navigateur, que PdfCraft ne prend pas encore en charge
 	This tab is already first	Cet onglet est déjà le premier
 	This tab is already last	Cet onglet est déjà le dernier
 	This token's PIN is locked. Signing will not work until it is unlocked.	Le code PIN de ce jeton est verrouillé. La signature ne fonctionnera pas jusqu'à son déverrouillage.
