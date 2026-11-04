@@ -71,6 +71,7 @@
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	在分頁左側、標題列通常顯示的位置放一個標誌或名稱：PdfCraft 自己的，或你公司的。
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	指定頁數會在掃完這些頁後停止進紙器。取消會提前結束傳輸；已收到的頁面仍保留在文件中。
 	A picture covers page {pages} (a scan?), so the background won't show there.	第 {pages} 頁被一張圖片覆蓋（掃描檔？），因此那裡不會顯示背景。
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	放置的簽名在鎖定前只是註解：任何有 PDF 編輯器的人都能移動或移除它。鎖定後，「填寫與簽署」的文字、標記與簽名會成為頁面的一部分。
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	一個 PNG 或 SVG 檔案。每次 PdfCraft 啟動時都從此位置讀取。
 	A selected field has no widget on any page, so the fields can't be edited together.	某個所選欄位在任何頁面上都沒有控制項，因此無法一起編輯這些欄位。
 	A setting isn't valid	某項設定無效
@@ -905,6 +906,7 @@ key	Delete	Delete
 	Documents and view	文件與檢視
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	超過 20 頁的文件需要書籤以便導覽。請為主要章節新增書籤。
 	Does not match what was signed	與所簽內容不一致
+	Don't ask again	不再詢問
 	Don't save	不儲存
 	Don't show again	不再顯示
 	Done adding text	完成新增文字
@@ -1437,6 +1439,7 @@ key	Home	Home
 	Keep	保留
 	Keep all images	保留所有圖片
 	Keep an empty signature field to sign again	保留一個空白簽章欄位以便重新簽署
+	Keep editable	保持可編輯
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	僅將簽章的外觀保留為頁面內容（其中顯示的姓名或日期仍可見）
 	Keep opaque images	保留不透明圖片
 	Keep source fonts	保留原始字型
@@ -1520,7 +1523,11 @@ key	Home	Home
 	Local and private	本機且私有
 	Local cross-PDF links require the desktop app	PDF 之間的本機連結需要桌面應用程式
 	Location: 	位置：
+	Lock and save	鎖定並儲存
 	Lock comment	鎖定註解
+	Lock into the page when saving	儲存時鎖定到頁面
+	Lock now	立即鎖定
+	Lock your signature into the page?	將簽名鎖定到頁面中？
 	Logical Reading Order	邏輯閱讀順序
 	Logo	標誌
 	Logo and name	標誌和名稱
@@ -1915,6 +1922,7 @@ animation effects	On	開
 	Other options	其他選項
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	仍有其他簽章，因此副本會作為已簽署檔案的增量更新儲存：已移除的簽章保留在較早的修訂版中，可以從那裡復原。
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	仍有其他簽章，因此已移除的簽章仍保留在檔案的較早修訂版中；請重新驗證其餘簽章。
+	Otherwise, ask on the first save after a signature is placed	否則，在放置簽名後第一次儲存時詢問
 	Outdent	減少縮排
 	Outline	輪廓
 	Outline colour:	輪廓色彩:
@@ -2689,11 +2697,13 @@ key	Shift	Shift
 	Sign yourself	自行簽署
 	Signature	簽名
 	signature	簽名
+	Signature added. Others can move it until it's locked.	已加入簽名。鎖定之前，其他人可以移動它。
 	Signature cleanup stopped unexpectedly.	簽名清理意外停止。
 	Signature Details	簽名詳細資訊
 	Signature invalid	簽名無效
 	Signature is INVALID:	簽名無效：
 	Signature is valid:	簽名有效：
+	Signature locked into the page.	簽名已鎖定到頁面。
 	Signature panel	簽名面板
 	Signature valid	簽名有效
 	Signature validity is UNKNOWN:	簽名有效性未知：

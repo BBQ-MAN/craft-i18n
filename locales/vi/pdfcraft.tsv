@@ -89,6 +89,7 @@
 	A picture with a decode array or a colour-key mask can't be converted to CMYK yet	Ảnh có mảng giải mã hoặc mặt nạ khóa màu chưa thể chuyển sang CMYK
 	A picture with other than 8 bits per component can't be converted to CMYK yet	Ảnh không phải 8 bit mỗi thành phần chưa thể chuyển sang CMYK
 	A picture's data can't be read, so it can't be converted to CMYK	Không đọc được dữ liệu của một ảnh nên không thể chuyển sang CMYK
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	Chữ ký đã đặt chỉ là một bình luận cho đến khi được khóa: bất kỳ ai có trình chỉnh sửa PDF đều có thể di chuyển hoặc xóa nó. Khóa sẽ biến văn bản, dấu và chữ ký Điền & Ký của bạn thành một phần của trang.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Một tệp PNG hoặc SVG. Tệp được đọc từ vị trí này mỗi lần PdfCraft khởi động.
 	A PrinterMark annotation overlaps the TrimBox or ArtBox	Chú thích PrinterMark chồng lên TrimBox hoặc ArtBox
 	A script	Một script
@@ -908,6 +909,7 @@ key	Delete	Delete
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Tài liệu có hơn 20 trang cần dấu trang để điều hướng. Hãy thêm dấu trang cho các phần chính.
 	Does not match what was signed	Không khớp với nội dung được ký
 	Domain	Miền
+	Don't ask again	Không hỏi lại
 	Don't save	Không lưu
 	Don't show again	Không hiển thị lại
 	Done adding text	Đã thêm văn bản xong
@@ -1474,6 +1476,7 @@ calendar date	June	tháng 6
 	Keep	Giữ
 	Keep all images	Giữ nguyên mọi ảnh
 	Keep an empty signature field to sign again	Giữ một trường chữ ký trống để ký lại
+	Keep editable	Giữ để chỉnh sửa được
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	Chỉ giữ hình thức của chữ ký, dưới dạng nội dung trang (tên hoặc ngày hiển thị vẫn nhìn thấy được)
 	Keep opaque images	Giữ nguyên ảnh không trong suốt
 	Keep source fonts	Giữ phông chữ nguồn
@@ -1563,7 +1566,11 @@ certificate	Key usage	Mục đích sử dụng khóa
 	Loading…	Đang tải…
 	Local cross-PDF links require the desktop app	Liên kết PDF cục bộ giữa các tệp yêu cầu ứng dụng máy tính
 	Location: 	Vị trí: 
+	Lock and save	Khóa và lưu
 	Lock comment	Khóa bình luận
+	Lock into the page when saving	Khóa vào trang khi lưu
+	Lock now	Khóa ngay
+	Lock your signature into the page?	Khóa chữ ký của bạn vào trang?
 	Logical Reading Order	Thứ tự đọc hợp lý
 	Logo	Logo
 	Logo and name	Logo và tên
@@ -1953,6 +1960,7 @@ animation effects	On	Bật
 	Other provider (CSC API)	Nhà cung cấp khác (CSC API)
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Vẫn còn chữ ký khác nên bản sao được lưu như một bản cập nhật của tệp đã ký: chữ ký đã gỡ vẫn nằm trong bản sửa đổi trước và có thể khôi phục từ đó.
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Vẫn còn chữ ký khác nên chữ ký đã gỡ vẫn nằm trong bản sửa đổi trước của tệp; hãy xác thực lại các chữ ký còn lại.
+	Otherwise, ask on the first save after a signature is placed	Nếu không, hỏi ở lần lưu đầu tiên sau khi đặt chữ ký
 	Outdent	Giảm thụt lề
 	Outline colour:	Màu đường viền:
 	Output appears here.	Đầu ra xuất hiện ở đây.
@@ -2703,6 +2711,7 @@ key	Shift	Shift
 	Sign yourself	Tự ký
 	Signature	Chữ ký
 	signature	chữ ký
+	Signature added. Others can move it until it's locked.	Đã thêm chữ ký. Người khác có thể di chuyển nó cho đến khi được khóa.
 	Signature cleanup stopped unexpectedly.	Quá trình làm sạch chữ ký đã dừng đột ngột.
 	Signature Details	Chi tiết chữ ký
 	Signature invalid	Chữ ký không hợp lệ
@@ -2710,6 +2719,7 @@ key	Shift	Shift
 	Signature is INVALID:	Chữ ký KHÔNG HỢP LỆ:
 	Signature is valid	Chữ ký hợp lệ
 	Signature is valid:	Chữ ký hợp lệ:
+	Signature locked into the page.	Đã khóa chữ ký vào trang.
 	Signature panel	Bảng chữ ký
 	Signature valid	Chữ ký hợp lệ
 	Signature validity is unknown	Không rõ tính hợp lệ của chữ ký

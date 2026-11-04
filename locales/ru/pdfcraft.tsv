@@ -75,6 +75,7 @@
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Логотип или название слева от вкладок, там, где их показала бы строка заголовка: PdfCraft или вашей компании.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Число страниц останавливает податчик после стольких листов. Отмена раньше завершает передачу; уже полученные страницы остаются в документе.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Страница, закрытая изображением (скан?): {pages}; фон там не будет виден.
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	Размещённая подпись остаётся комментарием, пока не закреплена: любой с редактором PDF может её переместить или удалить. Закрепление делает текст, отметки и подписи из «Заполнить и подписать» частью страницы.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Файл PNG или SVG. Читается из этого места при каждом запуске PdfCraft.
 	A script	Сценарий
 	A selected field has no widget on any page, so the fields can't be edited together.	У одного из выбранных полей нет виджета ни на одной странице, поэтому поля нельзя изменить вместе.
@@ -961,6 +962,7 @@ key	Delete	Delete
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Документам более 20 страниц нужны закладки для навигации. Добавьте закладки для основных разделов.
 	Does not match what was signed	Не соответствует подписанному
 	Domain	Домен
+	Don't ask again	Больше не спрашивать
 	Don't save	Не сохранять
 	Don't show again	Больше не показывать
 	Done adding text	Завершить добавление текста
@@ -1531,6 +1533,7 @@ calendar date	June	Июнь
 	Keep	Оставить
 	Keep all images	Сохранять все изображения
 	Keep an empty signature field to sign again	Оставить пустое поле подписи, чтобы подписать заново
+	Keep editable	Оставить редактируемой
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	Оставить только внешний вид подписей как содержимое страницы (показанные в них имя или дата остаются видны)
 	Keep opaque images	Сохранять непрозрачные изображения
 	Keep source fonts	Сохранить исходные шрифты
@@ -1624,7 +1627,11 @@ certificate	Key usage	Назначение ключа
 	Local cross-PDF links require the desktop app	Локальные ссылки между PDF работают только в настольном приложении
 	Location	Местоположение
 	Location: 	Местоположение: 
+	Lock and save	Закрепить и сохранить
 	Lock comment	Заблокировать комментарий
+	Lock into the page when saving	Закреплять на странице при сохранении
+	Lock now	Закрепить сейчас
+	Lock your signature into the page?	Закрепить подпись на странице?
 	Locked	Заблокировано
 	Logical Reading Order	Логический порядок чтения
 	Logo	Логотип
@@ -2062,6 +2069,7 @@ animation effects	On	Вкл
 	Other provider (CSC API)	Другой поставщик (CSC API)
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Остались другие подписи, поэтому копия сохраняется как обновление подписанного файла: удалённая подпись остаётся в предыдущей редакции, откуда её можно восстановить.
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Остались другие подписи, поэтому удалённая подпись по-прежнему есть в предыдущей редакции файла; заново проверьте оставшиеся подписи.
+	Otherwise, ask on the first save after a signature is placed	Иначе спрашивать при первом сохранении после размещения подписи
 	Outdent	Убрать отступ
 	Outline colour:	Цвет контура:
 	Outline over page	Контуры поверх страницы
@@ -2893,6 +2901,7 @@ key	Shift	Shift
 	Sign yourself	Подписать самим собой
 	Signature	Подпись
 	signature	подпись
+	Signature added. Others can move it until it's locked.	Подпись добавлена. Другие могут перемещать её, пока она не закреплена.
 	Signature cleanup stopped unexpectedly.	Очистка подписи неожиданно остановилась.
 	Signature Details	Сведения о подписи
 	Signature invalid	Подпись недействительна
@@ -2900,6 +2909,7 @@ key	Shift	Shift
 	Signature is INVALID:	Подпись НЕДЕЙСТВИТЕЛЬНА:
 	Signature is valid	Подпись действительна
 	Signature is valid:	Подпись действительна:
+	Signature locked into the page.	Подпись закреплена на странице.
 	Signature panel	Панель подписей
 	Signature valid	Подпись действительна
 	Signature validity is unknown	Действительность подписи неизвестна

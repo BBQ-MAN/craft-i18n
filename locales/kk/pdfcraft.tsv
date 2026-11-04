@@ -69,6 +69,7 @@
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Қойындылардың сол жағында, тақырып жолағы көрсететін жерде, логотип немесе атау: PdfCraft-тың өзінікі немесе компанияңыздікі.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Бет саны сонша парақтан кейін бергішті тоқтатады. Бас тарту тасымалды ертерек аяқтайды; қабылданған беттер құжатта қалады.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Сурет жауып тұрған бет (сканер ме?): {pages}; онда фон көрінбейді.
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	Қойылған қолтаңба бекітілгенге дейін түсініктеме болып қалады: PDF өңдегіші бар кез келген адам оны жылжытып не жоя алады. Бекіту «Толтыру және қол қою» мәтінін, белгілерін және қолтаңбаларын беттің бөлігіне айналдырады.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG немесе SVG файлы. PdfCraft әр іске қосылғанда осы орыннан оқылады.
 	A script	Сценарий
 	A selected field has no widget on any page, so the fields can't be edited together.	Таңдалған өрістің ешбір бетте виджеті жоқ, сондықтан өрістерді бірге түзетуге болмайды.
@@ -873,6 +874,7 @@ key	Delete	Delete
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	20 беттен асатын құжаттарда навигация үшін бетбелгілер қажет. Негізгі бөлімдерге бетбелгілер қосыңыз.
 	Does not match what was signed	Қол қойылған нәрсеге сәйкес келмейді
 	Domain	Домен
+	Don't ask again	Қайта сұрамау
 	Don't save	Сақтамау
 	Don't show again	Қайта көрсетпеу
 	Done adding text	Мәтін қосу аяқталды
@@ -1395,6 +1397,7 @@ calendar date	June	Маусым
 	Keep	Сақтау
 	Keep all images	Барлық суреттерді сақтау
 	Keep an empty signature field to sign again	Қайта қол қою үшін бос қолтаңба өрісін қалдыру
+	Keep editable	Өңделетін күйде қалдыру
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	Қолтаңбалардың тек сыртқы түрін бет мазмұны ретінде сақтау (олар көрсететін аты-жөн немесе күн көрінетін болып қалады)
 	Keep opaque images	Мөлдір емес суреттерді сақтау
 	Keep source fonts	Бастапқы қаріптерді сақтау
@@ -1477,7 +1480,11 @@ calendar date	June	Маусым
 	Local and private	Жергілікті және жеке
 	Local cross-PDF links require the desktop app	PDF файлдары арасындағы жергілікті сілтемелер үшін жұмыс үстелі қолданбасы қажет
 	Location: 	Орны: 
+	Lock and save	Бекіту және сақтау
 	Lock comment	Түсініктемені құлыптау
+	Lock into the page when saving	Сақтағанда бетке бекіту
+	Lock now	Қазір бекіту
+	Lock your signature into the page?	Қолтаңбаңызды бетке бекіту керек пе?
 	Logical Reading Order	Логикалық оқу реті
 	Logo	Логотип
 	Logo and name	Логотип және атауы
@@ -1865,6 +1872,7 @@ animation effects	On	Қосулы
 	Other provider (CSC API)	Басқа провайдер (CSC API)
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Басқа қолтаңбалар қалғандықтан, көшірме қол қойылған файлдың жаңартуы ретінде сақталады: алып тасталған қолтаңба алдыңғы редакцияда қалады, оны сол жерден қалпына келтіруге болады.
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Басқа қолтаңбалар қалғандықтан, алып тасталған қолтаңба файлдың алдыңғы редакциясында әлі бар; қалған қолтаңбаларды қайта тексеріңіз.
+	Otherwise, ask on the first save after a signature is placed	Әйтпесе, қолтаңба қойылғаннан кейінгі алғашқы сақтауда сұрау
 	Outdent	Шегіністі азайту
 	Outline colour:	Контур түсі:
 	Outline over page	Бет үстіндегі контур
@@ -2620,11 +2628,13 @@ key	Shift	Shift
 	Sign yourself	Өзіңіз қол қойыңыз
 	Signature	Қолтаңба
 	signature	қолтаңба
+	Signature added. Others can move it until it's locked.	Қолтаңба қосылды. Ол бекітілгенше басқалар оны жылжыта алады.
 	Signature cleanup stopped unexpectedly.	Қолтаңбаны тазалау күтпеген жерден тоқтады.
 	Signature Details	Қолтаңба мәліметтері
 	Signature invalid	Қолтаңба жарамсыз
 	Signature is INVALID:	Қолтаңба ЖАРАМСЫЗ:
 	Signature is valid:	Қолтаңба жарамды:
+	Signature locked into the page.	Қолтаңба бетке бекітілді.
 	Signature panel	Қолтаңба панелі
 	Signature valid	Қолтаңба жарамды
 	Signature validity is UNKNOWN:	Қолтаңбаның жарамдылығы БЕЛГІСІЗ:

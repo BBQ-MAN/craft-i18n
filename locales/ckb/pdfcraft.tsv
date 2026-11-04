@@ -61,6 +61,7 @@
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	لۆگۆ یان ناوێک لە لای چەپی بازدەرەکان، لەو شوێنەی شریتی ناونیشان پیشانی دەدا: هی PdfCraft یان هی کۆمپانیاکەت.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
 	A picture covers page {pages} (a scan?), so the background won't show there.	وێنەیەک پەڕەی {pages} دادەپۆشێت (سکان؟)، بۆیە پاشبنەماکە لەوێ دەرناکەوێت.
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	واژوویەکی دانراو تا جێگیر نەکرێت لێدوانێکە: هەر کەسێک دەستکاریکەرێکی PDFی هەبێت دەتوانێت بیجووڵێنێت یان لایبەرێت. جێگیرکردن دەقەکان، نیشانەکان و واژووەکانی پڕکردنەوە و واژووکردن دەکاتە بەشێک لە لاپەڕەکە.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	فایلێکی PNG یان SVG. هەر جارێک PdfCraft دەست پێ دەکات لەم شوێنەوە دەخوێنرێتەوە.
 	A script	سکریپت
 	A selected field has no widget on any page, so the fields can't be edited together.	یەکێک لە خانە هەڵبژێردراوەکان لە هیچ پەڕەیەکدا ویجێتی نییە، بۆیە ناکرێت خانەکان پێکەوە دەستکاری بکرێن.
@@ -832,6 +833,7 @@ key	Delete	Delete
 	Documents	بەڵگەنامەکان
 	Documents and view	بەڵگەنامەکان و بینین
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	ئەو بەڵگەنامانەی زیاتر لە 20 پەڕەیان هەیە پێویستیان بە دڵخوازە بۆ ڕێنیشاندان. بۆ بەشە سەرەکییەکان دڵخواز زیاد بکە.
+	Don't ask again	دووبارە مەپرسە
 	Don't save	پاشەکەوت مەکە
 	Don't show again	جارێکی تر پیشان مەدە
 	Done	تەواو
@@ -1352,6 +1354,7 @@ calendar date	July	تەممووز
 calendar date	June	حوزەیران
 	just now	ئێستا
 	Justify	هاوتەریبکردنی دوولایەن
+	Keep editable	با دەستکاریکراو بمێنێتەوە
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	تەنها شێوەی واژۆکان وەک ناوەڕۆکی پەڕە بهێڵەوە (ناو یان بەروارێک کە پیشانی دەدەن دیار دەمێنێت)
 	Keep source fonts	هێشتنەوەی فۆنتەکانی سەرچاوە
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	شریتی ناونیشانی Windows لە سەرووی شریتی بازدەرەکان بهێڵەوە. کە کوژایەوە، شریتی بازدەرەکان دەبێتە شریتی ناونیشان و دوگمەکانی پەنجەرە لە لای ڕاستییەوەن؛ Snap Layouts لەسەر دوگمەی گەورەکردنەوە پێویستی بە شریتی ناونیشانی Windows هەیە.
@@ -1446,7 +1449,11 @@ certificate	Key usage	بەکارهێنانی کلیل
 	Local cross-PDF links require the desktop app	بەستەرە نێوان-PDF ـە ناوخۆییەکان پێویستیان بە ئەپی سەر مێزە
 	Location	شوێن
 	Location: 	شوێن: 
+	Lock and save	جێگیرکردن و پاشەکەوتکردن
 	Lock comment	قفڵکردنی لێدوان
+	Lock into the page when saving	لە کاتی پاشەکەوتکردندا لە لاپەڕەکەدا جێگیر بکە
+	Lock now	ئێستا جێگیر بکە
+	Lock your signature into the page?	واژووەکەت لە لاپەڕەکەدا جێگیر بکرێت؟
 	Locked	قفڵکراو
 	Logical Reading Order	ڕیزبەندی لۆژیکیی خوێندنەوە
 	Logo	لۆگۆ
@@ -1789,6 +1796,7 @@ animation effects	On	چالاک
 	Other colour…	ڕەنگێکی تر…
 	Other elements alternate text	دەقی جێگرەوەی توخمەکانی تر
 	Other elements that require alternate text	توخمەکانی تر کە پێویستیان بە دەقی جێگرەوە هەیە
+	Otherwise, ask on the first save after a signature is placed	ئەگەر نا، لە یەکەم پاشەکەوتکردن دوای دانانی واژوویەک بپرسە
 	Outdent	هاتنە دەرەوە
 	Outline	چوارچێوە
 	Outline colour:	ڕەنگی سنوور:
@@ -2457,6 +2465,7 @@ key	Shift	Shift
 	Sign yourself	خۆت واژوو بکە
 	Signature	واژوو
 	signature	واژوو
+	Signature added. Others can move it until it's locked.	واژوو زیادکرا. کەسانی تر دەتوانن بیجووڵێنن تا جێگیر دەکرێت.
 	Signature cleanup stopped unexpectedly.	پاککردنەوەی واژۆکە بە چاوەڕواننەکراوی وەستا.
 	Signature Details	وردەکارییەکانی واژوو
 	Signature invalid	واژووەکە نادروستە
@@ -2464,6 +2473,7 @@ key	Shift	Shift
 	Signature is INVALID:	واژووەکە نادروستە:
 	Signature is valid	واژووەکە دروستە
 	Signature is valid:	واژووەکە دروستە:
+	Signature locked into the page.	واژوو لە لاپەڕەکەدا جێگیرکرا.
 	Signature panel	پانێڵی واژووەکان
 	Signature valid	واژووەکە دروستە
 	Signature validity is unknown	دروستیی واژووەکە نەناسراوە

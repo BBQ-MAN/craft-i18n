@@ -67,6 +67,7 @@
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	제목 표시줄이 있을 자리인 탭 왼쪽에 로고나 이름을 표시합니다. PdfCraft 기본 로고나 회사 로고를 쓸 수 있습니다.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
 	A picture covers page {pages} (a scan?), so the background won't show there.	이미지가 {pages}페이지를 덮고 있어(스캔본?) 배경이 보이지 않습니다.
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	배치한 서명은 고정하기 전까지 주석입니다. PDF 편집기가 있는 사람은 누구나 이를 이동하거나 제거할 수 있습니다. 고정하면 채우기 및 서명의 텍스트, 표시 및 서명이 페이지의 일부가 됩니다.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG 또는 SVG 파일입니다. PdfCraft를 시작할 때마다 이 위치에서 읽습니다.
 	A script	스크립트
 	A selected field has no widget on any page, so the fields can't be edited together.	선택한 필드 중 하나가 어느 페이지에도 위젯이 없어 필드를 함께 편집할 수 없습니다.
@@ -823,6 +824,7 @@ key	Delete	Delete
 	Documents and view	문서 및 보기
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	20페이지가 넘는 문서에는 탐색용 책갈피가 필요합니다. 주요 섹션에 책갈피를 추가하세요.
 	Domain	도메인
+	Don't ask again	다시 묻지 않음
 	Don't save	저장 안 함
 	Don't show again	다시 표시 안 함
 	Done adding text	텍스트 추가 완료
@@ -1317,6 +1319,7 @@ calendar date	July	7월
 calendar date	June	6월
 	Justify	양쪽 정렬
 	Keep an empty signature field to sign again	다시 서명할 수 있도록 빈 서명 필드 유지
+	Keep editable	편집 가능하게 유지
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	서명의 모양만 페이지 내용으로 유지(서명에 표시된 이름이나 날짜는 계속 보임)
 	Keep source fonts	원본 글꼴 유지
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	탭 스트립 위에 Windows 제목 표시줄을 유지합니다. 끄면 탭 스트립이 제목 표시줄이 되고 창 버튼은 오른쪽 끝에 놓입니다. 최대화 버튼의 스냅 레이아웃(Snap Layouts)을 쓰려면 Windows 제목 표시줄이 필요합니다.
@@ -1400,7 +1403,11 @@ certificate	Key usage	키 용도
 	Loading…	불러오는 중…
 	Local cross-PDF links require the desktop app	PDF 간 로컬 링크에는 데스크톱 앱이 필요합니다
 	Location: 	위치: 
+	Lock and save	고정 및 저장
 	Lock comment	주석 잠금
+	Lock into the page when saving	저장할 때 페이지에 고정
+	Lock now	지금 고정
+	Lock your signature into the page?	서명을 페이지에 고정하시겠습니까?
 	Logical Reading Order	논리적 읽기 순서
 	Logo	로고
 	Logo and name	로고와 이름
@@ -1756,6 +1763,7 @@ animation effects	On	켜기
 	Other provider (CSC API)	기타 제공업체(CSC API)
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	다른 서명이 남아 있으므로 사본은 서명된 파일의 업데이트로 저장됩니다. 제거한 서명은 이전 개정판에 남아 있어 복구할 수 있습니다.
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	다른 서명이 남아 있으므로 제거한 서명은 파일의 이전 개정판에 여전히 있습니다. 남은 서명을 다시 확인하세요.
+	Otherwise, ask on the first save after a signature is placed	그렇지 않으면 서명을 배치한 후 처음 저장할 때 묻기
 	Outdent	내어쓰기
 	Outline colour:	윤곽선 색:
 	Output appears here.	출력이 여기에 표시됩니다.
@@ -2438,6 +2446,7 @@ key	Shift	Shift
 	Sign yourself	직접 서명
 	Signature	서명
 	signature	서명
+	Signature added. Others can move it until it's locked.	서명이 추가되었습니다. 고정하기 전까지 다른 사람이 이동할 수 있습니다.
 	Signature cleanup stopped unexpectedly.	서명 정리가 예기치 않게 중단되었습니다.
 	Signature Details	서명 세부 정보
 	Signature invalid	서명 유효하지 않음
@@ -2445,6 +2454,7 @@ key	Shift	Shift
 	Signature is INVALID:	서명이 유효하지 않습니다:
 	Signature is valid	서명이 유효합니다
 	Signature is valid:	서명이 유효합니다:
+	Signature locked into the page.	서명이 페이지에 고정되었습니다.
 	Signature panel	서명 패널
 	Signature valid	서명 유효
 	Signature validity is unknown	서명의 유효성을 알 수 없습니다

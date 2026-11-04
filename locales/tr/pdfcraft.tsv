@@ -73,6 +73,7 @@
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Sekmelerin solunda, başlık çubuğunun göstereceği yerde bir logo veya ad: PdfCraft'ınki ya da şirketinizinki.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Sayfa sayısı, o kadar yapraktan sonra besleyiciyi durdurur. İptal aktarımı erken bitirir; alınan sayfalar belgede kalır.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Resimle kaplı sayfa (tarama mı?): {pages}; arka plan orada görünmez.
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	Yerleştirilen imza, sabitlenene kadar bir yorumdur: PDF düzenleyicisi olan herkes onu taşıyabilir veya kaldırabilir. Sabitlemek, Doldur ve İmzala metnini, işaretlerini ve imzalarını sayfanın parçası yapar.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Bir PNG veya SVG dosyası. PdfCraft her başlatıldığında bu konumdan okunur.
 	A script	Bir komut dosyası
 	A selected field has no widget on any page, so the fields can't be edited together.	Seçilen bir alanın hiçbir sayfada pencere öğesi yok, bu nedenle alanlar birlikte düzenlenemez.
@@ -920,6 +921,7 @@ key	Delete	Delete
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	20 sayfadan fazla olan belgelerde gezinme için yer işaretleri gerekir. Ana bölümler için yer işaretleri ekleyin.
 	Does not match what was signed	İmzalananla eşleşmiyor
 	Domain	Etki alanı
+	Don't ask again	Bir daha sorma
 	Don't save	Kaydetme
 	Don't show again	Bir daha gösterme
 	Done adding text	Metin ekleme bitti
@@ -1471,6 +1473,7 @@ key	Home	Home
 	Keep	Koru
 	Keep all images	Tüm görselleri koru
 	Keep an empty signature field to sign again	Yeniden imzalamak için boş bir imza alanı bırak
+	Keep editable	Düzenlenebilir bırak
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	İmzaların yalnızca görünümünü sayfa içeriği olarak koru (gösterdikleri ad veya tarih görünür kalır)
 	Keep opaque images	Opak görselleri koru
 	Keep source fonts	Kaynak yazı tiplerini koru
@@ -1562,7 +1565,11 @@ key	Home	Home
 	Local and private	Yerel ve özel
 	Local cross-PDF links require the desktop app	PDF'ler arası yerel bağlantılar masaüstü uygulamasını gerektirir
 	Location: 	Konum: 
+	Lock and save	Sabitle ve kaydet
 	Lock comment	Yorumu kilitle
+	Lock into the page when saving	Kaydederken sayfaya sabitle
+	Lock now	Şimdi sabitle
+	Lock your signature into the page?	İmzanız sayfaya sabitlensin mi?
 	Logical Reading Order	Mantıksal Okuma Sırası
 	Logo	Logo
 	Logo and name	Logo ve ad
@@ -1980,6 +1987,7 @@ animation effects	On	Açık
 	Other provider (CSC API)	Başka bir sağlayıcı (CSC API)
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Başka imzalar kaldığı için kopya, imzalı dosyanın bir güncellemesi olarak kaydedilir: kaldırılan imza önceki revizyonda kalır ve oradan kurtarılabilir.
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Başka imzalar kaldığı için kaldırılan imza dosyanın önceki revizyonunda hâlâ duruyor; kalan imzaları yeniden doğrulayın.
+	Otherwise, ask on the first save after a signature is placed	Aksi halde, imza yerleştirildikten sonraki ilk kayıtta sor
 	Outdent	Girintiyi azalt
 	Outline colour:	Kenar rengi:
 	Outline over page	Sayfa üzerinde anahat
@@ -2776,6 +2784,7 @@ key	Shift	Shift
 	Sign yourself	Kendiniz imzalayın
 	Signature	İmza
 	signature	imza
+	Signature added. Others can move it until it's locked.	İmza eklendi. Sabitlenene kadar başkaları onu taşıyabilir.
 	Signature cleanup stopped unexpectedly.	İmza temizleme işlemi beklenmedik şekilde durdu.
 	Signature Details	İmza Ayrıntıları
 	Signature invalid	İmza geçersiz
@@ -2783,6 +2792,7 @@ key	Shift	Shift
 	Signature is INVALID:	İmza GEÇERSİZ:
 	Signature is valid	İmza geçerli
 	Signature is valid:	İmza geçerli:
+	Signature locked into the page.	İmza sayfaya sabitlendi.
 	Signature panel	İmza paneli
 	Signature valid	İmza geçerli
 	Signature validity is unknown	İmzanın geçerliliği bilinmiyor

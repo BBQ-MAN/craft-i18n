@@ -71,6 +71,7 @@
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	在标签左侧、标题栏通常显示的位置放一个徽标或名称：PdfCraft 自己的，或你公司的。
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	指定页数会在扫完这些页后停止进纸器。取消会提前结束传输；已收到的页面仍保留在文档中。
 	A picture covers page {pages} (a scan?), so the background won't show there.	第 {pages} 页被一张图片覆盖（扫描件？），因此那里不会显示背景。
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	放置的签名在锁定前只是注释：任何有 PDF 编辑器的人都能移动或删除它。锁定后，“填写和签名”的文字、标记和签名会成为页面的一部分。
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	一个 PNG 或 SVG 文件。每次 PdfCraft 启动时都从此位置读取。
 	A selected field has no widget on any page, so the fields can't be edited together.	某个所选字段在任何页面上都没有控件，因此无法一起编辑这些字段。
 	A setting isn't valid	某项设置无效
@@ -912,6 +913,7 @@ key	Delete	Delete
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	超过 20 页的文档需要书签以便导航。请为主要章节添加书签。
 	Does not match what was signed	与所签内容不一致
 	Domain	域
+	Don't ask again	不再询问
 	Don't save	不保存
 	Don't show again	不再显示
 	Done adding text	完成添加文本
@@ -1447,6 +1449,7 @@ key	Home	Home
 	Keep	保留
 	Keep all images	保留所有图片
 	Keep an empty signature field to sign again	保留一个空白签名字段以便重新签名
+	Keep editable	保持可编辑
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	仅将签名的外观保留为页面内容（其中显示的姓名或日期仍可见）
 	Keep opaque images	保留不透明图片
 	Keep source fonts	保留原始字体
@@ -1533,7 +1536,11 @@ key	Home	Home
 	Local and private	本地且私有
 	Local cross-PDF links require the desktop app	PDF 之间的本地链接需要桌面应用
 	Location: 	位置：
+	Lock and save	锁定并保存
 	Lock comment	锁定注释
+	Lock into the page when saving	保存时锁定到页面
+	Lock now	立即锁定
+	Lock your signature into the page?	将签名锁定到页面中？
 	Logical Reading Order	逻辑阅读顺序
 	Logo	徽标
 	Logo and name	徽标和名称
@@ -1940,6 +1947,7 @@ animation effects	On	开
 	Other provider (CSC API)	其他提供商 (CSC API)
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	仍有其他签名，因此副本会作为已签名文件的增量更新保存：已移除的签名保留在早期修订中，可以从那里恢复。
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	仍有其他签名，因此已移除的签名仍保留在文件的早期修订中；请重新验证其余签名。
+	Otherwise, ask on the first save after a signature is placed	否则，在放置签名后首次保存时询问
 	Outdent	减少缩进
 	Outline colour:	轮廓颜色:
 	Outline over page	页面上叠加轮廓
@@ -2726,11 +2734,13 @@ key	Shift	Shift
 	Sign yourself	自行签名
 	Signature	签名
 	signature	签名
+	Signature added. Others can move it until it's locked.	已添加签名。锁定之前，其他人可以移动它。
 	Signature cleanup stopped unexpectedly.	签名清理意外停止。
 	Signature Details	签名详细信息
 	Signature invalid	签名无效
 	Signature is INVALID:	签名无效：
 	Signature is valid:	签名有效：
+	Signature locked into the page.	签名已锁定到页面。
 	Signature panel	签名面板
 	Signature valid	签名有效
 	Signature validity is UNKNOWN:	签名有效性未知：

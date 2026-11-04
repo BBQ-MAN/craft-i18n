@@ -87,6 +87,7 @@
 	A picture with a decode array or a colour-key mask can't be converted to CMYK yet	Kuvaa, jossa on dekoodaustaulukko tai väriavainmaski, ei vielä voi muuntaa CMYK:ksi
 	A picture with other than 8 bits per component can't be converted to CMYK yet	Kuvaa, jossa on muu kuin 8 bittiä komponenttia kohden, ei vielä voi muuntaa CMYK:ksi
 	A picture's data can't be read, so it can't be converted to CMYK	Kuvan tietoja ei voi lukea, joten sitä ei voi muuntaa CMYK:ksi
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	Sijoitettu allekirjoitus on kommentti, kunnes se lukitaan: kuka tahansa PDF-muokkaimen käyttäjä voi siirtää tai poistaa sen. Lukitseminen tekee Täytä ja allekirjoita -tekstistä, -merkinnöistä ja -allekirjoituksista osan sivua.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	PNG- tai SVG-tiedosto. Se luetaan tästä sijainnista aina, kun PdfCraft käynnistyy.
 	A PrinterMark annotation overlaps the TrimBox or ArtBox	PrinterMark-merkintä menee TrimBoxin tai ArtBoxin päälle
 	A script	Komentosarja
@@ -903,6 +904,7 @@ key	Delete	Delete
 	Documents and view	Asiakirjat ja näkymä
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Yli 20-sivuisissa asiakirjoissa tarvitaan kirjanmerkit siirtymistä varten. Lisää kirjanmerkit pääosioille.
 	Domain	Toimialue
+	Don't ask again	Älä kysy uudelleen
 	Don't save	Älä tallenna
 	Don't show again	Älä näytä uudelleen
 	Done adding text	Tekstin lisäys valmis
@@ -1462,6 +1464,7 @@ calendar date	July	heinäkuuta
 calendar date	June	kesäkuuta
 	just now	juuri nyt
 	Keep an empty signature field to sign again	Säilytä tyhjä allekirjoituskenttä uudelleen allekirjoittamista varten
+	Keep editable	Pidä muokattavana
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	Säilytä vain allekirjoitusten ulkoasu sivun sisältönä (niissä näkyvä nimi tai päivämäärä pysyy näkyvissä)
 	Keep source fonts	Säilytä lähteen fontit
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	Pidä Windowsin otsikkorivi välilehtirivin yläpuolella. Pois päältä välilehtirivi toimii otsikkorivinä ja ikkunan painikkeet ovat sen oikeassa reunassa; Suurenna-painikkeen Snap Layouts -asettelut tarvitsevat Windowsin otsikkorivin.
@@ -1554,7 +1557,11 @@ certificate	Key usage	Avaimen käyttö
 	Loading…	Ladataan…
 	Local cross-PDF links require the desktop app	Paikalliset PDF-tiedostojen väliset linkit edellyttävät työpöytäsovellusta
 	Location: 	Sijainti: 
+	Lock and save	Lukitse ja tallenna
 	Lock comment	Lukitse kommentti
+	Lock into the page when saving	Lukitse sivuun tallennettaessa
+	Lock now	Lukitse nyt
+	Lock your signature into the page?	Lukitaanko allekirjoitus sivuun?
 	Logical Reading Order	Looginen lukujärjestys
 	Logo	Logo
 	Logo and name	Logo ja nimi
@@ -1930,6 +1937,7 @@ animation effects	On	Käytössä
 	Other provider (CSC API)	Muu palveluntarjoaja (CSC API)
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Muita allekirjoituksia on jäljellä, joten kopio tallennetaan allekirjoitetun tiedoston päivityksenä: poistettu allekirjoitus jää aiempaan versioon, josta sen voi palauttaa.
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Muita allekirjoituksia on jäljellä, joten poistettu allekirjoitus on yhä tiedoston aiemmassa versiossa; tarkista jäljellä olevat allekirjoitukset uudelleen.
+	Otherwise, ask on the first save after a signature is placed	Muuten kysy ensimmäisellä tallennuskerralla allekirjoituksen sijoittamisen jälkeen
 	Outdent	Poista sisennys
 	Outline colour:	Ääriviivan väri:
 	Output appears here.	Tuloste näkyy tässä.
@@ -2652,6 +2660,7 @@ key	Shift	Vaihto
 	Sign yourself	Allekirjoita itse
 	Signature	Allekirjoitus
 	signature	allekirjoitus
+	Signature added. Others can move it until it's locked.	Allekirjoitus lisätty. Muut voivat siirtää sitä, kunnes se lukitaan.
 	Signature cleanup stopped unexpectedly.	Allekirjoituksen puhdistus keskeytyi odottamatta.
 	Signature Details	Allekirjoituksen tiedot
 	Signature invalid	Allekirjoitus virheellinen
@@ -2659,6 +2668,7 @@ key	Shift	Vaihto
 	Signature is INVALID:	Allekirjoitus on VIRHEELLINEN:
 	Signature is valid	Allekirjoitus on kelvollinen
 	Signature is valid:	Allekirjoitus on kelvollinen:
+	Signature locked into the page.	Allekirjoitus lukittu sivuun.
 	Signature panel	Allekirjoituspaneeli
 	Signature valid	Allekirjoitus kelvollinen
 	Signature validity is unknown	Allekirjoituksen kelpoisuus on tuntematon

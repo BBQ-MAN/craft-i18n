@@ -64,6 +64,7 @@
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	टैबों के बाईं ओर एक लोगो या नाम, जहाँ शीर्षक पट्टी उसे दिखाती: PdfCraft का अपना, या आपकी कंपनी का।
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.
 	A picture covers page {pages} (a scan?), so the background won't show there.	एक छवि पृष्ठ {pages} को ढकती है (स्कैन?), इसलिए वहाँ पृष्ठभूमि नहीं दिखेगी।
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	रखा गया हस्ताक्षर तब तक एक टिप्पणी है जब तक उसे लॉक न किया जाए: PDF संपादक वाला कोई भी व्यक्ति उसे हटा या खिसका सकता है। लॉक करने से आपके भरें व हस्ताक्षर करें के टेक्स्ट, चिह्न और हस्ताक्षर पृष्ठ का हिस्सा बन जाते हैं।
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	एक PNG या SVG फ़ाइल। PdfCraft हर बार शुरू होने पर इसे इसी जगह से पढ़ता है।
 	A script	एक स्क्रिप्ट
 	A selected field has no widget on any page, so the fields can't be edited together.	एक चयनित फ़ील्ड का किसी भी पृष्ठ पर विजेट नहीं है, इसलिए फ़ील्ड एक साथ संपादित नहीं किए जा सकते।
@@ -895,6 +896,7 @@ key	Delete	Delete
 	Documents and view	दस्तावेज़ और दृश्य
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	20 से अधिक पृष्ठों वाले दस्तावेज़ों को नेविगेशन के लिए बुकमार्क चाहिए। मुख्य अनुभागों के लिए बुकमार्क जोड़ें।
 	Domain	डोमेन
+	Don't ask again	फिर से न पूछें
 	Don't save	सहेजें नहीं
 	Don't show again	फिर से न दिखाएँ
 	Done	पूर्ण
@@ -1448,6 +1450,7 @@ calendar date	June	जून
 	just now	अभी-अभी
 	Justify	जस्टिफ़ाई
 	Keep an empty signature field to sign again	फिर से हस्ताक्षर करने के लिए खाली हस्ताक्षर फ़ील्ड रखें
+	Keep editable	संपादन योग्य रखें
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	केवल हस्ताक्षरों का रूप पृष्ठ सामग्री के रूप में रखें (उनमें दिखने वाला नाम या तारीख दिखाई देती रहती है)
 	Keep source fonts	स्रोत फ़ॉन्ट रखें
 	Keep the Windows title bar above the tab strip. Turned off, the tab strip is the title bar, with the window buttons at its right; Snap Layouts on the maximize button need the Windows title bar.	टैब स्ट्रिप के ऊपर Windows की शीर्षक पट्टी रखें। बंद होने पर टैब स्ट्रिप ही शीर्षक पट्टी बन जाती है, और विंडो बटन उसके दाईं ओर होते हैं; अधिकतम करें बटन पर Snap Layouts के लिए Windows की शीर्षक पट्टी चाहिए।
@@ -1550,7 +1553,11 @@ certificate	Key usage	कुंजी उपयोग
 	Local cross-PDF links require the desktop app	पीडीएफ़ के बीच स्थानीय लिंक के लिए डेस्कटॉप ऐप ज़रूरी है
 	Location	स्थान
 	Location: 	स्थान: 
+	Lock and save	लॉक करें और सहेजें
 	Lock comment	टिप्पणी लॉक करें
+	Lock into the page when saving	सहेजते समय पृष्ठ में लॉक करें
+	Lock now	अभी लॉक करें
+	Lock your signature into the page?	अपने हस्ताक्षर को पृष्ठ में लॉक करें?
 	Locked	लॉक किया गया
 	Logical Reading Order	तार्किक पढ़ने का क्रम
 	Logo	लोगो
@@ -1941,6 +1948,7 @@ animation effects	On	चालू
 	Other provider (CSC API)	अन्य प्रदाता (CSC API)
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	अन्य हस्ताक्षर बचे हैं, इसलिए प्रति हस्ताक्षरित फ़ाइल के अपडेट के रूप में सहेजी जाती है: हटाया गया हस्ताक्षर पिछले संशोधन में रहता है, जहाँ से उसे वापस पाया जा सकता है।
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	अन्य हस्ताक्षर बचे हैं, इसलिए हटाया गया हस्ताक्षर फ़ाइल के पिछले संशोधन में अब भी है; बचे हुए हस्ताक्षरों को फिर से जाँचें।
+	Otherwise, ask on the first save after a signature is placed	अन्यथा, हस्ताक्षर रखने के बाद पहली बार सहेजने पर पूछें
 	Outdent	इंडेंट घटाएँ
 	Outline	रूपरेखा
 	Outline colour:	रूपरेखा रंग:
@@ -2686,6 +2694,7 @@ key	Shift	Shift
 	Sign yourself	स्वयं हस्ताक्षर करें
 	Signature	हस्ताक्षर
 	signature	हस्ताक्षर
+	Signature added. Others can move it until it's locked.	हस्ताक्षर जोड़ा गया। लॉक होने तक दूसरे इसे खिसका सकते हैं।
 	Signature cleanup stopped unexpectedly.	हस्ताक्षर की सफ़ाई अचानक रुक गई।
 	Signature Details	हस्ताक्षर विवरण
 	Signature invalid	हस्ताक्षर अमान्य
@@ -2693,6 +2702,7 @@ key	Shift	Shift
 	Signature is INVALID:	हस्ताक्षर अमान्य है:
 	Signature is valid	हस्ताक्षर मान्य है
 	Signature is valid:	हस्ताक्षर वैध है:
+	Signature locked into the page.	हस्ताक्षर पृष्ठ में लॉक कर दिया गया।
 	Signature panel	हस्ताक्षर पैनल
 	Signature valid	हस्ताक्षर मान्य
 	Signature validity is unknown	हस्ताक्षर की वैधता अज्ञात है

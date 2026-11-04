@@ -70,6 +70,7 @@
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Egy logó vagy név a lapoktól balra, ahol a címsor mutatná: a PdfCraft sajátja vagy a cégedé.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Az oldalszám ennyi lap után leállítja az adagolót. A megszakítás korábban véget vet az átvitelnek; a már megkapott oldalak a dokumentumban maradnak.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Egy kép fedi le ezt az oldalt: {pages} (szkennelt?), így ott nem látszik a háttér.
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	Az elhelyezett aláírás megjegyzés, amíg nincs rögzítve: bárki egy PDF-szerkesztővel áthelyezheti vagy eltávolíthatja. A rögzítés a Kitöltés és aláírás szövegét, jeleit és aláírásait az oldal részévé teszi.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Egy PNG vagy SVG fájl. A PdfCraft minden indításakor erről a helyről olvassa be.
 	A script	Egy szkript
 	A selected field has no widget on any page, so the fields can't be edited together.	Az egyik kijelölt mezőnek egyik oldalon sincs widgetje, ezért a mezők nem szerkeszthetők együtt.
@@ -882,6 +883,7 @@ key	Delete	Delete
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	A 20 oldalnál hosszabb dokumentumokhoz könyvjelző kell a navigációhoz. Adj könyvjelzőt a főbb részekhez.
 	Does not match what was signed	Nem egyezik az aláírttal
 	Domain	Tartomány
+	Don't ask again	Ne kérdezzen többet
 	Don't save	Nincs mentés
 	Don't show again	Ne jelenjen meg újra
 	Done adding text	Szöveg hozzáadásának befejezése
@@ -1402,6 +1404,7 @@ key	Home	Home
 	Keep	Megtartás
 	Keep all images	Minden kép megtartása
 	Keep an empty signature field to sign again	Üres aláírásmező megtartása az újbóli aláíráshoz
+	Keep editable	Szerkeszthető marad
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	Csak az aláírások megjelenésének megtartása oldaltartalomként (a bennük látható név vagy dátum látható marad)
 	Keep opaque images	Átlátszatlan képek megtartása
 	Keep source fonts	Eredeti betűtípusok megtartása
@@ -1486,7 +1489,11 @@ key	Home	Home
 	Local and private	Helyi és privát
 	Local cross-PDF links require the desktop app	A PDF-ek közötti helyi hivatkozásokhoz az asztali alkalmazás szükséges
 	Location: 	Hely: 
+	Lock and save	Rögzítés és mentés
 	Lock comment	Megjegyzés zárolása
+	Lock into the page when saving	Mentéskor rögzítés az oldalba
+	Lock now	Rögzítés most
+	Lock your signature into the page?	Rögzíti az aláírását az oldalba?
 	Logical Reading Order	Logikai olvasási sorrend
 	Logo	Logó
 	Logo and name	Logó és név
@@ -1872,6 +1879,7 @@ animation effects	On	Be
 	Other provider (CSC API)	Más szolgáltató (CSC API)
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	Más aláírások megmaradnak, ezért a másolat az aláírt fájl frissítéseként mentődik: az eltávolított aláírás a korábbi változatban marad, ahonnan visszaállítható.
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	Más aláírások megmaradnak, ezért az eltávolított aláírás továbbra is benne van a fájl korábbi változatában; ellenőrizze újra a megmaradt aláírásokat.
+	Otherwise, ask on the first save after a signature is placed	Különben kérdezzen rá az aláírás elhelyezése utáni első mentéskor
 	Outdent	Behúzás csökkentése
 	Outline	Körvonal
 	Outline colour:	Körvonal színe:
@@ -2634,11 +2642,13 @@ key	Shift	Shift
 	Sign yourself	Saját kezű aláírás
 	Signature	Aláírás
 	signature	aláírás
+	Signature added. Others can move it until it's locked.	Aláírás hozzáadva. Mások áthelyezhetik, amíg nincs rögzítve.
 	Signature cleanup stopped unexpectedly.	Az aláírás tisztítása váratlanul leállt.
 	Signature Details	Aláírás részletei
 	Signature invalid	Érvénytelen aláírás
 	Signature is INVALID:	Az aláírás ÉRVÉNYTELEN:
 	Signature is valid:	Az aláírás érvényes:
+	Signature locked into the page.	Az aláírás rögzítve az oldalba.
 	Signature panel	Aláírás panel
 	Signature valid	Érvényes aláírás
 	Signature validity is UNKNOWN:	Az aláírás érvényessége ISMERETLEN:

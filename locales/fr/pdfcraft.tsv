@@ -75,6 +75,7 @@
 	A logo or name at the left of the tabs, where a title bar would show one: PdfCraft's own, or your company's.	Un logo ou un nom à gauche des onglets, là où une barre de titre l'afficherait : celui de PdfCraft ou celui de votre entreprise.
 	A page count stops the feeder after that many sheets. Cancel ends the transfer early; pages already received stay in the document.	Un nombre de pages arrête le chargeur après autant de feuilles. Annuler interrompt le transfert plus tôt ; les pages déjà reçues restent dans le document.
 	A picture covers page {pages} (a scan?), so the background won't show there.	Une image couvre la page {pages} (une numérisation ?), l'arrière-plan n'y sera donc pas visible.
+	A placed signature is a comment until it is locked: anyone with a PDF editor can move or remove it. Locking makes your Fill & Sign text, marks and signatures part of the page.	Une signature placée reste un commentaire tant qu’elle n’est pas intégrée : n’importe qui avec un éditeur PDF peut la déplacer ou la supprimer. L’intégration rend le texte, les marques et les signatures de Remplir et signer partie de la page.
 	A PNG or SVG file. It is read from this place each time PdfCraft starts.	Un fichier PNG ou SVG. Il est lu à cet emplacement à chaque démarrage de PdfCraft.
 	A script	Un script
 	A selected field has no widget on any page, so the fields can't be edited together.	Un champ sélectionné n'a de widget sur aucune page : les champs ne peuvent pas être modifiés ensemble.
@@ -949,6 +950,7 @@ key	Delete	Suppr
 	Documents of more than 20 pages need bookmarks for navigation. Add bookmarks for the main sections.	Les documents de plus de 20 pages ont besoin de signets pour la navigation. Ajoutez des signets pour les sections principales.
 	Does not match what was signed	Ne correspond pas à ce qui a été signé
 	Domain	Domaine
+	Don't ask again	Ne plus demander
 	Don't save	Ne pas enregistrer
 	Don't show again	Ne plus afficher
 	Done adding text	Terminer l'ajout de texte
@@ -1510,6 +1512,7 @@ calendar date	June	juin
 	Keep	Garder
 	Keep all images	Conserver toutes les images
 	Keep an empty signature field to sign again	Conserver un champ de signature vide pour signer à nouveau
+	Keep editable	Garder modifiable
 	Keep only how the signatures look, as page content (a name or date they show stays visible)	Ne garder que l'apparence des signatures, comme contenu de la page (un nom ou une date qu'elles affichent reste visible)
 	Keep opaque images	Conserver les images opaques
 	Keep source fonts	Conserver les polices originales
@@ -1601,7 +1604,11 @@ certificate	Key usage	Usage de la clé
 	Local and private	Local et privé
 	Local cross-PDF links require the desktop app	Les liens locaux entre PDF nécessitent l'application de bureau
 	Location: 	Lieu : 
+	Lock and save	Intégrer et enregistrer
 	Lock comment	Verrouiller le commentaire
+	Lock into the page when saving	Intégrer à la page à l’enregistrement
+	Lock now	Intégrer maintenant
+	Lock your signature into the page?	Intégrer votre signature à la page ?
 	Locked	Verrouillé
 	Logical Reading Order	Ordre de lecture logique
 	Logo	Logo
@@ -2031,6 +2038,7 @@ animation effects	On	Activés
 	Other provider (CSC API)	Autre fournisseur (API CSC)
 	Other signatures remain, so the copy is saved as an update of the signed file: the removed signature stays in its earlier revision, where it can be recovered.	D'autres signatures restent, la copie est donc enregistrée comme mise à jour du fichier signé : la signature supprimée reste dans sa révision précédente, d'où elle peut être récupérée.
 	Other signatures remain, so the removed one is still in the file's earlier revision; check the remaining signatures again.	D'autres signatures restent, la signature supprimée est donc toujours dans la révision précédente du fichier ; vérifiez à nouveau les signatures restantes.
+	Otherwise, ask on the first save after a signature is placed	Sinon, demander au premier enregistrement après avoir placé une signature
 	Outdent	Diminuer le retrait
 	Outline	Contour
 	Outline colour:	Couleur du contour :
@@ -2855,6 +2863,7 @@ key	Shift	Maj
 	Sign yourself	Signer soi-même
 	Signature	Signature
 	signature	signature
+	Signature added. Others can move it until it's locked.	Signature ajoutée. D’autres peuvent la déplacer tant qu’elle n’est pas intégrée.
 	Signature cleanup stopped unexpectedly.	Le nettoyage de la signature s’est arrêté de manière inattendue.
 	Signature Details	Détails de la signature
 	Signature invalid	Signature non valide
@@ -2862,6 +2871,7 @@ key	Shift	Maj
 	Signature is INVALID:	La signature n'est PAS VALIDE :
 	Signature is valid	La signature est valide
 	Signature is valid:	La signature est valide :
+	Signature locked into the page.	Signature intégrée à la page.
 	Signature panel	Panneau des signatures
 	Signature valid	Signature valide
 	Signature validity is unknown	La validité de la signature est inconnue
