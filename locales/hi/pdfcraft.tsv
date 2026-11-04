@@ -706,6 +706,7 @@ key	Delete	Delete
 	Detected 1 form field	1 फ़ॉर्म फ़ील्ड मिला
 	Detected {n} form fields	{n} फ़ॉर्म फ़ील्ड मिले
 	Device colour is used, but there is no PDF/A output intent	डिवाइस रंग का उपयोग हुआ है, लेकिन कोई PDF/A आउटपुट इंटेंट नहीं है
+	Device library (PKCS #11)	डिवाइस लाइब्रेरी (PKCS #11)
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	DeviceCMYK का उपयोग हुआ है, लेकिन पीडीएफ़/ए आउटपुट इंटेंट CMYK प्रोफ़ाइल नहीं है
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	DeviceCMYK का उपयोग हुआ है: इसे CMYK आउटपुट इंटेंट चाहिए (अपने आप नहीं जुड़ता)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	DeviceRGB का उपयोग हुआ है, लेकिन पीडीएफ़/ए आउटपुट इंटेंट RGB प्रोफ़ाइल नहीं है
@@ -1521,6 +1522,7 @@ calendar weekday	Mo	सोम
 	No security	कोई सुरक्षा नहीं
 	No sheets	कोई शीट नहीं
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	फ़्रेम में कोई हस्ताक्षर नहीं मिला। फ़्रेम को हस्ताक्षर पर ले जाएँ या स्याही संवेदनशीलता बढ़ाएँ।
+	No signing certificate was found on this device. Is it connected?	इस डिवाइस पर कोई हस्ताक्षर प्रमाणपत्र नहीं मिला। क्या यह कनेक्ट है?
 	No status has been set.	कोई स्थिति निर्धारित नहीं की गई है।
 	no such document	ऐसा कोई दस्तावेज़ नहीं है
 	no summary	कोई सारांश नहीं
@@ -1744,6 +1746,7 @@ animation effects	On	चालू
 	PdfCraft can't check this signature yet: {}.	PdfCraft अभी इस हस्ताक्षर की जाँच नहीं कर सकता: {}।
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft सही ढंग से बंद नहीं हुआ। इन दस्तावेज़ों के बदलाव स्वतः सहेजे गए थे:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft बिना ग्राफ़िक्स प्रोसेसर के चित्र बना रहा है, इसलिए धीमा चल सकता है। ग्राफ़िक्स ड्राइवर अपडेट करने से मदद मिल सकती है।
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft उन लाइब्रेरी को खोजता है जिन्हें डिवाइस निर्माता इंस्टॉल करते हैं। केवल तभी कोई चुनें जब आपका डिवाइस न मिले।
 	PdfCraft on GitHub	GitHub पर PdfCraft
 	PdfCraft web page	PdfCraft वेबपेज
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft ऑफ़लाइन काम करता है। जब तक आप कोई प्रोवाइडर न जोड़ें, न टेलीमेट्री है, न खाता और न ही क्लाउड प्रोसेसिंग।
@@ -1760,7 +1763,7 @@ animation effects	On	चालू
 	Pictures cover pages {pages} (scans?), so the background won't show there.	छवियाँ पृष्ठ {pages} को ढकती हैं (स्कैन?), इसलिए वहाँ पृष्ठभूमि नहीं दिखेगी।
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	तस्वीरों को उनका वर्णन करने वाला वैकल्पिक पाठ चाहिए या उन्हें सजावटी चिह्नित करना चाहिए। हर आकृति में वैकल्पिक पाठ जोड़ें।
 	Pictures on those pages are recognized too; words already in the page's text are not added again	उन पृष्ठों की तस्वीरें भी पहचानी जाती हैं; पृष्ठ के टेक्स्ट में पहले से मौजूद शब्द दोबारा नहीं जोड़े जाते
-	PIN	PIN
+	PIN	पिन
 	Pin	पिन करें
 	Pin a folder to Home	होम पर फ़ोल्डर पिन करें
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	किसी फ़ोल्डर को पिन करें ताकि उसके नवीनतम पीडीएफ़ यहाँ सूची में दिखें, जैसे वह जगह जहाँ आपका स्कैनर या सिंक किया गया क्लाउड ड्राइव उन्हें सहेजता है।
@@ -2456,6 +2459,7 @@ calendar weekday	Th	गुरु
 	the image is empty	छवि ख़ाली है
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	कुंजी macOS Keychain में है, जो PdfCraft को उसका उपयोग करने की अनुमति माँग सकती है।
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	कुंजी Windows प्रमाणपत्र स्टोर में है, जो PdfCraft को उसका उपयोग करने की अनुमति माँग सकता है।
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	कुंजी {device} पर है, जो स्वयं अनुमोदन मांगता है (पिन पैड या आपके फ़ोन का ऐप)।
 	The Keychain's digital IDs couldn't be listed: {e}	Keychain की डिजिटल आईडी सूचीबद्ध नहीं की जा सकीं: {e}
 	The labels are in English: the signature's font can't draw them in this language.	लेबल अंग्रेज़ी में हैं: हस्ताक्षर का फ़ॉन्ट उन्हें इस भाषा में नहीं दिखा सकता।
 	The linked PDF opened, but its named destination was not applied.	लिंक किया गया पीडीएफ़ खुल गया, पर उसका नामित गंतव्य लागू नहीं हुआ।
@@ -2475,6 +2479,7 @@ calendar weekday	Th	गुरु
 	The passwords do not match.	पासवर्ड मेल नहीं खाते।
 	The passwords don't match.	पासवर्ड मेल नहीं खाते।
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	पीडीएफ़ टेक्स्ट फ़ॉन्ट “{c}” ({code}) नहीं बना सकते। समर्थित टेक्स्ट चुनें।
+	The PIN is incorrect.	पिन गलत है।
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	इस छपाई के लिए प्रिंटर ड्राइवर की अपनी सेटिंग्स: काग़ज़ ट्रे, काग़ज़ का प्रकार, फ़िनिशिंग आदि।
 	The replacement file doesn't have that many pages.	बदलने वाली फ़ाइल में उतने पृष्ठ नहीं हैं।
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	पंक्तियाँ बहुत छोटी हैं: क्षेत्र को ऊँचा करें, या कम पंक्तियाँ या पंक्तियों के बीच कम दूरी रखें
@@ -2684,6 +2689,7 @@ signature pad	Type	टाइप करें
 	URL to submit to	सबमिट करने का URL
 	Use 72 DPI (one point per pixel)	72 DPI उपयोग करें (प्रति पिक्सेल एक पॉइंट)
 	Use a certificate	प्रमाणपत्र का उपयोग करें
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	किसी डिवाइस से डिजिटल आईडी का उपयोग करें (स्मार्ट कार्ड, USB टोकन या क्लाउड प्रमाणपत्र)
 	Use a Digital ID from a file	फ़ाइल से डिजिटल आईडी उपयोग करें
 	Use custom DPI	कस्टम DPI उपयोग करें
 	Use each image's embedded DPI; use 72 DPI when it is absent.	हर छवि का एम्बेडेड DPI उपयोग करें; न होने पर 72 DPI उपयोग करें।

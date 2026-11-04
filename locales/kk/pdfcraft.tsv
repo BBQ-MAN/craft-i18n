@@ -658,6 +658,7 @@ key	Delete	Delete
 	Detected 1 form field	1 форма өрісі анықталды
 	Detected {n} form fields	{n} форма өрісі анықталды
 	Device colour is used, but there is no PDF/A output intent	Құрылғы түсі қолданылады, бірақ PDF/A шығыс профилі жоқ
+	Device library (PKCS #11)	Құрылғы кітапханасы (PKCS #11)
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	DeviceCMYK қолданылады: CMYK шығыс профилі қажет (автоматты түрде қосылмайды)
 	Diagnostic details	Диагностика мәліметтері
 	Digital ID	Цифрлық ID
@@ -1400,6 +1401,7 @@ calendar date	May	Мамыр
 	No security	Қауіпсіздік жоқ
 	No sheets	Парақтар жоқ
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Жақтауда қолтаңба табылмады. Жақтауды қолтаңбаның үстіне жылжытыңыз немесе сия сезімталдығын арттырыңыз.
+	No signing certificate was found on this device. Is it connected?	Бұл құрылғыда қолтаңба сертификаты табылмады. Ол қосулы ма?
 	No size estimate: {e}	Өлшем болжамы жоқ: {e}
 	No status has been set.	Күй орнатылмаған.
 	no such document	мұндай құжат жоқ
@@ -1606,6 +1608,7 @@ animation effects	On	Қосулы
 	PDF/A…	PDF/A…
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft қалыпты жабылмады. Осы құжаттардың өзгерістері автосақталды:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft графикалық процессорсыз сурет салуда, сондықтан баяу жұмыс істеуі мүмкін. Графикалық драйверді жаңарту көмектесуі мүмкін.
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft құрылғы өндірушілері орнататын кітапханаларды іздейді. Құрылғыңыз табылмаса ғана біреуін таңдаңыз.
 	PdfCraft on GitHub	GitHub-тағы PdfCraft
 	PdfCraft web page	PdfCraft веб-сайты
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft офлайн жұмыс істейді. Провайдер қоспағаныңызша телеметрия да, тіркелгі де, бұлтта өңдеу де жоқ.
@@ -1619,7 +1622,7 @@ animation effects	On	Қосулы
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Суреттер жауып тұрған беттер (сканер ме?): {pages}; онда фон көрінбейді.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Суреттерге оларды сипаттайтын балама мәтін қажет немесе декоративті деп белгіленуі тиіс. Әр суретке балама мәтін қосыңыз.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	Бұл беттердегі суреттер де танылады; беттің мәтінінде бұрыннан бар сөздер қайта қосылмайды
-	PIN	PIN-код
+	PIN	PIN коды
 	Pin	Бекіту
 	Pin a folder to Home	Қалтаны Басты бетке бекіту
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Қалтаны бекітіңіз — оның ең жаңа PDF файлдары осында көрсетіледі, мысалы, сканер немесе синхрондалатын бұлт дискісі файлдарды сақтайтын қалта.
@@ -2306,6 +2309,7 @@ certificate	Subject	Субъект
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Кілт Windows сертификаттар қоймасында; ол PdfCraft-ге оны пайдалануға рұқсат сұрауы мүмкін.
 	The key is on the device, which may ask for its PIN itself.	Кілт құрылғыда; ол PIN кодын өзі сұрауы мүмкін.
 	The key is on the device, which signs once it has its PIN.	Кілт құрылғыда; ол PIN кодын алғаннан кейін қол қояды.
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Кілт {device} құрылғысында, ол рұқсатты өзі сұрайды (PIN пернетақтасы немесе телефондағы қолданба).
 	The Keychain's digital IDs couldn't be listed: {e}	Кілттер бауындағы цифрлық ID-лерді тізімдеу мүмкін болмады: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Белгілер ағылшын тілінде: қолтаңба қаріпі оларды бұл тілде сала алмайды.
 	The linked PDF opened, but its named destination was not applied.	Байланысты PDF ашылды, бірақ оның аталған мақсаты қолданылмады.
@@ -2321,7 +2325,7 @@ certificate	Subject	Субъект
 	the password is incorrect	құпиясөз дұрыс емес
 	The password is only used to read the file; it isn't saved.	Құпиясөз файлды оқу үшін ғана қолданылады; ол сақталмайды.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF мәтін қаріптері «{c}» таңбасын ({code}) сала алмайды. Қолдау көрсетілетін мәтінді таңдаңыз.
-	The PIN is incorrect.	PIN коды қате.
+	The PIN is incorrect.	PIN қате.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 токендеріндегі цифрлық ID-лерді тізімдеу мүмкін болмады: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Осы басып шығаруға арналған принтер драйверінің дербес параметрлері: қағаз науасы, қағаз түрі, соңғы өңдеу және т.б.
 	The raw text was truncated to what fits.	Бастапқы мәтін қысқартылды.
@@ -2499,6 +2503,7 @@ signature pad	Type	Теру
 	US Letter	АҚШ Letter
 	Use 72 DPI (one point per pixel)	72 DPI қолдану (пиксельге бір пункт)
 	Use a certificate	Сертификатты пайдалану
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Құрылғыдағы цифрлық ID-ді пайдалану (смарт-карта, USB токен немесе бұлттық сертификат)
 	Use a Digital ID from a file	Файлдағы цифрлық ID-ді пайдалану
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Қолтаңба жасау құрылғысын пайдалану (PKCS #11 модулі: смарт-карта, токен, mSzafir үшін CloudSigner)
 	Use basic detection	Негізгі анықтауды пайдалану

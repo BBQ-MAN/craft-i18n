@@ -664,6 +664,7 @@ key	Delete	Delete
 	Detected 1 form field	Wykryto 1 pole formularza
 	Detected {n} form fields	Liczba wykrytych pól formularza: {n}
 	Device colour is used, but there is no PDF/A output intent	Użyto kolorów urządzenia, ale brak profilu wyjściowego PDF/A
+	Device library (PKCS #11)	Biblioteka urządzenia (PKCS #11)
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	Użyto DeviceCMYK: wymagany jest profil wyjściowy CMYK (nie jest dodawany automatycznie)
 	Diagnostic details	Szczegóły diagnostyczne
 	Digital ID	Identyfikator cyfrowy
@@ -1409,6 +1410,7 @@ calendar date	May	maja
 	No security	Brak zabezpieczeń
 	No sheets	Brak arkuszy
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	W ramce nie znaleziono podpisu. Przesuń ramkę na podpis lub zwiększ czułość na atrament.
+	No signing certificate was found on this device. Is it connected?	Na tym urządzeniu nie znaleziono certyfikatu do podpisywania. Czy jest podłączone?
 	No size estimate: {e}	Brak szacowanego rozmiaru: {e}
 	No status has been set.	Nie ustawiono statusu.
 	no such document	brak takiego dokumentu
@@ -1624,6 +1626,7 @@ animation effects	On	Włączone
 	PdfCraft can't check this signature yet: {}.	PdfCraft nie potrafi jeszcze sprawdzić tego podpisu: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft nie został zamknięty prawidłowo. Automatycznie zapisano zmiany w tych dokumentach:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft renderuje bez procesora graficznego, więc może działać wolno. Aktualizacja sterownika graficznego może pomóc.
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft szuka bibliotek instalowanych przez producentów urządzeń. Wybierz bibliotekę tylko wtedy, gdy urządzenie nie zostanie znalezione.
 	PdfCraft on GitHub	PdfCraft na GitHubie
 	PdfCraft web page	Strona internetowa PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft działa offline. Bez telemetrii, konta i przetwarzania w chmurze, chyba że dodasz dostawcę.
@@ -2340,6 +2343,7 @@ certificate	Subject	Podmiot certyfikatu
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Klucz znajduje się w magazynie certyfikatów Windows, który może poprosić o zgodę na jego użycie przez PdfCraft.
 	The key is on the device, which may ask for its PIN itself.	Klucz jest na urządzeniu, które może samo poprosić o PIN.
 	The key is on the device, which signs once it has its PIN.	Klucz jest na urządzeniu, które podpisze po podaniu PIN-u.
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Klucz znajduje się na urządzeniu {device}, które samo prosi o zgodę (klawiatura PIN lub aplikacja w telefonie).
 	The Keychain's digital IDs couldn't be listed: {e}	Nie można wyświetlić identyfikatorów cyfrowych z pęku kluczy: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Etykiety są po angielsku: czcionka podpisu nie potrafi ich wyświetlić w tym języku.
 	The linked PDF opened, but its named destination was not applied.	Połączony plik PDF został otwarty, ale jego nazwany cel nie został zastosowany.
@@ -2355,7 +2359,7 @@ certificate	Subject	Podmiot certyfikatu
 	the password is incorrect	hasło jest nieprawidłowe
 	The password is only used to read the file; it isn't saved.	Hasło służy wyłącznie do odczytu pliku; nie jest zapisywane.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Czcionki tekstu PDF nie obsługują znaku „{c}” ({code}). Wybierz obsługiwany tekst.
-	The PIN is incorrect.	PIN jest nieprawidłowy.
+	The PIN is incorrect.	Kod PIN jest nieprawidłowy.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Nie można wyświetlić identyfikatorów cyfrowych z tokenów PKCS #11: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Ustawienia sterownika drukarki dla tego wydruku: podajnik, rodzaj papieru, wykańczanie i inne.
 	The raw text was truncated to what fits.	Tekst źródłowy został obcięty.
@@ -2571,6 +2575,7 @@ signature pad	Type	Wpisz
 	US Letter	Letter (USA)
 	Use 72 DPI (one point per pixel)	Użyj 72 DPI (jeden punkt na piksel)
 	Use a certificate	Użyj certyfikatu
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Użyj identyfikatora cyfrowego z urządzenia (karta inteligentna, token USB lub certyfikat w chmurze)
 	Use a Digital ID from a file	Użyj identyfikatora cyfrowego z pliku
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Użyj urządzenia do składania podpisu (moduł PKCS#11: karta, token, CloudSigner dla mSzafir)
 	Use custom DPI	Użyj własnego DPI

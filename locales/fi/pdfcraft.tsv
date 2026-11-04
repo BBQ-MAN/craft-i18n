@@ -656,6 +656,7 @@ key	Delete	Delete
 	Detected 1 form field	Havaittiin 1 lomakekenttä
 	Detected {n} form fields	Havaittiin {n} lomakekenttää
 	Device colour is used, but there is no PDF/A output intent	Laiteväriä käytetään, mutta PDF/A-tulosteprofiilia ei ole
+	Device library (PKCS #11)	Laitteen kirjasto (PKCS #11)
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	DeviceCMYK on käytössä, mutta PDF/A-tulostustavoite ei ole CMYK-profiili
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	DeviceCMYK on käytössä: se vaatii CMYK-tulosteprofiilin (ei lisätä automaattisesti)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	DeviceRGB on käytössä, mutta PDF/A-tulostustavoite ei ole RGB-profiili
@@ -1385,6 +1386,7 @@ calendar weekday	Mo	Ma
 	No security	Ei suojausta
 	No sheets	Ei arkkeja
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Kehyksestä ei löytynyt allekirjoitusta. Siirrä kehys allekirjoituksen päälle tai nosta musteen herkkyyttä.
+	No signing certificate was found on this device. Is it connected?	Tästä laitteesta ei löytynyt allekirjoitusvarmennetta. Onko se kytketty?
 	No status has been set.	Tilaa ei ole asetettu.
 	no such document	asiakirjaa ei ole
 	no summary	ei yhteenvetoa
@@ -1585,6 +1587,7 @@ animation effects	On	Käytössä
 	PdfCraft can't check this signature yet: {}.	PdfCraft ei vielä pysty tarkistamaan tätä allekirjoitusta: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft ei sulkeutunut normaalisti. Näiden asiakirjojen muutokset tallennettiin automaattisesti:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft piirtää ilman grafiikkasuoritinta, joten se voi olla hidas. Näytönohjaimen ajurin päivittäminen voi auttaa.
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft etsii laitevalmistajien asentamat kirjastot. Valitse kirjasto vain, jos laitettasi ei löydy.
 	PdfCraft on GitHub	PdfCraft GitHubissa
 	PdfCraft web page	PdfCraftin verkkosivu
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft toimii ilman verkkoyhteyttä. Ei telemetriaa, ei tiliä eikä pilvikäsittelyä, ellei palveluntarjoajaa lisätä.
@@ -1601,7 +1604,7 @@ animation effects	On	Käytössä
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Kuvat peittävät sivut {pages} (skannauksia?), joten tausta ei näy niissä.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Kuvat tarvitsevat niitä kuvailevan vaihtoehtoisen tekstin, tai ne on merkittävä koristeiksi. Lisää vaihtoehtoinen teksti jokaiseen kuvaan.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	Myös näiden sivujen kuvat tunnistetaan; sivun tekstissä jo olevia sanoja ei lisätä uudelleen
-	PIN	PIN
+	PIN	PIN-koodi
 	Pin	Kiinnitä
 	Pin a folder to Home	Kiinnitä kansio aloitussivulle
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Kiinnitä kansio, niin sen uusimmat PDF-tiedostot näkyvät tässä, esimerkiksi skannerin tai synkronoidun pilviaseman tallennuskansio.
@@ -2250,6 +2253,7 @@ calendar weekday	Th	To
 	the image is empty	kuva on tyhjä
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Avain on macOS-avainnipussa, joka voi pyytää lupaa PdfCraftin käytölle.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Avain on Windowsin varmennesäilössä, joka voi pyytää lupaa PdfCraftin käytölle.
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Avain on laitteessa {device}, joka pyytää hyväksynnän itse (PIN-näppäimistö tai puhelimen sovellus).
 	The Keychain's digital IDs couldn't be listed: {e}	Avainnipun digitaalisia tunnuksia ei voitu luetella: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Tunnisteet ovat englanniksi: allekirjoituksen fontti ei pysty piirtämään niitä tällä kielellä.
 	The linked PDF opened, but its named destination was not applied.	Linkitetty PDF avautui, mutta sen nimettyä kohdetta ei käytetty.
@@ -2269,6 +2273,7 @@ calendar weekday	Th	To
 	The passwords do not match.	Salasanat eivät täsmää.
 	The passwords don't match.	Salasanat eivät täsmää.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF-tekstifontit eivät pysty piirtämään merkkiä ”{c}” ({code}). Valitse tuettua tekstiä.
+	The PIN is incorrect.	PIN-koodi on väärä.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Tulostinohjaimen omat asetukset tälle tulostukselle: paperilokero, paperityyppi, viimeistely ym.
 	The replacement file doesn't have that many pages.	Korvaavassa tiedostossa ei ole niin montaa sivua.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	rivit ovat liian matalia: tee alueesta korkeampi tai käytä vähemmän rivejä tai pienempää riviväliä
@@ -2477,6 +2482,7 @@ signature pad	Type	Kirjoita
 	URL to submit to	Lähetyksen URL-osoite
 	Use 72 DPI (one point per pixel)	Käytä 72 DPI:tä (yksi piste pikseliä kohden)
 	Use a certificate	Käytä varmennetta
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Käytä laitteen digitaalista tunnusta (älykortti, USB-tunnus tai pilvivarmenne)
 	Use a Digital ID from a file	Käytä tiedostossa olevaa digitaalista tunnusta
 	Use custom DPI	Käytä mukautettua DPI-arvoa
 	Use each image's embedded DPI; use 72 DPI when it is absent.	Käytä kunkin kuvan upotettua DPI-arvoa; käytä 72 DPI:tä, jos sitä ei ole.

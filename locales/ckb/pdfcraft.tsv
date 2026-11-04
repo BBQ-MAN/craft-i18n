@@ -681,6 +681,7 @@ key	Delete	Delete
 	Detected 1 form field	1 خانەی فۆڕم دۆزرایەوە
 	Detected {n} form fields	{n} خانەی فۆڕم دۆزرایەوە
 	Device colour is used, but there is no PDF/A output intent	ڕەنگی ئامێر بەکاردەهێنرێت، بەڵام هیچ مەبەستی دەرهاویشتەی PDF/A نییە
+	Device library (PKCS #11)	کتێبخانەی ئامێر (PKCS #11)
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	DeviceCMYK بەکاردێت، بەڵام مەبەستی دەرهاویشتەی PDF/A پڕۆفایلی CMYK نییە
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	DeviceCMYK بەکاردەهێنرێت: پێویستی بە مەبەستی دەرهاویشتەی CMYK هەیە (بە شێوەی خۆکار زیاد ناکرێت)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	DeviceRGB بەکاردێت، بەڵام مەبەستی دەرهاویشتەی PDF/A پڕۆفایلی RGB نییە
@@ -1470,6 +1471,7 @@ calendar weekday	Mo	دووشەممە
 	No security	بێ ئاسایش
 	No sheets	هیچ کاغەزێک نییە
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	هیچ واژوویەک لە چوارچێوەکەدا نەدۆزرایەوە. چوارچێوەکە بگوازەوە بۆ سەر واژووەکە یان هەستیاریی مەرەکەب زیاد بکە.
+	No signing certificate was found on this device. Is it connected?	هیچ بڕوانامەیەکی واژۆ لەم ئامێرەدا نەدۆزرایەوە. ئایا پەیوەستە؟
 	No status has been set.	هیچ دۆخێک دانەنراوە.
 	no such document	هیچ بەڵگەنامەیەکی لەو جۆرە نییە
 	no summary	بێ کورتە
@@ -1686,6 +1688,7 @@ animation effects	On	چالاک
 	PdfCraft can't check this signature yet: {}.	PdfCraft هێشتا ناتوانێت ئەم واژووە پشکنی بکات: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft بە شێوەی ئاسایی دانەخرا. ئەم بەڵگەنامانە گۆڕانکارییان هەبوو کە بە شێوەی خۆکار پاشەکەوت کرابوون:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft بەبێ پڕۆسێسەری گرافیک وێنە دەکێشێت، بۆیە لەوانەیە هێواش بێت. نوێکردنەوەی درایڤەری گرافیک لەوانەیە یارمەتیدەر بێت.
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft بەدوای ئەو کتێبخانانەدا دەگەڕێت کە دروستکەرانی ئامێر دایدەمەزرێنن. تەنها ئەگەر ئامێرەکەت نەدۆزرایەوە یەکێک هەڵبژێرە.
 	PdfCraft on GitHub	PdfCraft لە GitHub
 	PdfCraft web page	لاپەڕەی وێبی PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft بەبێ ئینتەرنێت کار دەکات. نە پێوانەی دوورەوە، نە هەژمار و نە پێواژۆی هەور هەیە مەگەر دابینکەرێک زیاد بکەیت.
@@ -1702,6 +1705,7 @@ animation effects	On	چالاک
 	Pictures cover pages {pages} (scans?), so the background won't show there.	وێنەکان پەڕەکانی {pages} دادەپۆشن (سکان؟)، بۆیە پاشبنەماکە لەوێ دەرناکەوێت.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	وێنەکان پێویستیان بە دەقی جێگرەوەیە کە وەسفیان بکات، یان دەبێت وەک ڕازاندنەوە نیشان بکرێن. بۆ هەر شێوەیەک دەقی جێگرەوە زیاد بکە.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	وێنەکانی ئەو پەڕانەش دەناسرێنەوە؛ ئەو وشانەی پێشتر لە دەقی پەڕەکەدان دووبارە زیاد ناکرێن
+	PIN	کۆدی PIN
 	Pin	جێگیرکردن
 	Pin a folder to Home	جێگیرکردنی فۆڵدەرێک لە لاپەڕەی سەرەکی
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	فۆڵدەرێک جێگیر بکە بۆ ئەوەی نوێترین PDFەکانی لێرە پیشان بدات، وەک ئەو شوێنەی کە سکانەرەکەت یان درایڤێکی هەوری هاوکاتکراو فایلەکانی تێدا پاشەکەوت دەکات.
@@ -2367,6 +2371,7 @@ calendar weekday	Th	پێنجشەممە
 	the image is empty	وێنەکە بەتاڵە
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	کلیلەکە لە Keychain ی macOS ـدایە، کە ڕەنگە داوای ڕێگەدان بکات بۆ ئەوەی PdfCraft بەکاری بهێنێت.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	کلیلەکە لە کۆگای بڕوانامەکانی Windows ـدایە، کە ڕەنگە داوای ڕێگەدان بکات بۆ ئەوەی PdfCraft بەکاری بهێنێت.
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	کلیلەکە لەسەر {device}ە، کە خۆی داوای پەسەندکردن دەکات (تەختەی PIN یان ئەپێک لە مۆبایلەکەت).
 	The Keychain's digital IDs couldn't be listed: {e}	ناسنامە دیجیتاڵییەکانی Keychain نەتوانرا پێڕست بکرێن: {e}
 	The labels are in English: the signature's font can't draw them in this language.	نیشانەکان بە ئینگلیزین: فۆنتی واژووەکە ناتوانێت بەم زمانە بیانکێشێت.
 	The linked PDF opened, but its named destination was not applied.	PDF ـی بەستەردراو کرایەوە، بەڵام مەبەستی ناونراوەکەی جێبەجێ نەکرا.
@@ -2384,6 +2389,7 @@ calendar weekday	Th	پێنجشەممە
 	The passwords do not match.	وشە نهێنییەکان یەک ناگرنەوە.
 	The passwords don't match.	وشە نهێنییەکان یەک ناگرنەوە.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	فۆنتەکانی دەقی PDF ناتوانن «{c}» بکێشن ({code}). دەقی پشتگیریکراو هەڵبژێرە.
+	The PIN is incorrect.	کۆدی PIN هەڵەیە.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	ڕێکخستنە تایبەتەکانی درایڤەری چاپکەر بۆ ئەم چاپە: سینی کاغەز و جۆری کاغەز و تەواوکردن و زیاتر.
 	The replacement file doesn't have that many pages.	فایلە جێگرەوەکە ئەو هەموو پەڕەی نییە.
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	بەهای واژووی RSA درێژی مۆدیۆلی کلیلەکەی نییە (بایتە سفری سەرەتاییەکان لابراون یان زیادکراون)؛ بە هەر حاڵ خوێندرایەوە.
@@ -2579,6 +2585,7 @@ signature pad	Type	تایپکردن
 	URL to submit to	ئەو URLـەی بۆی دەنێردرێت
 	Use 72 DPI (one point per pixel)	بەکارهێنانی 72 DPI (یەک خاڵ بۆ هەر پیکسڵێک)
 	Use a certificate	بەکارهێنانی بڕوانامەیەک
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	ناسنامەی دیجیتاڵ لە ئامێرێک بەکاربهێنە (کارتی زیرەک، تۆکنی USB یان بڕوانامەی هەور)
 	Use a Digital ID from a file	بەکارهێنانی ناسنامەی دیجیتاڵی لە فایلێکەوە
 	Use custom DPI	بەکارهێنانی DPIی تایبەت
 	Use each image's embedded DPI; use 72 DPI when it is absent.	DPIی تێخراوی هەر وێنەیەک بەکاربهێنە؛ کاتێک نییە 72 DPI بەکاربهێنە.

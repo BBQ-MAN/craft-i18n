@@ -697,6 +697,7 @@ key	Delete	Delete
 	Detected 1 form field	偵測到 1 個表單欄位
 	Detected {n} form fields	偵測到 {n} 個表單欄位
 	Device colour is used, but there is no PDF/A output intent	使用了裝置色彩，但沒有 PDF/A 輸出目的
+	Device library (PKCS #11)	裝置程式庫 (PKCS #11)
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	使用了 DeviceCMYK：需要 CMYK 輸出目的，目前無法自動新增
 	Diagnostic details	診斷詳細資訊
 	Diameter	直徑
@@ -1470,6 +1471,7 @@ key	Home	Home
 	No security	無安全性
 	No sheets	無紙張
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	框內找不到簽名。請將框移到簽名上，或提高墨跡靈敏度。
+	No signing certificate was found on this device. Is it connected?	此裝置上找不到簽署憑證。裝置已連接嗎？
 	No size estimate: {e}	無法估算大小：{e}
 	No status has been set.	尚未設定狀態。
 	no such document	找不到此文件
@@ -1679,6 +1681,7 @@ animation effects	On	開
 	PDF/A…	PDF/A…
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft 未正常關閉。以下文件的更改已自動儲存：
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft 正在不使用圖形處理器的情況下繪製，因此可能較慢。更新顯示卡驅動程式可能會有幫助。
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft 會尋找裝置廠商安裝的程式庫。只有找不到您的裝置時才需要選擇。
 	PdfCraft on GitHub	GitHub 上的 PdfCraft
 	PdfCraft web page	PdfCraft 網頁
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft 可離線使用，不收集遙測資料，也不需要帳號。只有在您新增服務供應商後，才會使用雲端處理。
@@ -2392,6 +2395,7 @@ document scrollbar width	Standard	標準
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	金鑰位於 Windows 憑證存放區中，系統可能會詢問是否允許 PdfCraft 使用它。
 	The key is on the device, which may ask for its PIN itself.	金鑰在裝置上，裝置可能會自行要求輸入 PIN。
 	The key is on the device, which signs once it has its PIN.	金鑰在裝置上，裝置取得 PIN 後即會簽名。
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	金鑰位於 {device}，由裝置自行要求核准（PIN 鍵盤，或手機上的 App）。
 	The Keychain's digital IDs couldn't be listed: {e}	無法列出鑰匙串中的數位 ID：{e}
 	The labels are in English: the signature's font can't draw them in this language.	簽名使用的字型無法顯示此語言的標籤，因此標籤以英文顯示。
 	The linked PDF opened, but its named destination was not applied.	已開啟連結的 PDF，但未套用其命名目的地。
@@ -2582,6 +2586,7 @@ document scrollbar width	Standard	標準
 	US survey feet	美國測量英呎
 	Use 72 DPI (one point per pixel)	使用 72 DPI（每個像素一點）
 	Use a certificate	使用憑證
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	使用裝置中的數位 ID（智慧卡、USB 權杖或雲端憑證）
 	Use a Digital ID from a file	使用檔案中的數位 ID
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	使用簽名建立裝置（PKCS #11 模組：智慧卡、權杖、mSzafir 的 CloudSigner）
 	Use basic detection	使用基本偵測

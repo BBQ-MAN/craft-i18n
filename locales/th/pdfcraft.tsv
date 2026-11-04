@@ -682,6 +682,7 @@ key	Delete	Delete
 	Detected 1 form field	ตรวจพบช่องแบบฟอร์ม 1 ช่อง
 	Detected {n} form fields	ตรวจพบช่องแบบฟอร์ม {n} ช่อง
 	Device colour is used, but there is no PDF/A output intent	มีการใช้สีแบบ Device แต่ไม่มี output intent ของ PDF/A
+	Device library (PKCS #11)	ไลบรารีของอุปกรณ์ (PKCS #11)
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	มีการใช้ DeviceCMYK แต่ output intent ของ PDF/A ไม่ใช่โปรไฟล์ CMYK
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	มีการใช้ DeviceCMYK: ต้องมี output intent แบบ CMYK (ไม่ได้เพิ่มให้อัตโนมัติ)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	มีการใช้ DeviceRGB แต่ output intent ของ PDF/A ไม่ใช่โปรไฟล์ RGB
@@ -1472,6 +1473,7 @@ calendar weekday	Mo	จ
 	No security	ไม่มีการรักษาความปลอดภัย
 	No sheets	ไม่มีแผ่น
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	ไม่พบลายเซ็นในกรอบ เลื่อนกรอบไปทับลายเซ็นหรือเพิ่มความไวของหมึก
+	No signing certificate was found on this device. Is it connected?	ไม่พบใบรับรองสำหรับการลงนามในอุปกรณ์นี้ เชื่อมต่ออยู่หรือไม่
 	No status has been set.	ยังไม่ได้ตั้งสถานะ
 	no such document	ไม่มีเอกสารดังกล่าว
 	no summary	ไม่มีสรุป
@@ -1688,6 +1690,7 @@ animation effects	On	เปิด
 	PdfCraft can't check this signature yet: {}.	PdfCraft ยังตรวจสอบลายเซ็นนี้ไม่ได้: {}
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft ปิดตัวลงอย่างไม่ปกติ เอกสารเหล่านี้มีการเปลี่ยนแปลงที่ถูกบันทึกอัตโนมัติไว้:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft กำลังวาดโดยไม่ใช้หน่วยประมวลผลกราฟิก จึงอาจทำงานช้า การอัปเดตไดรเวอร์กราฟิกอาจช่วยได้
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft จะค้นหาไลบรารีที่ผู้ผลิตอุปกรณ์ติดตั้งไว้ เลือกเองเฉพาะเมื่อไม่พบอุปกรณ์ของคุณ
 	PdfCraft on GitHub	PdfCraft บน GitHub
 	PdfCraft web page	หน้าเว็บ PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft ทำงานแบบออฟไลน์ ไม่มีการเก็บข้อมูลการใช้งาน ไม่ต้องมีบัญชี และไม่ประมวลผลบนคลาวด์ เว้นแต่คุณจะเพิ่มผู้ให้บริการเอง
@@ -1704,6 +1707,7 @@ animation effects	On	เปิด
 	Pictures cover pages {pages} (scans?), so the background won't show there.	มีรูปภาพหลายรูปปิดหน้า {pages} อยู่ (ภาพสแกน?) จึงจะมองไม่เห็นพื้นหลังที่นั่น
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	รูปภาพต้องมีข้อความแสดงแทนที่อธิบายรูป หรือต้องระบุว่าเป็นส่วนตกแต่ง ให้เพิ่มข้อความแสดงแทนในแต่ละรูปประกอบ
 	Pictures on those pages are recognized too; words already in the page's text are not added again	รูปภาพในหน้าเหล่านั้นจะถูกรู้จำด้วย คำที่มีอยู่แล้วในข้อความของหน้าจะไม่ถูกเพิ่มซ้ำ
+	PIN	รหัส PIN
 	Pin	ปักหมุด
 	Pin a folder to Home	ปักหมุดโฟลเดอร์ไว้ที่หน้าแรก
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	ปักหมุดโฟลเดอร์เพื่อแสดง PDF ล่าสุดในโฟลเดอร์นั้นที่นี่ เช่น โฟลเดอร์ที่สแกนเนอร์หรือไดรฟ์คลาวด์ที่ซิงก์ไว้บันทึกไฟล์
@@ -2370,6 +2374,7 @@ calendar weekday	Th	พฤ
 	the image is empty	รูปภาพว่างเปล่า
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	กุญแจอยู่ใน Keychain ของ macOS ซึ่งอาจถามเพื่ออนุญาตให้ PdfCraft ใช้งาน
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	กุญแจอยู่ในที่เก็บใบรับรองของ Windows ซึ่งอาจถามเพื่ออนุญาตให้ PdfCraft ใช้งาน
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	คีย์อยู่บน {device} ซึ่งขอการอนุมัติเอง (แป้น PIN หรือแอปบนโทรศัพท์ของคุณ)
 	The Keychain's digital IDs couldn't be listed: {e}	แสดงรายการ Digital ID ใน Keychain ไม่ได้: {e}
 	The labels are in English: the signature's font can't draw them in this language.	ป้ายกำกับเป็นภาษาอังกฤษ เพราะฟอนต์ของลายเซ็นแสดงภาษานี้ไม่ได้
 	The linked PDF opened, but its named destination was not applied.	เปิด PDF ที่ลิงก์ไว้แล้ว แต่ไม่ได้ไปยังปลายทางที่มีชื่อ
@@ -2387,6 +2392,7 @@ calendar weekday	Th	พฤ
 	The passwords do not match.	รหัสผ่านไม่ตรงกัน
 	The passwords don't match.	รหัสผ่านไม่ตรงกัน
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	แบบอักษรข้อความของ PDF วาด “{c}” ({code}) ไม่ได้ โปรดเลือกข้อความที่รองรับ
+	The PIN is incorrect.	รหัส PIN ไม่ถูกต้อง
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	การตั้งค่าของไดรเวอร์เครื่องพิมพ์สำหรับการพิมพ์ครั้งนี้: ถาดกระดาษ ชนิดกระดาษ การตกแต่งงานพิมพ์ และอื่น ๆ
 	The replacement file doesn't have that many pages.	ไฟล์ที่ใช้แทนมีจำนวนหน้าไม่ถึง
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	ค่าลายเซ็น RSA มีความยาวไม่เท่ากับโมดูลัสของกุญแจ (ไบต์ศูนย์นำหน้าถูกตัดหรือเพิ่ม) แต่ยังอ่านได้
@@ -2583,6 +2589,7 @@ signature pad	Type	พิมพ์
 	URL to submit to	URL ที่จะส่งไป
 	Use 72 DPI (one point per pixel)	ใช้ 72 DPI (หนึ่งพอยต์ต่อพิกเซล)
 	Use a certificate	ใช้ใบรับรอง
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	ใช้ Digital ID จากอุปกรณ์ (สมาร์ตการ์ด โทเค็น USB หรือใบรับรองบนคลาวด์)
 	Use a Digital ID from a file	ใช้ Digital ID จากไฟล์
 	Use custom DPI	ใช้ DPI กำหนดเอง
 	Use each image's embedded DPI; use 72 DPI when it is absent.	ใช้ DPI ที่ฝังในแต่ละรูปภาพ หากไม่มีให้ใช้ 72 DPI

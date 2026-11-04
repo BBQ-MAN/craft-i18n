@@ -706,6 +706,7 @@ key	Delete	Delete
 	Detected 1 form field	A fost detectat 1 câmp de formular
 	Detected {n} form fields	Au fost detectate {n} câmpuri de formular
 	Device colour is used, but there is no PDF/A output intent	Se folosește culoare de dispozitiv, dar nu există intenție de ieșire PDF/A
+	Device library (PKCS #11)	Bibliotecă dispozitiv (PKCS #11)
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	Se folosește DeviceCMYK, dar intenția de ieșire PDF/A nu este un profil CMYK
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	Se folosește DeviceCMYK: necesită o intenție de ieșire CMYK (nu se adaugă automat)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	Se folosește DeviceRGB, dar intenția de ieșire PDF/A nu este un profil RGB
@@ -1522,6 +1523,7 @@ calendar weekday	Mo	Lu
 	No security	Fără securitate
 	No sheets	Nicio foaie
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Nu s-a găsit nicio semnătură în cadru. Mutați cadrul peste semnătură sau măriți sensibilitatea cernelii.
+	No signing certificate was found on this device. Is it connected?	Nu s-a găsit niciun certificat de semnare pe acest dispozitiv. Este conectat?
 	No status has been set.	Nu s-a setat nicio stare.
 	no such document	documentul nu există
 	no summary	fără rezumat
@@ -1745,6 +1747,7 @@ animation effects	On	Activate
 	PdfCraft can't check this signature yet: {}.	PdfCraft nu poate verifica încă această semnătură: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft nu s-a închis normal. Aceste documente aveau modificări salvate automat:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft desenează fără procesor grafic, așa că poate fi lent. Actualizarea driverului plăcii video poate ajuta.
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft caută bibliotecile instalate de producătorii dispozitivelor. Alegeți una doar dacă dispozitivul nu este găsit.
 	PdfCraft on GitHub	PdfCraft pe GitHub
 	PdfCraft web page	Pagina web PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft funcționează offline. Fără telemetrie, fără cont și fără procesare în cloud, cu excepția cazului în care adăugați un furnizor.
@@ -1761,7 +1764,7 @@ animation effects	On	Activate
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Imagini acoperă paginile {pages} (scanări?), deci fundalul nu se va vedea acolo.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Imaginile au nevoie de un text alternativ care să le descrie sau trebuie marcate ca decorative. Adăugați text alternativ fiecărei figuri.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	Sunt recunoscute și imaginile de pe acele pagini; cuvintele aflate deja în textul paginii nu se adaugă din nou
-	PIN	PIN
+	PIN	Cod PIN
 	Pin	Fixează
 	Pin a folder to Home	Fixare folder în Acasă
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Fixați un folder pentru a-i vedea aici cele mai noi PDF-uri, de exemplu unde salvează scanerul sau un drive cloud sincronizat.
@@ -2462,6 +2465,7 @@ calendar weekday	Th	Jo
 	the image is empty	imaginea este goală
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	Cheia se află în Keychain-ul macOS, care poate cere permisiunea ca PdfCraft să o folosească.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Cheia se află în depozitul de certificate Windows, care poate cere permisiunea ca PdfCraft să o folosească.
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Cheia este pe {device}, care cere singur aprobarea (o tastatură PIN sau o aplicație de pe telefon).
 	The Keychain's digital IDs couldn't be listed: {e}	ID-urile digitale din Keychain nu au putut fi listate: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Etichetele sunt în engleză: fontul semnăturii nu le poate desena în această limbă.
 	The linked PDF opened, but its named destination was not applied.	PDF-ul legat s-a deschis, dar destinația sa denumită nu a fost aplicată.
@@ -2481,6 +2485,7 @@ calendar weekday	Th	Jo
 	The passwords do not match.	Parolele nu se potrivesc.
 	The passwords don't match.	Parolele nu se potrivesc.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Fonturile de text PDF nu pot desena „{c}” ({code}). Alegeți un text acceptat.
+	The PIN is incorrect.	Codul PIN este incorect.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Setările proprii ale driverului de imprimantă pentru această imprimare: tava de hârtie, tipul de hârtie, finisarea și altele.
 	The replacement file doesn't have that many pages.	Fișierul de înlocuire nu are atâtea pagini.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	rândurile sunt prea joase: măriți înălțimea zonei sau folosiți mai puține rânduri ori o spațiere mai mică între rânduri
@@ -2696,6 +2701,7 @@ signature pad	Type	Scriere
 	URL to submit to	URL de trimitere
 	Use 72 DPI (one point per pixel)	Folosire 72 DPI (un punct pe pixel)
 	Use a certificate	Folosire certificat
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Folosiți un ID digital de pe un dispozitiv (card inteligent, token USB sau certificat în cloud)
 	Use a Digital ID from a file	Folosire ID digital dintr-un fișier
 	Use custom DPI	Folosire DPI personalizat
 	Use each image's embedded DPI; use 72 DPI when it is absent.	Folosește DPI-ul încorporat al fiecărei imagini; 72 DPI când lipsește.

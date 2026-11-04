@@ -644,6 +644,7 @@ key	Delete	Διαγραφή
 	Detected 1 form field	Εντοπίστηκε 1 πεδίο φόρμας
 	Detected {n} form fields	Εντοπίστηκαν {n} πεδία φόρμας
 	Device colour is used, but there is no PDF/A output intent	Χρησιμοποιείται χρώμα συσκευής, αλλά δεν έχει οριστεί προφίλ εξόδου PDF/A
+	Device library (PKCS #11)	Βιβλιοθήκη συσκευής (PKCS #11)
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	Χρησιμοποιείται DeviceCMYK: απαιτείται προφίλ εξόδου CMYK (δεν προστίθεται αυτόματα)
 	Diagnostic details	Διαγνωστικές λεπτομέρειες
 	Digital ID	Ψηφιακή ταυτότητα
@@ -1365,6 +1366,7 @@ calendar date	May	Μάιος
 	No security	Χωρίς προστασία
 	No sheets	Δεν υπάρχουν φύλλα
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Δεν βρέθηκε υπογραφή στο πλαίσιο. Μετακινήστε το πλαίσιο πάνω από την υπογραφή ή αυξήστε την ευαισθησία μελανιού.
+	No signing certificate was found on this device. Is it connected?	Δεν βρέθηκε πιστοποιητικό υπογραφής σε αυτή τη συσκευή. Είναι συνδεδεμένη;
 	No size estimate: {e}	Δεν υπάρχει εκτίμηση μεγέθους: {e}
 	No status has been set.	Δεν έχει οριστεί κατάσταση.
 	no such document	δεν υπάρχει τέτοιο έγγραφο
@@ -1567,6 +1569,7 @@ animation effects	On	Ενεργά
 	PDF/A…	PDF/A…
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	Το PdfCraft δεν τερματίστηκε κανονικά. Στα παρακάτω έγγραφα αποθηκεύτηκαν αυτόματα αλλαγές:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	Το PdfCraft αποδίδει τα γραφικά χωρίς επιτάχυνση από επεξεργαστή γραφικών και ενδέχεται να είναι αργό. Μια ενημέρωση του προγράμματος οδήγησης γραφικών ίσως βοηθήσει.
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	Το PdfCraft αναζητά τις βιβλιοθήκες που εγκαθιστούν οι κατασκευαστές συσκευών. Επιλέξτε μία μόνο αν δεν βρεθεί η συσκευή σας.
 	PdfCraft on GitHub	PdfCraft στο GitHub
 	PdfCraft web page	Ιστότοπος του PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	Το PdfCraft λειτουργεί χωρίς σύνδεση στο διαδίκτυο. Χωρίς τηλεμετρία, λογαριασμό ή επεξεργασία στο νέφος, εκτός αν προσθέσετε εσείς υπηρεσία.
@@ -2238,6 +2241,7 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Το κλειδί βρίσκεται στο χώρο αποθήκευσης πιστοποιητικών των Windows, ο οποίος ενδέχεται να ζητήσει άδεια χρήσης από το PdfCraft.
 	The key is on the device, which may ask for its PIN itself.	Το κλειδί βρίσκεται στη συσκευή, η οποία μπορεί να ζητήσει μόνη της το PIN.
 	The key is on the device, which signs once it has its PIN.	Το κλειδί βρίσκεται στη συσκευή, η οποία υπογράφει μόλις λάβει το PIN της.
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Το κλειδί βρίσκεται στη συσκευή {device}, που ζητά η ίδια έγκριση (πληκτρολόγιο PIN ή εφαρμογή στο τηλέφωνό σας).
 	The Keychain's digital IDs couldn't be listed: {e}	Δεν ήταν δυνατή η εμφάνιση των ψηφιακών ταυτοτήτων της Κλειδοθήκης: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Οι ετικέτες είναι στα αγγλικά: η γραμματοσειρά της υπογραφής δεν μπορεί να τις σχεδιάσει σε αυτή τη γλώσσα.
 	The linked PDF opened, but its named destination was not applied.	Το συνδεδεμένο PDF άνοιξε, αλλά ο ονομασμένος προορισμός του δεν εφαρμόστηκε.
@@ -2409,6 +2413,7 @@ signature pad	Type	Πληκτρολόγηση
 	US Letter	Letter ΗΠΑ
 	Use 72 DPI (one point per pixel)	Χρήση 72 DPI (ένα σημείο ανά εικονοστοιχείο)
 	Use a certificate	Χρήση πιστοποιητικού
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Χρήση ψηφιακής ταυτότητας από συσκευή (έξυπνη κάρτα, token USB ή πιστοποιητικό στο cloud)
 	Use a Digital ID from a file	Χρήση ψηφιακής ταυτότητας από αρχείο
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Χρήση συσκευής δημιουργίας υπογραφής (μονάδα PKCS #11: έξυπνη κάρτα, token, CloudSigner για mSzafir)
 	Use custom DPI	Χρήση προσαρμοσμένης ανάλυσης DPI

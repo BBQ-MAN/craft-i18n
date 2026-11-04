@@ -641,6 +641,7 @@ key	Delete	Delete
 	Detected 1 form field	양식 필드 1개가 감지되었습니다.
 	Detected {n} form fields	양식 필드 {n}개가 감지되었습니다.
 	Device colour is used, but there is no PDF/A output intent	장치 색상이 사용되지만 PDF/A 출력 의도가 없습니다.
+	Device library (PKCS #11)	장치 라이브러리(PKCS #11)
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	DeviceCMYK를 사용하지만 PDF/A 출력 의도가 CMYK 프로파일이 아닙니다
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	DeviceRGB를 사용하지만 PDF/A 출력 의도가 RGB 프로파일이 아닙니다
@@ -1348,6 +1349,7 @@ calendar weekday	Mo	월
 	No security	보안 없음
 	No sheets	시트 없음
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	프레임에서 서명을 찾지 못했습니다. 프레임을 서명 위로 이동하거나 잉크 감도를 높이세요.
+	No signing certificate was found on this device. Is it connected?	이 장치에서 서명 인증서를 찾지 못했습니다. 연결되어 있나요?
 	No status has been set.	상태가 설정되지 않았습니다.
 	no such document	해당 문서 없음
 	no summary	요약 없음
@@ -1552,6 +1554,7 @@ animation effects	On	켜짐
 	PdfCraft can't check this signature yet: {}.	PdfCraft가 아직 이 서명을 검사할 수 없습니다: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft가 정상적으로 종료되지 않았습니다. 다음 문서의 변경 사항은 자동 저장되었습니다.
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft가 그래픽 프로세서 없이 렌더링 중이므로 느릴 수 있습니다. 그래픽 드라이버를 업데이트하면 도움이 될 수 있습니다.
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft는 장치 제조사가 설치하는 라이브러리를 찾습니다. 장치를 찾지 못한 경우에만 하나를 선택하세요.
 	PdfCraft on GitHub	GitHub의 PdfCraft
 	PdfCraft web page	PdfCraft 웹 페이지
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft는 오프라인으로 작동합니다. 제공자를 추가하지 않는 한 원격 측정, 계정, 클라우드 처리가 없습니다.
@@ -1567,7 +1570,7 @@ animation effects	On	켜짐
 	Pictures cover pages {pages} (scans?), so the background won't show there.	이미지들이 {pages}페이지를 덮고 있어(스캔본?) 배경이 보이지 않습니다.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	해당 페이지의 그림도 인식하지만, 페이지 텍스트에 이미 있는 단어는 다시 추가하지 않습니다.
-	PIN	PIN
+	PIN	PIN 번호
 	Pin	고정
 	Pin a folder to Home	폴더를 홈에 고정
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	스캐너나 동기화된 클라우드 드라이브가 저장하는 곳처럼 최신 PDF를 여기에 표시할 폴더를 고정합니다.
@@ -2198,6 +2201,7 @@ calendar weekday	Th	목
 	the image is empty	이미지가 비어 있습니다.
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	키는 {device}에 있으며, 장치가 직접 승인을 요청합니다(PIN 패드 또는 휴대폰 앱).
 	The Keychain's digital IDs couldn't be listed: {e}	키체인의 디지털 ID를 나열할 수 없습니다: {e}
 	The labels are in English: the signature's font can't draw them in this language.	레이블은 영어로 표시됩니다. 서명 글꼴이 이 언어의 문자를 표시할 수 없습니다.
 	The linked PDF opened, but its named destination was not applied.	연결된 PDF가 열렸지만 이름이 지정된 대상이 적용되지 않았습니다.
@@ -2216,6 +2220,7 @@ calendar weekday	Th	목
 	The password must have at least 8 characters.	암호는 8자 이상이어야 합니다.
 	The passwords do not match.	암호가 일치하지 않습니다.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.
+	The PIN is incorrect.	PIN 번호가 올바르지 않습니다.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	이 인쇄에 대한 프린터 드라이버 자체 설정: 용지함, 용지 종류, 마무리 등.
 	The replacement file doesn't have that many pages.	대체 파일에 페이지가 그만큼 많지 않습니다.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	행이 너무 낮습니다: 영역을 더 높게 하거나 행 수 또는 행 간격을 줄이세요
@@ -2409,6 +2414,7 @@ signature pad	Type	유형
 	URL to submit to	제출할 URL
 	Use 72 DPI (one point per pixel)	72DPI 사용(픽셀당 1포인트)
 	Use a certificate	인증서 사용
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	장치의 디지털 ID 사용(스마트 카드, USB 토큰 또는 클라우드 인증서)
 	Use a Digital ID from a file	파일의 디지털 ID 사용
 	Use custom DPI	사용자 지정 DPI 사용
 	Use each image's embedded DPI; use 72 DPI when it is absent.	각 이미지에 포함된 DPI를 사용하고, 없으면 72DPI를 사용합니다.

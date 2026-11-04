@@ -683,6 +683,7 @@ key	Delete	Delete
 	Detected 1 form field	Открито е 1 поле на формуляр
 	Detected {n} form fields	Открити са {n} полета на формуляр
 	Device colour is used, but there is no PDF/A output intent	Използва се цвят, зависим от устройството, но няма изходно намерение за PDF/A
+	Device library (PKCS #11)	Библиотека на устройството (PKCS #11)
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	Използва се DeviceCMYK: необходимо е CMYK изходно намерение (не се добавя автоматично)
 	Diagnostic details	Диагностични подробности
 	Digital ID	Цифров идентификатор
@@ -1441,6 +1442,7 @@ key	Home	Home
 	No security	Без защита
 	No sheets	Няма листове
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	В рамката не е открит подпис. Преместете рамката върху подписа или увеличете чувствителността към мастило.
+	No signing certificate was found on this device. Is it connected?	На това устройство не е намерен сертификат за подписване. Свързано ли е?
 	No size estimate: {e}	Няма приблизителен размер: {e}
 	No status has been set.	Не е зададено състояние.
 	no such document	няма такъв документ
@@ -1652,6 +1654,7 @@ animation effects	On	Включени
 	PDF/A…	PDF/A…
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft не беше затворен нормално. Тези документи имат автоматично записани промени:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft рисува без графичен процесор, затова може да е бавен. Обновяването на графичния драйвер може да помогне.
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft търси библиотеките, които инсталират производителите на устройства. Изберете библиотека само ако устройството ви не е намерено.
 	PdfCraft on GitHub	PdfCraft в GitHub
 	PdfCraft web page	Уебстраница на PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft работи офлайн. Без телеметрия, без акаунт и без обработка в облака, освен ако не добавите доставчик.
@@ -2371,6 +2374,7 @@ action wizard	Start	Старт
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	Ключът е в хранилището за сертификати на Windows, което може да поиска разрешение PdfCraft да го използва.
 	The key is on the device, which may ask for its PIN itself.	Ключът е на устройството, което може само да поиска PIN кода си.
 	The key is on the device, which signs once it has its PIN.	Ключът е на устройството, което подписва след въвеждане на PIN кода.
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	Ключът е в {device}, което само иска одобрение (клавиатура за ПИН или приложение на телефона ви).
 	The Keychain's digital IDs couldn't be listed: {e}	Цифровите идентификатори от Keychain не можаха да бъдат изброени: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Етикетите са на английски: шрифтът на подписа не може да ги изобрази на този език.
 	The linked PDF opened, but its named destination was not applied.	Свързаният PDF се отвори, но именуваната му цел не беше приложена.
@@ -2385,7 +2389,7 @@ action wizard	Start	Старт
 	the password is incorrect	паролата е грешна
 	The password is only used to read the file; it isn't saved.	Паролата се използва само за четене на файла; тя не се запазва.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифтовете за PDF текст не могат да изобразят „{c}“ ({code}). Изберете поддържан текст.
-	The PIN is incorrect.	PIN кодът е грешен.
+	The PIN is incorrect.	ПИН кодът е грешен.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Цифровите идентификатори от токените PKCS #11 не можаха да бъдат изброени: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Собствените настройки на драйвера на принтера за този печат: тава за хартия, вид хартия, довършителна обработка и други.
 	The raw text was truncated to what fits.	Суровият текст е съкратен.
@@ -2567,6 +2571,7 @@ signature pad	Type	Въвеждане
 	US Letter	Американски Letter
 	Use 72 DPI (one point per pixel)	Използвай 72 DPI (една точка на пиксел)
 	Use a certificate	Използвай сертификат
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Използвай цифров идентификатор от устройство (смарт карта, USB токен или облачен сертификат)
 	Use a Digital ID from a file	Използвай цифров идентификатор от файл
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Използвай устройство за създаване на подпис (модул PKCS #11: смарт карта, токен, CloudSigner за mSzafir)
 	Use basic detection	Използвай основно откриване

@@ -707,6 +707,7 @@ key	Delete	Supr
 	Detected 1 form field	S'ha detectat 1 camp de formulari
 	Detected {n} form fields	S'han detectat {n} camps de formulari
 	Device colour is used, but there is no PDF/A output intent	S'utilitza color de dispositiu, però no hi ha cap intenció de sortida PDF/A
+	Device library (PKCS #11)	Biblioteca del dispositiu (PKCS #11)
 	DeviceCMYK is used, but the PDF/A output intent isn't a CMYK profile	S'utilitza DeviceCMYK, però la intenció de sortida PDF/A no és un perfil CMYK
 	DeviceCMYK is used: it needs a CMYK output intent (not added automatically)	S'utilitza DeviceCMYK: necessita una intenció de sortida CMYK (no s'afegeix automàticament)
 	DeviceRGB is used, but the PDF/A output intent isn't an RGB profile	S'utilitza DeviceRGB, però la intenció de sortida PDF/A no és un perfil RGB
@@ -1523,6 +1524,7 @@ calendar weekday	Mo	dl.
 	No security	Sense seguretat
 	No sheets	Cap full
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	No s'ha trobat cap signatura al marc. Mou el marc sobre la signatura o augmenta la sensibilitat de la tinta.
+	No signing certificate was found on this device. Is it connected?	No s'ha trobat cap certificat de signatura en aquest dispositiu. Està connectat?
 	No status has been set.	No s'ha definit cap estat.
 	no such document	no existeix aquest document
 	no summary	sense resum
@@ -1746,6 +1748,7 @@ animation effects	On	Activats
 	PdfCraft can't check this signature yet: {}.	PdfCraft encara no pot comprovar aquesta signatura: {}.
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft no s'ha tancat amb normalitat. Aquests documents tenien canvis desats automàticament:
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft dibuixa sense processador gràfic, de manera que pot anar lent. Pot ajudar actualitzar el controlador gràfic.
+	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	El PdfCraft cerca les biblioteques que instal·len els fabricants dels dispositius. Trieu-ne una només si no es troba el dispositiu.
 	PdfCraft on GitHub	PdfCraft a GitHub
 	PdfCraft web page	Pàgina web de PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft funciona sense connexió. Sense telemetria, sense compte i sense processament al núvol tret que afegeixis un proveïdor.
@@ -1762,7 +1765,7 @@ animation effects	On	Activats
 	Pictures cover pages {pages} (scans?), so the background won't show there.	Hi ha imatges que cobreixen les pàgines {pages} (escanejos?), així que el fons no s'hi veurà.
 	Pictures need alternate text that describes them, or must be marked decorative. Add alternate text to each figure.	Les imatges necessiten un text alternatiu que les descrigui, o s'han de marcar com a decoratives. Afegeix text alternatiu a cada figura.
 	Pictures on those pages are recognized too; words already in the page's text are not added again	També es reconeixen les imatges d'aquestes pàgines; les paraules que ja són al text de la pàgina no es tornen a afegir
-	PIN	PIN
+	PIN	Codi PIN
 	Pin	Fixa
 	Pin a folder to Home	Fixa una carpeta a l'inici
 	Pin a folder to list its newest PDFs here, such as where your scanner or a synced cloud drive saves them.	Fixa una carpeta per llistar-hi els PDF més recents, com ara on els desa l'escàner o una unitat al núvol sincronitzada.
@@ -2466,6 +2469,7 @@ calendar weekday	Th	dj.
 	the image is empty	la imatge és buida
 	The key is in the macOS Keychain, which may ask to allow PdfCraft to use it.	La clau és al clauer de macOS, que pot demanar permís perquè PdfCraft la utilitzi.
 	The key is in the Windows certificate store, which may ask to allow PdfCraft to use it.	La clau és al magatzem de certificats de Windows, que pot demanar permís perquè PdfCraft la utilitzi.
+	The key is on {device}, which asks for approval itself (a PIN pad, or an app on your phone).	La clau és a {device}, que demana l'aprovació pel seu compte (un teclat de PIN o una aplicació al telèfon).
 	The Keychain's digital IDs couldn't be listed: {e}	No s'han pogut llistar els identificadors digitals del Clauer: {e}
 	The labels are in English: the signature's font can't draw them in this language.	Les etiquetes són en anglès: el tipus de lletra de la signatura no pot dibuixar-les en aquesta llengua.
 	The linked PDF opened, but its named destination was not applied.	S'ha obert el PDF enllaçat, però no s'ha aplicat la seva destinació amb nom.
@@ -2485,6 +2489,7 @@ calendar weekday	Th	dj.
 	The passwords do not match.	Les contrasenyes no coincideixen.
 	The passwords don't match.	Les contrasenyes no coincideixen.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Els tipus de lletra de text del PDF no poden dibuixar “{c}” ({code}). Tria un text compatible.
+	The PIN is incorrect.	El PIN és incorrecte.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	La configuració pròpia del controlador de la impressora per a aquesta impressió: safata de paper, tipus de paper, acabats i més.
 	The replacement file doesn't have that many pages.	El fitxer de substitució no té tantes pàgines.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	les files són massa baixes: fes l'àrea més alta o fes servir menys files o menys espai entre files
@@ -2700,6 +2705,7 @@ signature pad	Type	Escriu
 	URL to submit to	URL on enviar
 	Use 72 DPI (one point per pixel)	Utilitza 72 DPI (un punt per píxel)
 	Use a certificate	Utilitza un certificat
+	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Utilitza un identificador digital d'un dispositiu (targeta intel·ligent, testimoni USB o certificat al núvol)
 	Use a Digital ID from a file	Utilitza un identificador digital d'un fitxer
 	Use custom DPI	Utilitza uns DPI personalitzats
 	Use each image's embedded DPI; use 72 DPI when it is absent.	Utilitza els DPI incrustats de cada imatge; si no n'hi ha, utilitza 72 DPI.
