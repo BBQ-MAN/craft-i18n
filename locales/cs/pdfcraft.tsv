@@ -429,6 +429,7 @@ certificate	Basic constraints	Základní omezení
 	Choose a folder…	Vybrat složku…
 	Choose a layout:	Vyberte rozvržení:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Vyberte obrázek PNG nebo JPEG (nejvýše 4 MiB). Průhlednost bude zachována.
+	Choose a provider.	Vyberte poskytovatele.
 	Choose a stamp, then click on the page to place it.	Vyberte razítko a klikněte na stránku, kam ho chcete umístit.
 	Choose an image	Vyberte obrázek
 	Choose font…	Vybrat písmo…
@@ -1463,6 +1464,7 @@ calendar weekday	Mo	Po
 	Night	Noc
 	No actions	Žádné akce
 	no alternate text	chybí alternativní text
+	No certificate was found with this provider.	U tohoto poskytovatele nebyl nalezen žádný certifikát.
 	No changes allowed	Nejsou povoleny žádné změny
 	No changes to save	Žádné změny k uložení
 	No check has run yet.	Kontrola zatím neproběhla.
@@ -1753,6 +1755,7 @@ animation effects	On	Zapnuto
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft vykresluje bez grafického procesoru, takže může být pomalý. Pomoci může aktualizace grafického ovladače.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft hledá knihovny, které instalují výrobci zařízení. Vyberte knihovnu jen tehdy, když se vaše zařízení nenajde.
 	PdfCraft on GitHub	PdfCraft na GitHubu
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft otevře stránku poskytovatele, kde se přihlásíte pomocí CPF, kódu PIN a jednorázového kódu.
 	PdfCraft web page	Webová stránka PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft funguje offline. Žádná telemetrie, žádný účet a žádné zpracování v cloudu, pokud nepřidáte poskytovatele.
 	PdfCraft {v} is available.	Je k dispozici PdfCraft {v}.
@@ -1847,6 +1850,7 @@ animation effects	On	Zapnuto
 	Protect using password…	Chránit heslem…
 	Protect with password	Chránit heslem
 	Protected: the combined file won't keep its security settings	Chráněný: sloučený soubor si nezachová nastavení zabezpečení
+	Provider	Poskytovatel
 	Public domain	Volné dílo
 	Public key	Veřejný klíč
 certificate	Public key	Veřejný klíč
@@ -2544,8 +2548,10 @@ calendar weekday	Th	Čt
 	The PIN is incorrect.	PIN je nesprávný.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Digitální ID z tokenů PKCS #11 nelze vypsat: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Vlastní nastavení ovladače tiskárny pro tento tisk: zásobník papíru, typ papíru, dokončovací úpravy a další.
+	The provider's page didn't come back in time. Try again.	Stránka poskytovatele se včas nevrátila. Zkuste to znovu.
 	The raw text was truncated to what fits.	Zdrojový text byl zkrácen.
 	The redaction does not fit page {page}; no pages were marked.	Začernění se nevejde na stránku {page}; žádné stránky nebyly označeny.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI přesměrování musí být http://127.0.0.1 nebo http://localhost s portem.
 	The release has ambiguous packages. Choose a package on the official release page.	Vydání obsahuje nejednoznačné balíčky. Vyberte balíček na oficiální stránce vydání.
 	The release is not a published stable update. Try again later.	Toto vydání není zveřejněná stabilní aktualizace. Zkuste to později.
 	The replacement file doesn't have that many pages.	Náhradní soubor nemá tolik stránek.
@@ -2558,6 +2564,7 @@ calendar weekday	Th	Čt
 	The selected area has been copied ({w} × {h} pixels)	Vybraná oblast byla zkopírována ({w} × {h} pixelů)
 	The selected fields could not be found. Select them again.	Vybraná pole nebyla nalezena. Vyberte je znovu.
 	The selected redaction is unavailable or invalid.	Vybrané začernění není dostupné nebo je neplatné.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Relace s poskytovatelem {provider} skončila. Přihlaste se znovu v části Konfigurovat digitální ID.
 	The shared folder:	Sdílená složka:
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	Algoritmus podpisu a algoritmus otisku v SignerInfo uvádějí různé hashe; podpis byl vytvořen tím ze SignerInfo.
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	Podpis nese neověřené časové razítko ({}): autorita časových razítek není ve vašem seznamu důvěryhodných certifikátů, proto se místo něj použije čas podpisu uvedený podepisující osobou.
@@ -2770,6 +2777,7 @@ signature pad	Type	Napsat
 	US Letter	US Letter (americký)
 	Use 72 DPI (one point per pixel)	Použít 72 DPI (jeden bod na pixel)
 	Use a certificate	Použít certifikát
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Použít cloudový certifikát (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Použít digitální ID ze zařízení (čipová karta, USB token nebo cloudový certifikát)
 	Use a Digital ID from a file	Použít digitální ID ze souboru
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Použít zařízení pro vytváření podpisu (modul PKCS #11: čipová karta, token, CloudSigner pro mSzafir)
@@ -2831,6 +2839,7 @@ certificate	Version	Verze
 	Voice:	Hlas:
 	Volume:	Hlasitost:
 	Waiting for the system print dialog…	Čeká se na systémový dialog tisku…
+	Waiting for your approval in the browser…	Čeká se na vaše schválení v prohlížeči…
 	watermark	vodoznak
 calendar weekday	We	St
 	Weak	Slabé

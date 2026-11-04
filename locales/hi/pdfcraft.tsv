@@ -431,6 +431,7 @@ certificate	Basic constraints	मूल बाधाएँ
 	Choose a folder…	फ़ोल्डर चुनें…
 	Choose a layout:	एक लेआउट चुनें:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	PNG या JPEG छवि चुनें (4 MiB तक)। पारदर्शिता बनी रहती है।
+	Choose a provider.	एक प्रदाता चुनें।
 	Choose a stamp, then click on the page to place it.	एक स्टाम्प चुनें, फिर उसे लगाने के लिए पृष्ठ पर क्लिक करें।
 	Choose an image	कोई छवि चुनें
 	Choose images	छवियाँ चुनें
@@ -1478,6 +1479,7 @@ calendar weekday	Mo	सोम
 	No	नहीं
 	No actions	कोई क्रिया नहीं
 	no alternate text	कोई वैकल्पिक पाठ नहीं
+	No certificate was found with this provider.	इस प्रदाता के पास कोई प्रमाणपत्र नहीं मिला।
 	No changes allowed	कोई बदलाव की अनुमति नहीं
 	No changes to save	सहेजने के लिए कोई बदलाव नहीं
 	No check has run yet.	अभी तक कोई जाँच नहीं चली है।
@@ -1749,6 +1751,7 @@ animation effects	On	चालू
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft बिना ग्राफ़िक्स प्रोसेसर के चित्र बना रहा है, इसलिए धीमा चल सकता है। ग्राफ़िक्स ड्राइवर अपडेट करने से मदद मिल सकती है।
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft उन लाइब्रेरी को खोजता है जिन्हें डिवाइस निर्माता इंस्टॉल करते हैं। केवल तभी कोई चुनें जब आपका डिवाइस न मिले।
 	PdfCraft on GitHub	GitHub पर PdfCraft
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft प्रदाता का पेज खोलता है, जहाँ आप अपने CPF, पिन और एक-बार के कोड से साइन इन करते हैं।
 	PdfCraft web page	PdfCraft वेबपेज
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft ऑफ़लाइन काम करता है। जब तक आप कोई प्रोवाइडर न जोड़ें, न टेलीमेट्री है, न खाता और न ही क्लाउड प्रोसेसिंग।
 	PdfCraft {v} is available.	PdfCraft {v} उपलब्ध है।
@@ -1854,6 +1857,7 @@ animation effects	On	चालू
 	Protect using password…	पासवर्ड से सुरक्षित करें…
 	Protect with password	पासवर्ड से सुरक्षित करें
 	Protected: the combined file won't keep its security settings	सुरक्षित: संयोजित फ़ाइल अपनी सुरक्षा सेटिंग्स नहीं रखेगी
+	Provider	प्रदाता
 	PRs	PR
 	Public key	सार्वजनिक कुंजी
 certificate	Public key	सार्वजनिक कुंजी
@@ -2489,6 +2493,8 @@ calendar weekday	Th	गुरु
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	पीडीएफ़ टेक्स्ट फ़ॉन्ट “{c}” ({code}) नहीं बना सकते। समर्थित टेक्स्ट चुनें।
 	The PIN is incorrect.	पिन गलत है।
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	इस छपाई के लिए प्रिंटर ड्राइवर की अपनी सेटिंग्स: काग़ज़ ट्रे, काग़ज़ का प्रकार, फ़िनिशिंग आदि।
+	The provider's page didn't come back in time. Try again.	प्रदाता का पेज समय पर वापस नहीं आया। फिर से प्रयास करें।
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	रीडायरेक्ट URI पोर्ट के साथ http://127.0.0.1 या http://localhost होना चाहिए।
 	The replacement file doesn't have that many pages.	बदलने वाली फ़ाइल में उतने पृष्ठ नहीं हैं।
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	पंक्तियाँ बहुत छोटी हैं: क्षेत्र को ऊँचा करें, या कम पंक्तियाँ या पंक्तियों के बीच कम दूरी रखें
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA हस्ताक्षर मान की लंबाई कुंजी के मॉड्यूलस के बराबर नहीं है (आगे के शून्य बाइट हटे या जुड़े हैं); फिर भी इसे पढ़ लिया गया।
@@ -2497,6 +2503,7 @@ calendar weekday	Th	गुरु
 	The security settings don't allow screen readers to read the text	सुरक्षा सेटिंग स्क्रीन रीडर को पाठ पढ़ने की अनुमति नहीं देतीं
 	The selected area has been copied ({w} × {h} pixels)	चयनित क्षेत्र कॉपी हो गया ({w} × {h} पिक्सेल)
 	The selected fields could not be found. Select them again.	चयनित फ़ील्ड नहीं मिले। उन्हें दोबारा चुनें।
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	{provider} के साथ सत्र समाप्त हो गया है। डिजिटल आईडी कॉन्फ़िगर करें से फिर से साइन इन करें।
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	हस्ताक्षर एल्गोरिदम और SignerInfo के डाइजेस्ट एल्गोरिदम अलग-अलग हैश बताते हैं; हस्ताक्षर SignerInfo वाले हैश से बनाया गया था।
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	हस्ताक्षर के साथ एक असत्यापित टाइमस्टैम्प है ({}): टाइमस्टैम्प प्राधिकारी आपकी विश्वसनीय प्रमाणपत्रों की सूची में नहीं है, इसलिए हस्ताक्षरकर्ता द्वारा बताया गया हस्ताक्षर-समय उपयोग किया गया है।
 	The signature contents are not hexadecimal.	हस्ताक्षर की सामग्री हेक्साडेसिमल नहीं है।
@@ -2697,6 +2704,7 @@ signature pad	Type	टाइप करें
 	URL to submit to	सबमिट करने का URL
 	Use 72 DPI (one point per pixel)	72 DPI उपयोग करें (प्रति पिक्सेल एक पॉइंट)
 	Use a certificate	प्रमाणपत्र का उपयोग करें
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	क्लाउड प्रमाणपत्र का उपयोग करें (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	किसी डिवाइस से डिजिटल आईडी का उपयोग करें (स्मार्ट कार्ड, USB टोकन या क्लाउड प्रमाणपत्र)
 	Use a Digital ID from a file	फ़ाइल से डिजिटल आईडी उपयोग करें
 	Use custom DPI	कस्टम DPI उपयोग करें
@@ -2755,6 +2763,7 @@ certificate	Version	संस्करण
 	Visible Rectangle	दृश्यमान आयत
 	Visual	विज़ुअल
 	Waiting for the system print dialog…	सिस्टम के प्रिंट संवाद की प्रतीक्षा हो रही है…
+	Waiting for your approval in the browser…	ब्राउज़र में आपकी स्वीकृति की प्रतीक्षा है…
 	Warning	चेतावनी
 	Warnings	चेतावनियाँ
 	Watermark	वॉटरमार्क

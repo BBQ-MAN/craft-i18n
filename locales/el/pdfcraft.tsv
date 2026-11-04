@@ -396,6 +396,7 @@ calendar date	August	Αύγουστος
 	Choose a folder on this computer to pin	Επιλέξτε έναν φάκελο από αυτόν τον υπολογιστή για καρφίτσωμα
 	Choose a layout:	Επιλέξτε διάταξη:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Επιλέξτε εικόνα PNG ή JPEG (έως 4 MiB). Η διαφάνεια διατηρείται.
+	Choose a provider.	Επιλέξτε πάροχο.
 	Choose a stamp, then click on the page to place it.	Επιλέξτε μια σφραγίδα και έπειτα κάντε κλικ στη σελίδα για να την τοποθετήσετε.
 	Choose an image	Επιλογή εικόνας
 	Choose font…	Επιλογή γραμματοσειράς…
@@ -1321,6 +1322,7 @@ calendar date	May	Μάιος
 	Next view	Επόμενη προβολή
 	Night	Νύχτα
 	No actions	Καμία ενέργεια
+	No certificate was found with this provider.	Δεν βρέθηκε πιστοποιητικό σε αυτόν τον πάροχο.
 	No changes allowed	Δεν επιτρέπονται αλλαγές
 	No changes to save	Δεν υπάρχουν αλλαγές προς αποθήκευση
 	No check has run yet.	Δεν έχει πραγματοποιηθεί ακόμη έλεγχος.
@@ -1572,6 +1574,7 @@ animation effects	On	Ενεργά
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	Το PdfCraft αποδίδει τα γραφικά χωρίς επιτάχυνση από επεξεργαστή γραφικών και ενδέχεται να είναι αργό. Μια ενημέρωση του προγράμματος οδήγησης γραφικών ίσως βοηθήσει.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	Το PdfCraft αναζητά τις βιβλιοθήκες που εγκαθιστούν οι κατασκευαστές συσκευών. Επιλέξτε μία μόνο αν δεν βρεθεί η συσκευή σας.
 	PdfCraft on GitHub	PdfCraft στο GitHub
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	Το PdfCraft ανοίγει τη σελίδα του παρόχου, όπου συνδέεστε με CPF, PIN και κωδικό μίας χρήσης.
 	PdfCraft web page	Ιστότοπος του PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	Το PdfCraft λειτουργεί χωρίς σύνδεση στο διαδίκτυο. Χωρίς τηλεμετρία, λογαριασμό ή επεξεργασία στο νέφος, εκτός αν προσθέσετε εσείς υπηρεσία.
 	PdfCraft {v} is available.	Η έκδοση {v} του PdfCraft είναι διαθέσιμη.
@@ -1662,6 +1665,7 @@ animation effects	On	Ενεργά
 	Protect using password…	Προστασία με κωδικό πρόσβασης…
 	Protect with password	Προστασία με κωδικό πρόσβασης
 	Protected: the combined file won't keep its security settings	Προστατευμένο: το συνδυασμένο αρχείο δεν θα διατηρήσει τις ρυθμίσεις ασφαλείας του
+	Provider	Πάροχος
 	Public domain	Κοινό κτήμα
 	Public key	Δημόσιο κλειδί
 	PushButton	Κουμπί εντολής
@@ -2267,8 +2271,10 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	The PIN is incorrect.	Το PIN είναι λανθασμένο.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Δεν ήταν δυνατή η ανάκτηση των ψηφιακών ταυτοτήτων από διακριτικά PKCS #11: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Ρυθμίσεις του προγράμματος οδήγησης εκτυπωτή για αυτή την εκτύπωση: δίσκος τροφοδοσίας, τύπος χαρτιού, τελική επεξεργασία και άλλα.
+	The provider's page didn't come back in time. Try again.	Η σελίδα του παρόχου δεν επέστρεψε εγκαίρως. Δοκιμάστε ξανά.
 	The raw text was truncated to what fits.	Το ακατέργαστο κείμενο περικόπηκε.
 	The redaction does not fit page {page}; no pages were marked.	Η απόκρυψη δεν χωρά στη σελίδα {page}· δεν σημάνθηκε καμία σελίδα.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Το URI ανακατεύθυνσης πρέπει να είναι http://127.0.0.1 ή http://localhost με θύρα.
 	The release has ambiguous packages. Choose a package on the official release page.	Η έκδοση έχει ασαφή πακέτα. Επιλέξτε πακέτο από την επίσημη σελίδα έκδοσης.
 	The release is not a published stable update. Try again later.	Αυτή η έκδοση δεν είναι δημοσιευμένη σταθερή ενημέρωση. Δοκιμάστε ξανά αργότερα.
 	The replacement file doesn't have that many pages.	Το αρχείο αντικατάστασης δεν έχει τόσες σελίδες.
@@ -2277,6 +2283,7 @@ certificate	Subject	Υποκείμενο πιστοποιητικού
 	The selected area has been copied ({w} × {h} pixels)	Η επιλεγμένη περιοχή αντιγράφηκε ({w} × {h} εικονοστοιχεία)
 	The selected fields could not be found. Select them again.	Δεν βρέθηκαν τα επιλεγμένα πεδία. Επιλέξτε τα ξανά.
 	The selected redaction is unavailable or invalid.	Η επιλεγμένη απόκρυψη δεν είναι διαθέσιμη ή δεν είναι έγκυρη.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Η περίοδος σύνδεσης με τον {provider} έληξε. Συνδεθείτε ξανά από τη Διαμόρφωση ψηφιακής ταυτότητας.
 	The shared folder:	Ο κοινόχρηστος φάκελος:
 	The signature will be invisible.	Η υπογραφή θα είναι αόρατη.
 	The standard it must meet and where the file goes	Το πρότυπο που πρέπει να πληροί και πού πηγαίνει το αρχείο
@@ -2421,6 +2428,7 @@ signature pad	Type	Πληκτρολόγηση
 	US Letter	Letter ΗΠΑ
 	Use 72 DPI (one point per pixel)	Χρήση 72 DPI (ένα σημείο ανά εικονοστοιχείο)
 	Use a certificate	Χρήση πιστοποιητικού
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Χρήση πιστοποιητικού cloud (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Χρήση ψηφιακής ταυτότητας από συσκευή (έξυπνη κάρτα, token USB ή πιστοποιητικό στο cloud)
 	Use a Digital ID from a file	Χρήση ψηφιακής ταυτότητας από αρχείο
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Χρήση συσκευής δημιουργίας υπογραφής (μονάδα PKCS #11: έξυπνη κάρτα, token, CloudSigner για mSzafir)
@@ -2477,6 +2485,7 @@ signature pad	Type	Πληκτρολόγηση
 	Voice:	Φωνή:
 	Volume:	Ένταση:
 	Waiting for the system print dialog…	Αναμονή για το παράθυρο εκτύπωσης του συστήματος…
+	Waiting for your approval in the browser…	Αναμονή για την έγκρισή σας στο πρόγραμμα περιήγησης…
 	Warning	Warning
 	watermark	υδατογράφημα
 	Weak	Αδύναμος

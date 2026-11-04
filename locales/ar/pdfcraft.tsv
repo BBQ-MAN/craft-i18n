@@ -421,6 +421,7 @@ certificate	Basic constraints	القيود الأساسية
 	Choose a folder…	اختيار مجلد…
 	Choose a layout:	اختر تخطيطًا:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	اختر صورة PNG أو JPEG (حتى 4 MiB). الشفافية تُحفظ.
+	Choose a provider.	اختر مزوّدًا.
 	Choose a stamp, then click on the page to place it.	اختر ختمًا، ثم انقر على الصفحة لوضعه.
 	Choose an image	اختر صورة
 	Choose font…	اختيار خط…
@@ -1423,6 +1424,7 @@ calendar weekday	Mo	إثنين
 	Night	ليلي
 	No actions	لا توجد إجراءات
 	no alternate text	لا نص بديل
+	No certificate was found with this provider.	لم يُعثر على أي شهادة لدى هذا المزوّد.
 	No changes allowed	لا يُسمح بأي تغييرات
 	No changes to save	لا تغييرات لحفظها
 	No check has run yet.	لم يُجرَ أي تحقق بعد.
@@ -1705,6 +1707,7 @@ animation effects	On	مفعّلة
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	يرسم PdfCraft دون معالج رسوميات، لذا قد يكون بطيئًا. تحديث تعريف بطاقة الرسوميات قد يفيد.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	يبحث PdfCraft عن المكتبات التي يثبّتها مصنّعو الأجهزة. اختر واحدة فقط إذا لم يُعثر على جهازك.
 	PdfCraft on GitHub	PdfCraft على GitHub
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	يفتح PdfCraft صفحة المزوّد، حيث تسجّل الدخول برقم CPF ورمز PIN ورمز لمرة واحدة.
 	PdfCraft web page	صفحة PdfCraft على الويب
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	يعمل PdfCraft دون اتصال. لا قياس عن بُعد ولا حساب ولا معالجة سحابية إلا إذا أضفت مزوّدًا.
 	PdfCraft {v} is available.	PdfCraft {v} متاح.
@@ -1797,6 +1800,7 @@ animation effects	On	مفعّلة
 	Protect using password…	حماية بكلمة مرور…
 	Protect with password	حماية بكلمة مرور
 	Protected: the combined file won't keep its security settings	محمي: الملف المدموج لن يحتفظ بإعدادات أمانه
+	Provider	المزوّد
 	Public domain	ملكية عامة
 	Public key	المفتاح العام
 certificate	Public key	المفتاح العام
@@ -2485,8 +2489,10 @@ calendar weekday	Th	خميس
 	The PIN is incorrect.	رمز PIN غير صحيح.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	تعذّر سرد المعرّفات الرقمية على رموز PKCS #11: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	إعدادات تعريف الطابعة الخاصة بهذه الطباعة: درج الورق ونوع الورق والتشطيب وغيرها.
+	The provider's page didn't come back in time. Try again.	لم تعُد صفحة المزوّد في الوقت المحدد. حاول مرة أخرى.
 	The raw text was truncated to what fits.	تم اقتطاع النص الخام.
 	The redaction does not fit page {page}; no pages were marked.	لا يلائم التنقيح الصفحة {page}؛ لم تُعلَّم أي صفحات.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	يجب أن يكون عنوان URI لإعادة التوجيه http://127.0.0.1 أو http://localhost مع منفذ.
 	The release has ambiguous packages. Choose a package on the official release page.	تتضمن هذه النسخة حزمًا غير واضحة. اختر حزمة من صفحة الإصدار الرسمية.
 	The release is not a published stable update. Try again later.	هذا الإصدار ليس تحديثًا مستقرًا منشورًا. حاول مجددًا لاحقًا.
 	The replacement file doesn't have that many pages.	الملف البديل لا يحتوي على هذا العدد من الصفحات.
@@ -2499,6 +2505,7 @@ calendar weekday	Th	خميس
 	The selected area has been copied ({w} × {h} pixels)	نُسخت المنطقة المحددة ({w} × {h} بكسل)
 	The selected fields could not be found. Select them again.	تعذّر العثور على الحقول المحددة. حددها من جديد.
 	The selected redaction is unavailable or invalid.	التنقيح المحدد غير متاح أو غير صالح.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	انتهت الجلسة مع {provider}. سجّل الدخول مجددًا من «تكوين معرّف رقمي».
 	The shared folder:	المجلد المشترك:
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	خوارزمية التوقيع وخوارزمية الهضم في SignerInfo تسمّيان هضمين مختلفين؛ صُنع التوقيع بخوارزمية SignerInfo.
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	يحمل التوقيع طابعاً زمنياً غير موثق ({}): سلطة الطابع الزمني ليست في قائمة شهاداتك الموثوقة، لذا يُستخدم وقت التوقيع الذي زعمه الموقّع بدلاً منه.
@@ -2708,6 +2715,7 @@ signature pad	Type	كتابة
 	US Letter	ليتر أمريكي
 	Use 72 DPI (one point per pixel)	استخدام 72 DPI (نقطة واحدة لكل بكسل)
 	Use a certificate	استخدام شهادة
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	استخدام شهادة سحابية (ICP-Brasil: BirdID وVIDaaS وNeoID وSafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	استخدام معرّف رقمي من جهاز (بطاقة ذكية أو مفتاح USB أو شهادة سحابية)
 	Use a Digital ID from a file	استخدام معرّف رقمي من ملف
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	استخدام جهاز إنشاء التوقيع (وحدة PKCS #11: بطاقة ذكية، رمز مميز، CloudSigner لـ mSzafir)
@@ -2770,6 +2778,7 @@ certificate	Version	الإصدار
 	Voice:	الصوت:
 	Volume:	مستوى الصوت:
 	Waiting for the system print dialog…	في انتظار مربع حوار الطباعة في النظام…
+	Waiting for your approval in the browser…	بانتظار موافقتك في المتصفح…
 	watermark	علامة مائية
 calendar weekday	We	أربعاء
 	Weak	ضعيفة

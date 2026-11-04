@@ -408,6 +408,7 @@ certificate	Basic constraints	Perusrajoitukset
 	Choose a folder…	Valitse kansio…
 	Choose a layout:	Valitse asettelu:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Valitse PNG- tai JPEG-kuva (enintään 4 MiB). Läpinäkyvyys säilyy.
+	Choose a provider.	Valitse palveluntarjoaja.
 	Choose a stamp, then click on the page to place it.	Valitse leima ja sijoita se napsauttamalla sivua.
 	Choose an image	Valitse kuva
 	Choose images	Valitse kuvat
@@ -1343,6 +1344,7 @@ calendar weekday	Mo	Ma
 	No	Ei
 	No actions	Ei toimintoja
 	no alternate text	ei vaihtoehtoista tekstiä
+	No certificate was found with this provider.	Tältä palveluntarjoajalta ei löytynyt varmennetta.
 	No changes allowed	Muutoksia ei sallita
 	No changes to save	Ei tallennettavia muutoksia
 	No check has run yet.	Tarkistusta ei ole vielä tehty.
@@ -1590,6 +1592,7 @@ animation effects	On	Käytössä
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft piirtää ilman grafiikkasuoritinta, joten se voi olla hidas. Näytönohjaimen ajurin päivittäminen voi auttaa.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft etsii laitevalmistajien asentamat kirjastot. Valitse kirjasto vain, jos laitettasi ei löydy.
 	PdfCraft on GitHub	PdfCraft GitHubissa
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft avaa palveluntarjoajan sivun, jolla kirjaudut CPF:llä, PIN-koodilla ja kertakäyttökoodilla.
 	PdfCraft web page	PdfCraftin verkkosivu
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft toimii ilman verkkoyhteyttä. Ei telemetriaa, ei tiliä eikä pilvikäsittelyä, ellei palveluntarjoajaa lisätä.
 	PdfCraft {v} is available.	PdfCraft {v} on saatavilla.
@@ -1683,6 +1686,7 @@ animation effects	On	Käytössä
 	Protect using password…	Suojaa salasanalla…
 	Protect with password	Suojaa salasanalla
 	Protected: the combined file won't keep its security settings	Suojattu: yhdistetty tiedosto ei säilytä suojausasetuksia
+	Provider	Palveluntarjoaja
 	Public key	Julkinen avain
 certificate	Public key	Julkinen avain
 	PushButton	Painike
@@ -2283,6 +2287,8 @@ calendar weekday	Th	To
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF-tekstifontit eivät pysty piirtämään merkkiä ”{c}” ({code}). Valitse tuettua tekstiä.
 	The PIN is incorrect.	PIN-koodi on väärä.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Tulostinohjaimen omat asetukset tälle tulostukselle: paperilokero, paperityyppi, viimeistely ym.
+	The provider's page didn't come back in time. Try again.	Palveluntarjoajan sivu ei palannut ajoissa. Yritä uudelleen.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Uudelleenohjauksen URI:n on oltava http://127.0.0.1 tai http://localhost portin kanssa.
 	The replacement file doesn't have that many pages.	Korvaavassa tiedostossa ei ole niin montaa sivua.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	rivit ovat liian matalia: tee alueesta korkeampi tai käytä vähemmän rivejä tai pienempää riviväliä
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA-allekirjoituksen arvon pituus ei vastaa avaimen modulusta (alun nollatavuja poistettu tai lisätty); se luettiin silti.
@@ -2291,6 +2297,7 @@ calendar weekday	Th	To
 	The security settings don't allow screen readers to read the text	Suojausasetukset eivät salli näytönlukuohjelmien lukea tekstiä
 	The selected area has been copied ({w} × {h} pixels)	Valittu alue on kopioitu ({w} × {h} pikseliä)
 	The selected fields could not be found. Select them again.	Valittuja kenttiä ei löytynyt. Valitse ne uudelleen.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Istunto palveluntarjoajan {provider} kanssa on päättynyt. Kirjaudu uudelleen kohdasta Määritä digitaalinen tunnus.
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	Allekirjoitusalgoritmi ja SignerInfo-rakenteen tiivistealgoritmi nimeävät eri tiivisteet; allekirjoitus tehtiin SignerInfo-rakenteen mukaisella.
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	Allekirjoituksessa on vahvistamaton aikaleima ({}): aikaleiman myöntäjä ei ole luotettujen varmenteiden luettelossa, joten käytetään allekirjoittajan ilmoittamaa allekirjoitusaikaa.
 	The signature contents are not hexadecimal.	Allekirjoituksen sisältö ei ole heksadesimaalimuotoinen.
@@ -2490,6 +2497,7 @@ signature pad	Type	Kirjoita
 	URL to submit to	Lähetyksen URL-osoite
 	Use 72 DPI (one point per pixel)	Käytä 72 DPI:tä (yksi piste pikseliä kohden)
 	Use a certificate	Käytä varmennetta
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Käytä pilvivarmennetta (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Käytä laitteen digitaalista tunnusta (älykortti, USB-tunnus tai pilvivarmenne)
 	Use a Digital ID from a file	Käytä tiedostossa olevaa digitaalista tunnusta
 	Use custom DPI	Käytä mukautettua DPI-arvoa
@@ -2545,6 +2553,7 @@ certificate	Version	Versio
 	Visible Rectangle	Näkyvä suorakulmio
 	Visual	Visuaalinen
 	Waiting for the system print dialog…	Odotetaan järjestelmän tulostusikkunaa…
+	Waiting for your approval in the browser…	Odotetaan hyväksyntääsi selaimessa…
 	Warning	Varoitus
 	Watermark	Vesileima
 	watermark	vesileima

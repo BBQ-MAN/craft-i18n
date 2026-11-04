@@ -403,6 +403,7 @@ calendar date	August	Тамыз
 	Choose a folder on this computer to pin	Бекіту үшін осы компьютердегі бір қалтаны таңдаңыз
 	Choose a layout:	Макетті таңдаңыз:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	PNG немесе JPEG суретін таңдаңыз (4 MiB-қа дейін). Мөлдірлік сақталады.
+	Choose a provider.	Провайдерді таңдаңыз.
 	Choose a stamp, then click on the page to place it.	Мөрді таңдап, оны орналастыру үшін бетті шертіңіз.
 	Choose an image	Суретті таңдаңыз
 	Choose font…	Қаріпті таңдау…
@@ -1353,6 +1354,7 @@ calendar date	May	Мамыр
 	Next view	Келесі көрініс
 	Night	Түн
 	No actions	Әрекеттер жоқ
+	No certificate was found with this provider.	Бұл провайдерде сертификат табылмады.
 	No changes allowed	Ешқандай өзгеріс рұқсат етілмейді
 	No changes to save	Сақтайтын өзгеріс жоқ
 	No check has run yet.	Тексеру әлі жүргізілген жоқ.
@@ -1611,6 +1613,7 @@ animation effects	On	Қосулы
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft графикалық процессорсыз сурет салуда, сондықтан баяу жұмыс істеуі мүмкін. Графикалық драйверді жаңарту көмектесуі мүмкін.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft құрылғы өндірушілері орнататын кітапханаларды іздейді. Құрылғыңыз табылмаса ғана біреуін таңдаңыз.
 	PdfCraft on GitHub	GitHub-тағы PdfCraft
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft провайдер бетін ашады, онда CPF, PIN және бір реттік кодпен кіресіз.
 	PdfCraft web page	PdfCraft веб-сайты
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft офлайн жұмыс істейді. Провайдер қоспағаныңызша телеметрия да, тіркелгі де, бұлтта өңдеу де жоқ.
 	PdfCraft {v} is available.	PdfCraft {v} қолжетімді.
@@ -1701,6 +1704,7 @@ animation effects	On	Қосулы
 	Protect using password…	Құпиясөз арқылы қорғау…
 	Protect with password	Құпиясөзбен қорғау
 	Protected: the combined file won't keep its security settings	Қорғалған: біріктірілген файл өз қауіпсіздік параметрлерін сақтамайды
+	Provider	Провайдер
 	Public domain	Қоғамдық игілік
 	Public key	Ашық кілт
 	PushButton	Түйме
@@ -2336,8 +2340,10 @@ certificate	Subject	Субъект
 	The PIN is incorrect.	PIN қате.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 токендеріндегі цифрлық ID-лерді тізімдеу мүмкін болмады: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Осы басып шығаруға арналған принтер драйверінің дербес параметрлері: қағаз науасы, қағаз түрі, соңғы өңдеу және т.б.
+	The provider's page didn't come back in time. Try again.	Провайдер беті уақытында оралмады. Қайталап көріңіз.
 	The raw text was truncated to what fits.	Бастапқы мәтін қысқартылды.
 	The redaction does not fit page {page}; no pages were marked.	Өшіру {page} бетіне сыймайды; ешбір бет белгіленбеді.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Қайта бағыттау URI-і порты бар http://127.0.0.1 немесе http://localhost болуы керек.
 	The release has ambiguous packages. Choose a package on the official release page.	Бұл шығарылымда бірнеше түрлі пакет бар. Ресми шығарылым бетінен пакет таңдаңыз.
 	The release is not a published stable update. Try again later.	Бұл шығарылым жарияланған тұрақты жаңарту емес. Кейінірек қайталап көріңіз.
 	The replacement file doesn't have that many pages.	Ауыстырғыш файлда соншалық бет жоқ.
@@ -2347,6 +2353,7 @@ certificate	Subject	Субъект
 	The selected area has been copied ({w} × {h} pixels)	Таңдалған аймақ көшірілді ({w} × {h} пиксель)
 	The selected fields could not be found. Select them again.	Таңдалған өрістер табылмады. Оларды қайта таңдаңыз.
 	The selected redaction is unavailable or invalid.	Таңдалған өшіру қолжетімсіз немесе жарамсыз.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	{provider} сеансы аяқталды. «Цифрлық ID-ді баптау» арқылы қайта кіріңіз.
 	The shared folder:	Ортақ қалта:
 	The signature will be invisible.	Қолтаңба көрінбейтін болады.
 	the signing service is unreachable ({reason})	қолтаңба қызметіне қосылу мүмкін емес ({reason})
@@ -2511,6 +2518,7 @@ signature pad	Type	Теру
 	US Letter	АҚШ Letter
 	Use 72 DPI (one point per pixel)	72 DPI қолдану (пиксельге бір пункт)
 	Use a certificate	Сертификатты пайдалану
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Бұлттық сертификатты пайдалану (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Құрылғыдағы цифрлық ID-ді пайдалану (смарт-карта, USB токен немесе бұлттық сертификат)
 	Use a Digital ID from a file	Файлдағы цифрлық ID-ді пайдалану
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Қолтаңба жасау құрылғысын пайдалану (PKCS #11 модулі: смарт-карта, токен, mSzafir үшін CloudSigner)
@@ -2568,6 +2576,7 @@ signature pad	Type	Теру
 	Voice:	Дауыс:
 	Volume:	Дыбыс деңгейі:
 	Waiting for the system print dialog…	Жүйенің басып шығару терезесі күтілуде…
+	Waiting for your approval in the browser…	Браузердегі мақұлдауыңыз күтілуде…
 	watermark	су белгісі
 	Weak	Әлсіз
 	Welcome to PdfCraft	PdfCraft-ге қош келдіңіз

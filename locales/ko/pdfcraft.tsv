@@ -398,6 +398,7 @@ certificate	Basic constraints	기본 제약 조건
 	Choose a folder…	폴더 선택…
 	Choose a layout:	레이아웃 선택:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	PNG 또는 JPEG 이미지(최대 4MiB)를 선택하세요. 투명도가 유지됩니다.
+	Choose a provider.	공급자를 선택하세요.
 	Choose a stamp, then click on the page to place it.	스탬프를 선택한 다음 페이지를 클릭하여 배치하세요.
 	Choose an image	이미지 선택
 	Choose images	이미지 선택
@@ -1307,6 +1308,7 @@ calendar weekday	Mo	월
 	Next view	다음 보기
 	No actions	작업 없음
 	no alternate text	대체 텍스트 없음
+	No certificate was found with this provider.	이 공급자에서 인증서를 찾지 못했습니다.
 	No changes allowed	변경 허용 안 함
 	No changes to save	저장할 변경 사항 없음
 	No check has run yet.	아직 검사를 실행하지 않았습니다.
@@ -1557,6 +1559,7 @@ animation effects	On	켜짐
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft가 그래픽 프로세서 없이 렌더링 중이므로 느릴 수 있습니다. 그래픽 드라이버를 업데이트하면 도움이 될 수 있습니다.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft는 장치 제조사가 설치하는 라이브러리를 찾습니다. 장치를 찾지 못한 경우에만 하나를 선택하세요.
 	PdfCraft on GitHub	GitHub의 PdfCraft
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft가 공급자 페이지를 열면 CPF, PIN 번호, 일회용 코드로 로그인합니다.
 	PdfCraft web page	PdfCraft 웹 페이지
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft는 오프라인으로 작동합니다. 제공자를 추가하지 않는 한 원격 측정, 계정, 클라우드 처리가 없습니다.
 	PdfCraft {c} is up to date.	PdfCraft {c}은(는) 최신 버전입니다.
@@ -1649,6 +1652,7 @@ animation effects	On	켜짐
 	Protect using password…	암호로 보호…
 	Protect with password	암호로 보호
 	Protected: the combined file won't keep its security settings	보호됨: 결합된 파일은 보안 설정을 유지하지 않습니다.
+	Provider	공급자
 	Public key	공개 키
 certificate	Public key	공개 키
 	PushButton	누름 버튼
@@ -2230,6 +2234,8 @@ calendar weekday	Th	목
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.
 	The PIN is incorrect.	PIN 번호가 올바르지 않습니다.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	이 인쇄에 대한 프린터 드라이버 자체 설정: 용지함, 용지 종류, 마무리 등.
+	The provider's page didn't come back in time. Try again.	공급자 페이지가 제때 돌아오지 않았습니다. 다시 시도하세요.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	리디렉션 URI는 포트가 있는 http://127.0.0.1 또는 http://localhost여야 합니다.
 	The replacement file doesn't have that many pages.	대체 파일에 페이지가 그만큼 많지 않습니다.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	행이 너무 낮습니다: 영역을 더 높게 하거나 행 수 또는 행 간격을 줄이세요
 	The RSA signature value does not have the length of the key's modulus (leading zero bytes dropped or added); it was read anyway.	RSA 서명 값의 길이가 키 모듈러스와 다릅니다(선행 0바이트가 제거되거나 추가됨). 그래도 읽었습니다.
@@ -2238,6 +2244,7 @@ calendar weekday	Th	목
 	The security settings don't allow screen readers to read the text	보안 설정에서 화면 읽기 프로그램의 텍스트 읽기를 허용하지 않습니다
 	The selected area has been copied ({w} × {h} pixels)	선택한 영역이 복사되었습니다({w} × {h}픽셀).
 	The selected fields could not be found. Select them again.	The selected fields could not be found. Select them again.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	{provider}와의 세션이 끝났습니다. 디지털 ID 구성에서 다시 로그인하세요.
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	서명 알고리즘과 SignerInfo 다이제스트 알고리즘의 해시가 다릅니다. 서명은 SignerInfo의 알고리즘으로 생성되었습니다.
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	서명에 검증되지 않은 타임스탬프({})가 있습니다. 타임스탬프 기관이 신뢰할 수 있는 인증서 목록에 없어 서명자가 주장하는 서명 시간을 대신 사용합니다.
 	The signature contents are not hexadecimal.	서명 내용이 16진수가 아닙니다.
@@ -2422,6 +2429,7 @@ signature pad	Type	유형
 	URL to submit to	제출할 URL
 	Use 72 DPI (one point per pixel)	72DPI 사용(픽셀당 1포인트)
 	Use a certificate	인증서 사용
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	클라우드 인증서 사용(ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	장치의 디지털 ID 사용(스마트 카드, USB 토큰 또는 클라우드 인증서)
 	Use a Digital ID from a file	파일의 디지털 ID 사용
 	Use custom DPI	사용자 지정 DPI 사용
@@ -2475,6 +2483,7 @@ certificate	Version	버전
 	Visible Rectangle	표시 사각형
 	Visual	시각적
 	Waiting for the system print dialog…	시스템 인쇄 대화 상자를 기다리는 중…
+	Waiting for your approval in the browser…	브라우저에서 승인을 기다리는 중…
 	watermark	워터마크
 calendar weekday	We	수
 	Weak	약함

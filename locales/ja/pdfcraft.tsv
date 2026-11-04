@@ -424,6 +424,7 @@
 	Choose a layout:	レイアウトを選択:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	PNG または JPEG 画像を選択してください（最大 4 MiB）。透明度は保持されます。
 	Choose a point, then the two endpoints of a reference line.	点を選択し、次に基準線の2つの端点を選択してください。
+	Choose a provider.	プロバイダーを選択してください。
 	Choose a stamp, then click on the page to place it.	スタンプを選択してから、ページをクリックして配置してください。
 	Choose a tool to start measuring.	ツールを選んで測定を開始します。
 	Choose a visible point on the model.	モデル上の見える点を選択してください。
@@ -1455,6 +1456,7 @@ key	Home	Home
 	Next view	次の表示
 	Night	ナイト
 	No actions	アクションなし
+	No certificate was found with this provider.	このプロバイダーに証明書が見つかりませんでした。
 	No changes allowed	変更を許可しない
 	No changes to save	保存する変更はありません
 	No check has run yet.	まだ確認していません。
@@ -1719,6 +1721,7 @@ animation effects	On	オン
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft はグラフィックプロセッサーを使わずに描画しているため、動作が遅くなることがあります。グラフィックドライバーを更新すると改善する場合があります。
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft はデバイスのメーカーがインストールするライブラリを探します。デバイスが見つからない場合のみ選択してください。
 	PdfCraft on GitHub	GitHub の PdfCraft
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft がプロバイダーのページを開きます。CPF、PIN、ワンタイムコードでサインインしてください。
 	PdfCraft web page	PdfCraft の Web 版
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft はオフラインで動作します。使用状況の送信やアカウント登録はありません。サービス提供元を追加しない限り、クラウド処理も行いません。
 	PdfCraft {v} is available.	PdfCraft {v} が利用できます。
@@ -1815,6 +1818,7 @@ animation effects	On	オン
 	Protect using password…	パスワードで保護…
 	Protect with password	パスワードで保護
 	Protected: the combined file won't keep its security settings	保護されています: 結合後のファイルにはセキュリティ設定が引き継がれません
+	Provider	プロバイダー
 	Public domain	パブリックドメイン
 	Public key	公開鍵
 	PushButton	プッシュボタン
@@ -2493,8 +2497,10 @@ document scrollbar width	Standard	標準
 	The PIN is incorrect.	PIN が正しくありません。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 トークンのデジタル ID の一覧を取得できませんでした：{e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	この印刷に使うプリンタードライバー独自の設定：給紙トレイ、用紙の種類、後処理など。
+	The provider's page didn't come back in time. Try again.	プロバイダーのページが時間内に戻りませんでした。もう一度お試しください。
 	The raw text was truncated to what fits.	テキストが収まる長さに切り詰められました。
 	The redaction does not fit page {page}; no pages were marked.	墨消しがページ {page} に収まらないため、ページはマークされませんでした。
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	リダイレクト URI は、ポート付きの http://127.0.0.1 または http://localhost である必要があります。
 	The release has ambiguous packages. Choose a package on the official release page.	このリリースには複数の候補パッケージがあります。公式リリースページから選んでください。
 	The release is not a published stable update. Try again later.	このリリースは公開済みの安定版アップデートではありません。後でもう一度お試しください。
 	The replacement file doesn't have that many pages.	置換元のファイルには指定した数のページがありません。
@@ -2505,6 +2511,7 @@ document scrollbar width	Standard	標準
 	The selected fields could not be found. Select them again.	選択したフィールドが見つかりません。もう一度選択してください。
 	The selected redaction is unavailable or invalid.	選択した墨消しは利用できないか、無効です。
 	The selected scale could not be read.	選択した縮尺を読み取れませんでした。
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	{provider} とのセッションが終了しました。「デジタル ID の設定」から再度サインインしてください。
 	The shared folder:	共有フォルダー:
 	The signature will be invisible.	署名は非表示になります。
 	the signing service is unreachable ({reason})	署名サービスに接続できません（{reason}）
@@ -2684,6 +2691,7 @@ signature pad	Type	入力
 	US survey feet	米国測量フィート
 	Use 72 DPI (one point per pixel)	72 DPI を使用（1 ピクセルあたり 1 ポイント）
 	Use a certificate	証明書を使用
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	クラウド証明書を使用 (ICP-Brasil: BirdID、VIDaaS、NeoID、SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	デバイスのデジタル ID を使用 (スマートカード、USB トークン、クラウド証明書)
 	Use a Digital ID from a file	ファイルのデジタル ID を使用
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	署名生成デバイスを使用（PKCS #11 モジュール：スマートカード、トークン、mSzafir 用 CloudSigner）
@@ -2747,6 +2755,7 @@ signature pad	Type	入力
 	Voice:	音声:
 	Volume:	音量:
 	Waiting for the system print dialog…	システムの印刷ダイアログを待っています…
+	Waiting for your approval in the browser…	ブラウザーでの承認を待っています…
 	Warning	Warning
 	watermark	透かし
 	Weak	弱い

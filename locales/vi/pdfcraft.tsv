@@ -400,6 +400,7 @@ certificate	Basic constraints	Ràng buộc cơ bản
 	Choose a folder…	Chọn một thư mục…
 	Choose a layout:	Chọn bố cục:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Chọn ảnh PNG hoặc JPEG (tối đa 4 MiB). Độ trong suốt được giữ nguyên.
+	Choose a provider.	Hãy chọn một nhà cung cấp.
 	Choose a stamp, then click on the page to place it.	Chọn một con dấu, sau đó bấm vào trang để đặt.
 	Choose an image	Chọn một hình ảnh
 	Choose images	Chọn hình ảnh
@@ -1351,6 +1352,7 @@ calendar weekday	Mo	T2
 	Next view	Chế độ xem tiếp theo
 	No actions	Không có hành động
 	no alternate text	không có văn bản thay thế
+	No certificate was found with this provider.	Không tìm thấy chứng thư nào ở nhà cung cấp này.
 	No changes allowed	Không cho phép thay đổi
 	No changes to save	Không có thay đổi để lưu
 	No check has run yet.	Chưa chạy lần kiểm tra nào.
@@ -1613,6 +1615,7 @@ animation effects	On	Bật
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft đang vẽ mà không có bộ xử lý đồ họa, nên có thể chậm. Cập nhật trình điều khiển đồ họa có thể giúp ích.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft tìm các thư viện mà nhà sản xuất thiết bị cài đặt. Chỉ chọn một thư viện nếu không tìm thấy thiết bị của bạn.
 	PdfCraft on GitHub	PdfCraft trên GitHub
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft mở trang của nhà cung cấp, nơi bạn đăng nhập bằng CPF, mã PIN và mã dùng một lần.
 	PdfCraft web page	Trang web PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft hoạt động ngoại tuyến. Không thu thập dữ liệu sử dụng, không cần tài khoản, và không xử lý đám mây trừ khi bạn thêm nhà cung cấp.
 	PdfCraft {v} is available.	PdfCraft {v} đã có sẵn.
@@ -1704,6 +1707,7 @@ animation effects	On	Bật
 	Protect using password…	Bảo vệ bằng mật khẩu…
 	Protect with password	Bảo vệ bằng mật khẩu
 	Protected: the combined file won't keep its security settings	Đã bảo vệ: tệp kết hợp sẽ không giữ cài đặt bảo mật của chúng
+	Provider	Nhà cung cấp
 	Public domain	Phạm vi công cộng
 	Public key	Khóa công khai
 certificate	Public key	Khóa công khai
@@ -2340,7 +2344,9 @@ calendar weekday	Th	T5
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Phông chữ văn bản PDF không thể vẽ “{c}” ({code}). Hãy chọn văn bản được hỗ trợ.
 	The PIN is incorrect.	Mã PIN không đúng.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Cài đặt riêng của trình điều khiển máy in cho lần in này: khay giấy, loại giấy, hoàn thiện và nhiều hơn nữa.
+	The provider's page didn't come back in time. Try again.	Trang của nhà cung cấp không phản hồi kịp. Hãy thử lại.
 	The redaction does not fit page {page}; no pages were marked.	Vùng che không vừa trang {page}; không trang nào được đánh dấu.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI chuyển hướng phải là http://127.0.0.1 hoặc http://localhost kèm cổng.
 	The release has ambiguous packages. Choose a package on the official release page.	Bản phát hành có nhiều gói có thể phù hợp. Hãy chọn một gói trên trang phát hành chính thức.
 	The release is not a published stable update. Try again later.	Bản phát hành này chưa phải là bản cập nhật ổn định đã được công bố. Hãy thử lại sau.
 	The replacement file doesn't have that many pages.	Tệp thay thế không có nhiều trang như vậy.
@@ -2353,6 +2359,7 @@ calendar weekday	Th	T5
 	The selected area has been copied ({w} × {h} pixels)	Đã sao chép vùng đã chọn ({w} × {h} điểm ảnh)
 	The selected fields could not be found. Select them again.	Không tìm thấy các trường đã chọn. Hãy chọn lại.
 	The selected redaction is unavailable or invalid.	Vùng che đã chọn không khả dụng hoặc không hợp lệ.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Phiên với {provider} đã kết thúc. Hãy đăng nhập lại từ Cấu hình ID kỹ thuật số.
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	Thuật toán chữ ký và thuật toán băm của SignerInfo chỉ định các hàm băm khác nhau; chữ ký được tạo bằng hàm băm của SignerInfo.
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	Chữ ký mang một dấu thời gian chưa được xác minh ({}): cơ quan cấp dấu thời gian không nằm trong danh sách chứng chỉ tin cậy của bạn, nên thời gian ký do người ký tuyên bố được dùng thay thế.
 	The signature contents are not hexadecimal.	Nội dung chữ ký không phải là thập lục phân.
@@ -2553,6 +2560,7 @@ signature pad	Type	Nhập chữ
 	US Letter	Thư Mỹ
 	Use 72 DPI (one point per pixel)	Dùng 72 DPI (một điểm cho mỗi điểm ảnh)
 	Use a certificate	Dùng chứng chỉ
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Dùng chứng thư trên đám mây (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Dùng ID kỹ thuật số từ thiết bị (thẻ thông minh, token USB hoặc chứng thư trên đám mây)
 	Use a Digital ID from a file	Dùng Digital ID từ một tệp
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Dùng thiết bị tạo chữ ký (mô-đun PKCS #11: thẻ thông minh, token, CloudSigner cho mSzafir)
@@ -2611,6 +2619,7 @@ certificate	Version	Phiên bản
 	Visual	Trực quan
 	Voice	Giọng đọc
 	Waiting for the system print dialog…	Đang chờ hộp thoại in của hệ thống…
+	Waiting for your approval in the browser…	Đang chờ bạn phê duyệt trong trình duyệt…
 	watermark	hình mờ
 calendar weekday	We	T4
 	Weak	Yếu

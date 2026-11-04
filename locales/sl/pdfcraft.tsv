@@ -400,6 +400,7 @@
 	Choose a folder on this computer to pin	Izberite mapo v tem računalniku, ki jo želite pripeti
 	Choose a layout:	Izberite postavitev:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Izberite sliko PNG ali JPEG (do 4 MiB). Prosojnost je ohranjena.
+	Choose a provider.	Izberite ponudnika.
 	Choose a stamp, then click on the page to place it.	Izberite žig, nato kliknite željeno lokacijo.
 	Choose an image	Izberite sliko
 	Choose font…	Izberi pisavo…
@@ -1346,6 +1347,7 @@ key	Home	Home
 	Next view	Naslednji pogled
 	Night	Noč
 	No actions	Ni dejanj
+	No certificate was found with this provider.	Pri tem ponudniku ni bilo najdenega potrdila.
 	No changes allowed	Spremembe niso dovoljene
 	No changes to save	Ni sprememb za shranjevanje
 	No check has run yet.	Preverjanje še ni bilo izvedeno.
@@ -1603,6 +1605,7 @@ animation effects	On	Vklopljeni
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft riše brez grafičnega procesorja, zato je lahko počasen. Pomaga lahko posodobitev grafičnega gonilnika.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft išče knjižnice, ki jih namestijo proizvajalci naprav. Izberite jo le, če vaše naprave ne najde.
 	PdfCraft on GitHub	PdfCraft na GitHubu
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft odpre stran ponudnika, kjer se prijavite s CPF, kodo PIN in enkratno kodo.
 	PdfCraft web page	Spletna stran PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft deluje brez povezave. Brez telemetrije, brez računa in brez obdelave v oblaku, razen če dodate ponudnika.
 	PdfCraft {v} is available.	Na voljo je PdfCraft {v}.
@@ -1694,6 +1697,7 @@ animation effects	On	Vklopljeni
 	Protect using password…	Zaščiti z geslom…
 	Protect with password	Zaščiti z geslom
 	Protected: the combined file won't keep its security settings	Zaščiteno: združena datoteka ne bo obdržala varnostnih nastavitev
+	Provider	Ponudnik
 	Public domain	Javna last
 	Public key	Javni ključ
 	PushButton	Potisni gumb
@@ -2330,8 +2334,10 @@ certificate	Subject	Imetnik
 	The PIN is incorrect.	PIN ni pravilen.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Digitalnih identitet iz žetonov PKCS #11 ni bilo mogoče prikazati: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Lastne nastavitve gonilnika tiskalnika za to tiskanje: pladenj za papir, vrsta papirja, dodelava in drugo.
+	The provider's page didn't come back in time. Try again.	Stran ponudnika se ni pravočasno vrnila. Poskusite znova.
 	The raw text was truncated to what fits.	Surovo besedilo je bilo skrajšano.
 	The redaction does not fit page {page}; no pages were marked.	Prekritje ne ustreza strani {page}; nobena stran ni bila označena.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI za preusmeritev mora biti http://127.0.0.1 ali http://localhost z vrati.
 	The release has ambiguous packages. Choose a package on the official release page.	Izdaja vsebuje več ustreznih paketov. Izberite paket na uradni strani izdaj.
 	The release is not a published stable update. Try again later.	Izdaja ni objavljena kot stabilna posodobitev. Poskusite znova pozneje.
 	The replacement file doesn't have that many pages.	Nadomestna datoteka nima toliko strani.
@@ -2341,6 +2347,7 @@ certificate	Subject	Imetnik
 	The selected area has been copied ({w} × {h} pixels)	Izbrano območje je kopirano ({w} × {h} slikovnih pik)
 	The selected fields could not be found. Select them again.	Izbranih polj ni bilo mogoče najti. Izberite jih znova.
 	The selected redaction is unavailable or invalid.	Izbrano prekritje ni na voljo ali ni veljavno.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Seja s ponudnikom {provider} je potekla. Znova se prijavite v razdelku Konfiguriraj digitalno identiteto.
 	The shared folder:	Skupna mapa:
 	The signature will be invisible.	Podpis bo nevidni.
 	the signing service is unreachable ({reason})	storitev za podpisovanje ni dosegljiva ({reason})
@@ -2505,6 +2512,7 @@ signature pad	Type	Vtipkaj
 	US Letter	Ameriški Letter
 	Use 72 DPI (one point per pixel)	Uporabi 72 DPI (ena točka na slikovno piko)
 	Use a certificate	Uporabi potrdilo
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Uporabi potrdilo v oblaku (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID …)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Uporabi digitalno identiteto iz naprave (pametna kartica, žeton USB ali potrdilo v oblaku)
 	Use a Digital ID from a file	Uporabi digitalno identiteto iz datoteke
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Uporabi napravo za ustvarjanje podpisa (modul PKCS #11: pametna kartica, žeton, CloudSigner za mSzafir)
@@ -2562,6 +2570,7 @@ signature pad	Type	Vtipkaj
 	Voice:	Glas:
 	Volume:	Glasnost:
 	Waiting for the system print dialog…	Čakanje na sistemsko pogovorno okno za tiskanje…
+	Waiting for your approval in the browser…	Čakanje na vašo odobritev v brskalniku …
 	watermark	vodni žig
 	Weak	Šibko
 	Welcome to PdfCraft	Dobrodošli v PdfCraftu

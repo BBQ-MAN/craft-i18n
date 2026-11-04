@@ -404,6 +404,7 @@
 	Choose a folder on this computer to pin	Wähle einen Ordner auf diesem Computer zum Anheften
 	Choose a layout:	Layout wählen:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Wähle ein PNG- oder JPEG-Bild (bis 4 MiB). Transparenz bleibt erhalten.
+	Choose a provider.	Wählen Sie einen Anbieter.
 	Choose a stamp, then click on the page to place it.	Wähle einen Stempel und klicke dann auf die Seite, um ihn zu platzieren.
 	Choose an image	Bild auswählen
 	Choose font…	Schrift auswählen…
@@ -1360,6 +1361,7 @@ key	Home	Pos1
 	Next view	Nächste Ansicht
 	Night	Nacht
 	No actions	Keine Aktionen
+	No certificate was found with this provider.	Bei diesem Anbieter wurde kein Zertifikat gefunden.
 	No changes allowed	Keine Änderungen erlaubt
 	No changes to save	Keine Änderungen zu speichern
 	No check has run yet.	Es wurde noch nicht gesucht.
@@ -1619,6 +1621,7 @@ animation effects	On	Ein
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft zeichnet ohne Grafikprozessor und kann daher langsam sein. Ein aktualisierter Grafiktreiber kann helfen.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft sucht nach den Bibliotheken, die Gerätehersteller installieren. Wählen Sie nur eine aus, wenn Ihr Gerät nicht gefunden wird.
 	PdfCraft on GitHub	PdfCraft auf GitHub
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft öffnet die Seite des Anbieters, auf der Sie sich mit CPF, PIN und Einmalcode anmelden.
 	PdfCraft web page	PdfCraft-Webseite
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft funktioniert offline. Keine Telemetrie, kein Konto und keine Cloud-Verarbeitung, solange du keinen Anbieter hinzufügst.
 	PdfCraft {v} is available.	PdfCraft {v} ist verfügbar.
@@ -1712,6 +1715,7 @@ animation effects	On	Ein
 	Protect using password…	Mit Passwort schützen…
 	Protect with password	Mit Passwort schützen
 	Protected: the combined file won't keep its security settings	Geschützt: Die kombinierte Datei behält die Sicherheitseinstellungen nicht bei
+	Provider	Anbieter
 	Public domain	Gemeinfrei
 	Public key	Öffentlicher Schlüssel
 	PushButton	Schaltfläche
@@ -2353,8 +2357,10 @@ certificate	Subject	Zertifikatsinhaber
 	The PIN is incorrect.	Die PIN ist falsch.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Die digitalen IDs auf den PKCS-#11-Token konnten nicht aufgelistet werden: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Die eigenen Einstellungen des Druckertreibers für diesen Druck: Papierfach, Papiersorte, Endverarbeitung und mehr.
+	The provider's page didn't come back in time. Try again.	Die Seite des Anbieters kam nicht rechtzeitig zurück. Versuchen Sie es erneut.
 	The raw text was truncated to what fits.	Der Rohtext wurde auf die passende Länge gekürzt.
 	The redaction does not fit page {page}; no pages were marked.	Die Schwärzung passt nicht auf Seite {page}; es wurden keine Seiten markiert.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Die Weiterleitungs-URI muss http://127.0.0.1 oder http://localhost mit einem Port sein.
 	The release has ambiguous packages. Choose a package on the official release page.	Für dieses Release gibt es mehrere mögliche Pakete. Wähle ein Paket auf der offiziellen Release-Seite.
 	The release is not a published stable update. Try again later.	Diese Veröffentlichung ist kein veröffentlichtes stabiles Update. Versuche es später erneut.
 	The replacement file doesn't have that many pages.	Die Ersatzdatei hat nicht so viele Seiten.
@@ -2364,6 +2370,7 @@ certificate	Subject	Zertifikatsinhaber
 	The selected area has been copied ({w} × {h} pixels)	Der ausgewählte Bereich wurde kopiert ({w} × {h} Pixel)
 	The selected fields could not be found. Select them again.	Die ausgewählten Felder wurden nicht gefunden. Wähle sie erneut aus.
 	The selected redaction is unavailable or invalid.	Die ausgewählte Schwärzung ist nicht verfügbar oder ungültig.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Die Sitzung mit {provider} ist beendet. Melden Sie sich unter „Digitale ID konfigurieren“ erneut an.
 	The shared folder:	Der gemeinsame Ordner:
 	The signature will be invisible.	Die Signatur wird unsichtbar sein.
 	the signing service is unreachable ({reason})	der Signaturdienst ist nicht erreichbar ({reason})
@@ -2528,6 +2535,7 @@ signature pad	Type	Tippen
 	US Letter	US-Letter
 	Use 72 DPI (one point per pixel)	72 DPI verwenden (ein Punkt pro Pixel)
 	Use a certificate	Zertifikat verwenden
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Cloud-Zertifikat verwenden (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID …)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Digitale ID von einem Gerät verwenden (Smartcard, USB-Token oder Cloud-Zertifikat)
 	Use a Digital ID from a file	Digitale ID aus einer Datei verwenden
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Signaturerstellungseinheit verwenden (PKCS #11-Modul: Smartcard, Token, CloudSigner für mSzafir)
@@ -2584,6 +2592,7 @@ signature pad	Type	Tippen
 	Voice:	Stimme:
 	Volume:	Lautstärke:
 	Waiting for the system print dialog…	Warten auf den Systemdruckdialog…
+	Waiting for your approval in the browser…	Warten auf Ihre Bestätigung im Browser …
 	watermark	Wasserzeichen
 	Weak	Schwach
 	Welcome to PdfCraft	Willkommen bei PdfCraft

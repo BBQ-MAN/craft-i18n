@@ -426,6 +426,7 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Choose a folder…	Pasirinkti aplanką…
 	Choose a layout:	Pasirinkite išdėstymą:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Pasirinkite PNG arba JPEG paveikslėlį (iki 4 MiB). Skaidrumas išsaugomas.
+	Choose a provider.	Pasirinkite teikėją.
 	Choose a stamp, then click on the page to place it.	Pasirinkite antspaudą, tada spustelėkite puslapį, kad jį įdėtumėte.
 	Choose an image	Pasirinkite paveikslėlį
 	Choose font…	Pasirinkti šriftą…
@@ -1434,6 +1435,7 @@ calendar weekday	Mo	Pr
 	Night	Naktis
 	No actions	Veiksmų nėra
 	no alternate text	nėra alternatyviojo teksto
+	No certificate was found with this provider.	Pas šį teikėją sertifikato nerasta.
 	No changes allowed	Pakeitimai neleidžiami
 	No changes to save	Nėra įrašytinų pakeitimų
 	No check has run yet.	Patikra dar nevykdyta.
@@ -1717,6 +1719,7 @@ animation effects	On	Įjungta
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	„PdfCraft“ atvaizduoja be grafikos procesoriaus, todėl gali veikti lėtai. Gali padėti grafikos tvarkyklės atnaujinimas.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft ieško bibliotekų, kurias įdiegia įrenginių gamintojai. Pasirinkite ją tik tada, jei jūsų įrenginys nerandamas.
 	PdfCraft on GitHub	„PdfCraft“ „GitHub“ puslapis
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	„PdfCraft“ atidaro teikėjo puslapį, kuriame prisijungiate su CPF, PIN kodu ir vienkartiniu kodu.
 	PdfCraft web page	„PdfCraft“ svetainė
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	„PdfCraft“ veikia neprisijungus. Nerenkami telemetrijos duomenys, nereikia paskyros ir nenaudojamos debesijos paslaugos, nebent pridėtumėte jų teikėją.
 	PdfCraft {v} is available.	Išleista „PdfCraft“ versija {v}.
@@ -1810,6 +1813,7 @@ animation effects	On	Įjungta
 	Protect using password…	Apsaugoti slaptažodžiu…
 	Protect with password	Apsaugoti slaptažodžiu
 	Protected: the combined file won't keep its security settings	Apsaugota: sujungtame faile saugos nuostatos neišliks
+	Provider	Teikėjas
 	Public domain	Viešoji sritis
 	Public key	Viešasis raktas
 certificate	Public key	Viešasis raktas
@@ -2509,8 +2513,10 @@ calendar weekday	Th	Kt
 	The PIN is incorrect.	PIN kodas neteisingas.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Nepavyko gauti „PKCS #11“ raktuose esančių skaitmeninių ID sąrašo: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Šio spausdinimo spausdintuvo tvarkyklės nuostatos: popieriaus dėklas, popieriaus tipas, apdaila ir kita.
+	The provider's page didn't come back in time. Try again.	Teikėjo puslapis laiku negrįžo. Bandykite dar kartą.
 	The raw text was truncated to what fits.	Pirminis tekstas sutrumpintas.
 	The redaction does not fit page {page}; no pages were marked.	Užtušavimas netelpa {page} puslapyje; puslapiai nepažymėti.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Peradresavimo URI turi būti http://127.0.0.1 arba http://localhost su prievadu.
 	The release has ambiguous packages. Choose a package on the official release page.	Šiame leidime yra kelios galimos paketų parinktys. Pasirinkite paketą oficialiame leidimų puslapyje.
 	The release is not a published stable update. Try again later.	Šis leidimas nėra paskelbtas stabilus naujinys. Bandykite vėliau.
 	The replacement file doesn't have that many pages.	Pakaitiniame faile nėra tiek puslapių.
@@ -2523,6 +2529,7 @@ calendar weekday	Th	Kt
 	The selected area has been copied ({w} × {h} pixels)	Pasirinkta sritis nukopijuota ({w} × {h} pikselių)
 	The selected fields could not be found. Select them again.	Pasirinktų laukų nerasta. Pasirinkite juos iš naujo.
 	The selected redaction is unavailable or invalid.	Pasirinktas užtušavimas nepasiekiamas arba netinkamas.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Seansas su {provider} baigėsi. Prisijunkite iš naujo skiltyje „Konfigūruoti skaitmeninį ID“.
 	The shared folder:	Bendras aplankas:
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	Parašo algoritmas ir „SignerInfo“ santraukos algoritmas nurodo skirtingas maišos funkcijas; pasirašyta naudojant „SignerInfo“ nurodytą funkciją.
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	Parašas turi nepatikrintą laiko žymą ({}): ją išdavusios įstaigos nėra patikimų sertifikatų sąraše, todėl naudojamas pasirašiusiojo nurodytas pasirašymo laikas.
@@ -2737,6 +2744,7 @@ signature pad	Type	Tekstu
 	US Letter	JAV Letter
 	Use 72 DPI (one point per pixel)	Naudoti 72 DPI (vienas taškas vienam pikseliui)
 	Use a certificate	Naudoti sertifikatą
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Naudoti debesijos sertifikatą („ICP-Brasil“: „BirdID“, „VIDaaS“, „NeoID“, „SafeID“…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Naudoti įrenginyje esantį skaitmeninį ID (lustinė kortelė, USB raktas arba debesijos sertifikatas)
 	Use a Digital ID from a file	Naudoti faile esantį skaitmeninį ID
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Naudoti parašo kūrimo įrenginį (PKCS #11 modulis: lustinė kortelė, žetonas, „CloudSigner“, skirtas „mSzafir“)
@@ -2799,6 +2807,7 @@ certificate	Version	Versija
 	Voice:	Balsas:
 	Volume:	Garsumas:
 	Waiting for the system print dialog…	Laukiama sistemos spausdinimo dialogo…
+	Waiting for your approval in the browser…	Laukiama jūsų patvirtinimo naršyklėje…
 	watermark	vandenženklis
 calendar weekday	We	Tr
 	Weak	Silpnas

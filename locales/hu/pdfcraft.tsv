@@ -404,6 +404,7 @@
 	Choose a folder on this computer to pin	Válassz egy mappát ezen a számítógépen a kitűzéshez
 	Choose a layout:	Válassz elrendezést:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Válassz PNG- vagy JPEG-képet (legfeljebb 4 MiB). Az átlátszóság megmarad.
+	Choose a provider.	Válasszon szolgáltatót.
 	Choose a stamp, then click on the page to place it.	Válassz bélyegzőt, majd kattints az oldalra az elhelyezéséhez.
 	Choose an image	Kép kiválasztása
 	Choose font…	Betűtípus választása…
@@ -1375,6 +1376,7 @@ key	Home	Home
 	Next view	Következő nézet
 	Night	Éjszaka
 	No actions	Nincs művelet
+	No certificate was found with this provider.	Ennél a szolgáltatónál nem található tanúsítvány.
 	No changes allowed	Semmilyen módosítás nem engedélyezett
 	No changes to save	Nincs mit menteni
 	No check has run yet.	Még nem futott ellenőrzés.
@@ -1633,6 +1635,7 @@ animation effects	On	Be
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	A PdfCraft grafikus processzor nélkül rajzol, ezért lassú lehet. A grafikus illesztőprogram frissítése segíthet.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	A PdfCraft megkeresi az eszközgyártók által telepített könyvtárakat. Csak akkor válasszon egyet, ha az eszköze nem található.
 	PdfCraft on GitHub	PdfCraft a GitHubon
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	A PdfCraft megnyitja a szolgáltató oldalát, ahol CPF-fel, PIN-kóddal és egyszer használatos kóddal jelentkezik be.
 	PdfCraft web page	A PdfCraft weblapja
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	A PdfCraft offline működik. Nincs telemetria, nincs fiók, és nincs felhőfeldolgozás, amíg nem adsz hozzá szolgáltatót.
 	PdfCraft {v} is available.	Elérhető a PdfCraft {v}.
@@ -1724,6 +1727,7 @@ animation effects	On	Be
 	Protect using password…	Jelszavas védelem…
 	Protect with password	Jelszavas védelem
 	Protected: the combined file won't keep its security settings	Védett: az egyesített fájl nem tartja meg a biztonsági beállításait
+	Provider	Szolgáltató
 	Public domain	Közkincs
 	Public key	Nyilvános kulcs
 	PushButton	Nyomógomb
@@ -2373,8 +2377,10 @@ action wizard	Start	Indítás
 	The PIN is incorrect.	A PIN-kód helytelen.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	A PKCS #11 tokenek digitális azonosítóit nem sikerült listázni: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	A nyomtató-illesztőprogram saját beállításai ehhez a nyomtatáshoz: papírtálca, papírtípus, utófeldolgozás és egyebek.
+	The provider's page didn't come back in time. Try again.	A szolgáltató oldala nem tért vissza időben. Próbálja újra.
 	The raw text was truncated to what fits.	A nyers szöveg csonkolva lett.
 	The redaction does not fit page {page}; no pages were marked.	A kitakarás nem fér el a(z) {page}. oldalon; nem lett oldal megjelölve.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	Az átirányítási URI csak http://127.0.0.1 vagy http://localhost lehet porttal.
 	The release has ambiguous packages. Choose a package on the official release page.	A kiadáshoz többféle csomag tartozik. Válassz egyet a hivatalos kiadási oldalon.
 	The release is not a published stable update. Try again later.	Ez a kiadás nem közzétett stabil frissítés. Próbáld újra később.
 	The replacement file doesn't have that many pages.	A cserefájlban nincs ennyi oldal.
@@ -2384,6 +2390,7 @@ action wizard	Start	Indítás
 	The selected area has been copied ({w} × {h} pixels)	A kijelölt terület a vágólapra került ({w} × {h} képpont)
 	The selected fields could not be found. Select them again.	A kijelölt mezők nem találhatók. Jelöld ki őket újra.
 	The selected redaction is unavailable or invalid.	A kijelölt kitakarás nem érhető el vagy érvénytelen.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	A(z) {provider} munkamenete véget ért. Jelentkezzen be újra a Digitális azonosító beállítása résznél.
 	The shared folder:	A közös mappa:
 	The signature will be invisible.	Az aláírás láthatatlan lesz.
 	the signing service is unreachable ({reason})	az aláírási szolgáltatás nem érhető el ({reason})
@@ -2550,6 +2557,7 @@ signature pad	Type	Gépelés
 	US Letter	Amerikai Letter
 	Use 72 DPI (one point per pixel)	72 DPI használata (egy pont képpontonként)
 	Use a certificate	Tanúsítvány használata
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Felhőalapú tanúsítvány használata (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Digitális azonosító használata eszközről (intelligens kártya, USB-token vagy felhőalapú tanúsítvány)
 	Use a Digital ID from a file	Digitális azonosító használata fájlból
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Aláírás-létrehozó eszköz használata (PKCS #11-modul: intelligens kártya, token, CloudSigner az mSzafirhoz)
@@ -2606,6 +2614,7 @@ signature pad	Type	Gépelés
 	Voice:	Hang:
 	Volume:	Hangerő:
 	Waiting for the system print dialog…	Várakozás a rendszer nyomtatási párbeszédablakára…
+	Waiting for your approval in the browser…	Várakozás a jóváhagyására a böngészőben…
 	Warning	Warning
 	watermark	vízjel
 	Weak	Gyenge

@@ -413,6 +413,7 @@
 	Choose a layout:	選擇佈局：
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	選擇 PNG 或 JPEG 圖像（最大 4 MiB）。透明度會保留。
 	Choose a point, then the two endpoints of a reference line.	先選擇一個點，再選擇參考線的兩個端點。
+	Choose a provider.	請選擇提供者。
 	Choose a stamp, then click on the page to place it.	選擇戳記，然後按一下頁面放置。
 	Choose a tool to start measuring.	選擇工具開始量測。
 	Choose a visible point on the model.	請選擇模型上的可見點。
@@ -1424,6 +1425,7 @@ key	Home	Home
 	Next view	下一個檢視
 	Night	夜間
 	No actions	無操作
+	No certificate was found with this provider.	在此提供者處找不到憑證。
 	No changes allowed	不允許任何更改
 	No changes to save	沒有要儲存的變更
 	No check has run yet.	尚未執行檢驗。
@@ -1684,6 +1686,7 @@ animation effects	On	開
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft 正在不使用圖形處理器的情況下繪製，因此可能較慢。更新顯示卡驅動程式可能會有幫助。
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft 會尋找裝置廠商安裝的程式庫。只有找不到您的裝置時才需要選擇。
 	PdfCraft on GitHub	GitHub 上的 PdfCraft
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft 會開啟提供者頁面，您在該頁面以 CPF、PIN 和一次性驗證碼登入。
 	PdfCraft web page	PdfCraft 網頁
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft 可離線使用，不收集遙測資料，也不需要帳號。只有在您新增服務供應商後，才會使用雲端處理。
 	PdfCraft {v} is available.	PdfCraft {v} 可用。
@@ -1781,6 +1784,7 @@ animation effects	On	開
 	Protect using password…	使用密碼保護…
 	Protect with password	使用密碼保護
 	Protected: the combined file won't keep its security settings	受保護：合併後的檔案不會保留其安全性設定
+	Provider	提供者
 	Public domain	公有領域
 	Public key	公鑰
 	PushButton	按鈕
@@ -2423,8 +2427,10 @@ document scrollbar width	Standard	標準
 	The PIN is incorrect.	PIN 不正確。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	無法列出 PKCS #11 權杖的數位 ID：{e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	此次列印的印表機驅動程式專屬設定：紙匣、紙張類型、裝訂整理等。
+	The provider's page didn't come back in time. Try again.	提供者頁面未及時返回。請再試一次。
 	The raw text was truncated to what fits.	原始文字已被截斷。
 	The redaction does not fit page {page}; no pages were marked.	密文標記不適合第 {page} 頁；未標記任何頁面。
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	重新導向 URI 必須是含連接埠的 http://127.0.0.1 或 http://localhost。
 	The release has ambiguous packages. Choose a package on the official release page.	此版本有多個相容套件。請在官方發行頁面選擇一個套件。
 	The release is not a published stable update. Try again later.	此版本不是已發布的穩定更新。請稍後再試。
 	The replacement file doesn't have that many pages.	替換檔案沒有那麼多頁面。
@@ -2435,6 +2441,7 @@ document scrollbar width	Standard	標準
 	The selected fields could not be found. Select them again.	找不到所選欄位。請重新選取。
 	The selected redaction is unavailable or invalid.	所選密文標記無法使用或無效。
 	The selected scale could not be read.	無法讀取所選比例。
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	與 {provider} 的工作階段已結束。請從「設定數位 ID」重新登入。
 	The shared folder:	共用資料夾：
 	The signature will be invisible.	簽名將不可見。
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	標準字型無法顯示「{c}」（{code}）。目前只能新增西歐字元作為文字。
@@ -2594,6 +2601,7 @@ document scrollbar width	Standard	標準
 	US survey feet	美國測量英呎
 	Use 72 DPI (one point per pixel)	使用 72 DPI（每個像素一點）
 	Use a certificate	使用憑證
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	使用雲端憑證（ICP-Brasil：BirdID、VIDaaS、NeoID、SafeID…）
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	使用裝置中的數位 ID（智慧卡、USB 權杖或雲端憑證）
 	Use a Digital ID from a file	使用檔案中的數位 ID
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	使用簽名建立裝置（PKCS #11 模組：智慧卡、權杖、mSzafir 的 CloudSigner）
@@ -2657,6 +2665,7 @@ document scrollbar width	Standard	標準
 	Voice:	語音：
 	Volume:	音量：
 	Waiting for the system print dialog…	正在等待系統列印對話方塊…
+	Waiting for your approval in the browser…	正在等候您在瀏覽器中核准…
 	watermark	浮水印
 	Weak	弱
 	Welcome to PdfCraft	歡迎使用 PdfCraft

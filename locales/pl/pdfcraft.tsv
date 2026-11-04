@@ -404,6 +404,7 @@ calendar date	August	sierpnia
 	Choose a folder on this computer to pin	Wybierz folder na tym komputerze do przypięcia
 	Choose a layout:	Wybierz układ:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Wybierz obraz PNG lub JPEG (do 4 MiB). Przezroczystość zostanie zachowana.
+	Choose a provider.	Wybierz dostawcę.
 	Choose a stamp, then click on the page to place it.	Wybierz stempel, a następnie kliknij stronę, aby go umieścić.
 	Choose an image	Wybierz obraz
 	Choose font…	Wybierz czcionkę…
@@ -1367,6 +1368,7 @@ calendar date	May	maja
 	Next view	Następny widok
 	Night	Noc
 	No actions	Brak akcji
+	No certificate was found with this provider.	U tego dostawcy nie znaleziono certyfikatu.
 	No changes allowed	Zmiany niedozwolone
 	No changes to save	Brak zmian do zapisania
 	No check has run yet.	Nie sprawdzono jeszcze aktualizacji.
@@ -1629,6 +1631,7 @@ animation effects	On	Włączone
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft renderuje bez procesora graficznego, więc może działać wolno. Aktualizacja sterownika graficznego może pomóc.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft szuka bibliotek instalowanych przez producentów urządzeń. Wybierz bibliotekę tylko wtedy, gdy urządzenie nie zostanie znalezione.
 	PdfCraft on GitHub	PdfCraft na GitHubie
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft otwiera stronę dostawcy, na której logujesz się numerem CPF, kodem PIN i kodem jednorazowym.
 	PdfCraft web page	Strona internetowa PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft działa offline. Bez telemetrii, konta i przetwarzania w chmurze, chyba że dodasz dostawcę.
 	PdfCraft {v} is available.	PdfCraft {v} jest dostępny.
@@ -1720,6 +1723,7 @@ animation effects	On	Włączone
 	Protect using password…	Chroń hasłem…
 	Protect with password	Chroń hasłem
 	Protected: the combined file won't keep its security settings	Chroniony: połączony plik nie zachowa jego ustawień zabezpieczeń
+	Provider	Dostawca
 	PRs	PR
 	Public domain	Domena publiczna
 	Public key	Klucz publiczny
@@ -2370,8 +2374,10 @@ certificate	Subject	Podmiot certyfikatu
 	The PIN is incorrect.	Kod PIN jest nieprawidłowy.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Nie można wyświetlić identyfikatorów cyfrowych z tokenów PKCS #11: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Ustawienia sterownika drukarki dla tego wydruku: podajnik, rodzaj papieru, wykańczanie i inne.
+	The provider's page didn't come back in time. Try again.	Strona dostawcy nie wróciła na czas. Spróbuj ponownie.
 	The raw text was truncated to what fits.	Tekst źródłowy został obcięty.
 	The redaction does not fit page {page}; no pages were marked.	Redakcja nie mieści się na stronie {page}; nie oznaczono żadnej strony.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI przekierowania musi być adresem http://127.0.0.1 lub http://localhost z portem.
 	The release has ambiguous packages. Choose a package on the official release page.	W tym wydaniu dostępne są niejednoznaczne pakiety. Wybierz pakiet na oficjalnej stronie wydań.
 	The release is not a published stable update. Try again later.	To wydanie nie jest opublikowaną stabilną aktualizacją. Spróbuj ponownie później.
 	The replacement file doesn't have that many pages.	Plik zastępczy nie ma tylu stron.
@@ -2382,6 +2388,7 @@ certificate	Subject	Podmiot certyfikatu
 	The selected area has been copied ({w} × {h} pixels)	Zaznaczony obszar został skopiowany ({w} × {h} pikseli)
 	The selected fields could not be found. Select them again.	Nie można znaleźć wybranych pól. Zaznacz je ponownie.
 	The selected redaction is unavailable or invalid.	Wybrana redakcja jest niedostępna lub nieprawidłowa.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Sesja z {provider} wygasła. Zaloguj się ponownie w sekcji Skonfiguruj identyfikator cyfrowy.
 	The shared folder:	Folder współdzielony:
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	Algorytm podpisu i algorytm skrótu w SignerInfo wskazują różne funkcje skrótu; podpis złożono funkcją wskazaną w SignerInfo.
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	Podpis zawiera niezweryfikowany znacznik czasu ({}): urzędu znacznika czasu nie ma na liście zaufanych certyfikatów, dlatego użyto czasu podpisania podanego przez podpisującego.
@@ -2583,6 +2590,7 @@ signature pad	Type	Wpisz
 	US Letter	Letter (USA)
 	Use 72 DPI (one point per pixel)	Użyj 72 DPI (jeden punkt na piksel)
 	Use a certificate	Użyj certyfikatu
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Użyj certyfikatu w chmurze (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Użyj identyfikatora cyfrowego z urządzenia (karta inteligentna, token USB lub certyfikat w chmurze)
 	Use a Digital ID from a file	Użyj identyfikatora cyfrowego z pliku
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Użyj urządzenia do składania podpisu (moduł PKCS#11: karta, token, CloudSigner dla mSzafir)
@@ -2640,6 +2648,7 @@ signature pad	Type	Wpisz
 	Voice:	Głos:
 	Volume:	Głośność:
 	Waiting for the system print dialog…	Oczekiwanie na systemowe okno drukowania…
+	Waiting for your approval in the browser…	Oczekiwanie na Twoją zgodę w przeglądarce…
 	watermark	znak wodny
 	Weak	Słabe
 	Welcome to PdfCraft	Witamy w PdfCraft

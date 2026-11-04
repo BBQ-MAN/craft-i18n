@@ -411,6 +411,7 @@
 	Choose a layout:	Выберите макет:
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Выберите изображение PNG или JPEG (до 4 МиБ). Прозрачность сохраняется.
 	Choose a point, then the two endpoints of a reference line.	Выберите точку, затем два конца опорной линии.
+	Choose a provider.	Выберите поставщика.
 	Choose a stamp, then click on the page to place it.	Выберите штамп, затем щёлкните на странице, чтобы разместить его.
 	Choose a visible point on the model.	Выберите видимую точку на модели.
 	Choose advanced unit formats first.	Сначала выберите расширенные форматы единиц.
@@ -1429,6 +1430,7 @@ key	Home	Home
 	Next view	Следующий вид
 	Night	Ночь
 	No actions	Нет действий
+	No certificate was found with this provider.	У этого поставщика не найдено сертификатов.
 	No changes allowed	Изменения не разрешены
 	No changes to save	Нет изменений для сохранения
 	No check has run yet.	Проверка ещё не выполнялась.
@@ -1685,6 +1687,7 @@ animation effects	On	Вкл
 	PdfCraft didn't shut down normally. These documents had changes that were autosaved:	PdfCraft завершился некорректно. В этих документах были изменения, сохранённые автоматически:
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft ищет библиотеки, которые устанавливают производители устройств. Выберите библиотеку, только если устройство не найдено.
 	PdfCraft on GitHub	PdfCraft на GitHub
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft открывает страницу поставщика, где вы входите с CPF, PIN-кодом и одноразовым кодом.
 	PdfCraft web page	Веб-страница PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft работает офлайн. Без телеметрии, аккаунтов и облачной обработки, если вы не добавите провайдера.
 	PdfCraft {v} is available.	Доступна PdfCraft {v}.
@@ -1779,6 +1782,7 @@ animation effects	On	Вкл
 	Protect using password…	Защитить паролем…
 	Protect with password	Защитить паролем
 	Protected: the combined file won't keep its security settings	Защищено: объединённый файл не сохранит настройки безопасности
+	Provider	Поставщик
 	Public domain	Общественное достояние
 	Public key	Открытый ключ
 	Purple	Фиолетовый
@@ -2447,8 +2451,10 @@ document scrollbar width	Standard	Стандартная
 	The PIN is incorrect.	Неверный PIN-код.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Не удалось перечислить цифровые идентификаторы токенов PKCS #11: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Собственные параметры драйвера принтера для этой печати: лоток, тип бумаги, финишная обработка и другое.
+	The provider's page didn't come back in time. Try again.	Страница поставщика не вернулась вовремя. Попробуйте ещё раз.
 	The raw text was truncated to what fits.	Исходный текст был обрезан.
 	The redaction does not fit page {page}; no pages were marked.	Область удаления не помещается на странице {page}; страницы не отмечены.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	URI перенаправления должен быть http://127.0.0.1 или http://localhost с портом.
 	The release has ambiguous packages. Choose a package on the official release page.	В выпуске найдено несколько подходящих пакетов. Выберите пакет на официальной странице выпусков.
 	The release is not a published stable update. Try again later.	Выпуск не является опубликованным стабильным обновлением. Попробуйте позже.
 	The replacement file doesn't have that many pages.	В заменяющем файле нет столько страниц.
@@ -2459,6 +2465,7 @@ document scrollbar width	Standard	Стандартная
 	The selected fields could not be found. Select them again.	Выбранные поля не найдены. Выберите их снова.
 	The selected redaction is unavailable or invalid.	Выбранная область удаления недоступна или недействительна.
 	The selected scale could not be read.	Не удалось прочитать выбранный масштаб.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	Сеанс с {provider} завершён. Войдите снова в разделе «Настроить цифровой идентификатор».
 	The shared folder:	Общая папка:
 	The signature will be invisible.	Подпись будет невидимой.
 	the signing service is unreachable ({reason})	служба подписи недоступна ({reason})
@@ -2633,6 +2640,7 @@ document scrollbar width	Standard	Стандартная
 	US Letter	Американский Letter
 	Use 72 DPI (one point per pixel)	Использовать 72 DPI (одна точка на пиксель)
 	Use a certificate	Использовать сертификат
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Использовать облачный сертификат (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Использовать цифровой идентификатор с устройства (смарт-карта, USB-токен или облачный сертификат)
 	Use a Digital ID from a file	Использовать цифровой идентификатор из файла
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Использовать средство создания подписи (модуль PKCS #11: смарт-карта, токен, CloudSigner для mSzafir)
@@ -2696,6 +2704,7 @@ document scrollbar width	Standard	Стандартная
 	Voice:	Голос:
 	Volume:	Громкость:
 	Waiting for the system print dialog…	Ожидание системного диалога печати…
+	Waiting for your approval in the browser…	Ожидание вашего подтверждения в браузере…
 	Warning	Warning
 	Watermark	Водяной знак
 	watermark	водяной знак

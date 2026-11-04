@@ -441,6 +441,7 @@ certificate	Basic constraints	Contraintes de base
 	Choose a layout:	Choisissez une disposition :
 	Choose a PNG or JPEG image (up to 4 MiB). Transparency is preserved.	Choisissez une image PNG ou JPEG (jusqu’à 4 Mio). La transparence est conservée.
 	Choose a point, then the two endpoints of a reference line.	Choisissez un point, puis les deux extrémités d’une ligne de référence.
+	Choose a provider.	Choisissez un fournisseur.
 	Choose a stamp, then click on the page to place it.	Choisissez un tampon, puis cliquez sur la page pour le placer.
 	Choose a visible point on the model.	Choisissez un point visible sur le modèle.
 	Choose advanced unit formats first.	Choisissez d’abord les formats d’unités avancés.
@@ -1511,6 +1512,7 @@ calendar weekday	Mo	Lu
 	Night	Nuit
 	No actions	Aucune action
 	no alternate text	pas de texte de remplacement
+	No certificate was found with this provider.	Aucun certificat n'a été trouvé chez ce fournisseur.
 	No changes allowed	Aucune modification autorisée
 	No changes to save	Aucune modification à enregistrer
 	No check has run yet.	Aucune vérification n'a encore été faite.
@@ -1804,6 +1806,7 @@ animation effects	On	Activés
 	PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.	PdfCraft dessine sans processeur graphique et peut donc être lent. Mettre à jour le pilote graphique peut aider.
 	PdfCraft looks for the libraries device vendors install. Choose one only if your device isn't found.	PdfCraft recherche les bibliothèques installées par les fabricants de périphériques. N'en choisissez une que si votre périphérique n'est pas trouvé.
 	PdfCraft on GitHub	PdfCraft sur GitHub
+	PdfCraft opens the provider's page, where you sign in with your CPF, PIN and one-time code.	PdfCraft ouvre la page du fournisseur, où vous vous connectez avec votre CPF, votre PIN et un code à usage unique.
 	PdfCraft web page	Page web de PdfCraft
 	PdfCraft works offline. No telemetry, no account, and no cloud processing unless you add a provider.	PdfCraft fonctionne hors ligne. Pas de télémétrie, pas de compte, et aucun traitement dans le cloud sauf si vous ajoutez un fournisseur.
 	PdfCraft {v} is available.	PdfCraft {v} est disponible.
@@ -1903,6 +1906,7 @@ animation effects	On	Activés
 	Protect using password…	Protéger par mot de passe…
 	Protect with password	Protéger par mot de passe
 	Protected: the combined file won't keep its security settings	Protégé : le fichier combiné ne conservera pas ses paramètres de sécurité
+	Provider	Fournisseur
 	Public domain	Domaine public
 	Public key	Clé publique
 certificate	Public key	Clé publique
@@ -2634,8 +2638,10 @@ calendar weekday	Th	Je
 	The PIN is incorrect.	Le code PIN est incorrect.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Impossible de lister les identités numériques des jetons PKCS #11 : {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Les réglages propres au pilote d'imprimante pour cette impression : bac, type de papier, finition, etc.
+	The provider's page didn't come back in time. Try again.	La page du fournisseur n'est pas revenue à temps. Réessayez.
 	The raw text was truncated to what fits.	Le texte brut a été tronqué.
 	The redaction does not fit page {page}; no pages were marked.	Le caviardage ne tient pas sur la page {page} ; aucune page n’a été marquée.
+	The redirect URI must be http://127.0.0.1 or http://localhost with a port.	L'URI de redirection doit être http://127.0.0.1 ou http://localhost avec un port.
 	The release has ambiguous packages. Choose a package on the official release page.	Les paquets de cette version sont ambigus. Choisissez-en un sur la page officielle des versions.
 	The release is not a published stable update. Try again later.	Cette version n’est pas une mise à jour stable publiée. Réessayez plus tard.
 	The replacement file doesn't have that many pages.	Le fichier de remplacement n'a pas autant de pages.
@@ -2649,6 +2655,7 @@ calendar weekday	Th	Je
 	The selected fields could not be found. Select them again.	Les champs sélectionnés sont introuvables. Sélectionnez-les de nouveau.
 	The selected redaction is unavailable or invalid.	Le caviardage sélectionné est indisponible ou non valide.
 	The selected scale could not be read.	Impossible de lire l’échelle sélectionnée.
+	The session with {provider} has ended. Sign in again from Configure a Digital ID.	La session avec {provider} est terminée. Reconnectez-vous depuis Configurer un ID numérique.
 	The shared folder:	Le dossier partagé :
 	The signature algorithm and the SignerInfo's digest algorithm name different hashes; the signature was made with the SignerInfo's.	L'algorithme de signature et l'algorithme d'empreinte du SignerInfo désignent des hachages différents ; la signature a été faite avec celui du SignerInfo.
 	The signature carries an unverified timestamp ({}): the timestamp authority is not in your list of trusted certificates, so the signing time claimed by the signer is used instead.	La signature comporte un horodatage non vérifié ({}) : l'autorité d'horodatage ne figure pas dans votre liste de certificats approuvés ; c'est donc l'heure de signature déclarée par le signataire qui est utilisée.
@@ -2868,6 +2875,7 @@ signature pad	Type	Saisir
 	US Letter	Lettre US
 	Use 72 DPI (one point per pixel)	Utiliser 72 PPP (un point par pixel)
 	Use a certificate	Utiliser un certificat
+	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Utiliser un certificat dans le cloud (ICP-Brasil : BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Utiliser un ID numérique d'un périphérique (carte à puce, jeton USB ou certificat dans le cloud)
 	Use a Digital ID from a file	Utiliser un ID numérique provenant d'un fichier
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Utiliser un dispositif de création de signature (module PKCS #11 : carte à puce, jeton, CloudSigner pour mSzafir)
@@ -2935,6 +2943,7 @@ certificate	Version	Version
 	Voice:	Voix :
 	Volume:	Volume :
 	Waiting for the system print dialog…	En attente de la boîte de dialogue d'impression du système…
+	Waiting for your approval in the browser…	En attente de votre approbation dans le navigateur…
 	watermark	filigrane
 calendar weekday	We	Me
 	Weak	Faible
