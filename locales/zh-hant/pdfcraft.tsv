@@ -274,6 +274,7 @@
 	Auto-rotate pages	自動旋轉頁面
 	Auto-size text to fit redaction region	自動調整文字大小以適應遮蔽內容區域
 	Automatically tag PDF	自動標記 PDF
+	Available version: {v}	可用版本：{v}
 	average	平均值
 	Azimuth	方位角
 	Back	返回
@@ -721,11 +722,14 @@ key	Delete	Delete
 	Done adding text	完成新增文字
 	Double-click	滑鼠按兩下
 	Double-click also finishes a perimeter or area.	按兩下也可完成周長或面積量測。
+	Download package…	下載套件…
+	Download size: {size}	下載大小：{size}
 	Download with Ollama	用 Ollama 下載
 	Downloaded {name}	已下載{name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	已下載 {n} 個 PDF
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web 端附件下載將於 M3.10 到來（{n} 位元組已就緒）
 	Downloading… {pct}% — {note}	下載中… {pct}% — {note}
+	Downloads open in your browser. Installation is manual; nothing is installed automatically.	下載會在瀏覽器中開啟。安裝需手動進行；不會自動安裝任何內容。
 	Downsample to	降取樣至
 	DPI sets the printed page size without resampling the image.	DPI 決定列印時的頁面大小，不會重新取樣圖片。
 	Drag a field to move it, or select it and press {up} or {down}.	拖曳欄位即可移動，或選取後按 {up} 或 {down}。
@@ -968,6 +972,7 @@ scroll speed	Fast	快
 	Fixed what could be fixed; 1 problem remains	已修復能修復的問題；還剩 1 個問題
 	Fixed what could be fixed; {n} problems remain	已修復能修復的問題；還剩{n}個問題
 	Flatbed	平台
+	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	此安裝由 Flatpak 管理。請在系統軟體管理員中檢查更新，或執行 flatpak update。
 	Flatten comments	平面化註解
 	Flatten Fill & Sign when saving	儲存時將填寫與簽署內容平面化
 	Flatten form fields	平面化表單欄位
@@ -1108,7 +1113,9 @@ key	Home	Home
 	Inserting, deleting, and rotating pages	插入、刪除和旋轉頁面
 	Inset	嵌入
 	Inspector	檢查器
+	Installation type is unknown or this is a development build. Choose a package on the official release page.	安裝類型不明，或這是開發版本。請在官方發行頁面選擇套件。
 	Installed fonts…	已安裝的字型…
+	Installed version: {v}	已安裝版本：{v}
 	Intended usage	預期用途
 	Interface font	介面字型
 	Interface size	介面大小
@@ -1349,6 +1356,7 @@ key	Home	Home
 	No colour	無顏色
 	No comments match.	沒有相符的註解。
 	No comments yet.	尚無註解。
+	No compatible package is available for this installation.	此安裝沒有相容的套件。
 	No contributor data was built into this copy.	此版本未內建貢獻者資料。
 	No differences in the text.	文字沒有差異。
 	No digital IDs yet.	尚無數位 ID。
@@ -1382,6 +1390,7 @@ key	Home	Home
 	No problems found: the document conforms to {level}.	未發現問題：文件符合 {level}。
 	No raw file yet	尚未選擇原始檔案
 	No reference yet	尚未選擇參考檔案
+	No release notes were provided.	沒有提供發行說明。
 	No saved measurements in this view.	此視圖中沒有已儲存的測量。
 	No scanner found	找不到掃描器
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	找不到掃描器。請檢查掃描器是否已開機並連線，或輸入其網路位址。
@@ -1509,6 +1518,7 @@ animation effects	On	開
 	Output intent: {list}	輸出意圖：{list}
 	Output preview	輸出預覽
 	Owner password (no restrictions apply)	所有者密碼（無限制）
+	Package: {name}	套件：{name}
 	Page background	頁面背景
 	Page Content	頁面內容
 	Page display	頁面顯示
@@ -1735,8 +1745,10 @@ animation effects	On	開
 	Registration residual	配準殘差
 	Regularity	規則性
 	Rejected	已拒絕
+	Release notes	發行說明
 	Reliable character encoding is provided	提供了可靠的字元編碼
 	Reload documents when their files change on disk	檔案在磁碟上變更時重新載入對應的文件
+	Remind Me Later	稍後提醒我
 	Remove "{name}" from this list? The file itself is not deleted.	從此清單中移除「{name}」？檔案本身不會被刪除。
 	Remove all links	移除所有連結
 	Remove background	移除背景
@@ -2244,6 +2256,8 @@ key	Space	空格
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	無法列出 PKCS #11 權杖的數位 ID：{e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	此次列印的印表機驅動程式專屬設定：紙匣、紙張類型、裝訂整理等。
 	The raw text was truncated to what fits.	原始文字已被截斷。
+	The release has ambiguous packages. Choose a package on the official release page.	此版本有多個相容套件。請在官方發行頁面選擇一個套件。
+	The release is not a published stable update. Try again later.	此版本不是已發布的穩定更新。請稍後再試。
 	The replacement file doesn't have that many pages.	替換檔案沒有那麼多頁面。
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	列太矮：請加高區域，或減少列數或列間距
 	The same password is tried on each file.	將對每個檔案嘗試同一密碼。
@@ -2311,6 +2325,8 @@ key	Space	空格
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	此表單還包含 XFA 資料，PdfCraft 暫不讀取。您可以填寫欄位，但 Acrobat 可能顯示 XFA 值。
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	此表單的指令碼已關閉，因為其中一個指令碼執行時間過長。重新開啟文件即可再次執行。
 	This form's submission format or field selection is not supported yet.	尚未支援此表單的提交格式或欄位選擇。
+	This installation is owned by a Debian package. Use your system software manager to update PdfCraft.	此安裝由 Debian 套件管理。請使用系統軟體管理員更新 PdfCraft。
+	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	此安裝由 RPM 套件管理。請使用系統軟體管理員更新 PdfCraft。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	這是動態 XFA 表單，PdfCraft 暫無法顯示。您看到的是檔案的佔位頁面。
 	This machine: {ram} GB RAM, {disk} GB free	這台機器：{ram} GB 記憶體、{disk} GB 可用
 	This measurement needs at least {n} points.	此測量至少需要 {n} 個點。
@@ -2413,6 +2429,7 @@ key	Space	空格
 	Use system setting	使用系統設定
 	Use system title bar	使用系統標題列
 	Use WKT definition	使用 WKT 定義
+	Use your system software manager to update PdfCraft.	請使用系統軟體管理員更新 PdfCraft。
 	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	在 PDF 未指定版面配置或縮放時使用。連續捲動不會在頁面之間自動對齊。
 	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	開啟 PDF 時使用。若啟動時或透過控制通道明確指定了模式，則本次工作階段以該模式為準。
 	User Interface Options	使用者介面選項
@@ -2441,6 +2458,7 @@ key	Space	空格
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	影片、聲音和富媒體必須標記才能被播報。請標記多媒體註解。
 	View less	顯示較少
 	View more	顯示更多
+	View release page…	查看發行頁面…
 	View revision {n}	檢視修訂版本{n}
 	View signed version	檢視已簽名版本
 	Viewing	檢視
@@ -2515,6 +2533,7 @@ key	Space	空格
 	{label} (1 issue)	{label}（1 個問題）
 	{label} ({n} issues)	{label}（{n} 個問題）
 	{label} failed: {e}	{label}失敗：{e}
+	{mib} MiB ({bytes} bytes)	{mib} MiB（{bytes} 位元組）
 	{month} {day}, {y}	{month}{day}日，{y}年
 	{month} {y}	{y} 年 {month}
 	{msg} to {dir}	{msg}到{dir}

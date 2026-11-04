@@ -272,6 +272,7 @@
 	Auto-rotate pages	自动旋转页面
 	Auto-size text to fit redaction region	自动调整文本大小以适应密文区域
 	Automatically tag PDF	自动标记 PDF
+	Available version: {v}	可用版本：{v}
 	average	平均值
 	Azimuth	方位角
 	Back	返回
@@ -718,11 +719,14 @@ key	Delete	Delete
 	Don't show again	不再显示
 	Done adding text	完成添加文本
 	Double-click also finishes a perimeter or area.	双击也可完成周长或面积测量。
+	Download package…	下载软件包…
+	Download size: {size}	下载大小：{size}
 	Download with Ollama	用 Ollama 下载
 	Downloaded {name}	已下载{name}
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	已下载 {n} 个 PDF
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web 端附件下载将于 M3.10 到来（{n} 字节已就绪）
 	Downloading… {pct}% — {note}	下载中… {pct}% — {note}
+	Downloads open in your browser. Installation is manual; nothing is installed automatically.	下载会在浏览器中打开。安装需手动进行；不会自动安装任何内容。
 	Downsample to	降采样至
 	DPI sets the printed page size without resampling the image.	DPI 用于设置打印页面尺寸，不会对图像重新采样。
 	Drag a field to move it, or select it and press {up} or {down}.	拖动字段以移动它，或选中它后按 {up} 或 {down}。
@@ -968,6 +972,7 @@ scroll speed	Fast	快
 	Fixed what could be fixed; 1 problem remains	已修复能修复的问题；还剩 1 个问题
 	Fixed what could be fixed; {n} problems remain	已修复能修复的问题；还剩{n}个问题
 	Flatbed	平板
+	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	此安装由 Flatpak 管理。请在系统软件管理器中检查更新，或运行 flatpak update。
 	Flatten comments	拼合注释
 	Flatten Fill & Sign when saving	保存时拼合填写与签名
 	Flatten form fields	拼合表单域
@@ -1108,7 +1113,9 @@ key	Home	Home
 	Inspector	检查器
 	Install a plugin	安装插件
 	Install a plugin…	安装插件…
+	Installation type is unknown or this is a development build. Choose a package on the official release page.	安装类型未知，或这是开发版本。请在官方发布页面选择软件包。
 	Installed fonts…	已安装字体…
+	Installed version: {v}	已安装版本：{v}
 	Intended usage	预期用途
 	Interface font	界面字体
 	Interface size	界面大小
@@ -1356,6 +1363,7 @@ key	Home	Home
 	No commands available	没有可用的命令
 	No comments match.	没有匹配的注释。
 	No comments yet.	尚无注释。
+	No compatible package is available for this installation.	此安装没有兼容的软件包。
 	No contributor data was built into this copy.	此版本未包含贡献者数据。
 	No differences in the text.	文本没有差异。
 	No digital IDs yet.	尚无数字 ID。
@@ -1392,6 +1400,7 @@ key	Home	Home
 	No problems found: the document conforms to {level}.	未发现问题：文档符合 {level}。
 	No raw file yet	尚未选择原始文件
 	No reference yet	尚未选择参考文件
+	No release notes were provided.	未提供发行说明。
 	No saved measurements in this view.	此视图中没有已保存的测量。
 	No scanner found	未找到扫描仪
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	未找到扫描仪。请检查扫描仪是否已开机并连接，或输入其网络地址。
@@ -1518,6 +1527,7 @@ animation effects	On	开
 	Output intent: {list}	输出意图：{list}
 	Output preview	输出预览
 	Owner password (no restrictions apply)	所有者密码（无限制）
+	Package: {name}	软件包：{name}
 	Page background	页面背景
 	Page Content	页面内容
 	Page display	页面显示
@@ -1745,8 +1755,10 @@ animation effects	On	开
 	Registration residual	配准残差
 	Regularity	规则性
 	Rejected	已拒绝
+	Release notes	发行说明
 	Reliable character encoding is provided	提供了可靠的字符编码
 	Reload documents when their files change on disk	文件在磁盘上更改时重新加载对应的文档
+	Remind Me Later	稍后提醒我
 	Remove "{name}" from this list? The file itself is not deleted.	从此列表中移除“{name}”？文件本身不会被删除。
 	Remove all links	删除所有链接
 	Remove background	删除背景
@@ -2260,6 +2272,8 @@ key	Space	空格
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	无法列出 PKCS #11 令牌的数字 ID：{e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	此次打印的打印机驱动程序专属设置：纸盒、纸张类型、装订整理等。
 	The raw text was truncated to what fits.	原始文本已被截断。
+	The release has ambiguous packages. Choose a package on the official release page.	此版本有多个兼容的软件包。请在官方发布页面选择一个软件包。
+	The release is not a published stable update. Try again later.	此版本不是已发布的稳定更新。请稍后重试。
 	The replacement file doesn't have that many pages.	替换文件没有那么多页面。
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	行太矮：请增加区域高度，或减少行数或行间距
 	The same password is tried on each file.	将对每个文件尝试同一密码。
@@ -2328,6 +2342,8 @@ key	Space	空格
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	此表单还包含 XFA 数据，PdfCraft 暂不读取。您可以填写字段，但 Acrobat 可能显示 XFA 值。
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	此表单的脚本已关闭，因为其中一个脚本运行时间过长。重新打开文档即可再次运行。
 	This form's submission format or field selection is not supported yet.	尚不支持此表单的提交格式或字段选择。
+	This installation is owned by a Debian package. Use your system software manager to update PdfCraft.	此安装由 Debian 软件包管理。请使用系统软件管理器更新 PdfCraft。
+	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	此安装由 RPM 软件包管理。请使用系统软件管理器更新 PdfCraft。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	这是动态 XFA 表单，PdfCraft 暂无法显示。您看到的是文件的占位页面。
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	这是令牌 PIN 锁定前的最后一次尝试。此处输入错误的 PIN 可能会使其永久锁定。
 	This machine: {ram} GB RAM, {disk} GB free	这台机器：{ram} GB 内存、{disk} GB 可用
@@ -2435,6 +2451,7 @@ key	Space	空格
 	Use system setting	跟随系统设置
 	Use system title bar	使用系统标题栏
 	Use WKT definition	使用 WKT 定义
+	Use your system software manager to update PdfCraft.	请使用系统软件管理器更新 PdfCraft。
 	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	PDF 未指定布局或缩放时使用。连续滚动时页面不会逐页吸附。
 	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	用于打开 PDF 时。如果启动参数或控制通道明确指定了模式，则本次会话优先使用该模式。
 	User Interface Options	用户界面选项
@@ -2463,6 +2480,7 @@ key	Space	空格
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	视频、声音和富媒体必须标记才能被播报。请标记多媒体注释。
 	View less	收起
 	View more	查看更多
+	View release page…	查看发布页面…
 	View revision {n}	查看修订版本{n}
 	View signed version	查看已签名版本
 	Viewing	查看
@@ -2540,6 +2558,7 @@ key	Space	空格
 	{label} (1 issue)	{label}（1 个问题）
 	{label} ({n} issues)	{label}（{n} 个问题）
 	{label} failed: {e}	{label}失败：{e}
+	{mib} MiB ({bytes} bytes)	{mib} MiB（{bytes} 字节）
 	{month} {day}, {y}	{month}{day}日，{y}年
 	{month} {y}	{y} 年 {month}
 	{msg} to {dir}	{msg}到{dir}

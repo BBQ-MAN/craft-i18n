@@ -266,6 +266,7 @@
 	Auto-rotate pages	Oldalak automatikus forgatása
 	Auto-size text to fit redaction region	A szöveg automatikus méretezése a kitakarási területhez
 	Automatically tag PDF	PDF automatikus címkézése
+	Available version: {v}	Elérhető verzió: {v}
 	average	átlag
 	Back	Vissza
 	Back side only	Csak a hátlap
@@ -685,11 +686,14 @@ key	Delete	Delete
 	Don't save	Nincs mentés
 	Don't show again	Ne jelenjen meg újra
 	Done adding text	Szöveg hozzáadásának befejezése
+	Download package…	Csomag letöltése…
+	Download size: {size}	Letöltés mérete: {size}
 	Download with Ollama	Letöltés Ollamával
 	Downloaded {name}	{name} letöltve
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	{n} PDF letöltve|{n} PDF letöltve
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	A mellékletek letöltése a weben az M3.10-zel érkezik ({n} bájt kész)
 	Downloading… {pct}% — {note}	Letöltés… {pct}% — {note}
+	Downloads open in your browser. Installation is manual; nothing is installed automatically.	A letöltések a böngészőben nyílnak meg. A telepítés kézi; semmi sem települ automatikusan.
 	Downsample to	Feloldás csökkentése erre
 	DPI sets the printed page size without resampling the image.	A DPI a nyomtatott oldalméretet állítja be, a kép újramintázása nélkül.
 	Drag a field to move it, or select it and press {up} or {down}.	Húzz el egy mezőt az áthelyezéshez, vagy jelöld ki, és nyomd meg ezt: {up} vagy {down}.
@@ -919,6 +923,7 @@ scroll speed	Fast	Gyors
 	Fixed what could be fixed; 1 problem remains	Minden javíthatót javítottunk; 1 probléma maradt
 	Fixed what could be fixed; {n} problems remain	Minden javíthatót javítottunk; {n} probléma maradt
 	Flatbed	Síkágyas
+	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	A telepítést a Flatpak kezeli. Keress frissítéseket a rendszer szoftverkezelőjében vagy a flatpak update paranccsal.
 	Flatten	Beégetés
 	Flatten comments	Megjegyzések beégetése
 	Flatten Fill & Sign when saving	Kitöltés és aláírás beégetése mentéskor
@@ -1058,7 +1063,9 @@ key	Home	Home
 	Inspector	Tulajdonságvizsgáló
 	Install a plugin	Bővítmény telepítése
 	Install a plugin…	Bővítmény telepítése…
+	Installation type is unknown or this is a development build. Choose a package on the official release page.	A telepítés típusa ismeretlen, vagy ez egy fejlesztői build. Válassz csomagot a hivatalos kiadási oldalon.
 	Installed fonts…	Telepített betűtípusok…
+	Installed version: {v}	Telepített verzió: {v}
 	Intended usage	Tervezett használat
 	Interface font	Felület betűtípusa
 	Interface size	Felület mérete
@@ -1289,6 +1296,7 @@ key	Home	Home
 	No commands available	Nincs elérhető parancs
 	No comments match.	Nincs illeszkedő megjegyzés.
 	No comments yet.	Még nincs megjegyzés.
+	No compatible package is available for this installation.	Nem érhető el kompatibilis csomag ehhez a telepítéshez.
 	No contributor data was built into this copy.	Ebben a példányban nincsenek beépített közreműködői adatok.
 	No differences in the text.	Nincs különbség a szövegben.
 	No digital IDs yet.	Még nincs digitális azonosító.
@@ -1324,6 +1332,7 @@ key	Home	Home
 	No problems found: the document conforms to {level}.	Nem találtunk problémát: a dokumentum megfelel ennek: {level}.
 	No raw file yet	Még nincs nyers fájl
 	No reference yet	Még nincs referencia
+	No release notes were provided.	Nem érkeztek kiadási megjegyzések.
 	No scanner found	Nem található lapolvasó
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	Nem található lapolvasó. Ellenőrizze, hogy a lapolvasó be van-e kapcsolva és csatlakoztatva van-e, vagy adja meg a hálózati címét.
 	No security	Nincs védelem
@@ -1446,6 +1455,7 @@ animation effects	On	Be
 	Output preview	Kimenet előnézete
 	Oval	Ellipszis
 	Owner password (no restrictions apply)	Tulajdonosi jelszó (nincs korlátozás)
+	Package: {name}	Csomag: {name}
 	Page background	Oldal háttere
 	Page Content	Oldaltartalom
 	Page display	Oldalmegjelenítés
@@ -1658,8 +1668,10 @@ animation effects	On	Be
 	Refresh plugins	Bővítmények frissítése
 	Regularity	Szabályosság
 	Rejected	Elutasítva
+	Release notes	Kiadási megjegyzések
 	Reliable character encoding is provided	Megbízható karakterkódolás van megadva
 	Reload documents when their files change on disk	Dokumentumok újratöltése, ha a fájljuk megváltozik a lemezen
+	Remind Me Later	Emlékeztess később
 	Remove "{name}" from this list? The file itself is not deleted.	Eltávolítja a(z) „{name}” elemet erről a listáról? Maga a fájl nem törlődik.
 	Remove all links	Összes hivatkozás eltávolítása
 	Remove background	Háttér eltávolítása
@@ -1732,6 +1744,7 @@ animation effects	On	Be
 	Restyle raw document	Nyers dokumentum újraformázása
 	Restyle text	Szöveg újraformázása
 	Retain existing	Meglévő megtartása
+	Retry	Újra
 	Reveal in File Explorer	Megjelenítés a fájlkezelőben
 	Reverse closed arrow	Fordított zárt nyíl
 	Reverse open arrow	Fordított nyitott nyíl
@@ -2161,6 +2174,8 @@ action wizard	Start	Indítás
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	A PKCS #11 tokenek digitális azonosítóit nem sikerült listázni: {e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	A nyomtató-illesztőprogram saját beállításai ehhez a nyomtatáshoz: papírtálca, papírtípus, utófeldolgozás és egyebek.
 	The raw text was truncated to what fits.	A nyers szöveg csonkolva lett.
+	The release has ambiguous packages. Choose a package on the official release page.	A kiadáshoz többféle csomag tartozik. Válassz egyet a hivatalos kiadási oldalon.
+	The release is not a published stable update. Try again later.	Ez a kiadás nem közzétett stabil frissítés. Próbáld újra később.
 	The replacement file doesn't have that many pages.	A cserefájlban nincs ennyi oldal.
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	a sorok túl alacsonyak: növeld a terület magasságát, vagy használj kevesebb sort vagy kisebb sorközt
 	The same password is tried on each file.	Ugyanezt a jelszót próbáljuk meg minden fájlon.
@@ -2228,6 +2243,8 @@ action wizard	Start	Indítás
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	Ez az űrlap XFA-adatokat is tartalmaz, amelyeket a PdfCraft még nem olvas. Kitöltheted a mezőit, de az Acrobat helyettük az XFA-értékeket mutathatja.
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	Az űrlap szkriptjei ki vannak kapcsolva, mert az egyik túl sokáig futott. Nyisd meg újra a dokumentumot, hogy ismét fussanak.
 	This form's submission format or field selection is not supported yet.	Az űrlap beküldési formátuma vagy mezőválasztása még nem támogatott.
+	This installation is owned by a Debian package. Use your system software manager to update PdfCraft.	Ezt a telepítést egy Debian-csomag kezeli. A PdfCraft frissítéséhez használd a rendszer szoftverkezelőjét.
+	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	Ezt a telepítést egy RPM-csomag kezeli. A PdfCraft frissítéséhez használd a rendszer szoftverkezelőjét.
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	Ez egy dinamikus XFA-űrlap, amelyet a PdfCraft még nem tud megjeleníteni. Amit látsz, a fájl helyőrző oldala.
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	Ez az utolsó próbálkozás a token PIN-kódjának zárolása előtt. Egy hibás PIN itt véglegesen zárolhatja.
 	This machine: {ram} GB RAM, {disk} GB free	Ez a gép: {ram} GB RAM, {disk} GB szabad
@@ -2323,6 +2340,7 @@ signature pad	Type	Gépelés
 	Use print production	Nyomdai előkészítés használata
 	Use system setting	Rendszerbeállítás használata
 	Use system title bar	Rendszer címsorának használata
+	Use your system software manager to update PdfCraft.	A PdfCraft frissítéséhez használd a rendszer szoftverkezelőjét.
 	Use {what}	{what} használata
 	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	Akkor érvényes, ha a PDF nem kér elrendezést vagy nagyítást. A folyamatos görgetés soha nem ugrik oldalak közé.
 	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	PDF-ek megnyitásakor érvényes. A kifejezetten választott indítási vagy vezérlőmód a munkamenetre felülírja.
@@ -2347,6 +2365,7 @@ signature pad	Type	Gépelés
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	A videót, a hangot és a rich médiát címkézni kell, hogy bemondják őket. Címkézd a multimédia-széljegyzeteket.
 	View less	Kevesebb megjelenítése
 	View more	Több megjelenítése
+	View release page…	Kiadási oldal megtekintése…
 	View revision {n}	{n}. változat megtekintése
 	View signed version	Aláírt változat megtekintése
 	Viewing	Megtekintés
@@ -2422,6 +2441,7 @@ signature pad	Type	Gépelés
 	{label} (1 issue)	{label} (1 probléma)
 	{label} ({n} issues)	{label} ({n} probléma)
 	{label} failed: {e}	{label} nem sikerült: {e}
+	{mib} MiB ({bytes} bytes)	{mib} MiB ({bytes} bájt)
 	{month} {day}, {y}	{y}. {month} {day}.
 	{month} {y}	{y}. {month}
 	{msg} to {dir}	{msg} ide: {dir}

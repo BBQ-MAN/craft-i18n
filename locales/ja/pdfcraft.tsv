@@ -279,6 +279,7 @@
 	Auto-rotate pages	ページを自動回転
 	Auto-size text to fit redaction region	墨消し領域に合わせて文字サイズを自動調整
 	Automatically tag PDF	PDF に自動でタグを付ける
+	Available version: {v}	利用可能なバージョン: {v}
 	average	平均
 	Azimuth	方位角
 	Back	戻る
@@ -734,11 +735,14 @@ key	Delete	Delete
 	Don't show again	今後表示しない
 	Done adding text	テキストの追加を完了
 	Double-click also finishes a perimeter or area.	ダブルクリックでも周長や面積を確定できます。
+	Download package…	パッケージをダウンロード…
+	Download size: {size}	ダウンロードサイズ: {size}
 	Download with Ollama	Ollama でダウンロード
 	Downloaded {name}	{name} をダウンロードしました
 @plural	Downloaded {n} PDF|Downloaded {n} PDFs	{n} 個の PDF をダウンロードしました
 	Downloading attachments on the web arrives with M3.10 ({n} bytes ready)	Web 版の添付ファイルのダウンロードは M3.10 で対応予定です（{n} バイト準備済み）
 	Downloading… {pct}% — {note}	ダウンロード中… {pct}% — {note}
+	Downloads open in your browser. Installation is manual; nothing is installed automatically.	ダウンロードはブラウザーで開きます。インストールは手動で行います。自動ではインストールされません。
 	Downsample to	ダウンサンプル:
 	DPI sets the printed page size without resampling the image.	DPI で印刷時のページサイズが決まります。画像は再サンプリングされません。
 	Drag a field to move it, or select it and press {up} or {down}.	フィールドをドラッグして移動するか、選択して {up} または {down} を押します。
@@ -980,6 +984,7 @@ scroll speed	Fast	速い
 	Fixed what could be fixed; 1 problem remains	修正可能な項目を修正しました。問題が 1 件残っています
 	Fixed what could be fixed; {n} problems remain	修正可能な項目を修正しました。問題が {n} 件残っています
 	Flatbed	フラットベッド
+	Flatpak manages this installation. Check for updates in your system software manager or with flatpak update.	このインストールはFlatpakが管理しています。システムのソフトウェア管理ツールまたは flatpak update で更新を確認してください。
 	Flatten comments	コメントを統合
 	Flatten Fill & Sign when saving	保存時に入力と署名を統合する
 	Flatten form fields	フォームフィールドを統合
@@ -1121,7 +1126,9 @@ key	Home	Home
 	Inspector	インスペクター
 	Install a plugin	プラグインをインストール
 	Install a plugin…	プラグインをインストール…
+	Installation type is unknown or this is a development build. Choose a package on the official release page.	インストール形式が不明か、開発版です。公式リリースページからパッケージを選んでください。
 	Installed fonts…	インストール済みフォント…
+	Installed version: {v}	インストール済みのバージョン: {v}
 	Intended usage	使用目的
 	Interface font	インターフェースのフォント
 	Interface size	表示サイズ
@@ -1368,6 +1375,7 @@ key	Home	Home
 	No commands available	利用できるコマンドがありません
 	No comments match.	一致する注釈はありません。
 	No comments yet.	注釈はまだありません。
+	No compatible package is available for this installation.	このインストールに対応するパッケージはありません。
 	No contributor data was built into this copy.	このビルドには貢献者のデータが組み込まれていません。
 	No differences in the text.	テキストに差分はありません。
 	No digital IDs yet.	デジタル ID はまだありません。
@@ -1404,6 +1412,7 @@ key	Home	Home
 	No problems found: the document conforms to {level}.	問題は見つかりませんでした。文書は {level} に準拠しています。
 	No raw file yet	まだ原文ファイルがありません
 	No reference yet	まだ参照がありません
+	No release notes were provided.	リリースノートはありません。
 	No saved measurements in this view.	このビューに保存済みの測定はありません。
 	No scanner found	スキャナーが見つかりません
 	No scanners were found. Check that the scanner is on and connected, or enter its network address.	スキャナーが見つかりません。電源が入って接続されているか確認するか、ネットワークアドレスを入力してください。
@@ -1530,6 +1539,7 @@ animation effects	On	オン
 	Output intent: {list}	出力インテント: {list}
 	Output preview	出力プレビュー
 	Owner password (no restrictions apply)	所有者パスワード（制限なし）
+	Package: {name}	パッケージ: {name}
 	Page background	ページの背景
 	Page Content	ページの内容
 	Page display	ページ表示
@@ -1756,8 +1766,10 @@ animation effects	On	オン
 	Registration residual	位置合わせの残差
 	Regularity	規則性
 	Rejected	却下
+	Release notes	リリースノート
 	Reliable character encoding is provided	信頼できる文字エンコーディングが提供されています
 	Reload documents when their files change on disk	ディスク上のファイルが変更されたら文書を再読み込みする
+	Remind Me Later	後で通知
 	Remove "{name}" from this list? The file itself is not deleted.	「{name}」をこの一覧から削除しますか？ファイル自体は削除されません。
 	Remove all links	すべてのリンクを削除
 	Remove background	背景を削除
@@ -2282,6 +2294,8 @@ key	Space	スペース
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 トークンのデジタル ID の一覧を取得できませんでした：{e}
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	この印刷に使うプリンタードライバー独自の設定：給紙トレイ、用紙の種類、後処理など。
 	The raw text was truncated to what fits.	テキストが収まる長さに切り詰められました。
+	The release has ambiguous packages. Choose a package on the official release page.	このリリースには複数の候補パッケージがあります。公式リリースページから選んでください。
+	The release is not a published stable update. Try again later.	このリリースは公開済みの安定版アップデートではありません。後でもう一度お試しください。
 	The replacement file doesn't have that many pages.	置換元のファイルには指定した数のページがありません。
 	the rows are too short: make the area taller, or use fewer rows or less row spacing	行の高さが足りません: 範囲を高くするか、行数または行の間隔を減らしてください
 	The same password is tried on each file.	同じパスワードを各ファイルに試します。
@@ -2351,6 +2365,8 @@ key	Space	スペース
 	This form also contains XFA data, which PdfCraft doesn't read yet. You can fill its fields, but Acrobat may show the XFA values instead.	このフォームには PdfCraft がまだ読み取れない XFA データも含まれます。フィールドには入力できますが、Acrobat は代わりに XFA の値を表示する場合があります。
 	This form's scripts are turned off because one ran too long. Reopen the document to run them again.	このフォームのスクリプトは、実行に時間がかかりすぎたものがあったため無効になっています。もう一度実行するには、文書を再度開いてください。
 	This form's submission format or field selection is not supported yet.	このフォームの送信形式またはフィールドの選択にはまだ対応していません。
+	This installation is owned by a Debian package. Use your system software manager to update PdfCraft.	このインストールはDebianパッケージが管理しています。システムのソフトウェア管理ツールでPdfCraftを更新してください。
+	This installation is owned by an RPM package. Use your system software manager to update PdfCraft.	このインストールはRPMパッケージが管理しています。システムのソフトウェア管理ツールでPdfCraftを更新してください。
 	This is a dynamic XFA form, which PdfCraft can't display yet. What you see is the file's placeholder page.	この文書は動的 XFA フォームで、PdfCraft はまだ表示できません。現在はファイルの代替ページを表示しています。
 	This is the last try before the token's PIN locks. A wrong PIN here may lock it permanently.	これはトークンの PIN がロックされる前の最後の試行です。ここで PIN を誤るとロックが解除できなくなる場合があります。
 	This machine: {ram} GB RAM, {disk} GB free	このマシン: RAM {ram} GB、空き {disk} GB
@@ -2460,6 +2476,7 @@ signature pad	Type	入力
 	Use system setting	システム設定を使用
 	Use system title bar	システムのタイトルバーを使う
 	Use WKT definition	WKT 定義を使用
+	Use your system software manager to update PdfCraft.	システムのソフトウェア管理ツールでPdfCraftを更新してください。
 	Use {what}	{what}を使用
 	Used when a PDF doesn't ask for a layout or zoom. Continuous scrolling never snaps between pages.	PDF にレイアウトやズームの指定がない場合に使用されます。連続スクロールでは、ページの境目にスナップすることはありません。
 	Used when opening PDFs. An explicit launch or control mode takes precedence for the session.	PDF を開くときに使用されます。起動モードや制御モードを明示的に指定した場合は、そのセッションではそちらが優先されます。
@@ -2488,6 +2505,7 @@ signature pad	Type	入力
 	Video, sound and rich media must be tagged to be announced. Tag the multimedia annotations.	動画、音声、リッチメディアを読み上げるにはタグが必要です。マルチメディア注釈にタグを付けてください。
 	View less	表示を減らす
 	View more	さらに表示
+	View release page…	リリースページを表示…
 	View revision {n}	リビジョン {n} を表示
 	View signed version	署名済みのバージョンを表示
 	Viewing	表示
@@ -2567,6 +2585,7 @@ signature pad	Type	入力
 	{label} (1 issue)	{label}（問題 1 件）
 	{label} ({n} issues)	{label}（問題 {n} 件）
 	{label} failed: {e}	操作「{label}」に失敗しました: {e}
+	{mib} MiB ({bytes} bytes)	{mib} MiB（{bytes} バイト）
 	{month} {day}, {y}	{y}年{month}{day}日
 	{month} {y}	{y}年{month}
 	{msg} to {dir}	{dir} に{msg}
