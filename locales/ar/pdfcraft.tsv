@@ -285,6 +285,7 @@ calendar date	April	أبريل
 	Ask before a document opens in Full Screen mode	السؤال قبل فتح المستند في وضع ملء الشاشة
 	Ask in any language	اسأل بأي لغة
 	Ask whether to recognize the current page or all pages when editing a scan.	السؤال عمّا إذا كان ينبغي التعرّف على الصفحة الحالية أو جميع الصفحات عند تحرير مستند ممسوح ضوئيًا.
+	Asking {server}…	جارٍ سؤال {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	يسأل GitHub عن أحدث إصدار. لا يُنزَّل أو يُثبَّت شيء تلقائيًا.
 	Assistant	المساعد
 	Associated with content	مرتبط بمحتوى
@@ -379,6 +380,8 @@ certificate	Basic constraints	القيود الأساسية
 	Cancel reverse sides	إلغاء الوجه الخلفي
 	Cancelled	ملغى
 	Cancelling…	جارٍ الإلغاء…
+	Card driver (PKCS #11)	برنامج تشغيل البطاقة (PKCS #11)
+	Card PIN	رمز PIN للبطاقة
 	Case-sensitive	مطابقة حالة الأحرف
 	CCITT Group 4	CCITT المجموعة 4
 	Center Footer Text	نص التذييل الأوسط
@@ -1259,6 +1262,7 @@ key	Home	Home
 	In new window	في نافذة جديدة
 	In streams that use LZW encoding, use Flate instead	في التدفقات التي تستخدم ترميز LZW، استخدام Flate بدلاً منه
 	In this file	في هذا الملف
+	Include revocation information when signing (LTV)	تضمين معلومات الإلغاء عند التوقيع (LTV)
 	Includes unsaved changes	يتضمن تغييرات غير محفوظة
 	Incompatible	غير متوافق
 	Incorrect password. Try again.	كلمة المرور غير صحيحة. حاول مجددًا.
@@ -1632,6 +1636,7 @@ calendar weekday	Mo	إثنين
 	No security	بلا أمان
 	No sheets	لا أوراق
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	لم يُعثر على توقيع داخل الإطار. حرّك الإطار فوق التوقيع أو ارفع حساسية الحبر.
+	No signing certificate was found on a card. Is the card in the reader?	لم يُعثر على شهادة توقيع في أي بطاقة. هل البطاقة في القارئ؟
 	No signing certificate was found on this device. Is it connected?	لم يُعثر على شهادة توقيع في هذا الجهاز. هل هو متصل؟
 	No size estimate: {e}	لا يوجد تقدير للحجم: {e}
 	No status has been set.	لم تُعيَّن أي حالة.
@@ -2493,6 +2498,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	توقيعات أُضيفت بعد هذا التوقيع ويشمله محتواها الموقّع: {names}.
 	Signed and all signatures are valid.	موقَّع وكل التوقيعات صالحة.
 	Signed and saved to {path}	تم التوقيع والحفظ في {path}
+	Signed and saved to {path}, without some revocation information: {problems}	تم التوقيع والحفظ في {path} دون بعض معلومات الإلغاء: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	وقّعه {signer} في {time}؛ المحتوى لا يطابق ما تم توقيعه؛ لم يُتحقق من ثقة الموقِّع.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	وقّعه {signer} في {time}؛ المحتوى يطابق ما تم توقيعه؛ لم يُتحقق من ثقة الموقِّع.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	وقّعه {signer}؛ المحتوى لا يطابق ما تم توقيعه؛ لم يُتحقق من ثقة الموقِّع.
@@ -2502,8 +2508,10 @@ key	Shift	Shift
 	Signers	الموقِّعون
 	Signing	التوقيع
 	Signing service  ·  	خدمة التوقيع  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	يتصل التوقيع عندئذٍ بالشبكة: يتلقى خادم الختم الزمني تجزئة للتوقيع، وتُسأل جهات إصدار الشهادات عمّا إذا كانت الشهادات ملغاة. مع الخيارين معًا تكون التواقيع PAdES B-LTA.
 	Signing time	وقت التوقيع
 	Signing time is from the clock on the signer's computer.	وقت التوقيع من ساعة حاسوب الموقّع.
+	Signing was cancelled; nothing was saved.	أُلغي التوقيع؛ لم يُحفظ شيء.
 	Signing…	جارٍ التوقيع…
 	Signing… Confirm the signature on your other device.	جارٍ التوقيع… أكّد التوقيع على جهازك الآخر.
 	Simplified field notation:	صيغة الحقول المبسطة:
@@ -2520,6 +2528,7 @@ scroll speed	Slow	بطيئة
 	Smaller pages	صفحات أصغر
 	Smaller text	نص أصغر
 	Smaller thumbnails	تصغير الصور المصغرة
+	Smart card  ·  	بطاقة ذكية  ·  
 	Snap to drawing	الانجذاب إلى الرسم
 	Snap to points and lines (Alt skips it)	الالتصاق بالنقاط والخطوط (Alt يتجاوزه)
 	Snapping	الانجذاب
@@ -2664,6 +2673,7 @@ calendar weekday	Th	خميس
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	سيُرسَل مفتاح API إلى هذا العنوان دون تشفير. استخدم https:// ما لم يكن الخادم على شبكة تثق بها.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	اللوحة تمسح صفحة واحدة كل مرة. امسح وجهاً أمامياً، اقلبه ثم الخلفي.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	يحتوي ترتيب الحساب على {n} من الإدخالات التي لا تحسب شيئًا. «إصلاح الترتيب» يزيلها.|يحتوي ترتيب الحساب على إدخال واحد ({n}) لا يحسب شيئًا. «إصلاح الترتيب» يزيله.|يحتوي ترتيب الحساب على إدخالين ({n}) لا يحسبان شيئًا. «إصلاح الترتيب» يزيلهما.|يحتوي ترتيب الحساب على {n} إدخالات لا تحسب شيئًا. «إصلاح الترتيب» يزيلها.|يحتوي ترتيب الحساب على {n} إدخالًا لا يحسب شيئًا. «إصلاح الترتيب» يزيلها.|يحتوي ترتيب الحساب على {n} من الإدخالات التي لا تحسب شيئًا. «إصلاح الترتيب» يزيلها.
+	the certificate authorities	جهات إصدار الشهادات
 	the certificate expired on {date}	انتهت صلاحية الشهادة في {date}
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	شهادة {} لا تسمح بهذا العدد من شهادات CA تحتها (طول المسار)، لذا لا تُستخدم للضمان عن {}.
 	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	شهادة {} ليست شهادة CA يجوز لها إصدار الشهادات، لذا لا تُستخدم للضمان عن {}.
@@ -2704,6 +2714,7 @@ calendar weekday	Th	خميس
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	يُفتح المستند دون كلمة مرور؛ كلمة المرور هذه لازمة لتغيير القيود. تُطبَّق عند الحفظ.
 	The document was changed in another window. Check your text, then apply it again.	تم تغيير المستند في نافذة أخرى. راجع نصك ثم طبّقه مرة أخرى.
 	The document was closed before it could be saved.	أُغلق المستند قبل أن يمكن حفظه.
+	The document wasn't signed: {e}	لم يُوقَّع المستند: {e}
 	The document will no longer be certified.	لن يعود المستند مصدّقًا.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	تُظهر معلومات الإلغاء المدمجة في المستند أن شهادة الموقّع لم تُلغَ.
 	The document's security settings don't allow copying text and images	إعدادات أمان المستند لا تسمح بنسخ النصوص والصور
@@ -2762,6 +2773,7 @@ calendar weekday	Th	خميس
 	The password must have at least 6 characters.	يجب أن تحوي كلمة المرور 6 محارف على الأقل.
 	The passwords do not match.	كلمتا المرور غير متطابقتين.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	لا تستطيع خطوط نص PDF عرض «{c}» ({code}). اختر نصًا مدعومًا.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	يذهب رمز PIN إلى البطاقة فقط؛ ولا يحتفظ به PdfCraft.
 	The PIN is incorrect.	رمز PIN غير صحيح.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	تعذّر سرد المعرّفات الرقمية على رموز PKCS #11: {e}
 	The preview could not be shown.	تعذّر إظهار المعاينة.
@@ -2837,6 +2849,7 @@ calendar weekday	Th	خميس
 	the signing service rejected the PIN	رفضت خدمة التوقيع رمز PIN
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	رفضت خدمة التوقيع رمز PIN أو رمز OTP (ربما انتهت صلاحية رمز OTP)
 	the signing service rejected the user name or password	رفضت خدمة التوقيع اسم المستخدم أو كلمة المرور
+	The smart card's digital IDs couldn't be listed: {e}	تعذّر سرد المعرّفات الرقمية للبطاقة الذكية: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	الخطوط القياسية لا تستطيع رسم «{c}» ({code}). حاليًا يمكن إضافة محارف أوروبا الغربية فقط كنص.
 	The standard it must meet and where the file goes	المعيار الذي يجب تلبيته وإلى أين يذهب الملف
 	The text is the same	النص متطابق
@@ -2954,6 +2967,8 @@ calendar weekday	Th	خميس
 	Tile scale:	مقياس التجانب:
 	Timed responses	الاستجابات المؤقتة
 	Timestamp	ختم زمني
+	Timestamp server	خادم الختم الزمني
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	تحتاج الأختام الزمنية ومعلومات الإلغاء إلى تطبيق سطح المكتب. أوقفها من التفضيلات ▸ التواقيع للتوقيع هنا.
 	to	إلى
 	To change locked fields, also set Locked to No.	لتغيير الحقول المقفلة، اضبط أيضًا «مقفل» على «لا».
 	to {n}	إلى {n}
@@ -3039,6 +3054,7 @@ signature pad	Type	كتابة
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	استخدام معرّف رقمي من جهاز (بطاقة ذكية أو مفتاح USB أو شهادة سحابية)
 	Use a Digital ID from a file	استخدام معرّف رقمي من ملف
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	استخدام جهاز إنشاء التوقيع (وحدة PKCS #11: بطاقة ذكية، رمز مميز، CloudSigner لـ mSzafir)
+	Use a smart card or token	استخدام بطاقة ذكية أو رمز أمان
 	Use basic detection	استخدام الاكتشاف الأساسي
 	Use custom DPI	استخدام DPI مخصص
 	Use default font	استخدام الخط الافتراضي

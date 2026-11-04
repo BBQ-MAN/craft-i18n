@@ -276,6 +276,7 @@
 	Ask before a document opens in Full Screen mode	Vprašaj, preden se dokument odpre v celozaslonskem načinu
 	Ask in any language	Vprašajte v katerem koli jeziku
 	Ask whether to recognize the current page or all pages when editing a scan.	Pri urejanju optično prebranega dokumenta vprašaj, ali prepoznati trenutno stran ali vse strani.
+	Asking {server}…	Poizvedba pri {server} …
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Vpraša GitHub za najnovejšo izdajo. Ničesar se ne prenese ali namesti samodejno.
 	Assistant	Pomočnik
 	Associated with content	Povezano z vsebino
@@ -368,6 +369,8 @@
 	Cancel reverse sides	Prekliči hrbtne strani
 	Cancelled	Preklicano
 	Cancelling…	Preklicevanje…
+	Card driver (PKCS #11)	Gonilnik kartice (PKCS #11)
+	Card PIN	PIN kartice
 	Case-sensitive	Razlikuj velike in male črke
 	CCITT Group 4	CCITT skupina 4
 	Center Footer Text	Besedilo noge na sredini
@@ -1204,6 +1207,7 @@ key	Home	Home
 	In new window	V novem oknu
 	In streams that use LZW encoding, use Flate instead	V tokovih s kodiranjem LZW uporabi Flate
 	In this file	V tej datoteki
+	Include revocation information when signing (LTV)	Ob podpisovanju vključi podatke o preklicu (LTV)
 	Includes unsaved changes	Vključuje neshranjene spremembe
 	Incompatible	Nezdružljivo
 	Incorrect password. Try again.	Napačno geslo. Poskusite znova.
@@ -1556,6 +1560,7 @@ key	Home	Home
 	No security	Brez zaščite
 	No sheets	Ni listov
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	V okvirju ni bilo najdenega podpisa. Premaknite okvir nad podpis ali povečajte občutljivost za črnilo.
+	No signing certificate was found on a card. Is the card in the reader?	Na kartici ni bilo najdenega potrdila za podpisovanje. Je kartica v čitalniku?
 	No signing certificate was found on this device. Is it connected?	V tej napravi ni bilo najdeno potrdilo za podpisovanje. Ali je priključena?
 	No size estimate: {e}	Ni ocene velikosti: {e}
 	No status has been set.	Stanje ni nastavljeno.
@@ -2372,6 +2377,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	Podpisi, dodani po tem podpisu, katerih podpisana vsebina ga vključuje: {names}.
 	Signed and all signatures are valid.	Podpisano in vsi podpisi so veljavni.
 	Signed and saved to {path}	Podpisano in shranjeno v {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Podpisano in shranjeno v {path} brez nekaterih podatkov o preklicu: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Podpisano: {signer} {time}; vsebina se ne ujema s podpisanim; zaupanje podpisniku ni bilo preverjeno.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Podpisano: {signer} {time}; vsebina se ujema s podpisanim; zaupanje podpisniku ni bilo preverjeno.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Podpisano: {signer}; vsebina se ne ujema s podpisanim; zaupanje podpisniku ni bilo preverjeno.
@@ -2381,7 +2387,9 @@ key	Shift	Shift
 	Signers	Podpisniki
 	Signing	Podpisovanje
 	Signing service  ·  	Storitev za podpisovanje  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Podpisovanje nato uporablja omrežje: strežnik časovnih žigov prejme zgoščeno vrednost podpisa, overitelje pa vpraša, ali so potrdila preklicana. Z obema možnostma so podpisi PAdES B-LTA.
 	Signing time	Čas podpisa
+	Signing was cancelled; nothing was saved.	Podpisovanje je preklicano; nič ni shranjeno.
 	Signing…	Podpisovanje…
 	Signing… Confirm the signature on your other device.	Podpisovanje… Potrdite podpis v svoji drugi napravi.
 	Simplified field notation:	Poenostavljen zapis polj:
@@ -2398,6 +2406,7 @@ scroll speed	Slow	Počasi
 	Smaller pages	Manjše strani
 	Smaller text	Manjše besedilo
 	Smaller thumbnails	Manjše sličice
+	Smart card  ·  	Pametna kartica  ·  
 	Snap to drawing	Pripni na risbo
 	Snap to points and lines (Alt skips it)	Pripni na točke in črte (Alt preskoči)
 	Snapping	Pripenjanje
@@ -2538,6 +2547,7 @@ certificate	Subject	Imetnik
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Ključ API bi bil na ta naslov poslan nešifriran. Uporabite https://, razen če je strežnik v omrežju, ki mu zaupate.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Steklo optično prebere po eno stran. Preberite sprednjo, obrnite, nato hrbtno.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Vrstni red izračunov ima {n} vnos, ki ne izračuna ničesar. »Popravi vrstni red« ga odstrani.|Vrstni red izračunov ima {n} vnosa, ki ne izračunata ničesar. »Popravi vrstni red« ju odstrani.|Vrstni red izračunov ima {n} vnose, ki ne izračunajo ničesar. »Popravi vrstni red« jih odstrani.|Vrstni red izračunov ima {n} vnosov, ki ne izračunajo ničesar. »Popravi vrstni red« jih odstrani.
+	the certificate authorities	overitelje
 	the certificate expired on {date}	potrdilo je poteklo {date}
 	The checker found 1 problem which may prevent the document from being fully accessible.	Preverjanje je našlo 1 težavo, ki morda preprečuje popolno dostopnost dokumenta.
 	The checker found no problems in this document.	Preverjanje v tem dokumentu ni našlo težav.
@@ -2564,6 +2574,7 @@ certificate	Subject	Imetnik
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Dokument se odpre brez gesla; to geslo je potrebno za spremembo omejitev. Uporabi se ob shranjevanju.
 	The document was changed in another window. Check your text, then apply it again.	Dokument je bil spremenjen v drugem oknu. Preveri besedilo in ga nato uporabi znova.
 	The document was closed before it could be saved.	Dokument je bil zaprt, preden ga je bilo mogoče shraniti.
+	The document wasn't signed: {e}	Dokument ni bil podpisan: {e}
 	The document will no longer be certified.	Dokument ne bo več overjen.
 	The document's security settings don't allow copying text and images	Varnostne nastavitve dokumenta ne dovolijo kopiranja besedila in slik
 	The document's security settings don't allow filling in form fields	Varnostne nastavitve dokumenta ne dovoljujejo izpolnjevanja polj obrazca
@@ -2613,6 +2624,7 @@ certificate	Subject	Imetnik
 	The password is incorrect.	Geslo je napačno.
 	The password is only used to read the file; it isn't saved.	Geslo se uporabi samo za branje datoteke; ni shranjeno.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Pisave za besedilo PDF ne morejo izrisati znaka „{c}“ ({code}). Izberite podprto besedilo.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN gre samo na kartico; PdfCraft ga ne shrani.
 	The PIN is incorrect.	PIN ni pravilen.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Digitalnih identitet iz žetonov PKCS #11 ni bilo mogoče prikazati: {e}
 	The preview could not be shown.	Predogleda ni bilo mogoče prikazati.
@@ -2660,6 +2672,7 @@ certificate	Subject	Imetnik
 	the signing service rejected the PIN	storitev za podpisovanje je zavrnila PIN
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	storitev za podpisovanje je zavrnila PIN ali OTP (OTP je morda potekel)
 	the signing service rejected the user name or password	storitev za podpisovanje je zavrnila uporabniško ime ali geslo
+	The smart card's digital IDs couldn't be listed: {e}	Digitalnih ID-jev pametne kartice ni bilo mogoče izpisati: {e}
 	The standard it must meet and where the file goes	Standard, ki ga mora izpolnjevati, in kam gre datoteka
 	The text is the same	Besedilo je enako
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	modeli za prepoznavanje besedila niso nameščeni (ponovno namestite PdfCraft ali nastavite PDFCRAFT_MODELS na mapo, v kateri so)
@@ -2760,6 +2773,8 @@ certificate	Subject	Imetnik
 	Tile scale:	Merilo ploščic:
 	Timed responses	Časovno omejeni odzivi
 	Timestamp	Časovni žig
+	Timestamp server	Strežnik časovnih žigov
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Časovni žigi in podatki o preklicu potrebujejo namizno aplikacijo. Če želite podpisati tukaj, jih izklopite v Nastavitve ▸ Podpisi.
 	to	do
 	To change locked fields, also set Locked to No.	Za spremembo zaklenjenih polj nastavite tudi Zaklenjeno na Ne.
 	to {n}	do {n}
@@ -2842,6 +2857,7 @@ signature pad	Type	Vtipkaj
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Uporabi digitalno identiteto iz naprave (pametna kartica, žeton USB ali potrdilo v oblaku)
 	Use a Digital ID from a file	Uporabi digitalno identiteto iz datoteke
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Uporabi napravo za ustvarjanje podpisa (modul PKCS #11: pametna kartica, žeton, CloudSigner za mSzafir)
+	Use a smart card or token	Uporabi pametno kartico ali žeton
 	Use basic detection	Uporabi osnovno zaznavanje
 	Use custom DPI	Uporabi lasten DPI
 	Use default font	Uporabi privzeto pisavo

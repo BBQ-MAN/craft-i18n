@@ -297,6 +297,7 @@ calendar date	April	avril
 	Ask in any language	Posez vos questions dans n'importe quelle langue
 	Ask to scan more pages	Proposer de numériser d’autres pages
 	Ask whether to recognize the current page or all pages when editing a scan.	Lors de la modification d'un document numérisé, demander s'il faut reconnaître la page actuelle ou toutes les pages.
+	Asking {server}…	Interrogation de {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Demande à GitHub la dernière version. Rien n'est téléchargé ni installé automatiquement.
 	Assistant	Assistant
 	Associated with content	Associé à du contenu
@@ -397,6 +398,8 @@ certificate	Basic constraints	Contraintes de base
 	Cancel reverse sides	Annuler les verso
 	Cancelled	Annulé
 	Cancelling…	Annulation…
+	Card driver (PKCS #11)	Pilote de la carte (PKCS #11)
+	Card PIN	Code PIN de la carte
 	Case-sensitive	Respecter la casse
 	CCITT Group 4	CCITT groupe 4
 	Center Footer Text	Texte du pied de page central
@@ -1317,6 +1320,7 @@ key	Home	Début
 	In new window	Dans une nouvelle fenêtre
 	In streams that use LZW encoding, use Flate instead	Dans les flux qui utilisent le codage LZW, utiliser Flate à la place
 	In this file	Dans ce fichier
+	Include revocation information when signing (LTV)	Inclure les informations de révocation lors de la signature (LTV)
 	Includes unsaved changes	Inclut des modifications non enregistrées
 	Incompatible	Incompatible
 	Incorrect password. Try again.	Mot de passe incorrect. Réessayez.
@@ -1716,6 +1720,7 @@ calendar weekday	Mo	Lu
 	No security	Aucune protection
 	No sheets	Aucune feuille
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Aucune signature trouvée dans le cadre. Placez le cadre sur la signature ou augmentez la sensibilité à l’encre.
+	No signing certificate was found on a card. Is the card in the reader?	Aucun certificat de signature n'a été trouvé sur une carte. La carte est-elle dans le lecteur ?
 	No signing certificate was found on this device. Is it connected?	Aucun certificat de signature n'a été trouvé sur ce périphérique. Est-il connecté ?
 	No size estimate: {e}	Pas d'estimation de taille : {e}
 	No status has been set.	Aucun état n'a été défini.
@@ -2617,6 +2622,7 @@ key	Shift	Maj
 	Signed after this signature, so what they signed includes it: {names}.	Signatures ajoutées après celle-ci, dont le contenu signé l'inclut : {names}.
 	Signed and all signatures are valid.	Signé et toutes les signatures sont valides.
 	Signed and saved to {path}	Signé et enregistré dans {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Signé et enregistré dans {path}, sans certaines informations de révocation : {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Signé par {signer} le {time} ; le contenu ne correspond pas à ce qui a été signé ; la confiance du signataire n'a pas été vérifiée.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Signé par {signer} le {time} ; le contenu correspond à ce qui a été signé ; la confiance du signataire n'a pas été vérifiée.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Signé par {signer} ; le contenu ne correspond pas à ce qui a été signé ; la confiance du signataire n'a pas été vérifiée.
@@ -2626,8 +2632,10 @@ key	Shift	Maj
 	Signers	Signataires
 	Signing	Signature
 	Signing service  ·  	Service de signature  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	La signature passe alors par le réseau : le serveur d'horodatage reçoit une empreinte de la signature, et les autorités de certification sont interrogées sur la révocation des certificats. Avec les deux, les signatures sont PAdES B-LTA.
 	Signing time	Heure de signature
 	Signing time is from the clock on the signer's computer.	L'heure de signature provient de l'horloge de l'ordinateur du signataire.
+	Signing was cancelled; nothing was saved.	Signature annulée ; rien n'a été enregistré.
 	Signing…	Signature en cours…
 	Signing… Confirm the signature on your other device.	Signature en cours… Confirmez la signature sur votre autre appareil.
 	Silhouettes	Contours
@@ -2645,6 +2653,7 @@ scroll speed	Slow	Lente
 	Smaller pages	Pages plus petites
 	Smaller text	Texte plus petit
 	Smaller thumbnails	Réduire les vignettes
+	Smart card  ·  	Carte à puce  ·  
 	Snap	Accrochage
 	Snap to drawing	Accrocher au dessin
 	Snap to points and lines (Alt skips it)	Aimanter aux points et aux lignes (Alt l'ignore)
@@ -2796,6 +2805,7 @@ calendar weekday	Th	Je
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	l'aire, l'espacement et les largeurs de colonnes doivent être des nombres, l'espacement 0 ou plus et chaque largeur supérieure à 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	La vitre numérise une page à la fois. Numérisez un recto, retournez, puis le verso.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	L'ordre de calcul contient {n} entrée qui ne calcule rien. « Corriger l'ordre » la supprime.|L'ordre de calcul contient {n} entrées qui ne calculent rien. « Corriger l'ordre » les supprime.
+	the certificate authorities	les autorités de certification
 	the certificate expired on {date}	le certificat a expiré le {date}
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Le certificat de {} n'autorise pas autant de certificats d'AC en dessous de lui (longueur du chemin) : il n'est donc pas utilisé pour se porter garant de {}.
 	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	Le certificat de {} comporte des extensions critiques que PdfCraft ne reconnaît pas ; il n'est donc pas utilisé pour attester {}.
@@ -2838,6 +2848,7 @@ calendar weekday	Th	Je
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Le document s'ouvre sans mot de passe ; ce mot de passe est nécessaire pour modifier les restrictions. Il est appliqué à l'enregistrement.
 	The document was changed in another window. Check your text, then apply it again.	Le document a été modifié dans une autre fenêtre. Vérifiez votre texte, puis appliquez-le de nouveau.
 	The document was closed before it could be saved.	Le document a été fermé avant de pouvoir être enregistré.
+	The document wasn't signed: {e}	Le document n'a pas été signé : {e}
 	The document will no longer be certified.	Le document ne sera plus certifié.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Les informations de révocation incorporées au document montrent que le certificat du signataire n'a pas été révoqué.
 	The document's security settings don't allow copying text and images	Les paramètres de protection du document n'autorisent pas la copie de texte et d'images
@@ -2900,6 +2911,7 @@ calendar weekday	Th	Je
 	The password must have at least 8 characters.	Le mot de passe doit comporter au moins 8 caractères.
 	The passwords do not match.	Les mots de passe ne correspondent pas.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Les polices de texte PDF ne peuvent pas afficher « {c} » ({code}). Choisissez un texte pris en charge.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	Le code PIN n'est transmis qu'à la carte ; PdfCraft ne le conserve pas.
 	The PIN is incorrect.	Le code PIN est incorrect.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Impossible de lister les identités numériques des jetons PKCS #11 : {e}
 	The preview could not be shown.	L’aperçu n’a pas pu être affiché.
@@ -2979,6 +2991,7 @@ calendar weekday	Th	Je
 	the signing service rejected the PIN	le service de signature a refusé le code PIN
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	le service de signature a refusé le code PIN ou l'OTP (l'OTP a peut-être expiré)
 	the signing service rejected the user name or password	le service de signature a refusé le nom d'utilisateur ou le mot de passe
+	The smart card's digital IDs couldn't be listed: {e}	Impossible de lister les ID numériques de la carte à puce : {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Les polices standard ne peuvent pas afficher « {c} » ({code}). Pour l'instant, seuls les caractères d'Europe occidentale peuvent être ajoutés comme texte.
 	The standard it must meet and where the file goes	La norme à respecter et la destination du fichier
 	The text is the same	Le texte est identique
@@ -3098,6 +3111,8 @@ calendar weekday	Th	Je
 	Tile scale:	Échelle des mosaïques :
 	Timed responses	Réponses minutées
 	Timestamp	Horodatage
+	Timestamp server	Serveur d'horodatage
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	L'horodatage et les informations de révocation nécessitent l'application de bureau. Désactivez-les dans Préférences ▸ Signatures pour signer ici.
 	to	à
 	To change locked fields, also set Locked to No.	Pour modifier les champs verrouillés, réglez aussi « Verrouillé » sur « Non ».
 	to {n}	à {n}
@@ -3186,6 +3201,7 @@ signature pad	Type	Saisir
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Utiliser un ID numérique d'un périphérique (carte à puce, jeton USB ou certificat dans le cloud)
 	Use a Digital ID from a file	Utiliser un ID numérique provenant d'un fichier
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Utiliser un dispositif de création de signature (module PKCS #11 : carte à puce, jeton, CloudSigner pour mSzafir)
+	Use a smart card or token	Utiliser une carte à puce ou un jeton
 	Use basic detection	Utiliser la détection de base
 	Use custom DPI	Utiliser des PPP personnalisés
 	Use default font	Utiliser la police par défaut

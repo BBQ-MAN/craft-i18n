@@ -278,6 +278,7 @@
 	Ask in any language	Попитайте на всеки език
 	Ask to scan more pages	Питане за сканиране на още страници
 	Ask whether to recognize the current page or all pages when editing a scan.	При редактиране на сканиран документ да се пита дали да се разпознае текущата страница или всички страници.
+	Asking {server}…	Запитване към {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Запитва GitHub за най-новото издание. Нищо не се изтегля и не се инсталира автоматично.
 	Assistant	Асистент
 	Associated with content	Свързан със съдържание
@@ -370,6 +371,8 @@
 	Cancel reverse sides	Отмени оборотните страни
 	Cancelled	Отменено
 	Cancelling…	Отказване…
+	Card driver (PKCS #11)	Драйвер на картата (PKCS #11)
+	Card PIN	ПИН на картата
 	Case-sensitive	Чувствително към регистъра
 	CCITT Group 4	CCITT група 4
 	Center	Центрирано
@@ -1235,6 +1238,7 @@ key	Home	Home
 	In new window	В нов прозорец
 	In streams that use LZW encoding, use Flate instead	Кодирай с Flate потоците, кодирани с LZW
 	In this file	В този файл
+	Include revocation information when signing (LTV)	Включване на информация за отмяна при подписване (LTV)
 	Includes unsaved changes	Съдържа незаписани промени
 	Incompatible	Несъвместимо
 	Incorrect password. Try again.	Грешна парола. Опитайте отново.
@@ -1592,6 +1596,7 @@ key	Home	Home
 	No security	Без защита
 	No sheets	Няма листове
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	В рамката не е открит подпис. Преместете рамката върху подписа или увеличете чувствителността към мастило.
+	No signing certificate was found on a card. Is the card in the reader?	Не е намерен сертификат за подписване на карта. Поставена ли е картата в четеца?
 	No signing certificate was found on this device. Is it connected?	На това устройство не е намерен сертификат за подписване. Свързано ли е?
 	No size estimate: {e}	Няма приблизителен размер: {e}
 	No status has been set.	Не е зададено състояние.
@@ -2430,6 +2435,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	Подписи, добавени след този, чието подписано съдържание го включва: {names}.
 	Signed and all signatures are valid.	Подписан, всички подписи са валидни.
 	Signed and saved to {path}	Подписано и записано в {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Подписано и запазено в {path} без част от информацията за отмяна: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Подписано от {signer} на {time}; съдържанието не съответства на подписаното; доверието към подписалия не е проверено.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Подписано от {signer} на {time}; съдържанието съответства на подписаното; доверието към подписалия не е проверено.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Подписано от {signer}; съдържанието не съответства на подписаното; доверието към подписалия не е проверено.
@@ -2439,7 +2445,9 @@ key	Shift	Shift
 	Signers	Подписали
 	Signing	Подписване
 	Signing service  ·  	Услуга за подписване  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Тогава подписването използва мрежата: сървърът за времеви печати получава хеш на подписа, а удостоверителните органи се питат дали сертификатите са отменени. С двете опции подписите са PAdES B-LTA.
 	Signing time	Час на подписване
+	Signing was cancelled; nothing was saved.	Подписването е отменено; нищо не е запазено.
 	Signing…	Подписване…
 	Signing… Confirm the signature on your other device.	Подписване… Потвърдете подписа на другото си устройство.
 	Simplified field notation:	Опростен запис с полета:
@@ -2456,6 +2464,7 @@ scroll speed	Slow	Ниска
 	Smaller pages	По-малки страници
 	Smaller text	По-малък текст
 	Smaller thumbnails	По-малки миниатюри
+	Smart card  ·  	Смарт карта  ·  
 	Snap to drawing	Прилепване към чертежа
 	Snap to points and lines (Alt skips it)	Прилепване към точки и линии (Alt го пропуска)
 	Snapping	Прилепване
@@ -2597,6 +2606,7 @@ action wizard	Start	Старт
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API ключът ще бъде изпратен към този адрес без криптиране. Използвайте https://, освен ако сървърът не е в мрежа, на която имате доверие.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Стъклото сканира по една страница. Сканирайте предна, обърнете, после обратна.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Редът на изчисляване има {n} запис, който не изчислява нищо. „Поправяне на реда“ го премахва.|Редът на изчисляване има {n} записа, които не изчисляват нищо. „Поправяне на реда“ ги премахва.
+	the certificate authorities	удостоверителните органи
 	the certificate expired on {date}	сертификатът е изтекъл на {date}
 	The checker found 1 problem which may prevent the document from being fully accessible.	Проверката откри 1 проблем, който може да попречи документът да бъде напълно достъпен.
 	The checker found no problems in this document.	Проверката не откри проблеми в този документ.
@@ -2621,6 +2631,7 @@ action wizard	Start	Старт
 	The document now conforms to {level}; save it to keep the changes	Документът вече отговаря на {level}; запишете го, за да запазите промените
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Документът се отваря без парола; тази парола е нужна за промяна на ограниченията. Тя се прилага при записване.
 	The document was changed in another window. Check your text, then apply it again.	Документът беше променен в друг прозорец. Проверете текста си и го приложете отново.
+	The document wasn't signed: {e}	Документът не е подписан: {e}
 	The document will no longer be certified.	Документът вече няма да е сертифициран.
 	The document's security settings don't allow copying text and images	Настройките за защита на документа не позволяват копиране на текст и изображения
 	The document's security settings don't allow filling in form fields	Настройките за защита на документа не позволяват попълване на полетата на формуляра
@@ -2669,6 +2680,7 @@ action wizard	Start	Старт
 	The password is incorrect.	Паролата е грешна.
 	The password is only used to read the file; it isn't saved.	Паролата се използва само за четене на файла; тя не се запазва.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифтовете за PDF текст не могат да изобразят „{c}“ ({code}). Изберете поддържан текст.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	ПИН кодът се изпраща само към картата; PdfCraft не го запазва.
 	The PIN is incorrect.	ПИН кодът е грешен.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Цифровите идентификатори от токените PKCS #11 не можаха да бъдат изброени: {e}
 	The preview could not be shown.	Прегледът не можа да се покаже.
@@ -2716,6 +2728,7 @@ action wizard	Start	Старт
 	the signing service rejected the PIN	услугата за подписване отхвърли ПИН кода
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	услугата за подписване отхвърли ПИН кода или OTP кода (OTP кодът може да е изтекъл)
 	the signing service rejected the user name or password	услугата за подписване отхвърли потребителското име или паролата
+	The smart card's digital IDs couldn't be listed: {e}	Цифровите идентификатори на смарт картата не можаха да бъдат изброени: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Стандартните шрифтове не могат да покажат „{c}“ ({code}). Засега като текст могат да се добавят само западноевропейски символи.
 	The standard it must meet and where the file goes	Стандартът, който трябва да покрие, и накъде отива файлът
 	The text is the same	Текстът е същият
@@ -2816,6 +2829,8 @@ action wizard	Start	Старт
 	Tile scale:	Мащаб на плочките:
 	Timed responses	Времеви ограничения за отговор
 	Timestamp	Времеви печат
+	Timestamp server	Сървър за времеви печати
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Времевите печати и информацията за отмяна изискват настолното приложение. Изключете ги от Предпочитания ▸ Подписи, за да подпишете тук.
 	to	до
 	To change locked fields, also set Locked to No.	За да промените заключени полета, задайте и „Заключено“ на „Не“.
 	to {n}	до {n}
@@ -2901,6 +2916,7 @@ signature pad	Type	Въвеждане
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Използвай цифров идентификатор от устройство (смарт карта, USB токен или облачен сертификат)
 	Use a Digital ID from a file	Използвай цифров идентификатор от файл
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Използвай устройство за създаване на подпис (модул PKCS #11: смарт карта, токен, CloudSigner за mSzafir)
+	Use a smart card or token	Използване на смарт карта или токен
 	Use basic detection	Използвай основно откриване
 	Use custom DPI	Използвай потребителска DPI стойност
 	Use default font	Използване на стандартния шрифт

@@ -276,6 +276,7 @@ calendar date	April	April
 	Ask about this document	Tanyakan tentang dokumen ini
 	Ask before a document opens in Full Screen mode	Tanya sebelum dokumen dibuka dalam mode layar penuh
 	Ask whether to recognize the current page or all pages when editing a scan.	Tanyakan apakah ingin mengenali halaman saat ini atau semua halaman saat mengedit hasil pindaian.
+	Asking {server}…	Menanyakan {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Meminta rilis terbaru dari GitHub. Tidak ada yang diunduh atau dipasang secara otomatis.
 	Associated with content	terkait dengan konten
 	At least one signature has problems.	Setidaknya satu tanda tangan bermasalah.
@@ -356,6 +357,8 @@ certificate	Basic constraints	Batasan dasar
 	Cancel reverse sides	Cancel reverse sides
 	Cancelled	Dibatalkan
 	Cancelling…	Membatalkan…
+	Card driver (PKCS #11)	Driver kartu (PKCS #11)
+	Card PIN	PIN kartu
 	Case-sensitive	Pezonan huruf besar-kecil
 	CCITT Group 4	CCITT Grup 4
 	Center Footer Text	Pusatkan Teks Footer
@@ -1181,6 +1184,7 @@ key	Home	Home
 	In multiple files	Di beberapa file
 	In streams that use LZW encoding, use Flate instead	Pada stream yang memakai pengodean LZW, gunakan Flate sebagai gantinya
 	In this file	Di file ini
+	Include revocation information when signing (LTV)	Sertakan informasi pencabutan saat menandatangani (LTV)
 	Includes unsaved changes	Termasuk perubahan yang belum disimpan
 	Incorrect password. Try again.	Kata sandi salah. Coba lagi.
 	Indent	Indentasi
@@ -1524,6 +1528,7 @@ calendar weekday	Mo	Sen
 	No security	Tanpa keamanan
 	No sheets	Tidak ada lembar
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Tidak ada tanda tangan di dalam bingkai. Pindahkan bingkai ke atas tanda tangan atau naikkan sensitivitas tinta.
+	No signing certificate was found on a card. Is the card in the reader?	Tidak ada sertifikat penandatanganan yang ditemukan di kartu. Apakah kartu ada di pembaca?
 	No signing certificate was found on this device. Is it connected?	Tidak ada sertifikat penandatanganan di perangkat ini. Apakah perangkat terhubung?
 	No status has been set.	Status belum ditetapkan.
 	no such document	tidak ada dokumen tersebut
@@ -2286,11 +2291,14 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	Ditandatangani setelah tanda tangan ini, jadi yang mereka tandatangani mencakupnya: {names}.
 	Signed and all signatures are valid.	Ditandatangani dan semua tanda tangan valid.
 	Signed and saved to {path}	Ditandatangani dan disimpan ke {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Ditandatangani dan disimpan ke {path}, tanpa sebagian informasi pencabutan: {problems}
 	Signer	Penanda tangan
 	Signer's name	Nama penanda tangan
 	Signing service  ·  	Layanan tanda tangan  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Penandatanganan lalu terhubung ke jaringan: server stempel waktu menerima hash tanda tangan, dan otoritas sertifikat ditanya apakah sertifikat dicabut. Dengan keduanya, tanda tangan menjadi PAdES B-LTA.
 	Signing time	Waktu penandatanganan
 	Signing time is from the clock on the signer's computer.	Waktu penandatanganan berasal dari jam pada komputer penanda tangan.
+	Signing was cancelled; nothing was saved.	Penandatanganan dibatalkan; tidak ada yang disimpan.
 	Signing…	Menandatangani…
 	Signing… Confirm the signature on your other device.	Menandatangani… Konfirmasikan tanda tangan di perangkat Anda yang lain.
 	Simplified field notation:	Notasi kolom sederhana:
@@ -2305,6 +2313,7 @@ key	Shift	Shift
 scroll speed	Slow	Lambat
 	Smaller pages	Halaman lebih kecil
 	Smaller thumbnails	Smaller thumbnails
+	Smart card  ·  	Kartu pintar  ·  
 	Snap to drawing	Tempel ke gambar
 	Snapping	Snapping
 	Social Security Number	Nomor Jaminan Sosial
@@ -2429,6 +2438,7 @@ calendar weekday	Th	Kam
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	itu tidak berhasil: kesalahan internal menghentikannya ({m}). Dokumen Anda tidak berubah.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	area, jarak, dan lebar lajur harus berupa angka, jarak 0 atau lebih dan setiap lebar lebih dari 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
+	the certificate authorities	otoritas sertifikat
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Sertifikat {} tidak mengizinkan jumlah sertifikat CA sebesar itu di bawahnya (panjang jalur), sehingga tidak digunakan untuk menjamin {}.
 	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	Sertifikat {} bukan sertifikat CA yang dapat menerbitkan sertifikat, sehingga tidak digunakan untuk menjamin {}.
 	The certificate of {} was not valid at the time of signing, so it is not used to vouch for {}.	Sertifikat {} tidak valid pada saat penandatanganan, sehingga tidak digunakan untuk menjamin {}.
@@ -2465,6 +2475,7 @@ calendar weekday	Th	Kam
 	The document now conforms to {level}; save it to keep the changes	Dokumen sekarang sesuai dengan {level}; simpan untuk mempertahankan perubahan
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Dokumen terbuka tanpa kata sandi; kata sandi ini diperlukan untuk mengubah pembatasan. Ini berlaku saat Anda menyimpan.
 	The document was closed before it could be saved.	Dokumen ditutup sebelum dapat disimpan.
+	The document wasn't signed: {e}	Dokumen tidak ditandatangani: {e}
 	The document will no longer be certified.	Dokumen tidak akan tersertifikasi lagi.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Informasi pencabutan yang tertanam pada dokumen menunjukkan bahwa sertifikat penanda tangan belum dicabut.
 	The document's security settings don't allow copying text and images	Pengaturan keamanan dokumen tidak mengizinkan penyalinan teks dan gambar
@@ -2520,6 +2531,7 @@ calendar weekday	Th	Kam
 	The passwords do not match.	Kata sandi tidak cocok.
 	The passwords don't match.	Kata sandi tidak cocok.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Font teks PDF tidak dapat menggambar “{c}” ({code}). Pilih teks yang didukung.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN hanya dikirim ke kartu; PdfCraft tidak menyimpannya.
 	The PIN is incorrect.	PIN salah.
 	The preview could not be shown.	The preview could not be shown.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Pengaturan milik driver printer sendiri untuk cetakan ini: baki kertas, jenis kertas, finishing, dan lainnya.
@@ -2589,6 +2601,7 @@ calendar weekday	Th	Kam
 	the signing service rejected the PIN	layanan tanda tangan menolak PIN
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	layanan tanda tangan menolak PIN atau OTP (OTP mungkin sudah kedaluwarsa)
 	the signing service rejected the user name or password	layanan tanda tangan menolak nama pengguna atau kata sandi
+	The smart card's digital IDs couldn't be listed: {e}	ID digital kartu pintar tidak dapat dicantumkan: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Font standar tidak dapat menggambar “{c}” ({code}). Untuk saat ini hanya karakter Western European yang dapat ditambahkan sebagai teks.
 	The text is the same	Teksnya sama
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	model pengenalan teks belum terpasang (pasang ulang PdfCraft, atau atur PDFCRAFT_MODELS ke folder yang memuatnya)
@@ -2688,6 +2701,8 @@ calendar weekday	Th	Kam
 	Tile scale:	Skala ubin:
 	Timed responses	Respons berjadwal
 	Timestamp	Stempel waktu
+	Timestamp server	Server stempel waktu
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Stempel waktu dan informasi pencabutan memerlukan aplikasi desktop. Matikan di Preferensi ▸ Tanda tangan untuk menandatangani di sini.
 	to	hingga
 	To change locked fields, also set Locked to No.	Untuk mengubah kolom terkunci, tetapkan juga Terkunci ke Tidak.
 	to {n}	hingga {n}
@@ -2773,6 +2788,7 @@ signature pad	Type	Ketik
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Gunakan sertifikat cloud (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Gunakan ID Digital dari perangkat (kartu pintar, token USB, atau sertifikat cloud)
 	Use a Digital ID from a file	Gunakan ID Digital dari file
+	Use a smart card or token	Gunakan kartu pintar atau token
 	Use custom DPI	Gunakan DPI kustom
 	Use each image's embedded DPI; use 72 DPI when it is absent.	Gunakan DPI tertanam pada setiap gambar; gunakan 72 DPI jika tidak ada.
 	Use Flate to encode streams that are not encoded	Gunakan Flate untuk mengodekan stream yang belum dikodekan

@@ -290,6 +290,7 @@
 	Ask in any language	Fragen Sie in jeder Sprache
 	Ask to scan more pages	Nach weiteren Seiten fragen
 	Ask whether to recognize the current page or all pages when editing a scan.	Beim Bearbeiten eines Scans fragen, ob die aktuelle Seite oder alle Seiten erkannt werden sollen.
+	Asking {server}…	{server} wird gefragt …
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Fragt GitHub nach dem neuesten Release. Es wird nichts automatisch heruntergeladen oder installiert.
 	Assistant	Assistent
 	Associated with content	Mit Inhalt verknüpft
@@ -384,6 +385,8 @@
 	Cancel reverse sides	Rückseiten abbrechen
 	Cancelled	Abgebrochen
 	Cancelling…	Wird abgebrochen…
+	Card driver (PKCS #11)	Kartentreiber (PKCS #11)
+	Card PIN	Karten-PIN
 	Case-sensitive	Groß-/Kleinschreibung beachten
 	CCITT Group 4	CCITT Gruppe 4
 	Center	Zentriert
@@ -1274,6 +1277,7 @@ key	Home	Pos1
 	In new window	In neuem Fenster öffnen
 	In streams that use LZW encoding, use Flate instead	In LZW-codierten Streams stattdessen Flate verwenden
 	In this file	In dieser Datei
+	Include revocation information when signing (LTV)	Sperrinformationen beim Signieren einbetten (LTV)
 	Includes unsaved changes	Enthält ungespeicherte Änderungen
 	Incompatible	Inkompatibel
 	Incorrect password. Try again.	Falsches Passwort. Versuch es noch einmal.
@@ -1643,6 +1647,7 @@ calendar weekday	Mo	Mo
 	No security	Keine Sicherheit
 	No sheets	Keine Blätter
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Im Rahmen wurde keine Unterschrift gefunden. Zieh den Rahmen über die Unterschrift oder erhöhe die Tintenempfindlichkeit.
+	No signing certificate was found on a card. Is the card in the reader?	Auf keiner Karte wurde ein Signaturzertifikat gefunden. Steckt die Karte im Lesegerät?
 	No signing certificate was found on this device. Is it connected?	Auf diesem Gerät wurde kein Signaturzertifikat gefunden. Ist es angeschlossen?
 	No size estimate: {e}	Keine Größenschätzung: {e}
 	No status has been set.	Es wurde kein Status festgelegt.
@@ -2515,6 +2520,7 @@ key	Shift	Umschalt
 	Signed after this signature, so what they signed includes it: {names}.	Nach dieser Signatur hinzugefügte Signaturen, deren signierter Inhalt sie einschließt: {names}.
 	Signed and all signatures are valid.	Signiert, alle Signaturen sind gültig.
 	Signed and saved to {path}	Signiert und gespeichert unter {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Signiert und unter {path} gespeichert, ohne einige Sperrinformationen: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Signiert von {signer} am {time}; der Inhalt stimmt nicht mit dem Signierten überein; die Vertrauenswürdigkeit des Unterzeichners wurde nicht geprüft.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Signiert von {signer} am {time}; der Inhalt stimmt mit dem Signierten überein; die Vertrauenswürdigkeit des Unterzeichners wurde nicht geprüft.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Signiert von {signer}; der Inhalt stimmt nicht mit dem Signierten überein; die Vertrauenswürdigkeit des Unterzeichners wurde nicht geprüft.
@@ -2524,8 +2530,10 @@ key	Shift	Umschalt
 	Signers	Unterzeichner
 	Signing	Signieren
 	Signing service  ·  	Signaturdienst  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Beim Signieren geht PdfCraft dann online: Der Zeitstempelserver erhält einen Hash der Signatur, und die Zertifizierungsstellen werden gefragt, ob die Zertifikate gesperrt sind. Mit beidem sind Signaturen PAdES B-LTA.
 	Signing time	Signaturzeitpunkt
 	Signing time is from the clock on the signer's computer.	Der Signaturzeitpunkt stammt von der Uhr am Computer des Unterzeichners.
+	Signing was cancelled; nothing was saved.	Signieren abgebrochen; nichts wurde gespeichert.
 	Signing…	Wird signiert…
 	Signing… Confirm the signature on your other device.	Wird signiert… Bestätigen Sie die Signatur auf Ihrem anderen Gerät.
 	Simplified field notation:	Vereinfachte Feldschreibweise:
@@ -2542,6 +2550,7 @@ scroll speed	Slow	Langsam
 	Smaller pages	Kleinere Seiten
 	Smaller text	Kleinerer Text
 	Smaller thumbnails	Kleinere Miniaturen
+	Smart card  ·  	Smartcard  ·  
 	Snap to drawing	An Zeichnung einrasten
 	Snap to points and lines (Alt skips it)	An Punkten und Linien einrasten (Alt überspringt es)
 	Snapping	Einrasten
@@ -2691,6 +2700,7 @@ calendar weekday	Th	Do
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	Bereich, Abstand und Spaltenbreiten müssen Zahlen sein, der Abstand 0 oder mehr und jede Breite größer als 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Das Glas scannt eine Seite nach der anderen. Scannen Sie eine Vorderseite, drehen Sie um und scannen Sie die Rückseite.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Die Berechnungsreihenfolge hat {n} Eintrag, der nichts berechnet. „Reihenfolge korrigieren“ entfernt ihn.|Die Berechnungsreihenfolge hat {n} Einträge, die nichts berechnen. „Reihenfolge korrigieren“ entfernt sie.
+	the certificate authorities	die Zertifizierungsstellen
 	the certificate expired on {date}	das Zertifikat ist am {date} abgelaufen
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Das Zertifikat von {} erlaubt nicht so viele CA-Zertifikate unter sich (Pfadlänge) und wird daher nicht als Bürge für {} verwendet.
 	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	Das Zertifikat von {} hat kritische Erweiterungen, die PdfCraft nicht kennt, und wird daher nicht als Bürge für {} verwendet.
@@ -2732,6 +2742,7 @@ calendar weekday	Th	Do
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Das Dokument öffnet sich ohne Passwort; dieses Passwort wird benötigt, um die Einschränkungen zu ändern. Es wird beim Speichern angewendet.
 	The document was changed in another window. Check your text, then apply it again.	Das Dokument wurde in einem anderen Fenster geändert. Prüfe deinen Text und übernimm ihn erneut.
 	The document was closed before it could be saved.	Das Dokument wurde geschlossen, bevor es gespeichert werden konnte.
+	The document wasn't signed: {e}	Das Dokument wurde nicht signiert: {e}
 	The document will no longer be certified.	Das Dokument ist danach nicht mehr zertifiziert.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Die im Dokument eingebetteten Sperrinformationen zeigen, dass das Zertifikat des Unterzeichners nicht widerrufen wurde.
 	The document's security settings don't allow copying text and images	Die Sicherheitseinstellungen des Dokuments erlauben kein Kopieren von Text und Bildern
@@ -2793,6 +2804,7 @@ calendar weekday	Th	Do
 	The password must have at least 8 characters.	Das Passwort muss mindestens 8 Zeichen lang sein.
 	The passwords do not match.	Die Passwörter stimmen nicht überein.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Die PDF-Textschriften können „{c}“ ({code}) nicht darstellen. Wähle unterstützten Text.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	Die PIN geht nur an die Karte; PdfCraft speichert sie nicht.
 	The PIN is incorrect.	Die PIN ist falsch.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Die digitalen IDs auf den PKCS-#11-Token konnten nicht aufgelistet werden: {e}
 	The preview could not be shown.	Die Vorschau konnte nicht angezeigt werden.
@@ -2871,6 +2883,7 @@ calendar weekday	Th	Do
 	the signing service rejected the PIN	der Signaturdienst hat die PIN abgelehnt
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	der Signaturdienst hat die PIN oder das OTP abgelehnt (das OTP ist möglicherweise abgelaufen)
 	the signing service rejected the user name or password	der Signaturdienst hat den Benutzernamen oder das Passwort abgelehnt
+	The smart card's digital IDs couldn't be listed: {e}	Die digitalen IDs der Smartcard konnten nicht aufgelistet werden: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Die Standardschriften können „{c}“ ({code}) nicht darstellen. Derzeit lassen sich nur westeuropäische Zeichen als Text hinzufügen.
 	The standard it must meet and where the file goes	Der Standard, den es erfüllen muss, und wohin die Datei geht
 	The text is the same	Der Text ist identisch
@@ -2989,6 +3002,8 @@ calendar weekday	Th	Do
 	Tile scale:	Kachelmaßstab:
 	Timed responses	Zeitbegrenzte Antworten
 	Timestamp	Zeitstempel
+	Timestamp server	Zeitstempelserver
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Zeitstempel und Sperrinformationen brauchen die Desktop-App. Schalten Sie sie unter Einstellungen ▸ Signaturen aus, um hier zu signieren.
 	Tint Strength	Deckkraft
 	to	bis
 	To change locked fields, also set Locked to No.	Um gesperrte Felder zu ändern, setze auch „Gesperrt“ auf „Nein“.
@@ -3072,6 +3087,7 @@ signature pad	Type	Tippen
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Digitale ID von einem Gerät verwenden (Smartcard, USB-Token oder Cloud-Zertifikat)
 	Use a Digital ID from a file	Digitale ID aus einer Datei verwenden
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Signaturerstellungseinheit verwenden (PKCS #11-Modul: Smartcard, Token, CloudSigner für mSzafir)
+	Use a smart card or token	Smartcard oder Token verwenden
 	Use basic detection	Einfache Erkennung verwenden
 	Use custom DPI	Eigene DPI verwenden
 	Use default font	Standardschrift verwenden

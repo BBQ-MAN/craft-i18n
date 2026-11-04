@@ -290,6 +290,7 @@ calendar date	April	abril
 	Ask in any language	Pregunte en cualquier idioma
 	Ask to scan more pages	Preguntar si se escanean más páginas
 	Ask whether to recognize the current page or all pages when editing a scan.	Al editar un documento escaneado, preguntar si se debe reconocer la página actual o todas las páginas.
+	Asking {server}…	Consultando a {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Consulta a GitHub cuál es la última versión. No se descarga ni se instala nada automáticamente.
 	Assistant	Asistente
 	Associated with content	Asociado a contenido
@@ -388,6 +389,8 @@ certificate	Basic constraints	Restricciones básicas
 	Cancel reverse sides	Cancelar los reversos
 	Cancelled	Cancelado
 	Cancelling…	Cancelando…
+	Card driver (PKCS #11)	Controlador de la tarjeta (PKCS #11)
+	Card PIN	PIN de la tarjeta
 	Case-sensitive	Distinguir mayúsculas y minúsculas
 	CCITT Group 4	CCITT grupo 4
 	Center Footer Text	Texto del pie central
@@ -1276,6 +1279,7 @@ key	Home	Inicio
 	In new window	En una ventana nueva
 	In streams that use LZW encoding, use Flate instead	En las secuencias con codificación LZW, usar Flate en su lugar
 	In this file	En este archivo
+	Include revocation information when signing (LTV)	Incluir información de revocación al firmar (LTV)
 	Includes unsaved changes	Incluye cambios sin guardar
 	Incompatible	Incompatible
 	Incorrect password. Try again.	Contraseña incorrecta. Inténtalo de nuevo.
@@ -1656,6 +1660,7 @@ calendar weekday	Mo	Lu
 	No security	Sin seguridad
 	No sheets	Sin hojas
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	No se encontró ninguna firma en el marco. Mueve el marco sobre la firma o aumenta la sensibilidad de la tinta.
+	No signing certificate was found on a card. Is the card in the reader?	No se encontró ningún certificado de firma en una tarjeta. ¿Está la tarjeta en el lector?
 	No signing certificate was found on this device. Is it connected?	No se encontró ningún certificado de firma en este dispositivo. ¿Está conectado?
 	No size estimate: {e}	Sin tamaño estimado: {e}
 	No status has been set.	No se ha establecido ningún estado.
@@ -2526,6 +2531,7 @@ key	Shift	Mayús
 	Signed after this signature, so what they signed includes it: {names}.	Firmas añadidas después de esta, cuyo contenido firmado la incluye: {names}.
 	Signed and all signatures are valid.	Firmado y todas las firmas son válidas.
 	Signed and saved to {path}	Firmado y guardado en {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Firmado y guardado en {path}, sin parte de la información de revocación: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Firmado por {signer} el {time}; el contenido no coincide con lo firmado; no se ha comprobado la confianza del firmante.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Firmado por {signer} el {time}; el contenido coincide con lo firmado; no se ha comprobado la confianza del firmante.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Firmado por {signer}; el contenido no coincide con lo firmado; no se ha comprobado la confianza del firmante.
@@ -2534,8 +2540,10 @@ key	Shift	Mayús
 	Signer's name	Nombre del firmante
 	Signers	Firmantes
 	Signing service  ·  	Servicio de firma  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Al firmar se usa la red: el servidor de sellado de tiempo recibe un hash de la firma y se consulta a las autoridades de certificación si los certificados están revocados. Con ambas opciones, las firmas son PAdES B-LTA.
 	Signing time	Hora de la firma
 	Signing time is from the clock on the signer's computer.	La hora de la firma es la del reloj del ordenador del firmante.
+	Signing was cancelled; nothing was saved.	Se canceló la firma; no se guardó nada.
 	Signing…	Firmando…
 	Signing… Confirm the signature on your other device.	Firmando… Confirma la firma en tu otro dispositivo.
 	Simplified field notation:	Notación de campos simplificada:
@@ -2552,6 +2560,7 @@ scroll speed	Slow	Lenta
 	Smaller pages	Páginas más pequeñas
 	Smaller text	Texto más pequeño
 	Smaller thumbnails	Miniaturas más pequeñas
+	Smart card  ·  	Tarjeta inteligente  ·  
 	Snap to drawing	Ajustar al dibujo
 	Snap to points and lines (Alt skips it)	Ajustar a puntos y líneas (Alt lo omite)
 	Snapping	Ajuste
@@ -2700,6 +2709,7 @@ calendar weekday	Th	Ju
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	el área, el espaciado y los anchos de columna deben ser números, el espaciado 0 o más y cada ancho mayor que 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	El cristal escanea una página cada vez. Escanee un anverso, désele la vuelta y escanee su reverso.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	El orden de cálculo tiene {n} entrada que no calcula nada. «Corregir orden» la elimina.|El orden de cálculo tiene {n} entradas que no calculan nada. «Corregir orden» las elimina.
+	the certificate authorities	las autoridades de certificación
 	the certificate expired on {date}	el certificado caducó el {date}
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	El certificado de {} no admite tantos certificados de CA por debajo (longitud de ruta), así que no se usa para avalar a {}.
 	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	El certificado de {} tiene extensiones críticas que PdfCraft no reconoce, así que no se usa para avalar a {}.
@@ -2741,6 +2751,7 @@ calendar weekday	Th	Ju
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	El documento se abre sin contraseña; esta contraseña hace falta para cambiar las restricciones. Se aplica al guardar.
 	The document was changed in another window. Check your text, then apply it again.	El documento se modificó en otra ventana. Revise su texto y aplíquelo de nuevo.
 	The document was closed before it could be saved.	El documento se cerró antes de poder guardarlo.
+	The document wasn't signed: {e}	El documento no se firmó: {e}
 	The document will no longer be certified.	El documento dejará de estar certificado.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	La información de revocación incrustada en el documento indica que el certificado del firmante no está revocado.
 	The document's security settings don't allow copying text and images	La configuración de seguridad del documento no permite copiar texto ni imágenes
@@ -2801,6 +2812,7 @@ calendar weekday	Th	Ju
 	The password must have at least 8 characters.	La contraseña debe tener al menos 8 caracteres.
 	The passwords do not match.	Las contraseñas no coinciden.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Las fuentes de texto PDF no pueden mostrar «{c}» ({code}). Elige texto compatible.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	El PIN solo va a la tarjeta; PdfCraft no lo guarda.
 	The PIN is incorrect.	El PIN es incorrecto.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	No se pudieron listar los ID digitales de los tokens PKCS #11: {e}
 	The preview could not be shown.	No se pudo mostrar la vista previa.
@@ -2881,6 +2893,7 @@ calendar weekday	Th	Ju
 	the signing service rejected the PIN	el servicio de firma rechazó el PIN
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	el servicio de firma rechazó el PIN o el OTP (el OTP puede haber caducado)
 	the signing service rejected the user name or password	el servicio de firma rechazó el nombre de usuario o la contraseña
+	The smart card's digital IDs couldn't be listed: {e}	No se pudieron listar los ID digitales de la tarjeta inteligente: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Las fuentes estándar no pueden mostrar «{c}» ({code}). Por ahora solo se pueden añadir como texto caracteres de Europa occidental.
 	The standard it must meet and where the file goes	La norma que debe cumplir y a dónde va el archivo
 	The text is the same	El texto es el mismo
@@ -2995,6 +3008,8 @@ calendar weekday	Th	Ju
 	Tile scale:	Escala de mosaico:
 	Timed responses	Respuestas con límite de tiempo
 	Timestamp	Marca de tiempo
+	Timestamp server	Servidor de sellado de tiempo
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Los sellos de tiempo y la información de revocación requieren la aplicación de escritorio. Desactívelos en Preferencias ▸ Firmas para firmar aquí.
 	to	a
 	To change locked fields, also set Locked to No.	Para cambiar campos bloqueados, establece también «Bloqueado» en «No».
 	to {n}	a {n}
@@ -3078,6 +3093,7 @@ signature pad	Type	Escribir
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Usar un ID digital de un dispositivo (tarjeta inteligente, token USB o certificado en la nube)
 	Use a Digital ID from a file	Usar un ID digital de un archivo
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Usar un dispositivo de creación de firma (módulo PKCS #11: tarjeta inteligente, token, CloudSigner para mSzafir)
+	Use a smart card or token	Usar una tarjeta inteligente o token
 	Use basic detection	Usar detección básica
 	Use custom DPI	Usar PPP personalizados
 	Use default font	Usar fuente predeterminada

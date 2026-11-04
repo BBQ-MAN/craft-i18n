@@ -289,6 +289,7 @@ calendar date	April	dubna
 	Ask in any language	Ptejte se v jakémkoli jazyce
 	Ask to scan more pages	Zeptat se na skenování dalších stránek
 	Ask whether to recognize the current page or all pages when editing a scan.	Při úpravě skenu se zeptat, zda rozpoznat aktuální stránku, nebo všechny stránky.
+	Asking {server}…	Dotaz na {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Zjistí na GitHubu nejnovější vydání. Nic se automaticky nestahuje ani neinstaluje.
 	Assistant	Asistent
 	Associated with content	Spojen s obsahem
@@ -386,6 +387,8 @@ certificate	Basic constraints	Základní omezení
 	Cancel reverse sides	Zrušit rubové strany
 	Cancelled	Zrušeno
 	Cancelling…	Ruší se…
+	Card driver (PKCS #11)	Ovladač karty (PKCS #11)
+	Card PIN	PIN karty
 	Case-sensitive	Rozlišovat velikost písmen
 	CCITT Group 4	CCITT skupina 4
 	Center	Na střed
@@ -1284,6 +1287,7 @@ key	Home	Home
 	In new window	V novém okně
 	In streams that use LZW encoding, use Flate instead	Proudy kódované LZW kódovat metodou Flate
 	In this file	V tomto souboru
+	Include revocation information when signing (LTV)	Při podepisování vložit informace o odvolání (LTV)
 	Includes unsaved changes	Obsahuje neuložené změny
 	Incompatible	Nekompatibilní
 	Incorrect password. Try again.	Nesprávné heslo. Zkuste to znovu.
@@ -1666,6 +1670,7 @@ calendar weekday	Mo	Po
 	No security	Bez zabezpečení
 	No sheets	Žádné listy
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	V rámečku nebyl nalezen žádný podpis. Přesuňte rámeček na podpis nebo zvyšte citlivost na inkoust.
+	No signing certificate was found on a card. Is the card in the reader?	Na kartě nebyl nalezen žádný podpisový certifikát. Je karta ve čtečce?
 	No signing certificate was found on this device. Is it connected?	V tomto zařízení nebyl nalezen podpisový certifikát. Je připojené?
 	No size estimate: {e}	Bez odhadu velikosti: {e}
 	No status has been set.	Nebyl nastaven žádný stav.
@@ -2536,6 +2541,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	Podpisy přidané po tomto podpisu, jejichž podepsaný obsah ho zahrnuje: {names}.
 	Signed and all signatures are valid.	Podepsáno a všechny podpisy jsou platné.
 	Signed and saved to {path}	Podepsáno a uloženo do {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Podepsáno a uloženo do {path} bez části informací o odvolání: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Podepsal {signer} dne {time}; obsah neodpovídá podepsanému; důvěryhodnost podepisujícího nebyla ověřena.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Podepsal {signer} dne {time}; obsah odpovídá podepsanému; důvěryhodnost podepisujícího nebyla ověřena.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Podepsal {signer}; obsah neodpovídá podepsanému; důvěryhodnost podepisujícího nebyla ověřena.
@@ -2545,8 +2551,10 @@ key	Shift	Shift
 	Signers	Podepsali
 	Signing	Podepisování
 	Signing service  ·  	Podpisová služba  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Podepisování pak používá síť: server časových razítek obdrží hash podpisu a certifikačních autorit se aplikace zeptá, zda certifikáty nejsou odvolané. S oběma volbami jsou podpisy PAdES B-LTA.
 	Signing time	Čas podpisu
 	Signing time is from the clock on the signer's computer.	Čas podpisu pochází z hodin v počítači podepisující osoby.
+	Signing was cancelled; nothing was saved.	Podepisování bylo zrušeno; nic nebylo uloženo.
 	Signing…	Podepisování…
 	Signing… Confirm the signature on your other device.	Podepisování… Potvrďte podpis na svém druhém zařízení.
 	Simplified field notation:	Zjednodušený zápis polí:
@@ -2563,6 +2571,7 @@ scroll speed	Slow	Pomalá
 	Smaller pages	Menší stránky
 	Smaller text	Menší text
 	Smaller thumbnails	Menší miniatury
+	Smart card  ·  	Čipová karta  ·  
 	Snap to drawing	Přichytávat ke kresbě
 	Snap to points and lines (Alt skips it)	Přichytávat k bodům a čarám (Alt přeskočí)
 	Snapping	Přichytávání
@@ -2711,6 +2720,7 @@ calendar weekday	Th	Čt
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Klíč API bude na tuto adresu odeslán nešifrovaně. Používejte https://, pokud server neběží v síti, které důvěřujete.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Sklo skenuje po jedné stránce. Naskenujte líc, otočte a pak rub.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Pořadí výpočtů má {n} položku, která nic nepočítá. „Opravit pořadí“ ji odstraní.|Pořadí výpočtů má {n} položky, které nic nepočítají. „Opravit pořadí“ je odstraní.|Pořadí výpočtů má {n} položek, které nic nepočítají. „Opravit pořadí“ je odstraní.
+	the certificate authorities	certifikační autority
 	the certificate expired on {date}	platnost certifikátu vypršela {date}
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Certifikát {} nepovoluje pod sebou tolik certifikátů CA (délka cesty), proto se nepoužije k ručení za {}.
 	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	Certifikát {} má kritická rozšíření, která PdfCraft nezná, proto se nepoužije k ručení za {}.
@@ -2752,6 +2762,7 @@ calendar weekday	Th	Čt
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Dokument se otevře bez hesla; toto heslo je potřeba ke změně omezení. Použije se při uložení.
 	The document was changed in another window. Check your text, then apply it again.	Dokument byl změněn v jiném okně. Zkontrolujte svůj text a použijte ho znovu.
 	The document was closed before it could be saved.	Dokument byl zavřen dříve, než mohl být uložen.
+	The document wasn't signed: {e}	Dokument nebyl podepsán: {e}
 	The document will no longer be certified.	Dokument přestane být certifikovaný.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Informace o odvolání vložené v dokumentu ukazují, že certifikát podepisující osoby nebyl odvolán.
 	The document's security settings don't allow copying text and images	Nastavení zabezpečení dokumentu nedovoluje kopírovat text a obrázky
@@ -2811,6 +2822,7 @@ calendar weekday	Th	Čt
 	The password must have at least 8 characters.	Heslo musí mít alespoň 8 znaků.
 	The passwords do not match.	Hesla se neshodují.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Písma pro text v PDF neumí vykreslit „{c}“ ({code}). Zvolte podporovaný text.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN jde pouze do karty; PdfCraft si jej neukládá.
 	The PIN is incorrect.	PIN je nesprávný.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Digitální ID z tokenů PKCS #11 nelze vypsat: {e}
 	The preview could not be shown.	Náhled se nepodařilo zobrazit.
@@ -2889,6 +2901,7 @@ calendar weekday	Th	Čt
 	the signing service rejected the PIN	podpisová služba odmítla PIN kód
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	podpisová služba odmítla PIN kód nebo OTP (platnost OTP možná vypršela)
 	the signing service rejected the user name or password	podpisová služba odmítla uživatelské jméno nebo heslo
+	The smart card's digital IDs couldn't be listed: {e}	Digitální ID čipové karty se nepodařilo vypsat: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standardní písma nedokážou vykreslit „{c}“ ({code}). Jako text lze zatím přidat jen západoevropské znaky.
 	The standard it must meet and where the file goes	Jaké normě musí vyhovět a kam soubor putuje
 	The text is the same	Text je stejný
@@ -3007,6 +3020,8 @@ calendar weekday	Th	Čt
 	Tile scale:	Měřítko dlaždic:
 	Timed responses	Časově omezené odpovědi
 	Timestamp	Časové razítko
+	Timestamp server	Server časových razítek
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Časová razítka a informace o odvolání vyžadují desktopovou aplikaci. Chcete-li podepsat zde, vypněte je v Předvolby ▸ Podpisy.
 	to	až
 	To change locked fields, also set Locked to No.	Chcete-li změnit zamčená pole, nastavte také „Zamčeno“ na „Ne“.
 	to {n}	až {n}
@@ -3090,6 +3105,7 @@ signature pad	Type	Napsat
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Použít digitální ID ze zařízení (čipová karta, USB token nebo cloudový certifikát)
 	Use a Digital ID from a file	Použít digitální ID ze souboru
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Použít zařízení pro vytváření podpisu (modul PKCS #11: čipová karta, token, CloudSigner pro mSzafir)
+	Use a smart card or token	Použít čipovou kartu nebo token
 	Use basic detection	Použít základní rozpoznávání
 	Use custom DPI	Použít vlastní DPI
 	Use default font	Použít výchozí písmo

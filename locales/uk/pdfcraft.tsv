@@ -279,6 +279,7 @@ calendar date	April	квітня
 	Ask in any language	Питайте будь-якою мовою
 	Ask to scan more pages	Пропонувати сканувати ще сторінки
 	Ask whether to recognize the current page or all pages when editing a scan.	Під час редагування сканованого документа запитувати, чи розпізнати поточну сторінку або всі сторінки.
+	Asking {server}…	Запит до {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Запитує в GitHub найновіший випуск. Нічого не завантажується й не встановлюється автоматично.
 	Assistant	Асистент
 	Associated with content	Пов’язаний із вмістом
@@ -375,6 +376,8 @@ calendar date	August	серпня
 	Cancel reverse sides	Скасувати зворотні боки
 	Cancelled	Скасовано
 	Cancelling…	Скасування…
+	Card driver (PKCS #11)	Драйвер картки (PKCS #11)
+	Card PIN	PIN-код картки
 	Case-sensitive	З урахуванням регістру
 	CCITT Group 4	CCITT група 4
 	Center Footer Text	Текст по центру у нижньому колонтитулі
@@ -1221,6 +1224,7 @@ key	Home	Home
 	In new window	Відкрити в новому вікні
 	In streams that use LZW encoding, use Flate instead	Використовувати Flate замість LZW у потоках із кодуванням LZW
 	In this file	У цьому файлі
+	Include revocation information when signing (LTV)	Додавати відомості про відкликання під час підписування (LTV)
 	Includes unsaved changes	Містить незбережені зміни
 	Incompatible	Несумісно
 	Incorrect password. Try again.	Неправильний пароль. Спробуйте ще раз.
@@ -1586,6 +1590,7 @@ calendar date	May	травня
 	No security	Без захисту
 	No sheets	Немає аркушів
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	У рамці не знайдено підпису. Наведіть рамку на підпис або збільште чутливість до чорнила.
+	No signing certificate was found on a card. Is the card in the reader?	На картці не знайдено сертифіката для підпису. Чи вставлено картку в зчитувач?
 	No signing certificate was found on this device. Is it connected?	На цьому пристрої не знайдено сертифіката для підпису. Його під’єднано?
 	No size estimate: {e}	Немає оцінки розміру: {e}
 	No status has been set.	Статус не задано.
@@ -2408,6 +2413,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	Підписи, додані після цього, чий підписаний вміст його охоплює: {names}.
 	Signed and all signatures are valid.	Підписано, і всі підписи дійсні.
 	Signed and saved to {path}	Підписано й збережено в {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Підписано й збережено в {path} без частини відомостей про відкликання: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Підписано {signer} {time}; вміст не відповідає підписаному; довіру до підписувача не перевірено.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Підписано {signer} {time}; вміст відповідає підписаному; довіру до підписувача не перевірено.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	Підписано {signer}; вміст не відповідає підписаному; довіру до підписувача не перевірено.
@@ -2417,7 +2423,9 @@ key	Shift	Shift
 	Signers	Підписувачі
 	Signing	Підпис
 	Signing service  ·  	Служба підписування  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Під час підписування застосунок звертається до мережі: сервер позначок часу отримує хеш підпису, а центри сертифікації перевіряють, чи не відкликано сертифікати. З обома параметрами підписи відповідають PAdES B-LTA.
 	Signing time	Час підписування
+	Signing was cancelled; nothing was saved.	Підписування скасовано; нічого не збережено.
 	Signing…	Підписування…
 	Signing… Confirm the signature on your other device.	Підписування… Підтвердьте підпис на іншому своєму пристрої.
 	Simplified field notation:	Спрощений запис полів:
@@ -2434,6 +2442,7 @@ scroll speed	Slow	Повільна
 	Smaller pages	Менші сторінки
 	Smaller text	Менший текст
 	Smaller thumbnails	Зменшити мініатюри
+	Smart card  ·  	Смарт-картка  ·  
 	Snap to drawing	Прив’язувати до креслення
 	Snap to points and lines (Alt skips it)	Прилипати до точок і ліній (Alt вимикає)
 	Snapping	Прив’язування
@@ -2577,6 +2586,7 @@ certificate	Subject	Власник сертифіката
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	Ключ API буде надіслано на цю адресу без шифрування. Використовуйте https://, якщо сервер не в довіреній мережі.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Скло сканує по одній сторінці. Відскануйте лицьову, переверніть, потім зворотну.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	У порядку обчислень є {n} запис, який нічого не обчислює. «Виправити порядок» його видалить.|У порядку обчислень є {n} записи, які нічого не обчислюють. «Виправити порядок» їх видалить.|У порядку обчислень є {n} записів, які нічого не обчислюють. «Виправити порядок» їх видалить.
+	the certificate authorities	центри сертифікації
 	the certificate expired on {date}	термін дії сертифіката минув {date}
 	The checker found 1 problem which may prevent the document from being fully accessible.	Перевірка виявила 1 проблему, яка може заважати повній доступності документа.
 	The checker found no problems in this document.	Перевірка не виявила проблем у цьому документі.
@@ -2603,6 +2613,7 @@ certificate	Subject	Власник сертифіката
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Документ відкривається без пароля; цей пароль потрібен для зміни обмежень. Він застосовується під час збереження.
 	The document was changed in another window. Check your text, then apply it again.	Документ змінено в іншому вікні. Перевірте текст і застосуйте його знову.
 	The document was closed before it could be saved.	Документ було закрито до того, як його вдалося зберегти.
+	The document wasn't signed: {e}	Документ не підписано: {e}
 	The document will no longer be certified.	Документ більше не буде засвідчено.
 	The document's security settings don't allow copying text and images	Налаштування захисту документа не дозволяють копіювати текст і зображення
 	The document's security settings don't allow filling in form fields	Налаштування захисту документа не дозволяють заповнювати поля форми
@@ -2652,6 +2663,7 @@ certificate	Subject	Власник сертифіката
 	The password is incorrect.	Неправильний пароль.
 	The password is only used to read the file; it isn't saved.	Пароль використовується лише для читання файлу; він не зберігається.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Шрифти тексту PDF не можуть відобразити «{c}» ({code}). Виберіть підтримуваний текст.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN-код передається лише картці; PdfCraft його не зберігає.
 	The PIN is incorrect.	Неправильний PIN-код.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Не вдалося отримати список цифрових посвідчень із токенів PKCS #11: {e}
 	The preview could not be shown.	Не вдалося показати попередній перегляд.
@@ -2699,6 +2711,7 @@ certificate	Subject	Власник сертифіката
 	the signing service rejected the PIN	служба підписування відхилила PIN-код
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	служба підписування відхилила PIN-код або OTP (можливо, строк дії OTP минув)
 	the signing service rejected the user name or password	служба підписування відхилила ім’я користувача або пароль
+	The smart card's digital IDs couldn't be listed: {e}	Не вдалося отримати список цифрових ідентифікаторів смарт-картки: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Стандартні шрифти не можуть відобразити «{c}» ({code}). Поки що як текст можна додавати лише західноєвропейські символи.
 	The standard it must meet and where the file goes	Стандарт, якого дотриматися, і куди йде файл
 	The text is the same	Текст однаковий
@@ -2800,6 +2813,8 @@ certificate	Subject	Власник сертифіката
 	Tile scale:	Масштаб фрагментів:
 	Timed responses	Відповіді з обмеженням часу
 	Timestamp	Позначка часу
+	Timestamp server	Сервер позначок часу
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Для позначок часу й відомостей про відкликання потрібен настільний застосунок. Вимкніть їх у Налаштування ▸ Підписи, щоб підписати тут.
 	to	до
 	To change locked fields, also set Locked to No.	Щоб змінити заблоковані поля, також установіть «Заблоковано» в «Ні».
 	to {n}	до {n}
@@ -2880,6 +2895,7 @@ signature pad	Type	Ввести
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Використати цифрове посвідчення з пристрою (смарт-картка, USB-токен або хмарний сертифікат)
 	Use a Digital ID from a file	Використати цифрове посвідчення з файлу
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Використати засіб створення підпису (модуль PKCS #11: смарт-картка, токен, CloudSigner для mSzafir)
+	Use a smart card or token	Використати смарт-картку або токен
 	Use basic detection	Використати базове виявлення
 	Use custom DPI	Використовувати власне DPI
 	Use default font	Використовувати типовий шрифт

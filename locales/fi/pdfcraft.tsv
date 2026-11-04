@@ -275,6 +275,7 @@ calendar date	April	huhtikuuta
 	Ask about this document	Kysy tästä asiakirjasta
 	Ask before a document opens in Full Screen mode	Kysy ennen kuin asiakirja avataan koko näytön tilassa
 	Ask whether to recognize the current page or all pages when editing a scan.	Kysy skannattua asiakirjaa muokattaessa, tunnistetaanko nykyinen sivu vai kaikki sivut.
+	Asking {server}…	Kysytään palvelimelta {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Kysyy uusinta julkaisua GitHubista. Mitään ei ladata tai asenneta automaattisesti.
 	Associated with content	Liitetty sisältöön
 	At least one signature has problems.	Vähintään yhdessä allekirjoituksessa on ongelmia.
@@ -364,6 +365,8 @@ certificate	Basic constraints	Perusrajoitukset
 	Cancel reverse sides	Cancel reverse sides
 	Cancelled	Peruttu
 	Cancelling…	Peruutetaan…
+	Card driver (PKCS #11)	Kortin ohjain (PKCS #11)
+	Card PIN	Kortin PIN-koodi
 	Case-sensitive	Sama kirjainkoko
 	Category:	Luokka:
 	CCITT Group 4	CCITT ryhmä 4
@@ -1199,6 +1202,7 @@ key	Home	Home
 	In multiple files	Useissa tiedostoissa
 	In streams that use LZW encoding, use Flate instead	Koodaa LZW-koodatut virrat Flate-menetelmällä
 	In this file	Tässä tiedostossa
+	Include revocation information when signing (LTV)	Sisällytä sulkutiedot allekirjoitettaessa (LTV)
 	Includes unsaved changes	Sisältää tallentamattomia muutoksia
 	Incorrect password. Try again.	Väärä salasana. Yritä uudelleen.
 	Indent	Sisennä
@@ -1549,6 +1553,7 @@ calendar weekday	Mo	Ma
 	No security	Ei suojausta
 	No sheets	Ei arkkeja
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Kehyksestä ei löytynyt allekirjoitusta. Siirrä kehys allekirjoituksen päälle tai nosta musteen herkkyyttä.
+	No signing certificate was found on a card. Is the card in the reader?	Yhdeltäkään kortilta ei löytynyt allekirjoitusvarmennetta. Onko kortti lukijassa?
 	No signing certificate was found on this device. Is it connected?	Tästä laitteesta ei löytynyt allekirjoitusvarmennetta. Onko se kytketty?
 	No status has been set.	Tilaa ei ole asetettu.
 	no such document	asiakirjaa ei ole
@@ -2321,11 +2326,14 @@ key	Shift	Vaihto
 	Signed after this signature, so what they signed includes it: {names}.	Allekirjoitettu tämän allekirjoituksen jälkeen, joten allekirjoitettu sisältö sisältää sen: {names}.
 	Signed and all signatures are valid.	Allekirjoitettu, ja kaikki allekirjoitukset ovat kelvollisia.
 	Signed and saved to {path}	Allekirjoitettu ja tallennettu: {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Allekirjoitettu ja tallennettu kohteeseen {path} ilman osaa sulkutiedoista: {problems}
 	Signer	Allekirjoittaja
 	Signer's name	Allekirjoittajan nimi
 	Signing service  ·  	Allekirjoituspalvelu  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Allekirjoitus käyttää silloin verkkoa: aikaleimapalvelin saa allekirjoituksen tiivisteen, ja varmentajilta kysytään, onko varmenteita suljettu. Molemmilla allekirjoitukset ovat PAdES B-LTA -muotoisia.
 	Signing time	Allekirjoitusaika
 	Signing time is from the clock on the signer's computer.	Allekirjoitusaika on peräisin allekirjoittajan tietokoneen kellosta.
+	Signing was cancelled; nothing was saved.	Allekirjoitus peruutettiin; mitään ei tallennettu.
 	Signing…	Allekirjoitetaan…
 	Signing… Confirm the signature on your other device.	Allekirjoitetaan… Vahvista allekirjoitus toisella laitteellasi.
 	Simplified field notation:	Yksinkertaistettu kenttämerkintä:
@@ -2340,6 +2348,7 @@ key	Shift	Vaihto
 scroll speed	Slow	Hidas
 	Smaller pages	Pienemmät sivut
 	Smaller thumbnails	Smaller thumbnails
+	Smart card  ·  	Älykortti  ·  
 	Snap to drawing	Tartu piirustukseen
 	Snapping	Tartunta
 	Social Security Number	Sosiaaliturvatunnus
@@ -2470,6 +2479,7 @@ calendar weekday	Th	To
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	alueen, välien ja sarakeleveyksien on oltava lukuja, välien vähintään 0 ja jokaisen leveyden yli 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.
+	the certificate authorities	varmentajat
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Kohteen {} varmenne ei salli näin montaa alempaa CA-varmennetta (polun pituus), joten sitä ei käytetä kohteen {} vahvistamiseen.
 	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.
 	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	Kohteen {} varmenne ei ole varmenteita myöntävä CA-varmenne, joten sitä ei käytetä kohteen {} vahvistamiseen.
@@ -2507,6 +2517,7 @@ calendar weekday	Th	To
 	The document now conforms to {level}; save it to keep the changes	Asiakirja on nyt {level}-yhteensopiva; tallenna se, jotta muutokset säilyvät
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Asiakirja avautuu ilman salasanaa; tätä salasanaa tarvitaan rajoitusten muuttamiseen. Se otetaan käyttöön tallennettaessa.
 	The document was closed before it could be saved.	Asiakirja suljettiin ennen kuin se ehdittiin tallentaa.
+	The document wasn't signed: {e}	Asiakirjaa ei allekirjoitettu: {e}
 	The document will no longer be certified.	Asiakirja ei ole enää sertifioitu.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Asiakirjaan upotetut sulkutiedot osoittavat, ettei allekirjoittajan varmennetta ole peruutettu.
 	The document's security settings don't allow copying text and images	Asiakirjan suojausasetukset eivät salli tekstin ja kuvien kopiointia
@@ -2562,6 +2573,7 @@ calendar weekday	Th	To
 	The passwords do not match.	Salasanat eivät täsmää.
 	The passwords don't match.	Salasanat eivät täsmää.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF-tekstifontit eivät pysty piirtämään merkkiä ”{c}” ({code}). Valitse tuettua tekstiä.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN-koodi menee vain kortille; PdfCraft ei tallenna sitä.
 	The PIN is incorrect.	PIN-koodi on väärä.
 	The preview could not be shown.	The preview could not be shown.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	Tulostinohjaimen omat asetukset tälle tulostukselle: paperilokero, paperityyppi, viimeistely ym.
@@ -2634,6 +2646,7 @@ calendar weekday	Th	To
 	the signing service rejected the PIN	allekirjoituspalvelu hylkäsi PIN-koodin
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	allekirjoituspalvelu hylkäsi PIN-koodin tai kertakäyttökoodin (kertakäyttökoodi on voinut vanhentua)
 	the signing service rejected the user name or password	allekirjoituspalvelu hylkäsi käyttäjänimen tai salasanan
+	The smart card's digital IDs couldn't be listed: {e}	Älykortin digitaalisia tunnuksia ei voitu luetella: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Vakiofontit eivät pysty piirtämään merkkiä ”{c}” ({code}). Toistaiseksi tekstinä voi lisätä vain länsieurooppalaisia merkkejä.
 	The text is the same	Teksti on sama
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	tekstintunnistusmalleja ei ole asennettu (asenna PdfCraft uudelleen tai aseta PDFCRAFT_MODELS osoittamaan mallien kansioon)
@@ -2739,6 +2752,8 @@ calendar weekday	Th	To
 	Time	Aika
 	Timed responses	Ajastetut vastaukset
 	Timestamp	Aikaleima
+	Timestamp server	Aikaleimapalvelin
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Aikaleimat ja sulkutiedot vaativat työpöytäsovelluksen. Poista ne käytöstä kohdassa Asetukset ▸ Allekirjoitukset, jotta voit allekirjoittaa tässä.
 	Title	Otsikko
 	to	–
 	To change locked fields, also set Locked to No.	Jos haluat muuttaa lukittuja kenttiä, aseta myös Lukittu-arvoksi Ei.
@@ -2826,6 +2841,7 @@ signature pad	Type	Kirjoita
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Käytä pilvivarmennetta (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Käytä laitteen digitaalista tunnusta (älykortti, USB-tunnus tai pilvivarmenne)
 	Use a Digital ID from a file	Käytä tiedostossa olevaa digitaalista tunnusta
+	Use a smart card or token	Käytä älykorttia tai tunnistetta
 	Use custom DPI	Käytä mukautettua DPI-arvoa
 	Use each image's embedded DPI; use 72 DPI when it is absent.	Käytä kunkin kuvan upotettua DPI-arvoa; käytä 72 DPI:tä, jos sitä ei ole.
 	Use Flate to encode streams that are not encoded	Koodaa koodaamattomat virrat Flate-menetelmällä

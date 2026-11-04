@@ -282,6 +282,7 @@
 	Ask in any language	可以用任何语言提问
 	Ask to scan more pages	询问是否继续扫描更多页面
 	Ask whether to recognize the current page or all pages when editing a scan.	编辑扫描文档时，询问是识别当前页还是所有页面。
+	Asking {server}…	正在询问 {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	向 GitHub 查询最新版本。不会自动下载或安装任何内容。
 	Assistant	助手
 	Associated with content	与内容关联
@@ -379,6 +380,8 @@
 	Cancel reverse sides	取消背面扫描
 	Cancelled	已取消
 	Cancelling…	正在取消…
+	Card driver (PKCS #11)	卡驱动程序 (PKCS #11)
+	Card PIN	卡 PIN
 	Case-sensitive	区分大小写
 	Category:	类别：
 	CCITT Group 4	CCITT 第 4 组
@@ -1266,6 +1269,7 @@ key	Home	Home
 	In new window	在新窗口中打开
 	In streams that use LZW encoding, use Flate instead	在使用 LZW 编码的流中改用 Flate
 	In this file	当前文件
+	Include revocation information when signing (LTV)	签名时包含吊销信息 (LTV)
 	Includes unsaved changes	包含未保存的更改
 	Incompatible	不兼容
 	Incorrect password. Try again.	密码不正确，请重试。
@@ -1641,6 +1645,7 @@ key	Home	Home
 	No security	无安全性
 	No sheets	无纸张
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	框内未找到签名。请将框移到签名上，或提高墨迹灵敏度。
+	No signing certificate was found on a card. Is the card in the reader?	未在卡上找到签名证书。卡是否已插入读卡器？
 	No signing certificate was found on this device. Is it connected?	此设备上未找到签名证书。设备已连接吗？
 	No size estimate: {e}	无法估算大小：{e}
 	No status has been set.	尚未设置状态。
@@ -2489,6 +2494,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	在此签名之后添加、且签名内容包含此签名的签名：{names}。
 	Signed and all signatures are valid.	已签名，所有签名均有效。
 	Signed and saved to {path}	已签名并保存到{path}
+	Signed and saved to {path}, without some revocation information: {problems}	已签名并保存到 {path}，但缺少部分吊销信息：{problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	由 {signer} 签名于 {time}；内容与所签内容不一致；未检查签名者的可信度。
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	由 {signer} 签名于 {time}；内容与所签内容一致；未检查签名者的可信度。
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	由 {signer} 签名；内容与所签内容不一致；未检查签名者的可信度。
@@ -2498,7 +2504,9 @@ key	Shift	Shift
 	Signers	签名者数量
 	Signing	签名
 	Signing service  ·  	签名服务 · 
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	签名时将联网：时间戳服务器会收到签名的哈希值，并向证书颁发机构查询证书是否已吊销。两者都启用时，签名为 PAdES B-LTA。
 	Signing time	签署时间
+	Signing was cancelled; nothing was saved.	已取消签名；未保存任何内容。
 	Signing…	正在签名…
 	Signing… Confirm the signature on your other device.	正在签名… 请在您的另一台设备上确认签名。
 	Silhouettes	轮廓
@@ -2516,6 +2524,7 @@ scroll speed	Slow	慢
 	Smaller pages	缩小页面
 	Smaller text	缩小文字
 	Smaller thumbnails	缩小缩略图
+	Smart card  ·  	智能卡  ·  
 	Snap	吸附
 	Snap to drawing	吸附到图面
 	Snap to points and lines (Alt skips it)	吸附到点和线（按住 Alt 跳过）
@@ -2661,6 +2670,7 @@ document scrollbar width	Standard	标准
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API 密钥将以未加密方式发送到此地址。除非服务器位于你信任的网络中，否则请使用 https://。
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	稿台一次扫描一页。先扫正面，翻面后再扫背面。
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	计算顺序中有 {n} 个不计算任何内容的条目。“修正顺序”会将其删除。
+	the certificate authorities	证书颁发机构
 	the certificate expired on {date}	证书已于 {date} 过期
 	The checker found 1 problem which may prevent the document from being fully accessible.	检查器发现 1 个问题，可能导致文档无法完全无障碍。
 	The checker found no problems in this document.	检查器在本文档中未发现问题。
@@ -2686,6 +2696,7 @@ document scrollbar width	Standard	标准
 	The document now conforms to {level}; save it to keep the changes	文档现已符合{level}；保存以保留更改
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	打开文档无需密码；更改限制需要此密码。保存时应用。
 	The document was changed in another window. Check your text, then apply it again.	文档已在另一个窗口中被更改。请检查您的文字，然后再次应用。
+	The document wasn't signed: {e}	文档未签名：{e}
 	The document will no longer be certified.	文档将不再处于认证状态。
 	The document's security settings don't allow copying text and images	文档安全设置不允许复制文本和图像
 	The document's security settings don't allow filling in form fields	文档安全设置不允许填写表单域
@@ -2736,6 +2747,7 @@ document scrollbar width	Standard	标准
 	The password is incorrect.	密码不正确。
 	The password is only used to read the file; it isn't saved.	密码仅用于读取文件，不会被保存。
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF 文本字体无法显示“{c}”（{code}）。请选择受支持的文本。
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN 只发送到卡上；PdfCraft 不会保存它。
 	The PIN is incorrect.	PIN 不正确。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	无法列出 PKCS #11 令牌的数字 ID：{e}
 	The preview could not be shown.	无法显示预览。
@@ -2784,6 +2796,7 @@ document scrollbar width	Standard	标准
 	the signing service rejected the PIN	签名服务拒绝了 PIN
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	签名服务拒绝了 PIN 或 OTP（OTP 可能已过期）
 	the signing service rejected the user name or password	签名服务拒绝了用户名或密码
+	The smart card's digital IDs couldn't be listed: {e}	无法列出智能卡的数字 ID：{e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	标准字体无法显示“{c}”（{code}）。目前只能添加西欧字符作为文本。
 	The standard it must meet and where the file goes	需要满足的标准，以及文件的去向
 	The text is the same	文本相同
@@ -2887,6 +2900,8 @@ document scrollbar width	Standard	标准
 	Tile scale:	平铺比例：
 	Timed responses	限时响应
 	Timestamp	时间戳
+	Timestamp server	时间戳服务器
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	时间戳和吊销信息需要桌面应用。要在此处签名，请在 首选项 ▸ 签名 中将其关闭。
 	to	到
 	To change locked fields, also set Locked to No.	要更改锁定的字段，还需将“锁定”设为“否”。
 	to {n}	到 {n}
@@ -2976,6 +2991,7 @@ document scrollbar width	Standard	标准
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	使用设备中的数字 ID（智能卡、USB 令牌或云证书）
 	Use a Digital ID from a file	使用文件中的数字 ID
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	使用签名创建设备（PKCS #11 模块：智能卡、令牌、用于 mSzafir 的 CloudSigner）
+	Use a smart card or token	使用智能卡或令牌
 	Use basic detection	使用基本检测
 	Use custom DPI	使用自定义 DPI
 	Use default font	恢复默认字体

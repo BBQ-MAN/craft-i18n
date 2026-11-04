@@ -277,6 +277,7 @@ calendar date	April	Сәуір
 	Ask before a document opens in Full Screen mode	Құжат толық экран режимінде ашылар алдында сұрау
 	Ask in any language	Кез келген тілде сұраңыз
 	Ask whether to recognize the current page or all pages when editing a scan.	Сканерленген құжатты өңдегенде ағымдағы бетті немесе барлық беттерді тану керектігін сұрау.
+	Asking {server}…	{server} сұралуда…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	GitHub-тан соңғы шығарылымды сұрайды. Ештеңе автоматты түрде жүктелмейді немесе орнатылмайды.
 	Assistant	Көмекші
 	Associated with content	Мазмұнмен байланысқан
@@ -370,6 +371,8 @@ calendar date	August	Тамыз
 	Cancel reverse sides	Артқы жақтарды болдырмау
 	Cancelled	Бас тартылды
 	Cancelling…	Бас тартылуда…
+	Card driver (PKCS #11)	Карта драйвері (PKCS #11)
+	Card PIN	Картаның PIN коды
 	Case-sensitive	Регистрді ескеру
 	CCITT Group 4	CCITT 4-топ
 	Center Footer Text	Ортаңғы астыңғы колонтитул мәтіні
@@ -1208,6 +1211,7 @@ key	Home	Home
 	In new window	Жаңа терезеде
 	In streams that use LZW encoding, use Flate instead	LZW кодталған ағындарда оның орнына Flate қолдану
 	In this file	Осы файлда
+	Include revocation information when signing (LTV)	Қол қою кезінде кері шақыру туралы мәліметті қосу (LTV)
 	Includes unsaved changes	Сақталмаған өзгерістері бар
 	Incompatible	Үйлесімсіз
 	Incorrect password. Try again.	Құпиясөз дұрыс емес. Қайталап көріңіз.
@@ -1563,6 +1567,7 @@ calendar date	May	Мамыр
 	No security	Қауіпсіздік жоқ
 	No sheets	Парақтар жоқ
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Жақтауда қолтаңба табылмады. Жақтауды қолтаңбаның үстіне жылжытыңыз немесе сия сезімталдығын арттырыңыз.
+	No signing certificate was found on a card. Is the card in the reader?	Ешбір картадан қол қою сертификаты табылмады. Карта оқу құрылғысында ма?
 	No signing certificate was found on this device. Is it connected?	Бұл құрылғыда қолтаңба сертификаты табылмады. Ол қосулы ма?
 	No size estimate: {e}	Өлшем болжамы жоқ: {e}
 	No status has been set.	Күй орнатылмаған.
@@ -2379,6 +2384,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	Осыдан кейін қосылған және қол қойылған мазмұны мұны қамтитын қолтаңбалар: {names}.
 	Signed and all signatures are valid.	Қол қойылды, барлық қолтаңбалар жарамды.
 	Signed and saved to {path}	Қол қойылып, {path} жолына сақталды
+	Signed and saved to {path}, without some revocation information: {problems}	Қол қойылып, {path} ішіне сақталды, кері шақыру туралы кейбір мәліметсіз: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	{signer} {time} уақытында қол қойған; мазмұн қол қойылған нәрсеге сәйкес келмейді; қол қоюшының сенімділігі тексерілмеген.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	{signer} {time} уақытында қол қойған; мазмұн қол қойылған нәрсеге сәйкес келеді; қол қоюшының сенімділігі тексерілмеген.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	{signer} қол қойған; мазмұн қол қойылған нәрсеге сәйкес келмейді; қол қоюшының сенімділігі тексерілмеген.
@@ -2388,7 +2394,9 @@ key	Shift	Shift
 	Signers	Қол қоюшылар
 	Signing	Қол қою
 	Signing service  ·  	Қолтаңба қызметі  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Сонда қол қою желіні пайдаланады: уақыт белгісі сервері қолтаңбаның хешін алады, ал куәландыру орталықтарынан сертификаттардың кері шақырылғаны сұралады. Екеуі де қосулы болса, қолтаңбалар PAdES B-LTA болады.
 	Signing time	Қол қою уақыты
+	Signing was cancelled; nothing was saved.	Қол қою тоқтатылды; ештеңе сақталмады.
 	Signing…	Қол қойылуда…
 	Signing… Confirm the signature on your other device.	Қол қойылуда… Қолтаңбаны басқа құрылғыңызда растаңыз.
 	Simplified field notation:	Жеңілдетілген өріс жазылуы:
@@ -2405,6 +2413,7 @@ scroll speed	Slow	Баяу
 	Smaller pages	Кішірек беттер
 	Smaller text	Кішірек мәтін
 	Smaller thumbnails	Кішірек нобайлар
+	Smart card  ·  	Смарт-карта  ·  
 	Snap to drawing	Сызбаға түйістіру
 	Snap to points and lines (Alt skips it)	Нүктелер мен сызықтарға тарту (Alt өткізіп жібереді)
 	Snapping	Түйістіру
@@ -2544,6 +2553,7 @@ certificate	Subject	Субъект
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API кілті осы мекенжайға шифрланбай жіберіледі. Сервер сенімді желіде болмаса, https:// пайдаланыңыз.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Әйнек бір уақытта бір бет сканерлейді. Алдыңғысын сканерлеп, аударып, артқысын сканерлеңіз.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Есептеу ретінде ештеңе есептемейтін {n} жазба бар. «Ретті түзету» оны жояды.|Есептеу ретінде ештеңе есептемейтін {n} жазба бар. «Ретті түзету» оларды жояды.
+	the certificate authorities	куәландыру орталықтары
 	the certificate expired on {date}	сертификаттың мерзімі {date} күні аяқталды
 	The checker found 1 problem which may prevent the document from being fully accessible.	Тексеру барысында құжаттың толық қолжетімді болуына кедергі келтіруі мүмкін 1 мәселе табылды.
 	The checker found no problems in this document.	Тексеру барысында бұл құжатта ешбір мәселе табылмады.
@@ -2570,6 +2580,7 @@ certificate	Subject	Субъект
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Құжат құпиясөзсіз ашылады; шектеулерді өзгерту үшін осы құпиясөз керек. Ол сақтау кезінде қолданылады.
 	The document was changed in another window. Check your text, then apply it again.	Құжат басқа терезеде өзгертілді. Мәтінді тексеріп, қайта қолданыңыз.
 	The document was closed before it could be saved.	Құжат сақталмай тұрып жабылды.
+	The document wasn't signed: {e}	Құжатқа қол қойылмады: {e}
 	The document will no longer be certified.	Құжат енді куәландырылмаған болады.
 	The document's security settings don't allow copying text and images	Құжаттың қауіпсіздік параметрлері мәтін мен суреттерді көшіруге рұқсат бермейді
 	The document's security settings don't allow filling in form fields	Құжаттың қауіпсіздік параметрлері форма өрістерін толтыруға рұқсат бермейді
@@ -2619,6 +2630,7 @@ certificate	Subject	Субъект
 	The password is incorrect.	Құпиясөз қате.
 	The password is only used to read the file; it isn't saved.	Құпиясөз файлды оқу үшін ғана қолданылады; ол сақталмайды.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF мәтін қаріптері «{c}» таңбасын ({code}) сала алмайды. Қолдау көрсетілетін мәтінді таңдаңыз.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN код тек картаға жіберіледі; PdfCraft оны сақтамайды.
 	The PIN is incorrect.	PIN қате.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 токендеріндегі цифрлық ID-лерді тізімдеу мүмкін болмады: {e}
 	The preview could not be shown.	Алдын ала көріністі көрсету мүмкін болмады.
@@ -2666,6 +2678,7 @@ certificate	Subject	Субъект
 	the signing service rejected the PIN	қолтаңба қызметі PIN-кодты қабылдамады
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	қолтаңба қызметі PIN-кодты немесе OTP кодын қабылдамады (OTP кодының мерзімі өтіп кеткен болуы мүмкін)
 	the signing service rejected the user name or password	қолтаңба қызметі пайдаланушы атын немесе құпиясөзді қабылдамады
+	The smart card's digital IDs couldn't be listed: {e}	Смарт-картаның цифрлық ID-лерін тізімдеу мүмкін болмады: {e}
 	The standard it must meet and where the file goes	Қанағаттандыруы тиіс стандарт және файлдың бағыты
 	The text is the same	Мәтін бірдей
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	мәтінді тану модельдері орнатылмаған (PdfCraft қайта орнатыңыз немесе PDFCRAFT_MODELS айнымалысына олар жатқан қалтаны көрсетіңіз)
@@ -2766,6 +2779,8 @@ certificate	Subject	Субъект
 	Tile scale:	Фрагменттердің масштабы:
 	Timed responses	Уақытпен шектеулі жауаптар
 	Timestamp	Уақыт белгісі
+	Timestamp server	Уақыт белгісі сервері
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Уақыт белгілері мен кері шақыру туралы мәліметке жұмыс үстелі қолданбасы қажет. Осы жерде қол қою үшін оларды Баптаулар ▸ Қолтаңбалар бөлімінде өшіріңіз.
 	to	дейін
 	To change locked fields, also set Locked to No.	Бұғатталған өрістерді өзгерту үшін сонымен қатар «Бұғаттау» параметрін «Жоқ» етіп қойыңыз.
 	to {n}	{n} дейін
@@ -2848,6 +2863,7 @@ signature pad	Type	Теру
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Құрылғыдағы цифрлық ID-ді пайдалану (смарт-карта, USB токен немесе бұлттық сертификат)
 	Use a Digital ID from a file	Файлдағы цифрлық ID-ді пайдалану
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Қолтаңба жасау құрылғысын пайдалану (PKCS #11 модулі: смарт-карта, токен, mSzafir үшін CloudSigner)
+	Use a smart card or token	Смарт-картаны немесе токенді пайдалану
 	Use basic detection	Негізгі анықтауды пайдалану
 	Use custom DPI	Арнайы DPI қолдану
 	Use default font	Әдепкі қаріпті пайдалану

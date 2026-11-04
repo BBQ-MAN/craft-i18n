@@ -288,6 +288,7 @@
 	Ask in any language	どの言語でも質問できます
 	Ask to scan more pages	さらにスキャンするか確認する
 	Ask whether to recognize the current page or all pages when editing a scan.	スキャンした文書の編集時に、現在のページとすべてのページのどちらを認識するか確認します。
+	Asking {server}…	{server} に問い合わせています…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	GitHub で最新リリースを確認します。自動でダウンロードやインストールは行いません。
 	Assistant	アシスタント
 	Associated with content	コンテンツとの関連付け
@@ -387,6 +388,8 @@
 	Cancel reverse sides	裏面のスキャンをやめる
 	Cancelled	キャンセル済み
 	Cancelling…	キャンセルしています…
+	Card driver (PKCS #11)	カードドライバー (PKCS #11)
+	Card PIN	カードの PIN
 	Case-sensitive	大文字と小文字を区別
 	CCITT Group 4	CCITT グループ 4
 	Center Footer Text	中央フッターのテキスト
@@ -1279,6 +1282,7 @@ key	Home	Home
 	In new window	新規ウインドウで開く
 	In streams that use LZW encoding, use Flate instead	LZW エンコードのストリームを Flate でエンコード
 	In this file	このファイル内
+	Include revocation information when signing (LTV)	署名時に失効情報を含める (LTV)
 	Includes unsaved changes	未保存の変更を含みます
 	Incompatible	互換性なし
 	Incorrect password. Try again.	パスワードが正しくありません。もう一度入力してください。
@@ -1655,6 +1659,7 @@ key	Home	Home
 	No security	セキュリティなし
 	No sheets	用紙なし
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	枠内に署名が見つかりません。枠を署名に合わせるか、インクの感度を上げてください。
+	No signing certificate was found on a card. Is the card in the reader?	署名用の証明書がカードに見つかりません。カードはリーダーに挿入されていますか?
 	No signing certificate was found on this device. Is it connected?	このデバイスに署名用の証明書が見つかりません。接続されていますか?
 	No size estimate: {e}	サイズを推定できません: {e}
 	No status has been set.	ステータスは設定されていません。
@@ -2508,6 +2513,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	この署名より後に追加され、署名した内容にこの署名を含む署名: {names}。
 	Signed and all signatures are valid.	署名済みで、すべての署名が有効です。
 	Signed and saved to {path}	署名して {path} に保存しました
+	Signed and saved to {path}, without some revocation information: {problems}	{path} に署名して保存しました（一部の失効情報なし）: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	{signer} が {time} に署名しました。内容は署名されたものと一致していません。署名者の信頼性は確認されていません。
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	{signer} が {time} に署名しました。内容は署名されたものと一致しています。署名者の信頼性は確認されていません。
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	{signer} が署名しました。内容は署名されたものと一致していません。署名者の信頼性は確認されていません。
@@ -2517,7 +2523,9 @@ key	Shift	Shift
 	Signers	署名者の数
 	Signing	署名
 	Signing service  ·  	署名サービス · 
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	署名時にネットワークを使用します。タイムスタンプサーバーには署名のハッシュが送られ、認証局には証明書が失効していないかを問い合わせます。両方を有効にすると、署名は PAdES B-LTA になります。
 	Signing time	署名日時
+	Signing was cancelled; nothing was saved.	署名をキャンセルしました。何も保存されていません。
 	Signing…	署名しています…
 	Signing… Confirm the signature on your other device.	署名しています… もう一方のデバイスで署名を承認してください。
 	Silhouettes	輪郭
@@ -2535,6 +2543,7 @@ scroll speed	Slow	遅い
 	Smaller pages	ページを小さく表示
 	Smaller text	文字を小さく
 	Smaller thumbnails	サムネイルを小さく
+	Smart card  ·  	スマートカード · 
 	Snap	スナップ
 	Snap to drawing	図面にスナップ
 	Snap to points and lines (Alt skips it)	点と線にスナップ（Alt で一時解除）
@@ -2684,6 +2693,7 @@ document scrollbar width	Standard	標準
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API キーは暗号化されずにこのアドレスへ送信されます。サーバーが信頼できるネットワーク内にある場合を除き、https:// を使用してください。
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	原稿台は一度に 1 ページです。おもて面をスキャンし、裏返して裏面をスキャンします。
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	計算順序に、何も計算しない項目が {n} 件あります。「順序を修正」で削除されます。
+	the certificate authorities	認証局
 	the certificate expired on {date}	証明書は {date} に有効期限が切れています
 	The checker found 1 problem which may prevent the document from being fully accessible.	文書のアクセシビリティを妨げる可能性のある問題が 1 件見つかりました。
 	The checker found no problems in this document.	この文書に問題は見つかりませんでした。
@@ -2711,6 +2721,7 @@ document scrollbar width	Standard	標準
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	文書はパスワードなしで開けます。制限を変更する際にこのパスワードが必要になります。保存時に適用されます。
 	The document was changed in another window. Check your text, then apply it again.	別のウインドウで文書が変更されました。テキストを確認して、もう一度適用してください。
 	The document was closed before it could be saved.	保存する前に文書が閉じられました。
+	The document wasn't signed: {e}	文書は署名されませんでした: {e}
 	The document will no longer be certified.	文書は証明済みではなくなります。
 	The document's security settings don't allow copying text and images	文書のセキュリティ設定により、テキストと画像のコピーは許可されていません
 	The document's security settings don't allow filling in form fields	文書のセキュリティ設定によりフォームフィールドへの入力が許可されていません
@@ -2762,6 +2773,7 @@ document scrollbar width	Standard	標準
 	The password is incorrect.	パスワードが正しくありません。
 	The password is only used to read the file; it isn't saved.	パスワードはファイルの読み込みにのみ使用され、保存されません。
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF テキスト用フォントでは「{c}」（{code}）を表示できません。対応している文字を使用してください。
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN はカードにのみ送られ、PdfCraft には保存されません。
 	The PIN is incorrect.	PIN が正しくありません。
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 トークンのデジタル ID の一覧を取得できませんでした：{e}
 	The preview could not be shown.	プレビューを表示できませんでした。
@@ -2810,6 +2822,7 @@ document scrollbar width	Standard	標準
 	the signing service rejected the PIN	署名サービスが PIN を拒否しました
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	署名サービスが PIN または OTP を拒否しました（OTP の有効期限が切れている可能性があります）
 	the signing service rejected the user name or password	署名サービスがユーザー名またはパスワードを拒否しました
+	The smart card's digital IDs couldn't be listed: {e}	スマートカードのデジタル ID を一覧表示できませんでした: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	標準フォントでは「{c}」（{code}）を表示できません。現在、テキストとして追加できるのは西ヨーロッパの文字のみです。
 	The standard it must meet and where the file goes	満たすべき規格とファイルの宛先
 	The text is the same	テキストは同一です
@@ -2915,6 +2928,8 @@ document scrollbar width	Standard	標準
 	Time	時刻
 	Timed responses	応答時間の制限
 	Timestamp	タイムスタンプ
+	Timestamp server	タイムスタンプサーバー
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	タイムスタンプと失効情報にはデスクトップアプリが必要です。ここで署名するには、環境設定 ▸ 署名 でオフにしてください。
 	to	終了
 	To change locked fields, also set Locked to No.	ロックされたフィールドを変更するには「ロック」を「いいえ」に設定してください。
 	to {n}	終了 {n}
@@ -3005,6 +3020,7 @@ signature pad	Type	入力
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	デバイスのデジタル ID を使用 (スマートカード、USB トークン、クラウド証明書)
 	Use a Digital ID from a file	ファイルのデジタル ID を使用
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	署名生成デバイスを使用（PKCS #11 モジュール：スマートカード、トークン、mSzafir 用 CloudSigner）
+	Use a smart card or token	スマートカードまたはトークンを使用
 	Use basic detection	基本の検出を使用
 	Use custom DPI	カスタム DPI を使用
 	Use default font	既定のフォントに戻す

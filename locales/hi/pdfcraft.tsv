@@ -292,6 +292,7 @@ calendar date	April	अप्रैल
 	Ask about this document	इस दस्तावेज़ के बारे में पूछें
 	Ask before a document opens in Full Screen mode	दस्तावेज़ को फ़ुल स्क्रीन मोड में खोलने से पहले पूछें
 	Ask whether to recognize the current page or all pages when editing a scan.	स्कैन संपादित करते समय पूछें कि वर्तमान पृष्ठ का पाठ पहचानना है या सभी पृष्ठों का।
+	Asking {server}…	{server} से पूछा जा रहा है…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	GitHub से नवीनतम रिलीज़ की क्वेरी करता है। कुछ भी स्वतः डाउनलोड या इंस्टॉल नहीं होता।
 	Associated with content	सामग्री से संबद्ध
 	At least one signature has problems.	कम से कम एक हस्ताक्षर में समस्याएँ हैं।
@@ -387,6 +388,8 @@ certificate	Basic constraints	मूल बाधाएँ
 	Cancel reverse sides	Cancel reverse sides
 	Cancelled	रद्द किया गया
 	Cancelling…	रद्द हो रहा है…
+	Card driver (PKCS #11)	कार्ड ड्राइवर (PKCS #11)
+	Card PIN	कार्ड PIN
 	Case-sensitive	केस-संवेदी
 	Category:	श्रेणी:
 	CCITT Group 4	CCITT समूह 4
@@ -1296,6 +1299,7 @@ key	Home	Home
 	In multiple files	कई फ़ाइलों में
 	In streams that use LZW encoding, use Flate instead	LZW एन्कोडिंग वाली स्ट्रीम में इसके बजाय Flate का उपयोग करें
 	In this file	इस फ़ाइल में
+	Include revocation information when signing (LTV)	हस्ताक्षर करते समय निरस्तीकरण जानकारी शामिल करें (LTV)
 	Includes unsaved changes	असहेजे बदलाव शामिल हैं
 	Incorrect password. Try again.	गलत पासवर्ड। पुनः प्रयास करें।
 	Indent	इंडेंट बढ़ाएँ
@@ -1684,6 +1688,7 @@ calendar weekday	Mo	सोम
 	No security	कोई सुरक्षा नहीं
 	No sheets	कोई शीट नहीं
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	फ़्रेम में कोई हस्ताक्षर नहीं मिला। फ़्रेम को हस्ताक्षर पर ले जाएँ या स्याही संवेदनशीलता बढ़ाएँ।
+	No signing certificate was found on a card. Is the card in the reader?	किसी भी कार्ड पर हस्ताक्षर प्रमाणपत्र नहीं मिला। क्या कार्ड रीडर में है?
 	No signing certificate was found on this device. Is it connected?	इस डिवाइस पर कोई हस्ताक्षर प्रमाणपत्र नहीं मिला। क्या यह कनेक्ट है?
 	No status has been set.	कोई स्थिति निर्धारित नहीं की गई है।
 	no such document	ऐसा कोई दस्तावेज़ नहीं है
@@ -2523,11 +2528,14 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	इस हस्ताक्षर के बाद हस्ताक्षरित, इसलिए उन्होंने जिस पर हस्ताक्षर किए उसमें यह शामिल है: {names}।
 	Signed and all signatures are valid.	हस्ताक्षरित, और सभी हस्ताक्षर मान्य हैं।
 	Signed and saved to {path}	हस्ताक्षरित कर {path} पर सहेजा गया
+	Signed and saved to {path}, without some revocation information: {problems}	हस्ताक्षर करके {path} में सहेजा गया, कुछ निरस्तीकरण जानकारी के बिना: {problems}
 	Signer	हस्ताक्षरकर्ता
 	Signer's name	हस्ताक्षरकर्ता का नाम
 	Signing service  ·  	हस्ताक्षर सेवा  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	तब हस्ताक्षर ऑनलाइन होता है: टाइमस्टैम्प सर्वर को हस्ताक्षर का हैश मिलता है, और प्रमाणन प्राधिकरणों से पूछा जाता है कि क्या प्रमाणपत्र निरस्त हैं। दोनों के साथ, हस्ताक्षर PAdES B-LTA होते हैं।
 	Signing time	हस्ताक्षर करने का समय
 	Signing time is from the clock on the signer's computer.	हस्ताक्षर का समय हस्ताक्षरकर्ता के कंप्यूटर की घड़ी से लिया गया है।
+	Signing was cancelled; nothing was saved.	हस्ताक्षर रद्द किया गया; कुछ भी सहेजा नहीं गया।
 	Signing…	हस्ताक्षर हो रहा है…
 	Signing… Confirm the signature on your other device.	हस्ताक्षर हो रहा है… अपने दूसरे डिवाइस पर हस्ताक्षर की पुष्टि करें।
 	Simplified field notation:	सरलीकृत फ़ील्ड संकेतन:
@@ -2543,6 +2551,7 @@ key	Shift	Shift
 scroll speed	Slow	धीमी
 	Smaller pages	छोटे पृष्ठ
 	Smaller thumbnails	Smaller thumbnails
+	Smart card  ·  	स्मार्ट कार्ड  ·  
 	Snap to drawing	रेखाचित्र से स्नैप करें
 	Snapping	स्नैपिंग
 	Social Security Number	सामाजिक सुरक्षा संख्या
@@ -2682,6 +2691,7 @@ calendar weekday	Th	गुरु
 	That didn't work: an internal error stopped it ({m}). Your documents are unchanged.	वह काम नहीं कर पाया: एक आंतरिक त्रुटि ने उसे रोक दिया ({m})। आपके दस्तावेज़ नहीं बदले।
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	क्षेत्र, दूरी और कॉलमों की चौड़ाई संख्याएँ होनी चाहिए; दूरी 0 या अधिक और हर चौड़ाई 0 से अधिक
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
+	the certificate authorities	प्रमाणन प्राधिकरण
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	{} का प्रमाणपत्र अपने नीचे इतने सीए प्रमाणपत्रों (पाथ लंबाई) की अनुमति नहीं देता, इसलिए उसका उपयोग {} की पुष्टि के लिए नहीं किया जाता।
 	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	{} का प्रमाणपत्र प्रमाणपत्र जारी कर सकने वाला सीए प्रमाणपत्र नहीं है, इसलिए उसका उपयोग {} की पुष्टि के लिए नहीं किया जाता।
 	The certificate of {} was not valid at the time of signing, so it is not used to vouch for {}.	{} का प्रमाणपत्र हस्ताक्षर के समय मान्य नहीं था, इसलिए उसका उपयोग {} की पुष्टि के लिए नहीं किया जाता।
@@ -2718,6 +2728,7 @@ calendar weekday	Th	गुरु
 	The document now conforms to {level}; save it to keep the changes	दस्तावेज़ अब {level} के अनुरूप है; बदलाव बनाए रखने के लिए इसे सहेजें
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	दस्तावेज़ बिना पासवर्ड खुलता है; पाबंदियाँ बदलने के लिए यह पासवर्ड चाहिए। यह सहेजने पर लागू होता है।
 	The document was closed before it could be saved.	दस्तावेज़ सहेजे जाने से पहले ही बंद हो गया।
+	The document wasn't signed: {e}	दस्तावेज़ पर हस्ताक्षर नहीं हुआ: {e}
 	The document will no longer be certified.	दस्तावेज़ अब प्रमाणित नहीं रहेगा।
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	दस्तावेज़ में एम्बेड की गई निरस्तीकरण जानकारी दिखाती है कि हस्ताक्षरकर्ता का प्रमाणपत्र निरस्त नहीं किया गया है।
 	The document's security settings don't allow copying text and images	दस्तावेज़ की सुरक्षा सेटिंग्स टेक्स्ट और तस्वीरें कॉपी नहीं करने देतीं
@@ -2773,6 +2784,7 @@ calendar weekday	Th	गुरु
 	The passwords do not match.	पासवर्ड मेल नहीं खाते।
 	The passwords don't match.	पासवर्ड मेल नहीं खाते।
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	पीडीएफ़ टेक्स्ट फ़ॉन्ट “{c}” ({code}) नहीं बना सकते। समर्थित टेक्स्ट चुनें।
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN केवल कार्ड को जाता है; PdfCraft उसे नहीं रखता।
 	The PIN is incorrect.	पिन गलत है।
 	The preview could not be shown.	The preview could not be shown.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	इस छपाई के लिए प्रिंटर ड्राइवर की अपनी सेटिंग्स: काग़ज़ ट्रे, काग़ज़ का प्रकार, फ़िनिशिंग आदि।
@@ -2842,6 +2854,7 @@ calendar weekday	Th	गुरु
 	the signing service rejected the PIN	हस्ताक्षर सेवा ने PIN अस्वीकार कर दिया
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	हस्ताक्षर सेवा ने PIN या OTP अस्वीकार कर दिया (हो सकता है OTP की समय-सीमा समाप्त हो गई हो)
 	the signing service rejected the user name or password	हस्ताक्षर सेवा ने उपयोगकर्ता नाम या पासवर्ड अस्वीकार कर दिया
+	The smart card's digital IDs couldn't be listed: {e}	स्मार्ट कार्ड की डिजिटल ID सूचीबद्ध नहीं की जा सकीं: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	मानक फ़ॉन्ट “{c}” ({code}) नहीं बना सकते। फ़िलहाल टेक्स्ट के रूप में केवल पश्चिमी यूरोपीय अक्षर ही जोड़े जा सकते हैं।
 	The text is the same	टेक्स्ट एक जैसा है
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	टेक्स्ट पहचान मॉडल इंस्टॉल नहीं हैं (PdfCraft दोबारा इंस्टॉल करें, या PDFCRAFT_MODELS को उस फ़ोल्डर पर सेट करें जिसमें वे मौजूद हैं)
@@ -2944,6 +2957,8 @@ calendar weekday	Th	गुरु
 	Time	समय
 	Timed responses	समय-सीमित उत्तर
 	Timestamp	टाइमस्टैम्प
+	Timestamp server	टाइमस्टैम्प सर्वर
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	टाइमस्टैम्प और निरस्तीकरण जानकारी के लिए डेस्कटॉप ऐप चाहिए। यहाँ हस्ताक्षर करने के लिए उन्हें प्राथमिकताएँ ▸ हस्ताक्षर में बंद करें।
 	Title	शीर्षक
 	to	से
 	To change locked fields, also set Locked to No.	लॉक किए गए फ़ील्ड बदलने के लिए, “लॉक” को भी “नहीं” पर सेट करें।
@@ -3037,6 +3052,7 @@ signature pad	Type	टाइप करें
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	क्लाउड प्रमाणपत्र का उपयोग करें (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	किसी डिवाइस से डिजिटल आईडी का उपयोग करें (स्मार्ट कार्ड, USB टोकन या क्लाउड प्रमाणपत्र)
 	Use a Digital ID from a file	फ़ाइल से डिजिटल आईडी उपयोग करें
+	Use a smart card or token	स्मार्ट कार्ड या टोकन का उपयोग करें
 	Use custom DPI	कस्टम DPI उपयोग करें
 	Use each image's embedded DPI; use 72 DPI when it is absent.	हर छवि का एम्बेडेड DPI उपयोग करें; न होने पर 72 DPI उपयोग करें।
 	Use Flate to encode streams that are not encoded	जो स्ट्रीम एन्कोडेड नहीं हैं उन्हें Flate से एन्कोड करें

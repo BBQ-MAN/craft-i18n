@@ -282,6 +282,7 @@
 	Ask before a document opens in Full Screen mode	文件以全螢幕模式開啟前詢問
 	Ask in any language	可用任何語言提問
 	Ask to scan more pages	詢問是否繼續掃描更多頁面
+	Asking {server}…	正在詢問 {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	向 GitHub 搜尋最新版本。不會自動下載或安裝任何內容。
 	Assistant	助理
 	Associated with content	與內容關聯
@@ -1265,6 +1266,7 @@ key	Home	Home
 	In new window	在新視窗中開啟
 	In streams that use LZW encoding, use Flate instead	在使用 LZW 編碼的流中改用 Flate
 	In this file	在此檔案中
+	Include revocation information when signing (LTV)	簽署時包含撤銷資訊 (LTV)
 	Includes unsaved changes	包含未儲存的變更
 	Incorrect password. Try again.	密碼不正確，請重試。
 	Indent	縮排
@@ -2457,6 +2459,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	在此簽章之後加入、且簽署內容包含此簽章的簽章：{names}。
 	Signed and all signatures are valid.	已簽名，所有簽名均有效。
 	Signed and saved to {path}	已簽名並儲存到{path}
+	Signed and saved to {path}, without some revocation information: {problems}	已簽署並儲存到 {path}，但缺少部分撤銷資訊：{problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	由 {signer} 簽名於 {time}；內容與所簽內容不一致；未檢查簽名者的可信度。
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	由 {signer} 簽名於 {time}；內容與所簽內容一致；未檢查簽名者的可信度。
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	由 {signer} 簽名；內容與所簽內容不一致；未檢查簽名者的可信度。
@@ -2464,7 +2467,9 @@ key	Shift	Shift
 	Signer	簽署者
 	Signer's name	簽署者姓名
 	Signers	簽名者數量
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	簽署時將連線：時間戳記伺服器會收到簽章的雜湊值，並向憑證授權單位查詢憑證是否已撤銷。兩者都啟用時，簽章為 PAdES B-LTA。
 	Signing time	簽署時間
+	Signing was cancelled; nothing was saved.	已取消簽署；未儲存任何內容。
 	Silhouettes	輪廓
 	Simplified field notation:	簡化欄位表示法：
 	Single file	單一檔案
@@ -2621,6 +2626,7 @@ document scrollbar width	Standard	標準
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API 金鑰將以未加密方式傳送到此位址。除非伺服器位於你信任的網路中，否則請使用 https://。
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	計算順序中有 {n} 個不計算任何內容的項目。「修正順序」會將其刪除。
+	the certificate authorities	憑證授權單位
 	the certificate expired on {date}	憑證已於 {date} 到期
 	The checker found 1 problem which may prevent the document from being fully accessible.	檢驗器發現 1 個問題，可能導致文件無法完全無障礙。
 	The checker found no problems in this document.	檢驗器在本文件中未發現問題。
@@ -2644,6 +2650,7 @@ document scrollbar width	Standard	標準
 	The document now conforms to {level}; save it to keep the changes	文件現已符合{level}；儲存以保留更改
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	開啟文件無需密碼；更改限制需要此密碼。儲存時套用。
 	The document was changed in another window. Check your text, then apply it again.	文件已在另一個視窗中被變更。請檢查您的文字，然後再次套用。
+	The document wasn't signed: {e}	文件未簽署：{e}
 	The document will no longer be certified.	文件將不再處於認證狀態。
 	The document's security settings don't allow copying text and images	文件安全設定不允許複製文字和圖片
 	The document's security settings don't allow filling in form fields	文件安全設定不允許填寫表單欄位
@@ -2833,6 +2840,8 @@ document scrollbar width	Standard	標準
 	Tile scale:	平鋪比例：
 	Timed responses	限時回應
 	Timestamp	時間戳記
+	Timestamp server	時間戳記伺服器
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	時間戳記與撤銷資訊需要桌面版應用程式。若要在此簽署，請在 偏好設定 ▸ 簽章 中將其關閉。
 	to	到
 	To change locked fields, also set Locked to No.	若要變更鎖定的欄位，也須將「鎖定」設為「否」。
 	to {n}	到 {n}

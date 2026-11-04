@@ -290,6 +290,7 @@
 	Ask before a document opens in Full Screen mode	Bir belge tam ekran modunda açılmadan önce sor
 	Ask in any language	Herhangi bir dilde sorun
 	Ask whether to recognize the current page or all pages when editing a scan.	Taranmış bir belge düzenlenirken geçerli sayfanın mı yoksa tüm sayfaların mı tanınacağını sor.
+	Asking {server}…	{server} sorgulanıyor…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	En son sürüm için GitHub'ı sorgular. Hiçbir şey otomatik olarak indirilmez veya kurulmaz.
 	Assistant	Yardımcı
 	Associated with content	İçerikle ilişkili
@@ -386,6 +387,8 @@
 	Cancel reverse sides	Arka yüzleri iptal et
 	Cancelled	İptal edildi
 	Cancelling…	İptal ediliyor…
+	Card driver (PKCS #11)	Kart sürücüsü (PKCS #11)
+	Card PIN	Kart PIN'i
 	Case-sensitive	Büyük/küçük harfe duyarlı
 	CCITT Group 4	CCITT Grup 4
 	Center Footer Text	Orta Altbilgi Metni
@@ -1282,6 +1285,7 @@ key	Home	Home
 	In new window	Yeni pencerede
 	In streams that use LZW encoding, use Flate instead	LZW kodlamalı akışlarda bunun yerine Flate kullan
 	In this file	Bu dosyada
+	Include revocation information when signing (LTV)	İmzalarken iptal bilgilerini ekle (LTV)
 	Includes unsaved changes	Kaydedilmemiş değişiklikleri içerir
 	Incompatible	Uyumsuz
 	Incorrect password. Try again.	Yanlış parola. Tekrar deneyin.
@@ -1670,6 +1674,7 @@ calendar weekday	Mo	Pt
 	No security	Güvenlik yok
 	No sheets	Yaprak yok
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Çerçevede imza bulunamadı. Çerçeveyi imzanın üzerine taşıyın veya mürekkep hassasiyetini artırın.
+	No signing certificate was found on a card. Is the card in the reader?	Hiçbir kartta imzalama sertifikası bulunamadı. Kart okuyucuda mı?
 	No signing certificate was found on this device. Is it connected?	Bu cihazda imzalama sertifikası bulunamadı. Bağlı mı?
 	No size estimate: {e}	Boyut tahmini yok: {e}
 	No status has been set.	Herhangi bir durum ayarlanmadı.
@@ -2541,6 +2546,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	Bundan sonra eklenen ve imzalı içeriği bunu kapsayan imzalar: {names}.
 	Signed and all signatures are valid.	İmzalandı ve tüm imzalar geçerli.
 	Signed and saved to {path}	İmzalandı ve {path} konumuna kaydedildi
+	Signed and saved to {path}, without some revocation information: {problems}	İmzalandı ve {path} konumuna kaydedildi, bazı iptal bilgileri olmadan: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	{signer} tarafından {time} tarihinde imzalandı; içerik imzalananla eşleşmiyor; imzalayanın güveni denetlenmedi.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	{signer} tarafından {time} tarihinde imzalandı; içerik imzalananla eşleşiyor; imzalayanın güveni denetlenmedi.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	{signer} tarafından imzalandı; içerik imzalananla eşleşmiyor; imzalayanın güveni denetlenmedi.
@@ -2550,8 +2556,10 @@ key	Shift	Shift
 	Signers	İmzalayanlar
 	Signing	İmzalama
 	Signing service  ·  	İmza hizmeti  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	İmzalama bu durumda ağa bağlanır: zaman damgası sunucusu imzanın bir özetini alır ve sertifika yetkililerine sertifikaların iptal edilip edilmediği sorulur. İkisiyle birlikte imzalar PAdES B-LTA olur.
 	Signing time	İmzalama zamanı
 	Signing time is from the clock on the signer's computer.	İmzalama zamanı, imzalayanın bilgisayarındaki saatten alınmıştır.
+	Signing was cancelled; nothing was saved.	İmzalama iptal edildi; hiçbir şey kaydedilmedi.
 	Signing…	İmzalanıyor…
 	Signing… Confirm the signature on your other device.	İmzalanıyor… İmzayı diğer cihazınızda onaylayın.
 	Simplified field notation:	Basitleştirilmiş alan gösterimi:
@@ -2568,6 +2576,7 @@ scroll speed	Slow	Yavaş
 	Smaller pages	Daha küçük sayfalar
 	Smaller text	Daha küçük metin
 	Smaller thumbnails	Küçük resimleri küçült
+	Smart card  ·  	Akıllı kart  ·  
 	Snap to drawing	Çizime yakala
 	Snap to points and lines (Alt skips it)	Noktalara ve çizgilere yapış (Alt atlar)
 	Snapping	Yakalama
@@ -2715,6 +2724,7 @@ calendar weekday	Th	Pe
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	alan, aralık ve sütun genişlikleri sayı olmalı; aralık 0 veya daha büyük, her genişlik 0'dan büyük olmalı
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Cam her seferinde bir sayfa tarar. Bir ön yüz tarayıp çevirin, sonra arka yüzü.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Hesaplama sırasında hiçbir şey hesaplamayan {n} giriş var. "Sırayı düzelt" bunları kaldırır.|Hesaplama sırasında hiçbir şey hesaplamayan {n} giriş var. "Sırayı düzelt" bunları kaldırır.
+	the certificate authorities	sertifika yetkilileri
 	the certificate expired on {date}	sertifikanın süresi {date} tarihinde doldu
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	{} sertifikası altında bu kadar çok CA sertifikasına izin vermiyor (yol uzunluğu), bu yüzden {} için güvence olarak kullanılmıyor.
 	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	{} sertifikasında PdfCraft'ın tanımadığı kritik uzantılar var, bu yüzden {} için güvence olarak kullanılmıyor.
@@ -2756,6 +2766,7 @@ calendar weekday	Th	Pe
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	Belge parola olmadan açılır; kısıtlamaları değiştirmek için bu parola gerekir. Kaydettiğinizde uygulanır.
 	The document was changed in another window. Check your text, then apply it again.	Belge başka bir pencerede değiştirildi. Metninizi kontrol edin, sonra yeniden uygulayın.
 	The document was closed before it could be saved.	Belge kaydedilmeden önce kapatıldı.
+	The document wasn't signed: {e}	Belge imzalanmadı: {e}
 	The document will no longer be certified.	Belge artık sertifikalı olmayacak.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	Belgeye gömülü iptal bilgileri, imzalayanın sertifikasının iptal edilmediğini gösteriyor.
 	The document's security settings don't allow copying text and images	Belgenin güvenlik ayarları metin ve resimlerin kopyalanmasına izin vermiyor
@@ -2816,6 +2827,7 @@ calendar weekday	Th	Pe
 	The password must have at least 8 characters.	Parola en az 8 karakter olmalıdır.
 	The passwords do not match.	Parolalar eşleşmiyor.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF metin yazı tipleri “{c}” ({code}) karakterini çizemez. Desteklenen bir metin seçin.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN yalnızca karta gider; PdfCraft onu saklamaz.
 	The PIN is incorrect.	PIN yanlış.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	PKCS #11 jetonlarının dijital kimlikleri listelenemedi: {e}
 	The preview could not be shown.	Önizleme gösterilemedi.
@@ -2894,6 +2906,7 @@ calendar weekday	Th	Pe
 	the signing service rejected the PIN	imza hizmeti PIN kodunu reddetti
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	imza hizmeti PIN kodunu veya OTP'yi reddetti (OTP'nin süresi dolmuş olabilir)
 	the signing service rejected the user name or password	imza hizmeti kullanıcı adını veya parolayı reddetti
+	The smart card's digital IDs couldn't be listed: {e}	Akıllı kartın dijital kimlikleri listelenemedi: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standart yazı tipleri “{c}” ({code}) karakterini çizemiyor. Şimdilik metin olarak yalnızca Batı Avrupa karakterleri eklenebilir.
 	The standard it must meet and where the file goes	Uyması gereken standart ve dosyanın gideceği yer
 	The text is the same	Metin aynı
@@ -3012,6 +3025,8 @@ calendar weekday	Th	Pe
 	Time	Saat
 	Timed responses	Zamanlanmış yanıtlar
 	Timestamp	Zaman damgası
+	Timestamp server	Zaman damgası sunucusu
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Zaman damgaları ve iptal bilgileri masaüstü uygulamasını gerektirir. Burada imzalamak için bunları Tercihler ▸ İmzalar bölümünden kapatın.
 	to	bitiş
 	To change locked fields, also set Locked to No.	Kilitli alanları değiştirmek için Kilitli ayarını da Hayır olarak belirleyin.
 	to {n}	şuraya kadar: {n}
@@ -3106,6 +3121,7 @@ signature pad	Type	Yaz
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Bir cihazdaki Dijital Kimliği kullan (akıllı kart, USB token veya bulut sertifikası)
 	Use a Digital ID from a file	Dosyadan Dijital Kimlik Kullan
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	İmza oluşturma cihazı kullan (PKCS #11 modülü: akıllı kart, belirteç, mSzafir için CloudSigner)
+	Use a smart card or token	Akıllı kart veya belirteç kullan
 	Use basic detection	Temel algılamayı kullan
 	Use Column Order	Sütun Sırasını Kullan
 	Use custom DPI	Özel DPI kullan

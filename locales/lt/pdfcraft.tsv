@@ -290,6 +290,7 @@ calendar date	April	balandžio
 	Ask before a document opens in Full Screen mode	Paklausti, prieš dokumentui atsidarant viso ekrano režimu
 	Ask in any language	Klauskite bet kuria kalba
 	Ask whether to recognize the current page or all pages when editing a scan.	Redaguojant nuskaitytą dokumentą paklausti, ar atpažinti dabartinį puslapį, ar visus puslapius.
+	Asking {server}…	Klausiama {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	„GitHub“ tikrinama, ar yra naujausia laida. Nieko automatiškai neatsisiunčiama ir neįdiegiama.
 	Assistant	Padėjėjas
 	Associated with content	Susieta su turiniu
@@ -384,6 +385,8 @@ certificate	Basic constraints	Pagrindiniai apribojimai
 	Cancel reverse sides	Atšaukti kitas puses
 	Cancelled	Atšaukta
 	Cancelling…	Atšaukiama…
+	Card driver (PKCS #11)	Kortelės tvarkyklė (PKCS #11)
+	Card PIN	Kortelės PIN
 	Case-sensitive	Skiriamos didžiosios ir mažosios raidės
 	CCITT Group 4	CCITT 4 grupė
 	Center Footer Text	Vidurinis poraštės tekstas
@@ -1269,6 +1272,7 @@ key	Home	Home
 	In new window	Naujame lange
 	In streams that use LZW encoding, use Flate instead	LZW koduotiems srautams naudoti „Flate“
 	In this file	Šiame faile
+	Include revocation information when signing (LTV)	Pasirašant įtraukti atšaukimo informaciją (LTV)
 	Includes unsaved changes	Yra neįrašytų pakeitimų
 	Incompatible	Nesuderinama
 	Incorrect password. Try again.	Netinkamas slaptažodis. Bandykite dar kartą.
@@ -1643,6 +1647,7 @@ calendar weekday	Mo	Pr
 	No security	Apsaugos nėra
 	No sheets	Lapų nėra
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	Rėmelyje parašo nerasta. Perkelkite rėmelį ant parašo arba padidinkite rašalo jautrumą.
+	No signing certificate was found on a card. Is the card in the reader?	Kortelėje nerasta pasirašymo sertifikato. Ar kortelė yra skaitytuve?
 	No signing certificate was found on this device. Is it connected?	Šiame įrenginyje nerastas pasirašymo sertifikatas. Ar jis prijungtas?
 	No size estimate: {e}	Dydis neapskaičiuotas: {e}
 	No status has been set.	Būsena nenustatyta.
@@ -2508,6 +2513,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	Po šio parašo pridėti parašai, kurių pasirašytas turinys jį apima: {names}.
 	Signed and all signatures are valid.	Pasirašyta, visi parašai galioja.
 	Signed and saved to {path}	Pasirašyta ir įrašyta į {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Pasirašyta ir išsaugota {path}, be dalies atšaukimo informacijos: {problems}
 	Signed and saved to {path}. The document changed while the signature was being approved; those changes aren't in the signed file.	Pasirašyta ir įrašyta į {path}. Dokumentas pasikeitė, kol buvo tvirtinamas parašas; šių pakeitimų pasirašytame faile nėra.
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	Pasirašė {signer} {time}; turinys neatitinka to, kas buvo pasirašyta; pasirašiusiojo patikimumas netikrintas.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	Pasirašė {signer} {time}; turinys atitinka tai, kas buvo pasirašyta; pasirašiusiojo patikimumas netikrintas.
@@ -2518,8 +2524,10 @@ key	Shift	Shift
 	Signers	Pasirašiusieji
 	Signing	Pasirašymas
 	Signing service  ·  	Pasirašymo paslauga  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Tada pasirašant naudojamas tinklas: laiko žymų serveris gauna parašo maišos reikšmę, o sertifikavimo centrų klausiama, ar sertifikatai nėra atšaukti. Su abiem parinktimis parašai atitinka PAdES B-LTA.
 	Signing time	Pasirašymo laikas
 	Signing time is from the clock on the signer's computer.	Pasirašymo laikas nustatytas pagal pasirašiusiojo kompiuterio laikrodį.
+	Signing was cancelled; nothing was saved.	Pasirašymas atšauktas; nieko neišsaugota.
 	Signing…	Pasirašoma…
 	Signing… Confirm the signature on your other device.	Pasirašoma… Patvirtinkite parašą kitame savo įrenginyje.
 	Simplified field notation:	Supaprastinta lauko išraiška:
@@ -2536,6 +2544,7 @@ scroll speed	Slow	Lėtas
 	Smaller pages	Mažesni puslapiai
 	Smaller text	Mažesnis tekstas
 	Smaller thumbnails	Mažesnės miniatiūros
+	Smart card  ·  	Lustinė kortelė  ·  
 	Snap to drawing	Pritraukti prie brėžinio
 	Snap to points and lines (Alt skips it)	Prilipti prie taškų ir linijų (Alt praleidžia)
 	Snapping	Pritraukimas
@@ -2684,6 +2693,7 @@ calendar weekday	Th	Kt
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	sritis, tarpai ir stulpelių pločiai turi būti skaičiai, tarpai – 0 arba daugiau, o kiekvienas plotis – daugiau nei 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	Stiklas nuskaito po vieną puslapį. Nuskaitykite pirmąją pusę, apverskite ir nuskaitykite kitą pusę.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	Skaičiavimo tvarkoje yra {n} įrašas, kuris nieko neskaičiuoja. „Pataisyti tvarką“ jį pašalina.|Skaičiavimo tvarkoje yra {n} įrašai, kurie nieko neskaičiuoja. „Pataisyti tvarką“ juos pašalina.|Skaičiavimo tvarkoje yra {n} įrašų, kurie nieko neskaičiuoja. „Pataisyti tvarką“ juos pašalina.
+	the certificate authorities	sertifikavimo centrų
 	the certificate expired on {date}	sertifikato galiojimas baigėsi {date}
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	Subjekto {} sertifikatas neleidžia tiek žemesnio lygio sertifikavimo įstaigų sertifikatų (grandinės ilgio riba), todėl juo nepatvirtinamas {} sertifikatas.
 	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.
@@ -2786,6 +2796,7 @@ calendar weekday	Th	Kt
 	The password must have at least 8 characters.	Slaptažodį turi sudaryti bent 8 simboliai.
 	The passwords do not match.	Slaptažodžiai nesutampa.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	PDF teksto šriftai negali atvaizduoti simbolio „{c}“ ({code}). Pasirinkite palaikomą tekstą.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	PIN siunčiamas tik kortelei; PdfCraft jo nesaugo.
 	The PIN is incorrect.	PIN kodas neteisingas.
 	The PKCS #11 tokens' digital IDs couldn't be listed: {e}	Nepavyko gauti „PKCS #11“ raktuose esančių skaitmeninių ID sąrašo: {e}
 	The preview could not be shown.	Nepavyko parodyti peržiūros.
@@ -2866,6 +2877,7 @@ calendar weekday	Th	Kt
 	the signing service rejected the PIN	pasirašymo paslauga atmetė PIN kodą
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	pasirašymo paslauga atmetė PIN kodą arba OTP (galbūt baigėsi OTP galiojimas)
 	the signing service rejected the user name or password	pasirašymo paslauga atmetė naudotojo vardą arba slaptažodį
+	The smart card's digital IDs couldn't be listed: {e}	Nepavyko išvardyti lustinės kortelės skaitmeninių ID: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Standartiniai šriftai negali atvaizduoti simbolio „{c}“ ({code}). Kol kas galima įvesti tik Vakarų Europos simbolius.
 	The standard it must meet and where the file goes	Standartas, kurio reikia laikytis, ir kur eina failas
 	The text is the same	Tekstas sutampa
@@ -2985,6 +2997,8 @@ calendar weekday	Th	Kt
 	Tile scale:	Išklotinių mastelis:
 	Timed responses	Atsakymai per ribotą laiką
 	Timestamp	Laiko žyma
+	Timestamp server	Laiko žymų serveris
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Laiko žymoms ir atšaukimo informacijai reikia darbalaukio programos. Norėdami pasirašyti čia, išjunkite jas skiltyje Nuostatos ▸ Parašai.
 	to	iki
 	To change locked fields, also set Locked to No.	Norėdami keisti užrakintus laukus, nustatykite „Užrakinta“ į „Ne“.
 	to {n}	iki {n}
@@ -3070,6 +3084,7 @@ signature pad	Type	Tekstu
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Naudoti įrenginyje esantį skaitmeninį ID (lustinė kortelė, USB raktas arba debesijos sertifikatas)
 	Use a Digital ID from a file	Naudoti faile esantį skaitmeninį ID
 	Use a signature creation device (PKCS #11 module: smart card, token, CloudSigner for mSzafir)	Naudoti parašo kūrimo įrenginį (PKCS #11 modulis: lustinė kortelė, žetonas, „CloudSigner“, skirtas „mSzafir“)
+	Use a smart card or token	Naudoti lustinę kortelę arba žetoną
 	Use basic detection	Naudoti paprastą aptikimą
 	Use custom DPI	Naudoti pasirinktinį DPI
 	Use default font	Naudoti numatytąjį šriftą

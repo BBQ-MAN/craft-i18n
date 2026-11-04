@@ -269,6 +269,7 @@
 	Ask before a document opens in Full Screen mode	పత్రం పూర్తి తెర మోడ్‌లో తెరవబడే ముందు అడగండి
 	Ask in any language	ఏ భాషలోనైనా అడగండి
 	Ask to scan more pages	మరిన్ని పేజీలు స్కాన్ చేయాలా అని అడుగు
+	Asking {server}…	{server}‌ను అడుగుతోంది…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	తాజా విడుదల గురించి GitHubను అడుగుతుంది. ఏదీ ఆటోమేటిక్‌గా డౌన్‌లోడ్ లేదా ఇన్‌స్టాల్ చేయబడదు.
 	Assistant	సహాయకుడు
 	Associated with content	కంటెంట్‌తో అనుబంధించబడింది
@@ -1174,6 +1175,7 @@ key	Home	Home
 	In new window	కొత్త విండోలో
 	In streams that use LZW encoding, use Flate instead	LZW ఎన్‌కోడింగ్ ఉన్న స్ట్రీమ్‌లలో బదులుగా Flate ఉపయోగించు
 	In this file	ఈ ఫైల్‌లో
+	Include revocation information when signing (LTV)	సంతకం చేసేటప్పుడు రద్దు సమాచారాన్ని చేర్చు (LTV)
 	Includes unsaved changes	సేవ్ చేయని మార్పులు ఉన్నాయి
 	Incorrect password. Try again.	పాస్‌వర్డ్ తప్పు. మళ్లీ ప్రయత్నించండి.
 	Indent	లోపలికి జరుపు
@@ -2274,6 +2276,7 @@ key	Shift	Shift
 	Signed after this signature, so what they signed includes it: {names}.	ఈ సంతకం తర్వాత జోడించబడి, సంతకం చేసిన కంటెంట్‌లో దీన్ని కలిగి ఉన్న సంతకాలు: {names}.
 	Signed and all signatures are valid.	సంతకం చేయబడింది, అన్ని సంతకాలు చెల్లుబాటు అవుతాయి.
 	Signed and saved to {path}	సంతకం చేసి {path}లో సేవ్ చేయబడింది
+	Signed and saved to {path}, without some revocation information: {problems}	సంతకం చేసి {path}‌లో సేవ్ చేయబడింది, కొంత రద్దు సమాచారం లేకుండా: {problems}
 	Signed by {signer} on {time}; the content does not match what was signed; the signer's trust was not checked.	{signer} {time} నాటికి సంతకం చేశారు; కంటెంట్ సంతకం చేసిన దానికి సరిపోలడు; సంతకదారు విశ్వసనీయత తనిఖీ చేయబడలేదు.
 	Signed by {signer} on {time}; the content matches what was signed; the signer's trust was not checked.	{signer} {time} నాటికి సంతకం చేశారు; కంటెంట్ సంతకం చేసిన దానికి సరిపోలుతుంది; సంతకదారు విశ్వసనీయత తనిఖీ చేయబడలేదు.
 	Signed by {signer}; the content does not match what was signed; the signer's trust was not checked.	{signer} సంతకం చేశారు; కంటెంట్ సంతకం చేసిన దానికి సరిపోలడు; సంతకదారు విశ్వసనీయత తనిఖీ చేయబడలేదు.
@@ -2281,7 +2284,9 @@ key	Shift	Shift
 	Signer	సంతకం చేసినవారు
 	Signer's name	సంతకదారు పేరు
 	Signers	సంతకదారులు
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	అప్పుడు సంతకం చేయడం ఆన్‌లైన్‌కు వెళ్తుంది: టైమ్‌స్టాంప్ సర్వర్‌కు సంతకం యొక్క హాష్ వెళ్తుంది, సర్టిఫికెట్లు రద్దయ్యాయా అని సర్టిఫికెట్ అధికారులను అడుగుతుంది. రెండూ ఉంటే, సంతకాలు PAdES B-LTA అవుతాయి.
 	Signing time	సంతకం చేసిన సమయం
+	Signing was cancelled; nothing was saved.	సంతకం రద్దు చేయబడింది; ఏదీ సేవ్ కాలేదు.
 	Simplified field notation:	సరళీకృత ఫీల్డ్ సూత్రం:
 	Single file	ఒకే ఫైల్
 	Single Page	ఒకే పేజీ
@@ -2427,6 +2432,7 @@ action wizard	Start	ప్రారంభించు
 	The API key would be sent unencrypted to this address. Use https:// unless the server is on a network you trust.	API కీ ఈ చిరునామాకు ఎన్‌క్రిప్షన్ లేకుండా పంపబడుతుంది. సర్వర్ మీరు విశ్వసించే నెట్‌వర్క్‌లో లేకపోతే https:// ఉపయోగించండి.
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	గణన క్రమంలో ఏదీ లెక్కించని {n} ఎంట్రీ ఉంది. "క్రమాన్ని సరిచేయండి" దాన్ని తొలగిస్తుంది.|గణన క్రమంలో ఏదీ లెక్కించని {n} ఎంట్రీలు ఉన్నాయి. "క్రమాన్ని సరిచేయండి" వాటిని తొలగిస్తుంది.
+	the certificate authorities	సర్టిఫికెట్ అధికారులు
 	the certificate expired on {date}	సర్టిఫికెట్ గడువు {date}న ముగిసింది
 	The checker found 1 problem which may prevent the document from being fully accessible.	పత్రం పూర్తి యాక్సెసిబిలిటీకి ఆటంకం కలిగించే అవకాశం ఉన్న 1 సమస్యను తనిఖీ సాధనం కనుగొంది.
 	The checker found no problems in this document.	తనిఖీ సాధనం ఈ పత్రంలో ఎటువంటి సమస్యలనూ కనుగొనలేదు.
@@ -2449,6 +2455,7 @@ action wizard	Start	ప్రారంభించు
 	The document now conforms to {level}; save it to keep the changes	పత్రం ఇప్పుడు {level}కు అనుగుణంగా ఉంది; మార్పులను ఉంచుకోవడానికి దాన్ని సేవ్ చేయండి
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	పత్రం పాస్‌వర్డ్ లేకుండానే తెరుచుకుంటుంది; పరిమితులను మార్చడానికి ఈ పాస్‌వర్డ్ అవసరం. మీరు సేవ్ చేసినప్పుడు ఇది వర్తిస్తుంది.
 	The document was changed in another window. Check your text, then apply it again.	పత్రం మరొక విండోలో మార్చబడింది. మీ వచనాన్ని తనిఖీ చేసి, మళ్లీ వర్తింపజేయండి.
+	The document wasn't signed: {e}	పత్రంపై సంతకం కాలేదు: {e}
 	The document will no longer be certified.	పత్రం ఇకపై సర్టిఫై చేయబడి ఉండదు.
 	The document's security settings don't allow copying text and images	పత్రం భద్రతా సెట్టింగ్‌లు టెక్స్ట్, చిత్రాలను కాపీ చేయడాన్ని అనుమతించవు
 	The document's security settings don't allow filling in form fields	పత్రం భద్రతా సెట్టింగ్‌లు ఫారం ఫీల్డ్‌లను నింపడాన్ని అనుమతించవు
@@ -2621,6 +2628,8 @@ action wizard	Start	ప్రారంభించు
 	Tile scale:	టైల్ స్కేల్:
 	Timed responses	సమయ పరిమితి ఉన్న ప్రతిస్పందనలు
 	Timestamp	టైమ్‌స్టాంప్
+	Timestamp server	టైమ్‌స్టాంప్ సర్వర్
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	టైమ్‌స్టాంప్‌లు, రద్దు సమాచారానికి డెస్క్‌టాప్ యాప్ అవసరం. ఇక్కడ సంతకం చేయడానికి వాటిని అభిరుచులు ▸ సంతకాలు లో ఆపివేయండి.
 	to	నుండి
 	To change locked fields, also set Locked to No.	లాక్ చేసిన ఫీల్డ్‌లను మార్చడానికి “లాక్ చేయబడింది” విలువను కూడా “కాదు”గా పెట్టండి.
 	to {n}	నుండి {n}

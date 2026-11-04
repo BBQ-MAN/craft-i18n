@@ -292,6 +292,7 @@ calendar date	April	Abril
 	Ask about this document	Pregunta sobre aquest document
 	Ask before a document opens in Full Screen mode	Pregunta abans que un document s'obri en mode de pantalla completa
 	Ask whether to recognize the current page or all pages when editing a scan.	Pregunta si cal reconèixer la pàgina actual o totes les pàgines en editar un document escanejat.
+	Asking {server}…	S'està consultant {server}…
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Consulta a GitHub la darrera versió. No es baixa ni s'instal·la res automàticament.
 	Associated with content	Associat amb contingut
 	At least one signature has problems.	Almenys una signatura té problemes.
@@ -387,6 +388,8 @@ certificate	Basic constraints	Restriccions bàsiques
 	Cancel reverse sides	Cancel reverse sides
 	Cancelled	Cancel·lat
 	Cancelling…	Cancel·lant…
+	Card driver (PKCS #11)	Controlador de la targeta (PKCS #11)
+	Card PIN	PIN de la targeta
 	Case-sensitive	Distingeix majúscules i minúscules
 	Category:	Categoria:
 	CCITT Group 4	CCITT grup 4
@@ -1301,6 +1304,7 @@ key	Home	Inici
 	In multiple files	En diversos fitxers
 	In streams that use LZW encoding, use Flate instead	Als fluxos que utilitzen codificació LZW, utilitza Flate
 	In this file	En aquest fitxer
+	Include revocation information when signing (LTV)	Inclou informació de revocació en signar (LTV)
 	Includes unsaved changes	Inclou canvis sense desar
 	Incorrect password. Try again.	Contrasenya incorrecta. Torna-ho a provar.
 	Indent	Sagna
@@ -1691,6 +1695,7 @@ calendar weekday	Mo	dl.
 	No security	Sense seguretat
 	No sheets	Cap full
 	No signature was found in the frame. Move the frame over the signature or raise the ink sensitivity.	No s'ha trobat cap signatura al marc. Mou el marc sobre la signatura o augmenta la sensibilitat de la tinta.
+	No signing certificate was found on a card. Is the card in the reader?	No s'ha trobat cap certificat de signatura a cap targeta. És la targeta al lector?
 	No signing certificate was found on this device. Is it connected?	No s'ha trobat cap certificat de signatura en aquest dispositiu. Està connectat?
 	No status has been set.	No s'ha definit cap estat.
 	no such document	no existeix aquest document
@@ -2533,11 +2538,14 @@ key	Shift	Maj
 	Signed after this signature, so what they signed includes it: {names}.	Signades després d'aquesta signatura, de manera que el que van signar la inclou: {names}.
 	Signed and all signatures are valid.	Signat i totes les signatures són vàlides.
 	Signed and saved to {path}	Signat i desat a {path}
+	Signed and saved to {path}, without some revocation information: {problems}	Signat i desat a {path}, sense part de la informació de revocació: {problems}
 	Signer	Signant
 	Signer's name	Nom del signant
 	Signing service  ·  	Servei de signatura  ·  
+	Signing then goes online: the timestamp server receives a hash of the signature, and the certificate authorities are asked whether the certificates are revoked. With both, signatures are PAdES B-LTA.	Aleshores la signatura es connecta a la xarxa: el servidor de segellat de temps rep un resum de la signatura i es pregunta a les autoritats de certificació si els certificats estan revocats. Amb totes dues opcions, les signatures són PAdES B-LTA.
 	Signing time	Hora de signatura
 	Signing time is from the clock on the signer's computer.	L'hora de signatura prové del rellotge de l'ordinador del signant.
+	Signing was cancelled; nothing was saved.	S'ha cancel·lat la signatura; no s'ha desat res.
 	Signing…	S'està signant…
 	Signing… Confirm the signature on your other device.	S'està signant… Confirma la signatura a l'altre dispositiu.
 	Simplified field notation:	Notació simplificada de camps:
@@ -2553,6 +2561,7 @@ key	Shift	Maj
 scroll speed	Slow	Lenta
 	Smaller pages	Pàgines més petites
 	Smaller thumbnails	Smaller thumbnails
+	Smart card  ·  	Targeta intel·ligent  ·  
 	Snap to drawing	Ajusta al dibuix
 	Snapping	Ajust
 	Social Security Number	Número de la seguretat social
@@ -2693,6 +2702,7 @@ calendar weekday	Th	dj.
 	the area, the spacing and the column widths must be numbers, the spacing 0 or more and each width more than 0	l'àrea, l'espaiat i les amplades de les columnes han de ser nombres; l'espaiat, 0 o més, i cada amplada, més de 0
 	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.	The bed scans one page at a time. Scan one front, flip it, then scan its reverse side.
 @plural	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.	The calculation order has {n} entry that calculates nothing. Fix order removes it.|The calculation order has {n} entries that calculate nothing. Fix order removes them.
+	the certificate authorities	les autoritats de certificació
 	The certificate of {} does not allow this many CA certificates below it (path length), so it is not used to vouch for {}.	El certificat de {} no permet tants certificats de CA per sota seu (longitud de camí), de manera que no s'utilitza per avalar {}.
 	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.	The certificate of {} has critical extensions PdfCraft does not recognize, so it is not used to vouch for {}.
 	The certificate of {} is not a CA certificate that may issue certificates, so it is not used to vouch for {}.	El certificat de {} no és un certificat de CA que pugui emetre certificats, de manera que no s'utilitza per avalar {}.
@@ -2730,6 +2740,7 @@ calendar weekday	Th	dj.
 	The document now conforms to {level}; save it to keep the changes	El document ara compleix {level}; desa'l per conservar els canvis
 	The document opens without a password; this password is needed to change the restrictions. It's applied when you save.	El document s'obre sense contrasenya; aquesta contrasenya cal per canviar les restriccions. S'aplica en desar.
 	The document was closed before it could be saved.	El document s'ha tancat abans de poder-se desar.
+	The document wasn't signed: {e}	El document no s'ha signat: {e}
 	The document will no longer be certified.	El document deixarà d'estar certificat.
 	The document's embedded revocation information shows that the signer's certificate has not been revoked.	La informació de revocació incrustada al document mostra que el certificat del signant no ha estat revocat.
 	The document's security settings don't allow copying text and images	La configuració de seguretat del document no permet copiar text ni imatges
@@ -2785,6 +2796,7 @@ calendar weekday	Th	dj.
 	The passwords do not match.	Les contrasenyes no coincideixen.
 	The passwords don't match.	Les contrasenyes no coincideixen.
 	The PDF text fonts can't draw “{c}” ({code}). Choose supported text.	Els tipus de lletra de text del PDF no poden dibuixar “{c}” ({code}). Tria un text compatible.
+	The PIN goes only to the card; PdfCraft doesn't keep it.	El PIN només va a la targeta; el PdfCraft no el desa.
 	The PIN is incorrect.	El PIN és incorrecte.
 	The preview could not be shown.	The preview could not be shown.
 	The printer driver's own settings for this print: paper tray, paper type, finishing and more.	La configuració pròpia del controlador de la impressora per a aquesta impressió: safata de paper, tipus de paper, acabats i més.
@@ -2857,6 +2869,7 @@ calendar weekday	Th	dj.
 	the signing service rejected the PIN	el servei de signatura ha rebutjat el PIN
 	the signing service rejected the PIN or the OTP (the OTP may have expired)	el servei de signatura ha rebutjat el PIN o l'OTP (l'OTP pot haver caducat)
 	the signing service rejected the user name or password	el servei de signatura ha rebutjat el nom d'usuari o la contrasenya
+	The smart card's digital IDs couldn't be listed: {e}	No s'han pogut llistar els identificadors digitals de la targeta intel·ligent: {e}
 	The standard fonts can't draw “{c}” ({code}). Only Western European characters can be added as text for now.	Els tipus de lletra estàndard no poden dibuixar “{c}” ({code}). De moment només es poden afegir com a text caràcters d'Europa occidental.
 	The text is the same	El text és el mateix
 	the text recognition models are not installed (reinstall PdfCraft, or set PDFCRAFT_MODELS to the folder that holds them)	els models de reconeixement de text no estan instal·lats (reinstal·la PdfCraft o defineix PDFCRAFT_MODELS amb la carpeta que els conté)
@@ -2962,6 +2975,8 @@ calendar weekday	Th	dj.
 	Time	Hora
 	Timed responses	Respostes cronometrades
 	Timestamp	Marca de temps
+	Timestamp server	Servidor de segellat de temps
+	Timestamps and revocation information need the desktop app. Turn them off in Preferences ▸ Signatures to sign here.	Els segells de temps i la informació de revocació necessiten l'aplicació d'escriptori. Desactiveu-los a Preferències ▸ Signatures per signar aquí.
 	Title	Títol
 	to	a
 	To change locked fields, also set Locked to No.	Per canviar camps bloquejats, defineix també Bloquejat com a No.
@@ -3056,6 +3071,7 @@ signature pad	Type	Escriu
 	Use a cloud certificate (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)	Utilitza un certificat al núvol (ICP-Brasil: BirdID, VIDaaS, NeoID, SafeID…)
 	Use a Digital ID from a device (smart card, USB token or cloud certificate)	Utilitza un identificador digital d'un dispositiu (targeta intel·ligent, testimoni USB o certificat al núvol)
 	Use a Digital ID from a file	Utilitza un identificador digital d'un fitxer
+	Use a smart card or token	Utilitza una targeta intel·ligent o un testimoni
 	Use custom DPI	Utilitza uns DPI personalitzats
 	Use each image's embedded DPI; use 72 DPI when it is absent.	Utilitza els DPI incrustats de cada imatge; si no n'hi ha, utilitza 72 DPI.
 	Use Flate to encode streams that are not encoded	Utilitza Flate per codificar els fluxos que no estan codificats
