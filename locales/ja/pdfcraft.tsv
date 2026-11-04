@@ -170,6 +170,7 @@
 	Added the first {n} files in {folder}	{folder} の最初の {n} 個のファイルを追加しました
 	Added {n} comments	注釈を {n} 件追加しました
 	Adding images arrives on the web with file pickers for images	Web 版の画像追加は画像ファイル選択に対応した際に利用可能になります
+	Additional Metadata	追加メタデータ
 	Adds invisible text over each word; the page image is not changed	各単語に非表示のテキストを重ねます。ページ画像は変更しません
 	Advanced optimization	詳細な最適化
 	Advanced options	詳細オプション
@@ -277,6 +278,7 @@
 	Audit space usage	容量の使用状況を確認
 	Audit space usage…	容量の使用状況を確認…
 	August	8月
+	Author title	作成者の役職
 	Auto follows the system's text size. Pages always render at the display's full resolution.	自動にすると、システムの文字サイズに合わせます。ページは常にディスプレイの最大解像度で描画されます。
 	Auto portrait/landscape	縦・横を自動選択
 	Auto-detect	自動検出
@@ -359,6 +361,7 @@
 	Certify	証明
 	Certify (invisible signature)	証明用署名（表示しない署名）
 	Certify (visible signature)	証明用署名（表示する署名）
+	Change additional metadata	追加メタデータを変更
 	Change comment properties	注釈のプロパティを変更
 	Change document properties	文書のプロパティを変更
 	Change drawing scale	図面の縮尺を変更
@@ -536,6 +539,9 @@
 	Copy path	パスをコピー
 	Copy selected text	選択したテキストをコピー
 	Copy text	テキストをコピー
+	Copyright info URL	著作権情報のURL
+	Copyright notice	著作権表示
+	Copyright status	著作権の状態
 	Correct recognized text	認識したテキストを修正
 	Could not copy the selection because text could not be read on every page	すべてのページのテキストを読み取れなかったため、選択範囲をコピーできませんでした
 	Could not mark the selection because text could not be read on every page	すべてのページのテキストを読み取れなかったため、選択範囲をマークできませんでした
@@ -681,10 +687,12 @@ key	Delete	Delete
 	Delete selected pages (Organize)	選択したページを削除（ページ整理）
 	Delete stamp	スタンプを削除
 	Delete the selected pages	選択したページを削除
+	Delete XMP metadata	XMPメタデータを削除
 	Delete {o}	{o} を削除
 	Denominator	分母
 	Describe the figure	図の内容を説明
 	Description	概要
+	Description writer	概要の作成者
 	Detached signature file	分離署名ファイル
 	Detect form fields	フォームフィールドを検出
 	Detected 1 form field	フォームフィールドを 1 件検出しました
@@ -905,6 +913,7 @@ key	Esc	Esc
 	Export to Word…	Word に書き出す…
 	Export value	書き出し値
 	Export Value: {on}	書き出し値: {on}
+	Export XMP metadata	XMPメタデータを書き出し
 	Exported 1 image	画像を 1 件書き出しました
 	Exported the text of 1 page	1 ページのテキストを書き出しました
 	Exported the text of {n} pages	{n} ページのテキストを書き出しました
@@ -1478,6 +1487,7 @@ scroll speed	Normal	標準
 	Not in order	順序にない
 	Not now	今はしない
 	Not present	なし
+	Not rated	評価なし
 	Note	ノート注釈
 	nothing in the file matches this document	この文書に一致する項目がファイルにありません
 	Nothing to redo	やり直す操作はありません
@@ -1748,6 +1758,7 @@ animation effects	On	オン
 	Protect using password…	パスワードで保護…
 	Protect with password	パスワードで保護
 	Protected: the combined file won't keep its security settings	保護されています: 結合後のファイルにはセキュリティ設定が引き継がれません
+	Public domain	パブリックドメイン
 	Public key	公開鍵
 	PushButton	プッシュボタン
 	Quantity	測定する量
@@ -1758,6 +1769,7 @@ animation effects	On	オン
 	Radio Button Properties	ラジオボタンのプロパティ
 	Radius / diameter	半径／直径
 	RAM {gb} GB	RAM {gb} GB
+	Rating	評価
 	Raw:	原文：
 	Re-type Password	パスワードを再入力
 	Read	閲覧
@@ -1875,6 +1887,7 @@ animation effects	On	オン
 	Replace pages…	ページを置換…
 	Replace text	テキストを置換
 	Replace with	置換後
+	Replace XMP metadata	XMPメタデータを置き換え
 	Replaced	置換
 	Replacement text	置換テキスト
 	Replacement: pages of {name}	置換元: {name} のページ
@@ -2424,6 +2437,7 @@ document scrollbar width	Standard	標準
 	This document has no restrictions to lift	この文書には解除する制限がありません
 	This document has no signatures.	この文書に署名はありません。
 	This document has no tagged figures.	この文書にはタグ付きの図がありません。
+	This document has no XMP metadata.	この文書にはXMPメタデータがありません。
 	This document has no {kind} to change	この文書に変更する{kind}はありません
 	This document hasn't been checked yet.	この文書はまだチェックされていません。
 	This document is not inside a CAdES envelope	この文書はCAdES署名エンベロープの内部にありません。
@@ -2621,6 +2635,8 @@ document scrollbar width	Wide	太い
 	Wrote {n} files to {dir}	{dir} に {n} ファイルを書き込みました
 	X Object Forms	フォーム XObject
 	XFA form: its fields and its XFA data are kept in step, so other viewers show what you fill in.	XFA フォームです。フィールドと XFA データは常に同期されるため、入力した内容がほかのビューアーでも表示されます。
+	XML source	XMLソース
+	XMP metadata	XMPメタデータ
 	Yellow	黄
 	Yellow on black	黒地に黄
 	You are about to apply 1 redaction mark. Text, images and drawings under the marks, and comments and form fields that overlap them, are removed permanently.	墨消しマーク 1 件を適用します。マークの下にあるテキスト、画像、描画、および重なる注釈とフォームフィールドは完全に削除されます。
