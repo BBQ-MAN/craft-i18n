@@ -311,6 +311,7 @@
 	Ask anything	什么都可以问
 	Ask before a document opens in Full Screen mode	文档以全屏模式打开前询问
 	Ask in any language	可以用任何语言提问
+	Ask to make PdfCraft the default PDF app	询问是否将 PdfCraft 设为默认 PDF 应用
 	Ask to scan more pages	询问是否继续扫描更多页面
 	Ask whether to recognize the current page or all pages when editing a scan.	编辑扫描文档时，询问是识别当前页还是所有页面。
 	Asking the printer…	正在查询打印机…
@@ -535,6 +536,7 @@
 	Choose image…	选择图像…
 	Choose new keys for {command}	为 {command} 选择新按键
 	Choose paper by PDF page size	按 PDF 页面大小选择纸张
+	Choose PdfCraft for .pdf files in Windows Settings.	请在 Windows 设置中为 .pdf 文件选择 PdfCraft。
 	Choose photo…	选择照片…
 	Choose raw file…	选择原始文件…
 	Choose reference…	选择参考文件…
@@ -611,6 +613,7 @@
 	Comb of	梳状（每格一字符），共
 	Comb of characters	字符梳
 	Combine files	合并文件
+	Combine files in PdfCraft…	在 PdfCraft 中合并文件…
 	Combine files…	合并文件…
 	Combine the rest	合并其余文件
 	Combined {n} files	已合并{n}个文件
@@ -672,6 +675,8 @@
 	Convert colours…	转换颜色…
 	Convert mode	转换模式
 	Convert to	转换为
+	Convert to PDF and email…	转换为 PDF 并通过电子邮件发送…
+	Convert to PDF with PdfCraft	使用 PdfCraft 转换为 PDF
 	Converted from an EPUB book. Details lists how it was laid out and what was left out.	已从 EPUB 图书转换。详细信息说明了排版方式以及省略的内容。
 	Converted to {level} ({n} changes)	已转换为 {level}（{n} 处更改）
 	Converted {c} colours and {i} pictures on {p} pages	已在 {p} 页上转换 {c} 种颜色和 {i} 张图片
@@ -721,11 +726,14 @@
 	Couldn't follow linked PDF: {reason}	无法打开链接的 PDF：{reason}
 	Couldn't import the signature image: {e}	无法导入签名图像：{e}
 	Couldn't open revision {n}: {e}	无法打开修订版本{n}：{e}
+	Couldn't open the email draft: {e}	无法打开电子邮件草稿：{e}
 	Couldn't open the printer's preferences: {e}	无法打开打印机首选项：{e}
 	Couldn't open the result: {e}	无法打开结果：{e}
 	Couldn't open the signed version: {e}	无法打开已签名版本：{e}
+	Couldn't open Windows default app settings: {error}	无法打开 Windows 默认应用设置：{error}
 	Couldn't optimize the file	无法优化文件
 	Couldn't optimize the file: {e}	无法优化文件：{e}
+	Couldn't prepare the email draft: {e}	无法准备电子邮件草稿：{e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	无法从浏览器打印（{e}）；已改为下载 {name} 以便打印
 	Couldn't reach the printer	无法连接到打印机
 	Couldn't read the ICC profile {name}: {e}	无法读取 ICC 配置文件 {name}：{e}
@@ -922,6 +930,7 @@ key	Delete	Delete
 	Distribute objects	分布对象
 	Distribute vertically	垂直分布
 	DN: 	DN：
+	Do not ask again	不再询问
 	Document actions	文档操作
 	Document and markups	文档和标记
 	Document and stamps	文档和图章
@@ -1049,6 +1058,7 @@ key	Delete	Delete
 	Editorial	Editorial
 	Email Address	电子邮件地址
 	Email Addresses	电子邮件地址
+	Email draft saved to {path}	电子邮件草稿已保存到 {path}
 	Embedded Files	嵌入文件
 	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	嵌入文件本身必须符合 PDF/A 标准（其他类型的文件请使用 PDF/A-3）
 	Enable Acrobat JavaScript	启用 Acrobat JavaScript
@@ -1113,6 +1123,8 @@ key	Esc	Esc
 	Expand {folder}	展开 {folder}
 	Expires {date}	到期 {date}
 	Explain	解释
+	Explorer selection exceeds the {size} MiB memory limit.	资源管理器中的所选文件超出 {size} MiB 内存限制。
+	Explorer selection is limited to {count} files.	资源管理器中最多可选择 {count} 个文件。
 	Export & Convert	导出与转换
 	Export a PDF	导出 PDF
 	Export all comments to data file…	将所有注释导出到数据文件…
@@ -1608,6 +1620,7 @@ key	Home	Home
 	Make accessible	设为无障碍
 	Make Current Properties Default	将当前属性设为默认
 	Make default paper size	设为默认纸张大小
+	Make PdfCraft your default PDF app?	将 PdfCraft 设为默认 PDF 应用？
 	Make Properties Default	将属性设为默认
 	Make properties default	将属性设为默认
 	Make scans searchable, then make them smaller.	使扫描件可搜索，然后将其变小。
@@ -1942,6 +1955,7 @@ animation effects	On	开
 	Open a web page	打开网页
 	Open accessibility report	打开无障碍报告
 	Open arrow	开口箭头
+	Open default app settings	打开默认应用设置
 	Open email app	打开邮件应用
 	Open file	打开文件
 	Open from cloud	从云端打开
@@ -2098,6 +2112,7 @@ animation effects	On	开
 	Paused	已暂停
 	Paused (page {page})	已暂停（第 {page} 页）
 	PDF and text	PDF 和文本
+	PDF attachments	PDF 附件
 	PDF Optimizer	PDF 优化器
 	PDF or image	PDF 或图像
 	PDF page: {size}	PDF 页面：{size}
@@ -2173,6 +2188,7 @@ animation effects	On	开
 	Precision	精度
 	Preflight	印前检查
 	Prepare a form	准备表单
+	Prepare email draft	准备电子邮件草稿
 	Prepare for accessibility	无障碍准备
 	Prepare for Distribution	准备分发
 	Prepare for distribution	准备分发
@@ -2553,6 +2569,7 @@ animation effects	On	开
 	Save as…	另存为…
 	Save attachment…	保存附件…
 	Save changes to “{name}” before closing?	在关闭前保存对“{name}”的更改？
+	Save email draft…	保存电子邮件草稿…
 	Save image	保存图像
 	Save Image As…	图像另存为…
 	Save initials first	请先保存姓名首字母
@@ -3068,6 +3085,7 @@ document scrollbar width	Standard	标准
 	The document's security settings don't allow filling in form fields	文档安全设置不允许填写表单域
 	The document's security settings don't allow printing	文档安全设置不允许打印
 	The document's security settings don't allow this change	文档安全设置不允许此更改
+	The draft contains PDF attachments. Open it with a mail app that supports .eml drafts; in Outlook.com, create a message and attach the saved PDFs yourself.	草稿包含 PDF 附件。请用支持 .eml 草稿的邮件应用打开；在 Outlook.com 中，请创建邮件并手动附加已保存的 PDF。
 	The driver may accept a turn and leave the picture as it was.	驱动可能接受旋转设置，却仍按原样返回图像。
 	The driver reports a paper jam.	驱动报告卡纸。
 	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	驱动报告有纸等待。纸盒空了后该位仍可能保持。

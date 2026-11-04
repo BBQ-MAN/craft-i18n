@@ -311,6 +311,7 @@
 	Ask anything	什麼都能問
 	Ask before a document opens in Full Screen mode	文件以全螢幕模式開啟前詢問
 	Ask in any language	可用任何語言提問
+	Ask to make PdfCraft the default PDF app	詢問是否將 PdfCraft 設為預設 PDF 應用程式
 	Ask to scan more pages	詢問是否繼續掃描更多頁面
 	Asking the printer…	正在查詢印表機…
 	Asking {server}…	正在詢問 {server}…
@@ -530,6 +531,7 @@
 	Choose image…	選擇圖片…
 	Choose new keys for {command}	為 {command} 選擇新按鍵
 	Choose paper by PDF page size	依 PDF 頁面大小選擇紙張
+	Choose PdfCraft for .pdf files in Windows Settings.	請在 Windows 設定中為 .pdf 檔案選擇 PdfCraft。
 	Choose photo…	選擇相片…
 	Choose raw file…	選擇原始檔案…
 	Choose reference…	選擇參考檔案…
@@ -604,6 +606,7 @@
 	Comb of	梳狀（每格一字元），共
 	Comb of characters	字元梳
 	Combine files	合併檔案
+	Combine files in PdfCraft…	在 PdfCraft 中合併檔案…
 	Combine files…	合併檔案…
 	Combine the rest	合併其餘檔案
 	Combined {n} files	已合併{n}個檔案
@@ -666,6 +669,8 @@
 	Convert colours…	轉換顏色…
 	Convert mode	轉換模式
 	Convert to	轉換為
+	Convert to PDF and email…	轉換為 PDF 並透過電子郵件傳送…
+	Convert to PDF with PdfCraft	使用 PdfCraft 轉換為 PDF
 	Converted from an EPUB book. Details lists how it was laid out and what was left out.	已從 EPUB 書籍轉換。詳細資訊說明了排版方式以及省略的內容。
 	Converted to {level} ({n} changes)	已轉換為 {level}（{n} 項變更）
 	Converted {c} colours and {i} pictures on {p} pages	已在 {p} 頁上轉換 {c} 種顏色和 {i} 張圖片
@@ -715,11 +720,14 @@
 	Couldn't follow linked PDF: {reason}	無法開啟連結的 PDF：{reason}
 	Couldn't import the signature image: {e}	無法匯入簽名圖像：{e}
 	Couldn't open revision {n}: {e}	無法開啟修訂版本{n}：{e}
+	Couldn't open the email draft: {e}	無法開啟電子郵件草稿：{e}
 	Couldn't open the printer's preferences: {e}	無法開啟印表機喜好設定：{e}
 	Couldn't open the result: {e}	無法開啟結果：{e}
 	Couldn't open the signed version: {e}	無法開啟已簽名版本：{e}
+	Couldn't open Windows default app settings: {error}	無法開啟 Windows 預設應用程式設定：{error}
 	Couldn't optimize the file	無法最佳化檔案
 	Couldn't optimize the file: {e}	無法最佳化檔案：{e}
+	Couldn't prepare the email draft: {e}	無法準備電子郵件草稿：{e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	無法從瀏覽器列印（{e}）；已改為下載 {name} 以供列印
 	Couldn't reach the printer	無法連線到印表機
 	Couldn't read the ICC profile {name}: {e}	無法讀取 ICC 描述檔 {name}：{e}
@@ -916,6 +924,7 @@ key	Delete	Delete
 	Distribute objects	分佈物件
 	Distribute vertically	垂直分佈
 	DN: 	DN：
+	Do not ask again	不再詢問
 	Document actions	文件動作
 	Document and markups	文件和標記
 	Document and stamps	文件和戳記
@@ -1041,6 +1050,7 @@ key	Delete	Delete
 	Editorial	Editorial
 	Email Address	電子郵件地址
 	Email Addresses	電子郵件地址
+	Email draft saved to {path}	電子郵件草稿已儲存至 {path}
 	Embedded Files	嵌入檔案
 	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	嵌入的檔案本身必須符合 PDF/A；其他檔案請使用 PDF/A-3
 	Enable Acrobat JavaScript	啟用 Acrobat JavaScript
@@ -1103,6 +1113,8 @@ key	Esc	Esc
 	Expand {folder}	展開 {folder}
 	Expires {date}	到期 {date}
 	Explain	解釋
+	Explorer selection exceeds the {size} MiB memory limit.	檔案總管中選取的檔案超出 {size} MiB 記憶體限制。
+	Explorer selection is limited to {count} files.	檔案總管中最多可選取 {count} 個檔案。
 	Export & Convert	匯出與轉換
 	Export a PDF	匯出 PDF
 	Export all comments to data file…	將所有註解匯出為資料檔…
@@ -1593,6 +1605,7 @@ key	Home	Home
 	Make accessible	建立無障礙支援
 	Make Current Properties Default	將目前屬性設為預設
 	Make default paper size	設為預設紙張大小
+	Make PdfCraft your default PDF app?	將 PdfCraft 設為預設 PDF 應用程式？
 	Make Properties Default	將屬性設為預設
 	Make properties default	將內容設為預設
 	Make scans searchable, then make them smaller.	使掃描件可搜尋，然後將其變小。
@@ -1917,6 +1930,7 @@ animation effects	On	開
 	Open a web page	開啟網頁
 	Open accessibility report	開啟無障礙報告
 	Open arrow	開口箭頭
+	Open default app settings	開啟預設應用程式設定
 	Open email app	開啟電子郵件應用程式
 	Open file	開啟檔案
 	Open from cloud	從雲端開啟
@@ -2074,6 +2088,7 @@ animation effects	On	開
 	Paused	已暫停
 	Paused (page {page})	已暫停（第 {page} 頁）
 	PDF and text	PDF 和文字
+	PDF attachments	PDF 附件
 	PDF Optimizer	PDF 最佳化器
 	PDF or image	PDF 或圖片
 	PDF page: {size}	PDF 頁面：{size}
@@ -2146,6 +2161,7 @@ animation effects	On	開
 	Precision	精度
 	Preflight	印前偵測
 	Prepare a form	準備表單
+	Prepare email draft	準備電子郵件草稿
 	Prepare for accessibility	準備無障礙支援
 	Prepare for Distribution	準備分發
 	Prepare for distribution	準備發佈
@@ -2523,6 +2539,7 @@ animation effects	On	開
 	Save as…	另存新檔…
 	Save attachment…	儲存附件…
 	Save changes to “{name}” before closing?	在關閉前儲存對「{name}」的更改？
+	Save email draft…	儲存電子郵件草稿…
 	Save image	儲存圖片
 	Save Image As…	圖片另存新檔…
 	Save initials first	請先儲存姓名縮寫
@@ -3020,6 +3037,7 @@ document scrollbar width	Standard	標準
 	The document's security settings don't allow filling in form fields	文件安全設定不允許填寫表單欄位
 	The document's security settings don't allow printing	文件安全設定不允許列印
 	The document's security settings don't allow this change	文件安全設定不允許此更改
+	The draft contains PDF attachments. Open it with a mail app that supports .eml drafts; in Outlook.com, create a message and attach the saved PDFs yourself.	草稿包含 PDF 附件。請用支援 .eml 草稿的郵件應用程式開啟；在 Outlook.com 中，請建立郵件並手動附加已儲存的 PDF。
 	The driver may accept a turn and leave the picture as it was.	The driver may accept a turn and leave the picture as it was.
 	The driver reports a paper jam.	The driver reports a paper jam.
 	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	The driver reports a sheet waiting. The bit can stay on after the tray is empty.

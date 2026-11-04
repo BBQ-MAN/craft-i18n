@@ -305,6 +305,7 @@ calendar date	April	Сәуір
 	Ask anything	Кез келген нәрсені сұраңыз
 	Ask before a document opens in Full Screen mode	Құжат толық экран режимінде ашылар алдында сұрау
 	Ask in any language	Кез келген тілде сұраңыз
+	Ask to make PdfCraft the default PDF app	PdfCraft қолданбасын әдепкі PDF қолданбасы ету туралы сұрау
 	Ask whether to recognize the current page or all pages when editing a scan.	Сканерленген құжатты өңдегенде ағымдағы бетті немесе барлық беттерді тану керектігін сұрау.
 	Asking the printer…	Принтерден сұралуда…
 	Asking {server}…	{server} сұралуда…
@@ -519,6 +520,7 @@ calendar date	August	Тамыз
 	Choose image…	Сурет таңдау…
 	Choose new keys for {command}	{command} үшін жаңа пернелерді таңдаңыз
 	Choose paper by PDF page size	Қағазды PDF беті өлшемі бойынша таңдау
+	Choose PdfCraft for .pdf files in Windows Settings.	Windows параметрлерінде .pdf файлдары үшін PdfCraft қолданбасын таңдаңыз.
 	Choose photo…	Суретті таңдау…
 	Choose raw file…	Бастапқы файлды таңдау…
 	Choose reference…	Үлгіні таңдау…
@@ -585,6 +587,7 @@ calendar date	August	Тамыз
 	Comb of	Ұяшықтар саны:
 	Comb of characters	Таңбалар торы
 	Combine files	Файлдарды біріктіру
+	Combine files in PdfCraft…	Файлдарды PdfCraft ішінде біріктіру…
 	Combine files…	Файлдарды біріктіру…
 	Combine the rest	Қалғанын біріктіру
 	Combined {n} files	{n} файл біріктірілді
@@ -643,6 +646,8 @@ calendar date	August	Тамыз
 	Convert colours…	Түстерді түрлендіру…
 	Convert mode	Түрлендіру режимі
 	Convert to	Мынаған түрлендіру
+	Convert to PDF and email…	PDF пішіміне түрлендіріп, электрондық пошта арқылы жіберу…
+	Convert to PDF with PdfCraft	PdfCraft арқылы PDF пішіміне түрлендіру
 	Converted from an EPUB book. Details lists how it was laid out and what was left out.	EPUB кітабынан түрлендірілді. Толығырақ бөлімі оның қалай беттелгенін және не алынып тасталғанын көрсетеді.
 	Converted to {level} ({n} changes)	{level} деңгейіне түрлендірілді ({n} өзгеріс)
 	Converted {c} colours and {i} pictures on {p} pages	{p} бетте {c} түс және {i} сурет түрлендірілді
@@ -691,11 +696,14 @@ calendar date	August	Тамыз
 	Couldn't follow linked PDF: {reason}	Байланысты PDF ашылмады: {reason}
 	Couldn't import the signature image: {e}	Қолтаңба суретін импорттау мүмкін болмады: {e}
 	Couldn't open revision {n}: {e}	{n} нұсқасын ашу мүмкін болмады: {e}
+	Couldn't open the email draft: {e}	Электрондық хат нобайын ашу мүмкін болмады: {e}
 	Couldn't open the printer's preferences: {e}	Принтердің параметрлерін ашу мүмкін болмады: {e}
 	Couldn't open the result: {e}	Нәтижені ашу мүмкін болмады: {e}
 	Couldn't open the signed version: {e}	Қол қойылған нұсқаны ашу мүмкін болмады: {e}
+	Couldn't open Windows default app settings: {error}	Windows жүйесінің әдепкі қолданба параметрлерін ашу мүмкін болмады: {error}
 	Couldn't optimize the file	Файлды оңтайландыру мүмкін болмады
 	Couldn't optimize the file: {e}	Файлды оңтайландыру мүмкін болмады: {e}
+	Couldn't prepare the email draft: {e}	Электрондық хат нобайын дайындау мүмкін болмады: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	Браузерден басып шығару мүмкін болмады ({e}); оның орнына басып шығару үшін {name} жүктелді
 	Couldn't reach the printer	Принтерге қол жеткізу мүмкін болмады
 	Couldn't read the ICC profile {name}: {e}	{name} ICC профилін оқу мүмкін болмады: {e}
@@ -882,6 +890,7 @@ key	Delete	Delete
 	Distribute objects	Объектілерді біркелкі орналастыру
 	Distribute vertically	Тігінен тарату
 	DN: 	DN: 
+	Do not ask again	Қайта сұрамау
 	Document actions	Құжат әрекеттері
 	Document and markups	Құжат және белгілеулер
 	Document and stamps	Құжат және мөрлер
@@ -1001,6 +1010,7 @@ comment menu	Edit	Түзету
 	Editorial	Editorial
 	Email Address	Электрондық пошта мекенжайы
 	Email Addresses	Электрондық пошта адрестері
+	Email draft saved to {path}	Электрондық хат нобайы {path} орнына сақталды
 	Embedded Files	Ендірілген файлдар
 	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	Енгізілген файлдардың өздері PDF/A файлдары болуы тиіс (басқалары үшін PDF/A-3 қолданыңыз)
 	Enable Acrobat JavaScript	Acrobat JavaScript-ті қосу
@@ -1062,6 +1072,8 @@ key	Esc	Esc
 	Expand {folder}	{folder} жаю
 	Expires {date}	Мерзімі: {date} дейін
 	Explain	Түсіндіру
+	Explorer selection exceeds the {size} MiB memory limit.	Жетектеушідегі таңдау {size} MiB жад шегінен асады.
+	Explorer selection is limited to {count} files.	Жетектеушіде ең көбі {count} файл таңдауға болады.
 	Export & Convert	Экспорттау және түрлендіру
 	Export a PDF	PDF экспорттау
 	Export all comments to data file…	Барлық түсініктемені деректер файлына экспорттау…
@@ -1546,6 +1558,7 @@ calendar date	June	Маусым
 	Make accessible	Қолжетімді ету
 	Make Current Properties Default	Ағымдағы сипаттарды әдепкі етіп орнату
 	Make default paper size	Әдепкі қағаз өлшемі ретінде орнату
+	Make PdfCraft your default PDF app?	PdfCraft қолданбасын әдепкі PDF қолданбасы ету керек пе?
 	Make Properties Default	Сипаттарды әдепкі етіп орнату
 	Make properties default	Қасиеттерді әдепкі ету
 	Make scans searchable, then make them smaller.	Сканерленгендерді іздеп табуға болатындай етіп, содан кейін өлшемін кішірейтеді.
@@ -1860,6 +1873,7 @@ animation effects	On	Қосулы
 	Open a web page	Веб-бетті ашу
 	Open accessibility report	Қолжетімділік есебін ашу
 	Open arrow	Ашық көрсеткі
+	Open default app settings	Әдепкі қолданба параметрлерін ашу
 	Open email app	Email қосымшасын ашу
 	Open file	Файлды ашу
 	Open from cloud	Бұлттан ашу
@@ -2014,6 +2028,7 @@ animation effects	On	Қосулы
 	Paused	Кідіртілді
 	Paused (page {page})	Кідіртілді ({page}-бет)
 	PDF and text	PDF және мәтін
+	PDF attachments	PDF тіркемелері
 	PDF Optimizer	PDF оңтайландырғышы
 	PDF or image	PDF немесе сурет
 	PDF page: {size}	PDF беті: {size}
@@ -2084,6 +2099,7 @@ animation effects	On	Қосулы
 	PostScript XObjects aren't allowed	PostScript XObject нысандарына рұқсат етілмейді
 	Preflight	Басу алдындағы тексеру
 	Prepare a form	Форманы дайындау
+	Prepare email draft	Электрондық хат нобайын дайындау
 	Prepare for accessibility	Қолжетімділікке дайындау
 	Prepare for Distribution	Таратуға дайындау
 	Prepare for distribution	Таратуға дайындау
@@ -2452,6 +2468,7 @@ animation effects	On	Қосулы
 	Save as…	Басқаша сақтау…
 	Save attachment…	Тіркемені сақтау…
 	Save changes to “{name}” before closing?	«{name}» ішіндегі өзгерістерді жабу алдында сақтау керек пе?
+	Save email draft…	Электрондық хат нобайын сақтау…
 	Save image	Суретті сақтау
 	Save Image As…	Суретті басқаша сақтау…
 	Save initials first	Алдымен бас әріптерді сақтаңыз
@@ -2948,6 +2965,7 @@ certificate	Subject	Субъект
 	The document's security settings don't allow filling in form fields	Құжаттың қауіпсіздік параметрлері форма өрістерін толтыруға рұқсат бермейді
 	The document's security settings don't allow printing	Құжаттың қауіпсіздік параметрлері басып шығаруға рұқсат бермейді
 	The document's security settings don't allow this change	Құжаттың қауіпсіздік параметрлері бұл өзгерісті рұқсат етпейді
+	The draft contains PDF attachments. Open it with a mail app that supports .eml drafts; in Outlook.com, create a message and attach the saved PDFs yourself.	Нобайда PDF тіркемелері бар. Оны .eml нобайларын қолдайтын пошта қолданбасымен ашыңыз; Outlook.com сайтында хат жасап, сақталған PDF файлдарын өзіңіз тіркеңіз.
 	The driver may accept a turn and leave the picture as it was.	Драйвер бұрылысты қабылдап, суретті бұрынғыдай қалдыруы мүмкін.
 	The driver reports a paper jam.	Драйвер қағаз кептелуін хабарлайды.
 	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	Драйвер күтіп тұрған парақты хабарлайды. Науа бос болғаннан кейін бит қалуы мүмкін.

@@ -317,6 +317,7 @@
 	Ask anything	何でも質問
 	Ask before a document opens in Full Screen mode	文書をフルスクリーンモードで開く前に確認する
 	Ask in any language	どの言語でも質問できます
+	Ask to make PdfCraft the default PDF app	PdfCraft を既定の PDF アプリにするか確認する
 	Ask to scan more pages	さらにスキャンするか確認する
 	Ask whether to recognize the current page or all pages when editing a scan.	スキャンした文書の編集時に、現在のページとすべてのページのどちらを認識するか確認します。
 	Asking the printer…	プリンターに問い合わせています…
@@ -542,6 +543,7 @@
 	Choose image…	画像を選択…
 	Choose new keys for {command}	{command} の新しいキーを選択
 	Choose paper by PDF page size	PDF ページのサイズで用紙を選ぶ
+	Choose PdfCraft for .pdf files in Windows Settings.	Windows の設定で .pdf ファイルに PdfCraft を選択してください。
 	Choose photo…	写真を選択…
 	Choose raw file…	原文ファイルを選ぶ…
 	Choose reference…	参照を選ぶ…
@@ -619,6 +621,7 @@
 	Comb of	マス目の数:
 	Comb of characters	文字のマス目
 	Combine files	ファイルを結合
+	Combine files in PdfCraft…	PdfCraft でファイルを結合…
 	Combine files…	ファイルを結合…
 	Combine the rest	残りを結合
 	Combined {n} files	{n} ファイルを結合しました
@@ -680,6 +683,8 @@
 	Convert colours…	カラーを変換…
 	Convert mode	変換モード
 	Convert to	変換先
+	Convert to PDF and email…	PDF に変換してメールで送信…
+	Convert to PDF with PdfCraft	PdfCraft で PDF に変換
 	Converted from an EPUB book. Details lists how it was laid out and what was left out.	EPUB ブックから変換しました。詳細には、レイアウトの方法と省略された内容が表示されます。
 	Converted to {level} ({n} changes)	{level} に変換しました ({n} 件の変更)
 	Converted {c} colours and {i} pictures on {p} pages	{p} ページで {c} 色と {i} 個の画像を変換しました
@@ -729,11 +734,14 @@
 	Couldn't follow linked PDF: {reason}	リンク先の PDF を開けませんでした: {reason}
 	Couldn't import the signature image: {e}	署名画像を読み込めませんでした: {e}
 	Couldn't open revision {n}: {e}	リビジョン {n} を開けませんでした: {e}
+	Couldn't open the email draft: {e}	メールの下書きを開けませんでした: {e}
 	Couldn't open the printer's preferences: {e}	プリンターの基本設定を開けませんでした: {e}
 	Couldn't open the result: {e}	結果を開けませんでした: {e}
 	Couldn't open the signed version: {e}	署名済みのバージョンを開けませんでした: {e}
+	Couldn't open Windows default app settings: {error}	Windows の既定のアプリの設定を開けませんでした: {error}
 	Couldn't optimize the file	ファイルを最適化できませんでした
 	Couldn't optimize the file: {e}	ファイルを最適化できませんでした: {e}
+	Couldn't prepare the email draft: {e}	メールの下書きを準備できませんでした: {e}
 	Couldn't print from the browser ({e}); downloaded {name} to print instead	ブラウザーから印刷できませんでした ({e})。代わりに印刷用の {name} をダウンロードしました
 	Couldn't reach the printer	プリンターに接続できませんでした
 	Couldn't read the ICC profile {name}: {e}	ICC プロファイル {name} を読み込めませんでした: {e}
@@ -936,6 +944,7 @@ key	Delete	Delete
 	Distribute objects	オブジェクトを均等配置
 	Distribute vertically	垂直方向に均等配置
 	DN: 	DN: 
+	Do not ask again	今後確認しない
 	Document actions	文書のアクション
 	Document and markups	文書とマークアップ
 	Document and stamps	文書とスタンプ
@@ -1063,6 +1072,7 @@ key	Delete	Delete
 	Editorial	Editorial
 	Email Address	メールアドレス
 	Email Addresses	メールアドレス
+	Email draft saved to {path}	メールの下書きを {path} に保存しました
 	Embedded Files	埋め込みファイル
 	Embedded files must be PDF/A files themselves (use PDF/A-3 for others)	埋め込みファイル自体が PDF/A である必要があります（その他のファイルには PDF/A-3 を使用してください）
 	Enable Acrobat JavaScript	Acrobat JavaScript を有効にする
@@ -1125,6 +1135,8 @@ key	Esc	Esc
 	Expand {folder}	{folder} を展開
 	Expires {date}	有効期限 {date}
 	Explain	説明
+	Explorer selection exceeds the {size} MiB memory limit.	エクスプローラーの選択がメモリ上限の {size} MiB を超えています。
+	Explorer selection is limited to {count} files.	エクスプローラーで選択できるファイルは {count} 個までです。
 	Export & Convert	書き出しと変換
 	Export a PDF	PDF を書き出す
 	Export all comments to data file…	すべてのコメントをデータファイルに書き出す…
@@ -1620,6 +1632,7 @@ key	Home	Home
 	Make accessible	アクセシビリティに対応
 	Make Current Properties Default	現在のプロパティを既定にする
 	Make default paper size	既定の用紙サイズに設定
+	Make PdfCraft your default PDF app?	PdfCraft を既定の PDF アプリにしますか？
 	Make Properties Default	プロパティを既定にする
 	Make properties default	プロパティをデフォルトに設定
 	Make scans searchable, then make them smaller.	スキャンを検索可能にしてから容量を削減します。
@@ -1957,6 +1970,7 @@ animation effects	On	オン
 	Open a web page	Web ページを開く
 	Open accessibility report	アクセシビリティレポートを開く
 	Open arrow	開いた矢印
+	Open default app settings	既定のアプリの設定を開く
 	Open email app	メールアプリを開く
 	Open file	ファイルを開く
 	Open from cloud	クラウドから開く
@@ -2115,6 +2129,7 @@ animation effects	On	オン
 	Paused	一時停止中
 	Paused (page {page})	一時停止中 ({page} ページ)
 	PDF and text	PDFとテキスト
+	PDF attachments	PDF の添付ファイル
 	PDF Optimizer	PDF の最適化
 	PDF or image	PDF または画像
 	PDF page: {size}	PDFページ: {size}
@@ -2190,6 +2205,7 @@ animation effects	On	オン
 	Precision	精度
 	Preflight	プリフライト
 	Prepare a form	フォームを作成
+	Prepare email draft	メールの下書きを準備
 	Prepare for accessibility	アクセシビリティ対応の準備
 	Prepare for Distribution	配布用に準備
 	Prepare for distribution	配布の準備
@@ -2574,6 +2590,7 @@ animation effects	On	オン
 	Save as…	別名で保存…
 	Save attachment…	添付ファイルを保存…
 	Save changes to “{name}” before closing?	閉じる前に「{name}」への変更を保存しますか？
+	Save email draft…	メールの下書きを保存…
 	Save image	画像を保存
 	Save Image As…	画像を別名で保存…
 	Save initials first	先にイニシャルを保存
@@ -3096,6 +3113,7 @@ document scrollbar width	Standard	標準
 	The document's security settings don't allow filling in form fields	文書のセキュリティ設定によりフォームフィールドへの入力が許可されていません
 	The document's security settings don't allow printing	文書のセキュリティ設定により、印刷は許可されていません
 	The document's security settings don't allow this change	文書のセキュリティ設定により、この変更は許可されていません
+	The draft contains PDF attachments. Open it with a mail app that supports .eml drafts; in Outlook.com, create a message and attach the saved PDFs yourself.	下書きには PDF が添付されています。.eml の下書きに対応したメールアプリで開いてください。Outlook.com ではメッセージを作成し、保存した PDF を手動で添付してください。
 	The driver may accept a turn and leave the picture as it was.	ドライバは回転指定を受け付けても、画像をそのまま返すことがあります。
 	The driver reports a paper jam.	ドライバが紙詰まりを報告しています。
 	The driver reports a sheet waiting. The bit can stay on after the tray is empty.	ドライバが用紙待ちを報告しています。トレイが空でもビットが残ることがあります。
